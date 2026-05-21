@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!--
+  One-shot launchd agent for the ietf-elements standards-track
+  backfill. Calls deploy/run-elements.sh, which self-updates from
+  main, builds the binary, then sweeps every standards-track RFC
+  (INTERNET STANDARD → DRAFT STANDARD → PROPOSED STANDARD).
+
+  Why launchd and not SSH-spawned nohup: claude -p reads its OAuth
+  token from the macOS keychain, which is only unlocked in the user's
+  GUI Aqua session. SSH sessions can't open it. LaunchAgents (under
+  ~/Library/LaunchAgents) run in the user's session and have keychain
+  access. LaunchDaemons (under /Library/LaunchDaemons) do NOT.
+
+  Install (one-time):
+    bash deploy/install-launchd.sh backfill
+
+  Trigger one run:
+    launchctl start io.lantern.ietf-elements-backfill
+
+  Watch progress:
+    tail -f /tmp/ietf-elements-backfill.err.log
+
+  Re-running is safe — already-extracted RFCs are auto-skipped, so a
+  re-trigger after an interruption just resumes from where it left
+  off. A full standards-track sweep against an empty elements/ takes
+  roughly 3 days at --parallel=3 (4,648 RFCs × ~3 min / 3 parallel ≈
+  77h). Override parallelism with the PARALLEL env var below.
+
+  This plist has no schedule; it only runs when explicitly started.
+  For weekly maintenance after the initial backfill, install the
+  weekly plist via:
+    bash deploy/install-launchd.sh weekly
+-->
+<dict>
+  <key>Label</key>
+  <string>io.lantern.ietf-elements-backfill</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/afisk/code/ietf-corpus/deploy/run-elements.sh</string>
+  </array>
+
+  <!-- No schedule — runs only when explicitly started via
+       launchctl start. -->
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin</string>
+    <key>HOME</key>
+    <string>/Users/afisk</string>
+    <!-- Override --parallel passed to ietf-elements. The wrapper
+         reads this; default 3 if unset. Raising past 3 can hit
+         Claude rate limits on the subscription tier. -->
+    <key>PARALLEL</key>
+    <string>3</string>
+  </dict>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/afisk/code/ietf-corpus</string>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/ietf-elements-backfill.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/ietf-elements-backfill.err.log</string>
+</dict>
+</plist>

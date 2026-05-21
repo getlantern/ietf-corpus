@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!--
+  Recurring weekly launchd agent for ietf-elements maintenance.
+  Fires every Sunday at 03:00 local time. After the initial backfill
+  (see io.lantern.ietf-elements-backfill.plist) drains the queue,
+  this job picks up any newly-published standards-track RFC and
+  extracts its elements.
+
+  Same wrapper as backfill — extract-all auto-skips RFCs that already
+  have elements, so the steady-state cost is just the new arrivals.
+  Most weeks the IETF publishes zero or one new RFCs, so the job is
+  usually a fast no-op.
+
+  Install:
+    bash deploy/install-launchd.sh weekly
+
+  Trigger one run (without waiting for Sunday):
+    launchctl start io.lantern.ietf-elements-weekly
+
+  Watch progress:
+    tail -f /tmp/ietf-elements-weekly.err.log
+-->
+<dict>
+  <key>Label</key>
+  <string>io.lantern.ietf-elements-weekly</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/afisk/code/ietf-corpus/deploy/run-elements.sh</string>
+  </array>
+
+  <!-- Fires every Sunday at 03:00. RunAtLoad=false so loading the
+       plist doesn't immediately trigger a sweep. -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key>
+    <integer>0</integer>
+    <key>Hour</key>
+    <integer>3</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin</string>
+    <key>HOME</key>
+    <string>/Users/afisk</string>
+    <key>PARALLEL</key>
+    <string>3</string>
+  </dict>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/afisk/code/ietf-corpus</string>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/ietf-elements-weekly.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/ietf-elements-weekly.err.log</string>
+</dict>
+</plist>
