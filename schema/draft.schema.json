@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/getlantern/ietf-corpus/schema/draft.schema.json",
+  "title": "Internet-Draft",
+  "description": "One IETF Internet-Draft (active or recently expired). Sourced from datatracker.ietf.org.",
+  "type": "object",
+  "required": ["id", "name", "title", "stream_state"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Canonical lowercase id matching the draft name with its revision, e.g. 'draft-ietf-tls-esni-22'.",
+      "pattern": "^draft-[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Stable draft base name without revision suffix, e.g. 'draft-ietf-tls-esni'.",
+      "pattern": "^draft-[a-z0-9-]+$"
+    },
+    "rev": {
+      "type": "string",
+      "description": "Latest revision number as zero-padded string, e.g. '22'.",
+      "pattern": "^[0-9]+$"
+    },
+    "title": { "type": "string" },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "email": { "type": "string", "format": "email" },
+          "affiliation": { "type": "string" }
+        }
+      }
+    },
+    "abstract": { "type": "string" },
+    "keywords": { "type": "array", "items": { "type": "string" } },
+    "pages": { "type": "integer", "minimum": 0 },
+    "words": { "type": "integer", "minimum": 0 },
+    "stream": {
+      "type": "string",
+      "enum": ["IETF", "IAB", "IRTF", "Independent", "Editorial"],
+      "description": "Publication stream. Often null for individual submissions."
+    },
+    "stream_state": {
+      "type": "string",
+      "description": "Lifecycle state.",
+      "enum": ["active", "expired", "rfc", "replaced", "withdrawn", "dead"]
+    },
+    "group": { "type": "string", "description": "Working group acronym, e.g. 'tls', 'quic'. May be 'none' for individual submissions." },
+    "area": { "type": "string", "description": "IETF area acronym." },
+    "intended_status": {
+      "type": "string",
+      "description": "Intended status if published as RFC.",
+      "enum": [
+        "Standards Track",
+        "Proposed Standard",
+        "Internet Standard",
+        "Best Current Practice",
+        "Informational",
+        "Experimental",
+        "Historic",
+        "Unknown"
+      ]
+    },
+    "first_submitted": { "type": "string", "format": "date" },
+    "last_updated": { "type": "string", "format": "date" },
+    "expires": { "type": "string", "format": "date" },
+    "replaces": { "type": "array", "items": { "type": "string" } },
+    "replaced_by": { "type": "array", "items": { "type": "string" } },
+    "rfc_number": { "type": "integer", "description": "If the draft has been published as an RFC, the resulting RFC number." },
+    "url": { "type": "string", "format": "uri" },
+    "topics": { "type": "array", "items": { "type": "string" } },
+    "commentary": { "type": "string" },
+    "source": { "type": "string", "enum": ["datatracker", "manual"] },
+    "ingested_at": { "type": "string", "format": "date" }
+  }
+}

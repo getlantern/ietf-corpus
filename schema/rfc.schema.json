@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/getlantern/ietf-corpus/schema/rfc.schema.json",
+  "title": "RFC",
+  "description": "One published IETF RFC. Mirrors rfc-editor.org/rfc-index.xml plus optional editorial fields.",
+  "type": "object",
+  "required": ["id", "rfc_number", "title", "stream", "current_status", "publication_status", "date"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Canonical lowercase id, e.g. 'rfc-9000'.",
+      "pattern": "^rfc-[0-9]+$"
+    },
+    "rfc_number": { "type": "integer", "minimum": 1 },
+    "title": { "type": "string" },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "title": { "type": "string", "description": "Optional author role, typically 'Editor'." }
+        }
+      }
+    },
+    "date": { "type": "string", "description": "Publication date as YYYY-MM or YYYY-MM-DD." },
+    "stream": {
+      "type": "string",
+      "enum": ["IETF", "IAB", "IRTF", "Independent", "Editorial", "Legacy"]
+    },
+    "area": { "type": "string", "description": "IETF area acronym (e.g. 'sec', 'tsv', 'art')." },
+    "wg": { "type": "string", "description": "Working group acronym (e.g. 'quic', 'tls')." },
+    "current_status": {
+      "type": "string",
+      "description": "Current standing; may change after publication via reclassification or obsolescence.",
+      "enum": [
+        "INTERNET STANDARD",
+        "DRAFT STANDARD",
+        "PROPOSED STANDARD",
+        "BEST CURRENT PRACTICE",
+        "INFORMATIONAL",
+        "EXPERIMENTAL",
+        "HISTORIC",
+        "UNKNOWN"
+      ]
+    },
+    "publication_status": {
+      "type": "string",
+      "description": "Status at original publication, never changes.",
+      "enum": [
+        "INTERNET STANDARD",
+        "DRAFT STANDARD",
+        "PROPOSED STANDARD",
+        "BEST CURRENT PRACTICE",
+        "INFORMATIONAL",
+        "EXPERIMENTAL",
+        "HISTORIC",
+        "UNKNOWN"
+      ]
+    },
+    "page_count": { "type": "integer", "minimum": 0 },
+    "word_count": { "type": "integer", "minimum": 0 },
+    "abstract": { "type": "string" },
+    "keywords": { "type": "array", "items": { "type": "string" } },
+    "formats": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["TXT", "HTML", "PDF", "XML", "PS"] }
+    },
+    "draft": { "type": "string", "description": "The original Internet-Draft this RFC came from, e.g. 'draft-ietf-quic-transport-34'." },
+    "obsoletes": { "type": "array", "items": { "type": "string", "pattern": "^rfc-[0-9]+$" } },
+    "obsoleted_by": { "type": "array", "items": { "type": "string", "pattern": "^rfc-[0-9]+$" } },
+    "updates": { "type": "array", "items": { "type": "string", "pattern": "^rfc-[0-9]+$" } },
+    "updated_by": { "type": "array", "items": { "type": "string", "pattern": "^rfc-[0-9]+$" } },
+    "also": {
+      "type": "array",
+      "description": "Equivalent IDs from sub-series: BCP, STD, FYI.",
+      "items": { "type": "string", "pattern": "^(bcp|std|fyi)-[0-9]+$" }
+    },
+    "see_also": { "type": "array", "items": { "type": "string" } },
+    "doi": { "type": "string", "pattern": "^10\\.17487/RFC[0-9]+$" },
+    "errata_url": { "type": "string", "format": "uri" },
+    "url": { "type": "string", "format": "uri", "description": "Canonical URL on rfc-editor.org." },
+    "topics": {
+      "type": "array",
+      "description": "Cross-cutting topic tags drawn from schema/taxonomy.yaml#topics. Optional, manually curated.",
+      "items": { "type": "string" }
+    },
+    "commentary": {
+      "type": "string",
+      "description": "Optional community editorial commentary. Not required; use sparingly."
+    },
+    "source": {
+      "type": "string",
+      "description": "Where this record was first ingested from.",
+      "enum": ["rfc-editor-index", "datatracker", "manual"]
+    },
+    "ingested_at": { "type": "string", "format": "date" }
+  }
+}

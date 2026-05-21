@@ -1,0 +1,106 @@
+# IETF corpus taxonomy.
+#
+# Most fields here mirror IETF's own controlled vocabularies (stream,
+# status, area). Where IETF has structured metadata, we adopt it
+# verbatim rather than overlaying a parallel scheme. The one place
+# the corpus adds its own value is `topics`: a flat set of
+# cross-cutting tags useful for "give me every document about X"
+# queries that don't map cleanly onto a single area or working group.
+
+streams:
+  IETF:        {label: "IETF",        note: "Standards-track engineering"}
+  IAB:         {label: "IAB",         note: "Internet Architecture Board"}
+  IRTF:        {label: "IRTF",        note: "Internet Research Task Force"}
+  Independent: {label: "Independent", note: "Independent submissions"}
+  Editorial:   {label: "Editorial",   note: "RFC Editor / process documents"}
+  Legacy:      {label: "Legacy",      note: "Pre-stream historical RFCs"}
+
+# Current/publication status values match rfc-editor.org's controlled
+# vocabulary (UPPERCASE) for RFCs, and datatracker's mixed-case for
+# drafts ("intended_status"). The schemas constrain values per type.
+
+areas:
+  # As of 2026; IETF area structure evolves slowly. Source:
+  # https://datatracker.ietf.org/group/areas/
+  art: {label: "Applications and Real-Time"}
+  gen: {label: "General"}
+  int: {label: "Internet"}
+  irtf: {label: "Internet Research Task Force"}
+  ops: {label: "Operations and Management"}
+  rtg: {label: "Routing"}
+  sec: {label: "Security"}
+  tsv: {label: "Transport"}
+  wit: {label: "Web and Internet Transport (historical area name; see also 'art' and 'tsv')"}
+
+# Cross-cutting topical tags. These are the corpus's own taxonomy and
+# are intentionally coarse — one document may carry several. Adding a
+# new topic is a PR against this file.
+topics:
+  tls:              {label: "TLS / DTLS"}
+  http:             {label: "HTTP and HTTP/*"}
+  quic:             {label: "QUIC"}
+  dns:              {label: "DNS"}
+  ip:               {label: "IP / IPv4 / IPv6"}
+  routing:          {label: "Routing (BGP, OSPF, IS-IS, etc.)"}
+  bgp:              {label: "BGP"}
+  email:            {label: "Email (SMTP, IMAP, MIME, DKIM, SPF, DMARC)"}
+  webrtc:           {label: "WebRTC and real-time media"}
+  vpn:              {label: "VPN, IPsec, WireGuard"}
+  ipsec:            {label: "IPsec / IKE"}
+  oauth:            {label: "OAuth / OIDC"}
+  jose:             {label: "JOSE (JWT, JWE, JWS)"}
+  crypto:           {label: "Cryptography and key exchange"}
+  acme:             {label: "Certificate issuance / ACME"}
+  pkix:             {label: "PKIX / X.509"}
+  did:              {label: "Decentralized identifiers"}
+  mpls:             {label: "MPLS"}
+  ldap:             {label: "LDAP / directory services"}
+  ntp:              {label: "Time synchronization"}
+  congestion:       {label: "Congestion control"}
+  tcp:              {label: "TCP"}
+  udp:              {label: "UDP"}
+  sctp:             {label: "SCTP"}
+  multipath:        {label: "Multipath transport"}
+  censorship:       {label: "Censorship resistance / circumvention"}
+  privacy:          {label: "Privacy mechanisms"}
+  security:         {label: "Security (cross-cutting)"}
+  registry:         {label: "IANA registries"}
+  process:          {label: "IETF process / RFC editor"}
+  bcp:              {label: "Best Current Practice"}
+  measurement:      {label: "Network measurement"}
+  websocket:        {label: "WebSockets"}
+  json:             {label: "JSON / data formats"}
+  cbor:             {label: "CBOR"}
+  yaml:             {label: "YAML"}
+  yang:             {label: "YANG / NETCONF / network mgmt"}
+  netconf:          {label: "NETCONF / RESTCONF"}
+  snmp:             {label: "SNMP"}
+  syslog:           {label: "Syslog"}
+  multicast:        {label: "Multicast"}
+  diffserv:         {label: "Differentiated services / QoS"}
+  ecn:              {label: "Explicit Congestion Notification"}
+  qos:              {label: "Quality of service"}
+  realtime:         {label: "Real-time media / RTP / SIP"}
+  rtp:              {label: "RTP"}
+  sip:              {label: "SIP / SIPS"}
+  voip:             {label: "VoIP"}
+  diameter:         {label: "Diameter / RADIUS / AAA"}
+  radius:           {label: "RADIUS"}
+  mobility:         {label: "Mobile IP / network mobility"}
+  zeroconf:         {label: "Zero-config networking"}
+  pcp:              {label: "PCP / NAT control"}
+  nat:              {label: "NAT / address translation"}
+  v6ops:            {label: "IPv6 operations / transition"}
+
+# Element kinds (kept in lockstep with element.schema.json#kind).
+element_kinds:
+  normative-requirement: "A MUST/SHOULD/MAY-class normative statement"
+  protocol-element:      "A defined protocol element (field, message, frame, etc.)"
+  wire-format:           "On-the-wire encoding"
+  state-machine:         "Defined state transitions"
+  registry:              "An IANA registry created or updated by this document"
+  security-consideration: "Item from the Security Considerations section"
+  privacy-consideration:  "Item from the Privacy Considerations section"
+  interoperability-note: "Compatibility constraint with other protocols / versions"
+  design-rationale:      "Why a design decision was made; usually in non-normative prose"
+  errata:                "Known erratum"

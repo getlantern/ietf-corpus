@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/getlantern/ietf-corpus/schema/element.schema.json",
+  "title": "RFC/Draft Element",
+  "description": "An LLM-extracted structured element from an RFC or draft — a normative requirement, protocol element, security/privacy consideration, or design rationale. Placeholder schema; element extraction is a later phase.",
+  "type": "object",
+  "required": ["document", "kind", "summary"],
+  "additionalProperties": false,
+  "properties": {
+    "document": {
+      "type": "string",
+      "description": "Document id this element was extracted from. Either an RFC id ('rfc-9000') or a draft name ('draft-ietf-tls-esni')."
+    },
+    "kind": {
+      "type": "string",
+      "description": "What kind of element this is.",
+      "enum": [
+        "normative-requirement",
+        "protocol-element",
+        "wire-format",
+        "state-machine",
+        "registry",
+        "security-consideration",
+        "privacy-consideration",
+        "interoperability-note",
+        "design-rationale",
+        "errata"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "description": "One- to three-sentence statement of the element, quoting or paraphrasing the source."
+    },
+    "section": {
+      "type": "string",
+      "description": "Section reference within the source document, e.g. '5.1.2'."
+    },
+    "rfc2119_level": {
+      "type": "string",
+      "description": "If a normative requirement, the RFC 2119 keyword used.",
+      "enum": ["MUST", "MUST NOT", "SHOULD", "SHOULD NOT", "MAY", "REQUIRED", "RECOMMENDED", "OPTIONAL"]
+    },
+    "topics": { "type": "array", "items": { "type": "string" } },
+    "extracted_by": {
+      "type": "string",
+      "description": "Tool or model that extracted this element."
+    },
+    "extracted_at": { "type": "string", "format": "date" }
+  }
+}
