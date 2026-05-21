@@ -1,0 +1,38 @@
+id: rfc-9666
+rfc_number: 9666
+title: Area Proxy for IS-IS
+authors:
+    - name: T. Li
+    - name: S. Chen
+    - name: V. Ilangovan
+    - name: G. Mishra
+date: 2024-10
+stream: IETF
+area: rtg
+wg: lsr
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 17
+abstract: |-
+    Link-state routing protocols have hierarchical abstraction already built into them. However, when lower levels are used for transit, they must expose their internal topologies to each other, thereby leading to scaling issues.
+
+    To avoid such issues, this document discusses extensions to the IS-IS routing protocol that allow Level 1 (L1) areas to provide transit but only inject an abstraction of the Level 1 topology into Level 2 (L2). Each Level 1 area is represented as a single Level 2 node, thereby enabling a greater scale.
+keywords:
+    - datacenter
+    - IGP
+    - routing
+    - topology
+    - level
+    - abstraction
+    - IS-IS
+    - proxy
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-lsr-isis-area-proxy-12
+doi: 10.17487/RFC9666
+url: https://www.rfc-editor.org/rfc/rfc9666
+source: rfc-editor-index
+ingested_at: "2026-05-21"

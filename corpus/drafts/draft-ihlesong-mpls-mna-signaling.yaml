@@ -1,0 +1,26 @@
+id: draft-ihlesong-mpls-mna-signaling
+name: draft-ihlesong-mpls-mna-signaling
+rev: "02"
+title: Signaling MNA Capabilities Using LSP Ping
+abstract: |-
+    This document defines a mechanism for discovering MPLS Network
+       Actions (MNA) capabilities along a Label Switched Path (LSP) using
+       the LSP Ping echo request/reply mechanism defined in RFC 8029.  The
+       In-Stack MNA capabilities include the Readable Label Depth (RLD), the
+       maximum sizes of differently scoped Network Action Sub-stacks
+       (MLD_NAS), and supported In-Stack network action opcodes.  The Post-
+       Stack MNA capabilities include the maximum Post-Stack MPLS Header
+       size (MLD_PSMH), the Readable Label Depth including the Post-Stack
+       MPLS Header (RLD_PSMH), and supported Post-Stack network action
+       opcodes.  This mechanism allows the ingress Label Edge Router (LER)
+       to discover MNA capabilities of each transit and egress node on the
+       path, enabling correct construction of MPLS label stacks containing
+       MNA network actions.
+pages: 23
+stream_state: active
+group: none
+last_updated: "2026-03-17"
+expires: "2026-09-18"
+url: https://datatracker.ietf.org/doc/draft-ihlesong-mpls-mna-signaling/
+source: datatracker
+ingested_at: "2026-05-21"

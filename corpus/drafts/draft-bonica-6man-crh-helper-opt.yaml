@@ -1,0 +1,24 @@
+id: draft-bonica-6man-crh-helper-opt
+name: draft-bonica-6man-crh-helper-opt
+rev: "07"
+title: Compact Routing Header (CRH) Helper Option
+abstract: |-
+    This document introduces a new IPv6 Destination Option called the CRH
+       Helper.  The CRH Helper is used with the Compact Routing Header (CRH)
+       [RFC 9631].  It contains information required to convert a CRH SID to
+       the IPv6 address of a interface on a packet's delivery path.
+
+       Because the CRH Helper contains this information, it eliminates the
+       need for a CRH-FIB.  It also eliminates the need for CRH-FIB support
+       in the control plane.
+
+       The CRH helper is useful in underlay networks, where all interfaces
+       are numbered from a few /112 or /96 prefixes.
+pages: 9
+stream_state: active
+group: none
+last_updated: "2026-03-30"
+expires: "2026-10-01"
+url: https://datatracker.ietf.org/doc/draft-bonica-6man-crh-helper-opt/
+source: datatracker
+ingested_at: "2026-05-21"

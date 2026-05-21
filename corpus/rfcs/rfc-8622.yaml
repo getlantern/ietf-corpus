@@ -1,0 +1,33 @@
+id: rfc-8622
+rfc_number: 8622
+title: A Lower-Effort Per-Hop Behavior (LE PHB) for Differentiated Services
+authors:
+    - name: R. Bless
+date: 2019-06
+stream: IETF
+area: wit
+wg: tsvwg
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 18
+abstract: |-
+    This document specifies properties and characteristics of a Lower- Effort Per-Hop Behavior (LE PHB). The primary objective of this LE PHB is to protect Best-Effort (BE) traffic (packets forwarded with the default PHB) from LE traffic in congestion situations, i.e., when resources become scarce, BE traffic has precedence over LE traffic and may preempt it. Alternatively, packets forwarded by the LE PHB can be associated with a scavenger service class, i.e., they scavenge otherwise-unused resources only. There are numerous uses for this PHB, e.g., for background traffic of low precedence, such as bulk data transfers with low priority in time, non-time-critical backups, larger software updates, web search engines while gathering information from web servers and so on. This document recommends a standard Differentiated Services Code Point (DSCP) value for the LE PHB.
+
+    This specification obsoletes RFC 3662 and updates the DSCP recommended in RFCs 4594 and 8325 to use the DSCP assigned in this specification.
+keywords:
+    - Lower Effort
+    - Per-Hop Behavior
+    - Scavenger Service
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-tsvwg-le-phb-10
+obsoletes:
+    - rfc-3662
+updates:
+    - rfc-4594
+    - rfc-8325
+doi: 10.17487/RFC8622
+url: https://www.rfc-editor.org/rfc/rfc8622
+source: rfc-editor-index
+ingested_at: "2026-05-21"

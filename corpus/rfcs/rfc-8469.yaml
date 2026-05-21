@@ -1,0 +1,37 @@
+id: rfc-8469
+rfc_number: 8469
+title: Recommendation to Use the Ethernet Control Word
+authors:
+    - name: S. Bryant
+    - name: A. Malis
+    - name: I. Bagdonas
+date: 2018-11
+stream: IETF
+area: rtg
+wg: pals
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 9
+abstract: |-
+    The pseudowire (PW) encapsulation of Ethernet, as defined in RFC 4448, specifies that the use of the control word (CW) is optional. In the absence of the CW, an Ethernet PW packet can be misidentified as an IP packet by a label switching router (LSR). This may lead to the selection of the wrong equal-cost multipath (ECMP) path for the packet, leading in turn to the misordering of packets. This problem has become more serious due to the deployment of equipment with Ethernet Media Access Control (MAC) addresses that start with 0x4 or 0x6. The use of the Ethernet PW CW addresses this problem. This document RECOMMENDS the use of the Ethernet PW CW in all but exceptional circumstances.
+
+    This document updates RFC 4448.
+keywords:
+    - pseudowire
+    - PW
+    - CW
+    - ECMP
+    - MAC address
+    - out of order
+    - ordering
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-pals-ethernet-cw-07
+updates:
+    - rfc-4448
+doi: 10.17487/RFC8469
+errata_url: https://www.rfc-editor.org/errata/rfc8469
+url: https://www.rfc-editor.org/rfc/rfc8469
+source: rfc-editor-index
+ingested_at: "2026-05-21"

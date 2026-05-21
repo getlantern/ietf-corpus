@@ -1,0 +1,27 @@
+id: draft-ietf-tcpm-tcp-ghost-acks
+name: draft-ietf-tcpm-tcp-ghost-acks
+rev: "04"
+title: Improve TCP Handling of Out-of-Window Packets to Mitigate Ghost ACKs
+abstract: |-
+    Historically, TCP as specified in RFC 793 was threatened by the blind
+       data injection attack because of the loose SEG.ACK value validation,
+       where the SEG.ACK value of a TCP segment is considered valid as long
+       as it does not acknowledge data ahead of what has been sent.  RFC
+       5961 improved the input validation by shrinking the range of
+       acceptable SEG.ACK values in a TCP segment.  Later, RFC 9293
+       incorporated the updates proposed by RFC 5961 as a TCP stack
+       implementation option.
+       However, an endpoint that follows the RFC 9293 specifications can
+       still accept a TCP segment containing an SEG.ACK value acknowledging
+       data that the endpoint has never sent.  This document specifies small
+       modifications to the way TCP verifies incoming TCP segments' SEG.ACK
+       value to prevent TCP from accepting such invalid SEG.ACK values.
+pages: 6
+stream: IETF
+stream_state: active
+group: tcpm
+last_updated: "2026-04-05"
+expires: "2026-10-07"
+url: https://datatracker.ietf.org/doc/draft-ietf-tcpm-tcp-ghost-acks/
+source: datatracker
+ingested_at: "2026-05-21"

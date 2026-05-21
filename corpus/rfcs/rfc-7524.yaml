@@ -1,0 +1,29 @@
+id: rfc-7524
+rfc_number: 7524
+title: Inter-Area Point-to-Multipoint (P2MP) Segmented Label Switched Paths (LSPs)
+authors:
+    - name: Y. Rekhter
+    - name: E. Rosen
+    - name: R. Aggarwal
+    - name: T. Morin
+    - name: I. Grosclaude
+    - name: N. Leymann
+    - name: S. Saad
+date: 2015-05
+stream: IETF
+area: rtg
+wg: mpls
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 42
+abstract: This document describes procedures for building inter-area point-to-multipoint (P2MP) segmented service label switched paths (LSPs) by partitioning such LSPs into intra-area segments and using BGP as the inter-area routing and Label Distribution Protocol (LDP).  Within each IGP area, the intra-area segments are either carried over intra-area P2MP LSPs, using P2MP LSP hierarchy, or instantiated using ingress replication.  The intra-area P2MP LSPs may be signaled using P2MP RSVP-TE or P2MP multipoint LDP (mLDP).  If ingress replication is used within an IGP area, then (multipoint-to-point) LDP LSPs or (point-to-point) RSVP-TE LSPs may be used in the IGP area.  The applications/services that use such inter-area service LSPs may be BGP Multicast VPN, Virtual Private LAN Service (VPLS) multicast, or global table multicast over MPLS.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-mpls-seamless-mcast-17
+updated_by:
+    - rfc-8534
+doi: 10.17487/RFC7524
+url: https://www.rfc-editor.org/rfc/rfc7524
+source: rfc-editor-index
+ingested_at: "2026-05-21"

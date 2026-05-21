@@ -1,0 +1,37 @@
+id: rfc-9353
+rfc_number: 9353
+title: IGP Extension for Path Computation Element Communication Protocol (PCEP) Security Capability Support in PCE Discovery (PCED)
+authors:
+    - name: D. Lopez
+    - name: Q. Wu
+    - name: D. Dhody
+    - name: Q. Ma
+    - name: D. King
+date: 2023-01
+stream: IETF
+area: rtg
+wg: lsr
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 13
+abstract: |-
+    When a Path Computation Element (PCE) is a Label Switching Router (LSR) or a server participating in the Interior Gateway Protocol (IGP), its presence and path computation capabilities can be advertised using IGP flooding. The IGP extensions for PCE Discovery (PCED) (RFCs 5088 and 5089) define a method to advertise path computation capabilities using IGP flooding for OSPF and IS-IS, respectively. However, these specifications lack a method to advertise Path Computation Element Communication Protocol (PCEP) security (e.g., Transport Layer Security (TLS) and TCP Authentication Option (TCP-AO)) support capability.
+
+    This document defines capability flag bits for the PCE-CAP-FLAGS sub-TLV that can be announced as an attribute in the IGP advertisement to distribute PCEP security support information. In addition, this document updates RFCs 5088 and 5089 to allow advertisement of a Key ID or KEY-CHAIN-NAME sub-TLV to support TCP-AO security capability. This document also updates RFCs 8231 and 8306.
+keywords:
+    - Path Computation Element
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-lsr-pce-discovery-security-support-13
+updates:
+    - rfc-5088
+    - rfc-5089
+    - rfc-8231
+    - rfc-8306
+doi: 10.17487/RFC9353
+url: https://www.rfc-editor.org/rfc/rfc9353
+source: rfc-editor-index
+ingested_at: "2026-05-21"

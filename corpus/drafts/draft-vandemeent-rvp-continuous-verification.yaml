@@ -1,0 +1,31 @@
+id: draft-vandemeent-rvp-continuous-verification
+name: draft-vandemeent-rvp-continuous-verification
+rev: "01"
+title: 'RVP: Real-time Verification Protocol - Continuous Identity and Process Verification'
+abstract: |-
+    This document defines RVP (Real-time Verification Protocol), a
+       protocol for continuous identity verification through ordered
+       cascades of verification methods.  Unlike traditional authentication
+       models that verify once and trust until session expiry, RVP treats
+       every interaction as a verification moment.  Each moment produces a
+       Verification Token: a cryptographic evidence record capturing which
+       methods were used, what confidence each produced, and whether the
+       accumulated confidence meets the required threshold.
+
+       RVP defines a Verification Cascade: an ordered chain of verification
+       methods (behavioral biometrics, physical identity, device context)
+       where each layer activates only when preceding layers produce
+       insufficient confidence.  The cascade produces evidence at every
+       step; enforcement is a local policy decision.
+
+       RVP integrates with TIBET [TIBET] for provenance tokens and JIS [JIS]
+       for identity semantics.  The protocol is designed for local-first
+       operation with no dependency on centralized identity providers.
+pages: 19
+stream_state: active
+group: none
+last_updated: "2026-03-29"
+expires: "2026-09-30"
+url: https://datatracker.ietf.org/doc/draft-vandemeent-rvp-continuous-verification/
+source: datatracker
+ingested_at: "2026-05-21"

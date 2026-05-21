@@ -1,0 +1,31 @@
+id: rfc-3545
+rfc_number: 3545
+title: Enhanced Compressed RTP (CRTP) for Links with High Delay, Packet Loss and Reordering
+authors:
+    - name: T. Koren
+    - name: S. Casner
+    - name: J. Geevarghese
+    - name: B. Thompson
+    - name: P. Ruddy
+date: 2003-07
+stream: IETF
+area: rai
+wg: avt
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 22
+abstract: 'This document describes a header compression scheme for point to point links with packet loss and long delays.  It is based on Compressed Real-time Transport Protocol (CRTP), the IP/UDP/RTP header compression described in RFC 2508.  CRTP does not perform well on such links: packet loss results in context corruption and due to the long delay, many more packets are discarded before the context is repaired.  To correct the behavior of CRTP over such links, a few extensions to the protocol are specified here.  The extensions aim to reduce context corruption by changing the way the compressor updates the context at the decompressor: updates are repeated and include updates to full and differential context parameters.  With these extensions, CRTP performs well over links with packet loss, packet reordering and long delays. [STANDARDS-TRACK]'
+keywords:
+    - Compressed Real-time Transport Protocol
+    - CRTP
+    - PPP
+    - point to point
+    - header
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-avt-crtp-enhance-07
+doi: 10.17487/RFC3545
+url: https://www.rfc-editor.org/rfc/rfc3545
+source: rfc-editor-index
+ingested_at: "2026-05-21"

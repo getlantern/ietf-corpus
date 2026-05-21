@@ -1,0 +1,25 @@
+id: draft-ietf-mailmaint-imap-objectid-bis
+name: draft-ietf-mailmaint-imap-objectid-bis
+rev: "04"
+title: IMAP Extension for Object Identifiers
+abstract: |-
+    This document defines the OBJECTID+ extension for IMAP, which
+       obsoletes [RFC8474].  OBJECTID+ introduces a compound OBJECTID
+       response format that bundles object identifiers into key-value pairs,
+       an ACCOUNTID identifier for account-level context, OBJECTID response
+       codes for the RENAME command, and identifier-based mailbox selection
+       via SELECT and EXAMINE.  The OBJECTID+ extension is activated
+       implicitly when a client uses any OBJECTID+-specific feature,
+       ensuring backward compatibility with clients that only support
+       [RFC8474].  This document also updates [RFC9698]: when JMAPACCESS is
+       advertised alongside OBJECTID+, ACCOUNTID values MUST correspond to
+       JMAP accountIds.
+pages: 30
+stream: IETF
+stream_state: active
+group: mailmaint
+last_updated: "2026-05-08"
+expires: "2026-11-09"
+url: https://datatracker.ietf.org/doc/draft-ietf-mailmaint-imap-objectid-bis/
+source: datatracker
+ingested_at: "2026-05-21"

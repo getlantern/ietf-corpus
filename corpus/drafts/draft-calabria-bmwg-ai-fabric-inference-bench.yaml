@@ -1,0 +1,35 @@
+id: draft-calabria-bmwg-ai-fabric-inference-bench
+name: draft-calabria-bmwg-ai-fabric-inference-bench
+rev: "01"
+title: Benchmarking Methodology for AI Inference Serving Network Fabrics
+abstract: |-
+    This document defines benchmarking terminology, methodologies, and
+       Key Performance Indicators (KPIs) for evaluating Ethernet-based AI
+       inference serving network fabrics.  As Large Language Model (LLM)
+       inference deployments scale to disaggregated prefill/decode
+       architectures spanning hundreds or thousands of accelerators (GPUs/
+       XPUs), the interconnect fabric becomes the critical bottleneck
+       determining Time to First Token (TTFT), Inter-Token Latency (ITL),
+       and aggregate throughput in tokens per second (TPS).  This document
+       establishes vendor-independent, reproducible test procedures for
+       benchmarking fabric-level performance under realistic AI inference
+       workloads.
+
+       Coverage includes RDMA-based KV cache transfer between disaggregated
+       prefill and decode workers, Mixture-of-Experts (MoE) expert
+       parallelism AllToAll communication, request routing and load
+       balancing for inference serving, congestion management under bursty
+       inference traffic patterns, and scale/soak testing.  The methodology
+       enables direct, equivalent comparison across implementations, NIC
+       transport stacks (RoCEv2, UET), and fabric architectures.
+
+       This document is a companion to [TRAINING-BENCH], which addresses
+       training workloads.
+pages: 45
+stream_state: active
+group: none
+last_updated: "2026-04-21"
+expires: "2026-10-23"
+url: https://datatracker.ietf.org/doc/draft-calabria-bmwg-ai-fabric-inference-bench/
+source: datatracker
+ingested_at: "2026-05-21"

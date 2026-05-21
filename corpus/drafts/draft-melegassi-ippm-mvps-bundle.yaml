@@ -1,0 +1,31 @@
+id: draft-melegassi-ippm-mvps-bundle
+name: draft-melegassi-ippm-mvps-bundle
+rev: "00"
+title: 'Multi-Vantage Path Snapshot (MVPS): A Canonical Bundle Format for Coordinated Traceroute Measurements'
+abstract: |-
+    This document specifies the Multi-Vantage Path Snapshot (MVPS) bundle
+       format, a focused envelope for traceroute observations collected in
+       coordination from two or more network vantages towards a common
+       destination.  MVPS defines a JSON serialization, a YANG 1.1 module,
+       and a deterministic path-fingerprint algorithm enabling bit-
+       reproducible auditing and cross-implementation interoperability.
+
+       MVPS is intentionally minimal in scope: it specifies a wire format
+       and the algorithms required to produce it deterministically.
+       Analytical metrics derived from MVPS bundles are out of scope.
+
+       MVPS complements the AURA architecture defined by RFC 9198, which
+       specifies a measurement architecture but does not normatively specify
+       the result format.  MVPS is intended as one possible result format
+       for AURA-style coordinated measurements.  MVPS is also positioned
+       relative to existing single-operator reporting formats (RIPE Atlas
+       measurement JSON, CAIDA warts), which are not standardised and which
+       do not provide a deterministic cross-implementation path identity.
+pages: 32
+stream_state: active
+group: none
+last_updated: "2026-05-18"
+expires: "2026-11-19"
+url: https://datatracker.ietf.org/doc/draft-melegassi-ippm-mvps-bundle/
+source: datatracker
+ingested_at: "2026-05-21"

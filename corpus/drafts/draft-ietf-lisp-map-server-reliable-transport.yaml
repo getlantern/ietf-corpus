@@ -1,0 +1,24 @@
+id: draft-ietf-lisp-map-server-reliable-transport
+name: draft-ietf-lisp-map-server-reliable-transport
+rev: "08"
+title: LISP Map Server Reliable Transport
+abstract: |-
+    The communication between LISP ETRs and Map-Servers is based on
+       unreliable UDP message exchange coupled with periodic message
+       transmission in order to maintain soft state.  The drawback of
+       periodic messaging is the constant load imposed on both the ETR and
+       the Map-Server.  New LISP use cases increase the amount of state that
+       needs to be communicated and challenge the scalability of the system
+       when using the UDP exchange.  This document introduces the use of a
+       reliable transport for ETR to Map-Server communications in order to
+       eliminate the periodic messaging overhead, while providing
+       reliability, flow-control and endpoint liveness detection.
+pages: 30
+stream: IETF
+stream_state: active
+group: lisp
+last_updated: "2026-04-05"
+expires: "2026-10-07"
+url: https://datatracker.ietf.org/doc/draft-ietf-lisp-map-server-reliable-transport/
+source: datatracker
+ingested_at: "2026-05-21"

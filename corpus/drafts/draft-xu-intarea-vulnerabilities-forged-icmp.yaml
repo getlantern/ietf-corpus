@@ -1,0 +1,30 @@
+id: draft-xu-intarea-vulnerabilities-forged-icmp
+name: draft-xu-intarea-vulnerabilities-forged-icmp
+rev: "02"
+title: Problem Statement for Cross-Layer Vulnerabilities due to Forged ICMP Errors
+abstract: |-
+    ICMP error messages are vital for network reliability, providing
+       feedback on issues such as unreachable hosts or fragmentation
+       requirements.  They help devices adapt dynamically, support
+       troubleshooting, and enable essential functions like Path MTU
+       Discovery.  However, off-path attackers on the Internet may forge
+       ICMP error messages to bypass legitimate validation mechanisms,
+       causing the victim's TCP/IP stack to misinterpret network conditions
+       and exposing critical vulnerabilities.  This document analyzes how
+       such forged ICMP errors can be exploited by off-path attackers to
+       induce cross-layer interactions within the victim's TCP/IP stack,
+       leading to four classes of vulnerabilities: information leakage,
+       desynchronization of shared variables, semantic gaps, and identity
+       deception.  These ICMP-based attacks allow off-path attackers to
+       manipulate network traffic, disrupt communication flows, and
+       compromise both infrastructure and user privacy, without being on the
+       direct communication path.  The document concludes with proposed
+       countermeasures and recommendations for protocol evolution.
+pages: 18
+stream_state: active
+group: none
+last_updated: "2026-05-07"
+expires: "2026-11-08"
+url: https://datatracker.ietf.org/doc/draft-xu-intarea-vulnerabilities-forged-icmp/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,29 @@
+id: draft-aip-agent-identity-protocol
+name: draft-aip-agent-identity-protocol
+rev: "00"
+title: 'Agent Identity Protocol: Agentic Authentication and Authorized Policy Enforcement'
+abstract: |-
+    This document defines the Agent Identity Protocol (AIP), an open
+       standard for verifiable identity and policy enforcement for
+       artificial intelligence (AI) agents.
+
+       Agent Identity Protocol (AIP) addresses the problem of AI agents
+       operating with unbounded permissions -- running as users, inheriting
+       full API key access, and executing tool calls with no verifiable
+       identity boundary between human and non-human actors.
+
+       The protocol is structured as two cooperating layers.  Layer 1
+       (Identity) gives every agent a unique identifier and a key pair
+       registered with an AIP Registry; the agent signs every outbound
+       action with that key.  Layer 2 (Enforcement) interposes a proxy
+       between the AI client and every tool server that verifies the
+       signature, evaluates a declarative policy, and produces an allow,
+       deny, or hold decision before any tool is reached.
+pages: 30
+stream_state: active
+group: none
+last_updated: "2026-03-16"
+expires: "2026-09-17"
+url: https://datatracker.ietf.org/doc/draft-aip-agent-identity-protocol/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,21 @@
+id: rfc-8558
+rfc_number: 8558
+title: Transport Protocol Path Signals
+authors:
+    - name: T. Hardie
+      title: Editor
+date: 2019-04
+stream: IAB
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 10
+abstract: This document discusses the nature of signals seen by on-path elements examining transport protocols, contrasting implicit and explicit signals.  For example, TCP's state machine uses a series of well-known messages that are exchanged in the clear.  Because these are visible to network elements on the path between the two nodes setting up the transport connection, they are often used as signals by those network elements.  In transports that do not exchange these messages in the clear, on-path network elements lack those signals.  Often, the removal of those signals is intended by those moving the messages to confidential channels.  Where the endpoints desire that network elements along the path receive these signals, this document recommends explicit signals be used.
+formats:
+    - TXT
+    - HTML
+draft: draft-iab-path-signals-03
+doi: 10.17487/RFC8558
+errata_url: https://www.rfc-editor.org/errata/rfc8558
+url: https://www.rfc-editor.org/rfc/rfc8558
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,40 @@
+id: draft-geng-acme-idp
+name: draft-geng-acme-idp
+rev: "00"
+title: Automated Certificate Management Environment (ACME) Identity-Controlled Validation Extension
+abstract: |-
+    This document defines an Identity Control Validation (ICV) framework
+       for the ACME protocol [RFC8555], introducing a new ACME identifier
+       type "idp" and a new challenge type "idp-01".  The ICV framework
+       allows ACME servers to delegate trusted Identity Providers (IdPs) to
+       verify certificate applicants’ control over the claimed identities.
+
+       This document also defines an optional X.509 certificate extension,
+       the Trust-Domain-Restricted Certificate Extension, which explicitly
+       indicates that certificates issued via the ICV framework are backed
+       by a specific IdP trust domain and whose trustworthiness depends on
+       the current status and policies of that IdP, preventing trust leakage
+       into contexts outside the IdP’s trust domain.
+
+       This extension is parallel to Domain Control Validation (DCV)
+       [RFC8555]; either can independently verify an applicant’s control
+       over identities/resources and request certificates.
+       Proof-of-Possession (PoP) [I-D.geng-acme-public-key] serves as an
+       auxiliary enhancement framework.  Based on this architecture, two
+       standardized certificate enrollment models are formed: the Domain
+       Validation model (DCV + optional PoP) and the Identity Validation
+       model (ICV + optional PoP).  This document focuses on the latter.
+
+       This document defines three deployment models: the IdP-Operated
+       Certificate Model, the Intra-PKI Domain Mutual-Trust Model, and the
+       CA-Integrated IdP Model.  It supports multiple authentication
+       protocols via the extensible idp_method parameter, covering both
+       device and account identities.
+pages: 60
+stream_state: active
+group: none
+last_updated: "2026-05-19"
+expires: "2026-11-20"
+url: https://datatracker.ietf.org/doc/draft-geng-acme-idp/
+source: datatracker
+ingested_at: "2026-05-21"

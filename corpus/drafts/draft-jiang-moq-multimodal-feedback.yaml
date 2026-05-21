@@ -1,0 +1,24 @@
+id: draft-jiang-moq-multimodal-feedback
+name: draft-jiang-moq-multimodal-feedback
+rev: "00"
+title: MoQ Multimodal Feedback
+abstract: |-
+    This document defines an extension to Media over QUIC Transport
+       (MOQT) that enables MoQ receivers to report delivery quality
+       information for media Objects to senders.  The MoQ layer synthesizes
+       MMF feedback and local congestion control (CC) output to compute
+       control decisions such as bitrate, frame rate, and pacing, and inform
+       the CC algorithm module via a cross-layer control interface.  This
+       mechanism reuses the MOQT Track/Object data model without introducing
+       new control message types.  While QUIC ACK and reception timestamp
+       extensions continue to provide per-packet CC signals; this mechanism
+       adds per-Object media semantic feedback when the MMF extension is
+       negotiated and enabled.
+pages: 35
+stream_state: active
+group: none
+last_updated: "2026-03-17"
+expires: "2026-09-18"
+url: https://datatracker.ietf.org/doc/draft-jiang-moq-multimodal-feedback/
+source: datatracker
+ingested_at: "2026-05-21"

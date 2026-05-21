@@ -1,0 +1,29 @@
+id: draft-liu-wimse-wit-attestation
+name: draft-liu-wimse-wit-attestation
+rev: "00"
+title: Carrying Remote Attestation Evidence in Workload Identity Tokens (WIT)
+abstract: |-
+    This document specifies how Remote Attestation evidence, as defined
+       by the IETF RATS architecture, can be conveyed within a Workload
+       Identity Token (WIT) as used in the WIMSE (Workload Identity for
+       Micro-Services Environments) framework.  The WIT includes attestation
+       measurements that enable fast-path policy evaluation without
+       requiring immediate access to full evidence.  The WIT is bound to the
+       HTTP request using OAuth 2.0 Demonstrating Proof-of-Possession
+       (DPoP), ensuring that attestation claims are protected against replay
+       and token theft.
+
+       This specification defines a two-tier verification model: lightweight
+       verification using embedded measurements for common scenarios, and
+       deep verification using externalized evidence for high-assurance
+       requirements.  This enables secure, cross-domain verification of
+       workload integrity without requiring direct access to platform-
+       specific reference values, while enabling efficient deployments.
+pages: 17
+stream_state: active
+group: none
+last_updated: "2026-03-25"
+expires: "2026-09-26"
+url: https://datatracker.ietf.org/doc/draft-liu-wimse-wit-attestation/
+source: datatracker
+ingested_at: "2026-05-21"

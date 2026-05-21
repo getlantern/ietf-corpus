@@ -1,0 +1,27 @@
+id: rfc-3522
+rfc_number: 3522
+title: The Eifel Detection Algorithm for TCP
+authors:
+    - name: R. Ludwig
+    - name: M. Meyer
+date: 2003-04
+stream: IETF
+area: wit
+wg: tsvwg
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 14
+abstract: The Eifel detection algorithm allows a TCP sender to detect a posteriori whether it has entered loss recovery unnecessarily.  It requires that the TCP Timestamps option defined in RFC 1323 be enabled for a connection.  The Eifel detection algorithm makes use of the fact that the TCP Timestamps option eliminates the retransmission ambiguity in TCP.  Based on the timestamp of the first acceptable ACK that arrives during loss recovery, it decides whether loss recovery was entered unnecessarily.  The Eifel detection algorithm provides a basis for future TCP enhancements.  This includes response algorithms to back out of loss recovery by restoring a TCP sender's congestion control state.  This memo defines an Experimental Protocol for the Internet community.
+keywords:
+    - TCP
+    - transmission control protocol
+    - loss recovery
+    - timestamps
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-tsvwg-tcp-eifel-alg-07
+doi: 10.17487/RFC3522
+url: https://www.rfc-editor.org/rfc/rfc3522
+source: rfc-editor-index
+ingested_at: "2026-05-21"

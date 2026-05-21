@@ -1,0 +1,36 @@
+id: rfc-9574
+rfc_number: 9574
+title: Optimized Ingress Replication Solution for Ethernet VPNs (EVPNs)
+authors:
+    - name: J. Rabadan
+      title: Editor
+    - name: S. Sathappan
+    - name: W. Lin
+    - name: M. Katiyar
+    - name: A. Sajassi
+date: 2024-05
+stream: IETF
+area: rtg
+wg: bess
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 28
+abstract: Network Virtualization Overlay (NVO) networks using Ethernet VPNs (EVPNs) as their control plane may use trees based on ingress replication or Protocol Independent Multicast (PIM) to convey the overlay Broadcast, Unknown Unicast, or Multicast (BUM) traffic.  PIM provides an efficient solution that prevents sending multiple copies of the same packet over the same physical link; however, it may not always be deployed in the NVO network core.  Ingress replication avoids the dependency on PIM in the NVO network core.  While ingress replication provides a simple multicast transport, some NVO networks with demanding multicast applications require a more efficient solution without PIM in the core.  This document describes a solution to optimize the efficiency of ingress replication trees.
+keywords:
+    - Assisted Replication
+    - AR
+    - AR-Replicator
+    - RNVE
+    - Pruned Flood List
+    - PFL
+    - Pruned Flooding List
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-bess-evpn-optimized-ir-12
+doi: 10.17487/RFC9574
+url: https://www.rfc-editor.org/rfc/rfc9574
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,36 @@
+id: rfc-9736
+rfc_number: 9736
+title: The BGP Monitoring Protocol (BMP) Peer Up Message Namespace
+authors:
+    - name: J. Scudder
+    - name: P. Lucente
+date: 2025-03
+stream: IETF
+area: ops
+wg: grow
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 6
+abstract: |-
+    RFC 7854, the BGP Monitoring Protocol (BMP), uses different message types for different purposes. Most of these are structured as Type, Length, Value (TLV). One message type, the Peer Up message, lacks a set of TLVs defined for its use, instead sharing a namespace with the Initiation message. Experience has shown that this namespace sharing was a mistake, as it hampers the extension of the protocol.
+
+    This document updates RFC 7854 by creating an independent namespace for the Peer Up message. It also updates RFCs 8671 and 9069 by moving defined codepoints into the newly introduced registry. Compliant implementations of RFCs 7854, 8671, and 9069 also comply with this specification.
+keywords:
+    - IDR
+    - GROW
+    - BGP
+    - BMP
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-grow-bmp-peer-up-05
+updates:
+    - rfc-7854
+    - rfc-8671
+    - rfc-9069
+doi: 10.17487/RFC9736
+url: https://www.rfc-editor.org/rfc/rfc9736
+source: rfc-editor-index
+ingested_at: "2026-05-21"

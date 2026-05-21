@@ -1,0 +1,41 @@
+id: rfc-9146
+rfc_number: 9146
+title: Connection Identifier for DTLS 1.2
+authors:
+    - name: E. Rescorla
+      title: Editor
+    - name: H. Tschofenig
+      title: Editor
+    - name: T. Fossati
+    - name: A. Kraus
+date: 2022-03
+stream: IETF
+area: sec
+wg: tls
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 14
+abstract: |-
+    This document specifies the Connection ID (CID) construct for the Datagram Transport Layer Security (DTLS) protocol version 1.2.
+
+    A CID is an identifier carried in the record layer header that gives the recipient additional information for selecting the appropriate security association. In "classical" DTLS, selecting a security association of an incoming DTLS record is accomplished with the help of the 5-tuple. If the source IP address and/or source port changes during the lifetime of an ongoing DTLS session, then the receiver will be unable to locate the correct security context.
+
+    The new ciphertext record format with the CID also provides content type encryption and record layer padding.
+
+    This document updates RFC 6347.
+keywords:
+    - NAT rebinding
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-tls-dtls-connection-id-13
+updates:
+    - rfc-6347
+updated_by:
+    - rfc-9853
+doi: 10.17487/RFC9146
+url: https://www.rfc-editor.org/rfc/rfc9146
+source: rfc-editor-index
+ingested_at: "2026-05-21"

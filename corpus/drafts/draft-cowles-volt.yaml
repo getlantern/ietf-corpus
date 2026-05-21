@@ -1,0 +1,30 @@
+id: draft-cowles-volt
+name: draft-cowles-volt
+rev: "00"
+title: Verifiable Operations Ledger and Trace (VOLT) Protocol
+abstract: |-
+    The Verifiable Operations Ledger and Trace (VOLT) protocol defines a
+       minimal, interoperable format for producing tamper-evident execution
+       traces for agentic AI workflows.  VOLT records are linked via SHA-256
+       hash chains and packaged into portable Evidence Bundles that can be
+       verified independently by any conformant implementation.
+
+       VOLT functions as a "flight recorder" for AI agent operations: it
+       captures the sequence of events -- messages received, policy
+       decisions evaluated, human approvals granted, tools invoked, and
+       results returned -- with cryptographic integrity guarantees that
+       detect post-hoc modification, deletion, or insertion of records.
+
+       The protocol is privacy-first by design.  Events carry metadata and
+       content-addressed references rather than raw secrets or sensitive
+       payloads.  Evidence Bundles support explicit redaction, optional
+       Ed25519 signatures for non-repudiation, and both rolling and final
+       snapshot modes for long-running workflows.
+pages: 40
+stream_state: active
+group: none
+last_updated: "2026-02-28"
+expires: "2026-09-01"
+url: https://datatracker.ietf.org/doc/draft-cowles-volt/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,29 @@
+id: rfc-8490
+rfc_number: 8490
+title: DNS Stateful Operations
+authors:
+    - name: R. Bellis
+    - name: S. Cheshire
+    - name: J. Dickinson
+    - name: S. Dickinson
+    - name: T. Lemon
+    - name: T. Pusateri
+date: 2019-03
+stream: IETF
+area: ops
+wg: dnsop
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 64
+abstract: This document defines a new DNS OPCODE for DNS Stateful Operations (DSO).  DSO messages communicate operations within persistent stateful sessions using Type Length Value (TLV) syntax.  Three TLVs are defined that manage session timeouts, termination, and encryption padding, and a framework is defined for extensions to enable new stateful operations.  This document updates RFC 1035 by adding a new DNS header OPCODE that has both different message semantics and a new result code.  This document updates RFC 7766 by redefining a session, providing new guidance on connection reuse, and providing a new mechanism for handling session idle timeouts.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-dnsop-session-signal-20
+updates:
+    - rfc-1035
+    - rfc-7766
+doi: 10.17487/RFC8490
+url: https://www.rfc-editor.org/rfc/rfc8490
+source: rfc-editor-index
+ingested_at: "2026-05-21"

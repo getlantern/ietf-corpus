@@ -1,0 +1,30 @@
+id: draft-ietf-ace-group-oscore-profile
+name: draft-ietf-ace-group-oscore-profile
+rev: "06"
+title: The Group Object Security for Constrained RESTful Environments (Group OSCORE) Profile of the Authentication and Authorization for Constrained Environments (ACE) Framework
+abstract: |-
+    This document specifies a profile for the Authentication and
+       Authorization for Constrained Environments (ACE) framework.  The
+       profile uses Group Object Security for Constrained RESTful
+       Environments (Group OSCORE) to provide communication security between
+       a client and one or multiple resource servers that are members of an
+       OSCORE group.  The profile securely binds an OAuth 2.0 access token
+       to the public key of the client associated with the private key used
+       by that client in the OSCORE group.  The profile uses Group OSCORE to
+       achieve server authentication and proof of possession of the client's
+       private key.  Also, it provides proof of the client's membership to
+       the OSCORE group by binding the access token to information from the
+       Group OSCORE Security Context, thus allowing the resource server(s)
+       to verify the client's membership upon receiving a message protected
+       with Group OSCORE from the client.  Effectively, the profile enables
+       fine-grained access control paired with secure group communication,
+       in accordance with the Zero Trust principles.
+pages: 57
+stream: IETF
+stream_state: active
+group: ace
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-ietf-ace-group-oscore-profile/
+source: datatracker
+ingested_at: "2026-05-21"

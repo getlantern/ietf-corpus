@@ -1,0 +1,33 @@
+id: draft-sheffer-tls-pqc-continuity
+name: draft-sheffer-tls-pqc-continuity
+rev: "01"
+title: 'PQC Continuity: Downgrade Protection for TLS Servers Migrating to PQC'
+abstract: |-
+    As the Internet transitions toward post-quantum cryptography (PQC),
+       many TLS servers will continue supporting traditional certificates to
+       maintain compatibility with legacy clients.  However, this
+       coexistence introduces a significant vulnerability: an undetected
+       rollback attack, where a malicious actor strips the PQC or Composite
+       certificate and forces the use of a traditional certificate once
+       quantum-capable adversaries exist.
+
+       To defend against this, this document defines a TLS extension that
+       allows a TLS peer (typically a client) to cache another peer's
+       (typically a server's) declared commitment to present PQC or
+       composite certificates for a specified duration.  On subsequent
+       connections, the caching peer enforces that cached commitment and
+       rejects traditional-only certificates that conflict with it.  This
+       mechanism, inspired by HTTP Strict Transport Security (HSTS) but
+       operating at the TLS layer, provides PQC downgrade protection without
+       requiring changes to certificate authority (CA) infrastructure.
+       Although we expect the more common use case to be clients caching
+       server commitments, the mechanism applies symmetrically to server
+       caching of client certificate commitments as well.
+pages: 10
+stream_state: active
+group: none
+last_updated: "2026-03-01"
+expires: "2026-09-02"
+url: https://datatracker.ietf.org/doc/draft-sheffer-tls-pqc-continuity/
+source: datatracker
+ingested_at: "2026-05-21"

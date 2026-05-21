@@ -1,0 +1,32 @@
+id: draft-decraene-idr-nlri-error-handling
+name: draft-decraene-idr-nlri-error-handling
+rev: "02"
+title: The Key List BGP Attribute for NLRI Error handling
+abstract: |-
+    RFC 7606 partially revises the error handling for BGP UPDATE
+       messages.  It reduces the cases of BGP session reset by defining and
+       using less impactful error handling approaches, such as attribute
+       discard and treat-as-withdraw when applicable.  The treat-as-withdraw
+       approach requires that the entire NLRI field of the MP_REACH_NLRI
+       attribute be successfully parsed.  This typically means parsing
+       errors in MP_REACH_NLRI cannot be handled by any means short of
+       session reset.  This is exacerbated by the use of non-key data within
+       NLRI, which introduces parsing complexity and additional error cases.
+
+       This specification defines a non-transitive BGP attribute, the
+       "NLRI_KEY_LIST attribute", to encode NLRIs as per the format of
+       MP_UNREACH_NLRI.  This attribute is used to allow the treat-as-
+       withdraw error-handling approach to be used in case an error in the
+       MP_REACH_NLRI attribute prevents the parsing of its NLRIs.
+
+       This document updates RFC 7606 by mandating that the NLRI_KEY_LIST
+       attribute appear before the MP_REACH_NLRI (or any other) attribute in
+       an UPDATE message.
+pages: 8
+stream_state: active
+group: none
+last_updated: "2026-05-06"
+expires: "2026-11-07"
+url: https://datatracker.ietf.org/doc/draft-decraene-idr-nlri-error-handling/
+source: datatracker
+ingested_at: "2026-05-21"

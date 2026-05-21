@@ -1,0 +1,37 @@
+id: rfc-6439
+rfc_number: 6439
+title: 'Routing Bridges (RBridges): Appointed Forwarders'
+authors:
+    - name: R. Perlman
+    - name: D. Eastlake
+    - name: Y. Li
+    - name: A. Banerjee
+    - name: F. Hu
+date: 2011-11
+stream: IETF
+area: rtg
+wg: trill
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 15
+abstract: |-
+    The IETF TRILL (TRansparent Interconnection of Lots of Links) protocol provides least cost pair-wise data forwarding without configuration in multi-hop networks with arbitrary topology, safe forwarding even during periods of temporary loops, and support for multipathing of both unicast and multicast traffic. TRILL accomplishes this by using IS-IS (Intermediate System to Intermediate System) link state routing and by encapsulating traffic using a header that includes a hop count. Devices that implement TRILL are called "RBridges" (Routing Bridges).
+
+    TRILL supports multi-access LAN (Local Area Network) links that can have multiple end stations and RBridges attached. Where multiple RBridges are attached to a link, native traffic to and from end stations on that link is handled by a subset of those RBridges called "Appointed Forwarders", with the intent that native traffic in each VLAN (Virtual LAN) be handled by at most one RBridge. The purpose of this document is to improve the documentation of the Appointed Forwarder mechanism; thus, it updates RFC 6325. [STANDARDS-TRACK]
+keywords:
+    - trill
+    - TRansparent Interconnection of Lots of Links
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-trill-rbridge-af-05
+obsoleted_by:
+    - rfc-8139
+updates:
+    - rfc-6325
+updated_by:
+    - rfc-7180
+doi: 10.17487/RFC6439
+url: https://www.rfc-editor.org/rfc/rfc6439
+source: rfc-editor-index
+ingested_at: "2026-05-21"

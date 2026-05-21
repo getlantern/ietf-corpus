@@ -1,0 +1,28 @@
+id: draft-chen-lake-edhoc-aka
+name: draft-chen-lake-edhoc-aka
+rev: "02"
+title: EDHOC Authenticated with AKA
+abstract: |-
+    This document defines an Authentication and Key Agreement (AKA)
+       authentication method for the Ephemeral Diffie-Hellman Over COSE
+       (EDHOC) key exchange protocol.  This method, named EDHOC-AKA, is
+       designed as a specific profile of the EDHOC Pre-Shared Key (PSK)
+       authentication method defined in [draft-ietf-lake-edhoc-psk-06].
+
+       EDHOC-AKA leverages the 3GPP AKA protocol to dynamically generate a
+       session-specific Pre-Shared Key, which is then used to run the EDHOC-
+       PSK protocol flow.  The AKA-specific parameters are transported
+       within the External Authorization Data (EAD) fields of the EDHOC
+       messages.  This approach provides efficient mobile communication
+       network access authentication for resource-constrained scenarios
+       (such as Non-Terrestrial Networks, NTN) while inheriting the security
+       properties of EDHOC-PSK, including mutual authentication, identity
+       protection, and forward secrecy.
+pages: 9
+stream_state: active
+group: none
+last_updated: "2026-03-15"
+expires: "2026-09-16"
+url: https://datatracker.ietf.org/doc/draft-chen-lake-edhoc-aka/
+source: datatracker
+ingested_at: "2026-05-21"

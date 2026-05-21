@@ -1,0 +1,31 @@
+id: draft-ietf-pquip-hbs-state
+name: draft-ietf-pquip-hbs-state
+rev: "04"
+title: 'Hash-based Signatures: State and Backup Management'
+abstract: |-
+    Stateful Hash-Based Signature Schemes (Stateful HBS) such as
+       Leighton-Micali Signature (LMS), Hierarchical Signature System (HSS),
+       eXtended Merkle Signature Scheme (XMSS), and XMSS^MT combine Merkle
+       trees with One-Time Signatures (OTS) to provide signatures that are
+       resistant against attacks using large-scale quantum computers.
+       Unlike conventional stateless digital signature schemes, Stateful HBS
+       have a state to keep track of which OTS keys have been used, as
+       double-signing with the same OTS key allows forgeries.
+
+       This document provides guidance and catalogs security considerations
+       for the operational and technical aspects of deploying systems that
+       rely on Stateful HBS.  Management of the state of the Stateful HBS,
+       including any handling of redundant key material, is a sensitive
+       topic.  This document describes some approaches to handle the
+       associated challenges.  It also describes the challenges that need to
+       be resolved before certain approaches should be considered.
+pages: 25
+stream: IETF
+stream_state: active
+group: pquip
+intended_status: Informational
+last_updated: "2026-05-20"
+expires: "2026-08-31"
+url: https://datatracker.ietf.org/doc/draft-ietf-pquip-hbs-state/
+source: datatracker
+ingested_at: "2026-05-21"

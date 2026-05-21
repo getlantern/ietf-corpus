@@ -1,0 +1,38 @@
+id: draft-hood-agtp-log
+name: draft-hood-agtp-log
+rev: "01"
+title: AGTP Transparency Log Protocol
+abstract: |-
+    This document specifies the AGTP Transparency Log (AGTP-LOG): the
+       append-only audit log protocol that underpins the log-anchored Trust
+       Tier 1 verification path defined in [AGTP] and provides the post-hoc
+       audit infrastructure for AGTP-based agent operations.  AGTP-LOG
+       aligns with [RFC9162] (Certificate Transparency 2.0) as the
+       verifiable data structure and issues COSE_Sign1 receipts per
+       [RFC9943] (SCITT) for cross-ecosystem interoperability.  This
+       document also establishes the AGTP Agent Identity Taxonomy (Agent
+       Genesis, Canonical Agent-ID, Agent Certificate) that [AGTP] v07
+       normatively adopts.  The log protocol defined here covers entry
+       submission, receipt retrieval, inclusion-proof retrieval,
+       consistency-proof retrieval, and discovery via the log_uri field of
+       the Agent Genesis.  Per-platform logs are the default; the federation
+       model follows the SCITT cross-witnessing pattern.  Witness and
+       monitor role definitions, full federation procedures, and the formal
+       entry-acceptance threat model are deferred to a future revision.
+
+       The audit properties AGTP-LOG provides are structural rather than
+       retrofitted.  Statements are signed by the governance platform that
+       operates the log, not by the agent the statements concern; an agent
+       cannot forge its own audit trail because it does not control the log
+       operator's signing key.  This architectural separation distinguishes
+       AGTP-LOG audit infrastructure from approaches that layer audit data
+       models onto general-purpose substrates where the audited party
+       participates in writing the audit trail.
+pages: 24
+stream_state: active
+group: none
+last_updated: "2026-05-20"
+expires: "2026-11-21"
+url: https://datatracker.ietf.org/doc/draft-hood-agtp-log/
+source: datatracker
+ingested_at: "2026-05-21"

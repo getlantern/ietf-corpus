@@ -1,0 +1,24 @@
+id: draft-sullivan-tls-signed-ech-updates
+name: draft-sullivan-tls-signed-ech-updates
+rev: "01"
+title: Authenticated ECH Config Distribution and Rotation
+abstract: |-
+    Encrypted ClientHello (ECH) requires clients to have the server's ECH
+       configuration before connecting.  Currently, when ECH fails, servers
+       can send updated configurations but clients cannot authenticate them
+       unless the server has a valid certificate for the public name,
+       limiting deployment flexibility.
+
+       This document specifies a new mechanism for authenticating ECH
+       configurations.  Servers include additional information in their
+       initial ECH configurations, which enables clients to authenticate
+       updated configurations without relying on a valid certificate for the
+       public name.
+pages: 20
+stream_state: active
+group: none
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-sullivan-tls-signed-ech-updates/
+source: datatracker
+ingested_at: "2026-05-21"

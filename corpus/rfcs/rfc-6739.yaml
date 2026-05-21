@@ -1,0 +1,32 @@
+id: rfc-6739
+rfc_number: 6739
+title: Synchronizing Service Boundaries and <mapping> Elements Based on the Location-to-Service Translation (LoST) Protocol
+authors:
+    - name: H. Schulzrinne
+    - name: H. Tschofenig
+date: 2012-10
+stream: IETF
+area: art
+wg: ecrit
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 25
+abstract: |-
+    The Location-to-Service Translation (LoST) protocol is an XML-based protocol for mapping service identifiers and geodetic or civic location information to service URIs and service boundaries. In particular, it can be used to determine the location-appropriate Public Safety Answering Point (PSAP) for emergency services.
+
+    The <mapping> element in the LoST protocol specification encapsulates information about service boundaries and circumscribes the region within which all locations map to the same service Uniform Resource Identifier (URI) or set of URIs for a given service.
+
+    This document defines an XML protocol to exchange these mappings between two nodes. This mechanism is designed for the exchange of authoritative <mapping> elements between two entities. Exchanging cached <mapping> elements, i.e., non-authoritative elements, is possible but not envisioned. Even though the <mapping> element format is reused from the LoST specification, the mechanism in this document can be used without the LoST protocol. This document defines an Experimental Protocol for the Internet community.
+keywords:
+    - Location
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-ecrit-lost-sync-18
+updated_by:
+    - rfc-8996
+doi: 10.17487/RFC6739
+errata_url: https://www.rfc-editor.org/errata/rfc6739
+url: https://www.rfc-editor.org/rfc/rfc6739
+source: rfc-editor-index
+ingested_at: "2026-05-21"

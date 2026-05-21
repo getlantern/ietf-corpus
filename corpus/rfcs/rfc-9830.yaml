@@ -1,0 +1,35 @@
+id: rfc-9830
+rfc_number: 9830
+title: Advertising Segment Routing Policies in BGP
+authors:
+    - name: S. Previdi
+    - name: C. Filsfils
+    - name: K. Talaulikar
+      title: Editor
+    - name: P. Mattes
+    - name: D. Jain
+date: 2025-09
+stream: IETF
+area: rtg
+wg: idr
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 36
+abstract: |-
+    A Segment Routing (SR) Policy is an ordered list of segments (also referred to as "instructions") that define a source-routed policy. An SR Policy consists of one or more Candidate Paths (CPs), each comprising one or more segment lists. A headend can be provisioned with these CPs using various mechanisms such as Command-Line Interface (CLI), Network Configuration Protocol (NETCONF), Path Computation Element Communication Protocol (PCEP), or BGP.
+
+    This document specifies how BGP can be used to distribute SR Policy CPs. It introduces a BGP SAFI for advertising a CP of an SR Policy and defines sub-TLVs for the Tunnel Encapsulation Attribute to signal information related to these CPs.
+
+    Furthermore, this document updates RFC 9012 by extending the Color Extended Community to support additional steering modes over SR Policy.
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-idr-sr-policy-safi-13
+updates:
+    - rfc-9012
+doi: 10.17487/RFC9830
+url: https://www.rfc-editor.org/rfc/rfc9830
+source: rfc-editor-index
+ingested_at: "2026-05-21"

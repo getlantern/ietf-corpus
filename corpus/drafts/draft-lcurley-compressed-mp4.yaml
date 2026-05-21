@@ -1,0 +1,25 @@
+id: draft-lcurley-compressed-mp4
+name: draft-lcurley-compressed-mp4
+rev: "00"
+title: Compressed MP4
+abstract: |-
+    Fragmented MP4 (fMP4) is widely used for live streaming, but the ISO
+       Base Media File Format (ISOBMFF) box structure imposes significant
+       per-fragment overhead.  Each box header requires 8 bytes (4-byte size
+       + 4-byte type), and payload fields use fixed-width integers (u32/
+       u64).  For low-latency streaming with single-frame fragments, this
+       overhead can exceed the media payload itself.
+
+       This document defines a compression scheme for ISO BMFF that replaces
+       box headers with compact varint-encoded identifiers and sizes, and
+       defines compressed variants of commonly used boxes with varint
+       payload fields.  The scheme reduces per-fragment overhead from ~100
+       bytes to ~20 bytes while preserving the full box hierarchy.
+pages: 12
+stream_state: active
+group: none
+last_updated: "2026-03-17"
+expires: "2026-09-18"
+url: https://datatracker.ietf.org/doc/draft-lcurley-compressed-mp4/
+source: datatracker
+ingested_at: "2026-05-21"

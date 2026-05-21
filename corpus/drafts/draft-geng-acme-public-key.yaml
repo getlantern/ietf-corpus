@@ -1,0 +1,35 @@
+id: draft-geng-acme-public-key
+name: draft-geng-acme-public-key
+rev: "06"
+title: Automated Certificate Management Environment (ACME) Extension for Public Key Challenges
+abstract: |-
+    The current ACME protocol [RFC8555] requires applicants to submit a
+       PKCS#10 Certificate Signing Request (CSR) during the finalization
+       phase.  The construction, ASN.1 encoding, and transmission of the CSR
+       impose additional implementation burdens on both the client
+       (especially resource-constrained devices) and the server.  Moreover,
+       the CSR cannot prevent a public key from being replaced by an
+       intermediary at the protocol level.
+
+       This document introduces the "pk-01" challenge extension based on the
+       ACME protocol.  Its core mechanism is as follows: the applicant
+       declares the public key to be authenticated during the "newOrder"
+       phase and completes the Proof of Possession (PoP) by signing with the
+       private key during the challenge phase.  Since the public key is
+       declared when the order is created and verified during the challenge
+       phase, there is no need to submit a CSR during the finalization
+       phase; the ACME server can issue the certificate directly based on
+       the verified public key, thereby eliminating the CSR at the protocol
+       level.
+
+       The "pk-01" challenge supports two verification modes via the
+       pop_mode field:
+pages: 35
+stream: IETF
+stream_state: active
+group: acme
+last_updated: "2026-04-28"
+expires: "2026-10-20"
+url: https://datatracker.ietf.org/doc/draft-geng-acme-public-key/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,34 @@
+id: rfc-9611
+rfc_number: 9611
+title: Internet Key Exchange Protocol Version 2 (IKEv2) Support for Per-Resource Child Security Associations (SAs)
+authors:
+    - name: A. Antony
+    - name: T. Brunner
+    - name: S. Klassert
+    - name: P. Wouters
+date: 2024-07
+stream: IETF
+area: sec
+wg: ipsecme
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 9
+abstract: |-
+    In order to increase the bandwidth of IPsec traffic between peers, this document defines one Notify Message Status Types and one Notify Message Error Types payload for the Internet Key Exchange Protocol Version 2 (IKEv2) to support the negotiation of multiple Child Security Associations (SAs) with the same Traffic Selectors used on different resources, such as CPUs.
+
+    The SA_RESOURCE_INFO notification is used to convey information that the negotiated Child SA and subsequent new Child SAs with the same Traffic Selectors are a logical group of Child SAs where most or all of the Child SAs are bound to a specific resource, such as a specific CPU. The TS_MAX_QUEUE notify conveys that the peer is unwilling to create more additional Child SAs for this particular negotiated Traffic Selector combination.
+
+    Using multiple Child SAs with the same Traffic Selectors has the benefit that each resource holding the Child SA has its own Sequence Number Counter, ensuring that CPUs don't have to synchronize their cryptographic state or disable their packet replay protection.
+keywords:
+    - IKEv2
+    - IPsec
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-ipsecme-multi-sa-performance-09
+doi: 10.17487/RFC9611
+url: https://www.rfc-editor.org/rfc/rfc9611
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,34 @@
+id: rfc-9117
+rfc_number: 9117
+title: Revised Validation Procedure for BGP Flow Specifications
+authors:
+    - name: J. Uttaro
+    - name: J. Alcaide
+    - name: C. Filsfils
+    - name: D. Smith
+    - name: P. Mohapatra
+date: 2021-08
+stream: IETF
+area: rtg
+wg: idr
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 12
+abstract: |-
+    This document describes a modification to the validation procedure defined for the dissemination of BGP Flow Specifications. The dissemination of BGP Flow Specifications as specified in RFC 8955 requires that the originator of the Flow Specification match the originator of the best-match unicast route for the destination prefix embedded in the Flow Specification. For an Internal Border Gateway Protocol (iBGP) received route, the originator is typically a border router within the same autonomous system (AS). The objective is to allow only BGP speakers within the data forwarding path to originate BGP Flow Specifications. Sometimes it is desirable to originate the BGP Flow Specification from any place within the autonomous system itself, for example, from a centralized BGP route controller. However, the validation procedure described in RFC 8955 will fail in this scenario. The modification proposed herein relaxes the validation rule to enable Flow Specifications to be originated within the same autonomous system as the BGP speaker performing the validation. Additionally, this document revises the AS_PATH validation rules so Flow Specifications received from an External Border Gateway Protocol (eBGP) peer can be validated when such a peer is a BGP route server.
+
+    This document updates the validation procedure in RFC 8955.
+keywords:
+    - BGP flowspec
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-idr-bgp-flowspec-oid-15
+updates:
+    - rfc-8955
+doi: 10.17487/RFC9117
+url: https://www.rfc-editor.org/rfc/rfc9117
+source: rfc-editor-index
+ingested_at: "2026-05-21"

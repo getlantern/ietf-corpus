@@ -1,0 +1,27 @@
+id: draft-powers-dnsop-expire
+name: draft-powers-dnsop-expire
+rev: "00"
+title: Authenticated Cache-Expiration Opcode (EXPIRE)
+abstract: |-
+    This document defines a new DNS message opcode, EXPIRE, which enables
+       an authenticated authoritative operator to request immediate deletion
+       of a specific RRset from a resolver's cache.  EXPIRE messages may be
+       authenticated either through DNSSEC signatures or through resolver
+       control-channel authentication (for example TSIG, mutually
+       authenticated TLS, IPsec, or local trust policy).  EXPIRE applies
+       only to resolver cache and MUST NOT modify authoritative data.
+
+       Resolvers validate authority, apply mandatory replay protection using
+       SOA serials when available or equivalent replay-mitigation
+       mechanisms, and flush the targeted RRset upon successful validation.
+       EXPIRE provides a deterministic, authenticated mechanism for cache
+       rollback and correction across both signed (DNSSEC) and unsigned
+       (internal) DNS deployments.
+pages: 15
+stream_state: active
+group: none
+last_updated: "2025-11-20"
+expires: "2026-05-24"
+url: https://datatracker.ietf.org/doc/draft-powers-dnsop-expire/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,30 @@
+id: draft-liu-agent-operation-authorization
+name: draft-liu-agent-operation-authorization
+rev: "02"
+title: Agent Operation Authorization
+abstract: |-
+    This document specifies the Agent Operation Authorization framework —
+       a structured mechanism that enables verifiable delegation of actions
+       from human principals to autonomous AI agents with fine-grained agent
+       operation authorization.
+
+       The framework introduces two distinct phases:
+
+       *  Agent Operation Authorization Request: A structured proposal of
+          operations converted to a JSON Web Token (JWT) without including
+          the user's original natural language input.
+
+       *  Agent Operation Authorization Token: A JSON Web Token representing
+          confirmed authorization for a specific agent operation,
+          enforceable at runtime by agents and verifiers.  It
+          cryptographically verifies user intent, prevents unauthorized or
+          hallucinated actions, and ensures auditable traceability of each
+          authorized operation.
+pages: 24
+stream_state: active
+group: none
+last_updated: "2026-03-16"
+expires: "2026-09-17"
+url: https://datatracker.ietf.org/doc/draft-liu-agent-operation-authorization/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,35 @@
+id: draft-yalcinkaya-rats-asil-m
+name: draft-yalcinkaya-rats-asil-m
+rev: "00"
+title: An ASIL-M Profile for Multi-Root Evidence Synthesis in RATS
+abstract: |-
+    This document defines an application profile for Remote ATtestation
+       procedureS (RATS) deployments in which authorization decisions depend
+       on evidence from multiple independent trust roots. The profile is
+       intended for AI inference systems that require explicit cross-root
+       appraisal before execution is authorized.
+
+       The document specifies three related artifacts:
+
+       *  an Attestation Evidence Synthesis Protocol for combining multiple
+          evidence sets into one deterministic appraisal outcome;
+
+       *  the Twin Attestation Policy Language (TAPL), a constrained policy
+          language for deterministic multi-root appraisal; and
+
+       *  the Canonical Attestation Record (CAR), an audit-oriented envelope
+          that binds evidence references, appraisal outputs, freshness
+          information, and replay-verification metadata.
+
+       CAR is not a replacement for Evidence or Attestation Results as used
+       in the RATS architecture. Instead, it is a higher-layer profile for
+       packaging multi-root appraisal state and application-specific bindings
+       for replay and audit.
+pages: 9
+stream_state: active
+group: none
+last_updated: "2026-03-19"
+expires: "2026-09-20"
+url: https://datatracker.ietf.org/doc/draft-yalcinkaya-rats-asil-m/
+source: datatracker
+ingested_at: "2026-05-21"

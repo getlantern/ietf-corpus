@@ -1,0 +1,25 @@
+id: draft-seralathan-radext-persistent-devid
+name: draft-seralathan-radext-persistent-devid
+rev: "00"
+title: RADIUS Attribute for Persistent Device Identity in MAC-Randomized Environments
+abstract: |-
+    This document defines a new RADIUS attribute, Persistent-Device-Id,
+       that enables Network Access Control (NAC) systems to maintain a
+       stable device identity across Media Access Control (MAC) address
+       changes.  Modern operating systems randomize MAC addresses by
+       default, disrupting RADIUS-based authentication, authorization, and
+       accounting workflows that rely on the Calling-Station-Id attribute as
+       a persistent device identifier.  The Persistent-Device-Id attribute
+       carries a Globally Unique Identifier (GUID) in RADIUS Access-Accept
+       and Accounting-Request messages, providing a stable correlation key
+       for device profiling, policy enforcement, and regulatory compliance.
+       This document specifies the attribute format, assignment procedures,
+       and usage guidelines for RADIUS clients and servers..
+pages: 35
+stream_state: active
+group: none
+last_updated: "2026-04-30"
+expires: "2026-11-01"
+url: https://datatracker.ietf.org/doc/draft-seralathan-radext-persistent-devid/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,40 @@
+id: rfc-9908
+rfc_number: 9908
+title: Clarification and Enhancement of the CSR Attributes Definition in RFC 7030
+authors:
+    - name: M. Richardson
+      title: Editor
+    - name: O. Friel
+    - name: D. von Oheimb
+    - name: D. Harkins
+date: 2026-01
+stream: IETF
+area: sec
+wg: lamps
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 22
+abstract: |-
+    This document updates RFC 7030, "Enrollment over Secure Transport" (EST), clarifying how the Certificate Signing Request (CSR) Attributes Response can be used by an EST server to specify both CSR attribute Object Identifiers (OIDs) and CSR attribute values, particularly X.509 extension values, that the server expects the client to include in a subsequent CSR request. RFC 9148 is derived from RFC 7030 and is also updated.
+
+    RFC 7030 is ambiguous in its specification of the CSR Attributes Response. This has resulted in implementation challenges and implementor confusion because there was no universal understanding of what was specified. This document clarifies the encoding rules.
+
+    This document also provides a new straightforward approach: using a template for CSR contents that may be partially filled in by the server. This also allows an EST server to specify a subject Distinguished Name (DN).
+keywords:
+    - SubjectAltName
+    - SAN
+    - Certificate Extensions
+    - Certificate Signing Request
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-lamps-rfc7030-csrattrs-23
+updates:
+    - rfc-7030
+    - rfc-9148
+doi: 10.17487/RFC9908
+url: https://www.rfc-editor.org/rfc/rfc9908
+source: rfc-editor-index
+ingested_at: "2026-05-21"

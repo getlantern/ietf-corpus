@@ -1,0 +1,33 @@
+id: draft-yang-rtgwg-srv6-sfc-reliability-framework
+name: draft-yang-rtgwg-srv6-sfc-reliability-framework
+rev: "05"
+title: Reliability Framework for SRv6 Service Function Chaining
+abstract: |-
+    Segment routing (SR) [RFC8402] is a source routing paradigm that
+       explicitly indicates the forwarding path for packets at the ingress
+       node.  SR can be instantiated on the MPLS data plane (MPLS-SR) and
+       the IPv6 data plane (SRv6).
+
+       On the MPLS-SR data plane, a segment is encoded as an MPLS label, and
+       an ordered list of segments is encoded as a stack of labels.  On the
+       SRv6 data plane, a segment is encoded as an IPv6 address (SRv6 SID)
+       [RFC8986], and an ordered list of segments is encoded as an ordered
+       list of SRv6 SIDs in the SR header (SRH) [RFC8754].  The ingress node
+       steers packets into a specific path according to the ordered list of
+       segments (SR Policy) as defined in [RFC9256].  Service Function
+       Chaining (SFC) defines an ordered set of service functions and
+       subsequent "steering" of traffic through them.  The architecture of
+       SFC is defined in [RFC7665].
+
+       This document describes the common failure scenarios and protection
+       mechanisms of service function chains in SR networks.  Then
+       implementation recommendations for protection of service function
+       chains are proposed.
+pages: 27
+stream_state: active
+group: none
+last_updated: "2025-12-16"
+expires: "2026-06-19"
+url: https://datatracker.ietf.org/doc/draft-yang-rtgwg-srv6-sfc-reliability-framework/
+source: datatracker
+ingested_at: "2026-05-21"

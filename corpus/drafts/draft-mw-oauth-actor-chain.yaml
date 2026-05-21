@@ -1,0 +1,33 @@
+id: draft-mw-oauth-actor-chain
+name: draft-mw-oauth-actor-chain
+rev: "00"
+title: Cryptographically Verifiable Actor Chains for OAuth 2.0 Token Exchange
+abstract: |-
+    Multi-hop service-to-service and agentic workflows need a
+       standardized way to preserve and validate delegation-path continuity
+       across successive token exchanges.  This document defines six actor-
+       chain profiles for OAuth 2.0 Token Exchange [RFC8693].  [RFC8693]
+       permits nested act claims, but prior actors remain informational only
+       and token exchange does not define how a delegation path is preserved
+       and validated across successive exchanges.
+
+       This document profiles delegation-chain tokens and defines profile-
+       specific processing for multi-hop workflows.  The six profiles are:
+       Declared Full Disclosure; Declared Subset Disclosure; Declared Actor-
+       Only Disclosure; Verified Full Disclosure; Verified Subset
+       Disclosure; and Verified Actor-Only Disclosure.
+
+       These profiles preserve the existing meanings of sub, act, and
+       may_act.  They support same-domain and cross-domain delegation and
+       provide different tradeoffs among visible chain-based authorization,
+       cryptographic accountability, auditability, privacy, and long-running
+       workflow support.  Plain RFC 8693 impersonation-shaped outputs remain
+       valid RFC 8693 behavior but are outside this profile family.
+pages: 97
+stream_state: active
+group: none
+last_updated: "2026-05-01"
+expires: "2026-11-02"
+url: https://datatracker.ietf.org/doc/draft-mw-oauth-actor-chain/
+source: datatracker
+ingested_at: "2026-05-21"

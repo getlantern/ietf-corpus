@@ -1,0 +1,31 @@
+id: rfc-6155
+rfc_number: 6155
+title: Use of Device Identity in HTTP-Enabled Location Delivery (HELD)
+authors:
+    - name: J. Winterbottom
+    - name: M. Thomson
+    - name: H. Tschofenig
+    - name: R. Barnes
+date: 2011-03
+stream: IETF
+area: rai
+wg: geopriv
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 27
+abstract: |-
+    When a Location Information Server receives a request for location information (using the locationRequest message), described in the base HTTP-Enabled Location Delivery (HELD) specification, it uses the source IP address of the arriving message as a pointer to the location determination process. This is sufficient in environments where the location of a Device can be determined based on its IP address.
+
+    Two additional use cases are addressed by this document. In the first, location configuration requires additional or alternative identifiers from the source IP address provided in the request. In the second, an entity other than the Device requests the location of the Device.
+
+    This document extends the HELD protocol to allow the location request message to carry Device identifiers. Privacy and security considerations describe the conditions where requests containing identifiers are permitted. [STANDARDS-TRACK]
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-geopriv-held-identity-extensions-06
+updated_by:
+    - rfc-6915
+doi: 10.17487/RFC6155
+url: https://www.rfc-editor.org/rfc/rfc6155
+source: rfc-editor-index
+ingested_at: "2026-05-21"

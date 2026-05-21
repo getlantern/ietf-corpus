@@ -1,0 +1,31 @@
+id: rfc-6441
+rfc_number: 6441
+title: Time to Remove Filters for Previously Unallocated IPv4 /8s
+authors:
+    - name: L. Vegoda
+date: 2011-11
+stream: IETF
+area: ops
+wg: grow
+current_status: BEST CURRENT PRACTICE
+publication_status: BEST CURRENT PRACTICE
+page_count: 5
+abstract: |-
+    It has been common for network administrators to filter IP traffic from and BGP prefixes of unallocated IPv4 address space. Now that there are no longer any unallocated IPv4 /8s, this practise is more complicated, fragile, and expensive. Network administrators are advised to remove filters based on the registration status of the address space.
+
+    This document explains why any remaining packet and BGP prefix filters for unallocated IPv4 /8s should now be removed on border routers and documents those IPv4 unicast prefixes that should not be routed across the public Internet. This memo documents an Internet Best Current Practice.
+keywords:
+    - bogons
+    - IPv4
+    - martians
+    - filters
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-grow-no-more-unallocated-slash8s-04
+also:
+    - bcp-171
+doi: 10.17487/RFC6441
+url: https://www.rfc-editor.org/rfc/rfc6441
+source: rfc-editor-index
+ingested_at: "2026-05-21"

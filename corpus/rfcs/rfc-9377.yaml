@@ -1,0 +1,28 @@
+id: rfc-9377
+rfc_number: 9377
+title: IS-IS Flood Reflection
+authors:
+    - name: T. Przygienda
+      title: Editor
+    - name: C. Bowers
+    - name: Y. Lee
+    - name: A. Sharma
+    - name: R. White
+date: 2023-04
+stream: IETF
+area: rtg
+wg: lsr
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 19
+abstract: This document describes a backward-compatible, optional IS-IS extension that allows the creation of IS-IS flood reflection topologies.  Flood reflection permits topologies in which IS-IS Level 1 (L1) areas provide transit-forwarding for IS-IS Level 2 (L2) areas using all available L1 nodes internally.  It accomplishes this by creating L2 flood reflection adjacencies within each L1 area.  Those adjacencies are used to flood L2 Link State Protocol Data Units (LSPs) and are used in the L2 Shortest Path First (SPF) computation.  However, they are not ordinarily utilized for forwarding within the flood reflection cluster.  This arrangement gives the L2 topology significantly better scaling properties than prevalently used flat designs.  As an additional benefit, only those routers directly participating in flood reflection are required to support the feature.  This allows for incremental deployment of scalable L1 transit areas in an existing, previously flat network design, without the necessity of upgrading all routers in the network.
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-lsr-isis-flood-reflection-12
+doi: 10.17487/RFC9377
+url: https://www.rfc-editor.org/rfc/rfc9377
+source: rfc-editor-index
+ingested_at: "2026-05-21"

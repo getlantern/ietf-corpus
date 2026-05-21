@@ -1,0 +1,35 @@
+id: rfc-4721
+rfc_number: 4721
+title: Mobile IPv4 Challenge/Response Extensions (Revised)
+authors:
+    - name: C. Perkins
+    - name: P. Calhoun
+    - name: J. Bharatia
+date: 2007-01
+stream: IETF
+area: int
+wg: mip4
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 26
+abstract: |-
+    Mobile IP, as originally specified, defines an authentication extension (the Mobile-Foreign Authentication extension) by which a mobile node can authenticate itself to a foreign agent. Unfortunately, that extension does not provide the foreign agent any direct guarantee that the protocol is protected from replays and does not allow for the use of existing techniques (such as Challenge Handshake Authentication Protocol (CHAP)) for authenticating portable computer devices.
+
+    In this specification, we define extensions for the Mobile IP Agent Advertisements and the Registration Request that allow a foreign agent to use a challenge/response mechanism to authenticate the mobile node.
+
+    Furthermore, this document updates RFC 3344 by including a new authentication extension called the Mobile-Authentication, Authorization, and Accounting (AAA) Authentication extension. This new extension is provided so that a mobile node can supply credentials for authorization, using commonly available AAA infrastructure elements. This authorization-enabling extension MAY co-exist in the same Registration Request with authentication extensions defined for Mobile IP Registration by RFC 3344. This document obsoletes RFC 3012. [STANDARDS-TRACK]
+keywords:
+    - chap
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-mip4-rfc3012bis-05
+obsoletes:
+    - rfc-3012
+updates:
+    - rfc-3344
+doi: 10.17487/RFC4721
+errata_url: https://www.rfc-editor.org/errata/rfc4721
+url: https://www.rfc-editor.org/rfc/rfc4721
+source: rfc-editor-index
+ingested_at: "2026-05-21"

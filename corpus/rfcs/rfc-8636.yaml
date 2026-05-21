@@ -1,0 +1,30 @@
+id: rfc-8636
+rfc_number: 8636
+title: Public Key Cryptography for Initial Authentication in Kerberos (PKINIT) Algorithm Agility
+authors:
+    - name: L. Hornquist Astrand
+    - name: L. Zhu
+    - name: M. Cullen
+    - name: G. Hudson
+date: 2019-07
+stream: IETF
+area: sec
+wg: kitten
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 21
+abstract: |-
+    This document updates the Public Key Cryptography for Initial Authentication in Kerberos (PKINIT) standard (RFC 4556) to remove protocol structures tied to specific cryptographic algorithms. The PKINIT key derivation function is made negotiable, and the digest algorithms for signing the pre-authentication data and the client's X.509 certificates are made discoverable.
+
+    These changes provide preemptive protection against vulnerabilities discovered in the future in any specific cryptographic algorithm and allow incremental deployment of newer algorithms.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-kitten-pkinit-alg-agility-08
+updates:
+    - rfc-4556
+doi: 10.17487/RFC8636
+errata_url: https://www.rfc-editor.org/errata/rfc8636
+url: https://www.rfc-editor.org/rfc/rfc8636
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,32 @@
+id: rfc-7506
+rfc_number: 7506
+title: IPv6 Router Alert Option for MPLS Operations, Administration, and Maintenance (OAM)
+authors:
+    - name: K. Raza
+    - name: N. Akiya
+    - name: C. Pignataro
+date: 2015-04
+stream: IETF
+area: rtg
+wg: mpls
+current_status: HISTORIC
+publication_status: PROPOSED STANDARD
+page_count: 6
+abstract: |-
+    RFC 4379 defines the MPLS Label Switched Path (LSP) Ping/Traceroute mechanism in which the Router Alert Option (RAO) MUST be set in the IP header of the MPLS Echo Request messages and may conditionally be set in the IP header of the MPLS Echo Reply messages depending on the Reply Mode used. While a generic "Router shall examine packet" Option Value is used for the IPv4 RAO, there is no generic RAO value defined for IPv6 that can be used. This document allocates a new, generic IPv6 RAO value that can be used by MPLS Operations, Administration, and Maintenance (OAM) tools, including the MPLS Echo Request and MPLS Echo Reply messages for MPLS in IPv6 environments. Consequently, it updates RFC 4379.
+
+    The initial motivation to request an IPv6 RAO value for MPLS OAM comes from the MPLS LSP Ping/Traceroute. However, this value is applicable to all MPLS OAM and not limited to MPLS LSP Ping/ Traceroute.
+keywords:
+    - IPv6
+    - LSP Ping
+    - MPLS OAM
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-mpls-oam-ipv6-rao-03
+updates:
+    - rfc-4379
+doi: 10.17487/RFC7506
+url: https://www.rfc-editor.org/rfc/rfc7506
+source: rfc-editor-index
+ingested_at: "2026-05-21"

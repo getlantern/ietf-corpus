@@ -1,0 +1,30 @@
+id: draft-ietf-rats-ear
+name: draft-ietf-rats-ear
+rev: "03"
+title: EAT Attestation Results
+abstract: |-
+    This document defines the EAT Attestation Result (EAR) message
+       format.
+
+       EAR is used by a verifier to encode the result of the appraisal over
+       an attester's evidence.  It embeds an AR4SI's "trustworthiness
+       vector" to present a normalized view of the evaluation results, thus
+       easing the task of defining and computing authorization policies by
+       relying parties.  Alongside the trustworthiness vector, EAR provides
+       contextual information bound to the appraisal process.  This allows a
+       relying party (or an auditor) to reconstruct the frame of reference
+       in which the trustworthiness vector was originally computed.  EAR
+       supports simple devices with one attester as well as composite
+       devices that are made of multiple attesters, allowing the state of
+       each attester to be separately examined.  EAR can also accommodate
+       registered and unregistered extensions.  It can be serialized and
+       protected using either CWT or JWT.
+pages: 28
+stream: IETF
+stream_state: active
+group: rats
+last_updated: "2026-03-15"
+expires: "2026-09-16"
+url: https://datatracker.ietf.org/doc/draft-ietf-rats-ear/
+source: datatracker
+ingested_at: "2026-05-21"

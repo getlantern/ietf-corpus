@@ -1,0 +1,23 @@
+id: draft-qiu-dnsop-rd-flag-clarification
+name: draft-qiu-dnsop-rd-flag-clarification
+rev: "02"
+title: Clarifying DNS Resolver Behavior for the Recursion Desired (RD) Flag
+abstract: |-
+    This document addresses inconsistencies observed in the handling of
+       the Recursion Desired (RD) flag in DNS queries by various DNS
+       resolver implementations, particularly when the RD flag is cleared
+       (set to 0).  Such inconsistencies have been shown to be exploitable,
+       leading to potent Denial of Service (DoS) amplification attacks.
+       This document provides clear guidance and recommendations for DNS
+       resolver (including forwarding and recursive resolvers) behavior when
+       processing queries with different RD flag settings.  The goal is to
+       enhance DNS security, mitigate specific amplification attack vectors,
+       and ensure more predictable and robust DNS operations.
+pages: 12
+stream_state: active
+group: none
+last_updated: "2026-02-28"
+expires: "2026-09-01"
+url: https://datatracker.ietf.org/doc/draft-qiu-dnsop-rd-flag-clarification/
+source: datatracker
+ingested_at: "2026-05-21"

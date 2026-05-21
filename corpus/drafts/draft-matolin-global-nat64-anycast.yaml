@@ -1,0 +1,37 @@
+id: draft-matolin-global-nat64-anycast
+name: draft-matolin-global-nat64-anycast
+rev: "00"
+title: Global Anycast NAT64 Well-Known Prefix
+abstract: |-
+    This document defines a globally routable, anycast NAT64 service
+       using the IPv6 prefix 2600:6464::/96 as a standardized translation
+       substrate for IPv6-to-IPv4 connectivity.
+
+       The goal of this specification is to eliminate per-network NAT64
+       configuration complexity by introducing a single globally consistent
+       NAT64 translation prefix operated as a distributed anycast service by
+       participating Internet Service Providers, cloud providers, and
+       content delivery networks.
+
+       The model assumes an IPv6-only client environment with mandatory IPv4
+       reachability via NAT64 translation.  IPv4-only services remain
+       reachable without modification.
+
+       IPv4 is not modified.  IPv6 is not modified.  Only translation
+       placement and routing semantics are standardized.
+
+       This document defines:
+
+       *  A globally shared NAT64 prefix (2600:6464::/96)
+       *  Anycast-based NAT64 edge behavior
+       *  Stateless IPv6-to-IPv4 synthesis rules
+       *  Optional reverse mapping constraints (IPv4->IPv6 blocked)
+       *  Operational requirements for participating networks
+pages: 6
+stream_state: active
+group: none
+last_updated: "2026-04-16"
+expires: "2026-10-18"
+url: https://datatracker.ietf.org/doc/draft-matolin-global-nat64-anycast/
+source: datatracker
+ingested_at: "2026-05-21"

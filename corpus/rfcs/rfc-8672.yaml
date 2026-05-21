@@ -1,0 +1,27 @@
+id: rfc-8672
+rfc_number: 8672
+title: TLS Server Identity Pinning with Tickets
+authors:
+    - name: Y. Sheffer
+    - name: D. Migault
+date: 2019-10
+stream: INDEPENDENT
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 22
+abstract: |-
+    Misissued public-key certificates can prevent TLS clients from appropriately authenticating the TLS server. Several alternatives have been proposed to detect this situation and prevent a client from establishing a TLS session with a TLS end point authenticated with an illegitimate public-key certificate. These mechanisms are either not widely deployed or limited to public web browsing.
+
+    This document proposes experimental extensions to TLS with opaque pinning tickets as a way to pin the server's identity. During an initial TLS session, the server provides an original encrypted pinning ticket. In subsequent TLS session establishment, upon receipt of the pinning ticket, the server proves its ability to decrypt the pinning ticket and thus the ownership of the pinning protection key. The client can now safely conclude that the TLS session is established with the same TLS server as the original TLS session. One of the important properties of this proposal is that no manual management actions are required.
+keywords:
+    - transport layer security
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-sheffer-tls-pinning-ticket-12
+doi: 10.17487/RFC8672
+url: https://www.rfc-editor.org/rfc/rfc8672
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,35 @@
+id: draft-chen-oauth-scope-agent-extensions
+name: draft-chen-oauth-scope-agent-extensions
+rev: "00"
+title: Structured and Constraint Extensions for OAuth Scopes
+abstract: |-
+    This specification defines an extension to the OAuth 2.0 scope
+       parameter, as specified in RFC 6749, which is used to express the
+       permissions granted to an access token.  The proposed extension
+       introduces a structured syntax for scope values to enable fine-
+       grained authorization for the installation and execution of Modular
+       Capability Units (encapsulated and reusable functional modules such
+       as skills) within Agent ecosystems.  However, current mechanisms for
+       authorizing such modules generally lack a standardized way to express
+       and obtain consent for the complex, fine-grained permissions they
+       require during installation.
+
+       This document addresses this limitation by defining a structured
+       format for the scope parameter.  The format extends the simple space-
+       delimited strings with a colon-separated syntax:
+       [resource_type]:[action]:[target][:constraints].  This syntax allows
+       for the precise description of permissions for operations such as
+       file system access, command-line execution, network access, tool
+       invocation, and scheduled tasks.  These extensions provide a
+       standardized, machine-readable way to request, convey, and validate
+       detailed permissions, thereby enhancing users' security control over
+       their resources while maintaining compatibility with the existing
+       OAuth token issuance and validation flows.
+pages: 12
+stream_state: active
+group: none
+last_updated: "2026-03-01"
+expires: "2026-09-02"
+url: https://datatracker.ietf.org/doc/draft-chen-oauth-scope-agent-extensions/
+source: datatracker
+ingested_at: "2026-05-21"

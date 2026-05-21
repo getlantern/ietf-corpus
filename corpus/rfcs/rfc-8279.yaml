@@ -1,0 +1,29 @@
+id: rfc-8279
+rfc_number: 8279
+title: Multicast Using Bit Index Explicit Replication (BIER)
+authors:
+    - name: IJ. Wijnands
+      title: Editor
+    - name: E. Rosen
+      title: Editor
+    - name: A. Dolganow
+    - name: T. Przygienda
+    - name: S. Aldrin
+date: 2017-11
+stream: IETF
+area: rtg
+wg: bier
+current_status: PROPOSED STANDARD
+publication_status: EXPERIMENTAL
+page_count: 43
+abstract: This document specifies a new architecture for the forwarding of multicast data packets.  It provides optimal forwarding of multicast packets through a "multicast domain".  However, it does not require a protocol for explicitly building multicast distribution trees, nor does it require intermediate nodes to maintain any per-flow state.  This architecture is known as "Bit Index Explicit Replication" (BIER).  When a multicast data packet enters the domain, the ingress router determines the set of egress routers to which the packet needs to be sent.  The ingress router then encapsulates the packet in a BIER header.  The BIER header contains a bit string in which each bit represents exactly one egress router in the domain; to forward the packet to a given set of egress routers, the bits corresponding to those routers are set in the BIER header.  The procedures for forwarding a packet based on its BIER header are specified in this document.  Elimination of the per-flow state and the explicit tree-building protocols results in a considerable simplification.
+keywords:
+    - Multicast
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-bier-architecture-08
+doi: 10.17487/RFC8279
+url: https://www.rfc-editor.org/rfc/rfc8279
+source: rfc-editor-index
+ingested_at: "2026-05-21"

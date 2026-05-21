@@ -1,0 +1,28 @@
+id: draft-liu-sidrops-rrdp-delta-retention-policy
+name: draft-liu-sidrops-rrdp-delta-retention-policy
+rev: "02"
+title: RPKI Repository Delta Protocol (RRDP) Delta File Retention Policy
+abstract: |-
+    This document updates RFC 8182 (The RPKI Repository Delta Protocol)
+       by specifying an optimized delta file retention policy based on
+       client access patterns.  The proposed mechanism allows RRDP servers
+       to maintain only the delta files required by active clients, reducing
+       storage requirements while maintaining compatibility with existing
+       clients.  By tracking which serial numbers are being requested by
+       active clients, the repository can determine the minimum serial
+       number needed by any client and safely prune delta files that update
+       from earlier serial numbers.
+
+       The proposed mechanism provides several benefits, including reduced
+       storage requirements, smaller notification files, and more efficient
+       use of bandwidth and processing resources.  It also maintains
+       backward compatibility with existing RRDP clients, requiring no
+       changes to client implementations.
+pages: 13
+stream_state: active
+group: none
+last_updated: "2026-03-18"
+expires: "2026-09-19"
+url: https://datatracker.ietf.org/doc/draft-liu-sidrops-rrdp-delta-retention-policy/
+source: datatracker
+ingested_at: "2026-05-21"

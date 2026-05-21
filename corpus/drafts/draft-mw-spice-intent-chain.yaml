@@ -1,0 +1,29 @@
+id: draft-mw-spice-intent-chain
+name: draft-mw-spice-intent-chain
+rev: "00"
+title: Cryptographically Verifiable Intent Chain for AI Agent Content Provenance
+abstract: |-
+    This document defines the intent_chain claim as a companion to the
+       actor_chain claim defined in {{!I-D.draft-mw-spice-actor-chain}}.
+       While the actor chain addresses delegation provenance (WHO delegated
+       to whom), the intent chain addresses content provenance (WHAT was
+       produced and HOW it was transformed).
+
+       In AI agent workflows, content flows through multiple processing
+       stages including AI agents and filters.  The intent chain provides a
+       cryptographically verifiable, tamper-evident record of this content
+       journey.  The full intent chain is stored as ordered logs, with only
+       the Merkle root included in the OAuth token for efficiency.
+
+       Together, the actor chain and intent chain provide complete
+       governance for autonomous AI agent systems, addressing Spoofing,
+       Tampering, Repudiation, and Elevation of Privilege threats in the
+       STRIDE threat model.
+pages: 40
+stream_state: active
+group: none
+last_updated: "2026-03-18"
+expires: "2026-09-19"
+url: https://datatracker.ietf.org/doc/draft-mw-spice-intent-chain/
+source: datatracker
+ingested_at: "2026-05-21"

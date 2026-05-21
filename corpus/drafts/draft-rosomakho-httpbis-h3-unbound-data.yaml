@@ -1,0 +1,22 @@
+id: draft-rosomakho-httpbis-h3-unbound-data
+name: draft-rosomakho-httpbis-h3-unbound-data
+rev: "01"
+title: Unbound DATA for CONNECT in HTTP/3
+abstract: |-
+    This document defines a new HTTP/3 frame type, UNBOUND_DATA, and a
+       corresponding SETTINGS parameter that enables endpoints to negotiate
+       its use.  When an endpoint sends an UNBOUND_DATA frame on a CONNECT
+       request or response stream, it indicates that all subsequent octets
+       on that stream are interpreted as tunneled bytes.  This applies both
+       to octets transmitted after CONNECT or extended CONNECT.  The use of
+       UNBOUND_DATA removes the need to encapsulate each portion of the data
+       in DATA frames, reducing framing overhead and simplifying
+       transmission of long-lived CONNECT tunnels.
+pages: 8
+stream_state: active
+group: none
+last_updated: "2026-02-27"
+expires: "2026-08-31"
+url: https://datatracker.ietf.org/doc/draft-rosomakho-httpbis-h3-unbound-data/
+source: datatracker
+ingested_at: "2026-05-21"

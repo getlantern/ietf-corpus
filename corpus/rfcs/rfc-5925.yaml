@@ -1,0 +1,34 @@
+id: rfc-5925
+rfc_number: 5925
+title: The TCP Authentication Option
+authors:
+    - name: J. Touch
+    - name: A. Mankin
+    - name: R. Bonica
+date: 2010-06
+stream: IETF
+area: wit
+wg: tcpm
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 48
+abstract: This document specifies the TCP Authentication Option (TCP-AO), which obsoletes the TCP MD5 Signature option of RFC 2385 (TCP MD5).  TCP-AO specifies the use of stronger Message Authentication Codes (MACs), protects against replays even for long-lived TCP connections, and provides more details on the association of security with TCP connections than TCP MD5.  TCP-AO is compatible with either a static Master Key Tuple (MKT) configuration or an external, out-of-band MKT management mechanism; in either case, TCP-AO also protects connections when using the same MKT across repeated instances of a connection, using traffic keys derived from the MKT, and coordinates MKT changes between endpoints.  The result is intended to support current infrastructure uses of TCP MD5, such as to protect long-lived connections (as used, e.g., in BGP and LDP), and to support a larger set of MACs with minimal other system and operational changes.  TCP-AO uses a different option identifier than TCP MD5, even though TCP-AO and TCP MD5 are never permitted to be used simultaneously.  TCP-AO supports IPv6, and is fully compatible with the proposed requirements for the replacement of TCP MD5. [STANDARDS-TRACK]
+keywords:
+    - transmission control protocol
+    - border
+    - gateway
+    - protocol
+    - transmission control message
+    - digest
+    - algorithm
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-tcpm-tcp-auth-opt-11
+obsoletes:
+    - rfc-2385
+doi: 10.17487/RFC5925
+errata_url: https://www.rfc-editor.org/errata/rfc5925
+url: https://www.rfc-editor.org/rfc/rfc5925
+source: rfc-editor-index
+ingested_at: "2026-05-21"

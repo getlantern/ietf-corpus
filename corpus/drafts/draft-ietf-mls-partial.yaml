@@ -1,0 +1,29 @@
+id: draft-ietf-mls-partial
+name: draft-ietf-mls-partial
+rev: "02"
+title: Partial MLS
+abstract: |-
+    The Messaging Layer Security (MLS) protocol provides efficient
+       asynchronous group key establishment for large groups with up to
+       thousands of clients.  In MLS, any member can commit a change to the
+       group, and consequently, all members must download, validate, and
+       maintain the full group state, which can incur a significant
+       communication and computational costs, especially when joining a
+       group.  This document defines an MLS extension to support "partial
+       MLS clients" that don't undertake these costs.  A partial client
+       cannot commit changes to the group, and only has partial
+       authentication information for the other members of the group, but is
+       otherwise able to participate in the group.  In exchange for these
+       limitations, a partial MLS client can participate in an MLS group
+       with significantly lower requirements in terms of download, memory,
+       and processing.
+pages: 56
+stream: IETF
+stream_state: active
+group: mls
+intended_status: Proposed Standard
+last_updated: "2026-05-07"
+expires: "2026-11-08"
+url: https://datatracker.ietf.org/doc/draft-ietf-mls-partial/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,31 @@
+id: draft-mw-spice-inference-chain
+name: draft-mw-spice-inference-chain
+rev: "00"
+title: Cryptographically Verifiable Inference Chain for AI Agent Computational Provenance
+abstract: |-
+    This document defines the inference_root claim as a companion to the
+       actor_chain claim ({{!I-D.draft-mw-spice-actor-chain}}) and the
+       intent_root claim ({{!I-D.draft-mw-spice-intent-chain}}).  While the
+       actor chain addresses delegation provenance (WHO) and the intent
+       chain addresses content provenance (WHAT), the inference chain
+       addresses computational provenance (HOW) — providing cryptographic
+       proof that a claimed AI model actually performed the inference that
+       produced a given output.
+
+       The inference chain leverages two complementary mechanisms: Zero-
+       Knowledge Machine Learning (ZKML) proofs for mathematical certainty,
+       and Trusted Execution Environment (TEE) attestation quotes for
+       production-scale AI workloads.  The full inference chain is stored as
+       ordered logs, with only the Merkle root included in the OAuth token
+       for efficiency.
+
+       Together, the three chains — actor, intent, and inference — form a
+       complete "Truth Stack" for autonomous AI agent governance.
+pages: 29
+stream_state: active
+group: none
+last_updated: "2026-03-18"
+expires: "2026-09-19"
+url: https://datatracker.ietf.org/doc/draft-mw-spice-inference-chain/
+source: datatracker
+ingested_at: "2026-05-21"

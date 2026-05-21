@@ -1,0 +1,37 @@
+id: rfc-8928
+rfc_number: 8928
+title: Address-Protected Neighbor Discovery for Low-Power and Lossy Networks
+authors:
+    - name: P. Thubert
+      title: Editor
+    - name: B. Sarikaya
+    - name: M. Sethi
+    - name: R. Struik
+date: 2020-11
+stream: IETF
+area: int
+wg: 6lo
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 29
+abstract: This document updates the IPv6 over Low-Power Wireless Personal Area Network (6LoWPAN) Neighbor Discovery (ND) protocol defined in RFCs 6775 and 8505.  The new extension is called Address-Protected Neighbor Discovery (AP-ND), and it protects the owner of an address against address theft and impersonation attacks in a Low-Power and Lossy Network (LLN).  Nodes supporting this extension compute a cryptographic identifier (Crypto-ID), and use it with one or more of their Registered Addresses.  The Crypto-ID identifies the owner of the Registered Address and can be used to provide proof of ownership of the Registered Addresses.  Once an address is registered with the Crypto-ID and a proof of ownership is provided, only the owner of that address can modify the registration information, thereby enforcing Source Address Validation.
+keywords:
+    - Address registration
+    - Network Overlay
+    - host to router interface
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-6lo-ap-nd-23
+updates:
+    - rfc-8505
+updated_by:
+    - rfc-9926
+    - rfc-9927
+doi: 10.17487/RFC8928
+errata_url: https://www.rfc-editor.org/errata/rfc8928
+url: https://www.rfc-editor.org/rfc/rfc8928
+source: rfc-editor-index
+ingested_at: "2026-05-21"

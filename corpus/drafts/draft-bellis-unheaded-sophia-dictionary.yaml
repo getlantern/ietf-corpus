@@ -1,0 +1,33 @@
+id: draft-bellis-unheaded-sophia-dictionary
+name: draft-bellis-unheaded-sophia-dictionary
+rev: "00"
+title: Sophia Dictionary Format for the Unheaded Protocol
+abstract: |-
+    The Sophia Dictionary Format defines the serialization, storage, and
+       distribution mechanism for semantic metadata that accompanies the
+       Unheaded Protocol.  Sophia dictionaries are exponent-decoding tables
+       that translate compact byte values (0x00-0xFF) into meaningful human-
+       readable categories (service identifiers, QoS classes, flow actions,
+       etc.) and their associated metadata.
+
+       This memo specifies the CBOR serialization format for dictionary
+       entries, the BPF map representation for in-kernel storage, the atomic
+       update protocol for cluster-wide distribution via the Wotan memory
+       bus, and the minimum required dictionary entries for any conformant
+       Unheaded deployment.
+
+       Draft-03 introduces sub-dictionary type systems for hierarchical
+       knowledge representation and QPACK compression headers for efficient
+       dictionary entry encoding over the wire.
+
+       Sophia dictionaries support atomic replacement: updates propagate to
+       all nodes in under 10 milliseconds without packet loss or service
+       interruption.
+pages: 25
+stream_state: active
+group: none
+last_updated: "2026-03-19"
+expires: "2026-09-20"
+url: https://datatracker.ietf.org/doc/draft-bellis-unheaded-sophia-dictionary/
+source: datatracker
+ingested_at: "2026-05-21"

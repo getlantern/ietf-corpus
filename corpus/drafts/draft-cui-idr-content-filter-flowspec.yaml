@@ -1,0 +1,26 @@
+id: draft-cui-idr-content-filter-flowspec
+name: draft-cui-idr-content-filter-flowspec
+rev: "04"
+title: Packet Content Filter for BGP FlowSpec
+abstract: |-
+    The BGP Flow Specification enables the distribution of traffic filter
+       policies (traffic filters and actions) via BGP, facilitating DDoS
+       traffic filtering.  However, the traffic filter in FSv1 and FSv2
+       predominantly focuses on IP header fields, which may not adequately
+       address volumetric DDoS attack traffic characterized by fixed
+       patterns within the packet content.  This document introduces a new
+       flow specification filter type designed for packet content filtering.
+       The match field includes ptype, otype, offset, content-length,
+       content, and mask encoded in the Flowspec NLRI.  This new filter aims
+       to leverage network devices such as routers and switches to support
+       controlled traffic handling, traffic optimization, and mitigation of
+       simple volumetric DDoS attacks, reducing the overall processing cost
+       of carrier networks.
+pages: 13
+stream_state: active
+group: none
+last_updated: "2026-05-09"
+expires: "2026-11-10"
+url: https://datatracker.ietf.org/doc/draft-cui-idr-content-filter-flowspec/
+source: datatracker
+ingested_at: "2026-05-21"

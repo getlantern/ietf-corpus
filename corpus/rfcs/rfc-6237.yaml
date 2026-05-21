@@ -1,0 +1,30 @@
+id: rfc-6237
+rfc_number: 6237
+title: IMAP4 Multimailbox SEARCH Extension
+authors:
+    - name: B. Leiba
+    - name: A. Melnikov
+date: 2011-05
+stream: IETF
+area: app
+wg: morg
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 10
+abstract: The IMAP4 specification allows the searching of only the selected mailbox.  A user often wants to search multiple mailboxes, and a client that wishes to support this must issue a series of SELECT and SEARCH commands, waiting for each to complete before moving on to the next.  This extension allows a client to search multiple mailboxes with one command, limiting the round trips and waiting for various searches to complete, and not requiring disruption of the currently selected mailbox.  This extension also uses MAILBOX and TAG fields in ESEARCH responses, allowing a client to pipeline the searches if it chooses.  This document updates RFC 4466.  This document defines an Experimental Protocol for the Internet community.
+keywords:
+    - email
+    - multiple mailboxes
+    - imapext
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-morg-multimailbox-search-07
+obsoleted_by:
+    - rfc-7377
+updates:
+    - rfc-4466
+doi: 10.17487/RFC6237
+url: https://www.rfc-editor.org/rfc/rfc6237
+source: rfc-editor-index
+ingested_at: "2026-05-21"

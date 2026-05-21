@@ -1,0 +1,28 @@
+id: rfc-8573
+rfc_number: 8573
+title: Message Authentication Code for the Network Time Protocol
+authors:
+    - name: A. Malhotra
+    - name: S. Goldberg
+date: 2019-06
+stream: IETF
+area: int
+wg: ntp
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 5
+abstract: The Network Time Protocol (NTP), as described in RFC 5905, states that NTP packets should be authenticated by appending NTP data to a 128-bit key and hashing the result with MD5 to obtain a 128-bit tag.  This document deprecates MD5-based authentication, which is considered too weak, and recommends the use of AES-CMAC as described in RFC 4493 as a replacement.
+keywords:
+    - NTP
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-ntp-mac-06
+updates:
+    - rfc-5905
+updated_by:
+    - rfc-9748
+doi: 10.17487/RFC8573
+url: https://www.rfc-editor.org/rfc/rfc8573
+source: rfc-editor-index
+ingested_at: "2026-05-21"

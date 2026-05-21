@@ -1,0 +1,33 @@
+id: draft-hillier-scitt-arp
+name: draft-hillier-scitt-arp
+rev: "00"
+title: Attestation Reconciliation Protocol
+abstract: |-
+    This document specifies the Attestation Reconciliation Protocol
+       (ARP), a deterministic, bilateral, zero-knowledge-capable mechanism
+       for reconciling verification claims against a plurality of sovereign
+       authoritative registers without raw register records leaving their
+       data-residency jurisdiction.  ARP extends the SCITT (Supply Chain
+       Integrity, Transparency, and Trust) architecture to cross-sovereign
+       claim reconciliation.  A reconciliation server canonicalises a
+       structured claim, projects it through register-specific controlled
+       projection functions producing the greatest-lower-bound predicate
+       supported by each addressed register, transmits register-specific
+       ciphertexts, receives partial attestations whose payload discloses
+       only a verdict and an optional divergence axis, aggregates the
+       partial attestations through either homomorphic or hash-linkage
+       aggregation, and seals the resulting reconciliation output against a
+       policy-version hash.  An append-only cross-jurisdictional settlement-
+       layer ledger records only hashes, with no content.  The protocol
+       supports retroactive re-evaluation of historical reconciliations
+       under updated pattern libraries or policy versions without bilateral
+       renegotiation, and a cryptographic-primitive-upgrade path including
+       post-quantum primitives.
+pages: 17
+stream_state: active
+group: none
+last_updated: "2026-05-01"
+expires: "2026-11-02"
+url: https://datatracker.ietf.org/doc/draft-hillier-scitt-arp/
+source: datatracker
+ingested_at: "2026-05-21"

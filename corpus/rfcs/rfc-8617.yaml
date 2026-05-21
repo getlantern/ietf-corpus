@@ -1,0 +1,40 @@
+id: rfc-8617
+rfc_number: 8617
+title: The Authenticated Received Chain (ARC) Protocol
+authors:
+    - name: K. Andersen
+    - name: B. Long
+      title: Editor
+    - name: S. Blank
+      title: Editor
+    - name: M. Kucherawy
+      title: Editor
+date: 2019-07
+stream: IETF
+area: art
+wg: dmarc
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 35
+abstract: |-
+    The Authenticated Received Chain (ARC) protocol provides an authenticated "chain of custody" for a message, allowing each entity that handles the message to see what entities handled it before and what the message's authentication assessment was at each step in the handling.
+
+    ARC allows Internet Mail Handlers to attach assertions of message authentication assessment to individual messages. As messages traverse ARC-enabled Internet Mail Handlers, additional ARC assertions can be attached to messages to form ordered sets of ARC assertions that represent the authentication assessment at each step of the message-handling paths.
+
+    ARC-enabled Internet Mail Handlers can process sets of ARC assertions to inform message disposition decisions, identify Internet Mail Handlers that might break existing authentication mechanisms, and convey original authentication assessments across trust boundaries.
+keywords:
+    - DKIM
+    - DMARC
+    - signature
+    - email
+    - domian authentication
+    - email authentication
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-dmarc-arc-protocol-23
+doi: 10.17487/RFC8617
+errata_url: https://www.rfc-editor.org/errata/rfc8617
+url: https://www.rfc-editor.org/rfc/rfc8617
+source: rfc-editor-index
+ingested_at: "2026-05-21"

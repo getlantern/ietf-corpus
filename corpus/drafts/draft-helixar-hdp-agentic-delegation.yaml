@@ -1,0 +1,30 @@
+id: draft-helixar-hdp-agentic-delegation
+name: draft-helixar-hdp-agentic-delegation
+rev: "00"
+title: 'Human Delegation Provenance Protocol (HDP): Cryptographic Chain-of-Custody for Agentic AI Systems'
+abstract: |-
+    Agentic AI systems operate on behalf of human principals, often
+       delegating tasks through multi-step chains of AI agents.  There is
+       currently no standard mechanism to record who authorized an agent to
+       act, under what scope, and through what chain of delegation , in a
+       way that can be verified offline, without a central registry, and
+       without third-party trust anchors.
+
+       This document specifies the Human Delegation Provenance Protocol
+       (HDP) version 0.1, a lightweight token-based protocol that captures,
+       structures, cryptographically signs, and verifies human delegation
+       context in agentic AI systems.  An HDP token binds a human
+       authorization event to a session, records each agent's delegation
+       action as a signed hop in an append-only chain, and enables any
+       participant to verify the full provenance record using only the
+       issuer's Ed25519 public key and the current session identifier.
+       Verification is fully offline.  No registry lookup, no network call,
+       and no third-party trust anchor is required.
+pages: 22
+stream_state: active
+group: none
+last_updated: "2026-03-26"
+expires: "2026-09-27"
+url: https://datatracker.ietf.org/doc/draft-helixar-hdp-agentic-delegation/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,29 @@
+id: draft-ietf-grow-bmp-tlv
+name: draft-ietf-grow-bmp-tlv
+rev: "20"
+title: 'BMP v4: Extended TLV Support for BGP Monitoring Protocol (BMP)'
+abstract: |-
+    Most of the BGP Monitoring Protocol (BMP) message types make
+       provision for data in Type, Length, Value (TLV) format.  However,
+       Route Monitoring messages (which provide a snapshot of the monitored
+       Routing Information Base) Stats Reports (which supply periodical
+       counters) and Peer Down messages (which indicate that a peering
+       session was terminated) do not.  Supporting (optional) data in TLV
+       format across all BMP message types provides consistent and
+       extensible structures that would be useful among the various use-
+       cases where conveying additional data to a monitoring station is
+       required.  This document updates RFC 7854 [RFC7854] to support TLV
+       data in all message types and defines some essential TLVs.
+
+       Additionally, this document introduces support for enterprise-
+       specific TLVs in the BGP Monitoring Protocol by defining an
+       Enterprise Bit (E-bit) that allows usage of per-vendor Type values.
+pages: 23
+stream: IETF
+stream_state: active
+group: grow
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-ietf-grow-bmp-tlv/
+source: datatracker
+ingested_at: "2026-05-21"

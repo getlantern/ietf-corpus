@@ -1,0 +1,25 @@
+id: draft-ietf-tls-wkech
+name: draft-ietf-tls-wkech
+rev: "12"
+title: A well-known URI for publishing service parameters
+abstract: |-
+    We define a well-known URI at which an HTTP origin can inform an
+       authoritative DNS server, or other interested parties, about its
+       Service Bindings.  Service binding data can include Encrypted
+       ClientHello (ECH) configurations, that may change frequently.  This
+       allows the HTTP origin, in collaboration with DNS infrastructure
+       elements, to publish and rotate its own ECH keys.  Other service
+       binding data such as information about TLS supported groups is
+       unlikely to change quickly, but the HTTP origin is much more likely
+       to have accurate information when changes do occur.  Service data
+       published via this mechanism is typically available via an HTTPS or
+       SVCB resource record.
+pages: 21
+stream: IETF
+stream_state: active
+group: tls
+last_updated: "2026-05-03"
+expires: "2026-11-04"
+url: https://datatracker.ietf.org/doc/draft-ietf-tls-wkech/
+source: datatracker
+ingested_at: "2026-05-21"

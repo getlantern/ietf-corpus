@@ -1,0 +1,30 @@
+id: draft-fletcher-transaction-token-chaining-profile
+name: draft-fletcher-transaction-token-chaining-profile
+rev: "00"
+title: Transaction Token Authorization Grant Profile for OAuth Identity and Authorization Chaining
+abstract: |-
+    This specification defines a profile of the OAuth Identity and
+       Authorization Chaining Across Domains
+       [I-D.ietf-oauth-identity-chaining] mechanism that uses a Transaction
+       Token (Txn-Token) [I-D.ietf-oauth-transaction-tokens] as the subject
+       token in a Token Exchange [RFC8693] request to obtain a JWT
+       Authorization Grant for crossing a trust boundary.
+
+       A Txn-Token is scoped to a single trust domain and represents the
+       full authorization context of an in-progress transaction, regardless
+       of whether that transaction was initiated by a human user calling an
+       external API, by an internal system event, or by an automated
+       workload.  This profile specifies how a service operating within that
+       trust domain can present its Txn-Token to obtain a JWT Authorization
+       Grant that carries the necessary context across a trust boundary,
+       enabling an access token to be issued for a partner service, without
+       exposing internal trust-domain credentials or token formats beyond
+       the trust boundary.
+pages: 29
+stream_state: active
+group: none
+last_updated: "2026-05-12"
+expires: "2026-11-13"
+url: https://datatracker.ietf.org/doc/draft-fletcher-transaction-token-chaining-profile/
+source: datatracker
+ingested_at: "2026-05-21"

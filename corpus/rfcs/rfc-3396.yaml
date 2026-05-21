@@ -1,0 +1,30 @@
+id: rfc-3396
+rfc_number: 3396
+title: Encoding Long Options in the Dynamic Host Configuration Protocol (DHCPv4)
+authors:
+    - name: T. Lemon
+    - name: S. Cheshire
+date: 2002-11
+stream: IETF
+area: int
+wg: dhc
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 9
+abstract: "This document specifies the processing rules for DHCPv4 options\r\nthat appear multiple times in the same message.  Multiple\r\ninstances of the same option are generated when an option exceeds\r\n255 octets in size (the maximum size of a single option) or when\r\nan option needs to be split apart in order to take advantage of\r\nDHCP option overloading.  When multiple instances of the same\r\noption appear in the options, file and/or sname fields in a DHCP\r\npacket, the contents of these options are concatenated together\r\nto form a single option prior to processing."
+keywords:
+    - DHCPv4
+    - Dynamic Host Configuration Protocol
+    - octet
+    - packet
+    - code
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-dhc-concat-05
+updates:
+    - rfc-2131
+doi: 10.17487/RFC3396
+url: https://www.rfc-editor.org/rfc/rfc3396
+source: rfc-editor-index
+ingested_at: "2026-05-21"

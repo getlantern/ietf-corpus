@@ -1,0 +1,24 @@
+id: draft-ietf-tcpm-ack-rate-request
+name: draft-ietf-tcpm-ack-rate-request
+rev: "11"
+title: TCP ACK Rate Request Option
+abstract: |-
+    TCP Delayed Acknowledgments (ACKs) is a widely deployed mechanism
+       that allows reducing protocol overhead in many scenarios.  However,
+       Delayed ACKs may also contribute to suboptimal performance.  When a
+       relatively large congestion window (cwnd) can be used, less frequent
+       ACKs may be desirable.  On the other hand, in relatively small cwnd
+       scenarios, eliciting an immediate ACK may avoid unnecessary delays
+       that may be incurred by the Delayed ACKs mechanism.  This document
+       specifies the TCP ACK Rate Request (TARR) option.  This option allows
+       a sender to request the ACK rate to be used by a receiver, and it
+       also allows to request immediate ACKs from a receiver.
+pages: 21
+stream: IETF
+stream_state: active
+group: tcpm
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-ietf-tcpm-ack-rate-request/
+source: datatracker
+ingested_at: "2026-05-21"

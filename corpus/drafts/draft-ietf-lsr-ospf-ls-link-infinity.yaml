@@ -1,0 +1,33 @@
+id: draft-ietf-lsr-ospf-ls-link-infinity
+name: draft-ietf-lsr-ospf-ls-link-infinity
+rev: "25"
+title: Advertising Unreachable Links in OSPF
+abstract: |-
+    OSPF Router Link State Advertisements (LSAs) use fixed-format
+       encodings that always include advertised links in the default SPF
+       (Shortest Path First) computation.  For non-default SPF computations,
+       e.g., flexible algorithms as described in RFC 9350, advertised OSPF
+       links are used in the default SPF computation even if this is not
+       intended.  In order to advertise these links and not use them in the
+       base SPF calculation, the metric LSLinkInfinity (0xffff) is used to
+       specify that the link is unreachable.  If all OSPF routers in an OSPF
+       area support this functionality and have advertised the capability
+       via an area-scoped OSPF Router-Information LSA, then links advertised
+       with a metric of LSLinkInfinity are considered unreachable.
+
+       MaxReachableLinkMetric (0xfffe) is defined to provide backward
+       compatible reachability in specifications that previously specified
+       advertisement of MaxLinkMetric (0xffff).  This document updates RFC
+       5443, RFC 6987, RFC 8379, and RFC 8770 with respect to the
+       advertisement of MaxReachableLinkMetric (0xfffe) rather than
+       MaxLinkMetric (0xffff).
+pages: 28
+stream: IETF
+stream_state: active
+group: lsr
+intended_status: Proposed Standard
+last_updated: "2026-05-20"
+expires: "2026-09-15"
+url: https://datatracker.ietf.org/doc/draft-ietf-lsr-ospf-ls-link-infinity/
+source: datatracker
+ingested_at: "2026-05-21"

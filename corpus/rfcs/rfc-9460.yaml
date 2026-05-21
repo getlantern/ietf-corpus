@@ -1,0 +1,37 @@
+id: rfc-9460
+rfc_number: 9460
+title: Service Binding and Parameter Specification via the DNS (SVCB and HTTPS Resource Records)
+authors:
+    - name: B. Schwartz
+    - name: M. Bishop
+    - name: E. Nygren
+date: 2023-11
+stream: IETF
+area: ops
+wg: dnsop
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 47
+abstract: This document specifies the "SVCB" ("Service Binding") and "HTTPS" DNS resource record (RR) types to facilitate the lookup of information needed to make connections to network services, such as for HTTP origins.  SVCB records allow a service to be provided from multiple alternative endpoints, each with associated parameters (such as transport protocol configuration), and are extensible to support future uses (such as keys for encrypting the TLS ClientHello).  They also enable aliasing of apex domains, which is not possible with CNAME.  The HTTPS RR is a variation of SVCB for use with HTTP (see RFC 9110, "HTTP Semantics").  By providing more information to the client before it attempts to establish a connection, these records offer potential benefits to both performance and privacy.
+keywords:
+    - multi-CDN
+    - HSTS
+    - ECH
+    - CNAME
+    - apex
+    - ALPN
+    - HTTP/3
+    - alias
+    - SvcParam
+    - AliasMode
+    - ServiceMode
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-dnsop-svcb-https-12
+doi: 10.17487/RFC9460
+url: https://www.rfc-editor.org/rfc/rfc9460
+source: rfc-editor-index
+ingested_at: "2026-05-21"

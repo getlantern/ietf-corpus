@@ -1,0 +1,26 @@
+id: draft-sullivan-safe
+name: draft-sullivan-safe
+rev: "01"
+title: 'SAFE: Sealed, Algorithm-Flexible Envelope'
+abstract: |-
+    SAFE defines an encryption envelope that encrypts a payload once for
+       multiple recipients.  Decryption can require multiple credentials in
+       sequence (public keys, passphrases, or other registered methods), so
+       that no single compromise reveals content.  The format targets large,
+       writable files: it supports streaming decryption, random-access reads
+       at block granularity, and selective re-encryption of modified blocks
+       without re-keying.  Per-block Authenticated Encryption with
+       Associated Data (AEAD) provides confidentiality and integrity and
+       detects reordering, truncation, and extension.  SAFE accommodates
+       post-quantum key encapsulation without format changes, provides
+       algorithm agility through IANA registries, supports recipient
+       privacy, and defines application profiles for common deployment
+       scenarios.
+pages: 112
+stream_state: active
+group: none
+last_updated: "2026-03-15"
+expires: "2026-09-16"
+url: https://datatracker.ietf.org/doc/draft-sullivan-safe/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,25 @@
+id: draft-liao-lamps-est-lightweight-operations
+name: draft-liao-lamps-est-lightweight-operations
+rev: "01"
+title: EST Lightweight Operations
+abstract: |-
+    This document defines eight new operations for the Enrollment over
+       Secure Transport (EST) protocol specified in RFC 7030: ucacaps,
+       ucacert, ucacerts, ucrlinfo, ucrl, usimpleenroll, usimplereenroll,
+       and userverkeygen.  These operations deliver PKI objects, including
+       CA certificates, certificate chains, CRLs, and enrolled certificates,
+       as Base64-encoded DER or PEM, without the CMS encapsulation used by
+       the corresponding EST operations in RFC 7030.  The ucacaps operation
+       enables EST clients to discover which operations the EST server
+       supports.  Eliminating the CMS wrapper for these responses reduces
+       code size and parsing complexity.
+
+       This document updates RFC 7030.
+pages: 39
+stream_state: active
+group: none
+last_updated: "2026-05-04"
+expires: "2026-11-05"
+url: https://datatracker.ietf.org/doc/draft-liao-lamps-est-lightweight-operations/
+source: datatracker
+ingested_at: "2026-05-21"

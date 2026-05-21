@@ -1,0 +1,32 @@
+id: draft-han-detnet-anomalous-packets-handling
+name: draft-han-detnet-anomalous-packets-handling
+rev: "02"
+title: Anomalous Traffic Handling for DetNet
+abstract: |-
+    In deterministic networking (DetNet), strict resource reservation and
+       scheduling assumptions may encounter anomalous traffic conditions at
+       flow aggregation nodes due to microbursts, packet size variations, or
+       control plane orchestration limitations.  These conditions represent
+       deviations from the ideal deterministic service model rather than
+       network faults.  Existing data plane mechanisms for handling
+       anomalous packets, such as simple discarding or treating them as
+       Best-Effort (BE) flows, are insufficient.  Consequently, the network
+       performance can degrade to a level inferior to of traditional QoS
+       approaches.Therefore, in order to handle the anomalous traffic, the
+       data plane should implement an enhanced handling mechanism.
+
+       This document proposes an enhanced anomalous traffic handling
+       solution for DetNet.  This solution specifies two policies for
+       handling traffic under anomalous conditions: the squeezing policy and
+       the degrading policy.  These policies provide a flexible, enhanced
+       mechanism applicable to various queuing mechanisms, ensuring the
+       preferential scheduling and preservation of deterministic service
+       traffic under anomalous conditions.
+pages: 14
+stream_state: active
+group: none
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-han-detnet-anomalous-packets-handling/
+source: datatracker
+ingested_at: "2026-05-21"

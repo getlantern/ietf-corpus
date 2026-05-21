@@ -1,0 +1,30 @@
+id: rfc-9926
+rfc_number: 9926
+title: Prefix Registration for IPv6 Neighbor Discovery
+authors:
+    - name: P. Thubert
+      title: Editor
+date: 2026-02
+stream: IETF
+area: int
+wg: 6lo
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 24
+abstract: This document updates IPv6 Neighbor Discovery (RFC 4861) and IPv6 Subnet Neighbor Discovery (RFC 8505, RFC 8928) to enable a node that owns or is directly connected to a prefix to register that prefix to neighbor routers.  The registration indicates that the registered prefix can be reached via the advertising node without a loop.  The unicast prefix registration allows the node to request one or more neighbor routers to redistribute the prefix in another routing domain regardless of the routing protocol used in that domain.  This document updates the Routing Protocol for Low-Power and Lossy Networks (RPL), as specified in RFCs 6550 and 9010, to enable a 6LoWPAN Router (6LR) to inject the registered prefix in RPL.
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-6lo-prefix-registration-18
+updates:
+    - rfc-4861
+    - rfc-6550
+    - rfc-8505
+    - rfc-8928
+    - rfc-9010
+doi: 10.17487/RFC9926
+url: https://www.rfc-editor.org/rfc/rfc9926
+source: rfc-editor-index
+ingested_at: "2026-05-21"

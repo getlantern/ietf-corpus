@@ -1,0 +1,43 @@
+id: rfc-6870
+rfc_number: 6870
+title: Pseudowire Preferential Forwarding Status Bit
+authors:
+    - name: P. Muley
+      title: Editor
+    - name: M. Aissaoui
+      title: Editor
+date: 2013-02
+stream: IETF
+area: rtg
+wg: pwe3
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 35
+abstract: |-
+    This document describes a mechanism for signaling the active and standby status of redundant Pseudowires (PWs) between their termination points. A set of Redundant PWs is configured between Provider Edge (PE) nodes in single-segment pseudowire (SS-PW) applications or between Terminating Provider Edge (T-PE) nodes in Multi-Segment Pseudowire (MS-PW) applications.
+
+    In order for the PE/T-PE nodes to indicate the preferred PW to use for forwarding PW packets to one another, a new status bit is defined. This bit indicates a Preferential Forwarding status with a value of active or standby for each PW in a redundant set.
+
+    In addition, a second status bit is defined to allow peer PE nodes to coordinate a switchover operation of the PW.
+
+    Finally, this document updates RFC 4447 by adding details to the handling of the PW status code bits in the PW Status TLV.
+keywords:
+    - PW redundancy
+    - active PW
+    - standby PW
+    - primary PW
+    - secondary PW
+    - PW precedence
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-pwe3-redundancy-bit-09
+updates:
+    - rfc-4447
+updated_by:
+    - rfc-7771
+doi: 10.17487/RFC6870
+errata_url: https://www.rfc-editor.org/errata/rfc6870
+url: https://www.rfc-editor.org/rfc/rfc6870
+source: rfc-editor-index
+ingested_at: "2026-05-21"

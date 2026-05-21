@@ -1,0 +1,25 @@
+id: rfc-5840
+rfc_number: 5840
+title: Wrapped Encapsulating Security Payload (ESP) for Traffic Visibility
+authors:
+    - name: K. Grewal
+    - name: G. Montenegro
+    - name: M. Bhatia
+date: 2010-04
+stream: IETF
+area: sec
+wg: ipsecme
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 15
+abstract: This document describes the Wrapped Encapsulating Security Payload (WESP) protocol, which builds on the Encapsulating Security Payload (ESP) RFC 4303 and is designed to allow intermediate devices to (1) ascertain if data confidentiality is being employed within ESP, and if not, (2) inspect the IPsec packets for network monitoring and access control functions.  Currently, in the IPsec ESP standard, there is no deterministic way to differentiate between encrypted and unencrypted payloads by simply examining a packet.  This poses certain challenges to the intermediate devices that need to deep inspect the packet before making a decision on what should be done with that packet (Inspect and/or Allow/Drop).  The mechanism described in this document can be used to easily disambiguate integrity-only ESP from ESP-encrypted packets, without compromising on the security provided by ESP. [STANDARDS-TRACK]
+keywords:
+    - wesp
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-ipsecme-traffic-visibility-12
+doi: 10.17487/RFC5840
+url: https://www.rfc-editor.org/rfc/rfc5840
+source: rfc-editor-index
+ingested_at: "2026-05-21"

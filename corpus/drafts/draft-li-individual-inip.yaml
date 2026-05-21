@@ -1,0 +1,32 @@
+id: draft-li-individual-inip
+name: draft-li-individual-inip
+rev: "00"
+title: In-Network Inference Protocol
+abstract: |-
+    This document specifies the In-Network Inference Protocol (INIP), a
+       lightweight protocol designed specifically for implementing high-
+       speed in-network inference in data center internal networks.  INIP
+       utilizes data plane devices (such as switches, DPUs, and SmartNICs)
+       to perform lightweight inference tasks while ensuring that core
+       network forwarding functions are not affected.  The protocol operates
+       based on the IPv4 protocol and adopts a fixed, lightweight packet
+       format.
+
+       INIP adopts a two-tier architecture of "centralized control plane
+       adaptation and scheduling, and minimal data plane execution".  The
+       control plane stores all inference models, deploys model rules to
+       data plane devices using a CDN-like scheduling method, and assumes
+       the responsibility of degraded fallback inference; the data plane
+       performs packet parsing and match action table-based inference.  This
+       document details INIP's core logic, packet format, data plane device
+       constraints, model expression specifications, control plane
+       responsibilities, CDN-like scheduling mechanism, dynamic model
+       popularity replacement, and overall execution process.
+pages: 17
+stream_state: active
+group: none
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-li-individual-inip/
+source: datatracker
+ingested_at: "2026-05-21"

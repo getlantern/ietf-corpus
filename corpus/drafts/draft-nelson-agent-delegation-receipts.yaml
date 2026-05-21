@@ -1,0 +1,22 @@
+id: draft-nelson-agent-delegation-receipts
+name: draft-nelson-agent-delegation-receipts
+rev: "08"
+title: Delegation Receipt Protocol for AI Agent Authorization
+abstract: |-
+    This document defines the Delegation Receipt Protocol (DRP), a
+       cryptographic authorization primitive for AI agent deployments.
+       Before any agent action executes, the authorizing user signs an
+       Authorization Object containing scope boundaries, time window,
+       operator instruction hash, and model state commitment.  This signed
+       receipt is published to an append-only log before the agent runtime
+       receives control.  The protocol removes the operator as a trusted
+       third party by making the user's private key the sole signing
+       authority over the delegation record.
+pages: 45
+stream_state: active
+group: none
+last_updated: "2026-05-19"
+expires: "2026-11-20"
+url: https://datatracker.ietf.org/doc/draft-nelson-agent-delegation-receipts/
+source: datatracker
+ingested_at: "2026-05-21"

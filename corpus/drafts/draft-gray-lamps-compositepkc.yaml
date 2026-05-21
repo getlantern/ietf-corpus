@@ -1,0 +1,23 @@
+id: draft-gray-lamps-compositepkc
+name: draft-gray-lamps-compositepkc
+rev: "00"
+title: Preventing Key Reuse and Cross-Key Forgeries in Composite ML-DSA
+abstract: |-
+    This document defines a small, backwards-compatible change to
+       composite ML-DSA that *cryptographically binds the signature to the
+       specific composite public key*. It does so by defining a *Public-Key
+       Context* value (pkc) equal to a hash of the *serialized composite
+       public key*, and by setting the composite context field to that
+       value.  This prevents *key reuse* and *cross-key forgeries* across
+       different composite keys, while preserving the API of Composite
+       ML-DSA.  The construction introduces two helper procedures to compute
+       pkc from either the composite private key or the composite public
+       key.
+pages: 8
+stream_state: active
+group: none
+last_updated: "2026-05-13"
+expires: "2026-11-14"
+url: https://datatracker.ietf.org/doc/draft-gray-lamps-compositepkc/
+source: datatracker
+ingested_at: "2026-05-21"

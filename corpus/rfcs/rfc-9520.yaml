@@ -1,0 +1,41 @@
+id: rfc-9520
+rfc_number: 9520
+title: Negative Caching of DNS Resolution Failures
+authors:
+    - name: D. Wessels
+    - name: W. Carroll
+    - name: M. Thomas
+date: 2023-12
+stream: IETF
+area: ops
+wg: dnsop
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 14
+abstract: |-
+    In the DNS, resolvers employ caching to reduce both latency for end users and load on authoritative name servers. The process of resolution may result in one of three types of responses: (1) a response containing the requested data, (2) a response indicating the requested data does not exist, or (3) a non-response due to a resolution failure in which the resolver does not receive any useful information regarding the data's existence. This document concerns itself only with the third type.
+
+    RFC 2308 specifies requirements for DNS negative caching. There, caching of TYPE 2 responses is mandatory and caching of TYPE 3 responses is optional. This document updates RFC 2308 to require negative caching for DNS resolution failures.
+
+    RFC 4035 allows DNSSEC validation failure caching. This document updates RFC 4035 to require caching for DNSSEC validation failures.
+
+    RFC 4697 prohibits aggressive requerying for NS records at a failed zone's parent zone. This document updates RFC 4697 to expand this requirement to all query types and to all ancestor zones.
+keywords:
+    - DNS
+    - Negative
+    - Caching
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-dnsop-caching-resolution-failures-08
+updates:
+    - rfc-2308
+    - rfc-4035
+    - rfc-4697
+doi: 10.17487/RFC9520
+errata_url: https://www.rfc-editor.org/errata/rfc9520
+url: https://www.rfc-editor.org/rfc/rfc9520
+source: rfc-editor-index
+ingested_at: "2026-05-21"

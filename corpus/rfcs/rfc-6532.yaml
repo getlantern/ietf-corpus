@@ -1,0 +1,31 @@
+id: rfc-6532
+rfc_number: 6532
+title: Internationalized Email Headers
+authors:
+    - name: A. Yang
+    - name: S. Steele
+    - name: N. Freed
+date: 2012-02
+stream: IETF
+area: app
+wg: eai
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 11
+abstract: |-
+    Internet mail was originally limited to 7-bit ASCII. MIME added support for the use of 8-bit character sets in body parts, and also defined an encoded-word construct so other character sets could be used in certain header field values. However, full internationalization of electronic mail requires additional enhancements to allow the use of Unicode, including characters outside the ASCII repertoire, in mail addresses as well as direct use of Unicode in header fields like "From:", "To:", and "Subject:", without requiring the use of complex encoded-word constructs. This document specifies an enhancement to the Internet Message Format and to MIME that allows use of Unicode in mail addresses and most header field content.
+
+    This specification updates Section 6.4 of RFC 2045 to eliminate the restriction prohibiting the use of non-identity content-transfer- encodings on subtypes of "message/". [STANDARDS-TRACK]
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-eai-rfc5335bis-13
+obsoletes:
+    - rfc-5335
+updates:
+    - rfc-2045
+doi: 10.17487/RFC6532
+errata_url: https://www.rfc-editor.org/errata/rfc6532
+url: https://www.rfc-editor.org/rfc/rfc6532
+source: rfc-editor-index
+ingested_at: "2026-05-21"

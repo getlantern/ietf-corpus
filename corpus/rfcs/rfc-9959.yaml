@@ -1,0 +1,34 @@
+id: rfc-9959
+rfc_number: 9959
+title: 'Careful Resume: Convergence of Congestion Control from Retained State'
+authors:
+    - name: N. Kuhn
+    - name: E. Stephan
+    - name: G. Fairhurst
+    - name: R. Secchi
+    - name: C. Huitema
+date: 2026-05
+stream: IETF
+area: wit
+wg: tsvwg
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 29
+abstract: |-
+    This document specifies a cautious method for Internet transports that enables fast startup of Congestion Control (CC) for a wide range of connections, known as "Careful Resume". It reuses a set of computed CC parameters that are based on previously observed path characteristics between the same pair of transport endpoints. These parameters are saved, allowing them to be later used to modify the CC behaviour of a subsequent connection.
+
+    This document describes the assumptions and defines the requirements for how a sender utilises these parameters to provide opportunities for a connection to more rapidly get up to speed and utilise available capacity. It discusses how the use of this method impacts the capacity at a shared network bottleneck and the safe response that is needed after any indication that the new rate is inappropriate.
+keywords:
+    - Transport
+    - Congestion Control
+    - QUIC
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-tsvwg-careful-resume-24
+doi: 10.17487/RFC9959
+url: https://www.rfc-editor.org/rfc/rfc9959
+source: rfc-editor-index
+ingested_at: "2026-05-21"

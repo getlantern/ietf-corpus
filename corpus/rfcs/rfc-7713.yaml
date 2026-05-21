@@ -1,0 +1,31 @@
+id: rfc-7713
+rfc_number: 7713
+title: Congestion Exposure (ConEx) Concepts, Abstract Mechanism, and Requirements
+authors:
+    - name: M. Mathis
+    - name: B. Briscoe
+date: 2015-12
+stream: IETF
+area: tsv
+wg: conex
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 30
+abstract: This document describes an abstract mechanism by which senders inform the network about the congestion recently encountered by packets in the same flow.  Today, network elements at any layer may signal congestion to the receiver by dropping packets or by Explicit Congestion Notification (ECN) markings, and the receiver passes this information back to the sender in transport-layer feedback.  The mechanism described here enables the sender to also relay this congestion information back into the network in-band at the IP layer, such that the total amount of congestion from all elements on the path is revealed to all IP elements along the path, where it could, for example, be used to provide input to traffic management.  This mechanism is called Congestion Exposure, or ConEx.  The companion document, "Congestion Exposure (ConEx) Concepts and Use Cases" (RFC 6789), provides the entry point to the set of ConEx documentation.
+keywords:
+    - Quality of Service
+    - QoS
+    - Congestion Control
+    - Signaling
+    - Protocol
+    - Encoding
+    - Audit
+    - Policing
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-conex-abstract-mech-13
+doi: 10.17487/RFC7713
+url: https://www.rfc-editor.org/rfc/rfc7713
+source: rfc-editor-index
+ingested_at: "2026-05-21"

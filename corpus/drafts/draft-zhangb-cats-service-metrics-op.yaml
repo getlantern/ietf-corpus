@@ -1,0 +1,29 @@
+id: draft-zhangb-cats-service-metrics-op
+name: draft-zhangb-cats-service-metrics-op
+rev: "01"
+title: Computing Service Metric Definitions and Operation under CATS
+abstract: |-
+    Computing-Aware Traffic Steering (CATS) optimizes traffic forwarding
+       by considering both computing and networking metrics.  While the
+       existing framework and metric drafts provide theoretical models
+       (e.g., L1/L2 normalized metrics), they face significant challenges to
+       achieve direct operational execution in real-world deployments.
+       Normalization methods vary across providers, and aggregated unitless
+       scores often lose critical operational information, making it
+       difficult for routers to make precise decisions.
+
+       This document is proposed to fill this gap by providing an executable
+       approach.  It defines a set of Computing Service Metrics and their
+       operations under the CATS framework.  Instead of transmitting low-
+       level raw hardware metrics, service sites dynamically evaluate and
+       report service-oriented metrics (e.g., Global Available Slots) to the
+       control plane.  This enables efficient and precise traffic-steering
+       policies without negating the value of existing normalized metrics.
+pages: 14
+stream_state: active
+group: none
+last_updated: "2026-05-13"
+expires: "2026-11-14"
+url: https://datatracker.ietf.org/doc/draft-zhangb-cats-service-metrics-op/
+source: datatracker
+ingested_at: "2026-05-21"

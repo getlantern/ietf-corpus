@@ -1,0 +1,34 @@
+id: rfc-9689
+rfc_number: 9689
+title: Use Cases for a PCE as a Central Controller (PCECC)
+authors:
+    - name: Z. Li
+    - name: D. Dhody
+    - name: Q. Zhao
+    - name: Z. Ke
+    - name: B. Khasanov
+date: 2024-12
+stream: IETF
+area: rtg
+wg: teas
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 37
+abstract: |-
+    The PCE is a core component of a Software-Defined Networking (SDN) system. It can be used to compute optimal paths for network traffic and update existing paths to reflect changes in the network or traffic demands. The PCE was developed to derive Traffic Engineering (TE) paths in MPLS networks, which are supplied to the headend of the paths using the Path Computation Element Communication Protocol (PCEP).
+
+    SDN has much broader applicability than signalled MPLS TE networks, and the PCE may be used to determine paths in a range of use cases including static Label-Switched Paths (LSPs), Segment Routing (SR), Service Function Chaining (SFC), and most forms of a routed or switched network. Therefore, it is reasonable to consider PCEP as a control protocol for use in these environments to allow the PCE to be fully enabled as a central controller.
+
+    A PCE as a Central Controller (PCECC) can simplify the processing of a distributed control plane by blending it with elements of SDN without necessarily completely replacing it. This document describes general considerations for PCECC deployment and examines its applicability and benefits, as well as its challenges and limitations, through a number of use cases. PCEP extensions, which are required for the PCECC use cases, are covered in separate documents.
+keywords:
+    - SDN
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-teas-pcecc-use-cases-18
+doi: 10.17487/RFC9689
+url: https://www.rfc-editor.org/rfc/rfc9689
+source: rfc-editor-index
+ingested_at: "2026-05-21"

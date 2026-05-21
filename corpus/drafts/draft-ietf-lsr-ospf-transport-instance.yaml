@@ -1,0 +1,30 @@
+id: draft-ietf-lsr-ospf-transport-instance
+name: draft-ietf-lsr-ospf-transport-instance
+rev: "10"
+title: OSPF-GT (Generalized Transport)
+abstract: |-
+    OSPFv2 and OSPFv3 include a reliable flooding mechanism to
+       disseminate routing topology and Traffic Engineering (TE) information
+       within a routing domain.  Given the effectiveness of these
+       mechanisms, it is advantageous to use the same mechanism for
+       dissemination of other types of information within the domain.
+       However, burdening OSPF with this additional information will impact
+       intra-domain routing convergence and possibly jeopardize the
+       stability of the OSPF routing domain.  This document presents
+       mechanisms to advertise this non-routing information in separate OSPF
+       Generalized Transport (OSPF-GT) instances.
+
+       OSPF-GT is not constrained to the semantics as traditional OSPF.
+       OSPF-GT neighbors are not required to be directly attached since they
+       are never used to compute hop-by-hop routing.  Consequently,
+       independent sparse topologies can be defined to dissemenate non-
+       routing information only to those OSPF-GT routers requiring it.
+pages: 15
+stream: IETF
+stream_state: active
+group: lsr
+last_updated: "2025-11-30"
+expires: "2026-06-03"
+url: https://datatracker.ietf.org/doc/draft-ietf-lsr-ospf-transport-instance/
+source: datatracker
+ingested_at: "2026-05-21"

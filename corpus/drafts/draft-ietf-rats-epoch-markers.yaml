@@ -1,0 +1,26 @@
+id: draft-ietf-rats-epoch-markers
+name: draft-ietf-rats-epoch-markers
+rev: "04"
+title: Epoch Markers
+abstract: |-
+    This document defines Epoch Markers as a means to establish a notion
+       of freshness among actors in a distributed system.  Epoch Markers are
+       similar to "time ticks" and are produced and distributed by a
+       dedicated system known as the Epoch Bell.  Systems receiving Epoch
+       Markers do not need to track freshness using their own understanding
+       of time (e.g., via a local real-time clock).  Instead, the reception
+       of a specific Epoch Marker establishes a new epoch that is shared
+       among all recipients.  This document defines Epoch Marker types,
+       including CBOR time tags, RFC 3161 TimeStampToken, and nonce-like
+       structures.  It also defines a CWT Claim to embed Epoch Markers in
+       RFC 8392 CBOR Web Tokens, which serve as vehicles for signed protocol
+       messages.
+pages: 29
+stream: IETF
+stream_state: active
+group: rats
+last_updated: "2026-05-18"
+expires: "2026-11-19"
+url: https://datatracker.ietf.org/doc/draft-ietf-rats-epoch-markers/
+source: datatracker
+ingested_at: "2026-05-21"

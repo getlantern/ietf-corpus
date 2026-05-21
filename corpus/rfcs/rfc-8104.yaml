@@ -1,0 +1,30 @@
+id: rfc-8104
+rfc_number: 8104
+title: Pseudowire (PW) Endpoint Fast Failure Protection
+authors:
+    - name: Y. Shen
+    - name: R. Aggarwal
+    - name: W. Henderickx
+    - name: Y. Jiang
+date: 2017-03
+stream: IETF
+area: rtg
+wg: pals
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 43
+abstract: This document specifies a fast mechanism for protecting pseudowires (PWs) transported by IP/MPLS tunnels against egress endpoint failures, including egress attachment circuit (AC) failure, egress provider edge (PE) failure, multi-segment PW terminating PE failure, and multi-segment PW switching PE failure.  Operating on the basis of multihomed customer edge (CE), redundant PWs, upstream label assignment, and context-specific label switching, the mechanism enables local repair to be performed by the router upstream adjacent to a failure.  The router can restore a PW in the order of tens of milliseconds, by rerouting traffic around the failure to a protector through a pre-established bypass tunnel.  Therefore, the mechanism can be used to reduce traffic loss before global repair reacts to the failure and the network converges on the topology changes due to the failure.
+keywords:
+    - pseudowire
+    - PW
+    - protection
+    - local repair
+    - fast reroute
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-pals-endpoint-fast-protection-05
+doi: 10.17487/RFC8104
+url: https://www.rfc-editor.org/rfc/rfc8104
+source: rfc-editor-index
+ingested_at: "2026-05-21"

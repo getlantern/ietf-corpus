@@ -1,0 +1,21 @@
+id: draft-mery-nagy-taistamp
+name: draft-mery-nagy-taistamp
+rev: "00"
+title: 'Taistamp: Signed TAI64N Timestamps over HTTP'
+abstract: |-
+    This memo defines Taistamp, an HTTP-accessible service that returns
+       the current time as a TAI64N label, optionally signed with Ed25519.
+       The service is reached at the well-known URI /.well-known/taistamp
+       and is intended for clients that need an authenticated wall-clock
+       reading without running an NTP stack or relying on the client's own
+       clock for TLS certificate validation.  The signing scheme uses a
+       length-prefixed, domain-separated framing and publishes verification
+       keys as DNS TXT records in a DKIM-inspired selector layout.
+pages: 23
+stream_state: active
+group: none
+last_updated: "2026-05-19"
+expires: "2026-11-20"
+url: https://datatracker.ietf.org/doc/draft-mery-nagy-taistamp/
+source: datatracker
+ingested_at: "2026-05-21"

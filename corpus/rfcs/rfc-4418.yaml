@@ -1,0 +1,25 @@
+id: rfc-4418
+rfc_number: 4418
+title: 'UMAC: Message Authentication Code using Universal Hashing'
+authors:
+    - name: T. Krovetz
+      title: Editor
+date: 2006-03
+stream: IETF
+wg: non working group
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 27
+abstract: |-
+    This specification describes how to generate an authentication tag using the UMAC message authentication algorithm. UMAC is designed to be very fast to compute in software on contemporary uniprocessors. Measured speeds are as low as one cycle per byte. UMAC relies on addition of 32-bit and 64-bit numbers and multiplication of 32-bit numbers, operations well-supported by contemporary machines.
+
+    To generate the authentication tag on a given message, a "universal" hash function is applied to the message and key to produce a short, fixed-length hash value, and this hash value is then xor'ed with a key-derived pseudorandom pad. UMAC enjoys a rigorous security analysis, and its only internal "cryptographic" component is a block cipher used to generate the pseudorandom pads and internal key material. This memo provides information for the Internet community.
+formats:
+    - TXT
+    - HTML
+draft: draft-krovetz-umac-07
+doi: 10.17487/RFC4418
+errata_url: https://www.rfc-editor.org/errata/rfc4418
+url: https://www.rfc-editor.org/rfc/rfc4418
+source: rfc-editor-index
+ingested_at: "2026-05-21"

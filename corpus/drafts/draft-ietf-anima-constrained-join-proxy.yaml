@@ -1,0 +1,32 @@
+id: draft-ietf-anima-constrained-join-proxy
+name: draft-ietf-anima-constrained-join-proxy
+rev: "19"
+title: Join Proxy for Bootstrapping of Constrained Network Elements
+abstract: |-
+    This document extends the constrained Bootstrapping Remote Secure Key
+       Infrastructures (cBRSKI) onboarding protocol by adding a new network
+       function, the constrained Join Proxy.  This function can be
+       implemented on a constrained node.  The goal of the Join Proxy is to
+       help new constrained nodes ("Pledges") securely onboard into a new IP
+       network using the cBRSKI protocol.  It acts as a circuit proxy for
+       User Datagram Protocol (UDP) packets that carry the onboarding
+       messages.  The solution is extensible to support other UDP-based
+       onboarding protocols as well.  The Join Proxy functionality is
+       designed for use in constrained networks, including IPv6 over Low-
+       Power Wireless Personal Area Networks (6LoWPAN) based networks in
+       which the onboarding authority server ("Registrar") may be multiple
+       IP hops away from a Pledge.  Despite this distance, the Pledge only
+       needs to use link-local communication to complete cBRSKI onboarding.
+       Two modes of Join Proxy operation are defined, stateless and
+       stateful, to allow different trade-offs regarding resource usage,
+       implementation complexity and security.
+pages: 41
+stream: IETF
+stream_state: active
+group: anima
+intended_status: Proposed Standard
+last_updated: "2026-04-19"
+expires: "2026-10-21"
+url: https://datatracker.ietf.org/doc/draft-ietf-anima-constrained-join-proxy/
+source: datatracker
+ingested_at: "2026-05-21"

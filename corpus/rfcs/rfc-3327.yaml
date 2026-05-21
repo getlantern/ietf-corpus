@@ -1,0 +1,35 @@
+id: rfc-3327
+rfc_number: 3327
+title: Session Initiation Protocol (SIP) Extension Header Field for Registering Non-Adjacent Contacts
+authors:
+    - name: D. Willis
+    - name: B. Hoeneisen
+date: 2002-12
+stream: IETF
+area: rai
+wg: sip
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 17
+abstract: "The REGISTER function is used in a SIP system primarily to associate\r\na temporary contact address with an address-of-record.  This contact\r\nis generally in the form of a URI, such as Contact:\r\n<sip:alice@pc33.atlanta.com> and is generally dynamic and associated\r\nwith the IP address or hostname of the SIP UA.  The problem is that\r\nnetwork topology may have one or more SIP proxies between the UA and\r\nthe registrar, such that any request travelling from the user's home\r\nnetwork to the registered UA must traverse these proxies.  The\r\nREGISTER method does not give us a mechanism to discover and record\r\nthis sequence of proxies in the registrar for future use.  This\r\ndocument defines an extension header field, 'Path' which provides\r\nsuch a mechanism"
+keywords:
+    - SIP
+    - Session Initiation Protocol
+    - 3gpp
+    - register
+    - contact
+    - path
+    - registrar
+    - user agent
+    - ua
+formats:
+    - TXT
+    - HTML
+draft: draft-willis-sip-path-08
+updated_by:
+    - rfc-5626
+doi: 10.17487/RFC3327
+errata_url: https://www.rfc-editor.org/errata/rfc3327
+url: https://www.rfc-editor.org/rfc/rfc3327
+source: rfc-editor-index
+ingested_at: "2026-05-21"

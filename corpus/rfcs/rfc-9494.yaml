@@ -1,0 +1,31 @@
+id: rfc-9494
+rfc_number: 9494
+title: Long-Lived Graceful Restart for BGP
+authors:
+    - name: J. Uttaro
+    - name: E. Chen
+    - name: B. Decraene
+    - name: J. Scudder
+date: 2023-11
+stream: IETF
+area: rtg
+wg: idr
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 20
+abstract: |-
+    This document introduces a BGP capability called the "Long-Lived Graceful Restart Capability" (or "LLGR Capability"). The benefit of this capability is that stale routes can be retained for a longer time upon session failure than is provided for by BGP Graceful Restart (as described in RFC 4724). A well-known BGP community called "LLGR_STALE" is introduced for marking stale routes retained for a longer time. A second well-known BGP community called "NO_LLGR" is introduced for marking routes for which these procedures should not be applied. We also specify that such long-lived stale routes be treated as the least preferred and that their advertisements be limited to BGP speakers that have advertised the capability. Use of this extension is not advisable in all cases, and we provide guidelines to help determine if it is.
+
+    This memo updates RFC 6368 by specifying that the LLGR_STALE community must be propagated into, or out of, the path attributes exchanged between the Provider Edge (PE) and Customer Edge (CE) routers.
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-idr-long-lived-gr-06
+updates:
+    - rfc-6368
+doi: 10.17487/RFC9494
+url: https://www.rfc-editor.org/rfc/rfc9494
+source: rfc-editor-index
+ingested_at: "2026-05-21"

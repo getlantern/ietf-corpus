@@ -1,0 +1,26 @@
+id: draft-haynes-nfsv4-recalldevice
+name: draft-haynes-nfsv4-recalldevice
+rev: "02"
+title: Deviceid-Scoped Layout Recall for NFSv4.2
+abstract: |-
+    The Parallel Network File System (pNFS) allows the metadata server to
+       recall a layout from a client by file id, by file system id, or
+       across all of a client's layouts.  It also lets the server delete a
+       deviceid via CB_NOTIFY_DEVICEID.  It does not provide a mechanism for
+       the metadata server to recall, in a single operation, all layouts
+       that reference a specific deviceid.  This document presents an
+       extension to RFC7862 that adds a deviceid-scoped layout recall: a
+       single CB_LAYOUTRECALL operation recalls every layout a client holds
+       that references a given deviceid, leaving unrelated layouts in place.
+       Without this capability, device unavailability can trigger large
+       volumes of failed WRITE and LAYOUTERROR traffic, and administrators
+       lack a surgical way to retire a deviceid without disturbing layouts
+       that reference healthy devices.
+pages: 10
+stream_state: active
+group: none
+last_updated: "2026-04-30"
+expires: "2026-11-01"
+url: https://datatracker.ietf.org/doc/draft-haynes-nfsv4-recalldevice/
+source: datatracker
+ingested_at: "2026-05-21"

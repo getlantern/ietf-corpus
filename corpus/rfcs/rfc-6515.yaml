@@ -1,0 +1,28 @@
+id: rfc-6515
+rfc_number: 6515
+title: IPv4 and IPv6 Infrastructure Addresses in BGP Updates for Multicast VPN
+authors:
+    - name: R. Aggarwal
+    - name: E. Rosen
+date: 2012-02
+stream: IETF
+area: rtg
+wg: l3vpn
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 8
+abstract: To provide Multicast VPN (MVPN) service, Provider Edge routers originate BGP Update messages that carry Multicast-VPN ("MCAST-VPN") BGP routes; they also originate unicast VPN routes that carry MVPN-specific attributes.  These routes encode addresses from the customer's address space, as well as addresses from the provider's address space.  These two address spaces are independent, and the address family (IPv4 or IPv6) of the two spaces may or may not be the same.  These routes always contain an "address family" field that specifies whether the customer addresses are IPv4 addresses or whether they are IPv6 addresses.  However, there is no field that explicitly specifies the address family of the provider addresses.  To ensure interoperability, this document specifies that provider IPv4 addresses are always encoded in these update messages as 4-octet addresses, and that the distinction between IPv4 and IPv6 is signaled solely by the length of the address field.  Specific cases are explained in detail.  This document updates RFC 6514. [STANDARDS-TRACK]
+keywords:
+    - mvpn
+    - mcast-vpn
+    - multicast-vpn
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-l3vpn-mvpn-infra-addrs-05
+updates:
+    - rfc-6514
+doi: 10.17487/RFC6515
+url: https://www.rfc-editor.org/rfc/rfc6515
+source: rfc-editor-index
+ingested_at: "2026-05-21"

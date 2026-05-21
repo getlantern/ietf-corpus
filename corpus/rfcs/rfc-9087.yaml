@@ -1,0 +1,34 @@
+id: rfc-9087
+rfc_number: 9087
+title: Segment Routing Centralized BGP Egress Peer Engineering
+authors:
+    - name: C. Filsfils
+      title: Editor
+    - name: S. Previdi
+    - name: G. Dawra
+      title: Editor
+    - name: E. Aries
+    - name: D. Afanasiev
+date: 2021-08
+stream: IETF
+area: rtg
+wg: spring
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 17
+abstract: |-
+    Segment Routing (SR) leverages source routing. A node steers a packet through a controlled set of instructions, called segments, by prepending the packet with an SR header. A segment can represent any instruction, topological or service based. SR allows for the enforcement of a flow through any topological path while maintaining per-flow state only at the ingress node of the SR domain.
+
+    The Segment Routing architecture can be directly applied to the MPLS data plane with no change on the forwarding plane. It requires a minor extension to the existing link-state routing protocols.
+
+    This document illustrates the application of Segment Routing to solve the BGP Egress Peer Engineering (BGP-EPE) requirement. The SR-based BGP-EPE solution allows a centralized (Software-Defined Networking, or SDN) controller to program any egress peer policy at ingress border routers or at hosts within the domain.
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-spring-segment-routing-central-epe-10
+doi: 10.17487/RFC9087
+url: https://www.rfc-editor.org/rfc/rfc9087
+source: rfc-editor-index
+ingested_at: "2026-05-21"

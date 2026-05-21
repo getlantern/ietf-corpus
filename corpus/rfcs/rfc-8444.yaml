@@ -1,0 +1,33 @@
+id: rfc-8444
+rfc_number: 8444
+title: OSPFv2 Extensions for Bit Index Explicit Replication (BIER)
+authors:
+    - name: P. Psenak
+      title: Editor
+    - name: N. Kumar
+    - name: IJ. Wijnands
+    - name: A. Dolganow
+    - name: T. Przygienda
+    - name: J. Zhang
+    - name: S. Aldrin
+date: 2018-11
+stream: IETF
+area: rtg
+wg: bier
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 12
+abstract: |-
+    Bit Index Explicit Replication (BIER) is an architecture that provides optimal multicast forwarding through a "BIER domain" without requiring intermediate routers to maintain multicast-related, per- flow state. BIER also does not require an explicit tree-building protocol for its operation. A multicast data packet enters a BIER domain at a Bit-Forwarding Ingress Router (BFIR) and leaves the BIER domain at one or more Bit-Forwarding Egress Routers (BFERs). The BFIR adds a BIER packet header to the packet. The BIER packet header contains a BitString in which each bit represents exactly one BFER to forward the packet to. The set of BFERs to which the multicast packet needs to be forwarded is expressed by the set of bits in the BIER packet header.
+
+    This document describes the OSPF protocol extension (from RFC 2328) that is required for BIER with MPLS encapsulation (which is defined in RFC 8296). Support for other encapsulation types and the use of multiple encapsulation types are outside the scope of this document.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-bier-ospf-bier-extensions-18
+updated_by:
+    - rfc-9272
+doi: 10.17487/RFC8444
+url: https://www.rfc-editor.org/rfc/rfc8444
+source: rfc-editor-index
+ingested_at: "2026-05-21"

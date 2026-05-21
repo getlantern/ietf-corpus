@@ -1,0 +1,26 @@
+id: rfc-7469
+rfc_number: 7469
+title: Public Key Pinning Extension for HTTP
+authors:
+    - name: C. Evans
+    - name: C. Palmer
+    - name: R. Sleevi
+date: 2015-04
+stream: IETF
+area: app
+wg: websec
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 28
+abstract: This document defines a new HTTP header that allows web host operators to instruct user agents to remember ("pin") the hosts' cryptographic identities over a period of time.  During that time, user agents (UAs) will require that the host presents a certificate chain including at least one Subject Public Key Info structure whose fingerprint matches one of the pinned fingerprints for that host.  By effectively reducing the number of trusted authorities who can authenticate the domain during the lifetime of the pin, pinning may reduce the incidence of man-in-the-middle attacks due to compromised Certification Authorities.
+keywords:
+    - pin
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-websec-key-pinning-21
+doi: 10.17487/RFC7469
+errata_url: https://www.rfc-editor.org/errata/rfc7469
+url: https://www.rfc-editor.org/rfc/rfc7469
+source: rfc-editor-index
+ingested_at: "2026-05-21"

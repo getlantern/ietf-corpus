@@ -1,0 +1,36 @@
+id: rfc-7474
+rfc_number: 7474
+title: Security Extension for OSPFv2 When Using Manual Key Management
+authors:
+    - name: M. Bhatia
+    - name: S. Hartman
+    - name: D. Zhang
+    - name: A. Lindem
+      title: Editor
+date: 2015-04
+stream: IETF
+area: rtg
+wg: ospf
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 14
+abstract: |-
+    The current OSPFv2 cryptographic authentication mechanism as defined in RFCs 2328 and 5709 is vulnerable to both inter-session and intra- session replay attacks when using manual keying. Additionally, the existing cryptographic authentication mechanism does not cover the IP header. This omission can be exploited to carry out various types of attacks.
+
+    This document defines changes to the authentication sequence number mechanism that will protect OSPFv2 from both inter-session and intra- session replay attacks when using manual keys for securing OSPFv2 protocol packets. Additionally, we also describe some changes in the cryptographic hash computation that will eliminate attacks resulting from OSPFv2 not protecting the IP header.
+keywords:
+    - OSPF
+    - cryptographic authentication
+    - security
+    - replay attacks
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-ospf-security-extension-manual-keying-11
+updates:
+    - rfc-2328
+    - rfc-5709
+doi: 10.17487/RFC7474
+url: https://www.rfc-editor.org/rfc/rfc7474
+source: rfc-editor-index
+ingested_at: "2026-05-21"

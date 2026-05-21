@@ -1,0 +1,35 @@
+id: rfc-7067
+rfc_number: 7067
+title: Directory Assistance Problem and High-Level Design Proposal
+authors:
+    - name: L. Dunbar
+    - name: D. Eastlake 3rd
+    - name: R. Perlman
+    - name: I. Gashinsky
+date: 2013-11
+stream: IETF
+area: rtg
+wg: trill
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 15
+abstract: |-
+    Edge TRILL (Transparent Interconnection of Lots of Links) switches currently learn the mapping between MAC (Media Access Control) addresses and their egress TRILL switch by observing the data packets they ingress or egress or by the TRILL ESADI (End-Station Address Distribution Information) protocol. When an ingress TRILL switch receives a data frame for a destination address (MAC&Label) that the switch does not know, the data frame is flooded within the frame's Data Label across the TRILL campus.
+
+    This document describes the framework for using directory services to assist edge TRILL switches in reducing multi-destination frames, particularly unknown unicast frames flooding, and ARP/ND (Address Resolution Protocol / Neighbor Discovery), thus improving TRILL network scalability and security.
+keywords:
+    - TRILL
+    - Orchestration
+    - Directory
+    - Push
+    - Pull
+    - RBridge
+    - ARP
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-trill-directory-framework-07
+doi: 10.17487/RFC7067
+url: https://www.rfc-editor.org/rfc/rfc7067
+source: rfc-editor-index
+ingested_at: "2026-05-21"

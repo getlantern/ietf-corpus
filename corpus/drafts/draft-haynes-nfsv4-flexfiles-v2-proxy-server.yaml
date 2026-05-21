@@ -1,0 +1,26 @@
+id: draft-haynes-nfsv4-flexfiles-v2-proxy-server
+name: draft-haynes-nfsv4-flexfiles-v2-proxy-server
+rev: "00"
+title: Proxy-Driven Server for Flexible Files Version 2
+abstract: |-
+    Parallel NFS (pNFS) with the Flexible Files Version 2 layout type
+       supports client-side erasure coding and per-chunk repair between
+       clients and data servers.  This document extends that architecture
+       with a proxy server (PS) role: a registered peer of the metadata
+       server that polls the metadata server for work assignments and
+       carries them out -- moving a file from one layout to another,
+       reconstructing a whole file from surviving shards, or translating
+       between codecs for clients that cannot participate in the file's
+       native encoding (including NFSv3 clients).  All PS-MDS coordination
+       is fore-channel: the metadata server returns work assignments inline
+       in the response to a PS-initiated PROXY_PROGRESS poll, and the PS
+       reports completion via a fore-channel PROXY_DONE.  No callback
+       operations are required for the PS protocol.
+pages: 59
+stream_state: active
+group: none
+last_updated: "2026-04-28"
+expires: "2026-10-30"
+url: https://datatracker.ietf.org/doc/draft-haynes-nfsv4-flexfiles-v2-proxy-server/
+source: datatracker
+ingested_at: "2026-05-21"

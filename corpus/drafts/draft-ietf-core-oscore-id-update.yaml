@@ -1,0 +1,29 @@
+id: draft-ietf-core-oscore-id-update
+name: draft-ietf-core-oscore-id-update
+rev: "06"
+title: Identifier Update for OSCORE
+abstract: |-
+    Two peers that communicate with the CoAP protocol can use the Object
+       Security for Constrained RESTful Environments (OSCORE) protocol to
+       protect their message exchanges end-to-end.  To this end, the two
+       peers share an OSCORE Security Context and a number of related
+       identifiers.  In particular, each of the two peers stores a Sender ID
+       that identifies its own Sender Context within the Security Context,
+       and a Recipient ID that identifies the Recipient Context associated
+       with the other peer within the same Security Context.  These
+       identifiers are sent in plaintext within OSCORE-protected messages.
+       Hence, they can be used to correlate messages exchanged between peers
+       and track those peers, with consequent privacy implications.  This
+       document defines an OSCORE ID update procedure that two peers can use
+       to update their OSCORE identifiers.  This procedure can be run stand-
+       alone or seamlessly integrated in an execution of the Key Update for
+       OSCORE (KUDOS) procedure.
+pages: 26
+stream: IETF
+stream_state: active
+group: core
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-ietf-core-oscore-id-update/
+source: datatracker
+ingested_at: "2026-05-21"

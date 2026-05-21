@@ -1,0 +1,33 @@
+id: draft-qiu-dnsop-enhanced-bailiwick
+name: draft-qiu-dnsop-enhanced-bailiwick
+rev: "02"
+title: Enhanced Bailiwick Checking for DNS Resolvers to Mitigate Cache Poisoning Vulnerabilities
+abstract: |-
+    The Domain Name System (DNS) relies on caching to function
+       efficiently.  However, DNS cache poisoning remains a significant
+       threat.  The "bailiwick" rule is a fundamental security mechanism
+       intended to prevent resolvers from caching out-of-bailiwick data sent
+       by malicious or misconfigured authoritative servers.  Current DNS
+       standards provide high-level guidance on bailiwick checking but lack
+       specific algorithmic definitions, leading to inconsistent
+       implementations across different DNS software.  These inconsistencies
+       can be exploited, particularly in DNS servers that operate in
+       multiple modes, such as Conditional DNS Servers (CDNS), which may act
+       as both recursive resolvers and forwarders and often share a common
+       cache.
+
+       This document specifies enhanced and more precise rules for bailiwick
+       checking in DNS resolvers, including those operating as forwarders or
+       CDNS.  The goal is to provide clearer guidelines for implementers,
+       reduce the attack surface for cache poisoning, and improve the
+       overall security and robustness of the DNS infrastructure.  The
+       recommendations herein are informed by recent research highlighting
+       vulnerabilities in existing bailiwick implementations.
+pages: 15
+stream_state: active
+group: none
+last_updated: "2026-02-28"
+expires: "2026-09-01"
+url: https://datatracker.ietf.org/doc/draft-qiu-dnsop-enhanced-bailiwick/
+source: datatracker
+ingested_at: "2026-05-21"

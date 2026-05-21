@@ -1,0 +1,39 @@
+id: rfc-9746
+rfc_number: 9746
+title: BGP EVPN Multihoming Extensions for Split-Horizon Filtering
+authors:
+    - name: J. Rabadan
+    - name: K. Nagaraj
+    - name: W. Lin
+    - name: A. Sajassi
+date: 2025-03
+stream: IETF
+area: rtg
+wg: bess
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 17
+abstract: |-
+    An Ethernet Virtual Private Network (EVPN) is commonly used with Network Virtualization Overlay (NVO) tunnels as well as with MPLS and Segment Routing (SR) tunnels. The multihoming procedures in EVPN may vary based on the type of tunnel used within the EVPN Broadcast Domain. Specifically, there are two multihoming split-horizon procedures designed to prevent looped frames on multihomed Customer Edge (CE) devices: the Ethernet Segment Identifier (ESI) Label-based procedure and the local-bias procedure. The ESI Label-based split-horizon procedure is applied to MPLS-based tunnels such as MPLS over UDP (MPLSoUDP), while the local-bias procedure is used for other tunnels such as Virtual eXtensible Local Area Network (VXLAN) tunnels.
+
+    Current specifications do not allow operators to choose which split-horizon procedure to use for tunnel encapsulations that support both methods. Examples of tunnels that may support both procedures include MPLSoUDP, MPLS over GRE (MPLSoGRE), Generic Network Virtualization Encapsulation (Geneve), and Segment Routing over IPv6 (SRv6) tunnels. This document updates the EVPN multihoming procedures described in RFCs 7432 and 8365, enabling operators to select the split-horizon procedure that meets their specific requirements.
+keywords:
+    - EVPN Multihoming
+    - Split Horizon Filtering
+    - Local Bias
+    - ESI
+    - encapsulations
+    - SHT
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-bess-evpn-mh-split-horizon-11
+updates:
+    - rfc-7432
+    - rfc-8365
+doi: 10.17487/RFC9746
+url: https://www.rfc-editor.org/rfc/rfc9746
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,27 @@
+id: rfc-6222
+rfc_number: 6222
+title: Guidelines for Choosing RTP Control Protocol (RTCP) Canonical Names (CNAMEs)
+authors:
+    - name: A. Begen
+    - name: C. Perkins
+    - name: D. Wing
+date: 2011-04
+stream: IETF
+area: rai
+wg: avt
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 9
+abstract: The RTP Control Protocol (RTCP) Canonical Name (CNAME) is a persistent transport-level identifier for an RTP endpoint.  While the Synchronization Source (SSRC) identifier of an RTP endpoint may change if a collision is detected or when the RTP application is restarted, its RTCP CNAME is meant to stay unchanged, so that RTP endpoints can be uniquely identified and associated with their RTP media streams.  For proper functionality, RTCP CNAMEs should be unique within the participants of an RTP session.  However, the existing guidelines for choosing the RTCP CNAME provided in the RTP standard are insufficient to achieve this uniqueness.  This memo updates those guidelines to allow endpoints to choose unique RTCP CNAMEs. [STANDARDS-TRACK]
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-avt-rtp-cnames-05
+obsoleted_by:
+    - rfc-7022
+updates:
+    - rfc-3550
+doi: 10.17487/RFC6222
+url: https://www.rfc-editor.org/rfc/rfc6222
+source: rfc-editor-index
+ingested_at: "2026-05-21"

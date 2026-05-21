@@ -1,0 +1,39 @@
+id: rfc-9785
+rfc_number: 9785
+title: Preference-Based EVPN Designated Forwarder (DF) Election
+authors:
+    - name: J. Rabadan
+      title: Editor
+    - name: S. Sathappan
+    - name: W. Lin
+    - name: J. Drake
+    - name: A. Sajassi
+date: 2025-06
+stream: IETF
+area: rtg
+wg: bess
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 17
+abstract: |-
+    The Designated Forwarder (DF) in Ethernet Virtual Private Networks (EVPNs) is defined as the Provider Edge (PE) router responsible for sending Broadcast, Unknown Unicast, and Multicast (BUM) traffic to a multihomed device/network in the case of an All-Active multihoming Ethernet Segment (ES) or BUM and unicast in the case of Single-Active multihoming. The Designated Forwarder is selected out of a candidate list of PEs that advertise the same Ethernet Segment Identifier (ESI) to the EVPN network, according to the default DF election algorithm. While the default algorithm provides an efficient and automated way of selecting the Designated Forwarder across different Ethernet Tags in the Ethernet Segment, there are some use cases where a more "deterministic" and user-controlled method is required. At the same time, Network Operators require an easy way to force an on-demand Designated Forwarder switchover in order to carry out some maintenance tasks on the existing Designated Forwarder or control whether a new active PE can preempt the existing Designated Forwarder PE.
+
+    This document proposes use of a DF election algorithm that meets the requirements of determinism and operation control. This document updates RFC 8584 by modifying the definition of the DF Election Extended Community.
+keywords:
+    - Highest-Preference
+    - Lowest-Preference
+    - Non-Revertive
+    - Don’t Preempt
+    - Preemption
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-bess-evpn-pref-df-13
+updates:
+    - rfc-8584
+doi: 10.17487/RFC9785
+url: https://www.rfc-editor.org/rfc/rfc9785
+source: rfc-editor-index
+ingested_at: "2026-05-21"

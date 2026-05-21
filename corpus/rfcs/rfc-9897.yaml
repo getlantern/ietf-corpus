@@ -1,0 +1,44 @@
+id: rfc-9897
+rfc_number: 9897
+title: Datagram Congestion Control Protocol (DCCP) Extensions for Multipath Operation with Multiple Addresses
+authors:
+    - name: M. Amend
+      title: Editor
+    - name: A. Brunstrom
+    - name: A. Kassler
+    - name: V. Rakocevic
+    - name: S. Johnson
+date: 2026-01
+stream: IETF
+area: wit
+wg: tsvwg
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 46
+abstract: |-
+    Datagram Congestion Control Protocol (DCCP) communications, as defined in RFC 4340, are inherently restricted to a single path per connection, despite the availability of multiple network paths between peers. The ability to utilize multiple paths simultaneously for a DCCP session can enhance network resource utilization, improve throughput, and increase resilience to network failures, ultimately enhancing the user experience.
+
+    Use cases for Multipath DCCP (MP-DCCP) include mobile devices (e.g., handsets and vehicles) and residential home gateways that maintain simultaneous connections to distinct network types such as cellular and Wireless Local Area Networks (WLANs) or cellular and fixed access networks. Compared to existing multipath transport protocols, such as Multipath TCP (MPTCP), MP-DCCP is particularly suited for latency-sensitive applications with varying requirements for reliability and in-order delivery.
+
+    This document specifies a set of protocol extensions to DCCP that enable multipath operations. These extensions maintain the same service model as DCCP while introducing mechanisms to establish and utilize multiple concurrent DCCP flows across different network paths.
+keywords:
+    - dccp
+    - extensions
+    - multipath
+    - multihomed
+    - subflow
+    - concurrent
+    - simultaneous
+    - mobility
+    - mpdccp
+    - mp-dccp
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-tsvwg-multipath-dccp-24
+doi: 10.17487/RFC9897
+url: https://www.rfc-editor.org/rfc/rfc9897
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,26 @@
+id: draft-saumvinayak-bess-all-df-bum
+name: draft-saumvinayak-bess-all-df-bum
+rev: "10"
+title: All PEs as DF
+abstract: |-
+    The Designated forwarder concept is leveraged to prevent looping of
+       BUM traffic into tenant network sourced across NVO fabric for
+       multihoming deployments.  [RFC7432] defines a preliminary approach to
+       select the DF for an ES,VLAN or ES,Vlan Group, panning across
+       multiple NVE's.  [RFC8584] makes the election logic more robust and
+       fine grained by inculcating fair election of DF handling most of the
+       prevalent use-cases.  This document presents a deployment problem and
+       a corresponding solution which cannot be easily resolve by rules
+       mentioned in [RFC7432] and [RFC8584].  It involves redundant firewall
+       deployment on disparate overlay sites connected over WAN.  The
+       requirement is to allow reachability, ONLY, to the local firewall,
+       unless there is an outage.  In case of outage the reachability can be
+       extended to remote site's firewall over WAN.
+pages: 8
+stream_state: active
+group: none
+last_updated: "2026-01-28"
+expires: "2026-08-01"
+url: https://datatracker.ietf.org/doc/draft-saumvinayak-bess-all-df-bum/
+source: datatracker
+ingested_at: "2026-05-21"

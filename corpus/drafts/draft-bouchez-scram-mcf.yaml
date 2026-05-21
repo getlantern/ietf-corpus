@@ -1,0 +1,31 @@
+id: draft-bouchez-scram-mcf
+name: draft-bouchez-scram-mcf
+rev: "01"
+title: SCRAM with Modular Crypt Format (SCRAM-MCF)
+abstract: |-
+    This document specifies SCRAM-MCF, an extension to the Salted
+       Challenge Response Authentication Mechanism (SCRAM) family of SASL
+       mechanisms ([RFC5802]) and HTTP Digest extensions ([RFC7616],
+       [RFC7677]).
+
+       The extension replaces the PBKDF2-specific iteration count attributes
+       i= and s= in the server-first-message with a generic Modular Crypt
+       Format (MCF) descriptor f=. This allows servers to use modern memory-
+       hard key derivation functions such as Argon2, SCrypt, or bcrypt while
+       preserving the full security properties and message flow of SCRAM.
+
+       The change is fully backward compatible: servers can continue sending
+       i= and s= for legacy clients and only send f= (or both) when the
+       client advertises support.
+
+       This document is intended to be discussed and potentially adopted by
+       the KITTEN working group.  Feedback from the KITTEN WG is welcome on
+       the kitten@ietf.org mailing list.
+pages: 10
+stream_state: active
+group: none
+last_updated: "2025-11-23"
+expires: "2026-05-27"
+url: https://datatracker.ietf.org/doc/draft-bouchez-scram-mcf/
+source: datatracker
+ingested_at: "2026-05-21"

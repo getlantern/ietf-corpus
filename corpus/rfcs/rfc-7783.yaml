@@ -1,0 +1,28 @@
+id: rfc-7783
+rfc_number: 7783
+title: Coordinated Multicast Trees (CMT) for Transparent Interconnection of Lots of Links (TRILL)
+authors:
+    - name: T. Senevirathne
+    - name: J. Pathangi
+    - name: J. Hudson
+date: 2016-02
+stream: IETF
+area: rtg
+wg: trill
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 16
+abstract: TRILL (Transparent Interconnection of Lots of Links) facilitates loop-free connectivity to non-TRILL networks via a choice of an Appointed Forwarder for a set of VLANs.  Appointed Forwarders provide VLAN-based load sharing with an active-standby model.  High-performance applications require an active-active load-sharing model.  The active-active load-sharing model can be accomplished by representing any given non-TRILL network with a single virtual RBridge (also referred to as a virtual Routing Bridge or virtual TRILL switch).  Virtual representation of the non-TRILL network with a single RBridge poses serious challenges in multi-destination RPF (Reverse Path Forwarding) check calculations.  This document specifies required enhancements to build Coordinated Multicast Trees (CMT) within the TRILL campus to solve related RPF issues.  CMT, which only requires a software upgrade, provides flexibility to RBridges in selecting a desired path of association to a given TRILL multi-destination distribution tree.  This document updates RFC 6325.
+keywords:
+    - Affinity
+    - RPF
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-trill-cmt-11
+updates:
+    - rfc-6325
+doi: 10.17487/RFC7783
+url: https://www.rfc-editor.org/rfc/rfc7783
+source: rfc-editor-index
+ingested_at: "2026-05-21"

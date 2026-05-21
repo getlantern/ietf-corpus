@@ -1,0 +1,28 @@
+id: draft-sidor-pce-binding-label-sid-extensions
+name: draft-sidor-pce-binding-label-sid-extensions
+rev: "02"
+title: Binding Label/Segment Identifier (SID) Extensions in Path Computation Element Communication Protocol (PCEP)
+abstract: |-
+    The Path Computation Element Communication Protocol (PCEP) provides
+       mechanisms for Path Computation Elements (PCEs) to instantiate and
+       manage Label Switched Paths (LSPs) on a Path Computation Client
+       (PCC).  This includes the ability for a PCE to specify a Binding
+       Segment Identifier (SID) for an LSP.
+
+       A binding value specified by a PCE may not be available for use on
+       the PCC.  This can lead to LSP instantiation failures or entire PCEP
+       message being rejected.
+
+       This document proposes extensions to PCEP to allow a PCC to fall back
+       to allocating a Binding SID from its own dynamic range if the value
+       specified by the PCE is unavailable.  It also defines a mechanism for
+       the PCC to report both the requested and the allocated binding values
+       back to the PCE.
+pages: 12
+stream_state: active
+group: none
+last_updated: "2026-04-10"
+expires: "2026-10-12"
+url: https://datatracker.ietf.org/doc/draft-sidor-pce-binding-label-sid-extensions/
+source: datatracker
+ingested_at: "2026-05-21"

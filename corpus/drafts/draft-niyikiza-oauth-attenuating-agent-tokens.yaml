@@ -1,0 +1,27 @@
+id: draft-niyikiza-oauth-attenuating-agent-tokens
+name: draft-niyikiza-oauth-attenuating-agent-tokens
+rev: "00"
+title: Attenuating Authorization Tokens for Agentic Delegation Chains
+abstract: |-
+    This document defines Attenuating Authorization Tokens (AATs), a JWT-
+       based credential format for secure delegation in AI agent systems.
+       An AAT encodes which tools an agent may invoke and with what argument
+       constraints.  Any holder can derive a more restrictive token offline
+       that narrows or maintains scope but cannot expand it.  This invariant
+       is cryptographically enforced and verifiable offline by any party
+       holding the root token's trust anchor key.
+
+       This specification extends the Rich Authorization Requests format
+       (RFC 9396) with delegation-chain semantics and defines a typed
+       constraint vocabulary for tool-level argument restrictions.  The
+       accompanying chain verification algorithm enforces the monotonic
+       attenuation invariant at each delegation step and requires no network
+       contact with the root issuer.
+pages: 72
+stream_state: active
+group: none
+last_updated: "2026-03-17"
+expires: "2026-09-18"
+url: https://datatracker.ietf.org/doc/draft-niyikiza-oauth-attenuating-agent-tokens/
+source: datatracker
+ingested_at: "2026-05-21"

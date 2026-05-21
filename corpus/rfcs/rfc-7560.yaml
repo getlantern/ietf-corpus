@@ -1,0 +1,27 @@
+id: rfc-7560
+rfc_number: 7560
+title: Problem Statement and Requirements for Increased Accuracy in Explicit Congestion Notification (ECN) Feedback
+authors:
+    - name: M. Kuehlewind
+      title: Editor
+    - name: R. Scheffenegger
+    - name: B. Briscoe
+date: 2015-08
+stream: IETF
+area: wit
+wg: tcpm
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 17
+abstract: Explicit Congestion Notification (ECN) is a mechanism where network nodes can mark IP packets, instead of dropping them, to indicate congestion to the endpoints.  An ECN-capable receiver will feed this information back to the sender.  ECN is specified for TCP in such a way that it can only feed back one congestion signal per Round-Trip Time (RTT).  In contrast, ECN for other transport protocols, such as RTP/UDP and SCTP, is specified with more accurate ECN feedback.  Recent new TCP mechanisms (like Congestion Exposure (ConEx) or Data Center TCP (DCTCP)) need more accurate ECN feedback in the case where more than one marking is received in one RTT.  This document specifies requirements for an update to the TCP protocol to provide more accurate ECN feedback.
+keywords:
+    - congestion control
+    - TCP
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-tcpm-accecn-reqs-08
+doi: 10.17487/RFC7560
+url: https://www.rfc-editor.org/rfc/rfc7560
+source: rfc-editor-index
+ingested_at: "2026-05-21"

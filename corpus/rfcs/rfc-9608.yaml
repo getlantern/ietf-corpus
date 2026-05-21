@@ -1,0 +1,28 @@
+id: rfc-9608
+rfc_number: 9608
+title: No Revocation Available for X.509 Public Key Certificates
+authors:
+    - name: R. Housley
+    - name: T. Okubo
+    - name: J. Mandel
+date: 2024-06
+stream: IETF
+area: sec
+wg: lamps
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 10
+abstract: X.509v3 public key certificates are profiled in RFC 5280.  Short-lived certificates are seeing greater use in the Internet.  The Certification Authority (CA) that issues these short-lived certificates do not publish revocation information because the certificate lifespan that is shorter than the time needed to detect, report, and distribute revocation information.  Some long-lived X.509v3 public key certificates never expire, and they are never revoked.  This specification defines the noRevAvail certificate extension so that a relying party can readily determine that the CA does not publish revocation information for the certificate, and it updates the certification path validation algorithm defined in RFC 5280 so that revocation checking is skipped when the noRevAvail certificate extension is present.
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-lamps-norevavail-04
+updates:
+    - rfc-5280
+doi: 10.17487/RFC9608
+errata_url: https://www.rfc-editor.org/errata/rfc9608
+url: https://www.rfc-editor.org/rfc/rfc9608
+source: rfc-editor-index
+ingested_at: "2026-05-21"

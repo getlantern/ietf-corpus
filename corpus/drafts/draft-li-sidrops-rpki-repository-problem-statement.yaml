@@ -1,0 +1,34 @@
+id: draft-li-sidrops-rpki-repository-problem-statement
+name: draft-li-sidrops-rpki-repository-problem-statement
+rev: "03"
+title: RPKI Repository Problem Statement and Analysis
+abstract: |-
+    With the increasing deployment of Route Origin Authorizations (ROAs)
+       and Route Origin Validation (ROV), the Resource Public Key
+       Infrastructure (RPKI) has become a critical component for securing
+       inter-domain routing.  RPKI leverages cryptographic certificates to
+       validate the authenticity and authorization of IP address and AS
+       number allocations.  All RPKI objects are stored in distributed
+       repositories and periodically retrieved by relying parties (RPs).
+       This document presents a data-driven analysis of the current RPKI
+       repository system, including a global survey of AS administrators and
+       an empirical evaluation of repository operations.  The analysis
+       reveals that the existing repository architecture suffers from
+       limited scalability and suboptimal efficiency, and is highly
+       sensitive to failures.  As the number of ROAs and RPs increases, the
+       growing number of point-to-point connections between repositories and
+       RPs, coupled with the pull-based data synchronization model,
+       significantly degrades the system's scalability and performance.
+       Moreover, a failure or attack on any Publication Point (PP) can
+       prevent RPs from obtaining a complete and up-to-date view of RPKI
+       data.  This document further outlines the fundamental requirements
+       for building a scalable, resilient,and efficient RPKI repository
+       architecture to address these limitations.
+pages: 12
+stream_state: active
+group: none
+last_updated: "2026-02-28"
+expires: "2026-09-01"
+url: https://datatracker.ietf.org/doc/draft-li-sidrops-rpki-repository-problem-statement/
+source: datatracker
+ingested_at: "2026-05-21"

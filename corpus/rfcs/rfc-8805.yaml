@@ -1,0 +1,34 @@
+id: rfc-8805
+rfc_number: 8805
+title: A Format for Self-Published IP Geolocation Feeds
+authors:
+    - name: E. Kline
+    - name: K. Duleba
+    - name: Z. Szamonek
+    - name: S. Moser
+    - name: W. Kumari
+date: 2020-08
+stream: INDEPENDENT
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 23
+abstract: |-
+    This document records a format whereby a network operator can publish a mapping of IP address prefixes to simplified geolocation information, colloquially termed a "geolocation feed". Interested parties can poll and parse these feeds to update or merge with other geolocation data sources and procedures. This format intentionally only allows specifying coarse-level location.
+
+    Some technical organizations operating networks that move from one conference location to the next have already experimentally published small geolocation feeds.
+
+    This document describes a currently deployed format. At least one consumer (Google) has incorporated these feeds into a geolocation data pipeline, and a significant number of ISPs are using it to inform them where their prefixes should be geolocated.
+keywords:
+    - geo-location
+    - geolocation
+    - addresses
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-google-self-published-geofeeds-09
+doi: 10.17487/RFC8805
+url: https://www.rfc-editor.org/rfc/rfc8805
+source: rfc-editor-index
+ingested_at: "2026-05-21"

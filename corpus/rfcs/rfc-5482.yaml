@@ -1,0 +1,24 @@
+id: rfc-5482
+rfc_number: 5482
+title: TCP User Timeout Option
+authors:
+    - name: L. Eggert
+    - name: F. Gont
+date: 2009-03
+stream: IETF
+area: wit
+wg: tcpm
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 14
+abstract: The TCP user timeout controls how long transmitted data may remain unacknowledged before a connection is forcefully closed.  It is a local, per-connection parameter.  This document specifies a new TCP option -- the TCP User Timeout Option -- that allows one end of a TCP connection to advertise its current user timeout value.  This information provides advice to the other end of the TCP connection to adapt its user timeout accordingly.  Increasing the user timeouts on both ends of a TCP connection allows it to survive extended periods without end-to-end connectivity.  Decreasing the user timeouts allows busy servers to explicitly notify their clients that they will maintain the connection state only for a short time without connectivity. [STANDARDS-TRACK]
+keywords:
+    - Transmission Control Protocol
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-tcpm-tcp-uto-11
+doi: 10.17487/RFC5482
+url: https://www.rfc-editor.org/rfc/rfc5482
+source: rfc-editor-index
+ingested_at: "2026-05-21"

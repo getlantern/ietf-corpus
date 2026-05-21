@@ -1,0 +1,30 @@
+id: draft-vulnetix-crit
+name: draft-vulnetix-crit
+rev: "02"
+title: Cloud Resource Identifier Templates (CRIT)
+abstract: |-
+    This document specifies the Cloud Resource Identifier Templates
+       (CRIT) format.  A CRIT record provides a machine-readable,
+       parameterised template for locating cloud-native resources affected
+       by a known vulnerability.  CRITs do not define cloud resource
+       identifier schemas; those are defined normatively by each cloud
+       provider.  CRITs define a variable system for expressing partially-
+       known or consumer-resolved values within those provider-defined
+       schemas, together with temporal, remediation, and detection metadata
+       sufficient to determine exposure status and drive remediation
+       workflows.
+
+       Each CRIT record is bound to exactly one vulnerability identifier.
+       Cross-provider and multi-resource-type coverage of a single
+       vulnerability is expressed as a set of CRIT records sharing the same
+       vulnerability identifier, each independently specifying the provider-
+       specific fix details, propagation mechanism, and detection strategy
+       applicable to that resource type.
+pages: 67
+stream_state: active
+group: none
+last_updated: "2026-05-09"
+expires: "2026-11-10"
+url: https://datatracker.ietf.org/doc/draft-vulnetix-crit/
+source: datatracker
+ingested_at: "2026-05-21"

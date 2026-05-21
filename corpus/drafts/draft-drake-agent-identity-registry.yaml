@@ -1,0 +1,57 @@
+id: draft-drake-agent-identity-registry
+name: draft-drake-agent-identity-registry
+rev: "02"
+title: 'Agent Identity Registry System: A Federated Architecture for Hardware-Anchored Identity of Autonomous Entities'
+abstract: |-
+    The Internet's identity infrastructure assumes human principals.  As
+       autonomous entities -- AI agents, robotic systems, and other non-
+       human actors -- increasingly participate in both Internet protocols
+       and physical society, no existing standard provides them with
+       persistent, verifiable, hardware-anchored identity.  The absence of
+       such identity enables Sybil attacks at scale, undermines trust
+       between autonomous entities and the services they interact with, and
+       leaves human bystanders unable to distinguish one machine from
+       another.
+
+       This document defines a federated registry architecture for issuing,
+       managing, and verifying persistent identities for autonomous
+       entities.  Each identity is expressed as a URN in the "aid" (Agent
+       Identity) namespace ([RFC8141]) and is anchored, where hardware is
+       available, to a physical security component (TPM, PIV smart card,
+       secure enclave, or virtual TPM) whose manufacturer-certified key
+       cannot be extracted, cloned, or transferred.  This hardware anchoring
+       provides Sybil resistance: creating N identities requires N distinct
+       physical devices, making large-scale identity fraud economically
+       infeasible.  Software-only entities may participate at a lower trust
+       tier, building reputation from a baseline rather than from a
+       hardware-anchored starting point.
+
+       The architecture separates concerns into three tiers, modeled on the
+       proven Internet domain name system: a Governance Authority that sets
+       policy and manages the global trust framework, Registry Operators
+       that maintain authoritative identity databases and enforce cross-
+       provider uniqueness, and Registrars that perform hardware attestation
+       verification, issue standard OpenID Connect ([OIDC-Core]) tokens, and
+       serve as the primary interface for autonomous entities.  The system
+       issues standard OIDC/OAuth2 tokens, enabling any Relying Party --
+       email services, API gateways, agent-to-agent platforms, reputation
+       services, certification bodies, or any service that needs to verify
+       agent identity -- to verify token signatures using existing OIDC
+       libraries.
+
+       A companion specification ([I-D.drake-email-hardware-attestation])
+       defines transport-level attestation headers for email and other
+       protocols; this document defines the identity infrastructure that
+       underpins those attestations.  The architecture anticipates a future
+       in which reliable, indelible identity for autonomous entities -- from
+       cloud software agents through embodied robots that interact
+       physically with humans -- is as fundamental to infrastructure as the
+       domain name system is today.
+pages: 58
+stream_state: active
+group: none
+last_updated: "2026-04-29"
+expires: "2026-10-31"
+url: https://datatracker.ietf.org/doc/draft-drake-agent-identity-registry/
+source: datatracker
+ingested_at: "2026-05-21"

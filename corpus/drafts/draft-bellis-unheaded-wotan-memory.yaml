@@ -1,0 +1,31 @@
+id: draft-bellis-unheaded-wotan-memory
+name: draft-bellis-unheaded-wotan-memory
+rev: "00"
+title: Wotan Memory Protocol for the Unheaded Protocol
+abstract: |-
+    Wotan is the memory and I/O bus for the Unheaded Protocol, providing
+       addressable per-flow storage for BPF programs executing within the
+       Limited Domain.
+
+       The Wotan protocol specifies the BPF helper interface for memory
+       access, the address space layout for per-flow data structures, a
+       five-level cache hierarchy (L0 through L4), and the topic-based I/O
+       model for interaction with userspace services.
+
+       This memo defines the memory model, helper functions, address space,
+       cache miss protocol, gRPC streaming contracts, triple-role
+       architecture, reliability guarantees, and I/O topic naming
+       conventions for systems implementing the Unheaded Protocol's
+       computational layer.
+
+       Draft-03 introduces a structured error code taxonomy with severity
+       levels, helper return codes for common operations, and error recovery
+       procedures.  Draft-02 security patches W1-W8 are retained.
+pages: 25
+stream_state: active
+group: none
+last_updated: "2026-03-19"
+expires: "2026-09-20"
+url: https://datatracker.ietf.org/doc/draft-bellis-unheaded-wotan-memory/
+source: datatracker
+ingested_at: "2026-05-21"

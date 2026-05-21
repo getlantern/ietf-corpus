@@ -1,0 +1,37 @@
+id: rfc-8078
+rfc_number: 8078
+title: Managing DS Records from the Parent via CDS/CDNSKEY
+authors:
+    - name: O. Gudmundsson
+    - name: P. Wouters
+date: 2017-03
+stream: IETF
+area: ops
+wg: dnsop
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 10
+abstract: |-
+    RFC 7344 specifies how DNS trust can be maintained across key rollovers in-band between parent and child. This document elevates RFC 7344 from Informational to Standards Track. It also adds a method for initial trust setup and removal of a secure entry point.
+
+    Changing a domain's DNSSEC status can be a complicated matter involving multiple unrelated parties. Some of these parties, such as the DNS operator, might not even be known by all the organizations involved. The inability to disable DNSSEC via in-band signaling is seen as a problem or liability that prevents some DNSSEC adoption at a large scale. This document adds a method for in-band signaling of these DNSSEC status changes.
+
+    This document describes reasonable policies to ease deployment of the initial acceptance of new secure entry points (DS records).
+
+    It is preferable that operators collaborate on the transfer or move of a domain. The best method is to perform a Key Signing Key (KSK) plus Zone Signing Key (ZSK) rollover. If that is not possible, the method using an unsigned intermediate state described in this document can be used to move the domain between two parties. This leaves the domain temporarily unsigned and vulnerable to DNS spoofing, but that is preferred over the alternative of validation failures due to a mismatched DS and DNSKEY record.
+keywords:
+    - dnssec
+    - trust maintenance
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-dnsop-maintain-ds-06
+updates:
+    - rfc-7344
+updated_by:
+    - rfc-9615
+doi: 10.17487/RFC8078
+errata_url: https://www.rfc-editor.org/errata/rfc8078
+url: https://www.rfc-editor.org/rfc/rfc8078
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,31 @@
+id: rfc-7462
+rfc_number: 7462
+title: URNs for the Alert-Info Header Field of the Session Initiation Protocol (SIP)
+authors:
+    - name: L. Liess
+      title: Editor
+    - name: R. Jesske
+    - name: A. Johnston
+    - name: D. Worley
+    - name: P. Kyzivat
+date: 2015-03
+stream: IETF
+area: rai
+wg: salud
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 46
+abstract: |-
+    The Session Initiation Protocol (SIP) supports the capability to provide a reference to a specific rendering to be used by the User Agent (UA) as an alerting signal (e.g., a ring tone or ringback tone) when the user is alerted. This is done using the Alert-Info header field. However, the reference (typically a URL) addresses only a specific network resource with specific rendering properties. There is currently no support for standard identifiers for describing the semantics of the alerting situation or the characteristics of the alerting signal, without being tied to a particular rendering. To overcome these limitations and support new applications, a new family of URNs for use in Alert-Info header fields (and situations with similar requirements) is defined in this specification.
+
+    This document normatively updates RFC 3261, which defines the Session Initiation Protocol (SIP). It changes the usage of the Alert-Info header field defined in RFC 3261 by additionally allowing its use in any non-100 provisional response to INVITE. This document also permits proxies to add or remove an Alert-Info header field and to add or remove Alert-Info header field values.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-salud-alert-info-urns-14
+updates:
+    - rfc-3261
+doi: 10.17487/RFC7462
+url: https://www.rfc-editor.org/rfc/rfc7462
+source: rfc-editor-index
+ingested_at: "2026-05-21"

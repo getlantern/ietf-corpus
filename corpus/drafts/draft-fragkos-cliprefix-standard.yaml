@@ -1,0 +1,28 @@
+id: draft-fragkos-cliprefix-standard
+name: draft-fragkos-cliprefix-standard
+rev: "00"
+title: A Standardized Set of ASCII-Based 3-Character Prefixes for Command-Line Interface Standard Output and Plaintext Logs to Aid in Software Development by Humans and AI-Generated Source Code
+abstract: |-
+    Command-line interface (CLI) tools frequently emit status,
+       diagnostic, and progress messages that in some cases are prefixed
+       with short ASCII tokens containing anything from any printable
+       characters (e.g. !, i, +, etc.), abbreviations (e.g. DEL, INS, etc.),
+       to short verbal descriptors (e.g. "INFO:", "DELETE", "ALERT", etc.).
+       Despite their ubiquity, use, and convenience, no standard defines
+       these tokens or their semantics.  This document proposes a machine-
+       parseable, human-readable vocabulary of 3-character ASCII prefixes --
+       collectively referred to as "gclifixes" -- enclosed in square
+       brackets [ ] for events and curly braces { } for context metadata.
+       The goal is to enable consistent interpretation across CLI tools, log
+       aggregators, CI/CD pipelines, IDE integrations, and most importantly
+       for any AI-generated code the adoption of this standard will
+       streamline how these are used and provides additional meaning to any
+       prompt message and log file without additional effort.
+pages: 24
+stream_state: active
+group: none
+last_updated: "2026-03-15"
+expires: "2026-09-16"
+url: https://datatracker.ietf.org/doc/draft-fragkos-cliprefix-standard/
+source: datatracker
+ingested_at: "2026-05-21"

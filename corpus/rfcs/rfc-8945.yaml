@@ -1,0 +1,39 @@
+id: rfc-8945
+rfc_number: 8945
+title: Secret Key Transaction Authentication for DNS (TSIG)
+authors:
+    - name: F. Dupont
+    - name: S. Morris
+    - name: P. Vixie
+    - name: D. Eastlake 3rd
+    - name: O. Gudmundsson
+    - name: B. Wellington
+date: 2020-11
+stream: IETF
+area: ops
+wg: dnsop
+current_status: INTERNET STANDARD
+publication_status: INTERNET STANDARD
+page_count: 22
+abstract: |-
+    This document describes a protocol for transaction-level authentication using shared secrets and one-way hashing. It can be used to authenticate dynamic updates to a DNS zone as coming from an approved client or to authenticate responses as coming from an approved name server.
+
+    No recommendation is made here for distributing the shared secrets; it is expected that a network administrator will statically configure name servers and clients using some out-of-band mechanism.
+
+    This document obsoletes RFCs 2845 and 4635.
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-dnsop-rfc2845bis-09
+obsoletes:
+    - rfc-2845
+    - rfc-4635
+also:
+    - std-93
+doi: 10.17487/RFC8945
+errata_url: https://www.rfc-editor.org/errata/rfc8945
+url: https://www.rfc-editor.org/rfc/rfc8945
+source: rfc-editor-index
+ingested_at: "2026-05-21"

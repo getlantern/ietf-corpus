@@ -1,0 +1,31 @@
+id: rfc-3326
+rfc_number: 3326
+title: The Reason Header Field for the Session Initiation Protocol (SIP)
+authors:
+    - name: H. Schulzrinne
+    - name: D. Oran
+    - name: G. Camarillo
+date: 2002-12
+stream: IETF
+area: rai
+wg: sip
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 8
+abstract: 'The REGISTER function is used in a Session Initiation Protocol (SIP) system primarily to associate a temporary contact address with an address-of-record.  This contact is generally in the form of a Uniform Resource Identifier (URI), such as Contact: <sip:alice@pc33.atlanta.com> and is generally dynamic and associated with the IP address or hostname of the SIP User Agent (UA).  The problem is that network topology may have one or more SIP proxies between the UA and the registrar, such that any request traveling from the user''s home network to the registered UA must traverse these proxies.  The REGISTER method does not give us a mechanism to discover and record this sequence of proxies in the registrar for future use.  This document defines an extension header field, "Path" which provides such a mechanism. [STANDARDS-TRACK]'
+keywords:
+    - SIP
+    - Session Initiation Protocol
+    - heterogeneous error response forking problem
+    - herfp
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-sip-reason-01
+updated_by:
+    - rfc-8606
+    - rfc-9366
+doi: 10.17487/RFC3326
+url: https://www.rfc-editor.org/rfc/rfc3326
+source: rfc-editor-index
+ingested_at: "2026-05-21"

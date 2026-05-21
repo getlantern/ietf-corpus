@@ -1,0 +1,35 @@
+id: draft-li-dnsop-ecs-aggregation-fix
+name: draft-li-dnsop-ecs-aggregation-fix
+rev: "01"
+title: Strengthening DNS Query Aggregation against ECS-based Attacks
+abstract: |-
+    The DNS query aggregation mechanism is a critical defense against DNS
+       cache poisoning attacks that exploit the "Birthday Paradox".
+       However, recent research has revealed that flawed implementations of
+       the EDNS Client Subnet (ECS) option, as specified in RFC 7871, can be
+       exploited to bypass this defense.  This allows attackers to force a
+       resolver to issue multiple simultaneous queries for the same domain
+       name by crafting queries with different ECS options.  This
+       vulnerability revives the classic DNS Birthday Attack, posing a
+       significant threat to DNS resolvers and the clients they serve.
+
+       While Section 11.2 of RFC 7871 notes the general risk of Birthday
+       Attacks and suggests marking whether responding nameservers support
+       ECS, it stops short of providing a concrete normative state machine
+       or explicit mitigation process.  This document specifies a stricter
+       and more coherent processing model for the ECS option in DNS
+       resolvers to formalize that detection concept.  It introduces a
+       mechanism for resolvers to track the ECS support state of
+       authoritative nameservers ("no-ECS-support" state) and mandates
+       strict query aggregation for zones determined to not support ECS.
+       These changes are designed to close the identified vulnerability and
+       restore the effectiveness of query aggregation as a practical defense
+       mechanism.
+pages: 8
+stream_state: active
+group: none
+last_updated: "2026-02-28"
+expires: "2026-09-01"
+url: https://datatracker.ietf.org/doc/draft-li-dnsop-ecs-aggregation-fix/
+source: datatracker
+ingested_at: "2026-05-21"

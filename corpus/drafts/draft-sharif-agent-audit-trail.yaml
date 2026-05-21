@@ -1,0 +1,31 @@
+id: draft-sharif-agent-audit-trail
+name: draft-sharif-agent-audit-trail
+rev: "00"
+title: 'Agent Audit Trail: A Standard Logging Format for Autonomous AI Systems'
+abstract: |-
+    This document specifies a standard logging format for autonomous
+       AI agent systems.  The Agent Audit Trail (AAT) defines a
+       JSON-based record structure with mandatory fields for agent
+       identity, action classification, outcome tracking, and trust
+       level reporting.  Records are linked via tamper-evident hash
+       chaining using SHA-256 per RFC 8785, with optional ECDSA
+       signatures for non-repudiation.
+
+       The format addresses requirements from the EU AI Act
+       (Regulation 2024/1689), which mandates automatic recording of
+       events for high-risk AI systems effective August 2026.  It also
+       maps to SOC 2 Trust Services Criteria, ISO/IEC 42001, and
+       PCI DSS v4.0.1 logging requirements.
+
+       The design is transport-agnostic and supports export to JSONL,
+       Syslog (RFC 5424), and CSV while preserving chain integrity.
+       Privacy is addressed through input/output hashing and tombstone-
+       based deletion compatible with GDPR Article 17.
+pages: 28
+stream_state: active
+group: none
+last_updated: "2026-03-29"
+expires: "2026-09-30"
+url: https://datatracker.ietf.org/doc/draft-sharif-agent-audit-trail/
+source: datatracker
+ingested_at: "2026-05-21"

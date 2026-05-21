@@ -1,0 +1,29 @@
+id: draft-ietf-drip-dki
+name: draft-ietf-drip-dki
+rev: "10"
+title: The DRIP DET public Key Infrastructure
+abstract: |-
+    The DRIP Entity Tag (DET) public Key Infrastructure (DKI) is a
+       specific variant of classic Public Key Infrastructures (PKI) where
+       the organization is around the DET, in place of X.520 Distinguished
+       Names.  Further, the DKI uses DRIP Endorsements in place of X.509
+       certificates for establishing trust within the DKI.
+
+       There are two X.509 profiles for shadow PKI behind the DKI, with many
+       of their X.509 fields mirroring content in the DRIP Endorsements.
+       These PKIs can at times be used where X.509 is expected and non-
+       constrained communication links are available that can handle their
+       larger size.  It is recommended that a DRIP deployment implement both
+       of these along side the Endorsement trees.
+
+       C509 (CBOR) encoding of all X.509 certificates are also provided as
+       an alternative for where there are gains in reduced object size.
+pages: 49
+stream: IETF
+stream_state: active
+group: drip
+last_updated: "2026-04-23"
+expires: "2026-10-25"
+url: https://datatracker.ietf.org/doc/draft-ietf-drip-dki/
+source: datatracker
+ingested_at: "2026-05-21"

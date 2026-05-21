@@ -1,0 +1,38 @@
+id: rfc-9722
+rfc_number: 9722
+title: Fast Recovery for EVPN Designated Forwarder Election
+authors:
+    - name: P. Brissette
+    - name: A. Sajassi
+    - name: LA. Burdet
+      title: Editor
+    - name: J. Drake
+    - name: J. Rabadan
+date: 2025-05
+stream: IETF
+area: rtg
+wg: bess
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 14
+abstract: |-
+    The Ethernet Virtual Private Network (EVPN) solution in RFC 7432 provides Designated Forwarder (DF) election procedures for multihomed Ethernet Segments. These procedures have been enhanced further by applying the Highest Random Weight (HRW) algorithm for DF election to avoid unnecessary DF status changes upon a failure. This document improves these procedures by providing a fast DF election upon recovery of the failed link or node associated with the multihomed Ethernet Segment. This document updates RFC 8584 by optionally introducing delays between some of the events therein.
+
+    The solution is independent of the number of EVPN Instances (EVIs) associated with that Ethernet Segment, and it is performed via a simple signaling in BGP between the recovered node and each of the other nodes in the multihoming group.
+keywords:
+    - EVPN
+    - Designated Forwarder
+    - Convergence
+    - Recovery
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-bess-evpn-fast-df-recovery-12
+updates:
+    - rfc-8584
+doi: 10.17487/RFC9722
+url: https://www.rfc-editor.org/rfc/rfc9722
+source: rfc-editor-index
+ingested_at: "2026-05-21"

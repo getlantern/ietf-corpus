@@ -1,0 +1,27 @@
+id: draft-ramki-ptp-hardware-rooted-attestation
+name: draft-ramki-ptp-hardware-rooted-attestation
+rev: "01"
+title: 'Hardware-Rooted Attestation for Precision Time Protocol: Scalable Workload Identity and Phased PQC Readiness'
+abstract: |-
+    This document defines a scalable framework for hardware-rooted
+       cryptographic attestation in the Precision Time Protocol (PTP).
+       Standard PTP security mechanisms rely on symmetric keys, which suffer
+       from identity ambiguity and source non-repudiation
+       failures—vulnerabilities that allow any node possessing the shared
+       secret to impersonate a Grandmaster.  To resolve these issues while
+       overcoming the silicon throughput limits of traditional TPMs and the
+       overhead of Post-Quantum Cryptography (PQC), this draft specifies a
+       tiered trust model.  A Hardware Root (e.g., TPM) establishes a long-
+       term PQC identity, while a workload identity management plane (e.g.,
+       SPIFFE/SPIRE) manages the frequent rotation of short-lived
+       operational keys.  These keys perform amortized signing of PTP
+       message batches via Merkle Trees, ensuring wire-speed synchronization
+       and irrefutable provenance for regulated environments.
+pages: 7
+stream_state: active
+group: none
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-ramki-ptp-hardware-rooted-attestation/
+source: datatracker
+ingested_at: "2026-05-21"

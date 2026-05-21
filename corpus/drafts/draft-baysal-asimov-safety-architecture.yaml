@@ -1,0 +1,30 @@
+id: draft-baysal-asimov-safety-architecture
+name: draft-baysal-asimov-safety-architecture
+rev: "00"
+title: The Asimov Safety Architecture for Autonomous AI Agents
+abstract: |-
+    This document specifies the Asimov Safety Architecture (ASA), a
+       hierarchical dual-gate security framework for autonomous AI agents
+       that operate with action execution capabilities.  The architecture
+       combines a deterministic pattern denylist (Gate 1) with a stateless,
+       context-free LLM judge (Gate 2), governed by a strict four-layer
+       priority hierarchy.
+
+       The key insight motivating this architecture is that a single LLM
+       will not reliably self-enforce its own safety rules under adversarial
+       pressure.  The ASA addresses this by architecturally separating the
+       reasoning model from the judging model, ensuring the judge cannot be
+       manipulated through conversational context.
+
+       This specification defines the mandatory components, layer semantics,
+       conflict resolution rules, inter-component trust model, and
+       conformance requirements for implementations of the Asimov Safety
+       Architecture.
+pages: 27
+stream_state: active
+group: none
+last_updated: "2026-03-27"
+expires: "2026-09-28"
+url: https://datatracker.ietf.org/doc/draft-baysal-asimov-safety-architecture/
+source: datatracker
+ingested_at: "2026-05-21"

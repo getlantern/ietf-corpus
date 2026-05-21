@@ -1,0 +1,28 @@
+id: rfc-6069
+rfc_number: 6069
+title: Making TCP More Robust to Long Connectivity Disruptions (TCP-LCD)
+authors:
+    - name: A. Zimmermann
+    - name: A. Hannemann
+date: 2010-12
+stream: IETF
+area: wit
+wg: tcpm
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 23
+abstract: |-
+    Disruptions in end-to-end path connectivity, which last longer than one retransmission timeout, cause suboptimal TCP performance. The reason for this performance degradation is that TCP interprets segment loss induced by long connectivity disruptions as a sign of congestion, resulting in repeated retransmission timer backoffs. This, in turn, leads to a delayed detection of the re-establishment of the connection since TCP waits for the next retransmission timeout before it attempts a retransmission.
+
+    This document proposes an algorithm to make TCP more robust to long connectivity disruptions (TCP-LCD). It describes how standard ICMP messages can be exploited during timeout-based loss recovery to disambiguate true congestion loss from non-congestion loss caused by connectivity disruptions. Moreover, a reversion strategy of the retransmission timer is specified that enables a more prompt detection of whether or not the connectivity to a previously disconnected peer node has been restored. TCP-LCD is a TCP sender- only modification that effectively improves TCP performance in the case of connectivity disruptions. This document defines an Experimental Protocol for the Internet community.
+keywords:
+    - Internet Control Message Protocol (ICMP)
+    - Retranmission Timeout (RTO)
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-tcpm-tcp-lcd-03
+doi: 10.17487/RFC6069
+url: https://www.rfc-editor.org/rfc/rfc6069
+source: rfc-editor-index
+ingested_at: "2026-05-21"

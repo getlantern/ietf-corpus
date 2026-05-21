@@ -1,0 +1,26 @@
+id: draft-zhang-idr-sr-policy-template
+name: draft-zhang-idr-sr-policy-template
+rev: "07"
+title: BGP SR Policy Extensions for template
+abstract: |-
+    Segment Routing(SR) Policies can be advertised using BGP.  An SR
+       Policy may has lots of attributes, and as the application and
+       features evolve, the SR Policy may need have more and more attribute
+       attributes.  To avoid modifying BGP when attributes are added to an
+       SR Policy, we can define a template.  The identifier and content of
+       the template are defined by the receiver of the SR Policy.  The
+       advertiser of an SR policy only needs to know the ID of the template.
+       When advertising SR policy, the advertiser carries the template ID in
+       the tunnel encapsulation information of the SR policy.  After
+       receiving the SR Policy information, the receiver obtains the
+       corresponding template and content according to the template ID,
+       thereby obtaining abundant constraint configuration information.
+pages: 9
+stream: IETF
+stream_state: active
+group: idr
+last_updated: "2026-02-05"
+expires: "2026-08-09"
+url: https://datatracker.ietf.org/doc/draft-zhang-idr-sr-policy-template/
+source: datatracker
+ingested_at: "2026-05-21"

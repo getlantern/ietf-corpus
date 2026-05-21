@@ -1,0 +1,26 @@
+id: draft-ietf-idr-sr-policy-metric
+name: draft-ietf-idr-sr-policy-metric
+rev: "04"
+title: BGP SR Policy Extensions for metric
+abstract: |-
+    SR Policy candidate paths can be represented in BGP UPDATE messages.
+       BGP can then be used to propagate the SR Policy candidate paths to
+       the headend nodes in the network.  After SR Policy is installed on
+       the ingress node, the packets can be steered into SR Policy through
+       route selection.  Therefore, route selection may be performed on the
+       ingress node of the SR Policy.  If there are multiple routes to the
+       same destination, the route selection node can select routes based on
+       the local policy.  The local policy may use the IGP metric of the
+       selected path, which is the IGP Metric of the SR Policy.  Thus the
+       BGP UPDATE message needs to carry the metric of each segment list of
+       the SR Policy Candidate Path, which can be used in path selection of
+       routing.
+pages: 8
+stream: IETF
+stream_state: active
+group: idr
+last_updated: "2026-02-05"
+expires: "2026-08-09"
+url: https://datatracker.ietf.org/doc/draft-ietf-idr-sr-policy-metric/
+source: datatracker
+ingested_at: "2026-05-21"

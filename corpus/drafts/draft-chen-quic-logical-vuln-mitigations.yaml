@@ -1,0 +1,26 @@
+id: draft-chen-quic-logical-vuln-mitigations
+name: draft-chen-quic-logical-vuln-mitigations
+rev: "00"
+title: Mitigating Logical Vulnerabilities in QUIC Implementations
+abstract: |-
+    This document describes protocol and implementation practices for
+       mitigating logical vulnerabilities in QUIC implementations.  It
+       focuses on denial-of-service and correctness failures caused by
+       unbounded resource retention, unsafe state transitions, and
+       insufficiently defensive handling of adversarial but parseable
+       protocol inputs.
+
+       The document provides actionable guidance for protocol designers,
+       implementers, and operators.  It proposes concrete resource bounds,
+       defensive validation rules, queue-management practices, and state-
+       machine invariants intended to reduce exposure to memory exhaustion,
+       CPU exhaustion, queue blow-up, connection starvation, and crash-
+       triggering state confusion in QUIC endpoints.
+pages: 10
+stream_state: active
+group: none
+last_updated: "2026-03-16"
+expires: "2026-09-17"
+url: https://datatracker.ietf.org/doc/draft-chen-quic-logical-vuln-mitigations/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,55 @@
+id: rfc-4960
+rfc_number: 4960
+title: Stream Control Transmission Protocol
+authors:
+    - name: R. Stewart
+      title: Editor
+date: 2007-09
+stream: IETF
+area: wit
+wg: tsvwg
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 152
+abstract: |-
+    This document obsoletes RFC 2960 and RFC 3309. It describes the Stream Control Transmission Protocol (SCTP). SCTP is designed to transport Public Switched Telephone Network (PSTN) signaling messages over IP networks, but is capable of broader applications.
+
+    SCTP is a reliable transport protocol operating on top of a connectionless packet network such as IP. It offers the following services to its users:
+
+    -- acknowledged error-free non-duplicated transfer of user data,
+
+    -- data fragmentation to conform to discovered path MTU size,
+
+    -- sequenced delivery of user messages within multiple streams, with an option for order-of-arrival delivery of individual user messages,
+
+    -- optional bundling of multiple user messages into a single SCTP packet, and
+
+    -- network-level fault tolerance through supporting of multi-homing at either or both ends of an association.
+
+    The design of SCTP includes appropriate congestion avoidance behavior and resistance to flooding and masquerade attacks. [STANDARDS-TRACK]
+keywords:
+    - SCTP
+    - IP
+    - internet
+    - transport
+    - packet
+    - network
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-tsvwg-2960bis-05
+obsoletes:
+    - rfc-2960
+    - rfc-3309
+obsoleted_by:
+    - rfc-9260
+updated_by:
+    - rfc-6096
+    - rfc-6335
+    - rfc-7053
+    - rfc-8899
+doi: 10.17487/RFC4960
+errata_url: https://www.rfc-editor.org/errata/rfc4960
+url: https://www.rfc-editor.org/rfc/rfc4960
+source: rfc-editor-index
+ingested_at: "2026-05-21"

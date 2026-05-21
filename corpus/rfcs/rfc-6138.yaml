@@ -1,0 +1,26 @@
+id: rfc-6138
+rfc_number: 6138
+title: LDP IGP Synchronization for Broadcast Networks
+authors:
+    - name: S. Kini
+      title: Editor
+    - name: W. Lu
+      title: Editor
+date: 2011-02
+stream: IETF
+area: rtg
+wg: mpls
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 9
+abstract: RFC 5443 describes a mechanism to achieve LDP IGP synchronization to prevent black-holing traffic (e.g., VPN) when an Interior Gateway Protocol (IGP) is operational on a link but Label Distribution Protocol (LDP) is not.  If this mechanism is applied to broadcast links that have more than one LDP peer, the metric increase procedure can only be applied to the link as a whole but not to an individual peer.  When a new LDP peer comes up on a broadcast network, this can result in loss of traffic through other established peers on that network.  This document describes a mechanism to address that use-case without dropping traffic.  The mechanism does not introduce any protocol message changes.  This document is not an Internet Standards Track specification; it is published for informational purposes.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-mpls-ldp-igp-sync-bcast-06
+updates:
+    - rfc-5443
+doi: 10.17487/RFC6138
+url: https://www.rfc-editor.org/rfc/rfc6138
+source: rfc-editor-index
+ingested_at: "2026-05-21"

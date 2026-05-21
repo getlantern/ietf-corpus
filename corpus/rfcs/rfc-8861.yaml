@@ -1,0 +1,32 @@
+id: rfc-8861
+rfc_number: 8861
+title: 'Sending Multiple RTP Streams in a Single RTP Session: Grouping RTP Control Protocol (RTCP) Reception Statistics and Other Feedback'
+authors:
+    - name: J. Lennox
+    - name: M. Westerlund
+    - name: Q. Wu
+    - name: C. Perkins
+date: 2021-01
+stream: IETF
+area: wit
+wg: avtcore
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 16
+abstract: RTP allows multiple RTP streams to be sent in a single session but requires each Synchronization Source (SSRC) to send RTP Control Protocol (RTCP) reception quality reports for every other SSRC visible in the session.  This causes the number of RTCP reception reports to grow with the number of SSRCs, rather than the number of endpoints.  In many cases, most of these RTCP reception reports are unnecessary, since all SSRCs of an endpoint are normally co-located and see the same reception quality.  This memo defines a Reporting Group extension to RTCP to reduce the reporting overhead in such scenarios.
+keywords:
+    - RGRP
+    - SDES
+    - XR
+    - Reporting
+    - Group
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-avtcore-rtp-multi-stream-optimisation-12
+doi: 10.17487/RFC8861
+url: https://www.rfc-editor.org/rfc/rfc8861
+source: rfc-editor-index
+ingested_at: "2026-05-21"

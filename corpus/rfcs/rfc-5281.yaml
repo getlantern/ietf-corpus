@@ -1,0 +1,30 @@
+id: rfc-5281
+rfc_number: 5281
+title: Extensible Authentication Protocol Tunneled Transport Layer Security Authenticated Protocol Version 0 (EAP-TTLSv0)
+authors:
+    - name: P. Funk
+    - name: S. Blake-Wilson
+date: 2008-08
+stream: IETF
+wg: non working group
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 51
+abstract: EAP-TTLS is an EAP (Extensible Authentication Protocol) method that encapsulates a TLS (Transport Layer Security) session, consisting of a handshake phase and a data phase.  During the handshake phase, the server is authenticated to the client (or client and server are mutually authenticated) using standard TLS procedures, and keying material is generated in order to create a cryptographically secure tunnel for information exchange in the subsequent data phase.  During the data phase, the client is authenticated to the server (or client and server are mutually authenticated) using an arbitrary authentication mechanism encapsulated within the secure tunnel.  The encapsulated authentication mechanism may itself be EAP, or it may be another authentication protocol such as PAP, CHAP, MS-CHAP, or MS-CHAP-V2.  Thus, EAP-TTLS allows legacy password-based authentication protocols to be used against existing authentication databases, while protecting the security of these legacy protocols against eavesdropping, man-in-the-middle, and other attacks.  The data phase may also be used for additional, arbitrary data exchange.  This memo provides information for the Internet community.
+keywords:
+    - EAP
+    - AAA
+    - Authentication
+    - TLS
+formats:
+    - TXT
+    - HTML
+draft: draft-funk-eap-ttls-v0-05
+updated_by:
+    - rfc-8996
+    - rfc-9427
+doi: 10.17487/RFC5281
+errata_url: https://www.rfc-editor.org/errata/rfc5281
+url: https://www.rfc-editor.org/rfc/rfc5281
+source: rfc-editor-index
+ingested_at: "2026-05-21"

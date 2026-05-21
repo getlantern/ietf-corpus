@@ -1,0 +1,45 @@
+id: rfc-8148
+rfc_number: 8148
+title: Next-Generation Vehicle-Initiated Emergency Calls
+authors:
+    - name: R. Gellens
+    - name: B. Rosen
+    - name: H. Tschofenig
+date: 2017-05
+stream: IETF
+area: art
+wg: ecrit
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 40
+abstract: |-
+    This document describes how to use IP-based emergency services mechanisms to support the next generation of emergency calls placed by vehicles (automatically in the event of a crash or serious incident, or manually invoked by a vehicle occupant) and conveying vehicle, sensor, and location data related to the crash or incident. Such calls are often referred to as "Automatic Crash Notification" (ACN), or "Advanced Automatic Crash Notification" (AACN), even in the case of manual trigger. The "Advanced" qualifier refers to the ability to carry a richer set of data.
+
+    This document also registers a MIME media type and Emergency Call Data Type for the vehicle, sensor, and location data (often referred to as "crash data" even though there is not necessarily a crash) and an INFO package to enable carrying this and related data in SIP INFO requests. An external specification for the data format, contents, and structure is referenced in this document.
+
+    This document reuses the technical aspects of next-generation Pan- European eCall (a mandated and standardized system for emergency calls by in-vehicle systems (IVSs) within Europe and other regions). However, this document specifies use of a different set of vehicle (crash) data, specifically, the Vehicle Emergency Data Set (VEDS) rather than the eCall Minimum Set of Data (MSD). This document is an extension of the IETF eCall document, with the primary differences being that this document makes the MSD data set optional and VEDS mandatory, and it adds attribute values to the metadata/control object to permit greater functionality. This document registers a new INFO package (identical to that registered for eCall but with the addition of the VEDS MIME type). This document also describes legacy (circuit-switched) ACN systems and their migration to next-generation emergency calling, to provide background information and context.
+keywords:
+    - emergency
+    - call
+    - calls
+    - emergency call
+    - emergency calls
+    - vehicle
+    - acn
+    - aacn
+    - automatic crash notification
+    - automatic collision notification
+    - advanced automatic crash notification
+    - advanced automatic collision notification
+    - crash
+    - vehicle-initiated
+    - ecall
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-ecrit-car-crash-23
+doi: 10.17487/RFC8148
+errata_url: https://www.rfc-editor.org/errata/rfc8148
+url: https://www.rfc-editor.org/rfc/rfc8148
+source: rfc-editor-index
+ingested_at: "2026-05-21"

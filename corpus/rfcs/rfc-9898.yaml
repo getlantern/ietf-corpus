@@ -1,0 +1,50 @@
+id: rfc-9898
+rfc_number: 9898
+title: Neighbor Discovery Considerations in IPv6 Deployments
+authors:
+    - name: X. Xiao
+    - name: E. Vasilenko
+    - name: E. Metz
+    - name: G. Mishra
+    - name: N. Buraglio
+date: 2025-11
+stream: IETF
+area: ops
+wg: v6ops
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 26
+abstract: |-
+    The Neighbor Discovery (ND) protocol is a critical component of the
+    IPv6 architecture. The protocol uses multicast in many messages. It
+    also assumes a security model where all nodes on a link are trusted.
+    Such a design might be inefficient in some scenarios (e.g., use of
+    multicast in wireless networks) or when nodes are not trustworthy
+    (e.g., public access networks). These security and operational issues
+    and the associated mitigation solutions are documented in more than
+    twenty RFCs. There is a need to track these issues and solutions in a
+    single document.
+
+    To that aim, this document summarizes the published ND issues and
+    then describes how all these issues originate from three causes.
+    Addressing the issues is made simpler by addressing the causes. This
+    document also analyzes the mitigation solutions and demonstrates that
+    isolating hosts into different subnets and links can help to address
+    the three causes. Guidance is provided for selecting a suitable
+    isolation method to prevent potential ND issues.
+keywords:
+    - ND
+    - NDP
+    - SLACC
+    - DHCPv6-PD
+    - host isolation
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-v6ops-nd-considerations-14
+doi: 10.17487/RFC9898
+url: https://www.rfc-editor.org/rfc/rfc9898
+source: rfc-editor-index
+ingested_at: "2026-05-21"

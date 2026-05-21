@@ -1,0 +1,30 @@
+id: rfc-3459
+rfc_number: 3459
+title: Critical Content Multi-purpose Internet Mail Extensions (MIME) Parameter
+authors:
+    - name: E. Burger
+date: 2003-01
+stream: IETF
+area: app
+wg: vpim
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 24
+abstract: This document describes the use of a mechanism for identifying body parts that a sender deems critical in a multi-part Internet mail message.  The mechanism described is a parameter to Content-Disposition, as described by RFC 3204.  By knowing what parts of a message the sender deems critical, a content gateway can intelligently handle multi-part messages when providing gateway services to systems of lesser capability.  Critical content can help a content gateway to decide what parts to forward.  It can indicate how hard a gateway should try to deliver a body part.  It can help the gateway to pick body parts that are safe to silently delete when a system of lesser capability receives a message.  In addition, critical content can help the gateway chose the notification strategy for the receiving system.  Likewise, if the sender expects the destination to do some processing on a body part, critical content allows the sender to mark body parts that the receiver must process. [STANDARDS-TRACK]
+keywords:
+    - MIME
+    - Multi-purpose Internet Mail Extensions
+    - body parts
+    - content-disposition
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-vpim-cc-08
+updates:
+    - rfc-3204
+updated_by:
+    - rfc-5621
+doi: 10.17487/RFC3459
+url: https://www.rfc-editor.org/rfc/rfc3459
+source: rfc-editor-index
+ingested_at: "2026-05-21"

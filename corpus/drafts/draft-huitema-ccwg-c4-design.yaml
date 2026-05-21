@@ -1,0 +1,25 @@
+id: draft-huitema-ccwg-c4-design
+name: draft-huitema-ccwg-c4-design
+rev: "03"
+title: Design of Christian's Congestion Control Code (C4)
+abstract: |-
+    Christian's Congestion Control Code is a new congestion control
+       algorithm designed to support Real-Time applications such as Media
+       over QUIC.  It is designed to drive towards low delays, with good
+       support for the "application limited" behavior frequently found when
+       using variable rate encoding, and with fast reaction to congestion to
+       avoid the "priority inversion" happening when congestion control
+       overestimates the available capacity.  It pays special attention to
+       the high jitter conditions encountered in Wi-Fi networks.  The design
+       emphasizes simplicity and avoids making too many assumption about the
+       "model" of the network.  The main control variables are the estimate
+       of the data rate and of the maximum path delay in the absence of
+       queues.
+pages: 30
+stream_state: active
+group: none
+last_updated: "2026-02-26"
+expires: "2026-08-30"
+url: https://datatracker.ietf.org/doc/draft-huitema-ccwg-c4-design/
+source: datatracker
+ingested_at: "2026-05-21"

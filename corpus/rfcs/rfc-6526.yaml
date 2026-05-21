@@ -1,0 +1,27 @@
+id: rfc-6526
+rfc_number: 6526
+title: IP Flow Information Export (IPFIX) Per Stream Control Transmission Protocol (SCTP) Stream
+authors:
+    - name: B. Claise
+    - name: P. Aitken
+    - name: A. Johnson
+    - name: G. Muenz
+date: 2012-03
+stream: IETF
+area: ops
+wg: ipfix
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 23
+abstract: |-
+    This document specifies an extension to the specifications in RFC 5101, IP Flow Information Export (IPFIX), when using the Partial Reliability extension of SCTP (PR-SCTP, Partial Reliability Stream Control Transmission Protocol).
+
+    When implemented at both the Exporting Process and Collecting Process, this method offers several advantages, such as the ability to calculate Data Record losses for PR-SCTP per Template, immediate export of Template Withdrawal Messages, immediate reuse of Template IDs within an SCTP stream, reduced likelihood of Data Record loss, and reduced demands on the Collecting Process. When implemented in only the Collecting Process or Exporting Process, then normal IPFIX behavior will be seen without all of the additional benefits. [STANDARDS-TRACK]
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-ipfix-export-per-sctp-stream-08
+doi: 10.17487/RFC6526
+url: https://www.rfc-editor.org/rfc/rfc6526
+source: rfc-editor-index
+ingested_at: "2026-05-21"

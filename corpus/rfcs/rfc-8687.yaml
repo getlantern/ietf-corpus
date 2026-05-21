@@ -1,0 +1,36 @@
+id: rfc-8687
+rfc_number: 8687
+title: OSPF Routing with Cross-Address Family Traffic Engineering Tunnels
+authors:
+    - name: A. Smirnov
+    - name: A. Retana
+    - name: M. Barnes
+date: 2019-11
+stream: IETF
+area: rtg
+wg: lsr
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 8
+abstract: |-
+    When using Traffic Engineering (TE) in a dual-stack IPv4/IPv6 network, the Multiprotocol Label Switching (MPLS) TE Label Switched Path (LSP) infrastructure may be duplicated, even if the destination IPv4 and IPv6 addresses belong to the same remote router. In order to achieve an integrated MPLS TE LSP infrastructure, OSPF routes must be computed over MPLS TE tunnels created using information propagated in another OSPF instance. This issue is solved by advertising cross-address family (X-AF) OSPF TE information.
+
+    This document describes an update to RFC 5786 that allows for the easy identification of a router's local X-AF IP addresses.
+keywords:
+    - OSPF
+    - IPv4
+    - IPv6
+    - TE
+    - MPLS
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-ospf-xaf-te-07
+updates:
+    - rfc-5786
+doi: 10.17487/RFC8687
+url: https://www.rfc-editor.org/rfc/rfc8687
+source: rfc-editor-index
+ingested_at: "2026-05-21"

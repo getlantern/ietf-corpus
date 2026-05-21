@@ -1,0 +1,26 @@
+id: draft-ietf-ipsecme-eesp
+name: draft-ietf-ipsecme-eesp
+rev: "03"
+title: Enhanced Encapsulating Security Payload (EESP)
+abstract: |-
+    This document describes the Enhanced Encapsulating Security Payload
+       (EESP) protocol, which builds on the existing IP Encapsulating
+       Security Payload (ESP) protocol.  It is designed to modernize and
+       overcome limitations in the ESP protocol.
+
+       EESP adds Session IDs (e.g., to support CPU pinning and QoS support
+       based on the inner traffic flow), changes some previously mandatory
+       fields to optional, and moves the ESP trailer into the EESP header.
+       Additionally, EESP adds header options adapted from IPv6 to allow for
+       future extension.  New header options are defined which add a crypt-
+       offset to allow for exposing inner flow information for middlebox
+       use.
+pages: 44
+stream: IETF
+stream_state: active
+group: ipsecme
+last_updated: "2026-03-11"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-ietf-ipsecme-eesp/
+source: datatracker
+ingested_at: "2026-05-21"

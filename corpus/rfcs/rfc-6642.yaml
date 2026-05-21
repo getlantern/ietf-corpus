@@ -1,0 +1,28 @@
+id: rfc-6642
+rfc_number: 6642
+title: RTP Control Protocol (RTCP) Extension for a Third-Party Loss Report
+authors:
+    - name: Q. Wu
+      title: Editor
+    - name: F. Xia
+    - name: R. Even
+date: 2012-06
+stream: IETF
+area: wit
+wg: avtcore
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 13
+abstract: In a large RTP session using the RTP Control Protocol (RTCP) feedback mechanism defined in RFC 4585, a feedback target may experience transient overload if some event causes a large number of receivers to send feedback at once.  This overload is usually avoided by ensuring that feedback reports are forwarded to all receivers, allowing them to avoid sending duplicate feedback reports.  However, there are cases where it is not recommended to forward feedback reports, and this may allow feedback implosion.  This memo discusses these cases and defines a new RTCP Third-Party Loss Report that can be used to inform receivers that the feedback target is aware of some loss event, allowing them to suppress feedback.  Associated Session Description Protocol (SDP) signaling is also defined. [STANDARDS-TRACK]
+keywords:
+    - Feedback Suppression
+    - NACK
+    - Retransmission
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-avtcore-feedback-supression-rtp-17
+doi: 10.17487/RFC6642
+url: https://www.rfc-editor.org/rfc/rfc6642
+source: rfc-editor-index
+ingested_at: "2026-05-21"

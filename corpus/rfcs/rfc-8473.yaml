@@ -1,0 +1,39 @@
+id: rfc-8473
+rfc_number: 8473
+title: Token Binding over HTTP
+authors:
+    - name: A. Popov
+    - name: M. Nystroem
+    - name: D. Balfanz
+      title: Editor
+    - name: N. Harper
+    - name: J. Hodges
+date: 2018-10
+stream: IETF
+area: sec
+wg: tokbind
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 25
+abstract: |-
+    This document describes a collection of mechanisms that allow HTTP servers to cryptographically bind security tokens (such as cookies and OAuth tokens) to TLS connections.
+
+    We describe both first-party and federated scenarios. In a first- party scenario, an HTTP server is able to cryptographically bind the security tokens that it issues to a client -- and that the client subsequently returns to the server -- to the TLS connection between the client and the server. Such bound security tokens are protected from misuse, since the server can generally detect if they are replayed inappropriately, e.g., over other TLS connections.
+
+    Federated Token Bindings, on the other hand, allow servers to cryptographically bind security tokens to a TLS connection that the client has with a different server than the one issuing the token.
+
+    This document is a companion document to "The Token Binding Protocol Version 1.0" (RFC 8471).
+keywords:
+    - Cookie
+    - TLS
+    - OAuth
+    - export
+    - replay
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-tokbind-https-18
+doi: 10.17487/RFC8473
+url: https://www.rfc-editor.org/rfc/rfc8473
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,27 @@
+id: rfc-5896
+rfc_number: 5896
+title: 'Generic Security Service Application Program Interface (GSS-API): Delegate if Approved by Policy'
+authors:
+    - name: L. Hornquist Astrand
+    - name: S. Hartman
+date: 2010-06
+stream: IETF
+wg: non working group
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 6
+abstract: Several Generic Security Service Application Program Interface (GSS-API) applications work in a multi-tiered architecture, where the server takes advantage of delegated user credentials to act on behalf of the user and contact additional servers.  In effect, the server acts as an agent on behalf of the user.  Examples include web applications that need to access e-mail or file servers, including CIFS (Common Internet File System) file servers.  However, delegating the user credentials to a party who is not sufficiently trusted is problematic from a security standpoint.  Kerberos provides a flag called OK-AS-DELEGATE that allows the administrator of a Kerberos realm to communicate that a particular service is trusted for delegation.  This specification adds support for this flag and similar facilities in other authentication mechanisms to GSS-API (RFC 2743). [STANDARDS-TRACK]
+formats:
+    - TXT
+    - HTML
+draft: draft-lha-gssapi-delegate-policy-05
+updates:
+    - rfc-2743
+    - rfc-2744
+    - rfc-4120
+    - rfc-4121
+doi: 10.17487/RFC5896
+errata_url: https://www.rfc-editor.org/errata/rfc5896
+url: https://www.rfc-editor.org/rfc/rfc5896
+source: rfc-editor-index
+ingested_at: "2026-05-21"

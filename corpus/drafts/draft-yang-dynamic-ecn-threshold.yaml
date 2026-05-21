@@ -1,0 +1,31 @@
+id: draft-yang-dynamic-ecn-threshold
+name: draft-yang-dynamic-ecn-threshold
+rev: "00"
+title: Coupling ECN Marking Thresholds with Dynamic Buffer Allocation
+abstract: |-
+    Explicit Congestion Notification (ECN) marking thresholds are
+       typically configured statically.  In modern network devices that
+       employ dynamic buffer allocation -- where the maximum buffer
+       available to a queue fluctuates dynamically based on the number of
+       active queues and the remaining shared buffer pool -- a static ECN
+       threshold can frequently become misaligned with the actual
+       instantaneous buffering capacity.
+
+       This misalignment can lead to pathological behaviors: either
+       premature marking (which underutilizes available buffers and
+       throttles throughput) or late marking (which provides no advance
+       warning before tail drop occurs).  This document describes an
+       operational framework and a deterministic reference algorithm for
+       dynamically coupling the ECN marking threshold with the dynamic
+       buffer allocation limit.  By maintaining an adaptive relationship
+       through configurable parameters, this mechanism ensures robust
+       congestion signaling across varying load conditions without requiring
+       complex external machine-learning models or per-flow tracking.
+pages: 12
+stream_state: active
+group: none
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-yang-dynamic-ecn-threshold/
+source: datatracker
+ingested_at: "2026-05-21"

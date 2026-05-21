@@ -1,0 +1,31 @@
+id: draft-marenamat-grow-route-server-nh-translation
+name: draft-marenamat-grow-route-server-nh-translation
+rev: "01"
+title: Route Server Next Hop Translation
+abstract: |-
+    With the advent of RFC8950, Internet Exchang Points (IXPs) are
+       enabled to rely solely on IPv6 addresses for adressing in their
+       peering LANs.  However, routers not supporting RFC8950 are a
+       technical roadblock.
+
+       It is easier to extend the capabilities of the IXP Route Server (RS)
+       instead of those of every unsupporting router.  Thus, this document
+       introduces the concept of Specific Local Address Tables (SLATs).
+       SLATs translate BGP next hops between all IXP members, regardless of
+       their RFC8950 support, paving the way for IPv6-only IXPs.
+
+       This document also introduces another, more transparent variant of
+       BGP next hop translation applicable in IXPs which do not employ ARP
+       and ND proxying.
+
+       This document updates RFC 6890 by registering a special-purpose
+       address, and RFC 7947 by specifying an allowed route modification at
+       the route server.
+pages: 13
+stream_state: active
+group: none
+last_updated: "2026-02-27"
+expires: "2026-08-31"
+url: https://datatracker.ietf.org/doc/draft-marenamat-grow-route-server-nh-translation/
+source: datatracker
+ingested_at: "2026-05-21"

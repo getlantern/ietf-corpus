@@ -1,0 +1,28 @@
+id: draft-hardt-httpbis-signature-key
+name: draft-hardt-httpbis-signature-key
+rev: "04"
+title: HTTP Signature Keys
+abstract: |-
+    This document defines two HTTP header fields and one Accept-Signature
+       parameter for use with HTTP Message Signatures as defined in RFC
+       9421.  The Signature-Key request header distributes public keys used
+       to verify signatures, with five initial key distribution schemes:
+       pseudonymous inline keys (hwk), self-issued key delegation via JWK
+       Thumbprint JWTs (jkt-jwt), identified signers with JWKS URI discovery
+       (jwks_uri), JWT-based delegation (jwt), and X.509 certificate chains
+       (x509).  The sigkey parameter extends Accept-Signature (RFC 9421
+       Section 5) to indicate the type of Signature-Key the server requires.
+       The Signature-Error response header provides structured error
+       information when signature verification fails.  Together, these
+       mechanisms enable flexible trust models ranging from privacy-
+       preserving pseudonymous verification to horizontally-scalable
+       delegated authentication and PKI-based identity chains.
+pages: 35
+stream: IETF
+stream_state: active
+group: httpbis
+last_updated: "2026-04-09"
+expires: "2026-10-11"
+url: https://datatracker.ietf.org/doc/draft-hardt-httpbis-signature-key/
+source: datatracker
+ingested_at: "2026-05-21"

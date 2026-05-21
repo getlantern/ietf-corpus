@@ -1,0 +1,34 @@
+id: rfc-9625
+rfc_number: 9625
+title: EVPN Optimized Inter-Subnet Multicast (OISM) Forwarding
+authors:
+    - name: W. Lin
+    - name: Z. Zhang
+    - name: J. Drake
+    - name: E. Rosen
+      title: Editor
+    - name: J. Rabadan
+    - name: A. Sajassi
+date: 2024-08
+stream: IETF
+area: rtg
+wg: bess
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 63
+abstract: Ethernet VPN (EVPN) provides a service that allows a single Local Area Network (LAN), comprising a single IP subnet, to be divided into multiple segments.  Each segment may be located at a different site, and the segments are interconnected by an IP or MPLS backbone.  Intra-subnet traffic (either unicast or multicast) always appears to the end users to be bridged, even when it is actually carried over the IP or MPLS backbone.  When a single tenant owns multiple such LANs, EVPN also allows IP unicast traffic to be routed between those LANs.  This document specifies new procedures that allow inter-subnet IP multicast traffic to be routed among the LANs of a given tenant while still making intra-subnet IP multicast traffic appear to be bridged.  These procedures can provide optimal routing of the inter-subnet multicast traffic and do not require any such traffic to egress a given router and then ingress that same router.  These procedures also accommodate IP multicast traffic that originates or is destined to be external to the EVPN domain.
+keywords:
+    - OISM
+    - PEG
+    - MEG
+    - SBD
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-bess-evpn-irb-mcast-11
+doi: 10.17487/RFC9625
+url: https://www.rfc-editor.org/rfc/rfc9625
+source: rfc-editor-index
+ingested_at: "2026-05-21"

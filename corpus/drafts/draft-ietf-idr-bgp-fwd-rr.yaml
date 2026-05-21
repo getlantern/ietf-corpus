@@ -1,0 +1,29 @@
+id: draft-ietf-idr-bgp-fwd-rr
+name: draft-ietf-idr-bgp-fwd-rr
+rev: "05"
+title: BGP Route Reflector with Next Hop Self
+abstract: |-
+    The procedures in BGP Route Reflection (RR) spec RFC4456 primarily
+       deal with scenarios where the RR is reflecting BGP routes with next
+       hop unchanged.  In some deployments like Inter-AS Option C
+       (Section 10, RFC4364), the ABRs may perform RR functionality with
+       nexthop set to self.  If adequate precautions are not taken, the
+       RFC4456 procedures can result in traffic forwarding loop in such
+       deployments.
+
+       This document illustrates one such looping scenario, and specifies
+       approaches to minimize possiblity of traffic forwarding loop in such
+       deployments.  An example with Inter-AS Option C (Section 10, RFC4364)
+       deployment is used, where RR with next hop self is used at redundant
+       ABRs when they re-advertise BGP transport family routes between
+       multiple IGP domains.
+pages: 9
+stream: IETF
+stream_state: active
+group: idr
+intended_status: Experimental
+last_updated: "2026-02-23"
+expires: "2026-08-27"
+url: https://datatracker.ietf.org/doc/draft-ietf-idr-bgp-fwd-rr/
+source: datatracker
+ingested_at: "2026-05-21"

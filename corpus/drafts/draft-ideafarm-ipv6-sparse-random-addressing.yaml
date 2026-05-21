@@ -1,0 +1,29 @@
+id: draft-ideafarm-ipv6-sparse-random-addressing
+name: draft-ideafarm-ipv6-sparse-random-addressing
+rev: "00"
+title: IPv6 Sparse Random Addressing
+abstract: |-
+    The IPv6 address space is huge.  This document discusses how "sparse
+       random addressing" can be used to defeat DDOS attacks, and also to
+       create paid-access websites.  The essential idea is to use the host
+       ID portion of an IPv6 address as a time-based password that only paid
+       subscribers know.  (They know it by running a program on the device
+       that they use to access the website.  That program uses the current
+       time and a secret shared with the web server to calculate the current
+       host ID.)  Each subscriber has a unique secret so, at any point in
+       time, uses a unique IPv6 address to access the website.  Sparseness
+       prevents attack packets from reaching the web server.  Uniqueness
+       creates accountability.  To protect routers from flood attacks, the
+       globally routable /48 prefix is also randomized, in a way that
+       exploits BGP route propagation delay to partially or completely quash
+       the flooding at the source, thereby protecting all upstream routers.
+
+       This early draft only contains a conceptual overview.
+pages: 6
+stream_state: active
+group: none
+last_updated: "2026-01-16"
+expires: "2026-07-20"
+url: https://datatracker.ietf.org/doc/draft-ideafarm-ipv6-sparse-random-addressing/
+source: datatracker
+ingested_at: "2026-05-21"

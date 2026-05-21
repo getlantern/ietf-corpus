@@ -1,0 +1,39 @@
+id: draft-jovancevic-bvap
+name: draft-jovancevic-bvap
+rev: "01"
+title: Browser Vendor Attestation Protocol (BVAP)
+abstract: |-
+    The HTTP User-Agent header field allows any client to claim any
+       browser identity without cryptographic proof. Any software may
+       assert "Mozilla/5.0 Chrome/124" regardless of its actual origin,
+       distribution source, or software provenance.
+
+       This document specifies BVAP (Browser Vendor Attestation Protocol),
+       a mechanism by which browser vendors cryptographically attest that
+       a browser instance originates from a legitimate, vendor-issued
+       browser build. Attestation occurs at installation time and is
+       periodically renewed. The resulting Vendor Attestation Seal
+       (BVAP Seal) is carried by the browser and is primarily transmitted
+       via the Sec-BVAP header field. The Seal MAY additionally appear
+       in the User-Agent string for backward compatibility with legacy
+       infrastructure.
+
+       BVAP provides software provenance and vendor authenticity at the
+       browser layer. The protocol allows servers to distinguish between:
+
+       o  Vendor-attested browser software,
+       o  Anonymous or self-built browser software (Unattested), and
+       o  Software falsely claiming vendor browser identity.
+
+       BVAP requires no per-request cryptography and no DNS lookups
+       during normal operation.
+
+       BVAP proves browser origin, not browser behavior.
+pages: 32
+stream_state: active
+group: none
+last_updated: "2026-05-18"
+expires: "2026-11-19"
+url: https://datatracker.ietf.org/doc/draft-jovancevic-bvap/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,25 @@
+id: draft-li-rtgwg-ecmp-hash-combination
+name: draft-li-rtgwg-ecmp-hash-combination
+rev: "00"
+title: Combined Hash Mechanism for ECMP/LAG Load Balancing
+abstract: |-
+    This document specifies a combined hash mechanism for load balancing
+       in Equal-Cost Multi-Path (ECMP) and Link Aggregation Group (LAG)
+       environments.  When processing tunneled traffic, traditional hash
+       methods that operate on either outer or inner packet fields may
+       result in uneven traffic distribution (polarization).  This
+       specification defines a method to extend effective hash entropy by
+       combining multiple independently computed hash values, enabling
+       network devices to consider multi-layer packet information for path
+       selection, thereby improving traffic distribution uniformity.  This
+       mechanism is compatible with existing hash computation architectures
+       and does not require packet format modifications or new protocol
+       field definitions.
+pages: 14
+stream_state: active
+group: none
+last_updated: "2026-03-01"
+expires: "2026-09-02"
+url: https://datatracker.ietf.org/doc/draft-li-rtgwg-ecmp-hash-combination/
+source: datatracker
+ingested_at: "2026-05-21"

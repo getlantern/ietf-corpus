@@ -1,0 +1,37 @@
+id: draft-ietf-bier-bgp-ls-bier-ext
+name: draft-ietf-bier-bgp-ls-bier-ext
+rev: "21"
+title: BGP Link-State extensions for BIER
+abstract: |-
+    Bit Index Explicit Replication (BIER) is an architecture that
+       provides optimal multicast forwarding through a "BIER domain" without
+       requiring intermediate routers to maintain any multicast related per-
+       flow state.  BIER also does not require any explicit tree-building
+       protocol for its operation.  A multicast data packet enters a BIER
+       domain at a "Bit-Forwarding Ingress Router" (BFIR), and leaves the
+       BIER domain at one or more "Bit-Forwarding Egress Routers" (BFERs).
+       The BFIR router adds a BIER header to the packet.  The BIER header
+       contains a bitstring in which each bit represents exactly one BFER to
+       forward the packet to.  The set of BFERs to which the multicast
+       packet needs to be forwarded is expressed by setting the bits that
+       correspond to those routers in the BIER header.
+
+       BGP Link-State (BGP-LS) enables the collection of various topology
+       informations from the network, and the topology informations are used
+       by the controller to calculate the fowarding tables and then
+       propagate them onto the BFRs(instead of having each node to calculate
+       on its own) and that can be for both inter-as and intra-as
+       situations.
+
+       This document specifies extensions to the BGP Link-state address-
+       family in order to advertise the BIER informations.
+pages: 11
+words: 1882
+stream: IETF
+stream_state: active
+group: bier
+last_updated: "2026-01-07"
+expires: "2026-07-11"
+url: https://datatracker.ietf.org/doc/draft-ietf-bier-bgp-ls-bier-ext/
+source: datatracker
+ingested_at: "2026-05-21"

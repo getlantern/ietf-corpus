@@ -1,0 +1,34 @@
+id: draft-lee-tcpm-stateful-tcp
+name: draft-lee-tcpm-stateful-tcp
+rev: "00"
+title: 'Stateful-TCP: Bypassing TCP Slow-Start Using Cached Per-Destination Path Bandwidth'
+abstract: |-
+    This document specifies Stateful-TCP, an experimental sender-side
+       mechanism that accelerates the startup of TCP connections by reusing
+       path-bandwidth information estimated from earlier connections to the
+       same destination.  When a usable estimate is available, the sender
+       bypasses Slow-Start and instead enters a paced startup phase whose
+       initial congestion window and pacing rate are derived from the cached
+       estimate.  When no usable estimate is available, the sender falls
+       back to standard Slow-Start.
+
+       Stateful-TCP is sender-only and does not require any change to the
+       TCP receiver or to the wire format.  It is orthogonal to the
+       congestion control algorithm in use after the first round-trip time
+       and may therefore be combined with existing TCP variants such as
+       CUBIC.  This document also specifies a Gap-Compensated Bandwidth
+       Estimation (GCBE) procedure used to produce the cached per-
+       destination estimate.
+
+       Stateful-TCP extends the framework of TCP Control Block
+       Interdependence (RFC 9040) by sharing additional per-destination
+       state across connections.  The mechanism is published as Experimental
+       to enable independent implementation, evaluation, and review.
+pages: 19
+stream_state: active
+group: none
+last_updated: "2026-05-19"
+expires: "2026-11-20"
+url: https://datatracker.ietf.org/doc/draft-lee-tcpm-stateful-tcp/
+source: datatracker
+ingested_at: "2026-05-21"

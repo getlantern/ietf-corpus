@@ -1,0 +1,29 @@
+id: draft-sfc-container-format
+name: draft-sfc-container-format
+rev: "01"
+title: 'SFC: Self-Describing Resilient Container File Format'
+abstract: |-
+    This document specifies the Self-Describing Resilient Container
+       (SFC) file format, a general-purpose binary container format
+       designed for reliable transmission of arbitrary file data over
+       unreliable, bandwidth-constrained, or asynchronous channels
+       including physical media hand-carry, multi-session transfers,
+       and heterogeneous delivery paths.
+
+       SFC encapsulates any file or directory tree into independently
+       addressable, self-identifying chunks.  Each chunk carries
+       sufficient metadata to identify itself and verify its own
+       integrity in isolation.  Full reconstruction additionally requires
+       a Global Header; this distinction is made explicit throughout.
+
+       This document defines a Core specification and five optional
+       Profiles: Image (SFC/P1), Split Transport (SFC/P2), HTTP Hints
+       (SFC/P3), Preprocessing (SFC/P4), and Directory (SFC/P5).
+pages: 64
+stream_state: active
+group: none
+last_updated: "2026-05-06"
+expires: "2026-11-07"
+url: https://datatracker.ietf.org/doc/draft-sfc-container-format/
+source: datatracker
+ingested_at: "2026-05-21"

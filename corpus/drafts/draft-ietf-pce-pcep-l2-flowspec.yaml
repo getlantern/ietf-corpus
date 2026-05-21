@@ -1,0 +1,38 @@
+id: draft-ietf-pce-pcep-l2-flowspec
+name: draft-ietf-pce-pcep-l2-flowspec
+rev: "10"
+title: PCEP Extension for Layer 2 (L2) Flow Specification
+abstract: |-
+    The Path Computation Element (PCE) is a functional component capable
+       of selecting paths through a traffic engineering (TE) network.  These
+       paths may be supplied in response to requests for computation or may
+       be unsolicited requests issued by the PCE to network elements.  Both
+       approaches use the PCE Communication Protocol (PCEP) to convey the
+       details of the computed path.
+
+       Traffic flows may be categorized and described using "Flow
+       Specifications".  RFC 8955 defines the Flow Specification and
+       describes how Flow Specification components are used to describe
+       traffic flows.  RFC 8955 also defines how Flow Specifications may be
+       distributed in BGP to allow specific traffic flows to be associated
+       with routes.
+
+       RFC 9168 specifies a set of extensions to PCEP to support the
+       dissemination of Flow Specifications.  This allows a PCE to indicate
+       what traffic should be placed on each path that it is aware of.  This
+       document updates RFC 9168 by updating the assignment policies for a
+       range of Flow Specification TLV Type Indicators.
+
+       The extensions defined in this document extend the support for
+       Ethernet Layer 2 (L2) and Layer 2 Virtual Private Network (L2VPN)
+       traffic filtering rules either by themselves or in conjunction with
+       Layer 3 (L3) flowspecs.
+pages: 14
+stream: IETF
+stream_state: active
+group: pce
+last_updated: "2026-04-03"
+expires: "2026-10-05"
+url: https://datatracker.ietf.org/doc/draft-ietf-pce-pcep-l2-flowspec/
+source: datatracker
+ingested_at: "2026-05-21"

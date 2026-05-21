@@ -1,0 +1,32 @@
+id: rfc-6178
+rfc_number: 6178
+title: Label Edge Router Forwarding of IPv4 Option Packets
+authors:
+    - name: D. Smith
+    - name: J. Mullooly
+    - name: W. Jaeger
+    - name: T. Scholl
+date: 2011-03
+stream: IETF
+area: rtg
+wg: mpls
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 9
+abstract: This document specifies how Label Edge Routers (LERs) should behave when determining whether to MPLS encapsulate an IPv4 packet with header options.  Lack of a formal standard has resulted in different LER forwarding behaviors for IPv4 packets with header options despite being associated with a prefix-based Forwarding Equivalence Class (FEC).  IPv4 option packets that belong to a prefix-based FEC, yet are forwarded into an IPv4/MPLS network without being MPLS- encapsulated, present a security risk against the MPLS infrastructure.  Further, LERs that are unable to MPLS encapsulate IPv4 packets with header options cannot operate in certain MPLS environments.  While this newly defined LER behavior is mandatory to implement, it is optional to invoke. [STANDARDS-TRACK]
+keywords:
+    - FEC
+    - MPLS
+    - LER
+    - Security
+    - DoS
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-mpls-ip-options-07
+updates:
+    - rfc-3031
+doi: 10.17487/RFC6178
+url: https://www.rfc-editor.org/rfc/rfc6178
+source: rfc-editor-index
+ingested_at: "2026-05-21"

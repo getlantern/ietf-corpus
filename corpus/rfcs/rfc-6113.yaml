@@ -1,0 +1,29 @@
+id: rfc-6113
+rfc_number: 6113
+title: A Generalized Framework for Kerberos Pre-Authentication
+authors:
+    - name: S. Hartman
+    - name: L. Zhu
+date: 2011-04
+stream: IETF
+area: sec
+wg: krb-wg
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 48
+abstract: |-
+    Kerberos is a protocol for verifying the identity of principals (e.g., a workstation user or a network server) on an open network. The Kerberos protocol provides a facility called pre-authentication. Pre-authentication mechanisms can use this facility to extend the Kerberos protocol and prove the identity of a principal.
+
+    This document describes a more formal model for this facility. The model describes what state in the Kerberos request a pre-authentication mechanism is likely to change. It also describes how multiple pre-authentication mechanisms used in the same request will interact.
+
+    This document also provides common tools needed by multiple pre-authentication mechanisms. One of these tools is a secure channel between the client and the key distribution center with a reply key strengthening mechanism; this secure channel can be used to protect the authentication exchange and thus eliminate offline dictionary attacks. With these tools, it is relatively straightforward to chain multiple authentication mechanisms, utilize a different key management system, or support a new key agreement algorithm. [STANDARDS-TRACK]
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-krb-wg-preauth-framework-17
+updates:
+    - rfc-4120
+doi: 10.17487/RFC6113
+url: https://www.rfc-editor.org/rfc/rfc6113
+source: rfc-editor-index
+ingested_at: "2026-05-21"

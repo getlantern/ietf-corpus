@@ -1,0 +1,25 @@
+id: draft-antony-ipsecme-ikev2-fragment-acknowledgment
+name: draft-antony-ipsecme-ikev2-fragment-acknowledgment
+rev: "03"
+title: IKEv2 Fragment Acknowledgment Extension
+abstract: |-
+    This document specifies an extension to the Internet Key Exchange
+       Protocol Version 2 (IKEv2) that enables acknowledgment of IKEv2
+       message fragments over UDP.  The mechanism allows an IKE peer to
+       confirm reception of individual fragments during the IKE_AUTH
+       exchange and any subsequent exchanges where IKEv2 Fragmentation is
+       used.  Support for this feature is negotiated using a new Notify
+       Message Status Type during IKE_SA_INIT, and fragment acknowledgments
+       are exchanged using a separate Notification payload.  This extension
+       improves reliability when large IKE messages are exchanged, such as
+       those containing post-quantum cryptography (PQC) payloads, and
+       reduces retransmission overhead, thereby improving IKEv2 round-trip
+       times in lossy network conditions.
+pages: 12
+stream_state: active
+group: none
+last_updated: "2026-01-21"
+expires: "2026-07-25"
+url: https://datatracker.ietf.org/doc/draft-antony-ipsecme-ikev2-fragment-acknowledgment/
+source: datatracker
+ingested_at: "2026-05-21"

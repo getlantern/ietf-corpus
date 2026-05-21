@@ -1,0 +1,30 @@
+id: draft-moros-oauth-browser-session-handoff
+name: draft-moros-oauth-browser-session-handoff
+rev: "00"
+title: Browser Session Establishment Using OAuth 2.0 Token Exchange and Short-Lived Authorization Codes
+abstract: |-
+    This document specifies a usage profile that composes OAuth 2.0 Token
+       Exchange [RFC8693] with a short-lived, single-use authorization code
+       to establish an authenticated browser session at a Relying Party (RP)
+       on behalf of a user authenticated at an Identity Provider (IdP)
+       operating an independent OAuth 2.0 Security Token Service (STS).  The
+       server-to-server leg uses RFC 8693 to convey user identity and
+       authorization context to the RP's STS, which issues an RP-scoped
+       access token.  A short-lived opaque code is then used to mediate
+       delivery of session state into the user's browser without ever
+       exposing the access token on the front channel.
+
+       The profile is designed to avoid the class of front-channel token
+       leakage (browser history, HTTP Referer header, intermediary access
+       logs) that motivated the deprecation of the OAuth 2.0 implicit grant
+       in [RFC9700].  The profile also defines a minimum claims contract on
+       the RP-issued access token to enable stateless authorization
+       enforcement at the RP without synchronous callbacks to the IdP.
+pages: 16
+stream_state: active
+group: none
+last_updated: "2026-04-17"
+expires: "2026-10-19"
+url: https://datatracker.ietf.org/doc/draft-moros-oauth-browser-session-handoff/
+source: datatracker
+ingested_at: "2026-05-21"

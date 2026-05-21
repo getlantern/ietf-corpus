@@ -1,0 +1,35 @@
+id: draft-ietf-dnsop-cds-consistency
+name: draft-ietf-dnsop-cds-consistency
+rev: "11"
+title: Clarifications on CDS/CDNSKEY and CSYNC Consistency
+abstract: |-
+    Maintenance of DNS delegations requires occasional changes of the DS
+       and NS record sets on the parent side of the delegation.  For the
+       case of DS records, "Automating DNSSEC Delegation Trust Maintenance"
+       (RFC 7344) provides automation by allowing the child to publish CDS
+       and/or CDNSKEY records holding the prospective DS parameters which
+       the parent can ingest.  Similarly, "Child-to-Parent Synchronization
+       in DNS" (RFC 7477) specifies CSYNC records to indicate a desired
+       update of the delegation's NS (and glue) records.  Parent-side
+       entities (e.g., Registries and Registrars) can query these records
+       from the child and, after validation, use them to update the parent-
+       side Resource Record Sets (RRsets) of the delegation.
+
+       This document specifies under which conditions the target states
+       expressed via CDS/CDNSKEY and CSYNC records are considered
+       "consistent".  Parent-side entities accepting such records from the
+       child have to ensure that update requests retrieved from different
+       authoritative nameservers satisfy these consistency requirements
+       before taking any action based on them.
+
+       This document updates RFC 7344 and RFC 7477.
+pages: 16
+stream: IETF
+stream_state: active
+group: dnsop
+intended_status: Proposed Standard
+last_updated: "2026-05-20"
+expires: "2026-06-14"
+url: https://datatracker.ietf.org/doc/draft-ietf-dnsop-cds-consistency/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,43 @@
+id: rfc-9048
+rfc_number: 9048
+title: Improved Extensible Authentication Protocol Method for 3GPP Mobile Network Authentication and Key Agreement (EAP-AKA')
+authors:
+    - name: J. Arkko
+    - name: V. Lehtovirta
+    - name: V. Torvinen
+    - name: P. Eronen
+date: 2021-10
+stream: IETF
+area: sec
+wg: emu
+current_status: PROPOSED STANDARD
+publication_status: INFORMATIONAL
+page_count: 40
+abstract: |-
+    The 3GPP mobile network Authentication and Key Agreement (AKA) is an authentication mechanism for devices wishing to access mobile networks. RFC 4187 (EAP-AKA) made the use of this mechanism possible within the Extensible Authentication Protocol (EAP) framework. RFC 5448 (EAP-AKA') was an improved version of EAP-AKA.
+
+    This document is the most recent specification of EAP-AKA', including, for instance, details about and references related to operating EAP-AKA' in 5G networks.
+
+    EAP-AKA' differs from EAP-AKA by providing a key derivation function that binds the keys derived within the method to the name of the access network. The key derivation function has been defined in the 3rd Generation Partnership Project (3GPP). EAP-AKA' allows its use in EAP in an interoperable manner. EAP-AKA' also updates the algorithm used in hash functions, as it employs SHA-256 / HMAC-SHA-256 instead of SHA-1 / HMAC-SHA-1, which is used in EAP-AKA.
+
+    This version of the EAP-AKA' specification defines the protocol behavior for both 4G and 5G deployments, whereas the previous version defined protocol behavior for 4G deployments only. While EAP-AKA' as defined in RFC 5448 is not obsolete, this document defines the most recent and fully backwards-compatible specification of EAP-AKA'. This document updates both RFCs 4187 and 5448.
+keywords:
+    - EAP
+    - AKA
+    - AKA'
+    - 3GPP
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-emu-rfc5448bis-10
+updates:
+    - rfc-4187
+    - rfc-5448
+updated_by:
+    - rfc-9678
+doi: 10.17487/RFC9048
+url: https://www.rfc-editor.org/rfc/rfc9048
+source: rfc-editor-index
+ingested_at: "2026-05-21"

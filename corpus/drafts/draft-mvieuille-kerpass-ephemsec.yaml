@@ -1,0 +1,29 @@
+id: draft-mvieuille-kerpass-ephemsec
+name: draft-mvieuille-kerpass-ephemsec
+rev: "03"
+title: KerPass EPHEMSEC One-Time Password Algorithm
+abstract: |-
+    This document specifies EPHEMSEC, an algorithm for generating one-
+       time passwords (OTPs) and one-time keys (OTKs).  Unlike traditional
+       OTP algorithms that rely solely on static shared secrets, EPHEMSEC
+       uses public key cryptography, which simplifies secure deployment on
+       authentication servers.  EPHEMSEC also supports binding the generated
+       OTP/OTK to contextual data.  When this context is obtained and
+       injected by a trusted agent, the resulting codes can be made
+       resistant to phishing and man-in-the-middle attacks.  Finally,
+       EPHEMSEC includes a built-in time synchronization mechanism that
+       embeds a synchronization hint into the generated output.  This allows
+       both parties to deterministically derive the same OTP/OTK value
+       without requiring trial-and-error validation, enabling compatibility
+       with protocols such as Password Authenticated Key Exchange (PAKE) and
+       TLS with Pre-Shared Key (TLS-PSK) that require exact secret
+       agreement.
+pages: 31
+stream_state: active
+group: none
+intended_status: Informational
+last_updated: "2026-05-06"
+expires: "2026-11-07"
+url: https://datatracker.ietf.org/doc/draft-mvieuille-kerpass-ephemsec/
+source: datatracker
+ingested_at: "2026-05-21"

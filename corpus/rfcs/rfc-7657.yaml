@@ -1,0 +1,28 @@
+id: rfc-7657
+rfc_number: 7657
+title: Differentiated Services (Diffserv) and Real-Time Communication
+authors:
+    - name: D. Black
+      title: Editor
+    - name: P. Jones
+date: 2015-11
+stream: IETF
+area: rai
+wg: dart
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 26
+abstract: This memo describes the interaction between Differentiated Services (Diffserv) network quality-of-service (QoS) functionality and real- time network communication, including communication based on the Real-time Transport Protocol (RTP).  Diffserv is based on network nodes applying different forwarding treatments to packets whose IP headers are marked with different Diffserv Codepoints (DSCPs).  WebRTC applications, as well as some conferencing applications, have begun using the Session Description Protocol (SDP) bundle negotiation mechanism to send multiple traffic streams with different QoS requirements using the same network 5-tuple.  The results of using multiple DSCPs to obtain different QoS treatments within a single network 5-tuple have transport protocol interactions, particularly with congestion control functionality (e.g., reordering).  In addition, DSCP markings may be changed or removed between the traffic source and destination.  This memo covers the implications of these Diffserv aspects for real-time network communication, including WebRTC.
+keywords:
+    - Diffserv
+    - DSCP
+    - RAI
+    - RTP
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-dart-dscp-rtp-10
+doi: 10.17487/RFC7657
+url: https://www.rfc-editor.org/rfc/rfc7657
+source: rfc-editor-index
+ingested_at: "2026-05-21"

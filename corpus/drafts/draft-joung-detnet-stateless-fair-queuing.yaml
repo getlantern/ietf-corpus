@@ -1,0 +1,32 @@
+id: draft-joung-detnet-stateless-fair-queuing
+name: draft-joung-detnet-stateless-fair-queuing
+rev: "09"
+title: Latency Guarantee with Stateless Fair Queuing
+abstract: |-
+    This document specifies the implementation details for the framework
+       specified in ITU-T Y.3129 [Y.3129] and ITU-T Y.3148 [Y.3148].  The
+       framework guarantees end-to-end (E2E) latency bounds to flows.  The
+       schedulers in core nodes do not need to maintain flow states.
+       Instead, the entrance node of a flow marks an ideal service
+       completion time according to a fluid model, called Finish Time (FT),
+       of a packet in the packet header.  The subsequent core nodes update
+       the FT by adding a delay factor, which is a function of the flow and
+       the nodes.  The packets in the queue of the scheduler are served in
+       the ascending order of FT.  This mechanism is called the stateless
+       fair queuing.  The result is that flows are isolated from each other
+       almost perfectly.  The latency bound of a flow depends only on the
+       flow's intrinsic parameters such as the maximum burst size and the
+       service rate, except the link capacities and the maximum packet
+       length among other flows sharing each output link with the flow.
+       This document specifies the metadata, formats of metadata, the
+       admission control procedure, and an approximation of stateless fair
+       queuing implemented via a strict priority (SP) scheduler.
+pages: 20
+stream: IETF
+stream_state: active
+group: detnet
+last_updated: "2026-03-30"
+expires: "2026-10-01"
+url: https://datatracker.ietf.org/doc/draft-joung-detnet-stateless-fair-queuing/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,41 @@
+id: rfc-4884
+rfc_number: 4884
+title: Extended ICMP to Support Multi-Part Messages
+authors:
+    - name: R. Bonica
+    - name: D. Gan
+    - name: D. Tappan
+    - name: C. Pignataro
+date: 2007-04
+stream: IETF
+wg: non working group
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 19
+abstract: |-
+    This document redefines selected ICMP messages to support multi-part operation. A multi-part ICMP message carries all of the information that ICMP messages carried previously, as well as additional information that applications may require.
+
+    Multi-part messages are supported by an ICMP extension structure. The extension structure is situated at the end of the ICMP message. It includes an extension header followed by one or more extension objects. Each extension object contains an object header and object payload. All object headers share a common format.
+
+    This document further redefines the above mentioned ICMP messages by specifying a length attribute. All of the currently defined ICMP messages to which an extension structure can be appended include an "original datagram" field. The "original datagram" field contains the initial octets of the datagram that elicited the ICMP error message. Although the original datagram field is of variable length, the ICMP message does not include a field that specifies its length. Therefore, in order to facilitate message parsing, this document allocates eight previously reserved bits to reflect the length of the "original datagram" field.
+
+    The proposed modifications change the requirements for ICMP compliance. The impact of these changes on compliant implementations is discussed, and new requirements for future implementations are presented.
+
+    This memo updates RFC 792 and RFC 4443. [STANDARDS-TRACK]
+keywords:
+    - internet control message protocol
+    - length attribute
+formats:
+    - TXT
+    - HTML
+draft: draft-bonica-internet-icmp-16
+updates:
+    - rfc-4443
+    - rfc-792
+updated_by:
+    - rfc-8335
+doi: 10.17487/RFC4884
+errata_url: https://www.rfc-editor.org/errata/rfc4884
+url: https://www.rfc-editor.org/rfc/rfc4884
+source: rfc-editor-index
+ingested_at: "2026-05-21"

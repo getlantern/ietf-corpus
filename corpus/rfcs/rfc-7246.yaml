@@ -1,0 +1,29 @@
+id: rfc-7246
+rfc_number: 7246
+title: Multipoint Label Distribution Protocol In-Band Signaling in a Virtual Routing and Forwarding (VRF) Table Context
+authors:
+    - name: IJ. Wijnands
+      title: Editor
+    - name: P. Hitchen
+    - name: N. Leymann
+    - name: W. Henderickx
+    - name: A. Gulko
+    - name: J. Tantsura
+date: 2014-06
+stream: IETF
+area: rtg
+wg: l3vpn
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 13
+abstract: An IP Multicast Distribution Tree (MDT) may traverse both label switching (i.e., Multiprotocol Label Switching, or MPLS) and non-label switching regions of a network.  Typically, the MDT begins and ends in non-MPLS regions, but travels through an MPLS region.  In such cases, it can be useful to begin building the MDT as a pure IP MDT, then convert it to an MPLS Multipoint Label Switched Path (MP-LSP) when it enters an MPLS-enabled region, and then convert it back to a pure IP MDT when it enters a non-MPLS-enabled region.  Other documents specify the procedures for building such a hybrid MDT, using Protocol Independent Multicast (PIM) in the non-MPLS region of the network, and using Multipoint Label Distribution Protocol (mLDP) in the MPLS region.  This document extends those procedures to handle the case where the link connecting the two regions is a Virtual Routing and Forwarding (VRF) table link, as defined in the "BGP IP/MPLS VPN" specification.  However, this document is primarily aimed at particular use cases where VRFs are used to support multicast applications other than multicast VPN.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-l3vpn-mldp-vrf-in-band-signaling-03
+updated_by:
+    - rfc-7438
+doi: 10.17487/RFC7246
+url: https://www.rfc-editor.org/rfc/rfc7246
+source: rfc-editor-index
+ingested_at: "2026-05-21"

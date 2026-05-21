@@ -1,0 +1,23 @@
+id: draft-wang-idr-bgp-upa
+name: draft-wang-idr-bgp-upa
+rev: "00"
+title: BGP-based Unreachable Prefix Advertisement for Inter-Domain Fast Reroute
+abstract: |-
+    This document specifies a mechanism for advertising unreachable
+       prefixes across Autonomous Systems using BGP.  The mechanism enables
+       fast convergence in VPN services when backbone source nodes become
+       unreachable, by allowing Unreachable Prefix Advertisement (UPA)
+       routes propagated through BGP across AS boundaries.  This solution
+       extends the IGP-based UPA mechanism defined in RFC9929 to inter-
+       domain scenarios, ensuring remote PEs can promptly detect and react
+       to failures in source domains.  The route is not used for packet
+       forwarding but solely for BGP next-hop reachability resolution,
+       enabling fast failover of BGP VPN routes.
+pages: 15
+stream_state: active
+group: none
+last_updated: "2026-03-18"
+expires: "2026-09-19"
+url: https://datatracker.ietf.org/doc/draft-wang-idr-bgp-upa/
+source: datatracker
+ingested_at: "2026-05-21"

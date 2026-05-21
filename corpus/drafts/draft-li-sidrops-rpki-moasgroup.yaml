@@ -1,0 +1,25 @@
+id: draft-li-sidrops-rpki-moasgroup
+name: draft-li-sidrops-rpki-moasgroup
+rev: "02"
+title: A Profile for Signed Group of Multiple-Origin Autonomous Systems for Use in the Resource Public Key Infrastructure (RPKI)
+abstract: |-
+    This document defines a "Signed MOAS Group", a Cryptographic Message
+       Syntax (CMS) protected content type for use with the Resource Public
+       Key Infrastructure (RPKI) to authenticate the collective announcement
+       of IP prefixes by Multiple Origin Autonomous System (MOAS).  The
+       Signed MOAS Group mainly includes two parts: an IP prefix and a list
+       of Autonomous Systems (ASes) authorized to announce the prefix.  At
+       least one of these ASes SHOULD be authorized to announce the prefix
+       by the prefix owner through a Route Origin Authorization (ROA).  The
+       validation of a Signed MOAS Group confirms that the authorized ASes
+       and other listed ASes have collectively agreed to announce the
+       prefix, ensuring that the announcement is legitimate, accurate, and
+       mutually authorized.
+pages: 11
+stream_state: active
+group: none
+last_updated: "2025-12-09"
+expires: "2026-06-12"
+url: https://datatracker.ietf.org/doc/draft-li-sidrops-rpki-moasgroup/
+source: datatracker
+ingested_at: "2026-05-21"

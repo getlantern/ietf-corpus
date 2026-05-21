@@ -1,0 +1,37 @@
+id: draft-serra-mcp-discovery-uri
+name: draft-serra-mcp-discovery-uri
+rev: "04"
+title: The "mcp" URI Scheme and MCP Server Discovery Mechanism
+abstract: |-
+    The Model Context Protocol (MCP) defines a standard interface for AI
+       agents to connect to external tools and services. However, no
+       standard mechanism exists for an AI agent to autonomously discover
+       which web domains expose an MCP server.
+
+       This document defines:
+
+       (1) the "mcp" URI scheme, a machine-to-machine identifier for
+           publicly reachable MCP servers;
+
+       (2) a two-mode discovery mechanism: a well-known URI
+           (/.well-known/mcp-server) for universal compatibility,
+           and a DNS TXT record format for DNS-native fast discovery;
+
+       (3) an optional manifest integrity mechanism using JSON Web
+           Signatures (JWS, [RFC7515]) with keys published via DNS;
+
+       (4) a security capability negotiation mechanism through which the
+           manifest declares trust class, authentication requirements,
+           compliance frameworks, and logging policy before connection.
+
+       This specification does not define the MCP protocol itself, nor
+       authentication between agent and server. Those are covered by the
+       MCP specification and OAuth 2.1 respectively.
+pages: 23
+stream_state: active
+group: none
+last_updated: "2026-03-26"
+expires: "2026-09-27"
+url: https://datatracker.ietf.org/doc/draft-serra-mcp-discovery-uri/
+source: datatracker
+ingested_at: "2026-05-21"

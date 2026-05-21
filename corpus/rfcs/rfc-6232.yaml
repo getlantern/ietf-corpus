@@ -1,0 +1,42 @@
+id: rfc-6232
+rfc_number: 6232
+title: Purge Originator Identification TLV for IS-IS
+authors:
+    - name: F. Wei
+    - name: Y. Qin
+    - name: Z. Li
+    - name: T. Li
+    - name: J. Dong
+date: 2011-05
+stream: IETF
+area: rtg
+wg: isis
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 6
+abstract: |-
+    At present, an IS-IS purge does not contain any information identifying the Intermediate System (IS) that generates the purge. This makes it difficult to locate the source IS.
+
+    To address this issue, this document defines a TLV to be added to purges to record the system ID of the IS generating it. Since normal Link State Protocol Data Unit (LSP) flooding does not change LSP contents, this TLV should propagate with the purge.
+
+    This document updates RFC 5301, RFC 5304, and RFC 5310. [STANDARDS-TRACK]
+keywords:
+    - Purge Originator Identification
+    - IIH:n
+    - LSP:y
+    - SNP:n
+    - Purge:y
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-isis-purge-tlv-05
+updates:
+    - rfc-5301
+    - rfc-5304
+    - rfc-5310
+updated_by:
+    - rfc-8918
+doi: 10.17487/RFC6232
+url: https://www.rfc-editor.org/rfc/rfc6232
+source: rfc-editor-index
+ingested_at: "2026-05-21"

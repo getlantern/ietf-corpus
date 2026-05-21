@@ -1,0 +1,51 @@
+id: rfc-9788
+rfc_number: 9788
+title: Header Protection for Cryptographically Protected Email
+authors:
+    - name: D. K. Gillmor
+    - name: B. Hoeneisen
+    - name: A. Melnikov
+date: 2025-08
+stream: IETF
+area: sec
+wg: lamps
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 218
+abstract: |-
+    S/MIME version 3.1 introduced a mechanism to provide end-to-end cryptographic protection of email message headers. However, few implementations generate messages using this mechanism, and several legacy implementations have revealed rendering or security issues when handling such a message.
+
+    This document updates the S/MIME specification (RFC 8551) to offer a different mechanism that provides the same cryptographic protections but with fewer downsides when handled by legacy clients. Furthermore, it offers more explicit usability, privacy, and security guidance for clients when generating or handling email messages with cryptographic protection of message headers.
+
+    The Header Protection scheme defined here is also applicable to messages with PGP/MIME (Pretty Good Privacy with MIME) cryptographic protections.
+keywords:
+    - Header Protection
+    - Header Confidentiality Policy
+    - HCP
+    - cryptographic email
+    - email encryption
+    - encryption
+    - encrypt
+    - signature
+    - sign
+    - S/MIME
+    - PGP/MIME
+    - Legacy Display
+    - Legacy Display Element
+    - MIME
+    - Privacy
+    - HP-Outer
+    - hp-legacy-display
+    - hp
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-lamps-header-protection-25
+updates:
+    - rfc-8551
+doi: 10.17487/RFC9788
+url: https://www.rfc-editor.org/rfc/rfc9788
+source: rfc-editor-index
+ingested_at: "2026-05-21"

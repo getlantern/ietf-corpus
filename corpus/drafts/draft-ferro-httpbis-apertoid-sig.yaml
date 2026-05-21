@@ -1,0 +1,22 @@
+id: draft-ferro-httpbis-apertoid-sig
+name: draft-ferro-httpbis-apertoid-sig
+rev: "00"
+title: 'ApertoID-Signature: HTTP Request Signing for AI Agent Identity'
+abstract: |-
+    This document defines the ApertoID-Signature HTTP header field, which
+       enables AI agents to cryptographically prove their identity on each
+       HTTP request.  The agent signs the request method, target URL, body
+       hash, and identity metadata using an Ed25519 private key whose
+       corresponding public key is published in DNS via the ApertoID
+       protocol [APERTOID-DNS].  The mechanism provides request-level
+       identity verification, action binding (the signature is tied to the
+       specific method and URL), and replay protection via timestamps and
+       nonces.
+pages: 15
+stream_state: active
+group: none
+last_updated: "2026-03-24"
+expires: "2026-09-25"
+url: https://datatracker.ietf.org/doc/draft-ferro-httpbis-apertoid-sig/
+source: datatracker
+ingested_at: "2026-05-21"

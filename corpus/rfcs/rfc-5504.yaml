@@ -1,0 +1,31 @@
+id: rfc-5504
+rfc_number: 5504
+title: Downgrading Mechanism for Email Address Internationalization
+authors:
+    - name: K. Fujiwara
+      title: Editor
+    - name: Y. Yoneya
+      title: Editor
+date: 2009-03
+stream: IETF
+area: app
+wg: eai
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 24
+abstract: Traditional mail systems handle only ASCII characters in SMTP envelope and mail header fields.  The Email Address Internationalization (UTF8SMTP) extension allows UTF-8 characters in SMTP envelope and mail header fields.  To avoid rejecting internationalized email messages when a server in the delivery path does not support the UTF8SMTP extension, some sort of converting mechanism is required.  This document describes a downgrading mechanism for Email Address Internationalization.  Note that this is a way to downgrade, not tunnel.  There is no associated up-conversion mechanism, although internationalized email clients might use original internationalized addresses or other data when displaying or replying to downgraded messages.  This memo defines an Experimental Protocol for the Internet community.
+keywords:
+    - EAI
+    - Email Address Internationalization
+    - Downgrade
+    - MAIL
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-eai-downgrade-12
+obsoleted_by:
+    - rfc-6530
+doi: 10.17487/RFC5504
+url: https://www.rfc-editor.org/rfc/rfc5504
+source: rfc-editor-index
+ingested_at: "2026-05-21"

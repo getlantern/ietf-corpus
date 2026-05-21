@@ -1,0 +1,29 @@
+id: draft-rosomakho-masque-connect-ip-optimizations
+name: draft-rosomakho-masque-connect-ip-optimizations
+rev: "01"
+title: Extensions to Compress and Derive Fields in HTTP Datagrams
+abstract: |-
+    This document defines extensions for HTTP Datagram-based protocols
+       that improve transmission efficiency by introducing templates for
+       compressing or deriving datagram fields.
+
+       These templates allow endpoints to define parts of datagrams that are
+       static and can be removed, and other parts that can be derived (such
+       as packet lengths and checksum values).
+
+       Additionally, this document defines a checksum offload procedure
+       enabling receivers to complete Internet checksums using sender-
+       provided partial values.
+
+       These optimisations reduce per-packet overhead, processing cost, and
+       increase the effective maximum transmission unit (MTU) when datagrams
+       are encapsulated in QUIC DATAGRAM frames.
+pages: 32
+stream: IETF
+stream_state: active
+group: masque
+last_updated: "2026-04-21"
+expires: "2026-08-31"
+url: https://datatracker.ietf.org/doc/draft-rosomakho-masque-connect-ip-optimizations/
+source: datatracker
+ingested_at: "2026-05-21"

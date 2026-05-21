@@ -1,0 +1,26 @@
+id: draft-vandemeent-tibet-causal-time
+name: draft-vandemeent-tibet-causal-time
+rev: "02"
+title: TIBET Causal Time Substrate
+abstract: |-
+    This document describes the TIBET Causal Time Substrate, a forward-
+       only causal ordering model for identity-bound distributed systems.
+
+       TIBET does not treat wall-clock time as the primary ordering
+       primitive.  Instead, it uses a cryptographically bound logical-time
+       structure encoded through append-only linkage, monotonic generation
+       counters, and signed causal references.  External wall-clock sources,
+       including NTP, RFC 3161 timestamping services, Roughtime, GNSS, or
+       public ledger timestamps, are treated as auxiliary alignment anchors
+       rather than as the constitutive source of event order.
+
+       The core claim is simple: TIBET is a forward-only causal substrate
+       that enables recovery and reversibility without rewriting history.
+pages: 11
+stream_state: active
+group: none
+last_updated: "2026-05-12"
+expires: "2026-11-13"
+url: https://datatracker.ietf.org/doc/draft-vandemeent-tibet-causal-time/
+source: datatracker
+ingested_at: "2026-05-21"

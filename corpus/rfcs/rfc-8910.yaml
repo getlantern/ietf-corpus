@@ -1,0 +1,39 @@
+id: rfc-8910
+rfc_number: 8910
+title: Captive-Portal Identification in DHCP and Router Advertisements (RAs)
+authors:
+    - name: W. Kumari
+    - name: E. Kline
+date: 2020-09
+stream: IETF
+area: art
+wg: capport
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 11
+abstract: |-
+    In many environments offering short-term or temporary Internet access (such as coffee shops), it is common to start new connections in a captive portal mode. This highly restricts what the user can do until the user has satisfied the captive portal conditions.
+
+    This document describes a DHCPv4 and DHCPv6 option and a Router Advertisement (RA) option to inform clients that they are behind some sort of captive portal enforcement device, and that they will need to satisfy the Captive Portal conditions to get Internet access. It is not a full solution to address all of the issues that clients may have with captive portals; it is designed to be one component of a standardized approach for hosts to interact with such portals. While this document defines how the network operator may convey the captive portal API endpoint to hosts, the specific methods of satisfying and interacting with the captive portal are out of scope of this document.
+
+    This document replaces RFC 7710, which used DHCP code point 160. Due to a conflict, this document specifies 114. Consequently, this document also updates RFC 3679.
+keywords:
+    - Captive Portal
+    - Walled Garden
+    - Coffee-shop
+    - Hotel
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-capport-rfc7710bis-11
+obsoletes:
+    - rfc-7710
+updates:
+    - rfc-3679
+doi: 10.17487/RFC8910
+errata_url: https://www.rfc-editor.org/errata/rfc8910
+url: https://www.rfc-editor.org/rfc/rfc8910
+source: rfc-editor-index
+ingested_at: "2026-05-21"

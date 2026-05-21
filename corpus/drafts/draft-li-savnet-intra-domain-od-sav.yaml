@@ -1,0 +1,33 @@
+id: draft-li-savnet-intra-domain-od-sav
+name: draft-li-savnet-intra-domain-od-sav
+rev: "02"
+title: Intra-Domain On-Demand Source Address Validation(SAV) Mechanism
+abstract: |-
+    Source Address Validation (SAV) mechanisms, such as uRPF, ACLs, and
+       BM-SPF, are applied to prevent IP source address spoofing.  However,
+       these mechanisms are typically designed for static routing scenarios
+       and deployed at fixed network boundaries.
+
+       With the increasing adoption of dynamic forwarding technologies such
+       as SRv6 Policy and Fast Reroute (TI-FRR), the network's actual
+       forwarding path may change frequently due to policy-based traffic
+       steering or link failures.  In such cases, statically deployed SAV
+       rules may fail to validate traffic on newly activated or alternate
+       paths, creating validation blind spots or even leading to false
+       positives that block legitimate traffic.
+
+       This draft proposes an On-Demand Source Address Validation Activation
+       mechanism.  It enables routers to dynamically activate or update SAV
+       rules on specific interfaces only when the interface becomes part of
+       an active forwarding path due to policy or failover triggers.  This
+       approach enhances SAV coverage, avoids unnecessary resource
+       consumption, and ensures SAV correctness under dynamic path switching
+       scenarios driven by SRv6-policy and TI-FRR.
+pages: 11
+stream_state: active
+group: none
+last_updated: "2025-11-25"
+expires: "2026-05-29"
+url: https://datatracker.ietf.org/doc/draft-li-savnet-intra-domain-od-sav/
+source: datatracker
+ingested_at: "2026-05-21"

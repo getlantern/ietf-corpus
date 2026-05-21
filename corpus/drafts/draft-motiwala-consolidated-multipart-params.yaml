@@ -1,0 +1,32 @@
+id: draft-motiwala-consolidated-multipart-params
+name: draft-motiwala-consolidated-multipart-params
+rev: "00"
+title: Consolidated Parameters Part for Multipart/Form-Data
+abstract: |-
+    This document describes a deployment pattern for reducing overhead in
+       multipart/form-data requests that include both file uploads and
+       numerous text parameters. The approach consolidates multiple text
+       fields into one or more application/x-www-form-urlencoded parts
+       inside the multipart body.
+
+       This technique requires no changes to existing HTTP, MIME, or form
+       specifications and is fully compatible with RFC 7578. It uses only
+       existing, standardized Content-Type values in their already-defined
+       manner, making it immediately deployable with current infrastructure.
+
+       The pattern guarantees backward compatibility: servers that don't recognize
+       it still receive all parameters as standard form data. RFC 7578
+       defines multipart/form-data but does not specify optimization
+       strategies; this document fills that gap.
+
+       This document records the pattern, processing rules, and deployment
+       considerations, and reports implementation experience from production
+       systems processing millions of uploads daily.
+pages: 12
+stream_state: active
+group: none
+last_updated: "2025-12-03"
+expires: "2026-06-06"
+url: https://datatracker.ietf.org/doc/draft-motiwala-consolidated-multipart-params/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,35 @@
+id: rfc-8915
+rfc_number: 8915
+title: Network Time Security for the Network Time Protocol
+authors:
+    - name: D. Franke
+    - name: D. Sibold
+    - name: K. Teichel
+    - name: M. Dansarie
+    - name: R. Sundblad
+date: 2020-09
+stream: IETF
+area: int
+wg: ntp
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 33
+abstract: |-
+    This memo specifies Network Time Security (NTS), a mechanism for using Transport Layer Security (TLS) and Authenticated Encryption with Associated Data (AEAD) to provide cryptographic security for the client-server mode of the Network Time Protocol (NTP).
+
+    NTS is structured as a suite of two loosely coupled sub-protocols. The first (NTS Key Establishment (NTS-KE)) handles initial authentication and key establishment over TLS. The second (NTS Extension Fields for NTPv4) handles encryption and authentication during NTP time synchronization via extension fields in the NTP packets, and holds all required state only on the client via opaque cookies.
+keywords:
+    - Integrity
+    - Authentication
+    - NTP
+    - Security
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-ntp-using-nts-for-ntp-28
+doi: 10.17487/RFC8915
+url: https://www.rfc-editor.org/rfc/rfc8915
+source: rfc-editor-index
+ingested_at: "2026-05-21"

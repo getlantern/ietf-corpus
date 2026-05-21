@@ -1,0 +1,34 @@
+id: rfc-9107
+rfc_number: 9107
+title: BGP Optimal Route Reflection (BGP ORR)
+authors:
+    - name: R. Raszuk
+      title: Editor
+    - name: B. Decraene
+      title: Editor
+    - name: C. Cassar
+    - name: E. Åman
+    - name: K. Wang
+date: 2021-08
+stream: IETF
+area: rtg
+wg: idr
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 9
+abstract: |-
+    This document defines an extension to BGP route reflectors. On route reflectors, BGP route selection is modified in order to choose the best route from the standpoint of their clients, rather than from the standpoint of the route reflectors themselves. Depending on the scaling and precision requirements, route selection can be specific for one client, common for a set of clients, or common for all clients of a route reflector. This solution is particularly applicable in deployments using centralized route reflectors, where choosing the best route based on the route reflector's IGP location is suboptimal. This facilitates, for example, a "best exit point" policy ("hot potato routing").
+
+    The solution relies upon all route reflectors learning all paths that are eligible for consideration. BGP route selection is performed in the route reflectors based on the IGP cost from configured locations in the link-state IGP.
+keywords:
+    - IDR
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-idr-bgp-optimal-route-reflection-28
+doi: 10.17487/RFC9107
+url: https://www.rfc-editor.org/rfc/rfc9107
+source: rfc-editor-index
+ingested_at: "2026-05-21"

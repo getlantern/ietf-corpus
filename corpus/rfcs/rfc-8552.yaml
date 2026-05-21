@@ -1,0 +1,27 @@
+id: rfc-8552
+rfc_number: 8552
+title: Scoped Interpretation of DNS Resource Records through "Underscored" Naming of Attribute Leaves
+authors:
+    - name: D. Crocker
+date: 2019-03
+stream: IETF
+area: ops
+wg: dnsop
+current_status: BEST CURRENT PRACTICE
+publication_status: BEST CURRENT PRACTICE
+page_count: 15
+abstract: Formally, any DNS Resource Record (RR) may occur under any domain name.  However, some services use an operational convention for defining specific interpretations of an RRset by locating the records in a DNS branch under the parent domain to which the RRset actually applies.  The top of this subordinate branch is defined by a naming convention that uses a reserved node name, which begins with the underscore character (e.g., "_name").  The underscored naming construct defines a semantic scope for DNS record types that are associated with the parent domain above the underscored branch.  This specification explores the nature of this DNS usage and defines the "Underscored and Globally Scoped DNS Node Names" registry with IANA.  The purpose of this registry is to avoid collisions resulting from the use of the same underscored name for different services.
+keywords:
+    - DNS
+    - Domain Name System
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-dnsop-attrleaf-16
+also:
+    - bcp-222
+doi: 10.17487/RFC8552
+errata_url: https://www.rfc-editor.org/errata/rfc8552
+url: https://www.rfc-editor.org/rfc/rfc8552
+source: rfc-editor-index
+ingested_at: "2026-05-21"

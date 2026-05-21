@@ -1,0 +1,37 @@
+id: draft-ms-hpke-auth-modes
+name: draft-ms-hpke-auth-modes
+rev: "01"
+title: Authenticated Modes for HPKE
+abstract: |-
+    The standards-track [I-D.ietf-hpke-hpke] supersedes the informational
+       [RFC9180], omitting its authenticated modes mode_auth and
+       mode_auth_psk.  This document restores mode_auth_psk mode as a strict
+       extension and illustrates how the restored mode can be used with a
+       post-quantum "shared secret" as the PSK in order to achieve hybrid
+       PQ/T confidentiality while transitioning to quantum-resistant
+       encryption, without deprecating the classical implicit authentication
+       on which many applications still rely.
+
+       This extension requires only the addition of AuthEncap()/AuthDecap()
+       to the DHKEM, the definition of four setup functions, and a change in
+       VerifyPSKInputs().  The extension does not alter the externally
+       observable behavior of the existing HPKE modes standardized in
+       [I-D.ietf-hpke-hpke].  Although AuthEncap()/AuthDecap() reintroduce
+       the functionality of mode_auth, the mode itself is not restored,
+       since it cannot provide quantum resistance.
+
+       This document discusses the transitional nature of the AuthPSK
+       construction and its security properties as a transitional step
+       towards quantum resistance.  In particular, this document illustrates
+       how the restored mode_auth_psk can be used to provide ready-made KEM
+       combiner-like functionality ([I-D.ounsworth-cfrg-kem-combiners])
+       without requiring downstream API users to manage their own encryption
+       context.
+pages: 13
+stream_state: active
+group: none
+last_updated: "2026-05-15"
+expires: "2026-11-16"
+url: https://datatracker.ietf.org/doc/draft-ms-hpke-auth-modes/
+source: datatracker
+ingested_at: "2026-05-21"

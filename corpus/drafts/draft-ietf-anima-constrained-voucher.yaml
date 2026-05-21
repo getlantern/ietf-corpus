@@ -1,0 +1,30 @@
+id: draft-ietf-anima-constrained-voucher
+name: draft-ietf-anima-constrained-voucher
+rev: "30"
+title: Constrained Bootstrapping Remote Secure Key Infrastructure (cBRSKI)
+abstract: |-
+    This document defines the Constrained Bootstrapping Remote Secure Key
+       Infrastructure (cBRSKI) protocol, which provides a solution for
+       secure zero-touch onboarding of resource-constrained (IoT) devices
+       into the network of a domain owner.  This protocol is designed for
+       constrained networks, which may have limited data throughput or may
+       experience frequent packet loss. cBRSKI is a variant of the BRSKI
+       protocol, which uses an artifact signed by the device manufacturer
+       called the "voucher" which enables a new device and the owner's
+       network to mutually authenticate.  While the BRSKI voucher data is
+       encoded in JSON, cBRSKI uses a compact CBOR-encoded voucher.  The
+       BRSKI voucher data definition is extended with new data types that
+       allow for smaller voucher sizes.  The Enrollment over Secure
+       Transport (EST) protocol, used in BRSKI, is replaced with EST-over-
+       CoAPS; and HTTPS used in BRSKI is replaced with DTLS-secured CoAP
+       (CoAPS).  This document Updates RFC 8995 and RFC 9148.
+pages: 93
+stream: IETF
+stream_state: active
+group: anima
+intended_status: Proposed Standard
+last_updated: "2026-02-27"
+expires: "2026-08-31"
+url: https://datatracker.ietf.org/doc/draft-ietf-anima-constrained-voucher/
+source: datatracker
+ingested_at: "2026-05-21"

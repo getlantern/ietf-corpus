@@ -1,0 +1,24 @@
+id: rfc-7311
+rfc_number: 7311
+title: The Accumulated IGP Metric Attribute for BGP
+authors:
+    - name: P. Mohapatra
+    - name: R. Fernando
+    - name: E. Rosen
+    - name: J. Uttaro
+date: 2014-08
+stream: IETF
+area: rtg
+wg: idr
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 15
+abstract: Routing protocols that have been designed to run within a single administrative domain (IGPs) generally do so by assigning a metric to each link and then choosing, as the installed path between two nodes, the path for which the total distance (sum of the metric of each link along the path) is minimized.  BGP, designed to provide routing over a large number of independent administrative domains (autonomous systems), does not make its path-selection decisions through the use of a metric.  It is generally recognized that any attempt to do so would incur significant scalability problems as well as inter-administration coordination problems.  However, there are deployments in which a single administration runs several contiguous BGP networks.  In such cases, it can be desirable, within that single administrative domain, for BGP to select paths based on a metric, just as an IGP would do.  The purpose of this document is to provide a specification for doing so.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-idr-aigp-18
+doi: 10.17487/RFC7311
+url: https://www.rfc-editor.org/rfc/rfc7311
+source: rfc-editor-index
+ingested_at: "2026-05-21"

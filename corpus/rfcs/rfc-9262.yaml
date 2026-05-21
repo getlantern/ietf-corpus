@@ -1,0 +1,41 @@
+id: rfc-9262
+rfc_number: 9262
+title: Tree Engineering for Bit Index Explicit Replication (BIER-TE)
+authors:
+    - name: T. Eckert
+      title: Editor
+    - name: M. Menth
+    - name: G. Cauchie
+date: 2022-10
+stream: IETF
+area: rtg
+wg: bier
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 43
+abstract: |-
+    This memo describes per-packet stateless strict and loose path steered replication and forwarding for "Bit Index Explicit Replication" (BIER) packets (RFC 8279); it is called "Tree Engineering for Bit Index Explicit Replication" (BIER-TE) and is intended to be used as the path steering mechanism for Traffic Engineering with BIER.
+
+    BIER-TE introduces a new semantic for "bit positions" (BPs). These BPs indicate adjacencies of the network topology, as opposed to (non-TE) BIER in which BPs indicate "Bit-Forwarding Egress Routers" (BFERs). A BIER-TE "packets BitString" therefore indicates the edges of the (loop-free) tree across which the packets are forwarded by BIER-TE. BIER-TE can leverage BIER forwarding engines with little changes. Co-existence of BIER and BIER-TE forwarding in the same domain is possible -- for example, by using separate BIER "subdomains" (SDs). Except for the optional routed adjacencies, BIER-TE does not require a BIER routing underlay and can therefore operate without depending on a routing protocol such as the "Interior Gateway Protocol" (IGP).
+keywords:
+    - BIER
+    - BIER-TE
+    - controller
+    - ECMP
+    - forwarding
+    - traffic-engineering
+    - multicast
+    - pseudocode
+    - routing
+    - traffic-steering
+    - tree-steering
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-bier-te-arch-13
+doi: 10.17487/RFC9262
+url: https://www.rfc-editor.org/rfc/rfc9262
+source: rfc-editor-index
+ingested_at: "2026-05-21"

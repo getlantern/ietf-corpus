@@ -1,0 +1,30 @@
+id: rfc-9115
+rfc_number: 9115
+title: An Automatic Certificate Management Environment (ACME) Profile for Generating Delegated Certificates
+authors:
+    - name: Y. Sheffer
+    - name: D. López
+    - name: A. Pastor Perales
+    - name: T. Fossati
+date: 2021-09
+stream: IETF
+area: sec
+wg: acme
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 42
+abstract: This document defines a profile of the Automatic Certificate Management Environment (ACME) protocol by which the holder of an identifier (e.g., a domain name) can allow a third party to obtain an X.509 certificate such that the certificate subject is the delegated identifier while the certified public key corresponds to a private key controlled by the third party.  A primary use case is that of a Content Delivery Network (CDN), the third party, terminating TLS sessions on behalf of a content provider (the holder of a domain name).  The presented mechanism allows the holder of the identifier to retain control over the delegation and revoke it at any time.  Importantly, this mechanism does not require any modification to the deployed TLS clients and servers.
+keywords:
+    - Content Delivery Network
+    - CDN
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-acme-star-delegation-09
+doi: 10.17487/RFC9115
+errata_url: https://www.rfc-editor.org/errata/rfc9115
+url: https://www.rfc-editor.org/rfc/rfc9115
+source: rfc-editor-index
+ingested_at: "2026-05-21"

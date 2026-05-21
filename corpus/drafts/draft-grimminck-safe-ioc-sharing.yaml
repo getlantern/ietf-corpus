@@ -1,0 +1,31 @@
+id: draft-grimminck-safe-ioc-sharing
+name: draft-grimminck-safe-ioc-sharing
+rev: "10"
+title: Safe and Reversible Sharing of Malicious URLs and Indicators
+abstract: |-
+    This document codifies a consistent and reversible convention used in
+       the threat intelligence and security communities for sharing
+       potentially malicious indicators of compromise (IOCs), such as URLs,
+       IP addresses, email addresses, and domain names.  It describes a safe
+       obfuscation format that reduces the risk of accidental execution or
+       activation when IOCs are displayed or transmitted.  The recommended
+       form brackets the URI scheme name so that the string is not
+       syntactically a valid URI per generic URI parsers, and extends the
+       same bracket treatment to colons inside IPv6 literals; recognizable
+       nested indicators within the Path, Query, or Fragment of a URI are
+       obfuscated in place, and legacy scheme-substitution tokens are
+       defined for de-obfuscation interoperability.  Safe-IOC strings are a
+       textual rendering convention, not URIs, and are not intended to be
+       processed by generic URI parsers.  These conventions aim to improve
+       interoperability among tools and feeds that exchange threat
+       intelligence data.
+pages: 17
+stream: Independent
+stream_state: active
+group: none
+intended_status: Informational
+last_updated: "2026-04-30"
+expires: "2026-11-01"
+url: https://datatracker.ietf.org/doc/draft-grimminck-safe-ioc-sharing/
+source: datatracker
+ingested_at: "2026-05-21"

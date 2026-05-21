@@ -1,0 +1,35 @@
+id: draft-ietf-bier-frr
+name: draft-ietf-bier-frr
+rev: "12"
+title: A Framework for Fast Reroute with Bit Index Explicit Replication (BIER-FRR)
+abstract: |-
+    This document provides a framework for the development of Fast
+       Reroute (FRR) mechanisms for Bit Index Explicit Replication
+       forwarding (BIER-FRR).  BIER-FRR can provide protection against link
+       or BFR failure by invoking locally pre-determined repair paths that
+       can react in the same time-scales as (unicast) FRR for MPLS or IP
+       networks - "sub 50msec", and without the creation of additional per-
+       path or per-flow state coordinated across multiple routers/LSR.
+
+       BIER-FRR can be implemed locally within a router/LSR with minimal
+       interoperability requirements against other router/LSR.  It can
+       therefore easily be introduced incrementally or selectively where
+       needed.  BIER-FRR implementing nodes only need to understand the
+       routing topology of the network for calculation of repair paths and
+       know what type of unicast encapsulation can be used to send
+       ("tunnel") BIER packets to remote BFR.
+
+       This document proposes and discusses different options for BIER
+       forwardng (BIFT) extensions to support BIER-FRR.  These are exemplary
+       and non-normative.  This document does not specify any standards or
+       experiments but aims to support such efforts.
+pages: 45
+stream: IETF
+stream_state: active
+group: bier
+intended_status: Informational
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-ietf-bier-frr/
+source: datatracker
+ingested_at: "2026-05-21"

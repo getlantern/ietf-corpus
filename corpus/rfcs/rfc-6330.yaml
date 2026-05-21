@@ -1,0 +1,38 @@
+id: rfc-6330
+rfc_number: 6330
+title: RaptorQ Forward Error Correction Scheme for Object Delivery
+authors:
+    - name: M. Luby
+    - name: A. Shokrollahi
+    - name: M. Watson
+    - name: T. Stockhammer
+    - name: L. Minder
+date: 2011-08
+stream: IETF
+area: tsv
+wg: rmt
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 69
+abstract: |-
+    This document describes a Fully-Specified Forward Error Correction (FEC) scheme, corresponding to FEC Encoding ID 6, for the RaptorQ FEC code and its application to reliable delivery of data objects.
+
+    RaptorQ codes are a new family of codes that provide superior flexibility, support for larger source block sizes, and better coding efficiency than Raptor codes in RFC 5053. RaptorQ is also a fountain code, i.e., as many encoding symbols as needed can be generated on the fly by the encoder from the source symbols of a source block of data. The decoder is able to recover the source block from almost any set of encoding symbols of sufficient cardinality -- in most cases, a set of cardinality equal to the number of source symbols is sufficient; in rare cases, a set of cardinality slightly more than the number of source symbols is required.
+
+    The RaptorQ code described here is a systematic code, meaning that all the source symbols are among the encoding symbols that can be generated. [STANDARDS-TRACK]
+keywords:
+    - FEC code
+    - fountain code
+    - systematic code
+    - AL FEC code
+    - Sub-blocking
+    - FEC object delivery
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-rmt-bb-fec-raptorq-06
+doi: 10.17487/RFC6330
+errata_url: https://www.rfc-editor.org/errata/rfc6330
+url: https://www.rfc-editor.org/rfc/rfc6330
+source: rfc-editor-index
+ingested_at: "2026-05-21"

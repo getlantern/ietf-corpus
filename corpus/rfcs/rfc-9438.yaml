@@ -1,0 +1,40 @@
+id: rfc-9438
+rfc_number: 9438
+title: CUBIC for Fast and Long-Distance Networks
+authors:
+    - name: L. Xu
+    - name: S. Ha
+    - name: I. Rhee
+    - name: V. Goel
+    - name: L. Eggert
+      title: Editor
+date: 2023-08
+stream: IETF
+area: wit
+wg: tcpm
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 28
+abstract: |-
+    CUBIC is a standard TCP congestion control algorithm that uses a cubic function instead of a linear congestion window increase function to improve scalability and stability over fast and long-distance networks. CUBIC has been adopted as the default TCP congestion control algorithm by the Linux, Windows, and Apple stacks.
+
+    This document updates the specification of CUBIC to include algorithmic improvements based on these implementations and recent academic work. Based on the extensive deployment experience with CUBIC, this document also moves the specification to the Standards Track and obsoletes RFC 8312. This document also updates RFC 5681, to allow for CUBIC's occasionally more aggressive sending behavior.
+keywords:
+    - Congestion control
+    - large BDP
+    - window scalability
+    - RTT fairness
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-tcpm-rfc8312bis-15
+obsoletes:
+    - rfc-8312
+updates:
+    - rfc-5681
+doi: 10.17487/RFC9438
+url: https://www.rfc-editor.org/rfc/rfc9438
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,38 @@
+id: rfc-9297
+rfc_number: 9297
+title: HTTP Datagrams and the Capsule Protocol
+authors:
+    - name: D. Schinazi
+    - name: L. Pardue
+date: 2022-08
+stream: IETF
+area: wit
+wg: masque
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 14
+abstract: |-
+    This document describes HTTP Datagrams, a convention for conveying multiplexed, potentially unreliable datagrams inside an HTTP connection.
+
+    In HTTP/3, HTTP Datagrams can be sent unreliably using the QUIC DATAGRAM extension. When the QUIC DATAGRAM frame is unavailable or undesirable, HTTP Datagrams can be sent using the Capsule Protocol, which is a more general convention for conveying data in HTTP connections.
+
+    HTTP Datagrams and the Capsule Protocol are intended for use by HTTP extensions, not applications.
+keywords:
+    - quic
+    - http
+    - datagram
+    - fast
+    - tunnels
+    - turtles all the way down
+    - masque
+    - http-ng
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-masque-h3-datagram-11
+doi: 10.17487/RFC9297
+url: https://www.rfc-editor.org/rfc/rfc9297
+source: rfc-editor-index
+ingested_at: "2026-05-21"

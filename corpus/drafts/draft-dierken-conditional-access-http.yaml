@@ -1,0 +1,33 @@
+id: draft-dierken-conditional-access-http
+name: draft-dierken-conditional-access-http
+rev: "00"
+title: Conditional Access for HTTP
+abstract: |-
+    This document introduces conditional access to resources based on
+       pricing constraints signaled via request and response headers.  An
+       origin states the conditions for serving a resource, and a client
+       states the constraints under which it will accept it.
+
+       This specification applies this conditional access approach using
+       standard HTTP request and response semantics while staying
+       interoperable with intermediaries.  It introduces a Pricing response
+       header field that communicates current pricing terms and an If-Price-
+       LTE request header field that allows a client to declare a maximum
+       acceptable price.
+
+       When a request is served under such conditions, the response includes
+       a Response-Id header identifying the served response context.  This
+       identifier can be used for reconciliation, auditing, and downstream
+       usage reporting.
+
+       This specification defines access condition signaling only.
+       Accounting and usage reporting may be implemented using a companion
+       protocol such as usage-log.
+pages: 10
+stream_state: active
+group: none
+last_updated: "2026-03-17"
+expires: "2026-09-18"
+url: https://datatracker.ietf.org/doc/draft-dierken-conditional-access-http/
+source: datatracker
+ingested_at: "2026-05-21"

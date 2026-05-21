@@ -1,0 +1,30 @@
+id: draft-conduit-tunnel-fabric
+name: draft-conduit-tunnel-fabric
+rev: "01"
+title: Underlay for IPsec Transport
+abstract: |-
+    This document specifies CONDUIT, a tunnel fabric management protocol
+       for tactical and enterprise networks operating over heterogeneous
+       Wide Area Network (WAN) links.  CONDUIT automates the lifecycle
+       management of IPsec tunnels, monitors tunnel health through active
+       probing, and publishes quality metrics to enable Segment Routing over
+       IPv6 (SRv6) based traffic engineering.
+
+       CONDUIT follows a strict separation of concerns: it manages the
+       underlay tunnel fabric while delegating all traffic engineering
+       decisions to SRv6.  This architecture simplifies network operations,
+       enables rapid adaptation to changing WAN conditions, and leverages
+       standard SRv6 capabilities including Flexible Algorithm (Flex-Algo)
+       and Topology-Independent Loop-Free Alternate (TI-LFA).
+
+       The protocol is fully programmable via gRPC and mandates compliance
+       with Commercial National Security Algorithm Suite 2.0 (CNSA 2.0)
+       cryptographic requirements.
+pages: 38
+stream_state: active
+group: none
+last_updated: "2026-02-01"
+expires: "2026-08-05"
+url: https://datatracker.ietf.org/doc/draft-conduit-tunnel-fabric/
+source: datatracker
+ingested_at: "2026-05-21"

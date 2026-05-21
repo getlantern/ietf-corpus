@@ -1,0 +1,25 @@
+id: draft-cz-bier-bgp-ls-bier-te-ext
+name: draft-cz-bier-bgp-ls-bier-te-ext
+rev: "06"
+title: BGP-LS extensions for BIER-TE
+abstract: |-
+    BIER-TE forwards and replicates packets based on a BitString in the
+       packet header, but every BitPosition of the BitString of a BIER-TE
+       packet indicates one or more adjacencies.
+
+       BGP Link-State (BGP-LS) enables the collection of various topology
+       informations from the network, and the topology informations are used
+       by the PCE to calculate the path and then propagate them onto the
+       BFRs(instead of having each node to calculate on its own) and that
+       can be for both inter-as and intra-as situations.
+
+       This document specifies extensions to the BGP Link-state address-
+       family in order to advertise BIER-TE informations.
+pages: 12
+stream_state: active
+group: none
+last_updated: "2026-01-27"
+expires: "2026-07-31"
+url: https://datatracker.ietf.org/doc/draft-cz-bier-bgp-ls-bier-te-ext/
+source: datatracker
+ingested_at: "2026-05-21"

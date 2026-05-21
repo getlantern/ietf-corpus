@@ -1,0 +1,27 @@
+id: draft-ietf-idr-multinexthop-attribute
+name: draft-ietf-idr-multinexthop-attribute
+rev: "05"
+title: BGP MultiNexthop Attribute
+abstract: |-
+    Today, a BGP speaker can advertise one nexthop for a set of NLRIs in
+       an Update message.  This nexthop can be encoded in either the top-
+       level BGP-Nexthop attribute (code 3), or inside the MP_REACH_NLRI
+       attribute (code 14).  Forwarding information related to the nexthop
+       is scattered across various attributes, extended communities or the
+       NLRI field.
+
+       This document defines a new optional non-transitive BGP attribute
+       called "MultiNexthop (MNH)" with IANA code TBD.  The MNH provides two
+       things: it allows carrying the Nexthop and related forwarding
+       information in one BGP attribute.  The MNH also enables carrying an
+       ordered set of multiple Nexthops in the same attribute, with
+       forwarding information scoped on a per Nexthop basis.
+pages: 57
+stream: IETF
+stream_state: active
+group: idr
+last_updated: "2026-05-13"
+expires: "2026-11-14"
+url: https://datatracker.ietf.org/doc/draft-ietf-idr-multinexthop-attribute/
+source: datatracker
+ingested_at: "2026-05-21"

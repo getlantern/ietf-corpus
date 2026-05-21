@@ -1,0 +1,42 @@
+id: rfc-9956
+rfc_number: 9956
+title: A Non-Queue-Building Per-Hop Behavior (NQB PHB) for Differentiated Services
+authors:
+    - name: G. White
+    - name: T. Fossati
+    - name: R. Geib
+date: 2026-05
+stream: IETF
+area: wit
+wg: tsvwg
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 32
+abstract: This document specifies characteristics of a Non-Queue-Building Per-Hop Behavior (NQB PHB).  The NQB PHB provides a shallow-buffered, best-effort service as a complement to a Default deep-buffered, best-effort service for Internet services.  The purpose of this NQB PHB is to provide a separate queue that enables smooth (i.e., non-bursty), low-data-rate, application-limited traffic microflows, to avoid the delay, delay variation and loss that would ordinarily be caused by sharing a queue with bursty, capacity-seeking traffic.  This PHB is implemented without prioritization and can be implemented without rate policing, making it suitable for environments where the use of these features is restricted.  The NQB PHB has been developed primarily for use by access network segments, where queuing delay and queuing loss caused by Queue-Building (QB) protocols are manifested; however, its use is not limited to such segments.  In particular, the application of NQB PHB to cable broadband links, Wi-Fi links, and mobile network radio/core segments are discussed in this document.  This document recommends a specific Differentiated Services Code Point (DSCP) to identify NQB microflows and updates the guidance in RFC 8325 on mapping Differentiated Services (Diffserv or DS) to IEEE 802.11 for this codepoint.
+keywords:
+    - DS
+    - DSCP
+    - L4S
+    - delay
+    - jitter
+    - delay variation
+    - Queuing variation
+    - One Way Delay
+    - Round-Trip Time
+    - RTT
+    - Quality of Service
+    - QoS
+    - Quality of Experience
+    - QoE
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-tsvwg-nqb-33
+updates:
+    - rfc-8325
+doi: 10.17487/RFC9956
+url: https://www.rfc-editor.org/rfc/rfc9956
+source: rfc-editor-index
+ingested_at: "2026-05-21"

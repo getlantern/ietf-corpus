@@ -1,0 +1,34 @@
+id: rfc-9329
+rfc_number: 9329
+title: TCP Encapsulation of Internet Key Exchange Protocol (IKE) and IPsec Packets
+authors:
+    - name: T. Pauly
+    - name: V. Smyslov
+date: 2022-11
+stream: IETF
+area: sec
+wg: ipsecme
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 30
+abstract: |-
+    This document describes a method to transport Internet Key Exchange Protocol (IKE) and IPsec packets over a TCP connection for traversing network middleboxes that may block IKE negotiation over UDP. This method, referred to as "TCP encapsulation", involves sending both IKE packets for Security Association (SA) establishment and Encapsulating Security Payload (ESP) packets over a TCP connection. This method is intended to be used as a fallback option when IKE cannot be negotiated over UDP.
+
+    TCP encapsulation for IKE and IPsec was defined in RFC 8229. This document clarifies the specification for TCP encapsulation by including additional clarifications obtained during implementation and deployment of this method. This documents obsoletes RFC 8229.
+keywords:
+    - IKE
+    - IKEv2
+    - IPsec
+    - TCP
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-ipsecme-rfc8229bis-09
+obsoletes:
+    - rfc-8229
+doi: 10.17487/RFC9329
+url: https://www.rfc-editor.org/rfc/rfc9329
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,39 @@
+id: draft-sharif-mcps-secure-mcp
+name: draft-sharif-mcps-secure-mcp
+rev: "00"
+title: 'MCPS: Cryptographic Security Layer for the Model Context Protocol'
+abstract: |-
+    This document specifies MCPS (MCP Secure), a cryptographic
+       security layer for the Model Context Protocol (MCP).  MCPS adds
+       agent identity verification, per-message signing, tool definition
+       integrity, and replay protection to MCP communications without
+       modifying the core protocol.
+
+       MCPS operates as an envelope around existing JSON-RPC messages.
+       It introduces four primitives: (1) Agent Passports for
+       cryptographic identity bound to a specific origin, (2) signed
+       message envelopes for integrity and non-repudiation, (3) tool
+       definition signatures covering the full tool object for detecting
+       poisoning and tampering, and (4) nonce-plus-timestamp replay
+       protection with transcript binding to prevent downgrade attacks.
+
+       The design is fully backward-compatible.  MCPS-unaware clients
+       and servers continue to function normally.  MCPS-aware endpoints
+       progressively negotiate security capabilities through trust
+       levels L0 (no verification) through L4 (full mutual
+       authentication with revocation checking).
+
+       All cryptographic operations use ECDSA P-256 (NIST FIPS 186-5).
+       Signatures use IEEE P1363 fixed-length r||s encoding per
+       RFC 7518 Section 3.4 with low-S normalization to prevent
+       signature malleability.  Canonical serialization uses JSON
+       Canonicalization Scheme (JCS) per RFC 8785.  The Trust Authority
+       component is self-hostable with no external service dependency.
+pages: 43
+stream_state: active
+group: none
+last_updated: "2026-03-14"
+expires: "2026-09-15"
+url: https://datatracker.ietf.org/doc/draft-sharif-mcps-secure-mcp/
+source: datatracker
+ingested_at: "2026-05-21"

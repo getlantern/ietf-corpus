@@ -1,0 +1,32 @@
+id: draft-hu-rtgwg-pre-ecn-wan
+name: draft-hu-rtgwg-pre-ecn-wan
+rev: "01"
+title: Precise ECN in WAN
+abstract: |-
+    This draft defines the precise ECN during used in WAN.  With the
+       growing demand for AI computing power, the computational capacity of
+       a single Artificial Intelligence Data Center (AIDC) can no longer
+       meet the requirements of large-scale model training.  This has led to
+       the emergence of cross-AIDC distributed model training, driving the
+       need for transmitting RoCEv2 packets over WAN networks.  AI training
+       is highly sensitive to network packet loss, where even minimal packet
+       loss can significantly degrade training efficiency.  Additionally,
+       elephant flows and extreme concurrent traffic impose higher demands
+       on network performance.
+
+       ECN achieves active feedback of network congestion by setting ECN
+       flag bits in the header of IP packets, which is an effective traffic
+       control method.  RFC6040 introduces the application of ECN in WAN.
+       However, due to the much higher end-to-end delay in WAN than in DC,
+       and the frequent occurrence of instantaneous traffic bursts in WAN,
+       it is easy to trigger ECN at the wrong time.  This draft focuses on
+       the precise use of ECN in WAN, by introducing different reactions of
+       ECN in different WAN transmission scenarios
+pages: 9
+stream_state: active
+group: none
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-hu-rtgwg-pre-ecn-wan/
+source: datatracker
+ingested_at: "2026-05-21"

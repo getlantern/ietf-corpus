@@ -1,0 +1,30 @@
+id: rfc-7293
+rfc_number: 7293
+title: The Require-Recipient-Valid-Since Header Field and SMTP Service Extension
+authors:
+    - name: W. Mills
+    - name: M. Kucherawy
+date: 2014-07
+stream: IETF
+area: art
+wg: appsawg
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 24
+abstract: |-
+    This document defines an extension for the Simple Mail Transfer Protocol (SMTP) called "RRVS" to provide a method for senders to indicate to receivers a point in time when the ownership of the target mailbox was known to the sender. This can be used to detect changes of mailbox ownership and thus prevent mail from being delivered to the wrong party. This document also defines a header field called "Require-Recipient-Valid-Since" that can be used to tunnel the request through servers that do not support the extension.
+
+    The intended use of these facilities is on automatically generated messages, such as account statements or password change instructions, that might contain sensitive information, though it may also be useful in other applications.
+keywords:
+    - Security
+    - Privacy
+    - Email
+    - Account Expiration
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-appsawg-rrvs-header-field-11
+doi: 10.17487/RFC7293
+url: https://www.rfc-editor.org/rfc/rfc7293
+source: rfc-editor-index
+ingested_at: "2026-05-21"

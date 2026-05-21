@@ -1,0 +1,30 @@
+id: rfc-7625
+rfc_number: 7625
+title: Architecture of an IP/MPLS Network with Hardened Pipes
+authors:
+    - name: J. T. Hao
+    - name: P. Maheshwari
+    - name: R. Huang
+    - name: L. Andersson
+    - name: M. Chen
+date: 2015-08
+stream: INDEPENDENT
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 15
+abstract: |-
+    This document describes an IP/MPLS network that has an infrastructure that can be separated into two or more strata. For the implementation described in this document, the infrastructure has been separated into two strata: one for the "Hard Pipes", called the "Hard Pipe Stratum", and one for the normal IP/MPLS traffic, called the "Normal IP/MPLS Stratum".
+
+    This document introduces the concept of a Hard Pipe -- an MPLS Label Switched Path (LSP) or a pseudowire (PW) with a bandwidth that is guaranteed and can neither be exceeded nor infringed upon.
+
+    The Hard Pipe stratum does not use statistical multiplexing; for the LSPs and PWs set up within this stratum, the bandwidth is guaranteed end to end.
+
+    The document does not specify any new protocol or procedures. It does explain how the MPLS standards implementation has been deployed and operated to meet the requirements from operators that offer traditional Virtual Leased Line (VLL) services.
+formats:
+    - TXT
+    - HTML
+draft: draft-hao-mpls-ip-hard-pipe-02
+doi: 10.17487/RFC7625
+url: https://www.rfc-editor.org/rfc/rfc7625
+source: rfc-editor-index
+ingested_at: "2026-05-21"

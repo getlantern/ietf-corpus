@@ -1,0 +1,21 @@
+id: draft-vance-socks5-frag-deprecation
+name: draft-vance-socks5-frag-deprecation
+rev: "00"
+title: Deprecating the FRAG Field in SOCKS5
+abstract: |-
+    This document updates RFC 1928 by formally deprecating the FRAG
+       (Fragment) field in the SOCKS5 UDP ASSOCIATE request header.  It
+       mandates that the FRAG field MUST be set to X'00' by clients and that
+       proxies MUST drop any SOCKS5 UDP packets containing a non-zero FRAG
+       value.  This change aligns the SOCKS5 protocol with modern Internet
+       engineering practices regarding UDP fragmentation (BCP 227),
+       simplifies proxy implementations, and eliminates a vector for
+       resource exhaustion attacks.
+pages: 10
+stream_state: active
+group: none
+last_updated: "2026-04-05"
+expires: "2026-10-07"
+url: https://datatracker.ietf.org/doc/draft-vance-socks5-frag-deprecation/
+source: datatracker
+ingested_at: "2026-05-21"

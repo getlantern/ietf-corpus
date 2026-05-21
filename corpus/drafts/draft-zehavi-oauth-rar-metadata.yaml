@@ -1,0 +1,34 @@
+id: draft-zehavi-oauth-rar-metadata
+name: draft-zehavi-oauth-rar-metadata
+rev: "02"
+title: OAuth 2.0 RAR Metadata and Error Signaling
+abstract: |-
+    OAuth 2.0 Rich Authorization Requests (RAR), as defined in [RFC9396],
+       enables fine-grained authorization requests, using structured JSON
+       objects.
+
+       While RAR [RFC9396] standardizes the exchange and processing of
+       authorization details, it does not specify metadata describing
+       authorization details types.
+
+       This document defines a machine-readable metadata format for
+       authorization servers to provide authorization details type
+       documentation including JSON Schema [JSON.Schema] definitions, as
+       well as interoperable discovery via OAuth Resource Server Metadata
+       [RFC9728].
+
+       It also defines a new WWW-Authenticate normative OAuth error code,
+       insufficient_authorization_details, enabling resource servers to
+       indicate inadequate authorization details as the cause of failure, as
+       well as an OPTIONAL response body which MAY be returned alongside the
+       insufficient_authorization_details error, providing an informative
+       yet actionable authorization details object, which can be used
+       directly in a subsequent OAuth request.
+pages: 29
+stream_state: active
+group: none
+last_updated: "2026-02-22"
+expires: "2026-08-26"
+url: https://datatracker.ietf.org/doc/draft-zehavi-oauth-rar-metadata/
+source: datatracker
+ingested_at: "2026-05-21"

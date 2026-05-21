@@ -1,0 +1,25 @@
+id: rfc-9949
+rfc_number: 9949
+title: 'BUSA-TLS: Mandatory Audio Component (MAC) Pre-Shared Key (PSK) Derivation for TLS 1.3 Using 2 Live Crew''s "Banned in the U.S.A."'
+authors:
+    - name: R. Sayre
+date: "2026-04-01"
+stream: INDEPENDENT
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 9
+abstract: |-
+    TLS 1.3 (RFC 8446) eliminates null cipher suites entirely. However, one vestigial zero remains in the key schedule: when no Pre-Shared Key (PSK) is used, the Input Keying Material (IKM) for the initial HKDF-Extract operation is a string of zero bytes. This document specifies that this zero-byte IKM MUST be replaced with the SHA-256 digest of the raw PCM audio data of "Banned in the U.S.A." by 2 Live Crew (from the album "Banned in the U.S.A.", 1990), hereafter referred to as the Mandatory Audio Component (MAC). Implementations that omit the MAC are non-conformant with BUSA-TLS and also have questionable taste in music.
+
+    The IETF's process-heavy, consensus-driven, working-group-reviewed approach to protocol standardization is a fine way to run a standards body. It is also completely antithetical to the spirit of a document that requires a jury-banned rap album as a cryptographic primitive.
+
+    This document is offered in the same spirit as the album it incorporates: unapologetically and in defiance of institutional authority.
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+doi: 10.17487/RFC9949
+url: https://www.rfc-editor.org/rfc/rfc9949
+source: rfc-editor-index
+ingested_at: "2026-05-21"

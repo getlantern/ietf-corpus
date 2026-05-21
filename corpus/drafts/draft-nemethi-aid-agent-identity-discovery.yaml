@@ -1,0 +1,25 @@
+id: draft-nemethi-aid-agent-identity-discovery
+name: draft-nemethi-aid-agent-identity-discovery
+rev: "00"
+title: Agent Identity and Discovery (AID)
+abstract: |-
+    Agent Identity and Discovery (AID) is a minimal, DNS-first discovery
+       protocol for locating agent service endpoints.  Given a domain name,
+       an AID client queries a DNS TXT record at the well-known subdomain
+       _agent.<domain> and learns the service endpoint URI, protocol token,
+       authentication hint, and optional metadata for that agent.
+
+       This document defines the AID v1.2 record format, client discovery
+       algorithm, exact-host lookup rules, security requirements, and IANA
+       registrations for the `_agent` DNS node name and the `agent` service
+       name.  AID is intentionally small.  After discovery, protocol-
+       specific mechanisms such as MCP or A2A handle communication and
+       capability negotiation.
+pages: 17
+stream_state: active
+group: none
+last_updated: "2026-03-16"
+expires: "2026-09-17"
+url: https://datatracker.ietf.org/doc/draft-nemethi-aid-agent-identity-discovery/
+source: datatracker
+ingested_at: "2026-05-21"

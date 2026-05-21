@@ -1,0 +1,38 @@
+id: draft-ratnawat-httpapi-async-problem-details
+name: draft-ratnawat-httpapi-async-problem-details
+rev: "00"
+title: Problem Details for Asynchronous Job Failures
+abstract: |-
+    HTTP APIs that process work asynchronously need a standard way to
+       report job failures.  "Problem Details for HTTP APIs" (RFC 9457)
+       provides the envelope; this document defines extension members that
+       fill it with asynchronous-job-specific context.
+
+       Eight extension members are specified: "jobId", "jobStatus",
+       "submittedAt", "completedAt", "retryable", "retryAfter",
+       "processingStage", and "correlationId".  A ninth member, "results",
+       supports batch operations.  Together they let a server describe which
+       job failed, when, at what pipeline stage, and whether a retry is
+       advisable -- in a single, machine-readable JSON (RFC 8259) object
+       that works equally well in an HTTP response body, a message-broker
+       payload, or a webhook callback.
+
+       Although the primary motivation is structured error reporting for
+       failed jobs, the extension members are equally useful for
+       communicating successful job outcomes (e.g., a COMPLETED status with
+       timing information).
+
+       This document does NOT redefine how to submit, poll, or cancel
+       asynchronous jobs; those mechanics are already covered by "HTTP
+       Semantics" (RFC 9110) (202 Accepted), "Prefer Header for HTTP" (RFC
+       7240) (respond-async), and emerging IETF work on long-running
+       operations.  Instead, it focuses exclusively on the structured
+       reporting gap that remains after a job reaches a terminal state.
+pages: 46
+stream_state: active
+group: none
+last_updated: "2026-03-01"
+expires: "2026-09-02"
+url: https://datatracker.ietf.org/doc/draft-ratnawat-httpapi-async-problem-details/
+source: datatracker
+ingested_at: "2026-05-21"

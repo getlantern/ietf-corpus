@@ -1,0 +1,25 @@
+id: draft-song-ippm-ioam-ipv6-support
+name: draft-song-ippm-ioam-ipv6-support
+rev: "07"
+title: Supporting IOAM in IPv6
+abstract: |-
+    IOAM pre-allocated trace option data fields can be encapsulated in
+       IPv6 HbH options header as described in RFC9486.  However, due to the
+       potential large size of the trace data and the HbH extension header
+       location in the IPv6 packets, the scheme creates practical challenges
+       for implementation, especially when other extension headers, such as
+       a routing header, also exist and require on-path processing.  We
+       propose two alternative approaches to address this challenge in
+       addition to IOAM DEX: separating the IOAM incremental trace data from
+       the IOAM instruction header, or applying the segment IOAM trace data
+       export scheme, based on the network scenario and application
+       requirements.  We discuss the pros and cons of each approach in this
+       document.
+pages: 10
+stream_state: active
+group: none
+last_updated: "2026-02-09"
+expires: "2026-08-13"
+url: https://datatracker.ietf.org/doc/draft-song-ippm-ioam-ipv6-support/
+source: datatracker
+ingested_at: "2026-05-21"

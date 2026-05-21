@@ -1,0 +1,41 @@
+id: draft-ietf-rats-msg-wrap
+name: draft-ietf-rats-msg-wrap
+rev: "23"
+title: RATS Conceptual Messages Wrapper (CMW)
+abstract: |-
+    The Conceptual Messages introduced by the RATS architecture (RFC
+       9334) are protocol-agnostic data units that are conveyed between RATS
+       roles during remote attestation procedures.  Conceptual Messages
+       describe the meaning and function of such data units within RATS data
+       flows without specifying a wire format, encoding, transport
+       mechanism, or processing details.  The initial set of Conceptual
+       Messages is defined in Section 8 of RFC 9334 and includes Evidence,
+       Attestation Results, Endorsements, Reference Values, and Appraisal
+       Policies.
+
+       This document introduces the Conceptual Message Wrapper (CMW) that
+       provides a common structure to encapsulate these messages.  It
+       defines a dedicated CBOR tag, corresponding JSON Web Token (JWT) and
+       CBOR Web Token (CWT) claims, and an X.509 extension.
+
+       This allows CMWs to be used in CBOR-based protocols, web APIs using
+       JWTs and CWTs, and PKIX artifacts like X.509 certificates.
+       Additionally, the draft defines a media type and a CoAP content
+       format to transport CMWs over protocols like HTTP, MIME, and CoAP.
+
+       The goal is to improve the interoperability and flexibility of remote
+       attestation protocols.  Introducing a shared message format such as
+       CMW enables consistent support for different attestation message
+       types, evolving message serialization formats without breaking
+       compatibility, and avoiding the need to redefine how messages are
+       handled within each protocol.
+pages: 41
+stream: IETF
+stream_state: active
+group: rats
+intended_status: Proposed Standard
+last_updated: "2026-05-20"
+expires: "2026-06-14"
+url: https://datatracker.ietf.org/doc/draft-ietf-rats-msg-wrap/
+source: datatracker
+ingested_at: "2026-05-21"

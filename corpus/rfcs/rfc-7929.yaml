@@ -1,0 +1,25 @@
+id: rfc-7929
+rfc_number: 7929
+title: DNS-Based Authentication of Named Entities (DANE) Bindings for OpenPGP
+authors:
+    - name: P. Wouters
+date: 2016-08
+stream: IETF
+area: sec
+wg: dane
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 20
+abstract: OpenPGP is a message format for email (and file) encryption that lacks a standardized lookup mechanism to securely obtain OpenPGP public keys.  DNS-Based Authentication of Named Entities (DANE) is a method for publishing public keys in DNS.  This document specifies a DANE method for publishing and locating OpenPGP public keys in DNS for a specific email address using a new OPENPGPKEY DNS resource record.  Security is provided via Secure DNS, however the OPENPGPKEY record is not a replacement for verification of authenticity via the "web of trust" or manual verification.  The OPENPGPKEY record can be used to encrypt an email that would otherwise have to be sent unencrypted.
+keywords:
+    - opportunistic security
+    - encrypted email
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-dane-openpgpkey-12
+doi: 10.17487/RFC7929
+errata_url: https://www.rfc-editor.org/errata/rfc7929
+url: https://www.rfc-editor.org/rfc/rfc7929
+source: rfc-editor-index
+ingested_at: "2026-05-21"

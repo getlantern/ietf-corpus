@@ -1,0 +1,30 @@
+id: draft-irtf-iccrg-ledbat-plus-plus
+name: draft-irtf-iccrg-ledbat-plus-plus
+rev: "06"
+title: 'LEDBAT++: Congestion Control for Background Traffic'
+abstract: |-
+    This memo describes LEDBAT++, a set of enhancements to the LEDBAT
+       (Low Extra Delay Background Transport) congestion control algorithm
+       for background traffic.  The LEDBAT congestion control algorithm has
+       several shortcomings that prevent it from working effectively in
+       practice.  LEDBAT++ extends LEDBAT by adding a set of improvements,
+       including reduced congestion window gain, modified slow-start,
+       multiplicative decrease and periodic slowdowns.  This set of
+       improvement mitigates the known issues with the LEDBAT algorithm,
+       such as latency drift, latecomer advantage and inter-LEDBAT fairness.
+       LEDBAT++ has been implemented as a TCP congestion control algorithm
+       in the Windows operating system.  LEDBAT++ has been deployed in
+       production at scale on a variety of networks and been experimentally
+       verified to achieve the original stated goals of LEDBAT.  This
+       document is a product of the Internet Congestion Control Research
+       Group (ICCRG) of the Internet Research Task Force (IRTF).
+pages: 13
+stream: IRTF
+stream_state: active
+group: iccrg
+intended_status: Experimental
+last_updated: "2026-04-24"
+expires: "2026-08-02"
+url: https://datatracker.ietf.org/doc/draft-irtf-iccrg-ledbat-plus-plus/
+source: datatracker
+ingested_at: "2026-05-21"

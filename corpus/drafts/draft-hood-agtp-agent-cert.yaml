@@ -1,0 +1,32 @@
+id: draft-hood-agtp-agent-cert
+name: draft-hood-agtp-agent-cert
+rev: "00"
+title: AGTP Agent Certificate Extension
+abstract: |-
+    The Agent Transfer Protocol (AGTP) base specification defines agent
+       identity headers (Agent-ID, Principal-ID, Authority-Scope) that are
+       self-asserted: present on every request and mandatory for logging,
+       but not cryptographically verified at the transport layer.  This
+       document specifies the AGTP Agent Certificate Extension: an optional
+       mechanism that binds Agent-ID, Principal-ID, and Authority-Scope to
+       an X.509 v3 certificate presented during TLS mutual authentication.
+       The extension enables infrastructure components including Scope-
+       Enforcement Points (SEPs), load balancers, and governance gateways to
+       verify agent identity and enforce authority scope without
+       application-layer access, at O(1) cost per request header check.  The
+       extension also defines session-level revocation propagation via AGTP
+       NOTIFY broadcast and a Certificate Transparency Log for tamper-
+       evident governance metadata.
+
+       Note: Certain mechanisms described in this document may be subject to
+       pending patent applications by the author.  The licensor is prepared
+       to grant a royalty-free license to implementers consistent with the
+       IETF's IPR framework.  See the IPR Notice and Section 7.
+pages: 14
+stream_state: active
+group: none
+last_updated: "2026-03-23"
+expires: "2026-09-24"
+url: https://datatracker.ietf.org/doc/draft-hood-agtp-agent-cert/
+source: datatracker
+ingested_at: "2026-05-21"

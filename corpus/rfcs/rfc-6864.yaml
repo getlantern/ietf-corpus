@@ -1,0 +1,25 @@
+id: rfc-6864
+rfc_number: 6864
+title: Updated Specification of the IPv4 ID Field
+authors:
+    - name: J. Touch
+date: 2013-02
+stream: IETF
+area: int
+wg: intarea
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 19
+abstract: The IPv4 Identification (ID) field enables fragmentation and reassembly and, as currently specified, is required to be unique within the maximum lifetime for all datagrams with a given source address/destination address/protocol tuple.  If enforced, this uniqueness requirement would limit all connections to 6.4 Mbps for typical datagram sizes.  Because individual connections commonly exceed this speed, it is clear that existing systems violate the current specification.  This document updates the specification of the IPv4 ID field in RFCs 791, 1122, and 2003 to more closely reflect current practice and to more closely match IPv6 so that the field's value is defined only when a datagram is actually fragmented.  It also discusses the impact of these changes on how datagrams are used. [STANDARDS-TRACK]
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-intarea-ipv4-id-update-07
+updates:
+    - rfc-1122
+    - rfc-2003
+    - rfc-791
+doi: 10.17487/RFC6864
+url: https://www.rfc-editor.org/rfc/rfc6864
+source: rfc-editor-index
+ingested_at: "2026-05-21"

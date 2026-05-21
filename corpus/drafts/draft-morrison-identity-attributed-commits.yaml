@@ -1,0 +1,27 @@
+id: draft-morrison-identity-attributed-commits
+name: draft-morrison-identity-attributed-commits
+rev: "01"
+title: Identity-Attributed Git Commits via Tier-Structured Trailers
+abstract: |-
+    This document defines a git commit trailer grammar for identity-
+       attributed contributions using the ~handle identity primitive defined
+       in [MCPDNS].  The grammar binds sovereign actors, automated bots, and
+       AI instruments to specific commits via three tier-structured trailers
+       (Acted-By, Executed-By, Drafted-With) and three optional
+       cryptographic trailers (Identity-Signature, Identity-Key-Id,
+       Identity-Anchor).  The signature is computed with Ed25519 over the
+       commit's tree hash rather than its commit hash, preserving
+       attribution across rebase, cherry-pick, and squash merge operations.
+       Conformant parsers reject cross-tier category errors (e.g., an
+       Instrument-tier handle in an Acted-By slot) as malformed.  The
+       mechanism is provider-neutral, depends only on DNS [RFC1035] and the
+       ~handle resolution algorithm of [MCPDNS], and requires no central
+       authority or platform-specific verification service.
+pages: 28
+stream_state: active
+group: none
+last_updated: "2026-05-17"
+expires: "2026-11-18"
+url: https://datatracker.ietf.org/doc/draft-morrison-identity-attributed-commits/
+source: datatracker
+ingested_at: "2026-05-21"

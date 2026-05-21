@@ -1,0 +1,35 @@
+id: draft-ietf-detnet-tcqf
+name: draft-ietf-detnet-tcqf
+rev: "00"
+title: Deterministic Networking (DetNet) Data Plane - Tagged Cyclic Queuing and Forwarding (TCQF) for bounded latency with low jitter in large scale DetNets
+abstract: |-
+    This memo specifies a forwarding method for bounded latency and
+       bounded jitter for Deterministic Networks and is a variant of the
+       IEEE TSN Cyclic Queuing and Forwarding (CQF) method.  Tagged CQF
+       (TCQF) supports more than 2 cycles and indicates the cycle number via
+       an existing or new packet header field called the tag to replace the
+       cycle mapping in CQF which is based purely on synchronized reception
+       clock.
+
+       This memo standardizes TCQF as a mechanism independent of the tagging
+       method used.  It also specifies tagging via the (1) the existing MPLS
+       packet Traffic Class (TC) field for MPLS packets, (2) the IP/IPv6
+       DSCP field for IP/IPv6 packets, and (3) a new TCQF Option header for
+       IPv6 packets.
+
+       Target benefits of TCQF include low end-to-end jitter, ease of high-
+       speed hardware implementation, optional ability to support large
+       number of flow in large networks via DiffServ style aggregation by
+       applying TCQF to the DetNet aggregate instead of each DetNet flow
+       individually, and support of wide-area DetNet networks with arbitrary
+       link latencies and latency variations as well as low accuracy clock
+       synchronization.
+pages: 44
+stream: IETF
+stream_state: active
+group: detnet
+last_updated: "2026-01-16"
+expires: "2026-07-20"
+url: https://datatracker.ietf.org/doc/draft-ietf-detnet-tcqf/
+source: datatracker
+ingested_at: "2026-05-21"

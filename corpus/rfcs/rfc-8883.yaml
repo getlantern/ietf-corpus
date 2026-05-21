@@ -1,0 +1,27 @@
+id: rfc-8883
+rfc_number: 8883
+title: ICMPv6 Errors for Discarding Packets Due to Processing Limits
+authors:
+    - name: T. Herbert
+date: 2020-09
+stream: IETF
+area: int
+wg: 6man
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 15
+abstract: Network nodes may discard packets if they are unable to process protocol headers of packets due to processing constraints or limits.  When such packets are dropped, the sender receives no indication, so it cannot take action to address the cause of discarded packets.  This specification defines several new ICMPv6 errors that can be sent by a node that discards packets because it is unable to process the protocol headers.  A node that receives such an ICMPv6 error may use the information to diagnose packet loss and may modify what it sends in future packets to avoid subsequent packet discards.
+keywords:
+    - extension Headers
+    - destination Options
+    - Hop-by-Hop Options
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-6man-icmp-limits-08
+doi: 10.17487/RFC8883
+url: https://www.rfc-editor.org/rfc/rfc8883
+source: rfc-editor-index
+ingested_at: "2026-05-21"

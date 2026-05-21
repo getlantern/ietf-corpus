@@ -1,0 +1,33 @@
+id: rfc-7828
+rfc_number: 7828
+title: The edns-tcp-keepalive EDNS0 Option
+authors:
+    - name: P. Wouters
+    - name: J. Abley
+    - name: S. Dickinson
+    - name: R. Bellis
+date: 2016-04
+stream: IETF
+area: ops
+wg: dnsop
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 11
+abstract: |-
+    DNS messages between clients and servers may be received over either UDP or TCP. UDP transport involves keeping less state on a busy server, but can cause truncation and retries over TCP. Additionally, UDP can be exploited for reflection attacks. Using TCP would reduce retransmits and amplification. However, clients commonly use TCP only for retries and servers typically use idle timeouts on the order of seconds.
+
+    This document defines an EDNS0 option ("edns-tcp-keepalive") that allows DNS servers to signal a variable idle timeout. This signalling encourages the use of long-lived TCP connections by allowing the state associated with TCP transport to be managed effectively with minimal impact on the DNS transaction time.
+keywords:
+    - long-lived
+    - dnssec
+    - DNS
+    - TCP/IP
+    - transport
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-dnsop-edns-tcp-keepalive-06
+doi: 10.17487/RFC7828
+url: https://www.rfc-editor.org/rfc/rfc7828
+source: rfc-editor-index
+ingested_at: "2026-05-21"

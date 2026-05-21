@@ -1,0 +1,13 @@
+id: draft-rfcxml-rfc-swl-103k
+name: draft-rfcxml-rfc-swl-103k
+rev: "06"
+title: SW103K PROTOCOL
+abstract: "This specification defines a new protocol sw103k addresses challenges\r\n   in networks with limited bandwidth, latency constraints, and data\r\n   integrity concerns.  It provides compression and decompression to\r\n   optimize bandwidth utilization in environments such as Data centers,\r\n   internet exchange points, and mobile communications.  The protocol\r\n   operates at the data link layer with a custom frame format including\r\n   SW103K and HAVI headers.  Key features include:\r\n\r\n   - Batch processing of 103 packets with compression - Merkle tree-\r\n   based integrity verification (merklesw103k root hash) - QoS\r\n   mechanisms with 8-bit priority field - Security features including\r\n   AES-256-GCM encryption - Physical layer synchronization with +-1us\r\n   accuracy\r\n\r\n   Jutifying why sw103k is unique:\r\n\r\n   The sw103k protocol is a Layer-2 mechanism that applies stateful\r\n   compression to complete payloads using shared context between\r\n   communicating entities.\r\n\r\n   The protocol assumes that traffic in constrained networks is often\r\n   structured and repetitive and therefore allows endpoints to provision\r\n   payload templates,\r\n\r\n   dictionaries, and delta-encoding state prior to data exchange.\r\n\r\n   During operation, payloads may be represented by compact identifiers\r\n   together with fields that describe deviations from previously\r\n   established state.\r\n\r\n   For traffic patterns that conform to these assumptions,\r\n\r\n   this approach can substantially reduce the number of transmitted\r\n   octets and may achieve compression ratios on the order of 103:1\r\n   for selected telemetry and control messages.  By operating\r\n   independently of IP version, transport protocol, and application\r\n   encoding,\r\n\r\n   sw103k is intended to reduce airtime usage, energy consumption, and\r\n   the need for fragmentation in environments where link capacity and\r\n   device resources are limited."
+pages: 13
+stream_state: active
+group: none
+last_updated: "2025-12-15"
+expires: "2026-06-18"
+url: https://datatracker.ietf.org/doc/draft-rfcxml-rfc-swl-103k/
+source: datatracker
+ingested_at: "2026-05-21"

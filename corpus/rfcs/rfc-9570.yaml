@@ -1,0 +1,36 @@
+id: rfc-9570
+rfc_number: 9570
+title: Deprecating the Use of Router Alert in LSP Ping
+authors:
+    - name: K. Kompella
+    - name: R. Bonica
+    - name: G. Mirsky
+      title: Editor
+date: 2024-05
+stream: IETF
+area: rtg
+wg: mpls
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 9
+abstract: |-
+    The MPLS echo request and MPLS echo response messages, defined in RFC 8029, "Detecting Multiprotocol Label Switched (MPLS) Data-Plane Failures" (usually referred to as LSP ping), are encapsulated in IP packets with headers that include a Router Alert Option (RAO). In actual deployments, the RAO was neither required nor used. Furthermore, RFC 6398 identifies security vulnerabilities associated with the RAO in non-controlled environments, e.g., the case of using the MPLS echo request/reply as inter-area Operations, Administration, and Maintenance (OAM), and recommends against its use outside of controlled environments.
+
+    Therefore, this document retires the RAO for MPLS OAM and updates RFC 8029 to remove the RAO from LSP ping message encapsulations. Furthermore, this document explains why RFC 7506 has been reclassified as Historic.
+
+    Also, this document recommends the use of an IPv6 loopback address (::1/128) as the IPv6 destination address for an MPLS echo request message.
+keywords:
+    - LSP ping
+    - router alert
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-mpls-lspping-norao-08
+updates:
+    - rfc-8029
+doi: 10.17487/RFC9570
+url: https://www.rfc-editor.org/rfc/rfc9570
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,29 @@
+id: draft-ruan-lsr-isis-te-extensions-for-microburst
+name: draft-ruan-lsr-isis-te-extensions-for-microburst
+rev: "00"
+title: IS-IS Traffic Engineering Extensions For Microburst
+abstract: |-
+    This document defines a new IS-IS sub-TLV to advertise microburst-
+       related statistics on links, serving as a supplement to RFC 8570(IS-
+       IS Traffic Engineering (TE) Metric Extensions).  RFC 8570 specifies
+       steady-state TE performance metrics (e.g., latency, jitter, packet
+       loss) but does not cover microburst-related information, which this
+       document intends to address.  Microbursts are short-duration, high-
+       intensity traffic bursts that can cause transient congestion,
+       increased latency, jitter, and packet loss, which are critical issues
+       for latency-sensitive services.  The proposed sub-TLV carries
+       aggregated microburst statistics on a per-traffic-class basis,
+       including total burst count, burst-induced drop metrics, and a
+       configurable measurement interval, along with an Anomalous (A) bit to
+       indicate abnormal microburst conditions.  This extension enhances IS-
+       IS Traffic Engineering capabilities by advertising link microburst
+       statistics,enabling improved traffic engineering and path selection
+       decisions for traffic.
+pages: 9
+stream_state: active
+group: none
+last_updated: "2026-03-26"
+expires: "2026-09-27"
+url: https://datatracker.ietf.org/doc/draft-ruan-lsr-isis-te-extensions-for-microburst/
+source: datatracker
+ingested_at: "2026-05-21"

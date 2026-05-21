@@ -1,0 +1,27 @@
+id: draft-ambekar-oauth-epop
+name: draft-ambekar-oauth-epop
+rev: "01"
+title: JSON Web Token (JWT) Profile for OAuth 2.0 Enveloped Proof of Possession (EPOP)
+abstract: |-
+    This specification defines a profile for OAuth 2.0 sender-constrained
+       credentials in which authorization codes, access tokens, and refresh
+       tokens are cryptographically bound to the client's private key as a
+       single inseparable envelope.  The profile extends sender-constraining
+       beyond HTTP to non-HTTP transports including MQTT, Kafka, the Model
+       Context Protocol (MCP), gRPC, and SASL-based protocols such as those
+       defined in [RFC7628].  It introduces atomic proof-of-possession key
+       rotation, enabling clients to rotate key pairs without disrupting
+       active sessions, and an offline-derived client nonce (cnonce) that
+       eliminates the server-issued nonce round-trip required by existing
+       mechanisms — enabling stateless proof validation critical for non-
+       HTTP and high-throughput deployments.  Authorization servers,
+       resource servers, and clients from different vendors can implement
+       this profile interoperably.
+pages: 43
+stream_state: active
+group: none
+last_updated: "2026-05-19"
+expires: "2026-11-20"
+url: https://datatracker.ietf.org/doc/draft-ambekar-oauth-epop/
+source: datatracker
+ingested_at: "2026-05-21"

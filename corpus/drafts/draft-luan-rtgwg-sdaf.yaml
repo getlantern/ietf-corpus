@@ -1,0 +1,44 @@
+id: draft-luan-rtgwg-sdaf
+name: draft-luan-rtgwg-sdaf
+rev: "00"
+title: Symmetry-Driven Asynchronous Forwarding with Fast Reroute for LEO Satellite Networks (SDAF)
+abstract: |-
+    Interior Gateway Protocols (IGPs) such as OSPF are commonly employed
+       in satellite networks to address topology awareness and autonomous
+       routing in response to link interruptions, link/node failures, and
+       subsequent repairs.  However, IGP-based approaches suffer from
+       inherent limitations.  Synchronization delays between the control
+       plane and the forwarding plane can cause routing black holes, while
+       asynchronous convergence across nodes may induce micro-loops (as
+       described in prior work), leading to packet loss and congestion.
+       These issues are particularly exacerbated in satellite networks
+       characterized by highly dynamic topologies, long inter-satellite
+       propagation delays, and constrained on-board computing resources.
+
+       This document describes the Symmetry-Driven Asynchronous Forwarding
+       (SDAF) mechanism, which leverages the intrinsic symmetry of toroidal
+       topologies in satellite networks.  Low Earth Orbit (LEO) satellite
+       constellations are typically composed of multiple circular orbital
+       planes, forming a toroidal topology by inter-satellite links.  SDAF
+       autonomously triggers and processes reverse flows based solely on
+       local link-state information, without requiring control-plane
+       convergence, protocol extensions, or packet header modifications.
+
+       SDAF is fully compatible with existing protocols and technologies
+       such as OSPFv3, IS-IS, and MPLS, and is specifically tailored to the
+       resource-constrained nature of satellite systems.  It achieves
+       microsecond-scale convergence and low packet loss under failure
+       conditions.
+
+       Simulation results and tests conducted on actual satellite routers
+       demonstrate that the SDAF mechanism significantly suppresses packet
+       loss caused by routing black holes and micro-loops, while also
+       alleviating link congestion and packet reordering issues.
+pages: 16
+stream_state: active
+group: none
+last_updated: "2026-02-25"
+expires: "2026-08-29"
+url: https://datatracker.ietf.org/doc/draft-luan-rtgwg-sdaf/
+source: datatracker
+ingested_at: "2026-05-21"

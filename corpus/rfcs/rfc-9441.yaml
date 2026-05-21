@@ -1,0 +1,48 @@
+id: rfc-9441
+rfc_number: 9441
+title: Static Context Header Compression (SCHC) Compound Acknowledgement (ACK)
+authors:
+    - name: J. Zúñiga
+    - name: C. Gomez
+    - name: S. Aguilar
+    - name: L. Toutain
+    - name: S. Céspedes
+    - name: D. Wistuba
+date: 2023-07
+stream: IETF
+area: int
+wg: lpwan
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 22
+abstract: |-
+    This document updates the Static Context Header Compression (SCHC) and fragmentation protocol (RFC 8724) and the corresponding YANG module (RFC 9363). It defines a SCHC Compound Acknowledgement (ACK) message format and procedure, which are intended to reduce the number of response transmissions (i.e., SCHC ACKs) in the ACK-on-Error Mode, by accumulating bitmaps of several windows in a single SCHC message (i.e., the SCHC Compound ACK).
+
+    Both the message format and procedure are generic, so they can be used, for instance, by any of the four Low-Power Wide Area Network (LPWAN) technologies defined in RFC 8376, which are Sigfox, Long Range Wide Area Network (LoRaWAN), Narrowband Internet of Things (NB-IoT), and IEEE 802.15.4w.
+keywords:
+    - SCHC
+    - LPWAN
+    - IoT
+    - Fragmentation
+    - Reliable Delivery
+    - Link Layer Protocols
+    - Cross-Layer Protocols
+    - Adaptation Layer
+    - Acknowledgment
+    - Sigfox
+    - LoRaWAN
+    - NB-IoT
+    - Compound ACK
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-lpwan-schc-compound-ack-17
+updates:
+    - rfc-8724
+    - rfc-9363
+doi: 10.17487/RFC9441
+url: https://www.rfc-editor.org/rfc/rfc9441
+source: rfc-editor-index
+ingested_at: "2026-05-21"

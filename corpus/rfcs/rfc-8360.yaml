@@ -1,0 +1,36 @@
+id: rfc-8360
+rfc_number: 8360
+title: Resource Public Key Infrastructure (RPKI) Validation Reconsidered
+authors:
+    - name: G. Huston
+    - name: G. Michaelson
+    - name: C. Martinez
+    - name: T. Bruijnzeels
+    - name: A. Newton
+    - name: D. Shaw
+date: 2018-04
+stream: IETF
+area: rtg
+wg: sidr
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 29
+abstract: |-
+    This document specifies an alternative to the certificate validation procedure specified in RFC 6487 that reduces aspects of operational fragility in the management of certificates in the Resource Public Key Infrastructure (RPKI), while retaining essential security features.
+
+    The procedure specified in RFC 6487 requires that Resource Certificates are rejected entirely if they are found to overclaim any resources not contained on the issuing certificate, whereas the validation process defined here allows an issuing Certification Authority (CA) to chose to communicate that such Resource Certificates should be accepted for the intersection of their resources and the issuing certificate.
+
+    It should be noted that the validation process defined here considers validation under a single trust anchor (TA) only. In particular, concerns regarding overclaims where multiple configured TAs claim overlapping resources are considered out of scope for this document.
+
+    This choice is signaled by a set of alternative Object Identifiers (OIDs) per "X.509 Extensions for IP Addresses and AS Identifiers" (RFC 3779) and "Certificate Policy (CP) for the Resource Public Key Infrastructure (RPKI)" (RFC 6484). It should be noted that in case these OIDs are not used for any certificate under a trust anchor, the validation procedure defined here has the same outcome as the procedure defined in RFC 6487.
+
+    Furthermore, this document provides an alternative to Route Origin Authorization (ROA) (RFC 6482) and BGPsec Router Certificate (BGPsec PKI Profiles -- publication requested) validation.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-sidr-rpki-validation-reconsidered-10
+doi: 10.17487/RFC8360
+errata_url: https://www.rfc-editor.org/errata/rfc8360
+url: https://www.rfc-editor.org/rfc/rfc8360
+source: rfc-editor-index
+ingested_at: "2026-05-21"

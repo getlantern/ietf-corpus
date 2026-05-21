@@ -1,0 +1,34 @@
+id: draft-ietf-tls-extended-key-update
+name: draft-ietf-tls-extended-key-update
+rev: "12"
+title: Extended Key Update for Transport Layer Security (TLS) 1.3
+abstract: |-
+    TLS 1.3 ensures forward secrecy by performing an ephemeral Diffie-
+       Hellman key exchange during the initial handshake, protecting past
+       communications even if a party's long-term keys (typically a private
+       key with a corresponding certificate) are later compromised.  While
+       the built-in KeyUpdate mechanism allows application traffic keys to
+       be refreshed during a session, it does not incorporate fresh entropy
+       from a new key exchange and therefore does not provide post-
+       compromise security.  This limitation can pose a security risk in
+       long-lived sessions, such as those found in industrial IoT or
+       telecommunications environments.
+
+       To address this, this specification defines an extended key update
+       mechanism that performs a fresh Diffie-Hellman exchange within an
+       active session, thereby ensuring post-compromise security.  By
+       forcing attackers to exfiltrate new key material repeatedly, this
+       approach mitigates the risks associated with static key compromise.
+       Regular renewal of session keys helps contain the impact of such
+       compromises.  The extension is applicable to both TLS 1.3 and DTLS
+       1.3.
+pages: 42
+stream: IETF
+stream_state: active
+group: tls
+intended_status: Proposed Standard
+last_updated: "2026-04-06"
+expires: "2026-10-08"
+url: https://datatracker.ietf.org/doc/draft-ietf-tls-extended-key-update/
+source: datatracker
+ingested_at: "2026-05-21"

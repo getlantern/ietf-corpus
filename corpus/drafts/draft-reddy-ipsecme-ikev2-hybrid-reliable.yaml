@@ -1,0 +1,29 @@
+id: draft-reddy-ipsecme-ikev2-hybrid-reliable
+name: draft-reddy-ipsecme-ikev2-hybrid-reliable
+rev: "00"
+title: PQ/T Hybrid Composite Key Exchange and Reliable Transport for IKEv2
+abstract: |-
+    The eventual transition to post-quantum key exchange will require
+       elimination of traditional key exchange for reduced protocol
+       complexity and efficiency.  IKEv2 therefore requires a mechanism that
+       can operate in a PQC-only environment, without depending on
+       traditional key exchange algorithms (e.g., MODP DH or ECDH).  As
+       IKEv2 permits arbitrary combinations of algorithms, unnecessary
+       complexity and insecure hybrid constructions are easily implemented.
+
+       This document defines PQ/T hybrid composite key exchange algorithms
+       for IKEv2 and a single combined KE payload that carries both the
+       traditional and post-quantum components.  It also leverages the
+       existing IKEv2 reliable transport mechanism so that large PQC key
+       exchange messages can be reliably exchanged over TCP.  Together,
+       these mechanisms enable secure and efficient PQ/T hybrid deployments
+       today and provide a clear path for IKEv2 to operate in environments
+       where traditional algorithms have been replaced by PQC algorithms.
+pages: 12
+stream_state: active
+group: none
+last_updated: "2026-01-03"
+expires: "2026-07-07"
+url: https://datatracker.ietf.org/doc/draft-reddy-ipsecme-ikev2-hybrid-reliable/
+source: datatracker
+ingested_at: "2026-05-21"

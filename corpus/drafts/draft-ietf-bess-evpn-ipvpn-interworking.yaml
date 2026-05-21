@@ -1,0 +1,29 @@
+id: draft-ietf-bess-evpn-ipvpn-interworking
+name: draft-ietf-bess-evpn-ipvpn-interworking
+rev: "18"
+title: Interconnecting EVPN and IPVPN Domains
+abstract: |-
+    Ethernet Virtual Private Network (EVPN) provides a unified BGP
+       control plane for both intra- and inter-subnet forwarding within
+       tenant networks.  When a tenant network spans multiple domains,
+       including any combination of EVPN and IPVPN domains, it becomes
+       necessary to define the interworking mechanisms among these BGP
+       domains (EVPN and IPVPN) to ensure seamless end-to-end tenant
+       connectivity.  This document defines these interworking procedures.
+
+       In addition, this document defines a new BGP Path Attribute, referred
+       to as D-PATH (Domain PATH), which provides loop prevention for
+       gateway nodes by protecting against control plane loops.  The
+       introduction of D-PATH modifies the BGP best path selection process
+       for Multiprotocol BGP inter-subnet forwarding routes of SAFI 128
+       (IPVPN) and SAFI 70 (EVPN).
+pages: 39
+stream: IETF
+stream_state: active
+group: bess
+intended_status: Proposed Standard
+last_updated: "2026-05-20"
+expires: "2026-09-11"
+url: https://datatracker.ietf.org/doc/draft-ietf-bess-evpn-ipvpn-interworking/
+source: datatracker
+ingested_at: "2026-05-21"

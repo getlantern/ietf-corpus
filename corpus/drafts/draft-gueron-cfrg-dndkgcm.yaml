@@ -1,0 +1,36 @@
+id: draft-gueron-cfrg-dndkgcm
+name: draft-gueron-cfrg-dndkgcm
+rev: "04"
+title: Double Nonce Derive Key AES-GCM (DNDK-GCM)
+abstract: |-
+    This document specifies an authenticated encryption algorithm called
+       Double Nonce Derive Key AES-GCM (DNDK-GCM). It operates with a 32-
+       byte root key and is designed to encrypt with a 24-byte random nonce
+       and optionally to provide for key commitment.
+
+       Encryption takes the root key and a 15-byte portion of the random
+       nonce, and derives a fresh 32-byte encryption key and (optionally) a
+       key commitment value. Then, it invokes AES-GCM with the derived key
+       and the remaining bytes of the nonce, and outputs the ciphertext,
+       authentication tag and the key commitment value.
+
+       Although this is not the primary use case, it is also possible to use
+       DNDK-GCM with a non-repeating but non-random nonce (i.e., a "counter-
+       based nonce").
+
+       The low collision probability in a collection of 24-byte random
+       nonces and the per-nonce derivation of an encryption key extend the
+       lifetime of the root key, and the scheme can support processing up to
+       2^64 bytes under a given root key.
+
+       DNDK-GCM introduces a relatively small overhead compared to using
+       AES-GCM directly, and its security relies only on the standard
+       assumption that AES acts as a pseudorandom permutation.
+pages: 44
+stream_state: active
+group: none
+last_updated: "2026-03-19"
+expires: "2026-09-20"
+url: https://datatracker.ietf.org/doc/draft-gueron-cfrg-dndkgcm/
+source: datatracker
+ingested_at: "2026-05-21"

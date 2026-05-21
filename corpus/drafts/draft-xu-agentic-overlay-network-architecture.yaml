@@ -1,0 +1,35 @@
+id: draft-xu-agentic-overlay-network-architecture
+name: draft-xu-agentic-overlay-network-architecture
+rev: "00"
+title: Architecture for Agentic Overlay Networks
+abstract: |-
+    This document describes an architecture for agentic overlay networks.
+       The architecture enables autonomous software agents, agent gateways,
+       registries, discovery services, and enterprise service hubs to
+       interoperate across administrative domains without replacing the
+       existing Internet protocol stack.
+
+       The architecture separates control-plane coordination from runtime
+       agent interaction.  Management root nodes coordinate trust anchors,
+       semantic taxonomies, and network-wide policy.  Registry service nodes
+       onboard agents and publish signed capability metadata.  Discovery
+       service nodes provide intent-driven candidate selection.  Enterprise
+       service hubs adapt private systems and legacy interfaces into agent-
+       compatible capabilities.  After discovery, runtime authentication and
+       execution are performed by the invoking and target endpoints, which
+       can be agents or gateways, using mutual verification; discovery and
+       management nodes are not required in the runtime path.
+
+       This document defines architectural roles, functional boundaries,
+       metadata expectations, operational workflows, and security
+       considerations for such networks.  It does not define a new transport
+       protocol, a new URI scheme, or a mandatory discovery ranking
+       algorithm.
+pages: 23
+stream_state: active
+group: none
+last_updated: "2026-05-18"
+expires: "2026-11-19"
+url: https://datatracker.ietf.org/doc/draft-xu-agentic-overlay-network-architecture/
+source: datatracker
+ingested_at: "2026-05-21"

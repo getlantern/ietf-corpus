@@ -1,0 +1,41 @@
+id: rfc-7606
+rfc_number: 7606
+title: Revised Error Handling for BGP UPDATE Messages
+authors:
+    - name: E. Chen
+      title: Editor
+    - name: J. Scudder
+      title: Editor
+    - name: P. Mohapatra
+    - name: K. Patel
+date: 2015-08
+stream: IETF
+area: rtg
+wg: idr
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 19
+abstract: |-
+    According to the base BGP specification, a BGP speaker that receives an UPDATE message containing a malformed attribute is required to reset the session over which the offending attribute was received. This behavior is undesirable because a session reset would impact not only routes with the offending attribute but also other valid routes exchanged over the session. This document partially revises the error handling for UPDATE messages and provides guidelines for the authors of documents defining new attributes. Finally, it revises the error handling procedures for a number of existing attributes.
+
+    This document updates error handling for RFCs 1997, 4271, 4360, 4456, 4760, 5543, 5701, and 6368.
+keywords:
+    - BGP
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-idr-error-handling-19
+updates:
+    - rfc-1997
+    - rfc-4271
+    - rfc-4360
+    - rfc-4456
+    - rfc-4760
+    - rfc-5543
+    - rfc-5701
+    - rfc-6368
+doi: 10.17487/RFC7606
+errata_url: https://www.rfc-editor.org/errata/rfc7606
+url: https://www.rfc-editor.org/rfc/rfc7606
+source: rfc-editor-index
+ingested_at: "2026-05-21"

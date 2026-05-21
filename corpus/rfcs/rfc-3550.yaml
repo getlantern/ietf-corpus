@@ -1,0 +1,51 @@
+id: rfc-3550
+rfc_number: 3550
+title: 'RTP: A Transport Protocol for Real-Time Applications'
+authors:
+    - name: H. Schulzrinne
+    - name: S. Casner
+    - name: R. Frederick
+    - name: V. Jacobson
+date: 2003-07
+stream: IETF
+area: rai
+wg: avt
+current_status: INTERNET STANDARD
+publication_status: DRAFT STANDARD
+page_count: 104
+abstract: This memorandum describes RTP, the real-time transport protocol.  RTP provides end-to-end network transport functions suitable for applications transmitting real-time data, such as audio, video or simulation data, over multicast or unicast network services.  RTP does not address resource reservation and does not guarantee quality-of- service for real-time services.  The data transport is augmented by a control protocol (RTCP) to allow monitoring of the data delivery in a manner scalable to large multicast networks, and to provide minimal control and identification functionality.  RTP and RTCP are designed to be independent of the underlying transport and network layers.  The protocol supports the use of RTP-level translators and mixers.  Most of the text in this memorandum is identical to RFC 1889 which it obsoletes.  There are no changes in the packet formats on the wire, only changes to the rules and algorithms governing how the protocol is used.  The biggest change is an enhancement to the scalable timer algorithm for calculating when to send RTCP packets in order to minimize transmission in excess of the intended rate when many participants join a session simultaneously. [STANDARDS-TRACK]
+keywords:
+    - RTP
+    - Real-Time Transport Protocol
+    - end-to-end
+    - network
+    - audio
+    - video
+    - RTCP
+    - RTP Control Protocol
+formats:
+    - TXT
+    - PS
+    - PDF
+    - HTML
+draft: draft-ietf-avt-rtp-new-12
+obsoletes:
+    - rfc-1889
+updated_by:
+    - rfc-5506
+    - rfc-5761
+    - rfc-6051
+    - rfc-6222
+    - rfc-7022
+    - rfc-7160
+    - rfc-7164
+    - rfc-8083
+    - rfc-8108
+    - rfc-8860
+also:
+    - std-64
+doi: 10.17487/RFC3550
+errata_url: https://www.rfc-editor.org/errata/rfc3550
+url: https://www.rfc-editor.org/rfc/rfc3550
+source: rfc-editor-index
+ingested_at: "2026-05-21"

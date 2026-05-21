@@ -1,0 +1,28 @@
+id: rfc-7627
+rfc_number: 7627
+title: Transport Layer Security (TLS) Session Hash and Extended Master Secret Extension
+authors:
+    - name: K. Bhargavan
+      title: Editor
+    - name: A. Delignat-Lavaud
+    - name: A. Pironti
+    - name: A. Langley
+    - name: M. Ray
+date: 2015-09
+stream: IETF
+area: sec
+wg: tls
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 15
+abstract: The Transport Layer Security (TLS) master secret is not cryptographically bound to important session parameters such as the server certificate.  Consequently, it is possible for an active attacker to set up two sessions, one with a client and another with a server, such that the master secrets on the two sessions are the same.  Thereafter, any mechanism that relies on the master secret for authentication, including session resumption, becomes vulnerable to a man-in-the-middle attack, where the attacker can simply forward messages back and forth between the client and server.  This specification defines a TLS extension that contextually binds the master secret to a log of the full handshake that computes it, thus preventing such attacks.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-tls-session-hash-06
+updates:
+    - rfc-5246
+doi: 10.17487/RFC7627
+url: https://www.rfc-editor.org/rfc/rfc7627
+source: rfc-editor-index
+ingested_at: "2026-05-21"

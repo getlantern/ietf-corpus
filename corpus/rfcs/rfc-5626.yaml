@@ -1,0 +1,29 @@
+id: rfc-5626
+rfc_number: 5626
+title: Managing Client-Initiated Connections in the Session Initiation Protocol (SIP)
+authors:
+    - name: C. Jennings
+      title: Editor
+    - name: R. Mahy
+      title: Editor
+    - name: F. Audet
+      title: Editor
+date: 2009-10
+stream: IETF
+area: rai
+wg: sip
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 50
+abstract: The Session Initiation Protocol (SIP) allows proxy servers to initiate TCP connections or to send asynchronous UDP datagrams to User Agents in order to deliver requests.  However, in a large number of real deployments, many practical considerations, such as the existence of firewalls and Network Address Translators (NATs) or the use of TLS with server-provided certificates, prevent servers from connecting to User Agents in this way.  This specification defines behaviors for User Agents, registrars, and proxy servers that allow requests to be delivered on existing connections established by the User Agent.  It also defines keep-alive behaviors needed to keep NAT bindings open and specifies the usage of multiple connections from the User Agent to its registrar. [STANDARDS-TRACK]
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-sip-outbound-20
+updates:
+    - rfc-3261
+    - rfc-3327
+doi: 10.17487/RFC5626
+url: https://www.rfc-editor.org/rfc/rfc5626
+source: rfc-editor-index
+ingested_at: "2026-05-21"

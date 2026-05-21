@@ -1,0 +1,27 @@
+id: draft-maurette-hmtftp
+name: draft-maurette-hmtftp
+rev: "06"
+title: 'HMTFTP: HKDF-Derived TFTP with Optional AEAD Protection (v0.7)'
+abstract: |-
+    HMTFTP is a lightweight UDP file transfer protocol derived from TFTP.
+       It preserves the TFTP transfer model (RRQ/WRQ, DATA, ACK, ERROR, and
+       OACK option acknowledgment) and replaces text options with binary
+       TLVs.  HMTFTP defines optional AEAD protection for DATA payloads
+       using HKDF-derived keys from a pre-shared key (PSK).
+
+       This document describes transfer behavior, extension processing
+       rules, key derivation, nonce construction, and operational guidance
+       for experimental implementations intended to facilitate
+       interoperability.
+
+       This document requests IANA actions for a UDP service name/port and
+       registries for TLV Types and Ciphersuites.  Until assignment, TBD1 is
+       used as the default UDP port value.
+pages: 25
+stream_state: active
+group: none
+last_updated: "2026-03-29"
+expires: "2026-09-30"
+url: https://datatracker.ietf.org/doc/draft-maurette-hmtftp/
+source: datatracker
+ingested_at: "2026-05-21"

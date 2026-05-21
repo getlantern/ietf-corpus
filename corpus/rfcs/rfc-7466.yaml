@@ -1,0 +1,35 @@
+id: rfc-7466
+rfc_number: 7466
+title: An Optimization for the Mobile Ad Hoc Network (MANET) Neighborhood Discovery Protocol (NHDP)
+authors:
+    - name: C. Dearlove
+    - name: T. Clausen
+date: 2015-03
+stream: IETF
+area: rtg
+wg: manet
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 9
+abstract: |-
+    The link quality mechanism of the Mobile Ad Hoc Network (MANET) Neighborhood Discovery Protocol (NHDP) enables "ignoring" some 1-hop neighbors if the measured link quality from that 1-hop neighbor is below an acceptable threshold while still retaining the corresponding link information as acquired from the HELLO message exchange. This allows immediate reinstatement of the 1-hop neighbor if the link quality later improves sufficiently.
+
+    NHDP also collects information about symmetric 2-hop neighbors. However, it specifies that if a link from a symmetric 1-hop neighbor ceases being symmetric, including while "ignored" (as described above), then corresponding symmetric 2-hop neighbors are removed. This may lead to symmetric 2-hop neighborhood information being permanently removed (until further HELLO messages are received) if the link quality of a symmetric 1-hop neighbor drops below the acceptable threshold, even if only for a moment.
+
+    This specification updates RFC 6130 "Mobile Ad Hoc Network (MANET) Neighborhood Discovery Protocol (NHDP)" and RFC 7181 "The Optimized Link State Routing Protocol Version 2 (OLSRv2)" to permit, as an option, retaining, but ignoring, symmetric 2-hop information when the link quality from the corresponding 1-hop neighbor drops below the acceptable threshold. This allows immediate reinstatement of the symmetric 2-hop neighbor if the link quality later improves sufficiently, thus making the symmetric 2-hop neighborhood more "robust".
+keywords:
+    - MANET
+    - NHDP
+    - OLSRv2
+    - link quality
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-manet-nhdp-optimization-04
+updates:
+    - rfc-6130
+    - rfc-7181
+doi: 10.17487/RFC7466
+url: https://www.rfc-editor.org/rfc/rfc7466
+source: rfc-editor-index
+ingested_at: "2026-05-21"

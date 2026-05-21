@@ -1,0 +1,30 @@
+id: draft-hood-agtp-identifiers
+name: draft-hood-agtp-identifiers
+rev: "00"
+title: AGTP Identifier Chain
+abstract: |-
+    This document specifies the AGTP identifier chain: a layered model of
+       identifiers that together produce a tamper-evident chain of custody
+       across every action an AGTP agent takes.  The chain is composed of
+       identifiers already established in the AGTP draft family (Agent-ID,
+       Owner-ID, Session-ID, Task-ID, and the Attribution-Record envelope of
+       base AGTP) together with a small set of additional identifiers
+       introduced by this document (Request-ID, Response-ID, Action-ID,
+       Evaluation-ID, Decision-ID, Audit-ID).  The Audit-ID is the
+       cryptographic hash of an extended Attribution-Record and provides the
+       per-agent hash chain that links every action an agent takes back to
+       its Agent Genesis.  This document defines the identifiers, how they
+       extend the existing Attribution-Record envelope, the construction of
+       the hash chain, and the verification procedure by which a regulator,
+       auditor, or counterparty reconstructs the chain end to end.  The
+       identifier chain is the regulatory backbone of AGTP.  Without it, the
+       protocol can record that something happened but cannot prove who
+       caused it, what authorized it, or what was decided.
+pages: 33
+stream_state: active
+group: none
+last_updated: "2026-05-21"
+expires: "2026-11-22"
+url: https://datatracker.ietf.org/doc/draft-hood-agtp-identifiers/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,28 @@
+id: draft-wang-ipsecme-multi-auth-ikev2-pq
+name: draft-wang-ipsecme-multi-auth-ikev2-pq
+rev: "00"
+title: Multi-Authentication in IKEv2 with Post-quantum Security
+abstract: |-
+    Motivated to mitigate security threats again quantum computers, this
+       draft specifies a general authentication mechanism in the Internet
+       Key Exchange Protocol Version 2 (IKEv2) [RFC7296], called Multi-
+       Authentication.  Namely, two peers can negotiate two or more
+       authentication methods to authenticate each other.  The
+       authentication methods selected do not necessarily belong to the same
+       category.  This mechanism is achieved by adding a new value (17)
+       (TBD) in the "IKEv2 Authentication Method" registry [IANA-IKEv2],
+       maintained by IANA.  To run Multiple Authentication, two peers send
+       the SUPPORTED_AUTH_METHODS Notify, defined in [RFC9593], to negotiate
+       two or more authentication methods for authenticaion in IKEv2.
+
+       [EDNOTE: Code points for Multi-Authentication may need to be assigned
+       in the "IKEv2 Authentication Method" registry [IANA-IKEv2],
+       maintained by IANA]
+pages: 13
+stream_state: active
+group: none
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-wang-ipsecme-multi-auth-ikev2-pq/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,33 @@
+id: rfc-8806
+rfc_number: 8806
+title: Running a Root Server Local to a Resolver
+authors:
+    - name: W. Kumari
+    - name: P. Hoffman
+date: 2020-06
+stream: IETF
+area: ops
+wg: dnsop
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 12
+abstract: |-
+    Some DNS recursive resolvers have longer-than-desired round-trip times to the closest DNS root server; those resolvers may have difficulty getting responses from the root servers, such as during a network attack. Some DNS recursive resolver operators want to prevent snooping by third parties of requests sent to DNS root servers. In both cases, resolvers can greatly decrease the round-trip time and prevent observation of requests by serving a copy of the full root zone on the same server, such as on a loopback address or in the resolver software. This document shows how to start and maintain such a copy of the root zone that does not cause problems for other users of the DNS, at the cost of adding some operational fragility for the operator.
+
+    This document obsoletes RFC 7706.
+keywords:
+    - DNS
+    - local-root
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-dnsop-7706bis-12
+obsoletes:
+    - rfc-7706
+doi: 10.17487/RFC8806
+errata_url: https://www.rfc-editor.org/errata/rfc8806
+url: https://www.rfc-editor.org/rfc/rfc8806
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,32 @@
+id: draft-li-bier-scalable-data-plane
+name: draft-li-bier-scalable-data-plane
+rev: "00"
+title: Scalable Data Plane Architecture for Bit Index Explicit Replication (BIER)
+abstract: |-
+    This document describes an optimized data plane forwarding
+       architecture for Bit Index Explicit Replication (BIER).  The standard
+       BIER forwarding procedures, as conceptually described in RFC 8279,
+       imply a per-bit evaluation of the BitString against the Bit Index
+       Forwarding Table (BIFT) on each Bit Forwarding Router (BFR).  When
+       the BitStringLength is large (e.g., 256 bits or more), this
+       conceptual model presents implementation challenges for high-speed
+       ASIC/NPU forwarding engines in terms of processing latency and
+       hardware table resources.
+
+       This document defines two conceptual data structures -- a Replication
+       Member Table and an Interface BitMask Table -- that decouple the
+       multicast replication decision from per-bit BitString parsing.  The
+       resulting forwarding pipeline operates in time proportional to the
+       number of egress interfaces rather than the BitString length,
+       enabling deterministic and scalable hardware processing.  This
+       mechanism is semantically equivalent to the forwarding procedures of
+       RFC 8279 and does not modify the BIER encapsulation or introduce new
+       protocol signaling.
+pages: 13
+stream_state: active
+group: none
+last_updated: "2026-03-01"
+expires: "2026-09-02"
+url: https://datatracker.ietf.org/doc/draft-li-bier-scalable-data-plane/
+source: datatracker
+ingested_at: "2026-05-21"

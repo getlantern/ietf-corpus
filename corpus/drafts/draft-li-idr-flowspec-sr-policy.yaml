@@ -1,0 +1,31 @@
+id: draft-li-idr-flowspec-sr-policy
+name: draft-li-idr-flowspec-sr-policy
+rev: "03"
+title: BGP Flowspec Redirects to SR Policy
+abstract: |-
+    BGP Flowspec, an extension of BGP, facilitates the distribution of
+       traffic flow specification rules and supports steering traffic into
+       Segment Routing (SR) Policies.  However, current approaches that
+       leverage Flowspec to direct traffic toward a SR Policy exhibit
+       certain limitations (for detailed analysis, refer to Section 1).
+
+       Using the Community Container attribute, this document defines two
+       new standard actions for the BGP Flowspec Version 2 (FSv2) protocol:
+       the Redirect to SR Policy Action and the SRv6 SID Action.  The former
+       enables traffic to be directed to a designated SR Policy, while the
+       latter supports encapsulating an additional SRv6 SID as required
+       during redirection.
+
+       The Redirect to SR Policy Action may be used either independently or
+       in conjunction with the SRv6 SID Action, depending on the specific
+       application scenario.  In addition, the SRv6 SID Action can be
+       combined with other actions supported by FSv2, such as the Redirect
+       to IPv6 Action.
+pages: 11
+stream_state: active
+group: none
+last_updated: "2026-02-27"
+expires: "2026-08-31"
+url: https://datatracker.ietf.org/doc/draft-li-idr-flowspec-sr-policy/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,30 @@
+id: rfc-7660
+rfc_number: 7660
+title: Diameter Congestion and Filter Attributes
+authors:
+    - name: L. Bertz
+    - name: S. Manning
+    - name: B. Hirschman
+date: 2015-10
+stream: IETF
+area: ops
+wg: dime
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 9
+abstract: |-
+    This document defines optional Diameter attributes that can be used to help manage networks that use Explicit Congestion Notification (ECN) or Diameter traffic filters. These new attributes allow for improved data traffic identification, support of ECN, and minimal Diameter filter administration.
+
+    RFC 5777 defines a Filter-Rule Attribute Value Pair (AVP) that accommodates extensions for classification, conditions, and actions. It, however, does not support traffic identification for packets using Explicit Congestion Notification as defined in RFC 3168 and does not provide specific actions when the flow(s) described by the Filter-Rule are congested.
+
+    Further, a Filter-Rule can describe multiple flows but not the exact number of flows. Flow count and other associated data (e.g., packets) are not captured by accounting applications, leaving administrators without useful information regarding the effectiveness or appropriateness of the filter definition.
+
+    The optional attributes defined in this document are forward and backwards compatible with RFC 5777.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-dime-congestion-flow-attributes-02
+doi: 10.17487/RFC7660
+url: https://www.rfc-editor.org/rfc/rfc7660
+source: rfc-editor-index
+ingested_at: "2026-05-21"

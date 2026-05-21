@@ -1,0 +1,42 @@
+id: draft-guo-idr-bgp-security-policy-community
+name: draft-guo-idr-bgp-security-policy-community
+rev: "01"
+title: BGP Communities for Security Policy Intent
+abstract: |-
+    This document specifies a set of standardized BGP community to signal
+       inter-AS routing security policy intent.  The initial focus is on
+       RPKI-based Route Origin Validation (ROV) using ROAs [RFC6482]
+       [RFC6811] [RFC9582].  ROV produces validation outcomes such as
+       "Valid", "Invalid", and "NotFound", but the operational treatment of
+       "NotFound" and similar ambiguous cases is entirely a matter of local
+       policy and often differs across networks.
+
+       This document defines transitive community that allows an Origin AS
+       to explicitly express its security policy expectations regarding how
+       its own originated routes SHOULD be treated when downstream
+       Autonomous Systems (ASes) perform ROA-based origin validation.  A
+       typical example is an Origin AS indicating a preference for strict
+       handling of ambiguous validation outcomes (e.g., NotFound) for its
+       prefixes.
+
+       Unlike validation states, these community does not assert
+       correctness, authorization, or RPKI deployment status, which is
+       confront to [AVOID-RPKI-STATE-IN-BGP].  Instead, they communicate
+       origin-declared policy intent to all downstream ASes, enabling them
+       to correlate this intent with locally derived validation results.  By
+       enabling explicit signaling of security expectations without
+       exporting validation state, this mechanism allows downstream ASes to
+       make more informed policy decisions while reducing the risk of
+       accidental outages caused by misalignment between origin expectations
+       and downstream local policies.
+
+       The mechanism is orthogonal to existing routing security validation
+       technologies and does not alter their semantics or deployment models.
+pages: 18
+stream_state: active
+group: none
+last_updated: "2026-02-13"
+expires: "2026-08-17"
+url: https://datatracker.ietf.org/doc/draft-guo-idr-bgp-security-policy-community/
+source: datatracker
+ingested_at: "2026-05-21"

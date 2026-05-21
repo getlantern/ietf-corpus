@@ -1,0 +1,27 @@
+id: draft-yakung-oauth-agent-attestation
+name: draft-yakung-oauth-agent-attestation
+rev: "00"
+title: Agent Credential Attestation Protocol (ACAP)
+abstract: |-
+    This document defines the Agent Credential Attestation Protocol
+       (ACAP), a cryptographic credentialing protocol for autonomous AI
+       agent pipelines.  An ACAP credential is a short-lived JSON Web Token
+       (JWT) signed with RS256 that carries scope-limited permissions
+       together with a SHA-256 hash of the original human instruction that
+       initiated the task.  Credentials may be delegated to child agents;
+       each delegation narrows scope, cannot outlive its parent, increments
+       a delegation depth counter, and extends a tamper-evident chain of
+       token identifiers.  Every lifecycle event is recorded in an append-
+       only, hash-chained audit log.
+
+       This document specifies the credential format, issuance rules,
+       delegation rules, verification algorithm, revocation semantics,
+       human-in-the-loop approval protocol, and audit log structure.
+pages: 27
+stream_state: active
+group: none
+last_updated: "2026-03-26"
+expires: "2026-09-27"
+url: https://datatracker.ietf.org/doc/draft-yakung-oauth-agent-attestation/
+source: datatracker
+ingested_at: "2026-05-21"

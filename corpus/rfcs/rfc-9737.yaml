@@ -1,0 +1,26 @@
+id: rfc-9737
+rfc_number: 9737
+title: Reporting Errors in NFSv4.2 via LAYOUTRETURN
+authors:
+    - name: T. Haynes
+    - name: T. Myklebust
+date: 2025-02
+stream: IETF
+area: wit
+wg: nfsv4
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 6
+abstract: The Parallel Network File System (pNFS) allows for a file's metadata and data to be on different servers (i.e., the metadata server (MDS) and the data server (DS)).  When the MDS is restarted, the client can still modify the data file component.  During the recovery phase of startup, the MDS and the DSs work together to recover state.  If the client has not encountered errors with the data files, then the state can be recovered and the resilvering of the data files can be avoided.  With any errors, there is no means by which the client can report errors to the MDS.  As such, the MDS has to assume that a file needs resilvering.  This document presents an extension to RFC 8435 to allow the client to update the metadata via LAYOUTRETURN and avoid the resilvering.
+keywords:
+    - NFSv4
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-nfsv4-layrec-04
+doi: 10.17487/RFC9737
+url: https://www.rfc-editor.org/rfc/rfc9737
+source: rfc-editor-index
+ingested_at: "2026-05-21"

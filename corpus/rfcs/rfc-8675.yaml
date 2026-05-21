@@ -1,0 +1,37 @@
+id: rfc-8675
+rfc_number: 8675
+title: A YANG Data Model for Tunnel Interface Types
+authors:
+    - name: M. Boucadair
+    - name: I. Farrer
+    - name: R. Asati
+date: 2019-11
+stream: IETF
+area: int
+wg: softwire
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 16
+abstract: |-
+    This document specifies the initial version of a YANG module "iana-tunnel-type", which contains a collection of IANA-maintained YANG identities used as interface types for tunnel interfaces. The module reflects the "tunnelType" registry maintained by IANA. The latest revision of this YANG module can be obtained from the IANA website.
+
+    Tunnel type values are not directly added to the Tunnel Interface Types YANG module; they must instead be added to the "tunnelType" IANA registry. Once a new tunnel type registration is made by IANA for a new tunneling scheme or even an existing one that is not already listed in the current registry (e.g., LISP, NSH), IANA will update the Tunnel Interface Types YANG module accordingly.
+
+    Some of the IETF-defined tunneling techniques are not listed in the current IANA registry. It is not the intent of this document to update the existing IANA registry with a comprehensive list of tunnel technologies. Registrants must follow the IETF registration procedure for interface types whenever a new tunnel type is needed.
+keywords:
+    - softwire
+    - Augment tunnel
+    - tunnel management
+    - tunnel provisioning
+    - tunnel activation
+    - tunnel automation
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-softwire-iftunnel-07
+doi: 10.17487/RFC8675
+url: https://www.rfc-editor.org/rfc/rfc8675
+source: rfc-editor-index
+ingested_at: "2026-05-21"

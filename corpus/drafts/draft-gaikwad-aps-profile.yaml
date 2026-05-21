@@ -1,0 +1,35 @@
+id: draft-gaikwad-aps-profile
+name: draft-gaikwad-aps-profile
+rev: "00"
+title: Agent Persistent State Profile
+abstract: |-
+    Autonomous agents increasingly maintain durable persistent state
+       containing user preferences, embedding vectors, safety logs,
+       intermediate reasoning steps, and audit traces.  Today, agent
+       frameworks treat storage as a generic file system, while storage
+       administrators treat agents as stateless virtual machines.  This
+       "layer mismatch" leads to fragility, poor performance, and privacy
+       risks.
+
+       The Agent Persistent State (APS) Profile defines an experimental,
+       vendor-neutral storage service class for durable agent state.  APS
+       emphasizes *compliance*: ensuring that memory associated with a
+       specific user or agent identity can be retained, audited, and
+       cryptographically erased.  APS also addresses high-frequency small I/
+       O, vector index workloads, crash consistency, and Kubernetes/CSI
+       [CSI] integration.
+
+       APS introduces a Usage Class ("AgentPersistentState"), a versioned
+       PersistentStateLineOfService schema, guidance for container
+       orchestration systems, non-normative bindings for Swordfish
+       [Swordfish] and Redfish [Redfish], and considerations for multi-
+       tenancy.  APS is intended as an Experimental RFC to gather
+       implementation feedback prior to any standards-track work.
+pages: 22
+stream_state: active
+group: none
+last_updated: "2025-11-30"
+expires: "2026-06-03"
+url: https://datatracker.ietf.org/doc/draft-gaikwad-aps-profile/
+source: datatracker
+ingested_at: "2026-05-21"

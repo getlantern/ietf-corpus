@@ -1,0 +1,22 @@
+id: rfc-9187
+rfc_number: 9187
+title: Sequence Number Extension for Windowed Protocols
+authors:
+    - name: J. Touch
+date: 2022-01
+stream: INDEPENDENT
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 10
+abstract: Sliding window protocols use finite sequence numbers to determine segment placement and order.  These sequence number spaces wrap around and are reused during the operation of such protocols.  This document describes a way to extend the size of these sequence numbers at the endpoints to avoid the impact of that wrap and reuse without transmitting additional information in the packet header.  The resulting extended sequence numbers can be used at the endpoints in encryption and authentication algorithms to ensure input bit patterns do not repeat over the lifetime of a connection.
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-touch-sne-02
+doi: 10.17487/RFC9187
+errata_url: https://www.rfc-editor.org/errata/rfc9187
+url: https://www.rfc-editor.org/rfc/rfc9187
+source: rfc-editor-index
+ingested_at: "2026-05-21"

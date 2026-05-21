@@ -1,0 +1,28 @@
+id: draft-zwg-rtgwg-enhanced-bgp-resilience
+name: draft-zwg-rtgwg-enhanced-bgp-resilience
+rev: "00"
+title: Enhanced BGP Resilience
+abstract: |-
+    According to the base BGP specification, a BGP speaker that receives
+       an UPDATE message containing a malformed attribute is required to
+       reset the session over which the offending attribute was received.
+       RFC7606 revises the error handling procedures for a number of
+       existing attributes.  The use of the "treat-as-withdraw" and
+       "attribute discard" approaches significantly reduces the likelihood
+       of BGP sessions being reset when receiving malformed BGP update
+       messages, thereby greatly enhancing network stability.  However, in
+       practical applications, there are still numerous instances where BGP
+       session oscillations occur due to the receipt of malformed BGP update
+       messages, unrecognized attribute fields, or routing rules generated
+       by a certain BGP AFI/SAFI that affect the forwarding of BGP messages.
+
+       This document introduces some approaches to enhance the stability of
+       BGP sessions.
+pages: 9
+stream_state: active
+group: none
+last_updated: "2025-11-24"
+expires: "2026-05-28"
+url: https://datatracker.ietf.org/doc/draft-zwg-rtgwg-enhanced-bgp-resilience/
+source: datatracker
+ingested_at: "2026-05-21"

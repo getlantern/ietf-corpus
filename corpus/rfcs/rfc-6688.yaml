@@ -1,0 +1,33 @@
+id: rfc-6688
+rfc_number: 6688
+title: Parallel NFS (pNFS) Block Disk Protection
+authors:
+    - name: D. Black
+      title: Editor
+    - name: J. Glasgow
+    - name: S. Faibish
+date: 2012-07
+stream: IETF
+area: wit
+wg: nfsv4
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 6
+abstract: Parallel NFS (pNFS) extends the Network File System version 4 (NFSv4) to enable direct client access to file data on storage devices and bypass the NFSv4 server.  This can increase both performance and parallelism, but it requires additional client functionality, some of which depends upon the type of storage used.  The pNFS specification for block storage (RFC 5663) describes how clients can identify the volumes used for pNFS, but this mechanism requires communication with the NFSv4 server.  This document updates RFC 5663 to add a mechanism that enables identification of block storage devices used by pNFS file systems without communicating with the server.  This enables clients to control access to pNFS block devices when the client initially boots, as opposed to waiting until the client can communicate with the NFSv4 server. [STANDARDS-TRACK]
+keywords:
+    - ']--------]'
+    - NFS
+    - NFSv4
+    - pNFS
+    - SAN
+    - GPT
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-nfsv4-pnfs-block-disk-protection-03
+updates:
+    - rfc-5663
+doi: 10.17487/RFC6688
+url: https://www.rfc-editor.org/rfc/rfc6688
+source: rfc-editor-index
+ingested_at: "2026-05-21"

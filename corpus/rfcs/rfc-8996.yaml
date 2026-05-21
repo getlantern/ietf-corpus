@@ -1,0 +1,125 @@
+id: rfc-8996
+rfc_number: 8996
+title: Deprecating TLS 1.0 and TLS 1.1
+authors:
+    - name: K. Moriarty
+    - name: S. Farrell
+date: 2021-03
+stream: IETF
+area: sec
+wg: tls
+current_status: BEST CURRENT PRACTICE
+publication_status: BEST CURRENT PRACTICE
+page_count: 18
+abstract: |-
+    This document formally deprecates Transport Layer Security (TLS) versions 1.0 (RFC 2246) and 1.1 (RFC 4346). Accordingly, those documents have been moved to Historic status. These versions lack support for current and recommended cryptographic algorithms and mechanisms, and various government and industry profiles of applications using TLS now mandate avoiding these old TLS versions. TLS version 1.2 became the recommended version for IETF protocols in 2008 (subsequently being obsoleted by TLS version 1.3 in 2018), providing sufficient time to transition away from older versions. Removing support for older versions from implementations reduces the attack surface, reduces opportunity for misconfiguration, and streamlines library and product maintenance.
+
+    This document also deprecates Datagram TLS (DTLS) version 1.0 (RFC 4347) but not DTLS version 1.2, and there is no DTLS version 1.1.
+
+    This document updates many RFCs that normatively refer to TLS version 1.0 or TLS version 1.1, as described herein. This document also updates the best practices for TLS usage in RFC 7525; hence, it is part of BCP 195.
+keywords:
+    - TLS
+    - deprecate
+    - TLSv1.0
+    - TLSv1.1
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-tls-oldversions-deprecate-12
+obsoletes:
+    - rfc-5469
+    - rfc-7507
+updates:
+    - rfc-3261
+    - rfc-3329
+    - rfc-3436
+    - rfc-3470
+    - rfc-3501
+    - rfc-3552
+    - rfc-3568
+    - rfc-3656
+    - rfc-3749
+    - rfc-3767
+    - rfc-3856
+    - rfc-3871
+    - rfc-3887
+    - rfc-3903
+    - rfc-3943
+    - rfc-3983
+    - rfc-4097
+    - rfc-4111
+    - rfc-4162
+    - rfc-4168
+    - rfc-4217
+    - rfc-4235
+    - rfc-4261
+    - rfc-4279
+    - rfc-4497
+    - rfc-4513
+    - rfc-4531
+    - rfc-4540
+    - rfc-4582
+    - rfc-4616
+    - rfc-4642
+    - rfc-4680
+    - rfc-4681
+    - rfc-4712
+    - rfc-4732
+    - rfc-4743
+    - rfc-4744
+    - rfc-4785
+    - rfc-4791
+    - rfc-4823
+    - rfc-4851
+    - rfc-4964
+    - rfc-4975
+    - rfc-4976
+    - rfc-4992
+    - rfc-5018
+    - rfc-5019
+    - rfc-5023
+    - rfc-5024
+    - rfc-5049
+    - rfc-5054
+    - rfc-5091
+    - rfc-5158
+    - rfc-5216
+    - rfc-5238
+    - rfc-5263
+    - rfc-5281
+    - rfc-5364
+    - rfc-5415
+    - rfc-5422
+    - rfc-5456
+    - rfc-5734
+    - rfc-5878
+    - rfc-5953
+    - rfc-6012
+    - rfc-6042
+    - rfc-6083
+    - rfc-6084
+    - rfc-6176
+    - rfc-6347
+    - rfc-6353
+    - rfc-6367
+    - rfc-6460
+    - rfc-6614
+    - rfc-6739
+    - rfc-6749
+    - rfc-6750
+    - rfc-7030
+    - rfc-7465
+    - rfc-7525
+    - rfc-7562
+    - rfc-7568
+    - rfc-8261
+    - rfc-8422
+also:
+    - bcp-195
+doi: 10.17487/RFC8996
+errata_url: https://www.rfc-editor.org/errata/rfc8996
+url: https://www.rfc-editor.org/rfc/rfc8996
+source: rfc-editor-index
+ingested_at: "2026-05-21"

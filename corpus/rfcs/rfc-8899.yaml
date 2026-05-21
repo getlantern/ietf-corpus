@@ -1,0 +1,44 @@
+id: rfc-8899
+rfc_number: 8899
+title: Packetization Layer Path MTU Discovery for Datagram Transports
+authors:
+    - name: G. Fairhurst
+    - name: T. Jones
+    - name: M. Tüxen
+    - name: I. Rüngeler
+    - name: T. Völker
+date: 2020-09
+stream: IETF
+area: wit
+wg: tsvwg
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 35
+abstract: |-
+    This document specifies Datagram Packetization Layer Path MTU Discovery (DPLPMTUD). This is a robust method for Path MTU Discovery (PMTUD) for datagram Packetization Layers (PLs). It allows a PL, or a datagram application that uses a PL, to discover whether a network path can support the current size of datagram. This can be used to detect and reduce the message size when a sender encounters a packet black hole. It can also probe a network path to discover whether the maximum packet size can be increased. This provides functionality for datagram transports that is equivalent to the PLPMTUD specification for TCP, specified in RFC 4821, which it updates. It also updates the UDP Usage Guidelines to refer to this method for use with UDP datagrams and updates SCTP.
+
+    The document provides implementation notes for incorporating Datagram PMTUD into IETF datagram transports or applications that use datagram transports.
+
+    This specification updates RFC 4960, RFC 4821, RFC 6951, RFC 8085, and RFC 8261.
+keywords:
+    - UDP
+    - SCTP
+    - Transport
+    - PMTUD
+    - PLPMTUD
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-tsvwg-datagram-plpmtud-22
+updates:
+    - rfc-4821
+    - rfc-4960
+    - rfc-6951
+    - rfc-8085
+    - rfc-8261
+doi: 10.17487/RFC8899
+url: https://www.rfc-editor.org/rfc/rfc8899
+source: rfc-editor-index
+ingested_at: "2026-05-21"

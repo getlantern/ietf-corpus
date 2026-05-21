@@ -1,0 +1,33 @@
+id: draft-mw-wimse-transitive-attestation
+name: draft-mw-wimse-transitive-attestation
+rev: "00"
+title: 'Transitive Attestation for Sovereign Workloads: A WIMSE Profile'
+abstract: |-
+    This document defines a *WIMSE Profile* for Transitive Attestation
+       within the Workload Identity in Multi-Service Environments (WIMSE)
+       framework.  It addresses the critical problem of *Identity
+       Portability*, where software credentials (e.g., bearer tokens or
+       keys) can be misappropriated and used from unauthorized
+       environments—a risk amplified by the emergence of autonomous *AI
+       Agents* that may move across jurisdictions or be hijacked via *prompt
+       injection attacks*. By providing a standardized *Identity Conveyance*
+       mechanism, this profile cryptographically binds software workloads to
+       their local execution environment ("Proof of Residency") through a
+       transitive chain of trust.  This chain consumes *Evidence* from the
+       underlying platform—supporting both *high-assurance* RATS-based
+       profiles (e.g., [[!I-D.lkspa-wimse-verifiable-geo-fence]]) for
+       residency verification and *standard* Workload Identity Agents for
+       basic co-location proofs—to ensure that an identity is only valid
+       when used from a verified, integral, or geographically compliant
+       host.  The integrity and hardware-rooted security of the Workload
+       Identity Agent itself is considered out-of-scope for this document
+       and is addressed in the *Verifiable Geofencing* profile [[!I-D.lkspa-
+       wimse-verifiable-geo-fence]].
+pages: 11
+stream_state: active
+group: none
+last_updated: "2026-02-26"
+expires: "2026-08-30"
+url: https://datatracker.ietf.org/doc/draft-mw-wimse-transitive-attestation/
+source: datatracker
+ingested_at: "2026-05-21"

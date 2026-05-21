@@ -1,0 +1,34 @@
+id: rfc-9569
+rfc_number: 9569
+title: The Application-Layer Traffic Optimization (ALTO) Transport Information Publication Service (TIPS)
+authors:
+    - name: K. Gao
+    - name: R. Schott
+    - name: Y. R. Yang
+    - name: L. Delwiche
+    - name: L. Keller
+date: 2024-09
+stream: IETF
+area: ops
+wg: alto
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 40
+abstract: |-
+    "Application-Layer Traffic Optimization (ALTO) Protocol" (RFC 7285) leverages HTTP/1.1 and is designed for the simple, sequential request-reply use case, in which an ALTO client requests a sequence of information resources and the server responds with the complete content of each resource, one at a time.
+
+    RFC 8895, which describes ALTO incremental updates using Server-Sent Events (SSE), defines a multiplexing protocol on top of HTTP/1.x, so that an ALTO server can incrementally push resource updates to clients whenever monitored network information resources change, allowing the clients to monitor multiple resources at the same time. However, HTTP/2 and later versions already support concurrent, non-blocking transport of multiple streams in the same HTTP connection.
+
+    To take advantage of newer HTTP features, this document introduces the ALTO Transport Information Publication Service (TIPS). TIPS uses an incremental RESTful design to give an ALTO client the new capability to explicitly and concurrently (in a non-blocking manner) request (or pull) specific incremental updates using HTTP/2 or HTTP/3, while still functioning for HTTP/1.1.
+keywords:
+    - incremental update
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-alto-new-transport-22
+doi: 10.17487/RFC9569
+url: https://www.rfc-editor.org/rfc/rfc9569
+source: rfc-editor-index
+ingested_at: "2026-05-21"

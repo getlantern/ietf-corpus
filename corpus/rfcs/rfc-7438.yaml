@@ -1,0 +1,32 @@
+id: rfc-7438
+rfc_number: 7438
+title: Multipoint LDP (mLDP) In-Band Signaling with Wildcards
+authors:
+    - name: IJ. Wijnands
+      title: Editor
+    - name: E. Rosen
+    - name: A. Gulko
+    - name: U. Joorde
+    - name: J. Tantsura
+date: 2015-01
+stream: IETF
+area: rtg
+wg: mpls
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 16
+abstract: There are scenarios in which an IP multicast tree traverses an MPLS domain.  In these scenarios, it can be desirable to convert the IP multicast tree "seamlessly" into an MPLS Multipoint Label Switched Path (MP-LSP) when it enters the MPLS domain, and then to convert it back to an IP multicast tree when it exits the MPLS domain.  Previous documents specify procedures that allow certain kinds of IP multicast trees (either Source-Specific Multicast trees or Bidirectional Multicast trees) to be attached to an MPLS Multipoint Label Switched Path (MP-LSP).  However, the previous documents do not specify procedures for attaching IP Any-Source Multicast trees to MP-LSPs, nor do they specify procedures for aggregating multiple IP multicast trees onto a single MP-LSP.  This document specifies the procedures to support these functions.  It does so by defining "wildcard" encodings that make it possible to specify, when setting up an MP- LSP, that a set of IP multicast trees, or a shared IP multicast tree, should be attached to that MP-LSP.  Support for non-bidirectional IP Any-Source Multicast trees is subject to certain applicability restrictions that are discussed in this document.  This document updates RFCs 6826 and 7246.
+keywords:
+    - mpls
+    - multicast
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-mpls-mldp-in-band-wildcard-encoding-03
+updates:
+    - rfc-6826
+    - rfc-7246
+doi: 10.17487/RFC7438
+url: https://www.rfc-editor.org/rfc/rfc7438
+source: rfc-editor-index
+ingested_at: "2026-05-21"

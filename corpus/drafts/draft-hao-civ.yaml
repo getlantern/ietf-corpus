@@ -1,0 +1,38 @@
+id: draft-hao-civ
+name: draft-hao-civ
+rev: "02"
+title: Caller ID Verification In Heterogeneous Telecommunication Networks
+abstract: |-
+    This document defines an extension to the INVITE header of the
+       Session Initiation Protocol (SIP) to support a Caller ID Verification
+       (CIV) method.  CIV authenticates the caller ID of an incoming call
+       through a challenge-and-response process across both IP and non-IP
+       networks without requiring a trusted third party or a public key
+       infrastructure.  When receiving a call with a claimed phone number,
+       the called party holds the call and sends a quickly terminated INVITE
+       request (like a flash call) to that number, carrying a short 4-digit
+       challenge embedded as part of the caller ID.  A genuine caller would
+       receive the challenge and respond by echoing the same digits, e.g.,
+       through DTMF (Dual-Tone Multi-Frequency).  The proposed extension
+       involves two changes to the INVITE header.  First, it adds a new
+       option tag, "civ", in the Supported header field of the INVITE
+       request.  This tag allows the calling party to indicate support for
+       CIV in the initial call.  Second, it adds a special value "civ-veri-
+       call" for the Purpose parameter of the Call-Info header field.  This
+       value allows the called party to make a verification call, indicating
+       the purpose of the call is to transmit a challenge rather than
+       establish a phone conversation.  CIV uses the standard Session-ID
+       header in the INVITE request to allow the calling party to explicitly
+       match the verification call with the initial call.  Whilst this
+       document focuses on IP networks, the same CIV protocol also works
+       with non-IP networks (e.g., SS7) by including the "civ" tag, the
+       "civ-veri-call" value and the session ID in the User-to-User
+       Information (UUI) parameter.
+pages: 27
+stream_state: active
+group: none
+last_updated: "2025-12-10"
+expires: "2026-06-13"
+url: https://datatracker.ietf.org/doc/draft-hao-civ/
+source: datatracker
+ingested_at: "2026-05-21"

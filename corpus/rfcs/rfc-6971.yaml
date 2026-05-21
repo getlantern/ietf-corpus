@@ -1,0 +1,33 @@
+id: rfc-6971
+rfc_number: 6971
+title: Depth-First Forwarding (DFF) in Unreliable Networks
+authors:
+    - name: U. Herberg
+      title: Editor
+    - name: A. Cardenas
+    - name: T. Iwao
+    - name: M. Dow
+    - name: S. Cespedes
+date: 2013-06
+stream: IETF
+wg: non working group
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 41
+abstract: This document specifies the Depth-First Forwarding (DFF) protocol for IPv6 networks, a data-forwarding mechanism that can increase reliability of data delivery in networks with dynamic topology and/or lossy links.  The protocol operates entirely on the forwarding plane but may interact with the routing plane.  DFF forwards data packets using a mechanism similar to a "depth-first search" for the destination of a packet.  The routing plane may be informed of failures to deliver a packet or loops.  This document specifies the DFF mechanism both for IPv6 networks (as specified in RFC 2460) and for "mesh-under" Low-Power Wireless Personal Area Networks (LoWPANs), as specified in RFC 4944.  The design of DFF assumes that the underlying link layer provides means to detect if a packet has been successfully delivered to the Next Hop or not.  It is applicable for networks with little traffic and is used for unicast transmissions only.
+keywords:
+    - DFF
+    - Depth first forwarding
+    - IPv6
+    - Forwarding plane
+    - Lossy networks
+    - Reliability
+formats:
+    - TXT
+    - HTML
+draft: draft-cardenas-dff-14
+doi: 10.17487/RFC6971
+errata_url: https://www.rfc-editor.org/errata/rfc6971
+url: https://www.rfc-editor.org/rfc/rfc6971
+source: rfc-editor-index
+ingested_at: "2026-05-21"

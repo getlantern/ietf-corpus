@@ -1,0 +1,26 @@
+id: draft-abinabraham-vrrp-unicast
+name: draft-abinabraham-vrrp-unicast
+rev: "00"
+title: Unicast Support for the Virtual Router Redundancy Protocol (VRRP)
+abstract: |-
+    The Virtual Router Redundancy Protocol (VRRP) is specified for
+       multicast operation on a shared LAN in RFC 9568.  Some deployments,
+       including virtualized and cloud environments, require VRRP-like
+       first-hop redundancy but cannot use multicast delivery for VRRP
+       advertisements.  This document updates RFC 9568 by defining an
+       optional unicast mode for VRRP.
+
+       In unicast mode, VRRP advertisements are sent to configured peer
+       addresses rather than to the VRRP multicast group.  This document
+       preserves the VRRP packet format, protocol number, virtual IP
+       semantics, and host-facing forwarding behavior defined in RFC 9568,
+       while adding explicit peer configuration and receive-side source
+       validation for unicast operation.
+pages: 12
+stream_state: active
+group: none
+last_updated: "2026-04-20"
+expires: "2026-10-22"
+url: https://datatracker.ietf.org/doc/draft-abinabraham-vrrp-unicast/
+source: datatracker
+ingested_at: "2026-05-21"

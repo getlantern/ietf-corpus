@@ -1,0 +1,29 @@
+id: draft-ietf-dtn-btpu
+name: draft-ietf-dtn-btpu
+rev: "02"
+title: Bundle Transfer Protocol - Unidirectional
+abstract: |-
+    This document defines a protocol for the unidirectional transfer of
+       large binary objects, typically Bundle Protocol version 7 bundles,
+       between two nodes connected by a unidirectional, unreliable, frame-
+       based link-layer protocol, without requiring IP services.
+
+       The protocol does not require a return path for acknowledgements, but
+       instead supports data repetition as a mechanism to protect against
+       data loss.  It fully supports the disaggregation of flows of binary
+       objects of different priority, preventing head-of-line blocking
+       impacting performance.
+
+       The wire format of the protocol is designed to enable performant
+       implementation in hardware or software, with the aim of enabling
+       protocol implementations to run at the line-rate of the underlying
+       link-layer protocol.
+pages: 25
+stream: IETF
+stream_state: active
+group: dtn
+last_updated: "2026-02-17"
+expires: "2026-08-21"
+url: https://datatracker.ietf.org/doc/draft-ietf-dtn-btpu/
+source: datatracker
+ingested_at: "2026-05-21"

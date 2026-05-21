@@ -1,0 +1,31 @@
+id: draft-ietf-bess-evpn-unequal-lb
+name: draft-ietf-bess-evpn-unequal-lb
+rev: "35"
+title: Weighted Multi-Path Procedures for EVPN Multi-Homing
+abstract: |-
+    Ethernet VPN (EVPN) provides all-active multi-homing for Customer
+       Equipment (CE) devices connected to multiple Provider Edge (PE)
+       devices, enabling equal cost load balancing of both bridged and
+       routed traffic across the set of multi-homing PEs.  However, existing
+       procedures implicitly assume equal access bandwidth distribution
+       among the multi-homing PEs, which can constrain link additions or
+       removals and may not handle unequal PE-CE link bandwidth following
+       link failures.  This document specifies extensions to EVPN procedures
+       to support weighted multi-pathing in proportion to PE-CE link
+       bandwidth or operator-defined weights, thereby providing greater
+       flexibility and resilience in multi-homing deployments.  The
+       extensions include signaling mechanisms to distribute traffic across
+       egress PEs based on relative bandwidth or weight, and enhancements to
+       Broadcast, Unknown Unicast, and Multicast (BUM) designated forwarder
+       (DF) election to achieve weighted DF distribution across the multi-
+       homing PE set.
+pages: 25
+stream: IETF
+stream_state: active
+group: bess
+intended_status: Proposed Standard
+last_updated: "2026-05-20"
+expires: "2026-09-16"
+url: https://datatracker.ietf.org/doc/draft-ietf-bess-evpn-unequal-lb/
+source: datatracker
+ingested_at: "2026-05-21"

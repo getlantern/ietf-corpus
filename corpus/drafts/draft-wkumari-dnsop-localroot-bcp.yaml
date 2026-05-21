@@ -1,0 +1,26 @@
+id: draft-wkumari-dnsop-localroot-bcp
+name: draft-wkumari-dnsop-localroot-bcp
+rev: "04"
+title: Populating resolvers with the root zone
+abstract: |-
+    DNS recursive resolver operators need to provide the best service
+       possible for their users, which includes providing an operationally
+       robust and privacy protecting service.  Challenges to these
+       deployment goals include difficulty of getting responses from the
+       root servers (such as during a network attack), longer-than-desired
+       round-trip times to the closest DNS root server, and privacy issues
+       relating to queries sent to the DNS root servers.  Resolvers can
+       solve all of these issues by simply serving an already cached a copy
+       of the full root zone.
+
+       This document shows how resolvers can fetch, cache and maintain a
+       copy of the root zone, how to detect if the contents becomes stale,
+       and procedures for handling error conditions.
+pages: 15
+stream_state: active
+group: none
+last_updated: "2026-03-16"
+expires: "2026-09-17"
+url: https://datatracker.ietf.org/doc/draft-wkumari-dnsop-localroot-bcp/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,37 @@
+id: draft-howe-vcon-agent-session
+name: draft-howe-vcon-agent-session
+rev: "00"
+title: vCon Agent Session
+abstract: |-
+    This document defines an "agent_session" extension for Virtualized
+       Conversations (vCon) that profiles the use of vCon parties, dialog,
+       analysis, and attachments to carry the record of an autonomous AI
+       agent's internal session - its prompts, tool invocations, tool
+       results, reasoning, and file or artifact provenance - alongside the
+       human-facing conversation that the agent participated in or acted
+       upon.
+
+       The extension is a Compatible vCon extension.  It introduces no new
+       top-level fields and does not alter the semantics of existing ones.
+       Instead, it specifies (a) how an autonomous agent is represented as a
+       vCon party, (b) how agent message turns are placed in the dialog
+       array, (c) how the internal agent trace (tool calls, results,
+       reasoning, system events) is carried as a structured analysis entry
+       whose body conforms to the Verifiable Agent Conversations (VAC) CDDL
+       schema [I-D.draft-birkholz-verifiable-agent-conversations], and (d)
+       how files and artifacts modified by the agent are carried as
+       attachments.
+
+       By projecting agent-session data into the vCon model, implementations
+       inherit vCon's party/identity model, the lawful basis framework
+       [I-D.draft-howe-vcon-lawful-basis], the lifecycle and redaction
+       machinery [I-D.draft-howe-vcon-lifecycle], and JWS-based signing,
+       without re-specifying any of those concerns.
+pages: 13
+stream_state: active
+group: none
+last_updated: "2026-05-20"
+expires: "2026-11-21"
+url: https://datatracker.ietf.org/doc/draft-howe-vcon-agent-session/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,32 @@
+id: draft-ietf-ippm-encrypted-pdmv2
+name: draft-ietf-ippm-encrypted-pdmv2
+rev: "13"
+title: IPv6 Performance and Diagnostic Metrics Version 2 (PDMv2) Destination Option
+abstract: |-
+    RFC 8250 defines an IPv6 Destination Option that carries Performance
+       and Diagnostic Metrics (PDM) such as sequence numbers and timing
+       information.  While useful for measurement and troubleshooting,
+       clear-text PDM data may expose operational characteristics of
+       endpoints and networks.
+
+       This document defines PDMv2, a revised version of PDM that introduces
+       a registration-based security model.  Instead of specifying
+       cryptographic algorithms or inline key negotiation, PDMv2 relies on a
+       prior registration process to authenticate entities, authorize
+       participation, and establish shared secrets.  These secrets are then
+       used by endpoints and authorized analyzers to protect and interpret
+       PDMv2 data according to local policy.
+
+       This document specifies the PDMv2 semantics, header structure, and
+       operational model.  Cryptographic algorithms, key derivation
+       functions, and cipher negotiation are explicitly out of scope.
+pages: 16
+stream: IETF
+stream_state: active
+group: ippm
+intended_status: Proposed Standard
+last_updated: "2026-01-19"
+expires: "2026-07-23"
+url: https://datatracker.ietf.org/doc/draft-ietf-ippm-encrypted-pdmv2/
+source: datatracker
+ingested_at: "2026-05-21"

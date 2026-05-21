@@ -1,0 +1,32 @@
+id: rfc-8220
+rfc_number: 8220
+title: Protocol Independent Multicast (PIM) over Virtual Private LAN Service (VPLS)
+authors:
+    - name: O. Dornon
+    - name: J. Kotalwar
+    - name: V. Hemige
+    - name: R. Qiu
+    - name: Z. Zhang
+date: 2017-09
+stream: IETF
+area: rtg
+wg: pals
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 43
+abstract: |-
+    This document describes the procedures and recommendations for Virtual Private LAN Service (VPLS) Provider Edges (PEs) to facilitate replication of multicast traffic to only certain ports (behind which there are interested Protocol Independent Multicast (PIM) routers and/or Internet Group Management Protocol (IGMP) hosts) via PIM snooping and proxying.
+
+    With PIM snooping, PEs passively listen to certain PIM control messages to build control and forwarding states while transparently flooding those messages. With PIM proxying, PEs do not flood PIM Join/Prune messages but only generate their own and send them out of certain ports, based on the control states built from downstream Join/Prune messages. PIM proxying is required when PIM Join suppression is enabled on the Customer Edge (CE) devices and is useful for reducing PIM control traffic in a VPLS domain.
+
+    This document also describes PIM relay, which can be viewed as lightweight proxying, where all downstream Join/Prune messages are simply forwarded out of certain ports and are not flooded, thereby avoiding the triggering of PIM Join suppression on CE devices.
+keywords:
+    - multicast
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-pals-vpls-pim-snooping-06
+doi: 10.17487/RFC8220
+url: https://www.rfc-editor.org/rfc/rfc8220
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,31 @@
+id: rfc-4043
+rfc_number: 4043
+title: Internet X.509 Public Key Infrastructure Permanent Identifier
+authors:
+    - name: D. Pinkas
+    - name: T. Gindin
+date: 2005-05
+stream: IETF
+area: sec
+wg: pkix
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 15
+abstract: |-
+    This document defines a new form of name, called permanent identifier, that may be included in the subjectAltName extension of a public key certificate issued to an entity.
+
+    The permanent identifier is an optional feature that may be used by a CA to indicate that two or more certificates relate to the same entity, even if they contain different subject name (DNs) or different names in the subjectAltName extension, or if the name or the affiliation of that entity stored in the subject or another name form in the subjectAltName extension has changed.
+
+    The subject name, carried in the subject field, is only unique for each subject entity certified by the one CA as defined by the issuer name field. However, the new name form can carry a name that is unique for each subject entity certified by a CA. [STANDARDS-TRACK]
+keywords:
+    - subjectAltName extension
+    - dn
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-pkix-pi-11
+doi: 10.17487/RFC4043
+errata_url: https://www.rfc-editor.org/errata/rfc4043
+url: https://www.rfc-editor.org/rfc/rfc4043
+source: rfc-editor-index
+ingested_at: "2026-05-21"

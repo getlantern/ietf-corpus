@@ -1,0 +1,28 @@
+id: draft-li-lsr-ospf-purge-originator
+name: draft-li-lsr-ospf-purge-originator
+rev: "05"
+title: Purge Originator Identification for OSPF
+abstract: |-
+    In RFC6232(Purge Originator Identification TLV for IS-IS), ISIS POI
+       (Purge Originator Identification) TLV is added to the purge LSP to
+       record the system ID of the IS generating it.
+
+       At present, OSPF purge does not contain any information
+       identifying the Router that generates the purge. This makes it
+       difficult to locate the source router.
+
+       While OSPF protocol is difficult to add additional content to the
+       purge LSA, this document proposes generating a POI LSA together with
+       a purge LSA to record the router ID of the router generating the
+       purge.
+
+       To address this issue, this document defines a POI LSA to record the
+       router ID of the OSPF generating it.
+pages: 13
+stream_state: active
+group: none
+last_updated: "2026-01-22"
+expires: "2026-07-26"
+url: https://datatracker.ietf.org/doc/draft-li-lsr-ospf-purge-originator/
+source: datatracker
+ingested_at: "2026-05-21"

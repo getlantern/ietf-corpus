@@ -1,0 +1,26 @@
+id: rfc-8209
+rfc_number: 8209
+title: A Profile for BGPsec Router Certificates, Certificate Revocation Lists, and Certification Requests
+authors:
+    - name: M. Reynolds
+    - name: S. Turner
+    - name: S. Kent
+date: 2017-09
+stream: IETF
+area: rtg
+wg: sidr
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 15
+abstract: This document defines a standard profile for X.509 certificates used to enable validation of Autonomous System (AS) paths in the Border Gateway Protocol (BGP), as part of an extension to that protocol known as BGPsec.  BGP is the standard for inter-domain routing in the Internet; it is the "glue" that holds the Internet together.  BGPsec is being developed as one component of a solution that addresses the requirement to provide security for BGP.  The goal of BGPsec is to provide full AS path validation based on the use of strong cryptographic primitives.  The end entity (EE) certificates specified by this profile are issued to routers within an AS.  Each of these certificates is issued under a Resource Public Key Infrastructure (RPKI) Certification Authority (CA) certificate.  These CA certificates and EE certificates both contain the AS Resource extension.  An EE certificate of this type asserts that the router or routers holding the corresponding private key are authorized to emit secure route advertisements on behalf of the AS(es) specified in the certificate.  This document also profiles the format of certification requests and specifies Relying Party (RP) certificate path validation procedures for these EE certificates.  This document extends the RPKI; therefore, this document updates the RPKI Resource Certificates Profile (RFC 6487).
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-sidr-bgpsec-pki-profiles-21
+updates:
+    - rfc-6487
+doi: 10.17487/RFC8209
+errata_url: https://www.rfc-editor.org/errata/rfc8209
+url: https://www.rfc-editor.org/rfc/rfc8209
+source: rfc-editor-index
+ingested_at: "2026-05-21"

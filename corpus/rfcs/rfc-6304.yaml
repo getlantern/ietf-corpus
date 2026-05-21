@@ -1,0 +1,34 @@
+id: rfc-6304
+rfc_number: 6304
+title: AS112 Nameserver Operations
+authors:
+    - name: J. Abley
+    - name: W. Maton
+date: 2011-07
+stream: IETF
+area: ops
+wg: dnsop
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 18
+abstract: |-
+    Many sites connected to the Internet make use of IPv4 addresses that are not globally unique. Examples are the addresses designated in RFC 1918 for private use within individual sites.
+
+    Devices in such environments may occasionally originate Domain Name System (DNS) queries (so-called "reverse lookups") corresponding to those private-use addresses. Since the addresses concerned have only local significance, it is good practice for site administrators to ensure that such queries are answered locally. However, it is not uncommon for such queries to follow the normal delegation path in the public DNS instead of being answered within the site.
+
+    It is not possible for public DNS servers to give useful answers to such queries. In addition, due to the wide deployment of private-use addresses and the continuing growth of the Internet, the volume of such queries is large and growing. The AS112 project aims to provide a distributed sink for such queries in order to reduce the load on the IN-ADDR.ARPA authoritative servers. The AS112 project is named after the Autonomous System Number (ASN) that was assigned to it.
+
+    This document describes the steps required to install a new AS112 node and offers advice relating to such a node's operation. This document is not an Internet Standards Track specification; it is published for informational purposes.
+keywords:
+    - DNS
+    - RFC1918
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-dnsop-as112-ops-09
+obsoleted_by:
+    - rfc-7534
+doi: 10.17487/RFC6304
+url: https://www.rfc-editor.org/rfc/rfc6304
+source: rfc-editor-index
+ingested_at: "2026-05-21"

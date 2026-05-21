@@ -1,0 +1,34 @@
+id: rfc-8379
+rfc_number: 8379
+title: OSPF Graceful Link Shutdown
+authors:
+    - name: S. Hegde
+    - name: P. Sarkar
+    - name: H. Gredler
+    - name: M. Nanduri
+    - name: L. Jalil
+date: 2018-05
+stream: IETF
+area: rtg
+wg: ospf
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 17
+abstract: |-
+    When a link is being prepared to be taken out of service, the traffic needs to be diverted from both ends of the link. Increasing the metric to the highest value on one side of the link is not sufficient to divert the traffic flowing in the other direction.
+
+    It is useful for the routers in an OSPFv2 or OSPFv3 routing domain to be able to advertise a link as being in a graceful-shutdown state to indicate impending maintenance activity on the link. This information can be used by the network devices to reroute the traffic effectively.
+
+    This document describes the protocol extensions to disseminate graceful-link-shutdown information in OSPFv2 and OSPFv3.
+keywords:
+    - MPLS
+    - IGP
+    - OSPF
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-ospf-link-overload-16
+doi: 10.17487/RFC8379
+url: https://www.rfc-editor.org/rfc/rfc8379
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,30 @@
+id: draft-sip-identity-confusion-bcp
+name: draft-sip-identity-confusion-bcp
+rev: "00"
+title: Mitigating SIP Identity Spoofing Caused by Semantic Ambiguities
+abstract: |-
+    The Session Initiation Protocol (SIP) carries originator identity
+       through multiple header fields --- From, P-Asserted-Identity, P-
+       Preferred-Identity, Remote-Party-ID, Identity and so on --- whose
+       processing is spread across several specifications.  Because these
+       mechanisms leave significant room for implementation choice, SIP
+       servers and user agents frequently disagree on which identity signal
+       to trust and how to parse it.  Recent research has demonstrated that
+       these semantic ambiguities enable caller-ID and message-origin
+       spoofing in the majority of tested server-client combinations, even
+       when TLS and authentication are correctly deployed.
+
+       This document provides best current practices for mitigating identity
+       spoofing caused by such ambiguities.  It defines identity-validation
+       rules at each stage of the SIP signaling path, from the originating
+       server through trust boundaries and transit proxies to the receiving
+       user agent, and includes guidance on deployment, migration, and
+       interoperability with legacy systems.
+pages: 26
+stream_state: active
+group: none
+last_updated: "2026-03-17"
+expires: "2026-09-18"
+url: https://datatracker.ietf.org/doc/draft-sip-identity-confusion-bcp/
+source: datatracker
+ingested_at: "2026-05-21"

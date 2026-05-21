@@ -1,0 +1,31 @@
+id: draft-ietf-idr-sr-policy-nrp
+name: draft-ietf-idr-sr-policy-nrp
+rev: "09"
+title: BGP SR Policy Extensions for Network Resource Partition
+abstract: |-
+    Segment Routing (SR) Policy is a set of candidate paths, each
+       consisting of one or more segment lists and the associated
+       information.  The header of a packet steered in an SR Policy is
+       augmented with an ordered list of segments associated with that SR
+       Policy.  A Network Resource Partition (NRP) is a subset of network
+       resources allocated in the underlay network which can be used to
+       support one or a group of RFC 9543 network slice services.
+
+       In networks where there are multiple NRPs, an SR Policy may be
+       associated with a particular NRP.  The association between SR Policy
+       and NRP needs to be specified, so that for service traffic which is
+       steered into the SR Policy, the header of the packets can be
+       augmented with the information associated with the NRP.  An SR Policy
+       candidate path can be distributed using BGP SR Policy.  This document
+       defines the extensions to BGP SR policy to specify the NRP which the
+       SR Policy candidate path is associated with.
+pages: 8
+stream: IETF
+stream_state: active
+group: idr
+intended_status: Proposed Standard
+last_updated: "2026-05-19"
+expires: "2026-11-20"
+url: https://datatracker.ietf.org/doc/draft-ietf-idr-sr-policy-nrp/
+source: datatracker
+ingested_at: "2026-05-21"

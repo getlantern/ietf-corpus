@@ -1,0 +1,31 @@
+id: rfc-9729
+rfc_number: 9729
+title: The Concealed HTTP Authentication Scheme
+authors:
+    - name: D. Schinazi
+    - name: D. Oliver
+    - name: J. Hoyland
+date: 2025-02
+stream: IETF
+area: wit
+wg: httpbis
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 15
+abstract: 'Most HTTP authentication schemes are probeable in the sense that it is possible for an unauthenticated client to probe whether an origin serves resources that require authentication.  It is possible for an origin to hide the fact that it requires authentication by not generating Unauthorized status codes; however, that only works with non-cryptographic authentication schemes: cryptographic signatures require a fresh nonce to be signed.  Prior to this document, there was no existing way for the origin to share such a nonce without exposing the fact that it serves resources that require authentication.  This document defines a new non-probeable cryptographic authentication scheme.'
+keywords:
+    - secure
+    - tunnels
+    - masque
+    - http-ng
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-httpbis-unprompted-auth-12
+doi: 10.17487/RFC9729
+errata_url: https://www.rfc-editor.org/errata/rfc9729
+url: https://www.rfc-editor.org/rfc/rfc9729
+source: rfc-editor-index
+ingested_at: "2026-05-21"

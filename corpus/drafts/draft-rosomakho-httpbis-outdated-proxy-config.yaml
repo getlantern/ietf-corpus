@@ -1,0 +1,25 @@
+id: draft-rosomakho-httpbis-outdated-proxy-config
+name: draft-rosomakho-httpbis-outdated-proxy-config
+rev: "02"
+title: Detecting Outdated Proxy Configuration
+abstract: |-
+    This document defines a lightweight mechanism that allows explicit
+       HTTP proxies to inform clients when their proxy configuration, such
+       as a Proxy Auto-Configuration (PAC) file or Provisioning Domain (PvD)
+       proxy configuration, is outdated.  Clients signal to the proxy the
+       configuration URL and the timestamp of when it was last fetched.  In
+       response, the proxy may indicate that a newer version of the
+       configuration is available.  This enables clients to refresh their
+       configuration without relying on frequent polling or short expiration
+       intervals.  The mechanism is designed to be compatible with existing
+       proxy deployment models and supports both PAC-based and PvD-based
+       configurations.
+pages: 9
+stream: IETF
+stream_state: active
+group: httpbis
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-rosomakho-httpbis-outdated-proxy-config/
+source: datatracker
+ingested_at: "2026-05-21"

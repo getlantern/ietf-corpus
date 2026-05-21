@@ -1,0 +1,30 @@
+id: rfc-8202
+rfc_number: 8202
+title: IS-IS Multi-Instance
+authors:
+    - name: L. Ginsberg
+    - name: S. Previdi
+    - name: W. Henderickx
+date: 2017-06
+stream: IETF
+area: rtg
+wg: isis
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 16
+abstract: |-
+    This document describes a mechanism that allows a single router to share one or more circuits among multiple Intermediate System to Intermediate System (IS-IS) routing protocol instances.
+
+    Multiple instances allow the isolation of resources associated with each instance. Routers will form instance-specific adjacencies. Each instance can support multiple topologies. Each topology has a unique Link State Database (LSDB). Each Protocol Data Unit (PDU) will contain a new Type-Length-Value (TLV) identifying the instance and the topology (or topologies) to which the PDU belongs.
+
+    This document obsoletes RFC 6822.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-isis-mi-bis-03
+obsoletes:
+    - rfc-6822
+doi: 10.17487/RFC8202
+url: https://www.rfc-editor.org/rfc/rfc8202
+source: rfc-editor-index
+ingested_at: "2026-05-21"

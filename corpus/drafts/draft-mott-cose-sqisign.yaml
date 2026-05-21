@@ -1,0 +1,50 @@
+id: draft-mott-cose-sqisign
+name: draft-mott-cose-sqisign
+rev: "03"
+title: CBOR Object Signing and Encryption (COSE) and JSON Object Signing and Encryption (JOSE) Registrations for SQIsign
+abstract: |-
+    *NOTE: This document describes a signature scheme based on an
+       algorithm currently under evaluation in the NIST Post-Quantum
+       Cryptography standardization process.  Be aware that the underlying
+       primitive may change as a result of that process.*
+
+       This document specifies the algorithm encodings and representations
+       for the SQIsign digital signature scheme within the CBOR Object
+       Signing and Encryption (COSE) and JSON Object Signing and Encryption
+       (JOSE) frameworks.
+
+       SQIsign is an isogeny-based post-quantum signature scheme that
+       provides exceptionally compact signature and public key sizes
+       compared to lattice-based alternatives currently under NIST
+       evaluation.
+
+       The standardization of SQIsign will be helpful to address current
+       infrastructure bottlenecks, specifically the FIDO2 CTAP2
+       specification used by billions of in-service devices and browser
+       installations.  Some deployments of CTAP2-based authenticators
+       enforce limits near 1024 bytes for external key communication,
+       depending on authenticator implementation, transport (USB/NFC/BLE)
+       and message fragmentation support.  Some standardized post-quantum
+       signature schemes with larger signature sizes may exceed the message
+       size limits of constrained authenticators, transports or produce
+       surprising and unwanted results further along the authentication
+       ceremony.  SQIsign-L1, L2 and L5 signatures are small enough to
+       enable delivery over constrained networks like 802.15.4.
+
+       This document clarifies that SQIsign does not expose the auxiliary
+       torsion-point information exploited in the SIDH/SIKE attacks.
+       Consequently, the specific attack techniques of Castryck–Decru do not
+       directly apply.  However, the scheme remains subject to ongoing
+       cryptanalysis of isogeny-based constructions.  By establishing stable
+       COSE and JOSE identifiers, this document ensures the interoperability
+       required for the seamless integration of post-quantum security into
+       high-density, bandwidth-constrained, and legacy-compatible hardware
+       environments.
+pages: 29
+stream_state: active
+group: none
+last_updated: "2026-04-29"
+expires: "2026-10-31"
+url: https://datatracker.ietf.org/doc/draft-mott-cose-sqisign/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,35 @@
+id: draft-mcguinness-oauth-actor-profile
+name: draft-mcguinness-oauth-actor-profile
+rev: "00"
+title: OAuth Actor Profile for Delegation
+abstract: |-
+    OAuth deployments increasingly involve agents and workloads acting on
+       behalf of human users across organizational boundaries.  Existing
+       specifications provide relevant building blocks (notably the act
+       claim from RFC 8693 Token Exchange) but do not define a consistent
+       profile for representing delegated actor relationships across JWT
+       assertion grants (RFC 7523), JWT access tokens (RFC 9068), and
+       Transaction Tokens, nor for classifying actor entity types or
+       signaling support between authorization servers and resource servers.
+       The result is inconsistent actor representation and actor-
+       representation interoperability gaps that force deployments to rely
+       on proprietary conventions.
+
+       This document defines the OAuth Actor Profile for Delegation.  It
+       specifies a common act claim structure extended with sub_profile for
+       entity-type classification, processing rules for authorization
+       servers and resource servers across the three token families and
+       their Token Exchange inputs, and OAuth discovery metadata parameters
+       for advertising actor-profile support.  The profile applies uniformly
+       across token types and integrates with existing sender-constraint
+       mechanisms (DPoP, mTLS).  It does not standardize the policies by
+       which systems determine whether a given actor is permitted to act for
+       a subject; those decisions remain deployment-specific.
+pages: 111
+stream_state: active
+group: none
+last_updated: "2026-04-30"
+expires: "2026-11-01"
+url: https://datatracker.ietf.org/doc/draft-mcguinness-oauth-actor-profile/
+source: datatracker
+ingested_at: "2026-05-21"

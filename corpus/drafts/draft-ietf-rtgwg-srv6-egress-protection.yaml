@@ -1,0 +1,31 @@
+id: draft-ietf-rtgwg-srv6-egress-protection
+name: draft-ietf-rtgwg-srv6-egress-protection
+rev: "23"
+title: SRv6 Path Egress Protection
+abstract: |-
+    TI-LFA specifies fast protections for transit nodes and links of an
+       SR path.  However, it does not present any fast protections for the
+       egress node of the SR path.  This document describes protocol
+       extensions for fast protecting the egress node and link of a Segment
+       Routing for IPv6 (SRv6) path.  The solution uses IGP extensions and a
+       Mirror SID (End.M) behavior to steer traffic to a protector egress
+       upon failure of the primary egress.
+
+       This document operates within a single link-state IGP area/level and
+       uses IS-IS/OSPFv3 to advertise a Mirror SID and the protected
+       locators for egress node/link protection.  While the mechanism can
+       protect traffic whose active segment at the egress is a Service SID
+       (e.g., VPN SID), it is not suitable for large-scale deployments with
+       a high cardinality of VPN/service instances or random multi-homing
+       patterns, because the amount of egress-protection information to be
+       flooded in the IGP increases and may impact convergence and control-
+       plane load.
+pages: 24
+stream: IETF
+stream_state: active
+group: rtgwg
+last_updated: "2026-04-09"
+expires: "2026-10-11"
+url: https://datatracker.ietf.org/doc/draft-ietf-rtgwg-srv6-egress-protection/
+source: datatracker
+ingested_at: "2026-05-21"

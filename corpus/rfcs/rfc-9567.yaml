@@ -1,0 +1,32 @@
+id: rfc-9567
+rfc_number: 9567
+title: DNS Error Reporting
+authors:
+    - name: R. Arends
+    - name: M. Larson
+date: 2024-04
+stream: IETF
+area: ops
+wg: dnsop
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 11
+abstract: |-
+    DNS error reporting is a lightweight reporting mechanism that provides the operator of an authoritative server with reports on DNS resource records that fail to resolve or validate. A domain owner or DNS hosting organization can use these reports to improve domain hosting. The reports are based on extended DNS errors as described in RFC 8914.
+
+    When a domain name fails to resolve or validate due to a misconfiguration or an attack, the operator of the authoritative server may be unaware of this. To mitigate this lack of feedback, this document describes a method for a validating resolver to automatically signal an error to a monitoring agent specified by the authoritative server. The error is encoded in the QNAME; thus, the very act of sending the query is to report the error.
+keywords:
+    - monitoring
+    - agent
+    - RFC8914
+    - "8914"
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-dnsop-dns-error-reporting-08
+doi: 10.17487/RFC9567
+url: https://www.rfc-editor.org/rfc/rfc9567
+source: rfc-editor-index
+ingested_at: "2026-05-21"

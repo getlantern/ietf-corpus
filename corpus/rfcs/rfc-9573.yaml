@@ -1,0 +1,35 @@
+id: rfc-9573
+rfc_number: 9573
+title: MVPN/EVPN Tunnel Aggregation with Common Labels
+authors:
+    - name: Z. Zhang
+    - name: E. Rosen
+    - name: W. Lin
+    - name: Z. Li
+    - name: IJ. Wijnands
+date: 2024-05
+stream: IETF
+area: rtg
+wg: bess
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 14
+abstract: The Multicast VPN (MVPN) specifications allow a single Point-to-Multipoint (P2MP) tunnel to carry traffic of multiple IP VPNs (referred to as VPNs in this document).  The EVPN specifications allow a single P2MP tunnel to carry traffic of multiple Broadcast Domains (BDs).  These features require the ingress router of the P2MP tunnel to allocate an upstream-assigned MPLS label for each VPN or for each BD.  A packet sent on a P2MP tunnel then carries the label that is mapped to its VPN or BD (in some cases, a distinct upstream-assigned label is needed for each flow.) Since each ingress router allocates labels independently, with no coordination among the ingress routers, the egress routers may need to keep track of a large number of labels.  The number of labels may need to be as large as, or larger than, the product of the number of ingress routers times the number of VPNs or BDs.  However, the number of labels can be greatly reduced if the association between a label and a VPN or BD is made by provisioning, so that all ingress routers assign the same label to a particular VPN or BD.  New procedures are needed in order to take advantage of such provisioned labels.  These new procedures also apply to Multipoint-to-Multipoint (MP2MP) tunnels.  This document updates RFCs 6514, 7432, and 7582 by specifying the necessary procedures.
+keywords:
+    - DCB
+    - Tunnel Aggregation
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-bess-mvpn-evpn-aggregation-label-14
+updates:
+    - rfc-6514
+    - rfc-7432
+    - rfc-7582
+doi: 10.17487/RFC9573
+errata_url: https://www.rfc-editor.org/errata/rfc9573
+url: https://www.rfc-editor.org/rfc/rfc9573
+source: rfc-editor-index
+ingested_at: "2026-05-21"

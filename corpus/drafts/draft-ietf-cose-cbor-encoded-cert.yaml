@@ -1,0 +1,33 @@
+id: draft-ietf-cose-cbor-encoded-cert
+name: draft-ietf-cose-cbor-encoded-cert
+rev: "19"
+title: CBOR Encoded X.509 Certificates (C509 Certificates)
+abstract: |-
+    This document specifies a CBOR encoding of X.509 certificates.  The
+       resulting certificates are called C509 certificates.  The CBOR
+       encoding supports a large subset of RFC 5280 and common certificate
+       profiles, and it is extensible.
+
+       Two types of C509 certificates are defined.  One type is an
+       invertible CBOR re-encoding of DER-encoded X.509 certificates with
+       the signature field copied from the DER encoding.  The other type is
+       identical except that the signature is computed over the CBOR
+       encoding instead of the DER encoding, thereby avoiding the use of
+       ASN.1.  Both types of certificates have the same semantics as X.509
+       while providing comparable size reduction.
+
+       This document also specifies CBOR-encoded data structures for
+       certification requests and certification request templates, new COSE
+       headers, as well as a TLS certificate type and a file format for
+       C509.  This document updates RFC 6698 by extending the TLSA selectors
+       registry to include C509 certificates.
+pages: 97
+stream: IETF
+stream_state: active
+group: cose
+intended_status: Proposed Standard
+last_updated: "2026-05-11"
+expires: "2026-11-12"
+url: https://datatracker.ietf.org/doc/draft-ietf-cose-cbor-encoded-cert/
+source: datatracker
+ingested_at: "2026-05-21"

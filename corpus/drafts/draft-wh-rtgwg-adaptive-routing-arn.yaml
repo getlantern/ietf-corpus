@@ -1,0 +1,30 @@
+id: draft-wh-rtgwg-adaptive-routing-arn
+name: draft-wh-rtgwg-adaptive-routing-arn
+rev: "05"
+title: Adaptive Routing Notification
+abstract: |-
+    Large-scale supercomputing and AI data centers utilize multipath to
+       implement load balancing and/or improve transport reliability.
+       Adaptive routing (AR), widely used in direct topologies such as
+       dragonfly, is growing popular in commodity data centers to
+       dynamically adjust routing policies based on path congestion and
+       failures.  When congestion or failure occurs, the sensing node can
+       not only apply AR locally but also send the congestion/failure
+       information to other nodes in a timely and accurate manner to enforce
+       AR on other nodes, thus avoiding exacerbating congestion on the
+       reported path.  This document specifies Adaptive Routing Notification
+       (ARN), a general mechanism to proactively disseminate congestion
+       detection and congestion elimination information for remote nodes to
+       perform re-routing policies.  Particularly for AI workloads like
+       DeepSeek's MoE models that exhibit dynamic all-to-all communication
+       patterns with bursty traffic characteristics, such mechanisms become
+       crucial to enable immediate network response to transient congestion
+       conflicts.
+pages: 13
+stream_state: active
+group: none
+last_updated: "2025-12-09"
+expires: "2026-06-12"
+url: https://datatracker.ietf.org/doc/draft-wh-rtgwg-adaptive-routing-arn/
+source: datatracker
+ingested_at: "2026-05-21"

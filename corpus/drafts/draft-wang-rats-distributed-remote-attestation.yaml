@@ -1,0 +1,32 @@
+id: draft-wang-rats-distributed-remote-attestation
+name: draft-wang-rats-distributed-remote-attestation
+rev: "02"
+title: Distributed Remote Attestation
+abstract: |-
+    In many deployments, remote attestation is performed within separate
+       administrative and trust domains.  Each domain typically operates its
+       own management plane and a Remote Attestation Service (RAS) to obtain
+       verifier inputs (e.g., endorsement material and reference values) and
+       produce attestation results.  At scale, cross-domain scenarios face
+       two recurring challenges: (1) enabling policy-controlled transparency
+       so that verifiers or relying parties in one domain can discover and
+       retrieve selected attestation artifacts from other domains; and (2)
+       supporting many-to-many distribution and reuse of verifier inputs and
+       verifier outputs without requiring point-to-point integrations.
+
+       This document describes Distributed Remote Attestation (DRA) patterns
+       that use a shared publication channel for selected artifacts with
+       provenance and access control in mind.  A Distributed Ledger (DL) is
+       discussed as one concrete instantiation of such a publication
+       channel, including an option to host verification logic on the DL.
+       The described patterns are intended to complement existing RATS
+       procedures and conceptual messages, and can be realized by other
+       tamper-evident publication channels with comparable properties.
+pages: 9
+stream_state: active
+group: none
+last_updated: "2026-01-06"
+expires: "2026-07-10"
+url: https://datatracker.ietf.org/doc/draft-wang-rats-distributed-remote-attestation/
+source: datatracker
+ingested_at: "2026-05-21"

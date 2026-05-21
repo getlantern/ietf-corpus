@@ -1,0 +1,41 @@
+id: draft-ietf-cbor-packed
+name: draft-ietf-cbor-packed
+rev: "19"
+title: Packed CBOR
+abstract: |-
+    The Concise Binary Object Representation (CBOR, RFC 8949 == STD 94)
+       is a data format whose design goals include the possibility of
+       extremely small code size, fairly small message size, and
+       extensibility without the need for version negotiation.
+
+       CBOR does not provide any forms of data compression.  CBOR data
+       items, in particular when generated from legacy data models, often
+       allow considerable gains in compactness when applying data
+       compression.  While traditional data compression techniques such as
+       DEFLATE (RFC 1951) can work well for CBOR encoded data items, their
+       disadvantage is that the recipient needs to decompress the compressed
+       form before it can make use of the data.
+
+       This specification describes Packed CBOR, a set of CBOR tags and
+       simple values that enable a simple transformation of an original CBOR
+       data item into a Packed CBOR data item that is almost as easy to
+       consume as the original CBOR data item.  A separate decompression
+       step is therefore often not required at the recipient.
+
+
+       // (This cref will be removed by the RFC editor:) The present
+       // revision -19 is a work-in-progress release in preparation for
+       // another cbor-packed side meeting.  This revision resolves the use
+       // of the tunables A/B/C by setting A=16, B=8, and C=8, and choosing
+       // requested simple values and tag numbers, in preparation for
+       // continuing the early allocation process.
+pages: 35
+stream: IETF
+stream_state: active
+group: cbor
+intended_status: Proposed Standard
+last_updated: "2026-02-02"
+expires: "2026-08-06"
+url: https://datatracker.ietf.org/doc/draft-ietf-cbor-packed/
+source: datatracker
+ingested_at: "2026-05-21"

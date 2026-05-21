@@ -1,0 +1,36 @@
+id: draft-song-anp-adp
+name: draft-song-anp-adp
+rev: "00"
+title: Agent Description Protocol (ADP)
+abstract: |-
+    Autonomous AI agents in a decentralized network need a common way to
+       describe their capabilities so that peers can discover and invoke
+       them.  The Agent Internet Protocol (AIP) provides name-based datagram
+       delivery between agents identified by agent:// URIs; the Agent
+       Invocation Transport Protocol (AITP) provides reliable invocation and
+       streaming above AIP.  This document describes the Agent Description
+       Protocol (ADP), an application-layer convention carried over AITP
+       that defines how agents describe their capabilities, publish those
+       descriptions, and discover peers whose capabilities match a query.
+
+       ADP defines the Agent Card, a JSON document format that carries an
+       agent's identity, human-readable description, method catalogue,
+       endpoint bindings, skill tags, and operational constraints.  ADP also
+       defines three AITP method names — adp.describe, adp.advertise, and
+       adp.discover — through which agents exchange and query Agent Cards at
+       the invocation layer.
+
+       ADP is intentionally a thin format-and-convention layer: it
+       standardizes the document schema and the exchange methods, but defers
+       reputation, economics, credentials, identity infrastructure, and
+       deployment-specific dissemination mechanisms (DHT topics, GossipSub
+       channels, HTTP well-known URIs) to companion protocols and
+       implementation profiles.
+pages: 31
+stream_state: active
+group: none
+last_updated: "2026-03-25"
+expires: "2026-09-26"
+url: https://datatracker.ietf.org/doc/draft-song-anp-adp/
+source: datatracker
+ingested_at: "2026-05-21"

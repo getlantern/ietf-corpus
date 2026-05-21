@@ -1,0 +1,29 @@
+id: rfc-5011
+rfc_number: 5011
+title: Automated Updates of DNS Security (DNSSEC) Trust Anchors
+authors:
+    - name: M. StJohns
+date: 2007-09
+stream: IETF
+area: int
+wg: dnsext
+current_status: INTERNET STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 14
+abstract: |-
+    This document describes a means for automated, authenticated, and authorized updating of DNSSEC "trust anchors". The method provides protection against N-1 key compromises of N keys in the trust point key set. Based on the trust established by the presence of a current anchor, other anchors may be added at the same place in the hierarchy, and, ultimately, supplant the existing anchor(s).
+
+    This mechanism will require changes to resolver management behavior (but not resolver resolution behavior), and the addition of a single flag bit to the DNSKEY record. [STANDARDS-TRACK]
+keywords:
+    - n-1 key
+    - n keys
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-dnsext-trustupdate-timers-06
+also:
+    - std-74
+doi: 10.17487/RFC5011
+url: https://www.rfc-editor.org/rfc/rfc5011
+source: rfc-editor-index
+ingested_at: "2026-05-21"

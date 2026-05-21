@@ -1,0 +1,26 @@
+id: draft-li-idr-bgp-nrp
+name: draft-li-idr-bgp-nrp
+rev: "00"
+title: BGP Extensions for Network Resource Partition
+abstract: |-
+    Existing approaches bind a Segment Routing (SR) Policy to a Network
+       Resource Partition (NRP) on a one-to-one basis, which lacks
+       flexibility and introduces significant operational overhead as the
+       number of NRPs scales, especially when the NRPs share the same SR
+       Policy path.
+
+       This document defines BGP extensions to advertise NRP identifier (NRP
+       ID) information between network nodes, which decouples SR Policy from
+       NRP, allowing multiple NRPs to share a common SR Policy path and thus
+       avoiding linear growth of SR Policies.
+
+       This design reduces operational complexity and is also applicable to
+       SR Best Effort (SR BE) scenario.
+pages: 7
+stream_state: active
+group: none
+last_updated: "2026-02-15"
+expires: "2026-08-19"
+url: https://datatracker.ietf.org/doc/draft-li-idr-bgp-nrp/
+source: datatracker
+ingested_at: "2026-05-21"

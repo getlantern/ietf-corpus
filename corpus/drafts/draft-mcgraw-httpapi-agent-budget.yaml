@@ -1,0 +1,28 @@
+id: draft-mcgraw-httpapi-agent-budget
+name: draft-mcgraw-httpapi-agent-budget
+rev: "00"
+title: 'Protocol 427: An HTTP Budget-Required Status Code with Post-Quantum-Signed Budget Attestations'
+abstract: |-
+    Internet-deployed software agents are increasingly authorized to
+       spend money, consume metered services, or commit other resources on
+       behalf of human or organizational principals.  Existing HTTP
+       authentication and payment patterns conflate two orthogonal concerns:
+       whether the requester holds a credential at all (the "401" axis), and
+       whether the requester has been authorized to spend a specific amount
+       through a specific settlement rail (the "budget" axis).  This
+       document defines the 427 (Budget Required) HTTP status code, the
+       "Budget" HTTP authentication scheme, a CBOR-encoded Budget-
+       Attestation envelope signed with a post-quantum digital signature
+       algorithm, and a version-negotiation mechanism using the existing 426
+       (Upgrade Required) status code.  The mandatory primary signature uses
+       ML-DSA-87 (FIPS 204).  An optional "rail-keyed" signature, computed
+       with a hash-based stateless signature algorithm, provides
+       cryptographic diversification for settlement-rail submissions.
+pages: 28
+stream_state: active
+group: none
+last_updated: "2026-05-06"
+expires: "2026-11-07"
+url: https://datatracker.ietf.org/doc/draft-mcgraw-httpapi-agent-budget/
+source: datatracker
+ingested_at: "2026-05-21"

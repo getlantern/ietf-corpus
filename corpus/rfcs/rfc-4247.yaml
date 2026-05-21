@@ -1,0 +1,28 @@
+id: rfc-4247
+rfc_number: 4247
+title: Requirements for Header Compression over MPLS
+authors:
+    - name: J. Ash
+    - name: B. Goode
+    - name: J. Hand
+    - name: R. Zhang
+date: 2005-11
+stream: IETF
+area: rai
+wg: avt
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 11
+abstract: Voice over IP (VoIP) typically uses the encapsulation voice/RTP/UDP/IP.  When MPLS labels are added, this becomes voice/RTP/UDP/IP/MPLS-labels.  For an MPLS VPN, the packet header is typically 48 bytes, while the voice payload is often no more than 30 bytes, for example.  Header compression can significantly reduce the overhead through various compression mechanisms, such as enhanced compressed RTP (ECRTP) and robust header compression (ROHC).  We consider using MPLS to route compressed packets over an MPLS Label Switched Path (LSP) without compression/decompression cycles at each router.  This approach can increase the bandwidth efficiency as well as processing scalability of the maximum number of simultaneous flows that use header compression at each router.  In this document, we give a problem statement, goals and requirements, and an example scenario.  This memo provides information for the Internet community.
+keywords:
+    - multiprotocol label switching
+    - voip
+    - voice over ip
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-avt-hc-mpls-reqs-03
+doi: 10.17487/RFC4247
+url: https://www.rfc-editor.org/rfc/rfc4247
+source: rfc-editor-index
+ingested_at: "2026-05-21"

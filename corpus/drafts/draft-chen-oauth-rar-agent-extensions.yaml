@@ -1,0 +1,32 @@
+id: draft-chen-oauth-rar-agent-extensions
+name: draft-chen-oauth-rar-agent-extensions
+rev: "01"
+title: Policy, Lifecycle, and Intent Extensions for OAuth Rich Authorization Requests
+abstract: |-
+    OAuth 2.0 Rich Authorization Requests (RAR) [RFC9396] defines a
+       syntax for clients to request fine-grained permissions.  While
+       powerful, this mechanism lacks standardized methods for clients to
+       express three critical contextual dimensions prevalent in modern
+       automated systems: the high-level user intent driving the request,
+       the required security policy under which the request should be
+       evaluated, and the binding of the authorization's lifecycle to an
+       external process.
+
+       This document extends the RAR framework to address these gaps.  It
+       first defines a new authorization_details type, *intent_request*, to
+       facilitate goal-oriented authorization.  Second, it introduces two
+       new parameters for the authorization_details object:
+       *policy_context*, to request authorization under a specific assurance
+       level, and *lifecycle_binding*, to tie the validity of the
+       authorization grant to the state of an external entity.  These
+       extensions enable authorization servers to make more intelligent,
+       secure, and context-aware decisions, particularly in ecosystems
+       involving autonomous agents and complex, long-running tasks.
+pages: 11
+stream_state: active
+group: none
+last_updated: "2026-04-22"
+expires: "2026-10-24"
+url: https://datatracker.ietf.org/doc/draft-chen-oauth-rar-agent-extensions/
+source: datatracker
+ingested_at: "2026-05-21"

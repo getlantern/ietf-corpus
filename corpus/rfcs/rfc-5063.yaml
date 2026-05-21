@@ -1,0 +1,41 @@
+id: rfc-5063
+rfc_number: 5063
+title: Extensions to GMPLS Resource Reservation Protocol (RSVP) Graceful Restart
+authors:
+    - name: A. Satyanarayana
+      title: Editor
+    - name: R. Rahman
+      title: Editor
+date: 2007-10
+stream: IETF
+area: rtg
+wg: ccamp
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 24
+abstract: |-
+    This document describes extensions to the Resource Reservation Protocol (RSVP) Graceful Restart mechanisms defined in RFC 3473. The extensions enable the recovery of RSVP signaling state based on the Path message last sent by the node being restarted.
+
+    Previously defined Graceful Restart mechanisms, also called recovery from nodal faults, permit recovery of signaling state from adjacent nodes when the data plane has retained the associated forwarding state across a restart. Those mechanisms do not fully support signaling state recovery on ingress nodes or recovery of all RSVP objects.
+
+    The extensions defined in this document build on the RSVP Hello extensions defined in RFC 3209, and extensions for state recovery on nodal faults defined in RFC 3473. Using these extensions, the restarting node can recover all previously transmitted Path state, including the Explicit Route Object and the downstream (outgoing) interface identifiers. The extensions can also be used to recover signaling state after the restart of an ingress node.
+
+    These extensions are not used to create or restore data plane state.
+
+    The extensions optionally support the use of Summary Refresh, defined in RFC 2961, to reduce the number of messages exchanged during the Recovery Phase when the restarting node has recovered signaling state locally for one or more Label Switched Paths (LSPs). [STANDARDS-TRACK]
+keywords:
+    - nodal faults
+    - rsvp hello
+    - state recovery
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-ccamp-rsvp-restart-ext-09
+updates:
+    - rfc-2961
+    - rfc-3473
+doi: 10.17487/RFC5063
+errata_url: https://www.rfc-editor.org/errata/rfc5063
+url: https://www.rfc-editor.org/rfc/rfc5063
+source: rfc-editor-index
+ingested_at: "2026-05-21"

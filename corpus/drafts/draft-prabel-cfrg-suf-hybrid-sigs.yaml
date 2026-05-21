@@ -1,0 +1,27 @@
+id: draft-prabel-cfrg-suf-hybrid-sigs
+name: draft-prabel-cfrg-suf-hybrid-sigs
+rev: "01"
+title: Hybrid Digital Signatures with Strong Unforgeability
+abstract: |-
+    This document proposes a generic hybrid signature construction that
+       achieves strong unforgeability under chosen-message attacks (SUF-
+       CMA), provided that the second component (typically the post-quantum
+       one) is SUF-CMA secure.  The proposed hybrid construction differs
+       from the current composite hybrid approach by binding the second
+       (post-quantum) signature to the concatenation of the message and the
+       first (traditional) signature.  This approach ensures that hybrid
+       signatures maintain SUF-CMA security even when the first component
+       only provides EUF-CMA security.
+
+       In addition to this general hybrid construction, this document also
+       proposes a non-black-box variant specifically tailored for schemes
+       built from the Fiat-Shamir paradigm.  This variant is SUF-CMA secure
+       as long as only one component is SUF-CMA secure.
+pages: 13
+stream_state: active
+group: none
+last_updated: "2026-03-01"
+expires: "2026-09-02"
+url: https://datatracker.ietf.org/doc/draft-prabel-cfrg-suf-hybrid-sigs/
+source: datatracker
+ingested_at: "2026-05-21"

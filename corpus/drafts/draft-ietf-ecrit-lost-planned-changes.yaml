@@ -1,0 +1,30 @@
+id: draft-ietf-ecrit-lost-planned-changes
+name: draft-ietf-ecrit-lost-planned-changes
+rev: "17"
+title: Validation of Locations Around a Planned Change
+abstract: |-
+    This document defines an extension to the Location to Service
+       Translation (LoST) protocol (RFC5222) that allows a LoST server to
+       notify a client of planned changes to location data.  This extension
+       is only useful with the validation function of LoST.  It is
+       beneficial for LoST validation clients to be aware of planned
+       changes, since at a known future date, previously valid records may
+       become invalid, and new records may become valid.  This extension
+       adds an element to the <findService> request to allow a LoST client
+       to request validation as of a specified date.  It adds an optional
+       Time-To-Live element to the response, which informs clients of the
+       current expected lifetime of a validation.  It also adds a separate
+       interface to a LoST server that allows a client to poll for planned
+       changes.  Additionally, this document provides a conventional XML
+       schema for LoST, as a backwards compatible alternative to the RelaxNG
+       schema in RFC5222.
+pages: 20
+stream: IETF
+stream_state: active
+group: ecrit
+intended_status: Proposed Standard
+last_updated: "2026-05-13"
+expires: "2026-11-14"
+url: https://datatracker.ietf.org/doc/draft-ietf-ecrit-lost-planned-changes/
+source: datatracker
+ingested_at: "2026-05-21"

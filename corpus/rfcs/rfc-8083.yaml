@@ -1,0 +1,27 @@
+id: rfc-8083
+rfc_number: 8083
+title: 'Multimedia Congestion Control: Circuit Breakers for Unicast RTP Sessions'
+authors:
+    - name: C. Perkins
+    - name: V. Singh
+date: 2017-03
+stream: IETF
+area: wit
+wg: avtcore
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 25
+abstract: |-
+    The Real-time Transport Protocol (RTP) is widely used in telephony, video conferencing, and telepresence applications. Such applications are often run on best-effort UDP/IP networks. If congestion control is not implemented in these applications, then network congestion can lead to uncontrolled packet loss and a resulting deterioration of the user's multimedia experience. The congestion control algorithm acts as a safety measure by stopping RTP flows from using excessive resources and protecting the network from overload. At the time of this writing, however, while there are several proprietary solutions, there is no standard algorithm for congestion control of interactive RTP flows.
+
+    This document does not propose a congestion control algorithm. It instead defines a minimal set of RTP circuit breakers: conditions under which an RTP sender needs to stop transmitting media data to protect the network from excessive congestion. It is expected that, in the absence of long-lived excessive congestion, RTP applications running on best-effort IP networks will be able to operate without triggering these circuit breakers. To avoid triggering the RTP circuit breaker, any Standards Track congestion control algorithms defined for RTP will need to operate within the envelope set by these RTP circuit breaker algorithms.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-avtcore-rtp-circuit-breakers-18
+updates:
+    - rfc-3550
+doi: 10.17487/RFC8083
+url: https://www.rfc-editor.org/rfc/rfc8083
+source: rfc-editor-index
+ingested_at: "2026-05-21"

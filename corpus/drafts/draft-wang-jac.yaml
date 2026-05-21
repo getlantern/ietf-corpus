@@ -1,0 +1,30 @@
+id: draft-wang-jac
+name: draft-wang-jac
+rev: "02"
+title: 'JAC: Declared Dependency Chains for Agent Receipts A JEP/HJS Extension Profile for Chain Infrastructure'
+abstract: |-
+    This document defines JAC v0.5, a minimal declared-dependency chain
+       infrastructure for agent and AI-agent receipt systems. JAC is a
+       profile over the Judgment Event Protocol (JEP) and, when AI-agent
+       behavior receipts are used, over HJS. JAC does not define an
+       independent event format, signature syntax, hash format, replay
+       mechanism, identity framework, or governance framework.
+       JAC uses JEP extension fields to bind a signed event or receipt
+       element to a declared parent dependency. The core is intentionally
+       small: a single chain extension records a declared dependency link.
+       Optional extensions can record state declarations, assignment
+       references, handoff references, result references, capability claims,
+       input/output references, and declared chain breaks.
+       JAC provides infrastructure only. It records signed dependency
+       declarations; it does not determine factual causality,
+       responsibility, fault, authorization validity, assignment validity,
+       handoff validity, task correctness, fairness, entitlement, legal
+       effect, or regulatory compliance.
+pages: 15
+stream_state: active
+group: none
+last_updated: "2026-04-29"
+expires: "2026-10-31"
+url: https://datatracker.ietf.org/doc/draft-wang-jac/
+source: datatracker
+ingested_at: "2026-05-21"

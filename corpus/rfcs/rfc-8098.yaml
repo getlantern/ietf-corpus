@@ -1,0 +1,39 @@
+id: rfc-8098
+rfc_number: 8098
+title: Message Disposition Notification
+authors:
+    - name: T. Hansen
+      title: Editor
+    - name: A. Melnikov
+      title: Editor
+date: 2017-02
+stream: IETF
+area: art
+wg: appsawg
+current_status: INTERNET STANDARD
+publication_status: INTERNET STANDARD
+page_count: 37
+abstract: |-
+    This memo defines a MIME content type that may be used by a Mail User Agent (MUA) or electronic mail gateway to report the disposition of a message after it has been successfully delivered to a recipient. This content type is intended to be machine processable. Additional message header fields are also defined to permit Message Disposition Notifications (MDNs) to be requested by the sender of a message. The purpose is to extend Internet Mail to support functionality often found in other messaging systems, such as X.400 and the proprietary "LAN-based" systems, and are often referred to as "read receipts," "acknowledgements," or "receipt notifications." The intention is to do this while respecting privacy concerns, which have often been expressed when such functions have been discussed in the past.
+
+    Because many messages are sent between the Internet and other messaging systems (such as X.400 or the proprietary "LAN-based" systems), the MDN protocol is designed to be useful in a multiprotocol messaging environment. To this end, the protocol described in this memo provides for the carriage of "foreign" addresses, in addition to those normally used in Internet Mail. Additional attributes may also be defined to support "tunneling" of foreign notifications through Internet Mail.
+
+    This document is an Internet Standard. It obsoletes RFC 3798 and updates RFC 2046 (message/partial media type handling) and RFC 3461 (Original-Recipient header field generation requirement).
+keywords:
+    - delivery notification
+    - mdn
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-appsawg-mdn-3798bis-16
+obsoletes:
+    - rfc-3798
+updates:
+    - rfc-2046
+    - rfc-3461
+also:
+    - std-85
+doi: 10.17487/RFC8098
+url: https://www.rfc-editor.org/rfc/rfc8098
+source: rfc-editor-index
+ingested_at: "2026-05-21"

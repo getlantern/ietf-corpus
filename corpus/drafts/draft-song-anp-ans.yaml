@@ -1,0 +1,31 @@
+id: draft-song-anp-ans
+name: draft-song-anp-ans
+rev: "00"
+title: Agent Name System (ANS)
+abstract: |-
+    This document defines the Agent Name System (ANS), a name
+       registration and resolution protocol for autonomous AI agents in the
+       Agent Network Protocol (ANP) suite.  ANS maps agent:// URIs to
+       network-layer peer identifiers, providing the binding between human-
+       readable agent names and the cryptographic peer identities used by
+       the Agent Internet Protocol (AIP) for datagram delivery.
+
+       ANS defines a Name Record format, four AITP method names for name
+       operations (ans.register, ans.resolve, ans.unregister, ans.lookup), a
+       multi-layer resolution algorithm, and two dissemination mechanisms
+       (GossipSub announcements and DHT storage).  ANS supports three
+       addressing modes — unicast, anycast, and channel — over a single URI
+       syntax.
+
+       ANS is intentionally a narrow name-binding layer: it maps names to
+       peers and tags, but defers capability description to the Agent
+       Description Protocol (ADP), reputation and ranking to companion
+       protocols, and economic anti-spam mechanisms to deployment profiles.
+pages: 34
+stream_state: active
+group: none
+last_updated: "2026-03-25"
+expires: "2026-09-26"
+url: https://datatracker.ietf.org/doc/draft-song-anp-ans/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,46 @@
+id: draft-howard-virp
+name: draft-howard-virp
+rev: "05"
+title: 'VIRP: Verified Infrastructure Response Protocol'
+abstract: |-
+    The Verified Infrastructure Response Protocol (VIRP) defines a
+       cryptographic trust framework for operators -- human or autonomous --
+       acting on live network infrastructure.  As operations increasingly
+       shift toward agentic and automated systems capable of autonomously
+       configuring, auditing, and remediating production environments, the
+       absence of a verifiable chain of custody for observations and actions
+       introduces fundamental risks: fabricated telemetry, unauthorized
+       state changes, and the inability to distinguish legitimate operations
+       from compromise.
+
+       VIRP addresses this through seven trust primitives that collectively
+       enforce observation integrity, two-channel separation, intent gating,
+       outcome verification, baseline memory, multi-vendor normalization,
+       and trust federation.  Observations are cryptographically signed at
+       collection time using a dual-signature scheme: HMAC-SHA256 for chain
+       integrity and Ed25519 for asymmetric proof of origin.  A two-channel
+       architecture separates read-only Observation from write-intent
+       Intent, with intent gating enforced at the protocol layer.  Trust
+       tiers (GREEN/YELLOW/RED/BLACK) govern action authorization with
+       human-in-the-loop controls for elevated operations.
+
+       This document presents the protocol specification, a live multi-
+       vendor implementation (IronClaw) exercised against 35 Cisco IOS
+       routers, a FortiGate 200G firewall, and Cisco 3850 switching
+       infrastructure, adversarial findings produced by the agent under
+       test, and a containment architecture derived from those findings.
+       Phase 1 formal protocol analysis -- HMAC key secrecy and non-
+       injective agreement under the Dolev-Yao adversary model -- has been
+       machine-verified in both ProVerif and Tamarin and is referenced in
+       Section 17.1.  Results demonstrate that VIRP enables verifiable
+       infrastructure audit trails and that properly contained operator
+       processes -- whether human-driven or autonomous -- can be bounded by
+       structural cryptographic separation rather than policy alone.
+pages: 34
+stream_state: active
+group: none
+last_updated: "2026-05-21"
+expires: "2026-11-22"
+url: https://datatracker.ietf.org/doc/draft-howard-virp/
+source: datatracker
+ingested_at: "2026-05-21"

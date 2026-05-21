@@ -1,0 +1,35 @@
+id: rfc-6625
+rfc_number: 6625
+title: Wildcards in Multicast VPN Auto-Discovery Routes
+authors:
+    - name: E. Rosen
+      title: Editor
+    - name: Y. Rekhter
+      title: Editor
+    - name: W. Hendrickx
+    - name: R. Qiu
+date: 2012-05
+stream: IETF
+area: rtg
+wg: l3vpn
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 17
+abstract: In Multicast Virtual Private Networks (MVPNs), customer multicast flows are carried in "tunnels" through a service provider's network.  The base specifications for MVPN define BGP multicast VPN "auto-discovery routes" and specify how to use an auto-discovery route to advertise the fact that an individual customer multicast flow is being carried in a particular tunnel.  However, those specifications do not provide a way to specify, in a single such route, that multiple customer flows are being carried in a single tunnel.  Those specifications also do not provide a way to advertise that a particular tunnel is to be used by default to carry all customer flows, except in the case where that tunnel is joined by all the provider edge routers of the MVPN.  This document eliminates these restrictions by specifying the use of "wildcard" elements in the customer flow identifiers.  With wildcard elements, a single auto-discovery route can refer to multiple customer flows or even to all customer flows. [STANDARDS-TRACK]
+keywords:
+    - mvpn
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-l3vpn-mvpn-wildcards-02
+updates:
+    - rfc-6514
+updated_by:
+    - rfc-7582
+    - rfc-7900
+    - rfc-8534
+doi: 10.17487/RFC6625
+errata_url: https://www.rfc-editor.org/errata/rfc6625
+url: https://www.rfc-editor.org/rfc/rfc6625
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,38 @@
+id: rfc-6353
+rfc_number: 6353
+title: Transport Layer Security (TLS) Transport Model for the Simple Network Management Protocol (SNMP)
+authors:
+    - name: W. Hardaker
+date: 2011-07
+stream: IETF
+area: app
+wg: isms
+current_status: INTERNET STANDARD
+publication_status: DRAFT STANDARD
+page_count: 65
+abstract: |-
+    This document describes a Transport Model for the Simple Network Management Protocol (SNMP), that uses either the Transport Layer Security protocol or the Datagram Transport Layer Security (DTLS) protocol. The TLS and DTLS protocols provide authentication and privacy services for SNMP applications. This document describes how the TLS Transport Model (TLSTM) implements the needed features of an SNMP Transport Subsystem to make this protection possible in an interoperable way.
+
+    This Transport Model is designed to meet the security and operational needs of network administrators. It supports the sending of SNMP messages over TLS/TCP and DTLS/UDP. The TLS mode can make use of TCP's improved support for larger packet sizes and the DTLS mode provides potentially superior operation in environments where a connectionless (e.g., UDP) transport is preferred. Both TLS and DTLS integrate well into existing public keying infrastructures.
+
+    This document also defines a portion of the Management Information Base (MIB) for use with network management protocols. In particular, it defines objects for managing the TLS Transport Model for SNMP. [STANDARDS-TRACK]
+keywords:
+    - dtls
+    - datagram transport layer security
+    - tls transport model
+    - tlstm
+    - SNMP-TLS-TM-MIB
+formats:
+    - TXT
+    - HTML
+obsoletes:
+    - rfc-5953
+updated_by:
+    - rfc-8996
+    - rfc-9456
+also:
+    - std-78
+doi: 10.17487/RFC6353
+url: https://www.rfc-editor.org/rfc/rfc6353
+source: rfc-editor-index
+ingested_at: "2026-05-21"

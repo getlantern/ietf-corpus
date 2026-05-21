@@ -1,0 +1,29 @@
+id: draft-li-idr-sr-policy-metric
+name: draft-li-idr-sr-policy-metric
+rev: "03"
+title: BGP SR Policy Extensions for Performance-Aware Path Selection
+abstract: |-
+    To enable the headend node to do performance-aware path selection,
+       this document proposes an extension to the BGP SR Policy protocol by
+       defining a new optional Metric Sub-TLV within the BGP Tunnel
+       Encapsulation Attribute.  The introduced Metric Sub-TLV encodes
+       performance parameters (such as latency, bandwidth, reliability,
+       etc.) for SR Policy paths.
+
+       This specification also updates the BGP route selection procedures in
+       RFC4271, modifying the Breaking Ties (Phase 2) logic to prioritize
+       the metrics for SR Policy paths.
+
+       Key contributions include:
+
+       *  Introduce Metric Sub-TLV in BGP SR Policy
+
+       *  Update the tie-breaking procedure for BGP route selection
+pages: 10
+stream_state: active
+group: none
+last_updated: "2026-02-16"
+expires: "2026-08-20"
+url: https://datatracker.ietf.org/doc/draft-li-idr-sr-policy-metric/
+source: datatracker
+ingested_at: "2026-05-21"

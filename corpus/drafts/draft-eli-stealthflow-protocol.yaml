@@ -1,0 +1,25 @@
+id: draft-eli-stealthflow-protocol
+name: draft-eli-stealthflow-protocol
+rev: "02"
+title: StealthFlow Protocol (SFP)
+abstract: |-
+    The StealthFlow Protocol (SFP) is a lightweight, hardware-aware proof-
+    of-work (PoW) based admission control mechanism designed to mitigate
+    DDoS attacks at the network edge.  This document specifies version 1.5
+    of SFP, which introduces de-IP PoW design, 8-bit physical fingerprinting
+    embedded in random padding, XDP-level three-lane (Green/Yellow/Black)
+    traffic steering, and a closed-loop multi-layer firewall integration
+    (Edge → XDP → SSL/L7 → reverse XDP).  These enhancements eliminate IP-
+    based reuse attacks, provide coarse-grained real-device verification,
+    achieve <10% false-positive rate, and enable precise per-client
+    isolation even under NAT environments.  SFP operates entirely at the
+    XDP/eBPF layer with Fail-Silent behavior and requires no changes to
+    existing TLS/QUIC stacks.
+pages: 5
+stream_state: active
+group: none
+last_updated: "2026-03-21"
+expires: "2026-09-22"
+url: https://datatracker.ietf.org/doc/draft-eli-stealthflow-protocol/
+source: datatracker
+ingested_at: "2026-05-21"

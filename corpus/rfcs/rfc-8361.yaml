@@ -1,0 +1,32 @@
+id: rfc-8361
+rfc_number: 8361
+title: 'Transparent Interconnection of Lots of Links (TRILL): Centralized Replication for Active-Active Broadcast, Unknown Unicast, and Multicast (BUM) Traffic'
+authors:
+    - name: W. Hao
+    - name: Y. Li
+    - name: M. Durrani
+    - name: S. Gupta
+    - name: A. Qu
+date: 2018-04
+stream: IETF
+area: rtg
+wg: trill
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 17
+abstract: In Transparent Interconnection of Lots of Links (TRILL) active-active access, a Reverse Path Forwarding (RPF) check failure issue may occur when using the pseudo-nickname mechanism specified in RFC 7781.  This document describes a solution to resolve this RPF check failure issue through centralized replication.  All ingress Routing Bridges (RBridges) send Broadcast, Unknown Unicast, and Multicast (BUM) traffic to a centralized node with unicast TRILL encapsulation.  When the centralized node receives the BUM traffic, it decapsulates the packets and forwards them to their destination RBridges using a distribution tree established per the TRILL base protocol (RFC 6325).  To avoid RPF check failure on an RBridge sitting between the ingress RBridge and the centralized replication node, some change in the RPF calculation algorithm is required.  RPF checks on each RBridge MUST be calculated as if the centralized node was the ingress RBridge, instead of being calculated using the actual ingress RBridge.  This document updates RFC 6325.
+keywords:
+    - TRILL
+    - RBridge
+    - CMT
+    - LAALP
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-trill-centralized-replication-13
+updates:
+    - rfc-6325
+doi: 10.17487/RFC8361
+url: https://www.rfc-editor.org/rfc/rfc8361
+source: rfc-editor-index
+ingested_at: "2026-05-21"

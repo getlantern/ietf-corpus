@@ -1,0 +1,40 @@
+id: rfc-9057
+rfc_number: 9057
+title: Email Author Header Field
+authors:
+    - name: D. Crocker
+date: 2021-06
+stream: INDEPENDENT
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 7
+abstract: |-
+    Internet mail defines the From: header field to indicate the author of the message's content and the Sender: field to indicate who initially handled the message on the author's behalf. The Sender: field is optional if it has the same information as the From: field. This was not a problem until development of stringent protections on use of the From: field. It has prompted Mediators, such as mailing lists, to modify the From: field to circumvent mail rejection caused by those protections. In effect, the From: field has become dominated by its role as a handling identifier.
+
+    The current specification augments the altered use of the From: field by specifying the Author: field, which ensures identification of the original author of the message and is not subject to modification by Mediators. This document is published as an Experimental RFC to assess community interest, functional efficacy, and technical adequacy.
+keywords:
+    - domain
+    - email
+    - security
+    - messaging
+    - dkim
+    - spf
+    - authentication
+    - reporting
+    - conformance
+    - author
+    - origination
+    - original
+    - from
+    - sender
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-crocker-email-author-04
+doi: 10.17487/RFC9057
+errata_url: https://www.rfc-editor.org/errata/rfc9057
+url: https://www.rfc-editor.org/rfc/rfc9057
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,31 @@
+id: rfc-9774
+rfc_number: 9774
+title: Deprecation of AS_SET and AS_CONFED_SET in BGP
+authors:
+    - name: W. Kumari
+    - name: K. Sriram
+    - name: L. Hannachi
+    - name: J. Haas
+date: 2025-05
+stream: IETF
+area: rtg
+wg: idr
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 13
+abstract: BCP 172 (i.e., RFC 6472) recommends not using AS_SET and AS_CONFED_SET AS_PATH segment types in the Border Gateway Protocol (BGP).  This document advances that recommendation to a standards requirement in BGP; it prohibits the use of the AS_SET and AS_CONFED_SET path segment types in the AS_PATH.  This is done to simplify the design and implementation of BGP and to make the semantics of the originator of a BGP route clearer.  This will also simplify the design, implementation, and deployment of various BGP security mechanisms.  This document updates RFC 4271 by deprecating the origination of BGP routes with AS_SET (Type 1 AS_PATH segment) and updates RFC 5065 by deprecating the origination of BGP routes with AS_CONFED_SET (Type 4 AS_PATH segment).  Finally, it obsoletes RFC 6472.
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-idr-deprecate-as-set-confed-set-18
+obsoletes:
+    - rfc-6472
+updates:
+    - rfc-4271
+    - rfc-5065
+doi: 10.17487/RFC9774
+url: https://www.rfc-editor.org/rfc/rfc9774
+source: rfc-editor-index
+ingested_at: "2026-05-21"

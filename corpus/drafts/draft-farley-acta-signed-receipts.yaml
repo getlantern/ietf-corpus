@@ -1,0 +1,25 @@
+id: draft-farley-acta-signed-receipts
+name: draft-farley-acta-signed-receipts
+rev: "01"
+title: Signed Decision Receipts for Machine-to-Machine Access Control
+abstract: |-
+    This document defines a portable, cryptographically signed receipt
+       format for recording machine-to-machine access control decisions.
+       Each receipt captures the identity of the decision maker, the tool or
+       resource being accessed, the policy evaluation result, and a
+       timestamp — all signed with Ed25519 [RFC8032] and serialized using
+       deterministic JSON canonicalization [RFC8785].
+
+       The format is designed for environments where AI agents invoke tools
+       on behalf of human operators, particularly the Model Context Protocol
+       (MCP) ecosystem.  Receipts are independently verifiable without
+       contacting the issuer, enabling offline audit, regulatory compliance,
+       and cross-organizational trust federation.
+pages: 30
+stream_state: active
+group: none
+last_updated: "2026-04-25"
+expires: "2026-10-27"
+url: https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/
+source: datatracker
+ingested_at: "2026-05-21"

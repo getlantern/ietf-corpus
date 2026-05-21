@@ -1,0 +1,29 @@
+id: draft-morrison-identity-pronouns
+name: draft-morrison-identity-pronouns
+rev: "01"
+title: 'Identity Pronouns: A Reference-Axis Extension to ~handle Identity Systems'
+abstract: |-
+    This document defines an identity pronoun grammar as a reference axis
+       orthogonal to the ~handle identity tier taxonomy defined in [MCPDNS]
+       and [IDCOMMITS].  A pronoun is a session-scoped reference that
+       resolves client-side to a concrete handle using local session state
+       before any cryptographic, DNS, or federation operation.  The entity-
+       class taxonomy (Sovereign, Bot, Instrument) is unchanged; this
+       specification introduces Absolute vs Pronoun as an orthogonal axis.
+       A pronoun MUST NOT appear in a capability token, in a DNS record, in
+       an Accord signature, or in any inter-organisational protocol payload.
+       The reference implementation defines a single Wave-1 pronoun, ~org,
+       that resolves to the concrete handle of the organisation bound to the
+       caller's current session.  An appendix defines a relative-path
+       pronoun grammar (e.g. ~./architect, ~../weaver) as a non-normative
+       design surface for future work.  The mechanism is provider-neutral,
+       introduces no new cryptographic primitive, and imposes zero new load
+       on DNS, capability-token issuers, or federated resolvers.
+pages: 12
+stream_state: active
+group: none
+last_updated: "2026-05-17"
+expires: "2026-11-18"
+url: https://datatracker.ietf.org/doc/draft-morrison-identity-pronouns/
+source: datatracker
+ingested_at: "2026-05-21"

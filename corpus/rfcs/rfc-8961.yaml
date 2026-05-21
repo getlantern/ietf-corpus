@@ -1,0 +1,30 @@
+id: rfc-8961
+rfc_number: 8961
+title: Requirements for Time-Based Loss Detection
+authors:
+    - name: M. Allman
+date: 2020-11
+stream: IETF
+area: wit
+wg: tcpm
+current_status: BEST CURRENT PRACTICE
+publication_status: BEST CURRENT PRACTICE
+page_count: 12
+abstract: Many protocols must detect packet loss for various reasons (e.g., to ensure reliability using retransmissions or to understand the level of congestion along a network path).  While many mechanisms have been designed to detect loss, ultimately, protocols can only count on the passage of time without delivery confirmation to declare a packet "lost".  Each implementation of a time-based loss detection mechanism represents a balance between correctness and timeliness; therefore, no implementation suits all situations.  This document provides high-level requirements for time-based loss detectors appropriate for general use in unicast communication across the Internet.  Within the requirements, implementations have latitude to define particulars that best address each situation.
+keywords:
+    - retransmission timeout
+    - packet loss
+    - loss detection
+    - requirements
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-tcpm-rto-consider-17
+also:
+    - bcp-233
+doi: 10.17487/RFC8961
+url: https://www.rfc-editor.org/rfc/rfc8961
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,38 @@
+id: rfc-8283
+rfc_number: 8283
+title: An Architecture for Use of PCE and the PCE Communication Protocol (PCEP) in a Network with Central Control
+authors:
+    - name: A. Farrel
+      title: Editor
+    - name: Q. Zhao
+      title: Editor
+    - name: Z. Li
+    - name: C. Zhou
+date: 2017-12
+stream: IETF
+area: rtg
+wg: teas
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 25
+abstract: |-
+    The Path Computation Element (PCE) is a core component of Software- Defined Networking (SDN) systems. It can compute optimal paths for traffic across a network and can also update the paths to reflect changes in the network or traffic demands.
+
+    PCE was developed to derive paths for MPLS Label Switched Paths (LSPs), which are supplied to the head end of the LSP using the Path Computation Element Communication Protocol (PCEP).
+
+    SDN has a broader applicability than signaled MPLS traffic-engineered (TE) networks, and the PCE may be used to determine paths in a range of use cases including static LSPs, segment routing, Service Function Chaining (SFC), and most forms of a routed or switched network. It is, therefore, reasonable to consider PCEP as a control protocol for use in these environments to allow the PCE to be fully enabled as a central controller.
+
+    This document briefly introduces the architecture for PCE as a central controller, examines the motivations and applicability for PCEP as a control protocol in this environment, and introduces the implications for the protocol. A PCE-based central controller can simplify the processing of a distributed control plane by blending it with elements of SDN and without necessarily completely replacing it.
+
+    This document does not describe use cases in detail and does not define protocol extensions: that work is left for other documents.
+keywords:
+    - PCE
+    - SDN
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-teas-pce-central-control-05
+doi: 10.17487/RFC8283
+url: https://www.rfc-editor.org/rfc/rfc8283
+source: rfc-editor-index
+ingested_at: "2026-05-21"

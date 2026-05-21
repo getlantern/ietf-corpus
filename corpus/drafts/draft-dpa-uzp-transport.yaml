@@ -1,0 +1,32 @@
+id: draft-dpa-uzp-transport
+name: draft-dpa-uzp-transport
+rev: "01"
+title: 'UZP: Universal Zero-Port Transport Protocol'
+abstract: |-
+    The Universal Zero-Port Transport Protocol (UZP) defines an identity-
+       addressed, encrypted-by-default transport for the Universal Zero-Port
+       Interconnect Framework (UZPIF; [UZPIF]).  Instead of exposing IP:port
+       listeners, both endpoints establish outbound, identity-bound sessions
+       to one or more Rendezvous Nodes (RNs).  The RN performs flow
+       stitching but never terminates end-to-end cryptography or holds long-
+       term secrets.  Application data is carried over an authenticated
+       encryption (AEAD) channel keyed by a handshake based on modern and
+       post-quantum-capable primitives, and reliability is expressed at the
+       block level rather than at the TCP segment or stream level.
+
+       This document is part of an experimental, research-oriented
+       Independent Stream suite.  It defines the current normative baseline
+       for trust objects, validation rules, and security semantics within
+       its scope.  Hard interoperability is expected for shared object
+       semantics and validation rules.  Full wire-level, clustering, and
+       proof-family interoperability is not claimed everywhere yet; the
+       remaining details are intentionally profile-defined or deferred where
+       noted.
+pages: 25
+stream_state: active
+group: none
+last_updated: "2026-03-16"
+expires: "2026-09-17"
+url: https://datatracker.ietf.org/doc/draft-dpa-uzp-transport/
+source: datatracker
+ingested_at: "2026-05-21"

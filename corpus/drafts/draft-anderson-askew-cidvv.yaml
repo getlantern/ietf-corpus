@@ -1,0 +1,33 @@
+id: draft-anderson-askew-cidvv
+name: draft-anderson-askew-cidvv
+rev: "00"
+title: Caller-ID Vouching and Vetting (CIDVV)
+abstract: |-
+    Caller-ID spoofing remains a significant problem in telephony,
+       particularly across inter-domain and international call paths where
+       identity frameworks may not be consistently applied.
+
+       This document defines Caller-ID Vouching and Vetting (CIDVV), a
+       lightweight verification mechanism that uses short-lived signaling
+       exchanges encoded within the Calling Party Number to confirm that a
+       calling party can receive calls at the Asserted Caller-ID.
+
+       CIDVV is designed to operate across heterogeneous SIP and SS7/TDM
+       networks without requiring new protocol extensions or persistent
+       identity infrastructure.  It relies on existing call routing behavior
+       and intentionally leverages failure responses as a signaling
+       mechanism, using failed call attempts as evidence of number control
+       rather than successful call completion.
+
+       The mechanism improves resistance to Caller-ID spoofing by requiring
+       demonstrable control of the Asserted Caller-ID, while remaining
+       incrementally deployable and tolerant of intermediate network
+       modification.
+pages: 30
+stream_state: active
+group: none
+last_updated: "2026-05-07"
+expires: "2026-11-08"
+url: https://datatracker.ietf.org/doc/draft-anderson-askew-cidvv/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,27 @@
+id: rfc-7967
+rfc_number: 7967
+title: Constrained Application Protocol (CoAP) Option for No Server Response
+authors:
+    - name: A. Bhattacharyya
+    - name: S. Bandyopadhyay
+    - name: A. Pal
+    - name: T. Bose
+date: 2016-08
+stream: INDEPENDENT
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 18
+abstract: |-
+    There can be machine-to-machine (M2M) scenarios where server responses to client requests are redundant. This kind of open-loop exchange (with no response path from the server to the client) may be desired to minimize resource consumption in constrained systems while updating many resources simultaneously or performing high-frequency updates. CoAP already provides Non-confirmable (NON) messages that are not acknowledged by the recipient. However, the request/response semantics still require the server to respond with a status code indicating "the result of the attempt to understand and satisfy the request", per RFC 7252.
+
+    This specification introduces a CoAP option called 'No-Response'. Using this option, the client can explicitly express to the server its disinterest in all responses against the particular request. This option also provides granular control to enable expression of disinterest to a particular response class or a combination of response classes. The server MAY decide to suppress the response by not transmitting it back to the client according to the value of the No-Response option in the request. This option may be effective for both unicast and multicast requests. This document also discusses a few examples of applications that benefit from this option.
+keywords:
+    - No-Response
+formats:
+    - TXT
+    - HTML
+draft: draft-tcs-coap-no-response-option-17
+doi: 10.17487/RFC7967
+url: https://www.rfc-editor.org/rfc/rfc7967
+source: rfc-editor-index
+ingested_at: "2026-05-21"

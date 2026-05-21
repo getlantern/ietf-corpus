@@ -1,0 +1,32 @@
+id: draft-fluid-fadp
+name: draft-fluid-fadp
+rev: "01"
+title: 'Fluid Agentic DeFi Protocol (FADP/1.0): HTTP-Native Micropayment Authentication for Autonomous AI Agents'
+abstract: |-
+    This document defines the Fluid Agentic DeFi Protocol (FADP), version
+       1.0.  FADP is an application-layer protocol layered atop HTTP that
+       enables autonomous AI agents to pay for access to web resources using
+       on-chain cryptocurrency transfers, with cryptographic proof of
+       payment embedded directly in HTTP headers.
+
+       FADP extends HTTP 402 (Payment Required) with two new header fields:
+       X-FADP-Required, which a server uses to communicate payment terms to
+       an agent, and X-FADP-Proof, which an agent uses to supply a
+       verifiable on-chain payment receipt.  A nonce-challenge mechanism
+       prevents proof replay.  An optional verification endpoint allows
+       third-party on-chain confirmation without requiring the verifying
+       party to run blockchain infrastructure.
+
+       FADP is designed for agent-to-server and agent-to-agent payment flows
+       operating at sub-dollar granularity (micropayments), where credit-
+       card or OAuth-based billing is impractical.  The reference
+       implementation targets USDC on Base (an Ethereum Layer 2), though the
+       protocol is token- and chain-agnostic.
+pages: 20
+stream_state: active
+group: none
+last_updated: "2026-04-23"
+expires: "2026-10-25"
+url: https://datatracker.ietf.org/doc/draft-fluid-fadp/
+source: datatracker
+ingested_at: "2026-05-21"

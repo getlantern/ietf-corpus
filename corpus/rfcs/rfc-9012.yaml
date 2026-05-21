@@ -1,0 +1,38 @@
+id: rfc-9012
+rfc_number: 9012
+title: The BGP Tunnel Encapsulation Attribute
+authors:
+    - name: K. Patel
+    - name: G. Van de Velde
+    - name: S. Sangli
+    - name: J. Scudder
+date: 2021-04
+stream: IETF
+area: rtg
+wg: idr
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 41
+abstract: |-
+    This document defines a BGP path attribute known as the "Tunnel Encapsulation attribute", which can be used with BGP UPDATEs of various Subsequent Address Family Identifiers (SAFIs) to provide information needed to create tunnels and their corresponding encapsulation headers. It provides encodings for a number of tunnel types, along with procedures for choosing between alternate tunnels and routing packets into tunnels.
+
+    This document obsoletes RFC 5512, which provided an earlier definition of the Tunnel Encapsulation attribute. RFC 5512 was never deployed in production. Since RFC 5566 relies on RFC 5512, it is likewise obsoleted. This document updates RFC 5640 by indicating that the Load-Balancing Block sub-TLV may be included in any Tunnel Encapsulation attribute where load balancing is desired.
+keywords:
+    - BGP
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-idr-tunnel-encaps-22
+obsoletes:
+    - rfc-5512
+    - rfc-5566
+updates:
+    - rfc-5640
+updated_by:
+    - rfc-9830
+doi: 10.17487/RFC9012
+url: https://www.rfc-editor.org/rfc/rfc9012
+source: rfc-editor-index
+ingested_at: "2026-05-21"

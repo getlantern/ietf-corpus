@@ -1,0 +1,37 @@
+id: rfc-5150
+rfc_number: 5150
+title: Label Switched Path Stitching with Generalized Multiprotocol Label Switching Traffic Engineering (GMPLS TE)
+authors:
+    - name: A. Ayyangar
+    - name: K. Kompella
+    - name: JP. Vasseur
+    - name: A. Farrel
+date: 2008-02
+stream: IETF
+area: rtg
+wg: ccamp
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 19
+abstract: |-
+    In certain scenarios, there may be a need to combine several Generalized Multiprotocol Label Switching (GMPLS) Label Switched Paths (LSPs) such that a single end-to-end (e2e) LSP is realized and all traffic from one constituent LSP is switched onto the next LSP. We will refer to this as "LSP stitching", the key requirement being that a constituent LSP not be allocated to more than one e2e LSP. The constituent LSPs will be referred to as "LSP segments" (S-LSPs).
+
+    This document describes extensions to the existing GMPLS signaling protocol (Resource Reservation Protocol-Traffic Engineering (RSVP-TE)) to establish e2e LSPs created from S-LSPs, and describes how the LSPs can be managed using the GMPLS signaling and routing protocols.
+
+    It may be possible to configure a GMPLS node to switch the traffic from an LSP for which it is the egress, to another LSP for which it is the ingress, without requiring any signaling or routing extensions whatsoever and such that the operation is completely transparent to other nodes. This will also result in LSP stitching in the data plane. However, this document does not cover this scenario of LSP stitching. [STANDARDS-TRACK]
+keywords:
+    - lsp
+    - label switched paths
+    - e2e lsp
+    - lsp stitching
+    - lsp segments
+    - s-lsp
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-ccamp-lsp-stitching-06
+doi: 10.17487/RFC5150
+errata_url: https://www.rfc-editor.org/errata/rfc5150
+url: https://www.rfc-editor.org/rfc/rfc5150
+source: rfc-editor-index
+ingested_at: "2026-05-21"

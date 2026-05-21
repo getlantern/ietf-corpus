@@ -1,0 +1,28 @@
+id: rfc-4812
+rfc_number: 4812
+title: OSPF Restart Signaling
+authors:
+    - name: L. Nguyen
+    - name: A. Roy
+    - name: A. Zinin
+date: 2007-03
+stream: IETF
+wg: non working group
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 7
+abstract: |-
+    OSPF is a link-state intra-domain routing protocol used in IP networks. Routers find new and detect unreachable neighbors via the Hello subprotocol. Hello OSPF packets are also used to ensure two-way connectivity within time. When a router restarts its OSPF software, it may not know its neighbors. If such a router sends a Hello packet on an interface, its neighbors are going to reset the adjacency, which may not be desirable in certain conditions.
+
+    This memo describes a vendor-specific mechanism that allows OSPF routers to inform their neighbors about the restart process. Note that this mechanism requires support from neighboring routers. The mechanism described in this document was proposed before Graceful OSPF Restart, as described in RFC 3623, came into existence. It is implemented/supported by at least one major vendor and is currently deployed in the field. The purpose of this document is to capture the details of this mechanism for public use. This mechanism is not an IETF standard. This memo provides information for the Internet community.
+keywords:
+    - open shortest path first
+formats:
+    - TXT
+    - HTML
+draft: draft-nguyen-ospf-restart-06
+doi: 10.17487/RFC4812
+errata_url: https://www.rfc-editor.org/errata/rfc4812
+url: https://www.rfc-editor.org/rfc/rfc4812
+source: rfc-editor-index
+ingested_at: "2026-05-21"

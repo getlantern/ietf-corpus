@@ -1,0 +1,28 @@
+id: draft-clad-rtgwg-efficient-remote-protection
+name: draft-clad-rtgwg-efficient-remote-protection
+rev: "00"
+title: Efficient Remote Protection
+abstract: |-
+    This document specifies Efficient Remote Protection (ERP), a
+       mechanism for IP Fast Reroute (IP-FRR) that utilizes network
+       notifications to activate pre-computed backup paths at nodes multiple
+       hops upstream of a failure.  ERP addresses scenarios where local
+       protection mechanisms, such as Loop-Free Alternates (LFA) or
+       Topology-Independent LFA (TI-LFA), result in suboptimal paths,
+       specifically traffic hairpinning.
+
+       By activating protection at strategically selected upstream nodes
+       rather than at the node immediately adjacent to the failure, ERP
+       preserves routing optimality and prevents bandwidth waste.  ERP
+       applies to both complete link/node failures and performance
+       degradations such as congestion or reduced link capacity.  This makes
+       ERP particularly beneficial in networks with high link utilization,
+       such as AI data centers and Data Center Interconnect (DCI) networks.
+pages: 10
+stream_state: active
+group: none
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-clad-rtgwg-efficient-remote-protection/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,42 @@
+id: rfc-9015
+rfc_number: 9015
+title: BGP Control Plane for the Network Service Header in Service Function Chaining
+authors:
+    - name: A. Farrel
+    - name: J. Drake
+    - name: E. Rosen
+    - name: J. Uttaro
+    - name: L. Jalil
+date: 2021-06
+stream: IETF
+area: rtg
+wg: bess
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 59
+abstract: |-
+    This document describes the use of BGP as a control plane for networks that support service function chaining. The document introduces a new BGP address family called the "Service Function Chain (SFC) Address Family Identifier / Subsequent Address Family Identifier" (SFC AFI/SAFI) with two Route Types. One Route Type is originated by a node to advertise that it hosts a particular instance of a specified service function. This Route Type also provides "instructions" on how to send a packet to the hosting node in a way that indicates that the service function has to be applied to the packet. The other Route Type is used by a controller to advertise the paths of "chains" of service functions and give a unique designator to each such path so that they can be used in conjunction with the Network Service Header (NSH) defined in RFC 8300.
+
+    This document adopts the service function chaining architecture described in RFC 7665.
+keywords:
+    - Service Function Chaining
+    - Service Function Chain
+    - Network Service Header
+    - Service Function
+    - Service Function Forwarder
+    - Service Function Path
+    - Service Function Path Route
+    - Service Function Instance
+    - Service Function Instance Route
+    - Service Function Type
+    - Control Plane
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-bess-nsh-bgp-control-plane-18
+doi: 10.17487/RFC9015
+url: https://www.rfc-editor.org/rfc/rfc9015
+source: rfc-editor-index
+ingested_at: "2026-05-21"

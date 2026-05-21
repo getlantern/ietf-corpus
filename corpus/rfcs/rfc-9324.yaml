@@ -1,0 +1,30 @@
+id: rfc-9324
+rfc_number: 9324
+title: Policy Based on the Resource Public Key Infrastructure (RPKI) without Route Refresh
+authors:
+    - name: R. Bush
+    - name: K. Patel
+    - name: P. Smith
+    - name: M. Tinka
+date: 2022-12
+stream: IETF
+area: ops
+wg: sidrops
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 7
+abstract: A BGP speaker performing policy based on the Resource Public Key Infrastructure (RPKI) should not issue route refresh to its neighbors because it has received new RPKI data.  This document updates RFC 8481 by describing how to avoid doing so by either keeping a full Adj-RIB-In or saving paths dropped due to ROV (Route Origin Validation) so they may be reevaluated with respect to new RPKI data.
+keywords:
+    - bgp
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-sidrops-rov-no-rr-08
+updates:
+    - rfc-8481
+doi: 10.17487/RFC9324
+url: https://www.rfc-editor.org/rfc/rfc9324
+source: rfc-editor-index
+ingested_at: "2026-05-21"

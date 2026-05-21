@@ -1,0 +1,36 @@
+id: draft-bellis-unheaded-pqc-authentication
+name: draft-bellis-unheaded-pqc-authentication
+rev: "00"
+title: Post-Quantum Packet Authentication for the Unheaded Protocol
+abstract: |-
+    This document specifies a post-quantum cryptographic (PQC)
+       authentication mechanism for the Unheaded Protocol Foundation.  It
+       defines a multi-algorithm, dual-layer, tiered authentication
+       architecture integrating three NIST PQC digital signature standards
+       -- FIPS 205 (SLH-DSA), FIPS 204 (ML-DSA), and FIPS 206 (FN-DSA) --
+       plus two NIST PQC key-encapsulation mechanisms -- FIPS 203 (ML-KEM)
+       and FIPS 207 (HQC) -- with the Monad wire format, Sophia BPF map
+       dictionaries, and Wotan per-flow memory model.
+
+       Layer 1 (Wire-Level, REQUIRED): Full PQC signatures are stored in
+       Sophia BPF maps via a "signature-by-reference" scheme.  The Monad
+       register carries compact 12-byte references (SigRef, KeyRef, SeqNum,
+       HashPfx).  Shield verifies signatures at the network perimeter and
+       strips Monad Hop-by-Hop headers at ingress -- internal kingdom
+       traffic never carries PQC wire overhead.
+
+       Layer 2 (Application-Level, OPTIONAL): User applications MAY define
+       verification requirements in Sophia application policy dictionaries.
+       After wire-level authentication succeeds, the application reads Wotan
+       per-flow PQC state and matches it against its own policy.
+
+       Four PQC compliance tiers -- NONE, STANDARD, ENHANCED, and SOVEREIGN
+       -- are signaled via Kingdom Mode bits in the Monad flags byte.
+pages: 40
+stream_state: active
+group: none
+last_updated: "2026-03-19"
+expires: "2026-09-20"
+url: https://datatracker.ietf.org/doc/draft-bellis-unheaded-pqc-authentication/
+source: datatracker
+ingested_at: "2026-05-21"

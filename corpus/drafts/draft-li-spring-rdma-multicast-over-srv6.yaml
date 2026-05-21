@@ -1,0 +1,26 @@
+id: draft-li-spring-rdma-multicast-over-srv6
+name: draft-li-spring-rdma-multicast-over-srv6
+rev: "00"
+title: SRv6 Extensions for RDMA Multicast Delivery
+abstract: |-
+    This document specifies SRv6 (Segment Routing over IPv6) extensions
+       for multicast delivery of RDMA (Remote Direct Memory Access) Reliable
+       Connection (RC) traffic.  It defines a new SRv6 endpoint behavior,
+       End.MT, that performs per-receiver RDMA Base Transport Header (BTH)
+       modifications at edge nodes of the multicast tree.  It also specifies
+       procedures for hop-by-hop aggregation of RDMA ACK, NACK, and CNP
+       response messages along the reverse path.  Together, these extensions
+       allow RDMA RC endpoints to communicate using standard point-to-point
+       Queue Pair (QP) semantics while the network distributes data packets
+       over an IP multicast tree.  Target deployment scenarios include
+       multi-replica distributed storage writes, HPC collective
+       communications, AI training parameter distribution, and large-scale
+       inference KV cache distribution.
+pages: 17
+stream_state: active
+group: none
+last_updated: "2026-03-01"
+expires: "2026-09-02"
+url: https://datatracker.ietf.org/doc/draft-li-spring-rdma-multicast-over-srv6/
+source: datatracker
+ingested_at: "2026-05-21"

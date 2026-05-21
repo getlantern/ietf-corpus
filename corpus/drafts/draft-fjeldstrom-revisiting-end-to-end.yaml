@@ -1,0 +1,56 @@
+id: draft-fjeldstrom-revisiting-end-to-end
+name: draft-fjeldstrom-revisiting-end-to-end
+rev: "02"
+title: End-to-End Semantics in a World Without Ambient Reachability
+abstract: |-
+    This document examines the Internet's current connectivity model as
+       an observed architectural equilibrium rather than as a failure to be
+       corrected.  It argues that the deployed Internet no longer provides
+       ambient, unsolicited end-to-end transport reachability, not because
+       of a single design error, but as the cumulative result of rational
+       responses to scale, security exposure, administrative autonomy, and
+       cost containment.  Default-deny boundaries and policy enforcement
+       have become structural features of the network.
+
+       Under these conditions, applications and services that require mutual
+       visibility rely on a recurring set of mechanisms, including relays,
+       overlays, tunnels, rendezvous services, and long-lived outbound
+       connections, to enable interaction.  These mechanisms are widely
+       deployed, often effective, and serve multiple legitimate roles,
+       including constrained initiation, resource discovery, and intentional
+       mediation or fan-out.  Their persistence reflects sustained demand
+       for controlled initiation in the absence of an explicit transport-
+       layer admission capability.
+
+       The document treats the convergence of these mechanisms into steady-
+       state infrastructure as diagnostic evidence.  When distinct
+       interaction roles are collapsed into a common architectural form,
+       local correctness is preserved, but predictable system-level effects
+       emerge, including loss of locality, concentration of load, obscured
+       failure semantics, and elevation of coordination and authorization
+       semantics into higher layers.
+
+       This analysis is diagnostic rather than prescriptive.  It does not
+       propose new protocols, standards, or deployment requirements, nor
+       does it advocate restoring ambient reachability.  Instead, it argues
+       that if transport-visible end-to-end semantics (properties observable
+       and enforceable without application payload inspection) are to remain
+       meaningful under contemporary conditions, the architecture must
+       provide some form of explicit, policy-bounded admission at
+       boundaries.  Any architectural responses discussed are illustrative
+       only, intended to make these constraints concrete rather than to
+       mandate specific mechanisms.
+
+       The intent of this document is to make the present connectivity
+       equilibrium visible as an architectural condition in its own right,
+       and to provide a clearer foundation for subsequent analysis, design,
+       or standardization efforts that engage with end-to-end semantics
+       under real operational constraints.
+pages: 24
+stream_state: active
+group: none
+last_updated: "2026-02-03"
+expires: "2026-08-06"
+url: https://datatracker.ietf.org/doc/draft-fjeldstrom-revisiting-end-to-end/
+source: datatracker
+ingested_at: "2026-05-21"

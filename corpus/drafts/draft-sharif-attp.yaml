@@ -1,0 +1,40 @@
+id: draft-sharif-attp
+name: draft-sharif-attp
+rev: "00"
+title: 'ATTP: Agent Trust Transport Protocol'
+abstract: |-
+    This document specifies the Agent Trust Transport Protocol (ATTP),
+       a protocol-agnostic framework for trust scoring, cryptographic
+       identity, action-limit enforcement, compliance gating, and
+       tamper-evident audit for autonomous AI agents.
+
+       ATTP separates trust from identity.  Identity protocols answer
+       "who is this agent?"  ATTP answers "should this agent be allowed
+       to perform this action, at this magnitude, against this
+       counterparty, right now?"
+
+       The protocol defines five progressive trust levels (L0-L4),
+       per-agent ECDSA P-256 cryptographic identity, a five-dimension
+       behavioural trust scoring model, action-limit tiers derived from
+       trust scores, real-time compliance gating (sanctions screening,
+       jurisdictional controls), kill switches for instant revocation,
+       anomaly detection for agent behaviour, and a public trust query
+       API.
+
+       ATTP is transport-agnostic.  This document defines the core
+       framework.  Protocol-specific bindings map ATTP trust enforcement
+       to individual transports: MCPS provides the binding for the
+       Model Context Protocol (MCP), with additional bindings defined
+       for REST APIs, Google A2A, gRPC, and GraphQL.
+
+       This specification supersedes draft-sharif-agent-payment-trust-00,
+       broadening the scope from payment transactions to any agent action
+       requiring trust-gated authorisation.
+pages: 21
+stream_state: active
+group: none
+last_updated: "2026-04-30"
+expires: "2026-11-01"
+url: https://datatracker.ietf.org/doc/draft-sharif-attp/
+source: datatracker
+ingested_at: "2026-05-21"

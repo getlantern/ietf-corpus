@@ -1,0 +1,36 @@
+id: rfc-9139
+rfc_number: 9139
+title: Information-Centric Networking (ICN) Adaptation to Low-Power Wireless Personal Area Networks (LoWPANs)
+authors:
+    - name: C. Gündoğan
+    - name: T. Schmidt
+    - name: M. Wählisch
+    - name: C. Scherb
+    - name: C. Marxer
+    - name: C. Tschudin
+date: 2021-11
+stream: IRTF
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 42
+abstract: |-
+    This document defines a convergence layer for Content-Centric Networking (CCNx) and Named Data Networking (NDN) over IEEE 802.15.4 Low-Power Wireless Personal Area Networks (LoWPANs). A new frame format is specified to adapt CCNx and NDN packets to the small MTU size of IEEE 802.15.4. For that, syntactic and semantic changes to the TLV-based header formats are described. To support compatibility with other LoWPAN technologies that may coexist on a wireless medium, the dispatching scheme provided by IPv6 over LoWPAN (6LoWPAN) is extended to include new dispatch types for CCNx and NDN. Additionally, the fragmentation component of the 6LoWPAN dispatching framework is applied to Information-Centric Network (ICN) chunks. In its second part, the document defines stateless and stateful compression schemes to improve efficiency on constrained links. Stateless compression reduces TLV expressions to static header fields for common use cases. Stateful compression schemes elide states local to the LoWPAN and replace names in Data packets by short local identifiers.
+
+    This document is a product of the IRTF Information-Centric Networking Research Group (ICNRG).
+keywords:
+    - Content-Centric Networking (CCNx)
+    - Named Data Networking (NDN)
+    - header compression
+    - fragmentation
+    - 6LoWPAN
+    - Internet of Things (IoT)
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-irtf-icnrg-icnlowpan-11
+doi: 10.17487/RFC9139
+url: https://www.rfc-editor.org/rfc/rfc9139
+source: rfc-editor-index
+ingested_at: "2026-05-21"

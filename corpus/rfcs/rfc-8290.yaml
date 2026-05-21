@@ -1,0 +1,33 @@
+id: rfc-8290
+rfc_number: 8290
+title: The Flow Queue CoDel Packet Scheduler and Active Queue Management Algorithm
+authors:
+    - name: T. Hoeiland-Joergensen
+    - name: P. McKenney
+    - name: D. Taht
+    - name: J. Gettys
+    - name: E. Dumazet
+date: 2018-01
+stream: IETF
+area: tsv
+wg: aqm
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 25
+abstract: |-
+    This memo presents the FQ-CoDel hybrid packet scheduler and Active Queue Management (AQM) algorithm, a powerful tool for fighting bufferbloat and reducing latency.
+
+    FQ-CoDel mixes packets from multiple flows and reduces the impact of head-of-line blocking from bursty traffic. It provides isolation for low-rate traffic such as DNS, web, and videoconferencing traffic. It improves utilisation across the networking fabric, especially for bidirectional traffic, by keeping queue lengths short, and it can be implemented in a memory- and CPU-efficient fashion across a wide range of hardware.
+keywords:
+    - bufferbloat
+    - aqm
+    - fq_codel
+    - fq-codel
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-aqm-fq-codel-06
+doi: 10.17487/RFC8290
+url: https://www.rfc-editor.org/rfc/rfc8290
+source: rfc-editor-index
+ingested_at: "2026-05-21"

@@ -1,0 +1,32 @@
+id: draft-aevum-agentcard
+name: draft-aevum-agentcard
+rev: "00"
+title: 'AgentCard: A Framework-Neutral Identity and Capability Declaration Format for Agent-to-Agent Communication'
+abstract: |-
+    This document defines AgentCard, a lightweight JSON data format that
+       enables autonomous software agents to declare their identity,
+       capabilities, communication endpoints, and resource pricing in a
+       framework-neutral manner.  AgentCard is designed for agent-to-agent
+       (A2A) communication scenarios where agents built with different
+       frameworks — such as LangChain, CrewAI, AutoGen, or custom
+       implementations — must interoperate without prior coordination.
+
+       An AgentCard is a pure data schema: it carries no execution logic and
+       imposes no transport requirements.  It is analogous to an HTTP
+       response header set — a machine-parseable self-description that any
+       compliant reader can interpret.
+
+       Key properties of AgentCard include a globally unique ULID-based
+       agent identity, dot-namespaced capability identifiers compatible with
+       OpenAI function-calling and Model Context Protocol (MCP) tool
+       schemas, a physics-grounded energy pricing floor derived from
+       Landauer's principle, and an extensible metadata namespace for
+       framework-specific annotations.
+pages: 20
+stream_state: active
+group: none
+last_updated: "2026-04-22"
+expires: "2026-10-24"
+url: https://datatracker.ietf.org/doc/draft-aevum-agentcard/
+source: datatracker
+ingested_at: "2026-05-21"

@@ -1,0 +1,41 @@
+id: rfc-9824
+rfc_number: 9824
+title: Compact Denial of Existence in DNSSEC
+authors:
+    - name: S. Huque
+    - name: C. Elmerot
+    - name: O. Gudmundsson
+date: 2025-09
+stream: IETF
+area: ops
+wg: dnsop
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 14
+abstract: |-
+    This document describes a technique to generate a signed DNS response on demand for a nonexistent name by claiming that the name exists but doesn't have any data for the queried record type. Such responses require only one minimally covering NSEC or NSEC3 record, allow online signing servers to minimize signing operations and response sizes, and prevent zone content disclosure.
+
+    This document updates RFCs 4034 and 4035.
+keywords:
+    - DNS
+    - DNSSEC
+    - Denial of Existence
+    - Compact Denial of Existence
+    - Compact Answers
+    - Black Lies
+    - NXDOMAIN
+    - NODATA
+    - Empty Non-Terminal
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-dnsop-compact-denial-of-existence-07
+updates:
+    - rfc-4034
+    - rfc-4035
+doi: 10.17487/RFC9824
+url: https://www.rfc-editor.org/rfc/rfc9824
+source: rfc-editor-index
+ingested_at: "2026-05-21"

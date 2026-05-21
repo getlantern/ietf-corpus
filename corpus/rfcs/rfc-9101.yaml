@@ -1,0 +1,41 @@
+id: rfc-9101
+rfc_number: 9101
+title: 'The OAuth 2.0 Authorization Framework: JWT-Secured Authorization Request (JAR)'
+authors:
+    - name: N. Sakimura
+    - name: J. Bradley
+    - name: M. Jones
+date: 2021-08
+stream: IETF
+area: sec
+wg: oauth
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 25
+abstract: |-
+    The authorization request in OAuth 2.0 described in RFC 6749 utilizes query parameter serialization, which means that authorization request parameters are encoded in the URI of the request and sent through user agents such as web browsers. While it is easy to implement, it means that a) the communication through the user agents is not integrity protected and thus, the parameters can be tainted, b) the source of the communication is not authenticated, and c) the communication through the user agents can be monitored. Because of these weaknesses, several attacks to the protocol have now been put forward.
+
+    This document introduces the ability to send request parameters in a JSON Web Token (JWT) instead, which allows the request to be signed with JSON Web Signature (JWS) and encrypted with JSON Web Encryption (JWE) so that the integrity, source authentication, and confidentiality properties of the authorization request are attained. The request can be sent by value or by reference.
+keywords:
+    - Assertion
+    - Claim
+    - Security Token
+    - OAuth
+    - JavaScript Object Notation
+    - JSON
+    - JSON Web Token
+    - JWT
+    - JSON Web Signature
+    - JWS
+    - JSON Web Encryption
+    - JWE
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-oauth-jwsreq-34
+doi: 10.17487/RFC9101
+url: https://www.rfc-editor.org/rfc/rfc9101
+source: rfc-editor-index
+ingested_at: "2026-05-21"

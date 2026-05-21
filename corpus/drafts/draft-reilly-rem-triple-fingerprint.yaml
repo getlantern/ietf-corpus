@@ -1,0 +1,33 @@
+id: draft-reilly-rem-triple-fingerprint
+name: draft-reilly-rem-triple-fingerprint
+rev: "00"
+title: First Triple-Fingerprint Multi-Layer Permanence Record Under the Reilly EternaMark (REM) Protocol
+abstract: |-
+    This document records and formally attests the first cryptographic
+       permanence record produced by a live implementation of the Reilly
+       EternaMark (REM) Protocol [DRAFT-REM] that simultaneously generates
+       SHA-256 [RFC6234], SHA3-512 [FIPS202], and BLAKE3 [BLAKE3SPEC]
+       fingerprints for a single submitted artifact, and anchors those
+       fingerprints across six independent permanence layers: Bitcoin
+       blockchain timestamping via OpenTimestamps [OTS], IPFS [IPFS]
+       distributed storage via Pinata, Zenodo DOI registration [ZENODO],
+       Internet Archive Wayback Machine submission [IA], a persistent
+       SQLite database layer, and a resolvable REMID permanent identifier
+       [DRAFT-REM].
+
+       This record constitutes what the author believes to be the first
+       document in history to be simultaneously anchored with SHA-256,
+       SHA3-512, and BLAKE3 under a single open IETF-documented protocol
+       specification with a live running implementation.
+
+       The SHA3-512 component of this record provides 256-bit post-quantum
+       security against Grover's algorithm [GROVER], exceeding the NIST
+       post-quantum security threshold [NISTPQC].
+pages: 12
+stream_state: active
+group: none
+last_updated: "2026-03-22"
+expires: "2026-09-23"
+url: https://datatracker.ietf.org/doc/draft-reilly-rem-triple-fingerprint/
+source: datatracker
+ingested_at: "2026-05-21"

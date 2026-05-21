@@ -1,0 +1,33 @@
+id: rfc-7782
+rfc_number: 7782
+title: Transparent Interconnection of Lots of Links (TRILL) Active-Active Edge Using Multiple MAC Attachments
+authors:
+    - name: M. Zhang
+    - name: R. Perlman
+    - name: H. Zhai
+    - name: M. Durrani
+    - name: S. Gupta
+date: 2016-02
+stream: IETF
+area: rtg
+wg: trill
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 22
+abstract: |-
+    TRILL (Transparent Interconnection of Lots of Links) active-active service provides end stations with flow-level load balance and resilience against link failures at the edge of TRILL campuses, as described in RFC 7379.
+
+    This document specifies a method by which member RBridges (also referred to as Routing Bridges or TRILL switches) in an active-active edge RBridge group use their own nicknames as ingress RBridge nicknames to encapsulate frames from attached end systems. Thus, remote edge RBridges (who are not in the group) will see one host Media Access Control (MAC) address being associated with the multiple RBridges in the group. Such remote edge RBridges are required to maintain all those associations (i.e., MAC attachments) and to not flip-flop among them (as would occur prior to the implementation of this specification). The design goals of this specification are discussed herein.
+keywords:
+    - LAALP
+    - vSwitch
+    - MC-LAG
+    - DRNI
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-trill-aa-multi-attach-06
+doi: 10.17487/RFC7782
+url: https://www.rfc-editor.org/rfc/rfc7782
+source: rfc-editor-index
+ingested_at: "2026-05-21"

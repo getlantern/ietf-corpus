@@ -1,0 +1,29 @@
+id: draft-ietf-bess-evpn-per-mcast-flow-df-election
+name: draft-ietf-bess-evpn-per-mcast-flow-df-election
+rev: "13"
+title: Per multicast flow Designated Forwarder Election for EVPN
+abstract: |-
+    This document defines an enhancement to the Designated Forwarder (DF)
+       election process in Ethernet Virtual Private Network (EVPN)
+       environments.  While traditional DF election operates at a per
+       Virtual Local Area Network (VLAN) or per group of VLANs (in case of
+       VLAN bundle or VLAN-aware bundle service) level, such granularity may
+       not be sufficient for applications requiring optimized or isolated
+       multicast forwarding.  This specification introduces a refined DF
+       election mechanism that extends existing hash-based methods to
+       operate at a more granular level specifically at the tuple of
+       Ethernet Segment Identifier (ESI), VLAN, and multicast flow.  This
+       approach enables improved traffic distribution, enhanced load
+       balancing, and greater deployment flexibility for multicast delivery
+       in EVPN based networks.  The proposed method is designed to remain
+       compatible with existing DF election procedures while offering
+       targeted improvements for multicast scenarios.
+pages: 16
+stream: IETF
+stream_state: active
+group: bess
+last_updated: "2026-03-02"
+expires: "2026-09-03"
+url: https://datatracker.ietf.org/doc/draft-ietf-bess-evpn-per-mcast-flow-df-election/
+source: datatracker
+ingested_at: "2026-05-21"

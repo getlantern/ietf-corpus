@@ -1,0 +1,33 @@
+id: draft-chang-agent-token-efficient
+name: draft-chang-agent-token-efficient
+rev: "02"
+title: A Token-efficient Data Layer for Agentic Communication
+abstract: |-
+    Agentic communication fundamentally differs from traditional machine
+       communication in that its outputs are recursively consumed and
+       interpreted by Large Language Models (LLMs).  This unique
+       characteristic makes efficient use of the model's limited context a
+       critical requirement.  However, current agent communication protocols
+       - such as the Model Context Protocol (MCP) and Agent-to-Agent (A2A) -
+       often suffer from token or context bloat, caused by redundant schema
+       definitions, verbose message structures, and inefficient capability
+       exchanges.  As a result, a substantial number of tokens are
+       unnecessarily consumed within the model’s context window.
+
+       To address these issues, this draft defines the Agentic Data
+       Optimization Layer (ADOL), a general and foundational data-layer for
+       agent communication.  ADOL introduces a set of backward-compatible
+       optimizations, including schema deduplication through JSON
+       references, adaptive inclusion of optional fields, controllable
+       response verbosity, and retrieval-based selection mechanisms.
+       Collectively, these mechanisms reduce token consumption, enhance
+       context efficiency, and provide a scalable foundation for future
+       agent communication frameworks.
+pages: 12
+stream_state: active
+group: none
+last_updated: "2026-01-12"
+expires: "2026-07-16"
+url: https://datatracker.ietf.org/doc/draft-chang-agent-token-efficient/
+source: datatracker
+ingested_at: "2026-05-21"

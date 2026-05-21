@@ -1,0 +1,35 @@
+id: draft-ietf-teas-yang-path-computation
+name: draft-ietf-teas-yang-path-computation
+rev: "28"
+title: A YANG Data Model for requesting path computation
+abstract: |-
+    In certain scenarios — particularly within hierarchical Software-
+       Defined Networking (SDN) environments—the topology information
+       provided by a Traffic Engineering (TE) network provider may be
+       insufficient for a client to perform end-to-end multi-domain path
+       computation.  In such cases, the client may need to delegate the
+       computation of specific intra-domain paths to the TE provider,
+       leveraging the resulting path segments to construct optimal multi-
+       domain end-to-end paths.
+
+       This document defines a mechanism to enable path computation requests
+       by augmenting the Remote Procedure Calls (RPCs) specified in RFC
+       YYYY.  The augmented RPCs support path computation on demand,
+       allowing clients to request intra-domain TE path computations from
+       the provider while maintaining control over inter-domain path
+       selection.
+
+       Additionally, this document outlines several use cases in which such
+       path computation requests are beneficial, particularly in
+       environments where YANG-based management protocols—such as NETCONF or
+       RESTCONF—are used for network automation and control.
+pages: 97
+stream: IETF
+stream_state: active
+group: teas
+intended_status: Proposed Standard
+last_updated: "2026-05-12"
+expires: "2026-11-13"
+url: https://datatracker.ietf.org/doc/draft-ietf-teas-yang-path-computation/
+source: datatracker
+ingested_at: "2026-05-21"

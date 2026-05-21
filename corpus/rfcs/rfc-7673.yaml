@@ -1,0 +1,23 @@
+id: rfc-7673
+rfc_number: 7673
+title: Using DNS-Based Authentication of Named Entities (DANE) TLSA Records with SRV Records
+authors:
+    - name: T. Finch
+    - name: M. Miller
+    - name: P. Saint-Andre
+date: 2015-10
+stream: IETF
+area: sec
+wg: dane
+current_status: PROPOSED STANDARD
+publication_status: PROPOSED STANDARD
+page_count: 16
+abstract: The DNS-Based Authentication of Named Entities (DANE) specification (RFC 6698) describes how to use TLSA resource records secured by DNSSEC (RFC 4033) to associate a server's connection endpoint with its Transport Layer Security (TLS) certificate (thus enabling administrators of domain names to specify the keys used in that domain's TLS servers).  However, application protocols that use SRV records (RFC 2782) to indirectly name the target server connection endpoints for a service domain name cannot apply the rules from RFC 6698.  Therefore, this document provides guidelines that enable such protocols to locate and use TLSA records.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-dane-srv-14
+doi: 10.17487/RFC7673
+url: https://www.rfc-editor.org/rfc/rfc7673
+source: rfc-editor-index
+ingested_at: "2026-05-21"

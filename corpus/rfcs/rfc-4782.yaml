@@ -1,0 +1,28 @@
+id: rfc-4782
+rfc_number: 4782
+title: Quick-Start for TCP and IP
+authors:
+    - name: S. Floyd
+    - name: M. Allman
+    - name: A. Jain
+    - name: P. Sarolahti
+date: 2007-01
+stream: IETF
+area: wit
+wg: tsvwg
+current_status: EXPERIMENTAL
+publication_status: EXPERIMENTAL
+page_count: 82
+abstract: |-
+    This document specifies an optional Quick-Start mechanism for transport protocols, in cooperation with routers, to determine an allowed sending rate at the start and, at times, in the middle of a data transfer (e.g., after an idle period). While Quick-Start is designed to be used by a range of transport protocols, in this document we only specify its use with TCP. Quick-Start is designed to allow connections to use higher sending rates when there is significant unused bandwidth along the path, and the sender and all of the routers along the path approve the Quick-Start Request.
+
+    This document describes many paths where Quick-Start Requests would not be approved. These paths include all paths containing routers, IP tunnels, MPLS paths, and the like that do not support Quick- Start. These paths also include paths with routers or middleboxes that drop packets containing IP options. Quick-Start Requests could be difficult to approve over paths that include multi-access layer- two networks. This document also describes environments where the Quick-Start process could fail with false positives, with the sender incorrectly assuming that the Quick-Start Request had been approved by all of the routers along the path. As a result of these concerns, and as a result of the difficulties and seeming absence of motivation for routers, such as core routers to deploy Quick-Start, Quick-Start is being proposed as a mechanism that could be of use in controlled environments, and not as a mechanism that would be intended or appropriate for ubiquitous deployment in the global Internet. This memo defines an Experimental Protocol for the Internet community.
+formats:
+    - TXT
+    - HTML
+draft: draft-ietf-tsvwg-quickstart-07
+doi: 10.17487/RFC4782
+errata_url: https://www.rfc-editor.org/errata/rfc4782
+url: https://www.rfc-editor.org/rfc/rfc4782
+source: rfc-editor-index
+ingested_at: "2026-05-21"

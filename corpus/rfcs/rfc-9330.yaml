@@ -1,0 +1,49 @@
+id: rfc-9330
+rfc_number: 9330
+title: 'Low Latency, Low Loss, and Scalable Throughput (L4S) Internet Service: Architecture'
+authors:
+    - name: B. Briscoe
+      title: Editor
+    - name: K. De Schepper
+    - name: M. Bagnulo
+    - name: G. White
+date: 2023-01
+stream: IETF
+area: wit
+wg: tsvwg
+current_status: INFORMATIONAL
+publication_status: INFORMATIONAL
+page_count: 36
+abstract: |-
+    This document describes the L4S architecture, which enables Internet applications to achieve low queuing latency, low congestion loss, and scalable throughput control. L4S is based on the insight that the root cause of queuing delay is in the capacity-seeking congestion controllers of senders, not in the queue itself. With the L4S architecture, all Internet applications could (but do not have to) transition away from congestion control algorithms that cause substantial queuing delay and instead adopt a new class of congestion controls that can seek capacity with very little queuing. These are aided by a modified form of Explicit Congestion Notification (ECN) from the network. With this new architecture, applications can have both low latency and high throughput.
+
+    The architecture primarily concerns incremental deployment. It defines mechanisms that allow the new class of L4S congestion controls to coexist with 'Classic' congestion controls in a shared network. The aim is for L4S latency and throughput to be usually much better (and rarely worse) while typically not impacting Classic performance.
+keywords:
+    - Performance
+    - Queuing Delay
+    - One Way Delay
+    - Round-Trip Time
+    - RTT
+    - Jitter
+    - Congestion Control
+    - Congestion Avoidance
+    - Quality of Service
+    - QoS
+    - Quality of Experience
+    - QoE
+    - Active Queue Management
+    - AQM
+    - Explicit Congestion Notification
+    - ECN
+    - Pacing
+    - Burstiness
+formats:
+    - HTML
+    - TXT
+    - PDF
+    - XML
+draft: draft-ietf-tsvwg-l4s-arch-20
+doi: 10.17487/RFC9330
+url: https://www.rfc-editor.org/rfc/rfc9330
+source: rfc-editor-index
+ingested_at: "2026-05-21"
