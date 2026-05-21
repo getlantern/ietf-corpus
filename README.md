@@ -38,26 +38,60 @@ corpus/
   drafts/                One YAML per active Internet-Draft.
   elements/              (Optional) LLM-extracted elements, one YAML per element.
 cmd/ietf-crawl/      Fetches both sources and writes the YAML records.
+cmd/ietf-mcp/        Local stdio MCP server reading the YAMLs.
 ```
 
 ## Status
 
-Day-one scope: ingest the **metadata** for every RFC and every active
-Internet-Draft into queryable YAML records. The MCP server, full-text
-extraction, and structured-element extraction land in subsequent
-phases.
+Day-one scope, shipped:
 
-## Using it
+- `cmd/ietf-crawl` populates `corpus/rfcs/` (9,768 RFCs) and
+  `corpus/drafts/` (~2.5k active Internet-Drafts).
+- `cmd/ietf-mcp` exposes the corpus over MCP with five tools.
+- LLM-extracted structured elements (the `corpus/elements/` slot) are
+  next.
+
+## Populating the corpus
 
 ```bash
 go run ./cmd/ietf-crawl --corpus .
 ```
 
-This populates `corpus/rfcs/` with one YAML per RFC and `corpus/drafts/`
-with one YAML per active draft. Re-running is safe: existing records
-are updated in place, deltas are detected, and drafts whose state has
-changed (active → expired / rfc / replaced) are moved out of the
-active set on the next sync.
+This writes one YAML per RFC and per active draft. Re-running is safe:
+existing records are updated in place, and drafts whose state has
+changed (active → expired / rfc / replaced) are pruned on the next
+sync.
+
+## Using the MCP server
+
+The MCP server is designed to be code-mode-friendly (see Cloudflare's
+[Code Mode](https://blog.cloudflare.com/code-mode/) post and
+Anthropic's [Code execution with MCP](https://www.anthropic.com/engineering/code-execution-with-mcp)),
+which means: five small composable primitives, structured JSON outputs,
+rich JSON Schemas, real cursor-based pagination on search. Works with
+traditional MCP clients today and benefits automatically when the
+agent harness has code-mode support.
+
+```bash
+go install github.com/getlantern/ietf-corpus/cmd/ietf-mcp@latest
+git clone https://github.com/getlantern/ietf-corpus ~/code/ietf-corpus
+
+claude mcp add -s user ietf-corpus \
+  $(go env GOPATH)/bin/ietf-mcp -- --corpus $HOME/code/ietf-corpus
+```
+
+### Tools
+
+| Tool | Purpose |
+| --- | --- |
+| `search_documents` | Free-text + tag-filter search. Cursor-paginated. Returns `Document` records with a `type` discriminator (`rfc` or `draft`). |
+| `get_document` | Fetch one full record by id. |
+| `get_documents` | Batch-fetch by id list. Returns `{documents, not_found}`. Use this instead of a loop of `get_document` calls when expanding relationship graphs. |
+| `find_related` | Expand the IETF relationship edges (obsoletes, obsoleted_by, updates, updated_by, also, replaces, replaced_by, predecessor_draft, successor_rfc). Each kind returns the full target documents — no second fetch needed. |
+| `list_taxonomy` | Controlled vocabularies (streams, areas, topics, element_kinds). |
+
+Document ids are `rfc-<number>` for RFCs and the base name (no
+revision suffix) for drafts, e.g. `draft-ietf-tls-esni`.
 
 ## License
 
