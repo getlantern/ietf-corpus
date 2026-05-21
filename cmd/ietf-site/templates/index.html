@@ -1,0 +1,78 @@
+{{template "header" (dict "Title" "An LLM-callable IETF corpus" "BasePath" "" "Description" "Structured metadata for every IETF RFC and active Internet-Draft. Exposed over MCP for any AI agent to query.")}}
+
+<h1 class="hero">An <span class="accent">LLM-callable</span><br>IETF corpus.</h1>
+
+<p class="lede">Structured metadata for every IETF RFC and every active
+Internet-Draft, the updates / obsoletes / replaces graph, and a growing
+layer of LLM-extracted normative requirements and protocol elements.
+Exposed over MCP so any agent can compose a corpus query without
+re-reading the spec series.</p>
+
+<div class="stats">
+  <div class="stat"><span class="v">{{.Stats.TotalRFCs}}</span><span class="l">published RFCs</span></div>
+  <div class="stat"><span class="v">{{.Stats.TotalDrafts}}</span><span class="l">active drafts</span></div>
+  <div class="stat"><span class="v">{{.Stats.WithElements}}</span><span class="l">documents w/ elements</span></div>
+  <div class="stat"><span class="v">{{.Stats.Elements}}</span><span class="l">elements extracted</span></div>
+</div>
+
+<h2>Featured</h2>
+<div class="featured">
+{{range .FeaturedRFCs}}
+  {{with index $.ByID .}}
+  <a class="card" href="rfcs/{{.ID}}.html" style="border-bottom-color:transparent">
+    <div class="id">{{.ID}}</div>
+    <div class="t">{{.Title}}</div>
+    <div class="meta">{{if .Date}}{{.Date}} &middot; {{end}}{{if .WG}}{{.WG}} WG &middot; {{end}}{{.CurrentStatus}}</div>
+  </a>
+  {{end}}
+{{end}}
+</div>
+
+<h2>Use it from a Claude Code session</h2>
+<pre><code>go install github.com/getlantern/ietf-corpus/cmd/ietf-mcp@latest
+git clone https://github.com/getlantern/ietf-corpus ~/code/ietf-corpus
+
+claude mcp add -s user ietf-corpus \
+  $(go env GOPATH)/bin/ietf-mcp -- --corpus $HOME/code/ietf-corpus</code></pre>
+
+<p>Six tools exposed over MCP, designed for
+<a href="https://blog.cloudflare.com/code-mode/">code-mode</a>
+composition: <code>search_documents</code>, <code>get_document</code>,
+<code>get_documents</code> (batch), <code>find_related</code>,
+<code>search_elements</code>, and <code>list_taxonomy</code>.</p>
+
+<div class="two-col">
+  <div class="bucket">
+    <h3>Top working groups</h3>
+    <ul>
+    {{range .TopWGs}}
+      <li><span>{{.K}}</span><span class="n">{{.V}}</span></li>
+    {{end}}
+    </ul>
+  </div>
+  <div class="bucket">
+    <h3>By status</h3>
+    <ul>
+    {{range .TopStatus}}
+      <li><span>{{.K}}</span><span class="n">{{.V}}</span></li>
+    {{end}}
+    </ul>
+  </div>
+</div>
+
+<h2>What you can do with it</h2>
+<ul>
+  <li>"Find every RFC that updates TLS 1.2, sorted by year." Code-mode
+  uses <code>get_document → updated_by → get_documents</code> in one
+  script.</li>
+  <li>"List all wire-format definitions in QUIC."
+  <code>search_elements</code> with <code>kind=wire-format</code>,
+  <code>document=rfc-9000</code>.</li>
+  <li>"What's the obsolescence chain back to RFC 793?"
+  <code>find_related</code> walking <code>obsoletes</code> until empty.</li>
+  <li>"Which RFCs introduce IANA registries about HTTP?"
+  <code>search_elements</code> with <code>kind=registry</code>,
+  <code>topic=http</code>.</li>
+</ul>
+
+{{template "footer" .}}

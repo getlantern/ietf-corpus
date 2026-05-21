@@ -1,0 +1,100 @@
+{{template "header" (dict "Title" "Browse" "BasePath" "" "Description" "Filter all 12,000+ IETF documents in the corpus.")}}
+
+<h1 class="hero">browse <span class="accent">{{.Total}}</span></h1>
+<p class="lede">Every RFC and active Internet-Draft in the corpus. Filtered
+client-side from a single JSON dataset — no server query.</p>
+
+<div class="browse-controls">
+  <input id="q" type="text" placeholder="filter title, id, wg, area…" autofocus>
+  <select id="type">
+    <option value="">all types</option>
+    <option value="rfc">rfc only</option>
+    <option value="draft">draft only</option>
+  </select>
+  <select id="status">
+    <option value="">all statuses</option>
+  </select>
+  <select id="wg">
+    <option value="">all wgs</option>
+  </select>
+  <select id="area">
+    <option value="">all areas</option>
+  </select>
+</div>
+
+<div id="count"></div>
+<div id="results"></div>
+
+<script>
+let all = [];
+let view = [];
+const PAGE = 200;
+let limit = PAGE;
+
+const $ = id => document.getElementById(id);
+const fmt = d => {
+  const url = d.type === 'rfc' ? 'rfcs/' + d.id + '.html' : 'drafts/' + d.id + '.html';
+  const meta = [d.year || '', d.wg || '', d.area || '', d.status || ''].filter(Boolean).join(' · ');
+  return `<div class="result"><span class="id">${d.id}</span><span class="t"><a href="${url}">${escapeHTML(d.title)}</a></span><span class="m">${meta}</span></div>`;
+};
+const escapeHTML = s => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+
+function applyFilters() {
+  const q = $('q').value.trim().toLowerCase();
+  const type = $('type').value;
+  const status = $('status').value;
+  const wg = $('wg').value;
+  const area = $('area').value;
+  view = all.filter(d => {
+    if (type && d.type !== type) return false;
+    if (status && d.status !== status) return false;
+    if (wg && d.wg !== wg) return false;
+    if (area && d.area !== area) return false;
+    if (q) {
+      const hay = (d.id + ' ' + d.title + ' ' + (d.wg||'') + ' ' + (d.area||'') + ' ' + (d.status||'')).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  limit = PAGE;
+  render();
+}
+
+function render() {
+  $('count').textContent = `${view.length.toLocaleString()} match${view.length===1?'':'es'} · showing ${Math.min(limit, view.length).toLocaleString()}`;
+  let html = view.slice(0, limit).map(fmt).join('');
+  if (view.length > limit) {
+    html += `<div class="result" style="text-align:center"><span></span><button id="more" style="font-family:var(--mono);background:none;border:1px solid var(--rule);color:var(--ink);padding:0.4rem 1rem;cursor:pointer">show ${PAGE} more</button><span></span></div>`;
+  }
+  $('results').innerHTML = html;
+  const more = document.getElementById('more');
+  if (more) more.onclick = () => { limit += PAGE; render(); };
+}
+
+function populateSelect(id, key) {
+  const counts = {};
+  for (const d of all) {
+    const v = d[key];
+    if (v) counts[v] = (counts[v]||0) + 1;
+  }
+  const opts = Object.entries(counts).sort((a,b) => b[1]-a[1]);
+  const sel = $(id);
+  for (const [k, n] of opts) {
+    const o = document.createElement('option');
+    o.value = k;
+    o.textContent = `${k} (${n})`;
+    sel.appendChild(o);
+  }
+}
+
+fetch('data/index.json').then(r => r.json()).then(data => {
+  all = data;
+  populateSelect('status', 'status');
+  populateSelect('wg', 'wg');
+  populateSelect('area', 'area');
+  ['q','type','status','wg','area'].forEach(id => $(id).addEventListener('input', applyFilters));
+  applyFilters();
+});
+</script>
+
+{{template "footer" .}}

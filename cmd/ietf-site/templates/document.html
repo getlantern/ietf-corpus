@@ -1,0 +1,62 @@
+{{template "header" (dict "Title" .D.ID "BasePath" "../" "Description" .D.Title)}}
+
+<div class="doc-header">
+  <span class="id-pill {{if eq .D.Type "draft"}}draft{{end}}">{{.D.ID}}</span>
+  <h1>{{.D.Title}}</h1>
+  {{if .D.Authors}}
+    <div class="authors">
+      {{range $i, $a := .D.Authors}}{{if $i}}, {{end}}{{$a.Name}}{{if $a.Title}} ({{$a.Title}}){{end}}{{end}}
+    </div>
+  {{end}}
+
+  <div class="doc-meta">
+    {{if .D.Date}}<span class="k">date</span><span>{{.D.Date}}</span>{{end}}
+    {{if .D.Stream}}<span class="k">stream</span><span>{{.D.Stream}}</span>{{end}}
+    {{if .D.Area}}<span class="k">area</span><span>{{.D.Area}}</span>{{end}}
+    {{if .D.WG}}<span class="k">wg</span><span>{{.D.WG}}</span>{{end}}
+    {{if .D.Group}}<span class="k">group</span><span>{{.D.Group}}</span>{{end}}
+    {{if .D.CurrentStatus}}<span class="k">status</span><span>{{.D.CurrentStatus}}</span>{{end}}
+    {{if .D.StreamState}}<span class="k">state</span><span>{{.D.StreamState}}</span>{{end}}
+    {{if .D.IntendedStatus}}<span class="k">intended</span><span>{{.D.IntendedStatus}}</span>{{end}}
+    {{if .D.PageCount}}<span class="k">pages</span><span>{{.D.PageCount}}</span>{{end}}
+    {{if .D.Pages}}<span class="k">pages</span><span>{{.D.Pages}}</span>{{end}}
+    {{if .D.Rev}}<span class="k">rev</span><span>{{.D.Rev}}</span>{{end}}
+    {{if .D.Expires}}<span class="k">expires</span><span>{{.D.Expires}}</span>{{end}}
+    {{if .D.URL}}<span class="k">canonical</span><span><a href="{{.D.URL}}">{{.D.URL}}</a></span>{{end}}
+    {{if .D.DOI}}<span class="k">doi</span><span>{{.D.DOI}}</span>{{end}}
+    {{if .D.ErrataURL}}<span class="k">errata</span><span><a href="{{.D.ErrataURL}}">view</a></span>{{end}}
+  </div>
+</div>
+
+{{if .D.Abstract}}<div class="abstract">{{.D.Abstract}}</div>{{end}}
+
+{{if or .Related.Obsoletes .Related.ObsoletedBy .Related.Updates .Related.UpdatedBy .Related.Also .Related.Replaces .Related.ReplacedBy .Related.PredecessorDraft .Related.SuccessorRFC}}
+<div class="relations">
+  {{if .Related.ObsoletedBy}}<h3>obsoleted by</h3><ul>{{range .Related.ObsoletedBy}}<li><a href="../{{docPath .ID}}">{{.ID}}</a> &mdash; {{.Title}}</li>{{end}}</ul>{{end}}
+  {{if .Related.Obsoletes}}<h3>obsoletes</h3><ul>{{range .Related.Obsoletes}}<li><a href="../{{docPath .ID}}">{{.ID}}</a> &mdash; {{.Title}}</li>{{end}}</ul>{{end}}
+  {{if .Related.UpdatedBy}}<h3>updated by</h3><ul>{{range .Related.UpdatedBy}}<li><a href="../{{docPath .ID}}">{{.ID}}</a> &mdash; {{.Title}}</li>{{end}}</ul>{{end}}
+  {{if .Related.Updates}}<h3>updates</h3><ul>{{range .Related.Updates}}<li><a href="../{{docPath .ID}}">{{.ID}}</a> &mdash; {{.Title}}</li>{{end}}</ul>{{end}}
+  {{if .Related.Also}}<h3>also</h3><ul>{{range .Related.Also}}<li>{{.}}</li>{{end}}</ul>{{end}}
+  {{if .Related.PredecessorDraft}}<h3>predecessor draft</h3><ul><li><a href="../{{docPath .Related.PredecessorDraft.ID}}">{{.Related.PredecessorDraft.ID}}</a> &mdash; {{.Related.PredecessorDraft.Title}}</li></ul>{{end}}
+  {{if .Related.SuccessorRFC}}<h3>successor RFC</h3><ul><li><a href="../{{docPath .Related.SuccessorRFC.ID}}">{{.Related.SuccessorRFC.ID}}</a> &mdash; {{.Related.SuccessorRFC.Title}}</li></ul>{{end}}
+  {{if .Related.Replaces}}<h3>replaces</h3><ul>{{range .Related.Replaces}}<li><a href="../{{docPath .ID}}">{{.ID}}</a></li>{{end}}</ul>{{end}}
+  {{if .Related.ReplacedBy}}<h3>replaced by</h3><ul>{{range .Related.ReplacedBy}}<li><a href="../{{docPath .ID}}">{{.ID}}</a></li>{{end}}</ul>{{end}}
+</div>
+{{end}}
+
+{{if .D.Elements}}
+<div class="elements">
+  <h2>Extracted elements <span style="font-family:var(--mono);font-size:0.75rem;color:var(--ink-soft);letter-spacing:0.05em;font-weight:normal">({{len .D.Elements}})</span></h2>
+  {{range .D.Elements}}
+  <div class="element">
+    <span class="kind {{.Kind}}">{{.Kind}}</span>
+    {{if .Section}}<span class="section">§{{.Section}}</span>{{end}}
+    {{if .RFC2119Level}}<span class="rfc2119">{{.RFC2119Level}}</span>{{end}}
+    <p class="s">{{.Summary}}</p>
+    {{if .Topics}}<p class="meta mono" style="font-size:0.72rem;color:var(--ink-soft)">{{join .Topics ", "}}</p>{{end}}
+  </div>
+  {{end}}
+</div>
+{{end}}
+
+{{template "footer" .}}

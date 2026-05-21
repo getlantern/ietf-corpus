@@ -1,0 +1,33 @@
+{{define "header"}}<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{.Title}} — ietf-corpus</title>
+<link rel="stylesheet" href="{{.BasePath}}styles.css">
+<meta name="description" content="{{.Description}}">
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <h1><a href="{{.BasePath}}index.html" style="color:inherit;border:none">ietf-corpus</a></h1>
+    <nav>
+      <a href="{{.BasePath}}index.html">overview</a>
+      <a href="{{.BasePath}}browse.html">browse</a>
+      <a href="{{.BasePath}}taxonomy.html">taxonomy</a>
+      <a href="https://github.com/getlantern/ietf-corpus">github</a>
+    </nav>
+  </div>
+</header>
+<main>
+{{end}}
+
+{{define "footer"}}
+</main>
+<footer>
+  ietf-corpus &middot; CC0 metadata &middot; source: rfc-editor.org + datatracker.ietf.org &middot;
+  <a href="https://github.com/getlantern/ietf-corpus">github.com/getlantern/ietf-corpus</a>
+</footer>
+</body>
+</html>
+{{end}}

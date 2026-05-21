@@ -1,0 +1,21 @@
+{{template "header" (dict "Title" "Taxonomy" "BasePath" "" "Description" "Controlled vocabularies used in the corpus.")}}
+
+<h1 class="hero">taxonomy</h1>
+<p class="lede">The controlled vocabularies the corpus uses. Streams,
+areas, and statuses come from IETF directly. Topics and element kinds
+are the corpus's own contribution — flat tags useful for cross-cutting
+queries.</p>
+
+{{range $section, $items := .Taxonomy}}
+<div class="tax-section">
+  <h2>{{$section}}</h2>
+  <div class="tax-grid">
+  {{range $k, $v := $items}}
+    <span class="k">{{$k}}</span>
+    <span class="v">{{taxLabel $v}}</span>
+  {{end}}
+  </div>
+</div>
+{{end}}
+
+{{template "footer" .}}
