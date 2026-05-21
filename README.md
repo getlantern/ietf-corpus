@@ -93,6 +93,43 @@ claude mcp add -s user ietf-corpus \
 Document ids are `rfc-<number>` for RFCs and the base name (no
 revision suffix) for drafts, e.g. `draft-ietf-tls-esni`.
 
+## Browsable site
+
+A static site rendered from the same YAMLs is served from Cloudflare
+Pages. To build locally:
+
+```bash
+make site            # renders to ./dist/
+python3 -m http.server -d dist 8080
+```
+
+The site uses `cmd/ietf-site/`, which reuses the same YAML loading
+the MCP server uses. Go html/template, no JS framework, no
+`node_modules`. About 4 seconds to render the full 12k-document
+corpus into 50 MB of static HTML.
+
+### Cloudflare Pages setup (one-time)
+
+The deploy uses CF Pages' native git integration — no API tokens or
+GitHub Actions secrets required. CF watches the repo and rebuilds on
+every push to `main`.
+
+To wire it up:
+
+1. In the Cloudflare dashboard, **Workers & Pages** → **Create
+   application** → **Pages** → **Connect to Git** → select
+   `getlantern/ietf-corpus`.
+2. Build settings:
+   - **Framework preset**: None
+   - **Build command**: `go run ./cmd/ietf-site --corpus . --out dist`
+   - **Build output directory**: `dist`
+   - **Root directory**: `/`
+3. Save and deploy.
+
+The build runs in CF's gVisor sandbox with Go 1.24.3 preinstalled
+(v3 build image, no `GO_VERSION` env var needed). Every PR also gets
+an automatic preview deployment at `<branch>.<project>.pages.dev`.
+
 ## License
 
 Schema, taxonomy, and corpus records: **CC0 / public domain**.

@@ -1,4 +1,4 @@
-.PHONY: crawl crawl-rfcs crawl-drafts mcp build vet test
+.PHONY: crawl crawl-rfcs crawl-drafts mcp site build vet test
 
 build:
 	go build ./...
@@ -20,3 +20,6 @@ crawl-drafts: build
 
 mcp: build
 	go run ./cmd/ietf-mcp --corpus .
+
+site:
+	go run ./cmd/ietf-site --corpus . --out dist
