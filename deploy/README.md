@@ -25,9 +25,11 @@ dedicated bot machine.
 | File | Purpose |
 | --- | --- |
 | `run-elements.sh` | Self-updating wrapper: `git pull`, `go install ./cmd/ietf-elements`, then runs the three standards-track sweeps (INTERNET STANDARD → DRAFT STANDARD → PROPOSED STANDARD) in sequence. Already-extracted RFCs are auto-skipped. |
+| `commit-elements.sh` | Batch-commits any newly-extracted `corpus/elements/*.yaml` directly to main and pushes. Idempotent — no-op when there's nothing new. Safe because it only adds files (never edits or deletes), CI gates the integrity tests on every push, and rebases-and-retries on push rejection. |
 | `io.lantern.ietf-elements-backfill.plist` | One-shot LaunchAgent. No schedule; runs only when explicitly started. For the initial backfill. |
 | `io.lantern.ietf-elements-weekly.plist` | Recurring LaunchAgent. Fires every Sunday at 03:00 local time. Maintenance — extracts elements for newly-published standards-track RFCs since the last fire. |
-| `install-launchd.sh` | One-time installer. Substitutes the right repo path into the plists and `launchctl load`s them. |
+| `io.lantern.ietf-elements-commit.plist` | Recurring LaunchAgent. Fires every 10 minutes. Calls `commit-elements.sh`. Decoupled from the extractor so it works with a sweep in progress without requiring a restart. |
+| `install-launchd.sh` | One-time installer. Substitutes the right repo path into the plists and `launchctl load`s them. Accepts `backfill`, `weekly`, `commit`, or `all` (default) as args. |
 
 ## Installing on the mini
 
@@ -76,19 +78,36 @@ Output for the weekly job goes to
 
 ## Committing the extracted elements
 
-The launchd job only *extracts*. It does not commit or push. To
-batch-commit the extracted YAMLs after a sweep:
+`io.lantern.ietf-elements-commit` (loaded by default via
+`install-launchd.sh all`) fires every 10 minutes and pushes any new
+elements directly to `main`. The commit author is
+`ietf-corpus-bot <bot@lantern.io>` so `git log --author=ietf-corpus-bot`
+isolates the auto-ingest stream.
+
+Why direct-to-main is safe:
+
+- The job only *adds* files in `corpus/elements/`; it never edits or
+  deletes anything else.
+- The full CI suite (`go build`, `go vet`, `go test`, site smoke
+  render) runs on every push to `main`, so any schema-breaking
+  output gets caught.
+- On push rejection (someone else pushed concurrently), the job
+  rebases and retries once.
+- The next CF Pages deploy picks up the new elements automatically
+  via git integration.
+
+If you'd rather review batches in PRs, unload the commit plist and
+fall back to manual:
 
 ```bash
+launchctl unload ~/Library/LaunchAgents/io.lantern.ietf-elements-commit.plist
+# ... then manually:
 cd /Users/afisk/code/ietf-corpus
 git checkout -b auto-ingest/elements-backfill-$(date +%F)
 git add corpus/elements/
 git commit -m "elements: backfill from standards-track sweep $(date +%F)"
 gh pr create --fill
 ```
-
-(A `scripts/elements-backfill-pr.sh` analogue to the circumvention-
-corpus one will land when there's a routine for it.)
 
 ## Stopping or removing
 

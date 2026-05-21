@@ -40,8 +40,8 @@ fi
 AGENTS_DIR="$HOME/Library/LaunchAgents"
 mkdir -p "$AGENTS_DIR"
 
-# Default: install both.
-plists=("io.lantern.ietf-elements-backfill" "io.lantern.ietf-elements-weekly")
+# Default: install all three.
+plists=("io.lantern.ietf-elements-backfill" "io.lantern.ietf-elements-weekly" "io.lantern.ietf-elements-commit")
 if [[ $# -gt 0 ]]; then
     plists=()
     for arg in "$@"; do
@@ -50,10 +50,14 @@ if [[ $# -gt 0 ]]; then
                 plists+=("io.lantern.ietf-elements-backfill") ;;
             weekly|maintenance)
                 plists+=("io.lantern.ietf-elements-weekly") ;;
-            all|both)
+            commit|push)
+                plists+=("io.lantern.ietf-elements-commit") ;;
+            all)
+                plists=("io.lantern.ietf-elements-backfill" "io.lantern.ietf-elements-weekly" "io.lantern.ietf-elements-commit") ;;
+            both)
                 plists=("io.lantern.ietf-elements-backfill" "io.lantern.ietf-elements-weekly") ;;
             *)
-                echo "unknown plist: $arg (want: backfill | weekly | both)" >&2
+                echo "unknown plist: $arg (want: backfill | weekly | commit | all)" >&2
                 exit 1
                 ;;
         esac
@@ -80,7 +84,7 @@ for label in "${plists[@]}"; do
 done
 
 echo
-echo "Done. Trigger the one-shot backfill manually now (without waiting):"
+echo "Done. Trigger jobs manually now (without waiting for their schedule):"
 echo
 for label in "${plists[@]}"; do
     case "$label" in
@@ -90,9 +94,13 @@ for label in "${plists[@]}"; do
         *weekly*)
             echo "  launchctl start $label    # smoke-test the weekly job"
             ;;
+        *commit*)
+            echo "  launchctl start $label    # smoke-test the commit-and-push job"
+            ;;
     esac
 done
 echo
 echo "Logs:"
 echo "  tail -f /tmp/ietf-elements-backfill.err.log"
 echo "  tail -f /tmp/ietf-elements-weekly.err.log"
+echo "  tail -f /tmp/ietf-elements-commit.err.log"

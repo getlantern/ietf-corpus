@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!--
+  Recurring launchd agent that commits + pushes any newly-extracted
+  corpus/elements/*.yaml directly to main. Fires every 10 minutes.
+  Decoupled from the extractor so it works with a sweep in progress
+  without requiring a restart.
+
+  Install:
+    bash deploy/install-launchd.sh commit
+
+  Or install all three (backfill + weekly + commit):
+    bash deploy/install-launchd.sh all
+
+  No-op when there's nothing new to commit, so leaving it on
+  permanently is fine.
+
+  Logs:
+    tail -f /tmp/ietf-elements-commit.err.log
+
+  Disable:
+    launchctl unload ~/Library/LaunchAgents/io.lantern.ietf-elements-commit.plist
+-->
+<dict>
+  <key>Label</key>
+  <string>io.lantern.ietf-elements-commit</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/afisk/code/ietf-corpus/deploy/commit-elements.sh</string>
+  </array>
+
+  <!-- Fire every 10 minutes (StartInterval is seconds). The first
+       fire happens StartInterval seconds after launchctl load, not
+       at load time. RunAtLoad=false to avoid an unnecessary fire
+       during install. -->
+  <key>StartInterval</key>
+  <integer>600</integer>
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin</string>
+    <key>HOME</key>
+    <string>/Users/afisk</string>
+  </dict>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/afisk/code/ietf-corpus</string>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/ietf-elements-commit.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/ietf-elements-commit.err.log</string>
+</dict>
+</plist>
