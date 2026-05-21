@@ -1,0 +1,9 @@
+document: rfc-1123
+kind: normative-requirement
+summary: When receiving TCP urgent data, a Telnet implementation MUST discard all data except Telnet commands until the DM byte and end-of-urgent is reached. When a Server Telnet receives AO, it MUST send a Telnet Synch sequence back to the user to flush the output stream.
+section: 3.2.4
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

@@ -1,0 +1,8 @@
+document: rfc-1201
+kind: design-rationale
+summary: Reassembly implementations are recommended to allocate buffer space for the entire reassembled packet when the first fragment arrives, to avoid buffer allocation problems mid-reassembly. Since fragments are sent in order, reassembly may abort on an out-of-order fragment, but must silently ignore retransmitted duplicate fragments.
+section: "2.3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

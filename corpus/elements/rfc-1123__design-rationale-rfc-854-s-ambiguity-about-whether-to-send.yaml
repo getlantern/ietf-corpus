@@ -1,0 +1,8 @@
+document: rfc-1123
+kind: design-rationale
+summary: RFC-854's ambiguity about whether to send CR LF or CR NUL for the end-of-line key caused massive and continuing interoperability failures. Some User Telnets send CR LF, others CR NUL; RFC-1123 resolves this by requiring ASCII servers to accept both forms as equivalent end-of-line.
+section: 3.3.1
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

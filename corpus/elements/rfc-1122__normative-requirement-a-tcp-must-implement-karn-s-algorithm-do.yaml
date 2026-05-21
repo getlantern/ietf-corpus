@@ -1,0 +1,10 @@
+document: rfc-1122
+kind: normative-requirement
+summary: A TCP MUST implement Karn's algorithm (do not use retransmitted segments when updating the RTT estimator) and MUST implement exponential backoff of the RTO after each retransmission. TCP SHOULD compute the RTO using the Jacobson/Karels mean-plus-variance SRTT algorithm.
+section: 4.2.3.1
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

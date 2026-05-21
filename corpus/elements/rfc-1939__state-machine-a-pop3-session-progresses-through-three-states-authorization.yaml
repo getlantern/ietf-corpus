@@ -1,0 +1,8 @@
+document: rfc-1939
+kind: state-machine
+summary: 'A POP3 session progresses through three states: AUTHORIZATION (client must authenticate), TRANSACTION (client requests actions on the maildrop), and UPDATE (server deletes marked messages and closes connection). The session enters TRANSACTION only after successful authentication; it enters UPDATE only upon a client-issued QUIT from TRANSACTION state.'
+section: "3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

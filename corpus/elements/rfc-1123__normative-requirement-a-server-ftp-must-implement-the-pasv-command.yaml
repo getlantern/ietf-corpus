@@ -1,0 +1,9 @@
+document: rfc-1123
+kind: normative-requirement
+summary: A server-FTP MUST implement the PASV command. A new PASV MUST be issued before each transfer command when conducting multiple third-party transfers in the same session. The 227 reply format is non-standard; client must scan for the first digit of host and port numbers.
+section: 4.1.2.6
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

@@ -1,0 +1,9 @@
+document: rfc-1209
+kind: design-rationale
+summary: SMDS group addresses do not support dynamic subscription (JoinLocalGroup/LeaveLocalGroup), so the RFC 1112 IP multicasting method cannot be used directly. Instead, all multicast IP addresses are mapped to smds$lis-ga (the same address used for broadcast), and filtering is done at the destination host.
+section: IP Multicast Support
+topics:
+    - ip
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

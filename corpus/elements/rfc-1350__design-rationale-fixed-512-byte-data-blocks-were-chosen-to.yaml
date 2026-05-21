@@ -1,0 +1,9 @@
+document: rfc-1350
+kind: design-rationale
+summary: Fixed 512-byte data blocks were chosen to make buffer allocation straightforward. Lock-step acknowledgment provides flow control and eliminates the need to reorder incoming data packets, deliberately sacrificing throughput for implementation simplicity.
+section: "2"
+topics:
+    - udp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

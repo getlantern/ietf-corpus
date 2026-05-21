@@ -1,0 +1,8 @@
+document: rfc-1212
+kind: design-rationale
+summary: The tabular structure of MIB conceptual tables is intentionally not a matter of protocol. A Get-Next-PDU on the last columnar object of a row returns the next column of the first row (or the first object after the table) rather than an error, increasing information density per PDU exchange. Row boundaries exist only at the management-application layer.
+section: "3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

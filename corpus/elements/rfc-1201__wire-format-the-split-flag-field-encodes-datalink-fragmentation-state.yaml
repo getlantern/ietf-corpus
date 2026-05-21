@@ -1,0 +1,8 @@
+document: rfc-1201
+kind: wire-format
+summary: 'The split flag field encodes datalink fragmentation state: 0 for unfragmented packets; ((T-2)*2)+1 for the first fragment where T is total fragment count; ((N-1)*2) for subsequent fragments where N is the fragment index. The last fragment is identified because its split flag is one greater than the first fragment''s value. Maximum legal split flag is 0xEE; 0xFF is reserved for exception frame detection.'
+section: "2.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

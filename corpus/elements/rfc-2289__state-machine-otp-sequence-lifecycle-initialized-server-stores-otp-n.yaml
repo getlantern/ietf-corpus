@@ -1,0 +1,8 @@
+document: rfc-2289
+kind: state-machine
+summary: 'OTP sequence lifecycle: INITIALIZED (server stores OTP[N] and count N) → AUTHENTICATING (server receives OTP[N-1], verifies hash(OTP[N-1]) == OTP[N], stores OTP[N-1] and count N-1) → EXHAUSTED (count reaches 1, user cannot change seed/count) → REINITIALIZED (new seed or pass-phrase, new count).'
+section: "3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

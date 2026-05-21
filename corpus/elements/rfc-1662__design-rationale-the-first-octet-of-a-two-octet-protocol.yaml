@@ -1,0 +1,6 @@
+document: rfc-1662
+kind: design-rationale
+summary: The first octet of a two-octet Protocol field will never be 0xff (since it is not even), preventing ambiguity during Address-and-Control-Field-Compression decompression. Protocol value 0x00ff is reserved to avoid ambiguity when Protocol-Field-Compression is enabled.
+section: "3.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

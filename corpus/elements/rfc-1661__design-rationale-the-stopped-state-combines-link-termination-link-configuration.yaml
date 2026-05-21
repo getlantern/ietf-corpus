@@ -1,0 +1,6 @@
+document: rfc-1661
+kind: design-rationale
+summary: The Stopped state combines link termination, link configuration failure, and other automaton failure modes into a single junction state. This simplification is justified because the states share the same behavior, and a race condition between the Down event and Receive-Configure-Request is handled by the Down event superseding and returning to Starting state.
+section: "4.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

@@ -1,0 +1,8 @@
+document: rfc-1939
+kind: interoperability-note
+summary: The octet count for a message on the server may differ from what a client expects due to local line-ending conventions. Servers must normalize counts by treating each internal line-ending as two octets (CRLF), but must not double-count byte-stuffed termination octets since clients will strip them.
+section: "11"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

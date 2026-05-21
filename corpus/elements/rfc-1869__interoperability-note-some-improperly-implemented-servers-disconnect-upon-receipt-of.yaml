@@ -1,0 +1,8 @@
+document: rfc-1869
+kind: interoperability-note
+summary: Some improperly-implemented servers disconnect upon receipt of EHLO or refuse HELO after a rejected EHLO. Extended SMTP clients should check for connection closure after EHLO, and may work around the HELO refusal by sending RSET first (ignoring a 503 failure code from RSET).
+section: "4.7"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

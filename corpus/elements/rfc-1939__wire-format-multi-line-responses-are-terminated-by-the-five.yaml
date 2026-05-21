@@ -1,0 +1,8 @@
+document: rfc-1939
+kind: wire-format
+summary: Multi-line responses are terminated by the five-octet sequence CRLF.CRLF. Any response line beginning with the termination octet ('.', decimal 46) is byte-stuffed by prepending an extra '.'; clients must strip the leading '.' from such lines upon receipt.
+section: "3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

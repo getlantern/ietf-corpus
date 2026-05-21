@@ -1,0 +1,9 @@
+document: rfc-1350
+kind: normative-requirement
+summary: The host acknowledging the final DATA packet should 'dally'—wait for a period before terminating—so it can retransmit the final ACK if the final DATA packet is received again, indicating the ACK was lost.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

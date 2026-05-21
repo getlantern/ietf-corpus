@@ -1,0 +1,10 @@
+document: rfc-2289
+kind: normative-requirement
+summary: ALL hashes incorporated into the OTP protocol MUST store the output of their hash function in LITTLE ENDIAN format BEFORE the bit folding to 64 bits occurs. SHA1 requires explicit reordering since its native output is big-endian.
+section: A
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

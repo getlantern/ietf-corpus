@@ -1,0 +1,9 @@
+document: rfc-1122
+kind: normative-requirement
+summary: A TCP MUST implement the MSS option and MUST send an MSS option on every SYN segment. If no MSS option appears in the received SYN, a default of 536 bytes MUST be assumed. The MSS should be set to the connected-network MTU minus 40 bytes (20 IP + 20 TCP header).
+section: 4.2.2.6
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

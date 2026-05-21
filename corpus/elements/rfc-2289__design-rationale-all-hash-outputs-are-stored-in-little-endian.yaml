@@ -1,0 +1,9 @@
+document: rfc-2289
+kind: design-rationale
+summary: All hash outputs are stored in little-endian format before the 64-bit fold (even SHA-1 which is natively big-endian) for historical compatibility with the original Bellcore MD4/MD5 reference implementations, ensuring interoperability across hardware architectures.
+section: A
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

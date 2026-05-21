@@ -1,0 +1,9 @@
+document: rfc-1725
+kind: normative-requirement
+summary: Once authentication succeeds, the POP3 server MUST acquire an exclusive-access lock on the maildrop to prevent messages from being modified or removed before the UPDATE state. If the lock cannot be acquired, the server responds with -ERR and may close the connection.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

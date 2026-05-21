@@ -1,0 +1,8 @@
+document: rfc-2289
+kind: security-consideration
+summary: 'A race attack is possible: an attacker who observes most of a transmitted six-word OTP can guess the last word (1-in-2048 per attempt) and race the legitimate user. Servers MUST defend, e.g., by serializing authentication sessions with a timeout to prevent denial-of-service.'
+section: "9"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

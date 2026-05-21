@@ -1,0 +1,9 @@
+document: rfc-1939
+kind: security-consideration
+summary: Servers that return -ERR to the USER command leak which mailbox names are valid to potential attackers, enabling user enumeration. Servers may instead return +OK regardless of mailbox existence and defer the negative response to PASS.
+section: "13"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

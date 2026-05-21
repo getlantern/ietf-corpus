@@ -1,0 +1,9 @@
+document: rfc-1723
+kind: design-rationale
+summary: Authentication is implemented by repurposing the first route entry slot (AFI=0xFFFF) rather than a dedicated header field, because the single 2-octet field available in the message header is insufficient for any reasonable authentication scheme. This approach costs one route entry slot (reducing max routes from 25 to 24).
+section: "3.1"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

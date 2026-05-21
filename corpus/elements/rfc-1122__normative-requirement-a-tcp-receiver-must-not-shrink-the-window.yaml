@@ -1,0 +1,10 @@
+document: rfc-1122
+kind: normative-requirement
+summary: 'A TCP receiver MUST NOT shrink the window after advertising it. Both sender and receiver SHOULD implement Silly Window Syndrome (SWS) avoidance: the receiver should not advertise small window increments and the sender should not transmit tiny segments when a larger segment could be deferred.'
+section: 4.2.2.16
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

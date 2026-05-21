@@ -1,0 +1,8 @@
+document: rfc-1723
+kind: design-rationale
+summary: 'The infinity metric (16) cannot be increased in RIP-2 because doing so would break backwards compatibility: older RIP-1 implementations would be confused by a larger infinity value, and at best would ignore routes with metrics >= 16. A proposal to shrink the metric to one octet was also rejected as it would break implementations treating the metric as a 4-octet entity.'
+section: "4.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

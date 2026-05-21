@@ -1,0 +1,10 @@
+document: rfc-1725
+kind: security-consideration
+summary: A POP3 server implementing both PASS and APOP must not allow both authentication methods for the same user; for a given username, exactly one of PASS or APOP is permitted. Shared secrets for APOP should be long strings to resist derivation.
+section: "12"
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

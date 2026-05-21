@@ -1,0 +1,8 @@
+document: rfc-1132
+kind: design-rationale
+summary: No unicast packet is ever sent from host1 to host2 without a prior broadcast from host2 to host1. This invariant guarantees that the immediate address of any intervening IPX bridge can be learned by inspecting the physical header of that prior broadcast, eliminating the need for an explicit bridge-discovery mechanism.
+section: Implementation
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

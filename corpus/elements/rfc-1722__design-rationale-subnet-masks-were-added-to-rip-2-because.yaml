@@ -1,0 +1,9 @@
+document: rfc-1722
+kind: design-rationale
+summary: Subnet masks were added to RIP-2 because VLSM, CIDR, and supernetting made it impossible for heuristics to reliably distinguish network, subnet, and host routes. Including the 32-bit mask immediately after the IP address in each routing entry effectively creates a 64-bit address that eliminates the ambiguity.
+section: "3.1"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

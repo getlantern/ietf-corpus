@@ -1,0 +1,9 @@
+document: rfc-2289
+kind: design-rationale
+summary: The server verifies an OTP by hashing it once and comparing to the stored previous OTP (Lamport's technique), meaning the server stores only the hash of the next expected password and never the secret pass-phrase, so no secret information need be stored on the server.
+section: "3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

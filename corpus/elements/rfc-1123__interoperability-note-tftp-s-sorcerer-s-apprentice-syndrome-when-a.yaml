@@ -1,0 +1,8 @@
+document: rfc-1123
+kind: interoperability-note
+summary: 'TFTP''s Sorcerer''s Apprentice Syndrome: when a DATA packet is delayed and the sender retransmits, the receiver ACKs both copies, which causes the sender to send two copies of the next block — doubling all subsequent packets for the rest of the transfer. Correct TFTP implementations must not retransmit on receiving a duplicate ACK.'
+section: 4.2.3.1
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

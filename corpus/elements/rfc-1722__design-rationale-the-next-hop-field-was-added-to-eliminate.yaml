@@ -1,0 +1,8 @@
+document: rfc-1722
+kind: design-rationale
+summary: The Next Hop field was added to eliminate packets traversing unnecessary extra hops, particularly in mixed environments where RIP-2 is not running on every router. A RIP-2 speaker that knows of a better next hop for a route can advertise that gateway directly, allowing routers to bypass intermediate speakers.
+section: "3.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"
