@@ -1,0 +1,8 @@
+document: rfc-1001
+kind: design-rationale
+summary: NetBIOS names are encoded using half-nibble biased-ASCII encoding and appended with a DNS-compatible scope identifier so that the composite name is a valid DNS domain name. This alignment is intentional to enable potential future use of DNS infrastructure as an NBNS, requiring only extensions for dynamic registration, group entries, TTL refresh, and new attributes.
+section: 11.1.1
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

@@ -1,0 +1,8 @@
+document: rfc-1044
+kind: design-rationale
+summary: IP address truncation (using low-order 16 bits of IP address as HYPERchannel address) is discouraged for long-term use because it only works for Class B addresses, is incompatible with Class A, Class C, subnetting, and 32-bit HYPERchannel addresses. Decoupling IP and HYPERchannel addresses via proper ARP allows IP addresses to be 'logical' (portable with a user) while HYPERchannel addresses remain 'physical'.
+section: IP ADDRESS TRUNCATION
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

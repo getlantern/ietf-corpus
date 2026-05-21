@@ -1,0 +1,9 @@
+document: rfc-1044
+kind: protocol-element
+summary: The MTU field in ARP messages allows per-host negotiation of the maximum IP datagram size (IP header + data, not including HYPERchannel header or alignment offset). Transmitting drivers must send the minimum of source and destination MTUs negotiated at ARP time. The maximum representable MTU is 65536 (the largest IP datagram), stored in a 16-bit field by excluding header offset length.
+section: MAXIMUM TRANSMISSION UNIT
+topics:
+    - ip
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

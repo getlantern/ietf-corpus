@@ -1,0 +1,8 @@
+document: rfc-1044
+kind: wire-format
+summary: The basic (16-bit) IP encapsulation places the IP on HYPERchannel type code 0x05 in byte 8, the offset to the IP header start in byte 9, the IP type designator 0x34 in byte 10, and the IP header offset relative to byte 12 in byte 11. The IP datagram begins at the offset indicated in byte 11, flows contiguously from the Message Proper into the Associated Data. The Message Proper is always transmitted as 64 bytes.
+section: BASIC (16-BIT) MESSAGE ENCAPSULATION
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

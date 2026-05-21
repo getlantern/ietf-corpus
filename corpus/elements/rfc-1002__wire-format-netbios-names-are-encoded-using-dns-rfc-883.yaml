@@ -1,0 +1,8 @@
+document: rfc-1002
+kind: wire-format
+summary: NetBIOS names are encoded using DNS RFC 883 compressed label format ("second-level encoding"). Each encoded NetBIOS name label is exactly 32 bytes (0x20) long, followed by optional SCOPE_ID labels, terminated by a zero-length octet. The first octet of a compressed name must be 0x20 (NetBIOS name), 0xC0-0xFF (label string pointer), or reserved patterns 0x80-0xBF.
+section: "4.1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

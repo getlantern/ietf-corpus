@@ -1,0 +1,8 @@
+document: rfc-1034
+kind: state-machine
+summary: 'The resolver algorithm uses four data structures—SNAME (target name), SLIST (current best name servers), SBELT (bootstrap safety-belt servers from configuration), and CACHE—and iterates: (1) check local data/cache; (2) find best servers; (3) send queries with retransmission; (4) analyze response: cache answer/name-error, follow delegation, follow CNAME, or drop unreachable server.'
+section: 5.3.3
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

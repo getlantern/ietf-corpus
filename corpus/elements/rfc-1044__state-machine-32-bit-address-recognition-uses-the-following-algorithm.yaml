@@ -1,0 +1,8 @@
+document: rfc-1044
+kind: state-machine
+summary: '32-bit address recognition uses the following algorithm: accept a message if (Domain IN DomainMask) OR (Domain = MyDomain AND Network IN NetworkMask) OR (Domain = MyDomain AND Network = MyNetwork AND Address IN AddressMask); otherwise ignore. This allows each adapter to accept messages destined for itself, aliased addresses, and messages to be forwarded to configured remote networks or domains.'
+section: ADDRESS RECOGNITION AND MESSAGE FORWARDING
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

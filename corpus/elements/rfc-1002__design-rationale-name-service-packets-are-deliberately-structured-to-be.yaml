@@ -1,0 +1,8 @@
+document: rfc-1002
+kind: design-rationale
+summary: Name Service packets are deliberately structured to be compatible with DNS RFC 883 packet formats, reusing the header, question section, and resource record layouts. Additional NetBIOS-specific OPCODE values and resource record types (NB=0x0020, NBSTAT=0x0021) are layered on top of the DNS framework to leverage existing DNS infrastructure and implementations.
+section: 4.2.1
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

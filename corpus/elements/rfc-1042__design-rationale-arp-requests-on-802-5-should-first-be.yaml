@@ -1,0 +1,8 @@
+document: rfc-1042
+kind: design-rationale
+summary: ARP requests on 802.5 should first be sent as all-stations broadcasts (no RIF) to minimize all-ring traffic; if unsuccessful, all-routes broadcast is preferred over single-route broadcast because it provides fault tolerance in environments with multiple redundant bridges where spanning-tree failures might isolate paths.
+section: For IEEE 802.5
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

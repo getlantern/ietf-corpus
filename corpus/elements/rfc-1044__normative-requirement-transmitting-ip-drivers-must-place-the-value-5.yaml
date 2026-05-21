@@ -1,0 +1,9 @@
+document: rfc-1044
+kind: normative-requirement
+summary: Transmitting IP drivers MUST place the value 5 (decimal) in byte 8 of a 16-bit HYPERchannel message to indicate IP traffic. Receiving IP drivers SHOULD presume a delivered message is an IP datagram regardless of the Message Type field contents, as many legacy implementations place zero in this field.
+section: BASIC (16-BIT) MESSAGE ENCAPSULATION / MESSAGE TYPE
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

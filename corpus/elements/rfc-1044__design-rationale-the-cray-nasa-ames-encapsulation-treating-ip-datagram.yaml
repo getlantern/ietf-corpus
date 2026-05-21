@@ -1,0 +1,8 @@
+document: rfc-1044
+kind: design-rationale
+summary: 'The Cray-NASA Ames encapsulation (treating IP datagram as a contiguous block spanning Message Proper and Associated Data) was chosen over the Tektronix-Berkeley approach because: multiple vendors already support it; two-part message structure allows protocol decisions before staging large data transfers; and the Tektronix implementation breaks when IP headers exceed 54 bytes (relevant for DoD sites using IP options).'
+section: WHICH PROTOCOL IS BEST?
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

@@ -1,0 +1,8 @@
+document: rfc-1044
+kind: interoperability-note
+summary: IP drivers that use a logical TO address only (ignoring the message type field) will deliver any HYPERchannel message to a presumed IP destination regardless of message type. Transmitting drivers must generate the full 16-bit TO address to ensure compatibility; many existing 'closed' drivers accept all messages to their adapter regardless of the logical TO field.
+section: BASIC (16-BIT) MESSAGE ENCAPSULATION / TO ADDRESS
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

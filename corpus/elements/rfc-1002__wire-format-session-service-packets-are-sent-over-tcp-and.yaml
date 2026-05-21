@@ -1,0 +1,8 @@
+document: rfc-1002
+kind: wire-format
+summary: 'Session service packets are sent over TCP and share a common 4-byte header: TYPE (1 byte), FLAGS (1 byte), LENGTH (2 bytes). The E bit of FLAGS extends LENGTH as a high-order bit, allowing trailer sizes from 0 to 131071 (128K-1) bytes.'
+section: 4.3.1
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

@@ -1,0 +1,8 @@
+document: rfc-1044
+kind: interoperability-note
+summary: Two incompatible legacy IP-on-HYPERchannel driver families exist. The 'Cray-NASA Ames' family (widest deployment) is compatible with this standard except that bytes 8–9 are zero. The 'Tektronix-Berkeley' family always zeros bytes 8–11 and splits the IP datagram by placing TCP/UDP headers in the Associated Data separately from the IP header; it is not interoperable with this standard.
+section: COMPATIBILITY WITH EXISTING IMPLEMENTATIONS
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

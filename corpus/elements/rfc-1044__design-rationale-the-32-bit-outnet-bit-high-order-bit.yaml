@@ -1,0 +1,8 @@
+document: rfc-1044
+kind: design-rationale
+summary: The 32-bit Outnet bit (high-order bit of the adapter address field) was added for compatibility with existing A-series adapters, which examine only the 8-bit adapter address for delivery and would incorrectly accept transit messages. By setting this bit on messages destined for non-local networks, A-series adapters ignore such messages; the final bridge clears the bit before local delivery.
+section: TO ADDRESS (32-BIT)
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

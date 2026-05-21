@@ -1,0 +1,9 @@
+document: rfc-1001
+kind: normative-requirement
+summary: Because UDP is unreliable, each request must be retransmitted if no response is received within a specified timeout. Duplicate responses triggered by retransmission are silently ignored by comparing transaction ID and NetBIOS information; stateless responders simply re-answer every received request.
+section: 13.1.1
+rfc2119_level: MUST
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

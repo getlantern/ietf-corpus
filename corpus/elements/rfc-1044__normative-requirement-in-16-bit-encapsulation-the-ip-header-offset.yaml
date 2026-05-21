@@ -1,0 +1,9 @@
+document: rfc-1044
+kind: normative-requirement
+summary: In 16-bit encapsulation, the IP header offset in byte 11 (relative to byte 12) MUST take precedence over byte 9 on reception. In 32-bit encapsulation, receiving IP drivers MUST assume byte 9 contains a correct offset to the IP header; valid offsets are in the range 16–44 bytes inclusive.
+section: IP HEADER OFFSET
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

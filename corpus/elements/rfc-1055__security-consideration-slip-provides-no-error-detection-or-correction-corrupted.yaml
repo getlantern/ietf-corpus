@@ -1,0 +1,8 @@
+document: rfc-1055
+kind: security-consideration
+summary: SLIP provides no error detection or correction. Corrupted packets must be caught by upper-layer checksums (IP header, TCP, UDP). Some applications such as NFS ignore checksums and rely on the network medium; on noisy serial lines those applications may silently accept corrupted data.
+section: DEFICIENCIES
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

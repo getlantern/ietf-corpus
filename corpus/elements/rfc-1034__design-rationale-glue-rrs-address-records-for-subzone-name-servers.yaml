@@ -1,0 +1,8 @@
+document: rfc-1034
+kind: design-rationale
+summary: Glue RRs (address records for subzone name servers) are required when the name server's name is 'below' the delegation cut. Without them, a resolver would need the server's address to ask for the server's address—a circular dependency.
+section: 4.2.1
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

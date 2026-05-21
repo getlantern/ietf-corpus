@@ -1,0 +1,9 @@
+document: rfc-1044
+kind: security-consideration
+summary: The SRC (Source From Address Correct) bit in the 32-bit Message Flags field allows intermediate adapters to verify the FROM address. If set by the transmitter, each intermediate adapter may clear this bit if the FROM address is not verifiable from that adapter's perspective. A host receiving a message with this bit still set can trust that reversing TO/FROM fields will reach the true originator.
+section: 32-BIT MESSAGE FIELDS / MESSAGE FLAGS (SRC)
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

@@ -1,0 +1,8 @@
+document: rfc-1042
+kind: design-rationale
+summary: SNAP is used instead of direct LSAP assignments so that existing EtherType codes (from Assigned Numbers) can be reused without modification on 802 networks. An Organization Code of 0 signals that the following 16 bits are a standard EtherType, avoiding the need for a parallel 802-specific type registry.
+section: Description
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

@@ -1,0 +1,8 @@
+document: rfc-1044
+kind: wire-format
+summary: The extended (32-bit) IP encapsulation uses type code 0x06 in byte 8 and the GNA flag set in Message Flags. The IP datagram starts at the offset given in byte 9 (valid range 16–44). The Message Proper is always 64 bytes; if the datagram exceeds (64 - offset) bytes it spills into Associated Data. A receiving driver can read MP at buffer start and Associated Data at buffer+16 with no reshuffling.
+section: EXTENDED (32-BIT) MESSAGE ENCAPSULATION
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

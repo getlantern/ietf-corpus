@@ -1,0 +1,8 @@
+document: rfc-1001
+kind: security-consideration
+summary: The specification acknowledges that NetBIOS networks can be disrupted by malicious behavior (section 4.4). A non-secured NBNS performs no validation of name ownership claims, allowing any node to register or overwrite names without challenge. Deliberate injection of NAME CONFLICT DEMAND packets can render a name unusable on victim nodes, disrupting all sessions and datagrams associated with that name.
+section: "4.4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

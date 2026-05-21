@@ -1,0 +1,8 @@
+document: rfc-1034
+kind: state-machine
+summary: 'Zone refresh: a secondary waits REFRESH seconds, then queries the primary''s SOA. If SERIAL is unchanged, restart REFRESH timer. If changed, issue AXFR. If the check fails, retry every RETRY seconds. If no successful check occurs within EXPIRE seconds, the secondary must discard its zone copy. Serial number comparisons use 32-bit sequence space arithmetic.'
+section: 4.3.5
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

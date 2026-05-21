@@ -1,0 +1,8 @@
+document: rfc-1006
+kind: design-rationale
+summary: ISO transport class 0 (TP0) is used rather than TP4 because TP0 is designed for reliable network services (e.g., X.25), and TCP provides an equivalent reliable service. Running TP0 over TCP achieves identical functionality to TP4, so ISO upper layers (session, presentation, application) operate without modification.
+section: "1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

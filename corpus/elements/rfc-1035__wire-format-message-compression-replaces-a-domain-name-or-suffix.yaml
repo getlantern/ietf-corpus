@@ -1,0 +1,8 @@
+document: rfc-1035
+kind: wire-format
+summary: Message compression replaces a domain name or suffix with a two-octet pointer whose top two bits are both 1 (0xC0 mask), with the remaining 14 bits giving the byte offset from the start of the message (the ID field). Labels begin with two zero bits, making label vs. pointer unambiguous.
+section: 4.1.4
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

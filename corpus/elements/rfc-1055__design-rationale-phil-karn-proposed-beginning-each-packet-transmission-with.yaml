@@ -1,0 +1,6 @@
+document: rfc-1055
+kind: design-rationale
+summary: Phil Karn proposed beginning each packet transmission with an END character as well as ending with one. This flushes any erroneous bytes accumulated from line noise; in the normal case the receiver sees two back-to-back END characters and discards the resulting zero-length IP packet harmlessly.
+section: PROTOCOL
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

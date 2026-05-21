@@ -1,0 +1,9 @@
+document: rfc-1044
+kind: normative-requirement
+summary: The length of the Message Proper transmitted MUST always be 64 bytes, even if the IP datagram and HYPERchannel header do not occupy all 64 bytes. The length of associated data received MUST NOT be used to determine IP datagram length; the IP header's own length field must be used, as channel bus width constraints may cause padding.
+section: BASIC (16-BIT) MESSAGE ENCAPSULATION / IP DATAGRAM CONTENTS
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

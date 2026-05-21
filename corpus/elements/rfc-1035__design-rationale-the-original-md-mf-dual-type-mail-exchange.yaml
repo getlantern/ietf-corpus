@@ -1,0 +1,9 @@
+document: rfc-1035
+kind: design-rationale
+summary: 'The original MD/MF dual-type mail exchange design was replaced by a single MX type with a numeric PREFERENCE field. The old scheme caused cache coherence problems: a cache populated by an MF-only query would not signal the absence of MD records, making it impossible to safely use partial results.'
+section: "3.6"
+topics:
+    - dns
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"
