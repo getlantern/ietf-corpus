@@ -1,0 +1,10 @@
+document: rfc-8446
+kind: normative-requirement
+summary: The Finished message contains HMAC(finished_key, Transcript-Hash(handshake messages). An incorrect Finished MUST cause the recipient to abort with 'decrypt_error'. Application Data MUST NOT be sent prior to sending the Finished message (except 0-RTT early data).
+section: 4.4.4
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

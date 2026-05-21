@@ -1,0 +1,8 @@
+document: rfc-9000
+kind: protocol-element
+summary: Multiple QUIC packets of different types (e.g., Initial, Handshake, 1-RTT) can be coalesced into a single UDP datagram. Receivers split datagrams by reading each packet's length field and process each QUIC packet independently, reducing round-trips during the handshake.
+section: "12.2"
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

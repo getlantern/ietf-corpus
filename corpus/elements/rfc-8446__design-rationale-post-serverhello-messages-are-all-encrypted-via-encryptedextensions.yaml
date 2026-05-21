@@ -1,0 +1,10 @@
+document: rfc-8446
+kind: design-rationale
+summary: Post-ServerHello messages are all encrypted via EncryptedExtensions to extend confidentiality to extension parameters such as ALPN and SNI server responses, which were previously transmitted in plaintext in TLS 1.2. The version number is similarly hidden from the ServerHello field and carried only in the encrypted 'supported_versions' extension.
+section: "1.2"
+topics:
+    - tls
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

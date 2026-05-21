@@ -1,0 +1,11 @@
+document: rfc-8446
+kind: normative-requirement
+summary: Implementations MUST NOT encrypt more than 2^24.5 records under a given set of traffic keys; implementations SHOULD perform a KeyUpdate before this limit is reached to maintain AEAD security bounds.
+section: "5.5"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

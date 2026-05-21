@@ -1,0 +1,8 @@
+document: rfc-8446
+kind: state-machine
+summary: 'Client state machine: START -[send ClientHello]-> WAIT_SH -[recv ServerHello]-> WAIT_EE -[recv EncryptedExtensions]-> WAIT_CERT_CR or WAIT_CV -[recv Certificate/CertificateVerify]-> WAIT_FINISHED -[recv Finished, send Finished]-> CONNECTED. HelloRetryRequest loops back to START.'
+section: A.1
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

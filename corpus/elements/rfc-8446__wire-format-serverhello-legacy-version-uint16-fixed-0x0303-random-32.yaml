@@ -1,0 +1,8 @@
+document: rfc-8446
+kind: wire-format
+summary: 'ServerHello: legacy_version (uint16, fixed 0x0303), random (32 bytes), legacy_session_id_echo (0..32 bytes), cipher_suite (2 bytes), legacy_compression_method (1 byte, fixed 0), extensions (6..2^16-1 bytes). HelloRetryRequest reuses this structure with Random set to SHA-256(''HelloRetryRequest'') = CF21AD74E59A6111BE1D8C021E65B891C2A211167ABB8C5E079E09E2C8A8339C.'
+section: 4.1.3
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

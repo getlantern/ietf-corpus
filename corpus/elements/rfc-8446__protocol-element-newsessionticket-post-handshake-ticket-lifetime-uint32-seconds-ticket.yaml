@@ -1,0 +1,9 @@
+document: rfc-8446
+kind: protocol-element
+summary: 'NewSessionTicket (post-handshake): ticket_lifetime (uint32 seconds), ticket_age_add (uint32 random mask to obfuscate age in ClientHello), ticket_nonce, ticket (opaque PSK identity), extensions (including max_early_data_size for 0-RTT). Resumption PSK = HKDF-Expand-Label(resumption_master_secret, ''resumption'', ticket_nonce, Hash.length).'
+section: 4.6.1
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

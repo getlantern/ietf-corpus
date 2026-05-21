@@ -1,0 +1,9 @@
+document: rfc-9000
+kind: normative-requirement
+summary: The receiver MUST use the final size of a stream (carried in a STREAM+FIN frame or the Final Size field of RESET_STREAM) to account for all bytes sent on that stream in its connection-level flow controller. An endpoint MUST NOT send data at or beyond the final size.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

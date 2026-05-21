@@ -1,0 +1,8 @@
+document: rfc-9000
+kind: wire-format
+summary: Long header packets carry a 1-byte header form/type, 4-byte Version, 1-byte DCIL + Destination Connection ID (0–20 bytes), 1-byte SCIL + Source Connection ID (0–20 bytes), and type-specific fields. Short header (1-RTT) packets omit the Version and Source Connection ID and include only the Destination Connection ID at an implicitly known length.
+section: "17.2"
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

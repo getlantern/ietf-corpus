@@ -1,0 +1,8 @@
+document: rfc-9000
+kind: design-rationale
+summary: Only clients can migrate in QUIC version 1; servers cannot initiate migration. This asymmetry simplifies the protocol because the client is the party whose network path changes most commonly (e.g., mobile devices), while allowing server-preferred address migration as a limited exception.
+section: "9"
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

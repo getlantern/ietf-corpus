@@ -1,0 +1,11 @@
+document: rfc-8446
+kind: normative-requirement
+summary: When PSK identities are provisioned out of band, the PSK identity and KDF hash algorithm MUST also be provisioned out of band. Low-entropy PSKs derived from passwords are not secure because the PSK binder enables offline dictionary attacks; the specified PSK authentication is not a password-authenticated key exchange.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

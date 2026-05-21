@@ -1,0 +1,9 @@
+document: rfc-8446
+kind: normative-requirement
+summary: The 'pre_shared_key' extension MUST be the last extension in the ClientHello. There MUST NOT be more than one extension of the same type in any extension block. Implementations MUST abort with 'illegal_parameter' upon receiving an extension in a message where it is not permitted.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

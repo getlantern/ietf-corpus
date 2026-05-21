@@ -1,0 +1,8 @@
+document: rfc-9000
+kind: state-machine
+summary: 'The sending part of a stream transitions through: Ready (created) → Send (first STREAM/STREAM_DATA_BLOCKED sent) → Data Sent (FIN sent) → Data Recvd (all ACKed, terminal). An abort from any non-terminal state sends RESET_STREAM and moves through Reset Sent → Reset Recvd (terminal).'
+section: "3.1"
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

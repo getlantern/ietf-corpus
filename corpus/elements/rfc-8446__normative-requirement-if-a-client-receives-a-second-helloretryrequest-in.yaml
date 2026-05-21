@@ -1,0 +1,9 @@
+document: rfc-8446
+kind: normative-requirement
+summary: If a client receives a second HelloRetryRequest in the same connection it MUST abort with 'unexpected_message'. A client MUST also abort with 'illegal_parameter' if the HelloRetryRequest would result in no change to the ClientHello.
+section: 4.1.4
+rfc2119_level: MUST
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

@@ -1,0 +1,9 @@
+document: rfc-8446
+kind: wire-format
+summary: 'TLSPlaintext record: ContentType type (1 byte), ProtocolVersion legacy_record_version (2 bytes, 0x0303), uint16 length (max 2^14 bytes of plaintext), followed by fragment. TLSCiphertext uses opaque_type=23 (application_data) for all encrypted records to hide the inner ContentType from network observers.'
+section: "5.1"
+topics:
+    - tls
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

@@ -1,0 +1,8 @@
+document: rfc-8446
+kind: state-machine
+summary: 'Server state machine: START -[recv ClientHello]-> NEGOTIATED -[send ServerHello/EE/Cert/CV/Finished]-> WAIT_EOED (if 0-RTT accepted) or WAIT_FLIGHT2 -> WAIT_CERT/WAIT_CV (if client auth requested) -> WAIT_FINISHED -[recv Finished]-> CONNECTED.'
+section: A.2
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

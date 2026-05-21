@@ -1,0 +1,9 @@
+document: rfc-8446
+kind: protocol-element
+summary: The transcript hash covers all Handshake-layer messages from ClientHello onward. When a HelloRetryRequest occurs, a synthetic message_hash message (HandshakeType 254) encoding Hash(ClientHello1) replaces the original ClientHello in the transcript, preventing the transcript from growing unboundedly.
+section: 4.4.1
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

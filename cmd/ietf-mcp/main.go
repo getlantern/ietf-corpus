@@ -103,8 +103,29 @@ type Document struct {
 	// number; for drafts it's the RFC number the draft was published as
 	// (populated only after the draft transitions to state=rfc).
 
+	// Elements are LLM-extracted normative requirements / protocol
+	// elements / considerations / design rationale for this document.
+	// Populated only for documents that have been through ietf-elements;
+	// absent for the long tail.
+	Elements []*Element `json:"elements,omitempty" yaml:"-"`
+
 	// haystack is a lowercased blob of the document's searchable text,
 	// built once at load time so substring search doesn't reallocate.
+	haystack string `json:"-" yaml:"-"`
+}
+
+// Element mirrors schema/element.schema.json and corpus/elements/*.yaml.
+type Element struct {
+	ID           string   `json:"id" yaml:"-"` // derived from filename
+	Document     string   `json:"document" yaml:"document"`
+	Kind         string   `json:"kind" yaml:"kind"`
+	Summary      string   `json:"summary" yaml:"summary"`
+	Section      string   `json:"section,omitempty" yaml:"section,omitempty"`
+	RFC2119Level string   `json:"rfc2119_level,omitempty" yaml:"rfc2119_level,omitempty"`
+	Topics       []string `json:"topics,omitempty" yaml:"topics,omitempty"`
+	ExtractedBy  string   `json:"extracted_by,omitempty" yaml:"extracted_by,omitempty"`
+	ExtractedAt  string   `json:"extracted_at,omitempty" yaml:"extracted_at,omitempty"`
+
 	haystack string `json:"-" yaml:"-"`
 }
 
@@ -121,6 +142,7 @@ type store struct {
 	mu        sync.RWMutex
 	docs      []*Document
 	byID      map[string]*Document
+	elements  []*Element
 	taxonomy  map[string]any
 	corpusDir string
 }
@@ -138,6 +160,12 @@ func loadStore(corpusDir string) (*store, error) {
 
 	// Stable sort by id for deterministic search results.
 	sort.Slice(s.docs, func(i, j int) bool { return s.docs[i].ID < s.docs[j].ID })
+
+	// Elements: load + attach to their owning document. Missing
+	// elements dir is fine (most documents won't have any).
+	if err := s.loadElements(filepath.Join(corpusDir, "corpus", "elements")); err != nil {
+		return nil, err
+	}
 
 	// Taxonomy.
 	taxPath := filepath.Join(corpusDir, "schema", "taxonomy.yaml")
@@ -179,6 +207,36 @@ func (s *store) loadDir(dir, docType string) error {
 		}
 		s.byID[d.ID] = &d
 		s.docs = append(s.docs, &d)
+	}
+	return nil
+}
+
+func (s *store) loadElements(dir string) error {
+	entries, err := os.ReadDir(dir)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return nil
+		}
+		return fmt.Errorf("read elements dir: %w", err)
+	}
+	for _, e := range entries {
+		if e.IsDir() || !strings.HasSuffix(e.Name(), ".yaml") {
+			continue
+		}
+		raw, err := os.ReadFile(filepath.Join(dir, e.Name()))
+		if err != nil {
+			return err
+		}
+		var el Element
+		if err := yaml.Unmarshal(raw, &el); err != nil {
+			return fmt.Errorf("parse element %s: %w", e.Name(), err)
+		}
+		el.ID = strings.TrimSuffix(e.Name(), ".yaml")
+		el.haystack = strings.ToLower(el.Summary + " " + el.Section + " " + el.RFC2119Level + " " + strings.Join(el.Topics, " "))
+		s.elements = append(s.elements, &el)
+		if d, ok := s.byID[el.Document]; ok {
+			d.Elements = append(d.Elements, &el)
+		}
 	}
 	return nil
 }
@@ -322,6 +380,65 @@ func (s *store) search(a searchArgs) searchResponse {
 	}
 	page := matched[offset:end]
 	resp := searchResponse{Results: page, Total: total}
+	if end < total {
+		resp.NextCursor = fmt.Sprintf("%d", end)
+	}
+	return resp
+}
+
+// ─── search_elements ─────────────────────────────────────────────────────
+
+type elementSearchResponse struct {
+	Results    []*Element `json:"results"`
+	Total      int        `json:"total"`
+	NextCursor string     `json:"next_cursor,omitempty"`
+}
+
+func (s *store) searchElements(query, kind, level, doc, topic string, limit int, cursor string) elementSearchResponse {
+	s.mu.RLock()
+	defer s.mu.RUnlock()
+	if limit <= 0 {
+		limit = 30
+	}
+	if limit > 200 {
+		limit = 200
+	}
+	offset := 0
+	if cursor != "" {
+		fmt.Sscanf(cursor, "%d", &offset)
+	}
+	q := strings.ToLower(strings.TrimSpace(query))
+	topic = strings.ToLower(topic)
+	level = strings.ToUpper(level)
+
+	var matched []*Element
+	for _, e := range s.elements {
+		if kind != "" && !strings.EqualFold(e.Kind, kind) {
+			continue
+		}
+		if level != "" && !strings.EqualFold(e.RFC2119Level, level) {
+			continue
+		}
+		if doc != "" && e.Document != doc {
+			continue
+		}
+		if topic != "" && !slices.Contains(e.Topics, topic) {
+			continue
+		}
+		if q != "" && !strings.Contains(e.haystack, q) {
+			continue
+		}
+		matched = append(matched, e)
+	}
+	total := len(matched)
+	end := offset + limit
+	if end > total {
+		end = total
+	}
+	if offset > total {
+		offset = total
+	}
+	resp := elementSearchResponse{Results: matched[offset:end], Total: total}
 	if end < total {
 		resp.NextCursor = fmt.Sprintf("%d", end)
 	}
@@ -558,6 +675,23 @@ var tools = []tool{
 		},
 	},
 	{
+		Name: "search_elements",
+		Description: "Search the LLM-extracted structured elements (normative requirements, protocol elements, wire-format definitions, security/privacy considerations, design rationale, etc.) across the corpus. Useful for queries like 'find every MUST about TLS session tickets' or 'list all wire-format definitions in QUIC'. Elements are sparse — only documents that have been through ietf-elements have them; check coverage by counting per-doc results.",
+		InputSchema: map[string]any{
+			"type":                 "object",
+			"additionalProperties": false,
+			"properties": map[string]any{
+				"query":         map[string]any{"type": "string", "description": "Free-text substring search over the element's summary, section, RFC 2119 level, and topics. Case-insensitive."},
+				"kind":          map[string]any{"type": "string", "enum": []string{"normative-requirement", "protocol-element", "wire-format", "state-machine", "registry", "security-consideration", "privacy-consideration", "interoperability-note", "design-rationale", "errata"}, "description": "Restrict to one element kind."},
+				"rfc2119_level": map[string]any{"type": "string", "enum": []string{"MUST", "MUST NOT", "SHOULD", "SHOULD NOT", "MAY", "REQUIRED", "RECOMMENDED", "OPTIONAL"}, "description": "For normative-requirement elements: restrict to a specific RFC 2119 keyword."},
+				"document":      map[string]any{"type": "string", "description": "Restrict to elements from this document id (e.g. 'rfc-8446')."},
+				"topic":         map[string]any{"type": "string", "description": "Restrict to elements tagged with this topic id."},
+				"limit":         map[string]any{"type": "integer", "default": 30, "maximum": 200},
+				"cursor":        map[string]any{"type": "string", "description": "Pagination cursor returned by the previous call."},
+			},
+		},
+	},
+	{
 		Name: "list_taxonomy",
 		Description: "Return the controlled-vocabulary taxonomy: streams, areas, topics, element_kinds. Call this once at the start of a session to discover the canonical id strings to filter by in search_documents.",
 		InputSchema: map[string]any{
@@ -671,6 +805,22 @@ func (s *store) callTool(name string, raw json.RawMessage) (string, error) {
 			return "", err
 		}
 		return jsonString(out)
+	case "search_elements":
+		var a struct {
+			Query        string `json:"query"`
+			Kind         string `json:"kind"`
+			RFC2119Level string `json:"rfc2119_level"`
+			Document     string `json:"document"`
+			Topic        string `json:"topic"`
+			Limit        int    `json:"limit"`
+			Cursor       string `json:"cursor"`
+		}
+		if len(raw) > 0 {
+			if err := json.Unmarshal(raw, &a); err != nil {
+				return "", err
+			}
+		}
+		return jsonString(s.searchElements(a.Query, a.Kind, a.RFC2119Level, a.Document, a.Topic, a.Limit, a.Cursor))
 	case "list_taxonomy":
 		var a struct {
 			Category string `json:"category"`

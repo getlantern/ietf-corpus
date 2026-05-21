@@ -1,0 +1,8 @@
+document: rfc-9000
+kind: state-machine
+summary: 'The receiving part of a stream transitions through: Recv (initial) → Size Known (STREAM+FIN received) → Data Recvd (all data received) → Data Read (app consumed, terminal). A RESET_STREAM in Recv or Size Known moves to Reset Recvd → Reset Read (terminal).'
+section: "3.2"
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

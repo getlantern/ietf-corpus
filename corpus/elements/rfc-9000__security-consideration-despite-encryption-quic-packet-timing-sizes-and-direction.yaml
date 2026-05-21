@@ -1,0 +1,11 @@
+document: rfc-9000
+kind: security-consideration
+summary: Despite encryption, QUIC packet timing, sizes, and direction are visible to on-path observers, enabling traffic analysis. The latency spin bit in 1-RTT packets intentionally exposes RTT. QUIC does not prevent traffic analysis; PADDING frames provide limited mitigation.
+section: "21.14"
+topics:
+    - quic
+    - security
+    - privacy
+    - censorship
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

@@ -1,0 +1,9 @@
+document: rfc-9000
+kind: design-rationale
+summary: QUIC uses three separate packet number spaces (Initial, Handshake, 1-RTT) so that acknowledgments for packets at one encryption level cannot be confused with another, and to cleanly separate key epochs. ACK frames only acknowledge packets in the same number space.
+section: "12.3"
+topics:
+    - quic
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

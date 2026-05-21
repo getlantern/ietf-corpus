@@ -1,0 +1,10 @@
+document: rfc-8446
+kind: design-rationale
+summary: All TLS 1.3 cipher suites are AEAD-only to eliminate MAC-then-encrypt vulnerabilities (BEAST, Lucky13, POODLE). Static RSA and DH key exchange were removed to mandate forward secrecy. Compression was removed to prevent CRIME-class attacks. These changes collectively remove the largest classes of known TLS 1.2 attacks.
+section: "1.2"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"

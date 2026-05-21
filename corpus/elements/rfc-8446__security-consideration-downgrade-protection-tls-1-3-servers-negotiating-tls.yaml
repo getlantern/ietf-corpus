@@ -1,0 +1,9 @@
+document: rfc-8446
+kind: security-consideration
+summary: 'Downgrade protection: TLS 1.3 servers negotiating TLS 1.2 MUST set the last 8 bytes of ServerHello.Random to 44 4F 57 4E 47 52 44 01, and negotiating TLS 1.1 or below to 44 4F 57 4E 47 52 44 00. TLS 1.3 clients receiving a downgraded ServerHello MUST check for these sentinels and abort with ''illegal_parameter'' if found.'
+section: 4.1.3
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-21"
