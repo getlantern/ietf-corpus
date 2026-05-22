@@ -1,0 +1,8 @@
+document: rfc-1356
+kind: design-rationale
+summary: 'Larger X.25 data packet sizes do not necessarily improve performance: store-and-forward X.25 switches on slow trunks incur larger per-hop delays for large packets, reducing pipelining and potentially harming end-to-end throughput. Segmenting into smaller complete packet sequences allows more pipelining through switches.'
+section: "4.4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

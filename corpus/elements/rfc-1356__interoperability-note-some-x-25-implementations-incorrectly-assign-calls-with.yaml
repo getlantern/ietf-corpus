@@ -1,0 +1,8 @@
+document: rfc-1356
+kind: interoperability-note
+summary: Some X.25 implementations incorrectly assign calls with CC CUD to the X.29 PAD facility when IP is not properly configured. Originators can detect this if they receive data packets with the Q bit set (especially first octets hex 02, 04, or 06); they should clear the call and apply a hold-down timer.
+section: "4.3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

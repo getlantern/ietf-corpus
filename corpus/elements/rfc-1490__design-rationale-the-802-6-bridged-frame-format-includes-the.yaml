@@ -1,0 +1,6 @@
+document: rfc-1490
+kind: design-rationale
+summary: 'The 802.6 bridged frame format includes the Common PDU Header and Trailer to allow pipelining at egress bridges: the BAsize field contains the PDU length, enabling the bridge to begin transmitting segmented PDUs onto the 802.6 subnetwork before receiving the complete frame. The encapsulated BEtag must not be copied directly to the outgoing 802.6 subnetwork as it may conflict with a previously transmitted BEtag.'
+section: "4.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

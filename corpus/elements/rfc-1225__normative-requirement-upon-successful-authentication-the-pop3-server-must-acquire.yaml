@@ -1,0 +1,9 @@
+document: rfc-1225
+kind: normative-requirement
+summary: Upon successful authentication, the POP3 server MUST acquire an exclusive-access lock on the maildrop before entering the TRANSACTION state. If the lock cannot be acquired, the server MUST respond with -ERR and, if a lock was transiently acquired, MUST release it before rejecting the command.
+section: The AUTHORIZATION State
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

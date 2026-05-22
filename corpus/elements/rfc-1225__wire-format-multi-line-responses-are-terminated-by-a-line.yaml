@@ -1,0 +1,8 @@
+document: rfc-1225
+kind: wire-format
+summary: Multi-line responses are terminated by a line containing only a termination octet (decimal 46, '.') followed by CRLF, making the full terminator 'CRLF.CRLF'. Any line in the response beginning with '.' is byte-stuffed by prepending an additional '.', which the client must strip upon receipt.
+section: A Short Digression
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,8 @@
+document: rfc-1490
+kind: interoperability-note
+summary: Because DLCIs are locally significant, a Frame Relay station has no valid source hardware address to place in ARP requests or replies. The receiving station must extract the correct Q.922 address from the Frame Relay header and insert it into the ar$sha field; target hardware addresses in both request and reply are also invalid and may be zeroed.
+section: "7"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
