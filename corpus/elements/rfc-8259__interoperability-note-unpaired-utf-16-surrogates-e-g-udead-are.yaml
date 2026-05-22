@@ -1,0 +1,8 @@
+document: rfc-8259
+kind: interoperability-note
+summary: Unpaired UTF-16 surrogates (e.g., `\uDEAD`) are syntactically allowed by the ABNF but lead to unpredictable behavior — implementations may return different string lengths or suffer fatal exceptions. JSON texts containing only valid Unicode characters are interoperable.
+section: "8.2"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

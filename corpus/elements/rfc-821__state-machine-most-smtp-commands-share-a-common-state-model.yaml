@@ -1,0 +1,8 @@
+document: rfc-821
+kind: state-machine
+summary: 'Most SMTP commands share a common state model: Begin → send command → Wait (W) → on 2xx go to Success; on 4xx/5xx go to Failure; on 1xx/3xx go to Error. The DATA command has a two-phase model: after 354 intermediate reply, mail data lines are sent with no per-line replies until the end-of-data marker, which then yields a final 250 or failure.'
+section: "4.4"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

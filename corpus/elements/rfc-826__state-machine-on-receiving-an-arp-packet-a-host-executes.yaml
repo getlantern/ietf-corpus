@@ -1,0 +1,8 @@
+document: rfc-826
+kind: state-machine
+summary: 'On receiving an ARP packet, a host executes: (1) verify ar$hrd is understood; (2) verify ar$pro protocol is spoken; (3) if <protocol type, sender protocol address> already exists in table, update sender hardware address and set Merge_flag; (4) if this host is the target, add the triplet to the table if Merge_flag is false; (5) if opcode is REQUEST, swap hardware/protocol fields, set ar$op to REPLY, and unicast the reply to the sender.'
+section: Packet Reception
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

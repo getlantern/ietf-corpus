@@ -1,0 +1,9 @@
+document: rfc-821
+kind: normative-requirement
+summary: The last command in a session must be QUIT. The receiver should not close the transmission channel until it receives and replies to a QUIT command, even if there was an error. If the connection is closed prematurely, the receiver must act as if RSET was received.
+section: 4.1.1
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

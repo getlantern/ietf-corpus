@@ -1,0 +1,11 @@
+document: rfc-8341
+kind: normative-requirement
+summary: A server MUST NOT vary its responses to RESTCONF OPTIONS and PATCH methods based on the existence of the underlying resource, which would indicate the presence or absence of resource instances; servers must always return 'access-denied' when the client lacks read permission.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - netconf
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

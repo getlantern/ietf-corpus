@@ -1,0 +1,8 @@
+document: rfc-854
+kind: interoperability-note
+summary: Multiple Synch signals sent in rapid succession may have their TCP Urgent notifications merged by the network, so receivers cannot count Urgent signals. Processing must continue until DM is found regardless of the Urgent count; if Urgent data is indicated after a DM, a subsequent Synch is implied.
+section: THE NETWORK VIRTUAL TERMINAL
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

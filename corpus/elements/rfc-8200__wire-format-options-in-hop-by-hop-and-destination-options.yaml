@@ -1,0 +1,8 @@
+document: rfc-8200
+kind: wire-format
+summary: 'Options in Hop-by-Hop and Destination Options headers use TLV encoding: Option Type (8 bits, with highest 2 bits encoding unrecognized-option action and bit 3 encoding mutability), Opt Data Len (8 bits), and Option Data (variable). Pad1 (type 0) is a special single-byte option with no length/value fields; PadN (type 1) carries N-2 zero-valued octets for N-byte padding.'
+section: "4.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

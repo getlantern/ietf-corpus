@@ -1,0 +1,9 @@
+document: rfc-8201
+kind: design-rationale
+summary: For multicast destinations, the minimum PMTU across all paths to all receivers determines the packet size sent, since a single packet may traverse many different paths and generate multiple Packet Too Big messages each reporting a different next-hop MTU.
+section: "3"
+topics:
+    - ip
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

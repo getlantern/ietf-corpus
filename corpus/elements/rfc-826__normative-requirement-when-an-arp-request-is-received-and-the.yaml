@@ -1,0 +1,9 @@
+document: rfc-826
+kind: normative-requirement
+summary: When an ARP request is received and the host is the target, it must swap the hardware and protocol fields (placing its own addresses in the sender fields), set ar$op to ares_op$REPLY, and send the packet directly (not broadcast) to the requester's hardware address.
+section: Packet Reception
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

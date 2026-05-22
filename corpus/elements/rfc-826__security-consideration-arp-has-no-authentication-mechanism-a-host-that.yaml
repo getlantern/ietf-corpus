@@ -1,0 +1,9 @@
+document: rfc-826
+kind: security-consideration
+summary: ARP has no authentication mechanism; a host that broadcasts a REQUEST or REPLY with a spoofed sender protocol address will cause all receiving stations to update their translation tables with incorrect hardware-to-protocol address mappings. The protocol itself provides no defense against this cache-poisoning attack.
+section: Packet Reception
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

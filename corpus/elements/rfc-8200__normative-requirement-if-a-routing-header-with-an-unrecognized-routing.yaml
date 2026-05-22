@@ -1,0 +1,9 @@
+document: rfc-8200
+kind: normative-requirement
+summary: 'If a Routing header with an unrecognized Routing Type is encountered: if Segments Left is zero, the node must ignore the header and proceed; if Segments Left is non-zero, the node must discard the packet and send an ICMP Parameter Problem, Code 0, message.'
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

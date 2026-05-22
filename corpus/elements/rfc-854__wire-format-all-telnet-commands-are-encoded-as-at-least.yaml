@@ -1,0 +1,6 @@
+document: rfc-854
+kind: wire-format
+summary: 'All TELNET commands are encoded as at least a 2-byte sequence: IAC (byte 255) followed by the command code. Option negotiation commands are 3 bytes: IAC, command code (WILL=251, WON''T=252, DO=253, DON''T=254), option code. To send byte value 255 as data, it must be doubled (IAC IAC).'
+section: TELNET COMMAND STRUCTURE
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

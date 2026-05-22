@@ -1,0 +1,10 @@
+document: rfc-8200
+kind: normative-requirement
+summary: Whenever originating a UDP packet, an IPv6 node must compute a UDP checksum over the packet and the pseudo-header. Unlike IPv4, the UDP checksum is not optional for IPv6. If the computation yields zero, it must be changed to hex FFFF.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

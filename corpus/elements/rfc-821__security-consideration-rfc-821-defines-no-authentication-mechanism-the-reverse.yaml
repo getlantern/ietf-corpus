@@ -1,0 +1,9 @@
+document: rfc-821
+kind: security-consideration
+summary: RFC 821 defines no authentication mechanism; the reverse-path (sender identity) in the MAIL FROM command is self-reported and unverified, allowing any sender to claim any origin address. Additionally, the EXPN command can expose full mailing list membership and may need to be access-controlled (e.g., '550 Access Denied').
+section: "3.3"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

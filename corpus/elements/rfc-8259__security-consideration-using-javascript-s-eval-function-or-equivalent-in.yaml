@@ -1,0 +1,9 @@
+document: rfc-8259
+kind: security-consideration
+summary: Using JavaScript's `eval()` function (or equivalent in other languages) to parse JSON texts is an unacceptable security risk because the text could contain executable code alongside data. JSON is a subset of JavaScript that excludes assignment and invocation, but certain characters (U+2028, U+2029) legal in JSON are not legal in JavaScript, making eval() unreliable as well as dangerous.
+section: "12"
+topics:
+    - json
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

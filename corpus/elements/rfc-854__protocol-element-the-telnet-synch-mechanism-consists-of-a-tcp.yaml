@@ -1,0 +1,8 @@
+document: rfc-854
+kind: protocol-element
+summary: The TELNET Synch mechanism consists of a TCP Urgent notification paired with the DATA MARK command in the data stream. On receiving Urgent, the receiver enters a mode that scans for 'interesting' signals (IP, AO, AYT, all TELNET commands) and discards intervening data until the DM is encountered, then resumes normal processing.
+section: THE NETWORK VIRTUAL TERMINAL
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

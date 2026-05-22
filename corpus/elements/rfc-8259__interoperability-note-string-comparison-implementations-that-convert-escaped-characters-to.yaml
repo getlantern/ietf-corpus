@@ -1,0 +1,8 @@
+document: rfc-8259
+kind: interoperability-note
+summary: String comparison implementations that convert escaped characters to Unicode code units before numeric comparison are interoperable. Implementations that compare escaped and unescaped forms without normalization may incorrectly find `"a\\b"` and `"a\u005Cb"` unequal.
+section: "8.3"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

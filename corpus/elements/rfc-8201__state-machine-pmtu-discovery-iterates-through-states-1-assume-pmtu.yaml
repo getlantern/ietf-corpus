@@ -1,0 +1,9 @@
+document: rfc-8201
+kind: state-machine
+summary: 'PMTU discovery iterates through states: (1) assume PMTU equals first-hop link MTU; (2) send packets; (3) on receiving PTB, reduce PMTU estimate and reduce packet size; (4) periodically probe for PMTU increase (no sooner than 5 minutes after last PTB). The process ends when the estimate is at or below the actual PMTU.'
+section: "3"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

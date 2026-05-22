@@ -1,0 +1,10 @@
+document: rfc-8341
+kind: security-consideration
+summary: Because RESTCONF OPTIONS and PATCH responses are not subject to NACM, varying the response based on the existence of the underlying resource could allow unauthenticated or unauthorized clients to probe for the presence or absence of sensitive data. Servers must return a uniform 'access-denied' response regardless of resource existence when the client lacks read permission.
+section: "5"
+topics:
+    - netconf
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

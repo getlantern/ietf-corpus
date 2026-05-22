@@ -1,0 +1,8 @@
+document: rfc-826
+kind: design-rationale
+summary: When a host 'moves' (its protocol address is reassigned to different hardware), connections initiated by the moved host succeed (it clears its own table), but other hosts retain stale mappings. The reception algorithm mitigates this by immediately superseding a table entry when a broadcast REQUEST arrives with a new hardware address for a known protocol address.
+section: Related issue
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

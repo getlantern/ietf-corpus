@@ -1,0 +1,8 @@
+document: rfc-826
+kind: state-machine
+summary: On generating an ARP request, the sender sets ar$hrd=ares_hrd$Ethernet, ar$pro to the protocol being resolved, ar$hln=6, ar$pln to the protocol address length, ar$op=ares_op$REQUEST, ar$sha to its own hardware address, ar$spa to its own protocol address, ar$tpa to the target protocol address, and broadcasts the packet. The original outbound packet is discarded pending retransmission by a higher layer.
+section: Packet Generation
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

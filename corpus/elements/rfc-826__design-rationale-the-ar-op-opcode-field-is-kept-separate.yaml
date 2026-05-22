@@ -1,0 +1,8 @@
+document: rfc-826
+kind: design-rationale
+summary: The ar$op opcode field is kept separate from ar$pro (protocol type) rather than combining them. Combining would halve the number of resolvable protocols and would complicate network monitors that need not know the pairing between request and reply opcodes for each higher-level protocol.
+section: Why is it done this way??
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

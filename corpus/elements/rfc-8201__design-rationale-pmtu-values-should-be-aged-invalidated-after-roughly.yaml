@@ -1,0 +1,9 @@
+document: rfc-8201
+kind: design-rationale
+summary: PMTU values should be aged (invalidated after roughly 10 minutes without a decrease) so that increases in the actual path MTU can be discovered. Stale values that are too small have no self-correcting mechanism unlike stale values that are too large.
+section: "5.3"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

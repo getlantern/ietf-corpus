@@ -1,0 +1,9 @@
+document: rfc-8341
+kind: interoperability-note
+summary: For <get> and <get-config>, data nodes to which the client does not have read access are silently omitted (along with descendants) from the reply rather than generating an 'access-denied' error, so that NETCONF subtree and XPath filters operate against the subset of nodes the user can read.
+section: 3.2.4
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

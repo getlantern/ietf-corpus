@@ -1,0 +1,10 @@
+document: rfc-8341
+kind: security-consideration
+summary: A session with write access but without read access to a sensitive datastore subtree can perform 'fishing attacks' by issuing repeated create/update/delete requests and inferring the presence or absence of specific data from access-denied responses, even without the error-path field.
+section: "5.2"
+topics:
+    - netconf
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

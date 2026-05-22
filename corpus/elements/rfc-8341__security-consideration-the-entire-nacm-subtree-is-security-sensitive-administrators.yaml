@@ -1,0 +1,9 @@
+document: rfc-8341
+kind: security-consideration
+summary: The entire /nacm subtree is security-sensitive. Administrators must restrict both read access (which reveals access control configuration) and write access (which could disrupt enforcement) to all NACM data nodes, particularly when using :writable-running capability where edits take effect immediately.
+section: "5.1"
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

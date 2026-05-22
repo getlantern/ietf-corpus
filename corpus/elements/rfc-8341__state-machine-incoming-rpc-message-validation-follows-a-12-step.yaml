@@ -1,0 +1,9 @@
+document: rfc-8341
+kind: state-machine
+summary: 'Incoming RPC message validation follows a 12-step ordered procedure: (1) check enable-nacm off, (2) check recovery session, (3) permit <close-session>, (4) resolve user groups, (5) skip if no groups found, (6-7) match rule-lists and rules in order, (8) apply matching rule action, (9-10) apply nacm:default-deny-all annotation check, (11) deny <kill-session>/<delete-config>, (12) apply exec-default.'
+section: 3.4.4
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

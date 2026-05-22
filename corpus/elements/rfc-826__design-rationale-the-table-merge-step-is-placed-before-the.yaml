@@ -1,0 +1,8 @@
+document: rfc-826
+kind: design-rationale
+summary: 'The table merge step is placed before the opcode check based on the assumption that communication is bidirectional: if A wants to talk to B, B will likely want to talk to A. Pre-populating B''s table with A''s mapping avoids a second ARP exchange and speeds up bidirectional session establishment.'
+section: Packet Reception
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
