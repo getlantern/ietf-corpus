@@ -1,0 +1,10 @@
+document: rfc-1981
+kind: interoperability-note
+summary: A TCP retransmission triggered by a Packet Too Big message should not change the congestion window but should trigger the slow-start mechanism. The TCP layer must recognize when a Packet Too Big notification actually decreases the PMTU already used for the connection, and ignore duplicate notifications to avoid exponential growth in superfluous retransmissions.
+section: "5.4"
+topics:
+    - tcp
+    - ip
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

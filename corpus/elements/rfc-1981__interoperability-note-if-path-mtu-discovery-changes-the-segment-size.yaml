@@ -1,0 +1,9 @@
+document: rfc-1981
+kind: interoperability-note
+summary: If Path MTU Discovery changes the segment size during a TCP connection, the maximum transmission window should be adjusted to the greatest multiple of the new segment size that is less than or equal to the sender's buffer space, since window size may no longer be an exact multiple of segment size.
+section: "5.4"
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

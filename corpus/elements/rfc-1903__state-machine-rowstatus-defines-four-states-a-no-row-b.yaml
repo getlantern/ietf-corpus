@@ -1,0 +1,8 @@
+document: rfc-1903
+kind: state-machine
+summary: 'RowStatus defines four states: A (no row), B (notReady), C (notInService), D (active). Transitions are driven by SET operations on the status column: createAndGo moves A→D or fails; createAndWait moves A→B or A→C; active moves C or B→D; notInService moves D→C; destroy moves any state→A.'
+section: "2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

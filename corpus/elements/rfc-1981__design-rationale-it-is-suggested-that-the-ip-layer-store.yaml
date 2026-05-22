@@ -1,0 +1,8 @@
+document: rfc-1981
+kind: design-rationale
+summary: It is suggested that the IP layer store PMTU information and that the ICMP layer process received Packet Too Big messages, rather than implementing Path MTU Discovery per packetization layer. This avoids duplicating the implementation for each transport and allows PMTU information to be shared across layers.
+section: "5.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

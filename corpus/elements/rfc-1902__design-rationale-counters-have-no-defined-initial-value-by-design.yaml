@@ -1,0 +1,9 @@
+document: rfc-1902
+kind: design-rationale
+summary: 'Counters have no defined initial value by design: a single sampled value carries no information content; meaningful data requires a delta between two samples at known times. This is why Counter32/Counter64 objects prohibit DEFVAL clauses and require companion TimeStamp objects when discontinuities can occur outside re-initialization.'
+section: 7.1.6
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

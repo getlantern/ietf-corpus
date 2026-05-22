@@ -1,0 +1,9 @@
+document: rfc-1981
+kind: normative-requirement
+summary: Nodes using Path MTU Discovery MUST detect decreases in PMTU as fast as possible. Nodes MAY detect increases in PMTU, but this MUST be done at infrequent intervals; an attempt to detect an increase MUST NOT be done less than 5 minutes after a Packet Too Big message has been received for the given path. The recommended timer is 10 minutes.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,9 @@
+document: rfc-1981
+kind: normative-requirement
+summary: A node MUST NOT reduce its estimate of the Path MTU below the IPv6 minimum link MTU. If a Packet Too Big message reports a next-hop MTU less than that minimum, the node must include a Fragment header in subsequent packets rather than shrinking below the minimum.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

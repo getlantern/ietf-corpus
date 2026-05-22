@@ -1,0 +1,9 @@
+document: rfc-1981
+kind: security-consideration
+summary: A malicious party can send a false Packet Too Big message reporting a PMTU larger than reality. Because a node must never raise its PMTU estimate based on a Packet Too Big message (only lower it), this attack is largely mitigated by the requirement in Section 4.
+section: "6"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

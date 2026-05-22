@@ -1,0 +1,8 @@
+document: rfc-1989
+kind: design-rationale
+summary: InGoodOctets is defined separately from the SNMP MIB ifInOctets because ifInOctets includes octets for discarded and errored frames, which would skew loss calculations; InGoodOctets counts only octets from successfully received frames.
+section: "2.6"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

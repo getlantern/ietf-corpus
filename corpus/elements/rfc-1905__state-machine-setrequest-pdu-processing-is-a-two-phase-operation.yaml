@@ -1,0 +1,8 @@
+document: rfc-1905
+kind: state-machine
+summary: 'SetRequest-PDU processing is a two-phase operation. Phase 1: validate all variable bindings (access, writability, type, length, encoding, value, existence). If all succeed, Phase 2: assign all values atomically. If any assignment fails in Phase 2, all assignments are undone (commitFailed); if undo is impossible, undoFailed is returned.'
+section: 4.2.5
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

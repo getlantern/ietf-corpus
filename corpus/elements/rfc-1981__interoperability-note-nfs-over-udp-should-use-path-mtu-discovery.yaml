@@ -1,0 +1,9 @@
+document: rfc-1981
+kind: interoperability-note
+summary: NFS over UDP should use Path MTU Discovery when routers are involved. Because a single NFS operation cannot be split across multiple UDP datagrams, certain operations require a minimum payload that may exceed the discovered PMTU; implementations should not reduce the payload below this threshold, accepting IP-layer fragmentation instead.
+section: "5.5"
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
