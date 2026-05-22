@@ -1,0 +1,8 @@
+document: rfc-1743
+kind: design-rationale
+summary: MAC addresses in this MIB use the MacAddress textual convention in IEEE 802.1a 'canonical' order (least significant bit first), even though 802.5 requires transmission most significant bit first. This ensures consistency with other MAC-address representations across MIB modules, at the cost of a bit-order translation relative to the wire.
+section: "3.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

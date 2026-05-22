@@ -1,0 +1,10 @@
+document: rfc-1657
+kind: design-rationale
+summary: bgpPathAttrASPath in the obsolete BGP v3 table uses an OCTET STRING rather than SEQUENCE OF INTEGER for SMI compatibility, with each AS number encoded as a pair of octets. This compromise was made because SMIv1 did not support variable-length sequences of integers directly.
+section: "5"
+topics:
+    - bgp
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

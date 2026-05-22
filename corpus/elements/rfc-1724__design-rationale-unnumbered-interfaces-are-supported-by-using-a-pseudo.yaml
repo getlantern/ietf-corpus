@@ -1,0 +1,9 @@
+document: rfc-1724
+kind: design-rationale
+summary: Unnumbered interfaces are supported by using a pseudo-address in the class A 0.0.0.0 network, where the least significant 24 bits encode the ifIndex of the relevant IP interface. This allows the existing IpAddress-indexed tables to accommodate unnumbered interfaces without a schema change, and is backward compatible with RFC 1389.
+section: "3.3"
+topics:
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
