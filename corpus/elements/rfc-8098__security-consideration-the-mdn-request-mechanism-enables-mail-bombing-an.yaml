@@ -1,0 +1,9 @@
+document: rfc-8098
+kind: security-consideration
+summary: 'The MDN request mechanism enables mail bombing: an attacker can send many messages with a false Disposition-Notification-To address, causing floods of MDNs (potentially larger than the originals) to overwhelm the target mailbox — a bandwidth amplification attack. MDNs SHOULD NOT be sent automatically when DN-To differs from MAIL FROM.'
+section: "6.4"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

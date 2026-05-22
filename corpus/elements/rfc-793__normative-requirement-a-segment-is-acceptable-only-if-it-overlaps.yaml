@@ -1,0 +1,9 @@
+document: rfc-793
+kind: normative-requirement
+summary: 'A segment is acceptable only if it overlaps the receive window: RCV.NXT ≤ SEG.SEQ < RCV.NXT+RCV.WND or RCV.NXT ≤ SEG.SEQ+SEG.LEN-1 < RCV.NXT+RCV.WND. Zero-length segments with zero window require SEG.SEQ = RCV.NXT. Even with a zero receive window, a TCP must process RST and URG fields of all incoming segments.'
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

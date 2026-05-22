@@ -1,0 +1,10 @@
+document: rfc-793
+kind: normative-requirement
+summary: RST segments must be validated by checking that their sequence number falls within the receive window before acting on them, except in SYN-SENT state where the RST is acceptable if the ACK field acknowledges the SYN. An invalid RST must be ignored.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

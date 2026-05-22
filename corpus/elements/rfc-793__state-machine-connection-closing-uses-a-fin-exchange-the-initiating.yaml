@@ -1,0 +1,8 @@
+document: rfc-793
+kind: state-machine
+summary: 'Connection closing uses a FIN exchange: the initiating side sends FIN and enters FIN-WAIT-1; on receiving ACK it enters FIN-WAIT-2; on receiving FIN it sends ACK and enters TIME-WAIT; after a 2-MSL timeout it transitions to CLOSED. The passive side transitions ESTABLISHED → CLOSE-WAIT → LAST-ACK → CLOSED after sending its own FIN.'
+section: "3.5"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,10 @@
+document: rfc-793
+kind: normative-requirement
+summary: The initial sequence number (ISN) must be selected from a clock-based generator whose low-order bit increments approximately every 4 microseconds, cycling every ~4.55 hours. Since the Maximum Segment Lifetime (MSL) is taken to be 2 minutes (well under 4.55 hours), ISNs will be unique across connection incarnations.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

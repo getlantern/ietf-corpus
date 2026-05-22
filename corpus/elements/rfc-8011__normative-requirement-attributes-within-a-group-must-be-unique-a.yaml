@@ -1,0 +1,7 @@
+document: rfc-8011
+kind: normative-requirement
+summary: Attributes within a group MUST be unique; a group with duplicate attribute names is malformed. Clients MUST NOT submit such requests, and Printers MUST NOT return such responses. Upon receiving a malformed request, the Printer MUST either reject it with 'client-error-bad-request' (RECOMMENDED) or process it by selecting only one of the duplicate instances without using values from more than one.
+section: 4.1.3
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

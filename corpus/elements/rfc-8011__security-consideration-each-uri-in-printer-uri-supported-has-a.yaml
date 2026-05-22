@@ -1,0 +1,9 @@
+document: rfc-8011
+kind: security-consideration
+summary: 'Each URI in ''printer-uri-supported'' has a corresponding entry in ''uri-security-supported'' (values: ''none'', ''ssl3'' [DEPRECATED], ''tls'') and ''uri-authentication-supported'' (values: ''none'', ''requesting-user-name'', ''basic'', ''digest'', ''certificate''). These parallel arrays have identical cardinality, allowing a single Printer to expose different security postures on different URIs simultaneously.'
+section: "9.3"
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

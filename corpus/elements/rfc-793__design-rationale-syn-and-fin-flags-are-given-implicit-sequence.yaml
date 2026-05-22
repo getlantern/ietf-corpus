@@ -1,0 +1,8 @@
+document: rfc-793
+kind: design-rationale
+summary: SYN and FIN flags are given implicit sequence numbers so they can be retransmitted and acknowledged exactly once without confusion, ensuring connection setup and teardown signals are reliably delivered. Physical data space is not consumed; the sequence number accounting is purely implicit.
+section: "3.3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,8 @@
+document: rfc-793
+kind: design-rationale
+summary: The clock-based ISN generator was chosen so that new ISNs are always larger than sequence numbers used in any prior connection incarnation that could still have segments in the network. If a TCP retains sequence number memory across a restart, it need not wait the quiet time but must use larger sequence numbers.
+section: "3.3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

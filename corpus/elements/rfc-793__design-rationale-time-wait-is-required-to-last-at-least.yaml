@@ -1,0 +1,8 @@
+document: rfc-793
+kind: design-rationale
+summary: TIME-WAIT is required to last at least 2×MSL (2 × 2 minutes) so the remote TCP can receive the final ACK to its FIN; without this delay, a new connection incarnation on the same socket pair could receive a delayed FIN from the old incarnation and be erroneously closed.
+section: "3.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

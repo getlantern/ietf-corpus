@@ -1,0 +1,9 @@
+document: rfc-793
+kind: security-consideration
+summary: TCP provides per-connection precedence and security using the IP type-of-service and security fields. Incoming segments whose security level, compartment, or precedence does not exactly match the connection's parameters must cause a RST and connection abort, preventing cross-domain data leakage.
+section: "3.6"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

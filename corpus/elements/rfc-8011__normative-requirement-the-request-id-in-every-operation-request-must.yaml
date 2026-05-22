@@ -1,0 +1,7 @@
+document: rfc-8011
+kind: normative-requirement
+summary: The 'request-id' in every operation request MUST be an integer in the range 1 to 2**31-1 inclusive. The receiving IPP object copies all 32 bits of the Client-supplied 'request-id' into the response. If the request terminates before the complete 'request-id' is received, the IPP object returns a response with a 'request-id' of 0.
+section: 4.1.2
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

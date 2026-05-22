@@ -1,0 +1,9 @@
+document: rfc-793
+kind: normative-requirement
+summary: A reset (RST) must be sent whenever a segment arrives apparently not intended for the current connection. In CLOSED state, any incoming segment except a RST elicits a RST. In non-synchronized states, an unacceptable ACK or security mismatch elicits a RST. A RST must not be sent if it is unclear the segment is misdirected.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

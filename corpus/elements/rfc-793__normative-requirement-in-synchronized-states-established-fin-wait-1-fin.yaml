@@ -1,0 +1,9 @@
+document: rfc-793
+kind: normative-requirement
+summary: In synchronized states (ESTABLISHED, FIN-WAIT-1, FIN-WAIT-2, CLOSE-WAIT, CLOSING, LAST-ACK, TIME-WAIT), any unacceptable segment must elicit only an empty ACK segment and the connection remains in the same state. A security, compartment, or precedence mismatch in a synchronized state must send a RST and close the connection.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
