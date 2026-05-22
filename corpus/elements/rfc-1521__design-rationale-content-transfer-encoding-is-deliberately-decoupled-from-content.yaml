@@ -1,0 +1,8 @@
+document: rfc-1521
+kind: design-rationale
+summary: Content-Transfer-Encoding is deliberately decoupled from Content-Type to avoid coupling transport requirements with content format definitions. Different transports have different capabilities (7-bit SMTP vs. 8-bit), and the same Content-Type may appropriately use different encodings in different contexts.
+section: "5"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

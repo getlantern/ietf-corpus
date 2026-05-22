@@ -1,0 +1,8 @@
+document: rfc-1493
+kind: wire-format
+summary: 'Timeout is an INTEGER representing STP timer values in units of 1/100 seconds in the MIB, while BPDUs store them in 1/256 seconds. The conversion is: BPDU = floor((n*256)/100); MIB = ceiling((b*100)/256). Arithmetic must multiply before dividing to avoid distortion from multiple conversions.'
+section: "5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

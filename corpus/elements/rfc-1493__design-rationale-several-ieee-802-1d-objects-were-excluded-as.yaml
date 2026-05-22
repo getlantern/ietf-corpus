@@ -1,0 +1,8 @@
+document: rfc-1493
+kind: design-rationale
+summary: 'Several IEEE 802.1d objects were excluded as redundant with MIB-II: BridgeName ≡ sysDescr, BridgeUpTime ≡ sysUpTime, PortAddresses ≡ ifPhysAddress, PortName ≡ ifDescr, PortType ≡ ifType. The BridgeIdentifier is derivable by combining dot1dStpPriority and dot1dBaseBridgeAddress. Transitory state flags (TopologyChange, TopologyChangeAcknowledged) were also excluded as not useful.'
+section: "3.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

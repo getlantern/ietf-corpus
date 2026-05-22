@@ -1,0 +1,8 @@
+document: rfc-1493
+kind: design-rationale
+summary: dot1dTpPortMaxInfo uses a separate object rather than reusing ifMtu because ifMtu is defined as the size available to the network layer, which can differ from the actual MAC INFO field size — especially when multiple layers of encapsulation are present.
+section: "5.4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

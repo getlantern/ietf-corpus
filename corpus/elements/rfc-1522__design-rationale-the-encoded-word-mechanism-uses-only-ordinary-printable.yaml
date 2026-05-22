@@ -1,0 +1,8 @@
+document: rfc-1522
+kind: design-rationale
+summary: The encoded-word mechanism uses only 'ordinary' printable ASCII characters and deliberately avoids relying on infrequently-used RFC 822 features (e.g., backslash-quoting) because existing mail relaying programs are known to delete, reorder, or rewrap headers and misparse rare RFC 822 constructs. Breaking those programs would cause severe operational problems.
+section: "1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

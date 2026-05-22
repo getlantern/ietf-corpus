@@ -1,0 +1,8 @@
+document: rfc-1521
+kind: design-rationale
+summary: The multipart boundary mechanism uses '--' prefix for rough RFC 934 compatibility, but is intentionally NOT fully RFC 934 compatible. RFC 934's quoting convention was rejected because it causes lines to grow with each nesting level, which combined with SMTP line-length limits made it unsuitable for deeply-nested multipart structures.
+section: 7.2.1
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

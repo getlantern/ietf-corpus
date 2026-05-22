@@ -1,0 +1,8 @@
+document: rfc-1548
+kind: security-consideration
+summary: When authentication fails, the link SHOULD be terminated to prevent attack by repetition and denial of service. This is accomplished by simulating a Close event immediately followed by an Open event to LCP, causing orderly termination via Closing/Stopping states before re-accepting connections.
+section: "3.5"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

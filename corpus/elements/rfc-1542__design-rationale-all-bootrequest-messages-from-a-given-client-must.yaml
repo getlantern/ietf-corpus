@@ -1,0 +1,6 @@
+document: rfc-1542
+kind: design-rationale
+summary: All BOOTREQUEST messages from a given client MUST go to the same relay destination to maintain session coherence with DHCP and other protocols that depend on multiple request/reply exchanges. Round-robin load balancing breaks this invariant and caused known interoperability failures.
+section: 4.1.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

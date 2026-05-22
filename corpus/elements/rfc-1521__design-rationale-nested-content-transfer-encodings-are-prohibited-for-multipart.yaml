@@ -1,0 +1,8 @@
+document: rfc-1521
+kind: design-rationale
+summary: Nested content-transfer-encodings are prohibited for multipart and message types to prevent data being passed through encoding algorithms multiple times. Such nesting would obscure message structure, require multiple decoding passes just to identify content types, and introduce efficiency problems.
+section: "5"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
