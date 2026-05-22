@@ -1,0 +1,8 @@
+document: rfc-2453
+kind: design-rationale
+summary: Infinity is set to 16 (one more than the maximum usable metric of 15) to minimize the time spent counting to infinity when a network becomes unreachable. The value is intentionally small because the protocol is considered impractical for networks with a diameter larger than 15 hops, and faster convergence to infinity outweighs the benefit of a larger maximum network size.
+section: 3.4.2
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

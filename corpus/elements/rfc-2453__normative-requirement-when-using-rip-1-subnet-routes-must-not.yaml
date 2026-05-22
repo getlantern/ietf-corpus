@@ -1,0 +1,10 @@
+document: rfc-2453
+kind: normative-requirement
+summary: When using RIP-1, subnet routes MUST NOT be sent to routers outside the network of which the subnet is a part, because those routers cannot determine the subnet mask and would misinterpret the address. Border routers MUST advertise only a single aggregate entry for the network as a whole to neighbors on other networks.
+section: "3.7"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

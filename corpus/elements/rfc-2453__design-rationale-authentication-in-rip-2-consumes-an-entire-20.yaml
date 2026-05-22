@@ -1,0 +1,9 @@
+document: rfc-2453
+kind: design-rationale
+summary: Authentication in RIP-2 consumes an entire 20-octet RTE slot (AFI = 0xFFFF) because the RIP message header provides only 2 octets for version-specific use—insufficient for any reasonable authentication scheme. This design limits authenticated messages to at most 24 route entries.
+section: "4.1"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,9 @@
+document: rfc-2453
+kind: wire-format
+summary: 'RIP-2 authentication occupies the first Route Entry slot: AFI is set to 0xFFFF, followed by a 2-octet Authentication Type and 16 octets of authentication data. Authentication type 2 is simple plaintext password; if under 16 octets, the password is left-justified and null-padded on the right. When authentication is present, at most 24 RTEs remain in the message.'
+section: "4.1"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

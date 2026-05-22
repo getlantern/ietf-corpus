@@ -1,0 +1,9 @@
+document: rfc-7159
+kind: security-consideration
+summary: JSON syntax is borrowed from JavaScript, making it possible to use JavaScript's eval() function to parse JSON texts. This constitutes an unacceptable security risk because the text could contain executable code along with data declarations. The same risk applies to eval()-like functions in any language where JSON texts conform to that language's syntax.
+section: "12"
+topics:
+    - json
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

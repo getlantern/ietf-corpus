@@ -1,0 +1,9 @@
+document: rfc-2453
+kind: normative-requirement
+summary: All RIP implementations MUST implement triggered updates for deleted routes and MAY implement them for new or changed routes. After a triggered update is sent, a timer MUST be set for a random interval of 1–5 seconds; changes that occur before it expires are batched into a single update when it fires. A triggered update MUST be suppressed if a regular update is already due.
+section: 3.10.1
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

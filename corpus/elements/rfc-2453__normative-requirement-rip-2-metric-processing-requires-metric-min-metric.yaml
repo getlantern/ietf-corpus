@@ -1,0 +1,10 @@
+document: rfc-2453
+kind: normative-requirement
+summary: 'RIP-2 metric processing requires: metric = MIN(metric + cost_of_incoming_network, 16). Routes with metric greater than infinity received in an update MUST be logged and the entry ignored. Routes with invalid destination addresses (net 0, net 127, or non-unicast) MUST be silently dropped.'
+section: 3.9.2
+rfc2119_level: MUST
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

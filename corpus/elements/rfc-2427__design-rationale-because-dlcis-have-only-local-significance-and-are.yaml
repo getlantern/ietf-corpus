@@ -1,0 +1,6 @@
+document: rfc-2427
+kind: design-rationale
+summary: Because DLCIs have only local significance and are modified in transit, a Frame Relay station has no source hardware address to populate in ARP requests. The solution is to use the DLCI from the incoming Frame Relay header to back-fill the ARP source hardware address at the receiver, violating strict layering but enabling correct address resolution.
+section: "6"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

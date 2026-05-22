@@ -1,0 +1,8 @@
+document: rfc-2427
+kind: design-rationale
+summary: IP is encapsulated using NLPID 0xCC rather than SNAP because it saves 48 bits per frame and is consistent with the established practice for IP encapsulation in X.25. Where a protocol has an assigned NLPID, SNAP is wasteful and should not be used.
+section: "7"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

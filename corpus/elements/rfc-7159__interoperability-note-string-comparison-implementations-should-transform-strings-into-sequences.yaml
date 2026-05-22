@@ -1,0 +1,8 @@
+document: rfc-7159
+kind: interoperability-note
+summary: String comparison implementations SHOULD transform strings into sequences of Unicode code units and compare numerically, code unit by code unit. Implementations that compare escaped characters without first unescaping them may incorrectly find that 'a\\b' and 'a\u005Cb' are not equal.
+section: "8.3"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

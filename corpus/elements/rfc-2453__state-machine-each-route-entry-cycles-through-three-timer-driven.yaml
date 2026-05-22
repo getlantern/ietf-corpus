@@ -1,0 +1,8 @@
+document: rfc-2453
+kind: state-machine
+summary: 'Each route entry cycles through three timer-driven states. Active: route is valid; the 180-second timeout resets on each received update. Expired: timeout fires, metric set to 16 (infinity), 120-second garbage-collection timer starts, triggered update signaled. Deleted: garbage-collection timer expires and route is removed from the table. A new route received during garbage collection cancels the timer and replaces the entry.'
+section: "3.8"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

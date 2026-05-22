@@ -1,0 +1,8 @@
+document: rfc-2453
+kind: design-rationale
+summary: Split horizon with poisoned reverse (advertising reverse routes at metric 16) breaks two-router loops immediately but increases update message size, especially on campus backbones where many subnets would be advertised back at infinity. Simple split horizon uses less bandwidth but requires a timeout to clear erroneous routes. Implementations may provide a knob to choose between them.
+section: 3.4.3
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
