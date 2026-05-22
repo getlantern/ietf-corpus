@@ -1,0 +1,9 @@
+document: rfc-3550
+kind: state-machine
+summary: 'The RTCP transmission state machine tracks: tp (last transmission time), tc (current time), tn (next scheduled transmission), pmembers/members (group size), senders, rtcp_bw, we_sent, avg_rtcp_size, and initial. Transitions: on timer expiry (compute interval, conditionally transmit); on receiving RTP/RTCP (update tables, apply timer reconsideration); on receiving BYE (remove SSRC, apply reverse reconsideration to accelerate next transmission).'
+section: "6.3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

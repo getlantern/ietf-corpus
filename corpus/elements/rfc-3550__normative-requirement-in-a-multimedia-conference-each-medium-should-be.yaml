@@ -1,0 +1,10 @@
+document: rfc-3550
+kind: normative-requirement
+summary: In a multimedia conference, each medium SHOULD be carried in a separate RTP session with its own destination transport address. Separate media streams SHOULD NOT be multiplexed within one RTP session using PT or SSRC as demultiplexing keys, because RTCP reports cannot distinguish them and mixer combination becomes impossible.
+section: "5.2"
+rfc2119_level: SHOULD NOT
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

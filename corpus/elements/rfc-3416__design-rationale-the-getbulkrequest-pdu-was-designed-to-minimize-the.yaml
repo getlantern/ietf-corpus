@@ -1,0 +1,8 @@
+document: rfc-3416
+kind: design-rationale
+summary: The GetBulkRequest-PDU was designed to minimize the number of protocol exchanges required to retrieve large amounts of management information, particularly for efficient table retrieval. However, senders must set max-repetitions conservatively under network stress to reduce fragmentation risk, since maximum-sized responses may exceed path MTU.
+section: "2.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

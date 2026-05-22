@@ -1,0 +1,8 @@
+document: rfc-3416
+kind: design-rationale
+summary: 'The request-id field serves dual purposes: correlating potentially multiple outstanding requests with incoming responses, and identifying messages duplicated by the unreliable datagram network. Using the same request-id on retransmission allows either the original or retransmitted response to satisfy the request, but a different request-id is recommended for RTT calculation.'
+section: "4.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

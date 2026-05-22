@@ -1,0 +1,11 @@
+document: rfc-3550
+kind: security-consideration
+summary: RTP confidentiality is provided by encrypting the payload and RTCP fields using an external mechanism. When a compound RTCP packet is encrypted, it MUST be prefixed by a random 32-bit quantity redrawn per packet to prevent replays. Partial encryption (excluding the SDES CNAME) is permitted.
+section: "9.1"
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

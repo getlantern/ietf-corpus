@@ -1,0 +1,9 @@
+document: rfc-3416
+kind: normative-requirement
+summary: A conformant implementation must never generate messages larger than allowed by the receiving SNMP entity. When a response would exceed either the local constraint or the originator's maximum message size, an alternate Response-PDU with error-status tooBig and empty variable-bindings must be generated instead.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

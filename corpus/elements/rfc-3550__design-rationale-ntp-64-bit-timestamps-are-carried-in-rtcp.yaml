@@ -1,0 +1,10 @@
+document: rfc-3550
+kind: design-rationale
+summary: NTP 64-bit timestamps are carried in RTCP SR packets rather than RTP data packets because inter-media synchronization requires infrequent wallclock correlation, not per-packet overhead. RTP timestamps are media-clock-relative and advance at different rates per medium; SR's NTP/RTP timestamp pairs provide the cross-media mapping at lower bandwidth cost.
+section: "4"
+topics:
+    - rtp
+    - realtime
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
