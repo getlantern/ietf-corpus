@@ -1,0 +1,10 @@
+document: rfc-2617
+kind: design-rationale
+summary: The MD5-sess algorithm computes A1 as H(username:realm:password) ":" nonce ":" cnonce, creating a per-session key. This limits the amount of material hashed with any one key and enables third-party authentication servers to operate using only H(A1) without knowing the plaintext password.
+section: 3.2.2.2
+topics:
+    - http
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

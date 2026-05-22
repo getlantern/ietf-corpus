@@ -1,0 +1,10 @@
+document: rfc-2617
+kind: security-consideration
+summary: A MITM or malicious server controlling the nonce can mount chosen plaintext, precomputed dictionary, and batch brute-force attacks against Digest. The countermeasure is requiring clients to use the cnonce directive, which adds client-chosen randomness to the hash and defeats nonce-chosen precomputation.
+section: "4.9"
+topics:
+    - http
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

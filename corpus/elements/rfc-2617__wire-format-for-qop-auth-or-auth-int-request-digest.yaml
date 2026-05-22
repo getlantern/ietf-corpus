@@ -1,0 +1,10 @@
+document: rfc-2617
+kind: wire-format
+summary: For qop=auth or auth-int, request-digest = KD(H(A1), nonce ":" nc ":" cnonce ":" qop ":" H(A2)). For RFC-2069 compatibility without qop, request-digest = KD(H(A1), nonce ":" H(A2)). A1 = username ":" realm ":" password (MD5) or H(username ":" realm ":" password) ":" nonce ":" cnonce (MD5-sess). A2 = method ":" uri for auth; method ":" uri ":" H(entity-body) for auth-int.
+section: 3.2.2.1
+topics:
+    - http
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

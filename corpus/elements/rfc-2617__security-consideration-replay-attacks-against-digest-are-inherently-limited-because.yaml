@@ -1,0 +1,9 @@
+document: rfc-2617
+kind: security-consideration
+summary: Replay attacks against Digest are inherently limited because the requested URI is included in the digest, constraining a replay to fetching only that specific document. Servers can further restrict replay by using nonces that embed timestamps and ETags, or by using one-time nonces at the cost of HTTP pipelining.
+section: "4.5"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

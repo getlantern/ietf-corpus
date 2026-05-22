@@ -1,0 +1,9 @@
+document: rfc-2617
+kind: design-rationale
+summary: The recommended nonce construction is base64(timestamp H(timestamp ":" ETag ":" private-key)), enabling the server to validate freshness and bind the nonce to a specific resource version. Including the client IP was considered but rejected because it breaks proxy farms and IP spoofing is not difficult.
+section: 3.2.1
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

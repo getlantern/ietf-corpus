@@ -1,0 +1,9 @@
+document: rfc-2617
+kind: security-consideration
+summary: Both Basic and Digest authentication are vulnerable to man-in-the-middle attacks. A hostile proxy can strip stronger schemes from WWW-Authenticate, leaving only Basic, harvest the cleartext password, then authenticate to the origin server using Digest. Clients should track the strongest scheme ever seen from a server and warn on downgrade.
+section: "4.8"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,9 @@
+document: rfc-2616
+kind: normative-requirement
+summary: A proxy or gateway MUST NOT send a message with a version indicator greater than its actual version. If a higher-version request is received, it MUST downgrade the request, respond with an error, or switch to tunnel behavior. Caching proxies MUST NOT upgrade the request version.
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

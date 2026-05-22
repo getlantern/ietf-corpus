@@ -1,0 +1,8 @@
+document: rfc-2741
+kind: state-machine
+summary: 'Set Transaction States: Idle → TestSet dispatched to each subagent → all respond noError → CommitSet dispatched → success: CleanupSet dispatched → Idle; failure at CommitSet: UndoSet dispatched → CleanupSet → Idle. The master must complete each phase across all participating subagents before advancing.'
+section: 7.3.1
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

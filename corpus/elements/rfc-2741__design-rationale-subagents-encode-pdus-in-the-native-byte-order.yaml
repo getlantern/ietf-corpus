@@ -1,0 +1,8 @@
+document: rfc-2741
+kind: design-rationale
+summary: Subagents encode PDUs in the native byte order of the local processor (indicated by NETWORK_BYTE_ORDER), avoiding byte-swap overhead in the common case where master and subagents share the same host. The master agent detects and adapts to the sender's byte order from the flag.
+section: "4.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

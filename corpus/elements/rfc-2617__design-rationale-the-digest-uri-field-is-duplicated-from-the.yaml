@@ -1,0 +1,9 @@
+document: rfc-2617
+kind: design-rationale
+summary: The digest-uri field is duplicated from the Request-URI in the Authorization header because proxies are allowed to change the Request-Line in transit. Including the URI in the digest allows the server to detect proxy modification, which would produce a mismatched digest and may indicate an attack.
+section: 3.2.2.5
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,9 @@
+document: rfc-2616
+kind: normative-requirement
+summary: 'Transfer-length is determined in precedence order: (1) response type mandating no body; (2) non-identity Transfer-Encoding implying chunked; (3) Content-Length decimal value; (4) multipart/byteranges self-delimiting; (5) connection close. If both Transfer-Encoding and Content-Length are present, Content-Length MUST be ignored.'
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

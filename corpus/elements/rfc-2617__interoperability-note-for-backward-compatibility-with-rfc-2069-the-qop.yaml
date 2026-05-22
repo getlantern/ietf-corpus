@@ -1,0 +1,9 @@
+document: rfc-2617
+kind: interoperability-note
+summary: For backward compatibility with RFC 2069, the qop directive is optional in the Authorization header. When qop is absent, request-digest is computed as KD(H(A1), nonce ":" H(A2)) without nc, cnonce, or qop fields. New implementations SHOULD use qop to gain replay protection.
+section: 3.2.2.1
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

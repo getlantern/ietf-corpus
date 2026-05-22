@@ -1,0 +1,8 @@
+document: rfc-2741
+kind: design-rationale
+summary: AgentX PDUs use a flat binary byte-stream rather than BER/ASN.1, with data organized for natural 32-bit alignment from the PDU start. This permits direct integer access without BER parsing overhead and reflects that AgentX is primarily an IPC mechanism between co-located processes rather than a network protocol.
+section: "5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
