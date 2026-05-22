@@ -1,0 +1,8 @@
+document: rfc-1629
+kind: design-rationale
+summary: Areas within a routing domain should draw NSAP addresses from a common prefix owned by the routing domain rather than from multiple unrelated authorities. Using unrelated authorities produces no common prefix, forcing enumeration of all area addresses at routing domain boundaries — analogous to pre-CIDR IP routing — and prevents scalable hierarchical summarization.
+section: "5.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

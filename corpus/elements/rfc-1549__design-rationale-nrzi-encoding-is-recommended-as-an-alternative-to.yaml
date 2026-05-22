@@ -1,0 +1,6 @@
+document: rfc-1549
+kind: design-rationale
+summary: NRZI encoding is recommended as an alternative to NRZ for bit-synchronous links because of its relative immunity to signal inversion errors and potential to avoid DSU/CSU costs. However, NRZI eliminates the (1+x) factor of the 16-bit FCS, reducing undetected error probability from 1-in-2^16 to 1-in-2^15; therefore the 32-bit FCS is recommended when NRZI is used.
+section: "5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

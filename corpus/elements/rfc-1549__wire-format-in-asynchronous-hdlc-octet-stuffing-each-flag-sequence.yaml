@@ -1,0 +1,6 @@
+document: rfc-1549
+kind: wire-format
+summary: 'In asynchronous HDLC octet stuffing, each Flag Sequence (0x7e), Control Escape (0x7d), and octet less than 0x20 flagged in the sending ACCM is replaced by a two-octet sequence: Control Escape (0x7d) followed by the original octet XOR''d with 0x20. Examples: 0x7e → 0x7d 0x5e; 0x7d → 0x7d 0x5d; 0x01 → 0x7d 0x21.'
+section: "4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

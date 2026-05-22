@@ -1,0 +1,6 @@
+document: rfc-1549
+kind: protocol-element
+summary: Address-and-Control-Field-Compression (negotiated via LCP) omits the 0xff Address and 0x03 Control fields on transmission. On reception, if the first two octets are 0xff and 0x03 they are treated as Address/Control; otherwise the fields are assumed compressed. The Protocol field value 0x00ff is reserved to avoid ambiguity.
+section: "3.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

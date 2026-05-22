@@ -1,0 +1,9 @@
+document: rfc-1559
+kind: design-rationale
+summary: Buffer size parameters (phivRouteBuffSize and phivRouteSegBuffSize) both include a constant 6-byte addend not associated with actual Routing or Data Link overhead. This extra 6 is retained for backward compatibility with the Phase III parameter definition, which historically included Routing overhead in the buffer size field.
+section: "5"
+topics:
+    - snmp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

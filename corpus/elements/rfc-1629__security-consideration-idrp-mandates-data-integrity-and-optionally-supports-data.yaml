@@ -1,0 +1,10 @@
+document: rfc-1629
+kind: security-consideration
+summary: IDRP mandates data integrity and optionally supports data origin authentication for all messages. Each message carries a 16-octet digital signature computed by applying MD-4 (RFC 1320) to the message content. For origin authentication, a BIS may prepend and append out-of-band shared context to the message before signing; this context is not transmitted but is known to the receiver.
+section: "3.3"
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

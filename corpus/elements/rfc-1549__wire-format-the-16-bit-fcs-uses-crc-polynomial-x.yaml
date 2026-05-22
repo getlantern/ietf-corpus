@@ -1,0 +1,6 @@
+document: rfc-1549
+kind: wire-format
+summary: The 16-bit FCS uses CRC polynomial x^16 + x^12 + x^5 + 1 (0x8408 in reflected representation). The initial FCS value is 0xffff (PPPINITFCS16) and a correctly received frame yields a residual value of 0xf0b8 (PPPGOODFCS16). The FCS is appended as the complement, least-significant byte first.
+section: A.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

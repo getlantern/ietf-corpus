@@ -1,0 +1,9 @@
+document: rfc-1653
+kind: normative-requirement
+summary: On receiving a 452 response to the extended MAIL command, the client should send RSET or QUIT, then retry the message to the server at a later time. On receiving 552, the client should send RSET or QUIT and declare the message undeliverable, returning notification to the sender if a sender address was present.
+section: "5.2"
+rfc2119_level: SHOULD
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,8 @@
+document: rfc-1651
+kind: interoperability-note
+summary: Some improperly-implemented servers disconnect the SMTP channel upon receiving EHLO, violating RFC 821 section 4.1.1. Extended clients are suggested to check for connection closure after sending EHLO and, if closed, reconnect and fall back to HELO if extensions are not required.
+section: "4.7"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

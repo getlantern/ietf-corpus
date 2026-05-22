@@ -1,0 +1,6 @@
+document: rfc-1549
+kind: design-rationale
+summary: PPP uses the HDLC Frame Check Sequence for error detection because it is commonly available in hardware implementations. Some protocols either provide error detection only conditionally or not at all; the FCS design ensures that a specific 'good FCS' residue (0xf0b8) results when the receiver's FCS computation passes over the appended complemented FCS, allowing a single-pass receive check.
+section: "1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
