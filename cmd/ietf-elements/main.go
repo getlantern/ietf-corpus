@@ -176,6 +176,11 @@ func extractAllCLI(args []string) {
 			mu.Lock()
 			defer mu.Unlock()
 			if err != nil {
+				if errors.Is(err, errClaudeAuth) {
+					log.Printf("ABORT: %s; tearing down", err)
+					abort()
+					return
+				}
 				log.Printf("[%d/%d] FAIL %s: %v", idx+1, len(cands), id, err)
 				fail++
 				consecutiveFails++
@@ -551,12 +556,23 @@ type elementOut struct {
 // (quadratic) between them. Total worst-case wait per extraction:
 // ~2.5 minutes of backoff + 3 × 6-min claude timeouts. Move on to
 // the next RFC if all attempts fail.
+// errClaudeAuth is returned when claude says "Not logged in". The
+// extract-all guard treats this as a hard failure and aborts the
+// sweep immediately — retrying is useless until the user runs
+// `claude /login` in a GUI session.
+var errClaudeAuth = fmt.Errorf("claude is not logged in (run `claude /login` in a GUI session)")
+
 func runClaude(ctx context.Context, prompt string) (string, error) {
 	var lastErr error
 	for attempt := 1; attempt <= claudeMaxAttempts; attempt++ {
 		out, err := runClaudeOnce(ctx, prompt)
 		if err == nil {
 			return out, nil
+		}
+		// Don't retry on auth failures — claude can't log itself in,
+		// and burning attempts here just delays the inevitable.
+		if strings.Contains(err.Error(), "Not logged in") {
+			return "", errClaudeAuth
 		}
 		lastErr = err
 		if attempt < claudeMaxAttempts {
