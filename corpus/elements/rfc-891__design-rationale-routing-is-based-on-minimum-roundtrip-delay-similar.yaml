@@ -1,0 +1,9 @@
+document: rfc-891
+kind: design-rationale
+summary: Routing is based on minimum roundtrip delay, similar to the algorithm formerly used in the ARPANET. Each neighbor's advertised delay to a host is added to the measured roundtrip delay to that neighbor; if the sum is less than the current Host Table entry by at least the switching threshold, the route is updated. This avoids a central routing authority.
+section: "2"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,6 @@
+document: rfc-860
+kind: design-rationale
+summary: 'The primary motivation is resynchronization after a parse error: a server can send DO TIMING-MARK to flush type-ahead input, discarding buffered commands that arrived before the user saw the error, since input may be buffered in the user''s host or elsewhere.'
+section: "4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

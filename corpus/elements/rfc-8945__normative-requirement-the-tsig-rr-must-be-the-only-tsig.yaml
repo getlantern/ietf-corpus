@@ -1,0 +1,10 @@
+document: rfc-8945
+kind: normative-requirement
+summary: The TSIG RR MUST be the only TSIG RR in the message and MUST be the last record in the additional data section. If multiple TSIG records are detected or one is present in any other position, the DNS message is dropped and a response with RCODE 1 (FORMERR) MUST be returned.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

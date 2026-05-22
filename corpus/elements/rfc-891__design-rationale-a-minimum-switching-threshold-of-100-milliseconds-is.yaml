@@ -1,0 +1,8 @@
+document: rfc-891
+kind: design-rationale
+summary: A minimum switching threshold of 100 milliseconds is used so routes are only changed when a new path is shorter by at least that margin. On very low-delay links this causes the routing algorithm to degenerate to min-hop rather than min-delay, suppressing transient loops from normal propagation-delay variations.
+section: "2.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

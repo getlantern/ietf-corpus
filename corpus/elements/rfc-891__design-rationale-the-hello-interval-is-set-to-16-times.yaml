@@ -1,0 +1,8 @@
+document: rfc-891
+kind: design-rationale
+summary: The HELLO interval is set to 16 times the expected roundtrip time for the longest packet on a given link. For 1200-bps asynchronous links with 256-octet packets this yields a maximum interval of ~30 seconds. The 120-second TTL ensures at least four HELLO messages from every neighbor before a host is declared down.
+section: "2.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

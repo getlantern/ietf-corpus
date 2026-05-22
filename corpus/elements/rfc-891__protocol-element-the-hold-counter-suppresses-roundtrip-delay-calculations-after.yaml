@@ -1,0 +1,9 @@
+document: rfc-891
+kind: protocol-element
+summary: The HOLD counter suppresses roundtrip delay calculations after a clock reset. It is set to HOLD-INTERVAL (at least as long as the maximum HELLO-INTERVAL of any HELLO process) and decremented at 1 Hz. While HOLD is nonzero, PKT.TSP is forced to zero on outgoing HELLO messages and delay computations from received packets are abandoned.
+section: 3.2.3
+topics:
+    - ntp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

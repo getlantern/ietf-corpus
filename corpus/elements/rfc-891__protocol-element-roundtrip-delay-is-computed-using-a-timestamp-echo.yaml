@@ -1,0 +1,10 @@
+document: rfc-891
+kind: protocol-element
+summary: 'Roundtrip delay is computed using a timestamp echo mechanism: when a HELLO is received, the receiver stores (PKT.Time - current_time) in state variable HLO.TSP; on the next outgoing HELLO, PKT.TSP is set to (HLO.TSP + current_time). The sender receiving its own timestamp computes delay as (current_time - PKT.TSP). This technique is independent of clock offsets between hosts and tolerates lost HELLO messages.'
+section: "2.2"
+topics:
+    - routing
+    - measurement
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

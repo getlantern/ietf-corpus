@@ -1,0 +1,10 @@
+document: rfc-891
+kind: normative-requirement
+summary: The IP TTL field in forwarded datagrams is set to 30 seconds (decremented once per second or per hop). If the measured roundtrip delay to a host exceeds 30 seconds (MAXDELAY), that virtual host is declared down. This ensures datagrams cannot live in the net longer than the maximum path delay.
+section: "2.4"
+rfc2119_level: REQUIRED
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

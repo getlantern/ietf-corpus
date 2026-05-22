@@ -1,0 +1,8 @@
+document: rfc-891
+kind: wire-format
+summary: 'HDLC links use the frame: Flag (01111110) | Addr (00000000) | Ctrl (00000000) | Data | CRC | Flag (01111110). Bits are transmitted low-order first per octet. Zero-bit stuffing is applied (a 0 is inserted after five consecutive 1 bits). Addr and Ctrl fields are unused and the checksum is ignored; the Internet datagram is placed in the Data field.'
+section: A.3
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

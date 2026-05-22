@@ -1,0 +1,9 @@
+document: rfc-891
+kind: wire-format
+summary: The HELLO message is carried as an IP datagram using reserved protocol number 63. It has a fixed area (Checksum, Date 16-bit, Time 32-bit, Timestamp 16-bit, Offset 8-bit, Hosts-count 8-bit) followed by a host area (pairs of 16-bit Delay and 16-bit Offset for each Host Table entry). All word fields are byte-swapped relative to standard PDP11 representation. Only intra-net HELLO messages include the host area.
+section: "2.1"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

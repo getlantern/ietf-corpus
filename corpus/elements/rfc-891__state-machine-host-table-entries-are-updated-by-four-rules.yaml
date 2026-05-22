@@ -1,0 +1,8 @@
+document: rfc-891
+kind: state-machine
+summary: 'Host Table entries are updated by four rules upon receipt of a valid HELLO: (1) update if the link''s PID matches the entry''s Port ID; (2) update if the calculated delay is less than the stored delay by at least MINDELAY (100 ms switching threshold); (3) for foreign-net links, update only the gateway entry using roundtrip delay directly; (4) do nothing if none of the above apply or if the host is in hold-down (TTL nonzero after going down).'
+section: "2.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,9 @@
+document: rfc-891
+kind: state-machine
+summary: 'The HELLO INPUT-PACKET event processes incoming HELLO messages: (1) discard if looped on non-broadcast link; (2) set KEEP-ALIVE; (3) compute raw delay/offset via timestamp echo; (4) detect new neighbor and force hold-down; (5) if PKT.NHOSTS is zero (neighbor on different net), call ROUTE then UPDATE; if nonzero, iterate over all host entries adding neighbor delay/offset and call UPDATE for each.'
+section: 3.3.3
+topics:
+    - routing
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

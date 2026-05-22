@@ -1,0 +1,10 @@
+document: rfc-8945
+kind: normative-requirement
+summary: 'Upon receipt of a TSIG message, a server MUST validate in the following order: (1) check key, (2) check MAC, (3) check time values, (4) check truncation policy. This ordering was changed from RFC 2845 to fix a security vulnerability where invalid MACs could be used in signed replies.'
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

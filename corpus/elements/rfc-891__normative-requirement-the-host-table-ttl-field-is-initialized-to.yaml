@@ -1,0 +1,9 @@
+document: rfc-891
+kind: normative-requirement
+summary: The Host Table TTL field is initialized to 120 seconds on each update and decremented once per second. When it reaches zero, the virtual host is declared down and a hold-down cycle begins by resetting TTL to HOLD-DOWN-INTERVAL (120 s) and setting Delay to MAXDELAY. Updates are ignored during the hold-down period to allow bad-news propagation and prevent routing loops.
+section: "2.4"
+rfc2119_level: REQUIRED
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

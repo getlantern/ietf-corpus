@@ -1,0 +1,10 @@
+document: rfc-864
+kind: security-consideration
+summary: 'The UDP CHARGEN service responds to any received datagram with up to 512 bytes, creating a potential amplification vector: a spoofed source address can cause the server to flood a third-party victim. No authentication or source validation is defined. This protocol was deprecated for public Internet use precisely because of abuse in reflection/amplification attacks.'
+section: UDP Based Character Generator Service
+topics:
+    - udp
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

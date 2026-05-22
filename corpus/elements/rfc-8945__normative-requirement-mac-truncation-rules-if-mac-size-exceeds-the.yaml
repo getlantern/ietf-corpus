@@ -1,0 +1,11 @@
+document: rfc-8945
+kind: normative-requirement
+summary: 'MAC truncation rules: if MAC Size exceeds the keyed hash output length, the message MUST be dropped with FORMERR. If MAC Size is less than max(10 octets, half the hash length), the message MUST be dropped with FORMERR (except in specific error responses where MAC Size may be zero).'
+section: 5.2.2.1
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,8 @@
+document: rfc-891
+kind: design-rationale
+summary: Clock corrections within ±128 milliseconds are applied by slewing (gradually adding a fraction of CLK.DELTA each ADJUST-INTERVAL) rather than stepping, ensuring the apparent clock is always monotonically increasing. Larger corrections are applied as immediate steps with HOLD set to suppress timestamp-based delay calculations during the unstable interval.
+section: 3.2.3
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,10 @@
+document: rfc-862
+kind: security-consideration
+summary: The Echo Protocol defines no authentication, access control, or rate limiting. The UDP variant is susceptible to amplification and reflection abuse (a spoofed source address causes the server to send traffic to an arbitrary third party). Unrestricted TCP echo servers can be used to create echo-loop denial-of-service conditions when two echo servers are connected to each other.
+section: "1"
+topics:
+    - security
+    - udp
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

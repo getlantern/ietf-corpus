@@ -1,0 +1,11 @@
+document: rfc-8945
+kind: normative-requirement
+summary: The server MUST verify the MAC by independent computation and comparison. If verification fails, the server MUST return RCODE 9 (NOTAUTH) with TSIG ERROR 16 (BADSIG) and MUST NOT sign the error response.
+section: 5.2.2
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

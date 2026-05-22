@@ -1,0 +1,10 @@
+document: rfc-891
+kind: normative-requirement
+summary: Clock offset in the Host Table is only updated when the length of the last transmitted HELLO packet equals the length of the received HELLO packet. This ensures the roundtrip delay computation—which depends on packet length matching for accurate propagation timing—is valid before updating time synchronization state.
+section: 3.3.3
+rfc2119_level: REQUIRED
+topics:
+    - ntp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

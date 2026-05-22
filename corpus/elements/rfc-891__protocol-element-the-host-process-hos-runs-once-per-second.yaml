@@ -1,0 +1,8 @@
+document: rfc-891
+kind: protocol-element
+summary: The HOST process (HOS) runs once per second to decrement HOST-TABLE.TTL for every entry. When TTL reaches zero and Delay is less than MAXDELAY (host was up), it initiates a hold-down cycle by setting Delay to MAXDELAY and TTL to HOLD-DOWN-INTERVAL. It also periodically calls UPDATE for the local host's own entries with zero delay and offset to keep self-routing current.
+section: "3.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

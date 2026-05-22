@@ -1,0 +1,10 @@
+document: rfc-8945
+kind: normative-requirement
+summary: A forwarding server that does not share the TSIG key MUST forward the message unchanged including the TSIG. If the server shares the key, it MUST process the TSIG and, if checks pass, MUST include its own TSIG toward the destination. If the response has the AD flag set and no transaction security is available, the forwarder MUST clear the AD flag.
+section: "5.5"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

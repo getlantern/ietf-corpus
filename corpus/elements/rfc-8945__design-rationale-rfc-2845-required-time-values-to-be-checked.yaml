@@ -1,0 +1,9 @@
+document: rfc-8945
+kind: design-rationale
+summary: RFC 2845 required time values to be checked before the request MAC, allowing some implementations to use an invalid request MAC in a signed reply when time validation failed (CVE-2017-3142, CVE-2017-3143, CVE-2017-11104). This document fixes this by mandating that the request MAC is treated as invalid until validated, and that any answer using an unvalidated MAC must be unsigned.
+section: "10.1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
