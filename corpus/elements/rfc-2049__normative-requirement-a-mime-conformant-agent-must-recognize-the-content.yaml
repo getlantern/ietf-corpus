@@ -1,0 +1,9 @@
+document: rfc-2049
+kind: normative-requirement
+summary: A MIME-conformant agent MUST recognize the Content-Transfer-Encoding header field and decode all data encoded with quoted-printable or base64. The identity encodings 7bit, 8bit, and binary must also be recognized. Non-7bit data sent without encoding must be labelled 8bit or binary, and if the underlying transport (e.g., SMTP) does not support these, the data must be encoded and labelled with quoted-printable or base64.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

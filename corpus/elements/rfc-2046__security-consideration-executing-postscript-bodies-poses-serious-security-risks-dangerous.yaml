@@ -1,0 +1,9 @@
+document: rfc-2046
+kind: security-consideration
+summary: Executing PostScript bodies poses serious security risks. Dangerous operators include 'deletefile', 'renamefile', 'filenameforall', 'file', 'exitserver', 'startjob', 'setsystemparams', and 'setdevparams'. Receiving software should completely disable these operators or ensure their operation is treated as being by an outside agency.
+section: 4.5.2
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

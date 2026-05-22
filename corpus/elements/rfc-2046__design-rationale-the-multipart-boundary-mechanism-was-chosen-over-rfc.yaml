@@ -1,0 +1,8 @@
+document: rfc-2046
+kind: design-rationale
+summary: The multipart boundary mechanism was chosen over RFC 934 encapsulation because RFC 934 quoting causes lines to grow with each level of nesting. Combined with SMTP implementations that wrap long lines, RFC 934 was unsuitable for deeply-nested multipart structures.
+section: 5.1.1
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

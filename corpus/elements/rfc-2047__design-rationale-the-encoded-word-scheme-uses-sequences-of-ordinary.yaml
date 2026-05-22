@@ -1,0 +1,8 @@
+document: rfc-2047
+kind: design-rationale
+summary: The encoded-word scheme uses sequences of ordinary printable ASCII (=?...?=) rather than raw 8-bit characters or obscure RFC 822 features, because existing mail relays are known to delete fields, reorder addresses, wrap headers, and misparse backslash-quoted characters — making 8-bit or non-atom approaches operationally dangerous.
+section: "1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

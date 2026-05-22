@@ -1,0 +1,8 @@
+document: rfc-2046
+kind: design-rationale
+summary: '''message/partial'' is restricted to 7bit encoding because binary fragments passing through a 7bit gateway cannot be re-encoded without waiting for all fragments—and different fragments may traverse different gateways, making reassembly-then-encoding impractical.'
+section: 5.2.2
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

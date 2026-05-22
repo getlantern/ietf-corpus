@@ -1,0 +1,8 @@
+document: rfc-2045
+kind: design-rationale
+summary: Content-Transfer-Encoding is kept independent of Content-Type because encoding appropriateness varies by transport (e.g., 8bit transport needs no encoding for many charsets, while 7bit SMTP does), and different instances of the same media type may require different encodings.
+section: "6.4"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

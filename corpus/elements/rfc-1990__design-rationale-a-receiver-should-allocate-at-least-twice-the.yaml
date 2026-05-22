@@ -1,0 +1,6 @@
+document: rfc-1990
+kind: design-rationale
+summary: A receiver SHOULD allocate at least twice the sum of per-channel slippage S[c] = R[c] × D[c, c-worst] plus the maximum fragment sizes across all channels; any less risks incorrectly declaring packet loss. No buffer size is sufficient to guarantee correct detection against an adversarial peer that withholds fragments on one channel.
+section: "4.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

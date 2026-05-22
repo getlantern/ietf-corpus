@@ -1,0 +1,9 @@
+document: rfc-2047
+kind: security-consideration
+summary: 'The RFC states that security issues are not discussed. However, Section 6.2 identifies an implicit risk: since decoding of encoded-words occurs after structured field parsing, special characters can be hidden inside encoded-words that, when displayed, are visually indistinguishable from structural characters in surrounding text — a potential header-spoofing vector.'
+section: "10"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

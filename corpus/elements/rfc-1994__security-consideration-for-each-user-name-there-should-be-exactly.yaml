@@ -1,0 +1,8 @@
+document: rfc-1994
+kind: security-consideration
+summary: For each user name there should be exactly one authentication method. Allowing multiple methods makes the user vulnerable to downgrade attacks (e.g., negotiating PAP instead of CHAP), and if the same secret is shared, PAP would reveal it for subsequent CHAP attacks. Distinct user names SHOULD be employed when different methods are required.
+section: Security Considerations
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

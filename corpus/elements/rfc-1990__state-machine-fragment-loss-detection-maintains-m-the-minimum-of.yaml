@@ -1,0 +1,6 @@
+document: rfc-1990
+kind: state-machine
+summary: Fragment loss detection maintains M, the minimum of the most recently received sequence number across all member links. A lost fragment is detected when M advances past the sequence number of an E-bit fragment belonging to an incompletely reassembled packet; the receiver then discards all fragments up to the lowest-numbered E-bit fragment with sequence >= U (the deduced lost sequence).
+section: "4.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
