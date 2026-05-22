@@ -1,0 +1,9 @@
+document: rfc-6376
+kind: security-consideration
+summary: 'The l= (body length) tag can be misused: an attacker can append malicious content to a signed message and the signature will still verify for the covered prefix. Signers are discouraged from using l= and Verifiers should treat messages with l= and appended content with suspicion.'
+section: "8.2"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

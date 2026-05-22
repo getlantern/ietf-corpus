@@ -1,0 +1,10 @@
+document: rfc-7296
+kind: normative-requirement
+summary: An IKE endpoint MUST NOT exceed the peer's stated window size for transmitted requests; if the peer's window is N, the endpoint must wait for responses to all requests through X-N before sending request X. The endpoint MUST keep a copy of each outstanding request and a number of previous responses equal to its declared window size.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

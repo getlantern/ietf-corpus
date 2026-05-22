@@ -1,0 +1,11 @@
+document: rfc-7296
+kind: normative-requirement
+summary: An endpoint MUST NOT conclude that a peer has failed based on unauthenticated routing information (e.g., ICMP) or unprotected IKE Notify messages. Failure MUST be concluded only after repeated authenticated contact attempts time out or a cryptographically protected INITIAL_CONTACT arrives on a different IKE SA to the same identity.
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

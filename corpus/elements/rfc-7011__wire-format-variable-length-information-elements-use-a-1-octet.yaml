@@ -1,0 +1,8 @@
+document: rfc-7011
+kind: wire-format
+summary: Variable-length Information Elements use a 1-octet length prefix for values less than 255 octets. For values of 255 octets or more, the first octet MUST be 255 and the actual length is carried in the following 2 octets (supporting lengths 0–65535). The length octets are not included in the reported length of the Information Element. In Templates, variable-length IEs use the reserved Field Length value 65535.
+section: "7"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

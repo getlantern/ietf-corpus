@@ -1,0 +1,9 @@
+document: rfc-6891
+kind: normative-requirement
+summary: Responders that choose not to implement EDNS MUST respond with RCODE=FORMERR to messages containing an OPT record and MUST NOT include an OPT record in the response. If there is a problem processing the OPT record itself, a FORMERR MUST be returned and the response MUST include an OPT record.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,11 @@
+document: rfc-7296
+kind: design-rationale
+summary: On INVALID_KE_PAYLOAD the initiator must re-propose its full cryptographic suite list (not just reuse the previous one minus the bad group) because the rejection is unauthenticated; an active attacker could otherwise force negotiation of a weaker cipher suite.
+section: "1.2"
+topics:
+    - ipsec
+    - vpn
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

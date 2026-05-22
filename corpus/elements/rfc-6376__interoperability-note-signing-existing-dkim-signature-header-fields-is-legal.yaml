@@ -1,0 +1,8 @@
+document: rfc-6376
+kind: interoperability-note
+summary: Signing existing DKIM-Signature header fields is legal but inadvisable because intermediaries that do not treat DKIM-Signature as a trace header field may reorder them, breaking such signatures. Signers SHOULD NOT remove any DKIM-Signature header fields from messages they are signing.
+section: "4.2"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

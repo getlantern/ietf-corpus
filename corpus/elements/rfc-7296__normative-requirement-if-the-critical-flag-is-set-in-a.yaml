@@ -1,0 +1,10 @@
+document: rfc-7296
+kind: normative-requirement
+summary: If the critical flag is set in a payload header and the payload type is unrecognized, the message MUST be rejected with an UNSUPPORTED_CRITICAL_PAYLOAD Notify containing the one-octet payload type. An unrecognized payload type with the critical flag clear MUST be silently ignored.
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

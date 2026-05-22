@@ -1,0 +1,10 @@
+document: rfc-7296
+kind: normative-requirement
+summary: If an endpoint receives an IKE message with a higher major version number, it MUST drop the message and SHOULD send an unauthenticated INVALID_MAJOR_VERSION Notify containing the highest version it supports. An endpoint supporting major versions n through m MUST support all versions in between.
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

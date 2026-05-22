@@ -1,0 +1,10 @@
+document: rfc-6891
+kind: security-consideration
+summary: 'Requestor-side specification of very large maximum UDP buffer sizes may enable a DNS denial-of-service attack: responders can be made to send messages too large for intermediate gateways to forward, potentially causing ICMP storms between gateways and responders. Announcing very large sizes may also cause middleboxes to drop DNS messages, leading to retransmissions with no hope of success.'
+section: "8"
+topics:
+    - dns
+    - security
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

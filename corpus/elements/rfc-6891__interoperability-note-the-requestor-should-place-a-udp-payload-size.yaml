@@ -1,0 +1,9 @@
+document: rfc-6891
+kind: interoperability-note
+summary: The requestor SHOULD place a UDP payload size value it can actually receive, taking into account firewalls that block fragmented IP packets. A fallback strategy starting at 4096, then 1280–1410 bytes (fits single Ethernet frame), then 512 bytes is recommended.
+section: 6.2.5
+topics:
+    - dns
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

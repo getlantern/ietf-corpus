@@ -1,0 +1,8 @@
+document: rfc-7011
+kind: design-rationale
+summary: Template IDs are reused across Transport Sessions deliberately so that Exporting Processes have freedom to allocate IDs without coordination across sessions. Collecting Processes are explicitly prohibited from assuming Template ID stability across sessions precisely because the protocol does not guarantee it, avoiding a class of incorrect-interpretation bugs.
+section: "8"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

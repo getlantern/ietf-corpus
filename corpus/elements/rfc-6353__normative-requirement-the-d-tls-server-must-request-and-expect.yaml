@@ -1,0 +1,12 @@
+document: rfc-6353
+kind: normative-requirement
+summary: The (D)TLS server MUST request and expect a certificate from the client and MUST NOT accept SNMP messages until the client certificate has been authenticated. If any verification fails, session establishment MUST fail and snmpTlstmSessionInvalidClientCertificates is incremented.
+section: 5.3.2
+rfc2119_level: MUST
+topics:
+    - snmp
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

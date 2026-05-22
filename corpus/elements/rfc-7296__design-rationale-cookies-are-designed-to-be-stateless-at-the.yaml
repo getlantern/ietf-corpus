@@ -1,0 +1,10 @@
+document: rfc-7296
+kind: design-rationale
+summary: 'Cookies are designed to be stateless at the responder: Cookie = VersionIDofSecret | Hash(Ni | IPi | SPIi | secret). This lets the responder validate a returning initiator without retaining per-initiator state, defending against CPU and state exhaustion DoS attacks from forged IP addresses.'
+section: "2.6"
+topics:
+    - ipsec
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

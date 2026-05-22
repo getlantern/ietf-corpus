@@ -1,0 +1,9 @@
+document: rfc-7296
+kind: design-rationale
+summary: 'IKEv2 eliminates explicit SA lifetime negotiation: if liveness detection (DPD) determines a peer is dead after repeated timeouts, the IKE SA and all Child SAs are simply deleted and rebuilt. This removes the complexity and race conditions inherent in synchronized lifetime counters.'
+section: "2.4"
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,9 @@
+document: rfc-6353
+kind: design-rationale
+summary: The (D)TLS internal SessionID is not used as the tlstmSessionID because it can change during renegotiation and does not necessarily uniquely identify a TLSTM session — multiple TLSTM sessions can share the same D(TLS) internal SessionID. A stable, unique TLSTM-level identifier is therefore required.
+section: 3.1.3
+topics:
+    - snmp
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

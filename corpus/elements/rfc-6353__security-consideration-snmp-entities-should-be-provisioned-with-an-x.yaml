@@ -1,0 +1,11 @@
+document: rfc-6353
+kind: security-consideration
+summary: SNMP entities SHOULD be provisioned with an X.509 certificate revocation mechanism to verify that certificates have not been revoked. Certificate path validation must be performed before granting access, and the snmpTlstmCertToTSNTable must have a matching row or session establishment must fail.
+section: "9.1"
+topics:
+    - snmp
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

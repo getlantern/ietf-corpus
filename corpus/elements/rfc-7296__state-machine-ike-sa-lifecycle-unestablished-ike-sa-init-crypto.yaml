@@ -1,0 +1,9 @@
+document: rfc-7296
+kind: state-machine
+summary: 'IKE SA lifecycle: UNESTABLISHED → IKE_SA_INIT (crypto negotiation, DH, nonces) → IKE_AUTH (identity, AUTH payload, first Child SA) → ESTABLISHED. From ESTABLISHED: CREATE_CHILD_SA adds or rekeys Child SAs; INFORMATIONAL deletes SAs or checks liveness. DELETE payload or timeout transitions to CLOSED.'
+section: "1.2"
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

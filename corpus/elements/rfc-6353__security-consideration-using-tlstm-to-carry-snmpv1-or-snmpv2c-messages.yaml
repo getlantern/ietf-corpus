@@ -1,0 +1,10 @@
+document: rfc-6353
+kind: security-consideration
+summary: Using TLSTM to carry SNMPv1 or SNMPv2c messages provides transport-level security, but those message formats include community strings in cleartext within the SNMP PDU. This is a known weakness and operators should be aware that TLSTM does not compensate for weaknesses inherent in older SNMP message formats.
+section: "9.3"
+topics:
+    - snmp
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

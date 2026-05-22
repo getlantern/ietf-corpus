@@ -1,0 +1,10 @@
+document: rfc-7296
+kind: normative-requirement
+summary: When deleting ESP or AH SAs, both directions of the SA pair MUST be closed. Delete payloads list inbound SPIs; the recipient MUST close the designated SAs. One MUST NOT send Delete payloads for both directions of a pair in a single message.
+section: 1.4.1
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

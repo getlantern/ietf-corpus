@@ -1,0 +1,11 @@
+document: rfc-6353
+kind: normative-requirement
+summary: For DTLS over UDP, each SNMP message MUST be placed in a single UDP datagram, though it MAY be split into multiple DTLS records. The TLSTM implementation SHOULD return an error if the SNMP message does not fit in the UDP datagram.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - snmp
+    - tls
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

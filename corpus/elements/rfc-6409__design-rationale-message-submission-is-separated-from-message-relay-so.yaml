@@ -1,0 +1,9 @@
+document: rfc-6409
+kind: design-rationale
+summary: Message submission is separated from message relay so that each service can operate under its own rules. Submission servers can enforce authentication, policy, and completeness checks that are inappropriate for relay MTAs, and modifications harmful when performed downstream can be handled at first-hop.
+section: "1"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

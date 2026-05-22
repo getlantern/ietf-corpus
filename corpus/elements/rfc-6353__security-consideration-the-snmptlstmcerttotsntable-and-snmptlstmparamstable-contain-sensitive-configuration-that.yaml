@@ -1,0 +1,10 @@
+document: rfc-6353
+kind: security-consideration
+summary: The snmpTlstmCertToTSNTable and snmpTlstmParamsTable contain sensitive configuration that controls which principals can access what SNMP operations. Unauthorized write access to these tables could enable session hijacking; implementations MUST apply strict access controls to these MIB objects.
+section: "9.4"
+topics:
+    - snmp
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

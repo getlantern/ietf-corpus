@@ -1,0 +1,9 @@
+document: rfc-6376
+kind: wire-format
+summary: 'The DKIM-Signature header field tags: v= (version, plain-text, REQUIRED, value ''1''), a= (algorithm, plain-text, REQUIRED, e.g. ''rsa-sha256''), b= (signature, base64, REQUIRED), bh= (body hash, base64, REQUIRED), c= (canonicalization, plain-text, OPTIONAL, default ''simple/simple''), d= (SDID, plain-text, REQUIRED), h= (signed headers, plain-text, REQUIRED), i= (AUID, dkim-quoted-printable, OPTIONAL), l= (body length, unsigned decimal, OPTIONAL), q= (query method, OPTIONAL, default ''dns/txt''), s= (selector, plain-text, REQUIRED), t= (timestamp, unsigned decimal, RECOMMENDED), x= (expiration, unsigned decimal, RECOMMENDED), z= (copied headers, OPTIONAL).'
+section: "3.5"
+topics:
+    - email
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

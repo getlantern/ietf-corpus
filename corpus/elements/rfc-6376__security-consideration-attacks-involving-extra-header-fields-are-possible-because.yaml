@@ -1,0 +1,9 @@
+document: rfc-6376
+kind: security-consideration
+summary: Attacks involving extra header fields are possible because DKIM signs specific named header fields. An attacker may prepend additional header fields not covered by the signature. Signers SHOULD include all security-relevant header fields and MAY sign non-existent fields to prevent future insertion.
+section: "8.15"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
