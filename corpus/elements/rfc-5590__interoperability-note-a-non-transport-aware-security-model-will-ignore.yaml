@@ -1,0 +1,9 @@
+document: rfc-5590
+kind: interoperability-note
+summary: A non-transport-aware Security Model will ignore tmSecurityName completely when determining the SNMP securityName. For outgoing messages, if a Secure Transport Model is selected with a Security Model that does not populate a tmStateReference, the Secure Transport Model SHOULD detect the lack of a valid tmStateReference and fail.
+section: "7.1"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

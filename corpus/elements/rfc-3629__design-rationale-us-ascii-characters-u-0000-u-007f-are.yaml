@@ -1,0 +1,6 @@
+document: rfc-3629
+kind: design-rationale
+summary: US-ASCII characters (U+0000–U+007F) are encoded as single octets with their normal ASCII values, and no multi-byte sequence ever produces a byte in the 0x00–0x7F range. This preserves full compatibility with software that parses based on ASCII byte values while being transparent to non-ASCII bytes.
+section: "1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,9 @@
+document: rfc-3629
+kind: normative-requirement
+summary: Implementations of the UTF-8 decoding algorithm MUST protect against decoding invalid sequences. A naive implementation might decode overlong sequence C0 80 as U+0000 or surrogate pair ED A1 8C ED BE B4 as U+233B4; such behavior can have security consequences.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

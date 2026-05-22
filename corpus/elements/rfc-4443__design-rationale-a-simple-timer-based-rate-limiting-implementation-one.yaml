@@ -1,0 +1,8 @@
+document: rfc-4443
+kind: design-rationale
+summary: A simple timer-based rate-limiting implementation (one error every T milliseconds) is explicitly not recommended because it cannot cope with bursty traffic such as traceroute. Token-bucket is the preferred approach, capable of handling legitimate bursts while enforcing a long-term average.
+section: "2.4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

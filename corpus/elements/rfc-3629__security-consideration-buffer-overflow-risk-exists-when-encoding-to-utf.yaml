@@ -1,0 +1,8 @@
+document: rfc-3629
+kind: security-consideration
+summary: Buffer overflow risk exists when encoding to UTF-8 if the allowed character number range is not explicitly limited to U+10FFFF, because the ISO/IEC 10646 description historically allowed sequences up to 6 bytes for code points up to U+7FFFFFFF. Buffer sizing must account for the actual maximum sequence length.
+section: "10"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

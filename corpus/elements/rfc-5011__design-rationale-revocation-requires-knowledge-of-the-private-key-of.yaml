@@ -1,0 +1,9 @@
+document: rfc-5011
+kind: design-rationale
+summary: Revocation requires knowledge of the private key of the DNSKEY being revoked (self-signed RRSet). This prevents a compromised key B from revoking a co-existing key A by simply omitting it from a signed RRSet, since B cannot produce a self-signed revocation for A.
+section: "2.1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

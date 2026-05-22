@@ -1,0 +1,9 @@
+document: rfc-5011
+kind: interoperability-note
+summary: Setting the REVOKE bit on a DNSKEY changes its fingerprint relative to a non-revoked version of the same key, which affects matching against DS records in the parent zone (per RFC 3755) and against fingerprints stored at resolvers for trust point configuration. Operators must account for this during revocation procedures.
+section: "2.1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

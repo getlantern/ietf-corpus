@@ -1,0 +1,6 @@
+document: rfc-3629
+kind: interoperability-note
+summary: When encoding to UTF-8 from UTF-16 data, the UTF-16 data must first be fully decoded to Unicode code points (resolving surrogate pairs), which are then encoded in UTF-8. Directly encoding UTF-16 code unit values produces CESU-8, which is not valid UTF-8.
+section: "3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

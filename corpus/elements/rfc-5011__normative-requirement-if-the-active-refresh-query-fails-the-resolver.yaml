@@ -1,0 +1,10 @@
+document: rfc-5011
+kind: normative-requirement
+summary: 'If the active refresh query fails, the resolver MUST repeat the query no more often than once an hour and no less often than the lesser of 1 day, 10% of the original TTL, or 10% of the original expiration interval: retryTime = MAX(1 hour, MIN(1 day, 0.1*origTTL, 0.1*expireInterval)).'
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

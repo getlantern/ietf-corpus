@@ -1,0 +1,8 @@
+document: rfc-3629
+kind: design-rationale
+summary: UTF-8's range is restricted to U+0000–U+10FFFF (the UTF-16 accessible range), eliminating the 5- and 6-byte sequences previously allowed by ISO/IEC 10646 for code points up to U+7FFFFFFF. This aligns UTF-8 with Unicode's scalar value range and reduces buffer-overflow risk.
+section: "3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

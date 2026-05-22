@@ -1,0 +1,9 @@
+document: rfc-5590
+kind: design-rationale
+summary: 'The cache-based tmStateReference approach was chosen over three alternatives: defining new ASIs (more consistent but adds complexity), using an encapsulating header (would require Message Dispatcher modification and a new Message Processing Model), or modifying existing SNMPv3 message fields (would require Transport Models to decode/re-encode ASN.1, violating modularity). The cache approach is consistent with the existing securityStateReference pattern in RFC 3411.'
+section: A
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

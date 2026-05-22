@@ -1,0 +1,10 @@
+document: rfc-5011
+kind: normative-requirement
+summary: Once a resolver sees a DNSKEY with the REVOKE bit set in a self-signed RRSet, the resolver MUST NOT use that key as a trust anchor or for any other purpose except to validate the RRSIG over the DNSKEY RRSet for the purpose of validating the revocation itself. Revocation is immediate and permanent.
+section: "2.1"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

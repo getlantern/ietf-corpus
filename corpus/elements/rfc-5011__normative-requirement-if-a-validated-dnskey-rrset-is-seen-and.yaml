@@ -1,0 +1,10 @@
+document: rfc-5011
+kind: normative-requirement
+summary: If a validated DNSKEY RRSet is seen and a key that was previously accepted as Valid is absent from that RRSet, a 'KeyRem' event is triggered, moving the key to the Missing state. The DNSKEY RRSet does not need to be continuously present, but when it is seen and validated, the key MUST be present or else KeyRem fires.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

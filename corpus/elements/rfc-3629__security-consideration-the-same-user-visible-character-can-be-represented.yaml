@@ -1,0 +1,9 @@
+document: rfc-3629
+kind: security-consideration
+summary: 'The same user-visible character can be represented by multiple distinct Unicode character sequences (e.g., precomposed U+00E9 vs. U+0065 U+0301), which can undermine string matching in security-sensitive contexts such as credential identifiers versus access-control list entries. Unicode Normalization Forms (UAX #15) are the recommended mitigation.'
+section: "10"
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

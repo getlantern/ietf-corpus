@@ -1,0 +1,11 @@
+document: rfc-5590
+kind: normative-requirement
+summary: Documents defining a new transport domain MUST define a prefix (one to four US-ASCII alpha-numeric characters, excluding ':') that MAY be prepended to all securityNames. A prefixed securityName is formed by concatenating the prefix, a ':' (0x3a), and a non-empty snmpAdminString-compatible identity. This allows distinguishing principals authenticated by different transports (e.g., SSH 'alice' vs. TLS 'alice').
+section: 3.2.2.1
+rfc2119_level: MUST
+topics:
+    - snmp
+    - security
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

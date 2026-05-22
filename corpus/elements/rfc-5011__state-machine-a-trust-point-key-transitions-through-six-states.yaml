@@ -1,0 +1,9 @@
+document: rfc-5011
+kind: state-machine
+summary: 'A trust-point key transitions through six states at the resolver: Start (not yet a trust anchor), AddPend (seen with SEP bit, hold-down timer running), Valid (accepted trust anchor), Missing (valid but absent from last RRSet), Revoked (REVOKE bit seen with self-signed RRSet), and Removed (purged after remove hold-down). Transitions are triggered by events: NewKey, KeyPres, KeyRem, AddTime, RemTime, and RevBit.'
+section: "4"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

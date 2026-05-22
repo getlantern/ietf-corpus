@@ -1,0 +1,8 @@
+document: rfc-3629
+kind: wire-format
+summary: UTF-8 encodes code points U+0000–U+10FFFF as 1 to 4 octets. Single-octet sequences have bit pattern 0xxxxxxx (U+0000–U+007F); 2-octet sequences start with 110xxxxx; 3-octet with 1110xxxx; 4-octet with 11110xxx. Continuation octets always have pattern 10xxxxxx, providing 6 payload bits each.
+section: "3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

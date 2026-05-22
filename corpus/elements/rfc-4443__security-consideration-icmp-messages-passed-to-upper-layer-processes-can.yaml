@@ -1,0 +1,10 @@
+document: rfc-4443
+kind: security-consideration
+summary: ICMP messages passed to upper-layer processes can be used to attack upper-layer protocols such as TCP. It is recommended that upper layers perform validation of ICMP messages (using payload content) before acting upon them; protecting upper layers with IPsec mitigates these attacks.
+section: "5.2"
+topics:
+    - ip
+    - security
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

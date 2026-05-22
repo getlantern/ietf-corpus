@@ -1,0 +1,8 @@
+document: rfc-4506
+kind: security-consideration
+summary: Embedded NUL octets in XDR strings can cause memory leakage or denial of service when the decoder uses NUL-terminated string semantics, because the apparent string size differs from the allocated buffer size.
+section: "8"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

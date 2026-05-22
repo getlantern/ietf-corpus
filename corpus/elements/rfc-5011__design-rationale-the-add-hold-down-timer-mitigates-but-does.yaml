@@ -1,0 +1,9 @@
+document: rfc-5011
+kind: design-rationale
+summary: The add hold-down timer mitigates but does not completely eliminate the attack where a compromised key adds a new malicious trust anchor. A determined attacker holding one compromised key could keep a single resolver from seeing revocation by intercepting real data and substituting their own signed responses — the protocol acknowledges this residual risk is no worse than the pre-existing compromised-key situation.
+section: "2.2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

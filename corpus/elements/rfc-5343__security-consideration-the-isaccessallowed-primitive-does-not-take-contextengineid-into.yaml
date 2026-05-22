@@ -1,0 +1,9 @@
+document: rfc-5343
+kind: security-consideration
+summary: The isAccessAllowed() primitive does not take contextEngineID into account, so a request with localEngineID is treated identically to one with the correct snmpEngineID by the access control subsystem. It is therefore not possible to define a special restricted view for contextEngineID discovery.
+section: "5"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

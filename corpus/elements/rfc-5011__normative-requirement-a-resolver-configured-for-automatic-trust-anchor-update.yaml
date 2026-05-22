@@ -1,0 +1,10 @@
+document: rfc-5011
+kind: normative-requirement
+summary: 'A resolver configured for automatic trust anchor update MUST query the trust point no less often than the lesser of 15 days, half the original DNSKEY RRSet TTL, or half the RRSIG expiration interval, and no more often than once per hour: queryInterval = MAX(1 hr, MIN(15 days, 1/2*OrigTTL, 1/2*RRSigExpirationInterval)).'
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

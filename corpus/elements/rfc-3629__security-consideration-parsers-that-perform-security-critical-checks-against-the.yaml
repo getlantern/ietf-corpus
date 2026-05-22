@@ -1,0 +1,8 @@
+document: rfc-3629
+kind: security-consideration
+summary: Parsers that perform security-critical checks against the UTF-8 encoded form but accept illegal overlong sequences are vulnerable to attack. The exploit of allowing C0 80 as U+0000 (to bypass NUL checks) or 2F C0 AE 2E 2F to bypass '/../' path traversal checks was actively used in a 2001 Web-server virus, demonstrating this is a real-world threat.
+section: "10"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
