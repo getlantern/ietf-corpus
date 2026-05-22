@@ -1,0 +1,10 @@
+document: rfc-1191
+kind: protocol-element
+summary: The TCP layer must track each connection's PMTU and not send segments exceeding both the PMTU and the peer's MSS option (defaulting to 536). A PMTU-triggered retransmission should not reduce the congestion window but should trigger slow-start; the send window must be adjusted to the greatest multiple of the new segment size fitting in the send buffer.
+section: "6.4"
+topics:
+    - tcp
+    - ip
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

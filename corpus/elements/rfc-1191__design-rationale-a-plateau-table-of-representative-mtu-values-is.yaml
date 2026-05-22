@@ -1,0 +1,8 @@
+document: rfc-1191
+kind: design-rationale
+summary: A plateau table of representative MTU values is recommended over binary search or multiplicative reduction for discovering PMTU from old-style messages. The plateau approach converges as fast as binary search in the worst case and far better in practice (FDDI to Ethernet in two RTTs vs. four or five), and never underestimates the true MTU by more than a factor of 2 since plateaus lie near powers of two.
+section: "5"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

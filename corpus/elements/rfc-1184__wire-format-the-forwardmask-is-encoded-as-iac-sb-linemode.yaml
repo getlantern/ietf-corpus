@@ -1,0 +1,6 @@
+document: rfc-1184
+kind: wire-format
+summary: The FORWARDMASK is encoded as 'IAC SB LINEMODE DO FORWARDMASK mask0 mask1 ... mask31 IAC SE'. Each of up to 32 octets represents 8 ASCII codes; high-order bit of mask0 = ASCII 0, low-order bit of mask31 = ASCII 255. The list may be terminated early; remaining octets are treated as zero. Any octet equal to IAC must be doubled.
+section: "2.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

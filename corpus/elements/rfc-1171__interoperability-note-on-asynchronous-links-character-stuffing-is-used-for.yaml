@@ -1,0 +1,6 @@
+document: rfc-1171
+kind: interoperability-note
+summary: On asynchronous links, character stuffing is used for transparency. The Control Escape octet (0x7d) causes the following octet to be XOR'd with 0x20. All octets less than 0x20, plus 0x7e and 0x7d, are escaped. The receiver strips escape sequences prior to FCS computation.
+section: A
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

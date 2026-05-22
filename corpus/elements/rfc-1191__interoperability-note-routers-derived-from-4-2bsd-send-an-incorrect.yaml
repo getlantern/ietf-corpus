@@ -1,0 +1,8 @@
+document: rfc-1191
+kind: interoperability-note
+summary: Routers derived from 4.2BSD send an incorrect Total Length in ICMP Datagram Too Big messages (original Total Length plus original Header Length in octets). Since the receiver cannot identify such routers, it must conservatively correct the value by subtracting 4 times the returned Header Length before using it in plateau-table lookup.
+section: "5"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

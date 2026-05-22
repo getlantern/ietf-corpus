@@ -1,0 +1,8 @@
+document: rfc-1191
+kind: interoperability-note
+summary: Old-style (unmodified) routers send Datagram Too Big messages with a zero Next-Hop MTU field. A simple host fallback is to assume PMTU is the minimum of the current estimate and 576 and stop setting DF, matching pre-discovery behavior; more sophisticated strategies use the plateau table to search for an accurate estimate.
+section: "5"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

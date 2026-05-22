@@ -1,0 +1,8 @@
+document: rfc-1188
+kind: wire-format
+summary: IP datagrams and ARP packets on FDDI are encapsulated using 802.2 LLC Type 1 UI frames with a SNAP header. DSAP and SSAP are both set to 170 (decimal), the Control field is 3 (UI), the 24-bit Organization Code in SNAP is 0, and the 16-bit EtherType identifies the network layer protocol (IP=2048, ARP=2054). The combined LLC and SNAP header is 8 octets.
+section: Packet Format
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

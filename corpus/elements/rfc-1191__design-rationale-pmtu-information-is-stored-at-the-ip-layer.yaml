@@ -1,0 +1,8 @@
+document: rfc-1191
+kind: design-rationale
+summary: PMTU information is stored at the IP layer rather than in individual packetization protocols to avoid duplicating the implementation across TCP, UDP, and application protocols, to enable sharing of PMTU data across connections sharing a path, and because transport-layer connection state does not easily persist PMTU values long-term.
+section: "6.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

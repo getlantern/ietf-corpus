@@ -1,0 +1,9 @@
+document: rfc-9915
+kind: normative-requirement
+summary: If a delegated prefix or a prefix derived from it is advertised for SLAAC, the advertised preferred and valid lifetimes MUST NOT exceed the corresponding remaining lifetimes of the delegated prefix. A client MUST NOT issue a DHCP Release on a delegated prefix while any of the address space delegated from it remains outstanding.
+section: "6.3"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

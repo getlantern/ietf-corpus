@@ -1,0 +1,8 @@
+document: rfc-1191
+kind: design-rationale
+summary: The only router change required is placing the next-hop MTU in a previously-unused ICMP field, minimizing deployment burden. Old routers leave the field zero (as required by RFC 792), which hosts can detect and handle via fallback strategies, ensuring the mechanism provides at least as good a PMTU estimate as pre-discovery practice even on unupgraded paths.
+section: "2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

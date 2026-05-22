@@ -1,0 +1,8 @@
+document: rfc-9915
+kind: state-machine
+summary: 'Client retransmission: RT = IRT + RAND*IRT for first transmission; RT = 2*RTprev + RAND*RTprev for subsequent. RT is capped at MRT. Exchange fails when MRC transmissions are reached or MRD seconds elapse; if both are 0, client retransmits indefinitely. RAND is uniform in [-0.1, +0.1].'
+section: "15"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

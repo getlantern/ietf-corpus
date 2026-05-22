@@ -1,0 +1,8 @@
+document: rfc-1191
+kind: state-machine
+summary: 'PMTU Discovery cycles through: (1) Initial—PMTU assumed equal to first-hop MTU, DF set; (2) Reducing—on each Datagram Too Big, PMTU estimate is decreased and datagrams retransmitted at new size; (3) Stable—datagrams traverse path without fragmentation; (4) Probing—after timeout (~10 min), estimate is raised to probe for PMTU increases, possibly re-entering Reducing.'
+section: "2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

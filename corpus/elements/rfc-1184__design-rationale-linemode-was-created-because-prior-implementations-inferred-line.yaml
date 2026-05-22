@@ -1,0 +1,6 @@
+document: rfc-1184
+kind: design-rationale
+summary: LINEMODE was created because prior implementations inferred line-at-a-time mode from the absence of ECHO or SUPPRESS-GO-AHEAD, which is not their intended meaning. Using ECHO alone gave no mechanism to turn off echoing while keeping local character processing active (e.g., for password entry). New options are the correct solution for defining local line editing in a reliable, consistent manner.
+section: "4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
