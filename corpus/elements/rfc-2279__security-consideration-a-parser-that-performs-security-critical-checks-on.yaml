@@ -1,0 +1,8 @@
+document: rfc-2279
+kind: security-consideration
+summary: 'A parser that performs security-critical checks on the UTF-8 encoded form of input but also interprets illegal octet sequences as valid characters is vulnerable to bypass attacks. Examples: accepting C0 80 as U+0000 (NUL) while blocking 00, or accepting 2F C0 AE 2E 2F as ''/../'' while blocking 2F 2E 2E 2F — both allow security filters to be circumvented via overlong encodings.'
+section: "6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

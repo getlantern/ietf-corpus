@@ -1,0 +1,8 @@
+document: rfc-2279
+kind: design-rationale
+summary: The MIME charset label 'UTF-8' is intentionally version-independent. A MIME charset label's sole purpose is to enable interpretation of received bytes into characters; version tags serve no purpose when changes are compatible additions, and an older application encountering an unknown version-tagged label would fail entirely, whereas a generic known label triggers mostly correct processing.
+section: "5"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

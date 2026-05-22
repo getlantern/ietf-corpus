@@ -1,0 +1,10 @@
+document: rfc-2197
+kind: normative-requirement
+summary: If nonblocking operation is not supported, client SMTP implementations MUST check the TCP window size and ensure each group of commands fits entirely within the window (usually 4K octets). Failure to do so can lead to deadlock conditions.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - email
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

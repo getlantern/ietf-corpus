@@ -1,0 +1,6 @@
+document: rfc-2348
+kind: design-rationale
+summary: The default 512-octet TFTP blocksize is inefficient on LANs with MTUs of 1500 octets or greater. Increasing blocksize reduces the number of data and acknowledgment packets, lowering round-trip wait overhead and per-packet framing costs. Performance tests showed up to 80% reduction in transfer time at 8192-octet blocks versus 512-octet blocks.
+section: Proof of Concept
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,9 @@
+document: rfc-2279
+kind: normative-requirement
+summary: Implementations of the UTF-8 decoding algorithm must protect against decoding invalid byte sequences. A naive decoder may wrongly interpret the illegal sequence C0 80 as U+0000 or 2F C0 AE 2E 2F as '/../', creating exploitable inconsistencies when security checks operate on the decoded form.
+section: "2"
+rfc2119_level: SHOULD
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

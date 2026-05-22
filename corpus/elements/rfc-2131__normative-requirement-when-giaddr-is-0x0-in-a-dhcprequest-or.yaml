@@ -1,0 +1,9 @@
+document: rfc-2131
+kind: normative-requirement
+summary: When giaddr is 0x0 in a DHCPREQUEST or when sending a DHCPNAK with giaddr zero, the server MUST broadcast the DHCPNAK to the 0xffffffff broadcast address because the client may lack a correct network address and may not answer ARP requests.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

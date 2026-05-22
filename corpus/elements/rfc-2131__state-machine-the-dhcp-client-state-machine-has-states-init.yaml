@@ -1,0 +1,8 @@
+document: rfc-2131
+kind: state-machine
+summary: 'The DHCP client state machine has states: INIT (send DHCPDISCOVER), SELECTING (collect DHCPOFFER replies, send DHCPREQUEST), REQUESTING (await DHCPACK/DHCPNAK), BOUND (configured, wait for T1), RENEWING (T1 expired, unicast DHCPREQUEST to server), REBINDING (T2 expired, broadcast DHCPREQUEST), INIT-REBOOT (send DHCPREQUEST with prior address), and REBOOTING (await DHCPACK/DHCPNAK). DHCPNAK in most states returns client to INIT.'
+section: "4.4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,9 @@
+document: rfc-2197
+kind: normative-requirement
+summary: Client SMTP implementations that employ pipelining MUST check ALL statuses associated with each command in a group. For example, if no RCPT TO addresses were accepted, the client must still check the DATA command response and cannot assume it will be rejected.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

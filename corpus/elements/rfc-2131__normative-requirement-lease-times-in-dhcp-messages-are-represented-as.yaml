@@ -1,0 +1,9 @@
+document: rfc-2131
+kind: normative-requirement
+summary: Lease times in DHCP messages are represented as relative times in unsigned 32-bit seconds; 0xffffffff represents infinity. Because client and server clocks may not be synchronized, the server may return a shorter lease than it commits to its database to compensate for clock drift.
+section: "3.3"
+rfc2119_level: SHOULD
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

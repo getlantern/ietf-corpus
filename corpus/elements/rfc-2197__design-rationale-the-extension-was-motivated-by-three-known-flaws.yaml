@@ -1,0 +1,8 @@
+document: rfc-2197
+kind: design-rationale
+summary: 'The extension was motivated by three known flaws in deployed SMTP servers: (1) loss of buffered data during mid-dialogue process handoff; (2) flushing the TCP input buffer on command failure; (3) improper handling of RCPT TO failures when deciding whether to accept a DATA command. These bugs made unsafe deploying pipelining without server opt-in.'
+section: "2"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

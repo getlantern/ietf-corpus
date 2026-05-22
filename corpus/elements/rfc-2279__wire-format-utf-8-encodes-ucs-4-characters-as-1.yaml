@@ -1,0 +1,6 @@
+document: rfc-2279
+kind: wire-format
+summary: 'UTF-8 encodes UCS-4 characters as 1 to 6 octets using a self-synchronizing prefix scheme. The encoding table maps: U+0000–U+007F → 0xxxxxxx (1 byte); U+0080–U+07FF → 110xxxxx 10xxxxxx (2 bytes); U+0800–U+FFFF → 1110xxxx 10xxxxxx 10xxxxxx (3 bytes); U+10000–U+1FFFFF → 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx (4 bytes); with 5- and 6-byte forms extending to U+7FFFFFFF. Continuation octets always have the pattern 10xxxxxx.'
+section: "2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
