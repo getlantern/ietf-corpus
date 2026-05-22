@@ -1,0 +1,8 @@
+document: rfc-1757
+kind: state-machine
+summary: 'EntryStatus defines four row lifecycle states: valid(1), createRequest(2), underCreation(3), and invalid(4). A manager creates a row by setting status to createRequest(2); the agent immediately transitions it to underCreation(3). The manager then configures objects and sets status to valid(1) or aborts with invalid(4). An agent may invalidate a stale underCreation entry if the management station appears to have crashed.'
+section: "2.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

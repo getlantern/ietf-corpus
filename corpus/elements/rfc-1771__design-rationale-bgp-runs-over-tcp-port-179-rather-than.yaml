@@ -1,0 +1,10 @@
+document: rfc-1771
+kind: design-rationale
+summary: BGP runs over TCP (port 179) rather than implementing its own reliable transport, eliminating the need for explicit update fragmentation, retransmission, acknowledgement, and sequencing. TCP is present in virtually all commercial routers and hosts, and any TCP authentication scheme is available in addition to BGP's own authentication.
+section: "2"
+topics:
+    - bgp
+    - routing
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

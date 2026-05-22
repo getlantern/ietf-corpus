@@ -1,0 +1,6 @@
+document: rfc-1762
+kind: design-rationale
+summary: Because Digital's serial links use DDCMP which guarantees packet delivery, the recommended default routing retransmit time is 600 seconds, compared to 10 seconds on Ethernet where delivery is not guaranteed. For PPP, the retransmit interval should be user-configurable per interface based on the underlying error rate.
+section: "5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

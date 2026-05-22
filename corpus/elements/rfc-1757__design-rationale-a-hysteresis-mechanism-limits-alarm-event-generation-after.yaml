@@ -1,0 +1,9 @@
+document: rfc-1757
+kind: design-rationale
+summary: 'A hysteresis mechanism limits alarm event generation: after a rising event fires, no further rising events occur until the value drops below alarmFallingThreshold; symmetrically for falling events. This prevents event floods when a monitored value oscillates near a threshold.'
+section: 2.3.4
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

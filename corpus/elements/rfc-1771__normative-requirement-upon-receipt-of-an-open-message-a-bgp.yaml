@@ -1,0 +1,10 @@
+document: rfc-1771
+kind: normative-requirement
+summary: Upon receipt of an OPEN message a BGP speaker MUST set the Hold Timer to the smaller of its configured Hold Time and the Hold Time in the OPEN message. Hold Time MUST be either zero or at least three seconds; values of one or two seconds MUST be rejected with an Unacceptable Hold Time error.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,9 @@
+document: rfc-1850
+kind: design-rationale
+summary: 'Trap design follows three principles: (1) initial activity at startup is ignored to avoid trap floods during convergence; (2) traps are throttled to prevent storms; (3) one trap is sent per OSPF event rather than aggregating multiple events, with event counters available for polling to detect missed traps.'
+section: "4"
+topics:
+    - snmp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

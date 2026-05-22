@@ -1,0 +1,10 @@
+document: rfc-1850
+kind: security-consideration
+summary: ospfIfAuthKey and ospfVirtIfAuthKey always return a zero-length OCTET STRING when read via SNMP, preventing authentication credential exposure through the MIB. Simple password authentication is limited to keys of at most 8 octets; larger keys are only useful with authentication mechanisms beyond this specification.
+section: "3.7"
+topics:
+    - security
+    - snmp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

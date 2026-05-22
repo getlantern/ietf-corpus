@@ -1,0 +1,9 @@
+document: rfc-1757
+kind: security-consideration
+summary: 'The alarmVariable mechanism poses an access-control risk: since SNMP access control is based solely on MIB view membership and not on object values, a manager could specify an OID outside its authorized view in alarmVariable to indirectly read unauthorized objects. The probe must restrict write access to alarmVariable to fully privileged views.'
+section: "5"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

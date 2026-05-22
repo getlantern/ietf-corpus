@@ -1,0 +1,9 @@
+document: rfc-1772
+kind: design-rationale
+summary: A border gateway should not advertise routes to external peers via an exit gateway B until all interior gateways within the AS can route traffic to B. This prevents black holes caused by BGP converging faster than the IGP.
+section: A
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

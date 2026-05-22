@@ -1,0 +1,6 @@
+document: rfc-1832
+kind: design-rationale
+summary: XDR mandates a single byte order (big-endian) rather than supporting both, because supporting two orders would require a higher-level protocol to signal the encoding. The single-order approach allows XDR data written to media (e.g., magnetic tape) to be read by any machine without additional negotiation.
+section: "4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

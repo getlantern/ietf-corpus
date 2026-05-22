@@ -1,0 +1,9 @@
+document: rfc-1771
+kind: interoperability-note
+summary: BGP version negotiation uses repeated OPEN attempts starting at the highest supported version. If an OPEN fails with OPEN Message Error / Unsupported Version Number, the NOTIFICATION data contains a 2-octet unsigned integer indicating the largest version the remote peer supports that is less than the version attempted, allowing rapid convergence to a common version. Future BGP versions must retain the OPEN and NOTIFICATION message formats to support this mechanism.
+section: "7"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

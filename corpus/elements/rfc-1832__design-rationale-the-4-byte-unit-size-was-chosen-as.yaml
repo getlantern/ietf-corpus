@@ -1,0 +1,6 @@
+document: rfc-1832
+kind: design-rationale
+summary: 'The 4-byte unit size was chosen as a compromise: 2-byte units produce smaller data but cause alignment problems on many architectures; 8-byte units align everywhere but bloat data. Four bytes is large enough for most architectures and small enough to keep encoded size reasonable, with the Cray (8-byte aligned) as a known exception.'
+section: "4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

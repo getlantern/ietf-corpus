@@ -1,0 +1,9 @@
+document: rfc-1850
+kind: design-rationale
+summary: The External Link State Database was split from the main ospfLsdbTable because AS External LSAs are typically very numerous and are replicated identically across all non-stub areas; keeping them separate prevents the main LSDB view from being dominated by external entries and simplifies management queries.
+section: "2.1"
+topics:
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
