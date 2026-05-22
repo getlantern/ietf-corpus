@@ -1,0 +1,9 @@
+document: rfc-2460
+kind: normative-requirement
+summary: If reassembly is not complete within 60 seconds of the first fragment's arrival, reassembly must be abandoned and all received fragments discarded. If the first fragment (Fragment Offset=0) was received, an ICMP Time Exceeded -- Fragment Reassembly Time Exceeded message should be sent to the source.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

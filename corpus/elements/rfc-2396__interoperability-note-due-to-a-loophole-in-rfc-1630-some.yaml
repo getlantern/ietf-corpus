@@ -1,0 +1,6 @@
+document: rfc-2396
+kind: interoperability-note
+summary: Due to a loophole in RFC 1630, some parsers allow the same scheme name to appear in a relative URI reference. Validating parsers should mark such references as errors; for backwards compatibility, an implementation may strip the scheme if it matches the base URI and is known to use hier_part syntax.
+section: "5.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

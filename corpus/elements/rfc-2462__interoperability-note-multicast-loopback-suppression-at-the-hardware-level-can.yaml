@@ -1,0 +1,9 @@
+document: rfc-2462
+kind: interoperability-note
+summary: Multicast loopback suppression at the hardware level can prevent DAD from working correctly. Implementations must not discard received packets solely because the source link-layer address matches the receiving interface, as this would discard legitimate DAD messages from nodes sharing the same link-layer address.
+section: "9"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

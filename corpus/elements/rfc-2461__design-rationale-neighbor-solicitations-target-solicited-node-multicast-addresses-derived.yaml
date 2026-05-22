@@ -1,0 +1,10 @@
+document: rfc-2461
+kind: design-rationale
+summary: Neighbor Solicitations target solicited-node multicast addresses derived from the low-order 24 bits of the target's address, spreading address resolution across 2^32 multicast groups. This greatly reduces address-resolution-related interrupts on non-target nodes compared to IPv4 ARP broadcast, and avoids interrupting non-IPv6 machines entirely.
+section: "3.1"
+topics:
+    - ip
+    - v6ops
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

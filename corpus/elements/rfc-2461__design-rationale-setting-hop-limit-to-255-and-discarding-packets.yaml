@@ -1,0 +1,10 @@
+document: rfc-2461
+kind: design-rationale
+summary: Setting Hop Limit to 255 and discarding packets with any other value makes Neighbor Discovery immune to off-link senders that accidentally or intentionally inject ND messages. In IPv4, off-link senders could freely send ICMP Redirects and Router Advertisements. This was chosen as a lightweight, always-available guard requiring no cryptographic infrastructure.
+section: "3.1"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

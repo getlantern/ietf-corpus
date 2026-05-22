@@ -1,0 +1,8 @@
+document: rfc-2460
+kind: state-machine
+summary: 'Type 0 Routing header processing: if Segments Left=0, proceed to next header; if Hdr Ext Len is odd, send ICMP Problem and discard; else swap Destination Address with Address[n - SegmentsLeft], decrement Segments Left and Hop Limit, and resubmit for forwarding. Discard if any address is multicast.'
+section: "4.4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

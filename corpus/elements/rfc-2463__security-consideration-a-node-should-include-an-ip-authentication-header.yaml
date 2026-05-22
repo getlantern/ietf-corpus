@@ -1,0 +1,10 @@
+document: rfc-2463
+kind: security-consideration
+summary: A node SHOULD include an IP Authentication Header when sending ICMPv6 messages if a security association exists for the destination. Received Authentication Headers in ICMP packets MUST be verified, and packets with incorrect authentication MUST be discarded. Administrators SHOULD be able to configure nodes to ignore unauthenticated ICMPv6 messages, but this SHOULD default to allowing unauthenticated messages.
+section: "5.1"
+topics:
+    - security
+    - ipsec
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

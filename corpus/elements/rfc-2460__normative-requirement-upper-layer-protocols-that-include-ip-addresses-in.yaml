@@ -1,0 +1,11 @@
+document: rfc-2460
+kind: normative-requirement
+summary: Upper-layer protocols that include IP addresses in checksum computation must use 128-bit IPv6 addresses in the IPv6 pseudo-header (Source Address, Destination Address, Upper-Layer Packet Length, zero pad, Next Header). UDP checksums are mandatory in IPv6; a zero-result checksum must be sent as 0xFFFF.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - udp
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

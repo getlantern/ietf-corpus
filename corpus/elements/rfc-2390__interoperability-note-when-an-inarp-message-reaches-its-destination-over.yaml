@@ -1,0 +1,8 @@
+document: rfc-2390
+kind: interoperability-note
+summary: When an InARP message reaches its destination over Frame Relay, all hardware addresses in the packet will be invalid; the correct address is found in the Frame Relay frame header. The receiving station should use the address from the frame header as the sender hardware address, even though this violates layering purity.
+section: "7.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
