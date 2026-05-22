@@ -1,0 +1,8 @@
+document: rfc-791
+kind: state-machine
+summary: 'IP reassembly procedure: fragments are keyed by (source, destination, protocol, identification). Received data is placed in a buffer at the position indicated by FO*8. A fragment block bit table tracks received coverage. When MF=0 is received and the entire bit range is set, the datagram is forwarded. A reassembly timer (recommended initial: 15 seconds) releases buffer resources on expiry.'
+section: "3.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,9 @@
+document: rfc-7680
+kind: design-rationale
+summary: One-way loss measurement is preferred over round-trip because Internet paths are often asymmetric, with different router sequences for forward and reverse paths, meaning round-trip measurements conflate the performance of two distinct paths. Additionally, application performance often depends on loss in a single direction.
+section: "1.1"
+topics:
+    - measurement
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

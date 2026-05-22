@@ -1,0 +1,10 @@
+document: rfc-7680
+kind: design-rationale
+summary: Clock synchronization errors and an insufficiently high loss threshold Tmax can cause finite-delay packets to be misclassified as lost. The loss threshold must be set high enough and clocks synchronized well enough that arriving packets are rarely counted as lost; sensitivity of loss-only measurement to clock error is less than for delay measurement.
+section: "2.7"
+topics:
+    - measurement
+    - ip
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

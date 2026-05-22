@@ -1,0 +1,8 @@
+document: rfc-791
+kind: design-rationale
+summary: The header checksum intentionally does not cover the data payload. This allows applications that can tolerate occasional data bit errors but not retransmission delay (e.g., real-time voice) to use IP without being forced into data integrity checking at the network layer.
+section: "3.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

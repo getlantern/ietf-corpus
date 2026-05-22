@@ -1,0 +1,9 @@
+document: rfc-7761
+kind: interoperability-note
+summary: For backward compatibility with RFC 2362, a DR SHOULD be able to accept a Register-Stop(*,G) message (source address all zeros, meaning 'stop all sources for this group'). Such a message SHOULD be treated as a Register-Stop(S,G) for all (S,G) Register state machines not in NoInfo state. RPs SHOULD NOT send Register-Stop(*,G) messages.
+section: 4.4.1
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

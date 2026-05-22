@@ -1,0 +1,9 @@
+document: rfc-7757
+kind: design-rationale
+summary: Two IPv6 nodes both covered by EAMs may attempt to communicate through the translator using IPv4-converted addresses, causing the response packet's source address to differ from the destination the initiator used, breaking bidirectional communication. Hairpinning support resolves this by retranslating packets that would loop back through the translator.
+section: "4.1"
+topics:
+    - v6ops
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

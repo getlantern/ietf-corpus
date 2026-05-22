@@ -1,0 +1,8 @@
+document: rfc-791
+kind: state-machine
+summary: 'IP fragmentation procedure: if TL <= MTU, submit datagram for forwarding; if DF=1, discard; otherwise split on an 8-octet boundary — first fragment gets MF=1 with original FO, remainder gets FO incremented by NFB and inherits original MF. Options not flagged for copying are omitted from the remainder fragment. Procedure recurses on the remainder.'
+section: "3.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

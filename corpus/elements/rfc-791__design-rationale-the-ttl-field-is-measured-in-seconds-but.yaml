@@ -1,0 +1,8 @@
+document: rfc-791
+kind: design-rationale
+summary: The TTL field is measured in seconds but in practice functions as a hop count because every forwarding module must decrement it by at least one regardless of actual processing time. This bounds the maximum datagram lifetime and prevents routing loops from keeping datagrams alive indefinitely.
+section: "3.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

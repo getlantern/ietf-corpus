@@ -1,0 +1,9 @@
+document: rfc-792
+kind: normative-requirement
+summary: If a gateway finds the TTL field is zero it must discard the datagram and may notify the source host via the Time Exceeded message (code 0). If a host cannot complete fragment reassembly within its time limit, it discards the datagram and may send Time Exceeded (code 1); if fragment zero is not available, no Time Exceeded need be sent.
+section: Time Exceeded Message
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

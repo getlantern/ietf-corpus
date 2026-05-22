@@ -1,0 +1,9 @@
+document: rfc-7761
+kind: design-rationale
+summary: 'Register-encapsulation of data packets to the RP is inefficient because encapsulation/decapsulation is expensive and routing all traffic via the RP introduces unnecessary latency. This motivates the two-phase optimization: the RP joins the source-specific tree to receive native traffic (Phase 2, Register-Stop), and last-hop routers may further switch to an SPT for minimum latency (Phase 3).'
+section: "3.2"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

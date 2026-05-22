@@ -1,0 +1,9 @@
+document: rfc-7680
+kind: design-rationale
+summary: A corrupted packet that arrives at the destination is counted as lost rather than received. If the IP header is corrupted, the source or destination address cannot be confirmed, making it impossible to associate the corrupted packet with a specific sent test packet; counting it as received would be inconsistent.
+section: "2.5"
+topics:
+    - measurement
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
