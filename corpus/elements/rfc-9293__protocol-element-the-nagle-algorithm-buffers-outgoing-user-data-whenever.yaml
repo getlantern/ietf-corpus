@@ -1,0 +1,9 @@
+document: rfc-9293
+kind: protocol-element
+summary: The Nagle algorithm buffers outgoing user data whenever SND.NXT > SND.UNA (unacknowledged data exists) until either all outstanding data is acknowledged or a full-sized segment (Eff.snd.MSS bytes) can be sent. This coalesces small writes into fewer, larger segments, reducing network overhead for interactive applications.
+section: 3.7.4
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

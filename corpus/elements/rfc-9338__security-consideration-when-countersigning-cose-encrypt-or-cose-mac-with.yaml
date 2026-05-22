@@ -1,0 +1,11 @@
+document: rfc-9338
+kind: security-consideration
+summary: When countersigning COSE_Encrypt or COSE_Mac with short authentication tags, the security level is limited by the tag length, not the countersignature algorithm. To provide 128-bit security against collision attacks, the authentication tag length MUST be at least 256 bits. A countersignature over AES-MAC provides at most 64 bits, and over AES-CCM-16-64-128 at most 32 bits of integrity protection.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - cbor
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

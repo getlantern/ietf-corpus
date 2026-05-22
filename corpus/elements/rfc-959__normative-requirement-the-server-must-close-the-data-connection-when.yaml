@@ -1,0 +1,9 @@
+document: rfc-959
+kind: normative-requirement
+summary: 'The server MUST close the data connection when: (1) it has completed sending data in a mode requiring close to indicate EOF; (2) it receives ABORT; (3) the port specification is changed by user command; (4) the control connection is closed; or (5) an irrecoverable error occurs. Otherwise closing is a server option signaled by reply 250 or 226 only.'
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

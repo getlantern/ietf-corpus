@@ -1,0 +1,8 @@
+document: rfc-9776
+kind: state-machine
+summary: Router Filter Mode per group transitions between INCLUDE and EXCLUDE. Reception of an IS_EX or TO_EX record transitions the router to EXCLUDE mode, setting the Group Timer to GMI. When the Group Timer expires in EXCLUDE mode, the router transitions back to INCLUDE mode, retaining only sources with running source timers as the new INCLUDE source record state.
+section: 6.2.1
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

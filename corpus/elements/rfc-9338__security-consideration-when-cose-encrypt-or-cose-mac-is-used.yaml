@@ -1,0 +1,10 @@
+document: rfc-9338
+kind: security-consideration
+summary: When COSE_Encrypt or COSE_Mac is used and more than two parties share the key, data origin authentication is not provided. A countersignature on the encrypted data attests only to the existence of encrypted data, not to the plaintext — two different keys can yield successful decryption with different plaintexts, undetectable by the countersignature.
+section: "6"
+topics:
+    - cbor
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,9 @@
+document: rfc-9293
+kind: normative-requirement
+summary: The Window field MUST be treated as an unsigned number (MUST-1); treating it as signed causes large window sizes to appear negative, breaking flow control. Implementations are RECOMMENDED to use 32-bit fields internally for send and receive window sizes and perform all window computations in 32 bits (REC-1).
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

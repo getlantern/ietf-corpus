@@ -1,0 +1,6 @@
+document: rfc-959
+kind: wire-format
+summary: 'Compressed mode uses three encodings: a byte string (0-bit prefix + 7-bit count n, followed by n data bytes); a replicated byte (bits 10 + 6-bit count n + data byte d); and a filler string (bits 11 + 6-bit count n, filler is SP for ASCII/EBCDIC or zero for Image/Local). An all-zero escape byte followed by a Block-mode descriptor byte signals EOR/EOF.'
+section: 3.4.3
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

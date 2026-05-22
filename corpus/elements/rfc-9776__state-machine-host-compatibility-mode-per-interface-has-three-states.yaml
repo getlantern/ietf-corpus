@@ -1,0 +1,8 @@
+document: rfc-9776
+kind: state-machine
+summary: 'Host Compatibility Mode per interface has three states: IGMPv1, IGMPv2, IGMPv3. Receiving an IGMPv1 Query sets the IGMPv1-Querier-Present Timer; receiving an IGMPv2 General Query sets the IGMPv2-Querier-Present Timer. When timers expire, the host steps up to the next newer compatible version, ultimately returning to IGMPv3 mode when both timers have expired.'
+section: 7.2.1
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

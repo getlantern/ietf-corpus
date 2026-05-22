@@ -1,0 +1,10 @@
+document: rfc-9777
+kind: normative-requirement
+summary: Version 2 Multicast Listener Reports MUST be sent to the destination address ff02::16 (all MLDv2-capable multicast routers). Routers MUST silently discard a Report not sent with a valid link-local address, without taking action on packet contents; a Report with the unspecified address is also discarded.
+section: 5.2.14
+rfc2119_level: MUST
+topics:
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

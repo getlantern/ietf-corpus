@@ -1,0 +1,8 @@
+document: rfc-9776
+kind: protocol-element
+summary: 'Per-interface multicast reception state is derived from per-socket state: if any socket for a (interface, multicast-address) pair is in EXCLUDE mode, the interface record is EXCLUDE with source-list = intersection of all EXCLUDE socket lists minus sources in any INCLUDE socket. If all sockets are in INCLUDE mode, the interface record is INCLUDE with source-list = union of all socket source-lists.'
+section: "3.2"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

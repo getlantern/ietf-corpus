@@ -1,0 +1,8 @@
+document: rfc-9777
+kind: design-rationale
+summary: MLDv1 host report suppression (where a listener cancels its pending report upon hearing another listener's report for the same address) was removed in MLDv2. Suppression was incompatible with source-specific reporting, since different hosts may listen to different sources for the same multicast address, making any single report insufficient to represent all listeners' state.
+section: A.2
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

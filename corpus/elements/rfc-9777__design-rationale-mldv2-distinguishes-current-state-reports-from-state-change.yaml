@@ -1,0 +1,8 @@
+document: rfc-9777
+kind: design-rationale
+summary: MLDv2 distinguishes Current-State Reports from State-Change Reports so that routers only send Multicast Address (and Source) Specific Queries in response to state changes, not periodic refreshes. Without this distinction, the fast-leave mechanism would be ineffective if a State-Change Report is lost and only the subsequent Current-State Report is received.
+section: A.1
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

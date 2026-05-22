@@ -1,0 +1,9 @@
+document: rfc-9293
+kind: normative-requirement
+summary: A TCP implementation SHOULD implement the Nagle algorithm (SHLD-7), but there MUST be a way for an application to disable it on an individual connection (MUST-17). A TCP receiver MUST process RST and URG fields of all incoming segments even when the receive window is zero (MUST-66).
+section: 3.7.4
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

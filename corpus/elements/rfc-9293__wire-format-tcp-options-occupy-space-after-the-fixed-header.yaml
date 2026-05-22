@@ -1,0 +1,8 @@
+document: rfc-9293
+kind: wire-format
+summary: TCP options occupy space after the fixed header, sized as (DOffset-5)*32 bits. Each option is either a single kind byte (EOL, NOP) or a kind byte followed by a length byte and data. All options except EOL and NOP MUST have a length field; the length counts the kind and length bytes themselves.
+section: "3.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

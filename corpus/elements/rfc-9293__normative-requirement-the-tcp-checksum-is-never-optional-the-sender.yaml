@@ -1,0 +1,9 @@
+document: rfc-9293
+kind: normative-requirement
+summary: 'The TCP checksum is never optional: the sender MUST generate it (MUST-2) and the receiver MUST check it (MUST-3). The checksum is the 16-bit ones'' complement of the ones'' complement sum of all 16-bit words in the pseudo-header, TCP header, and data, with the checksum field set to zero during computation.'
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,8 @@
+document: rfc-959
+kind: design-rationale
+summary: Stream transfer mode is noted as inherently unreliable because premature connection close cannot be distinguished from normal EOF. Block and Compressed modes embed sufficient in-band framing to detect EOF without closing the connection, allowing the data connection to be reused across multiple file transfers in a session.
+section: "3.3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

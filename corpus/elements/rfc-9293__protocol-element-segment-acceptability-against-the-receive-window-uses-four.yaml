@@ -1,0 +1,8 @@
+document: rfc-9293
+kind: protocol-element
+summary: 'Segment acceptability against the receive window uses four cases: a zero-length segment to a zero window is acceptable only if SEG.SEQ = RCV.NXT; a non-zero-length segment to a zero window is never acceptable; otherwise, a segment is acceptable if any part (SEG.SEQ or SEG.SEQ+SEG.LEN-1) falls within [RCV.NXT, RCV.NXT+RCV.WND).'
+section: "3.4"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

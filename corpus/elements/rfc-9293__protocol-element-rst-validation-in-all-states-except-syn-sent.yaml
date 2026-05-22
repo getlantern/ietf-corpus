@@ -1,0 +1,8 @@
+document: rfc-9293
+kind: protocol-element
+summary: 'RST validation: in all states except SYN-SENT, a RST is valid only if SEG.SEQ falls within the receive window. In SYN-SENT, a RST is acceptable if its ACK field acknowledges the SYN. On valid RST reception: LISTEN — ignore; SYN-RECEIVED after passive OPEN — return to LISTEN; all other states — abort connection and notify user.'
+section: 3.5.3
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

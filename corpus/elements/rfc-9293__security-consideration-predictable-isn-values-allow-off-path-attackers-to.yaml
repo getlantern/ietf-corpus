@@ -1,0 +1,10 @@
+document: rfc-9293
+kind: security-consideration
+summary: Predictable ISN values allow off-path attackers to forge TCP segments or hijack connections without observing traffic. RFC 9293 mandates a cryptographic PRF incorporating connection 4-tuple and a secret key, so that observing one connection's ISN yields no information about ISNs of other connections.
+section: 3.4.1
+topics:
+    - tcp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

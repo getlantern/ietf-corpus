@@ -1,0 +1,8 @@
+document: rfc-9293
+kind: design-rationale
+summary: The three-way handshake is necessary because sequence numbers are not tied to a global clock and different implementations select ISNs independently. Without a third message, the receiver of a SYN cannot determine if it is from a new or old connection incarnation; the 3WHS enables RST-based rejection of old duplicates before data is delivered.
+section: 3.4.1
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

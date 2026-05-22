@@ -1,0 +1,8 @@
+document: rfc-9777
+kind: wire-format
+summary: 'The Maximum Response Code field encodes the Maximum Response Delay in milliseconds: values below 32768 are used directly; values ≥ 32768 use a floating-point encoding with a 1-bit marker, 3-bit exponent, and 12-bit mantissa, yielding Maximum Response Delay = (mant | 0x1000) << (exp+3).'
+section: 5.1.3
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

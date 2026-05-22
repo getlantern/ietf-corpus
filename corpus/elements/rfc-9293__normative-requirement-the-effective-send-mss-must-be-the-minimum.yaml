@@ -1,0 +1,9 @@
+document: rfc-9293
+kind: normative-requirement
+summary: The effective send MSS MUST be the minimum of the send MSS and the largest IP-layer transmission size, computed as Eff.snd.MSS = min(SendMSS+20, MMS_S) − TCPhdrsize − IPoptionsize (MUST-16). The MSS value advertised in the MSS Option must be at most MMS_R − 20 (MUST-67).
+section: 3.7.1
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

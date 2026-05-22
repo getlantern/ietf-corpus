@@ -1,0 +1,8 @@
+document: rfc-9293
+kind: design-rationale
+summary: The quiet time concept requires a host that loses sequence number state to wait one MSL before sending segments, allowing old duplicates to drain. This is now considered largely unnecessary in modern networks because ISN randomization, longer 32-bit sequence spaces relative to faster link speeds using PAWS/timestamps, and reboots often lasting longer than an MSL together make the risk negligible.
+section: 3.4.2
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

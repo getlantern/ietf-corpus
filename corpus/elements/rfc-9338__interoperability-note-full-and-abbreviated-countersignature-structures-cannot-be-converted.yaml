@@ -1,0 +1,9 @@
+document: rfc-9338
+kind: interoperability-note
+summary: 'Full and abbreviated countersignature structures cannot be converted to each other: the signature computation includes a context string that identifies which structure is used (''CounterSignatureV2'' vs ''CounterSignature0V2''), so a converted structure will always fail signature validation.'
+section: "3"
+topics:
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

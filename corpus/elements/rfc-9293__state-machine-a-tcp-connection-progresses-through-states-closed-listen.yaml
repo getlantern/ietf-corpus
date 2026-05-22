@@ -1,0 +1,8 @@
+document: rfc-9293
+kind: state-machine
+summary: A TCP connection progresses through states CLOSED, LISTEN, SYN-SENT, SYN-RECEIVED, ESTABLISHED, FIN-WAIT-1, FIN-WAIT-2, CLOSE-WAIT, CLOSING, LAST-ACK, and TIME-WAIT. Triggers are user calls (OPEN, SEND, RECEIVE, CLOSE, ABORT), incoming segments with SYN/ACK/RST/FIN flags, and timeouts. RST from any synchronized state causes a transition to CLOSED; receiving FIN in ESTABLISHED transitions to CLOSE-WAIT.
+section: 3.3.2
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

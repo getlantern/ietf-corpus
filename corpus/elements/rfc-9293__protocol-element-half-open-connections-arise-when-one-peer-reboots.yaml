@@ -1,0 +1,8 @@
+document: rfc-9293
+kind: protocol-element
+summary: Half-open connections arise when one peer reboots or closes without the other's knowledge. They are detected when a synchronized peer receives an out-of-window SYN, responds with an ACK indicating its expected sequence, and the initiator — seeing an unacceptable acknowledgment — sends RST to abort. The surviving peer then returns to CLOSED.
+section: 3.5.1
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

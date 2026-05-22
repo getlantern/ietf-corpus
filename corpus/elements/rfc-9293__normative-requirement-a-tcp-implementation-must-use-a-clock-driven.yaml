@@ -1,0 +1,11 @@
+document: rfc-9293
+kind: normative-requirement
+summary: A TCP implementation MUST use a clock-driven mechanism for ISN selection (MUST-8) and SHOULD generate ISNs as ISN = M + F(localip, localport, remoteip, remoteport, secretkey), where M is a 4-microsecond timer and F() is a pseudorandom function of the 4-tuple and a secret key (SHLD-1). F() MUST NOT be computable externally (MUST-9).
+section: 3.4.1
+rfc2119_level: MUST
+topics:
+    - tcp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

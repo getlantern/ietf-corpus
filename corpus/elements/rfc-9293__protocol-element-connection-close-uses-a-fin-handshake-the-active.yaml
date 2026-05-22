@@ -1,0 +1,8 @@
+document: rfc-9293
+kind: protocol-element
+summary: 'Connection close uses a FIN handshake: the active closer sends FIN and enters FIN-WAIT-1; receiving ACK advances to FIN-WAIT-2; receiving remote FIN sends ACK and enters TIME-WAIT for 2×MSL before CLOSED. Simultaneous close causes both sides to enter CLOSING after FIN exchange, then TIME-WAIT after receiving the final ACK.'
+section: "3.6"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

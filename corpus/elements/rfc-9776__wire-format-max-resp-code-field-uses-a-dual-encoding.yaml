@@ -1,0 +1,8 @@
+document: rfc-9776
+kind: wire-format
+summary: 'Max Resp Code field uses a dual encoding: values < 128 represent Max Response Time directly in 1/10-second units; values >= 128 encode a floating-point value with a 1-bit indicator, 3-bit exponent, and 4-bit mantissa, yielding Max Response Time = (mant | 0x10) << (exp + 3). The same scheme applies to the QQIC field for Query Interval encoding.'
+section: 4.1.1
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

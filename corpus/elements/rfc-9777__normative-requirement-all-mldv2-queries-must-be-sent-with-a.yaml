@@ -1,0 +1,10 @@
+document: rfc-9777
+kind: normative-requirement
+summary: All MLDv2 Queries MUST be sent with a valid IPv6 link-local source address. A node that receives a Query with the unspecified address (::) or any non-link-local source address MUST silently discard it and SHOULD log a warning.
+section: 5.1.14
+rfc2119_level: MUST
+topics:
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

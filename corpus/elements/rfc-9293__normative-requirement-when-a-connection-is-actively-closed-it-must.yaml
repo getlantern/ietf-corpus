@@ -1,0 +1,9 @@
+document: rfc-9293
+kind: normative-requirement
+summary: When a connection is actively closed, it MUST linger in TIME-WAIT for 2×MSL (Maximum Segment Lifetime) before transitioning to CLOSED (MUST-13). The MSL is defined as 2 minutes. An implementation MAY accept a new SYN from TIME-WAIT to reopen the connection if it assigns a larger ISN than any used on the previous incarnation (MAY-2).
+section: 3.6.1
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

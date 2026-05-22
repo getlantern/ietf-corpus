@@ -1,0 +1,9 @@
+document: rfc-9777
+kind: security-consideration
+summary: Routers MUST silently discard MLDv2 Reports not sent with a valid link-local source address, preventing unidentified nodes from influencing router multicast listening state. Reports from the unspecified address (::) are also discarded by routers, though nodes may use that address before acquiring a link-local address.
+section: 5.2.14
+topics:
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

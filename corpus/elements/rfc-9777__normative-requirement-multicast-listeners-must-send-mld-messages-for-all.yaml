@@ -1,0 +1,10 @@
+document: rfc-9777
+kind: normative-requirement
+summary: Multicast listeners MUST send MLD messages for all multicast addresses except the link-scope all-nodes address (ff02::1) and any multicast address of scope less than 2 (reserved or node-local). Listening to ff02::1 is permanently enabled and never reported via MLD.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

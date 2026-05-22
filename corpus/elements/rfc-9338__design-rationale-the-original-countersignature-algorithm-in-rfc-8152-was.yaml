@@ -1,0 +1,10 @@
+document: rfc-9338
+kind: design-rationale
+summary: The original countersignature algorithm in RFC 8152 was flawed because the cryptographically computed value was not always included in the signature input. For MAC structures this was not initially deemed an issue, but for COSE_Sign1 the security properties were incorrect. The V2 algorithm defined in this document requires inclusion of all cryptographic material across all structures.
+section: "1"
+topics:
+    - cbor
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

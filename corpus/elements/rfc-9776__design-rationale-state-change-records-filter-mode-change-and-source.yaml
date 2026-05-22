@@ -1,0 +1,8 @@
+document: rfc-9776
+kind: design-rationale
+summary: State-Change Records (Filter-Mode-Change and Source-List-Change) were added so that hosts can immediately report changes in multicast reception interest without waiting for the next periodic Query, reducing join and leave latency. Without state-change messages, a host leaving a group would not be reflected until the Group Membership Interval expired.
+section: A.1
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
