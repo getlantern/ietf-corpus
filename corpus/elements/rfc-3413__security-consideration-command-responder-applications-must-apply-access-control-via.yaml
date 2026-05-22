@@ -1,0 +1,9 @@
+document: rfc-3413
+kind: security-consideration
+summary: Command responder applications must apply access control via the isAccessAllowed abstract service interface for each variable binding, using securityModel, securityName, securityLevel, viewType (read or write), and contextName. Access violations return authorizationError for noSuchView/noAccessEntry/noGroupName, genError for otherError, and a report for noSuchContext or unavailable context.
+section: "3.2"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

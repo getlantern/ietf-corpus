@@ -1,0 +1,8 @@
+document: rfc-2920
+kind: design-rationale
+summary: NOOP is included in the group of commands that can only appear last in a pipeline group (alongside EHLO, DATA, QUIT, etc.) so that it can serve as an explicit synchronization point when the client needs to drain all pending responses before proceeding.
+section: "3.1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

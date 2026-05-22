@@ -1,0 +1,8 @@
+document: rfc-3413
+kind: state-machine
+summary: 'Proxy forwarder notification forwarding for Confirmed-Class PDUs: forward to all outgoing targets; if at least one target acknowledges, construct Response-Class PDU using original request-id and variable-bindings (error-status=0, error-index=0) and call returnResponsePdu; if none acknowledges within the longest timeout, halt processing of the original notification.'
+section: 3.5.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

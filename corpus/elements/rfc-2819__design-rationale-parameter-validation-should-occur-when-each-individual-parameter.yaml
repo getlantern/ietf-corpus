@@ -1,0 +1,8 @@
+document: rfc-2819
+kind: design-rationale
+summary: 'Parameter validation should occur when each individual parameter object is set rather than only when EntryStatus is set to valid(1). This provides more specific feedback: if validation is deferred to the status transition, the management station cannot determine which of several parameters triggered a badValue error.'
+section: "3.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

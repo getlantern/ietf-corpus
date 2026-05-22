@@ -1,0 +1,8 @@
+document: rfc-2819
+kind: design-rationale
+summary: The packetMatch trap was removed in RFC 1757 because it could not be throttled, risking disruption of normal network traffic under high match rates. Management stations requiring notification should instead configure a risingAlarm on the channelMatches instance; log-based capture of packetMatch events remains supported.
+section: "5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

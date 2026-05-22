@@ -1,0 +1,9 @@
+document: rfc-2819
+kind: design-rationale
+summary: 'The alarm group uses a hysteresis mechanism: after a rising event fires, no further rising events occur until the value drops below the rising threshold and crosses the falling threshold, and vice versa. This prevents event storms from values oscillating near a threshold.'
+section: "5"
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

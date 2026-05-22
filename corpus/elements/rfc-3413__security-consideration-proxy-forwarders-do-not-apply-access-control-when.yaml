@@ -1,0 +1,9 @@
+document: rfc-3413
+kind: security-consideration
+summary: Proxy forwarders do not apply access control when forwarding notifications; variable-bindings and snmpTrapOID.0 are passed through without checking. The security context (securityModel, securityLevel, securityName) from the outgoing management target governs the forwarded message.
+section: 3.5.2
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

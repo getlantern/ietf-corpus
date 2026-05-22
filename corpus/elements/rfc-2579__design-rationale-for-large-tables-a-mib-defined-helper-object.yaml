@@ -1,0 +1,8 @@
+document: rfc-2579
+kind: design-rationale
+summary: For large tables, a MIB-defined helper object returning an acceptable index is recommended for row creation; for small tables, pseudo-random index selection with retry on inconsistentValue is preferred. This distinction is made because scanning all existing rows to find a free index is highly sub-optimal at scale.
+section: "2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

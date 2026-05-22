@@ -1,0 +1,8 @@
+document: rfc-3412
+kind: design-rationale
+summary: 'The msgID and the PDU request-id serve distinct purposes: the request-id identifies the PDU for applications, while the msgID identifies the message for the engine. The engine needs msgID to identify messages even when PDU decryption (and thus request-id extraction) fails, so no assumption should be made that msgID and request-id are equivalent.'
+section: "6.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

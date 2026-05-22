@@ -1,0 +1,9 @@
+document: rfc-3412
+kind: normative-requirement
+summary: When no application has registered for an incoming request's contextEngineID/pduType combination, the snmpUnknownPDUHandlers counter MUST be incremented, a Response message with that error counter OID/value pair MUST be generated and sent, and the message discarded.
+section: 4.2.2.1
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

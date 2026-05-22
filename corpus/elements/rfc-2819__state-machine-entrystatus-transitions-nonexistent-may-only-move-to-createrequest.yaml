@@ -1,0 +1,8 @@
+document: rfc-2819
+kind: state-machine
+summary: 'EntryStatus transitions: nonExistent may only move to createRequest(2); valid and underCreation may move to valid(1), underCreation(3), or invalid(4); invalid may only remain invalid(4). createRequest is transient — the agent immediately sets it to underCreation(3) upon creation. Managers never observe createRequest state.'
+section: "5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,8 @@
+document: rfc-3413
+kind: state-machine
+summary: 'Notification Originator confirmed-PDU retry machine: (a) send PDU with expectResponse=TRUE and cache target info; (b) if response received within timeout, notification acknowledged and cache deleted; (c) if no response or a failing report indication arrives, retry steps (a)-(c) up to the configured retry count; (d) if retry count exceeded, acknowledgement fails.'
+section: "3.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

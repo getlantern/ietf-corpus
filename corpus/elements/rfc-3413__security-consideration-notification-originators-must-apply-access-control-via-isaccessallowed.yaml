@@ -1,0 +1,9 @@
+document: rfc-3413
+kind: security-consideration
+summary: Notification originators must apply access control (via isAccessAllowed with viewType=notify) to both the full set of variable-bindings and to the snmpTrapOID.0 value before sending to each management target. If access is denied for either check, the notification is not sent to that target.
+section: "3.3"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

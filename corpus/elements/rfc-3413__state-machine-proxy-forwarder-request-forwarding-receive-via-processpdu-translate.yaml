@@ -1,0 +1,8 @@
+document: rfc-3413
+kind: state-machine
+summary: 'Proxy forwarder request forwarding: receive via processPdu → translate management target; if no target found, increment snmpProxyDrops and return error response; construct new PDU with unique request-id; call sendPdu; cache (sendPduHandle, request-id, contextEngineID, contextName, stateReference, management target info); await response or timeout (on timeout, remove cached entry).'
+section: 3.5.1
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

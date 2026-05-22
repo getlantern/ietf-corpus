@@ -1,0 +1,9 @@
+document: rfc-2819
+kind: security-consideration
+summary: 'The alarmVariable object is a security exposure: because SNMP access control cannot restrict which OIDs may be named as alarm targets, a management station with write access to alarmVariable could potentially poll any object on the probe. Mitigation requires granting alarmVariable write access only in views with read access to all probe objects.'
+section: "5"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

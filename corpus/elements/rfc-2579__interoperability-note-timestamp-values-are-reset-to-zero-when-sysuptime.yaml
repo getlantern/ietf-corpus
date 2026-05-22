@@ -1,0 +1,8 @@
+document: rfc-2579
+kind: interoperability-note
+summary: TimeStamp values are reset to zero when sysUpTime is reset. However, after approximately 497 days sysUpTime wraps back to zero without a re-initialization; in this case TimeStamp values do not change, creating potential ambiguity between old and new timestamps.
+section: "2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

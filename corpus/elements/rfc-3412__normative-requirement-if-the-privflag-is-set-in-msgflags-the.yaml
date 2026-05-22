@@ -1,0 +1,10 @@
+document: rfc-3412
+kind: normative-requirement
+summary: If the privFlag is set in msgFlags, the authFlag MUST also be set to one, as the SNMP architecture requires authentication when privacy is selected. A message with authFlag=0 and privFlag=1 is invalid; the snmpInvalidMsgs counter is incremented and the message discarded.
+section: "6.4"
+rfc2119_level: MUST
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,8 @@
+document: rfc-2819
+kind: design-rationale
+summary: 'The hostTimeTable is indexed by creation order (1 to table size) rather than MAC address, enabling two optimizations: predictable indexes allow efficient PDU packing for fast bulk downloads, and new hosts are always appended at the end, allowing a management station to detect additions without re-scanning the table.'
+section: "5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

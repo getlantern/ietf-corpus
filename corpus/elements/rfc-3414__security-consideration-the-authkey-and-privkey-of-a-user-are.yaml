@@ -1,0 +1,10 @@
+document: rfc-3414
+kind: security-consideration
+summary: The authKey and privKey of a user are not accessible via SNMP (MAX-ACCESS not-accessible in the MIB), preventing network-based key extraction. Remote key updates are only possible via the KeyChange/OwnKeyChange mechanism, which uses the existing key as a one-way function input.
+section: "2.1"
+topics:
+    - snmp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

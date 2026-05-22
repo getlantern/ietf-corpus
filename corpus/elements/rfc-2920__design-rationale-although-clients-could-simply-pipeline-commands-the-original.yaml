@@ -1,0 +1,8 @@
+document: rfc-2920
+kind: design-rationale
+summary: Although clients could simply pipeline commands, the original RFC 821 did not explicitly require servers to support pipelining, resulting in a non-trivial number of deployed servers that cannot handle it. The extension mechanism allows clients to pipeline only against servers that have declared capability, avoiding interoperability failures.
+section: "1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

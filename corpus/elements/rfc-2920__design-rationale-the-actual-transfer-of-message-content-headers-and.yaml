@@ -1,0 +1,8 @@
+document: rfc-2920
+kind: design-rationale
+summary: The actual transfer of message content (headers and body) is explicitly allowed to be the first 'command' in a pipeline group, permitting a RSET/MAIL FROM sequence for a new message to be batched together with the final dot-termination of the previous message, maximizing throughput.
+section: "3.1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

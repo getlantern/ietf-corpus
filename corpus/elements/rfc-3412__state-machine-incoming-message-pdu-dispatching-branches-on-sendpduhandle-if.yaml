@@ -1,0 +1,8 @@
+document: rfc-3412
+kind: state-machine
+summary: 'Incoming message PDU dispatching branches on sendPduHandle: if <none>, the PDU is a request or notification dispatched via processPdu() to the registered application; if not <none>, it is a response matched by sendPduHandle and dispatched via processResponsePdu(). Unmatched responses increment snmpUnknownPDUHandlers.'
+section: 4.2.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

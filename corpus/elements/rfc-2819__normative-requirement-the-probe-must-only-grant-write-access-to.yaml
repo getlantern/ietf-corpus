@@ -1,0 +1,10 @@
+document: rfc-2819
+kind: normative-requirement
+summary: The probe MUST only grant write access to alarmVariable in MIB views that have read access to all objects on the probe. During a set, if the variable is not available in the selected view, a badValue error MUST be returned.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
