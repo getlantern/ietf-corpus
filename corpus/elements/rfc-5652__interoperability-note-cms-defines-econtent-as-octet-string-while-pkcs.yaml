@@ -1,0 +1,10 @@
+document: rfc-5652
+kind: interoperability-note
+summary: 'CMS defines eContent as OCTET STRING while PKCS #7 defines it as ANY. For non-Data content types (e.g., RFC 2634 signed receipts), the message digest is computed differently: CMS digests the entire OCTET STRING value, while PKCS #7 digests only the value octets of the DER-encoded inner type, making the two formats incompatible for non-Data content.'
+section: 5.2.1
+topics:
+    - crypto
+    - security
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

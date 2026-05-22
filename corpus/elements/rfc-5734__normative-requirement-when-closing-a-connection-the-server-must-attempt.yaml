@@ -1,0 +1,10 @@
+document: rfc-5734
+kind: normative-requirement
+summary: When closing a connection, the server MUST attempt to initiate an exchange of close_notify alerts with the client before closing. Servers unprepared to receive more data MAY close after sending close_notify, producing an incomplete close on the client side.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - tls
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

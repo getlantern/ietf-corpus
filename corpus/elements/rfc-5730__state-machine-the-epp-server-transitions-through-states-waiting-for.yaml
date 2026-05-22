@@ -1,0 +1,9 @@
+document: rfc-5730
+kind: state-machine
+summary: 'The EPP server transitions through states: Waiting for Client → Prepare Greeting (on connection or <hello>) → Waiting for Client Authentication → Processing <login> → Waiting for Command or <hello> → Processing Command → Prepare Response. Failed authentication returns a 2501 response and closes the connection; timeout from any waiting state ends the session.'
+section: "2"
+topics:
+    - security
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

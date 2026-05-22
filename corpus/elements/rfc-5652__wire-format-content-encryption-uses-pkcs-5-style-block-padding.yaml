@@ -1,0 +1,9 @@
+document: rfc-5652
+kind: wire-format
+summary: 'Content encryption uses PKCS#5-style block padding: trailing octets of value k-(lth mod k) are appended to make the plaintext length a multiple of block size k. All input is padded (even input already a multiple of k receives k padding bytes). Valid only when k < 256.'
+section: "6.3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

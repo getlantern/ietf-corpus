@@ -1,0 +1,9 @@
+document: rfc-5652
+kind: security-consideration
+summary: The most critical security invariant in CMS is that recipients must never trust cryptographic values supplied by the originator. Digest and MAC values MUST be independently recomputed by the recipient and compared; failure to do so allows an attacker to substitute arbitrary content while presenting a valid-looking structure.
+section: "14"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,10 @@
+document: rfc-5652
+kind: normative-requirement
+summary: When signedAttrs is present it MUST be DER encoded even if the rest of the structure is BER, and MUST contain at minimum a content-type attribute and a message-digest attribute. The signedAttrs field MUST be present whenever the encapsulated content type is not id-data.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

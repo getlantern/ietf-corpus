@@ -1,0 +1,8 @@
+document: rfc-5731
+kind: design-rationale
+summary: 'The <renew> command requires the client to supply <domain:curExpDate> (the current expiration date) as a concurrency guard: repeated <renew> commands are idempotent-safe because the server can detect and reject attempts to renew a domain whose expiration date has already been extended by a prior renewal.'
+section: 3.2.3
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

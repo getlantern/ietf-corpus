@@ -1,0 +1,8 @@
+document: rfc-5734
+kind: design-rationale
+summary: Command pipelining (sending multiple commands before receiving a response to the first) is possible with TCP transport and may yield slight performance gains, but EPP prohibits batch processing (multiple commands in a single data unit) and the core protocol remains single-command/single-response.
+section: "3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

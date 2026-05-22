@@ -1,0 +1,6 @@
+document: rfc-5730
+kind: design-rationale
+summary: All EPP commands are designed to be idempotent so that executing a command more than once has the same net effect as successfully executing it once. This ensures safety when retrying after response-delivery failure, since command success or failure MUST NOT be assumed if no response is returned or if a returned response is malformed.
+section: "2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

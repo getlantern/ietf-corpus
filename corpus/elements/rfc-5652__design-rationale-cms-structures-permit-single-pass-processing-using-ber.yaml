@@ -1,0 +1,9 @@
+document: rfc-5652
+kind: design-rationale
+summary: CMS structures permit single-pass processing using BER indefinite-length encoding, which is critical for large or streamed content. DER is required only for signed attributes and authenticated attributes because recipients must be able to verify signatures even when unrecognized attributes are present, requiring deterministic encoding.
+section: "2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

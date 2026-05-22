@@ -1,0 +1,9 @@
+document: rfc-5731
+kind: normative-requirement
+summary: A client MUST NOT alter status values set by the server. 'ok' status MUST NOT be combined with any other status. The five pending statuses MUST NOT be combined with each other. Each pending status MUST NOT be combined with its corresponding prohibit status (e.g., 'pendingDelete' MUST NOT be combined with 'clientDeleteProhibited' or 'serverDeleteProhibited').
+section: "2.3"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
