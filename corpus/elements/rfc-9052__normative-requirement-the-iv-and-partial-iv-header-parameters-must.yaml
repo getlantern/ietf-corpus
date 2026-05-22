@@ -1,0 +1,10 @@
+document: rfc-9052
+kind: normative-requirement
+summary: The 'IV' and 'Partial IV' header parameters MUST NOT both be present in the same security layer. When Partial IV is used, the message IV is computed by left-padding the Partial IV with zeros to the full IV length, then XORing with the Context IV.
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

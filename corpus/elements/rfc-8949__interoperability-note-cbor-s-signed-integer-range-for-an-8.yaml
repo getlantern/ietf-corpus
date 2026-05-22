@@ -1,0 +1,8 @@
+document: rfc-8949
+kind: interoperability-note
+summary: CBOR's signed integer range for an 8-byte encoding is -2^64..2^64-1 (using the major type as sign bit), which is wider than the typical platform int64_t range (-2^63..2^63-1). Protocols using numbers near these boundaries should define handling for values outside the common platform range.
+section: "5.5"
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,10 @@
+document: rfc-9052
+kind: normative-requirement
+summary: The message content MUST NOT be used if AEAD decryption does not validate. Most AEAD algorithms logically return plaintext only upon successful authentication; implementations must enforce this even when the underlying cryptographic library may not.
+section: "8.3"
+rfc2119_level: MUST NOT
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

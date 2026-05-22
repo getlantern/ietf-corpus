@@ -1,0 +1,9 @@
+document: rfc-907
+kind: design-rationale
+summary: Datagrams incur two satellite hops (~0.6s) because channel time is allocated per message via reservation scheduling. Streams incur only one hop (~0.3s) because a recurring channel allocation is pre-established at stream setup time, eliminating the need for per-message reservation. This trade-off imposes strict message-size and interarrival-time discipline on stream senders.
+section: "2"
+topics:
+    - realtime
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

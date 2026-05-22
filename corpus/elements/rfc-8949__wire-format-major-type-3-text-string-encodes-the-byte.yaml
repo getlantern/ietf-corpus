@@ -1,0 +1,8 @@
+document: rfc-8949
+kind: wire-format
+summary: Major type 3 (text string) encodes the byte count in the argument followed by UTF-8 bytes (RFC 3629); Unicode characters are never escaped, so newline U+000A is always byte 0x0a. A string with invalid UTF-8 is well-formed but not valid.
+section: "3.1"
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

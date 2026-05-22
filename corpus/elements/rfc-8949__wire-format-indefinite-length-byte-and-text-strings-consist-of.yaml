@@ -1,0 +1,8 @@
+document: rfc-8949
+kind: wire-format
+summary: Indefinite-length byte and text strings consist of a header byte (major type with additional info 31), followed by zero or more definite-length string chunks of the same major type, terminated by 0xFF ('break'). Chunks must not be indefinite-length, and UTF-8 scalar values must not be split across chunk boundaries.
+section: 3.2.3
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

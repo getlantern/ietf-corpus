@@ -1,0 +1,9 @@
+document: rfc-9052
+kind: wire-format
+summary: 'All COSE message structures are CBOR arrays whose first two fields are: (1) the protected header parameters encoded as a bstr (CBOR-encoded map wrapped in a byte string), and (2) the unprotected header parameters as a CBOR map. An empty protected header MUST be encoded as a zero-length bstr, not a zero-length map (h''a0'').'
+section: "3"
+topics:
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

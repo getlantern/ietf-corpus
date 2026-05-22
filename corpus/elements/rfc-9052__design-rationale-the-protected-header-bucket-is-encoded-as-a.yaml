@@ -1,0 +1,9 @@
+document: rfc-9052
+kind: design-rationale
+summary: The protected header bucket is encoded as a bstr (CBOR byte string wrapping the encoded map) rather than an inline map. This ensures the protected bytes are transported without alteration and avoids requiring canonical map encoding by all parties for cryptographic computation.
+section: "3"
+topics:
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

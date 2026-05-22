@@ -1,0 +1,10 @@
+document: rfc-9052
+kind: design-rationale
+summary: COSE uses native CBOR binary (bstr) encodings rather than base64url encodings as used in JOSE/JSON. This exploits CBOR's native binary data support, reducing message size and code complexity, which is important for the constrained IoT devices COSE targets.
+section: "1.3"
+topics:
+    - cbor
+    - crypto
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

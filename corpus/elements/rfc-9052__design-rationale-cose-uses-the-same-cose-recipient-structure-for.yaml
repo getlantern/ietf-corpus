@@ -1,0 +1,10 @@
+document: rfc-9052
+kind: design-rationale
+summary: COSE uses the same COSE_recipient structure for both content encryption layers and key encryption layers, unlike CMS and JWE which use separate structures. This enables common processing code and supports recursive nesting for complex multi-party key distribution (Appendix B).
+section: "5.1"
+topics:
+    - cbor
+    - crypto
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

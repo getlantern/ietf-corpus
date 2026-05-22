@@ -1,0 +1,6 @@
+document: rfc-907
+kind: wire-format
+summary: 'The datagram message header occupies words 0–5: word 0 contains message class, loopback bit, GOPRI, force-channel flag, and 8-bit message number; word 1 is header checksum (negation of 2''s-complement sum of words 0–5); word 2 is piggybacked A/R; word 3 carries data type, Internet/Local flag, discard flag, TTL, priority, reliability, and reliability length; words 4–5 carry 16-bit destination and source host addresses. Words 6–N hold up to 16,384 bits (1024 words) of user data.'
+section: "3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

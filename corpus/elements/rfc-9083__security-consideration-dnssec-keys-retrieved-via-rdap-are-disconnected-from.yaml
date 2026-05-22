@@ -1,0 +1,10 @@
+document: rfc-9083
+kind: security-consideration
+summary: DNSSEC keys retrieved via RDAP are disconnected from their containing PKI because the RRSIG DS record from the parent zone is not conveyed. These keys are not generally expected to be trusted without additional information; the HTTPS channel protecting RDAP is not authorized to certify DNSSEC key validity.
+section: "11"
+topics:
+    - security
+    - dns
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

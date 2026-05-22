@@ -1,0 +1,9 @@
+document: rfc-8949
+kind: normative-requirement
+summary: The first protocol layer that processes the semantics of an invalid CBOR item MUST either replace it with an error marker and continue, or issue an error and stop processing. The protocol MUST specify which option applies for each kind of invalid item. Layers that do not process semantics MUST forward invalid data as-is.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

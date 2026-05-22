@@ -1,0 +1,8 @@
+document: rfc-8949
+kind: design-rationale
+summary: Preferred serialization always uses the shortest argument encoding and the shortest IEEE 754 floating-point format that preserves the value (e.g., 5.5 → 0xf94580 as binary16). This is not mandatory by default but is the baseline for deterministic encoding and minimizes encoded size.
+section: "4.1"
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

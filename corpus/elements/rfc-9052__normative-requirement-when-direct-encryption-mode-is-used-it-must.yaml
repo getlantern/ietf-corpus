@@ -1,0 +1,10 @@
+document: rfc-9052
+kind: normative-requirement
+summary: When direct-encryption mode is used, it MUST be the only recipient mode used on the message. The COSE_Recipient 'protected' field MUST be a zero-length byte string (unless used in key computation), 'ciphertext' MUST be zero-length, and 'recipients' MUST be absent.
+section: 8.5.1
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

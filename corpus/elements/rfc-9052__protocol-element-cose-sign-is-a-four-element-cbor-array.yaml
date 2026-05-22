@@ -1,0 +1,9 @@
+document: rfc-9052
+kind: protocol-element
+summary: COSE_Sign is a four-element CBOR array [protected, unprotected, payload (bstr/nil), signatures ([+COSE_Signature])]. COSE_Signature is a three-element array [protected, unprotected, signature (bstr)]. The two structures cannot be converted to each other because the signature computation encodes which structure type is in use.
+section: "4.1"
+topics:
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

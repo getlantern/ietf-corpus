@@ -1,0 +1,9 @@
+document: rfc-9052
+kind: wire-format
+summary: 'The Enc_structure is the canonical AAD input for AEAD encryption, a CBOR array: [context (''Encrypt'', ''Encrypt0'', ''Enc_Recipient'', ''Mac_Recipient'', or ''Rec_Recipient''), protected (bstr), external_aad (bstr)]. The AAD passed to the AEAD algorithm is the CBOR encoding of this structure.'
+section: "5.3"
+topics:
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

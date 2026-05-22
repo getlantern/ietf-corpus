@@ -1,0 +1,6 @@
+document: rfc-903
+kind: design-rationale
+summary: RARP is specified as a separate protocol at the data-link level with its own Ethertype, rather than piggybacking on ARP, because ARP and RARP are fundamentally different operations not supported equally by all hosts. This prevents existing ARP servers from being confused by RARP packets and makes RARP a general hardware-to-protocol address mapping facility.
+section: III
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
