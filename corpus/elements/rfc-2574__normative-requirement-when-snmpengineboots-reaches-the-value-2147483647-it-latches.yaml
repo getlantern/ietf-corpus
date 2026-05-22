@@ -1,0 +1,10 @@
+document: rfc-2574
+kind: normative-requirement
+summary: When snmpEngineBoots reaches the value 2147483647 it latches at that value permanently, causing all subsequent authenticated messages to fail with notInTimeWindow. Manual physical reconfiguration (new snmpEngineID or new secrets for all users) is REQUIRED to reset such an engine.
+section: 2.2.2
+rfc2119_level: REQUIRED
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

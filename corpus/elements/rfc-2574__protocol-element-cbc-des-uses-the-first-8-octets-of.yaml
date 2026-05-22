@@ -1,0 +1,10 @@
+document: rfc-2574
+kind: protocol-element
+summary: CBC-DES uses the first 8 octets of the 16-octet localized privKey as the DES encryption key (with parity bits adjusted) and the last 8 octets as the pre-IV. The actual IV is the XOR of the pre-IV with an 8-octet salt (msgPrivacyParameters), which is a monotonically increasing 64-bit integer.
+section: 8.1.1.1
+topics:
+    - snmp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

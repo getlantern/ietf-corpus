@@ -1,0 +1,8 @@
+document: rfc-2613
+kind: design-rationale
+summary: smonPrioStatsTable has no garbage-collection mechanism because there are at most eight rows per statistical set (one per user_priority value 0..7), making the memory footprint small enough that collection management overhead is not justified.
+section: "5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

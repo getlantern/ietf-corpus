@@ -1,0 +1,9 @@
+document: rfc-2572
+kind: state-machine
+summary: For incoming SNMPv3 messages, v3MP determines securityLevel from msgFlags bits, calls the Security Model's processIncomingMsg, then classifies the pduType as Response Class (validate cached state, discard on mismatch), Internal Class (Report PDU handling with optional cached state retention), Confirmed Class (cache state), or Unconfirmed Class (return SUCCESS immediately).
+section: "7.2"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,8 @@
+document: rfc-2613
+kind: design-rationale
+summary: portCopyTable rows have no OwnerString because multiple rows may be part of the same portCopy operation (N:1 or N:M modes); ownership granularity at the row level would not map cleanly to the multi-row operations required for these modes.
+section: "3.5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

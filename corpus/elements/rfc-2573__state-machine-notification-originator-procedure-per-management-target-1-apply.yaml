@@ -1,0 +1,8 @@
+document: rfc-2573
+kind: state-machine
+summary: 'Notification originator procedure per management target: (1) apply filtering; (2) retrieve variable-bindings using isAccessAllowed; (3) check NOTIFICATION-TYPE OID via isAccessAllowed; (4) construct PDU; (5) for Unconfirmed-Class call sendPdu with expectResponse=FALSE; (6) for Confirmed-Class call sendPdu with expectResponse=TRUE, cache target info, retry up to retry count on timeout or report indication.'
+section: "3.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,8 @@
+document: rfc-2572
+kind: state-machine
+summary: 'Incoming message processing follows a two-phase dispatch: (1) the Dispatcher passes the message to the version-specific MP Model via prepareDataElements; (2) if sendPduHandle is <none> the PDU is dispatched as a request/notification via processPdu, otherwise it is dispatched as a response via processResponsePdu using the cached sendPduHandle.'
+section: "4.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

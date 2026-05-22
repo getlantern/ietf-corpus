@@ -1,0 +1,9 @@
+document: rfc-2574
+kind: design-rationale
+summary: The snmpEngineBoots/snmpEngineTime pair avoids requiring a persistent real-time clock that ticks while the engine is powered off. On each reboot, snmpEngineBoots is incremented in non-volatile storage and snmpEngineTime resets to zero, providing a monotonically non-decreasing time indicator without requiring battery-backed clocks.
+section: 2.2.2
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

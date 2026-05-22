@@ -1,0 +1,9 @@
+document: rfc-2573
+kind: security-consideration
+summary: The security of operations depends on the security parameters configured in the SNMP-TARGET-MIB and SNMP-NOTIFY-MIB. Misconfiguration of these MIBs (e.g., using noAuthNoPriv security level for notifications) could result in disclosure of sensitive management information. Access to MIB objects controlling target and notification configuration should itself be protected by appropriate access control.
+section: "10"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

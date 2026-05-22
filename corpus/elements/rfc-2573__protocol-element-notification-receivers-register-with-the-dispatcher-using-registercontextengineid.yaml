@@ -1,0 +1,8 @@
+document: rfc-2573
+kind: protocol-element
+summary: Notification receivers register with the Dispatcher using registerContextEngineID with a wildcard contextEngineID, so notifications are delivered regardless of the contextEngineID in the message. For Confirmed-Class PDUs received, the receiver must construct a Response-Class PDU (preserving request-id and variable-bindings, setting error-status and error-index to 0) and call returnResponsePdu.
+section: "3.4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

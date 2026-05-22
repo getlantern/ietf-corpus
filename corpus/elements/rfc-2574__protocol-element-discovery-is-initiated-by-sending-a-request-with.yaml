@@ -1,0 +1,9 @@
+document: rfc-2574
+kind: protocol-element
+summary: Discovery is initiated by sending a Request with securityLevel noAuthNoPriv, zero-length msgUserName, and zero-length msgAuthoritativeEngineID. The authoritative engine replies with a Report PDU containing its snmpEngineID in msgAuthoritativeEngineID and the usmStatsUnknownEngineIDs counter. Time synchronization follows via a second authenticated Request with boots/time set to zero.
+section: "4"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

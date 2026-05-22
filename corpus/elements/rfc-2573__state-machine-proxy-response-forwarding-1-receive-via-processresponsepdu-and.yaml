@@ -1,0 +1,8 @@
+document: rfc-2573
+kind: state-machine
+summary: 'Proxy response forwarding: (1) receive via processResponsePdu and locate cache entry by matching sendPduHandle, contextEngineID, contextName, outgoing target, and request-id from received PDU; (2) extract and remove cache entry; (3) construct new Response PDU with original request-id from cache; (4) call returnResponsePdu with original incoming management target parameters.'
+section: 3.5.1.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

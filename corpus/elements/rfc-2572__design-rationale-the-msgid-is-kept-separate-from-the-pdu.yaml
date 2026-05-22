@@ -1,0 +1,8 @@
+document: rfc-2572
+kind: design-rationale
+summary: The msgID is kept separate from the PDU request-id because the engine must be able to identify the message even if decryption of the PDU (and thus the request-id) fails. No assumption should be made that msgID and request-id are equivalent.
+section: "6.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

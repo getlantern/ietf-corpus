@@ -1,0 +1,9 @@
+document: rfc-2573
+kind: state-machine
+summary: 'Command responder processing: (1) extract operation type; (2) extract request-id; (3) extract PDU-type-specific parameters; (4) extract variable-bindings; (5) call isAccessAllowed for each object instance — on noSuchView/noAccessEntry/noGroupName return authorizationError, on otherError return genError, on noSuchContext increment snmpUnknownContexts, on unavailable context increment snmpUnavailableContexts; (6) call returnResponsePdu.'
+section: "3.2"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

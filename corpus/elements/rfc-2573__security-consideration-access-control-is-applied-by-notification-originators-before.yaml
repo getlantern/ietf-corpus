@@ -1,0 +1,9 @@
+document: rfc-2573
+kind: security-consideration
+summary: 'Access control is applied by notification originators before sending notifications: the isAccessAllowed abstract service interface is called to verify that both the variable-bindings and the NOTIFICATION-TYPE OID are within the authorized MIB view for each management target. If access is denied, the notification is not sent to that target. In proxy notification forwarding, no access control is applied to the forwarded variable-bindings.'
+section: "3.3"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

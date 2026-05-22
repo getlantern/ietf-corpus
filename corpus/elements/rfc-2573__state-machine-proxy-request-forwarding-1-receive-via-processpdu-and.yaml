@@ -1,0 +1,8 @@
+document: rfc-2573
+kind: state-machine
+summary: 'Proxy request forwarding: (1) receive via processPdu and translate management target; (2) if no outgoing target found, increment snmpProxyDrops and return error via returnResponsePdu; (3) construct new PDU with unique request-id; (4) call sendPdu; (5) cache sendPduHandle, original request-id, contextEngineID, contextName, stateReference, and management target info; (6) wait for response or timeout.'
+section: 3.5.1.1
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,9 @@
+document: rfc-2572
+kind: state-machine
+summary: For outgoing SNMPv3 messages, v3MP generates a unique msgID, constructs msgGlobalData (msgVersion=3, msgFlags per securityLevel and PDU class, msgSecurityModel), wraps the PDU in a scopedPDU, then calls generateResponseMsg (for Response/Internal class) or generateRequestMsg (for Confirmed/Notification class) on the Security Model.
+section: "7.1"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
