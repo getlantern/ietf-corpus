@@ -52,7 +52,17 @@ const (
 	httpTimeout     = 90 * time.Second
 	textCapBytes    = 90_000
 	textMinBytes    = 800
-	defaultParallel = 3
+	// parallel=1 is the safe default after the May 2026 incident where
+	// 3 concurrent claude calls + competing user `claude --continue`
+	// sessions on the same machine burned through subscription quota,
+	// producing 2,729 failures and 32 successes in 17 hours. Increase
+	// only when you know the machine isn't running other claude work.
+	defaultParallel = 1
+	// Retry policy for transient `claude -p` failures (rate limit,
+	// quota recovery, network blip). 3 attempts with quadratic backoff
+	// (10s, 40s, 90s) gives the model time to recover without piling
+	// retries onto a wedged subscription.
+	claudeMaxAttempts = 3
 )
 
 func main() {
@@ -64,6 +74,8 @@ func main() {
 		extractCLI(os.Args[2:])
 	case "extract-all":
 		extractAllCLI(os.Args[2:])
+	case "selftest":
+		selftestCLI(os.Args[2:])
 	default:
 		usage()
 	}
@@ -72,7 +84,8 @@ func main() {
 func usage() {
 	fmt.Fprint(os.Stderr, `usage:
   ietf-elements extract --id rfc-9000 [--corpus PATH] [--force]
-  ietf-elements extract-all [--corpus PATH] [--parallel N] [--max N] [--status STATUS] [--area AREA] [--wg WG] [--force]
+  ietf-elements extract-all [--corpus PATH] [--parallel N] [--max N] [--status STATUS] [--area AREA] [--wg WG] [--max-per-hour N] [--force]
+  ietf-elements selftest [--corpus PATH] [--ids id1,id2,id3]
 `)
 	os.Exit(2)
 }
@@ -107,12 +120,14 @@ func extractCLI(args []string) {
 func extractAllCLI(args []string) {
 	fs := flag.NewFlagSet("extract-all", flag.ExitOnError)
 	corpus := fs.String("corpus", ".", "corpus root")
-	parallel := fs.Int("parallel", defaultParallel, "concurrent extractions")
+	parallel := fs.Int("parallel", defaultParallel, "concurrent extractions (default 1 — see runClaude doc)")
 	maxN := fs.Int("max", 0, "max documents to process (0 = no limit)")
 	status := fs.String("status", "", "filter: only RFCs with this current_status (e.g. 'PROPOSED STANDARD', 'INTERNET STANDARD', 'BEST CURRENT PRACTICE')")
 	area := fs.String("area", "", "filter: only RFCs in this area (sec, tsv, art, ...)")
 	wg := fs.String("wg", "", "filter: only RFCs from this working group acronym")
 	minYear := fs.Int("min-year", 0, "filter: only RFCs published in or after this year")
+	maxPerHour := fs.Int("max-per-hour", 0, "cap extractions to this many per rolling hour (0 = no cap). Useful as a quota-burn guard when running unattended.")
+	failsExitThreshold := fs.Int("max-consecutive-fails", 10, "after this many back-to-back claude failures, abort the whole sweep. 0 disables — but be careful, the May 2026 incident burned 17 hours unattended at that setting.")
 	force := fs.Bool("force", false, "re-extract even if elements already exist")
 	_ = fs.Parse(args)
 	root, err := filepath.Abs(*corpus)
@@ -132,20 +147,30 @@ func extractAllCLI(args []string) {
 	if *maxN > 0 && len(cands) > *maxN {
 		cands = cands[:*maxN]
 	}
-	log.Printf("processing %d RFCs with --parallel=%d", len(cands), *parallel)
+	log.Printf("processing %d RFCs with --parallel=%d --max-per-hour=%d", len(cands), *parallel, *maxPerHour)
+
+	rl := newRateLimiter(*maxPerHour)
+	abortCtx, abort := context.WithCancel(context.Background())
+	defer abort()
 
 	sem := make(chan struct{}, *parallel)
 	var wg2 sync.WaitGroup
 	var mu sync.Mutex
-	var ok, fail, totalElements int
+	var ok, fail, totalElements, consecutiveFails int
 
 	for i, id := range cands {
+		if abortCtx.Err() != nil {
+			break
+		}
 		wg2.Add(1)
 		sem <- struct{}{}
 		go func(idx int, id string) {
 			defer wg2.Done()
 			defer func() { <-sem }()
-			ctx, cancel := context.WithTimeout(context.Background(), 10*time.Minute)
+			if err := rl.wait(abortCtx); err != nil {
+				return
+			}
+			ctx, cancel := context.WithTimeout(abortCtx, 30*time.Minute) // generous: 3 attempts × 6 min + backoff
 			defer cancel()
 			n, err := extract(ctx, root, id, false)
 			mu.Lock()
@@ -153,8 +178,14 @@ func extractAllCLI(args []string) {
 			if err != nil {
 				log.Printf("[%d/%d] FAIL %s: %v", idx+1, len(cands), id, err)
 				fail++
+				consecutiveFails++
+				if *failsExitThreshold > 0 && consecutiveFails >= *failsExitThreshold {
+					log.Printf("ABORT: %d consecutive failures hit the --max-consecutive-fails=%d threshold; tearing down", consecutiveFails, *failsExitThreshold)
+					abort()
+				}
 				return
 			}
+			consecutiveFails = 0
 			if n > 0 {
 				log.Printf("[%d/%d] ok   %s: %d elements", idx+1, len(cands), id, n)
 				ok++
@@ -166,6 +197,102 @@ func extractAllCLI(args []string) {
 	}
 	wg2.Wait()
 	log.Printf("done: %d ok, %d failed, %d total elements", ok, fail, totalElements)
+	if abortCtx.Err() != nil {
+		os.Exit(1)
+	}
+}
+
+// ── rate limiter ──
+
+// rateLimiter caps extractions to maxPerHour in a rolling 1-hour window.
+// Pass maxPerHour=0 to disable.
+type rateLimiter struct {
+	mu         sync.Mutex
+	hits       []time.Time
+	maxPerHour int
+}
+
+func newRateLimiter(maxPerHour int) *rateLimiter {
+	return &rateLimiter{maxPerHour: maxPerHour}
+}
+
+func (rl *rateLimiter) wait(ctx context.Context) error {
+	if rl.maxPerHour <= 0 {
+		return nil
+	}
+	for {
+		rl.mu.Lock()
+		// GC entries older than 1 hour.
+		cutoff := time.Now().Add(-time.Hour)
+		keep := rl.hits[:0]
+		for _, t := range rl.hits {
+			if t.After(cutoff) {
+				keep = append(keep, t)
+			}
+		}
+		rl.hits = keep
+		if len(rl.hits) < rl.maxPerHour {
+			rl.hits = append(rl.hits, time.Now())
+			rl.mu.Unlock()
+			return nil
+		}
+		// Sleep until the oldest hit ages out of the window.
+		oldest := rl.hits[0]
+		rl.mu.Unlock()
+		wait := time.Until(oldest.Add(time.Hour + time.Second))
+		if wait < 0 {
+			wait = time.Second
+		}
+		log.Printf("rate-limit: %d/%d in last hour; sleeping %s", len(rl.hits), rl.maxPerHour, wait.Round(time.Second))
+		select {
+		case <-time.After(wait):
+		case <-ctx.Done():
+			return ctx.Err()
+		}
+	}
+}
+
+// selftestCLI runs the extractor against a small set of canary RFCs
+// to verify everything is working before kicking off a long sweep.
+// Exits 0 if all extractions succeed, non-zero if any fail. Designed
+// to be the first thing run after deploying / re-enabling the agent
+// so quota / network / auth issues surface in minutes, not hours.
+//
+// Defaults to rfc-7159 (JSON), rfc-3339 (date-time format), and
+// rfc-3986 (URIs) — all small Standards-Track RFCs that produce a
+// clean set of elements quickly. Override with --ids.
+func selftestCLI(args []string) {
+	fs := flag.NewFlagSet("selftest", flag.ExitOnError)
+	corpus := fs.String("corpus", ".", "corpus root")
+	idsFlag := fs.String("ids", "rfc-7159,rfc-3339,rfc-3986", "comma-separated RFC ids to extract")
+	_ = fs.Parse(args)
+	root, err := filepath.Abs(*corpus)
+	if err != nil {
+		log.Fatal(err)
+	}
+	ids := strings.Split(*idsFlag, ",")
+	for i := range ids {
+		ids[i] = strings.TrimSpace(ids[i])
+	}
+
+	log.Printf("selftest: extracting %d canary RFCs (%s)", len(ids), strings.Join(ids, ", "))
+	var failures []string
+	for i, id := range ids {
+		ctx, cancel := context.WithTimeout(context.Background(), 15*time.Minute)
+		n, err := extract(ctx, root, id, true) // --force, so existing elements get re-extracted
+		cancel()
+		if err != nil {
+			log.Printf("[%d/%d] FAIL %s: %v", i+1, len(ids), id, err)
+			failures = append(failures, id)
+			continue
+		}
+		log.Printf("[%d/%d] ok   %s: %d elements", i+1, len(ids), id, n)
+	}
+	if len(failures) > 0 {
+		log.Printf("selftest FAILED: %d/%d extractions failed (%s)", len(failures), len(ids), strings.Join(failures, ", "))
+		os.Exit(1)
+	}
+	log.Printf("selftest ok: all %d extractions succeeded", len(ids))
 }
 
 // ── Candidate selection ──
@@ -411,7 +538,41 @@ type elementOut struct {
 	ExtractedAt  string   `yaml:"extracted_at,omitempty" json:"extracted_at,omitempty"`
 }
 
+// runClaude shells out to `claude -p` with retry-with-backoff.
+//
+// `claude -p` with --output-format json returns its model output on
+// stdout. On rate-limit/quota failures it exits non-zero and usually
+// writes NOTHING to stderr — the May 2026 incident saw 2,700+ failures
+// with empty stderr until we noticed the pattern. Capture both streams
+// and include them in the error message so diagnosis isn't a 17-hour
+// reverse-engineering exercise next time.
+//
+// Backoff: claudeMaxAttempts attempts, with delays 10s / 40s / 90s
+// (quadratic) between them. Total worst-case wait per extraction:
+// ~2.5 minutes of backoff + 3 × 6-min claude timeouts. Move on to
+// the next RFC if all attempts fail.
 func runClaude(ctx context.Context, prompt string) (string, error) {
+	var lastErr error
+	for attempt := 1; attempt <= claudeMaxAttempts; attempt++ {
+		out, err := runClaudeOnce(ctx, prompt)
+		if err == nil {
+			return out, nil
+		}
+		lastErr = err
+		if attempt < claudeMaxAttempts {
+			backoff := time.Duration(attempt*attempt) * 10 * time.Second
+			log.Printf("claude attempt %d/%d failed: %v; sleeping %s before retry", attempt, claudeMaxAttempts, err, backoff)
+			select {
+			case <-time.After(backoff):
+			case <-ctx.Done():
+				return "", ctx.Err()
+			}
+		}
+	}
+	return "", fmt.Errorf("claude failed after %d attempts: %w", claudeMaxAttempts, lastErr)
+}
+
+func runClaudeOnce(ctx context.Context, prompt string) (string, error) {
 	cctx, cancel := context.WithTimeout(ctx, 6*time.Minute)
 	defer cancel()
 	cmd := exec.CommandContext(cctx, "claude", "-p", "--output-format", "json", "--model", claudeModel, prompt)
@@ -419,7 +580,18 @@ func runClaude(ctx context.Context, prompt string) (string, error) {
 	cmd.Stdout = &stdout
 	cmd.Stderr = &stderr
 	if err := cmd.Run(); err != nil {
-		return "", fmt.Errorf("claude -p: %w: %s", err, stderr.String())
+		// Capture both streams. claude -p often writes nothing to
+		// stderr on rate-limit failures; stdout may contain a JSON
+		// error envelope or also be empty.
+		so := strings.TrimSpace(stdout.String())
+		se := strings.TrimSpace(stderr.String())
+		if len(so) > 400 {
+			so = so[:400] + "...[truncated]"
+		}
+		if len(se) > 400 {
+			se = se[:400] + "...[truncated]"
+		}
+		return "", fmt.Errorf("claude -p: %w (stdout=%q stderr=%q)", err, so, se)
 	}
 	return stdout.String(), nil
 }

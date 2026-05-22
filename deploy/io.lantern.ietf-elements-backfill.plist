@@ -53,11 +53,17 @@
     <string>/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin</string>
     <key>HOME</key>
     <string>/Users/afisk</string>
-    <!-- Override --parallel passed to ietf-elements. The wrapper
-         reads this; default 3 if unset. Raising past 3 can hit
-         Claude rate limits on the subscription tier. -->
+    <!-- Override --parallel passed to ietf-elements. Default 1 since
+         the May 2026 incident; raising past 1 only safe when no other
+         claude work is running on this machine. -->
     <key>PARALLEL</key>
-    <string>3</string>
+    <string>1</string>
+    <!-- Cap extractions per rolling hour as a quota-burn guard. -->
+    <key>MAX_PER_HOUR</key>
+    <string>60</string>
+    <!-- Bail if claude fails this many times in a row. -->
+    <key>MAX_CONSECUTIVE_FAILS</key>
+    <string>10</string>
   </dict>
 
   <key>WorkingDirectory</key>

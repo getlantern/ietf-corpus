@@ -34,7 +34,18 @@ REPO=$(cd "$SCRIPT_DIR/.." && pwd)
 : "${GOBIN:=$HOME/go/bin}"
 export GOBIN
 BINARY="$GOBIN/ietf-elements"
-PARALLEL="${PARALLEL:-3}"
+# parallel=1 default per the May 2026 quota-burn incident (see
+# runClaude doc in cmd/ietf-elements/main.go). Override via env if
+# you're sure the machine isn't running competing claude work.
+PARALLEL="${PARALLEL:-1}"
+# Hard cap so even a malfunctioning extractor can't burn the
+# subscription. 60/hour ≈ ~1500/day at parallel=1, well within
+# subscription headroom while still finishing the standards-track
+# backlog in ~3 days on the happy path.
+MAX_PER_HOUR="${MAX_PER_HOUR:-60}"
+# Abort if N back-to-back claude calls fail. The previous incident
+# burned 17 unattended hours at no cap; 10 is conservative.
+MAX_CONSECUTIVE_FAILS="${MAX_CONSECUTIVE_FAILS:-10}"
 
 cd "$REPO" || { echo "wrapper: cannot cd to $REPO; abort" >&2; exit 1; }
 
@@ -70,7 +81,18 @@ if [[ ! -x "$BINARY" ]]; then
     exit 1
 fi
 
-# 3. Run the three standards-track sweeps in sequence. extract-all
+# 3. SELFTEST GATE. Run three canary extractions before kicking off
+# the long sweep. If selftest fails, bail without consuming subscription
+# quota on what would just be a torrent of retries. The May 2026
+# incident would have caught itself in ~10 minutes instead of 17 hours
+# with this gate in place.
+stamp "=== selftest gate ==="
+if ! "$BINARY" selftest --corpus "$REPO"; then
+    stamp "selftest FAILED — aborting sweep. Diagnose claude / network / quota before re-triggering."
+    exit 1
+fi
+
+# 4. Run the three standards-track sweeps in sequence. extract-all
 # auto-skips RFCs that already have elements, so re-running is cheap
 # (a directory scan, no LLM cost) for the steady-state path.
 #
@@ -78,10 +100,20 @@ fi
 # signal per call) → DRAFT STANDARD → PROPOSED STANDARD (largest).
 # If the job is interrupted mid-PROPOSED-STANDARD, the next fire
 # resumes from where it left off via the same auto-skip mechanism.
+# The extractor's own --max-consecutive-fails guard tears down the
+# sweep early if claude starts failing in a streak, so an unattended
+# 3-day run can't silently burn quota.
 for status in "INTERNET STANDARD" "DRAFT STANDARD" "PROPOSED STANDARD"; do
     stamp "=== sweep: status='$status' ==="
-    "$BINARY" extract-all --corpus "$REPO" --status "$status" --parallel "$PARALLEL" || \
-        stamp "sweep '$status' returned nonzero (continuing)"
+    if ! "$BINARY" extract-all \
+        --corpus "$REPO" \
+        --status "$status" \
+        --parallel "$PARALLEL" \
+        --max-per-hour "$MAX_PER_HOUR" \
+        --max-consecutive-fails "$MAX_CONSECUTIVE_FAILS"; then
+        stamp "sweep '$status' aborted (likely hit the consecutive-fails guard); stopping"
+        exit 1
+    fi
 done
 
 stamp "=== all sweeps complete ==="
