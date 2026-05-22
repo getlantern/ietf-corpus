@@ -1,0 +1,9 @@
+document: rfc-9112
+kind: normative-requirement
+summary: A sender MUST NOT generate a message that includes obsolete line folding (obs-fold) unless the message is intended for packaging within the "message/http" media type. Servers receiving obs-fold in requests MUST either reject with 400 or replace with SP octets.
+section: "5.2"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,8 @@
+document: rfc-9112
+kind: interoperability-note
+summary: Transfer-Encoding was added in HTTP/1.1; implementations advertising only HTTP/1.0 support are assumed not to understand transfer-encoded content. A client MUST NOT send Transfer-Encoding unless it knows the server handles HTTP/1.1; a server MUST NOT send a Transfer-Encoding response unless the request indicates HTTP/1.1 or later.
+section: "6.1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

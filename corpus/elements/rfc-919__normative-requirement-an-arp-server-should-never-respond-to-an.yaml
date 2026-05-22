@@ -1,0 +1,9 @@
+document: rfc-919
+kind: normative-requirement
+summary: An ARP server should never respond to an ARP request whose target address is a broadcast address. Such a request comes from a host that does not recognize the broadcast address as such; honoring it would almost certainly cause a forwarding loop, potentially generating T**N spurious re-broadcasts for N non-compliant hosts with TTL T.
+section: "7.1"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

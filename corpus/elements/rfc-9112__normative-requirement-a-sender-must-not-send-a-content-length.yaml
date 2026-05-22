@@ -1,0 +1,10 @@
+document: rfc-9112
+kind: normative-requirement
+summary: A sender MUST NOT send a Content-Length header field in any message that contains a Transfer-Encoding header field. A server receiving both MUST close the connection after responding to avoid potential smuggling attacks.
+section: "6.2"
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

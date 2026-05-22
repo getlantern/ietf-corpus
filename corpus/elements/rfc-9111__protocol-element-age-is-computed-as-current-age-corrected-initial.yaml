@@ -1,0 +1,8 @@
+document: rfc-9111
+kind: protocol-element
+summary: Age is computed as current_age = corrected_initial_age + resident_time, where corrected_initial_age = max(apparent_age, age_value + response_delay). A cache MUST interpret corrected_age_value relative to the time the request was initiated, not the time the response was received, to account for transit delay.
+section: 4.2.3
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

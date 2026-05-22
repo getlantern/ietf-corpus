@@ -1,0 +1,8 @@
+document: rfc-922
+kind: design-rationale
+summary: RFC 922 deliberately separates the broadcast addressing scheme from any assumption about the specific subnet/host field division, so a host can broadcast to a remote subnetted network (e.g., 36.255.255.255) without knowing how the 24-bit local-address part is divided. This was a non-obvious choice that avoids requiring hosts to know remote subnet masks.
+section: "7"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

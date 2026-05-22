@@ -1,0 +1,9 @@
+document: rfc-9111
+kind: normative-requirement
+summary: When a cache receives a 304 (Not Modified) response, it MUST update each identified stored response's header fields with the fields provided in the 304 response. If no strong validator in the 304 matches any stored response, the cache MUST NOT use the new response to update any stored responses.
+section: 4.3.4
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

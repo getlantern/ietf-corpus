@@ -1,0 +1,9 @@
+document: rfc-9112
+kind: normative-requirement
+summary: A server MUST read the entire request message body or close the connection after sending its response to prevent remaining data being misinterpreted as the next request. A client MUST read the entire response body if it intends to reuse the connection.
+section: "9.3"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

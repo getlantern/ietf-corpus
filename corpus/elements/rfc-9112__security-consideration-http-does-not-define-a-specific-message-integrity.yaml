@@ -1,0 +1,10 @@
+document: rfc-9112
+kind: security-consideration
+summary: HTTP does not define a specific message integrity mechanism; it relies on transport error detection and length/chunk-delimited framing. The "https" scheme provides authenticated encryption, but care is needed to ensure TLS connection closure cannot be used to truncate messages.
+section: "11.3"
+topics:
+    - http
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

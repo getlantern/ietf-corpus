@@ -1,0 +1,11 @@
+document: rfc-9112
+kind: normative-requirement
+summary: When encountering a TLS incomplete close, a client SHOULD treat as complete all requests for which it received data up to Content-Length or the terminal zero-length chunk. A response with neither chunked nor Content-Length is complete only if a valid TLS closure alert was received.
+section: "9.8"
+rfc2119_level: SHOULD
+topics:
+    - http
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

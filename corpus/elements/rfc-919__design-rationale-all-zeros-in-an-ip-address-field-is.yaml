@@ -1,0 +1,8 @@
+document: rfc-919
+kind: design-rationale
+summary: All-zeros in an IP address field is used as a notational convention meaning 'unspecified' or 'this network', complementary to all-ones meaning broadcast. For example, 36.0.0.0 denotes network 36, while 36.255.255.255 denotes all hosts on network 36. All-zeros source addresses appear legitimately in ICMP Information Request datagrams.
+section: "7"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

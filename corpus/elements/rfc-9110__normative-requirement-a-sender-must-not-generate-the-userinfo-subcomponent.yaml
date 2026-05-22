@@ -1,0 +1,11 @@
+document: rfc-9110
+kind: normative-requirement
+summary: A sender MUST NOT generate the userinfo subcomponent (and its '@' delimiter) in 'http' or 'https' URI references within messages. A recipient SHOULD parse for userinfo and treat its presence as an error, as it is likely used to obscure the authority for phishing attacks.
+section: 4.2.4
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

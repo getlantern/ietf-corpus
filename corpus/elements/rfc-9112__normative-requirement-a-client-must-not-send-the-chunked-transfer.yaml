@@ -1,0 +1,9 @@
+document: rfc-9112
+kind: normative-requirement
+summary: A client MUST NOT send the chunked transfer coding name in the TE field; chunked is always acceptable for HTTP/1.1. A sender of TE MUST also send a "TE" connection option in the Connection header to prevent forwarding by intermediaries that do not support TE semantics.
+section: "7.4"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,10 @@
+document: rfc-9110
+kind: normative-requirement
+summary: A recipient of CR, LF, or NUL within a field value MUST either reject the message or replace each of those characters with SP before further processing or forwarding. These characters are invalid and dangerous due to the varying ways implementations might parse them.
+section: "5.5"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,8 @@
+document: rfc-9110
+kind: interoperability-note
+summary: The 'Set-Cookie' header field commonly appears across multiple field lines in responses and does not use list syntax, violating the general requirement against duplicate field names with non-combinable values. Recipients must handle 'Set-Cookie' as a special case since its values cannot be combined into a single field value.
+section: "5.3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

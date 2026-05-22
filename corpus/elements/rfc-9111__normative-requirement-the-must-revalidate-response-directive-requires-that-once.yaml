@@ -1,0 +1,9 @@
+document: rfc-9111
+kind: normative-requirement
+summary: The must-revalidate response directive requires that once stale, a cache MUST NOT reuse the response without successful origin revalidation. If disconnected, the cache MUST generate a 504 (Gateway Timeout) error rather than serve the stale response; the directive MUST NOT be ignored under any circumstances.
+section: 5.2.2.2
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

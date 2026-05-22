@@ -1,0 +1,8 @@
+document: rfc-9112
+kind: protocol-element
+summary: 'Message body length is determined by a strict precedence: (1) HEAD/1xx/204/304 responses have no body; (2) 2xx to CONNECT implies tunnel; (3) Transfer-Encoding overrides Content-Length; (4) chunked determines length by decoding; (5) valid Content-Length defines exact length; (6) connection close for responses without either.'
+section: "6.3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,12 @@
+document: rfc-9110
+kind: normative-requirement
+summary: To establish a secured connection for an 'https' URI, a client MUST verify the service's identity using the process defined in RFC 6125 Section 6. A reference identity of type CN-ID MUST NOT be used; the client MUST construct either an IP-ID or DNS-ID from the host. Automated clients that cannot verify MUST log the error and SHOULD terminate the connection.
+section: 4.3.4
+rfc2119_level: MUST
+topics:
+    - http
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

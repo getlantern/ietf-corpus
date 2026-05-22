@@ -1,0 +1,10 @@
+document: rfc-9112
+kind: normative-requirement
+summary: A recipient MUST parse an HTTP message as a sequence of octets in an encoding that is a superset of US-ASCII. Parsing as a stream of Unicode characters creates security vulnerabilities due to varying handling of invalid multibyte sequences containing LF (%x0A).
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"

@@ -1,0 +1,8 @@
+document: rfc-922
+kind: interoperability-note
+summary: If not all hosts on a network share the same understanding of what constitutes a broadcast address, ARP interactions can cause problems. A host that does not recognize 255.255.255.255 as a broadcast may send an ARP request for it, and an incorrectly implemented ARP server that responds will trigger forwarding loops.
+section: "7.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-22"
