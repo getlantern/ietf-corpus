@@ -1,0 +1,9 @@
+document: rfc-1269
+kind: design-rationale
+summary: bgpPathAttrASPath is represented as OCTET STRING rather than the more natural SEQUENCE OF INTEGER because the SMI (RFC 1155) restricts ASN.1 constructs for simplicity, and SEQUENCE OF INTEGER is not directly expressible. The document acknowledges this is 'probably best represented as SEQUENCE OF INTEGER' but encodes each AS as a two-byte pair for compatibility.
+section: "5"
+topics:
+    - bgp
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

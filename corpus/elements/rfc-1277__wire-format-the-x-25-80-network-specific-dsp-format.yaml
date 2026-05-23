@@ -1,0 +1,8 @@
+document: rfc-1277
+kind: wire-format
+summary: The X.25(80) network-specific DSP format encodes a 1-digit Type field (0=DTE only, 1=DTE+PID, 2=DTE+CUDF, 3-9 reserved), followed when Type>0 by a 1-digit PID/CUDF Length (n octets), then 3n decimal digits for PID/CUDF (each octet encoded as three decimal digits), and finally the DTE number occupying the remainder of the address.
+section: "4.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

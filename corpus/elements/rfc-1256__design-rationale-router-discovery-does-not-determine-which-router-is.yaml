@@ -1,0 +1,9 @@
+document: rfc-1256
+kind: design-rationale
+summary: Router discovery does not determine which router is best for a given destination; it only reveals that neighboring routers exist. If a host picks a suboptimal first-hop router, it should receive an ICMP Redirect identifying a better one. This design keeps router discovery independent of specific routing protocols.
+section: "2"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
