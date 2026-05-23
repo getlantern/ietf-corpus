@@ -1,0 +1,9 @@
+document: rfc-3392
+kind: state-machine
+summary: 'During capability negotiation: (1) speaker sends OPEN with Capabilities Optional Parameter; (2) if peer replies with NOTIFICATION (Unsupported Optional Parameter), speaker retries without the parameter (falling back to basic BGP); (3) if peer supports capabilities but lacks a required one, speaker may terminate with NOTIFICATION (Unsupported Capability) and SHOULD NOT auto-reconnect.'
+section: "3"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

@@ -1,0 +1,9 @@
+document: rfc-2865
+kind: design-rationale
+summary: 'UDP was chosen over TCP for RADIUS because: (1) the NAS must keep requests above the transport layer for failover to alternate servers anyway, making TCP retransmission redundant; (2) TCP''s aggressive retransmission timing is neither needed nor appropriate—users tolerate several seconds but not minutes; (3) the stateless nature of RADIUS eliminates connection management complexity; (4) UDP simplifies multi-threaded server implementation by allowing separate processes to respond directly via simple datagrams.'
+section: "2.4"
+topics:
+    - radius
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

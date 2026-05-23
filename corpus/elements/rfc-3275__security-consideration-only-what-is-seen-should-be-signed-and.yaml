@@ -1,0 +1,9 @@
+document: rfc-3275
+kind: security-consideration
+summary: Only what is 'seen' should be signed and verifiers must 'see' what is signed. A malicious CanonicalizationMethod inside SignedInfo could rewrite URIs, erase itself from SignedInfo, or transform SignedInfo so validation always succeeds. Applications MUST exercise great care before accepting and executing an arbitrary CanonicalizationMethod.
+section: 8.1.2
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

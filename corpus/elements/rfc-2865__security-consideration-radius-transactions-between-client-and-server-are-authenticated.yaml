@@ -1,0 +1,10 @@
+document: rfc-2865
+kind: security-consideration
+summary: RADIUS transactions between client and server are authenticated using a shared secret never sent over the network, and user passwords are encrypted using MD5-based hiding. However, the protocol cannot protect against theft of authenticated sessions via real-time active wiretapping; generation of unique unpredictable Request Authenticators protects against a wide range of active attacks.
+section: "8"
+topics:
+    - radius
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

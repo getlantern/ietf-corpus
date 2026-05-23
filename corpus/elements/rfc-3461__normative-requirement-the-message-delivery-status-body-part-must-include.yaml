@@ -1,0 +1,9 @@
+document: rfc-3461
+kind: normative-requirement
+summary: 'The message/delivery-status body part MUST include: Original-Envelope-ID (if ENVID was present), Reporting-MTA (with mta-name-type ''dns'' if FQDN is known), Original-Recipient (if ORCPT was provided), Final-Recipient, Action, Status (using codes from RFC 3463), and for SMTP relay attempts, Remote-MTA and Diagnostic-Code with diagnostic-type ''smtp''.'
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

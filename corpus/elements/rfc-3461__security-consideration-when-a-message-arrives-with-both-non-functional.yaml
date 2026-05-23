@@ -1,0 +1,9 @@
+document: rfc-3461
+kind: security-consideration
+summary: When a message arrives with both non-functional recipient addresses and a null return address, a failed DSN delivery attempt would see a null return path. To avoid silent message loss, the MTA SHOULD inform the local postmaster rather than silently discarding, since a non-functional return address often indicates a configuration problem.
+section: "5.2"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

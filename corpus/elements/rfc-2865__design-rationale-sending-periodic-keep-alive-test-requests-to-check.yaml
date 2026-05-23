@@ -1,0 +1,8 @@
+document: rfc-2865
+kind: design-rationale
+summary: Sending periodic keep-alive test requests to check server liveness is strongly discouraged. Since a RADIUS request fits in one datagram, any real request simultaneously tests reachability; polling without a real request adds load without benefit. SNMP is recommended for server monitoring.
+section: "2.6"
+topics:
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

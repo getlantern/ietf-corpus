@@ -1,0 +1,9 @@
+document: rfc-2865
+kind: interoperability-note
+summary: For CHAP authentication in proxy scenarios, if no CHAP-Challenge attribute is present in the forwarded packet, the forwarding server MUST leave the Request Authenticator untouched or copy it to a CHAP-Challenge attribute, because the CHAP challenge verification depends on it.
+section: "2.3"
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

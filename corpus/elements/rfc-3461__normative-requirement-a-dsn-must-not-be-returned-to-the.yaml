@@ -1,0 +1,9 @@
+document: rfc-3461
+kind: normative-requirement
+summary: A DSN MUST NOT be returned to the sender for any message whose SMTP MAIL command used a NULL return address ('<>'), even if the sender's address is available elsewhere. The MTA SHOULD notify the local postmaster of delivery failures via a mechanism that will not itself generate DSNs.
+section: "5.2"
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

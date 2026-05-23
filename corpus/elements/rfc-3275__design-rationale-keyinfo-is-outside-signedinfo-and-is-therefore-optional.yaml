@@ -1,0 +1,9 @@
+document: rfc-3275
+kind: design-rationale
+summary: 'KeyInfo is outside SignedInfo and is therefore optional, for two reasons: the signer may not wish to reveal key information to all parties, and the information may be known from application context. Applications that want to bind key information to the signature can include a Reference to KeyInfo from within SignedInfo.'
+section: "2.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
