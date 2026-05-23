@@ -1,0 +1,10 @@
+document: rfc-4862
+kind: normative-requirement
+summary: Each individual unicast address SHOULD be tested for uniqueness. The optimization of skipping DAD for a global address that shares an interface identifier with a link-local address is NOT RECOMMENDED, and new implementations MUST NOT perform that optimization, because new address types (RFC 4941, RFC 3972) may have different interface identifiers per address.
+section: "5.4"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

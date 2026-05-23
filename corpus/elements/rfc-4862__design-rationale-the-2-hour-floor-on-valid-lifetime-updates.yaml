@@ -1,0 +1,10 @@
+document: rfc-4862
+kind: design-rationale
+summary: The 2-hour floor on valid lifetime updates (Section 5.5.3) was introduced to counter a DoS attack in which a single unauthenticated Router Advertisement with very short Valid Lifetimes could prematurely expire all of a node's addresses. Legitimate periodic RAs will refresh the lifetime before it falls dangerously low.
+section: 5.5.3
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

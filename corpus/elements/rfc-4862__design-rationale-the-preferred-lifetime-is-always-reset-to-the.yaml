@@ -1,0 +1,9 @@
+document: rfc-4862
+kind: design-rationale
+summary: The preferred lifetime is always reset to the advertised value even when the valid lifetime update is ignored, because shortening the preferred lifetime is a much less severe attack. Blocking preferred lifetime updates would also prevent legitimate administrators from deprecating an address by advertising a short preferred lifetime.
+section: 5.5.3
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

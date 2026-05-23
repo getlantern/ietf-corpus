@@ -1,0 +1,8 @@
+document: rfc-4934
+kind: design-rationale
+summary: EPP commands are defined as idempotent so that if a TCP connection closes after a command is processed but before the response is returned, processing the command more than once produces the same net effect, simplifying recovery from connection failures.
+section: "3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

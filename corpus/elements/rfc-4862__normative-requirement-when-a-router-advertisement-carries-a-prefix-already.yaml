@@ -1,0 +1,11 @@
+document: rfc-4862
+kind: normative-requirement
+summary: 'When a Router Advertisement carries a prefix already in the address list, the valid lifetime update follows a 2-hour floor rule: if the advertised Valid Lifetime is greater than 2 hours or greater than RemainingLifetime, set to the advertised value; if RemainingLifetime is ≤ 2 hours, ignore unless the RA was authenticated (e.g., via SEND); otherwise reset to 2 hours.'
+section: 5.5.3
+rfc2119_level: SHOULD
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

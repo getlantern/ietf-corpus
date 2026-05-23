@@ -1,0 +1,9 @@
+document: rfc-4861
+kind: design-rationale
+summary: Setting the IPv6 Hop Limit to 255 for all ND messages makes Neighbor Discovery immune to off-link senders that accidentally or intentionally send ND messages, because routers decrement the hop limit and any message arriving from off-link will have a hop limit less than 255.
+section: "3.1"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
