@@ -1,0 +1,8 @@
+document: rfc-2863
+kind: design-rationale
+summary: 64-bit expanded counters were adopted instead of scaling counters because scaled counters cause traffic to appear artificially bursty at low traffic rates, leading to incorrect network performance conclusions. The ifCounterDiscontinuityTime object was added to allow counter discontinuity detection without requiring ifIndex reassignment on interface return.
+section: 3.1.6
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

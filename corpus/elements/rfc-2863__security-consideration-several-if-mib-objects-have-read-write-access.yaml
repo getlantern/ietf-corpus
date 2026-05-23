@@ -1,0 +1,9 @@
+document: rfc-2863
+kind: security-consideration
+summary: Several IF-MIB objects have read-write access, most notably ifAdminStatus (which can bring interfaces up or down) and ifLinkUpDownTrapEnable (which can suppress fault notifications). Unauthorized SNMP write access to these objects poses a significant network management security risk; implementations should apply appropriate access control consistent with the SNMP security frameworks.
+section: "9"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

@@ -1,6 +1,8 @@
 document: rfc-3986
 kind: wire-format
-summary: The authority component has the form "[ userinfo "@" ] host [ ":" port ]", is preceded by "//", and is terminated by the next "/", "?", "#", or end of URI.
+summary: The authority component has the form [userinfo "@"] host [":" port]. IPv6 and future IP literals are enclosed in square brackets (IP-literal = "[" (IPv6address / IPvFuture) "]"), the only place square brackets are allowed in URI syntax.
 section: "3.2"
+topics:
+    - ip
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-05-22"
+extracted_at: "2026-05-23"

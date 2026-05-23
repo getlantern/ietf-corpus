@@ -1,0 +1,8 @@
+document: rfc-2863
+kind: interoperability-note
+summary: After a dynamic interface removal, an agent must not reuse the freed ifIndex value for a different interface until after the next re-initialization of the network management system. When the same interface returns, it should retain its previous ifIndex and update ifCounterDiscontinuityTime rather than requiring a new index.
+section: 3.1.5
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

@@ -1,0 +1,8 @@
+document: rfc-2863
+kind: design-rationale
+summary: The ifTable intentionally has no RowStatus column because nearly all creatable interfaces require media-specific configuration parameters not present in the generic table. Interface creation and deletion is delegated to media-specific MIBs whose RowStatus operations cause ifTable rows to appear and disappear as a side effect.
+section: 3.1.17
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

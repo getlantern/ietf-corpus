@@ -1,0 +1,8 @@
+document: rfc-2863
+kind: state-machine
+summary: 'When ifAdminStatus transitions to up, ifOperStatus should move to: up (if able to pass packets), lowerLayerDown (if blocked by lower layer), dormant (operable but awaiting external events), testing (if tests must be performed), unknown (state indeterminate), or remain in down (fault detected) or notPresent (components missing). New ifTable entries are initialized with ifAdminStatus down.'
+section: 3.1.13
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
