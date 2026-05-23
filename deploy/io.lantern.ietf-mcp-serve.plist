@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!--
+  LaunchAgent for `ietf-mcp serve` (HTTP mode). Keeps the /ask + /mcp
+  + /healthz endpoints listening on 127.0.0.1:8789 so the cloudflared
+  tunnel (ietf-ask.lantern.io) has something to forward to.
+
+  Why a LaunchAgent (and not a system daemon): /ask shells out to
+  `claude -p`, which reads its OAuth token from the macOS keychain.
+  That keychain is only unlocked in the user's GUI Aqua session.
+  LaunchAgents under ~/Library/LaunchAgents/ run in that session and
+  have keychain access. LaunchDaemons under /Library/LaunchDaemons/
+  do not.
+
+  Required env: IETF_ASK_TOKEN. The committed plist deliberately
+  doesn't include it (it's a per-machine secret that mustn't enter
+  git). install-launchd.sh injects it from
+    $HOME/.config/lantern/ietf-ask-token
+  (or $REPO/deploy/.ietf-ask-token, or $TOKEN_FILE), same pattern as
+  circumvention-corpus's CORPUS_CRAWL_TOKEN.
+
+  Required codesignature: macOS 26.2+ launchd kills unsigned binaries
+  with "Launch Constraint Violation". run-elements.sh ad-hoc signs
+  $GOBIN/ietf-mcp after every `go install`; install-launchd.sh signs
+  it at install time too.
+
+  Install:
+    bash deploy/install-launchd.sh mcp-serve
+
+  Trigger / restart:
+    launchctl stop  io.lantern.ietf-mcp-serve   # graceful
+    launchctl start io.lantern.ietf-mcp-serve
+
+  Logs:
+    tail -f /tmp/ietf-mcp-serve.err.log
+-->
+<dict>
+  <key>Label</key>
+  <string>io.lantern.ietf-mcp-serve</string>
+
+  <!--
+    Points at $GOBIN/ietf-mcp (NOT an in-repo binary), matching the
+    pattern that's already working for corpus-crawl-serve. The repo
+    path here is for --corpus (where the YAMLs live).
+    install-launchd.sh substitutes /Users/afisk/go/bin → $GOBIN and
+    /Users/afisk/code/ietf-corpus → $REPO at install time.
+  -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/afisk/go/bin/ietf-mcp</string>
+    <string>--serve</string>
+    <string>127.0.0.1:8789</string>
+    <string>--corpus</string>
+    <string>/Users/afisk/code/ietf-corpus</string>
+  </array>
+
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin</string>
+    <key>HOME</key>
+    <string>/Users/afisk</string>
+    <!-- IETF_ASK_TOKEN is injected by install-launchd.sh from a local
+         token file. Without that file, the agent will fail to start
+         with "--auth-token (or env IETF_ASK_TOKEN) is required". -->
+  </dict>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/afisk/code/ietf-corpus</string>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/ietf-mcp-serve.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/ietf-mcp-serve.err.log</string>
+</dict>
+</plist>

@@ -24,12 +24,13 @@ dedicated bot machine.
 
 | File | Purpose |
 | --- | --- |
-| `run-elements.sh` | Self-updating wrapper: `git pull`, `go install ./cmd/ietf-elements`, then runs the three standards-track sweeps (INTERNET STANDARD → DRAFT STANDARD → PROPOSED STANDARD) in sequence. Already-extracted RFCs are auto-skipped. |
+| `run-elements.sh` | Self-updating wrapper: `git pull`, `go install ./cmd/ietf-elements ./cmd/ietf-mcp`, ad-hoc codesigns both, then runs the three standards-track sweeps (INTERNET STANDARD → DRAFT STANDARD → PROPOSED STANDARD) in sequence. Already-extracted RFCs are auto-skipped. |
 | `commit-elements.sh` | Batch-commits any newly-extracted `corpus/elements/*.yaml` directly to main and pushes. Idempotent — no-op when there's nothing new. Safe because it only adds files (never edits or deletes), CI gates the integrity tests on every push, and rebases-and-retries on push rejection. |
 | `io.lantern.ietf-elements-backfill.plist` | One-shot LaunchAgent. No schedule; runs only when explicitly started. For the initial backfill. |
 | `io.lantern.ietf-elements-weekly.plist` | Recurring LaunchAgent. Fires every Sunday at 03:00 local time. Maintenance — extracts elements for newly-published standards-track RFCs since the last fire. |
 | `io.lantern.ietf-elements-commit.plist` | Recurring LaunchAgent. Fires every 10 minutes. Calls `commit-elements.sh`. Decoupled from the extractor so it works with a sweep in progress without requiring a restart. |
-| `install-launchd.sh` | One-time installer. Substitutes the right repo path into the plists and `launchctl load`s them. Accepts `backfill`, `weekly`, `commit`, or `all` (default) as args. |
+| `io.lantern.ietf-mcp-serve.plist` | LaunchAgent that runs `ietf-mcp --serve 127.0.0.1:8789` with `KeepAlive=true`. Exposes `/healthz`, `/ask`, and `/mcp`. The cloudflared tunnel (`ietf-ask.lantern.io`) forwards to this. Requires `IETF_ASK_TOKEN` from a local token file. |
+| `install-launchd.sh` | One-time installer. Substitutes the right repo path into the plists and `launchctl load`s them. Accepts `backfill`, `weekly`, `commit`, `mcp-serve`, or `all` (default) as args. |
 
 ## Installing on the mini
 
@@ -39,7 +40,17 @@ Assuming the repo is checked out at `/Users/afisk/code/ietf-corpus`
 ```bash
 cd /Users/afisk/code/ietf-corpus
 git pull
-bash deploy/install-launchd.sh both
+# First-time only: drop the /ask backend token. Then install all agents.
+mkdir -p ~/.config/lantern
+echo "$(openssl rand -hex 24)" > ~/.config/lantern/ietf-ask-token
+chmod 600 ~/.config/lantern/ietf-ask-token
+bash deploy/install-launchd.sh all
+```
+
+For just the /ask backend (skip the element-extraction agents):
+
+```bash
+bash deploy/install-launchd.sh mcp-serve
 ```
 
 Or for a non-standard checkout location:

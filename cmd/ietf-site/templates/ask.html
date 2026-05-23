@@ -1,0 +1,127 @@
+{{template "header" (dict "Title" "Ask" "BasePath" "" "Description" "Ask a natural-language question about the IETF corpus and get a cited answer.")}}
+
+<h1 class="hero">ask <span class="accent">the corpus</span></h1>
+<p class="lede">Ask a question in plain English and get an answer
+backed by specific RFCs and extracted normative elements. Powered
+by Claude over the 12k-document corpus; answers cite the
+<code>(rfc-N §S)</code> records they relied on.</p>
+
+<form id="ask-form" class="hero-ask" autocomplete="off">
+  <input
+    id="q"
+    name="q"
+    type="text"
+    placeholder="e.g. how is a QUIC packet number encoded?"
+    autofocus
+    maxlength="500"
+    autocomplete="off"
+    spellcheck="true"
+  />
+  <button type="submit" id="ask-btn">ask</button>
+</form>
+
+<p class="ask-help">
+  Tips: name specific RFCs / drafts (e.g. <code>rfc-8446</code>),
+  ask about MUSTs / SHOULDs / wire format / state machines —
+  the corpus's extracted elements give the best material there.
+  Rate-limited to 6 questions per IP per hour.
+</p>
+
+<div id="ask-status" class="ask-status" aria-live="polite"></div>
+<div id="ask-answer" class="ask-answer"></div>
+<details id="ask-bundle-wrap" class="ask-bundle" hidden>
+  <summary>retrieved records (what Claude was shown)</summary>
+  <div id="ask-bundle"></div>
+</details>
+
+<script>
+const form = document.getElementById('ask-form');
+const qInput = document.getElementById('q');
+const btn = document.getElementById('ask-btn');
+const statusEl = document.getElementById('ask-status');
+const answerEl = document.getElementById('ask-answer');
+const bundleWrap = document.getElementById('ask-bundle-wrap');
+const bundleEl = document.getElementById('ask-bundle');
+
+const escapeHTML = s => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+
+// Linkify citations like (rfc-9000 §17.2) or (draft-ietf-tls-esni)
+// to per-document pages on this site.
+const linkifyCitations = text => {
+  return text.replace(/\(([a-z]+-[a-z0-9-]+)(\s*§[\w.]+)?\)/g, (m, id, sect) => {
+    const url = id.startsWith('rfc-') ? `rfcs/${id}.html` :
+                id.startsWith('draft-') ? `drafts/${id}.html` :
+                null;
+    if (!url) return m;
+    return `(<a href="${url}">${id}</a>${sect || ''})`;
+  });
+};
+
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  const question = qInput.value.trim();
+  if (!question) return;
+
+  btn.disabled = true;
+  btn.textContent = 'thinking…';
+  statusEl.textContent = '';
+  answerEl.innerHTML = '';
+  bundleWrap.hidden = true;
+  bundleEl.innerHTML = '';
+
+  const start = Date.now();
+  try {
+    const res = await fetch('/api/ask', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ question }),
+    });
+    if (!res.ok) {
+      let msg = `${res.status}`;
+      try {
+        const body = await res.json();
+        if (body.error) msg += ` ${body.error}`;
+        if (body.detail) msg += ` (${body.detail})`;
+      } catch (_) {}
+      statusEl.textContent = `Could not get an answer: ${msg}. The retrieval pipeline may be temporarily offline; you can still browse the corpus directly.`;
+      btn.disabled = false;
+      btn.textContent = 'ask';
+      return;
+    }
+    const data = await res.json();
+    statusEl.textContent = `Answered in ${data.elapsed_ms || '?'}; ${(data.bundle?.elements || []).length} elements + ${(data.bundle?.documents || []).length} documents retrieved.`;
+    // Render the answer with citation linkification, preserving paragraphs.
+    const paragraphs = (data.answer || '').split(/\n\n+/).map(p => `<p>${linkifyCitations(escapeHTML(p)).replace(/\n/g, '<br>')}</p>`).join('');
+    answerEl.innerHTML = paragraphs;
+    // Render the bundle (provenance).
+    const elems = data.bundle?.elements || [];
+    const docs = data.bundle?.documents || [];
+    let html = '';
+    if (elems.length) {
+      html += '<h4>elements</h4><ul class="bundle-list">';
+      for (const e of elems) {
+        const docURL = e.document.startsWith('rfc-') ? `rfcs/${e.document}.html` : `drafts/${e.document}.html`;
+        html += `<li><span class="kind">${escapeHTML(e.kind)}${e.rfc2119_level ? '/' + escapeHTML(e.rfc2119_level) : ''}</span> <a href="${docURL}">${escapeHTML(e.document)}</a>${e.section ? ' §' + escapeHTML(e.section) : ''}: ${escapeHTML(e.summary)}</li>`;
+      }
+      html += '</ul>';
+    }
+    if (docs.length) {
+      html += '<h4>documents</h4><ul class="bundle-list">';
+      for (const d of docs) {
+        const docURL = d.type === 'rfc' ? `rfcs/${d.id}.html` : `drafts/${d.id}.html`;
+        html += `<li><a href="${docURL}">${escapeHTML(d.id)}</a> ${escapeHTML(d.title)}</li>`;
+      }
+      html += '</ul>';
+    }
+    bundleEl.innerHTML = html;
+    bundleWrap.hidden = (elems.length === 0 && docs.length === 0);
+  } catch (err) {
+    statusEl.textContent = `Could not get an answer: ${err.message}.`;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'ask';
+  }
+});
+</script>
+
+{{template "footer" .}}

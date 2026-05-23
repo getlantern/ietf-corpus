@@ -270,6 +270,9 @@ func (s *site) renderAll() error {
 	if err := s.renderBrowse(); err != nil {
 		return err
 	}
+	if err := s.renderAsk(); err != nil {
+		return err
+	}
 	if err := s.renderDataset(); err != nil {
 		return err
 	}
@@ -374,6 +377,10 @@ func (s *site) renderBrowse() error {
 	return s.write("browse.html", "browse.html", map[string]any{
 		"Total": len(s.docs),
 	})
+}
+
+func (s *site) renderAsk() error {
+	return s.write("ask.html", "ask.html", map[string]any{})
 }
 
 func (s *site) renderDataset() error {

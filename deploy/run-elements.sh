@@ -64,12 +64,27 @@ else
     stamp "pull FAILED; using existing tree @ $(git rev-parse --short HEAD)"
 fi
 
-# 2. Install ietf-elements via `go install`.
-stamp "installing ietf-elements → $GOBIN"
+# 2. Install ietf-elements + ietf-mcp via `go install`.
+#    ietf-elements: the extractor itself (CLI, no launchd direct invocation).
+#    ietf-mcp:      the MCP server. The HTTP serve mode is invoked
+#                   directly by io.lantern.ietf-mcp-serve.plist, so the
+#                   $GOBIN binary needs to stay codesigned (next step)
+#                   on every fire — `go install` strips signatures.
+stamp "installing ietf-elements + ietf-mcp → $GOBIN"
 install_log=$(mktemp -t ietf-elements-install)
-if go install ./cmd/ietf-elements/ 2>"$install_log"; then
+if go install ./cmd/ietf-elements/ ./cmd/ietf-mcp/ 2>"$install_log"; then
     stamp "install ok"
     rm -f "$install_log"
+    # Ad-hoc codesign so macOS 26.2+ launchd will spawn the binaries.
+    # Same lesson as the 2026-05-22 circumvention-corpus outage:
+    # unsigned Go binaries get killed by launchd's CODESIGNING gate.
+    for bin in ietf-elements ietf-mcp; do
+        if codesign --sign - --force --timestamp=none "$GOBIN/$bin" 2>/dev/null; then
+            stamp "codesign ok: $bin"
+        else
+            stamp "codesign FAILED: $bin (LaunchAgent may not spawn it)"
+        fi
+    done
 else
     stamp "install FAILED — using existing binary if present"
     sed 's/^/    /' "$install_log"

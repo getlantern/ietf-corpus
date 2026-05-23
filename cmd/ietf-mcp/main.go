@@ -855,6 +855,8 @@ func jsonString(v any) (string, error) {
 
 func main() {
 	corpusDir := flag.String("corpus", ".", "Path to the ietf-corpus repo root.")
+	serveAddr := flag.String("serve", "", "If set, run as HTTP server on this address (e.g. 127.0.0.1:8789) instead of stdio MCP. Adds /ask, /healthz, /mcp endpoints.")
+	authToken := flag.String("auth-token", "", "Bearer token required for /ask in HTTP mode. Falls back to env IETF_ASK_TOKEN.")
 	flag.Parse()
 
 	abs, err := filepath.Abs(*corpusDir)
@@ -864,6 +866,18 @@ func main() {
 	s, err := loadStore(abs)
 	if err != nil {
 		log.Fatal(err)
+	}
+
+	if *serveAddr != "" {
+		token := *authToken
+		if token == "" {
+			token = os.Getenv("IETF_ASK_TOKEN")
+		}
+		if token == "" {
+			log.Fatal("--auth-token (or env IETF_ASK_TOKEN) is required for serve mode")
+		}
+		runHTTPServer(s, *serveAddr, token)
+		return
 	}
 
 	in := bufio.NewReader(os.Stdin)
