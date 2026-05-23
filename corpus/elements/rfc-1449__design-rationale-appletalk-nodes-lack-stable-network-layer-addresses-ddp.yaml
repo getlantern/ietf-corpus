@@ -1,0 +1,8 @@
+document: rfc-1449
+kind: design-rationale
+summary: AppleTalk nodes lack stable network-layer addresses (DDP addresses can change at every reboot), so SNMPv2 over DDP uses NBP names as stable identifiers. A name-to-address cache with a configurable lifetime T1 (minimum 60 seconds) is used to minimize expensive NBP lookups and reduce CPU/network load.
+section: "5.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
