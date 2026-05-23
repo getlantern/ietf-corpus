@@ -1,0 +1,9 @@
+document: rfc-1427
+kind: normative-requirement
+summary: Upon receiving a 452 response, the client should send RSET or QUIT and retry the message to the same server at a later time. Upon receiving 552, the client should send RSET or QUIT, declare the message undeliverable, and notify the sender.
+section: "6.2"
+rfc2119_level: SHOULD
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

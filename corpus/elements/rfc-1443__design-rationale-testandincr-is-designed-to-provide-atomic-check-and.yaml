@@ -1,0 +1,8 @@
+document: rfc-1443
+kind: design-rationale
+summary: TestAndIncr is designed to provide atomic check-and-increment semantics over SNMP SET operations, which are not inherently atomic. By requiring the manager to echo the current value, concurrent conflicting writes are detected and rejected, enabling safe coordination without locking primitives.
+section: "2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

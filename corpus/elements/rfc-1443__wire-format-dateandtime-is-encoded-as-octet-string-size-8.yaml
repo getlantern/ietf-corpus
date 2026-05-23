@@ -1,0 +1,8 @@
+document: rfc-1443
+kind: wire-format
+summary: 'DateAndTime is encoded as OCTET STRING (SIZE (8 | 11)): octets 1-2 year (0..65536), octet 3 month (1..12), octet 4 day (1..31), octet 5 hour (0..23), octet 6 minutes (0..59), octet 7 seconds (0..60, 60 for leap-second), octet 8 deci-seconds (0..9). The optional 3-octet UTC offset (octets 9-11) contains direction (''+''/''-''), hours (0..11), and minutes (0..59); omitted when only local time is known.'
+section: "2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

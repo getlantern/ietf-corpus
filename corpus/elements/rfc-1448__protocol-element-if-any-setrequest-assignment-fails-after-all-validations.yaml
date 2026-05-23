@@ -1,0 +1,8 @@
+document: rfc-1448
+kind: protocol-element
+summary: If any SetRequest assignment fails after all validations pass, all other assignments MUST be undone and the error-status is set to 'commitFailed'. If it is not possible to undo all assignments, error-status is set to 'undoFailed' and error-index is set to zero. Implementations are strongly encouraged to avoid these error codes.
+section: 4.2.5
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

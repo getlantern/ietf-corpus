@@ -1,0 +1,8 @@
+document: rfc-1448
+kind: design-rationale
+summary: The request-id field allows a SNMPv2 application to correlate incoming responses with outstanding requests and identify messages duplicated by the unreliable datagram transport. Using the same request-id on retransmission lets either the original or retransmitted response satisfy the request, but a different request-id is recommended when RTT calculation is needed.
+section: "4.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

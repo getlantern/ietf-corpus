@@ -1,0 +1,8 @@
+document: rfc-1448
+kind: design-rationale
+summary: GetBulkRequest-PDU was introduced to minimize protocol exchanges when retrieving large amounts of data, particularly for table traversal. Under network stress, only small values should be used for max-repetitions to reduce the risk of fragmentation, which is considered harmful as it reduces transfer reliability.
+section: "2.5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

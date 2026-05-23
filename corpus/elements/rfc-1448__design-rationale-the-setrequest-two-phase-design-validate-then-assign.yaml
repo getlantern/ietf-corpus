@@ -1,0 +1,8 @@
+document: rfc-1448
+kind: design-rationale
+summary: 'The SetRequest two-phase design (validate-then-assign) was chosen to ensure consistency: all-or-nothing semantics mean that either all variables are set or none are, with commitFailed and undoFailed providing a last-resort indication when atomicity could not be maintained. The RFC explicitly discourages using these codes as an easy implementation shortcut.'
+section: 4.2.5
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

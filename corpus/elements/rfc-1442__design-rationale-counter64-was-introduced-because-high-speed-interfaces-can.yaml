@@ -1,0 +1,8 @@
+document: rfc-1442
+kind: design-rationale
+summary: Counter64 was introduced because high-speed interfaces can cause a Counter32 to wrap in under one hour, making it impossible to reliably track change rates. The SMI restricts Counter64 use to only these high-rate cases to avoid gratuitous 64-bit counters.
+section: 7.1.11
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
