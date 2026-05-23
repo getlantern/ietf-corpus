@@ -40,8 +40,10 @@ import (
 	"path/filepath"
 	"regexp"
 	"sort"
+	"strconv"
 	"strings"
 	"sync"
+	"sync/atomic"
 	"time"
 
 	"gopkg.in/yaml.v3"
@@ -167,43 +169,91 @@ func extractAllCLI(args []string) {
 		go func(idx int, id string) {
 			defer wg2.Done()
 			defer func() { <-sem }()
-			if err := rl.wait(abortCtx); err != nil {
-				return
-			}
-			ctx, cancel := context.WithTimeout(abortCtx, 30*time.Minute) // generous: 3 attempts × 6 min + backoff
-			defer cancel()
-			n, err := extract(ctx, root, id, false)
-			mu.Lock()
-			defer mu.Unlock()
-			if err != nil {
-				if errors.Is(err, errClaudeAuth) {
-					log.Printf("ABORT: %s; tearing down", err)
-					abort()
+
+			// Inner retry loop for session-limit failures. A 429 from
+			// claude isn't a permanent failure — it tells us when the
+			// quota resets. We sleep until then, then retry the same
+			// RFC. Limit to a few attempts so a misparsed reset time
+			// can't trap the worker forever.
+			for sessionRetry := 0; sessionRetry < 3; sessionRetry++ {
+				// Wait for any session pause set by other workers.
+				if !waitForSessionResume(abortCtx, idx, len(cands), id) {
+					return // abort signaled
+				}
+				if err := rl.wait(abortCtx); err != nil {
 					return
 				}
-				log.Printf("[%d/%d] FAIL %s: %v", idx+1, len(cands), id, err)
-				fail++
-				consecutiveFails++
-				if *failsExitThreshold > 0 && consecutiveFails >= *failsExitThreshold {
-					log.Printf("ABORT: %d consecutive failures hit the --max-consecutive-fails=%d threshold; tearing down", consecutiveFails, *failsExitThreshold)
-					abort()
+				// No 30-min per-RFC ctx anymore: session-limit sleeps
+				// can be hours, and the per-attempt 6-min cap inside
+				// runClaudeOnce already protects against hung calls.
+				n, err := extract(abortCtx, root, id, false)
+				if errors.Is(err, errClaudeSessionLimit) {
+					log.Printf("[%d/%d] %s: %v (will sleep + retry)", idx+1, len(cands), id, err)
+					continue // outer loop reads the updated sessionResumeAt
 				}
+
+				mu.Lock()
+				if err != nil {
+					if errors.Is(err, errClaudeAuth) {
+						log.Printf("ABORT: %s; tearing down", err)
+						abort()
+						mu.Unlock()
+						return
+					}
+					log.Printf("[%d/%d] FAIL %s: %v", idx+1, len(cands), id, err)
+					fail++
+					consecutiveFails++
+					if *failsExitThreshold > 0 && consecutiveFails >= *failsExitThreshold {
+						log.Printf("ABORT: %d consecutive failures hit the --max-consecutive-fails=%d threshold; tearing down", consecutiveFails, *failsExitThreshold)
+						abort()
+					}
+					mu.Unlock()
+					return
+				}
+				consecutiveFails = 0
+				if n > 0 {
+					log.Printf("[%d/%d] ok   %s: %d elements", idx+1, len(cands), id, n)
+					ok++
+					totalElements += n
+				} else {
+					log.Printf("[%d/%d] skip %s (already has elements)", idx+1, len(cands), id)
+				}
+				mu.Unlock()
 				return
 			}
-			consecutiveFails = 0
-			if n > 0 {
-				log.Printf("[%d/%d] ok   %s: %d elements", idx+1, len(cands), id, n)
-				ok++
-				totalElements += n
-			} else {
-				log.Printf("[%d/%d] skip %s (already has elements)", idx+1, len(cands), id)
-			}
+			// Fell out of the session-retry loop without success.
+			mu.Lock()
+			log.Printf("[%d/%d] FAIL %s: session-limit retries exhausted", idx+1, len(cands), id)
+			fail++
+			mu.Unlock()
 		}(i, id)
 	}
 	wg2.Wait()
 	log.Printf("done: %d ok, %d failed, %d total elements", ok, fail, totalElements)
 	if abortCtx.Err() != nil {
 		os.Exit(1)
+	}
+}
+
+// waitForSessionResume blocks until sessionResumeAt has elapsed, or
+// abortCtx is canceled. Returns true if the wait completed (caller
+// can proceed), false if aborted. No-op when no pause is set.
+func waitForSessionResume(ctx context.Context, idx, total int, id string) bool {
+	resume := currentSessionResume()
+	if resume.IsZero() {
+		return true
+	}
+	wait := time.Until(resume)
+	if wait <= 0 {
+		return true
+	}
+	log.Printf("[%d/%d] %s: claude session paused — sleeping %s (until %s)",
+		idx+1, total, id, wait.Round(time.Second), resume.Format("15:04 MST"))
+	select {
+	case <-time.After(wait):
+		return true
+	case <-ctx.Done():
+		return false
 	}
 }
 
@@ -562,6 +612,74 @@ type elementOut struct {
 // `claude /login` in a GUI session.
 var errClaudeAuth = fmt.Errorf("claude is not logged in (run `claude /login` in a GUI session)")
 
+// errClaudeSessionLimit is returned when claude says "You've hit
+// your session limit · resets HH:MMam (TZ)". The extract-all worker
+// treats this as a pause signal — it parses the reset time, stores
+// it in the shared sessionResumeAt, and sleeps until then before
+// retrying the same RFC.
+var errClaudeSessionLimit = fmt.Errorf("claude session limit hit")
+
+// sessionResumeAt is set when any worker observes a 429 session-limit
+// error from claude. All workers consult this before starting an
+// extraction; if it's in the future, they sleep first. Storing
+// time.Time directly via atomic.Value gives lock-free reads.
+var sessionResumeAt atomic.Value // holds time.Time
+
+func currentSessionResume() time.Time {
+	v := sessionResumeAt.Load()
+	if v == nil {
+		return time.Time{}
+	}
+	return v.(time.Time)
+}
+
+func setSessionResume(t time.Time) {
+	sessionResumeAt.Store(t)
+}
+
+// parseSessionLimitReset extracts the reset time from claude's
+// session-limit message. The current format (May 2026) is:
+//
+//	"You've hit your session limit · resets 7:30pm (America/Denver)"
+//	"You've hit your session limit · resets 7pm (America/Denver)"
+//
+// Returns the next occurrence of that wall-clock time in the given
+// timezone — today if it's still in the future, otherwise tomorrow.
+// Includes a 60-second buffer so retries don't race the actual reset.
+var sessionResetRE = regexp.MustCompile(`resets (\d{1,2})(?::(\d{2}))?(am|pm) \(([^)]+)\)`)
+
+func parseSessionLimitReset(text string) (time.Time, bool) {
+	m := sessionResetRE.FindStringSubmatch(text)
+	if m == nil {
+		return time.Time{}, false
+	}
+	hour, _ := strconv.Atoi(m[1])
+	minute := 0
+	if m[2] != "" {
+		minute, _ = strconv.Atoi(m[2])
+	}
+	ampm := m[3]
+	tzname := m[4]
+
+	if ampm == "pm" && hour < 12 {
+		hour += 12
+	} else if ampm == "am" && hour == 12 {
+		hour = 0
+	}
+
+	loc, err := time.LoadLocation(tzname)
+	if err != nil {
+		return time.Time{}, false
+	}
+	now := time.Now().In(loc)
+	reset := time.Date(now.Year(), now.Month(), now.Day(), hour, minute, 0, 0, loc)
+	if !reset.After(now) {
+		reset = reset.Add(24 * time.Hour)
+	}
+	// 60s buffer so we don't race the actual reset
+	return reset.Add(60 * time.Second), true
+}
+
 func runClaude(ctx context.Context, prompt string) (string, error) {
 	var lastErr error
 	for attempt := 1; attempt <= claudeMaxAttempts; attempt++ {
@@ -573,6 +691,18 @@ func runClaude(ctx context.Context, prompt string) (string, error) {
 		// and burning attempts here just delays the inevitable.
 		if strings.Contains(err.Error(), "Not logged in") {
 			return "", errClaudeAuth
+		}
+		// Session-limit (429 with reset time). Set the shared resume
+		// signal so other workers also wait, and return the sentinel
+		// so the extract-all worker can sleep until reset using the
+		// abortCtx (which doesn't have a per-RFC timeout) and retry
+		// without counting this as a real failure.
+		if strings.Contains(err.Error(), "session limit") {
+			if resetAt, ok := parseSessionLimitReset(err.Error()); ok {
+				setSessionResume(resetAt)
+				return "", fmt.Errorf("%w: resume at %s", errClaudeSessionLimit, resetAt.Format(time.RFC3339))
+			}
+			return "", fmt.Errorf("%w (couldn't parse reset time): %v", errClaudeSessionLimit, err)
 		}
 		lastErr = err
 		if attempt < claudeMaxAttempts {
