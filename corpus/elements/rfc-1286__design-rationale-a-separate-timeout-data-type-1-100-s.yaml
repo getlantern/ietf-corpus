@@ -1,0 +1,8 @@
+document: rfc-1286
+kind: design-rationale
+summary: A separate Timeout data type (1/100 s units) was defined instead of using the BPDU wire units (1/256 s) to avoid ambiguity and value distortion caused by repeated unit conversions across management protocol boundaries. A specific algorithm (multiply-then-divide with floor/ceiling) is mandated.
+section: "5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

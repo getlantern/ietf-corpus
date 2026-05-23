@@ -1,0 +1,9 @@
+document: rfc-1289
+kind: security-consideration
+summary: Section 7 of the RFC addresses security considerations. Several objects in this MIB have read-write access (including phivSystemState, phivEndRemoteState, and circuit parameters), meaning unauthorized SNMP write access could alter the operational state of DECnet nodes and circuits. Implementers should apply the community-based access controls provided by SNMPv1 (RFC 1157) to restrict write access.
+section: "7"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

@@ -1,0 +1,9 @@
+document: rfc-1289
+kind: design-rationale
+summary: 'Two distinct buffer size parameters are defined: phivRouteBuffSize (maximum Routing layer forwarding size) and phivRouteSegBuffSize (maximum end-to-end segment size for End Communication layer). Both include an extra 6 bytes for backward compatibility with Phase III parameter definitions. The segment buffer size must be less than or equal to the buffer size; they may differ to allow rolling buffer size changes across the network without service interruption.'
+section: "4"
+topics:
+    - snmp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

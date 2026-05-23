@@ -1,0 +1,8 @@
+document: rfc-1286
+kind: design-rationale
+summary: dot1dSrPortLargestFrame and dot1dTpPortMaxInfo cannot reuse ifMtu because ifMtu is defined as the size available to the network layer, which may differ from the MAC-layer INFO field size when multiple encapsulation layers are used.
+section: "5.4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
