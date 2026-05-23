@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: design-rationale
+summary: The compression protocol uses a strictly simplex model—no information flows from decompressor back to compressor. This is the minimum topological requirement and supports deployment at intermediate gateways that may see only one direction of a TCP flow due to asymmetric routing. Error recovery is delegated entirely to TCP's retransmission mechanism rather than adding a compression-level recovery dialog.
+section: "2"
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

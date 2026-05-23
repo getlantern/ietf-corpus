@@ -1,0 +1,9 @@
+document: rfc-1139
+kind: normative-requirement
+summary: With two exceptions, all options present in the echo-request header are copied directly into the echo-reply header. The record route option is copied but its recorded routes are erased by resetting the second octet of the option to 3. The source route option present on the echo-request PDU is not copied into the echo-reply PDU.
+section: "5.4"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

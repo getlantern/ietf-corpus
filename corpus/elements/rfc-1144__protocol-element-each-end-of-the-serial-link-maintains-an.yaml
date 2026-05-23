@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: protocol-element
+summary: Each end of the serial link maintains an array of connection state slots (cstate structures), each holding a 128-byte copy of the last TCP/IP header seen for that connection plus a connection ID. The transmit side uses a circularly-linked LRU list for connection lookup and slot eviction. The receive side indexes slots directly by the connection number extracted from the packet.
+section: 3.2.1
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

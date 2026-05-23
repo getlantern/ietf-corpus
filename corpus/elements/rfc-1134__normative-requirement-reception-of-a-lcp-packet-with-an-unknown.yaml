@@ -1,0 +1,7 @@
+document: rfc-1134
+kind: normative-requirement
+summary: Reception of a LCP packet with an unknown Code MUST be reported back to the sender via a Code-Reject packet (Code=7) containing the rejected packet in the Rejected-Packet field. Upon receiving a Code-Reject, the implementation should immediately transition to the Closed state, as this is an unrecoverable error.
+section: 4.3.6
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: wire-format
+summary: 'A COMPRESSED_TCP packet consists of: a 1-byte change mask (C, I, P, S, A, W, U bits), an optional 1-byte connection number (when C bit is set), the unmodified 2-byte TCP checksum, and for each bit set in the change mask, a variable-length encoded delta value for that field. The change mask doubles as a header: C signals connection number follows, P copies the TCP PUSH bit, I/S/A/W/U indicate presence of IP ID/sequence/ack/window/urgent deltas respectively.'
+section: 3.2.2
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

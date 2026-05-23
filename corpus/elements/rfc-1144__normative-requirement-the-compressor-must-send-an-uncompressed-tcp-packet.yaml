@@ -1,0 +1,10 @@
+document: rfc-1144
+kind: normative-requirement
+summary: The compressor MUST send an UNCOMPRESSED_TCP packet (rather than COMPRESSED_TCP) whenever the delta in sequence number or acknowledgment number is negative or greater than 2^16−1, as this likely indicates a TCP retransmission which the decompressor needs to resynchronize state.
+section: 3.2.3
+rfc2119_level: MUST
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

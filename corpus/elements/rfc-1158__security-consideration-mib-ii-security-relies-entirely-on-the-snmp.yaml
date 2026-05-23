@@ -1,0 +1,9 @@
+document: rfc-1158
+kind: security-consideration
+summary: MIB-II security relies entirely on the SNMP community string model (RFC 1157), which provides trivial authentication and no confidentiality. Writable objects including ipForwarding and ipRoutingTable entries can be modified by any entity presenting a valid community string, posing risks such as unauthorized routing changes on managed gateways.
+section: "10"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

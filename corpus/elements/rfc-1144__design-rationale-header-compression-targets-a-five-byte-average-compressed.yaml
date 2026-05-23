@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: design-rationale
+summary: Header compression targets a five-byte average compressed header to keep typing traffic under 300 bps (the maximum assumed for full-duplex modem allocation heuristics). A typical typist sends five characters/second; a 300 bps budget leaves 25 bytes/second for headers, or five bytes per keystroke. Five-byte headers also allow small MTUs (100–200 bytes) that prevent bulk-data packets from blocking interactive traffic for more than ~20 ms.
+section: "2"
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

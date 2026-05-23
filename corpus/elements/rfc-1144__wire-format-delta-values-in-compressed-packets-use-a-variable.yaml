@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: wire-format
+summary: 'Delta values in compressed packets use a variable-length encoding: a non-zero byte encodes values 1–255 in a single byte; a zero byte signals a 3-byte extension where the next two bytes are the MSB and LSB of a 16-bit value. Values of zero are encoded as 0x00 0x00 0x00. This scheme handles the common case (small positive deltas) in one byte with a three-instruction encode/decode path.'
+section: 3.2.2
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

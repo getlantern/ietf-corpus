@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: design-rationale
+summary: The protocol is intentionally TCP-specific rather than general IP compression. UDP datagrams were considered but rejected because they lack datagram-to-datagram coherence (e.g., DNS queries) or the application-layer header dominates (e.g., NFS/RPC). Compressing IP and TCP headers separately was rejected because it increased average compressed header size by 50% and doubled code complexity.
+section: "1"
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

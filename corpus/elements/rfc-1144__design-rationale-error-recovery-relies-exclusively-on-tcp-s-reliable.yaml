@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: design-rationale
+summary: Error recovery relies exclusively on TCP's reliable delivery and retransmission mechanism rather than adding a decompressor-to-compressor resync request. Adding such a protocol would require bidirectional compression-layer signaling, constrain network topology, and would not work in practice because a line hit typically obliterates the compressed packet entirely, leaving the decompressor unaware that an error occurred.
+section: "4.2"
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

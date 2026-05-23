@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: interoperability-note
+summary: 'Appendix B describes two backwards-compatibility scenarios: (1) operating without a framing ''type'' byte, where the packet type must be inferred from the first byte of the packet using the TYPE_IP (0x40), TYPE_UNCOMPRESSED_TCP (0x70), and TYPE_COMPRESSED_TCP (0x80) values; and (2) interoperating with SLIP servers that do not support compression, requiring the compressor to be disabled or to detect non-compressing peers.'
+section: B
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

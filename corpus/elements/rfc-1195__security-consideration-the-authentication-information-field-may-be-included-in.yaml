@@ -1,0 +1,9 @@
+document: rfc-1195
+kind: security-consideration
+summary: The Authentication Information field may be included in any IS-IS PDU to authenticate the originator and contents of the entire packet. A packet carrying invalid authentication information must be discarded. When an LSP or SNP is split across multiple packets, each packet is authenticated independently. Authentication is optional; routers that do not implement it silently ignore the field.
+section: "3.9"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

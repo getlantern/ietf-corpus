@@ -1,0 +1,10 @@
+document: rfc-1144
+kind: security-consideration
+summary: Header compression removes nearly all redundancy from TCP and IP headers, so the decompressor will silently reconstruct plausible-but-incorrect TCP/IP packets from corrupted compressed input. The TCP checksum (passed through unmodified) detects sequence-number errors with 100% probability for the specific error pattern of a dropped compressed packet. However, cross-connection state contamination after a CRC error has an undetected probability of approximately 2^-16 per packet, mitigated by the toss-until-explicit-connection-number rule.
+section: "4.1"
+topics:
+    - tcp
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

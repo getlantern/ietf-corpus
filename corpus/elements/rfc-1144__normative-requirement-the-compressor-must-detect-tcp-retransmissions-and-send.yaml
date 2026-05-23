@@ -1,0 +1,10 @@
+document: rfc-1144
+kind: normative-requirement
+summary: 'The compressor MUST detect TCP retransmissions and send an UNCOMPRESSED_TCP packet to resynchronize the decompressor. Retransmission is inferred when: (a) the sequence number delta is negative, or (b) the sequence number is unchanged and the previous packet contained user data (zero-delta sequence number in a data packet indicates retransmit, not just a pure ack).'
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

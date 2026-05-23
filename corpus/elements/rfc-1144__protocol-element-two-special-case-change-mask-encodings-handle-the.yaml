@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: protocol-element
+summary: 'Two special-case change mask encodings handle the two most common traffic patterns without encoding individual deltas: SPECIAL_I (S|W|U bits set, A clear) signals echoed interactive traffic where both sequence and ack advance by the last packet''s data length; SPECIAL_D (S|A|W|U all set) signals unidirectional data transfer where only the sequence number advances by the last packet''s data length. These allow 3-byte compressed headers for these common cases.'
+section: 3.2.2
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

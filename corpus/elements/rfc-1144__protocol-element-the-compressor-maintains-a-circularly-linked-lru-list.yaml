@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: protocol-element
+summary: The compressor maintains a circularly-linked LRU list of connection states. On each packet, the most recently used connection is checked first (O(1) common case). On a cache miss, the list is searched linearly; if no state matches, the oldest (tail) state is evicted and reused, and an UNCOMPRESSED_TCP packet seeds the decompressor with the new connection's header.
+section: 3.2.1
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: design-rationale
+summary: The PUSH bit is transmitted explicitly in the change mask (P bit) rather than being compressed away, because PUSH can change in any datagram and the compression scheme is information-preserving. The TCP urgent pointer is similarly encoded when URG is set. If the urgent pointer changes with URG clear, an uncompressed packet is sent since this violates RFC 793 but must be handled robustly.
+section: 3.2.2
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

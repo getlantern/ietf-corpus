@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: interoperability-note
+summary: For lines where both interactive and bulk data traffic coexist, the MTU SHOULD be chosen to give a packet transmission time of approximately 200 ms. At 9600 bps this means an MTU of about 192 bytes. With header compression this yields 96% line efficiency; increasing the MTU to 576 bytes improves throughput by only 3% while increasing average interactive delay by 188%.
+section: "5.2"
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: state-machine
+summary: 'The compressor''s decision procedure: (1) non-TCP → TYPE_IP; (2) IP fragment (offset≠0 or MF bit set) → TYPE_IP; (3) SYN, FIN, RST set or ACK clear → TYPE_IP; (4) no matching connection state found → evict LRU slot, send UNCOMPRESSED_TCP; (5) fixed fields changed (TOS, TTL, options, etc.) → UNCOMPRESSED_TCP; (6) delta ack or delta seq out of [0, 2^16-1] → UNCOMPRESSED_TCP; (7) retransmission detected → UNCOMPRESSED_TCP; otherwise → COMPRESSED_TCP.'
+section: 3.2.3
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

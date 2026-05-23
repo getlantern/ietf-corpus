@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: interoperability-note
+summary: Data compression (e.g., Lempel-Ziv/modem compression) and header compression are complementary and do not interfere. Applying L-Z compression to data before TCP/IP encapsulation yields slightly better results (~3%) than compressing at the wire/modem level. Applying L-Z after header compression is safe; applying it twice (data and wire) is counterproductive on already-compressed data.
+section: "5.3"
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

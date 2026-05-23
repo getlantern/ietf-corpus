@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: design-rationale
+summary: 'The IP ID field is treated specially in the change mask: when the I bit is clear, the decompressor assumes the IP ID incremented by exactly one (not zero). This is because a delta of one is the common case when only one connection is active, making it worth eliding. A delta of zero is improbable enough that the zero encoding signals a 3-byte extension rather than ''no change''.'
+section: 3.2.2
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

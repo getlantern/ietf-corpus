@@ -1,0 +1,10 @@
+document: rfc-1144
+kind: normative-requirement
+summary: After receiving a CRC error indication from the framer, the decompressor MUST set the toss flag and discard all incoming COMPRESSED_TCP packets until it receives either a COMPRESSED_TCP packet with the C bit set (explicit connection number) or an UNCOMPRESSED_TCP packet. This prevents cross-connection state corruption from a missed connection-number packet.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

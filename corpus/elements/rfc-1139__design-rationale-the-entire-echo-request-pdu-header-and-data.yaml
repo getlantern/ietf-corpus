@@ -1,0 +1,8 @@
+document: rfc-1139
+kind: design-rationale
+summary: The entire echo-request PDU (header and data) is included in the data portion of the echo-reply so that fields such as the echo-request lifetime can be examined when the reply is received. This also ensures the record route recorded on the outbound path is not lost when the record route option is reset on the reply.
+section: "2.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

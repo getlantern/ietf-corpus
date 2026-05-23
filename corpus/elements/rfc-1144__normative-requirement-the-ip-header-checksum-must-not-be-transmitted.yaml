@@ -1,0 +1,10 @@
+document: rfc-1144
+kind: normative-requirement
+summary: The IP header checksum MUST NOT be transmitted in COMPRESSED_TCP packets. Instead, the decompressor regenerates it locally after reconstructing the full IP header. The TCP checksum, being an end-to-end integrity check, MUST be passed through unmodified.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

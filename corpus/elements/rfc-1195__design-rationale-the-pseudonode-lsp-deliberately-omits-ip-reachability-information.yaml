@@ -1,0 +1,9 @@
+document: rfc-1195
+kind: design-rationale
+summary: 'The pseudonode LSP deliberately omits IP reachability information because TCP/IP explicitly assigns subnet identifiers per LAN: hosts on one logical subnet cannot directly send to a router on a different logical subnet sharing the same physical LAN, so each router must announce its own reachable subnets independently.'
+section: "4.3"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

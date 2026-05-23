@@ -1,0 +1,9 @@
+document: rfc-1144
+kind: state-machine
+summary: 'The decompressor switches on packet type: TYPE_ERROR or unknown type sets a ''toss'' flag causing all subsequent COMPRESSED_TCP packets to be discarded until one with the C bit set or an UNCOMPRESSED_TCP arrives. TYPE_IP passes through unchanged. UNCOMPRESSED_TCP restores IPPROTO_TCP, clears the toss flag, and updates the state slot. COMPRESSED_TCP applies deltas to the saved header only if toss is clear; if C bit is set, updates the active connection.'
+section: 3.2.4
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

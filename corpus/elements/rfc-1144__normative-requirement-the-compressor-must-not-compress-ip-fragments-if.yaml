@@ -1,0 +1,10 @@
+document: rfc-1144
+kind: normative-requirement
+summary: 'The compressor MUST NOT compress IP fragments: if the IP fragment offset field is non-zero or the More Fragments bit is set, the packet MUST be sent as TYPE_IP. Only the first fragment contains the TCP header; compressing it would require expensive completeness checks.'
+section: 3.2.3
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

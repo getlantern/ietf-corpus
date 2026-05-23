@@ -1,0 +1,9 @@
+document: rfc-1158
+kind: design-rationale
+summary: The Address Translation group's atTable is deprecated because it assumes a single network protocol environment and one-directional (network-to-physical) mappings. Multi-protocol nodes and inverse mappings (required by ES-IS) invalidate those assumptions. MIB-II moves address translation into each protocol group (e.g., ipNetToMediaTable for IP).
+section: "3.5"
+topics:
+    - snmp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
