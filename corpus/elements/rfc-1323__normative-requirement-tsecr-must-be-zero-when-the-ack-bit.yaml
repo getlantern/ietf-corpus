@@ -1,0 +1,10 @@
+document: rfc-1323
+kind: normative-requirement
+summary: TSecr must be zero when the ACK bit is not set. A TSecr value received in a segment is used to update the averaged RTT estimate only if the segment acknowledges new data (advances the left edge of the send window), preventing RTT inflation from one-way data flow pauses.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

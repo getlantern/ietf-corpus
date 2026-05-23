@@ -1,0 +1,8 @@
+document: rfc-1323
+kind: design-rationale
+summary: PAWS was chosen over expanding the TCP sequence number field to 64 bits to solve sequence-space wrap-around at high speeds. PAWS reuses the Timestamps option already defined for RTTM, adding no new wire format and operating entirely within a single connection's state.
+section: "1.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

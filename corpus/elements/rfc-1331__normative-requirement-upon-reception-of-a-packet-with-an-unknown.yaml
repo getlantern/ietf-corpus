@@ -1,0 +1,10 @@
+document: rfc-1331
+kind: normative-requirement
+summary: Upon reception of a packet with an unknown LCP Code, the implementation MUST transmit a Code-Reject (Code=7) with the inducing packet copied to the Rejected-Information field, truncated to the peer's established maximum Information field length.
+section: "6.6"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

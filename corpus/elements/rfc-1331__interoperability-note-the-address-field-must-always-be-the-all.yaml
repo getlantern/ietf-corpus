@@ -1,0 +1,10 @@
+document: rfc-1331
+kind: interoperability-note
+summary: The Address field MUST always be the All-Stations address (0xFF) and MUST always be recognized. Frames with unrecognized Addresses SHOULD be silently discarded. The Control field MUST always be 0x03 (UI command); frames with other Control values SHOULD be silently discarded. Both may be compressed via LCP negotiation.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

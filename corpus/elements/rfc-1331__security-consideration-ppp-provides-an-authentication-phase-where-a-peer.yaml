@@ -1,0 +1,9 @@
+document: rfc-1331
+kind: security-consideration
+summary: PPP provides an Authentication phase where a peer must authenticate before network-layer protocol packets are exchanged. The authentication protocol (e.g., PAP at 0xC023 or CHAP at 0xC223) is negotiated via LCP during Link Establishment. On authentication failure, PPP SHOULD proceed to Link Termination.
+section: "4.5"
+topics:
+    - security
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

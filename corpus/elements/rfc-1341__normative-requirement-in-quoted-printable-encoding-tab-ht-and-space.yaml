@@ -1,0 +1,9 @@
+document: rfc-1341
+kind: normative-requirement
+summary: In Quoted-Printable encoding, TAB (HT) and SPACE characters MUST NOT appear at the end of an encoded line because some MTAs pad or strip trailing whitespace. When decoding, any trailing whitespace on a line must be deleted as it may have been added by intermediate transport agents.
+section: "5.1"
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

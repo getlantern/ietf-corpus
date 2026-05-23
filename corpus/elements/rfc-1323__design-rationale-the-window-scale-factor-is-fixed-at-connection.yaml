@@ -1,0 +1,8 @@
+document: rfc-1323
+kind: design-rationale
+summary: The Window Scale factor is fixed at connection open (SYN) rather than negotiated per-segment. Sending it in every segment was rejected because TCP options on pure ACK segments are not reliably delivered; fixing it at SYN reduces overhead at the cost of preventing mid-connection scale adjustments.
+section: "2.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

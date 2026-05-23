@@ -1,0 +1,10 @@
+document: rfc-1331
+kind: security-consideration
+summary: After exchange of Terminate packets, the implementation SHOULD signal the physical layer to disconnect, particularly in the case of authentication failure. The receiver of a Terminate-Request MUST NOT disconnect until at least one Restart time has passed after sending a Terminate-Ack.
+section: "4.7"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

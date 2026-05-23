@@ -1,0 +1,9 @@
+document: rfc-1331
+kind: design-rationale
+summary: LCP has no version field in the packet format. If a new version of LCP is needed, the design intention is to use a new Data Link Layer Protocol field value to differentiate versions. A correctly functioning LCP v1 implementation will respond to unknown Protocols with a recognizable v1 packet, providing a deterministic fallback for other version implementations.
+section: "6"
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

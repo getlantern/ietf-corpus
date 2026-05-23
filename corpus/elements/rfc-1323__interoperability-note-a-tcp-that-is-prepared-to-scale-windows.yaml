@@ -1,0 +1,8 @@
+document: rfc-1323
+kind: interoperability-note
+summary: A TCP that is prepared to scale windows should send WSopt even if its own desired scale factor is 1 (shift.cnt=0), to signal readiness for bidirectional scaling. Omitting WSopt from the SYN disables scaling in both directions for the connection.
+section: "2.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

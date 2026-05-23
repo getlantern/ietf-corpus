@@ -1,0 +1,8 @@
+document: rfc-1341
+kind: design-rationale
+summary: Nested Content-Transfer-Encodings are prohibited for multipart and message types to prevent data from being passed through encoding algorithms multiple times, which adds complexity to user agents and can obscure the basic structure of a message by requiring multiple decoding operations to determine its content types.
+section: "5"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

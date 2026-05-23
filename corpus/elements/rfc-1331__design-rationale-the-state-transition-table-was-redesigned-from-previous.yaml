@@ -1,0 +1,9 @@
+document: rfc-1331
+kind: design-rationale
+summary: The state transition table was redesigned from previous versions, which used a simplified non-deterministic FSA with detailed semantics that led to interoperability problems from differing interpretations. The current table expands up/down flags to explicit states and eliminates the active/passive paradigm, believed to interoperate with previous versions better than those versions interoperated with each other.
+section: "5.2"
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

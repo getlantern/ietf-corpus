@@ -1,0 +1,9 @@
+document: rfc-1323
+kind: normative-requirement
+summary: An implementation of PAWS must include a mechanism to invalidate TS.Recent when a connection has been idle for more than 24 days. Without this, a wrapped timestamp clock would cause PAWS to reject all segments on a long-idle connection, freezing it permanently.
+section: 4.2.3
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

@@ -1,0 +1,9 @@
+document: rfc-1323
+kind: normative-requirement
+summary: A TCP may send TSopt in other segments only if it received TSopt in the initial SYN for the connection. TSopt in a SYN,ACK must echo back the TSval from the SYN. A TSopt on a non-SYN segment where the option was not negotiated in the SYN must be ignored.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

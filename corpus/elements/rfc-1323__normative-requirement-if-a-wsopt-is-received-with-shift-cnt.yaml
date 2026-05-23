@@ -1,0 +1,9 @@
+document: rfc-1323
+kind: normative-requirement
+summary: If a WSopt is received with shift.cnt exceeding 14, the TCP should log the error but use 14 instead. The maximum window is bounded at 2**30 bytes to ensure that the left edge of the sender's window is always within 2**31 of the right edge of the receiver's window.
+section: "2.3"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

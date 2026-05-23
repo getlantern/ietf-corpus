@@ -1,0 +1,8 @@
+document: rfc-1323
+kind: design-rationale
+summary: Timestamp clock frequency was chosen in the range 1 ms–1 sec to satisfy both RTTM (needs resolution comparable to the retransmit timer, tens to hundreds of milliseconds) and PAWS (must tick once per 2**31 bytes; 1 ms clock works up to 8 Tbps). A 1 ms clock wraps its sign bit in 24.8 days, safely exceeding practical MSL values.
+section: 4.2.2
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

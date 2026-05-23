@@ -1,0 +1,8 @@
+document: rfc-1323
+kind: design-rationale
+summary: The timestamp check (PAWS, step H1) is recommended to precede header prediction (H2) despite an estimated 5–10% CPU savings from reversing the order. A probabilistic argument that an old duplicate cannot land exactly at the left window edge was not universally accepted, and the performance gain did not justify the hazard.
+section: 4.2.4
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

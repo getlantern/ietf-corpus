@@ -1,0 +1,10 @@
+document: rfc-1323
+kind: normative-requirement
+summary: 'PAWS rule R1: if SEG.TSval < TS.Recent and TS.Recent is valid, treat the segment as not acceptable—send an ACK per RFC-793 page 69 and drop the segment. The ACK is necessary to preserve TCP''s half-open connection detection.'
+section: 4.2.1
+rfc2119_level: MUST
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

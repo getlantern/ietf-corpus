@@ -1,0 +1,9 @@
+document: rfc-1333
+kind: normative-requirement
+summary: A Reporting-Period value of zero MUST be Nak'd by a peer that has sent or will send a Configure-Request with a zero Reporting-Period, replacing it with an appropriate non-zero value. A zero value means the peer generates LQRs immediately upon receiving one rather than maintaining a timer.
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

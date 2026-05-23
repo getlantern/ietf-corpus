@@ -1,0 +1,9 @@
+document: rfc-1323
+kind: protocol-element
+summary: Window scaling extends the effective TCP window to 32 bits by negotiating a shift count in SYN segments. On reception, SEG.WND is left-shifted by Snd.Wind.Scale to obtain TrueWindow; on transmission, RCV.WND is right-shifted by Rcv.Wind.Scale. All local window calculations (including the congestion window) use 32-bit quantities.
+section: "2.3"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
