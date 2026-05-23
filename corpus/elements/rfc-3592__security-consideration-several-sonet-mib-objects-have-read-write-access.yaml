@@ -1,0 +1,9 @@
+document: rfc-3592
+kind: security-consideration
+summary: Several SONET-MIB objects have read-write access (sonetMediumType, sonetMediumLineCoding, sonetMediumLineType, sonetMediumCircuitIdentifier, sonetMediumLoopbackConfig, sonetSESthresholdSet, sonetPathCurrentWidth). Unauthorized write access could disrupt SONET/SDH interfaces or corrupt performance statistics; SNMPv3 with authentication and privacy is recommended for management of these objects.
+section: "6"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

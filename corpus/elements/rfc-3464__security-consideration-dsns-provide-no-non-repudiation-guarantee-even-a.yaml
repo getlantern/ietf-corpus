@@ -1,0 +1,9 @@
+document: rfc-3464
+kind: security-consideration
+summary: 'DSNs provide no non-repudiation guarantee. Even a ''failed'' DSN cannot prove a message was not delivered: an SMTP race condition (connection dropped after DATA completes but before response is received) can cause duplicate delivery, resulting in both a successful delivery and a failure DSN for the same message.'
+section: "4.3"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

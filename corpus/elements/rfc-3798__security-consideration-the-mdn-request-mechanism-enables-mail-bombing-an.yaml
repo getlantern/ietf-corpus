@@ -1,0 +1,9 @@
+document: rfc-3798
+kind: security-consideration
+summary: 'The MDN request mechanism enables mail bombing: an attacker can send messages to unsuspecting recipients with a forged Disposition-Notification-To address, causing automatic MDN generation that floods the target mailbox. MDNs SHOULD NOT be sent automatically when the notification address differs from the envelope MAIL FROM.'
+section: "6.4"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

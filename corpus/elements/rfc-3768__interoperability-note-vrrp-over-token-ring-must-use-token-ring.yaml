@@ -1,0 +1,9 @@
+document: rfc-3768
+kind: interoperability-note
+summary: 'VRRP over token ring MUST use token ring functional addresses as the virtual MAC (mapped from VRID: VRID 1 → 03-00-02-00-00-00, with octets 3–4 = 0x4000 >> (VRID−1) in non-canonical format). Functional addresses cannot be used as MAC source addresses, so the real MAC is used as the source in advertisements.'
+section: "9.2"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

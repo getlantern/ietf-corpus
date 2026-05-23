@@ -1,0 +1,9 @@
+document: rfc-3464
+kind: privacy-consideration
+summary: DSNs may reveal confidential forwarding addresses (e.g., pager or wireless mailbox addresses). MTAs are encouraged to allow users to suppress this leakage by issuing 'relayed' DSNs, omitting Remote-* fields, or using NOTIFY=NEVER on the forwarded message. Non-compliant downstream MTAs that honor Return-Receipt-To headers cannot be controlled.
+section: "4.2"
+topics:
+    - email
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

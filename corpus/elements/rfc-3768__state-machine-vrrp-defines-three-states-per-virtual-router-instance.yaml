@@ -1,0 +1,8 @@
+document: rfc-3768
+kind: state-machine
+summary: 'VRRP defines three states per virtual router instance: Initialize (awaits Startup event), Backup (monitors Master availability via Master_Down_Timer), and Master (forwards packets and sends periodic ADVERTISEMENTs). Transitions: Initialize→Master or Initialize→Backup on Startup; Backup→Master when Master_Down_Timer fires; Master→Backup when higher-priority ADVERTISEMENT received; either active state→Initialize on Shutdown.'
+section: "6.3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

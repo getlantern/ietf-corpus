@@ -1,0 +1,8 @@
+document: rfc-3592
+kind: design-rationale
+summary: The delay-line approach (Appendix A) was introduced to avoid requiring retroactive counter adjustments when available/unavailable time boundaries are detected. An agent passes one-second statistics through a 10-element delay line before updating any counters, removing the need to retroactively modify ES, SES, CV, and UAS counts.
+section: "3.5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
