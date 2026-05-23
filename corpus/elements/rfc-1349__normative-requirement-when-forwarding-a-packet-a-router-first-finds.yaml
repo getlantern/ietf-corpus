@@ -1,0 +1,11 @@
+document: rfc-1349
+kind: normative-requirement
+summary: When forwarding a packet, a router first finds candidate routes by destination address (longest match), then selects the route whose TOS exactly matches the packet's requested TOS. If no exact match exists, the route with the default TOS (0000) is chosen. If neither is available, the destination is unreachable.
+section: "7.2"
+rfc2119_level: SHOULD
+topics:
+    - ip
+    - qos
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

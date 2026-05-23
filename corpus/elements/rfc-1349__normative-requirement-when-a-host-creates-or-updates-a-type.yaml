@@ -1,0 +1,10 @@
+document: rfc-1349
+kind: normative-requirement
+summary: 'When a host creates or updates a type 2 route cache entry, it must flush any type 1 entries with the same destination, since the type 1 entry may be obsolete but would continue to be preferred. The converse does not hold: creating a type 1 entry should not flush type 2 entries.'
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

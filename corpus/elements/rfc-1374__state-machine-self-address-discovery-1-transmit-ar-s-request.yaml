@@ -1,0 +1,8 @@
+document: rfc-1374
+kind: state-machine
+summary: 'Self-address discovery: (1) transmit AR_S_Request to multicast address FE0h; (2) if AR_S_Request arrives back, extract own switch address from received I-field using bit 25 to distinguish logical-address from source-route mode; (3) if AR_S_Response arrives with own ULA in Destination_IEEE_Address, supersede any I-field-derived address with the agent-supplied Destination_Switch_Address.'
+section: Address Resolution/Discovery of One's Own Switch Address
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

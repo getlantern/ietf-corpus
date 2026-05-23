@@ -1,0 +1,9 @@
+document: rfc-1349
+kind: design-rationale
+summary: The TOS field was fixed at four bits (not three or five) to permanently resolve the RFC-791 vs. RFC-1122 conflict, allow the new 'minimize monetary cost' value (0001) without touching RFC-791 bit positions, and leave one IP header bit free for other future use. Fixing the size permanently is necessary to prevent routing loops when routers disagree on TOS field width.
+section: B.2
+topics:
+    - ip
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

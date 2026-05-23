@@ -1,0 +1,9 @@
+document: rfc-1349
+kind: design-rationale
+summary: The fundamental design rule is that a host should never be penalized for using the TOS facility. If a network cannot provide the requested TOS, it must deliver the packet as if no TOS bits were set, rather than discarding it. This was considered essential for ensuring the facility would actually be deployed.
+section: "2"
+topics:
+    - ip
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

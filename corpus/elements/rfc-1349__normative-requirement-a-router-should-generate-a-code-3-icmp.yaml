@@ -1,0 +1,10 @@
+document: rfc-1349
+kind: normative-requirement
+summary: A router SHOULD generate a code 3 ICMP Redirect (redirect for type of service and host) when the redirect applies only to packets requesting a particular TOS, and code 1 when the optimal next hop is the same for any TOS. Routers should refrain from using codes 0 and 2 in Redirects.
+section: "6.2"
+rfc2119_level: SHOULD
+topics:
+    - ip
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

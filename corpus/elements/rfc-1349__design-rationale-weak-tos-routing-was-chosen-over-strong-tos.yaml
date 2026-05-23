@@ -1,0 +1,10 @@
+document: rfc-1349
+kind: design-rationale
+summary: Weak TOS routing was chosen over Strong TOS (which would discard packets if no route with the requested TOS exists, penalizing hosts for using TOS) and Very Weak TOS (which falls back to the numerically smallest TOS, an unjustifiable heuristic). Weak TOS falls back to the default route, consistent with OSPF and IS-IS.
+section: B.3
+topics:
+    - ip
+    - qos
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

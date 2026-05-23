@@ -1,0 +1,8 @@
+document: rfc-1374
+kind: design-rationale
+summary: Camp-on is required on connection attempts so that a rejection unambiguously signals an error (bad I-field or offline Destination) rather than a temporary busy condition; without Camp-on, a rejection is ambiguous and Sources should not treat it as an error.
+section: Camp-on
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

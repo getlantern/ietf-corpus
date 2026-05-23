@@ -1,0 +1,8 @@
+document: rfc-1376
+kind: design-rationale
+summary: Because PPP (like Ethernet) does not guarantee delivery, whereas DDCMP does, the routing update retransmit interval should be configurable per interface. Digital's default for DDCMP is 600 seconds and for Ethernet is 10 seconds; PPP interfaces should allow tuning based on actual link error rates.
+section: "5"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

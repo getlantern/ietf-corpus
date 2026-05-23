@@ -1,0 +1,10 @@
+document: rfc-1349
+kind: design-rationale
+summary: Longest-match destination routing is retained as the primary criterion, with TOS as a secondary tie-breaker. This matches Internet routing tradition and avoids the misconfiguration risk of the alternative (TOS-first) approach, where packets that should be delivered locally could follow a default route into the Internet.
+section: B.4
+topics:
+    - ip
+    - qos
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
