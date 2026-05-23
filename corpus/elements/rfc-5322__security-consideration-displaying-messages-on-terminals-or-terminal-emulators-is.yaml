@@ -1,0 +1,9 @@
+document: rfc-5322
+kind: security-consideration
+summary: Displaying messages on terminals or terminal emulators is dangerous because escape sequences and US-ASCII control characters may remap keyboards, trigger answerback messages causing commands to be issued on the recipient's behalf, or affect attached devices like printers. Implementations should strip potentially dangerous escape sequences before display but must not do so indiscriminately.
+section: "5"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

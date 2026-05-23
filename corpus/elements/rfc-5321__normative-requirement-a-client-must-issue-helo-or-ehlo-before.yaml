@@ -1,0 +1,9 @@
+document: rfc-5321
+kind: normative-requirement
+summary: A client MUST issue HELO or EHLO before starting a mail transaction. Mail transaction commands (MAIL, RCPT, DATA) MUST be used in their specified order; a RCPT command without a prior MAIL command MUST receive a 503 response.
+section: 4.1.1.1
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

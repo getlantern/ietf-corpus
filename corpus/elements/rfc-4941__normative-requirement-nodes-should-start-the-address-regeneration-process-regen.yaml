@@ -1,0 +1,10 @@
+document: rfc-4941
+kind: normative-requirement
+summary: Nodes SHOULD start the address regeneration process REGEN_ADVANCE time units before a temporary address would actually be deprecated, to avoid race conditions during DAD. A new randomized interface identifier SHOULD be generated at least once every (TEMP_PREFERRED_LIFETIME - REGEN_ADVANCE - DESYNC_FACTOR) time units.
+section: "3.4"
+rfc2119_level: SHOULD
+topics:
+    - ip
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

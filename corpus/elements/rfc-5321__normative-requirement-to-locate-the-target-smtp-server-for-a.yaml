@@ -1,0 +1,10 @@
+document: rfc-5321
+kind: normative-requirement
+summary: To locate the target SMTP server for a domain, senders MUST query DNS for MX records; if no MX records exist, an A or AAAA record lookup MAY be used. MX hosts MUST be tried in preference order (lowest number first), with equal-priority hosts load-balanced randomly.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - email
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

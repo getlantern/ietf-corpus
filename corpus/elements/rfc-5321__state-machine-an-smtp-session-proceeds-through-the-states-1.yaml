@@ -1,0 +1,8 @@
+document: rfc-5321
+kind: state-machine
+summary: 'An SMTP session proceeds through the states: (1) connection opened, server sends 220 greeting; (2) client issues EHLO/HELO, transitioning to initial state with buffers cleared; (3) MAIL command begins a transaction; (4) one or more RCPT commands add recipients; (5) DATA command transfers message body, ending with <CRLF>.<CRLF>; (6) 250 OK confirms delivery responsibility; RSET or QUIT resets or terminates.'
+section: "3.3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

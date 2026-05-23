@@ -1,0 +1,11 @@
+document: rfc-4941
+kind: normative-requirement
+summary: When processing a Router Advertisement with a global-scope Prefix Information option with A bit set, the node MUST perform DAD on every generated temporary address. If DAD detects a collision, the node MUST generate a new randomized interface identifier and retry up to TEMP_IDGEN_RETRIES times; after exhausting retries it MUST log a system error and MUST NOT generate further temporary addresses for that interface.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - ip
+    - privacy
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

@@ -1,0 +1,9 @@
+document: rfc-5531
+kind: design-rationale
+summary: RPC does not implement reliability; applications running over unreliable transports (UDP) must implement their own timeouts, retransmission, and duplicate detection. Over TCP, a reply implies exactly-once execution, but no reply does not imply non-execution.
+section: "5"
+topics:
+    - udp
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

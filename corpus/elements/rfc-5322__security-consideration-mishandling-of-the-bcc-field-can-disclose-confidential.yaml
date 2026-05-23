@@ -1,0 +1,10 @@
+document: rfc-5322
+kind: security-consideration
+summary: 'Mishandling of the ''Bcc:'' field can disclose confidential recipient addresses. Under the first Bcc method (stripping the Bcc: line), a blind recipient may accidentally reveal their receipt by replying-all; under the second method (individual copies), if a single Bcc: copy lists all blind recipients, all of them become visible to each other.'
+section: "5"
+topics:
+    - email
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

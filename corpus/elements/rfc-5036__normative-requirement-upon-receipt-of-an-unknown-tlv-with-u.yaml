@@ -1,0 +1,10 @@
+document: rfc-5036
+kind: normative-requirement
+summary: Upon receipt of an unknown TLV with U-bit clear (=0), a notification MUST be returned and the entire message MUST be ignored. If U-bit is set (=1), the unknown TLV MUST be silently ignored and processing continues; if F-bit is also set, the TLV is forwarded opaquely.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

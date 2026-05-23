@@ -1,0 +1,9 @@
+document: rfc-4941
+kind: design-rationale
+summary: Using a history value (the rightmost 64 bits of a previous MD5 computation) rather than purely random generation avoids the scenario where two nodes with a flawed RNG generate the same randomized identifier repeatedly; the globally unique IEEE identifier in the input ensures divergent sequences after a collision.
+section: 3.2.1
+topics:
+    - privacy
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
