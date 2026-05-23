@@ -1,0 +1,8 @@
+document: rfc-1116
+kind: state-machine
+summary: MODE negotiation resolves via the MODE_ACK bit. When a MODE with MODE_ACK is received and differs from current mode, the client ignores the new mode while the server switches to it. No response is ever generated to a MODE command bearing MODE_ACK. This ensures both sides converge to the same mode.
+section: "2.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

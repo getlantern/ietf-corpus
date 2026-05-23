@@ -1,0 +1,8 @@
+document: rfc-1116
+kind: state-machine
+summary: 'SLC negotiation follows a defined resolution diagram. When an SLC command is received: (1) ignore if same as current settings; (2) if same level but different value and SLC_ACK is set, server ignores and client switches silently; (3) agree → switch and reply with SLC_ACK set; (4) disagree → reply with preferred value at a lower level without SLC_ACK.'
+section: "5.5"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

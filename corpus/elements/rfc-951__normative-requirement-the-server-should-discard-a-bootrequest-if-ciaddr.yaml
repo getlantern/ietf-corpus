@@ -1,0 +1,9 @@
+document: rfc-951
+kind: normative-requirement
+summary: The server should discard a bootrequest if ciaddr is zero and the client's hardware address (chaddr/hlen/htype) cannot be found in the server's database. If the requested boot filename is non-null but no matching file exists, the packet should also be discarded.
+section: "7.3"
+rfc2119_level: SHOULD
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

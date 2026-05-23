@@ -1,0 +1,9 @@
+document: rfc-5681
+kind: state-machine
+summary: 'TCP transitions between slow start (cwnd < ssthresh, exponential growth: cwnd += min(N, SMSS) per ACK) and congestion avoidance (cwnd > ssthresh, linear growth: ~1 SMSS per RTT). On retransmission timeout, TCP returns to slow start with cwnd = LW = 1 segment.'
+section: "3.1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

@@ -1,0 +1,10 @@
+document: rfc-5681
+kind: design-rationale
+summary: The restart window RW is defined as min(IW, cwnd) rather than IW alone, because using the last received segment time (rather than last sent) to detect idleness can fail for persistent HTTP connections where the server receives a request before sending data, bypassing the idle check.
+section: "4.1"
+topics:
+    - tcp
+    - congestion
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

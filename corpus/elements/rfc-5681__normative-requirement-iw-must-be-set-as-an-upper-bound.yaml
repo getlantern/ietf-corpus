@@ -1,0 +1,10 @@
+document: rfc-5681
+kind: normative-requirement
+summary: 'IW MUST be set as an upper bound: 2*SMSS (max 2 segments) if SMSS > 2190 bytes; 3*SMSS (max 3 segments) if 1095 < SMSS <= 2190; 4*SMSS (max 4 segments) if SMSS <= 1095. The SYN/ACK and its acknowledgment MUST NOT increase cwnd.'
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

@@ -1,0 +1,9 @@
+document: rfc-1116
+kind: security-consideration
+summary: RFC 1116 contains no explicit Security Considerations section. The protocol's signal-trapping mechanism (TRAPSIG) controls whether interrupt signals (IP, BRK, ABORT) are forwarded as Telnet commands or as literal characters, which affects the ability of either side to abort remote processes; misconfiguration could allow unintended process termination or prevent legitimate interrupts from being delivered.
+section: "2.2"
+topics:
+    - security
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

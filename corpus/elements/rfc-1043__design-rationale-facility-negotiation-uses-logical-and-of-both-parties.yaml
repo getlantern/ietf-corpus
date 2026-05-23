@@ -1,0 +1,8 @@
+document: rfc-1043
+kind: design-rationale
+summary: Facility negotiation uses logical AND of both parties' capability bitmaps rather than a request-confirm handshake, allowing either party to initiate without confusion. The initiator sends its map and awaits the peer's map; the responder must reply. Either party may reduce negotiated facilities at any time by resending its facility subcommand.
+section: "5"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

@@ -1,0 +1,9 @@
+document: rfc-5681
+kind: design-rationale
+summary: Fast recovery skips slow start because receipt of duplicate ACKs indicates segments are still leaving the network and being buffered at the receiver — the ACK clock is preserved. Slow start would be overly conservative since the network is not fully congested.
+section: "3.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

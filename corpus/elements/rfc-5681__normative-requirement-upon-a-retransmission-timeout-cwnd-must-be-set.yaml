@@ -1,0 +1,10 @@
+document: rfc-5681
+kind: normative-requirement
+summary: Upon a retransmission timeout, cwnd MUST be set to no more than the loss window LW, which equals 1 full-sized segment regardless of IW. TCP then uses slow start to increase cwnd back to ssthresh.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

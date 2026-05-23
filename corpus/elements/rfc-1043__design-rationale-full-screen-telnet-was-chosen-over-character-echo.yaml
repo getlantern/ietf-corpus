@@ -1,0 +1,8 @@
+document: rfc-1043
+kind: design-rationale
+summary: Full-screen TELNET was chosen over character-echo mode because each keystroke in character-echo mode generates a full IP datagram for the character plus a return datagram for the echo, which is costly in both time and network utilization. Forms-based full-screen interaction dramatically reduces datagram count. DODIIS policy discourages remote character echo.
+section: "4"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

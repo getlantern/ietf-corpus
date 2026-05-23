@@ -1,0 +1,9 @@
+document: rfc-5681
+kind: design-rationale
+summary: ssthresh on timeout uses FlightSize rather than cwnd because cwnd can incidentally grow beyond rwnd in some implementations. Using FlightSize ensures ssthresh reflects the actual amount of data believed to be in the network at the time of loss.
+section: "3.1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

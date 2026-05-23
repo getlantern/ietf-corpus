@@ -1,0 +1,9 @@
+document: rfc-951
+kind: design-rationale
+summary: Two reserved UDP ports (67 and 68) are used rather than one to avoid waking up BOOTP server daemons when a bootreply must be broadcast. Hosts not running the server will not listen on port 68, so incoming broadcasts on that port are filtered at the kernel level. A randomly chosen source port would risk confusing other hosts listening on that port.
+section: "3"
+topics:
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

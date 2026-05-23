@@ -1,0 +1,10 @@
+document: rfc-5681
+kind: security-consideration
+summary: An attacker can impair TCP performance by causing packet or ACK loss, or by forging excessive duplicate ACKs, forcing the sender to reduce its congestion window. Byte counting (ABC) is recommended to counter the ACK Division attack where bogus partial ACKs artificially inflate cwnd.
+section: "5"
+topics:
+    - tcp
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

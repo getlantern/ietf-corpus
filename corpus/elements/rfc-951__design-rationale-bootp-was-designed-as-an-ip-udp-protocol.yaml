@@ -1,0 +1,9 @@
+document: rfc-951
+kind: design-rationale
+summary: BOOTP was designed as an IP/UDP protocol rather than a hardware link-level protocol (unlike RARP) so it can be implemented without kernel or driver modifications. RARP required such modifications because it operated below the IP layer, making it impractical across diverse network kernel implementations.
+section: "6"
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

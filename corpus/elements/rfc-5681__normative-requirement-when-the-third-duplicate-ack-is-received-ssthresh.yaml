@@ -1,0 +1,10 @@
+document: rfc-5681
+kind: normative-requirement
+summary: When the third duplicate ACK is received, ssthresh MUST be set to no more than max(FlightSize/2, 2*SMSS), the lost segment MUST be retransmitted, and cwnd set to ssthresh plus 3*SMSS to reflect the three segments that have left the network.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

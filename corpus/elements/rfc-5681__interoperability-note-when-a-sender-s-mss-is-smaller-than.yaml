@@ -1,0 +1,9 @@
+document: rfc-5681
+kind: interoperability-note
+summary: When a sender's MSS is smaller than the receiver's RMSS (e.g., due to path MTU discovery), receivers that wait for 2*RMSS bytes before ACKing will generate stretch ACKs spanning more than 2 sender segments, impairing congestion control. Receivers should ACK at least every second segment regardless of size.
+section: "4.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

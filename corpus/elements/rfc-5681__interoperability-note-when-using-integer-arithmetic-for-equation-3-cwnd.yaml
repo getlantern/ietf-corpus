@@ -1,0 +1,9 @@
+document: rfc-5681
+kind: interoperability-note
+summary: When using integer arithmetic for equation (3) (cwnd += SMSS*SMSS/cwnd) during congestion avoidance, the result can be zero when cwnd > SMSS*SMSS. Implementations SHOULD round up to 1 byte in this case to ensure cwnd continues to grow.
+section: "3.1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

@@ -1,0 +1,8 @@
+document: rfc-1073
+kind: security-consideration
+summary: The mandatory doubling of IAC (0xFF) bytes within the subnegotiation payload is the sole in-band integrity mechanism; failure to double would allow window-size data containing 0xFF to be misinterpreted as a Telnet command, corrupting the command stream.
+section: "2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

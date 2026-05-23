@@ -1,0 +1,10 @@
+document: rfc-5681
+kind: normative-requirement
+summary: A TCP SHOULD set cwnd to no more than RW = min(IW, cwnd) before beginning transmission if TCP has not sent data in an interval exceeding the retransmission timeout, to avoid inappropriate cwnd-sized bursts after idle periods.
+section: "4.1"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

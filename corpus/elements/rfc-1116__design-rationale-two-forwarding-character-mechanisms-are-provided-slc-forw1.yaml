@@ -1,0 +1,8 @@
+document: rfc-1116
+kind: design-rationale
+summary: Two forwarding character mechanisms are provided (SLC_FORW1/FORW2 and FORWARDMASK) to match varying terminal driver capabilities. FORW1/FORW2 map directly to typical OS line-delimiter settings, while FORWARDMASK is a general 256-bit mask. An implementation may accept a FORWARDMASK and legally forward on a superset of the requested characters if its terminal driver cannot forward on the exact set.
+section: "5.6"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

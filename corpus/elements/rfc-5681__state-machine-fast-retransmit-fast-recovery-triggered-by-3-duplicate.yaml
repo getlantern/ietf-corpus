@@ -1,0 +1,9 @@
+document: rfc-5681
+kind: state-machine
+summary: 'Fast retransmit/fast recovery: triggered by 3 duplicate ACKs — ssthresh set, lost segment retransmitted, cwnd = ssthresh + 3*SMSS; each further dup ACK increments cwnd by SMSS; on new ACK cwnd deflated to ssthresh and congestion avoidance resumes.'
+section: "3.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

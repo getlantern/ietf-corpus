@@ -1,0 +1,10 @@
+document: rfc-5681
+kind: normative-requirement
+summary: When segment loss is detected by the retransmission timer and the segment has not yet been retransmitted via that timer, ssthresh MUST be set to no more than max(FlightSize/2, 2*SMSS). On subsequent retransmissions of the same segment, ssthresh is held constant.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

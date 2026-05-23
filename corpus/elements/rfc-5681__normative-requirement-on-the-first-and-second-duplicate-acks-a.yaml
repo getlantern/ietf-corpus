@@ -1,0 +1,10 @@
+document: rfc-5681
+kind: normative-requirement
+summary: On the first and second duplicate ACKs, a TCP SHOULD send a segment of previously unsent data per Limited Transmit (RFC 3042), provided the receiver's window allows and FlightSize would not exceed cwnd plus 2*SMSS. The sender MUST NOT change cwnd for these two segments.
+section: "3.2"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

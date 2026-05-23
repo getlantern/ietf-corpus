@@ -1,0 +1,11 @@
+document: rfc-5681
+kind: normative-requirement
+summary: During slow start, TCP SHOULD increment cwnd per 'cwnd += min(N, SMSS)' where N is the number of previously unacknowledged bytes newly acknowledged. This Appropriate Byte Counting approach provides robustness against ACK Division attacks.
+section: "3.1"
+rfc2119_level: RECOMMENDED
+topics:
+    - tcp
+    - congestion
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

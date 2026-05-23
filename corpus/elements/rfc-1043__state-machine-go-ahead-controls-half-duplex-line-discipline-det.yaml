@@ -1,0 +1,8 @@
+document: rfc-1043
+kind: state-machine
+summary: 'GO-AHEAD controls half-duplex line discipline: DET starts with the application holding GO-AHEAD. The application passes GO-AHEAD to the terminal by sending a transmit subcommand followed by the TELNET GO-AHEAD signal. The terminal returns GO-AHEAD (with form data) when the user enters a function key or ''form-complete''. When the application holds GO-AHEAD, only TELNET commands (IP, AO, BREAK, AYT) are valid from the terminal; when the terminal holds GO-AHEAD, the application may send only out-of-context data, MOVE-CURSOR, and FORMAT-DATA for protected fields.'
+section: "5"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

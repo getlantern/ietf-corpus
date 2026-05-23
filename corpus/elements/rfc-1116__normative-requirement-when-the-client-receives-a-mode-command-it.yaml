@@ -1,0 +1,9 @@
+document: rfc-1116
+kind: normative-requirement
+summary: When the client receives a MODE command, it MUST agree with at least the state of the EDIT and TRAPSIG bits. If the server receives a MODE with EDIT or TRAPSIG not set, it may set them in response; if the client receives a MODE with EDIT or TRAPSIG set, it may not clear them in the response.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

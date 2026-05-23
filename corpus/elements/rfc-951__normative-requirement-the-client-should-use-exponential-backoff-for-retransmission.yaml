@@ -1,0 +1,10 @@
+document: rfc-951
+kind: normative-requirement
+summary: The client should use exponential backoff for retransmission to avoid flooding the network, particularly during power-failure recovery when many machines boot simultaneously. After the average backoff reaches approximately 60 seconds it should not increase further, but randomization should continue.
+section: "7.2"
+rfc2119_level: SHOULD
+topics:
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

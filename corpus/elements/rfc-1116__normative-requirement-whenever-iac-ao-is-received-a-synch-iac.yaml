@@ -1,0 +1,9 @@
+document: rfc-1116
+kind: normative-requirement
+summary: Whenever IAC AO is received, a Synch (IAC DM as TCP urgent data) MUST be returned. During Synch processing while in TCP Urgent mode, all data MUST be discarded (but not Telnet commands) until IAC DM is found and Urgent mode exits.
+section: "5.8"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

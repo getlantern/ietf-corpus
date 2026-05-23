@@ -1,0 +1,10 @@
+document: rfc-5681
+kind: normative-requirement
+summary: During advanced loss recovery, when the first loss in a window is detected ssthresh MUST be set per equation (4); transmission MUST be no more than half the outstanding segments per RTT until all losses are repaired; and cwnd MUST be set to no more than ssthresh after recovery with congestion avoidance used thereafter.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

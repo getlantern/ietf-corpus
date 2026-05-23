@@ -1,0 +1,9 @@
+document: rfc-1116
+kind: normative-requirement
+summary: 'When sending IP, BRK, or ABORT with SLC_FLUSHIN set, the sequence ''IAC XXX IAC DM IAC DO TIMING-MARK'' should be used: IAC DM is sent as TCP urgent data to flush the input stream, and TIMING-MARK is used to delimit output flushing until WILL/WONT TIMING-MARK is received.'
+section: "5.8"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

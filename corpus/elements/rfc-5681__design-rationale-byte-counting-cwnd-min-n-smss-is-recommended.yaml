@@ -1,0 +1,10 @@
+document: rfc-5681
+kind: design-rationale
+summary: Byte counting (cwnd += min(N, SMSS)) is recommended over incrementing by a fixed constant per ACK because it defeats ACK Division attacks, where a misbehaving receiver sends multiple partial ACKs for a single segment to artificially inflate cwnd.
+section: "3.1"
+topics:
+    - tcp
+    - congestion
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

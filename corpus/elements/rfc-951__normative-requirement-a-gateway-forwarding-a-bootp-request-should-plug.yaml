@@ -1,0 +1,9 @@
+document: rfc-951
+kind: normative-requirement
+summary: A gateway forwarding a BOOTP request should plug its own IP address (on the receiving cable) into 'giaddr' if the field is zero, and should increment the 'hops' field on each forwarding. Packets with hops exceeding approximately 3 should be discarded to prevent broadcast loops.
+section: "8"
+rfc2119_level: SHOULD
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

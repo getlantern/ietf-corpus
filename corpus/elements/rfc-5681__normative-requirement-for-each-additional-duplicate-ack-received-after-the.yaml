@@ -1,0 +1,11 @@
+document: rfc-5681
+kind: normative-requirement
+summary: For each additional duplicate ACK received after the third, cwnd MUST be incremented by SMSS to reflect each additional segment known to have left the network. A TCP MAY limit this inflation to the number of outstanding segments to guard against duplicate ACK spoofing.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

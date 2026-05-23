@@ -1,0 +1,8 @@
+document: rfc-1116
+kind: interoperability-note
+summary: FLOW and ECHO are logically part of LINEMODE MODE but overlap existing Telnet options. FLOW is handled by the TOGGLE-FLOW-CONTROL option (RFC 1080), which SHOULD be co-negotiated with LINEMODE. ECHO is handled by the Telnet ECHO option (RFC 857); the client side MUST NEVER negotiate WILL ECHO.
+section: "2.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
