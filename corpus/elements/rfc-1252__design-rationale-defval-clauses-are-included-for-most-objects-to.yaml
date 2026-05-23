@@ -1,0 +1,8 @@
+document: rfc-1252
+kind: design-rationale
+summary: DEFVAL clauses are included for most objects to support conceptual row creation via SNMP Set-Request; management stations should include all read-write objects when creating a row, while agents need only require those objects for which no default can be intuited. Counter and Gauge objects lack DEFVAL because they are zeroed on row creation.
+section: "4.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

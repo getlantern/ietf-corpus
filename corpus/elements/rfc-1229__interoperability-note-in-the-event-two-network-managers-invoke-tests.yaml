@@ -1,0 +1,9 @@
+document: rfc-1229
+kind: interoperability-note
+summary: In the event two network managers invoke tests concurrently, the first test's results may be overwritten by the second test's results. A manager can detect this race by retrieving ifExtnsTestCommunity and ifExtnsTestRequestId simultaneously with the test results and verifying they match the original request.
+section: "4.2"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

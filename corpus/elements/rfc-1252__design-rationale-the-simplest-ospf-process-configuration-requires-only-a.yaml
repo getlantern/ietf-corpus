@@ -1,0 +1,9 @@
+document: rfc-1252
+kind: design-rationale
+summary: The simplest OSPF process configuration requires only a single SET of ospfAdminStat := enabled, after which the router automatically discovers all IP interfaces, assigns them to backbone area 0.0.0.0, derives TOS 0 metrics from ifSpeed, and uses default timer values (Hello 10s, Dead 40s, Retransmit 5s, Transit Delay 1s, Poll 120s).
+section: "4.4"
+topics:
+    - snmp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

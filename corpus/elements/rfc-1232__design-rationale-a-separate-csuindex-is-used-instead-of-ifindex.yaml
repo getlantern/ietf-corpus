@@ -1,0 +1,8 @@
+document: rfc-1232
+kind: design-rationale
+summary: A separate CSUIndex is used instead of ifIndex because multiple bit streams can be multiplexed onto a single DS1 CSU (producing multiple ifIndex values) or multiple CSUs can be concatenated into a single logical interface, making a many-to-one mapping between CSU indices and ifIndex necessary.
+section: "4.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
