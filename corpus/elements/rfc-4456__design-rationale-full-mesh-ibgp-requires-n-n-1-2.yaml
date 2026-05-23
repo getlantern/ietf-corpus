@@ -1,0 +1,9 @@
+document: rfc-4456
+kind: design-rationale
+summary: Full-mesh IBGP requires n*(n-1)/2 unique sessions for n speakers, which does not scale at large AS sizes. Route reflection relaxes the rule that IBGP-learned routes cannot be re-advertised to other IBGP peers, designating certain speakers as route reflectors to redistribute routes.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

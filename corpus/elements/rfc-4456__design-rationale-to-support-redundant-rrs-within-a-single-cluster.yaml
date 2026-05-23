@@ -1,0 +1,9 @@
+document: rfc-4456
+kind: design-rationale
+summary: To support redundant RRs within a single cluster without loops, all RRs in the same cluster share a configured 4-byte CLUSTER_ID. This allows each RR to discard routes that have already traversed the cluster by detecting its CLUSTER_ID in the CLUSTER_LIST, without treating the other RRs as foreign clusters.
+section: "7"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

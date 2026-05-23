@@ -1,0 +1,9 @@
+document: rfc-4502
+kind: design-rationale
+summary: The TimeFilter mechanism was introduced to allow management applications to retrieve only changed rows since their last poll, avoiding full table downloads. Agents are encouraged (but not required) to optimize MIB walks by skipping rows with a TimeFilter index higher than the GetNext/GetBulk request value, preventing walk storms in large tables.
+section: "6"
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

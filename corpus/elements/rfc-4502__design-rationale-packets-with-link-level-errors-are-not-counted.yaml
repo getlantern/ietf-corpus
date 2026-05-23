@@ -1,0 +1,9 @@
+document: rfc-4502
+kind: design-rationale
+summary: Packets with link-level errors are not counted anywhere in RMON2 because decoding packet contents is meaningless if there is a link-level error. Packets with protocol errors are counted for all protocols below the error layer, so transport-layer errors still yield valid network-layer statistics.
+section: "5.3"
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

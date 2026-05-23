@@ -1,0 +1,10 @@
+document: rfc-4271
+kind: normative-requirement
+summary: The Hold Time MUST be either zero or at least three seconds. Upon receipt of an OPEN message, the BGP speaker MUST calculate the Hold Time as the smaller of its configured value and the received value. An implementation MUST reject Hold Time values of one or two seconds.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

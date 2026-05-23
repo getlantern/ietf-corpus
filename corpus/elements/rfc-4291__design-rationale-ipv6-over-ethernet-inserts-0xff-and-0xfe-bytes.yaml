@@ -1,0 +1,9 @@
+document: rfc-4291
+kind: design-rationale
+summary: IPv6 over Ethernet inserts 0xFF and 0xFE bytes (not 0xFF/0xFF as literally defined for MAC-48 to EUI-64 conversion) due to a historical misunderstanding about IEEE MAC-48 vs. EUI-48 identifiers; the incorrect value is intentionally retained because IEEE EUI-48 and MAC-48 are syntactically equivalent and it causes no practical problems while preserving backward compatibility.
+section: Appendix A
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
