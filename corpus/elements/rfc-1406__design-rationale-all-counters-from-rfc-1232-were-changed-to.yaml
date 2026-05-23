@@ -1,0 +1,8 @@
+document: rfc-1406
+kind: design-rationale
+summary: All Counters from RFC 1232 were changed to Gauges. Counters that only increase are inappropriate for performance parameters accumulated within a fixed 15-minute measurement interval and then reset; Gauge is the correct SMI type for bounded, resettable values.
+section: "2.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

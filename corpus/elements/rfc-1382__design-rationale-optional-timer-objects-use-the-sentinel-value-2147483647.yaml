@@ -1,0 +1,8 @@
+document: rfc-1382
+kind: design-rationale
+summary: Optional timer objects use the sentinel value 2147483647 to indicate the timer is not in use (applied to T24 window timer, T25 data retransmission, T26 interrupt, T27 reject, and T28 registration timers). This avoids requiring a separate boolean object per optional feature.
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

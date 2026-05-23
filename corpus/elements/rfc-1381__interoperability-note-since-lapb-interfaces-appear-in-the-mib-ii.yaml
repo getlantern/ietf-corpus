@@ -1,0 +1,8 @@
+document: rfc-1381
+kind: interoperability-note
+summary: Since LAPB interfaces appear in the MIB-II ifTable, significant state transitions should generate standard linkUp or linkDown traps. Specifically, an interface that sends or receives a Frame Reject (FRMR) frame should send a linkDown trap; subsequent recovery should send a linkUp trap.
+section: "3.5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

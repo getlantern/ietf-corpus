@@ -1,0 +1,8 @@
+document: rfc-1388
+kind: design-rationale
+summary: 'Increasing the infinity metric beyond 15 was explicitly rejected because it would break backwards compatibility: older RIP implementations would be confused by a metric of 16 or higher, and repurposing the high three bytes of the Metric field would break implementations treating the metric as a 32-bit integer.'
+section: "4.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

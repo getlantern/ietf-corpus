@@ -1,0 +1,8 @@
+document: rfc-1381
+kind: interoperability-note
+summary: 'A system running X.25 over LAPB over a synchronous line will have at least two ifTable entries: one for LAPB (ifType lapb(16)) and one for the X.25 packet layer. The X.25 MIB object x25InfoDataLinkId references the lapbAdmnIndex of the LAPB interface below it; lapbOperPortId in turn references the RS-232-like interface below LAPB.'
+section: "3.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

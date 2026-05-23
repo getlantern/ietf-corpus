@@ -1,0 +1,10 @@
+document: rfc-1388
+kind: design-rationale
+summary: Authentication is implemented by consuming an entire route-entry slot (16 bytes) rather than fitting into the 2-byte header field, because any reasonable authentication scheme requires more than two bytes. This limits authenticated packets to a maximum of 24 route entries.
+section: "3.1"
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"

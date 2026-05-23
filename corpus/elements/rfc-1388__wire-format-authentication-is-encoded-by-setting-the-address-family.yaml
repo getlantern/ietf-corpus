@@ -1,0 +1,10 @@
+document: rfc-1388
+kind: wire-format
+summary: Authentication is encoded by setting the Address Family Identifier of the first route entry to 0xFFFF; the subsequent 2 bytes carry the Authentication Type and the remaining 16 bytes carry the authentication data (e.g., plain-text password, left-justified and null-padded). This consumes one full route-entry slot, leaving at most 24 route entries in an authenticated packet.
+section: "3.1"
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-23"
