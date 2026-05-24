@@ -1,0 +1,9 @@
+document: rfc-2765
+kind: design-rationale
+summary: A new IPv4-translated address form is introduced rather than reusing IPv4-compatible addresses (0::0:a.b.c.d) because IPv4-compatible addresses are reserved for automatic tunneling. Using them for SIIT would create ambiguity and cause packets to be encapsulated rather than forwarded through the translator.
+section: "2.1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

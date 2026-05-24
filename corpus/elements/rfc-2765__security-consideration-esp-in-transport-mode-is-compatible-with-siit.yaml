@@ -1,0 +1,11 @@
+document: rfc-2765
+kind: security-consideration
+summary: ESP in transport mode is compatible with SIIT because ESP does not depend on header fields prior to the ESP header and the translator does not modify headers above the IP layer. ESP tunnel mode requires the IPv6 node to parse and generate inner IPv4 headers, making it more complex but potentially feasible.
+section: "6"
+topics:
+    - security
+    - ip
+    - v6ops
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

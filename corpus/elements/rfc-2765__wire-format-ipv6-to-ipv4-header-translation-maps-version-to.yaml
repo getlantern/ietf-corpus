@@ -1,0 +1,9 @@
+document: rfc-2765
+kind: wire-format
+summary: IPv6-to-IPv4 header translation maps Version to 4, IHL to 5 (no options), TOS from IPv6 Traffic Class (8 bits), Total Length from IPv6 Payload Length plus 20, Identification to 0, DF flag set to 1, MF and Fragment Offset to 0, TTL from IPv6 Hop Limit, Protocol from IPv6 Next Header, Source Address from low-order 32 bits if IPv4-translated (else 0.0.0.0), and Destination Address from low-order 32 bits of IPv4-mapped destination.
+section: "4.1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

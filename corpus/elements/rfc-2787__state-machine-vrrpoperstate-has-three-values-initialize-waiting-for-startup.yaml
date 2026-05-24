@@ -1,0 +1,8 @@
+document: rfc-2787
+kind: state-machine
+summary: 'vrrpOperState has three values: initialize (waiting for startup event), backup (monitoring master availability), and master (forwarding packets for associated IP addresses). Transitions are triggered by setting vrrpOperAdminState to ''up'' (initialize→backup or master) or ''down'' (master or backup→initialize).'
+section: "3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

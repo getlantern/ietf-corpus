@@ -1,0 +1,8 @@
+document: rfc-2782
+kind: state-machine
+summary: 'Client SRV resolution procedure: (1) query SRV RR; (2) if NOERROR with SRV records, check for Target="." and abort; otherwise sort by priority, apply weighted selection per priority level, then connect; (3) if no SRV record found, fall back to A record lookup and attempt connection.'
+section: Usage rules
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

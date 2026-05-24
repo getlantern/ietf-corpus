@@ -1,0 +1,9 @@
+document: rfc-2782
+kind: normative-requirement
+summary: 'The following weighted random selection algorithm SHOULD be used for SRV RRs of equal priority: place weight-0 records first, compute a running sum of weights, pick a uniform random number in [0, sum], and select the first RR whose running sum is ≥ that number. Repeat until all RRs at that priority are ordered.'
+section: The format of the SRV RR
+rfc2119_level: SHOULD
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2765
+kind: wire-format
+summary: IPv4-to-IPv6 header translation maps Version to 6, Traffic Class from IPv4 TOS (8 bits), Flow Label to 0, Payload Length from IPv4 Total Length minus IPv4 header size, Next Header from IPv4 Protocol, Hop Limit from IPv4 TTL, Source Address to IPv4-mapped prefix (::ffff:0:0/96) with IPv4 source in low-order 32 bits, and Destination Address to IPv4-translated prefix (0::ffff:0:0:0/96) with IPv4 destination in low-order 32 bits.
+section: "3.1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

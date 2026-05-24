@@ -1,0 +1,8 @@
+document: rfc-2769
+kind: design-rationale
+summary: To enable reliable authorization re-verification after loading a snapshot, it is preferable to download an older snapshot (at minimum twice the repository expire time) rather than the most current one, so the replication protocol can fetch subsequent transactions that provide the necessary object version history.
+section: "7.5"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

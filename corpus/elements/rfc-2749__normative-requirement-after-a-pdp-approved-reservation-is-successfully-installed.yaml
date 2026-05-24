@@ -1,0 +1,9 @@
+document: rfc-2749
+kind: normative-requirement
+summary: After a PDP-approved reservation is successfully installed, the PEP notifies the PDP with a Report message of Commit type, signaling when billing may begin. If admission fails due to lack of resources despite PDP approval, the PEP must issue a no-commit report and revert to the prior state, or issue a DRQ if no prior state existed.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

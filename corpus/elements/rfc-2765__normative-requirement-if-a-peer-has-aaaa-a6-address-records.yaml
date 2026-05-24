@@ -1,0 +1,11 @@
+document: rfc-2765
+kind: normative-requirement
+summary: If a peer has AAAA/A6 address records, the application or resolver SHOULD never fall back to looking for A records even if communication fails using the available AAAA/A6 records. This prevents traffic between two IPv6 nodes from accidentally passing through SIIT translators twice.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - ip
+    - v6ops
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,11 @@
+document: rfc-2765
+kind: interoperability-note
+summary: The IPv6 protocol was designed so that TCP and UDP pseudo-header checksums are unaffected by SIIT translations, so the translator need not modify normal TCP or UDP headers. The only exceptions are unfragmented IPv4 UDP packets with zero checksum and all ICMP messages (which require checksum recalculation due to ICMPv6's pseudo-header checksum).
+section: "1.1"
+topics:
+    - ip
+    - v6ops
+    - tcp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2765
+kind: design-rationale
+summary: Fragmented UDP packets with zero checksum are dropped rather than translated because an informal backbone trace showed all 769 such packets (out of 34 million) were due to malicious or broken behavior (port scans, malformed fragments). The limitation is therefore not considered significant.
+section: "1.2"
+topics:
+    - ip
+    - v6ops
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2769
+kind: state-machine
+summary: 'Transaction processing on receipt: (1) decapsulate transaction-begin and decode, (2) check for duplicate/held and discard if so, (3) verify originating repository signature, (4) hold if prior sequence numbers are missing, (5) optionally accept trusted-repository integrity mark, (6) verify RPSL syntax, (7) authorize/authenticate or hold awaiting referenced objects.'
+section: "7.3"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

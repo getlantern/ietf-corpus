@@ -1,0 +1,9 @@
+document: rfc-2765
+kind: protocol-element
+summary: 'ICMPv4 Destination Unreachable code translation to ICMPv6: codes 0/1 (net/host unreachable) → ICMPv6 code 0; code 2 (protocol unreachable) → ICMPv6 Parameter Problem (4/1) with Pointer to Next Header; code 3 (port unreachable) → code 4; code 4 (fragmentation needed) → Packet Too Big (Type 2) with MTU adjusted for header size difference. MTU plateau values from RFC 1191 used when IPv4 router omits MTU field.'
+section: "3.3"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

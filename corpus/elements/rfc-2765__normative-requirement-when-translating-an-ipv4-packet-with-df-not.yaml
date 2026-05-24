@@ -1,0 +1,10 @@
+document: rfc-2765
+kind: normative-requirement
+summary: When translating an IPv4 packet with DF not set (or a fragment), the translator MUST always include an IPv6 Fragment header to indicate that the sender allows fragmentation. This is needed so that a subsequent IPv6-to-IPv4 translator knows not to set the DF flag.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

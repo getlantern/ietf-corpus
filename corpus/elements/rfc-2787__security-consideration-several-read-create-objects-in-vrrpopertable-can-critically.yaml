@@ -1,0 +1,9 @@
+document: rfc-2787
+kind: security-consideration
+summary: 'Several read-create objects in vrrpOperTable can critically affect VRRP operation if manipulated without authorization: vrrpOperAdminState can disable a virtual router; vrrpOperPrimaryIpAddr can assign an invalid IP to a master; authentication type/key objects can render VRRP security mechanisms ineffective. Disabling vrrpNotificationCntl nullifies auth-failure trap reporting.'
+section: "4"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

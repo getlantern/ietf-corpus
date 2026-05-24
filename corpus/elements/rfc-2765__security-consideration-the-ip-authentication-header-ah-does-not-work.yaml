@@ -1,0 +1,11 @@
+document: rfc-2765
+kind: security-consideration
+summary: The IP Authentication Header (AH) does not work through a SIIT translator because AH covers the IPv4 Identification field, and an IPv6 endpoint cannot determine the value of the IPv4 Identification field used in packets sent by the IPv4 node, making AH verification impossible.
+section: "6"
+topics:
+    - security
+    - ip
+    - v6ops
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2750
+kind: normative-requirement
+summary: When a multicast reservation fails for policy reasons, RSVP should deliver the policy ResvErr to ALL downstream hops rather than attempting to identify the culprit reservation (as Blockade State would). The PDP then decides which next-hops to inform and may suppress further propagation via local repair.
+section: "4.3"
+rfc2119_level: SHOULD
+topics:
+    - qos
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2765
+kind: design-rationale
+summary: The IPv4-translated prefix (0::ffff:0:0:0/96) was specifically chosen so that it checksums to zero, thereby avoiding any changes to the transport protocol's pseudo-header checksum when IPv6-only nodes use IPv4-translatable source addresses. This preserves the stateless property of the translator.
+section: "2.1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

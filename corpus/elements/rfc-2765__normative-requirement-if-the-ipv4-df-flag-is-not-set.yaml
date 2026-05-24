@@ -1,0 +1,10 @@
+document: rfc-2765
+kind: normative-requirement
+summary: If the IPv4 DF flag is not set and the resulting IPv6 packet would exceed 1280 bytes, the IPv4 packet MUST be fragmented prior to translation so that each fragment's payload is at most 1232 bytes (1280 minus 40 for IPv6 header and 8 for Fragment header).
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

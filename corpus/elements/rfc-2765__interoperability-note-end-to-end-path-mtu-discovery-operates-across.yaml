@@ -1,0 +1,9 @@
+document: rfc-2765
+kind: interoperability-note
+summary: End-to-end path MTU discovery operates across the SIIT translator as long as path MTU is at least 1280 bytes. When an IPv6 node receives an ICMPv6 'packet too big' reporting MTU less than 1280, it reduces path MTU to 1280 and includes a Fragment header in each packet, allowing subsequent IPv4 fragmentation by routers on the IPv4 side.
+section: "4"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

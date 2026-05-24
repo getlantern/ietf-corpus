@@ -1,0 +1,11 @@
+document: rfc-2765
+kind: normative-requirement
+summary: When a translator receives the first fragment of a fragmented UDP IPv4 packet with a zero checksum field, it SHOULD drop the packet and generate a system management event specifying at least the IP addresses and port numbers. Subsequent fragments with zero checksum SHOULD be silently dropped.
+section: "3.2"
+rfc2119_level: SHOULD
+topics:
+    - ip
+    - v6ops
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

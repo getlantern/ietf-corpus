@@ -1,0 +1,9 @@
+document: rfc-2765
+kind: design-rationale
+summary: When an IPv6-to-IPv4 translator's source address is not an IPv4-translated address (e.g., an ICMPv6 error from an IPv6-only router), the IPv4 source is set to 0.0.0.0 rather than dropping the packet entirely. This allows tools like traceroute to display something meaningful for IPv6-only hops in the path.
+section: "4.1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

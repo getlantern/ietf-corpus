@@ -1,0 +1,11 @@
+document: rfc-2765
+kind: normative-requirement
+summary: When a translator receives an unfragmented UDP IPv4 packet with a zero checksum field, it MUST compute the missing UDP checksum as part of translating the packet. The translator SHOULD also maintain a counter of how many UDP checksums are generated in this manner.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

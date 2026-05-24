@@ -1,0 +1,9 @@
+document: rfc-2750
+kind: design-rationale
+summary: A separate policy SCOPE object is required within POLICY_DATA to prevent policy loops in WF reservations, because the RSVP SCOPE object is ineffective when PIN nodes are present—PIN nodes may alter the set of reserved flows on a per-hop basis, breaking Edge-to-Edge PDP assumptions.
+section: "3.2"
+topics:
+    - qos
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

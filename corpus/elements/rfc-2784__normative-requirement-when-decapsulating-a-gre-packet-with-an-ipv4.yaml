@@ -1,0 +1,10 @@
+document: rfc-2784
+kind: normative-requirement
+summary: When decapsulating a GRE packet with an IPv4 payload, the destination address in the IPv4 payload header MUST be used to forward the packet and the TTL of the payload MUST be decremented. If the payload destination is the encapsulator itself (potential loop), the packet MUST be discarded.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

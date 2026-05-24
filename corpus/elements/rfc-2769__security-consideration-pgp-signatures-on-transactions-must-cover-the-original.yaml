@@ -1,0 +1,9 @@
+document: rfc-2769
+kind: security-consideration
+summary: PGP signatures on transactions must cover the original content, not other signatures, so that multiple signatures can be checked in any order. The repository-signature covers from transaction-label through the signature's repository-signature and integrity attributes, but excludes the signature attribute itself.
+section: "7.6"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

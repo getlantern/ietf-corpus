@@ -1,0 +1,10 @@
+document: rfc-2765
+kind: normative-requirement
+summary: If an unexpired IPv4 source route option is present in an IPv4 packet, the packet MUST be discarded and an ICMPv4 'destination unreachable/source route failed' (Type 3/Code 5) error SHOULD be returned to the sender. IPv4 options are otherwise ignored without translation.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
