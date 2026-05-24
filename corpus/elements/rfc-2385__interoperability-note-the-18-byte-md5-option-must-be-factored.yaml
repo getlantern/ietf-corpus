@@ -1,0 +1,9 @@
+document: rfc-2385
+kind: interoperability-note
+summary: The 18-byte MD5 option must be factored into the MSS advertised during connection negotiation, as it reduces the space available for data. The total TCP header plus options must remain at or below 60 bytes, leaving only 40 bytes for all options combined.
+section: "4.3"
+topics:
+    - tcp
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

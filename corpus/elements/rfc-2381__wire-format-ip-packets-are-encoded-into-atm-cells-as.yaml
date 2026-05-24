@@ -1,0 +1,9 @@
+document: rfc-2381
+kind: wire-format
+summary: 'IP packets are encoded into ATM cells as follows: each packet is wrapped in an AAL-5 PDU (H bytes of LLC/SNAP headers + B bytes IP payload + 8-byte AAL-5 trailer), then segmented into 53-byte ATM cells (5-byte header + 48-byte payload). Cell count is C = floor[(H + B + 8 + 47)/48].'
+section: "4.1"
+topics:
+    - ip
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

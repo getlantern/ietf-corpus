@@ -1,0 +1,12 @@
+document: rfc-2385
+kind: normative-requirement
+summary: Upon receiving a signed segment, the receiver MUST validate it by computing its own digest from the same data and comparing. A failing comparison MUST result in the segment being dropped and MUST NOT produce any response to the sender.
+section: "2.0"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - bgp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

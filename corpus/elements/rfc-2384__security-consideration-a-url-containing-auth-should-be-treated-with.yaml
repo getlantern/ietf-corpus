@@ -1,0 +1,10 @@
+document: rfc-2384
+kind: security-consideration
+summary: A URL containing ";AUTH=*" should be treated with extra care since it might fall back on a weaker security mechanism. Clients are discouraged from using a plain text password as a fallback with ";AUTH=*" unless the connection has strong encryption (e.g., key length greater than 56 bits).
+section: "4"
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2402
+kind: state-machine
+summary: 'The anti-replay sliding window tracks received Sequence Numbers for a given SA. States: window initialized to zero at SA establishment; packets to the right of the window trigger ICV verification before window advancement; packets within the window are checked against a received-packet bitmask; packets to the left of the window are unconditionally rejected. The window right edge advances only on successful ICV verification.'
+section: 3.4.3
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

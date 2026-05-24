@@ -1,0 +1,10 @@
+document: rfc-2385
+kind: design-rationale
+summary: No algorithm type field was included in the option because it would require at least one more byte, and taking 19 bytes (likely padded to 20) was considered too wasteful of the already limited 40-byte TCP option space. This decision locked the option to MD5 and prevents in-place algorithm upgrades.
+section: "4.4"
+topics:
+    - tcp
+    - bgp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

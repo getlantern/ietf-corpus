@@ -1,0 +1,9 @@
+document: rfc-2381
+kind: design-rationale
+summary: The IWF should anticipate which cells the ATM UPC will tag and preemptively tag all cells of an affected IP packet uniformly. If tagging is left to ATM-layer UPC, the network will drop some cells of a packet while carrying others, causing the receiver to discard the entire partial packet.
+section: "2.2"
+topics:
+    - ip
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

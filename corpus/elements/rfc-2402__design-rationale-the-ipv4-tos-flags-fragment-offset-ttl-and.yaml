@@ -1,0 +1,10 @@
+document: rfc-2402
+kind: design-rationale
+summary: 'The IPv4 TOS, Flags, Fragment Offset, TTL, and Header Checksum fields are excluded from AH ICV computation because: TOS is known to be modified by routers in practice; intermediate routers may set the DF flag; Fragment Offset is always zero (AH applied only to non-fragments); TTL is decremented en route; and Header Checksum changes whenever any of the other excluded fields change.'
+section: 3.3.3.1.1.1
+topics:
+    - ipsec
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

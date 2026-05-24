@@ -1,0 +1,10 @@
+document: rfc-2385
+kind: design-rationale
+summary: The SYN,ACK sent during connection negotiation will not be signed and will thus be ignored by the initiator configured to require signatures, so the connection will never complete. This means non-SYN segments with the MD5 option will never be sent to a peer that does not support it, avoiding misbehavior in non-MD5 TCP implementations.
+section: "2.0"
+topics:
+    - tcp
+    - bgp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

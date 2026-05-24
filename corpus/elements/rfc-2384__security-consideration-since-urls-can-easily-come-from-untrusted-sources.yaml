@@ -1,0 +1,9 @@
+document: rfc-2384
+kind: security-consideration
+summary: Since URLs can easily come from untrusted sources, care must be taken when resolving a URL that requires authentication. If authentication credentials are supplied to the wrong server, it may compromise the security of the user's account. The resolving program must ensure the URL source is trusted, site policy permits connection, the user confirms the connection, the server is validated before passing credentials, or the mechanism will not reveal information usable to compromise future connections.
+section: "4"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

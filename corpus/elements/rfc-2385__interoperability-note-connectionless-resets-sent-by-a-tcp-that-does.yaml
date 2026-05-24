@@ -1,0 +1,10 @@
+document: rfc-2385
+kind: interoperability-note
+summary: Connectionless resets sent by a TCP that does not know the key will be ignored by the protected receiver because the reset cannot carry a valid signature. This means connection attempts to ports with no listener will time out rather than being refused, and stale-connection resets are also silently dropped.
+section: "4.1"
+topics:
+    - tcp
+    - bgp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

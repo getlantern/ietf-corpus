@@ -1,0 +1,9 @@
+document: rfc-2401
+kind: wire-format
+summary: 'For IPv4 tunnel mode, the outer IP header is independently constructed: version=4, TOS copied from inner header, TTL constructed (inner TTL decremented by the encapsulator before forwarding), Protocol set to AH or ESP, src/dst addresses from the SA endpoints, and IP options are never copied from the inner header.'
+section: 5.1.2.1
+topics:
+    - ipsec
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

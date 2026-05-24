@@ -1,0 +1,9 @@
+document: rfc-2401
+kind: state-machine
+summary: 'Outbound IPsec processing follows three steps: (1) match packet selectors against the ordered outbound SPD to find the first matching policy; (2) match against SA bundles in the SAD, creating a new SA bundle via key management if none exists; (3) apply the SA bundle to perform the required IPsec processing. If no key management entity is found at step 2, drop the packet.'
+section: 5.1.1
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

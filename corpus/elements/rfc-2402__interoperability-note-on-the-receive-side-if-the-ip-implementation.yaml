@@ -1,0 +1,9 @@
+document: rfc-2402
+kind: interoperability-note
+summary: On the receive side, if the IP implementation leaves a Fragmentation Extension Header in a reassembled IPv6 packet, AH MUST remove or skip over it and update the previous header's Next Header field before ICV processing. The same applies on the send side if a Fragmentation Extension Header with Offset 0 and More Fragments=0 is passed to IPsec.
+section: A2
+topics:
+    - ipsec
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

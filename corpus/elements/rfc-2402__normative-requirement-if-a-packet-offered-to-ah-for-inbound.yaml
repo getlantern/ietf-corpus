@@ -1,0 +1,11 @@
+document: rfc-2402
+kind: normative-requirement
+summary: If a packet offered to AH for inbound processing appears to be an IP fragment (OFFSET field non-zero or MORE FRAGMENTS flag set), the receiver MUST discard the packet; this is an auditable event. The audit log SHOULD include SPI, date/time, source and destination addresses, and (in IPv6) the Flow ID.
+section: 3.4.1
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2402
+kind: normative-requirement
+summary: The sender MUST always transmit the Sequence Number field. If anti-replay is enabled, the transmitted Sequence Number must never be allowed to cycle; the sender MUST NOT send a packet that would cause the Sequence Number to overflow. A new SA (and key) must be established before the 2^32nd packet.
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

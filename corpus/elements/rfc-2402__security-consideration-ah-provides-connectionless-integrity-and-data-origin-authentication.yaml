@@ -1,0 +1,10 @@
+document: rfc-2402
+kind: security-consideration
+summary: AH provides connectionless integrity and data origin authentication for IP datagrams, covering as much of the IP header as possible. Fields that may change unpredictably in transit (TOS, TTL, Flags, Header Checksum) are excluded, making AH's IP header protection piecemeal. ESP does not protect any IP header fields unless those fields are encapsulated in tunnel mode.
+section: "1"
+topics:
+    - ipsec
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
