@@ -1,0 +1,8 @@
+document: rfc-2370
+kind: interoperability-note
+summary: When flooding Link State Update packets as multicasts, a non-opaque-capable neighbor may inadvertently receive Opaque LSAs. The non-opaque-capable router will simply discard the LSA per Section 13 of RFC 2328 (receiving LSAs with unknown LS types), so this does not cause a protocol error.
+section: "3.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

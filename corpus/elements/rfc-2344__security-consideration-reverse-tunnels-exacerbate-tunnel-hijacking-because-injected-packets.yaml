@@ -1,0 +1,9 @@
+document: rfc-2344
+kind: security-consideration
+summary: Reverse tunnels exacerbate tunnel hijacking because injected packets are forwarded beyond the local network upon reaching the home agent. Without authentication extensions (Mobile-Foreign, Foreign-Home), a malicious node can pose as a valid mobile node and redirect a reverse tunnel. The TTL=255 requirement limits this to on-link attackers; full protection requires cryptographic authentication extensions.
+section: "6.1"
+topics:
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

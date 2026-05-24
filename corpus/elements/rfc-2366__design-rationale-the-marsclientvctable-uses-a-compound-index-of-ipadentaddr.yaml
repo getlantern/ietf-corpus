@@ -1,0 +1,9 @@
+document: rfc-2366
+kind: design-rationale
+summary: The marsClientVcTable uses a compound index of (ipAdEntAddr, marsClientIndex, VPI, VCI, minGrpAddr, maxGrpAddr, partyAddr) so that point-to-multipoint VCs—where a single VPI/VCI is associated with multiple party ATM addresses—can be represented as multiple rows sharing the same VPI/VCI values.
+section: "3"
+topics:
+    - multicast
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2344
+kind: normative-requirement
+summary: The home agent MUST implement, and by default SHOULD enable, a check that validates reverse-tunneled packets by matching the outer header's source address to a mobility binding care-of address and the inner header's source address to the corresponding mobile node address. If no matching binding is found or if the encapsulation method was not negotiated, the home agent MUST silently discard the packet and SHOULD log it as a security exception.
+section: 4.3.2
+rfc2119_level: MUST
+topics:
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

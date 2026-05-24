@@ -1,0 +1,9 @@
+document: rfc-2338
+kind: design-rationale
+summary: The virtual router MAC address is used as the source address in all Master-originated VRRP packets so that learning bridges in extended LANs can correctly locate the virtual router on its LAN segment and avoid flooding. The Master sends gratuitous ARPs on state transition for the same reason.
+section: "2.5"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

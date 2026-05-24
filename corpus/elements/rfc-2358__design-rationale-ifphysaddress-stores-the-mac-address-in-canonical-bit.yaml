@@ -1,0 +1,9 @@
+document: rfc-2358
+kind: design-rationale
+summary: ifPhysAddress stores the MAC address in 'canonical' bit order (Group Bit as low-order bit of first octet), so a multicast address has bit 0x01 set in the first byte. When multiple addresses exist, the address placed in ARP responses (for IP systems) is recommended; ROM factory address is the fallback.
+section: 3.2.5
+topics:
+    - snmp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2344
+kind: security-consideration
+summary: Blindly decapsulating reverse-tunneled packets at the home agent and injecting them into the network is a potential security weakness. The home agent MUST validate that the outer source address matches a known care-of address and the inner source matches the corresponding mobile node address before forwarding.
+section: 4.3.2
+topics:
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

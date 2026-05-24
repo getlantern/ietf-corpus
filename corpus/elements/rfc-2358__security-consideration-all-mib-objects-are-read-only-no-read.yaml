@@ -1,0 +1,9 @@
+document: rfc-2358
+kind: security-consideration
+summary: All MIB objects are read-only (no read-write or read-create), so there is no risk of an intruder altering objects via SNMP SET. However, dot3StatsEtherChipSet may reveal vendor equipment identity; SNMPv3 with USM (RFC 2274) and VACM (RFC 2275) is recommended to control read access and optionally encrypt values in transit.
+section: "8"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

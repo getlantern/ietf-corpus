@@ -1,0 +1,8 @@
+document: rfc-2363
+kind: state-machine
+summary: Once PPP has entered the Network-layer Protocol phase and an alternate but equivalent encapsulation frame arrives, for a SVC the PPP Link MUST immediately clear the call with cause value 111 ('protocol error, unspecified'); for a PVC it must tear down active NCPs, SHOULD generate an error message, enter Termination state, and silently drop received packets.
+section: "8"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

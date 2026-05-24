@@ -1,0 +1,8 @@
+document: rfc-2338
+kind: design-rationale
+summary: VRRP is optimized for the typical case of two redundant routers and/or distinct path preferences. When more than two equal-priority routers exist, duplicate packets may be forwarded briefly during Master election, a known and accepted side effect. The expected convergence time is much less than 1 second, making this tradeoff acceptable.
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

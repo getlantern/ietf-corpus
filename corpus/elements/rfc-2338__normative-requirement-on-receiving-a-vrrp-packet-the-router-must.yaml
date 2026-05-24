@@ -1,0 +1,10 @@
+document: rfc-2338
+kind: normative-requirement
+summary: 'On receiving a VRRP packet, the router MUST verify: IP TTL=255, VRRP version, packet length ≥ VRRP header, VRRP checksum, authentication, valid VRID, and that Adver Interval matches local configuration. Failure of any check MUST result in discarding the packet.'
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2338
+kind: design-rationale
+summary: Only the Master sends periodic ADVERTISEMENT messages to minimize steady-state bandwidth overhead. A Backup will not preempt unless it has strictly higher priority, eliminating service disruption unless a more preferred path becomes available. Preemption can also be administratively disabled entirely, except that the IP address owner always preempts.
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

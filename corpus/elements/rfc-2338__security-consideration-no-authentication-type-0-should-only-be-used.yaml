@@ -1,0 +1,10 @@
+document: rfc-2338
+kind: security-consideration
+summary: No Authentication (type 0) SHOULD only be used in environments with minimal security risk. Simple Text Password (type 1) protects only against accidental misconfiguration; since the password is sent in cleartext frequently, it MUST NOT be reused as a security-significant credential. IP Authentication Header (type 2) with HMAC-MD5-96 is RECOMMENDED when there is limited control over LAN node administration.
+section: "10"
+topics:
+    - security
+    - routing
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2344
+kind: security-consideration
+summary: Reverse-tunneled packets (IP-in-IP encapsulated with topologically correct outer headers) are expected to pass ingress filters without special treatment, because ingress filtering targets spoofed source addresses, not encapsulated packets. The outer header's source address (care-of address) is topologically valid.
+section: "6.2"
+topics:
+    - mobility
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

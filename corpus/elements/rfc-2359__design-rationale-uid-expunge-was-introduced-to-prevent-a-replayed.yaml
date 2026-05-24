@@ -1,0 +1,8 @@
+document: rfc-2359
+kind: design-rationale
+summary: UID EXPUNGE was introduced to prevent a replayed EXPUNGE command from removing messages that were marked \Deleted between the time the user requested the expunge and the time the server processes it, a race condition inherent in the base EXPUNGE command.
+section: "4.1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

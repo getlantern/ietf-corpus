@@ -1,0 +1,8 @@
+document: rfc-2338
+kind: state-machine
+summary: 'VRRP defines three states: Initialize (wait for Startup event), Backup (monitor Master availability via Master_Down_Timer), and Master (forward packets and send periodic ADVERTISEMENTs). Startup from Initialize leads to Master if Priority=255, else to Backup; Master_Down_Timer expiry in Backup triggers transition to Master; higher-priority ADVERTISEMENT received in Master triggers transition to Backup.'
+section: "6.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
