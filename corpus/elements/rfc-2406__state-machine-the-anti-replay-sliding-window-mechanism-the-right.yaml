@@ -1,0 +1,9 @@
+document: rfc-2406
+kind: state-machine
+summary: 'The anti-replay sliding window mechanism: the right edge represents the highest validated Sequence Number received. Packets with Sequence Numbers below the left edge are rejected. Packets within or to the right of the window proceed to ICV verification; the receive window is updated only if ICV verification succeeds. A minimum window size of 32 MUST be supported; a window size of 64 SHOULD be the default.'
+section: 3.4.3
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

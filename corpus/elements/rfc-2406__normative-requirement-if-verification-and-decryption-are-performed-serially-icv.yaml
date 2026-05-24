@@ -1,0 +1,10 @@
+document: rfc-2406
+kind: normative-requirement
+summary: If verification and decryption are performed serially, ICV verification SHOULD be performed first. If performed in parallel, verification MUST be completed before the decrypted packet is passed on for further processing, to facilitate rapid rejection of bogus packets and reduce DoS impact.
+section: 3.4.5
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

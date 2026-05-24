@@ -1,0 +1,10 @@
+document: rfc-2406
+kind: normative-requirement
+summary: 'All implementations MUST support generation and consumption of padding (0-255 bytes). If padding bytes are needed and the encryption algorithm does not specify content, the default padding MUST be used: bytes initialized to sequential integers 1, 2, 3, ... When this scheme is used, the receiver SHOULD inspect the Padding field.'
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

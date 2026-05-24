@@ -1,0 +1,9 @@
+document: rfc-2420
+kind: interoperability-note
+summary: Due to CBC chaining, if packet N-1 is lost, packet N cannot be decrypted (its first block requires the last ciphertext block of N-1). However, packets N+1 and beyond can be decrypted normally using the last ciphertext block of received packet N. Packet loss is detected by discontinuities in the 16-bit sequence numbers.
+section: "4.2"
+topics:
+    - vpn
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2406
+kind: design-rationale
+summary: When authentication is selected, encryption is performed first before authentication, and encryption does not encompass the Authentication Data field. This order facilitates rapid detection and rejection of replayed or bogus packets prior to decryption, reducing the impact of denial of service attacks, and also allows parallel processing of decryption and authentication at the receiver.
+section: 3.3.2
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

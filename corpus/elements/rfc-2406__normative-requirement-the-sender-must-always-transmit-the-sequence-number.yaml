@@ -1,0 +1,10 @@
+document: rfc-2406
+kind: normative-requirement
+summary: The sender MUST always transmit the Sequence Number field. If anti-replay is enabled, the sender's counter and the receiver's counter MUST be reset (by establishing a new SA and key) prior to transmission of the 2^32nd packet on an SA to prevent counter cycling.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

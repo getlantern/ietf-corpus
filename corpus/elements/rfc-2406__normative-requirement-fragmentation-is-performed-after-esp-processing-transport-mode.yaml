@@ -1,0 +1,11 @@
+document: rfc-2406
+kind: normative-requirement
+summary: Fragmentation is performed after ESP processing; transport mode ESP is applied only to whole IP datagrams. If a packet offered to ESP appears to be an IP fragment (OFFSET field non-zero or MORE FRAGMENTS flag set), the receiver MUST discard the packet; this is an auditable event.
+section: 3.3.5
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

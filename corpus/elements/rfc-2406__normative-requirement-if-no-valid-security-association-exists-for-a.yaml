@@ -1,0 +1,10 @@
+document: rfc-2406
+kind: normative-requirement
+summary: If no valid Security Association exists for a received packet (e.g., the receiver has no key), the receiver MUST discard the packet; this is an auditable event. The audit log entry SHOULD include SPI value, date/time, Source Address, Destination Address, Sequence Number, and (in IPv6) the cleartext Flow ID.
+section: 3.4.2
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

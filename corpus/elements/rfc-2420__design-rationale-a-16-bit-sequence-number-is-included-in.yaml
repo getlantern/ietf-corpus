@@ -1,0 +1,9 @@
+document: rfc-2420
+kind: design-rationale
+summary: A 16-bit sequence number is included in each packet specifically because DES-EDE3-CBC mode requires the previous ciphertext block as the IV for the next packet; the sequence number allows detection of lost packets and clarifies when decryption of a packet is impossible.
+section: "1"
+topics:
+    - vpn
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

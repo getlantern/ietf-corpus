@@ -1,0 +1,11 @@
+document: rfc-2406
+kind: normative-requirement
+summary: For ICV computation, if the byte string length does not match the blocksize requirements of the authentication algorithm, implicit zero-filled padding MUST be appended to the end of the ESP packet after the Next Header field prior to ICV computation; this padding is not transmitted with the packet.
+section: 3.3.4
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

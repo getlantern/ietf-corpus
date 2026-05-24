@@ -1,0 +1,9 @@
+document: rfc-2419
+kind: protocol-element
+summary: Recovery after packet loss relies on sequence number discontinuity detection. If packet N-1 is lost, packet N cannot be decrypted (missing C[last] of N-1), but all packets N+1 and following can be decoded normally using the last ciphertext block of the received packet N.
+section: "6.4"
+topics:
+    - vpn
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
