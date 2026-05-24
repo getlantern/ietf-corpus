@@ -1,0 +1,9 @@
+document: rfc-2127
+kind: security-consideration
+summary: Several objects in the ISDN MIB (isdnBasicRateIfType, isdnBasicRateLineTopology, isdnBasicRateIfMode, isdnBasicRateSignalMode, isdnBearerChannelType, isdnSignalingProtocol, isdnSignalingCallingAddress, isdnSignalingInfoTrapEnable, and isdnLapdPrimaryChannel) have read-write or read-create access; unauthorized modification could disrupt ISDN connectivity or enable unauthorized call setup. SNMPv2 security mechanisms should be used to restrict write access.
+section: "7"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

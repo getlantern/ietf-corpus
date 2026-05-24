@@ -1,0 +1,8 @@
+document: rfc-2113
+kind: design-rationale
+summary: Routers already demultiplex options by type in the fast path; adding a new option type adds negligible overhead. Routers that do not support option processing in the fast path already forward option-bearing packets through the slow path, so normal data packet performance is unaffected in all cases.
+section: "2.0"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2110
+kind: normative-requirement
+summary: If there is a Content-Base header, the recipient MUST perform relative-to-absolute URI resolution per RFC 1808 on relative URIs in both the HTML markup and the Content-Location header before matching hyperlinks to Content-Location values. If there is no Content-Base and Content-Location contains a relative URI, NO resolution SHOULD be performed; instead an exact textual match against HTML URIs is used after stripping LWSP.
+section: "8.2"
+rfc2119_level: MUST
+topics:
+    - email
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

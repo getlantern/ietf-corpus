@@ -1,0 +1,8 @@
+document: rfc-2108
+kind: state-machine
+summary: rptrPortAdminStatus controls a port's auto-partition state machine. Setting to enabled(1) exerts a BEGIN, transitioning rptrPortAutoPartitionState to notAutoPartitioned(1) regardless of prior state. Setting to disabled(2) freezes rptrPortAutoPartitionState until the port is next enabled.
+section: "3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

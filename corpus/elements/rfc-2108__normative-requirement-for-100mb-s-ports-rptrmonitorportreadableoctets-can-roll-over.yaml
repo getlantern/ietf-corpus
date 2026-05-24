@@ -1,0 +1,10 @@
+document: rfc-2108
+kind: normative-requirement
+summary: For 100Mb/s ports, rptrMonitorPortReadableOctets can roll over in less than 6 minutes, potentially shorter than a management station's poll cycle. Management stations are advised to also poll rptrMonitorPortUpper32Octets or use rptrMonitorPortHCReadableOctets (Counter64) to avoid loss of information.
+section: "3"
+rfc2119_level: SHOULD
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

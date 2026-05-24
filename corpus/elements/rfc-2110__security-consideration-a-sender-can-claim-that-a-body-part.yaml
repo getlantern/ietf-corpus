@@ -1,0 +1,11 @@
+document: rfc-2110
+kind: security-consideration
+summary: A sender can claim that a body part is represented by a particular URI via Content-Location without that being true. Because there is no assurance that an HTTP request to the same URI would return the same object, receiving UAs SHOULD NOT cache Content-Location data in the same manner as data retrieved via HTTP or FTP.
+section: "12"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - email
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

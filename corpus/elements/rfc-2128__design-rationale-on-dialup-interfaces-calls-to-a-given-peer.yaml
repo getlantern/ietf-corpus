@@ -1,0 +1,8 @@
+document: rfc-2128
+kind: design-rationale
+summary: On dialup interfaces, calls to a given peer float across channels, making a static 'peer-to-interface' binding impossible. The MIB resolves this by creating a logical ifEntry per peer and per low-level interface, then correlating them via ifStackTable.
+section: 2.2.1
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
