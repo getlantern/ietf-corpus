@@ -1,0 +1,11 @@
+document: rfc-2304
+kind: security-consideration
+summary: Routing of fax e-mail is determined by DNS; a successful attack on DNS (via server compromise, counterfeit responses, or incorrect additional information) could force mail through a compromised gateway. Clients SHOULD ensure routing is based only on authoritative DNS answers and SHOULD employ DNS Security mechanisms (DNSSEC) once widely deployed to verify authenticity and integrity of mail routing records.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - email
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2308
+kind: security-consideration
+summary: Negative caching enables a denial-of-service attack by injecting a NXDOMAIN response with a very high TTL into a caching resolver or parent server, causing mail or other traffic to permanently fail rather than queue for retry. TTL sanity checking reduces this risk.
+section: "11"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2308
+kind: design-rationale
+summary: Negative responses without SOA records SHOULD NOT be cached because without a TTL countdown, cached negative responses could loop indefinitely between misconfigured servers (e.g., two servers listing each other as forwarders).
+section: "5"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

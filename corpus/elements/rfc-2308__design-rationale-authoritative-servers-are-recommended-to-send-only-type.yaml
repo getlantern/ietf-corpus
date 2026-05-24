@@ -1,0 +1,8 @@
+document: rfc-2308
+kind: design-rationale
+summary: Authoritative servers are recommended to send only Type 2 NXDOMAIN responses (SOA in authority, no NS records) because many deployed resolvers incorrectly treat Type 1 NXDOMAIN (SOA + NS) as a referral, causing unnecessary queries to authoritative servers.
+section: 2.1.1
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

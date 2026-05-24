@@ -1,0 +1,10 @@
+document: rfc-2326
+kind: normative-requirement
+summary: A client MUST NOT issue a PLAY request until any outstanding SETUP requests have been acknowledged as successful. The server MUST queue PLAY requests to be executed in order, delaying any PLAY request that arrives while a previous one is still active.
+section: "10.5"
+rfc2119_level: MUST
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

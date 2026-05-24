@@ -1,0 +1,8 @@
+document: rfc-2327
+kind: design-rationale
+summary: The 'a=' attribute mechanism is the primary extension point for SDP rather than new type letters, because the type-letter namespace is deliberately small and non-extensible. An unknown type letter causes the entire announcement to be discarded, whereas unknown attributes are silently ignored, making attributes far safer for optional extensions.
+section: "6"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

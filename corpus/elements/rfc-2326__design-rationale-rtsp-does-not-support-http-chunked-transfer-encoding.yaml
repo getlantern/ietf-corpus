@@ -1,0 +1,9 @@
+document: rfc-2326
+kind: design-rationale
+summary: RTSP does not support HTTP chunked transfer encoding and requires Content-Length when a body is present. Since presentation descriptions are moderate in size and can be determined dynamically, chunked encoding is unnecessary and its absence simplifies implementation.
+section: "4.4"
+topics:
+    - realtime
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2308
+kind: interoperability-note
+summary: Some resolvers incorrectly loop and eventually return SERVFAIL when the authoritative answer (AA) flag is not set in an NXDOMAIN response. Nameservers used as forwarders for such resolvers must force the AA flag on for NXDOMAIN responses; this is the default in BIND 4.9.3+.
+section: 2.1.1
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

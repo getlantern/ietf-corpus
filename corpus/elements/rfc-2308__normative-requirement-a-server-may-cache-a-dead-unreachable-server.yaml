@@ -1,0 +1,9 @@
+document: rfc-2308
+kind: normative-requirement
+summary: A server MAY cache a dead/unreachable server indication, but MUST NOT deem the server dead for longer than five minutes. The indication MUST be stored against <query name, type, class, server IP address> unless a transport-layer indication shows the server does not exist, in which case it applies to all queries to that IP.
+section: "7.2"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
