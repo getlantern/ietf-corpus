@@ -1,0 +1,10 @@
+document: rfc-2157
+kind: design-rationale
+summary: HARPOON encapsulation (rather than BP15 or FTBP) is mandated for multipart/signed because the signature is computed over the encoded body part; HARPOON is the only encapsulation method that preserves the content-transfer-encoding, and all other methods break end-to-end security integrity.
+section: "7.3"
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

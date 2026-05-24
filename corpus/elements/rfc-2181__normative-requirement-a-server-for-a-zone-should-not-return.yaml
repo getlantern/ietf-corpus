@@ -1,0 +1,9 @@
+document: rfc-2181
+kind: normative-requirement
+summary: A server for a zone should not return authoritative answers for queries related to names in another zone, including NS and A records at a zone cut, unless it is also a server for the other zone. Servers should ignore data other than NS records (and necessary A records) configured at a zone cut.
+section: "6.1"
+rfc2119_level: SHOULD
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

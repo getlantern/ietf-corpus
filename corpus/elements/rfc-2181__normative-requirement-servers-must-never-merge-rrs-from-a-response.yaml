@@ -1,0 +1,9 @@
+document: rfc-2181
+kind: normative-requirement
+summary: Servers must never merge RRs from a response with RRs already in their cache to form an RRSet. If a response contains data that would form an RRSet with cached data, the server must either ignore the response RRs or discard the entire cached RRSet.
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2177
+kind: design-rationale
+summary: IMAP4 requires clients to poll for changes; while the spec permits servers to push EXISTS responses asynchronously, clients cannot rely on this behavior. IDLE was introduced to allow the server to transmit updates in real time, benefiting users who want immediate new-mail notification and applications that would otherwise need to poll every few seconds.
+section: "1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

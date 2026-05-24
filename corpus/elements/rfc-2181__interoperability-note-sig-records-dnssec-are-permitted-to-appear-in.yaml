@@ -1,0 +1,9 @@
+document: rfc-2181
+kind: interoperability-note
+summary: SIG records (DNSSEC) are permitted to appear in the authority section containing only those SIG RRs whose 'type covered' field equals the type of an answer being returned, rather than the full SIG RRSet. Servers must not cache such partial SIG records in a way that would allow them to be returned in response to a SIG query.
+section: 5.3.1
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
