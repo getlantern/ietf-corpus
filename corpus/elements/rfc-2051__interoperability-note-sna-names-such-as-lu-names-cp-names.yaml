@@ -1,0 +1,8 @@
+document: rfc-2051
+kind: interoperability-note
+summary: SNA names such as LU names, CP names, mode names, and COS names may be padded with insignificant trailing space characters in SNA wire formats (e.g., BIND RU), but agents must strip those trailing spaces before exposing the value in the MIB. The sole exception is the all-blank mode name, which is returned as exactly 8 space characters. When an SNA name serves as a table index, trailing spaces are treated as significant by the agent.
+section: "3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

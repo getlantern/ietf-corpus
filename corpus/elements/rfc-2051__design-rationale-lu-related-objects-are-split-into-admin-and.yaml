@@ -1,0 +1,8 @@
+document: rfc-2051
+kind: design-rationale
+summary: LU-related objects are split into Admin and Oper tables. Admin tables contain read-only default or expected configuration values; Oper tables contain current operational state such as negotiated parameters. Oper entries can outlive their Admin entries (e.g., a mode definition may be deleted while an active session still uses it), and Admin values may have changed since the Oper entry was created.
+section: "3.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

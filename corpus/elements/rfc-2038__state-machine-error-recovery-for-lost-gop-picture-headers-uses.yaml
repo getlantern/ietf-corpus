@@ -1,0 +1,9 @@
+document: rfc-2038
+kind: state-machine
+summary: 'Error recovery for lost GOP/Picture headers uses two counters: ref_pic_temp (for I/P frames) and dep_pic_temp (for B frames), both initialized at each GOP start and incremented by one per picture. A mismatch between the counter value and the TR field in an arriving RTP packet indicates a lost header. A lost GOP header can be reconstructed with null time_code, repeated closed_gop flag, and broken_link=1; a lost Picture header is reconstructed from P, TR, FBV, BFC, FFV, FFC in the next Beginning-of-slice packet.'
+section: Appendix 1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

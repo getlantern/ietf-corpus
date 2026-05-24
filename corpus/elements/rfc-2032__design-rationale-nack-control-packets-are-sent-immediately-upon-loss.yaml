@@ -1,0 +1,9 @@
+document: rfc-2032
+kind: design-rationale
+summary: NACK control packets are sent immediately upon loss detection without random delays, unlike reliable multicast protocols, because interactive video tolerates some unreliability but is highly sensitive to delay. Multicasting NACKs would generate useless traffic since only the encoder acts on them.
+section: "5.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

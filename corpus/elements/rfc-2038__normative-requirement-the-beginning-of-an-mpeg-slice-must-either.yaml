@@ -1,0 +1,10 @@
+document: rfc-2038
+kind: normative-requirement
+summary: The beginning of an MPEG slice must either be the first data in a packet (after any MPEG ES headers) or must follow after an integral number of slices. This ensures the next slice boundary can be found after a packet loss without requiring the receiver to scan packet contents.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

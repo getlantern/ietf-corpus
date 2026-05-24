@@ -1,0 +1,9 @@
+document: rfc-2035
+kind: design-rationale
+summary: The Q field encodes quantization tables as a small integer rather than transmitting the full tables per-packet, because only a small set of quantization tables is typically used in practice. Dynamic tables (Q >= 100) are supported for rare cases requiring session-negotiated quality.
+section: "2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

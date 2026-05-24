@@ -1,0 +1,9 @@
+document: rfc-2038
+kind: design-rationale
+summary: 'MPEG Audio frames have variable size: for Layer-II at 44.1 kHz and 384 kbits/sec, average frame size is 1.25 KB. If packets are 500 bytes, each audio frame straddles 3 RTP packets. The Frag_offset field was added specifically to handle this fragmentation without requiring the receiver to scan for frame boundaries.'
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2025
+kind: design-rationale
+summary: An 8-byte random confounder is prepended to data before encryption (as in Kerberos) to compensate for the use of an IV of zero. Without the confounder, the strength of integrity mechanisms like md5-DES-CBC would be at most equal to DES under known-plaintext attack.
+section: 3.2.2.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

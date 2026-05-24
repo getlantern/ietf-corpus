@@ -1,0 +1,9 @@
+document: rfc-2035
+kind: design-rationale
+summary: RTP/JPEG uses abbreviated JPEG format (tables omitted from the bitstream) because table-specification data rarely changes between frames in a video stream. A compact 64-bit RTP/JPEG header replaces the per-frame JPEG frame and scan headers, reducing per-packet overhead.
+section: "2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

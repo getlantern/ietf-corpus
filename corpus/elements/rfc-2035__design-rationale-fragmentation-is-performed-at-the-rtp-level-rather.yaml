@@ -1,0 +1,9 @@
+document: rfc-2035
+kind: design-rationale
+summary: Fragmentation is performed at the RTP level rather than delegating to IP fragmentation so that the sender can rate-control the packet stream and receivers can perform partial delivery in the presence of packet loss. IP fragmentation does not deliver partial datagrams to applications.
+section: "2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

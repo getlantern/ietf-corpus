@@ -1,0 +1,10 @@
+document: rfc-2038
+kind: normative-requirement
+summary: For MPEG2 Transport Streams, the RTP payload MUST contain an integral number of MPEG transport packets (188 bytes each). The number of transport packets is computed by dividing RTP payload length by 188. Multiple small MTS packets should be aggregated into a single RTP packet to avoid end-system inefficiencies.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

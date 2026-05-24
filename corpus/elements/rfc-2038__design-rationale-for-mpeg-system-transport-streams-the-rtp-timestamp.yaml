@@ -1,0 +1,9 @@
+document: rfc-2038
+kind: design-rationale
+summary: For MPEG System/Transport Streams, the RTP timestamp is derived from the sender's 90 kHz clock synchronized to PCR/SCR and represents the target transmission time of the first byte—it is NOT passed to the MPEG decoder. Its purpose is estimating and reducing network-induced jitter and synchronizing relative time drift, which differs from the typical RTP presentation timestamp semantics.
+section: "2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

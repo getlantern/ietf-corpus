@@ -1,0 +1,10 @@
+document: rfc-2032
+kind: design-rationale
+summary: The 90 kHz RTP clock was chosen because it is a multiple of the natural H.261 frame rate (30000/1001 ≈ 29.97 Hz), allowing the timestamp to be incremented by a fixed integer per frame with no accumulated rounding error. The initial timestamp value is random to resist known-plaintext attacks on encryption.
+section: "4.1"
+topics:
+    - rtp
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

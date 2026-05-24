@@ -1,0 +1,9 @@
+document: rfc-2051
+kind: security-consideration
+summary: The MIB contains read-write objects (appcCntrlAdmin*, appcCnos*) that allow a management station to alter APPC operational parameters, issue CNOS commands, and start or stop statistics and tracing. Unauthorized access to these objects could disrupt APPC session management. Implementors should apply appropriate SNMP access control (e.g., SNMPv2 party-based or SNMPv3 VACM) to restrict write access.
+section: "7"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

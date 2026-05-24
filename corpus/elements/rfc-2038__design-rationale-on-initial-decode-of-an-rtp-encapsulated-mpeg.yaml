@@ -1,0 +1,9 @@
+document: rfc-2038
+kind: design-rationale
+summary: On initial decode of an RTP-encapsulated MPEG Elementary Stream, a receiver may discard all packets until the S (Sequence-header-present) bit is set to 1, at which point sufficient state is available for the MPEG decoder. After any packet loss (gap in RTP sequence number), the receiver may discard packets until the B (Beginning-of-slice) bit is set, ensuring the decoder can resynchronize at a slice boundary.
+section: Appendix 1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

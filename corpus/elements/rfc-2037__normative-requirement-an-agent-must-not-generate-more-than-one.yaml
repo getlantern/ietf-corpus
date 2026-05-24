@@ -1,0 +1,9 @@
+document: rfc-2037
+kind: normative-requirement
+summary: An agent must not generate more than one entConfigChange trap-event in a five-second period. If additional configuration changes occur within this throttling window, those trap-events must be suppressed. An NMS should periodically check entLastChangeTime to detect missed traps.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
