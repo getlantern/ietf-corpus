@@ -1,0 +1,10 @@
+document: rfc-2890
+kind: normative-requirement
+summary: Under no circumstances should a packet wait more than OUTOFORDER_TIMER milliseconds in the reorder buffer. If a packet has waited that long, the receiver MUST immediately traverse the buffer in sorted order, decapsulating packets and ignoring sequence number gaps, until no packets have been waiting longer than OUTOFORDER_TIMER milliseconds.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - vpn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

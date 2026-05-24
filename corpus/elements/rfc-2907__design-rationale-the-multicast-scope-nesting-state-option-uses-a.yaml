@@ -1,0 +1,8 @@
+document: rfc-2907
+kind: design-rationale
+summary: The Multicast Scope Nesting State option uses a bit-packed matrix representation in the interest of maximal efficiency and flexibility. A 1 in row X, column Y means 'X nests inside Y'; the diagonal is removed and each row is zero-padded to the next byte boundary, yielding N × ceil((N-1)/8) bytes for N scopes.
+section: "3.2"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

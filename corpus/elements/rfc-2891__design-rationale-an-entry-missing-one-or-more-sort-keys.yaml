@@ -1,0 +1,8 @@
+document: rfc-2891
+kind: design-rationale
+summary: An entry missing one or more sort keys is treated as having NULL for that key. NULL is defined to be a larger value than all other valid values, so entries without a key sort after all entries that have the key. With reverseOrder, NULL-keyed entries sort before all others.
+section: "2.2"
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

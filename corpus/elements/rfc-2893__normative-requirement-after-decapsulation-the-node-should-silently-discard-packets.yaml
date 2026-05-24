@@ -1,0 +1,11 @@
+document: rfc-2893
+kind: normative-requirement
+summary: After decapsulation, the node SHOULD silently discard packets with invalid IPv4 source addresses (multicast, broadcast, 0.0.0.0, 127.0.0.1) applying martian and ingress filtering rules. Packets with invalid IPv6 source addresses (multicast, unspecified, loopback, or IPv4-compatible addresses embedding an invalid IPv4 address) SHOULD also be silently discarded.
+section: "3.6"
+rfc2119_level: SHOULD
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

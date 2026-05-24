@@ -1,0 +1,10 @@
+document: rfc-2894
+kind: normative-requirement
+summary: If any PCO field (OpCode, OpLength, MatchLen, UseLen, KeepLen) is out of bounds, the entire PCO MUST NOT be performed on any interface. If R is set, a Match Report with the B flag set MUST be included in the Result, appearing only once (not once per interface).
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

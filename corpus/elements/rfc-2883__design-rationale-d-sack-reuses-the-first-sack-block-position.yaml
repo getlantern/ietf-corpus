@@ -1,0 +1,8 @@
+document: rfc-2883
+kind: design-rationale
+summary: D-SACK reuses the first SACK block position already designated by RFC 2018 for the triggering segment, requiring no changes to the option format or negotiation mechanism. A sender that does not understand D-SACK will silently ignore the first block without harm, making the extension fully backward compatible.
+section: "2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

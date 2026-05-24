@@ -1,0 +1,11 @@
+document: rfc-2894
+kind: protocol-element
+summary: The Sequence Number Reset (SNR) message (Code 255) is used to reset a router's Recorded Sequence Number. Upon receipt of an authenticated SNR, the router MUST invalidate all keys previously used to authenticate RR Commands (including the SNR's own key), discard saved Result messages, clear recorded SegmentNumbers, and reset the Recorded Sequence Number to zero.
+section: "5"
+topics:
+    - ip
+    - v6ops
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

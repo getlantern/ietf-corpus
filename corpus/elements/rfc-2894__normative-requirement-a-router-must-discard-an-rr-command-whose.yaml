@@ -1,0 +1,11 @@
+document: rfc-2894
+kind: normative-requirement
+summary: A router MUST discard an RR Command whose SequenceNumber is less than the Recorded Sequence Number. If the SequenceNumber equals the Recorded Sequence Number and the same SequenceNumber+SegmentNumber pair was already processed, the message is a duplicate and MUST be discarded (unless R is set, in which case a Result with P flag set MUST be scheduled).
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

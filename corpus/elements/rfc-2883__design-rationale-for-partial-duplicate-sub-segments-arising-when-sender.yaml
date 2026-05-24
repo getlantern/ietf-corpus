@@ -1,0 +1,8 @@
+document: rfc-2883
+kind: design-rationale
+summary: For partial duplicate sub-segments (arising when sender PMTU increases mid-session and a larger retransmit overlaps an already-received range), only the first duplicate sub-segment is reported to keep D-SACK simple and consistent with the single-block-first-position rule.
+section: "4.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

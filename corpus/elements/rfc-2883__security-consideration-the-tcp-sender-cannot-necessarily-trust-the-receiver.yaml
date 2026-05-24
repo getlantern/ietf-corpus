@@ -1,0 +1,9 @@
+document: rfc-2883
+kind: security-consideration
+summary: The TCP sender cannot necessarily trust the receiver to send accurate D-SACK information. Any sender mechanism that 'undoes' a congestion window reduction based on D-SACK reports must account for a misbehaving receiver falsely claiming duplicates to manipulate sender behavior.
+section: "5"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

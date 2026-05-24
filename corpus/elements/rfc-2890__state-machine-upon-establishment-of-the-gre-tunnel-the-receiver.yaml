@@ -1,0 +1,9 @@
+document: rfc-2890
+kind: state-machine
+summary: Upon establishment of the GRE tunnel, the receiver initializes the last successfully decapsulated sequence number to (2^32)-1. Subsequent in-sequence packets (sequence number exactly 1 greater modulo 2^32) are decapsulated and the counter updated; out-of-sequence packets (sequence number <= last received, within the preceding 2^31-1 range) are silently discarded.
+section: "2.2"
+topics:
+    - vpn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

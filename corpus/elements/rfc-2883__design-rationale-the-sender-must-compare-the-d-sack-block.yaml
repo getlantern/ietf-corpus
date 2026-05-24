@@ -1,0 +1,8 @@
+document: rfc-2883
+kind: design-rationale
+summary: The sender must compare the D-SACK block to the cumulative ACK in the same packet rather than snd.una because ACK packets can be reordered in the network. Using snd.una could cause the sender to incorrectly classify a legitimate out-of-order SACK block as a duplicate report.
+section: "5"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

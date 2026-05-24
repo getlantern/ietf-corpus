@@ -1,0 +1,10 @@
+document: rfc-2893
+kind: security-consideration
+summary: Tunneling can circumvent ingress filtering because the encapsulating node's IPv4 address appears as the source. This is mitigated by requiring decapsulating routers to only forward packets from explicitly configured acceptable IPv4 source addresses, and by prohibiting forwarding of automatically tunneled packets entirely.
+section: "7"
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

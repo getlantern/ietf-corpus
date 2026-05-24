@@ -1,0 +1,9 @@
+document: rfc-2894
+kind: interoperability-note
+summary: To detect routers that missed commands during a network partition, a management station MAY periodically send a no-op RR Command (ADD with MatchLen=0, MinLen=0, MaxLen=128, no Use-Prefix Parts) with the R flag set and a SequenceNumber one less than the highest used; responses can only come from routers that missed the last real operation.
+section: "8.3"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

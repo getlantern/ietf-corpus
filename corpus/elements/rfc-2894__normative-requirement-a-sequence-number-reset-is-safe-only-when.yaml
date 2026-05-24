@@ -1,0 +1,12 @@
+document: rfc-2894
+kind: normative-requirement
+summary: A Sequence Number Reset is safe only when all cryptographic keys previously used to authenticate RR Commands have expired or been revoked. If no unused authentication keys are available after SNR processing, the router SHOULD establish new valid keys; without keys, no new Commands can be processed.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - ip
+    - v6ops
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

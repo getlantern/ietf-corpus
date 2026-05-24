@@ -1,0 +1,12 @@
+document: rfc-2894
+kind: security-consideration
+summary: The SPD of a router implementing this specification MUST cause incoming RR Command packets to be either discarded or have IPsec applied. The SAD entries MUST ensure authentication and integrity of the IPv6 destination address, the RR Header and Message Body; these requirements are met by AH in transport or tunnel mode, or ESP in tunnel mode with non-NULL authentication.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - ipsec
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2907
+kind: design-rationale
+summary: 'TTL scoping for multicast searching suffers from the split-horizon effect: when a requestor and responder are separated by many hops, large TTL values cause many nodes to hear only one side of a request/response exchange, creating regions A and C that receive only the request or only the response. Administrative scoping eliminates this by using router-enforced perimeters rather than TTL limits.'
+section: "1.1"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

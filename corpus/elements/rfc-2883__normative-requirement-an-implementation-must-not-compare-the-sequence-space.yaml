@@ -1,0 +1,9 @@
+document: rfc-2883
+kind: normative-requirement
+summary: An implementation MUST NOT compare the sequence space in the first SACK block to the TCP state variable snd.una when checking for duplicate data. The comparison must be against the cumulative ACK carried in the same packet, because ACK reordering makes snd.una an unreliable reference and can produce incorrect conclusions.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

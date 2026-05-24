@@ -1,0 +1,10 @@
+document: rfc-2893
+kind: interoperability-note
+summary: A6/AAAA records for a node should not be added to the DNS until the address is assigned, configured on the interface, and the interface is connected to the IPv6 infrastructure. Adding AAAA records for a node not reachable via IPv6 causes external nodes to attempt IPv6 connections and suffer TCP timeout delays of several minutes before falling back to IPv4.
+section: "2.3"
+topics:
+    - dns
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

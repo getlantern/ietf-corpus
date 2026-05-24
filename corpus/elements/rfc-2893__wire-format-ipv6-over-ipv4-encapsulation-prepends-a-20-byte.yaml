@@ -1,0 +1,9 @@
+document: rfc-2893
+kind: wire-format
+summary: IPv6-over-IPv4 encapsulation prepends a 20-byte IPv4 header to the IPv6 datagram. The IPv4 Protocol field is set to 41 (assigned payload type for IPv6). The encapsulating IPv4 header has no options (IHL=5), ToS=0, and Total Length equal to the IPv6 payload length plus 60 bytes.
+section: "3.1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2883
+kind: protocol-element
+summary: 'An early retransmit timeout (RTO too short) is detectable via D-SACK: after the timeout the original delayed window arrives producing clean ACKs, then the retransmissions arrive producing ACKs with D-SACK blocks. The signature is a clean ACK for the retransmitted byte followed by an ACK carrying a D-SACK showing that byte was already received.'
+section: "5.4"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

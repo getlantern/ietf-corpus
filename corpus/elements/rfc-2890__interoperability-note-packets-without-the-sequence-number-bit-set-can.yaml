@@ -1,0 +1,9 @@
+document: rfc-2890
+kind: interoperability-note
+summary: Packets without the Sequence Number bit set can be interleaved with packets that have the bit set. An in-sequence packet is defined as one with a sequence number exactly 1 greater (modulo 2^32) than the last successfully decapsulated packet, or one where the S bit is not set.
+section: "2.2"
+topics:
+    - vpn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

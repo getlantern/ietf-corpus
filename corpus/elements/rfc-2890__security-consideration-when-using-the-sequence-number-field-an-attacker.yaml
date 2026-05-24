@@ -1,0 +1,12 @@
+document: rfc-2890
+kind: security-consideration
+summary: When using the Sequence Number field, an attacker can inject packets with arbitrary sequence numbers to launch a Denial of Service attack. To protect against such attacks, IP security protocols (IPsec) MUST be used to protect the GRE header and tunneled payload; either ESP or AH MUST be used. The Key field provides no security despite its name.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - security
+    - vpn
+    - ipsec
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2894
+kind: design-rationale
+summary: The SegmentNumber field allows a renumbering operation too large for a single packet to be split across multiple RR Command messages with the same SequenceNumber. Unlike the SequenceNumber, SegmentNumber imposes no ordering on processing — if ordering is needed, use SequenceNumbers or PCO order within a single message.
+section: "1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

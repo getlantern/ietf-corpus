@@ -1,0 +1,8 @@
+document: rfc-2883
+kind: interoperability-note
+summary: PAWS (RFC 1323) still requires sending an ACK when a segment from a prior sequence-number cycle is received. D-SACK blocks can be included in such ACKs independently of the PAWS validity determination. Senders using D-SACK should be aware that a reported duplicate could stem from a prior sequence-number cycle rather than an actual retransmission.
+section: "4.3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
