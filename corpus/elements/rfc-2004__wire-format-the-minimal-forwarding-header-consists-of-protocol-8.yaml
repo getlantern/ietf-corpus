@@ -1,0 +1,9 @@
+document: rfc-2004
+kind: wire-format
+summary: 'The minimal forwarding header consists of: Protocol (8 bits, copied from original IP header), S bit (1 bit, Original Source Address Present flag), reserved (7 bits, sent as zero), Header Checksum (16 bits, one''s complement), Original Destination Address (32 bits), and optional Original Source Address (32 bits if S=1). Total size is 8 octets (S=0) or 12 octets (S=1).'
+section: "3"
+topics:
+    - ip
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

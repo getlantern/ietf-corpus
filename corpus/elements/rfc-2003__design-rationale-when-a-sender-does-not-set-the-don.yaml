@@ -1,0 +1,8 @@
+document: rfc-2003
+kind: design-rationale
+summary: When a sender does not set the Don't Fragment bit, it is better for the encapsulator to fragment the original (inner) datagram before encapsulation than to allow the encapsulated datagram to be fragmented, because fragmenting the encapsulated datagram requires reassembly state and buffer space at the decapsulator.
+section: "5.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

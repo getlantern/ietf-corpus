@@ -1,0 +1,8 @@
+document: rfc-2018
+kind: design-rationale
+summary: Including multiple SACK blocks per option packet compensates for lossy ACK return paths. With the timestamp option present, three SACK blocks fit; each block is thus normally reported in at least three successive ACKs, limiting unnecessary retransmissions due to lost ACKs.
+section: "6"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

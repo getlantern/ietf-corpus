@@ -1,0 +1,9 @@
+document: rfc-2004
+kind: design-rationale
+summary: Unlike IP-in-IP encapsulation (RFC 2003), the TTL field is not modified during minimal encapsulation. This means hops within the tunnel are visible to tools such as traceroute, and the encapsulator decrements TTL only as a side effect of normal IP forwarding.
+section: "3"
+topics:
+    - ip
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

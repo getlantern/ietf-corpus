@@ -1,0 +1,8 @@
+document: rfc-2018
+kind: state-machine
+summary: The data sender maintains a SACKed bit per segment in the retransmission queue. On receipt of a SACK option, SACKed bits are set for segments wholly within a SACK block; SACKed segments are skipped during retransmission. On retransmit timeout, all SACKed bits are cleared.
+section: "5"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

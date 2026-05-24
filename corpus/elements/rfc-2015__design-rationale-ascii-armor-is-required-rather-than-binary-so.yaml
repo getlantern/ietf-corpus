@@ -1,0 +1,9 @@
+document: rfc-2015
+kind: design-rationale
+summary: ASCII armor is required (rather than binary) so that users without PGP software can still extract and use the PGP data embedded in a message. When large data must be split into parts, MIME message/partial should be used instead of PGP's own multipart ASCII armor format.
+section: "2"
+topics:
+    - email
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

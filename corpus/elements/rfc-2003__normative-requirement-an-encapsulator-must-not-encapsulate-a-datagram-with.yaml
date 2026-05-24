@@ -1,0 +1,9 @@
+document: rfc-2003
+kind: normative-requirement
+summary: An encapsulator MUST NOT encapsulate a datagram with TTL = 0. When tunneling is done as part of forwarding, the inner IP header TTL is decremented by one before encapsulation; if the result is 0, the datagram is discarded and an ICMP Time Exceeded message SHOULD be sent to the sender.
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

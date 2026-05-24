@@ -1,0 +1,10 @@
+document: rfc-2003
+kind: security-consideration
+summary: 'Host implementations capable of receiving encapsulated IP datagrams SHOULD admit only datagrams where: the protocol is harmless without source-address authentication; the outer datagram is from an authentically identified trusted source; the inner datagram includes an IP Authentication header; or the inner datagram is addressed to the decapsulator or a node in a special delivery relationship.'
+section: "6.2"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

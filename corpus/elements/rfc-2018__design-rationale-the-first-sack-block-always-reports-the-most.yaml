@@ -1,0 +1,8 @@
+document: rfc-2018
+kind: design-rationale
+summary: The first SACK block always reports the most recently received segment so the sender has the most up-to-date view of the receiver's queue state. Subsequent blocks repeat recently reported blocks for redundancy against ACK loss, ensuring each block appears in at least three successive ACKs.
+section: "4"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

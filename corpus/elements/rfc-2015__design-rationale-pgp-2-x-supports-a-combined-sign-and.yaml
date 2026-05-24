@@ -1,0 +1,9 @@
+document: rfc-2015
+kind: design-rationale
+summary: PGP 2.x supports a combined sign-and-encrypt operation in a single pass, which is an acceptable shortcut with less overhead than RFC 1847 encapsulation. The resulting data is formatted as a multipart/encrypted object; an agent may later rewrite it as multipart/signed using the embedded signature.
+section: "6.2"
+topics:
+    - email
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

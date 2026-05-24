@@ -1,0 +1,9 @@
+document: rfc-2015
+kind: wire-format
+summary: 'Signing procedure: (1) convert data to canonical form with <CR><LF> line endings; (2) apply Content-Transfer-Encoding with <CR><LF> per line; (3) prepend MIME content headers each ending with <CR><LF>; (4) compute detached PGP signature over headers+body; (5) encode signature as ASCII armor in second body part.'
+section: "5"
+topics:
+    - email
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
