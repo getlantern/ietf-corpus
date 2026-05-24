@@ -1,0 +1,9 @@
+document: rfc-2263
+kind: normative-requirement
+summary: A command responder application should always call the returnResponsePdu abstract service interface, even in the event of an error such as a resource allocation error. In the event of such an error, the PDU value passed to returnResponsePdu must contain appropriate values for errorStatus and errorIndex.
+section: "3.2"
+rfc2119_level: SHOULD
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

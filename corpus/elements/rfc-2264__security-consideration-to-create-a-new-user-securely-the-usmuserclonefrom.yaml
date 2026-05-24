@@ -1,0 +1,9 @@
+document: rfc-2264
+kind: security-consideration
+summary: 'To create a new user securely, the usmUserCloneFrom mechanism is used: a new row is created cloning from an existing user, then keys are changed via KeyChange before activating the row. Creating a user with known keys by any other method introduces a window of vulnerability.'
+section: "11.2"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

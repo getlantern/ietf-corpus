@@ -1,0 +1,9 @@
+document: rfc-2263
+kind: security-consideration
+summary: Command responder applications enforce access control using the isAccessAllowed abstract service interface for every variable in an SNMP request. Access is determined by securityModel, securityName, securityLevel, viewType (read or write), contextName, and the specific variableName OID. Failures map to authorizationError or genError in the response.
+section: "3.2"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

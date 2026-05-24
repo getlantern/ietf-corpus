@@ -1,0 +1,8 @@
+document: rfc-2257
+kind: protocol-element
+summary: 'SNMP SET operations are implemented as a four-PDU two-phase commit: agentx-TestSet-PDU (type 8) validates the request; agentx-CommitSet-PDU (type 9) applies changes; agentx-UndoSet-PDU (type 10) rolls back on commit failure; agentx-CleanupSet-PDU (type 11) releases resources. CommitSet, UndoSet, and CleanupSet contain only the PDU header.'
+section: 6.2.9
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

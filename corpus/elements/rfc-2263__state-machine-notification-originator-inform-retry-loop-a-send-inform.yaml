@@ -1,0 +1,8 @@
+document: rfc-2263
+kind: state-machine
+summary: 'Notification originator Inform retry loop: (a) send Inform via sendPdu with expectResponse=TRUE, (b) cache management target info, (c) if response received within timeout from target endpoint, consider acknowledged and delete cache, (d) else if timeout or report received, retrieve cache and repeat steps (a)–(d) up to the configured retry count; if retry count exceeded, consider acknowledgement failed.'
+section: "3.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

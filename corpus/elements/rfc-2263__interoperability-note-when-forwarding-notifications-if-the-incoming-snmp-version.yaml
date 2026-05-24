@@ -1,0 +1,8 @@
+document: rfc-2263
+kind: interoperability-note
+summary: When forwarding notifications, if the incoming SNMP version is SNMPv2 or SNMPv3 and the outgoing version is SNMPv1, that outgoing management target is silently skipped (not used) for the forwarded notification. This prevents lossy downgrade of SNMPv2-Trap PDU types that have no SNMPv1 equivalent.
+section: 3.5.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2264
+kind: design-rationale
+summary: The use of snmpEngineBoots plus snmpEngineTime eliminates the need for a non-volatile clock that ticks while the engine is powered off. On each reboot, snmpEngineBoots is incremented in non-volatile storage and snmpEngineTime resets to zero, providing monotonic progress without requiring battery-backed real-time clocks.
+section: 2.2.2
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2263
+kind: normative-requirement
+summary: When a newly created row in snmpTargetAddrTable or snmpTargetParamsTable cannot be made active, its RowStatus remains 'notReady'. The columns snmpTargetAddrTDomain, snmpTargetAddrTAddress (for the addr table) and snmpTargetParamsMPModel, snmpTargetParamsSecurityModel, snmpTargetParamsSecurityName, snmpTargetParamsSecurityLevel (for the params table) may not be modified while RowStatus is active(1).
+section: 4.1.2
+rfc2119_level: MUST NOT
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

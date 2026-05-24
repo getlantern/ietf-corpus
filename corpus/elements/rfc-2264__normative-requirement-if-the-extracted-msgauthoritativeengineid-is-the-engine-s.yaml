@@ -1,0 +1,10 @@
+document: rfc-2264
+kind: normative-requirement
+summary: If the extracted msgAuthoritativeEngineID is the engine's own snmpEngineID and snmpEngineBoots is 2147483647, or msgAuthoritativeEngineBoots differs from local snmpEngineBoots, or msgAuthoritativeEngineTime differs by more than ±150 seconds, the message is outside the Time Window and MUST be rejected with notInTimeWindow.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

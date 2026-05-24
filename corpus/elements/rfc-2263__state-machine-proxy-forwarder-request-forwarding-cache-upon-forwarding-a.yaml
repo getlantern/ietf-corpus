@@ -1,0 +1,8 @@
+document: rfc-2263
+kind: state-machine
+summary: 'Proxy forwarder request forwarding cache: upon forwarding a request, the proxy caches sendPduHandle, original request-id, contextEngineID, contextName, stateReference, incoming and outgoing management target info. A response is matched to the cache using sendPduHandle, contextEngineID, contextName, outgoing management target info, and the request-id in the received PDU. If no cache entry is found, the response is discarded. Entries are removed on match or timeout.'
+section: 3.5.1
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

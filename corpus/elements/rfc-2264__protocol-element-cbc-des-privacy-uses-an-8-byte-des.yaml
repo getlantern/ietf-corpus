@@ -1,0 +1,10 @@
+document: rfc-2264
+kind: protocol-element
+summary: CBC-DES privacy uses an 8-byte DES key taken from the first 8 octets of the 16-octet localized privKey; the IV is formed by XORing the remaining 8 octets of privKey with an 8-octet salt (4-byte snmpEngineBoots || 4-byte integer counter) carried in msgPrivacyParameters. The scopedPDU is padded to a multiple of 8 octets before encryption.
+section: "8"
+topics:
+    - snmp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

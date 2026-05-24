@@ -1,0 +1,10 @@
+document: rfc-2265
+kind: normative-requirement
+summary: 'The isAccessAllowed procedure MUST execute five steps in order: (1) check vacmContextTable for contextName; (2) look up groupName in vacmSecurityToGroupTable; (3) look up access entry in vacmAccessTable; (4) select view name by viewType, returning noSuchView if the view name is empty; (5) check variableName membership in the view.'
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

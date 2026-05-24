@@ -1,0 +1,8 @@
+document: rfc-2263
+kind: protocol-element
+summary: 'The snmpTargetSpinLock object (TestAndIncr syntax) serializes concurrent modification of snmpTargetAddrTagList by multiple managers. The procedure is: (1) read snmpTargetSpinLock and snmpTargetAddrTagList, (2) compute new tag list, (3) set snmpTargetSpinLock to the retrieved value atomically with the new tag list; retry from step 1 if the set fails.'
+section: 4.1.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

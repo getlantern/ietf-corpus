@@ -1,0 +1,8 @@
+document: rfc-2263
+kind: state-machine
+summary: 'Command responder request processing: (1) extract operation type; (2) extract request-id; (3) for GetBulk, extract non-repeaters/max-repetitions; (4) extract variable-bindings; (5) perform management operation using isAccessAllowed for each variable, halting on noSuchView/noAccessEntry/noGroupName (authorizationError), otherError (genError), noSuchContext (increment snmpUnknownContexts), or unavailable context (increment snmpUnavailableContexts); (6) call returnResponsePdu.'
+section: "3.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

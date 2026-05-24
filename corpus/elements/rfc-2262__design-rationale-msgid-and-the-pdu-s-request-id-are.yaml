@@ -1,0 +1,8 @@
+document: rfc-2262
+kind: design-rationale
+summary: msgID and the PDU's request-id are intentionally distinct. The msgID identifies the message and must be accessible even if PDU decryption fails; the request-id in the PDU is used by SNMP applications to identify the PDU. No assumption should be made that their values are equivalent.
+section: "6.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

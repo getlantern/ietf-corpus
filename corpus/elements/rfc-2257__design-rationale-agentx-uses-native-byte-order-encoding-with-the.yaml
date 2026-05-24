@@ -1,0 +1,8 @@
+document: rfc-2257
+kind: design-rationale
+summary: AgentX uses native byte-order encoding with the NETWORK_BYTE_ORDER flag to indicate which order is in use, rather than mandating network byte order. Since master and subagents typically reside on the same host and AgentX is more an IPC mechanism than a network protocol, native byte order avoids unnecessary byte-swapping overhead.
+section: "4.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

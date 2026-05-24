@@ -1,0 +1,9 @@
+document: rfc-2263
+kind: security-consideration
+summary: Notification originators apply access control (isAccessAllowed) to each variable-binding before including it in an outgoing notification. If isAccessAllowed does not return accessAllowed for a variable, the notification is not sent to that management target. Proxy forwarders, by contrast, do not apply access control to forwarded notification variable-bindings.
+section: "3.3"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
