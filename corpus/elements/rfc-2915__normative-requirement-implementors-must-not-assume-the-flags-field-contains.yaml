@@ -1,0 +1,9 @@
+document: rfc-2915
+kind: normative-requirement
+summary: Implementors MUST NOT assume the Flags field contains only 0 or 1 characters, since multiple flags may be permitted in future versions. If a client encounters a record with an unknown flag, it MUST ignore that record and move to the next, even overriding the Order field.
+section: "2"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

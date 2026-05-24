@@ -1,0 +1,9 @@
+document: rfc-2925
+kind: design-rationale
+summary: ICMP-based traceroute SHOULD NOT be used because RFC 792 prohibits generating ICMP messages about ICMP messages, causing routers to silently discard TTL-expired responses to ICMP Echo requests and making intermediate hops invisible. UDP probes to an unused port are the RECOMMENDED method.
+section: "1.0"
+topics:
+    - measurement
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

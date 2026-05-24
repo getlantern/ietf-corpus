@@ -1,0 +1,7 @@
+document: rfc-2911
+kind: normative-requirement
+summary: Before using an OPTIONAL operation, a client SHOULD first use the REQUIRED Get-Printer-Attributes operation to query the Printer's 'operations-supported' attribute and SHOULD NOT attempt an unsupported OPTIONAL operation. An IPP object receiving an unsupported operation MUST return 'server-error-operation-not-supported'.
+section: 3.1.3
+rfc2119_level: SHOULD
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

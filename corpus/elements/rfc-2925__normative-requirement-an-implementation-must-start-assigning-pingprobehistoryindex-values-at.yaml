@@ -1,0 +1,10 @@
+document: rfc-2925
+kind: normative-requirement
+summary: An implementation MUST start assigning pingProbeHistoryIndex values at 1 and wrap after exceeding the maximum value ('ffffffff'h). The oldest entry must be removed once the table reaches pingCtlMaxRows to accommodate new entries.
+section: 3.1.4
+rfc2119_level: MUST
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

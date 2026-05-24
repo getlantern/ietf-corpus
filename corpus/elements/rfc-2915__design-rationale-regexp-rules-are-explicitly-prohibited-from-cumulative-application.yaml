@@ -1,0 +1,8 @@
+document: rfc-2915
+kind: design-rationale
+summary: Regexp rules are explicitly prohibited from cumulative application because experience showed that applying rewrites to the output of prior rewrites is extremely fault-sensitive, very error-prone, and extremely difficult to debug. All regexps apply only to the original client-held string.
+section: "2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

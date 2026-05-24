@@ -1,0 +1,8 @@
+document: rfc-2915
+kind: state-machine
+summary: 'The NAPTR algorithm loops: starting with a string and key domain, retrieve NAPTR records, discard records with unknown flags or inappropriate Services, sort by Order then Preference, and find the first matching record (Replacement present or Regexp matches the string). Apply the rule and use the resulting domain as the new key for the next iteration. Terminal flags (S, A, U) or P halt or redirect the loop.'
+section: "4"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

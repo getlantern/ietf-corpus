@@ -1,0 +1,10 @@
+document: rfc-2925
+kind: normative-requirement
+summary: Traceroute implementations SHOULD use UDP packets to a (hopefully) unused port and SHOULD NOT use ICMP Echo Request probes, which have a high probability of failure because routers commonly do not return TTL-expired messages in response to ICMP input.
+section: "1.0"
+rfc2119_level: SHOULD
+topics:
+    - measurement
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

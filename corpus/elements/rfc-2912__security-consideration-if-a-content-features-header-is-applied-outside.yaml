@@ -1,0 +1,9 @@
+document: rfc-2912
+kind: security-consideration
+summary: If a 'Content-features:' header is applied outside a multipart/signed object or other signed data structure, the media feature information is unprotected and could be tampered with, potentially causing implementations to process the contained material inappropriately. Placing the feature information inside the signed structure would protect it at the cost of requiring inner-structure parsing.
+section: "5"
+topics:
+    - security
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

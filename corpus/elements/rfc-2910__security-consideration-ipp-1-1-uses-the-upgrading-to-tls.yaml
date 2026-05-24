@@ -1,0 +1,11 @@
+document: rfc-2910
+kind: security-consideration
+summary: IPP/1.1 uses the 'Upgrading to TLS Within HTTP/1.1' mechanism [RFC2817]. An initial IPP request never uses TLS; the client requests TLS via the HTTP 'Upgrade' header and the server agrees in the response. Security MUST NOT be compromised when a client supplies a lower version-number parameter.
+section: "8.2"
+rfc2119_level: MUST
+topics:
+    - security
+    - tls
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

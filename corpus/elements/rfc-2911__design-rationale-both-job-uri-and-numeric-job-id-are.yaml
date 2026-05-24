@@ -1,0 +1,6 @@
+document: rfc-2911
+kind: design-rationale
+summary: Both Job URI and numeric Job ID are required because many existing printing systems identify jobs only by 32-bit integer IDs unique within one Printer's context, while URI-based identification enables flexible distributed deployments where a Job may reside remotely from the Printer that accepted the create request. Supporting both allows all client types to access Job objects regardless of local constraints.
+section: "2.4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

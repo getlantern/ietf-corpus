@@ -1,0 +1,10 @@
+document: rfc-2925
+kind: design-rationale
+summary: Non-ICMP ping methods (UDP echo port 7, SNMP query timing, TCP connect timing) may yield better responses than ICMP Echo because some routers do not honor Echo Requests or handle them at lower priority, potentially producing false round-trip time indications.
+section: "1.0"
+topics:
+    - measurement
+    - ip
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
