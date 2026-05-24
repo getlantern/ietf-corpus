@@ -1,0 +1,10 @@
+document: rfc-2478
+kind: normative-requirement
+summary: For odd-message-count mechanisms, if the mechListMIC is present in the final NegTokenInit and is correct, GSS_S_COMPLETE is returned with no token. If it is present but invalid, context establishment MUST fail. If it is absent, GSS_S_COMPLETE MUST be returned to the target with a NegTokenTarg containing a MIC and no responseToken.
+section: 3.2.2
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

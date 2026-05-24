@@ -1,0 +1,9 @@
+document: rfc-2478
+kind: state-machine
+summary: 'The negotiation proceeds: (a) initiator calls GSS_Init_sec_context emitting negTokenInit with GSS_S_CONTINUE_NEEDED; (b) target calls GSS_Accept_sec_context returning negTokenTarg with accept_completed, accept_incomplete, or reject; (c) initiator calls GSS_Init_sec_context with the target token, receiving GSS_S_COMPLETE, GSS_S_CONTINUE_NEEDED, or GSS_S_BAD_MECH. Subsequent tokens use the selected mechanism encapsulated in NegTokenTarg until both sides return GSS_S_COMPLETE.'
+section: "2.2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

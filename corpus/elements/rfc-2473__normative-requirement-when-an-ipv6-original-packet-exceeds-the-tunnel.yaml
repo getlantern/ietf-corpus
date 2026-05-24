@@ -1,0 +1,10 @@
+document: rfc-2473
+kind: normative-requirement
+summary: When an IPv6 original packet exceeds the tunnel MTU and its size is larger than the IPv6 minimum link MTU, the entry-point node must discard it and send an ICMPv6 Packet Too Big message to the original source with MTU = max(tunnel MTU, IPv6 minimum link MTU). If the original is at or below the minimum link MTU, the entry-point encapsulates and then fragments the resulting tunnel packet.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2459
+kind: security-consideration
+summary: Private key compromise, name change, or change of affiliation with a CA requires certificate revocation. Relying parties must obtain a suitably-recent CRL (typically the most recent) and verify the certificate serial number is absent. CRL-based revocation granularity is limited to the CRL issuance period (up to one hour, day, or week).
+section: "3.3"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

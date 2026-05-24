@@ -1,0 +1,11 @@
+document: rfc-2473
+kind: design-rationale
+summary: Recursive encapsulation risk is highest when inner tunnels share identical exit-points and when the route to the exit-point is a default route, because default routing cannot discriminate based on destination and will re-encapsulate indefinitely in a routing loop. Route-to-node provides minimum risk; default route provides maximum risk.
+section: A.1
+topics:
+    - ip
+    - vpn
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2476
+kind: design-rationale
+summary: Separating message submission from relay allows sites to implement different security policies, authenticated submission for travelers, detect client misconfigurations, and keep MTA and MSA codebases distinct. Modifications that are safe at submission time are harmful when performed by downstream MTAs.
+section: "1"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

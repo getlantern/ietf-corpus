@@ -1,0 +1,10 @@
+document: rfc-2473
+kind: normative-requirement
+summary: A tunnel entry-point node is required to examine entering packets for a Tunnel Encapsulation Limit option. If the option is found with a limit value of zero, the packet must be discarded and an ICMPv6 Parameter Problem (Code 0, Pointer to the third octet of the TEL option) must be sent to the packet's source.
+section: 4.1.1
+rfc2119_level: MUST
+topics:
+    - ip
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

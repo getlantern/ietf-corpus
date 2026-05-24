@@ -1,0 +1,10 @@
+document: rfc-2478
+kind: normative-requirement
+summary: If the selected mechanism supports integrity and uses an even number of messages, the target MUST compute a mechListMIC (GetMIC over the MechTypes from NegTokenInit) and send it in the final NegTokenTarg. The initiator MUST require this field to be present and valid; absence of a valid mechListMIC means negotiation MUST fail.
+section: 3.2.2
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

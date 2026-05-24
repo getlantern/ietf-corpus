@@ -1,0 +1,11 @@
+document: rfc-2474
+kind: security-consideration
+summary: IPsec (AH and ESP) does not include the DS field in its cryptographic calculations, so IPsec provides no integrity protection for the DS field and does not prevent man-in-the-middle modification of codepoints. IPsec tunnel mode protects the inner header's DS field but the outer header remains modifiable by intermediate nodes.
+section: "7.2"
+topics:
+    - diffserv
+    - security
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

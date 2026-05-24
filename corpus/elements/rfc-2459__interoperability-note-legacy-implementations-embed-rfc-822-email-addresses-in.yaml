@@ -1,0 +1,9 @@
+document: rfc-2459
+kind: interoperability-note
+summary: Legacy implementations embed RFC 822 email addresses in the subject DN as an EmailAddress attribute of type IA5String. New certificates MUST use rfc822Name in subjectAltName for email identities; simultaneous inclusion of EmailAddress in the subject DN is deprecated but permitted for backward compatibility.
+section: 4.1.2.6
+topics:
+    - pkix
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
