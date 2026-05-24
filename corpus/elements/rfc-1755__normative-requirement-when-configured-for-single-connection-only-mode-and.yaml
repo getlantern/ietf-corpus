@@ -1,0 +1,9 @@
+document: rfc-1755
+kind: normative-requirement
+summary: When configured for single-connection-only mode and a colliding incoming call arrives while a call request is pending, the incoming call MUST be rejected. Each system MUST then wait at least a configurable collision retry time in the range 1–10 seconds before retrying, and MUST add a random increment with exponential backoff.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

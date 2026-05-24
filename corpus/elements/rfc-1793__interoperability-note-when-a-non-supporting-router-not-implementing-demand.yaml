@@ -1,0 +1,8 @@
+document: rfc-1793
+kind: interoperability-note
+summary: When a non-supporting router (not implementing demand circuit extensions) joins an OSPF domain, its router-LSA will lack the DC-bit, causing all DoNotAge LSAs to be flushed throughout the domain and reverting flooding over demand circuits to standard OSPF behavior. However, Hello suppression already in effect on demand circuits continues even after this reversion.
+section: "4.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

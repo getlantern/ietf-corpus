@@ -1,0 +1,8 @@
+document: rfc-1793
+kind: design-rationale
+summary: A MaxAge interval (not a shorter one) is required before flushing stale DoNotAge LSAs from an unreachable originator to avoid thrashing—flushing an LSA only to have it reoriginated soon afterwards. This ensures DoNotAge LSAs are removed no faster than naturally aged LSAs.
+section: "2.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

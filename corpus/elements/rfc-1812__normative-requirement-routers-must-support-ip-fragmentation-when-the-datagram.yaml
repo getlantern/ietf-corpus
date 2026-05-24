@@ -1,0 +1,9 @@
+document: rfc-1812
+kind: normative-requirement
+summary: Routers MUST support IP fragmentation when the datagram exceeds the outgoing interface MTU, setting the fragment offset and more-fragments bit correctly. Routers MUST NOT fragment datagrams with the Don't Fragment (DF) bit set; instead they MUST send an ICMP Destination Unreachable (fragmentation needed) message to the source.
+section: 5.2.6
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

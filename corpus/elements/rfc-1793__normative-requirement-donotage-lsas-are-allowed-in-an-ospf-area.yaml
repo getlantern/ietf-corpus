@@ -1,0 +1,9 @@
+document: rfc-1793
+kind: normative-requirement
+summary: DoNotAge LSAs are allowed in an OSPF area if and only if all LSAs in the area's link state database have the DC-bit set in their Options field. If any LSA lacks the DC-bit, the router SHOULD flush all DoNotAge LSAs from the area, which will be reoriginated with DoNotAge clear.
+section: "2.5"
+rfc2119_level: SHOULD
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

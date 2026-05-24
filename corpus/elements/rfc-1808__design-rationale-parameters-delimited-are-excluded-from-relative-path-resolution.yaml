@@ -1,0 +1,8 @@
+document: rfc-1808
+kind: design-rationale
+summary: Parameters (';'-delimited) are excluded from relative path resolution because they do not form part of the URL path. In particular, the ';type=d' parameter on an ftp URL must not affect interpretation of relative paths, making parameter-carrying URLs safe base URLs for relative references.
+section: "4"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

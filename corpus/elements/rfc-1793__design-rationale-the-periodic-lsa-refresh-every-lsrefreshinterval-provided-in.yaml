@@ -1,0 +1,8 @@
+document: rfc-1793
+kind: design-rationale
+summary: The periodic LSA refresh (every LSRefreshInterval) provided in standard OSPF acts as protection against database corruption due to software errors. Over demand circuits this protection is removed, requiring routers to correctly hold DoNotAge LSAs indefinitely. Additionally, the ospfAreaLSACksumSum and ospfExternLSACksumSum MIB variables can no longer reliably verify database synchronization across demand circuits because LS Sequence Numbers (covered by the checksum) will differ.
+section: "6"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-1759
+kind: state-machine
+summary: 'Overall printer status is mapped from three Host MIB objects (hrDeviceStatus, hrPrinterStatus, hrPrinterDetectedErrorState) to seven named states: Normal (running/idle/none), Busy (running/printing), Non-Critical Alert Active (warning), Critical Alert Active (down/other), Unavailable (down/other), Moving off-line (warning/offline), Moving on-line (down/warmup), Standby (running/other). Concurrent critical and non-critical alerts collapse to Critical Active.'
+section: 2.2.13.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

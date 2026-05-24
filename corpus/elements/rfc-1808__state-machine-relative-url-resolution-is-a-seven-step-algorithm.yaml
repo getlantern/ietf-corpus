@@ -1,0 +1,8 @@
+document: rfc-1808
+kind: state-machine
+summary: 'Relative URL resolution is a seven-step algorithm: (1) establish base URL; (2) parse both URLs and check if embedded is empty (inherit base) or has a scheme (treat as absolute); (3) inherit net_loc if embedded net_loc is empty; (4) if embedded path starts with ''/'', skip to step 7; (5) if embedded path is empty, inherit base path/params/query; (6) merge paths, removing ''./'' and ''<segment>/../'' patterns iteratively; (7) recombine all components into absolute URL.'
+section: "4"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-1755
+kind: design-rationale
+summary: Even when a B-LLI specifying IP as layer-3 owner (layer_3_id=3, IPI=0xCC) is used, LLC/SNAP encapsulation is still required on all datagrams. This is because while called parties MUST accept this call form, they may choose whether to multiplex through LLC—the decision is local to the receiver's protocol architecture.
+section: 6.2.1
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

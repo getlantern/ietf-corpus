@@ -1,0 +1,8 @@
+document: rfc-1793
+kind: design-rationale
+summary: Hello suppression is not provided for broadcast and NBMA networks configured as demand circuits because correct operation of the Designated Router election algorithm requires periodic Hello exchange. These network types therefore keep data-link connections constantly open despite being configured as demand circuits, gaining only reduced flooding traffic.
+section: "3.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

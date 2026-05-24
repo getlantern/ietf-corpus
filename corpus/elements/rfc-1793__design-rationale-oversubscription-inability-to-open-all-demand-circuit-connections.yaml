@@ -1,0 +1,8 @@
+document: rfc-1793
+kind: design-rationale
+summary: Oversubscription (inability to open all demand circuit connections simultaneously) is deliberately treated as a local resource problem rather than a routing unreachability event. Discarding packets to unopenable circuits rather than reporting unreachability prevents excessive routing churn when connections temporarily cannot be established.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

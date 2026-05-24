@@ -1,0 +1,9 @@
+document: rfc-1793
+kind: normative-requirement
+summary: When a Link State Update is received containing an LSA less recent than the database copy, the router MUST send the database copy back to the sending neighbor (encapsulated in a Link State Update) without placing it on the retransmission list and without acknowledging the received instance. This applies to all interfaces, not just demand circuits.
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

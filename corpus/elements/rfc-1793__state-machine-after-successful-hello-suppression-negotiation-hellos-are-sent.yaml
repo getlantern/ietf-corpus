@@ -1,0 +1,8 @@
+document: rfc-1793
+kind: state-machine
+summary: After successful Hello suppression negotiation, Hellos are sent over point-to-point demand circuits only until the neighbor reaches state 'Full'. Thereafter, the InactivityTimer has no effect on demand circuit neighbors in state 'Loading' or 'Full'. The neighbor transitions back to 'Down' only upon a discouraging diagnostic code from a failed call, not merely from the data-link connection closing to save resources.
+section: 3.2.2
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

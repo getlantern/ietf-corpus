@@ -1,0 +1,8 @@
+document: rfc-1808
+kind: interoperability-note
+summary: When '..' segments outnumber hierarchical levels in the base path, the excess '..' segments cannot change the <net_loc>; the result retains the original net_loc while the path may include literal '..' components (e.g., '../../../g' from base 'http://a/b/c/d' resolves to 'http://a/../g').
+section: "5.2"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

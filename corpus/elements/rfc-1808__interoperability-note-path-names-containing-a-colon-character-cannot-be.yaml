@@ -1,0 +1,8 @@
+document: rfc-1808
+kind: interoperability-note
+summary: Path names containing a colon ':' character cannot be used as the first component of a relative URL path (e.g., 'this:that') because parsers will mistake it for a scheme name. Authors must prefix such paths with './' (preferred) or percent-encode the colon as '%3A'.
+section: "5.3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

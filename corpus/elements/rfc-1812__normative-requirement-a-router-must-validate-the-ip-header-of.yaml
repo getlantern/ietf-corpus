@@ -1,0 +1,10 @@
+document: rfc-1812
+kind: normative-requirement
+summary: 'A router MUST validate the IP header of every datagram it forwards: version must be 4, header length at least 20 bytes, total length consistent with received data, checksum correct, and source/destination addresses valid. Packets failing validation MUST be discarded, with an ICMP error sent when appropriate.'
+section: 5.2.2
+rfc2119_level: MUST
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

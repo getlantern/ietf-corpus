@@ -1,0 +1,8 @@
+document: rfc-1808
+kind: interoperability-note
+summary: Some older parsers allow the scheme name to be present in a relative URL if it matches the base URL scheme (e.g., 'http:g' when base is also http). This is considered a loophole in prior specifications and should be avoided; compliant parsers must treat 'http:g' as an absolute URL resolving to '<URL:http:g>', not as a relative path.
+section: "5.2"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

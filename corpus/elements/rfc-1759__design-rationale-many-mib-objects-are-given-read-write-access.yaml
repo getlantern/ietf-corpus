@@ -1,0 +1,8 @@
+document: rfc-1759
+kind: design-rationale
+summary: Many MIB objects are given read-write access to allow management applications to supply resource information (e.g. paper size, tray capacity) on printers that lack sensors. The printer treats the written value as truth and acts on it — this is not a passive memo field. For example, if a wrong paper size is written, the printer images using that size.
+section: "2.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

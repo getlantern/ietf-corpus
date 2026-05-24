@@ -1,0 +1,8 @@
+document: rfc-1759
+kind: state-machine
+summary: Alert Table management distinguishes binary change events (leading-edge adds an entry; trailing-edge removes it — no overflow possible if enough storage) from simple change events (state changes without a mandatory return, e.g. paper-size change). Simple change events must be aged out when the table is full.
+section: 2.2.13.4
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

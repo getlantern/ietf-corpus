@@ -1,0 +1,9 @@
+document: rfc-1812
+kind: normative-requirement
+summary: A router MUST decrement the TTL of every forwarded datagram by at least one. If the TTL reaches zero, the datagram MUST be discarded and an ICMP Time Exceeded message sent to the source (unless the datagram was a multicast).
+section: 5.3.1
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
