@@ -1,0 +1,8 @@
+document: rfc-1483
+kind: design-rationale
+summary: 'Two encapsulation methods are defined: LLC Encapsulation multiplexes multiple protocols over a single ATM VC by prefixing each PDU with an IEEE 802.2 LLC header; VC Based Multiplexing identifies the protocol implicitly by the VC itself, requiring one VC per protocol but with minimal overhead. VC-based is preferred where dynamic VC creation is fast and cheap (e.g., private ATM); LLC is preferred when VCs are scarce or expensive (e.g., PVC-only networks or per-VC charging).'
+section: "2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,6 @@
+document: rfc-1483
+kind: design-rationale
+summary: 'The 802.6 Common PDU Header and Trailer are included in the ATM encapsulation to enable pipelining at the egress bridge: the BAsize field allows the bridge to extract the PDU length and begin transmitting 802.6 segments before the entire PDU has been received over ATM. Without it, the bridge would have to buffer the entire PDU to calculate and insert the length.'
+section: "4.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

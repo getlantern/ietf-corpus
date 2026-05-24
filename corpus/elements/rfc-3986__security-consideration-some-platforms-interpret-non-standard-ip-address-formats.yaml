@@ -1,0 +1,9 @@
+document: rfc-3986
+kind: security-consideration
+summary: Some platforms interpret non-standard IP address formats (octal, hexadecimal notation, fewer than four dotted octets) that this specification does not allow. Attackers may exploit these platform-specific behaviors to craft URIs that appear to target one address but resolve to another; implementations should reject addresses not matching the dotted-decimal grammar.
+section: "7.4"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

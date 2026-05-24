@@ -1,0 +1,9 @@
+document: rfc-1471
+kind: security-consideration
+summary: 'The PPP MIB allows operators to configure and control PPP links, representing a security risk. Three mitigations are described: (1) security-sensitive variables are placed in separate optional MIB Groups that implementors may omit; (2) those variables may be implemented as read-only, though this still exposes authentication data; (3) SNMPv2 MIB views with authentication and privacy can protect sensitive tables, which are segregated into separate tables to ease view subtree identification.'
+section: "6"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

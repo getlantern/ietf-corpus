@@ -1,0 +1,8 @@
+document: rfc-1471
+kind: design-rationale
+summary: The LQR Extensions Group stores the last received LQR packet as a unit because LQR quality policies require all relevant counters to be sampled at the same instant; examining individual MIB objects in sequence would not provide a synchronized snapshot, making external policy implementations impractical without this group.
+section: "3.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

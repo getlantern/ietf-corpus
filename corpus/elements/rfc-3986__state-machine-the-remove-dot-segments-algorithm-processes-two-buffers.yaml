@@ -1,0 +1,6 @@
+document: rfc-3986
+kind: state-machine
+summary: 'The remove_dot_segments algorithm processes two buffers: (A) strip leading "../" or "./"; (B) replace "/./" or "/. (end)" with "/"; (C) replace "/../" or "/.. (end)" with "/" and remove last output segment; (D) remove isolated "." or ".."; (E) otherwise move the first path segment to the output. This removes invalid or extraneous dot-segments before forming the target URI.'
+section: 5.2.4
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
