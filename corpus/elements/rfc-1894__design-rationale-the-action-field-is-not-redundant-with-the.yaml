@@ -1,0 +1,8 @@
+document: rfc-1894
+kind: design-rationale
+summary: 'The Action field is not redundant with the Status field: a status code of "4" (temporary failure) can accompany either a "delayed" or "failed" action. An MTA may issue a "delayed" DSN and later a "failed" DSN both carrying the same 4.x.x status code, distinguishable only via the Action field.'
+section: 2.3.3
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

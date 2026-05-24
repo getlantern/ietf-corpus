@@ -1,0 +1,10 @@
+document: rfc-1933
+kind: design-rationale
+summary: 'DNS resolver libraries on IPv6/IPv4 nodes have three options when both an AAAA record holding an IPv4-compatible address and an A record for the same host are found: return only the IPv6 address, only the IPv4 address, or both. The choice affects whether IPv6-encapsulated-in-IPv4 or native IPv4 traffic is generated, and implementations that do not support automatic tunneling should not return IPv4-compatible IPv6 addresses.'
+section: 3.2.1
+topics:
+    - ip
+    - v6ops
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

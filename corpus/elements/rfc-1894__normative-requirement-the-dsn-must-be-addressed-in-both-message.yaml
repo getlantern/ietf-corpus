@@ -1,0 +1,9 @@
+document: rfc-1894
+kind: normative-requirement
+summary: The DSN MUST be addressed (in both message header and transport envelope) to the return address from the transport envelope of the original message. When sent via SMTP, the MAIL FROM command MUST use a NULL return address ("MAIL FROM:<>") to prevent mail loops.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

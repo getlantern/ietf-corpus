@@ -1,0 +1,9 @@
+document: rfc-1933
+kind: design-rationale
+summary: The encapsulating node should track IPv4 Path MTU across the tunnel using RFC 1191 Path MTU Discovery rather than treating the tunnel as a link with MTU 65515, because large-MTU treatment causes excess fragmentation and requires reassembly at tunnel endpoints (which is costly for router tunnels).
+section: 4.1.1
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

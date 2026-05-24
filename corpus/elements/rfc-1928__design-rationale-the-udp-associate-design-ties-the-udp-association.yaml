@@ -1,0 +1,9 @@
+document: rfc-1928
+kind: design-rationale
+summary: The UDP ASSOCIATE design ties the UDP association lifetime to the control TCP connection rather than making it independent. This simplifies cleanup and ensures that broken TCP connections automatically release all associated UDP relay resources.
+section: "6"
+topics:
+    - udp
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

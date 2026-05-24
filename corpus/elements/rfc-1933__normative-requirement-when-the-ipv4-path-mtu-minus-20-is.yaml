@@ -1,0 +1,10 @@
+document: rfc-1933
+kind: normative-requirement
+summary: When the IPv4 path MTU minus 20 is less than or equal to 576 bytes and the IPv6 packet exceeds 576 bytes, an IPv6 ICMP 'packet too big' with MTU=576 is sent and the packet is dropped; for packets up to 576 bytes the DF flag must not be set, permitting IPv4 fragmentation along the path.
+section: 4.1.1
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

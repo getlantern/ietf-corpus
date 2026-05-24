@@ -1,0 +1,10 @@
+document: rfc-1933
+kind: normative-requirement
+summary: When the IPv4 path MTU minus 20 bytes exceeds 576 bytes and the IPv6 packet exceeds that value, the encapsulating node MUST send an IPv6 ICMP 'packet too big' error with MTU = (IPv4 path MTU - 20) and drop the packet; otherwise it encapsulates and sets the Don't Fragment flag.
+section: 4.1.1
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

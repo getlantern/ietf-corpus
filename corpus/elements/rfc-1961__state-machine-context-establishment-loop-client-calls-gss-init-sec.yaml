@@ -1,0 +1,8 @@
+document: rfc-1961
+kind: state-machine
+summary: 'Context establishment loop: client calls gss_init_sec_context; if GSS_S_CONTINUE_NEEDED, sends token and awaits server token then repeats; if GSS_S_COMPLETE, sends any output_token then proceeds to protection-level subnegotiation. Server mirrors this with gss_accept_sec_context.'
+section: "3.3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

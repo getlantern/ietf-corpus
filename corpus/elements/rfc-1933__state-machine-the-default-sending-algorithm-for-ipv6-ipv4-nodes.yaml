@@ -1,0 +1,9 @@
+document: rfc-1933
+kind: state-machine
+summary: 'The default sending algorithm for IPv6/IPv4 nodes selects packet format based on (destination address type) × (on/off-link) × (IPv4 router present) × (IPv6 router present): IPv4 destinations use native IPv4; IPv4-compatible IPv6 destinations on-link use IPv6, off-link with IPv4 router use encapsulated IPv6/4, off-link with IPv6 router use native IPv6; IPv6-only destinations use native IPv6 or configured tunnel; otherwise destination is unreachable.'
+section: "4.4"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-1894
+kind: security-consideration
+summary: DSNs provide no non-repudiation guarantee. Even a "failed" DSN cannot be relied upon as proof that a message was not received, due to SMTP race conditions (duplicate delivery when a connection drops after DATA completion) and active forgery possibilities.
+section: "4.3"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

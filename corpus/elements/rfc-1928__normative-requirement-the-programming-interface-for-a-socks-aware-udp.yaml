@@ -1,0 +1,9 @@
+document: rfc-1928
+kind: normative-requirement
+summary: 'The programming interface for a SOCKS-aware UDP MUST report an available buffer space smaller than the actual OS-provided space to account for header overhead: 10+method_dependent octets smaller for IPv4 (ATYP X''01''), 262+method_dependent for domain names (ATYP X''03''), and 20+method_dependent for IPv6 (ATYP X''04'').'
+section: "7"
+rfc2119_level: MUST
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-1894
+kind: security-consideration
+summary: DSNs can inadvertently disclose confidential forwarding addresses (e.g., pager addresses). MTAs should provide mechanisms to preserve forwarding address confidentiality, including issuing "relayed" DSNs, omitting Remote-* fields, using NOTIFY=NEVER, or having the forwarding MTA rewrite the envelope return address.
+section: "4.2"
+topics:
+    - email
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

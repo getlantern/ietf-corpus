@@ -1,0 +1,8 @@
+document: rfc-1938
+kind: state-machine
+summary: 'Authentication state: server stores (sequence_number N, OTP_N). On receipt of a candidate password, the server hashes it once and compares to OTP_N; on match, N is decremented and the new OTP replaces the stored one. When N approaches zero, the user must reinitialize with a new seed or sequence to continue.'
+section: "7.0"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
