@@ -1,0 +1,9 @@
+document: rfc-2095
+kind: security-consideration
+summary: Storing HMAC 'contexts' on the server is only marginally better than storing secrets in cleartext; if the server itself is compromised, the secrets are not adequately protected. Servers storing secrets or contexts must be protected commensurate with the value of user mailbox and identity information.
+section: "4"
+topics:
+    - security
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

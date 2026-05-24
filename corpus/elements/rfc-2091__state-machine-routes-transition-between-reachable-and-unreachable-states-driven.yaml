@@ -1,0 +1,8 @@
+document: rfc-2091
+kind: state-machine
+summary: Routes transition between reachable and unreachable states driven by circuit-manager signals. On circuit-down, database entries are first marked temporary and aged, then marked unreachable for a 120-second hold-down period. On subsequent circuit-up, a full routing exchange is performed to re-prime the routing database.
+section: "3.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

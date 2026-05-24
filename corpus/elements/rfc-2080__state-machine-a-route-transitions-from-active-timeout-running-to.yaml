@@ -1,0 +1,8 @@
+document: rfc-2080
+kind: state-machine
+summary: A route transitions from Active (timeout running) to Expired (metric set to 16, garbage-collection timer started, triggered update sent) on timeout or explicit metric-16 update, and then to Deleted when the 120-second garbage-collection timer expires. A new route received while garbage-collection is running resets the route to Active.
+section: "2.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

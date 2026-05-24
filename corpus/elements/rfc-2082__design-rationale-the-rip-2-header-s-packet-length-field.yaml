@@ -1,0 +1,8 @@
+document: rfc-2082
+kind: design-rationale
+summary: The RIP-2 header's packet length field indicates only the standard RIP-2 portion of the packet (not including the authentication trailer). The Authentication Data Offset field provides the byte offset from the RIP-2 header to the MD5 digest, enabling consistent parsing regardless of future trailer field additions.
+section: 3.2.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

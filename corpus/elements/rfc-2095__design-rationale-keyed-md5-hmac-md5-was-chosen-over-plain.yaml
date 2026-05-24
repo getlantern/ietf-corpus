@@ -1,0 +1,9 @@
+document: rfc-2095
+kind: design-rationale
+summary: Keyed MD5 (HMAC-MD5) was chosen over plain MD5 because it provides greater security for authentication of short messages. Additionally, HMAC-MD5 allows the server to store precomputed intermediate results ('contexts') instead of the cleartext shared secret, reducing exposure if the server is compromised.
+section: "2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

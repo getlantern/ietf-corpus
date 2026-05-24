@@ -1,0 +1,9 @@
+document: rfc-2091
+kind: normative-requirement
+summary: An Update Response MUST be sent in response to an Update Request, and that response MUST have the Flush flag set. Other Update Responses SHOULD NOT be sent until the Flush Update Response has been acknowledged, after which the remainder of the database MUST be sent as Update Responses with Flush NOT set.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

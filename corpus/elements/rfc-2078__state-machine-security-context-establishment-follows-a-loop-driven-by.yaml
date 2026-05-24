@@ -1,0 +1,8 @@
+document: rfc-2078
+kind: state-machine
+summary: 'Security context establishment follows a loop driven by GSS_S_CONTINUE_NEEDED: the initiator calls GSS_Init_sec_context(), sends the output_token to the target, which calls GSS_Accept_sec_context(); if either returns GSS_S_CONTINUE_NEEDED, the resulting token is returned and the call is repeated until both sides return GSS_S_COMPLETE.'
+section: "2.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

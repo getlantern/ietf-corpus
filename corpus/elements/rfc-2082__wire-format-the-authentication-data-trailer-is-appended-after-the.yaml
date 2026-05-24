@@ -1,0 +1,10 @@
+document: rfc-2082
+kind: wire-format
+summary: The Authentication Data trailer is appended after the RIP-2 data, preceded by a 0xFFFF marker and 0x01 type byte. When Keyed MD5 is used, the Authentication Data is 16 bytes. The MD5 computation appends 16 bytes of secret key, RFC 1321 padding, and a 64-bit message length field in memory but does not transmit the pad.
+section: "3.2"
+topics:
+    - routing
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

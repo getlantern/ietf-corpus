@@ -1,0 +1,10 @@
+document: rfc-2082
+kind: state-machine
+summary: 'Message reception processing: (1) set aside the received digest; (2) determine algorithm and key from Key-ID; (3) write the authentication key into the packet at the indicated offset; (4) add padding; (5) compute new digest. If computed digest does not match or sequence number is non-advancing for a known neighbor, discard the message unprocessed.'
+section: 3.2.2
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

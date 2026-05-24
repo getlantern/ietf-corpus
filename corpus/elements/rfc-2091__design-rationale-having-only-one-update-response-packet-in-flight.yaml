@@ -1,0 +1,8 @@
+document: rfc-2091
+kind: design-rationale
+summary: Having only one Update Response packet in flight at a time is the simplest retransmission strategy and is recommended for ease of implementation. Allowing several packets in flight improves throughput for large updates over high-latency WAN links but requires careful handling of out-of-order delivery and database-in-flux retransmissions.
+section: "3.5"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

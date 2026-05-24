@@ -1,0 +1,10 @@
+document: rfc-2082
+kind: normative-requirement
+summary: The 32-bit sequence number MUST be non-decreasing for all messages sent with the same Key ID. This provides protection against replay attacks; a message with a lower sequence number than the last received from a known neighbor is discarded unprocessed.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

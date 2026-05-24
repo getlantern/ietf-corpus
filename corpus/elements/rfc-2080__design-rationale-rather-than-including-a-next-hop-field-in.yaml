@@ -1,0 +1,8 @@
+document: rfc-2080
+kind: design-rationale
+summary: Rather than including a next hop field in every RTE (which would nearly double RTE size), RIPng uses a special next hop RTE (metric=0xFF) that applies to all subsequent address RTEs until end of message or another next hop RTE is encountered.
+section: 2.1.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2091
+kind: design-rationale
+summary: Periodic broadcasting by distance-vector protocols (IP RIP, Netware RIP/SAP) prevents WAN demand circuits from ever closing, since updates arrive every 30 or 60 seconds. Triggered RIP sends routing information on the WAN only when the routing database changes or when the circuit manager signals a reachability change, enabling circuits to remain idle between updates.
+section: "1"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
