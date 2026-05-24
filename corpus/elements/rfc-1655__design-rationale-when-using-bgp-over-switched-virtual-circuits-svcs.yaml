@@ -1,0 +1,10 @@
+document: rfc-1655
+kind: design-rationale
+summary: When using BGP over Switched Virtual Circuits (SVCs), periodic KEEPALIVE messages may be undesirable because they keep SVCs permanently open. BGP supports SVC operation by allowing zero Hold Time in the OPEN message, eliminating periodic KEEPALIVEs and relying on the circuit manager and TCP instead.
+section: "9"
+topics:
+    - bgp
+    - routing
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

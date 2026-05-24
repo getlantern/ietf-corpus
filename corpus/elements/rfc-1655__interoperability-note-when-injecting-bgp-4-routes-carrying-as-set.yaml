@@ -1,0 +1,9 @@
+document: rfc-1655
+kind: interoperability-note
+summary: When injecting BGP-4 routes carrying AS_SET path segments into BGP-3, the AS_PATH shall be constructed by treating AS_SET segments as AS_SEQUENCE segments, resulting in a single AS_SEQUENCE. This loses set/sequence information but does not affect routing loop suppression; it may affect policies based on AS_PATH content or ordering.
+section: "8.2"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

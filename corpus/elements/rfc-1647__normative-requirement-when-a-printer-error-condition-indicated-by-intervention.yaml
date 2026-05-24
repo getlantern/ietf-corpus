@@ -1,0 +1,7 @@
+document: rfc-1647
+kind: normative-requirement
+summary: When a printer error condition indicated by Intervention Required or Component Disconnected has been cleared, the client MUST send a data message with DATA-TYPE=REQUEST and REQUEST-FLAG=ERR-COND-CLEARED (0x00) with no data portion, so the server can notify the host application to resume sending printer output.
+section: 10.4.1
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

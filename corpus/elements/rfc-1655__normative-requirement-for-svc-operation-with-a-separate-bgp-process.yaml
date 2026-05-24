@@ -1,0 +1,11 @@
+document: rfc-1655
+kind: normative-requirement
+summary: For SVC operation with a separate BGP process and circuit manager, a periodic two-way poll must be implemented. If the BGP process finds the circuit manager gone, it should close relevant TCP connections; if the circuit manager finds BGP gone, it should close all associated connections and reject further incoming connections.
+section: "9.4"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

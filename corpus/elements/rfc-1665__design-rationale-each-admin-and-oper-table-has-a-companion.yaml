@@ -1,0 +1,8 @@
+document: rfc-1665
+kind: design-rationale
+summary: Each Admin and Oper table has a companion LastChange TimeStamp object (e.g., snaNodeAdminTableLastChange). A Management Station polls only this scalar; a changed value signals that a full table retrieval is warranted, avoiding unnecessary bulk retrievals of large tables.
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

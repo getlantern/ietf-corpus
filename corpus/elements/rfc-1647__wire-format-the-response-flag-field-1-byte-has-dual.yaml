@@ -1,0 +1,6 @@
+document: rfc-1647
+kind: wire-format
+summary: 'The RESPONSE-FLAG field (1 byte) has dual meaning: for DATA-TYPE 3270-DATA or SCS-DATA it indicates response expectation (NO-RESPONSE=0x00, ERROR-RESPONSE=0x01, ALWAYS-RESPONSE=0x02); for DATA-TYPE RESPONSE it carries the actual response (POSITIVE-RESPONSE=0x00, NEGATIVE-RESPONSE=0x01). For all other DATA-TYPE values it must be ignored by the receiver and set to 0x00 by the sender.'
+section: 8.1.3
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

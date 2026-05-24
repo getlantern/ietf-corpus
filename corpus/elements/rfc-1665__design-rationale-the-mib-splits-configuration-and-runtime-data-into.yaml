@@ -1,0 +1,8 @@
+document: rfc-1665
+kind: design-rationale
+summary: The MIB splits configuration and runtime data into parallel Admin and Oper tables. Admin tables hold desired/configured values (read-create) while Oper tables (augmenting Admin) hold actual runtime values (read-only). This separation makes it explicit which values are targets versus current reality, and allows the Agent to be the sole writer to Oper entries.
+section: "3.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

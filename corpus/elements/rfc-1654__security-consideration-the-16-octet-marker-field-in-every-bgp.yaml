@@ -1,0 +1,10 @@
+document: rfc-1654
+kind: security-consideration
+summary: 'The 16-octet Marker field in every BGP message header can authenticate incoming messages: when Authentication Code is zero all bits must be one; with non-zero authentication codes, the Marker value is computed by the specified authentication algorithm to detect loss of synchronization and authenticate peers. A separate transport-level authentication mechanism may also be used.'
+section: "4.1"
+topics:
+    - bgp
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

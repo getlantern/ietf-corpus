@@ -1,0 +1,9 @@
+document: rfc-1695
+kind: security-consideration
+summary: Several objects in this MIB (e.g., atmVplRowStatus, atmVclRowStatus, atmTrafficDescrParamTable entries) have MAX-ACCESS read-create, allowing authorized managers to create, modify, or destroy virtual links and traffic parameters. Unauthorized write access could disrupt ATM service; SNMPv2 administrative security mechanisms should be used to restrict such access.
+section: "13"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

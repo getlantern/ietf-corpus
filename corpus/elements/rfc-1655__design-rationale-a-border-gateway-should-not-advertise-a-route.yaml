@@ -1,0 +1,9 @@
+document: rfc-1655
+kind: design-rationale
+summary: A border gateway should not advertise a route to exterior network X via another border gateway B until all interior gateways within the AS are ready to route traffic to X via the correct exit gateway B. Interior routing should converge on the proper exit gateway before advertising routes via that exit gateway to other AS's, to avoid black holes.
+section: A
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

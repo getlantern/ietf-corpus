@@ -1,0 +1,10 @@
+document: rfc-1654
+kind: normative-requirement
+summary: When connection collision occurs (two simultaneous TCP connections between peers), the connection initiated by the peer with the higher-valued BGP Identifier is retained; the other is closed with a NOTIFICATION Cease. A collision with an Established connection unconditionally closes the new connection.
+section: "6.8"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-1654
+kind: state-machine
+summary: 'The BGP FSM has six states: Idle (refuses all connections), Connect (waiting for TCP to complete), Active (trying to acquire peer), OpenSent (waiting for OPEN), OpenConfirm (waiting for KEEPALIVE), and Established (full operation). Transitions are triggered by TCP events, received messages, timers (ConnectRetry, Hold, KeepAlive), and operator Start/Stop events.'
+section: "8"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

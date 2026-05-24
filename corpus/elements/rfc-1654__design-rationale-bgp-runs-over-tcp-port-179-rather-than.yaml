@@ -1,0 +1,10 @@
+document: rfc-1654
+kind: design-rationale
+summary: BGP runs over TCP (port 179) rather than implementing its own reliable transport, eliminating the need for explicit update fragmentation, retransmission, acknowledgement, and sequencing. TCP's graceful close guarantee is relied upon to deliver all outstanding data before connection teardown.
+section: "2"
+topics:
+    - bgp
+    - routing
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
