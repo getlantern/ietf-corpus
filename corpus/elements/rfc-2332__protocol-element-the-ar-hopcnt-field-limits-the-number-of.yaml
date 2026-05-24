@@ -1,0 +1,8 @@
+document: rfc-2332
+kind: protocol-element
+summary: The ar$hopcnt field limits the number of NHSs an NHRP packet may traverse, functioning like an IP TTL; each transit NHS decrements it. If ar$hopcnt equals zero on a packet that would normally be forwarded, the NHS MUST send a Hop Count Exceeded Error Indication back to the source and drop the packet.
+section: "5.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

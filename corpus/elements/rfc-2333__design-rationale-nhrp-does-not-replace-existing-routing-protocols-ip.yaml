@@ -1,0 +1,9 @@
+document: rfc-2333
+kind: design-rationale
+summary: NHRP does not replace existing routing protocols. IP routing first determines the proper path; NHRP then creates a short-cut overlay on that path. NHRP 'shortens' the routed path but is insufficient to suppress persistent forwarding loops in router-router communication when the underlying routing protocol loses loop-suppression information.
+section: "6"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,7 @@
+document: rfc-2334
+kind: normative-requirement
+summary: When the slave LS transitions its CAFSM to the Update Cache state, it MUST retain a copy of its last sent CA message and SHOULD start a CAReXmtInterval timer, releasing the copy on timer expiry or receipt of a CSUS message. This handles the case where the master drops the last slave CA message and retransmits.
+section: 2.2.2
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

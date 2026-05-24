@@ -1,0 +1,7 @@
+document: rfc-2334
+kind: normative-requirement
+summary: When a CSA Sequence Number reaches 2^31-2 and the cache entry is modified, the originating LS MUST purge the entry from the SG by sending a CSA with sequence number 2^31-1, wait for acknowledgment from all DCSs, then re-advertise the updated entry starting at sequence number -2^31+1.
+section: B.2.0.2
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

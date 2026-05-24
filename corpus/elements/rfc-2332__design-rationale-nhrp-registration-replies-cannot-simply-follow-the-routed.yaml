@@ -1,0 +1,9 @@
+document: rfc-2332
+kind: design-rationale
+summary: NHRP Registration Replies cannot simply follow the routed path back to the source because asymmetric routing may prevent delivery. Therefore, a direct NBMA level connection between the NHC and its serving NHS MUST exist before an NHRP Registration Reply can be returned; if none exists, the NHS must establish one using source NBMA information from the Registration Request.
+section: 5.2.4
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

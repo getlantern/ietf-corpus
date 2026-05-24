@@ -1,0 +1,7 @@
+document: rfc-2334
+kind: normative-requirement
+summary: 'If the LS does not receive a Hello containing its own LSID within HelloInterval*DeadFactor seconds (as advertised by the DCS), the LS MUST consider the DCS stalled: if any Hello was received during that window, transition the HFSM to Unidirectional Connection; otherwise transition to Waiting and remove the DCSID from the Receiver ID list.'
+section: "2.1"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
