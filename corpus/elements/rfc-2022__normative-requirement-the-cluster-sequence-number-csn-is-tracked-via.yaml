@@ -1,0 +1,9 @@
+document: rfc-2022
+kind: normative-requirement
+summary: The Cluster Sequence Number (CSN) is tracked via an unsigned 32-bit Host Sequence Number (HSN). On receipt of any message carrying mar$msn, the endpoint computes Seq.diff = mar$msn - HSN using unsigned 32-bit arithmetic; if Seq.diff is neither 0 nor 1, the endpoint MUST revalidate all open multicast group VCs.
+section: 5.1.4.2
+rfc2119_level: MUST
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

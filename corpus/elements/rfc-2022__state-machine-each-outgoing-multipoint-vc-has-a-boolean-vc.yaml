@@ -1,0 +1,8 @@
+document: rfc-2022
+kind: state-machine
+summary: Each outgoing multipoint VC has a boolean VC_revalidate flag. The flag is set true at a random time 1–10 seconds after triggering events (ERR_L_DROP on a leaf node, or CSN jump detection); it is checked before each packet transmission and cleared upon completing a MARS_REQUEST-based reconciliation of the group membership against the currently open VC leaf set. Packet transmission continues on the VC during revalidation to minimize disruption.
+section: 5.1.5
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

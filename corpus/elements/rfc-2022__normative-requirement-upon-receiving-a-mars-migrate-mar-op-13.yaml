@@ -1,0 +1,9 @@
+document: rfc-2022
+kind: normative-requirement
+summary: Upon receiving a MARS_MIGRATE (mar$op=13), each cluster member MUST close the existing outgoing VC for the group specified in mar$tpa (via L_RELEASE) and establish a new outgoing VC using the ATM addresses carried in the MARS_MIGRATE message as the new group membership set.
+section: 5.1.6
+rfc2119_level: MUST
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

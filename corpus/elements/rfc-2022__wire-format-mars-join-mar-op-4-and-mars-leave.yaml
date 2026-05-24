@@ -1,0 +1,9 @@
+document: rfc-2022
+kind: wire-format
+summary: 'MARS_JOIN (mar$op=4) and MARS_LEAVE (mar$op=5) share the same format, carrying: mar$pnum (16-bit count of <min,max> group address pairs), mar$flags (16-bit: bit 15=layer3grp, bit 14=copy, bit 13=register, bit 12=punched, bits 0–7=sequence; bits 8–11 reserved and MUST be zero), mar$cmi (16-bit Cluster Member ID), mar$msn (32-bit CSN set by MARS), and N variable-length <mar$min.i, mar$max.i> address pairs.'
+section: 5.2.1
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

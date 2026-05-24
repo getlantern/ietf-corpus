@@ -1,0 +1,9 @@
+document: rfc-2022
+kind: normative-requirement
+summary: When the MARS returns no mapping (MARS_NAK) or the client is the only group member, the client MUST delay sending a new MARS_REQUEST for that group for no less than 5 seconds and no more than 10 seconds. If a sequence jump is detected in a multi-part MARS_MULTI the host MUST wait for the final part, discard all results, and repeat the MARS_REQUEST. A timer MUST flag failure of the last MARS_MULTI with a default of 10 seconds.
+section: 5.1.1
+rfc2119_level: MUST
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

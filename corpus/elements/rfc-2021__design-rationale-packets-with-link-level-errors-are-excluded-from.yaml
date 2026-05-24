@@ -1,0 +1,9 @@
+document: rfc-2021
+kind: design-rationale
+summary: Packets with link-level errors are excluded from all RMON 2 counters because decoding packet contents is meaningless when a link-level error is present. Packets with protocol-layer errors are counted for all protocols below the layer where the error was detected.
+section: "5.3"
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2022
+kind: normative-requirement
+summary: Cluster members MUST provide only a single <min,max> pair in each JOIN/LEAVE message they issue, but MUST be capable of processing multiple <min,max> pairs received from the MARS. The set of pairs MUST be ordered as an ascending sequence of non-overlapping address blocks (max(N) < min(N+1)).
+section: 5.2.1
+rfc2119_level: MUST
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

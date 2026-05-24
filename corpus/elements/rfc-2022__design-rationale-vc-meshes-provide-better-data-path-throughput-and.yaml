@@ -1,0 +1,8 @@
+document: rfc-2022
+kind: design-rationale
+summary: VC meshes provide better data-path throughput and lower end-to-end latency than MCS-based approaches by eliminating intermediate AAL_SDU reassembly, but consume more VC resources (O(senders) VCs per group member) and generate O(senders) signalling events per membership change. MCSs reduce resource consumption to 2 VCs per endpoint and a single signalling event per membership change, but introduce a 'reflected packet' problem requiring additional per-AAL_SDU detection overhead.
+section: "3.3"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

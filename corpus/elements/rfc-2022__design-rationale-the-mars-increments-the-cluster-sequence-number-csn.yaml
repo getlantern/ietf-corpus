@@ -1,0 +1,8 @@
+document: rfc-2022
+kind: design-rationale
+summary: The MARS increments the Cluster Sequence Number (CSN) on every transmission over ClusterControlVC, even when no database change has occurred, so that cluster members can detect missed transmissions (not just missed changes). This allows detection of any gap in receipt of ClusterControlVC traffic, triggering proactive revalidation rather than relying on detecting stale state.
+section: "6.3"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

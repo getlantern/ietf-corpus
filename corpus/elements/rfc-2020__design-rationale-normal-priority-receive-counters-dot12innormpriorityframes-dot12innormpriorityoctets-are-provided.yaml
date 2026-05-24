@@ -1,0 +1,8 @@
+document: rfc-2020
+kind: design-rationale
+summary: Normal priority receive counters (dot12InNormPriorityFrames, dot12InNormPriorityOctets) are provided because they include errored frames, whereas ifIn*Pkts and ifInOctets do not. This allows calculation of octets in unreadable frames, which is not available elsewhere.
+section: "3.7"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2022
+kind: normative-requirement
+summary: To become a cluster member an endpoint MUST register with the MARS by sending a MARS_JOIN with mar$flags.register=1. Upon successful registration the MARS assigns a 16-bit Cluster Member Identifier (CMI) returned in mar$cmi; the cluster member MUST note this value for future use. Registration also causes the MARS to add the endpoint as a leaf node of ClusterControlVC.
+section: 5.2.3
+rfc2119_level: MUST
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

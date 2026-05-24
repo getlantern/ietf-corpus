@@ -1,0 +1,9 @@
+document: rfc-2022
+kind: normative-requirement
+summary: When an ERR_L_DROP is received, the associated ATM endpoint MUST be removed from the locally held set for that VC, and after a random period of 1–10 seconds the VC_revalidate flag MUST be set true. When ERR_L_RELEASE is received the entire leaf set is cleared and the VC is shut down.
+section: 5.1.5.1
+rfc2119_level: MUST
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

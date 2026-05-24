@@ -1,0 +1,9 @@
+document: rfc-2022
+kind: normative-requirement
+summary: MARS_JOIN and MARS_LEAVE messages MUST be retransmitted at intervals no shorter than 5 seconds (default 10 seconds) until a copy is received back from the MARS (identified by matching mar$op, mar$flags.register, mar$flags.sequence, mar$pnum, source ATM address, and first <min,max> pair, with mar$flags.copy=1). After 5 retransmissions without acknowledgment, the failure MUST be treated as a MARS failure triggering MARS reconnection.
+section: 5.2.2
+rfc2119_level: MUST
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

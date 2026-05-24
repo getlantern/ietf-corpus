@@ -1,0 +1,9 @@
+document: rfc-2022
+kind: normative-requirement
+summary: The mar$chksum field carries a standard IP checksum over the entire MARS message (excluding LLC/SNAP header), computed with the field set to zero. Receivers MUST only validate the checksum when the received mar$chksum is non-zero; messages with mar$chksum of 0 are always considered valid. Implementors MAY choose to ignore the checksum since AAL5 provides a 32-bit CRC.
+section: 4.3.3
+rfc2119_level: MUST
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

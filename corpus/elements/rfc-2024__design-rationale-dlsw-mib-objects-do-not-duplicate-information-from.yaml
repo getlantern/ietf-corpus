@@ -1,0 +1,8 @@
+document: rfc-2024
+kind: design-rationale
+summary: DLSw MIB objects do not duplicate information from the underlying DLC layer MIBs (LLC, SDLC). Instead, circuit table entries use RowPointer (dlswCircuitS1Dlc) to reference conceptual rows in the appropriate enterprise-specific or standard DLC MIB, avoiding redundancy.
+section: "2.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

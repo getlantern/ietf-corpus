@@ -1,0 +1,8 @@
+document: rfc-2020
+kind: state-machine
+summary: 'dot12Status defines five states: closed (MAC disabled), opening (training in progress, signals received), opened (training succeeded, 24 error-free frames passed), openFailure (24 frames passed but configuration bits indicate a problem), linkFailure (no training signals or fewer than 24 error-free frames). Transitions are triggered by dot12Commands (open/close/reset), ifAdminStatus, or external events such as MAC protocol violations.'
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

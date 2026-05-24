@@ -1,0 +1,8 @@
+document: rfc-2022
+kind: wire-format
+summary: The mar$pro field is subdivided into mar$pro.type (16-bit, covering NLPIDs 0x00–0xFF, reserved 0x0100–0x03FF, ATM Forum 0x0400–0x04FF, Ethertypes 0x0600–0xFFFF) and mar$pro.snap (40-bit optional SNAP extension). When mar$pro.type == 0x80 the long form with SNAP extension is used; otherwise mar$pro.snap MUST be zero on transmit and ignored on receive.
+section: 4.3.2
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
