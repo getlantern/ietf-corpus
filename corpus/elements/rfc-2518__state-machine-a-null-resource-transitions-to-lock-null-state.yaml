@@ -1,0 +1,8 @@
+document: rfc-2518
+kind: state-machine
+summary: A null resource transitions to 'lock-null' state when a write lock is successfully asserted on it. From lock-null, it transitions to a real resource when PUT or MKCOL succeeds on it. If unlocked without a successful PUT or MKCOL, it MUST return to null state and cease to be a member of its parent collection.
+section: "7.4"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2518
+kind: normative-requirement
+summary: A write lock MUST prevent a principal without the lock from successfully executing a PUT, POST, PROPPATCH, LOCK, UNLOCK, MOVE, DELETE, or MKCOL on the locked resource. All other current methods, GET in particular, function independently of the lock.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

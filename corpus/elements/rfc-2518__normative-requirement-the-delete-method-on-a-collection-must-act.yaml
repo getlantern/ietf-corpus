@@ -1,0 +1,9 @@
+document: rfc-2518
+kind: normative-requirement
+summary: 'The DELETE method on a collection MUST act as if a ''Depth: infinity'' header was used. A client MUST NOT submit a Depth header with a DELETE on a collection with any value but infinity. If any resource identified by a member URI cannot be deleted, all of that member''s ancestors MUST NOT be deleted.'
+section: 8.6.2
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2518
+kind: design-rationale
+summary: 'MKCOL was created as a separate method rather than using PUT or POST because: PUT with a collection description could be misinterpreted as deleting omitted members (conflating PUT with DELETE semantics), and POST is too open-ended to support fine-grained access control on collection creation.'
+section: "5.3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

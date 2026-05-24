@@ -1,0 +1,8 @@
+document: rfc-2518
+kind: design-rationale
+summary: Shared locks were included alongside exclusive locks because experience with web distributed authoring systems showed exclusive locks are often too rigid. Exclusive locks can become orphaned (program crash, owner leaves), blocking all access, whereas shared locks let collaborators signal intent without fully blocking each other.
+section: "6.1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

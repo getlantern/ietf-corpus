@@ -1,0 +1,11 @@
+document: rfc-2529
+kind: security-consideration
+summary: To defend against spurious unicast 6over4 packets, boundary routers MUST discard incoming IPv4 packets with protocol type 41 from unknown sources. The recommended technique is to configure the boundary router to accept protocol-41 packets only from a trusted source address range.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
