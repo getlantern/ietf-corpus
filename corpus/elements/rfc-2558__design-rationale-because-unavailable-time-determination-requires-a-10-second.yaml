@@ -1,0 +1,8 @@
+document: rfc-2558
+kind: design-rationale
+summary: Because unavailable-time determination requires a 10-second look-back, an agent may implement a 10-element delay line (shift register approach per Appendix A) to pass one-second statistics through before updating counters, instead of performing retroactive adjustments to ES/SES/CV/UAS counters when the unavailability boundary is crossed.
+section: "3.5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

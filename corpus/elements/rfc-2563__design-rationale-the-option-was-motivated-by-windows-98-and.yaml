@@ -1,0 +1,8 @@
+document: rfc-2563
+kind: design-rationale
+summary: The option was motivated by Windows 98 and NT5 assigning link-local addresses (in a specific subnet) when no DHCP server responds, breaking sites that rely on unrecognized hosts remaining address-less. The existing DHCP spec required servers to silently ignore unknown clients, giving those clients no way to distinguish 'no DHCP infrastructure' from 'DHCP infrastructure that chose not to assign an address.'
+section: "1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2558
+kind: design-rationale
+summary: Multiple SES threshold sets (sonetSESthresholdSet) were added because ANSI T1.231-1993, ITU-T G.826-1995, and ANSI T1.231-1997 all specify different SES error count thresholds from each other and from RFC 1595. Rather than mandating one standard, the MIB lets the agent declare which set it uses, with RFC 1595 thresholds as the backward-compatible default when the object is absent.
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

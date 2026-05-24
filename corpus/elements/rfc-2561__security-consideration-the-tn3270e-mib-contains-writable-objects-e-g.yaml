@@ -1,0 +1,8 @@
+document: rfc-2561
+kind: security-consideration
+summary: The TN3270E-MIB contains writable objects (e.g., tn3270eSrvrConfAdminStatus with stopImmediate(3)) that can halt servers and disrupt service. Implementations SHOULD use SNMPv3 with authentication and privacy to protect against unauthorized access, eavesdropping, and replay attacks on management traffic.
+section: "5.0"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

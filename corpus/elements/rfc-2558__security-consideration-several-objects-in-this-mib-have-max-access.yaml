@@ -1,0 +1,9 @@
+document: rfc-2558
+kind: security-consideration
+summary: Several objects in this MIB have MAX-ACCESS read-write, including sonetMediumLoopbackConfig, sonetMediumType, sonetMediumLineCoding, sonetMediumLineType, sonetMediumCircuitIdentifier, sonetPathCurrentWidth, sonetVTCurrentWidth, and sonetSESthresholdSet. Unauthorized SNMP write access to these objects could disrupt SONET/SDH interface operation or invalidate performance statistics, so SNMPv3 access controls are recommended.
+section: "6"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

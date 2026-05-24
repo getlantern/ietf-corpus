@@ -1,0 +1,9 @@
+document: rfc-2560
+kind: security-consideration
+summary: OCSP is vulnerable to denial-of-service via query floods, exacerbated by the cost of cryptographic signing per response. Unsigned error responses open a secondary DoS vector where an attacker sends false error messages to prevent certificate validation.
+section: "5"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

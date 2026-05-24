@@ -1,0 +1,9 @@
+document: rfc-2562
+kind: design-rationale
+summary: The statistical significance test for tn3270eRtExceeded notifications uses the formula AvgCountTrans * ((AvgRt/ThreshHigh - 1)^2) >= IdleCount, making the required sample size inversely proportional to how far the average exceeds the threshold. This prevents a few very-slow transactions from being masked as statistically insignificant.
+section: 3.5.1
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

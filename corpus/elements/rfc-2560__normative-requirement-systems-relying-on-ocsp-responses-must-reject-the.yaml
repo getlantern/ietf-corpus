@@ -1,0 +1,10 @@
+document: rfc-2560
+kind: normative-requirement
+summary: Systems relying on OCSP responses MUST reject the response if the certificate required to validate the signature fails to match a locally configured OCSP signing authority, be the CA's own certificate, or include id-ad-ocspSigning in an ExtendedKeyUsage and be issued by the CA.
+section: 4.2.2.2
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

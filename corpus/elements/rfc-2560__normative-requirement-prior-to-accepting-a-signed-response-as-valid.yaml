@@ -1,0 +1,10 @@
+document: rfc-2560
+kind: normative-requirement
+summary: 'Prior to accepting a signed response as valid, OCSP clients SHALL confirm: (1) the certificate in the response matches the request; (2) the signature is valid; (3) the signer identity matches the intended recipient; (4) the signer is authorized; (5) thisUpdate is sufficiently recent; (6) nextUpdate, when present, is greater than current time.'
+section: "3.2"
+rfc2119_level: SHALL
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

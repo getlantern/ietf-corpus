@@ -1,0 +1,9 @@
+document: rfc-2563
+kind: security-consideration
+summary: 'DHCP currently provides no authentication or security mechanisms; all exposures described in RFC 2131 §7 apply. This option adds an additional attack vector: malicious users on a subnet can flood DHCP clients with DoNotAutoConfigure responses, preventing all clients from obtaining link-local addresses on networks that require auto-configuration.'
+section: "3"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

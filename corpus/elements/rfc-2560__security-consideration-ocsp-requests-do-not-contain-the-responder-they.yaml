@@ -1,0 +1,10 @@
+document: rfc-2560
+kind: security-consideration
+summary: OCSP requests do not contain the responder they are directed to, allowing an attacker to replay a captured request to any number of OCSP responders. Reliance on HTTP caching may yield unexpected results if intermediate servers are misconfigured.
+section: "5"
+topics:
+    - pkix
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

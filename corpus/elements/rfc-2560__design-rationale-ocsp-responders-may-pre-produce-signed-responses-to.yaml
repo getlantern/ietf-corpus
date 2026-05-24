@@ -1,0 +1,8 @@
+document: rfc-2560
+kind: design-rationale
+summary: OCSP responders MAY pre-produce signed responses to reduce per-request cryptographic overhead. Pre-produced responses use thisUpdate to record when status was known correct and nextUpdate to bound the validity window, enabling caching while preserving timeliness semantics.
+section: "2.5"
+topics:
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

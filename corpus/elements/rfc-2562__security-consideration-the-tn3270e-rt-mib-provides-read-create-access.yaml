@@ -1,0 +1,10 @@
+document: rfc-2562
+kind: security-consideration
+summary: The TN3270E-RT-MIB provides read-create access to collection control objects, meaning unauthorized Set operations could alter or disrupt response time data collection for TN3270/TN3270E sessions. Implementations should apply SNMPv3 view-based access control (RFC 2275) to restrict write access to the tn3270eRtCollCtlTable.
+section: "6.0"
+topics:
+    - snmp
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

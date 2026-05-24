@@ -1,0 +1,8 @@
+document: rfc-2560
+kind: design-rationale
+summary: CertID includes both issuerNameHash and issuerKeyHash because two CAs may choose identical Names (uniqueness is only a recommendation, not enforceable), but two CAs will never share the same public key unless they deliberately share their private key or one is compromised.
+section: 4.1.2
+topics:
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

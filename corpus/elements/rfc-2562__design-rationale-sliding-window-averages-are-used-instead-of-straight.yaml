@@ -1,0 +1,9 @@
+document: rfc-2562
+kind: design-rationale
+summary: Sliding-window averages are used instead of straight interval-based averages because they are less susceptible to notification thrashing when response times oscillate near a threshold. The effective averaging period is approximately 2*SPMult*SPeriod due to the exponential decay, giving each transaction a half-life of SPMult*SPeriod.
+section: 3.5.1
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
