@@ -1,0 +1,8 @@
+document: rfc-1577
+kind: state-machine
+summary: 'The ATMARP server maintains a table of <ATM address, IP address> entries with timestamps. On new VC with LLC/SNAP: server sends InARP_REQUEST; on InARP_REPLY: add/update entry. On duplicate IP with different ATM address and open VC: discard and make no change. On ARP_REQUEST: reply with ARP_REPLY or ARP_NAK. VC teardown does NOT remove table entries.'
+section: "6.3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

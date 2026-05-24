@@ -1,0 +1,8 @@
+document: rfc-1573
+kind: design-rationale
+summary: 64-bit counters were adopted instead of scaling (e.g., counting in 1024-byte blocks) because scaling causes apparent burstiness at low traffic rates and leads to incorrect performance conclusions. 64-bit counters are only required at speeds above 20 Mbps to minimize implementation burden.
+section: 3.2.6
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

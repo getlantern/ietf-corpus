@@ -1,0 +1,8 @@
+document: rfc-1573
+kind: design-rationale
+summary: ifHighSpeed reports speed in 1,000,000 bits/second units rather than as a 64-bit gauge because SNMPv2 SMI does not support 64-bit gauges, and a split high-32/low-32 approach was deemed overly complex. At 4.2 Gbps the 1 Mbps granularity yields only 0.02% error, which is acceptable.
+section: 3.2.7
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

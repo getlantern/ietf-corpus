@@ -1,0 +1,8 @@
+document: rfc-1573
+kind: design-rationale
+summary: Each interface sub-layer gets its own conceptual row in the ifTable rather than combining all sub-layers into one row. This avoids requiring enumerated ifType values for every sub-layer combination, supports both upward and downward multiplexing via the ifStackTable, and allows layer-specific media MIBs to apply cleanly.
+section: 3.2.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

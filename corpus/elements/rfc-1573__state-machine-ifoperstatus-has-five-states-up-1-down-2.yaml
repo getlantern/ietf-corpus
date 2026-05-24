@@ -1,0 +1,8 @@
+document: rfc-1573
+kind: state-machine
+summary: 'ifOperStatus has five states: up(1), down(2), testing(3), unknown(4), dormant(5). When ifAdminStatus transitions to up, ifOperStatus moves to up if ready, dormant if waiting for external events, or remains down on fault. The dormant state is new in this revision for on-demand interfaces.'
+section: 3.2.12
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-1577
+kind: normative-requirement
+summary: When an ATMARP table entry ages, an ATMARP client MUST invalidate the entry. If an invalidated entry has an associated open VC, the client must revalidate via InARP_REQUEST (PVC) or ARP_REQUEST to the server (SVC) before transmitting non-address-resolution traffic.
+section: "6.5"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

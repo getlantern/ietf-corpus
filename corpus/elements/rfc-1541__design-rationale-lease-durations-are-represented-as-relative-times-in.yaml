@@ -1,0 +1,8 @@
+document: rfc-1541
+kind: design-rationale
+summary: Lease durations are represented as relative times in unsigned 32-bit seconds (0xffffffff = infinity) rather than absolute timestamps, because clients and servers may not have synchronized clocks. A server may return a shorter lease duration to the client than it commits internally to compensate for clock drift.
+section: "3.3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-1573
+kind: design-rationale
+summary: 'Traps are generated on transitions into/out of the down state rather than the up state because: (1) transitions to down indicate errors of management interest; (2) on-demand interfaces frequently cycle between up and dormant, which would generate excessive linkUp/linkDown pairs if the up state were instrumented.'
+section: 3.2.13
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

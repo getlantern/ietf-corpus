@@ -1,0 +1,8 @@
+document: rfc-1541
+kind: state-machine
+summary: 'DHCP client state machine has seven states: INIT (begin, send DHCPDISCOVER), SELECTING (collect DHCPOFFER messages), REQUESTING (send DHCPREQUEST, await DHCPACK/DHCPNAK), BOUND (configured, await T1), RENEWING (T1 expired, unicast DHCPREQUEST to original server), REBINDING (T2 expired, broadcast DHCPREQUEST), and INIT-REBOOT (reuse known address, send DHCPREQUEST with ''ciaddr''). DHCPNAK or lease expiration drives return to INIT.'
+section: "4.4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

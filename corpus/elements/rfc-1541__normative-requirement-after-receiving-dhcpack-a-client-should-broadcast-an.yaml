@@ -1,0 +1,9 @@
+document: rfc-1541
+kind: normative-requirement
+summary: After receiving DHCPACK, a client SHOULD broadcast an ARP reply to announce its new IP address and clear outdated ARP cache entries on the client's subnet. Before sending ARP to probe a suggested address, the client MUST use 0 as the sender's IP address to avoid corrupting ARP caches.
+section: 4.4.1
+rfc2119_level: SHOULD
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

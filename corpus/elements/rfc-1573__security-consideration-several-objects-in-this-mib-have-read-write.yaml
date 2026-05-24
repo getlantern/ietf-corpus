@@ -1,0 +1,9 @@
+document: rfc-1573
+kind: security-consideration
+summary: 'Several objects in this MIB have read-write access: ifAdminStatus controls whether an interface passes traffic, ifLinkUpDownTrapEnable controls trap generation, and ifPromiscuousMode enables promiscuous reception. Unauthorized SET operations on these objects could disrupt network operations or enable traffic interception, requiring appropriate SNMP access controls.'
+section: "9"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-1541
+kind: normative-requirement
+summary: 'A client that cannot receive unicast IP datagrams before its protocol software is configured SHOULD set the BROADCAST bit to 1 in DHCPDISCOVER and DHCPREQUEST messages. A server or relay agent SHOULD honor the BROADCAST bit: if set, send as IP broadcast to 255.255.255.255; if clear, send unicast to ''yiaddr''/''chaddr''.'
+section: "4.1"
+rfc2119_level: SHOULD
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
