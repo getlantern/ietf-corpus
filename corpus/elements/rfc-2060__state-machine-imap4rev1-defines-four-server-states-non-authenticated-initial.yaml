@@ -1,0 +1,9 @@
+document: rfc-2060
+kind: state-machine
+summary: 'IMAP4rev1 defines four server states: Non-Authenticated (initial, credentials required), Authenticated (mailbox selection required), Selected (mailbox open), and Logout (connection closing). Transitions are driven by successful LOGIN/AUTHENTICATE (→Authenticated), SELECT/EXAMINE (→Selected), CLOSE or failed SELECT (→Authenticated), and LOGOUT/disconnection (→Logout).'
+section: "3"
+topics:
+    - email
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

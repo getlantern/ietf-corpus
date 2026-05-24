@@ -1,0 +1,9 @@
+document: rfc-2060
+kind: normative-requirement
+summary: Before returning OK to SELECT, the server MUST send untagged FLAGS, EXISTS, RECENT, and UIDVALIDITY responses to define the initial mailbox state. If the client cannot change permanent flags, the server SHOULD send PERMANENTFLAGS. If the mailbox is read-only, the server MUST prefix the tagged OK with '[READ-ONLY]'.
+section: 6.3.1
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

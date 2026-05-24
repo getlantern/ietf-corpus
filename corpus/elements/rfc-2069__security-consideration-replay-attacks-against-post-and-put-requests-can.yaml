@@ -1,0 +1,9 @@
+document: rfc-2069
+kind: security-consideration
+summary: Replay attacks against POST and PUT requests can result in counterfeit form data or files. One-time nonces or digests are recommended for these methods, and the optional entity-digest field should be used to ensure posted data integrity. Alternatively, servers may restrict Digest authentication to GET only.
+section: "3.2"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

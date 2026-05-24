@@ -1,0 +1,9 @@
+document: rfc-2065
+kind: interoperability-note
+summary: 'Old (non-security-aware) servers and resolvers return zero for the AD and CD bits. This ensures backward compatibility: responses from old servers are not flagged as authenticated, and queries from non-security-aware resolvers (CD=0) will be answered by security-aware servers only with Authenticated or Insecure data.'
+section: "6.1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2065
+kind: wire-format
+summary: 'KEY RDATA encodes: flags (16 bits), protocol (8 bits), algorithm (8 bits), followed by the public key in algorithm-dependent format. For MD5/RSA (algorithm 1), the public key field contains: exponent length (1 octet for lengths 1-255, or 0 + 2-octet length for longer), the exponent, and the modulus. Leading zero bytes are prohibited.'
+section: "3.1"
+topics:
+    - dns
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2058
+kind: interoperability-note
+summary: For PAP, the NAS sends the PAP ID and password as User-Name and User-Password in an Access-Request. For CHAP, the NAS generates a 16-octet random challenge, sends it to the user, and forwards the CHAP username, CHAP ID, and CHAP response (as CHAP-Password) to the RADIUS server; the CHAP challenge goes in the CHAP-Challenge attribute or, if exactly 16 octets, in the Request Authenticator.
+section: "2.2"
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

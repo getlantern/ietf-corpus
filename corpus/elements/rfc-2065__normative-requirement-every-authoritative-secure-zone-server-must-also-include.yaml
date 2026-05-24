@@ -1,0 +1,10 @@
+document: rfc-2065
+kind: normative-requirement
+summary: Every authoritative secure zone server MUST also include a KEY RR for its super-zone signed by the secure zone via a keyfile directive, enabling resolvers to climb the zone tree if starting below root. A secure sub-zone is indicated by a non-null KEY RR appearing alongside NS RRs.
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

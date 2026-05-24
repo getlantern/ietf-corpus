@@ -1,0 +1,9 @@
+document: rfc-2065
+kind: design-rationale
+summary: Transaction SIGs cannot be pre-calculated because requests and replies are highly variable, requiring the private key to be kept on-line (in software or directly connected hardware). This is in contrast to zone SIGs, which are pre-computed offline. The transaction SIG is signed by the host key, not the zone key.
+section: "2.4"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

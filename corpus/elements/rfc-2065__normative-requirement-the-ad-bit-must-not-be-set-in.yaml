@@ -1,0 +1,10 @@
+document: rfc-2065
+kind: normative-requirement
+summary: The AD bit MUST NOT be set in a response unless all RRs in the response are either Authenticated or Insecure. Security aware servers MUST return only Authenticated or Insecure data with AD set when the CD bit is clear (i.e., for non-security-aware resolvers or those not requesting pending data).
+section: "6.1"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

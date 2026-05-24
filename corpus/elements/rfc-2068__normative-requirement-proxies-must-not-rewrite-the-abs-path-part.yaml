@@ -1,0 +1,9 @@
+document: rfc-2068
+kind: normative-requirement
+summary: Proxies MUST NOT rewrite the abs_path part of a Request-URI in any way, except to replace a null abs_path with '*', regardless of the proxy's internal implementation. This prevents proxies from changing the meaning of a request when the origin server uses non-reserved characters for reserved purposes.
+section: 5.1.2
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2065
+kind: design-rationale
+summary: The labels field in SIG RDATA counts how many labels are in the original owner name (excluding root label and wildcard '*'). This allows resolvers to detect wildcard substitution and use the original form of the name for signature verification, optimizing the determination without requiring the resolver to track the query chain.
+section: "4.1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

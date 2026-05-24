@@ -1,0 +1,9 @@
+document: rfc-2065
+kind: wire-format
+summary: SIG RDATA packs type covered (2 octets), algorithm (1 octet), labels (1 octet), original TTL (4 octets), signature expiration (4 octets, seconds since 1970-01-01), time signed (4 octets), key footprint (2 octets), signer's name (compressed DNS name), and the variable-length signature. A SIG with expiration before time signed is corrupt and must be ignored.
+section: "4.1"
+topics:
+    - dns
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

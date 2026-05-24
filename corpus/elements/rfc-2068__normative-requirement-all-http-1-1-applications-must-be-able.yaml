@@ -1,0 +1,9 @@
+document: rfc-2068
+kind: normative-requirement
+summary: All HTTP/1.1 applications MUST be able to receive and decode the 'chunked' transfer coding. A server MUST NOT send transfer-codings to an HTTP/1.0 client. A server receiving an unknown transfer-coding SHOULD return 501 and close the connection.
+section: "3.6"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

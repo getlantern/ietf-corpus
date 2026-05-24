@@ -1,0 +1,9 @@
+document: rfc-2068
+kind: normative-requirement
+summary: 'An HTTP/1.1 client that sends a request with a body and includes ''Expect: 100-continue'' MUST NOT send the request body until it receives a 100 (Continue) response. This avoids sending a large body to a server that would reject the request.'
+section: "8.2"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

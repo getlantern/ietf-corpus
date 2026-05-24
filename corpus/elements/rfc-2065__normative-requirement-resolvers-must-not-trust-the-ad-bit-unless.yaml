@@ -1,0 +1,10 @@
+document: rfc-2065
+kind: normative-requirement
+summary: Resolvers MUST NOT trust the AD bit unless they trust the server they are talking to and either have a secure path to it or use DNS transaction security. Security aware resolvers SHOULD assert the CD bit on all queries to reduce DNS latency by allowing servers to answer before fully validating data.
+section: "6.1"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

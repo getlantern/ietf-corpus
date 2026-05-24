@@ -1,0 +1,10 @@
+document: rfc-2065
+kind: normative-requirement
+summary: Security aware DNS servers MUST, for every authoritative RR returned, attempt to send the SIG RRs that authenticate it. When an RR set is in a response, its SIG has higher inclusion priority than other additional RRs; if space does not permit its inclusion, the response MUST be considered truncated (except for additional information section RRs).
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

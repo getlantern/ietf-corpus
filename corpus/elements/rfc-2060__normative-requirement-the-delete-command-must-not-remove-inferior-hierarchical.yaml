@@ -1,0 +1,9 @@
+document: rfc-2060
+kind: normative-requirement
+summary: The DELETE command MUST NOT remove inferior hierarchical names. If the mailbox has inferiors and no \Noselect attribute, deleting it removes its messages and assigns \Noselect to the name. The highest-used UID of a deleted mailbox MUST be preserved so new mailboxes with the same name don't reuse identifiers.
+section: 6.3.4
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

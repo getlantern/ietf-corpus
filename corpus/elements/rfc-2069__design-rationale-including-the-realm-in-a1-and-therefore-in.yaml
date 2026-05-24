@@ -1,0 +1,10 @@
+document: rfc-2069
+kind: design-rationale
+summary: Including the realm in A1 (and therefore in the stored H(A1)) means that compromise of one realm's password file does not automatically compromise other realms sharing the same username and password, though it still exposes them to brute-force attack. This is why the realm string should be globally unique and include the authenticating hostname.
+section: "3.5"
+topics:
+    - http
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

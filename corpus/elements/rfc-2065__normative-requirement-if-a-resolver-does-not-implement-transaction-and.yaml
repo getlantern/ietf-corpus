@@ -1,0 +1,10 @@
+document: rfc-2065
+kind: normative-requirement
+summary: If a resolver does not implement transaction and/or request SIGs, it MUST ignore them without error. A transaction authentication SIG does NOT authenticate any RRs in the message; only a proper zone SIG or a key tracing authority to the zone can authenticate RRs.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

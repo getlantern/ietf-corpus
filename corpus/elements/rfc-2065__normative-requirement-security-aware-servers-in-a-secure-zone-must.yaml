@@ -1,0 +1,10 @@
+document: rfc-2065
+kind: normative-requirement
+summary: Security aware servers in a secure zone MUST use security-aware servers to securely handle CNAME processing. Specifically, they must (1) allow KEY, SIG, and NXT RRs coexisting with CNAME RRs, (2) suppress CNAME processing on retrieval of those types, and (3) automatically return SIG RRs authenticating encountered CNAMEs.
+section: 2.3.5
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

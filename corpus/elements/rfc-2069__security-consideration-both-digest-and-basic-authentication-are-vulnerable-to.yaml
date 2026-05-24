@@ -1,0 +1,9 @@
+document: rfc-2069
+kind: security-consideration
+summary: Both Digest and Basic authentication are vulnerable to man-in-the-middle attacks from hostile or compromised proxies. A simple effective attack is to replace the Digest challenge with a Basic challenge, coercing the client to reveal its password. Clients should remember if a site has previously used Digest and warn the user if it reverts to Basic.
+section: "3.3"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2058
+kind: security-consideration
+summary: Transactions between NAS and RADIUS server are authenticated via a shared secret that is never sent over the network. User passwords are encrypted with MD5-XOR using the shared secret and Request Authenticator. The shared secret should be at least 16 octets and unguessable to protect against exhaustive search.
+section: SECURITY CONSIDERATIONS
+topics:
+    - radius
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

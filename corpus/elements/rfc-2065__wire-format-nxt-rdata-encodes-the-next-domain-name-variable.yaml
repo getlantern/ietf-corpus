@@ -1,0 +1,8 @@
+document: rfc-2065
+kind: wire-format
+summary: NXT RDATA encodes the next domain name (variable length, compressible) followed by a type bit map (one bit per RR type). Bit 30 (NXT itself) is always set, so the minimum bit map is 4 octets. Bits beyond the end of the map are treated as zero.
+section: "5.2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

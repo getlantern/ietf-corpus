@@ -1,0 +1,9 @@
+document: rfc-2068
+kind: normative-requirement
+summary: Messages MUST NOT include both a Content-Length header field and the 'chunked' transfer coding. If both are received, Content-Length MUST be ignored. HTTP/1.1 requests with a message body MUST include a valid Content-Length unless the server is known to be HTTP/1.1 compliant.
+section: "4.4"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

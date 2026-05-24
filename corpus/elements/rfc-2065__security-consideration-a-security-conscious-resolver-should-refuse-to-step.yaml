@@ -1,0 +1,9 @@
+document: rfc-2065
+kind: security-consideration
+summary: A security-conscious resolver should refuse to step from a secure zone into a non-secure zone unless the non-secure zone is certified as non-secure or experimentally secure by an authenticated KEY RR with no-key type value or the experimental bit set. Zones reachable only via non-secure zones cannot be trusted, and their distance metric should be set to 512 or more.
+section: "6.3"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

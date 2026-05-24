@@ -1,0 +1,10 @@
+document: rfc-2065
+kind: security-consideration
+summary: 'NXT records enable ''NXT walking'': a resolver can iteratively query for successive NXT records to enumerate all names in a zone, defeating administrative zone transfer restrictions. Zones can mitigate this by adding a zone-wide wildcard KEY RR with the no-key type value, but at the cost of eliminating authenticated denial-of-existence for names.'
+section: "5.5"
+topics:
+    - dns
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

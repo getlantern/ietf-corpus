@@ -1,0 +1,9 @@
+document: rfc-2065
+kind: security-consideration
+summary: If wildcards exist in a zone, a malicious server can return the wildcard-match NXT instead of more specifically named RRs, hiding their existence. With a zone-wide wildcard, a server could conceal all more-specific RRs. A more strict NXT design could eliminate this but would make dynamic update very difficult.
+section: "5.4"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

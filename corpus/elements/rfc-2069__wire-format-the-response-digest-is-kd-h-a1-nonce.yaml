@@ -1,0 +1,10 @@
+document: rfc-2069
+kind: wire-format
+summary: The response-digest is KD(H(A1), nonce ":" H(A2)), where A1 = username ":" realm ":" password and A2 = Method ":" digest-uri-value. H() defaults to MD5; KD(secret, data) = H(secret ":" data). No surrounding whitespace is allowed around colons in digested strings.
+section: 2.1.2
+topics:
+    - http
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

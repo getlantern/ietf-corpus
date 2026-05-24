@@ -1,0 +1,10 @@
+document: rfc-2069
+kind: design-rationale
+summary: 'The server does not need to store the user''s cleartext password: authentication can be verified as long as H(A1) = MD5(username:realm:password) is available. This allows storing only a derived value while fully authenticating clients.'
+section: "2.2"
+topics:
+    - http
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

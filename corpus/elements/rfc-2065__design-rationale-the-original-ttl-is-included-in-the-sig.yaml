@@ -1,0 +1,9 @@
+document: rfc-2065
+kind: design-rationale
+summary: 'The original TTL is included in the SIG RDATA rather than relying solely on the current TTL field to prevent two problems: (1) caching servers would cause authentication failures by decrementing the real TTL, and (2) unscrupulous servers could manipulate TTL values undetected. A security-aware resolver bounds the TTL at the original signed value.'
+section: 2.3.3
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
