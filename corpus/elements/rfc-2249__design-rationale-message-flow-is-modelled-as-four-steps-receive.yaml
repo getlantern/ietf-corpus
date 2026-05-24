@@ -1,0 +1,9 @@
+document: rfc-2249
+kind: design-rationale
+summary: 'Message flow is modelled as four steps (receive, determine next hop, convert, transmit) with storage occurring at potentially different points. This explains why mtaReceivedMessages, mtaStoredMessages, and mtaTransmittedMessages may differ: some MTAs expand messages on receipt, others store first and expand on retransmission.'
+section: "4"
+topics:
+    - snmp
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2251
+kind: normative-requirement
+summary: Clients MUST NOT invoke operations between two Bind requests made as part of a multi-stage SASL bind. A subsequent bind process abandons all outstanding operations; if a SASL integrity/encryption mechanism is active and does not support credential changes, the client MUST establish a new connection.
+section: 4.2.1
+rfc2119_level: MUST NOT
+topics:
+    - ldap
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

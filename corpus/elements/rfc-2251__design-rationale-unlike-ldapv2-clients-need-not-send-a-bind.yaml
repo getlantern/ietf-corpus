@@ -1,0 +1,8 @@
+document: rfc-2251
+kind: design-rationale
+summary: Unlike LDAPv2, clients need not send a Bind Request as the first PDU in LDAPv3; the server MUST treat unauthenticated requests as anonymous. This design enables read-only directory browsing without authentication while maintaining backward compatibility via the operationsError mechanism.
+section: 4.2.1
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

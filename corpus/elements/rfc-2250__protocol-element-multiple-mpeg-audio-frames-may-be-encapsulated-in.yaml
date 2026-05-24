@@ -1,0 +1,9 @@
+document: rfc-2250
+kind: protocol-element
+summary: Multiple MPEG audio frames may be encapsulated in one RTP packet, but only as an integral number of complete frames; in this case the Frag_offset in the audio fragmentation header is set to 0. If a single audio frame is too large for one RTP packet, it may be fragmented across multiple packets using the Frag_offset field.
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

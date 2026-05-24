@@ -1,0 +1,9 @@
+document: rfc-2249
+kind: design-rationale
+summary: Each group contains all possible monitoring variables even if a given group only monitors one kind of event (e.g., inbound only). Unused counters are simply inaccessible (noSuchName in SNMPv1, noSuchInstance in SNMPv2), rather than defining separate partial group schemas.
+section: "5"
+topics:
+    - snmp
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

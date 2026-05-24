@@ -1,0 +1,9 @@
+document: rfc-2251
+kind: design-rationale
+summary: LDAP uses SASL [RFC 2222] for extensible authentication rather than defining its own mechanisms, allowing the protocol to support any SASL mechanism including EXTERNAL (for lower-layer auth) and GSSAPI. Unlike text-based protocols using SASL, LDAP is binary so no base64 transformation of credentials is performed.
+section: 4.2.2
+topics:
+    - ldap
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

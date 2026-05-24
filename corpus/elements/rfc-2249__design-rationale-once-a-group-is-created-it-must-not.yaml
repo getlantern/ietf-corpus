@@ -1,0 +1,9 @@
+document: rfc-2249
+kind: design-rationale
+summary: Once a group is created it must not be deleted or have its mtaGroupIndex changed unless the MTA is reinitialized, so that monitoring agents can rely on stable group assignments across multiple query operations. Deletion is not even required at reinitialization.
+section: "5"
+topics:
+    - snmp
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

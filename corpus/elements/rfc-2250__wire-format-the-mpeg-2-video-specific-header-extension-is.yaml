@@ -1,0 +1,9 @@
+document: rfc-2250
+kind: wire-format
+summary: 'The MPEG-2 Video-specific header extension is a 32-bit field following the base video header when T=1. It carries: X (1 bit, reserved), E (1 bit, further extensions present), f_[0,0]/f_[0,1]/f_[1,0]/f_[1,1] (4 bits each, forward/backward h/v f_codes), DC (2 bits, intra_DC_precision), PS (2 bits, picture_structure), and single-bit flags T, P, C, Q, V, A, R, H, G, D (composite_display_flag). When D=1, an additional 32 bits of composite display information follow.'
+section: 3.4.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

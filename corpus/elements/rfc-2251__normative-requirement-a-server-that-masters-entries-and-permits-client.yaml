@@ -1,0 +1,9 @@
+document: rfc-2251
+kind: normative-requirement
+summary: A server that masters entries and permits client modifications MUST implement subschema entries and provide access to them. Subschema entries MUST contain cn (as RDN), objectClass (with at least 'top' and 'subschema'), objectClasses, and attributeTypes attributes. Clients MUST retrieve subschema via baseObject search with filter '(objectClass=subschema)'.
+section: 3.2.2
+rfc2119_level: MUST
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

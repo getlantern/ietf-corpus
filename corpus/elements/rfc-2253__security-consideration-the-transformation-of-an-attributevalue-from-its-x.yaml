@@ -1,0 +1,11 @@
+document: rfc-2253
+kind: security-consideration
+summary: The transformation of an AttributeValue from its X.501 ASN.1 form to an LDAP string representation is not always reversible back to the same BER or DER form. For example, TeletexString and PrintableString encodings of 'Sam' both produce the string CN=Sam. Applications requiring DER form (e.g., X.509 certificate verification) SHOULD NOT use the string representation and SHOULD instead use the '#'-prefixed hexadecimal form.
+section: "7.2"
+rfc2119_level: SHOULD NOT
+topics:
+    - ldap
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

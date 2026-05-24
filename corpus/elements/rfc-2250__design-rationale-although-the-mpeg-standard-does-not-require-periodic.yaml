@@ -1,0 +1,9 @@
+document: rfc-2250
+kind: design-rationale
+summary: Although the MPEG standard does not require periodic repetition of the Video_Sequence_Header, implementations are encouraged to inject it periodically to enable channel switching and arbitrary-point entry into a continuously relayed stream. When playing from a file where the header appears only once, the packetizer should save and periodically re-inject it.
+section: "3.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

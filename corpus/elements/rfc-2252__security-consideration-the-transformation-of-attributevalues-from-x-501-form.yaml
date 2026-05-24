@@ -1,0 +1,12 @@
+document: rfc-2252
+kind: security-consideration
+summary: The transformation of AttributeValues from X.501 form to LDAP string representation is not always reversible to the same BER/DER form; for example, TeletexString and PrintableString choices both become 'CN=Sam'. Applications requiring DER form for X.509 certificate verification SHOULD NOT use string representations and SHOULD instead use the Binary syntax.
+section: "9.2"
+rfc2119_level: SHOULD NOT
+topics:
+    - ldap
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
