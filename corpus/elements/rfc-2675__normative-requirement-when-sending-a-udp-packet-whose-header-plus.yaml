@@ -1,0 +1,10 @@
+document: rfc-2675
+kind: normative-requirement
+summary: When sending a UDP packet whose header plus data length exceeds 65,535 octets, the Length field in the UDP header MUST be set to zero; the actual length is conveyed via the Jumbo Payload Length field in the Hop-by-Hop option.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

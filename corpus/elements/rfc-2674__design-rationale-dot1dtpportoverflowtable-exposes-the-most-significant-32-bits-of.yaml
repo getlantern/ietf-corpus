@@ -1,0 +1,8 @@
+document: rfc-2674
+kind: design-rationale
+summary: dot1dTpPortOverflowTable exposes the most-significant 32 bits of port statistics counters as a separate table, enabling SNMPv1 managers to reconstruct 64-bit counts. The description explicitly warns that separately sampling high and low words risks missing an overflow between polls.
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

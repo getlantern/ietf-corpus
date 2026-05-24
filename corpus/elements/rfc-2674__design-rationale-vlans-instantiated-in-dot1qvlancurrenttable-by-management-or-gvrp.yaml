@@ -1,0 +1,8 @@
+document: rfc-2674
+kind: design-rationale
+summary: VLANs instantiated in dot1qVlanCurrentTable by management or GVRP are explicitly NOT also represented as entries in ifTable. Higher-layer protocol entities (e.g., IP interfaces) that communicate over a VLAN should appear in ifTable as type propVirtual(53), not as protocol-specific types such as l3ipxvlan(137).
+section: 3.4.2.1
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

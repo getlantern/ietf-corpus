@@ -1,0 +1,9 @@
+document: rfc-2686
+kind: design-rationale
+summary: Given the 1:72 ratio of smallest high-priority packets (~22 bytes, compressed RTP/G.723.1) to largest expected packets (1500 bytes MTU), at most ~8 levels of suspension are needed in practice; 28.8 kbit/s links require at least two levels (audio suspends video, video suspends other long packets).
+section: "2"
+topics:
+    - realtime
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

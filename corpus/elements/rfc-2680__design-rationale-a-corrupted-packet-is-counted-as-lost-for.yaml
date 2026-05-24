@@ -1,0 +1,8 @@
+document: rfc-2680
+kind: design-rationale
+summary: 'A corrupted packet is counted as lost for consistency: if the IP header is corrupted, the source or destination addresses cannot be verified, making it impossible to confirm the packet corresponds to a given sent test packet. Counting some corrupted packets as received and others as lost would be inconsistent.'
+section: "2.5"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

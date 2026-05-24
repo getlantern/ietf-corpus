@@ -1,0 +1,9 @@
+document: rfc-2680
+kind: design-rationale
+summary: Transport connection loss rates (e.g., TCP) do not reflect unbiased samples because TCP transmits in bursts (inducing additional loss) and adapts its rate to minimize loss, making IPPM Poisson-sampled measurements necessary for unbiased network characterization.
+section: "3.5"
+topics:
+    - measurement
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

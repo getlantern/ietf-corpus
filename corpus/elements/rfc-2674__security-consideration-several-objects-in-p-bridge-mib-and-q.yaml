@@ -1,0 +1,9 @@
+document: rfc-2674
+kind: security-consideration
+summary: Several objects in P-BRIDGE-MIB and Q-BRIDGE-MIB have read-write or read-create access, including VLAN membership (dot1qVlanStaticTable), port VLAN assignments (dot1qPortVlanTable), and static filtering entries. Unauthorized write access to these objects could disrupt VLAN segmentation and traffic forwarding. Implementations should apply SNMP access control (e.g., SNMPv3 USM/VACM) to protect writable objects.
+section: "7"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

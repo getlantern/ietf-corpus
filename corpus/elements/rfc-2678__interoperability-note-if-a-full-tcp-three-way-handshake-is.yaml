@@ -1,0 +1,9 @@
+document: rfc-2678
+kind: interoperability-note
+summary: If a full TCP three-way handshake is accidentally completed as a side effect of the TCP measurement methodology, the connection should be torn down using a FIN handshake rather than a RST packet, because RST packets are not reliably delivered. If the handshake is not completed (e.g., when using synthesized SYN packets), A1's TCP stack will automatically terminate the connection.
+section: 6.6.5
+topics:
+    - tcp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

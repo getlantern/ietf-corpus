@@ -1,0 +1,9 @@
+document: rfc-2680
+kind: design-rationale
+summary: One-way loss is measured instead of round-trip loss because Internet paths are often asymmetric (different routers for forward and reverse), asymmetric queueing can create radically different performance characteristics even on symmetric paths, and application performance may depend primarily on one direction. QoS provisioning also often differs per direction.
+section: "1.1"
+topics:
+    - measurement
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

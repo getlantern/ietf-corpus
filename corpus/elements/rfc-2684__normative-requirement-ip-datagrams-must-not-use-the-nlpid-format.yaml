@@ -1,0 +1,9 @@
+document: rfc-2684
+kind: normative-requirement
+summary: IP datagrams MUST NOT use the NLPID format (even though NLPID 0xCC exists for IP). Instead, IP datagrams MUST be identified by a SNAP header with LLC 0xAA-AA-03, OUI 0x00-00-00, and EtherType 0x08-00.
+section: "5.1"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

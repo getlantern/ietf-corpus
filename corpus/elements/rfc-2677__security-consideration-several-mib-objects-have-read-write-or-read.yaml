@@ -1,0 +1,9 @@
+document: rfc-2677
+kind: security-consideration
+summary: Several MIB objects have read-write or read-create access, including nhrpCacheTable, nhrpClientTable, nhrpServerTable entries. Unauthorized write access could disrupt NHRP operation by corrupting address mappings or server/client configuration. The document recommends using SNMPv3 with authentication and privacy to protect management access to this MIB.
+section: "6"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

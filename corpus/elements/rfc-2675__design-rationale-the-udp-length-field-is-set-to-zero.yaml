@@ -1,0 +1,8 @@
+document: rfc-2675
+kind: design-rationale
+summary: The UDP Length field is set to zero (previously illegal, as minimum UDP packet length is 8) to signal a jumbogram, reusing an impossible value as a flag rather than adding a new extension header or option, minimizing protocol changes.
+section: "4"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
