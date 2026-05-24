@@ -1,0 +1,9 @@
+document: rfc-2948
+kind: wire-format
+summary: The initial vector (iV) is 64 bits (8 bytes). Each data chunk Dn is 64 bits (8 bytes). Output On = Dn XOR Vn, where V0 = DES-e(DES-d(DES-e(iV, key1), key2), key3) and V(n+1) = DES-e(DES-d(DES-e(Vn, key1), key2), key3).
+section: "4"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

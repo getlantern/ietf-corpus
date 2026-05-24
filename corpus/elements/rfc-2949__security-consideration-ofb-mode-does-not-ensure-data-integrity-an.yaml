@@ -1,0 +1,9 @@
+document: rfc-2949
+kind: security-consideration
+summary: OFB mode does not ensure data integrity; an active attacker who can predict plaintext may be able to substitute text. Adding a MAC would address this but significantly increases per-character overhead, impacting performance on slow links.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

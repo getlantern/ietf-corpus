@@ -1,0 +1,9 @@
+document: rfc-2947
+kind: design-rationale
+summary: 'Key derivation from authentication session key data uses a formula: keys_to_use = bytes of key data / 8. For 2 keys, server uses key1/key2/key1 and client uses key2/key1/key2; for 3 keys, server uses key1/key2/key3 and client uses key2/key3/key1; additional rules apply for 4–6 keys.'
+section: "5"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2946
+kind: normative-requirement
+summary: If ENCRYPT is negotiated in conjunction with AUTH, the SUPPORT message MUST NOT be sent until after the session key has been determined, because it is impossible to know if the selected encryption type can be properly initialized without knowing the key type and length.
+section: "2"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

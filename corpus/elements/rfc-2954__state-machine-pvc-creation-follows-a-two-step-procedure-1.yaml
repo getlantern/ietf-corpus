@@ -1,0 +1,6 @@
+document: rfc-2954
+kind: state-machine
+summary: 'PVC creation follows a two-step procedure: (1) create frPVCEndptTable entries for both segment endpoints using RowStatus createAndWait(5) to permit error diagnostics on each columnar object, then set RowStatus to active(1) only after all required columns (InMaxFrameSize, InBc, InBe, InCIR, OutMaxFrameSize, OutBc, OutBe, OutCIR) are present; (2) create entries in frPVCConnectTable to cross-connect the endpoints.'
+section: "3.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

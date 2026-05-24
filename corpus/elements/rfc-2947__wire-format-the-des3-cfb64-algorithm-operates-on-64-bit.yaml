@@ -1,0 +1,9 @@
+document: rfc-2947
+kind: wire-format
+summary: The DES3 CFB64 algorithm operates on 64-bit (8-byte) blocks. The initial vector iV is 64 bits. Each chunk Dn is 64 bits. Output On = Dn XOR Vn, where V0 = DES-e(DES-d(DES-e(iV, key1), key2), key3) and V(n+1) = DES-e(DES-d(DES-e(On, key1), key2), key3).
+section: "4"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

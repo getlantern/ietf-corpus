@@ -1,0 +1,9 @@
+document: rfc-2954
+kind: security-consideration
+summary: Several read-write objects in this MIB (e.g., frLportTypeAdmin, frLportVCSigProtocolAdmin, frLportFragControl, frPVCEndptRowStatus) can significantly disrupt frame relay service if modified by unauthorized parties. Implementations must use SNMPv3 access controls and restrict write access to authorized network management stations only.
+section: "6"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

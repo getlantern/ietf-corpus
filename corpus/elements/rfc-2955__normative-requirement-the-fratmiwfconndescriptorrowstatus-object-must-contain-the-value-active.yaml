@@ -1,0 +1,9 @@
+document: rfc-2955
+kind: normative-requirement
+summary: The frAtmIwfConnDescriptorRowStatus object MUST contain the value 'active(1)' before any connection table entry references the descriptor row. Destruction of a descriptor row MUST fail with 'inconsistentValue' if any connection entry currently references it.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

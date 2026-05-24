@@ -1,0 +1,9 @@
+document: rfc-2947
+kind: security-consideration
+summary: DES3 CFB64 does not ensure data integrity. An active attacker who can predict cleartext can modify up to 8 bytes at a time; the following 8-byte block will be corrupted (aiding detection), but exploitation of this weakness remains a risk.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

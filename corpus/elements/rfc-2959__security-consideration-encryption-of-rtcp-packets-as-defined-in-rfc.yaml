@@ -1,0 +1,11 @@
+document: rfc-2959
+kind: security-consideration
+summary: Encryption of RTCP packets (as defined in RFC 1889 sec. 9) may prevent third-party monitors from reading SDES and other RTCP data. RFC 1889 allows splitting a compound RTCP packet so that reception reports are sent in the clear while SDES information is encrypted, to accommodate third-party monitors.
+section: "4"
+topics:
+    - security
+    - crypto
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

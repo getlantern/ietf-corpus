@@ -1,0 +1,9 @@
+document: rfc-2955
+kind: normative-requirement
+summary: Setting frAtmIwfConnRowStatus to destroy(6) requires that OperStatus/AdminStatus of corresponding endpoints MUST be down(2); if the ATM endpoint is not already down, the deactivation MAY occur as a side-effect, otherwise the destroy MUST fail with error code 'inconsistentValue'.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
