@@ -1,0 +1,8 @@
+document: rfc-2074
+kind: design-rationale
+summary: Protocol-identifier macros are expanded at implementation time, not at run time. A label such as 'ip' may map to multiple distinct values (one per supported encapsulation), so 'ip' produces 5 distinct protocol-identifiers and each child of ip maps to at least 5 identifiers.
+section: 4.2.10
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
