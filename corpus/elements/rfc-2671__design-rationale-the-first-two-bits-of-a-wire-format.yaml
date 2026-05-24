@@ -1,0 +1,8 @@
+document: rfc-2671
+kind: design-rationale
+summary: The first two bits of a wire-format domain label denote the label type. RFC 1035 allocated two of the four possible types. EDNS0 assigns bit pattern '01' to indicate an 'extended label type,' whose actual type value is encoded in the lower six bits of the first octet, allowing many new label types without consuming additional high-bit patterns.
+section: "3.1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

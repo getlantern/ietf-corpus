@@ -1,0 +1,9 @@
+document: rfc-2670
+kind: security-consideration
+summary: Several objects in this MIB are read-write (e.g., downstream/upstream channel frequency, power, modulation, QoS profile parameters, and CMTS timing intervals). Unauthorized writes could disrupt RF channel operation or alter service-class enforcement; implementors should apply SNMPv3 authentication and access control (VACM) to restrict write access to these objects.
+section: "7"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

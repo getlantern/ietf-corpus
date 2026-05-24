@@ -1,0 +1,9 @@
+document: rfc-2672
+kind: normative-requirement
+summary: A resolver or recursive server that understands DNAME records but sends non-extended queries MUST augment resolver step 4.c by deleting from the reply any CNAME records whose owner is a subdomain of the owner of any DNAME record in the response.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
