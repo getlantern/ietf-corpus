@@ -1,0 +1,10 @@
+document: rfc-2734
+kind: normative-requirement
+summary: When a channel mapping expires (expiration seconds elapsed since last advertisement), multicast recipients SHALL stop reception on that channel; the owner SHALL send MCAP advertisements with expiration=0 for 30 seconds, then deallocate the channel in the IRM's CHANNELS_AVAILABLE register.
+section: "9.9"
+rfc2119_level: MUST
+topics:
+    - ip
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

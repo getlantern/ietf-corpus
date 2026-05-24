@@ -1,0 +1,9 @@
+document: rfc-2733
+kind: state-machine
+summary: 'Recovery algorithm: on receiving an FEC packet, attempt recovery; if insufficient data, add to a pending list. On receiving a media packet, mark it present, then iterate the pending list to attempt recovery. Successfully recovered packets are treated as received and trigger further recovery attempts. One FEC packet can only be used once for recovery, after which it is removed from the pending list.'
+section: "8.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2735
+kind: design-rationale
+summary: A VPN extension was not added to NHRP control messages because transit NHRP Servers are not required to process extensions, and already-deployed servers might resolve control packets within the public address space instead of the private VPN address space. Instead, a VPN-specific LLC/SNAP header is prepended to NHRP control messages, allowing the same header to be used for both control and data paths.
+section: "2.2"
+topics:
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2730
+kind: design-rationale
+summary: MADCAP uses absolute times rather than relative times for leases because multicast sessions are typically advertised via SAP/SDP, which uses absolute times and may be distributed via email or web. A client with a skewed clock using relative times could advertise a session window outside the server's reserved period, causing simultaneous use of addresses by multiple sessions.
+section: "2.12"
+topics:
+    - multicast
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2734
+kind: state-machine
+summary: 'Channel ownership transfer: the releasing owner decrements expiration in each advertisement until it reaches zero; other sources observing expiration ≤ 60 seconds SHALL begin advertising with refreshed expiration ≥ 60 seconds. If no new owner appears when the timer expires, the owner deallocates the channel. Contention for ownership is resolved by largest physical ID.'
+section: "9.7"
+topics:
+    - ip
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2733
+kind: wire-format
+summary: 'The protection operation constructs a bit string per media packet by concatenating: Padding bit (1), Extension bit (1), CC (4), Marker (1), Payload Type (7), Timestamp (32), payload+extension+CSRC+padding length (16), then the CSRC list (if CC nonzero), header extension (if X=1), payload, and padding. Shorter bit strings MUST be zero-padded at the end to the length of the longest.'
+section: "7"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

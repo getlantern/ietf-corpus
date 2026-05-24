@@ -1,0 +1,9 @@
+document: rfc-2737
+kind: security-consideration
+summary: Several objects in the Entity MIB have read-write access (entPhysicalSerialNum, entPhysicalAlias, entPhysicalAssetID). Unauthorized write access could allow an adversary to corrupt asset tracking or serial number records. Agents must enforce appropriate SNMPv3 access control or community-based access restrictions on these objects.
+section: "8"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

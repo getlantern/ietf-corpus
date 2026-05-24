@@ -1,0 +1,11 @@
+document: rfc-2733
+kind: security-consideration
+summary: 'Key rotation is complicated by FEC: if packets a and b use different keys and FEC packet f(a,b) spans the key change, the old key must be cached and used until it is determined that the key has changed on the FEC stream as well.'
+section: "12"
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

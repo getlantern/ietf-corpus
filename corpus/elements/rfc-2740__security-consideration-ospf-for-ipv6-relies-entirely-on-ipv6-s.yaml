@@ -1,0 +1,10 @@
+document: rfc-2740
+kind: security-consideration
+summary: OSPF for IPv6 relies entirely on IPv6's Authentication Header (RFC 2402) and Encapsulating Security Payload (RFC 2406) to ensure integrity, authentication, and confidentiality of routing exchanges. Accidental data corruption is detected by the standard IPv6 16-bit one's complement checksum covering the entire OSPF packet and the prepended IPv6 pseudo-header.
+section: "2.6"
+topics:
+    - security
+    - ipsec
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

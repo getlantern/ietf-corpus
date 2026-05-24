@@ -1,0 +1,12 @@
+document: rfc-2733
+kind: security-consideration
+summary: When FEC and media streams use different encryption keys, or only one stream is encrypted, additional application-level signaling is required to exchange and negotiate keys separately. Encrypting only one stream may enable known-plaintext attacks. Applications utilizing encryption SHOULD encrypt both the media and FEC streams with the same key.
+section: "12"
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

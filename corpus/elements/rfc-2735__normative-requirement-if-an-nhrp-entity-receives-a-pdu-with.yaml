@@ -1,0 +1,10 @@
+document: rfc-2735
+kind: normative-requirement
+summary: If an NHRP entity receives a PDU with a VPN-ID indicated via VPN encapsulation that conflicts with a previously allocated VPN-ID, it SHOULD send back an NHRP error indication with error code 16 (VPN mismatch), but MAY instead silently drop the packet to avoid security issues.
+section: "3.4"
+rfc2119_level: SHOULD
+topics:
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

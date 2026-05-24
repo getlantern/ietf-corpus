@@ -1,0 +1,8 @@
+document: rfc-2734
+kind: wire-format
+summary: 'First fragment encapsulation header is two quadlets: lf (2 bits, value 1), datagram_size (the IP Total Length minus one), ether_type (0x0800), and dgl (16-bit datagram label, same for all fragments of one datagram). Subsequent fragments replace ether_type with fragment_offset.'
+section: "4.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

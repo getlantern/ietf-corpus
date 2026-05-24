@@ -1,0 +1,9 @@
+document: rfc-2740
+kind: design-rationale
+summary: Link-local addresses are distributed in Link-LSAs rather than in Router-LSAs (as IPv4 interface addresses were) because they are only needed on the local link for next-hop calculation and do not need to be flooded beyond the link. This is more efficient and also handles NBMA links where non-DR routers do not necessarily exchange Hellos.
+section: "2.8"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

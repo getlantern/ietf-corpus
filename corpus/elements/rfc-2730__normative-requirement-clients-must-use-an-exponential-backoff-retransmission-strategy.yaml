@@ -1,0 +1,9 @@
+document: rfc-2730
+kind: normative-requirement
+summary: Clients MUST use an exponential backoff retransmission strategy. The recommended algorithm starts with a 4-second delay, doubling up to 16 seconds, with at most 3 retransmissions; if no response by t+60 seconds the client stops retransmitting. Retransmitted messages MUST be identical to the original (same xid and Lease Identifier).
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

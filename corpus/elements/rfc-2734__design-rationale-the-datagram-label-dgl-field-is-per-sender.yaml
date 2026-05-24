@@ -1,0 +1,8 @@
+document: rfc-2734
+kind: design-rationale
+summary: The datagram label (dgl) field is per-sender rather than globally unique to keep the 1394 link-level fragmentation scheme simple; recipients identify fragments by combining source_ID with dgl, avoiding any need for a centralized label allocator.
+section: "4.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
