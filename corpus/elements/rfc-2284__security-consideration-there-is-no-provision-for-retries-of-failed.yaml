@@ -1,0 +1,8 @@
+document: rfc-2284
+kind: security-consideration
+summary: There is no provision for retries of failed authentication within EAP itself, but the LCP state machine can renegotiate the authentication protocol at any time, allowing a new attempt. Implementations vary in whether they terminate the link on failure; some limit Network-Layer traffic to a filtered subset instead.
+section: Security Considerations
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

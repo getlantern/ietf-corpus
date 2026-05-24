@@ -1,0 +1,8 @@
+document: rfc-2287
+kind: design-rationale
+summary: Agent implementations use polling with a configurable interval (sysApplAgentPollInterval, default 60 s) because obtaining process status from the OS is computationally expensive and the detection of application start/stop events is not necessarily event-driven. The default favors low overhead for long-lived processes; managers requiring accuracy for short-lived processes should reduce the interval.
+section: "7.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

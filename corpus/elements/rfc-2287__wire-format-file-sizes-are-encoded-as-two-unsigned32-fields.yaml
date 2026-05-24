@@ -1,0 +1,8 @@
+document: rfc-2287
+kind: wire-format
+summary: 'File sizes are encoded as two Unsigned32 fields: a ''High'' field holding size in 2^32-byte blocks and a ''Low'' field holding size modulo 2^32 bytes. For example, a 4,294,967,296-byte file yields High=1, Low=0; a 4,294,967,295-byte file yields High=0, Low=4,294,967,295.'
+section: "6"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

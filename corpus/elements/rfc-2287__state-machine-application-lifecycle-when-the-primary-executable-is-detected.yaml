@@ -1,0 +1,8 @@
+document: rfc-2287
+kind: state-machine
+summary: 'Application lifecycle: when the primary executable is detected, an entry enters sysApplRunTable (RunState: running/runnable/waiting/exiting). When required elements cease running, the agent waits one additional poll cycle; if required elements remain absent, the invocation is moved to sysApplPastRunTable with exitState complete (all elements stopped), failed (required elements absent but others running), or other.'
+section: 5.2.1
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2287
+kind: security-consideration
+summary: The MIB exposes sensitive system-level information via SNMP including process names, startup parameters, user identities, memory consumption, CPU usage, and open file counts. Several objects are read-write (sysApplInstallElmtRole, table-size scalars, poll interval) and require appropriate SNMPv2 access controls to prevent unauthorized disclosure or modification.
+section: "8"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

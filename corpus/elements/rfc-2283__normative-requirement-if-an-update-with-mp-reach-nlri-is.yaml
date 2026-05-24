@@ -1,0 +1,11 @@
+document: rfc-2283
+kind: normative-requirement
+summary: If an UPDATE with MP_REACH_NLRI is received from an external peer and the leftmost AS in AS_PATH is not equal to the autonomous system number of the sending peer, the local system SHALL send a NOTIFICATION with Error Code UPDATE Message Error and Error Subcode set to Malformed AS_PATH.
+section: "4"
+rfc2119_level: REQUIRED
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
