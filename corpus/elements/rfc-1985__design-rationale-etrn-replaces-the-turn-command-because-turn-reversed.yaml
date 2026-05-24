@@ -1,0 +1,9 @@
+document: rfc-1985
+kind: design-rationale
+summary: ETRN replaces the TURN command because TURN reversed the SMTP connection direction without verifying the remote host's identity, allowing a rogue system to download mail intended for another site. ETRN addresses this by having the server initiate a new outbound SMTP connection to the requesting host, giving the server greater certainty it is contacting the correct client.
+section: "1"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-1996
+kind: design-rationale
+summary: DNS NOTIFY uses an interrupt model rather than a poll model to reduce zone propagation delay. Long SOA refresh intervals reduce master server load but cause incoherence among authority servers; NOTIFY signals slaves immediately when the zone changes.
+section: "1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

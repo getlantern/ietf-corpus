@@ -1,0 +1,8 @@
+document: rfc-1995
+kind: design-rationale
+summary: AXFR transfers the entire zone file regardless of how small the change is, making it inefficient for propagating small updates. IXFR transfers only the changed portions, reducing bandwidth and latency for secondary server synchronization.
+section: "1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

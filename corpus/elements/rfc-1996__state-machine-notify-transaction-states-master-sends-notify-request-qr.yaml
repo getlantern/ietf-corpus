@@ -1,0 +1,8 @@
+document: rfc-1996
+kind: state-machine
+summary: 'NOTIFY transaction states: master sends NOTIFY request (QR=0) → slave acknowledges with NOTIFY response (QR=1, same query ID) → master removes slave from retry queue. On timeout or ICMP unreachable, master stops retrying. On NOTIMP, transaction is also considered complete.'
+section: "3.3"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

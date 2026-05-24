@@ -1,0 +1,9 @@
+document: rfc-1964
+kind: wire-format
+summary: The 8-byte plaintext sequence number field encodes the sender's 4-byte sequence number (s0..s3, least to most significant) followed by four repetitions of the direction indicator (0x00=initiator, 0xFF=acceptor). The field is DES-CBC encrypted using the context key with an IV taken from the first 8 bytes of SGN_CKSUM.
+section: 1.2.1.2
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

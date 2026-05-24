@@ -1,0 +1,9 @@
+document: rfc-1985
+kind: security-consideration
+summary: ETRN does not compromise existing SMTP/ESMTP security; it merely shortens the wait before queued messages are retried. The new-connection model means the server can apply normal DNS-based identity checks on the outbound session, unlike TURN which relied on the client's unverified self-identification.
+section: "8"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

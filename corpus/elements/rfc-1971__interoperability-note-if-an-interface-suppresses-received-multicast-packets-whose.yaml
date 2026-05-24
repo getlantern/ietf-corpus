@@ -1,0 +1,9 @@
+document: rfc-1971
+kind: interoperability-note
+summary: If an interface suppresses received multicast packets whose link-layer source address matches the interface's own address (a common loopback suppression heuristic), DAD will fail when another node shares the same link-layer address. The implementation must not filter packets solely on matching link-layer source address during DAD.
+section: Appendix
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-1964
+kind: security-consideration
+summary: The direction indicator (four bytes of 0x00 or 0xFF) within the sequence number provides redundancy to verify successful DES decryption and detects maliciously reflected packets. Using SGN_CKSUM as the IV for sequence number decryption ensures that splicing a checksum and sequence number from different messages will be detected.
+section: 1.2.1.2
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

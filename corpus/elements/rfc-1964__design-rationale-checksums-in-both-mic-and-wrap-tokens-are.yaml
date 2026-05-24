@@ -1,0 +1,9 @@
+document: rfc-1964
+kind: design-rationale
+summary: Checksums in both MIC and Wrap tokens are computed over the data logically prepended by the first 8 bytes of the plaintext packet header. This binds the integrity check to the token type, protocol version, and algorithm identifier fields, preventing a valid checksum from being reused in a different token context.
+section: 1.2.1.1
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

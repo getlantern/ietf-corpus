@@ -1,0 +1,9 @@
+document: rfc-2001
+kind: design-rationale
+summary: TCP waits for three (not one or two) duplicate ACKs before triggering fast retransmit because one or two duplicates can result from simple segment reordering rather than loss. Three consecutive duplicates are a strong indicator that a segment has been lost.
+section: "3"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

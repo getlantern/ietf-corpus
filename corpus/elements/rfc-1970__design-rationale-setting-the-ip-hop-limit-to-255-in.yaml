@@ -1,0 +1,9 @@
+document: rfc-1970
+kind: design-rationale
+summary: Setting the IP Hop Limit to 255 in all ND messages and requiring receivers to validate this field makes Neighbor Discovery immune to spoofed ND messages from off-link senders, because routers decrement the Hop Limit and off-link packets arrive with values less than 255.
+section: "3.1"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

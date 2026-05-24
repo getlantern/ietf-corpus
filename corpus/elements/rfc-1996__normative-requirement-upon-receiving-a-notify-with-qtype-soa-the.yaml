@@ -1,0 +1,9 @@
+document: rfc-1996
+kind: normative-requirement
+summary: 'Upon receiving a NOTIFY with QTYPE=SOA, the slave should behave as if the zone''s SOA REFRESH interval has expired: query its masters for the SOA, check if the SERIAL has incremented, and if so initiate AXFR or IXFR.'
+section: "3.11"
+rfc2119_level: SHOULD
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

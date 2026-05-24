@@ -1,0 +1,9 @@
+document: rfc-1964
+kind: wire-format
+summary: 'MIC tokens (TOK_ID 01 01) have a 24-byte structure: TOK_ID (2 bytes), SGN_ALG (2 bytes: 00 00=DES MAC MD5, 01 00=MD2.5, 02 00=DES MAC), Filler (4 bytes, ff ff ff ff), SND_SEQ (8 bytes, encrypted sequence number), SGN_CKSUM (8 bytes).'
+section: 1.2.1
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

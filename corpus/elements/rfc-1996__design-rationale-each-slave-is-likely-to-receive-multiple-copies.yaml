@@ -1,0 +1,8 @@
+document: rfc-1996
+kind: design-rationale
+summary: Each slave is likely to receive multiple copies of the same NOTIFY—one from the primary master and one from each slave that subsequently transfers the zone. The protocol tolerates this because NOTIFY is sent only after a successful zone transfer, so the last NOTIFY received will reflect the latest change.
+section: "4.2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

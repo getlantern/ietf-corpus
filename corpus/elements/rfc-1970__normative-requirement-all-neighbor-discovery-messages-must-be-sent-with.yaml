@@ -1,0 +1,10 @@
+document: rfc-1970
+kind: normative-requirement
+summary: All Neighbor Discovery messages MUST be sent with an IPv6 Hop Limit of 255. Receivers MUST silently discard ND packets with a Hop Limit other than 255. This prevents off-link nodes from injecting ND messages.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

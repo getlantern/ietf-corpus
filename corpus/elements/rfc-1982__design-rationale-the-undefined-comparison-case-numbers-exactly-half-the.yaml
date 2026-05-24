@@ -1,0 +1,8 @@
+document: rfc-1982
+kind: design-rationale
+summary: The undefined comparison case (numbers exactly half the serial space apart) was left undefined rather than arbitrarily resolved because any fixed resolution would cause s1 < s2 while simultaneously s2 < s1 when the pair is reversed, making results depend on test order. A defined-but-arbitrary resolution would also produce the counterintuitive result s1 < s2 but (s1+1) > (s2+1).
+section: "3.2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

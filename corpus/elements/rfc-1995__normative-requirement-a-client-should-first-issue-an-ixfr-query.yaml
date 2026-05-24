@@ -1,0 +1,9 @@
+document: rfc-1995
+kind: normative-requirement
+summary: A client should first issue an IXFR query via UDP. If the entire response fits in one DNS packet it is delivered; if not, the server returns a single SOA indicating the client must retry over TCP.
+section: "2"
+rfc2119_level: SHOULD
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

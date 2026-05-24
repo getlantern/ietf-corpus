@@ -1,0 +1,9 @@
+document: rfc-2001
+kind: protocol-element
+summary: 'Fast recovery algorithm: on the third duplicate ACK, set ssthresh to max(cwnd/2, 2*segsize), retransmit the missing segment, and set cwnd to ssthresh + 3*segsize to account for segments that have left the network and are buffered at the receiver.'
+section: "4"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

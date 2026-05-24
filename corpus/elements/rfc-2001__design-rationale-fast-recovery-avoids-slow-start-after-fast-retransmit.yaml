@@ -1,0 +1,9 @@
+document: rfc-2001
+kind: design-rationale
+summary: Fast recovery avoids slow start after fast retransmit because duplicate ACKs indicate that data is still flowing and segments are buffered at the receiver. Invoking slow start would abruptly reduce throughput unnecessarily; congestion avoidance at half the previous rate is sufficient.
+section: "4"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

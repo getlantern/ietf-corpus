@@ -1,0 +1,8 @@
+document: rfc-1995
+kind: design-rationale
+summary: The purging strategy for old difference data is to delete versions when the total IXFR response size would exceed that of an AXFR response. This caps storage overhead at at most twice the current zone size while preserving the efficiency benefit of IXFR.
+section: "5"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

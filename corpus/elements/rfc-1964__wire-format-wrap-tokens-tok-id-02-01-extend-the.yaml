@@ -1,0 +1,9 @@
+document: rfc-1964
+kind: wire-format
+summary: Wrap tokens (TOK_ID 02 01) extend the MIC header format with SEAL_ALG at bytes 4-5 (ff ff=no encryption, 00 00=DES) and Filler at bytes 6-7, followed by SND_SEQ (8 bytes), SGN_CKSUM (8 bytes), and the encrypted or plaintext padded data payload.
+section: 1.2.2
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

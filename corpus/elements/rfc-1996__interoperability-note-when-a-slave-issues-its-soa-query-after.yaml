@@ -1,0 +1,8 @@
+document: rfc-1996
+kind: interoperability-note
+summary: When a slave issues its SOA query after receiving a NOTIFY, it should query the specific master that sent the NOTIFY—not all known masters in turn as RFC 1035 specifies for normal refresh—because other masters in a deep dependency graph may not yet have the updated zone.
+section: "3.11"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
