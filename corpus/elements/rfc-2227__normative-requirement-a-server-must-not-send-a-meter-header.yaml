@@ -1,0 +1,9 @@
+document: rfc-2227
+kind: normative-requirement
+summary: 'A server MUST NOT send a Meter header that would require a proxy to do something it has not yet offered to do. A proxy receiving a Meter header in a response MUST either obey it, or MUST revalidate the corresponding cache entry on every access (acting as if ''Cache-control: s-maxage=0'' were present).'
+section: "3.3"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

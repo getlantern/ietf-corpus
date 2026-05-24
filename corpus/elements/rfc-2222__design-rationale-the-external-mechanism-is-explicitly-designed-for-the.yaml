@@ -1,0 +1,10 @@
+document: rfc-2222
+kind: design-rationale
+summary: The EXTERNAL mechanism is explicitly designed for the case where a transport security service (such as TLS or IPsec) secures the connection and authenticates the client, while SASL negotiates the authorization identity and transitions the protocol to 'authenticated' state. In this scenario a SASL security layer would be redundant and should be negotiated off.
+section: A
+topics:
+    - security
+    - tls
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

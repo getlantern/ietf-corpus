@@ -1,0 +1,8 @@
+document: rfc-2228
+kind: protocol-element
+summary: The PBSZ command negotiates the maximum encoded block size (a decimal integer up to 2^32-1 bytes) for data channel protection. There is no default; the client must issue PBSZ before any PROT command. If the server's maximum is smaller, it signals this via 'PBSZ=number' in the 200 reply text, and both sides must use the smaller value.
+section: "3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

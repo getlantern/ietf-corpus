@@ -1,0 +1,9 @@
+document: rfc-2222
+kind: protocol-element
+summary: The GSSAPI mechanism (name 'GSSAPI') uses GSS_Init_sec_context/GSS_Accept_sec_context iteratively until GSS_S_COMPLETE. After context establishment, the server sends a GSS_Wrap'd (conf_flag=FALSE) 4-octet structure with the supported security layer bitmask and maximum token size; the client replies with its selected layer, maximum size, and authorization identity.
+section: "7.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

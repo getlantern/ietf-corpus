@@ -1,0 +1,8 @@
+document: rfc-2227
+kind: state-machine
+summary: 'Usage-limiting counting: a proxy maintains TU/TR (use/reuse totals) and MU/MR (limits). TU and TR are zeroed only upon receipt of new max-uses/max-reuses directives. When TU >= MU or TR >= MR, the proxy MUST forward the request. A PF prefetch flag allows a single use of a max-uses=0 response without revalidation.'
+section: 5.3.2
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

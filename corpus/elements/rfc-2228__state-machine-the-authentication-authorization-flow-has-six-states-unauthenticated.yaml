@@ -1,0 +1,8 @@
+document: rfc-2228
+kind: state-machine
+summary: 'The authentication/authorization flow has six states: Unauthenticated (new connection), Need Security Data (awaiting ADAT after 334), Authenticated (security exchange complete via 234 or 235), Need Password (USER accepted, password required), Need Account, and Authorized (logged in). AUTH transitions from Unauthenticated to Need Security Data or directly to Authenticated; ADAT cycles through Need Security Data on 335 until 235 triggers Authenticated.'
+section: "9"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

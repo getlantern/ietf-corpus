@@ -1,0 +1,9 @@
+document: rfc-2215
+kind: design-rationale
+summary: MINIMUM_PATH_LATENCY is defined as the absolute smallest possible forwarding delay and will always underestimate rather than overestimate latency, particularly in multicast or large-cloud scenarios. This is intentional so that, combined with a service's queuing delay bound, endpoints can accurately compute de-jitter buffer requirements.
+section: "3.4"
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

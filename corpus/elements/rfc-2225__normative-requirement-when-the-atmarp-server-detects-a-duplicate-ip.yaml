@@ -1,0 +1,10 @@
+document: rfc-2225
+kind: normative-requirement
+summary: When the ATMARP server detects a duplicate IP address (same IP, different ATM address, open VC on existing entry), it MUST return the existing table entry in the ATMARP_Reply and MUST raise a 'duplicate IP address detected' condition to management; the table entry is not updated.
+section: "8.4"
+rfc2119_level: MUST
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

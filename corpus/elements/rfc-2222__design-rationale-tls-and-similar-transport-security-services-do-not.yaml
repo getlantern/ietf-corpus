@@ -1,0 +1,9 @@
+document: rfc-2222
+kind: design-rationale
+summary: TLS and similar transport security services do not fit the SASL model because their framing would be redundant with SASL framing and they do not provide the authorization identity negotiation that SASL requires. Protocols needing TLS should add a separate command (e.g., STARTTLS) outside the SASL command space.
+section: A
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

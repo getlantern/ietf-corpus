@@ -1,0 +1,9 @@
+document: rfc-2228
+kind: normative-requirement
+summary: The sender MUST break the input byte stream into blocks such that each encoded block is no larger than the PBSZ-negotiated buffer size, encode each block with the security mechanism, and prepend the 4-byte encoded-block length. All protection services are applied after FTP representation/structure/mode transformations.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

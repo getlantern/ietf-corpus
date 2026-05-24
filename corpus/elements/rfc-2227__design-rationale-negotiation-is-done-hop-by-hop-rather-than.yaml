@@ -1,0 +1,8 @@
+document: rfc-2227
+kind: design-rationale
+summary: 'Negotiation is done hop-by-hop rather than end-to-end to avoid requiring a protocol version revision and to ensure that only explicitly volunteering proxies join the metering subtree. Proxies at the leaves insert ''Cache-control: s-maxage=0'' to force non-participating proxies to revalidate through the subtree.'
+section: "3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

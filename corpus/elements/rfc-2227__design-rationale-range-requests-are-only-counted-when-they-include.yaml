@@ -1,0 +1,8 @@
+document: rfc-2227
+kind: design-rationale
+summary: 'Range requests are only counted when they include byte #0 of the resource, because in almost every case an end-client retrieves the beginning of any resource it accesses at all, and seldom retrieves any portion more than once. This rule produces ''best-efforts'' accuracy without complex tracking.'
+section: "5.4"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

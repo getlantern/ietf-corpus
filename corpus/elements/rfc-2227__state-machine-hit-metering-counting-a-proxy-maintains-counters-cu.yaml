@@ -1,0 +1,9 @@
+document: rfc-2227
+kind: state-machine
+summary: 'Hit-metering counting: a proxy maintains counters CU (uses) and CR (reuses) initialized to 0 when a response is first cached. CU increments on 200/203/206-byte-0 responses; CR increments on 304 responses. On forwarding a request upstream, the proxy includes the current CU/CR as a ''count'' directive and resets them upon receiving the server''s response.'
+section: 5.3.1
+topics:
+    - http
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

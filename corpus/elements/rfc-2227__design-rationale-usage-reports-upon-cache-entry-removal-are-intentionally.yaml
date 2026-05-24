@@ -1,0 +1,8 @@
+document: rfc-2227
+kind: design-rationale
+summary: 'Usage reports upon cache-entry removal are intentionally off the critical path: they may be done in parallel with any other operation and are best-efforts only, so a proxy does not serialize other operations on their completion. This ensures hit-metering adds no round-trips to any client-visible critical path.'
+section: "4.3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2231
+kind: design-rationale
+summary: Long MIME parameter values interact poorly with header line wrapping because proper folding requires linear whitespace (LWSP) that may not be present or recognizable in parameter values, causing truncation or damage by incorrect implementations. A continuation mechanism is therefore needed that breaks values into smaller units without altering the MIME header syntax.
+section: "3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

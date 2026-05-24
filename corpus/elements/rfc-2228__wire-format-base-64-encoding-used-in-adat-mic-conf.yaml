@@ -1,0 +1,8 @@
+document: rfc-2228
+kind: wire-format
+summary: Base 64 encoding used in ADAT, MIC, CONF, ENC commands and 63z replies uses a 64-character IA5 subset ([A-Z][a-z][0-9]+/) with '=' padding, encoding 6 bits per character in 24-bit groups. Unlike RFC 1421, line breaks MUST NOT be included. Implementations must read the entire line before processing, as encodings may be arbitrarily long.
+section: "10"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

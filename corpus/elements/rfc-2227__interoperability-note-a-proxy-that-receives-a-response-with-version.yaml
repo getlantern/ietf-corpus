@@ -1,0 +1,8 @@
+document: rfc-2227
+kind: interoperability-note
+summary: A proxy that receives a response with version less than HTTP/1.1 SHOULD NOT send Meter request directives to that server, as they would waste bandwidth. If the server later sends an HTTP/1.1 or higher response, the proxy should resume sending Meter directives.
+section: "5.1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

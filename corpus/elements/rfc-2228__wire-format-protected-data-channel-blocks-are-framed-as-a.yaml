@@ -1,0 +1,8 @@
+document: rfc-2228
+kind: wire-format
+summary: Protected data channel blocks are framed as a 4-byte unsigned integer length (most significant byte first) followed by the security-mechanism-encoded data block. The sender MUST encode a final zero-byte block and transmit it before closing the data connection to signal end-of-stream to the recipient.
+section: "6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2228
+kind: normative-requirement
+summary: The ADAT command MUST be preceded by a successful AUTH command and cannot be issued once a security data exchange has completed unless reset by a new AUTH command. If the server has not received AUTH or if a prior exchange completed without reset, it should respond with reply code 503.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
