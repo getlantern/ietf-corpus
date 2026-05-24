@@ -1,0 +1,10 @@
+document: rfc-2618
+kind: design-rationale
+summary: 'Packet accounting relationships are embedded as MIB comments: TotalIncomingPackets = Accepts + Rejects + Challenges + UnknownTypes, and successfully received = TotalIncoming - Malformed - BadAuthenticators - UnknownTypes - Dropped, enabling NMS consistency checks.'
+section: "4"
+topics:
+    - ldap
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

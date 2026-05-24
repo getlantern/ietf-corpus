@@ -1,0 +1,9 @@
+document: rfc-2623
+kind: security-consideration
+summary: Locking the RPCSEC_GSS <mechanism, QOP, service> triple per session prevents a denial-of-service attack where a caller specifies integrity or privacy for a file system not exported with those services, causing the RPC subsystem to wastefully perform GSS_VerifyMIC() or GSS_Unwrap().
+section: "3.3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

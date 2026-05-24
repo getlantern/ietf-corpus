@@ -1,0 +1,9 @@
+document: rfc-2631
+kind: protocol-element
+summary: Group parameter generation for p and q uses an iterative SHA-1-based algorithm seeded with an arbitrary bit string SEED of length >= m. The algorithm sets q by computing U mod 2^m with the most-significant and least-significant bits forced to 1, then derives p = X - (X mod 2q) + 1.
+section: 2.2.1.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2623
+kind: design-rationale
+summary: Some NFS server implementations do not require authentication for GETATTR/STATFS (NFSv2) or FSINFO (NFSv3) at mount time because automounters typically run as root and may not have AUTH_DH/AUTH_KERB4/RPCSEC_GSS credentials available; the exposure is limited to file system attribute disclosure.
+section: 2.3.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

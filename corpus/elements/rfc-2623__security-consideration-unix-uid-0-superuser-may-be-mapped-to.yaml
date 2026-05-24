@@ -1,0 +1,8 @@
+document: rfc-2623
+kind: security-consideration
+summary: UNIX uid 0 (superuser) MAY be mapped to a distinguished nobody user (UID_NOBODY) by the server to prevent superuser escalation across NFS. This mapping cannot be avoided for NFS v3 root file systems required for diskless client support; export options restrict superuser access.
+section: "2.5"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

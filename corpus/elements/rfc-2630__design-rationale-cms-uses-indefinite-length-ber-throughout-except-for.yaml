@@ -1,0 +1,9 @@
+document: rfc-2630
+kind: design-rationale
+summary: CMS uses indefinite-length BER throughout (except for signed and authenticated attributes) to enable single-pass processing, which is essential when content is large, streamed, or piped. DER is required only where recipients must re-encode to verify, making a single-pass DER encode infeasible for the whole structure.
+section: "2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

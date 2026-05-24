@@ -1,0 +1,8 @@
+document: rfc-2623
+kind: security-consideration
+summary: An attacker in the middle during MOUNT Version 3 security flavor negotiation can coax the NFS client into using a weaker security flavor than the server requires, or cause it to use a less-preferred flavor (e.g., without privacy). Using a weak security flavor like AUTH_SYS for the MOUNT query exposes this attack vector.
+section: "5"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

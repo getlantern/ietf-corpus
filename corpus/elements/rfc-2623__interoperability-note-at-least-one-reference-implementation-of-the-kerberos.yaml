@@ -1,0 +1,9 @@
+document: rfc-2623
+kind: interoperability-note
+summary: At least one reference implementation of the Kerberos V5 GSS-API mechanism (MIT) always returns QOP 0 from GSS_Unwrap() and GSS_VerifyMIC() regardless of the actual algorithm in the token, making it impossible for callers to determine the actual integrity algorithm used. NFS implementations MUST NOT exhibit this behavior.
+section: "4.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2623
+kind: design-rationale
+summary: The NULL procedure must accept AUTH_NONE and AUTH_SYS because RPCSEC_GSS uses the NULL procedure for its own control messages (RPCSEC_GSS_INIT and RPCSEC_GSS_CONTINUE_INIT), so requiring stronger authentication on NULL would break RPCSEC_GSS session establishment.
+section: 2.3.1
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

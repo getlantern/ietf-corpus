@@ -1,0 +1,8 @@
+document: rfc-2625
+kind: design-rationale
+summary: The ARP HW Type field is set to 0x00-01 (Ethernet) rather than the technically correct 0x00-06 (IEEE 802 networks) because some Ethernet end stations reject frames with HW Type 0x00-06 when FC is bridged to Ethernet, and many translational bridges fail to convert the field as expected.
+section: "4.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

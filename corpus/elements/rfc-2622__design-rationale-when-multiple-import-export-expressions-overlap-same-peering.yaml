@@ -1,0 +1,9 @@
+document: rfc-2622
+kind: design-rationale
+summary: 'When multiple import/export expressions overlap (same peering or overlapping filters), RPSL uses the specification-order rule: the action of the first matching specification applies, and routes matched by earlier expressions are excluded from later ones. This avoids requiring disjoint specifications while keeping policy interpretation deterministic.'
+section: "6.4"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
