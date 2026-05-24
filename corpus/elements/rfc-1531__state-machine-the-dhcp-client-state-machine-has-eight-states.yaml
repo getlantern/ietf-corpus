@@ -1,0 +1,8 @@
+document: rfc-1531
+kind: state-machine
+summary: 'The DHCP client state machine has eight states: INIT, SELECTING, REQUESTING, BOUND, RENEWING, REBINDING, INIT-REBOOT, and REBOOTING. Key transitions: INIT→SELECTING on DHCPDISCOVER broadcast; REQUESTING→BOUND on DHCPACK; BOUND→RENEWING at T1 expiry (unicast DHCPREQUEST); RENEWING→REBINDING at T2 expiry (broadcast DHCPREQUEST); REBINDING or RENEWING→INIT on lease expiry or DHCPNAK.'
+section: "4.4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

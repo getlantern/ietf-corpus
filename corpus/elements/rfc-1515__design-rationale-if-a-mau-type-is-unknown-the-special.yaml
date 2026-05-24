@@ -1,0 +1,8 @@
+document: rfc-1515
+kind: design-rationale
+summary: If a MAU type is unknown, the special OBJECT IDENTIFIER unknownMauType ::= { 0 0 } is returned for rpMauType and ifMauType. This value is syntactically valid ASN.1/BER so any conformant implementation must be able to generate and recognize it, avoiding the need for a separate error path.
+section: 4.1.1
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

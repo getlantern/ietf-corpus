@@ -1,0 +1,8 @@
+document: rfc-1532
+kind: protocol-element
+summary: 'BOOTREPLY delivery follows a priority-ordered algorithm: (1) if ''ciaddr'' is non-zero, unicast to ''ciaddr'':BOOTPC; (2) else if ''giaddr'' is non-zero, unicast to ''giaddr'':BOOTPS; (3) else if BROADCAST flag is set, broadcast to 255.255.255.255:BOOTPC; (4) else unicast to ''yiaddr''/''chaddr'':BOOTPC. This is summarized in a decision table in Section 5.4.'
+section: "5.4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

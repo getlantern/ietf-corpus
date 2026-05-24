@@ -1,0 +1,9 @@
+document: rfc-1509
+kind: state-machine
+summary: 'Context establishment is a multi-round token exchange: initial state (input_token = GSS_C_NO_BUFFER) → token-exchange loop triggered by GSS_S_CONTINUE_NEEDED (re-call with peer-supplied token) → complete (GSS_S_COMPLETE). Both gss_init_sec_context and gss_accept_sec_context participate in this loop; the context_handle is allocated on the first call and reused in continuation calls.'
+section: "3.3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

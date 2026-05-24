@@ -1,0 +1,8 @@
+document: rfc-1508
+kind: protocol-element
+summary: Per-message replay detection and sequencing are optionally selectable features controlled at context initiation by replay_det_req_flag and sequence_req_flag. When active, GSS_Verify()/GSS_Unseal() return GSS_DUPLICATE_TOKEN for detected duplicates, GSS_OLD_TOKEN for messages outside the detection window, and GSS_UNSEQ_TOKEN for out-of-order messages. Detection does not prevent delivery; appropriate action is a caller policy matter.
+section: 1.2.3
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

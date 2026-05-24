@@ -1,0 +1,9 @@
+document: rfc-1509
+kind: security-consideration
+summary: Applications must not use confidential data as channel-binding components because some mechanisms include the actual channel binding data in the context-establishment token rather than just a signature over it. If channel bindings presented to gss_accept_sec_context differ from those supplied to gss_init_sec_context, GSS_S_BAD_BINDINGS is returned and the context is not established.
+section: 2.1.11
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

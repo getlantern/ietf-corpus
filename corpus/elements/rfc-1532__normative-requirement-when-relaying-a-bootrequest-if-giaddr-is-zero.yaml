@@ -1,0 +1,9 @@
+document: rfc-1532
+kind: normative-requirement
+summary: When relaying a BOOTREQUEST, if 'giaddr' is zero the relay agent MUST fill it with the IP address of the receiving interface; if 'giaddr' is already non-zero it MUST NOT be modified. The relay agent MUST NEVER fill 'giaddr' with a broadcast address.
+section: 4.1.1
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

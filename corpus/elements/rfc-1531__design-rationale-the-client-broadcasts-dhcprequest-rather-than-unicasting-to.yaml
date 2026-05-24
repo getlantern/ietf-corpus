@@ -1,0 +1,8 @@
+document: rfc-1531
+kind: design-rationale
+summary: The client broadcasts DHCPREQUEST (rather than unicasting to the selected server only) so that all other servers that sent DHCPOFFER messages receive implicit notification that their offer was declined, allowing them to free any tentatively reserved addresses.
+section: "3.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

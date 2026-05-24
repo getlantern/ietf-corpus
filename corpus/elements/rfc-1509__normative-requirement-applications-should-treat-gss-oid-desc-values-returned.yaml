@@ -1,0 +1,9 @@
+document: rfc-1509
+kind: normative-requirement
+summary: Applications should treat gss_OID_desc values returned by GSSAPI routines as read-only and must not attempt to deallocate them. gss_OID values returned by gss_indicate_mechs and gss_accept_sec_context point into static storage and must also be treated as read-only.
+section: 2.1.4
+rfc2119_level: MUST NOT
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

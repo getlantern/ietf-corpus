@@ -1,0 +1,9 @@
+document: rfc-1532
+kind: normative-requirement
+summary: If a BOOTP client does not know its IP address it SHOULD set 'ciaddr' to 0.0.0.0; it MAY fill 'ciaddr' with a previously-assigned or preconfigured address, but it MUST then be prepared to receive datagrams at that address and answer ARP requests. The client SHOULD adopt the 'yiaddr' address assigned by the server as soon as possible.
+section: "3.3"
+rfc2119_level: SHOULD
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

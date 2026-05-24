@@ -1,0 +1,8 @@
+document: rfc-1531
+kind: design-rationale
+summary: 'The BROADCAST flag resolves a bootstrapping deadlock: some client implementations cannot receive unicast IP datagrams until configured with a valid IP address, yet need to receive DHCPOFFER/DHCPACK to obtain that address. Setting the flag instructs the server to broadcast its reply.'
+section: "4.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

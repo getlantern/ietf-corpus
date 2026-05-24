@@ -1,0 +1,8 @@
+document: rfc-1508
+kind: state-machine
+summary: 'Security context establishment: initiator calls GSS_Init_sec_context() producing output_token (state: INITIATING); target calls GSS_Accept_sec_context() returning GSS_COMPLETE or GSS_CONTINUE_NEEDED (state: ACCEPTING); if mutual_state is TRUE, target''s output_token triggers a continuation call to GSS_Init_sec_context() (state: COMPLETING). Both sides reach ESTABLISHED when GSS_COMPLETE is returned. Deletion via GSS_Delete_sec_context() transitions to DELETED; GSS_Process_context_token() processes peer deletion notifications.'
+section: "2.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
