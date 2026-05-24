@@ -1,0 +1,9 @@
+document: rfc-2440
+kind: security-consideration
+summary: The 10-octet random prefix prepended before CFB encryption, where octets 9 and 10 repeat octets 7 and 8, allows the receiver to immediately detect an incorrect session key. The repetition of 16 bits in 80 random bits acts as a fast integrity check without requiring full decryption.
+section: "5.7"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

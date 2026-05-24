@@ -1,0 +1,9 @@
+document: rfc-2429
+kind: design-rationale
+summary: An extra copy of the picture header (PLEN>0) is inserted into payload headers for GOB and slice packets to allow decoding even when the original Picture packet containing the picture header is lost. This provides error resilience at the cost of overhead.
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

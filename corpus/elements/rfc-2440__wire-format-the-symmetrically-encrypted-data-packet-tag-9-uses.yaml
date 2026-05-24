@@ -1,0 +1,9 @@
+document: rfc-2440
+kind: wire-format
+summary: 'The Symmetrically Encrypted Data Packet (Tag 9) uses OpenPGP CFB mode with IV of all zeros. A 10-octet prefix is encrypted first: 8 random octets, then two more octets that repeat octets 7 and 8. After encrypting these 10 octets, the CFB state is resynchronized if the block size is 8 octets or less.'
+section: "5.7"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

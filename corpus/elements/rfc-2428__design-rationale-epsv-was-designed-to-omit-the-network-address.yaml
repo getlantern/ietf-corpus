@@ -1,0 +1,10 @@
+document: rfc-2428
+kind: design-rationale
+summary: EPSV was designed to omit the network address from its response (unlike PASV) so that NATs do not need to rewrite the data portion of control-connection segments. Using EPSV means NATs only need to track the port, not translate embedded addresses.
+section: "4"
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

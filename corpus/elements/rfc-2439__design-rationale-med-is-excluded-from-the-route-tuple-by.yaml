@@ -1,0 +1,9 @@
+document: rfc-2439
+kind: design-rationale
+summary: MED is excluded from the route tuple by default because including large numbers of MED values increases per-route state significantly. When MED is included, it is used only in the tuple comparison, with a single state entry shared regardless of MED value.
+section: 4.4.3
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

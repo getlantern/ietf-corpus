@@ -1,0 +1,10 @@
+document: rfc-2440
+kind: normative-requirement
+summary: When a Symmetric-Key ESK packet's session key field is encrypted with CFB using an all-zero IV, the S2K specifier used MUST include a salt value (Salted or Iterated-Salted S2K) to ensure the derived key is not repeated when the passphrase is reused.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

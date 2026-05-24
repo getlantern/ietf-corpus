@@ -1,0 +1,8 @@
+document: rfc-2440
+kind: wire-format
+summary: 'New-format packet body lengths use four encodings: one-octet for 0–191, two-octet for 192–8383 (bodyLen = ((1st - 192) << 8) + 2nd + 192), five-octet for up to 0xFFFFFFFF (first octet 0xFF then four-octet scalar), and partial body lengths (first octet 224–254, body portion = 1 << (octet & 0x1F)) for indeterminate-length streaming.'
+section: 4.2.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

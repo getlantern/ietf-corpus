@@ -1,0 +1,9 @@
+document: rfc-2440
+kind: security-consideration
+summary: 'V3 keys have three weaknesses relative to V4: (1) the Key ID is the low 64 bits of the RSA modulus, making collision construction feasible; (2) the fingerprint hashes key material but not its length, increasing collision risk; (3) V3 keys always use MD5, which has known weaknesses. V4 keys correct all three deficiencies.'
+section: 5.5.2
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

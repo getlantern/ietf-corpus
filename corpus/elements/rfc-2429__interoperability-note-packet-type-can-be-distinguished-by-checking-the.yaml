@@ -1,0 +1,9 @@
+document: rfc-2429
+kind: interoperability-note
+summary: Packet type can be distinguished by checking the P bit, first 6 bits of payload, and PLEN value. '100000' with P=1 and PLEN=0 indicates a typical Picture packet; '1xxxxx' with P=1 and PLEN=0 indicates GOB/Slice/EOS/EOSBS; P=0 indicates a Follow-on packet.
+section: "6"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
