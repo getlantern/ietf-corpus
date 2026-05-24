@@ -1,0 +1,9 @@
+document: rfc-2835
+kind: normative-requirement
+summary: To select the authoritative HARP service, a port SHALL send an InHARP_REQUEST to FF:FF:FF:FF:FF:FF first. If the port sees its own request, it is on a broadcast network and that address is authoritative. Otherwise, the port SHALL send to each remaining HRAL address; the first to reply and appearing earliest in the HRAL becomes authoritative.
+section: 5.1.1
+rfc2119_level: SHALL
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

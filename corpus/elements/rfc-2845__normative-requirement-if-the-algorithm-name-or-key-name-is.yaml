@@ -1,0 +1,10 @@
+document: rfc-2845
+kind: normative-requirement
+summary: If the algorithm name or key name is unknown, or if message digests do not match, the whole DNS message MUST be discarded. If the message is a query, a response with RCODE 9 (NOTAUTH) MUST be returned with TSIG ERROR 17 (BADKEY) or 16 (BADSIG).
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

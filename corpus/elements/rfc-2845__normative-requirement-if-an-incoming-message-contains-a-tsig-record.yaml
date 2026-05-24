@@ -1,0 +1,10 @@
+document: rfc-2845
+kind: normative-requirement
+summary: If an incoming message contains a TSIG record, it MUST be the last record in the additional section. Multiple TSIG records are not allowed. If a TSIG record is in any other position, the packet is dropped and a response with RCODE 1 (FORMERR) MUST be returned.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

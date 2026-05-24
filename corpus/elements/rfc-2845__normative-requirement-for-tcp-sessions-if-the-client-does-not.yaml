@@ -1,0 +1,11 @@
+document: rfc-2845
+kind: normative-requirement
+summary: For TCP sessions, if the client does not receive TSIG records frequently enough, it SHOULD assume the connection has been hijacked and SHOULD close the connection. Subsequent TCP messages use a running digest chaining prior digest, any unsigned messages, and current TSIG Timers.
+section: "4.4"
+rfc2119_level: SHOULD
+topics:
+    - dns
+    - security
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

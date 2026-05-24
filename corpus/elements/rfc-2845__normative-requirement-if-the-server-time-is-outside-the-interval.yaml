@@ -1,0 +1,11 @@
+document: rfc-2845
+kind: normative-requirement
+summary: If the server time is outside the interval (Time Signed ± Fudge), the server MUST respond with RCODE 9 (NOTAUTH) and TSIG ERROR 18 (BADTIME). The BADTIME response MUST be signed with the same key as the request and MUST include the server's current time in the Other Data field (6 octets, u_int48_t).
+section: 4.5.2
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

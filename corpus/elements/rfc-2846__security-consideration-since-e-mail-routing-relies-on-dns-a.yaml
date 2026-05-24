@@ -1,0 +1,11 @@
+document: rfc-2846
+kind: security-consideration
+summary: Since e-mail routing relies on DNS, a successful DNS attack (server compromise, counterfeit responses, or poisoned additional-information records) could divert messages through a compromised MTA or gateway. Clients SHOULD base mail routing only on authoritative DNS answers and SHOULD employ DNS Security mechanisms once they are more widely deployed.
+section: "7"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - email
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

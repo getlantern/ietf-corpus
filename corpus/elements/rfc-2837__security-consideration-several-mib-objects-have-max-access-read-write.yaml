@@ -1,0 +1,9 @@
+document: rfc-2837
+kind: security-consideration
+summary: Several MIB objects have MAX-ACCESS read-write (including fcFeFabricName, fcFeElementName, fcFxPortAdminMode, fcFxPortPhysAdminStatus, fcFxPortPhysRttov, fcFxPortBbCreditModel), and unauthorized SET operations in a non-secure environment can negatively affect network operations. SNMPv1 alone provides no access control even on an otherwise secure network.
+section: "4"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

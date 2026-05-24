@@ -1,0 +1,8 @@
+document: rfc-2835
+kind: design-rationale
+summary: HARP uses a two-phase protocol (registration then operational) because non-broadcast HIPPI-6400 switches require a centralized server for address resolution, while broadcast-capable switches can use direct ARP. The registration phase uses InHARP to detect broadcast capability and register with the server before entering operational mode.
+section: "5.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

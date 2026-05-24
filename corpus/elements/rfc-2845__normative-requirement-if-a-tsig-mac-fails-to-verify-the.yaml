@@ -1,0 +1,10 @@
+document: rfc-2845
+kind: normative-requirement
+summary: If a TSIG MAC fails to verify, the server MUST generate an error response with RCODE 9 (NOTAUTH) and TSIG ERROR 16 (BADSIG); this response MUST be unsigned. The server SHOULD log the error.
+section: 4.5.3
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

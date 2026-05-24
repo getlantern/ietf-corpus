@@ -1,0 +1,9 @@
+document: rfc-2845
+kind: security-consideration
+summary: TSIG only authenticates transmission between two parties sharing a secret; it does not authenticate the original source data. A compromised zone master or caching forwarder can still inject corrupt data unless full RFC2535 security checks are performed end-to-end.
+section: "6.3"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

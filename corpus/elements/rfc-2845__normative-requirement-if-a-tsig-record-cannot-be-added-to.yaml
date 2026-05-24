@@ -1,0 +1,11 @@
+document: rfc-2845
+kind: normative-requirement
+summary: If a TSIG record cannot be added to a response without truncation, the server MUST alter the response to include only the question and a TSIG record, set the TC bit, and use RCODE 0 (NOERROR). The client SHOULD retry using TCP.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2845
+kind: normative-requirement
+summary: A forwarding server that does not share the key used in the incoming TSIG MUST forward the message unchanged including the TSIG. If it does share the key, it MUST process the TSIG and, if it passes, include its own TSIG to the next destination.
+section: "4.7"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

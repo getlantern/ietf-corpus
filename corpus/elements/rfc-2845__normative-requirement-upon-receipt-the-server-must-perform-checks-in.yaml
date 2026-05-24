@@ -1,0 +1,10 @@
+document: rfc-2845
+kind: normative-requirement
+summary: 'Upon receipt, the server MUST perform checks in this order: check KEY, check TIME values, check MAC. If a server does not recognize the key, it MUST respond with RCODE 9 (NOTAUTH) and TSIG ERROR 17 (BADKEY), unsigned.'
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

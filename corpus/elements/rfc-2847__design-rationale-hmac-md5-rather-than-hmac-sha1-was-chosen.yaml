@@ -1,0 +1,9 @@
+document: rfc-2847
+kind: design-rationale
+summary: HMAC-MD5 rather than HMAC-SHA1 was chosen as the mandatory MAC for SPKM-3 because SHA-1 is approximately half the speed of MD5, and a MAC based on an encryption algorithm like cast5CBC was not selected because MD5 is 31% faster than the fastest such encryption algorithm.
+section: 2.3.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

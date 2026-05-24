@@ -1,0 +1,9 @@
+document: rfc-2847
+kind: security-consideration
+summary: The target MUST clear all primary and secondary storage (including disk) buffers containing the plaintext password and any password hash immediately after validating the user's credentials, because LIPKEY transmits the cleartext password encrypted with 128-bit cast5CBC and the main residual risk is improper password management on the server.
+section: "5.1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
