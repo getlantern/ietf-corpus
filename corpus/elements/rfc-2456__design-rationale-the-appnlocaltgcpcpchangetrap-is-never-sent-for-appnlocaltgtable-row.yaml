@@ -1,0 +1,8 @@
+document: rfc-2456
+kind: design-rationale
+summary: The appnLocalTgCpCpChangeTrap is never sent for appnLocalTgTable row creation or deletion, and is only sent when the CP-CP session state changes while the TG itself remains operational. This avoids redundant notifications when a TG goes down (which is already captured by appnLocalTgOperStateChangeTrap).
+section: "3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2451
+kind: design-rationale
+summary: CBC mode with a randomly generated IV prevents generation of identical ciphertext from packets that have identical data spanning the first block, avoiding the deterministic leakage that ECB mode would produce.
+section: "2.1"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

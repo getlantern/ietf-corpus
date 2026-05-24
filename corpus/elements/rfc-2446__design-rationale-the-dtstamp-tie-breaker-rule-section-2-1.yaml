@@ -1,0 +1,6 @@
+document: rfc-2446
+kind: design-rationale
+summary: The DTSTAMP tie-breaker rule (section 2.1.5 rule 4) was added to handle the common case where the same UID and SEQUENCE appear in multiple messages — for example, when an Organizer sends unsolicited reconfirmations without incrementing SEQUENCE. Using the latest DTSTAMP ensures the most recently generated object wins without requiring a new revision number.
+section: 2.1.5
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

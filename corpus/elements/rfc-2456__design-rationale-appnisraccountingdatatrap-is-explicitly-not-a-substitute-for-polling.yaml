@@ -1,0 +1,8 @@
+document: rfc-2456
+kind: design-rationale
+summary: appnIsrAccountingDataTrap is explicitly not a substitute for polling the ISR counts, because counter values in the notification may have wrapped during the session's lifetime. The notification provides only the final delta since the last poll, not cumulative session totals.
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

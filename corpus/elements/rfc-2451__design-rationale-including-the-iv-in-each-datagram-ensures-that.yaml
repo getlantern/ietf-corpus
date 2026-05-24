@@ -1,0 +1,9 @@
+document: rfc-2451
+kind: design-rationale
+summary: Including the IV in each datagram ensures that decryption of each received datagram can be performed even when datagrams are dropped or reordered in transit. This is why per-packet IVs are included rather than relying on chained state.
+section: "3"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
