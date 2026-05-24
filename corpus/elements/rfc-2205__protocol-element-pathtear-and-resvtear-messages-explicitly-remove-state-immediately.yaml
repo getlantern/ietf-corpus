@@ -1,0 +1,9 @@
+document: rfc-2205
+kind: protocol-element
+summary: PathTear and ResvTear messages explicitly remove state immediately without waiting for timeout. PathTear travels downstream deleting path state and all dependent reservation state; ResvTear travels upstream deleting reservation state. Both are unreliable; a lost teardown causes the downstream router to eventually time out and initiate a new teardown.
+section: "2.4"
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

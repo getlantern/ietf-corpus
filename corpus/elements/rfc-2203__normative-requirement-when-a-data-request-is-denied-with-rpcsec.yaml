@@ -1,0 +1,9 @@
+document: rfc-2203
+kind: normative-requirement
+summary: When a data request is denied with RPCSEC_GSS_CREDPROBLEM or RPCSEC_GSS_CTXPROBLEM, the client must refresh the context (destroy the old one, re-establish a new one) and retry the request. These two error codes must not appear in responses to context creation requests.
+section: 5.3.3.3
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

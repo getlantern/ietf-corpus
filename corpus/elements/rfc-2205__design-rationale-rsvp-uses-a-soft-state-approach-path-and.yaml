@@ -1,0 +1,9 @@
+document: rfc-2205
+kind: design-rationale
+summary: 'RSVP uses a ''soft state'' approach: path and reservation state is created and refreshed by periodic Path and Resv messages, and is automatically deleted when no matching refresh arrives before the cleanup timeout (K × refresh period). This supports dynamic group membership and routing changes without explicit distributed synchronization.'
+section: "2.3"
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

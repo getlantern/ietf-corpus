@@ -1,0 +1,9 @@
+document: rfc-2205
+kind: design-rationale
+summary: 'Reservations downstream of an Admission Control failure are retained rather than deleted for three reasons: the receiver may want partial-path QoS; removing them would impair RSVP''s recovery from transient route flaps; and intermittent teardown/restore cycles would degrade user experience.'
+section: "2.5"
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

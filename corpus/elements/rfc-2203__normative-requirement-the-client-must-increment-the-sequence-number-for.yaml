@@ -1,0 +1,9 @@
+document: rfc-2203
+kind: normative-requirement
+summary: The client must increment the sequence number for each retry of a request, even if the RPC transaction identifier (xid) is the same. The seq_num can start at any value below MAXSEQ and must be incremented by at least one for each successive request.
+section: 5.3.3.1
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

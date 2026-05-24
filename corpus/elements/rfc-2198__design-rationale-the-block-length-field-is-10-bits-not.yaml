@@ -1,0 +1,9 @@
+document: rfc-2198
+kind: design-rationale
+summary: The block length field is 10 bits (not the 'obvious' 8 bits) because an 8-bit field cannot encode lengths above 255 bytes, which is insufficient for encodings such as 80ms PCM or DVI. The 10-bit/14-bit split balances block-length range against timestamp-offset range.
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

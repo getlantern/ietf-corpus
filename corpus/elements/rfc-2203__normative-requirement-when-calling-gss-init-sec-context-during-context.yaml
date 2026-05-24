@@ -1,0 +1,9 @@
+document: rfc-2203
+kind: normative-requirement
+summary: When calling GSS_Init_sec_context() during context creation, replay_det_req_flag and sequence_req_flag must be turned off because ONC RPC operates over unreliable transports, servers can be multi-threaded, and RPCSEC_GSS provides its own replay protection via sequence windows.
+section: 5.2.2
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

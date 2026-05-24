@@ -1,0 +1,8 @@
+document: rfc-2203
+kind: wire-format
+summary: The context creation request call data is `struct rpc_gss_init_arg { opaque gss_token<>; }` carrying the token from GSS_Init_sec_context(), placed after the verifier in the NULLPROC call body. All creation requests carry a NULL verifier (AUTH_NONE, zero-length).
+section: 5.2.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

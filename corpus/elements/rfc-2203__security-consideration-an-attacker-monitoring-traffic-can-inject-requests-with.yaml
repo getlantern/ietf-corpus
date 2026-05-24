@@ -1,0 +1,8 @@
+document: rfc-2203
+kind: security-consideration
+summary: An attacker monitoring traffic can inject requests with sequence numbers far above the current window. These pass the seq_num range check and force the server to perform header checksum verification, potentially enabling a CPU-exhaustion denial-of-service attack. Requests within or below the window are more cheaply discarded after optional early seq_num check.
+section: 7.2.1
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2203
+kind: security-consideration
+summary: RPCSEC_GSS does not protect against message stealing (an attacker blocking or discarding messages undetected by the server). Implementing such protection would require the RPC service to maintain state, which is outside the scope of RPCSEC_GSS.
+section: "7.3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

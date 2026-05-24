@@ -1,0 +1,10 @@
+document: rfc-2205
+kind: normative-requirement
+summary: State received through interface I* must never be forwarded out the same interface; state forwarded out I* must be computed using only state that arrived on interfaces different from I*. Additionally, Resv state from outgoing interface Io should be forwarded to incoming interface Ii only if Path messages from Ii are forwarded to Io.
+section: "2.3"
+rfc2119_level: MUST NOT
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

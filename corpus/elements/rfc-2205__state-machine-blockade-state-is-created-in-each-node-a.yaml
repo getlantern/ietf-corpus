@@ -1,0 +1,9 @@
+document: rfc-2205
+kind: state-machine
+summary: Blockade state is created in each node a ResvErr message passes through when Admission Control fails. While active, blockade state causes the node to omit the offending (blockaded) flowspec from the merge computation, allowing a smaller competing reservation to be forwarded and established. This solves the second killer-reservation problem (KR-II).
+section: "2.5"
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

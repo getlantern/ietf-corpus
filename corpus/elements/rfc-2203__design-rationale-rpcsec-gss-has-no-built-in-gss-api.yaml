@@ -1,0 +1,8 @@
+document: rfc-2203
+kind: design-rationale
+summary: RPCSEC_GSS has no built-in GSS-API mechanism or QOP negotiation; it is a mechanism-independent pass-through. Negotiation of {mechanism, QOP, service} must happen within the application protocol or via an out-of-band mechanism, because RPCSEC_GSS's role is only to convey whatever the application has already negotiated.
+section: 5.2.1
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

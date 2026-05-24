@@ -1,0 +1,9 @@
+document: rfc-2203
+kind: normative-requirement
+summary: For the first context creation request, gss_proc must be RPCSEC_GSS_INIT and the handle field must be NULL (zero-length opaque). For all subsequent creation requests, gss_proc must be RPCSEC_GSS_CONTINUE_INIT and handle must equal the value returned by the server. The seq_num and service fields are undefined and must be ignored during creation.
+section: 5.2.2
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

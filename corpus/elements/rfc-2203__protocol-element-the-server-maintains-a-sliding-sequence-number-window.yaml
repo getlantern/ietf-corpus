@@ -1,0 +1,8 @@
+document: rfc-2203
+kind: protocol-element
+summary: The server maintains a sliding sequence number window of size seq_window. The server accepts requests with seq_num in the range [N - seq_window + 1, N] where N is the highest seen sequence number, plus any value above N that passes header checksum verification. Requests outside this lower bound are silently discarded.
+section: 5.3.3.1
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2203
+kind: normative-requirement
+summary: When gss_major equals GSS_S_COMPLETE in the context creation response, the response verifier flavor must be RPCSEC_GSS and the body must be GSS_GetMIC() of the seq_window value in network byte order using QOP=0 (default QOP). For all other gss_major values, a NULL verifier is used.
+section: 5.2.3.1
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

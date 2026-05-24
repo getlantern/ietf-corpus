@@ -1,0 +1,9 @@
+document: rfc-2203
+kind: normative-requirement
+summary: Duplicate requests (sequence number already seen within the window) and requests with sequence numbers below the window must be silently discarded; the server does not send an error reply so that clients can recover by retrying with a new sequence number after timeout.
+section: 5.3.3.1
+rfc2119_level: MUST NOT
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2198
+kind: security-consideration
+summary: When a portion of a redundant stream must be encrypted with a different key, a redundant copy of the last packet of that portion cannot be sent, because no subsequent packet encrypted with the correct key exists to carry it. Similar constraints arise when enabling or disabling encryption mid-stream.
+section: "6"
+topics:
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

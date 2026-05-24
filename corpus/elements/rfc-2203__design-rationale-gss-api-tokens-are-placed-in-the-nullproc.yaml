@@ -1,0 +1,8 @@
+document: rfc-2203
+kind: design-rationale
+summary: GSS-API tokens are placed in the NULLPROC call data body rather than in the RPC credential or verifier fields because RPC Version 2 restricts the credential and verifier to 400 octets each, while GSS tokens can exceed 800 octets. This 'overloading' of NULLPROC call data avoids the need to revise the RPC protocol.
+section: 5.2.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2203
+kind: wire-format
+summary: The context creation success response encodes `struct rpc_gss_init_res { opaque handle<>; unsigned int gss_major; unsigned int gss_minor; unsigned int seq_window; opaque gss_token<>; }`. The seq_window field specifies the maximum number of concurrent outstanding requests the server accepts for this context.
+section: 5.2.3.1
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

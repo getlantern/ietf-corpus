@@ -1,0 +1,9 @@
+document: rfc-2203
+kind: normative-requirement
+summary: In the data exchange phase, the RPC request verifier flavor is RPCSEC_GSS and the body is the GSS_GetMIC() checksum of the entire RPC header up to and including the credential. The same QOP used for the header checksum must also be used for integrity or privacy protection of the data body.
+section: 5.3.1
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

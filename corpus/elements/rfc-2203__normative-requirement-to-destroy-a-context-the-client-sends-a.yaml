@@ -1,0 +1,9 @@
+document: rfc-2203
+kind: normative-requirement
+summary: To destroy a context, the client sends a NULLPROC request with gss_proc=RPCSEC_GSS_DESTROY; the seq_num and header checksum in the verifier must both be valid for the server to accept the message. After exchange, both client and server must destroy the GSS-API context.
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

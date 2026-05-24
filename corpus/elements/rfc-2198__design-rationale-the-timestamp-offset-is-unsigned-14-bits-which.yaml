@@ -1,0 +1,9 @@
+document: rfc-2198
+kind: design-rationale
+summary: The timestamp offset is unsigned (14 bits), which means redundant data must always be sent after the primary and the offset is subtracted from the current timestamp to recover the redundant block's timestamp. Adding a sign bit would unacceptably halve the offset range.
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

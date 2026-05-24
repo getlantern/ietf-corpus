@@ -1,0 +1,8 @@
+document: rfc-2203
+kind: design-rationale
+summary: GSS-API replay detection (replay_det_req_flag) and sequence enforcement (sequence_req_flag) are disabled at the GSS layer because RPCSEC_GSS implements its own sliding window that deliberately tolerates out-of-order delivery and dropped requests, which are inherent in RPC over unreliable transports and multi-threaded servers.
+section: 5.2.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

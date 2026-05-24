@@ -1,0 +1,10 @@
+document: rfc-2205
+kind: design-rationale
+summary: Both SE and WF styles are included despite SE appearing to subsume WF. A WF reservation allows packet classifiers to wildcard sender address and port with minimal per-flow state; an equivalent SE reservation must explicitly enumerate every sender, resulting in considerably more classifier overhead when sender counts are large.
+section: "1.3"
+topics:
+    - qos
+    - realtime
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

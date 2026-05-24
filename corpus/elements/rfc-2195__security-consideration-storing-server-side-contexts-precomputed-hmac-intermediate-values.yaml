@@ -1,0 +1,10 @@
+document: rfc-2195
+kind: security-consideration
+summary: Storing server-side 'contexts' (precomputed HMAC intermediate values) is marginally better than storing shared secrets in cleartext, but is not sufficient to protect secrets if the server itself is compromised; servers must be protected to a level appropriate to the value of user mailboxes and identities.
+section: "4"
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

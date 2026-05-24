@@ -1,0 +1,8 @@
+document: rfc-2203
+kind: wire-format
+summary: Integrity-protected request data is `struct rpc_gss_integ_data { opaque databody_integ<>; opaque checksum<>; }`. The databody_integ field is the XDR encoding of `struct rpc_gss_data_t { unsigned int seq_num; proc_req_arg_t arg; }`. The checksum is GSS_GetMIC() of the rpc_gss_data_t octet stream (not of databody_integ), using the same QOP as the header.
+section: 5.3.2.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

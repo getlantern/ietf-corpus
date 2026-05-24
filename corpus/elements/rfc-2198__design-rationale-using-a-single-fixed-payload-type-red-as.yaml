@@ -1,0 +1,9 @@
+document: rfc-2198
+kind: design-rationale
+summary: Using a single fixed payload type ('red') as a container for multiple encodings was chosen over a header extension approach or per-combination dynamic payload types because it is flexible, extensible, and has relatively low overhead. Header extension was rejected due to 4-byte overhead, potential 3-byte padding, and a limit of one redundant encoding.
+section: "2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
