@@ -1,0 +1,9 @@
+document: rfc-2495
+kind: security-consideration
+summary: Several MIB objects have read-write or read-create access and could be misused. In particular, dsx1SendCode can cause a loopback or test pattern to be transmitted; dsx1LoopbackConfig can take an interface out of service; and dsx1LineStatusChangeTrapEnable controls trap generation. SNMPv1 community-based security is inadequate; SNMPv3 with authentication and privacy is recommended.
+section: "9"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2493
+kind: interoperability-note
+summary: If a system's time-of-day clock is adjusted (e.g., set back to correct drift), xyzTimeElapsed may transiently exceed its defined maximum of 899 seconds. Agents should return the maximum value (899) in this case rather than an error, per the ANSI T1.231 procedure of ending intervals at 15-minute wall-clock boundaries.
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

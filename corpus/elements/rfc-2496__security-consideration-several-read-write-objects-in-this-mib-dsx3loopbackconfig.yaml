@@ -1,0 +1,9 @@
+document: rfc-2496
+kind: security-consideration
+summary: Several read-write objects in this MIB (dsx3LoopbackConfig, dsx3SendCode, dsx3LineType, dsx3LineCoding, dsx3TransmitClockSource, dsx3Channelization) can disrupt normal DS3/E3 interface operation if written by unauthorized parties. SNMPv3 view-based access control (RFC 2275) should be used to restrict write access to these objects.
+section: "9"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

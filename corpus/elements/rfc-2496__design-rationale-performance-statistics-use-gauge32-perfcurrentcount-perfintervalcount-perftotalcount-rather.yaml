@@ -1,0 +1,8 @@
+document: rfc-2496
+kind: design-rationale
+summary: Performance statistics use Gauge32 (PerfCurrentCount/PerfIntervalCount/PerfTotalCount) rather than Counter32 because these values can decrease. Specifically, UAS counts can retroactively adjust when unavailable-second boundaries cross a 15-minute interval window.
+section: 2.4.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,11 @@
+document: rfc-2487
+kind: security-consideration
+summary: A man-in-the-middle attack can be launched by deleting the '250 STARTTLS' response from the server, causing the client to skip TLS. Clients can protect against this by recording that a server offered TLS in a prior session and alarming if it disappears; lack of TLS SHOULD NOT cause email to bounce.
+section: "7"
+topics:
+    - email
+    - tls
+    - security
+    - censorship
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

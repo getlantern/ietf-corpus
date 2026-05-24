@@ -1,0 +1,10 @@
+document: rfc-2491
+kind: normative-requirement
+summary: On receive, multicast-encapsulated packets SHALL have their pkt$cmi field compared to the local CMI; if they match the packet SHALL be silently dropped (loop prevention). The driver SHALL NOT attempt to filter out multicast packets arriving with unicast encapsulation or vice versa.
+section: "4.5"
+rfc2119_level: SHALL
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

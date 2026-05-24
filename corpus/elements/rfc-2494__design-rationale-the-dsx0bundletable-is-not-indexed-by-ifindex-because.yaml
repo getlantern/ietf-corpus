@@ -1,0 +1,8 @@
+document: rfc-2494
+kind: design-rationale
+summary: The dsx0BundleTable is not indexed by ifIndex because the manager must choose the index for row creation while the agent must be free to select ifIndex values independently. This separation of concerns necessitates dsx0BundleIndex as a distinct manager-chosen key.
+section: 5.1.1
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

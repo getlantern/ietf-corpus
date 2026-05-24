@@ -1,0 +1,10 @@
+document: rfc-2491
+kind: design-rationale
+summary: Flow detection is restricted to IPv6 packets with FlowID of zero because non-zero FlowIDs indicate that the source has already set up explicit QoS or traffic-class state; triggering shortcuts on such flows could interfere with that existing mapping. The rationale is discussed in Appendix C.
+section: 3.2.1
+topics:
+    - ip
+    - v6ops
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

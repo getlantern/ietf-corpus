@@ -1,0 +1,8 @@
+document: rfc-2495
+kind: design-rationale
+summary: Performance statistics objects use PerfCurrentCount, PerfIntervalCount, and PerfTotalCount (all Gauge32 rather than Counter32) because these values can decrease — specifically when Unavailable Seconds occur across a 15-minute interval boundary, requiring retroactive adjustment.
+section: 2.4.3
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2496
+kind: design-rationale
+summary: To achieve strict ANSI T1.231 compliance, one-second statistics must pass through a 10-second delay line before updating counters. The agent reads CV counters and alarm flags each second, accumulates into a delay line, and updates interval statistics using data shifted out of the delay line from the previous cycle.
+section: 2.4.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
