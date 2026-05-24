@@ -1,0 +1,12 @@
+document: rfc-2508
+kind: normative-requirement
+summary: Fragmented IP packets that are not initial fragments, and packets too short to contain a complete UDP header, MUST NOT be sent as FULL_HEADER packets. Additionally, packets that do not contain at least 12 bytes of UDP data MUST NOT be used to establish RTP context, and if sent as FULL_HEADER, MUST NOT be followed by COMPRESSED_RTP packets.
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - rtp
+    - realtime
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

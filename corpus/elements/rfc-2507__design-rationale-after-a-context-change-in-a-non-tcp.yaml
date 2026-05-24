@@ -1,0 +1,8 @@
+document: rfc-2507
+kind: design-rationale
+summary: After a context change in a non-TCP stream, full headers are sent with an exponentially increasing interval (F_PERIOD starts at 1, doubles each time, up to F_MAX_PERIOD=256). The default F_MAX_PERIOD of 256 means full headers contribute less than 1.4 bits to the average header size at steady state, a negligible overhead.
+section: 3.3.1
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,11 @@
+document: rfc-2508
+kind: wire-format
+summary: 'The FULL_HEADER packet carries the CID and 4-bit sequence number by overwriting the IP and UDP length fields (which are redundant with the link-layer length). For 8-bit CID: first length field holds a 0 bit, a 1 bit, a 4-bit generation, and the 8-bit CID; second length field holds the 4-bit sequence number. For 16-bit CID: first length field holds a 1 bit, a 1 bit, generation, and sequence; second length field holds the full 16-bit CID.'
+section: 3.3.1
+topics:
+    - rtp
+    - realtime
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

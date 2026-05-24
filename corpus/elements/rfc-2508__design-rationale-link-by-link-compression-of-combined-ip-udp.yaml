@@ -1,0 +1,11 @@
+document: rfc-2508
+kind: design-rationale
+summary: Link-by-link compression of combined IP/UDP/RTP headers (40 bytes) is preferred over end-to-end RTP-only compression (12 bytes) because the resulting compressed size is approximately the same (2–4 bytes) in either case, while the link-by-link approach also benefits from lower delay and loss rate on the local link.
+section: "1"
+topics:
+    - ip
+    - udp
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

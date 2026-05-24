@@ -1,0 +1,10 @@
+document: rfc-2508
+kind: interoperability-note
+summary: RTCP compression of headers and data is not defined; however, IP and UDP header compression SHOULD still be applied to RTCP packets using the COMPRESSED_UDP packet type. With RTCP occupying at most 5% of session bandwidth, even uncompressed RTCP content remains below 7% of compressed link bandwidth for RTP payloads as small as 37 bytes.
+section: "3.4"
+topics:
+    - rtp
+    - realtime
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

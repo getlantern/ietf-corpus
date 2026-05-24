@@ -1,0 +1,8 @@
+document: rfc-2507
+kind: design-rationale
+summary: The Fragment Header Identification field is classified as RANDOM rather than NOCHANGE to avoid triggering a compression slow-start for every new original IP packet. Fragment streams are identified by source and destination address alone, not the Identification field.
+section: "7.6"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

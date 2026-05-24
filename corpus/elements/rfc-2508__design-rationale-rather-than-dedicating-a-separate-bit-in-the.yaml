@@ -1,0 +1,9 @@
+document: rfc-2508
+kind: design-rationale
+summary: Rather than dedicating a separate bit in the COMPRESSED_RTP mask for CSRC list changes (L bit), the special combination MSTI=1111 (all four of IPv4 ID, RTP marker, RTP sequence, and RTP timestamp bits set simultaneously) signals an extended header form containing the real M/S/T/I values plus CC count and CSRC list, conserving bits in the common case.
+section: 3.3.2
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

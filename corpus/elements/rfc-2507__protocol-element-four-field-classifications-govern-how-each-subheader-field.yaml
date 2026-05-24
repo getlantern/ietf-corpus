@@ -1,0 +1,10 @@
+document: rfc-2507
+kind: protocol-element
+summary: 'Four field classifications govern how each subheader field is treated during compression: NOCHANGE (constant; any change forces a full header), DELTA (predictably changing; encoded as difference from previous value; TCP streams only), RANDOM (unpredictable; sent as-is in every compressed header), and INFERRED (derivable from link-layer frame size or other fields; omitted entirely).'
+section: "7"
+topics:
+    - ip
+    - tcp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

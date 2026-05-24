@@ -1,0 +1,9 @@
+document: rfc-2508
+kind: wire-format
+summary: 'Delta fields use a variable-length encoding: values 0–127 are one byte; values with most-significant two bits 10 are a 14-bit value encoded in two bytes; values with MSBs 11 are a 22-bit value in three bytes. Negative deltas reuse otherwise redundant portions of the positive range. Values outside the range –16384 to 4194303 force an uncompressed header.'
+section: 3.3.4
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

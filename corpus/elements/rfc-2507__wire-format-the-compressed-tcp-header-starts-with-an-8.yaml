@@ -1,0 +1,9 @@
+document: rfc-2507
+kind: wire-format
+summary: 'The COMPRESSED_TCP header starts with an 8-bit CID, then an 8-bit flag octet (R O I P S A W U), then a 16-bit TCP checksum, followed in order by: RANDOM fields implied by context, optional R-octet (if R=1), Urgent Pointer absolute value (if U=1), Window Delta (if W=1), Acknowledgment Number Delta (if A=1), Sequence Number Delta (if S=1), IPv4 Identification Delta (if I=1), and full Options/Padding (if O=1).'
+section: "6"
+topics:
+    - ip
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

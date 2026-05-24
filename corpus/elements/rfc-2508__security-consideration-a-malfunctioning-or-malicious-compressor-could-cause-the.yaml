@@ -1,0 +1,10 @@
+document: rfc-2508
+kind: security-consideration
+summary: A malfunctioning or malicious compressor could cause the decompressor to reconstruct packets with valid IP/UDP/RTP headers and possibly valid UDP checksums that do not match the original packets. End-to-end authentication and integrity mechanisms are unaffected by the compression and can detect such corruption.
+section: "8"
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

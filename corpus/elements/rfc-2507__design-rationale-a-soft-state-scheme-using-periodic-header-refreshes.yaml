@@ -1,0 +1,8 @@
+document: rfc-2507
+kind: design-rationale
+summary: A soft-state scheme using periodic header refreshes with exponential backoff (compression slow-start) is chosen over a hard-state scheme requiring acknowledgment of full headers. The soft-state approach needs no handshake, works over simplex links (satellite, cable TV), and handles mobiles going out of range transparently, at the cost of slightly higher bandwidth for header refreshes.
+section: 3.3.4
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

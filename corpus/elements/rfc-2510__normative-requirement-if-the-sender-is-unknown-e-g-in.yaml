@@ -1,0 +1,10 @@
+document: rfc-2510
+kind: normative-requirement
+summary: If the sender is unknown (e.g., in an initialization request where the end entity does not yet know its DN), the sender field MUST contain a NULL value (zero-length SEQUENCE OF RDNs), and the senderKID field MUST hold an identifier pointing to the shared secret to be used for verification.
+section: 3.1.1
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

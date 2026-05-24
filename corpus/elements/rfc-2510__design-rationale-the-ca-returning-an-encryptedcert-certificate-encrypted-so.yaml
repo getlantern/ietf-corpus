@@ -1,0 +1,10 @@
+document: rfc-2510
+kind: design-rationale
+summary: The CA returning an EncryptedCert (certificate encrypted so only the intended recipient can decrypt it) allows a CA to issue a certificate before POP is complete; if POP subsequently fails, the CA need not revoke the certificate because the certificate is unusable without proof of the private key.
+section: 3.3.4
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

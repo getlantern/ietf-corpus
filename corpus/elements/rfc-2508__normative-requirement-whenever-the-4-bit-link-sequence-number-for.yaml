@@ -1,0 +1,10 @@
+document: rfc-2508
+kind: normative-requirement
+summary: Whenever the 4-bit link sequence number for a context increments by other than 1 (except when set by FULL_HEADER or COMPRESSED_NON_TCP), the decompressor MUST invalidate that context and send a CONTEXT_STATE packet. All packets for that context MUST be discarded until a FULL_HEADER or COMPRESSED_NON_TCP packet re-establishes state.
+section: 3.3.5
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

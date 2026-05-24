@@ -1,0 +1,10 @@
+document: rfc-2507
+kind: design-rationale
+summary: The R-octet carrying ECN bits (bits 6–7 of TOS/Traffic Class) and the TCP Reserved field MUST NOT update the context because if it did, the TCP checksum would no longer reliably catch erroneously decompressed headers. ECN bits are expected to change frequently due to Explicit Congestion Notification.
+section: "6"
+topics:
+    - ip
+    - tcp
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

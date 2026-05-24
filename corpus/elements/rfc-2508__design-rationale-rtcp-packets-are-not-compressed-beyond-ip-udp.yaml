@@ -1,0 +1,9 @@
+document: rfc-2508
+kind: design-rationale
+summary: RTCP packets are not compressed (beyond IP/UDP headers) because RTCP bandwidth is already limited to 5% of session bandwidth, compressing SDES items would require significantly more shared state per context, and maintaining per-SSRC RTCP contexts in large sessions would thrash the context cache.
+section: "3.4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

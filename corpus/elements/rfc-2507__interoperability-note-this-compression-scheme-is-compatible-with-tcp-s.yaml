@@ -1,0 +1,9 @@
+document: rfc-2507
+kind: interoperability-note
+summary: 'This compression scheme is compatible with TCP''s repair mechanisms: the compressor inspects TCP headers to detect retransmissions and sends a full header on retransmit, assuming the retransmission was caused by mismatched compression state. The compression method does not require that all packets in the same stream traverse the compressed link.'
+section: "3.2"
+topics:
+    - ip
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2507
+kind: normative-requirement
+summary: A decompressor SHOULD NOT send a CONTEXT_STATE packet every time a compressed packet refers to an invalid context; instead it should rate-limit such transmissions. Multiple invalid CIDs SHOULD be batched into a single CONTEXT_STATE packet rather than sending separate packets.
+section: "10.2"
+rfc2119_level: SHOULD NOT
+topics:
+    - ip
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

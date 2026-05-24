@@ -1,0 +1,10 @@
+document: rfc-2510
+kind: wire-format
+summary: OOBCert is a self-signed Certificate whose subject and issuer MUST be identical; if the subject is NULL, both subjectAltNames and issuerAltNames MUST be present and equal. OOBCertHash ::= SEQUENCE { hashAlg [0] AlgorithmIdentifier OPTIONAL, certId [1] CertId OPTIONAL, hashVal BIT STRING } conveys a hash of the self-signed certificate for out-of-band root CA key distribution.
+section: 3.2.5
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

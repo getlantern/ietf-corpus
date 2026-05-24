@@ -1,0 +1,9 @@
+document: rfc-2511
+kind: design-rationale
+summary: The POPOSigningKey structure ensures the public key does not appear redundantly in both poposkInput and CertTemplate by requiring poposkInput to be omitted when CertTemplate already carries subject and publicKey, and requiring it to be present and signed otherwise.
+section: "4.4"
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

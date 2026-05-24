@@ -1,0 +1,9 @@
+document: rfc-2508
+kind: interoperability-note
+summary: For segmentation schemes used alongside header compression, large packets that are segmented should bypass the compressor/decompressor to avoid disrupting the packet sequencing. The context ID byte is placed first in the COMPRESSED_RTP header so it MAY be shared with the segmentation layer if negotiated.
+section: "4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

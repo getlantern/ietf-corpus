@@ -1,0 +1,12 @@
+document: rfc-2509
+kind: security-consideration
+summary: IP-layer encryption (e.g., IPsec) precludes header compression of the encrypted headers, but compression of the outer IP header and authentication/security headers remains possible. For RTP, full header compression is possible if only the RTP payload is encrypted without encrypting UDP or RTP headers.
+section: "6"
+topics:
+    - security
+    - ipsec
+    - ip
+    - rtp
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

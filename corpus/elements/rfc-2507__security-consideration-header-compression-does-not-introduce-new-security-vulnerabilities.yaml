@@ -1,0 +1,10 @@
+document: rfc-2507
+kind: security-consideration
+summary: Header compression does not introduce new security vulnerabilities. The Authentication Header's Authentication Data field is classified as RANDOM and transmitted as-is in every compressed header, preserving its integrity guarantee. The ESP header ends the compressible chain because subsequent data is encrypted, ensuring confidentiality is not weakened.
+section: "17"
+topics:
+    - security
+    - ip
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

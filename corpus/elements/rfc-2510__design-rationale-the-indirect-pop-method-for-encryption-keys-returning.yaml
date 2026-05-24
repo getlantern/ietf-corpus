@@ -1,0 +1,10 @@
+document: rfc-2510
+kind: design-rationale
+summary: The indirect POP method for encryption keys — returning the certificate encrypted under a randomly generated symmetric key, which is itself encrypted under the requested public key, with confirmation via MAC over a key derived from that symmetric key — is encouraged because it requires no extra round trips beyond the standard {request, response, confirmation} triple.
+section: 2.3.2
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

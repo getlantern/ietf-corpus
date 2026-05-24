@@ -1,0 +1,10 @@
+document: rfc-2507
+kind: protocol-element
+summary: 'Five packet types are defined: FULL_HEADER (uncompressed header with CID and, for non-TCP, a generation), COMPRESSED_TCP (differential-encoded TCP header with a flag octet), COMPRESSED_NON_TCP (compressed non-TCP header with CID and generation), COMPRESSED_TCP_NODELTA (full TCP field values without differential encoding, sent only in response to header requests), and CONTEXT_STATE (sent from decompressor to compressor to signal lost synchronization on listed TCP CIDs).'
+section: "3.1"
+topics:
+    - ip
+    - tcp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

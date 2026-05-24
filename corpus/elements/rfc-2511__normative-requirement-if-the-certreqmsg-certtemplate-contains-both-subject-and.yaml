@@ -1,0 +1,10 @@
+document: rfc-2511
+kind: normative-requirement
+summary: If the CertReqMsg CertTemplate contains both subject and publicKey values, then poposkInput MUST be omitted and the POPOSigningKey signature MUST be computed on the DER-encoded value of CertReqMsg certReq. Conversely, if the CertTemplate does not contain publicKey and subject, then poposkInput MUST be present and MUST be signed.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

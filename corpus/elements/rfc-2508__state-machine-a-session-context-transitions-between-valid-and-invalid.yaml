@@ -1,0 +1,9 @@
+document: rfc-2508
+kind: state-machine
+summary: A session context transitions between VALID and INVALID states. A context becomes INVALID when the decompressor observes the 4-bit link sequence number increment by other than 1. It returns to VALID when a FULL_HEADER or COMPRESSED_NON_TCP packet is received for that context. An advisory (non-invalidating) CONTEXT_STATE may also be sent after a link error indication with the I bit set to 0.
+section: 3.3.5
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

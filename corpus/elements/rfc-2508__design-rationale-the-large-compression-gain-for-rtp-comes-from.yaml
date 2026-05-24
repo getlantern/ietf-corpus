@@ -1,0 +1,9 @@
+document: rfc-2508
+kind: design-rationale
+summary: The large compression gain for RTP comes from the observation that although several header fields change each packet, the first-order difference is often constant, making the second-order difference zero. By maintaining both the uncompressed header and the first-order differences in shared session state, only an indication that the second-order difference is zero must be communicated, allowing full header reconstruction with no information loss.
+section: "3.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

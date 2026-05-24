@@ -1,0 +1,10 @@
+document: rfc-2507
+kind: normative-requirement
+summary: When a decompressor receives a compressed TCP header whose CID has not been initialized by a full header, the packet MUST be discarded. For non-TCP packets whose CID context has a different generation than the packet carries, the packet must either be discarded immediately or stored temporarily until a matching full header arrives.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - ip
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

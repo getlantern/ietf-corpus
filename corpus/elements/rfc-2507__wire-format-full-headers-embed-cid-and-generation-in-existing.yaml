@@ -1,0 +1,8 @@
+document: rfc-2507
+kind: wire-format
+summary: Full headers embed CID and generation in existing length fields to avoid increasing packet size. The generation occupies the high-order octet of the first available length field; an 8-bit CID occupies the low-order octet of that same field; a 16-bit CID additionally uses the second available length field.
+section: "5.3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

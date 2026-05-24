@@ -1,0 +1,11 @@
+document: rfc-2508
+kind: wire-format
+summary: 'The COMPRESSED_RTP header begins with an optional MSB byte for 16-bit CID, then the LSB of CID, then one byte containing M|S|T|I bits and a 4-bit link sequence number. Conditionally following are: 16-bit UDP checksum (if nonzero in context), RANDOM fields (absolute IPv4 IDs for encapsulating headers), optional extended MSTI byte with CC count (if MSTI=1111), delta IPv4 ID, delta RTP sequence, delta RTP timestamp, CSRC list, RTP header extension, RTP data, and padding.'
+section: 3.3.2
+topics:
+    - rtp
+    - realtime
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
