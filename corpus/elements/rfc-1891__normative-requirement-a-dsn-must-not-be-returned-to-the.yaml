@@ -1,0 +1,10 @@
+document: rfc-1891
+kind: normative-requirement
+summary: A DSN MUST NOT be returned to the sender for any message whose SMTP MAIL command reverse-path was NULL ('<>'). However, the MTA SHOULD inform the local postmaster of delivery failures through a mechanism that will not itself generate DSNs.
+section: "6.2"
+rfc2119_level: MUST NOT
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

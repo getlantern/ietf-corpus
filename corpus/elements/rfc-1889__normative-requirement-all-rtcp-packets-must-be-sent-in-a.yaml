@@ -1,0 +1,10 @@
+document: rfc-1889
+kind: normative-requirement
+summary: All RTCP packets must be sent in a compound packet of at least two individual packets. The first RTCP packet in the compound must always be a report packet (SR or RR) to facilitate header validation—even when no data has been sent or received, in which case an empty RR is sent.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

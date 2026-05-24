@@ -1,0 +1,9 @@
+document: rfc-1891
+kind: design-rationale
+summary: DSN stability (goal 2(c)) is achieved by requiring DSNs be sent with null reverse-path combined with the rule that no DSN is issued for messages with null reverse-path. This prevents DSN storms where a failed DSN delivery attempt could recursively trigger another DSN.
+section: "2"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-1889
+kind: wire-format
+summary: 'The RTP fixed header occupies 12 octets minimum: V(2 bits)=2, P(1 bit), X(1 bit), CC(4 bits), M(1 bit), PT(7 bits), sequence number(16 bits), timestamp(32 bits), SSRC(32 bits), followed by 0–15 CSRC identifiers of 32 bits each. The first twelve octets are present in every RTP packet; the CSRC list is present only when inserted by a mixer.'
+section: "5.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

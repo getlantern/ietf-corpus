@@ -1,0 +1,9 @@
+document: rfc-1889
+kind: design-rationale
+summary: Profile-specific sender/receiver report extensions are preferred over new RTCP packet types because extensions require fewer octets (no extra RTCP header or SSRC field) and allow faster parsing since applications always expect the extension at a fixed location after reception report blocks.
+section: 6.3.3
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

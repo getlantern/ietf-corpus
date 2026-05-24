@@ -1,0 +1,9 @@
+document: rfc-1891
+kind: normative-requirement
+summary: When gatewaying into a foreign environment, if NOTIFY=NEVER was specified a DSN MUST NOT be issued. If the foreign environment cannot confirm successful delivery and NOTIFY=SUCCESS was requested, the MTA SHOULD issue a 'relayed' DSN. RET parameter conditions are nonbinding but the MTA SHOULD attempt to honor them.
+section: 6.2.4
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

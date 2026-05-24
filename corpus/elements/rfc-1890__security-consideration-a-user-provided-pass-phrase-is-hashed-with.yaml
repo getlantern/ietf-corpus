@@ -1,0 +1,10 @@
+document: rfc-1890
+kind: security-consideration
+summary: A user-provided pass phrase is hashed with MD5 to a 16-octet digest; an n-bit encryption key is extracted from the first n bits of the digest. For multi-key schemes totaling ≤128 bits (e.g., triple DES), keys are extracted in order from that digest.
+section: "2"
+topics:
+    - security
+    - crypto
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

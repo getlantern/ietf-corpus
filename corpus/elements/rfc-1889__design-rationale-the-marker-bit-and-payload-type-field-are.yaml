@@ -1,0 +1,9 @@
+document: rfc-1889
+kind: design-rationale
+summary: The marker bit and payload type field are placed in the RTP fixed header rather than a profile extension because most applications need them and would otherwise require an extra 32-bit word. Profiles may redefine the octet but any marker bit should remain in the most significant position so profile-independent monitors can observe packet-loss correlation.
+section: "5.3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

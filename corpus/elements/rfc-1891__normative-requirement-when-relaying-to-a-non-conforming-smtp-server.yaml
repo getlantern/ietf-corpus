@@ -1,0 +1,9 @@
+document: rfc-1891
+kind: normative-requirement
+summary: When relaying to a non-conforming SMTP server, DSN parameters MUST NOT be issued. If NOTIFY=SUCCESS was specified and the server accepts the RCPT (2xx), the client MUST issue a 'relayed' DSN. If NOTIFY=FAILURE and the server returns 5xx, the client MUST issue a 'failed' DSN. If NOTIFY=NEVER, the client MUST NOT issue a DSN.
+section: 6.2.2
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

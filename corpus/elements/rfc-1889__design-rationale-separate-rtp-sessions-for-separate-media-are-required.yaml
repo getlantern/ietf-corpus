@@ -1,0 +1,9 @@
+document: rfc-1889
+kind: design-rationale
+summary: Separate RTP sessions for separate media are required because interleaving media by payload type would require different timing and sequence number spaces per SSRC, would prevent RTCP from describing both streams, would prevent mixers from combining incompatible streams, and would preclude selective reception or per-medium path allocation.
+section: "5.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

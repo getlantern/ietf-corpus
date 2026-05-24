@@ -1,0 +1,9 @@
+document: rfc-1890
+kind: design-rationale
+summary: Video timestamp clock rate of 90 kHz was chosen because it yields exact integer timestamp increments for 24, 25, 29.97, and 30 Hz frame rates and 50, 59.94, 60 Hz field rates. Using the video frame rate directly (15–30 Hz) is insufficient for synchronization accuracy in RTCP SR/RR jitter estimates.
+section: "6"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

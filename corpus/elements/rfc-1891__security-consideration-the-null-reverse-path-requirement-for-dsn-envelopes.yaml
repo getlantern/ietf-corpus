@@ -1,0 +1,9 @@
+document: rfc-1891
+kind: security-consideration
+summary: The null reverse-path requirement for DSN envelopes, combined with the prohibition on issuing DSNs for messages with null return addresses, is the primary mechanism preventing notification loops. MTAs that would silently lose messages when both the recipient address and return address are non-functional should notify the local postmaster instead.
+section: "6.2"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

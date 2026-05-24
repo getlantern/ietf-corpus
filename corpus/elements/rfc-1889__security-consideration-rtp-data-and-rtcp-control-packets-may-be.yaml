@@ -1,0 +1,11 @@
+document: rfc-1889
+kind: security-consideration
+summary: RTP data and RTCP control packets may be encrypted for confidentiality; the encryption algorithm and key distribution are handled by non-RTP means. When an RTCP compound packet is encrypted, a random 32-bit prefix is prepended and the entire compound packet is encrypted as a whole.
+section: "9.1"
+topics:
+    - rtp
+    - security
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

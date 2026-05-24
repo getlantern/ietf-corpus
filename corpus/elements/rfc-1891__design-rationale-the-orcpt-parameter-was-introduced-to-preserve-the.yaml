@@ -1,0 +1,8 @@
+document: rfc-1891
+kind: design-rationale
+summary: The ORCPT parameter was introduced to preserve the sender-visible original recipient address separately from the RCPT TO address used for actual delivery. Without it, forwarding, aliasing, or gatewaying would lose the identity of the original intended recipient in any DSN returned to the sender.
+section: "4"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-1891
+kind: normative-requirement
+summary: On delivery failure, if NOTIFY=FAILURE was specified the MTA MUST issue a 'failed' DSN. If NOTIFY was supplied without FAILURE, a DSN MUST NOT be issued. If no NOTIFY was supplied, a 'failed' DSN MUST be issued. Forwarding to a dead-letter mailbox is still delivery failure; the DSN Action MUST be 'failed'.
+section: 6.2.6
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

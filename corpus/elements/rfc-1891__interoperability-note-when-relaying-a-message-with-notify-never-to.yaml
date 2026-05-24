@@ -1,0 +1,8 @@
+document: rfc-1891
+kind: interoperability-note
+summary: When relaying a message with NOTIFY=NEVER to a non-conforming SMTP server, a conforming client MAY send that recipient's message in a separate SMTP transaction with an empty reverse-path ('<>'). This prevents legacy RFC 821 MTAs from issuing unsolicited DSNs for those recipients.
+section: 6.2.2
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

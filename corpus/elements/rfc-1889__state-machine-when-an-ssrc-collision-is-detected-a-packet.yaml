@@ -1,0 +1,9 @@
+document: rfc-1889
+kind: state-machine
+summary: 'When an SSRC collision is detected (a packet arrives from a different transport address using the receiver''s own SSRC), the affected participant sends an RTCP BYE for the old SSRC and selects a new SSRC. The same mechanism detects forwarding loops: a source receiving its own packets from an unexpected address treats this as a collision and rebinds.'
+section: "8.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

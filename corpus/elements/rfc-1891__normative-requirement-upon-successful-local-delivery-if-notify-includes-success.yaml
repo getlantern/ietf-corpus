@@ -1,0 +1,9 @@
+document: rfc-1891
+kind: normative-requirement
+summary: Upon successful local delivery, if NOTIFY includes SUCCESS the MTA MUST issue a 'delivered' DSN; if NOTIFY was supplied without SUCCESS the MTA MUST NOT issue a DSN; if NOTIFY was absent the MTA MUST NOT issue a DSN. 'Delivery' for IMAP/POP occurs when the message is made available to the access service, not when retrieved.
+section: 6.2.3
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
