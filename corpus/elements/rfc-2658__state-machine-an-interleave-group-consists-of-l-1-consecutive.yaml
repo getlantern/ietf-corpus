@@ -1,0 +1,9 @@
+document: rfc-2658
+kind: state-machine
+summary: An interleave group consists of L+1 consecutive RTP packets (sequence numbers S-N through S-N+L) all sharing the same bundling value. The receiver determines the expected bundling value from the first received packet of the group; on mismatch, the receiver MAY trim/pad or discard the entire group and play silence.
+section: "3.5"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

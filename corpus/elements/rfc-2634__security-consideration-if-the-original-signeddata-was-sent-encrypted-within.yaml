@@ -1,0 +1,10 @@
+document: rfc-2634
+kind: security-consideration
+summary: If the original signedData was sent encrypted within an envelopedData and the ESS signed receipt is returned unencrypted, the message digest value of the original encrypted content is exposed in plaintext. Implementors should consider encrypting the signed receipt in this case to avoid leaking the digest value.
+section: "2.4"
+topics:
+    - email
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

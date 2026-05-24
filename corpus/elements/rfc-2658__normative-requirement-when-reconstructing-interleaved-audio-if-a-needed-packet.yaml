@@ -1,0 +1,10 @@
+document: rfc-2658
+kind: normative-requirement
+summary: When reconstructing interleaved audio, if a needed packet arrives before the next frame from it is required, receivers SHOULD use the newly arrived packet's frame rather than substituting an erasure — i.e., late arrivals within the interleave window SHOULD still be consumed.
+section: 3.6.1
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

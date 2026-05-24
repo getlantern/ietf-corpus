@@ -1,0 +1,9 @@
+document: rfc-2653
+kind: normative-requirement
+summary: After responding with a response code, the receiver-CIP MUST prepare to read another request message, resetting state to the point when the sender-CIP has just verified the CIP version. If the sender-CIP closes the connection, the receiver-CIP MUST abort reading and prepare for a new sender-CIP connection.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2658
+kind: design-rationale
+summary: Interleaving is desirable because the Qcelp CODEC interpolates missing audio via erasure frames, but quality degrades when erasure frames are consecutive. Interleaving spreads the impact of dropped packets across non-consecutive frames, improving perceived audio quality at the cost of increased end-to-end delay.
+section: "5"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

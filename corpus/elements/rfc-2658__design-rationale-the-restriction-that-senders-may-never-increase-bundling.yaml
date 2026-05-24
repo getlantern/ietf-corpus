@@ -1,0 +1,9 @@
+document: rfc-2658
+kind: design-rationale
+summary: The restriction that senders may never increase bundling or interleave values (only decrease them) guarantees that a receiver can allocate a fixed, sufficient buffer after the first packet, preventing situations where the receiver needs more buffer space mid-session (possibly unavailable) or must pause playback.
+section: "5"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

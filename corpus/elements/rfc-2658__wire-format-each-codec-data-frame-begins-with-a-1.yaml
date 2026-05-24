@@ -1,0 +1,9 @@
+document: rfc-2658
+kind: wire-format
+summary: 'Each CODEC data frame begins with a 1-octet rate indicator (octet 0): value 0=Blank (1 octet total), 1=Rate 1/8 (4 octets), 2=Rate 1/4 (8 octets), 3=Rate 1/2 (17 octets), 4=Rate 1 (35 octets), 14=Erasure (1 octet, SHOULD NOT be sent). Bits from the IS-733 standard are packed MSB-first into subsequent octets, with unused trailing bits set to zero.'
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

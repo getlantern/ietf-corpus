@@ -1,0 +1,8 @@
+document: rfc-2645
+kind: state-machine
+summary: 'ODMR has three states: Initial (EHLO, AUTH, QUIT valid), Authenticated (ATRN, QUIT valid), and Reversed (roles swap; provider becomes SMTP client, customer becomes server). Transitions: AUTH success → Authenticated; ATRN success → Reversed; QUIT → Termination from any state.'
+section: "5"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

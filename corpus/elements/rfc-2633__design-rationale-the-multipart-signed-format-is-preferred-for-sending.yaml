@@ -1,0 +1,9 @@
+document: rfc-2633
+kind: design-rationale
+summary: The multipart/signed format is preferred for sending because recipients without S/MIME software can still view the message content, whereas the application/pkcs7-mime SignedData format is opaque to non-S/MIME recipients but is reliably verifiable if unmodified in transit.
+section: 3.4.1
+topics:
+    - email
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

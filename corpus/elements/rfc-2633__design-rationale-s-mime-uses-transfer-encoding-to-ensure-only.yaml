@@ -1,0 +1,8 @@
+document: rfc-2633
+kind: design-rationale
+summary: S/MIME uses transfer encoding to ensure only 7-bit MIME entities are secured, even for enveloped data not exposed to transport, so that a trusted gateway can strip the envelope and forward the signed inner message to recipients in non-8-bit-clean environments without invalidating the signature.
+section: 3.1.2
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

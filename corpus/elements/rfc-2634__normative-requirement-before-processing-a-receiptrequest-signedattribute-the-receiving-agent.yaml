@@ -1,0 +1,10 @@
+document: rfc-2634
+kind: normative-requirement
+summary: Before processing a receiptRequest signedAttribute, the receiving agent MUST verify the signature of the covering SignerInfo. A recipient MUST NOT process a receiptRequest attribute that has not been verified. If verified ReceiptRequest attributes in a SignedData are not identical, the agent MUST NOT return any signed receipt.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

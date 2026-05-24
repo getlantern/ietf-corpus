@@ -1,0 +1,10 @@
+document: rfc-2658
+kind: normative-requirement
+summary: Receivers MUST handle bundles of up to 10 CODEC data frames in a single RTP packet. Senders MUST NOT bundle more frames than fit in the MTU (computed assuming Rate 1 size for all frames) and MUST NOT bundle more than 10 frames.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

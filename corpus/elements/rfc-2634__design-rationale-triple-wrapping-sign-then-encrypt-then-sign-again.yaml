@@ -1,0 +1,10 @@
+document: rfc-2634
+kind: design-rationale
+summary: Triple wrapping (sign, then encrypt, then sign again) is used when a message must have signed attributes bound to an encrypted body. The inner signature provides content integrity and non-repudiation; the outer signature provides hop-by-hop authentication for intermediate entities such as mail list agents without exposing the inner content.
+section: 1.1.1
+topics:
+    - email
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

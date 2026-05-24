@@ -1,0 +1,9 @@
+document: rfc-2634
+kind: state-machine
+summary: 'Receipt processing follows a decision tree: check for mlReceiptPolicy (none → MUST NOT create; insteadOf/inAdditionTo → examine receiptsFrom); then check allOrFirstTier (allReceipts → SHOULD create; firstTierRecipients → MUST NOT create if mlExpansionHistory present); then check receiptList membership (present → SHOULD create; absent → MUST NOT create).'
+section: "2.3"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

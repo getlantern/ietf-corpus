@@ -1,0 +1,11 @@
+document: rfc-2634
+kind: normative-requirement
+summary: Before creating a signedData/Receipt, the signature of the original signedData signerInfo that includes the receiptRequest attribute MUST be successfully verified. If the messageDigest comparison or signature verification fails, the signedData/Receipt MUST NOT be created.
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - email
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
