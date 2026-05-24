@@ -1,0 +1,10 @@
+document: rfc-2535
+kind: normative-requirement
+summary: Security-aware servers MUST allow KEY, SIG, and NXT RRs to coexist with CNAME RRs, MUST suppress CNAME processing on retrieval of those types, and MUST automatically return SIG RRs authenticating any CNAMEs encountered. This overrides the prior prohibition on other RR types at a CNAME node.
+section: 2.3.5
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

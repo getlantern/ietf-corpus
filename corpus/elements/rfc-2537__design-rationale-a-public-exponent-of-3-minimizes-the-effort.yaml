@@ -1,0 +1,10 @@
+document: rfc-2537
+kind: design-rationale
+summary: A public exponent of 3 minimizes the effort needed to verify a signature. Although exponent 3 is weak for confidentiality (vulnerable to Chinese Remainder Theorem attacks when the same data is encrypted under three keys), this weakness is not significant for DNS security because only authentication, not confidentiality, is sought.
+section: "3"
+topics:
+    - dns
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

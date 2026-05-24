@@ -1,0 +1,10 @@
+document: rfc-2543
+kind: normative-requirement
+summary: Once a user agent server has received a CANCEL request, it MUST NOT issue a 2xx response for the cancelled original request. A redirect or user agent server responds 200 if the transaction exists, or 481 (Transaction Does Not Exist) if not.
+section: 4.2.5
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

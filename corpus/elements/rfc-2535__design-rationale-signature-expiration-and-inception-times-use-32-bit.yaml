@@ -1,0 +1,10 @@
+document: rfc-2535
+kind: design-rationale
+summary: Signature expiration and inception times use 32-bit unsigned seconds-since-epoch with ring arithmetic (as in SOA serial numbers), making them ambiguous modulo ~136 years. This is acceptable because RFC 2541 requires keys to be replaced at least every five years, making reuse of the same key after 136 years negligibly probable.
+section: 4.1.5
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

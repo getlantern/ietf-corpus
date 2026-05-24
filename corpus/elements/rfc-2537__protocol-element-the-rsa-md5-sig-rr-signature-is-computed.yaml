@@ -1,0 +1,10 @@
+document: rfc-2537
+kind: protocol-element
+summary: 'The RSA/MD5 SIG RR signature is computed as: hash = MD5(data), then signature = (00 | 01 | FF* | 00 | prefix | hash) ** e (mod n), where prefix is the ASN.1 BER MD5 algorithm designator (hex 3020300c06082a864886f70d020505000410).'
+section: "3"
+topics:
+    - dns
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

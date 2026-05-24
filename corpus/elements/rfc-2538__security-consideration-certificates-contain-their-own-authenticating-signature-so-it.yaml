@@ -1,0 +1,10 @@
+document: rfc-2538
+kind: security-consideration
+summary: Certificates contain their own authenticating signature, so it is reasonable to store and retrieve them from non-secure DNS zones without DNS security checking. Retrieved certificates MAY be trusted if the certificate chain is verified back to a known trusted key consistent with the user's security policy.
+section: "6"
+topics:
+    - dns
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

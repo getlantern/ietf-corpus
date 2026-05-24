@@ -1,0 +1,9 @@
+document: rfc-2554
+kind: state-machine
+summary: When a SASL security layer is negotiated, it takes effect immediately after the CRLF concluding the authentication exchange (client side) and after the CRLF of the 235 success reply (server side). The SMTP protocol then resets to its initial state, and both client and server MUST discard knowledge obtained prior to the SASL negotiation.
+section: "4"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

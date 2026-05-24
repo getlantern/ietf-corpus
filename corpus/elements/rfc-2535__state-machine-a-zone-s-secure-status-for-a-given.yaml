@@ -1,0 +1,9 @@
+document: rfc-2535
+kind: state-machine
+summary: 'A zone''s secure status for a given algorithm is determined by the trusted zone KEY RRs: (1) if all trusted zone KEY RRs assert no-key, the zone is Unsecured; (2) if there is at least one trusted no-key and one key-specifying RR, the zone is Experimentally Secure; (3) if all trusted zone KEY RRs are key-specifying, the zone is Secure and only authenticated RRs are accepted.'
+section: "3.4"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

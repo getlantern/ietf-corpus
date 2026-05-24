@@ -1,0 +1,9 @@
+document: rfc-2535
+kind: design-rationale
+summary: The 'original TTL' is included in the SIG RDATA and protected by the signature to prevent caching servers from decrementing the TTL in a way that breaks signature verification, while also preventing unscrupulous servers from setting arbitrarily long TTL values undetected. The current TTL is still transmitted but is bounded by the original signed value at security-aware resolvers.
+section: 2.3.3
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

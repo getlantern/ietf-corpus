@@ -1,0 +1,9 @@
+document: rfc-2539
+kind: design-rationale
+summary: No Diffie-Hellman algorithm SIG RR is defined because DH requires two parties to interact to derive keying material, whereas DNS SIG RRs are primarily used as stored authenticators of zone information for many different resolvers — an inherently one-to-many relationship incompatible with DH's interactive nature.
+section: "1.2"
+topics:
+    - dns
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

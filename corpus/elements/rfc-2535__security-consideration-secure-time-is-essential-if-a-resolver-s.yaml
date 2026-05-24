@@ -1,0 +1,11 @@
+document: rfc-2535
+kind: security-consideration
+summary: 'Secure time is essential: if a resolver''s clock is spoofed backward, it may accept expired SIG RRs and the stale data they authenticate. Time synchronization protocols such as NTP MUST themselves be used securely to prevent clock manipulation from undermining DNSSEC signature validity checks.'
+section: "6.4"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

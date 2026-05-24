@@ -1,0 +1,9 @@
+document: rfc-2535
+kind: security-consideration
+summary: A security-conscious resolver SHOULD refuse to step from a secure zone into an unsecured zone unless an authenticated 'no-key' KEY RR certifies the zone is intentionally unsecured. Traversal through unsecured zones taints all downstream data, since spoofed unsecured-zone data could redirect resolution to counterfeit 'secure' zones.
+section: 6.3.2
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
