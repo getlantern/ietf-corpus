@@ -1,0 +1,10 @@
+document: rfc-2746
+kind: interoperability-note
+summary: For IPSEC ESP tunnel-mode tunnels, the tunnel session uses GPI SESSION and GPI SENDER_TEMPLATE/FILTER_SPEC objects as defined in RFC 2207; data packets are not UDP-encapsulated because the SPI value can be used by intermediate nodes for classification. User-oriented keying between Rentry and Rexit is required to assign different SPIs to reserved vs. best-effort packets.
+section: "7"
+topics:
+    - ipsec
+    - vpn
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2747
+kind: normative-requirement
+summary: Sequence numbers used in the INTEGRITY object MUST be unique for the lifetime of the integrity key and MUST be generated in monotonically increasing order modulo 2^64. This allows receivers to distinguish new messages from replays while minimizing state (only the highest sequence number seen need be stored).
+section: "3"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

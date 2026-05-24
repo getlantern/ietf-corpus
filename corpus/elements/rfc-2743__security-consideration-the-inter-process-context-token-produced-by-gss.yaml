@@ -1,0 +1,9 @@
+document: rfc-2743
+kind: security-consideration
+summary: The inter-process context token produced by GSS_Export_sec_context may contain sensitive data from the original security context, including cryptographic keys. Applications using inter-process tokens must take appropriate steps to protect these tokens in transit between processes.
+section: 1.2.10
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2743
+kind: state-machine
+summary: 'Per-message replay/sequencing state machine produces five outcomes for well-formed, correctly signed messages when replay_det_state or sequence_state is TRUE: GSS_S_COMPLETE (fresh, in-order), GSS_S_DUPLICATE_TOKEN (replay detected), GSS_S_OLD_TOKEN (beyond window), GSS_S_UNSEQ_TOKEN (earlier in sequence than already-processed message), GSS_S_GAP_TOKEN (predecessor messages missing). Detection does not prevent delivery; action is caller policy.'
+section: 1.2.3
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

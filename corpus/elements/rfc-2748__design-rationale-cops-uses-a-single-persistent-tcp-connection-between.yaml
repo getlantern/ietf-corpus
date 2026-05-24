@@ -1,0 +1,9 @@
+document: rfc-2748
+kind: design-rationale
+summary: COPS uses a single persistent TCP connection between PEP and PDP, eliminating the need for additional reliability mechanisms. The protocol is stateful so that request/decision pairs are installed and remembered at the PDP until explicitly deleted, allowing the PDP to issue unsolicited decisions at any time for currently installed states.
+section: "1"
+topics:
+    - qos
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

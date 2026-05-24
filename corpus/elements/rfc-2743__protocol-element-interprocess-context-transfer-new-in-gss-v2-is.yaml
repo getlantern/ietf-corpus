@@ -1,0 +1,9 @@
+document: rfc-2743
+kind: protocol-element
+summary: Interprocess context transfer (new in GSS-V2) is provided by GSS_Export_sec_context and GSS_Import_sec_context, allowing a context to move between processes on a single machine. After successful export, the original context handle is invalidated; the adopting process passes the inter-process token to GSS_Import_sec_context to obtain a functionally identical context. Support is optional and indicated by trans_state=TRUE at context creation.
+section: 1.2.10
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

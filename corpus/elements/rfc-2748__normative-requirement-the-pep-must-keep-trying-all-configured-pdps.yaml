@@ -1,0 +1,9 @@
+document: rfc-2748
+kind: normative-requirement
+summary: The PEP MUST keep trying all configured PDPs until a connection is established. If a PEP is connected to a backup PDP and the primary PDP becomes available, the backup PDP is responsible for redirecting the PEP to the primary via a Client-Close message containing a PDPRedirAddr object.
+section: "2.3"
+rfc2119_level: SHOULD
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

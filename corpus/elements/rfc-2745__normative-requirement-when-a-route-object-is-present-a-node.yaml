@@ -1,0 +1,9 @@
+document: rfc-2745
+kind: normative-requirement
+summary: When a ROUTE object is present, a node receiving a DREP must decrement R-pointer by one address length, recompute the checksum, and forward the DREP to the address now pointed to by R-pointer. If a non-LAST-HOP node receives a DREP where R-pointer equals zero, it must send it directly to the requester.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

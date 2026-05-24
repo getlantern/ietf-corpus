@@ -1,0 +1,10 @@
+document: rfc-2748
+kind: normative-requirement
+summary: If security is required and a COPS message is received without a valid Integrity object, the receiver MUST send a Client-Close message for Client-Type=0 with the appropriate error code. Once integrity is negotiated, ALL subsequent COPS messages must include the negotiated Integrity object with the correct sequence number.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

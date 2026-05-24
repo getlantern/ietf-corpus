@@ -1,0 +1,8 @@
+document: rfc-2747
+kind: design-rationale
+summary: The sequence number field is 64 bits rather than 32 bits to avoid exhaustion over a key lifetime. A 32-bit counter would limit average RSVP message rates to ~136 messages/second, whereas 64 bits supports ~585 gigamessages/second for a one-year key lifetime.
+section: "3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

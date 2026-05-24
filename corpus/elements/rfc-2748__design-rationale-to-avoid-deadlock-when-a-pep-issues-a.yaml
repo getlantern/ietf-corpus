@@ -1,0 +1,8 @@
+document: rfc-2748
+kind: design-rationale
+summary: To avoid deadlock when a PEP issues a REQ that never receives a DEC, the PEP can timeout and MUST then delete the timed-out handle before retrying with a new handle. The PDP SHOULD NOT receive more than one outstanding solicited REQ per handle before responding.
+section: "3.2"
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

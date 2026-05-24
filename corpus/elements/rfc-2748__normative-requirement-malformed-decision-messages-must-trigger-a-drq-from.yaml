@@ -1,0 +1,9 @@
+document: rfc-2748
+kind: normative-requirement
+summary: Malformed Decision messages MUST trigger a DRQ from the PEP with the Bad Message Format reason code, and associated state SHOULD be removed or re-requested. If a Decision contained an unknown COPS Decision Object, the PEP MUST delete its request state using the Unknown COPS Object reason code.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

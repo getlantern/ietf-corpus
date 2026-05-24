@@ -1,0 +1,9 @@
+document: rfc-2748
+kind: security-consideration
+summary: COPS integrity via HMAC provides authentication, message integrity, and replay prevention using sequence numbers. Initial sequence numbers SHOULD be chosen to be monotonically increasing and never repeat for a particular key. It is good practice to use localized keys per PEP so that a stolen PEP does not compromise the entire administrative domain.
+section: "5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

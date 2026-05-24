@@ -1,0 +1,10 @@
+document: rfc-2747
+kind: design-rationale
+summary: IPsec Authentication Header was explicitly rejected for RSVP because IPsec security associations are destination-address-based, yet routers must forward PATH and PATH TEAR messages using the sender's source address, and RSVP neighbor relationships across non-RSVP clouds are not necessarily visible to the sending system. A router-to-router association model was chosen instead.
+section: "1.2"
+topics:
+    - security
+    - vpn
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

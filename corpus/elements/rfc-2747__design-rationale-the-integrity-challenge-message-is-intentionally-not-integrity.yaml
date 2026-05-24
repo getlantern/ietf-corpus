@@ -1,0 +1,8 @@
+document: rfc-2747
+kind: design-rationale
+summary: The Integrity Challenge message is intentionally not integrity-checked, because if both peering routers lack a starting sequence number for each other's key, requiring integrity on the challenge would cause them to endlessly drop each other's challenges. Only the Response is integrity-checked, also removing a dependency on a security association in the opposite direction.
+section: "10"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

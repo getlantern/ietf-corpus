@@ -1,0 +1,8 @@
+document: rfc-2745
+kind: state-machine
+summary: 'DREQ processing follows a 10-step algorithm: (1) create DIAG_RESPONSE with D-TTL computed from IP TTL vs Send_TTL; (2) set arrival time and interface addresses; (3) increment RSVP-hop-count; (4) set R-error=0x01 if no PATH state; (5) populate response objects per DIAG_SELECT or defaults; (6) update Path MTU to min of current value and incoming interface MTU; (7) goto Send_DREP if augmented size exceeds Path MTU; (8) check termination; (9) forward DREQ updating ROUTE and DIAG_RESPONSE list; (10) convert to DREP and return.'
+section: "4.1"
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

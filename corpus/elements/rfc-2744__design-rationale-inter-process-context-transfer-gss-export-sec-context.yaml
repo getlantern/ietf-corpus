@@ -1,0 +1,8 @@
+document: rfc-2744
+kind: design-rationale
+summary: Inter-process context transfer (gss_export_sec_context/gss_import_sec_context) was introduced in GSS-API V2 to support the common server pattern of a parent that accepts security contexts and child processes that handle subsequent data exchange. Sharing a single context object between processes is impractical because it carries sequencing state, so export/import provides a clean ownership-transfer mechanism.
+section: "4.6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

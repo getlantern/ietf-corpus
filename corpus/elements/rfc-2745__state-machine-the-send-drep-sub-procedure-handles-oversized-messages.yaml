@@ -1,0 +1,8 @@
+document: rfc-2745
+kind: state-machine
+summary: 'The Send_DREP sub-procedure handles oversized messages: SD1 copies DREQ to DREP and trims accumulated DIAG_RESPONSE objects from DREQ, adjusting Fragment Offset; SD2 sets MF=1 and sends DREP toward requester via ROUTE or direct; SD3 returns to main step 8 if trimmed DREQ now fits Path MTU; SD4 trims ROUTE object and sets R-error=0x04 if DREQ still exceeds Path MTU.'
+section: "4.1"
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

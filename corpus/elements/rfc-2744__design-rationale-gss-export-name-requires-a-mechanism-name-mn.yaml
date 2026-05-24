@@ -1,0 +1,8 @@
+document: rfc-2744
+kind: design-rationale
+summary: gss_export_name() requires a Mechanism Name (MN) input and produces a flat binary form suitable for direct byte comparison (e.g., memcmp). This design avoids the per-ACL-entry overhead of gss_import_name()/gss_compare_name() in large access-control list scenarios.
+section: "3.10"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

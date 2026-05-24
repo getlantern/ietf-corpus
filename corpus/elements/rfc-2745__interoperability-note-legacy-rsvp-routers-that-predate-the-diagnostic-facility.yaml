@@ -1,0 +1,8 @@
+document: rfc-2745
+kind: interoperability-note
+summary: Legacy RSVP routers that predate the diagnostic facility will silently drop DREQ messages. The recommended workaround is to use traceroute or mtrace to enumerate hops, then issue repeated DREQ queries with increasing Max-RSVP-hops values to isolate and bypass the unresponsive node.
+section: "5.6"
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

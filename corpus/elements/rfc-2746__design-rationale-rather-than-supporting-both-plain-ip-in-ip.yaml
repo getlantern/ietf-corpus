@@ -1,0 +1,8 @@
+document: rfc-2746
+kind: design-rationale
+summary: Rather than supporting both plain IP-in-IP and IP+UDP encapsulations for reserved packets, the design requires all reserved-packet tunneling to use IP+UDP to eliminate special-case handling. This simplifies implementations at the cost of minor extra overhead.
+section: 3.1.1
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

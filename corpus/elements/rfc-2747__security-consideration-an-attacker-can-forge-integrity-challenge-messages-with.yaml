@@ -1,0 +1,8 @@
+document: rfc-2747
+kind: security-consideration
+summary: An attacker can forge Integrity Challenge messages with a guessed challenge cookie, save a valid Integrity Response, and replay it against a restarting receiver to establish a stale (low) sequence number, opening the receiver to replay attacks. Exploitation requires guessing the cookie (based on a local secret) and impersonating the receiver's IP address, making it difficult in practice.
+section: "10"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

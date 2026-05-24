@@ -1,0 +1,8 @@
+document: rfc-2746
+kind: design-rationale
+summary: End-to-end RSVP control messages forwarded through the tunnel are encapsulated with only the normal tunnel IP header (not UDP), so they traverse the tunnel identically to best-effort data and are correctly decapsulated at Rexit even if Rentry does not yet know whether Rexit supports RSVP tunneling.
+section: "2.3"
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2745
+kind: design-rationale
+summary: Application-layer fragmentation is used instead of IP fragmentation to avoid reassembly overhead at every hop when DREP messages are returned hop-by-hop. The requester sets a Path MTU carried in every DREQ; intermediate nodes shrink it and trigger semantic fragmentation when the accumulated message would exceed it.
+section: "2"
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

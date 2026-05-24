@@ -1,0 +1,10 @@
+document: rfc-2747
+kind: protocol-element
+summary: Kerberos MAY be used to generate ephemeral RSVP Authentication Keys via a KDC. The sender encapsulates the Kerberos ticket in an Identity Policy Object included in the RSVP message; the receiver decrypts the ticket to retrieve the session key. Kerberos tickets MUST NOT be used after expiration; a new ticket MUST be requested before the current one expires.
+section: "7"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

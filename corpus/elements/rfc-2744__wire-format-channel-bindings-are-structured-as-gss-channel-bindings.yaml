@@ -1,0 +1,8 @@
+document: rfc-2744
+kind: wire-format
+summary: Channel bindings are structured as gss_channel_bindings_struct containing initiator_addrtype (OM_uint32), initiator_address (gss_buffer_desc), acceptor_addrtype (OM_uint32), acceptor_address (gss_buffer_desc), and application_data (gss_buffer_desc). The mechanism computes a MIC over the concatenation of these fields and binds it to the context-establishment token; mismatched bindings cause GSS_S_BAD_BINDINGS.
+section: "3.11"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

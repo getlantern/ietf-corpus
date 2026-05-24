@@ -1,0 +1,10 @@
+document: rfc-2743
+kind: normative-requirement
+summary: GSS-API callers desiring per-message security services must check integ_avail and conf_avail flags returned at context establishment time. A FALSE integ_avail means GSS_GetMIC() and GSS_Wrap() will apply no cryptographic protection to user data messages; conf_avail will never be TRUE unless integ_avail is also TRUE.
+section: 1.2.2
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

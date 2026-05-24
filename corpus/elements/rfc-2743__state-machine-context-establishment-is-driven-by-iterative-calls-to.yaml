@@ -1,0 +1,8 @@
+document: rfc-2743
+kind: state-machine
+summary: 'Context establishment is driven by iterative calls to GSS_Init_sec_context and GSS_Accept_sec_context. States: GSS_S_CONTINUE_NEEDED (additional token exchanges required; caller loops), prot_ready_state=TRUE (per-message protection available mid-establishment), and GSS_S_COMPLETE (full context established, mutual authentication guaranteed if requested). Sequencing-related codes during establishment are always fatal (accompany GSS_S_FAILURE only).'
+section: 1.2.7
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

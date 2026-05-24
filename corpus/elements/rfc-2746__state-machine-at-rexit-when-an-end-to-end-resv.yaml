@@ -1,0 +1,8 @@
+document: rfc-2746
+kind: state-machine
+summary: 'At Rexit, when an end-to-end RESV arrives: if no bound tunnel session exists the tunnel is treated as a non-RSVP link and NODE_CHAR (T bit set) is appended; if a bound session exists and is a refresh, NODE_CHAR is appended and the RESV is forwarded; if it triggers a flowspec change, a tunnel RESV with RESV_CONFIRM is sent; on hard-pipe overflow an admission-control error (code 01) is returned.'
+section: 4.2.3
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

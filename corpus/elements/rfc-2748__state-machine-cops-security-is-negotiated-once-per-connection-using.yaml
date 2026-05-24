@@ -1,0 +1,9 @@
+document: rfc-2748
+kind: state-machine
+summary: COPS security is negotiated once per connection using Client-Type=0 OPN/CAT exchange before any other client-type is opened. The PEP sends OPN with Client-Type=0 containing PEPID and an Integrity object; the PDP responds with CAT containing its own Integrity object, establishing bidirectional sequence numbers. Failure results in Client-Close with an error code (Authentication Required, Unknown COPS Object, or Authentication Failure).
+section: "4.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

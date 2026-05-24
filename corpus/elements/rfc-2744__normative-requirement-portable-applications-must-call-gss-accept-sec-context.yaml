@@ -1,0 +1,9 @@
+document: rfc-2744
+kind: normative-requirement
+summary: Portable applications must call gss_accept_sec_context() in a loop, using the token length field and return status (GSS_S_CONTINUE_NEEDED) to determine whether to send a token or wait for one, rather than assuming a fixed number of exchanges.
+section: "5.1"
+rfc2119_level: SHOULD
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

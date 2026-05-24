@@ -1,0 +1,8 @@
+document: rfc-2746
+kind: state-machine
+summary: 'At Rentry, when an end-to-end PATH message arrives: if it refreshes a known session already mapped to a tunnel session, Rentry adds a SESSION_ASSOC object and encapsulates the PATH; if it is a new session not yet mapped, Rentry creates Path state and encapsulates without SESSION_ASSOC; if a PATH TEAR arrives and the tunnel session is now empty, Rentry sends a tunnel PATH TEAR.'
+section: 4.2.1
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
