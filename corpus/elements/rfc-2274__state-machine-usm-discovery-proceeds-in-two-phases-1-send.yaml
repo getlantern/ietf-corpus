@@ -1,0 +1,9 @@
+document: rfc-2274
+kind: state-machine
+summary: 'USM discovery proceeds in two phases: (1) send noAuthNoPriv Request with empty msgAuthoritativeEngineID and userName ''initial'' to obtain the authoritative engine''s snmpEngineID via a Report PDU; (2) send an authenticated Request with the learned snmpEngineID and zero boots/time to trigger time synchronization, which the engine performs automatically in step 7b of the incoming message procedure.'
+section: "4"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

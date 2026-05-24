@@ -1,0 +1,8 @@
+document: rfc-2272
+kind: design-rationale
+summary: 'msgID and PDU request-id are intentionally kept separate: request-id is for SNMP applications to identify PDUs, while msgID is for the engine to identify messages. The engine may need to identify the message even when PDU decryption (and thus request-id) fails, so no equivalence between the two should be assumed.'
+section: "6.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

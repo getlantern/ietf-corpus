@@ -1,0 +1,9 @@
+document: rfc-2275
+kind: state-machine
+summary: 'The isAccessAllowed procedure proceeds through five sequential steps: (1) check vacmContextTable for contextName, returning noSuchContext if absent; (2) look up vacmSecurityToGroupTable for groupName, returning noGroupName if absent; (3) look up vacmAccessTable for the access entry, returning noAccessEntry if absent; (4) select the MIB view by viewType, returning noSuchView for empty viewName; (5) check variableName membership in the view, returning notInView or accessAllowed.'
+section: "3.2"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2274
+kind: design-rationale
+summary: The snmpEngineBoots+snmpEngineTime pair provides timeliness without requiring a non-volatile clock. On each reboot, snmpEngineBoots is incremented in non-volatile storage and snmpEngineTime restarts from zero, making replay across reboots detectable without NTP or persistent timekeeping hardware.
+section: 2.2.2
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

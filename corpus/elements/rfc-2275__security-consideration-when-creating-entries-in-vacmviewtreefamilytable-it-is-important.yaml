@@ -1,0 +1,9 @@
+document: rfc-2275
+kind: security-consideration
+summary: When creating entries in vacmViewTreeFamilyTable it is important to create 'excluded' entries first and then 'included' entries; when deleting, 'included' entries should be deleted first and 'excluded' entries last. Reversing this order may grant unwanted access during the transition.
+section: "7.1"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

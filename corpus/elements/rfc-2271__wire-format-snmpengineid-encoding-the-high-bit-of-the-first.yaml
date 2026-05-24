@@ -1,0 +1,8 @@
+document: rfc-2271
+kind: wire-format
+summary: 'SnmpEngineID encoding: the high bit of the first octet distinguishes legacy format (0, fixed 12-octet: 4-octet IANA enterprise number + 8 enterprise-specific octets) from the new-architecture format (1, variable-length: 4-octet enterprise number with high bit set, 5th octet format indicator — 1=IPv4/4B, 2=IPv6/16B, 3=MAC/6B, 4=text/27B max, 5=octets/27B max, 128–255=enterprise-defined). Values 6–127 for the format indicator are reserved.'
+section: "5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

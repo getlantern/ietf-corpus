@@ -1,0 +1,9 @@
+document: rfc-2266
+kind: security-consideration
+summary: 'Several MIB objects are read-write and can disrupt network operation if set by unauthorized parties: vgRptrInfoReset (triggers repeater reset), vgRptrPortAdminStatus (disables ports), vgRptrPortAllowedTrainType (changes access policy), and vgRptrGroupCablesBundled (alters forwarding behavior). Implementors should apply appropriate community string or access-control protection.'
+section: "6"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

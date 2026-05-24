@@ -1,0 +1,9 @@
+document: rfc-2274
+kind: state-machine
+summary: 'Time synchronization state for a non-authoritative engine: upon receiving an authentic message, if msgAuthoritativeEngineBoots is greater than the local notion, or equal with greater msgAuthoritativeEngineTime than latestReceivedEngineTime, update local boots, time, and latestReceivedEngineTime. Messages with boots less than local, or same boots but time more than 150s behind, are rejected as outside the Time Window.'
+section: "3.2"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

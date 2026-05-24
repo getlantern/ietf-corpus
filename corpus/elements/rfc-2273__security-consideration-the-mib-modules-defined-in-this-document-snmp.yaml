@@ -1,0 +1,9 @@
+document: rfc-2273
+kind: security-consideration
+summary: The MIB modules defined in this document (SNMP-TARGET-MIB, SNMP-NOTIFICATION-MIB, SNMP-PROXY-MIB) provide write access to SNMP engine configuration including transport addresses, security parameters, and proxy forwarding rules. Unauthorized write access could allow an attacker to redirect notifications, alter forwarding paths, or weaken security levels. Implementations should ensure appropriate access controls are applied to these objects.
+section: "10"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

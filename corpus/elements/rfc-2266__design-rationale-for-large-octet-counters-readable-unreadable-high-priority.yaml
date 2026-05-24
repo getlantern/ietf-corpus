@@ -1,0 +1,8 @@
+document: rfc-2266
+kind: design-rationale
+summary: For large octet counters (readable, unreadable, high-priority, normal-priority octets), the MIB provides both a 32-bit Counter32 with a paired rollover Counter32 and a 64-bit Counter64. The dual mechanism supports SNMPv1, which lacks 64-bit counters, though retrieval of the two 32-bit counters in the same PDU is not guaranteed to be atomic.
+section: "3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2275
+kind: security-consideration
+summary: The vacmSecurityToGroupTable grouping of <securityModel, securityName> tuples does not account for securityLevel. Security administrators must use the securityLevel index in vacmAccessTable to properly separate noAuthNoPriv access from authNoPriv and authPriv access; failure to do so can grant unauthenticated principals write access.
+section: "7.2"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

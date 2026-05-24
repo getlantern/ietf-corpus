@@ -1,0 +1,9 @@
+document: rfc-2274
+kind: design-rationale
+summary: 'The authoritative SNMP engine role is assigned based on message type: the receiver is authoritative for request-response exchanges (Get, Set, Inform), and the sender is authoritative for unidirectional messages (Trap, Response, Report). This ensures timeliness parameters are anchored to a single definitive source per exchange.'
+section: 1.5.1
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

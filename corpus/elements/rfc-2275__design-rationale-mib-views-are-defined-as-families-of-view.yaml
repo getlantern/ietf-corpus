@@ -1,0 +1,8 @@
+document: rfc-2275
+kind: design-rationale
+summary: MIB views are defined as families of view subtrees (name + bitmask) rather than explicit lists of OIDs because many access-control scenarios (e.g., all columns of a conceptual row) would otherwise require an impractically large number of individual subtree entries. The family abstraction aggregates these into one structure.
+section: "2.4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

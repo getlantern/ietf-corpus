@@ -1,0 +1,8 @@
+document: rfc-2275
+kind: interoperability-note
+summary: Support for instance-level access control granularity (i.e., non-zero-length vacmViewTreeFamilyMask values) is optional. Implementations that do not support wildcard masks make vacmViewTreeFamilyMask read-only with WRITE-SYNTAX restricted to SIZE(0). Managers should avoid requesting such configurations unnecessarily due to the potential performance cost.
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
