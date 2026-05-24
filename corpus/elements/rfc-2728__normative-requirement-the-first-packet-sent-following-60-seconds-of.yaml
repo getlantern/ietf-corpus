@@ -1,0 +1,10 @@
+document: rfc-2728
+kind: normative-requirement
+summary: The first packet sent following 60 seconds of nonuse of a group address, or after compressed-header-only use, must use an uncompressed header. Client VBI interfaces should disregard compressed packets received 60 or more seconds after the last uncompressed packet for a given group address.
+section: "3.5"
+rfc2119_level: MUST
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

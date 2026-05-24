@@ -1,0 +1,9 @@
+document: rfc-2710
+kind: design-rationale
+summary: 'The link-scope all-nodes address (FF02::1) is handled as a special case: a node starts in Idle Listener state for that address on every interface, never transitions, and never sends a Report or Done for it. MLD messages are also never sent for multicast addresses of scope 0 (reserved) or 1 (node-local).'
+section: "5"
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

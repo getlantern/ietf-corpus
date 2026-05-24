@@ -1,0 +1,10 @@
+document: rfc-2710
+kind: normative-requirement
+summary: When a node ceases to listen to a multicast address on an interface, it SHOULD send a single Done message to FF02::2 carrying the address. If the node's most recent Report was suppressed by hearing another Report, it MAY send nothing. If this optimization is implemented, it MUST be able to be turned off but SHOULD default to on.
+section: "4"
+rfc2119_level: SHOULD
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

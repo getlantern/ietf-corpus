@@ -1,0 +1,8 @@
+document: rfc-2687
+kind: design-rationale
+summary: FSE value 0xDE was chosen because it is a relatively unlikely byte in typical data streams, does not trigger octet stuffing, and triggers bit stuffing for only 1/8 of possible preceding bytes. The transparency scheme limits worst-case expansion to about 25% and is designed so a stream cannot simultaneously trigger worst-case expansion by both octet/bit stuffing and FSE processing.
+section: "6"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

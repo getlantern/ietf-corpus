@@ -1,0 +1,10 @@
+document: rfc-2710
+kind: normative-requirement
+summary: An implementation MUST NOT send an MLD message longer than 24 octets and MUST ignore anything past the first 24 octets of a received MLD message. The MLD checksum MUST be computed over the entire MLD message, not just the first 24 octets.
+section: "3.7"
+rfc2119_level: MUST
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

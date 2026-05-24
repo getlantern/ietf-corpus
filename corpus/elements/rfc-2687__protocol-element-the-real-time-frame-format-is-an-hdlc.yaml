@@ -1,0 +1,8 @@
+document: rfc-2687
+kind: protocol-element
+summary: The real-time frame format is an HDLC-like frame (flags, FCS, no address/control fields) whose data portion contains FSE-delimited compact fragments. A normal frame ending implicitly sets E=1 on the final fragment; an FSE byte sets E=0 (suspended). This allows type-2 receivers to trigger a receive interrupt immediately on complete packets.
+section: "6"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

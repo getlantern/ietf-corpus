@@ -1,0 +1,8 @@
+document: rfc-2687
+kind: interoperability-note
+summary: Async-to-sync converters monitoring LCP negotiations may interpret the negotiated MRU as the maximum HDLC frame size. Implementations should negotiate an MRU large enough to cover the worst-case 25% FSE-expansion plus suspended-fragment overhead, or actively limit HDLC frame size by injecting FSE-terminated empty final fragments when approaching the MRU.
+section: "7.1"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

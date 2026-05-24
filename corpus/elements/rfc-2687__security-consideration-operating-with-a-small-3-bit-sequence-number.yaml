@@ -1,0 +1,8 @@
+document: rfc-2687
+kind: security-consideration
+summary: Operating with a small (3-bit) sequence number range increases the likelihood that fragments from different packets could be incorrectly reassembled into one packet. While most such packets will be discarded by higher-layer checksum failures, there is increased risk that packet contents destined for one host could be delivered to another host.
+section: "9"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

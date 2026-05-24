@@ -1,0 +1,8 @@
+document: rfc-2687
+kind: design-rationale
+summary: 'The existing PPP Multilink ''end'' bit is located in the fragment header (the wrong place for suspend/resume): a suspendable packet must be sent with E=0 and then followed by an empty fragment to close it, incurring minimum overhead of twice the multilink header size (six bytes) plus three bytes of PPP framing per suspension. This overhead motivated a new compact header design.'
+section: "3"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2710
+kind: state-machine
+summary: A router transitions between Querier and Non-Querier states per link. It starts as Querier, transitions to Non-Querier upon receiving a Query from a lower-addressed router (starting the other-querier-present timer), and returns to Querier when that timer expires without a further lower-addressed Query.
+section: "6"
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

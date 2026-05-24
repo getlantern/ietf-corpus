@@ -1,0 +1,8 @@
+document: rfc-2687
+kind: protocol-element
+summary: When combining octet-stuffing and FSE processing, FSE processing must wait until two bytes of HDLC frame content are available and a third byte has been received, to ensure the candidate bytes are not the final FCS bytes (which are not subject to FSE processing). This requires a two-byte lookahead above the HDLC layer.
+section: "7.2"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

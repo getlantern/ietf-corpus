@@ -1,0 +1,8 @@
+document: rfc-2687
+kind: interoperability-note
+summary: The suspend/resume FSE format is an alternative to Address-and-Control-Field-Compression (ACFC, LCP option 8) and is mutually exclusive with it. Frames starting with 0xFF are treated as standard PPP-in-HDLC frames per RFC 1661/1662, ensuring LCP renegotiation attempts are never misinterpreted as real-time frames.
+section: "6"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2728
+kind: wire-format
+summary: In schema 0x00 compressed format, the packet consists of a 1-byte compression key (MSB=1), 2-byte IP Identification field, 2-byte UDP Checksum, up to 1472 bytes of payload, and a 32-bit CRC. All other UDP/IP header fields are reconstructed from the stored uncompressed header for the same group.
+section: "3.5"
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

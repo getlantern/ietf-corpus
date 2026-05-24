@@ -1,0 +1,9 @@
+document: rfc-2720
+kind: design-rationale
+summary: Flow table indexes are stateless to allow multiple independent meter readers to work without synchronization. A snapshot approach would require reader synchronization; the stateless approach means two readers never return exactly the same counts, but discrepancies are acceptable over long collection intervals (e.g., 15-minute collections).
+section: "3.2"
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

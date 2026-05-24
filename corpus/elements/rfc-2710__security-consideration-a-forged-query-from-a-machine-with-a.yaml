@@ -1,0 +1,10 @@
+document: rfc-2710
+kind: security-consideration
+summary: A forged Query from a machine with a lower IP address than the current Querier will cause that forger to be elected Querier; if it ignores Done messages, traffic may flow to addresses with no listeners for up to [Multicast Listener Interval]. Recovery occurs when the Other Querier Present timer expires on legitimate routers.
+section: "9"
+topics:
+    - security
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2712
+kind: design-rationale
+summary: A Kerberos authenticator is not required for replay protection because the master secret derivation is seeded with a random value from the ServerHello message, which already prevents replay attacks. The authenticator field is retained as optional to allow passing authorization information.
+section: "3"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2720
+kind: normative-requirement
+summary: A meter reader should write flowReaderLastTime as its first step in reading flow data; the meter sets this to its current Uptime and updates PreviousTime. Failure to write flowReaderLastTime may prevent the meter from recovering inactive flows until flowReaderTimeout is reached.
+section: "4"
+rfc2119_level: SHOULD
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
