@@ -1,0 +1,8 @@
+document: rfc-2594
+kind: design-rationale
+summary: Top-N document statistics use a bucket mechanism with configurable time intervals rather than continuous aggregation, explicitly to limit agent CPU and memory consumption. Raw per-document data within a bucket is discarded after Top-N computation to conserve resources.
+section: "5.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

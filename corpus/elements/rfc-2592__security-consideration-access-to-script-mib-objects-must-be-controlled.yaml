@@ -1,0 +1,9 @@
+document: rfc-2592
+kind: security-consideration
+summary: Access to Script MIB objects MUST be controlled using the View-based Access Control Model (VACM). Before launching a script, the implementation must call the isAccessAllowed abstract service on all non-not-accessible columns of the target smScriptTable entry for the requesting principal. The smLaunchOwner identity is used by the runtime system to enforce security profiles on executing scripts. Inappropriate access can allow unauthorized parties to execute arbitrary management code on distributed managers.
+section: "10"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

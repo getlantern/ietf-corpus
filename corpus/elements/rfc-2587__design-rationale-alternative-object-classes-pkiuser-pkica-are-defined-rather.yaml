@@ -1,0 +1,9 @@
+document: rfc-2587
+kind: design-rationale
+summary: Alternative object classes (pkiUser, pkiCA) are defined rather than reusing X.509-defined classes because X.509 mandates inclusion of attributes that are optional for PKIX, which would require dynamic modification of the object class attribute when those attributes are absent. The new auxiliary classes avoid this constraint.
+section: "3"
+topics:
+    - pkix
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

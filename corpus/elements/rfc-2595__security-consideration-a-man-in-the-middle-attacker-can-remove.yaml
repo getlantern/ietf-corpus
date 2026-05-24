@@ -1,0 +1,9 @@
+document: rfc-2595
+kind: security-consideration
+summary: A man-in-the-middle attacker can remove STARTTLS from the capability list or generate a failure response to the STARTTLS command. Clients SHOULD warn users when session privacy is not active and/or be configurable to refuse to proceed without an acceptable level of security. Clients MUST discard cached capabilities advertised prior to the start of the TLS handshake.
+section: "9"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

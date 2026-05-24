@@ -1,0 +1,9 @@
+document: rfc-2592
+kind: design-rationale
+summary: The smLaunchOwner identity associated with script execution (and propagated to smRunTable entries) is derived from the smLaunchTable entry, not necessarily the script's owner (smLaunchScriptOwner). This separation allows a language runtime system to enforce security profiles based on who launched the script rather than who authored it.
+section: "3.1"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

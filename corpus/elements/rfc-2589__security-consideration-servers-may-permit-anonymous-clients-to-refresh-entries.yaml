@@ -1,0 +1,9 @@
+document: rfc-2589
+kind: security-consideration
+summary: Servers may permit anonymous clients to refresh entries they did not create, which is a potential for abuse. To mitigate this, servers may require clients to bind before issuing a RefreshRequest, enforced via ACLs on the entryTtl attribute returning insufficientAccessRights (50).
+section: "10"
+topics:
+    - ldap
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

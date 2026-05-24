@@ -1,0 +1,9 @@
+document: rfc-2594
+kind: normative-requirement
+summary: A manager MUST NOT keep the wwwDocLastNTable locked via wwwDocCtrlLastNLock when it is not necessary to finish a retrieval operation. Additionally, any attempt to decrease the lock timer value MUST fail with an inconsistentValue error to allow multiple managers to cooperatively lock the table.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

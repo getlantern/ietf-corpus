@@ -1,0 +1,10 @@
+document: rfc-2595
+kind: normative-requirement
+summary: Once TLS has been started in IMAP, the client MUST discard cached information about server capabilities and SHOULD re-issue the CAPABILITY command, to protect against man-in-the-middle attacks which alter the capabilities list prior to STARTTLS.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

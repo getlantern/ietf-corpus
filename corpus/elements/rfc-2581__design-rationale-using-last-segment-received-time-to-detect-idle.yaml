@@ -1,0 +1,10 @@
+document: rfc-2581
+kind: design-rationale
+summary: 'Using last-segment-received time to detect idle connections fails for persistent HTTP: the server receives a request before transmitting, which resets the idle timer and allows transmission with a potentially oversized cwnd; hence the standard bases idleness on last-data-sent time instead.'
+section: "4.1"
+topics:
+    - tcp
+    - congestion
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

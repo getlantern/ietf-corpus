@@ -1,0 +1,8 @@
+document: rfc-2592
+kind: design-rationale
+summary: smLaunchStart uses Integer32 rather than Unsigned32 specifically for compatibility with the scheduling MIB, which may write this object. The value 0 is reserved as a 'fire and forget' invocation that causes the implementation to self-generate an smRunIndex, useful for scheduled invocations where the invoker does not need to retrieve results.
+section: "6"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

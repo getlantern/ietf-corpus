@@ -1,0 +1,10 @@
+document: rfc-2584
+kind: security-consideration
+summary: The five writable objects (hprIpPortTOSPrecedence, hprIpLsTOSPrecedence, hprIpLsRowStatus, hprIpCnTOSPrecedence, hprIpCnRowStatus) can affect network operations; improper TOS mappings may cause delays or disruptions, including timeouts on control sessions that could cause network outages. SNMP access to these objects should be restricted.
+section: "5"
+topics:
+    - snmp
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

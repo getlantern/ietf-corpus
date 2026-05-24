@@ -1,0 +1,9 @@
+document: rfc-2576
+kind: normative-requirement
+summary: If an SNMPv2-Trap-PDU received by a proxy contains Counter64 objects, the trap cannot be forwarded using SNMPv1. An InformRequest-PDU configuration indicating SNMPv1 forwarding SHALL be ignored; InformRequest-PDUs can only be forwarded using SNMPv2c or SNMPv3.
+section: 4.2.2
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

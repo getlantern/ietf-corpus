@@ -1,0 +1,9 @@
+document: rfc-2581
+kind: interoperability-note
+summary: Some implementations maintain cwnd in units of full-sized segments rather than bytes; when cwnd is very large, the integer division in equation 2 (cwnd += SMSS*SMSS/cwnd) may yield 0, and the result SHOULD be rounded up to 1 byte to ensure progress.
+section: "3.1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

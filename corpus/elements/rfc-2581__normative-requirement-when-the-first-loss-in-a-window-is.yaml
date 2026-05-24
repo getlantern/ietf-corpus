@@ -1,0 +1,10 @@
+document: rfc-2581
+kind: normative-requirement
+summary: When the first loss in a window is detected, ssthresh MUST be set per equation 3; until all lost segments are repaired, segments transmitted per RTT MUST be no more than half of outstanding segments when loss was detected; after repair, cwnd MUST be set to no more than ssthresh.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

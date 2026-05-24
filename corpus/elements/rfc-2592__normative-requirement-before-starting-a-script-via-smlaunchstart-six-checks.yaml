@@ -1,0 +1,10 @@
+document: rfc-2592
+kind: normative-requirement
+summary: 'Before starting a script via smLaunchStart, six checks MUST be performed: (1) smLaunchOperStatus is ''enabled''; (2) smLaunchScriptOwner/smLaunchScriptName identify an existing smScriptTable entry; (3) that entry''s smScriptOperStatus is ''enabled''; (4) the requesting principal has read access to all non-not-accessible columns of the smScriptTable entry via the isAccessAllowed abstract service; (5) the smRunIndex value is not already in use; (6) the number of currently executing scripts is less than smLaunchMaxRunning. Any check failure results in an inconsistentValue error.'
+section: "6"
+rfc2119_level: MUST
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

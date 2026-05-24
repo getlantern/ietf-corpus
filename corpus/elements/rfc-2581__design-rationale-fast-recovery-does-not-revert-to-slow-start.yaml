@@ -1,0 +1,9 @@
+document: rfc-2581
+kind: design-rationale
+summary: Fast recovery does not revert to slow start after fast retransmit because the receipt of duplicate ACKs indicates that segments are still leaving the network and the receiver is buffering them—so the ACK clock is preserved and the pipe is not empty, justifying continued transmission at a reduced rate.
+section: "3.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

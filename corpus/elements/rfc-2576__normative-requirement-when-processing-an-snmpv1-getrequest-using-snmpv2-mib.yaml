@@ -1,0 +1,9 @@
+document: rfc-2576
+kind: normative-requirement
+summary: When processing an SNMPv1 GetRequest using SNMPv2 MIB access, if error-status is noError but variable bindings contain Counter64 or SNMPv2 exceptions, one such binding SHALL be selected, error-status set to noSuchName, and the original request's variable binding list returned.
+section: 4.1.2.3
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

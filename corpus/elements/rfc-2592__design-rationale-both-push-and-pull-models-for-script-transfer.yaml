@@ -1,0 +1,8 @@
+document: rfc-2592
+kind: design-rationale
+summary: Both push and pull models for script transfer are supported to balance implementation convenience and performance. The push model uses the smCodeTable (allowing SNMP SET fragmentation to handle message-size limits), while the pull model stores a URL in smScriptSource so the distributed manager can use FTP or HTTP to retrieve large scripts efficiently without SNMP message-size constraints.
+section: "4.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

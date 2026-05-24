@@ -1,0 +1,10 @@
+document: rfc-2581
+kind: security-consideration
+summary: An attacker can impair TCP performance by causing data packets or ACKs to be lost, or by forging excessive duplicate ACKs, triggering congestion control and cutting ssthresh to its minimum of 2*SMSS. More broadly, forging acknowledgments could cause TCP endpoints to send more aggressively and potentially drive a portion of the network into congestion collapse.
+section: "5"
+topics:
+    - tcp
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2592
+kind: state-machine
+summary: 'smRunState tracks the execution lifecycle of a script instance with states: initializing → executing → (suspending → suspended → resuming →) executing → aborting → terminated. Setting smRunControl to ''suspend'' from ''executing'' moves to ''suspending''; ''resume'' from ''suspending'' or ''suspended'' moves to ''resuming''; ''abort'' from initializing/executing/suspending/suspended/resuming moves to ''aborting''.'
+section: "6"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

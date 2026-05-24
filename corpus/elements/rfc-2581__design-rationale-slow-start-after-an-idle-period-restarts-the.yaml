@@ -1,0 +1,9 @@
+document: rfc-2581
+kind: design-rationale
+summary: Slow start after an idle period restarts the ACK clock; without it, TCP could transmit a full cwnd-sized burst at line rate after the ACK drain, since no ACKs remain in the network to strobe new segments. RW is set equal to IW for this standard.
+section: "4.1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

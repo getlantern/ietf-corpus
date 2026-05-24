@@ -1,0 +1,10 @@
+document: rfc-2581
+kind: normative-requirement
+summary: When a TCP sender detects segment loss via retransmission timer, ssthresh MUST be set to no more than max(FlightSize/2, 2*SMSS), and cwnd MUST be set to no more than the loss window (1 full-sized segment).
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

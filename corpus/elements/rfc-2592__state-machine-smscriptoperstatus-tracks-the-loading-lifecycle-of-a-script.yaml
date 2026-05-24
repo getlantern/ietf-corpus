@@ -1,0 +1,8 @@
+document: rfc-2592
+kind: state-machine
+summary: smScriptOperStatus tracks the loading lifecycle of a script. States progress from 'disabled' → 'retrieving' → 'compiling' → 'enabled', or branch to error states such as 'compilationFailed', 'accessDenied', 'wrongLanguage', 'wrongVersion', 'unknownProtocol', 'protocolFailure', or 'genericError'. The 'retrieving' and 'compiling' states are transient; 'disabled' and 'editing' are administrative states reached only via explicit management operations.
+section: "5.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

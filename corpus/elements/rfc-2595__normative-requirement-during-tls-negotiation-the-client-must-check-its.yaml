@@ -1,0 +1,11 @@
+document: rfc-2595
+kind: normative-requirement
+summary: During TLS negotiation, the client MUST check its understanding of the server hostname against the server's identity as presented in the server Certificate message to prevent man-in-the-middle attacks. The client MUST use the hostname it used to open the connection and MUST NOT use any form derived from an insecure remote source.
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

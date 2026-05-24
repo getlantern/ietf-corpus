@@ -1,0 +1,9 @@
+document: rfc-2581
+kind: state-machine
+summary: 'Fast retransmit/fast recovery: on 3rd duplicate ACK, set ssthresh per equation 3, retransmit lost segment, set cwnd to ssthresh+3*SMSS; increment cwnd by SMSS for each additional duplicate ACK; on new ACK, deflate cwnd to ssthresh and resume congestion avoidance.'
+section: "3.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

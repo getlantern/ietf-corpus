@@ -1,0 +1,9 @@
+document: rfc-2581
+kind: design-rationale
+summary: cwnd inflation by 3*SMSS at the start of fast recovery (and 1*SMSS per additional duplicate ACK) artificially accounts for the segments that have left the network and are buffered at the receiver, allowing the sender to continue transmitting new data during recovery.
+section: "3.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
