@@ -1,0 +1,9 @@
+document: rfc-2211
+kind: design-rationale
+summary: Implementations must make bandwidth exceeding the TSpec token rate available to flows in certain situations. A flow receiving exactly its token rate will see permanent queueing delay growth if a burst arrives and the flow continues generating at token rate; some mechanism to 'borrow' bandwidth for burst clearing (explicit or statistical) is required.
+section: "4"
+topics:
+    - qos
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

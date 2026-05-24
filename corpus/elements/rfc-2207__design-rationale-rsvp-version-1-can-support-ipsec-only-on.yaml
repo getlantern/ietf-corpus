@@ -1,0 +1,10 @@
+document: rfc-2207
+kind: design-rationale
+summary: RSVP Version 1 can support IPSEC only on a per-address, per-protocol basis because it expects UDP/TCP-like port fields. This document extends RSVP to use the IPSEC Security Parameter Index (SPI) in place of ports, enabling per-flow reservation granularity without modifying RFC 1826 or RFC 1827 and adding no per-data-packet overhead.
+section: "2"
+topics:
+    - ipsec
+    - qos
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

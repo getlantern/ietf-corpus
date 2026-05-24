@@ -1,0 +1,9 @@
+document: rfc-2212
+kind: security-consideration
+summary: 'Guaranteed service can be used to mount a denial-of-service attack: a receiver requesting a reservation with an inadequate TSpec/RSpec can cause reshaping queues to grow, increasing queueing delays for other flows. The specification mitigates this by requiring non-conforming datagrams be treated as best-effort rather than dropped.'
+section: Security Considerations
+topics:
+    - security
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

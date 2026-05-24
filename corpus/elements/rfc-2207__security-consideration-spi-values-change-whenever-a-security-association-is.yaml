@@ -1,0 +1,10 @@
+document: rfc-2207
+kind: security-consideration
+summary: 'SPI values change whenever a Security Association is rekeyed. When an SPI change occurs, the corresponding SENDER_TEMPLATEs and FILTER_SPECs must generally be updated. FF style reservations are most affected: resources may be double-allocated or insufficient during the transition; SE style causes state changes without affecting delivery; WF style requires only a new SENDER_TEMPLATE.'
+section: "6"
+topics:
+    - security
+    - ipsec
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

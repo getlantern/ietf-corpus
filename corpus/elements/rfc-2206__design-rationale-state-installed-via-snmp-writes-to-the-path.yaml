@@ -1,0 +1,10 @@
+document: rfc-2206
+kind: design-rationale
+summary: State installed via SNMP writes to the Path and Reservation State tables does not time out and cannot be removed by receiving an RSVP teardown message; it can only be deleted by SNMP. Deletion via RowStatus 'destroy' initiates a teardown as if the state had timed out.
+section: "2.3"
+topics:
+    - snmp
+    - qos
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

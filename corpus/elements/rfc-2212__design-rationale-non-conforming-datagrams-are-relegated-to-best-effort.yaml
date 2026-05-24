@@ -1,0 +1,9 @@
+document: rfc-2212
+kind: design-rationale
+summary: 'Non-conforming datagrams are relegated to best-effort rather than dropped to prevent a denial-of-service scenario: a new receiver requesting a reservation with an inadequate TSpec could otherwise cause the policer to discard traffic, cutting off existing best-effort receivers of the same flow.'
+section: Policing
+topics:
+    - security
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

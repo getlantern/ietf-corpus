@@ -1,0 +1,8 @@
+document: rfc-2210
+kind: design-rationale
+summary: SENDER_TSPEC and ADSPEC are kept as separate RSVP objects rather than combined into one downstream object because the distinction between data never modified in transit (SENDER_TSPEC) and data updated at each hop (ADSPEC) is useful to implementations in practice, even though the message format could technically accommodate both in a single object.
+section: "2"
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

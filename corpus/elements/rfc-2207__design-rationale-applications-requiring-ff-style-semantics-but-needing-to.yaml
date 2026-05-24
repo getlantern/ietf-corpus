@@ -1,0 +1,10 @@
+document: rfc-2207
+kind: design-rationale
+summary: Applications requiring FF-style semantics but needing to handle SPI rekeying gracefully can use multiple SE reservations with separate SESSION (vDstPort) definitions per sender. A shared reservation for the new SPI is established before tearing down the old, enabling uninterrupted service during rekeying at the cost of additional complexity.
+section: "6"
+topics:
+    - ipsec
+    - qos
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2211
+kind: design-rationale
+summary: Excess controlled-load packets forwarded as best-effort will cause inelastic best-effort traffic to back off elastic traffic (e.g., TCP) if no discrimination is applied. Implementations should protect elastic traffic via separate resource allocations per class or by processing excess controlled-load traffic at lower priority than elastic best-effort traffic.
+section: "9"
+topics:
+    - qos
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

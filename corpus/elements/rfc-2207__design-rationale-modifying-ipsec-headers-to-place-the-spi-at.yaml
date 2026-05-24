@@ -1,0 +1,9 @@
+document: rfc-2207
+kind: design-rationale
+summary: Modifying IPSEC headers to place the SPI at the UDP/TCP port offset was rejected because the AH SPI is not at offset +0 in the transport header, the fix would violate RFC 1826, and using the SPI directly under the existing RSVP model causes setup timing problems and limited support for SE/WF reservation styles.
+section: A.3
+topics:
+    - ipsec
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
