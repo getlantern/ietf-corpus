@@ -1,0 +1,11 @@
+document: rfc-2797
+kind: normative-requirement
+summary: 'To prevent substitution attacks, clients and servers MUST support the witness value technique for identity-POP linking: the client generates a random R (SHOULD be at least 512 bits), computes HMAC-SHA1(SHA1(token), R) as the idPOPLinkWitness extension in each certificate request, and includes R as the idPOPLinkRandom control attribute. Servers MUST verify each certificate request contains a correct idPOPLinkWitness.'
+section: 5.3.1
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

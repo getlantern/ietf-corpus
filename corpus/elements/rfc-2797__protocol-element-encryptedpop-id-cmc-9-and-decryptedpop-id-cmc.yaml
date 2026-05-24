@@ -1,0 +1,10 @@
+document: rfc-2797
+kind: protocol-element
+summary: EncryptedPOP (id-cmc 9) and DecryptedPOP (id-cmc 10) implement the four-phase POP challenge-response for encryption-only keys. The server encrypts a random value y with the public key (cms field), provides witnessAlgID/witness (hash of y), and thePOPAlgID. The client decrypts y, verifies the hash, and returns thePOP = HMAC-SHA1(y, request). Clients MUST implement SHA-1 for witnessAlgID and HMAC-SHA1 for thePOPAlgID.
+section: "5.7"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

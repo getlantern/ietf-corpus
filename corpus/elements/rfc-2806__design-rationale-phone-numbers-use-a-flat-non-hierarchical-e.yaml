@@ -1,0 +1,6 @@
+document: rfc-2806
+kind: design-rationale
+summary: Phone numbers use a flat (non-hierarchical) E.164-style encoding rather than a '/'-delimited path because phone number structure (country code, area code, subscriber) is not universal — some areas lack area codes, some numbers require no prefix, and area codes change. A flat string avoids forcing the URL author to know internal numbering structure.
+section: 2.7.3
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

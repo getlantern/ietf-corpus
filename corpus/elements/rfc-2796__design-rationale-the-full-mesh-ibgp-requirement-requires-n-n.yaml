@@ -1,0 +1,9 @@
+document: rfc-2796
+kind: design-rationale
+summary: The full mesh IBGP requirement requires n*(n-1)/2 unique IBGP sessions for n BGP speakers, which does not scale for large networks. Route Reflection allows a Route Reflector to re-advertise IBGP-learned routes to other IBGP peers, eliminating the need for full mesh.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

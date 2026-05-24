@@ -1,0 +1,8 @@
+document: rfc-2797
+kind: design-rationale
+summary: The protocol is designed so that all key generation can occur on the client and all operations can be completed in a single round trip where possible. The multi-round trip case (e.g., POP for encryption-only keys, pending certificate issuance) is minimized rather than eliminated, as the four-phase POP challenge-response is unavoidable for keys that cannot sign.
+section: "1"
+topics:
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2814
+kind: normative-requirement
+summary: When a DSBM receives a RESV whose TCLASS value differs from the already-installed RESV for the same flow, it MUST send a RESV_ERR toward the newer RESV's sender using error code 21 (traffic control error), sub-code 01 (failure to merge incompatible service requests) per RFC 2205.
+section: "5.8"
+rfc2119_level: MUST
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

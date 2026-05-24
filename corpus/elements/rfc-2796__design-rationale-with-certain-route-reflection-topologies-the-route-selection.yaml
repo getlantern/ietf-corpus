@@ -1,0 +1,9 @@
+document: rfc-2796
+kind: design-rationale
+summary: With certain route reflection topologies, the route selection result may differ from full IBGP mesh because MEDs are not always comparable and IGP metrics may differ per router. Mitigation strategies include configuring intra-cluster IGP metrics better than inter-cluster, using LOCAL_PREF to reflect MED values, or using community-based policies.
+section: "9"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

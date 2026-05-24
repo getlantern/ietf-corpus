@@ -1,0 +1,8 @@
+document: rfc-2814
+kind: state-machine
+summary: 'DSBM-based admission control follows a sequential path-state machine: (1) DSBM client discovers DSBM via I_AM_DSBM; (2) client sends PATH to DSBMLogicalAddress; (3) DSBM builds PATH state, inserts itself as intermediate RSVP hop, forwards PATH toward destination; (4) receiver sends RESV to DSBM; (5) DSBM performs admission control and forwards RESV upstream or returns RESV_ERR.'
+section: 4.2.1
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
