@@ -1,0 +1,11 @@
+document: rfc-2380
+kind: normative-requirement
+summary: When adding a new end-point to an existing QoS VC (transitioning from best effort), the add to the QoS VC MUST be completed first, then followed by the drop from the best effort VC, to avoid data loss. Receivers must be prepared to receive some duplicate packets during QoS setup.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - ip
+    - multicast
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
