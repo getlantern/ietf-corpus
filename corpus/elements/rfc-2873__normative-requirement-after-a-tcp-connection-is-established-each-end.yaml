@@ -1,0 +1,11 @@
+document: rfc-2873
+kind: normative-requirement
+summary: After a TCP connection is established, each end sends segments with its desired precedence, and the other end must ignore the precedence of received packets. The connection must not be reset due to precedence differences, whether caused by the remote end or intermediate nodes.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+    - ip
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

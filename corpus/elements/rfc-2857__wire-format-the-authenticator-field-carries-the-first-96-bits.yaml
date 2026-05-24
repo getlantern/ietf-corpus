@@ -1,0 +1,9 @@
+document: rfc-2857
+kind: wire-format
+summary: The authenticator field carries the first 96 bits of the HMAC-RIPEMD-160 output. Upon sending, the 96-bit truncated value is stored; upon receipt, the full 160-bit hash is recomputed and its first 96 bits are compared to the stored value.
+section: "2"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

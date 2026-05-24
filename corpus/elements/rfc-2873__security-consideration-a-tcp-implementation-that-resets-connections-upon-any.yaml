@@ -1,0 +1,9 @@
+document: rfc-2873
+kind: security-consideration
+summary: 'A TCP implementation that resets connections upon any segment with an incorrect precedence field, regardless of sequence number correctness, is vulnerable to denial-of-service attacks: an attacker who guesses port numbers needs only send two segments with different precedence values to guarantee terminating the connection.'
+section: "5"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

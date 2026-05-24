@@ -1,0 +1,9 @@
+document: rfc-2875
+kind: interoperability-note
+summary: The Discrete Logarithm POP is based on DSA but removes FIPS-186's 1024-bit restriction on p and the 160-bit fixed requirement on q. Implementations generating keys for this algorithm should use the DH-X9.42 (RFC 2631) key generation procedure to ensure the q parameter is present and correct.
+section: "4"
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

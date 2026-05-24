@@ -1,0 +1,8 @@
+document: rfc-2853
+kind: state-machine
+summary: 'A GSSContext proceeds through three phases: (1) unestablished — initiator sets request flags (requestMutualAuth, requestCredDeleg, requestConf, etc.) and calls initSecContext/acceptSecContext iteratively exchanging tokens; (2) established — isEstablished() returns true and per-message services (wrap/getMIC) become available; (3) invalidated — after dispose() or export(), the object is unusable.'
+section: "4.9"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

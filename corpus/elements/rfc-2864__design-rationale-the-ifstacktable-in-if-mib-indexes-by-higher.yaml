@@ -1,0 +1,9 @@
+document: rfc-2864
+kind: design-rationale
+summary: The ifStackTable in IF-MIB indexes by higher-layer interface first, making it efficient to find interfaces running underneath a given interface, but to find interfaces running on top of a particular interface, a management application must read the entire table. This is very inefficient for devices with many interfaces.
+section: "3"
+topics:
+    - snmp
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

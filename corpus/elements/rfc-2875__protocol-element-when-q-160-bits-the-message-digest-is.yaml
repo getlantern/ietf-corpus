@@ -1,0 +1,8 @@
+document: rfc-2875
+kind: protocol-element
+summary: When |q| > 160 bits, the message digest is expanded by iteratively appending SHA-1(current_value) to itself until the accumulated value has at least L bits, then taking the leftmost L-1 bits (where L = floor(log2(q))+1). This ensures the hash value m satisfies 0 <= m < q.
+section: "4.1"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

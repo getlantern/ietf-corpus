@@ -1,0 +1,8 @@
+document: rfc-2856
+kind: design-rationale
+summary: Both CounterBasedGauge64 and ZeroBasedCounter64 use Counter64 as their base type rather than a dedicated Gauge64 or Unsigned64 because no such base type exists in SMIv2. This ensures ASN.1 encoding is identical to Counter64, identified by [APPLICATION 6], preserving backward compatibility.
+section: "2.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

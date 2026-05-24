@@ -1,0 +1,8 @@
+document: rfc-2853
+kind: security-consideration
+summary: Channel bindings are verified by computing a MIC over the concatenated initiator address, acceptor address, and application data, and comparing it with the MIC in the context-establishment token. Mismatch causes acceptSecContext to throw GSSException with major code BAD_BINDINGS.
+section: "4.14"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2856
+kind: interoperability-note
+summary: CounterBasedGauge64 is not strictly supported in SMIv2 because the 'always increasing' and 'counter wrap' semantics of Counter64 are not preserved. Management applications relying solely on the Counter64 ASN.1 tag may mistakenly treat CounterBasedGauge64 objects as Counter64 counters.
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

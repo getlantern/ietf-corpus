@@ -1,0 +1,6 @@
+document: rfc-2853
+kind: design-rationale
+summary: The Java binding uses exceptions (GSSException) to replace the major/minor status code output parameters used in the C bindings for fatal errors. Supplementary (non-fatal) per-message status codes are returned via the MessageProp object instead of exceptions, since exceptions are inappropriate for informational warnings.
+section: "4.12"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2858
+kind: normative-requirement
+summary: If a BGP speaker receives an UPDATE with an incorrect MP_REACH_NLRI or MP_UNREACH_NLRI attribute, it MUST delete all BGP routes from that neighbor with the same AFI/SAFI, and SHOULD ignore all subsequent routes with that AFI/SAFI for the duration of the session.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

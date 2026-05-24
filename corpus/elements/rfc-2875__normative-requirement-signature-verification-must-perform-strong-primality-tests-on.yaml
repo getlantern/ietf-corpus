@@ -1,0 +1,11 @@
+document: rfc-2875
+kind: normative-requirement
+summary: Signature verification MUST perform strong primality tests on both p and q, and MUST verify that q divides p-1. If any check fails the signature is invalid. This is required because the verifier cannot assume parameter validity in the DH POP context.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2856
+kind: design-rationale
+summary: Sub-ranges cannot be specified on TC-derived types and no DEFVAL clause can be used, because these constraints are not allowed on Counter64 objects in SMIv2. Similarly, these types cannot be used in an INDEX clause due to the lack of an INDEX mapping for Counter64.
+section: "2.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
