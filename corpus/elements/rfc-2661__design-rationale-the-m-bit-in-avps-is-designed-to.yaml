@@ -1,0 +1,8 @@
+document: rfc-2661
+kind: design-rationale
+summary: 'The M bit in AVPs is designed to be used conservatively: it should only be set for AVPs that are absolutely crucial to proper operation. Before setting M, implementors should consider that doing so will terminate any session or tunnel on a peer that does not recognize the AVP, making it the sender''s responsibility for the resulting non-interoperability.'
+section: "4.2"
+topics:
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

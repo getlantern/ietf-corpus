@@ -1,0 +1,6 @@
+document: rfc-2665
+kind: interoperability-note
+summary: 'IF-MIB ifInOctets and ifOutOctets include the entire MAC frame (header and FCS), whereas IEEE 802.3 aOctetsReceivedOK and aOctetsTransmittedOK count only clientData and Pad fields. The mapping is: ifInOctets = aOctetsReceivedOK + (18 * aFramesReceivedOK).'
+section: "3.5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

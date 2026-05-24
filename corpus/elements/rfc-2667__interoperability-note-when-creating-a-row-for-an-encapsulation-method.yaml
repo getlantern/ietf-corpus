@@ -1,0 +1,9 @@
+document: rfc-2667
+kind: interoperability-note
+summary: When creating a row for an encapsulation method that allows only one tunnel per endpoint pair, the management station should use tunnelConfigID=1 and set tunnelConfigStatus to createAndGo. For methods like L2F, a pseudo-random ID should be used; if an inconsistentValue error is returned, a new random ID should be selected and retried.
+section: "5"
+topics:
+    - snmp
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

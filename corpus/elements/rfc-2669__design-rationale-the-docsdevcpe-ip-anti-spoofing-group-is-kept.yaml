@@ -1,0 +1,9 @@
+document: rfc-2669
+kind: design-rationale
+summary: The docsDevCpe (IP anti-spoofing) group is kept separate from docsDevFilter and implemented only on the CM because it provides per-subscriber source-address enforcement at the origin point, which is not a CMTS function. The table can be auto-populated with the first N source IPs seen from CPE interfaces.
+section: "3.1"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2668
+kind: security-consideration
+summary: Several objects in this MIB (rpMauStatus, ifMauStatus, ifMauDefaultType, ifMauAutoNegAdminStatus, ifMauAutoNegCapAdvertisedBits, ifMauAutoNegRestart) are read-write and can affect network operation; unauthorized access could disrupt Ethernet links. Implementors should use SNMPv3 with authentication and privacy to protect these objects.
+section: "8"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

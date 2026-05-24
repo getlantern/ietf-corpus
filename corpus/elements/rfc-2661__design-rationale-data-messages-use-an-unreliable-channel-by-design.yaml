@@ -1,0 +1,8 @@
+document: rfc-2661
+kind: design-rationale
+summary: Data messages use an unreliable channel by design—retransmission of lost PPP data frames would introduce unacceptable latency for real-time traffic. Only the control channel uses reliable delivery with sequence numbers and retransmission, keeping data forwarding efficient.
+section: "3.0"
+topics:
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

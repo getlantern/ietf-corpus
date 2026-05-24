@@ -1,0 +1,9 @@
+document: rfc-2667
+kind: design-rationale
+summary: Two separate tables (tunnelIfTable and tunnelConfigTable) are used rather than allowing row creation directly in tunnelIfTable. Because ifIndex values are agent-chosen and may change across restarts, a separate config table indexed by manager-controlled values (endpoint addresses, encapsulation method, and an ID) avoids row-creation complications and interoperability problems.
+section: 4.1.3
+topics:
+    - snmp
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

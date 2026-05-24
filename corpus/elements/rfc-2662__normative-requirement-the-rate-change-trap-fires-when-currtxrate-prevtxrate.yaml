@@ -1,0 +1,7 @@
+document: rfc-2662
+kind: normative-requirement
+summary: The rate-change trap fires when currTxRate >= prevTxRate + ThreshRateUp or currTxRate <= prevTxRate - ThreshRateDown. No trap is sent on initialization. PrevTxRate is set to the current value at initialization and each time a trap is sent, so rate changes accumulate until the threshold is crossed.
+section: "5.5"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2661
+kind: state-machine
+summary: 'Control connection states are: idle → (send/receive SCCRQ) → wait-ctl-reply or wait-ctl-conn → (exchange SCCRP/SCCCN) → established → (StopCCN or timeout) → idle. Both sides authenticate via CHAP-style challenge/response during the three-way handshake if tunnel authentication is required.'
+section: 7.2.1
+topics:
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

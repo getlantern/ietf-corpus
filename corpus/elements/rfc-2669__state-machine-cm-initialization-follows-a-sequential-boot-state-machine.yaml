@@ -1,0 +1,8 @@
+document: rfc-2669
+kind: state-machine
+summary: 'CM initialization follows a sequential boot state machine: starts in waitingForDhcpOffer, transitions through waitingForDhcpResponse, waitingForTimeServer, and waitingForTftp upon receiving respective responses, reaching operational after successful CMTS Registration exchange; transitions to disabled if refused by configuration file, or refusedByCmts if Registration fails.'
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,10 @@
+document: rfc-2669
+kind: design-rationale
+summary: 'Filter processing order is fixed by layer: inbound LLC filters are applied first, then special filters (IP spoofing and SNMP access), then inbound IP filters, then outbound IP filters, then outbound LLC filters. For cable modems doing only bridging, inbound and outbound IP filtering can be combined into a single table scan.'
+section: "3.3"
+topics:
+    - snmp
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

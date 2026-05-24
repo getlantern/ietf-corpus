@@ -1,0 +1,9 @@
+document: rfc-2661
+kind: normative-requirement
+summary: Tunnel IDs and Session IDs have local significance only; each endpoint assigns its own identifier to the same tunnel/session. The Tunnel ID and Session ID in each message are those of the intended recipient, not the sender. Before receiving an Assigned Tunnel ID AVP from a peer, messages MUST be sent with Tunnel ID = 0.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

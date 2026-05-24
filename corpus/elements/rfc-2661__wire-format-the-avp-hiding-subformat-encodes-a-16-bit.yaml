@@ -1,0 +1,9 @@
+document: rfc-2661
+kind: wire-format
+summary: The AVP hiding subformat encodes a 16-bit 'Length of Original Value', followed by the original attribute value, followed by optional random padding. The hidden value is produced by XOR-chaining MD5 hashes of (Attribute Number + shared secret + Random Vector) in 16-octet blocks, adapted from the RFC 2138 RADIUS obfuscation method.
+section: "4.3"
+topics:
+    - vpn
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
