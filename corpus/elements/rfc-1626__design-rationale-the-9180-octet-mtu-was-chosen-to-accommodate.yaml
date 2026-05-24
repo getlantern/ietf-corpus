@@ -1,0 +1,8 @@
+document: rfc-1626
+kind: design-rationale
+summary: The 9180-octet MTU was chosen to accommodate NFS (which uses 8 KB frames plus RPC/XDR/UDP/IP/LLC headers requiring at least 8300 octets), to benefit router performance (costs are per-packet not per-byte), and because empirical evidence shows larger MTUs improve TCP performance. Fragmentation is known to be highly undesirable.
+section: Default Value for IP MTU over ATM AAL5
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

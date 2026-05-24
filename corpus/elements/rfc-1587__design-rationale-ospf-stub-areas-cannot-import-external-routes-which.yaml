@@ -1,0 +1,8 @@
+document: rfc-1587
+kind: design-rationale
+summary: OSPF stub areas cannot import external routes, which prevents leaf sites (e.g., a cloud running RIP-learned routes) from participating as stub areas. The NSSA option was created to allow limited import of AS external routes via a new LSA type (type-7) while retaining the benefits of stub area topology.
+section: "2.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

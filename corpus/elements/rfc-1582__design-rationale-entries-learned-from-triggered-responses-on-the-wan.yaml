@@ -1,0 +1,8 @@
+document: rfc-1582
+kind: design-rationale
+summary: Entries learned from triggered responses on the WAN are treated as 'permanent' (non-expiring) rather than temporary, because there are no periodic refreshes to keep them alive. They only become temporary upon explicit unreachability signals (circuit down, absent route, or explicit metric-16 update).
+section: "2.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

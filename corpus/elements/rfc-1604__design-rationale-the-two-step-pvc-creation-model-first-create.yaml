@@ -1,0 +1,8 @@
+document: rfc-1604
+kind: design-rationale
+summary: The two-step PVC creation model (first create endpoint rows in frPVCEndptTable, then connect them in frPVCConnectTable) separates traffic parameter provisioning from connection activation. This allows the agent to validate that ingress parameters of one end equal egress parameters of the other before turning the PVC on.
+section: "4.4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

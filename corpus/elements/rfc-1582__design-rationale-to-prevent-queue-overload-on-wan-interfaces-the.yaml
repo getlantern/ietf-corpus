@@ -1,0 +1,8 @@
+document: rfc-1582
+kind: design-rationale
+summary: To prevent queue overload on WAN interfaces, the routing task MAY stagger triggered requests and responses rather than sending to all next-hop routers simultaneously, limiting the number of outstanding unacknowledged messages as a function of link speed and number of concurrent routing protocols.
+section: "2.9"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-1582
+kind: normative-requirement
+summary: If a routing update is sufficiently large it MUST be fragmented over several triggered response packets. Each fragment MUST be individually acknowledged. If all fragments are not received within four times the retransmit period they MUST be discarded and a triggered request sent to the originator.
+section: "2.8"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

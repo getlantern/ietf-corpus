@@ -1,0 +1,8 @@
+document: rfc-1582
+kind: state-machine
+summary: 'Routing database entries transition between ''permanent'' and ''temporary'' states. Entries learned from WAN triggered responses are permanent until: (a) an explicit unreachable update arrives, starting the hold-down timer; (b) the entry is absent from a triggered response, also starting hold-down; (c) the circuit manager signals circuit-down, triggering aging. After hold-down expiry, entries are deleted.'
+section: "2.6"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

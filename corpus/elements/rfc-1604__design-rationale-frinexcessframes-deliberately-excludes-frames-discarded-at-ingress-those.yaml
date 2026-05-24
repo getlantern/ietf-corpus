@@ -1,0 +1,8 @@
+document: rfc-1604
+kind: design-rationale
+summary: frInExcessFrames deliberately excludes frames discarded at ingress (those are counted in frPVCEndptInDiscards). The counter records only frames that entered the network as excess traffic (beyond Bc) but were not dropped at the ingress policing point, reflecting what the network actually attempted to deliver.
+section: "4.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

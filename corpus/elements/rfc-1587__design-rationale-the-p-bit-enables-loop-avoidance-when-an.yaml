@@ -1,0 +1,8 @@
+document: rfc-1587
+kind: design-rationale
+summary: 'The P-bit enables loop avoidance: when an NSSA area border router originates both a type-5 and a type-7 LSA for the same network, it resets the P-bit in the type-7 LSA so another border router will not translate it again, preventing duplicate type-5 LSAs with conflicting forwarding addresses from entering the backbone.'
+section: "3.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

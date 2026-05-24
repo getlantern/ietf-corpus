@@ -1,0 +1,8 @@
+document: rfc-1587
+kind: design-rationale
+summary: Summary routes are required in NSSAs (unlike stub areas where they are optional) to ensure OSPF internal routes always take precedence over type-7 external routes. Injecting a default as a type-3 summary would also cause it to be preferred over all more specific type-7 routes, breaking routing.
+section: "3.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

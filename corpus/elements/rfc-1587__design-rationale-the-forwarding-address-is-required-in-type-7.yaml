@@ -1,0 +1,8 @@
+document: rfc-1587
+kind: design-rationale
+summary: 'The forwarding address is required in type-7 LSAs (unlike being optional in type-5) to enable efficient routing when multiple NSSA border routers exist: packets can be forwarded directly to the ASBR rather than through the translating border router, and the ABR does not need to recompute it during translation.'
+section: "3.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
