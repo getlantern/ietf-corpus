@@ -1,0 +1,8 @@
+document: rfc-1738
+kind: interoperability-note
+summary: For FTP, the '/' in a URL path does NOT necessarily correspond to the FTP root; a leading encoded slash ('%2F') in a path component forces an absolute CWD. Clients keeping control connections open across multiple URL accesses must reconnect if paths differ, because there is no common hierarchical model in FTP.
+section: 3.2.2
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

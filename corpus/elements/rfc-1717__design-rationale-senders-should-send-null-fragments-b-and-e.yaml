@@ -1,0 +1,6 @@
+document: rfc-1717
+kind: design-rationale
+summary: Senders SHOULD send null fragments (B and E bits set, no payload) on links that would otherwise go idle immediately after transmitting an E-bit fragment. Without null fragments the receiver cannot advance M, potentially stalling reassembly indefinitely; implementations may defer null fragments until a timer expires at the cost of longer stalls.
+section: "4.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

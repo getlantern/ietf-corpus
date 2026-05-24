@@ -1,0 +1,9 @@
+document: rfc-1730
+kind: normative-requirement
+summary: Servers that send untagged responses while no command is in progress MUST address flow control by either verifying the data does not exceed the transport's available window size or using non-blocking writes. EXPUNGE responses MUST NOT be sent when no command is in progress.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

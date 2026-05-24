@@ -1,0 +1,8 @@
+document: rfc-1730
+kind: design-rationale
+summary: CLOSE is explicitly faster than EXPUNGE-then-LOGOUT/SELECT when many messages are deleted, because CLOSE suppresses the untagged EXPUNGE responses that the client would typically ignore. This avoids substantial unnecessary traffic in bulk-delete scenarios.
+section: 6.4.2
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

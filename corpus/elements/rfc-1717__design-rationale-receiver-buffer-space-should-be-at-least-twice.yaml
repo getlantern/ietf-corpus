@@ -1,0 +1,6 @@
+document: rfc-1717
+kind: design-rationale
+summary: Receiver buffer space SHOULD be at least twice the sum of per-channel slippage values (S[c] = R[c] * D[c, c_worst]) plus maximum fragment sizes for all channels. Allocating less risks false-positive fragment loss declarations under bursty traffic with heterogeneous link delays.
+section: "4.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

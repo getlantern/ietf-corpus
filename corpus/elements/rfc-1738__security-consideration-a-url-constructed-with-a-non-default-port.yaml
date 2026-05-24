@@ -1,0 +1,8 @@
+document: rfc-1738
+kind: security-consideration
+summary: A URL constructed with a non-default port number can cause a client to inadvertently contact a server running a different protocol. Instructions encoded in the URL may then trigger unexpected or damaging operations on that server (e.g., a Gopher URL causing a message to be sent via SMTP). Clients should treat non-default port URLs with caution.
+section: "6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

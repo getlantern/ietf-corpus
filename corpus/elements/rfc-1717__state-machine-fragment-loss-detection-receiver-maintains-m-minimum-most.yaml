@@ -1,0 +1,6 @@
+document: rfc-1717
+kind: state-machine
+summary: 'Fragment loss detection: receiver maintains M = minimum most-recently-received sequence number across all member links. When M advances past an unassembled packet''s E-bit fragment, a loss is declared; receiver discards all fragments up to M, then either starts reassembling from M (if B bit set) or resynchronizes by discarding all non-B-bit fragments until a new B-bit fragment arrives.'
+section: "4.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

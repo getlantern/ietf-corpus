@@ -1,0 +1,10 @@
+document: rfc-1731
+kind: normative-requirement
+summary: The GSSAPI server must seal its 4-octet capability advertisement using GSS_Seal with conf_flag set to FALSE, and must pass the client's reply through GSS_Unseal to extract the selected protection mechanism, maximum message size, and user name.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

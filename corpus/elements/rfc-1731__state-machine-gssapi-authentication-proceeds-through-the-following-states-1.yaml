@@ -1,0 +1,9 @@
+document: rfc-1731
+kind: state-machine
+summary: 'GSSAPI authentication proceeds through the following states: (1) server issues empty challenge; (2) client calls GSS_Init_sec_context and sends output_token; (3) if GSS_CONTINUE_NEEDED, tokens are exchanged until GSS_COMPLETE; (4) server sends sealed capability octets; (5) client sends sealed selection and user name; (6) server verifies authorization and authentication is complete.'
+section: "3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

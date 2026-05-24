@@ -1,0 +1,9 @@
+document: rfc-1730
+kind: normative-requirement
+summary: For APPEND or COPY to a nonexistent destination mailbox, unless it is certain the mailbox cannot be created, the server MUST send the '[TRYCREATE]' response code as a hint to the client to CREATE the mailbox and retry the operation.
+section: 6.3.10
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
