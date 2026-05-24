@@ -1,0 +1,9 @@
+document: rfc-1854
+kind: normative-requirement
+summary: Client SMTP implementations that employ pipelining MUST check ALL statuses associated with each command in a group. For example, if no RCPT TO commands succeeded, the client must still check the DATA command response and cannot assume DATA will be rejected.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

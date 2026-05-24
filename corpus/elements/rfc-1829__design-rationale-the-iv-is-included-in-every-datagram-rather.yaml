@@ -1,0 +1,9 @@
+document: rfc-1829
+kind: design-rationale
+summary: The IV is included in every datagram rather than maintained as shared state, so that decryption of each received datagram can be performed independently even when other datagrams are dropped or arrive out of order.
+section: "1.2"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

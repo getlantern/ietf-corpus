@@ -1,0 +1,10 @@
+document: rfc-1826
+kind: state-machine
+summary: 'Outgoing packet processing: (1) locate the appropriate Security Association using sending userid and Destination Address; (2) zero mutable fields; (3) compute authentication data over the packet as it will appear at the receiver; (4) insert result into the Authentication Data field. Incoming packet processing: (1) use Destination Address and SPI to locate the Security Association; (2) independently verify the Authentication Data field; (3) accept or discard and log.'
+section: "4"
+topics:
+    - ipsec
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

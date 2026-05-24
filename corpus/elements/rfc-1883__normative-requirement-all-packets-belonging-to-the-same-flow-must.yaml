@@ -1,0 +1,10 @@
+document: rfc-1883
+kind: normative-requirement
+summary: All packets belonging to the same flow must be sent with the same source address, destination address, priority, and flow label. If any packet in the flow includes a Hop-by-Hop Options or Routing header, all packets must be originated with the same header contents (excluding the Next Header field) up through and including the Routing header.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - ip
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-1883
+kind: state-machine
+summary: 'Type 0 Routing header processing: if Segments Left=0, proceed to next header; if Hdr Ext Len is odd or >46, send ICMP Parameter Problem and discard; if Segments Left > n (address count), send ICMP and discard; otherwise decrement Segments Left, swap Destination Address with Address[i], enforce strict-neighbor constraint (ICMP Destination Unreachable if violated), enforce Hop Limit >1 (ICMP Time Exceeded if not), decrement Hop Limit, and resubmit packet.'
+section: "4.4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-1829
+kind: state-machine
+summary: 'Decryption procedure: extract SPI and look up Security Parameters; extract IV and construct 64-bit value; decrypt with DES-CBC; examine Payload Type (discard with ICMP if unrecognized); strip Pad Length octets; pass decrypted payload to the indicated protocol.'
+section: "3.2"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

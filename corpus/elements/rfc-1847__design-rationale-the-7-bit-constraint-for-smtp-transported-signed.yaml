@@ -1,0 +1,10 @@
+document: rfc-1847
+kind: design-rationale
+summary: The 7-bit constraint for SMTP-transported signed objects exists because conversion of 8bit/binary content to 7bit would necessarily invalidate the signature. Since conversion is not viable and the only alternative is a non-delivery notification, the content must be pre-encoded to 7 bits before signing.
+section: "2.1"
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

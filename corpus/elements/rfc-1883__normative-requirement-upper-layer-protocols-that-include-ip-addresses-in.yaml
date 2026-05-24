@@ -1,0 +1,11 @@
+document: rfc-1883
+kind: normative-requirement
+summary: Upper-layer protocols that include IP addresses in checksum computation must be modified for IPv6 to use a pseudo-header containing 128-bit source and destination addresses, a 32-bit Payload Length, and Next Header identifying the upper-layer protocol. When a Routing header is present, the final destination address is used.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - tcp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

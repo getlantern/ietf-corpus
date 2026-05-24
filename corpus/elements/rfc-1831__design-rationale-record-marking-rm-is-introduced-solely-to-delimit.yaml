@@ -1,0 +1,8 @@
+document: rfc-1831
+kind: design-rationale
+summary: Record marking (RM) is introduced solely to delimit RPC messages over stream transports like TCP, which have no inherent message boundaries. The RM header is not XDR-encoded to keep it simple and distinct from payload encoding.
+section: "10"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

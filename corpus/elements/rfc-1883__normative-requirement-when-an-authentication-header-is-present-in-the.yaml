@@ -1,0 +1,11 @@
+document: rfc-1883
+kind: normative-requirement
+summary: When an Authentication header is present in the packet, for any option whose data may change en-route (Option Type third-highest-order bit = 1), its entire Option Data field must be treated as zero-valued octets when computing or verifying the packet's authenticating value.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

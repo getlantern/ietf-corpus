@@ -1,0 +1,9 @@
+document: rfc-1831
+kind: design-rationale
+summary: RPC intentionally does not implement reliability, time-out, retransmission, or duplicate detection. These are left to the application or transport layer, enabling transport independence and allowing RPC to run over both reliable (TCP) and unreliable (UDP) transports.
+section: "4"
+topics:
+    - tcp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

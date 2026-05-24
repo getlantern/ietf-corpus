@@ -1,0 +1,9 @@
+document: rfc-1883
+kind: interoperability-note
+summary: When computing TCP MSS over IPv6, the MSS must be calculated as the maximum packet size minus 60 octets (not 40 as in IPv4), because the minimum-length IPv6 header is 20 octets longer than a minimum-length IPv4 header.
+section: "8.3"
+topics:
+    - ip
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

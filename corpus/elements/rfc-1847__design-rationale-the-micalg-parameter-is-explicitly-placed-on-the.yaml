@@ -1,0 +1,9 @@
+document: rfc-1847
+kind: design-rationale
+summary: 'The micalg parameter is explicitly placed on the multipart/signed Content-Type header to support one-pass processing: implementations can compute MIC values while reading the first body part and stop when the second body part boundary is found, without needing to backtrack.'
+section: "2.1"
+topics:
+    - email
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

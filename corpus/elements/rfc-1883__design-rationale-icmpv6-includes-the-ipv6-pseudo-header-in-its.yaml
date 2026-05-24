@@ -1,0 +1,9 @@
+document: rfc-1883
+kind: design-rationale
+summary: ICMPv6 includes the IPv6 pseudo-header in its checksum computation, unlike IPv4 ICMP. This change protects ICMP from misdelivery or corruption of IPv6 header fields on which it depends, which are not covered by an internet-layer checksum in IPv6.
+section: "8.1"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

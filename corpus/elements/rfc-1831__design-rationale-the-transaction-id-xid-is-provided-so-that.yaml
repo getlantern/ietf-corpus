@@ -1,0 +1,6 @@
+document: rfc-1831
+kind: design-rationale
+summary: The transaction ID (xid) is provided so that servers can optionally implement execute-at-most-once semantics by caching previously executed xids and refusing to re-execute calls with the same ID. However, servers may not use xid as a sequence number.
+section: "4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

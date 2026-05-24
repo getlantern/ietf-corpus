@@ -1,0 +1,9 @@
+document: rfc-1854
+kind: design-rationale
+summary: SMTP's intrinsic one command-one response structure is significantly penalized by high latency links, often to the point where turnaround time dominates overall connection time. Pipelining batches multiple commands into single TCP send operations to reduce these turnarounds.
+section: Introduction
+topics:
+    - email
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-1883
+kind: normative-requirement
+summary: If insufficient fragments are received to complete reassembly within 60 seconds of the first-arriving fragment, reassembly must be abandoned and all received fragments must be discarded. If the offset-zero fragment has arrived, an ICMP Time Exceeded -- Fragment Reassembly Time Exceeded message should be sent to the source.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
