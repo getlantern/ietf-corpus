@@ -1,0 +1,9 @@
+document: rfc-2371
+kind: security-consideration
+summary: 'PUSH-based denial-of-service: an attacker can repeatedly push transactions to Prepared state and drop connections, exhausting transaction manager resources. Mitigation: refuse PUSH commands unless TLS is in use with the remote party authenticated and trusted.'
+section: "16.3"
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

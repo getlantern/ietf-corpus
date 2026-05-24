@@ -1,0 +1,9 @@
+document: rfc-2371
+kind: security-consideration
+summary: 'Transaction corruption attack: an attacker can send RECONNECT followed by COMMIT or ABORT to a subordinate awaiting recovery, forcing an incorrect outcome. Mitigation: record the authenticated identity of the superior and refuse RECONNECT unless TLS is in use and the remote party''s authenticated identity matches.'
+section: "16.4"
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

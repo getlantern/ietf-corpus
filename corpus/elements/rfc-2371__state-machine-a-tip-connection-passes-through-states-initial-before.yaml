@@ -1,0 +1,9 @@
+document: rfc-2371
+kind: state-machine
+summary: 'A TIP connection passes through states: Initial (before IDENTIFY), Idle (version negotiated, no transaction), Begun (one-phase transaction active), Enlisted (two-phase-capable transaction active), Prepared (phase-one complete), Multiplexing (TMP in control), Tls (TLS in control), and Error (unrecoverable). Connection failure in Prepared state does not automatically abort the transaction; all other active transaction states do.'
+section: "9"
+topics:
+    - tcp
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

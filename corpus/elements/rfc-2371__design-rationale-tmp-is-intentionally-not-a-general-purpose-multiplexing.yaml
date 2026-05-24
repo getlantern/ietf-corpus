@@ -1,0 +1,8 @@
+document: rfc-2371
+kind: design-rationale
+summary: TMP is intentionally not a general-purpose multiplexing protocol. It is designed solely for TIP's short request-response messages; protocols with large messages can exceed receiver buffering and cause deadlock under TMP, which TIP avoids because all TIP messages are short.
+section: A.1
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
