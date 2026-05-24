@@ -1,0 +1,10 @@
+document: rfc-2830
+kind: security-consideration
+summary: An active-intermediary attacker can remove the Start TLS extended operation from the supportedExtension attribute of the root DSE, so both parties SHOULD independently ascertain the security level achieved after TLS establishment and before use, since negotiation may have been downgraded to plaintext.
+section: "6"
+topics:
+    - tls
+    - ldap
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

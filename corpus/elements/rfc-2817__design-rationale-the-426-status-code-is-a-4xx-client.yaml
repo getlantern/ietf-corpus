@@ -1,0 +1,9 @@
+document: rfc-2817
+kind: design-rationale
+summary: The 426 status code is a 4xx (client error) rather than a 3xx (redirect) because 3xx redirection would fail for user agents that do not understand Upgrade. A UA treating 426 as 300 would look for a Location header and retry without TLS, failing again. A distinct 4xx code provides an unambiguous failure signal that prevents silent downgrade loops.
+section: "6"
+topics:
+    - http
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

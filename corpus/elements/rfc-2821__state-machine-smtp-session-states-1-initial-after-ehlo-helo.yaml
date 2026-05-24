@@ -1,0 +1,8 @@
+document: rfc-2821
+kind: state-machine
+summary: 'SMTP session states: (1) Initial — after EHLO/HELO accepted, all buffers clear; (2) MAIL received — reverse-path buffer set; (3) RCPT received — one or more recipients in forward-path buffer; (4) DATA transfer — 354 issued, accumulating mail data; (5) Transaction complete — 250 returned after end-of-data, buffers cleared. RSET returns to Initial from any state; QUIT terminates session.'
+section: "4.3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

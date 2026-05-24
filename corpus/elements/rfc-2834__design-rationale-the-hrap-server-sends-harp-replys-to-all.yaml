@@ -1,0 +1,8 @@
+document: rfc-2834
+kind: design-rationale
+summary: The HRAP server sends HARP_REPLYs to all table entries when its mappings change (via PIBES), reducing stale entries in clients. This mirrors gratuitous ARP on Ethernet. Unsolicited HARP_REPLYs from the authoritative server SHALL be used by clients to update HARP table entries.
+section: "5.4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2834
+kind: normative-requirement
+summary: HARP clients MUST respond to HARP_REQUEST and InHARP_REQUEST messages if the port is the target. For ports with multiple IP addresses (aliases), the client MUST cycle through all IP addresses and generate an InHARP_REPLY for each. All solicited and unsolicited HARP_REPLYs from the authoritative server SHALL be used to update client HARP table entries.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

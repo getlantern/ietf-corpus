@@ -1,0 +1,8 @@
+document: rfc-2822
+kind: design-rationale
+summary: The 998-character hard limit exists because many implementations cannot handle longer lines, and RFC 2821 transport rejects messages with lines exceeding 1000 characters including CRLF. The 78-character recommendation accommodates common user interface displays that truncate or wrap longer lines.
+section: 2.1.1
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2817
+kind: design-rationale
+summary: 'Using a cleartext HTTP/1.1 Upgrade preamble before the TLS handshake solves the ''virtual hosting'' problem for TLS. Because TLS''s initial handshake does not specify the intended hostname (relying on IP address), sending a cleartext Host: header before upgrading allows a server to select the correct certificate for name-based virtual hosting.'
+section: "1"
+topics:
+    - http
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

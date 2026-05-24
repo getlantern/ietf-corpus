@@ -1,0 +1,9 @@
+document: rfc-2821
+kind: normative-requirement
+summary: 'Mail transaction commands MUST be used in order: MAIL, then one or more RCPT, then DATA. If a RCPT command appears without a prior MAIL command the server MUST return 503 ''Bad sequence of commands''. Message data MUST NOT be sent unless a 354 reply is received.'
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

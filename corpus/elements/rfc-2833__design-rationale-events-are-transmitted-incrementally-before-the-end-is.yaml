@@ -1,0 +1,10 @@
+document: rfc-2833
+kind: design-rationale
+summary: Events are transmitted incrementally (before the end is known) rather than waiting for completion because some tones last two seconds; the transmitter does not know whether event length matters to the receiver, so immediate incremental transmission avoids unnecessary delay for both gateway and end-system use cases.
+section: "3.6"
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

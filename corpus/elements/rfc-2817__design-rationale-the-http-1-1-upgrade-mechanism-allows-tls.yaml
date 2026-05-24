@@ -1,0 +1,10 @@
+document: rfc-2817
+kind: design-rationale
+summary: The HTTP/1.1 Upgrade mechanism allows TLS to be initiated over an existing TCP connection, enabling secure and unsecured HTTP to share port 80. This avoids the practice of allocating parallel 'secure' port numbers (e.g., 443), which effectively halves the number of available well-known ports. The IESG reaffirmed in 1997 that issuing parallel secure port numbers should be deprecated.
+section: "1"
+topics:
+    - http
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

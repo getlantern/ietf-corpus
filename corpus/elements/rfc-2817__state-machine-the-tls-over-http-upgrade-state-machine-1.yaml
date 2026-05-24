@@ -1,0 +1,9 @@
+document: rfc-2817
+kind: state-machine
+summary: 'The TLS-over-HTTP upgrade state machine: (1) Client sends HTTP request with ''Upgrade: TLS/1.0''; (2) Server responds 101 Switching Protocols; (3) Both parties immediately begin TLS handshake after the blank line ending the 101 response; (4) On TLS success, server completes the original HTTP request; on TLS failure, connection is terminated.'
+section: "3.3"
+topics:
+    - http
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

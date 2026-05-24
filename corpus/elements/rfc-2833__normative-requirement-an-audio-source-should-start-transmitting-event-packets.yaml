@@ -1,0 +1,11 @@
+document: rfc-2833
+kind: normative-requirement
+summary: An audio source SHOULD start transmitting event packets as soon as an event is recognized and every 50 ms thereafter (or per the codec packet interval). If no new event occurs, the event SHOULD be retransmitted three times to ensure correct duration recognition even if the last packet is lost.
+section: "3.6"
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

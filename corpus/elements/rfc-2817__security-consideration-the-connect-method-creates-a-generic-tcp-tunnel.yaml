@@ -1,0 +1,9 @@
+document: rfc-2817
+kind: security-consideration
+summary: The CONNECT method creates a generic TCP tunnel and carries significant security risks. Proxy operators SHOULD restrict CONNECT tunneling to a small set of known ports. A client could abuse CONNECT to reach arbitrary ports (e.g., port 25 to relay SMTP spam), since tunneled data is opaque to the proxy.
+section: "8.2"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

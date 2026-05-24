@@ -1,0 +1,9 @@
+document: rfc-2821
+kind: normative-requirement
+summary: An SMTP server MUST NOT intentionally close the connection except after receiving QUIT (responding with 221) or after detecting a need to shut down and returning 421. A server that closes connections in response to unrecognized commands is in violation; servers MUST issue a 500 reply and await further instructions.
+section: "3.9"
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

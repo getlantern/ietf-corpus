@@ -1,0 +1,9 @@
+document: rfc-2822
+kind: security-consideration
+summary: Displaying messages on terminals that interpret escape sequences can enable denial-of-service, keyboard remapping, answerback-triggered command execution, or printer manipulation. Message viewers SHOULD strip potentially dangerous terminal escape sequences before display, but MUST NOT strip indiscriminately as some escape sequences (e.g., ISO 2022 charset switching) are legitimate.
+section: "5"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

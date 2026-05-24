@@ -1,0 +1,11 @@
+document: rfc-2830
+kind: design-rationale
+summary: The client must use the original connection hostname (not canonical DNS) for server identity verification to prevent a class of MITM attack where DNS canonicalization could redirect to a different server with a legitimately matching certificate.
+section: "3.6"
+topics:
+    - tls
+    - ldap
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

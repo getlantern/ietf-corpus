@@ -1,0 +1,8 @@
+document: rfc-2834
+kind: design-rationale
+summary: Broadcast emulation has an inherent performance upper bound of (total bandwidth)/(n+1) in a LIS with n ports, because each message must enter the broadcast server before being replicated. This is adequate for low-bandwidth protocols like RIP and OSPF but cannot support high-bandwidth broadcast traffic, which requires true hardware broadcast support.
+section: "7.4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

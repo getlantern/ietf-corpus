@@ -1,0 +1,10 @@
+document: rfc-2822
+kind: security-consideration
+summary: Mishandling 'Bcc:' fields can inadvertently reveal confidential recipient addresses. When the field is removed entirely, blind recipients may accidentally expose their inclusion by replying to all. When a 'Bcc:' copy is sent, if all blind addresses are listed together, each blind recipient sees the others. Implementations must process replies carefully to avoid leaking Bcc recipients.
+section: "5"
+topics:
+    - email
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

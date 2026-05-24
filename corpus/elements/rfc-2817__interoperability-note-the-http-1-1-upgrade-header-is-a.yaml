@@ -1,0 +1,9 @@
+document: rfc-2817
+kind: interoperability-note
+summary: 'The HTTP/1.1 Upgrade header is a hop-by-hop mechanism negotiated between each adjacent pair of HTTP counterparties, not end-to-end. A proxy receiving an Upgrade header and responding with 101 changes the protocol only on its own connection segment, not the full path. This means TLS upgrade via Upgrade: alone cannot provide end-to-end security across proxies.'
+section: "5.1"
+topics:
+    - http
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2821
+kind: normative-requirement
+summary: A client MUST issue HELO or EHLO before starting a mail transaction. Servers MUST support HELO; clients SHOULD preferentially use EHLO. If the server returns 'command not recognized' to EHLO, the client SHOULD fall back to HELO.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

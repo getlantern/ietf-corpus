@@ -1,0 +1,10 @@
+document: rfc-2817
+kind: normative-requirement
+summary: A proxy MUST NOT respond with any 2xx status code to a CONNECT request unless it has either a direct or tunnel connection established to the target authority. If the proxy can only reach the origin through another proxy, it SHOULD issue a CONNECT to that next proxy.
+section: "5.3"
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

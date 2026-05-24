@@ -1,0 +1,9 @@
+document: rfc-2834
+kind: normative-requirement
+summary: To select the authoritative HARP service, a port SHALL send an InHARP_REQUEST to the first HRAL address (broadcast). If the port sees its own request, the broadcast entry is authoritative. On non-broadcast networks, the port SHALL send to remaining HRAL entries; the authoritative server is the one appearing first in the HRAL that responds.
+section: 5.1.1
+rfc2119_level: SHALL
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

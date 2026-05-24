@@ -1,0 +1,10 @@
+document: rfc-2817
+kind: security-consideration
+summary: A man-in-the-middle attacker can delete the Upgrade header from a client request, preventing TLS negotiation and leaving the connection in cleartext — analogous to rewriting https:// links to http://. This risk exists only when a server is willing to serve content over both secure and insecure channels. Clients that know a server is TLS-compliant can mitigate this by only using OPTIONS requests (mandatory upgrade path) rather than optional upgrade.
+section: "8"
+topics:
+    - tls
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

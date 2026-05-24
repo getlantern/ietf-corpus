@@ -1,0 +1,9 @@
+document: rfc-2817
+kind: interoperability-note
+summary: A proxy that does not recognize 426 Upgrade Required may strip the accompanying Upgrade header before forwarding, preventing the client from learning the required protocol upgrade. If a client receives 426 without an Upgrade header, it must request an end-to-end CONNECT tunnel and repeat the request.
+section: "5.1"
+topics:
+    - http
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
