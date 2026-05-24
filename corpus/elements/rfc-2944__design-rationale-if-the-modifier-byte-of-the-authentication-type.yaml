@@ -1,0 +1,9 @@
+document: rfc-2944
+kind: design-rationale
+summary: If the modifier byte of the authentication-type-pair has bits set beyond AUTH_WHO_MASK or AUTH_HOW_MASK, both bytes are included in the session key hash. This ensures the authentication type pair was correctly negotiated while maintaining backward-compatibility with existing software.
+section: "2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

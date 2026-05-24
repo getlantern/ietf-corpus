@@ -1,0 +1,9 @@
+document: rfc-2941
+kind: state-machine
+summary: Authentication negotiation begins with the server sending IAC DO AUTHENTICATION and the client responding IAC WILL AUTHENTICATION. The server then sends SEND with a type-pair list; the client replies with IS; the server responds with REPLY. Multiple IS/REPLY exchanges may occur. If no type is acceptable the client uses NULL in IS; when no agreement is possible the server sends IAC DONT AUTH.
+section: "6"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

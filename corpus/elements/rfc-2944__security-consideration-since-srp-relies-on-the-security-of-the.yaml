@@ -1,0 +1,10 @@
+document: rfc-2944
+kind: security-consideration
+summary: Since SRP relies on the security of the underlying public-key cryptosystem, the modulus n should be at least 1024 bits. Implementations should reject moduli shorter than 512 bits and must reject invalid moduli and generator parameters (non-safe-prime n or non-primitive g).
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

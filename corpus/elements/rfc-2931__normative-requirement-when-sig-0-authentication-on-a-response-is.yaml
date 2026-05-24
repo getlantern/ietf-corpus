@@ -1,0 +1,10 @@
+document: rfc-2931
+kind: normative-requirement
+summary: When SIG(0) authentication on a response is desired, the SIG RR MUST be considered the highest priority additional information. If adding the SIG(0) RR would truncate the message, the server MUST alter the response to include only the question and the SIG(0) record, with the TC bit set and RCODE 0.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

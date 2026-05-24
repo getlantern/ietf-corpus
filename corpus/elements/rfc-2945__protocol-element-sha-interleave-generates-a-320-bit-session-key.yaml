@@ -1,0 +1,9 @@
+document: rfc-2945
+kind: protocol-element
+summary: SHA_Interleave generates a 320-bit session key from the shared secret S. Leading zero bytes are stripped; if the result has odd length, the first byte is also removed. Even-indexed bytes are hashed with SHA1 to get G, odd-indexed bytes to get H; the output interleaves G and H byte by byte.
+section: "3.1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

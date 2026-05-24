@@ -1,0 +1,8 @@
+document: rfc-2945
+kind: wire-format
+summary: Integers are encoded as big-endian byte strings (base 256, most significant digit first). An n-byte string S converts to integer i = S[n-1] + 256*S[n-2] + ... + 256^(n-1)*S[0]. Leading zero bytes are stripped on conversion back to integer.
+section: "2"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

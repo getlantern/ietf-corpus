@@ -1,0 +1,10 @@
+document: rfc-2931
+kind: wire-format
+summary: 'For a request SIG(0), the signed data is: RDATA (SIG RDATA omitting the signature subfield) concatenated with the DNS query message including DNS header but not the UDP/IP header, computed before RR counts are adjusted for SIG(0) inclusion. Formula: data = RDATA | request - SIG(0).'
+section: "3.1"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

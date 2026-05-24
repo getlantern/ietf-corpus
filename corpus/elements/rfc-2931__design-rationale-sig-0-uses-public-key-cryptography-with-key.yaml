@@ -1,0 +1,10 @@
+document: rfc-2931
+kind: design-rationale
+summary: SIG(0) uses public key cryptography with KEY RRs stored in DNS, while TSIG uses symmetric shared-secret keyed hashes. SIG(0) operations are relatively expensive; a policy of verifying SIG(0) on all requests can cause a deadly embrace where verification attempts generate further signed requests recursively.
+section: "2.4"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2940
+kind: design-rationale
+summary: All COPS protocol statistics counters are cumulative since agent restart and are explicitly not zeroed on new connections. This preserves historical failure data across reconnections, which is useful for diagnosing recurring issues with a specific server.
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

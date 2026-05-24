@@ -1,0 +1,10 @@
+document: rfc-2931
+kind: wire-format
+summary: 'For DNS over TCP, the first packet SIG(0) is calculated as for UDP. For each subsequent packet, the signed data is: RDATA | DNS payload - SIG(0) | previous packet, where ''previous packet'' includes DNS header and the SIG(0) but not the TCP/IP header.'
+section: "3.1"
+topics:
+    - dns
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2945
+kind: design-rationale
+summary: N must be a safe prime of the form N = 2q+1 (where q is also prime) for maximum security, and g must be a generator modulo N. This ensures that for any X where 0 < X < N, there exists x such that g^x % N == X, providing the full Diffie-Hellman security guarantees.
+section: "3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

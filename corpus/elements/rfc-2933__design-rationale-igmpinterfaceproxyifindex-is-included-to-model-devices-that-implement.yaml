@@ -1,0 +1,9 @@
+document: rfc-2933
+kind: design-rationale
+summary: igmpInterfaceProxyIfIndex is included to model devices that implement IGMP proxying, where memberships on a downstream (host-side) interface trigger Host Membership Reports on an upstream (router-side) interface. Such devices implement the igmpV2RouterMIBGroup only on their router interfaces (those with non-zero proxy index), and the typical default value is 0 (no proxying).
+section: "4"
+topics:
+    - multicast
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

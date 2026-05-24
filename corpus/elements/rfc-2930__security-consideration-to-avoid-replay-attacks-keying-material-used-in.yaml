@@ -1,0 +1,11 @@
+document: rfc-2930
+kind: security-consideration
+summary: To avoid replay attacks, keying material used in any TSIG or SIG(0) authenticating a TKEY message MUST NOT have a lifetime of more than 2**31 - 1 seconds (~68 years), ensuring replays fail due to key expiration.
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2942
+kind: design-rationale
+summary: If the subkey field is not filled in, the ticket session key will be used instead as the session key for telnet encryption. The subkey is preferred because it is randomly chosen per-connection, providing better forward secrecy than reusing the ticket session key.
+section: "2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

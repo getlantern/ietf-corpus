@@ -1,0 +1,9 @@
+document: rfc-2941
+kind: security-consideration
+summary: If the selected authentication type requires encryption to be negotiated separately via TELOPT ENCRYPT (rather than as a side effect), there exists a window of vulnerability between authentication completion and the start of encryption during which an active attacker can interfere. Using ENCRYPT_USING_TELOPT eliminates this window.
+section: "5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

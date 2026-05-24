@@ -1,0 +1,9 @@
+document: rfc-2942
+kind: security-consideration
+summary: The random session key in the Kerberos V5 authenticator is critical for telnet encryption. It is strongly advised to generate it using the ticket session key cryptographically (e.g., encrypting current time with the ticket session key and correcting for key parity), since the ticket session key is assumed never disclosed to an attacker.
+section: "5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

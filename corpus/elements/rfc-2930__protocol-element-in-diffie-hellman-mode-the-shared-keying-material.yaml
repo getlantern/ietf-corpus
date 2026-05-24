@@ -1,0 +1,10 @@
+document: rfc-2930
+kind: protocol-element
+summary: 'In Diffie-Hellman mode, the shared keying material is derived as: XOR(DH_value, MD5(query_data | DH_value) | MD5(server_data | DH_value)), where query_data and server_data are nonces from the respective TKEY RR key data fields, preventing two DH key pairs from always producing the same keying material.'
+section: "4.1"
+topics:
+    - dns
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
