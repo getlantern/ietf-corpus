@@ -1,0 +1,8 @@
+document: rfc-2233
+kind: design-rationale
+summary: ifHighSpeed reports speed in Mbps units rather than as a 64-bit gauge because the current SMI does not allow 64-bit gauges, and 1 Mbps granularity provides approximately 0.02% error at 4 Gbps — considered acceptable. Splitting into high/low 32-bit objects was rejected as overly complex.
+section: 3.1.7
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

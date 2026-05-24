@@ -1,0 +1,8 @@
+document: rfc-2232
+kind: state-machine
+summary: 'dlurPuDlusSessnStatus and dlurDlusSessnStatus both use a four-state model for CPSVRMGR pipe status: reset(1), pendingActive(2), active(3), pendingInactive(4). The combined status is derived from a matrix of contention-winner and contention-loser session states; active(3) requires both sessions active, and pendingActive(2) takes precedence over pendingInactive(4).'
+section: "5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

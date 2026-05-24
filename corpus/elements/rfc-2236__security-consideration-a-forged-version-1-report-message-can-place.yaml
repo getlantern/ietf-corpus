@@ -1,0 +1,9 @@
+document: rfc-2236
+kind: security-consideration
+summary: A forged Version 1 Report Message can place a router in 'version 1 members present' state, causing it to ignore Leave messages and forward traffic to groups with no members for up to [Group Membership Interval]. Defenses are source address validation or a configuration switch to ignore Version 1 messages entirely.
+section: "10"
+topics:
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

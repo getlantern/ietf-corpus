@@ -1,0 +1,9 @@
+document: rfc-2236
+kind: normative-requirement
+summary: When transmitting packets, the 16-bit one's complement checksum MUST be computed and inserted into the Checksum field. When receiving packets, the checksum MUST be verified before processing. The checksum is always computed over the whole IP payload, even though IGMPv2 only processes the first 8 octets.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

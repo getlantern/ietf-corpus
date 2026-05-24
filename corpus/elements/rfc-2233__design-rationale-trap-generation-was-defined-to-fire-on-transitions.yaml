@@ -1,0 +1,8 @@
+document: rfc-2233
+kind: design-rationale
+summary: Trap generation was defined to fire on transitions into/out of the down state (excluding notPresent) rather than into/out of the up state. The latter was rejected because demand interfaces oscillating between up and dormant would produce asymmetric trap storms (many linkUps, no linkDowns), and a single-interface node transitioning to dormant would incorrectly generate a linkDown.
+section: 3.1.15
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

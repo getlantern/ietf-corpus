@@ -1,0 +1,8 @@
+document: rfc-2233
+kind: design-rationale
+summary: ifTable deliberately omits RowStatus and does not support interface creation/deletion. Interfaces that can be dynamically created are managed via their media-specific MIB's RowStatus object; the corresponding ifTable row appears or disappears as a side effect, with the agent choosing the ifIndex value.
+section: 3.1.17
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

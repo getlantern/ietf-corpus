@@ -1,0 +1,9 @@
+document: rfc-2236
+kind: normative-requirement
+summary: When a host leaves a multicast group, if it was the last host to reply to a Query with a Membership Report for that group, it SHOULD send a Leave Group message to the all-routers multicast group (224.0.0.2). A host without sufficient storage to track this MAY always send a Leave Group message.
+section: "3"
+rfc2119_level: SHOULD
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2236
+kind: normative-requirement
+summary: An IGMPv2 implementation MUST ignore anything past the first 8 octets while processing a recognized packet type, to maintain forward compatibility with longer future messages. The checksum, however, is always computed over the whole IP payload.
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

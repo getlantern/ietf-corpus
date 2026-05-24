@@ -1,0 +1,6 @@
+document: rfc-2244
+kind: wire-format
+summary: Strings are encoded as quoted strings (0–1024 octets, excluding NUL/CR/LF, delimited by double quotes) or literals (octet count in braces followed by CRLF then data). Literals from client to server are either synchronizing (client must await '+' continuation before sending octets) or non-synchronizing ('+' between count and closing brace, octets sent immediately).
+section: 2.6.3
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

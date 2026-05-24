@@ -1,0 +1,9 @@
+document: rfc-2233
+kind: design-rationale
+summary: The solution adopted assigns each interface sub-layer its own conceptual row in ifTable, with a new ifStackTable to identify superior/subordinate relationships via integer pointers. This supports upward and downward multiplexing (e.g., MLP, PPP over X.25), avoids requiring enumerated ifType values for every sub-layer combination, and allows IANAifType to map each sub-layer to its media-specific MIB independently.
+section: 3.1.1
+topics:
+    - snmp
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

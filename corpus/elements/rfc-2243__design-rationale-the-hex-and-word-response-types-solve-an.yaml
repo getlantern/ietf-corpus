@@ -1,0 +1,8 @@
+document: rfc-2243
+kind: design-rationale
+summary: 'The ''hex'' and ''word'' response types solve an ambiguity problem: a standard OTP response could in rare cases be valid in both hexadecimal and six-word formats (e.g., ''ABE ACE ADA ADD BAD A''). The OTP spec requires servers to try both formats, but extended responses eliminate the ambiguity by making the encoding explicit.'
+section: "3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

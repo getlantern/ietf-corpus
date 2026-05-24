@@ -1,0 +1,9 @@
+document: rfc-2243
+kind: normative-requirement
+summary: A server MUST disable all OTP access to any principal whose sequence number would be less than one, and MUST decrement the sequence number if a reinitialization response includes a valid current-OTP but the server cannot process the new-params or new-OTP for any reason.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
