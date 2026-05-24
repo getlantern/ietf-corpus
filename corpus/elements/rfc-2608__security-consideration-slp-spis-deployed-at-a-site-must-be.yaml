@@ -1,0 +1,10 @@
+document: rfc-2608
+kind: security-consideration
+summary: SLP SPIs deployed at a site MUST be unique across algorithms; an SLP SPI used for BSD=0x0002 must not be reused for another BSD. DAs will reject registrations they cannot verify, returning AUTHENTICATION_UNKNOWN, and UAs configured with SPIs MUST discard unverifiable DAAdverts.
+section: "9.2"
+topics:
+    - ldap
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

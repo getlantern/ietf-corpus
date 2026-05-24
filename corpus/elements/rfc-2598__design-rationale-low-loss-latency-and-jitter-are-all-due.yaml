@@ -1,0 +1,10 @@
+document: rfc-2598
+kind: design-rationale
+summary: Low loss, latency, and jitter are all due to queuing delays. Providing these properties for an aggregate means ensuring the aggregate sees no (or very small) queues, which requires bounding rates so that at every transit node the aggregate's maximum arrival rate is less than the aggregate's minimum departure rate.
+section: "1"
+topics:
+    - diffserv
+    - qos
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

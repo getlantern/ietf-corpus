@@ -1,0 +1,8 @@
+document: rfc-2602
+kind: security-consideration
+summary: Security for server discovery relies entirely on the ILMI management framework; there are no additional protocol security mechanisms. The service registry MIB is defined with read-only access, so user-side devices may query but not modify it via ILMI — modifications require local configuration on the ATM switch.
+section: "7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

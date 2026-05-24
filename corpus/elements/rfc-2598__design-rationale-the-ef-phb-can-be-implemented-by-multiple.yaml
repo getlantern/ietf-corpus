@@ -1,0 +1,9 @@
+document: rfc-2598
+kind: design-rationale
+summary: 'The EF PHB can be implemented by multiple queue scheduling mechanisms: a simple priority queue (best for jitter), weighted round-robin with the EF queue share equal to the configured rate, or a CBQ scheduler giving the EF queue priority up to the configured rate. Different choices yield different ancillary behaviors such as jitter seen by individual microflows.'
+section: "2.2"
+topics:
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

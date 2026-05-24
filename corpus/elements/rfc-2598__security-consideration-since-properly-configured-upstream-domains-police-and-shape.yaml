@@ -1,0 +1,9 @@
+document: rfc-2598
+kind: security-consideration
+summary: Since properly configured upstream domains police and shape EF traffic, the downstream policer should never need to drop packets. Any drops by the downstream policer or EF queue overflow should be treated as indicators of possible security attacks or serious misconfiguration and logged (e.g., via SNMP traps).
+section: "3"
+topics:
+    - diffserv
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2598
+kind: design-rationale
+summary: 'Creating the EF service has two parts: (1) configuring nodes so the aggregate has a well-defined minimum departure rate independent of dynamic node state, and (2) conditioning the aggregate via policing and shaping so its arrival rate is always less than that node''s configured minimum departure rate. The EF PHB handles part 1; boundary traffic conditioners handle part 2.'
+section: "1"
+topics:
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

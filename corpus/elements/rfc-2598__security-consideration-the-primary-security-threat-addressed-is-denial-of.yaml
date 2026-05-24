@@ -1,0 +1,10 @@
+document: rfc-2598
+kind: security-consideration
+summary: The primary security threat addressed is denial-of-service attacks where excess EF-marked traffic from an upstream domain could exhaust node resources. Strict per-domain-edge policing to a negotiated rate, with mandatory drop of excess packets and zero-rate default when no rate is negotiated, are the countermeasures.
+section: "3"
+topics:
+    - diffserv
+    - security
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

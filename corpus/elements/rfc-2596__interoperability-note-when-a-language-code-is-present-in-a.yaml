@@ -1,0 +1,8 @@
+document: rfc-2596
+kind: interoperability-note
+summary: When a language code is present in a search filter AttributeDescription, only directory attribute values matching the base attribute type or its subtype, the exact language code, and the assertion value will match. A filter for 'name;lang-en' does NOT match 'name;lang-en-US', so clients SHOULD NOT use language codes in search filter AttributeDescriptions.
+section: "3.3"
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

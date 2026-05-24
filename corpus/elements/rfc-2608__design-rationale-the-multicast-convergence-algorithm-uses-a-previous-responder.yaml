@@ -1,0 +1,9 @@
+document: rfc-2608
+kind: design-rationale
+summary: The multicast convergence algorithm uses a Previous Responder List (PRList) in retransmitted requests so that agents which already replied suppress further responses, bounding the reply storm. Once the PRList plus the request exceeds the path MTU, multicast convergence stops, accepting 'enough' rather than exhaustive results.
+section: "6.3"
+topics:
+    - ldap
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

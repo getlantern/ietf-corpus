@@ -1,0 +1,10 @@
+document: rfc-2608
+kind: security-consideration
+summary: Authentication Blocks use a 32-bit Timestamp (seconds since 1970-01-01) to prevent replay attacks; the authenticator is invalid after this time. The Timestamp wraps in 2106, after which it is relative to the wrap epoch. UAs MUST discard DAAdverts or SAAdverts that fail signature verification.
+section: "9.2"
+topics:
+    - ldap
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
