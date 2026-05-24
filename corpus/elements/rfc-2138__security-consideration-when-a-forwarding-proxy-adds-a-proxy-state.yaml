@@ -1,0 +1,9 @@
+document: rfc-2138
+kind: security-consideration
+summary: When a forwarding proxy adds a Proxy-State attribute to a request and removes it from a response, the MD5 signature over the full packet contents is invalidated; the proxy MUST re-sign the response packet to maintain authenticator integrity.
+section: "3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

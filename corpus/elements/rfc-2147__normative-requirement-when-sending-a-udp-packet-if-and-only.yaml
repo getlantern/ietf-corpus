@@ -1,0 +1,10 @@
+document: rfc-2147
+kind: normative-requirement
+summary: When sending a UDP packet, if and only if the length of the UDP header plus data is greater than 65,535, the length field in the UDP header MUST be set to zero to indicate that the Jumbo Payload pseudo-header length should be used instead.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

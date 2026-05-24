@@ -1,0 +1,9 @@
+document: rfc-2147
+kind: design-rationale
+summary: The UDP length field size cannot be changed, so a zero value was chosen to signal that the field should be ignored and the pseudo-header length used instead. This works because the minimum valid UDP length is 8 (the header alone), making zero otherwise invalid.
+section: "2"
+topics:
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

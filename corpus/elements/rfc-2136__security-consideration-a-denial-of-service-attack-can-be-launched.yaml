@@ -1,0 +1,9 @@
+document: rfc-2136
+kind: security-consideration
+summary: A denial-of-service attack can be launched by flooding an update forwarder with TCP sessions containing updates that the primary master will refuse. The synchronous TCP forwarding requirement means the forwarder holds connections open until the primary master responds, enabling resource exhaustion.
+section: "8.2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,8 @@
+document: rfc-2136
+kind: interoperability-note
+summary: A zone's SOA SERIAL should never be set to zero due to interoperability problems with widely deployed DNS implementations. If incrementing SERIAL would produce zero (wraparound at 2**32), it must be incremented again or set to one.
+section: "7.11"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

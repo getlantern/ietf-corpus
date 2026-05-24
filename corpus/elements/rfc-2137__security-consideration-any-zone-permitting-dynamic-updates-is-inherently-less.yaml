@@ -1,0 +1,9 @@
+document: rfc-2137
+kind: security-consideration
+summary: Any zone permitting dynamic updates is inherently less secure than a static secure zone maintained offline. Secure dynamic update requires on-line re-signing of the zone SOA RR, meaning compromise of the primary server host could lead to arbitrary SOA serial number changes.
+section: "5"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

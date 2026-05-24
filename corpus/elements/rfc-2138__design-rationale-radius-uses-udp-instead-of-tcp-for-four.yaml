@@ -1,0 +1,9 @@
+document: rfc-2138
+kind: design-rationale
+summary: 'RADIUS uses UDP instead of TCP for four reasons: (1) failover to an alternate server requires retransmission state above the transport layer regardless; (2) the protocol tolerates several-second delays but not multi-minute TCP retransmit waits; (3) the stateless nature eliminates connection teardown complexity; (4) UDP allows trivially multi-threaded servers where each spawned process responds directly via a single UDP send.'
+section: "2.3"
+topics:
+    - security
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

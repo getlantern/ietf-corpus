@@ -1,0 +1,9 @@
+document: rfc-2136
+kind: normative-requirement
+summary: When adding an SOA RR, if an SOA already exists and the new SOA.SERIAL is lower than or equal to the current SOA.SERIAL per RFC 1982 arithmetic, the update RR is silently ignored. An attempt to add a new SOA where none exists is also treated as a no-op.
+section: 3.4.2.2
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

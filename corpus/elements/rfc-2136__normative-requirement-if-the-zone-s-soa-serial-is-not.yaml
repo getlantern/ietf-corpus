@@ -1,0 +1,9 @@
+document: rfc-2136
+kind: normative-requirement
+summary: If the zone's SOA SERIAL is not changed by an update, the server shall increment it automatically before the SOA or any changed RR is included in any response or transfer. The auto-increment deferral period must be no more than one-third of the zone refresh time, defaulting to the lesser of that maximum and 300 seconds.
+section: "3.6"
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

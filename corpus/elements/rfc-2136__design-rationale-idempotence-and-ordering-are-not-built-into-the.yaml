@@ -1,0 +1,8 @@
+document: rfc-2136
+kind: design-rationale
+summary: 'Idempotence and ordering are not built into the protocol but can be achieved by applications using a ''marker RR'': delete the original marker and add a new one with different RDATA, specifying the original as a prerequisite. Only the first copy of a duplicated request will find the marker present.'
+section: "5.3"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

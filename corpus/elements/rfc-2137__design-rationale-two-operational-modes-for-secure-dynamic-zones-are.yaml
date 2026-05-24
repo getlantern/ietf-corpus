@@ -1,0 +1,10 @@
+document: rfc-2137
+kind: design-rationale
+summary: Two operational modes for secure dynamic zones are defined. Mode A keeps the zone key offline for maximum static data security; dynamic RRs are signed by their authorizing update keys and stored in a separate online dynamic master file. Mode B keeps the zone key online, requiring more server computation but providing stronger security for dynamically added data (covered by AXFR SIG and NXT RRs).
+section: "2"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

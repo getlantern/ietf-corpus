@@ -1,0 +1,9 @@
+document: rfc-2137
+kind: design-rationale
+summary: Mode A minimizes server computation (signature verification is cheaper than signing) and allows fine-grained update control via signatory field bits, but dynamically added RRs are not covered by the AXFR SIG or NXT RRs, creating gaps in zone transfer security and authenticated denial-of-existence for dynamic types.
+section: "2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

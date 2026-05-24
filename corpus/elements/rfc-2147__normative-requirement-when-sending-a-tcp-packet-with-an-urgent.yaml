@@ -1,0 +1,10 @@
+document: rfc-2147
+kind: normative-requirement
+summary: When sending a TCP packet with an Urgent Pointer and the offset from the Sequence Number to the Urgent Pointer is greater than 65535 and also greater than or equal to the TCP data length, the Urgent field MUST be filled with 65535 and normal TCP processing continues.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

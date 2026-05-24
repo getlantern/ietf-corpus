@@ -1,0 +1,9 @@
+document: rfc-2137
+kind: design-rationale
+summary: Wildcard update keys retain authority for any name matching them even when specific names within their scope exist (key punch-through). Without this rule, creating a specific name would hide the wildcard KEY RR, making subsequent updates to that name impossible without first creating and signing a per-name KEY RR copy — a process that cannot be zone-signed by the original authorizing key.
+section: "3.3"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

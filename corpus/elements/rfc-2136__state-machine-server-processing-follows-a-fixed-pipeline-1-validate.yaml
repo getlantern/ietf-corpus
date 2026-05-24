@@ -1,0 +1,8 @@
+document: rfc-2136
+kind: state-machine
+summary: 'Server processing follows a fixed pipeline: (1) validate Zone Section (FORMERR/NOTAUTH/forward), (2) check Prerequisites (NXDOMAIN/YXDOMAIN/NXRRSET/YXRRSET/NOTZONE/FORMERR), (3) check requestor permissions (REFUSED or continue), (4) prescan Update Section (FORMERR/NOTZONE), (5) apply updates (SERVFAIL on error), (6) return NOERROR.'
+section: "3"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

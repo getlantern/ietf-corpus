@@ -1,0 +1,9 @@
+document: rfc-2136
+kind: normative-requirement
+summary: The server must ensure atomicity with respect to concurrent UPDATE or QUERY transactions. No two transactions can be processed concurrently if either depends on the results of the other; UPDATE transactions that modify the same names or RRsets must be serialized.
+section: "3.7"
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

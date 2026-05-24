@@ -1,0 +1,6 @@
+document: rfc-2155
+kind: design-rationale
+summary: Agents strip non-significant trailing blanks from SNA names in all MIB variables (e.g., '#INTER  ' is returned as '#INTER'), because SNA permits blank-padding but SNMP consumers should not need to handle it. The all-blank mode name (8 spaces) is the sole exception, preserved because blank is a meaningful value in that context.
+section: "3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

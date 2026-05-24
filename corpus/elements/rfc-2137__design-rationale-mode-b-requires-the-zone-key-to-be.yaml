@@ -1,0 +1,9 @@
+document: rfc-2137
+kind: design-rationale
+summary: Mode B requires the zone key to be on-line, which imposes substantially higher server CPU load (signing is more expensive than verification) and reduces static data security because the primary server's compromise could allow false data to be authenticated to secondaries. However, it provides permanent, fully-integrated protection for dynamic data including zone transfers and NXT coverage.
+section: "2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

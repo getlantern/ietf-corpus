@@ -1,0 +1,9 @@
+document: rfc-2138
+kind: normative-requirement
+summary: A NAS that does not support challenge/response MUST treat an Access-Challenge as though it had received an Access-Reject. A NAS that does support it SHOULD send a new Access-Request with a new ID, new Request Authenticator, the encrypted user response as User-Password, and the State attribute from the challenge unchanged.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

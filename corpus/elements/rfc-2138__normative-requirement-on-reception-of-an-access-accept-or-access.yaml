@@ -1,0 +1,10 @@
+document: rfc-2138
+kind: normative-requirement
+summary: On reception of an Access-Accept or Access-Challenge, the Response Authenticator field MUST contain the correct MD5 hash computed as MD5(Code+ID+Length+RequestAuth+Attributes+Secret); packets with an invalid Response Authenticator MUST be silently discarded.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

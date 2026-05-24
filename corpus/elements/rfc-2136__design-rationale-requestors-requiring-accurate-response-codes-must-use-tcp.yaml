@@ -1,0 +1,8 @@
+document: rfc-2136
+kind: design-rationale
+summary: Requestors requiring accurate response codes must use TCP because a UDP response may be lost, causing a retry; the duplicate request may then fail (prerequisites no longer satisfied) even though the original update succeeded. Forwarders receiving via TCP must therefore also forward via TCP.
+section: "7.8"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"
