@@ -1,0 +1,9 @@
+document: rfc-3296
+kind: normative-requirement
+summary: For modifyDN operations, if the newSuperior is a referral object or subordinate to one, the server SHOULD return affectsMultipleDSAs. If the newRDN already exists as a referral object, the server SHOULD return affectsMultipleDSAs instead of entryAlreadyExists.
+section: 5.6.2
+rfc2119_level: SHOULD
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3295
+kind: security-consideration
+summary: The GSMP MIB contains writable objects (e.g., gsmpControllerRowStatus, gsmpSwitchRowStatus, encapsulation table entries) whose unauthorized modification could disrupt GSMP sessions and switch control. Implementations MUST use SNMPv3 with authentication and privacy (USM, RFC 2574) or equivalent security to protect these objects from unauthorized access.
+section: "8"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

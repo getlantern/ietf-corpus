@@ -1,0 +1,9 @@
+document: rfc-3289
+kind: design-rationale
+summary: The MIB separates structural elements (data path linkage tables) from parameter elements (parameterization tables) so that a single parameter block such as a token bucket specification can be configured once and reused across many interfaces. Reuse of structural elements is explicitly discouraged because it would share counters, losing per-path monitoring information.
+section: "2.2"
+topics:
+    - diffserv
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

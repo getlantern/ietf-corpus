@@ -1,0 +1,9 @@
+document: rfc-3292
+kind: design-rationale
+summary: The Multicast M flag in Add Branch is an optional hint rather than a binding directive; its purpose is to allow switches that use different data structures for unicast vs. multicast connections to pre-allocate the correct structure on the first branch, avoiding the cost of deleting a point-to-point structure and rebuilding it as multicast when the second branch arrives.
+section: "4.2"
+topics:
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

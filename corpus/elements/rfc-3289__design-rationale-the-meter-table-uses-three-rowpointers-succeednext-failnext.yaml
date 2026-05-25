@@ -1,0 +1,10 @@
+document: rfc-3289
+kind: design-rationale
+summary: The Meter Table uses three RowPointers (succeedNext, failNext, specific) rather than a richer N-rate structure because of SNMP modeling constraints. Multi-rate meters such as trTCM are expressed by chaining multiple meter entries through the failNext link, with diffServTBParamType in the first entry indicating the overall algorithm.
+section: 3.3.1
+topics:
+    - diffserv
+    - snmp
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

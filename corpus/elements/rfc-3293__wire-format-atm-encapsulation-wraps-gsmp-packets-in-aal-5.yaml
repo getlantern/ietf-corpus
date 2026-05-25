@@ -1,0 +1,9 @@
+document: rfc-3293
+kind: wire-format
+summary: ATM encapsulation wraps GSMP packets in AAL-5 CPCS-PDU with an LLC/SNAP header. The LLC field is 0xAA-AA-03 (3 bytes) and the SNAP field is 0x00-00-00-88-0C (5 bytes), followed by the GSMP message, 0–47 bytes of padding, and an 8-byte AAL-5 CPCS-PDU trailer.
+section: "2"
+topics:
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

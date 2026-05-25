@@ -1,0 +1,8 @@
+document: rfc-3295
+kind: design-rationale
+summary: The GSMP notification map in each entity table is not a duplication of the SNMP notification originator filter (RFC 2573), but a complement that configures the relationship between GSMP events and SNMP notifications within the GSMP agent itself. SNMP notifications and GSMP events operate on different timescales; without agent-level filtering, events like invalid label in an ATM switch could cause mass SNMP notification flooding.
+section: 3.4.5
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

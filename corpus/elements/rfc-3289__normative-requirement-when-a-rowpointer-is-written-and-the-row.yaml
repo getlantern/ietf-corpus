@@ -1,0 +1,10 @@
+document: rfc-3289
+kind: normative-requirement
+summary: When a RowPointer is written and the row it points to does not exist, the SNMP SET MUST return an inconsistentValue error. When a RowStatus is set to 'destroy' but the usage counter is non-zero, the SET returns no error and the row is left intact; the agent removes the row only when the usage counter reaches zero.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - diffserv
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

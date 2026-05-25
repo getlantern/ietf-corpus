@@ -1,0 +1,10 @@
+document: rfc-3291
+kind: design-rationale
+summary: InetAutonomousSystemNumber uses Unsigned32 without a range restriction (rather than 0..65535) in order to forward-compatibly support a future expansion of the AS number space to 32 bits, even though current AS numbers are limited to 16 bits.
+section: "3"
+topics:
+    - snmp
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
