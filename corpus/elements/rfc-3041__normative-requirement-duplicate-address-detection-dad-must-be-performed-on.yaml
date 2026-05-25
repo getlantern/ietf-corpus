@@ -1,0 +1,9 @@
+document: rfc-3041
+kind: normative-requirement
+summary: Duplicate Address Detection (DAD) must be performed on a generated temporary address. If DAD indicates the address is in use, a new randomized interface identifier must be generated and the process repeated up to 5 times. After 5 consecutive failures, the implementation must log a system error and cease attempting to generate temporary addresses for that interface.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3042
+kind: design-rationale
+summary: Sending new data (rather than retransmitting old data) on the first two duplicate ACKs is more robust to packet reordering, since retransmitting old packets on early duplicate ACKs could cause spurious retransmissions when the original packet was merely reordered.
+section: "2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

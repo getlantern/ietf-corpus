@@ -1,0 +1,10 @@
+document: rfc-3042
+kind: security-consideration
+summary: False duplicate ACKs — either from network duplication or misbehaving receivers — could subvert end-to-end congestion control by triggering additional transmissions under Limited Transmit. However, the sender is constrained to exceed cwnd by less than the duplicate ACK threshold (three segments), limiting the damage.
+section: "4"
+topics:
+    - tcp
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

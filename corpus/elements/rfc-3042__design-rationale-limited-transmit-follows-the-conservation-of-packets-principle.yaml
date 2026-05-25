@@ -1,0 +1,9 @@
+document: rfc-3042
+kind: design-rationale
+summary: 'Limited Transmit follows the ''conservation of packets'' principle: each of the first two duplicate ACKs indicates a segment has left the network, so transmitting new segments does not deviate from TCP''s congestion control principles and the sender has no reason to assume the current congestion state is inaccurate.'
+section: "2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3042
+kind: design-rationale
+summary: Limited Transmit is designed to enable Fast Retransmit (which requires three duplicate ACKs) in situations where the congestion window is too small to generate three duplicate ACKs naturally. With cwnd of three segments and one drop, only two duplicate ACKs arrive, forcing an RTO without this mechanism.
+section: "1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

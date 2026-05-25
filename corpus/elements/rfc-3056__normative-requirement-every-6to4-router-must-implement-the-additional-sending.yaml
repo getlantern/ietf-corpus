@@ -1,0 +1,10 @@
+document: rfc-3056
+kind: normative-requirement
+summary: 'Every 6to4 router MUST implement the additional sending rule: if the next-hop IPv6 address matches 2002::/16 and does not match a local site prefix, apply security checks, encapsulate in IPv4 with destination equal to the V4ADDR extracted from the next-hop address, and queue for IPv4 forwarding.'
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

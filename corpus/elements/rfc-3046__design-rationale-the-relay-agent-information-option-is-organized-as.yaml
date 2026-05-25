@@ -1,0 +1,8 @@
+document: rfc-3046
+kind: design-rationale
+summary: The Relay Agent Information option is organized as a single DHCP option with sub-options (rather than multiple independent options) specifically so that future DHCP authentication mechanisms can unambiguously omit the entire block from integrity calculations, and so the relay agent can cleanly strip it before forwarding to the client.
+section: "5.0"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

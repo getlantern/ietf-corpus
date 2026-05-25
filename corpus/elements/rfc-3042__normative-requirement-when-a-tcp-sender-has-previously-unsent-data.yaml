@@ -1,0 +1,10 @@
+document: rfc-3042
+kind: normative-requirement
+summary: When a TCP sender has previously unsent data queued for transmission, it SHOULD use the Limited Transmit algorithm and transmit new data upon the arrival of the first two consecutive duplicate ACKs, provided the receiver's advertised window allows it and outstanding data would remain ≤ cwnd + 2 segments.
+section: "2"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

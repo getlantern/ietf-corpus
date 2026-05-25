@@ -1,0 +1,9 @@
+document: rfc-3056
+kind: state-machine
+summary: 'Packet processing at a 6to4 router has two states: (1) outbound — if next-hop matches 2002::/16 and is non-local, encapsulate in IPv4 and forward; (2) inbound — if IPv4 Protocol is 41, decapsulate and submit to IPv6 routing. Both transitions require a security check before processing.'
+section: "5.3"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,7 @@
+document: rfc-3046
+kind: normative-requirement
+summary: In the absence of a configurable maximum packet size, the relay agent SHALL NOT increase a forwarded DHCP packet size to exceed the MTU of the forwarding interface. If a size limit is configured and would be exceeded by adding the option, the packet SHALL be forwarded without the option and an error counter SHOULD be incremented.
+section: "2.1"
+rfc2119_level: SHALL
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

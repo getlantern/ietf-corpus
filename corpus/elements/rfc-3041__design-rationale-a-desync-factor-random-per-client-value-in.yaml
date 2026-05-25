@@ -1,0 +1,9 @@
+document: rfc-3041
+kind: design-rationale
+summary: A DESYNC_FACTOR (random per-client value in range 0–MAX_DESYNC_FACTOR) is subtracted from TEMP_PREFERRED_LIFETIME when computing a temporary address's preferred lifetime. This prevents all clients from synchronizing and regenerating new addresses at exactly the same time, which would create a detectable traffic pattern.
+section: "3.3"
+topics:
+    - ip
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

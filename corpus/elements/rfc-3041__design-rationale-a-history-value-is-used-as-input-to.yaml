@@ -1,0 +1,10 @@
+document: rfc-3041
+kind: design-rationale
+summary: A history value is used as input to successive MD5 computations rather than pure random generation. This avoids the failure mode where two nodes with a flawed RNG generate the same randomized identifier, detect the collision via DAD, and then generate the same identifier again; using the (often globally unique) IEEE identifier in the hash input ensures divergence on retry.
+section: 3.2.1
+topics:
+    - ip
+    - privacy
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
