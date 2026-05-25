@@ -1,0 +1,9 @@
+document: rfc-3090
+kind: design-rationale
+summary: The closest security root is used rather than starting from the highest known secure root in order to avoid encountering a NULL key in an intermediate unsecured zone that would incorrectly cause a resolver to conclude that a more-specific secured subzone is unsecured.
+section: 1.2.1
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

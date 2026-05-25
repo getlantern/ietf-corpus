@@ -1,0 +1,9 @@
+document: rfc-3081
+kind: design-rationale
+summary: Large messages should be segmented into frames no larger than two-thirds of TCP's negotiated maximum segment size, frames for different channels should be sent round-robin, and a single consolidating SEQ frame may be sent when multiple frames arrive simultaneously — these guidelines balance performance and fairness.
+section: 3.1.4
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

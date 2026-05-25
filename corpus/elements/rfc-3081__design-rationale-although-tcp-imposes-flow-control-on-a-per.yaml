@@ -1,0 +1,9 @@
+document: rfc-3081
+kind: design-rationale
+summary: Although TCP imposes flow control on a per-connection basis, when multiple channels are simultaneously in use on a BEEP session, BEEP must provide a mechanism to avoid starvation and deadlock; to achieve this, BEEP re-introduces window-based flow control with a sliding window per channel.
+section: "3"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

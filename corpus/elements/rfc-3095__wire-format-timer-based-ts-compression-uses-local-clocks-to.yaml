@@ -1,0 +1,9 @@
+document: rfc-3095
+kind: wire-format
+summary: Timer-based TS compression uses local clocks to approximate the scaled TS (T_approx = T_ref + (a_n - a_ref) / TIME_STRIDE), transmitting only k LSBs as refinement. The bit count k = ceiling(log2(2*J+1)) where J = Max_Jitter_BC + Max_Jitter_CD + 2, accounting for observed jitter, expected channel jitter, and clock quantization error.
+section: 4.5.4
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

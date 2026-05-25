@@ -1,0 +1,9 @@
+document: rfc-3095
+kind: wire-format
+summary: LSB encoding transmits the k least significant bits of a field. The decompressor recovers the original value using interpretation interval f(v_ref, k) = [v_ref - p, v_ref + (2^k - 1) - p], where p is tuned to the expected change pattern (p=-1 for always-increasing, p=0 for non-decreasing, p=2^(k-1)-1 for small deviations).
+section: 4.5.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

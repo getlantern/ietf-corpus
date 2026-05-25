@@ -1,0 +1,7 @@
+document: rfc-3080
+kind: normative-requirement
+summary: If a BEEP peer acting as server sends a pre-emptive negative reply before receiving the final MSG frame, it MUST ignore subsequent MSG frames for that message. If the client receives a negative reply before sending the final frame, it MUST send a MSG frame with continuation '.' and zero-length payload.
+section: 2.6.3
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

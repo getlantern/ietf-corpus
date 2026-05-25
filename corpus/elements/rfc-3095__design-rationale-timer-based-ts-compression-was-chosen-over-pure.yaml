@@ -1,0 +1,9 @@
+document: rfc-3095
+kind: design-rationale
+summary: Timer-based TS compression was chosen over pure W-LSB compression because it provides a constant compressed TS size regardless of silence interval length. Other techniques require bits proportional to the duration of a preceding silence period at talkspurt start; timer-based compression avoids this and requires no clock synchronization between compressor and decompressor.
+section: 4.5.4
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

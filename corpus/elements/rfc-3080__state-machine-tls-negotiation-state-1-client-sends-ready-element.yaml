@@ -1,0 +1,8 @@
+document: rfc-3080
+kind: state-machine
+summary: 'TLS negotiation state: (1) client sends ''ready'' element in channel creation and stops sending traffic; (2) server, upon processing ''ready'', drains pending replies then sends ''proceed'', implicitly closes all channels including channel zero; (3) client receives ''proceed'', implicitly closes all channels and begins TLS handshake; (4) upon completion (success or failure) both peers issue new greetings.'
+section: 3.1.3
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

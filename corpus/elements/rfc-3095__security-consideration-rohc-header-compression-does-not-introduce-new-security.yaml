@@ -1,0 +1,10 @@
+document: rfc-3095
+kind: security-consideration
+summary: ROHC header compression does not introduce new security vulnerabilities but concentrates context information at compression endpoints. If confidentiality is needed, headers should be encrypted after compression or the entire compressed packet should be encrypted. The CRC mechanisms prevent incorrect decompressed headers from being delivered, limiting damage propagation from residual bit errors.
+section: "7"
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

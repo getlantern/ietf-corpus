@@ -1,0 +1,10 @@
+document: rfc-3095
+kind: design-rationale
+summary: ROHC was designed because existing CRTP fails on lossy cellular links with long RTTs (up to 100-200 ms). Each lost packet on such a link causes a burst of subsequent packet losses while context is out of sync, degrading voice quality. ROHC uses local context repair with CRC verification to avoid RTT-dependent recovery.
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

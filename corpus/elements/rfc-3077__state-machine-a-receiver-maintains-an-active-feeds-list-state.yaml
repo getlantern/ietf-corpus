@@ -1,0 +1,8 @@
+document: rfc-3077
+kind: state-machine
+summary: 'A receiver maintains an active feeds list. State transitions: EMPTY → ACTIVE (upon JOIN from new FUIP); ACTIVE → ACTIVE (timer reset on duplicate JOIN sequence); ACTIVE → UPDATED (new sequence number in JOIN); ACTIVE → REMOVED (LEAVE received or HELLO_LEAVE timer expires).'
+section: "7.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

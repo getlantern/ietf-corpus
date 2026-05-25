@@ -1,0 +1,9 @@
+document: rfc-3095
+kind: state-machine
+summary: The compressor has three states — IR (Initialization and Refresh), FO (First Order), SO (Second Order) — starting at IR. Upward transitions occur when the compressor is confident the decompressor has required context; downward transitions occur on header pattern changes, NACKs, or timeouts. SO achieves optimal compression where only the SN needs to be sent.
+section: 4.3.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

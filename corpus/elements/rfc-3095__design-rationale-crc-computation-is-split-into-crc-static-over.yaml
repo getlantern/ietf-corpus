@@ -1,0 +1,10 @@
+document: rfc-3095
+kind: design-rationale
+summary: CRC computation is split into CRC-STATIC (over unchanging fields) and CRC-DYNAMIC (over changing fields) to reduce per-packet computation cost. The intermediate CRC result after processing static fields can be cached and reused across many packets; only the CRC-DYNAMIC portion must be recomputed for each packet.
+section: "5.9"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3075
+kind: security-consideration
+summary: Algorithm and key length choices critically affect security. MD5 is NOT RECOMMENDED; SHA-1 is REQUIRED but future stronger algorithms are anticipated. Applications must ensure that algorithm identifiers in SignedInfo cannot be substituted by attackers, which the design mitigates by signing the algorithm URIs.
+section: "8.3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

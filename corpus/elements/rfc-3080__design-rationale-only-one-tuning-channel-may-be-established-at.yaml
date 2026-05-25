@@ -1,0 +1,6 @@
+document: rfc-3080
+kind: design-rationale
+summary: Only one tuning channel may be established at any given time, in contrast to multiple simultaneous data exchange channels. This is because tuning channels (transport security, authentication) perform initialization with global session impact and must not be run concurrently to avoid race conditions on session state.
+section: "2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

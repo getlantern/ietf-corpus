@@ -1,0 +1,10 @@
+document: rfc-3095
+kind: wire-format
+summary: Offset IP-ID encoding compresses the difference (IP-ID - RTP SN) using W-LSB rather than IP-ID itself, exploiting that both fields typically increment together. When the source uses random IP-IDs (RND flag set), the field is sent uncompressed. Non-network-byte-order IP-IDs are handled by byte-swapping before compression (NBO flag).
+section: 4.5.5
+topics:
+    - ip
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

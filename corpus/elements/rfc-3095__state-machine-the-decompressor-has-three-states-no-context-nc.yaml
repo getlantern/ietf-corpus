@@ -1,0 +1,9 @@
+document: rfc-3095
+kind: state-machine
+summary: The decompressor has three states — No Context (NC), Static Context (SC), Full Context (FC) — starting at NC. A successful decompression of an IR packet can advance directly to FC. Repeated CRC failures in FC drop back to SC; repeated failures in SC drop to NC. FC is considered a stable operating state.
+section: 4.3.2
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

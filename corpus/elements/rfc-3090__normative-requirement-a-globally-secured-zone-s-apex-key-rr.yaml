@@ -1,0 +1,11 @@
+document: rfc-3090
+kind: normative-requirement
+summary: A globally secured zone's apex KEY RR set MUST be signed by a private key belonging to the parent zone, whose public companion MUST be a zone signing KEY RR of a mandatory-to-implement algorithm owned by the parent's apex. If a conforming parent signature cannot be obtained, the child zone cannot be considered globally secured.
+section: 2.1.b
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

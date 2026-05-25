@@ -1,0 +1,11 @@
+document: rfc-3095
+kind: design-rationale
+summary: 'The five header fields requiring special compression treatment were identified by analysis: IPv4 Identification (16 bits), UDP Checksum (16 bits), RTP Marker (1 bit), RTP Sequence Number (16 bits), and RTP Timestamp (32 bits). These are the only fields needing sophisticated mechanisms; all other fields can be compressed away as static or rarely-changing.'
+section: "3.4"
+topics:
+    - rtp
+    - realtime
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

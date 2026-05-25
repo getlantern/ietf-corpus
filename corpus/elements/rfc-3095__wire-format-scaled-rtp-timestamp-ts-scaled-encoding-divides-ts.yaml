@@ -1,0 +1,9 @@
+document: rfc-3095
+kind: wire-format
+summary: Scaled RTP Timestamp (TS_SCALED) encoding divides TS by TS_STRIDE before W-LSB compression, saving floor(log2(TS_STRIDE)) bits per packet. The relationship TS = TS_SCALED * TS_STRIDE + TS_OFFSET is maintained; TS_STRIDE is transmitted explicitly and TS_OFFSET is derived implicitly from absolute TS values in IR packets.
+section: 4.5.3
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
