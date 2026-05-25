@@ -1,0 +1,10 @@
+document: rfc-3262
+kind: normative-requirement
+summary: A UAS MUST send any non-100 provisional response reliably if the initial request contained a Require header field with the option tag 100rel. If unwilling, it MUST reject the initial request with a 420 (Bad Extension) and include an Unsupported header field containing 100rel.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

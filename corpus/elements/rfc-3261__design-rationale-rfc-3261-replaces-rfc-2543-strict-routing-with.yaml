@@ -1,0 +1,8 @@
+document: rfc-3261
+kind: design-rationale
+summary: RFC 3261 replaces RFC 2543 strict routing with loose routing, separating the final destination (Request-URI) from intermediate proxies (Route header). Strict routing destroyed the Request-URI when a Route header was present, making it impossible to route to a specific target through a configured proxy set and causing interoperability problems with chained proxies.
+section: "6"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3261
+kind: design-rationale
+summary: INVITE uses a three-way handshake (INVITE / 2xx / ACK) rather than a two-way exchange because sessions require resource allocation (media ports, codec negotiation) and the callee must know the caller received the final response before assuming the session is established. The ACK also handles the long delay between ringing and answering, during which retransmitted 200 OKs would otherwise be ambiguous.
+section: "4"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

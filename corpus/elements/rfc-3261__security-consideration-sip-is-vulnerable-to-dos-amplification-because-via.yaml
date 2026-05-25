@@ -1,0 +1,9 @@
+document: rfc-3261
+kind: security-consideration
+summary: SIP is vulnerable to DoS amplification because Via headers can be forged with a third party's IP address, causing SIP elements to flood that address with responses. Implementations SHOULD use TLS (which prevents source-address spoofing) and SHOULD authenticate requests to reduce amplification risk.
+section: 26.1.5
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

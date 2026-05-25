@@ -1,0 +1,9 @@
+document: rfc-3261
+kind: normative-requirement
+summary: A UAS receiving a request with a Require header listing unsupported option tags MUST reject the request with 420 (Bad Extension) and list unrecognized tags in an Unsupported header field. A proxy encountering an unrecognized Proxy-Require tag MUST similarly return 420.
+section: 8.2.2.3
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

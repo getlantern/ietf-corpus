@@ -1,0 +1,11 @@
+document: rfc-3246
+kind: security-consideration
+summary: To protect against denial-of-service attacks, the edge of a DS domain SHOULD strictly police all EF-marked packets to a negotiated rate, dropping excess packets. If two adjacent domains have not negotiated an EF rate, the downstream domain SHOULD use 0 as the rate (i.e., drop all EF-marked packets).
+section: "3"
+rfc2119_level: SHOULD
+topics:
+    - diffserv
+    - security
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

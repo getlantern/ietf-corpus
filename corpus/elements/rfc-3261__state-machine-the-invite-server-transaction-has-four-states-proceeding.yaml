@@ -1,0 +1,8 @@
+document: rfc-3261
+kind: state-machine
+summary: 'The INVITE server transaction has four states: Proceeding (retransmits latest provisional on INVITE retransmissions), Completed (3xx-6xx sent; retransmits on Timer G for unreliable transport, awaits ACK), Confirmed (ACK received; Timer I absorbs ACK retransmissions), and Terminated. 2xx responses are passed directly to the TU and bypass the server transaction.'
+section: 17.2.1
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

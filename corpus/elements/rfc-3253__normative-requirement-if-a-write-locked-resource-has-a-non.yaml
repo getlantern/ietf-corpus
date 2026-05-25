@@ -1,0 +1,9 @@
+document: rfc-3253
+kind: normative-requirement
+summary: If a write-locked resource has a non-computed versioning property, that property value MUST NOT be changed without the appropriate lock token. Every versioning method other than REPORT MUST fail with 423 (Locked) if the resource is write-locked and the token is absent.
+section: "1.8"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

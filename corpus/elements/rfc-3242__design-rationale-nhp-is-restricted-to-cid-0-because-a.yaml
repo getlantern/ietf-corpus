@@ -1,0 +1,8 @@
+document: rfc-3242
+kind: design-rationale
+summary: NHP is restricted to CID=0 because a no-header packet cannot carry a context identifier, making it impossible for the decompressor to associate an NHP with any stream other than the default context. This constraint is inherent to the zero-overhead design.
+section: "4.7"
+topics:
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

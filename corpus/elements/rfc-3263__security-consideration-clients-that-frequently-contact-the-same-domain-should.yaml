@@ -1,0 +1,11 @@
+document: rfc-3263
+kind: security-consideration
+summary: Clients that frequently contact the same domain SHOULD cache whether NAPTR records contain SIPS entries. If such records were previously present but disappear in later queries, this indicates a potential attack, and the client SHOULD generate an alert and MAY reject the request.
+section: "7"
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

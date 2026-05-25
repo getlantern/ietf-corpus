@@ -1,0 +1,9 @@
+document: rfc-3253
+kind: normative-requirement
+summary: If a method precondition or postcondition is not satisfied, the response status MUST be 403 (Forbidden) if the request should not be repeated, or 409 (Conflict) if the user might be able to resolve the conflict. The appropriate XML element MUST be returned as a child of DAV:error in the response body.
+section: "1.6"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

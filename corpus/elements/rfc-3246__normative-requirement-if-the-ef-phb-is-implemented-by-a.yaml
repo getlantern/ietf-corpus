@@ -1,0 +1,11 @@
+document: rfc-3246
+kind: normative-requirement
+summary: If the EF PHB is implemented by a mechanism allowing unlimited preemption of other traffic (e.g., a strict priority queue), the implementation MUST include some means to limit the damage EF traffic could inflict on other traffic (e.g., a token bucket rate limiter). Traffic exceeding this limit MUST be discarded, and the maximum EF rate and burst size MUST be settable by a network administrator.
+section: "2.10"
+rfc2119_level: MUST
+topics:
+    - diffserv
+    - qos
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

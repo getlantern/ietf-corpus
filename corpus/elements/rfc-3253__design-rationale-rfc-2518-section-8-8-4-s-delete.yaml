@@ -1,0 +1,8 @@
+document: rfc-3253
+kind: design-rationale
+summary: 'RFC 2518 Section 8.8.4''s DELETE-before-COPY rule is clarified: if a resource at the destination has the same resource type as the source, it MUST NOT be deleted but MUST be updated in place. This distinction matters for version history continuity — updating adds to an existing history while replacing creates a new one.'
+section: "1.7"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

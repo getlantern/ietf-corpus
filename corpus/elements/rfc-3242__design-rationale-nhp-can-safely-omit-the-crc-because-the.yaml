@@ -1,0 +1,8 @@
+document: rfc-3242
+kind: design-rationale
+summary: NHP can safely omit the CRC because the assisting layer already guarantees in-order delivery and provides explicit loss indication for every dropped packet, rendering the CRC's primary function (detecting long losses and corrupted sequence number LSBs) redundant. Residual bit errors also cannot damage a header that is not sent.
+section: "3.3"
+topics:
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,10 @@
+document: rfc-3263
+kind: normative-requirement
+summary: On failure (503 response, transport failure, or timer B/F expiry), the client SHOULD create a new request identical to the previous but with a different Via branch ID (new SIP transaction), and send it to the next element in the RFC 2782 list.
+section: "4.3"
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

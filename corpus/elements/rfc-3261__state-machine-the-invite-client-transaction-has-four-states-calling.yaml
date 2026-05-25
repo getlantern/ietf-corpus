@@ -1,0 +1,8 @@
+document: rfc-3261
+kind: state-machine
+summary: 'The INVITE client transaction has four states: Calling (initial; retransmits INVITE on Timer A for unreliable transport), Proceeding (1xx received), Completed (3xx-6xx received; ACK sent, Timer D started to absorb retransmissions), and Terminated. Timer B in Calling state causes timeout failure if no response arrives.'
+section: 17.1.1
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

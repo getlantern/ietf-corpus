@@ -1,0 +1,9 @@
+document: rfc-3262
+kind: design-rationale
+summary: Reliable provisional response retransmission intervals double without a cap (unlike 2xx retransmissions which cap at T2), because PRACK retransmissions are independent of 1xx reception, whereas ACK retransmissions are triggered by receipt of 2xx.
+section: "3"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

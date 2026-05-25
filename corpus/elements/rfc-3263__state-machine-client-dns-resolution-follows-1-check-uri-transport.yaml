@@ -1,0 +1,9 @@
+document: rfc-3263
+kind: state-machine
+summary: 'Client DNS resolution follows: (1) check URI transport parameter; (2) if numeric IP or explicit port, use A/AAAA; (3) if no port/transport, perform NAPTR query; (4) use NAPTR-derived SRV records; (5) if no NAPTR, try SRV per supported transport; (6) if no SRV, fall back to A/AAAA. Failure triggers retry to the next element in the ordered list.'
+section: "4.1"
+topics:
+    - sip
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

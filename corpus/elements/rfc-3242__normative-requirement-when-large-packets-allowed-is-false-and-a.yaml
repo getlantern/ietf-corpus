@@ -1,0 +1,9 @@
+document: rfc-3242
+kind: normative-requirement
+summary: When LARGE_PACKETS_ALLOWED is FALSE and a packet exceeds all preferred packet sizes, the ROHC segmentation scheme MUST be used and each segment MUST be padded to fit a preferred size. When TRUE, the compressor MUST deliver the larger packet as-is and MUST NOT use segmentation.
+section: 5.1.1
+rfc2119_level: MUST
+topics:
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

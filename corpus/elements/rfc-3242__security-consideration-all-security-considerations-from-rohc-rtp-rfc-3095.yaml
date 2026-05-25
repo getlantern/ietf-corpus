@@ -1,0 +1,9 @@
+document: rfc-3242
+kind: security-consideration
+summary: All security considerations from ROHC RTP (RFC 3095 section 7) apply. An additional threat is a denial-of-service attack where an intruder injects bogus CCP packets with random CRC values onto the link, causing spurious context invalidation, unnecessary feedback messages, and refresh packets, significantly degrading compression efficiency.
+section: "7"
+topics:
+    - security
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

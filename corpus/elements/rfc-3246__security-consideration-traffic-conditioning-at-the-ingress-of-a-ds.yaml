@@ -1,0 +1,11 @@
+document: rfc-3246
+kind: security-consideration
+summary: Traffic conditioning at the ingress of a DS domain MUST ensure that only packets whose DSCPs correspond to EF when entering the domain are marked with an EF DSCP inside the domain. This protects against theft-of-service and DoS attacks exploiting unmarked or miscoded DSCPs.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - diffserv
+    - security
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
