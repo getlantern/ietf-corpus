@@ -1,0 +1,9 @@
+document: rfc-3101
+kind: security-consideration
+summary: OSPF mitigates LSA flooding DoS attacks by mandating MinLSInterval (5 seconds minimum between new originations of the same LSA) and MinLSArrival (1 second minimum acceptance rate during flooding). Database overflow from large NSSAs can be mitigated by configuring stub areas, NSSAs, or using the graceful overflow mechanism of RFC 1765.
+section: "4.0"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

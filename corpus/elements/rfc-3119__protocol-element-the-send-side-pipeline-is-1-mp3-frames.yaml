@@ -1,0 +1,9 @@
+document: rfc-3119
+kind: protocol-element
+summary: 'The send-side pipeline is: (1) MP3 frames to ADU frames via main_data_begin extraction, (2) optional interleaving of ADU frames, (3) packetization into RTP packets. The receive-side pipeline reverses these steps: (4) sort by RTP sequence number, (5) depacketize ADU frames using C flag, (6) deinterleave, (7) convert ADU frames back to MP3 frames.'
+section: "5"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

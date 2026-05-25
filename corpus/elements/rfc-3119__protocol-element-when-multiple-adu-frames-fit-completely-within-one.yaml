@@ -1,0 +1,9 @@
+document: rfc-3119
+kind: protocol-element
+summary: When multiple ADU frames fit completely within one RTP packet, more than one successive ADU descriptor + ADU frame MAY be packed into a single packet. When a single ADU descriptor + ADU frame exceeds the RTP packet size, the ADU frame is split across successive packets, each carrying its own ADU descriptor with the same total ADU size; only the first packet's descriptor has C=0; subsequent packets have C=1.
+section: "3.3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

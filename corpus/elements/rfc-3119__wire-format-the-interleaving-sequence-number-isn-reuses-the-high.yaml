@@ -1,0 +1,9 @@
+document: rfc-3119
+kind: wire-format
+summary: The Interleaving Sequence Number (ISN) reuses the high-order 11 bits of the 4-byte MPEG header (the syncword, normally always 0xFFE), encoding an 8-bit Interleave Index in bits 0–7 and a 3-bit Interleave Cycle Count in bits 8–10. Upon reception the 11 bits are restored to 0xFFE.
+section: "6"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3124
+kind: security-consideration
+summary: Because the CM API exposes shared congestion state, a poorly designed, compromised, or malicious application can misuse cm_update() to cause starvation of other streams in the macroflow or induce too-aggressive behavior, constituting a denial-of-service against co-located applications.
+section: "6"
+topics:
+    - congestion
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

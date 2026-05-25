@@ -1,0 +1,8 @@
+document: rfc-3101
+kind: design-rationale
+summary: It is not recommended that multiple NSSA border routers simultaneously perform Type-7-to-Type-5 translation because doing so unnecessarily increases the OSPF link state database size. The translator election process (using Nt bit and router ID) ensures typically only one border router translates at a time, while still allowing fallback to another if needed.
+section: "3.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3119
+kind: design-rationale
+summary: RFC 2250 is suboptimal for MP3 because an MP3 frame is not a true Application Data Unit — it contains a back-pointer (main_data_begin) to data in earlier frames and cannot be decoded independently. Packet boundaries coinciding with frame boundaries thus cause packet loss to render data in adjacent frames useless even when those frames are received intact.
+section: "1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

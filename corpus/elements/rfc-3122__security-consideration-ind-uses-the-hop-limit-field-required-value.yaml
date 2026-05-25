@@ -1,0 +1,9 @@
+document: rfc-3122
+kind: security-consideration
+summary: IND uses the Hop Limit field (required value 255) to reject packets that could have been forwarded by a router, thus limiting exposure to off-link attackers. Because routers decrement Hop Limit, a received packet with Hop Limit 255 must have originated from a directly connected neighbor.
+section: "5"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

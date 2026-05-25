@@ -1,0 +1,9 @@
+document: rfc-3119
+kind: design-rationale
+summary: The ISN is split into an Interleave Cycle Count and Interleave Index (rather than a single 11-bit counter) so that receivers can detect when a complete interleave cycle has passed and release buffered ADU frames to decoding without waiting indefinitely for lost frames. When the receiver sees a frame with a new Interleave Cycle Count, it releases all buffered frames from the prior cycle.
+section: "6"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

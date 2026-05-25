@@ -1,0 +1,9 @@
+document: rfc-3119
+kind: interoperability-note
+summary: Layer I and layer II MPEG audio frames are self-contained (no back-pointer) and are transmitted 'as is' with only an ADU descriptor prepended; only layer III (MP3) frames are converted to ADU frames. Receivers leave layer I/II frames untouched after removing the ADU descriptor, but convert layer III ADU frames back to MP3 frames.
+section: "4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

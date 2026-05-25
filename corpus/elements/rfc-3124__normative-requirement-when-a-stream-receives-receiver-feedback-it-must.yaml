@@ -1,0 +1,9 @@
+document: rfc-3124
+kind: normative-requirement
+summary: When a stream receives receiver feedback, it MUST call cm_update(i32 cm_streamid, u32 nrecd, u32 nlost, u8 lossmode, i32 rtt) to inform the CM of receptions, losses, loss type, and RTT samples. The lossmode parameter MUST be reported as a bit-vector.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

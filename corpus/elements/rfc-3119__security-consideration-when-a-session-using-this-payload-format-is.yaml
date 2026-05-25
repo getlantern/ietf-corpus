@@ -1,0 +1,12 @@
+document: rfc-3119
+kind: security-consideration
+summary: When a session using this payload format is encrypted and interleaving is used, the sender SHOULD ensure that any encryption key change coincides with the start of a new interleave cycle, to avoid decryption failures caused by a key boundary falling within a cycle. Otherwise, security considerations are identical to those of RFC 2250.
+section: "9"
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

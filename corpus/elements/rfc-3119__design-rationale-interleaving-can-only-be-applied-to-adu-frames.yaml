@@ -1,0 +1,9 @@
+document: rfc-3119
+kind: design-rationale
+summary: Interleaving can only be applied to ADU frames (not the original MP3 frames) because the back-pointer structure of MP3 frames makes reordering them across packet boundaries impossible without data loss. This is why interleaving was not feasible under RFC 2250.
+section: "5"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

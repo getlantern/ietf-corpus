@@ -1,0 +1,9 @@
+document: rfc-3119
+kind: protocol-element
+summary: When converting ADU frames back to MP3 frames, dummy ADUs with aduDataSize of zero must be inserted whenever a received ADU's back-pointer would overlap beyond the data of the preceding ADU, a situation that arises when an intermediate ADU was lost due to packet loss.
+section: A.2
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3124
+kind: state-machine
+summary: The AIMD_CC example congestion controller maintains cwnd, ownd, ssthresh, and srtt. On CM_NO_FEEDBACK loss, cwnd is set to 1 MTU; on CM_LOSS_FEEDBACK or CM_EXPLICIT_CONGESTION, cwnd is halved (min 1 MTU) and ssthresh = cwnd/2. Without loss, cwnd grows by nsent when cwnd < ssthresh (slow start) or by nsent*MTU/cwnd when cwnd >= ssthresh (linear).
+section: "5.2"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

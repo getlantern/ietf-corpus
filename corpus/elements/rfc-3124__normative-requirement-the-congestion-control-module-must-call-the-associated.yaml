@@ -1,0 +1,9 @@
+document: rfc-3124
+kind: normative-requirement
+summary: The congestion control module MUST call the associated scheduler's schedule() function when the current congestion state allows an MTU-sized packet to be sent. The Scheduler MUST implement schedule(u32 num_bytes), query_share(i32 cm_streamid), and notify(i32 cm_streamid, u32 nsent) interfaces.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

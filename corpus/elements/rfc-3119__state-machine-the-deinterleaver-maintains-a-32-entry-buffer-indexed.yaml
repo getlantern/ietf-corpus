@@ -1,0 +1,9 @@
+document: rfc-3119
+kind: state-machine
+summary: The deinterleaver maintains a 32-entry buffer indexed by Interleave Index. A new interleave cycle is triggered when the incoming Interleave Cycle Count differs from iccLastSeen, or when the current Interleave Index equals iiLastSeen (indicating non-interleaved mode). On cycle transition, all non-NULL buffered ADU frames are released in order to the ADU-to-MP3 conversion step and the buffer is cleared.
+section: "6"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

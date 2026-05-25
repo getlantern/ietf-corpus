@@ -1,0 +1,10 @@
+document: rfc-3118
+kind: normative-requirement
+summary: For delayed authentication MAC computation, the receiver MUST set the 'MAC' field of the authentication option to all zeros, and MUST set the 'giaddr' and 'hops' fields to zero. If the computed MAC does not match the received MAC, the receiver MUST discard the DHCP message.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

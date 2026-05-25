@@ -1,0 +1,9 @@
+document: rfc-3124
+kind: normative-requirement
+summary: A cmapp_send() grant is valid only until an expiration time equal to max(RTT, implementation threshold). The application MUST NOT send data after this expiration. If the application decides not to send, it SHOULD call cm_notify(stream_info, 0) to allow other streams to transmit.
+section: "3.3"
+rfc2119_level: MUST NOT
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

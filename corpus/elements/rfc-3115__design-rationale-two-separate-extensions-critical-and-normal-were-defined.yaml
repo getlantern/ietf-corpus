@@ -1,0 +1,8 @@
+document: rfc-3115
+kind: design-rationale
+summary: 'Two separate extensions (Critical and Normal) were defined because different failure behaviors are needed: unrecognized CVSEs require dropping the entire message (to prevent unsafe operation with unknown critical vendor behavior), whereas unrecognized NVSEs can be safely skipped without disrupting message processing. The CVSE also uses a two-octet length field versus NVSE''s one-octet field to support larger payloads.'
+section: "2"
+topics:
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

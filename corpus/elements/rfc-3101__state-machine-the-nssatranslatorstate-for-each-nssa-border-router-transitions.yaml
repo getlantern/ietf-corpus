@@ -1,0 +1,8 @@
+document: rfc-3101
+kind: state-machine
+summary: The NSSATranslatorState for each NSSA border router transitions between 'disabled', 'elected', and 'enabled'. It initializes to disabled; changes to enabled/elected trigger Type-7-to-Type-5 translation; changes back to disabled cease translation. An elected translator remains active for TranslatorStabilityInterval (default 40 seconds) after being deposed before stopping.
+section: "3.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

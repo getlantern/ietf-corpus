@@ -1,0 +1,9 @@
+document: rfc-3124
+kind: design-rationale
+summary: Concurrent independent streams each implementing their own congestion control are more aggressive in aggregate than a single TCP connection under standard algorithms. The CM addresses this by sharing congestion state across streams in a macroflow, reducing the ensemble's aggressiveness.
+section: "2"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

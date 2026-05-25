@@ -1,0 +1,10 @@
+document: rfc-3110
+kind: design-rationale
+summary: A public exponent of 3 minimizes signature verification effort, making it acceptable for DNSSEC authentication-only use. However, 65537 (F4) is recommended for keys that may also be used for confidentiality, since exponent-3 keys are vulnerable to Chinese Remainder Theorem attacks when the same data is encrypted under three such keys.
+section: "4"
+topics:
+    - dns
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

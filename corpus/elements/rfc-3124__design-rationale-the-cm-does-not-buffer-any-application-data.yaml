@@ -1,0 +1,8 @@
+document: rfc-3124
+kind: design-rationale
+summary: The CM does not buffer any application data. This allows streams to adapt and repacketize data at the last possible instant before transmission when network conditions change, which is infeasible once data has been buffered in the CM.
+section: "3.2"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

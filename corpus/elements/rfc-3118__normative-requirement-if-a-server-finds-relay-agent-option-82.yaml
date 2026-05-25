@@ -1,0 +1,9 @@
+document: rfc-3118
+kind: normative-requirement
+summary: If a server finds relay agent option 82 included in a received message, the server MUST compute any hash function as if option 82 were NOT included in the message without changing the order of other options. When sending option 82 back to a relay agent, the server MUST NOT include option 82 in hash computation.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

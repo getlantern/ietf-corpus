@@ -1,0 +1,9 @@
+document: rfc-3119
+kind: wire-format
+summary: A 1-byte ADU descriptor encodes a Continuation flag C (1 bit), a Type flag T=0 (1 bit), and ADU size (6 bits, max 63 bytes). A 2-byte ADU descriptor encodes C (1 bit), T=1 (1 bit), and ADU size (14 bits, for frames of 64 bytes or more). The ADU size field gives the size of the following ADU frame in bytes, not including the descriptor itself.
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
