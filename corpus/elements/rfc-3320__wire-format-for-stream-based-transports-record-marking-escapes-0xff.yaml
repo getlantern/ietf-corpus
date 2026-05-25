@@ -1,0 +1,8 @@
+document: rfc-3320
+kind: wire-format
+summary: 'For stream-based transports, record marking escapes 0xFF: 0xFF00 = one literal 0xFF; 0xFF01–0xFF7F = quote 1–127 following bytes verbatim; 0xFF80–0xFFFE = reserved (causes decompression failure); 0xFFFF = end of SigComp message.'
+section: 4.2.2
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3311
+kind: design-rationale
+summary: The UPDATE method is necessary because early dialog session modification (e.g., hold on early media) cannot be done with re-INVITE, as re-INVITE changes dialog state which is inappropriate before the initial INVITE completes. UPDATE modifies only session state, leaving dialog state untouched.
+section: "1"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

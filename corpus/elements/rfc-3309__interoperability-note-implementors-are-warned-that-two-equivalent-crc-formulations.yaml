@@ -1,0 +1,8 @@
+document: rfc-3309
+kind: interoperability-note
+summary: Implementors are warned that two equivalent CRC formulations exist in the literature (one initializes the register to zero and complements the first 32 bits; the other initializes to all-1s). Both produce the same result for messages longer than 64 bits, and SCTP uses the all-1s initialization formulation.
+section: "2.1"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

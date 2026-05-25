@@ -1,0 +1,9 @@
+document: rfc-3312
+kind: state-machine
+summary: 'The answerer reconciles transaction and local status tables using four cases: (no/no)→no change; (yes/yes)→no change; (yes/no)→set local to yes; (no/yes)→if the UA has local confirmation info, set transaction to yes, else set local to no. This synchronizes both UAs'' views after each offer/answer.'
+section: "5.2"
+topics:
+    - sip
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

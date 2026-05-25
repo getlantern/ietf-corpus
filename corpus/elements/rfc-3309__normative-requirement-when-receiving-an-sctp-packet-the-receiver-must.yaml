@@ -1,0 +1,9 @@
+document: rfc-3309
+kind: normative-requirement
+summary: When receiving an SCTP packet, the receiver MUST first check the CRC-32c checksum by storing the received value, zeroing the checksum field, recalculating over the whole packet, and verifying the values match. If they do not match, the receiver MUST treat the packet as invalid.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

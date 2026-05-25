@@ -1,0 +1,8 @@
+document: rfc-3309
+kind: design-rationale
+summary: There may be a computational advantage in validating the Association against the Verification Tag before performing the checksum calculation, since invalid tags result in the same action as a bad checksum in most cases. Exceptions are INIT, some SHUTDOWN-COMPLETE exchanges, and stale COOKIE-ECHO, which represent small packets that minimize the effect of the checksum calculation.
+section: "2.1"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

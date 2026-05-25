@@ -1,0 +1,10 @@
+document: rfc-3311
+kind: normative-requirement
+summary: If an UPDATE containing an offer is received and the UAS has an outstanding unresolved offer it generated, the UAS MUST reject the UPDATE with 491. If the UAS has received an unanswered offer, it MUST reject with 500 and include Retry-After between 0 and 10 seconds.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

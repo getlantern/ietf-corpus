@@ -1,0 +1,6 @@
+document: rfc-3321
+kind: design-rationale
+summary: The implicit acknowledgement optimization relies on the SigComp state handler guarantee that announcement information is discarded if a state save request is denied; therefore reception of a shared state(M) announcement implies state(S) was successfully saved. However, subsequent eviction due to memory pressure remains possible and must be tracked using the state_memory_size parameter.
+section: "6.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

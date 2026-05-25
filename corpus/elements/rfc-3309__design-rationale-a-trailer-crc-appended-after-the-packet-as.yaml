@@ -1,0 +1,8 @@
+document: rfc-3309
+kind: design-rationale
+summary: A 'trailer' CRC (appended after the packet as in Ethernet) was considered but rejected because RFC 2960 implementations had already proliferated, and the benefit did not outweigh the cost of making a large change to protocol processing. Packets accepted by the header CRC are in one-to-one correspondence with packets that would be accepted by a trailer CRC approach.
+section: "2.1"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

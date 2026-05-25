@@ -1,0 +1,8 @@
+document: rfc-3309
+kind: design-rationale
+summary: The CRC formulation chosen initializes the remainder register to all-1s rather than zero (with no complementing of the first 32 bits). This is noted as equivalent to the alternative formulation for messages longer than 64 bits, and was chosen to permit non-SCTP usage where the same CRC algorithm may protect messages shorter than 64 bits.
+section: "2.1"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

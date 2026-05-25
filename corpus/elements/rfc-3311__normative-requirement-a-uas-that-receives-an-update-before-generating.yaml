@@ -1,0 +1,10 @@
+document: rfc-3311
+kind: normative-requirement
+summary: A UAS that receives an UPDATE before generating a final response to a previous UPDATE on the same dialog MUST return a 500 response and MUST include a Retry-After header with a randomly chosen value between 0 and 10 seconds.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

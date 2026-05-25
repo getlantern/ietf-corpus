@@ -1,0 +1,9 @@
+document: rfc-3307
+kind: design-rationale
+summary: The T bit is used to distinguish dynamically allocated addresses from permanently assigned ones at the link-layer. Since the high-order bit of the group ID equals the T flag value, requiring T=1 for dynamic addresses and placing dynamic group IDs in the upper half (0x80000000–0xFFFFFFFF) achieves the same separation in both the IP address and mapped link-layer address.
+section: "4.3"
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

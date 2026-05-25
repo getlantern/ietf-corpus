@@ -1,0 +1,10 @@
+document: rfc-3315
+kind: security-consideration
+summary: The Reconfigure Key Authentication Protocol uses a per-client key delivered by the server in a Reply message to authenticate subsequent Reconfigure messages via HMAC-MD5. This prevents unauthorized servers from triggering client reconfiguration, which is required since Reconfigure messages are unicast to the client.
+section: "21.5"
+topics:
+    - security
+    - ip
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

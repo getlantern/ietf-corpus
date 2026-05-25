@@ -1,0 +1,9 @@
+document: rfc-3321
+kind: design-rationale
+summary: Dynamic compression reuses information from previously sent messages. For reliable transports (TCP), reception is guaranteed; for unreliable transports, SigComp's explicit acknowledgement mechanism is needed to confirm state establishment before a compressor can safely reference a state.
+section: "1"
+topics:
+    - realtime
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
