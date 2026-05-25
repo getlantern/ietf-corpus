@@ -1,0 +1,9 @@
+document: rfc-2996
+kind: wire-format
+summary: The DCLASS object begins with a standard 4-byte RSVP object header (Class-Num 225, C-Type 1) with a length field indicating total object size in bytes. It is followed by one or more 32-bit words, each carrying a DSCP in the six high-order bits of the least significant byte. The number of DSCPs equals (Length - 4) / 4.
+section: "2"
+topics:
+    - qos
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

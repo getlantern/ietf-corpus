@@ -1,0 +1,8 @@
+document: rfc-2960
+kind: wire-format
+summary: Each SCTP chunk is encoded as Chunk Type (8 bits), Chunk Flags (8 bits), Chunk Length (16 bits, includes header), and variable-length Chunk Value. Total chunk length MUST be a multiple of 4 bytes; sender MUST pad with zeros (never more than 3 bytes), receiver MUST ignore padding.
+section: "3.2"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

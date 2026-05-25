@@ -1,0 +1,10 @@
+document: rfc-2988
+kind: security-consideration
+summary: An attacker could forge premature ACKs to lower the sender's RTO to an unsafe value, destabilizing the network; however, this requires spoofing on-path traffic, and the sender's exponential backoff on loss limits the damage.
+section: "6"
+topics:
+    - tcp
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

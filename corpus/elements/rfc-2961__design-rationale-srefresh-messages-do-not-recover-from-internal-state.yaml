@@ -1,0 +1,8 @@
+document: rfc-2961
+kind: design-rationale
+summary: 'Srefresh messages do not recover from internal state corruption the way full Path/Resv refreshes do. RFC 2961 recommends two supplementary mechanisms: (1) periodic checksum-based verification of internal state to detect missed trigger messages, and (2) occasional standard refresh messages at a longer interval than Srefresh to provide full error recovery.'
+section: "5.5"
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

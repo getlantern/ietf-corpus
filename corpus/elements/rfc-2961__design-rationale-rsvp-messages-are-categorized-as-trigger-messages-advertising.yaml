@@ -1,0 +1,8 @@
+document: rfc-2961
+kind: design-rationale
+summary: 'RSVP messages are categorized as trigger messages (advertising new or changed state) or refresh messages (identical previously-transmitted state). Only Path and Resv messages can be refresh messages. This distinction is the foundation for all optimizations: refresh messages can be replaced by lightweight summary tokens, while trigger messages require reliable delivery.'
+section: "1.1"
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

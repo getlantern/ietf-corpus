@@ -1,0 +1,9 @@
+document: rfc-2961
+kind: normative-requirement
+summary: Nodes setting the ACK_Desired flag SHOULD retransmit unacknowledged messages more rapidly than the standard refresh period. The rapid retransmission rate MUST use the exponential back-off procedures defined in Section 6. A MESSAGE_ID_ACK MUST NOT be generated when ACK_Desired is not set in the received MESSAGE_ID object.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

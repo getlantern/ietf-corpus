@@ -1,0 +1,10 @@
+document: rfc-2961
+kind: normative-requirement
+summary: Upon receiving an Srefresh, the node MUST update matching state and MUST generate an Srefresh NACK for unmatched Message_Identifier fields. For multicast unmatched fields, a NACK MUST be generated only when the node would forward data from the listed sender (RPF check); otherwise the unmatched field is silently ignored.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - qos
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

@@ -1,0 +1,9 @@
+document: rfc-2960
+kind: normative-requirement
+summary: TSN arithmetic SHOULD use RFC 1982 serial number arithmetic with SERIAL_BITS=32; an endpoint SHOULD NOT transmit a DATA chunk with a TSN more than 2**31−1 above the beginning TSN of its current send window, as doing so causes comparison ambiguity.
+section: "1.6"
+rfc2119_level: SHOULD NOT
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

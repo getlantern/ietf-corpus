@@ -1,0 +1,8 @@
+document: rfc-2960
+kind: design-rationale
+summary: TSNs are decoupled from Stream Sequence Numbers so that reliable delivery (tracked per-TSN via SACK) remains functionally independent of in-order stream delivery. This enables SACK to acknowledge out-of-order TSNs without forcing in-order delivery to the ULP and eliminates head-of-line blocking across streams.
+section: 1.3.4
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

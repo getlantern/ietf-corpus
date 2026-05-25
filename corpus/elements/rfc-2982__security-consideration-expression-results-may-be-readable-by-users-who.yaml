@@ -1,0 +1,9 @@
+document: rfc-2982
+kind: security-consideration
+summary: Expression results may be readable by users who do not have access to the underlying raw MIB objects, since results are evaluated under the security credentials of the expression creator (the entity that set expExpressionRowStatus to active). This can be either a deliberate delegation or a security violation depending on the security policy.
+section: "7"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

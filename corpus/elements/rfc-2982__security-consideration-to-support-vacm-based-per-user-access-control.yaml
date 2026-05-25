@@ -1,0 +1,9 @@
+document: rfc-2982
+kind: security-consideration
+summary: To support VACM-based per-user access control, expExpressionOwner serves as an owner index with SnmpAdminString syntax, allowing it to be mapped directly to a VACM securityName or groupName. All entries for a given owner share the same OID subidentifier prefix through the encoded owner index, enabling vacmViewTreeFamilyTable entries to scope access precisely.
+section: "7"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

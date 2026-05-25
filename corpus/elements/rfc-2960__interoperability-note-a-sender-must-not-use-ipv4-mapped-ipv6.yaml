@@ -1,0 +1,10 @@
+document: rfc-2960
+kind: interoperability-note
+summary: A sender MUST NOT use IPv4-mapped IPv6 addresses in address parameters; a separate IPv4 Address Parameter (Type=5) must be used instead. Omitting all IP address parameters in INIT and INIT ACK is a valid alternative that improves NAT traversal, causing the receiver to use only the source address of the IP datagram.
+section: 3.3.2.1
+topics:
+    - sctp
+    - nat
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

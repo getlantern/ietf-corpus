@@ -1,0 +1,9 @@
+document: rfc-2988
+kind: design-rationale
+summary: A TCP implementation MAY clear SRTT and RTTVAR after backing off the timer multiple times, since the current estimates are likely bogus after repeated retransmissions; they should then be re-initialized using the next RTT sample per rule 2.2.
+section: "5"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

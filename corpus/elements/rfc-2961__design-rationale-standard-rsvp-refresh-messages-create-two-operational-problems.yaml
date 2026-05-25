@@ -1,0 +1,8 @@
+document: rfc-2961
+kind: design-rationale
+summary: 'Standard RSVP refresh messages create two operational problems: scaling (CPU/memory grows proportionally with session count) and reliability/latency (state synchronization delay is bounded by the refresh interval when messages are lost). Increasing R reduces overhead but worsens latency; decreasing R does the opposite. These extensions address both dimensions without adjusting refresh rate.'
+section: "1"
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-24"

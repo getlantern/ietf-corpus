@@ -1,0 +1,8 @@
+document: rfc-2982
+kind: design-rationale
+summary: The expObjectConditional cannot trivially use a TruthValue object directly because TruthValue uses values 1 (true) and 2 (false) rather than 0/non-zero, making a non-zero false value indistinguishable from true. The conditional treats 0 or NoSuchInstance as false and any other non-zero value as true.
+section: "3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

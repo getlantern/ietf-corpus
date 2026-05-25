@@ -1,0 +1,9 @@
+document: rfc-2981
+kind: design-rationale
+summary: 'The mteOwner field as initial table index is a deliberate design choice to enable VACM-based per-user access control: entries sharing an owner have the same OID prefix up to the encoded owner index, allowing a single vacmViewTreeFamilyTable entry to scope access per owner.'
+section: "6"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
