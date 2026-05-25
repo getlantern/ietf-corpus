@@ -1,0 +1,9 @@
+document: rfc-3024
+kind: security-consideration
+summary: Once a reverse tunnel is established, a malicious node could hijack it to inject packets forwarded beyond the local network. Unauthenticated exchanges allow a malicious node to redirect an existing tunnel to another home agent. The best protection is the Mobile-Foreign and Foreign-Home Authentication Extensions; absent those, the TTL=255 requirement limits attackers to one hop.
+section: "6.1"
+topics:
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

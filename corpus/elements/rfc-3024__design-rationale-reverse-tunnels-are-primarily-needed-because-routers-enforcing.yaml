@@ -1,0 +1,10 @@
+document: rfc-3024
+kind: design-rationale
+summary: Reverse tunnels are primarily needed because routers enforcing ingress filtering per RFC 2267 require topologically correct source addresses. The mobile node's home address does not match the network prefix of the foreign network, so without a reverse tunnel its packets are dropped by such routers.
+section: "1"
+topics:
+    - mobility
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

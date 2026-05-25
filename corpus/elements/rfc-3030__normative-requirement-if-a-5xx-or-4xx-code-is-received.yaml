@@ -1,0 +1,9 @@
+document: rfc-3030
+kind: normative-requirement
+summary: If a 5XX or 4XX code is received in response to a BDAT chunk, the sender-SMTP MUST NOT send any additional BDAT segments. With pipelining, the receiver MUST be prepared to accept and discard additional BDAT chunks already in the pipeline.
+section: "2"
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

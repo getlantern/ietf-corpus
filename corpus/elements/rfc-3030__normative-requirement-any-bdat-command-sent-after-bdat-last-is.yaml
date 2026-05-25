@@ -1,0 +1,9 @@
+document: rfc-3030
+kind: normative-requirement
+summary: Any BDAT command sent after BDAT LAST is illegal and MUST be replied to with a 503 'Bad sequence of commands' reply code. The resulting state is indeterminate and a RSET MUST be sent to clear the transaction.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

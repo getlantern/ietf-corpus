@@ -1,0 +1,8 @@
+document: rfc-3030
+kind: state-machine
+summary: 'After any BDAT failure, the transaction state becomes indeterminate. The required recovery transition is: indeterminate state → RSET command → clean session state. The RSET clears all chunks sent in the current transaction. Only after RSET can new MAIL/RCPT/BDAT sequences begin.'
+section: "2"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

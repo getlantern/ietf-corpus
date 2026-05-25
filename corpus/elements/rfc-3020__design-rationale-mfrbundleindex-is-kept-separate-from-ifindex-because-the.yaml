@@ -1,0 +1,8 @@
+document: rfc-3020
+kind: design-rationale
+summary: mfrBundleIndex is kept separate from ifIndex because the manager must choose mfrBundleIndex during row creation while the agent must be free to choose ifIndex values. This follows the pattern of RFC 2494 and RFC 2863 and mirrors the ATM LAN-Emulation and IMA MIBs, which also use dual indices.
+section: 2.3.1.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

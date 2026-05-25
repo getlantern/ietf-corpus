@@ -1,0 +1,9 @@
+document: rfc-3030
+kind: normative-requirement
+summary: BINARYMIME cannot be used with the DATA command. If a DATA command is issued after a MAIL command with BODY=BINARYMIME, a 503 'Bad sequence of commands' response MUST be sent and the transaction MUST be reset.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

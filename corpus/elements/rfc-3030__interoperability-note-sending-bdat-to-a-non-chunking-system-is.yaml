@@ -1,0 +1,8 @@
+document: rfc-3030
+kind: interoperability-note
+summary: 'Sending BDAT to a non-CHUNKING system is illegal and dangerous: the server will parse the binary message data as ESMTP command lines, potentially causing undefined behavior. BDAT must only be sent to servers that have advertised CHUNKING in their EHLO response.'
+section: "2"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,8 @@
+document: rfc-3030
+kind: design-rationale
+summary: The BDAT chunk-size argument is required to be exact because the receiver does not acknowledge the BDAT command before data is sent. An incorrect byte count causes the receiver to either wait for more data (count too large) or misparse subsequent commands as message data (count too small).
+section: "2"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

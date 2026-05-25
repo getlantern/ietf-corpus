@@ -1,0 +1,10 @@
+document: rfc-3024
+kind: normative-requirement
+summary: The foreign agent MUST verify that the TTL field of the IP header in a Registration Request is set to 255; if not, it MUST reject the registration with code 76 ('mobile node too distant'). The foreign agent MUST limit the rate of these denial replies to a maximum of one per second.
+section: 4.2.1
+rfc2119_level: MUST
+topics:
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
