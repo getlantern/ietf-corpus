@@ -1,0 +1,9 @@
+document: rfc-3032
+kind: normative-requirement
+summary: To process a labeled IPv6 datagram that is too big, an LSR MUST strip the label stack, compute N, and if the datagram exceeds 1280 bytes or lacks a fragment header, send an ICMPv6 Packet Too Big with Next-Hop MTU set to Effective Maximum Frame Payload Size minus N, then discard the datagram.
+section: "3.5"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

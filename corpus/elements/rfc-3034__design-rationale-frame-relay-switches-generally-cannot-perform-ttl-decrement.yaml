@@ -1,0 +1,8 @@
+document: rfc-3034
+kind: design-rationale
+summary: Frame Relay switches generally cannot perform TTL-decrement as IP routers do, making FR-LSR segments 'non-TTL segments.' To preserve end-to-end TTL semantics, the hop count of the non-TTL segment is propagated via LDP so that the ingress (unicast) or egress (multicast) FR-LSR can perform a bulk TTL decrement covering all hops in the segment.
+section: 5.4.1
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

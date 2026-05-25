@@ -1,0 +1,8 @@
+document: rfc-3035
+kind: design-rationale
+summary: Downstream-on-demand label distribution was selected for ATM-LSRs because multipoint-to-point VCs are generally not supported, making it impossible for a non-VC-merge ATM switch to receive packets on multiple incoming VCIs and forward them on a single outgoing VCI. Each upstream request therefore requires a unique incoming label.
+section: "4"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3032
+kind: normative-requirement
+summary: When a labeled IPv4 datagram is too big and has the DF bit set, the LSR MUST strip the label stack, compute N (bytes in the label stack), and send an ICMP Destination Unreachable with code 'Fragmentation Required and DF Set' with the Next-Hop MTU field set to the Effective Maximum Frame Payload Size minus N. The datagram MUST NOT be forwarded.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

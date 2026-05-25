@@ -1,0 +1,8 @@
+document: rfc-3031
+kind: design-rationale
+summary: Penultimate Hop Popping was adopted to reduce the egress LSR's lookup burden from two lookups (top label then inner label or IP header) to one. This simplifies fastpath implementation by allowing the forwarding engine to assume a single lookup per packet and size its time budget accordingly.
+section: "3.16"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

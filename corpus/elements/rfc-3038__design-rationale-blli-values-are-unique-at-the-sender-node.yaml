@@ -1,0 +1,8 @@
+document: rfc-3038
+kind: design-rationale
+summary: BLLI values are unique at the sender node but not at the receiver node, because multiple sender nodes may independently allocate the same BLLI value. Therefore, the receiver must identify a BLLI notification by the combination of BLLI value and sender ATM address (both carried in SETUP and ADD_PARTY signaling messages).
+section: "3.2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

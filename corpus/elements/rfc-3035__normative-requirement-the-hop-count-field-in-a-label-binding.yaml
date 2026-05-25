@@ -1,0 +1,9 @@
+document: rfc-3035
+kind: normative-requirement
+summary: The hop count field in a label binding request that an ATM-LSR sends to the next hop MUST be set to one more than the hop count it received from the upstream LSR. If the resulting hop count exceeds MAXHOP, the request MUST NOT be sent to the next hop, and the ATM-LSR MUST notify the upstream neighbor that its binding request cannot be satisfied.
+section: "8.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

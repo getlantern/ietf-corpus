@@ -1,0 +1,8 @@
+document: rfc-3031
+kind: design-rationale
+summary: Implicit peering avoids an O(n²) peering mesh for distributing higher-level labels to many remote peers by piggybacking the information through the local label distribution adjacency. However, it requires intermediate nodes to store information they do not directly use, whereas explicit peering is preferred when the number of remote peers is small or the number of higher-level bindings is large.
+section: 3.27.5
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3034
+kind: normative-requirement
+summary: When an ingress FR-LSR determines that decrementing the MPLS TTL by the non-TTL segment hop count would expire the packet before it reaches the egress, the FR-LSR MUST NOT label switch the packet; instead it MUST treat the packet as expired and return an ICMP error or forward it as an unlabeled IP packet with appropriate TTL. If the incoming TTL is 1, only ICMP return applies.
+section: 5.4.1
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

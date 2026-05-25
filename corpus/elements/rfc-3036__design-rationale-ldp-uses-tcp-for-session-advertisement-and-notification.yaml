@@ -1,0 +1,11 @@
+document: rfc-3036
+kind: design-rationale
+summary: LDP uses TCP for session, advertisement, and notification messages to guarantee reliable, in-order delivery, while using UDP multicast for discovery Hellos so that peers can be discovered without pre-configuration. These two transports serve fundamentally different roles and cannot be unified.
+section: "1.2"
+topics:
+    - mpls
+    - routing
+    - tcp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

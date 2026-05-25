@@ -1,0 +1,10 @@
+document: rfc-3036
+kind: normative-requirement
+summary: When Initialization messages are repeatedly NAK'd, an LSR must throttle session setup retry attempts with exponential backoff. The first retry must be delayed no less than 15 seconds, and subsequent delays must grow to a maximum of no less than 2 minutes.
+section: 2.5.3
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3035
+kind: normative-requirement
+summary: When a VC-merge-capable ATM-LSR sends a label binding upstream, the hop count from the downstream binding MUST be incremented by 1 and transmitted upstream. A hop count of 0 MUST be passed upstream unchanged, and if the hop count is already at MAXHOP, the ATM-LSR MUST NOT pass a binding upstream but instead MUST send an error upstream.
+section: "8.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

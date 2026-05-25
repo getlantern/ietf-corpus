@@ -1,0 +1,8 @@
+document: rfc-3035
+kind: wire-format
+summary: When a labeled packet is transmitted on an LC-ATM interface with VPI/VCI interpreted as the top label, the packet MUST also contain a shim header with n entries if the label stack has n entries. The actual top label value is encoded in the VPI/VCI field; the top shim entry is a placeholder whose label MUST be set to 0 on transmission and MUST be ignored on reception.
+section: "9"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

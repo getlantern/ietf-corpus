@@ -1,0 +1,9 @@
+document: rfc-3031
+kind: protocol-element
+summary: A non-TTL LSP segment is a sequence of LSRs (typically ATM switches) that cannot decrement a packet's TTL at each hop because the data link layer encoding (e.g., VPI/VCI) has no TTL field. Ingress to a non-TTL segment must propagate LSP length to allow pre-decrementation, and packets whose TTL would expire within the segment must not be label-switched.
+section: "3.23"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

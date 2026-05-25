@@ -1,0 +1,8 @@
+document: rfc-3032
+kind: design-rationale
+summary: 'The label stack contains no explicit field identifying the network layer protocol. Instead, the identity must be inferable from the value of the label popped from the bottom of the stack, possibly combined with inspection of the network layer header. This places a constraint: a label used at the bottom of the stack must be specific to a particular network layer protocol or a distinguishable set of them.'
+section: "2.2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

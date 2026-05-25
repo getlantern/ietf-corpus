@@ -1,0 +1,9 @@
+document: rfc-3035
+kind: normative-requirement
+summary: If TTL adjustment causes the outgoing TTL to become zero, the packet MUST NOT be transmitted as a labeled packet using the specified label. The packet may be treated as having expired (possibly generating an ICMP message) or forwarded as an unlabeled packet with TTL decremented by one over a non-MPLS connection.
+section: "10"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

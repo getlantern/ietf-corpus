@@ -1,0 +1,10 @@
+document: rfc-3031
+kind: normative-requirement
+summary: When a labeled packet traveling along an LSP reaches an LSR whose ILM does not map the incoming label to an NHLFE (even though the label is valid), the only safe default action is to discard the packet rather than stripping the label stack and forwarding as an unlabeled IP packet, because doing so could create a forwarding loop or fail for explicitly routed LSPs.
+section: "3.22"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3032
+kind: normative-requirement
+summary: If ICMP messages cannot be forwarded from within an MPLS tunnel to a packet's source, the LSR at the transmitting end of the tunnel MUST be able to determine the tunnel MTU. When it needs to send a DF-set packet exceeding the tunnel MTU, it MUST send the appropriate ICMP Destination Unreachable message to the source.
+section: "3.6"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

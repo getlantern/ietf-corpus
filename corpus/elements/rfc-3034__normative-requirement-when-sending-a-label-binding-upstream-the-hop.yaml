@@ -1,0 +1,9 @@
+document: rfc-3034
+kind: normative-requirement
+summary: When sending a label binding upstream, the hop count associated with the corresponding downstream binding MUST be incremented by 1 before being transmitted upstream. If the resulting hop count exceeds the maximum value, the FR-LSR MUST NOT pass the binding upstream and MUST send an error upstream instead.
+section: 5.4.2
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

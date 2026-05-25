@@ -1,0 +1,9 @@
+document: rfc-3032
+kind: normative-requirement
+summary: When a labeled packet is forwarded, the TTL field of the top label stack entry MUST be set to the outgoing TTL value (max(incoming_TTL - 1, 0)). The TTL value in any non-top label stack entry has no significance.
+section: 2.4.2
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

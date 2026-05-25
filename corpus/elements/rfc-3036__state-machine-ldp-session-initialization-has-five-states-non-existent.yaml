@@ -1,0 +1,9 @@
+document: rfc-3036
+kind: state-machine
+summary: 'LDP session initialization has five states: NON EXISTENT, INITIALIZED, OPENSENT (active role sent Init), OPENREC (passive role received acceptable Init and sent Init+KeepAlive), and OPERATIONAL. A TCP connection established event triggers NON EXISTENT→INITIALIZED; receiving a KeepAlive in OPENREC triggers OPENREC→OPERATIONAL; receiving a Shutdown or timeout in OPERATIONAL triggers OPERATIONAL→NON EXISTENT.'
+section: 2.5.4
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

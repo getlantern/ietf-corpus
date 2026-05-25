@@ -1,0 +1,11 @@
+document: rfc-3036
+kind: security-consideration
+summary: LDP sessions are vulnerable to spoofed TCP segments (including resets) that could disrupt label switching. The TCP MD5 Signature Option (RFC 2385) is specified as a configurable protection mechanism; an attacker would need both correct TCP sequence numbers and the shared password to inject valid segments.
+section: "5.1"
+topics:
+    - mpls
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

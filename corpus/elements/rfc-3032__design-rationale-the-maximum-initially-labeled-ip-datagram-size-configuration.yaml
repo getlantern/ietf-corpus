@@ -1,0 +1,8 @@
+document: rfc-3032
+kind: design-rationale
+summary: The 'Maximum Initially Labeled IP Datagram Size' configuration parameter allows operators to fragment unlabeled IP datagrams before labeling them. Setting this to a non-zero value eliminates all fragmentation of Previously Labeled IP Datagrams, at the cost of possibly fragmenting Initially Labeled ones. Hosts using Path MTU Discovery are unaffected since this parameter does not apply to DF-set datagrams.
+section: "3.2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

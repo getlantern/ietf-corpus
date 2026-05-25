@@ -1,0 +1,10 @@
+document: rfc-3036
+kind: security-consideration
+summary: LDP is vulnerable to denial of service via spoofed UDP Hello messages that cause LSRs to attempt TCP session establishment with non-existent peers, or via excessive session connection requests exhausting resources. The TCP MD5 option and Hello filtering (ignoring Hellos from peers with no configured password) partially mitigate these attacks.
+section: "5.3"
+topics:
+    - mpls
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3036
+kind: design-rationale
+summary: Liberal label retention mode retains all received label mappings regardless of whether the peer is the current next hop, enabling fast reaction to routing changes at the cost of maintaining unneeded mappings. Conservative retention saves label space (critical for ATM switches) but requires obtaining a new label from the new next hop after a route change.
+section: 2.6.2
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,10 @@
+document: rfc-3031
+kind: normative-requirement
+summary: A packet traversing an LSP SHOULD emerge with the same TTL value it would have had if routed conventionally hop-by-hop. An MPLS shim header MUST include a TTL field that SHOULD be loaded from the network layer TTL at ingress, decremented at each LSR hop, and copied back into the network layer TTL field on egress.
+section: "3.23"
+rfc2119_level: SHOULD
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

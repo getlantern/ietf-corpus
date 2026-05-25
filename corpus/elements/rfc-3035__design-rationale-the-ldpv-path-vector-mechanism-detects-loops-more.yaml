@@ -1,0 +1,8 @@
+document: rfc-3035
+kind: design-rationale
+summary: The LDPV path vector mechanism detects loops more quickly than the hop count mechanism but at a higher cost in overhead. If LDPV is not enabled, loops are still detected via the MAXHOP hop count mechanism, albeit more slowly. By only sending path vectors when hop count increases, unnecessary overhead is avoided when no loop is present.
+section: "11"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
