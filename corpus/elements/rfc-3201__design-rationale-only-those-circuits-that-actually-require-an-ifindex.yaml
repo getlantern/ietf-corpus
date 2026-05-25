@@ -1,0 +1,8 @@
+document: rfc-3201
+kind: design-rationale
+summary: Only those circuits that actually require an ifIndex are added to the ifTable. This prevents over-populating the ifTable with unused indices, since the Interfaces Group MIB strongly recommends against adding conceptual rows for virtual circuits that do not need individual management.
+section: "3.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

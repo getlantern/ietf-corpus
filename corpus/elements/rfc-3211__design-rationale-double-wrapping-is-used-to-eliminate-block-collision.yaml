@@ -1,0 +1,9 @@
+document: rfc-3211
+kind: design-rationale
+summary: 'Double wrapping is used to eliminate block collision attacks: with a 64-bit block cipher, after ~2^32 encryptions collisions between encrypted CEK blocks could allow an attacker who recovers one CEK to derive others. Double encryption makes every ciphertext bit depend on every plaintext bit.'
+section: 2.3.4
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

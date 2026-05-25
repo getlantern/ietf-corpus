@@ -1,0 +1,9 @@
+document: rfc-3202
+kind: state-machine
+summary: 'Upon setting frsldPvcCtrlStatus to active(1), the row enters one of three states: (1) DLCI known and active — data collection proceeds; (2) DLCI not yet created — row stays notReady(3) and no data/sample rows are created; (3) DLCI removed — behavior governed by frsldPvcCtrlDeleteOnPurge. Transition to destroy(6) cascades deletion to all dependent rows.'
+section: "4"
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

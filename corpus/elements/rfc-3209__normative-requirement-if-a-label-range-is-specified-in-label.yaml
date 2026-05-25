@@ -1,0 +1,10 @@
+document: rfc-3209
+kind: normative-requirement
+summary: If a label range is specified in LABEL_REQUEST, the downstream node MUST allocate the label from that range. If no label is available, the node MUST send a PathErr with error code 'Routing problem' and error value 'MPLS label allocation failure' (value 9).
+section: 4.2.4
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

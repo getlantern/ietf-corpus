@@ -1,0 +1,9 @@
+document: rfc-3211
+kind: protocol-element
+summary: 'Key unwrapping reverses the double encryption: (1) decrypt the nth ciphertext block using the (n-1)th block as IV, (2) decrypt blocks 1..n-1 using the decrypted nth block as IV, (3) decrypt the inner layer with the KEK and original IV.'
+section: 2.3.2
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,10 @@
+document: rfc-3209
+kind: normative-requirement
+summary: A node that receives and forwards a Path message containing a LABEL_REQUEST MUST copy the L3PID from the received object to the forwarded object. If the receiver cannot support the L3PID, it SHOULD send a PathErr with error value 'Unsupported L3PID' (value 10).
+section: 4.2.4
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3211
+kind: security-consideration
+summary: The security of this recipient information type also rests on the security of the underlying mechanisms (RFC 2630 and PKCS5v2). The double-wrap prevents bit-flipping attacks and ensures that wrapping the same CEK with the same KEK produces a different EncryptedKey each time due to the IV.
+section: "4"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,8 @@
+document: rfc-3201
+kind: state-machine
+summary: ciCircuitStatus follows RowStatus transitions. Creation moves a row to notInService or notReady; setting active(1) triggers ifEntry and ciIfMapEntry creation. Setting destroy(6) or loss of the referenced circuit object triggers row deletion and cascading ifTable/ciIfMapTable removal.
+section: "3.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

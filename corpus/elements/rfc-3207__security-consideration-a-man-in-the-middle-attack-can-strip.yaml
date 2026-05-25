@@ -1,0 +1,11 @@
+document: rfc-3207
+kind: security-consideration
+summary: A man-in-the-middle attack can strip the '250 STARTTLS' response to prevent TLS negotiation, or allow the STARTTLS advertisement but alter the upgrade request/response. To defend against this, both clients and servers MUST be configurable to require successful TLS negotiation with an appropriate cipher suite for selected hosts.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

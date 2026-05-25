@@ -1,0 +1,10 @@
+document: rfc-3202
+kind: security-consideration
+summary: Section 10 addresses security considerations for the FRSLD-MIB. Write access to frsldPvcCtrlTable and frsldSmplCtrlTable objects could allow an unauthorized user to disrupt service level monitoring, alter measurement reference points, or trigger purges of historical data. Implementations should use SNMPv3 with authentication and privacy to protect management traffic and restrict write access to authorized managers.
+section: "10"
+topics:
+    - security
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

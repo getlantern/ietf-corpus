@@ -1,0 +1,10 @@
+document: rfc-3207
+kind: security-consideration
+summary: SMTP is not an end-to-end mechanism; TLS between one client/server pair does not secure the entire delivery chain. A single mail delivery may traverse multiple SMTP servers, and TLS on one hop does not imply TLS on all hops.
+section: "6"
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

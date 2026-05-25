@@ -1,0 +1,9 @@
+document: rfc-3209
+kind: state-machine
+summary: 'LSP setup state: ingress sends Path with LABEL_REQUEST; intermediate nodes forward Path and store state; egress allocates label and sends Resv with LABEL; each upstream node uses received LABEL as outgoing label, allocates new incoming label, updates ILM→NHLFE binding, and forwards Resv with new LABEL. LSP is established when Resv reaches ingress.'
+section: "2.2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

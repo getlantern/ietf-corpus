@@ -1,0 +1,10 @@
+document: rfc-3209
+kind: normative-requirement
+summary: A node MUST NOT advertise the LABEL_REQUEST object in messages passing through non-RSVP-capable routers, and SHOULD send a PathErr with error code 'Routing problem' and error value 'MPLS being negotiated, but a non-RSVP capable router stands in the path' (value 8).
+section: 4.2.5
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

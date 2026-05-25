@@ -1,0 +1,10 @@
+document: rfc-3209
+kind: normative-requirement
+summary: For labeled IPv4 datagrams where DF is set and size exceeds M (Path MTU minus label stack size), an LSR MUST NOT forward the datagram and MUST send an ICMP Destination Unreachable with code 'Fragmentation Required and DF Set' with Next-Hop MTU set to M. For IPv6 datagrams exceeding M, an ICMP Packet Too Big with Next-Hop MTU=M MUST be generated.
+section: "2.6"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

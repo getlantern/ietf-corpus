@@ -1,0 +1,9 @@
+document: rfc-3201
+kind: normative-requirement
+summary: The object referenced by ciCircuitObject MUST exist prior to transitioning a ciCircuitStatus row to active(1). If it subsequently ceases to exist or becomes inactive, the row SHOULD either age out or report notReady(3), with effects identical to destroy(6).
+section: "6"
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

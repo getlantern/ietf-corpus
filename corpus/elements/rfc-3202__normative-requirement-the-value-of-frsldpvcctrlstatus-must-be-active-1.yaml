@@ -1,0 +1,10 @@
+document: rfc-3202
+kind: normative-requirement
+summary: The value of frsldPvcCtrlStatus MUST be active(1) before frsldSmplCtrlStatus can transition to active(1). If frsldPvcCtrlStatus becomes anything other than active(1) while frsldSmplCtrlStatus is not active(1), frsldSmplCtrlStatus SHOULD be set to notReady(3).
+section: "7"
+rfc2119_level: MUST
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

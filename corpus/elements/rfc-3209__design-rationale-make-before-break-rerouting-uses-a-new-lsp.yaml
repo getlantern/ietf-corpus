@@ -1,0 +1,10 @@
+document: rfc-3209
+kind: design-rationale
+summary: Make-before-break rerouting uses a new LSP ID in SENDER_TEMPLATE combined with the SE reservation style so that old and new LSPs share resources on common links without double-counting. This prevents Admission Control from rejecting the new LSP while the old one still holds reservations.
+section: "2.5"
+topics:
+    - mpls
+    - routing
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

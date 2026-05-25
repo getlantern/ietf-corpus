@@ -1,0 +1,10 @@
+document: rfc-3202
+kind: normative-requirement
+summary: The data in frsldPvcCtrlTable and frsldSmplCtrlTable SHOULD persist through power cycles, though rows may be reprovisioned as notReady(3) if the underlying DLCI does not persist. The data collected in frsldPvcDataTable and frsldPvcSampleTable SHOULD NOT persist through power cycles since the reference TimeStamp is no longer valid.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

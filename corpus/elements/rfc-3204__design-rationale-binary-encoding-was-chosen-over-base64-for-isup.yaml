@@ -1,0 +1,9 @@
+document: rfc-3204
+kind: design-rationale
+summary: Binary encoding was chosen over Base64 for ISUP and QSIG bodies because Base64 would add bulk to encoded messages and impose additional processing cost without benefit, since the MIME rules for binary data in RFC 2045 apply to Internet mail but not to SIP messages.
+section: "3"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

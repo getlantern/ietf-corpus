@@ -1,0 +1,9 @@
+document: rfc-3202
+kind: design-rationale
+summary: Both 32-bit (Counter32) and 64-bit (Counter64 / CounterBasedGauge64) variants of all frame and octet counters are provided because Counter64 cannot be translated to SMIv1. Devices capable of SMIv2 should support the high-capacity variants; the MIB notes that some machine-readable information is lost in SMIv1 translation but semantics are preserved.
+section: "2"
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

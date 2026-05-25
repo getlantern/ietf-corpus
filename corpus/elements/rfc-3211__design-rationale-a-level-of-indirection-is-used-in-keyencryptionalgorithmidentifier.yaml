@@ -1,0 +1,9 @@
+document: rfc-3211
+kind: design-rationale
+summary: A level of indirection is used in KeyEncryptionAlgorithmIdentifier so that alternative wrapping algorithms can be introduced without requiring structural changes to PasswordRecipientInfo. If the KEK algorithm were specified directly, any alternative would require a new structure.
+section: 2.2.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
