@@ -1,0 +1,9 @@
+document: rfc-3006
+kind: interoperability-note
+summary: An intserv router that receives the new TSpec format but does not understand the compressibility hint should silently ignore it rather than rejecting the TSpec. If an implementation instead rejects PATH messages with the hint, it should send a PathErr with Error code 21, Sub-code 04 (malformed TSpec), and the sender may retry without the hint.
+section: "5"
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

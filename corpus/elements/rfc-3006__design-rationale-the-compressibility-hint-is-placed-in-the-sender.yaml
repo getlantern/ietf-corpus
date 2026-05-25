@@ -1,0 +1,9 @@
+document: rfc-3006
+kind: design-rationale
+summary: The compressibility hint is placed in the Sender TSpec rather than a separate RSVP object because the sender knows best what the data will look like, the TSpec is not modified in transit (unlike the Adspec), and placing it there works for non-RSVP resource reservation mechanisms as well.
+section: "2"
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

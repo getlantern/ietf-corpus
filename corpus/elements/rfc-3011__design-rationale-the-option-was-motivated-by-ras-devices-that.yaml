@@ -1,0 +1,9 @@
+document: rfc-3011
+kind: design-rationale
+summary: The option was motivated by RAS devices that allocate addresses on behalf of clients connected to external networks, while the device itself communicates with the DHCP server over an internal network that has no IP connectivity to the external networks. Without this option, the server would allocate addresses on the internal subnet rather than the required external subnets.
+section: "1.1"
+topics:
+    - ip
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

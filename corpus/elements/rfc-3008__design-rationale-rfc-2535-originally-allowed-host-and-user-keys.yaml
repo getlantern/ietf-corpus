@@ -1,0 +1,9 @@
+document: rfc-3008
+kind: design-rationale
+summary: RFC 2535 originally allowed host and user keys to generate material DNSSEC signatures to permit dynamic update without online zone keys. However, online zone keys are unavoidable because they are necessary to sign NXT and SOA record sets (per RFC 3007), so the original motivation for allowing host/user key signatures no longer holds.
+section: 3.2.1
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
