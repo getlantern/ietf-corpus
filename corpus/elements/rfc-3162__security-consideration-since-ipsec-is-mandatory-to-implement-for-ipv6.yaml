@@ -1,0 +1,12 @@
+document: rfc-3162
+kind: security-consideration
+summary: Since IPsec is mandatory to implement for IPv6, RADIUS implementations supporting IPv6 are expected to typically run over IPsec. Only IPsec ESP with a non-null transform provides security services sufficient to substitute for RADIUS application-layer security (shared secret confidentiality and integrity); IPsec AH or ESP null still requires a RADIUS shared secret.
+section: "5"
+topics:
+    - radius
+    - security
+    - ipsec
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

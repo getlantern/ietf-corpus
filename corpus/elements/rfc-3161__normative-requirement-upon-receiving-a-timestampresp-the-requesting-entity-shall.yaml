@@ -1,0 +1,10 @@
+document: rfc-3161
+kind: normative-requirement
+summary: Upon receiving a TimeStampResp, the requesting entity SHALL verify the status, then verify all TSTInfo fields including that messageImprint matches, the TSA certificate identifier is correct, and timeliness via nonce or local clock comparison. A failing verification SHALL cause the token to be rejected.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

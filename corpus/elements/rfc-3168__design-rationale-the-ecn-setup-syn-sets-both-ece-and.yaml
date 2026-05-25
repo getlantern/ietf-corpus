@@ -1,0 +1,9 @@
+document: rfc-3168
+kind: design-rationale
+summary: The ECN-setup SYN sets both ECE and CWR, while the SYN-ACK sets only ECE, to handle a class of faulty TCP implementations that blindly echo the Reserved field of the incoming SYN back in the SYN-ACK. The asymmetry lets the initiator distinguish a genuine ECN-capable response from a reflection.
+section: 6.1.1.2
+topics:
+    - ecn
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

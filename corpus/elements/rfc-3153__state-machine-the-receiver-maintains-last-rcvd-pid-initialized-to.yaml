@@ -1,0 +1,6 @@
+document: rfc-3153
+kind: state-machine
+summary: 'The receiver maintains Last_rcvd_PID (initialized to PPPMuxCP default PID). For each subframe: if PFF=0, Last_rcvd_PID is prepended before passing the subframe to PPP logic; if PFF=1, Last_rcvd_PID is updated to the subframe''s protocol value. Processing ends when the frame is exhausted or a length field exceeds remaining data, in which case the last subframe is dropped.'
+section: "1.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

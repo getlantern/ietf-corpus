@@ -1,0 +1,10 @@
+document: rfc-3168
+kind: normative-requirement
+summary: 'Reassembly of a fragmented IP packet MUST NOT lose congestion indications: if any fragment carries the CE codepoint, the reassembled packet MUST have CE set (unless another fragment carries Not-ECT, in which case the packet MUST be dropped instead of reassembled).'
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - ecn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

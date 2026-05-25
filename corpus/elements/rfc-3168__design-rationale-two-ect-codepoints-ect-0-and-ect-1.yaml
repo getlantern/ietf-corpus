@@ -1,0 +1,9 @@
+document: rfc-3168
+kind: design-rationale
+summary: 'Two ECT codepoints (ECT(0) and ECT(1)) are defined rather than one to support an ECN nonce: routers necessarily erase the nonce when setting CE, making repeated erasure of CE detectable by endpoints. This also helps detect misbehaving receivers that lie about having received CE-marked packets.'
+section: "11.2"
+topics:
+    - ecn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

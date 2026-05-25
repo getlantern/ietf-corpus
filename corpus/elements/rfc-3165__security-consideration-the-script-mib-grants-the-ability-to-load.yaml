@@ -1,0 +1,9 @@
+document: rfc-3165
+kind: security-consideration
+summary: The Script MIB grants the ability to load and execute arbitrary code on a distributed manager; VACM-based access control is the primary defense, and implementations should use it to restrict who can write to smCodeTable, smScriptTable, and smLaunchTable. The VACM read-access check on smScriptTable columns is mandatory before any script launch.
+section: "10"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

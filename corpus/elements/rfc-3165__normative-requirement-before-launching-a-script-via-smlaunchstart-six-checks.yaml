@@ -1,0 +1,10 @@
+document: rfc-3165
+kind: normative-requirement
+summary: 'Before launching a script via smLaunchStart, six checks must be performed: smLaunchOperStatus must be enabled, the referenced smScriptTable entry must exist, smScriptOperStatus must be enabled, the principal must have VACM read access to all accessible columns of the smScriptTable row, the smRunIndex value must be unused (or 0 for auto-generated), and concurrent running scripts must be below smLaunchMaxRunning.'
+section: "6"
+rfc2119_level: MUST
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

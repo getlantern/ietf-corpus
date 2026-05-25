@@ -1,0 +1,9 @@
+document: rfc-3168
+kind: interoperability-note
+summary: Some firewalls, load balancers, and intrusion detection systems drop ECN-setup SYN packets or respond with RST. A host MAY fall back to retransmitting a non-ECN-setup SYN (CWR and ECE cleared) if it receives a RST in response to an ECN-setup SYN, or if no reply arrives within the normal SYN retransmission timeout.
+section: 6.1.1.1
+topics:
+    - ecn
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

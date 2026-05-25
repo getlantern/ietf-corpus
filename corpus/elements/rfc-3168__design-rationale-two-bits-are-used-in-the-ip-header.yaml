@@ -1,0 +1,10 @@
+document: rfc-3168
+kind: design-rationale
+summary: Two bits are used in the IP header rather than one so that the sender can distinguish ECT from CE and routers can unambiguously signal congestion (CE) without ambiguity with the not-ECT codepoint, while still fitting within the two bits left unused by the Differentiated Services field.
+section: "21"
+topics:
+    - ecn
+    - ip
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

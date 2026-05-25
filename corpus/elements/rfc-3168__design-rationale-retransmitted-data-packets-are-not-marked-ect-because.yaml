@@ -1,0 +1,10 @@
+document: rfc-3168
+kind: design-rationale
+summary: Retransmitted data packets are not marked ECT because (1) if an unnecessary retransmission is later dropped, the CE indication would never reach the end nodes, and (2) marking retransmits would enable spoofed out-of-window CE packets to force a denial-of-service congestion-window reduction.
+section: 6.1.5
+topics:
+    - ecn
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

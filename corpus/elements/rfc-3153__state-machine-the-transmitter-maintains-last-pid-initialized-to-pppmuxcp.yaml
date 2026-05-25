@@ -1,0 +1,6 @@
+document: rfc-3153
+kind: state-machine
+summary: 'The transmitter maintains Last_PID (initialized to PPPMuxCP default PID) and a configurable MAX_SF_LEN. For each candidate subframe, if its protocol equals Last_PID, PFF is set to 0 and the protocol field omitted; otherwise PFF=1, the protocol field is included, and Last_PID is updated. Multiplexing stops when: the next subframe exceeds MAX_SF_LEN, the accumulated frame would exceed MRU, or no more subframes are pending.'
+section: "1.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

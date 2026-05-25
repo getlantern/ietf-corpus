@@ -1,0 +1,10 @@
+document: rfc-3161
+kind: security-consideration
+summary: When the TSA private key is compromised, the certificate SHALL be revoked with reasonCode keyCompromise(1) if the extension is present. All tokens signed with that key cannot be trusted. An audit trail of all generated tokens MAY help discriminate genuine from backdated tokens.
+section: "4"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,10 @@
+document: rfc-3168
+kind: security-consideration
+summary: An attacker that can spoof IP source addresses can inject out-of-window data packets with CE set, forcing the TCP receiver to send ECN-Echo ACKs and causing the sender to unnecessarily halve its congestion window. This denial-of-service attack is mitigated by the rule that retransmitted packets MUST NOT carry ECT and receivers SHOULD ignore CE on out-of-window packets.
+section: 6.1.5
+topics:
+    - ecn
+    - security
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

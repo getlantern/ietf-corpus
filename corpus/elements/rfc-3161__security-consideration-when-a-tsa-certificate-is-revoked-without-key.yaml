@@ -1,0 +1,10 @@
+document: rfc-3161
+kind: security-consideration
+summary: When a TSA certificate is revoked without key compromise, the CRL reasonCode SHALL be set to unspecified(0), affiliationChanged(3), superseded(4), or cessationOfOperation(5); tokens generated before the revocation time remain valid. Without a reasonCode, all tokens signed with that key SHALL be considered invalid.
+section: "4"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

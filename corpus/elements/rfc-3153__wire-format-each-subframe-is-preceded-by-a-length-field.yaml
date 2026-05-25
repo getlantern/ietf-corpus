@@ -1,0 +1,6 @@
+document: rfc-3153
+kind: wire-format
+summary: Each subframe is preceded by a length field of 1 or 2 bytes. The most significant bit is the Protocol Field Flag (PFF), the next bit is the Length Extension (LXT), and the remaining 6 or 14 bits are the subframe length (LEN). LXT=0 means 1-byte length (6-bit LEN, max 63 bytes); LXT=1 means 2-byte length (14-bit LEN, max 16,383 bytes).
+section: "1.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
