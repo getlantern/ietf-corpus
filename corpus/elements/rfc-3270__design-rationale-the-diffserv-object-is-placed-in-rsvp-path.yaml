@@ -1,0 +1,10 @@
+document: rfc-3270
+kind: design-rationale
+summary: The DIFFSERV Object is placed in RSVP Path messages (not Resv messages) because Diff-Serv parameters such as PHB mapping and PSC need to be known by each LSR along the path before it can allocate a label and install the appropriate forwarding treatment. The Resv message returns only the LABEL object without a DIFFSERV object.
+section: "5.3"
+topics:
+    - mpls
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

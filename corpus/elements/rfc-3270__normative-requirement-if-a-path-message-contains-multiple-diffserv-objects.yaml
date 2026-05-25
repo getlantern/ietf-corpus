@@ -1,0 +1,11 @@
+document: rfc-3270
+kind: normative-requirement
+summary: If a Path message contains multiple DIFFSERV objects, only the first is meaningful; subsequent objects MUST be ignored and not forwarded. An LSR that does not recognize the DIFFSERV object Class-Num MUST send a PathErr with error code 'Unknown object class'; an LSR that recognizes the class but not the C-Type must send 'Unknown object C-Type'.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

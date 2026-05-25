@@ -1,0 +1,9 @@
+document: rfc-3267
+kind: wire-format
+summary: 'Frame CRC in octet-aligned mode: 8-bit CRC (c0..c7) calculated over all class A bits using generator polynomial C(x) = 1 + x^2 + x^3 + x^4 + x^8 (binary: 101110001 MSB..LSB). One CRC per speech frame, placed as a list after the ToC entries; no CRC is present for FT=14 or FT=15 frames.'
+section: 4.4.2.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

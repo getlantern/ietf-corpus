@@ -1,0 +1,10 @@
+document: rfc-3265
+kind: design-rationale
+summary: A 481 response to NOTIFY is given special meaning — it unconditionally requires the notifier to remove the corresponding subscription — to prevent subscribers from being used as amplifiers in denial-of-service attacks. Without this, subscribers receiving NOTIFY for unknown subscriptions would need to both send an error and separately send a SUBSCRIBE to cancel.
+section: 3.2.2
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

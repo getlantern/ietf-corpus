@@ -1,0 +1,9 @@
+document: rfc-3267
+kind: design-rationale
+summary: The built-in redundant retransmission scheme (including previous frame-blocks in subsequent payloads) provides equivalent functionality to RFC 2198 with less overhead and complexity in most cases. RFC 2198 is preferred only when the spread between primary and redundant encodings exceeds 5 frame times, or when a non-AMR codec is needed for the redundant encoding.
+section: 3.7.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

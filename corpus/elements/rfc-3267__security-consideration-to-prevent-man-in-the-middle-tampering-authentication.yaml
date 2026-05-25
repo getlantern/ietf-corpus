@@ -1,0 +1,10 @@
+document: rfc-3267
+kind: security-consideration
+summary: To prevent man-in-the-middle tampering, authentication mechanisms SHOULD protect the payload header, ToC, frame CRCs, RTP timestamp, sequence number, and marker bit in addition to speech bits. Combining UED/UEP with authentication is difficult because any bit error in covered bits will cause authentication failure.
+section: "7.2"
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

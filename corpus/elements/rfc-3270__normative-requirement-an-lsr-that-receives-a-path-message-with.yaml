@@ -1,0 +1,11 @@
+document: rfc-3270
+kind: normative-requirement
+summary: An LSR that receives a Path message with the DIFFSERV object for an E-LSP but determines the signaled EXP↔PHB mapping is invalid (MAPnb out of range 0–8, a given EXP value appearing in more than one MAP entry, or invalid PHBID encoding) MUST send a PathErr with Diff-Serv Error code 27 and error value 3 ('Invalid EXP↔PHB mapping').
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

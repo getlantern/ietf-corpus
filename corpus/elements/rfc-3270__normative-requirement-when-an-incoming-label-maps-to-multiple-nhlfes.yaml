@@ -1,0 +1,11 @@
+document: rfc-3270
+kind: normative-requirement
+summary: When an incoming label maps to multiple NHLFEs (e.g., for load balancing), the Diff-Serv LSR MUST choose one NHLFE whose Diff-Serv Context indicates support for the outgoing PHB of the forwarded packet. When multiple matching NHLFEs exist, all packets of a given microflow MUST be transported over the same LSP.
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

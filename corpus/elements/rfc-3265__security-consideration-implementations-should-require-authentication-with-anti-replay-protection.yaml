@@ -1,0 +1,10 @@
+document: rfc-3265
+kind: security-consideration
+summary: Implementations SHOULD require authentication with anti-replay protection. Replaying SUBSCRIBE can install arbitrary past subscriptions; replaying NOTIFY can spoof stale state. The prohibition on sending NOTIFY to non-subscribed nodes also mitigates replay effects.
+section: "5.4"
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

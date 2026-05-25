@@ -1,0 +1,10 @@
+document: rfc-3267
+kind: normative-requirement
+summary: The sender MUST only apply interleaving if the receiver has signalled its use out-of-band. When performing interleaving, the sender MUST use frame-block counts (N) and ILL such that N*(L+1) <= I, where I is the receiver's declared maximum interleave group size.
+section: 4.4.1
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

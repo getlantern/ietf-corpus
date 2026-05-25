@@ -1,0 +1,9 @@
+document: rfc-3273
+kind: design-rationale
+summary: 'For each high-capacity counter, the MIB provides three objects: a base Counter32 (value modulo 2^32), an overflow Counter32 (X DIV 2^32), and a combined Counter64/CounterBasedGauge64. This triple representation lets SNMPv1 managers reconstruct the 64-bit value from the two 32-bit objects while SNMPv2c/v3 managers can read the Counter64 directly.'
+section: "5"
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

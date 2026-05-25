@@ -1,0 +1,10 @@
+document: rfc-3265
+kind: normative-requirement
+summary: If a NOTIFY request fails due to an error response and the subscription was installed via a soft-state mechanism, the notifier MUST remove the corresponding subscription. A 481 response to NOTIFY MUST cause subscription removal even for non-SUBSCRIBE-installed subscriptions.
+section: 3.2.2
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

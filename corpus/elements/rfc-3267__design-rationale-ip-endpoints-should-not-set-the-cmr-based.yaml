@@ -1,0 +1,10 @@
+document: rfc-3267
+kind: design-rationale
+summary: IP endpoints SHOULD NOT set the CMR based on packet loss or congestion because the far end may be a gateway to a non-IP radio network that needs the CMR field for radio-link optimization, and IP-side congestion should instead be signalled via RTCP and managed by the IP sender.
+section: 4.3.1
+topics:
+    - rtp
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

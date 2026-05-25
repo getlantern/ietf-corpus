@@ -1,0 +1,10 @@
+document: rfc-3268
+kind: security-consideration
+summary: A chosen-plaintext attack applies to all TLS CBC-mode ciphersuites defined in RFC 2246, allowing attackers to verify hypotheses about earlier plaintext without compromising key material. This does not affect typical HTTPS use but may affect other TLS applications; the CBC construction was expected to change in a future TLS revision.
+section: Security Considerations
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

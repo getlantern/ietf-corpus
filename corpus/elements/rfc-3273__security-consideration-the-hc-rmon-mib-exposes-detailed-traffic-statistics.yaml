@@ -1,0 +1,10 @@
+document: rfc-3273
+kind: security-consideration
+summary: The HC-RMON-MIB exposes detailed traffic statistics, host tables, and packet capture data. Since RMON probes operate in promiscuous mode, unauthorized SNMP read access to this MIB can reveal sensitive network topology and traffic patterns; SNMPv3 with authentication and privacy is recommended to protect access.
+section: "6"
+topics:
+    - snmp
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

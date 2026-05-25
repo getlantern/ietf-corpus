@@ -1,0 +1,9 @@
+document: rfc-3268
+kind: security-consideration
+summary: ADH ciphersuites provide confidentiality but not authentication, making them vulnerable to man-in-the-middle attacks. Parties using ADH must authenticate by other means and must have a way to verify they share the same TLS connection (e.g., by computing a MAC over the TLS Finished message).
+section: Security Considerations
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
