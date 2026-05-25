@@ -1,0 +1,8 @@
+document: rfc-3015
+kind: state-machine
+summary: EventBufferControl (in TerminationState Descriptor) governs post-detection event handling. In LockStep mode, after detecting a recognized event the MG suspends normal event processing, buffers subsequent events in a FIFO queue, and waits for a new EventsDescriptor; buffered events are replayed FIFO against the new descriptor. In Off mode (default), the MG continues immediately with the active EventsDescriptor.
+section: 7.1.9
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
