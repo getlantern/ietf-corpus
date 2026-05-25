@@ -1,0 +1,9 @@
+document: rfc-3175
+kind: design-rationale
+summary: Multi-level aggregation is supported by writing the nesting depth (level n+1) into the 2-byte Router Alert option field and using RSVP-E2E-IGNORE for all sub-levels; a deaggregator for level n+1 only processes messages where the router alert carries n+1, forwarding all others unchanged.
+section: 1.4.9
+topics:
+    - ip
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

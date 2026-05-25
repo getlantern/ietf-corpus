@@ -1,0 +1,10 @@
+document: rfc-3190
+kind: normative-requirement
+summary: When an RTP sender accepts audio samples from a DV video system containing error code values, it SHOULD perform some error concealment algorithm rather than passing the error codes through. The RTP sender MAY treat the error code as a valid sample, but this is likely to cause undesirable audio output.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

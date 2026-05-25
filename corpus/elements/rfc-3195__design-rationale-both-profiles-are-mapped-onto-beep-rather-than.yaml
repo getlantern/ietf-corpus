@@ -1,0 +1,10 @@
+document: rfc-3195
+kind: design-rationale
+summary: Both profiles are mapped onto BEEP rather than raw TCP to leverage BEEP's built-in ordered reliable delivery, authentication, and privacy features. BEEP guarantees ordered reliable delivery within each channel, so both RAW and COOKED inherit this property automatically.
+section: "2"
+topics:
+    - syslog
+    - security
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

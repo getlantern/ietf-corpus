@@ -1,0 +1,9 @@
+document: rfc-3185
+kind: design-rationale
+summary: Byte reversal was chosen over bit reversal because bit reversal would cause DES parity bits from MSG1.CEK to become keying bits for MSG2.KEK in DES-based algorithms, weakening the derived key.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,10 @@
+document: rfc-3193
+kind: security-consideration
+summary: Use of pre-shared keys in IKE main mode is vulnerable to man-in-the-middle attacks in remote access scenarios because pre-shared key selection can only be based on the IP address, and dynamic addressing forces use of a group pre-shared key. A rogue server with this key can mount dictionary attacks against PPP legacy auth methods like CHAP.
+section: 5.1.4
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

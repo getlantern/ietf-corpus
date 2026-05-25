@@ -1,0 +1,9 @@
+document: rfc-3189
+kind: design-rationale
+summary: DV uses intra-frame DCT compression only, not interframe compression as in MPEG. All video data including audio and system data are managed within the picture-frame unit, which is why the RTP packetization keeps all DIF blocks within a single frame per packet.
+section: "2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

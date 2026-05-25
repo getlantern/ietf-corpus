@@ -1,0 +1,9 @@
+document: rfc-3193
+kind: interoperability-note
+summary: L2TP allows the responder to use a dynamically assigned UDP source port (reflected in the SCCRP), which creates integration complexity with IKE/IPsec since phase 2 filter sets must be updated mid-establishment. L2TP must inject updated filters into the IPsec filter database when port changes occur.
+section: "4"
+topics:
+    - vpn
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

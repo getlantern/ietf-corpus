@@ -1,0 +1,10 @@
+document: rfc-3193
+kind: interoperability-note
+summary: Since the default MRU for PPP is 1500 bytes, L2TP and IPsec header overhead can cause fragmentation. The MTU provided to PPP should be the ingress/egress interface MTU minus extra header overhead, set after L2TP tunnel setup but before LCP negotiations begin.
+section: "3.2"
+topics:
+    - vpn
+    - ipsec
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

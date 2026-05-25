@@ -1,0 +1,10 @@
+document: rfc-3189
+kind: normative-requirement
+summary: All DIF blocks in one RTP packet must be from the same video frame. DIF blocks from the next video frame MUST NOT be packed into the same RTP packet even if payload space remains, because frame transitions are signaled by a timestamp change.
+section: "2.2"
+rfc2119_level: MUST NOT
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

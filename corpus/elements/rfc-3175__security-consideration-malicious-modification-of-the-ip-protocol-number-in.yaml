@@ -1,0 +1,9 @@
+document: rfc-3175
+kind: security-consideration
+summary: 'Malicious modification of the IP protocol number in an E2E Path message could silently black-hole reservations: interior routers would ignore the message, and the attack might be difficult to detect if the value is restored before reaching the receiver. The loss of an aggregate reservation affects all E2E sessions mapped onto it.'
+section: "5"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

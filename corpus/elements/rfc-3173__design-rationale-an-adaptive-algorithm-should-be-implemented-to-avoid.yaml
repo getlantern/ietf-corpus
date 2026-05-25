@@ -1,0 +1,8 @@
+document: rfc-3173
+kind: design-rationale
+summary: An adaptive algorithm should be implemented to avoid the performance hit of repeatedly attempting compression on previously compressed payloads; if i consecutive compressions fail, the next k datagrams are sent uncompressed, increasing the skip count on subsequent failures.
+section: "2.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

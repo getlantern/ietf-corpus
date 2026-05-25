@@ -1,0 +1,10 @@
+document: rfc-3195
+kind: normative-requirement
+summary: A relay MUST NOT add the 'deviceFQDN' and 'deviceIP' fields to an entry if those fields are missing and an accepted 'iam' element indicates messages are coming from another relay. Before forwarding, a relay SHOULD add these fields based on the device's 'iam' or transport address if the device did not include them.
+section: 4.4.2
+rfc2119_level: MUST NOT
+topics:
+    - syslog
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

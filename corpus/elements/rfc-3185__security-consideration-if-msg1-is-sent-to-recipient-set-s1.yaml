@@ -1,0 +1,9 @@
+document: rfc-3185
+kind: security-consideration
+summary: If MSG1 is sent to recipient set S1 and MSG2 is sent to only a subset, all members of S1 can still decrypt MSG2 because MSG2.KEK is derived solely from MSG1.CEK; implementers must be aware that the effective recipient set for subsequent messages is the union of all prior recipient sets.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

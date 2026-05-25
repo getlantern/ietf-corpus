@@ -1,0 +1,8 @@
+document: rfc-3175
+kind: design-rationale
+summary: The mapping decision for which aggregate reservation an E2E flow uses is assigned entirely to the deaggregator, not the aggregator, because the deaggregator is the first node to see the E2E Resv (which contains the receiver-requested IntServ service type). This avoids inconsistent mapping decisions and enables faster aggregate reservation setup.
+section: 1.4.3
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,9 @@
+document: rfc-3185
+kind: security-consideration
+summary: Implementations must take care not to create a cycle where MSG[n].CEK is the byte-reversal of MSG[n].KEK, as this could result in an unexpected fixed key being reused across messages.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

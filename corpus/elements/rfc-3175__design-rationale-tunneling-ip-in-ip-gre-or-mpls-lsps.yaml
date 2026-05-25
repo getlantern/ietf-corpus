@@ -1,0 +1,9 @@
+document: rfc-3175
+kind: design-rationale
+summary: Tunneling (IP-in-IP, GRE, or MPLS LSPs) is recommended for intra-domain use when equal-cost multipath may exist, because without tunneling the aggregate Path message and E2E data may follow different equal-cost paths, requiring either bandwidth measurement or wasteful over-reservation on every equal-cost path.
+section: 1.4.6
+topics:
+    - ip
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

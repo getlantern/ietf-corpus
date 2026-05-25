@@ -1,0 +1,10 @@
+document: rfc-3175
+kind: normative-requirement
+summary: The aggregating router MUST mark data packets belonging to an established E2E reservation with the correct DSCP as notified by the deaggregator via the DCLASS object, and MUST perform per-E2E-reservation policing (token bucket metering) on those flows. Out-of-compliance packets must be dropped, reshaped, or remarked.
+section: "2.11"
+rfc2119_level: MUST
+topics:
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

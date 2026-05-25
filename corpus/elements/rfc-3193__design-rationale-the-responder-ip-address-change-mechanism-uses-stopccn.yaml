@@ -1,0 +1,9 @@
+document: rfc-3193
+kind: design-rationale
+summary: The responder IP address change mechanism uses StopCCN with a specific error code and ASCII-encoded address in the error message field rather than a new AVP. This reduces complexity by ensuring the initiator always knows the precise IP address of its peer, and allows L2TP to tie IPsec filters and policy to the same peer.
+section: "4"
+topics:
+    - vpn
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

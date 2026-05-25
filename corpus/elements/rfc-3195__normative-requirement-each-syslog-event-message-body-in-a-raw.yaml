@@ -1,0 +1,10 @@
+document: rfc-3195
+kind: normative-requirement
+summary: Each syslog event message body in a RAW ANS reply MUST be 1024 bytes or less, excluding BEEP framing overhead. When multiple syslog messages are aggregated into a single ANS frame, each is separated by CRLF from the preceding, and there MUST NOT be a CRLF after the final message before the BEEP END trailer.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - syslog
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

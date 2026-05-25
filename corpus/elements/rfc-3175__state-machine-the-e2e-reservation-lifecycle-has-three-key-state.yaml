@@ -1,0 +1,9 @@
+document: rfc-3175
+kind: state-machine
+summary: 'The E2E reservation lifecycle has three key state transitions: (1) Aggregator receives E2E Path on exterior interface → changes protocol to RSVP-E2E-IGNORE → forwards on interior interface; (2) Deaggregator receives RSVP-E2E-IGNORE on interior → restores RSVP → forwards on exterior; (3) E2E removal (PathTear/ResvTear/timeout) → remove FLOWSPEC and SENDER_TSPEC contributions from aggregate.'
+section: "2.1"
+topics:
+    - qos
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

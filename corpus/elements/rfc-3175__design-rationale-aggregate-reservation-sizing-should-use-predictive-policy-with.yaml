@@ -1,0 +1,8 @@
+document: rfc-3175
+kind: design-rationale
+summary: Aggregate reservation sizing should use predictive policy with hysteresis rather than tracking E2E reservations exactly, to avoid changing the aggregate on every E2E change. The recommended policy takes the larger of a diurnal-cycle a-priori estimate and a 90–99% confidence trend line, updated no more than every few minutes.
+section: "4"
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

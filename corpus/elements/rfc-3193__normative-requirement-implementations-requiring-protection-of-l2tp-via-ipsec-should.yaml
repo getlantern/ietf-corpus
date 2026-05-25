@@ -1,0 +1,10 @@
+document: rfc-3193
+kind: normative-requirement
+summary: Implementations requiring protection of L2TP via IPsec SHOULD NOT allow the responder to change to a new IP address without sending a StopCCN. If the responder does choose a new IP address, it MUST send a StopCCN with Result Code set to 2 (General Error) and Error Code SHOULD be set to 7 (Try Another).
+section: "4"
+rfc2119_level: SHOULD NOT
+topics:
+    - vpn
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

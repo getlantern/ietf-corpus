@@ -1,0 +1,9 @@
+document: rfc-3185
+kind: design-rationale
+summary: Byte reversal (rather than direct reuse) of MSG1.CEK to form MSG2.KEK prevents an attack where an attacker with known plaintext/ciphertext from MSG1 could directly substitute a ciphertext block as MSG2.KEKRecipientInfo.encryptedKey, thereby learning the next CEK.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

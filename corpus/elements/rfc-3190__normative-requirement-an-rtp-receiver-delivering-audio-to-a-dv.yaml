@@ -1,0 +1,10 @@
+document: rfc-3190
+kind: normative-requirement
+summary: An RTP receiver delivering audio to a DV video system SHOULD translate audio sample values that would be interpreted as DV error codes into the next smaller negative audio value (e.g., 800h→801h for 12-bit, 8000h→8001h for 16-bit, 80000h-8000Fh→80010h for 20-bit).
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
