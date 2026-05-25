@@ -1,0 +1,10 @@
+document: rfc-3280
+kind: security-consideration
+summary: The security of the Internet PKI depends on protecting CA private signing keys; compromise enables fraudulent certificate issuance. Implementations MUST reject certificates with unrecognized critical extensions to prevent security policy bypass. Relying parties SHOULD obtain the most recently issued CRL and verify certificate status before relying on any certificate.
+section: "9"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

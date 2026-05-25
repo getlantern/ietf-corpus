@@ -1,0 +1,10 @@
+document: rfc-3279
+kind: normative-requirement
+summary: 'For KEA public keys, CAs MUST populate the parameters field of AlgorithmIdentifier with an 80-bit domain identifier (OCTET STRING) computed as: DER-encode Dss-Parms, SHA-1 hash it to 160 bits, then XOR the high 80 bits with the low 80 bits.'
+section: 2.3.4
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

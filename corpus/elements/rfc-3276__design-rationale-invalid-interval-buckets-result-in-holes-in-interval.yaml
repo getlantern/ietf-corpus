@@ -1,0 +1,8 @@
+document: rfc-3276
+kind: design-rationale
+summary: Invalid interval buckets result in holes in interval tables rather than placeholder rows. For example, if interval 12 is invalid but 11 and 13 are valid, a GetNext on .1.1.1.1.11 returns .1.1.1.1.13. This differs from RFC 2493 and RFC 2662 which represented invalid buckets explicitly.
+section: "4.4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

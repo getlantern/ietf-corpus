@@ -1,0 +1,9 @@
+document: rfc-3281
+kind: security-consideration
+summary: A rogue CA sharing the same issuer name as that in an AC's baseCertificateID could issue a fraudulent PKC with the same issuer/serial, allowing misuse of a legitimate AC. This SHOULD be avoided by ensuring no two CAs share a name; alternatively, bind ACs to PKCs via the publicKeyCert ObjectDigestInfo to avoid the collision entirely.
+section: "8"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

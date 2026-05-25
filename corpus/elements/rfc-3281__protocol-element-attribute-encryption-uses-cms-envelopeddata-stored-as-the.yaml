@@ -1,0 +1,10 @@
+document: rfc-3281
+kind: protocol-element
+summary: Attribute encryption uses CMS EnvelopedData stored as the encAttrs attribute (id-aca-encAttrs, { id-aca 6 }). The plaintext ACClearAttrs structure (containing acIssuer, acSerial, and attrs) is DER-encoded and wrapped in an OCTET STRING; after decryption, the verifier MUST confirm the acIssuer and acSerial match the containing AC to prevent ciphertext stealing.
+section: "7.1"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

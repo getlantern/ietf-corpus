@@ -1,0 +1,10 @@
+document: rfc-3280
+kind: normative-requirement
+summary: The signatureAlgorithm field in the outer Certificate SEQUENCE MUST contain the same algorithm identifier as the signature field inside TBSCertificate (section 4.1.2.3). This redundancy is required so verifiers need not parse the full TBSCertificate to identify the algorithm.
+section: 4.1.1.2
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

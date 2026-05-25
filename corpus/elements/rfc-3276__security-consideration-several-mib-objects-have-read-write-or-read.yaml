@@ -1,0 +1,9 @@
+document: rfc-3276
+kind: security-consideration
+summary: 'Several MIB objects have read-write or read-create access and could be used to disrupt service: hdsl2ShdslMaintLoopbackConfig can initiate loopbacks, hdsl2ShdslMaintSoftRestart can restart modems, hdsl2ShdslSpanConfNumRepeaters can corrupt span topology, and profile objects can alter all lines sharing that profile. SNMPv3 with authentication and privacy is recommended to prevent unauthorized access.'
+section: "7"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

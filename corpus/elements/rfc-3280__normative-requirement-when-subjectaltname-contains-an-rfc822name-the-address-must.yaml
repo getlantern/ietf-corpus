@@ -1,0 +1,12 @@
+document: rfc-3280
+kind: normative-requirement
+summary: When subjectAltName contains an rfc822Name, the address MUST use addr-spec format (RFC 822). When it contains an iPAddress, it MUST be stored in network byte order as exactly 4 octets for IPv4 or exactly 16 octets for IPv6. A dNSName of ' ' (space) MUST NOT be used.
+section: 4.2.1.7
+rfc2119_level: MUST
+topics:
+    - pkix
+    - ip
+    - dns
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

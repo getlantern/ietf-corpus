@@ -1,0 +1,9 @@
+document: rfc-3280
+kind: interoperability-note
+summary: Name comparison for path validation requires PrintableString attribute values to be compared case-insensitively with leading/trailing whitespace removed and internal whitespace sequences collapsed to a single space. Attribute values encoded in different ASN.1 types (e.g., PrintableString vs BMPString) MAY be treated as different strings, which is a deliberate relaxation from X.500 rules.
+section: 4.1.2.4
+topics:
+    - pkix
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

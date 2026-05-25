@@ -1,0 +1,8 @@
+document: rfc-3276
+kind: design-rationale
+summary: SNR Margin and Loop Attenuation alarm conditions are tracked per-endpoint in the MIB rather than per-unit as in the EOC specification. For repeaters this requires the terminal unit agent to detect threshold crossings, but since the EOC reports SNR/attenuation values in the same message as alarm conditions, the implementation impact is minimal.
+section: "4.6"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

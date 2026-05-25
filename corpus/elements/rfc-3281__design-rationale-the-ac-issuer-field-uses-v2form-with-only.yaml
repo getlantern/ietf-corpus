@@ -1,0 +1,9 @@
+document: rfc-3281
+kind: design-rationale
+summary: The AC issuer field uses v2Form with only an issuerName (rather than baseCertificateID) so the AC issuer need not know which PKC the AC verifier will use to validate the AC issuer's signature at AC creation time, avoiding forcing the verifier to trust a specific issuer PKC chosen at issuance.
+section: 4.2.3
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

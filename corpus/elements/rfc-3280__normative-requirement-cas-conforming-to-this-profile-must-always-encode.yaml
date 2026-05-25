@@ -1,0 +1,9 @@
+document: rfc-3280
+kind: normative-requirement
+summary: CAs conforming to this profile MUST always encode certificate validity dates through the year 2049 as UTCTime; validity dates in 2050 or later MUST be encoded as GeneralizedTime. This rule avoids the Y2K-style two-digit year ambiguity of UTCTime for dates near or after 2050.
+section: 4.1.2.5
+rfc2119_level: MUST
+topics:
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

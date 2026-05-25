@@ -1,0 +1,10 @@
+document: rfc-3287
+kind: normative-requirement
+summary: When dsmonAggControlLocked transitions from 'false' to 'true', the agent is required to reactivate any previously suspended data collections, validating each against the new counter aggregation configuration. If validation fails, the collection's RowStatus MUST be set to 'notReady'.
+section: "4"
+rfc2119_level: REQUIRED
+topics:
+    - snmp
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

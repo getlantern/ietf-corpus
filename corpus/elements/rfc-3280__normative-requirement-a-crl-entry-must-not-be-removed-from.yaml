@@ -1,0 +1,10 @@
+document: rfc-3280
+kind: normative-requirement
+summary: A CRL entry MUST NOT be removed from the CRL until it appears on one regularly scheduled CRL issued beyond the revoked certificate's validity period. This prevents relying parties from missing a revocation by using a cached CRL that predates the entry's removal.
+section: "3.3"
+rfc2119_level: MUST NOT
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

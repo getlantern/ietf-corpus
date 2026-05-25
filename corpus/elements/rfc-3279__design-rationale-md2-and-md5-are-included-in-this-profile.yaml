@@ -1,0 +1,10 @@
+document: rfc-3279
+kind: design-rationale
+summary: MD2 and MD5 are included in this profile despite SHA-1 being preferred because PEM uses MD2 for certificates (RFC 1422/1423) and MD5 is used in other legacy applications. Both are discouraged for new applications but remain valid for verifying existing signatures.
+section: "2.1"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

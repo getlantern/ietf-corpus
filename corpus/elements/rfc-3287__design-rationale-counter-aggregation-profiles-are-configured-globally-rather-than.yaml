@@ -1,0 +1,9 @@
+document: rfc-3287
+kind: design-rationale
+summary: Counter aggregation profiles are configured globally rather than per-data-source to allow sharing across collections. Per-collection assignment is used (instead of per-datasource) to reduce MIB complexity by avoiding an extra layer of tables, though agents MAY restrict all collections on a datasource to use the same profile.
+section: 3.1.1
+topics:
+    - snmp
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

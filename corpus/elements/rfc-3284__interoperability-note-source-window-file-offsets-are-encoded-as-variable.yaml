@@ -1,0 +1,6 @@
+document: rfc-3284
+kind: interoperability-note
+summary: Source window file offsets are encoded as variable-sized integers and may represent 64-bit values on large file systems. When delta files produced on a 64-bit system are decoded on a 32-bit system, source window positions that exceed 32-bit addressable space may make portions of the target data unrecoverable. The RFC notes this should be resolved by a generic negotiation mechanism at the protocol level.
+section: "9"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

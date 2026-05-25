@@ -1,0 +1,9 @@
+document: rfc-3280
+kind: design-rationale
+summary: CRL-based revocation has an inherent time-granularity limitation equal to the CRL issuance period (minutes to a week), because a revocation is not reliably communicated until the next CRL is issued and distributed. This limitation motivated support for online revocation protocols (defined in companion PKIX specifications), which can reduce the latency to near-zero once a CA accepts a revocation report.
+section: "3.3"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
