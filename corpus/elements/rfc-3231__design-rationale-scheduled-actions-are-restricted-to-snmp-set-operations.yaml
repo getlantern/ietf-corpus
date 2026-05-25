@@ -1,0 +1,9 @@
+document: rfc-3231
+kind: design-rationale
+summary: Scheduled actions are restricted to SNMP set operations on local INTEGER MIB objects rather than arbitrary operations. This avoids delegation-of-access-rights security problems and simplifies the model; complex actions can still be achieved by triggering a management script via the Script MIB.
+section: "3.5"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

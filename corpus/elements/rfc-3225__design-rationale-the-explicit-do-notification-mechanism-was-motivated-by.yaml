@@ -1,0 +1,9 @@
+document: rfc-3225
+kind: design-rationale
+summary: 'The explicit DO notification mechanism was motivated by operational problems: DNSSEC RRs frequently push responses beyond the 512-byte UDP limit (RFC 1035), causing TCP fallback with significantly higher overhead (five packets vs. two), increased latency, timeout failures, and nameserver load. Additionally, some non-DNSSEC-aware resolvers crashed or silently discarded responses containing DNSSEC RRs.'
+section: "2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

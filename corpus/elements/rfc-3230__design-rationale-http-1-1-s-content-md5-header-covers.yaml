@@ -1,0 +1,8 @@
+document: rfc-3230
+kind: design-rationale
+summary: HTTP/1.1's Content-MD5 header covers only the message body, not the full instance, making it insufficient when partial content (206 responses) or delta encodings are used to reassemble an instance at the client. A new mechanism covering entire instances is needed.
+section: "1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

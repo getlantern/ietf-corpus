@@ -1,0 +1,8 @@
+document: rfc-3229
+kind: design-rationale
+summary: A new 226 status code is introduced (rather than using Expires/Cache-Control hacks) because existing HTTP/1.0 caches forward unknown 2xx responses without caching them, preventing delta-encoded bodies from being stored and later served verbatim to non-delta-capable clients.
+section: "5.4"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

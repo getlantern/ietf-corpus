@@ -1,0 +1,9 @@
+document: rfc-3229
+kind: security-consideration
+summary: Delta encoding introduces a risk of data corruption if a client's cache is corrupt or if a delta implementation has a bug; the existing HTTP Content-MD5 and Digest Authentication mechanisms do not cover reassembled multi-message data, so a separate integrity mechanism is needed for delta-assembled instances.
+section: "9"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

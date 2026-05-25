@@ -1,0 +1,10 @@
+document: rfc-3219
+kind: normative-requirement
+summary: A peering session MUST NOT be established between two LSs both in Send Only mode or both in Receive Only mode. On detecting such a capability mismatch in an OPEN message, the LS MUST send a NOTIFICATION with error code 'Capability Mismatch' and close the session.
+section: 4.2.1.1.2
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

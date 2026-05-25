@@ -1,0 +1,10 @@
+document: rfc-3225
+kind: normative-requirement
+summary: If a server returns NOTIMP, FORMERR, or SERVFAIL in response to a query with DO set, the resolver SHOULD NOT expect DNSSEC security RRs and SHOULD retry the query without EDNS0 per RFC 2671 section 5.3.
+section: "3"
+rfc2119_level: SHOULD NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

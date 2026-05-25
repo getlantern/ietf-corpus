@@ -1,0 +1,8 @@
+document: rfc-3214
+kind: state-machine
+summary: 'During modification, the ingress LSR transitions from one outgoing label (A, original) to two simultaneous outgoing labels (A and B) for the same FEC upon receiving the Label Mapping response. It then activates FEC1->Label B, deactivates FEC1->Label A, and initiates release of label A. States: active-single-label -> dual-label (on Label Mapping receipt) -> active-new-label (after FTN swap) -> modification-complete (after Label Release propagation).'
+section: "3.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

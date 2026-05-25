@@ -1,0 +1,9 @@
+document: rfc-3219
+kind: design-rationale
+summary: TRIP introduces a separate RoutedPath attribute (distinct from AdvertisementPath) because intermediate LSs need not modify the NextHopServer when propagating a route, causing the advertisement propagation path to diverge from the actual signaling path. BGP has no equivalent because all AS hops must modify the next-hop.
+section: "5.4"
+topics:
+    - routing
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

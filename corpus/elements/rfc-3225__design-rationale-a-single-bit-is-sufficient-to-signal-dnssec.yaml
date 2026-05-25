@@ -1,0 +1,9 @@
+document: rfc-3225
+kind: design-rationale
+summary: A single bit is sufficient to signal DNSSEC support because client-side support is considered binary — the client either accepts all DNSSEC security RRs or none. The EDNS0 header is used because classic DNS header bits are scarce and may be inappropriately copied by non-compliant caching or forwarding servers.
+section: "2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,8 @@
+document: rfc-3231
+kind: state-machine
+summary: 'A schedule entry transitions: created (notInService or notReady via schedRowStatus) → disabled (schedAdminStatus=disabled, schedRowStatus=active) → enabled (schedAdminStatus=enabled, schedRowStatus=active) → finished (oneshot only, after first trigger). Attempts to destroy or set notInService while schedOperStatus is enabled return inconsistentValue.'
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

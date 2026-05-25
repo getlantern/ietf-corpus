@@ -1,0 +1,10 @@
+document: rfc-3220
+kind: security-consideration
+summary: All registration messages must be authenticated to prevent remote redirection attacks. The default authentication uses HMAC-MD5. Replay protection is mandatory and can be achieved via timestamps (with a 7-second window and clock synchronization requirement) or nonces (challenge-response using the Identification field). The Mobility Security Association defines which replay protection style is in use.
+section: "5"
+topics:
+    - mobility
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

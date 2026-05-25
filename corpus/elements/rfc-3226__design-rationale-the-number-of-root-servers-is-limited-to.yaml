@@ -1,0 +1,9 @@
+document: rfc-3226
+kind: design-rationale
+summary: The number of root servers is limited to 13 because that is the maximum number of NS records and their addresses that fit in a single 512-octet DNS answer; A6 or KEY records in the root zone would overflow this limit and force TCP connections to root servers at scale.
+section: "2.3"
+topics:
+    - dns
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

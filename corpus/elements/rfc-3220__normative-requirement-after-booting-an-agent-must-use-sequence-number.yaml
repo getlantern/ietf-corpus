@@ -1,0 +1,10 @@
+document: rfc-3220
+kind: normative-requirement
+summary: After booting, an agent MUST use sequence number 0 for its first Agent Advertisement. Each subsequent advertisement MUST increment by one, except that sequence number 0xffff MUST be followed by 256 (not 0), allowing mobile nodes to distinguish rollover from reboot.
+section: 2.3.2
+rfc2119_level: MUST
+topics:
+    - mobility
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"

@@ -1,0 +1,10 @@
+document: rfc-3220
+kind: design-rationale
+summary: Registration messages are sent over UDP port 434 rather than a new IP protocol number so that they can traverse NATs and firewalls that pass UDP traffic, and to leverage existing UDP checksum and demultiplexing infrastructure without requiring kernel changes on intermediate routers.
+section: "1.8"
+topics:
+    - mobility
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-05-25"
