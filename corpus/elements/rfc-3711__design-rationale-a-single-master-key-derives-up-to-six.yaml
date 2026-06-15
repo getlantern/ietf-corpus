@@ -1,0 +1,11 @@
+document: rfc-3711
+kind: design-rationale
+summary: 'A single master key derives up to six session keys (SRTP/SRTCP encryption, authentication, and salt keys) via a key derivation function, so key management only needs to exchange one master key plus master salt. Periodic re-derivation (non-zero key_derivation_rate) provides forward and backward security: compromise of one session key does not expose others derived from the same master key.'
+section: "7.1"
+topics:
+    - realtime
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

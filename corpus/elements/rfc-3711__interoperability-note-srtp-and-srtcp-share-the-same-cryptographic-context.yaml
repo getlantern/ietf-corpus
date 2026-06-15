@@ -1,0 +1,11 @@
+document: rfc-3711
+kind: interoperability-note
+summary: SRTP and SRTCP share the same cryptographic context by default (including master key(s)), but MUST use distinct session keys derived via different label values. The session key MUST NOT be shared between SRTP and SRTCP even when the master key is shared. Separate replay lists and packet counters MUST be maintained for each stream.
+section: 3.2.1
+topics:
+    - realtime
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

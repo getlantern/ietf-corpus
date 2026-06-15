@@ -1,0 +1,10 @@
+document: rfc-3711
+kind: security-consideration
+summary: Using a zero-length or weak authentication tag exposes SRTP to packet injection, blind denial-of-service, and router-table attacks. Null authentication is acceptable only in tightly bandwidth-constrained environments (e.g., certain wireless channels) where the application can tolerate forged packets and is not stateful across packets.
+section: 9.5.1
+topics:
+    - realtime
+    - rtp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

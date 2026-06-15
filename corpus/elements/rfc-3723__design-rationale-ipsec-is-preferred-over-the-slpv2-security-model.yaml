@@ -1,0 +1,9 @@
+document: rfc-3723
+kind: design-rationale
+summary: IPsec is preferred over the SLPv2 security model (RFC 2608) for protecting SLPv2 in IP storage environments because native SLPv2 security cannot authenticate 'zero result responses', enabling DoS attacks, and does not support confidentiality. IPsec ESP with a non-null transform addresses both limitations.
+section: 2.5.3
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

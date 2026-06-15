@@ -1,0 +1,8 @@
+document: rfc-3705
+kind: interoperability-note
+summary: HCPerfCurrentCount, HCPerfIntervalCount, and HCPerfTotalCount are not strictly supported in SMIv2 because they use Counter64 syntax without preserving its 'always increasing' and 'counter wrap' semantics. Management applications that rely solely on the Counter64 ASN.1 tag may misinterpret these objects as standard counters.
+section: "3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

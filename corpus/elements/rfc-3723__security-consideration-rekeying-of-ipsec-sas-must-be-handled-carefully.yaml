@@ -1,0 +1,9 @@
+document: rfc-3723
+kind: security-consideration
+summary: Rekeying of IPsec SAs must be handled carefully to avoid gaps in protection; implementations should rekey before SA expiration. Inappropriate handling of the overlap period between old and new SAs can create replay window vulnerabilities or cause connection disruption. IKE Phase 2 delete for idle SAs must not be misinterpreted as a reason to tear down active storage connections.
+section: "5.4"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

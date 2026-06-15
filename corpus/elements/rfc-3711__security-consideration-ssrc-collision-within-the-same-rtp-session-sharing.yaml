@@ -1,0 +1,11 @@
+document: rfc-3711
+kind: security-consideration
+summary: 'SSRC collision within the same RTP session sharing the same master key creates a two-time pad exposure: two streams with identical SSRCs and identical sequence numbers will produce identical keystream, catastrophically compromising confidentiality. Key management SHOULD proactively ensure SSRC uniqueness by including SSRCs as negotiation parameters.'
+section: "9.1"
+topics:
+    - realtime
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3720
+kind: normative-requirement
+summary: All comparisons and arithmetic on CmdSN, ExpCmdSN, and MaxCmdSN MUST use Serial Number Arithmetic as defined in RFC 1982 with SERIAL_BITS=32 to handle 32-bit wraparound. A target MUST NOT issue a command response or Data-In PDU with status before acknowledging the command.
+section: 3.2.2.1
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

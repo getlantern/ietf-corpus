@@ -1,0 +1,9 @@
+document: rfc-3705
+kind: design-rationale
+summary: 64-bit versions of the RFC 3593 textual conventions are needed but SMIv2 provides no Gauge64 or Unsigned64 type. CounterBasedGauge64 from RFC 2856 cannot be used as a base type for TCs either, so the conventions are defined directly on Counter64, inheriting its read-only access and other constraints.
+section: "2"
+topics:
+    - snmp
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

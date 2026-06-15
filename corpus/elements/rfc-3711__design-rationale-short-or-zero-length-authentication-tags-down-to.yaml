@@ -1,0 +1,11 @@
+document: rfc-3711
+kind: design-rationale
+summary: Short or zero-length authentication tags (down to zero bytes) are permitted for SRTP (but not SRTCP) to accommodate bandwidth-constrained wireless environments such as CDMA2000 VoIP where not a single additional byte can be added. A 32-bit tag still yields one-in-2^32 forgery probability per packet for a voice codec, which is acceptable for stateless applications.
+section: "7.5"
+topics:
+    - realtime
+    - rtp
+    - security
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,10 @@
+document: rfc-3711
+kind: design-rationale
+summary: SRTCP uses an explicit 31-bit index carried in every packet rather than the implicit ROC+SEQ approach of SRTP, because RTCP packets are sent infrequently and the receiver cannot reliably infer the index from the sparse sequence. The E-flag allows selective encryption of individual RTCP compound packets while always authenticating.
+section: "3.4"
+topics:
+    - realtime
+    - rtp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,11 @@
+document: rfc-3711
+kind: normative-requirement
+summary: The SRTCP index MUST be set to zero before the first SRTCP packet is sent and MUST be incremented by one modulo 2^31 after each packet. After a re-key, the SRTCP index MUST NOT be reset to zero.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - realtime
+    - rtp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

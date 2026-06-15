@@ -1,0 +1,9 @@
+document: rfc-3720
+kind: normative-requirement
+summary: With the exception of commands marked for immediate delivery, the iSCSI target layer MUST deliver commands for execution in the order specified by CmdSN. The target MUST NOT transmit a MaxCmdSN less than ExpCmdSN-1, and MUST silently ignore non-immediate commands outside the ExpCmdSN-to-MaxCmdSN window.
+section: 3.2.2.1
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,12 @@
+document: rfc-3711
+kind: wire-format
+summary: 'SRTP key derivation uses label constants to distinguish derived keys: 0x00 for SRTP encryption key (k_e), 0x01 for SRTP authentication key (k_a), 0x02 for SRTP salt (k_s), 0x03 for SRTCP encryption key, 0x04 for SRTCP authentication key, and 0x05 for SRTCP salt. The derived key is PRF_n(k_master, label XOR (index DIV rate) XOR master_salt).'
+section: 4.3.1
+topics:
+    - realtime
+    - rtp
+    - security
+    - crypto
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,11 @@
+document: rfc-3711
+kind: wire-format
+summary: For AES Counter Mode, the 128-bit IV is formed as IV = (k_s * 2^16) XOR (SSRC * 2^64) XOR (i * 2^16), where k_s is the 112-bit session salt (zero-padded), SSRC is the 32-bit synchronization source, and i is the 48-bit packet index. The least significant 16 bits are reserved as zero for the block counter.
+section: 4.1.1
+topics:
+    - realtime
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

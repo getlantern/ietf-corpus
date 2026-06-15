@@ -1,0 +1,8 @@
+document: rfc-3728
+kind: design-rationale
+summary: The MIB uses HC-PerfHist-TC-MIB (RFC 3705) textual conventions — 64-bit versions of the RFC 3593 types — for all interval counters. This prevents counter wrap on high-speed VDSL lines where 32-bit counters could overflow within a 15-minute interval.
+section: "2.4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

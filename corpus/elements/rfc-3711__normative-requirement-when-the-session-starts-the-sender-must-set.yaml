@@ -1,0 +1,11 @@
+document: rfc-3711
+kind: normative-requirement
+summary: When the session starts, the sender MUST set the ROC to zero. Each time the RTP sequence number wraps modulo 2^16, the sender MUST increment the ROC by one modulo 2^32. After a re-keying occurs, the ROC MUST NOT be reset to zero.
+section: 3.3.1
+rfc2119_level: MUST
+topics:
+    - realtime
+    - rtp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

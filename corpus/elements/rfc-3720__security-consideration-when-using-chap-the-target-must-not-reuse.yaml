@@ -1,0 +1,9 @@
+document: rfc-3720
+kind: security-consideration
+summary: When using CHAP, the target MUST NOT reuse the same CHAP Challenge Identifier in two successive challenges on the same connection. Both parties MUST generate CHAP challenges using a cryptographically strong pseudo-random number generator, and the challenge length SHOULD be at least 16 bytes to counter dictionary attacks.
+section: 8.2.1
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

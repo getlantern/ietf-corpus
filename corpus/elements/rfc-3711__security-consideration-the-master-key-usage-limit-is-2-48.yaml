@@ -1,0 +1,11 @@
+document: rfc-3711
+kind: security-consideration
+summary: The master key usage limit is 2^48 SRTP packets (48-bit index) and 2^31 SRTCP packets (31-bit index). SRTP senders MUST count processed packets per master key and invoke re-keying before these limits are exceeded. The SRTCP limit may be more restrictive in practice because SRTCP is often sent at a lower rate and uses a shorter index.
+section: "9.2"
+topics:
+    - realtime
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

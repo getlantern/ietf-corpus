@@ -1,0 +1,11 @@
+document: rfc-3711
+kind: security-consideration
+summary: SRTP encrypts only the RTP payload, not the RTP header. Header fields (SSRC, sequence number, timestamp, payload type) are visible to any observer and can be used for traffic analysis. Confidentiality of the RTP header requires a lower-layer security mechanism such as IPsec.
+section: "9.4"
+topics:
+    - realtime
+    - rtp
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

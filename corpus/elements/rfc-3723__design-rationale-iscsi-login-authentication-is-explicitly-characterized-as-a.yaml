@@ -1,0 +1,9 @@
+document: rfc-3723
+kind: design-rationale
+summary: 'iSCSI Login authentication is explicitly characterized as a weak security solution: it provides mutual authentication at connection setup but does not protect control and data traffic on a per-packet basis, and does not provide a protected ciphersuite negotiation. IPsec is therefore required to supply per-packet authentication, integrity, confidentiality, and replay protection.'
+section: "3.1"
+topics:
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

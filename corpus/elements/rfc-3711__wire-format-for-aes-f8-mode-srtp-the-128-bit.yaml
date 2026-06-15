@@ -1,0 +1,11 @@
+document: rfc-3711
+kind: wire-format
+summary: For AES f8-mode SRTP, the 128-bit IV is formed as IV = 0x00 || M || PT || SEQ || TS || SSRC || ROC, where all fields are taken from the RTP header except ROC which comes from the cryptographic context. For SRTCP, IV = 0..0 || E || SRTCP index || V || P || RC || PT || length || SSRC.
+section: 4.1.2.2
+topics:
+    - realtime
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

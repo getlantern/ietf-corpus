@@ -1,0 +1,10 @@
+document: rfc-3720
+kind: normative-requirement
+summary: A target receiving any PDU except a Login request before the Login phase MUST immediately terminate the connection. Once Login has started, receipt of any non-Login PDU requires the target to send a Login reject and then disconnect; an initiator receiving a non-Login response MUST immediately terminate the connection.
+section: 3.2.3
+rfc2119_level: MUST
+topics:
+    - security
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
