@@ -1,0 +1,10 @@
+document: rfc-3633
+kind: normative-requirement
+summary: In a message sent by a delegating router to a requesting router, the requesting router MUST use the values in the T1 and T2 fields for the T1 and T2 parameters. If a requesting router receives an IA_PD with T1 greater than T2, and both are greater than 0, the client discards the IA_PD option and processes the remainder of the message as though the IA_PD option was not included.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

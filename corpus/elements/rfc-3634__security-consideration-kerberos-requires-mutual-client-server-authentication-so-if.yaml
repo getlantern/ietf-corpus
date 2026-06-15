@@ -1,0 +1,9 @@
+document: rfc-3634
+kind: security-consideration
+summary: Kerberos requires mutual client-server authentication, so if an attacker replaces the KDC Server Address sub-option with a rogue IP, the client device's authentication attempt against the rogue KDC will fail because the rogue server cannot present valid Kerberos credentials.
+section: "3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

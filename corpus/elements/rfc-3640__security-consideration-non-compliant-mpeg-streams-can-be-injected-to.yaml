@@ -1,0 +1,10 @@
+document: rfc-3640
+kind: security-consideration
+summary: Non-compliant MPEG streams can be injected to overload receiver/decoder buffers, potentially compromising or crashing the receiver. This is particularly dangerous for MPEG-4 Systems streams carrying executable content (OD commands, BIFS commands, MPEG-J Java bytecode, ECMAScript). Senders SHOULD ensure MPEG compliance; receivers should implement protective filters.
+section: "5"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

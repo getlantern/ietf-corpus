@@ -1,0 +1,9 @@
+document: rfc-3640
+kind: design-rationale
+summary: Interleaving of Access Units is supported to increase error resiliency against packet loss at a modest cost in latency and implementation complexity. The receiver does not need to know the sender's interleaving pattern a priori; it only uses the AU-Index information to place each AU into the correct position in the decoding queue.
+section: "2.5"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

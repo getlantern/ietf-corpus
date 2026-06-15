@@ -1,0 +1,9 @@
+document: rfc-3640
+kind: design-rationale
+summary: Payload fields are made configurable via MIME format parameters rather than fixed, because their use strongly depends on the type of MPEG-4 elementary stream being carried. A length of zero indicates absence of a field, allowing a minimal 'basic' configuration with empty AU-header and Auxiliary sections when no optional features are needed.
+section: "2.10"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

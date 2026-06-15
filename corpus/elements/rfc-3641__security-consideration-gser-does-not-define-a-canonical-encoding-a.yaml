@@ -1,0 +1,10 @@
+document: rfc-3641
+kind: security-consideration
+summary: 'GSER does not define a canonical encoding: a round-trip through another encoding (e.g., BER) and back to GSER will not necessarily reproduce the original GSER octet sequence. Therefore, GSER MUST NOT be used where a canonical encoding is needed.'
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

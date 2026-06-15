@@ -1,0 +1,8 @@
+document: rfc-3635
+kind: design-rationale
+summary: MAC control frames (e.g., PAUSE frames) are treated as originated and consumed within the interface layer and excluded from IF-MIB ifInXcastPkts/ifOutXcastPkts counters. In many network environments MAC control frames can greatly outnumber data-carrying multicast frames, and including them would render the multicast packet counters considerably less useful.
+section: 3.2.6
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

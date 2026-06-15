@@ -1,0 +1,10 @@
+document: rfc-3640
+kind: normative-requirement
+summary: The CTS-flag field MUST be 0 in the first AU-header (since the first AU's timestamp is carried by the RTP timestamp) and MAY be 1 in non-first AU-headers. The CTS-delta encodes the CTS as a 2's complement offset from the RTP header timestamp using the same clock rate.
+section: 3.2.1.1
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

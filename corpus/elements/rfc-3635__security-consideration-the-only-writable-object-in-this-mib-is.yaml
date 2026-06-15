@@ -1,0 +1,9 @@
+document: rfc-3635
+kind: security-consideration
+summary: The only writable object in this MIB is dot3PauseAdminMode. Unauthorized write access to this object could disrupt network flow control. Implementations should use SNMPv3 with authentication and privacy to protect against unauthorized modification. Read-only objects expose interface statistics that could be sensitive in some environments.
+section: "9"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

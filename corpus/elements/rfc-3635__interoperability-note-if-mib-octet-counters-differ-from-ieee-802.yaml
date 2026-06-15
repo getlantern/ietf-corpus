@@ -1,0 +1,8 @@
+document: rfc-3635
+kind: interoperability-note
+summary: 'IF-MIB octet counters differ from IEEE 802.3 aOctetsTransmittedOK/aOctetsReceivedOK by 18 bytes per frame (MAC header and FCS). The relationship is: ifInOctets = aOctetsReceivedOK + (18 * aFramesReceivedOK) and ifOutOctets = aOctetsTransmittedOK + (18 * aFramesTransmittedOK).'
+section: 3.2.5
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

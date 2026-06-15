@@ -1,0 +1,9 @@
+document: rfc-3640
+kind: state-machine
+summary: 'MPEG-4 system streams define crucial and non-crucial AU states tracked by a stream-state modulo counter. A decoder starts in a corrupted state until a random access point AU is received. On receiving an AU: if RAP-flag=1 and stream-state changes, it is a crucial RAP and MUST be decoded; if RAP-flag=1 and stream-state unchanged, it is a non-crucial RAP and SHOULD be decoded only if the stream is corrupted; if RAP-flag=0, the AU MUST be decoded unless the stream is corrupted.'
+section: 3.2.3.4
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

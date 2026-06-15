@@ -1,0 +1,8 @@
+document: rfc-3636
+kind: design-rationale
+summary: A 64-bit counter ifMauHCFalseCarriers was added alongside the existing 32-bit ifMauFalseCarriers because the 32-bit counter can roll over in as little as ~7.4 hours on 100BASE-X links, risking loss of information between polling intervals. Management stations are advised to poll the HC version.
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

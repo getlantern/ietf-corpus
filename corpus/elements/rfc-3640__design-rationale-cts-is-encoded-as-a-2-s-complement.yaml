@@ -1,0 +1,9 @@
+document: rfc-3640
+kind: design-rationale
+summary: CTS is encoded as a 2's complement offset (delta) from the RTP header timestamp, and DTS is encoded as a 2's complement offset from the CTS. This differential encoding keeps time stamp coding efficient while avoiding redundant transmission of the first AU's timestamp (which is already in the RTP header).
+section: "2.6"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

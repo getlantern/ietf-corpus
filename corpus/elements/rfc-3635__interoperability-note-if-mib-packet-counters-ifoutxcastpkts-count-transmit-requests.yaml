@@ -1,0 +1,8 @@
+document: rfc-3635
+kind: interoperability-note
+summary: 'IF-MIB packet counters (ifOutXcastPkts) count transmit requests from higher layers including failures, whereas IEEE 802.3 aFramesTransmittedOK counts only successful transmissions. Roughly: aFramesTransmittedOK = ifOutUcastPkts + ifOutMulticastPkts + ifOutBroadcastPkts + dot3OutPauseFrames - (ifOutErrors + ifOutDiscards).'
+section: 3.2.6
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

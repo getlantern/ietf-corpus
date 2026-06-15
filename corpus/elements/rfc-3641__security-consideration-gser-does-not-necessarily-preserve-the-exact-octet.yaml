@@ -1,0 +1,10 @@
+document: rfc-3641
+kind: security-consideration
+summary: GSER does not necessarily preserve the exact octet encoding of TeletexString, VideotexString, GraphicString, or GeneralString values, so DER-to-GSER-to-DER round-trips may not reproduce the original DER encoding. Therefore, GSER MUST NOT be used to re-encode (for storage or transmission) ASN.1 values whose original binary encoding must be recoverable, such as for verifying digital signatures.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

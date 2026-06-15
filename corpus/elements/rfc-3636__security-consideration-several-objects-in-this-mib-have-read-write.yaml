@@ -1,0 +1,9 @@
+document: rfc-3636
+kind: security-consideration
+summary: 'Several objects in this MIB have read-write or read-create access: rpMauStatus, ifMauStatus, ifMauDefaultType, ifMauAutoNegAdminStatus, and ifMauAutoNegRestart. Unauthorized writes could disrupt network connectivity by changing MAU operational mode or forcing auto-negotiation restarts. Implementations should use SNMPv3 with authentication and privacy.'
+section: "9"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
