@@ -1,0 +1,8 @@
+document: rfc-3597
+kind: design-rationale
+summary: Restricting name compression to only RFC 1035 well-known types is necessary because compression pointers are only meaningful within the context of a single DNS message; transparently copying compressed RDATA into a new message corrupts the compressed names by making pointers reference unrelated data.
+section: "4"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

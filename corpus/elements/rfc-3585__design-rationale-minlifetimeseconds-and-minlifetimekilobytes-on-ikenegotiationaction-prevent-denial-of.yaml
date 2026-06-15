@@ -1,0 +1,9 @@
+document: rfc-3585
+kind: design-rationale
+summary: MinLifetimeSeconds and MinLifetimeKilobytes on IKENegotiationAction prevent denial-of-service attacks in which a peer requests an arbitrarily short SA lifetime, forcing frequent and computationally expensive Diffie-Hellman renegotiations. Setting either property to zero disables the minimum check.
+section: "6.10"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

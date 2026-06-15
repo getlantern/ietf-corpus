@@ -1,0 +1,9 @@
+document: rfc-3597
+kind: design-rationale
+summary: 'The inability to downcase embedded domain names in the DNSSEC canonical form for unknown types (which is necessary for signature correctness when compression loses case distinctions) is why the canonical form rule is split: pre-RFC 3597 types retain downcasing, while all newer types use no downcasing. This preserves interoperability with existing implementations.'
+section: "7"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

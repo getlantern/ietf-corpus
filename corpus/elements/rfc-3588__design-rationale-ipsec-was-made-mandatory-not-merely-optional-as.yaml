@@ -1,0 +1,9 @@
+document: rfc-3588
+kind: design-rationale
+summary: IPsec was made mandatory (not merely optional as in RADIUS/RFC 3162) because IKE authentication occurs only in Phase 1 prior to SA establishment in Phase 2, making it impossible to define separate trust or authorization schemes per application — a critical limitation for inter-domain AAA roaming requiring distinct certificate hierarchies per deployment.
+section: "1"
+topics:
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

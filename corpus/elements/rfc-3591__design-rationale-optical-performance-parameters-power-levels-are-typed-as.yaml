@@ -1,0 +1,8 @@
+document: rfc-3591
+kind: design-rationale
+summary: Optical performance parameters (power levels) are typed as Integer32 rather than Counter32 or Gauge32 because they can both increase and decrease and may take negative values (optical power expressed in 0.1 dBm units). This prevents loss of sign information that would occur with unsigned counter types.
+section: 2.6.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3585
+kind: design-rationale
+summary: 'ExecutionStrategy ''Do Until Success'' behaves asymmetrically: an IKE initiator tries each action in ActionOrder until one succeeds (e.g., trying main mode then aggressive mode, or multiple peers), while a responder uses the first appropriate action from the ordered list. ''Do All'' supports nested SA construction (e.g., outer tunnel then inner transport). ''Do Until Failure'' is inherited from PCIMe but is not expected to be useful for IPsec.'
+section: 4.1.2
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

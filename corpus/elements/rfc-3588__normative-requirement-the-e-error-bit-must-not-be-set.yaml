@@ -1,0 +1,9 @@
+document: rfc-3588
+kind: normative-requirement
+summary: The E (Error) bit MUST NOT be set in request messages. The T (potentially re-transmitted) flag MUST be cleared when sending a request for the first time and MUST be set when resending an unacknowledged request after link failover. Agents receiving a request with T set MUST forward it with T set.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

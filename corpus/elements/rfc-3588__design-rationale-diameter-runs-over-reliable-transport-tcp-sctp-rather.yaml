@@ -1,0 +1,10 @@
+document: rfc-3588
+kind: design-rationale
+summary: Diameter runs over reliable transport (TCP/SCTP) rather than UDP as used by RADIUS because RADIUS's undefined retransmission behavior caused variable reliability across implementations, and in accounting, UDP packet loss translates directly into revenue loss. SCTP is preferred when available because multi-streaming prevents head-of-line blocking that TCP suffers from.
+section: "2.1"
+topics:
+    - tcp
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

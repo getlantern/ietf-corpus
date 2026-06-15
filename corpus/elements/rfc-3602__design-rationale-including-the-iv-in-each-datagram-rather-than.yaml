@@ -1,0 +1,9 @@
+document: rfc-3602
+kind: design-rationale
+summary: Including the IV in each datagram (rather than deriving it from a counter) ensures decryption can be performed even when datagrams are dropped or reordered in transit, at the cost of 16 octets of overhead per packet.
+section: "3"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

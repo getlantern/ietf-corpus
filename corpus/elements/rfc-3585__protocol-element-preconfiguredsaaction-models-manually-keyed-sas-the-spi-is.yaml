@@ -1,0 +1,9 @@
+document: rfc-3585
+kind: protocol-element
+summary: PreconfiguredSAAction models manually keyed SAs. The SPI is stored in the TransformOfPreconfiguredAction association; the session key is stored in SharedSecret with protocol ('ESP-encrypt', 'ESP-auth', or 'AH') and RemoteID formatted as '<peer-IP>/<IN|OUT>/<SPI-hex>'. Although the class is concrete, PreconfiguredSAAction MUST NOT be instantiated directly; only PreconfiguredTransportAction and PreconfiguredTunnelAction may be used.
+section: "6.6"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

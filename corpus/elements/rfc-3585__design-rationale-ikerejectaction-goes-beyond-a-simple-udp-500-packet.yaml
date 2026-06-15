@@ -1,0 +1,9 @@
+document: rfc-3585
+kind: design-rationale
+summary: 'IKERejectAction goes beyond a simple UDP/500 packet discard: because SACondition can reference a PeerIDPayloadFilterEntry (available immediately in aggressive mode), a responder can selectively reject negotiations from specific peer identities, providing finer-grained denial-of-service mitigation than blanket IP-address-based filtering.'
+section: "6.5"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

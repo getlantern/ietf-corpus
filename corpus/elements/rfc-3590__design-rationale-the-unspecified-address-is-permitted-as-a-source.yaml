@@ -1,0 +1,9 @@
+document: rfc-3590
+kind: design-rationale
+summary: The unspecified address (::) is permitted as a source address for MLD Report/Done messages because a node performing Duplicate Address Detection (DAD) for its link-local address has no valid link-local address available, yet must still join multicast groups to complete DAD. Without this allowance, several implementations skipped MLD Reports during DAD, causing switches performing MLD snooping to not forward DAD messages to all nodes, allowing address collisions.
+section: "3"
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
