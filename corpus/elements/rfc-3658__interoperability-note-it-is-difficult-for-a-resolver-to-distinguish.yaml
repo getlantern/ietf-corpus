@@ -1,0 +1,8 @@
+document: rfc-3658
+kind: interoperability-note
+summary: 'It is difficult for a resolver to distinguish between a secure RFC 2535 delegation and an unsecure DS delegation because both lack a DS record in different ways. The NXT bit map patterns differ: secure DS has NS+SIG+NXT+DS bits; unsecure DS has NS+SIG+NXT; secure RFC 2535 has NS+SIG+NXT; unsecure RFC 2535 has NS+SIG+KEY+NXT.'
+section: 2.6.1
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

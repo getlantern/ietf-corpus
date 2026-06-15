@@ -1,0 +1,9 @@
+document: rfc-3664
+kind: design-rationale
+summary: AES-XCBC-MAC produces a 96-bit output, which is appropriate for a MAC but too short for a long-lived PRF in IKE v1 or v2. A 96-bit PRF output creates keys more vulnerable to brute-force attack than a 128-bit PRF output, motivating the creation of AES-XCBC-PRF-128.
+section: "1"
+topics:
+    - crypto
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

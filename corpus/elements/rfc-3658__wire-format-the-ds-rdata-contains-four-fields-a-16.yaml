@@ -1,0 +1,9 @@
+document: rfc-3658
+kind: wire-format
+summary: 'The DS RDATA contains four fields: a 16-bit key tag, an 8-bit algorithm identifier, an 8-bit digest type, and a variable-length digest. For digest type 1 (SHA-1), the total RDATA is 24 bytes. The digest is computed as hash(canonical FQDN | KEY_RR_rdata), where KEY_RR_rdata = Flags | Protocol | Algorithm | Public Key.'
+section: "2.4"
+topics:
+    - dns
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

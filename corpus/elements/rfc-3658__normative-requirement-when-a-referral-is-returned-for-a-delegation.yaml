@@ -1,0 +1,10 @@
+document: rfc-3658
+kind: normative-requirement
+summary: When a referral is returned for a delegation with the OK bit set, the nameserver MUST include NS RRset and DS+SIG(DS) (if DS exists) or NS RRset and NXT+SIG(NXT) (if no DS) in the authority section. If DS or NXT RRsets with signatures do not fit, the TC bit MUST be set.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

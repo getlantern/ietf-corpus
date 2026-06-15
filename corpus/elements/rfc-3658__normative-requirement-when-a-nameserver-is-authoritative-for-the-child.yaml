@@ -1,0 +1,9 @@
+document: rfc-3658
+kind: normative-requirement
+summary: When a nameserver is authoritative for the child zone at a delegation point but not the parent zone, it MUST answer DS queries with RCODE NOERROR, AA bit set, empty answer section, and SOA (plus optional SIG/NXT) in the authority section—as if it is authoritative and DS does not exist.
+section: 2.2.1.1
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

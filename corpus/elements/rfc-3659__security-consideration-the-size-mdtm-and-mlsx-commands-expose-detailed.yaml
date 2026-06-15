@@ -1,0 +1,8 @@
+document: rfc-3659
+kind: security-consideration
+summary: The SIZE, MDTM, and MLSx commands expose detailed file metadata (sizes, timestamps, permissions, and MIME types) to authenticated FTP users. Servers must ensure that access controls on these informational commands are consistent with those on the corresponding data transfer commands, so that metadata is not disclosed to users who lack transfer rights.
+section: "11"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

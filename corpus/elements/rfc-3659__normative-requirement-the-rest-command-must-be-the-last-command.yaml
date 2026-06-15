@@ -1,0 +1,7 @@
+document: rfc-3659
+kind: normative-requirement
+summary: The REST command must be the last command issued before the data transfer command that is to cause a restarted transfer. A user-PI that issued REST but did not successfully transmit the following data transfer command should send another REST before the next transfer; if no restart is needed, 'REST 0' should be issued.
+section: "5.3"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

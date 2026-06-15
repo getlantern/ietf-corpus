@@ -1,0 +1,10 @@
+document: rfc-3658
+kind: security-consideration
+summary: An attacker attempting to forge child zone data by generating a KEY matching all DS fields would need to generate on average 2^(160 - number_of_keys_in_DS_set) keys; an attacker trying to match any DS record faces at least 2^80 key generations on average. This makes forgery computationally impractical given SHA-1's strength.
+section: "4"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

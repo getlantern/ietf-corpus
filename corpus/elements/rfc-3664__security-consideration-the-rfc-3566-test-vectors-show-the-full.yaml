@@ -1,0 +1,10 @@
+document: rfc-3664
+kind: security-consideration
+summary: The RFC 3566 test vectors show the full 128-bit MAC value before truncation; AES-XCBC-PRF-128 uses the full (non-truncated) MAC value, so implementors must ensure they do not apply the 96-bit truncation when operating in PRF mode.
+section: "3"
+topics:
+    - crypto
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

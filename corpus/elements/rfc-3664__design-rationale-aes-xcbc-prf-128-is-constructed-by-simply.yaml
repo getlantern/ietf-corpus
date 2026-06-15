@@ -1,0 +1,9 @@
+document: rfc-3664
+kind: design-rationale
+summary: AES-XCBC-PRF-128 is constructed by simply omitting the truncation step (section 4.3) of AES-XCBC-MAC, retaining the full 128-bit value after section 4.2. This minimizes the delta from the existing standard and reuses its security analysis.
+section: "2"
+topics:
+    - crypto
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

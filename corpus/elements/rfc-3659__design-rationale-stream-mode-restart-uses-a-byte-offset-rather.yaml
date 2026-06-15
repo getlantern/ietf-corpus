@@ -1,0 +1,6 @@
+document: rfc-3659
+kind: design-rationale
+summary: STREAM mode restart uses a byte offset rather than embedded markers because the data stream in STREAM mode directly defines the file, so an offset always unambiguously identifies the same position. In Block or Compressed modes the same file can be transmitted as different byte sequences, making offsets non-unique restart points.
+section: "5.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

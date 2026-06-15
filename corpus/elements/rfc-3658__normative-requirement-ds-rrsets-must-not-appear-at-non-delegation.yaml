@@ -1,0 +1,10 @@
+document: rfc-3658
+kind: normative-requirement
+summary: DS RRsets MUST NOT appear at non-delegation points or at a zone's apex. Each DS RRset stored in the parent zone MUST be signed by at least one of the parent zone's private keys. The parent zone MUST NOT contain a KEY RRset at any delegation point.
+section: 2.2.1
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

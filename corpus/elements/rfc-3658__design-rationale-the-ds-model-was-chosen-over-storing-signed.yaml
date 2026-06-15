@@ -1,0 +1,9 @@
+document: rfc-3658
+kind: design-rationale
+summary: The DS model was chosen over storing signed KEY RRsets at the parent because RFC 2535 required frequent two-way communication between parent and child for key updates, and required NULL KEY records at every unsecure delegation (wasteful for large delegation zones). The DS approach reduces parent-child communication to only changes in the key that signs the apex KEY RRset.
+section: "1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,8 @@
+document: rfc-3658
+kind: interoperability-note
+summary: RFC 2535-compliant resolvers will assume all DS-secured delegations are locally secure, which is incorrect. Old nameservers may be authoritative for zones with DS records but will not add NXT or DS records to the authority section; some caching nameservers may refuse to pass DS or NXT records.
+section: "2.3"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

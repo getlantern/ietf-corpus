@@ -1,0 +1,8 @@
+document: rfc-3658
+kind: state-machine
+summary: 'A nameserver receiving a DS query applies these ordered rules: (1) if authoritative for the parent zone holding the DS RRset, return authoritative answer; (2) if recursive service with RD bit set, perform the query itself; (3) if authoritative for the child zone apex SOA, return authoritative negative answer; (4) if authoritative for an ancestor zone, return a referral; (5) otherwise, indicate lame nameserver.'
+section: 2.2.1.2
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
