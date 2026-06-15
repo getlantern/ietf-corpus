@@ -1,0 +1,8 @@
+document: rfc-3623
+kind: design-rationale
+summary: The restarting router runs OSPF routing calculations (Section 16 of RFC 2328) during the restart even though it does not install results into the forwarding table. This is necessary specifically to return OSPF virtual links to operation, which depend on the routing calculation.
+section: "2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

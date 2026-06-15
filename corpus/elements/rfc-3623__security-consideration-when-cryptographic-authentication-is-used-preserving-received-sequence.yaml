@@ -1,0 +1,10 @@
+document: rfc-3623
+kind: security-consideration
+summary: When cryptographic authentication is used, preserving received sequence numbers in non-volatile storage across a graceful restart is not mandatory. There is a risk that a replayed Hello packet could create neighbor state for a deceased neighbor, but this risk is no greater than during normal OSPF operation.
+section: Security Considerations
+topics:
+    - security
+    - routing
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

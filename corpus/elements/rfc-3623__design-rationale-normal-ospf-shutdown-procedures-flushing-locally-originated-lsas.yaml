@@ -1,0 +1,8 @@
+document: rfc-3623
+kind: design-rationale
+summary: Normal OSPF shutdown procedures (flushing locally originated LSAs, withdrawing adjacencies) are deliberately NOT performed before a planned graceful restart. The goal is for the rest of the OSPF domain to continue routing through Router X as if it remained in continuous service; flushing LSAs would cause neighbors to reroute around it, defeating the purpose.
+section: "2.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

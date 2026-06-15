@@ -1,0 +1,9 @@
+document: rfc-3606
+kind: design-rationale
+summary: The atmIntfPvcFailuresTrap is rate-limited by suppressing all traps occurring within atmIntfPvcNotificationInterval of a previous trap on the same interface. This prevents trap storms during widespread failures; managers are expected to poll the atmCurrentlyFailingPVplTable and atmCurrentlyFailingPVclTable for at least this interval.
+section: "3.4"
+topics:
+    - realtime
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

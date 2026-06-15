@@ -1,0 +1,10 @@
+document: rfc-3608
+kind: security-consideration
+summary: Proxies between the UA and the registrar during a REGISTER transaction may modify or insert a Service-Route header field. The consequence is that future requests from the UA using the service route may be diverted to or through an unintended node. Transitive mutual authentication using "sips:" or S/MIME bodies should be applied to prevent such attacks.
+section: "7"
+topics:
+    - sip
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

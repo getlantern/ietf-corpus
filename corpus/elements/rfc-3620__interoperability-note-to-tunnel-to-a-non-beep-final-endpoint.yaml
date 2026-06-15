@@ -1,0 +1,8 @@
+document: rfc-3620
+kind: interoperability-note
+summary: To tunnel to a non-BEEP final endpoint, the initiator omits the innermost no-attribute 'tunnel' element. The final proxy then does not expect a BEEP greeting from the destination and returns 'ok' as soon as the transport connection is established, forwarding any data received from the final host (even data arriving before 'ok' was sent).
+section: "2.4"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3608
+kind: design-rationale
+summary: This document chose to return service route information as a header field value in the REGISTER response (option 6 of 6 considered) rather than UA configuration, HTTP-based configuration, lookup tables, 302 redirects, or record-routing during REGISTER. The header field approach grants the registrar the ability to selectively apply knowledge about home network topology in constructing the service route, which record-routing during REGISTER does not allow.
+section: "2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

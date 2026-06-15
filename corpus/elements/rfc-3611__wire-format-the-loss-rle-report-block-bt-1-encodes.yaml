@@ -1,0 +1,9 @@
+document: rfc-3611
+kind: wire-format
+summary: 'The Loss RLE Report Block (BT=1) encodes packet loss/receipt as 16-bit chunks: a run-length chunk (C=0, R=1 bit, 14-bit length), a bit-vector chunk (C=1, 15-bit vector), or a terminating null chunk (all zeros). Fields include SSRC, begin_seq, end_seq (each 16 bits), and a 4-bit thinning factor T.'
+section: "4.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,10 @@
+document: rfc-3606
+kind: security-consideration
+summary: The ATM2-MIB defines read-write objects that can modify ATM interface configuration and tear down virtual connections, posing a risk if accessed by unauthorized managers. Implementations must use SNMPv2 (or later) security mechanisms and restrict write access to authenticated management stations, as unauthorized writes could disrupt ATM connectivity.
+section: "8"
+topics:
+    - security
+    - snmp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

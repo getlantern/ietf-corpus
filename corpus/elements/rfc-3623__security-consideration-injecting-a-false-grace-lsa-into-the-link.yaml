@@ -1,0 +1,9 @@
+document: rfc-3623
+kind: security-consideration
+summary: Injecting a false grace-LSA into the link-state database allows an attacker to spoof a router that has actually been withdrawn from service, causing neighbors to continue forwarding traffic toward it. The standard mitigation is cryptographic authentication of OSPF protocol exchanges as specified in RFC 2328; a stronger alternative using digital signatures is described in RFC 2154.
+section: Security Considerations
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

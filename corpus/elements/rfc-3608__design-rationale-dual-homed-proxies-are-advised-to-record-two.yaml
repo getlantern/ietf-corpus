@@ -1,0 +1,9 @@
+document: rfc-3608
+kind: design-rationale
+summary: Dual-homed proxies are advised to record two route values (one per interface) rather than following the RFC 3261 single-value record-routing procedure, because the standard procedure causes the route vector seen at the UAS to differ from the inverse of the route vector seen at the UAC, which complicates use of the recorded route vector in constructing service routes.
+section: "6.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

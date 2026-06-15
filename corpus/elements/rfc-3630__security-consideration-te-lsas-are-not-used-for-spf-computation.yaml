@@ -1,0 +1,9 @@
+document: rfc-3630
+kind: security-consideration
+summary: TE LSAs are not used for SPF computation or normal IP routing, so tampering with them does not directly affect IP forwarding. However, tampering can corrupt traffic engineering computations; therefore all security mechanisms applied to normal OSPF LSAs (including RFC 2328 and RFC 2154 digital signatures) should equally apply to Opaque TE LSAs.
+section: "5"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

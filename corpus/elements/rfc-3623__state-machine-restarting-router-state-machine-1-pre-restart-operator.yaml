@@ -1,0 +1,8 @@
+document: rfc-3623
+kind: state-machine
+summary: 'Restarting router state machine: (1) Pre-restart — operator command triggers origination of grace-LSAs and storage of grace period in non-volatile storage, then software restarts. (2) Graceful restart — router re-establishes adjacencies without originating LS types 1–5,7 and without updating the forwarding table. (3) Exit — triggered by: all adjacencies reestablished, LSA inconsistency detected, or grace period expiry. On exit the router reoriginates all LSAs, reinstalls forwarding table, and flushes grace-LSAs.'
+section: "2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

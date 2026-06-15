@@ -1,0 +1,10 @@
+document: rfc-3608
+kind: design-rationale
+summary: 'Intermediate proxies are explicitly prohibited from adding themselves to the Service-Route in REGISTER responses for two reasons: transparency (the registrar would not know about such additions) and end-to-end security (if the registrar uses S/MIME to protect the response, such additions would appear to the UA as man-in-the-middle alterations).'
+section: "6.2"
+topics:
+    - sip
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

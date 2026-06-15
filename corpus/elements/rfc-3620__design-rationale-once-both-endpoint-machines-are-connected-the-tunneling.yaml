@@ -1,0 +1,10 @@
+document: rfc-3620
+kind: design-rationale
+summary: Once both endpoint machines are connected, the tunneling proxy does no further interpretation, including no BEEP framing. This allows the two endpoints to negotiate TLS between themselves with certificates appropriate to the endpoints rather than the proxy, ensuring the proxy cannot access exchanged information even though it relays the bytes.
+section: "1"
+topics:
+    - realtime
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

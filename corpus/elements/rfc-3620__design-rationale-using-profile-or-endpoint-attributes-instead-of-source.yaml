@@ -1,0 +1,10 @@
+document: rfc-3620
+kind: design-rationale
+summary: 'Using ''profile'' or ''endpoint'' attributes instead of source-routing attributes (fqdn/ip4/ip6/port/srv) prevents two attacks: attackers on one side of a firewall cannot see addresses of machines on the other side, and cannot use source-routing exhaustion with error-message probing to map internal hosts. The proxy must refuse all source-routed connections for the second prevention to hold.'
+section: "7"
+topics:
+    - security
+    - privacy
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

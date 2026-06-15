@@ -1,0 +1,10 @@
+document: rfc-3623
+kind: design-rationale
+summary: Cryptographic sequence numbers for OSPF authentication may need to be preserved in non-volatile storage before a graceful restart, or the router's clock must be used and preserved across restarts. If neither can be guaranteed, adjacency reestablishment may be delayed by up to RouterDeadInterval seconds, forcing a much longer grace period.
+section: "2.1"
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

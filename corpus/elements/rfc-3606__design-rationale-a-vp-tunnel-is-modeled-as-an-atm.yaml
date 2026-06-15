@@ -1,0 +1,8 @@
+document: rfc-3606
+kind: design-rationale
+summary: 'A VP Tunnel is modeled as an ATM Logical Port (ifType=80, atmLogical) rather than a physical ATM interface (ifType=37) because it connects non-adjacent devices over a VPL used as a trunk, requiring different management attributes: a subset of VPI/VCI space, different ILMI VPI/VCI, and hierarchical ifOperStatus derived from the physical layer beneath.'
+section: 3.1.10.1
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

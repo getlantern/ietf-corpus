@@ -1,0 +1,9 @@
+document: rfc-3605
+kind: design-rationale
+summary: 'The authors considered expanding the SDP media description line (m=) to include the RTCP port but rejected it for two reasons: adding an extra port number and optional address in the media description would be awkward, and existing applications would have to reject the entire media description if they did not understand the extension. An attribute has a well-defined failure mode: unknown attributes are ignored.'
+section: "3.3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

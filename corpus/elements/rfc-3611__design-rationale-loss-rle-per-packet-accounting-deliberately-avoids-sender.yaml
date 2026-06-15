@@ -1,0 +1,9 @@
+document: rfc-3611
+kind: design-rationale
+summary: Loss RLE per-packet accounting deliberately avoids sender-validity thresholds and sequence-number-validity filtering used by standard RTP (RFC 3550 Appendix A.1), because leaving interpretation to report observers—rather than filtering at the receiver—better serves network monitoring applications that need raw data including stray packets.
+section: "4.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

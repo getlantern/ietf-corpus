@@ -1,0 +1,8 @@
+document: rfc-3623
+kind: interoperability-note
+summary: Backward compatibility with unmodified OSPF routers is automatic. If a neighbor does not support graceful restart or does not receive the grace-LSA, it will reissue its LSAs with links to the restarting router omitted. This is interpreted by helper neighbors as a topology change (triggering helper exit) and by the restarting router as an LSA inconsistency, causing both to revert to normal OSPF restart.
+section: "4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,8 @@
+document: rfc-3623
+kind: state-machine
+summary: 'Helper neighbor state machine: (1) Normal — router receives a grace-LSA and checks five entry conditions. (2) Helper mode — router continues advertising full adjacency to the restarting router and suppresses normal adjacency-state-change processing. (3) Exit — triggered by: grace-LSA flushed (success), grace period expiry, or topology-changing LSA installed that would be flooded to the restarting router. On exit the helper reoriginates its LSAs reflecting the true adjacency state.'
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

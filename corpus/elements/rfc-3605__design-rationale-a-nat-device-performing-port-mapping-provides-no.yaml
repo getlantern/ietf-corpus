@@ -1,0 +1,9 @@
+document: rfc-3605
+kind: design-rationale
+summary: A NAT device performing port mapping provides no guarantee that the mappings of two separate ports preserve the sequencing or parity of the original port numbers; when the NAT manages a pool of IP addresses, RTP and RTCP ports may even be mapped to different addresses, motivating the explicit 'a=rtcp' attribute.
+section: "1"
+topics:
+    - nat
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3623
+kind: normative-requirement
+summary: For unplanned outages, grace-LSAs MUST be originated and sent before the restarted router sends any OSPF Hello packets. On broadcast networks they must be flooded to AllSPFRouters (224.0.0.5). The restart reason MUST be set to 0 (unknown) or 3 (switch to redundant control processor).
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

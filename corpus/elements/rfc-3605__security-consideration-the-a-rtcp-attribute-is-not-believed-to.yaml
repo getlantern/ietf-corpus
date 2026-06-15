@@ -1,0 +1,9 @@
+document: rfc-3605
+kind: security-consideration
+summary: The 'a=rtcp' attribute is not believed to introduce significant security risk. A malevolent third party could use the extension to redirect RTCP traffic, but doing so requires intercepting and rewriting the signaling packet, at which point many more severe attacks (wholesale address and port substitution) are already possible.
+section: "5"
+topics:
+    - security
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
