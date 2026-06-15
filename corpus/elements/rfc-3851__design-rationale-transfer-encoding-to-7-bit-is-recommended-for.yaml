@@ -1,0 +1,9 @@
+document: rfc-3851
+kind: design-rationale
+summary: Transfer encoding to 7-bit is recommended for all secured MIME entities (not just clear-signed) so that a trusted gateway removing the envelope but not the signature can forward the signed content through non-8-bit-clean transports without corrupting or invalidating the signature.
+section: 3.1.2
+topics:
+    - email
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

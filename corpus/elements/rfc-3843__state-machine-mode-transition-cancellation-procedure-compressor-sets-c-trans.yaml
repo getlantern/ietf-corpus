@@ -1,0 +1,8 @@
+document: rfc-3843
+kind: state-machine
+summary: 'Mode transition cancellation procedure: Compressor sets C_TRANS=Pending on receiving mode request, sends IR/IR-DYN/UOR-2 with Mode=C (cancel), decompressor sets D_TRANS=Pending and keeps D_MODE unchanged; compressor sets C_TRANS=Done upon receiving ACK for that packet; decompressor sets D_TRANS=Done upon receiving packet type 0 or 1.'
+section: "3.4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

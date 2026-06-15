@@ -1,0 +1,10 @@
+document: rfc-3846
+kind: design-rationale
+summary: The extension was created because AAA infrastructures such as Diameter use realm-based routing and need the FQDN identity of the home agent, not just its IP address. A reverse DNS lookup on the HA IP address may not reliably yield the HA's FQDN identity, so the HA must include its own identity explicitly in registration replies.
+section: "1"
+topics:
+    - mobility
+    - ip
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

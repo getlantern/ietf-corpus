@@ -1,0 +1,9 @@
+document: rfc-3845
+kind: design-rationale
+summary: The new Type Bit Map format was chosen to cover the full 16-bit RR type space (65536 types) rather than just the first 127, to avoid needing to develop an extension mechanism into a deployed DNSSEC base once the first 127 type codes are allocated. The format is economical for the common case of few types, can represent all types in ~8.5 KB, and is simple to implement.
+section: "1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

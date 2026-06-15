@@ -1,0 +1,8 @@
+document: rfc-3843
+kind: protocol-element
+summary: For IP-only compression, the static chain in IR headers is terminated when the 'Next Header / Protocol' field indicates anything other than IP (IPinIP or IPv6). Alternatively, the compressor may explicitly terminate the chain by setting the MSB of the IP version field to 1 (0xC for IPv4, 0xE for IPv6), and the decompressor must store this indication in context while restoring the original IP version value in decompressed headers.
+section: "3.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

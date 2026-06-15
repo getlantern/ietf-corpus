@@ -1,0 +1,9 @@
+document: rfc-3852
+kind: design-rationale
+summary: Each CMS content type is designed to permit single-pass processing using indefinite-length BER encoding, which is especially helpful for large or piped content. The tradeoff is that only signed attributes and authenticated attributes require the stricter DER encoding, as these must be independently re-encoded by recipients for verification.
+section: "2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

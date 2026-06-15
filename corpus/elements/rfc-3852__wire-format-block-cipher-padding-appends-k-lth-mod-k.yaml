@@ -1,0 +1,9 @@
+document: rfc-3852
+kind: wire-format
+summary: Block cipher padding appends k-(lth mod k) octets each having the value k-(lth mod k) to the plaintext, where k is the block size and lth is the input length. Input already a multiple of k receives a full block of padding (value k repeated k times). This scheme is only well-defined when k < 256.
+section: "6.3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

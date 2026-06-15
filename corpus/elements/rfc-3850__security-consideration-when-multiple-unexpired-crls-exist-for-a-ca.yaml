@@ -1,0 +1,10 @@
+document: rfc-3850
+kind: security-consideration
+summary: When multiple unexpired CRLs exist for a CA, an agent consulting CRLs SHOULD ensure it uses the most recently issued CRL, since an S/MIME message sender could deliberately include an older unexpired CRL that omits recently revoked certificates.
+section: "5"
+topics:
+    - email
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

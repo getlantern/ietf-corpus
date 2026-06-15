@@ -1,0 +1,8 @@
+document: rfc-3843
+kind: design-rationale
+summary: Some IPv4 stacks use a constant value for the IP Identifier field. Standard offset IP-ID encoding cannot compress a constant IP-ID, and sending it uncompressed wastes bandwidth. The SID flag was introduced to signal this condition and allow the IP-ID to be omitted from compressed packets entirely.
+section: "3.3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

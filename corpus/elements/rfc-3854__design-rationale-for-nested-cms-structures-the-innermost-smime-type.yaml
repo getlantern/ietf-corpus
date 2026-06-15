@@ -1,0 +1,9 @@
+document: rfc-3854
+kind: design-rationale
+summary: For nested CMS structures, the innermost smime-type SHOULD be propagated upward to outer MIME wrappers, so that the type reflects the innermost protection layer (e.g., a certs-only message that is then encrypted still carries smime-type=certs-only).
+section: 3.4.1
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,8 @@
+document: rfc-3843
+kind: wire-format
+summary: The general compressed packet format for profile 0x0004 omits the UDP checksum present in ROHC UDP. Instead, it ends with a variable-length list of dynamic chains for additional IP headers (beyond the first two), with no SN at the end of this list since SN appears in the compressed base header.
+section: "3.6"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

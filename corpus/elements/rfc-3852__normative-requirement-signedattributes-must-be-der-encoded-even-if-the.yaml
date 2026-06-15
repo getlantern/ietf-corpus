@@ -1,0 +1,10 @@
+document: rfc-3852
+kind: normative-requirement
+summary: SignedAttributes MUST be DER encoded even if the rest of the SignedData structure is BER encoded. When signedAttrs is present, it MUST contain at minimum a content-type attribute and a message-digest attribute; signedAttrs MUST be present if the eContentType is not id-data.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

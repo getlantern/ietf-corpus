@@ -1,0 +1,8 @@
+document: rfc-3843
+kind: design-rationale
+summary: RFC 3095's general compressed header formats support at most two levels of IP headers (Inner and Outer), and list compression cannot be used for additional IP headers. The IP-only profile overcomes this limitation by appending a dynamic chain of header portions for each IP level beyond the first two, enabling compression of arbitrary IP header chain depths.
+section: "3.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

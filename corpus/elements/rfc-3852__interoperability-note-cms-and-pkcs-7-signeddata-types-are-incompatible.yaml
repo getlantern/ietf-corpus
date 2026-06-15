@@ -1,0 +1,9 @@
+document: rfc-3852
+kind: interoperability-note
+summary: 'CMS and PKCS #7 SignedData types are incompatible when the encapsulated content is not the Data type. CMS eContent is an OCTET STRING, while PKCS #7 uses ANY DEFINED BY contentType; for non-Data content (e.g., an RFC 2634 signed receipt), this causes different message digest inputs and produces incompatible signatures.'
+section: 5.2.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
