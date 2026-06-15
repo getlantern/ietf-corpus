@@ -1,0 +1,9 @@
+document: rfc-3473
+kind: state-machine
+summary: 'Nodal fault recovery proceeds through: (1) Hello lost → wait Restart Time; (2) new Hello received → compare Src_Instance to determine control-channel-only vs. nodal fault; (3) if nodal, enter Recovery Period; (4) Path messages with Recovery_Label trigger MPLS forwarding table lookup to restore state; (5) state not resynchronized within Recovery Time is removed.'
+section: "9.3"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

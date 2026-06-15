@@ -1,0 +1,9 @@
+document: rfc-3471
+kind: wire-format
+summary: 'Interface_ID is a TLV-structured field where each TLV has a 16-bit Type, 16-bit Length (total TLV length = 4 + value length in octets), and variable Value. Five types are defined: IPv4 (type 1, 8 bytes), IPv6 (type 2, 20 bytes), IF_INDEX (type 3, 12 bytes), COMPONENT_IF_DOWNSTREAM (type 4, 12 bytes), COMPONENT_IF_UPSTREAM (type 5, 12 bytes). Value fields not a multiple of four MUST be zero-padded.'
+section: 9.1.1
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

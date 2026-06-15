@@ -1,0 +1,8 @@
+document: rfc-3458
+kind: design-rationale
+summary: Message-Context was defined as a top-level RFC 2822 header rather than a MIME Content-Type subtype to avoid requiring UAs to scan the entire (potentially large) message before determining context, and to avoid creating multiple aliases for multipart/mixed each time a new primary content type is identified.
+section: "5"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

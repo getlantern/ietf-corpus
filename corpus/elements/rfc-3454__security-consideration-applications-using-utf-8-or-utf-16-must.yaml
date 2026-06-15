@@ -1,0 +1,9 @@
+document: rfc-3454
+kind: security-consideration
+summary: Applications using UTF-8 or UTF-16 MUST reject any string that is an illegal or ill-formed octet sequence. Failure to validate encoding (e.g., accepting 0xC0 0xAB as U+002B) is a known vulnerability class in Unicode-aware applications.
+section: "9.2"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3472
+kind: normative-requirement
+summary: For a unidirectional LSP, a downstream data channel MUST be indicated in the IF_ID TLV. A node receiving IF_ID TLVs saves their values and returns them in the subsequent MAPPING message. If IF_ID TLV content is inconsistent with a received ERO, the node MUST send a LABEL ABORT with error code 'Routing Error' and value 'Bad Explicit Routing TLV Error'.
+section: 8.1.2
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

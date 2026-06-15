@@ -1,0 +1,8 @@
+document: rfc-3472
+kind: design-rationale
+summary: The waveband label swap mechanism (swapping Start and End labels when mirroring wavelengths) exists to allow egress LSRs to detect and compensate for wavelength inversion across the waveband tunnel. Without this mechanism, an odd number of mirrored switching operations would cause the egress to incorrectly map wavelengths—for example, expecting L1 when the actual output is L100.
+section: 2.3.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3473
+kind: interoperability-note
+summary: If an egress node does not support the Admin_Status object, it will not reflect it back in the Resv message. To handle this, the ingress SHOULD wait a configurable period (default 30 seconds) for the reflected Admin_Status before sending a PathTear.
+section: 7.2.2
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

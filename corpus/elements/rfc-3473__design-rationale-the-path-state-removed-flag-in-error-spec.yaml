@@ -1,0 +1,9 @@
+document: rfc-3473
+kind: design-rationale
+summary: The Path_State_Removed flag in ERROR_SPEC was introduced to allow intermediate nodes to release Path state on certain errors when RSVP is used with explicit routes. Without this flag, idle resources are held until the source receives the PathErr and sends a PathTear, which hampers rapid reconvergence during outages.
+section: "4.4"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

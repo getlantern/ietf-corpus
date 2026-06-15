@@ -1,0 +1,10 @@
+document: rfc-3456
+kind: security-consideration
+summary: Authenticated DHCP cannot serve as an access control mechanism because a remote host can set its own IP address and evade DHCP-based security measures. The assigned address MUST NOT be depended upon for security; per-tunnel packet filters or quick mode selectors must be used instead.
+section: "5"
+topics:
+    - ipsec
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

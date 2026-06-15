@@ -1,0 +1,10 @@
+document: rfc-3473
+kind: normative-requirement
+summary: When sending Path messages to a neighbor that restarted with preserved forwarding state, the neighbor MUST include a Recovery_Label object with the label from the most recent Resv, and MUST send all Path state within approximately 1/2 of the Recovery Time. After detecting a restart, Resv state to the restarting node MUST NOT be refreshed until a corresponding Path message is received.
+section: 9.5.3
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

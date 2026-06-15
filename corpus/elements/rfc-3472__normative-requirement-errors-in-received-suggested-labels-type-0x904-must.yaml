@@ -1,0 +1,9 @@
+document: rfc-3472
+kind: normative-requirement
+summary: Errors in received Suggested Labels (type 0x904) MUST be ignored, including inconsistent or unacceptable values. If a downstream node passes a label differing from the suggested label, the upstream LSR MUST either reconfigure to use the downstream-specified label or generate a NOTIFICATION with 'Routing problem/Unacceptable label value'. An ingress SHOULD NOT transmit data traffic using a suggested label until the downstream node passes a corresponding label upstream.
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

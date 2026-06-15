@@ -1,0 +1,9 @@
+document: rfc-3472
+kind: normative-requirement
+summary: A node sending a Notification with the Down (D) bit set MUST verify it receives a corresponding LABEL RELEASE within a configurable period. This period SHOULD default to 30 seconds. If no LABEL RELEASE is received, the node SHOULD send a Label Release downstream and a LABEL WITHDRAW upstream to handle nodes not supporting the Admin Status TLV.
+section: 7.3.1
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

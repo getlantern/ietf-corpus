@@ -1,0 +1,9 @@
+document: rfc-3458
+kind: security-consideration
+summary: A poorly designed UA could blindly execute a mailed program based on Message-Context (e.g., an 'Application' context). UAs must not take executable or irreversible actions driven solely by the Message-Context value. Additionally, an attacker could mount a denial-of-service attack by sending messages whose Message-Context does not match their body, which is why the header is treated as a hint only.
+section: "7"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

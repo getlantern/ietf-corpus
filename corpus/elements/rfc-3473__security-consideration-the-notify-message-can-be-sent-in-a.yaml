@@ -1,0 +1,9 @@
+document: rfc-3473
+kind: security-consideration
+summary: The Notify message can be sent in a non-hop-by-hop fashion, which precludes RSVP's hop-by-hop integrity and authentication model from RFC 2747. IPsec (AH or ESP) in transport mode SHOULD be used with automated key management (IKE) for non-hop-by-hop Notify messages; if IPsec is unavailable and security is required, Notify messages MUST be sent hop-by-hop.
+section: "12"
+topics:
+    - security
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

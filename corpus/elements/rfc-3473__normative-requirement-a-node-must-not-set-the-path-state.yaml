@@ -1,0 +1,10 @@
+document: rfc-3473
+kind: normative-requirement
+summary: A node MUST NOT set the Path_State_Removed flag in a PathErr unless it has also removed the associated Path state or generated a PathTear. A node that receives a PathErr with Path_State_Removed=0 MUST NOT set the flag unless it also sends a PathTear.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
