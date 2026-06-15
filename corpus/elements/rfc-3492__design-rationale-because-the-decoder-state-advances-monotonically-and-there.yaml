@@ -1,0 +1,8 @@
+document: rfc-3492
+kind: design-rationale
+summary: Because the decoder state advances monotonically and there is only one representation per delta, there is exactly one encoded string for any given sequence of code points. This eliminates the need to re-encode output to verify uniqueness — the only error conditions are invalid code points, unexpected end-of-input, overflow, and basic code points encoded as deltas.
+section: "6.2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

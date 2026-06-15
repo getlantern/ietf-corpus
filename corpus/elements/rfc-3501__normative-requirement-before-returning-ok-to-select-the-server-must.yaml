@@ -1,0 +1,9 @@
+document: rfc-3501
+kind: normative-requirement
+summary: Before returning OK to SELECT, the server MUST send untagged FLAGS, EXISTS, and RECENT responses, plus OK responses containing UNSEEN, PERMANENTFLAGS, UIDNEXT, and UIDVALIDITY codes. The tagged OK MUST be prefixed with [READ-ONLY] if the client cannot modify the mailbox.
+section: 6.3.1
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

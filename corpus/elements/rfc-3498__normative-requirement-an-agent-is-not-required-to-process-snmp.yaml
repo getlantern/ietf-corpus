@@ -1,0 +1,9 @@
+document: rfc-3498
+kind: normative-requirement
+summary: An agent is not required to process SNMP Set Requests that affect multiple control objects within this MIB. This eliminates the possibility that a single Set PDU contains conflicting varbinds (e.g., simultaneously activating an apsConfigEntry while deactivating an associated apsChanConfigEntry).
+section: "3"
+rfc2119_level: SHOULD NOT
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

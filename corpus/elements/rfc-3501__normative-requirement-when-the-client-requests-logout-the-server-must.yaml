@@ -1,0 +1,9 @@
+document: rfc-3501
+kind: normative-requirement
+summary: When the client requests logout, the server MUST send an untagged BYE response before the tagged OK, then close the connection. A server MUST NOT unilaterally close the connection without first sending an untagged BYE that contains the reason.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

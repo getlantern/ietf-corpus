@@ -1,0 +1,9 @@
+document: rfc-3501
+kind: normative-requirement
+summary: Clients MUST NOT send multiple commands without waiting if an ambiguity would result. If the client sends any command other than FETCH, STORE, or SEARCH, it MUST wait for the completion response before sending a command that uses message sequence numbers, because EXPUNGE responses can invalidate sequence numbers.
+section: "5.5"
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

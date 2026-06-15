@@ -1,0 +1,8 @@
+document: rfc-3498
+kind: wire-format
+summary: The ApsK1K2 textual convention encodes the SONET K1 and K2 APS protocol bytes as a 2-octet OCTET STRING. K1 bits 1–4 encode the request type (e.g., 1111=Lockout of Protection, 1110=Forced Switch, 1000=Manual Switch, 0000=No Request); K1 bits 5–8 encode the associated channel (0=Null, 1–14=working, 15=extra traffic). K2 bits 1–4 encode the channel, bit 5 encodes architecture (0=1+1, 1=1:n), and bits 6–8 encode mode (100=unidirectional, 101=bidirectional, 110=RDI-L, 111=AIS-L).
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,8 @@
+document: rfc-3492
+kind: state-machine
+summary: 'The decoder uses a state machine with two variables: index i (position in extended string, 0 to current length) and counter n (code point value to insert). State <n,i> transitions to <n,i+1> if i < length, or <n+1,0> if i equals length, advancing monotonically with no way to return to an earlier state. Each delta represents a run of non-insertion states before an insertion.'
+section: "3.2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

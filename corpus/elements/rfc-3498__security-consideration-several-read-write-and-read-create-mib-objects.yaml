@@ -1,0 +1,9 @@
+document: rfc-3498
+kind: security-consideration
+summary: 'Several read-write and read-create MIB objects can disrupt APS operations if set with malicious intent: apsCommandSwitch, apsCommandControl, apsConfigRowStatus, apsConfigMode, apsConfigRevert, apsConfigDirection, apsConfigExtraTraffic, apsConfigSdBerThreshold, apsConfigSfBerThreshold, apsConfigWaitToRestore, apsChanConfigRowStatus, apsChanConfigIfIndex, apsChanConfigPriority, and apsNotificationEnable. SET operations in a non-secure environment without proper protection can negatively affect network operations.'
+section: "9"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

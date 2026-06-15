@@ -1,0 +1,9 @@
+document: rfc-3497
+kind: design-rationale
+summary: The standard 16-bit RTP sequence number wraps around in approximately 336 milliseconds at 1.485 Gbps with 1000-octet packets, which is insufficient for detecting loss and reordering. Extending the sequence number to 32 bits via the payload header provides an approximately 6-hour wrap period under the same assumptions.
+section: "4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

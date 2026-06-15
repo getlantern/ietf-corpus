@@ -1,0 +1,9 @@
+document: rfc-3497
+kind: design-rationale
+summary: To satisfy both octet alignment and ALF (application-level framing) principles simultaneously for 4:2:2 YCrCb video with 10-bit words, the minimum packetization unit must represent 2 groups of 4 pixels (yielding a 40-bit = 5-octet boundary). This motivates the pgroup concept rather than permitting arbitrary octet splits.
+section: "4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

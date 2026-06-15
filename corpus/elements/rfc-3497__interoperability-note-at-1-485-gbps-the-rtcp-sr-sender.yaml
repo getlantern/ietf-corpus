@@ -1,0 +1,9 @@
+document: rfc-3497
+kind: interoperability-note
+summary: At 1.485 Gbps, the RTCP SR sender octet count wraps around in 23 seconds and the cumulative packets-lost counter wraps in 93 seconds. Applications requiring accurate long-running totals must track rollover counts at the application layer rather than relying solely on RTCP SR fields.
+section: "6"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

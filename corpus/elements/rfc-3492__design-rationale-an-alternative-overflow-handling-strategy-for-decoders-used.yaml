@@ -1,0 +1,8 @@
+document: rfc-3492
+kind: design-rationale
+summary: An alternative overflow-handling strategy for decoders used exclusively inside IDNA ToUnicode is to skip overflow checking entirely, since ToUnicode performs a higher-level re-encoding and comparison where a mismatch produces the same consequence as a decoder failure.
+section: "6.4"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3498
+kind: normative-requirement
+summary: Before an APS group is made active (apsConfigRowStatus set to active), the set of channels MUST begin with channel number 0 (for all architectures except onePlusOneOptimized) or channel number 1 (for onePlusOneOptimized) and MUST consist of consecutive channel numbers not exceeding 14. Failure to meet this constraint causes apsConfigRowStatus to return inconsistentValue.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

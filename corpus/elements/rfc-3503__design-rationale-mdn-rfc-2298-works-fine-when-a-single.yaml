@@ -1,0 +1,8 @@
+document: rfc-3503
+kind: design-rationale
+summary: 'MDN (RFC 2298) works fine when a single MUA accesses a mailstore from one location, but breaks in IMAP environments where multiple MUAs share the same mailbox: each MUA independently tracks sent notifications in local config, so duplicate MDNs can be generated. The $MDNSent keyword solves this by storing notification state on the server.'
+section: "2"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

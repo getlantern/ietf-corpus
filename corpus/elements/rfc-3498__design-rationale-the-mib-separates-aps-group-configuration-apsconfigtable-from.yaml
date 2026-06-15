@@ -1,0 +1,8 @@
+document: rfc-3498
+kind: design-rationale
+summary: The MIB separates APS group configuration (apsConfigTable) from channel configuration (apsChanConfigTable), requiring channels to be created first and the group activated second. This staged creation model ensures that by the time a group is set active, all channel entries can be validated for consecutive numbering and architectural consistency, returning inconsistentValue atomically on any error.
+section: "3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

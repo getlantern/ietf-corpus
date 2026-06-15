@@ -1,0 +1,9 @@
+document: rfc-3501
+kind: normative-requirement
+summary: The DELETE command MUST NOT remove inferior hierarchical names. Deleting a mailbox that has inferiors and lacks \Noselect removes its messages and assigns it \Noselect. Attempting to delete a mailbox that has inferiors and already has \Noselect is an error.
+section: 6.3.4
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

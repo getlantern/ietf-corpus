@@ -1,0 +1,8 @@
+document: rfc-3502
+kind: design-rationale
+summary: Multiple pipelined APPEND commands are non-atomic by definition, provide no way to revert the mailbox on error, may not allow the server to coalesce open/lock+sync/unlock/close operations, and can result in partial appends (e.g., messages 1, 2, 4, 5 appended when message 3 hits a quota error). MULTIAPPEND addresses all three deficiencies.
+section: Introduction
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
