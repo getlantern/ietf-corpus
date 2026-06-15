@@ -1,0 +1,8 @@
+document: rfc-3734
+kind: design-rationale
+summary: If the TCP connection is closed after a server successfully processes a command but before the response is returned, the server MAY attempt to undo the effects of the command; EPP commands are idempotent, so processing a command more than once produces the same net effect.
+section: "3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

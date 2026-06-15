@@ -1,0 +1,7 @@
+document: rfc-3730
+kind: normative-requirement
+summary: The <msgQ> element MUST NOT be present in responses when no messages are queued. It MUST be present in responses to the <poll> command when messages are queued. The <qDate> and <msg> children of <msgQ> MUST be returned only in response to a <poll> request, not in any other response including a <poll> acknowledgement.
+section: "2.6"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

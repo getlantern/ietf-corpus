@@ -1,0 +1,8 @@
+document: rfc-3729
+kind: design-rationale
+summary: AppLocalIndex values are drawn from a single shared number space that includes both protocolDirLocalIndex values from RMON2 and apmHttpFilterAppLocalIndex values. This design ensures that the same integer uniquely identifies an application across all APM tables without ambiguity and allows direct cross-table linkage without translation.
+section: "2.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,6 @@
+document: rfc-3731
+kind: design-rationale
+summary: 'The <renew> command requires the current expiration date (curExpDate) as an idempotency guard: if a client accidentally sends the same <renew> twice, the second command will fail because the expiry date no longer matches, preventing unintended double renewals.'
+section: 3.2.3
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

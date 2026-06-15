@@ -1,0 +1,9 @@
+document: rfc-3729
+kind: security-consideration
+summary: The APM MIB contains read-write and read-create objects that can significantly affect agent operation, including enabling or disabling application monitoring (apmAppDirConfig), configuring HTTP error classification (apmHttp4xxIsFailure), and filtering monitored URLs (apmHttpIgnoreUnregisteredURLs). Modification of these objects should be performed only by managers acting in an administrator role, and management software must not enforce specific configurations.
+section: "4"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

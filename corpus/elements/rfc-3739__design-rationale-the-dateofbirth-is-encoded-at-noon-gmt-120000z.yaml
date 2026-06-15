@@ -1,0 +1,8 @@
+document: rfc-3739
+kind: design-rationale
+summary: The dateOfBirth is encoded at noon GMT (120000Z) to prevent accidental date changes caused by time zone adjustments when interpreting a GeneralizedTime value across different locales. Applications are expected to strip the time component and display only the date.
+section: 3.2.2
+topics:
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
