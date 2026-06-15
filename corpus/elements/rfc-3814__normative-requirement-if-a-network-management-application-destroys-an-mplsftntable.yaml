@@ -1,0 +1,10 @@
+document: rfc-3814
+kind: normative-requirement
+summary: If a Network Management Application destroys an mplsFTNTable row (sets mplsFTNRowStatus to destroy) and one or more mplsFTNMapTable entries reference that row via mplsFTNMapCurrIndex, the agent MUST also destroy those corresponding mplsFTNMapTable entries.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

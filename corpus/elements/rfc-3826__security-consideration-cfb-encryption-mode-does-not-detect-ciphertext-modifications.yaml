@@ -1,0 +1,10 @@
+document: rfc-3826
+kind: security-consideration
+summary: CFB encryption mode does not detect ciphertext modifications, so the AES privacy protocol MUST always be paired with an authentication protocol (e.g., HMAC-MD5-96 or HMAC-SHA-96 from RFC 3414) to provide message integrity.
+section: "4"
+topics:
+    - snmp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

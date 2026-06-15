@@ -1,0 +1,8 @@
+document: rfc-3814
+kind: design-rationale
+summary: Address ranges were chosen over CIDR prefixes in mplsFTNTable because a single address-range row can represent what would require many CIDR prefix rows; for example, [192.0.2.0–192.0.2.62] requires 6 CIDR prefixes but one address-range row. Every CIDR prefix is expressible as an equivalent address range, and implementations may translate ranges to CIDR internally if desired.
+section: 5.1.1
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,8 @@
+document: rfc-3825
+kind: design-rationale
+summary: Latitude and Longitude are encoded as fixed-point 2s-complement binary rather than decimal digit strings (as in RFC 1712) to achieve a smaller option size. The 9-bit integer part accommodates +/- 180 degrees; the 25-bit fraction provides better than 7 decimal digits of precision.
+section: "1.3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

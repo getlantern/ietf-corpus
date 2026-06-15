@@ -1,0 +1,8 @@
+document: rfc-3821
+kind: wire-format
+summary: 'The FCIP Special Frame (FSF) is 18 32-bit words: words 0–6 are the standard FC Frame Encapsulation header (with Protocol#=0x01, Version=0x01, Frame Length=19 words), followed by words 7 (Reserved/complement), 8–9 (Source FC Fabric Entity WWN, 64 bits), 10–11 (Source FC/FCIP Entity Identifier, 64 bits), 12–13 (Connection Nonce, 64 bits), 14 (Connection Usage Flags + Connection Usage Code), 15–16 (Destination FC Fabric Entity WWN, 64 bits), 17 (K_A_TOV), and 18 (Reserved/complement).'
+section: "7.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

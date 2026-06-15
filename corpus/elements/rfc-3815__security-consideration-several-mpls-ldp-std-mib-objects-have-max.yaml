@@ -1,0 +1,10 @@
+document: rfc-3815
+kind: security-consideration
+summary: Several MPLS-LDP-STD-MIB objects have MAX-ACCESS read-create and can be used to reconfigure or destroy LDP sessions, potentially disrupting MPLS forwarding for all traffic using affected LSPs. SNMPv3 with authentication (authNoPriv or authPriv) is strongly recommended to prevent unauthorized modification.
+section: "7.1"
+topics:
+    - mpls
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

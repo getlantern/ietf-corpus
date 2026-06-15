@@ -1,0 +1,8 @@
+document: rfc-3816
+kind: design-rationale
+summary: rohcInstanceType (compressor/decompressor) was added to the rohcInstanceTable index even though rohcChannelID alone uniquely identifies an instance. The reason is that many management use cases need to list all compressors or all decompressors without accessing the other type, which the combined index enables efficiently.
+section: 4.1.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

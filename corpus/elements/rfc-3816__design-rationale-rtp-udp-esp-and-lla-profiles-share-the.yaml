@@ -1,0 +1,9 @@
+document: rfc-3816
+kind: design-rationale
+summary: RTP, UDP, ESP, and LLA profiles share the ROHC-RTP-MIB module rather than having individual modules, because analysis showed these profiles are tightly related and can share most managed objects. This reduces the total number of MIB modules while still keeping profile-specific objects separate from the base ROHC-MIB.
+section: "4"
+topics:
+    - snmp
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

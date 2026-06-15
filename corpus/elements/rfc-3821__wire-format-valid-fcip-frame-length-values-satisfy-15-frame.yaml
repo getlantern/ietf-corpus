@@ -1,0 +1,8 @@
+document: rfc-3821
+kind: wire-format
+summary: 'Valid FCIP Frame Length values satisfy 15 < Frame Length < 545 (units: 32-bit words). The minimum of 16 derives from 7 (encapsulation header) + 1 (SOF) + 1 (EOF) + 6 (FC header) + 1 (FC CRC); the maximum of 544 adds the maximum 528-word FC payload.'
+section: 5.6.2.2
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

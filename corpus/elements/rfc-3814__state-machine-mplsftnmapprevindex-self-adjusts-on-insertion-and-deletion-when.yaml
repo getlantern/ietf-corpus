@@ -1,0 +1,9 @@
+document: rfc-3814
+kind: state-machine
+summary: 'mplsFTNMapPrevIndex self-adjusts on insertion and deletion: when a new entry is inserted between entries A and B, the entry previously following A (i.e., B) has its mplsFTNMapPrevIndex automatically updated to point to the new entry. When an entry is deleted, the entry immediately after it has its mplsFTNMapPrevIndex automatically updated to skip the deleted entry.'
+section: "7.4"
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

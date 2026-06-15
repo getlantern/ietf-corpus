@@ -1,0 +1,9 @@
+document: rfc-3814
+kind: design-rationale
+summary: The mplsFTNMapTable uses a 'previous pointer' (mplsFTNMapPrevIndex) rather than a 'next pointer' to implement the linked-list. A next-pointer design cannot determine the first FTN entry on an interface with a single SNMP GETNEXT operation, while the previous-pointer design allows this via GETNEXT on mplsFTNMapRowStatus.ifIndex.0.0.
+section: 5.2.2
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

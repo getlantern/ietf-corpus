@@ -1,0 +1,10 @@
+document: rfc-3814
+kind: normative-requirement
+summary: If the agent does not wish to allow creation of more entries in mplsFTNTable (e.g., due to resource exhaustion), mplsFTNIndexNext MUST return a value of 0. If a non-zero value is returned and a SET succeeds, the agent MUST change mplsFTNIndexNext to another currently unused non-zero value or to zero.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

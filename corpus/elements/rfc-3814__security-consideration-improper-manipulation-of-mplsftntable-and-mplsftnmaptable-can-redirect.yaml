@@ -1,0 +1,10 @@
+document: rfc-3814
+kind: security-consideration
+summary: Improper manipulation of mplsFTNTable and mplsFTNMapTable can redirect traffic to unintended destinations, potentially resulting in denial of service to end-users or routing MPLS-intended traffic through the IP network instead, degrading service quality. These tables have read-write/read-create objects that MUST be protected against unauthorized SET operations.
+section: "10"
+topics:
+    - mpls
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

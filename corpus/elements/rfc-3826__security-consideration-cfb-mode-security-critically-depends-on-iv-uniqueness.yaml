@@ -1,0 +1,10 @@
+document: rfc-3826
+kind: security-consideration
+summary: CFB mode security critically depends on IV uniqueness per key; a duplicate IV allows a cryptanalyst to recover corresponding plaintext. The salt-based IV construction minimizes but does not eliminate duplication risk when multiple managers share one authoritative engine.
+section: "4"
+topics:
+    - snmp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

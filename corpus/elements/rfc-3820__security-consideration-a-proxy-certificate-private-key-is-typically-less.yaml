@@ -1,0 +1,9 @@
+document: rfc-3820
+kind: security-consideration
+summary: A Proxy Certificate private key is typically less rigorously protected than the EEC private key (often only file-system security). A compromised PC cannot sign EECs or PCs for other users, cannot be misused beyond its validity period, and does NOT compromise the issuing EEC private key. Limiting PC lifetime and including restriction policies mitigates the damage from a compromised PC.
+section: "6.1"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,10 @@
+document: rfc-3814
+kind: security-consideration
+summary: mplsFTNPerfTable, although read-only, exposes traffic flow information (packet and octet counts per FTN rule per interface). Unauthorized read access to these counters may be used to infer network traffic patterns, so GET and NOTIFY access should be controlled and counter values encrypted in transit.
+section: "10"
+topics:
+    - mpls
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,10 @@
+document: rfc-3814
+kind: normative-requirement
+summary: If a row in mplsFTNTable is destroyed, the agent MUST destroy the corresponding entries in mplsFTNMapTable (those with a matching mplsFTNCurrIndex value). If an mplsFTNMapTable row points to a deleted mplsFTNTable row, that mplsFTNMapTable row MUST also be deleted.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

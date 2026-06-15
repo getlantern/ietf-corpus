@@ -1,0 +1,9 @@
+document: rfc-3815
+kind: design-rationale
+summary: Two separate notifications (mplsLdpSessionUp and mplsLdpSessionDown) were defined rather than a single combined notification because some NMS applications can more easily match a SessionDown event to a prior SessionUp than parse a varbind list in a unified SessionChange notification.
+section: "3.6"
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

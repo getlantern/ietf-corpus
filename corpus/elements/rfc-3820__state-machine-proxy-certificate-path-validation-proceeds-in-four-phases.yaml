@@ -1,0 +1,9 @@
+document: rfc-3820
+kind: state-machine
+summary: 'Proxy certificate path validation proceeds in four phases: (1) initialization — load EEC public key and subject name from RFC 3280 output, set max_path_length = n; (2) basic processing for each certificate i — verify signature, validity period, issuer name, subject name structure, and ProxyCertInfo presence and policy language; (3) preparation for next certificate — verify max_path_length > 0, decrement it, update working keys; (4) wrap-up — finalize working keys. Failure at any step terminates with an error.'
+section: "4.1"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

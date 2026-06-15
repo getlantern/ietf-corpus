@@ -1,0 +1,10 @@
+document: rfc-3815
+kind: normative-requirement
+summary: 'If MIB objects used in LDP Session Initialization need to be modified after session start, the entire session must be halted: the operator sets mplsLdpEntityAdminStatus to disable(2), all session information is discarded, objects are modified, and then admin status is re-enabled to initiate a new session.'
+section: 3.5.2.1
+rfc2119_level: MUST
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

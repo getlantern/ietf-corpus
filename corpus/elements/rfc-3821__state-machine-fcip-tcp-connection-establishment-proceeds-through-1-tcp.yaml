@@ -1,0 +1,8 @@
+document: rfc-3821
+kind: state-machine
+summary: 'FCIP TCP Connection establishment proceeds through: (1) TCP connect issued to port 3225; (2) FSF sent as first bytes with Source WWN, Entity ID, Nonce, and Destination WWN; (3) wait up to 90 s for echoed FSF (words 7–17 must match exactly); (4) on match, FCIP_LEP and FCIP_DE created and FC Entity notified; on mismatch or timeout, TCP Connection closed.'
+section: 8.1.2.3
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

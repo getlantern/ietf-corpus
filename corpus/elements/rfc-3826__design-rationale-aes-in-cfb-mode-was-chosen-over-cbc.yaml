@@ -1,0 +1,9 @@
+document: rfc-3826
+kind: design-rationale
+summary: AES in CFB mode was chosen (over CBC, ECB, OFB, or CTR) because it supports streaming encryption without requiring padding for the final block, which fits variable-length SNMP scopedPDUs. The S=128 parameter matches the block size for maximum efficiency.
+section: 3.1.1.1
+topics:
+    - snmp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

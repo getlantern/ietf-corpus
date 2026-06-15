@@ -1,0 +1,10 @@
+document: rfc-3820
+kind: normative-requirement
+summary: 'When making an authorization decision based on inherited rights, the relying party MUST verify: (1) it knows how to interpret the proxy policy and the request is allowed; (2) if the PI is an EEC, local policy authorizes the request for that EEC; (3) if the PI is a PC, either local policy authorizes the PI or the PI inherits the right recursively. If these conditions are not met, the relying party MUST deny authorization or ignore the PC chain entirely.'
+section: 3.8.2
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

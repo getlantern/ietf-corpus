@@ -1,0 +1,9 @@
+document: rfc-3814
+kind: design-rationale
+summary: The linked-list indexing structure for mplsFTNMapTable was chosen to enable O(1) insertion between existing entries with a single SNMP SET operation and to allow in-order traversal of per-interface rules using only as many GETNEXT operations as there are entries, satisfying both requirements without reindexing.
+section: 5.2.1
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

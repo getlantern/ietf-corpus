@@ -1,0 +1,9 @@
+document: rfc-3816
+kind: security-consideration
+summary: The ROHC MIB modules contain read-write objects (rohcInstanceContextStorageTime, rohcContextStorageTime) whose unauthorized modification could affect context retention and management visibility. The MIBs are intended to be accessed via SNMPv3 with authentication and privacy; use of SNMPv1 or SNMPv2c without community-string protection is discouraged given the sensitivity of compression state information.
+section: "6"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
