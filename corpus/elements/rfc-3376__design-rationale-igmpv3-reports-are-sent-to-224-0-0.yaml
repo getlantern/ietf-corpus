@@ -1,0 +1,8 @@
+document: rfc-3376
+kind: design-rationale
+summary: IGMPv3 reports are sent to 224.0.0.22 rather than to the individual group address (as in IGMPv2) so that IGMPv1/v2 hosts on the same network do not receive and potentially mishandle IGMPv3 reports. All IGMPv3-capable routers listen on 224.0.0.22, allowing a single well-known address to collect all version 3 reports.
+section: 4.2.14
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,8 @@
+document: rfc-3376
+kind: state-machine
+summary: 'Router transitions on State-Change Records include query generation: INCLUDE(A)+TO_EX(B)→EXCLUDE(A*B, B-A) sends Q(G, A*B); EXCLUDE(X,Y)+TO_IN(A)→EXCLUDE(X+A, Y-A) sends Q(G, X-A) and Q(G). Queries must be sent [Last Member Query Count] times at [Last Member Query Interval], and pending queries for the same group must be merged with new ones.'
+section: 6.4.2
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

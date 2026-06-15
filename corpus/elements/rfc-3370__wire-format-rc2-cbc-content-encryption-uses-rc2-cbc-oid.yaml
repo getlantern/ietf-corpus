@@ -1,0 +1,8 @@
+document: rfc-3370
+kind: wire-format
+summary: RC2 CBC content encryption uses rc2-cbc OID with RC2CBCParameter ::= SEQUENCE { rc2ParameterVersion INTEGER, iv OCTET STRING } where iv is exactly 8 octets. The rc2ParameterVersion encodes effective-key-bits using the same non-linear mapping as the key wrap parameter (40→160, 64→120, 128→58).
+section: "5.2"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

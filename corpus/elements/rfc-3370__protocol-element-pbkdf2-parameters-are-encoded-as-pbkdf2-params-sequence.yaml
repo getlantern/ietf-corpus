@@ -1,0 +1,8 @@
+document: rfc-3370
+kind: protocol-element
+summary: PBKDF2 parameters are encoded as PBKDF2-params ::= SEQUENCE { salt CHOICE { specified OCTET STRING, otherSource AlgorithmIdentifier }, iterationCount INTEGER, keyLength INTEGER OPTIONAL, prf AlgorithmIdentifier DEFAULT hMAC-SHA1 }. The salt MUST use the specified OCTET STRING alternative.
+section: 4.4.1
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3388
+kind: design-rationale
+summary: FID (Flow Identification) semantics were introduced because cellular systems using SIP configure different radio bearers on different port numbers for each codec, requiring multiple RTP sessions to carry a single logical media flow. Existing RTSP/RTP definitions assumed one-to-one mapping of media instances to RTP sessions, which does not hold in these scenarios.
+section: "7.1"
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

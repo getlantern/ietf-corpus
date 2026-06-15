@@ -1,0 +1,8 @@
+document: rfc-3376
+kind: state-machine
+summary: Router per-group state is (multicast-address, group-timer, filter-mode, source-records). Each source record holds (source-address, source-timer). In INCLUDE mode, source records list desired sources; source timer expiry deletes the record. In EXCLUDE mode, the group timer tracks when to transition back to INCLUDE; source timer expiry stops the forwarding suggestion but does not delete the record.
+section: "6.2"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

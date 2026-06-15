@@ -1,0 +1,8 @@
+document: rfc-3376
+kind: wire-format
+summary: Max Resp Code encodes max response time in units of 1/10 second. Values < 128 are linear (Max Resp Time = Max Resp Code). Values >= 128 represent a floating-point value as 1|exp(3 bits)|mant(4 bits), where Max Resp Time = (mant | 0x10) << (exp + 3), enabling a range up to ~3174 seconds.
+section: 4.1.1
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3376
+kind: normative-requirement
+summary: IGMPv3 uses the IGMPv2 querier election mechanism (lowest IP address wins). When a router receives a query with a lower IP source address, it ceases sending queries. If a router receives an older version query, it MUST use the lowest version of IGMP present on the network.
+section: 6.6.2
+rfc2119_level: MUST
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

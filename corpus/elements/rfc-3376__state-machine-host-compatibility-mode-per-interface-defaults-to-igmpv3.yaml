@@ -1,0 +1,8 @@
+document: rfc-3376
+kind: state-machine
+summary: Host Compatibility Mode (per interface) defaults to IGMPv3. It switches to IGMPv2 when an IGMPv2 General Query is received (IGMPv2 Querier Present timer starts), and to IGMPv1 when an IGMPv1 Query is received (IGMPv1 Querier Present timer starts). Timer expiry reverts compatibility mode upward. Mode changes cause immediate cancellation of all pending response and retransmission timers.
+section: 7.2.1
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

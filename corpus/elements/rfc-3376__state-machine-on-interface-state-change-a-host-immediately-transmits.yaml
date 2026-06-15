@@ -1,0 +1,8 @@
+document: rfc-3376
+kind: state-machine
+summary: 'On interface state change, a host immediately transmits a State-Change Report with records determined by comparing old and new filter-mode/source-list: INCLUDE(A)→INCLUDE(B) sends ALLOW(B-A)+BLOCK(A-B); INCLUDE(A)→EXCLUDE(B) sends TO_EX(B); EXCLUDE(A)→INCLUDE(B) sends TO_IN(B). The report is retransmitted [Robustness Variable]-1 more times at random intervals within [Unsolicited Report Interval]. Subsequent state changes before retransmissions complete cause the pending report to be merged.'
+section: "5.1"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

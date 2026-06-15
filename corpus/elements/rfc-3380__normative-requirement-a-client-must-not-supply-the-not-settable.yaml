@@ -1,0 +1,7 @@
+document: rfc-3380
+kind: normative-requirement
+summary: A client MUST NOT supply the 'not-settable' or 'admin-define' out-of-band values in any request. If a Printer receives either value in an operation request, it MUST either reject the entire request with 'client-error-bad-request' or ignore the attribute and return it with the 'unsupported' out-of-band value.
+section: "8.1"
+rfc2119_level: MUST NOT
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

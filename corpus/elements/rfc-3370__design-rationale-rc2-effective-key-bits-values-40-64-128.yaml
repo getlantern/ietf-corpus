@@ -1,0 +1,8 @@
+document: rfc-3370
+kind: design-rationale
+summary: RC2 effective-key-bits values (40, 64, 128) map to non-intuitive RC2ParameterVersion integers (160, 120, 58) rather than directly encoding the key length. The value 160 requires two octets because 0xA0 would be interpreted as a negative number in BER.
+section: 4.3.2
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

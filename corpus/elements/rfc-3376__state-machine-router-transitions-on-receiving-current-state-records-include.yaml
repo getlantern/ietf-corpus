@@ -1,0 +1,8 @@
+document: rfc-3376
+kind: state-machine
+summary: 'Router transitions on receiving Current-State Records: INCLUDE(A)+IS_IN(B)→INCLUDE(A+B), set (B)=GMI; INCLUDE(A)+IS_EX(B)→EXCLUDE(A*B, B-A), set (B-A)=0, delete (A-B), Group Timer=GMI; EXCLUDE(X,Y)+IS_IN(A)→EXCLUDE(X+A, Y-A), set (A)=GMI; EXCLUDE(X,Y)+IS_EX(A)→EXCLUDE(A-Y, Y*A), set (A-X-Y)=GMI, delete (X-A) and (Y-A), Group Timer=GMI.'
+section: 6.4.1
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

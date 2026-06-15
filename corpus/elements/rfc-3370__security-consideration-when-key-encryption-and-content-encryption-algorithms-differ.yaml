@@ -1,0 +1,9 @@
+document: rfc-3370
+kind: security-consideration
+summary: When key-encryption and content-encryption algorithms differ in strength, effective security is determined by the weaker algorithm. For example, wrapping a 168-bit Triple-DES key with a 40-bit RC2 key-encryption key yields only 40 bits of protection. Key-encryption algorithms must be at least as strong as the content-encryption algorithm.
+section: "9"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

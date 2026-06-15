@@ -1,0 +1,9 @@
+document: rfc-3376
+kind: security-consideration
+summary: IGMP messages are not authenticated. A malicious system on a network can forge IGMP reports to cause routers to start or stop delivering multicast traffic, enabling both traffic injection (forged IS_EX or ALLOW) and denial-of-service (forged TO_IN or BLOCK). IPsec authentication can protect IGMP messages on networks where this is supported.
+section: "9"
+topics:
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

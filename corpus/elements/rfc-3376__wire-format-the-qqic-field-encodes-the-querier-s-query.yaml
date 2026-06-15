@@ -1,0 +1,8 @@
+document: rfc-3376
+kind: wire-format
+summary: 'The QQIC field encodes the Querier''s Query Interval in seconds using the same encoding as Max Resp Code: linear for values < 128, and floating-point 1|exp(3 bits)|mant(4 bits) for values >= 128, where QQI = (mant | 0x10) << (exp + 3).'
+section: 4.1.7
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3370
+kind: design-rationale
+summary: Static-Static D-H mandates ukm (unlike Ephemeral-Static where it is optional) because the same static key pair is reused across multiple messages. Without ukm, every message between the same sender and recipient would generate the same key-encryption key.
+section: 4.1.2
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

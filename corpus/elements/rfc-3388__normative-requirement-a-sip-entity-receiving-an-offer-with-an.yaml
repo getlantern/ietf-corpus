@@ -1,0 +1,10 @@
+document: rfc-3388
+kind: normative-requirement
+summary: A SIP entity receiving an offer with an 'a=group' line whose semantics are not understood MUST return an answer without the 'group' line (but 'mid' lines MUST still be present). If the semantics are understood, the answer MUST contain an 'a=group' line with the same semantics and identification-tags equal to or a subset of those in the offer.
+section: "8.2"
+rfc2119_level: MUST
+topics:
+    - realtime
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
