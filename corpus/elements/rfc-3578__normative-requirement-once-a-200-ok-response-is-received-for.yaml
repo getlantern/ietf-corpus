@@ -1,0 +1,11 @@
+document: rfc-3578
+kind: normative-requirement
+summary: Once a 200 OK response is received for any of the overlap INVITEs, the gateway should CANCEL all other pending INVITE transactions. A gateway may implement a brief timer before sending these CANCELs to allow prior transactions to terminate smoothly and reduce signalling traffic.
+section: "3.4"
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - voip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

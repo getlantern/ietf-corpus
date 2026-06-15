@@ -1,0 +1,9 @@
+document: rfc-3565
+kind: security-consideration
+summary: Mixing RSA-OAEP and RSA PKCS#1 v1.5 to transport the same CEK is inadvisable because an attacker can exploit the Bleichenbacher attack against the PKCS#1 v1.5 encrypted key even if OAEP is also present.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

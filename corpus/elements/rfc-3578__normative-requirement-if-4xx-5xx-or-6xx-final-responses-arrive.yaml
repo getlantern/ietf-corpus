@@ -1,0 +1,11 @@
+document: rfc-3578
+kind: normative-requirement
+summary: If 4xx, 5xx, or 6xx final responses arrive for pending INVITE transactions before T10 expires, the gateway should not send a REL. A REL is sent only if no more SAMs arrive, T10 expires, and all INVITEs sent have been answered with a final response other than 200 OK.
+section: "3.2"
+rfc2119_level: SHOULD NOT
+topics:
+    - sip
+    - voip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

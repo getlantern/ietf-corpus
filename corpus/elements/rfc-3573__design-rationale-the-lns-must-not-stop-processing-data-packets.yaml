@@ -1,0 +1,8 @@
+document: rfc-3573
+kind: design-rationale
+summary: The LNS must not stop processing data packets from the LAC even when modem is on-hold, because there is a race condition between the on-hold notification and the first data packet upon return (delivered on independent channels), and dropping packets would slow recovery.
+section: "5"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

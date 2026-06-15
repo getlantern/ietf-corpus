@@ -1,0 +1,11 @@
+document: rfc-3578
+kind: normative-requirement
+summary: Once the minimum digits are received and the gateway cannot determine completeness, it should collect digits until timer T10 expires or a stop digit is entered; T10 is refreshed on each new digit. When T10 expires, an INVITE with the digits collected so far is sent to the SIP side, and any subsequent SAMs are ignored.
+section: "2.2"
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - voip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,12 @@
+document: rfc-3581
+kind: normative-requirement
+summary: When sending a response, if the sent-protocol is an unreliable unicast transport (e.g., UDP) with no 'maddr' parameter but both 'received' and 'rport' parameters present, the response MUST be sent to the IP address in 'received' and the port in 'rport', and MUST be sent from the same address and port that the corresponding request was received on.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - sip
+    - nat
+    - realtime
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

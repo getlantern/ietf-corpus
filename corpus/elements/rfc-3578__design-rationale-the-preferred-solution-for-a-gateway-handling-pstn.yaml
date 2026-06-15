@@ -1,0 +1,10 @@
+document: rfc-3578
+kind: design-rationale
+summary: The preferred solution for a gateway handling PSTN overlap signalling and SIP is to convert PSTN overlap signalling into SIP en-bloc signalling using number analysis and timers, waiting until all digits arrive before generating an INVITE. Overlap-to-en-bloc conversion in SIP is preferred because SIP itself is an en-bloc protocol; the Request-URI of an INVITE always contains the whole address of the callee.
+section: "2"
+topics:
+    - sip
+    - voip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

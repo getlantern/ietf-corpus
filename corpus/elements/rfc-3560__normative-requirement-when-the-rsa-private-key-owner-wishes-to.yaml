@@ -1,0 +1,10 @@
+document: rfc-3560
+kind: normative-requirement
+summary: When the RSA private key owner wishes to limit public key use exclusively to RSAES-OAEP, the id-RSAES-OAEP OID MUST be used in the subject public key information algorithm field, and the parameters field MUST contain RSAES-OAEP-params. Certificate users MUST then only use the key for RSAES-OAEP operations with the parameters identified in the certificate.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

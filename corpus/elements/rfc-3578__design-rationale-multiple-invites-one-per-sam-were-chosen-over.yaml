@@ -1,0 +1,10 @@
+document: rfc-3578
+kind: design-rationale
+summary: Multiple INVITEs (one per SAM) were chosen over a single-transaction approach because each new INVITE represents a new SIP transaction that can be independently routed to take advantage of SIP services, whereas requests within an early dialog are bound to the same path. The trade-off is added complexity in managing concurrent INVITE transactions and the risk of reaching multiple egress gateways when routing is not controlled.
+section: "3.1"
+topics:
+    - sip
+    - voip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

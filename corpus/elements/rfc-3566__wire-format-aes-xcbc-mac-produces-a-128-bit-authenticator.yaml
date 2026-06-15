@@ -1,0 +1,10 @@
+document: rfc-3566
+kind: wire-format
+summary: AES-XCBC-MAC produces a 128-bit authenticator value; AES-XCBC-MAC-96 truncates this to 96 bits (the leftmost 96 bits of E[n]). Upon sending, the 96-bit truncated value is stored in the authenticator field; upon receipt, the full 128-bit value is computed and the first 96 bits are compared.
+section: "4.3"
+topics:
+    - crypto
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

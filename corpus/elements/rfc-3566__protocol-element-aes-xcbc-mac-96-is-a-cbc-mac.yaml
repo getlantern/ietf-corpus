@@ -1,0 +1,10 @@
+document: rfc-3566
+kind: protocol-element
+summary: AES-XCBC-MAC-96 is a CBC-MAC variant that derives three 128-bit subkeys (K1, K2, K3) from a single 128-bit secret key K by encrypting the constants 0x0101...01, 0x0202...02, and 0x0303...03 with K. K1 is used for all intermediate blocks, K2 for a full final block, and K3 for a padded final block.
+section: "4"
+topics:
+    - crypto
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

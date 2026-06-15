@@ -1,0 +1,11 @@
+document: rfc-3578
+kind: normative-requirement
+summary: In SIP-to-ISUP overlap signalling, upon reception of a subsequent INVITE (same Call-ID, same From tag, updated Request-URI), the gateway should generate a SAM and answer the previously received INVITE with 484 Address Incomplete. If the gateway is attached to an en-bloc PSTN area, a REL for the prior IAM and a new IAM should instead be generated.
+section: "3.5"
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - voip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

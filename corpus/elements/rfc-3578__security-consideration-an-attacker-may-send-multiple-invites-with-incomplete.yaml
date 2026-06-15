@@ -1,0 +1,10 @@
+document: rfc-3578
+kind: security-consideration
+summary: An attacker may send multiple INVITEs with incomplete addresses to the same gateway to exhaust available ports and deny service to legitimate callers; since these calls never complete, the sender may not be billed. Gateway operators are recommended to authenticate INVITE senders and track a threshold of hanging overlap calls, rejecting further calls from the same source once the limit is exceeded.
+section: "4"
+topics:
+    - sip
+    - security
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

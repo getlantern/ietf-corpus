@@ -1,0 +1,9 @@
+document: rfc-3565
+kind: security-consideration
+summary: The generation of AES CEKs relies on random numbers; use of inadequate PRNGs can result in little or no security, as attackers may reproduce the PRNG state and search a small key space rather than brute-forcing the full key space. RFC 1750 guidance applies.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

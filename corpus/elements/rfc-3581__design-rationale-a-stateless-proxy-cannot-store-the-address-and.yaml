@@ -1,0 +1,10 @@
+document: rfc-3581
+kind: design-rationale
+summary: A stateless proxy cannot store the address and port on which a request was received, so to implement symmetric response routing it can encode the destination address and port of a request into the Via header field value it inserts, then extract this information from the response to forward it correctly.
+section: "4"
+topics:
+    - sip
+    - nat
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

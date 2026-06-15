@@ -1,0 +1,10 @@
+document: rfc-3566
+kind: protocol-element
+summary: 'AES-XCBC-MAC-96 processes messages in 128-bit blocks. For all blocks M[1] through M[n-1], it XORs each block with the previous ciphertext output and encrypts with K1. The final block M[n] is treated differently: if 128 bits, it is XORed with E[n-1] and K2 before encryption with K1; if less than 128 bits, it is padded with a ''1'' bit followed by ''0'' bits, then XORed with E[n-1] and K3 before encryption with K1.'
+section: "4"
+topics:
+    - crypto
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

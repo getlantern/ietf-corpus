@@ -1,0 +1,10 @@
+document: rfc-3578
+kind: design-rationale
+summary: The approach of sending an INVITE with initial digits and then sending subsequent digits via INFO within an early dialog was rejected because it requires the remote UA to send a non-100 provisional response immediately, which would cause ingress gateways to generate early ACMs and confuse the PSTN state machine. Additionally, requests within an early dialog follow the same path and cannot be re-routed for SIP services.
+section: "3.1"
+topics:
+    - sip
+    - voip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

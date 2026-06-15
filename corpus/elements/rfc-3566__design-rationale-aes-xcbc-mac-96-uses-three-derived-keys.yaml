@@ -1,0 +1,10 @@
+document: rfc-3566
+kind: design-rationale
+summary: AES-XCBC-MAC-96 uses three derived keys (K1, K2, K3) so that the length of the input stream does not need to be known in advance. This is useful for systems that do one-pass assembly of large packets, and it distinguishes full final blocks from padded final blocks to ensure security across arbitrary message lengths.
+section: "4.1"
+topics:
+    - crypto
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

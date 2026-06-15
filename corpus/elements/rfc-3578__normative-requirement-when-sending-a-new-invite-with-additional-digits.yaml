@@ -1,0 +1,11 @@
+document: rfc-3578
+kind: normative-requirement
+summary: When sending a new INVITE with additional digits, the gateway should not CANCEL the previous INVITE transaction, because the CANCEL could arrive at an egress gateway before the new INVITE and trigger a premature REL. Pending INVITE transactions are typically terminated by 4xx responses.
+section: "3.4"
+rfc2119_level: SHOULD NOT
+topics:
+    - sip
+    - voip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,10 @@
+document: rfc-3581
+kind: design-rationale
+summary: 'SIP uses a hybrid method for computing response destinations: the IP address is taken from IP packet headers and the port from the Via header. This design allows a server to listen on a single IP/port for both requests and responses, improving scalability, but fails when clients are behind NATs.'
+section: "1"
+topics:
+    - sip
+    - nat
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

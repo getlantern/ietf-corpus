@@ -1,0 +1,10 @@
+document: rfc-3558
+kind: design-rationale
+summary: Bundling is a degenerate case of interleaving (LLL=0) that amortizes RTP header overhead across multiple frames. Interleaving with LLL>0 additionally spreads packet-loss effects across non-consecutive frames, since EVRC/SMV quality degrades exponentially with consecutive frame loss but can compensate for isolated losses.
+section: "6"
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

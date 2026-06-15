@@ -1,0 +1,9 @@
+document: rfc-3560
+kind: normative-requirement
+summary: Implementations MUST support SHA-1 for hashFunc and MAY support other hash functions. Implementations that perform encryption MUST omit the hashFunc field when SHA-1 is used; implementations that perform decryption MUST recognize both the id-sha1 OID and an absent hashFunc field as indicating SHA-1.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

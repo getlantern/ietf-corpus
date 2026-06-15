@@ -1,0 +1,12 @@
+document: rfc-3581
+kind: normative-requirement
+summary: To keep NAT bindings fresh during INVITE transactions, the client SHOULD retransmit its INVITE every 20 seconds or so, even after receiving a provisional response, because INVITE transactions can take arbitrarily long and most UDP NAT bindings have approximately one minute timeouts.
+section: "3"
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - nat
+    - realtime
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

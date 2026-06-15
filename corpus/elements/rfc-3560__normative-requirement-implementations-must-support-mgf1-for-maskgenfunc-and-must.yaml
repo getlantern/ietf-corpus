@@ -1,0 +1,9 @@
+document: rfc-3560
+kind: normative-requirement
+summary: Implementations MUST support MGF1 for maskGenFunc and MUST support SHA-1 within MGF1. Encryptors MUST omit maskGenFunc when MGF1 with SHA-1 is used; decryptors MUST recognize both the explicit OIDs and an absent maskGenFunc field as indicating MGF1 with SHA-1.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
