@@ -1,0 +1,9 @@
+document: rfc-3749
+kind: security-consideration
+summary: Compression algorithms can expand rather than compress input, enabling construction of rogue data that expands to enormous size. RFC 2246 mitigates this by requiring lossless compression, limiting content length increase to 1,024 bytes, and capping total content at 2^14 bytes.
+section: "6"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

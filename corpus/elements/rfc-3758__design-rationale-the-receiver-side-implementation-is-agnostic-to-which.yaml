@@ -1,0 +1,8 @@
+document: rfc-3758
+kind: design-rationale
+summary: The receiver-side implementation is agnostic to which PR-SCTP service definition the sender uses; only correct handling of FORWARD TSN chunks is required. This means many varieties of partially reliable services can be implemented without changing the on-the-wire protocol, and without requiring the receiver to understand the sender's service semantics.
+section: "1.2"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

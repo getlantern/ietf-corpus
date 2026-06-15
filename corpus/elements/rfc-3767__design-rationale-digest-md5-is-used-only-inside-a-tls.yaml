@@ -1,0 +1,10 @@
+document: rfc-3767
+kind: design-rationale
+summary: DIGEST-MD5 is used only inside a TLS-authenticated tunnel rather than standalone, because many user-chosen passwords are vulnerable to dictionary attacks and using DIGEST-MD5 without transport protection would allow an eavesdropper to capture material for offline attack.
+section: "1"
+topics:
+    - security
+    - crypto
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

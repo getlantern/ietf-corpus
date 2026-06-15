@@ -1,0 +1,9 @@
+document: rfc-3757
+kind: security-consideration
+summary: 'Automated mechanisms for DS RR rollover using the SEP flag may be vulnerable to replay attacks: a DNSKEY RR set exchange can be replayed, causing the parent to re-create a DS RR from a previously seen key. Parents are encouraged to implement a replay defense, such as a registry of keys used in recent rollovers.'
+section: "5"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

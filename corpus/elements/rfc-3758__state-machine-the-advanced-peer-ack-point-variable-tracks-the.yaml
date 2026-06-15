@@ -1,0 +1,8 @@
+document: rfc-3758
+kind: state-machine
+summary: 'The Advanced.Peer.Ack.Point variable tracks the sender''s theoretical view of the peer''s cumulative TSN. It advances when: (C1) a SACK arrives with a higher Cumulative TSN ACK; (C2) the next queued chunk is marked ''abandoned''; (A5) any T3-rtx timer expires. It triggers FORWARD TSN generation when it exceeds the SACK''s Cumulative TSN ACK.'
+section: "3.5"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

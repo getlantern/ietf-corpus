@@ -1,0 +1,10 @@
+document: rfc-3744
+kind: normative-requirement
+summary: An ACL request body MUST contain exactly one DAV:acl XML element, and MUST fail if the non-inherited, non-protected ACEs cannot be updated to exactly match the submitted set. Multiple precondition violations (no-ace-conflict, no-abstract, not-supported-privilege, missing-required-principal, recognized-principal, etc.) each require a specific DAV error element in the 403/409 response.
+section: 8.1.1
+rfc2119_level: MUST
+topics:
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

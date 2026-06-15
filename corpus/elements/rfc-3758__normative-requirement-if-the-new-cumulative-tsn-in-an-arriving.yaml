@@ -1,0 +1,9 @@
+document: rfc-3758
+kind: normative-requirement
+summary: If the New Cumulative TSN in an arriving FORWARD TSN is behind or at the current cumulative TSN point, the receiver MUST treat the chunk as out-of-date and MUST NOT update its Cumulative TSN; it SHOULD send a SACK since the duplicate may indicate the previous SACK was lost.
+section: "3.6"
+rfc2119_level: MUST NOT
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

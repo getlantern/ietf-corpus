@@ -1,0 +1,9 @@
+document: rfc-3755
+kind: design-rationale
+summary: 'Changing all three type codes (SIG, KEY, NXT) rather than a subset was chosen because it is the cleanest and safest approach: the behavior of resolvers receiving unknown type codes is well understood, it avoids potential new incompatibilities from partial changes, and it leaves legacy resolvers completely blinded to DNSSEC rather than confusingly partially aware.'
+section: "3"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

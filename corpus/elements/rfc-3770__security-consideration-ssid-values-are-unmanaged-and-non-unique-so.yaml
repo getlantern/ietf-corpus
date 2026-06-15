@@ -1,0 +1,9 @@
+document: rfc-3770
+kind: security-consideration
+summary: SSID values are unmanaged and non-unique, so certificates intended for different WLANs may share the same SSID, causing automatic certificate selection to fail. Masking the SSID in AP beacons provides little security because the SSID appears in other WLAN management messages, so placing SSIDs in certificates does not materially worsen disclosure.
+section: "5"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

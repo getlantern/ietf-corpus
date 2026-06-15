@@ -1,0 +1,9 @@
+document: rfc-3758
+kind: security-consideration
+summary: The FORWARD TSN chunk does not introduce new Man-in-the-Middle attack vectors beyond what is already possible in RFC 2960, since a MIM can already change or withhold data. However, FORWARD TSN does make it easier for a MIM to skip selective messages with less state, when the application has the feature enabled. Applications using PR-SCTP should not use transport layer security; see RFC 3436 for details.
+section: "7"
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

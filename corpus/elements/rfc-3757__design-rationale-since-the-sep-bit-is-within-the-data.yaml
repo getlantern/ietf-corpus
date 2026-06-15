@@ -1,0 +1,9 @@
+document: rfc-3757
+kind: design-rationale
+summary: Since the SEP bit is within the data used to compute the key tag field in the SIG RR, changing the SEP bit changes the key's identity within DNS. Once a key is used to generate signatures, the SEP bit setting must remain constant or verifiers cannot find the relevant KEY RR.
+section: "4"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

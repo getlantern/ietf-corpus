@@ -1,0 +1,9 @@
+document: rfc-3767
+kind: security-consideration
+summary: If the server database is stolen, an attacker can launch a dictionary attack to recover account passwords and thus decrypt credentials. Server implementations SHOULD protect the database. Clients MAY use ClientInfo to store a signature over the Credential for local verification before use.
+section: "5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

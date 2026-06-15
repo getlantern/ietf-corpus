@@ -1,0 +1,9 @@
+document: rfc-3755
+kind: security-consideration
+summary: Changing type codes leaves code paths in legacy resolvers that are never exercised; unexercised code paths are a frequent source of security holes because they do not receive frequent scrutiny. Additionally, attempting to use both new and legacy types together is not well understood and would probably lead to unintended and dangerous results.
+section: "5"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

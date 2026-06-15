@@ -1,0 +1,9 @@
+document: rfc-3747
+kind: state-machine
+summary: 'Template cloning proceeds: (1) retrieve diffServConfigStart for the template; (2) logically lock the current entry; (3) clone the entry with a new index and updated NEXT pointer; (4) advance to the next element and repeat from step 2; (5) after processing all elements, unlock all locked entries. This serializes modifications during instantiation.'
+section: "6.1"
+topics:
+    - diffserv
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

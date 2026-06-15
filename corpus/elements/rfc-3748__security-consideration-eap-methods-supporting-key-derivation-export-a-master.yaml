@@ -1,0 +1,9 @@
+document: rfc-3748
+kind: security-consideration
+summary: EAP methods supporting key derivation export a Master Session Key (MSK, at least 64 octets) and an Extended Master Session Key (EMSK, at least 64 octets). The EMSK MUST NOT be shared with the authenticator or any third party. Keys derived for different purposes must be cryptographically separate such that knowledge of one does not allow computation of another.
+section: "7.10"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

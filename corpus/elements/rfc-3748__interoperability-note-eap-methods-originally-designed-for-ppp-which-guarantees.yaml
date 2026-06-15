@@ -1,0 +1,6 @@
+document: rfc-3748
+kind: interoperability-note
+summary: EAP methods originally designed for PPP (which guarantees a 1500-octet MTU for control frames per RFC 1661) may lack fragmentation and reassembly. When EAP is transported over a lower layer supporting fragmentation such as IP, it may be preferable to provide an artificially large EAP MTU so that fragmentation occurs at the lower layer rather than within the EAP method.
+section: "3.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

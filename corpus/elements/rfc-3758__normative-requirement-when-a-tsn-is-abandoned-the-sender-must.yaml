@@ -1,0 +1,10 @@
+document: rfc-3758
+kind: normative-requirement
+summary: When a TSN is 'abandoned', the sender MUST treat it as finally acked and no longer outstanding, and MUST NOT credit it to partial_bytes_acked or advance cwnd based on it.
+section: "3.5"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,7 @@
+document: rfc-3748
+kind: normative-requirement
+summary: The Identifier field of a Response MUST match that of the currently outstanding Request. An authenticator receiving a Response with a non-matching Identifier MUST silently discard it. A peer receiving a valid duplicate Request for which it has already sent a Response MUST resend its original Response without reprocessing.
+section: "4.1"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

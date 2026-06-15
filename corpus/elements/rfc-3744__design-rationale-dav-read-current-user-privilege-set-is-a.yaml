@@ -1,0 +1,8 @@
+document: rfc-3744
+kind: design-rationale
+summary: DAV:read-current-user-privilege-set is a separate privilege from DAV:read-acl because most users need to see their own effective permissions (for UI rendering) while the full ACL may reveal information inappropriate for general users. This keeps the set of users who can read the full ACL much smaller.
+section: "3.7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

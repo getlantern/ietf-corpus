@@ -1,0 +1,9 @@
+document: rfc-3764
+kind: design-rationale
+summary: ENUM records SHOULD point to SIP addresses-of-record rather than SIP contact addresses because addresses-of-record represent user identity independent of device, preserving SIP's capability negotiation and discovery process. Provisioning contact addresses would compromise this process since NAPTR service fields cannot express the fine-grained capability detail (codecs, extensions) that SIP negotiation requires.
+section: "3"
+topics:
+    - sip
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

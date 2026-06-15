@@ -1,0 +1,9 @@
+document: rfc-3755
+kind: design-rationale
+summary: 'DS introduced new semantics for the NXT RR incompatible with RFC 2535: unsecure referrals now return an NXT and SIG(NXT) as proof of non-existence of a DS RR. Some widely-deployed 2535-aware resolvers interpret any answer with an NXT as a proof of non-existence of the requested record, causing unsecure delegations to be invisible and violating the principle that DNSSEC must do no harm.'
+section: "1.2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

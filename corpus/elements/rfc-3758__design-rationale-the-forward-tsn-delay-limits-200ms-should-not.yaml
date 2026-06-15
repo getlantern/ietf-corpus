@@ -1,0 +1,8 @@
+document: rfc-3758
+kind: design-rationale
+summary: The FORWARD TSN delay limits (200ms SHOULD NOT exceed, 500ms MUST NOT exceed) are deliberately matched to RFC 2960's delayed acknowledgement values, because delaying a FORWARD TSN has the same consequences as delaying a SACK but in the reverse direction — the sender's receiver is held up waiting to deliver reordered data.
+section: "3.5"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

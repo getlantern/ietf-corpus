@@ -1,0 +1,6 @@
+document: rfc-3748
+kind: design-rationale
+summary: EAP does not include fragmentation and reassembly at the EAP layer; individual methods must provide it if needed. This simplifies the lock-step protocol and avoids duplicating functionality in lower layers (e.g., IP-level fragmentation); an implementation may advertise an artificially large EAP MTU to delegate fragmentation to the lower layer.
+section: "1.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

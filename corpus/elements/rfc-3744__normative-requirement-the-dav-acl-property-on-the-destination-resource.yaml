@@ -1,0 +1,10 @@
+document: rfc-3744
+kind: normative-requirement
+summary: The DAV:acl property on the destination resource of a COPY MUST be the same as if the resource had been newly created (e.g., via MKCOL or PUT). Clients wishing to preserve the original ACL must read it before the COPY and restore it via a subsequent ACL request.
+section: "7.4"
+rfc2119_level: MUST
+topics:
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

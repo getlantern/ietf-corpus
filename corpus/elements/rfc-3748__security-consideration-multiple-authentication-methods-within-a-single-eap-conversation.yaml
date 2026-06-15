@@ -1,0 +1,8 @@
+document: rfc-3748
+kind: security-consideration
+summary: 'Multiple authentication methods within a single EAP conversation are prohibited because they are vulnerable to man-in-the-middle attacks: an attacker could interpose itself between peer and authenticator, using one method toward the peer while completing a different method toward the authenticator. Tunneled methods that present a single Type to EAP are exempt but MUST protect against MitM attacks.'
+section: "7.4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

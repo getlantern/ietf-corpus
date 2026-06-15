@@ -1,0 +1,8 @@
+document: rfc-3749
+kind: design-rationale
+summary: DEFLATE compression in TLS is stateful (compressor maintains state across records) rather than stateless, because stateless compression provides little known benefit within TLS's reliable, sequenced delivery environment while stateful compression achieves higher ratios on streams.
+section: "2"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

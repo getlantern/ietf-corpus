@@ -1,0 +1,9 @@
+document: rfc-3758
+kind: normative-requirement
+summary: After receiving a FORWARD TSN, the receiver MUST remove any partially reassembled message still missing one or more TSNs earlier than or equal to the new cumulative TSN point. If partial delivery API is invoked, a notification SHOULD be sent to the upper layer.
+section: "3.6"
+rfc2119_level: MUST
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

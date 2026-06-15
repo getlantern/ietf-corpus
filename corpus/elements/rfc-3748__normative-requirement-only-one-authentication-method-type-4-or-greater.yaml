@@ -1,0 +1,9 @@
+document: rfc-3748
+kind: normative-requirement
+summary: Only one authentication method (Type 4 or greater) MUST be utilized within an EAP conversation, after which the authenticator MUST send a Success or Failure packet. An authenticator MUST NOT send a Request for an additional method after completion of the initial authentication method; a peer receiving such a Request MUST treat it as invalid and silently discard it.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
