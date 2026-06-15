@@ -1,0 +1,6 @@
+document: rfc-3643
+kind: wire-format
+summary: The encapsulated FC frame begins with a SOF word (SOF, SOF, -SOF, -SOF bytes), followed by FC frame content (always a multiple of four 8-bit bytes), and ends with an EOF word (EOF, EOF, -EOF, -EOF bytes). SOF and EOF values are encoded using 8-bit codes from defined tables (e.g., SOFf=0x28, EOFn=0x41), with one's complement redundancy for error protection.
+section: "5.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,8 @@
+document: rfc-3643
+kind: design-rationale
+summary: The Time Stamp format follows SNTP Version 4 (seconds since 1 January 1900, plus a fractional-seconds field). The 32-bit seconds counter will overflow in 2036; the document notes that external means will be required at that time to disambiguate epochs. A 64-bit all-zero timestamp is by convention treated as invalid or unavailable.
+section: "3.1"
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

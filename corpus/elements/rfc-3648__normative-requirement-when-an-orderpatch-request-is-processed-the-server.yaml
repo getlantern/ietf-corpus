@@ -1,0 +1,9 @@
+document: rfc-3648
+kind: normative-requirement
+summary: When an ORDERPATCH request is processed, the server MUST apply DAV:order-member changes in the order they appear in the XML element. The server MUST either apply all changes or none; if any error occurs, all executed changes MUST be undone and a proper error returned.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3644
+kind: design-rationale
+summary: Hierarchical bandwidth allocation policies use rule nesting to specify relative bandwidth within a traffic class, and these policies SHOULD be enforced using hierarchical schedulers where each rule hierarchy level maps to a corresponding scheduler level. A flat rule representation cannot express the same semantics because above-minimum bandwidth is divided differently.
+section: 1.4.1
+topics:
+    - qos
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

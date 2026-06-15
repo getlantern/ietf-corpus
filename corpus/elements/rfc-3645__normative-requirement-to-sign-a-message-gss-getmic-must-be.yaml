@@ -1,0 +1,11 @@
+document: rfc-3645
+kind: normative-requirement
+summary: To sign a message, GSS_GetMIC MUST be called with the context_handle for key_name and the outgoing message plus TSIG variables. If major_status is GSS_S_COMPLETE, the per_msg_token is inserted into the Signature field of the TSIG RR.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3655
+kind: security-consideration
+summary: Resolvers (full or stub) that blindly trust the AD bit without knowing the security policy of the server generating the answer cannot be considered security aware. Trust in the AD bit requires a secure transport (e.g., IPsec) or message authentication (TSIG, SIG(0)) plus explicit configuration.
+section: "5"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

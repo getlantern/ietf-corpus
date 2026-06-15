@@ -1,0 +1,6 @@
+document: rfc-3643
+kind: design-rationale
+summary: SOF and EOF are transmitted as four-byte sequences (SOF, SOF, -SOF, -SOF and EOF, EOF, -EOF, -EOF) because FC SOF/EOF use special 10b characters with no 8-bit equivalents; the redundancy is deliberate to protect this critical framing information from transmission errors over the IP network.
+section: "5.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

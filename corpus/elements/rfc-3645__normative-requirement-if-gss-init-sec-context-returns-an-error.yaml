@@ -1,0 +1,11 @@
+document: rfc-3645
+kind: normative-requirement
+summary: If GSS_Init_sec_context returns an error status, the client MUST abandon the negotiation, delete the active context via GSS_Delete_sec_context, and MAY retry. The number of attempts to establish a security context MUST be limited to ten or less to prevent infinite looping.
+section: 3.1.3.2
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,8 @@
+document: rfc-3644
+kind: design-rationale
+summary: QPIM deliberately avoids subclassing the PolicyRule class, instead using SimplePolicyCondition, CompoundPolicyCondition, SimplePolicyAction, and CompoundPolicyAction from [PCIMe]. Subclassing PolicyRule would have made it more difficult to combine actions and conditions from different functional domains within the same rules.
+section: 1.2.1.1
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

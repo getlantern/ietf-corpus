@@ -1,0 +1,8 @@
+document: rfc-3644
+kind: design-rationale
+summary: If a policy sub-rule requires both bandwidth allocation refinement and threshold refinement, these must be placed in separate policy groups aggregated under the rule via PolicySetComponent. A bandwidth allocation action in a sub-rule implies its own queue, making threshold references to the parent queue ambiguous.
+section: 1.4.3
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

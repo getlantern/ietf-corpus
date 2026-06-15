@@ -1,0 +1,9 @@
+document: rfc-3655
+kind: design-rationale
+summary: Authoritative servers are permitted (with explicit configuration) to set the AD bit without re-verifying signatures because the cost of verifying all signatures on zone load is high and increases startup delay; signature verification at query time could cause resolver timeouts after zone reloads.
+section: 2.2.1
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

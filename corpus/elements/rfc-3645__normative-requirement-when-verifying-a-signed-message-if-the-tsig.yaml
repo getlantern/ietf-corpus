@@ -1,0 +1,11 @@
+document: rfc-3645
+kind: normative-requirement
+summary: When verifying a signed message, if the TSIG NAME does not map to an established context, the server MUST send a TSIG error response indicating BADKEY. Additionally, TSIG timer values MUST be valid before the message is considered authentic; the caller MUST NOT act on the request until all checks pass.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

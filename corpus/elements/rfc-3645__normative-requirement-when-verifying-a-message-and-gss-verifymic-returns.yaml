@@ -1,0 +1,11 @@
+document: rfc-3645
+kind: normative-requirement
+summary: When verifying a message and GSS_VerifyMIC returns certain error statuses (including GSS_S_BAD_SIG, GSS_S_DUPLICATE_TOKEN, GSS_S_CONTEXT_EXPIRED, etc.), the server MUST send a TSIG error response indicating BADKEY as described in RFC 2845.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
