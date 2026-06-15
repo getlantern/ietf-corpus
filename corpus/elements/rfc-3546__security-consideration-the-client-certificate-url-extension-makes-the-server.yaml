@@ -1,0 +1,9 @@
+document: rfc-3546
+kind: security-consideration
+summary: 'The client_certificate_url extension makes the server act as a client in URL fetching, exposing it to SSRF-style attacks: an attacker can direct the server to connect to arbitrary URLs, potentially reaching hosts behind firewalls, enabling DoS via many connections, and allowing FTP-bounce or HTTP-proxy-style attacks. It is RECOMMENDED this extension be disabled by default and only minimal URL schemes be enabled.'
+section: "6.3"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

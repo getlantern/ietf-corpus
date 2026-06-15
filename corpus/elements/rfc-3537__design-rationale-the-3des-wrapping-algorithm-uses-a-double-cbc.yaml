@@ -1,0 +1,9 @@
+document: rfc-3537
+kind: design-rationale
+summary: The 3DES wrapping algorithm uses a double-CBC-encrypt with an octet-reversal step between passes (derived from RFC 3217 section 3), whereas the AES wrapping algorithm directly uses the AES Key Wrap (RFC 3394) with only a length-prefix and padding addition. The difference arises because RFC 3394 provides its own integrity check, eliminating the need for the ICV and reversal steps.
+section: "3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3545
+kind: design-rationale
+summary: The T bit in COMPRESSED_UDP is changed to MAY be nonzero to indicate that the delta RTP timestamp is included explicitly rather than being reset to zero, removing the RFC 2508 limitation that prevented COMPRESSED_UDP from communicating both absolute and delta RTP timestamp in the same packet.
+section: "2.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

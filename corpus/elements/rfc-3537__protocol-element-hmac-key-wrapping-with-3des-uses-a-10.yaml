@@ -1,0 +1,9 @@
+document: rfc-3537
+kind: protocol-element
+summary: 'HMAC key wrapping with 3DES uses a 10-step algorithm: the key is prefixed with its 1-octet length, padded to a multiple of 8 octets with random bytes, appended with an 8-octet ICV (key checksum), then double-encrypted in CBC mode with a random IV and a fixed IV of 0x4adda22c79e82105, with an octet-reversal step between the two encryptions.'
+section: "3.1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

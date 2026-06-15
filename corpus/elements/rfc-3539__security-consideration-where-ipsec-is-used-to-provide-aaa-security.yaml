@@ -1,0 +1,12 @@
+document: rfc-3539
+kind: security-consideration
+summary: Where IPsec is used to provide AAA security, IPsec policy MUST require IPsec on incoming packets. Initiating a connection in the clear and having the AAA agent respond with IKE minimizes client configuration but increases DoS attack surface because a connection request can then exhaust both transport and IKE resources.
+section: "4"
+topics:
+    - ipsec
+    - vpn
+    - security
+    - diameter
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

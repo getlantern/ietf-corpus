@@ -1,0 +1,10 @@
+document: rfc-3545
+kind: normative-requirement
+summary: If a change to a constant context field (e.g., IP TOS) occurs while sending N+1 FULL_HEADER packets, the compressor MUST change the 'generation' number in the context and in the FULL_HEADER packet when beginning the new sequence of N+1 FULL_HEADER packets so the decompressor can detect the new sequence.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,12 @@
+document: rfc-3539
+kind: design-rationale
+summary: 'AAA transport is typically application-driven rather than network-driven: inter-packet spacing commonly exceeds the RTT by orders of magnitude (e.g., 25 seconds for a 48-port NAS). This invalidates TCP congestion window estimates and renders fast re-transmit largely inapplicable, driving nearly all of the protocol-specific guidance in this document.'
+section: "2.1"
+topics:
+    - tcp
+    - sctp
+    - congestion
+    - diameter
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3545
+kind: wire-format
+summary: The FULL_HEADER packet length fields are extended with a C flag. For 8-bit CID, the second length field carries C in bit 2 of the upper byte. For 16-bit CID, the C flag is in the first length field. C=1 indicates HDRCKSUM will be added to subsequent COMPRESSED_UDP and COMPRESSED_RTP packets.
+section: "2.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

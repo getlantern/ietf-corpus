@@ -1,0 +1,11 @@
+document: rfc-3539
+kind: design-rationale
+summary: Back-pressure via receive buffer sizing (where the agent's receive buffer equals its send buffer) is impractical for enabling per-conversation self-clocking because closing the receive window affects all traffic from the AAA client, not just conversations destined for the congested downstream server.
+section: "2.8"
+topics:
+    - tcp
+    - congestion
+    - diameter
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

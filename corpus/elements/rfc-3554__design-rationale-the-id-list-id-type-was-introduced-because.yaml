@@ -1,0 +1,10 @@
+document: rfc-3554
+kind: design-rationale
+summary: The ID_LIST ID type was introduced because IKE Phase 2 Quick Mode requires the Initiator to propose all Selectors upfront, but SCTP associations can span many address pairs. Without ID_LIST, each pair would require a separate SA negotiation, wasting time and memory.
+section: "3"
+topics:
+    - sctp
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

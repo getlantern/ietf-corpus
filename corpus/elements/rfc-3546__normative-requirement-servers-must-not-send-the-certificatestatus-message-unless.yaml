@@ -1,0 +1,10 @@
+document: rfc-3546
+kind: normative-requirement
+summary: Servers MUST NOT send the CertificateStatus message unless they received a status_request extension in the client hello. If a server sends CertificateStatus, it MUST have included an empty status_request extension in the extended server hello.
+section: "3.6"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

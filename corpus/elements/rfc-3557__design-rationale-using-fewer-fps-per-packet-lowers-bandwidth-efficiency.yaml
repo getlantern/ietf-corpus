@@ -1,0 +1,9 @@
+document: rfc-3557
+kind: design-rationale
+summary: Using fewer FPs per packet lowers bandwidth efficiency due to RTP/UDP/IP header overhead, while more FPs increase end-to-end delay and recognition latency, and raise the probability of catastrophic packet loss that speech recognizers struggle to handle. The recommendation to minimize FPs balances these competing concerns.
+section: "3.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

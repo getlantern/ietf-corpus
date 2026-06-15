@@ -1,0 +1,11 @@
+document: rfc-3545
+kind: normative-requirement
+summary: For IPv4, if more than N packets were lost, the decompressor SHOULD NOT try to recover using the 'twice' algorithm and instead SHOULD invalidate the context and send a CONTEXT_STATE packet. For IPv6, the decompressor MAY always try to recover using 'twice' since there is no unvalidated IPv4 ID field.
+section: "2.3"
+rfc2119_level: SHOULD NOT
+topics:
+    - rtp
+    - realtime
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

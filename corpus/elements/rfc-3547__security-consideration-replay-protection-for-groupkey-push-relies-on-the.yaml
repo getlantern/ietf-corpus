@@ -1,0 +1,10 @@
+document: rfc-3547
+kind: security-consideration
+summary: Replay protection for GROUPKEY-PUSH relies on the SEQ payload sequence number and a sliding receive window; implementations SHOULD keep a record of recently received sequence numbers and SHOULD NOT accept messages with sequence numbers below the window.
+section: 6.3.4
+rfc2119_level: SHOULD
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,11 @@
+document: rfc-3539
+kind: design-rationale
+summary: A single persistent connection per peer pair is recommended rather than multiple connections because multiple connections multiply the effective TCP slow-start initial window. For example, ten connections with initial window 2 would create an effective initial window of 20, permitting an inappropriate large burst.
+section: "2.4"
+topics:
+    - tcp
+    - congestion
+    - diameter
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

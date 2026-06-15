@@ -1,0 +1,9 @@
+document: rfc-3543
+kind: security-consideration
+summary: 'Agent advertisements as defined in RFC 3344 are subject to spoofing by on-link nodes, enabling denial-of-service attacks: a spoofed unicast advertisement with a reset sequence number can trick a mobile node into believing its registration has been revoked. Implementations should silently discard advertisements with TTL != 1 or inconsistent link-layer source addresses.'
+section: "6.1"
+topics:
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

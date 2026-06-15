@@ -1,0 +1,10 @@
+document: rfc-3546
+kind: security-consideration
+summary: If a client requires OCSP validation of server certificates, it SHOULD either contact the OCSP server directly or abort the handshake when the server pretends not to support the status_request extension, since a compromised server would likely suppress the extension.
+section: "6.6"
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

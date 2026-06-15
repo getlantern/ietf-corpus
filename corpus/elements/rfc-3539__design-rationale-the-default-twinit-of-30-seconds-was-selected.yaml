@@ -1,0 +1,9 @@
+document: rfc-3539
+kind: design-rationale
+summary: The default Twinit of 30 seconds was selected because it minimizes the probability that failover will be initiated due to a routing flap, as noted in Paxson's empirical research on end-to-end Internet dynamics. Setting Twinit as low as 6 seconds significantly increases the probability of spurious failover and duplicate generation.
+section: 3.4.1
+topics:
+    - diameter
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

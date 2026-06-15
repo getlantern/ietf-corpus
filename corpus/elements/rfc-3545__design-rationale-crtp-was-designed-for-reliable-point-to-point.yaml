@@ -1,0 +1,10 @@
+document: rfc-3545
+kind: design-rationale
+summary: CRTP was designed for reliable point-to-point links with short delays and does not perform well over links with high packet loss, reordering, and long delays (e.g., L2TP tunnels, ATM/Frame Relay virtual circuits). Enhanced CRTP addresses this by repeating updates and sending absolute values in addition to delta values, minimizing context corruption.
+section: "1"
+topics:
+    - rtp
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

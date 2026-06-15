@@ -1,0 +1,9 @@
+document: rfc-3543
+kind: normative-requirement
+summary: When a home agent revokes a binding, it MUST notify the foreign domain address, set the 'A' bit to '1', update the Revocation Identifier timestamp on each retransmission, MUST NOT send more than one revocation per second, SHOULD use exponential backoff, and MUST NOT retransmit beyond the binding's normal lifetime.
+section: 4.2.2.1
+rfc2119_level: MUST
+topics:
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3537
+kind: security-consideration
+summary: Implementations must protect the KEK; compromise of the KEK exposes all HMAC keys wrapped with it, leading to loss of data integrity protection. The key wrap functions provide confidentiality and integrity but not data origination authentication — any KEK holder can forge a wrapped key that passes the integrity check.
+section: "5"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

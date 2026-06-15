@@ -1,0 +1,10 @@
+document: rfc-3545
+kind: normative-requirement
+summary: If the C flag is set in the FULL_HEADER packet indicating HDRCKSUM, then the FULL_HEADER packet itself MUST also have the HDRCKSUM inserted. If a subsequent packet arrives with a UDP checksum present, a new FULL_HEADER packet MUST be sent with the C flag cleared.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

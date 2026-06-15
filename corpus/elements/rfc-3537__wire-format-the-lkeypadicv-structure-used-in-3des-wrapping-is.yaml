@@ -1,0 +1,9 @@
+document: rfc-3537
+kind: wire-format
+summary: 'The LKEYPADICV structure used in 3DES wrapping is: LENGTH (1 octet) || KEY (LENGTH octets) || PAD (0–7 random octets to make total a multiple of 8) || ICV (8 octets). The final wrapped output is the double-CBC-encrypted form of this structure prepended with the reversed IV.'
+section: "3.1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

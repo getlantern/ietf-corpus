@@ -1,0 +1,12 @@
+document: rfc-3554
+kind: security-consideration
+summary: SCTP's multi-homing feature enables traffic-redirection attacks where an attacker claims an address for an existing SCTP session, allowing interception of traffic. IKE MUST validate all addresses attached to an SCTP endpoint via Phase 1 certificate validation or an out-of-band method to mitigate this threat.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,12 @@
+document: rfc-3539
+kind: normative-requirement
+summary: The AAA client MUST NOT close the primary connection until the primary's watchdog timer has expired at least twice without a response. Once the primary connection has failed, subsequent requests are sent to the alternate server until the watchdog timer on the primary connection is reset.
+section: 3.4.1
+rfc2119_level: MUST NOT
+topics:
+    - diameter
+    - radius
+    - tcp
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

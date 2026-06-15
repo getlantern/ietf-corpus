@@ -1,0 +1,10 @@
+document: rfc-3546
+kind: normative-requirement
+summary: When matching HostName against non-ASCII names, servers MUST perform IDNA conversion treating HostName as a query string (AllowUnassigned flag MUST be set). Servers MUST accept any of U+002E, U+3002, U+FF0E, and U+FF61 as label separators. For ASCII-only matching, servers MUST compare case-insensitively.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

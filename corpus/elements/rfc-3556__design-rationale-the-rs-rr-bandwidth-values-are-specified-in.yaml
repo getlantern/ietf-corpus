@@ -1,0 +1,9 @@
+document: rfc-3556
+kind: design-rationale
+summary: The RS/RR bandwidth values are specified in bits per second rather than kilobits per second because the desired RTCP bandwidth may be less than 1 kb/s, making the kilobits-per-second unit impractical. Fractional values were considered but rejected in favor of changing the unit to preserve syntax compatibility.
+section: "2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,10 @@
+document: rfc-3539
+kind: design-rationale
+summary: SCTP stream IDs do not need to be preserved by relay agents when forwarding messages between associations with different numbers of streams. This simplifies relay implementation and the distribution across streams acts like a hash table — unlikely that two messages end up in the same stream causing blocking.
+section: 3.8.1
+topics:
+    - sctp
+    - diameter
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

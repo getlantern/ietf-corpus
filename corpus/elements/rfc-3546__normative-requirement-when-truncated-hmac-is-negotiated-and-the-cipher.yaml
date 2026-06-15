@@ -1,0 +1,10 @@
+document: rfc-3546
+kind: normative-requirement
+summary: When truncated HMAC is negotiated and the cipher suite uses HMAC, both client and server MUST use truncated HMACs with CipherSpec.hash_size of 10 bytes — only the first 10 bytes of the HMAC output are transmitted and checked. This does not affect PRF calculations.
+section: "3.5"
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

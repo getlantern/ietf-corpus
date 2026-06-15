@@ -1,0 +1,9 @@
+document: rfc-3539
+kind: design-rationale
+summary: 'The application layer watchdog is designed to detect failures of the immediate peer only, and not to be affected by failures of downstream proxies or servers. This prevents instability in downstream AAA components from propagating upstream: lack of an AAA Response may be due to downstream problems, so only failure to respond to the watchdog itself confirms peer failure.'
+section: "3.4"
+topics:
+    - diameter
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

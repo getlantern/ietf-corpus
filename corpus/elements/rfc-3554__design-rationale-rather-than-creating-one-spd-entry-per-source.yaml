@@ -1,0 +1,10 @@
+document: rfc-3554
+kind: design-rationale
+summary: Rather than creating one SPD entry per source/destination address pair (which is straightforward but expensive), the preferred approach associates sets of addresses with source and destination selectors in each SPD entry. This accommodates SCTP's multi-homing without combinatorial SA explosion.
+section: "2"
+topics:
+    - sctp
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
