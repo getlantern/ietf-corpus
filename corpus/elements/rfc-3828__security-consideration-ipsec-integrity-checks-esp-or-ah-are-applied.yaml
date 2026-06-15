@@ -1,0 +1,10 @@
+document: rfc-3828
+kind: security-consideration
+summary: IPsec integrity checks (ESP or AH) are applied to the entire IP packet payload; any bit corruption in the protected area causes the receiver to discard the UDP-Lite packet, negating UDP-Lite's partial-delivery benefit. When IPsec ESP encryption is used, links cannot identify UDP-Lite traffic and MUST apply standard full-packet integrity checks.
+section: "6"
+topics:
+    - security
+    - udp
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

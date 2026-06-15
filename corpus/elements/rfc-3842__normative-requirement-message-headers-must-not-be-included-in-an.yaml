@@ -1,0 +1,10 @@
+document: rfc-3842
+kind: normative-requirement
+summary: Message headers MUST NOT be included in an initial NOTIFY, as new messages could be essentially unbounded in size. Message headers in subsequent notifications MUST only correspond to messages added since the previous notification for that subscription.
+section: "3.5"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

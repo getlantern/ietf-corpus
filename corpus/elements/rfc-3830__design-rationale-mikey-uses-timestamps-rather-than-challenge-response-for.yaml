@@ -1,0 +1,9 @@
+document: rfc-3830
+kind: design-rationale
+summary: MIKEY uses timestamps rather than challenge-response for replay protection to minimize the number of round trips. This requires loosely synchronized clocks and a per-Responder replay cache; the allowable clock skew is a direct trade-off with replay cache size.
+section: "5.4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

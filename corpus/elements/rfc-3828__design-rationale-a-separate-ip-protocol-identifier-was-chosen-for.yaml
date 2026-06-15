@@ -1,0 +1,8 @@
+document: rfc-3828
+kind: design-rationale
+summary: 'A separate IP protocol identifier was chosen for UDP-Lite rather than sharing UDP''s identifier to avoid silent packet loss: if protocol identifiers were shared, a UDP-Lite packet with partial checksum sent to a UDP receiver would be silently discarded due to checksum mismatch, with neither application notified.'
+section: "5"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

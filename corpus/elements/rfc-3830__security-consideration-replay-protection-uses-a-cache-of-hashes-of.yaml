@@ -1,0 +1,9 @@
+document: rfc-3830
+kind: security-consideration
+summary: Replay protection uses a cache of hashes of successfully authenticated messages. Messages outside the allowable clock skew or found in the cache are silently discarded. Under DoS, MIKEY MAY dynamically reduce the allowed clock skew to keep the replay cache manageable; such attacks are limited to authenticated peers and are therefore traceable.
+section: "5.4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

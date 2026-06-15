@@ -1,0 +1,8 @@
+document: rfc-3830
+kind: wire-format
+summary: 'The Key Data Transport Payload (KEMAC) encodes: Next payload (8 bits), Encr alg (8 bits: NULL=0, AES-CM-128=1, AES-KW-128=2), Encr data len (16 bits), Encr data (variable, encrypted Key data sub-payloads), MAC alg (8 bits: NULL=0, HMAC-SHA-1-160=1), MAC (variable, 160 bits for HMAC-SHA-1-160). In PSK mode the MAC covers the entire message; in PK mode the MAC covers only the KEMAC payload.'
+section: "6.2"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

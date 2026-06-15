@@ -1,0 +1,10 @@
+document: rfc-3828
+kind: security-consideration
+summary: Encryption transforms that cause error propagation (block ciphers) will spread damage across a decrypted packet, making it unusable. Stream ciphers that do not propagate errors allow an attacker to make predictable plaintext changes without decrypting the ciphertext, posing a confidentiality and integrity risk.
+section: "6"
+topics:
+    - security
+    - crypto
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

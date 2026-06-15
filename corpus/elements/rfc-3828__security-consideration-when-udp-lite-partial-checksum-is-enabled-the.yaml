@@ -1,0 +1,10 @@
+document: rfc-3828
+kind: security-consideration
+summary: When UDP-Lite partial checksum is enabled, the insensitive portion of a packet may change in transit, causing most authentication mechanisms to fail since they verify the entire packet has not changed. Authentication will always fail for UDP-Lite packets where the insensitive part has been damaged unless authentication operates only on the sensitive part.
+section: "6"
+topics:
+    - security
+    - udp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

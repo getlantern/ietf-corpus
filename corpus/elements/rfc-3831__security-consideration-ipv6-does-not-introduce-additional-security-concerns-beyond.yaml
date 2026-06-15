@@ -1,0 +1,10 @@
+document: rfc-3831
+kind: security-consideration
+summary: IPv6 does not introduce additional security concerns beyond those already in Fibre Channel. FC soft zoning (Name Server masking) does not work for IPv6 traffic since IPv6 over FC bypasses the FC Name Server. The FC ESP_Header may be used to secure FC frames, and IPsec (AH/ESP) may be used at the IPv6 layer.
+section: "12"
+topics:
+    - ip
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
