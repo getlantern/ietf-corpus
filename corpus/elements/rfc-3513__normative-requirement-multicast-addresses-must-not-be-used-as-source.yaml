@@ -1,0 +1,11 @@
+document: rfc-3513
+kind: normative-requirement
+summary: Multicast addresses must not be used as source addresses in IPv6 packets or appear in any Routing Header. Routers must not forward multicast packets beyond the scope indicated by the scop field in the destination address. Nodes must not originate packets to multicast scope 0; if received, such packets must be silently dropped.
+section: "2.7"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - v6ops
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

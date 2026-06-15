@@ -1,0 +1,10 @@
+document: rfc-3517
+kind: normative-requirement
+summary: During recovery, if cwnd - pipe >= 1 SMSS the sender SHOULD transmit one or more segments by querying NextSeg(); each sent segment increments pipe and updates HighRxt or HighData as appropriate; step C repeats until cwnd - pipe < 1 SMSS or NextSeg() fails.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

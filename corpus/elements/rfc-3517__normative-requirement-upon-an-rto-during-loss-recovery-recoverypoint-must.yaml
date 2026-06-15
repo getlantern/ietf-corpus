@@ -1,0 +1,10 @@
+document: rfc-3517
+kind: normative-requirement
+summary: Upon an RTO during loss recovery, RecoveryPoint MUST be set to HighData and its new value preserved; the current loss recovery algorithm MUST be terminated; a new recovery phase MUST NOT be initiated until HighACK >= new RecoveryPoint.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

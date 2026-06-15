@@ -1,0 +1,9 @@
+document: rfc-3517
+kind: design-rationale
+summary: Implementers MAY optionally re-arm the RTO timer on each retransmission sent during recovery (rather than only on cumulative ACK advancement per RFC 2988). This prevents premature RTO expiry during long recovery phases that keep the ACK clock active, at the cost of a more conservative timer.
+section: "6"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

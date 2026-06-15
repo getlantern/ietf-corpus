@@ -1,0 +1,9 @@
+document: rfc-3519
+kind: design-rationale
+summary: 'Two-way keepalives (ICMP Echo Request/Reply) are required rather than one-way because: (1) they allow the MN to detect loss of a NAT mapping and trigger re-registration, and (2) acknowledged keepalives reduce overall keepalive traffic since retransmissions only occur on no-response, whereas unacknowledged one-way keepalives must be sent more frequently to survive occasional loss.'
+section: "4.9"
+topics:
+    - nat
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

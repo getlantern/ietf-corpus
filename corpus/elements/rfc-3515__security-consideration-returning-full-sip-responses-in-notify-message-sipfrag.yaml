@@ -1,0 +1,11 @@
+document: rfc-3515
+kind: security-consideration
+summary: 'Returning full SIP responses in NOTIFY message/sipfrag bodies can circumvent privacy and confidentiality: an attacker can send a REFER to probe whether a target is reachable (leaking presence and UA identity) or to extract server version strings from internal resources. Implementers should return minimal sipfrag bodies (e.g., ''200 OK'' or ''503 Unavailable'') to limit information exposure.'
+section: "5.3"
+topics:
+    - sip
+    - security
+    - privacy
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

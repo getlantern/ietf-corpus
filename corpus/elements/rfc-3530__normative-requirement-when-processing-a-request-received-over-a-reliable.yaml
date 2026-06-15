@@ -1,0 +1,9 @@
+document: rfc-3530
+kind: normative-requirement
+summary: When processing a request received over a reliable transport such as TCP, the NFS version 4 server MUST NOT silently drop the request except if the transport connection has been broken. Clients MUST NOT retry a request unless the transport connection has been broken or the procedure being retried is the NULL procedure.
+section: 3.1.1
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

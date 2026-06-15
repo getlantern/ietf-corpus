@@ -1,0 +1,9 @@
+document: rfc-3530
+kind: normative-requirement
+summary: The callback RPC MUST mutually authenticate the NFS server to the principal that acquired the clientid using the security flavor the original SETCLIENTID operation used. The NFS server MUST identify itself in GSS-API via a GSS_C_NT_HOSTBASED_SERVICE name of the form 'nfs@hostname'.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

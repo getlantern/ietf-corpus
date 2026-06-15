@@ -1,0 +1,6 @@
+document: rfc-3530
+kind: design-rationale
+summary: File locking is integrated into the core NFS v4 protocol rather than a separate NLM protocol, using a lease-based model that does not require RPC callbacks for lock acquisition. A fixed lease interval was chosen (rather than variable) to reduce server state recovery overhead after failures.
+section: 1.4.5
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

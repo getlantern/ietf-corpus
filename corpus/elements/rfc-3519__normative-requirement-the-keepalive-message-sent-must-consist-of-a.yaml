@@ -1,0 +1,11 @@
+document: rfc-3519
+kind: normative-requirement
+summary: The keepalive message sent MUST consist of a properly UDP-encapsulated ICMP Echo Request directed to the home agent. The non-HA endpoint MUST send a keepalive if no other packet has been sent to the HA in K seconds (default K=110 seconds).
+section: "4.9"
+rfc2119_level: MUST
+topics:
+    - nat
+    - mobility
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

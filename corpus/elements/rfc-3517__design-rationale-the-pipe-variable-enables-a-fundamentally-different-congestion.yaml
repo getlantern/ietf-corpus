@@ -1,0 +1,9 @@
+document: rfc-3517
+kind: design-rationale
+summary: 'The Pipe variable enables a fundamentally different congestion window management from standard RFC 2581: rather than counting packets in flight by ACK arrival, it estimates in-network bytes using SACK state, allowing the sender to inject new data into gaps during recovery without over-filling the network.'
+section: "2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

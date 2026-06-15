@@ -1,0 +1,9 @@
+document: rfc-3517
+kind: design-rationale
+summary: Rule 3 of NextSeg() is included as a 'last resort' to sustain the ACK clock when no definitely-lost or unsent data is available. The authors expect it to trigger rarely; they leave the decision to use it to implementors because it risks underestimating Pipe when both copies of a retransmitted segment leave the network.
+section: "4"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

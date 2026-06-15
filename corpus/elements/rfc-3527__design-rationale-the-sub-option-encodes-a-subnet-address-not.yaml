@@ -1,0 +1,8 @@
+document: rfc-3527
+kind: design-rationale
+summary: The sub-option encodes a subnet address (not a host address) by zeroing the host bits via ANDing with the subnet mask. This uniquely identifies the subnet while allowing the server to consider all related subnets on the same link, consistent with existing giaddr processing in RFC 2131 Section 4.3.1.
+section: "3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

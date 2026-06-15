@@ -1,0 +1,10 @@
+document: rfc-3517
+kind: normative-requirement
+summary: NextSeg() MUST return the smallest unSACKed sequence S2 that is above HighRxt, below the highest SACK-covered octet, and for which IsLost(S2) is true (rule 1); if none exists, MUST return the next unsent data if the window allows (rule 2); MUST indicate failure if neither rule applies.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

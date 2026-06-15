@@ -1,0 +1,10 @@
+document: rfc-3519
+kind: security-consideration
+summary: The NAT traversal mechanism requires the HA to trust the unauthenticated IP source address from received packets as the effective care-of address, since the NAT rewrites the address protected by the MN-HA authentication extension. This enables traffic-redirection attacks where an on-path attacker modifies registration IP/UDP headers to redirect mobility bindings to an arbitrary address.
+section: "6"
+topics:
+    - nat
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

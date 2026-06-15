@@ -1,0 +1,10 @@
+document: rfc-3517
+kind: normative-requirement
+summary: 'SetPipe() MUST traverse sequence space from HighACK to HighData and set Pipe to the estimated number of octets in transit: incrementing for each un-SACKed octet not determined lost, and again for each octet at or below HighRxt (retransmitted octets are thus counted twice).'
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

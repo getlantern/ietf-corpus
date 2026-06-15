@@ -1,0 +1,11 @@
+document: rfc-3519
+kind: normative-requirement
+summary: If fragmentation is needed, it MUST be done prior to MIP UDP encapsulation. This differs from IP-in-IP tunnelling and is required because NAPT devices cannot associate non-first fragments (lacking port numbers) to the correct session.
+section: "4.8"
+rfc2119_level: MUST
+topics:
+    - nat
+    - mobility
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

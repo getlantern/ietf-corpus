@@ -1,0 +1,8 @@
+document: rfc-3530
+kind: interoperability-note
+summary: NFS v4 clients and servers must support a minimum security set of LIPKEY, SPKM-3, and Kerberos-V5 under RPCSEC_GSS. When a server returns NFS4ERR_WRONGSEC, the client must invoke SECINFO to discover available security triples for that filehandle and select an appropriate one before retrying.
+section: 3.3.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

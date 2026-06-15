@@ -1,0 +1,10 @@
+document: rfc-3519
+kind: security-consideration
+summary: An attacker who can observe a Registration Request/Reply exchange during the 'half bound' state can send a bogus keepalive to redirect the tunnel to an arbitrary UDP port at the same IP address. The HA MUST NOT accept a keepalive from a different source IP than the registration request. Using short re-registration intervals and having the MN send the first keepalive immediately limits exposure.
+section: 6.1.2
+topics:
+    - nat
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

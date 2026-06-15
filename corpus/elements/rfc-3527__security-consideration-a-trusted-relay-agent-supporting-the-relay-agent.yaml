@@ -1,0 +1,10 @@
+document: rfc-3527
+kind: security-consideration
+summary: A trusted relay agent supporting the relay-agent-info option MUST discard packets it receives with a zero giaddr and a relay-agent-info option when the packet arrives on an untrusted circuit (per RFC 3046 Section 2.1), providing minor protection against address-pool exhaustion attacks via this sub-option.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

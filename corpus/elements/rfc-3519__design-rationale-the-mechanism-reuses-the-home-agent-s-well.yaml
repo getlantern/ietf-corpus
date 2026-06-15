@@ -1,0 +1,10 @@
+document: rfc-3519
+kind: design-rationale
+summary: The mechanism reuses the home agent's well-known UDP port 434 for both MIP signalling and tunnelled data traffic. This means that if a MIP registration can reach the HA, tunnelled data will almost certainly also pass through any firewalls or NATs on the path.
+section: "6.3"
+topics:
+    - nat
+    - mobility
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,10 @@
+document: rfc-3517
+kind: normative-requirement
+summary: 'When a TCP sender receives the DupThresh-th duplicate ACK and no prior loss event has occurred (or HighACK is beyond RecoveryPoint), loss recovery SHOULD be initiated: set RecoveryPoint = HighData, reduce ssthresh = cwnd = FlightSize/2, retransmit HighACK+1, run SetPipe(), and proceed to step C.'
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

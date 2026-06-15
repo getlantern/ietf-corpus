@@ -1,0 +1,9 @@
+document: rfc-3517
+kind: state-machine
+summary: 'Loss recovery phase: entered on DupThresh duplicate ACKs (if HighACK <= RecoveryPoint check passes); terminated when a cumulative ACK arrives for a sequence number greater than RecoveryPoint. During recovery, each ACK triggers Update(), SetPipe(), and conditional retransmission via NextSeg() when cwnd - pipe >= 1 SMSS.'
+section: "5"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
