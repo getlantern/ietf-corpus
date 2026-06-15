@@ -1,0 +1,9 @@
+document: rfc-3331
+kind: wire-format
+summary: 'Variable-Length Parameters use a Tag-Length-Value format: Parameter Tag (16 bits unsigned), Parameter Length (16 bits, includes Tag+Length+Value fields), Parameter Value (variable). The total parameter length MUST be a multiple of 4 bytes; senders pad with zero bytes (not counted in length field), max 3 padding bytes.'
+section: 3.1.6
+topics:
+    - realtime
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

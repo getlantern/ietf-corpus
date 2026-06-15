@@ -1,0 +1,9 @@
+document: rfc-3331
+kind: design-rationale
+summary: 'The Interface Identifier is placed in the M2UA message header (rather than derived from the SCTP stream) because SCTP streams are unidirectional: a M2UA layer has no visibility into its peer''s stream assignments, so an explicit per-message identifier is required to demultiplex SS7 links.'
+section: 1.5.4.1
+topics:
+    - realtime
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,10 @@
+document: rfc-3329
+kind: normative-requirement
+summary: 'The server MUST check that the security mechanisms listed in the Security-Verify header of incoming requests correspond to its static list of supported mechanisms. If modification is detected, the server MUST respond with a 494 response including the unmodified server list. Standard SIP header comparison rules apply: same mechanisms, same order, same parameter values.'
+section: 2.3.1
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

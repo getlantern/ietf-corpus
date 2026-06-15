@@ -1,0 +1,10 @@
+document: rfc-3327
+kind: design-rationale
+summary: 'Path accumulates hop-by-hop during REGISTER request processing but is returned end-to-end in the response without modification by intermediate proxies. This asymmetry motivates two different security approaches: hop-by-hop integrity (TLS/IPsec) for the request path and end-to-end protection (S/MIME) for the response.'
+section: "6"
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

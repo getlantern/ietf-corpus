@@ -1,0 +1,10 @@
+document: rfc-3329
+kind: normative-requirement
+summary: When a client receives a Security-Server response, it MUST choose the mechanism with the highest q value among known mechanisms, initiate that mechanism, and then send subsequent requests with a Security-Verify header mirroring the server's list. These requests MUST also include Require and Proxy-Require with 'sec-agree'.
+section: 2.3.1
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

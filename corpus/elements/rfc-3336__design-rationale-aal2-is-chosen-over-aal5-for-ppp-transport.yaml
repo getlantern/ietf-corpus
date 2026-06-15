@@ -1,0 +1,9 @@
+document: rfc-3336
+kind: design-rationale
+summary: AAL2 is chosen over AAL5 for PPP transport of small payloads (e.g., compressed voice/RTP) because SSSAR+CPS incurs only 6 bytes of encapsulation overhead per PPP payload versus 8 bytes for an AAL5 trailer, and eliminates AAL5 PAD overhead through CPS-level multiplexing.
+section: "5.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

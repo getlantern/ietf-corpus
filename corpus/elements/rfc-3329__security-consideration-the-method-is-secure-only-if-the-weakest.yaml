@@ -1,0 +1,9 @@
+document: rfc-3329
+kind: security-consideration
+summary: The method is secure only if the weakest proposed mechanism offers at least integrity and replay protection for the Security-Verify header field. If an attacker modifies the initial unprotected offers, the scheme requires them to forge the weak security in real time to avoid detection when the client echoes the server list — converting a trivial downgrade attack into one requiring active cryptographic forgery.
+section: "5"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

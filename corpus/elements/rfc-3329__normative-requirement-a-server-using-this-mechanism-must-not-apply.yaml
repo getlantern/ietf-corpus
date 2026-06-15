@@ -1,0 +1,10 @@
+document: rfc-3329
+kind: normative-requirement
+summary: A server using this mechanism MUST NOT apply it if the incoming request has more than one Via entry, as this indicates it is not the first-hop SIP entity. For such requests the server must return a 502 (Bad Gateway) response.
+section: 2.3.2
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

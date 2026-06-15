@@ -1,0 +1,6 @@
+document: rfc-3336
+kind: design-rationale
+summary: PPP/AAL2 is preferred over PPP/PPPMUX/AAL5 because PPPMUX still requires an AAL5 frame wrapper (adding 8 bytes trailer plus an average 24 bytes of PAD), whereas AAL2 CPS multiplexes directly and cells are fully packed as long as frames arrive before TIMER_CU expiry.
+section: "5.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

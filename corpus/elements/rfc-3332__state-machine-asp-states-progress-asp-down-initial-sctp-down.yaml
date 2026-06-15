@@ -1,0 +1,9 @@
+document: rfc-3332
+kind: state-machine
+summary: 'ASP states progress: ASP-DOWN (initial/SCTP down) → ASP-INACTIVE (ASPUP/ASPUP ACK exchanged) → ASP-ACTIVE (ASPAC/ASPAC ACK exchanged). Reverse transitions occur via ASPDN (to ASP-DOWN) and ASPIA (to ASP-INACTIVE). Loss of the SCTP association causes an immediate transition to ASP-DOWN regardless of current state.'
+section: "4.3"
+topics:
+    - realtime
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

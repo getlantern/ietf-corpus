@@ -1,0 +1,9 @@
+document: rfc-3329
+kind: design-rationale
+summary: The digest-verify parameter is included specifically to prevent bidding-down attacks on the SIP security mechanism agreement itself. It extends HTTP Digest's A2 parameter to include the Security-Server header field value, so that the digest authenticates not just the SIP request but also the server's advertised security capabilities.
+section: "2.2"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

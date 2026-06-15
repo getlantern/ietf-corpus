@@ -1,0 +1,10 @@
+document: rfc-3329
+kind: normative-requirement
+summary: In the server-initiated flow, if a server receives a request without the sec-agree option tag in Require/Proxy-Require/Supported, it MUST return 421 (Extension Required). If it was in Supported, it MUST return 494 (Security Agreement Required). In both cases, the server MUST include a Security-Server header and a Require header with 'sec-agree'.
+section: 2.3.2
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

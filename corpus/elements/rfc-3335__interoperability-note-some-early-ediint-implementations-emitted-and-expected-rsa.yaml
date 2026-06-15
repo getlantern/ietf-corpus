@@ -1,0 +1,9 @@
+document: rfc-3335
+kind: interoperability-note
+summary: Some early EDIINT implementations emitted and expected 'rsa-md5' and 'rsa-sha1' (rather than 'md5' and 'sha1') for the micalg parameter; receiving agents SHOULD recover gracefully from unrecognized micalg values to maintain compatibility with these legacy implementations.
+section: "5.2"
+topics:
+    - email
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

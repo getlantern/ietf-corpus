@@ -1,0 +1,9 @@
+document: rfc-3332
+kind: normative-requirement
+summary: The total length of a parameter (Tag + Length + Value) MUST be a multiple of 4 bytes. Senders pad with all-zero bytes after the Value field; the padding length is NOT included in the Parameter Length field. The receiver MUST ignore padding bytes.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

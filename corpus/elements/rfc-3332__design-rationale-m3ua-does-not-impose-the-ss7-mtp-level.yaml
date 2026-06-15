@@ -1,0 +1,9 @@
+document: rfc-3332
+kind: design-rationale
+summary: M3UA does not impose the SS7 MTP Level 2 272-octet SIF length limit, allowing larger signalling blocks to be carried natively over SCTP without upper-layer segmentation. However, when an SG interworks to an SS7 network that does not support larger blocks, the 272-octet limit MUST be observed at the SG to prevent downstream ISUP or SCCP fragmentation.
+section: 1.3.2.1
+topics:
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

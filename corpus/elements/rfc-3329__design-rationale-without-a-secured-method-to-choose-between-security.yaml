@@ -1,0 +1,10 @@
+document: rfc-3329
+kind: design-rationale
+summary: Without a secured method to choose between security mechanisms, SIP is vulnerable to Man-in-the-Middle attacks that can downgrade security. An attacker can remove stronger security options from unprotected negotiation messages, forcing peers to use weaker security. This specification addresses that vulnerability by having the client echo back the server's security list under the selected security, making trivial downgrade attacks require real-time cryptographic forgery.
+section: "1.1"
+topics:
+    - sip
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

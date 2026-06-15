@@ -1,0 +1,9 @@
+document: rfc-3329
+kind: security-consideration
+summary: 'Four attack vectors are analyzed: (1) modification of the server''s list in the first response, revealed when client echoes it back; (2) modification of client''s echoed list in the second request, detectable via integrity protection; (3) modification of client''s initial list, which affects only the server''s choice and is detectable as peers would choose different mechanisms; (4) replay of old security agreement messages, which each mechanism must prevent via replay protection (e.g., HTTP Digest nonce timestamps and counters).'
+section: "5"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
