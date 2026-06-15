@@ -1,0 +1,11 @@
+document: rfc-3489
+kind: security-consideration
+summary: STUN servers are vulnerable to DNS-based attacks (fake SRV records redirecting clients to a rogue server), rogue router/NAT attacks (rewriting the source address of STUN requests to control the returned MAPPED-ADDRESS), and MITM attacks; the countermeasure for all these is integrity protection via HMAC over requests and responses using a TLS-negotiated shared secret.
+section: "12.2"
+topics:
+    - nat
+    - security
+    - dns
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

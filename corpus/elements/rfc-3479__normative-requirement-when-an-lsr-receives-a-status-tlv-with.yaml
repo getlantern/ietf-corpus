@@ -1,0 +1,10 @@
+document: rfc-3479
+kind: normative-requirement
+summary: When an LSR receives a Status TLV with the E-bit set (causing TCP closure), it MUST release all state information and resources for the session. The 'Temporary Shutdown' status code has E-bit clear and MAY be used to indicate intent to preserve state across a planned closure.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

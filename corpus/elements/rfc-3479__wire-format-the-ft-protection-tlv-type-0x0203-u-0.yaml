@@ -1,0 +1,9 @@
+document: rfc-3479
+kind: wire-format
+summary: The FT Protection TLV (type 0x0203, U=0, F=0, length=4) carries a 32-bit FT Sequence Number. The initial value on a new session is 0x00000001, incrementing by one per FT message, wrapping from 0xFFFFFFFF to 0x00000001. Value 0x00000000 is reserved to mean 'no messages received' in the FT ACK TLV context.
+section: "8.3"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

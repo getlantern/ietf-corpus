@@ -1,0 +1,10 @@
+document: rfc-3478
+kind: normative-requirement
+summary: If a session is re-established and the neighbor indicates it did not preserve forwarding state (Recovery Time = 0), the LSR SHOULD immediately delete all stale label-FEC bindings received from that neighbor. If forwarding state was preserved (non-zero Recovery Time), the LSR SHOULD keep stale bindings for the lesser of the Recovery Time and the local Maximum Recovery Time.
+section: "3.3"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

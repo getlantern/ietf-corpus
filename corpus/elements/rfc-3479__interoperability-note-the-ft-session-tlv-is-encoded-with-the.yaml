@@ -1,0 +1,9 @@
+document: rfc-3479
+kind: interoperability-note
+summary: The FT Session TLV is encoded with the U-bit set (type 0x0503), so LSRs that do not recognize it silently ignore it. Since non-FT peers also omit the TLV, all sessions to non-FT LSRs naturally fall back to standard RFC 3036 behavior with no special handling required.
+section: 4.1.1
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

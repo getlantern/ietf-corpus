@@ -1,0 +1,9 @@
+document: rfc-3479
+kind: design-rationale
+summary: The LDP FT design deliberately avoids full state refresh solutions (as used in RSVP's soft-state/refresh mechanism) whether continual or limited to post-failover recovery. Instead, per-message ACKs and sequence numbers identify only lost messages that must be re-issued, minimizing convergence overhead after reconnection.
+section: "3.2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

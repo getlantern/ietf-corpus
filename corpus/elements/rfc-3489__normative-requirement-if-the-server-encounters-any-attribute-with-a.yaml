@@ -1,0 +1,10 @@
+document: rfc-3489
+kind: normative-requirement
+summary: If the server encounters any attribute with a type value <= 0x7fff that it does not understand, it MUST generate a Binding Error Response (or Shared Secret Error Response) with ERROR-CODE 420 and MUST include an UNKNOWN-ATTRIBUTES attribute listing the unrecognized mandatory attributes.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - nat
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

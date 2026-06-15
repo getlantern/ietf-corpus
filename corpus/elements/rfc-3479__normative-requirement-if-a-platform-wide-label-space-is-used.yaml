@@ -1,0 +1,10 @@
+document: rfc-3479
+kind: normative-requirement
+summary: If a platform-wide label space is used for FT Labels, a label value MUST NOT be reused until all LDP FT peers have acknowledged the label's withdrawal. An LSR that releases state before the Reconnection Timeout expires MUST NOT reuse any label that was in use on the session until the Reconnection Timeout has expired.
+section: 5.1.1.1
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

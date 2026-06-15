@@ -1,0 +1,9 @@
+document: rfc-3478
+kind: design-rationale
+summary: An alternative restart procedure (Section 3.2) is described for LSRs that have at least as many unallocated as allocated labels. During restart, these LSRs create new label bindings via normal LDP, potentially holding two bindings per FEC simultaneously (old stale + new); both share the same outgoing label and next hop, and the stale one is deleted on restart completion.
+section: "3.2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

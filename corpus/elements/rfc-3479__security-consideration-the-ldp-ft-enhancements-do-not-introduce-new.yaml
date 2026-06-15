@@ -1,0 +1,10 @@
+document: rfc-3479
+kind: security-consideration
+summary: The LDP FT enhancements do not introduce new security vulnerabilities beyond those in RFC 3036. Security relies on the same TCP-level mechanisms (e.g., MD5 authentication per RFC 2385) as base LDP. An attacker able to disrupt the TCP session can trigger the FT reconnection procedures, potentially causing brief forwarding disruption during state recovery.
+section: "10"
+topics:
+    - mpls
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

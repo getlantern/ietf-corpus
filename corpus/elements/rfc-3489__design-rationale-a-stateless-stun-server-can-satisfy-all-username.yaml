@@ -1,0 +1,10 @@
+document: rfc-3489
+kind: design-rationale
+summary: A stateless STUN server can satisfy all username/password requirements by encoding the USERNAME as a prefix, rounded-time, clientIP, and an HMAC over those fields using a private key, then computing the PASSWORD as HMAC(USERNAME, another-private-key). This embeds the source IP of the Shared Secret Request in the USERNAME so the server can construct REFLECTED-FROM without storing state.
+section: "8.2"
+topics:
+    - nat
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,10 @@
+document: rfc-3478
+kind: security-consideration
+summary: 'Continuing to use labels after session expiry creates a mis-routing risk: if the upstream LSR detects session failure after the downstream LSR has released and re-used the label, traffic may be sent to unintended destinations. This vulnerability is exacerbated by the Reconnect Timeout, which extends the period of valid-but-stale label use. To reduce this risk, the document requires labels not be re-used for at least Reconnect Timeout plus Recovery Time.'
+section: "4"
+topics:
+    - mpls
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

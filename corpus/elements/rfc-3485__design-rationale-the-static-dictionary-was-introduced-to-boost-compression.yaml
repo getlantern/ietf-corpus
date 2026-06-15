@@ -1,0 +1,8 @@
+document: rfc-3485
+kind: design-rationale
+summary: The static dictionary was introduced to boost compression from the very first SIP message. Without it, the first message is only partially compressed because there is no previously stored state to compress against; the dictionary constitutes a pre-shared SigComp state that can be referenced in the first message.
+section: "1"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

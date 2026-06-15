@@ -1,0 +1,10 @@
+document: rfc-3478
+kind: normative-requirement
+summary: After releasing a label, an LSR SHOULD NOT re-use that label for advertising a <label, FEC> binding to a graceful-restart-capable neighbor for at least the sum of the FT Reconnect Timeout plus Recovery Time as advertised by that neighbor. This prevents mis-routing from premature label reuse.
+section: "3.3"
+rfc2119_level: SHOULD NOT
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

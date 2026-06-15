@@ -1,0 +1,9 @@
+document: rfc-3478
+kind: state-machine
+summary: Upon preserving forwarding state, the restarting LSR starts an MPLS Forwarding State Holding timer and marks all forwarding state entries as 'stale'. The LSR is 'in the process of restarting' while the timer runs; it 'completes restart' when the timer expires. At expiry, all entries still marked stale SHOULD be deleted.
+section: "3.1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

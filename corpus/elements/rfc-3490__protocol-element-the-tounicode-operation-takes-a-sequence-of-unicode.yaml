@@ -1,0 +1,8 @@
+document: rfc-3490
+kind: protocol-element
+summary: The ToUnicode operation takes a sequence of Unicode code points for one label and returns a Unicode sequence. If the input is an ACE label, it decodes the Punycode portion after removing the ACE prefix, applies ToASCII to the result, and verifies it matches the saved ACE label. ToUnicode never fails; if any step fails, the original input is returned unchanged.
+section: "4.2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,10 @@
+document: rfc-3478
+kind: security-consideration
+summary: An intruder impersonating an LDP peer can force TCP session failure and reconnect with Recovery Time set to 0, causing all previously received labels to be released. Similarly, an intruder intercepting traffic between peers can override Recovery Time to 0 in the FT Session TLV. Both attacks are countered by MD5-based or other peer authentication as outlined in the base LDP specification.
+section: "4"
+topics:
+    - mpls
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

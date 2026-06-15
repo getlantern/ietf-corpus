@@ -1,0 +1,8 @@
+document: rfc-3485
+kind: design-rationale
+summary: 'For lower-frequency headers (priority 3–5) that share a common prefix, a splitting mechanism is used: one entry holds the common substring (e.g., ''[CRLF]Proxy-'') and separate entries hold non-common suffixes (''Authenticate: '', ''Authorization: ''). This splitting is not applied to high-frequency strings (priority 1 or 2).'
+section: "2"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

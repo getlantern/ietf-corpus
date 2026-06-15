@@ -1,0 +1,10 @@
+document: rfc-3489
+kind: normative-requirement
+summary: If a client that sent a MESSAGE-INTEGRITY attribute receives a Binding Response without one, it MUST discard the response. If the computed HMAC differs from the one in the response, the client MUST discard the response and SHOULD alert the user about a possible attack.
+section: "9.4"
+rfc2119_level: MUST
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,10 @@
+document: rfc-3489
+kind: normative-requirement
+summary: Clients MUST continue to listen for Binding Responses for 10 seconds after the first response. If additional responses with different message types or different MAPPED-ADDRESSes arrive, or if more than twice as many responses as requests are received, the client MUST NOT use the MAPPED-ADDRESS from any of those responses and SHOULD alert the user.
+section: "9.4"
+rfc2119_level: MUST
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,10 @@
+document: rfc-3479
+kind: normative-requirement
+summary: The FT Protection TLV MUST NOT be used on sessions that do not support LDP FT enhancements. Its presence on such sessions SHALL be treated as a protocol error; the receiver SHOULD send a Notification with 'Unexpected TLV Session Not FT'. The FT ACK TLV similarly MUST NOT appear on non-FT sessions.
+section: "8.3"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
