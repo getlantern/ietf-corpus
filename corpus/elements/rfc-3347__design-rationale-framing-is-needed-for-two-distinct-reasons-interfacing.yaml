@@ -1,0 +1,8 @@
+document: rfc-3347
+kind: design-rationale
+summary: 'Framing is needed for two distinct reasons: interfacing needs (locating PDU boundaries in a TCP byte stream) and accelerated processing needs (direct data placement even when packets are temporarily missing). A length field in the header alone is insufficient for zero-copy; the framing mechanism must allow resynchronization when a packet is temporarily missing.'
+section: "3.3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

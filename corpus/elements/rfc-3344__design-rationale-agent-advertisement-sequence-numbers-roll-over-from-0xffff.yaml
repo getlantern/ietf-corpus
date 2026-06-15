@@ -1,0 +1,8 @@
+document: rfc-3344
+kind: design-rationale
+summary: Agent Advertisement sequence numbers roll over from 0xffff to 256 (not 0), deliberately leaving 0–255 as values only possible after a reboot. This allows mobile nodes to unambiguously distinguish an agent reboot (sequence drops into 0–255) from a normal rollover.
+section: 2.3.2
+topics:
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

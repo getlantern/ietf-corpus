@@ -1,0 +1,9 @@
+document: rfc-3369
+kind: interoperability-note
+summary: 'CMS defines eContent as an OCTET STRING while PKCS #7 defines content as ANY DEFINED BY contentType. This causes incompatibility when encapsulated content is not id-data: the message digest covers different byte ranges. Implementations MAY attempt to fall back to PKCS #7 ANY decoding for backward compatibility.'
+section: 5.2.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
