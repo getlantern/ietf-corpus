@@ -1,0 +1,10 @@
+document: rfc-3395
+kind: interoperability-note
+summary: For stateful protocols such as SNMP over UDP, a probe cannot distinguish a Response-PDU for a Get-PDU from one for a Getnext-PDU without maintaining request/response correlation state. Similarly, TCP stream reassembly may be required to identify verbs when command data spans multiple packets.
+section: "4.1"
+topics:
+    - snmp
+    - tcp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

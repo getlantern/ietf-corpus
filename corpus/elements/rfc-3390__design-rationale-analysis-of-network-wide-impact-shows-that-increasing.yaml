@@ -1,0 +1,9 @@
+document: rfc-3390
+kind: design-rationale
+summary: 'Analysis of network-wide impact shows that increasing the initial window to 4K bytes does not create a danger of congestion collapse: duplicate retransmissions are bounded (at most one duplicate segment in the absence of SACK), and the segment drop rate increase is small for uncorrelated arrivals.'
+section: "5"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,8 @@
+document: rfc-3393
+kind: design-rationale
+summary: Lost packets cause ipdv to be undefined, which prevents computing simple statistics such as the sample mean. The recommended approach is to condition the statistics on packet pairs where both packets arrive, effectively reducing the sample space; this yields valid conditional statistics while acknowledging the limitation.
+section: "4.1"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

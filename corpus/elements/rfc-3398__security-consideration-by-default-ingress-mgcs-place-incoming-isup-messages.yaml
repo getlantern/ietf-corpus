@@ -1,0 +1,10 @@
+document: rfc-3398
+kind: security-consideration
+summary: By default, ingress MGCs place incoming ISUP messages in the SIP body, which has security implications. When formulating outbound PSTN signaling from encapsulated ISUP, gateways should prefer encapsulated IAMs that carry a digital signature, and should heed the security considerations before trusting encapsulated content.
+section: 7.2.4
+topics:
+    - sip
+    - voip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

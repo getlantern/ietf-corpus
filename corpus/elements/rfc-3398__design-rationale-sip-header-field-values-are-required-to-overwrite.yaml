@@ -1,0 +1,9 @@
+document: rfc-3398
+kind: design-rationale
+summary: SIP header field values are required to overwrite encapsulated ISUP parameters during translation because SIP network services (call forwarding, redirection) may modify routing. This allows basic SIP services to take effect at the PSTN egress gateway rather than being silently overridden by stale encapsulated ISUP from the ingress.
+section: 7.2.1.1
+topics:
+    - sip
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

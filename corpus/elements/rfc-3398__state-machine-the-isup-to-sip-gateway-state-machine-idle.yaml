@@ -1,0 +1,10 @@
+document: rfc-3398
+kind: state-machine
+summary: 'The ISUP-to-SIP gateway state machine: Idle → (IAM) → Calling → (100) → Proceeding → (18x) → Alerting → (2xx) → Connected. 3xx triggers a re-INVITE to the redirected address. 4xx–6xx triggers REL to PSTN. REL received from PSTN triggers CANCEL to SIP. Timer T11 expiry sends ACM to prevent remote T7 from tearing down the call.'
+section: "8.2"
+topics:
+    - sip
+    - voip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

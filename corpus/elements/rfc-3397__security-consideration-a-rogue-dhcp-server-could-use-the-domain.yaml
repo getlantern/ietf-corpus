@@ -1,0 +1,9 @@
+document: rfc-3397
+kind: security-consideration
+summary: 'A rogue DHCP server could use the domain search option to redirect traffic: a user requesting ''myhost'' expecting ''myhost.bigco.com'' might instead reach ''myhost.roguedomain.com''. DNSSEC does not avert this attack since the rogue domain''s records may be legitimately signed, making this a more fruitful attack avenue than providing an illegitimate DNS server option.'
+section: "4"
+topics:
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

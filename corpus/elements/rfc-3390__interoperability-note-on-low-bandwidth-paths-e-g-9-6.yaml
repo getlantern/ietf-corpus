@@ -1,0 +1,9 @@
+document: rfc-3390
+kind: interoperability-note
+summary: On low-bandwidth paths (e.g., 9.6 Kbps), the small SYN/SYN-ACK packets seed the RTO estimator with a low RTT, causing the initial RTO to fire before ACKs for the first large data window return, producing spurious timeouts. A larger initial window exacerbates this existing problem.
+section: "6"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

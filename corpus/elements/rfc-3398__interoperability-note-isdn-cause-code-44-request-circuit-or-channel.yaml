@@ -1,0 +1,9 @@
+document: rfc-3398
+kind: interoperability-note
+summary: ISDN cause code 44 ('Request circuit or channel not available') is untranslatable to a SIP status code because it is an internal CIC-level signal; the originating gateway should re-send the IAM for a different CIC rather than propagating any SIP error. Mapping it to a SIP code would be inappropriate.
+section: 7.2.4.1
+topics:
+    - sip
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

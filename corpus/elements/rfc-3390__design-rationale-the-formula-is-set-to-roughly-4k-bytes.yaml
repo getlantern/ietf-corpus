@@ -1,0 +1,9 @@
+document: rfc-3390
+kind: design-rationale
+summary: 'The formula is set to roughly 4K bytes (three 1500-byte segments in the common case) as a balance: large enough to reduce RTTs for short transfers, small enough to avoid severe congestion harm. The 4380-byte middle range was chosen so that typical Ethernet-sized packets result in exactly three initial segments.'
+section: "1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

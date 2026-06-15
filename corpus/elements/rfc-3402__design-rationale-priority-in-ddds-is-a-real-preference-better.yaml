@@ -1,0 +1,8 @@
+document: rfc-3402
+kind: design-rationale
+summary: Priority in DDDS is a real preference (better/faster/cheaper delegation path), not a load-balancing mechanism. Applications needing load balancing (e.g., weighted random selection among equivalent servers) must implement that outside the DDDS algorithm, such as via DNS SRV records.
+section: "4"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

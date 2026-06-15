@@ -1,0 +1,10 @@
+document: rfc-3390
+kind: normative-requirement
+summary: 'TCP''s initial congestion window MUST NOT exceed min(4*MSS, max(2*MSS, 4380 bytes)). Equivalently: if MSS<=1095 then cwnd<=4*MSS; if 1095<MSS<2190 then cwnd<=4380; if MSS>=2190 then cwnd<=2*MSS.'
+section: "1"
+rfc2119_level: MAY
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,10 @@
+document: rfc-3389
+kind: wire-format
+summary: Each reflection coefficient is quantized uniformly using 8 bits into an index N (0..254); index 255 is reserved. The quantized value k_i is derived as k_i = 258*(N_i-127)/32768. Each index is packed into a separate byte, MSB first.
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

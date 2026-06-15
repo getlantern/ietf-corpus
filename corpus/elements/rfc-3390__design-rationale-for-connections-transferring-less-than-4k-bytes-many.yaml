@@ -1,0 +1,9 @@
+document: rfc-3390
+kind: design-rationale
+summary: For connections transferring less than 4K bytes (many SMTP and HTTP transfers), the larger initial window reduces the data transfer time to a single RTT, which is the primary practical benefit driving this change.
+section: "3"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
