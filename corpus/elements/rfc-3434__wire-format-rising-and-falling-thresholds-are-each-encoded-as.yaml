@@ -1,0 +1,8 @@
+document: rfc-3434
+kind: wire-format
+summary: 'Rising and falling thresholds are each encoded as three fields: hcAlarm{Rising|Falling}ThreshAbsValueLo (Unsigned32, lower 32 bits), hcAlarm{Rising|Falling}ThreshAbsValueHi (Unsigned32, upper 32 bits), and hcAlarm{Rising|Falling}ThresholdValStatus (HcValueStatus, sign/validity). The combined absolute value is Lo + Hi * 2^32.'
+section: "5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

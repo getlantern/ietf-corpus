@@ -1,0 +1,11 @@
+document: rfc-3428
+kind: security-consideration
+summary: To prevent replay attacks, all signed MESSAGE requests and responses MUST contain a Date header field covered by the message signature. Messages with dates more than several minutes old or in the future SHOULD be rejected with 400 (Incorrect Date or Time).
+section: "11.4"
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

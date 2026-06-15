@@ -1,0 +1,9 @@
+document: rfc-3408
+kind: design-rationale
+summary: R-mode uses acknowledgements (SN_ACKed > SN_break) to gate NHP resumption rather than the optimistic approach (sending headers for X subsequent packets) used in U/O-mode, because R-mode relies on ACKs for context synchronization and R-0 packets do not update decompressor context (unlike UO-0).
+section: "3"
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

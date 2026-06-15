@@ -1,0 +1,8 @@
+document: rfc-3434
+kind: design-rationale
+summary: 64-bit threshold values are represented as two Unsigned32 fields (Lo and Hi) plus an HcValueStatus sign indicator rather than using Counter64 directly, allowing signed threshold values and explicit indication of value unavailability. ABS(threshold) = Lo + (Hi * 2^32).
+section: 4.1.1
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

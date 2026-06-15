@@ -1,0 +1,10 @@
+document: rfc-3408
+kind: security-consideration
+summary: The security considerations of ROHC RTP (RFC 3095, section 7) apply to this document. An additional concern is a denial-of-service scenario where an intruder injects bogus CCP packets with random CRC values, causing CRC check failures at the decompressor that lead to unnecessary context invalidation, feedback messages, and refresh packets, greatly reducing ROHC efficiency.
+section: "6"
+topics:
+    - security
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

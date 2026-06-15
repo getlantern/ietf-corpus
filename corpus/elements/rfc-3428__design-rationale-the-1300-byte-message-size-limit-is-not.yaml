@@ -1,0 +1,10 @@
+document: rfc-3428
+kind: design-rationale
+summary: The 1300-byte message size limit is not based on path MTU to the next hop (as SIP does for transport decisions) because a MESSAGE client is unlikely to know the MTU for upstream devices beyond the next hop; a fixed conservative limit ensures no upstream proxy forwards large content over UDP.
+section: "8"
+topics:
+    - sip
+    - congestion
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3434
+kind: design-rationale
+summary: The HC-ALARM MIB extends RMON-1's alarmTable to support Counter64 objects because at high interface speeds (1Gbps+), 32-bit counters wrap in as little as 34 seconds, making threshold monitoring of ifHCInOctets and ifHCOutOctets impossible with the existing RMON-1 Alarm Group.
+section: "3"
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

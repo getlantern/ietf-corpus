@@ -1,0 +1,10 @@
+document: rfc-3420
+kind: design-rationale
+summary: The message/sipfrag type was created because including an entire SIP response as message/sip in a REFER notification has significant negative security implications. message/sipfrag allows the sender to select what information is exposed and to elide mandatory SIP fields not relevant to the notification, reducing message size.
+section: "4"
+topics:
+    - sip
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

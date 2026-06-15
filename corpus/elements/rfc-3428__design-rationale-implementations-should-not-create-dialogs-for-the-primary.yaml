@@ -1,0 +1,10 @@
+document: rfc-3428
+kind: design-rationale
+summary: Implementations SHOULD NOT create dialogs for the primary purpose of associating MESSAGE requests with one another, because dialog-associated MESSAGE requests must follow the same network path as other SIP requests, causing likely congestion when IM volume is high and preventing separation between IM and signaling endpoints.
+section: "2"
+topics:
+    - sip
+    - congestion
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

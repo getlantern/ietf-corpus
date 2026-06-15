@@ -1,0 +1,9 @@
+document: rfc-3433
+kind: security-consideration
+summary: The entPhySensorValue object may expose sensitive physical sensor readings (e.g., temperature, voltage, fan RPM) of a device. SNMPv1 provides no access control, so implementors are recommended to use SNMPv3 with USM (RFC 3414) and VACM (RFC 3415) to restrict access to authorized principals only.
+section: "9"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

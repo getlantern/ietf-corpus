@@ -1,0 +1,9 @@
+document: rfc-3408
+kind: state-machine
+summary: The AL transitions from NHP-sending to NHP-suspended when it determines it is unsafe to send NHPs (recording SN_break). It resumes NHP transmission only when its safety rule is satisfied and SN_ACKed > SN_break, triggered either by passive receipt of a context update or by sending an update_request.
+section: "3"
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

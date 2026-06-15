@@ -1,0 +1,11 @@
+document: rfc-3420
+kind: design-rationale
+summary: Protecting only a subset of a SIP message (rather than the whole message) avoids the complexity and potential errors of handling header fields that legitimately change in transit (e.g., Via), and allows cryptographic assertions to be constructed before the full hop-by-hop header is available.
+section: "4"
+topics:
+    - sip
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

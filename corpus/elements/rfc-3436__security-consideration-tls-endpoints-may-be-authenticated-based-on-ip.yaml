@@ -1,0 +1,11 @@
+document: rfc-3436
+kind: security-consideration
+summary: TLS endpoints may be authenticated based on IP addresses in certificates, but SCTP associations can use multiple addresses per endpoint, so TLS records may arrive from a different IP address than the originally authenticated one. No security decisions should be made based on transport-layer (IP) identity; all decisions must be based on the peer's authenticated identity from the TLS certificate.
+section: "9"
+topics:
+    - tls
+    - sctp
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
