@@ -1,0 +1,10 @@
+document: rfc-3856
+kind: security-consideration
+summary: 'Presence is susceptible to amplified DoS attacks: a single SUBSCRIBE to a dynamic source could generate an unending notification stream directed at a target via a forged Contact address. RFC 3265 mitigates this by removing subscriptions for unacknowledged or unwanted NOTIFYs. Authorization policy further mitigates by rejecting subscriptions from unknown watchers.'
+section: "9.5"
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

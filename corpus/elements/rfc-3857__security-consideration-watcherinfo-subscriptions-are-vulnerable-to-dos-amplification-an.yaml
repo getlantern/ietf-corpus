@@ -1,0 +1,10 @@
+document: rfc-3857
+kind: security-consideration
+summary: 'Watcherinfo subscriptions are vulnerable to DoS amplification: an attacker generating N unauthenticated subscriptions to a popular resource causes up to N^2 data to be sent to the resource owner''s watcherinfo subscriber, since each of N NOTIFY messages can report on up to N watchers. Servers MUST NOT create subscription state for unauthenticated SUBSCRIBE requests and MUST NOT generate watcherinfo notifications for them.'
+section: "6.1"
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

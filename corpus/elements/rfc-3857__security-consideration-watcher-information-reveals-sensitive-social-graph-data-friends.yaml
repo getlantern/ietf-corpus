@@ -1,0 +1,12 @@
+document: rfc-3857
+kind: security-consideration
+summary: Watcher information reveals sensitive social-graph data (friends, family, business relations). To prevent eavesdropping, watcherinfo notifiers MUST support TLS and sips as if they were a proxy (per RFC 3261 Section 26.3.1), and subscribers MAY use the sips URI scheme. SIP S/MIME encryption MAY be used end-to-end for SUBSCRIBE and NOTIFY.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+    - privacy
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

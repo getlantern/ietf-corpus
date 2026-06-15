@@ -1,0 +1,9 @@
+document: rfc-3857
+kind: state-machine
+summary: 'The subscription FSM has five states: init (transient entry), pending (awaiting authorization), active (notifications flowing), waiting (expired pending subscription retained for later authorization), and terminated (destroyed). Triggers include: subscribe+policy=accept→active, subscribe+no-policy→pending, subscribe+policy=reject→terminated, approved→active, timeout→waiting (from pending), giveup→terminated, noresource/rejected/deactivated/probation→terminated.'
+section: 4.7.1
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

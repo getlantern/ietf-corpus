@@ -1,0 +1,9 @@
+document: rfc-3857
+kind: design-rationale
+summary: State agents are the preferred solution to the distributed-server problem for watcher information. Each state agent maintains complete watcherinfo state for a set of resources; incoming watcherinfo subscriptions are routed to the appropriate agent, resulting in a single dialog and eliminating the need for subscriber-side aggregation across multiple dialogs.
+section: "4.11"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

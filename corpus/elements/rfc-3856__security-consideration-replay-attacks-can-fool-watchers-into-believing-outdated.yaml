@@ -1,0 +1,11 @@
+document: rfc-3856
+kind: security-consideration
+summary: Replay attacks can fool watchers into believing outdated presence state. To prevent this, when S/MIME signatures are used, the presence document in NOTIFY MUST contain a timestamp. Tuples whose timestamp is older than the most recently received presence document SHOULD be considered stale and discarded.
+section: "9.4"
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

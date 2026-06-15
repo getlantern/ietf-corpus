@@ -1,0 +1,9 @@
+document: rfc-3862
+kind: security-consideration
+summary: Because Message/CPIM messages use UTF-8 (binary), they must be tunneled intact across non-8-bit-clean transports — changing data encoding is not an option. MIME base64 content-transfer-encoding may be applied to the whole Message/CPIM object to meet this requirement without data loss.
+section: "9"
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

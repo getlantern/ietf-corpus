@@ -1,0 +1,8 @@
+document: rfc-3860
+kind: protocol-element
+summary: MaxForwards is a hop counter used to detect routing loops through CPIM gateways. Each gateway decrements the value when relaying; if a gateway receives a message with MaxForwards=0 it discards the message and invokes a failure response. An initial value over one hundred is recommended.
+section: 3.4.2
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3857
+kind: design-rationale
+summary: Forked SUBSCRIBE requests are permitted for watcher information to accommodate deployments where subscription state is distributed across multiple servers (e.g., for load balancing). Each server independently accepts the watcherinfo subscription, and the subscriber aggregates state across all resulting dialogs. This allows a broad range of aggregation solutions without mandating a specific one.
+section: "4.9"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

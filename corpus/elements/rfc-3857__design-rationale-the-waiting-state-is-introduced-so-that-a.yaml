@@ -1,0 +1,9 @@
+document: rfc-3857
+kind: design-rationale
+summary: The waiting state is introduced so that a resource owner can log in at any time and discover subscriptions that arrived and expired while they were offline, enabling a deferred authorization decision. Without it, pending subscriptions that expired would be silently discarded, forcing repeated re-subscription with no record.
+section: 4.7.1
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
