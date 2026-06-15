@@ -1,0 +1,9 @@
+document: rfc-3813
+kind: design-rationale
+summary: MplsIndexType is defined as an OCTET STRING (1..24) rather than an integer to accommodate both write-access systems (where it is treated as a simple multi-digit integer) and read-only systems (where it may encode implementation-specific information such as interface index, physical card, or application ID). The value 0x00 is reserved as a sentinel for special cases.
+section: "10"
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

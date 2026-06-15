@@ -1,0 +1,10 @@
+document: rfc-3813
+kind: normative-requirement
+summary: If mplsInSegmentLabelPtr is zeroDotZero, then mplsInSegmentLabel MUST contain the incoming label. If the label cannot fit in mplsInSegmentLabel, mplsInSegmentLabelPtr MUST point to the first accessible column of an external extension table; in all other cases mplsInSegmentLabelPtr MUST be set to zeroDotZero.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

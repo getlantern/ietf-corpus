@@ -1,0 +1,9 @@
+document: rfc-3810
+kind: wire-format
+summary: 'The QQIC (Querier''s Query Interval Code) field uses floating-point encoding for values >= 128: the 8-bit field is split into a 1-bit flag, 3-bit exponent, and 4-bit mantissa, yielding QQI = (mant | 0x10) << (exp+3) seconds. Values below 128 are used directly in seconds.'
+section: 5.1.9
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

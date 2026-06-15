@@ -1,0 +1,8 @@
+document: rfc-3812
+kind: design-rationale
+summary: mplsTunnelTable does not directly define the in-segments and out-segments of a tunnel; instead it uses a RowPointer (mplsTunnelXCPointer) into the mplsXCTable defined in RFC 3813. This separates TE-level tunnel configuration from the lower-level label binding and cross-connect management.
+section: "6.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

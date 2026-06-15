@@ -1,0 +1,9 @@
+document: rfc-3810
+kind: design-rationale
+summary: A router in EXCLUDE mode maintains a Requested List (tracking INCLUDE-mode listener interests) in addition to the Exclude List, enabling a seamless transition to INCLUDE mode when all EXCLUDE-mode listeners depart. Without the Requested List, the transition would interrupt traffic to nodes that had been using INCLUDE-mode source filtering.
+section: "2.3"
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

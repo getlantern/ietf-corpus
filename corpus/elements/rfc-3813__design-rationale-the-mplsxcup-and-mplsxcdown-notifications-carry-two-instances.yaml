@@ -1,0 +1,9 @@
+document: rfc-3813
+kind: design-rationale
+summary: The mplsXCUp and mplsXCDown notifications carry two instances of mplsXCOperStatus representing the start and end of a contiguous range of affected cross-connect indexes. This range-encoding allows a single notification to cover bulk state changes (e.g., a link failure affecting many LSPs) rather than generating one notification per cross-connect entry.
+section: "10"
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

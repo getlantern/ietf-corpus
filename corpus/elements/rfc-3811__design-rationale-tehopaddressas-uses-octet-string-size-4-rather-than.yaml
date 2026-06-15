@@ -1,0 +1,9 @@
+document: rfc-3811
+kind: design-rationale
+summary: TeHopAddressAS uses OCTET STRING (SIZE (4)) rather than Unsigned32 (as used by InetAutonomousSystemsNumber in RFC 3291) to represent AS numbers, allowing both 2-octet and 4-octet AS numbers to be carried in the same field with a consistent network-byte-order encoding.
+section: "3"
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

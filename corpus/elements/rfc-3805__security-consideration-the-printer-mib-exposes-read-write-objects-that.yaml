@@ -1,0 +1,9 @@
+document: rfc-3805
+kind: security-consideration
+summary: The Printer MIB exposes read-write objects that directly affect device behavior, including prtGeneralReset (power cycle, factory defaults), channel enable/disable controls, and media configuration. Implementations must apply SNMPv3 access control (RFC 3410) to prevent unauthorized modification; unauthenticated or unencrypted SNMP access to these objects creates denial-of-service and configuration-tampering risks.
+section: "9"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

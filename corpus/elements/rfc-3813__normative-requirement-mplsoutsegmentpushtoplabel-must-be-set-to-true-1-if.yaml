@@ -1,0 +1,10 @@
+document: rfc-3813
+kind: normative-requirement
+summary: mplsOutSegmentPushTopLabel MUST be set to true(1) if the outgoing interface does not support pop-and-go and no label stack remains (e.g., ATM interfaces or tunnel origination). The LSR MUST ensure that mplsOutSegmentPushTopLabel is not false when the cross-connect entry referencing the out-segment has a non-zero mplsXCLabelStackIndex.
+section: "5.5"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

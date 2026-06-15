@@ -1,0 +1,10 @@
+document: rfc-3813
+kind: normative-requirement
+summary: When a row in mplsInSegmentTable, mplsOutSegmentTable, or mplsXCTable has RowStatus active(1), no objects in that row can be modified except RowStatus and StorageType (and mplsXCLspId for the XC table). This prevents reconfiguration of active forwarding entries via SNMP without first taking the row out of service.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

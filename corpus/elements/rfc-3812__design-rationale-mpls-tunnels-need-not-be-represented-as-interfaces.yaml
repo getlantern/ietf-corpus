@@ -1,0 +1,8 @@
+document: rfc-3812
+kind: design-rationale
+summary: MPLS tunnels need not be represented as interfaces; mplsTunnelIsIf is a TruthValue that defaults to false. This avoids mandating ifTable overhead for all tunnels while enabling full interface-based management (counters, admin/oper status via ifTable) for those where it is useful.
+section: "4"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

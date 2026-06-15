@@ -1,0 +1,10 @@
+document: rfc-3813
+kind: security-consideration
+summary: Several objects in MPLS-LSR-STD-MIB have MAX-ACCESS read-create, allowing SNMP write operations that can create, modify, or delete LSP forwarding entries. Unauthorized write access could reconfigure or disrupt active label-switched paths. Implementors should use SNMPv3 with authentication and privacy to protect management traffic and restrict write access to authorized principals.
+section: "11"
+topics:
+    - mpls
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

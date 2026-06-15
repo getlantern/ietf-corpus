@@ -1,0 +1,9 @@
+document: rfc-3810
+kind: protocol-element
+summary: 'Per-interface multicast listening state is derived from per-socket state: if any socket for a (interface, multicast address) pair is in EXCLUDE mode, the interface record is EXCLUDE with the intersection of all EXCLUDE source lists minus sources in any INCLUDE socket. If all sockets are INCLUDE, the interface record is INCLUDE with the union of all source lists.'
+section: "4.2"
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

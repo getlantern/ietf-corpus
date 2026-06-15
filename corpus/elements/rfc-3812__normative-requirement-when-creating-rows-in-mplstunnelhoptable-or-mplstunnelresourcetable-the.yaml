@@ -1,0 +1,10 @@
+document: rfc-3812
+kind: normative-requirement
+summary: When creating rows in mplsTunnelHopTable or mplsTunnelResourceTable, the agent MUST verify that the proposed index value is still unused at SET time. If a concurrent manager already claimed it, the SET MUST fail and the manager must re-read the NextFree scalar to obtain a new value.
+section: "11"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

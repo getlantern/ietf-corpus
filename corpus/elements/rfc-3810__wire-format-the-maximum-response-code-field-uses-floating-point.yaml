@@ -1,0 +1,9 @@
+document: rfc-3810
+kind: wire-format
+summary: 'The Maximum Response Code field uses floating-point encoding for values >= 32768: the 16-bit field is split into a 1-bit flag, 3-bit exponent, and 12-bit mantissa, yielding Maximum Response Delay = (mant | 0x1000) << (exp+3) milliseconds. Values below 32768 are used directly in milliseconds.'
+section: 5.1.3
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

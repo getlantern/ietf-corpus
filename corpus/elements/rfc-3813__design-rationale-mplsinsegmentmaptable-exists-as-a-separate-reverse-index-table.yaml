@@ -1,0 +1,9 @@
+document: rfc-3813
+kind: design-rationale
+summary: 'mplsInSegmentMapTable exists as a separate reverse-index table to enable an alternative lookup path from (interface, label) to the segment''s opaque index. Its primary use is hop-by-hop LSP tracing: a manager retrieves the outgoing label/interface at one LSR and then queries this table at the next-hop LSR using those values to continue the trace.'
+section: "5.9"
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

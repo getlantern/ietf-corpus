@@ -1,0 +1,9 @@
+document: rfc-3810
+kind: design-rationale
+summary: The distinction between Current State Reports and State Change Reports is required so routers only trigger the fast-leave mechanism (sending Multicast Address Specific Queries) in response to State Change Reports. Treating all reports as potential state changes would cause fast leave to fail when a State Change Report is lost and only the subsequent Current State Report is received.
+section: "2.2"
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

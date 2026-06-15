@@ -1,0 +1,9 @@
+document: rfc-3813
+kind: design-rationale
+summary: mplsOutSegmentTable uses a single arbitrary index rather than being indexed by in-segment and out-segment pairs because equal-cost multi-path may require two out-segments with identical outgoing labels assigned to the same cross-connect entry (going to different neighboring LSRs), making a composite index non-unique.
+section: "5.5"
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

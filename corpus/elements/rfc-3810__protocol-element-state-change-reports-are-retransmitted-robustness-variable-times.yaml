@@ -1,0 +1,9 @@
+document: rfc-3810
+kind: protocol-element
+summary: State Change Reports are retransmitted [Robustness Variable] times total to ensure delivery despite packet loss. If further state changes occur before all retransmissions complete, a new merged State Change Report is immediately transmitted and supersedes pending retransmissions. The default Robustness Variable is 2, making MLD robust to [Robustness Variable]-1 packet losses.
+section: "2.2"
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

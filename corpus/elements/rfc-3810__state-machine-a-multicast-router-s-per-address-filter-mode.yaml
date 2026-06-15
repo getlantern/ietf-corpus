@@ -1,0 +1,9 @@
+document: rfc-3810
+kind: state-machine
+summary: A multicast router's per-address filter mode transitions between INCLUDE(A) and EXCLUDE(X,Y) states. INCLUDE→EXCLUDE triggers when the first EXCLUDE-mode listener report is received (Filter Timer set). EXCLUDE→INCLUDE triggers when the Filter Timer expires (no more EXCLUDE-mode listeners), whereupon the Requested List X becomes the new Include List and Exclude List Y is deleted.
+section: "2.3"
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
