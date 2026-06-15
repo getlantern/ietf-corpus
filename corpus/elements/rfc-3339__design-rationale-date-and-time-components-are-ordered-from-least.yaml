@@ -1,6 +1,8 @@
 document: rfc-3339
 kind: design-rationale
-summary: Date and time components are ordered from least precise to most precise (year to second) so that timestamps can be sorted as strings using strcmp(), provided all timestamps share the same time zone string and fractional-second digit count.
+summary: Date and time components are ordered from least precise (year) to most precise (second/fraction) so that timestamps can be lexicographically sorted using strcmp() when they share the same timezone string and fractional precision.
 section: "5.1"
+topics:
+    - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-05-24"
+extracted_at: "2026-06-15"
