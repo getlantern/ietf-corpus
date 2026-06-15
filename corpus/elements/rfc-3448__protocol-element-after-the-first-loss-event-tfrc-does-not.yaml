@@ -1,0 +1,8 @@
+document: rfc-3448
+kind: protocol-element
+summary: After the first loss event, TFRC does not use the raw packet count to the first loss as the initial loss interval. Instead, it finds the value p for which the throughput equation yields a sending rate within 5% of X_recv, and sets the initial loss interval to 1/p, because the sending rate changes rapidly during slow-start.
+section: 6.3.1
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

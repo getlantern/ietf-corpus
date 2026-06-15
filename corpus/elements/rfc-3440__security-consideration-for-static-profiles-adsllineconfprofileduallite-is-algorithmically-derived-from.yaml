@@ -1,0 +1,9 @@
+document: rfc-3440
+kind: security-consideration
+summary: For static profiles, adslLineConfProfileDualLite is algorithmically derived from ifIndex and not guaranteed to be stable across system reboots. Implementors must ensure that profile object values associated with these indices are maintained across reboots, consistent with adslLineConfProfile handling in RFC 2662.
+section: "9"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

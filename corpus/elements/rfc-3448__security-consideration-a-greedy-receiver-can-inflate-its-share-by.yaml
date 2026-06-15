@@ -1,0 +1,9 @@
+document: rfc-3448
+kind: security-consideration
+summary: A greedy receiver can inflate its share by falsely claiming receipt of lost (congested) packets, causing the sender to compute an artificially low loss rate and increase throughput unfairly. Defenses typically involve a nonce the receiver must echo back to the sender to prove actual receipt; details are transport-protocol-specific.
+section: "9"
+topics:
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

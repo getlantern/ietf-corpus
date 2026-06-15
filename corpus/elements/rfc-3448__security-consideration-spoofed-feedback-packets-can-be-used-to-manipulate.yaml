@@ -1,0 +1,9 @@
+document: rfc-3448
+kind: security-consideration
+summary: Spoofed feedback packets can be used to manipulate the sender's rate, creating a denial-of-service risk. Any transport protocol using TFRC MUST ensure feedback is accepted only from the legitimate receiver of the data; the mechanism depends on the transport protocol's authentication design.
+section: "9"
+topics:
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

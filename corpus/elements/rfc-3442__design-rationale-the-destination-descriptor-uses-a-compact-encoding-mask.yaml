@@ -1,0 +1,8 @@
+document: rfc-3442
+kind: design-rationale
+summary: The destination descriptor uses a compact encoding (mask width + significant octets only, not always 4 octets) to minimize option space, which is important because DHCP option space is constrained and a full routing table could otherwise overflow the maximum DHCP message size.
+section: Classless Route Option Format
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

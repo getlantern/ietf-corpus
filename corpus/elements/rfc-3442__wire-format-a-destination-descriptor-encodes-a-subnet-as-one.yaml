@@ -1,0 +1,8 @@
+document: rfc-3442
+kind: wire-format
+summary: A destination descriptor encodes a subnet as one octet giving the subnet mask width (number of 1-bits), followed by only the significant octets of the subnet number (0 octets for /0, 1 for /1-/8, 2 for /9-/16, 3 for /17-/24, 4 for /25-/32). The router address is always 4 octets. Multiple routes are concatenated within a single option value.
+section: Classless Route Option Format
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3445
+kind: design-rationale
+summary: Storing DNSSEC keys and application keys (Email, IPSEC, TLS) in the same KEY RR sub-type is a mistake because they differ in purpose, management, authentication rules, nameserver handling, resolver processing, and fault consequences. A resolver cannot request a specific sub-type directly and must retrieve the entire KEY RR set, and DNSSEC signatures apply to the entire set regardless of sub-type.
+section: "2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

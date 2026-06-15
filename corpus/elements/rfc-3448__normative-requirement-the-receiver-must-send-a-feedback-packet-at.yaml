@@ -1,0 +1,9 @@
+document: rfc-3448
+kind: normative-requirement
+summary: The receiver MUST send a feedback packet at least once per RTT. If the sender transmits less than one packet per RTT, the receiver MUST send a feedback packet for every data packet received. A feedback packet MUST also be sent immediately whenever a new loss event is detected or an out-of-order packet removes a loss event.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

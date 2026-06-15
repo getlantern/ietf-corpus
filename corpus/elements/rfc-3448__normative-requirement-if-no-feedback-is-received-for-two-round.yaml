@@ -1,0 +1,9 @@
+document: rfc-3448
+kind: normative-requirement
+summary: If no feedback is received for two round-trip times, the nofeedback timer fires and the sender SHOULD halve its sending rate by modifying X_recv. If no RTT sample exists yet, the sender cuts X directly by half down to s/t_mbi minimum (one packet per 64 seconds).
+section: "4.4"
+rfc2119_level: SHOULD
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3448
+kind: protocol-element
+summary: Multiple lost or marked packets within one RTT are grouped into a single loss event. A new loss is part of an existing event if T_new <= T_old + R (using interpolated nominal arrival times). Lost packet arrival time is interpolated linearly between surrounding received packets' timestamps.
+section: "5.2"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

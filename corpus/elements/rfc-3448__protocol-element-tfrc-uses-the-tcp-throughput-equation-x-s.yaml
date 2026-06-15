@@ -1,0 +1,9 @@
+document: rfc-3448
+kind: protocol-element
+summary: TFRC uses the TCP throughput equation X = s / (R*sqrt(2*b*p/3) + t_RTO*(3*sqrt(3*b*p/8)*p*(1+32*p^2))), where X is transmit rate in bytes/second, s is packet size, R is RTT, p is loss event rate, t_RTO is retransmission timeout, and b is packets acknowledged per ACK. Simplified with t_RTO=4*R and b=1.
+section: "3.1"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

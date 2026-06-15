@@ -1,0 +1,10 @@
+document: rfc-3448
+kind: design-rationale
+summary: TFRC trades slower response to bandwidth changes for smoother throughput compared to TCP. It is suitable for telephony and streaming media where a relatively smooth sending rate matters, but TCP or AIMD should be preferred for bulk transfer because TFRC avoids TCP's halving of sending rate on a single drop.
+section: "1"
+topics:
+    - congestion
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

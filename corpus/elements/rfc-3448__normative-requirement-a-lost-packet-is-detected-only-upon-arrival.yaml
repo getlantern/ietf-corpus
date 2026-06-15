@@ -1,0 +1,11 @@
+document: rfc-3448
+kind: normative-requirement
+summary: A lost packet is detected only upon arrival of at least three packets with higher sequence numbers than the missing packet, matching TCP's reordering robustness threshold. An ECN-marked packet, however, is treated as a congestion event immediately on arrival.
+section: "5.1"
+rfc2119_level: REQUIRED
+topics:
+    - congestion
+    - ecn
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

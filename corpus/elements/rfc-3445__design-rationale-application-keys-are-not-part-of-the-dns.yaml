@@ -1,0 +1,9 @@
+document: rfc-3445
+kind: design-rationale
+summary: Application keys are not part of the DNS chain of trust and are never configured as trusted keys in the DNS hierarchy, whereas DNSSEC zone keys must be exchanged with parent zones and authenticated via chain of trust. Mixing them forces resolvers to handle application keys as if they were DNS infrastructure, creating unnecessary complexity.
+section: "2.1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,8 @@
+document: rfc-3440
+kind: state-machine
+summary: 'G.Lite power state machine has three states: L0 (power on), L1 (power on but reduced), and L3 (power off). Transitions are not operator-configurable. L3 maps to ifOperStatus down(2); L0 and L1 map to ifOperStatus up(1). The adslLineGlitePowerState object reports none(1) when the interface is not operating in a G.992.2 mode.'
+section: 4.2.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

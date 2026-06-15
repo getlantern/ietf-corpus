@@ -1,0 +1,9 @@
+document: rfc-3445
+kind: security-consideration
+summary: Prior to this document, a compromised application key stored in the KEY RR could be used as a false DNS zone key to generate false SIG records. Resolvers that did not carefully check the KEY sub-type would accept these false signatures and incorrectly authenticate DNS data. Restricting the KEY RR to DNSSEC use eliminates this vulnerability entirely.
+section: "8"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

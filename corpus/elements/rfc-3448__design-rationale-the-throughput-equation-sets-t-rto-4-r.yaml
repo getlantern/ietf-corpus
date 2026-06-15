@@ -1,0 +1,9 @@
+document: rfc-3448
+kind: design-rationale
+summary: The throughput equation sets t_RTO=4*R as a simplification. A more accurate calculation is possible but experiments show reasonable fairness with existing TCP implementations. Setting b=1 is recommended because many TCP implementations do not use delayed acknowledgements.
+section: "3.1"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3448
+kind: protocol-element
+summary: Packet scheduling computes inter-packet interval t_ipi = s/X_inst. To handle coarse OS scheduling granularity, each packet's nominal send time is calculated from the previous packet's nominal time (not actual time), and delta=min(t_ipi/2, t_gran/2) allows early transmission. t_gran defaults to 10ms.
+section: "4.6"
+topics:
+    - congestion
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

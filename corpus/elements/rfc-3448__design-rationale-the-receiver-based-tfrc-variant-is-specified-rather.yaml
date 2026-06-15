@@ -1,0 +1,9 @@
+document: rfc-3448
+kind: design-rationale
+summary: The receiver-based TFRC variant is specified (rather than sender-based) because it is robust to feedback packet loss without requiring reliable delivery, better offloads work from servers to clients, and is a better building block for multicast congestion control. Sender-based variants would have tighter transport protocol requirements.
+section: "7"
+topics:
+    - congestion
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

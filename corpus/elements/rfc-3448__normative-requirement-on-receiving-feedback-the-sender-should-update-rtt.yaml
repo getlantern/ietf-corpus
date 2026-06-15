@@ -1,0 +1,10 @@
+document: rfc-3448
+kind: normative-requirement
+summary: 'On receiving feedback, the sender SHOULD update RTT using R = q*R + (1-q)*R_sample with recommended q=0.9, set t_RTO=4*R, and update the sending rate: if p>0, X = max(min(X_calc, 2*X_recv), s/t_mbi); if p==0 (slow-start), double X at most once per RTT up to 2*X_recv.'
+section: "4.3"
+rfc2119_level: SHOULD
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
