@@ -1,0 +1,8 @@
+document: rfc-3703
+kind: design-rationale
+summary: DIT structure rules and content rules were deliberately excluded from the PCLS, even though they add useful schema constraints, because X.500 requires a structural class with no superior structure rule to be a subschema administrative point (undesirable for policy), most LDAP servers do not support inheritance of these rules, and augmentation is required when auxiliary classes are subclassed.
+section: "4.2"
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

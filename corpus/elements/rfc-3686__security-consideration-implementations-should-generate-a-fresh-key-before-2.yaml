@@ -1,0 +1,11 @@
+document: rfc-3686
+kind: security-consideration
+summary: Implementations SHOULD generate a fresh key before 2^64 blocks are encrypted with the same key, because AES ciphertext becomes distinguishable from random values after 2^64 blocks regardless of mode. ESP with Extended Sequence Numbers allows up to 2^64 packets, making this a real concern.
+section: "7"
+rfc2119_level: SHOULD
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

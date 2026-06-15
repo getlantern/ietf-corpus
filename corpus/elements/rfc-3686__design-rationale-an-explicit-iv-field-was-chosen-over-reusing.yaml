@@ -1,0 +1,9 @@
+document: rfc-3686
+kind: design-rationale
+summary: An explicit IV field was chosen over reusing the ESP sequence number field. The ESP extended sequence number (64 bits) was considered as an implicit IV, but an explicit IV was preferred because it decouples per-packet counter block assignment from sequence number semantics, allows any unique-value generation technique (adders, LFSRs), and accommodates FIPS 140 assurance boundary requirements where sequence number assignment may occur outside the boundary.
+section: "8"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3686
+kind: design-rationale
+summary: AES-CTR overhead (64-bit explicit IV, no padding requirement) is approximately one-third of AES-CBC overhead, which requires a full 128-bit block IV plus average half-block padding. The constant overhead per packet is an additional advantage.
+section: "8"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

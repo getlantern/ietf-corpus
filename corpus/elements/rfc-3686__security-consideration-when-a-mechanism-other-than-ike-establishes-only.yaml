@@ -1,0 +1,11 @@
+document: rfc-3686
+kind: security-consideration
+summary: When a mechanism other than IKE establishes only a single key for both peers, there is a high probability of IV collision. ESP implementations that permit the same key for both traffic directions with the same peer MUST ensure the two peers assign different Nonce values.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

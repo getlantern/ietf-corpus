@@ -1,0 +1,8 @@
+document: rfc-3687
+kind: design-rationale
+summary: Rather than defining separate string matching rules for each ASN.1 restricted character string type, the existing caseIgnoreMatch and caseExactMatch families are extended to apply to all restricted character string types and ChoiceOfStrings types. This avoids a proliferation of per-type rules while maintaining a single DirectoryString assertion syntax.
+section: 3.2.1.1
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,10 @@
+document: rfc-3686
+kind: security-consideration
+summary: 'Key stream reuse is catastrophic: if the same counter block values are used for two packets under the same key, XORing the two ciphertexts yields the XOR of the plaintexts, which is sufficient to separate them. Stream ciphers must never be used with static keys.'
+section: "7"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

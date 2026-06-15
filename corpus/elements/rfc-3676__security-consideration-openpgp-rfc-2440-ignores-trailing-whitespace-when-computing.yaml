@@ -1,0 +1,10 @@
+document: rfc-3676
+kind: security-consideration
+summary: OpenPGP (RFC 2440) ignores trailing whitespace when computing cleartext signatures, making it possible to silently add a Format=Flowed header and arbitrary trailing spaces to a signed Format=Fixed message in transit without detection. This would alter rendering for Format=Flowed-aware clients. Use of OpenPGP with Format=Flowed is strongly discouraged; OpenPGP/MIME is recommended instead.
+section: "4.6"
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

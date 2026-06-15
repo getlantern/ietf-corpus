@@ -1,0 +1,10 @@
+document: rfc-3697
+kind: security-consideration
+summary: IPsec requires that the inner header's Flow Label not be changed by tunnel decapsulation processing, preventing label manipulation from being used to launch theft or denial-of-service attacks across an IPsec tunnel endpoint. When the tunnel uses a sufficiently strong cryptographic integrity check, the egress node can trust the inner Flow Label matches its value at ingress.
+section: "5.2"
+topics:
+    - ip
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

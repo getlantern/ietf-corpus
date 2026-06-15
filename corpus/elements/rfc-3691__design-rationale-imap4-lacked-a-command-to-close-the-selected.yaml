@@ -1,0 +1,8 @@
+document: rfc-3691
+kind: design-rationale
+summary: IMAP4 lacked a command to close the selected mailbox without expunging it; the existing workarounds (SELECT with a nonexistent mailbox or EXAMINE to reselect) were functional but inelegant. UNSELECT was introduced to provide a clean solution for clients that need to release resources without triggering message deletion.
+section: "1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

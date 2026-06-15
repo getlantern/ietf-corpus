@@ -1,0 +1,8 @@
+document: rfc-3687
+kind: design-rationale
+summary: ComponentFilter uses SEQUENCE OF (not SET OF) for the 'and' and 'or' alternatives, but ordering is explicitly stated to be not significant. This choice follows X.500 convention while noting the semantic irrelevance of order, avoiding the need for a SET OF type that would complicate encoding.
+section: "4"
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

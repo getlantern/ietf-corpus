@@ -1,0 +1,9 @@
+document: rfc-3680
+kind: protocol-element
+summary: Subscribers maintain a per-registration table keyed by contact "id". On receiving a full-state document, all tables are flushed and repopulated. On partial state, existing tables are updated with changed contacts; if the version gap is more than 1, the subscriber SHOULD send a refresh request for full state.
+section: "5.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

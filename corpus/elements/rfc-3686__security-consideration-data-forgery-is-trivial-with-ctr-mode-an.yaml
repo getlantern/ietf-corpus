@@ -1,0 +1,10 @@
+document: rfc-3686
+kind: security-consideration
+summary: Data forgery is trivial with CTR mode. An attacker who knows the plaintext can XOR any chosen sequence with the ciphertext, and decryption will yield exactly the attacker's intended plaintext. AES-CTR MUST always be used with ESP authentication.
+section: "7"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

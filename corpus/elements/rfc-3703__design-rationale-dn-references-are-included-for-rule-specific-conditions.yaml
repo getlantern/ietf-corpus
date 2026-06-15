@@ -1,0 +1,8 @@
+document: rfc-3703
+kind: design-rationale
+summary: DN references are included for rule-specific conditions even though a DIT subtree search below the rule would find them, because relying solely on subtree search risks missing conditions that belong there or finding ones inadvertently placed or not yet removed — though this comes at the cost of thwarting access control inheritance and referential integrity.
+section: "4.4"
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
