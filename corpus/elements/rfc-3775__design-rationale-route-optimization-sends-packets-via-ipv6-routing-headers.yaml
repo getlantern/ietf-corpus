@@ -1,0 +1,10 @@
+document: rfc-3775
+kind: design-rationale
+summary: Route optimization sends packets via IPv6 routing headers rather than IP encapsulation (as in Mobile IPv4), reducing per-packet overhead and eliminating the need to manage tunnel soft state. This was feasible because IPv6 integrates routing headers natively and defines a new type 2 variant that avoids generic routing header security vulnerabilities.
+section: "2"
+topics:
+    - ip
+    - mobility
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

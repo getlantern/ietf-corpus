@@ -1,0 +1,10 @@
+document: rfc-3788
+kind: state-machine
+summary: 'TLS upgrade state machine: (1) ASP sends STARTTLS on stream 0, starts T_TLS, sends no other messages. (2a) If peer sends ERROR (unsupported), SCTP association is terminated and management is notified. (2b) If peer sends STARTTLS_ACK, client starts TLS. (2c) If T_TLS expires, association is terminated and failure reported.'
+section: "6"
+topics:
+    - tls
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

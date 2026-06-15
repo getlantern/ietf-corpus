@@ -1,0 +1,10 @@
+document: rfc-3782
+kind: normative-requirement
+summary: When three duplicate ACKs are received and the sender is not already in Fast Recovery, the sender MUST check whether the Cumulative Acknowledgement field covers more than the 'recover' variable before invoking Fast Retransmit. If not, the sender does not enter Fast Retransmit (Step 1B).
+section: "3"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

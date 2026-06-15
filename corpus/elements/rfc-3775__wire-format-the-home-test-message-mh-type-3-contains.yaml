@@ -1,0 +1,11 @@
+document: rfc-3775
+kind: wire-format
+summary: The Home Test message (MH Type 3) contains a 16-bit Home Nonce Index, a 64-bit Home Init Cookie (echoed), and a 64-bit Home Keygen Token (= First(64, HMAC_SHA1(Kcn, home_address|nonce|0x00))). The Care-of Test message (MH Type 4) mirrors this with Care-of Nonce Index, Care-of Init Cookie, and Care-of Keygen Token (using 0x01 suffix).
+section: 6.1.5
+topics:
+    - ip
+    - mobility
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

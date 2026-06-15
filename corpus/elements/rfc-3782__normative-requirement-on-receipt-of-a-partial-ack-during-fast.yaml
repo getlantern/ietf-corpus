@@ -1,0 +1,10 @@
+document: rfc-3782
+kind: normative-requirement
+summary: On receipt of a partial ACK during Fast Recovery, the sender retransmits the first unacknowledged segment, deflates cwnd by the amount of new data acknowledged, adds back SMSS bytes if at least SMSS of new data was acknowledged, and does NOT exit Fast Recovery (Step 5).
+section: "3"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

@@ -1,0 +1,9 @@
+document: rfc-3782
+kind: design-rationale
+summary: The Impatient variant (reset retransmit timer only after the first partial ACK) is recommended over the Slow-but-Steady variant (reset after every partial ACK) because it gives faster recovery for large congestion windows with many drops, even though the Slow-but-Steady variant can avoid unnecessary retransmissions in some scenarios.
+section: "4"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

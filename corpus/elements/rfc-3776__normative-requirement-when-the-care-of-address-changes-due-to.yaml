@@ -1,0 +1,11 @@
+document: rfc-3776
+kind: normative-requirement
+summary: When the care-of address changes due to an accepted Binding Update, the home agent MUST set the new care-of address as the destination of tunnel packets for existing security associations, as if the outer header destination address had changed; this MUST only be done based on IPsec-protected Binding Updates.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

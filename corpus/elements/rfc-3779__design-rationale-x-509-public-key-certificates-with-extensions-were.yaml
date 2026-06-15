@@ -1,0 +1,9 @@
+document: rfc-3779
+kind: design-rationale
+summary: 'X.509 public key certificates with extensions were chosen over attribute certificates (RFC 3281) because: the PKC lifetime corresponds exactly to the authorization lifetime; the certificate issuer is authoritative for the authorization information; AC chains are not recommended by RFC 3281 but are required for IP address sub-allocation hierarchies; and the critical extensions could not be placed in ACs without violating the profile.'
+section: Appendix D
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

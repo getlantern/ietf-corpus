@@ -1,0 +1,9 @@
+document: rfc-3782
+kind: design-rationale
+summary: The Careful variant requires that duplicate ACKs cover strictly more than 'recover' before invoking Fast Retransmit, rather than 'more than or equal to' (Less Careful). This avoids unnecessary Fast Retransmits in the second scenario (unnecessary retransmissions) at the cost of requiring a timeout in an ambiguous first scenario (dropped retransmission).
+section: "11"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

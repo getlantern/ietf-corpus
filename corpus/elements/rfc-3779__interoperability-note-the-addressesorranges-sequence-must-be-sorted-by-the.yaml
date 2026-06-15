@@ -1,0 +1,9 @@
+document: rfc-3779
+kind: interoperability-note
+summary: 'The addressesOrRanges SEQUENCE MUST be sorted by the binary representation of the lowest IP address concatenated with prefix length — NOT by the DER BIT STRING encoding. These orderings differ: for example, 10.32.0.0/12 (unused bits=4) sorts before 10.64.0.0/16 (unused bits=0) by address, but the DER encoding sorts them in reverse order due to the unused-bits octet.'
+section: 2.2.3.6
+topics:
+    - pkix
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

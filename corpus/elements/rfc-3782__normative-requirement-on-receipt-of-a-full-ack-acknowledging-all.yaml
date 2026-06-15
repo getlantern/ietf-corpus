@@ -1,0 +1,10 @@
+document: rfc-3782
+kind: normative-requirement
+summary: On receipt of a full ACK (acknowledging all data up to and including 'recover'), cwnd is set to either min(ssthresh, FlightSize+SMSS) or ssthresh, deflating the window, and Fast Recovery is exited (Step 5).
+section: "3"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

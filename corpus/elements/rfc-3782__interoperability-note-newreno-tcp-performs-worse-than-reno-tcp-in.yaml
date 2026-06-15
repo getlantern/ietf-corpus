@@ -1,0 +1,9 @@
+document: rfc-3782
+kind: interoperability-note
+summary: 'NewReno TCP performs worse than Reno TCP in the presence of packet reordering without loss: reordering that triggers three duplicate ACKs causes NewReno to unnecessarily retransmit an entire window of data, versus Reno''s single unnecessary retransmission. SACK TCP handles both scenarios optimally.'
+section: "10"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

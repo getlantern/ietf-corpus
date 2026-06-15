@@ -1,0 +1,9 @@
+document: rfc-3782
+kind: interoperability-note
+summary: The ACK heuristic (Step 1*) checks that cwnd > SMSS and that the difference between highest_ack and prev_highest_ack is at most 4*SMSS to infer a true loss. It can fail if several ACKs are lost, causing a jump in the cumulative ACK beyond the 4*SMSS threshold.
+section: "6.1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

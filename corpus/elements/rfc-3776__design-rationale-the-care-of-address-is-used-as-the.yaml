@@ -1,0 +1,10 @@
+document: rfc-3776
+kind: design-rationale
+summary: The care-of address is used as the outer tunnel destination (rather than home address plus routing header) to avoid a 24-byte overhead per packet; while insignificant for return routability, the overhead would be problematic for real-time payload traffic. This choice requires the home agent to update the SA destination upon each movement.
+section: "7.1"
+topics:
+    - ipsec
+    - mobility
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

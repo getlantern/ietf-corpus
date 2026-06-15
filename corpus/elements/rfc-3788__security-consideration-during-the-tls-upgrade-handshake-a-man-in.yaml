@@ -1,0 +1,9 @@
+document: rfc-3788
+kind: security-consideration
+summary: During the TLS upgrade handshake, a man-in-the-middle can perform a denial-of-service attack by injecting an ERROR message indicating the peer does not support TLS, causing the SCTP association to be terminated. This is an inherent limitation of the in-band STARTTLS upgrade approach.
+section: "6"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

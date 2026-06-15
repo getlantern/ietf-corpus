@@ -1,0 +1,10 @@
+document: rfc-3782
+kind: interoperability-note
+summary: Data receivers that delay sending acknowledgements for out-of-order segments (waiting for the delayed ACK timer) severely limit NewReno's benefit by delaying the partial ACK at the sender. Receivers SHOULD send an immediate ACK for out-of-order segments, per RFC 2581.
+section: "7"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

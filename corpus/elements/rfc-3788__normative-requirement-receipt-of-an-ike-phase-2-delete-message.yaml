@@ -1,0 +1,11 @@
+document: rfc-3788
+kind: normative-requirement
+summary: Receipt of an IKE Phase 2 delete message SHOULD NOT be interpreted as a reason for tearing down a SIGTRAN session; it is preferable to leave the connection up so another IKE Phase 2 SA will be brought up if additional traffic is sent, avoiding continually cycling connections.
+section: "5"
+rfc2119_level: SHOULD NOT
+topics:
+    - ipsec
+    - security
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

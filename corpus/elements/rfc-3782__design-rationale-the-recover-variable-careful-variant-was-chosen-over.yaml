@@ -1,0 +1,9 @@
+document: rfc-3782
+kind: design-rationale
+summary: The 'recover' variable (Careful variant) was chosen over the simpler default (RFC 2582 base) because, without it, multiple Fast Retransmits can occur unnecessarily after a retransmit timeout when the sender retransmits packets already received, triggering three spurious duplicate ACKs.
+section: "6"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

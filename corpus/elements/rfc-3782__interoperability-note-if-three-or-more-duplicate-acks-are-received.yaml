@@ -1,0 +1,9 @@
+document: rfc-3782
+kind: interoperability-note
+summary: If three or more duplicate ACKs are received when the sender is not in Fast Recovery and the ACKs do not cover more than 'recover', the sender MUST NOT execute the Fast Recovery inflation steps (Steps 3 and 4), or it risks a chain of spurious timeouts. Several NewReno implementations had this bug.
+section: "8"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

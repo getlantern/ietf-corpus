@@ -1,0 +1,9 @@
+document: rfc-3782
+kind: design-rationale
+summary: Partial window deflation (deflating cwnd by the amount of new data acknowledged and adding back SMSS) was chosen over simply setting cwnd to ssthresh on each partial ACK, because it more accurately tracks the number of outstanding packets and recovers more smoothly when multiple packets are dropped.
+section: "5"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"

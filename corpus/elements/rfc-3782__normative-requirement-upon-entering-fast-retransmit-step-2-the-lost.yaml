@@ -1,0 +1,10 @@
+document: rfc-3782
+kind: normative-requirement
+summary: Upon entering Fast Retransmit (Step 2), the lost segment is retransmitted and cwnd is set to ssthresh plus 3*SMSS, artificially inflating the congestion window by the number of segments that have left the network and been buffered by the receiver.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-15"
