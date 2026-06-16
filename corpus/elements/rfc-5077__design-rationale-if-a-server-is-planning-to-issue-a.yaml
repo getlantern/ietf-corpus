@@ -1,0 +1,8 @@
+document: rfc-5077
+kind: design-rationale
+summary: If a server is planning to issue a session ticket to a client that does not present one, it SHOULD include an empty Session ID in the ServerHello to avoid the client caching a session by Session ID that the server will not maintain, keeping stateful and stateless resumption cleanly separated.
+section: "3.4"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

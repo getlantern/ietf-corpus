@@ -1,0 +1,9 @@
+document: rfc-5077
+kind: wire-format
+summary: 'The recommended ticket structure is: key_name (16 octets), iv (16 octets), encrypted_state (variable, up to 2^16-1 octets), mac (32 octets). The MAC covers key_name, IV, 2-octet length of encrypted_state, and encrypted_state contents using HMAC-SHA-256.'
+section: "4"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-5077
+kind: normative-requirement
+summary: When accepting a ticket where the client included a non-empty Session ID in ClientHello, the server MUST respond with the same Session ID. The server MUST NOT rely on the Session ID having a particular value when validating the ticket, and MUST NOT use the Session ID for stateful session resumption when a ticket is presented.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

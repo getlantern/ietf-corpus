@@ -1,0 +1,6 @@
+document: rfc-5066
+kind: design-rationale
+summary: ifCapStackTable is defined as read-only (unlike the writable ifStackTable) because it reflects device hardware capability, not operator configuration. The capability can be dynamic (e.g., if PMEs are on a removable module), but cannot be changed by management operations — only the actual connections in ifStackTable are writable.
+section: 3.1.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

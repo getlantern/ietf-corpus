@@ -1,0 +1,8 @@
+document: rfc-5077
+kind: interoperability-note
+summary: A server implemented per RFC 4507 receiving a ticket from an RFC 5077 client will misinterpret the first two bytes of the ticket as a length field, causing the ticket to be rejected as malformed or due to failed decryption. The two encodings are not interoperable.
+section: Appendix A
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
