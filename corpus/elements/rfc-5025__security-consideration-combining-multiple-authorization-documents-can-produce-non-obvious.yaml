@@ -1,0 +1,10 @@
+document: rfc-5025
+kind: security-consideration
+summary: Combining multiple authorization documents can produce non-obvious results. For example, a rule granting all example.com users access combined with a rule blocking joe@example.com will still grant joe@example.com access, because all permissions are positive grants and the maximum value wins.
+section: "10"
+topics:
+    - sip
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

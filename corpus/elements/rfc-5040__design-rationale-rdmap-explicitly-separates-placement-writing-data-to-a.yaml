@@ -1,0 +1,6 @@
+document: rfc-5040
+kind: design-rationale
+summary: RDMAP explicitly separates Placement (writing data to a buffer by DDP, may occur out of order) from Delivery (informing the ULP a Message is available, strictly ordered). This separation allows DDP to directly place out-of-order segments into their final destination without copy operations, while preserving ordered semantics for the application.
+section: "5.5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

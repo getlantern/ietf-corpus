@@ -1,0 +1,10 @@
+document: rfc-5035
+kind: security-consideration
+summary: When both ESSCertID and ESSCertIDv2 are included in the same message for legacy compatibility, their contents could conflict — particularly where a signer has multiple certificates with the same public key, the two attributes could specify different signing certificates. Recipients may choose to reject such messages.
+section: "7"
+topics:
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

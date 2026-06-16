@@ -1,0 +1,8 @@
+document: rfc-5041
+kind: state-machine
+summary: 'DDP Stream teardown has two paths: Graceful Teardown (all in-progress DDP Messages complete before the LLP Stream is closed; further ULP requests MUST return error) and Abortive Teardown (triggered by LLP connection/stream loss, LLP fatal error, or invalid DDP Header fields).'
+section: "6.2"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

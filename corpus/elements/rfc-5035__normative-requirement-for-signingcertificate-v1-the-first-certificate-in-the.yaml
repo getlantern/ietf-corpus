@@ -1,0 +1,11 @@
+document: rfc-5035
+kind: normative-requirement
+summary: For SigningCertificate (v1), the first certificate in the certs sequence MUST be the certificate used to verify the signature; its ESSCertID SHOULD include the issuerSerial field. If the certificate hash does not match, the signature MUST be considered invalid.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

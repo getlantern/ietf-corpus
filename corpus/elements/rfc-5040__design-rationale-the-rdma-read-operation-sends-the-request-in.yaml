@@ -1,0 +1,6 @@
+document: rfc-5040
+kind: design-rationale
+summary: The RDMA Read operation sends the Request in the Untagged Buffer direction but returns the Response using the Tagged Buffer Model directly into the Data Sink's pre-Advertised buffer, with no ULP involvement at the Data Source. This enables zero-copy remote memory reads with minimal CPU overhead at the source.
+section: 5.2.2
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

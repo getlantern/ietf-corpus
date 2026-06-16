@@ -1,0 +1,8 @@
+document: rfc-5025
+kind: state-machine
+summary: The <sub-handling> value drives the RFC 3857 subscription state machine. Changing to 'block' generates a 'rejected' event moving subscriptions to 'terminated'; changing to 'confirm' moves active subscriptions back to 'pending'; changing to 'polite-block' or 'allow' generates an 'approved' event moving pending subscriptions to 'active'.
+section: 3.2.1
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

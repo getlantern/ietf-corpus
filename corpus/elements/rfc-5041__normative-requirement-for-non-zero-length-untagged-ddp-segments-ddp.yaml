@@ -1,0 +1,10 @@
+document: rfc-5041
+kind: normative-requirement
+summary: For non-zero-length Untagged DDP Segments, DDP MUST validate the QN, MSN, MO, and payload range against the associated buffer before Placement. For non-zero-length Tagged segments, it MUST validate STag, TO range, and that the 64-bit sum of payload length and TO does not wrap.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

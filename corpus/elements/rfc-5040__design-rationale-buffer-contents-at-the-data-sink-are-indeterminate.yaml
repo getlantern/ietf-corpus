@@ -1,0 +1,6 @@
+document: rfc-5040
+kind: design-rationale
+summary: 'Buffer contents at the Data Sink are indeterminate until the associated Delivery event: for Send until Delivered to ULP; for RDMA Write until a subsequent Send is Delivered; for RDMA Read until the Read Response is Delivered. Applications MUST NOT ''peek'' at buffer contents mid-operation since out-of-order Placement can leave intermediate indeterminate state.'
+section: "5.5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

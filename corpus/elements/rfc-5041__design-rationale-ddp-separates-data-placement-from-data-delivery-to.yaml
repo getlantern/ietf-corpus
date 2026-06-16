@@ -1,0 +1,8 @@
+document: rfc-5041
+kind: design-rationale
+summary: DDP separates Data Placement from Data Delivery to allow out-of-order placement of DDP Segments directly into the final ULP Buffer, eliminating the traditional copy from a reassembly buffer. Delivery to the ULP still occurs in order, after all segments of a message and all prior messages are placed.
+section: "1.1"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

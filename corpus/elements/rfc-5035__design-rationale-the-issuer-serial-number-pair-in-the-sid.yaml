@@ -1,0 +1,10 @@
+document: rfc-5035
+kind: design-rationale
+summary: The issuer/serial number pair in the sid field of SignerInfo is not covered by the signature, making it vulnerable to substitution. Placing it in the issuerSerial field of ESSCertIDv2 (which is within the signed attribute) ensures it is cryptographically protected.
+section: "4"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

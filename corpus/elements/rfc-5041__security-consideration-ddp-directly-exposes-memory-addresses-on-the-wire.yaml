@@ -1,0 +1,9 @@
+document: rfc-5041
+kind: security-consideration
+summary: DDP directly exposes memory addresses on the wire via the STag and TO fields. All Placement information MUST be validated (STag validity, octet-level base and bounds checks) before any data is placed to prevent a third party from injecting spoofed DDP Segments that corrupt Data Sink memory.
+section: "8.1"
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

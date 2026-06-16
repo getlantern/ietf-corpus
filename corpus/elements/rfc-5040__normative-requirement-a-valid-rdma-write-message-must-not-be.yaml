@@ -1,0 +1,7 @@
+document: rfc-5040
+kind: normative-requirement
+summary: A valid RDMA Write Message MUST NOT be delivered to the Data Sink's ULP; it is placed directly into the Tagged Buffer by the DDP layer. The Data Source RDMAP layer MUST issue RDMA Write Messages to DDP in the order submitted by the ULP, and a single RDMA Write Message MUST only write to one remote Tagged Buffer.
+section: "5.1"
+rfc2119_level: MUST NOT
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
