@@ -1,0 +1,9 @@
+document: rfc-4543
+kind: design-rationale
+summary: 'ENCR_NULL_AUTH_AES_GMAC is NOT equivalent to AES-GCM-ESP with encryption turned off: in AES-GMAC-ESP the entire ESP Payload is in the AAD (with zero-length plaintext), whereas in AES-GCM-ESP only SPI and Sequence Number are in the AAD and the Payload is the GCM plaintext.'
+section: "3.5"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

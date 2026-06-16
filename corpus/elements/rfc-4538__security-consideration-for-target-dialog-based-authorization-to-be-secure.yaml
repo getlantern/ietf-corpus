@@ -1,0 +1,10 @@
+document: rfc-4538
+kind: security-consideration
+summary: For Target-Dialog-based authorization to be secure, the original SIP dialog MUST have been established using a sips URI (providing TLS on each hop) so that eavesdroppers cannot learn the dialog identifiers. Additionally, dialog identifiers must be cryptographically random per RFC 4086; weak pseudorandom identifiers are guessable and insufficient to prevent attackers from predicting them.
+section: "8"
+topics:
+    - sip
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

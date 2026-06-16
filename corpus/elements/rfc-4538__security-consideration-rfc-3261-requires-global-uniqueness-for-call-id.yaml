@@ -1,0 +1,10 @@
+document: rfc-4538
+kind: security-consideration
+summary: RFC 3261 requires global uniqueness for Call-ID and 32 bits of cryptographic randomness per tag. Given typical dialog durations of up to a day, this randomness is assessed as adequate against guessing attacks, but only when true cryptographic randomness (per RFC 4086) is used, not weak PRNGs.
+section: "8"
+topics:
+    - sip
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

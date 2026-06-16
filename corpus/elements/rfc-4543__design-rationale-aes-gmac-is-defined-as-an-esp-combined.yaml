@@ -1,0 +1,9 @@
+document: rfc-4543
+kind: design-rationale
+summary: AES-GMAC is defined as an ESP 'combined mode' (encryption transform) rather than an integrity transform because ESP provides no mechanism for integrity transforms to place an IV within the Payload field; defining it as an encryption transform avoids this limitation and enables the same pipelining as AES-GCM.
+section: "3"
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

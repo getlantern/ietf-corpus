@@ -1,0 +1,10 @@
+document: rfc-4543
+kind: security-consideration
+summary: The most important security requirement is that the IV never repeats for a given key. Statically configured keys are prohibited; IKE MUST be used. When using a single shared key for bidirectional traffic (non-IKE), peers MUST ensure different salt values to avoid counter block collisions.
+section: "7"
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

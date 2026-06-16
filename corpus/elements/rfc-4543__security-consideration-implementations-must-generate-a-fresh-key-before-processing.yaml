@@ -1,0 +1,11 @@
+document: rfc-4543
+kind: security-consideration
+summary: Implementations MUST generate a fresh key before processing 2^64 blocks of data under a given key, to prevent gradual degradation of security inherent in block cipher modes. This limit cannot be reached when using 32-bit sequence numbers.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

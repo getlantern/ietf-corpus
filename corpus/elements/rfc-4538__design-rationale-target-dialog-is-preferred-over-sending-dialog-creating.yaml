@@ -1,0 +1,8 @@
+document: rfc-4538
+kind: design-rationale
+summary: Target-Dialog is preferred over sending dialog-creating requests (like REFER) within an existing dialog because sending inside the dialog causes difficulties in determining dialog lifecycle, usages, and which messages belong to which application usage. Sending outside the dialog is cleaner but requires an authorization mechanism, which Target-Dialog provides.
+section: "1"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
