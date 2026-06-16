@@ -1,0 +1,9 @@
+document: rfc-4006
+kind: normative-requirement
+summary: When the end user terminates the service session or graceful termination occurs, the credit-control client MUST send a final CCR with CC-Request-Type = TERMINATION_REQUEST. After final interrogation, the credit-control server MUST refund the reserved credit not used and deduct the used amount from the user's account.
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

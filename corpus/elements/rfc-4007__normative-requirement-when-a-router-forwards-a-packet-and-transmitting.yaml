@@ -1,0 +1,10 @@
+document: rfc-4007
+kind: normative-requirement
+summary: When a router forwards a packet and transmitting it on the chosen next-hop interface would cause the packet to leave the zone of the source address (cross a source zone boundary), the router MUST discard the packet. If the destination is unicast, an ICMP Destination Unreachable message with Code 2 ('beyond scope of source address') MUST be sent to the original source.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4007
+kind: design-rationale
+summary: The unicast loopback address ::1 is treated as having link-local scope within an imaginary link attached to a virtual loopback interface. When ::1 is specified without a zone index, it should always be interpreted as belonging to the loopback link-local zone. This allows single-interface nodes to use link-local addresses without zone indices in the common case.
+section: "4"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

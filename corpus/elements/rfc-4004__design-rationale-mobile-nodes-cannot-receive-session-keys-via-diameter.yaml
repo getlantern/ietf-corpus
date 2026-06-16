@@ -1,0 +1,10 @@
+document: rfc-4004
+kind: design-rationale
+summary: Mobile nodes cannot receive session keys via Diameter because they only speak Mobile IPv4. The AAAH therefore delivers nonces (not keys) to the MN via the Home Agent's Mobile IPv4 Registration Reply using the 'Generalized MN-HA Key Generation Nonce Reply' extension; the MN derives session keys from the nonce combined with its long-term MN-AAA shared secret.
+section: "8.3"
+topics:
+    - diameter
+    - mobility
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

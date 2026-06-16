@@ -1,0 +1,9 @@
+document: rfc-4007
+kind: design-rationale
+summary: The <zone_id> part of the textual format does not need to encode scope (even though an internal zone index should). Since the <address> part already specifies the scope, the <zone_id> can be a simple integer like '2', which is more readable than a representation that redundantly embeds the scope name. The implementation reconstructs the full zone index from <address> scope + <zone_id>.
+section: "11.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

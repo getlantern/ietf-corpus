@@ -1,0 +1,9 @@
+document: rfc-4007
+kind: design-rationale
+summary: Zone boundaries cut through nodes rather than links because a node can have multiple interfaces on the same link (e.g., two Ethernet interfaces on the same Ethernet). If boundaries cut through links, such a node could not belong to the same link-local zone on both interfaces, which is the correct and expected behavior.
+section: "5"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

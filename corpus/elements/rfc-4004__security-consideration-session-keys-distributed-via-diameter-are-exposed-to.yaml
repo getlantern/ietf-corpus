@@ -1,0 +1,11 @@
+document: rfc-4004
+kind: security-consideration
+summary: Session keys distributed via Diameter are exposed to all Diameter proxy and relay agents along the path. To prevent this, end-to-end IPSec or TLS security associations must be established directly between FA/HA and AAAH, eliminating all intermediate Diameter agents from the key transport path.
+section: "13"
+topics:
+    - diameter
+    - mobility
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4007
+kind: normative-requirement
+summary: When a node receives a packet with a Routing Header with more than zero Segments Left and the scope of the next address in the Routing Header is smaller than the scope of the original destination address, the node MUST discard the packet. This prevents using a Routing Header to smuggle a non-global address across its zone boundary as a 'previously used' address.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

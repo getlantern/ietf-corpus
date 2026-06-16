@@ -1,0 +1,9 @@
+document: rfc-4006
+kind: normative-requirement
+summary: When no credit re-authorization is already ongoing and an RAR is received for an active session, the credit-control client MUST acknowledge via RAA and MUST initiate credit re-authorization by sending CCR with CC-Request-Type = UPDATE_REQUEST. Result-Code 2002 (DIAMETER_LIMITED_SUCCESS) SHOULD be used in the RAA to signal that an additional CCR is required.
+section: "5.5"
+rfc2119_level: MUST
+topics:
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

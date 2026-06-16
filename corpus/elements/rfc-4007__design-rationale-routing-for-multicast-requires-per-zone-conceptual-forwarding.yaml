@@ -1,0 +1,11 @@
+document: rfc-4007
+kind: design-rationale
+summary: Routing for multicast requires per-zone conceptual forwarding tables. The most straightforward design creates a distinct forwarding table for each specific zone, ensuring that zone-specific routing information (e.g., site-local multicast groups) does not leak across zone boundaries. The routing section only applies to multicast because unicast site-local is deprecated and link-local does not require routing.
+section: "10"
+topics:
+    - ip
+    - v6ops
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

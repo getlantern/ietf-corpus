@@ -1,0 +1,9 @@
+document: rfc-4007
+kind: design-rationale
+summary: Zones are defined to be relatively static, not changing in response to short-term topology changes. A partitioned zone (e.g., due to router failure) is still considered one zone, not two. A residential node that dials up to an employer's site is considered part of that site-local zone even when disconnected, because zones represent administrative policy, not transient connectivity.
+section: "5"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4007
+kind: interoperability-note
+summary: Applications such as telnet, ftp, and ssh may not explicitly support address scope. When connecting to a node via a link-local address (e.g., for management during routing failures), the zone must be appended manually using the '%<zone_id>' syntax (e.g., 'telnet fe80::2%3'), because the application cannot determine which link to use without it.
+section: "11.4"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

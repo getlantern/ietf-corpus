@@ -1,0 +1,10 @@
+document: rfc-4007
+kind: security-consideration
+summary: A malicious node might send a packet containing a textual IPv6 non-global address with a zone index in its payload, intending to deceive the receiving node about the zone of the non-global address. Implementations should be careful when receiving packets that contain textual non-global addresses as data, since the textual format is only valid within a single node.
+section: "12"
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

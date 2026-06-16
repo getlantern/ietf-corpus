@@ -1,0 +1,8 @@
+document: rfc-4008
+kind: design-rationale
+summary: Symmetric NAT has no entries in natAddrBindTable or natAddrPortBindTable because it does not maintain a consistent port bind across multiple sessions sharing the same private endpoint; instead each new session receives a fresh public port. The natSessionPrivateSrcEPBindId is set to zero to signal this behavior.
+section: "4.4"
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
