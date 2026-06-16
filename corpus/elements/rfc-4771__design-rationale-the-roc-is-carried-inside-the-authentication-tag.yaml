@@ -1,0 +1,10 @@
+document: rfc-4771
+kind: design-rationale
+summary: The ROC is carried inside the authentication tag rather than in the MKI field because the MKI has no defined semantics in RFC 3711 beyond specifying the master key, and the MKI field is not integrity protected—leaving it vulnerable to DoS attacks where an attacker modifies the ROC and the receiver remains out of synchronization until the next ROC is transmitted.
+section: "1"
+topics:
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

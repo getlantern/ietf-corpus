@@ -1,0 +1,9 @@
+document: rfc-4771
+kind: design-rationale
+summary: ROC synchronization failures arise because out-of-band signaling (e.g., MIKEY) delivers the ROC at key-establishment time, but a receiver may join hours later after SEQ has wrapped, leave and re-join after 2^15 packets, or receive a delayed pre-wraparound packet first—each scenario leaving local ROC inconsistent with the sender's current ROC with no in-band recovery path in standard SRTP.
+section: "1"
+topics:
+    - rtp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

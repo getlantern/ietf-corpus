@@ -1,0 +1,9 @@
+document: rfc-4754
+kind: design-rationale
+summary: ECDSA cannot be specified for IKEv2 independently of an associated hash function because IKEv2 has no transform type for hash functions. Therefore, the hash function and elliptic curve group must be bundled into named algorithm identifiers (ECDSA-256, ECDSA-384, ECDSA-521) rather than negotiated separately.
+section: "4"
+topics:
+    - crypto
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4771
+kind: security-consideration
+summary: 'Mode 3 (NULL-MAC) introduces a persistent DoS vulnerability: an attacker who modifies the ROC in every Rth packet will cause the receiver to lose cryptographic synchronization until the next correctly received ROC. Mode 3 MUST only be used after proper risk assessment; the transport network must consist of trusted domains, be protected from packet injection, and use VPN or leased lines for any segments that leave the trusted domain.'
+section: "5"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

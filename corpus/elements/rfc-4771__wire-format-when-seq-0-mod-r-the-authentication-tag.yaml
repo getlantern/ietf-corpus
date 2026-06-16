@@ -1,0 +1,9 @@
+document: rfc-4771
+kind: wire-format
+summary: When SEQ = 0 mod R, the authentication tag is TAG = ROC_sender (4 octets, 32 bits) || MAC_tr (tag_length minus 4 octets). MAC_tr is the most-significant (tag_length − 32) bits of the HMAC-SHA1 output. For other packets, the tag is the standard SRTP MAC with no ROC prepended.
+section: "2"
+topics:
+    - rtp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

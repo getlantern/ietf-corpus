@@ -1,0 +1,10 @@
+document: rfc-4771
+kind: protocol-element
+summary: The Roll-over Counter Carrying Transform (RCC) embeds the sender's ROC into the SRTP authentication tag for packets whose sequence number SEQ equals 0 modulo a configurable rate R. The tag format for those packets is TAG = ROC_sender || MAC_tr, where MAC_tr is the HMAC-SHA1 output truncated by 32 bits.
+section: "2"
+topics:
+    - rtp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

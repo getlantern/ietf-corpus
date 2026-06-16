@@ -1,0 +1,11 @@
+document: rfc-4771
+kind: normative-requirement
+summary: During MAC computation on a packet carrying the ROC, the session integrity key derivation MUST use the ROC value found in the received packet rather than the local ROC. This ensures that if the receiver has an incorrect ROC, MAC verification will fail and the receiver will not incorrectly update its ROC.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

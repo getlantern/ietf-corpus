@@ -1,0 +1,10 @@
+document: rfc-4771
+kind: state-machine
+summary: 'Sender state machine: for each RTP packet, if SEQ = 0 mod R, compute HMAC-SHA1 over (authenticated_portion || ROC_sender), truncate by 32 bits to get MAC_tr, set TAG = ROC_sender || MAC_tr, and append to packet; otherwise process the packet normally per RFC 3711. Receiver mirrors this: if SEQ = 0 mod R, extract ROC_sender from TAG, verify MAC using ROC_sender in place of local ROC, and on success set local ROC = ROC_sender; otherwise process normally.'
+section: "2"
+topics:
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

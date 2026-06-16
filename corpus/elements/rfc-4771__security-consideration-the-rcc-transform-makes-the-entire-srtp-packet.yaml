@@ -1,0 +1,10 @@
+document: rfc-4771
+kind: security-consideration
+summary: The RCC transform makes the entire SRTP packet index (ROC || SEQ) public since it is transmitted without encryption. RFC 3711 did not identify a need to encrypt the SRTP index, but implementors should be aware that only SEQ was previously disclosed in normal SRTP operation.
+section: "5"
+topics:
+    - rtp
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

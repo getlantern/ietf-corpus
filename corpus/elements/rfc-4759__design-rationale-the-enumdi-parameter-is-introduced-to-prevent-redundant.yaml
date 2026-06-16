@@ -1,0 +1,9 @@
+document: rfc-4759
+kind: design-rationale
+summary: The "enumdi" parameter is introduced to prevent redundant ENUM queries when a call is routed through multiple VoIP network elements. Without it, each element in the signalling path would independently query ENUM for the same number, causing unnecessary DNS load.
+section: "1"
+topics:
+    - voip
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

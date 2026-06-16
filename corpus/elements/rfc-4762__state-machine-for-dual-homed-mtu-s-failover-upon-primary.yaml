@@ -1,0 +1,8 @@
+document: rfc-4762
+kind: state-machine
+summary: 'For dual-homed MTU-s failover: upon primary PW failure (detected via LDP hello timeout), MTU-s immediately switches to the secondary PW. The PE terminating the secondary PW then sends a MAC flush message (empty MAC List TLV) to all other PE-rs nodes to purge stale MAC-to-PW associations and accelerate convergence.'
+section: 10.2.2
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

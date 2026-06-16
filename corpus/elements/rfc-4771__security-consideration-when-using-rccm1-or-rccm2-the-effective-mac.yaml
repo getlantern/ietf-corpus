@@ -1,0 +1,10 @@
+document: rfc-4771
+kind: security-consideration
+summary: When using RCCm1 or RCCm2, the effective MAC length for ROC-carrying packets is tag_length minus 4 octets, not tag_length octets. To maintain the same MAC forgery success probability as the RFC 3711 default transform on all packets, the tag-length SHOULD be set to 14 octets (yielding a 10-octet MAC_tr). A tag-length of 32 bits provides no security.
+section: "5"
+topics:
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
