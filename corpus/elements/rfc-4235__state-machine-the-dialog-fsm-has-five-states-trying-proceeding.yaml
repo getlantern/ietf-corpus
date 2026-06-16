@@ -1,0 +1,9 @@
+document: rfc-4235
+kind: state-machine
+summary: 'The dialog FSM has five states: Trying, Proceeding, Early, Confirmed, and Terminated. Transitions are driven by SIP responses and events: 1xx-no-tag moves Trying→Proceeding; 1xx-with-tag moves to Early; 2xx moves to Confirmed; cancelled/rejected/replaced/error/timeout/BYE events move to Terminated. A single FSM handles both UAC and UAS roles; forked responses spawn new FSM instances.'
+section: 3.7.1
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

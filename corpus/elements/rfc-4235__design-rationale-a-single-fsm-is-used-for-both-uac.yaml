@@ -1,0 +1,9 @@
+document: rfc-4235
+kind: design-rationale
+summary: A single FSM is used for both UAC and UAS roles to simplify the model. The common case of no forking is represented by a single FSM instance, while forked responses (additional 1xx or 2xx with new tags) create additional FSM instances rather than complicating the primary FSM.
+section: 3.7.1
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

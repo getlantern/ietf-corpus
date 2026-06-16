@@ -1,0 +1,8 @@
+document: rfc-4233
+kind: design-rationale
+summary: A separate SCTP stream is recommended for each D channel to minimize transmission and buffering delay, improving overall performance and reliability. SCTP stream management is the IUA layer's responsibility because SCTP streams are unidirectional and each peer is unaware of the other's stream-to-Interface Identifier mapping.
+section: 1.5.3
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

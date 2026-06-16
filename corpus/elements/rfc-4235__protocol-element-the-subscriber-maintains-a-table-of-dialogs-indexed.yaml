@@ -1,0 +1,9 @@
+document: rfc-4235
+kind: protocol-element
+summary: The subscriber maintains a table of dialogs indexed by the 'id' attribute. On receiving a full-state document the table is flushed and repopulated; on partial state, existing rows are updated or new rows added. A document whose version is lower than the local version is discarded; a gap greater than one SHOULD trigger a refresh SUBSCRIBE.
+section: "4.3"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

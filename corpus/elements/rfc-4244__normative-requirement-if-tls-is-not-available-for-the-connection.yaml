@@ -1,0 +1,12 @@
+document: rfc-4244
+kind: normative-requirement
+summary: If TLS is not available for the connection over which a request containing History-Info is being forwarded, the request MUST NOT include the History-Info header, or the request MUST be redirected to the client including the History-Info header so that the client can securely retarget.
+section: "3.2"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - tls
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

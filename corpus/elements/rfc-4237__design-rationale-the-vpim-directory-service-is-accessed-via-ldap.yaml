@@ -1,0 +1,10 @@
+document: rfc-4237
+kind: design-rationale
+summary: The VPIM directory service is accessed via LDAP using the recipient's telephone number as the lookup key, with the inter-domain address form telephone_number@domain_name. DNS provides redundancy and load-balancing, but latency requirements may necessitate high-availability directory server implementations rather than client-side failover.
+section: "1.4"
+topics:
+    - ldap
+    - dns
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4236
+kind: design-rationale
+summary: Skipping 'control' HTTP messages (e.g., 100 Continue, CONNECT) by default is prohibited because sensitive information might be relayed via crafted 100 Continue responses, or malicious CONNECT requests may evade callout services intended to handle them. The OPES processor cannot unilaterally decide a message is not worth adapting.
+section: "3.5"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

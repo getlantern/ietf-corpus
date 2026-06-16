@@ -1,0 +1,11 @@
+document: rfc-4244
+kind: security-consideration
+summary: TLS is mandated for hop-by-hop security of History-Info between all entities (UAC-to-Proxy, Proxy-to-Proxy, Proxy-to-UAS). If TLS is unavailable, the History-Info header MUST be removed prior to forwarding, or the request MUST be redirected to the UAC so it can securely retarget. TLS provides authentication and confidentiality but does not prevent malicious intermediaries from deleting, rewriting, or modifying History-Info.
+section: "6"
+topics:
+    - sip
+    - tls
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4238
+kind: security-consideration
+summary: Both services rely on DNS for routing information. If DNS is compromised, an attacker can redirect messages by providing a malicious email address or rogue LDAP URL. Use of DNSSEC substantially reduces this risk; if the E.164 zone is DNSSEC-secured, the attack is precluded if the client trusts the signing key.
+section: "4.2"
+topics:
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

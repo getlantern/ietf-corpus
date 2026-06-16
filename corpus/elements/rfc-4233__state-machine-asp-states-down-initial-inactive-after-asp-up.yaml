@@ -1,0 +1,8 @@
+document: rfc-4233
+kind: state-machine
+summary: 'ASP states: DOWN (initial), INACTIVE (after ASP Up / ASPUP acknowledged), ACTIVE (after ASP Active / ASPAC acknowledged). Transitions: DOWN→INACTIVE via ASPUP/UP-ACK; INACTIVE→ACTIVE via ASPAC/ACTIVE-ACK; ACTIVE→INACTIVE via ASPIA/INACTIVE-ACK; any state→DOWN via ASPDN/DOWN-ACK or SCTP failure.'
+section: 4.3.1
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

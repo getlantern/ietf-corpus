@@ -1,0 +1,9 @@
+document: rfc-4238
+kind: security-consideration
+summary: Malicious NAPTR entries can redirect E.164 resolution to a wrong LDAP URL or email address, causing clients to connect to rogue servers or deliver messages to unintended recipients. DNSSEC protects the DNS layer but does not protect against an independently compromised LDAP service.
+section: "2.1"
+topics:
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
