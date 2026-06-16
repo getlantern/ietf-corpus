@@ -1,0 +1,9 @@
+document: rfc-4695
+kind: wire-format
+summary: 'Delta times in the MIDI list use a 1-4 octet variable-length encoding (modified MIDI File format): the high bit of each octet is a continuation flag, and the low 7 bits carry data. The resulting decoded values are 32-bit unsigned integers; multiple encodings of the same value (e.g., four legal encodings of zero) are all legal.'
+section: "3.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4698
+kind: design-rationale
+summary: Address registries do not have natural links to DNS. Using the reverse DNS tree is problematic because IP address delegations do not fall on byte boundaries (unlike reverse DNS), and DNS contains no information about autonomous system delegation. Therefore, top-down resolution uses areg.iris.arpa rather than reverse DNS.
+section: "7.2"
+topics:
+    - ip
+    - dns
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

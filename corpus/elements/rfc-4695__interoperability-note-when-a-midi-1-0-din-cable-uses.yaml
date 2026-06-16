@@ -1,0 +1,9 @@
+document: rfc-4695
+kind: interoperability-note
+summary: When a MIDI 1.0 DIN cable uses 'dropped 0xF7' SysEx encoding, senders MUST reconstruct the canonical form (insert the dropped 0xF7), then substitute a 0xF5 octet at the terminal position to signal the original dropped-byte coding to the receiver.
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

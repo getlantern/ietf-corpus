@@ -1,0 +1,9 @@
+document: rfc-4695
+kind: design-rationale
+summary: SysEx command cancellation is provided because session configuration tools may exclude certain SysEx commands from a stream; cancellation lets a sender start transmission before the full command arrives and abort it without a high-latency store-and-forward design. Without it, senders would be forced to buffer entire SysEx commands before transmitting.
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

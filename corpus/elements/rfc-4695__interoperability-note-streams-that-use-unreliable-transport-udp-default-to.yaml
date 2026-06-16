@@ -1,0 +1,9 @@
+document: rfc-4695
+kind: interoperability-note
+summary: Streams that use unreliable transport (UDP) default to using the recovery journal; streams using reliable transport (TCP) default to no journal. These defaults may be overridden at session setup via the j_sec parameter. For all transport types, senders MUST transmit packets with consecutive sequence numbers (modulo 2^16).
+section: "2.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

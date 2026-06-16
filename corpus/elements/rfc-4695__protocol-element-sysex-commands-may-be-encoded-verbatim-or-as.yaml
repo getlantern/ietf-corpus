@@ -1,0 +1,9 @@
+document: rfc-4695
+kind: protocol-element
+summary: SysEx commands may be encoded verbatim or as multiple segments across MIDI Command fields. Segmentation uses status octets to mark first (0xF0/0xF0), middle (0xF7/0xF0), last (0xF7/0xF7), and cancel (0xF7/0xF4) sublists, enabling per-octet timestamps and cross-packet SysEx transport.
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

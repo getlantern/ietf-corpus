@@ -1,0 +1,9 @@
+document: rfc-4701
+kind: normative-requirement
+summary: When the updater uses the client's DUID (from DHCPv6 Client Identifier or RFC 4361-encoded DHCPv4 Client Identifier), the first two octets of the DHCID RR MUST be 0x0002 in network byte order, and the rest MUST contain the SHA-256 hash of the DUID followed by the FQDN.
+section: 3.5.1
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
