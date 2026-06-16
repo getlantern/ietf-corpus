@@ -1,0 +1,8 @@
+document: rfc-4455
+kind: design-rationale
+summary: Command counters are defined as both Counter32 and Counter64 because older SNMPv1 implementations cannot support Counter64, yet at 5 Gbit/s with 512-byte operations a Counter32 command counter wraps within an hour. A suggested implementation is to set Counter32 to the low-order 32 bits of the corresponding Counter64.
+section: "7.5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

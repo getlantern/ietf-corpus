@@ -1,0 +1,8 @@
+document: rfc-4462
+kind: design-rationale
+summary: SPNEGO is prohibited because SSH already performs its own method negotiation, making SPNEGO's negotiation protection redundant. Furthermore, mixing SPNEGO and non-SPNEGO variants of the same mechanism creates interoperability problems and can subvert SSH's own negotiation order, potentially selecting a weaker method.
+section: "7.3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

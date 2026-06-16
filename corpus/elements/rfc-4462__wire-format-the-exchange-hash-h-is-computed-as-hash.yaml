@@ -1,0 +1,10 @@
+document: rfc-4462
+kind: wire-format
+summary: The exchange hash H is computed as HASH(V_C || V_S || I_C || I_S || K_S || e || f || K) where all fields are strings or mpints as defined. GSS_GetMIC MUST be applied over H, not the original data. If no SSH_MSG_KEXGSS_HOSTKEY was sent, the empty string is used for K_S.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

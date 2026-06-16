@@ -1,0 +1,8 @@
+document: rfc-4462
+kind: protocol-element
+summary: The 'gssapi-keyex' user authentication method reuses the GSS-API context established during the initial key exchange. It sends a single SSH_MSG_USERAUTH_REQUEST with a MIC computed over session identifier, request type, user name, service, and 'gssapi-keyex'. Any context from rekeying MUST NOT be used.
+section: "4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

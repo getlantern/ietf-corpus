@@ -1,0 +1,8 @@
+document: rfc-4468
+kind: design-rationale
+summary: BURL is restricted to the submission profile (port 587) and not permitted on port 25 relay servers because it requires a trust relationship between the submit server and an IMAP server, and because relay servers lack the per-user authentication context needed to safely resolve IMAP URLs on behalf of users.
+section: "3.1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

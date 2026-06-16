@@ -1,0 +1,10 @@
+document: rfc-4462
+kind: security-consideration
+summary: The key exchange method depends on the underlying GSS-API mechanism to provide both mutual authentication and per-message integrity. If either feature is unsupported by the mechanism or its implementation, the key exchange is not secure and MUST fail. Security of the overall connection depends on SSH, the GSS-API, and all underlying mechanisms.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

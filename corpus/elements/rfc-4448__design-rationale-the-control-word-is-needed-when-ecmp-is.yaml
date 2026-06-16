@@ -1,0 +1,8 @@
+document: rfc-4448
+kind: design-rationale
+summary: The control word is needed when ECMP is active because ECMP implementations may examine the first nibble after the MPLS label stack to detect IP packets. A source MAC address beginning with 0x4 or 0x6 could be mistaken for IPv4/IPv6, causing packets on a given PW to follow different paths and increasing out-of-order delivery or causing OAM packets to diverge from traffic.
+section: "4.6"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

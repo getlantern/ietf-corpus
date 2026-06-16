@@ -1,0 +1,8 @@
+document: rfc-4455
+kind: design-rationale
+summary: Data-volume counters (megabytes written/read) use megabyte granularity rather than bytes specifically so that Counter64 objects are not required; at typical data rates, megabyte-granularity Counter32s do not wrap within a relevant observation window.
+section: "7.5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

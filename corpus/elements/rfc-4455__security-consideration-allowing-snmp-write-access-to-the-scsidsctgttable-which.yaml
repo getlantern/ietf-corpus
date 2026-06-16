@@ -1,0 +1,9 @@
+document: rfc-4455
+kind: security-consideration
+summary: Allowing SNMP write access to the scsiDscTgtTable (which controls which SCSI target devices an initiator may attach to) and the ScsiAuthorizedIntrTable (which controls which initiators may attach to a target port) presents significant security risks; the MIB permits but does not require such writes, and implementors must carefully control SNMP write authorization for these tables.
+section: "5"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

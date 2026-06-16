@@ -1,0 +1,9 @@
+document: rfc-4462
+kind: interoperability-note
+summary: When a new host key for an already-known host is received via SSH_MSG_KEXGSS_HOSTKEY, clients SHOULD NOT issue strong warnings or abort, provided the GSS-API key exchange succeeds. Unlike traditional SSH, GSS-API-based key exchange authenticates new host keys, and host keys may change more frequently in GSS-API-heavy environments.
+section: "2.1"
+rfc2119_level: SHOULD NOT
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

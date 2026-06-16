@@ -1,0 +1,9 @@
+document: rfc-4462
+kind: normative-requirement
+summary: A client MUST NOT use the 'gssapi-keyex' method if the initial key exchange was not performed using a GSS-API-based method per Section 2. If a server receives such a request, it MUST return SSH_MSG_USERAUTH_FAILURE.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

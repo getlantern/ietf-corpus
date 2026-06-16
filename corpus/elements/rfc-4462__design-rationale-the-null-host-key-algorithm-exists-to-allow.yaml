@@ -1,0 +1,8 @@
+document: rfc-4462
+kind: design-rationale
+summary: The 'null' host key algorithm exists to allow servers in Kerberos-only environments to advertise a valid key exchange algorithm when policy prohibits use of public-key host keys. Without it, a server configured to require GSS-API/Kerberos key exchange would have nothing to advertise in its host key algorithm list.
+section: "5"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

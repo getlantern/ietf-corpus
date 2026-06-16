@@ -1,0 +1,10 @@
+document: rfc-4467
+kind: normative-requirement
+summary: The GENURLAUTH command MUST validate that the mailbox component refers to an existing mailbox, the server component contains a valid owner userid, and there is a valid access identifier; if checks fail the server MUST return a tagged BAD response, with an exception allowing a tagged OK with a dummy key when an invalid userid is supplied to prevent userid enumeration.
+section: BASE.6.3.GENURLAUTH
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

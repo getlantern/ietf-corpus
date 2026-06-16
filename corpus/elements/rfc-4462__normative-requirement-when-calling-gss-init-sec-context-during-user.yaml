@@ -1,0 +1,9 @@
+document: rfc-4462
+kind: normative-requirement
+summary: When calling GSS_Init_sec_context() during user authentication, the client MUST set integ_req_flag to 'true'. The mutual_req_flag and replay_det_req_flag/sequence_req_flag SHOULD be set to 'false' since user auth only authenticates the client, not the server.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4448
+kind: design-rationale
+summary: The control word is optional for Ethernet PWs because ECMP may not be present, and strict frame sequencing may not be required. Early Ethernet PW implementations were deployed without a control word, so requiring it would break backwards compatibility; hence future implementations must support operation both with and without it.
+section: "4.6"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

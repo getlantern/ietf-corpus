@@ -1,0 +1,8 @@
+document: rfc-4447
+kind: state-machine
+summary: 'The C-bit negotiation state machine for optional control word PW types: if received C=0, send C=0 (no control word); if received C=1 and local preference is preferred, send C=1; if received C=1 and local preference is not preferred, send according to local config and wait. On mismatch (sent C=1, received C=0), send Label Withdraw with ''Wrong C-Bit'' then a new Label Mapping with C=0.'
+section: "6.2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

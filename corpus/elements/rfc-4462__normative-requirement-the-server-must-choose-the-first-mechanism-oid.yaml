@@ -1,0 +1,9 @@
+document: rfc-4462
+kind: normative-requirement
+summary: The server MUST choose the first mechanism OID from the client's list that it supports. If no OIDs are supported, the server MUST fail the request by sending SSH_MSG_USERAUTH_FAILURE. If a non-empty user name is presented and not authorized, authentication MUST fail.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

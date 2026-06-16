@@ -1,0 +1,9 @@
+document: rfc-4449
+kind: security-consideration
+summary: Replay protection for Binding Update messages depends on the 16-bit Sequence Number field; Kbm should not be used for more than 65,536 Binding Updates. If sequence numbers are not protected against reboots, replay attacks become possible. Keys should be rotated when the sequence number rolls over.
+section: "4"
+topics:
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
