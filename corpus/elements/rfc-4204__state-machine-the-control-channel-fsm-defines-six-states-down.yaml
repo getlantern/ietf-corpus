@@ -1,0 +1,8 @@
+document: rfc-4204
+kind: state-machine
+summary: 'The Control Channel FSM defines six states: Down (initial), ConfSnd (sending Config messages), ConfRcv (waiting for Config from remote), Active (exchanging Hellos), Up (operational), and GoingDown (administrative shutdown). Transition from Active to Up requires receiving a valid Hello with expected sequence numbers; evCCDn always forces the FSM to Down.'
+section: "11.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

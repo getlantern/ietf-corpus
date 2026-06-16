@@ -1,0 +1,8 @@
+document: rfc-4194
+kind: design-rationale
+summary: SHA-1 (RFC 3174) was chosen as the per-Block checksum because existing hex dump formats use simplistic checksums that provide insufficient error detection for large data sizes. SHA-1 provides 160-bit integrity with manageable overhead, and its (2^64)-1 bit input limit directly determines the maximum SHF Block size.
+section: "3"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

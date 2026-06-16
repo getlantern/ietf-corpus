@@ -1,0 +1,9 @@
+document: rfc-4206
+kind: security-consideration
+summary: The separation of control and data planes in FA-LSPs breaks the implicit binding between data interfaces and the interface over which a control message is sent. Mechanisms depending on 'sending interface' or 'receiving interface' concepts (e.g., RSVP security associations per RFC 2747) must be redefined in terms of sender's/receiver's IP addresses rather than interfaces.
+section: "7"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

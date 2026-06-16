@@ -1,0 +1,9 @@
+document: rfc-4196
+kind: design-rationale
+summary: Because SEED's 16-octet blocksize guarantees the ESP Pad Length and Next Header fields are right-aligned within a 4-octet word, no additional padding beyond the cipher's block-size requirement is needed to ensure 4-octet ciphertext boundary alignment.
+section: "2.4"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

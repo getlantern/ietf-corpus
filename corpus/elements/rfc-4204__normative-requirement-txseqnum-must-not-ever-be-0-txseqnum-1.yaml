@@ -1,0 +1,9 @@
+document: rfc-4204
+kind: normative-requirement
+summary: TxSeqNum MUST NOT ever be 0. TxSeqNum=1 indicates the sender has just started or restarted. When TxSeqNum reaches (2^32)-1, the next sequence number used is 2, skipping 0 and 1 which have special meanings.
+section: 3.2.2
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

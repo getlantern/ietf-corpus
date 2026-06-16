@@ -1,0 +1,9 @@
+document: rfc-4204
+kind: design-rationale
+summary: Config messages for in-band control channels are sent to the multicast address (224.0.0.1 or ff02::1) rather than a unicast destination, enabling dynamic discovery of the far-end IP address without prior manual configuration. ConfigAck and ConfigNack are then sent back to the source IP address found in the received Config's IP header.
+section: "9"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4202
+kind: design-rationale
+summary: GMPLS decouples TE links from routing adjacencies, treating a TE link as a 'logical' link that groups physical resources for use by Constrained SPF and GMPLS signaling. This is necessary because non-packet-switched links (e.g., OXC-to-OXC) cannot carry routing hellos, LSPs can be advertised as point-to-point TE links, and multiple physical links may be bundled into one TE link.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

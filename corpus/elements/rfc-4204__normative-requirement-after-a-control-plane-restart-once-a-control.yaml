@@ -1,0 +1,9 @@
+document: rfc-4204
+kind: normative-requirement
+summary: After a control plane restart, once a control channel is up, the LMP neighbor MUST send a LinkSummary message for each TE link across the adjacency with all N-bits set to 0 (non-negotiable). The allocated/de-allocated flag from the received LinkSummary MUST take precedence over any local value.
+section: "8"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

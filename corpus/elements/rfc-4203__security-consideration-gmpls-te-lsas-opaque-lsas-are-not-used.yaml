@@ -1,0 +1,10 @@
+document: rfc-4203
+kind: security-consideration
+summary: GMPLS TE LSAs (Opaque LSAs) are not used for SPF or normal IP routing, so tampering has no direct effect on IP routing. However, tampering may affect the underlying transport (optical/SONET-SDH) network. Mechanisms such as OSPF with Digital Signatures (RFC 2154) should be used to secure the information.
+section: "6"
+topics:
+    - routing
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

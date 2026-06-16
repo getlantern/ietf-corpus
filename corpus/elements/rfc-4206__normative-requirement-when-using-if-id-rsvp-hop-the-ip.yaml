@@ -1,0 +1,10 @@
+document: rfc-4206
+kind: normative-requirement
+summary: When using IF_ID RSVP_HOP, the IP TTL vs. RSVP TTL check MUST NOT be made, as the number of control plane hops may exceed one. Instead, the receiver must verify that the identified data interface terminates on itself and that the PHOP address belongs to the same node as the other end of that interface.
+section: 6.1.1
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
