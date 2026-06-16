@@ -1,0 +1,10 @@
+document: rfc-4398
+kind: security-consideration
+summary: Certificates contain their own authenticating signatures, so it is reasonable to store them in non-secure DNS zones or retrieve them without DNS security checking. The retrieved certificate may be trusted if the certificate chain is verified back to a known trusted key, or if DNSSEC verification is used in lieu of chain verification.
+section: "7"
+topics:
+    - dns
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

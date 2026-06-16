@@ -1,0 +1,9 @@
+document: rfc-4396
+kind: design-rationale
+summary: TOTAL/THIS fragment indexing is used instead of a byte or character offset. A byte offset would consume an extra byte and would not convey character offset for variable-width UTF-8/UTF-16 strings. Using LEN and SLEN alone would not specify fragment order, which is needed when packets are repeated.
+section: "2.5"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4396
+kind: normative-requirement
+summary: When reassembling a fragmented UTF-16 text sample, the receiver MUST prepend the Byte Order Mark (0xFEFF, big endian) to the reassembled string before passing it to the timed text decoder, because the BOM is not transported in RTP payloads.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

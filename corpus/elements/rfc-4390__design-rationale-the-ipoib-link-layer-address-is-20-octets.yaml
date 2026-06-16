@@ -1,0 +1,9 @@
+document: rfc-4390
+kind: design-rationale
+summary: The IPoIB link-layer address is 20 octets long, which exceeds the 16-octet 'chaddr' field in DHCP/BOOTP messages. This size mismatch makes it impossible for a DHCP server to unicast a reply to a client that has not yet been assigned an IP address, necessitating the use of broadcast replies and a surrogate client identifier.
+section: "1"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

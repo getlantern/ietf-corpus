@@ -1,0 +1,9 @@
+document: rfc-4390
+kind: normative-requirement
+summary: During BOUND, RENEWING, or REBINDING states, the DHCP client MUST NOT set the BROADCAST flag; instead it MUST fill 'ciaddr' with its IP address so the server can unicast DHCPACK, with the link address resolved by ARP.
+section: "2.2"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

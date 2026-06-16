@@ -1,0 +1,9 @@
+document: rfc-4396
+kind: design-rationale
+summary: Character count and character offset fields were deliberately omitted from fragment headers. The working group consensus was that partial error correction (displaying '#' for lost characters with exact count) is not worth the cost of two additional fields given that full error correction via FEC, retransmission, or repetition is preferred for captioning/subtitle applications.
+section: "2.5"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

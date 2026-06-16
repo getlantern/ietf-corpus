@@ -1,0 +1,9 @@
+document: rfc-4401
+kind: security-consideration
+summary: Callers should avoid accidentally calling GSS_Pseudo_random() with the same inputs; a recommended technique is to prepend a purpose-indicating string to prf_in so that unique calling contexts yield unique inputs.
+section: "4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

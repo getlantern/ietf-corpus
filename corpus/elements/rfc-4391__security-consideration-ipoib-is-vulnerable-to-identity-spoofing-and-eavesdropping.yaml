@@ -1,0 +1,11 @@
+document: rfc-4391
+kind: security-consideration
+summary: IPoIB is vulnerable to identity spoofing and eavesdropping as with any multicast network. Higher layers or applications must implement countermeasures. SM/SA interactions for link setup MUST be protected by the OS to prevent non-privileged software from hijacking resources. Controlled Q_Keys SHOULD be used to prevent datagram fabrication.
+section: "13"
+rfc2119_level: MUST
+topics:
+    - ip
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

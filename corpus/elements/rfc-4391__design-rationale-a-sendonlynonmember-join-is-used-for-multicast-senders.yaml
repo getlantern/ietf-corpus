@@ -1,0 +1,9 @@
+document: rfc-4391
+kind: design-rationale
+summary: A 'SendOnlyNonMember' join is used for multicast senders rather than 'FullMember' because it enables outgoing packet routing without causing packets to be routed to the local port, and the sender is not counted as a member for group lifecycle purposes.
+section: "10"
+topics:
+    - ip
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

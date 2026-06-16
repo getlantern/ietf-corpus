@@ -1,0 +1,9 @@
+document: rfc-4411
+kind: design-rationale
+summary: Existing SIP response codes (410, 480, 486, 503) are inappropriate for preemption signaling because the session is already established when the BYE is issued. Q.850 cause=8 exists for preemption but lacks IP-specific semantics, and Q.850 cause=9 ('circuit reserved for reuse') has no IP equivalent.
+section: "2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

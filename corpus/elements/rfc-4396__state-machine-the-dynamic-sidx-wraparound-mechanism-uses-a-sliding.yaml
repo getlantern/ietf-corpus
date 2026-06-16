@@ -1,0 +1,9 @@
+document: rfc-4396
+kind: state-machine
+summary: The dynamic SIDX wraparound mechanism uses a sliding window of 64 active values out of 128. When a sample description with a new SIDX=Z in the inactive half arrives, X is set to Z, the window shifts to mark [X+1, X+64] inactive and [X+65, X] active. Active descriptions SHALL NOT be overwritten; redundant copies are silently discarded.
+section: 4.2.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

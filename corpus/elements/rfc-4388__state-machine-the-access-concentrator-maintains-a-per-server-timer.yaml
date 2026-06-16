@@ -1,0 +1,8 @@
+document: rfc-4388
+kind: state-machine
+summary: The access concentrator maintains a per-server timer for DHCPLEASEQUERY retransmission. In the initial/expired state, only one outstanding message is allowed; after receiving a response the timer starts (1 minute), allowing up to 100-200 parallel queries using RFC 2131 exponential backoff. When the timer expires, all outstanding queries are dropped except one polling query sent at ~64-second intervals.
+section: "6.6"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

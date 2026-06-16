@@ -1,0 +1,9 @@
+document: rfc-4396
+kind: design-rationale
+summary: Header fields were reduced from 32-bit to narrower widths (8-bit SIDX, 24-bit SDUR, 16-bit SLEN/LEN) to minimize payload overhead for the low-bitrate mobile streaming use case. Extension mechanisms (SIDX wraparound, sample splitting for long SDUR) compensate for the reduced maximum values.
+section: "2.4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
