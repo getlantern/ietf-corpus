@@ -1,0 +1,8 @@
+document: rfc-4306
+kind: interoperability-note
+summary: IKEv2 does not interoperate with IKEv1 but shares enough header format that both versions can run unambiguously on the same UDP port 500. If a node with a higher major version receives a message negotiating down, both sides will notice the other can support a higher version and MUST break the connection and reconnect at the higher version.
+section: "2.5"
+topics:
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

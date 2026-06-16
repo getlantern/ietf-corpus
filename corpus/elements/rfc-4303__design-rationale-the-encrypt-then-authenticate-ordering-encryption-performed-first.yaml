@@ -1,0 +1,10 @@
+document: rfc-4303
+kind: design-rationale
+summary: The encrypt-then-authenticate ordering (encryption performed first, ICV computed over ciphertext) was chosen to facilitate rapid detection and rejection of replayed or bogus packets before decryption, reducing DoS impact, and to enable parallel decryption and integrity checking at the receiver.
+section: 3.3.2.1
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4302
+kind: design-rationale
+summary: The ESN re-synchronization mechanism is receiver-only, to minimize impact on normal traffic, avoid new denial-of-service vectors, and maintain backward compatibility. A consecutive-failure counter triggers background retry with incrementing Seqh values to recover from losses of 2^32 or more packets.
+section: B3
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4306
+kind: design-rationale
+summary: IKEv2 deliberately allows parallel CHILD_SAs with identical traffic selectors between common endpoints to support traffic QoS differentiation (per RFC 2474/2475/2983). This means the IKEv1 heuristic of deleting SAs based on duplicate traffic selectors SHOULD NOT be used in IKEv2 implementations.
+section: "2.8"
+topics:
+    - ipsec
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

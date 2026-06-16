@@ -1,0 +1,11 @@
+document: rfc-4302
+kind: normative-requirement
+summary: 'For multicast SAs, an IPsec implementation MUST correctly de-multiplex inbound traffic even in the context of SPI collisions by using the longest-match SAD lookup algorithm: first match on {SPI, destination, source}, then {SPI, destination}, then {SPI} or {SPI, protocol}.'
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

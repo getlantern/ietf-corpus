@@ -1,0 +1,10 @@
+document: rfc-4302
+kind: design-rationale
+summary: Mutable IP header fields are zeroed rather than omitted from ICV computation. This preserves field alignment in the ICV calculation and ensures that field lengths cannot be changed in transit even when their contents are not explicitly covered.
+section: 3.3.3.1
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

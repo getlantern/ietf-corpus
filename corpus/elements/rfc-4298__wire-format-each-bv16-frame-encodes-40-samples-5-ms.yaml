@@ -1,0 +1,10 @@
+document: rfc-4298
+kind: wire-format
+summary: 'Each BV16 frame encodes 40 samples (5 ms at 8000 samples/s) into exactly 80 bits (10 octets), octet-aligned with no padding. Parameters packed in big-endian order: Line Spectrum Pairs L0,L1 (7+7=14 bits), Pitch Lag PL (7), Pitch Gain PG (5), Log-Gain LG (4), Excitation Vectors V0-V9 (50 bits total).'
+section: "3.1"
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4295
+kind: design-rationale
+summary: All traffic counters are provided in both 32-bit (Counter32) and 64-bit (Counter64, prefixed 'HC') variants. The 64-bit versions prevent wrap-around on high-speed links where 32-bit counters would overflow too quickly for accurate monitoring.
+section: "5"
+topics:
+    - mobility
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4306
+kind: security-consideration
+summary: EAP methods that do not establish a shared key are subject to man-in-the-middle attacks when used in other protocols without a server-authenticated tunnel. If such methods are used, AUTH payloads in the final IKE_AUTH messages MUST be generated using SK_pi and SK_pr rather than an EAP-derived key.
+section: "2.16"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

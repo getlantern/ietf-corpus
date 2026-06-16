@@ -1,0 +1,9 @@
+document: rfc-4301
+kind: state-machine
+summary: 'Outbound packet processing: (1) look up SPD using selectors; (2) if DISCARD, drop packet; (3) if BYPASS, forward without IPsec; (4) if PROTECT, look for a matching SA in the SAD; (5) if no SA exists, invoke IKE to create one; (6) apply AH or ESP per the SA parameters and forward the protected packet.'
+section: "5.1"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

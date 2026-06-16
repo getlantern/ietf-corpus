@@ -1,0 +1,10 @@
+document: rfc-4306
+kind: security-consideration
+summary: Pre-shared keys derived solely from user-chosen passwords without additional randomness are typically insecure because user-chosen passwords lack sufficient unpredictability to resist dictionary attacks, and IKEv2's PSK authentication method does not prevent offline dictionary attacks. Applications requiring password-based bootstrapping should use the EAP authentication method instead.
+section: "2.15"
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

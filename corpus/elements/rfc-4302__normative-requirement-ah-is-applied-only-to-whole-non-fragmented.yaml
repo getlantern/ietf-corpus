@@ -1,0 +1,11 @@
+document: rfc-4302
+kind: normative-requirement
+summary: AH is applied only to whole (non-fragmented) IP datagrams in transport mode. If a packet offered for inbound AH processing appears to be an IP fragment (OFFSET nonzero or MORE FRAGMENTS set), the receiver MUST discard the packet; this is an auditable event.
+section: 3.4.1
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

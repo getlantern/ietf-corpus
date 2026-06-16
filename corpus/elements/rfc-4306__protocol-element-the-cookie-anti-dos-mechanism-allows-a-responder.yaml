@@ -1,0 +1,9 @@
+document: rfc-4306
+kind: protocol-element
+summary: 'The COOKIE anti-DoS mechanism allows a responder detecting many half-open IKE_SAs to require initiators to prove reachability before committing state. The recommended stateless cookie formula is: Cookie = <VersionIDofSecret> | Hash(Ni | IPi | SPIi | <secret>), where <secret> is a frequently rotated server-only value. Initiators MUST retry IKE_SA_INIT with the COOKIE notify as the first payload.'
+section: "2.6"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

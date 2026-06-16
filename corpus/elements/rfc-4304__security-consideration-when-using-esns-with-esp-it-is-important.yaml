@@ -1,0 +1,10 @@
+document: rfc-4304
+kind: security-consideration
+summary: When using ESNs with ESP, it is important to employ an encryption mode that is secure when very large volumes of data are encrypted under a single key. DES in CBC mode is explicitly noted as NOT suitable for use with ESN, because no more than 2^32 blocks should be encrypted under a single DES key in that mode.
+section: "4"
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

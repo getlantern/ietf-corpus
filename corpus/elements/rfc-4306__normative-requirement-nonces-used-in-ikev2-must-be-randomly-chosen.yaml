@@ -1,0 +1,10 @@
+document: rfc-4306
+kind: normative-requirement
+summary: Nonces used in IKEv2 MUST be randomly chosen, MUST be at least 128 bits in size, and MUST be at least half the key size of the negotiated prf. If the IKE_SA Message ID grows too large for 32 bits, the IKE_SA MUST be closed; rekeying an IKE_SA resets sequence numbers.
+section: "2.10"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

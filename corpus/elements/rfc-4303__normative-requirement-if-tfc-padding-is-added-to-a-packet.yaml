@@ -1,0 +1,10 @@
+document: rfc-4303
+kind: normative-requirement
+summary: If TFC padding is added to a packet, the field in the IP datagram that specifies its length MUST NOT be modified to reflect this padding; the receiver uses this original length to locate and discard the TFC padding. The SA management protocol MUST negotiate TFC use before a transmitter employs it.
+section: "2.7"
+rfc2119_level: MUST NOT
+topics:
+    - ipsec
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

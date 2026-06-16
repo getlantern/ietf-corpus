@@ -1,0 +1,10 @@
+document: rfc-4306
+kind: protocol-element
+summary: Pre-shared key AUTH is computed as AUTH = prf(prf(Shared Secret, "Key Pad for IKEv2"), <msg octets>), where the pad string is exactly 17 ASCII characters without null termination. The management interface MUST accept ASCII strings of at least 64 octets and MUST also accept HEX encoding of the shared secret; if the negotiated prf takes a fixed-size key, the shared secret MUST be of that size.
+section: "2.15"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

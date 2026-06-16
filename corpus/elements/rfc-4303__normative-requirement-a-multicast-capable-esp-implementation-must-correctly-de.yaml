@@ -1,0 +1,11 @@
+document: rfc-4303
+kind: normative-requirement
+summary: 'A multicast-capable ESP implementation MUST correctly de-multiplex inbound traffic even when SPI collisions exist between group and unicast SAs. SAD lookup MUST follow a longest-match ordering: {SPI, destination, source} first, then {SPI, destination}, then {SPI} or {SPI, protocol}.'
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

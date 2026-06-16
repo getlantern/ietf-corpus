@@ -1,0 +1,9 @@
+document: rfc-4301
+kind: state-machine
+summary: 'Inbound packet processing: IPsec-protected packets undergo SAD lookup by SPI (and optionally destination/source address), cryptographic verification, and anti-replay check. After decryption/authentication, the inner packet is checked against SPD policy to confirm it was appropriately protected. Unprotected packets are checked against SPD-I for BYPASS authorization.'
+section: "5.2"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

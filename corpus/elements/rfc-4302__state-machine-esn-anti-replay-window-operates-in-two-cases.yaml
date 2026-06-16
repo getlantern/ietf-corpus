@@ -1,0 +1,9 @@
+document: rfc-4302
+kind: state-machine
+summary: 'ESN anti-replay window operates in two cases: Case A (Tl >= W-1, window within one sequence number subspace) and Case B (Tl < W-1, window spans two subspaces). State variables are T (highest authenticated sequence number) and B (window lower bound); state advances when a packet with Seq > T is received and validated.'
+section: B2
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

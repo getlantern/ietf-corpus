@@ -1,0 +1,11 @@
+document: rfc-4303
+kind: normative-requirement
+summary: For outbound processing with separate confidentiality and integrity algorithms, encryption MUST be performed before the integrity algorithm is applied, and the encryption MUST NOT encompass the ICV field. For inbound processing, integrity checking MUST complete before the decrypted packet is passed on for further processing.
+section: 3.3.2.1
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

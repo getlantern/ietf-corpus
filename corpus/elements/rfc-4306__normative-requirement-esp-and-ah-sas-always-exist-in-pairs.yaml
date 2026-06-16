@@ -1,0 +1,10 @@
+document: rfc-4306
+kind: normative-requirement
+summary: ESP and AH SAs always exist in pairs (one in each direction); when an SA is closed, both members of the pair MUST be closed. When SAs are nested (IPComp, then ESP, then AH between the same endpoints), all SAs MUST be deleted together. Each endpoint MUST close its incoming SAs and allow the other endpoint to close the other SA in each pair.
+section: "1.4"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

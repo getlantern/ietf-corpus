@@ -1,0 +1,10 @@
+document: rfc-4298
+kind: wire-format
+summary: 'Each BV32 frame encodes 80 samples (5 ms at 16000 samples/s) into exactly 160 bits (20 octets), octet-aligned with no padding. Parameters packed in big-endian order: Line Spectrum Pairs L0,L1,L2 (17 bits), Pitch Lag PL (8), Pitch Gain PG (5), Log-Gains LG0,LG1 (10 bits), first-subframe excitation vectors VA0-VA9 (60 bits), second-subframe vectors VB0-VB9 (60 bits).'
+section: "4.1"
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4306
+kind: protocol-element
+summary: SA rekeying uses a CREATE_CHILD_SA exchange to establish a new SA before the old one expires, then deletes the old one. In IKEv2 (unlike IKEv1), SA lifetimes are not negotiated; each endpoint enforces its own lifetime policy. When both ends initiate rekeying simultaneously, the SA created with the lowest of the four nonces SHOULD be closed by the endpoint that created it.
+section: "2.8"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4303
+kind: normative-requirement
+summary: The anti-replay service MUST NOT be enabled unless the integrity service is also enabled for the SA, because otherwise the Sequence Number field has not been integrity protected. All ESP implementations MUST support anti-replay, though receivers may disable it per-SA.
+section: 3.4.3
+rfc2119_level: MUST NOT
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

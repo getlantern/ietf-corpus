@@ -1,0 +1,9 @@
+document: rfc-4301
+kind: design-rationale
+summary: 'Tunnel mode is required when either end of an SA is a security gateway because: (a) packets must reach the specific gateway with which the SA was negotiated; (b) all fragments must be delivered to the same IPsec instance for reassembly; (c) inner/outer headers are needed to retain fragmentation state across the IPsec processing boundary.'
+section: "4.1"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

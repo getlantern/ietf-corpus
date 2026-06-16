@@ -1,0 +1,9 @@
+document: rfc-4301
+kind: interoperability-note
+summary: IKEv2 (as published concurrently) does not enable negotiation of a single SA binding multiple pairs of local/remote addresses and ports; instead it treats multiple addresses as unordered sets that can be arbitrarily paired. Users MUST NOT include multiple selector sets in an SPD entry unless the intent aligns with IKE 'mix and match' semantics.
+section: 4.4.1.2
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

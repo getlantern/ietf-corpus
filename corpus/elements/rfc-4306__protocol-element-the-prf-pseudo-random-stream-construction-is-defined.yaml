@@ -1,0 +1,9 @@
+document: rfc-4306
+kind: protocol-element
+summary: The prf+ pseudo-random stream construction is defined as prf+(K,S) = T1 | T2 | T3 | ..., where T1 = prf(K, S|0x01), T2 = prf(K, T1|S|0x02), etc. Keys are taken from the output stream without regard to boundaries. The construction is not defined beyond 255 times the size of the prf output.
+section: "2.13"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

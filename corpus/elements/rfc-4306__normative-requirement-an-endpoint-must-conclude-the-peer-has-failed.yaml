@@ -1,0 +1,10 @@
+document: rfc-4306
+kind: normative-requirement
+summary: An endpoint MUST conclude the peer has failed only when repeated contact attempts have gone unanswered for a timeout period, or when a cryptographically protected INITIAL_CONTACT notification arrives on a different IKE_SA to the same authenticated identity. Endpoints MUST NOT conclude failure based on routing information (e.g., ICMP) or unprotected IKE messages.
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

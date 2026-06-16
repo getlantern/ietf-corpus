@@ -1,0 +1,10 @@
+document: rfc-4295
+kind: security-consideration
+summary: Several MOBILEIPV6-MIB objects are read-write (e.g., mip6Status, mip6BindingAdminStatus, mip6HaConf objects), meaning unauthorized SNMP SET access could disable MIPv6 services or manipulate binding cache entries. The document recommends using SNMPv3 with authentication and privacy protocols to protect these objects.
+section: "6"
+topics:
+    - mobility
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

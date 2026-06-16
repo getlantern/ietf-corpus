@@ -1,0 +1,11 @@
+document: rfc-4306
+kind: normative-requirement
+summary: To achieve perfect forward secrecy, when a connection is closed each endpoint MUST forget not only the session keys but also any information that could be used to recompute them, including the secrets used in the Diffie-Hellman calculation and any persistent state in a PRNG that could recompute DH secrets.
+section: "2.12"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

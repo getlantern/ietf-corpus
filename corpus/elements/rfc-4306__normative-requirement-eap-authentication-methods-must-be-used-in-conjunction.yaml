@@ -1,0 +1,11 @@
+document: rfc-4306
+kind: normative-requirement
+summary: EAP authentication methods MUST be used in conjunction with public key signature-based authentication of the responder to the initiator. EAP methods that create a shared key MUST use that shared key (the MSK) to generate AUTH payloads in the final IKE_AUTH messages. EAP methods that do not establish a shared key SHOULD NOT be used due to susceptibility to MITM attacks.
+section: "2.16"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

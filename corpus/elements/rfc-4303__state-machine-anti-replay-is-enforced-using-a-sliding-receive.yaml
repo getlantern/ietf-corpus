@@ -1,0 +1,9 @@
+document: rfc-4303
+kind: state-machine
+summary: Anti-replay is enforced using a sliding receive window. The right edge represents the highest validated Sequence Number; packets below the left edge are rejected. On integrity verification success the window is updated; on failure the packet is discarded and the window is not advanced. A minimum window size of 32 MUST be supported; 64 SHOULD be the default.
+section: 3.4.3
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

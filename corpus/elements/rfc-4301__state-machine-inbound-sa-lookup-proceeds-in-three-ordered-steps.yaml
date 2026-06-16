@@ -1,0 +1,9 @@
+document: rfc-4301
+kind: state-machine
+summary: 'Inbound SA lookup proceeds in three ordered steps: (1) match SPI + destination + source address; (2) match SPI + destination address; (3) match SPI alone (or SPI + protocol if separate AH/ESP SPI spaces). The first matching SAD entry is used; if none matches, the packet is discarded and an auditable event is logged.'
+section: "4.1"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
