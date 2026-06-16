@@ -1,0 +1,9 @@
+document: rfc-3931
+kind: design-rationale
+summary: When operating L2TP directly over IP, a reserved Session ID of zero is used to distinguish control messages from data messages, rather than using a T bit. The zero Session ID check is considered more efficient—both in header size for data packets and in processing speed—than inspecting a single bit.
+section: 4.1.1.2
+topics:
+    - vpn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

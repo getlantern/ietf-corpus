@@ -1,0 +1,11 @@
+document: rfc-3931
+kind: normative-requirement
+summary: When using AVP hiding, the shared key is derived as HMAC-MD5(shared_secret, 1), and the AVP value is encrypted using a chained MD5-XOR scheme seeded by the Attribute Type, shared key, and a Random Vector AVP value. The same random vector MUST NOT be used for two different instances of an AVP with the same Attribute Type unless their values are identical.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - vpn
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

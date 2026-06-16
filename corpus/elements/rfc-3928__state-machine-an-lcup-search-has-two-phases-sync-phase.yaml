@@ -1,0 +1,8 @@
+document: rfc-3928
+kind: state-machine
+summary: 'An LCUP search has two phases: sync phase (server sends current or changed entries) and persist phase (server notifies client of ongoing changes in real time). The updateType controls which phases occur: syncOnly (sync only), syncAndPersist (both), persistOnly (persist only). Transition from sync to persist is signaled by a stateUpdate informational response with persistPhase=TRUE.'
+section: "4"
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

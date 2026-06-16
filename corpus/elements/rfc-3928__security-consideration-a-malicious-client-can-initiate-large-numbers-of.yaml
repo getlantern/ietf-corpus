@@ -1,0 +1,9 @@
+document: rfc-3928
+kind: security-consideration
+summary: A malicious client can initiate large numbers of persistent searches to exhaust server resources. Servers SHOULD detect such clients, SHOULD limit per-client resource consumption, and SHOULD return lcupSecurityViolation when malicious behavior is inferred. Clients that receive lcupResourcesExhausted or lcupSecurityViolation SHOULD wait at least 5 seconds and SHOULD use exponential backoff before retrying.
+section: "9"
+topics:
+    - ldap
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

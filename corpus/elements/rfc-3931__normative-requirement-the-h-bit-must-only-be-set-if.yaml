@@ -1,0 +1,11 @@
+document: rfc-3931
+kind: normative-requirement
+summary: The H bit MUST only be set if (1) a shared secret exists between the LCCEs and (2) Control Message Authentication is enabled. If H bit is set on any AVP in a message, at least one Random Vector AVP MUST also be present and MUST precede the first hidden AVP.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - vpn
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

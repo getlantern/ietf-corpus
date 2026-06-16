@@ -1,0 +1,8 @@
+document: rfc-3928
+kind: design-rationale
+summary: LCUP sends complete entries rather than only changed attributes. Sending only deltas is hard to implement server-side and can leave clients with incomplete data when an entry enters scope due to a modification—the client would never see the initial attribute values.
+section: Appendix
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

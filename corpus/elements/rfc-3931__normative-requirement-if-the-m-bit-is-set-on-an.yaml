@@ -1,0 +1,9 @@
+document: rfc-3931
+kind: normative-requirement
+summary: If the M bit is set on an AVP unrecognized by its recipient, the associated session MUST be shut down with a CDN (Result Code 2, Error Code 8), or if the message governs a control connection, a StopCCN MUST be sent. If the M bit is not set on an unrecognized AVP, it MUST be silently ignored.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
