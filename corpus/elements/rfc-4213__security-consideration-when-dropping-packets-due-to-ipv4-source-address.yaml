@@ -1,0 +1,10 @@
+document: rfc-4213
+kind: security-consideration
+summary: When dropping packets due to IPv4 source address mismatch, implementations MUST discard silently and SHOULD NOT generate ICMP errors, to avoid revealing the tunnel's existence. If the implementation normally sends ICMP protocol-unreachable for unknown protocols, that same response MAY be sent for protocol-41 to ensure consistent behavior and resist probing.
+section: "5"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

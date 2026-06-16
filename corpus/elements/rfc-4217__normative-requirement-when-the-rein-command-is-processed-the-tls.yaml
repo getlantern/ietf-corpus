@@ -1,0 +1,9 @@
+document: rfc-4217
+kind: normative-requirement
+summary: When the REIN command is processed, the TLS session(s) MUST be cleared and the control and data connections revert to unprotected communications. The reply to REIN MUST be sent in a protected session prior to the session(s) being cleared. A server MUST NOT mandate the use of cached TLS sessions after REIN.
+section: "13"
+rfc2119_level: MUST
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

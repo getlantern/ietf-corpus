@@ -1,0 +1,9 @@
+document: rfc-4213
+kind: design-rationale
+summary: Configured tunnels are modeled as single-hop from the IPv6 perspective, making the tunnel opaque and invisible to traceroute. This is implemented by decrementing the IPv6 hop limit by 1 at both the encapsulator and decapsulator when forwarding, identical to forwarding on any other datalink.
+section: "3.3"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

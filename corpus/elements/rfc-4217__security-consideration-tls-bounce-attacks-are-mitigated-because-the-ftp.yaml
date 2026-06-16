@@ -1,0 +1,9 @@
+document: rfc-4217
+kind: security-consideration
+summary: TLS bounce attacks are mitigated because the FTP server acts as TLS server in data connections, so only services configured as TLS clients could be targeted—a counter-intuitive configuration. Additionally, mismatched authentication credentials between data and control connections allow servers to detect and drop illegitimate connections.
+section: 15.2.1
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

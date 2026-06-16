@@ -1,0 +1,9 @@
+document: rfc-4217
+kind: state-machine
+summary: 'TLS negotiation failure on the control connection has three possible states: (1) complete failure—connection reverts to unprotected, server issues unprotected ''421'' or client issues unprotected QUIT; (2) successful negotiation but unacceptable parameters—connection stays protected, issue protected ''421'' or protected QUIT; (3) failure during handshake—connection is in unknown state, both sides SHOULD simply drop the connection.'
+section: "10.1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

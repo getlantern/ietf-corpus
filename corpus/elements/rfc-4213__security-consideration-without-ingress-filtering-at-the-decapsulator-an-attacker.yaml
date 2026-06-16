@@ -1,0 +1,10 @@
+document: rfc-4213
+kind: security-consideration
+summary: Without ingress filtering at the decapsulator, an attacker can inject a packet with a spoofed inner IPv6 source address such that Bob receives a packet appearing to come from Alice. Even with full IPv4 and IPv6 ingress filtering deployed across all routers, the spoofed tunneled packet is not filtered. The mitigation is to accept encapsulated packets only from the explicitly configured tunnel source address.
+section: "4"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

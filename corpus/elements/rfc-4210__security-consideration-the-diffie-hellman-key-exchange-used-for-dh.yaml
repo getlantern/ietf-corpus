@@ -1,0 +1,10 @@
+document: rfc-4210
+kind: security-consideration
+summary: The Diffie-Hellman key exchange used for DH-based MAC protection is subject to attack if DH parameters are not validated. End entities may freely choose DH algorithm parameters, so the CA must be capable of generating an appropriate ephemeral key pair; implementations must validate parameters to resist subgroup and small-subgroup attacks.
+section: "8.3"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

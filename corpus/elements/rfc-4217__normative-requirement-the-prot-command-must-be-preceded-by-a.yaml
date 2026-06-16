@@ -1,0 +1,10 @@
+document: rfc-4217
+kind: normative-requirement
+summary: The PROT command MUST be preceded by a PBSZ command, and a PBSZ command MUST be preceded by a successful TLS negotiation. Once accepted, data connections MUST use the negotiated PROT security level until another PROT command is accepted, a REIN is issued, or AUTH is re-negotiated.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

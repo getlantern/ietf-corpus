@@ -1,0 +1,10 @@
+document: rfc-4213
+kind: security-consideration
+summary: Tunnels are more vulnerable than physical links to attacks exploiting Hop Count 255 and link-local address assumptions used by Neighbor Discovery, because any Internet attacker can inject an IPv6-in-IPv4 packet to the tunnel decapsulator. Mitigations include verifying IPv4 source address, discarding invalid IPv6 source addresses, and performing IPv4 and IPv6 ingress filtering.
+section: "5"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

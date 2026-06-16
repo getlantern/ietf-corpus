@@ -1,0 +1,9 @@
+document: rfc-4210
+kind: design-rationale
+summary: The root CA key update scheme does not use X.509 v3 extensions so that it works even for version 1 certificates; the four cross-signed certificate values (OldWithOld, OldWithNew, NewWithOld, NewWithNew) allow entities with either old or new CA public key to bridge the transition without protocol changes.
+section: "4.4"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4217
+kind: normative-requirement
+summary: When TLS is in use, the server SHOULD NOT rely on SIGURG to process input on the control channel during data transfers. The client MUST send all data, including Telnet commands (used for ABOR and STAT), across the TLS session.
+section: "14"
+rfc2119_level: MUST
+topics:
+    - tls
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

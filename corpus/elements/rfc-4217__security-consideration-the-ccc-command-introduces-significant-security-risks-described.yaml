@@ -1,0 +1,9 @@
+document: rfc-4217
+kind: security-consideration
+summary: The CCC command introduces significant security risks described in RFC 2228. Servers SHOULD refuse to process CCC on sessions without client authentication (TLS client cert or USER/PASS), to prevent anonymous clients from issuing repeated AUTH TLS followed by CCC to exhaust server resources.
+section: "15.3"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

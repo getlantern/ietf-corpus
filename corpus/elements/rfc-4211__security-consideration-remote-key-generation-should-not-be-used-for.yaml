@@ -1,0 +1,10 @@
+document: rfc-4211
+kind: security-consideration
+summary: Remote key generation SHOULD NOT be used for signing keys; a remotely generated signing key creates repudiation risk because the generating entity (and anyone in the transfer path) could also have possessed the key. Encryption keys transported remotely MUST be protected with strong encryption algorithms and a content- or key-encryption key.
+section: "9"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

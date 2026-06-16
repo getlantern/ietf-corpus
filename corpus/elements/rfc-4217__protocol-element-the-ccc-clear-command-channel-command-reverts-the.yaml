@@ -1,0 +1,8 @@
+document: rfc-4217
+kind: protocol-element
+summary: The CCC (Clear Command Channel) command reverts the control connection from TLS back to plaintext. On receipt, the server sends '200', shuts down the TLS session, and continues in plaintext. After CCC, the server MUST NOT accept further PBSZ or PROT commands; all subsequent data transfers use the previously negotiated PROT setting.
+section: "5"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

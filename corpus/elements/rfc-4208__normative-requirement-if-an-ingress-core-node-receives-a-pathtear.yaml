@@ -1,0 +1,9 @@
+document: rfc-4208
+kind: normative-requirement
+summary: If an ingress core-node receives a PathTear without having first seen an ADMIN_STATUS object indicating impending deletion, it MAY pause the PathTear and first send a Path message with ADMIN_STATUS. When the Resv echoing ADMIN_STATUS is received, or upon timer expiry per RFC 3473, the ingress core-node MUST forward the PathTear.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4213
+kind: protocol-element
+summary: Dynamic tunnel MTU determination is OPTIONAL; the encapsulator tracks IPv4 path MTU using RFC 1191 and sets the effective IPv6 MTU to (IPv4 path MTU - 20). If the path MTU would yield an IPv6 MTU below 1280 bytes, the encapsulator uses IPv4 fragmentation for packets up to 1280 bytes and sends ICMPv6 'packet too big' (MTU=1280) for larger ones.
+section: 3.2.2
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

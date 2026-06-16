@@ -1,0 +1,10 @@
+document: rfc-4210
+kind: security-consideration
+summary: When POP is demonstrated via the indirect encrypted-certificate method, the CA must ensure it does not publish the certificate before certConf is received and validated; premature publication would allow a third party who intercepts the certificate response to register the certificate without possessing the private key.
+section: "8.1"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

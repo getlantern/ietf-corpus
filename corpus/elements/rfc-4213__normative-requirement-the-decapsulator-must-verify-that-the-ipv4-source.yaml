@@ -1,0 +1,11 @@
+document: rfc-4213
+kind: normative-requirement
+summary: The decapsulator MUST verify that the IPv4 source address of an incoming protocol-41 packet matches the configured tunnel endpoint address before further processing. Packets with non-matching source addresses MUST be discarded and an ICMP message SHOULD NOT be generated.
+section: "3.6"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

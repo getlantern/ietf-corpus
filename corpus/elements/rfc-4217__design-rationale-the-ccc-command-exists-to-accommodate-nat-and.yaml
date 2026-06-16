@@ -1,0 +1,9 @@
+document: rfc-4217
+kind: design-rationale
+summary: The CCC command exists to accommodate NAT and firewall devices that must inspect the FTP control connection to adjust their behavior (e.g., for PORT/PASV address rewriting). Authentication and PROT negotiation happen under TLS protection, after which CCC drops TLS from the control channel while maintaining data connection protection.
+section: "5"
+topics:
+    - tls
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

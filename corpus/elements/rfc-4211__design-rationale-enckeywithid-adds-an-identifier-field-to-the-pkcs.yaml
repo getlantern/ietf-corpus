@@ -1,0 +1,10 @@
+document: rfc-4211
+kind: design-rationale
+summary: 'EncKeyWithID adds an identifier field to the PKCS#8 PrivateKeyInfo structure to thwart an escrow-agent attack: without it, an attacker could intercept an encrypted private key, wrap it in a new certificate request, and then claim a recovery on the key as if they were the owner.'
+section: 4.2.1
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4210
+kind: normative-requirement
+summary: For multi-message transactions, all requests and responses MUST carry the same transactionID. A client MUST NOT have more than one transaction with the same transactionID in progress at any time to a given server. A server that cannot accommodate a new transactionID MUST return ErrorMsgContent with PKIFailureInfo of transactionIdInUse. It is RECOMMENDED that clients use 128 bits of pseudo-random data as the initial transactionID.
+section: 5.1.1
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

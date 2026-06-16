@@ -1,0 +1,10 @@
+document: rfc-4213
+kind: normative-requirement
+summary: When reconstructing the IPv6 packet after decapsulation, the length MUST be determined from the IPv6 payload length field rather than from the IPv4 packet length, because the IPv4 packet may be padded to a length larger than the IPv6 packet plus the IPv4 header.
+section: "3.6"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

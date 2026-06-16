@@ -1,0 +1,9 @@
+document: rfc-4213
+kind: design-rationale
+summary: 'Treating the tunnel as a 64KB MTU interface is prohibited for three reasons: (1) it causes unnecessary fragmentation, reducing performance because the loss unit becomes smaller than the retransmission unit; (2) IPv4 fragments inside the tunnel must be reassembled at router tunnel endpoints, consuming memory and resources; (3) the encapsulator cannot verify the decapsulator''s ability to defragment or handle large MRUs.'
+section: "3.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

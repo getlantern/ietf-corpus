@@ -1,0 +1,9 @@
+document: rfc-4217
+kind: interoperability-note
+summary: TLS does not support the notion of TCP Urgent data, which FTP historically used to signal ABOR and STAT commands during data transfers via the Telnet IP/DM mechanism and SIGURG. Implementations MUST route these commands through the TLS session instead.
+section: "14"
+topics:
+    - tls
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
