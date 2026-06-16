@@ -1,0 +1,6 @@
+document: rfc-4997
+kind: design-rationale
+summary: Field values are represented on the wire as the binary value of 'val % (2^len)', allowing ROHC-FN expressions to use the full range of integers internally while confining the exchanged bit strings to bounded unsigned values. For example, CVALUE=-1 with CLENGTH=8 yields the bit string 11111111.
+section: 4.4.2
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

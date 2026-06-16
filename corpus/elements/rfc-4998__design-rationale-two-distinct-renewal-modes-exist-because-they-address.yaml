@@ -1,0 +1,9 @@
+document: rfc-4998
+kind: design-rationale
+summary: 'Two distinct renewal modes exist because they address different failure scenarios: Timestamp Renewal suffices when only the TSA''s private key or the asymmetric algorithm is at risk (original data need not be accessed); Hash-Tree Renewal is mandatory when the Merkle tree''s hash algorithm weakens, since forging a new tree sibling would then be feasible.'
+section: "1.2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

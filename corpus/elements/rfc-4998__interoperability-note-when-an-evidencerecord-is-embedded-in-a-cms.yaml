@@ -1,0 +1,9 @@
+document: rfc-4998
+kind: interoperability-note
+summary: When an EvidenceRecord is embedded in a CMS object as an unsigned/unprotected attribute, verification requires removing the EvidenceRecord attribute and adapting containing field lengths before computing the hash; for multiple embedded EvidenceRecords, verification of the nth record requires the first n-1 to remain present.
+section: A
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

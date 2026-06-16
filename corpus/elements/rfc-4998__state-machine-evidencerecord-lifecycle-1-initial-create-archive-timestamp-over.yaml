@@ -1,0 +1,9 @@
+document: rfc-4998
+kind: state-machine
+summary: 'EvidenceRecord lifecycle: (1) Initial — create Archive Timestamp over data object(s); (2) Timestamp Renewal — triggered when TSA certificate expires or asymmetric/hash algorithm used in timestamp weakens, covers only the old timestamp without accessing archived data; (3) Hash-Tree Renewal — triggered when hash algorithm used in the Merkle tree weakens, requires re-hashing all data objects and appending a new ArchiveTimeStampChain.'
+section: "1.2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

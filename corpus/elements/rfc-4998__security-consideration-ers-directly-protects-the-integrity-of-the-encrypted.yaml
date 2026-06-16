@@ -1,0 +1,9 @@
+document: rfc-4998
+kind: security-consideration
+summary: ERS directly protects the integrity of the encrypted bit-stream, freezing the bit structure at archiving time. If the encryption scheme later becomes insecure, re-encryption is impossible without breaking the integrity proof; only encryption methods that allow unambiguous proof of the encrypted-to-unencrypted mapping should be used, and encryption parameters must be analyzed for potential collision attacks.
+section: "7"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
