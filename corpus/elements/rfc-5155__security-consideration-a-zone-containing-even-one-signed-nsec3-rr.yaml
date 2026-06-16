@@ -1,0 +1,9 @@
+document: rfc-5155
+kind: security-consideration
+summary: 'A zone containing even one signed NSEC3 RR with a high iteration value is vulnerable to a downgrade attack: an attacker replaces normal NSEC3 RRs in a response with the high-iteration RR, forcing validators to treat the response as insecure. High iteration counts also enable denial-of-service against servers that must compute multiple hashes per negative response.'
+section: 12.1.4
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-5175
+kind: design-rationale
+summary: The 8-bit flags field in IPv6 Router Advertisement messages was being exhausted by multiple protocols reserving single-bit flags (M, O, H, Prf, P, R). Rather than redesigning the RA message header, an NDP option mechanism is used to expand the flag space by an additional 48 bits.
+section: "1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

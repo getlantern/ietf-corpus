@@ -1,0 +1,9 @@
+document: rfc-5162
+kind: normative-requirement
+summary: For the CLOSE command, if at least one message was permanently removed, the server MUST increment the per-mailbox mod-sequence, MUST remember the incremented mod-sequence and corresponding UID for each removed message, and MUST send the updated HIGHESTMODSEQ in the tagged OK response. No untagged EXPUNGE or VANISHED responses are sent for CLOSE.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

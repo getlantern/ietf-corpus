@@ -1,0 +1,6 @@
+document: rfc-5170
+kind: protocol-element
+summary: 'The maximum source block length B depends on the code rate CR and the 20-bit ESI field: max1_B = 2^(20 - ceil(log2(1/CR))). For CR in [1/2, 1), max1_B = 2^19 = 524,288 symbols. Codec-internal limitations (e.g., 16-bit ESI storage) may further constrain B to max2_B, giving B = min(max1_B, max2_B).'
+section: "5.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

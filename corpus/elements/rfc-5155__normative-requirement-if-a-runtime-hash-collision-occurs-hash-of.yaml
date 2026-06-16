@@ -1,0 +1,10 @@
+document: rfc-5155
+kind: normative-requirement
+summary: If a runtime hash collision occurs (hash of a non-existing QNAME collides with an existing NSEC3 owner name), the server MUST return a response with RCODE=2 (SERVFAIL), as it cannot construct a valid denial-of-existence proof.
+section: 7.2.9
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

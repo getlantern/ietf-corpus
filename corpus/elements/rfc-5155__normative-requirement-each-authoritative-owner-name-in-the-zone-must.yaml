@@ -1,0 +1,10 @@
+document: rfc-5155
+kind: normative-requirement
+summary: Each authoritative owner name in the zone MUST have a corresponding NSEC3 RR. Each empty non-terminal MUST also have an NSEC3 RR unless it is derived solely from an insecure delegation covered by an Opt-Out NSEC3 RR. Unsigned delegations MAY have an NSEC3 RR, but if not, an Opt-Out NSEC3 RR covering the next closer name MUST exist.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

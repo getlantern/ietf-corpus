@@ -1,0 +1,10 @@
+document: rfc-5155
+kind: normative-requirement
+summary: The AD bit MUST NOT be set when returning a response containing a closest encloser proof in which the NSEC3 RR covering the 'next closer' name has the Opt-Out bit set, because names in the Opt-Out span may be insecure delegations whose existence cannot be cryptographically verified.
+section: "9.2"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

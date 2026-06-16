@@ -1,0 +1,9 @@
+document: rfc-5162
+kind: normative-requirement
+summary: The client MUST cache the HIGHESTMODSEQ value received on mailbox opening. The client MUST update its copy of HIGHESTMODSEQ whenever the server sends a subsequent HIGHESTMODSEQ OK response code. If the client receives NOMODSEQ on SELECT/EXAMINE (QRESYNC), it MUST remove the cached HIGHESTMODSEQ value.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

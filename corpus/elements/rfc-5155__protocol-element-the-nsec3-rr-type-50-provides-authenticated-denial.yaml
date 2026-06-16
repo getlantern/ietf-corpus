@@ -1,0 +1,10 @@
+document: rfc-5155
+kind: protocol-element
+summary: The NSEC3 RR (type 50) provides authenticated denial of existence by storing a hashed owner name chain. Its RDATA contains Hash Algorithm (1 octet), Flags (1 octet, Opt-Out in LSB), Iterations (16-bit unsigned), Salt Length (1 octet), Salt (variable), Hash Length (1 octet), Next Hashed Owner Name (variable binary), and Type Bit Maps. The owner name is the base32 encoding of the hash prepended as a single label to the zone name.
+section: "3"
+topics:
+    - dns
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

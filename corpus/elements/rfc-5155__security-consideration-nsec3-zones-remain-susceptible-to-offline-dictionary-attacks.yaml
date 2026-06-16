@@ -1,0 +1,10 @@
+document: rfc-5155
+kind: security-consideration
+summary: 'NSEC3 zones remain susceptible to offline dictionary attacks: an attacker retrieves all NSEC3 RRs and hashes all likely names to enumerate the zone. The iteration count makes this more expensive. Pre-calculated dictionary attacks are mitigated by changing the salt regularly; the salt SHOULD be at least 64 bits long and unpredictable.'
+section: 12.1.1
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

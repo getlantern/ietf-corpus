@@ -1,0 +1,9 @@
+document: rfc-5155
+kind: design-rationale
+summary: 'New DNSKEY algorithm identifiers (6: DSA-NSEC3-SHA1, 7: RSASHA1-NSEC3-SHA1) are introduced as aliases for existing algorithms solely to signal NSEC3 use to resolvers. NSEC3-unaware resolvers seeing these unknown algorithm IDs will treat the zone as insecure rather than attempting—and failing—to validate NSEC3 denial-of-existence proofs.'
+section: "2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

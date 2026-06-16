@@ -1,0 +1,9 @@
+document: rfc-5162
+kind: normative-requirement
+summary: If the server is capable of storing modification sequences and at least one message was permanently removed by EXPUNGE, it MUST increment the per-mailbox mod-sequence, MUST remember the incremented mod-sequence and corresponding UID for each removed message, and MUST send the updated mod-sequence using the HIGHESTMODSEQ response code in the tagged OK response.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

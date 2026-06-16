@@ -1,0 +1,8 @@
+document: rfc-5155
+kind: wire-format
+summary: 'Type Bit Maps encoding (shared with NSEC per RFC 4034): the 16-bit RR type space is divided into 256 window blocks; each present block is encoded as Window Block # (1 octet), Bitmap Length (1 octet, 1–32), and Bitmap (up to 32 octets). Blocks with no types present MUST NOT be included; trailing zero octets MUST be omitted.'
+section: 3.2.1
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

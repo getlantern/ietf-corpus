@@ -1,0 +1,10 @@
+document: rfc-5152
+kind: design-rationale
+summary: Per-domain path computation cannot guarantee end-to-end path optimality and may fail to find diverse paths due to the 'trapping' problem. For example, with a serialized per-domain approach, selecting A-B-C-D first may prevent finding the two diverse paths A-C-D and A-B-D that actually exist.
+section: "5"
+topics:
+    - routing
+    - realtime
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

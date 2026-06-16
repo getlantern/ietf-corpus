@@ -1,0 +1,10 @@
+document: rfc-5155
+kind: design-rationale
+summary: NSEC RRs enable zone enumeration because the ordered chain of NSEC records lists all names in a zone, making it trivial to walk the zone by querying non-existent names. Enumerated zones expose e-mail addresses for spam and registrant data, rendering zone-data-protection policies unenforceable. NSEC3 addresses this by replacing owner names in the chain with cryptographic hashes.
+section: "1.1"
+topics:
+    - dns
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,6 @@
+document: rfc-5163
+kind: wire-format
+summary: 'PDU-Concat SNDU format (D=0): 1-bit D, 15-bit Length, 16-bit Type (0x0003), 6-byte NPA address, 16-bit PDU-Concat-Type, then repeated (1-bit R, 15-bit PDU-x-Length, PDU-x-data) entries, followed by CRC-32. When D=1, the NPA address is absent and PDU-Concat-Type immediately follows the 4-byte base header.'
+section: "3.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

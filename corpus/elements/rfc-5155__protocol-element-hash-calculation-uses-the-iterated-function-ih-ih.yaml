@@ -1,0 +1,9 @@
+document: rfc-5155
+kind: protocol-element
+summary: 'Hash calculation uses the iterated function IH: IH(salt, x, 0) = H(x || salt); IH(salt, x, k) = H(IH(salt, x, k-1) || salt) for k > 0. The owner name is hashed in canonical wire-format form (fully expanded, fully qualified, lowercase), with wildcards left unexpanded. The method is based on PKCS#5 (RFC 2898).'
+section: "5"
+topics:
+    - dns
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

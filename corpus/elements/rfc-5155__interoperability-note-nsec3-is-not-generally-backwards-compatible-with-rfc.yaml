@@ -1,0 +1,9 @@
+document: rfc-5155
+kind: interoperability-note
+summary: NSEC3 is not generally backwards-compatible with RFC 4033/4034/4035. NSEC3-unaware resolvers that encounter the new algorithm identifiers (6 or 7) will treat responses from NSEC3-signed zones as insecure per RFC 4035 Section 5.2, rather than erroneously marking them bogus.
+section: "2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

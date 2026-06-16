@@ -1,0 +1,9 @@
+document: rfc-5162
+kind: normative-requirement
+summary: The client MUST NOT update its HIGHESTMODSEQ with a MODSEQ FETCH data item value as soon as it is received; instead it should wait until a tagged response and use the highest value among all MODSEQ FETCH data items received since the last tagged response, if that value is bigger than the current cached HIGHESTMODSEQ.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

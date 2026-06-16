@@ -1,0 +1,8 @@
+document: rfc-5162
+kind: design-rationale
+summary: Implementations storing mod-sequences for expunged messages should limit queue size and expire older records to avoid storage problems. In the worst case, storing <min UID, max UID, mod-sequence> triples for a mailbox could require nearly 64GB of storage. A separate 'highest expired mod-sequence' value is maintained to handle expired records correctly.
+section: "4.3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

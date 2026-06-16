@@ -1,0 +1,11 @@
+document: rfc-5152
+kind: normative-requirement
+summary: If the next hop is not present in the TED, the boundary LSR SHOULD check if the next-hop boundary LSR has IP reachability (via IGP or BGP) when the next-hop address is outside the current domain and the next-hop domain is PSC with in-band control channel. If the next hop is not reachable, a signaling failure occurs and the LSR SHOULD send an RSVP PathErr with error code=24.
+section: "4"
+rfc2119_level: SHOULD
+topics:
+    - realtime
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
