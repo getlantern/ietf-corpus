@@ -1,0 +1,11 @@
+document: rfc-4359
+kind: design-rationale
+summary: HMAC transforms cannot provide true data origin authentication in group (multicast) settings because all group members share the single HMAC key, meaning any member can forge another member's packets. RSA digital signatures provide asymmetric authentication so only the holder of the private key can sign, enabling per-sender verification even in groups.
+section: "1"
+topics:
+    - ipsec
+    - crypto
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

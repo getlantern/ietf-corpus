@@ -1,0 +1,10 @@
+document: rfc-4352
+kind: normative-requirement
+summary: The last octet of each audio frame MUST be padded with zeroes if not all bits in the octet are used; each audio frame MUST be octet-aligned. The ISF field in the payload header SHALL be set to 0 for payloads containing only frames with Frame Type values 0–13.
+section: 4.3.3
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

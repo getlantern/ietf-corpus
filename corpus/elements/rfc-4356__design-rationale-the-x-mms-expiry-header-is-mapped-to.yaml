@@ -1,0 +1,8 @@
+document: rfc-4356
+kind: design-rationale
+summary: The 'X-Mms-Expiry:' header is mapped to the SMTP DELIVER-BY extension with by-mode 'R' (relative) rather than an Internet message header because expiry is a transport-layer concern. Each SMTP server decrements the remaining time; if by-mode is 'N' (notify), a 'relayed' DSN MUST be issued instead.
+section: 2.1.3.2
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

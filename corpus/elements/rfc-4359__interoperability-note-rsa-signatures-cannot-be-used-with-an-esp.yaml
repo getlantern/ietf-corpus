@@ -1,0 +1,9 @@
+document: rfc-4359
+kind: interoperability-note
+summary: RSA signatures cannot be used with an ESP Combined Mode algorithm that includes an explicit ICV (such as AES-GCM), because the Combined Mode algorithm adds its own ICV field, leaving no room for a separate authentication algorithm to supply the ICV.
+section: "4"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

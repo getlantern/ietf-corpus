@@ -1,0 +1,10 @@
+document: rfc-4359
+kind: security-consideration
+summary: Man-in-the-middle attacks are defeated as long as the receiver obtains the sender's RSA public key via a trusted mechanism. An attacker cannot forge signatures without the RSA private key; the modulus size must be chosen so that the private key cannot be reconstructed before it is retired.
+section: "6.6"
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

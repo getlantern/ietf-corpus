@@ -1,0 +1,9 @@
+document: rfc-4359
+kind: security-consideration
+summary: The DoS attack can be mitigated by nesting RSA-authenticated ESP/AH inside an HMAC-authenticated ESP/AH; the HMAC is checked first and attackers without the HMAC key cannot force RSA verification. However, a legitimate group member with the HMAC key can still mount the attack.
+section: "6.7"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

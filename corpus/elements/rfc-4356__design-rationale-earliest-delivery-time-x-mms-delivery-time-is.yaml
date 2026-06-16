@@ -1,0 +1,8 @@
+document: rfc-4356
+kind: design-rationale
+summary: Earliest delivery time ('X-Mms-Delivery-Time:') is a message submission feature, not a relay feature, so it is stripped and not mapped to any SMTP relay element. This prevents intermediate relay servers from attempting to honor a future delivery constraint they cannot correctly enforce.
+section: 2.1.3.2
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4352
+kind: security-consideration
+summary: All audio data bits MUST be encrypted to ensure confidentiality. The payload header and ToC carry only frame type metadata and have lesser confidentiality requirements, but encrypting them is not prohibited. When interleaving is used with encryption and a key change is made, frames from prior keys may remain in the interleaving buffer and be playable by participants denied the new key; interleaving patterns SHOULD NOT overlap key changes.
+section: "6.1"
+topics:
+    - rtp
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

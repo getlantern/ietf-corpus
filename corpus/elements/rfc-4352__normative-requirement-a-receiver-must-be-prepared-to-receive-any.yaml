@@ -1,0 +1,10 @@
+document: rfc-4352
+kind: normative-requirement
+summary: A receiver MUST be prepared to receive any audio frame multiple times because the format allows overlapping packet time periods for redundancy. All redundantly sent frames MUST use the same frame type and ISF and MUST carry the same RTP timestamp, or MUST be a NO_DATA frame (FT=15).
+section: "4"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

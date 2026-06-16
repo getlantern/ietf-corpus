@@ -1,0 +1,9 @@
+document: rfc-4352
+kind: interoperability-note
+summary: An AMR-WB+ endpoint SHOULD also declare 'audio/AMR-WB' capability (per RFC 3267) during SDP negotiation when it supports both, because AMR-WB is a proper subset of AMR-WB+. The AMR-WB+ decoder can receive both stereo and mono frame types regardless of its playout capabilities, since stereo-to-mono downmixing is internal.
+section: "7.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
