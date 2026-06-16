@@ -1,0 +1,8 @@
+document: rfc-5227
+kind: state-machine
+summary: 'ACD proceeds through three phases: (1) Probing — wait random 0–PROBE_WAIT seconds, then send PROBE_NUM probes spaced PROBE_MIN–PROBE_MAX apart; (2) Announcing — if no conflict after ANNOUNCE_WAIT seconds post-last-probe, broadcast ANNOUNCE_NUM announcements ANNOUNCE_INTERVAL apart; (3) Ongoing conflict detection — monitor for conflicting ARP packets for the full duration the address is in use.'
+section: "2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

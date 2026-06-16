@@ -1,0 +1,9 @@
+document: rfc-5219
+kind: design-rationale
+summary: MP3 frames contain a back-pointer ('main_data_begin') to data in earlier frames, meaning they are not true Application Data Units and cannot be decoded independently. RFC 2250's approach of aligning packet boundaries with frame boundaries therefore handles packet loss inefficiently, as loss of one frame can render data in adjacent frames useless.
+section: "1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

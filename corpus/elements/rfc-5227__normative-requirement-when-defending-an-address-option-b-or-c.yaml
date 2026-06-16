@@ -1,0 +1,9 @@
+document: rfc-5227
+kind: normative-requirement
+summary: When defending an address (option b or c in Section 2.4), if a second conflicting ARP packet is received within DEFEND_INTERVAL seconds of the previous one, the host MUST NOT send another defensive ARP Announcement, to prevent both hosts from flooding the network in an endless broadcast loop.
+section: "2.4"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

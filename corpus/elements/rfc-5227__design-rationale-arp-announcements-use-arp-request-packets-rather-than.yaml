@@ -1,0 +1,8 @@
+document: rfc-5227
+kind: design-rationale
+summary: 'ARP Announcements use ARP Request packets rather than ARP Reply packets for two reasons: (1) historical precedent — Stevens [Ste94] and all major OS implementations (BSD, Windows, Mac OS) use Request packets; (2) pragmatism — incorrect ARP implementations are more likely to reject unsolicited broadcast Replies (expecting Replies only via unicast or only in response to recent Requests) than to reject broadcast Requests, which are already expected unsolicited.'
+section: "3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

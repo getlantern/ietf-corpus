@@ -1,0 +1,10 @@
+document: rfc-5222
+kind: security-consideration
+summary: Server identity checks as described in RFC 2818 Section 3.1 are RECOMMENDED. The hostname compared against the server certificate is the hostname in the URI returned by U-NAPTR, not the DNS name used as input to NAPTR resolution. Omitting the check allows an attacker to masquerade as a LoST server.
+section: "18"
+topics:
+    - security
+    - tls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-5225
+kind: design-rationale
+summary: ROHCv2 compresses extension headers using the same chaining mechanism as other protocol headers, rather than RFC 3095's list compression. This simplifies the algorithm but requires that extension headers not be added or removed during the lifetime of a context; if they are, compression must be restarted for the flow.
+section: "4.2"
+topics:
+    - realtime
+    - rtp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

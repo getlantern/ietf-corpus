@@ -1,0 +1,9 @@
+document: rfc-5219
+kind: interoperability-note
+summary: Only layer III (MP3) frames are converted to ADU frames; layer I and II frames, which are self-contained without back-pointers, are sent as-is with only an ADU descriptor prepended. Receivers leave layer I/II frames untouched after removing the descriptor.
+section: "5"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

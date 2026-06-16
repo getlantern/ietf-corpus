@@ -1,0 +1,10 @@
+document: rfc-5225
+kind: design-rationale
+summary: 'There is an inherent tradeoff between robustness to packet loss and to reordering in the LSB encoding of the MSN: the interpretation interval offset p determines the maximum tolerated reordering depth, while (2^k - 1) - p determines the maximum tolerated consecutive losses. The reorder_ratio control field allows the compressor to adjust this split dynamically based on observed channel characteristics.'
+section: 5.1.2
+topics:
+    - realtime
+    - rtp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

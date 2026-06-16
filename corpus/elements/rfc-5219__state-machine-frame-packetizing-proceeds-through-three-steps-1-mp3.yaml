@@ -1,0 +1,9 @@
+document: rfc-5219
+kind: state-machine
+summary: 'Frame packetizing proceeds through three steps: (1) MP3 frames → ADU frames via back-pointer resolution, (2) ADU frames → interleaved ADU frames (optional reordering), (3) interleaved ADU frames → RTP packets. Depacketizing reverses this: sort by RTP sequence number, depacketize, deinterleave, then convert ADU frames back to MP3 frames.'
+section: "6"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

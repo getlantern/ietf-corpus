@@ -1,0 +1,9 @@
+document: rfc-5225
+kind: design-rationale
+summary: ROHCv2 eliminates the IR-DYN packet type found in RFC 3095. Instead, each profile defines a CO header (co_repair) with a 7-bit CRC that can perform robust context repair. This also means only the IR header can change the association between a CID and its profile, simplifying the state machine.
+section: "4.2"
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

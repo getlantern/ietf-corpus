@@ -1,0 +1,10 @@
+document: rfc-5225
+kind: normative-requirement
+summary: When the compressor detects that the scaled RTP timestamp residue (ts_offset) has changed, it MUST NOT select a compressed header format that uses scaled timestamp encoding before re-establishing the residue. If a decompressor receives scaled timestamp bits while ts_stride equals zero, it MUST NOT deliver the packet and SHOULD treat this as a CRC verification failure.
+section: 6.6.8
+rfc2119_level: MUST NOT
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

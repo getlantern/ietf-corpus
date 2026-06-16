@@ -1,0 +1,9 @@
+document: rfc-5219
+kind: design-rationale
+summary: Interleaving is applied to ADU frames rather than MP3 frames because MP3 frames' back-pointers make them order-dependent; converting to ADUs first eliminates this dependency, enabling interleaving that was not possible with the RFC 2250 format.
+section: "6"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

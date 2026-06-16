@@ -1,0 +1,8 @@
+document: rfc-5222
+kind: design-rationale
+summary: Service boundary references rather than inline values are offered because geodetic boundaries can contain thousands of points. The 128-bit random key is globally unique and tied to a specific boundary version; clients can safely cache boundaries across multiple service URL refresh cycles without re-fetching unchanged boundary data.
+section: "5.6"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

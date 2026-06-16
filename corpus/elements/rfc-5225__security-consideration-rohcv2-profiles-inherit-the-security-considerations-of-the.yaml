@@ -1,0 +1,10 @@
+document: rfc-5225
+kind: security-consideration
+summary: ROHCv2 profiles inherit the security considerations of the ROHC framework (RFC 4995). Header compression reduces the information available for per-packet inspection at intermediate nodes; if the compression channel itself can be tampered with, an attacker could cause decompression failures or corrupt reconstructed headers. The CRC mechanisms in IR and CO headers provide integrity verification of the decompressed result but do not replace link-layer or end-to-end security.
+section: "7"
+topics:
+    - security
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

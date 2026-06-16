@@ -1,0 +1,9 @@
+document: rfc-5225
+kind: design-rationale
+summary: The 3-bit CRC over control fields (control_crc3) protects updates to control fields in co_common and co_repair headers because these updated values are not always used to decompress the header that carries them and thus are not covered by the CRC-7 over the uncompressed header. Without this CRC, a successful CRC-7 verification could mask an incorrectly updated control field.
+section: 6.6.11
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-5225
+kind: state-machine
+summary: 'The decompressor operates as a three-state machine: No Context (NC), Repair Context (RC), and Full Context (FC). The decompressor starts in NC, moves to FC upon successful CRC-8 validation of an IR header, drops to RC upon context damage detection, and drops to NC upon static context damage detection. Only in FC may all CO header types be decompressed.'
+section: 5.2.1
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

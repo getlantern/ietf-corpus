@@ -1,0 +1,10 @@
+document: rfc-5225
+kind: normative-requirement
+summary: The decompressor MUST always validate the integrity of the control fields covered by the 3-bit CRC when processing a co_common or co_repair compressed header. Failure to validate should be treated as a decompression failure, though the decompressor MAY still forward the packet if the CRC-7 over the uncompressed header succeeds.
+section: 6.3.7
+rfc2119_level: MUST
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

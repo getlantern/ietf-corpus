@@ -1,0 +1,9 @@
+document: rfc-5227
+kind: normative-requirement
+summary: At any time, if a host receives an ARP packet where the 'sender IP address' matches the host's own address but the 'sender hardware address' does not match, the host MUST respond by either (a) ceasing to use the address, (b) defending once if not defended within DEFEND_INTERVAL, or (c) defending indefinitely for fixed-address infrastructure. Ignoring conflicting ARP packets is not acceptable.
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

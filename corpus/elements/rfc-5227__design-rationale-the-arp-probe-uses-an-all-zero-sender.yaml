@@ -1,0 +1,8 @@
+document: rfc-5227
+kind: design-rationale
+summary: The ARP Probe uses an all-zero 'sender IP address' to avoid polluting ARP caches on other hosts in the case where the probed address turns out to be already in use; if the sender IP were set to the desired address, other hosts would cache the mapping before the probe confirmed the address is safe to use.
+section: 2.1.1
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
