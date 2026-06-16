@@ -1,0 +1,9 @@
+document: rfc-4420
+kind: design-rationale
+summary: A single shared registry of attribute bit numbers is used for both the Attributes Flags TLV and the RRO Attributes Subobject, with the same bit number indicating the same attribute in both contexts. This avoids maintaining two separate registries and simplifies implementation, at the cost of reserving a bit in one place even when it has meaning only in the other.
+section: "8"
+topics:
+    - mpls
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

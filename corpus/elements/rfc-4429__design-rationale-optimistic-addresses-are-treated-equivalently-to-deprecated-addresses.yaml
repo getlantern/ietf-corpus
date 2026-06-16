@@ -1,0 +1,9 @@
+document: rfc-4429
+kind: design-rationale
+summary: Optimistic addresses are treated equivalently to Deprecated addresses by default, indicating they are available but should not be preferred. This reuse of the Deprecated semantics allows Default Address Selection (RFC 3484) to prefer other addresses without requiring a new selection rule; implementations can simply set the Deprecated flag alongside the Optimistic flag.
+section: "2.1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

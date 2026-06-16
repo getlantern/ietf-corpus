@@ -1,0 +1,10 @@
+document: rfc-4429
+kind: normative-requirement
+summary: When a node has a unicast packet to send from an Optimistic Address to a neighbor whose link-layer address is unknown, it MUST NOT perform Address Resolution. It SHOULD forward the packet to a default router (relying on ICMP Redirect), or otherwise SHOULD buffer the packet until DAD completes.
+section: "3.2"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

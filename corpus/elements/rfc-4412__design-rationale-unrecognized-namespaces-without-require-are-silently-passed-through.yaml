@@ -1,0 +1,9 @@
+document: rfc-4412
+kind: design-rationale
+summary: Unrecognized namespaces without Require are silently passed through (not rejected) by default so that calls can succeed when a transit proxy shares no common namespace with the UAC and UAS but the UAC and UAS themselves do share a namespace. Requiring support at every hop would make end-to-end priority impossible in mixed networks.
+section: 4.6.2
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

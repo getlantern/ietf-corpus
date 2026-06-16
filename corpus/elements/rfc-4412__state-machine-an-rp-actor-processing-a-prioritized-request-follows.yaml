@@ -1,0 +1,9 @@
+document: rfc-4412
+kind: state-machine
+summary: 'An RP actor processing a prioritized request follows three steps: (1) if no namespace is recognized, treat as no Resource-Priority header; (2) verify authorization per local policy, rejecting with 401/403 if unauthorized; (3) if authorized and resources are available, serve normally; if resources are congested, either preempt existing sessions or queue the request.'
+section: "4.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

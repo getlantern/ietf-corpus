@@ -1,0 +1,9 @@
+document: rfc-4420
+kind: design-rationale
+summary: The SESSION_ATTRIBUTE object's 8-bit Flags field was nearly exhausted (5 of 8 bits assigned), motivating a new extensible object rather than expanding the existing one. A new C-Type for SESSION_ATTRIBUTE was rejected because it would break backward compatibility with deployed implementations expecting C-Type 1 or 7, and because TLV support would have required significant changes to the existing object.
+section: "1"
+topics:
+    - mpls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

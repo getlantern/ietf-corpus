@@ -1,0 +1,9 @@
+document: rfc-4425
+kind: design-rationale
+summary: The 'mode=3' parameter allows the RTP sender to omit entry-point and sequence layer headers from RTP packets when they never change, reducing overhead. The receiver reconstructs them from the 'config' SDP parameter. This optimization is motivated by the significant size of repeated sequence headers especially with multiple HRD leaky bucket parameter sets.
+section: "4.9"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

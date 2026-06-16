@@ -1,0 +1,10 @@
+document: rfc-4420
+kind: normative-requirement
+summary: Each transit LSR MUST examine the attributes in LSP_REQUIRED_ATTRIBUTES and MUST NOT forward the object without acting on its contents. An LSR not recognizing a TLV type code in this object MUST reject the Path message with PathErr Error Code 'Unknown Attributes TLV' and Error Value set to the unknown TLV type code.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

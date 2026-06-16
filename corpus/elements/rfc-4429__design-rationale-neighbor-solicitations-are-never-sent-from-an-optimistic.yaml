@@ -1,0 +1,9 @@
+document: rfc-4429
+kind: design-rationale
+summary: Neighbor Solicitations are never sent from an Optimistic Address because NSes include a Source Link-Layer Address Option (SLLAO), which would update neighbors' Neighbor Cache entries and could disrupt the rightful owner of the address in a collision scenario. DAD NSes use the unspecified address (::) and omit the SLLAO, so they are safe.
+section: "2.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

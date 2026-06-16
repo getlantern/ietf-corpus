@@ -1,0 +1,9 @@
+document: rfc-4429
+kind: state-machine
+summary: 'An address transitions through states: Tentative (DAD in progress, not usable) → Optimistic (DAD in progress, usable with restrictions, entered by choice at DAD start) → Preferred or Deprecated (DAD complete, per RFC 2462 lifetime rules). If a collision is detected (NS from :: received, or NA received from collidee), the Optimistic address is immediately deconfigured.'
+section: "3.3"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4422
+kind: security-consideration
+summary: Upon receiving a protected data buffer, the receiver MUST NOT blindly allocate the amount of memory specified in the buffer size field, as an oversized value may indicate an attack and could cause an out-of-memory condition. If a large block is detected, the receiver SHOULD close the connection.
+section: 6.1.5
+rfc2119_level: MUST NOT
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

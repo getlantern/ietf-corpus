@@ -1,0 +1,9 @@
+document: rfc-4412
+kind: design-rationale
+summary: Multiple namespaces per request are permitted because a single call may traverse SIP elements run by different administrations subject to different priority schemes, and there is no global ordering among those schemes. Each SIP element only processes the namespace(s) it understands and ignores others, enabling transparent end-to-end delivery.
+section: "1"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

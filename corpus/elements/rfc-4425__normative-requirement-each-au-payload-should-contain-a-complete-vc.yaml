@@ -1,0 +1,11 @@
+document: rfc-4425
+kind: normative-requirement
+summary: Each AU payload SHOULD contain a complete VC-1 frame. If this would cause the RTP packet to exceed the MTU size, the frame SHOULD be fragmented into multiple AUs to avoid IP-level fragmentation. When an AU contains a fragmented frame, this MUST be indicated by setting the FRAG field in the AU header.
+section: "4.2"
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4419
+kind: design-rationale
+summary: Fixed DH groups (as used in diffie-hellman-group1-sha1) create a long-term security risk because extensive precomputation and improved discrete logarithm algorithms could compromise a fixed group over the lifetime of the SSH protocol. Dynamic group negotiation reduces the incentive for precomputation by allowing the server to rotate groups over time.
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

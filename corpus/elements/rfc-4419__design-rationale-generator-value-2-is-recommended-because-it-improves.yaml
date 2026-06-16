@@ -1,0 +1,8 @@
+document: rfc-4419
+kind: design-rationale
+summary: Generator value 2 is recommended because it improves multiplication efficiency. It is usable even when not a primitive root, as it still covers half of the space of possible residues. The modulus sieve can be limited to primes where p mod 24 = 11 to ensure 2 is a valid generator.
+section: "6.1"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

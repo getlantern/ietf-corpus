@@ -1,0 +1,8 @@
+document: rfc-4426
+kind: state-machine
+summary: 'Span protection involves a master/slave state machine: slave detects failure and sends Failure Indication → master allocates protection link and sends Switchover Request (after disconnecting Extra Traffic) → slave disconnects Extra Traffic, switches to protection link, and sends Switchover Response → master completes switchover on receipt of response.'
+section: "2.3"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

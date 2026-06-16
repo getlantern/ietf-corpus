@@ -1,0 +1,9 @@
+document: rfc-4429
+kind: design-rationale
+summary: When an Optimistic Node cannot reach a neighbor directly (because it cannot send an NS), it forwards packets via its default router and relies on the router to issue an ICMP Redirect with a Target Link-Layer Address Option (TLLAO). This populates the ON's Neighbor Cache without requiring a direct NS from the Optimistic Address.
+section: "2.3"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

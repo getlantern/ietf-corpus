@@ -1,0 +1,9 @@
+document: rfc-4429
+kind: security-consideration
+summary: There are scenarios where Optimistic DAD can transiently create incorrect Neighbor Cache entries. For example, if a router sends an NS for an address and the Optimistic Node responds before the legitimate owner, the router may forward queued packets to the wrong host. These conditions are expected to be short-lived.
+section: "5"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

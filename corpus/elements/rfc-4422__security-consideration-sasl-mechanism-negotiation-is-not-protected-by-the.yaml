@@ -1,0 +1,8 @@
+document: rfc-4422
+kind: security-consideration
+summary: SASL mechanism negotiation is not protected by the subsequent authentication exchange and is therefore subject to downgrade attacks. Implementations SHOULD NOT advertise mechanisms that cannot meet minimum security requirements, SHOULD NOT enter exchanges that cannot meet them, and SHOULD verify that completed exchanges result in services that meet requirements. The client can detect downgrade attacks by comparing the server's mechanism list before and after installing an integrity-protected security layer.
+section: 6.1.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

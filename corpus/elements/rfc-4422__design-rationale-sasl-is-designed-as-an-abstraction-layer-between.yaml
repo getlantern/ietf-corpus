@@ -1,0 +1,8 @@
+document: rfc-4422
+kind: design-rationale
+summary: SASL is designed as an abstraction layer between protocols (SMTP, LDAP, XMPP) and mechanisms (EXTERNAL, GSSAPI, PLAIN) so that new protocols can reuse existing mechanisms without redesign and existing protocols can adopt new mechanisms without redesign. This layering intentionally does not hide mechanism particulars from protocol implementations, since identity mapping between authentication and authorization identities is necessarily protocol-specific.
+section: "1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4429
+kind: normative-requirement
+summary: A node MUST NOT reply to a Neighbor Solicitation for an Optimistic Address that was sent from the unspecified address (::). Receipt of such an NS indicates an address collision (another node is also performing DAD for the same address), and the address MUST be deconfigured as specified in RFC 2462 for Tentative addresses.
+section: "3.3"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

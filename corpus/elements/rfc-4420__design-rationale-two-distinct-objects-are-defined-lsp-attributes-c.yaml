@@ -1,0 +1,9 @@
+document: rfc-4420
+kind: design-rationale
+summary: Two distinct objects are defined—LSP_ATTRIBUTES (C-Num 197, form 11bbbbbb) and LSP_REQUIRED_ATTRIBUTES (C-Num 67, form 0bbbbbbb)—to distinguish attributes that only key LSRs need to examine from those that all transit LSRs must act on. Legacy LSRs transparently forward LSP_ATTRIBUTES but reject Path messages containing LSP_REQUIRED_ATTRIBUTES they do not recognize.
+section: "1"
+topics:
+    - mpls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
