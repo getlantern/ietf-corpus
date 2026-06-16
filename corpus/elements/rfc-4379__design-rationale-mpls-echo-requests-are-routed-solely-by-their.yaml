@@ -1,0 +1,8 @@
+document: rfc-4379
+kind: design-rationale
+summary: MPLS echo requests are routed solely by their label stack; the IP destination address is never used in a forwarding decision. This is a deliberate choice so that the probe validates the data plane directly, even when the sender may not know the address of the LSP's egress router a priori.
+section: "1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

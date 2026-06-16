@@ -1,0 +1,10 @@
+document: rfc-4387
+kind: security-consideration
+summary: Unvalidated query values passed to RDBMS back-ends enable SQL injection attacks; even read-only access can expose password hashes. Implementations MUST use parameterised queries (placeholders) rather than assembling SQL strings from query values, and MUST check both encoded and decoded forms of input.
+section: "4"
+topics:
+    - security
+    - pkix
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

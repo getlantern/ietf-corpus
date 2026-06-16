@@ -1,0 +1,11 @@
+document: rfc-4383
+kind: normative-requirement
+summary: 'For SRTP, the TESLA MAC input M'' SHALL be the SRTP TESLA Authenticated Portion (RTP header concatenated with the Encrypted Portion) prepended with the rollover counter: M'' = ROC || TESLA Authenticated Portion. For SRTCP, M'' SHALL consist of the SRTCP TESLA Authenticated Portion only (RTCP header and Encrypted Portion).'
+section: "4.6"
+rfc2119_level: SHALL
+topics:
+    - rtp
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

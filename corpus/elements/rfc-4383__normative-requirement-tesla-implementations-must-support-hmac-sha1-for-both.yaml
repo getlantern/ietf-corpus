@@ -1,0 +1,11 @@
+document: rfc-4383
+kind: normative-requirement
+summary: TESLA implementations MUST support HMAC-SHA1 for both the TESLA MAC and the TESLA PRF. The key chain is defined as K_i = HMAC_SHA1(K_{i+1}, 0) and the MAC key as K'_i = HMAC_SHA1(K_i, 1).
+section: "6"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4387
+kind: wire-format
+summary: 'Binary search key encoding: arbitrary-length binary fields (e.g., DN hashes) are first SHA-1 hashed to 160 bits, then base64-encoded to 27 characters (trailing ''='' padding dropped). Fields marked ''Base64'' only are base64-encoded without the SHA-1 step; trailing ''='' padding is removed in all cases.'
+section: "2.1"
+topics:
+    - pkix
+    - http
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

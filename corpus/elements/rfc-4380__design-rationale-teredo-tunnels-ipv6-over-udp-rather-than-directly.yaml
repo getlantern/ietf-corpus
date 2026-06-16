@@ -1,0 +1,11 @@
+document: rfc-4380
+kind: design-rationale
+summary: Teredo tunnels IPv6 over UDP rather than directly over IPv4 or over TCP because UDP is one of only two protocols guaranteed to cross the majority of NAT devices, and UDP avoids the severe QoS degradation from TCP-over-TCP encapsulation.
+section: "3"
+topics:
+    - ip
+    - nat
+    - udp
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

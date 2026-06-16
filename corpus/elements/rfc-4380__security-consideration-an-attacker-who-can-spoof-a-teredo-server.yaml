@@ -1,0 +1,12 @@
+document: rfc-4380
+kind: security-consideration
+summary: An attacker who can spoof a Teredo server response can perform a man-in-the-middle attack by sending a forged Router Advertisement that causes the client to embed the attacker's chosen mapped address and port in its Teredo IPv6 address, redirecting all subsequent traffic through the attacker. Secure qualification with HMAC-SHA1 nonce verification is the specified mitigation.
+section: "7.2"
+topics:
+    - ip
+    - nat
+    - security
+    - v6ops
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

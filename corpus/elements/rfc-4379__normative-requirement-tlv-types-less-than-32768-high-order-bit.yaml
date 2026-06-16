@@ -1,0 +1,9 @@
+document: rfc-4379
+kind: normative-requirement
+summary: TLV Types less than 32768 (high-order bit = 0) are mandatory and MUST either be supported or cause the router to return code 2 ('One or more of the TLVs was not understood'). Types ≥ 32768 (high-order bit = 1) are optional and SHOULD be ignored if not understood.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

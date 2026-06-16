@@ -1,0 +1,9 @@
+document: rfc-4382
+kind: design-rationale
+summary: mplsL3VpnVrfConfRteMxThrshTime defaults to 0, meaning the agent issues only a single max-threshold notification and suppresses re-notification until routes fall below the threshold. This prevents continuous notification storms when routes are repeatedly added to a full VRF.
+section: "7"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

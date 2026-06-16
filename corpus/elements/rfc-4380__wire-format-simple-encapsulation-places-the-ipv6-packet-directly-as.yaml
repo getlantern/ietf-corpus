@@ -1,0 +1,11 @@
+document: rfc-4380
+kind: wire-format
+summary: 'Simple encapsulation places the IPv6 packet directly as the payload of a UDP/IPv4 datagram. When origin indication is needed, an 8-octet prefix precedes the IPv6 packet: two null bytes, 16-bit obfuscated source UDP port (XOR 0xFFFF), and 32-bit obfuscated source IPv4 address (XOR 0xFFFFFFFF), all in network byte order.'
+section: 5.1.1
+topics:
+    - ip
+    - nat
+    - udp
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

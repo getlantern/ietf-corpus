@@ -1,0 +1,12 @@
+document: rfc-4380
+kind: normative-requirement
+summary: Before forwarding a packet to a Teredo IPv6 destination (cases 4 and 5 of packet transmission), the client MUST verify that the IPv4 destination address embedded in the Teredo address is a global unicast address. Non-global ranges to reject include 0/8, 127/8, 10/8, 172.16/12, 192.168/16, 169.254/16, 192.88.99/24, 224/4, 255.255.255.255, and directed broadcast addresses.
+section: 5.2.4
+rfc2119_level: MUST
+topics:
+    - ip
+    - nat
+    - security
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

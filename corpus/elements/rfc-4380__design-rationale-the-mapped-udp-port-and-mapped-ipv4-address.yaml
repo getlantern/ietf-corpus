@@ -1,0 +1,10 @@
+document: rfc-4380
+kind: design-rationale
+summary: The mapped UDP port and mapped IPv4 address embedded in Teredo addresses and origin indications are obfuscated by XOR with 0xFFFF and 0xFFFFFFFF respectively to prevent NATs that perform 'probabilistic rewrite' from replacing embedded addresses and ports in the IPv6 payload.
+section: "3.1"
+topics:
+    - ip
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4383
+kind: design-rationale
+summary: The MKI field necessarily separates the TESLA MAC from the SRTP MAC in the packet layout because SRTP does not cover the MKI in its MAC computation, and changing SRTP to include MKI coverage would require redefining the SRTP specification, which is impossible without breaking existing implementations.
+section: "4.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

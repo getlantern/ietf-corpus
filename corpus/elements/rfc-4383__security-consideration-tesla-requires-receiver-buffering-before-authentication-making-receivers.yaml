@@ -1,0 +1,11 @@
+document: rfc-4383
+kind: security-consideration
+summary: TESLA requires receiver buffering before authentication, making receivers vulnerable to denial-of-service attacks from floods of bogus packets. The external group-key SRTP MAC (MAY be used) provides a first line of defense against external DoS; its short 32-bit size is intentional since an adversary must average 2^31 attempts to forge an accepted packet before the TESLA check catches it.
+section: "7"
+topics:
+    - rtp
+    - realtime
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

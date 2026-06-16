@@ -1,0 +1,9 @@
+document: rfc-4379
+kind: normative-requirement
+summary: The FEC 128 deprecated sub-TLV (sub-Type 9) SHOULD be accepted and processed by implementations, but new echo requests SHOULD use the current sub-TLV (sub-Type 10) unless explicitly configured otherwise. An LSR receiving the deprecated TLV SHOULD use the echo request's source IP address to infer the sender's PE address.
+section: 3.2.8
+rfc2119_level: SHOULD
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

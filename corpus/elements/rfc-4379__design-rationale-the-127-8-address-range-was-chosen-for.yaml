@@ -1,0 +1,9 @@
+document: rfc-4379
+kind: design-rationale
+summary: The 127/8 address range was chosen for echo request destination addresses because RFC 1122 requires hosts to silently discard such packets (preventing accidental delivery to end users if an LSP breaks), RFC 1812 prevents routers from IP-forwarding them, and the 16M address space provides sufficient variation to exercise all ECMP paths by varying the destination address.
+section: "2.1"
+topics:
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

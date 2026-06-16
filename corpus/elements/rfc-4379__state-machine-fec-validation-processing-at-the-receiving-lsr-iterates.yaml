@@ -1,0 +1,8 @@
+document: rfc-4379
+kind: state-machine
+summary: 'FEC validation processing at the receiving LSR iterates over the received label stack (Stack-R): for each Label-L at Label-stack-depth, look up in the ILM; if no entry return code 11 (no label entry); if ''pop and continue'' decrement depth and loop; if ''swap or pop-and-switch'' set return code 8 (label switched) and check Downstream Mapping; if Label-stack-depth reaches 0 set return code 3 (egress). Best-return-code tracks the most informative result across all stack depths.'
+section: "4.4"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

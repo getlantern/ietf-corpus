@@ -1,0 +1,11 @@
+document: rfc-4383
+kind: design-rationale
+summary: The 80-bit TESLA MAC length is chosen to meet RFC 2104's requirements that MAC length be at least 80 bits and at least half the output size of the underlying hash (SHA-1 = 160 bits). This is intentionally shorter than IPsec's common 96-bit MAC but is sufficient given current cryptanalytic capabilities.
+section: "7"
+topics:
+    - rtp
+    - realtime
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

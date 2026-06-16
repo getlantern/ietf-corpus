@@ -1,0 +1,10 @@
+document: rfc-4380
+kind: state-machine
+summary: 'Qualification procedure states: Initial -> Starting (RS sent with cone bit=1). If response arrives with cone bit=1, state is Cone NAT (qualified). If no response after N retries, repeat with cone bit=0; if no response again, Off-line. If response with different mapped port/address, Symmetric NAT (not usable); if same, Restricted Cone NAT (qualified). Default T=4s, N=3.'
+section: 5.2.1
+topics:
+    - nat
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

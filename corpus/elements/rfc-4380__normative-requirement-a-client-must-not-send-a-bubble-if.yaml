@@ -1,0 +1,11 @@
+document: rfc-4380
+kind: normative-requirement
+summary: A client MUST NOT send a bubble if the last transmission to that peer was less than 2 seconds ago, and MUST NOT send a bubble if it has already sent 4 bubbles to that peer in the last 300 seconds without receiving a direct response, to balance reliability against unnecessary retransmissions.
+section: 5.2.6
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

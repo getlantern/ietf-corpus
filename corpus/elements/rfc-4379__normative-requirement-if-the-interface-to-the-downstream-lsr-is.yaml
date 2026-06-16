@@ -1,0 +1,9 @@
+document: rfc-4379
+kind: normative-requirement
+summary: If the interface to the downstream LSR is unnumbered and the LSR does not know its neighbor's IP address, it MUST set Downstream IP Address to 127.0.0.1 (IPv4) or 0::1 (IPv6) with interface index 0. An LSR receiving either of these addresses MUST bypass interface verification but continue label validation.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

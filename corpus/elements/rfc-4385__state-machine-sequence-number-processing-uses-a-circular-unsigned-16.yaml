@@ -1,0 +1,8 @@
+document: rfc-4385
+kind: state-machine
+summary: 'Sequence number processing uses a circular unsigned 16-bit space (excluding zero). Initial expected sequence number is 1. On receipt: if sequence number is zero, treat as in-order; if equal to expected, in-order; if within 32767 ahead, implementaton MAY treat as in-order; if within 32768 behind (wrapping), MAY treat as in-order; otherwise out-of-order (drop or reorder at receiver discretion).'
+section: "4.2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

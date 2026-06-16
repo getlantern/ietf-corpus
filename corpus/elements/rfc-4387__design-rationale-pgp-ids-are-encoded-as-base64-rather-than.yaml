@@ -1,0 +1,8 @@
+document: rfc-4387
+kind: design-rationale
+summary: PGP IDs are encoded as base64 rather than the traditional C-style 0xABCDEF hex notation to ensure consistency and avoid ambiguity, since hex strings are also valid base64 strings and near-misses like '0xABCDRF' are hard to classify reliably.
+section: 2.5.1
+topics:
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

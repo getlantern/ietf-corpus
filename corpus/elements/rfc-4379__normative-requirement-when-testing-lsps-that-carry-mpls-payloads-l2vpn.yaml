@@ -1,0 +1,9 @@
+document: rfc-4379
+kind: normative-requirement
+summary: When testing LSPs that carry MPLS payloads (L2VPN, L3VPN), the echo request SHOULD be encapsulated with at least one additional label using the Nil FEC to prevent penultimate-hop-popping from allowing the packet to escape via an unlabeled interface, which would mask certain LSP breakages.
+section: "4.2"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

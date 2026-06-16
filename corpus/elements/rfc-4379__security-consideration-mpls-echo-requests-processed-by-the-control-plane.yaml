@@ -1,0 +1,9 @@
+document: rfc-4379
+kind: security-consideration
+summary: MPLS echo requests processed by the control plane could be exploited for denial-of-service attacks by sending large volumes to transit LSRs. The 127/8 destination address scheme limits packet escape from the MPLS network, but implementations should apply rate limiting on control-plane processing of echo requests to protect against resource exhaustion.
+section: "6"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

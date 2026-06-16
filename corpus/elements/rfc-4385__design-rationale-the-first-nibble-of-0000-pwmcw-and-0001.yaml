@@ -1,0 +1,9 @@
+document: rfc-4385
+kind: design-rationale
+summary: The first nibble of 0000 (PWMCW) and 0001 (PWACH) were chosen specifically because all IPv4 and IPv6 packets begin with version nibble 4 or 6, ensuring LSRs performing MPLS payload inspection cannot mistake a PW packet for an IP packet, thereby avoiding unintended ECMP load-balancing.
+section: "2"
+topics:
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
