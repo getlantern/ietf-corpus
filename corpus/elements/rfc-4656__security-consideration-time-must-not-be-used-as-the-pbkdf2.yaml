@@ -1,0 +1,11 @@
+document: rfc-4656
+kind: security-consideration
+summary: Time MUST NOT be used as the PBKDF2 salt. Using time would allow an attacker who observes two sessions using the same passphrase to derive the same key from publicly observable data. The salt MUST be pseudo-randomly generated per-session.
+section: "6.9"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - crypto
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

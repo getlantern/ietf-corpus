@@ -1,0 +1,10 @@
+document: rfc-4656
+kind: design-rationale
+summary: AES-ECB (not CBC) is used for the first block of OWAMP-Test packets in authenticated mode, and each encrypted packet in encrypted mode uses an independent CBC stream with IV=0. This ensures that lost, duplicated, or reordered UDP packets do not corrupt decryption of other packets in the session.
+section: 4.1.2
+topics:
+    - measurement
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

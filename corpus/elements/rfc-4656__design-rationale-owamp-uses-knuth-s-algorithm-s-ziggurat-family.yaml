@@ -1,0 +1,8 @@
+document: rfc-4656
+kind: design-rationale
+summary: OWAMP uses Knuth's Algorithm S (ziggurat family) for generating exponential random variates rather than a log-based algorithm. Log-based algorithms produce potentially different floating-point results across implementations, which would cause sender and receiver to compute divergent packet schedules and misattribute lost packets.
+section: "5"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

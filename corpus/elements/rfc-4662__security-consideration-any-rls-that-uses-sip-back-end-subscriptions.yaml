@@ -1,0 +1,11 @@
+document: rfc-4662
+kind: security-consideration
+summary: Any RLS that uses SIP back-end subscriptions MUST be able to act as an authentication service as defined in RFC 4474, provided local administrative policy allows it. When the RLS and subscriber are in different domains, the RLS generally cannot vouch for the user's identity, and SHOULD subscribe to resources using its own identity, obtaining only publicly available resource information.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

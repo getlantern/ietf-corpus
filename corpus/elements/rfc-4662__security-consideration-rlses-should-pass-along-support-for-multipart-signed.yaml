@@ -1,0 +1,12 @@
+document: rfc-4662
+kind: security-consideration
+summary: RLSes SHOULD pass along support for 'multipart/signed' and 'application/pkcs7-mime' content types to SIP back-end subscriptions if the subscriber includes them in the initial SUBSCRIBE. Failing to do so may cause resources to refuse to divulge state or subscribers to discard valid state. RLSes should not modify MIME bodies received from back-end subscriptions.
+section: "7.3"
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - security
+    - crypto
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

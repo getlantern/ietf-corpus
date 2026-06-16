@@ -1,0 +1,10 @@
+document: rfc-4662
+kind: normative-requirement
+summary: RLSes MUST NOT send NOTIFY messages that do not contain RLMI for a subscription if they have previously sent NOTIFY messages in that subscription containing RLMI. Similarly, RLSes MUST NOT send NOTIFY messages that do contain RLMI if they have previously sent NOTIFY messages in that subscription without RLMI. The nature of a subscription (single resource vs. list) cannot change during its lifetime.
+section: "4.5"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

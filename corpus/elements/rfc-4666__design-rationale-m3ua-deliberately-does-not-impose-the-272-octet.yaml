@@ -1,0 +1,6 @@
+document: rfc-4666
+kind: design-rationale
+summary: M3UA deliberately does not impose the 272-octet Signalling Information Field (SIF) limit from SS7 MTP Level 2, since larger blocks can be handled natively by M3UA/SCTP without upper-layer segmentation or reassembly. However, when an SG interworks with an SS7 network that does not support larger blocks, the SG must enforce the 272-octet constraint to prevent ISUP/SCCP fragmentation.
+section: 1.3.2.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

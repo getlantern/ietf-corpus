@@ -1,0 +1,9 @@
+document: rfc-4656
+kind: wire-format
+summary: 'Error Estimate is 16 bits: S-bit (1 = clock synchronized to external UTC source such as GPS or NTP), Z-bit (MBZ), 6-bit Scale (unsigned), 8-bit Multiplier (unsigned). Error in seconds = Multiplier * 2^(Scale−32). Multiplier MUST NOT be zero; a zero Multiplier means the packet SHOULD be discarded as corrupt.'
+section: 4.1.2
+rfc2119_level: MUST NOT
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

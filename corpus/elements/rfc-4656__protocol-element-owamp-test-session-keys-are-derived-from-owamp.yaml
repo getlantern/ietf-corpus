@@ -1,0 +1,10 @@
+document: rfc-4656
+kind: protocol-element
+summary: OWAMP-Test session keys are derived from OWAMP-Control keys using the SID. The AES Session-key is derived by AES-ECB encrypting the OWAMP-Control AES Session-key with the 16-octet SID as key. The HMAC Session-key is derived by AES-CBC (IV=0) encrypting the 32-octet OWAMP-Control HMAC Session-key with the SID as key.
+section: 4.1.2
+topics:
+    - measurement
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

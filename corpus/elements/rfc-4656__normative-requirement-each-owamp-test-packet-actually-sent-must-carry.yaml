@@ -1,0 +1,9 @@
+document: rfc-4656
+kind: normative-requirement
+summary: Each OWAMP-Test packet actually sent MUST carry the best possible approximation of its real departure time as its timestamp. If a scheduled send time is in the past by more than Timeout, the sender MUST NOT send the packet (the receiver would consider it lost regardless). The sender MUST track skipped packets and report them via Skip Ranges in Stop-Sessions.
+section: 4.1.1
+rfc2119_level: MUST
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

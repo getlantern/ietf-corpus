@@ -1,0 +1,8 @@
+document: rfc-4667
+kind: state-machine
+summary: 'The generic L2VPN setup algorithm iterates over SOURCE_FORWARDERS and TARGET_FORWARDERS lists. States include: pick source forwarder, pick target forwarder, check router ID (same→local cross-connect or skip, different→pseudowire setup), check existing pseudowire, initiate ICRQ, wait for response (ICRP→bind and ICCN, CDN→skip), and handle simultaneous ICRQ via tie detection and tie breaking.'
+section: "5.3"
+topics:
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

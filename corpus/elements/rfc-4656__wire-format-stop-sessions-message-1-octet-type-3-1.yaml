@@ -1,0 +1,8 @@
+document: rfc-4656
+kind: wire-format
+summary: 'Stop-Sessions message: 1-octet type (3), 1-octet Accept, 2-octet MBZ, 4-octet Number of Sessions, 8-octet MBZ; followed by session description records (each with 16-octet SID, 4-octet Next Seqno, 4-octet Number of Skip Ranges, and ordered Skip Range pairs of First/Last Seqno Skipped); concluded with 16-octet HMAC. Skip Ranges MUST be in order.'
+section: "3.8"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

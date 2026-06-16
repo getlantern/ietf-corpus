@@ -1,0 +1,10 @@
+document: rfc-4656
+kind: wire-format
+summary: 'Set-Up-Response message (176 octets): 4-octet Mode (one bit set for chosen mode), 80-octet KeyID (UTF-8, zero-padded), 64-octet Token (16-octet challenge + 16-octet AES Session-key + 32-octet HMAC Session-key, AES-CBC encrypted with IV=0 using PBKDF2-derived key), 16-octet Client-IV (random, unique per session).'
+section: "3.1"
+topics:
+    - measurement
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-4656
+kind: security-consideration
+summary: 'AES MUST be included in all OWAMP implementations. The shared secret is a passphrase (MUST NOT contain newlines) from which a session key is derived using PBKDF2 (PKCS #5) with HMAC-SHA1 as the PRF. AES Session-key and HMAC Session-key MUST be generated with sufficient entropy (RFC 4086) and SHOULD be derived independently of each other.'
+section: "6.4"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

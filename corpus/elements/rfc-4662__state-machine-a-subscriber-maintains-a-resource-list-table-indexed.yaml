@@ -1,0 +1,9 @@
+document: rfc-4662
+kind: state-machine
+summary: 'A subscriber maintains a resource-list table indexed by resource URI. On full-state NOTIFY (fullState=''true''): verify version is greater than local, flush table, repopulate from document. On partial-state NOTIFY (fullState=''false''): if version is exactly one higher, increment and update rows; if more than one higher, set to new version and generate a refresh SUBSCRIBE; if less than or equal, discard.'
+section: "5.6"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

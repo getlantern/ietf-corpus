@@ -1,0 +1,9 @@
+document: rfc-4656
+kind: design-rationale
+summary: In authenticated mode, the timestamp is sent in cleartext while only the sequence number block is AES-ECB encrypted. This allows the sender to record and transmit the timestamp without an encryption step in the critical path, improving timestamp accuracy compared to encrypted mode where the timestamp must be fetched and then encrypted before sending.
+section: 4.1.2
+topics:
+    - measurement
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

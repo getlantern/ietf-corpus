@@ -1,0 +1,10 @@
+document: rfc-4668
+kind: security-consideration
+summary: 'The radiusAuthServerInetAddress and radiusAuthClientServerInetPortNumber objects are sensitive: knowledge of the server address could aid attacks against the authentication server, and knowledge of the client''s source port could enable impersonation of the client to send data to the server. GET and NOTIFY access to these objects should be controlled and their values encrypted in transit.'
+section: "8"
+topics:
+    - radius
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

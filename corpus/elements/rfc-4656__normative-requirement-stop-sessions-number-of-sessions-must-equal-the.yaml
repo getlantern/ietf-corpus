@@ -1,0 +1,9 @@
+document: rfc-4656
+kind: normative-requirement
+summary: 'Stop-Sessions Number of Sessions MUST equal the count of send sessions started by the local side that have not been previously terminated: the Control-Client MUST account for each accepted Request-Session where Conf-Receiver was set; the Control-Server MUST account for each where Conf-Sender was set. A mismatch renders the message invalid and the connection SHOULD be closed.'
+section: "3.8"
+rfc2119_level: MUST
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

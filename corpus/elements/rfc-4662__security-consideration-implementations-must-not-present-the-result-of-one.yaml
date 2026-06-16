@@ -1,0 +1,11 @@
+document: rfc-4662
+kind: security-consideration
+summary: Implementations MUST NOT present the result of one back-end subscription to more than one user unless the RLS has adequate access to the complete authorization policy AND has determined that sharing does not violate that policy. Even when possible, this mode of operation is NOT RECOMMENDED, as resources may render different or conflicting states depending on the subscribing user's identity.
+section: "7.2"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

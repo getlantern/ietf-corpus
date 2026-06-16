@@ -1,0 +1,11 @@
+document: rfc-4656
+kind: protocol-element
+summary: OWAMP-Control integrity protection uses HMAC-SHA1 truncated to 128 bits (16 octets). Each HMAC covers everything transmitted in one direction since the previous HMAC. When encrypting, HMAC is computed before encryption; when decrypting, decryption precedes HMAC verification. The HMAC MUST be checked as early as possible.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - measurement
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
