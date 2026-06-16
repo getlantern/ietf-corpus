@@ -1,0 +1,8 @@
+document: rfc-4717
+kind: design-rationale
+summary: 'A control word is used to prevent ECMP misclassification: without it, an ATM cell whose VPI begins with 0x4 or 0x6 could be mistaken for an IPv4/IPv6 packet by ECMP implementations that inspect the first nibble after the MPLS label stack, causing misordering or OAM path divergence.'
+section: "5.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
