@@ -1,0 +1,8 @@
+document: rfc-5046
+kind: security-consideration
+summary: An Advertised STag is automatically invalidated upon normal task completion via the SendInvSE Message carrying the SCSI Response PDU. For bidirectional commands and abnormal completions, the initiator is required to explicitly invalidate STags. The initiator must always sanity-check the invalidation to prevent unauthorized remote buffer access.
+section: 1.4.1
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-5044
+kind: normative-requirement
+summary: 'When multiple Markers fall within a single large FPDU, they MUST all point to the same location: the first octet of the ULPDU Length field for that FPDU. When a Marker falls exactly between FPDUs, FPDUPTR MUST be 0x0000 and the Marker MUST be included in the CRC of the following FPDU.'
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

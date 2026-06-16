@@ -1,0 +1,8 @@
+document: rfc-5043
+kind: design-rationale
+summary: 'DDP-SSN is introduced because neither SCTP SSN nor TSN is suitable for tracking submission order: SSN is not assigned to unordered chunks, and TSN ordering is non-deterministic since the SCTP sender may reorder unordered chunks to encourage bundling.'
+section: 5.2.1
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

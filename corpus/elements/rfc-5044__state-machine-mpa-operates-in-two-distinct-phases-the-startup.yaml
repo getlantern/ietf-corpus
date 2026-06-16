@@ -1,0 +1,8 @@
+document: rfc-5044
+kind: state-machine
+summary: 'MPA operates in two distinct phases: the Startup Phase (exchange of MPA Request and Reply Frames as plain TCP byte streams without CRCs or Markers) and the Full Operation Phase (exchange of FPDUs with CRC, Markers, and MULPDU rules). Transition from Startup to Full Operation is triggered by the Initiator receiving a valid, accepted MPA Reply Frame; the Responder transitions after sending the Reply Frame and receiving the first FPDU.'
+section: "7.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

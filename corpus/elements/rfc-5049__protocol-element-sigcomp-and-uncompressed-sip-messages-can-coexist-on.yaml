@@ -1,0 +1,10 @@
+document: rfc-5049
+kind: protocol-element
+summary: SigComp and uncompressed SIP messages can coexist on the same port. For UDP/SCTP, detection is per-message by checking whether the first octet's MSBs are '11111' (SigComp) or otherwise (plain SIP). For TCP, detection is per-connection based on the first octet of the stream.
+section: "5"
+topics:
+    - sip
+    - tcp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

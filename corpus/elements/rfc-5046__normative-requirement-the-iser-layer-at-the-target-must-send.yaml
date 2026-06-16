@@ -1,0 +1,9 @@
+document: rfc-5046
+kind: normative-requirement
+summary: The iSER layer at the target MUST send the final Login Response PDU in native transport mode (byte stream for TCP) before transitioning to iSER-assisted mode; for iWARP, sending the final Login Response PDU and enabling RCaP MUST be performed atomically to avoid race conditions.
+section: 5.1.2
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-5044
+kind: design-rationale
+summary: The requirement that the Responder receive at least one FPDU before sending any FPDUs exists to give the Initiator time to transition its receiver into Full Operation, avoiding potential race conditions. The working group debated removing this requirement for faster startup but retained it due to dual-stack implementation concerns.
+section: 7.1.2
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

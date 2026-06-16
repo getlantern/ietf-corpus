@@ -1,0 +1,9 @@
+document: rfc-5052
+kind: security-consideration
+summary: Data delivery is subject to denial-of-service attacks via corrupted packets accepted as legitimate. For multicast, a corrupted packet injected near the multicast tree root reaches many receivers; even one corrupted FEC encoding packet may cause an entirely corrupted decoded object. It is RECOMMENDED that source authentication and integrity checking (e.g., SHA-1 hash with digital signature) be applied to decoded objects before delivery to an application.
+section: "11"
+topics:
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

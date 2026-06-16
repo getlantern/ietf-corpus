@@ -1,0 +1,9 @@
+document: rfc-5044
+kind: design-rationale
+summary: The maximum ULPDU size of 64768 octets (rather than the theoretical 65535 from the 16-bit ULPDU_Length field) was derived by subtracting the worst-case sum of IPv4 header, TCP header, options, and MPA overhead from the 65535-octet IP datagram limit, then rounding down to a 128-octet boundary to enable FPDU Alignment.
+section: "3"
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

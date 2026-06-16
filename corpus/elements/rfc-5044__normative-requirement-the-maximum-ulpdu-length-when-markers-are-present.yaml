@@ -1,0 +1,9 @@
+document: rfc-5044
+kind: normative-requirement
+summary: The maximum ULPDU length when Markers are present MUST be computed as MULPDU = EMSS − (6 + 4 × Ceiling(EMSS / 512) + EMSS mod 4). When Markers are absent, MULPDU = EMSS − (6 + EMSS mod 4). If EMSS shrinks below 128 octets, MPA MUST NOT shrink MULPDU below 128 octets.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

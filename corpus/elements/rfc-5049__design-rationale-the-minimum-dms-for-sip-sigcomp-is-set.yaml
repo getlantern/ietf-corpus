@@ -1,0 +1,9 @@
+document: rfc-5049
+kind: design-rationale
+summary: The minimum DMS for SIP/SigComp is set to 8192 bytes because the SigComp over UDP condition (C + 2*B + R + 2*S + 128 < DMS) makes a 2048-byte DMS prohibitively restrictive for SIP message compression, while 8 KB is easily supportable by any SIP-capable endpoint.
+section: "4.1"
+topics:
+    - sip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-5042
+kind: design-rationale
+summary: 'TLS is inappropriate for DDP/RDMAP security for two independent reasons: below RDMAP, its in-order stream-cipher decryption requirement eliminates DDP''s zero-copy flow-through architecture; above RDMAP, it leaves DDP/RDMAP headers exposed to man-in-the-middle header modification.'
+section: 5.4.2
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

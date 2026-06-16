@@ -1,0 +1,8 @@
+document: rfc-5051
+kind: security-consideration
+summary: An attacker may create ill-formed or unknown-charset input to impact comparator results or exploit other system components. Even well-formed data can cause unexpected results; for example, substituting U+0041 (LATIN CAPITAL LETTER A) with U+0391 (GREEK CAPITAL LETTER ALPHA) or U+0410 (CYRILLIC CAPITAL LETTER A) can cause visually identical strings to not match or sort differently.
+section: "4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

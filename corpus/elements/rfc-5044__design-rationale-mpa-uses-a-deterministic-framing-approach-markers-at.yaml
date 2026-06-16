@@ -1,0 +1,8 @@
+document: rfc-5044
+kind: design-rationale
+summary: MPA uses a deterministic framing approach (Markers at fixed, known TCP sequence-number offsets) rather than a probabilistic approach (detectable values anywhere in the stream) because only a deterministic scheme can unambiguously locate ULPDUs in out-of-order TCP packets without false positives from application data.
+section: "1.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

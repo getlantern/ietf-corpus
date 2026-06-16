@@ -1,0 +1,9 @@
+document: rfc-5048
+kind: normative-requirement
+summary: If SPDTL > EDTL for a task, iSCSI Overflow MUST be signaled in the SCSI Response PDU and the Residual Count MUST be set to (SPDTL - EDTL). If SPDTL < EDTL, iSCSI Underflow MUST be signaled and Residual Count MUST be set to (EDTL - SPDTL).
+section: 3.1.1
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

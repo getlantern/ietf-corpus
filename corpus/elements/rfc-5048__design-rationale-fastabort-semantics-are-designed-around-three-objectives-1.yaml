@@ -1,0 +1,6 @@
+document: rfc-5048
+kind: design-rationale
+summary: 'FastAbort semantics are designed around three objectives: (1) maintaining an ordered command flow I_T nexus abstraction to the target SCSI layer; (2) ensuring the initiator never sees ''old'' task responses after a TMF response; (3) draining all active TTTs corresponding to affected tasks deterministically to avoid buffer management problems, especially fatal for iSCSI/iSER implementations.'
+section: 4.1.6
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

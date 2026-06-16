@@ -1,0 +1,10 @@
+document: rfc-5042
+kind: normative-requirement
+summary: Receipt of an IKE Phase 2 delete message MUST NOT be interpreted as a reason for tearing down a DDP/RDMA Stream; the Stream should remain up, and a new IKE Phase 2 SA established when additional traffic is sent, to avoid continual Stream churn.
+section: 5.4.5
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

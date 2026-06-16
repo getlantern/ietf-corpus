@@ -1,0 +1,8 @@
+document: rfc-5049
+kind: design-rationale
+summary: SIP retransmissions must be re-compressed because it is impossible to know whether the failure occurred on the message or its response; if the response was lost, state changes from the first transmission may have removed state the compressed message relied upon, leading to decompression failure on retransmission.
+section: "8"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

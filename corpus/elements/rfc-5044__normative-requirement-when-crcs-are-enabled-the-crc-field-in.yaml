@@ -1,0 +1,10 @@
+document: rfc-5044
+kind: normative-requirement
+summary: When CRCs are enabled, the CRC field in the FPDU MUST be computed using the CRC32c polynomial as described in the iSCSI protocol for Header and Data Digests. On receive, the receiver MUST calculate the CRC and compare it against the received value; a mismatch MUST cause the FPDU to be treated as invalid.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

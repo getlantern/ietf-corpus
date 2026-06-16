@@ -1,0 +1,10 @@
+document: rfc-5049
+kind: normative-requirement
+summary: If a SIP application needs to send a message larger than 64k over a compressed connection, it MUST NOT send the message over the same TCP connection, and SHOULD send it over a different transport connection, since SigComp does not support compression of messages larger than 64k.
+section: "7"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

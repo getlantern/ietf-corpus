@@ -1,0 +1,8 @@
+document: rfc-5042
+kind: security-consideration
+summary: A Remote Peer can mount a buffer overrun attack by issuing an RDMA Write or Read Response targeting memory addresses outside the valid STag buffer bounds. The RNIC must perform byte-granularity base-and-bounds checks before allowing any STag-based access.
+section: 6.2.1
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

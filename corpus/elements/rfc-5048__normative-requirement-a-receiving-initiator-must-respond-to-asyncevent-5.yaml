@@ -1,0 +1,7 @@
+document: rfc-5048
+kind: normative-requirement
+summary: 'A receiving initiator MUST respond to AsyncEvent=5 by: (i) stopping Data-Out transfers on that connection for all active TTTs for the affected LUN, and (ii) acknowledging the StatSN of the Async Message via a NOP-Out PDU with ITT=0xffffffff, copying the LUN field from the Async Message.'
+section: "8.1"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

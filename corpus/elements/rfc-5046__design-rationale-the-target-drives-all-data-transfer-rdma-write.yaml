@@ -1,0 +1,6 @@
+document: rfc-5046
+kind: design-rationale
+summary: The target drives all data transfer (RDMA Write for SCSI reads, RDMA Read for SCSI writes) rather than the initiator, because the target knows when data is ready and can directly address the advertised initiator buffers. The initiator only Advertises its I/O Buffers via STags in the SCSI Command PDU iSER header.
+section: "1.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

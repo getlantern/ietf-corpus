@@ -1,0 +1,10 @@
+document: rfc-5046
+kind: normative-requirement
+summary: When RDMAExtensions=Yes is negotiated, HeaderDigest and DataDigest MUST be negotiated to None on all iSCSI/iSER connections in that session. RCaP provides error detection at least as good as a 32-bit CRC, making iSCSI digests unnecessary and inapplicable to RDMA operations.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

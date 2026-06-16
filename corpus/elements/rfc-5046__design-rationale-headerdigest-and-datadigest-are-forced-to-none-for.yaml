@@ -1,0 +1,8 @@
+document: rfc-5046
+kind: design-rationale
+summary: HeaderDigest and DataDigest are forced to None for iSER sessions because RCaP (e.g., iWARP's MPA layer with CRC, or InfiniBand Reliable Connection mode) provides equivalent or better error detection for all iSER messages, and iSCSI digests cannot apply to the RDMA Write/Read operations used for SCSI data movement.
+section: "5.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

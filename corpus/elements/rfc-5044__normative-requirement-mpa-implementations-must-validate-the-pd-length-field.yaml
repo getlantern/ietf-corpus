@@ -1,0 +1,10 @@
+document: rfc-5044
+kind: normative-requirement
+summary: MPA implementations MUST validate the PD_Length field; the Private Data MUST NOT exceed 512 octets, and PD_Length MUST match the actual length of the Private Data field. Any failure MUST cause the startup frame to be treated as improperly formatted and the TCP connection to be closed.
+section: 7.1.2
+rfc2119_level: MUST
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

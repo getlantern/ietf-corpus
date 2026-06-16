@@ -1,0 +1,10 @@
+document: rfc-5049
+kind: interoperability-note
+summary: When SIP/SigComp is used over a TLS connection that also provides compression, SIP messages are first compressed by SigComp then by TLS. It is NOT RECOMMENDED to use TLS compression when SigComp is in use, as the additional compression gain is minimal once SigComp has already compressed the message.
+section: "13"
+rfc2119_level: RECOMMENDED
+topics:
+    - sip
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

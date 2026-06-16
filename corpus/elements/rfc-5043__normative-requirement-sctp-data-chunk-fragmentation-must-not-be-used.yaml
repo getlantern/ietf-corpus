@@ -1,0 +1,9 @@
+document: rfc-5043
+kind: normative-requirement
+summary: SCTP data chunk fragmentation MUST NOT be used unless the alternative is IP fragmentation. The adaptation layer MUST inform DDP of the maximum DDP Segment size (largest value without IP or SCTP fragmentation, or 516 bytes, whichever is larger). The adaptation layer MUST reject DDP Segments larger than the maximum size specified.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

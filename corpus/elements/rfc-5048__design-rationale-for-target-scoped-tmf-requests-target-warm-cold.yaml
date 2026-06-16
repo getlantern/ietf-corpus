@@ -1,0 +1,6 @@
+document: rfc-5048
+kind: design-rationale
+summary: For target-scoped TMF requests (TARGET WARM/COLD RESET), the target can 'plug' the entire CmdSN space up to the TMF's CmdSN without waiting to receive outstanding commands, since all tasks will be aborted anyway — this optimization still satisfies the ordered command flow requirement.
+section: 4.1.6
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

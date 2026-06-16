@@ -1,0 +1,10 @@
+document: rfc-5049
+kind: normative-requirement
+summary: Applications MUST NOT mix SIP messages and SigComp messages on a single TCP connection. If the connection carries SigComp messages, all messages MUST have a SigComp header and be delimited by 0xFFFF. SigComp message delimiters MUST NOT be used if the stream contains uncompressed SIP messages.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

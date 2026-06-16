@@ -1,0 +1,8 @@
+document: rfc-5042
+kind: security-consideration
+summary: A local Non-Privileged ULP may attack the Page Translation Table and STag mapping to gain access to memory belonging to another ULP. All PTT initialization by Non-Privileged ULPs must be proxied through the Privileged Resource Manager, which validates that the ULP has authority over the memory being exposed.
+section: "7.3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
