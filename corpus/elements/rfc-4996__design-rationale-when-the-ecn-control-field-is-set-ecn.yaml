@@ -1,0 +1,9 @@
+document: rfc-4996
+kind: design-rationale
+summary: When the ECN control field is set, ECN bits from all IP headers—not just the innermost—are included in the irregular chain. This accommodates the ECN 'full-functionality option' of RFC 3168, under which ECN markings on inner IP headers are propagated to outer tunnel headers; the acknowledged tradeoff is one extra octet per outer header when limited-functionality ECN is used.
+section: 6.1.3
+topics:
+    - tcp
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

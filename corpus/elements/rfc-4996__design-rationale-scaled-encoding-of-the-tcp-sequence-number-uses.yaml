@@ -1,0 +1,8 @@
+document: rfc-4996
+kind: design-rationale
+summary: Scaled encoding of the TCP Sequence Number uses the payload size as the implicit scaling factor (no explicit transmission needed), because the payload size is already inferable from the compressed packet length. Scaled encoding of the TCP Acknowledgment Number requires an explicit ack_stride field because the opposite-direction payload size may not be available at the compressor.
+section: 6.4.8
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4996
+kind: security-consideration
+summary: ROHC-TCP inherits the security considerations of the ROHC framework (RFC 4995). The CRC mechanisms in compressed packets are intended for decompression error detection, not cryptographic integrity; an attacker able to inject packets could potentially desynchronize a compression context. Links carrying ROHC-TCP traffic should be secured at another layer if integrity protection is required.
+section: "9"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

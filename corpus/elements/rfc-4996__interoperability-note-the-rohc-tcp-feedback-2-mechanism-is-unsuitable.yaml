@@ -1,0 +1,8 @@
+document: rfc-4996
+kind: interoperability-note
+summary: The ROHC-TCP FEEDBACK-2 mechanism is unsuitable when the LSB-encoded MSN bits could wrap around within one round-trip time. In such high-throughput or very-short-RTT cases, unidirectional operation—where the compressor periodically sends larger context-updating packets without relying on decompressor feedback—is more appropriate.
+section: 4.2.2
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4996
+kind: design-rationale
+summary: The IPv4 header checksum is compressed to zero bits (inferred_ip_v4_header_checksum) because when nearly all IP header fields are compressed away and decompression is already verified by a per-packet CRC over the reconstructed header, the additional per-hop checksum provides no incremental value and can be recomputed at the decompressor side.
+section: 6.4.1
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4996
+kind: design-rationale
+summary: Context replication (IR-CR) was introduced specifically to reduce overhead for short-lived TCP connections. Simultaneous or near-simultaneous TCP flows often share IP sub-context, TCP fields, and context values; replicating from an existing validated base context is faster and more efficient than transmitting a full IR packet for each new flow.
+section: "4.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

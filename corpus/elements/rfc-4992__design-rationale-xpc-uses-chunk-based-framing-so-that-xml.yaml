@@ -1,0 +1,8 @@
+document: rfc-4992
+kind: design-rationale
+summary: XPC uses chunk-based framing so that XML fragments can be acted upon (pipelined) before reception of the entire XML instance. This allows the server to begin processing individual search results and stream them back incrementally rather than waiting for a complete XML document.
+section: "1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4996
+kind: wire-format
+summary: The compressed TCP options list begins with a 1-octet header (3-bit Reserved, 1-bit PS, 4-bit count m), followed by m XI items (4-bit each if PS=0, 8-bit each if PS=1), a 4-bit Padding field if PS=0 and m is odd, then variable-length items for each XI with X=1. Each XI encodes a 1-bit presence flag X and a table Index.
+section: 6.3.3
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

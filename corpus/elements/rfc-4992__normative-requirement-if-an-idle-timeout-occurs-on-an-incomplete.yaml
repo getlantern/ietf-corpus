@@ -1,0 +1,9 @@
+document: rfc-4992
+kind: normative-requirement
+summary: If an idle timeout occurs on an incomplete data block (block received but no terminating chunk), a block-error SHOULD be sent. Two minutes is RECOMMENDED for this timeout value. For idle sessions between transactions, an idle-timeout chunk SHOULD be sent with KO=0 before closing.
+section: "6.4"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

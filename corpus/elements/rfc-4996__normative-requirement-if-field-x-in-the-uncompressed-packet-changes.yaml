@@ -1,0 +1,9 @@
+document: rfc-4996
+kind: normative-requirement
+summary: If field X in the uncompressed packet changes value, the compressor MUST use a packet type that contains an encoding for field X until it has gained confidence that the decompressor has received at least one packet containing the new value. The compressor SHOULD choose the smallest compressed format that fulfills this optimistic-approach condition.
+section: 5.2.1.1
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

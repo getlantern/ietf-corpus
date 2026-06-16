@@ -1,0 +1,8 @@
+document: rfc-4996
+kind: protocol-element
+summary: TCP options are compressed using a list compression scheme with a 16-entry item table. Each option type has a reserved index (NOP=0 through SACK=6, Generic=7-15) and an encoding method (e.g., tcp_opt_ts, tcp_opt_sack). Structure changes trigger a compressed list in the base header; content-only changes for stable-structure options are handled via the irregular chain.
+section: "6.3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

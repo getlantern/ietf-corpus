@@ -1,0 +1,9 @@
+document: rfc-4992
+kind: normative-requirement
+summary: Reserved bits (bits 3–7 of the block header and bits 2–4 of the chunk descriptor) MUST be set to 0. If a server receives a request with any reserved block header bits set to 1 and does not understand the purpose, it SHOULD follow the error-close procedure in Section 8.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

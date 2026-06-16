@@ -1,0 +1,8 @@
+document: rfc-4993
+kind: design-rationale
+summary: IRIS-LWZ uses a single UDP packet per request and response (rather than a connection-oriented transport) to minimize overhead for simple, public IRIS lookups. Compression via DEFLATE is optional and negotiated per-packet using header flags, allowing lightweight exchanges while accommodating larger payloads when possible.
+section: "1"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

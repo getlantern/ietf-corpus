@@ -1,0 +1,9 @@
+document: rfc-4996
+kind: normative-requirement
+summary: When decompressing CO packets, the decompressor MUST validate the outcome using CRC verification. Any corrective repair attempt MUST also be validated via CRC; if verification still fails, the packet MUST NOT be delivered to upper layers and the context MUST NOT be updated.
+section: 5.3.1.1
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
