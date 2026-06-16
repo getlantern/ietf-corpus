@@ -1,0 +1,10 @@
+document: rfc-4036
+kind: security-consideration
+summary: docsSubMgtCpeIpAddr in docsSubMgtCpeIpTable is the most sensitive readable object because, although the table is intended to control address spoofing, it reveals the current subscriber address pool, which is itself valuable to would-be spoofers. Even GET access should be controlled and encryption considered.
+section: "9"
+topics:
+    - snmp
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

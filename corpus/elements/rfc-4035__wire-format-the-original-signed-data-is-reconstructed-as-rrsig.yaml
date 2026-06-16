@@ -1,0 +1,10 @@
+document: rfc-4035
+kind: wire-format
+summary: 'The original signed data is reconstructed as: RRSIG_RDATA (excluding Signature field, Signer''s Name in canonical form) concatenated with each RR in canonical form (name | type | class | OrigTTL | RDATA length | RDATA), where all names in RDATA are in canonical form, TTL is taken from the RRSIG Original TTL field, and the RR set is sorted in canonical order.'
+section: 5.3.2
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

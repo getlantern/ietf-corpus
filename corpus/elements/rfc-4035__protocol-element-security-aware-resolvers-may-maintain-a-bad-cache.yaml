@@ -1,0 +1,9 @@
+document: rfc-4035
+kind: protocol-element
+summary: Security-aware resolvers MAY maintain a 'BAD cache' of data with invalid signatures. Resolvers implementing a BAD cache MUST assign a short TTL to such entries and SHOULD only answer from the BAD cache after the count of validation failures for a given <QNAME, QTYPE, QCLASS> exceeds a threshold, to prevent denial-of-service amplification.
+section: "4.7"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

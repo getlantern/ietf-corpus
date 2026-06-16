@@ -1,0 +1,9 @@
+document: rfc-4033
+kind: interoperability-note
+summary: DNSSEC alone does not protect zone transfer operations, since signed zones still contain unsigned non-authoritative data (glue and NS RRs). Zone transfers must be secured by additional channel-security mechanisms such as TSIG, SIG(0), or IPsec.
+section: "9"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-4035
+kind: normative-requirement
+summary: 'A security-aware resolver can use an RRSIG RR to authenticate an RRset only when: the RRSIG and RRset share owner name and class; Signer''s Name is the zone containing the RRset; Type Covered matches; label count is valid; current time falls within Inception and Expiration; and a matching DNSKEY RR with the Zone Flag bit set exists at the zone apex.'
+section: 5.3.1
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

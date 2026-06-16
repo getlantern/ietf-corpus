@@ -1,0 +1,8 @@
+document: rfc-4032
+kind: design-rationale
+summary: RFC 3312 disallowed downgrading current status values in answers, but this is insufficient for session mobility scenarios such as 3pcc-driven transfers. When a 3pcc controller moves a session from B to C, the answer must be able to reset the current status to 'No' because no resource reservation exists between A and C. This document lifts that prohibition for the mobility case.
+section: "4"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

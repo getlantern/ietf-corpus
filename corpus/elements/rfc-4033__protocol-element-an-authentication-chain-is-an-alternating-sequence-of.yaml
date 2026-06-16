@@ -1,0 +1,10 @@
+document: rfc-4033
+kind: protocol-element
+summary: An Authentication Chain is an alternating sequence of DNSKEY RRsets and DS RRsets, each link vouching for the next. The typical form is DNSKEY->[DS->DNSKEY]*->RRset, anchored at a configured trust anchor and terminating at the signed zone data.
+section: "2"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

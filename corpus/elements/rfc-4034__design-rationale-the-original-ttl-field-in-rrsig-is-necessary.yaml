@@ -1,0 +1,8 @@
+document: rfc-4034
+kind: design-rationale
+summary: The Original TTL field in RRSIG is necessary because caching resolvers decrement the TTL of cached RRsets. To validate a signature, a validator needs the original TTL as it appeared in the authoritative zone, which cannot be recovered from a decremented value.
+section: 3.1.4
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

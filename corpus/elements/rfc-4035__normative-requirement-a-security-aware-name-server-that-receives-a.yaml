@@ -1,0 +1,10 @@
+document: rfc-4035
+kind: normative-requirement
+summary: A security-aware name server that receives a DNS query without the EDNS OPT pseudo-RR or with the DO bit clear MUST treat RRSIG, DNSKEY, and NSEC RRs as any other RRset and MUST NOT perform any of the additional DNSSEC processing described in Section 3.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

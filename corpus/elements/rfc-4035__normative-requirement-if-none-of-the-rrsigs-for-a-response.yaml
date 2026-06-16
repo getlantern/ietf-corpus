@@ -1,0 +1,10 @@
+document: rfc-4035
+kind: normative-requirement
+summary: If none of the RRSIGs for a response can be validated, the response SHOULD be considered BAD. If validation was performed to service a recursive query, the name server MUST return RCODE 2 (server failure) to the originating client but MUST return the full response if and only if the original query had the CD bit set.
+section: "5.5"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

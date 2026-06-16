@@ -1,0 +1,10 @@
+document: rfc-4035
+kind: normative-requirement
+summary: When returning a referral in response to a query with the DO bit set, a security-aware authoritative name server MUST include the DS RRset and its RRSIG(s) if present at the delegation point, or MUST include the NSEC RR and RRSIG(s) proving no DS RRset exists.
+section: 3.1.4
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

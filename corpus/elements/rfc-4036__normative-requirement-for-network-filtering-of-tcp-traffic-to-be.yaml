@@ -1,0 +1,10 @@
+document: rfc-4036
+kind: normative-requirement
+summary: For network filtering of TCP traffic to be effective, implementors MUST follow the tiny-fragment and overlapping-fragment attack prevention recommendations in section 3.4 (admit fragments with offset >= 2, discard offset = 1 or offset = 0 with payload < 16 bytes, apply filter rules to offset = 0 packets).
+section: "9"
+rfc2119_level: MUST
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

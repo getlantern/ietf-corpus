@@ -1,0 +1,7 @@
+document: rfc-4037
+kind: normative-requirement
+summary: An OCP agent MUST send a Connection Start (CS) message before any other message. If the first received message is not CS, the agent MUST terminate the connection with CE indicating failure (result 400). CS MUST be sent exactly once; repeated CS messages MUST be ignored.
+section: "11.1"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

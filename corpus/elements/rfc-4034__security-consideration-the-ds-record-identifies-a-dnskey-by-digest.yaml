@@ -1,0 +1,10 @@
+document: rfc-4034
+kind: security-consideration
+summary: The DS record identifies a DNSKEY by digest, key algorithm, and key tag, but it is theoretically possible for an attacker to construct a DNSKEY matching all DS fields. The SHA-1 digest makes this sufficiently difficult to not be a serious threat at the time of writing. Additionally, the key tag is not a unique identifier—two distinct DNSKEY RRs may share the same owner name, algorithm, and key tag, so implementations MUST NOT use only the key tag to select a DNSKEY.
+section: "8"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

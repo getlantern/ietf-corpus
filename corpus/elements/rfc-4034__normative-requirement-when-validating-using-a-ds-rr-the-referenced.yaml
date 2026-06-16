@@ -1,0 +1,10 @@
+document: rfc-4034
+kind: normative-requirement
+summary: When validating using a DS RR, the referenced DNSKEY RR MUST be a DNSSEC zone key (Flags bit 7 set). If the DNSKEY flags do not indicate a zone key, the DS RR and the referenced DNSKEY RR MUST NOT be used in the validation process.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

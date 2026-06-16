@@ -1,0 +1,10 @@
+document: rfc-4032
+kind: design-rationale
+summary: The prohibition on sending media during session suspension (no RTP/RTCP) is explicitly scoped to QoS preconditions only. Connection-setup control messages for connection-oriented transports (e.g., TCP SYNs) are not affected by this rule; UAs follow standard SDP 'setup' attribute rules regardless of QoS preconditions.
+section: "3.4"
+topics:
+    - sip
+    - tcp
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4035
+kind: normative-requirement
+summary: When placing a signed RRset in the Answer or Authority section, a name server MUST also place its RRSIG RRs in that same section, with higher priority than any other RRsets; if space does not permit, the name server MUST set the TC bit. In the Additional section, the name server MAY drop RRSIG RRs without setting TC.
+section: 3.1.1
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

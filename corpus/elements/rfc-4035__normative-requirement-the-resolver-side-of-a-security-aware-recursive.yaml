@@ -1,0 +1,10 @@
+document: rfc-4035
+kind: normative-requirement
+summary: The resolver side of a security-aware recursive name server MUST set the DO bit when sending requests, regardless of the DO bit in the initiating request. If the initiating query's DO bit is not set, the name server side MUST strip authenticating DNSSEC RRs from the response, except for DNSSEC RR types that the initiating query explicitly requested.
+section: 3.2.1
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

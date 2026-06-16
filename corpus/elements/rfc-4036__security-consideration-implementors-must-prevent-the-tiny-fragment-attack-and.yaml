@@ -1,0 +1,10 @@
+document: rfc-4036
+kind: security-consideration
+summary: 'Implementors MUST prevent the tiny fragment attack and overlapping fragment attack for TCP filtering: discard packets with fragment offset = 1, or offset = 0 with fragment payload length < 16 bytes; admit fragments with offset >= 2; apply filter rules only to offset = 0 packets.'
+section: "3.4"
+topics:
+    - snmp
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

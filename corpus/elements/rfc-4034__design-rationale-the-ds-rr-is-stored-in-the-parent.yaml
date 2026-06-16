@@ -1,0 +1,8 @@
+document: rfc-4034
+kind: design-rationale
+summary: The DS RR is stored in the parent zone rather than the child zone to simplify DNS zone management and zone signing, though it introduces special response processing requirements. The Key Tag and algorithm are stored alongside the digest to make identification more efficient, since digest lookup alone would be sufficient but slower.
+section: "5"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

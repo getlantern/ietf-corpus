@@ -1,0 +1,6 @@
+document: rfc-4037
+kind: design-rationale
+summary: For the 'getting out of the loop' optimization, adapted dataflow must be terminated before original dataflow because the mapping between original and adapted octets is known only to the callout service. Terminating original flow first would leave the OPES processor unable to reconstruct the remaining adapted application message.
+section: "8.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

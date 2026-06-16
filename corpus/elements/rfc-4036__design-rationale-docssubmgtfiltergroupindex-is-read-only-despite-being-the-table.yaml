@@ -1,0 +1,8 @@
+document: rfc-4036
+kind: design-rationale
+summary: docsSubMgtFilterGroupIndex is read-only despite being the table's sole value and its index, contrary to normal SMI practice. This is necessary because diffServClfrElementSpecific requires a RowPointer, and the table exists solely to provide referenced objects for that pointer; there is no writable content.
+section: 3.1.1
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

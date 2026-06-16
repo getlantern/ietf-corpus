@@ -1,0 +1,10 @@
+document: rfc-4035
+kind: normative-requirement
+summary: 'If a validator accepts an RRset as authentic, it MUST set the TTL of the RRSIG RR and each RR in the authenticated RRset to a value no greater than the minimum of: the received RRset TTL, the received RRSIG TTL, the RRSIG Original TTL field, and the difference between the RRSIG Signature Expiration time and the current time.'
+section: 5.3.3
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

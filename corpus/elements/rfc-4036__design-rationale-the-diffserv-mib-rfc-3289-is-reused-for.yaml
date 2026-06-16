@@ -1,0 +1,9 @@
+document: rfc-4036
+kind: design-rationale
+summary: The DiffServ MIB (RFC 3289) is reused for classification, counting, and drop functions rather than defining a standalone filter mechanism. Filter groups act as a logical sub-interface field prepended to each packet for first-pass classification, feeding into diffServMultiFieldClfrTable for second-pass IP/TCP/UDP criteria matching.
+section: "3.3"
+topics:
+    - snmp
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
