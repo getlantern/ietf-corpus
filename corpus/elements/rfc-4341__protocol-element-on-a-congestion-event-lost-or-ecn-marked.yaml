@@ -1,0 +1,10 @@
+document: rfc-4341
+kind: protocol-element
+summary: On a congestion event (lost or ECN-marked packet), cwnd is halved and ssthresh is set to the new cwnd, never reducing cwnd below one packet. After a transmit timeout, ssthresh is set to cwnd/2 and cwnd is reset to one packet; the transmit timeout uses exponential backoff identical to TCP.
+section: "5"
+topics:
+    - congestion
+    - udp
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

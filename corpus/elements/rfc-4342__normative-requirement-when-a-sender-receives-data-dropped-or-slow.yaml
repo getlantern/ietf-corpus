@@ -1,0 +1,9 @@
+document: rfc-4342
+kind: normative-requirement
+summary: When a sender receives Data Dropped or Slow Receiver options, it SHOULD adjust X_recv (the receive rate used in TFRC calculations) to limit the next RTT's sending rate to at most X_drop. This procedure MUST only be used for Drop Codes not related to corruption (currently Drop Codes 0, 1, and 2).
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

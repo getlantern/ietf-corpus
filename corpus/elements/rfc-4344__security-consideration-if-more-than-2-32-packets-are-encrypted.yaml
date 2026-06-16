@@ -1,0 +1,9 @@
+document: rfc-4344
+kind: security-consideration
+summary: If more than 2**32 packets are encrypted and MACed between rekeyings, the SSH Transport Protocol may become vulnerable to replay and re-ordering attacks, and the underlying MAC may begin to leak information about payload data through collisions in the 32-bit sequence number.
+section: "6.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-4348
+kind: security-consideration
+summary: The VMR-WB RTP payload format has no built-in security mechanisms. For confidentiality, all audio data bits MUST be encrypted; external mechanisms such as SRTP MAY be used. The payload header and ToC need less protection as they only carry frame type metadata.
+section: "8"
+rfc2119_level: MUST
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

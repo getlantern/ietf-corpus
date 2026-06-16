@@ -1,0 +1,10 @@
+document: rfc-4342
+kind: normative-requirement
+summary: If the sender has not received a feedback packet when the nofeedback timer expires (set to at least four RTTs or twice the inter-packet interval, whichever is larger), the sender halves its allowed sending rate. The sending rate is never reduced below one packet per 64 seconds.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - congestion
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

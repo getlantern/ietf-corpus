@@ -1,0 +1,9 @@
+document: rfc-4340
+kind: state-machine
+summary: 'DCCP has 9 ordered connection states: CLOSED, LISTEN, REQUEST, RESPOND, PARTOPEN, OPEN, CLOSEREQ, CLOSING, TIMEWAIT. Client progresses CLOSED→REQUEST→PARTOPEN→OPEN→CLOSING→TIMEWAIT; server progresses LISTEN→RESPOND→OPEN→CLOSEREQ→CLOSED. States are listed in increasing order so that ''state >= CLOSEREQ'' comparisons are valid.'
+section: "4.3"
+topics:
+    - udp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4342
+kind: design-rationale
+summary: CCID 3 (TFRC) is designed for applications that prefer smooth sending rates over maximum throughput, such as streaming media with small receiver buffers. Unlike TCP-like CCID 2, TFRC avoids halving the sending rate per congestion event, at the cost of slower adaptation to available bandwidth changes.
+section: "3"
+topics:
+    - congestion
+    - realtime
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

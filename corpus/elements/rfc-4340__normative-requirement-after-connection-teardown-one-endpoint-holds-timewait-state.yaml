@@ -1,0 +1,10 @@
+document: rfc-4340
+kind: normative-requirement
+summary: After connection teardown, one endpoint holds TIMEWAIT state for 2MSL (4 minutes) to prevent mistakes from late-arriving old packets. The server may use DCCP-CloseReq to pass TIMEWAIT responsibility to the client.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - udp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

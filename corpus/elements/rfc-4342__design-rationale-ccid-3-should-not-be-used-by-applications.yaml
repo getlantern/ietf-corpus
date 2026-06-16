@@ -1,0 +1,8 @@
+document: rfc-4342
+kind: design-rationale
+summary: CCID 3 should not be used by applications that vary sending rate by changing packet size rather than packet rate, since the TCP throughput equation in TFRC is calibrated for fixed packet sizes. A new CCID would be required for variable-size-per-rate applications.
+section: "5.3"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

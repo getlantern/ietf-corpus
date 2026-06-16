@@ -1,0 +1,9 @@
+document: rfc-4341
+kind: design-rationale
+summary: For Ack Ratio calculation, the sender assumes all lost packets were non-data packets because DCCP-Ack packets impose less load on congested links; Appendix B quantifies that even worst-case misclassification reduces the ack rate by only a factor of ~0.62.
+section: 6.1.1
+topics:
+    - congestion
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

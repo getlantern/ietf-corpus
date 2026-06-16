@@ -1,0 +1,9 @@
+document: rfc-4348
+kind: design-rationale
+summary: A single fixed 16 kHz RTP clock rate was chosen even though VMR-WB can process 8 kHz input because the VMR-WB decoder does not require a priori knowledge of encoder input sampling frequency and always outputs 16 kHz by default. This avoids the need to renegotiate the RTP clock rate mid-session when narrowband media is injected.
+section: "6.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

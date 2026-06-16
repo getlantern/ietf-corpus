@@ -1,0 +1,9 @@
+document: rfc-4342
+kind: wire-format
+summary: The CCVal field in the DCCP generic header is a 4-bit window counter value set by the data sender on every data packet. It is initialized to 0 and incremented by 1 every quarter RTT using circular arithmetic modulo 16. Adjacent packets' CCVal values never differ by more than 5 (mod 16).
+section: "8.1"
+topics:
+    - congestion
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

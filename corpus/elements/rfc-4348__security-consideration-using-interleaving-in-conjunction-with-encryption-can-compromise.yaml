@@ -1,0 +1,10 @@
+document: rfc-4348
+kind: security-consideration
+summary: 'Using interleaving in conjunction with encryption can compromise confidentiality: because frame-blocks are distributed across multiple packets, changing an encryption key at a given timestamp does not prevent earlier-keyed packets from supplying frames that extend past the key-change boundary.'
+section: "8.1"
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

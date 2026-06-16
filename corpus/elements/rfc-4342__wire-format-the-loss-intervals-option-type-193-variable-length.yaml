@@ -1,0 +1,9 @@
+document: rfc-4342
+kind: wire-format
+summary: 'The Loss Intervals option (Type=193, variable length) reports up to 28 loss intervals in reverse chronological order. Each 9-byte interval encodes: Lossless Length (24 bits), ECN Nonce Echo (1 bit) + Loss Length (23 bits), and Data Length (24 bits). MUST be sent on all required acknowledgements and MUST NOT be sent on DCCP-Data packets.'
+section: "8.6"
+topics:
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

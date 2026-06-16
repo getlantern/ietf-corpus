@@ -1,0 +1,9 @@
+document: rfc-4342
+kind: normative-requirement
+summary: 'The sender MUST avoid wrapping CCVal on adjacent packets. The sender SHOULD use the specified algorithm: compute quarter_RTTs elapsed since last_WC_time, increment last_WC by min(quarter_RTTs, 5) mod 16, and set the packet''s CCVal to last_WC.'
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

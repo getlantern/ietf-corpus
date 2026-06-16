@@ -1,0 +1,8 @@
+document: rfc-4342
+kind: design-rationale
+summary: The window counter (CCVal) is preferred over a round-trip time option for communicating sending-time information to the receiver because it conveys relative *sending* times, giving more robust performance when there is large delay variation within a window of data. A round-trip time option would only allow distinguishing relative *receive* times.
+section: "10.2"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4342
+kind: security-consideration
+summary: CCID 3 must protect against spoofed feedback and incorrect congestion information from receivers. When ECN is used, the ECN Nonce echo in Loss Intervals options gives a misbehaving receiver only a 50% chance per interval of successfully concealing dropped or marked packets. Without ECN, the sender can use out-of-order or absent packets to probabilistically detect receiver misbehavior, but this is less robust.
+section: "11"
+topics:
+    - security
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

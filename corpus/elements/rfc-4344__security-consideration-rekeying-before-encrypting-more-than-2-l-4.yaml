@@ -1,0 +1,9 @@
+document: rfc-4344
+kind: security-consideration
+summary: Rekeying before encrypting more than 2**(L/4) blocks minimizes the risk of birthday attacks against the block cipher. Using SDCTR mode to encrypt more than 2**L blocks with the same key causes keystream reuse, which can lead to serious privacy attacks.
+section: "6.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
