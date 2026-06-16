@@ -1,0 +1,9 @@
+document: rfc-4978
+kind: normative-requirement
+summary: The client MUST NOT send any further commands until it has seen the result of COMPRESS. If the response was OK, the client MUST compress starting with the first command after COMPRESS. If the response was BAD or NO, the client MUST NOT turn on compression.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

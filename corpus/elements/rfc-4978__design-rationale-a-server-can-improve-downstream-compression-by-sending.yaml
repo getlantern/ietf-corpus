@@ -1,0 +1,8 @@
+document: rfc-4978
+kind: design-rationale
+summary: 'A server can improve downstream compression by sending Z_FULL_FLUSH at the start and end of large non-text literals (suggested boundary: 5k), and can improve CPU efficiency by adjusting the compression level to 0 for known-incompressible formats (e.g., .gz, .zip, .jpg identified by magic bytes).'
+section: "4"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4975
+kind: normative-requirement
+summary: Any SEND chunk with a body larger than 2048 octets MUST be interruptible, indicated by a '*' in the range-end field of the Byte-Range header. Senders MUST NOT send chunks larger than 2048 octets unless prepared to interrupt them.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - realtime
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

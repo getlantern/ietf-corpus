@@ -1,0 +1,10 @@
+document: rfc-4978
+kind: design-rationale
+summary: The compression/encryption layering order (compress first, then SASL, then TLS) ensures data is compressed before encryption regardless of the order the client issues COMPRESS, AUTHENTICATE, and STARTTLS commands.
+section: "3"
+topics:
+    - email
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

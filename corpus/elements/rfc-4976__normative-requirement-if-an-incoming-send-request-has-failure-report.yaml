@@ -1,0 +1,9 @@
+document: rfc-4976
+kind: normative-requirement
+summary: If an incoming SEND request has Failure-Report set to 'yes', the relay MUST immediately respond with a final response to the previous hop. If after 30 seconds the next hop has not responded, the relay MUST construct and send a REPORT with status code 408.
+section: 6.4.1
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

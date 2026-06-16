@@ -1,0 +1,11 @@
+document: rfc-4976
+kind: normative-requirement
+summary: AUTH requests MUST only be sent over a TLS-protected channel. When no explicit port is provided in the URI, a DNS SRV lookup for the '_msrps' service and '_tcp' transport is performed; if no SRV records are found, a default port of 2855 is used.
+section: "8"
+rfc2119_level: MUST
+topics:
+    - realtime
+    - tls
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

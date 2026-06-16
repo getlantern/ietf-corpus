@@ -1,0 +1,10 @@
+document: rfc-4982
+kind: security-consideration
+summary: 'Encoding the hash function only inside the CGA Parameter Data Structure is vulnerable to downgrading attacks: an attacker can find an alternative CGA_PDS using a weaker hash function that produces the same address value, defeating the stronger hash''s protection. Therefore, the hash algorithm must be encoded in the address itself.'
+section: "4.1"
+topics:
+    - crypto
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

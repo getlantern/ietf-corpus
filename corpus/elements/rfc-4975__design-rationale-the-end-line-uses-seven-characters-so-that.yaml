@@ -1,0 +1,8 @@
+document: rfc-4975
+kind: design-rationale
+summary: The end-line uses seven '-' characters so that receivers can search for the four-character sequence '----' 32 bits at a time, enabling end-line detection at the same throughput as a plain memory copy, while still permitting mid-stream message interruption.
+section: 7.3.1
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

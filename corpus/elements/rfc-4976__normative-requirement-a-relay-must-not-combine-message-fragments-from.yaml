@@ -1,0 +1,9 @@
+document: rfc-4976
+kind: normative-requirement
+summary: A relay MUST NOT combine message fragments from SEND requests that have different values in the Message-ID header. Relays MAY re-fragment or reassemble chunks from the same message and forward them in different SEND requests, but MUST resend resulting chunks in order.
+section: 6.4.1
+rfc2119_level: MUST NOT
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

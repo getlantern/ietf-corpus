@@ -1,0 +1,11 @@
+document: rfc-4978
+kind: normative-requirement
+summary: When COMPRESS is combined with TLS or SASL security layers, the sending order MUST be first COMPRESS, then SASL, and finally TLS. When receiving, the processing order MUST be reversed, ensuring data is compressed before it is encrypted.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

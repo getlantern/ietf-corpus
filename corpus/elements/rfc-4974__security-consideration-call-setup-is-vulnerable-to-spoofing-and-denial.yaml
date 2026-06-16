@@ -1,0 +1,10 @@
+document: rfc-4974
+kind: security-consideration
+summary: Call setup is vulnerable to spoofing and denial-of-service attacks because it uses Notify messages. Deployments where security is a concern SHOULD protect Notify messages using the INTEGRITY object as described in RFC 2205 and RFC 3473. Implementations MAY additionally use IPsec (RFC 4302/4303) or RSVP security (RFC 2747).
+section: "9.1"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4976
+kind: design-rationale
+summary: SEND requests use hop-by-hop acknowledgment by default (each relay acknowledges receipt before forwarding), while all other requests are acknowledged end-to-end. This allows relays to run failure timers on a per-hop basis and send REPORT notifications to the original sender.
+section: "3"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

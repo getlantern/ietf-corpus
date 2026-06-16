@@ -1,0 +1,9 @@
+document: rfc-4975
+kind: security-consideration
+summary: Allowing multiple connections per session would permit an eavesdropper who learns the URI to inject messages on a separate connection; therefore MSRP MUST reject with 506 any attempt to bind a session already in use on another connection.
+section: "5.4"
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

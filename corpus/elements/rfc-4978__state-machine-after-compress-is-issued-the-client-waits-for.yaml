@@ -1,0 +1,8 @@
+document: rfc-4978
+kind: state-machine
+summary: After COMPRESS is issued, the client waits for the server response. On OK, both sides switch to compressed mode (client after sending next command, server immediately after the OK CRLF). On BAD or NO, both sides remain uncompressed. The state is irreversible within the session.
+section: "3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
