@@ -1,0 +1,10 @@
+document: rfc-4863
+kind: security-consideration
+summary: A pseudowire control entity receiving a wildcard FEC request SHOULD only proceed with setup if explicitly configured to do so for the particular Attachment Identifier in the Target Attachment Identifier, because a malicious agent attempting to connect to an access circuit requires one less piece of information when using the wildcard. Implementations should also follow the security considerations of RFC 4447 for the Generalized PWid FEC Element.
+section: "4"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

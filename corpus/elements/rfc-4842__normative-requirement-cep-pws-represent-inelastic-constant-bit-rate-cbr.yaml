@@ -1,0 +1,11 @@
+document: rfc-4842
+kind: normative-requirement
+summary: CEP PWs represent inelastic constant bit rate (CBR) flows and cannot respond to congestion in a TCP-friendly manner. CEP PWs SHOULD be carried across traffic-engineered PSNs providing bandwidth reservation, admission control, or forwarding prioritization (e.g., IntServ Guaranteed Service or DiffServ Expedited Forwarding). CEP PWs SHOULD monitor packet loss to detect severe congestion and SHOULD shut down bi-directionally if detected.
+section: "13"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

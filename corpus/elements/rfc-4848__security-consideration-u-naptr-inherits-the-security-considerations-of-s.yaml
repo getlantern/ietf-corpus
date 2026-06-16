@@ -1,0 +1,9 @@
+document: rfc-4848
+kind: security-consideration
+summary: U-NAPTR inherits the security considerations of S-NAPTR (RFC 3958 Section 8). Additionally, resolving URIs obtained from DDDS resolution carries its own security implications per the URI specification (RFC 3986 Section 7). Using DNSSEC, clients can be confident the URI is as specified by the domain administrator, but validity of the service reached by resolving that URI depends on URI resolution security practices.
+section: "6"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

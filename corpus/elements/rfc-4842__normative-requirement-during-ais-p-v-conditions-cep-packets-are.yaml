@@ -1,0 +1,9 @@
+document: rfc-4842
+kind: normative-requirement
+summary: During AIS-P/V conditions, CEP packets are generated as usual with the L bit set to 1. The N and P bits SHOULD be set to 1 to indicate loss of pointer. If DBA is enabled, only the necessary headers (and optional padding) are transmitted, and the Length field MUST be set to the CEP header size plus RTP header size if used.
+section: 7.1.1
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

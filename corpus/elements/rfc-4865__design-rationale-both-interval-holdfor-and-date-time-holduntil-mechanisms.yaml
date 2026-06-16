@@ -1,0 +1,8 @@
+document: rfc-4865
+kind: design-rationale
+summary: Both interval (HOLDFOR) and date-time (HOLDUNTIL) mechanisms are provided because some clients have accurate local time but no time zone information, while others lack a reliable clock entirely; servers can trivially convert between the two forms, and the protocol overhead of supporting both is low.
+section: "4"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

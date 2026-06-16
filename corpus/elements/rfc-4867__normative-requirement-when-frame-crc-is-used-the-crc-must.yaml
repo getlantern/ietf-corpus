@@ -1,0 +1,10 @@
+document: rfc-4867
+kind: normative-requirement
+summary: When frame CRC is used, the CRC MUST be calculated only over all class A bits in the AMR or AMR-WB frame; class B and C bits MUST NOT be included. If the recalculated CRC mismatches the received value, the receiver SHALL consider class A bits damaged and MUST clear the Q flag (set to 0).
+section: 4.4.2.1
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

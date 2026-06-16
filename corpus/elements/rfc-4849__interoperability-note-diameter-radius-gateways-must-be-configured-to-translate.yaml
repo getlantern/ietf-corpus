@@ -1,0 +1,9 @@
+document: rfc-4849
+kind: interoperability-note
+summary: Diameter/RADIUS gateways must be configured to translate RADIUS attribute 92 (NAS-Filter-Rule) to Diameter NAS-Filter-Rule AVP (400) and vice versa. When translating from Diameter to RADIUS, rules are NUL-delimited and split on 253-octet boundaries; when translating RADIUS to Diameter, each rule becomes a separate AVP.
+section: "4"
+topics:
+    - radius
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

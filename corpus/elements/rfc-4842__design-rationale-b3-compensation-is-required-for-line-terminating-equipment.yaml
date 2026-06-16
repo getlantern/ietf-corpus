@@ -1,0 +1,8 @@
+document: rfc-4842
+kind: design-rationale
+summary: B3 compensation is required for Line Terminating Equipment (LTE) implementations of fractional STS-1 or VC-4, since LTE does not terminate the path layer and must preserve end-to-end BIP-8 parity integrity across the PSN even after removing VT/VC columns. The compensation formula accounts for changes in both the current and previous frame to maintain correct BIP-8 parity.
+section: 11.2.1.2
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4868
+kind: design-rationale
+summary: HMAC-SHA-256 with 128-bit truncation is not necessarily more secure than HMAC-SHA1-96 against adversaries lacking key knowledge, since both produce 128-bit authenticators giving the same 1-in-2^128 guessing probability. The advantage of HMAC-SHA-256+ lies in longer key lengths providing more resistance to key-guessing attacks.
+section: "3.1"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

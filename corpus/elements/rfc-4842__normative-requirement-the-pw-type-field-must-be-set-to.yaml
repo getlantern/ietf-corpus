@@ -1,0 +1,10 @@
+document: rfc-4842
+kind: normative-requirement
+summary: The PW Type field MUST be set to SONET/SDH Circuit Emulation over Packet (CEP). The control word is REQUIRED for CEP pseudowires; the C bit in PWid FEC and PW generalized ID FEC elements MUST be set. If the C bit is not set, the pseudowire MUST NOT be established and a Label Release MUST be sent with an Illegal C bit status code.
+section: "12"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

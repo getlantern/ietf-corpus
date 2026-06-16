@@ -1,0 +1,8 @@
+document: rfc-4863
+kind: design-rationale
+summary: The Wildcard PW Type was introduced because in LDP-based pseudowire signaling both endpoints must send Label Mapping messages carrying the PW Type, but when an ingress PE acts as a gateway between a layer 2 network and remote PEs, the layer 2 signaling may not contain sufficient information to determine the PW Type. The wildcard allows the uninformed endpoint to initiate its LSP independently, with the far end supplying the actual PW Type.
+section: "1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

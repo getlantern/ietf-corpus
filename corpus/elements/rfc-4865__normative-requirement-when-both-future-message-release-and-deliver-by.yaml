@@ -1,0 +1,9 @@
+document: rfc-4865
+kind: normative-requirement
+summary: When both Future Message Release and Deliver By extensions are used together, the SMTP client MUST ensure the deliver-by time is farther in the future than the future message release time; the MSA MUST reject the MAIL command if the release time exceeds the deliver-by time.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

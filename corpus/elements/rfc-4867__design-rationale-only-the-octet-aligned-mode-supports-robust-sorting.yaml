@@ -1,0 +1,9 @@
+document: rfc-4867
+kind: design-rationale
+summary: Only the octet-aligned mode supports robust sorting, interleaving, and per-frame CRC because these features require independently octet-aligned fields. Bandwidth-efficient mode omits these features to minimize overhead, making it preferable for conversational services over constrained links.
+section: "3.8"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4865
+kind: security-consideration
+summary: If a future-release message would exceed the per-user storage quota, the MSA MUST reject the MAIL command with reply code 552 and SHOULD supply new enhanced status code X.7.16 (per-user quota exceeded) or X.7.17 (system quota exceeded).
+section: "6"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4848
+kind: design-rationale
+summary: The limited regular expression form ('!.*!<URI>!') is a deliberate workaround because the NAPTR REPLACEMENT field is required to produce only a fully qualified domain name and cannot hold a URI. By encoding the URI in a fixed-string regex, U-NAPTR avoids that constraint without requiring full regex engine support.
+section: "2.2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

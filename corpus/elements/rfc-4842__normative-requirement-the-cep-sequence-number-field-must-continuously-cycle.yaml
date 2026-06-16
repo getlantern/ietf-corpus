@@ -1,0 +1,9 @@
+document: rfc-4842
+kind: normative-requirement
+summary: The CEP Sequence Number field MUST continuously cycle from 0 to 0xFFFF following RTP rules. The Structure Pointer MUST contain the offset of the first byte of the SONET structure (J1 byte for SPE, V5 byte for VT) within the packet payload, and MUST be set to 0xFFF if the packet does not carry the J1 or V5 byte.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

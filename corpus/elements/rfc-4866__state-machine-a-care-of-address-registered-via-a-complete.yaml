@@ -1,0 +1,9 @@
+document: rfc-4866
+kind: state-machine
+summary: A care-of address registered via a complete Binding Update (with valid care-of keygen token) is placed in VERIFIED state; one registered via an early Binding Update is placed in UNVERIFIED state. The transition from UNVERIFIED to VERIFIED occurs when the correspondent node receives a subsequent complete Binding Update for the same care-of address. In VERIFIED state, packets are sent without credit restrictions; in UNVERIFIED state, credit-based limits apply.
+section: "3.5"
+topics:
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

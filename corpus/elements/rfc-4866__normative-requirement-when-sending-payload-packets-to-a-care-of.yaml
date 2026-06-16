@@ -1,0 +1,10 @@
+document: rfc-4866
+kind: normative-requirement
+summary: When sending payload packets to a care-of address in UNVERIFIED state, the correspondent node MUST reduce the credit counter by the packet size and may send only if the counter is at least as large as the payload. If the counter is insufficient, the packet MUST NOT be sent to the care-of address; it SHOULD be discarded, but MAY be buffered or sent to the home address instead.
+section: "4.10"
+rfc2119_level: MUST
+topics:
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

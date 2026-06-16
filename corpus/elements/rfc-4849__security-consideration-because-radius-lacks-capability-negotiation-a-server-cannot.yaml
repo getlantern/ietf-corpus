@@ -1,0 +1,9 @@
+document: rfc-4849
+kind: security-consideration
+summary: Because RADIUS lacks capability negotiation, a server cannot automatically discover whether a NAS supports NAS-Filter-Rule. A non-compliant NAS may silently discard the attribute while granting unfiltered access, so the attribute should only be sent to NASes known to support it.
+section: "6"
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

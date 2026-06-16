@@ -1,0 +1,10 @@
+document: rfc-4867
+kind: security-consideration
+summary: Authentication and integrity of AMR/AMR-WB RTP payloads SHOULD be provided by SRTP. Without authentication, an attacker can inject or modify packets, potentially degrading speech quality or causing denial of service. The CMR field is particularly sensitive as an attacker could force inefficient codec modes.
+section: "7.2"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

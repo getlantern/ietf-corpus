@@ -1,0 +1,9 @@
+document: rfc-4842
+kind: normative-requirement
+summary: If the CEP de-packetizer encounters more than a configurable number of sequential empty packets, it MUST declare a Loss of Packet Synchronization (LOPS) defect. LOPS failure is declared after 2.5 ± 0.5 seconds of LOPS defect and cleared after 10 seconds free of LOPS defect state; the circuit is considered down while LOPS failure is active.
+section: 6.2.2
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

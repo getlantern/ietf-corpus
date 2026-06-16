@@ -1,0 +1,9 @@
+document: rfc-4842
+kind: normative-requirement
+summary: The CEP de-packetizer MUST detect lost or misordered packets. It SHOULD play out an all-ones (AIS) pattern for dropped packets and SHOULD re-order out-of-order packets. If re-ordering is not supported, misordered packets MUST be dropped. The jitter buffer SHOULD be adjustable in length to account for varying network delay.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

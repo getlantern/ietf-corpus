@@ -1,0 +1,10 @@
+document: rfc-4842
+kind: wire-format
+summary: 'The CEP Options parameter is a REQUIRED 16-bit field containing: AIS (DBA on AIS), UNE (DBA on unequipped), RTP (RTP header used), EBM (EBM extension header used), 7 reserved bits, CEP Type (3 bits: 0x0=SPE, 0x1=VT, 0x2=Fractional SPE), and Async Type (2 bits: T3 and E3 bandwidth reduction flags). A PE that does not support a requested CEP option MUST send a label-release with CEP/TDM misconfiguration status.'
+section: "12.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

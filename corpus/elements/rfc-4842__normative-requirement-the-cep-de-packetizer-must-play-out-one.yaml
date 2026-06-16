@@ -1,0 +1,9 @@
+document: rfc-4842
+kind: normative-requirement
+summary: The CEP de-packetizer MUST play out one packet's worth of all ones for each received packet with the L bit set to 1, and MUST set the SONET/SDH Overhead to signal AIS-P/V. It MUST also play out AIS-P/V during loss of packet synchronization or upon receipt of CEP packets with both N and P bits set to 1 (LOP-P/V).
+section: 7.2.1
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

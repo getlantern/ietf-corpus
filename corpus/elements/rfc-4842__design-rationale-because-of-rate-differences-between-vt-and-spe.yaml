@@ -1,0 +1,8 @@
+document: rfc-4842
+kind: design-rationale
+summary: Because of rate differences between VT and SPE levels, the VT EPAR packetizer converts multiple SPE pointer adjustments to fewer VT pointer adjustment indications using an accumulator algorithm. A VT pointer adjustment changes the accumulator by 783 units (one STS-1 SPE size), while an SPE pointer adjustment changes it by 1/4 of the VT size; this avoids the need for fractional adjustments at the VT layer.
+section: "9.1"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

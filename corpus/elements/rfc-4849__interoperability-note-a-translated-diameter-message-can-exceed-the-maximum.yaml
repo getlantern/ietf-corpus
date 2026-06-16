@@ -1,0 +1,9 @@
+document: rfc-4849
+kind: interoperability-note
+summary: A translated Diameter message can exceed the maximum RADIUS packet size (4096 bytes). If a Diameter/RADIUS gateway cannot fit a NAS-Filter-Rule AVP into a RADIUS packet, it responds with Result-Code DIAMETER_RADIUS_AVP_UNTRANSLATABLE (5018) and a Failed-AVP containing the offending AVP; the originating peer should treat this as a terminal error.
+section: "4"
+topics:
+    - radius
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
