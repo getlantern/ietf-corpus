@@ -1,0 +1,10 @@
+document: rfc-5129
+kind: security-consideration
+summary: Malicious sources could set ECT in IP packets to prevent LSRs from dropping them, which is equivalent to exploiting the per-domain ECT checking design. The authors concluded this is not a new vulnerability because the same effect is achievable simply by setting ECT in the first place, independent of MPLS ECN marking.
+section: "10"
+topics:
+    - security
+    - mpls
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

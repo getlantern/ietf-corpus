@@ -1,0 +1,9 @@
+document: rfc-5140
+kind: design-rationale
+summary: Route consolidation in the Ingress LS combines multiple routes for the same destination (from different gateways) with different attributes into a single route by taking the union of attribute values. This prevents loss of routing information that would occur if only one of the per-gateway routes were selected to be presented to the Egress LS.
+section: "7.1"
+topics:
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

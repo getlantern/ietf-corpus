@@ -1,0 +1,11 @@
+document: rfc-5129
+kind: security-consideration
+summary: The ECN nonce (RFC 3540) works correctly across an MPLS domain without requiring any specific support from this specification. The nonce in the IP header is overwritten when congestion is experienced by an LSR, allowing the sender to detect a misbehaving receiver. An MPLS-shim-level nonce is not required for this purpose.
+section: "10"
+topics:
+    - security
+    - mpls
+    - ecn
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-5150
+kind: design-rationale
+summary: Unlike LSP hierarchy where multiple LSPs can be nested into a single H-LSP using distinct labels, LSP stitching dedicates one S-LSP to exactly one e2e LSP. This is because an S-LSP provides a data link to other LSPs in the same layer (not a higher layer), so no label separation between nested LSPs is possible.
+section: "2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

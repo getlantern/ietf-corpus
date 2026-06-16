@@ -1,0 +1,11 @@
+document: rfc-5129
+kind: design-rationale
+summary: Unlike RFC 3168's 'full functionality' tunnel mode (which does not copy CE from inner to outer header at ingress), this document copies CE into the outer MPLS EXP field. This gives interior LSRs visibility into upstream marking, which is necessary for mechanisms like PCN flow termination that must avoid re-marking already-marked packets.
+section: "7"
+topics:
+    - mpls
+    - ecn
+    - congestion
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

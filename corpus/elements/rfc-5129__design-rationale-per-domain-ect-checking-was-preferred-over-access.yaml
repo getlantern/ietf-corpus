@@ -1,0 +1,10 @@
+document: rfc-5129
+kind: design-rationale
+summary: Per-domain ECT checking was preferred over access-time ECT checking (inspecting the IP header at each hop) because finding an IP header beneath an arbitrary MPLS label stack is unreliable—especially when non-IP payloads are carried—and because many commercial LSRs access the IP header for ECMP anyway, making egress-only checking a minor incremental cost.
+section: "2"
+topics:
+    - mpls
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

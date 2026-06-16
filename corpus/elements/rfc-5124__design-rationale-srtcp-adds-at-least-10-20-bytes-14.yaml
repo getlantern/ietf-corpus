@@ -1,0 +1,10 @@
+document: rfc-5124
+kind: design-rationale
+summary: SRTCP adds at least 10–20 bytes (14 bytes by default) of overhead per RTCP packet, increasing average RTCP packet size and thereby reducing the frequency at which timely feedback can be provided under AVPF timing rules. Application designers must account for this by adjusting 'avg_rtcp_size' to maintain RTCP bandwidth shares.
+section: "2.3"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

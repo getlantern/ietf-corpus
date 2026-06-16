@@ -1,0 +1,6 @@
+document: rfc-5147
+kind: design-rationale
+summary: Character encoding is not fixed for text/plain, so character counting requires knowing the encoding. Multi-byte encodings (e.g., UTF-16) make octet offsets unreliable; BOM marks do not count as characters. This variability necessitates encoding-aware position calculation.
+section: "1.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

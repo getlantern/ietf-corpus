@@ -1,0 +1,12 @@
+document: rfc-5124
+kind: security-consideration
+summary: A master key MUST NOT be shared among different RTP sessions unless the SSRCs used are unique across all RTP streams sharing the same master key, to avoid two-time pad (keystream reuse). When 2^48 SRTP packets or 2^31 SRTCP packets have been secured with the same key, key management MUST be called to provide new master keys or the session MUST be terminated.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

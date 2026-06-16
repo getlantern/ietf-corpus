@@ -1,0 +1,10 @@
+document: rfc-5129
+kind: design-rationale
+summary: ECN marking uses codepoints rather than dedicated bits in the EXP field because not every PHB requires ECN, assigning a dedicated bit would waste codepoint space, and some PHBs may need more than one ECN-like codepoint (e.g., PCN with admission-marked and termination-marked states).
+section: "2"
+topics:
+    - mpls
+    - ecn
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

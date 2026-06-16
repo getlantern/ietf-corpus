@@ -1,0 +1,9 @@
+document: rfc-5140
+kind: state-machine
+summary: The TGREP finite state machine is identical to TRIP's FSM except that when in the Established state and an UPDATE message is received, the UPDATE is silently discarded and the gateway remains in Established state. Gateways also never generate NOTIFICATION messages in response to UPDATE messages; any received UPDATE is silently discarded.
+section: "6.5"
+topics:
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

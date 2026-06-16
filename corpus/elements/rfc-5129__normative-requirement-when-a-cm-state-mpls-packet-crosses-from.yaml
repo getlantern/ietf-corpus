@@ -1,0 +1,11 @@
+document: rfc-5129
+kind: normative-requirement
+summary: 'When a CM-state MPLS packet crosses from an ECN-enabled domain to a non-ECN-enabled domain, egress checking MUST be performed: if the encapsulated packet is not ECN-capable, the packet MUST be dropped. The egress LSR must be able to inspect beneath the MPLS header without popping the label stack.'
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-5129
+kind: design-rationale
+summary: The per-domain ECT checking approach was chosen over Floyd's bit-overloading scheme (ECT/CE sharing one bit) because pre-congestion notification scenarios have non-negligible marking rates; the overloading approach would cause unnecessary packet drops even for ECN-capable transports at a rate equal to the product of local and upstream marking probabilities.
+section: "2"
+topics:
+    - mpls
+    - ecn
+    - congestion
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

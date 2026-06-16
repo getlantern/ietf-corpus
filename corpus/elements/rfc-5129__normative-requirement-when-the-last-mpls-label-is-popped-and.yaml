@@ -1,0 +1,11 @@
+document: rfc-5129
+kind: normative-requirement
+summary: 'When the last MPLS label is popped and the payload is non-IP (or lacks ECT capability), it is treated as Not-ECT: if the EXP field was CM, the packet MUST be dropped. Similarly, a Not-ECT IP packet MUST be dropped if the EXP field is CM.'
+section: "4.6"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

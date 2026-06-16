@@ -1,0 +1,11 @@
+document: rfc-5129
+kind: normative-requirement
+summary: In an ECN-disabled MPLS domain, ECN MUST NOT be enabled on any LSR. Congested LSRs in such a domain MUST drop packets; they MUST NOT mark them. The algorithm for deciding when to drop (tail-drop, RED, etc.) is a local matter.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

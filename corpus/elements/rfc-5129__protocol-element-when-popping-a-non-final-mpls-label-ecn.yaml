@@ -1,0 +1,11 @@
+document: rfc-5129
+kind: protocol-element
+summary: 'When popping a non-final MPLS label, ECN state is transferred from the outer to the inner EXP field: if the inner is Not-CM, it is set to match the outer (CM or Not-CM); if the inner is CM, it remains CM regardless of the outer. An inner-CM/outer-Not-CM combination is anomalous and SHOULD be logged.'
+section: "4.5"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
