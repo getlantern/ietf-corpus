@@ -1,0 +1,9 @@
+document: rfc-5121
+kind: design-rationale
+summary: In WiMAX networks, the recommended MTU for IPv6 is 1400 octets rather than the default 1500, because GRE tunnel overhead between BS and AR plus the 6-byte 802.16 MAC header would cause fragmentation of 1500-byte packets. This value must be communicated to the MS via the RA MTU option.
+section: Appendix D
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

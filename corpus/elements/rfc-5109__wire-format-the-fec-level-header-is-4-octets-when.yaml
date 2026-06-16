@@ -1,0 +1,9 @@
+document: rfc-5109
+kind: wire-format
+summary: The FEC level header is 4 octets when L=0 (16-bit mask) or 8 octets when L=1 (48-bit mask), containing a 16-bit protection length field followed by the mask. If bit i in the mask is set, media packet with sequence number N+i (where N is SN base) is associated with this FEC packet at this level.
+section: "7.4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

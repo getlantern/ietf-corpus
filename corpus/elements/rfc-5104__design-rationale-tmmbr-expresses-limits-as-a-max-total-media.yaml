@@ -1,0 +1,10 @@
+document: rfc-5104
+kind: design-rationale
+summary: TMMBR expresses limits as a (max total media bit rate, per-packet overhead) tuple rather than net media bit rate alone because endpoints observe overhead at different protocol layers. Calculations carried out in terms of packet rate and net media rate have the same value at both sender and receiver, making the algorithm layer-agnostic.
+section: 3.5.4
+topics:
+    - rtp
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

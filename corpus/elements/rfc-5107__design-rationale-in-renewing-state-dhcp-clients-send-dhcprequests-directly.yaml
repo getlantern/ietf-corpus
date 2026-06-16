@@ -1,0 +1,6 @@
+document: rfc-5107
+kind: design-rationale
+summary: In RENEWING state, DHCP clients send DHCPREQUESTs directly to the server specified in the Server Identifier option, bypassing the relay. This suboption lets the relay inject its own address into the Server Identifier so it intercepts renewals and can include Relay Agent Information suboptions (Circuit-ID, Remote-ID, etc.) that are required by the server but absent from direct renewals.
+section: "1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-5105
+kind: security-consideration
+summary: Moving the Id='TOKEN' attribute from the <token> root element to any sub-element (e.g., <tokendata>) would make the signature worthless because the signature would no longer cover the complete token. The <Reference URI='#TOKEN'> combined with Id='TOKEN' on <token> guarantees full coverage.
+section: "9"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

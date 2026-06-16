@@ -1,0 +1,9 @@
+document: rfc-5109
+kind: design-rationale
+summary: Separate RTP sessions for FEC and media are preferred because SSRC or payload-type multiplexing within a single session prevents use of different network paths, precludes selective reception by non-FEC hosts, affects the original stream's sequence number space, and prevents separate process implementations.
+section: "14.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

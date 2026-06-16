@@ -1,0 +1,9 @@
+document: rfc-5109
+kind: interoperability-note
+summary: When FEC is used with RFC 2198 redundant coding (RED), the marker bit is lost as soon as primary coding is carried in RED packets and cannot be recovered by FEC. The FEC data must be generated from virtual RTP packets (RED packets stripped of block headers and redundant data) rather than directly from RED packets.
+section: "14.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

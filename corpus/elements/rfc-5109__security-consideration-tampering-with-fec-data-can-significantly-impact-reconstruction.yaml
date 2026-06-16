@@ -1,0 +1,10 @@
+document: rfc-5109
+kind: security-consideration
+summary: 'Tampering with FEC data can significantly impact reconstruction: modifying the length recovery field may cause recovery of a packet that is too long, and the computational complexity of recovery can be affected by at least an order of magnitude. Implementations should sanity-check received payload and FEC data before and after recovery.'
+section: "11"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

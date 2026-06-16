@@ -1,0 +1,10 @@
+document: rfc-5104
+kind: interoperability-note
+summary: In multicast with FIR, a receiver that has already sent a decoder refresh point should await a second FIR request before responding again if the first request arrives within 2×RTT of the previous refresh point delivery, to avoid unnecessary intra frames caused by in-flight requests from participants unaware of the recent refresh.
+section: 3.5.1
+topics:
+    - rtp
+    - realtime
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

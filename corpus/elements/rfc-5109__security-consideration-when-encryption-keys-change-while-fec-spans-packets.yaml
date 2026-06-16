@@ -1,0 +1,11 @@
+document: rfc-5109
+kind: security-consideration
+summary: When encryption keys change while FEC spans packets encrypted under different keys, old keys must be cached until key rotation is confirmed for FEC packets. The new key SHOULD be used to encrypt FEC packets generated from a mix of old- and new-key payloads; the sender and receiver must agree on how encryption is performed.
+section: "11"
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

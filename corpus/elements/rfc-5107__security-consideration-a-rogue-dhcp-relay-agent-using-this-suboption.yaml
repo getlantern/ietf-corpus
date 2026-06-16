@@ -1,0 +1,9 @@
+document: rfc-5107
+kind: security-consideration
+summary: A rogue DHCP relay agent using this suboption could redirect clients to itself, then deny RENEW DHCPREQUESTs to force lease expiration, or manipulate DHCP options in DHCPACK messages and extend leases beyond server policy. DHCP authentication (RFC 3118) and/or Relay Agent Information option authentication (RFC 4030) SHOULD be deployed to mitigate this.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

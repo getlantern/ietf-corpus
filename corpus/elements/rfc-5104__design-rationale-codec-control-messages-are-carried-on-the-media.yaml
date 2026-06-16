@@ -1,0 +1,9 @@
+document: rfc-5104
+kind: design-rationale
+summary: Codec control messages are carried on the media path via RTCP rather than through SIP signaling because MCU media and signaling components are often physically separated, SIP proxies introduce architectural delay not optimized for latency, and these messages have strict real-time constraints that make a SIP re-INVITE (requiring at least two additional round trips) impractical.
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

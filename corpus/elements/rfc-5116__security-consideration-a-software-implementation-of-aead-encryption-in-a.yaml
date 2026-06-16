@@ -1,0 +1,9 @@
+document: rfc-5116
+kind: security-consideration
+summary: A software implementation of AEAD encryption in a Virtual Machine environment could inadvertently reuse a nonce due to a VM rollback to an earlier state. Applications are encouraged to document this risk; an attacker who can trigger such a rollback may have already subverted system security.
+section: "8"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-5116
+kind: security-consideration
+summary: GCM nonce reuse with the same key but distinct plaintexts undermines both confidentiality (attacker can XOR the two plaintexts) and all authenticity/integrity protection (attacker recovers the internal hash key, enabling trivial subsequent forgeries). GCM should only be used when nonce uniqueness can be assured.
+section: 5.1.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

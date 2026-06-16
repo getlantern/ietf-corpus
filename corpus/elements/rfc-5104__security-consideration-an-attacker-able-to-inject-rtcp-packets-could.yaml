@@ -1,0 +1,10 @@
+document: rfc-5104
+kind: security-consideration
+summary: An attacker able to inject RTCP packets could send spurious FIR commands forcing excessive bandwidth-intensive intra frames, fabricate TMMBR messages throttling legitimate streams below their actual path capacity, or inject VBCM payloads to manipulate encoder reference-picture state. The document recommends SRTP/SRTCP or equivalent lower-layer security to authenticate RTCP feedback messages.
+section: "6"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

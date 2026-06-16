@@ -1,0 +1,9 @@
+document: rfc-5109
+kind: design-rationale
+summary: Multiple protection at levels higher than level 0 is disallowed because it increases recovery complexity with diminishing benefit. Requiring that a packet protected at level p also appear at level p-1 allows the protection offset to be derived from protection lengths without explicit signaling in the protocol.
+section: "7.4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
