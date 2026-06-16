@@ -1,0 +1,9 @@
+document: rfc-5063
+kind: state-machine
+summary: During the Recovery Period, when the restarting node receives both a RecoveryPath message and a corresponding Path message with a Recovery Label, it locates forwarding state using the RSVP HOP and Recovery Label objects from each. If complete forwarding state is found, the LSP transitions to 'resynchronized' and a trigger Path message MUST be sent downstream; if not found, the Path message is treated as a new LSP setup request.
+section: 4.5.2.2
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
