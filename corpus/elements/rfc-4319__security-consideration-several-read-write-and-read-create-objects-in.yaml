@@ -1,0 +1,9 @@
+document: rfc-4319
+kind: security-consideration
+summary: Several read-write and read-create objects in this MIB can disrupt HDSL2/SHDSL service if manipulated without authorization, including loopback activation, soft restart, power backoff configuration, and profile changes that may trigger line reinitialization. Implementations should employ SNMPv3 authentication and access control to restrict write access to these objects.
+section: "5"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

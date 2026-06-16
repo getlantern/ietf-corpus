@@ -1,0 +1,10 @@
+document: rfc-4315
+kind: security-consideration
+summary: The COPYUID and APPENDUID response codes return information about the mailbox that may be sensitive if the mailbox has permissions permitting COPY or APPEND but not SELECT or EXAMINE. Consequently these response codes SHOULD NOT be issued if the client lacks SELECT/EXAMINE access.
+section: "5"
+rfc2119_level: SHOULD NOT
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

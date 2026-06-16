@@ -1,0 +1,9 @@
+document: rfc-4311
+kind: design-rationale
+summary: Always choosing the same router (e.g., first in list) does not provide load sharing. Round-robin and random naive tie-breaking are problematic because cache evictions can produce unstable paths and round-robin can cause synchronization issues where load concentrates on one router.
+section: "1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

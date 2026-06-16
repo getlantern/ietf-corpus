@@ -1,0 +1,9 @@
+document: rfc-4314
+kind: normative-requirement
+summary: For COPY/APPEND, the server MUST check the 'i' right for the target mailbox first. For each message, the server MUST check 't' right when \Deleted flag is set, 's' when \Seen flag is set, and 'w' for all other flags. The server MUST NOT fail COPY/APPEND if the user lacks rights to set a particular flag; instead the flag is silently dropped.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

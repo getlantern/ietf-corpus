@@ -1,0 +1,9 @@
+document: rfc-4309
+kind: design-rationale
+summary: An explicit IV field was chosen over reusing the ESP sequence number to decouple per-packet counter block assignment from sequence number assignment. This accommodates architectures where sequence number assignment occurs outside the assurance boundary, where a counter block collision would have disastrous consequences unlike a sequence number collision.
+section: "10"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

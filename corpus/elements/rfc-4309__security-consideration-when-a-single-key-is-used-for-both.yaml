@@ -1,0 +1,10 @@
+document: rfc-4309
+kind: security-consideration
+summary: When a single key is used for both directions (not IKE-established), peers have a high probability of selecting the same IV, causing counter block collisions. Implementations permitting same-key bidirectional use MUST ensure the two peers assign different salt values to the SA.
+section: "9"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

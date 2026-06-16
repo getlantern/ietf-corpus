@@ -1,0 +1,10 @@
+document: rfc-4314
+kind: normative-requirement
+summary: Servers processing commands with an identifier parameter (SETACL, DELETEACL, LISTRIGHTS) SHOULD first prepare the identifier using the SASLprep profile of stringprep. If preparation fails or results in an empty string, the server MUST refuse the command with a BAD response.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

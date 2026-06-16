@@ -1,0 +1,9 @@
+document: rfc-4309
+kind: design-rationale
+summary: 'AES CCM with explicit IV has approximately one-third the overhead of AES CBC mode: 64 bits for the IV versus a full block (128 bits) plus average half-block padding for CBC. The overhead is also constant per packet rather than variable.'
+section: "10"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

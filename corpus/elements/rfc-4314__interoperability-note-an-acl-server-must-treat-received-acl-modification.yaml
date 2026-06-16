@@ -1,0 +1,8 @@
+document: rfc-4314
+kind: interoperability-note
+summary: An ACL server MUST treat received ACL modification commands as a possible ambiguity with respect to subsequent commands, per Section 5.5 of RFC 3501. A pipelined SETACL + MYRIGHTS is ambiguous; the server must execute SETACL to completion before MYRIGHTS.
+section: 5.1.1
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

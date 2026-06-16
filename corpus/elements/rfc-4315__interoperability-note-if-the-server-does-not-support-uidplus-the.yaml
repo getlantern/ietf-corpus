@@ -1,0 +1,8 @@
+document: rfc-4315
+kind: interoperability-note
+summary: If the server does not support UIDPLUS, the client should fall back to using STORE to temporarily remove \Deleted flags from messages it does not want expunged, issue EXPUNGE, then restore \Deleted flags; alternatively it may simply use EXPUNGE and risk unintended message removal.
+section: "2.1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

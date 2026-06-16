@@ -1,0 +1,10 @@
+document: rfc-4309
+kind: security-consideration
+summary: AES-128 is vulnerable to birthday attacks after 2^64 encrypted blocks. With ESN allowing up to 2^64 packets per SA, implementations SHOULD generate a fresh key before 2^64 blocks are encrypted or SHOULD use longer AES key sizes (192 or 256 bits).
+section: "9"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

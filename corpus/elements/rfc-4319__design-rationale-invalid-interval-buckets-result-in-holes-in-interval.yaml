@@ -1,0 +1,8 @@
+document: rfc-4319
+kind: design-rationale
+summary: Invalid interval buckets result in holes in interval tables rather than marking entries invalid (unlike RFC 3593 and RFC 2662). A GetNext on a valid interval skips over any invalid preceding interval numbers silently.
+section: "2.6"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
