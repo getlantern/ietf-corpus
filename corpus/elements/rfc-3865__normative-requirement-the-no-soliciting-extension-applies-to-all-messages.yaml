@@ -1,0 +1,9 @@
+document: rfc-3865
+kind: normative-requirement
+summary: The NO-SOLICITING extension applies to all messages handled by the receiving MTA, including those intended to be relayed. An SMTP client SHOULD verify valid syntax of 'Solicitation:' keywords before relaying. An SMTP server SHOULD set the SOLICIT parameter when receiving from a non-conforming MTA that has a 'Solicitation:' header.
+section: "2.7"
+rfc2119_level: SHOULD
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
