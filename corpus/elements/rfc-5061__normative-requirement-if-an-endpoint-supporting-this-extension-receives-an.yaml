@@ -1,0 +1,11 @@
+document: rfc-5061
+kind: normative-requirement
+summary: If an endpoint supporting this extension receives an INIT indicating the peer supports ASCONF but NOT RFC 4895 (AUTH), the receiver MUST send an ABORT and MUST NOT proceed with association setup. Similarly, if INIT-ACK lacks AUTH support, the receiver MUST NOT send COOKIE-ECHO.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

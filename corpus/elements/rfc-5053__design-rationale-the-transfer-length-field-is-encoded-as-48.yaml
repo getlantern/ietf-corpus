@@ -1,0 +1,6 @@
+document: rfc-5053
+kind: design-rationale
+summary: The Transfer Length field is encoded as 48 bits for simplicity, even though the effective limit is 2^^45 bytes—a consequence of symbol size < 2^^16, maximum K <= 8192 (2^^13), and maximum source blocks <= 2^^16. The encoding leaves headroom for alignment without a narrower field.
+section: 3.2.2
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

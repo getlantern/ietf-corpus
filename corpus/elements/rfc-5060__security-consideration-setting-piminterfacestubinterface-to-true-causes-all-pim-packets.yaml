@@ -1,0 +1,9 @@
+document: rfc-5060
+kind: security-consideration
+summary: Setting pimInterfaceStubInterface to TRUE causes all PIM packets to be silently dropped on that interface, protecting the router from forged PIM messages on untrusted host-facing segments while still allowing IGMP/MLD operation. Changing this value while the interface is operational causes PIM to be disabled and re-enabled.
+section: "5"
+topics:
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

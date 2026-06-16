@@ -1,0 +1,10 @@
+document: rfc-5055
+kind: security-consideration
+summary: A client that uses a trusted SCVP server for DPV inherently trusts the SCVP server as much as it would its own local certification path validation software. Clients relying on DPV responses for trust decisions MUST obtain authenticated responses (via digital signature or MAC, or a protected transport such as TLS) to prevent an attacker from substituting a false validation result.
+section: "9"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

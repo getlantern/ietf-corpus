@@ -1,0 +1,9 @@
+document: rfc-5061
+kind: security-consideration
+summary: When ASCONF uses wildcard addresses (0.0.0.0 or ::0), the effective address is the IP header source, which is NOT protected by SCTP-AUTH. An on-path attacker can modify the source address to add an attacker-chosen address, delete all-but-one association address, or redirect the primary path. Endpoints facing on-path attacker threats SHOULD NOT use wildcard addresses in ASCONF Add/Delete/Set-Primary parameters.
+section: "6"
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

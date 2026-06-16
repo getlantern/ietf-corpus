@@ -1,0 +1,10 @@
+document: rfc-5056
+kind: design-rationale
+summary: The TLS session ID is assigned by the server and is therefore not suitable as a unique channel binding, because an MITM posing as the server can assign the same session ID to a victim client. Instead, the initial unencrypted TLS finished messages (client's, server's, or both) are appropriate, as they are the output of the TLS pseudo-random function keyed with the session key applied to all handshake material.
+section: "4.1"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

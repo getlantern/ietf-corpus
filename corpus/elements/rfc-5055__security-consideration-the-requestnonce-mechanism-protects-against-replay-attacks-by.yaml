@@ -1,0 +1,9 @@
+document: rfc-5055
+kind: security-consideration
+summary: The requestNonce mechanism protects against replay attacks by requiring the server to echo the nonce in a fresh (non-cached) response. Clients that require freshness guarantees MUST include a requestNonce and MUST set cachedResponse to FALSE; receiving a response without the matching respNonce indicates the response may be replayed.
+section: "9"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

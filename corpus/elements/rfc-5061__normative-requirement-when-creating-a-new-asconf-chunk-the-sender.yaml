@@ -1,0 +1,10 @@
+document: rfc-5061
+kind: normative-requirement
+summary: When creating a new ASCONF chunk, the sender MUST assign a Sequence Number initialized to the initial TSN value at association start and incremented by one for each subsequent ASCONF. Only one ASCONF packet MAY be outstanding (unacknowledged) at any time; additional ASCONFs MUST be queued until the previous one is acknowledged.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - multipath
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

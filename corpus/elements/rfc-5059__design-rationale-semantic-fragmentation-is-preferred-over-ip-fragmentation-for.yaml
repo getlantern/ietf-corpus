@@ -1,0 +1,9 @@
+document: rfc-5059
+kind: design-rationale
+summary: Semantic fragmentation is preferred over IP fragmentation for large Bootstrap messages because loss of a single IP fragment destroys only the semantic fragment it belongs to, not the entire BSM. Group ranges whose semantic fragment is lost retain their previous RP-Set until the next BSM cycle.
+section: 4.1.1
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

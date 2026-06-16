@@ -1,0 +1,10 @@
+document: rfc-5061
+kind: normative-requirement
+summary: The sender MUST start a T-4 RTO timer when sending an ASCONF chunk and MUST stop it upon receiving the corresponding ASCONF-ACK. On T-4 expiry, the endpoint MUST increment error counters, backoff the RTO, and retransmit the same ASCONF (unchanged, including its Sequence Number) to an alternate destination if possible.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - multipath
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

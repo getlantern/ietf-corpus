@@ -1,0 +1,9 @@
+document: rfc-5056
+kind: security-consideration
+summary: Using non-unique (end-point) channel bindings for fast re-authentication after channel re-establishment can enable impersonation attacks on multi-user systems. In a scenario like NFSv4 over IPsec on a multi-user client, a second user connecting to the same server port would share the same channel bindings and could assert credential handles belonging to other users; the server must require re-authentication before accepting asserted context handles.
+section: "8.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

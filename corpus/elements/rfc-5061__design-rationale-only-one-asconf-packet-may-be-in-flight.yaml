@@ -1,0 +1,10 @@
+document: rfc-5061
+kind: design-rationale
+summary: Only one ASCONF packet may be in flight at a time (per direction) to prevent a flood of address-change operations from causing network congestion. This is a deliberate congestion-control mechanism analogous to a window of one for address-reconfiguration signaling, independent of the normal SCTP data transfer congestion window.
+section: 5.1.1
+topics:
+    - sctp
+    - congestion
+    - multipath
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

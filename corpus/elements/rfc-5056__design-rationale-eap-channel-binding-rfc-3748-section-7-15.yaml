@@ -1,0 +1,9 @@
+document: rfc-5056
+kind: design-rationale
+summary: EAP channel binding (RFC 3748 Section 7.15) is fundamentally different from the generic channel binding defined here. EAP addresses NAS authentication and authorization correctness, while generic channel binding addresses MITM detection; moreover, in EAP the identity of the lower-layer channel end-point may be established during or after authentication, whereas generic channel binding requires the lower-layer channel to be established a priori.
+section: "2.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

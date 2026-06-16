@@ -1,0 +1,10 @@
+document: rfc-5061
+kind: normative-requirement
+summary: When an endpoint receives a valid Delete IP Address request, it MUST consider the address no longer part of the association, MUST NOT send SCTP packets for the association to that address, and MUST treat subsequent packets from that address as Out Of The Blue (rule F13).
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - multipath
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

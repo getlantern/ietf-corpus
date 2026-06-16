@@ -1,0 +1,10 @@
+document: rfc-5061
+kind: security-consideration
+summary: Dynamic address addition and deletion creates an association hijacking risk. RFC 4895 (SCTP-AUTH) is mandatory to mitigate this; if the threat model includes interception of the initial two handshake packets, a preconfigured shared endpoint-pair key MUST be used because AUTH without pre-shared keys is still vulnerable at setup time.
+section: "6"
+topics:
+    - sctp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

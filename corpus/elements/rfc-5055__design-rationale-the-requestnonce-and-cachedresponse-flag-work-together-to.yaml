@@ -1,0 +1,9 @@
+document: rfc-5055
+kind: design-rationale
+summary: The requestNonce and cachedResponse flag work together to give clients control over replay protection and freshness. When cachedResponse is FALSE, the client will not accept a cached response and MUST also include a requestNonce; a server that cannot produce a fresh response MUST reply with an error rather than returning a cached result.
+section: 3.2.5.4
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

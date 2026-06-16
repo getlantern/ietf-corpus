@@ -1,0 +1,9 @@
+document: rfc-5061
+kind: security-consideration
+summary: An on-path attacker can manipulate the Supported Extensions parameter in INIT/INIT-ACK (which are unprotected by AUTH) to prevent ASCONF use, cause spurious ABORTs, or trick one side into using ASCONF when the peer does not support it. This adds limited vulnerability since an on-path attacker already has the ability to drop or corrupt the entire INIT.
+section: "6"
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

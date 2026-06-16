@@ -1,0 +1,10 @@
+document: rfc-5061
+kind: normative-requirement
+summary: Until the ASCONF-ACK confirming an Add IP Address arrives, the sender MUST NOT use the new address as a source for any SCTP packet except one carrying an ASCONF chunk (rule F1). The receiver MUST perform path verification before sending to the new address, and MUST NOT send packets there except an ASCONF-ACK or HEARTBEAT.
+section: "5.3"
+rfc2119_level: MUST NOT
+topics:
+    - sctp
+    - multipath
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

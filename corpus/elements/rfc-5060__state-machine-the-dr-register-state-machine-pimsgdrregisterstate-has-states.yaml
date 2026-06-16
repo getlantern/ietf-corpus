@@ -1,0 +1,8 @@
+document: rfc-5060
+kind: state-machine
+summary: The DR Register state machine (pimSGDRRegisterState) has states noInfo(1), join(2), joinPending(3), prune(4). In prune state, pimSGDRRegisterStopTimer counts down to Null-Register transmission; in joinPending, it counts down to resuming data encapsulation. This state machine is only relevant when pimSGPimMode is asm.
+section: "5"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

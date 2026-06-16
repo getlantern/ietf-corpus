@@ -1,0 +1,10 @@
+document: rfc-5061
+kind: normative-requirement
+summary: An endpoint MUST NOT delete its last remaining IP address from an association (rule F5). If a request to delete the last remaining address is received, the receiver MUST send error cause 0x00A0 and MUST NOT perform the deletion.
+section: "5.3"
+rfc2119_level: MUST NOT
+topics:
+    - sctp
+    - multipath
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-5061
+kind: wire-format
+summary: The ASCONF chunk (type 0xC1) carries a 32-bit Sequence Number, a mandatory Address Parameter (8 or 20 bytes depending on IPv4/IPv6), and one or more TLV ASCONF parameters. The upper two bits of the chunk type are set to 1, causing unknown receivers to skip and report an Unrecognized Chunk Type error rather than aborting.
+section: 4.1.1
+topics:
+    - sctp
+    - multipath
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

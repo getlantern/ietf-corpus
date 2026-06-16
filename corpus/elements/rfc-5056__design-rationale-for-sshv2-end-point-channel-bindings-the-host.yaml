@@ -1,0 +1,9 @@
+document: rfc-5056
+kind: design-rationale
+summary: For SSHv2 end-point channel bindings, the host public key suffices because it is used to sign algorithm suite negotiation and the Diffie-Hellman key exchange; however, not all SSHv2 key exchanges use host public keys, limiting this construction's applicability. The SSHv2 session ID is preferable as a unique channel binding because it is a cryptographic binding of all relevant connection parameters.
+section: "4.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

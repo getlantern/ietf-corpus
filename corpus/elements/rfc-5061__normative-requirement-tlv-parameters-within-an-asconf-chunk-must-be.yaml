@@ -1,0 +1,9 @@
+document: rfc-5061
+kind: normative-requirement
+summary: TLV parameters within an ASCONF chunk MUST be processed in order (first to last). If an error occurs for a TLV, once a receiver begins failing any ADD or DELETE request, it MUST fail all subsequent ADD or DELETE requests in that same ASCONF chunk (rule F11).
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

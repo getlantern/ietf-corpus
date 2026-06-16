@@ -1,0 +1,8 @@
+document: rfc-5061
+kind: design-rationale
+summary: The ASCONF Sequence Number is initialized to the same value as the Initial TSN so that the receiver can unambiguously determine the first valid ASCONF sequence at association start without additional negotiation. Every new ASCONF increments this counter by one using modulo-2**32 arithmetic.
+section: "5.1"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

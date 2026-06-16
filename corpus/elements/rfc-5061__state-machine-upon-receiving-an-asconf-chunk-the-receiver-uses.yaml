@@ -1,0 +1,9 @@
+document: rfc-5061
+kind: state-machine
+summary: Upon receiving an ASCONF chunk, the receiver uses a three-stage lookup (source address+port → Address Parameter TLV → OOTB) to find the association, then validates the AUTH chunk and Sequence Number. If sequence equals Peer-Sequence-Number+1, process and cache the ASCONF-ACK (E4); if lower, reply with cached ACK (E2); if higher, discard as stale or attack (E5).
+section: "5.2"
+topics:
+    - sctp
+    - multipath
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

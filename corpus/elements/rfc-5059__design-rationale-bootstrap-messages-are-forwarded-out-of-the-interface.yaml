@@ -1,0 +1,9 @@
+document: rfc-5059
+kind: design-rationale
+summary: Bootstrap messages are forwarded out of the interface they were received on (as well as other interfaces) because routers on a LAN may have inconsistent RPF information. For example, if RPF(BSR) at router C points to router B rather than the originating router A, C will only accept the BSM when B re-forwards it onto the LAN.
+section: "3.4"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

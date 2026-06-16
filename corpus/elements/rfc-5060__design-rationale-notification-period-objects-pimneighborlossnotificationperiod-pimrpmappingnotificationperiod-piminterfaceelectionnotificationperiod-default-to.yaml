@@ -1,0 +1,9 @@
+document: rfc-5060
+kind: design-rationale
+summary: Notification period objects (pimNeighborLossNotificationPeriod, pimRPMappingNotificationPeriod, pimInterfaceElectionNotificationPeriod) default to 65535, representing an infinite interval so that no notifications are sent by default. Operators must explicitly configure a finite period to enable notifications, preventing accidental management-plane flooding on deployment.
+section: "5"
+topics:
+    - multicast
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
