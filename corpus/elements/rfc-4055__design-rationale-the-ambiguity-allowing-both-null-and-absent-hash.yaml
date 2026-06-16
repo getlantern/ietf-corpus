@@ -1,0 +1,9 @@
+document: rfc-4055
+kind: design-rationale
+summary: The ambiguity allowing both NULL and absent hash algorithm parameters arose because the OPTIONAL keyword was inadvertently dropped when the 1988 AlgorithmIdentifier syntax was translated to 1997 syntax; it was later restored via a defect report, but by then many implementations had already mandated NULL. RSASSA-PSS and RSAES-OAEP were defined using NULL parameters, compounding the ambiguity.
+section: "2.1"
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

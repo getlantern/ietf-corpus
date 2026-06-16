@@ -1,0 +1,8 @@
+document: rfc-4077
+kind: protocol-element
+summary: The 'SHA-1 Hash of failed message' field is a 20-byte SHA-1 computed over the entire SigComp message from the header byte (0b11111xxx) to end of input, excluding lower-level headers (UDP, IP) and stream delimiters (0xFFFF). For stream protocols, 0xFFxx escape sequences are un-escaped before hashing.
+section: "3.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,6 @@
+document: rfc-4077
+kind: design-rationale
+summary: The NACK message reuses the existing SigComp message format (second variant with code_len=0) rather than defining a new message type, so that implementations lacking NACK support will safely discard NACK messages without error, preserving interoperability.
+section: "3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

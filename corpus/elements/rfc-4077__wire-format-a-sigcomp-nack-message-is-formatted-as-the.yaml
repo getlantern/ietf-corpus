@@ -1,0 +1,6 @@
+document: rfc-4077
+kind: wire-format
+summary: 'A SigComp NACK message is formatted as the second variant of a SigComp message with code_len=0 and destination/version=1. It contains: 1-byte Reason Code, 1-byte OPCODE of failed instruction, 2-byte PC of failed instruction (big-endian), 20-byte SHA-1 hash of the failed message, and variable-length Error Details.'
+section: "3.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

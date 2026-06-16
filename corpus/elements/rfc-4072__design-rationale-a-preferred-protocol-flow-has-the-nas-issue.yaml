@@ -1,0 +1,8 @@
+document: rfc-4072
+kind: design-rationale
+summary: A preferred protocol flow has the NAS issue EAP-Request/Identity locally and forward the EAP-Response/Identity directly in the first DER, reducing Diameter round trips compared to having the server send the identity request. This optimization cannot always be applied when user identity is unavailable.
+section: "2.2"
+topics:
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

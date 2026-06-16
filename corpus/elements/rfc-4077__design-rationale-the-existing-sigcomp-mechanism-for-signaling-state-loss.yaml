@@ -1,0 +1,9 @@
+document: rfc-4077
+kind: design-rationale
+summary: The existing SigComp mechanism for signaling state loss (setting state_memory_size to 0) is insufficient because it wipes an entire compartment when only one state is corrupt, and requires a message in the reverse direction that the remote application must authorize. A dedicated NACK mechanism allows fine-grained, per-state error recovery without requiring an application-level message in the reverse direction.
+section: "1.2"
+topics:
+    - realtime
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

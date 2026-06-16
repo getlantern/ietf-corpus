@@ -1,0 +1,10 @@
+document: rfc-4055
+kind: security-consideration
+summary: RSA private keys must be protected; compromise of the private key may result in disclosure of all messages protected with that key. Key generation relies on quality random numbers, and inadequate PRNGs can reduce security to the point where an attacker can reproduce the PRNG state and search the small key space.
+section: "8"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

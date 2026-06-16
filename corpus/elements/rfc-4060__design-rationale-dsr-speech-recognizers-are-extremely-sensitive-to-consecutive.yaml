@@ -1,0 +1,10 @@
+document: rfc-4060
+kind: design-rationale
+summary: DSR speech recognizers are extremely sensitive to consecutive frame losses; therefore one SHOULD limit the maximum number of DSR frames per packet or employ FEC or interleaving when high packet loss is expected. This is why maxptime defaults to 80ms but lower values are explicitly recommended for lossy paths.
+section: "1"
+topics:
+    - rtp
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

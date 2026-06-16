@@ -1,0 +1,10 @@
+document: rfc-4055
+kind: security-consideration
+summary: Good cryptographic practice uses a given RSA key pair in only one scheme. An RSA key pair used for RSASSA-PSS SHOULD NOT be used for other purposes; one key pair SHOULD always be used with the same RSASSA-PSS parameters (except possibly saltLength). Likewise, an RSAES-OAEP key pair should not be used for other purposes.
+section: "8"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

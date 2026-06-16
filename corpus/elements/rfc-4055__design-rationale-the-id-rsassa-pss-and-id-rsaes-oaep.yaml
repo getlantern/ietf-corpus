@@ -1,0 +1,9 @@
+document: rfc-4055
+kind: design-rationale
+summary: The id-RSASSA-PSS and id-RSAES-OAEP OIDs were introduced alongside rsaEncryption so that a certificate owner can restrict a key to a specific algorithm. Without this restriction, the relying party cannot determine the intended use from the certificate, making it harder to enforce single-purpose key use as recommended in Security Considerations.
+section: "1.2"
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

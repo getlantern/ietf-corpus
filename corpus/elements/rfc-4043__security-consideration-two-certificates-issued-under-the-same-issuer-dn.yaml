@@ -1,0 +1,9 @@
+document: rfc-4043
+kind: security-consideration
+summary: Two certificates issued under the same issuer DN containing the same permanent identifier without an assigner field do not necessarily refer to the same entity, because the issuer DN may not be globally unique. Additional checks (e.g., comparing CA public keys or certification path sequences) are required, and CA key rollover further complicates matching.
+section: "4"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

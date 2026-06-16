@@ -1,0 +1,10 @@
+document: rfc-4055
+kind: security-consideration
+summary: Wang et al. demonstrated a collision attack against SHA-1 with complexity 2^69, below the generic bound of 2^80. When SHA-1 is used in a digital signature scheme, this translates to a forgery attack if the attacker can induce the signer to sign a colliding message, reducing security to 69 bits; SHA-256, SHA-384, or SHA-512 should be used when a higher security level is needed.
+section: "8"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4072
+kind: security-consideration
+summary: Negotiation attacks can cause an EAP peer to fall back to weaker methods (PAP, CHAP). Mitigation requires per-connection policy at the peer (disconnect if EAP unavailable) and per-user policy at the home server (reject non-EAP authentication). If any NAS peers MUST use EAP, the NAS MUST attempt to negotiate EAP for every session.
+section: "8.3"
+rfc2119_level: MUST
+topics:
+    - diameter
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4055
+kind: normative-requirement
+summary: The RSASSA-PSS trailerField MUST be 1 (hex 0xBC). Signature generation implementations MUST omit the trailerField when the default is used; signature validation implementations MUST recognize both an explicitly present trailerField of 1 and an absent trailerField as equivalent.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

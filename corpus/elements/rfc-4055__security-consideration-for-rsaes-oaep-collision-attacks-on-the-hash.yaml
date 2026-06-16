@@ -1,0 +1,10 @@
+document: rfc-4055
+kind: security-consideration
+summary: For RSAES-OAEP, collision attacks on the hash function do not directly translate to key transport attacks unless the encoding parameter P varies across different messages. For consistency and to cover the non-empty P case, the hash function's bit length should be at least twice the desired security level in bits.
+section: "8"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

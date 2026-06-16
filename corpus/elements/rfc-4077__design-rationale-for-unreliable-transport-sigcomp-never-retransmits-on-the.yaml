@@ -1,0 +1,8 @@
+document: rfc-4077
+kind: design-rationale
+summary: For unreliable transport, SigComp never retransmits on the application's behalf upon receiving a NACK; it relies on the application layer's existing retransmission mechanism. This avoids duplicate retransmission logic and keeps the SigComp shim minimal.
+section: 2.3.1
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
