@@ -1,0 +1,9 @@
+document: rfc-4537
+kind: design-rationale
+summary: Under RFC 4120, the KDC must limit the ticket session key enctype to one it believes both client and server support, so if both sides understand a stronger enctype the KDC did not select, they cannot negotiate it. This extension allows the client and server to negotiate a stronger cryptosystem in subsequent communication, independent of the KDC's choice.
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

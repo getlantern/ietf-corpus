@@ -1,0 +1,8 @@
+document: rfc-4535
+kind: design-rationale
+summary: 'The Request to Join Error message is deliberately unsigned for two reasons: at denial time the GM has no knowledge of who is an authorized GC/KS so the signature would be meaningless, and signing denial responses would create a denial-of-service vector by forcing the GC/KS to expend resources signing messages for unauthorized requesters.'
+section: 5.2.1
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4535
+kind: design-rationale
+summary: Cookie mode is adapted from IKEv2 and the Photuris concept (Karn and Simpson, RFC 2522) to defeat IP-spoofed RTJ flooding DoS attacks. The GC/KS commits no state until it can verify the prospective GM can receive packets at its claimed source address, eliminating the CPU and state exhaustion attack vector.
+section: 5.2.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

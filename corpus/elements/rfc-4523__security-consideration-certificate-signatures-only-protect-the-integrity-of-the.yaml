@@ -1,0 +1,10 @@
+document: rfc-4523
+kind: security-consideration
+summary: Certificate signatures only protect the integrity of the signed content itself; without LDAP data integrity protections (or lower-layer e.g. IPsec), a server cannot verify client requests were unaltered in transit, and clients cannot verify query results. Implementations are recommended to use LDAP authentication and data integrity services (RFC4513, RFC4511).
+section: "6"
+topics:
+    - ldap
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
