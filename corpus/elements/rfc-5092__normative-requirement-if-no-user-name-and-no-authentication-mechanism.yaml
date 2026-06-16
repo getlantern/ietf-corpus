@@ -1,0 +1,10 @@
+document: rfc-5092
+kind: normative-requirement
+summary: If no user name and no authentication mechanism are supplied in the IMAP URL, the client MUST authenticate as anonymous. If the server advertises AUTH=ANONYMOUS, the client MUST use AUTHENTICATE with the ANONYMOUS SASL mechanism; otherwise, the user name 'anonymous' is used with LOGIN.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

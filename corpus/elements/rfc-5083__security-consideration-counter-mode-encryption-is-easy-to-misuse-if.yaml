@@ -1,0 +1,9 @@
+document: rfc-5083
+kind: security-consideration
+summary: 'Counter mode encryption is easy to misuse: if counter block values are ever reused with the same key, the same keystream encrypts both plaintexts and confidentiality is voided. The CMS authenticated-enveloped-data type mitigates this by generating a fresh content-encryption key per content and using unpredictable nonce values in the counter block.'
+section: "3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

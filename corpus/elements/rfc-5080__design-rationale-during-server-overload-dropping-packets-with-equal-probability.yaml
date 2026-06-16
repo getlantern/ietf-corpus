@@ -1,0 +1,8 @@
+document: rfc-5080
+kind: design-rationale
+summary: During server overload, dropping packets with equal probability across all sessions causes high failure rates for multi-round protocols like EAP. Servers should preferentially accept Access-Request packets containing a valid State attribute so that in-progress authentication conversations are more likely to complete, reducing retry-induced load.
+section: 2.2.3
+topics:
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

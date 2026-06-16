@@ -1,0 +1,10 @@
+document: rfc-5080
+kind: normative-requirement
+summary: When a NAS has more than one global address and cannot determine which is used for identification in a particular request, it is RECOMMENDED that the NAS include the NAS-Identifier attribute in Access-Requests. A RADIUS server MUST use the source IP address of the RADIUS UDP packet to select the shared secret, so a separate shared secret must be configured for each source address used.
+section: 2.7.2
+rfc2119_level: RECOMMENDED
+topics:
+    - radius
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

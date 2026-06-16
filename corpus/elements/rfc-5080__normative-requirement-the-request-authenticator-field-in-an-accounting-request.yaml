@@ -1,0 +1,10 @@
+document: rfc-5080
+kind: normative-requirement
+summary: The Request Authenticator field in an Accounting-Request MUST contain the correct MD5 hash value. Invalid packets MUST be silently discarded by new RADIUS server implementations. New RADIUS client implementations MUST use the proper algorithm to calculate the Request Authenticator; the legacy practice of setting it to all zeros is prohibited.
+section: 2.3.3
+rfc2119_level: MUST
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

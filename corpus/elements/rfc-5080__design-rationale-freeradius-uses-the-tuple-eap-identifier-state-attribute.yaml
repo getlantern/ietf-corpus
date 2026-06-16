@@ -1,0 +1,9 @@
+document: rfc-5080
+kind: design-rationale
+summary: FreeRADIUS uses the tuple (EAP Identifier, State attribute, source IP address) as the key to uniquely identify EAP sessions rather than NAS-IP-Address or other NAS-controlled attributes. Because the State attribute is under the server's control, session uniqueness is controlled by the server, not the NAS, avoiding proxy-modification problems. This algorithm SHOULD be used in preference to any other method.
+section: 2.1.2
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

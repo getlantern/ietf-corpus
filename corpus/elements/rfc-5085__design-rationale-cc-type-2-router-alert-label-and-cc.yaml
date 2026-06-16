@@ -1,0 +1,8 @@
+document: rfc-5085
+kind: design-rationale
+summary: CC Type 2 (Router Alert Label) and CC Type 3 (TTL==1) may take a different ECMP path than PW data traffic, potentially testing a path that is not the actual data path. CC Type 1 (PW-ACH, in-band) is the preferred mode when a control word is present because it follows the same data-plane path as PW data.
+section: 5.1.2
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

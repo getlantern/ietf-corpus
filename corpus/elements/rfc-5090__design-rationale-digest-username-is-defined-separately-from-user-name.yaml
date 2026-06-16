@@ -1,0 +1,9 @@
+document: rfc-5090
+kind: design-rationale
+summary: Digest-Username is defined separately from User-Name because HTTP Digest uses a username in the digest calculation, but the RADIUS server must use User-Name for credential lookup to ensure consistent policy enforcement and avoid spoofing.
+section: "3.13"
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

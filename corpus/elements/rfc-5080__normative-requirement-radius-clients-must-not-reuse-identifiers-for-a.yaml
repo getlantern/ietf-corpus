@@ -1,0 +1,10 @@
+document: rfc-5080
+kind: normative-requirement
+summary: RADIUS clients MUST NOT reuse Identifiers for a given source IP address and source UDP port until a valid response has been received or the request has timed out. Clients SHOULD allocate Identifiers via a least-recently-used (LRU) method. Client implementations SHOULD include a Message-Authenticator attribute in every Access-Request.
+section: 2.2.2
+rfc2119_level: MUST NOT
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

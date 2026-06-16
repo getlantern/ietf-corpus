@@ -1,0 +1,11 @@
+document: rfc-5090
+kind: normative-requirement
+summary: If the Digest-Qop Attribute value is 'auth-int' and the Access-Accept contains a Digest-Response-Auth Attribute, the RADIUS client MUST ignore the Access-Accept and treat it as an Access-Reject, because the RADIUS server cannot know the HTTP-style response body contents.
+section: 2.1.3
+rfc2119_level: MUST
+topics:
+    - radius
+    - diameter
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-5095
+kind: normative-requirement
+summary: If a received RH0 packet has Segments Left of zero, the node must ignore the Routing Header and proceed to process the next header; if Segments Left is non-zero, the node must discard the packet and send an ICMP Parameter Problem, Code 0, message to the source address.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - ip
+    - security
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-5080
+kind: normative-requirement
+summary: On receiving an Access-Accept that includes an attribute of known Type for an unimplemented service, a RADIUS client MUST treat it as an Access-Reject. On receiving an Access-Accept with an unknown-Type attribute, a RADIUS client SHOULD assume it is a potential service definition and treat the packet as an Access-Reject. Unknown VSAs SHOULD be ignored.
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

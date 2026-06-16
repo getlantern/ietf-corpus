@@ -1,0 +1,10 @@
+document: rfc-5080
+kind: interoperability-note
+summary: The Framed-IPv6-Prefix attribute's Prefix-Length field allows values from 0 to 128, but prefixes more granular than /64 have unclear semantics at the NAS. A /64 or larger prefix is intended for the NAS-to-CPE link (via Router Advertisement); a delegated prefix for CPE internal use should use the Delegated-IPv6-Prefix attribute (RFC 4818).
+section: "2.11"
+topics:
+    - radius
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-5080
+kind: security-consideration
+summary: The duplicate-detection cache described in Section 2.2.2 is vulnerable to cache-poisoning attacks when Access-Request packets lack a Message-Authenticator attribute, since such packets can be trivially forged to forcibly expire cache entries. Mitigation requires following RFC 3579 Section 4 guidance or requiring Message-Authenticator in all Access-Request packets.
+section: "3"
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-5080
+kind: normative-requirement
+summary: RADIUS servers MUST implement duplicate detection for Access-Request packets as described in RFC 2865 Section 3. Servers MUST cache responses sent to Access-Requests and, upon receiving a valid duplicate, MUST resend the cached response without reprocessing. Servers MUST silently discard duplicates for which no response has yet been sent.
+section: 2.2.2
+rfc2119_level: MUST
+topics:
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

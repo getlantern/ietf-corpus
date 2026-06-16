@@ -1,0 +1,11 @@
+document: rfc-5080
+kind: security-consideration
+summary: Using the same value for User-Name and User-Password (e.g., a MAC address) in a Call Check request is NOT RECOMMENDED because it gives an attacker both the cleartext and ciphertext of the User-Password field, enabling offline dictionary attacks and potentially compromising the shared secret and the entire RADIUS protocol.
+section: 2.1.1
+rfc2119_level: SHOULD NOT
+topics:
+    - radius
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
