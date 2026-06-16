@@ -1,0 +1,9 @@
+document: rfc-4495
+kind: design-rationale
+summary: Without a bandwidth indication in the ResvErr, a deaggregator re-establishing after full preemption must guess how much bandwidth to request, risking either re-preemption (too much) or unnecessary microflow disruption (too little). The error flow descriptor solves this by communicating the available ceiling directly.
+section: "3.1"
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

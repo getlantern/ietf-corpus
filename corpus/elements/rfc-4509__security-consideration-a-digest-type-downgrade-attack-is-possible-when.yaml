@@ -1,0 +1,10 @@
+document: rfc-4509
+kind: security-consideration
+summary: A digest type downgrade attack is possible when multiple DS records for the same DNSKEY use different digest types and a validator accepts a weaker digest even if a stronger one is present but fails to match. Validators SHOULD ignore weaker digests (e.g., SHA-1) when stronger ones (SHA-256) are present, as specified in Section 3.
+section: "6.1"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

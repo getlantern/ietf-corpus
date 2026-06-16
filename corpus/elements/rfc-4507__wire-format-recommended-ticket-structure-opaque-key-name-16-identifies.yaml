@@ -1,0 +1,9 @@
+document: rfc-4507
+kind: wire-format
+summary: 'Recommended ticket structure: `opaque key_name[16]` (identifies key set), `opaque iv[16]` (AES-CBC IV), `opaque encrypted_state<0..2^16-1>` (AES-128-CBC encrypted session state), `opaque mac[20]` (HMAC-SHA1 over key_name || iv || length || encrypted_state).'
+section: "4"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

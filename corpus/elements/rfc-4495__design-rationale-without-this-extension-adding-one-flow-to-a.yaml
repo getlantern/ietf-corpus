@@ -1,0 +1,9 @@
+document: rfc-4495
+kind: design-rationale
+summary: Without this extension, adding one flow to a higher-priority aggregate causes the entire lower-priority aggregate to be preempted, disrupting all individual flows and causing packet loss during re-reservation. Partial preemption takes only the minimum required bandwidth, minimizing disruption.
+section: "3.1"
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
