@@ -1,0 +1,10 @@
+document: rfc-4682
+kind: normative-requirement
+summary: If the MTA did not report a provisioning state of 'pass(1)', the pktcMtaDevErrorOidsTable MUST be populated for each error or warning instance, even when different parameters share the same error type. Errors beyond the 1024th MUST be ignored and the 1024th entry MUST be overwritten to indicate 'too many errors'.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - snmp
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4684
+kind: design-rationale
+summary: The RT membership NLRI is structured as {origin-as#, route-target} rather than per-PE identifiers. Including the originating AS number provides uniqueness across ASes sourcing the same route-target and allows standard BGP path selection (AS-path length and policy) to prune duplicate paths in the RT membership flooding graph while maintaining reachability to all advertising ASes.
+section: "3.1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

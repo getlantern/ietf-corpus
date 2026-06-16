@@ -1,0 +1,11 @@
+document: rfc-4682
+kind: state-machine
+summary: 'Kerberos unsolicited key management uses an exponential back-off state machine with three parameters: nominal timeout (default 3 s for provisioning server, 3000 ms for realm), maximum timeout cap (default 600 s for provisioning, 100 s for realm), and maximum retries (default 8 for provisioning, 5 for realm). Retransmissions double each interval until capped, then stop when the retry counter is exhausted.'
+section: "4"
+topics:
+    - snmp
+    - diameter
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

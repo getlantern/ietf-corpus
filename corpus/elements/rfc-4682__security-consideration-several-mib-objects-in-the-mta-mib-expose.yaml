@@ -1,0 +1,10 @@
+document: rfc-4682
+kind: security-consideration
+summary: Several MIB objects in the MTA MIB expose sensitive information or allow control operations (pktcMtaDevResetNow, pktcMtaDevEnabled, pktcMtaDevProvConfigKey, pktcMtaDevProvConfigHash, certificate objects) and MUST be protected using SNMPv3 with appropriate access control. Implementations MUST NOT deploy SNMPv1 or SNMPv2c for write access to these objects.
+section: "6"
+topics:
+    - snmp
+    - security
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

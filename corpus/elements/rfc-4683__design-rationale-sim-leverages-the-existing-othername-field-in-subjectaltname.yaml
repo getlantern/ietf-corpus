@@ -1,0 +1,9 @@
+document: rfc-4683
+kind: design-rationale
+summary: SIM leverages the existing otherName field in subjectAltName rather than defining a new certificate field, because otherName is widely supported (e.g., smart card logon) and implementations that do not process sensitive identifiers are unaffected. An alternative format would increase implementation cost without enhancing security.
+section: "1"
+topics:
+    - pkix
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

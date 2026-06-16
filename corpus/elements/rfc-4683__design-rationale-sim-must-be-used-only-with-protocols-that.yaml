@@ -1,0 +1,10 @@
+document: rfc-4683
+kind: design-rationale
+summary: SIM MUST be used only with protocols that employ digital signatures generated using the subject's private key. Without this constraint, a relying party who learns P and SII could impersonate the subject, since knowledge of those values alone is insufficient to authenticate without proof of private key possession.
+section: "1"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

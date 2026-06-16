@@ -1,0 +1,11 @@
+document: rfc-4682
+kind: security-consideration
+summary: pktcMtaDevProvConfigKey (OCTET STRING SIZE 32) holds the encryption key for the configuration file and MUST NOT be used in non-secure provisioning modes; in those modes the MTA SHOULD return 'inconsistentValue' on SET and a zero-length string on GET. This object MUST NOT be retained across reboots.
+section: "4"
+topics:
+    - snmp
+    - security
+    - crypto
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

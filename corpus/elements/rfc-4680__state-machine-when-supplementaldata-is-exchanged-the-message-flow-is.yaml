@@ -1,0 +1,8 @@
+document: rfc-4680
+kind: state-machine
+summary: 'When SupplementalData is exchanged, the message flow is: ClientHello (with extensions) → ServerHello (with extensions) + SupplementalData* + Certificate* + ServerKeyExchange* + CertificateRequest* + ServerHelloDone → SupplementalData* + Certificate* + ClientKeyExchange + CertificateVerify* + [ChangeCipherSpec] + Finished → [ChangeCipherSpec] + Finished → Application Data. The asterisk (*) indicates optional or situation-dependent messages.'
+section: "3"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

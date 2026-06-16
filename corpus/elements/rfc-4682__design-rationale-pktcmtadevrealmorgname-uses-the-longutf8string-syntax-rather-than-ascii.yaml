@@ -1,0 +1,10 @@
+document: rfc-4682
+kind: design-rationale
+summary: pktcMtaDevRealmOrgName uses the LongUtf8String syntax (rather than ASCII) to accommodate the X.509 OrganizationName attribute from the Telephony Service Provider certificate, which is defined using UTF-8 encoding. UTF-8 characters may span 1–4 octets under RFC 3629.
+section: "3.7"
+topics:
+    - snmp
+    - pkix
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

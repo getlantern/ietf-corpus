@@ -1,0 +1,10 @@
+document: rfc-4669
+kind: security-consideration
+summary: radiusAuthClientIPAddress and radiusAuthClientInetAddress expose the addresses of RADIUS authentication clients, which could be useful to an attacker mounting an attack against those clients. Even GET access to these objects should be controlled, and values should be encrypted when transmitted over the network via SNMP.
+section: "8"
+topics:
+    - radius
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

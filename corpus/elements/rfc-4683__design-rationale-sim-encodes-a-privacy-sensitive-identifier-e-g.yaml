@@ -1,0 +1,11 @@
+document: rfc-4683
+kind: design-rationale
+summary: SIM encodes a privacy-sensitive identifier (e.g., Social Security Number) in the subjectAltName extension as an otherName rather than in plaintext, because direct inclusion would disclose the identifier to anyone who views the certificate. The double-hash construction with a user-chosen password and RA-generated random value protects the SII even if the certificate is posted in a public directory.
+section: "1"
+topics:
+    - pkix
+    - privacy
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

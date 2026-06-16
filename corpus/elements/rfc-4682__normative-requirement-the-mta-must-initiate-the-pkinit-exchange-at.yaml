@@ -1,0 +1,12 @@
+document: rfc-4682
+kind: normative-requirement
+summary: The MTA MUST initiate the PKINIT exchange at time TicketEXP - PKINITGP (default grace period 15 minutes) to renew Application Server tickets. If the MTA possesses a TGS ticket for a Provisioning Server or current CMS, it MUST initiate the TGS Request/Reply exchange at TicketEXP - TGSGP (default 10 minutes).
+section: "4"
+rfc2119_level: MUST
+topics:
+    - snmp
+    - diameter
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4682
+kind: design-rationale
+summary: The pktcMtaDevErrorOidsTable is limited to 1024 entries because configuration files are usually validated by operators before deployment, making 1024 a sufficient bound even with future extensions. Errors beyond 1024 are silently discarded with the 1024th entry overwritten to signal overflow.
+section: "4"
+topics:
+    - snmp
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

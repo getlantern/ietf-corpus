@@ -1,0 +1,10 @@
+document: rfc-4684
+kind: normative-requirement
+summary: When a BGP speaker receives an UPDATE advertising or withdrawing a given RT membership NLRI, it should examine the RIB-OUTs of VPN NLRIs and re-evaluate the advertisement status of routes that match the Route Target in question, generating the minimum set of VPN route updates necessary to transition between the previous and current distribution graph state.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

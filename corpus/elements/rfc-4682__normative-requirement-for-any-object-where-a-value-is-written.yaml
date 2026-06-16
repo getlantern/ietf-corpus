@@ -1,0 +1,10 @@
+document: rfc-4682
+kind: normative-requirement
+summary: For any object where a value is written via SNMP SET (pktcMtaDevResetNow, pktcMtaDevEnabled, pktcMtaDevProvisioningTimer, DNS servers, time server, config file, config hash, config key, various timeout objects), the agent MUST NOT retain the supplied value across MTA re-initializations or reboots.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - snmp
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
