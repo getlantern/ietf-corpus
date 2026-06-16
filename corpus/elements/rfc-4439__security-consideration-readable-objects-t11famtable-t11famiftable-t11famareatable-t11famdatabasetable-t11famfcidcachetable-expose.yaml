@@ -1,0 +1,9 @@
+document: rfc-4439
+kind: security-consideration
+summary: Readable objects (t11FamTable, t11FamIfTable, t11FamAreaTable, t11FamDatabaseTable, t11FamFcIdCacheTable) expose configuration, topology, and address assignment data and may also be sensitive. GET and NOTIFY access should be controlled and values encrypted in transit; SNMPv3 prior versions provide no per-user access control even on IPsec-secured networks.
+section: "11"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4430
+kind: wire-format
+summary: The KINK_ENCRYPT payload encapsulates encrypted KINK payloads and includes InnerNextPload (1 octet), RESERVED2 (3 octets), and the ciphertext. It MUST be the final payload in the outer chain and MUST be encrypted before the final KINK checksum is applied; encrypted content starts at InnerNextPload, covering PayloadLength minus 4 octets.
+section: 4.2.7
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

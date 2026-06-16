@@ -1,0 +1,8 @@
+document: rfc-4433
+kind: state-machine
+summary: 'Dynamic HA assignment flow: MN sets HA field to ALL-ZERO-ONE-ADDR and sends Registration Request to Requested HA (directly or via FA). On success, HA responds with its own address as Assigned HA and MN anchors there for the session. On REDIRECT-HA-REQ, MN extracts Redirected HA from extension, sends new Registration Request to that HA, and detects loops by tracking previously redirected HAs.'
+section: "4.1"
+topics:
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

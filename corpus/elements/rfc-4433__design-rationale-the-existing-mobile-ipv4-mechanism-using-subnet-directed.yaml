@@ -1,0 +1,9 @@
+document: rfc-4433
+kind: design-rationale
+summary: The existing Mobile IPv4 mechanism using subnet-directed broadcast for HA discovery was designed for static home addresses and is unreliable in practice because routers drop directed broadcast packets by default (per BCP 34 / RFC 2644, addressing Smurf DoS attacks). This document uses a unicast destination IP address instead, avoiding the multi-HA response problem.
+section: "3.2"
+topics:
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

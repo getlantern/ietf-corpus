@@ -1,0 +1,9 @@
+document: rfc-4444
+kind: design-rationale
+summary: The isisNextCircIndex scalar uses the DIFFSERV-MIB IndexIntegerNextFree type to coordinate circuit row creation between management applications. A manager reads the scalar, uses the returned non-zero value as the new isisCircIndex in a SET, and retries if inconsistentValue is returned, preventing index collisions.
+section: "4"
+topics:
+    - snmp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

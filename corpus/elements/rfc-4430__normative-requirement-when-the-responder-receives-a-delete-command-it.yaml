@@ -1,0 +1,10 @@
+document: rfc-4430
+kind: normative-requirement
+summary: When the responder receives a DELETE command, it MUST delete SAs of both directions and MUST reply with ISAKMP Delete payloads indicating the inbound SA(s) for the responder. If the responder cannot find the SPI, it MUST return an ISAKMP notification with INVALID_SPI.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

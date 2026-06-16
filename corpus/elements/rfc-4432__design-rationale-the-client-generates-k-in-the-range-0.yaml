@@ -1,0 +1,8 @@
+document: rfc-4432
+kind: design-rationale
+summary: The client generates K in the range 0 <= K < 2^(KLEN-2*HLEN-49) to ensure K's mpint encoding is always short enough to be encrypted under K_T using RSAES-OAEP, as proven in Appendix A where maximum message length equals (KLEN-2*HLEN-9)/8 bytes.
+section: A
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

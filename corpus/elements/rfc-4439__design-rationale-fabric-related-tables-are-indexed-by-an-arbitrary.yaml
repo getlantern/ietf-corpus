@@ -1,0 +1,6 @@
+document: rfc-4439
+kind: design-rationale
+summary: Fabric-related tables are indexed by an arbitrary integer Fabric Index to accommodate both FC-SW-3 (single Fabric, index always 1) and FC-SW-4 (multiple Virtual Fabrics per physical infrastructure) in a single table structure. fcmSwitchIndex is placed before t11FamFabricIndex in INDEX clauses to simplify queries across all Fabrics connected to a single switch.
+section: "5.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4444
+kind: interoperability-note
+summary: Tables indexed by InetAddress fields (isisSummAddrTable, isisRedistributeAddrTable) may produce OID instances with more than 128 sub-identifiers if the address and prefix length fields are long. Such OIDs cannot be accessed using SNMPv1, SNMPv2c, or SNMPv3 due to OBJECT IDENTIFIER length constraints.
+section: "4"
+topics:
+    - snmp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

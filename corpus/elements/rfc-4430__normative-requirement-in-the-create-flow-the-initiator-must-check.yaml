@@ -1,0 +1,10 @@
+document: rfc-4430
+kind: normative-requirement
+summary: In the CREATE flow, the initiator MUST check that the optimistic proposal was selected by comparing all transforms and attributes. Lifetime attributes MAY be lowered by the responder, but MUST NOT be set to a higher value; a higher value MUST generate a NO-PROPOSAL-CHOSEN error. The initiator MUST use the shorter lifetime.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

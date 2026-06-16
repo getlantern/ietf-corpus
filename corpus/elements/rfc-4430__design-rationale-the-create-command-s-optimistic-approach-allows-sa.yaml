@@ -1,0 +1,9 @@
+document: rfc-4430
+kind: design-rationale
+summary: The CREATE command's optimistic approach allows SA establishment in two messages instead of three by pre-installing an inbound SA based on the first transform proposal. This is safe because the KDC provides a reliable source of randomness for key derivation even without a responder nonce contribution.
+section: 3.2.1
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

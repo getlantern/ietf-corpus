@@ -1,0 +1,10 @@
+document: rfc-4430
+kind: design-rationale
+summary: Kerberos-based centralized key management scales as O(n+m) principal keys rather than IKE's O(n*m) pairwise keys. Public key operations (if used at all via PKINIT) are amortized over the lifetime of KDC credentials; subsequent ticket-based exchanges use only symmetric cryptography, reducing computational cost.
+section: "1"
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

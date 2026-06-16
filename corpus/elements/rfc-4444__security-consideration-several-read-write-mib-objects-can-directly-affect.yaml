@@ -1,0 +1,10 @@
+document: rfc-4444
+kind: security-consideration
+summary: 'Several read-write MIB objects can directly affect IS-IS routing behavior: isisSysAdminState can shut down the protocol instance, isisSysLevelSetOverload can force the overload bit causing traffic rerouting, and isisSysL2toL1Leaking can alter route distribution between levels. Unauthorized write access to these objects constitutes a significant routing security risk.'
+section: "7"
+topics:
+    - security
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

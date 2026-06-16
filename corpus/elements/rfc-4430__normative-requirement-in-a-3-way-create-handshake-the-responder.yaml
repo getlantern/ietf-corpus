@@ -1,0 +1,10 @@
+document: rfc-4430
+kind: normative-requirement
+summary: In a 3-way CREATE handshake, the responder MUST request an ACK (set ACKREQ bit) if it does not choose the first proposal, adds a nonce, or accepts a KE exchange. The initiator MUST always generate an ACK if the ACKREQ bit is set in the KINK header, even if it believes the responder was in error.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

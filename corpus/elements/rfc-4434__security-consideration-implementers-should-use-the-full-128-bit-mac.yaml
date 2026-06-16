@@ -1,0 +1,10 @@
+document: rfc-4434
+kind: security-consideration
+summary: Implementers should use the full 128-bit MAC value from AES-XCBC-MAC (not the 96-bit truncated value) when implementing the PRF; the test vectors in AES-XCBC-MAC show the full value before truncation and are applicable for verifying AES-XCBC-PRF-128 correctness.
+section: "3"
+topics:
+    - crypto
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

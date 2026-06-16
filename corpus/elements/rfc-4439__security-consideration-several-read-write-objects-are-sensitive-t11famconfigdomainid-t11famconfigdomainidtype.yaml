@@ -1,0 +1,9 @@
+document: rfc-4439
+kind: security-consideration
+summary: 'Several read-write objects are sensitive: t11FamConfigDomainId, t11FamConfigDomainIdType, and t11FamContiguousAllocation (address allocation policy); t11FamRestart and t11FamAutoReconfigure (can trigger disruptive Fabric reconfiguration); t11FamPriority (affects Principal Switch election); t11FamRcFabricNotifyEnable (suppresses notifications); t11FamIfRcfReject (alters RCF handling); t11FamIfRowStatus (interface reconfiguration). Unauthorized SET operations can negatively affect Fabric operations.'
+section: "11"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

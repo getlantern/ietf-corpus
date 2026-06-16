@@ -1,0 +1,10 @@
+document: rfc-4434
+kind: design-rationale
+summary: AES-XCBC-MAC produces a 128-bit value that is truncated to 96 bits for use as a MAC. AES-XCBC-PRF-128 omits this truncation step, retaining the full 128-bit output, because 96 bits is too short for a long-lived PRF in IKEv1 or IKEv2 and creates keys more vulnerable to brute-force attacks than 128-bit output.
+section: "1"
+topics:
+    - crypto
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

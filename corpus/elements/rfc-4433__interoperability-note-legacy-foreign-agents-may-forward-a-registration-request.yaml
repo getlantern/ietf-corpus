@@ -1,0 +1,8 @@
+document: rfc-4433
+kind: interoperability-note
+summary: Legacy foreign agents may forward a Registration Request with HA field ALL-ZERO-ONE-ADDR by using ALL-ZERO-ONE-ADDR as the destination IP, causing the packet to be dropped or mishandled. The MN should fall back to setting the HA field to the actual HA unicast address (step 2 of Section 4.1) if no reply is received or error code 70 (poorly formed request) is returned.
+section: "10"
+topics:
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

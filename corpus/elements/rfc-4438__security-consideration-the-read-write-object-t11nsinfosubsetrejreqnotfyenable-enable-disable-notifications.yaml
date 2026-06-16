@@ -1,0 +1,9 @@
+document: rfc-4438
+kind: security-consideration
+summary: The read-write object t11NsInfoSubsetRejReqNotfyEnable (enable/disable notifications) is sensitive; SET operations in a non-secure environment without proper protection can negatively affect network operations. The t11NsRegTable and t11NsStatsTable expose topology and state information that should be protected even for GET and NOTIFY access.
+section: "11"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

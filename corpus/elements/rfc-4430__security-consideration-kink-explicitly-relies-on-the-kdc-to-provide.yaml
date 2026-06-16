@@ -1,0 +1,10 @@
+document: rfc-4430
+kind: security-consideration
+summary: KINK explicitly relies on the KDC to provide adequate entropy for session key generation. Kerberos is susceptible to dictionary attacks on user passwords; service principals should use randomly generated keys (e.g., -randomkey option). The KDC is a central point of attack as with any AAA server.
+section: "10"
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

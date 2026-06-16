@@ -1,0 +1,10 @@
+document: rfc-4434
+kind: design-rationale
+summary: RFC 3664 required keys to be exactly 128 bits; this restriction is removed in RFC 4434 to align AES-XCBC-PRF-128 with HMAC-SHA1 and HMAC-MD5 as used in IKE, which accept variable-length keys. Bits-on-the-wire results are identical for 128-bit keys.
+section: "1.1"
+topics:
+    - crypto
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

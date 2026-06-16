@@ -1,0 +1,8 @@
+document: rfc-4438
+kind: design-rationale
+summary: The three statistics groups (t11NsRequestStatsGroup, t11NsRscnStatsGroup, t11NsRejectStatsGroup) are conditionally mandatory rather than unconditionally mandatory, so that implementations not capturing those statistics are not forced to do so, while implementations that do capture them must expose them via the same MIB objects for interoperability.
+section: 5.4.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

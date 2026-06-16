@@ -1,0 +1,10 @@
+document: rfc-4436
+kind: design-rationale
+summary: DNAv4 uses unicast ARP rather than broadcast ARP to test reachability because broadcast ARP imposes greater burden on 802.11 networks, can pollute ARP caches of peers, and when using private addresses could disrupt communications of another device legitimately using the same address. Unicast ARP addressed to the router's MAC address harmlessly disappears if the host is not on the expected link.
+section: "1.1"
+topics:
+    - ip
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

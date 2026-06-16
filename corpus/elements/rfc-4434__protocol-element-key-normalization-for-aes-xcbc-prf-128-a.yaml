@@ -1,0 +1,10 @@
+document: rfc-4434
+kind: protocol-element
+summary: 'Key normalization for AES-XCBC-PRF-128: a 128-bit key is used as-is; a shorter key is right-padded with zero bits to 128 bits; a longer key is shortened to 128 bits by recursively applying AES-XCBC-PRF-128 with a 128-zero-bit key over the too-long key as the message.'
+section: "2"
+topics:
+    - crypto
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4430
+kind: security-consideration
+summary: Principal names are KINK service identities, but SA-protected traffic is identified by DOI-specific selectors (IP addresses, ports). If two hosts share the same IP address, it may be impossible to determine which principal's key protects the traffic. Implementations must carefully bind principal names to SA selectors.
+section: "10"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

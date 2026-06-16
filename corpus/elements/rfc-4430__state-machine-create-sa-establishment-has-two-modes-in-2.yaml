@@ -1,0 +1,9 @@
+document: rfc-4430
+kind: state-machine
+summary: CREATE SA establishment has two modes. In 2-way handshake (optimistic), the initiator pre-creates an inbound SA; if the responder accepts, both outbound SAs are installed without an ACK. In 3-way handshake (non-optimistic or KE present), the initiator sends CREATE without creating SAs; responder selects proposal and sets ACKREQ; initiator creates SAs and sends ACK; responder installs outbound SA upon ACK.
+section: "3.2"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

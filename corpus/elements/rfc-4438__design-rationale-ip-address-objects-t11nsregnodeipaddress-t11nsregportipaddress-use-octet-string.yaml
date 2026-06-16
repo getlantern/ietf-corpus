@@ -1,0 +1,8 @@
+document: rfc-4438
+kind: design-rationale
+summary: IP address objects (t11NsRegNodeIpAddress, t11NsRegPortIpAddress) use OCTET STRING rather than InetAddressType/InetAddress because the MIB must faithfully represent whatever value was received in the FC-GS-4 message, including invalid or malformed addresses that could not be encoded in a typed address object.
+section: "5.5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4433
+kind: security-consideration
+summary: A man-in-the-middle can capture a Registration Request with HA field set to ALL-ZERO-ONE-ADDR and forward it to multiple HAs, potentially causing more than one HA to create a mobility binding for a given MN. The MN can mitigate this by using a short lifetime (e.g., 5 seconds) in such Registration Requests, and by including the Requested HA Extension (which makes the attack harder since the request is directed to a specific unicast address).
+section: "9"
+topics:
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

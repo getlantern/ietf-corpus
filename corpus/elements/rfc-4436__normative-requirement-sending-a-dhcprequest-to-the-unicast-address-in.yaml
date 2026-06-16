@@ -1,0 +1,9 @@
+document: rfc-4436
+kind: normative-requirement
+summary: Sending a DHCPREQUEST to the unicast address in INIT-REBOOT state is not appropriate because if the client has moved to another subnet, the DHCP server response cannot be routed back since the DHCPREQUEST bypasses the relay and contains an invalid source address.
+section: "2.2"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4432
+kind: normative-requirement
+summary: The signature algorithm MUST be applied over H, not the original data; where a signature algorithm includes its own hashing, the data is first hashed with HASH to compute H, and H is then hashed again as part of the signing operation.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
