@@ -1,0 +1,11 @@
+document: rfc-4588
+kind: security-consideration
+summary: Using the same encryption key for both the original and retransmission streams risks two-time pad attacks, since the same plaintext media payload appears in both streams. Implementers are referred to SRTP (RFC 3711) Section 9.1 for mitigations. At time of publication, SRTP did not fully support this payload format due to two-time pad issues and its lack of support for the RTP/AVPF profile.
+section: "12"
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

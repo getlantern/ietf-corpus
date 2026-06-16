@@ -1,0 +1,10 @@
+document: rfc-4590
+kind: security-consideration
+summary: The Digest-HA1 attribute contains no random components when the algorithm is 'MD5' or 'AKAv1-MD5', making it vulnerable to offline dictionary attacks and enabling replay attacks. Its use is therefore restricted to sessions protected by IPsec or using session-based algorithms (MD5-sess, AKAv1-MD5-sess).
+section: "8.2"
+topics:
+    - radius
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

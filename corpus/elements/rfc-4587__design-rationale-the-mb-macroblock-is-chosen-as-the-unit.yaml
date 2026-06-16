@@ -1,0 +1,9 @@
+document: rfc-4587
+kind: design-rationale
+summary: The MB (macroblock) is chosen as the unit of fragmentation rather than the GOB, because a GOB can be too large for a single packet. Packets must start and end on MB boundaries to allow independent processing and resynchronization after packet loss.
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

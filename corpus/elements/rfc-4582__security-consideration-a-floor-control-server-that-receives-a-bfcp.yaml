@@ -1,0 +1,10 @@
+document: rfc-4582
+kind: security-consideration
+summary: A floor control server that receives a BFCP message over plain TCP (no TLS) may request TLS by responding with an Error message containing Error Code 9 (Use TLS); clients SHOULD ignore unauthenticated messages. The floor control server SHOULD also verify that messages on an authenticated TLS connection use an authorized User ID.
+section: "9.1"
+topics:
+    - tls
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

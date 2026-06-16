@@ -1,0 +1,11 @@
+document: rfc-4588
+kind: normative-requirement
+summary: In a best-effort network, the sender SHOULD NOT send retransmission packets without reducing the packet rate and bitrate of the original stream (e.g., by encoding at a lower rate), ensuring that total bitrate including retransmissions does not exceed the fair share a TCP flow would achieve. If congestion cannot be controlled, retransmission SHOULD NOT be used.
+section: "7"
+rfc2119_level: SHOULD NOT
+topics:
+    - rtp
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

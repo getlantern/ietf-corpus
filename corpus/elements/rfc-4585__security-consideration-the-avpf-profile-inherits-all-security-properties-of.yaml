@@ -1,0 +1,10 @@
+document: rfc-4585
+kind: security-consideration
+summary: The AVPF profile inherits all security properties of RTP (RFC 3550) and AVP (RFC 3551). Early RTCP feedback may be misused to send RTCP packets at higher-than-normal rates; the RTCP bandwidth constraints defined in this document are the primary safeguard, and implementations MUST enforce them even when processing or generating feedback.
+section: "8"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

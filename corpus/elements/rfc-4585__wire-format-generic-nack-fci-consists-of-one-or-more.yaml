@@ -1,0 +1,9 @@
+document: rfc-4585
+kind: wire-format
+summary: Generic NACK FCI consists of one or more 32-bit entries, each with Packet ID (PID, 16 bits) giving the lost RTP sequence number and a Bitmask of following Lost Packets (BLP, 16 bits) indicating loss of any of the 16 RTP packets immediately following PID. Packet length MUST be set to 2+n where n is the number of NACKs.
+section: 6.2.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

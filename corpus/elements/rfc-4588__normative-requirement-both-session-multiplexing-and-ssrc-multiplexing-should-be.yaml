@@ -1,0 +1,11 @@
+document: rfc-4588
+kind: normative-requirement
+summary: Both session-multiplexing and SSRC-multiplexing SHOULD be supported by senders and receivers in unicast sessions to maximize interoperability. For multicast sessions, session-multiplexing MUST be used because SSRC-multiplexing creates an unresolvable association ambiguity when multiple receivers may request the same sequence number from different streams.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

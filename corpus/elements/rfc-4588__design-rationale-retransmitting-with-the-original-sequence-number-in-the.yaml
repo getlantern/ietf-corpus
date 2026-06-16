@@ -1,0 +1,9 @@
+document: rfc-4588
+kind: design-rationale
+summary: 'Retransmitting with the original sequence number in the same RTP stream was rejected because it corrupts RTCP statistics, which require each packet in a stream to increment the sequence number by one. Payload-type multiplexing in the same stream was also rejected because it violates sequence number preservation: receivers cannot infer which original packets were lost when original and retransmission packets share a sequence number space.'
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

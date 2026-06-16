@@ -1,0 +1,10 @@
+document: rfc-4590
+kind: security-consideration
+summary: All Digest-* attributes are transmitted in cleartext. A man-in-the-middle can modify or strip Digest-Qop and Digest-Algorithm attributes in a bidding-down attack, forcing use of a weaker authentication scheme. RADIUS over IPsec MUST conform to RFC 3579 Section 4.2 to mitigate this.
+section: "8.2"
+topics:
+    - radius
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

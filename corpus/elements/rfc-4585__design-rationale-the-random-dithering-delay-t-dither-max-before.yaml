@@ -1,0 +1,9 @@
+document: rfc-4585
+kind: design-rationale
+summary: 'The random dithering delay T_dither_max before sending Early feedback was chosen specifically to prevent feedback implosion in multiparty sessions: multiple receivers detecting the same loss spread their reports randomly over the dither window, allowing the first to transmit to suppress the others. For point-to-point sessions, no dithering is needed (T_dither_max=0).'
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

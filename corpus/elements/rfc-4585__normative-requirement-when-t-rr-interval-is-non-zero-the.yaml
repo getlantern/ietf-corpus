@@ -1,0 +1,10 @@
+document: rfc-4585
+kind: normative-requirement
+summary: When T_rr_interval is non-zero, the RTP entity timeout calculation (RFC 3550 Section 6.3.5) MUST use T_rr_interval instead of Tmin for computing Td and thus the M*Td timeout, to prevent premature timeout of entities that legitimately suppress Regular RTCP packets.
+section: 3.5.4
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

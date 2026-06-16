@@ -1,0 +1,10 @@
+document: rfc-4588
+kind: security-consideration
+summary: 'Absence of authentication enables man-in-the-middle and replay attacks with severe consequences: tampered RTCP packets can trigger inappropriate retransmissions that starve the original stream, tampered retransmission packets can crash decoders, tampered NACK requests can invalidate SSRC association, and replayed packets can cause false RTT measurements and receiver buffer overflow.'
+section: "12"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

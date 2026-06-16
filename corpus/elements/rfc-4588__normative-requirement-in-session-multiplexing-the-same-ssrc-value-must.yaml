@@ -1,0 +1,10 @@
+document: rfc-4588
+kind: normative-requirement
+summary: In session-multiplexing, the same SSRC value MUST be used for the original stream and the retransmission stream. In the event of SSRC collision, an RTCP BYE MUST be sent in the colliding session and also for the associated stream in its own session; both streams MUST then adopt the new SSRC.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

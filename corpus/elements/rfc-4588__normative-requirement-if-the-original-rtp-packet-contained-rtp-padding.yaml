@@ -1,0 +1,10 @@
+document: rfc-4588
+kind: normative-requirement
+summary: If the original RTP packet contained RTP padding, that padding MUST be removed before constructing the retransmission packet. If padding of the retransmission packet is needed, it MUST be applied fresh and the padding bit MUST be set. The marker bit (M), CSRC count (CC), and CSRC list MUST be copied as-is from the original RTP header.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

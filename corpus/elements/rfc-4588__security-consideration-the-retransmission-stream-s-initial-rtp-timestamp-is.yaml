@@ -1,0 +1,10 @@
+document: rfc-4588
+kind: security-consideration
+summary: The retransmission stream's initial RTP timestamp is not random (it equals the original media timestamp of the first retransmitted packet), deviating from the RTP recommendation to use a random initial timestamp. However, if the original stream is encrypted, the first retransmitted packet's timestamp is still effectively random to an attacker, so confidentiality is not compromised.
+section: "12"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

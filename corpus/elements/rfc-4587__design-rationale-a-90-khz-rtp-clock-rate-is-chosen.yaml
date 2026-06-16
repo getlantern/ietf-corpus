@@ -1,0 +1,9 @@
+document: rfc-4587
+kind: design-rationale
+summary: A 90-kHz RTP clock rate is chosen because it is a multiple of the natural H.261 frame rate (~29.97 Hz), so the timestamp can be incremented by an exact integer per frame, avoiding cumulative rounding errors.
+section: "4.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

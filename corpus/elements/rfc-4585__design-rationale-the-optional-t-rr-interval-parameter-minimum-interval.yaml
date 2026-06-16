@@ -1,0 +1,9 @@
+document: rfc-4585
+kind: design-rationale
+summary: The optional T_rr_interval parameter (minimum interval between Regular RTCP packets) was introduced to allow applications to reduce Regular RTCP overhead while still supporting more-frequent Early RTCP packets. Reducing overall RTCP bandwidth alone could not achieve this because it would also reduce the rate of Early feedback.
+section: "3.4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

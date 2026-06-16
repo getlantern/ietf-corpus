@@ -1,0 +1,10 @@
+document: rfc-4585
+kind: normative-requirement
+summary: An Early RTCP packet MUST be scheduled at te = t0 + RND * T_dither_max, where RND is uniform in [0,1]. For point-to-point sessions T_dither_max=0; for multiparty sessions T_dither_max is at minimum 0.5 * T_rr. A future document specifying an alternative T_dither_max calculation MUST ensure all receivers use the same mechanism.
+section: 3.5.2
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

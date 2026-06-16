@@ -1,0 +1,10 @@
+document: rfc-4585
+kind: normative-requirement
+summary: If a receiver finds a pending FB message from another session member that is a superset of its own pending feedback, it MUST discard its own FB message and MUST reschedule the next Regular RTCP packet for tn. Receivers MUST store all received FB messages for at least T_retention to enable this suppression check.
+section: 3.5.2
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
