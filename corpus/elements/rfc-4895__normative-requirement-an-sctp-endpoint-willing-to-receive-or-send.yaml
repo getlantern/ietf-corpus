@@ -1,0 +1,11 @@
+document: rfc-4895
+kind: normative-requirement
+summary: An SCTP endpoint willing to receive or send authenticated chunks MUST send one RANDOM parameter in its INIT or INIT-ACK chunk containing a 32-byte Random Number. If the Random Number is not 32 bytes, the association MUST be aborted with a 'Protocol Violation' error cause.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

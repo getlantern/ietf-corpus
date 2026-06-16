@@ -1,0 +1,8 @@
+document: rfc-4896
+kind: design-rationale
+summary: Multiple minimum-priority (65535) state items in a decompressor compartment cause synchronization loss because the compressor has no visibility into state the decompressor creates autonomously. A second minimum-priority state can evict the first earlier than the compressor expects, producing decompression failure on subsequent messages that reference the evicted state.
+section: "5.3"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

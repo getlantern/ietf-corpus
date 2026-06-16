@@ -1,0 +1,9 @@
+document: rfc-4901
+kind: interoperability-note
+summary: CRTP was designed for reliable point-to-point links with short delays and does not perform well over links with high packet loss, reordering, and long delays. For such environments, ECRTP should be considered instead. IPHC should use TCP_NODELTA, ECRTP should send absolute values, and ROHC should be adapted as discussed in RFC 4224 for reordering scenarios.
+section: "4.4"
+topics:
+    - mpls
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

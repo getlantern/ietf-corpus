@@ -1,0 +1,10 @@
+document: rfc-4895
+kind: normative-requirement
+summary: The receiver MUST silently discard chunks from its required-authenticated list if they are not placed after an AUTH chunk. If an unsupported HMAC algorithm is indicated in the AUTH chunk, the AUTH chunk and all following chunks MUST be discarded and an ERROR chunk SHOULD be sent.
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

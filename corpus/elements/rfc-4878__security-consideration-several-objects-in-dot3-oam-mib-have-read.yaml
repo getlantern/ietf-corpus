@@ -1,0 +1,8 @@
+document: rfc-4878
+kind: security-consideration
+summary: 'Several objects in DOT3-OAM-MIB have read-write access and can cause operational disruption if manipulated by unauthorized parties: dot3OamAdminState can disable OAM, dot3OamLoopbackStatus can force a link into loopback (disrupting all user traffic), and dot3OamLoopbackIgnoreRx can suppress loopback commands. SNMPv3 with authentication and privacy (authPriv) is strongly recommended to protect these objects.'
+section: "7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

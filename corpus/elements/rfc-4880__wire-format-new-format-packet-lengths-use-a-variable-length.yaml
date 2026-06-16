@@ -1,0 +1,8 @@
+document: rfc-4880
+kind: wire-format
+summary: 'New format packet lengths use a variable-length encoding: one-octet (0–191), two-octet (192–8383, decoded as ((first-192)<<8)+second+192), five-octet (first octet = 255, followed by four-octet scalar), or partial body (224–254, length = 1 << (octet & 0x1F)).'
+section: 4.2.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

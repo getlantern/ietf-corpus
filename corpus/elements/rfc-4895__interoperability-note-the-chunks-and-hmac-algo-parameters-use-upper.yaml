@@ -1,0 +1,9 @@
+document: rfc-4895
+kind: interoperability-note
+summary: The CHUNKS and HMAC-ALGO parameters use upper bits of the parameter type (0x8xxx) so that receivers that do not understand them will ignore the parameter and continue processing, as specified in RFC 2960 Section 3.2.1. The AUTH chunk type (0x0F) upper bits cause receivers to ignore the chunk and silently discard all following chunks if not understood.
+section: "3"
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

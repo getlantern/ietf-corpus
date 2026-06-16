@@ -1,0 +1,9 @@
+document: rfc-4884
+kind: interoperability-note
+summary: ICMP extensions do not interfere with NAT as defined in RFC 3022, because the outermost IP header (the only field NAT modifies) is guaranteed to be contained within the first 128 octets of the 'original datagram' field. However, a non-conforming NAT that overwrites the length attribute with zeros produces a packet indistinguishable from a non-compliant ICMP implementation.
+section: "6"
+topics:
+    - ip
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

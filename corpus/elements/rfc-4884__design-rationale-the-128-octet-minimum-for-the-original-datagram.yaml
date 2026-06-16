@@ -1,0 +1,8 @@
+document: rfc-4884
+kind: design-rationale
+summary: 'The 128-octet minimum for the ''original datagram'' field was chosen for backwards compatibility: classic applications that receive an ICMP message with extensions will misinterpret extensions as part of the original datagram, but this only affects applications that process beyond the 128th octet, which are extremely rare.'
+section: "5.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

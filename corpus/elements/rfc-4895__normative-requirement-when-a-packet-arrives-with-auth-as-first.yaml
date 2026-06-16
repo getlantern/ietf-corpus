@@ -1,0 +1,10 @@
+document: rfc-4895
+kind: normative-requirement
+summary: When a packet arrives with AUTH as first chunk and COOKIE-ECHO as second chunk and no STCB exists, the receiver MUST authenticate using parameters from the COOKIE-ECHO chunk. If authentication succeeds, COOKIE-ECHO and all following chunks MUST be processed.
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

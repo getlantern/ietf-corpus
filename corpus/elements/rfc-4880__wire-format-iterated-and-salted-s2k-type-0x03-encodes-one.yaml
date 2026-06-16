@@ -1,0 +1,9 @@
+document: rfc-4880
+kind: wire-format
+summary: 'Iterated and Salted S2K (type 0x03) encodes: one octet type (0x03), one octet hash algorithm, 8-octet salt, one octet coded count where count = (16 + (c & 15)) << ((c >> 4) + 6). The count is total octets to hash, not an iteration count.'
+section: 3.7.1.3
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

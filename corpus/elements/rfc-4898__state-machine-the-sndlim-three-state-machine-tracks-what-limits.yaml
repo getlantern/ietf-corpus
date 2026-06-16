@@ -1,0 +1,10 @@
+document: rfc-4898
+kind: state-machine
+summary: 'The SndLim three-state machine tracks what limits TCP throughput. States are: Receiver Limited (sender fills the announced receiver window), Congestion Limited (sender reaches cwnd or retransmission timeout), and Sender Limited (all other stops, including application or resource limits). Transition counts (SndLimTrans*) and cumulative durations (SndLimTime*) are recorded for each state.'
+section: "4"
+topics:
+    - tcp
+    - measurement
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4896
+kind: errata
+summary: 'Five entries in the RFC 3485 SIP/SDP Static Dictionary have offset table pointers that reference strings in a different priority section than declared: ''application'' (0x0334, listed priority 2, actual priority 4), ''sdp'' (0x064b), ''send'' (0x089d), ''recv'' (0x0553), and ''phone'' (0x00f2). Bytecode that loads only a sub-portion of the dictionary must not reference these offsets unless the corresponding string portion is also loaded.'
+section: "12"
+topics:
+    - realtime
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

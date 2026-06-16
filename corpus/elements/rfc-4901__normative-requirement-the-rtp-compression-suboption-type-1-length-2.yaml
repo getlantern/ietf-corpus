@@ -1,0 +1,10 @@
+document: rfc-4901
+kind: normative-requirement
+summary: The RTP-Compression Suboption (Type 1, Length 2) MUST be included for CRTP PWs (0x001C) and MUST NOT be included for other PW types. The Enhanced RTP-Compression Suboption (Type 2, Length 2) MUST be included for ECRTP PWs (0x001B) and MUST NOT be included for other PW types. These two suboptions MUST NOT occur together; if they do, the decompressor MUST reject the option.
+section: 4.2.2
+rfc2119_level: MUST
+topics:
+    - mpls
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

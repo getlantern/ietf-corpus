@@ -1,0 +1,9 @@
+document: rfc-4901
+kind: design-rationale
+summary: The first nibble of the HC control parameter is set to 0000 to avoid being mistaken for an IP packet, consistent with the PW MPLS control word encoding in RFC 4385. Although ROHC provides its own packet type field, the HC control parameter MUST still be used to avoid ECMP misclassification problems.
+section: "4.3"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

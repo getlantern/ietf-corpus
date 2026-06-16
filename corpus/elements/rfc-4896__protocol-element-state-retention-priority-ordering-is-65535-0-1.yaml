@@ -1,0 +1,8 @@
+document: rfc-4896
+kind: protocol-element
+summary: State retention priority ordering is 65535 < 0 < 1 < ... < 65534, which is counterintuitive but correct. Priority 65535 (equivalent to -1) is the minimum retention priority, meaning such state is the first candidate for eviction.
+section: "5.1"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

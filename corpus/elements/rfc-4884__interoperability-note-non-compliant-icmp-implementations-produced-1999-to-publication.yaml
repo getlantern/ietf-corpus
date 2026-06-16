@@ -1,0 +1,8 @@
+document: rfc-4884
+kind: interoperability-note
+summary: Non-compliant ICMP implementations (produced 1999 to publication) may append the extension structure to Time Exceeded and Destination Unreachable messages with exactly 128 octets of original datagram and correct checksums, but without specifying the length attribute. Compliant applications receiving such messages will see a zero length attribute and incorrectly determine no extensions are present.
+section: "5"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

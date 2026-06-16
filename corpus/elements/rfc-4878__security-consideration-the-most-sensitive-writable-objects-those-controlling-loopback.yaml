@@ -1,0 +1,8 @@
+document: rfc-4878
+kind: security-consideration
+summary: The most sensitive writable objects—those controlling loopback initiation and termination—can render a link non-operational for user traffic. Implementations should ensure that access to dot3OamLoopbackStatus and dot3OamLoopbackIgnoreRx is tightly controlled and that SNMP access control policies restrict write access to authorized management entities only.
+section: "7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

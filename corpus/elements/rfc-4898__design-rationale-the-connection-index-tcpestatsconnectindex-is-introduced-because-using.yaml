@@ -1,0 +1,9 @@
+document: rfc-4898
+kind: design-rationale
+summary: The connection index (tcpEStatsConnectIndex) is introduced because using the full 4-tuple to index per-connection tables makes rapid polling of multiple related objects cumbersome. The integer index allows a single walk to retrieve all statistics for one connection efficiently.
+section: "4"
+topics:
+    - tcp
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4884
+kind: interoperability-note
+summary: Non-compliant applications assume the ICMPv4 Extension Structure begins at the 137th octet (after 8 bytes of fixed header and 128 bytes of original datagram). They will only correctly parse compliant extensions if the 'original datagram' field contains exactly 128 octets.
+section: "5.3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

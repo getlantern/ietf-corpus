@@ -1,0 +1,10 @@
+document: rfc-4895
+kind: security-consideration
+summary: Each endpoint presenting multiple algorithms in HMAC-ALGO must be prepared for the peer to use the weakest algorithm listed. If an endpoint pair uses non-NULL shared keys but still accepts a NULL key, an attacker who captured the initial handshake can inject authenticated chunks using the NULL key.
+section: "9"
+topics:
+    - sctp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

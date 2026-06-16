@@ -1,0 +1,9 @@
+document: rfc-4896
+kind: design-rationale
+summary: 'The UDVM memory size is (DMS - n) for UDP or (DMS / 2) for TCP, where n is the SigComp message size. When the message contains bytecode, two copies of the bytecode exist within the DMS: one in the SigComp message and one in UDVM memory. This is correct and expected behavior.'
+section: "2.1"
+topics:
+    - realtime
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

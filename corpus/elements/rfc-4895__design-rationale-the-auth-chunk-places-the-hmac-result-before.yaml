@@ -1,0 +1,9 @@
+document: rfc-4895
+kind: design-rationale
+summary: The AUTH chunk places the HMAC result before the authenticated data (rather than after) because control chunks must precede DATA chunks in SCTP packets, and because the HMAC result is needed to compute the CRC32C checksum in the common SCTP header before the packet can be sent.
+section: "1"
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

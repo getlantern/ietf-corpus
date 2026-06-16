@@ -1,0 +1,9 @@
+document: rfc-4880
+kind: security-consideration
+summary: Key IDs are only 64 bits and are not guaranteed unique; an attacker may create a key with the same Key ID as a target key. Implementations relying on Key ID alone for key lookup without verifying fingerprints are vulnerable to Key ID substitution attacks.
+section: "14"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

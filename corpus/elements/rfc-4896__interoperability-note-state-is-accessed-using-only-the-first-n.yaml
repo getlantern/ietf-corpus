@@ -1,0 +1,9 @@
+document: rfc-4896
+kind: interoperability-note
+summary: State is accessed using only the first n bytes (minimum 6) of the 20-byte SHA-1 state identifier. Birthday-paradox analysis shows a 6-octet identifier yields a 16.28% collision probability at 10 million state items, while the full 20-octet identifier yields approximately 3.42E-33%. At high-scale server deployments, implementers must carefully choose how many octets of state identifier to use for STATE-ACCESS.
+section: "7"
+topics:
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

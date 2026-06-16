@@ -1,0 +1,9 @@
+document: rfc-4895
+kind: design-rationale
+summary: Requiring ABORT and COOKIE-ECHO chunks to be authenticated prevents attackers from tearing down or restarting associations, but accepting ABORT only in authenticated form may delay detection of peer unavailability, and requiring authenticated COOKIE-ECHO breaks the normal restart procedure for endpoints that don't know the old association shared key.
+section: "6.3"
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

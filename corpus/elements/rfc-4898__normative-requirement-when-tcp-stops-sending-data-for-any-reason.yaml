@@ -1,0 +1,10 @@
+document: rfc-4898
+kind: normative-requirement
+summary: When TCP stops sending data for any reason that cannot be classified as Receiver Limited or Congestion Limited, it MUST be treated as Sender Limited. Retransmission timeouts SHOULD be counted in tcpEStatsPerfSndLimTimeCwnd rather than any other state timer.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

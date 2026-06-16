@@ -1,0 +1,9 @@
+document: rfc-4904
+kind: design-rationale
+summary: Trunk group parameters are defined as an extension to the tel URI rather than only the sip URI because trunks are intimately associated with the PSTN, and defining them on the tel URI allows reuse by non-SIP VoIP protocols (MGCP, Megaco, H.323). SIP procedures in RFC 3261 Section 19.1.6 can then derive an equivalent sip URI from the tel URI.
+section: "4.1"
+topics:
+    - sip
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

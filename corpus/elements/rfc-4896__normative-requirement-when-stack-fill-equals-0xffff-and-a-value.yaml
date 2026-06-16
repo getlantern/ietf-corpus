@@ -1,0 +1,9 @@
+document: rfc-4896
+kind: normative-requirement
+summary: When stack_fill equals 0xFFFF and a value is pushed onto the stack, stack_fill MUST be incremented to 0x0000 and written back to stack_location, overwriting the pushed value. The pushed value cannot be preserved in this overflow condition.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4896
+kind: normative-requirement
+summary: When INPUT-BYTES or INPUT-BITS requests more data than remains in the SigComp message, the decompression dispatcher MUST NOT return any bytes/bits to the UDVM; the partial remaining bytes MUST remain in the message unchanged and program execution jumps to the address operand.
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

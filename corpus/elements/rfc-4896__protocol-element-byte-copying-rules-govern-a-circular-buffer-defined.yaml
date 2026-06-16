@@ -1,0 +1,8 @@
+document: rfc-4896
+kind: protocol-element
+summary: Byte copying rules govern a circular buffer defined by byte_copy_left (BCL) and byte_copy_right (BCR). Rightward movement wraps from (BCR-1) mod 2^16 back to BCL; leftward movement (used only by COPY_OFFSET) wraps from BCL to (BCR-1) mod 2^16. Copying outside the BCL/BCR bounds is valid; when BCR < BCL, reads and writes skip the memory between the two pointers.
+section: "4"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

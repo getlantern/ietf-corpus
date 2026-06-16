@@ -1,0 +1,11 @@
+document: rfc-4895
+kind: normative-requirement
+summary: To send chunks in an authenticated way, the sender MUST include those chunks after an AUTH chunk, requiring bundling. The MAC is computed over the AUTH chunk (with HMAC field set to zero) followed by all subsequent chunks in the packet, including their padding.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

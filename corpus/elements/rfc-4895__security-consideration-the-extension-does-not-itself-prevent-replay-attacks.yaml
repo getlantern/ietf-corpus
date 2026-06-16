@@ -1,0 +1,9 @@
+document: rfc-4895
+kind: security-consideration
+summary: The extension does not itself prevent replay attacks; it relies on SCTP's existing duplicate chunk handling mechanism. A separate shared key is used per association to handle replay attacks across multiple associations.
+section: "9"
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

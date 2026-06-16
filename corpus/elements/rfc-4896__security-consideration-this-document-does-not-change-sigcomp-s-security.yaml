@@ -1,0 +1,9 @@
+document: rfc-4896
+kind: security-consideration
+summary: 'This document does not change SigComp''s security profile. Key mitigations from RFC 3320 remain: state snooping is mitigated by requiring at least 48 bits of the state hash (this document recommends more bits at high-scale servers); unauthorized state manipulation is mitigated by application-layer authentication; DoS via SigComp is mitigated by the one-decompressed-output-per-compressed-input rule; UDVM loop attacks are mitigated by the UDVM cycles upper limit.'
+section: "13"
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
