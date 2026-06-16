@@ -1,0 +1,9 @@
+document: rfc-5238
+kind: design-rationale
+summary: DCCP CCID 2 uses AIMD congestion control similar to TCP, which can cause a multiplicative decrease after a large DTLS handshake transfer. Applications sensitive to this should consider CCID 3 (TFRC), which varies throughput more slowly and avoids discontinuities.
+section: "3.3"
+topics:
+    - tls
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-5240
+kind: security-consideration
+summary: Read access (GET/NOTIFY) to objects such as pimBsrElectedBSRAddress, pimBsrElectedBSRPriority, and related fields reveals the multicast network topology (elected BSR, candidate BSRs, candidate RPs), which can be used to prepare Denial-of-Service attacks. These values should be protected and possibly encrypted in transit.
+section: "6"
+topics:
+    - security
+    - multicast
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

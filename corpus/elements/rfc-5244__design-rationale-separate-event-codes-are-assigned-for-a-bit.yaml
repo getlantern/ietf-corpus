@@ -1,0 +1,9 @@
+document: rfc-5244
+kind: design-rationale
+summary: Separate event codes are assigned for A-bit (206–207) and AB-bit (208–211) signalling even though AB-bit subsumes A-bit, because per ITU-T G.704 the default values of unused B, C, and D bits differ between transmission systems. Specifying codes for only the used bits lets the receiving gateway fill in remaining bits per local configuration.
+section: "2.4"
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

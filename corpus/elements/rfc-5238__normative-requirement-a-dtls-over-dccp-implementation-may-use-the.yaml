@@ -1,0 +1,10 @@
+document: rfc-5238
+kind: normative-requirement
+summary: A DTLS over DCCP implementation MAY use the DCCP-managed PMTU value instead of performing its own PMTU Discovery, but MUST NOT use a value greater than the value determined by DCCP. Implementations using DCCP-managed PMTU SHOULD still follow RFC 4347 Section 4.1.1.1 for fragmenting handshake messages.
+section: "3.5"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

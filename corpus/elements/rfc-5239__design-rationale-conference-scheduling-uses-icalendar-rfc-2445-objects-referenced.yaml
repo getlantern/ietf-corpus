@@ -1,0 +1,8 @@
+document: rfc-5239
+kind: design-rationale
+summary: Conference scheduling uses iCalendar (RFC 2445) objects referenced by value in CCP requests to carry start/end times and recurrence rules. A recurring series is represented by a single conference reservation; modifications to a sub-range are realized by cloning the parent into a non-independent child with its own conference object ID, preventing scheduling conflicts with the parent series.
+section: "7.4"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
