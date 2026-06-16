@@ -1,0 +1,10 @@
+document: rfc-3920
+kind: security-consideration
+summary: TLS with certificate validation combined with SASL (preferably SASL EXTERNAL using the TLS certificate) provides the strongest XMPP security model. Server dialback relies on DNS and is susceptible to DNS spoofing; it MUST NOT be considered a substitute for TLS+SASL in environments requiring strong identity assurance.
+section: "14"
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

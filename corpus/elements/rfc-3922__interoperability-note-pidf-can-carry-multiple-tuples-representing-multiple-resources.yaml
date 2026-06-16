@@ -1,0 +1,6 @@
+document: rfc-3922
+kind: interoperability-note
+summary: PIDF can carry multiple tuples (representing multiple resources), but XMPP can only send presence for one resource at a time per stanza. A gateway SHOULD split a multi-tuple PIDF document into multiple XMPP presence stanzas, and SHOULD aggregate multiple XMPP resources into one PIDF document with multiple tuples.
+section: 6.3.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

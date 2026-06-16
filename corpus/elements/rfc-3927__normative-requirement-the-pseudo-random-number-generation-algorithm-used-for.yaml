@@ -1,0 +1,10 @@
+document: rfc-3927
+kind: normative-requirement
+summary: The pseudo-random number generation algorithm used for address selection MUST be chosen so that different hosts do not generate the same sequence. The PRNG SHOULD be seeded using a host-unique value such as the IEEE 802 MAC address. Seeding from the real-time clock is NOT suitable.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

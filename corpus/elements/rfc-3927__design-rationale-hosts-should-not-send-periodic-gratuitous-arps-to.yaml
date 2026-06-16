@@ -1,0 +1,9 @@
+document: rfc-3927
+kind: design-rationale
+summary: Hosts SHOULD NOT send periodic gratuitous ARPs to proactively detect conflicts. Doing so wastes bandwidth, and if network segments are only briefly joined and separated before any communication is initiated, the temporary conflict would have been benign; an unnecessary forced reconfiguration would serve no purpose.
+section: "4"
+topics:
+    - ip
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

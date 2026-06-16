@@ -1,0 +1,10 @@
+document: rfc-3927
+kind: normative-requirement
+summary: The 169.254/16 address prefix MUST NOT be subnetted. The ARP-based conflict detection mechanism relies on link-layer broadcasts that are not forwarded; subnetting would allow address conflicts to go undetected across subnet boundaries.
+section: "2.8"
+rfc2119_level: MUST
+topics:
+    - ip
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

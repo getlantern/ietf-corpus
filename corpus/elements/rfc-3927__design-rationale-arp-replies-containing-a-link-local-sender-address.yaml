@@ -1,0 +1,9 @@
+document: rfc-3927
+kind: design-rationale
+summary: ARP replies containing a Link-Local sender address are broadcast rather than unicast so that conflicting hosts can detect each other's packets. Without broadcast replies, two hosts (A and B) each using the same address could both reply to a third host's ARP request without either A or B ever learning of the other's conflict.
+section: "4"
+topics:
+    - ip
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-3920
+kind: design-rationale
+summary: The initial stream and response stream MUST be secured separately even though mutual authentication may be negotiated in a single step. This design ensures each direction's security properties are independently established and prevents unverified data from leaking across the TLS/SASL negotiation boundary.
+section: "4.3"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

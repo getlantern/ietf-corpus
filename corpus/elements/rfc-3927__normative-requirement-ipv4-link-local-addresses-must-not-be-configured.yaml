@@ -1,0 +1,11 @@
+document: rfc-3927
+kind: normative-requirement
+summary: IPv4 Link-Local addresses MUST NOT be configured in the DNS, and DNS clients MUST NOT send queries for names within the '254.169.in-addr.arpa.' domain. DNS recursive servers receiving such queries MUST by default return RCODE 3.
+section: "1.4"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

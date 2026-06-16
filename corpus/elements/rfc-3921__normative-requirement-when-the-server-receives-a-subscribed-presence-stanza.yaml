@@ -1,0 +1,7 @@
+document: rfc-3921
+kind: normative-requirement
+summary: When the server receives a 'subscribed' presence stanza addressed to a user, it MUST verify the sender is in the user's roster with subscription='none' and ask='subscribe' or subscription='from' and ask='subscribe'; if neither condition holds, the server MUST silently ignore the stanza without routing, modifying the roster, or generating a roster push.
+section: "8.2"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

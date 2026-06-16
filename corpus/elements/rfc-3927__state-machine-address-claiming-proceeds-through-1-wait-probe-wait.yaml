@@ -1,0 +1,9 @@
+document: rfc-3927
+kind: state-machine
+summary: 'Address claiming proceeds through: (1) wait PROBE_WAIT random delay, (2) send PROBE_NUM ARP Probes spaced PROBE_MIN–PROBE_MAX seconds apart, (3) wait ANNOUNCE_WAIT seconds after last probe with no conflict, (4) broadcast ANNOUNCE_NUM ARP Announcements. On conflict at any stage, select a new address and restart; after MAX_CONFLICTS, rate-limit to one attempt per RATE_LIMIT_INTERVAL.'
+section: "2.2"
+topics:
+    - ip
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-3920
+kind: design-rationale
+summary: Server dialback is documented primarily for backward-compatibility with existing Jabber deployments. It is explicitly not a security mechanism and provides only weak domain identity verification. Domains requiring robust security SHOULD use TLS and SASL; when SASL is used for server-to-server authentication, dialback SHOULD NOT be used as it is unnecessary.
+section: "8.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

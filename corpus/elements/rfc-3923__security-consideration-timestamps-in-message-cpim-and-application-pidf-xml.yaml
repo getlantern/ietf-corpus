@@ -1,0 +1,8 @@
+document: rfc-3923
+kind: security-consideration
+summary: Timestamps in Message/CPIM and application/pidf+xml objects prevent replay attacks. Receivers must verify timestamps are within five minutes of current time and are monotonically increasing relative to recent valid timestamps; failures trigger 'old timestamp', 'future timestamp', or 'decreasing timestamp' warnings.
+section: "6.9"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

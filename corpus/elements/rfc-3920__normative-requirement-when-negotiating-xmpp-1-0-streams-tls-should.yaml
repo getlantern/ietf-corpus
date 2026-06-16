@@ -1,0 +1,10 @@
+document: rfc-3920
+kind: normative-requirement
+summary: When negotiating XMPP 1.0 streams, TLS SHOULD be used and SASL MUST be used. An entity SHOULD NOT send XML stanzas before stream authentication; if it does, the receiving entity MUST NOT accept such stanzas and SHOULD return <not-authorized/> and terminate the stream and TCP connection.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-3927
+kind: design-rationale
+summary: The PRNG for address selection should be seeded using the MAC address rather than the real-time clock. A group of hosts powered on simultaneously with clock-seeded PRNGs would generate the same pseudo-random sequence, causing never-ending conflicts as they move in lock-step through identical address choices.
+section: "2.1"
+topics:
+    - ip
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

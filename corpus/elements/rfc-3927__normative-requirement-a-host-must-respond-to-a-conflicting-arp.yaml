@@ -1,0 +1,10 @@
+document: rfc-3927
+kind: normative-requirement
+summary: A host MUST respond to a conflicting ARP packet (one whose 'sender IP address' matches the host's configured address but whose 'sender hardware address' does not match) either by immediately reconfiguring a new address, or by defending once with a broadcast ARP announcement. A host MUST NOT ignore conflicting ARP packets.
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - ip
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

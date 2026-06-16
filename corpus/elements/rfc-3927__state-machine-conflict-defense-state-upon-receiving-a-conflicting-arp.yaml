@@ -1,0 +1,9 @@
+document: rfc-3927
+kind: state-machine
+summary: 'Conflict defense state: upon receiving a conflicting ARP, the host may (a) immediately reconfigure, or (b) defend once with a broadcast ARP announcement if no conflict was seen within DEFEND_INTERVAL seconds. On a second conflict within DEFEND_INTERVAL, the host MUST immediately reconfigure, preventing an endless mutual-defense loop.'
+section: "2.5"
+topics:
+    - ip
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-3920
+kind: state-machine
+summary: 'STARTTLS negotiation: initiating entity sends <starttls/> → receiving entity responds with <proceed/> (entities MUST complete TLS handshake, sending no further XML until done) or <failure/> (close stream and TCP) → on TLS success, initiating entity MUST restart the stream with a new opening header; receiving entity MUST NOT re-offer STARTTLS.'
+section: "5.2"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

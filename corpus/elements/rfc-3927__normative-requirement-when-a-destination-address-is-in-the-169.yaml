@@ -1,0 +1,10 @@
+document: rfc-3927
+kind: normative-requirement
+summary: When a destination address is in the 169.254/16 prefix, the sender MUST ARP for the destination and send the packet directly on the same physical link. The host MUST NOT send a packet with an IPv4 Link-Local destination address to any router for forwarding.
+section: 2.6.2
+rfc2119_level: MUST
+topics:
+    - ip
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

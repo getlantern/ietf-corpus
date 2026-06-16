@@ -1,0 +1,10 @@
+document: rfc-3927
+kind: normative-requirement
+summary: If a host has already defended its address within the past DEFEND_INTERVAL (10) seconds and receives another conflicting ARP packet, it MUST immediately cease using the address and configure a new one. This prevents two hosts from endlessly attempting to defend the same address.
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - ip
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
