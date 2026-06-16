@@ -1,0 +1,8 @@
+document: rfc-4254
+kind: wire-format
+summary: Encoded terminal modes are a byte stream of opcode-argument pairs. Opcodes 1–159 take a single uint32 argument; opcodes 160–255 are undefined and terminate parsing. The stream is terminated by TTY_OP_END (opcode 0x00). TTY_OP_ISPEED (128) and TTY_OP_OSPEED (129) specify baud rates.
+section: "8"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

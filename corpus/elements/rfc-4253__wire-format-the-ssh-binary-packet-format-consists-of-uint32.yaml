@@ -1,0 +1,9 @@
+document: rfc-4253
+kind: wire-format
+summary: 'The SSH binary packet format consists of: uint32 packet_length, byte padding_length, byte[n1] payload, byte[n2] random padding, and byte[m] MAC. The total length of packet_length + padding_length + payload + random padding MUST be a multiple of the cipher block size or 8, whichever is larger.'
+section: "6"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

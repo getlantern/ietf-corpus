@@ -1,0 +1,10 @@
+document: rfc-4261
+kind: normative-requirement
+summary: A PEP initiating TLS negotiation via Client-Open MUST set Client-Type to 0 and MUST include the Integrity-TLS object. A PEP requiring Integrity-TLS in Client-Accept MUST close the connection if the object is missing, sending error code 15 with C-Num=16 and C-Type=2.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

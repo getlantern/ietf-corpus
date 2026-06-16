@@ -1,0 +1,9 @@
+document: rfc-4251
+kind: security-consideration
+summary: The PRNG used to generate session-specific data (e.g., DH parameters) MUST be cryptographically secure. If insufficient entropy is available, refusing to run the protocol is preferable to using a weak PRNG. SSH binds each session key to the session via random, session-specific data in the hash.
+section: "9.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

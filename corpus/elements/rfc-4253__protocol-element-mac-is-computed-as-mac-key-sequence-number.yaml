@@ -1,0 +1,9 @@
+document: rfc-4253
+kind: protocol-element
+summary: 'MAC is computed as MAC(key, sequence_number || unencrypted_packet). The sequence_number is an implicit uint32 initialized to zero, incremented after every packet, never reset even during re-exchange, and wraps at 2^32. Defined MAC algorithms: hmac-sha1 (REQUIRED), hmac-sha1-96 (RECOMMENDED), hmac-md5 (OPTIONAL), hmac-md5-96 (OPTIONAL), none (OPTIONAL, NOT RECOMMENDED).'
+section: "6.4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

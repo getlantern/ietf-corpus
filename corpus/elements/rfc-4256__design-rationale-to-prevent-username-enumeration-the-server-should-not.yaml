@@ -1,0 +1,9 @@
+document: rfc-4256
+kind: design-rationale
+summary: 'To prevent username enumeration, the server should not distinguish failed authentication due to invalid usernames from valid ones; it should proceed as if authentication is continuing (sending INFO_REQUEST) and only send failure after a suitable delay (suggested default: 2 seconds).'
+section: "3.1"
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

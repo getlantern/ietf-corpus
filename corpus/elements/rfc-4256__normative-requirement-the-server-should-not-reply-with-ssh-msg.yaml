@@ -1,0 +1,10 @@
+document: rfc-4256
+kind: normative-requirement
+summary: The server SHOULD NOT reply with SSH_MSG_USERAUTH_FAILURE if the failure is based on the user name or service name; instead it SHOULD send INFO_REQUEST message(s) that look identical to normal authentication, then send the failure after a suitable delay, to prevent username enumeration.
+section: "3.1"
+rfc2119_level: SHOULD NOT
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

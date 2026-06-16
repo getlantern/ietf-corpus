@@ -1,0 +1,10 @@
+document: rfc-4261
+kind: normative-requirement
+summary: After the PEP receives a Client-Accept containing Integrity-TLS (PDP-initiated flow), the PEP MUST NOT send any messages until the TLS handshake completes. If the PDP receives any message from the PEP before the handshake starts, it MUST issue Client-Close with error code 15.
+section: "5.2"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

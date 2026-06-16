@@ -1,0 +1,10 @@
+document: rfc-4261
+kind: normative-requirement
+summary: PEP implementations MUST treat premature TLS closes (connection closed without closure alert) as errors and treat any data already received as potentially truncated. The COPS message header should be examined to determine whether truncation occurred.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4254
+kind: design-rationale
+summary: X11 channels opened via forwarding are independent of the session channel; closing the session does not close already-opened X11 forwardings. This allows X11 applications to outlive the shell session that launched them, matching typical desktop use patterns.
+section: 6.3.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

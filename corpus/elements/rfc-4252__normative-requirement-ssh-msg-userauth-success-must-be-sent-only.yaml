@@ -1,0 +1,9 @@
+document: rfc-4252
+kind: normative-requirement
+summary: SSH_MSG_USERAUTH_SUCCESS MUST be sent only once. After it is sent, any further authentication requests received SHOULD be silently ignored. Non-authentication messages received after success MUST be passed to the service running on top of this protocol.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

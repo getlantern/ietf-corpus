@@ -1,0 +1,9 @@
+document: rfc-4253
+kind: design-rationale
+summary: SSH maintains its own group identifier space logically distinct from Oakley and IKE. The name 'diffie-hellman-group1-sha1' uses 'group1' despite specifying Oakley Group 2. Implementations should treat these names as opaque identifiers and not assume any relationship to IKE groups.
+section: "6.5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

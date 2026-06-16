@@ -1,0 +1,10 @@
+document: rfc-4251
+kind: security-consideration
+summary: Because MACs use a 32-bit sequence number, peers MUST rekey before sequence number wrap (after at most 2^28 packets given the 16-byte minimum packet size and 1 GB rekeying recommendation) to prevent replay attacks. A replayed packet will fail MAC validation if peers have rekeyed since the original transmission.
+section: 9.3.2
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

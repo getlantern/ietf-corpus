@@ -1,0 +1,9 @@
+document: rfc-4254
+kind: state-machine
+summary: Channel closure requires both sides to exchange SSH_MSG_CHANNEL_CLOSE. Upon receiving SSH_MSG_CHANNEL_CLOSE, a party MUST send back SSH_MSG_CHANNEL_CLOSE unless already sent. A channel is fully closed only when both sent and received; the channel number may then be reused.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4251
+kind: wire-format
+summary: mpint encodes multiple-precision integers in two's complement, stored as a string with 8 bits per byte, MSB first. If the most significant bit would be set for a positive number, a zero byte MUST precede it. Unnecessary leading 0x00 or 0xFF bytes MUST NOT be included. The value zero MUST be stored as a zero-length string.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

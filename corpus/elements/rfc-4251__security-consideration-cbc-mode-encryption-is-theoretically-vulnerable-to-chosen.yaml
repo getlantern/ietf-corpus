@@ -1,0 +1,9 @@
+document: rfc-4251
+kind: security-consideration
+summary: CBC mode encryption is theoretically vulnerable to chosen-ciphertext attacks due to high predictability of packet start sequences (Rogaway/Dai/Bellare attack). Inserting an SSH_MSG_IGNORE packet before data transmission whenever the previous packet has already been sent to the network mitigates this attack by preventing the attacker from knowing the next IV.
+section: 9.3.1
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4268
+kind: design-rationale
+summary: All state objects in the entStateTable represent raw state — the state of the entity independent of its parents and children in the containment hierarchy — rather than computed state. Computed states such as ifOperStatus 'notPresent' and 'lowerLayerDown' are explicitly excluded because they depend on other entities' states.
+section: "2.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

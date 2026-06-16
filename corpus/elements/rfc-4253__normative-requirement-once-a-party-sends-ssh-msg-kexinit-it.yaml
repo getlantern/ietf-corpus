@@ -1,0 +1,10 @@
+document: rfc-4253
+kind: normative-requirement
+summary: Once a party sends SSH_MSG_KEXINIT, it MUST NOT send any messages other than transport layer generic messages (1-19, excluding SERVICE_REQUEST/SERVICE_ACCEPT), algorithm negotiation messages (20-29, excluding further KEXINIT), and key exchange method messages (30-49), until it has sent SSH_MSG_NEWKEYS.
+section: "7.1"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

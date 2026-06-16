@@ -1,0 +1,9 @@
+document: rfc-4250
+kind: design-rationale
+summary: SSH maintains its own group identifier space for key exchange, which is logically distinct from the Oakley [RFC2412] and IKE group spaces. Although 'diffie-hellman-group14-sha1' adopts the number from RFC 3526, implementations SHOULD treat SSH key exchange method names as opaque identifiers and not assume any relationship between SSH groups and IKE groups.
+section: "4.10"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

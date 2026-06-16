@@ -1,0 +1,9 @@
+document: rfc-4256
+kind: normative-requirement
+summary: After receiving an INFO_RESPONSE, the server MUST send either SSH_MSG_USERAUTH_SUCCESS, SSH_MSG_USERAUTH_FAILURE, or another SSH_MSG_USERAUTH_INFO_REQUEST. If authentication fails, the server SHOULD NOT send additional request messages to obtain new data; it SHOULD send a failure message.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

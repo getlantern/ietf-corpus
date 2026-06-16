@@ -1,0 +1,9 @@
+document: rfc-4253
+kind: state-machine
+summary: 'Key exchange ends when each side sends SSH_MSG_NEWKEYS. This message is sent with old keys; all subsequent sent messages MUST use new keys. Upon receipt, new keys MUST immediately be used for receiving. States: exchanging keys → sending SSH_MSG_NEWKEYS (old keys) → new keys active.'
+section: "7.3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
