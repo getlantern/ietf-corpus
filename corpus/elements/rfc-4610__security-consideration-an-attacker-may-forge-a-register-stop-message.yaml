@@ -1,0 +1,9 @@
+document: rfc-4610
+kind: security-consideration
+summary: An attacker may forge a Register-Stop message using an Anycast-RP address; impact beyond DoS is limited because RPs typically ignore Register-Stop messages. The DoS attack via forged Register or Register-Stop cannot be fully prevented, but the RP can rate-limit incoming messages or refuse to process Register-Stops.
+section: "6.1"
+topics:
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

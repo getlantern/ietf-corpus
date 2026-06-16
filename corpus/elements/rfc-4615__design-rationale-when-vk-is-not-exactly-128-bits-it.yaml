@@ -1,0 +1,9 @@
+document: rfc-4615
+kind: design-rationale
+summary: When VK is not exactly 128 bits, it is normalized to 128 bits by applying AES-CMAC with an all-zero key. This allows IKEv2 to use variable-length shared secrets for authentication while still satisfying AES-CMAC's fixed 128-bit key requirement.
+section: "3"
+topics:
+    - crypto
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

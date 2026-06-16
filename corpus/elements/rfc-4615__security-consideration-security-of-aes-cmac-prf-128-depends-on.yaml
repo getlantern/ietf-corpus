@@ -1,0 +1,10 @@
+document: rfc-4615
+kind: security-consideration
+summary: Security of AES-CMAC-PRF-128 depends on the strength of AES and AES-CMAC. If VK is longer than 128 bits and is shortened via the normalization step, some entropy may be lost, but the derived key K preserves approximately 128 bits of entropy as long as VK is longer than 128 bits.
+section: "5"
+topics:
+    - crypto
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

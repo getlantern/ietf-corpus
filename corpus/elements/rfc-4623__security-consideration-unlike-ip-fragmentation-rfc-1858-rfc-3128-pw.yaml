@@ -1,0 +1,8 @@
+document: rfc-4623
+kind: security-consideration
+summary: Unlike IP fragmentation (RFC 1858, RFC 3128), PW-specific fragmentation has no offset field, preventing fragment-overlap attacks. However, all filtering and access controls MUST be applied to the reconstructed frame, not individual PW fragments, to prevent tiny-fragment bypass attacks on tunneled payload.
+section: "6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

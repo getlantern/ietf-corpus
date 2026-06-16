@@ -1,0 +1,8 @@
+document: rfc-4618
+kind: wire-format
+summary: 'The Control Word is 32 bits: first 4 bits set to 0 (CW indicator), next 4 bits protocol-specific flags (must be 0 for PPP/HDLC), 2 bits FRG field (per RFC4623), 6-bit Length field, and 16-bit Sequence Number. The Length field is set to the packet length (L2 payload + CW) if less than 64 bytes, otherwise zero.'
+section: "4.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

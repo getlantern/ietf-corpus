@@ -1,0 +1,8 @@
+document: rfc-4618
+kind: design-rationale
+summary: 'The control word is needed to prevent ECMP path splitting: if the PPP protocol number begins with 0x4 or 0x6, ECMP implementations may mistake the payload for IPv4/IPv6, causing packets for a given PW to follow different paths and increasing out-of-order delivery or misrouting OAM packets.'
+section: "4.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

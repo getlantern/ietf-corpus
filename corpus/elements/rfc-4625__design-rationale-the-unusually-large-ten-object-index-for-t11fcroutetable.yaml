@@ -1,0 +1,9 @@
+document: rfc-4625
+kind: design-rationale
+summary: The unusually large ten-object INDEX for t11FcRouteTable was chosen so that management applications can query routes based on attributes (destination, source, interface, protocol) without reading every row—mirroring the design of ipCidrRouteTable and inetCidrRouteTable. Despite the count, the resulting OIDs are shorter than those of inetCidrRouteTable.
+section: "5.5"
+topics:
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
