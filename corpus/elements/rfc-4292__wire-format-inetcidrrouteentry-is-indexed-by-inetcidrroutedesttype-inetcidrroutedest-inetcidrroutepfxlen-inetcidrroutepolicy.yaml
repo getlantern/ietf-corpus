@@ -1,0 +1,10 @@
+document: rfc-4292
+kind: wire-format
+summary: inetCidrRouteEntry is indexed by {inetCidrRouteDestType, inetCidrRouteDest, inetCidrRoutePfxLen, inetCidrRoutePolicy, inetCidrRouteNextHopType, inetCidrRouteNextHop}. The combined OID for column instances may exceed 128 sub-identifiers if the total octets in Dest, Policy, and NextHop exceeds 111, making the row inaccessible via SNMPv1/v2c/v3.
+section: "5"
+topics:
+    - routing
+    - snmp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

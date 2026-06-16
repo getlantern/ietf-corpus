@@ -1,0 +1,6 @@
+document: rfc-4287
+kind: design-rationale
+summary: atom:id comparison is deliberately lexical rather than by dereferencing because IRI normalization is complex and dereferencing would create unacceptable network dependencies. The specification recommends a set of normalization strategies (lowercase scheme/host, minimal percent-encoding, no dot-segments, NFC character normalization) when generating atom:id values to reduce spurious mismatches.
+section: 4.2.6
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

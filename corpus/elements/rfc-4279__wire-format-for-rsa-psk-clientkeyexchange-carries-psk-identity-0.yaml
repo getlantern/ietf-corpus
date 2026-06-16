@@ -1,0 +1,9 @@
+document: rfc-4279
+kind: wire-format
+summary: For RSA_PSK, ClientKeyExchange carries psk_identity<0..2^16-1> followed by EncryptedPreMasterSecret (2-byte version + 46-byte random, RSA-encrypted). The premaster secret prepends uint16(48) and the 48-byte RSA value before uint16(len(PSK)) and PSK; it is thus 52 octets longer than the PSK.
+section: "4"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4286
+kind: design-rationale
+summary: MRD messages are sent as IGMP (IPv4) or MLD (IPv6) messages rather than ICMP, because this functionality is multicast-specific and using the group management protocols allows operators to correlate MRD problems with data forwarding issues. Using IGMP Query messages to discover multicast routers is insufficient due to query suppression.
+section: "1"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

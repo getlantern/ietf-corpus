@@ -1,0 +1,10 @@
+document: rfc-4273
+kind: design-rationale
+summary: RFC 1657 incorrectly placed bgpTraps at { bgp 7 } and removed bgpPeerRemoteAddr from notification OBJECTS clauses. RFC 4273 restores RFC 1269 semantics by defining new notifications at { bgp 0 } (bgpNotification) and deprecating the { bgp 7 } branch entirely.
+section: "4"
+topics:
+    - bgp
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

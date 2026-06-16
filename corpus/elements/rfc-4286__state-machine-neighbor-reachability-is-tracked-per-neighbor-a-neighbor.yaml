@@ -1,0 +1,9 @@
+document: rfc-4286
+kind: state-machine
+summary: Neighbor reachability is tracked per neighbor. A neighbor is declared unreachable if no valid Advertisement is received within NeighborDeadInterval = 3 * (received Advertisement Interval + calculated AdvertisementJitter). Receipt of a valid Termination triggers a Solicitation; absence of a subsequent Advertisement within NeighborDeadInterval causes the neighbor to be removed.
+section: 3.1.5
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

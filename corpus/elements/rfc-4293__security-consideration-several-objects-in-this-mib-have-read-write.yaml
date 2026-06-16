@@ -1,0 +1,10 @@
+document: rfc-4293
+kind: security-consideration
+summary: Several objects in this MIB have read-write access, including ipForwarding, ipv6IpForwarding, ipv6InterfaceForwarding, ipv4InterfaceEnableStatus, and ipv6InterfaceEnableStatus. Unauthorized write access could disable IP connectivity on specific interfaces or re-configure routing behavior; SNMPv3 with authentication and privacy is strongly recommended to protect these objects.
+section: "8"
+topics:
+    - snmp
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

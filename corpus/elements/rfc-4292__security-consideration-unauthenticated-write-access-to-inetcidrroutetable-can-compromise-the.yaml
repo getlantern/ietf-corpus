@@ -1,0 +1,10 @@
+document: rfc-4292
+kind: security-consideration
+summary: Unauthenticated write access to inetCidrRouteTable can compromise the validity of forwarding information critical to router operation. Even read access is sensitive because the table can be used to map the network topology for denial-of-service attack planning, and inetCidrRouteProto reveals which routing protocols are in use.
+section: "6"
+topics:
+    - security
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

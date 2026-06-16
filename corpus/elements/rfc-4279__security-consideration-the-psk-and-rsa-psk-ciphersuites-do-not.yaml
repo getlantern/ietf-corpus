@@ -1,0 +1,10 @@
+document: rfc-4279
+kind: security-consideration
+summary: 'The PSK and RSA_PSK ciphersuites do not provide Perfect Forward Secrecy: compromise of the shared secret (and RSA private key for RSA_PSK) allows decryption of old sessions. DHE_PSK provides PFS only if a fresh DH private key is generated per handshake.'
+section: "7.1"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

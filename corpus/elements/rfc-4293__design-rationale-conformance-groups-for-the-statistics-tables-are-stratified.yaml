@@ -1,0 +1,10 @@
+document: rfc-4293
+kind: design-rationale
+summary: 'Conformance groups for the statistics tables are stratified by interface bandwidth: a mandatory base group covers all entities, with optional groups for bandwidths between 20 MB and 650 MB and above 650 MB. This avoids requiring 64-bit HC counters on low-bandwidth devices where 32-bit counters will not wrap within a polling hour.'
+section: 3.2.11
+topics:
+    - snmp
+    - ip
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

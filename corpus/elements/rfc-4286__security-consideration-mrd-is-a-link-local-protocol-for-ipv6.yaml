@@ -1,0 +1,9 @@
+document: rfc-4286
+kind: security-consideration
+summary: MRD is a link-local protocol; for IPv6, MRD messages MUST have a valid link-local source address and any messages without one MUST be discarded. For IPv4, the receiver MUST verify the source is local to the receiving interface and MUST discard non-local messages.
+section: "7"
+topics:
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

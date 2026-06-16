@@ -1,0 +1,9 @@
+document: rfc-4281
+kind: design-rationale
+summary: The 'codecs' parameter was introduced because several MIME type/subtype combinations ('bucket' types such as audio/3gpp, video/3gpp2) can contain any of several different codecs, making it impossible to determine rendering requirements from the Content-Type alone without parsing the media body. This is especially costly for MMS servers and constrained devices.
+section: "1"
+topics:
+    - email
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4281
+kind: security-consideration
+summary: The Codecs parameter does not alter the inherent security considerations of the media types it annotates; each media type retains its own security properties. An incorrect Codecs parameter can cause content to be delivered to incapable devices or withheld from capable ones, enabling limited denial-of-service; however, an attacker with the ability to alter the parameter could cause greater harm by modifying the media content or Content-Type header directly.
+section: "8"
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

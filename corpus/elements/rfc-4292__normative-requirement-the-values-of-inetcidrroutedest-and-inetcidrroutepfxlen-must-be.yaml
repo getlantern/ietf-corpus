@@ -1,0 +1,10 @@
+document: rfc-4292
+kind: normative-requirement
+summary: 'The values of inetCidrRouteDest and inetCidrRoutePfxLen MUST be consistent: the bitwise AND of inetCidrRouteDest with the mask derived from inetCidrRoutePfxLen MUST equal inetCidrRouteDest. If not, an inconsistentName error MUST be returned on SET or CREATE requests.'
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

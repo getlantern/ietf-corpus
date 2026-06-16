@@ -1,0 +1,9 @@
+document: rfc-4286
+kind: normative-requirement
+summary: Upon receiving a Termination, the receiver validates checksum, destination (MUST equal All-Snoopers), and for IPv6 source MUST be link-local. Invalid Terminations MUST be silently discarded. Valid Terminations trigger a Solicitation; if no Advertisement is received within NeighborDeadInterval, the sending router is removed from the active list.
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

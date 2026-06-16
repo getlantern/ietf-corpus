@@ -1,0 +1,8 @@
+document: rfc-4279
+kind: design-rationale
+summary: PSK identities are encoded as UTF-8 strings rather than in type-specific binary formats (e.g., 4-byte integers for IPv4, DNS wire format for names) to avoid identity-type-specific parsing code in implementations where identities are configured by humans, and to reduce interoperability problems from implementations supporting different identity types.
+section: "5.1"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

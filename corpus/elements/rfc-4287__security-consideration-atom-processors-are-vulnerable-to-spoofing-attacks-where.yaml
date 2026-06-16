@@ -1,0 +1,8 @@
+document: rfc-4287
+kind: security-consideration
+summary: Atom Processors are vulnerable to spoofing attacks where an attacker publishes an atom:entry using the atom:id of an entry from a different feed, potentially with a falsified atom:source element. Processors that de-duplicate by atom:id should also verify publisher origin before treating entries as duplicates.
+section: "8.4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
