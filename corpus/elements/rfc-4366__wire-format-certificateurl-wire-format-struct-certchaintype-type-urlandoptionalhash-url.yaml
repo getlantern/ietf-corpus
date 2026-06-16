@@ -1,0 +1,10 @@
+document: rfc-4366
+kind: wire-format
+summary: 'CertificateURL wire format: struct { CertChainType type; URLAndOptionalHash url_and_hash_list<1..2^16-1>; }. Each URLAndOptionalHash contains: opaque url<1..2^16-1>, Boolean hash_present, and if true, SHA1Hash[20].'
+section: "3.3"
+topics:
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

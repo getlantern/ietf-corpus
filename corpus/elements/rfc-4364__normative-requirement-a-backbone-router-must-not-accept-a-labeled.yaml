@@ -1,0 +1,11 @@
+document: rfc-4364
+kind: normative-requirement
+summary: A backbone router MUST NOT accept a labeled packet from any adjacent non-backbone device unless (1) the top label was distributed by that backbone router to that device, and (2) using that label will cause the packet to exit the backbone before any lower label or IP header is inspected. The simplest compliant implementation refuses all labeled packets from non-backbone devices.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

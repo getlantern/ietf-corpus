@@ -1,0 +1,9 @@
+document: rfc-4372
+kind: design-rationale
+summary: The RADIUS Class(25) attribute cannot carry CUI because RFC 2865 requires clients to not interpret it locally, and multiple Class attributes may be present in a packet, making it impossible for entities outside the home network to determine which contains the CUI.
+section: "1.1"
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4366
+kind: security-consideration
+summary: The client_certificate_url extension turns the TLS server into a URL-fetching client, exposing it to SSRF, DoS (many connections prompting retrieval), and firewall bypass (server may reach internal hosts not publicly accessible). It is RECOMMENDED that this extension be explicitly enabled by an administrator rather than on by default, and that only a minimal set of URL schemes be permitted.
+section: "6.3"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

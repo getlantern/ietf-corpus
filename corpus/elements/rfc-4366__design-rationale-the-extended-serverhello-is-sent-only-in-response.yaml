@@ -1,0 +1,8 @@
+document: rfc-4366
+kind: design-rationale
+summary: The extended ServerHello is sent only in response to an extended ClientHello. This asymmetric design prevents the extended ServerHello from breaking existing TLS clients that do not understand extensions, while still allowing extension negotiation when both parties support it.
+section: "2.2"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

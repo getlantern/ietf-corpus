@@ -1,0 +1,11 @@
+document: rfc-4364
+kind: interoperability-note
+summary: 'For Multi-AS option (c), PE routers in different ASes establish multi-hop EBGP sessions to exchange VPN-IPv4 routes directly, while ASBRs distribute labeled /32 PE-address routes between ASes to build an end-to-end label switched path. When PE /32 routes are not propagated to P routers, the ingress PE must push a three-label stack: VPN route label, ASBR-to-egress-PE label, and IGP-next-hop-to-ASBR tunnel label.'
+section: "10"
+topics:
+    - bgp
+    - mpls
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

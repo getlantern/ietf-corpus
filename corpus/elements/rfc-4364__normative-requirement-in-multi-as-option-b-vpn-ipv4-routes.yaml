@@ -1,0 +1,12 @@
+document: rfc-4364
+kind: normative-requirement
+summary: In Multi-AS option (b), VPN-IPv4 routes SHOULD only be accepted on EBGP connections at private peering points as part of a trusted SP arrangement; they should not be distributed to or accepted from the public Internet or untrusted peers. An ASBR should never accept a labeled packet from an EBGP peer unless it has distributed the top label to that peer.
+section: "10"
+rfc2119_level: SHOULD
+topics:
+    - bgp
+    - mpls
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

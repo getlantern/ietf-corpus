@@ -1,0 +1,10 @@
+document: rfc-4364
+kind: design-rationale
+summary: P (core) routers are intentionally kept free of any per-VPN routing information; only PE routers attached to a given VPN hold its routes. Tunneling labeled MPLS packets across the backbone achieves this, making VPN scalability independent of P router capacity and allowing the total number of supported VPN routes to grow without bound.
+section: "1.5"
+topics:
+    - mpls
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

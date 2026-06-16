@@ -1,0 +1,10 @@
+document: rfc-4368
+kind: normative-requirement
+summary: When configuring entries in mplsLcFrStdInterfaceConfTable, the corresponding ifEntry and mplsInterfaceConfEntry MUST exist beforehand. If a manager attempts to create an entry for an mplsInterfaceConfEntry that does not support LC-FR, the agent MUST return an inconsistentValue error.
+section: "8"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

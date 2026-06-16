@@ -1,0 +1,9 @@
+document: rfc-4364
+kind: design-rationale
+summary: The RD's sole purpose is to allow BGP to carry multiple distinct routes to the same IPv4 prefix; it carries no inherent information about route origin or target VPN membership. Route distribution policy is governed entirely by the Route Target attribute, keeping the two concerns orthogonal and allowing a single route to target multiple VRFs.
+section: "4.1"
+topics:
+    - bgp
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4366
+kind: normative-requirement
+summary: 'SNI HostName encoding: ASCII-only labels MUST be separated only by byte 0x2E (dot). Servers matching against non-ASCII names MUST apply IDNA Section 4 conversion treating HostName as a query string with AllowUnassigned set. Literal IPv4 and IPv6 addresses are not permitted in HostName.'
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

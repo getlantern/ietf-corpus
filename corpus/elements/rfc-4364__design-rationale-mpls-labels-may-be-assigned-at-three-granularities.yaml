@@ -1,0 +1,9 @@
+document: rfc-4364
+kind: design-rationale
+summary: 'MPLS labels may be assigned at three granularities: one per VRF (requiring a VRF lookup at the egress PE), one per attachment circuit (avoiding the VRF lookup but requiring an ARP lookup), or one per route (allowing path switching without label redistribution). The choice is implementation-specific and transparent to other devices; per-route assignment is expected to be most common.'
+section: 4.3.2
+topics:
+    - mpls
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

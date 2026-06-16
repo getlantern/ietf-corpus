@@ -1,0 +1,10 @@
+document: rfc-4366
+kind: normative-requirement
+summary: If a server sends a CertificateStatus message, it MUST have included a status_request extension (with empty extension_data) in the ServerHello. Servers MUST NOT send CertificateStatus unless they received a status_request in the ClientHello.
+section: "3.6"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

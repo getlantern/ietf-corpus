@@ -1,0 +1,11 @@
+document: rfc-4364
+kind: security-consideration
+summary: For data-plane VPN isolation, no backbone router should accept a tunneled packet originating from outside the backbone. If MPLS-in-IP or MPLS-in-GRE tunneling is used (non-MPLS backbone), filtering must ensure such encapsulated packets are accepted only if their IP destination address routes them back outside the backbone.
+section: "6"
+topics:
+    - vpn
+    - security
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

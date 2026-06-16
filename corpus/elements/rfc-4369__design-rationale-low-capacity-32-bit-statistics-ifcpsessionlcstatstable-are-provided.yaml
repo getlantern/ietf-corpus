@@ -1,0 +1,8 @@
+document: rfc-4369
+kind: design-rationale
+summary: Low-capacity 32-bit statistics (ifcpSessionLcStatsTable) are provided alongside 64-bit counters because at 1 Gbps a Counter32 wraps approximately every 34 seconds, making Counter32 sufficient only in limited scenarios. The 64-bit table is preferred when supported.
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

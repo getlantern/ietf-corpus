@@ -1,0 +1,9 @@
+document: rfc-4372
+kind: design-rationale
+summary: The RADIUS User-Name(1) attribute cannot reliably carry CUI because intermediaries may rewrite it in Access-Request packets for routing purposes, and the Access-Request and Accounting-Request packets may follow different paths, so a separate attribute is required to convey a stable identity.
+section: "1.1"
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

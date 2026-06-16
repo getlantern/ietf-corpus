@@ -1,0 +1,10 @@
+document: rfc-4364
+kind: interoperability-note
+summary: When OSPF is used as the PE/CE protocol, the PE appears to the CE as an OSPF Area 0 router; routes learned from the CE are redistributed into BGP as VPN-IPv4 routes with Extended Community attributes preserving the OSPF LSA type. OSPF route tagging is used to prevent routes received from the backbone from being re-injected into it.
+section: "7"
+topics:
+    - vpn
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

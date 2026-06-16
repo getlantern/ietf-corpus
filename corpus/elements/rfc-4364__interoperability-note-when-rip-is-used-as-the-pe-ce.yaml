@@ -1,0 +1,9 @@
+document: rfc-4364
+kind: interoperability-note
+summary: When RIP is used as the PE/CE protocol, the CE must not advertise back to any PE a route originally learned from the VPN backbone unless the receiving PE maps it to a VPN-IPv4 route with a different RD than the original. Without this precaution, routing loops can arise in multi-homed site configurations.
+section: "7"
+topics:
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

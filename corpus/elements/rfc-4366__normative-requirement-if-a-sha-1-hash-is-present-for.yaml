@@ -1,0 +1,11 @@
+document: rfc-4366
+kind: normative-requirement
+summary: 'If a SHA-1 hash is present for a URL in CertificateURL, the server MUST verify that the retrieved object''s SHA-1 hash matches. On mismatch the server MUST abort with a bad_certificate_hash_value alert. Servers MUST support the http: URL scheme for certificate retrieval.'
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4366
+kind: security-consideration
+summary: Implementations MUST ensure that no buffer overflow can occur regardless of the values of length fields in server_name. Internationalized hostnames in SNI may enable hostname spoofing attacks; server certificates SHOULD NOT be issued for internationalized hostnames without spoofing-mitigation procedures.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-4364
+kind: normative-requirement
+summary: A PE router should not install a VPN-IPv4 route unless it has at least one VRF whose Import Target matches one of the route's Route Targets. If a new Import Target is later added (VPN Join), the PE must re-acquire previously discarded routes using the BGP route refresh mechanism.
+section: 4.3.2
+rfc2119_level: SHOULD
+topics:
+    - bgp
+    - vpn
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
