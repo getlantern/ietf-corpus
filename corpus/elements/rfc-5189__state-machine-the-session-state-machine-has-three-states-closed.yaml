@@ -1,0 +1,8 @@
+document: rfc-5189
+kind: state-machine
+summary: 'The session state machine has three states: CLOSED, NOAUTH, and OPEN. A successful SE with mc=0 transitions from CLOSED directly to OPEN; with mc!=0 transitions first to NOAUTH, then to OPEN on a successful second SE. AST, connection failure, or successful ST from any state returns to CLOSED.'
+section: 2.2.5
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

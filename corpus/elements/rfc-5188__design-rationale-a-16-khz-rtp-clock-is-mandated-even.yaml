@@ -1,0 +1,10 @@
+document: rfc-5188
+kind: design-rationale
+summary: A 16-kHz RTP clock is mandated even when devices operate at 8 kHz because the decoder output can be at either 8 or 16 kHz regardless of encoder sampling rate, so a fixed clock rate avoids ambiguity without requiring the decoder to know the encoder's configuration.
+section: "5"
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

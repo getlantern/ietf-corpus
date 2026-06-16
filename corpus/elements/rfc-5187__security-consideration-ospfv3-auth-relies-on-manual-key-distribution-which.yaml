@@ -1,0 +1,9 @@
+document: rfc-5187
+kind: security-consideration
+summary: OSPFv3-AUTH relies on manual key distribution which precludes replay protection using sequence numbers. Replaying an OSPF Link-Update containing a grace-LSA could deceive neighbors into believing a decommissioned router is undergoing graceful restart, but this attack is harder than replaying hello packets and does not raise new security concerns beyond those in RFC 2740, RFC 4552, and RFC 3623.
+section: "4"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

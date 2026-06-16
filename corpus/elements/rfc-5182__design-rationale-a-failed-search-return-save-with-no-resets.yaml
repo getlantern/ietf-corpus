@@ -1,0 +1,8 @@
+document: rfc-5182
+kind: design-rationale
+summary: A failed SEARCH RETURN (SAVE) with NO resets the search result variable to empty rather than preserving the previous value, to avoid ambiguity about which result "$" refers to in subsequent pipelined commands. Clients must reissue the SAVE command if they want to recover.
+section: "2.2"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-5183
+kind: security-consideration
+summary: The 'remote-host' item may be determined via a PTR DNS lookup on the client IP address, which comes from an untrusted source. Testing 'remote-host' against a domain pattern (e.g., '*.example.com') is not a reliable way to verify message origin because anyone controlling PTR records can set them to any domain.
+section: "5"
+topics:
+    - email
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

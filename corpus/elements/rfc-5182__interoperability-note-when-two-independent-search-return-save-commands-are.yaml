@@ -1,0 +1,8 @@
+document: rfc-5182
+kind: interoperability-note
+summary: When two independent SEARCH RETURN (SAVE) commands are pipelined (neither uses "$"), the server may execute them in any order. The result of the later-tagged command always overrides the earlier one, so the final value of "$" is determined by completion order.
+section: "2.3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
