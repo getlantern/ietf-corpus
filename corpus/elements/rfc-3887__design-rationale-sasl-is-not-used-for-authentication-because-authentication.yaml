@@ -1,0 +1,9 @@
+document: rfc-3887
+kind: design-rationale
+summary: SASL is not used for authentication because authentication in MTQP is per-message (via the SHA1-hashed secret) rather than per-user. This matches the model where the originator delegates tracking access via a per-message secret.
+section: "11"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

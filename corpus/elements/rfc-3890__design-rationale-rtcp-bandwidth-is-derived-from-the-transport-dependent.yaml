@@ -1,0 +1,9 @@
+document: rfc-3890
+kind: design-rationale
+summary: RTCP bandwidth is derived from the transport-dependent RTP session bandwidth (calculated locally using actual transport layers) rather than being fixed, because giving the exact same RTCP bit-rate to IPv4 and IPv6 hosts would result in unfair RTCP sending rates due to different header sizes. The small resulting unfairness (at most ~1% of total session bandwidth) is considered acceptable.
+section: 6.5.1
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

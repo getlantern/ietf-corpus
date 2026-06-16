@@ -1,0 +1,10 @@
+document: rfc-3885
+kind: protocol-element
+summary: The MTRK parameter to the MAIL command carries a base64-encoded SHA-1 hash (mtrk-certifier) and an optional timeout in seconds (mtrk-timeout). The sender generates a large random number A, computes B=SHA1(A), base64-encodes B, and passes it as the mtrk-certifier.
+section: "3.1"
+topics:
+    - email
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

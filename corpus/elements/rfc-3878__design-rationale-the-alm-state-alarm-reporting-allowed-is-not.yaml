@@ -1,0 +1,8 @@
+document: rfc-3878
+kind: design-rationale
+summary: 'The alm state (alarm reporting allowed) is not enumerated in the arcState object. Instead, it is implicitly supported: once a resource enters alm state for a specified alarm type, the corresponding row is automatically deleted from the arc table. Manual transition to alm is achieved by setting RowStatus to ''destroy''.'
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

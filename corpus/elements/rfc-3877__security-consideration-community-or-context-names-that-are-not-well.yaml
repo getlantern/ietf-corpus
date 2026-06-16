@@ -1,0 +1,9 @@
+document: rfc-3877
+kind: security-consideration
+summary: Community or context names that are not well-formed SnmpAdminStrings will be mapped to zero-length strings in alarmActiveContextName and alarmClearContextName, which could cause loss of source context for SNMPv1 traps if community strings contain non-UTF8 bytes.
+section: "4.2"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

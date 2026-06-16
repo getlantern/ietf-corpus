@@ -1,0 +1,9 @@
+document: rfc-3877
+kind: normative-requirement
+summary: The agent MUST throttle generation of consecutive alarmActiveState and alarmClearState traps so that there is at least a two-second gap between traps of the same type against the same alarmActiveModelPointer and alarmActiveResourceId. Throttled traps are dropped, not queued.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

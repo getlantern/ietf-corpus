@@ -1,0 +1,10 @@
+document: rfc-3891
+kind: normative-requirement
+summary: If the Replaces header matches a confirmed dialog and the "early-only" flag is present, the UA rejects the request with a 486 Busy response. Otherwise, it accepts the new INVITE with a 200-class response and shuts down the replaced dialog with a BYE.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

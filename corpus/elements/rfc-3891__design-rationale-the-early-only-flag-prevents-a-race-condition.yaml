@@ -1,0 +1,9 @@
+document: rfc-3891
+kind: design-rationale
+summary: 'The "early-only" flag prevents a race condition in call pickup scenarios: without it, if a confirmed dialog is matched when only an early dialog replacement was intended, the UA would disconnect an active call. The flag causes the UAS to return 486 Busy if it matches a confirmed dialog, forcing the UAC to reattempt or fail gracefully.'
+section: "3"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

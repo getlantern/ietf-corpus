@@ -1,0 +1,10 @@
+document: rfc-3887
+kind: normative-requirement
+summary: After a positive STARTTLS response, the client MUST start TLS negotiation before issuing any other MTQP commands. Upon TLS handshake completion, the protocol resets to initial state; both parties MUST discard knowledge obtained prior to the handshake.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - email
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

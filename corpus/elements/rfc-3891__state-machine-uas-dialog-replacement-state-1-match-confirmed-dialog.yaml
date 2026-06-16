@@ -1,0 +1,9 @@
+document: rfc-3891
+kind: state-machine
+summary: 'UAS dialog replacement state: (1) match confirmed dialog + early-only flag → reject 486; (2) match confirmed dialog, no early-only → accept 200, send BYE on old dialog; (3) match early dialog initiated by this UA → accept 200, send CANCEL on old dialog; (4) match early dialog not initiated by this UA → reject 481; (5) no match or terminated match → reject 481 or 603.'
+section: "3"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-3885
+kind: design-rationale
+summary: When (local-envid + fqhn + 1) exceeds 100 characters, the fqhn SHOULD be replaced by SHA1(fqhn) encoded in BASE64, yielding a 27-octet string and limiting local-envid to 72 octets. This preserves global uniqueness within the ENVID length constraint.
+section: "3.2"
+topics:
+    - email
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

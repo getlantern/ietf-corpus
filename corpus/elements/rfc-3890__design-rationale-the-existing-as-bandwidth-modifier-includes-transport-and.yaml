@@ -1,0 +1,10 @@
+document: rfc-3890
+kind: design-rationale
+summary: The existing 'AS' bandwidth modifier includes transport and IP overhead, making it ambiguous when SDP traverses IPv4/IPv6 translators or proxies — the receiver cannot determine which IP version was used in the calculation. TIAS solves this by excluding all transport overhead and providing maxprate to allow receivers to compute the correct overhead for whatever transport they actually use.
+section: "3.6"
+topics:
+    - realtime
+    - rtp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-3873
+kind: design-rationale
+summary: Counter64 is used instead of Counter32 for high-traffic SCTP statistics counters (chunks and packets) because Counter32 objects that would wrap around in less than one hour must use Counter64 per RFC 2863. Counter32 is retained for lower-rate association-state counters.
+section: 3.1.1
+topics:
+    - sctp
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

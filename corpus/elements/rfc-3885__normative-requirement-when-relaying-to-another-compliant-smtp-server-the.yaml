@@ -1,0 +1,9 @@
+document: rfc-3885
+kind: normative-requirement
+summary: When relaying to another compliant SMTP server, the MTA SHOULD pass an mtrk-timeout decremented by the seconds the message lingered. If the decremented timeout is <= 0, the entire MTRK parameter MUST NOT be passed to the next MTA.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

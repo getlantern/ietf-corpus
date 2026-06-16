@@ -1,0 +1,10 @@
+document: rfc-3873
+kind: design-rationale
+summary: DNS addresses are not stored in the address index objects of this MIB. They are always resolved to the on-the-wire (numeric IP) form prior to connection setup, and only the resolved form appears in MIB objects. The DNS name received at init time is stored separately in sctpAssocRemHostName.
+section: 3.1.3.1
+topics:
+    - sctp
+    - snmp
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
