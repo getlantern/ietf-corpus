@@ -1,0 +1,11 @@
+document: rfc-4103
+kind: normative-requirement
+summary: For best-effort networks, an application MUST monitor the packet loss rate and take appropriate actions to reduce its sending rate if it sends at a rate higher than TCP would achieve over the same path. If rate reduction is needed, the application SHOULD NOT reduce redundancy levels below the default two generations.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

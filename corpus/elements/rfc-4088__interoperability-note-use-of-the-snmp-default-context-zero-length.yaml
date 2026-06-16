@@ -1,0 +1,8 @@
+document: rfc-4088
+kind: interoperability-note
+summary: Use of the SNMP default context (zero-length string) results in a second '//' in the URI (e.g., snmp://<host>//<oid>). This is syntactically valid per RFC 3986; parsers that fail to handle it correctly are broken.
+section: "3.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

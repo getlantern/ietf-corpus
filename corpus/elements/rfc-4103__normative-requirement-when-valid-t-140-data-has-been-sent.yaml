@@ -1,0 +1,10 @@
+document: rfc-4103
+kind: normative-requirement
+summary: When valid T.140 data has been sent and no new data is available after the buffering period, an empty T140block SHOULD be transmitted to mark the beginning of an idle period, enabling more rapid detection of potentially missing text. Any empty T140block sent as primary MUST also be included as redundant in subsequent packets.
+section: "5.2"
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

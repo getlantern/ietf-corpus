@@ -1,0 +1,10 @@
+document: rfc-4103
+kind: normative-requirement
+summary: For out-of-order compensation, if a gap is detected and no redundant data fills it, the received packet SHOULD be buffered; the waiting time is RECOMMENDED to be limited to 1 second. T140blocks not arriving before this limit should be treated as lost.
+section: "5.4"
+rfc2119_level: RECOMMENDED
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

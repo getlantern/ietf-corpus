@@ -1,0 +1,9 @@
+document: rfc-4090
+kind: design-rationale
+summary: The FAST_REROUTE object uses high-order Class-Num bits '11', causing LSRs that do not understand it to ignore it and pass it forward unchanged. This makes FAST_REROUTE backward compatible with existing LSRs. By contrast, the DETOUR object uses high-order bit '0', deliberately causing non-supporting LSRs to reject Path messages and send a PathErr, since the path-specific one-to-one method requires network-wide DETOUR support to function correctly.
+section: "4.1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

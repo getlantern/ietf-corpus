@@ -1,0 +1,10 @@
+document: rfc-4095
+kind: security-consideration
+summary: If DNS lookups are compromised (e.g., without DNSSEC), the application may return a URI with incorrect guidance. Use of 'https:' without DNSSEC creates an unwarranted illusion of authenticity. Even with both DNSSEC and 'https:', clients must ensure the two signature validation contexts are administered by the same domain owner.
+section: "6"
+topics:
+    - dns
+    - security
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

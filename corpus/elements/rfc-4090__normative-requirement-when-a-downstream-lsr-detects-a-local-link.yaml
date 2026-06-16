@@ -1,0 +1,10 @@
+document: rfc-4090
+kind: normative-requirement
+summary: When a downstream LSR detects a local link failure, Path and Resv state for protected LSPs routed over the failed link MUST NOT be cleared, and PathTear/ResvErr messages MUST NOT be sent immediately. The LSR SHOULD reset refresh timers as if just refreshed. State MUST be removed if not refreshed before the timer expires.
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4103
+kind: wire-format
+summary: A text/t140 RTP packet with redundancy (RFC 2198) uses the RED payload type. After the RTP header, one or more redundant block headers (each with F-bit, T140 PT, 14-bit timestamp offset, 10-bit block length) precede the redundant T140block data fields; the final entry has F-bit=0 and is followed by the primary T140block data.
+section: "7.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4090
+kind: normative-requirement
+summary: A PLR MUST NOT mix messages for the protected and detour LSPs. Resv, ResvTear, and PathErr messages from the detour destination MUST NOT be forwarded upstream. When a PLR receives a PathTear from upstream, it MUST delete both the protected and the detour LSPs and PathTear MUST propagate to both.
+section: 6.3.2
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4090
+kind: design-rationale
+summary: An LSR on the path of a protected LSP should always assume it is a merge point because the facility backup method does not signal backups through the bypass tunnel before failure. Without this assumption, the MP would not correctly handle traffic arriving via the bypass tunnel after a failure.
+section: "1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

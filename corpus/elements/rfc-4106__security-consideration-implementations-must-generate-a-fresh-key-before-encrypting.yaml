@@ -1,0 +1,10 @@
+document: rfc-4106
+kind: security-consideration
+summary: Implementations MUST generate a fresh key before encrypting 2^64 blocks of data with a given key, as security decreases slightly with each message. This limit cannot be reached when using 32-bit Sequence Numbers.
+section: "10"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

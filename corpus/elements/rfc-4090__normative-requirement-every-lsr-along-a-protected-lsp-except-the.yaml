@@ -1,0 +1,10 @@
+document: rfc-4090
+kind: normative-requirement
+summary: Every LSR along a protected LSP (except the egress) MUST follow PLR behavior. Until a PLR has a backup path available, it MUST clear the relevant four RRO flags; whenever a backup is available it MUST set 'local protection available'; it MUST clear 'local protection in use' unless actively redirecting to the backup.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

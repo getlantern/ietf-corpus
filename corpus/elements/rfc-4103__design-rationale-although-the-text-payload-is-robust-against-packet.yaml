@@ -1,0 +1,10 @@
+document: rfc-4103
+kind: design-rationale
+summary: Although the text payload is robust against packet loss due to redundancy and has very low bit-rate, this also means it can tolerate high packet loss before needing to reduce sending rate — so the congestion response actions prioritize increasing transmission intervals and limiting character rate before dropping redundancy, preserving reliability as long as possible.
+section: "9"
+topics:
+    - rtp
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

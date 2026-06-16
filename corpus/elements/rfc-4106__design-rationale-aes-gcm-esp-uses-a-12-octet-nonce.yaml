@@ -1,0 +1,9 @@
+document: rfc-4106
+kind: design-rationale
+summary: AES-GCM-ESP uses a 12-octet nonce (4-octet salt + 8-octet IV) rather than the 11-octet nonce used by AES-CCM-ESP, because GCM is specially optimized for 12-octet nonces; other nonce lengths add unnecessary complexity and delay, particularly in hardware. The extra octet enlarges the salt.
+section: "11"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

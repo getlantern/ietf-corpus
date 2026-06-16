@@ -1,0 +1,9 @@
+document: rfc-4090
+kind: design-rationale
+summary: Global revertive mode is preferred over local revertive mode because the head-end LSR has a more complete view of resources and TE LSP constraints and can reoptimize to a more optimal path. Local revertive mode can cause multiple traffic disruptions due to resource flapping and reverts all LSPs indiscriminately without considering TE attributes.
+section: 6.5.2
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

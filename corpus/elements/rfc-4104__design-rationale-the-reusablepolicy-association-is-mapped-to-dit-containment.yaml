@@ -1,0 +1,8 @@
+document: rfc-4104
+kind: design-rationale
+summary: 'The ReusablePolicy association is mapped to DIT containment rather than DN references for scalability reasons: it is expected that a large number of policy instances will be associated to a ReusablePolicyContainer, and DIT containment is a type of association that scales well in LDAP.'
+section: "4.2"
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4103
+kind: design-rationale
+summary: An empty T140block is transmitted at the start of an idle period (when no new text is pending after the buffering interval) so that the receiver can more rapidly detect missing text before the idle period begins. Empty T140blocks must also be carried as redundant data in subsequent packets to keep sequence number inference for redundant blocks correct.
+section: "5.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

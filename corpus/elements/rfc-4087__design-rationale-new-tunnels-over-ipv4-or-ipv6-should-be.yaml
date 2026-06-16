@@ -1,0 +1,10 @@
+document: rfc-4087
+kind: design-rationale
+summary: New tunnels over IPv4 or IPv6 should be assigned IANAtunnelType values and reuse the interface type tunnel(131) rather than receiving separate IANAifType values. Previously, non-point-to-point tunnels (e.g., 6to4) could not be expressed in the tunnel MIB and were assigned IANAifType values; RFC 4087 corrects this, deprecating sixToFour(215) IANAifType in favor of sixToFour(11) IANAtunnelType.
+section: "5"
+topics:
+    - snmp
+    - ip
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

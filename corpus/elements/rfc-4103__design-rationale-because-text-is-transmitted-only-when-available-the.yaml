@@ -1,0 +1,9 @@
+document: rfc-4103
+kind: design-rationale
+summary: Because text is transmitted only when available, the timestamp cannot identify lost packets (unlike constant-rate media); instead, missing RTP sequence numbers are used to detect lost text packets. This also means text/t140 should be the sole payload type in its RTP stream, since mixed streams would make sequence-number-based loss detection unreliable at payload boundaries.
+section: "4.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

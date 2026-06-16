@@ -1,0 +1,10 @@
+document: rfc-4090
+kind: normative-requirement
+summary: When signaling a detour LSP, the PLR MUST clear SESSION_ATTRIBUTE flags 'Local protection desired', 'Bandwidth protection desired', and 'Node protection desired', MUST remove the FAST_REROUTE object from the detour's PATH message, and MUST generate an EXPLICIT_ROUTE object toward the egress. The detour MUST use the same reservation style as the protected LSP.
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

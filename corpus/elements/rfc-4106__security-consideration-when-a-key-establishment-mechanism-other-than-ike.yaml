@@ -1,0 +1,10 @@
+document: rfc-4106
+kind: security-consideration
+summary: When a key establishment mechanism other than IKE is used and only a single key is established for both peers, ESP implementations that permit use of the same key for both encrypting and decrypting MUST ensure the two peers assign different salt values to the SA to avoid counter block collisions.
+section: "10"
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
