@@ -1,0 +1,9 @@
+document: rfc-4730
+kind: design-rationale
+summary: KPML does not use the POSIX alternation operator '|' because implementation experience with MGCP and H.248.1 showed that users and implementers have persistent difficulty understanding alternation precedence. Instead, each <pattern> element may contain multiple <regex> elements, providing pattern alternatives without the ambiguity of inline alternation.
+section: 3.6.1
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

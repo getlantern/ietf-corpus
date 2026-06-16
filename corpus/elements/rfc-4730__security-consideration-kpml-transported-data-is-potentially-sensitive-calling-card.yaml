@@ -1,0 +1,10 @@
+document: rfc-4730
+kind: security-consideration
+summary: KPML-transported data is potentially sensitive (calling card numbers, credit card numbers, PINs). The notifier must authenticate and authorize all subscribers; improper authorization could leak buffered digits from earlier in the session to a new subscriber. Eavesdroppers can view digit information if not encrypted; attackers can inject fraudulent NOTIFYs without integrity protection.
+section: "8"
+topics:
+    - security
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4724
+kind: state-machine
+summary: In the Established state, when a new TCP connection arrives (Event 16 or 17) and the Graceful Restart Capability with one or more AFIs/SAFIs has been received, the local system retains routes per the Receiving Speaker procedures, releases all other BGP resources, drops the old TCP connection, initializes new BGP resources, resets ConnectRetryCounter to zero, starts ConnectRetryTimer, and transitions to Connect state.
+section: "5"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

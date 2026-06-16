@@ -1,0 +1,11 @@
+document: rfc-4733
+kind: normative-requirement
+summary: 'When events are combined with another payload type using RFC 2198 redundancy, the maximum segment duration MUST be constrained so that the RFC 2198 timestamp offset (14-bit field, max 0x3FFF) is never exceeded. The formula is: max duration = 0x3FFF − (R−1) × (packetization period in timestamp units).'
+section: 2.5.1.3.1
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

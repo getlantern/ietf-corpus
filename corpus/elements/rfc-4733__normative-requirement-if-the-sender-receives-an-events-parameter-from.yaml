@@ -1,0 +1,11 @@
+document: rfc-4733
+kind: normative-requirement
+summary: If the sender receives an 'events' parameter from the receiver (via SDP fmtp), it MUST restrict the set of events it sends to those listed. For backward compatibility, if no 'events' parameter is received, the sender SHOULD assume support for DTMF events 0–15 but for no other events.
+section: 2.5.1.1
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

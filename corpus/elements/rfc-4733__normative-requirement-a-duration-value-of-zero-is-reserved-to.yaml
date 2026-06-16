@@ -1,0 +1,11 @@
+document: rfc-4733
+kind: normative-requirement
+summary: A duration value of zero is reserved to indicate a 'state' event that lasts indefinitely until updated. A sender MUST NOT transmit a zero duration for events not defined as states, and the receiver SHOULD ignore a zero-duration report for a non-state event.
+section: 2.3.5
+rfc2119_level: MUST NOT
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

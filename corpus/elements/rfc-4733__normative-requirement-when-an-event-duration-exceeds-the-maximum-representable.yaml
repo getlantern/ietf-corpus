@@ -1,0 +1,11 @@
+document: rfc-4733
+kind: normative-requirement
+summary: When an event duration exceeds the maximum representable value (0xFFFF timestamp units), the sender MUST send a packet with duration 0xFFFF and E bit clear, then begin a new segment with the RTP timestamp set to the end time of the previous segment. This MUST be repeated until the event ends, and the final packet MUST have the E bit set.
+section: 2.5.1.3
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

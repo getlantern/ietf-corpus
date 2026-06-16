@@ -1,0 +1,10 @@
+document: rfc-4733
+kind: design-rationale
+summary: DTMF events use the second playout algorithm (play until E bit, new event, or timeout) rather than the first (buffer exact duration), because unintended breaks in DTMF playout can cause receiving equipment to interpret a single digit as two, while slight extensions in duration are harmless for all DTMF applications.
+section: "3.1"
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

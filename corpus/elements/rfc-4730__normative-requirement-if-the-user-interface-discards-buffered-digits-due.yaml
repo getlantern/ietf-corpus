@@ -1,0 +1,10 @@
+document: rfc-4730
+kind: normative-requirement
+summary: If the User Interface discards buffered digits due to buffer overflow, it MUST set the 'forced_flush' attribute of the <response> element to 'true' in the NOTIFY. Subscribers MUST treat any non-null, non-'false' value of 'forced_flush' that they do not recognize as equivalent to 'true'.
+section: "3.5"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

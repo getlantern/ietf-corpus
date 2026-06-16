@@ -1,0 +1,9 @@
+document: rfc-4724
+kind: interoperability-note
+summary: When the Receiving Speaker detects the old TCP session has not terminated but receives a new open connection from a Graceful Restart-capable peer, it MUST treat the new connection as indication of the old session's termination, close the old session without sending a NOTIFICATION, and retain the new connection. This differs from default BGP-4 Section 6.8 behavior.
+section: "4.2"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

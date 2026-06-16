@@ -1,0 +1,10 @@
+document: rfc-4730
+kind: design-rationale
+summary: KPML uses greedy (longest) matching aligned with H.248.1, not shortest-match as in MGCP. This allows distinguishing overlapping patterns such as '0', '00', '011', and '0011'. The critical-digit timer enables waiting for a longer match after the shortest match is already found.
+section: "3.3"
+topics:
+    - sip
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

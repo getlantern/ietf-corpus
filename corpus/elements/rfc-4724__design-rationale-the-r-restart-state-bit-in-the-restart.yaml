@@ -1,0 +1,9 @@
+document: rfc-4724
+kind: design-rationale
+summary: The R (Restart State) bit in the Restart Flags is included to prevent deadlock when multiple BGP speakers peering with each other all restart simultaneously. Without it, each restarting speaker would wait indefinitely for End-of-RIB markers from peers that are themselves waiting.
+section: "3"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

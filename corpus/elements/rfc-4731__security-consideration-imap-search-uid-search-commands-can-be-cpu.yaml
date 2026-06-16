@@ -1,0 +1,9 @@
+document: rfc-4731
+kind: security-consideration
+summary: IMAP SEARCH/UID SEARCH commands can be CPU and/or I/O intensive and are a potential attack vector for denial-of-service attacks. The ALL and COUNT result options do not change how SEARCH works internally; MIN and MAX can lighten server load when servers choose to optimize searches containing only those options. This extension is not believed to raise additional security concerns beyond those in RFC 3501.
+section: "5"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4724
+kind: security-consideration
+summary: Graceful restart allows a new TCP connection to replace an existing one, potentially enabling denial-of-service or route injection attacks if an attacker can impersonate a legitimate peer. However, the existing BGP-4 security model already relies on TCP MD5 authentication (BGP-AUTH) to protect against such threats, and this proposal does not change the underlying security model.
+section: "7"
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

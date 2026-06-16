@@ -1,0 +1,11 @@
+document: rfc-4733
+kind: security-consideration
+summary: DTMF events frequently carry sensitive information such as PINs and passwords, and the telephone-event payload transmits these in cleartext within RTP. Implementations should consider using SRTP or other RTP-level security mechanisms to protect confidentiality of event streams. Additionally, unauthorized injection of fabricated event packets could disrupt or manipulate telephony sessions.
+section: "6"
+topics:
+    - security
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

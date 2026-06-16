@@ -1,0 +1,10 @@
+document: rfc-4724
+kind: normative-requirement
+summary: When the Receiving Speaker detects TCP session termination for a peer that advertised Graceful Restart Capability, it MUST retain routes from that peer for all address families listed in the capability and MUST mark them as stale. A previously stale route MUST be deleted to handle consecutive restarts. The router MUST NOT differentiate stale from other routing information during forwarding.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

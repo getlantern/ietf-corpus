@@ -1,0 +1,9 @@
+document: rfc-4734
+kind: design-rationale
+summary: V.21 event starting times SHOULD be rounded to the nearest whole timestamp unit because at 300 bits/s each bit occupies 3.33 ms = 26.67 timestamp units at 8000 Hz—a non-integer—making exact representation impossible; rounding every third event to 26 units and the rest to 27 maintains monotonicity.
+section: "2.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

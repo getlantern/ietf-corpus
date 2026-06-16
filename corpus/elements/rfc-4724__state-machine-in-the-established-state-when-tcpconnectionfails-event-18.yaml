@@ -1,0 +1,9 @@
+document: rfc-4724
+kind: state-machine
+summary: In the Established state, when TcpConnectionFails (Event 18) occurs and Graceful Restart Capability with one or more AFIs/SAFIs has been received, the local system retains routes per Receiving Speaker procedures, releases all other BGP resources, drops the TCP connection, increments ConnectRetryCounter, and transitions to Idle (instead of deleting all routes as in the baseline FSM).
+section: "5"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

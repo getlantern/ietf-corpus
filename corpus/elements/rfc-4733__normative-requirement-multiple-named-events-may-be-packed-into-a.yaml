@@ -1,0 +1,11 @@
+document: rfc-4733
+kind: normative-requirement
+summary: Multiple named events MAY be packed into a single RTP packet only if they are consecutive and contiguous (no overlap, no pause between them). The RTP timestamp MUST identify the beginning of the first event or segment in the packet, and the M bit MUST be set if any new event begins in the packet.
+section: 2.5.1.5
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

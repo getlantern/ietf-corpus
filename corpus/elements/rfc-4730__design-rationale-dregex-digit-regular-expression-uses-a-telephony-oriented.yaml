@@ -1,0 +1,10 @@
+document: rfc-4730
+kind: design-rationale
+summary: 'DRegex (Digit Regular Expression) uses a telephony-oriented subset of POSIX ERE rather than full POSIX ERE, for three reasons: (1) KPML targets small memory/processing footprint devices; (2) telephony convention uses ''*'' for the star key and ''x'' for any digit 0-9, which conflicts with POSIX use of ''*'' for repetition; (3) the alternation operator ''|'' caused implementer confusion in MGCP and H.248, so DRegex replaces it with multiple <regex> elements.'
+section: 3.6.1
+topics:
+    - sip
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

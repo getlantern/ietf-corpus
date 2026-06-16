@@ -1,0 +1,9 @@
+document: rfc-4720
+kind: design-rationale
+summary: Standard pseudowire encapsulations remove the original FCS at ingress and regenerate it at egress, leaving the payload vulnerable to undetected corruption during traversal of the encapsulating network. Any LSR or router in the path can corrupt the encapsulated payload, and because FCS is recalculated at egress, corruption passes transparently through all Layer 2 switches. This document defines FCS retention to close that gap.
+section: "1"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
