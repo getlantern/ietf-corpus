@@ -1,0 +1,9 @@
+document: rfc-4474
+kind: security-consideration
+summary: The Via header is intentionally not covered by the signature because an attacker can always insert a new Via header after the authentication service's hop, making signature coverage ineffective. The best-known practice for securing Via is the use of SIPS.
+section: "13.1"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

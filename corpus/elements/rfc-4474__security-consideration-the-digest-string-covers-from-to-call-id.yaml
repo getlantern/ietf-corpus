@@ -1,0 +1,9 @@
+document: rfc-4474
+kind: security-consideration
+summary: The digest-string covers From, To, Call-ID, CSeq, Date, Contact, and message body. To prevents cut-and-paste attacks targeting a different user and SIPS downgrade attacks; Date+Call-ID together provide replay protection (Call-ID as nonce within the Date window; stale Date outside it); CSeq prevents method substitution attacks; Contact ties the Identity to a particular UA instance.
+section: "13.1"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

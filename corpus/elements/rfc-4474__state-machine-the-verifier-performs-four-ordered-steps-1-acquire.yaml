@@ -1,0 +1,10 @@
+document: rfc-4474
+kind: state-machine
+summary: 'The verifier performs four ordered steps: (1) acquire and validate the domain certificate from Identity-Info URI per RFC 3280; (2) verify the signer is authoritative for the From header domain; (3) reconstruct and verify the Identity signature; (4) validate Date, Contact, and Call-ID headers including freshness and certificate validity period. Failure at each step triggers a specific 4xx response.'
+section: "6"
+topics:
+    - sip
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

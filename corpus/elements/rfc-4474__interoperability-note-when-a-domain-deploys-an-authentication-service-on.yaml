@@ -1,0 +1,11 @@
+document: rfc-4474
+kind: interoperability-note
+summary: When a domain deploys an authentication service on a subordinate host (e.g., RFC 3263 SRV delegation from 'example.com' to 'sip.example.com'), the subordinate host MUST be supplied with the private key for the parent domain's certificate. This mirrors the inbound TLS certificate requirement and makes DNS-based virtual hosting unsecurable when domain admins are unwilling to share keys.
+section: "13.4"
+topics:
+    - sip
+    - security
+    - pkix
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

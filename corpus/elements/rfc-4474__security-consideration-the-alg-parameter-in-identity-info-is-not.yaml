@@ -1,0 +1,10 @@
+document: rfc-4474
+kind: security-consideration
+summary: The 'alg' parameter in Identity-Info is not covered by the digest-string, allowing a man-in-the-middle to modify it. However, since only one algorithm ('rsa-sha1') is defined, there is currently no weaker algorithm to bid down to; 'alg' exists for forward-compatibility in case the current algorithm needs replacement.
+section: "13.1"
+topics:
+    - sip
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

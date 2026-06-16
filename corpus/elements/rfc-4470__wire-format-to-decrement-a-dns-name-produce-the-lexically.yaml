@@ -1,0 +1,8 @@
+document: rfc-4470
+kind: wire-format
+summary: 'To decrement a DNS name (produce the lexically preceding name): decrement the last character of the leftmost label, then pad that label to 63 octets with bytes of value 255 (0xFF). If the last character is a null octet, remove it; if this leaves an empty label, remove the label entirely. Numerically: fill the leftmost label to 63 octets with zeros and subtract one.'
+section: "4"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

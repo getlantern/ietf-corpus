@@ -1,0 +1,10 @@
+document: rfc-4474
+kind: normative-requirement
+summary: If an Identity header is absent and required by local policy, a verifier MUST send 428 'Use Identity Header'. If the Identity-Info URI cannot be dereferenced, a 436 'Bad Identity-Info' MUST be returned. If the certificate cannot be validated, a 437 'Unsupported Certificate' MUST be returned. If the signature is invalid, a 438 'Invalid Identity Header' MUST be returned.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

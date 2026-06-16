@@ -1,0 +1,9 @@
+document: rfc-4470
+kind: security-consideration
+summary: An attacker could replay an old but still validly signed NSEC record after a new name has been added within the covered span, falsely proving non-existence of that name. This danger already exists with standard DNSSEC; minimally covering NSEC records actually reduce this risk because each NSEC spans fewer names, and better epsilon functions reduce it further.
+section: "5"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4470
+kind: design-rationale
+summary: NSEC records denying the existence of a wildcard can be pregenerated or cached, since a wildcard-denying NSEC is likely to be used in response to many queries. This optimization reduces the on-demand signing load for a common case.
+section: "3"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

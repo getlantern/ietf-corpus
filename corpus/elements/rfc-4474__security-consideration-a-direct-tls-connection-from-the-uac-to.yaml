@@ -1,0 +1,10 @@
+document: rfc-4474
+kind: security-consideration
+summary: A direct TLS connection from the UAC to the authentication service is RECOMMENDED to prevent a rogue server from impersonating an authentication service and collecting shared secrets. Without TLS, a prior intermediary could modify headers or the body before the authentication service signs the request.
+section: "13.3"
+topics:
+    - sip
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
