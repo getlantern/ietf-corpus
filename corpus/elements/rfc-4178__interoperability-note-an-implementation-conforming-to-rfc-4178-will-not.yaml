@@ -1,0 +1,8 @@
+document: rfc-4178
+kind: interoperability-note
+summary: An implementation conforming to RFC 4178 will not interoperate with a strict RFC 2478 implementation. Even if the new implementation always sends a mechlistMIC token, a server will fail because it requests a mechlistMIC using request-mic which older implementations do not support.
+section: Appendix C
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

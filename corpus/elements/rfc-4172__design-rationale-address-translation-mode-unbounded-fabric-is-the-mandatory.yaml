@@ -1,0 +1,8 @@
+document: rfc-4172
+kind: design-rationale
+summary: 'Address translation mode (unbounded fabric) is the mandatory baseline because it scales beyond the 239-element FC Domain ID limit and provides fault isolation: address reassignment in one gateway region does not cascade to others. Address transparent mode (bounded fabric) is optional and trades scalability for the ability to carry vendor-specific or user-specific payloads that embed N_PORT IDs opaquely.'
+section: "4.3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

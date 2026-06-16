@@ -1,0 +1,9 @@
+document: rfc-4178
+kind: normative-requirement
+summary: To avoid conflicts with SPNEGO's use of MIC tokens, the prot_ready_state MUST be set to false on return from GSS_Init_sec_context() and GSS_Accept_sec_context(), even if the underlying mechanism returned true, so that partially-established contexts cannot be used for per-message calls.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

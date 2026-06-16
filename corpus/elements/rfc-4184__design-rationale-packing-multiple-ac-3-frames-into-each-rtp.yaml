@@ -1,0 +1,10 @@
+document: rfc-4184
+kind: design-rationale
+summary: Packing multiple AC-3 frames into each RTP payload reduces the number of packets sent and hence the overhead from IP/UDP/RTP headers, at the expense of increased delay and reduced robustness against packet losses. This trade-off is available because AC-3 encoders support a range of bit rates.
+section: "7"
+topics:
+    - rtp
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

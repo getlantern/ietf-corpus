@@ -1,0 +1,8 @@
+document: rfc-4172
+kind: interoperability-note
+summary: 'iFCP gateways in address transparent mode will not interoperate with gateways in address translation mode. The TRP bit in the encapsulation flags field enforces this: transparent-mode gateways reject frames without TRP=1 and abort the session, while translation-mode gateways reject frames with TRP=1.'
+section: 4.5.2
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

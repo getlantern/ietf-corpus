@@ -1,0 +1,8 @@
+document: rfc-4188
+kind: design-rationale
+summary: 'Several IEEE 802.1D management objects were intentionally excluded from the MIB because they duplicate objects in other MIBs: BridgeName=sysDescr, BridgeUpTime=sysUpTime, PortAddresses=ifPhysAddress, PortName=ifDescr, PortType=ifType. Transitory state objects (TopologyChange, TopologyChangeAcknowledged) were excluded as not useful for polling.'
+section: "3.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

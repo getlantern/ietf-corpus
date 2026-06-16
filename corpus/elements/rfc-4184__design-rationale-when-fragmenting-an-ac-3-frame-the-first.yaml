@@ -1,0 +1,9 @@
+document: rfc-4184
+kind: design-rationale
+summary: When fragmenting an AC-3 frame, the first fragment MAY be sized to contain at least the first 5/8ths of the frame. This portion is guaranteed to contain data necessary to decode the first two audio blocks, providing greater resilience to packet loss even before the complete frame is received.
+section: "4.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

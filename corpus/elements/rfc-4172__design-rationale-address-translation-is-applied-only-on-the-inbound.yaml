@@ -1,0 +1,8 @@
+document: rfc-4172
+kind: design-rationale
+summary: 'Address translation is applied only on the inbound (receiving) gateway, not the sender: outbound frames are encapsulated and sent without header modification (except for special link service payloads). This concentrates translation logic at the point where local address context is known and avoids requiring the sender to know the receiver''s alias assignments.'
+section: "4.6"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

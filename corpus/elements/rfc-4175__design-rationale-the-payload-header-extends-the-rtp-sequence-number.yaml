@@ -1,0 +1,9 @@
+document: rfc-4175
+kind: design-rationale
+summary: The payload header extends the RTP sequence number from 16 to 32 bits because at 1 Gbps with 1000-octet packets, the standard 16-bit sequence number wraps in approximately 0.5 seconds — less than a round-trip time — making loss and reordering detection unreliable. The 32-bit number allows a wrap-around time of roughly nine hours.
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

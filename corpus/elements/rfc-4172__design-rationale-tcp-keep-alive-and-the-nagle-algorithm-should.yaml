@@ -1,0 +1,9 @@
+document: rfc-4172
+kind: design-rationale
+summary: TCP Keep Alive and the Nagle algorithm should not be used in iFCP sessions. Keep Alive is superseded by the more comprehensive LTEST and FC-4-level keepalive mechanisms. The Nagle algorithm introduces transmission delays that degrade I/O throughput because small iFCP transfers frequently carry storage I/O requests.
+section: 5.2.2.5
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

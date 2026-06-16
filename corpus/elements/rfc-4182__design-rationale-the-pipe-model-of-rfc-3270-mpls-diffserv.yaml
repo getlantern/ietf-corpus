@@ -1,0 +1,10 @@
+document: rfc-4182
+kind: design-rationale
+summary: The Pipe Model of RFC 3270 (MPLS DiffServ support) requires the LSP egress to bind Explicit NULL to the tunnel FEC so that LSP Diff-Serv information is carried in the EXP bits of the Explicit NULL entry while tunneled Diff-Serv information is carried in whatever lies below it. This naturally produces label stacks where Explicit NULL is at the top but not the only entry, making the old restriction incompatible with the Pipe Model.
+section: "3"
+topics:
+    - mpls
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

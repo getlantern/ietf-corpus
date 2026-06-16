@@ -1,0 +1,10 @@
+document: rfc-4178
+kind: normative-requirement
+summary: MIC tokens MUST be exchanged after mechanism context establishment in all cases where the selected mechanism supports integrity and the accepted mechanism is not the most preferred of both peers. The mechlistMIC is computed using GSS_GetMIC() over the DER encoding of the MechTypeList value (not the [0] tag/length wrapper) from the NegTokenInit.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
