@@ -1,0 +1,6 @@
+document: rfc-4783
+kind: design-rationale
+summary: ALARM_SPEC uses the same format as ERROR_SPEC but a different C-Num (198 vs the existing ERROR_SPEC class) to avoid triggering error-processing semantics. Alarm information relates to data plane state changes without changes in control state, and is carried in Path/Resv rather than PathErr/ResvErr/Notify messages.
+section: "2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4780
+kind: design-rationale
+summary: The SipTCMethodName textual convention uses a variable-length OCTET STRING (1..100) rather than an enumeration so that the MIB can accommodate new IANA-registered SIP methods and experimental extension methods without requiring a module update. Extension methods must ensure no name collision with IANA-assigned values.
+section: "6"
+topics:
+    - sip
+    - snmp
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

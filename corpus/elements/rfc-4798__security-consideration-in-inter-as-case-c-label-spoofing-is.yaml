@@ -1,0 +1,10 @@
+document: rfc-4798
+kind: security-consideration
+summary: In inter-AS case (c), label spoofing is harder to prevent because the MPLS label for IPv6 routes is advertised transparently through AS boundaries via multi-hop eBGP, and the egress 6PE cannot verify whether an arriving labeled packet was legitimately pushed by an authorized ingress 6PE. This issue is identified as for further study.
+section: "5"
+topics:
+    - security
+    - mpls
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

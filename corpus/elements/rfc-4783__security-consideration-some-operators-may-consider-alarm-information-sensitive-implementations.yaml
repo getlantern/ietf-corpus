@@ -1,0 +1,9 @@
+document: rfc-4783
+kind: security-consideration
+summary: Some operators may consider alarm information sensitive. Implementations SHOULD allow users to disable ALARM_SPEC object generation or filter/correlate them at domain boundaries to protect confidential network topology or operational state. If protocol security from RFC 3473 is breached, alarm information may be spoofed, but such spoofing is limited to causing annoyance and minor control plane performance degradation since alarm details do not trigger protocol actions.
+section: "4"
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

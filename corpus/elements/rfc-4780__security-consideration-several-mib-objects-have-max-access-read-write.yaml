@@ -1,0 +1,10 @@
+document: rfc-4780
+kind: security-consideration
+summary: Several MIB objects have MAX-ACCESS read-write or read-create, including sipCommonCfgServiceNotifEnable, sipCommonStatusCodeRowStatus, and status code notification controls. Unauthorized modification of these objects could disrupt SIP management operations or flood the network with notifications; SNMP security mechanisms (SNMPv3 USM) should be used to restrict write access.
+section: "9"
+topics:
+    - sip
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

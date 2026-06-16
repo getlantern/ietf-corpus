@@ -1,0 +1,10 @@
+document: rfc-4798
+kind: design-rationale
+summary: A second (inner) label is required rather than a single label because PHP on the penultimate IPv4 LSR would expose the egress 6PE to raw IPv6 packets without MPLS encapsulation, and an existing LSP using 'IPv4 Explicit NULL' cannot carry native IPv6 traffic (RFC 3032) but can carry labeled IPv6 traffic (RFC 4182).
+section: "3"
+topics:
+    - mpls
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
