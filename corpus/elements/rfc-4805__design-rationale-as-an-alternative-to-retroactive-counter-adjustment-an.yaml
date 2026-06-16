@@ -1,0 +1,9 @@
+document: rfc-4805
+kind: design-rationale
+summary: As an alternative to retroactive counter adjustment, an agent may delay all statistics updates by 10 seconds (sketched in Appendix B). This avoids the case where successive GETs of dsx1IntervalSESs and dsx1IntervalUASs return differing values when the first GET occurs during the first few seconds of a new 900-second window.
+section: 3.4.3
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

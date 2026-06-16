@@ -1,0 +1,9 @@
+document: rfc-4803
+kind: security-consideration
+summary: Readable objects in gmplsInterfaceTable, gmplsInSegmentTable, gmplsOutSegmentTable, and gmplsLabelTable collectively expose the LSP network topology and its capabilities. Operators who do not wish to reveal this information should treat these tables as sensitive and control GET/NOTIFY access, potentially encrypting values sent over SNMP.
+section: "9"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4802
+kind: design-rationale
+summary: 'GMPLS labels may exceed 32 bits or be composed of multiple sub-fields, so the MIB uses a dual-representation pattern: if a RowPointer companion object is zeroDotZero, the label is encoded in the adjacent Unsigned32 field; otherwise the RowPointer indicates a row in the gmplsLabelTable of GMPLS-LABEL-STD-MIB. This provides backward compatibility with legacy MPLS-TE-STD-MIB systems while accommodating complex GMPLS label types.'
+section: "6"
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

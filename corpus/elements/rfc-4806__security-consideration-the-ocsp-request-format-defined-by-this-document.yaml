@@ -1,0 +1,11 @@
+document: rfc-4806
+kind: security-consideration
+summary: 'The OCSP request format defined by this document cannot accommodate OCSP nonces (as defined in RFC 2560 Section 4.4.1), meaning pre-produced OCSP responses must be used. This introduces replay vulnerability: an old ''good'' response could be replayed after the certificate has been revoked but before the response expires. Nodes SHOULD make OCSP response freshness requirements configurable.'
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - ipsec
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

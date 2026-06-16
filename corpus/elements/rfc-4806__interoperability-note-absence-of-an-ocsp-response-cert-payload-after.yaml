@@ -1,0 +1,10 @@
+document: rfc-4806
+kind: interoperability-note
+summary: Absence of an OCSP response CERT payload after sending an OCSP request CERTREQ may indicate the peer does not support this extension. Nodes SHOULD be configured to require a response only when all peers are known to support it; otherwise they should fall back to other revocation-checking means if no response is received.
+section: "4.1"
+topics:
+    - ipsec
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4806
+kind: design-rationale
+summary: The OCSP request in this extension uses responder certificate hashes rather than a full OCSP request syntax because the Responder does not yet possess the Initiator's certificate at the time it must signal OCSP support. Hashes serve as index values enabling OCSP responses to be produced before the corresponding certificate is known, provided OCSP nonces are not used.
+section: "5.1"
+topics:
+    - ipsec
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

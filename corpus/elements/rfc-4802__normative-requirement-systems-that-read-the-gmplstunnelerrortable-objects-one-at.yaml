@@ -1,0 +1,10 @@
+document: rfc-4802
+kind: normative-requirement
+summary: Systems that read the gmplsTunnelErrorTable objects one at a time (non-atomic row reads) should read gmplsTunnelErrorLastTime before and after reading the other objects in the row, and verify the timestamp did not change, to ensure all data belongs to the same error event.
+section: "8"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

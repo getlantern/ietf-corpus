@@ -1,0 +1,9 @@
+document: rfc-4805
+kind: design-rationale
+summary: Performance statistics use PerfCurrentCount, PerfIntervalCount, and PerfTotalCount (all Gauge32 textual conventions) rather than Counter32 because these values can decrease—specifically when Unavailable Seconds occur across a 15-minute interval boundary, requiring retroactive subtraction of 10 from ES, BES, SES, and SEFS counts and addition of 10 to UAS.
+section: 3.4.3
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

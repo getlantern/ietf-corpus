@@ -1,0 +1,10 @@
+document: rfc-4806
+kind: design-rationale
+summary: CRLs can grow unbounded and multi-megabyte CRLs are impractical for in-band IKE exchange, especially in bandwidth-limited environments. Out-of-band CRL retrieval can create a deadlock if IPsec/IKE is required to access the CRL server. OCSP responses are small and bounded, making them suitable for in-band IKEv2 signaling.
+section: "1"
+topics:
+    - ipsec
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
