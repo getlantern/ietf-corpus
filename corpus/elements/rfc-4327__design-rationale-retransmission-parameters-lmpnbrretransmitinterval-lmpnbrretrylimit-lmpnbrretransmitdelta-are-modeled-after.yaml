@@ -1,0 +1,10 @@
+document: rfc-4327
+kind: design-rationale
+summary: Retransmission parameters (lmpNbrRetransmitInterval, lmpNbrRetryLimit, lmpNbrRetransmitDelta) are modeled after RFC 2914 congestion control principles; lmpNbrRetransmitDelta encodes the exponential backoff exponent so successive retransmission intervals grow as (1 + Delta)^n.
+section: "9"
+topics:
+    - snmp
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

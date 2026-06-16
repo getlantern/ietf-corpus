@@ -1,0 +1,10 @@
+document: rfc-4323
+kind: security-consideration
+summary: The DOCS-IETF-QOS-MIB contains read-create objects in docsIetfQosServiceClassTable and docsIetfQosServiceClassPolicyTable that allow SNMP managers to define QoS policies and service class templates affecting all subscribers. Unauthorized write access could permit modification of traffic shaping parameters across the cable plant; SNMPv3 with authentication and privacy is required to protect these operations.
+section: "6"
+topics:
+    - qos
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

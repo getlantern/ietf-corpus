@@ -1,0 +1,10 @@
+document: rfc-4323
+kind: design-rationale
+summary: TOS-related classifier and parameter-set objects (IpTosLow, IpTosHigh, IpTosMask, TosAndMask, TosOrMask) are deliberately read-only to prevent a DOCSIS network from being configured to modify the ECN bits of transiting packets. Only docsIetfQosServiceClassDSCPOverwrite is writable, limiting TOS manipulation to DSCP overwriting.
+section: "4"
+topics:
+    - qos
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

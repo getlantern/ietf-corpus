@@ -1,0 +1,9 @@
+document: rfc-4320
+kind: design-rationale
+summary: Late non-INVITE responses by definition arrive after the client transaction's Timer F has fired and the transaction has entered the Terminated state, making them indistinguishable from strays; prohibiting proxies from forwarding such responses eliminates the late-response storm.
+section: "2.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

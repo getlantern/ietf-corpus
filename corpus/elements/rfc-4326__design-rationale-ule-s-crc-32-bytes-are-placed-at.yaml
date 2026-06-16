@@ -1,0 +1,8 @@
+document: rfc-4326
+kind: design-rationale
+summary: ULE's CRC-32 bytes are placed at the end of the SNDU (rather than in the header) to ease hardware implementation of CRC computation. The bit processing order is NOT reversed — unlike SCTP — because ULE processes bytes in order of increasing position.
+section: "4.6"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

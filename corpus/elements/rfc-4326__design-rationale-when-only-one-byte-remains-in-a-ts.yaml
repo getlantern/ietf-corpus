@@ -1,0 +1,8 @@
+document: rfc-4326
+kind: design-rationale
+summary: When only one byte remains in a TS Packet payload after an SNDU, the Encapsulator MUST fill it with 0xFF and start the next SNDU in a new TS Packet. This avoids complex behavior that would arise if a Payload Pointer were required to consume the sole remaining byte.
+section: "6.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

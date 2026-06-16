@@ -1,0 +1,8 @@
+document: rfc-4326
+kind: design-rationale
+summary: The ULE Type field range < 1536 is reserved for IANA-assigned Next-Header values rather than using LLC-style length semantics. This avoids the Ethernet ambiguity where a value < 1536 could be interpreted as either a length or a protocol identifier, since ULE always carries an explicit Length field.
+section: "4.4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

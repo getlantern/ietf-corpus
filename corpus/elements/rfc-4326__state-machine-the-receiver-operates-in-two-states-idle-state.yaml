@@ -1,0 +1,8 @@
+document: rfc-4326
+kind: state-machine
+summary: 'The Receiver operates in two states: Idle State (entered after initialization, errors, or End Indicator — discards all TS Packets until a new SNDU start is found) and Reassembly State (entered when a TS Packet with PUSI=1 is received in Idle State — accumulates SNDU bytes). MPEG-2 TS errors, CRC mismatches, invalid Length, delimiting errors, or invalid Payload Pointer trigger a transition back to Idle State.'
+section: "7.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

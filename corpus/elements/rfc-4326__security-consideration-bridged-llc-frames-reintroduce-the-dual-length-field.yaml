@@ -1,0 +1,9 @@
+document: rfc-4326
+kind: security-consideration
+summary: Bridged LLC frames reintroduce the dual-Length-field security issue avoided in direct IPv4/IPv6 encapsulation. Receivers MUST discard bridged frames where the LLC Length exceeds the SNDU payload size and SHOULD record an SNDU payload length error.
+section: "10"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

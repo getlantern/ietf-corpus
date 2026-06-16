@@ -1,0 +1,9 @@
+document: rfc-4327
+kind: design-rationale
+summary: 'TE link information is intentionally split across three tables: ifTable (interface-specific), lmpTeLinkTable (LMP-specific), and teLinkTable in TE-LINK-STD-MIB (generic TE link data). ifIndex is the common index. This separation allows LMP-independent TE link management while avoiding duplication.'
+section: "9"
+topics:
+    - snmp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

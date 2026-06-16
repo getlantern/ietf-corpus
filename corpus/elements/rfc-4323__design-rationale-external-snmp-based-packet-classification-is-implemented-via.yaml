@@ -1,0 +1,9 @@
+document: rfc-4323
+kind: design-rationale
+summary: External SNMP-based packet classification is implemented via the existing docsDevIpFilterTable pointing to docsIetfQosServiceClassPolicyTable entries, rather than allowing managers to create Service Flow Classifier rows directly. The key reason is that SFIDs were intentionally kept internal to DOCSIS and not exposed to external protocol flows such as IP telephony signaling; external entities classify packets to a named Service Class, not to a specific Service Flow.
+section: "3"
+topics:
+    - qos
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

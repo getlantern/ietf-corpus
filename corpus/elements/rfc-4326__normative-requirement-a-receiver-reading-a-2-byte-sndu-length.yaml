@@ -1,0 +1,9 @@
+document: rfc-4326
+kind: normative-requirement
+summary: A Receiver reading a 2-byte SNDU Length value of ≤4 or 0xFFFF MUST discard the Current SNDU and remaining TS Packet payload and return to the Idle State. An SNDU with an unknown Type value < 1536 MUST also be discarded.
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

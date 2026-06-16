@@ -1,0 +1,9 @@
+document: rfc-4323
+kind: design-rationale
+summary: Internal DOCSIS packet classifier priorities (docsIetfQosPktClassPriority) are by convention in the range 64–191, while externally administered priorities may be 192–255 to override internal classification or 0–63 to be overridden by it. This range convention allows predictable arbitration when both a DOCSIS-signaled classifier and an SNMP-administered policy classify the same packet.
+section: "3"
+topics:
+    - qos
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

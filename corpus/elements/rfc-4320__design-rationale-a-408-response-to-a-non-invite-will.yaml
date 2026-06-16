@@ -1,0 +1,9 @@
+document: rfc-4320
+kind: design-rationale
+summary: 'A 408 response to a non-INVITE will always arrive too late to be useful: the client already has full knowledge of the timeout and cannot act on the information, so 408 responses only waste network resources and contribute to an O(N^2) response storm through N proxies.'
+section: "2.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

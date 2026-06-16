@@ -1,0 +1,8 @@
+document: rfc-4335
+kind: design-rationale
+summary: 'The 3000 ms upper bound on BREAK duration is a safeguard: a uint32 break-length field could encode up to ~49.7 days of BREAK time, which would render the attached serial port completely unavailable for that duration. Applications requiring longer BREAKs may ignore the suggestion.'
+section: "3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
