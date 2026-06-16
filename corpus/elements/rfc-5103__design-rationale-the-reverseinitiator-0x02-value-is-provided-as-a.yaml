@@ -1,0 +1,8 @@
+document: rfc-5103
+kind: design-rationale
+summary: The reverseInitiator (0x02) value is provided as a convenience so Exporting Processes can revise an initiator estimate without re-encoding the entire Biflow Record. This avoids the cost of reconstructing a record solely to swap Source and Destination when the metering process later determines the direction was initially assigned incorrectly.
+section: "6.3"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

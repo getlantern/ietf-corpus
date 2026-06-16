@@ -1,0 +1,8 @@
+document: rfc-5101
+kind: design-rationale
+summary: Reduced size encoding allows Exporters to send IEs in fewer octets than the canonical type when actual values fit, reducing export bandwidth. The Template records the reduced size, alerting the Collector; for example, an unsigned64 byteCount may be sent as 4 octets on an access router where values never exceed 2^32-1.
+section: "6.2"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

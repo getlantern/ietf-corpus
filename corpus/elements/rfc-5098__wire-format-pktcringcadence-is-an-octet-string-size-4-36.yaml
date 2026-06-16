@@ -1,0 +1,9 @@
+document: rfc-5098
+kind: wire-format
+summary: PktcRingCadence is an OCTET STRING (SIZE 4..36) encoded in network-byte order. The first two reserved octets encode the cadence length in bits (1–264), the third reserved octet encodes repeatability (0x80 = non-repeatable, 0x00 = repeatable), and subsequent octets encode a bit-string where each bit represents 50 ms of ring presence (1) or absence (0).
+section: "5"
+topics:
+    - snmp
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

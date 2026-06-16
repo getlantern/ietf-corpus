@@ -1,0 +1,8 @@
+document: rfc-5102
+kind: design-rationale
+summary: totalCounter and deltaCounter semantics are distinguished because totalCounter counts independently of export (analogous to SNMP Counter32), while deltaCounter resets to 0 on each export. This prevents double-counting during aggregation across multiple export intervals at the Collector.
+section: "3.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

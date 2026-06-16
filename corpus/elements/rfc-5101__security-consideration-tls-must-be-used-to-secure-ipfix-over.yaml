@@ -1,0 +1,10 @@
+document: rfc-5101
+kind: security-consideration
+summary: TLS MUST be used to secure IPFIX over TCP; DTLS MUST be used for IPFIX over UDP and SCTP. The default port for secure IPFIX connections is 4740 (versus 4739 for non-secure). Mutual authentication between Exporter and Collector is required to prevent injection of false IPFIX messages.
+section: "11.1"
+topics:
+    - measurement
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

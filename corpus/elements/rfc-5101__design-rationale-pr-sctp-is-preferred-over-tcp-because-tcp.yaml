@@ -1,0 +1,11 @@
+document: rfc-5101
+kind: design-rationale
+summary: PR-SCTP is preferred over TCP because TCP's stream orientation creates back pressure on Exporters that can cause record loss, whereas PR-SCTP's message orientation and partial-reliability capability allow the Exporting Process to discard individual messages under load rather than stalling the entire export pipeline.
+section: "10.1"
+topics:
+    - measurement
+    - sctp
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
