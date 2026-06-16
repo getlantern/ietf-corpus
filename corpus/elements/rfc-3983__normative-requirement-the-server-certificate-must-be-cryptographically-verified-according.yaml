@@ -1,0 +1,11 @@
+document: rfc-3983
+kind: normative-requirement
+summary: 'The server certificate MUST be cryptographically verified according to TLS procedures. The client then checks for a case-insensitive subject match: first dNSName in subjectAltName, then dc-component subjectDN, then cn-component subjectDN (wildcard ''*'' MAY be used as the leftmost label in cn).'
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

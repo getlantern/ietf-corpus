@@ -1,0 +1,10 @@
+document: rfc-3972
+kind: design-rationale
+summary: 'The collision count is capped at 2 because three collisions almost certainly indicate a configuration error or denial-of-service attack rather than a genuine collision. Allowing higher values would weaken the hash extension: an attacker could try all collision count values without repeating the modifier search.'
+section: "7.2"
+topics:
+    - ip
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

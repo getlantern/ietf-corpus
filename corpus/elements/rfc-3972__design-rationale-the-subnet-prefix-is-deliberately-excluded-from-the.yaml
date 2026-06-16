@@ -1,0 +1,11 @@
+document: rfc-3972
+kind: design-rationale
+summary: The subnet prefix is deliberately excluded from the Hash2 input (used only for Hash1) so that mobile nodes with frequently changing prefixes can reuse an already-computed modifier value and avoid repeating the expensive brute-force search. The trade-off is slightly weaker Hash2 binding compared to including the prefix in both hashes.
+section: "7.2"
+topics:
+    - ip
+    - crypto
+    - security
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

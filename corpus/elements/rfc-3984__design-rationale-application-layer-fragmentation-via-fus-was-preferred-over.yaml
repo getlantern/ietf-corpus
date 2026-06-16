@@ -1,0 +1,9 @@
+document: rfc-3984
+kind: design-rationale
+summary: 'Application-layer fragmentation via FUs was preferred over IP-level fragmentation for two reasons: it permits NAL units larger than 64 KB (possible in HD pre-recorded content) to traverse IPv4 networks, and it enables applying generic Forward Error Correction (FEC, RFC 2733) at the RTP level on individual NAL unit fragments.'
+section: "5.8"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-3972
+kind: security-consideration
+summary: To prevent related-protocol attacks (replay of a message signed for one protocol as a message in another), every protocol using CGA signatures MUST prepend a protocol-specific 128-bit type tag to all signed messages and MUST include the sender's CGA address. The public key MUST be used only for signing and MUST NOT be used for encryption.
+section: "7.4"
+rfc2119_level: MUST
+topics:
+    - ip
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

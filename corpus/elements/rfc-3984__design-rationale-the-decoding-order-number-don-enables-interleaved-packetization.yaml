@@ -1,0 +1,9 @@
+document: rfc-3984
+kind: design-rationale
+summary: The Decoding Order Number (DON) enables interleaved packetization where NAL units are transmitted out of decoding order to support robust packet scheduling — for example, sending redundant coded pictures ahead of their decoding time or pre-transmitting intra pictures. A 16-bit modular counter is used because the sender may not know at assignment time how many NAL units will be encoded before a later one arrives, allowing gaps in DON values.
+section: "13"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

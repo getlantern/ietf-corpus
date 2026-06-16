@@ -1,0 +1,8 @@
+document: rfc-3977
+kind: security-consideration
+summary: Malformed UTF-8 input, including illegal sequences and overlong encodings, can be exploited to bypass security checks or inject control characters. Servers must validate UTF-8 carefully; the document notes that characters like '.' and '<' encoded via non-shortest forms could evade parsers.
+section: "12.5"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-3972
+kind: protocol-element
+summary: A CGA signature is produced by prepending a 128-bit type tag (from the CGA Message Type name space) to the message and signing the concatenation using RSASSA-PKCS1-v1_5 with SHA-1. The verifier MUST first verify the CGA itself, then verify the RSA signature over the same concatenation.
+section: "6"
+topics:
+    - ip
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

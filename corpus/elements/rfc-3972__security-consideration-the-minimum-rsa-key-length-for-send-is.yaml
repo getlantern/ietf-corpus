@@ -1,0 +1,11 @@
+document: rfc-3972
+kind: security-consideration
+summary: The minimum RSA key length for SEND is 384 bits, which is vulnerable to integer-factoring attacks. Implementations that use short RSA keys SHOULD be prepared to switch to longer keys when factoring-based denial-of-service attacks become practical.
+section: "7.1"
+rfc2119_level: SHOULD
+topics:
+    - ip
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

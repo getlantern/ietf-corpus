@@ -1,0 +1,9 @@
+document: rfc-3984
+kind: wire-format
+summary: 'STAP-A payload: NAL unit header byte followed by one or more single-time aggregation units, each a 16-bit unsigned size (network byte order) prefixed to the NAL unit. STAP-B prepends a 16-bit DON field before the aggregation units; each successive NAL unit''s DON is (prior DON + 1) % 65536.'
+section: 5.7.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

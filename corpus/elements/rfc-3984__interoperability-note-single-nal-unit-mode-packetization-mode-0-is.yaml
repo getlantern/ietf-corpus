@@ -1,0 +1,9 @@
+document: rfc-3984
+kind: interoperability-note
+summary: Single NAL Unit Mode (packetization-mode=0) is required for interoperability with ITU-T H.241-based video telephony systems. The MANEs' use of F=1 to signal detected bit errors extends H.264 semantics, since the H.264 specification requires F=0; receivers aware of this extension can use F=1 as a hint to discard and conceal the affected NAL unit.
+section: "5.3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

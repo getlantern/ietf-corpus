@@ -1,0 +1,10 @@
+document: rfc-3984
+kind: normative-requirement
+summary: For aggregation packets, the RTP timestamp MUST be set to the earliest NALU-time of all aggregated units. The F bit MUST be cleared only if all aggregated NAL units' F bits are zero, otherwise MUST be set. The NRI field MUST be the maximum NRI of all contained NAL units.
+section: "5.7"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

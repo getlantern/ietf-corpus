@@ -1,0 +1,10 @@
+document: rfc-3972
+kind: design-rationale
+summary: The hash extension technique uses a brute-force search over a Modifier value until 16*Sec leading bits of Hash2 are zero, increasing attack cost by O(2^(16*Sec)) while keeping verification cost constant (at most two SHA-1 evaluations). This allows the security parameter to be raised as computing power increases.
+section: "7.2"
+topics:
+    - ip
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

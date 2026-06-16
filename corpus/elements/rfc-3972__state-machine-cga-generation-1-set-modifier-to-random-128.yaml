@@ -1,0 +1,10 @@
+document: rfc-3972
+kind: state-machine
+summary: 'CGA generation: (1) set Modifier to random 128-bit value; (2) compute Hash2 over modifier + 9 zero octets + public key; (3) if 16*Sec leftmost bits of Hash2 are nonzero, increment modifier and repeat; (4) set collision count to 0; (5) compute Hash1; (6) form interface identifier with Sec and cleared u/g bits; (7) form address; (8) if DAD collision, increment collision count (max 2) and retry from step 5.'
+section: "4"
+topics:
+    - ip
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

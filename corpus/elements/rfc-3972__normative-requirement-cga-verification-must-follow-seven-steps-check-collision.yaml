@@ -1,0 +1,11 @@
+document: rfc-3972
+kind: normative-requirement
+summary: 'CGA verification MUST follow seven steps: check collision count in [0,2]; verify subnet prefix matches; compute Hash1 and compare to interface identifier (ignoring bits 0–2, 6–7); read Sec from address; compute Hash2; verify 16*Sec leftmost bits of Hash2 are zero. Execution MUST stop immediately on any failure.'
+section: "5"
+rfc2119_level: MUST
+topics:
+    - ip
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

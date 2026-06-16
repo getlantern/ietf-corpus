@@ -1,0 +1,9 @@
+document: rfc-3983
+kind: design-rationale
+summary: BEEP was chosen as the transport substrate for IRIS because it is an existing, well-understood protocol with the necessary features (framing, authentication) that gives implementers toolkits and operational experience. HTTP was rejected to avoid confusion with WWW applications and because proper TLS use is inconsistently implemented; raw TCP was rejected because it lacks the client negotiation needed for referral traversal across multiple servers.
+section: "1"
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

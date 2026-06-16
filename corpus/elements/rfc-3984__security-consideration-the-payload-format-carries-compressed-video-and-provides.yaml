@@ -1,0 +1,9 @@
+document: rfc-3984
+kind: security-consideration
+summary: The payload format carries compressed video and provides no inherent security mechanisms. SRTP (RFC 3711) is RECOMMENDED for confidentiality, integrity, and replay protection. MANEs that parse and modify RTP payloads must be trusted entities; when SRTP is in use, they require access to decrypted content to perform their manipulation functions.
+section: "9"
+topics:
+    - security
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
