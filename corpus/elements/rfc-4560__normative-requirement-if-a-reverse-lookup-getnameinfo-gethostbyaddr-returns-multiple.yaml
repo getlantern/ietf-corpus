@@ -1,0 +1,10 @@
+document: rfc-4560
+kind: normative-requirement
+summary: If a reverse lookup (getnameinfo/gethostbyaddr) returns multiple host names and one is the 'official host name', that name MUST be assigned a lookupResultsIndex of 1. All returned entries MUST be stored in the order retrieved, with lookupResultsIndex values starting at 1.
+section: 3.3.3
+rfc2119_level: MUST
+topics:
+    - dns
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

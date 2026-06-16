@@ -1,0 +1,10 @@
+document: rfc-4552
+kind: design-rationale
+summary: OSPFv2 and OSPFv3 share IP protocol type 89 and are normally distinguished by the OSPF header version field. However, IPsec selectors cannot use arbitrary protocol-specific header fields, so the IP header version field (IPv4 vs. IPv6) is used instead to differentiate OSPFv3 from OSPFv2 in SPD rules.
+section: "5"
+topics:
+    - ipsec
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

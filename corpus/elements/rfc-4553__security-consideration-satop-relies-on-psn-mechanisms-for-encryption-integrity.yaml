@@ -1,0 +1,10 @@
+document: rfc-4553
+kind: security-consideration
+summary: SAToP relies on PSN mechanisms for encryption, integrity, and authentication; it does not provide its own security. SRTP is NOT RECOMMENDED as a substitute for PW layer security. Random initialization of sequence numbers in both the control word and optional RTP header makes known-plaintext attacks on encrypted SAToP PWs more difficult. Misconnection detection via SSRC increases resilience to misconfiguration and some DoS attacks.
+section: "9"
+topics:
+    - security
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

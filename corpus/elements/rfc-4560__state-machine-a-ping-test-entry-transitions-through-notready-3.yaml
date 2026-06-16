@@ -1,0 +1,9 @@
+document: rfc-4560
+kind: state-machine
+summary: 'A ping test entry transitions through: notReady(3) → notInService(2) when pingCtlTargetAddress is set, then pingCtlAdminStatus enabled(1) starts the operation. pingResultsOperStatus reflects enabled(1)/disabled(2)/completed(3). Transitions in/out of active are blocked while pingResultsOperStatus is active(1), except destroy(6) which stops an active operation.'
+section: "4.1"
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-4556
+kind: normative-requirement
+summary: Upon receipt of the KDC reply, the client MUST verify the KDC's signature per RFC 3852 and validate the KDC's X.509 certificate per RFC 3280. The KDC certificate MUST contain an id-pkinit-san SAN matching the TGS name of the target realm or the client MUST require the id-pkinit-KPKdc EKU.
+section: 3.2.4
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

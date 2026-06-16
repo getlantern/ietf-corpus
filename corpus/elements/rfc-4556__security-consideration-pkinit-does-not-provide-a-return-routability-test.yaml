@@ -1,0 +1,9 @@
+document: rfc-4556
+kind: security-consideration
+summary: PKINIT does not provide a 'return routability' test, leaving the KDC exposed to DoS attacks via expensive public-key operations. DH key reuse (via clientDHNonce and serverDHNonce) minimizes per-request crypto cost and mitigates this risk.
+section: "4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

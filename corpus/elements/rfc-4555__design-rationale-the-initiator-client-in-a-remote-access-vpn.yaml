@@ -1,0 +1,9 @@
+document: rfc-4555
+kind: design-rationale
+summary: The initiator (client in a remote-access VPN) is solely responsible for deciding which address pair is used for IPsec SAs, and the responder only updates SAs upon explicit UPDATE_SA_ADDRESSES from the initiator. This mirrors normal IKEv2 behavior and is appropriate because the mobile node is in the best position to know which of its interfaces should be used.
+section: "2.1"
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

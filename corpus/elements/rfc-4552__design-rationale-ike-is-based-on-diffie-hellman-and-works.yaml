@@ -1,0 +1,11 @@
+document: rfc-4552
+kind: design-rationale
+summary: IKE is based on Diffie-Hellman and works only for two communicating parties, making it unsuitable for OSPFv3's 'one to many' multicast authentication over broadcast interfaces. Manual keying with shared SA parameters (same SPI and keys for all routers) is therefore mandated; future protocols like KINK/GSAKMP may be explored when widely available.
+section: "7"
+topics:
+    - ipsec
+    - security
+    - routing
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

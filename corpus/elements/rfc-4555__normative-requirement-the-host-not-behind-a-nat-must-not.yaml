@@ -1,0 +1,10 @@
+document: rfc-4555
+kind: normative-requirement
+summary: The host not behind a NAT MUST NOT use dynamic IKEv2 address/port updates for IKEv2 packets, but MAY use them for ESP packets. This ensures an INFORMATIONAL exchange not containing UPDATE_SA_ADDRESSES does not cause unintended address changes.
+section: "3.8"
+rfc2119_level: MUST NOT
+topics:
+    - ipsec
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

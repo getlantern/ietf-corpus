@@ -1,0 +1,11 @@
+document: rfc-4556
+kind: normative-requirement
+summary: The KDC MUST verify the client's signature in the signedAuthPack per RFC 3852, validate the client's X.509 certificate per RFC 3280, and check that the public key is bound to the client principal name in the AS-REQ; mismatch returns KDC_ERR_CLIENT_NAME_MISMATCH.
+section: 3.2.2
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

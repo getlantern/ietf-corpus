@@ -1,0 +1,10 @@
+document: rfc-4555
+kind: security-consideration
+summary: Security policies for MOBIKE-enabled peers must account for the fact that a single IPsec SA may be used over paths of varying security properties as addresses change. Traffic-selector authorization in the PAD must be bound to the authenticated IKE identity, not to the current IP address, to prevent unauthorized SA creation when addresses are updated.
+section: "5.2"
+topics:
+    - ipsec
+    - security
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

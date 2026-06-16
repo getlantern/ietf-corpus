@@ -1,0 +1,9 @@
+document: rfc-4553
+kind: normative-requirement
+summary: The LEN field (bits 10–15) MAY carry the SAToP packet length (header + payload) if less than 64 bytes, and MUST be set to zero otherwise. When LEN is 0, the preconfigured payload size is assumed; if the actual packet size is inconsistent, the packet MUST be considered malformed.
+section: 4.3.1
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4556
+kind: normative-requirement
+summary: When the KDC reuses DH keys, it MUST include an expiration time in dhKeyExpiration and a serverDHNonce at least as long as the symmetric encryption key. The KDC SHOULD NOT reuse DH keys unless clientDHNonce is present in the request.
+section: 3.2.3.1
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

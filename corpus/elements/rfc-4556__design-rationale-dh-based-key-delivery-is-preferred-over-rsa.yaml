@@ -1,0 +1,9 @@
+document: rfc-4556
+kind: design-rationale
+summary: DH-based key delivery is preferred over RSA encryption-based delivery because it avoids using the same RSA key pair for both encryption and signing (discouraged per RFC 3447) and avoids key escrow concerns — signing-only certificates are normally not escrowed, so DH-based delivery is safer for authentication.
+section: "4"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

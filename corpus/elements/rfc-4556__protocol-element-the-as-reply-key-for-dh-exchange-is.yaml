@@ -1,0 +1,9 @@
+document: rfc-4556
+kind: protocol-element
+summary: The AS reply key for DH exchange is derived as k = octetstring2key(DHSharedSecret | n_c | n_k), where octetstring2key applies K-truncate(SHA1(0x00|x) | SHA1(0x01|x) | ...) then random-to-key(). When DH keys are reused, clientDHNonce (n_c) and serverDHNonce (n_k) are mixed in; otherwise both are empty.
+section: 3.2.3.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

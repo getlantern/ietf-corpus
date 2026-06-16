@@ -1,0 +1,9 @@
+document: rfc-4556
+kind: wire-format
+summary: 'KDCDHKeyInfo is a SEQUENCE containing: subjectPublicKey [0] BIT STRING (KDC''s DH public key encoded per RFC 3279), nonce [1] INTEGER (0..4294967295) (request nonce, or 0 if DH keys reused), and dhKeyExpiration [2] KerberosTime OPTIONAL (present iff DH keys reused; KDC''s key MUST NOT be used past this time).'
+section: 3.2.3.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

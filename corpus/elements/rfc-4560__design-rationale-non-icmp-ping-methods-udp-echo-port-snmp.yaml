@@ -1,0 +1,9 @@
+document: rfc-4560
+kind: design-rationale
+summary: Non-ICMP ping methods (UDP echo port, SNMP query, TCP connect) are noted as often yielding better response rates than ICMP Echo, since some routers do not honor Echo Requests or handle them at lower priority, causing false RTT indications. The management application must know which method is in use because different methods yield different response times.
+section: "1.1"
+topics:
+    - measurement
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

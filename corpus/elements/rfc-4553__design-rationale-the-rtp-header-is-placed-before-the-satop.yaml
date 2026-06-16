@@ -1,0 +1,10 @@
+document: rfc-4553
+kind: design-rationale
+summary: The RTP header is placed before the SAToP Control Word for UDP encapsulation (preserving traditional RTP-over-UDP usage) but after it for MPLS and L2TPv3 encapsulations, making SAToP PWs ECMP-safe on MPLS PSN by providing PW-IP packet discrimination and facilitating seamless stitching of L2TPv3-based and MPLS-based PW segments.
+section: "4.3"
+topics:
+    - realtime
+    - rtp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

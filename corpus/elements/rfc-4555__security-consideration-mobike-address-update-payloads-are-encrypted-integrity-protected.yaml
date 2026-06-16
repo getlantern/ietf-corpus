@@ -1,0 +1,10 @@
+document: rfc-4555
+kind: security-consideration
+summary: MOBIKE address-update payloads are encrypted, integrity-protected, and replay-protected by the IKE_SA; however, outer IP header addresses are not covered by IKEv2 integrity protection, so an on-path attacker acting as a NAT can redirect IPsec SA tunnel headers. The resulting attack is limited mainly to denial of service because payload traffic is still protected by IPsec.
+section: "5.1"
+topics:
+    - ipsec
+    - security
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

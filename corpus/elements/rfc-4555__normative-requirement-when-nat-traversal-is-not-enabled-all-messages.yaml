@@ -1,0 +1,11 @@
+document: rfc-4555
+kind: normative-requirement
+summary: When NAT Traversal is not enabled, all messages that can update addresses associated with the IKE_SA and/or IPsec SAs MUST also include a NO_NATS_ALLOWED notification. The exchange responder MUST verify that the contents of NO_NATS_ALLOWED match the addresses in the IP header; if they do not match, an UNEXPECTED_NAT_DETECTED notification is sent in response.
+section: "3.9"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

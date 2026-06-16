@@ -1,0 +1,10 @@
+document: rfc-4556
+kind: normative-requirement
+summary: The paChecksum field in PKAuthenticator MUST be present and contains the SHA1 checksum performed over KDC-REQ-BODY. If absent, the KDC MUST return KDC_ERR_PA_CHECKSUM_MUST_BE_INCLUDED, allowing a new client to retry with SHA1 if permitted by local policy.
+section: 3.2.1
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4556
+kind: design-rationale
+summary: Initial authentication (the AS exchange) is the appropriate integration point for public-key cryptography in Kerberos because the client exposes long-term secrets only once; subsequent service ticket requests use the TGT and symmetric session key, preserving performance while enabling PKI-based bootstrapping.
+section: "1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

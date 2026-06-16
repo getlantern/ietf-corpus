@@ -1,0 +1,9 @@
+document: rfc-4560
+kind: design-rationale
+summary: ICMP probes SHOULD NOT be used for traceroute because RFC 792 states no ICMP messages are sent about ICMP messages, causing many routers to not return TTL-expired ICMP responses to incoming ICMP Echo Requests, making intermediate hops invisible.
+section: "1.2"
+topics:
+    - measurement
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

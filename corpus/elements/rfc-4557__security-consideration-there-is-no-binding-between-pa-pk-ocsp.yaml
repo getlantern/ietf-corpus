@@ -1,0 +1,9 @@
+document: rfc-4557
+kind: security-consideration
+summary: There is no binding between PA-PK-OCSP-RESPONSE pre-authentication data and PKINIT pre-authentication data other than an OCSP response corresponding to a certificate used in a PKINIT element. Attacks involving removal or replacement of PA-PK-OCSP-RESPONSE elements are at worst downgrade attacks (causing operation without OCSP/CRL validation) or denial-of-service attacks.
+section: "4"
+topics:
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

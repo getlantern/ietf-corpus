@@ -1,0 +1,10 @@
+document: rfc-4552
+kind: interoperability-note
+summary: Because IPsec does not support arbitrary fields in the protocol header as selectors, it is not possible to use different SAs for different OSPFv3 instances running over the same interface. All OSPFv3 instances on the same interface share the same SA; SAs are per-link, not per-interface in OSPFv3 RFC terminology.
+section: "8"
+topics:
+    - ipsec
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

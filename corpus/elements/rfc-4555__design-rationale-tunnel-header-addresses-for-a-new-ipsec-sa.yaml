@@ -1,0 +1,9 @@
+document: rfc-4555
+kind: design-rationale
+summary: Tunnel header addresses for a new IPsec SA are taken from the IKE_SA (initialized from the first IKE_AUTH request's IP header), not from the IP header of the CREATE_CHILD_SA message. This is intentional because IKEv2 requires switching from port 500 to 4500 upon NAT detection, and keying off IKE_AUTH simplifies consistency.
+section: "3.3"
+topics:
+    - ipsec
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
