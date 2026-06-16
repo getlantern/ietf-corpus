@@ -1,0 +1,10 @@
+document: rfc-3910
+kind: normative-requirement
+summary: 'If arming of detection points is expected to take more than 200 ms, the notifier MUST send a 202 response immediately, then send a NOTIFY with an empty body and Subscription-State: pending. Once the SCF interface succeeds, a subsequent NOTIFY with Subscription-State: active MUST be sent.'
+section: 5.3.8
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-3903
+kind: security-consideration
+summary: Man-in-the-middle attacks on PUBLISH can install, modify, or remove event state. Integrity protection SHOULD cover the To, From, Event, SIP-If-Match, Route, and Expires headers and the body. If integrity protection is end-to-end, the ESC MUST NOT modify the event state before exposing it to subscribers.
+section: "14.4"
+topics:
+    - sip
+    - security
+    - tls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

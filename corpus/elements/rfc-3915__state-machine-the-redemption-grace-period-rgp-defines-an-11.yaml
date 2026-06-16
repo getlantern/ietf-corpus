@@ -1,0 +1,9 @@
+document: rfc-3915
+kind: state-machine
+summary: 'The Redemption Grace Period (RGP) defines an 11-step state machine: domain starts in ''ok'', receives a <delete> command, transitions to EPP ''pendingDelete'' with RGP status ''redemptionPeriod'', then either a <restore> request moves it to ''pendingRestore'' (awaiting report), or the period elapses moving it to RGP ''pendingDelete'', and finally the domain is purged and available for re-registration.'
+section: "2"
+topics:
+    - dns
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

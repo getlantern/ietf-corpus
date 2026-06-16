@@ -1,0 +1,10 @@
+document: rfc-3893
+kind: design-rationale
+summary: RFC 3261's tunneled 'message/sip' approach signs all headers, but many headers change in transit for legitimate reasons, forcing recipients to distinguish valid from invalid changes. AIBs sign only the identity-critical subset via 'message/sipfrag', reducing the verification burden and false positives.
+section: "1"
+topics:
+    - sip
+    - design-rationale
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

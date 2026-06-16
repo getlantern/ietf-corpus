@@ -1,0 +1,8 @@
+document: rfc-3896
+kind: design-rationale
+summary: Performance statistics objects (PerfCurrentCount, PerfIntervalCount, PerfTotalCount) are defined as Gauge32 rather than Counter32 because these objects can decrease. Specifically, UAS and related counts may be retroactively adjusted when the 10-second UAS determination window crosses a 15-minute interval boundary.
+section: 2.4.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

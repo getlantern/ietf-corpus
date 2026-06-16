@@ -1,0 +1,9 @@
+document: rfc-3895
+kind: state-machine
+summary: 'DS1 Available/Unavailable state machine: transitions to Unavailable at the onset of 10 contiguous SESs or a failure condition. Transitions back to Available at the onset of 10 contiguous non-SES seconds. When the 10-second determination window crosses a 900-second statistics boundary, counts in the previous interval must be retroactively adjusted (or a 10-second delay pipeline used).'
+section: 2.4.3
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

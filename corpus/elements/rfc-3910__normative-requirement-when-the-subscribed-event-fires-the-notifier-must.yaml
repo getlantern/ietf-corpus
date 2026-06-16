@@ -1,0 +1,10 @@
+document: rfc-3910
+kind: normative-requirement
+summary: When the subscribed event fires, the notifier MUST send a NOTIFY containing a body (per Section 5.3.6) with Subscription-State header set to 'terminated' and reason parameter 'fired'. All un-encountered DPs from the same SUBSCRIBE dialog MUST be dis-armed by the SPIRITS notifier and/or SCF.
+section: 5.3.8
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

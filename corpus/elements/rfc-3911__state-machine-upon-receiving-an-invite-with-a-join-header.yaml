@@ -1,0 +1,9 @@
+document: rfc-3911
+kind: state-machine
+summary: 'Upon receiving an INVITE with a Join header, the UAS transitions through: dialog matching (confirmed or early) → authorization check → resource allocation → accept (200 OK, begins mixing) or reject (400, 481, 486, 488, or 603). If the matched dialog is already terminated, the UAS SHOULD send 603 Declined.'
+section: "4"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

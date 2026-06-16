@@ -1,0 +1,9 @@
+document: rfc-3895
+kind: design-rationale
+summary: Performance statistics use Gauge32 (PerfCurrentCount/PerfIntervalCount/PerfTotalCount) rather than Counter32 because UAS boundary crossing can cause ES, BES, SES, and SEFS values to decrease retroactively when the 10-second determination window is applied. A monotonically increasing counter type would be semantically incorrect.
+section: 2.4.3
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

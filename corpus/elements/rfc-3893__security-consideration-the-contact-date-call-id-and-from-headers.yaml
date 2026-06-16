@@ -1,0 +1,10 @@
+document: rfc-3893
+kind: security-consideration
+summary: The Contact, Date, Call-ID, and From headers are mandated in AIBs to resist replay and cut-and-paste attacks. The Date header enforces a 3600-second freshness window; the Call-ID cache prevents replays within that window; and Contact ties the AIB to a specific device so an attacker cannot reuse a stolen AIB to receive calls.
+section: "10"
+topics:
+    - sip
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

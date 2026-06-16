@@ -1,0 +1,9 @@
+document: rfc-3892
+kind: security-consideration
+summary: 'A cut-and-paste attack is possible with minimal tokens: if Mallory sees Alice refer Carol to a target using a token without a To field, he can copy that token into his own request and falsely appear to have been referred by Alice. Mitigation requires protecting the REFER with TLS or S/MIME, or including the To header field in the token.'
+section: "6.1"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

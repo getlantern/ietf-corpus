@@ -1,0 +1,8 @@
+document: rfc-3896
+kind: state-machine
+summary: The DS3 Unavailable Seconds state machine transitions from available to unavailable at the onset of 10 contiguous P-bit Severely Errored Seconds (PSESs) or upon a failure condition. It returns to available at the onset of 10 contiguous seconds with no PSESs (with additional conditions if a failure is also present). All counters except UAS are frozen during unavailable time.
+section: 2.4.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

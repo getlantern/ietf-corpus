@@ -1,0 +1,11 @@
+document: rfc-3910
+kind: normative-requirement
+summary: For the spirits-user-prof package, whenever a location update NOTIFY is sent, the notifier MUST start a 15-second throttle timer (Tn). Any subsequent location update NOTIFY that would be sent before Tn expires MUST be discarded; transmissions are allowed only after Tn expires.
+section: "6.12"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

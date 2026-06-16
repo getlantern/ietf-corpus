@@ -1,0 +1,9 @@
+document: rfc-3895
+kind: security-consideration
+summary: 'Several read-write objects in the DS1-MIB can disrupt service if accessed by unauthorized parties: dsx1LoopbackConfig (can place the line in loopback, effectively taking it out of service), dsx1SendCode (can inject test patterns), and dsx1Channelization (can destroy DS0 ifTable entries). SNMPv3 with authentication and privacy is recommended to protect these objects.'
+section: "5"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

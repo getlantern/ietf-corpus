@@ -1,0 +1,9 @@
+document: rfc-3903
+kind: design-rationale
+summary: Entity-tags in PUBLISH use a token syntax (not HTTP/1.1 quoted-string), disallow multiple entity-tags in a precondition, and disallow the '*' wildcard, because PUBLISH is conceptually an HTTP PUT for which only a subset of HTTP cache-validation features is appropriate. Distinct header field names (SIP-ETag, SIP-If-Match vs. ETag, If-Match) make the differences from HTTP explicit.
+section: "8.1"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

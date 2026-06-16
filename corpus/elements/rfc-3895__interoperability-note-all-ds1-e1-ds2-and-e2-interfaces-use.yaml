@@ -1,0 +1,8 @@
+document: rfc-3895
+kind: interoperability-note
+summary: All DS1, E1, DS2, and E2 interfaces use ifType ds1(18). DS2 or E2 versus DS1/E1 is distinguished by examining ifSpeed (6312000 for DS2, 8448000 for E2) or dsx1LineType rather than a separate ifType value. It is not always necessary or desirable to represent DS2 interfaces explicitly in the ifTable.
+section: "2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

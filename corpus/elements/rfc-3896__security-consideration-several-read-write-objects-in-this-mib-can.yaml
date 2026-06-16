@@ -1,0 +1,9 @@
+document: rfc-3896
+kind: security-consideration
+summary: 'Several read-write objects in this MIB can disrupt DS3/E3 service if written by unauthorized parties: dsx3LoopbackConfig (can activate loopbacks), dsx3SendCode (can inject test patterns or loopback activation codes), and dsx3LineLength (can alter line build-out circuitry settings). SNMP access control should restrict write access to these objects.'
+section: "8"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-3892
+kind: privacy-consideration
+summary: Including the To header field in the Referred-By token reveals the referee's identity. If the referrer encrypts the token to the refer target, the referee (Carol) may not even be aware that her identity is included, defeating her desire for anonymity. Carol must reject REFER requests with tokens she cannot inspect to protect herself.
+section: "6.1"
+topics:
+    - sip
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

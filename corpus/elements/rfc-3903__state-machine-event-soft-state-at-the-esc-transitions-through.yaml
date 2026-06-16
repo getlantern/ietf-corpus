@@ -1,0 +1,9 @@
+document: rfc-3903
+kind: state-machine
+summary: 'Event soft state at the ESC transitions through: created (on initial PUBLISH with body, no SIP-If-Match), refreshed (PUBLISH with SIP-If-Match, no body, Expires > 0), modified (PUBLISH with SIP-If-Match, body, Expires > 0), and removed (PUBLISH with SIP-If-Match, no body, Expires = 0 or expiry elapsed). A 412 response signals the state is no longer valid.'
+section: "4.1"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
