@@ -1,0 +1,9 @@
+document: rfc-3961
+kind: normative-requirement
+summary: For application protocol convenience, for every plaintext length L1 there must exist a message size L2 with L1 ≤ L2 < L1 + 65,536 such that decrypt(encrypt(M)) = M for every message M of length L2. This constrains padding schemes to avoid unrecoverable extra octets after decryption.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

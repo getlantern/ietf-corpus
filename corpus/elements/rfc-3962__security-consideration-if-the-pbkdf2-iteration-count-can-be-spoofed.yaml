@@ -1,0 +1,9 @@
+document: rfc-3962
+kind: security-consideration
+summary: If the PBKDF2 iteration count can be spoofed by a network attacker and the implementation's upper bound is very high, the attacker can mount a denial-of-service attack against the client by supplying an excessively large iteration count, causing the client to spend significant CPU time computing an incorrect key.
+section: "8"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

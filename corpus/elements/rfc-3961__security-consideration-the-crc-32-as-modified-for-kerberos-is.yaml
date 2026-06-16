@@ -1,0 +1,9 @@
+document: rfc-3961
+kind: security-consideration
+summary: The CRC-32 as modified for Kerberos is not collision-proof; a probabilistic chosen-plaintext attack can generate an alternative message with the same checksum. Additionally, the Kerberos CRC-32 implementation effectively ignores leading zero bits, so messages differing only in leading zeros share the same checksum value.
+section: "10"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

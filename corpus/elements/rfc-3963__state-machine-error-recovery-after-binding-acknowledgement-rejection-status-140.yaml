@@ -1,0 +1,9 @@
+document: rfc-3963
+kind: state-machine
+summary: 'Error recovery after Binding Acknowledgement rejection: status 140 triggers a Binding Update to another Home Agent; if none respond positively, the Mobile Router MUST stop sending BUs with R flag set and log the event. Status 141/142 (explicit mode) requires stopping advertisement of the rejected prefix and obtaining new prefix information. After exhausting all modes, the Mobile Router MUST stop sending BUs with R flag for that Home Address.'
+section: "5.4"
+topics:
+    - mobility
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

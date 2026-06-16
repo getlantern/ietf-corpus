@@ -1,0 +1,10 @@
+document: rfc-3971
+kind: normative-requirement
+summary: Hosts MUST send CPS messages to the All-Routers multicast address if no default router has been selected, or to the default router's IP address if one has been selected. If there is no response within CPS_RETRY seconds, the host MUST retry with exponentially doubling wait intervals, abandoning after CPS_RETRY_MAX seconds.
+section: 6.4.6
+rfc2119_level: MUST
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

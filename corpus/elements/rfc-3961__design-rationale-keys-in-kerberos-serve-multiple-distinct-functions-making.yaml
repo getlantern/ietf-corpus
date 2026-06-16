@@ -1,0 +1,9 @@
+document: rfc-3961
+kind: design-rationale
+summary: Keys in Kerberos serve multiple distinct functions, making it unwise to use the same key for multiple purposes. The framework enumerates different key usages and takes a 'usage number' as input to encryption and checksum mechanisms, producing a distinct 'specific key' derived from the base key for each usage, so compromise of one derived key does not compromise others.
+section: "2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-3970
+kind: security-consideration
+summary: Unauthorized modification of teAdminGroupTable, teTunnelTable, tePathTable, or tePathHopTable can cause tunnel flapping, rerouting, or traffic disruption. Changing teAdminGroupTable specifically alters the semantics of include/exclude constraints, causing traffic to follow unintended routes.
+section: "7"
+topics:
+    - security
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-3961
+kind: protocol-element
+summary: 'Three specific keys are derived from the base key using the DK function with the 4-byte big-endian key usage number followed by a one-octet suffix: Kc = DK(base-key, usage | 0x99) for checksum computation, Ke = DK(base-key, usage | 0xAA) for encryption, Ki = DK(base-key, usage | 0x55) for HMAC integrity verification.'
+section: "5.3"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

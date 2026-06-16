@@ -1,0 +1,9 @@
+document: rfc-3962
+kind: protocol-element
+summary: Ciphertext stealing (CTS) is used instead of padding to handle partial final blocks, ensuring no message expansion for arbitrary-length messages. CTS is always applied to the last two blocks for consistency; if data length is a multiple of block size this is equivalent to plain CBC with the last two ciphertext blocks swapped.
+section: "5"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

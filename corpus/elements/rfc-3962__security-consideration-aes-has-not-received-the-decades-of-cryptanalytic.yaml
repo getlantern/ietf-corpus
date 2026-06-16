@@ -1,0 +1,9 @@
+document: rfc-3962
+kind: security-consideration
+summary: AES has not received the decades of cryptanalytic scrutiny that DES has; a previously undiscovered weakness may exist. The use of HMAC with SHA-1 has a drawback for pass phrases longer than 64 bytes, which are hashed to 20 bytes before the main HMAC computation, though sparse entropy in long pass phrases may mitigate this in practice.
+section: "8"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-3962
+kind: security-consideration
+summary: The PBKDF2 iteration count is a constant multiplier on brute-force work for both attacker and legitimate user. The iteration count should be chosen based on attacker/user hardware balance and should be increased over time (approximately 40–60% per year) as CPU power increases. A new random salt should be generated when passwords change to prevent caching of intermediate PBKDF2 results.
+section: "8"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

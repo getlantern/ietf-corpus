@@ -1,0 +1,9 @@
+document: rfc-3962
+kind: protocol-element
+summary: 'String-to-key derivation uses PBKDF2 (PKCS#5 v2.0) with SHA-1 HMAC as the pseudorandom function, followed by the DK function with the 8-octet ASCII string ''kerberos'': tkey = random2key(PBKDF2(passphrase, salt, iter_count, keylength)); key = DK(tkey, ''kerberos'').'
+section: "4"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

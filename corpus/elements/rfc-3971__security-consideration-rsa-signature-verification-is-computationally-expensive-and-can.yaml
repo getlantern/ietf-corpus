@@ -1,0 +1,9 @@
+document: rfc-3971
+kind: security-consideration
+summary: RSA signature verification is computationally expensive and can be exploited in a CPU-exhaustion DoS attack by flooding a node with unsolicited NDP messages. All nodes SHOULD apply rate-limiting for unsolicited message processing; receivers MAY silently discard packets under apparent DoS conditions.
+section: 5.2.2
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

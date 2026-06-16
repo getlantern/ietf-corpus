@@ -1,0 +1,9 @@
+document: rfc-3970
+kind: design-rationale
+summary: The Hop Table uses a dual-index structure (teHopListIndex, tePathHopIndex) so that a single shared table holds hops for configured routes, computed routes, and recorded routes across all paths. A path stores a primary index (e.g., tePathRecordedRoute) and hops are fetched by walking secondary indices 1, 2, ….
+section: "3.4"
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

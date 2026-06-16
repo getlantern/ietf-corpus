@@ -1,0 +1,10 @@
+document: rfc-3971
+kind: normative-requirement
+summary: Messages received without at least one of the Timestamp and Nonce options MUST be treated as unsecured. Messages bearing the RSA Signature option but lacking the Timestamp option MUST be silently discarded; solicitations with RSA Signature but no Nonce MUST also be silently discarded.
+section: 5.3.4
+rfc2119_level: MUST
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

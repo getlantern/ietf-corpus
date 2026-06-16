@@ -1,0 +1,8 @@
+document: rfc-3961
+kind: wire-format
+summary: 'DES encryption data format is: confounder (8 bytes, one DES block) | checksum (type-dependent length, zeroed before checksum computation) | msg-seq | pad (zero-valued octets to reach 8-byte boundary). The checksum is computed over the entire structure with checksum field zeroed, then inserted before DES-CBC encryption.'
+section: "6.2"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

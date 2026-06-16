@@ -1,0 +1,9 @@
+document: rfc-3961
+kind: security-consideration
+summary: Random confounders are essential to prevent use of Kerberos protocol exchanges as encryption oracles. Without a confounder, encryption of constant plaintext yields constant ciphertext (as in Kerberos v4), creating an effective oracle. Random confounders frustrate chosen-plaintext attacks by ensuring different ciphertexts even for identical plaintexts.
+section: "10"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

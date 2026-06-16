@@ -1,0 +1,10 @@
+document: rfc-3962
+kind: normative-requirement
+summary: If exactly one block is to be encrypted, it is encrypted with AES in ECB mode. Input smaller than one block is padded at the end; implementations MAY use all-zero or random padding, but protocols MUST NOT rely on the result being deterministic or non-deterministic.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

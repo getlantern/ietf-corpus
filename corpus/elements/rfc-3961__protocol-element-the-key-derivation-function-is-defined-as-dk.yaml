@@ -1,0 +1,8 @@
+document: rfc-3961
+kind: protocol-element
+summary: The key derivation function is defined as DK(Key, Constant) = random-to-key(DR(Key, Constant)), where DR(Key, Constant) = k-truncate(K1 | K2 | …) with Ki = E(Key, K(i-1), initial-cipher-state). If the Constant is smaller than the cipher block size c, it is expanded using n-fold. Deriving the base key from a derived key is as hard as breaking the underlying cipher.
+section: "5.1"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

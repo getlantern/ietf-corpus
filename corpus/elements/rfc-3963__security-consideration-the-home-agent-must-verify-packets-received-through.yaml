@@ -1,0 +1,11 @@
+document: rfc-3963
+kind: security-consideration
+summary: 'The Home Agent must verify packets received through the bi-directional tunnel: the outer IPv6 source address MUST be the Mobile Router''s current Care-of Address, and the inner IPv6 source address MUST be topologically correct relative to the Mobile Network prefixes. This prevents use of the Home Agent as an attack relay that bypasses ingress filtering.'
+section: "9"
+rfc2119_level: MUST
+topics:
+    - security
+    - mobility
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

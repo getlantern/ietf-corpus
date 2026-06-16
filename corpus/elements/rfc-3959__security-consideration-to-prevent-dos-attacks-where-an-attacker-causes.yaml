@@ -1,0 +1,12 @@
+document: rfc-3959
+kind: security-consideration
+summary: To prevent DoS attacks where an attacker causes a UA to send media to a victim by supplying the victim's transport address in a session description, the UA SHOULD perform a handshake (e.g., via a connection-oriented protocol, STUN, or SRTP key exchange) to verify willingness to receive media before sending large amounts of data.
+section: "8"
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - security
+    - realtime
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

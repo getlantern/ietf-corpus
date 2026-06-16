@@ -1,0 +1,10 @@
+document: rfc-3963
+kind: normative-requirement
+summary: If a Binding Update contains multiple Mobile Network Prefix Options and the Home Agent fails to set up forwarding for all listed prefixes, it MUST NOT forward traffic to any of the prefixes and MUST reject the Binding Update with status 141 (Invalid Prefix). It must also disable forwarding for any prefixes in the existing binding cache entry that do not appear in the new Binding Update.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - mobility
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

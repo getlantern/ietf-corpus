@@ -1,0 +1,9 @@
+document: rfc-3962
+kind: errata
+summary: 'Errata for RFC 2040 (RC5-CTS) Section 8 correct three errors: (1) for short messages where Cn-2 does not exist in the encryption XOR step, the IV should be used; (2) the mode only handles plaintext longer than one block, not any length; (3) decryption step 6 should XOR the decrypted block with Cn-2 (or IV for short messages) to produce Pn-1.'
+section: A
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

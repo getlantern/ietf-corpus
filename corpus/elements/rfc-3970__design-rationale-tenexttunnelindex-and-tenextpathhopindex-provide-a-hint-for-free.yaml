@@ -1,0 +1,9 @@
+document: rfc-3970
+kind: design-rationale
+summary: teNextTunnelIndex and teNextPathHopIndex provide a hint for free index values to avoid collisions when two management applications attempt to create rows simultaneously. If a SET using the hint finds the value already in use, it fails and the application must re-read the hint object.
+section: "5"
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

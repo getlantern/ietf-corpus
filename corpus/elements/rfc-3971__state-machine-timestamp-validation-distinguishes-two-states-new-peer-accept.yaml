@@ -1,0 +1,9 @@
+document: rfc-3971
+kind: state-machine
+summary: 'Timestamp validation distinguishes two states: new peer — accept if -Delta < (RDnew - TSnew) < +Delta and store as RDlast/TSlast; known peer — accept if TSnew + fuzz > TSlast + (RDnew - RDlast)×(1-drift) - fuzz, updating RDlast/TSlast only when TSnew > TSlast.'
+section: 5.3.4.2
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

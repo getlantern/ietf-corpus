@@ -1,0 +1,10 @@
+document: rfc-3962
+kind: security-consideration
+summary: Ciphertext stealing mode reveals the exact length of each encrypted message (no padding), rather than bounding it to a range as in padded CBC. If message length must be hidden, it should be obscured at a higher protocol layer by intentionally varying message length.
+section: "8"
+topics:
+    - crypto
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
