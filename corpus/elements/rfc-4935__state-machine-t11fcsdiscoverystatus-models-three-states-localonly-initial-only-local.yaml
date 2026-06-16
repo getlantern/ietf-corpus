@@ -1,0 +1,8 @@
+document: rfc-4935
+kind: state-machine
+summary: 't11FcsDiscoveryStatus models three states: ''localOnly'' (initial, only local data present), ''inProgress'' (discovery triggered via t11FcsFabricDiscoveryStart), and ''completed'' (discovery done, data cached for at least t11FcsFabricDiscoveryTimeOut seconds). After the timeout expires the state may revert to ''localOnly''. Writing ''localOnly'' via SNMP immediately discards cached data and aborts any in-progress discovery.'
+section: "6"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4936
+kind: design-rationale
+summary: Flow control is not applied to notifications in this MIB because all defined notifications are triggered by control-plane events (not data-plane). Estimating a maximum rate is impractical (it depends on concurrent operators and reconfiguration frequency), and the added complexity is unwarranted.
+section: 5.8.5.1
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

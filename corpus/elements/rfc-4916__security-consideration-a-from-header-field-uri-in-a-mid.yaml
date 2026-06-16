@@ -1,0 +1,9 @@
+document: rfc-4916
+kind: security-consideration
+summary: A From header field URI in a mid-dialog request for which no valid Identity header field (or other means of authentication) has been received cannot be trusted except in very closed environments. However, it is recommended not to reject a mid-dialog request solely because the Identity header field is missing, as this would interfere with ongoing call operation; instead, the absence can influence user-facing information or prompt policy-driven call clearing.
+section: "7"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

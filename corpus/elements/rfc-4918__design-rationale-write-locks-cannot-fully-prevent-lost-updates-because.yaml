@@ -1,0 +1,8 @@
+document: rfc-4918
+kind: design-rationale
+summary: Write locks cannot fully prevent lost updates because WebDAV must remain compatible with HTTP/1.1 clients that do not understand locking, and because not all repository implementations support locking; ETags with If-Match are the recommended complement for HTTP-only clients.
+section: "7.2"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

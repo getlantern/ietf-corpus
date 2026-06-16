@@ -1,0 +1,8 @@
+document: rfc-4916
+kind: design-rationale
+summary: Connected identity is placed in the From header field rather than a new header because the From header is the standard SIP identifier for the UAC of a request, and reusing it allows existing Authentication Service mechanisms (RFC 4474) to sign the identity without new header processing logic.
+section: "3"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

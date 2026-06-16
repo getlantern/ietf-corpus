@@ -1,0 +1,8 @@
+document: rfc-4936
+kind: design-rationale
+summary: The 'copy' database model in Enhanced mode mirrors FC-GS-5 behavior where changes are staged before commit. The MIB agent takes a snapshot at lock acquisition, applies SNMP SetRequests to the copy, and only overwrites the committed database upon a successful CMIT request.
+section: "7"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

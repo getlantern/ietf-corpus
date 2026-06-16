@@ -1,0 +1,9 @@
+document: rfc-4918
+kind: normative-requirement
+summary: A server receiving a LOCK request with no body MUST NOT create a new lock; a bodyless LOCK is only valid as a refresh of an existing lock, and any timers associated with the lock MUST be reset.
+section: "7.7"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

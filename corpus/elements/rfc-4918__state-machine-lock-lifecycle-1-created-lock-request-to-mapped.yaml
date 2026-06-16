@@ -1,0 +1,8 @@
+document: rfc-4918
+kind: state-machine
+summary: 'Lock lifecycle: (1) Created — LOCK request to mapped or unmapped URL generates a new lock with unique token; (2) Active — lock token must be submitted in If header to modify locked resources; (3) Refreshed — LOCK with If header and no body resets timer; (4) Terminated — UNLOCK request or timeout expiry or deletion of lock-root removes the lock.'
+section: "6"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

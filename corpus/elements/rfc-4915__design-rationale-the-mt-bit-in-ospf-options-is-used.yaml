@@ -1,0 +1,8 @@
+document: rfc-4915
+kind: design-rationale
+summary: The MT-bit in OSPF options is used specifically to gate adjacency formation when DefaultExclusionCapability is enabled, ensuring that no router can exclude a link from the default topology until all neighbors in the area support the feature — preventing black holes from non-MT routers silently accepting zero metrics.
+section: "4.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

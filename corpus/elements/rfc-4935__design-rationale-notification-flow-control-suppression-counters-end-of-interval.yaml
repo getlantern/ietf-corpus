@@ -1,0 +1,8 @@
+document: rfc-4935
+kind: design-rationale
+summary: Notification flow control (suppression counters, end-of-interval notifications) is not applied to the three notifications in this MIB because they are triggered by control-plane events rather than data-plane events, making it impractical to bound their frequency and making the extra complexity unwarranted.
+section: 5.4.5.1
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

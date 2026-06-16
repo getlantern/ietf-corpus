@@ -1,0 +1,10 @@
+document: rfc-4936
+kind: security-consideration
+summary: SNMP write access to the Zoning Database in Enhanced mode requires that the management application first obtain the Fabric lock via T11-FC-FABRIC-LOCK-MIB, ensuring serialized and authenticated access. The t11FLockInitiator object records the SNMPv3 securityName (or snmpCommunitySecurityName for v1/v2c) of the lock requester, providing an audit trail for zoning configuration changes.
+section: "9"
+topics:
+    - security
+    - snmp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

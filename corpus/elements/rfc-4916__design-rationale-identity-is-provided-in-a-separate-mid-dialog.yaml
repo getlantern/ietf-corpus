@@ -1,0 +1,9 @@
+document: rfc-4916
+kind: design-rationale
+summary: Identity is provided in a separate mid-dialog request rather than in a response because authenticating a UAS via response is generally difficult. Sending identity in a request allows normal RFC 4474 authentication techniques (Identity header field signed by an Authentication Service) to be applied.
+section: "1"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

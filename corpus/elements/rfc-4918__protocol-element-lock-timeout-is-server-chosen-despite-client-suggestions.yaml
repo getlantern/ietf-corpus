@@ -1,0 +1,8 @@
+document: rfc-4918
+kind: protocol-element
+summary: Lock timeout is server-chosen despite client suggestions via the Timeout request header. Clients MUST NOT assume a lock is gone when timeout expires, nor that it still exists before expiry. Servers SHOULD remove expired locks as if UNLOCK had been called.
+section: "6.6"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

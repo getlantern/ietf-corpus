@@ -1,0 +1,8 @@
+document: rfc-4939
+kind: design-rationale
+summary: iSCSI node names (up to 223 bytes) are too long to use directly as SNMP table indices, so the MIB defines an integer IsnsNodeIndexId (Unsigned32 1..4294967295) as a 1-to-1 surrogate index. The mapping is persistent across server restarts only for nodes that belong to a DD or are registered as control nodes.
+section: "5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

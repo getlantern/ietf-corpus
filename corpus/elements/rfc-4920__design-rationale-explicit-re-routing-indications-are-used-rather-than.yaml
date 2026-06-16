@@ -1,0 +1,9 @@
+document: rfc-4920
+kind: design-rationale
+summary: 'Explicit re-routing indications are used rather than implicit inference from error codes because implicit indication (e.g., via CV34 in TDM networks) can lead to futile re-routing attempts: a node re-routes without knowing where blockage occurred, and may route through the same congested point. Explicit crankback separately conveys where blockage occurred and whether alternate routing should be attempted.'
+section: "2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
