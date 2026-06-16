@@ -1,0 +1,9 @@
+document: rfc-4836
+kind: security-consideration
+summary: Several read-write objects in the MAU-MIB—including ifMauStatus, rpMauStatus, ifMauDefaultType, ifMauAutoNegAdminStatus, ifMauAutoNegCapAdvertisedBits, and ifMauAutoNegRestart—can be used to disrupt or reconfigure network interfaces if accessed by unauthorized parties. Implementations should apply SNMP authentication and privacy (e.g., SNMPv3 USM) to control access to these sensitive writable objects.
+section: "6"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

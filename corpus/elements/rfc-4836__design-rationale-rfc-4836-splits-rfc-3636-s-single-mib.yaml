@@ -1,0 +1,9 @@
+document: rfc-4836
+kind: design-rationale
+summary: 'RFC 4836 splits RFC 3636''s single MIB module into two: a stable MAU-MIB and a new IANA-maintained IANA-MAU-MIB. This separation means that when new MAU types, Media Available states, Auto-Negotiation capabilities, or Jack types are defined by IEEE 802.3, only the IANA-maintained module needs updating, leaving the base MAU-MIB module unchanged and reducing the frequency of standards-track updates.'
+section: "3.1"
+topics:
+    - snmp
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

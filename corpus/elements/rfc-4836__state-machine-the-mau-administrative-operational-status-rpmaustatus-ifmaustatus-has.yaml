@@ -1,0 +1,8 @@
+document: rfc-4836
+kind: state-machine
+summary: 'The MAU administrative/operational status (rpMauStatus/ifMauStatus) has six states: other(1), unknown(2), operational(3), standby(4), shutdown(5), and reset(6). Writing operational, standby, or shutdown transitions the MAU to that state; writing standby to a mixing-type MAU or AUI causes it to enter shutdown instead. Writing reset triggers a power-cycle equivalent of at least half a second.'
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

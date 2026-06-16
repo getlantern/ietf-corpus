@@ -1,0 +1,8 @@
+document: rfc-4837
+kind: design-rationale
+summary: The MIB assigns a separate ifIndex to each OLT virtual link (LLID) rather than modeling the P2MP port as a single interface. The justification is that virtual links are sufficiently distinct — separate per-link error counters, different RTTs, different remote MAC addresses — making per-LLID management more useful and consistent with how IF-MIB, MAU-MIB, and Ether-like MIB already model them.
+section: "3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
