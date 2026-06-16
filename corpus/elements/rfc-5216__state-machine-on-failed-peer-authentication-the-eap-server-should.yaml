@@ -1,0 +1,9 @@
+document: rfc-5216
+kind: state-machine
+summary: On failed peer authentication the EAP server SHOULD send a TLS alert, MUST wait for the peer's EAP-Response, and then MUST send EAP-Failure if the response contains no data. On failed server authentication the peer SHOULD delete the session from cache, MAY send a TLS alert, MUST wait for the EAP server's reply, and the server MUST reply with EAP-Failure.
+section: 2.1.3
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

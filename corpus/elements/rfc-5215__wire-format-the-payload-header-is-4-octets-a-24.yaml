@@ -1,0 +1,9 @@
+document: rfc-5215
+kind: wire-format
+summary: 'The Payload Header is 4 octets: a 24-bit Ident field (network byte order) identifying the decoding configuration, a 2-bit Fragment type field (0=not fragmented, 1=start, 2=continuation, 3=end), a 2-bit Vorbis Data Type field (0=raw, 1=packed config, 2=legacy comment, 3=reserved), and a 4-bit packet count field (max 15 packets; set to 0 for fragmented data).'
+section: "2.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

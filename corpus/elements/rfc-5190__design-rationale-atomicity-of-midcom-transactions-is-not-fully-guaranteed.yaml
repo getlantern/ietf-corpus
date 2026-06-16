@@ -1,0 +1,8 @@
+document: rfc-5190
+kind: design-rationale
+summary: 'Atomicity of MIDCOM transactions is not fully guaranteed when mapped to SNMP, since configuration transactions may require multiple SNMP SET operations. However, the MIB still provides sufficient atomicity for RFC 3304 requirements: during non-atomic monitoring transactions, the middlebox notifies the client of all state changes so the client can reconcile or repeat the query.'
+section: 4.2.4
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

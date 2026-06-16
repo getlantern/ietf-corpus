@@ -1,0 +1,9 @@
+document: rfc-5216
+kind: normative-requirement
+summary: When an EAP-TLS peer receives an EAP-Request with the M (More fragments) bit set, it MUST respond with an EAP-Response of EAP-Type=EAP-TLS and no data as a fragment ACK. The EAP server MUST wait for this ACK before sending the next fragment and MUST increment the Identifier for each fragment.
+section: 2.1.5
+rfc2119_level: MUST
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

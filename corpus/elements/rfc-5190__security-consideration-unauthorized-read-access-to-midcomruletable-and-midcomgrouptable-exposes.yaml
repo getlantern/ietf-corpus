@@ -1,0 +1,9 @@
+document: rfc-5190
+kind: security-consideration
+summary: Unauthorized read access to midcomRuleTable and midcomGroupTable exposes information about existing firewall pinholes and NAT sessions, enabling targeted attacks. VACM SHOULD be configured so each MIDCOM client can only read entries it owns, and monitoring applications with broader read access SHOULD be granted only the minimum necessary scope.
+section: "10.3"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

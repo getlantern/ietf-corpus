@@ -1,0 +1,8 @@
+document: rfc-5191
+kind: design-rationale
+summary: The PAA may optionally remain stateless in response to a PCI by sending an initial PAR without an EAP-Payload and without starting a retransmission timer. This shifts the retry burden to the PaC (which retransmits PCI until it receives a second PAR), preventing resource exhaustion at the PAA from spoofed PCI floods.
+section: "4.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-5215
+kind: normative-requirement
+summary: In case of fragment loss, the client MUST discard all remaining Vorbis fragments associated with a fragmented packet and decode the incomplete packet. Fragments with continuation type (F=2) or end type (F=3) received without a corresponding start fragment (F=1) MUST be dropped.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

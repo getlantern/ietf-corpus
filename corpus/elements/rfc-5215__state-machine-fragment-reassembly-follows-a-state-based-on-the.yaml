@@ -1,0 +1,9 @@
+document: rfc-5215
+kind: state-machine
+summary: 'Fragment reassembly follows a state based on the Fragment type field: a packet with F=1 (Start) begins a fragment sequence; F=2 (Continuation) extends it; F=3 (End) completes it. If any fragment is lost, all remaining fragments for that Vorbis packet must be discarded.'
+section: "5"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

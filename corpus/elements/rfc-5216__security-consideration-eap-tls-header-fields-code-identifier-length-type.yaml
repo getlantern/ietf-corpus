@@ -1,0 +1,9 @@
+document: rfc-5216
+kind: security-consideration
+summary: EAP-TLS header fields (Code, Identifier, Length, Type, Flags) are not integrity-protected by TLS, so an attacker can modify them. Adding data beyond the Length field could cause buffer overruns. Modifying the Type field could substitute a different TLS-based EAP method, enabling a downgrade attack if the alternative uses the same key derivation formula.
+section: "5.5"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

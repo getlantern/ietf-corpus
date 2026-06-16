@@ -1,0 +1,9 @@
+document: rfc-5190
+kind: state-machine
+summary: 'midcomRuleOperStatus tracks a policy rule through states: initializing, transient (processing), error (request rejected), reserved(7), enabled(8), timedOut(9), and terminated(11). Writing reserve(1) to midcomRuleAdminStatus initiates a PRR transaction; writing enable(2) initiates a PER transaction. A lifetime of 0 returned in a notification signals failure.'
+section: 5.1.1
+topics:
+    - snmp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

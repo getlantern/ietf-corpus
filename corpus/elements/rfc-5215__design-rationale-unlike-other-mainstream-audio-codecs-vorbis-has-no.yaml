@@ -1,0 +1,9 @@
+document: rfc-5215
+kind: design-rationale
+summary: Unlike other mainstream audio codecs, Vorbis has no statically configured probability model; all entropy decoding configuration (VQ and Huffman models) must be transmitted to the decoder as codebook headers before any audio can be decoded. This necessitates special in-band and out-of-band delivery mechanisms for configuration data in RTP.
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

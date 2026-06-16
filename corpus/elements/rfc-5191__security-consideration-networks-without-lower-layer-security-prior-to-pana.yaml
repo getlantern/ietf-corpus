@@ -1,0 +1,9 @@
+document: rfc-5191
+kind: security-consideration
+summary: Networks without lower-layer security prior to PANA MUST use key-generating EAP methods. The PANA_AUTH_KEY is derived to be session-unique by incorporating nonces and message bodies, cryptographically separating it from the MSK. Per-packet data-traffic ciphering can be enabled post-authentication using keys derived from the PANA SA.
+section: "11.4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-5191
+kind: security-consideration
+summary: The initial PANA-Auth-Request/Answer exchange is unauthenticated and vulnerable to spoofing. The PAA mitigates DoS by minimizing state creation in the initial exchange (optionally omitting EAP-Payload in the first PAR and not retransmitting it). Rate-limiting of incoming PCI messages is also recommended.
+section: "11.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

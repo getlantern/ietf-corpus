@@ -1,0 +1,10 @@
+document: rfc-5216
+kind: normative-requirement
+summary: An EAP-TLS peer configured for privacy MUST negotiate a TLS ciphersuite supporting confidentiality and MUST provide a client certificate list containing no entries in the initial TLS handshake. The server supporting privacy MUST NOT treat an empty certificate list as a terminal condition and MUST bring up the session then send hello_request.
+section: 2.1.4
+rfc2119_level: MUST
+topics:
+    - tls
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

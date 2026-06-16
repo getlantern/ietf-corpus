@@ -1,0 +1,10 @@
+document: rfc-5216
+kind: design-rationale
+summary: MSK and EMSK are derived from the TLS master_secret via TLS PRF (a one-way function) so that the TLS master_secret cannot be recovered from the MSK or EMSK unless the PRF is broken. This provides key separation; however, compromise of the master_secret still compromises the MSK and EMSK.
+section: "2.3"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

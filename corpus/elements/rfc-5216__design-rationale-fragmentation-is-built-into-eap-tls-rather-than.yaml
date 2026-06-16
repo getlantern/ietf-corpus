@@ -1,0 +1,8 @@
+document: rfc-5216
+kind: design-rationale
+summary: Fragmentation is built into EAP-TLS rather than relying on lower-layer fragmentation because a single TLS certificate message can be up to 16 MB, far exceeding the RADIUS maximum packet size of 4096 octets or typical link MTUs. EAP's ACK-NAK model makes simple stop-and-wait fragmentation sufficient; no fragment offset field is needed because EAP Identifier provides sequencing.
+section: 2.1.5
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

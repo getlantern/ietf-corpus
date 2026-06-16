@@ -1,0 +1,9 @@
+document: rfc-5190
+kind: normative-requirement
+summary: To prevent idempotency problems when retransmitting SNMP SET requests for lifetime changes (midcomRuleLifetime, midcomRuleMaxIdleTime), it is RECOMMENDED to include snmpSetSerialNo in SET requests, or to set the SNMP retransmission timer lower than the smallest requested lifetime or idle time value. MIDCOM clients MAY avoid this entirely by disabling retransmissions.
+section: "6.5"
+rfc2119_level: RECOMMENDED
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

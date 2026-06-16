@@ -1,0 +1,8 @@
+document: rfc-5191
+kind: design-rationale
+summary: EAP messages are carried in PAR messages; PAN messages are primarily acknowledgments. As an optimization, the PaC MAY piggyback an EAP message in a PAN to reduce round trips. This optimization SHOULD NOT be used when generating the EAP response requires significant time (e.g., user input), to avoid triggering unnecessary PAR retransmissions.
+section: "4.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

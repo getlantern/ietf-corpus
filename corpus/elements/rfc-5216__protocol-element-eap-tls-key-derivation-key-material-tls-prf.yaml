@@ -1,0 +1,10 @@
+document: rfc-5216
+kind: protocol-element
+summary: 'EAP-TLS key derivation: Key_Material = TLS-PRF-128(master_secret, "client EAP encryption", client.random || server.random); MSK = Key_Material[0..63]; EMSK = Key_Material[64..127]; IV = TLS-PRF-64("", "client EAP encryption", client.random || server.random). The MSK is split into Enc-RECV-Key (MSK[0..31]) and Enc-SEND-Key (MSK[32..63]).'
+section: "2.3"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

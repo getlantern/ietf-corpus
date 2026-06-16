@@ -1,0 +1,9 @@
+document: rfc-5215
+kind: design-rationale
+summary: The recommended configuration delivery vector is the SDP 'configuration' attribute using a reliable transport, because the codebooks must be received before decoding can begin and in-band delivery over RTP (UDP) is unreliable. In-band delivery is retained as a fallback for mid-session configuration changes.
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-5191
+kind: design-rationale
+summary: PANA is UDP-based rather than TCP-based because it must run between the EAP peer and EAP authenticator at network-layer before link-layer or transport-layer security is established. A UDP transport avoids dependence on TCP state that may not be available during initial network access.
+section: "1"
+topics:
+    - security
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

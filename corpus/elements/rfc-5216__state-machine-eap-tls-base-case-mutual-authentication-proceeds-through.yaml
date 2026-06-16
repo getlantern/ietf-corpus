@@ -1,0 +1,9 @@
+document: rfc-5216
+kind: state-machine
+summary: 'EAP-TLS base-case mutual authentication proceeds through: EAP-Request/Identity → EAP-Response/Identity → EAP-TLS Start → client_hello → server_hello/certificate/certificate_request/server_hello_done → client certificate/client_key_exchange/certificate_verify/change_cipher_spec/finished → server change_cipher_spec/finished → empty EAP-Response → EAP-Success. Each side verifies the other''s certificate and finished message before the final EAP-Success is sent.'
+section: 2.1.1
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

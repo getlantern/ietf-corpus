@@ -1,0 +1,10 @@
+document: rfc-5215
+kind: normative-requirement
+summary: When the Ident field changes, indicating a stream configuration change, the client MUST have the correct configuration in advance. If the client detects a changed Ident value for which it lacks the configuration, it MUST NOT decode the associated raw Vorbis data until it fetches the correct Configuration.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

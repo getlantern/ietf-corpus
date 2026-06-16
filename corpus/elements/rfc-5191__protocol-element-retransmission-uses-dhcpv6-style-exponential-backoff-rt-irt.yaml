@@ -1,0 +1,8 @@
+document: rfc-5191
+kind: protocol-element
+summary: 'Retransmission uses DHCPv6-style exponential backoff: RT = IRT + RAND*IRT for the first retransmission; RT = 2*RTprev + RAND*RTprev subsequently, capped at MRT. RAND is uniformly distributed in [-0.1, +0.1]. PCI defaults: IRT=1s, MRT=120s, MRC=0, MRD=0. Request defaults: IRT=1s, MRT=30s, MRC=10, MRD=0.'
+section: "9.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

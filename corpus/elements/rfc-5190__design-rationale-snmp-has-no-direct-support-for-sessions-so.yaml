@@ -1,0 +1,9 @@
+document: rfc-5190
+kind: design-rationale
+summary: SNMP has no direct support for sessions, so MIDCOM sessions are modeled statically. Authentication and authorization are performed per-message using SNMPv3 (USM for authentication, VACM for access control) rather than per-session. Per-message security is overhead compared to per-session mechanisms, but it satisfies MIDCOM security requirements.
+section: "4.1"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

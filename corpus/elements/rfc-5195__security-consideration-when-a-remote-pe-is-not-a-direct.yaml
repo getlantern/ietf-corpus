@@ -1,0 +1,11 @@
+document: rfc-5195
+kind: security-consideration
+summary: 'When a remote PE is not a direct BGP peer, its information is relayed through a chain of BGP speakers. The trust relation MUST be transitive: each PE must trust its peers to only accept information from peers they themselves trust. BGP provides no mechanism to verify the original advertiser''s authorization, so this mechanism MUST only be used in environments with adequate trust relationships (e.g., a single provider network).'
+section: "6"
+rfc2119_level: MUST
+topics:
+    - security
+    - bgp
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
