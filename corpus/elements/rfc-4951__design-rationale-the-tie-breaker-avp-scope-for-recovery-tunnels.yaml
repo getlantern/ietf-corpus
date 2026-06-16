@@ -1,0 +1,6 @@
+document: rfc-4951
+kind: design-rationale
+summary: The Tie Breaker AVP scope for recovery tunnels is intentionally restricted to recovery tunnels for the same old tunnel being recovered, and must not affect non-recovery tunnels or recovery tunnels for other old tunnels. This scoping prevents a race condition where simultaneous failover by both peers would otherwise establish duplicate recovery tunnels.
+section: 3.2.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

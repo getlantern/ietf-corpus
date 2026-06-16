@@ -1,0 +1,7 @@
+document: rfc-4951
+kind: normative-requirement
+summary: During data channel reset, if an endpoint receives 'n' out-of-order but in-sequence packets, it MUST set the Nr value based on the Ns value of incoming packets as suggested in Appendix C of L2TPv3. If an endpoint lacks the D-bit capability, data channels using sequence numbers are non-recoverable and SHOULD be torn down via CDN.
+section: 3.2.3
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-4945
+kind: normative-requirement
+summary: For ID_FQDN, implementations MUST verify the ID payload against the dNSName field in SubjectAltName using case-insensitive string comparison; substring, wildcard, or regex matching MUST NOT be performed for this comparison. A mismatch MUST cause SA setup to be aborted.
+section: 3.1.2
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

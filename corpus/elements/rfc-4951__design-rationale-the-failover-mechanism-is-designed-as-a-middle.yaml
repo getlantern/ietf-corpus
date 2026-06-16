@@ -1,0 +1,8 @@
+document: rfc-4951
+kind: design-rationale
+summary: The failover mechanism is designed as a middle path between full active-standby state mirroring and complete tunnel re-establishment. Full mirroring adds significant performance and complexity overhead; full re-establishment increases service loss time as scale grows. The protocol recovers only the volatile stateful information (sequence numbers) that is hardest to reconstruct.
+section: "1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

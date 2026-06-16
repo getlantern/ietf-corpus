@@ -1,0 +1,8 @@
+document: rfc-4951
+kind: security-consideration
+summary: A spoofed SCCRQ with a Tunnel Recovery AVP can cause control channel termination if the authentication measures from Section 3.2.1 are not applied. Even with authentication, an attacker can enumerate operational tunnel IDs via repeated spoofed failover requests that fail authentication, with success probability 1/(2^16-1) for L2TPv2 and 1/(2^32-1) for L2TPv3.
+section: "8"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

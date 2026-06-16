@@ -1,0 +1,8 @@
+document: rfc-4944
+kind: wire-format
+summary: 'The LOWPAN_HC1 compressed header consists of a single 8-bit ''HC1 encoding'' byte followed by non-compressed inline fields. The encoding byte encodes: source address prefix/IID compression (bits 0-1), destination address prefix/IID compression (bits 2-3), Traffic Class and Flow Label (bit 4), Next Header type (bits 5-6: 00=inline, 01=UDP, 10=ICMP, 11=TCP), and HC2 present flag (bit 7). In the common case, an IPv6 header compresses from 40 octets to 2 octets.'
+section: "10.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

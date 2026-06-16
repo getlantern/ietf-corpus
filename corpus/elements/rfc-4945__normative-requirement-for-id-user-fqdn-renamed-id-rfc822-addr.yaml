@@ -1,0 +1,11 @@
+document: rfc-4945
+kind: normative-requirement
+summary: For ID_USER_FQDN (renamed ID_RFC822_ADDR in IKEv2), implementations MUST verify the ID payload against the rfc822Name field in SubjectAltName using case-insensitive string comparison. Substring, wildcard, or regex matching MUST NOT be performed; a mismatch MUST abort SA setup.
+section: 3.1.3
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

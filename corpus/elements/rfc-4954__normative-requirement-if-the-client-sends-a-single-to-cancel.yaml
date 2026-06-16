@@ -1,0 +1,10 @@
+document: rfc-4954
+kind: normative-requirement
+summary: If the client sends a single '*' to cancel the authentication exchange, the server MUST reject the AUTH command with a 501 reply. If the client uses an initial-response argument with a SASL mechanism where the client does not begin the exchange, the server MUST also reject with a 501 reply.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

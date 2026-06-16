@@ -1,0 +1,10 @@
+document: rfc-4945
+kind: normative-requirement
+summary: Implementations SHOULD NOT use IP addresses as the IKE ID due to NAT traversal problems and IP verification complexity. IP address identity should only be considered when the peer IP is static, not behind NAT, and the administrator intends to verify source address against the certificate.
+section: 3.1.1
+rfc2119_level: SHOULD NOT
+topics:
+    - ipsec
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

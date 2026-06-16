@@ -1,0 +1,10 @@
+document: rfc-4945
+kind: normative-requirement
+summary: Implementations SHOULD NOT generate CERTREQs with Certificate Type 'CRL' or 'ARL' because ISAKMP cannot support payloads over approximately 64K, which is too small for many CRLs. Acquisition of revocation material SHOULD occur out-of-band of IKE.
+section: 3.2.3
+rfc2119_level: SHOULD NOT
+topics:
+    - ipsec
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

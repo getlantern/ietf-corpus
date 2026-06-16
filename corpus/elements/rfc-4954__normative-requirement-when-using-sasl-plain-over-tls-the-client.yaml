@@ -1,0 +1,12 @@
+document: rfc-4954
+kind: normative-requirement
+summary: When using SASL PLAIN over TLS, the client MUST verify the server certificate per RFC 3280 and MUST check the server hostname against the server's identity in the certificate (using subjectAltName dNSName if present, with wildcard and case-insensitive matching) before attempting authentication. If either check fails, the client MUST NOT attempt PLAIN authentication.
+section: "14"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

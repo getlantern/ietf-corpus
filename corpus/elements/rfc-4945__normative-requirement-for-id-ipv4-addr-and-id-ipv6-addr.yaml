@@ -1,0 +1,12 @@
+document: rfc-4945
+kind: normative-requirement
+summary: For ID_IPV4_ADDR and ID_IPV6_ADDR, implementations MUST verify by binary comparison that the ID payload address matches the iPAddress field in the certificate's SubjectAltName extension, with this verification enabled by default. A mismatch MUST be treated as an error and security association setup MUST be aborted.
+section: 3.1.1
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - pkix
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

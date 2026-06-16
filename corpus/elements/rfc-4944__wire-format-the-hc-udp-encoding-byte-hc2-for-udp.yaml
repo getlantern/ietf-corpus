@@ -1,0 +1,9 @@
+document: rfc-4944
+kind: wire-format
+summary: 'The HC_UDP encoding byte (HC2 for UDP) compresses: source port (bit 0, compressed to 4-bit offset from 61616/0xF0B0), destination port (bit 1, same scheme), and length (bit 2, derivable from IPv6 Payload Length). The UDP checksum is always carried in full. The compressed UDP header takes 4 octets instead of 8.'
+section: "10.2"
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

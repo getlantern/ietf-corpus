@@ -1,0 +1,10 @@
+document: rfc-4960
+kind: normative-requirement
+summary: 'The Verification Tag in every outgoing SCTP packet MUST be set to the Initiate Tag received from the peer, except: INIT packets carry a zero tag, SHUTDOWN COMPLETE with T-bit copies the SHUTDOWN ACK tag, and ABORT may copy the tag from the packet that triggered it.'
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

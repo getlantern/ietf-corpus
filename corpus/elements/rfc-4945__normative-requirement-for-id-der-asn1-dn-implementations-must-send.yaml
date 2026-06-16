@@ -1,0 +1,10 @@
+document: rfc-4945
+kind: normative-requirement
+summary: For ID_DER_ASN1_DN, implementations MUST send the entire Subject DN in the ID payload such that binary comparison with the certificate Subject will succeed. Implementations MUST NOT populate ID with an empty Subject, and MUST support SPD matching on C, CN, O, and OU attributes.
+section: 3.1.5
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

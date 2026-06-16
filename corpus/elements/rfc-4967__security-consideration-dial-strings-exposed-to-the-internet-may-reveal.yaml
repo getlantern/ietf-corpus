@@ -1,0 +1,11 @@
+document: rfc-4967
+kind: security-consideration
+summary: Dial strings exposed to the Internet may reveal internal network details or service invocations that could allow attackers to exploit PSTN or Internet systems. Dial strings normally SHOULD NOT be sent beyond the domain of the UAC, and if sent across the Internet, SHOULD be protected against eavesdropping with TLS per RFC 3261.
+section: "6"
+rfc2119_level: SHOULD NOT
+topics:
+    - sip
+    - security
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4954
+kind: normative-requirement
+summary: Servers and clients MUST reject any character not explicitly allowed by the BASE64 alphabet, and MUST reject any BASE64 sequence containing the pad character '=' anywhere other than the end of the string. If the server cannot BASE64-decode a client response, it MUST reject the AUTH command with a 501 reply (enhanced status code 5.5.2).
+section: "4"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

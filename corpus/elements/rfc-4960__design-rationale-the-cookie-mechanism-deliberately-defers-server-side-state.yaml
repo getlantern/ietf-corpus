@@ -1,0 +1,9 @@
+document: rfc-4960
+kind: design-rationale
+summary: The cookie mechanism deliberately defers server-side state allocation (TCB creation) until the COOKIE ECHO is verified. This was chosen to resist denial-of-service attacks analogous to TCP SYN flooding without requiring stateless cookie generation on every packet.
+section: 5.1.3
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

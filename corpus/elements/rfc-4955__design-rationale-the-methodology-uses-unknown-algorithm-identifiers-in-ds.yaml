@@ -1,0 +1,9 @@
+document: rfc-4955
+kind: design-rationale
+summary: The methodology uses unknown algorithm identifiers in DS records to hide experimental DNSSEC changes from standard security-aware resolvers. Because RFC 4035 requires validators to treat zones with only unknown DS algorithms as unsigned (rather than bogus), experiments can run on real public zones without breaking standard DNSSEC resolution.
+section: "4"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

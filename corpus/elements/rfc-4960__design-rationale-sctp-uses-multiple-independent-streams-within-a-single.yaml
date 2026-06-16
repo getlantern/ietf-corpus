@@ -1,0 +1,8 @@
+document: rfc-4960
+kind: design-rationale
+summary: SCTP uses multiple independent streams within a single association to eliminate head-of-line blocking inherent in TCP. A blocked stream waiting for the next in-sequence message does not prevent delivery on other streams, making SCTP suitable for multiplexed PSTN signaling and similar applications.
+section: "1.1"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4960
+kind: normative-requirement
+summary: The Initiate Tag in INIT and INIT ACK MUST NOT be zero. If a received INIT contains a zero Initiate Tag, the receiver MUST treat it as an error and close the association by sending an ABORT; if the INIT ACK contains a zero tag, the receiver MUST destroy the TCB.
+section: 3.3.2
+rfc2119_level: MUST NOT
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

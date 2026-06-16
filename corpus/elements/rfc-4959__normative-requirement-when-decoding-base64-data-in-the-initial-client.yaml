@@ -1,0 +1,10 @@
+document: rfc-4959
+kind: normative-requirement
+summary: When decoding BASE64 data in the initial client response, decoding errors MUST be treated as IMAP would handle them in any normal SASL client response. The server should check for characters not in the BASE64 alphabet and pad characters not at the end of the string.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

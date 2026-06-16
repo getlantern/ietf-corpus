@@ -1,0 +1,10 @@
+document: rfc-4954
+kind: normative-requirement
+summary: When a SASL security layer is negotiated, the SMTP protocol is reset to its initial state. The server MUST discard any knowledge obtained from the client (e.g., EHLO argument) not derived from the SASL negotiation itself, and the client MUST likewise discard server-provided knowledge such as the list of service extensions.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

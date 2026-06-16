@@ -1,0 +1,10 @@
+document: rfc-4959
+kind: security-consideration
+summary: Server implementations that enforce line length limits MUST be aware that the addition of the initial response parameter to AUTHENTICATE may increase the maximum line length that IMAP parsers may expect to support. Server implementations MUST be able to receive the largest possible initial client response that their supported mechanisms might receive.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

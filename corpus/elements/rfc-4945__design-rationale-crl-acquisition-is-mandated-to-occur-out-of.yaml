@@ -1,0 +1,9 @@
+document: rfc-4945
+kind: design-rationale
+summary: CRL acquisition is mandated to occur out-of-band of IKE because ISAKMP does not support Certificate Payload sizes over approximately 64K (too small for many CRLs) and UDP fragmentation occurs at much smaller sizes. CRLDistributionPoints or AuthorityInfoAccess extensions should provide pointers to revocation material instead.
+section: 3.2.3
+topics:
+    - ipsec
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4944
+kind: design-rationale
+summary: Mesh delivery is implemented at the LoWPAN layer (below IP) rather than using IP-layer addressing, because this enables mesh delivery for any payload (not just IPv6), allows header compression of IP addresses via layer-2 address inference, and reduces routing table size by using 16-bit or 64-bit 802.15.4 addresses instead of 128-bit IPv6 addresses.
+section: A
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

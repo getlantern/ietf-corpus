@@ -1,0 +1,9 @@
+document: rfc-4945
+kind: design-rationale
+summary: An empty Certification Authority field in CERTREQ was standardized to handle large-scale deployments where a gateway has hundreds of trust anchors but cannot identify the initiator before message 5. Sending all possible CAs would cause processing delays, bandwidth waste, and UDP fragmentation.
+section: 3.2.7.2
+topics:
+    - ipsec
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

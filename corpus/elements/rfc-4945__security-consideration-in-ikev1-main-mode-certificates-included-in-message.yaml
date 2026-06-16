@@ -1,0 +1,9 @@
+document: rfc-4945
+kind: security-consideration
+summary: In IKEv1 Main Mode, certificates included in message 2 are sent before encryption, violating the identity protection feature. Implementations may wish to delay sending CERT payloads until messages 5 and 6, which offer privacy protection.
+section: "7.2"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4944
+kind: security-consideration
+summary: Interface Identifiers derived from EUI-64 MAC addresses have no protection from duplication through accident or forgery. Neighbor Discovery is susceptible to the threats in RFC 3756. Mesh routing introduces additional ad hoc routing threats per Karlof & Wagner. Users are urged to use IEEE 802.15.4 link-layer AES security (authentication or encryption), though key management is not specified by 802.15.4. FFDs communicating with off-link IPv6 peers should use end-to-end security (IPsec, TLS, etc.).
+section: "13"
+topics:
+    - security
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

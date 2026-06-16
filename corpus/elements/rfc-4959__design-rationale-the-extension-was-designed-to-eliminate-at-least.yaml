@@ -1,0 +1,9 @@
+document: rfc-4959
+kind: design-rationale
+summary: The extension was designed to eliminate at least one complete round trip at the beginning of an IMAP session, which is particularly undesirable when round-trip costs are high. Prior to this extension, the IMAP SASL profile always required at least one complete round trip because it did not support an initial client response argument.
+section: "1"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
