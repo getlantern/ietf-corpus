@@ -1,0 +1,8 @@
+document: rfc-3987
+kind: design-rationale
+summary: IRI equivalence relies on pre-normalized (NFC) storage rather than normalizing at comparison time because it is unknown how a particular sequence of characters is being treated, and third-party normalization could silently alter identifiers in ways that change their meaning.
+section: 5.3.2.2
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

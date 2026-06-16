@@ -1,0 +1,9 @@
+document: rfc-3987
+kind: design-rationale
+summary: 'UTF-8 is required as the sole encoding for IRI-to-URI conversion (and URI-to-IRI conversion) because using any other encoding would make round-trip identity impossible: decoding iso-8859-1 percent-encoded sequences produces a different URI when the result is later re-encoded as UTF-8.'
+section: "3.2"
+topics:
+    - ip
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

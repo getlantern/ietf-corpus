@@ -1,0 +1,8 @@
+document: rfc-3994
+kind: state-machine
+summary: 'The message composer operates in two states: ''idle'' (default) and ''active''. Transitions occur on composing start (idle→active, sends ''active'' status), idle timeout without activity (active→idle, sends ''idle'' status), content message sent (active→idle, no ''idle'' message needed), and refresh timeout (active→active, sends ''active'' refresh).'
+section: "3.2"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

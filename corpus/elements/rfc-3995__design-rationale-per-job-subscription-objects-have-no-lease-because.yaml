@@ -1,0 +1,6 @@
+document: rfc-3995
+kind: design-rationale
+summary: Per-Job Subscription Objects have no lease because their lifetime is tied exactly to the associated Job Object, eliminating the need for a separate renewal mechanism. Per-Printer Subscription Objects require a lease-and-renewal model because they have no natural termination event and must be explicitly managed to avoid accumulating stale subscriptions on the Printer.
+section: "20"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

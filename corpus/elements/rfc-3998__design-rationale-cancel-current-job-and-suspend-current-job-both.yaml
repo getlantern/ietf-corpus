@@ -1,0 +1,6 @@
+document: rfc-3998
+kind: design-rationale
+summary: 'Cancel-Current-Job and Suspend-Current-Job both expose a race condition on shared printers: between the user issuing the operation and its acceptance, the current job may change. The optional ''job-id'' attribute mitigates this race by verifying the intended job is still current before acting.'
+section: "4.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

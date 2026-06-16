@@ -1,0 +1,7 @@
+document: rfc-3998
+kind: normative-requirement
+summary: Deactivate-Printer atomically performs Disable-Printer and Pause-Printer-After-Current-Job, then immediately rejects all requests except Activate-Printer, query operations (Get-*), Send-Document, and Send-URI, returning 'server-error-service-unavailable'. The Printer MUST immediately set the 'deactivated' value in printer-state-reasons.
+section: 3.4.1
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,7 @@
+document: rfc-3998
+kind: normative-requirement
+summary: For Cancel-Current-Job, if the client supplies 'job-id' and the identified job is not the current job (not in 'processing' or 'processing-stopped' state), the Printer MUST reject the request with 'client-error-not-possible'. If no job-id is supplied and no current job exists, the Printer MUST also return 'client-error-not-possible'.
+section: "4.2"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

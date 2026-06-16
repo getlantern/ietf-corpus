@@ -1,0 +1,10 @@
+document: rfc-4001
+kind: design-rationale
+summary: InetAutonomousSystemNumber uses Unsigned32 without a range restriction (rather than 0..65535) because AS numbers are expected to be extended from 16 to 32 bits, and forward-compatible type design avoids future MIB revision.
+section: "3"
+topics:
+    - snmp
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

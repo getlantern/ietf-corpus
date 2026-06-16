@@ -1,0 +1,9 @@
+document: rfc-3987
+kind: security-consideration
+summary: Because some percent-encodings cannot be unambiguously decoded (e.g., %FC could be iso-8859-1 or iso-8859-5), URI-to-IRI conversion that guesses encodings can create IRIs that re-encode to a different URI, breaking identity. This is why only UTF-8 is permitted for URI-to-IRI conversion.
+section: "8"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
