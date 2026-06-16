@@ -1,0 +1,11 @@
+document: rfc-4601
+kind: security-consideration
+summary: PIM Register and Register-Stop messages are sent as unicast and are vulnerable to forgery by any IP-spoofing attacker. A forged Register-Stop can suppress legitimate multicast traffic; a forged Register can cause the RP to create spurious multicast state. IPsec with AH or ESP SHOULD be configured between each DR and RP pair.
+section: 6.1.2
+topics:
+    - multicast
+    - routing
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

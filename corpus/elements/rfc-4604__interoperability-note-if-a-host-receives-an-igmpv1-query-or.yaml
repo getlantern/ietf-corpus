@@ -1,0 +1,8 @@
+document: rfc-4604
+kind: interoperability-note
+summary: If a host receives an IGMPv1 Query or an IGMPv2/MLDv1 General Query, it reverts to older-version compatibility mode, stops reporting source-specific subscriptions, and reports interest in SSM addresses without source qualification — causing SSM semantics to break. This occurs only if the router is not SSM-aware or if host and router disagree on the SSM address range.
+section: 2.2.3
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

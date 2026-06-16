@@ -1,0 +1,10 @@
+document: rfc-4598
+kind: security-consideration
+summary: Confidentiality, integrity protection, and authentication are not provided by this payload format; they must be provided by an external mechanism such as SRTP (RFC 3711). The format is designed so malformed frames can be detected and discarded by decoders, which conceal errors in audio output until a valid frame is found, preventing crashes from malformed or malicious data.
+section: "6"
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

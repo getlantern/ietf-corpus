@@ -1,0 +1,9 @@
+document: rfc-4607
+kind: security-consideration
+summary: SSM does not prevent source address spoofing; an attacker can forge a source address to inject packets onto a channel. Applications requiring strong authentication MUST NOT assume all packets on a channel were sent by the requested source without higher-layer authentication such as IPsec AH.
+section: "7.4"
+topics:
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

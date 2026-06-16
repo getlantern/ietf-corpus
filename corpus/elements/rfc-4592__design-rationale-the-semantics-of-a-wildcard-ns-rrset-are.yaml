@@ -1,0 +1,9 @@
+document: rfc-4592
+kind: design-rationale
+summary: The semantics of a wildcard NS RRSet are left explicitly undefined. Prior to DNSSEC it appeared workable, but DNSSEC exposes that synthesizing an NS RRSet in a zone that has delegated away the name is unauthorized. Outright banning is also untenable because the DNS protocol defines no handling for 'illegal' data, and operational deployments exist. The issue is deferred until consensus forms.
+section: "4.2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

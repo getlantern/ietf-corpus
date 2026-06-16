@@ -1,0 +1,8 @@
+document: rfc-4592
+kind: interoperability-note
+summary: For SRV records, the 'Name' field in the SRV RDATA (the domain the RR refers to) should not be confused with the owner name. The owner '_Service._Proto.*.example.' is not a wildcard domain name; '*.example.' as a substring of the owner has no wildcard significance. Queries synthesized via '*.example.' will match only if no SRV RRSet exists at that wildcard.
+section: "4.5"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

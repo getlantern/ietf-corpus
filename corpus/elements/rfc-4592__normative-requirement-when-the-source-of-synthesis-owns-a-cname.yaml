@@ -1,0 +1,9 @@
+document: rfc-4592
+kind: normative-requirement
+summary: When the source of synthesis owns a CNAME RRSet and QTYPE does not match CNAME, the server must copy the CNAME RR into the answer section (with the owner rewritten to QNAME), update QNAME to the canonical name in the CNAME, and restart at step 1. This mirrors the exact-match CNAME processing in part 'a'.
+section: 3.3.3
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

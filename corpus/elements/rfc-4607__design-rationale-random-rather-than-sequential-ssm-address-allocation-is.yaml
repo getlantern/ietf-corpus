@@ -1,0 +1,8 @@
+document: rfc-4607
+kind: design-rationale
+summary: Random rather than sequential SSM address allocation is required because the IP-to-MAC mapping on Ethernet does not include the source address. Sequential allocation would cause many channels to share the same link-layer multicast address, delivering traffic for one channel to unintended subscribers.
+section: "4.3"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

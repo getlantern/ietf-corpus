@@ -1,0 +1,10 @@
+document: rfc-4601
+kind: normative-requirement
+summary: If a router needs to send a Join/Prune or Assert message on an interface on which it has not yet sent a Hello, it MUST immediately send the relevant Hello first, then the Join/Prune or Assert. Neighbors discard Join/Prune and Assert messages from routers from which they have not yet received a Hello.
+section: 4.3.1
+rfc2119_level: MUST
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

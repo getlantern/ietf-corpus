@@ -1,0 +1,9 @@
+document: rfc-4592
+kind: normative-requirement
+summary: 'A DNAME RRSet owned by a wildcard domain name is to be avoided or outright rejected. Such a record causes non-deterministic synthesis: different caches receive different DNAME rules, destroying cache coherency. Additionally, it could synthesize a DNAME at a domain that violates DNAME''s own restriction that no subdomain exist below a DNAME owner.'
+section: "4.4"
+rfc2119_level: SHOULD NOT
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

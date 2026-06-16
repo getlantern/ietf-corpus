@@ -1,0 +1,8 @@
+document: rfc-4604
+kind: design-rationale
+summary: EXCLUDE mode (MODE_IS_EXCLUDE, CHANGE_TO_EXCLUDE_MODE) is prohibited for SSM addresses because EXCLUDE semantics require knowledge of all sources, which conflicts with the SSM model where receivers must explicitly specify sources. An SSM-aware router ignores such records to prevent non-source-specific semantics from being applied to SSM addresses.
+section: 2.2.2
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

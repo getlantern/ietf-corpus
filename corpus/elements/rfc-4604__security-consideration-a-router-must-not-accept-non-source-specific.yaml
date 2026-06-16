@@ -1,0 +1,9 @@
+document: rfc-4604
+kind: security-consideration
+summary: A router must not accept non-source-specific reception requests (e.g., IGMPv1/v2 or MLDv1 reports) for SSM destination addresses. If a router were to revert to compatibility mode upon receiving such a report, an attacker could exploit this to deny SSM service to all IGMPv3-capable hosts on the same link.
+section: "4"
+topics:
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

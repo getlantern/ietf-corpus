@@ -1,0 +1,10 @@
+document: rfc-4607
+kind: security-consideration
+summary: IPsec AH and ESP can be used to secure SSM traffic using a multicast-capable IPsec implementation. For legacy RFC 2401 IPsec, two senders using the same SSM destination address and SPI will collide in the SAD, potentially preventing simultaneous reception of IPsec-protected traffic from both sources.
+section: "7.1"
+topics:
+    - multicast
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

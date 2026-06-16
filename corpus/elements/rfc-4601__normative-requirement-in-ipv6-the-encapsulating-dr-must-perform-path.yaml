@@ -1,0 +1,11 @@
+document: rfc-4601
+kind: normative-requirement
+summary: In IPv6, the encapsulating DR MUST perform Path MTU Discovery and MUST send an ICMP Packet Too Big message if a packet exceeds the effective tunnel MTU. If the effective tunnel MTU falls below 1280 bytes, the DR MUST send Fragmentation Required messages with MTU 1280 and MUST fragment PIM Register messages using an IPv6 fragmentation header between the outer IPv6 header and the PIM Register header.
+section: 4.4.1
+rfc2119_level: MUST
+topics:
+    - multicast
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4601
+kind: state-machine
+summary: 'The per-(S,G) Register state machine at a DR has four states: NoInfo (initial), Join (register tunnel active, encapsulating to RP), Join-Pending (tunnel pruned, Register-Stop Timer running, Null-Register imminent), and Prune (Register-Stop received, tunnel inactive). Transitions are driven by CouldRegister changes, Register-Stop receipt, Register-Stop Timer expiry, and RP changes.'
+section: 4.4.1
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

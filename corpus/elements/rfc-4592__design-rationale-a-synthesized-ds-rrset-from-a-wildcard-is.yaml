@@ -1,0 +1,9 @@
+document: rfc-4592
+kind: design-rationale
+summary: 'A synthesized DS RRSet from a wildcard is meaningless: without a corresponding NS delegation (whose wildcard semantics are undefined), there is no delegation point and therefore no DNSKEY RRSet to validate against. The DS is harmless but serves no purpose.'
+section: "4.6"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

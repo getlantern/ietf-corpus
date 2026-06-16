@@ -1,0 +1,11 @@
+document: rfc-4601
+kind: security-consideration
+summary: PIM link-local messages (Hello, Join/Prune, Assert, Bootstrap) can be forged by on-link attackers to manipulate DR election, inject spurious multicast state, or subvert assert winners, causing traffic black-holes or denial of service. IPsec AH or ESP in authentication mode SHOULD be used with a suitable group security association to protect these messages.
+section: 6.1.1
+topics:
+    - multicast
+    - routing
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4601
+kind: design-rationale
+summary: The SPTbit and the conditional logic in Update_SPTbit() are designed to prevent temporary black-holes during the RP-tree to SPT transition. Without it, a router might send Prune(S,G,rpt) before upstream (S,G) state has fully propagated, resulting in a window where traffic is neither delivered via the RPT nor the SPT.
+section: 4.2.2
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
