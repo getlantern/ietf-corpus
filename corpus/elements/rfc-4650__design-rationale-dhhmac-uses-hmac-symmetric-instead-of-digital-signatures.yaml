@@ -1,0 +1,9 @@
+document: rfc-4650
+kind: design-rationale
+summary: DHHMAC uses HMAC (symmetric) instead of digital signatures (asymmetric) for DH half-key authentication to eliminate PKI dependency. This trades non-repudiation for lower implementation complexity, faster computation (HMAC-SHA1 is more efficient than RSA), and applicability where only pre-shared keys are provisioned.
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

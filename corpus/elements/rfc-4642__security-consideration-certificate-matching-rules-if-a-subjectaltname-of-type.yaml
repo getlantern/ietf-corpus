@@ -1,0 +1,11 @@
+document: rfc-4642
+kind: security-consideration
+summary: 'Certificate matching rules: if a subjectAltName of type dNSName is present it SHOULD be used; matching is case-insensitive; a ''*'' wildcard MAY be used as the leftmost component; multiple names in the certificate are acceptable if any one matches. If matching fails, the client SHOULD ask for user confirmation or terminate with QUIT.'
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

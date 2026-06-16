@@ -1,0 +1,9 @@
+document: rfc-4648
+kind: security-consideration
+summary: If non-alphabet characters are ignored rather than rejected, a covert channel is created allowing information to be leaked. Ignored non-alphabet characters can also be used to bypass string equality comparisons or to trigger implementation bugs. Similarly, case variation in base16/base32 can leak information.
+section: "12"
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

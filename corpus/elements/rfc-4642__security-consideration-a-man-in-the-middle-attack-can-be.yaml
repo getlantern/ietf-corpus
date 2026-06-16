@@ -1,0 +1,9 @@
+document: rfc-4642
+kind: security-consideration
+summary: A man-in-the-middle attack can be launched by deleting the STARTTLS capability label from the CAPABILITIES response, preventing TLS negotiation. Clients can partially protect against this by recording that a server offers TLS and generating an alarm if it does not appear in subsequent sessions.
+section: "5"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

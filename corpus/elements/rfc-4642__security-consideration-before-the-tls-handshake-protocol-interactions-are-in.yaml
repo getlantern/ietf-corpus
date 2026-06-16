@@ -1,0 +1,10 @@
+document: rfc-4642
+kind: security-consideration
+summary: Before the TLS handshake, protocol interactions are in the clear and may be modified by an active attacker. Clients and servers MUST discard sensitive knowledge obtained prior to TLS establishment upon the establishment of a security layer, and SHOULD re-issue CAPABILITIES afterward.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

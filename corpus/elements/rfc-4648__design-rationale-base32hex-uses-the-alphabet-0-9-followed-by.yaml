@@ -1,0 +1,8 @@
+document: rfc-4648
+kind: design-rationale
+summary: Base32hex uses the alphabet 0–9 followed by A–V specifically because this preserves sort order when encoded data is compared bit-wise, a property the standard base64 and base32 alphabets lack. This is required for DNSSEC NSEC3 authenticated denial of existence.
+section: "7"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

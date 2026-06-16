@@ -1,0 +1,9 @@
+document: rfc-4639
+kind: security-consideration
+summary: Several read-write and read-create objects in this MIB can affect device operation and security, including docsDevResetNow (can reset the device), docsDevSwAdminStatus and related software upgrade objects (can load arbitrary firmware), and docsDevFilterLLCTable/docsDevFilterIpTable entries (can alter traffic filtering policy). Operators are advised to use SNMPv3 with authentication and privacy.
+section: "6"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

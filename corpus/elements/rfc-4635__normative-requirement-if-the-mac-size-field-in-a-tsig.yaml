@@ -1,0 +1,10 @@
+document: rfc-4635
+kind: normative-requirement
+summary: If the MAC size field in a TSIG RR is greater than the HMAC output length, this case MUST NOT be generated and, if received, MUST cause the packet to be dropped and RCODE 1 (FORMERR) to be returned.
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

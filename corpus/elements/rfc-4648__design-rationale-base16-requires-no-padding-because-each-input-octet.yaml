@@ -1,0 +1,6 @@
+document: rfc-4648
+kind: design-rationale
+summary: Base16 requires no padding because each input octet maps to exactly 2 output characters with no leftover bits, unlike base64 (6 bits/char from 8-bit input) and base32 (5 bits/char from 8-bit input) which can leave unused bits in the final quantum.
+section: "8"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4639
+kind: security-consideration
+summary: docsDevNmAccessTable provides only minimal SNMP access security via community strings and IP address matching, and is deprecated. Implementors should use SNMPv3 USM/VACM (RFC 3414, RFC 3415) or RFC 3584 coexistence MIBs for proper access control. Community strings read back as zero-length to avoid credential disclosure.
+section: "6"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

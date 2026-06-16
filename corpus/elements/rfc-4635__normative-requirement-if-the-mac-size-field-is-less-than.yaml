@@ -1,0 +1,10 @@
+document: rfc-4635
+kind: normative-requirement
+summary: If the MAC size field is less than the larger of 10 octets and half the length of the hash function in use (except for permitted zero-MAC TSIG error messages), this case MUST NOT be generated and MUST cause the packet to be dropped with RCODE 1 (FORMERR).
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

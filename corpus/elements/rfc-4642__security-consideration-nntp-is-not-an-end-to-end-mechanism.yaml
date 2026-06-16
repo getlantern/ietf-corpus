@@ -1,0 +1,9 @@
+document: rfc-4642
+kind: security-consideration
+summary: NNTP is not an end-to-end mechanism. TLS confidentiality on one NNTP link does not secure the full Netnews article delivery chain, which may traverse multiple servers. Client authentication of an article's origin at a server does not imply the client authenticated the article when it first received it.
+section: "5"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

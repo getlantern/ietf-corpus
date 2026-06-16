@@ -1,0 +1,9 @@
+document: rfc-4631
+kind: design-rationale
+summary: Retransmission uses exponential backoff where successive intervals grow by factor (1 + lmpNbrRetransmitDelta), implementing RFC 2914 congestion control principles. The lmpNbrRetryLimit of 0 means unlimited retransmission, which is an explicit design choice for links where eventual delivery must be guaranteed.
+section: "9"
+topics:
+    - routing
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

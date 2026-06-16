@@ -1,0 +1,9 @@
+document: rfc-4650
+kind: security-consideration
+summary: HMAC authentication of the exchanged Diffie-Hellman half-keys is essential to prevent man-in-the-middle attacks. Without HMAC, an attacker could substitute its own DH half-keys and establish separate sessions with each endpoint, compromising the TGK. Rapid HMAC checking before DH operations also provides limited DoS protection against message spam.
+section: "5.2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

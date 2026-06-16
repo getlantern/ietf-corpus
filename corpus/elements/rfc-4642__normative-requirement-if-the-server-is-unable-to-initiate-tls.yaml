@@ -1,0 +1,10 @@
+document: rfc-4642
+kind: normative-requirement
+summary: If the server is unable to initiate TLS negotiation, it MUST reject the STARTTLS command with a 580 response. It SHOULD then either reject subsequent restricted commands with 483 or close the connection with 400.
+section: 2.2.2
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

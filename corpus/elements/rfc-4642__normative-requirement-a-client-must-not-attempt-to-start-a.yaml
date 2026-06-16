@@ -1,0 +1,10 @@
+document: rfc-4642
+kind: normative-requirement
+summary: A client MUST NOT attempt to start a TLS session if one is already active. A server MUST NOT return the STARTTLS capability after TLS handshake completion and MUST respond with 502 if STARTTLS is received while TLS is already active. The client MUST NOT issue MODE READER while a TLS session is active.
+section: 2.2.2
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

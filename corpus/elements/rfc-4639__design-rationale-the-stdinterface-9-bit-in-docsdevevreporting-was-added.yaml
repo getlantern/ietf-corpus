@@ -1,0 +1,8 @@
+document: rfc-4639
+kind: design-rationale
+summary: The stdInterface(9) bit in docsDevEvReporting was added to support RFC 3413 (SNMP Notification MIB) and RFC 3014 (Notification Log MIB) as the event notification mechanism. When set, the agent ignores all other bits except local(0), syslog(2), and localVolatile(8), providing a clean migration path to standards-based notification infrastructure.
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
