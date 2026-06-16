@@ -1,0 +1,9 @@
+document: rfc-4133
+kind: security-consideration
+summary: Several objects have read-write MAX-ACCESS (entPhysicalSerialNum, entPhysicalAlias, entPhysicalAssetID, entPhysicalUris). Unauthorized write access could disrupt network management by corrupting physical entity identification. Implementations should use SNMPv3 with appropriate access controls (USM/VACM) to restrict write access.
+section: "5"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

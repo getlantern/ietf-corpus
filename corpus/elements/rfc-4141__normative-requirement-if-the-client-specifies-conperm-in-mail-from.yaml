@@ -1,0 +1,9 @@
+document: rfc-4141
+kind: normative-requirement
+summary: If the client specifies CONPERM in MAIL-FROM but the server does not support it, the server MUST reject the MAIL-FROM with a 504-CONPERM reply. If the server accepts CONPERM, it MUST either relay the message under CONPERM or convert the message according to CONNEG information.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4131
+kind: design-rationale
+summary: The docsBpi2CmtsIpMulticastMapTable uses InetAddress rather than InetAddressPrefixLength for the multicast mask object because the mask may be non-contiguous, enabling assignment of one SAID to multiple IPv6 multicast groups spanning non-contiguous scopes (e.g., any scope for a given group ID using mask FF10:Y).
+section: 2.1.2
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

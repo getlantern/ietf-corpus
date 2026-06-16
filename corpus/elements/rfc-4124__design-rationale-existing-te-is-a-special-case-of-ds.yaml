@@ -1,0 +1,10 @@
+document: rfc-4124
+kind: design-rationale
+summary: Existing TE is a special case of DS-TE where a single Class-Type (CT0) is used with all 8 preemption priorities and the TE-Class mapping is TE-Class[i] <--> <CT0, preemption i>. This design ensures backward compatibility and allows DS-TE LSRs to interwork directly with non-DS-TE LSRs without requiring CLASSTYPE objects for CT0 LSPs.
+section: "10"
+topics:
+    - mpls
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

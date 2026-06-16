@@ -1,0 +1,9 @@
+document: rfc-4130
+kind: design-rationale
+summary: The Disposition-notification-to header retains a mail-address field as a residue of SMTP MDN semantics (RFC 3798), even though AS2 uses HTTP and the address is not used for routing. Receiving applications MUST ignore the value and MUST NOT complain about RFC 2822 syntax violations; the Receipt-Delivery-Option header was introduced to carry the actual return URL.
+section: "7.3"
+topics:
+    - http
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

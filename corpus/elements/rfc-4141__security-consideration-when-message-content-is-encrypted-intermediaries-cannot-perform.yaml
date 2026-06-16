@@ -1,0 +1,10 @@
+document: rfc-4141
+kind: security-consideration
+summary: When message content is encrypted, intermediaries cannot perform conversion because they lack the keying material. When content is signed but not encrypted, conversion will invalidate the signature, so intermediaries must not convert without re-signing under the same protections.
+section: "10"
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

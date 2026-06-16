@@ -1,0 +1,6 @@
+document: rfc-4122
+kind: design-rationale
+summary: For random node IDs, the unicast/multicast bit is used rather than the local/global bit for compatibility with earlier DCE specifications. This ensures generated node IDs never conflict with real IEEE 802 addresses, since the multicast bit is never set in addresses obtained from network cards.
+section: "4.5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

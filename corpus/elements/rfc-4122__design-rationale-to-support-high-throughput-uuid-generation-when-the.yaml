@@ -1,0 +1,6 @@
+document: rfc-4122
+kind: design-rationale
+summary: To support high-throughput UUID generation when the system clock resolution is coarser than 100 ns, a per-tick counter of UUIDs already generated can be added to the low-order bits of the timestamp to simulate higher resolution. Additional node identifiers can be allocated if processors frequently overrun UUID generation.
+section: 4.2.1.2
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

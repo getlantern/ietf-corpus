@@ -1,0 +1,9 @@
+document: rfc-4133
+kind: security-consideration
+summary: The entLogicalCommunity object exposes community strings, which are effectively cleartext passwords. An agent must not return a community string with greater privileges than those of the requesting community. SNMPv3 implementations should use entLogicalContextEngineID/entLogicalContextName and may return a zero-length string for entLogicalCommunity.
+section: "5"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

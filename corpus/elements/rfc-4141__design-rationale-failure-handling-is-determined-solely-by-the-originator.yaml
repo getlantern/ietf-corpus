@@ -1,0 +1,8 @@
+document: rfc-4141
+kind: design-rationale
+summary: Failure handling is determined solely by the originator's direction (advisory vs. require), not the recipient's. If the originator says 'advise', the original content is delivered even if conversion fails; if 'require', the message is returned without delivery regardless of recipient preference. This preserves the existing email practice of delivering content a recipient might not be able to process.
+section: "1.2"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

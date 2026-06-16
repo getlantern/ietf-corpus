@@ -1,0 +1,6 @@
+document: rfc-4129
+kind: state-machine
+summary: 'Reset of all DLCs (Ind=0): SG sends SABMR to each DLC; after all complete or time out, SG sends Est Cfm (Ind=0) to MGC without updating DLC statuses. MGC then issues a Status Request to obtain current DLC states via a Status Confirm. Remaining out-of-service DLCs may be retried individually (Ind=1) or collectively (Ind=0).'
+section: "5.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4130
+kind: security-consideration
+summary: NRR (non-repudiation of receipt) is a business/legal concept, not a purely technical one. To satisfy strict NRR, authentication and integrity MUST be provided; the RECOMMENDED mechanism is digital signatures on both the original message and the receipt. If a digital signature is omitted from the original message, some alternative authentication (client-side SSL, IPsec, HTTP auth over SSL) MUST accompany the receipt request.
+section: "9.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

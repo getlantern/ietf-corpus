@@ -1,0 +1,8 @@
+document: rfc-4122
+kind: design-rationale
+summary: For name-based UUIDs, SHA-1 (version 5) is preferred over MD5 (version 3) when backward compatibility is not required. Both hash the namespace UUID (in network byte order) concatenated with the name, but SHA-1 provides stronger collision resistance.
+section: "4.3"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
