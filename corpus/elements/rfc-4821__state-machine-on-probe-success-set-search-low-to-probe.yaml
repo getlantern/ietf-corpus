@@ -1,0 +1,9 @@
+document: rfc-4821
+kind: state-machine
+summary: 'On Probe Success: set search_low to probe size, raise eff_pmtu if probe size exceeds it. On Probe Failure: set search_high to probe size minus one, reduce eff_pmtu to at most search_high. On Probe Timeout Failure: reduce congestion window, use longer inter-probe interval (5x failure case). On Probe Inconclusive: do not update state variables, retry same size probe once losses recover.'
+section: "7.6"
+topics:
+    - ip
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

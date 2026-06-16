@@ -1,0 +1,10 @@
+document: rfc-4819
+kind: normative-requirement
+summary: The server MUST attempt to store the public key for the authenticated user. If overwrite is false and the key already exists, the server MUST return SSH_PUBLICKEY_KEY_ALREADY_PRESENT. If overwrite is true but the key cannot be overwritten, the server MUST return SSH_PUBLICKEY_ACCESS_DENIED.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

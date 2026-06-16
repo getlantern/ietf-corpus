@@ -1,0 +1,9 @@
+document: rfc-4821
+kind: protocol-element
+summary: MTU verification detects cases where raising eff_pmtu sharply increases loss rate (e.g., striped paths with inconsistent MTUs). A recommended strategy saves the old eff_pmtu; if loss rate exceeds ~10% over multiple RTO intervals, the new MTU is considered incorrect, the saved value is restored, and search_high is reduced as in a probe failure.
+section: "7.8"
+topics:
+    - ip
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

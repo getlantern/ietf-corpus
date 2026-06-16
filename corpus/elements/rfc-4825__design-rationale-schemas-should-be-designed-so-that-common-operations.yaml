@@ -1,0 +1,8 @@
+document: rfc-4825
+kind: design-rationale
+summary: Schemas SHOULD be designed so that common operations require a single HTTP request. When a design forces two sequential PUTs (e.g., remove from old permission list, add to new one), it introduces failure windows where another client's interleaving modification can corrupt state and force the client to undo prior changes using entity tags.
+section: "5.10"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

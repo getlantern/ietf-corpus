@@ -1,0 +1,10 @@
+document: rfc-4807
+kind: normative-requirement
+summary: spdGroupContRowStatus MUST NOT be set to active until the row referenced by spdGroupContComponentName exists and is active. It MUST remain active unless no active spdEndpointToGroupTable row references its group or at least one other active row shares its spdGroupContName.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - ipsec
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4821
+kind: design-rationale
+summary: The isolated loss of a probe packet is treated as an MTU limit indication rather than a congestion signal, allowing retransmission of missing data without adjusting the congestion window; this exception is permissible because probe failures must be rate-limited to less than the TCP-friendly loss rate.
+section: "2"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

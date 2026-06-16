@@ -1,0 +1,10 @@
+document: rfc-4817
+kind: design-rationale
+summary: MPLS over L2TPv3 is preferred over plain IP or GRE encapsulation of MPLS because border routers can simply refuse all MPLS packets rather than maintaining complex per-source/destination ACLs, reducing the attack surface for label-spoofing attacks.
+section: "4"
+topics:
+    - mpls
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4819
+kind: state-machine
+summary: 'Version negotiation: both sides send their highest supported version; the lower value is the protocol version to use. If either side cannot support the lower version, it SHOULD send SSH_PUBLICKEY_VERSION_NOT_SUPPORTED and then close the subsystem via SSH_MSG_CHANNEL_CLOSE. This is the only case where the client sends a status message.'
+section: "3.4"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

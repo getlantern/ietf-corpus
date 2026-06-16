@@ -1,0 +1,9 @@
+document: rfc-4815
+kind: normative-requirement
+summary: When TS_STRIDE is present in Extension 3 (Tss=1) along with scaled TS (Tsc=1), the decompressor MUST ignore and discard field(TS_STRIDE), because unscaled TS is required to correctly recalculate TS_OFFSET. Scaled TS always uses context(TS_STRIDE), not value(TS_STRIDE) as RFC 3095 Section 5.7.5 incorrectly stated.
+section: "4.6"
+rfc2119_level: MUST
+topics:
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

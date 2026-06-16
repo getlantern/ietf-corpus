@@ -1,0 +1,9 @@
+document: rfc-4822
+kind: wire-format
+summary: For HMAC-SHA authentication, the Authentication Data field is first filled with Apad (0x878FE1F3 repeated L/4 times), then First-Hash = H(Ko XOR Ipad || RIPv2 Packet) and Second-Hash = H(Ko XOR Opad || First-Hash). The output is NOT truncated; Authentication Data Length equals the full hash output size (e.g., 20 bytes for HMAC-SHA-1).
+section: "2.5"
+topics:
+    - routing
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4815
+kind: normative-requirement
+summary: Whenever a compressed packet carrying an unscaled TS value is received, the decompressor MUST recalculate TS_OFFSET (= RTP TS modulo TS_STRIDE) to ensure correct decompression of subsequent packets, even when TS_STRIDE itself has not changed.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4815
+kind: state-machine
+summary: The D_TRANS decompressor transition parameter is extended to include a PENDING (P) state in addition to INITIATED (I) and DONE (D). While D_TRANS=P, the decompressor need not send feedback for every packet but MUST continue sending feedback periodically with the CRC option, preventing deadlocks during mode transitions with sparse feedback.
+section: 3.1.1
+topics:
+    - rtp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

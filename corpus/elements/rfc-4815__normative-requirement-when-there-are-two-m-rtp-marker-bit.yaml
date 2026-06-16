@@ -1,0 +1,9 @@
+document: rfc-4815
+kind: normative-requirement
+summary: When there are two M (RTP Marker) bit fields in a compressed header (in both base header and Extension 3 RTP part), the compressor MUST set both to the same value. If a decompressor receives a packet where the two M field values differ, the packet MUST be discarded.
+section: "8.4"
+rfc2119_level: MUST
+topics:
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

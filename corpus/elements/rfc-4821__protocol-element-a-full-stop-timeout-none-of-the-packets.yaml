@@ -1,0 +1,10 @@
+document: rfc-4821
+kind: protocol-element
+summary: 'A full-stop timeout (none of the packets transmitted after some event are acknowledged, including retransmissions) is taken as indication of a disruptive network event. The response is to treat it as an ICMP black hole: reduce eff_pmtu to search_low, and on successive timeouts halve search_low and eff_pmtu with a lower bound of 68 bytes for IPv4 and 1280 bytes for IPv6.'
+section: "7.7"
+topics:
+    - ip
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

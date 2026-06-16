@@ -1,0 +1,9 @@
+document: rfc-4815
+kind: normative-requirement
+summary: During mode transition when D_TRANS=I, a decompressor in R-mode MUST use the sequence number of the packet that last updated the context (not R-0 or R-1* packets) when sending acknowledgements, since R-0 and R-1* do not carry CRCs and thus do not update context.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

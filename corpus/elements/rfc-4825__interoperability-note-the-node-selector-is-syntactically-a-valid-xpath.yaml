@@ -1,0 +1,8 @@
+document: rfc-4825
+kind: interoperability-note
+summary: 'The node selector is syntactically a valid XPath 1.0 expression, but XCAP uses XPath 2.0-style namespace expansion: unprefixed attribute QNames are in no namespace, and the default document namespace applies only to unprefixed element names. Each step must resolve to exactly one element, which is more restrictive than general XPath multi-node contexts. Namespace declarations within elements cannot be used as attribute predicates (e.g., ''@xmlns=...'' never matches).'
+section: "6.3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

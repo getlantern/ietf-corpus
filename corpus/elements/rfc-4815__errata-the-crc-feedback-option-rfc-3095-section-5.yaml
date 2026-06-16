@@ -1,0 +1,9 @@
+document: rfc-4815
+kind: errata
+summary: 'The CRC feedback option (RFC 3095 Section 5.7.6.3) was incomplete: the 8-bit CRC over the feedback payload must exclude the packet type, the ''Size'' field, and the ''Code'' octet—not just the packet type and code octet as previously stated. The ''Size'' field is an extension of ''Code'' and must be treated identically.'
+section: "2.3"
+topics:
+    - rtp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

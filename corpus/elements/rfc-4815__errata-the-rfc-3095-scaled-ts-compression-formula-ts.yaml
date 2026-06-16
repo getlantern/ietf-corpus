@@ -1,0 +1,9 @@
+document: rfc-4815
+kind: errata
+summary: 'The RFC 3095 scaled TS compression formula ''TS_SCALED = TS / TS_STRIDE'' was incorrect because it excluded TS_OFFSET and prohibited TS_STRIDE=0. The corrected algorithm: (1) send TS_STRIDE and an unscaled TS for initialization; (2) compress TS_SCALED; (3) decompress as TS = TS_SCALED * TS_STRIDE + TS_OFFSET; (4) on TS wraparound when TS_STRIDE is not a power of two, compressor SHOULD reinitialize TS_OFFSET by sending unscaled TS.'
+section: 4.4.3
+rfc2119_level: SHOULD
+topics:
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4815
+kind: normative-requirement
+summary: The compressor MUST set both occurrences of the CC field (one in the RTP dynamic chain header, one inside the Generic CSRC list Encoding Type 0) to the same value. The decompressor MUST use the CC value from the Encoding Type 0 inside the Generic CSRC list and MUST ignore the first occurrence.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

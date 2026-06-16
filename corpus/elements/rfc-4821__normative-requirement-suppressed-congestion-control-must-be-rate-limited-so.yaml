@@ -1,0 +1,10 @@
+document: rfc-4821
+kind: normative-requirement
+summary: Suppressed congestion control MUST be rate limited so it occurs less frequently than the worst-case TCP-friendly loss rate; this SHOULD be enforced by requiring a minimum headway between a suppressed congestion adjustment and the next probe equal to one RTT per packet permitted by the congestion window.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

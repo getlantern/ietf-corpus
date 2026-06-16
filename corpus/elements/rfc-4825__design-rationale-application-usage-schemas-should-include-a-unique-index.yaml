@@ -1,0 +1,8 @@
+document: rfc-4825
+kind: design-rationale
+summary: Application usage schemas SHOULD include a unique index attribute on any element that can repeat within a parent, because without one only positional selection is available—requiring clients to cache the full document to construct predicates. URIs make good indexes but XCAP matches them by lexical string equality, not functional URI equivalence, which application usages must account for.
+section: "5.10"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4819
+kind: normative-requirement
+summary: Client implementations SHOULD reject SSH_MSG_CHANNEL_REQUEST for the publickey subsystem since it is normally sent only by the client, not the server. If want reply is TRUE, the server MUST respond with SSH_MSG_CHANNEL_SUCCESS or SSH_MSG_CHANNEL_FAILURE.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

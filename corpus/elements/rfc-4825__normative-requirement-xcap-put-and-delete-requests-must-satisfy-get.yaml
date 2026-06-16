@@ -1,0 +1,9 @@
+document: rfc-4825
+kind: normative-requirement
+summary: 'XCAP PUT and DELETE requests MUST satisfy GET(PUT(x))==x idempotency: the URI in a PUT must select the resource just inserted, and a DELETE URI must match nothing after deletion. The server rejects violations with 409 and a ''cannot-insert'' error condition.'
+section: "7"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

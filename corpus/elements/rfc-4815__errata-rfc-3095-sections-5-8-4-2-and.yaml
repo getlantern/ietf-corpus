@@ -1,0 +1,9 @@
+document: rfc-4815
+kind: errata
+summary: 'RFC 3095 Sections 5.8.4.2 and 5.8.4.4 incorrectly described AH and GRE sequence number omission as requiring linear increase relative to RTP SN. The corrected rule mirrors the ESP profile: the AH or GRE sequence number may be omitted only when the offset from the compressed header SN is constant and the compressor is confident the decompressor has established the correct offset.'
+section: "5.8"
+topics:
+    - ip
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

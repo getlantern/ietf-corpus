@@ -1,0 +1,8 @@
+document: rfc-4815
+kind: interoperability-note
+summary: RFC 3095 Section 4.5.3 required the decompressor to detect and handle TS wraparound internally for scaled encoding. This was deemed non-interoperable and non-robust; the corrected algorithm instead requires the compressor to reinitialize TS_OFFSET by sending an unscaled TS at wraparound, eliminating the decompressor-side wraparound detection requirement.
+section: 4.4.2
+topics:
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

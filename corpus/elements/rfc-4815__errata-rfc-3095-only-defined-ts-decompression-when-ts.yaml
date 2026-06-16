@@ -1,0 +1,9 @@
+document: rfc-4815
+kind: errata
+summary: 'RFC 3095 only defined TS decompression when TS bits are present, omitting the case where no TS bits appear in the compressed header. RFC 4815 adds that when no TS bits are received, the scaled TS is reconstructed by linear extrapolation: delta_TS = delta_SN * default-slope(TS). If Tsc=0 and no TS bits are present, the decompressor MUST discard the packet.'
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

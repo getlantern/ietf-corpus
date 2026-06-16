@@ -1,0 +1,9 @@
+document: rfc-4815
+kind: normative-requirement
+summary: When the compressor receives a NACK and uses UOR-2 to repair context, it SHOULD include TS_STRIDE and TIME_STRIDE fields that it has updated since context establishment. When the compressor receives a static-NACK, it MUST include in the IR header both TS_STRIDE and TIME_STRIDE values it has ever updated for that context.
+section: "8.11"
+rfc2119_level: MUST
+topics:
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

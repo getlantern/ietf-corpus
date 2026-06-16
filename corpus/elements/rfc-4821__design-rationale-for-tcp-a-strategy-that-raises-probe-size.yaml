@@ -1,0 +1,9 @@
+document: rfc-4821
+kind: design-rationale
+summary: For TCP, a strategy that raises probe size in smaller increments may have lower overhead than binary search because failed probes are more expensive than successful ones (probe gap data must be retransmitted). For protocols where both directions cost equally, binary search halving the range each probe is simpler.
+section: "7.3"
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

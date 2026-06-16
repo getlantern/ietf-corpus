@@ -1,0 +1,9 @@
+document: rfc-4807
+kind: design-rationale
+summary: Policy tables use generic names (without 'SA', 'IPsec' prefixes) because packet classification and filter-to-action matching is more general than IPsec alone. The same tables can be reused for firewall configuration or other packet-transforming actions, avoiding protocol-specific lock-in.
+section: "4"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
