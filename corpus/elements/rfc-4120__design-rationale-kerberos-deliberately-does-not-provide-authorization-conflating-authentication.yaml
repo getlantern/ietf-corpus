@@ -1,0 +1,8 @@
+document: rfc-4120
+kind: design-rationale
+summary: Kerberos deliberately does not provide authorization. Conflating authentication with authorization would make applications vulnerable to bypass in environments offering other authentication options or when interoperating with modified KDCs. Applications must implement independent authorization based on the authenticated principal name.
+section: "1.4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

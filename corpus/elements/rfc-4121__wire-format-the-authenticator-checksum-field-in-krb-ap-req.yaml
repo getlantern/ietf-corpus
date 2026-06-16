@@ -1,0 +1,9 @@
+document: rfc-4121
+kind: wire-format
+summary: 'The authenticator checksum field in KRB_AP_REQ has a structured layout: octets 0–3 Lgth (little-endian, value 16), octets 4–19 Bnd (MD5 of channel bindings), octets 20–23 Flags (little-endian context flags), and optional octets 24–25 DlgOpt (=1), 26–27 Dlgth, 28..(n-1) Deleg (KRB_CRED), n..last Exts. Minimum length is 24 octets without delegation and 28 + Dlgth with delegation.'
+section: 4.1.1
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

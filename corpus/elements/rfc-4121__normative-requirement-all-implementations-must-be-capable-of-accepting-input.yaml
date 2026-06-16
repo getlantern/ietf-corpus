@@ -1,0 +1,9 @@
+document: rfc-4121
+kind: normative-requirement
+summary: All implementations MUST be capable of accepting input buffers of at least 16K octets for GSS_GetMIC(), GSS_VerifyMIC(), and GSS_Wrap(), and MUST accept the GSS_Wrap() output token for a 16K input as input to GSS_Unwrap(). Implementations SHOULD support 64K input buffers and MAY support larger sizes.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

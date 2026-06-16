@@ -1,0 +1,10 @@
+document: rfc-4120
+kind: normative-requirement
+summary: The KDC MUST be prepared to retransmit responses in case they are lost. If a KDC receives a request identical to one it has recently processed successfully, it MUST respond with a KRB_AS_REP rather than a replay error, even over reliable transports.
+section: 3.1.2
+rfc2119_level: MUST
+topics:
+    - udp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

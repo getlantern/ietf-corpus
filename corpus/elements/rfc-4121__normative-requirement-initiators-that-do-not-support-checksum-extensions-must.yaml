@@ -1,0 +1,9 @@
+document: rfc-4121
+kind: normative-requirement
+summary: Initiators that do not support checksum extensions MUST NOT include more than 24 octets (no delegation) or more than 28 octets plus KRB_CRED (with delegation) in the checksum field. Acceptors that do not understand extensions MUST ignore octets past the Flags field (no delegation) or past the Deleg field (with delegation).
+section: 4.1.1
+rfc2119_level: MUST NOT
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

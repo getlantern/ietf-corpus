@@ -1,0 +1,9 @@
+document: rfc-4121
+kind: wire-format
+summary: 'MIC tokens (TOK_ID=0x04 0x04) have a 16-octet fixed header: octets 0–1 TOK_ID, octet 2 Flags, octets 3–7 Filler (0xFF×5), octets 8–15 SND_SEQ (64-bit big-endian), octets 16–last SGN_CKSUM (checksum over signed data and octets 0–15). The filler is included in checksum calculation.'
+section: 4.2.6.1
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

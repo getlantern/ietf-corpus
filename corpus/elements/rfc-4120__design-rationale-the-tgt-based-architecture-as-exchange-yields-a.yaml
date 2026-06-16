@@ -1,0 +1,9 @@
+document: rfc-4120
+kind: design-rationale
+summary: The TGT-based architecture (AS exchange yields a TGT; subsequent TGS exchanges yield service tickets) avoids repeated use of the client's long-term secret key. After initial login, only the TGT's session key is needed, minimizing the exposure of the password-derived key over the session lifetime.
+section: "1.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

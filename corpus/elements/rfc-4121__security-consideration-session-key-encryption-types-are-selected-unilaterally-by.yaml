@@ -1,0 +1,9 @@
+document: rfc-4121
+kind: security-consideration
+summary: Session key encryption types are selected unilaterally by the KDC with no GSS-API-level algorithm negotiation. Administrators must control acceptable session key enctypes through KDC policy per acceptor principal. Sharing a service principal (e.g., 'host') between GSSAPI and non-GSSAPI services can force weaker enctype selection if the GSSAPI implementation does not support newer algorithms such as AES.
+section: "7"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4121
+kind: protocol-element
+summary: 'For Wrap tokens with confidentiality, the 16-octet token header is appended to plaintext before encryption: the layout is {''header'' | encrypt(plaintext-data | filler | ''header'')}. For Wrap tokens without confidentiality: {''header'' | plaintext-data | get_mic(plaintext-data | ''header'')}. MIC checksums cover plaintext then the 16-octet token header.'
+section: 4.2.4
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

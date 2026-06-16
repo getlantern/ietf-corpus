@@ -1,0 +1,9 @@
+document: rfc-4121
+kind: design-rationale
+summary: The QOP value in per-message tokens is ignored under this mechanism because the encryption and checksum algorithms are now implicitly defined by the session key or subkey's crypto profile, making explicit algorithm identifiers (as used in RFC 1964) unnecessary. This avoids the risk of using an algorithm mismatched to the key type.
+section: "3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

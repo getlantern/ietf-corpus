@@ -1,0 +1,8 @@
+document: rfc-4120
+kind: interoperability-note
+summary: Existing Kerberos messages cannot be reliably extended by adding ASN.1 fields; many RFC 1510 implementations discard messages with unknown fields. New implementations SHOULD preserve unknown extensions but otherwise ignore them; recipients MUST NOT decline a request solely because an extension is present.
+section: 1.5.1
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4120
+kind: security-consideration
+summary: Without pre-authentication, the AS issues a reply encrypted in the user's long-term key without verifying the requestor's identity, enabling offline password-guessing attacks. The padata field in KRB_AS_REQ SHOULD be used for pre-authentication (e.g., PA-ENC-TIMESTAMP) to mitigate this.
+section: "3.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

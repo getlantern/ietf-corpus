@@ -1,0 +1,9 @@
+document: rfc-4121
+kind: wire-format
+summary: 'The per-message Flags field is a one-octet integer: bit 0 (SentByAcceptor) indicates the sender is the context acceptor; bit 1 (Sealed) indicates Wrap token confidentiality (SHALL NOT be set in MIC tokens); bit 2 (AcceptorSubkey) indicates an acceptor-asserted subkey protects the message. All other bits are reserved, MUST be cleared by sender, and MUST be ignored by receiver.'
+section: 4.2.2
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

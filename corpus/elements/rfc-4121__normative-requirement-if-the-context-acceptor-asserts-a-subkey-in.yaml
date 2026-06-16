@@ -1,0 +1,10 @@
+document: rfc-4121
+kind: normative-requirement
+summary: If the context acceptor asserts a subkey in the AP-REP message, that subkey becomes the base key and all subsequent per-message tokens MUST be flagged with 'AcceptorSubkey'. If no acceptor subkey is asserted, the base key is the initiator's subkey from AP-REQ, or the session key from the service ticket if the initiator also asserts no subkey.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

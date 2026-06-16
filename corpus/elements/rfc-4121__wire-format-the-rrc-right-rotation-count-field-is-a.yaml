@@ -1,0 +1,8 @@
+document: rfc-4121
+kind: wire-format
+summary: The RRC (Right Rotation Count) field is a two-octet big-endian integer in Wrap tokens. Excluding the first 16 header octets, the token body is rotated right by RRC octets to allow in-place encryption for SSPI applications that cannot provide separate header and trailer buffers. The receiver MUST handle all rotation count values including those exceeding the token length.
+section: 4.2.5
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

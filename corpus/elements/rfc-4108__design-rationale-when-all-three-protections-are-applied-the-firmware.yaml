@@ -1,0 +1,9 @@
+document: rfc-4108
+kind: design-rationale
+summary: When all three protections are applied, the firmware package is compressed first, then encrypted, then signed. Signing the encrypted (outer) form allows signature verification without decryption, and compressing before encryption yields better compression ratios on unencrypted data.
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

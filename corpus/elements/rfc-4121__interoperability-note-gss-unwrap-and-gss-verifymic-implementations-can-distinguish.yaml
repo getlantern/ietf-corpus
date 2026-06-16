@@ -1,0 +1,8 @@
+document: rfc-4121
+kind: interoperability-note
+summary: 'GSS_Unwrap() and GSS_VerifyMIC() implementations can distinguish token formats by inspecting the first octet: if it is 0x60, the token carries generic GSS-API pseudo-ASN.1 framing (RFC 1964 style); otherwise the first two octets are the TOK_ID identifying the new RFC 4121 token format.'
+section: "6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

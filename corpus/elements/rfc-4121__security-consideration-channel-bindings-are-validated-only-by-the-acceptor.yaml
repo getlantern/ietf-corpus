@@ -1,0 +1,8 @@
+document: rfc-4121
+kind: security-consideration
+summary: Channel bindings are validated only by the acceptor. If the acceptor does not use channel bindings in GSS_Accept_sec_context, it can ignore the bindings carried in the authenticator checksum without proving to the initiator that it holds the same bindings—even when mutual authentication was requested. Application designers using channel bindings to scope contexts to specific network addresses or to bind secure channels must account for this limitation.
+section: "7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

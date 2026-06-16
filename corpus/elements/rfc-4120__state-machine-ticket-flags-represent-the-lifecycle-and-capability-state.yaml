@@ -1,0 +1,8 @@
+document: rfc-4120
+kind: state-machine
+summary: 'Ticket flags represent the lifecycle and capability state of a ticket. Key transitions: INVALID set at issuance for postdated tickets, cleared by KDC VALIDATE after starttime; RENEWABLE tickets must be periodically renewed via TGS RENEW before renew-till; FORWARDABLE/FORWARDED and PROXIABLE/PROXY flags control delegation chains. PRE-AUTHENT and HW-AUTHENT propagate from TGTs to derived tickets.'
+section: "2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

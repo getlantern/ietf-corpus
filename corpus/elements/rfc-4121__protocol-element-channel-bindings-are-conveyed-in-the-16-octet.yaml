@@ -1,0 +1,8 @@
+document: rfc-4121
+kind: protocol-element
+summary: Channel bindings are conveyed in the 16-octet Bnd field as an MD5 hash over all non-null components of the gss_channel_bindings_struct in declaration order, with integer and length fields encoded as 4-octet little-endian values. If GSS_C_NO_BINDINGS is passed, Bnd is set to 16 zero octets. If the acceptor passes GSS_C_NO_CHANNEL_BINDINGS, it MAY ignore bindings from the initiator.
+section: 4.1.1.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

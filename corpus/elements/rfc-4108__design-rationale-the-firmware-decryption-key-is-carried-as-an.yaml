@@ -1,0 +1,9 @@
+document: rfc-4108
+kind: design-rationale
+summary: The firmware-decryption key is carried as an unsigned attribute (not a signed one) so that intermediaries in the distribution chain can re-wrap it with different key-encryption keys for each delivery link without invalidating the firmware package signature.
+section: "2.3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

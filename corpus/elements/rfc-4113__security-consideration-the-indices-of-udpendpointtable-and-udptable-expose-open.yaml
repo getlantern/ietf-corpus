@@ -1,0 +1,10 @@
+document: rfc-4113
+kind: security-consideration
+summary: The indices of udpEndpointTable and udpTable expose open port information (udpEndpointLocalPort, udpLocalPort), enabling an attacker to identify open ports and likely successful attacks without running a port scanner. GET and NOTIFY access should be controlled and values encrypted when transmitted via SNMP.
+section: "6"
+topics:
+    - udp
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

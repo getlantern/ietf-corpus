@@ -1,0 +1,9 @@
+document: rfc-4121
+kind: wire-format
+summary: 'Wrap tokens (TOK_ID=0x05 0x04) have a 16-octet header: octets 0–1 TOK_ID, octet 2 Flags, octet 3 Filler (0xFF), octets 4–5 EC (big-endian), octets 6–7 RRC (big-endian), octets 8–15 SND_SEQ (64-bit big-endian), octets 16–last Data (encrypted ciphertext or plaintext+checksum).'
+section: 4.2.6.2
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
