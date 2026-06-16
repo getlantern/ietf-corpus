@@ -1,0 +1,9 @@
+document: rfc-4150
+kind: design-rationale
+summary: TPM-MIB uses a statistical summation approach—agent collects N, S(X), S(X²), Xmax, Xmin, and S(I·X)—rather than frequency-distribution buckets, because storing raw data or pre-computing floating-point statistics is impractical at thousands of transactions per second. The management station performs final computations from these scalable integer accumulations.
+section: "3"
+topics:
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

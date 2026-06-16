@@ -1,0 +1,9 @@
+document: rfc-4150
+kind: security-consideration
+summary: TPM-MIB defines read-write objects in tpmAggrReportCntrlTable and tpmTransMetricDirTable that control which metrics are collected, resource allocation, and data-source targeting. Unauthorized writes to these objects could disable monitoring, exhaust agent memory, or redirect data collection. Implementations should enforce SNMPv3 authentication and privacy (authPriv security level) to protect access to these writable objects.
+section: "6"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
