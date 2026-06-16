@@ -1,0 +1,9 @@
+document: rfc-4513
+kind: state-machine
+summary: Every LDAP session has an authorization state. Upon initial establishment the state is anonymous. Upon receipt of a Bind request the server immediately moves to anonymous state; on successful Bind it moves to the requested authentication state. TLS establishment, change, or closure may also trigger state transitions.
+section: "4"
+topics:
+    - ldap
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

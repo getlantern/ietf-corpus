@@ -1,0 +1,9 @@
+document: rfc-4511
+kind: security-consideration
+summary: When the transport connection is closed, the client MUST NOT assume that any uncompleted update operations have succeeded or failed. Servers acting as gateways to X.500 may need to make multiple DAP requests, increasing the attack surface for confused-deputy attacks.
+section: "3.1"
+topics:
+    - ldap
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

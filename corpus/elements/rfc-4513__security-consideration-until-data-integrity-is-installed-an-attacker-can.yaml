@@ -1,0 +1,9 @@
+document: rfc-4513
+kind: security-consideration
+summary: Until data integrity is installed, an attacker can modify 'supportedSASLMechanisms' to downgrade available SASL mechanisms. Clients should retrieve SASL mechanisms both before and after data integrity is installed to detect downgrade attacks; if a stronger mechanism appears post-install, the client should close and reconnect.
+section: "6.4"
+topics:
+    - ldap
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

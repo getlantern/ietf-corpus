@@ -1,0 +1,8 @@
+document: rfc-4511
+kind: interoperability-note
+summary: If a client has not sent a Bind before sending requests, the server MUST assume the client is using version 3 or later. If a server does not support the version in a BindRequest, it MUST respond with a BindResponse where resultCode is protocolError. Clients receiving protocolError from a Bind are to assume the server does not support that version.
+section: "4.2"
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4518
+kind: design-rationale
+summary: 'The complex substring space handling (rather than a simpler ''collapse all spaces'' approach) is necessary to prevent unexpected matching behavior: simplified handling would cause (CN=foo\20*\20bar) to match ''foobar'', and would cause sub-partitioning failures where subdividing a matching substring into multiple substrings would fail to match.'
+section: Appendix B
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

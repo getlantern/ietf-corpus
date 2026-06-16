@@ -1,0 +1,11 @@
+document: rfc-4513
+kind: security-consideration
+summary: A man-in-the-middle attacker can remove StartTLS from the root DSE's 'supportedExtension' attribute. Both parties SHOULD independently ascertain and consent to the security level achieved once TLS is established. Clients MUST warn users or refuse to proceed when the achieved security level is inadequate.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - ldap
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

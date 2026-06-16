@@ -1,0 +1,10 @@
+document: rfc-4522
+kind: design-rationale
+summary: The requirement to preserve the exact BER encoding for certificate-syntax attributes is a property of those syntaxes themselves, not of the binary option. Without this requirement, LDAP clients would need to re-encode values using Distinguished Encoding Rules (DER), which could alter the byte representation.
+section: "4"
+topics:
+    - ldap
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

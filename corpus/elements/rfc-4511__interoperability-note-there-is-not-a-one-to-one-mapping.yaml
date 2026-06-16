@@ -1,0 +1,8 @@
+document: rfc-4511
+kind: interoperability-note
+summary: There is not a one-to-one mapping between LDAP operations and X.500 DAP operations; server implementations acting as X.500 gateways may need to make multiple DAP requests per LDAP request. The X.500 restriction that ModifyDN affects only entries within a single server applies in gateway scenarios, returning affectsMultipleDSAs if violated.
+section: "3"
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

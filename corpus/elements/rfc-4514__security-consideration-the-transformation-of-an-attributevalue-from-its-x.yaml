@@ -1,0 +1,10 @@
+document: rfc-4514
+kind: security-consideration
+summary: The transformation of an AttributeValue from its X.501 form to an LDAP string representation is not always reversible to the same BER or DER encoding. Applications requiring DER reconstruction (e.g., X.509 certificate verification) must use the hex-encoded form rather than the string representation.
+section: "5.2"
+topics:
+    - ldap
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

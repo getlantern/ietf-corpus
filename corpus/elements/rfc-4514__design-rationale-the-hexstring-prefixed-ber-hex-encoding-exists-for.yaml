@@ -1,0 +1,9 @@
+document: rfc-4514
+kind: design-rationale
+summary: The hexstring (#-prefixed BER hex) encoding exists for cases where reversibility to the original BER/DER form is required — for example, verifying X.509 certificates where two DNs with identical string representations may have different underlying ASN.1 encodings (e.g., TeletexString vs. PrintableString both rendering as 'Sam').
+section: "5.2"
+topics:
+    - ldap
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

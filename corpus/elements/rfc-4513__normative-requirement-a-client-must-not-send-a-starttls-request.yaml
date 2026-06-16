@@ -1,0 +1,10 @@
+document: rfc-4513
+kind: normative-requirement
+summary: A client MUST NOT send a StartTLS request when TLS is currently established, when a multi-stage SASL negotiation is in progress, or when there are outstanding responses for previously issued operations; violation results in an operationsError resultCode.
+section: 3.1.1
+rfc2119_level: MUST NOT
+topics:
+    - ldap
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4511
+kind: normative-requirement
+summary: After sending a BindRequest, clients MUST NOT send further LDAP PDUs until receiving the BindResponse. Before processing a BindRequest, all uncompleted operations MUST either complete or be abandoned. Clients MUST NOT invoke operations between two Bind requests made as part of a multi-stage SASL Bind.
+section: 4.2.1
+rfc2119_level: MUST
+topics:
+    - ldap
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

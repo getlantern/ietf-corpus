@@ -1,0 +1,9 @@
+document: rfc-4511
+kind: normative-requirement
+summary: The messageID of a request MUST have a non-zero value different from the messageID of any other request in progress in the same LDAP session. The zero value is reserved for unsolicited notifications. A client MUST NOT reuse a messageID until it can be determined the server is no longer servicing the earlier request.
+section: 4.1.1.1
+rfc2119_level: MUST
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

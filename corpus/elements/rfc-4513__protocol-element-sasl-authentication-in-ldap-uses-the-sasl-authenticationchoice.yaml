@@ -1,0 +1,9 @@
+document: rfc-4513
+kind: protocol-element
+summary: SASL authentication in LDAP uses the sasl AuthenticationChoice in BindRequest. Challenges are sent via serverSaslCreds (OCTET STRING) in BindResponse with resultCode saslBindInProgress; client responses use the credentials field in SaslCredentials. LDAP does not Base64-transform these values unlike text-based protocols.
+section: 5.2.1.2
+topics:
+    - ldap
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

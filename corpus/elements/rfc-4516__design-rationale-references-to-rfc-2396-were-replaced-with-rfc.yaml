@@ -1,0 +1,9 @@
+document: rfc-4516
+kind: design-rationale
+summary: References to RFC 2396 were replaced with RFC 3986, which allows literal IPv6 addresses to be used inside the `<host>` portion of the URL. As a consequence, '[' and ']' must now be percent-encoded when they appear in LDAP URL data, since RFC 3986 added them to the Reserved character set.
+section: A.1
+topics:
+    - ldap
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
