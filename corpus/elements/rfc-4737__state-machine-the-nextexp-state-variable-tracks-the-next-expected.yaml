@@ -1,0 +1,8 @@
+document: rfc-4737
+kind: state-machine
+summary: 'The NextExp state variable tracks the next expected sequence number. On arrival of packet s: if s >= NextExp, set NextExp = s+1 and mark in-order; if s < NextExp, mark reordered without changing NextExp. When s > NextExp a sequence discontinuity of size s - NextExp is recorded.'
+section: "3.3"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4745
+kind: normative-requirement
+summary: 'Domain names in the ''domain'' attribute MUST be stored in UTF-8 or UTF-16; for non-IDNs, lowercase ASCII SHOULD be used. Domain comparison requires: (1) decode percent-encoding, (2) apply ToASCII (RFC 3490) to both strings, (3) compare per-label for ASCII equality. If ToASCII conversion fails, domains are not equal.'
+section: 7.1.3
+rfc2119_level: MUST
+topics:
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

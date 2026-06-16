@@ -1,0 +1,9 @@
+document: rfc-4738
+kind: security-consideration
+summary: The I_MESSAGE in RSA-R offers DoS protection equivalent to the DH method, not the RSA method, because there are no payloads encrypted by the Responder's public key in the I_MESSAGE. If IDr is not included, the Responder will create state for any signed I_MESSAGE, including malicious ones. Caching recently verified requests can mitigate this.
+section: "5"
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

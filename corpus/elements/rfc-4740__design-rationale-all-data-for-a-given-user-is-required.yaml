@@ -1,0 +1,9 @@
+document: rfc-4740
+kind: design-rationale
+summary: All data for a given user is required to be stored in a single Diameter server (possibly a redundant cluster). This simplifies the authentication and authorization lookup path and avoids distributed consistency problems, at the cost of needing a Subscriber Locator layer in large multi-server deployments.
+section: "5"
+topics:
+    - sip
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

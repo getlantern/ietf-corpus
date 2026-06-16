@@ -1,0 +1,10 @@
+document: rfc-4738
+kind: design-rationale
+summary: In unicast RSA-R mode, both the Initiator (via RAND in I_MESSAGE) and the Responder (via TGK) contribute entropy to TEK generation, which is slightly better than RSA mode where only the Initiator contributes. For group mode, the Responder alone chooses the TGK and RAND since the TEK protects data sent by the Responder.
+section: "5.1"
+topics:
+    - crypto
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4737
+kind: design-rationale
+summary: 'Sequence number rollover is mitigated by: (1) detecting rollover via impossibly large jumps (more than half the total range) between successive packets, (2) representing all sequence numbers in sufficient precision with a correction factor applied on rollover, and (3) detecting reordered packets coincident with end-of-range.'
+section: "6"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

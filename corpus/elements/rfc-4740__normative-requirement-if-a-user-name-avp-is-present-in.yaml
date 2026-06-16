@@ -1,0 +1,11 @@
+document: rfc-4740
+kind: normative-requirement
+summary: If a User-Name AVP is present in the UAR, the Diameter server MUST verify the user exists in the realm and MUST authorize that the User-Name is permitted to register the SIP-AOR; failure MUST yield DIAMETER_ERROR_USER_UNKNOWN or DIAMETER_ERROR_IDENTITIES_DONT_MATCH respectively.
+section: "8.2"
+rfc2119_level: MUST
+topics:
+    - sip
+    - diameter
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4741
+kind: interoperability-note
+summary: When a NETCONF <lock> is active, SNMP and CLI requests to modify the locked configuration MUST also fail with an appropriate error, ensuring that non-NETCONF management interfaces respect the lock; conversely, a non-NETCONF entity holding even a partial lock prevents NETCONF from acquiring a global lock.
+section: "7.5"
+topics:
+    - netconf
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

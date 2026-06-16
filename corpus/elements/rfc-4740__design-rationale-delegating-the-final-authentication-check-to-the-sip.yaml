@@ -1,0 +1,10 @@
+document: rfc-4740
+kind: design-rationale
+summary: Delegating the final authentication check to the SIP server (Section 6.3) was designed to reduce round-trips for operators with large SIP server farms. The optimization is inapplicable when MD5-sess is used, because computing H(A1) requires the client nonce that may not yet be available at the Diameter server at challenge-generation time.
+section: "6.3"
+topics:
+    - sip
+    - diameter
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

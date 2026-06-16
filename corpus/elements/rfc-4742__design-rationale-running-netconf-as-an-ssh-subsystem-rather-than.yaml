@@ -1,0 +1,9 @@
+document: rfc-4742
+kind: design-rationale
+summary: Running NETCONF as an SSH subsystem (rather than a shell command) avoids the need to recognize shell prompts or skip extraneous shell start-up messages, simplifying client implementation. SSHv2 subsystem support is required since SSHv1 does not include it.
+section: "3"
+topics:
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

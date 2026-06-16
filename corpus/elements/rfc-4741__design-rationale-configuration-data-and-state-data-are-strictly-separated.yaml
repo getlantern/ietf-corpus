@@ -1,0 +1,8 @@
+document: rfc-4741
+kind: design-rationale
+summary: Configuration data and state data are strictly separated because mixing them would cause comparison noise from statistics, allow nonsensical writes to read-only data, inflate data set sizes, and complicate restoration from archived configurations. <get-config> returns only configuration; <get> returns both.
+section: "1.3"
+topics:
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

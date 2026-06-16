@@ -1,0 +1,8 @@
+document: rfc-4737
+kind: design-rationale
+summary: To minimize storage for duplicate detection, tracking the sequence numbers of missing packets (rather than storing full packet copies) is sufficient. The missing packet list plus NextExp-1 fully determines whether any arriving packet is a duplicate.
+section: "6"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

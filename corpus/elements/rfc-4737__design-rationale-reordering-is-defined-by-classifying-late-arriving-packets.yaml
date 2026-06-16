@@ -1,0 +1,8 @@
+document: rfc-4737
+kind: design-rationale
+summary: Reordering is defined by classifying 'late' arriving packets (those with sequence numbers smaller than previously seen) rather than 'premature' packets, because only the arrival of the late packet distinguishes reordering from packet loss. This maintains orthogonality with the packet loss metric and matches Paxson's definition.
+section: "1"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

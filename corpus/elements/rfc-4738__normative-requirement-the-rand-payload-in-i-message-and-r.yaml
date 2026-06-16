@@ -1,0 +1,10 @@
+document: rfc-4738
+kind: normative-requirement
+summary: 'The RAND payload in I_MESSAGE and R_MESSAGE are mutually exclusive: if I_MESSAGE did not include RAND, it MUST be present in R_MESSAGE; if I_MESSAGE included RAND, it MUST NOT be present in R_MESSAGE. In group communication, the Responder always sends the RAND payload.'
+section: "3.6"
+rfc2119_level: MUST
+topics:
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

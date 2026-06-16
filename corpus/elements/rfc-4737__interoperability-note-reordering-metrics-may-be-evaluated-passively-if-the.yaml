@@ -1,0 +1,9 @@
+document: rfc-4737
+kind: interoperability-note
+summary: Reordering metrics may be evaluated passively if the packet payload carries sequence information (e.g., RTP headers). For TCP streams, retransmitted segments must be distinguished from original transmissions to avoid false reordering declarations; the optional TCP timestamp field (RFC 1323) or the SrcTime parameter helps resolve this ambiguity.
+section: "6.1"
+topics:
+    - measurement
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

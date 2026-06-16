@@ -1,0 +1,11 @@
+document: rfc-4740
+kind: security-consideration
+summary: When the Diameter server includes a Digest-HA1 AVP in MAA, the SIP server performs the final credential check locally using H(A1), without a second Diameter round-trip. This requires that the Diameter transport between SIP server and Diameter server be secured, as H(A1) is sensitive keying material sufficient to impersonate the user.
+section: "14.1"
+topics:
+    - sip
+    - diameter
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

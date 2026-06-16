@@ -1,0 +1,9 @@
+document: rfc-4740
+kind: design-rationale
+summary: A Diameter Subscriber Locator (SL) acting as a Redirect Agent was introduced to allow the architecture to scale across many Diameter servers. Given a user's SIP AOR, the SL consults its routing tables and redirects the Diameter client to the specific Diameter server that holds that user's data, using the standard Diameter redirect mechanism with Redirect-Host-Usage set to ALL_USER.
+section: "6.8"
+topics:
+    - sip
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
