@@ -1,0 +1,9 @@
+document: rfc-5021
+kind: state-machine
+summary: 'Client state: send high-bit 4-octet value (PROBE or extension request) → wait for KDC response → if KDC returns zero, extension negotiated; if KDC returns high-bit response, send second 4-octet request or close. KDC state: receive high-bit value → if supported, send zero; if PROBE/unsupported, send capability bitmask, wait for second request, then accept or close.'
+section: "3"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

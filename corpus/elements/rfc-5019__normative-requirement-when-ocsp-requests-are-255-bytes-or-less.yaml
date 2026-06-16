@@ -1,0 +1,11 @@
+document: rfc-5019
+kind: normative-requirement
+summary: When OCSP requests are 255 bytes or less (including scheme, server name, and base64-encoded OCSPRequest), clients MUST use the HTTP GET method to enable caching. Requests larger than 255 bytes SHOULD be submitted using HTTP POST.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

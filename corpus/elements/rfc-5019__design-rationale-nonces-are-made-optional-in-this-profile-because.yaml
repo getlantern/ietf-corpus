@@ -1,0 +1,9 @@
+document: rfc-5019
+kind: design-rationale
+summary: Nonces are made optional in this profile because pre-produced responses cannot incorporate per-request nonces, which is essential for high-volume scalability. Time-based freshness validation is used instead, requiring both clients and responders to have accurate time sources.
+section: "4"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

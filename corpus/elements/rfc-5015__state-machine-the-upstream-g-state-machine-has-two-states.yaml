@@ -1,0 +1,9 @@
+document: rfc-5015
+kind: state-machine
+summary: 'The upstream (*,G) state machine has two states: NotJoined and Joined, driven by the JoinDesired(G) boolean. In Joined state, the timer is suppressed when a matching Join is observed upstream, decreased to t_override on upstream Prune or RPF_DF GenID change, and reset on RPF_DF change (which also triggers a Prune to the old DF).'
+section: 3.4.2
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

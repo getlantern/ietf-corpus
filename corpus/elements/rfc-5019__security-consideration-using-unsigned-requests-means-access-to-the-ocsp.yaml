@@ -1,0 +1,9 @@
+document: rfc-5019
+kind: security-consideration
+summary: Using unsigned requests means access to the OCSP responder is implicitly granted to anyone who can send a request, increasing denial-of-service risk. Responders should mitigate this by rate-limiting requests from suspicious IP addresses or using other access control mechanisms.
+section: "7.4"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

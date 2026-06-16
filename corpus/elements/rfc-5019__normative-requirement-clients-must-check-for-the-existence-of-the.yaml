@@ -1,0 +1,10 @@
+document: rfc-5019
+kind: normative-requirement
+summary: Clients MUST check for the existence of the nextUpdate field and MUST ensure current time falls between thisUpdate and nextUpdate. If nextUpdate is absent, the client MUST reject the response. If current time is later than nextUpdate, the client MUST reject the response as stale.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-5019
+kind: security-consideration
+summary: HTTP headers (including cache-control, expires, ETag) are not cryptographically protected and may be manipulated by attackers. Clients SHOULD use these values for caching guidance only and SHOULD rely on values present in the signed OCSPResponse. Clients SHOULD NOT rely on cached responses beyond nextUpdate.
+section: "7.5"
+topics:
+    - pkix
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

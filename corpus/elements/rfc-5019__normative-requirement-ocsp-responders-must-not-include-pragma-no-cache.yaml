@@ -1,0 +1,11 @@
+document: rfc-5019
+kind: normative-requirement
+summary: 'OCSP responders MUST NOT include ''Pragma: no-cache'', ''Cache-Control: no-cache'', or ''Cache-Control: no-store'' headers in authoritative OCSP responses. OCSP clients MUST NOT include a no-cache header unless they encounter an expired response possibly due to stale proxy caching.'
+section: "6.2"
+rfc2119_level: MUST NOT
+topics:
+    - pkix
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

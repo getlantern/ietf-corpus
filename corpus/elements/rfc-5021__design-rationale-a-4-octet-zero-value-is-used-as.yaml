@@ -1,0 +1,9 @@
+document: rfc-5021
+kind: design-rationale
+summary: A 4-octet zero value is used as the KDC's success acknowledgment because it can never be sent by a conforming RFC 4120 implementation that does not support this extension (a KRB-ERROR is always non-zero size), ensuring unambiguous signaling.
+section: "3"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

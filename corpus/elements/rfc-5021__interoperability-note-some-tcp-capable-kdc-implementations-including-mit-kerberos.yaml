@@ -1,0 +1,9 @@
+document: rfc-5021
+kind: interoperability-note
+summary: Some TCP-capable KDC implementations (including MIT Kerberos and Heimdal at the time of writing) did not follow RFC 4120 properly with respect to the high bit, and may close the TCP connection without any response or log an error. Clients experiencing this should assume the KDC does not support the extension mechanism and may remember this on a per-realm basis.
+section: "4"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-5021
+kind: security-consideration
+summary: The initial length field is unprotected, allowing an active attacker to suppress or alter the extension bitmask and mount a downgrade attack — making the client believe the KDC does not support desired extensions. This can be mitigated by client/KDC policy that rejects connections lacking required properties, or by having the negotiated extension include a cryptographic checksum of the offered extensions.
+section: "5"
+topics:
+    - security
+    - tcp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

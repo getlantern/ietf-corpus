@@ -1,0 +1,9 @@
+document: rfc-5015
+kind: security-consideration
+summary: An attacker can prevent the DF election from ever converging by sending an infinite sequence of Offer messages, blocking establishment of multicast forwarding trees. BIDIR-PIM messages are link-local only (TTL 1 to ALL-PIM-ROUTERS), so all attacks require a directly connected attacker or a compromised router.
+section: 5.1.2
+topics:
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

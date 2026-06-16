@@ -1,0 +1,10 @@
+document: rfc-5023
+kind: security-consideration
+summary: Because servers are allowed to modify Entry content before publishing, XML digital signatures applied by clients are only reliable to the receiving server. A server that changes a signed Entry SHOULD strip the client's signature before publishing to prevent third parties from attempting to validate an invalid signature.
+section: "15.5"
+topics:
+    - security
+    - crypto
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
