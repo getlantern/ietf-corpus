@@ -1,0 +1,10 @@
+document: rfc-4028
+kind: normative-requirement
+summary: When a UAC has received a 422 response to a session refresh request on a dialog, or received a session refresh request containing Min-SE, it MUST insert the Min-SE header field into subsequent session refresh requests on that dialog. The value MUST be the largest Min-SE seen across all 422 responses or received requests on that dialog.
+section: "7.4"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

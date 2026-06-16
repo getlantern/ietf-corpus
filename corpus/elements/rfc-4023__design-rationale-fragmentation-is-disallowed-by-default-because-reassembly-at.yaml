@@ -1,0 +1,9 @@
+document: rfc-4023
+kind: design-rationale
+summary: Fragmentation is disallowed by default because reassembly at the tunnel tail (a router) is likely undesirable due to performance constraints. MTUs should be engineered large enough to avoid fragmentation in practice, as silently dropping oversized packets can cause hard-to-diagnose operational problems.
+section: "5.1"
+topics:
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

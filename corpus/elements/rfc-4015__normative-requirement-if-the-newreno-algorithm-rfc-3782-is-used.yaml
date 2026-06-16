@@ -1,0 +1,10 @@
+document: rfc-4015
+kind: normative-requirement
+summary: If the NewReno algorithm (RFC 3782) is used with the Eifel response algorithm, step 1 of NewReno SHOULD be modified to omit step 1B when SpuriousRecovery equals SPUR_TO, because step 8 of the Eifel response algorithm already avoids the unnecessary go-back-N retransmits that step 1B was designed to handle.
+section: "4"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4028
+kind: normative-requirement
+summary: If a session refresh request transaction times out or generates a 408 or 481 response, the UAC sends a BYE as per RFC 3261 Section 12.2.1.2. The side not performing refreshes that does not receive a refresh before session expiration SHOULD send a BYE slightly before expiration; the minimum of 32 seconds and one third of the session interval is RECOMMENDED.
+section: "10"
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

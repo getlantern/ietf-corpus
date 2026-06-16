@@ -1,0 +1,8 @@
+document: rfc-4019
+kind: design-rationale
+summary: The simplest approach — treating Checksum Coverage as always-irregular and sending it uncompressed — was rejected because it would make UDP-Lite always less efficient than UDP when the coverage equals packet length (semantically equivalent behavior). The CCE packet type was introduced to allow compression of the coverage field when its change pattern is stable.
+section: "4.2"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

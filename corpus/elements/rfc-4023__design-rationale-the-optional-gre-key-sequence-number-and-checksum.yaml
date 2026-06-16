@@ -1,0 +1,8 @@
+document: rfc-4023
+kind: design-rationale
+summary: The optional GRE key, sequence number, and checksum fields are not used by default because they are unnecessary for MPLS tunneling (MPLS labels handle demultiplexing), the GRE key is only a weak 32-bit cleartext password, and omitting them facilitates high-speed implementations and ensures interoperability.
+section: "4"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

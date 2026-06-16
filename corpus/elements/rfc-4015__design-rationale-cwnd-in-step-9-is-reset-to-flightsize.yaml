@@ -1,0 +1,9 @@
+document: rfc-4015
+kind: design-rationale
+summary: cwnd in step 9 is reset to FlightSize + min(bytes_acked, IW) rather than a larger value because IW (Initial Window) bounds the burst size to an amount considered acceptable for an 'unprobed' network, preventing large post-recovery packet bursts.
+section: "3.4"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

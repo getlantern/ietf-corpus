@@ -1,0 +1,9 @@
+document: rfc-4015
+kind: interoperability-note
+summary: The Eifel response algorithm SHOULD always be operated with an advanced loss recovery scheme such as SACK-based loss recovery (RFC 3517) or NewReno (RFC 3782), because in environments with coincident spurious timeouts and multiple losses, the conservative Eifel response can cause additional timeouts without such schemes.
+section: "4"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

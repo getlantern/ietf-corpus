@@ -1,0 +1,9 @@
+document: rfc-4028
+kind: state-machine
+summary: Session timer state includes session interval, session expiration, and identity of the refresher, bound to a dialog. The session expiration is set to the time of the last 2xx response plus the session interval. It is updated on each successful session refresh. If no 2xx contains Session-Expires, the session timer is inactive ('turned off').
+section: "7.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

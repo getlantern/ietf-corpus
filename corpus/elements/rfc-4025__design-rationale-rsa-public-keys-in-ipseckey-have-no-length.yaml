@@ -1,0 +1,10 @@
+document: rfc-4025
+kind: design-rationale
+summary: RSA public keys in IPSECKEY have no length limit beyond the 65535-octet two-octet encoding ceiling, unlike the KEY RR limit of 4096 bits. This extension is intentionally scoped to IPSECKEY only, not KEY RRs, to allow for future larger key sizes in IPsec contexts.
+section: "2.6"
+topics:
+    - ipsec
+    - crypto
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

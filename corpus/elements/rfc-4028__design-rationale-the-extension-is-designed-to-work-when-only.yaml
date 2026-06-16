@@ -1,0 +1,9 @@
+document: rfc-4028
+kind: design-rationale
+summary: The extension is designed to work when only one UA supports it. If only the UAC supports it and the UAS returns a 2xx without Session-Expires, the UAC may still apply the timer unilaterally by acting as if the response contained Session-Expires with the request's value and refresher='uac'. This asymmetric operation enables incremental deployment.
+section: "7.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

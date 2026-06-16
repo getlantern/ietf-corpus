@@ -1,0 +1,12 @@
+document: rfc-4028
+kind: security-consideration
+summary: 'Outside attacks: an element that can observe and modify requests or responses in transit can force rapid session refreshes. Since session timer header fields are hop-by-hop, it is RECOMMENDED to use TLS and the SIPS URI scheme for hop-by-hop integrity. Proxies that record-route and request session timer SHOULD record-route with a SIPS URI.'
+section: "11.2"
+rfc2119_level: RECOMMENDED
+topics:
+    - sip
+    - security
+    - tls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

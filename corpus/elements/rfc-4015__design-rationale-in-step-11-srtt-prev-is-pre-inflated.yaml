@@ -1,0 +1,8 @@
+document: rfc-4015
+kind: design-rationale
+summary: In step 11, SRTT_prev is pre-inflated by 2*G (two times the clock granularity) to ensure the new RTO is at least 2*G greater than the pre-spurious-timeout RTO, accounting for cases where a spurious timeout occurs because RTT estimators were only inaccurate by a small margin.
+section: "3.6"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,9 @@
+document: rfc-4011
+kind: security-consideration
+summary: The Security Considerations section (Section 13) notes that PolicyScript running on a managed device can perform arbitrary SNMP reads and writes, including to remote systems. Operators must carefully restrict who can write to the pmPolicyTable and pmElementTypeRegTable, as an attacker with write access could install policies that exfiltrate or modify configuration across the entire managed infrastructure.
+section: "13"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

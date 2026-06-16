@@ -1,0 +1,9 @@
+document: rfc-4015
+kind: state-machine
+summary: 'Upon SpuriousRecovery detection: if SPUR_TO, execute step 8 (suppress go-back-N) then step 9 (reverse congestion state); if LATE_SPUR_TO, skip step 8 and go directly to step 9 (reverse congestion state only); otherwise proceed to DONE with no recovery reversal.'
+section: "3.1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

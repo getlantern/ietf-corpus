@@ -1,0 +1,9 @@
+document: rfc-4028
+kind: design-rationale
+summary: Proxies that require session timers SHOULD record-route so they remain in the signaling path and receive refresh requests. The rationale is that a proxy that inserts Session-Expires but does not record-route will never observe whether refreshes are occurring, defeating the purpose of requesting session timers.
+section: "8"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-4015
+kind: security-consideration
+summary: Spoofed ACKs could fool a detection algorithm into classifying genuine retransmits as spurious, which when combined with the Eifel response algorithm could effectively disable congestion control at the TCP sender. The Eifel response algorithm SHOULD only be run with detection algorithms known to be safe against ACK spoofing attacks; the safe variant of the Eifel detection algorithm (RFC 3522) is cited as a reliable protection.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

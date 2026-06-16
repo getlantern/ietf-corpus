@@ -1,0 +1,9 @@
+document: rfc-4015
+kind: design-rationale
+summary: pipe_prev is set to max(FlightSize, ssthresh) rather than always FlightSize because FlightSize reflects the actual amount in flight during congestion avoidance, while ssthresh reflects the safe operating point during slow-start; this preserves a meaningful congestion state snapshot for later restoration.
+section: "3.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

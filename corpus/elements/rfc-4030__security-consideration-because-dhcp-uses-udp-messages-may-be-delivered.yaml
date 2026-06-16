@@ -1,0 +1,9 @@
+document: rfc-4030
+kind: security-consideration
+summary: Because DHCP uses UDP, messages may be delivered out of order. The replay-detection mechanism will cause receivers to drop late-delivered packets, leading to client retries and wasted computational work by senders whose messages were reordered.
+section: "13.2"
+topics:
+    - security
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

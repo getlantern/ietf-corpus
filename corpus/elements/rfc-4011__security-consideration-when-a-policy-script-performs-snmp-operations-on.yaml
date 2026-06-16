@@ -1,0 +1,9 @@
+document: rfc-4011
+kind: security-consideration
+summary: When a policy script performs SNMP operations on a remote system using NonLocalArgs, the agent MUST use security credentials from the local configuration datastore on behalf of the principal identified as the last entity to modify pmPolicyAdminStatus for that policy. VACM must be configured so that the installing user has access to the relevant credentials (e.g., usmUserTable entries for the target system).
+section: 8.1.1
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

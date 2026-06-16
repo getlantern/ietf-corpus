@@ -1,0 +1,10 @@
+document: rfc-4022
+kind: security-consideration
+summary: The tcpConnectionState and tcpConnState objects are read-write, permitting arbitrary TCP connection termination via SNMP SET; unauthorized access constitutes a denial-of-service attack. The tcpConnectionTable and tcpListenerTable expose active connection details and open ports, enabling targeted attacks and privacy violations. SNMPv3 with cryptographic authentication and privacy is required to mitigate these risks.
+section: "6"
+topics:
+    - security
+    - snmp
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

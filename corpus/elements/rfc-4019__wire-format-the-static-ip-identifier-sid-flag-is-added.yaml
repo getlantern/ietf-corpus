@@ -1,0 +1,9 @@
+document: rfc-4019
+kind: wire-format
+summary: The Static IP Identifier (SID) flag is added to the dynamic part of the IPv4 header chain (in the flags octet alongside DF, RND, NBO). When SID=1 and RND=0, the IP-ID is constant and compressed away; when SID=0 and RND=0, Offset IP-ID encoding is used; when RND=1, IP-ID is sent uncompressed.
+section: "5.8"
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4015
+kind: design-rationale
+summary: Step 8 (SND.NXT <- SND.MAX) is only executed when SpuriousRecovery equals SPUR_TO because this value requires a detection algorithm (like RFC 3522 or F-RTO) that confirms spurious retransmit via an ACK for an original transmit, providing sufficient certainty to safely skip go-back-N retransmits.
+section: "3.3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

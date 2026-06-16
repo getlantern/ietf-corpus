@@ -1,0 +1,10 @@
+document: rfc-4025
+kind: security-consideration
+summary: An active attack replacing the gateway field to point to an attacker-controlled node is easier than replacing keying material because the attacker need not be on the forwarding path—only able to modify DNS replies (via packet modification, race attacks, or cache poisoning). This can enable a man-in-the-middle attack against both IKE and IPsec.
+section: 4.1.2
+topics:
+    - security
+    - dns
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

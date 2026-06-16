@@ -1,0 +1,9 @@
+document: rfc-4015
+kind: design-rationale
+summary: The algorithm does not require decaying pipe_prev over time (e.g., upon subsequent timeouts for the same segment) because the approach of revalidating the congestion window through slow-start, as in RFC 2861, is preferred over more conservative decay-based approaches.
+section: "3.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
