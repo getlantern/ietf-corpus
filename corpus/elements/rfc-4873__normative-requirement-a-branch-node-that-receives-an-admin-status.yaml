@@ -1,0 +1,10 @@
+document: rfc-4873
+kind: normative-requirement
+summary: A branch node that receives an ADMIN_STATUS object in a Path message MUST relay the ADMIN_STATUS object in a Path on every recovery LSP. When the R-bit is set in the received ADMIN_STATUS, branch nodes MUST wait for Resv messages with matching ADMIN_STATUS from all branches before relaying upstream.
+section: 4.2.3
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

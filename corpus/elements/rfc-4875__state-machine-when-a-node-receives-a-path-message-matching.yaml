@@ -1,0 +1,9 @@
+document: rfc-4875
+kind: state-machine
+summary: 'When a node receives a Path message matching existing P2MP LSP state (same SESSION, sender address, LSP-ID) but with a different incoming interface, it must distinguish among: dynamic LSP rerouting, re-merge (new branch intersects P2MP LSP at a downstream node on the same outgoing interface), and cross-over (intersection with a different outgoing interface). Specific re-merge detection and data-plane deduplication procedures are defined in section 18.1.'
+section: "18"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

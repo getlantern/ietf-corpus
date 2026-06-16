@@ -1,0 +1,10 @@
+document: rfc-4872
+kind: normative-requirement
+summary: The PRIMARY_PATH_ROUTE object MUST NOT be used in Path messages when the S bit is 0 in the PROTECTION object. If a PPRO is received when S=0, the receiving node MUST return a PathErr with error code/sub-code 'Routing Problem/PRIMARY_PATH_ROUTE object not applicable'. PPROs are only valid for secondary protecting LSPs (S=1, P=1) with Protection Type 0x02.
+section: "15.3"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

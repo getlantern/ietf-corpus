@@ -1,0 +1,9 @@
+document: rfc-4871
+kind: security-consideration
+summary: Parent domain signing allows a key at example.com to sign messages with i=sub.example.com unless the 's' flag is set in the key record. Domains should set the 's' flag unless subdomain delegation is explicitly intended, to prevent inappropriate signing by parent domains.
+section: "8.13"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

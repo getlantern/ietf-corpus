@@ -1,0 +1,10 @@
+document: rfc-4875
+kind: normative-requirement
+summary: An LSR that supports P2MP extensions but cannot perform P2MP branching in the data plane MUST respond with a PathErr carrying Error Code 'Routing Error' and Error Value 'Unable to Branch' when asked to act as a branch LSR. LSRs not supporting the extensions at all will reject the P2MP SESSION C-Type.
+section: "16"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

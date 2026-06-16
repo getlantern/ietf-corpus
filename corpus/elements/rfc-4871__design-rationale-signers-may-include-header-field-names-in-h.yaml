@@ -1,0 +1,9 @@
+document: rfc-4871
+kind: design-rationale
+summary: Signers may include header field names in h= that do not exist in the message; this explicitly asserts the absence of those fields so that any later insertion of them will break the signature. Non-existing header fields are treated as the null string in the hash computation.
+section: "5.4"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4875
+kind: normative-requirement
+summary: When transit fragmentation of a Path message is required (e.g., ERO expansion overflow), IP fragmentation MUST be avoided per RFC 2205. Instead the transit LSR generates multiple Path messages, each with a distinct Sub-Group Originator ID set to its TE Router ID and a unique Sub-Group ID.
+section: 5.2.3
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

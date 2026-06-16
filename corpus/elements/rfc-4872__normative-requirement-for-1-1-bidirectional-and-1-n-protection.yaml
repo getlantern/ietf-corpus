@@ -1,0 +1,10 @@
+document: rfc-4872
+kind: normative-requirement
+summary: For 1+1 bidirectional and 1:N protection switchover, the end-node initiating the switchover MUST send a reliable Notify message to the peer with error code/sub-code 'Notify Error/LSP Failure'. This message MUST include the MESSAGE_ID object with the ACK_Desired flag set, requiring the receiver to acknowledge per RFC 2961.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

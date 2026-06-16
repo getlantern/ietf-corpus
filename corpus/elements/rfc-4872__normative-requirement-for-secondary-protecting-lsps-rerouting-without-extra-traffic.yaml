@@ -1,0 +1,10 @@
+document: rfc-4872
+kind: normative-requirement
+summary: For secondary protecting LSPs (Rerouting without Extra-Traffic), the primary working LSP_ID MUST be known before signaling of the secondary LSP, since the ASSOCIATION object's Association ID must reference it. Resources for the secondary LSP SHOULD be pre-reserved but MUST NOT be committed at the data plane level until explicit activation.
+section: "8.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

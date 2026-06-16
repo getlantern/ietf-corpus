@@ -1,0 +1,10 @@
+document: rfc-4871
+kind: security-consideration
+summary: DKIM relies on DNS for public key distribution, making it vulnerable to DNS cache poisoning, spoofing, and denial-of-service attacks against key servers. Intentionally malformed key records or DKIM-Signature header fields must be handled gracefully by implementations.
+section: "8.4"
+topics:
+    - email
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

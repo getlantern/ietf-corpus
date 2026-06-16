@@ -1,0 +1,10 @@
+document: rfc-4872
+kind: normative-requirement
+summary: During LSP preemption, the preempting node SHOULD NOT forward the Path message downstream before resource de-allocation has completed. Forwarding before de-allocation may cause misconnection if the downstream node reassigns the resources more quickly than the upstream node releases them.
+section: "10"
+rfc2119_level: SHOULD NOT
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

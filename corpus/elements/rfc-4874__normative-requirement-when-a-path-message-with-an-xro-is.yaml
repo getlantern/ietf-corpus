@@ -1,0 +1,10 @@
+document: rfc-4874
+kind: normative-requirement
+summary: When a Path message with an XRO is received, a node MUST check whether it is a member of any abstract node listed in the XRO with L=0 (mandatory exclusion). If so, it SHOULD return a PathErr with error code 'Routing Problem' and error value 'Local Node in Exclude Route' (66).
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

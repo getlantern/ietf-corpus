@@ -1,0 +1,9 @@
+document: rfc-4872
+kind: state-machine
+summary: 'Reversion sequence for dedicated and 1:N protection: (1) Source sends traffic on both working and protecting LSPs, then sends reliable Notify ''LSP Recovered'' (Switchback Request) with ACK_Desired; (2) Destination selects working LSP, transmits on both, sends Notify response with ACK; (3) Source switches reception to working LSP, sends Ack; (4) Destination stops transmitting on protecting LSP. Finally, protecting LSP''s O bit or S bit is cleared.'
+section: "12"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

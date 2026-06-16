@@ -1,0 +1,9 @@
+document: rfc-4875
+kind: interoperability-note
+summary: Branch nodes SHOULD combine Resv state from multiple downstream receivers into a single upstream Resv message. When the only change is in SRRO objects, transmission SHOULD be delayed until after a timer (suggested 30 seconds, SHOULD be longer than 1 second) since the previous Resv for the session, to throttle excessive Resv messages.
+section: 6.2.1
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

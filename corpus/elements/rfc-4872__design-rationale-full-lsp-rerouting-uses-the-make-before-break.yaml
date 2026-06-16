@@ -1,0 +1,9 @@
+document: rfc-4872
+kind: design-rationale
+summary: Full LSP rerouting uses the make-before-break mechanism (SE reservation style, same Tunnel IDs, different LSP ID) not to avoid traffic disruption (already broken by failure) but to retain and reuse resources allocated on the original LSP segments that the new alternate LSP will traverse, avoiding double-counting.
+section: "11"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

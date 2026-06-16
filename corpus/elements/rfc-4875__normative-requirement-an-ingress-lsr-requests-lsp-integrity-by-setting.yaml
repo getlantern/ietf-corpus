@@ -1,0 +1,10 @@
+document: rfc-4875
+kind: normative-requirement
+summary: An ingress LSR requests 'LSP integrity' by setting bit 3 of the Attributes Flags TLV via the LSP_REQUIRED_ATTRIBUTES object. A branch LSR that supports this flag MUST enforce LSP integrity or reject the LSP with a PathErr 'Routing Error'/'Unsupported LSP Integrity'; a failure on any branch must cause the entire P2MP LSP to fail.
+section: 5.2.4
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4871
+kind: design-rationale
+summary: DKIM omits a Certificate Authority infrastructure entirely; verifiers query the purported signer's DNS entry directly to retrieve the public key. This trades some assurance for dramatically enhanced scalability, since there are over 70 million domains.
+section: "1.3"
+topics:
+    - email
+    - crypto
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

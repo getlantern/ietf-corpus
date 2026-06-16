@@ -1,0 +1,10 @@
+document: rfc-4877
+kind: design-rationale
+summary: Anti-replay protection via ESP sequence numbers is optional for Binding Updates because sequence numbers in the BU itself provide anti-replay. However, complete anti-replay protection can only be guaranteed by dynamic keying (IKEv2), since SA state may be lost on a home agent reboot.
+section: "4.3"
+topics:
+    - ipsec
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

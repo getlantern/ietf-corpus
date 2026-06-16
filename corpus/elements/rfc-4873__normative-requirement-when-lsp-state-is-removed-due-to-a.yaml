@@ -1,0 +1,10 @@
+document: rfc-4873
+kind: normative-requirement
+summary: When LSP state is removed due to a local failure or a PathErr with Path_State_Removed flag set, the node MUST send a PathTear downstream on all other branches. When an upstream PathErr with Path_State_Removed set (1) is sent, all path state for the protected LSP MUST be removed.
+section: 4.2.1
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

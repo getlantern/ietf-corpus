@@ -1,0 +1,10 @@
+document: rfc-4873
+kind: normative-requirement
+summary: When adding SRROs causes a Resv message to exceed maximum size, SRRO subobjects SHOULD be removed, but the first two and last subobject in an SRRO MUST NOT be removed. The subobject following a removed one MUST have the L-bit set (1). If still too large, whole SRROs SHOULD be removed.
+section: "5.3"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

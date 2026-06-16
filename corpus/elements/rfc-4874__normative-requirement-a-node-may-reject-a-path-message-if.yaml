@@ -1,0 +1,10 @@
+document: rfc-4874
+kind: normative-requirement
+summary: A node MAY reject a Path message if its XRO is too large or complex per local policy. In that case, the node MUST send a PathErr with error code 'Routing Error' and error value 'XRO Too Complex' (68). An ingress LSR receiving this MAY reduce XRO complexity or route around the rejecting node.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

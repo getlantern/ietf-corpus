@@ -1,0 +1,10 @@
+document: rfc-4874
+kind: normative-requirement
+summary: If the XRO contains subobjects with inconsistencies (e.g., an IPv4 prefix subobject with an interface address but an attribute of 'interface' or 'SRLG' when 'node' is implied), the node SHOULD return a PathErr with error code 'Routing Problem' and error value 'Inconsistent Subobject' (65).
+section: "3.2"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

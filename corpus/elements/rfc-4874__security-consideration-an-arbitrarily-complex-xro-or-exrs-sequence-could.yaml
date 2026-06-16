@@ -1,0 +1,9 @@
+document: rfc-4874
+kind: security-consideration
+summary: An arbitrarily complex XRO or EXRS sequence could be used as a denial-of-service attack, forcing additional processing at every node on the LSP path. The attacker would need to control an otherwise-authenticated LSR. Nodes may defend by rejecting over-complex objects with 'XRO Too Complex' or 'EXRS Too Complex' PathErr responses per local policy.
+section: "7"
+topics:
+    - security
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

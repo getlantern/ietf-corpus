@@ -1,0 +1,9 @@
+document: rfc-4875
+kind: design-rationale
+summary: SERO-based explicit route compression avoids repeating shared-path information for multiple S2L sub-LSPs. Each SERO encodes only the path from a branch LSR to the leaf; an LSR processes only SEROs whose first hop is a local address, reducing both Path message size and per-hop processing cost.
+section: "4.5"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

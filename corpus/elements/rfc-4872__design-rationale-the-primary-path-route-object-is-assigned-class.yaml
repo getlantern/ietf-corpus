@@ -1,0 +1,9 @@
+document: rfc-4872
+kind: design-rationale
+summary: The PRIMARY_PATH_ROUTE object is assigned Class-Num of the form 0bbbbbbb (Class-Num=38) so that nodes that do not support it MUST return a PathErr with 'Unknown Object Class'. This ensures that shared-mesh resource sharing is only attempted when all nodes along the secondary path explicitly support the object, preventing silent misallocation.
+section: "15.3"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

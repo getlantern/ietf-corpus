@@ -1,0 +1,10 @@
+document: rfc-4872
+kind: normative-requirement
+summary: When a secondary protecting LSP is being activated and its pre-reserved resources are in use by lower-priority LSPs, those LSPs MUST be preempted. The preempting node MUST send PathTear and PathErr messages with error code/sub-code 'Policy Control failure/Hard preempted' with the Path_State_Removed flag set for each preempted LSP.
+section: "10"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

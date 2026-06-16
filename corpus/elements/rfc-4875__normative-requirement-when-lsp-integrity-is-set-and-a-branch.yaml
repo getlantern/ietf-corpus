@@ -1,0 +1,10 @@
+document: rfc-4875
+kind: normative-requirement
+summary: When LSP integrity is set and a branch LSR receives a PathErr with Path_State_Removed clear, it MUST send PathTear on all downstream branches and forward the PathErr upstream with Path_State_Removed set. Without LSP integrity the default is to forward the PathErr upstream with no further action.
+section: "11.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

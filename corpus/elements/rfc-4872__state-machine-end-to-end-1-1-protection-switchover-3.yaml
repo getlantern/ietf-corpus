@@ -1,0 +1,9 @@
+document: rfc-4872
+kind: state-machine
+summary: 'End-to-end 1:1 protection switchover (3-step): (1) Detecting end-node disconnects extra-traffic and sends Notify ''LSP Failure'' (Switchover Request) with ACK_Desired; (2) Peer receives request, disconnects extra-traffic, begins sending/receiving normal traffic on protecting LSP, sends Notify response with MESSAGE_ID_ACK; (3) Initiator begins receiving normal traffic on protecting LSP and sends final Ack.'
+section: "7.2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

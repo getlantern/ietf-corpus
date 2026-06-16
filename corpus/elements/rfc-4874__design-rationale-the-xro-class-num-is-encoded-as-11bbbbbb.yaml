@@ -1,0 +1,9 @@
+document: rfc-4874
+kind: design-rationale
+summary: The XRO Class-Num is encoded as 11bbbbbb (value 232) so that nodes not supporting XRO will forward the Path message uninspected rather than failing. This allows route exclusion constraints to traverse network segments that cannot parse the new object while still being applied by capable nodes downstream.
+section: "3.2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

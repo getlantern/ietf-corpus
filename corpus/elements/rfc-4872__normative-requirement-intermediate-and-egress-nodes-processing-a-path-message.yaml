@@ -1,0 +1,10 @@
+document: rfc-4872
+kind: normative-requirement
+summary: Intermediate and egress nodes processing a Path message with a PROTECTION object MUST verify that the requested LSP Protection Type can be satisfied by the incoming interface. If it cannot, the node MUST generate a PathErr message with error code/sub-code 'Routing problem/Unsupported LSP Protection'.
+section: "14.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

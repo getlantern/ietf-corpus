@@ -1,0 +1,9 @@
+document: rfc-4872
+kind: security-consideration
+summary: 'End-to-end GMPLS recovery signaling extends RSVP-TE and inherits its security considerations (RFC 3473). The recovery mechanisms introduce additional attack surfaces: unauthorized protection switching via forged Notify messages, misuse of the lockout (L) bit to block recovery, and resource exhaustion by establishing numerous secondary LSPs without activation. Operators SHOULD apply RSVP-TE authentication (RFC 2747) to protect recovery signaling.'
+section: "18"
+topics:
+    - security
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

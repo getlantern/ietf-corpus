@@ -1,0 +1,10 @@
+document: rfc-4874
+kind: normative-requirement
+summary: 'When XRO and ERO subobjects contradict each other, mandatory exclusions in the XRO (L=0) MUST take precedence: the implementation MUST reject the Path message and return a PathErr ''Route blocked by Exclude Route'' (67). Advisory XRO exclusions (L=1) do not override ERO; an implementation MAY continue or reject.'
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
