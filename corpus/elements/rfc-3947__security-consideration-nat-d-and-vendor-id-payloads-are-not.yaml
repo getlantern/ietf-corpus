@@ -1,0 +1,11 @@
+document: rfc-3947
+kind: security-consideration
+summary: NAT-D and Vendor ID payloads are not authenticated in Main Mode or Aggressive Mode, allowing an attacker to remove, add, or modify them. Removal or addition can cause DoS; modification of NAT-D payloads can force both ends to use UDP-Encapsulated modes unnecessarily, wasting bandwidth.
+section: "8"
+topics:
+    - ipsec
+    - vpn
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

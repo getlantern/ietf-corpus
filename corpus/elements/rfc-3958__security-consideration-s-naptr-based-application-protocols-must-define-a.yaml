@@ -1,0 +1,10 @@
+document: rfc-3958
+kind: security-consideration
+summary: 'S-NAPTR-based application protocols MUST define a server identification handshake: the client sends the original (pre-NAPTR-transformation) destination name; the server returns a credential (e.g., X.509 certificate with subjectDN/subjectAltName, or Kerberos service principal); the client verifies the name matches and establishes an integrity-protected channel.'
+section: "8"
+topics:
+    - dns
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

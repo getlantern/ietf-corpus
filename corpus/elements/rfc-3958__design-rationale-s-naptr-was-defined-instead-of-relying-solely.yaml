@@ -1,0 +1,8 @@
+document: rfc-3958
+kind: design-rationale
+summary: S-NAPTR was defined instead of relying solely on SRV records because SRV provides only a single layer of indirection and is designed for server administration rather than application naming. S-NAPTR adds a layer from a service label to servers that may be hosted in different administrative domains — a use case SRV cannot serve without modification.
+section: "5.1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-3948
+kind: security-consideration
+summary: In transport mode, if traffic descriptors for two clients behind the same NAT overlap, simple filter lookups may be insufficient to select the correct SA for outbound traffic. Implementations MUST handle this situation by disallowing conflicting connections or by other means.
+section: "5.2"
+topics:
+    - ipsec
+    - nat
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

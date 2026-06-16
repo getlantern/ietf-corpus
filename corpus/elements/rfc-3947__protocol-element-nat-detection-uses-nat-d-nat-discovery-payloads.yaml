@@ -1,0 +1,11 @@
+document: rfc-3947
+kind: protocol-element
+summary: NAT detection uses NAT-D (NAT Discovery) payloads, each containing a hash computed as HASH(CKY-I | CKY-R | IP | Port) using the negotiated hash algorithm. The first NAT-D payload contains the remote end's address/port; remaining payloads contain possible local addresses/ports. NAT is detected when hashes do not match.
+section: "3.2"
+topics:
+    - ipsec
+    - vpn
+    - nat
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

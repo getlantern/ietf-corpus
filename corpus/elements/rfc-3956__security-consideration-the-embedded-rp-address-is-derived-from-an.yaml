@@ -1,0 +1,9 @@
+document: rfc-3956
+kind: security-consideration
+summary: The embedded-RP address is derived from an untrusted source (any Internet user's multicast address choice). The MUST-level validity check excluding fe80::/10, ::/16, and ff00::/8 is therefore especially critical, as a crafted group address could otherwise redirect traffic to a malicious or nonexistent RP.
+section: "10"
+topics:
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

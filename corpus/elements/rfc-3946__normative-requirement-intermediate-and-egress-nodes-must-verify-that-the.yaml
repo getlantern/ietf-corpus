@@ -1,0 +1,10 @@
+document: rfc-3946
+kind: normative-requirement
+summary: Intermediate and egress nodes MUST verify that the node and its interfaces can support the requested Transparency flags. If not, the node MUST generate a PathErr message with 'Traffic Control Error/Service unsupported' (RSVP-TE) or a NOTIFICATION with 'Resource Unavailable' (CR-LDP). Section/RS layer transparency implies all other transparency flags MUST be ignored.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-3947
+kind: normative-requirement
+summary: To recover from expired NAT mappings, hosts NOT behind NAT SHOULD use the last valid UDP-encapsulated IKE or IPsec packet to determine current IP and port addresses. Hosts behind dynamic NAT MUST NOT do this, as it opens a DoS attack vector since the non-NAT peer's address does not change.
+section: "7"
+rfc2119_level: SHOULD
+topics:
+    - ipsec
+    - vpn
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

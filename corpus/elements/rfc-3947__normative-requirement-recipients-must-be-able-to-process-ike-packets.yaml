@@ -1,0 +1,11 @@
+document: rfc-3947
+kind: normative-requirement
+summary: Recipients MUST be able to process IKE packets whose source port is different from 500, because a NAT may change the UDP source port. When rekeying or sending notifications, the original responder MUST use the same IP and port numbers used when the IKE SA was last used.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - vpn
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-3947
+kind: normative-requirement
+summary: For INITIAL-CONTACT notifications from a host behind NAT, the source IP and port MUST NOT be used to determine which IKE/IPsec SAs to remove, because NAT can change them. Instead, the ID payload from the other end SHOULD be used to identify SAs to remove.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - ipsec
+    - vpn
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

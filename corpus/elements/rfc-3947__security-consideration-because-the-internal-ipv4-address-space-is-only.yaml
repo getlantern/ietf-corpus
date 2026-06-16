@@ -1,0 +1,12 @@
+document: rfc-3947
+kind: security-consideration
+summary: Because the internal IPv4 address space is only 32 bits and often sparse, an attacker can enumerate internal addresses behind NAT by brute-forcing all 2^32 possible IP addresses to find a matching NAT-D hash. With an educated guess of the private address range, the search space reduces to approximately 2^24 + 2*(2^16).
+section: "8"
+topics:
+    - ipsec
+    - vpn
+    - nat
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

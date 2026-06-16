@@ -1,0 +1,10 @@
+document: rfc-3947
+kind: state-machine
+summary: In Main Mode, when NAT is detected, the initiator transitions from UDP port 500 to port 4500 when sending the ID payload. The state change sets both source and destination UDP ports to 4500 for all subsequent packets, including informational notifications, and prepends the non-ESP marker.
+section: "4"
+topics:
+    - ipsec
+    - vpn
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

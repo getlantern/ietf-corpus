@@ -1,0 +1,11 @@
+document: rfc-3947
+kind: normative-requirement
+summary: In Main Mode, if NAT is detected, the initiator MUST change both UDP source and destination ports to 4500 when sending the ID payload. All subsequent packets to the peer (including informational notifications) MUST be sent on port 4500, and IKE data MUST be prepended with the non-ESP marker from RFC 3948.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - vpn
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

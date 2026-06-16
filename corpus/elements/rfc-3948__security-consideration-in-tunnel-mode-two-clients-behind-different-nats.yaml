@@ -1,0 +1,11 @@
+document: rfc-3948
+kind: security-consideration
+summary: In tunnel mode, two clients behind different NATs with the same inner IP address can cause a security gateway (SGW) to become confused about which SA to use for return traffic. Implementors MUST devise ways to prevent this, with the RECOMMENDED approach being to assign locally unique IP addresses (e.g., via DHCP over IPsec) or use NAT at the SGW.
+section: "5.1"
+topics:
+    - ipsec
+    - nat
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

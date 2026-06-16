@@ -1,0 +1,10 @@
+document: rfc-3957
+kind: design-rationale
+summary: The key derivation uses HMAC-SHA1(AAA-key, nonce || MN-identifier) rather than transmitting the key directly; this allows the Registration Reply to carry only the nonce, which does not expose the AAA key even if the reply is observed by an adversary.
+section: "5"
+topics:
+    - mobility
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

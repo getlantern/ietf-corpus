@@ -1,0 +1,12 @@
+document: rfc-3947
+kind: security-consideration
+summary: Updating IKE SA/ESP UDP encapsulation addresses/ports on each valid authenticated packet can be exploited by an on-path attacker who reorders or replays packets with modified source/destination addresses, causing the non-NAT peer to send traffic to the wrong host or port. Implementations SHOULD AUDIT each mapping change.
+section: "8"
+rfc2119_level: SHOULD
+topics:
+    - ipsec
+    - vpn
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

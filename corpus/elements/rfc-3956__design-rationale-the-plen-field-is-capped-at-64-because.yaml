@@ -1,0 +1,9 @@
+document: rfc-3956
+kind: design-rationale
+summary: The 'plen' field is capped at 64 because values from 65 to 95 would overlap with the high-order bits of the multicast group-id field, corrupting group identity. This is consistent with the constraint in RFC 3306.
+section: A
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-3947
+kind: design-rationale
+summary: IKE traffic is moved off port 500 to port 4500 as soon as NAT is detected to avoid IPsec-aware NAT special-casing. Some NATs refuse to change IKE source port 500 or use IKE cookies to demultiplex instead of source port, both of which break generic NAT transparency; moving ports immediately minimizes the exposure window.
+section: "4"
+topics:
+    - ipsec
+    - vpn
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

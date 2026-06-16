@@ -1,0 +1,11 @@
+document: rfc-3948
+kind: security-consideration
+summary: It is impossible to guarantee security for some clients behind a NAT while allowing cleartext from different clients behind the same NAT, because the server sees all clients as the same IP. The scenario of mixing secured and cleartext policies for the same traffic descriptor MUST NOT be allowed on servers requiring security guarantees; it MAY be used for best-effort security only.
+section: "5.2"
+topics:
+    - ipsec
+    - nat
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

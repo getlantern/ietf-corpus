@@ -1,0 +1,9 @@
+document: rfc-3956
+kind: design-rationale
+summary: A full 128-bit RP address cannot be embedded in a 128-bit group address while preserving group identity. The solution encodes only the network prefix (up to 64 bits) plus a 4-bit RIID, requiring RP administrators to manually configure the RP's interface ID to match the RIID.
+section: "1.3"
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

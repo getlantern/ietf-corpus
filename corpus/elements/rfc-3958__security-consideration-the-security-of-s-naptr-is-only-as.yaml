@@ -1,0 +1,9 @@
+document: rfc-3958
+kind: security-consideration
+summary: 'The security of S-NAPTR is only as good as the security of the DNS queries: compromised DNS could redirect clients via bogus NAPTR/SRV records. DNSSEC should be used to ensure validity of DNS records. Applications MUST define end-to-end authentication so clients can verify they reached the correct server regardless of DNS integrity.'
+section: "8"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
