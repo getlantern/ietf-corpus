@@ -1,0 +1,9 @@
+document: rfc-4750
+kind: design-rationale
+summary: The LSDB table (ospfLsdbTable) is provided primarily for network debugging rather than for operational management. The raw ospfLsdbAdvertisement OCTET STRING exposes the full LSA contents but SNMP agents may not be able to return the largest variable-length LSAs due to SNMP message size constraints.
+section: 2.1.3
+topics:
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

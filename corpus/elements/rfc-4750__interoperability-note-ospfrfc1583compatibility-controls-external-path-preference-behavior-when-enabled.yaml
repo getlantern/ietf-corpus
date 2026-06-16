@@ -1,0 +1,9 @@
+document: rfc-4750
+kind: interoperability-note
+summary: ospfRFC1583Compatibility controls external path preference behavior. When enabled, only cost is used to choose among multiple AS-external LSAs for the same destination (RFC 1583 behavior). When disabled, path type preference (intra-area > inter-area > external) takes precedence, with cost only as a tiebreaker (RFC 2328 behavior). Mixing modes in an AS can cause routing loops.
+section: "3"
+topics:
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

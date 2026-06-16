@@ -1,0 +1,10 @@
+document: rfc-4750
+kind: design-rationale
+summary: The ospfDiscontinuityTime object records the sysUpTime of the most recent counter discontinuity event. This is needed because Counter32 objects wrap and can be reset by process restarts; without a discontinuity timestamp, management stations cannot distinguish a counter reset from normal operation.
+section: "3"
+topics:
+    - routing
+    - snmp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
