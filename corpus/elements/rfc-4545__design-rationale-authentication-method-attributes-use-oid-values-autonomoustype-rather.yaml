@@ -1,0 +1,9 @@
+document: rfc-4545
+kind: design-rationale
+summary: Authentication method attributes use OID values (AutonomousType) rather than enumerated integers so that vendors and other MIB modules can define new authentication methods without modifying this MIB module. Each new method registers an OBJECT-IDENTITY under ipsAuthMethodTypes or its own enterprise subtree.
+section: "7.8"
+topics:
+    - snmp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

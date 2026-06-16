@@ -1,0 +1,11 @@
+document: rfc-4550
+kind: security-consideration
+summary: Lemonade-compliant mail submission servers SHOULD use TLS-protected IMAP connections when fetching message content using the URLAUTH token. When a client uses SMTP STARTTLS before sending a BURL command referencing non-public information, the submission server should use STARTTLS or equivalent when fetching the referenced content.
+section: "8.2"
+rfc2119_level: SHOULD
+topics:
+    - email
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,8 @@
+document: rfc-4551
+kind: design-rationale
+summary: Servers that store only a single mod-sequence per message (rather than per metadata item) can avoid spurious MODIFIED responses for +FLAGS/-FLAGS operations by checking whether the client's requested flag was actually changed by the competing STORE, and proceeding with the operation if only an unrelated flag changed.
+section: "5"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

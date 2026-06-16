@@ -1,0 +1,9 @@
+document: rfc-4551
+kind: normative-requirement
+summary: A client becomes a CONDSTORE-aware client by issuing any CONDSTORE-enabling command (SELECT/EXAMINE with CONDSTORE, STATUS HIGHESTMODSEQ, FETCH or SEARCH with MODSEQ, FETCH with CHANGEDSINCE, or STORE with UNCHANGEDSINCE). The server MUST then include mod-sequence data in all subsequent unsolicited FETCH responses until the connection is closed.
+section: "1"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

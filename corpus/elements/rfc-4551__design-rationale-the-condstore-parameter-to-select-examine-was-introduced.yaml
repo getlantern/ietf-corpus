@@ -1,0 +1,8 @@
+document: rfc-4551
+kind: design-rationale
+summary: 'The CONDSTORE parameter to SELECT/EXAMINE was introduced to avoid a race condition: metadata could be modified by another session after the server sent HIGHESTMODSEQ but before the client issued its first CONDSTORE-enabling command, causing the client to miss mod-sequence updates.'
+section: "3.7"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,10 @@
+document: rfc-4551
+kind: normative-requirement
+summary: An IMAP server supporting CONDSTORE MUST associate a positive unsigned 64-bit modification sequence (mod-sequence) with every IMAP message, and MUST guarantee that each STORE command on the same mailbox receives a different mod-sequence value. For any two successful STORE operations in the same session on the same mailbox, the mod-sequence of the second completed operation MUST be greater than that of the first.
+section: "1"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

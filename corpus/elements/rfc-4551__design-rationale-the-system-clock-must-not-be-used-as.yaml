@@ -1,0 +1,8 @@
+document: rfc-4551
+kind: design-rationale
+summary: The system clock MUST NOT be used as a source of mod-sequence values because NTP or other time adjustments can cause the clock to go backwards, which would violate the requirement that each successive STORE on the same mailbox yields a strictly increasing mod-sequence.
+section: "1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

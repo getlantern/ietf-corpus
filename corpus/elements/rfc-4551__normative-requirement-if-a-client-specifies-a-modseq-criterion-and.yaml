@@ -1,0 +1,9 @@
+document: rfc-4551
+kind: normative-requirement
+summary: 'If a client specifies a MODSEQ criterion and the server returns a non-empty SEARCH result, the server MUST append the highest mod-sequence of all returned messages at the end of the untagged SEARCH response: `* SEARCH <numbers> (MODSEQ <value>)`.'
+section: "3.5"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

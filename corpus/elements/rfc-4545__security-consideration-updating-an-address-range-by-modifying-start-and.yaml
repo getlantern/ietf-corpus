@@ -1,0 +1,9 @@
+document: rfc-4545
+kind: security-consideration
+summary: Updating an address range by modifying start and end addresses separately (rather than atomically) can temporarily expose a wider range than intended. Applications MUST update both ipsAuthIdentAddrStart and ipsAuthIdentAddrEnd in the same SNMP set request, or add a new range row and delete the old one.
+section: "9.2"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

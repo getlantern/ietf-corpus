@@ -1,0 +1,9 @@
+document: rfc-4551
+kind: interoperability-note
+summary: Upon receipt of a MODIFIED response code, the client SHOULD issue a FETCH or NOOP to determine whether the watched metadata items actually changed; it is RECOMMENDED that servers send unsolicited FETCH responses to avoid this polling. If the items have not changed, the client SHOULD retry with the updated mod-sequence, allowing at least 2 retries.
+section: "3.2"
+rfc2119_level: SHOULD
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

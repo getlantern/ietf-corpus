@@ -1,0 +1,8 @@
+document: rfc-4546
+kind: state-machine
+summary: 'The offline upstream parameter update state machine: (1) SET docsIfUpChannelStatus=''createAndWait'' → status becomes ''notReady''; (2) SET docsIfUpChannelCloneFrom=physical ifIndex → parameters copied, status becomes ''notInService''; (3) modify parameters in temporary row; (4) SET status=''active'' to validate (returns ''commitFailed'' if invalid); (5) SET docsIfUpChannelUpdate=''true'' to commit to physical interface; (6) SET status=''destroy'' to remove temporary row.'
+section: 3.2.5.2
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
