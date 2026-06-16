@@ -1,0 +1,9 @@
+document: rfc-4164
+kind: design-rationale
+summary: Context replication is introduced to reduce the overhead of context establishment when multiple short-lived connections occur simultaneously. Because each new flow requires full header information during initialization, a multitude of short-lived connections can significantly reduce overall compression gain. Fields like IPv6 source/destination addresses (16 octets each) can be omitted when already present at the decompressor.
+section: "1"
+topics:
+    - congestion
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

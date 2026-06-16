@@ -1,0 +1,6 @@
+document: rfc-4164
+kind: design-rationale
+summary: Support for context replication is added using the profile-specific part of the IR packet rather than defining an entirely new packet type. One bit (x) left in the IR header for 'Profile specific information' may be used as a flag to distinguish IR from IR-CR packets, preserving extensibility while reusing the existing IR packet structure.
+section: 3.5.2
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

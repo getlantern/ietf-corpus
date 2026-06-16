@@ -1,0 +1,7 @@
+document: rfc-4164
+kind: normative-requirement
+summary: Upon reception of a STATIC-NACK, the compressor MUST transit back to its initial no-context state. The compressor SHOULD also refrain from sending IR-CR packets using the same base context until a subsequent acknowledgement makes that context suitable again, and SHOULD re-initialize the decompressor context using an IR packet.
+section: 3.3.3.4
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

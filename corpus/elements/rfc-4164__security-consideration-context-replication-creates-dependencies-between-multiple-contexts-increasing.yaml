@@ -1,0 +1,8 @@
+document: rfc-4164
+kind: security-consideration
+summary: Context replication creates dependencies between multiple contexts, increasing the potential impact of attacks already identified in RFC 3095. Specifically, corruption of one context can prevent the compressor from initializing another context at the decompressor, or the corruption can propagate to a newly replicated context if the compressor uses a corrupted base context for replication.
+section: "4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

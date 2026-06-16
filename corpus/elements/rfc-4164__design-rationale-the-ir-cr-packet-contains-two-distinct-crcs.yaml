@@ -1,0 +1,6 @@
+document: rfc-4164
+kind: design-rationale
+summary: 'The IR-CR packet contains two distinct CRCs with different purposes: an 8-bit CRC protecting the integrity of the IR-CR header itself (analogous to the IR packet''s 8-bit CRC), and a 7-bit CRC over the original uncompressed header to verify that the replication process succeeded. With context replication mixing compressed and uncompressed data, this dual-CRC design is necessary because the distinction present in standard IR packets no longer applies.'
+section: 3.5.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

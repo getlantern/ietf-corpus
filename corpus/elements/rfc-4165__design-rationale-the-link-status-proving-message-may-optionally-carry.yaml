@@ -1,0 +1,9 @@
+document: rfc-4165
+kind: design-rationale
+summary: The Link Status Proving message MAY optionally carry a variable-length filler field. It is RECOMMENDED that the filler be sized comparably to expected User Data messages and contain a varying pattern so that the SCTP checksum can verify transmission accuracy. This also allows the proving period to drive SCTP slow start to completion before the link enters service.
+section: 2.3.2.1
+topics:
+    - sctp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

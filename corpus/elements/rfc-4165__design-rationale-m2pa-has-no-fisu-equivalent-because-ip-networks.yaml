@@ -1,0 +1,8 @@
+document: rfc-4165
+kind: design-rationale
+summary: M2PA has no FISU equivalent because IP networks are shared resources where continuous fill-in transmission is undesirable, and SCTP does not require its upper layer to transmit continuously. Instead, an empty User Data message (FSN unchanged) is sent only when acknowledgement is needed but no MTP3 data is available.
+section: 1.6.2
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

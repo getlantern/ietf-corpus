@@ -1,0 +1,6 @@
+document: rfc-4165
+kind: design-rationale
+summary: Link Status messages (Alignment, Processor Outage, Busy, Out of Service) SHOULD NOT be transmitted continuously, unlike their MTP2 counterparts (SIO, SIPO, SIB, SIOS). This conserves IP network bandwidth since IP is a shared resource, and SCTP's reliable delivery removes the need for continuous repetition for reliability.
+section: 4.1.3
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

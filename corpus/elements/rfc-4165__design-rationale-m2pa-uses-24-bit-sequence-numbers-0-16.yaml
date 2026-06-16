@@ -1,0 +1,6 @@
+document: rfc-4165
+kind: design-rationale
+summary: M2PA uses 24-bit sequence numbers (0–16,777,215) instead of MTP2's 7-bit values to accommodate IP network latency and buffering characteristics. This necessitates Extended Changeover Order (XCO/XCA) messages in MTP3. Only one User Data stream per link direction is supported because MTP3 issues only one XCO/XCA during changeover; multiple streams would require a new multi-BSNT XCO/XCA extension.
+section: 4.2.3
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

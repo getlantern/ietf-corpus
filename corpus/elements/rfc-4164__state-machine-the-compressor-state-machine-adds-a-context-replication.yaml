@@ -1,0 +1,6 @@
+document: rfc-4164
+kind: state-machine
+summary: The compressor state machine adds a Context Replication (CR) state between IR and higher-order states. From IR, the compressor transitions to CR when a suitable base context can be selected. From CR, it transitions upward via the optimistic approach or upon receiving an ACK. A STATIC-NACK from the decompressor drives a downward transition back to the IR no-context state.
+section: 3.3.2
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

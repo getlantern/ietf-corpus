@@ -1,0 +1,9 @@
+document: rfc-4168
+kind: protocol-element
+summary: SIP transactions are mapped to SCTP streams to avoid HOL blocking. The chosen mapping sends all SIP messages over stream zero with the unordered flag; each side manages its sending streams independently, allowing responses to arrive on different streams than requests.
+section: "5.1"
+topics:
+    - sip
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

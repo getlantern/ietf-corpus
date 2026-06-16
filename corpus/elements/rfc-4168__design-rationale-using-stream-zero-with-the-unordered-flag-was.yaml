@@ -1,0 +1,9 @@
+document: rfc-4168
+kind: design-rationale
+summary: Using stream zero with the unordered flag was chosen as the simplest mapping that avoids HOL blocking. A prior proposal to use SCTP stream IDs as lightweight SIP transaction identifiers was withdrawn because RFC 3261 already provides a transaction identifier in the Via branch parameter, making SCTP stream demultiplexing unnecessary.
+section: "5.1"
+topics:
+    - sip
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
