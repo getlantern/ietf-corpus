@@ -1,0 +1,10 @@
+document: rfc-4572
+kind: design-rationale
+summary: Self-signed certificates are necessary because many endpoints (e.g., SIP phones) have dynamically configured IP addresses and near-zero-configuration deployment requirements, making CA-signed certificates impractical. The fingerprint mechanism allows self-signed certificates to be used securely provided the SDP description's integrity is assured.
+section: "3.3"
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

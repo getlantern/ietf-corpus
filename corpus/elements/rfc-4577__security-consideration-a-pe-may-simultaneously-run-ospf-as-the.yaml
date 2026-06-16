@@ -1,0 +1,10 @@
+document: rfc-4577
+kind: security-consideration
+summary: A PE may simultaneously run OSPF as the SP backbone IGP and as the IGP for one or more VPNs. These MUST be independent OSPF instances to prevent inadvertent route leakage between the backbone and any VPN, and between VPNs. Without authentication, an attacker could inject spoofed OSPF messages to corrupt VPN routing or launch a denial-of-service attack.
+section: "6"
+topics:
+    - security
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

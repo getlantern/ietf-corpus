@@ -1,0 +1,11 @@
+document: rfc-4572
+kind: normative-requirement
+summary: An endpoint acting as the TLS server (setup:passive role) MUST present a certificate during TLS initiation. If the certificate does not match the original fingerprint, the client endpoint MUST terminate the media connection with a bad_certificate error.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

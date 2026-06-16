@@ -1,0 +1,9 @@
+document: rfc-4577
+kind: design-rationale
+summary: Sham links are treated as OSPF Demand Circuits to suppress periodic refresh traffic, since as long as a backdoor link is up, periodic LSA flooding over the sham link serves no purpose. However, synchronization must still be maintained so that if the backdoor fails, the sites can immediately exchange LSA databases.
+section: 4.2.7.3
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

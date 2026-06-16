@@ -1,0 +1,11 @@
+document: rfc-4568
+kind: security-consideration
+summary: When SDP messages are routed through intermediate systems (e.g., SIP proxies), hop-by-hop TLS or IPsec SHOULD NOT be used to protect security descriptions. MIME secure multiparts (e.g., S/MIME) are RECOMMENDED to ensure end-to-end protection of the 'a=crypto' attribute and keying material against intermediate-system inspection or modification.
+section: "8.3"
+topics:
+    - security
+    - realtime
+    - sip
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

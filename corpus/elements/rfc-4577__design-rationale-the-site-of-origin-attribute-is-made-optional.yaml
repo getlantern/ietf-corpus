@@ -1,0 +1,10 @@
+document: rfc-4577
+kind: design-rationale
+summary: The Site of Origin attribute is made optional for OSPF-learned routes. Omitting it enables automatic repair of partitioned multi-homed sites (traffic reroutes via VPN backbone), while including it reduces unnecessary overhead from re-injecting intra-site routes. The trade-off is left to operator configuration.
+section: 4.2.6
+topics:
+    - routing
+    - mpls
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

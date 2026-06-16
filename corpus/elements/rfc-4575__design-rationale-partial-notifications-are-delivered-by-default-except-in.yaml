@@ -1,0 +1,9 @@
+document: rfc-4575
+kind: design-rationale
+summary: Partial notifications are delivered by default (except in the initial NOTIFY response to a SUBSCRIBE, which carries full state) to minimize notification traffic. This avoids retransmitting large conference documents on every small roster change, at the cost of a subscriber-side state reconstruction algorithm.
+section: "3.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

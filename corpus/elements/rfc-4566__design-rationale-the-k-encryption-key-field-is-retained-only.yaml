@@ -1,0 +1,9 @@
+document: rfc-4566
+kind: design-rationale
+summary: The `k=` encryption key field is retained only for backward compatibility with older implementations. New applications SHOULD use dedicated key exchange mechanisms (e.g., those being standardised at the time of RFC 4566), because `k=` cannot negotiate key algorithms, carries only a single symmetric key, and provides no integrity protection.
+section: "5.12"
+topics:
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

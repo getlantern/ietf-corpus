@@ -1,0 +1,9 @@
+document: rfc-4567
+kind: security-consideration
+summary: Using multiple key management protocols in a single offer without authenticating the protocol identifier list enables bidding-down attacks, where a MITM removes stronger offers. The offer MUST NOT contain protocols weaker than local security policy permits, and all offered identifiers must be authenticated by each key management protocol.
+section: "8"
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

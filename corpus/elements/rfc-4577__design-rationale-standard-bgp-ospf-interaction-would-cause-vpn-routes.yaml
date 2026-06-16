@@ -1,0 +1,9 @@
+document: rfc-4577
+kind: design-rationale
+summary: Standard BGP/OSPF interaction would cause VPN routes from one site to be delivered to another as type 5 LSAs (AS-external routes). RFC 4577 uses type 3 LSAs instead, so that VPN-internal routes appear as inter-area routes and can be distinguished from genuine AS-external routes; this also enables OSPF backdoor links to function correctly during legacy backbone transitions.
+section: "3"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

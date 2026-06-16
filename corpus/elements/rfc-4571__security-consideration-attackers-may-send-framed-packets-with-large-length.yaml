@@ -1,0 +1,10 @@
+document: rfc-4571
+kind: security-consideration
+summary: Attackers may send framed packets with large LENGTH values to exploit buffer overflows; implementations MUST handle packets of any length, from a NULL packet (LENGTH == 0) to the maximum 64K-octet packet (LENGTH == 0xFFFF). Implementors should also read the Security Considerations of RFC 3550 and RFC 3551, and of [COMEDIA] for connection-oriented session-specific issues.
+section: "8"
+topics:
+    - rtp
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

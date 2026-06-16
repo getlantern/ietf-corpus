@@ -1,0 +1,12 @@
+document: rfc-4572
+kind: security-consideration
+summary: When not using end-to-end authenticity protection over SIP, a certificate SHOULD assert the endpoint's SIP Address of Record as a uniformResourceIndicator subjectAltName. If a received certificate asserts an identity other than the called/calling party, the endpoint SHOULD alert the user and ask for confirmation.
+section: "7"
+rfc2119_level: SHOULD
+topics:
+    - tls
+    - pkix
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

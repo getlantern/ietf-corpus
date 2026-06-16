@@ -1,0 +1,11 @@
+document: rfc-4568
+kind: design-rationale
+summary: 'Late binding of SSRCs is RECOMMENDED: rather than signaling SSRCs in SDP, the crypto context is bound to an SSRC upon first packet arrival. This works because the ROC is always zero at session start and unique master keys per direction avoid keystream reuse even in SSRC collision scenarios.'
+section: 6.4.1
+topics:
+    - realtime
+    - rtp
+    - security
+    - design-rationale
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

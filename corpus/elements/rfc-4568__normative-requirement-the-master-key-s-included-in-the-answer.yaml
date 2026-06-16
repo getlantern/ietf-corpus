@@ -1,0 +1,12 @@
+document: rfc-4568
+kind: normative-requirement
+summary: The master key(s) included in the answer MUST be different from those in the offer; the receiver MUST NOT use the sender's inline master key for the SRTP or SRTCP packets it sends, because the default SRTP cipher is insecure when a master key is reused across distinct SRTP streams.
+section: 7.1.2
+rfc2119_level: MUST
+topics:
+    - realtime
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

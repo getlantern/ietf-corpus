@@ -1,0 +1,10 @@
+document: rfc-4576
+kind: security-consideration
+summary: An attacker may set the DN bit in an LSA traveling from CE to PE when it should be clear, causing address prefixes in that LSA to become unreachable from other VPN sites. Conversely, an attacker may clear the DN bit when it should be set, potentially causing routing loops. Both attacks can be mitigated by using OSPFv2 cryptographic authentication as specified in RFC 2328 Section D.
+section: "5"
+topics:
+    - security
+    - routing
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

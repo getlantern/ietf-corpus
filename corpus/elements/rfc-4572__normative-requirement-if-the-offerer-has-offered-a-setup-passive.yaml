@@ -1,0 +1,11 @@
+document: rfc-4572
+kind: normative-requirement
+summary: If the offerer has offered a 'setup:passive' or 'setup:actpass' role, it MUST begin listening for an incoming connection as soon as it sends its offer. However, it MUST NOT assume that data transmitted over the TLS connection is valid until it has received a matching fingerprint in an SDP answer.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - tls
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

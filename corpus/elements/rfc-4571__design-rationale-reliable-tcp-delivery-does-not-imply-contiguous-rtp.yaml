@@ -1,0 +1,10 @@
+document: rfc-4571
+kind: design-rationale
+summary: 'Reliable TCP delivery does not imply contiguous RTP sequence numbers: if TCP tunnels a UDP stream through a middlebox, sequence numbers reflect any loss or reordering on the UDP segment of the path. The framing method intentionally does not specify packet-stream properties such as loss, reordering, or out-of-band semantics.'
+section: "3"
+topics:
+    - rtp
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

@@ -1,0 +1,11 @@
+document: rfc-4577
+kind: normative-requirement
+summary: If a PE determines that the next-hop interface for a route is a sham link, then the PE SHOULD NOT redistribute that route into BGP as a VPN-IPv4 route. However, packets whose preferred route uses the sham link as next hop MUST be forwarded according to the corresponding BGP route.
+section: 4.2.7.4
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"

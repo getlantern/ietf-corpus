@@ -1,0 +1,11 @@
+document: rfc-4568
+kind: normative-requirement
+summary: Each SRTP master key MUST be a unique cryptographically random value with respect to all other master keys in the entire SDP message, including master keys for other streams. If the base64-decoded key-and-salt length does not match the crypto-suite specification, the crypto attribute MUST be considered invalid.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-16"
