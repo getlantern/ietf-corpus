@@ -1,0 +1,10 @@
+document: rfc-5779
+kind: normative-requirement
+summary: On the LMA-to-HAAA interface, the Auth-Request-Type AVP MUST be set to AUTHORIZE_ONLY. If the HAAA cannot authorize the mobility service session, the reply MUST have the Result-Code AVP set to DIAMETER_AUTHORIZATION_REJECTED (5003), and the LMA MUST send a PBA with an appropriate error Status Value back to the MAG.
+section: 4.2.1
+rfc2119_level: MUST
+topics:
+    - diameter
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
