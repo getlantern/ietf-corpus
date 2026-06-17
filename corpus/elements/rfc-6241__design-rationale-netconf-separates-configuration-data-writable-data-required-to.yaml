@@ -1,0 +1,9 @@
+document: rfc-6241
+kind: design-rationale
+summary: NETCONF separates configuration data (writable data required to achieve desired device state) from state data (read-only status, statistics) because mixing them would produce large datasets, nonsensical write attempts, and complications restoring archived configurations. <get-config> retrieves only configuration; <get> retrieves both.
+section: "1.4"
+topics:
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

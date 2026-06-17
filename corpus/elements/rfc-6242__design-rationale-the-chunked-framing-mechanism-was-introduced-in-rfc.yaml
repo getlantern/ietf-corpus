@@ -1,0 +1,9 @@
+document: rfc-6242
+kind: design-rationale
+summary: The chunked framing mechanism was introduced in RFC 6242 to replace the EOM-only framing of RFC 4742, which was found to be insecure because ]]>]]> can appear in well-formed XML documents and could be exploited for injection attacks. Chunked framing avoids any content-dependent delimiter.
+section: "4.1"
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

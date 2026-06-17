@@ -1,0 +1,9 @@
+document: rfc-6242
+kind: security-consideration
+summary: The EOM sequence ]]>]]> can legally appear in XML attributes, comments, and processing instructions, contrary to the assumption in RFC 4742. If sent deliberately in RPC messages it can cause operational problems or injection attacks. RFC 6242 limits EOM use to the initial <hello> message and uses chunked framing thereafter to eliminate this attack surface.
+section: "6"
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6240
+kind: security-consideration
+summary: The MIB contains read-write and read-create objects (e.g., pwCepCfgJtrBfrDepth, pwCepCfgEnableDBA, pwCepCfgRowStatus) whose unauthorized modification can disrupt active pseudowires and corrupt performance data. Implementations should apply SNMPv3 access control to restrict write access to authorized managers.
+section: "8"
+topics:
+    - security
+    - snmp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
