@@ -1,0 +1,9 @@
+document: rfc-5840
+kind: security-consideration
+summary: Because ESP is end-to-end, intermediate devices cannot verify correctness of WESP header fields. An attacker could modify the WESP header to cause a packet to sneak past a firewall by setting fields to values the firewall allows. Endpoints MUST verify WESP header sanity before accepting packets.
+section: "3"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

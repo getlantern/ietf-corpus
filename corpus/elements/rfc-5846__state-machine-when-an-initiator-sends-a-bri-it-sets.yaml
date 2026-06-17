@@ -1,0 +1,8 @@
+document: rfc-5846
+kind: state-machine
+summary: When an initiator sends a BRI, it sets a 'revocation in progress' flag in the mobile node's BCE and starts the InitMINDelayBRIs timer. The BCE stays in this state until a BRA is received or BRIMaxRetriesNumber is exhausted. In a race condition where a new Binding Update arrives while the flag is set, the entity resolves it per local policy, removing the flag if the BU is accepted.
+section: "7"
+topics:
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

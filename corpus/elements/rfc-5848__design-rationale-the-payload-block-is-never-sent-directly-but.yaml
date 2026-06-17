@@ -1,0 +1,10 @@
+document: rfc-5848
+kind: design-rationale
+summary: The Payload Block is never sent directly but always fragmented into Certificate Block messages because certificates can legitimately exceed 2048 octets, which is the maximum syslog message length. Each Certificate Block carries a fragment of the Payload Block along with its own signature for authenticity.
+section: "5.1"
+topics:
+    - syslog
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

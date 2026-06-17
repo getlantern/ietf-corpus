@@ -1,0 +1,9 @@
+document: rfc-5846
+kind: normative-requirement
+summary: BRI retransmissions MUST use an exponential back-off process in which the timeout doubles upon each retransmission until a response is received or the timeout reaches MAX_BRACK_TIMEOUT. If no BRA is received after BRIMaxRetriesNumber retransmits, the initiator SHOULD clean up all resources associated with that mobile node binding.
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

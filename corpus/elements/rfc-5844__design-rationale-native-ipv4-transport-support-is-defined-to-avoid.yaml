@@ -1,0 +1,10 @@
+document: rfc-5844
+kind: design-rationale
+summary: Native IPv4 transport support is defined to avoid the 40-octet per-packet overhead that would result from wrapping PMIPv6 signaling and tunneled data inside an IPv6-over-IPv4 transition tunnel. By sending the Mobility Header directly in IPv4-UDP, no extra encapsulation layer is needed for data traffic.
+section: "4"
+topics:
+    - mobility
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5848
+kind: design-rationale
+summary: Signature Groups were introduced because in deployments where different messages (differentiated by PRI/Facility) are sent to different collectors, each collector must receive only the Signature Blocks covering its own messages. Grouping syslog messages by Signature Group ensures that Signature Blocks follow their corresponding messages to each collector.
+section: "1"
+topics:
+    - syslog
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

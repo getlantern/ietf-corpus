@@ -1,0 +1,9 @@
+document: rfc-5848
+kind: security-consideration
+summary: Message authenticity is not established until the Signature Block is verified. With Signature Block checking, an attacker can only forge messages if they compromise the signer's private key. Collectors should not assume message authenticity before validation.
+section: "8.3"
+topics:
+    - syslog
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

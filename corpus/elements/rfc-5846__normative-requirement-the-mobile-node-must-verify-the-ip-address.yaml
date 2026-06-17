@@ -1,0 +1,10 @@
+document: rfc-5846
+kind: normative-requirement
+summary: The mobile node MUST verify the IP address in the Type 2 routing header of a received BRI is its Home Address and that its Binding Update List contains an entry for that address; if either test fails it SHOULD silently discard the BRI. The mobile node MUST also verify the P bit is NOT set; if set, it MUST reject with status 'Proxy Binding Revocation NOT Supported' (135).
+section: "10"
+rfc2119_level: MUST
+topics:
+    - mobility
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

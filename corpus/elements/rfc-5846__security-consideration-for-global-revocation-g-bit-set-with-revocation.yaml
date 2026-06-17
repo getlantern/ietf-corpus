@@ -1,0 +1,9 @@
+document: rfc-5846
+kind: security-consideration
+summary: For global revocation (G bit set with Revocation Trigger 'Per-Peer Policy'), the LMA MUST verify the requesting MAG is authorized to use global revocations. Unauthorized global revocation attempts MUST be rejected with status code 130 ('Global Revocation NOT Authorized') to prevent a MAG from bulk-terminating sessions it does not own.
+section: "13"
+topics:
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5846
+kind: design-rationale
+summary: The LMA is explicitly permitted to delete the mobile node's IP tunnel immediately after sending the initial BRI, before receiving the BRA. This avoids holding tunnel resources during the round-trip acknowledgement delay, accepting a brief risk of forwarding disruption if the BRA later indicates failure.
+section: "8.1"
+topics:
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

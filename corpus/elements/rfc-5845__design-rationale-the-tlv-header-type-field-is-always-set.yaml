@@ -1,0 +1,10 @@
+document: rfc-5845
+kind: design-rationale
+summary: The TLV header Type field is always set to 0 to allow a receiver to distinguish a TLV-encapsulated packet from a raw IP packet arriving over the same UDP tunnel, since the Proxy Binding Update (an IP packet) and GRE data packets share the same UDP tunnel and the IP version field in an IP header is never 0.
+section: "7.1"
+topics:
+    - routing
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

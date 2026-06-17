@@ -1,0 +1,9 @@
+document: rfc-5847
+kind: design-rationale
+summary: An unsolicited Heartbeat Response (U bit set) is sent immediately after restart to allow peers to discover the recovery quickly, rather than waiting up to HEARTBEAT_INTERVAL seconds for the next periodic exchange. The sequence number in such a message is ignored since synchronization occurs in the subsequent request/response cycle.
+section: "3.2"
+topics:
+    - mobility
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

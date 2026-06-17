@@ -1,0 +1,9 @@
+document: rfc-5847
+kind: design-rationale
+summary: The Restart Counter is preserved across reboots (as persistent state) so that a restarted node can correctly signal its recovery to peers, even when it has lost all PMIPv6 session state — without persistent storage the counter would reset to a previously seen value and the peer could not detect the restart.
+section: "3.2"
+topics:
+    - mobility
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

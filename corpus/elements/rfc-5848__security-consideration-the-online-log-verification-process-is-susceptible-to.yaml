@@ -1,0 +1,9 @@
+document: rfc-5848
+kind: security-consideration
+summary: The online log verification process is susceptible to flooding (DoS) attacks. An attacker can flood the collector with unsigned messages, causing legitimate messages to roll off the 'Waiting for Signature' queue before their Signature Blocks arrive. Implementers must dimension queues sufficiently large.
+section: "8.10"
+topics:
+    - syslog
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

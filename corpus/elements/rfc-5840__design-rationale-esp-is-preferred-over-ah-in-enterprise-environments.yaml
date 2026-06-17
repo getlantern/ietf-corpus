@@ -1,0 +1,9 @@
+document: rfc-5840
+kind: design-rationale
+summary: ESP is preferred over AH in enterprise environments because AH does not work in NAT environments. Integrity-only ESP (ESP-NULL or AES-GMAC) provides authentication without encryption, enabling network monitoring, but standard ESP provides no deterministic way to distinguish encrypted from unencrypted payloads.
+section: "1"
+topics:
+    - ipsec
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

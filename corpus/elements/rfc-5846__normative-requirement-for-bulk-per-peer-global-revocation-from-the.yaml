@@ -1,0 +1,10 @@
+document: rfc-5846
+kind: normative-requirement
+summary: For bulk Per-Peer global revocation from the MAG, the MAG MUST set both P and G bits, MUST set Revocation Trigger to 'Per-Peer Policy' (128), and MUST include the MAG identity in the MN-ID option. The LMA MUST verify the MAG is authorized for global revocation; if not, it MUST reject with status 'Global Revocation NOT Authorized' (130).
+section: "9.2"
+rfc2119_level: MUST
+topics:
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5847
+kind: design-rationale
+summary: Heartbeat messages are defined as a subtype of the existing Mobility Header (protocol 135) rather than a new protocol, so the existing IPsec security policy infrastructure for PMIPv6 can protect them by simply adding MH Type 13 as an SPD selector — no new security mechanisms are required.
+section: "6"
+topics:
+    - security
+    - ipsec
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

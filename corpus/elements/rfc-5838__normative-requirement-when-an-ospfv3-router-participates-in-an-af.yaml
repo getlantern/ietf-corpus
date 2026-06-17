@@ -1,0 +1,9 @@
+document: rfc-5838
+kind: normative-requirement
+summary: When an OSPFv3 router participates in an AF (sets the AF-bit in Options), it MUST discard Hello packets that have the AF-bit clear in the Options field. The sole exception is the base IPv6 unicast AF, where this check MUST NOT be done for backward compatibility.
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,11 @@
+document: rfc-5838
+kind: security-consideration
+summary: When multiple OSPFv3 instances share the same interface, they MUST all use the same IPsec Security Association (SA) because SA selectors do not provide selection based on OSPFv3 header fields such as the Instance ID. This is a restriction documented in RFC 4552 Section 8.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

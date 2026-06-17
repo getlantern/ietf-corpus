@@ -1,0 +1,9 @@
+document: rfc-5839
+kind: design-rationale
+summary: The extension is motivated by the inefficiency of SIP events where every SUBSCRIBE refresh triggers a NOTIFY with full resource state, even when state has not changed. This is analogous to HTTP's repeated GET problem, solved there via conditional requests with entity-tags.
+section: "2.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
