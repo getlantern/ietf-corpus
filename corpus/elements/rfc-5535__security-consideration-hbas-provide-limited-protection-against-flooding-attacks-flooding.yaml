@@ -1,0 +1,9 @@
+document: rfc-5535
+kind: security-consideration
+summary: 'HBAs provide limited protection against flooding attacks: flooding a specific host address requires O(2^(59+16*Sec)) attempts, making it infeasible. However, flooding attacks targeting a network prefix (router, access link) rather than a specific host address cannot be prevented by HBAs alone and require additional mechanisms such as reachability tests.'
+section: "11.1"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

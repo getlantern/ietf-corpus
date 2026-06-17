@@ -1,0 +1,8 @@
+document: rfc-5530
+kind: design-rationale
+summary: AUTHENTICATIONFAILED is semantically equivalent to sending no response code, except that its presence tells the client the failure was not due to a transient condition like UNAVAILABLE, so there is no point in retrying the same credentials later. This distinction drives the motivation for named codes over no-code responses.
+section: "3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

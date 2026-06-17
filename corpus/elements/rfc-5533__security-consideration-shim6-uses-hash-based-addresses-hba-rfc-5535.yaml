@@ -1,0 +1,11 @@
+document: rfc-5533
+kind: security-consideration
+summary: Shim6 uses Hash-Based Addresses (HBA, RFC 5535) and/or Cryptographically Generated Addresses (CGA, RFC 3972) to prevent redirection attacks. When HBAs are used, all addresses included in Shim6 (as locator or ULID) must belong to the same HBA set. For CGA, only the ULID needs to be a CGA; additional locators need not be.
+section: "4.4"
+topics:
+    - ip
+    - v6ops
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5535
+kind: protocol-element
+summary: HBA-set generation step 6 computes Hash1[i] by SHA-1 over (Modifier || Prefix[i] || collision_count || public_key_or_extended_modifier || Multi-Prefix extension), takes the 64 leftmost bits, writes Sec into the three leftmost bits, sets u and g bits to zero, and forms HBA[i] by concatenating Prefix[i] with this 64-bit interface identifier.
+section: "6"
+topics:
+    - ip
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

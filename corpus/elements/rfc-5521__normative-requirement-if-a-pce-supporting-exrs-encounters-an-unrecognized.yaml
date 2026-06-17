@@ -1,0 +1,10 @@
+document: rfc-5521
+kind: normative-requirement
+summary: If a PCE supporting EXRS encounters an unrecognized EXRS subobject with X-bit clear, it MUST respond with a PCErr with Error-Type 'Unrecognized EXRS subobject' and set the Error-Value to the EXRS subobject type code. If X-bit is set, the PCE MAY respond with PCErr or MAY ignore the subobject per local policy.
+section: 2.2.2
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

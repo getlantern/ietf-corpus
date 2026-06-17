@@ -1,0 +1,10 @@
+document: rfc-5533
+kind: security-consideration
+summary: 'Context Tags protect Shim6 against off-path attackers: every post-establishment control message carries the receiver''s Context Tag, requiring an attacker to observe the path to forge a message. Additionally, the I1 message creates no state on the responder; a complete 3-way exchange (I1, R1, I2) must succeed before the responder allocates context state, limiting state-exhaustion DoS impact.'
+section: "4.4"
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

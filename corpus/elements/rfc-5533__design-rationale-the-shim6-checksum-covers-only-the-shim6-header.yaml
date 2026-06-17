@@ -1,0 +1,9 @@
+document: rfc-5533
+kind: design-rationale
+summary: The Shim6 checksum covers only the Shim6 header itself, with no pseudo-header (unlike ICMPv6). Including source/destination addresses in a pseudo-header would invalidate the checksum whenever locators change, defeating the locator-agility goal.
+section: "5.3"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

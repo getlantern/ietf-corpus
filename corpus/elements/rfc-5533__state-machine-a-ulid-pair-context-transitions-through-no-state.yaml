@@ -1,0 +1,9 @@
+document: rfc-5533
+kind: state-machine
+summary: 'A ULID-pair context transitions through: no state (IDLE), I1-SENT (initiator awaiting R1), I2-SENT (initiator awaiting R2), and ESTABLISHED. When a peer loses state, the R1bis/I2bis exchange re-enters ESTABLISHED from a lost-context condition. Teardown is unilateral; context-recovery messages signal missing state to the peer.'
+section: "6.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

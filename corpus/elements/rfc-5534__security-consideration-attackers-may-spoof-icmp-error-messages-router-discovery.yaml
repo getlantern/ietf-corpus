@@ -1,0 +1,11 @@
+document: rfc-5534
+kind: security-consideration
+summary: Attackers may spoof ICMP error messages, Router Discovery, and address assignment indications to confuse peers about which addresses are operational, potentially causing use of non-preferred addresses or denial of service. Unprotected indications SHOULD NOT be taken as proof of connectivity problems, but REAP performs its own reachability tests before switching address pairs.
+section: "8"
+rfc2119_level: SHOULD NOT
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

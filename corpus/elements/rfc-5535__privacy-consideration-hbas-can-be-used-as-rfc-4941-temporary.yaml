@@ -1,0 +1,9 @@
+document: rfc-5535
+kind: privacy-consideration
+summary: HBAs can be used as RFC 4941 temporary addresses by periodically generating new HBA sets. When Sec=0, the cost is low (one generation iteration); when Sec>0, the cost grows as O(2^(16*Sec)) iterations per new HBA set, which may make frequent address changes expensive.
+section: "11.2"
+topics:
+    - privacy
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

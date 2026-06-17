@@ -1,0 +1,9 @@
+document: rfc-5521
+kind: security-consideration
+summary: The route exclusion extensions allow finer control over PCE-computed paths, increasing risk if PCEP messages are intercepted, modified, or spoofed — an attacker could manipulate exclusion constraints to force undesirable paths or make path computation fail. The security mechanisms defined in RFC 5440 are therefore considered more critical in deployments using these extensions. Conversely, route exclusions can also be used to route around vulnerable network segments, improving overall security.
+section: "6"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

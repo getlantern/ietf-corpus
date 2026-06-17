@@ -1,0 +1,8 @@
+document: rfc-5524
+kind: wire-format
+summary: The url-meta-binary field encodes the BINARY response as either nstring or literal8. If the content contains a NUL octet, literal8 (prefixed with ~{length}) MUST be used; otherwise nstring SHOULD be used. On decoding error, NIL is used.
+section: "5"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

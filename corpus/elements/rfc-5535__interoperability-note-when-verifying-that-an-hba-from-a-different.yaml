@@ -1,0 +1,9 @@
+document: rfc-5535
+kind: interoperability-note
+summary: When verifying that an HBA from a different prefix belongs to the same HBA set, direct CGA verification from RFC 3972 will fail because the Subnet Prefix field will not match. The HBA verification procedure explicitly substitutes the HBA prefix before running CGA verification to handle this cross-prefix case.
+section: "7.2"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

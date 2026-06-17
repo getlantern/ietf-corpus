@@ -1,0 +1,9 @@
+document: rfc-5533
+kind: design-rationale
+summary: 'Context establishment is intentionally deferred: the shim does not create a context until a heuristic (e.g., more than 50 packets exchanged or a timer expiry during active exchange) is met. This avoids the overhead of a 4-way handshake for short-lived communications that are unlikely to benefit from multihoming failover.'
+section: "4"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

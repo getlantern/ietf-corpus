@@ -1,0 +1,9 @@
+document: rfc-5534
+kind: design-rationale
+summary: 'Shim6 uses the same header for signaling and payload encapsulation so that fate is shared: either all Shim6 packets (keepalives, probes, and payload) get through or none do, preventing the pathological case where probes succeed but payload fails.'
+section: "9"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

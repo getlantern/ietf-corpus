@@ -1,0 +1,11 @@
+document: rfc-5533
+kind: design-rationale
+summary: IP multicast is explicitly excluded from Shim6 shim processing because multicast routing depends on the IP source address for RPF checks and all receivers would need the ULID-to-locator mapping, making transparent remapping impractical. RTP-based protocols are naturally accommodated since RTP has its own explicit SSRC identifier.
+section: "1.4"
+topics:
+    - ip
+    - v6ops
+    - multicast
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
