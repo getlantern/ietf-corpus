@@ -1,0 +1,9 @@
+document: rfc-5250
+kind: normative-requirement
+summary: When processing a received type-11 Opaque LSA, the router MUST look up routing table entries for the ASBR that originated the LSA. If no entries exist (ASBR unreachable), the router MUST do nothing with this LSA and MUST discontinue using all Opaque LSAs from the same originator whenever that originator is detected as unreachable.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

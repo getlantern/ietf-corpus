@@ -1,0 +1,9 @@
+document: rfc-5245
+kind: design-rationale
+summary: ICE uses STUN Binding Indications (rather than Binding Requests) for keepalives after ICE completes because requests require a response which consumes TURN bandwidth and creates unnecessary load; indications are one-way and sufficient to maintain NAT bindings without the overhead of a full request/response cycle.
+section: B.10
+topics:
+    - nat
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

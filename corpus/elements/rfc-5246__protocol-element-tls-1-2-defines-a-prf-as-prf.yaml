@@ -1,0 +1,9 @@
+document: rfc-5246
+kind: protocol-element
+summary: TLS 1.2 defines a PRF as PRF(secret, label, seed) = P_SHA256(secret, label + seed), where P_hash iterates HMAC over a chain A(0)=seed, A(i)=HMAC_hash(secret, A(i-1)). This replaces the TLS 1.1 dual-hash (MD5+SHA-1) PRF with a cipher-suite-specified construction, defaulting to SHA-256.
+section: "5"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

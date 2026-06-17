@@ -1,0 +1,10 @@
+document: rfc-5245
+kind: normative-requirement
+summary: 'Each candidate for a media stream MUST have a unique priority that MUST be a positive integer between 1 and (2^31 - 1). The recommended formula is: priority = (2^24)*(type preference) + (2^8)*(local preference) + (2^0)*(256 - component ID), where type preference is 0-126 and local preference is 0-65535.'
+section: 4.1.2.1
+rfc2119_level: MUST
+topics:
+    - nat
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

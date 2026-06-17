@@ -1,0 +1,9 @@
+document: rfc-5246
+kind: wire-format
+summary: 'GenericAEADCipher: nonce_explicit (SecurityParameters.record_iv_length bytes) followed by aead-ciphered content. Additional authenticated data is seq_num || TLSCompressed.type || TLSCompressed.version || TLSCompressed.length. No separate MAC key is used; AEAD expansion MUST NOT exceed 1024 bytes.'
+section: 6.2.3.3
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

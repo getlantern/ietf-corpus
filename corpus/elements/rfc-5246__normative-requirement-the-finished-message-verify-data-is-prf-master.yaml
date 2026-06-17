@@ -1,0 +1,10 @@
+document: rfc-5246
+kind: normative-requirement
+summary: The Finished message verify_data is PRF(master_secret, finished_label, Hash(handshake_messages)); default length is 12 bytes but cipher suites may specify otherwise. Both peers MUST verify the peer's Finished message before the handshake is considered complete.
+section: 7.4.9
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

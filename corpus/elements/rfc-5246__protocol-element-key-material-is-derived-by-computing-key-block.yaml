@@ -1,0 +1,9 @@
+document: rfc-5246
+kind: protocol-element
+summary: Key material is derived by computing key_block = PRF(master_secret, "key expansion", server_random + client_random) and partitioning it into client/server write MAC keys, encryption keys, and IVs in that order. AES_256_CBC_SHA256 requires the most material at 128 bytes total.
+section: "6.3"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

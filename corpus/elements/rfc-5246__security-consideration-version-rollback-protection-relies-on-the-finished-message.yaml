@@ -1,0 +1,9 @@
+document: rfc-5246
+kind: security-consideration
+summary: 'Version rollback protection relies on the Finished message binding the negotiated parameters: an attacker who downgrades the version or cipher suite will cause the Finished hashes to mismatch, aborting the connection. However, higher-level protocols must still enforce minimum acceptable versions, as TLS itself does not reject negotiation of weaker modes.'
+section: F.1.2
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

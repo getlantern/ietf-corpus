@@ -1,0 +1,9 @@
+document: rfc-5247
+kind: security-consideration
+summary: EAP security goals require that after phase 1a, EAP keying material is known only to the identified peer and EAP server; after phase 1b, keying material is transported to the intended authenticator without disclosure. The backend authentication server is trusted not to derive TSKs or act as a man-in-the-middle despite possessing the MSK, and the authenticator is trusted not to distribute keying material outside the authorized scope.
+section: "1.5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

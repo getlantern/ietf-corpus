@@ -1,0 +1,9 @@
+document: rfc-5245
+kind: interoperability-note
+summary: When an agent receives an offer/answer where ICE candidates are present but none match the default destination for a media component, the agent MUST include an 'a=ice-mismatch' attribute in its answer and process the SDP using normal RFC 3264 procedures rather than ICE, signaling to the peer that ICE cannot be used for this session.
+section: "5.1"
+topics:
+    - nat
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

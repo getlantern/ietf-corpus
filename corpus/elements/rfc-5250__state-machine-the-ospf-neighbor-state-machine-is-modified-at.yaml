@@ -1,0 +1,8 @@
+document: rfc-5250
+kind: state-machine
+summary: The OSPF neighbor state machine is modified at State ExStart, Event NegotiationDone → New State Exchange. The action is extended to include type-9 and type-10 Opaque LSAs in the area Database summary list, and type-11 Opaque LSAs in the global structure. Type-11 and AS External LSAs MUST be omitted for virtual neighbors and for stub areas or NSSAs. Type-9 LSAs MUST be omitted if the neighbor interface does not match the LSA's associated interface.
+section: "3.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

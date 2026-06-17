@@ -1,0 +1,9 @@
+document: rfc-5245
+kind: design-rationale
+summary: The remote-candidates SDP attribute is sent by the controlling agent in the updated offer after ICE completes, allowing the answerer to immediately begin sending media to the nominated candidate even before the answer is received. Without it, the answerer would not know which remote candidate was nominated until the offer/answer round trip completes.
+section: B.6
+topics:
+    - nat
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

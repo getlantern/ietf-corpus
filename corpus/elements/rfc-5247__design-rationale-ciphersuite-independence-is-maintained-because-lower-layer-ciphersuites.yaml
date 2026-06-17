@@ -1,0 +1,9 @@
+document: rfc-5247
+kind: design-rationale
+summary: Ciphersuite independence is maintained because lower-layer ciphersuites vary between media, so EAP methods export ciphersuite-independent keying material. This avoids requiring method updates when new ciphersuites are introduced and eliminates ciphersuite-specific code from EAP methods, reducing complexity and enabling use with any compliant lower layer.
+section: 1.6.4
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

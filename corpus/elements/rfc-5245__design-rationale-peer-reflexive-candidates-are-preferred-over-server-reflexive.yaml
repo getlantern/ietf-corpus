@@ -1,0 +1,9 @@
+document: rfc-5245
+kind: design-rationale
+summary: Peer reflexive candidates are preferred over server reflexive candidates (given higher type preference) because they represent the actual address seen by the peer after all NATs, which is more directly useful for communication, while server reflexive candidates are discovered from a third-party STUN server and may not reflect the exact NAT binding used toward the peer.
+section: B.8
+topics:
+    - nat
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

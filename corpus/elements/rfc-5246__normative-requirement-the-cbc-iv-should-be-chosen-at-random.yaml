@@ -1,0 +1,11 @@
+document: rfc-5246
+kind: normative-requirement
+summary: The CBC IV SHOULD be chosen at random and MUST be unpredictable. This replaces the TLS 1.0 practice of using the previous record's last ciphertext block as the IV, which was vulnerable to the CBCATT chosen-plaintext attack.
+section: 6.2.3.2
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

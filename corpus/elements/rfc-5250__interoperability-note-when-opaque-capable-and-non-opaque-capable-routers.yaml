@@ -1,0 +1,8 @@
+document: rfc-5250
+kind: interoperability-note
+summary: When opaque-capable and non-opaque-capable routers are mixed in a routing domain, Opaque LSAs are typically not flooded to non-opaque-capable routers. Non-opaque-capable routers receiving Opaque LSAs via multicast will simply discard the LSA per base OSPF processing of unknown LS types. OSPF routers implementing RFC 2370 will continue using stale type-11 LSAs even when the originator implements the new inter-area procedures.
+section: "7"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

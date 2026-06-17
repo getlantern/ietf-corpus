@@ -1,0 +1,9 @@
+document: rfc-5247
+kind: wire-format
+summary: 'For non-expanded EAP type codes, Session-Id = Type-Code (1 octet) || Method-Id. For expanded type codes: Session-Id = 0xFE || Vendor-Id (3 octets, network byte order) || Vendor-Type (4 octets, network byte order) || Method-Id. The Method-Id is typically constructed from nonces or counters used in the EAP method exchange.'
+section: "1.4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

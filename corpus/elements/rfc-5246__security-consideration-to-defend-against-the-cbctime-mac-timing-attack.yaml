@@ -1,0 +1,10 @@
+document: rfc-5246
+kind: security-consideration
+summary: To defend against the CBCTIME MAC timing attack (Canvel et al.), implementations MUST ensure that record processing time is essentially the same whether or not the padding is correct — the best approach is to compute the MAC even when padding is invalid and only then reject the record.
+section: 6.2.3.2
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

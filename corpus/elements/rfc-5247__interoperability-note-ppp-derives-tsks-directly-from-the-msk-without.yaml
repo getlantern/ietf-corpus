@@ -1,0 +1,10 @@
+document: rfc-5247
+kind: interoperability-note
+summary: PPP derives TSKs directly from the MSK without a Secure Association Protocol, which is NOT RECOMMENDED because if caching were enabled, TSK reuse would result; EAP keying material MUST be discarded when a PPP session terminates. IKEv2 uses the MSK only for authentication (not key derivation), so TSKs are cryptographically independent of EAP keying material and IPsec SA re-key does not require EAP re-authentication.
+section: "2.1"
+topics:
+    - security
+    - crypto
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

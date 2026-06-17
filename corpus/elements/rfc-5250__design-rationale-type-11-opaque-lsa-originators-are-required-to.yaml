@@ -1,0 +1,8 @@
+document: rfc-5250
+kind: design-rationale
+summary: Type-11 Opaque LSA originators are required to advertise themselves as ASBRs because remote-area OSPF routers have no other mechanism to detect that a type-11 LSA originator has gone out of service; without this, stale information could persist for up to 60 minutes. This reuses the same ASBR tracking already used for type-5 AS External LSAs.
+section: "5"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

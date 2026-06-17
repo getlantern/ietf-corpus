@@ -1,0 +1,9 @@
+document: rfc-5250
+kind: security-consideration
+summary: Repetitive LSA origination (denial-of-service) is mitigated by OSPF's MinLSInterval (5 seconds minimum between new instances of a given LSA) and MinLSArrival (1 second minimum acceptance rate during flooding). Database overflow is addressed by configuring stub areas and NSSAs, or via the graceful overflow mechanism of RFC 1765.
+section: "8"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

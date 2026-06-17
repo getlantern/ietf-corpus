@@ -1,0 +1,10 @@
+document: rfc-5245
+kind: security-consideration
+summary: ICE connectivity checks are protected by HMAC-SHA1 message integrity using credentials exchanged via the signaling channel. This prevents an off-path attacker from forging checks to redirect media; however, it does not protect against attackers who can intercept the signaling (e.g., SIP without TLS).
+section: "18.1"
+topics:
+    - security
+    - nat
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
