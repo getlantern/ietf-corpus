@@ -1,0 +1,10 @@
+document: rfc-6008
+kind: security-consideration
+summary: If a future signing scheme produces signatures shorter than eight characters, the entire signature must be used per Section 4, but such a scheme would itself be collision-prone, making the 'header.b' value unreliable as a disambiguator. The recommendation to ignore ambiguous results (Section 4 SHOULD) mitigates this risk.
+section: "6.3"
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

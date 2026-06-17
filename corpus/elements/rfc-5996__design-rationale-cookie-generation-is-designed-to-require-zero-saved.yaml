@@ -1,0 +1,9 @@
+document: rfc-5996
+kind: design-rationale
+summary: 'Cookie generation is designed to require zero saved responder state: the recommended formula is Hash(Ni | IPi | SPIi | <secret>), allowing the responder to recompute and verify on arrival of the second IKE_SA_INIT without storing per-client context, thereby defeating CPU and memory exhaustion attacks from forged-source flooding.'
+section: "2.6"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5996
+kind: interoperability-note
+summary: NAT traversal uses NAT_DETECTION_SOURCE_IP and NAT_DETECTION_DESTINATION_IP Notify payloads in IKE_SA_INIT to detect NAT presence. When a NAT is detected, both IKE and ESP/AH traffic is UDP-encapsulated on port 4500. Implementations MUST understand both UDP-encapsulated and non-encapsulated IPsec packets when receiving.
+section: "2.23"
+topics:
+    - ipsec
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

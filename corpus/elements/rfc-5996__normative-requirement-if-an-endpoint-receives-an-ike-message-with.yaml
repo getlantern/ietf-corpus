@@ -1,0 +1,9 @@
+document: rfc-5996
+kind: normative-requirement
+summary: If an endpoint receives an IKE message with a higher major version number, it MUST drop the message and SHOULD send an unauthenticated INVALID_MAJOR_VERSION Notify. RESERVED fields MUST be set to zero on transmission and ignored on receipt. Unrecognized payload types MUST be skipped if the critical flag is not set.
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

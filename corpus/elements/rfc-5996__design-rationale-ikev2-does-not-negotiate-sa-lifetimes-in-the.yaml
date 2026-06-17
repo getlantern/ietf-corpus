@@ -1,0 +1,8 @@
+document: rfc-5996
+kind: design-rationale
+summary: IKEv2 does not negotiate SA lifetimes in the protocol. Since dead-peer detection and the retransmission mechanism allow each endpoint to independently determine when a peer is unreachable, there is no architectural need to agree on a common SA lifetime; endpoints manage rekeying schedules locally.
+section: "2.4"
+topics:
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

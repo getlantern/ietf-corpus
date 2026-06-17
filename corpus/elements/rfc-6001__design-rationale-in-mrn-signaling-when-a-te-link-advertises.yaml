@@ -1,0 +1,9 @@
+document: rfc-6001
+kind: design-rationale
+summary: In MRN signaling, when a TE link advertises multiple Switching Capabilities via multiple ISCD sub-TLVs, an ERO alone cannot select a particular SC. Rather than extending ERO inclusion semantics, this document extends the XRO to carry a Switching Capability subobject for exclusion, since concentrating exclusions in XRO avoids complex consistency checks and transpositions at FA-LSP head-ends.
+section: "4"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

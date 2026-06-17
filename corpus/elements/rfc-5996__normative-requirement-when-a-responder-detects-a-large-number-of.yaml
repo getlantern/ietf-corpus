@@ -1,0 +1,10 @@
+document: rfc-5996
+kind: normative-requirement
+summary: When a responder detects a large number of half-open IKE SAs it SHOULD reply with a COOKIE Notify (data 1–64 octets). If the response includes a COOKIE, the initiator MUST retry IKE_SA_INIT with the cookie as the first payload and all other payloads unchanged.
+section: "2.6"
+rfc2119_level: SHOULD
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

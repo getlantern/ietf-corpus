@@ -1,0 +1,10 @@
+document: rfc-5996
+kind: normative-requirement
+summary: When deleting an ESP or AH SA, both members of the SA pair MUST be closed. The recipient of a Delete payload MUST close the designated SAs. Delete payloads for both directions of an SA pair MUST NOT appear in a single message; only inbound-half SPIs are listed in the Delete payload.
+section: 1.4.1
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

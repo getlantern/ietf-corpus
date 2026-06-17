@@ -1,0 +1,10 @@
+document: rfc-6008
+kind: security-consideration
+summary: An attacker could copy a valid signature and attach it to a modified message in transit, potentially causing two results to share the same 'header.b' value even when the full 'b=' string is used. This can generate a false negative ('fail') but cannot realistically create a false positive ('pass'); a cautious implementation may discard the false negative.
+section: "6.2"
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

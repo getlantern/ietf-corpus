@@ -1,0 +1,10 @@
+document: rfc-6001
+kind: normative-requirement
+summary: The Call Inheritance Flag (bit 0 of Call Attributes Flags TLV) MUST be set to 1 to indicate that the established call association should be translated into a TE link advertisement. Its default value SHALL be 1. Setting it to 0 results in a hidden TE link or, if previously advertised, triggers deletion of the corresponding Opaque LSA (set to MaxAge) and the corresponding FA-LSP SHOULD be torn down.
+section: 5.1.5
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

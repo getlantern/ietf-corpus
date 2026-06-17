@@ -1,0 +1,11 @@
+document: rfc-6001
+kind: security-consideration
+summary: Call initiation MUST remain strictly under control of the TE domain administrator. Edge nodes MUST ensure isolation of their call controller so it is not reachable via external TE domains. Security associations MUST be established between edge nodes initiating and terminating calls, and IKEv2 (RFC 5996) MUST be used for mutual authentication and maintaining these security associations to prevent man-in-the-middle attacks.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - security
+    - mpls
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

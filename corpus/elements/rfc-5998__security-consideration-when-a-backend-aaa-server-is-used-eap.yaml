@@ -1,0 +1,11 @@
+document: rfc-5998
+kind: security-consideration
+summary: When a backend AAA server is used, EAP methods without channel binding leave the client able to verify only that it is talking to 'some gateway trusted by the home AAA server,' not a specific one. A compromised gateway can impersonate any other gateway until the compromise is revoked — the 'Lying NAS Problem.'
+section: "6.2"
+topics:
+    - ipsec
+    - vpn
+    - security
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

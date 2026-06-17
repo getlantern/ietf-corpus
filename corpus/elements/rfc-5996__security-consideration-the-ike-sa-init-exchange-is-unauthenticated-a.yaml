@@ -1,0 +1,10 @@
+document: rfc-5996
+kind: security-consideration
+summary: The IKE_SA_INIT exchange is unauthenticated; a man-in-the-middle who intercepts it can see the initiator's proposed algorithms and nonce. Initiator identity is revealed in IKE_AUTH only to an active attacker who can complete IKE_SA_INIT but not the authenticated IKE_AUTH exchange. Unprotected Notify messages MUST be rate-limited and not used as a basis for trust.
+section: "5"
+topics:
+    - ipsec
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

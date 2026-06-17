@@ -1,0 +1,10 @@
+document: rfc-6006
+kind: design-rationale
+summary: Fragmentation relies on TCP's reliable, in-order delivery so no sequence numbering beyond the shared request ID is needed. A receiver may start a timer upon receiving the first fragment and send an error (Error-Type=18, Error-Value=1) if the final fragment does not arrive before expiry.
+section: 3.13.1
+topics:
+    - mpls
+    - routing
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,11 @@
+document: rfc-5996
+kind: normative-requirement
+summary: If the initiator guesses the wrong Diffie-Hellman group in IKE_SA_INIT, the responder replies with INVALID_KE_PAYLOAD and the initiator MUST retry with the corrected group, proposing its full suite list again to prevent an active attacker from forcing a weaker algorithm selection.
+section: "1.2"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

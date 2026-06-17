@@ -1,0 +1,10 @@
+document: rfc-6008
+kind: design-rationale
+summary: When a message carries multiple DKIM signatures from the same domain, existing 'header.d' or 'header.i' disambiguation properties may not be unique (e.g., a signing agent may affix multiple signatures with identical 'd=' values). This can produce simultaneous 'dkim=pass' and 'dkim=fail' results with no way to associate each result with the correct signature. The actual digital signature value ('b=' tag) is chosen as the unique identifier because SHA1/SHA256 collisions are uncommon and RSA signing rarely produces common substrings.
+section: "3"
+topics:
+    - email
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
