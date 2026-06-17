@@ -1,0 +1,8 @@
+document: rfc-6644
+kind: design-rationale
+summary: Rebind was chosen as the new allowed response type because a Rebind message does not include a Server Identifier option, allowing any DHCPv6 server to respond. This enables use cases such as migrating clients to a different server when the original server is being shut down, which Renew cannot support because Renew binds to a specific server.
+section: "1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

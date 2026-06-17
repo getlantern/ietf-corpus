@@ -1,0 +1,9 @@
+document: rfc-6644
+kind: security-consideration
+summary: A malicious attacker can send a faked Reconfigure message with msg-type Rebind to force the client to disconnect from its current server and relink to a rogue server by quickly responding to the client's Rebind. This attack is analogous to existing server-spoofing attacks on Solicit/Request and is mitigated by using the AUTH option (RFC 3315) or CGA-based Secure DHCPv6.
+section: "7"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

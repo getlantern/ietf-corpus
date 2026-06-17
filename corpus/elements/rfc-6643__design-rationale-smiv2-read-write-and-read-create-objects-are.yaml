@@ -1,0 +1,10 @@
+document: rfc-6643
+kind: design-rationale
+summary: 'SMIv2 read-write and read-create objects are translated to read-only (config false) YANG objects because SNMP and NETCONF persistence models are fundamentally incompatible: SNMP uses per-object or StorageType-controlled persistence, while NETCONF persistence is datastore-driven, and NETCONF provides no standard operation to modify operational state.'
+section: "11"
+topics:
+    - yang
+    - netconf
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

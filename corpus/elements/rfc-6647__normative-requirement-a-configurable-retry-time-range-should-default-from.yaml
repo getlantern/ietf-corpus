@@ -1,0 +1,9 @@
+document: rfc-6647
+kind: normative-requirement
+summary: A configurable retry time range SHOULD default from one minute to 24 hours. Retries within this range satisfy the greylisting test. Retries after the end of the range SHOULD be treated as a new message, resetting the 'first seen' timestamp for the IP address.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

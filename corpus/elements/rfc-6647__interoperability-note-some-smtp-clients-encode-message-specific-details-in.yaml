@@ -1,0 +1,8 @@
+document: rfc-6647
+kind: interoperability-note
+summary: Some SMTP clients encode message-specific details in the MAIL command address parameter, causing the parameter to change between retry attempts. A greylisting implementation may treat each attempt as a new delivery rather than a retry, resulting in permanent delivery failure after the retry timeout expires.
+section: "4.2"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

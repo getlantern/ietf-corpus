@@ -1,0 +1,8 @@
+document: rfc-6647
+kind: design-rationale
+summary: Only the first RFC5321.RcptTo is used in the recommended tuple because legitimate MTAs appear not to reorder recipients between retries. Including RFC5321.MailFrom improves accuracy when IP addresses are matched in CIDR clusters rather than precisely.
+section: "5"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
