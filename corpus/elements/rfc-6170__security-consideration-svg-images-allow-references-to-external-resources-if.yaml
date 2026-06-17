@@ -1,0 +1,10 @@
+document: rfc-6170
+kind: security-consideration
+summary: SVG images allow references to external resources; if such references appeared in a certificate image, the certificate hash would cover only the URI and not the referenced data. Clients SHOULD verify that SVG images meet all Section 5.2 requirements and reject images containing external data references.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

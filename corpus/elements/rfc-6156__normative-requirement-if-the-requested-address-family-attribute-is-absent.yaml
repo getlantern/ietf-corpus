@@ -1,0 +1,11 @@
+document: rfc-6156
+kind: normative-requirement
+summary: If the REQUESTED-ADDRESS-FAMILY attribute is absent from an Allocate request, the server MUST allocate an IPv4 relayed transport address. If local policy disables IPv4 allocation, the server returns a 440 (Address Family not Supported) error.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - nat
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,11 @@
+document: rfc-6164
+kind: normative-requirement
+summary: Per RFC 4443, a router receiving a packet on a point-to-point link destined to an address within a subnet assigned to that same link (other than its own addresses) MUST NOT forward the packet back on that link; it SHOULD generate an ICMPv6 Destination Unreachable (code 3) instead.
+section: "5.1"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

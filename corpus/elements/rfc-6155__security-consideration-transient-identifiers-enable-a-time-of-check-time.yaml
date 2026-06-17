@@ -1,0 +1,9 @@
+document: rfc-6155
+kind: security-consideration
+summary: 'Transient identifiers enable a time-of-check/time-of-use attack: an attacker can force re-allocation of an identifier between when authorization is granted and when location is returned, causing the LIS to provide location for the wrong Device or to be coerced into lying. Ambiguous identifiers compound this by allowing authorized access to one Device to implicitly expose location of others sharing the same identifier.'
+section: "5.1"
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

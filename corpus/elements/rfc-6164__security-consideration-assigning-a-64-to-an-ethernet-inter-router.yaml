@@ -1,0 +1,11 @@
+document: rfc-6164
+kind: security-consideration
+summary: 'Assigning a /64 to an Ethernet inter-router link enables a neighbor cache exhaustion DoS: an attacker can send packets to the 2^64 - 3 unassigned addresses, forcing routers to create INCOMPLETE neighbor cache entries and flood the link with unanswered Neighbor Solicitations, consuming memory, CPU, and potentially preventing BGP sessions from re-establishing after a link flap.'
+section: "5.2"
+topics:
+    - ip
+    - v6ops
+    - security
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

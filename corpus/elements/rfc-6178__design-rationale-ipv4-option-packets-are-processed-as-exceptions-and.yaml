@@ -1,0 +1,9 @@
+document: rfc-6178
+kind: design-rationale
+summary: IPv4 option packets are processed as exceptions and routed through the software forwarding (slow) path rather than the hardware fast path, due to variable header length and complex processing requirements. Many router implementations punt such packets to the CPU, causing high CPU utilization.
+section: "2"
+topics:
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

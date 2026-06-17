@@ -1,0 +1,9 @@
+document: rfc-6155
+kind: design-rationale
+summary: WiMAX requires an NAI for location requests because an IP address alone is insufficient for the LIS to locate a Device on that network. The WiMAX procedure verifies that the NAI belongs to the requestor by consulting the AAA server and checking that the returned IP address matches the HELD request source address, enabling LCP-style authorization for self-location.
+section: 3.4.1
+topics:
+    - realtime
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

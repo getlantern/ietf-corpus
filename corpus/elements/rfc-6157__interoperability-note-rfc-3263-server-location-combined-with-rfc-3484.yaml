@@ -1,0 +1,10 @@
+document: rfc-6157
+kind: interoperability-note
+summary: RFC 3263 server location combined with RFC 3484 address selection (via getaddrinfo()) produces an ordered list of IPv6/IPv4 destination addresses ranked by source/destination pair merits, but implementers must account for getaddrinfo() implementations that may place IPv6 global addresses above IPv4 addresses even when only link-local IPv6 is configured, introducing connection delays.
+section: "5"
+topics:
+    - sip
+    - v6ops
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

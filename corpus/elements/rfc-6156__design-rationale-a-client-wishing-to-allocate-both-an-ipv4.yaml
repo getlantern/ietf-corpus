@@ -1,0 +1,10 @@
+document: rfc-6156
+kind: design-rationale
+summary: A client wishing to allocate both an IPv4 and an IPv6 relayed transport address must perform two separate Allocate requests, one per address family. This is because TURN allocates a single relayed transport address per allocation request, and Allocate requests cannot carry more than one REQUESTED-ADDRESS-FAMILY attribute.
+section: "3"
+topics:
+    - nat
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

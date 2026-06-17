@@ -1,0 +1,11 @@
+document: rfc-6156
+kind: security-consideration
+summary: A tunnel amplification attack is possible when an attacker spoofs Allocate and ChannelBind requests to establish a loop between a TURN relay (doing IPv6-to-IPv4 translation) and an IPv4-IPv6 tunnel endpoint. The attacker sends nested TURN-channeled IPv6 packets that bounce between the relay and the tunnel, amplifying traffic up to roughly 4:1 within a 1500-byte MTU.
+section: "9.1"
+topics:
+    - security
+    - nat
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

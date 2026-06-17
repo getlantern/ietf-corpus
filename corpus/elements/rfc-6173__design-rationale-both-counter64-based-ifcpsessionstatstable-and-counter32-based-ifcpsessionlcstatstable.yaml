@@ -1,0 +1,8 @@
+document: rfc-6173
+kind: design-rationale
+summary: Both Counter64-based (ifcpSessionStatsTable) and Counter32-based (ifcpSessionLcStatsTable) statistics are provided because at 1-Gbps rates a Counter32 can wrap as often as every 34 seconds, yet Counter32 objects are needed for backward compatibility with systems lacking Counter64 support or running SNMPv1.
+section: "5"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

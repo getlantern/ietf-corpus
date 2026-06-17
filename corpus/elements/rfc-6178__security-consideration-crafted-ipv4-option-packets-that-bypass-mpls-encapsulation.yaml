@@ -1,0 +1,10 @@
+document: rfc-6178
+kind: security-consideration
+summary: Crafted IPv4 option packets that bypass MPLS encapsulation enable TTL expiry-based DoS attacks against downstream LSRs. MPLS core hiding (RFC 3443) does not apply to non-encapsulated packets, so attackers can craft packets to expire on specific LSRs and expose network topology.
+section: "5.1"
+topics:
+    - mpls
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
