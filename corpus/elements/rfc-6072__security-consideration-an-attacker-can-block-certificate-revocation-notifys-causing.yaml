@@ -1,0 +1,9 @@
+document: rfc-6072
+kind: security-consideration
+summary: An attacker can block certificate revocation NOTIFYs, causing a UA to continue using a revoked certificate. UAs mitigate this by enforcing a configurable maximum cache expiry independent of receiving a NOTIFY; the cache time is analogous to a CRL polling interval.
+section: "10.1"
+topics:
+    - security
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

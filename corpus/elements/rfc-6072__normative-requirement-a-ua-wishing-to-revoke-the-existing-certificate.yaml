@@ -1,0 +1,11 @@
+document: rfc-6072
+kind: normative-requirement
+summary: A UA wishing to revoke the existing certificate without publishing a new one MUST send a PUBLISH with an empty body and Expires=0 to the credential server, causing subscribers to receive a no-body NOTIFY and stop using previously stored credentials.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
