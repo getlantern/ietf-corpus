@@ -1,0 +1,9 @@
+document: rfc-5295
+kind: normative-requirement
+summary: 'The EMSK name SHALL be derived as: EMSKname = KDF(EAP Session-ID, "EMSK" | "\0" | length) where length is the 2-octet unsigned integer 8 in network byte order. It is RECOMMENDED that all keys derived from the EMSK be referred to by the EMSKname and usage context.'
+section: "3.2"
+rfc2119_level: SHOULD
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

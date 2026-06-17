@@ -1,0 +1,9 @@
+document: rfc-5288
+kind: design-rationale
+summary: 'The nonce structure uses a ''partially explicit'' design (per RFC 5116 Section 3.2.1): the 4-byte salt is implicit (derived from the handshake key material) and not transmitted, while the 8-byte nonce_explicit is sender-chosen and carried in each record, balancing bandwidth efficiency with uniqueness guarantees.'
+section: "3"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5291
+kind: design-rationale
+summary: ORF was introduced because BGP speakers commonly receive and then filter out unwanted routes from peers, wasting resources on both the sender (generating/transmitting updates) and receiver (processing them). Allowing the receiver to push filters to the sender avoids generating unwanted updates in the first place.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

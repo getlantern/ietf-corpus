@@ -1,0 +1,9 @@
+document: rfc-5296
+kind: state-machine
+summary: 'ERP bootstrapping has two modes: implicit (local ER server requests DSRK from home AAA during initial EAP exchange) and explicit (peer sends EAP-Initiate/Re-auth with bootstrap flag ''B'' set to obtain domain name and key lifetimes from home ER server). After receiving a bootstrap response with a domain name TLV, the peer MUST derive DSRK, DS-rRK, DS-rIK, and initialize the replay counter for the DS-rIK.'
+section: "5.1"
+topics:
+    - security
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

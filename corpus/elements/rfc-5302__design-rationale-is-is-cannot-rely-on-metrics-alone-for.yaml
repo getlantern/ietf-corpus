@@ -1,0 +1,8 @@
+document: rfc-5302
+kind: design-rationale
+summary: IS-IS cannot rely on metrics alone for route selection because inter-area routes can only be advertised with a maximum metric of 63, and this maximum does not mean infinity (unlike RIP hop count 16). Introducing an infinity value would cause counting-to-infinity behavior via multiple L1L2 routers, degrading network stability.
+section: "3.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

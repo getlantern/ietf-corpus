@@ -1,0 +1,8 @@
+document: rfc-5296
+kind: interoperability-note
+summary: Some EAP implementations are not RFC 3748 compliant and may treat EAP packets with code values higher than 4 as errors rather than silently discarding them. Lower layers SHOULD verify that both parties support ERP before sending ERP messages, or mandate falling back to full EAP when ERP support cannot be confirmed.
+section: "6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

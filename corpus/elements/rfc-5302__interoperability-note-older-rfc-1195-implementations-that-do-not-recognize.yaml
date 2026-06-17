@@ -1,0 +1,8 @@
+document: rfc-5302
+kind: interoperability-note
+summary: Older RFC 1195 implementations that do not recognize the up/down bit will treat L2->L1 inter-area routes as L1 intra-area routes and re-advertise them into L2, causing routing loops. It is therefore RECOMMENDED that L2->L1 advertisement be disabled by default and manually enabled only when all L1L2 routers in an area understand the up/down bit.
+section: "4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,11 @@
+document: rfc-5288
+kind: security-consideration
+summary: When multiple encryption processors share a key, the sender MUST ensure each nonce_explicit value is distinct across processors; each processor SHOULD embed a fixed distinct sub-field (FixedDistinct) with uniform length, combined with a per-record variable counter.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

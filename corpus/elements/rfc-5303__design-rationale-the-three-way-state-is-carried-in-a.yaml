@@ -1,0 +1,8 @@
+document: rfc-5303
+kind: design-rationale
+summary: The three-way state is carried in a new IS-IS option (type 0xF0) rather than using reserved bits in the IIH header, unlike the NLSP approach. This was chosen because use of reserved header bits was considered risky, as untested mechanisms of this kind had caused problems in other protocols, while new option codes had been proven to work via deployment of Integrated IS-IS for IP (RFC 1195).
+section: "2.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

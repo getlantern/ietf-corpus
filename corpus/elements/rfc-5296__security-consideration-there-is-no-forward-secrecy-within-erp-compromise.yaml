@@ -1,0 +1,9 @@
+document: rfc-5296
+kind: security-consideration
+summary: There is no forward secrecy within ERP. Compromise of a DSRK retroactively compromises all ERP keys derived from it (DS-rRK, DS-rIK, and all rMSKs). Keys may also be exposed to AAA proxies along the path when hop-by-hop protection is used.
+section: "8"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

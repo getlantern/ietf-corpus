@@ -1,0 +1,8 @@
+document: rfc-5303
+kind: state-machine
+summary: 'The adjacency three-way state transition table defines: from Down, receiving Down→Initialize, Initializing→Up, Up→Down; from Initializing, receiving Down→Initialize, Initializing→Up, Up→Up; from Up, receiving Down→Initialize, Initializing→Accept, Up→Accept. ''Down'' action triggers adjacencyStateChange(Down) and deletes the adjacency; ''Initialize'' sets three-way state to Initializing; ''Up'' generates adjacencyStateChange(Up).'
+section: "3.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

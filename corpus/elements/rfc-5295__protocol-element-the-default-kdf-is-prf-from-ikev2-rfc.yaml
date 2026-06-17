@@ -1,0 +1,8 @@
+document: rfc-5295
+kind: protocol-element
+summary: The default KDF is PRF+ from IKEv2 (RFC 4306) instantiated with HMAC-SHA-256. PRF+(K,S) = T1|T2|T3|... where T1=PRF(K,S|0x01), T2=PRF(K,T1|S|0x02), etc., producing up to 8160 octets (255 iterations). K is the EMSK; S is the concatenation of key label, NULL octet, optional data, and length.
+section: 3.1.2
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

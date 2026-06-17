@@ -1,0 +1,8 @@
+document: rfc-5305
+kind: design-rationale
+summary: The up/down bit prevents routing loops when prefixes are redistributed between IS-IS levels. Without it, a prefix learned via level 2 could be advertised down to level 1 and then readvertised back up to level 2, causing persistent forwarding loops if the original source withdraws the prefix.
+section: "4.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

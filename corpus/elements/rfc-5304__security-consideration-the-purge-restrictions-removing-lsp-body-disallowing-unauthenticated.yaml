@@ -1,0 +1,9 @@
+document: rfc-5304
+kind: security-consideration
+summary: The purge restrictions (removing LSP body, disallowing unauthenticated purges, disallowing purges with extra TLVs) are necessary to prevent a hostile system from receiving an LSP, setting Remaining Lifetime to zero, and flooding it to initiate a purge without knowing the authentication password.
+section: "2"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

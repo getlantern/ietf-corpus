@@ -1,0 +1,9 @@
+document: rfc-5293
+kind: security-consideration
+summary: A Sieve script combining editheader, Sieve tests, and the redirect action back to the same user can maintain state across invocations; however, infinite loops are impossible because each iteration adds a Received header field and editheader cannot delete Received fields, so standard SMTP loop prevention will eventually non-deliver the message.
+section: "9"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

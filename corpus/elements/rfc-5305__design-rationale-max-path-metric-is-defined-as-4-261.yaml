@@ -1,0 +1,8 @@
+document: rfc-5305
+kind: design-rationale
+summary: 'MAX_PATH_METRIC is defined as 4,261,412,864 (0xFE000000, 2^32 - 2^25) to prevent SPF overflow: the value is chosen so that MAX_PATH_METRIC plus a single link metric does not overflow 32 bits, the assumed internal metric calculation width.'
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

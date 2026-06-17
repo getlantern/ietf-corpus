@@ -1,0 +1,9 @@
+document: rfc-5292
+kind: protocol-element
+summary: 'Address Prefix ORF matching works as follows: a route is ''no match'' if its NLRI is neither more specific than nor equal to the ORF entry''s <Prefix, Length>. When NLRI is more specific or equal, matching depends on Minlen/Maxlen as specified in Table 1: both unspecified means exact length match; only Minlen means NLRI.length >= Minlen; only Maxlen means NLRI.length <= Maxlen; both specified means NLRI.length in [Minlen, Maxlen].'
+section: "4"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

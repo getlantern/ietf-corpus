@@ -1,0 +1,10 @@
+document: rfc-5291
+kind: normative-requirement
+summary: When a speaker willing to receive a set of <AFI/SAFI, ORF-Type> and a peer desiring to send that same set have a non-empty intersection for a given AFI/SAFI, the speaker SHOULD NOT advertise routes with that AFI/SAFI prior to receiving a ROUTE-REFRESH from the peer for that AFI/SAFI (with or without ORF entries, or with When-to-refresh=IMMEDIATE).
+section: "6"
+rfc2119_level: SHOULD NOT
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

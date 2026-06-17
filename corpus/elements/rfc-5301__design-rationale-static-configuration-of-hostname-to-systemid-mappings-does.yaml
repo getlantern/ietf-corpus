@@ -1,0 +1,8 @@
+document: rfc-5301
+kind: design-rationale
+summary: 'Static configuration of hostname-to-systemID mappings does not scale: every router must maintain entries for all other routers, and any addition, deletion, or change requires updating all routers. DNS was considered but rejected due to potential unavailability during network problems, added complexity, and lack of CLNS/NSAP support in some implementations. Flooding names in IS-IS LSPs was chosen as simpler and more manageable.'
+section: "2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

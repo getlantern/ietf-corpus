@@ -1,0 +1,8 @@
+document: rfc-5305
+kind: design-rationale
+summary: 'The Extended IS Reachability TLV uses a 24-bit metric while the Extended IP Reachability TLV uses a 32-bit metric. This asymmetry is intentional: it makes it very unlikely that the cost of an intra-area route exceeds the capacity of the inter-area metric field, avoiding truncation of route costs when leaking between levels.'
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

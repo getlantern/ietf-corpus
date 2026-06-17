@@ -1,0 +1,10 @@
+document: rfc-5293
+kind: interoperability-note
+summary: editheader does not directly affect S/MIME or OpenPGP signatures because those schemes include a separate copy of header fields inside the signed body part; however, software comparing inner (signed) and outer (editheader-modified) headers may behave differently.
+section: "9"
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

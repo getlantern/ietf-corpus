@@ -1,0 +1,10 @@
+document: rfc-5288
+kind: security-consideration
+summary: AES-GCM security requires that the counter is never reused; the IV construction in Section 3 (combining a per-handshake salt with a per-record nonce_explicit) is specifically designed to prevent counter reuse.
+section: "6.1"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

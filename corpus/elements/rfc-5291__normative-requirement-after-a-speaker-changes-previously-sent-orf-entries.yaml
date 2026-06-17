@@ -1,0 +1,10 @@
+document: rfc-5291
+kind: normative-requirement
+summary: After a speaker changes previously-sent ORF entries, it MUST send updated ORF entries with either When-to-refresh=IMMEDIATE, or When-to-refresh=DEFER followed by a plain ROUTE-REFRESH. The latter MUST be used when other policy changes also require the peer to re-advertise all routes.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

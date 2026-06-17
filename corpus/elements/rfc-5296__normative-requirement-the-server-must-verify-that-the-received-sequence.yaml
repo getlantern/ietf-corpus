@@ -1,0 +1,9 @@
+document: rfc-5296
+kind: normative-requirement
+summary: The server MUST verify that the received sequence number is equal to or greater than the expected sequence number before verifying the cryptosuite and message integrity. On any verification failure, it MUST send an EAP-Finish/Re-auth with Result flag set to '1' (Failure), and MUST integrity-protect that failure message if it has a valid rIK for the peer.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
