@@ -1,0 +1,8 @@
+document: rfc-5837
+kind: design-rationale
+summary: The extension cannot be appended to ICMP message types beyond the three listed (Time Exceeded, Destination Unreachable, Parameter Problem) due to constraints in the RFC 4884 multi-part message framework, which requires a length field in a specific position not present in other ICMP types.
+section: "4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

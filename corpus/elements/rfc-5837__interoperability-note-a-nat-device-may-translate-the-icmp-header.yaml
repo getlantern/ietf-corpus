@@ -1,0 +1,9 @@
+document: rfc-5837
+kind: interoperability-note
+summary: A NAT device may translate the ICMP header without translating the extension, resulting in a message containing both a translated address in the ICMP header and an untranslated address in the extension. Applications MUST NOT assume extension addresses are in the same realm as datagram header addresses.
+section: "5"
+topics:
+    - nat
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

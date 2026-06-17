@@ -1,0 +1,9 @@
+document: rfc-5814
+kind: design-rationale
+summary: The bidirectional LSP setup delay metric does not account for the ResvConf confirmation message used in three-way signaling because both directions are ready for data transfer when the Resv message is received by the initiating node, making the confirmation superfluous for measuring setup completion.
+section: "15"
+topics:
+    - mpls
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

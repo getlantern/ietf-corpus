@@ -1,0 +1,9 @@
+document: rfc-5818
+kind: normative-requirement
+summary: Upon receipt of a ConfirmDataChannelStatus message, the RECEIVER MUST extract the data channel statuses and SHOULD compare them with its own. If a mismatch is found, the result SHOULD be reported to the management plane. The RECEIVER SHOULD also send ConfirmDataChannelStatusAck carrying all local end statuses.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

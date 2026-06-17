@@ -1,0 +1,8 @@
+document: rfc-5819
+kind: design-rationale
+summary: 'RFC 3501 explicitly disallows mailbox patterns in the STATUS command to discourage frequent use, but this prohibition had the opposite effect: clients began issuing a STATUS command for each mailbox returned by LIST, wasting bandwidth and incurring extra round trips especially without pipelining. This extension remedies the situation by combining both into a single LIST command with a STATUS return option.'
+section: "2"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

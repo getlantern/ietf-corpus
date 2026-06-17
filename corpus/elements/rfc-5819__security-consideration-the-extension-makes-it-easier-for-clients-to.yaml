@@ -1,0 +1,9 @@
+document: rfc-5819
+kind: security-consideration
+summary: The extension makes it easier for clients to overload the server by requesting STATUS information for a large number of mailboxes in a single command. Server implementations must ensure they can still serve other IMAP connections and yield execution to other connections when necessary during large STATUS retrievals.
+section: "5"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

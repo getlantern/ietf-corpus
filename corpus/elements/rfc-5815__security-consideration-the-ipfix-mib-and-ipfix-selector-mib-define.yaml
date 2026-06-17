@@ -1,0 +1,10 @@
+document: rfc-5815
+kind: security-consideration
+summary: The IPFIX MIB and IPFIX SELECTOR MIB define read-only objects that expose potentially sensitive operational information about flow export infrastructure (IP addresses, ports, template structures, flow rates). Implementations MUST use SNMPv3 with authentication and privacy to protect management access, applying SNMP access control to restrict which managers can read these objects.
+section: "9"
+topics:
+    - snmp
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
