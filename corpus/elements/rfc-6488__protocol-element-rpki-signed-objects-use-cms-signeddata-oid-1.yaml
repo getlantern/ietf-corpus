@@ -1,0 +1,10 @@
+document: rfc-6488
+kind: protocol-element
+summary: RPKI signed objects use CMS SignedData (OID 1.2.840.113549.1.7.2) as the encapsulation format. The top-level structure is a ContentInfo SEQUENCE containing a contentType OID and the SignedData content. The SignedData includes version, digestAlgorithms, encapContentInfo, an optional certificates field, an optional crls field, and signerInfos.
+section: "2"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

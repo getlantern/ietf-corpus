@@ -1,0 +1,10 @@
+document: rfc-6490
+kind: normative-requirement
+summary: Because the trust anchor key must be stable, the issuing entity SHOULD operate that CA in off-line mode and SHOULD issue a subordinate CA certificate containing the same INRs via the 'inherit' option. This keeps the trust anchor private key off-line while allowing normal issuance under the subordinate CA.
+section: "2.2"
+rfc2119_level: SHOULD
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

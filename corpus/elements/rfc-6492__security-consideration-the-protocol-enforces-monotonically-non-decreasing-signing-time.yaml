@@ -1,0 +1,10 @@
+document: rfc-6492
+kind: security-consideration
+summary: The protocol enforces monotonically non-decreasing signing-time values per originator/recipient pair to prevent replay attacks. A message with a signing time in the future creates a permanent lower bound; subsequent valid messages must have signing times at or after the erroneous future value. Resetting signing time requires out-of-band coordination not defined in this specification.
+section: "4"
+topics:
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

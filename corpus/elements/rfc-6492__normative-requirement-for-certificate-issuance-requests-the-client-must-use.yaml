@@ -1,0 +1,10 @@
+document: rfc-6492
+kind: normative-requirement
+summary: For certificate issuance requests, the client MUST use different key pairs for each distinct resource class. If the server detects that a request uses a key pair already assigned to another resource class, it MUST return error code 1204.
+section: 3.4.1
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6492
+kind: normative-requirement
+summary: 'The protocol requires strictly sequential operation per client: the server MUST NOT accept a client''s request unless it has already generated and sent a response to the client''s previous request. Parallel requests sharing a common sender attribute MUST be detected and rejected with error code 1101.'
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
