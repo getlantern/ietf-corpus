@@ -1,0 +1,9 @@
+document: rfc-5669
+kind: wire-format
+summary: 'The SRTCP nonce for SEED-CCM and SEED-GCM is 12 octets, formed as: (16 bits of zeroes || 4-octet SSRC || 16 bits of zeroes || 4-octet SRTCP index, zero-filled right-justified) XOR 12-octet Salt. SSRC is from the RTCP header; Salt from the SRTP key derivation function.'
+section: "3.2"
+topics:
+    - crypto
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

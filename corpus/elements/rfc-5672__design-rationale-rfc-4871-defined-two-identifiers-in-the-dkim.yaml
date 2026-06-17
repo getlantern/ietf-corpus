@@ -1,0 +1,9 @@
+document: rfc-5672
+kind: design-rationale
+summary: RFC 4871 defined two identifiers in the DKIM-Signature header (d= and i=) without clearly specifying which is the mandatory payload delivered to a receiving assessor module, creating potential interoperability problems where signers and assessors might disagree on which identifier to use for trust assessment. This Update resolves the ambiguity by designating d= (the SDID) as the single mandatory output.
+section: "1"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

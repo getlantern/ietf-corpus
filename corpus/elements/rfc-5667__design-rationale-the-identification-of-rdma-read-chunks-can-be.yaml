@@ -1,0 +1,6 @@
+document: rfc-5667
+kind: design-rationale
+summary: The identification of RDMA Read chunks can be implemented entirely within the RPC/XDR layer, transparent to NFS. File data in an NFS WRITE can be selected as an RDMA chunk based on size criteria independently of the NFS protocol layer, with XDR position values in Read chunk entries providing the correspondence.
+section: "2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

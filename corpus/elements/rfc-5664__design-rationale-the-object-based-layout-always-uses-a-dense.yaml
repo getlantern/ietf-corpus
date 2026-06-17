@@ -1,0 +1,6 @@
+document: rfc-5664
+kind: design-rationale
+summary: The object-based layout always uses a 'dense' layout where the second stripe unit starts at offset 0 of the second component rather than at byte offset stripe_unit. This avoids holes in component objects and ensures that after a full stripe, the next stripe unit appends directly to the first component.
+section: "5.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

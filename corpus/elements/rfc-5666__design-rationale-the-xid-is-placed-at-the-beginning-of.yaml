@@ -1,0 +1,6 @@
+document: rfc-5666
+kind: design-rationale
+summary: The XID is placed at the beginning of the RPC-over-RDMA header (before version, credits, and body) so that receivers can quickly establish message context. The receiver MAY process the message based solely on the header XID and ignore the XID in the inner RPC header.
+section: "4.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

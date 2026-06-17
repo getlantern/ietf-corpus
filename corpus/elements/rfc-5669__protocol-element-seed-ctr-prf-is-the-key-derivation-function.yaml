@@ -1,0 +1,9 @@
+document: rfc-5669
+kind: protocol-element
+summary: SEED-CTR PRF is the key derivation function for SEED-based SRTP, defined analogously to AES-CM PRF in RFC 3711 Section 4.3.3, with each AES invocation replaced by SEED. Keyed by a 128-bit master key, it has input block size m=128 and produces outputs up to 2^23 bits. SEED-PRF_n(k_master, x) = SEED-CTR applied to k_master with IV=(x*2^16), output truncated to n leftmost bits.
+section: "4"
+topics:
+    - crypto
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

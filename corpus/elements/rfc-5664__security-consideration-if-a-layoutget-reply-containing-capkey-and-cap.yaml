@@ -1,0 +1,10 @@
+document: rfc-5664
+kind: security-consideration
+summary: If a LAYOUTGET reply containing CapKey and Cap is intercepted, it can be used to forge valid OSD requests within the capability's access restrictions. Privacy for the capability key can be achieved via RPCSEC_GSS privacy, SSV-encrypted oc_capability_key (GSS_Wrap with conf_req_flag=TRUE), VLAN isolation, or IPsec.
+section: "13.3"
+topics:
+    - security
+    - crypto
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

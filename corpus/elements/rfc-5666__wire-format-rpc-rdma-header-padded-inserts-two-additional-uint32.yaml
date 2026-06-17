@@ -1,0 +1,6 @@
+document: rfc-5666
+kind: wire-format
+summary: rpc_rdma_header_padded inserts two additional uint32 fields—rdma_align (padding alignment value) and rdma_thresh (opaque data size threshold)—before the read/write chunk lists. When an opaque value's length exceeds rdma_thresh, the XDR decoder MUST skip rdma_align padding bytes before the data.
+section: "4.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

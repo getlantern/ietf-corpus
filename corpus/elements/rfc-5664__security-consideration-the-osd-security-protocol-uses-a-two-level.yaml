@@ -1,0 +1,9 @@
+document: rfc-5664
+kind: security-consideration
+summary: 'The OSD security protocol uses a two-level MAC scheme: the metadata server signs capabilities as CapKey = MAC<SecretKey>(Cap, SystemID); clients sign each OSD request as ReqMAC = MAC<CapKey>(Req, ReqNonce). The OSD validates using its shared SecretKey, enforcing access policy without knowing user IDs or ACLs.'
+section: "13.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

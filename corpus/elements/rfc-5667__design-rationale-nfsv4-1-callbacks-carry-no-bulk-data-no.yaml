@@ -1,0 +1,6 @@
+document: rfc-5667
+kind: design-rationale
+summary: NFSv4.1 callbacks carry no bulk data (no READ or WRITE), so they present no particular issue over RPC/RDMA and MAY be transmitted inline via RDMA_MSG or via RDMA_NOMSG if they overflow negotiated buffer sizes.
+section: "5.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

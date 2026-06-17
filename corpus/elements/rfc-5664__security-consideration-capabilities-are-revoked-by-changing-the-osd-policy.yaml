@@ -1,0 +1,8 @@
+document: rfc-5664
+kind: security-consideration
+summary: Capabilities are revoked by changing the OSD POLICY ACCESS TAG attribute. An OSD rejects any request using a capability with a mismatched POLICY ACCESS TAG (ILLEGAL REQUEST sense). The client should issue LAYOUTCOMMIT with PNFS_OSD_ERR_BAD_CRED and optionally a compound LAYOUTRETURN/LAYOUTGET to obtain fresh capabilities.
+section: "13.4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

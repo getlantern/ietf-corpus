@@ -1,0 +1,9 @@
+document: rfc-5669
+kind: wire-format
+summary: 'The SRTP nonce for SEED-CCM and SEED-GCM is 12 octets, formed as: (16 bits of zeroes || 4-octet SSRC || 4-octet ROC || 2-octet SEQ) XOR 12-octet Salt. SSRC and SEQ are taken from the RTP header; ROC from the cryptographic context; Salt from the SRTP key derivation function.'
+section: "3.1"
+topics:
+    - crypto
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

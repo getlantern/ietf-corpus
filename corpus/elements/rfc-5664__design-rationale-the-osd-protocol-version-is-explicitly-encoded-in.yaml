@@ -1,0 +1,6 @@
+document: rfc-5664
+kind: design-rationale
+summary: The OSD protocol version is explicitly encoded in pnfs_osd_object_cred4 (oc_osd_version), even though it could be inferred from the capability format byte. The explicit field is considered more robust for handling OSD v1 and anticipated v2 capabilities, which have different features (byte-range capabilities, snapshots).
+section: "3.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

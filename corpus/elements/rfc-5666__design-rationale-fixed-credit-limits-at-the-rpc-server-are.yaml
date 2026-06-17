@@ -1,0 +1,6 @@
+document: rfc-5666
+kind: design-rationale
+summary: Fixed credit limits at the RPC server are rejected because posted receive buffers are dedicated per-connection until consumed, scaling poorly as connections grow. A dynamic request/grant protocol carried in each RPC-over-RDMA header allows limits to be adjusted to server policy at each opportunity.
+section: "3.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

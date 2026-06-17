@@ -1,0 +1,7 @@
+document: rfc-5666
+kind: normative-requirement
+summary: The granted credit value in RPC reply messages MUST NOT be zero when no in-progress operations are present at the server, as a zero value would result in client deadlock. The server MUST always provide at least one credit to each connected client from which no requests are outstanding.
+section: "3.3"
+rfc2119_level: MUST NOT
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

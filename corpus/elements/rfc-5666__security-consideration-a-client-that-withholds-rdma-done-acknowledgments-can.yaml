@@ -1,0 +1,8 @@
+document: rfc-5666
+kind: security-consideration
+summary: A client that withholds RDMA_DONE acknowledgments can exhaust server RDMA buffer resources (denial of service). Servers MUST protect against this via time-based expiry windows or connection closure. The rdma_credit mechanism MAY be used to limit per-client outstanding requests, but credit MUST NOT be reduced to zero solely due to outstanding RDMA_DONE messages.
+section: "11"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

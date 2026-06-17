@@ -1,0 +1,10 @@
+document: rfc-5664
+kind: normative-requirement
+summary: The capability key SHOULD be transferred securely to prevent eavesdropping. A client SHOULD issue LAYOUTGET or GETDEVICEINFO via RPCSEC_GSS with the privacy service, or previously establish a Secret State Verifier (SSV) via NFSv4.1 SET_SSV to enable SSV-encrypted capability key delivery.
+section: "3.3"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

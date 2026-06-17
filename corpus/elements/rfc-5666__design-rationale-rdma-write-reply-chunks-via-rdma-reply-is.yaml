@@ -1,0 +1,6 @@
+document: rfc-5666
+kind: design-rationale
+summary: RDMA Write (reply chunks via rdma_reply) is preferred over server-side read chunks for long replies because RDMA Write avoids an extra network round-trip, does not require the server to wait for read completion, and eliminates the RDMA_DONE message and its associated timer and resource management.
+section: "5.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

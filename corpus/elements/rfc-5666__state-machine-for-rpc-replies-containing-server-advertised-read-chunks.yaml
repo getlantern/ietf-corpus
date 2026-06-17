@@ -1,0 +1,6 @@
+document: rfc-5666
+kind: state-machine
+summary: 'For RPC replies containing server-advertised read chunks (RDMA_NOMSG reply): server sends header, client issues RDMA Read(s) to fetch chunks, client MUST send RDMA_DONE to release server buffers. For write chunks in calls, RDMA ordering guarantees data placement before the reply Send arrives; no RDMA_DONE is required.'
+section: "3.8"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

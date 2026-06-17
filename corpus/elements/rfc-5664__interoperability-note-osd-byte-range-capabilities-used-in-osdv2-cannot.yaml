@@ -1,0 +1,6 @@
+document: rfc-5664
+kind: interoperability-note
+summary: OSD byte-range capabilities (used in OSDv2) cannot be merged or split at the pNFS protocol layer, unlike generic NFSv4.1 layout segments. This means layout segment tracking must be per-capability granularity, and LAYOUTRETURN cannot return arbitrary sub-ranges of a held layout segment.
+section: "10"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

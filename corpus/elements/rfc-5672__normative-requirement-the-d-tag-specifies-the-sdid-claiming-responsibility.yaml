@@ -1,0 +1,11 @@
+document: rfc-5672
+kind: normative-requirement
+summary: The d= tag specifies the SDID claiming responsibility for introducing a message into the mail stream, and the SDID MUST correspond to a valid DNS name under which the DKIM key record is published. When presented with a signature that does not meet these requirements, verifiers MUST consider the signature invalid.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
