@@ -1,0 +1,9 @@
+document: rfc-6439
+kind: design-rationale
+summary: The inhibition mechanism exists because TRILL cannot fully prevent two RBridges from simultaneously believing they are Appointed Forwarder for the same VLAN (e.g., due to bridged-LAN asymmetric visibility). Rather than relying solely on appointment correctness, inhibition provides a loop-safety backstop by suppressing native frame handling until timers expire.
+section: "2"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

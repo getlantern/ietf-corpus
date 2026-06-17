@@ -1,0 +1,8 @@
+document: rfc-6438
+kind: design-rationale
+summary: RFC 3697 rules 2 and 3 — that routers must not assume mathematical properties of flow labels and that router performance should not depend on their distribution — were intended for the general case where flow state is unknown. A router that has participated in flow state establishment (or knows the TEP's assignment method) can rely on label properties without further signaling, making those rules inapplicable in the tunnel scenario.
+section: "1.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

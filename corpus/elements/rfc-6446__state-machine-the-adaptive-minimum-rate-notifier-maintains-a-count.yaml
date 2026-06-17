@@ -1,0 +1,9 @@
+document: rfc-6446
+kind: state-machine
+summary: The adaptive minimum rate notifier maintains a 'count' record tracking notifications sent in the last 'period'. On subscription creation, 'count' is initialized to 'period * adaptive-min-rate'. Each NOTIFY sent (timeout or state change) triggers an update to 'count' and recalculation of 'timeout'. If timeout expires without a NOTIFY, current resource state is sent.
+section: "7.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

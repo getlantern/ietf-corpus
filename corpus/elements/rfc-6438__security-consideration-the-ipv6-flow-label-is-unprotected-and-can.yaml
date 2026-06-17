@@ -1,0 +1,10 @@
+document: rfc-6438
+kind: security-consideration
+summary: The IPv6 flow label is unprotected and can be forged by an on-path attacker. The worst an attacker could do against ECMP or LAG is attempt to selectively overload a particular path. Tunnel endpoints and ECMP/LAG paths are expected to be part of a managed infrastructure protected against on-path attacks, for example by using IPsec between tunnel endpoints.
+section: "4"
+topics:
+    - security
+    - ip
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

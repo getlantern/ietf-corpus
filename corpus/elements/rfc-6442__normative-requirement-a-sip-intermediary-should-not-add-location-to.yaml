@@ -1,0 +1,9 @@
+document: rfc-6442
+kind: normative-requirement
+summary: A SIP intermediary SHOULD NOT add location to a SIP request that already contains location. If it does add a locationValue, it MUST position it last in the Geolocation header and MUST NOT pass any resulting 424 response upstream — the intermediary bears full responsibility for that addition.
+section: "4.1"
+rfc2119_level: SHOULD NOT
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

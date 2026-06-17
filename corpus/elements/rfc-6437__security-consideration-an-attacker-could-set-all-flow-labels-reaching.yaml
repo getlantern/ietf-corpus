@@ -1,0 +1,9 @@
+document: rfc-6437
+kind: security-consideration
+summary: An attacker could set all flow labels reaching a given router to the same non-zero value or rapidly cycle values, causing stateless load distribution to perform badly and stateful classifiers to behave incorrectly. Stateless classifiers must not use flow label alone; stateful classifiers should detect and ignore suspect values.
+section: "6.2"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

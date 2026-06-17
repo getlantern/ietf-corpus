@@ -1,0 +1,8 @@
+document: rfc-6439
+kind: design-rationale
+summary: 'Per-VLAN inhibition timers are necessary for loop safety when bridges on a link are misconfigured, as illustrated in the Appendix example: RB1 sees RB2''s VLAN-3 Hello and inhibits itself, while RB2 (unable to see RB1''s Hellos) handles VLAN-3. If RB2 later disappears, RB1''s per-VLAN timer eventually expires and RB1 resumes service. Without separate per-VLAN timers, inhibition could spread unnecessarily across VLANs.'
+section: A
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

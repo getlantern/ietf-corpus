@@ -1,0 +1,10 @@
+document: rfc-6437
+kind: security-consideration
+summary: IPsec tunnel mode protects the inner header's flow label but not the outer header's. The IPsec protocol requires that the inner header's flow label not be changed during decapsulation, preventing theft or denial-of-service attacks across IPsec tunnel endpoints.
+section: "6.3"
+topics:
+    - ip
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

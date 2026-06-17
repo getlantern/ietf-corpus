@@ -1,0 +1,9 @@
+document: rfc-6446
+kind: design-rationale
+summary: The adaptive minimum rate mechanism was introduced because a static minimum rate lacks the ability to increase or decrease dynamically. When a target sends frequent notifications in a short burst, the adaptive mechanism increases the timeout for subsequent notifications, reducing unnecessary load; when notifications are sparse, it decreases the timeout to ensure timely delivery.
+section: "3.3"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

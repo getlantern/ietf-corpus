@@ -1,0 +1,9 @@
+document: rfc-6437
+kind: security-consideration
+summary: The flow label can serve as a covert data channel, since pseudo-random values could encode covert messages. The only certain defense is for a firewall to rewrite non-zero flow labels; such a firewall SHOULD reassign labels using the forwarding-node method and MUST NOT set non-zero labels to zero.
+section: "6.1"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

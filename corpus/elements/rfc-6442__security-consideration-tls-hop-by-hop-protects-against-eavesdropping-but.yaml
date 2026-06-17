@@ -1,0 +1,10 @@
+document: rfc-6442
+kind: security-consideration
+summary: TLS (hop-by-hop) protects against eavesdropping but exposes location to all proxies on the path. S/MIME end-to-end encryption is problematic for location-based routing because proxies need to read location. Location-by-reference with per-entity authentication is the preferred model when pre-association is possible, as it allows proper authorization of each entity that dereferences location.
+section: "7"
+topics:
+    - realtime
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

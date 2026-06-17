@@ -1,0 +1,8 @@
+document: rfc-6438
+kind: design-rationale
+summary: IPv6 transport-layer fields are inconvenient to extract for hardware because next-headers have variable placement and length; all implementations must be able to skip them. The 20-bit flow label in the fixed IPv6 header is therefore a simpler and more hardware-friendly hash input, especially for tunneled traffic.
+section: "1.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

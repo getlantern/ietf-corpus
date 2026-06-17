@@ -1,0 +1,8 @@
+document: rfc-6439
+kind: state-machine
+summary: An RBridge loses all Appointed Forwarder status when (1) it decides it has lost DRB status for a link, or (2) it observes a DRB change to another RBridge without itself becoming DRB. In the corner case where DRB role shifts between two ports of the same RBridge, neither condition applies and AF status is unchanged.
+section: "2.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

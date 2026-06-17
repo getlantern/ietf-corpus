@@ -1,0 +1,8 @@
+document: rfc-6445
+kind: design-rationale
+summary: mplsFrrFacilityDBProtectingTunnelResvBw is explicitly included in the facility DB table even though MPLS-TE-STD-MIB also has bandwidth fields, because backup tunnels are typically signaled with 0 bandwidth to avoid overbooking; the actual internal PLR reservation is different and must be exposed here.
+section: "6.3"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

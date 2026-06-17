@@ -1,0 +1,9 @@
+document: rfc-6438
+kind: design-rationale
+summary: In IP-in-IPv6 tunnels, all outer packets share the same source/destination addresses (the TEPs) and likely the same port and protocol numbers, causing the 2-tuple or 5-tuple hash to be constant and producing polarization — no load sharing across equal-cost paths between R1 and R2.
+section: "1.1"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

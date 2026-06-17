@@ -1,0 +1,8 @@
+document: rfc-6439
+kind: state-machine
+summary: 'Eight rules govern inhibition timer transitions: (1) on boot all timers expire except DRB timer; (2) becoming DRB sets DRB timer to port Holding Time; (3) losing DRB expires DRB timer; (4) receiving a Hello from an RBridge claiming AF status for VLAN-x sets VLAN-x timer to max(current, received Holding Time); (5) enabling VLAN-x on a port sets VLAN-x timer to port Holding Time; (6) detecting spanning-tree root change sets root change timer to 30 seconds (configurable down to 0); (7) discovering two ports are on the same link merges timers by max; (8) splitting ports to separate links clones timer state.'
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

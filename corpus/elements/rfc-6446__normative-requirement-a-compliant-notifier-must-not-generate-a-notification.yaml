@@ -1,0 +1,10 @@
+document: rfc-6446
+kind: normative-requirement
+summary: A compliant notifier MUST NOT generate a notification if the interval since the most recent notification is less than the reciprocal of the 'max-rate' parameter, except upon receipt of a SUBSCRIBE request, when the subscription state changes from 'pending' to 'active', or upon subscription termination.
+section: "5.2"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

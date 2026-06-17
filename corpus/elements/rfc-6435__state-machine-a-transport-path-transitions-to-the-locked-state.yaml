@@ -1,0 +1,8 @@
+document: rfc-6435
+kind: state-machine
+summary: A transport path transitions to the Locked state when either (a) a management Lock command is received (causing the MEP to begin sending LI messages) or (b) LI messages are received from the remote MEP. It transitions back to Unlocked when management sends an Unlock command AND LI messages have not been received for 3.5× the Refresh Timer interval.
+section: "6"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

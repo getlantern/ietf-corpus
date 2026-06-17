@@ -1,0 +1,11 @@
+document: rfc-6446
+kind: security-consideration
+summary: Authentication and message integrity SHOULD be applied to subscriptions using this extension, per RFC 3265. Integrity protection SHOULD also be applied to the Event header field in 2xx responses to NOTIFY requests; without it, an eavesdropper could manipulate rate control parameters to suppress or flood notifications without the subscriber's knowledge.
+section: "11"
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
