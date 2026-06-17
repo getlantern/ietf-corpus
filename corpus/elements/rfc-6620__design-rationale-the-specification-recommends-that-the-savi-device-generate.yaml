@@ -1,0 +1,9 @@
+document: rfc-6620
+kind: design-rationale
+summary: The specification recommends that the SAVI device generate DAD_NS messages upon receiving a data packet with no binding (rather than simply discarding it) to avoid disconnecting legitimate hosts whose DAD packets were lost due to spanning-tree delays, 802.1X authentication timing, SAVI device reboots, or topology changes. Silently dropping packets would violate the end-to-end fate-sharing principle by making host connectivity depend on SAVI device state.
+section: A.1
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

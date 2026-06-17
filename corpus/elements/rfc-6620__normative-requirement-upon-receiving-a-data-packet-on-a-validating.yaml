@@ -1,0 +1,10 @@
+document: rfc-6620
+kind: normative-requirement
+summary: Upon receiving a data packet on a Validating Port with no existing binding (NO_BIND state), the SAVI device SHOULD execute DAD on behalf of the address (2 NS messages, T_WAIT apart). The device MUST NOT forward data packets until the binding has been verified; packets MAY be stored or discarded in the interim.
+section: 3.2.3
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

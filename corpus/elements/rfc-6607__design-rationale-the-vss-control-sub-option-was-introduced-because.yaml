@@ -1,0 +1,8 @@
+document: rfc-6607
+kind: design-rationale
+summary: The VSS-Control sub-option was introduced because RFC 3046 requires DHCPv4 servers to copy all Relay Agent Information sub-options from request to reply, making it impossible for a relay agent to distinguish a server that blindly echoed the VSS sub-option from one that actually processed it. The zero-length VSS-Control sub-option is removed by a supporting server, providing an unambiguous signal.
+section: "5"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

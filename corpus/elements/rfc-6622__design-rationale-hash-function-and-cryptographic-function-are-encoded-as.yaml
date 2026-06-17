@@ -1,0 +1,9 @@
+document: rfc-6622
+kind: design-rationale
+summary: Hash function and cryptographic function are encoded as two separate 8-bit fields rather than as a single combined octet or TLV type extension, because adding further hash or cryptographic functions in the future could lead to a non-contiguous number space if combined.
+section: 12.1.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

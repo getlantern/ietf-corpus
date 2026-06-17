@@ -1,0 +1,10 @@
+document: rfc-6620
+kind: security-consideration
+summary: An attacker can exhaust FCFS SAVI DB memory by sending packets with many distinct source addresses. When memory is full, it is RECOMMENDED to evict entries with the highest creation time (newest first), preserving older legitimate entries. Per-port memory reservations (minimum 4 bindings per port) are also RECOMMENDED to isolate DoS effects.
+section: "4.1"
+rfc2119_level: RECOMMENDED
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

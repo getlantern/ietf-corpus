@@ -1,0 +1,9 @@
+document: rfc-6622
+kind: wire-format
+summary: 'For ICV type extension=1, the <ICV-value> field has the structure: <hash-function> (8-bit), <cryptographic-function> (8-bit), <key-id-length> (8-bit), <key-id> (variable, absent if key-id-length=0x00), and <ICV-data> (length - 3 - key-id-length octets). The value 0x00 for <key-id-length> indicates a pre-installed shared key.'
+section: "12.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

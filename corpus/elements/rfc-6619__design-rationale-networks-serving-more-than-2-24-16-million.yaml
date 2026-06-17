@@ -1,0 +1,10 @@
+document: rfc-6619
+kind: design-rationale
+summary: Networks serving more than 2^24 (16 million) users cannot assign unique private IPv4 addresses to each user because the largest reserved private block is 10/8. Per-interface bindings solve this by reusing the same private address space across point-to-point interfaces without consuming additional address space.
+section: "1"
+topics:
+    - nat
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6622
+kind: normative-requirement
+summary: When calculating the ICV for a Message ICV TLV, the fields <msg-hop-limit> and <msg-hop-count>, if present, MUST both be assumed to have the value 0. Any Message ICV TLVs already present MUST be removed before calculating and MUST be restored afterward.
+section: "9.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

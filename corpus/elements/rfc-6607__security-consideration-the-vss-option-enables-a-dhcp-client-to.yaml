@@ -1,0 +1,9 @@
+document: rfc-6607
+kind: security-consideration
+summary: The VSS option enables a DHCP client to request IP addresses from any VPN, enabling a more complete address-pool exhaustion attack across multiple VPNs rather than just the client's local subnet. Servers should use information such as giaddr (DHCPv4) or the link address in Relay-forward DHCPv6 messages to detect and prevent such attacks.
+section: "9"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

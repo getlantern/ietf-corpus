@@ -1,0 +1,9 @@
+document: rfc-6622
+kind: design-rationale
+summary: No field listing cryptographic ICV parameters is included in the TLV because routers must exchange or acquire keys before validating an ICV; additional parameters can be provided during that bootstrap process, making in-message parameter transmission unnecessary and wasteful. The ICV length is implicitly derivable as <length> - 3 - <key-id-length>.
+section: 12.1.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

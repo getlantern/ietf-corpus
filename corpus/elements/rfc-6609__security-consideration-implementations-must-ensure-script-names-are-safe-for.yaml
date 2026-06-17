@@ -1,0 +1,9 @@
+document: rfc-6609
+kind: security-consideration
+summary: Implementations MUST ensure script names are safe for use with their storage system; an error MUST be generated for names that could be used as attack vectors. Path traversal attacks such as 'include "./../../etc/passwd"' and command injection such as 'include "foo$(`rm star`)"' MUST be rejected.
+section: "4"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

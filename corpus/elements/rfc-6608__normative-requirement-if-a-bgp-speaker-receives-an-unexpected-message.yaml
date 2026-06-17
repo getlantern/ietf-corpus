@@ -1,0 +1,10 @@
+document: rfc-6608
+kind: normative-requirement
+summary: If a BGP speaker receives an unexpected message (e.g., OPEN) in Established state, it MUST send a NOTIFICATION with Error Code Finite State Machine Error and subcode 'Receive Unexpected Message in Established State'. The Data field is a 1-octet unsigned integer indicating the type of the unexpected message.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
