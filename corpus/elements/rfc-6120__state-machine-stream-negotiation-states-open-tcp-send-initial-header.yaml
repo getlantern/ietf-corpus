@@ -1,0 +1,8 @@
+document: rfc-6120
+kind: state-machine
+summary: 'Stream negotiation states: OPEN TCP → SEND INITIAL HEADER → RECEIVE RESPONSE HEADER → RECEIVE FEATURES. From FEATURES: if empty → DONE; if all voluntary → MAY negotiate, then DONE; if mandatory present → MUST negotiate one feature → if restart required, loop to SEND INITIAL HEADER; else return to RECEIVE FEATURES. TLS must precede SASL, which must precede resource binding.'
+section: 4.3.7
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

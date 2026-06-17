@@ -1,0 +1,8 @@
+document: rfc-6113
+kind: design-rationale
+summary: KDCs are stateless by design so that clients may use any KDC for each message in a conversation. The PA-FX-COOKIE mechanism resolves the apparent conflict between stateless KDCs and stateful client conversations by encoding all necessary conversation state in a KDC-generated opaque token that the client echoes back in each subsequent request.
+section: "5.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

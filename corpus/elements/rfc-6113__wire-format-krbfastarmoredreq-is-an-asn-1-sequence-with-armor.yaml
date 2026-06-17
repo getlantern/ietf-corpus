@@ -1,0 +1,8 @@
+document: rfc-6113
+kind: wire-format
+summary: 'KrbFastArmoredReq is an ASN.1 SEQUENCE with: armor (KrbFastArmor, OPTIONAL, MUST be present in AS-REQ), req-checksum (Checksum keyed with armor key at KEY_USAGE_FAST_REQ_CHKSUM=50, binding FAST padata to the outer request), and enc-fast-req (EncryptedData containing KrbFastReq, encrypted with armor key at KEY_USAGE_FAST_ENC=51).'
+section: 5.4.2
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-6113
+kind: wire-format
+summary: KrbFastResponse is an ASN.1 SEQUENCE with padata (SEQUENCE OF PA-DATA), strengthen-key (EncryptionKey, OPTIONAL in AS reply, MUST be present in TGS reply, MUST be absent in error reply), finished (KrbFastFinished, present in AS/TGS reply with returned ticket), and nonce (UInt32 echoing the client request nonce). Encrypted with armor key at KEY_USAGE_FAST_REP (52).
+section: 5.4.3
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

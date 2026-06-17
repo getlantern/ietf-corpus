@@ -1,0 +1,9 @@
+document: rfc-6116
+kind: security-consideration
+summary: ENUM relies on DNS, which is insecure without DNSSEC. Deployed ENUM services SHOULD include DNSSEC to mitigate data authenticity threats, though DNSSEC does not protect against Denial-of-Service attacks or guarantee that a connected endpoint is the intended peer.
+section: "7.1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

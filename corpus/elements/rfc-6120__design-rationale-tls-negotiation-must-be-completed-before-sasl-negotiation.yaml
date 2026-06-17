@@ -1,0 +1,9 @@
+document: rfc-6120
+kind: design-rationale
+summary: TLS negotiation MUST be completed before SASL negotiation because completing SASL first would expose authentication credentials to eavesdropping; this layering order (TCP → TLS → SASL → XMPP) ensures the channel is encrypted before any authentication data is transmitted.
+section: 5.3.4
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

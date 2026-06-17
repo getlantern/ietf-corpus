@@ -1,0 +1,9 @@
+document: rfc-6116
+kind: security-consideration
+summary: DNS caching and unsynchronized TTLs across the chain of records (NAPTR, SRV, A, DHCP) used to resolve a communication target can cause transient states where stale or misdirected contact information is used. Provisioning systems SHOULD minimize record changes and users SHOULD detect unintended session attempts.
+section: "7.2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6113
+kind: normative-requirement
+summary: The Kerberos client MUST support a local policy that rejects the KDC response if PA-FX-FAST-REPLY is not included. The client MUST verify that the nonce value in the KrbFastResponse matches that of the request; clients SHOULD use a new nonce for each message in a conversation to prevent cross-message replay.
+section: 5.4.3
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

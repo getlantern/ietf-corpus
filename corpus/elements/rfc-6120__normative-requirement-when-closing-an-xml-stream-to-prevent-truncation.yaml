@@ -1,0 +1,10 @@
+document: rfc-6120
+kind: normative-requirement
+summary: When closing an XML stream, to prevent truncation attacks the closing party MUST send a TLS close_notify alert per RFC 5246 Section 7.2.1 and MUST receive a responding close_notify from the other party before terminating the underlying TCP connection.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

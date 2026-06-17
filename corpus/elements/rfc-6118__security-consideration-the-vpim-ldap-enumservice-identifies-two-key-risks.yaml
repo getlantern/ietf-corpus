@@ -1,0 +1,11 @@
+document: rfc-6118
+kind: security-consideration
+summary: 'The vpim:ldap Enumservice identifies two key risks: malicious redirection (a rogue entry in the resolver database causing clients to connect to a fraudulent LDAP server) and denial of service (removal of the URI mapping). The vpim:mailto Enumservice adds a third: unsolicited bulk email, since ENUM maps telephone numbers to email addresses that bulk mailers can harvest.'
+section: "4.35"
+topics:
+    - security
+    - dns
+    - email
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

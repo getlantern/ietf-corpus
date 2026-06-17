@@ -1,0 +1,9 @@
+document: rfc-6120
+kind: normative-requirement
+summary: On successful negotiation of a feature that requires a stream restart (e.g., TLS or SASL with a security layer), both parties MUST NOT send a closing </stream> tag and MUST NOT terminate the underlying TCP connection; instead, the initiating entity MUST send a new initial stream header over the existing connection and the receiving entity MUST generate a new stream ID.
+section: 4.3.3
+rfc2119_level: MUST
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

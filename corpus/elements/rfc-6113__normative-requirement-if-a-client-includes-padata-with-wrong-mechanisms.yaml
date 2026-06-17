@@ -1,0 +1,9 @@
+document: rfc-6113
+kind: normative-requirement
+summary: If a client includes padata with wrong mechanisms or keys and the KDC returns KDC_ERR_PREAUTH_FAILED with no indication of correct padata, the client MUST retry with no padata and examine the error data of the KDC_ERR_PREAUTH_REQUIRED error. If the KDC includes pre-authentication information in the error data of KDC_ERR_PREAUTH_FAILED, the client SHOULD process it and retry.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

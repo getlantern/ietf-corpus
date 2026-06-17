@@ -1,0 +1,8 @@
+document: rfc-6113
+kind: security-consideration
+summary: The TGS MUST reject a request if an AD-fx-fast-armor (71) authorization data element is present in the PA-TGS-REQ authenticator or in the ticket in that authenticator. This prevents a user process from misusing a privileged host ticket to authenticate as the host when the host provided it only for FAST armoring.
+section: 5.4.1.1
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6113
+kind: normative-requirement
+summary: The KDC MUST NOT ignore padata of types used in previous messages in the same conversation; if a KDC issues KDC_ERR_PREAUTH_REQUIRED including padata of type x, it cannot subsequently ignore padata of type x in an AS-REQ. The KDC MUST ignore padata of unknown type.
+section: "2.4"
+rfc2119_level: MUST NOT
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

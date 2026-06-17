@@ -1,0 +1,8 @@
+document: rfc-6113
+kind: protocol-element
+summary: When FAST padata was included in the request, authenticated KRB-ERROR messages are delivered via PA-FX-ERROR (padata type 137) inside the KrbFastResponse. The KDC MUST include PA-FX-ERROR carrying the full KRB-ERROR (with e-data absent) so the client ignores the outer unprotected error and uses the integrity-protected inner error.
+section: 5.4.4
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

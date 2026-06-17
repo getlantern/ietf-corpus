@@ -1,0 +1,9 @@
+document: rfc-6113
+kind: protocol-element
+summary: For FX_FAST_ARMOR_AP_REQUEST, the armor key is computed as KRB-FX-CF2(subkey, ticket_session_key, 'subkeyarmor', 'ticketarmor'), ensuring both the KDC (via session key from the ticket) and the client (via the AP-REQ subkey) contribute to the armor key. This armor type is only valid for AS requests; TGS requests use implicit armor derived from the PA-TGS-REQ authenticator.
+section: 5.4.1.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

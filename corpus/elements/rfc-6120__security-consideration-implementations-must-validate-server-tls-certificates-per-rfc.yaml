@@ -1,0 +1,10 @@
+document: rfc-6120
+kind: security-consideration
+summary: Implementations MUST validate server TLS certificates per RFC 6125 procedures; the server certificate MUST contain a DNS-ID or SRV-ID that matches the XMPP service's origin domain. Self-signed certificates or certificates without a matching identifier MUST NOT be accepted without explicit prior out-of-band acceptance.
+section: 13.7.2
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
