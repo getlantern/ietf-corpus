@@ -1,0 +1,10 @@
+document: rfc-5749
+kind: design-rationale
+summary: The KDE mechanism is necessary because the EMSK must not leave the EAP server (per RFC 5295), yet root keys derived from the EMSK are required by other network servers for services such as re-authentication. The EAP server derives the keys and exports them to a co-located AAA server that distributes them to requesting servers.
+section: "1"
+topics:
+    - security
+    - crypto
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

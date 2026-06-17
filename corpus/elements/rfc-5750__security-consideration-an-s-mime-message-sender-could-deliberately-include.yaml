@@ -1,0 +1,10 @@
+document: rfc-5750
+kind: security-consideration
+summary: An S/MIME message sender could deliberately include an older unexpired CRL in a message to direct an agent to use out-of-date revocation status. Agents consulting CRLs SHOULD ensure that the most recently issued CRL for a CA is consulted.
+section: "5"
+topics:
+    - pkix
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,11 @@
+document: rfc-5751
+kind: security-consideration
+summary: RSA and DSA keys of less than 1024 bits are considered cryptographically insecure. Implementations supporting verification with such keys MUST warn the user. Server implementations where user warnings are not appropriate SHOULD reject messages with weak signatures.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

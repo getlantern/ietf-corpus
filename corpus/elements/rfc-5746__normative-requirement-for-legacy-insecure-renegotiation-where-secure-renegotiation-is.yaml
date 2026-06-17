@@ -1,0 +1,10 @@
+document: rfc-5746
+kind: normative-requirement
+summary: For legacy (insecure) renegotiation where `secure_renegotiation` is FALSE, it is RECOMMENDED that clients refuse renegotiation requests and respond with a `no_renegotiation` alert. Clients that do renegotiate MUST still provide the SCSV or `renegotiation_info` in the ClientHello.
+section: "4.2"
+rfc2119_level: RECOMMENDED
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5749
+kind: security-consideration
+summary: In implicit ERP bootstrapping, the EAP peer is unaware that its root keys are being distributed; there is no cryptographic verification of peer consent. A KRS can obtain a root key even if the peer does not support ERP, potentially wasting resources when EAP-Initiate/Re-auth-Start messages are silently dropped by the peer.
+section: "6.2"
+topics:
+    - security
+    - crypto
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

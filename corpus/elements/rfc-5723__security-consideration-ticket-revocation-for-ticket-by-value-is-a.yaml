@@ -1,0 +1,9 @@
+document: rfc-5723
+kind: security-consideration
+summary: Ticket revocation for 'ticket by value' is a known problem since a misbehaving client can present a ticket for an already-deleted IKE SA. Mitigations include an Invalid Ticket List (ITL) or Bloom Filter on the gateway, and short ticket lifetimes (e.g., 1 hour).
+section: "9.8"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

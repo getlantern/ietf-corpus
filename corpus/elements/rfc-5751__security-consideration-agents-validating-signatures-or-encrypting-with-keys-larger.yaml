@@ -1,0 +1,11 @@
+document: rfc-5751
+kind: security-consideration
+summary: 'Agents validating signatures or encrypting with keys larger than mandated sizes risk resource exhaustion attacks: an attacker could send certificates with very large keys causing excessive cryptographic processing. Agents MUST validate certificates to a trust anchor before using their keys, or employ cryptographic resource management.'
+section: "6"
+rfc2119_level: MUST
+topics:
+    - security
+    - email
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

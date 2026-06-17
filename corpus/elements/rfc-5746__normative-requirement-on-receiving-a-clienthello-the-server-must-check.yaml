@@ -1,0 +1,10 @@
+document: rfc-5746
+kind: normative-requirement
+summary: On receiving a ClientHello, the server MUST check for TLS_EMPTY_RENEGOTIATION_INFO_SCSV or the `renegotiation_info` extension and set `secure_renegotiation` accordingly. If the extension is present with a non-zero-length `renegotiated_connection` on an initial handshake, the server MUST abort. If `secure_renegotiation` is TRUE, the server MUST include an empty `renegotiation_info` in the ServerHello.
+section: "3.6"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

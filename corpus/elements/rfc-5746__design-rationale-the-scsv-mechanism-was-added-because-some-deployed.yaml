@@ -1,0 +1,9 @@
+document: rfc-5746
+kind: design-rationale
+summary: The SCSV mechanism was added because some deployed SSLv3/TLS 1.0 servers incorrectly reject handshakes containing unknown extensions, even though the specifications require them to be ignored. Using a fake cipher suite value avoids triggering this bug since unknown cipher suites are reliably ignored by all implementations.
+section: "3.3"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

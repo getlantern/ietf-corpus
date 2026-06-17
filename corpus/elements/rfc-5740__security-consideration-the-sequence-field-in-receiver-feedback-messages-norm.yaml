@@ -1,0 +1,9 @@
+document: rfc-5740
+kind: security-consideration
+summary: The 'sequence' field in receiver feedback messages (NORM_NACK, NORM_ACK) provides replay attack protection when used with authentication. Receivers MUST maintain per-destination sequence number spaces, and receivers SHOULD reject messages with sequence numbers that are not monotonically increasing from a given source.
+section: "4.1"
+topics:
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

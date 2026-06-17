@@ -1,0 +1,8 @@
+document: rfc-5746
+kind: interoperability-note
+summary: SSLv3 uses 36-byte `verify_data` values instead of TLS's 12 bytes, so `renegotiated_connection` is 72 bytes in SSLv3 renegotiating ServerHellos. Clients supporting SSLv3 and secure renegotiation MUST accept `renegotiation_info` from servers advertising version {0x03, 0x00}.
+section: "4.5"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

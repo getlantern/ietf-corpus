@@ -1,0 +1,8 @@
+document: rfc-5746
+kind: wire-format
+summary: The `RenegotiationInfo` extension has the structure `opaque renegotiated_connection<0..255>`. For an initial handshake, the full extension encoding is `ff 01 00 01 00` (type, length, zero-length field). For a renegotiating ServerHello, the field contains the concatenation of `client_verify_data` and `server_verify_data` (24 bytes for TLS, 72 bytes for SSLv3).
+section: "3.2"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

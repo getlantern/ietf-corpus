@@ -1,0 +1,10 @@
+document: rfc-5746
+kind: normative-requirement
+summary: For legacy (insecure) renegotiation on the server side, it is RECOMMENDED that servers not permit it. If they do, servers MUST verify that neither SCSV nor `renegotiation_info` is present in the renegotiating ClientHello, and abort if either is found.
+section: "4.4"
+rfc2119_level: RECOMMENDED
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

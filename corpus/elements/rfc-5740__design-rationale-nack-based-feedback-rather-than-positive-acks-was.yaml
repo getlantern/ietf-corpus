@@ -1,0 +1,8 @@
+document: rfc-5740
+kind: design-rationale
+summary: 'NACK-based feedback rather than positive ACKs was chosen for scalability: in a large multicast group, having all receivers positively acknowledge every packet would cause feedback implosion. Selective NACKs are sent only to report losses, and probabilistic suppression (via backoff timers) prevents multiple receivers from sending duplicate NACKs for the same missing segment.'
+section: "1.3"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

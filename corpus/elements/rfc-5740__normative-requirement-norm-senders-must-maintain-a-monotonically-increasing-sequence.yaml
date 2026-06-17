@@ -1,0 +1,10 @@
+document: rfc-5740
+kind: normative-requirement
+summary: NORM senders MUST maintain a monotonically increasing sequence number space for NORM_INFO, NORM_DATA, and NORM_CMD messages so that receivers can estimate packet loss for congestion control. This 'sequence' field is explicitly NOT part of NORM reliability procedures; FEC payload identifiers detect missing content.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - multicast
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

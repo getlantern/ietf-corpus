@@ -1,0 +1,9 @@
+document: rfc-5751
+kind: design-rationale
+summary: Two signed message formats are defined (application/pkcs7-mime with SignedData, and multipart/signed) to address different deployment needs. multipart/signed allows non-S/MIME recipients to view message content while SignedData protects against benign intermediate agents (e.g., mail gateways) that might alter line wrapping or transfer encoding and break signatures.
+section: 3.4.1
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

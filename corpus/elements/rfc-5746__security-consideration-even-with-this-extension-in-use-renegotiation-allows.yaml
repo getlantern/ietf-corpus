@@ -1,0 +1,9 @@
+document: rfc-5746
+kind: security-consideration
+summary: Even with this extension in use, renegotiation allows the peer to present a different certificate than was used earlier in the same connection. Application developers may be surprised if APIs like `getPeerCertificates()` return different values across a renegotiation, and applications that do not account for this may handle the transition insecurely.
+section: "5"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

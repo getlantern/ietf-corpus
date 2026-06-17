@@ -1,0 +1,10 @@
+document: rfc-5729
+kind: security-consideration
+summary: A malicious node may purposely create a malformed list of realms in a Decorated NAI, causing routing through realms unrelated to the original exchange or through non-existent realms. The request may traverse several hops before the invalid realm is discovered, creating unnecessary routing overhead.
+section: "5"
+topics:
+    - diameter
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

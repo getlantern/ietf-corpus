@@ -1,0 +1,11 @@
+document: rfc-5751
+kind: security-consideration
+summary: If a sending agent sends the same message encrypted with both strong and weak cryptography, an attacker can determine the strongly encrypted content by decrypting the weak copy. A sender SHOULD NOT send a message copy using weaker cryptography than the original.
+section: "6"
+rfc2119_level: SHOULD NOT
+topics:
+    - security
+    - crypto
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

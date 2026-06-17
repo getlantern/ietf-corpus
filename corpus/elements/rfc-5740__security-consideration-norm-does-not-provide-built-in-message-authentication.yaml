@@ -1,0 +1,10 @@
+document: rfc-5740
+kind: security-consideration
+summary: NORM does not provide built-in message authentication or confidentiality. The baseline security approach relies on IPsec (ESP in tunnel or transport mode) to provide data origin authentication and integrity. Without authentication, NORM is vulnerable to bogus NACK injection, NACK flooding causing DoS via excessive repair transmissions, and injection of false sender commands to disrupt group operation.
+section: "7"
+topics:
+    - security
+    - ipsec
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5723
+kind: security-consideration
+summary: An adversary flooding a gateway with forged tickets (by value) burdens CPU and memory. For tickets by reference, this creates an amplification attack as the gateway resolves each reference. The regular IKEv2 cookie mechanism can mitigate state-overflow DoS; ticket verification should use efficient symmetric algorithms.
+section: "9.3"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

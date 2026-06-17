@@ -1,0 +1,9 @@
+document: rfc-5746
+kind: security-consideration
+summary: Applications that depend on renegotiation should be aware that many TLS APIs represent application data as a simple octet stream, making it impossible to determine exactly which octets were received before, during, or after renegotiation. When the peer presents a different certificate during renegotiation, particular care is required in specifying how application data spanning the boundary should be handled.
+section: "5"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

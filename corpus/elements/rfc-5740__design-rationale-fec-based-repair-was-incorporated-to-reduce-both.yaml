@@ -1,0 +1,8 @@
+document: rfc-5740
+kind: design-rationale
+summary: FEC-based repair was incorporated to reduce both the volume of NACK messages and the number of repair transmissions. A single FEC parity segment can satisfy multiple receivers' differing erasure patterns simultaneously, unlike segment-by-segment repair that would require individual retransmissions for each unique loss pattern in the group.
+section: "2.1"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

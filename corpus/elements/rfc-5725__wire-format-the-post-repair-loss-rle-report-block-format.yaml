@@ -1,0 +1,9 @@
+document: rfc-5725
+kind: wire-format
+summary: 'The Post-repair Loss RLE Report Block format consists of: BT (8 bits, value=10), rsvd (4 bits, must be zero), T/thinning (4 bits), block length (16 bits, in 32-bit words minus one), SSRC of source (32 bits), begin_seq (16 bits), end_seq (16 bits), followed by 16-bit chunks (run length, bit vector, or terminating null).'
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

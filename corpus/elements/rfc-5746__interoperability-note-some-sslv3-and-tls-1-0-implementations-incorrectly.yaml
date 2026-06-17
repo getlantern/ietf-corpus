@@ -1,0 +1,8 @@
+document: rfc-5746
+kind: interoperability-note
+summary: Some SSLv3 and TLS 1.0 implementations incorrectly fail the handshake when encountering unknown extensions, even though the specs require them to be ignored. The SCSV is provided as a fallback signaling mechanism that can be safely included in any ClientHello, including SSLv2 backward-compatible CLIENT-HELLO messages.
+section: "3.3"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

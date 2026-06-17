@@ -1,0 +1,9 @@
+document: rfc-5746
+kind: interoperability-note
+summary: Clients that receive no `renegotiation_info` in the ServerHello cannot determine via TLS mechanisms alone whether the server is vulnerable or simply does not support renegotiation. Terminating the connection ensures security but causes interoperability failures with un-upgraded servers; there is no single client behavior that guarantees both security and maximum interoperability during the transition period.
+section: "4.1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

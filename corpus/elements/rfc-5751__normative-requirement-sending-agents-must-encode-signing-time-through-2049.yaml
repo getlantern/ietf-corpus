@@ -1,0 +1,10 @@
+document: rfc-5751
+kind: normative-requirement
+summary: Sending agents MUST encode signing time through 2049 as UTCTime and 2050 or later as GeneralizedTime. UTCTime year values >= 50 are interpreted as 19YY; values < 50 as 20YY. Receiving agents MUST be able to process signing-time attributes encoded in either format.
+section: 2.5.1
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

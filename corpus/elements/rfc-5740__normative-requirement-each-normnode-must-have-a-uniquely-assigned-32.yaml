@@ -1,0 +1,9 @@
+document: rfc-5740
+kind: normative-requirement
+summary: Each NormNode MUST have a uniquely assigned 32-bit NormNodeId within a single NormSession. NormNodeId 0x00000000 is reserved as NORM_NODE_NONE (invalid) and 0xffffffff as NORM_NODE_ANY (wildcard). Duplicate NormNodeIds would prevent proper demultiplexing of sender repair responses and congestion control.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

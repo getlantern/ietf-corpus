@@ -1,0 +1,9 @@
+document: rfc-5746
+kind: security-consideration
+summary: TLS renegotiation is vulnerable to an attack where an attacker forms a TLS connection to the server, injects arbitrary traffic, and then splices in the client's TLS handshake so the server treats it as renegotiation. The server then believes the attacker's initial traffic came from the authenticated client, enabling request forgery and credential theft.
+section: "1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

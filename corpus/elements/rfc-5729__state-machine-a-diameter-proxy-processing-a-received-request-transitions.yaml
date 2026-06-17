@@ -1,0 +1,9 @@
+document: rfc-5729
+kind: state-machine
+summary: 'A Diameter proxy processing a received request transitions through: (1) check if Destination-Realm is local; (2) inspect User-Name AVP for decoration; (3) if decorated, strip outermost realm from NAI and update Destination-Realm AVP; (4) forward using RFC 3588 routing. If not decorated, skip to normal RFC 3588 processing.'
+section: "4.4"
+topics:
+    - diameter
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

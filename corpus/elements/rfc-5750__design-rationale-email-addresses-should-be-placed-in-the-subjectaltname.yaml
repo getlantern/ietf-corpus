@@ -1,0 +1,9 @@
+document: rfc-5750
+kind: design-rationale
+summary: Email addresses SHOULD be placed in the subjectAltName extension rather than the subject DN because subjectAltName is the preferred means in S/MIME for conveying email addresses. Certificates with an empty subject DN are valid if subjectAltName is present and marked critical.
+section: "3"
+topics:
+    - pkix
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

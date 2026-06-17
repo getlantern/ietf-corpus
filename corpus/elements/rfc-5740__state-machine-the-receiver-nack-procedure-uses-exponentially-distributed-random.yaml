@@ -1,0 +1,8 @@
+document: rfc-5740
+kind: state-machine
+summary: The receiver NACK procedure uses exponentially distributed random backoff timers scaled by GRTT_sender and the sender's backoff factor K_sender (carried in the 'backoff' field). Upon detecting data loss, a receiver sets a random backoff timer; if a matching repair advertisement or NACK from another receiver is seen before the timer fires, the receiver suppresses its own NACK (probabilistic suppression). If not, it transmits the NACK.
+section: "5.3"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

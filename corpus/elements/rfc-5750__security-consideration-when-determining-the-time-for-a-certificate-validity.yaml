@@ -1,0 +1,10 @@
+document: rfc-5750
+kind: security-consideration
+summary: When determining the time for a certificate validity check, the SigningTime attribute found in an S/MIME message MUST NOT be used unless it is from a trusted agent, as it could be deliberately set to direct checking of a stale CRL or cause improper validity period results.
+section: "5"
+topics:
+    - pkix
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

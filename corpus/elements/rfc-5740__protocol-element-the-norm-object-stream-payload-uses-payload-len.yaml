@@ -1,0 +1,9 @@
+document: rfc-5740
+kind: protocol-element
+summary: The NORM_OBJECT_STREAM payload uses 'payload_len' (16-bit), 'payload_msg_start' (16-bit), and 'payload_offset' (32-bit) fields to convey stream position and message boundaries. When payload_len=0, payload_msg_start is reinterpreted as a 'stream_control_code'; NORM_STREAM_END=0 signals that the sender will no longer repair content past that stream position.
+section: 4.2.1
+topics:
+    - multicast
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

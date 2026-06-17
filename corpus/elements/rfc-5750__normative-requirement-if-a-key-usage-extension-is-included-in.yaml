@@ -1,0 +1,11 @@
+document: rfc-5750
+kind: normative-requirement
+summary: If a key usage extension is included in a PKIX certificate, then it MUST be marked as critical. S/MIME receiving agents MUST NOT accept the signature of a message if it was verified using a certificate that contains the key usage extension without either the digitalSignature or nonRepudiation bit set.
+section: 4.4.2
+rfc2119_level: MUST NOT
+topics:
+    - pkix
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

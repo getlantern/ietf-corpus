@@ -1,0 +1,10 @@
+document: rfc-5750
+kind: design-rationale
+summary: The 4096-bit RSA key size requirement for certificate and CRL verification is larger than the 2048-bit requirement for message operations because many root CAs in certificate stores have already issued root certificates with 4096-bit keys, and 4096-bit keys are normally only used by root certificates to lengthen their validity period.
+section: "5"
+topics:
+    - pkix
+    - email
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

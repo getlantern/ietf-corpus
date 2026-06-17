@@ -1,0 +1,9 @@
+document: rfc-5740
+kind: wire-format
+summary: The NORM_DATA message (type=2) carries application data or FEC symbols. Its header adds 'instance_id' (16-bit), 'grtt' (8-bit quantized RTT), 'backoff' (4-bit), 'gsize' (4-bit), 'flags' (8-bit), 'fec_id' (8-bit), and 'object_transport_id' (16-bit), followed by a variable-size 'fec_payload_id'. Stream objects additionally carry 'payload_len', 'payload_msg_start', and 'payload_offset' fields in the payload.
+section: 4.2.1
+topics:
+    - multicast
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

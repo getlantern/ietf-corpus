@@ -1,0 +1,8 @@
+document: rfc-5740
+kind: state-machine
+summary: 'Upon receiving NACKs, the sender enters repair state aggregation: it collects NACKs over a repair window (one GRTT), aggregates the repair needs, then responds with FEC repair transmissions or NORM_CMD(SQUELCH) for out-of-range requests. After transmitting repairs, it may send NORM_CMD(REPAIR_ADV) to suppress further redundant NACKs in asymmetric topologies where receivers cannot observe each other''s unicast feedback.'
+section: "5.4"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

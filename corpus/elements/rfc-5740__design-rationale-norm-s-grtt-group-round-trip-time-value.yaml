@@ -1,0 +1,8 @@
+document: rfc-5740
+kind: design-rationale
+summary: NORM's 'grtt' (Group Round-Trip Time) value is carried in every sender message rather than communicated only during explicit GRTT probes. This allows newly joining receivers to immediately obtain RTT information needed to set their backoff timers, enabling rapid and correct participation without waiting for a dedicated GRTT measurement exchange.
+section: 4.2.1
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
