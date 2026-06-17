@@ -1,0 +1,8 @@
+document: rfc-5893
+kind: design-rationale
+summary: The IDNABIS WG decided not to require that labels following an RTL label also satisfy the Bidi rule, because ASCII domain names starting with digits cannot be invalidated, IDNA processing may occur before zone-suffix appending, DNAME redirections can introduce unsafe labels, and wildcards can generate names the zone owner cannot control.
+section: "5"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

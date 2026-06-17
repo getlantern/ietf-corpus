@@ -1,0 +1,10 @@
+document: rfc-5898
+kind: security-consideration
+summary: An attacker blocking connectivity checks (e.g., ICE STUN Binding Requests) can prevent session establishment entirely when connectivity preconditions are in use. Without preconditions, only the individual stream is affected; with them, the entire session setup is disrupted. No mitigation is provided against attackers able to block all traffic between endpoints.
+section: "7"
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

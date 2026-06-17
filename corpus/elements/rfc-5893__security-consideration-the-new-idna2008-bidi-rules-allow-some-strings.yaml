@@ -1,0 +1,9 @@
+document: rfc-5893
+kind: security-consideration
+summary: The new IDNA2008 Bidi rules allow some strings that IDNA2003 forbade. Differences in label interpretation between IDNA2003 and IDNA2008 implementations could pose a security risk, though no specific attack is identified. Hash computations over identifiers should use network order and are unaffected.
+section: "8"
+topics:
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

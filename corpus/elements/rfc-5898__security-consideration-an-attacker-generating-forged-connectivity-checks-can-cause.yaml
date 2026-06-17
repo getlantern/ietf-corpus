@@ -1,0 +1,11 @@
+document: rfc-5898
+kind: security-consideration
+summary: An attacker generating forged connectivity checks can cause endpoints to believe connectivity exists when it does not, resulting in session establishment without working media, or can trick endpoints into sending media to the wrong destination (connection hijacking). It is RECOMMENDED that connectivity verification mechanisms use message authentication and integrity protection (e.g., ICE's STUN message integrity per RFC 5245 Section 2.5).
+section: "7"
+rfc2119_level: RECOMMENDED
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

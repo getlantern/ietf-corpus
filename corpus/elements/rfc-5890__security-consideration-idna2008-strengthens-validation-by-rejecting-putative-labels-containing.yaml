@@ -1,0 +1,9 @@
+document: rfc-5890
+kind: security-consideration
+summary: IDNA2008 strengthens validation by rejecting putative labels containing unassigned code points (which IDNA2003 permitted). However, it no longer assumes that lookup applications can determine the protocol version used during registration, reducing pre-lookup validation ability; in practice the protection this afforded was largely illusory.
+section: "4.7"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

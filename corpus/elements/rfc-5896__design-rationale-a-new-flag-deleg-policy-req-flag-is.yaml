@@ -1,0 +1,8 @@
+document: rfc-5896
+kind: design-rationale
+summary: A new flag (deleg_policy_req_flag) is introduced rather than changing deleg_req_flag behavior because existing applications and user expectations depend on the current unconditional delegation behavior. Changing deleg_req_flag to honor OK-AS-DELEGATE would break deployments where KDCs do not set that flag, causing negative user experiences without coordination with administrators.
+section: "6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

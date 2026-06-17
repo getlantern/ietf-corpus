@@ -1,0 +1,9 @@
+document: rfc-5890
+kind: security-consideration
+summary: U-labels that satisfy IDNA symmetry constraints may be up to 252 Unicode code points long, far exceeding the 63-octet DNS label limit that applies to A-labels. Applications using U-labels must guard against buffer overflow and truncation errors and attacks in contexts where shorter strings are expected.
+section: "4.2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
