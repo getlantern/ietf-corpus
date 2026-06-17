@@ -1,0 +1,9 @@
+document: rfc-6073
+kind: security-consideration
+summary: When using VCCV CC Type 3 without the Control Word enabled, a crafted packet with a TTL greater than the number of MS-PW hops (or mis-processed TTL at an S-PE) could be mistakenly forwarded out of the attachment circuit as a native PW packet. Enabling the CW guarantees VCCV packets are never forwarded to the AC.
+section: 13.1.1
+topics:
+    - security
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

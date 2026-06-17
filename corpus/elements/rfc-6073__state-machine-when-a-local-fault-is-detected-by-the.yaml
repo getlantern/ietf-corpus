@@ -1,0 +1,8 @@
+document: rfc-6073
+kind: state-machine
+summary: 'When a local fault is detected by the S-PE, it sends PW status messages in both directions: ''Local PSN-facing PW (egress) Transmit Fault'' (0x00000010) toward the faulted segment side and ''Local PSN-facing PW (ingress) Receive Fault'' (0x00000008) toward the other. Local faults always supersede remote faults; remote fault-clearing messages are only forwarded when no corresponding local fault exists.'
+section: "10.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

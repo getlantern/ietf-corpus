@@ -1,0 +1,8 @@
+document: rfc-6073
+kind: design-rationale
+summary: The active T-PE role in FEC 129 is determined by comparing SAII and TAII as unsigned integers; the T-PE with the larger SAII assumes the active role. This avoids a race condition where both T-PEs independently signal through different S-PEs.
+section: 7.2.1
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
