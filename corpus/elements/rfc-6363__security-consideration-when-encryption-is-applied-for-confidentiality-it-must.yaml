@@ -1,0 +1,11 @@
+document: rfc-6363
+kind: security-consideration
+summary: When encryption is applied for confidentiality, it MUST be applied either before FEC encoding on the source data, or after FEC encoding on both FEC source packets and repair packets with at least equivalent cryptographic strength. Encrypting only FEC source packets after encoding allows an attacker to recover plaintext from unencrypted repair packets.
+section: 9.2.1
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

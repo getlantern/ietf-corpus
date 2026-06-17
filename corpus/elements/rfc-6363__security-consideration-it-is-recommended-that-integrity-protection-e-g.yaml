@@ -1,0 +1,11 @@
+document: rfc-6363
+kind: security-consideration
+summary: It is RECOMMENDED that integrity protection (e.g., SRTP with TESLA, or IPsec/ESP) be applied to both FEC source and repair packets to prevent corrupted packets from entering decoding, which would otherwise cause decoding failure or produce a corrupted source flow. The FEC Framework Configuration Information SHOULD also be integrity-protected, for example by digital signature when sent out-of-band.
+section: 9.2.2
+rfc2119_level: RECOMMENDED
+topics:
+    - security
+    - realtime
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

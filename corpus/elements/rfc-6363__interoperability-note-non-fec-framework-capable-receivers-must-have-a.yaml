@@ -1,0 +1,10 @@
+document: rfc-6363
+kind: interoperability-note
+summary: Non-FEC-Framework-capable receivers MUST have a means to either not receive repair packets or to identify and discard them. This SHOULD be achieved by sending repair packets on a different transport-layer flow; when RTP is used and source and repair share a UDP flow, different RTP payload types SHOULD distinguish them. Use of the Explicit Source FEC Payload ID must be avoided for backward compatibility with such receivers.
+section: "10.2"
+rfc2119_level: MUST
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

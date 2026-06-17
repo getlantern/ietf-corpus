@@ -1,0 +1,9 @@
+document: rfc-6363
+kind: design-rationale
+summary: The Explicit Source FEC Payload ID is placed at the end of the source packet so that header compression schemes such as ROHC can still be applied to the inner protocol headers (e.g., RTP). This placement avoids breaking header compression pipelines when FEC is added to pre-existing protocols.
+section: "5.3"
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
