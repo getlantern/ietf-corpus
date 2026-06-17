@@ -1,0 +1,11 @@
+document: rfc-5452
+kind: normative-requirement
+summary: If a resolver detects that an attempt is being made to spoof it—for example, by discovering that many packets fail the matching criteria—it MAY abandon the UDP query and re-issue it over TCP, which is far more resilient against forgery due to its use of sequence numbers.
+section: "9.3"
+rfc2119_level: MAY
+topics:
+    - dns
+    - security
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

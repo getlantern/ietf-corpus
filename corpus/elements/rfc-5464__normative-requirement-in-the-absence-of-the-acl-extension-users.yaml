@@ -1,0 +1,10 @@
+document: rfc-5464
+kind: normative-requirement
+summary: In the absence of the ACL extension, users can only set and retrieve annotations on a mailbox returned via LIST/LSUB on which they have read or write access to message content. If the ACL extension is present, users must have the 'l' right and at least one of 'r', 's', 'w', 'i', or 'p' rights. Servers MUST respond with NO if conditions are not met.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

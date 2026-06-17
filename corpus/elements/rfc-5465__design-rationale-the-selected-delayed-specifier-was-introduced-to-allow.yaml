@@ -1,0 +1,8 @@
+document: rfc-5465
+kind: design-rationale
+summary: The SELECTED-DELAYED specifier was introduced to allow clients that use MSNs (Message Sequence Numbers) and '*' in commands to still benefit from NOTIFY. Without it, unsolicited EXPUNGE notifications would invalidate MSNs mid-operation; SELECTED-DELAYED defers expunge notifications until a safe command boundary.
+section: 6.1.2
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

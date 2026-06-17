@@ -1,0 +1,11 @@
+document: rfc-5454
+kind: security-consideration
+summary: 'Home agents MUST perform reverse-tunnel checks for IPv6 packets analogous to RFC 3024 for IPv4: the outer source address must be a registered care-of address, and the inner header source address must be a registered IPv4 HoA or IPv6 prefix. Packets failing either check SHOULD be silently discarded and logged.'
+section: "4"
+rfc2119_level: MUST
+topics:
+    - ip
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

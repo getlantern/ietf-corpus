@@ -1,0 +1,10 @@
+document: rfc-5452
+kind: normative-requirement
+summary: 'A resolver implementation MUST match responses to all of the following query attributes before applying DNS trustworthiness rules: source address against query destination address, destination address against query source address, destination port against query source port, query ID, query name, and query class and type. A mismatch means the response MUST be considered invalid.'
+section: "9.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

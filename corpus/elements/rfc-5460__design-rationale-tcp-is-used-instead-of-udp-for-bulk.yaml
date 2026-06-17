@@ -1,0 +1,9 @@
+document: rfc-5460
+kind: design-rationale
+summary: TCP is used instead of UDP for Bulk Leasequery because at service-provider edges there may be many thousands of delegated prefixes per relay, making individual UDP queries inefficient or infeasible. TCP enables efficient bulk data transfer for large result sets.
+section: "1"
+topics:
+    - dns
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

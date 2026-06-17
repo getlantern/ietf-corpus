@@ -1,0 +1,8 @@
+document: rfc-5452
+kind: interoperability-note
+summary: It is generally safe for DNS to use ports in the range 1024–49152 even though some are allocated to other protocols; a DNS resolver using such a port will release it after a short time and migrate to a different port, with only high-volume resolvers posing a risk of long-term port block-out for other applications.
+section: "4.5"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

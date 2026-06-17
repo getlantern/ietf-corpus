@@ -1,0 +1,9 @@
+document: rfc-5459
+kind: wire-format
+summary: When a SID is appended to actual audio frames, the FT value in the payload header reflects the audio encoding rate, not the SID. The SID is identified as the remaining bytes after all complete audio frames, and its size (2, 3, or 6 octets) is inferred from payload length.
+section: "4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

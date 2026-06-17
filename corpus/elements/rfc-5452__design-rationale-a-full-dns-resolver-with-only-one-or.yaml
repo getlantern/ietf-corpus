@@ -1,0 +1,9 @@
+document: rfc-5452
+kind: design-rationale
+summary: A full DNS resolver with only one or a small number of upstream-facing endpoints effectively uses constants for IP source address and UDP port, which are highly predictable; since attackers can force the resolver to query attacker-controlled nameservers, any constant or sequential state can be measured and used to predict future state.
+section: 9.2.1
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

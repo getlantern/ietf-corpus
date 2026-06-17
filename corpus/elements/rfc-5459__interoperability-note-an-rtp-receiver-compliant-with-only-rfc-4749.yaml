@@ -1,0 +1,9 @@
+document: rfc-5459
+kind: interoperability-note
+summary: An RTP receiver compliant with only RFC 4749 (not this specification) will ignore the 'dtx' parameter and omit it from its answer, preventing DTX activation. Such receivers would use packet loss concealment during silence periods instead of comfort noise generation, resulting in degraded audio quality.
+section: 5.2.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

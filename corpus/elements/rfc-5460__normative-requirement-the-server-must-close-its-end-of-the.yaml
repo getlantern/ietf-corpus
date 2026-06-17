@@ -1,0 +1,10 @@
+document: rfc-5460
+kind: normative-requirement
+summary: The server MUST close its end of the TCP connection if it encounters an error sending data, or if it finds it must abort an in-process request. If the server detects the client end has been closed, it MUST close its end after finishing any outstanding requests.
+section: "7.4"
+rfc2119_level: MUST
+topics:
+    - dns
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

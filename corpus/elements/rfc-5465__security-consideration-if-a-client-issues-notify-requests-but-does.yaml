@@ -1,0 +1,10 @@
+document: rfc-5465
+kind: security-consideration
+summary: If a client issues NOTIFY requests but does not read responses, the TCP window can fill up and a careless server might block. This problem exists in plain IMAP but is magnified by the NOTIFY extension, which can generate significantly more unsolicited data.
+section: "9"
+topics:
+    - email
+    - security
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

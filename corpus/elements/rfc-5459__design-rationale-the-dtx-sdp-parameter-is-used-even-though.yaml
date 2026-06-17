@@ -1,0 +1,9 @@
+document: rfc-5459
+kind: design-rationale
+summary: The 'dtx' SDP parameter is used even though the DTX payload format is backward-compatible at the binary level. Without the parameter, a legacy RFC 4749 receiver would silently use packet loss concealment rather than comfort noise during silence periods, causing poor audio quality. The parameter ensures both endpoints explicitly agree on DTX behavior.
+section: 5.2.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

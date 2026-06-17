@@ -1,0 +1,10 @@
+document: rfc-5452
+kind: security-consideration
+summary: DNS recursive servers behind NAT or a stateful firewall may exhaust all available NAT translation entries/ports under high query load when using port randomization, since randomization causes translation entries to be consumed faster than with a fixed query port.
+section: "10"
+topics:
+    - dns
+    - security
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5452
+kind: security-consideration
+summary: The effects of source port randomization may be dramatically reduced by NAT devices that serialize or limit the UDP source ports used by the querying resolver. NAT boxes and stateful firewalls should purge outgoing DNS query translation entries 10–17 seconds after the last outgoing query on that mapping, and RFC 4787-compliant devices must treat UDP messages to port 53 differently than most other UDP.
+section: "10"
+topics:
+    - dns
+    - security
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

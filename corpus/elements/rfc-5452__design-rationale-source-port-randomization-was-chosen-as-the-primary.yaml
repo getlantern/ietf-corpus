@@ -1,0 +1,9 @@
+document: rfc-5452
+kind: design-rationale
+summary: Source port randomization was chosen as the primary countermeasure because it extends the effective transaction ID space from 16 bits to up to 32 bits (16-bit ID plus ~16-bit port), expanding the problem space by a factor of ~64000 and making the bandwidth required for a 50% spoofing success exceed 285 Gb/s—infeasible in practice.
+section: "8"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

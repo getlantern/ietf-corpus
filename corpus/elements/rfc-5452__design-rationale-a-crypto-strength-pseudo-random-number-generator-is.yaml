@@ -1,0 +1,10 @@
+document: rfc-5452
+kind: design-rationale
+summary: 'A crypto-strength (pseudo-)random number generator is required rather than a simple increment or weak PRNG because weak generators expose internal state: an attacker observing several sequential ''random'' values can predict future ones, effectively reducing the ID space to near zero.'
+section: 9.2.1
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
