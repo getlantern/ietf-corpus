@@ -1,0 +1,8 @@
+document: rfc-5656
+kind: design-rationale
+summary: ECMQV uses a single ephemeral key pair for both of the client's required keys (rather than two different ephemeral keys) because the SSH client has no long-term key to authenticate. This is more efficient and does not adversely affect security, being analogous to the one-pass protocol of Law et al. (1998).
+section: "5"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

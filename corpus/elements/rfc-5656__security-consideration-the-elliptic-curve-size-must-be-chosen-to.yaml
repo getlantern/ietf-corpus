@@ -1,0 +1,9 @@
+document: rfc-5656
+kind: security-consideration
+summary: The elliptic curve size must be chosen to match the security strength of other SSH handshake elements (host key sizes, hash algorithms, bulk encryption algorithms). Using ECDSA and ECDH with different curve sizes can result in two different SHA2 variants being used simultaneously.
+section: "9"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

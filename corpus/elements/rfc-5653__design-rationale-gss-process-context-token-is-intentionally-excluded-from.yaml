@@ -1,0 +1,8 @@
+document: rfc-5653
+kind: design-rationale
+summary: gss_process_context_token is intentionally excluded from the Java bindings, and gss_delete_sec_context is modified to not return peer tokens, in accordance with recommendations in RFC 2743. GSSContext.dispose() only destroys locally stored context information.
+section: "6.4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

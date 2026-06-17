@@ -1,0 +1,8 @@
+document: rfc-5653
+kind: design-rationale
+summary: The GSSContext.export() inter-process transfer mechanism is designed for the common server pattern of a parent accepting contexts and delegating them to child processes. After export the original GSSContext is invalidated; the adopting process reconstructs an equivalent context from the byte array token.
+section: "4.6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

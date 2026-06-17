@@ -1,0 +1,9 @@
+document: rfc-5653
+kind: security-consideration
+summary: Inter-process tokens produced by GSSContext.export() may contain sensitive data including cryptographic keys. While GSS-API implementors are encouraged to avoid or cryptographically protect such content, many implementations cannot, so applications are solely responsible for protecting tokens in transit.
+section: "4.6"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
