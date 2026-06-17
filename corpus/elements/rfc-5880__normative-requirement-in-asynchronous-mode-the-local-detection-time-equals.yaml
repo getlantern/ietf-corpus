@@ -1,0 +1,9 @@
+document: rfc-5880
+kind: normative-requirement
+summary: In Asynchronous mode, the local Detection Time equals the Detect Mult received from the remote system multiplied by the agreed remote transmit interval (max of bfd.RequiredMinRxInterval and last received Desired Min TX Interval). If the Detection Time passes without receiving a BFD Control packet while in Init or Up state, the session MUST be set to Down with Diag=1.
+section: 6.8.4
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

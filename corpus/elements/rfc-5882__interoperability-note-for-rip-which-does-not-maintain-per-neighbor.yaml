@@ -1,0 +1,8 @@
+document: rfc-5882
+kind: interoperability-note
+summary: For RIP, which does not maintain per-neighbor adjacency state, a BFD session failure for a neighbor should be handled by simulating expiration of the 'timeout' timer for each route installed from that neighbor. Routes with a next-hop different from the neighbor address may linger for up to 180 seconds unless implementations track all routes per neighbor.
+section: "10.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

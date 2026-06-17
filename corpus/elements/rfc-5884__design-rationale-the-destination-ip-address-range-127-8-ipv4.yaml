@@ -1,0 +1,9 @@
+document: rfc-5884
+kind: design-rationale
+summary: The destination IP address range 127/8 (IPv4) / 0:0:0:0:0:FFFF:7F00/104 (IPv6) is used for BFD Control packets sent by the ingress LSR, following the same motivation as RFC 4379 Section 2.1, to ensure the packet is processed by the egress LSR's control plane. This is an explicit exception to the behavior defined in RFC 1122.
+section: "7"
+topics:
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

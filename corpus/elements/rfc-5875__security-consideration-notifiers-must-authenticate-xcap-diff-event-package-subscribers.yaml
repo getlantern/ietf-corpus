@@ -1,0 +1,9 @@
+document: rfc-5875
+kind: security-consideration
+summary: Notifiers MUST authenticate 'xcap-diff' event package subscribers using normal SIP authentication mechanisms (e.g., Digest per RFC 3261 Section 22). Notifiers MUST be aware of XCAP User Identifiers (XUI) and how to unambiguously map authenticated SIP identities to XUIs. Notifiers MUST obey XCAP authorization rules when signalling resource changes, meaning a resource for which an authenticated user does not have read privilege MUST NOT be included in the XCAP diff format.
+section: "7"
+topics:
+    - security
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

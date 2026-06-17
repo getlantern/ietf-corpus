@@ -1,0 +1,8 @@
+document: rfc-5880
+kind: design-rationale
+summary: Demand mode was introduced to reduce overhead in deployments with a very large number of BFD sessions or when the Echo function is used symmetrically. The tradeoff is that Detection Times are driven by implementation heuristics rather than the BFD protocol itself, and Demand mode must not be used when the path round-trip time exceeds the desired Detection Time.
+section: "3.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

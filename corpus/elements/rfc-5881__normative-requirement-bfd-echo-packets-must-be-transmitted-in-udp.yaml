@@ -1,0 +1,11 @@
+document: rfc-5881
+kind: normative-requirement
+summary: BFD Echo packets MUST be transmitted in UDP packets with destination port 3785. The destination address MUST be chosen to cause the remote system to forward the packet back to the local system, and the source address MUST be chosen to preclude the remote system from generating ICMP or Neighbor Discovery Redirect messages.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - routing
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

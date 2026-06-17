@@ -1,0 +1,11 @@
+document: rfc-5881
+kind: normative-requirement
+summary: When BFD authentication is in use, all BFD Control packets MUST still be sent with TTL or Hop Limit of 255. Received packets with TTL/Hop Limit not equal to 255 MAY be discarded, and the TTL check MAY be performed before cryptographic authentication to avoid unnecessary computation.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

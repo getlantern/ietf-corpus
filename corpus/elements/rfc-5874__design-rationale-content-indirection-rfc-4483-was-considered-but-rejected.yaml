@@ -1,0 +1,9 @@
+document: rfc-5874
+kind: design-rationale
+summary: Content indirection (RFC 4483) was considered but rejected as the basis for change notifications because it uses a MIME Content-ID rather than an HTTP entity tag, making it impossible for clients to determine whether a reported change was caused by their own prior operation or by another concurrent XCAP client. The XCAP diff format exposes previous- and new-ETags explicitly to address this.
+section: "1"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

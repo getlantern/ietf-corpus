@@ -1,0 +1,9 @@
+document: rfc-5881
+kind: design-rationale
+summary: The BFD Echo source address is deliberately chosen to not belong to the subnet of the transmitting interface and to not be a link-local address, in order to prevent the remote system from generating ICMP Redirect or Neighbor Discovery Redirect messages that would interfere with the echo path.
+section: "4"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

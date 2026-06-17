@@ -1,0 +1,10 @@
+document: rfc-5880
+kind: normative-requirement
+summary: Each system MUST choose a unique, nonzero opaque discriminator value (bfd.LocalDiscr) for each BFD session. Once the remote system echoes the discriminator back in the Your Discriminator field, all subsequent packets MUST be demultiplexed based on Your Discriminator alone, allowing source address and interface to change without losing session association.
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5875
+kind: normative-requirement
+summary: When the notifier receives a re-subscription, it MUST re-send the current full XML diff content unless the subscriber has requested a conditional subscription (RFC 5839) using the Suppress-If-Match header field. If a match to the previous state is not found, the NOTIFY MUST contain the full XML diff state.
+section: "4.7"
+rfc2119_level: MUST
+topics:
+    - sip
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

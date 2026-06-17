@@ -1,0 +1,8 @@
+document: rfc-5875
+kind: design-rationale
+summary: Reliable transfer of NOTIFY messages is required because out-of-order events would cause document state divergence and subsequent patches would fail or have unintended consequences. This is why the notifier must wait for 200-OK before sending the next NOTIFY.
+section: "4.7"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

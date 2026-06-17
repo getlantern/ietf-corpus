@@ -1,0 +1,8 @@
+document: rfc-5884
+kind: design-rationale
+summary: BFD is used for MPLS LSP fault detection instead of LSP Ping alone because BFD has lower computational cost, a fixed packet format suitable for hardware/firmware implementation, and supports sub-second fault detection intervals. LSP Ping is retained for bootstrapping and periodic control-plane verification because BFD cannot associate a fault detection message with a FEC in PHP or next-hop label allocation scenarios.
+section: "3.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

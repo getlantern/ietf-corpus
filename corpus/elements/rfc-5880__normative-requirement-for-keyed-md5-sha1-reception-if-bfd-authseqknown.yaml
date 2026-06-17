@@ -1,0 +1,10 @@
+document: rfc-5880
+kind: normative-requirement
+summary: For Keyed MD5/SHA1 reception, if bfd.AuthSeqKnown is 1, received sequence numbers outside the window [bfd.RcvAuthSeq, bfd.RcvAuthSeq+(3*DetectMult)] MUST be discarded. For Meticulous variants the window is [bfd.RcvAuthSeq+1, bfd.RcvAuthSeq+(3*DetectMult)]. bfd.AuthSeqKnown MUST be reset to zero after no packets are received for at least twice the Detection Time.
+section: 6.7.3
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

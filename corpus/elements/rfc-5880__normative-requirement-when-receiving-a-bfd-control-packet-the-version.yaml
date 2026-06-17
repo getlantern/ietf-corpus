@@ -1,0 +1,10 @@
+document: rfc-5880
+kind: normative-requirement
+summary: When receiving a BFD Control packet, the version MUST be 1, the Length field MUST be at least 24 (or 26 if A bit is set) and must not exceed the encapsulating payload, Detect Mult MUST be nonzero, the M bit MUST be zero, and My Discriminator MUST be nonzero; packets failing any of these checks MUST be discarded.
+section: 6.8.6
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5880
+kind: normative-requirement
+summary: If bfd.DesiredMinTxInterval is increased while the session is Up, the actual transmission interval MUST NOT change until the Poll Sequence has terminated, ensuring the remote system updates its Detection Time before the interval increases. Symmetrically, if bfd.RequiredMinRxInterval is reduced, the previous value MUST be used for the remote Detection Time calculation until the Poll Sequence terminates.
+section: 6.8.3
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

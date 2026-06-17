@@ -1,0 +1,10 @@
+document: rfc-5884
+kind: normative-requirement
+summary: Once the BFD session for an MPLS LSP is UP, either end MUST NOT change the source IP address or local discriminator values of its BFD Control packets unless it first brings the session down. An LSR MUST ignore BFD packets for a session in UP state if the My Discriminator or Source IP address do not match the established session values.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5875
+kind: normative-requirement
+summary: A notifier MUST NOT send a new NOTIFY request to the same dialog unless a successful 200-response has been received for the last sent NOTIFY request. If the NOTIFY request fails due to a timeout, the notifier MUST remove the subscription.
+section: "4.7"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

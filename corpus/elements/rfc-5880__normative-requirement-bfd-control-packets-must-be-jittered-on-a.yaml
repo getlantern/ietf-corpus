@@ -1,0 +1,9 @@
+document: rfc-5880
+kind: normative-requirement
+summary: BFD Control packets MUST be jittered on a per-packet basis by up to 25% (interval reduced by a random value of 0–25%) to avoid self-synchronization. When bfd.DetectMult is 1, the interval MUST be between 75% and 90% of the negotiated interval to ensure the Detection Time does not pass before the next packet arrives.
+section: 6.8.7
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

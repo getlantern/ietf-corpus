@@ -1,0 +1,9 @@
+document: rfc-5882
+kind: design-rationale
+summary: In hierarchical control protocol stacks (e.g., OSPF and IBGP), it is best for the protocol at the lowest point in the hierarchy to interact with BFD. Relaying fast failure detection to higher-level protocols like IBGP may be detrimental, as OSPF will naturally heal the path and the cost of a BGP peer state transition is high.
+section: "4.4"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5882
+kind: normative-requirement
+summary: If a BFD session transitions from Up to AdminDown (or the remote signals AdminDown), clients SHOULD NOT take any control protocol action. For other Up to Down transitions, the control protocol SHOULD signal the lack of connectivity, using an explicit path-state mechanism if available, or emulating a control protocol timeout if not.
+section: "4.2"
+rfc2119_level: SHOULD
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

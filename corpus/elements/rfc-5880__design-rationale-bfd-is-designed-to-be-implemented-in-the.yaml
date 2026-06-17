@@ -1,0 +1,8 @@
+document: rfc-5880
+kind: design-rationale
+summary: BFD is designed to be implemented in the forwarding plane rather than the control plane. This decouples the protocol from the fate of the routing engine and makes it compatible with graceful restart mechanisms. Implementing BFD in the control engine is permitted but may prevent detection of certain forwarding-plane failures.
+section: "2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

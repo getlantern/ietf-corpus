@@ -1,0 +1,9 @@
+document: rfc-5881
+kind: design-rationale
+summary: BFD is explicitly not applicable for application-to-application failure detection across the Internet because it lacks sufficient congestion detection and avoidance capability, which could cause congestion collapse. Host-to-host or application-to-application deployment would require BFD to be encapsulated within a transport providing TCP-friendly (TFRC) behavior.
+section: "2"
+topics:
+    - routing
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

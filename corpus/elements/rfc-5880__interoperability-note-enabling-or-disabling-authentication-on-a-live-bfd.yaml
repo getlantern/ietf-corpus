@@ -1,0 +1,9 @@
+document: rfc-5880
+kind: interoperability-note
+summary: Enabling or disabling authentication on a live BFD session may cause the session to fail in a simple implementation, because the packet acceptance rules require both systems to be synchronized (within the Detection Time) on whether authentication is 'in use.' Implementations SHOULD allow the authentication state to change at most once without external intervention to prevent attackers from toggling authentication by sending crafted packets.
+section: 6.7.1
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

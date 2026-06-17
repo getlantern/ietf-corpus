@@ -1,0 +1,9 @@
+document: rfc-5875
+kind: design-rationale
+summary: The 'xcap-patching' mode preserves the full HTTP ETag change history while 'aggregate' optimizes bandwidth by collapsing multiple version transitions into one. However, 'aggregate' mode can cause initial synchronization failures with rapidly changing resources because base XCAP does not support document version history retrievals.
+section: "4.3"
+topics:
+    - sip
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
