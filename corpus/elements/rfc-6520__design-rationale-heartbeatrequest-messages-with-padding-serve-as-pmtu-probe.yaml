@@ -1,0 +1,8 @@
+document: rfc-6520
+kind: design-rationale
+summary: HeartbeatRequest messages with padding serve as PMTU probe packets for DTLS, following the packetization-layer PMTU discovery method of RFC 4821. This avoids the need for a separate probe message type that would complicate the DTLS record layer.
+section: "5.1"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6519
+kind: design-rationale
+summary: A new RADIUS attribute is needed because DS-Lite AFTR information may be stored in AAA servers while client configuration is delivered via DHCPv6. Without a RADIUS attribute, there is no standard way to transfer the AFTR name from the AAA server to the NAS so the NAS can populate DHCPv6 OPTION_AFTR_NAME.
+section: "1"
+topics:
+    - radius
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

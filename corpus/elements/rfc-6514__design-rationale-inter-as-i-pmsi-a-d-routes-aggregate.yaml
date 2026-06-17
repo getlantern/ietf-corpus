@@ -1,0 +1,11 @@
+document: rfc-6514
+kind: design-rationale
+summary: Inter-AS I-PMSI A-D routes aggregate per-PE Intra-AS I-PMSI A-D routes so that outside an AS the granularity is <AS, MVPN> rather than <PE, MVPN>. This caps inter-AS routing state growth proportional to the number of participating ASes, not the number of PEs, making the design scalable for large MVPNs.
+section: 9.2.3.1
+topics:
+    - bgp
+    - multicast
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

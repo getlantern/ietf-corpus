@@ -1,0 +1,11 @@
+document: rfc-6513
+kind: design-rationale
+summary: Explicit tracking of downstream PEs per C-tree is omitted from default BGP C-multicast routes to reduce state and improve scalability; the upstream PE does not need to know downstream PE identities to construct PIM messages. Leaf A-D routes provide explicit tracking only when needed for P-tree setup or S-PMSI optimization.
+section: 5.3.2
+topics:
+    - bgp
+    - mpls
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6520
+kind: normative-requirement
+summary: If a handshake is initiated while a HeartbeatRequest is still in flight, the sending peer MUST stop the DTLS retransmission timer for that HeartbeatRequest. For DTLS, HeartbeatRequest messages from older epochs SHOULD be discarded.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

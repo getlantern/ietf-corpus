@@ -1,0 +1,10 @@
+document: rfc-6520
+kind: normative-requirement
+summary: If the payload_length of a received HeartbeatMessage is too large (i.e., it would exceed the actual message bounds), the received HeartbeatMessage MUST be discarded silently. This guards against out-of-bounds memory reads in implementations.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

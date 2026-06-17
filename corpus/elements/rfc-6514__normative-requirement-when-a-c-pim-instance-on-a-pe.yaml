@@ -1,0 +1,12 @@
+document: rfc-6514
+kind: normative-requirement
+summary: When a C-PIM instance on a PE creates a new (C-*,C-G) state and the selected upstream PE for the C-RP is not local, the PE MUST originate a Shared Tree Join C-multicast route with the C-RP address in the Multicast Source field. Deletion of the state MUST result in withdrawal of the route.
+section: 11.1.1.2
+rfc2119_level: MUST
+topics:
+    - bgp
+    - multicast
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

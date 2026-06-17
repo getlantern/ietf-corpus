@@ -1,0 +1,11 @@
+document: rfc-6515
+kind: normative-requirement
+summary: If the MP_REACH_NLRI next hop contains an IPv4 address, all IP addresses in the PMSI Tunnel Attribute 'Tunnel Identifier' field MUST be IPv4. If the next hop is IPv6, all Tunnel Identifier IP addresses MUST be IPv6. Violations require treating the PMSI Tunnel Attribute as 'malformed' per RFC 6514 Section 5.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - multicast
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

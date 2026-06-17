@@ -1,0 +1,8 @@
+document: rfc-6520
+kind: wire-format
+summary: 'HeartbeatMessage consists of: type (HeartbeatMessageType, 1 byte), payload_length (uint16, 2 bytes), payload (opaque, payload_length bytes), and padding (opaque, padding_length bytes). The padding_length equals TLSPlaintext.length (or DTLSPlaintext.length) minus payload_length minus 3, and MUST be at least 16 bytes.'
+section: "4"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,11 @@
+document: rfc-6515
+kind: wire-format
+summary: In the Leaf A-D Route, the 'Originating Router's IP Address' length is computed from the NLRI length minus the variable-length Route Key (which has its own length subfield). If the computed length is neither 4 nor 16, the attribute MUST be treated as 'incorrect' per RFC 4760 Section 7.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - multicast
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

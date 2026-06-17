@@ -1,0 +1,11 @@
+document: rfc-6515
+kind: design-rationale
+summary: The address family of PE (provider) addresses in MCAST-VPN routes is determined solely by the length of the address field (4 octets = IPv4, 16 octets = IPv6), not by the AFI field of the associated MP_REACH_NLRI/MP_UNREACH_NLRI attribute. This allows an SP with an IPv4 core to provide MVPN/IPv6 service, with PE addresses remaining 4-octet IPv4 even when AFI=2.
+section: "1.1"
+topics:
+    - bgp
+    - multicast
+    - vpn
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,11 @@
+document: rfc-6520
+kind: normative-requirement
+summary: When using reliable transport (SCTP or TCP), HeartbeatRequest messages only need to be sent once; the transport layer handles retransmissions. If no corresponding HeartbeatResponse is received after some time, the TLS/DTLS connection MAY be terminated by the initiating application.
+section: "3"
+rfc2119_level: MAY
+topics:
+    - tls
+    - tcp
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

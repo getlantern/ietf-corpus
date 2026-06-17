@@ -1,0 +1,9 @@
+document: rfc-6520
+kind: normative-requirement
+summary: When using unreliable transport protocols (DCCP or UDP), HeartbeatRequest messages MUST be retransmitted using the same simple timeout and retransmission scheme DTLS uses for flights (RFC 6347 Section 4.2.4). After repeated retransmissions without a valid HeartbeatResponse, the DTLS connection SHOULD be terminated, using the same threshold as for DTLS handshake messages.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

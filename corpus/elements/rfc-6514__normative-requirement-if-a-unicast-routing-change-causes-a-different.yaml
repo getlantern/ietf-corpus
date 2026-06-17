@@ -1,0 +1,12 @@
+document: rfc-6514
+kind: normative-requirement
+summary: If a unicast routing change causes a different UMH route to be selected for a C-S, the PE MUST re-originate all previously originated C-multicast routes for (C-S,C-G) for all C-G. Similarly, a UMH change for a C-RP requires re-origination of all (C-*,C-G) routes for groups using that RP.
+section: 11.1.4
+rfc2119_level: MUST
+topics:
+    - bgp
+    - multicast
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

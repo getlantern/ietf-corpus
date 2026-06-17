@@ -1,0 +1,12 @@
+document: rfc-6514
+kind: normative-requirement
+summary: When a PMSI Tunnel attribute or PE Distinguisher Labels attribute is determined to be malformed and the Partial bit is set in the received BGP Update, the router SHOULD treat the Update as though all routes in it had been withdrawn. An implementation MUST provide debugging facilities including at minimum logging an error when such an attribute is detected.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - multicast
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

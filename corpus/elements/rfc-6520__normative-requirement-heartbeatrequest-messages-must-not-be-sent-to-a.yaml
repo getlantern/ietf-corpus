@@ -1,0 +1,10 @@
+document: rfc-6520
+kind: normative-requirement
+summary: HeartbeatRequest messages MUST NOT be sent to a peer that has indicated peer_not_allowed_to_send. If such an endpoint receives a HeartbeatRequest, it SHOULD drop the message silently and MAY send an unexpected_message Alert.
+section: "2"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

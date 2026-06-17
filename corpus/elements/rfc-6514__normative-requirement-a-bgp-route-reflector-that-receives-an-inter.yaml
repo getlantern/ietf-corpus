@@ -1,0 +1,12 @@
+document: rfc-6514
+kind: normative-requirement
+summary: A BGP route reflector that receives an Inter-AS I-PMSI A-D route via IBGP MUST NOT modify the Next Hop field of the MP_REACH_NLRI attribute when re-advertising into IBGP, because that Next Hop controls the flow of C-multicast routes per Section 11.2.
+section: 9.2.3.4
+rfc2119_level: MUST NOT
+topics:
+    - bgp
+    - multicast
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

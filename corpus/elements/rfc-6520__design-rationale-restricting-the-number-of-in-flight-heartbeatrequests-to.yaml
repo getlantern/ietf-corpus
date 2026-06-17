@@ -1,0 +1,9 @@
+document: rfc-6520
+kind: design-rationale
+summary: Restricting the number of in-flight HeartbeatRequests to one at a time, combined with the DTLS retransmission scheme, ensures that heartbeats do not cause congestion problems when running over UDP or other transport protocols that lack their own congestion control.
+section: "3"
+topics:
+    - tls
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

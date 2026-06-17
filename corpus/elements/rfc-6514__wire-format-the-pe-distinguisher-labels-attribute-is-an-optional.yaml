@@ -1,0 +1,11 @@
+document: rfc-6514
+kind: wire-format
+summary: The PE Distinguisher Labels attribute is an optional transitive BGP attribute consisting of repeating <PE Address, 3-octet Label> tuples; the label value occupies the high-order 20 bits. It is malformed if the PE Address is not unicast, or if the length is not a multiple of 7 (IPv4 PE addresses) or 19 (IPv6 PE addresses). All PE addresses MUST use the same address family as the Originating Router's IP Address of the carrying route.
+section: "8"
+topics:
+    - bgp
+    - mpls
+    - multicast
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

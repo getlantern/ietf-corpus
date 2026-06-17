@@ -1,0 +1,9 @@
+document: rfc-6520
+kind: security-consideration
+summary: The document states that the security considerations of RFC 5246 (TLS 1.2) and RFC 6347 (DTLS 1.2) apply in full, and that this extension introduces no new security considerations. In practice, the requirement to discard messages whose payload_length exceeds the actual received data (Section 4) is the critical guard against memory disclosure; failure to enforce it produced CVE-2014-0160 (Heartbleed).
+section: "7"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

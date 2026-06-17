@@ -1,0 +1,11 @@
+document: rfc-6515
+kind: wire-format
+summary: In the Intra-AS I-PMSI A-D route, the NLRI begins with a 1-octet route type, 1-octet NLRI length, 8-octet Route Distinguisher, and then the 'Originating Router's IP Address' field; its length (4 for IPv4, 16 for IPv6) is inferred from the NLRI length field (12 or 24, respectively). An NLRI length implying neither 4 nor 16 octets for the address field MUST be treated as 'incorrect'.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - multicast
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

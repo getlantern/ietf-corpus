@@ -1,0 +1,12 @@
+document: rfc-6514
+kind: security-consideration
+summary: The MVPN control plane relies on BGP and inherits its security properties; implementations should apply BGP authentication (e.g., TCP MD5) on all MVPN BGP sessions. Malformed PMSI Tunnel or PE Distinguisher Labels attributes must be logged and affected routes treated as withdrawn, limiting the impact of crafted or corrupted BGP Updates on the multicast forwarding plane.
+section: "17"
+topics:
+    - bgp
+    - multicast
+    - vpn
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
