@@ -1,0 +1,11 @@
+document: rfc-5613
+kind: normative-requirement
+summary: The CA-TLV's Sequence Number MUST match the Sequence Number in the OSPFv2 packet header Authentication field. On a mismatch or authentication failure, the whole LLS block MUST be ignored. The CA-TLV MUST NOT appear more than once, and when present MUST be the last TLV in the LLS block.
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

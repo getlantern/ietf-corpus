@@ -1,0 +1,9 @@
+document: rfc-5605
+kind: design-rationale
+summary: The TrafficParamDescr table is intentionally not defined in this MIB module; instead, a RowPointer object references an entry in any existing ATM Traffic Descriptor table. This allows operators to reuse or override the TD already assigned to the ATM endpoint in the native ATM service MIB (RFC 2515), avoiding redundant definitions.
+section: "8"
+topics:
+    - snmp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

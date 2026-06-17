@@ -1,0 +1,10 @@
+document: rfc-5613
+kind: normative-requirement
+summary: If the LLS block checksum is incorrect, the OSPF packet MUST still be processed, but the LLS block MUST be discarded. When cryptographic authentication is in use, the regular LLS checksum is not calculated and is instead set to 0.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5613
+kind: design-rationale
+summary: LLS appends a TLV data block to existing Hello and DD packets rather than introducing a new packet type. A new packet type would add extra packets on the network and cause backward compatibility issues; appending to existing packets avoids both problems because non-LLS routers simply ignore the trailing data.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

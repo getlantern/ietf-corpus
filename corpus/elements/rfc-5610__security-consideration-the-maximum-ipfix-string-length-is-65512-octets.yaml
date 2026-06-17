@@ -1,0 +1,9 @@
+document: rfc-5610
+kind: security-consideration
+summary: The maximum IPFIX string length is 65512 octets (max message 65535, minus message header 16, minus set header 4, minus variable-length field encoding 3). Implementations must handle informationElementName and informationElementDescription strings up to this size, regardless of typical IANA IE name lengths (~40 octets).
+section: "4"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5610
+kind: security-consideration
+summary: IPFIX strings are length-prefixed and UTF-8 encoded, mitigating unterminated-string attacks. However, Collecting Processes must pay particular attention to buffer sizes when converting between length-prefixed and null-terminated strings, and must reject strings containing U+0000 null characters.
+section: "4"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

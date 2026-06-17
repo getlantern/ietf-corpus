@@ -1,0 +1,10 @@
+document: rfc-5603
+kind: security-consideration
+summary: The pwEnetTable contains read-write and read-create objects that provision Ethernet PWs. Unauthorized SET operations could disrupt network traffic. SNMPv3 security mechanisms should be used, and administrators should consider restricting even GET access to these objects since the PW service configuration may be sensitive.
+section: "11"
+topics:
+    - snmp
+    - security
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

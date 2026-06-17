@@ -1,0 +1,9 @@
+document: rfc-5602
+kind: security-consideration
+summary: The pwMplsTable, pwMplsNonTeMappingTable, and pwMplsTeMappingTable contain objects to provision PW over MPLS tunnels. Unauthorized SET access could result in traffic disruption; SNMPv3 with VACM and USM should be used. Even read access may be sensitive as it reveals PW-to-tunnel association details.
+section: "9"
+topics:
+    - security
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
