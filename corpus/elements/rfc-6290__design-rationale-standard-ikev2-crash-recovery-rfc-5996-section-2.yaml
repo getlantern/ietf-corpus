@@ -1,0 +1,10 @@
+document: rfc-6290
+kind: design-rationale
+summary: Standard IKEv2 crash recovery (RFC 5996 Section 2.4) requires retransmitting liveness checks 'at least a dozen times over a period of at least several minutes' before declaring a peer dead, which creates a multi-minute blackout window. QCD tokens allow the rebooted peer to immediately signal its state loss to the survivor, eliminating this delay.
+section: "2"
+topics:
+    - ipsec
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,11 @@
+document: rfc-6283
+kind: security-consideration
+summary: When a new Time-Stamp is applied during renewal, it MUST be ascertained that the certificate of the prior Time-Stamp was not revoked due to a key compromise before the renewal time. Data in <SupportingInformationList> added later must rely on its own authenticity and integrity protection mechanism such as a current strong cryptographic signature.
+section: "9.4"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

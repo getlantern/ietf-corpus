@@ -1,0 +1,9 @@
+document: rfc-6285
+kind: design-rationale
+summary: The RFC 4585 Tmin=1.0s rule is overridden to Tmin=0 for initial RAMS-R because the rule exists to prevent flash crowds in multiparty sessions, but rapid acquisition requests are independent events whose timing does not compound. Delaying the request by any fixed or random amount defeats the purpose of fast acquisition without providing meaningful congestion benefit.
+section: "6.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

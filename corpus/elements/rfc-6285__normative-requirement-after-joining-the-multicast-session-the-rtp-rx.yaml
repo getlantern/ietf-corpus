@@ -1,0 +1,10 @@
+document: rfc-6285
+kind: normative-requirement
+summary: After joining the multicast session, the RTP_Rx MUST send a RAMS-T message in the unicast burst RTP session with the sequence number of the first RTP packet received in the primary multicast stream. The BRS MUST then terminate the respective burst after transmitting the unicast burst packet whose OSN equals that sequence number minus one.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

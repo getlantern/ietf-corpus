@@ -1,0 +1,10 @@
+document: rfc-6285
+kind: normative-requirement
+summary: When accepting a RAMS request, the BRS MUST send at least one RAMS-I message with response code 200 (or zero for private) per accepted primary multicast stream, and MUST always populate the first RTP sequence number of the burst in each accepted RAMS-I message. Multiple RAMS-I messages for a single RAMS-R MUST be combined in one compound RTCP packet if they fit.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

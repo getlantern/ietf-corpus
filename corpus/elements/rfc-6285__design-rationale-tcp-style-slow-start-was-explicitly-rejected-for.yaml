@@ -1,0 +1,10 @@
+document: rfc-6285
+kind: design-rationale
+summary: TCP-style slow-start was explicitly rejected for the unicast burst because it would add many RTTs of delay before reaching full throughput, defeating the purpose of rapid acquisition. Similarly, RSVP-style per-flow admission control has too much latency and overhead for the short-duration, high-bitrate burst flows that RAMS generates.
+section: "5"
+topics:
+    - rtp
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

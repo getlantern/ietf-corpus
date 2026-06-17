@@ -1,0 +1,10 @@
+document: rfc-6285
+kind: design-rationale
+summary: RAMS is designed for engineered networks (e.g., managed IPTV/DSL/DOCSIS) where the bottleneck bandwidth between retransmission server and receiver is known. The protocol explicitly states it SHOULD NOT be used across best-effort Internet paths and requires that unicast burst traffic be a known constant upper-bound multiplier (e*B) on the nominal multicast load.
+section: "1"
+topics:
+    - rtp
+    - multicast
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

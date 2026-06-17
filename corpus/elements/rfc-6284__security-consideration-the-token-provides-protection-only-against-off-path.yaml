@@ -1,0 +1,10 @@
+document: rfc-6284
+kind: security-consideration
+summary: The Token provides protection only against off-path DoS attacks. If an attacker obtains a valid Token for a victim and can spoof the victim's source address (e.g., when both share the same IP behind a large-scale NAT with no ingress filtering), replay attacks become feasible. Servers can mitigate this by using very short Token lifetimes at the cost of increased acquisition latency.
+section: "9.1"
+topics:
+    - security
+    - rtp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

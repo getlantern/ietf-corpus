@@ -1,0 +1,11 @@
+document: rfc-6284
+kind: normative-requirement
+summary: The server MUST validate the Token upon receipt of a Token Verification Request message; it reconstructs the Token from the received client IP, nonce, and expiration time and compares it against the submitted Token. If validation fails, the server MUST reply with a Token Verification Failure message.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

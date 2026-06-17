@@ -1,0 +1,9 @@
+document: rfc-6290
+kind: security-consideration
+summary: 'An attacker can enumerate QCD tokens by sending fake IKE requests and recording responses, building a dictionary of SPI-to-token mappings. Mitigations: the 2^128 SPI space makes full enumeration impractical; throttling limits dictionary construction speed; periodic QCD_SECRET rollover invalidates any accumulated dictionary.'
+section: "9.3"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6290
+kind: normative-requirement
+summary: A token taker SHOULD limit the rate of QCD_TOKEN verifications from a particular source to mitigate Denial-of-Service attacks. If excessive unknown-SPI IKE requests arrive at a token maker, the IKE module SHOULD revert to sending INVALID_IKE_SPI or ignoring such requests.
+section: "8.1"
+rfc2119_level: SHOULD
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

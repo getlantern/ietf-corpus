@@ -1,0 +1,10 @@
+document: rfc-6285
+kind: security-consideration
+summary: 'The RAMS method is susceptible to denial-of-service attacks: a malicious receiver could flood the retransmission server with RAMS-R requests, exhausting its resources. The BRS SHOULD implement a policing mechanism against receivers that do not follow retry rules after non-transient reject responses, and MUST be provisioned to terminate bursts that can no longer proceed faster than the multicast stream.'
+section: "10"
+topics:
+    - security
+    - rtp
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

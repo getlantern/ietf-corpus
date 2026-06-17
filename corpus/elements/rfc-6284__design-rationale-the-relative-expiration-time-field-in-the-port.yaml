@@ -1,0 +1,10 @@
+document: rfc-6284
+kind: design-rationale
+summary: 'The Relative Expiration Time field in the Port Mapping Response is conveyed in cleartext (not included in the HMAC) so the client can proactively request a new Token before expiry. This is a deliberate design tradeoff: an attacker can modify this field, but the absolute expiration (used for HMAC validation) remains protected.'
+section: "4.2"
+topics:
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6284
+kind: design-rationale
+summary: The Token is opaque to the client and based on the client's IP address (as seen by the server), a client-supplied random nonce, and an absolute expiration time. Using the client's source IP address as seen by the server (rather than as reported by the client) prevents an attacker from redirecting unicast streams to a victim with a different IP address.
+section: "3"
+topics:
+    - rtp
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

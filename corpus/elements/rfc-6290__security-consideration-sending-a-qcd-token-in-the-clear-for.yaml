@@ -1,0 +1,10 @@
+document: rfc-6290
+kind: security-consideration
+summary: Sending a QCD token in the clear for a still-valid IKE SA enables session teardown by any observer. In load-sharing clusters where a shared QCD_SECRET spans multiple gateways, any member might be tricked into revealing a valid token; either full IKE SPI synchronization across cluster members or the IP-address-bound method (Section 5.2) is required.
+section: "9.2"
+topics:
+    - ipsec
+    - security
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

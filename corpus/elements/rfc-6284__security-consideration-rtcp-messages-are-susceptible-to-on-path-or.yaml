@@ -1,0 +1,11 @@
+document: rfc-6284
+kind: security-consideration
+summary: RTCP messages are susceptible to on-path or man-in-the-middle attacks that can modify Token-related fields. Attackers can alter the Relative Expiration Time to cause excessive Token requests, and the attack is detectable only by server-side monitoring. If MITM risk exists, RTCP messages SHOULD be protected by SRTCP (RFC 3711).
+section: "9.1"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - rtp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

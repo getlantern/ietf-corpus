@@ -1,0 +1,11 @@
+document: rfc-6284
+kind: design-rationale
+summary: Token-based port mapping was introduced because the Offer/Answer Model requires round-trip exchanges that introduce undesirable delay in real-time applications, and is burdensome when endpoints run large numbers of concurrent unicast sessions. The Token mechanism lets receivers choose their own UDP ports without offer/answer exchange while protecting against DoS and packet amplification attacks.
+section: "1"
+topics:
+    - rtp
+    - multicast
+    - realtime
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

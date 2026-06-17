@@ -1,0 +1,10 @@
+document: rfc-6285
+kind: state-machine
+summary: 'RAMS acquisition state flow: (1) Port Mapping Setup → (2) RTP_Rx sends RAMS-R → (3) BRS sends RAMS-I (accept/reject) → (4) BRS transmits unicast burst → (5) Optional updated RAMS-R/RAMS-I exchanges → (6) SFGMP Join issued by RTP_Rx → (7) Multicast reception begins → (8) RTP_Rx sends RAMS-T (or RTCP BYE) → (9) BRS terminates burst. Updated requests may loop back to step 5.'
+section: "6.2"
+topics:
+    - rtp
+    - multicast
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

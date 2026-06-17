@@ -1,0 +1,10 @@
+document: rfc-6285
+kind: normative-requirement
+summary: When the RTP_Rx is no longer interested in any primary multicast streams, it SHALL issue RTCP BYE messages in both the unicast burst RTP session and the primary multicast RTP session. Upon receiving RTCP BYE, the BRS MUST terminate the rapid acquisition operation and cease all burst and retransmission packet transmission.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

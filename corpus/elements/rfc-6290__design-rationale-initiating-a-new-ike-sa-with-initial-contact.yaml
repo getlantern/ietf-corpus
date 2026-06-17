@@ -1,0 +1,9 @@
+document: rfc-6290
+kind: design-rationale
+summary: Initiating a new IKE SA with INITIAL_CONTACT was rejected because IKEv2 requires a piggybacked Child SA in every authentication exchange, and a rebooted gateway with no traffic flowing to the peer has no good traffic selectors. Furthermore, asymmetric authentication (EAP) may prevent the rebooted peer from acting as initiator.
+section: A.1
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
