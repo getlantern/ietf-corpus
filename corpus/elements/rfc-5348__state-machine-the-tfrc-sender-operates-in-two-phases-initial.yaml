@@ -1,0 +1,9 @@
+document: rfc-5348
+kind: state-machine
+summary: 'The TFRC sender operates in two phases: initial slow-start (p=0), where the sending rate approximately doubles each RTT up to twice the receive rate; and congestion avoidance (p>0), where X = max(min(X_Bps, recv_limit), s/t_mbi). Transition from slow-start to congestion avoidance is triggered by the first reported loss event.'
+section: "4.3"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

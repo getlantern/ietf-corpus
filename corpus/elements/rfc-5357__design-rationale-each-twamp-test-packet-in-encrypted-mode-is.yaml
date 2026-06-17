@@ -1,0 +1,9 @@
+document: rfc-5357
+kind: design-rationale
+summary: Each TWAMP-Test packet in encrypted mode is encrypted as a separate stream with IV=0 and a single chaining operation; chaining does not span multiple packets. This design ensures that lost, duplicated, or reordered packets do not cause problems with deciphering any packet in a session.
+section: 4.2.1
+topics:
+    - measurement
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

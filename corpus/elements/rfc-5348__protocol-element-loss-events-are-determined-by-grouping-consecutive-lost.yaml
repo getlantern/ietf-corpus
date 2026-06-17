@@ -1,0 +1,9 @@
+document: rfc-5348
+kind: protocol-element
+summary: Loss events are determined by grouping consecutive lost/marked packets within one RTT window. Two lost packets S_old and S_new belong to the same loss event if T_old + R >= T_new, where arrival times are interpolated from neighboring received packets for lost ones and measured directly for ECN-marked ones.
+section: "5.2"
+topics:
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

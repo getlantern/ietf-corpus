@@ -1,0 +1,9 @@
+document: rfc-5340
+kind: normative-requirement
+summary: When receiving an OSPFv3 packet, the version number MUST specify protocol version 3, and the IPv6 Upper-Layer checksum covering the entire OSPF packet and prepended IPv6 pseudo-header must be verified. The Area ID and Instance ID in the header MUST match a configured interface or satisfy virtual link criteria; failing packets SHOULD be discarded.
+section: 4.2.2
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

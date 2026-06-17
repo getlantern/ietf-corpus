@@ -1,0 +1,9 @@
+document: rfc-5348
+kind: security-consideration
+summary: A misbehaving receiver can cause a TFRC sender to send at an arbitrarily high rate by reporting an artificially low loss event rate or high receive rate. Sender-based variants (e.g., DCCP CCID-3 with Ack Vector and ECN Nonce Echo) allow the sender to verify the receiver's loss reports, mitigating this attack.
+section: "10"
+topics:
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

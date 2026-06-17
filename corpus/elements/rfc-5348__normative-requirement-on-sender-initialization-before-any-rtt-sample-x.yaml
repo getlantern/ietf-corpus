@@ -1,0 +1,10 @@
+document: rfc-5348
+kind: normative-requirement
+summary: On sender initialization before any RTT sample, X is set to s bytes/second, the nofeedback timer is set to 2 seconds, and tld=0. Upon receiving the first RTT measurement, X is set to initial_rate = W_init/R where W_init = min(4*MSS, max(2*MSS, 4380)), following RFC 3390.
+section: "4.2"
+rfc2119_level: REQUIRED
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

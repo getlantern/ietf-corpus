@@ -1,0 +1,11 @@
+document: rfc-5357
+kind: normative-requirement
+summary: In authenticated mode, the HMAC covers the first block (16 octets); in encrypted mode, the HMAC covers the first six blocks (96 octets). In TWAMP-Test, the HMAC field MUST NOT be encrypted. In authenticated and encrypted modes, HMAC MUST be calculated first, then the appropriate portion is encrypted.
+section: 4.2.1
+rfc2119_level: MUST
+topics:
+    - measurement
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

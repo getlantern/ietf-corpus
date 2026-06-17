@@ -1,0 +1,9 @@
+document: rfc-5357
+kind: normative-requirement
+summary: The Stop-Sessions command MUST NOT contain any session description records or skip ranges and is terminated with a single block HMAC. The Number of Sessions field MUST contain the exact count of send sessions started by the Control-Client that have not been previously terminated; if the count does not match, the Stop-Sessions is invalid, the TWAMP-Control connection SHOULD be closed, and results considered invalid.
+section: "3.8"
+rfc2119_level: MUST
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

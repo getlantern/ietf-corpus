@@ -1,0 +1,8 @@
+document: rfc-5348
+kind: protocol-element
+summary: 'The loss event rate p is computed as 1/I_mean, where I_mean is the weighted average of the n most recent loss intervals. Weights w_i = 1 for i < n/2 and w_i = 2*(n-i)/(n+2) for i >= n/2, giving (for n=8): 1.0, 1.0, 1.0, 1.0, 0.8, 0.6, 0.4, 0.2. The current interval I_0 is only included if it increases I_mean.'
+section: "5.4"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5348
+kind: design-rationale
+summary: The initial nofeedback timer is set to 2 seconds rather than TCP's recommended 3-second initial RTO (RFC 2988), because TFRC's initial sending rate is much lower than TCP's (1 packet per RTT vs. a full window), so the expected time to receive the first feedback packet is shorter. See Appendix B for full analysis.
+section: "4.2"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

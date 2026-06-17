@@ -1,0 +1,10 @@
+document: rfc-5360
+kind: normative-requirement
+summary: When using SIP identity or P-Asserted-Identity, the relay MUST check that the originator of the PUBLISH request is the owner of the recipient URI in the permission document. Otherwise, the PUBLISH request SHOULD be responded with a 401 (Unauthorized) and MUST NOT be processed further.
+section: 5.6.1.1
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

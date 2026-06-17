@@ -1,0 +1,10 @@
+document: rfc-5340
+kind: security-consideration
+summary: Authentication has been entirely removed from the OSPFv3 protocol itself; the AuType and Authentication fields present in OSPFv2 are gone. OSPFv3 relies on IPv6's Authentication Header (AH) and Encapsulating Security Payload (ESP) as described in [OSPFV3-AUTH] for integrity, authentication, and confidentiality. Corruption protection uses the standard IPv6 Upper-Layer checksum covering the entire OSPF packet and the prepended IPv6 pseudo-header.
+section: "2.6"
+topics:
+    - routing
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

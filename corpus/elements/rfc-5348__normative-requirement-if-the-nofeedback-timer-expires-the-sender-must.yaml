@@ -1,0 +1,9 @@
+document: rfc-5348
+kind: normative-requirement
+summary: 'If the nofeedback timer expires, the sender MUST halve the allowed sending rate (via X_recv_set manipulation), with a minimum of s/t_mbi (one packet per 64 seconds). Exception: if the sender was idle and X_recv < recover_rate (initial_rate), the rate is not halved. The timer is restarted to max(4*R, 2*s/X).'
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

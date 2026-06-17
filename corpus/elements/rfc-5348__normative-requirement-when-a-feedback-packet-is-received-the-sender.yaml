@@ -1,0 +1,9 @@
+document: rfc-5348
+kind: normative-requirement
+summary: 'When a feedback packet is received, the sender MUST: compute a new RTT sample R_sample = (t_now - t_recvdata) - t_delay, update R with exponential filter (q=0.9 RECOMMENDED), update RTO = max(4*R, 2*s/X), update the allowed sending rate X via the X_recv_set procedure, and reset the nofeedback timer to RTO seconds.'
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5348
+kind: design-rationale
+summary: 'TFRC deliberately trades faster bandwidth adaptation for smoother throughput: it responds slower than TCP to changes in available bandwidth but avoids TCP''s halving of the sending rate on a single drop. This makes it suitable for streaming and telephony but inappropriate for bulk transfer applications.'
+section: "1"
+topics:
+    - congestion
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

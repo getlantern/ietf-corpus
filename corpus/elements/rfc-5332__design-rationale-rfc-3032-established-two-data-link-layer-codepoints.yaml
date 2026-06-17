@@ -1,0 +1,9 @@
+document: rfc-5332
+kind: design-rationale
+summary: 'RFC 3032 established two data link layer codepoints (0x8847 unicast, 0x8848 multicast) to distinguish MPLS unicast from multicast packets, but this usage was never deployed. Further development showed the codepoint need not indicate whether the top label is a multicast label, since the NHLFE already specifies that. The codepoints are therefore redefined: 0x8848 now means the top label is upstream-assigned, not that the packet is multicast.'
+section: "1"
+topics:
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

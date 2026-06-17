@@ -1,0 +1,9 @@
+document: rfc-5357
+kind: normative-requirement
+summary: In the Request-TW-Session command, both the Conf-Sender and Conf-Receiver fields MUST be set to 0, since both endpoints send and receive test packets and roles are established by which host initiates the TCP connection. The Server MUST interpret any non-zero value as an improperly formatted command and respond with Accept=3.
+section: "3.5"
+rfc2119_level: MUST
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

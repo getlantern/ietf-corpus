@@ -1,0 +1,9 @@
+document: rfc-5332
+kind: design-rationale
+summary: Setting the MAC DA vwxyz field to the second label (rather than the top context label) exposes more LSP-specific information in the MAC DA, enabling ethernet-layer filtering of multicast packets with 'unexpected' non-zero vwxyz values. The topmost label is expected to be a constant context label per RFC 5331, while the second label differs per LSP.
+section: "8"
+topics:
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

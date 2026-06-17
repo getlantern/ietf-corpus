@@ -1,0 +1,8 @@
+document: rfc-5340
+kind: wire-format
+summary: 'The LSA LS type field has been expanded from 8 to 16 bits. The high-order bit (U-bit) encodes handling of unknown types: 0 = treat as link-local flooding scope, 1 = store and flood as if type understood. The next two bits encode flooding scope: 00=link-local, 01=area, 10=AS. The Options field was removed from the 20-byte LSA header, expanded to 24 bits, and moved into the bodies of router-LSAs, network-LSAs, inter-area-router-LSAs, and link-LSAs.'
+section: "2.8"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

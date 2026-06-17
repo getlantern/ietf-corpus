@@ -1,0 +1,10 @@
+document: rfc-5357
+kind: security-consideration
+summary: The 32-bit Count field in the Server-Greeting message (used as PKCS#5 iteration counter for key derivation) can be exploited for a denial-of-service attack. TWAMP-compliant systems SHOULD have a configuration control to limit the maximum Count value, with a default maximum of 32768. A Control-Client receiving a Count exceeding its configured maximum SHOULD close the control connection.
+section: "6"
+topics:
+    - measurement
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

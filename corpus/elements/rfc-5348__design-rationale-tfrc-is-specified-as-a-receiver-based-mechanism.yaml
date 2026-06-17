@@ -1,0 +1,9 @@
+document: rfc-5348
+kind: design-rationale
+summary: TFRC is specified as a receiver-based mechanism (loss event rate computed at receiver) rather than sender-based, because it is well-suited to large servers handling many connections where the receiver has spare CPU, and because it is a better building block for multicast congestion control. Sender-based variants are permitted via DCCP CCID-3.
+section: "1"
+topics:
+    - congestion
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5357
+kind: normative-requirement
+summary: The Session-Reflector SHOULD fetch the TTL/Hop Limit value from the IP header of received packets to populate the Sender TTL field. If an implementation cannot access the TTL field of arriving packets, it MUST set the Sender TTL value as 255. The Reflector SHOULD set the TTL/Hop Limit to 255 in transmitted UDP packets.
+section: "4.2"
+rfc2119_level: SHOULD
+topics:
+    - measurement
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

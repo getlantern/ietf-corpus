@@ -1,0 +1,9 @@
+document: rfc-5333
+kind: security-consideration
+summary: ENUM relies on DNS, which in its current form is insecure. Resolvers SHOULD verify ENUM query responses via DNSSEC (RFC 4035) where available to prevent spoofed records pointing to malicious calendar endpoints.
+section: "4"
+topics:
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

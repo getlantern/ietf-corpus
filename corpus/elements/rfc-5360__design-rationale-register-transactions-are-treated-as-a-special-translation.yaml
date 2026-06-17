@@ -1,0 +1,9 @@
+document: rfc-5360
+kind: design-rationale
+summary: REGISTER transactions are treated as a special translation type because traditionally they simultaneously set up a translation and authorize it. This creates vulnerability to third-party registration attacks where an attacker binds their AoR to a victim's contact URI, causing the victim to receive unsolicited traffic.
+section: "5.10"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

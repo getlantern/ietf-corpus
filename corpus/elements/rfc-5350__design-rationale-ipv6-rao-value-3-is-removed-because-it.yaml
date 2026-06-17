@@ -1,0 +1,8 @@
+document: rfc-5350
+kind: design-rationale
+summary: 'IPv6 RAO value 3 is removed because it is a duplicate: aggregation level 0 means end-to-end signaling, which already has IPv6 RAO value 1 assigned. RFC 3175 defined values 3-35 (33 values) for nesting levels 0-31 (32 levels), creating an off-by-one inconsistency. The fix redefines IPv6 so values 4-35 represent levels 1-32.'
+section: "3.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

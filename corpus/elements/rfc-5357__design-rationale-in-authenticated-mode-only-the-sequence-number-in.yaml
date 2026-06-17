@@ -1,0 +1,8 @@
+document: rfc-5357
+kind: design-rationale
+summary: In authenticated mode, only the sequence number in the first block is encrypted and subsequent timestamps and sequence numbers are sent in clear text. This allows the timestamp to be fetched after partial encryption, reducing the interval between timestamp capture and packet transmission, thereby improving timestamp accuracy.
+section: 4.2.1
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

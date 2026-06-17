@@ -1,0 +1,9 @@
+document: rfc-5348
+kind: normative-requirement
+summary: To reduce oscillations in queueing delay, the sender SHOULD maintain R_sqmean (EWMA of sqrt(RTT)) and compute an instantaneous rate X_inst = X * R_sqmean / sqrt(R_sample). This dampens the sending rate when the current RTT exceeds the long-term average. The constant q2=0.9 is RECOMMENDED.
+section: "4.5"
+rfc2119_level: SHOULD
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5348
+kind: design-rationale
+summary: During data-limited intervals, the sender avoids reducing its allowed sending rate in response to receive-rate feedback, because low X_recv during a data-limited period does not indicate network congestion. X_recv_set is initialized to {Infinity} so the first feedback packet does not artificially cap the sending rate.
+section: "4.3"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5357
+kind: wire-format
+summary: TWAMP-Test reflector packet in authenticated/encrypted mode adds MBZ padding between fields and appends an HMAC (16 octets) before Packet Padding; minimum 104 octets. Layout is identical for both modes; the difference is which portion is covered by HMAC and encrypted (first 16 octets in authenticated, first 96 octets in encrypted).
+section: 4.2.1
+topics:
+    - measurement
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

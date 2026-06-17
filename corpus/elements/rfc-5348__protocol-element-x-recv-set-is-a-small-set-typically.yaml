@@ -1,0 +1,8 @@
+document: rfc-5348
+kind: protocol-element
+summary: X_recv_set is a small set (typically 2–3 values) of recent receive-rate measurements maintained by the sender. It is initialized to {Infinity}. The Update procedure keeps values from the two most recent RTTs; the Maximize procedure keeps only the single largest value. The sender's recv_limit is derived as twice the maximum of X_recv_set.
+section: "4.3"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

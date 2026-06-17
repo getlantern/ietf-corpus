@@ -1,0 +1,10 @@
+document: rfc-5332
+kind: security-consideration
+summary: Malicious changing of the ethernet codepoint (0x8847 vs. 0x8848) may result in loss or misrouting of packets, but altering the codepoint without also altering the label does not produce a predictable effect. Malicious alteration of the MAC DA on ethernet can cause packets to be received by a third party rather than the intended recipient.
+section: "10"
+topics:
+    - mpls
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

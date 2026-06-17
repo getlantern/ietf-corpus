@@ -1,0 +1,9 @@
+document: rfc-5340
+kind: design-rationale
+summary: OSPFv3 runs per-link rather than per-IP-subnet because IPv6 allows multiple subnets on a single link and permits two nodes to communicate directly even without a shared IPv6 prefix. This required replacing 'network'/'subnet' terminology with 'link' and changing how Hello packets and network-LSAs are constructed.
+section: "2.1"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
