@@ -1,0 +1,9 @@
+document: rfc-5364
+kind: interoperability-note
+summary: Legacy SIP recipients may not support multipart bodies. If the outgoing SIP request from the relay to the recipient already contains a body (e.g., a MESSAGE body), the relay may not be able to include the 'recipient-list-history' body because the recipient cannot process multipart, preventing use of this extension.
+section: "7"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

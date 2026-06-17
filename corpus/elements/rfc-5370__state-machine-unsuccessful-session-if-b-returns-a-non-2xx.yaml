@@ -1,0 +1,9 @@
+document: rfc-5370
+kind: state-machine
+summary: 'Unsuccessful session: if B returns a non-2xx response (e.g., 603 Decline), T propagates the same non-2xx response back to A. If the provisional 183 is lost, A cannot distinguish transcoder rejection from callee rejection; the History-Info header (RFC 4244) resolves this ambiguity.'
+section: "3.4"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
