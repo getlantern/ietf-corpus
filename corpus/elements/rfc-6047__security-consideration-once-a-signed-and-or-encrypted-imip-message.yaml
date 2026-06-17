@@ -1,0 +1,9 @@
+document: rfc-6047
+kind: security-consideration
+summary: Once a signed and/or encrypted iMIP message is received, the CUA SHOULD remember whether the sender uses signing/encryption. If a subsequent unsigned message arrives from the same sender, the CUA SHOULD warn the user about a possible man-in-the-middle attack and SHOULD ignore the message unless the user explicitly overrides.
+section: "3"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

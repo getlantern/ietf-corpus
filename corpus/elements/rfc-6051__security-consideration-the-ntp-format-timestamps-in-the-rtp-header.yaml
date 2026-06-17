@@ -1,0 +1,10 @@
+document: rfc-6051
+kind: security-consideration
+summary: The NTP-format timestamps in the RTP header extensions defined in Section 3.3 are not part of the encrypted portion of RTP packets when SRTP (RFC 3711) is used, whereas the NTP-format timestamps in RTCP SR packets are encrypted under SRTP. This constitutes a minor information leak, considered non-significant.
+section: "5"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

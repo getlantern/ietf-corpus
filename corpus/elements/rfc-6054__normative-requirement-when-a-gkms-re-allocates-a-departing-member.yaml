@@ -1,0 +1,11 @@
+document: rfc-6054
+kind: normative-requirement
+summary: When a GKMS re-allocates a departing member's SID to a new member, it MUST first delete and replace any active AH or ESP SAs with which the SID may have been used, to avoid IV reuse with the same cipher key.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

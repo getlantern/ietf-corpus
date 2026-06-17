@@ -1,0 +1,10 @@
+document: rfc-6040
+kind: security-consideration
+summary: The new decapsulation rules improve ECN nonce (RFC 3540) coverage relative to RFC 3168 and RFC 4301, but coverage is not perfect. The compromise on the ECT(1) inner / ECT(0) outer case (Appendix D) — correcting the anomaly rather than forwarding it — trades nonce coverage for safety, since the decapsulator itself can detect the anomaly using the inner header as a reference.
+section: "8"
+topics:
+    - ecn
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

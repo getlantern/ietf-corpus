@@ -1,0 +1,11 @@
+document: rfc-6040
+kind: design-rationale
+summary: RFC 3168 reset CE to ECT(0) on encapsulation to limit the covert channel. RFC 4301 reversed this by simply copying CE, finding a 2-bit covert channel manageable. This specification aligns all IP-in-IP tunnels with RFC 4301 behaviour, eliminating the anomaly where non-IPsec tunnels blocked more of the covert channel than IPsec tunnels, and simplifying encapsulation code.
+section: 5.3.1
+topics:
+    - ecn
+    - ip
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

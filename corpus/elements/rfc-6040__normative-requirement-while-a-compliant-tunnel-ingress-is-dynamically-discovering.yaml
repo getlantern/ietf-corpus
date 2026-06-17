@@ -1,0 +1,10 @@
+document: rfc-6040
+kind: normative-requirement
+summary: While a compliant tunnel ingress is dynamically discovering an egress, it MUST send packets in compatibility mode in case the discovered egress is legacy. If the egress denies ECN compliance or returns an error implying non-support, the ingress MUST remain in compatibility mode.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - ecn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

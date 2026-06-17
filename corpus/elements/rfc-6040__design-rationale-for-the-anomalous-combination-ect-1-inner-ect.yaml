@@ -1,0 +1,10 @@
+document: rfc-6040
+kind: design-rationale
+summary: For the anomalous combination ECT(1) inner / ECT(0) outer (which no valid protocol produces), the decapsulator corrects the anomaly by forwarding ECT(1) — the inner, more severe value — rather than revealing the anomaly to the transport via ECT(0). This is safe when ECT(1) represents higher congestion severity, and the event is logged for detection.
+section: Appendix D
+topics:
+    - ecn
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

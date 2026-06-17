@@ -1,0 +1,11 @@
+document: rfc-6040
+kind: normative-requirement
+summary: If the inner ECN field is Not-ECT and the outer ECN field is Not-ECT, ECT(0), or ECT(1), the decapsulator MUST forward the outgoing packet with the ECN field cleared to Not-ECT. The inner Not-ECT marking indicates a transport that relies on drops for congestion signalling and would not understand other ECN codepoints.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - ecn
+    - ip
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

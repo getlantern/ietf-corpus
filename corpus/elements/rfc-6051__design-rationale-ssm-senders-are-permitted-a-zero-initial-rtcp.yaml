@@ -1,0 +1,10 @@
+document: rfc-6051
+kind: design-rationale
+summary: SSM senders are permitted a zero initial RTCP delay because at most one sender exists per SSM channel, so there is no flash-crowd implosion risk. ASM sessions retain existing timing rules because simultaneous RTCP from many senders could cause implosion. SSM receivers using unicast feedback are excluded from this relaxation.
+section: 2.1.4
+topics:
+    - rtp
+    - realtime
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

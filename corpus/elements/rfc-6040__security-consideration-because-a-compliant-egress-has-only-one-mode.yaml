@@ -1,0 +1,10 @@
+document: rfc-6040
+kind: security-consideration
+summary: Because a compliant egress has only one mode regardless of negotiated mode, a man-in-the-middle can still covertly signal CE or ECT(1) in the outer header to the destination even when the ingress uses compatibility mode and sends Not-ECT. This residual channel was accepted to avoid the complexity of a dual-mode egress.
+section: "8"
+topics:
+    - ecn
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

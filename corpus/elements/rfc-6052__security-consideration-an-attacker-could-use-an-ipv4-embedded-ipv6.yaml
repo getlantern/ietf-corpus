@@ -1,0 +1,11 @@
+document: rfc-6052
+kind: security-consideration
+summary: An attacker could use an IPv4-embedded IPv6 address as a source address; after translation the packet appears as an IPv4 packet from the spoofed source, making the attacker hard to track. The mitigation is to implement reverse path checks and verify throughout the network that packets originate from authorized locations.
+section: "5.1"
+topics:
+    - ip
+    - v6ops
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

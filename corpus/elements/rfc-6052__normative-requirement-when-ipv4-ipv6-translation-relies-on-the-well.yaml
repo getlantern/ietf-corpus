@@ -1,0 +1,12 @@
+document: rfc-6052
+kind: normative-requirement
+summary: When IPv4/IPv6 translation relies on the Well-Known Prefix, IPv4-embedded IPv6 prefixes longer than the Well-Known Prefix MUST NOT be advertised in BGP (especially External BGP), as this would import the IPv4 routing table into IPv6 and introduce scalability issues. BGP nodes SHOULD configure filters discarding such advertisements.
+section: "3.2"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - v6ops
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6040
+kind: normative-requirement
+summary: A compliant tunnel egress MUST set the outgoing ECN field to the codepoint at the intersection of the arriving inner (row) and outer (column) per Figure 4. Specifically, if the inner is Not-ECT and the outer is CE, the decapsulator MUST drop the packet.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - ecn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

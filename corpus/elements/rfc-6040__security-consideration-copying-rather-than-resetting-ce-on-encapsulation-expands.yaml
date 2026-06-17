@@ -1,0 +1,11 @@
+document: rfc-6040
+kind: security-consideration
+summary: Copying rather than resetting CE on encapsulation expands the ingress covert channel from effectively zero to two bits per datagram (from sender to man-in-the-middle). The IETF Security Area considers this a manageable risk consistent with RFC 4301's existing position. Conversely, dropping congestion notifications is itself a security harm as it impedes congestion enforcement.
+section: "8"
+topics:
+    - ecn
+    - ip
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

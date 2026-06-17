@@ -1,0 +1,10 @@
+document: rfc-6052
+kind: design-rationale
+summary: When multiple stateful translators share the same prefix, packets from the same connection may be routed to different translators as internal routing state changes, breaking the connection. This can be avoided either by assigning different prefixes to different translators or by ensuring all translators sharing a prefix coordinate their per-flow state.
+section: "3.4"
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

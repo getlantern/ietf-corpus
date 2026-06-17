@@ -1,0 +1,10 @@
+document: rfc-6051
+kind: normative-requirement
+summary: Regular RTCP SR packets MUST be sent even when in-band NTP-format header extensions are included, to provide backwards compatibility with RFC 3550 receivers and robustness against middleboxes that strip header extensions. If Variant B/56-bit is used, RTCP SR MUST be used to derive the upper 8 bits of the NTP Seconds field.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

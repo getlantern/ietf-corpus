@@ -1,0 +1,10 @@
+document: rfc-6040
+kind: design-rationale
+summary: Pre-existing decapsulation rules treated ECT(0) and ECT(1) as always equivalent, unnecessarily restricting half a codepoint bit and blocking two-severity-level congestion signalling. The new rules propagate ECT(1) as potentially more severe than ECT(0), enabling PCN's two-level encoding while remaining fully safe for existing single-severity schemes.
+section: 5.3.2
+topics:
+    - ecn
+    - ip
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

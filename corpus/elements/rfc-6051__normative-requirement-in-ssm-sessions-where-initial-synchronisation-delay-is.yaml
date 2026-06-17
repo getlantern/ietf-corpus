@@ -1,0 +1,11 @@
+document: rfc-6051
+kind: normative-requirement
+summary: In SSM sessions where initial synchronisation delay is important, the RTP sender MAY set the delay before sending the initial compound RTCP packet to zero. However, RTP receivers in an SSM session sending unicast RTCP feedback MUST NOT send RTCP packets with zero initial delay; the RFC 5760 timing rules apply unchanged to receivers.
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - rtp
+    - realtime
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6052
+kind: design-rationale
+summary: A null (all-zero) suffix was chosen over checksum-neutral or port-range-encoding suffixes. Checksum neutrality in the suffix only helps stateless translation (not stateful), and can alternatively be achieved by choosing a Network-Specific Prefix whose one's complement checksum equals 0 or 0xffff. Port-range bits are left reserved for possible future extension.
+section: "4.1"
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

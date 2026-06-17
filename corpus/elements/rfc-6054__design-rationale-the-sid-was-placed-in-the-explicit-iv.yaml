@@ -1,0 +1,10 @@
+document: rfc-6054
+kind: design-rationale
+summary: The SID was placed in the explicit IV field rather than in the Salt so that a receiver can read it directly from the packet, without inferring the sender's identity from the IP source address or from an alternate transport (e.g., UDP for NAT traversal). Using the explicit IV avoids sender-inference complexity entirely.
+section: A
+topics:
+    - ipsec
+    - vpn
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

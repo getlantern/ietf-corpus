@@ -1,0 +1,10 @@
+document: rfc-6052
+kind: design-rationale
+summary: The /96 Well-Known Prefix 64:ff9b::/96 was chosen over reusing the IPv4-mapped prefix (::ffff:0:0/96) and over requesting a /32 prefix. The IPv4-mapped prefix was rejected because current Windows and Mac OS implementations generate IPv4 packets—not IPv6—when encountering it, defeating the purpose of translation. A /32 was rejected partly due to STUN incompatibility in multi-translator stateful deployments.
+section: "4.2"
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,11 @@
+document: rfc-6040
+kind: interoperability-note
+summary: IPsec tunnel ingresses compliant with RFC 4301 need not implement compatibility mode because IKEv2 key exchange (which was introduced alongside RFC 4301) guarantees that both tunnel endpoints are RFC 4301 compliant before any packets traverse the tunnel, precluding legacy ECN decapsulators.
+section: "4.3"
+topics:
+    - ecn
+    - ip
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

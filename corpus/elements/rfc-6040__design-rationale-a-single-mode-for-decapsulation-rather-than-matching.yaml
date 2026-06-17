@@ -1,0 +1,9 @@
+document: rfc-6040
+kind: design-rationale
+summary: A single mode for decapsulation (rather than matching the ingress's two modes) was chosen because the new decapsulation table covers all combinations from any legacy or current ingress correctly. Egress mode complexity was explicitly rejected as unnecessary, even though it would have marginally narrowed the residual covert channel.
+section: "4.4"
+topics:
+    - ecn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

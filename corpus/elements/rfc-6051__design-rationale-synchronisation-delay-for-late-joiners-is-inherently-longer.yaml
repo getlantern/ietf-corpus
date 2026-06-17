@@ -1,0 +1,10 @@
+document: rfc-6051
+kind: design-rationale
+summary: 'Synchronisation delay for late joiners is inherently longer than for initial participants for three reasons: early-join RTCP optimisations do not apply; RTCP report times are randomised ±50% requiring clock skew estimation from multiple reports; and codec access points (e.g., I-frames) may arrive less frequently than RTCP SR packets.'
+section: "2.2"
+topics:
+    - rtp
+    - realtime
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

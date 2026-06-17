@@ -1,0 +1,11 @@
+document: rfc-6040
+kind: design-rationale
+summary: 'Pre-congestion notification (PCN) triggered these changes: PCN excess-traffic-marking requires the outer header to reflect congestion accumulated over the entire upstream path, not just since the tunnel ingress. RFC 3168''s CE-reset behaviour broke PCN, forcing a choice between PCN and existing Mobile IP/VPN tunnels. Copying CE at ingress solves this cleanly.'
+section: 5.3.1
+topics:
+    - ecn
+    - ip
+    - congestion
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

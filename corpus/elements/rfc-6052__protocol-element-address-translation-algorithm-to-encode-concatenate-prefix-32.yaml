@@ -1,0 +1,10 @@
+document: rfc-6052
+kind: protocol-element
+summary: 'Address translation algorithm: to encode, concatenate prefix, 32-bit IPv4 address, and suffix, then insert the null ''u'' octet at bits 64–71 if prefix length is less than 96. To decode, for /96 extract the last 32 bits; for shorter prefixes, remove the ''u'' octet to get a 120-bit sequence then extract the 32 bits following the prefix.'
+section: "2.3"
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

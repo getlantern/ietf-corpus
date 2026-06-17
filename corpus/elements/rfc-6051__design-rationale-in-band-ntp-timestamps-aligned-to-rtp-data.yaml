@@ -1,0 +1,10 @@
+document: rfc-6051
+kind: design-rationale
+summary: In-band NTP timestamps aligned to RTP data packets eliminate the need to estimate clock skew between flows before synchronisation. Because header extensions are inserted at exactly the same sampling instant across all component flows, they carry identical NTP-format timestamps, allowing precise RTP timestamp alignment without skew estimation.
+section: "3.3"
+topics:
+    - rtp
+    - realtime
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
