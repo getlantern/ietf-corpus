@@ -1,0 +1,10 @@
+document: rfc-6454
+kind: design-rationale
+summary: 'An origin is defined as the triple (scheme, host, port) rather than just the host because including the scheme is essential for security: without it, there would be no isolation between http://example.com and https://example.com, allowing an active network attacker to corrupt HTTP content and compromise HTTPS content, bypassing TLS protections.'
+section: "3.2"
+topics:
+    - security
+    - http
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

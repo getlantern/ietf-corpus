@@ -1,0 +1,10 @@
+document: rfc-6455
+kind: normative-requirement
+summary: A client MUST mask all frames sent to the server. The server MUST close the connection upon receiving an unmasked frame and MUST NOT mask any frames it sends to the client. A client MUST close the connection if it detects a masked frame from the server.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - websocket
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

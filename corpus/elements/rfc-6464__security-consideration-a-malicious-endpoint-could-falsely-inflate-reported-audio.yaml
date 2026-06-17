@@ -1,0 +1,11 @@
+document: rfc-6464
+kind: security-consideration
+summary: A malicious endpoint could falsely inflate reported audio levels to dominate speaker-selection algorithms or send silence to suppress other participants. If a device relies on audio level data from untrusted endpoints, it SHOULD periodically audit the transmitted level information and take corrective action against endpoints sending incorrect data.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

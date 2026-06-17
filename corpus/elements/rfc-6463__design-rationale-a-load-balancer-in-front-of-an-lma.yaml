@@ -1,0 +1,8 @@
+document: rfc-6463
+kind: design-rationale
+summary: A load-balancer in front of an LMA cluster becomes a bottleneck if all PMIPv6 traffic must traverse it indefinitely. Runtime LMA assignment lets the MAG learn the unicast address of the actual serving LMA blade after the initial PBU/PBA exchange, bypassing the load-balancer for all subsequent traffic and enabling stateless load-balancers.
+section: "1"
+topics:
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

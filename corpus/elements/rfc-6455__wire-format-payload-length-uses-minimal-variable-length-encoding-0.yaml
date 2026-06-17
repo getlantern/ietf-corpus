@@ -1,0 +1,8 @@
+document: rfc-6455
+kind: wire-format
+summary: 'Payload length uses minimal variable-length encoding: 0–125 in the 7-bit field is the direct length; 126 means the following 2 bytes (16-bit unsigned) carry the length; 127 means the following 8 bytes (64-bit unsigned, MSB MUST be 0) carry the length. Lengths MUST use the minimum number of bytes.'
+section: "5.2"
+topics:
+    - websocket
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

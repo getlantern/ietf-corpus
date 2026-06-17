@@ -1,0 +1,9 @@
+document: rfc-6448
+kind: design-rationale
+summary: Kerberos Encryption Type 0 is an invalid value (per RFC 3961) and will never designate a real encryption system; its use as a sentinel in the KRB-CRED etype field was chosen because existing MIT, Heimdal, and Microsoft implementations already used this convention for unencrypted KRB-CRED messages in the GSS-API context.
+section: "4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

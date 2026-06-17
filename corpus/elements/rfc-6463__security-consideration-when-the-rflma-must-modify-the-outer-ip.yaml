@@ -1,0 +1,11 @@
+document: rfc-6463
+kind: security-consideration
+summary: When the rfLMA must modify the outer IP packet of a PBU/PBA (e.g., in the proxy-MAG model), the security mechanism MUST NOT cover the outer IP fields that will be changed; alternatively, the rfLMA handles all security processing and inter-LMA communication is protected by other means such as layer-2 VPNs.
+section: "8"
+rfc2119_level: MUST NOT
+topics:
+    - mobility
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

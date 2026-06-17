@@ -1,0 +1,10 @@
+document: rfc-6450
+kind: normative-requirement
+summary: If a client receives a Session ID option in a Server Response message, the client MUST echo it with the exact same value in all subsequent Echo Request messages. The Session ID value SHOULD be a pseudo-random byte string that is hard to predict (per RFC 4086) and MUST be at least 4 bytes long.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

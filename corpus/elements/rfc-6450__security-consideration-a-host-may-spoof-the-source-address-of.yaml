@@ -1,0 +1,9 @@
+document: rfc-6450
+kind: security-consideration
+summary: A host may spoof the source address of an Echo Request, causing the server to send unicast and multicast Echo Replies to the spoofed host. If the victim also happens to be joined to the multicast group, an amplification effect occurs (2× replies per request). The Session ID mechanism mitigates this by binding responses to an unpredictable token associated with the client's IP address.
+section: "8"
+topics:
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

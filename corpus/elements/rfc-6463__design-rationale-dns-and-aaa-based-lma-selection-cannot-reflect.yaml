@@ -1,0 +1,10 @@
+document: rfc-6463
+kind: design-rationale
+summary: DNS- and AAA-based LMA selection cannot reflect runtime load because DNS caching and unpredictable zone-update delays prevent MAGs from receiving current LMA load status, and AAA typically returns an FQDN representing a group of LMAs rather than a specific IP address. Runtime assignment via PMIPv6 signaling fills this gap.
+section: "1"
+topics:
+    - mobility
+    - dns
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

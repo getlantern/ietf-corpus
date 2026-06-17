@@ -1,0 +1,9 @@
+document: rfc-6464
+kind: design-rationale
+summary: Mixers and forwarders ought not base forwarding decisions directly on per-packet audio levels; instead they should apply smoothing (e.g., low-pass filtering) to avoid false positives from transient sounds such as coughs, while balancing this against clipping the beginning of speech. Automatic gain control may also help normalize per-participant input levels.
+section: "5"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-6455
+kind: protocol-element
+summary: The Close frame (opcode 0x8) optionally carries a 2-byte unsigned integer status code (network byte order) followed by a UTF-8 reason string. Upon receiving a Close frame without having sent one, an endpoint MUST send a Close frame in response, then both endpoints MUST close the underlying TCP connection.
+section: 5.5.1
+topics:
+    - websocket
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

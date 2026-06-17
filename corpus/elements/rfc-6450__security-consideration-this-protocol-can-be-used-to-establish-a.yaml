@@ -1,0 +1,10 @@
+document: rfc-6450
+kind: security-consideration
+summary: 'This protocol can be used to establish a covert channel: a client may embed arbitrary data in undefined options, which the server echoes in a multicast Echo Reply reaching all group members. A future mitigation suggested is to reply with a hash of the data rather than a verbatim copy.'
+section: "8"
+topics:
+    - security
+    - multicast
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

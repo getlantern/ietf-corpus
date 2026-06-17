@@ -1,0 +1,12 @@
+document: rfc-6464
+kind: security-consideration
+summary: In SRTP, RTP header extensions are authenticated but not encrypted. The audio level extension therefore exposes per-packet audio levels to passive observers, who may be able to infer conversation content with phoneme-level resolution. In scenarios where this is a concern, additional mechanisms MUST be used to protect header extension confidentiality, such as header extension encryption or IPsec.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

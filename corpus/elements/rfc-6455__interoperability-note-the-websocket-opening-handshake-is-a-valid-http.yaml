@@ -1,0 +1,9 @@
+document: rfc-6455
+kind: interoperability-note
+summary: The WebSocket opening handshake is a valid HTTP/1.1 Upgrade request, allowing WebSocket clients and HTTP clients to share port 80 (ws) or 443 (wss) on the same server. HTTP proxies that do not support WebSocket will receive a CONNECT-tunneled connection or will proxy the upgrade, depending on configuration.
+section: "1.3"
+topics:
+    - websocket
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

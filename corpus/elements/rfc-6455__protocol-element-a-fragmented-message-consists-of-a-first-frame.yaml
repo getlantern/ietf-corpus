@@ -1,0 +1,8 @@
+document: rfc-6455
+kind: protocol-element
+summary: A fragmented message consists of a first frame with FIN=0 and a non-zero opcode, followed by zero or more continuation frames (opcode=0x0, FIN=0), terminated by a continuation frame with FIN=1. All fragments of a message share the type set by the first fragment's opcode.
+section: "5.4"
+topics:
+    - websocket
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6455
+kind: security-consideration
+summary: SHA-1 is used in the opening handshake to compute Sec-WebSocket-Accept for proof-of-receipt only, not for cryptographic security. Known weaknesses of SHA-1 (collision resistance) do not apply to this non-cryptographic use, as the purpose is merely to confirm the server read the WebSocket-specific handshake.
+section: "10.8"
+topics:
+    - websocket
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
