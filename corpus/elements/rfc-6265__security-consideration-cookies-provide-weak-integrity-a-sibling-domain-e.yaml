@@ -1,0 +1,9 @@
+document: rfc-6265
+kind: security-consideration
+summary: 'Cookies provide weak integrity: a sibling domain (e.g., foo.example.com) can set a Domain=example.com cookie that overwrites cookies set by bar.example.com, and an active network attacker can inject Set-Cookie headers via HTTP to poison an HTTPS server''s cookie jar. The Path attribute provides no integrity protection. Servers SHOULD NOT run mutually distrusting services on different paths of the same host.'
+section: "8.6"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

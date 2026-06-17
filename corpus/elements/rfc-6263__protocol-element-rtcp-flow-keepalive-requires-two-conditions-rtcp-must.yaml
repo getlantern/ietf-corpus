@@ -1,0 +1,10 @@
+document: rfc-6263
+kind: protocol-element
+summary: 'RTCP flow keepalive requires two conditions: RTCP must be used bidirectionally and symmetrically per RFC 4961, and RTCP must be sent frequently enough that the worst-case interval Twc does not exceed the keepalive threshold Tr. The worst-case interval is calculated as: Twc = 1.5 / 1.21828 * members_max * rtcp_bw / avg_rtcp_size_max * 8.'
+section: "8"
+topics:
+    - rtp
+    - nat
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

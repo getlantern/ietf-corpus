@@ -1,0 +1,9 @@
+document: rfc-6282
+kind: design-rationale
+summary: UDP checksum elision requires upper-layer authorization (not just compressor judgment) to guarantee the destination has sufficient means to detect data corruption. This preserves end-to-end integrity semantics even when the lower-layer path lacks the checksum.
+section: 4.3.2
+topics:
+    - udp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

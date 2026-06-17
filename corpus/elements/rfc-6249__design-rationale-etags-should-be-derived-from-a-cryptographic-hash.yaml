@@ -1,0 +1,8 @@
+document: rfc-6249
+kind: design-rationale
+summary: ETags should be derived from a cryptographic hash of file contents rather than server-unique filesystem metadata, so that mirrored copies of the same file share the same ETag across all coordinated servers, enabling early mismatch detection by clients.
+section: "2"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

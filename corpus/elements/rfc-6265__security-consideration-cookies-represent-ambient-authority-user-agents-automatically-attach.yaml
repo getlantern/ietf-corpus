@@ -1,0 +1,9 @@
+document: rfc-6265
+kind: security-consideration
+summary: 'Cookies represent ambient authority: user agents automatically attach cookies to requests initiated by third parties, enabling cross-site request forgery (CSRF). Servers using cookies for authentication are vulnerable because a remote party can trigger authenticated requests without knowing cookie contents. Treating URLs as capabilities (storing secrets in URLs rather than cookies) can mitigate this.'
+section: "8.2"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-6249
+kind: state-machine
+summary: 'Client download flow: (1) GET or HEAD to Metalink server to receive Link/Digest/ETag headers; (2) issue range GET to preferred mirror with If-Match ETag condition; (3) optionally open parallel range requests to additional mirrors; (4) monitor aggregate throughput to gate new connections; (5) verify whole-file hash on completion; (6) if hash fails, fetch Metalink/XML for partial-hash error correction.'
+section: "7"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

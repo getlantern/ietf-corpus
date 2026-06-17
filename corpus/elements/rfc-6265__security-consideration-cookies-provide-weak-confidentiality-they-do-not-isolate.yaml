@@ -1,0 +1,9 @@
+document: rfc-6265
+kind: security-consideration
+summary: 'Cookies provide weak confidentiality: they do not isolate by port (all ports on a host share cookies) or by scheme (ftp, gopher, etc. may access cookies set via http/https). Servers MUST NOT run mutually distrusting services on different ports of the same host while using cookies for security-sensitive state.'
+section: "8.5"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

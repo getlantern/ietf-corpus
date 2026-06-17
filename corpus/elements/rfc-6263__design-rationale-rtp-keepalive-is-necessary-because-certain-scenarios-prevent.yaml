@@ -1,0 +1,10 @@
+document: rfc-6263
+kind: design-rationale
+summary: 'RTP keepalive is necessary because certain scenarios prevent normal RTP traffic from maintaining NAT bindings: unidirectional streams (recvonly/sendonly per RFC 3264), streams put on hold, and infrequent payload formats like text conversation (RFC 4103) whose inter-packet interval can exceed NAT binding timeouts.'
+section: "1"
+topics:
+    - rtp
+    - nat
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6263
+kind: security-consideration
+summary: RTP keepalive packets sent on the same path as regular RTP media packets may be perceived as an attack by a peer; however, RFC 3550 mandates that a peer ignore packets with payload types it does not understand, so a compliant peer will appropriately drop received keepalive packets.
+section: "9"
+topics:
+    - rtp
+    - security
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

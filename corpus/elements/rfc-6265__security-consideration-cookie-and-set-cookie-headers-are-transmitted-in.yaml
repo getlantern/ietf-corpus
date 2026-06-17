@@ -1,0 +1,10 @@
+document: rfc-6265
+kind: security-consideration
+summary: Cookie and Set-Cookie headers are transmitted in cleartext unless sent over TLS. Servers SHOULD encrypt and sign cookie contents, and SHOULD use cookies only over secure channels, setting the Secure attribute on every cookie. Without the Secure attribute, an active network attacker can intercept cookies sent over HTTP and replay them against an HTTPS-only server.
+section: "8.3"
+topics:
+    - http
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

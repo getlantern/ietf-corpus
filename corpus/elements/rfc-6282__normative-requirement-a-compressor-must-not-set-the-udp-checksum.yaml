@@ -1,0 +1,10 @@
+document: rfc-6282
+kind: normative-requirement
+summary: A compressor MUST NOT set the UDP checksum C bit (elide the checksum) unless it has received explicit authorization from the upper layer. The upper layer MUST NOT authorize elision unless tunneling with its own integrity check or an in-payload MIC covers at least the same data as the UDP checksum.
+section: 4.3.2
+rfc2119_level: MUST NOT
+topics:
+    - udp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

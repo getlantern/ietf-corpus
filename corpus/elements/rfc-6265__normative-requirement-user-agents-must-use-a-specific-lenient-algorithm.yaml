@@ -1,0 +1,9 @@
+document: rfc-6265
+kind: normative-requirement
+summary: User agents MUST use a specific lenient algorithm to parse cookie-date values, tolerating a wide range of delimiter characters and accepting 2-digit years (70–99 → 1970–1999; 0–69 → 2000–2069). Parsing fails if any of day-of-month, month, year, or time are absent, or if values are out of range.
+section: 5.1.1
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

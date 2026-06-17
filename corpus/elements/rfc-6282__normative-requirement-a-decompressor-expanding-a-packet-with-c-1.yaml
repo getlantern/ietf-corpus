@@ -1,0 +1,10 @@
+document: rfc-6282
+kind: normative-requirement
+summary: A decompressor expanding a packet with C=1 MUST recompute the UDP checksum and place it in the restored UDP header. If it cannot unambiguously determine that an integrity check was in place or verification fails, it MUST drop the packet.
+section: 4.3.2
+rfc2119_level: MUST
+topics:
+    - udp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

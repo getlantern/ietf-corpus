@@ -1,0 +1,8 @@
+document: rfc-6266
+kind: interoperability-note
+summary: Many user agent implementations predating RFC 6266 do not understand the 'filename*' parameter. Senders should include both 'filename' (as fallback) and 'filename*' (for full Unicode support), placing 'filename' first due to parsing problems in some implementations that ignore 'filename*' when it appears after 'filename'.
+section: "4.3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

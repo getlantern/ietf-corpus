@@ -1,0 +1,10 @@
+document: rfc-6277
+kind: security-consideration
+summary: The preferred signature algorithms extension is not protected against a man-in-the-middle downgrade attack. This is mitigated because the responder MUST NOT sign using weak algorithms even if requested, and the client can independently reject responses not meeting its cryptographic security criteria.
+section: "7.2"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

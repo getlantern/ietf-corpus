@@ -1,0 +1,10 @@
+document: rfc-6282
+kind: wire-format
+summary: 'Traffic Class is rotated right by 2 bits in the compressed header so ECN always occupies bits 0–1. Four encoding variants are defined: TF=00 carries ECN+DSCP+pad+Flow Label (4 bytes); TF=01 carries ECN+pad+Flow Label (3 bytes, DSCP elided); TF=10 carries ECN+DSCP (1 byte, Flow Label elided); TF=11 elides both.'
+section: 3.2.1
+topics:
+    - ip
+    - ecn
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

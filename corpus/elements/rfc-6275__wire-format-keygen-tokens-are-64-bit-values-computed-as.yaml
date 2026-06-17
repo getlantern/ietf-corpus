@@ -1,0 +1,10 @@
+document: rfc-6275
+kind: wire-format
+summary: 'Keygen tokens are 64-bit values computed as: home keygen token = First(64, HMAC_SHA1(Kcn, home_address | nonce | 0x00)); care-of keygen token = First(64, HMAC_SHA1(Kcn, care_of_address | nonce | 0x01)). The Kbm = SHA-1(home keygen token | care-of keygen token), producing a 20-octet binding management key.'
+section: 5.2.5
+topics:
+    - crypto
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

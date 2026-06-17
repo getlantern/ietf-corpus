@@ -1,0 +1,9 @@
+document: rfc-6275
+kind: design-rationale
+summary: Most route-optimized packets use an IPv6 routing header rather than IP-in-IP encapsulation (as in Mobile IPv4), reducing per-packet overhead. This also eliminates the need to manage 'tunnel soft state' and decouples the protocol from link-layer specifics by relying on IPv6 Neighbor Discovery instead of ARP.
+section: "2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

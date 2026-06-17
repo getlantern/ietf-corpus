@@ -1,0 +1,8 @@
+document: rfc-6265
+kind: state-machine
+summary: 'The cookie storage model defines states: creation (name, value, creation-time, last-access-time set), persistent vs. session (persistent-flag based on Max-Age/Expires presence), host-only vs. domain (host-only-flag based on Domain attribute presence), secure-only, and http-only. Transitions include: receive → validate domain → check for existing matching cookie (same name+domain+path) → replace or insert. Cookies with http-only-flag set cannot be created or overwritten via non-HTTP APIs.'
+section: "5.3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
