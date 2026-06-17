@@ -1,0 +1,10 @@
+document: rfc-5388
+kind: design-rationale
+summary: UDP datagrams are recommended as traceroute probe transport rather than ICMP Echoes because many routers do not return ICMP TIME_EXCEEDED in response to an ICMP Echo, making ICMP-based implementations unreliable for hop discovery.
+section: "3"
+topics:
+    - measurement
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

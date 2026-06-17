@@ -1,0 +1,12 @@
+document: rfc-5373
+kind: security-consideration
+summary: The minimal policy requires that UAs MUST NOT establish a session providing outbound or bidirectional media without explicit user acceptance. This prevents the extension from being used to activate a remote microphone ('bug'). Additionally, if a session was auto-answered with inbound-only media, the UAS MUST NOT transition to outbound/bidirectional media without explicit user acceptance.
+section: "7.4"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - security
+    - privacy
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

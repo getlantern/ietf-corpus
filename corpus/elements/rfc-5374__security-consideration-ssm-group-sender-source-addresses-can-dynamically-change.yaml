@@ -1,0 +1,12 @@
+document: rfc-5374
+kind: security-consideration
+summary: SSM Group Sender source addresses can dynamically change (due to NAT, mobility, or multi-homing), causing GSPD entries to become stale. To prevent data leakage through BYPASS processing, SSM groups SHOULD maintain a default DISCARD policy for all unauthorized Group Sender source addresses for the SSM group's destination address.
+section: 6.3.3
+topics:
+    - ipsec
+    - multicast
+    - security
+    - nat
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

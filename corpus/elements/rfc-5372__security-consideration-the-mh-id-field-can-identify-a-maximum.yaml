@@ -1,0 +1,10 @@
+document: rfc-5372
+kind: security-consideration
+summary: The mh_id field can identify a maximum of 7 different main headers. If severe packet loss (random or attacker-introduced) causes 6 successive main header updates to be lost, the decoder will attempt decompression using an incorrect main header. Standard JPEG 2000 decoders should detect the codestream inconsistency; it is recommended to clear the saved mh_id and header upon detecting such inconsistency.
+section: "8"
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

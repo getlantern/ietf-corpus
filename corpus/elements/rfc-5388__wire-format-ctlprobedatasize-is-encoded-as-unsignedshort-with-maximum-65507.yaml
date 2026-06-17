@@ -1,0 +1,9 @@
+document: rfc-5388
+kind: wire-format
+summary: CtlProbeDataSize is encoded as unsignedShort with maximum 65507 (65535 minus 20-byte IPv4 header minus 8-byte UDP header, default 0). CtlTimeOut is unsignedByte constrained 1–60 seconds (default 3). CtlPort is unsignedShort min 1 (default 33434). CtlMaxTtl and CtlInitialTtl use u8nonzero (1–255, defaults 30 and 1 respectively).
+section: "7"
+topics:
+    - measurement
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

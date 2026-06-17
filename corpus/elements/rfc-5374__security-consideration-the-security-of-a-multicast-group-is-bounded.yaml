@@ -1,0 +1,10 @@
+document: rfc-5374
+kind: security-consideration
+summary: The security of a multicast group is bounded by its weakest admitted member because all members share group secrets. An insider adversary can disclose keys, forge packet transmissions attributed to legitimate senders, or launch computational DoS attacks by multicasting bogus digitally-signed packets. The GKM system must detect compromised members and execute re-keying to expel them.
+section: 6.2.2
+topics:
+    - ipsec
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

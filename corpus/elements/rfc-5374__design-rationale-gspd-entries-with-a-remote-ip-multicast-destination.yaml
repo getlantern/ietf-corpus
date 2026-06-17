@@ -1,0 +1,9 @@
+document: rfc-5374
+kind: design-rationale
+summary: GSPD entries with a remote IP multicast destination address do not have their Local and Remote addresses swapped during incoming SPD-S and SPD-I checks (unlike unicast SPD entries). This is because an IP multicast address must never appear as a source address, making the normal IKE convention of swapping bidirectional selectors inapplicable.
+section: 4.1.1
+topics:
+    - ipsec
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

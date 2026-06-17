@@ -1,0 +1,9 @@
+document: rfc-5374
+kind: design-rationale
+summary: Source address preservation is optional rather than mandatory because a security gateway performing source address preservation cannot receive ICMP Path MTU or other ICMP messages triggered by those packets, since the outer source address is set to the inner header's source address rather than the gateway's own address.
+section: "3.1"
+topics:
+    - ipsec
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

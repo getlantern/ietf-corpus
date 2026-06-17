@@ -1,0 +1,11 @@
+document: rfc-5374
+kind: normative-requirement
+summary: During inbound processing, if an IPsec SA is marked for tunnel mode with address preservation, the marked addresses in the outer IP header MUST be verified to match the corresponding addresses in the inner IP header; a mismatch MUST cause the packet to be discarded and treated as an auditable event.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

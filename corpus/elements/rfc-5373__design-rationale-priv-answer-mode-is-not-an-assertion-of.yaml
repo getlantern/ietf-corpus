@@ -1,0 +1,10 @@
+document: rfc-5373
+kind: design-rationale
+summary: Priv-Answer-Mode is not an assertion of privilege but a request for privileged treatment, modeled after the UNIX 'sudo' pattern. This design allows the same caller to make both ordinary (Answer-Mode) and urgent/privileged (Priv-Answer-Mode) requests, receiving different handling based on which header is used rather than solely on identity.
+section: "1"
+topics:
+    - sip
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5386
+kind: design-rationale
+summary: 'BTNS PAD entries must logically follow all non-BTNS PAD entries to preserve standard IPsec access control semantics. This is implemented by searching the PAD twice: first with the peer-asserted ID, and if that fails, again with the peer''s public key as a PUBLICKEY ID. A single-pass implementation that preserves these semantics is also allowed.'
+section: "2"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

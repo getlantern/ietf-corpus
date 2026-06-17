@@ -1,0 +1,8 @@
+document: rfc-5388
+kind: design-rationale
+summary: The schema separates 'RequestMetadata' (parameters requested) from 'MeasurementMetadata' (parameters actually used) to capture discrepancies between what was requested and what an implementation applied. Both share a single '_Metadata' XML type; elements absent in a request are represented as empty elements meaning 'use default'.
+section: 5.2.1
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
