@@ -1,0 +1,10 @@
+document: rfc-5629
+kind: security-consideration
+summary: Applications that push UI components to client devices must be authenticated and authorized. Authorization is automatically granted if the application can prove it is on the call path or trusted by a path element, demonstrated by knowledge of the dialog identifiers (via Target-Dialog or KPML Event header field parameters). This requires cryptographically random dialog identifiers (at least 128 bits) and SIPS for message confidentiality.
+section: "13"
+topics:
+    - sip
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5630
+kind: design-rationale
+summary: RFC 5630 deprecates the RFC 3261 last-hop exception, which had allowed the final hop to a UAS to omit TLS when a SIPS Request-URI was used. The exception was originally justified because, before RFC 5626, many UAs lacked certificates and could not accept incoming TLS connections; RFC 5626 now provides a better solution via UA-initiated outbound connections.
+section: "3.3"
+topics:
+    - sip
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

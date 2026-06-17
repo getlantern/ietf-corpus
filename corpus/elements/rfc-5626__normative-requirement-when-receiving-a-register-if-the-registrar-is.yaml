@@ -1,0 +1,9 @@
+document: rfc-5626
+kind: normative-requirement
+summary: When receiving a REGISTER, if the registrar is not the first hop and the Path header is missing or the first URI does not have an 'ob' URI parameter, outbound processing MUST NOT be applied. If the REGISTER contains reg-id and the outbound option tag in a Supported header field, the registrar MUST respond with 439 (First Hop Lacks Outbound Support).
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

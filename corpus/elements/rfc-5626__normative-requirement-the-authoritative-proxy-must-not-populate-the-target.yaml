@@ -1,0 +1,9 @@
+document: rfc-5626
+kind: normative-requirement
+summary: The authoritative proxy MUST NOT populate the target set with more than one contact with the same AOR and instance-id at a time. If a request fails with a 430 (Flow Failed) response, the proxy SHOULD replace the failed branch with another target with the same AOR and instance-id but a different reg-id.
+section: "7"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5628
+kind: security-consideration
+summary: Including a GRUU in registration event notifications increases risk compared to an unreachable contact address by providing a reachable address. However, requests to a GRUU are always first processed by the servicing proxy, which may control access via white lists just as it does for the AOR, so disclosing a GRUU presents no more risk than disclosing the AOR itself.
+section: "11"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

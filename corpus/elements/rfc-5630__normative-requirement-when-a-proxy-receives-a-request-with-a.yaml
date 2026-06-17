@@ -1,0 +1,10 @@
+document: rfc-5630
+kind: normative-requirement
+summary: When a proxy receives a request with a SIP Request-URI and the target had registered with a SIPS Contact, the proxy MUST NOT forward to a SIPS Request-URI; it MUST replace the SIPS scheme with SIP, leaving the rest of the URI unchanged, and use TLS to forward the request to the UAS.
+section: "5.3"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

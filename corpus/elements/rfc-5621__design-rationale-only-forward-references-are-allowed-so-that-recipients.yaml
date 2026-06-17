@@ -1,0 +1,9 @@
+document: rfc-5621
+kind: design-rationale
+summary: Only forward references are allowed so that recipients can process body parts as they parse them, without needing to parse the remainder of the message. It was considered to restrict references to within the same 'multipart/related' wrapper, but this extra constraint was deemed unnecessary.
+section: "9.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

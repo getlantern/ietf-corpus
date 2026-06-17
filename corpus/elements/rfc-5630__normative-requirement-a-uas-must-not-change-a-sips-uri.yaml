@@ -1,0 +1,9 @@
+document: rfc-5630
+kind: normative-requirement
+summary: A UAS MUST NOT change a SIPS URI to a SIP URI. If a UAS does not wish to accept SIPS requests, it MUST respond with 480 (Temporarily Unavailable) and SHOULD include a Warning header with warn-code 380 'SIPS Not Allowed'. If a UAS requires SIPS, it MUST reject SIP requests with 480 and SHOULD include warn-code 381 'SIPS Required'.
+section: 5.1.2
+rfc2119_level: MUST NOT
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

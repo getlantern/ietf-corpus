@@ -1,0 +1,9 @@
+document: rfc-5626
+kind: interoperability-note
+summary: Sending a double-CRLF over a connection-oriented transport is backwards compatible with RFC 3261 Section 7.5; however, only implementations that support RFC 5626 will respond to a ping with a pong. A UA that did not register using outbound procedures cannot expect a CRLF pong unless explicitly indicated.
+section: 3.5.1
+topics:
+    - sip
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

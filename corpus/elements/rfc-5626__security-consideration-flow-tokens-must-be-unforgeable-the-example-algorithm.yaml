@@ -1,0 +1,10 @@
+document: rfc-5626
+kind: security-consideration
+summary: 'Flow tokens MUST be unforgeable: the example algorithm uses an HMAC-SHA1-80 keyed by a 20-octet per-proxy secret over the flow''s protocol, local address/port, and remote address/port, then base64-encodes the HMAC concatenated with the input. If the HMAC check fails, the proxy SHOULD send a 403 (Forbidden).'
+section: "5.2"
+topics:
+    - sip
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

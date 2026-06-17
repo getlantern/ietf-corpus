@@ -1,0 +1,10 @@
+document: rfc-5630
+kind: normative-requirement
+summary: Upon receiving a 416 or 480 (Temporarily Unavailable) response with Warning warn-code 380 'SIPS Not Allowed', a UAC MUST NOT re-attempt the request by automatically replacing the SIPS scheme with SIP, as this constitutes an unauthorized security downgrade.
+section: 5.1.1
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

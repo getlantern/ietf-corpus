@@ -1,0 +1,9 @@
+document: rfc-5630
+kind: normative-requirement
+summary: When a proxy sends a SIPS request and receives a 3XX response with a SIP Contact, a 416, or a 480 with warn-code 380, the proxy MUST NOT recurse on the response; it SHOULD forward the best response upstream so the UAC can take appropriate action.
+section: "5.3"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

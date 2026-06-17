@@ -1,0 +1,11 @@
+document: rfc-5626
+kind: normative-requirement
+summary: The STUN keep-alive MUST only be used with connection-less transports such as UDP; it MUST NOT be used for connection-oriented transports. If the XOR-MAPPED-ADDRESS in the STUN Binding Response changes, the UA MUST treat this event as a failure on the flow. Clients MUST support STUN-based keep-alives.
+section: 4.4.2
+rfc2119_level: MUST
+topics:
+    - sip
+    - udp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

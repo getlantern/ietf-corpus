@@ -1,0 +1,11 @@
+document: rfc-5629
+kind: normative-requirement
+summary: If an application does not present a valid dialog identifier in its REFER or SUBSCRIBE request, the user agent MUST reject the request with a 403 response. If the dialog was not established with SIPS or did not use cryptographically random dialog identifiers, the application MUST NOT be automatically authorized even with valid dialog identifiers.
+section: "9.2"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

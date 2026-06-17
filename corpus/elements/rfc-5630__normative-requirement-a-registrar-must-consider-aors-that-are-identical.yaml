@@ -1,0 +1,9 @@
+document: rfc-5630
+kind: normative-requirement
+summary: A registrar MUST consider AORs that are identical except for having SIP vs. SIPS scheme to be equivalent. A registrar MUST only accept a SIPS Contact binding if all relevant URIs (Request-URI, Contacts, Path header fields) are SIPS; otherwise it MUST reject with 400 (Bad Request).
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5627
+kind: security-consideration
+summary: A malicious insider can use a GRUU observed from a call to launch an amplification DoS attack by placing the victim's GRUU as the Contact in a SUBSCRIBE to a presence server, directing traffic towards the victim. Proxies SHOULD validate that the GRUU in the Contact matches the authenticated identity of the sender to mitigate this.
+section: "10.2"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5630
+kind: normative-requirement
+summary: A proxy MUST NOT use the RFC 3261 last-hop exception when forwarding or retargeting a request. When a proxy receives a SIPS Request-URI, it MUST only forward or retarget to a SIPS Request-URI; if the target registered with a SIP Contact, the proxy MUST reject with 480 and SHOULD include Warning warn-code 380.
+section: "5.3"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

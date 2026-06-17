@@ -1,0 +1,9 @@
+document: rfc-5626
+kind: design-rationale
+summary: 'Multiple flows to different servers reduce the avalanche restart problem: when a server fails, UAs with only that flow reconnect simultaneously causing load spikes, but UAs with a surviving secondary flow delay reconnection by a backoff period, spreading reconnect load across time.'
+section: "3.3"
+topics:
+    - sip
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5619
+kind: security-consideration
+summary: Without ingress filtering at the SC decapsulator, an attacker can inject false packets into the softwire, enabling DoS or using the ISP's tunneling infrastructure for free inner-address connectivity. Ingress filtering alone is insufficient against address spoofing; binding of address to authenticated identity is also required.
+section: "3.3"
+topics:
+    - security
+    - vpn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

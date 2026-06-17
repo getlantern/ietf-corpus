@@ -1,0 +1,10 @@
+document: rfc-5626
+kind: normative-requirement
+summary: If a proxy receives information indicating no future messages will be delivered on a specific flow (e.g., a TCP socket closing or a destination-unreachable ICMP error), the proxy MUST invalidate all bindings in the target set that use that flow, regardless of AOR.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - sip
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

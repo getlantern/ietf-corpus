@@ -1,0 +1,10 @@
+document: rfc-5626
+kind: interoperability-note
+summary: Sending STUN binary data on the same UDP ports used for SIP is a significant non-backwards-compatible change to RFC 3261. A SIP node MUST NOT send STUN requests to a next-hop SIP node that has not explicitly indicated support; doing so could cause the node to be blacklisted for UDP traffic.
+section: "8"
+topics:
+    - sip
+    - udp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

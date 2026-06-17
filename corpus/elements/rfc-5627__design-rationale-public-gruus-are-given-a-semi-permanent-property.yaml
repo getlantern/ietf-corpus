@@ -1,0 +1,8 @@
+document: rfc-5627
+kind: design-rationale
+summary: Public GRUUs are given a semi-permanent property (SHOULD remain valid after contact expiry, returning 480) rather than a MUST because registrar failures could cause the set of valid GRUUs to be lost; however, public GRUUs can be constructed stateless (e.g., AOR plus instance ID in 'gr' parameter) so no extra state is required.
+section: "5.3"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

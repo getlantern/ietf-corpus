@@ -1,0 +1,9 @@
+document: rfc-5626
+kind: state-machine
+summary: 'Flow recovery uses exponential backoff: upper-bound wait W = min(max-time, base-time × 2^consecutive-failures). If all flows have failed, base-time defaults to 30s; if at least one flow is active, base-time defaults to 90s; max-time defaults to 1800s. The actual retry delay is a uniform random value between 50% and 100% of W.'
+section: "4.5"
+topics:
+    - sip
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5619
+kind: interoperability-note
+summary: When ESP transport mode is used, the UDP header carrying L2TP will have an incorrect checksum after NAT address translation. The recommended fix is the 'do not check' approach (option 3 of RFC 3948) rather than incremental update, since IKEv2 lacks the NAT-OA payload required for the latter.
+section: 3.5.3
+topics:
+    - ipsec
+    - nat
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

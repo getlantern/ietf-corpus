@@ -1,0 +1,10 @@
+document: rfc-5626
+kind: normative-requirement
+summary: When an edge proxy is the first SIP node after the UAC, it either MUST store a flow token (containing information about the flow from the previous hop) in its Path URI or reject the request. The flow token MUST be an identifier that is unique to this network flow, and the first node MUST include an 'ob' URI parameter in its Path header field value.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - sip
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
