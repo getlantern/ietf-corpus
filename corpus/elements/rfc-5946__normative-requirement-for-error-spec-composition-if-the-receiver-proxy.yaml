@@ -1,0 +1,10 @@
+document: rfc-5946
+kind: normative-requirement
+summary: 'For ERROR_SPEC composition: if the Receiver Proxy receives a ResvErr with error code 1 (Admission Control Failure) or code 2 (Policy Control Failure), it copies the error code and value into the PathErr''s ERROR_SPEC; the error node MUST be set to the address of the Receiver Proxy. For all other error codes, a new ERROR_SPEC with error code 36 (Unrecoverable Receiver Proxy Error) MUST be composed.'
+section: 3.1.2
+rfc2119_level: MUST
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

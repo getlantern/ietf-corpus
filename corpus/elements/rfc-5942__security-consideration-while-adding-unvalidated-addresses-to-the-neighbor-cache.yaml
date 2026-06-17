@@ -1,0 +1,10 @@
+document: rfc-5942
+kind: security-consideration
+summary: While adding unvalidated addresses to the Neighbor Cache (as permitted by RFC 4861 Section 7.2.3 upon NS receipt) creates a potential for spoofing, this is harmless so long as the address is not also added to the Prefix List or marked on-link in the Destination Cache. The fix is to ensure NS/NA/RS receipt never modifies the Prefix List.
+section: "3"
+topics:
+    - ip
+    - security
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

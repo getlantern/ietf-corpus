@@ -1,0 +1,9 @@
+document: rfc-5946
+kind: design-rationale
+summary: Direct Notify is better suited to single-sender applications because with WF and SE styles a single Resv message is shared for all senders, making it impossible to guarantee notification of all affected senders via the Notify Request object in the Resv. Indirect Notify allows the Receiver Proxy to apply the same per-sender logic used for PathErr.
+section: "3.2"
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

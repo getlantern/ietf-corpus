@@ -1,0 +1,9 @@
+document: rfc-5944
+kind: design-rationale
+summary: The Agent Advertisement sequence number rolls over from 0xffff to 256 (not 0) so that a mobile node can distinguish a reboot-induced reset (sequence in range 0–255) from a normal rollover (sequence >= 256). This prevents unnecessary re-registrations after rollover.
+section: 2.3.2
+topics:
+    - mobility
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

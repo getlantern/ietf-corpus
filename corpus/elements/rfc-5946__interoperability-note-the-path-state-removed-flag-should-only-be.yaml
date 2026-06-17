@@ -1,0 +1,9 @@
+document: rfc-5946
+kind: interoperability-note
+summary: The Path_State_Removed flag should only be enabled on the Receiver Proxy in controlled environments where all routers are known to support it. In environments with 'old RSVP routers' that do not understand the flag, using it results in slower resource release and increased signaling because old routers propagate the flag but do not tear Path state, forcing release via refresh timeout.
+section: 3.1.3
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

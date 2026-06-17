@@ -1,0 +1,9 @@
+document: rfc-5953
+kind: design-rationale
+summary: The TLSTM defines its own tlstmSessionID rather than reusing the (D)TLS internal SessionID because the (D)TLS internal ID can change during renegotiation and may be shared across multiple TLSTM sessions, making it unsuitable as a stable, unique TLSTM session reference.
+section: 3.1.3
+topics:
+    - snmp
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

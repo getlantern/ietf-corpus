@@ -1,0 +1,9 @@
+document: rfc-5948
+kind: wire-format
+summary: IPv4 packets are transmitted in Generic IEEE 802.16 MAC frames. The MAC header contains H (1 bit, Header Type), E (Encryption Control), TYPE (subheader indicators), R (Reserved), C (CRC Indicator), EKS (Encryption Key Sequence), LEN (11 bits, length of MAC PDU in bytes including header and CRC), CID (16 bits, Connection Identifier), HCS (8 bits, Header Check Sequence), followed by the IPv4 header and payload, and an optional 8-bit CRC appended after encryption.
+section: "4.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

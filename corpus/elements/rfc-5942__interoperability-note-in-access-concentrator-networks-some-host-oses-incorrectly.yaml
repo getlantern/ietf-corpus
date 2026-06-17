@@ -1,0 +1,9 @@
+document: rfc-5942
+kind: interoperability-note
+summary: In access concentrator networks, some host OSes incorrectly invent a /64 on-link prefix when receiving a DHCPv6 address with no prefix length, causing them to attempt address resolution instead of forwarding to the default router. This prevents IPv6 connectivity since no host responds to the spurious resolution.
+section: "5"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5954
+kind: interoperability-note
+summary: RFC 3261 Section 19.1.4 requires host components to match for URI equality but provides no rule for URIs containing different textual representations of IPv6 addresses that are binary equivalents, e.g., sip:bob@[::ffff:192.0.2.128] vs sip:bob@[::ffff:c000:280]. This ambiguity also affects IPv4 (e.g., 192.0.2.128 vs 192.00.02.128) but is more acute for IPv6 due to compressed notation and hybrid address forms.
+section: "3.2"
+topics:
+    - sip
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

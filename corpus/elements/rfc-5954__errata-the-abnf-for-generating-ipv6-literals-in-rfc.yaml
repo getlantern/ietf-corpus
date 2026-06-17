@@ -1,0 +1,9 @@
+document: rfc-5954
+kind: errata
+summary: 'The ABNF for generating IPv6 literals in RFC 3261 is incorrect: when generating IPv4-mapped IPv6 addresses, the <IPv6address> production rule may produce a construct with an extra colon before the IPv4 address (e.g., [2001:db8:::192.0.2.1]) because <hexpart> alternatives already include ''::''. The correct form uses only two colons.'
+section: "3.1"
+topics:
+    - sip
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

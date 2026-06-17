@@ -1,0 +1,9 @@
+document: rfc-5946
+kind: interoperability-note
+summary: A sender that does not support sender notification via Notify may include a Notify Request for upstream notifications and will receive unexpected downstream Notify messages from a supporting Receiver Proxy. Such senders are expected to drop downstream notifications as invalid; the RECOMMENDED fallback PathErr path ensures they are still notified of reservation failure.
+section: "3.2"
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

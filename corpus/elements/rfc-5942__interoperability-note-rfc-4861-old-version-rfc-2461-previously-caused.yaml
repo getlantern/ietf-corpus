@@ -1,0 +1,9 @@
+document: rfc-5942
+kind: interoperability-note
+summary: 'RFC 4861 (old version RFC 2461) previously caused a node to assume any destination was on-link when the Default Router List was empty. RFC 5942 corrects this: the host must instead send ICMPv6 Destination Unreachable. Implementations still following the RFC 2461 behavior will fail to send traffic in certain topologies.'
+section: "1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

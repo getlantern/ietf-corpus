@@ -1,0 +1,10 @@
+document: rfc-5946
+kind: normative-requirement
+summary: For FF-style reservations, the Receiver Proxy MUST send a PathErr towards the single sender matching the failed reservation. For SE-style reservations, the Receiver Proxy MUST send PathErr(s) towards the set of senders that triggered reservations that failed. For WF-style reservations, the Receiver Proxy SHOULD send a PathErr towards each sender.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
