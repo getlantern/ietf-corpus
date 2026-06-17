@@ -1,0 +1,9 @@
+document: rfc-5651
+kind: security-consideration
+summary: Modification of TSI or TOI fields by an attacker can deprive sessions or objects of data or direct incorrect data to other sessions/objects. Injection of forged packets with fake TSI/TOI values may cause receivers to allocate resources for spurious sessions, effecting a DoS attack. These fields MUST be protected by protocol instantiation security mechanisms such as source authentication and data integrity.
+section: "8.1"
+topics:
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

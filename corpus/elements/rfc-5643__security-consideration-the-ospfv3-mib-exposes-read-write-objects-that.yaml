@@ -1,0 +1,10 @@
+document: rfc-5643
+kind: security-consideration
+summary: The OSPFv3 MIB exposes read-write objects that can alter routing behavior (e.g., ospfv3AdminStatus, ospfv3ExtAreaLsdbLimit, ospfv3ASBdrRtrStatus); unauthorized modification could destabilize a routing domain. Because OSPFv3 authentication is handled at the IPv6 layer rather than in the MIB, SNMPv3 access controls are required to protect sensitive writable objects.
+section: "6"
+topics:
+    - security
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

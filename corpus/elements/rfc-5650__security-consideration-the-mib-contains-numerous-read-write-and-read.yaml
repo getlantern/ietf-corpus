@@ -1,0 +1,9 @@
+document: rfc-5650
+kind: security-consideration
+summary: The MIB contains numerous read-write and read-create objects that can disrupt DSL line operation if written by unauthorized parties. Implementations MUST use SNMPv3 with authentication and privacy (authPriv security level) to protect these objects, and SHOULD apply VACM to restrict write access to sensitive configuration and command objects.
+section: "5"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

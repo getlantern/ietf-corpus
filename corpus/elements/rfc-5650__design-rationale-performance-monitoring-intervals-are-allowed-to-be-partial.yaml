@@ -1,0 +1,8 @@
+document: rfc-5650
+kind: design-rationale
+summary: Performance monitoring intervals are allowed to be partial or clock-adjusted while still being reported as Valid by including an actual Monitoring Time field. This handles edge cases such as management system startup mid-interval, short outages within a bucket, and NTP clock corrections without forcing the entire interval to be discarded.
+section: 2.7.4
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

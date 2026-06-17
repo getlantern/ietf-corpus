@@ -1,0 +1,9 @@
+document: rfc-5643
+kind: design-rationale
+summary: Router ID, Area ID, and Link State ID retain the OSPFv2 size of 32 bits but carry no addressing semantics in OSPFv3, so their syntax is changed to Unsigned32. The Router ID index component appears before the Link State ID in MIB indices because Router IDs are more unique, enabling more useful partial OID lookups.
+section: "2.2"
+topics:
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
