@@ -1,0 +1,11 @@
+document: rfc-5928
+kind: security-consideration
+summary: When SRV or NAPTR indirection is used, the TLS certificate must match the <host> configuration parameter (not the resolved server name). For example, a client configured with <host>='example.com' that resolves via SRV to 'turnserver.example.net' must find 'example.com' in the certificate, not 'turnserver.example.net'. This may require certificate changes when DNS records are added.
+section: "5"
+topics:
+    - tls
+    - security
+    - nat
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

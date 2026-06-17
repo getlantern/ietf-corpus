@@ -1,0 +1,11 @@
+document: rfc-5934
+kind: normative-requirement
+summary: The digital signature on an Apex Trust Anchor Update message MUST be validated directly with the apex trust anchor operational or contingency public key; delegation via an X.509 certification path is explicitly not permitted. If validated with the contingency public key, the TAMPMsgRef seqNum MUST contain zero.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

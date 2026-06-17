@@ -1,0 +1,10 @@
+document: rfc-5929
+kind: security-consideration
+summary: TLS Finished messages are cryptographically bound to the TLS connection and known to both endpoints. With secure renegotiation (RFC 5746), each handshake is bound to the preceding one, making TLS Finished messages safe to use as channel bindings when the authentication mechanism conforms to RFC 5056.
+section: "10"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

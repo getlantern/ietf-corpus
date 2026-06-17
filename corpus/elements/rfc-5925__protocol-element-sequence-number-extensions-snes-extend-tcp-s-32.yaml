@@ -1,0 +1,9 @@
+document: rfc-5925
+kind: protocol-element
+summary: Sequence Number Extensions (SNEs) extend TCP's 32-bit sequence number to 64 bits to prevent replay attacks within long-lived connections. Each connection maintains SND.SNE and RCV.SNE, both initialized to zero. The SNE is incremented by inference when the TCP sequence number wraps, using a flag-based algorithm.
+section: "6.2"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5929
+kind: security-consideration
+summary: None of the three channel binding types defined herein produce data that must be kept secret or can be expected to be private. Disclosure of channel bindings data by authentication mechanisms does not weaken TLS security, since the data is visible to eavesdroppers whenever non-confidential cipher suites are used, and active attackers already possess both sides' Finished messages.
+section: "10.2"
+topics:
+    - tls
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

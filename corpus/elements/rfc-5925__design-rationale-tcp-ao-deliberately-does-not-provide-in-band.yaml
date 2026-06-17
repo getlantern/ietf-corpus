@@ -1,0 +1,10 @@
+document: rfc-5925
+kind: design-rationale
+summary: TCP-AO deliberately does not provide in-band cryptographic key negotiation because TCP SYN segments lack sufficient remaining option space to handle such a negotiation (only ~25 bytes remain after common options, and TCP-AO itself consumes 16). Out-of-band MKT management is assumed instead.
+section: "1"
+topics:
+    - tcp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

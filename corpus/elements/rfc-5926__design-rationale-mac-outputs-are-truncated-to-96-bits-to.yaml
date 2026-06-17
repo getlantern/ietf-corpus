@@ -1,0 +1,9 @@
+document: rfc-5926
+kind: design-rationale
+summary: MAC outputs are truncated to 96 bits to balance security against message size, fitting the authentication tag within the TCP-AO option field. HMAC-SHA-1 produces 160 bits and AES-128-CMAC produces 128 bits before truncation.
+section: "3.2"
+topics:
+    - tcp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5925
+kind: state-machine
+summary: 'Per-connection TCP-AO maintains current_key and rnext_key. On outgoing SYN: find matching MKT; on receipt of a segment whose RNextKeyID matches an available MKT''s SendID and differs from current_key''s SendID, current_key transitions to the RNextKeyID MKT. ''Backing up'' to a previously used MKT is permitted to handle reordered segments.'
+section: "6.1"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

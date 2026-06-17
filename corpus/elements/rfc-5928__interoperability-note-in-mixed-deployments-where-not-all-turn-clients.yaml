@@ -1,0 +1,9 @@
+document: rfc-5928
+kind: interoperability-note
+summary: In mixed deployments where not all TURN clients support RFC 5928 resolution, administrators should publish both NAPTR records (for RFC 5928 clients) and standard SRV records _turn._udp, _turn._tcp, and _turns._tcp (for RFC 5766 clients) to ensure both resolution paths work correctly from the same DNS configuration.
+section: "4.3"
+topics:
+    - nat
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

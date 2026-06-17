@@ -1,0 +1,9 @@
+document: rfc-5925
+kind: protocol-element
+summary: 'MKT key change coordination uses two per-connection pointers: current_key (the MKT used to authenticate outgoing segments, its SendID inserted as TCP-AO KeyID) and rnext_key (the preferred incoming MKT, its RecvID inserted as TCP-AO RNextKeyID). current_key is updated by TCP-AO on receipt; rnext_key is updated only by user/management intervention.'
+section: "6.1"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

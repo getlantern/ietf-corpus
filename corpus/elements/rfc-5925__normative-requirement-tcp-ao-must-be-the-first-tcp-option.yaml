@@ -1,0 +1,10 @@
+document: rfc-5925
+kind: normative-requirement
+summary: TCP-AO MUST be the first TCP option processed on incoming segments, because its MAC calculation may include other option values that could change during option processing; this also protects other TCP options from spoofed segments.
+section: "7.5"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

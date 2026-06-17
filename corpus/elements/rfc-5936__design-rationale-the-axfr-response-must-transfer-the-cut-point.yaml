@@ -1,0 +1,8 @@
+document: rfc-5936
+kind: design-rationale
+summary: The AXFR response MUST transfer the cut-point NS RRset registered with the zone rather than substituting the authoritative child NS set, because (1) servers cannot always detect inconsistencies locally, (2) exposing inconsistencies enables operators to diagnose delegation errors, and (3) a stable (zone, serial) → RR-set mapping is required for correct IXFR operation.
+section: "3.2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5939
+kind: design-rationale
+summary: Transport protocol capabilities must be listed explicitly in 'a=tcap' even when the same protocol appears in the 'm=' line, to guard against intermediaries that rewrite 'm=' lines while passing unknown attributes through unchanged. An implicit capability tied to the 'm=' line could become inconsistent after such modification.
+section: 3.4.2
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

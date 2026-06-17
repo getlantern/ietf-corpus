@@ -1,0 +1,9 @@
+document: rfc-5936
+kind: design-rationale
+summary: AXFR is TCP-only because reliability is essential for zone transfer accuracy. Although EDNS0 and small-zone scenarios (web hosting, ENUM) would make UDP seem attractive, aspects of AXFR sessions—such as multi-message responses—are not easily translated to UDP, so this document deliberately does not extend AXFR to UDP.
+section: "4.2"
+topics:
+    - dns
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

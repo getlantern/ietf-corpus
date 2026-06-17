@@ -1,0 +1,11 @@
+document: rfc-5929
+kind: normative-requirement
+summary: Applications utilizing 'tls-unique' channel binding with TLS implementations lacking support for secure renegotiation (RFC 5746) MUST ensure that ChangeCipherSpec has been used in all renegotiations prior to application-layer authentication, and MUST discard any knowledge learned from the server prior to completion of authentication.
+section: "10"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

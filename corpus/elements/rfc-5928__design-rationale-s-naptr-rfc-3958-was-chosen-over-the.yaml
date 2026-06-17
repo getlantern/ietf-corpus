@@ -1,0 +1,9 @@
+document: rfc-5928
+kind: design-rationale
+summary: S-NAPTR (RFC 3958) was chosen over the existing RFC 5766 DNS SRV mechanism because SRV alone does not let TURN server administrators provision a preferred client-to-server transport protocol, nor allow clients to discover that preference. S-NAPTR with the 'RELAY' service tag and 'turn.udp'/'turn.tcp'/'turn.tls' protocol tags fills this gap.
+section: "1"
+topics:
+    - nat
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

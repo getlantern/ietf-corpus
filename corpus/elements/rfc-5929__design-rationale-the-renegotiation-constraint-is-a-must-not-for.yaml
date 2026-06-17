@@ -1,0 +1,9 @@
+document: rfc-5929
+kind: design-rationale
+summary: The renegotiation constraint is a MUST NOT for servers but only a SHOULD NOT for clients because TLS APIs generally expose server-side renegotiation control, while many client TLS stacks do not provide fine-grained control over when renegotiation occurs.
+section: "3.1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5935
+kind: design-rationale
+summary: OctetString is mapped to hexBinary rather than xs:string because xs:string cannot faithfully represent all valid octet values (0–255) in a way that provides easy human readability. The hexBinary canonical form reliably encodes arbitrary binary data.
+section: "5.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

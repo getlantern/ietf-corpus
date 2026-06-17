@@ -1,0 +1,10 @@
+document: rfc-5925
+kind: security-consideration
+summary: TCP-AO prevents replay attacks across connection instances by including both endpoint ISNs in the traffic key derivation context, ensuring that each connection instance generates unique traffic keys even when the same MKT and socket pair are reused. The 32-bit ISN space makes reuse unlikely except under reboot.
+section: 5.3.1
+topics:
+    - tcp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

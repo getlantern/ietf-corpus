@@ -1,0 +1,10 @@
+document: rfc-5934
+kind: wire-format
+summary: 'Signed TAMP messages are encapsulated as: ContentInfo { contentType id-signedData } containing SignedData { version=3, exactly one digestAlgorithm, encapContentInfo (eContentType=TAMP OID, eContent=DER TAMP message), optional certificates, optional CRLs, exactly one SignerInfo }.'
+section: "2"
+topics:
+    - security
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

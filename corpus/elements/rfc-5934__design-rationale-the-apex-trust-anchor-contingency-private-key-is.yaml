@@ -1,0 +1,9 @@
+document: rfc-5934
+kind: design-rationale
+summary: The apex trust anchor contingency private key is intended to be used at most once — only to sign an Apex Trust Anchor Update that replaces it. The contingency public key is stored encrypted; the decryption key is provided only inside the signed update, so possession of the decryption key alone is insufficient to forge an update.
+section: 1.2.1
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

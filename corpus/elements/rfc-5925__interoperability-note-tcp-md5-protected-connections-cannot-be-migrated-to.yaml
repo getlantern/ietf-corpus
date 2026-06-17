@@ -1,0 +1,9 @@
+document: rfc-5925
+kind: interoperability-note
+summary: TCP MD5-protected connections cannot be migrated to TCP-AO because TCP MD5 does not support changes to a connection's security algorithm once established. TCP-AO and TCP MD5 use different option Kind values (29 vs. 19) and MUST NOT be used simultaneously on the same connection.
+section: "8"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

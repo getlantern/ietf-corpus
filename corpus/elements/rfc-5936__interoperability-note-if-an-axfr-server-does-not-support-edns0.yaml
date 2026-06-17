@@ -1,0 +1,8 @@
+document: rfc-5936
+kind: interoperability-note
+summary: If an AXFR server does not support EDNS0, the client MUST retry without an OPT RR. There is no explicit EDNS0 non-support indicator; a FormErr(1) response may be inferred as evidence of lack of EDNS0 support. Only the EXTENDED-RCODE field of the OPT RR is meaningful in the AXFR context.
+section: 2.1.5
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

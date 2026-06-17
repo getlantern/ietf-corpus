@@ -1,0 +1,10 @@
+document: rfc-5929
+kind: design-rationale
+summary: '''tls-server-end-point'' uses a hash of the server certificate rather than the certificate itself because some implementations need to track channel binding in kernel-mode memory, which is often at a premium. The hash produces manageably small channel binding data.'
+section: "4.1"
+topics:
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

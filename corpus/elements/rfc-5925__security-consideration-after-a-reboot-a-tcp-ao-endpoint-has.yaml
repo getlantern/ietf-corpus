@@ -1,0 +1,10 @@
+document: rfc-5925
+kind: security-consideration
+summary: After a reboot, a TCP-AO endpoint has lost its traffic keys, so TCP's RST mechanism cannot clear stale state on the peer. BGP connections without graceful restart SHOULD save traffic keys in persistent storage across reboots to mitigate this; otherwise keepalives eventually clear the state.
+section: "7.7"
+topics:
+    - tcp
+    - security
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

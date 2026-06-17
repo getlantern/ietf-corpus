@@ -1,0 +1,11 @@
+document: rfc-5925
+kind: normative-requirement
+summary: A TCP-AO implementation MUST default to ignoring incoming ICMPv4 Type 3 Codes 2–4 (protocol/port unreachable, fragmentation needed) and ICMPv6 Type 1 Codes 1 and 4 intended for synchronized TCP connections that match MKTs, to prevent ICMP-based connection teardown attacks.
+section: "7.8"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

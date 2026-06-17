@@ -1,0 +1,11 @@
+document: rfc-5929
+kind: security-consideration
+summary: The 'tls-server-end-point' channel binding type has a hash algorithm agility concern because it uses a hash beyond TLS's own cryptography. The algorithm is derived from the server certificate's signature algorithm (defaulting to SHA-256 for MD5/SHA-1), making it hash-agile via PKIX and TLS.
+section: "10.1"
+topics:
+    - tls
+    - security
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

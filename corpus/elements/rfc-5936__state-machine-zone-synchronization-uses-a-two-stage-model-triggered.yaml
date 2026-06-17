@@ -1,0 +1,8 @@
+document: rfc-5936
+kind: state-machine
+summary: 'Zone synchronization uses a two-stage model: triggered by SOA serial change or DNS NOTIFY, the AXFR session transfers and saves zone data; upon successful completion and sanity checks, the data is atomically loaded for serving; if any error is detected, the erroneous data is deleted and the previous zone version continues to be served.'
+section: "6"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

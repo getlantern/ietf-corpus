@@ -1,0 +1,10 @@
+document: rfc-5929
+kind: normative-requirement
+summary: Server applications MUST NOT request TLS renegotiation during phases of the application protocol during which application-layer authentication occurs, to avoid the synchronization problem where 'tls-unique' channel binding data changes between authentication initiation and processing.
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5926
+kind: protocol-element
+summary: KDF_AES_128_CMAC uses AES-CMAC-PRF-128 with a 128-bit output length. To handle variable-length Master_Keys, if the key is not exactly 16 octets, a derived 128-bit key K is first produced via AES-CMAC with an all-zero key applied to the Master_Key; K is then used as the AES-CMAC key for the actual KDF computation.
+section: 3.1.1.2
+topics:
+    - tcp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

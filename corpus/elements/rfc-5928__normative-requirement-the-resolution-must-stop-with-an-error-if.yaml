@@ -1,0 +1,10 @@
+document: rfc-5928
+kind: normative-requirement
+summary: 'The resolution MUST stop with an error if: <secure>=false and <transport>=''udp'' but the application does not support UDP; <secure>=false and <transport>=''tcp'' but TCP is unsupported; <secure>=true and <transport>=''udp''; <secure>=true and <transport>=''tcp'' but TLS is unsupported; <secure>=true and <transport> is empty but TLS is unsupported; or <transport> is defined but unknown.'
+section: "3"
+rfc2119_level: MUST
+topics:
+    - nat
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

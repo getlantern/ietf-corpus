@@ -1,0 +1,10 @@
+document: rfc-5928
+kind: normative-requirement
+summary: 'Step 3: If <host> is a domain name and <port> is undefined but <transport> is defined, the RFC 2782 SRV algorithm is applied using <host> as Name, ''turn''/''turns'' as Service based on <secure>, and <transport> as Protocol. If the SRV query returns no RR, the default RFC 5766 port MUST be used and A and AAAA queries MUST be performed.'
+section: "3"
+rfc2119_level: MUST
+topics:
+    - nat
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
