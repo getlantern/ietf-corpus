@@ -1,0 +1,9 @@
+document: rfc-6030
+kind: security-consideration
+summary: PSKC integrity is provided by the <ValueMAC> mechanism when encryption algorithms without built-in integrity (e.g., AES-CBC) are used, and by XML digital signatures over the entire <KeyContainer>. Both mechanisms may be combined; the MAC protects individual encrypted values while the signature covers the whole document.
+section: "13.2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6022
+kind: design-rationale
+summary: The locks container uses 'presence' semantics — it only exists when the datastore is actually locked — rather than using an empty list or boolean flag, which cleanly models the absence-of-lock state and avoids requiring clients to parse empty lock structures.
+section: "5"
+topics:
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6026
+kind: normative-requirement
+summary: A server transaction MUST NOT discard transaction state based solely on encountering a non-recoverable transport error when sending a response; the state machine MUST remain in its current state, allowing timers to eventually drive it to 'Terminated'.
+section: "7.1"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-6026
+kind: interoperability-note
+summary: RFC 2543 clients do not include a unique branch parameter, so the transaction ID calculation for INVITE and ACK requests will be the same. When an ACK matching an INVITE server transaction lacks the magic cookie, the 'Accepted' state must be checked and the ACK passed to the TU rather than absorbed.
+section: "6"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

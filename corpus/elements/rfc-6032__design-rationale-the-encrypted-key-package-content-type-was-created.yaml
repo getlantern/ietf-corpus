@@ -1,0 +1,10 @@
+document: rfc-6032
+kind: design-rationale
+summary: 'The encrypted key package content type was created to close an authorization gap in the CMS Content Constraints (CCC) extension: CCC can authorize originators of plaintext key packages but cannot constrain EncryptedData, EnvelopedData, or AuthEnvelopedData layers. A distinct content type allows the CCC OID to be placed in an originator''s certificate to authorize production of encrypted key packages at intermediate relay points that cannot decrypt the content.'
+section: "1"
+topics:
+    - crypto
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6035
+kind: interoperability-note
+summary: RFC 3611 encodes loss/discard rates as 8-bit fixed-point numbers (value = (losses/expected) * 256). To map these to vq-rtcpxr percentage parameters, divide the RFC 3611 value by 256 and take the integer part.
+section: 4.6.2.1
+topics:
+    - sip
+    - voip
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

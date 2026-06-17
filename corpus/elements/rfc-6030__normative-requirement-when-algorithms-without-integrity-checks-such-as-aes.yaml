@@ -1,0 +1,10 @@
+document: rfc-6030
+kind: normative-requirement
+summary: When algorithms without integrity checks (such as AES-128-CBC) are used, a keyed-MAC value MUST be placed in the <ValueMAC> element, and the MAC algorithm type MUST be set in the <MACMethod> element. The MAC key MUST be randomly generated or pre-agreed, and if randomly generated, MUST be encrypted with the same encryption key.
+section: 6.1.1
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

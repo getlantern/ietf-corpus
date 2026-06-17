@@ -1,0 +1,10 @@
+document: rfc-6032
+kind: design-rationale
+summary: In CCC terminology, the EncryptedKeyPackage is a leaf node. This means additional authorization checks are required after decryption of the inner content (e.g., verifying the SignedData signature and certification path on the inner symmetric key package), enabling multi-layer authorization chains.
+section: "1"
+topics:
+    - crypto
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

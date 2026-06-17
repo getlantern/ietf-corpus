@@ -1,0 +1,9 @@
+document: rfc-6026
+kind: design-rationale
+summary: RFC 3261 required immediate destruction of INVITE server transaction state on forwarding a 2xx response and stateless forwarding of stray responses. Implementation experience showed this causes INVITE retransmissions to be treated as new requests, and the stateless forwarding requirement is exploitable as an anonymizing proxy for DoS attacks or non-SIP content tunneling.
+section: "3"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

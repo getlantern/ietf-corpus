@@ -1,0 +1,8 @@
+document: rfc-6026
+kind: state-machine
+summary: The INVITE client transaction gains a new 'Accepted' state. A 2xx response received in 'Calling' or 'Proceeding' causes transition to 'Accepted' with Timer M set to 64*T1 and the 2xx passed to the TU. Further 2xx responses in 'Accepted' are also passed to the TU. Timer M firing causes transition to 'Terminated'.
+section: "7.2"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

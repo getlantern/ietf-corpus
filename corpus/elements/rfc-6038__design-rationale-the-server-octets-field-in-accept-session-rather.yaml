@@ -1,0 +1,8 @@
+document: rfc-6038
+kind: design-rationale
+summary: The Server octets field in Accept Session (rather than a longer SID echo) was chosen because the full SID is 16 octets and does not normally appear in TWAMP-Test packets; a compact 2-octet field allows the Server to signal a short identifier for round-trip embedding without bloating test packets.
+section: "4.3"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

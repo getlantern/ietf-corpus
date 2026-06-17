@@ -1,0 +1,9 @@
+document: rfc-6022
+kind: design-rationale
+summary: 'Schema retrieval is separated into two steps: the <get> operation retrieves the schema list metadata (identifier, version, format, location) without schema content, while the <get-schema> operation or external URIs (FTP, HTTP) are used to retrieve the actual schema content. This avoids embedding potentially large schemas in ordinary get responses.'
+section: "4.1"
+topics:
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-6038
+kind: design-rationale
+summary: The Symmetrical Size feature was added because TWAMP recommends padding truncation to achieve equal packet sizes but does not guarantee the Session-Reflector will perform truncation, and truncation is impossible when there is insufficient padding. A new Session-Sender format that explicitly embeds the size difference as MBZ octets removes this uncertainty.
+section: "1"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

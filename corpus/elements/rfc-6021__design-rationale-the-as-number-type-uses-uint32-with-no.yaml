@@ -1,0 +1,9 @@
+document: rfc-6021
+kind: design-rationale
+summary: The as-number type uses uint32 with no range restriction rather than a 16-bit type, explicitly to support BGP's four-octet AS number extension (RFC 4893) which enlarged the AS space from 16 to 32 bits. Using uint32 unconditionally avoids a future breaking change to the type.
+section: "4"
+topics:
+    - yang
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

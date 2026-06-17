@@ -1,0 +1,9 @@
+document: rfc-6038
+kind: normative-requirement
+summary: When a Server does not require octets returned in TWAMP-Test packets, it MUST send all zeros in the Server octets field. When it does require octets returned, it MUST send a non-zero value, and the Session-Sender MUST include those octets at the beginning of the Packet Padding (to be reflected) field.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

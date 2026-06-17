@@ -1,0 +1,10 @@
+document: rfc-6034
+kind: design-rationale
+summary: GLOP (RFC 3180) embeds a 2-byte AS number in 233/8, yielding only 256 addresses per AS and failing with 4-byte AS numbers (RFC 4893). The UBM mechanism instead ties multicast space to unicast prefixes at subnet granularity, eliminating the need for an inter-domain multicast address allocation protocol and aligning IPv4 practice more closely with IPv6 RFC 3306.
+section: "1"
+topics:
+    - multicast
+    - ip
+    - design-rationale
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

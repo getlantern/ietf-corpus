@@ -1,0 +1,9 @@
+document: rfc-6026
+kind: normative-requirement
+summary: When receiving an ACK matching an existing INVITE server transaction that lacks the RFC 3261 magic cookie branch parameter, the transaction MUST be checked for the 'Accepted' state; if in that state, the ACK must be passed directly to the TU rather than absorbed, to handle RFC 2543 clients.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-6026
+kind: state-machine
+summary: The INVITE server transaction gains a new 'Accepted' state. Transition from 'Proceeding' to 'Accepted' occurs when the TU issues a 2xx response; Timer L is set to 64*T1. In 'Accepted', INVITE retransmissions are absorbed (not passed to TU), TU-originated 2xx retransmissions are forwarded to transport, and ACKs are passed to the TU. Timer L firing causes transition to 'Terminated'.
+section: "7.1"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
