@@ -1,0 +1,10 @@
+document: rfc-6110
+kind: normative-requirement
+summary: When a YANG derived type is used with additional restrictions, its definition MUST be expanded in place so that only the ancestor built-in type appears in the hybrid schema, combined with all restrictions from the full type derivation chain. If the expanded type (or an ancestor) contains a 'default' statement, the @nma:default attribute arising from the expansion MUST be attached to the pattern where the expansion occurs.
+section: 9.2.2
+rfc2119_level: MUST
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

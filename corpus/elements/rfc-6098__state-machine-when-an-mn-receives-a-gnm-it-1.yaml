@@ -1,0 +1,9 @@
+document: rfc-6098
+kind: state-machine
+summary: 'When an MN receives a GNM it: (1) checks for exactly one authorization-enabling AE and validates the Authenticator; (2) validates the Identification field against the replay-protection context; (3) checks that all extensions are permitted for GNM use; (4) if all checks pass, processes the message and optionally sends a GNAM with Code 0 if the A bit is set. Failure at any step causes silent discard or rejection with a specific Code.'
+section: 4.5.1
+topics:
+    - mobility
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

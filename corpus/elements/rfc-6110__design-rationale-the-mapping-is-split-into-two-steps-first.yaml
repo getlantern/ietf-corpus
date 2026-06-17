@@ -1,0 +1,9 @@
+document: rfc-6110
+kind: design-rationale
+summary: 'The mapping is split into two steps: first, YANG modules are translated to a single intermediate ''hybrid schema'' (a RELAX NG schema with foreign-namespace annotations) that cannot be used for validation directly; second, the hybrid schema is transformed on demand into a coordinated set of DSDL schemas tailored to a specific document type and context. This avoids maintaining a parallel set of long-lived schemas alongside the YANG source modules.'
+section: "3"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

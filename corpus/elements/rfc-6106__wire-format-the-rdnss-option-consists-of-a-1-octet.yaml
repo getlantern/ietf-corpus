@@ -1,0 +1,10 @@
+document: rfc-6106
+kind: wire-format
+summary: The RDNSS option consists of a 1-octet Type (value 25), a 1-octet Length in units of 8 octets (minimum 3 for one address, each additional address adds 2), a 2-octet Reserved field, a 32-bit Lifetime, and one or more 128-bit IPv6 recursive DNS server addresses. The number of addresses equals (Length - 1) / 2.
+section: "5.1"
+topics:
+    - dns
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

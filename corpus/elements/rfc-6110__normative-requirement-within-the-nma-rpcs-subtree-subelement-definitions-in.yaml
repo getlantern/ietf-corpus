@@ -1,0 +1,10 @@
+document: rfc-6110
+kind: normative-requirement
+summary: Within the <nma:rpcs> subtree, subelement definitions in the hybrid schema MUST follow the order specified in the source YANG module. For 'list' statements, all keys MUST come before other subelements and in the key declaration order; remaining subelements MUST be enclosed in <rng:interleave>. Otherwise, all subelement definitions MUST be enclosed in <rng:interleave>.
+section: "10"
+rfc2119_level: MUST
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

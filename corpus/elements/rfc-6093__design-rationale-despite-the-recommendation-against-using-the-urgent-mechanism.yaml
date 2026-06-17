@@ -1,0 +1,8 @@
+document: rfc-6093
+kind: design-rationale
+summary: Despite the recommendation against using the urgent mechanism, TCP implementations are required to retain support for it. The rationale is to preserve backward compatibility with the few legacy applications (e.g., Telnet, FTP) that depend on urgent indications, even though those applications may face difficulties with middleboxes.
+section: "5"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

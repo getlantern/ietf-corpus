@@ -1,0 +1,8 @@
+document: rfc-6093
+kind: state-machine
+summary: A TCP receiver enters 'urgent mode' whenever the urgent pointer is in advance of RCV.NXT; it returns to 'normal mode' when RCV.NXT catches up to the urgent pointer. Data received as normal data may retroactively become urgent data if an urgent indication arrives in a subsequent segment before that data is consumed.
+section: "2.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

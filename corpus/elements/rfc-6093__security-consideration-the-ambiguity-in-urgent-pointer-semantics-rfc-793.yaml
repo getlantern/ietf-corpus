@@ -1,0 +1,9 @@
+document: rfc-6093
+kind: security-consideration
+summary: The ambiguity in urgent pointer semantics (RFC 793 section 3.1 vs. RFC 1122), combined with OOB vs. in-line delivery differences across implementations, makes it difficult for NIDS to track the application-layer data stream, enabling false positives and false negatives. This has been exploited as a NIDS evasion technique.
+section: "7"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

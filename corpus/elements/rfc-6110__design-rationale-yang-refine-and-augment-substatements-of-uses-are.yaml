@@ -1,0 +1,9 @@
+document: rfc-6110
+kind: design-rationale
+summary: YANG 'refine' and 'augment' substatements of 'uses' are handled by fully expanding the referenced grouping in place and applying the modifications, rather than mapping them to RELAX NG override mechanisms. This is because RELAX NG modifications only apply at the topmost level of a named pattern, whereas YANG can refine nodes at arbitrary depths.
+section: 9.2.1
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-6093
+kind: interoperability-note
+summary: RFC 793 section 3.1 states the Urgent Pointer points to the octet following urgent data, while section 3.9 of the same RFC implies it points to the last byte of urgent data (SND.NXT-1). RFC 1011 and RFC 1122 clarified it as pointing to the last octet of urgent data, but virtually all implementations have always used the RFC 793 section 3.1 semantics (last+1 interpretation).
+section: "2.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

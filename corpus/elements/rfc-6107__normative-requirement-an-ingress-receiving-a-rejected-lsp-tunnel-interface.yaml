@@ -1,0 +1,10 @@
+document: rfc-6107
+kind: normative-requirement
+summary: An ingress receiving a rejected LSP_TUNNEL_INTERFACE_ID object on a Resv SHOULD respond with a PathTear. The ingress MAY send a ResvErr to allow the egress to correct the error, but MUST guard against protocol loops if the egress responds with the same problematic object.
+section: "3.6"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

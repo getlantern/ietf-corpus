@@ -1,0 +1,9 @@
+document: rfc-6098
+kind: security-consideration
+summary: 'Nonce-based replay protection uses the high-order 32 bits of the Identification field for the receiver''s nonce and the low-order 32 bits for the sender''s nonce. Each GNAM carries a new receiver nonce; the sender uses this nonce in its next GNM''s high-order bits. The protocol is self-synchronizing: a rejected GNM always yields a fresh nonce in the GNAM.'
+section: 7.1.2
+topics:
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

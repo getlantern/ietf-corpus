@@ -1,0 +1,10 @@
+document: rfc-6110
+kind: normative-requirement
+summary: All implicit containers and leaf nodes that inherit their default value from a typedef (without a direct @nma:default attribute) MUST be marked in the hybrid schema with the attribute @nma:implicit='true'. A leaf is implicit if and only if it has a default value; a container is implicit if and only if it lacks the 'presence' substatement, none of its children are mandatory, and at least one child is implicit.
+section: 9.1.2
+rfc2119_level: MUST
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

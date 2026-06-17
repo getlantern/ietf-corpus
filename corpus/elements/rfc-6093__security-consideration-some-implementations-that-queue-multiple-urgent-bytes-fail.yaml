@@ -1,0 +1,9 @@
+document: rfc-6093
+kind: security-consideration
+summary: Some implementations that queue multiple urgent bytes fail to enforce any memory limit on the urgent data queue, making them vulnerable to trivial resource exhaustion (DoS) attacks. Implementations SHOULD enforce a limit on queued urgent data.
+section: "3.3"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

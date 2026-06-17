@@ -1,0 +1,9 @@
+document: rfc-6093
+kind: security-consideration
+summary: Packet scrubbers can be configured to clear the URG bit and zero the Urgent Pointer, forcing urgent data in-line and mitigating NIDS evasion. However, this may cause interoperability problems or undesired behavior in applications (such as Telnet and FTP) that rely on the TCP urgent mechanism.
+section: "7"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

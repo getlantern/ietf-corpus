@@ -1,0 +1,8 @@
+document: rfc-6093
+kind: interoperability-note
+summary: Virtually all TCP implementations deliver the last byte of urgent data out-of-band via recv(2) with MSG_OOB, contrary to the IETF specification that urgent data be delivered in-line. Most implementations provide the SO_OOBINLINE socket option to override this broken default and restore in-line delivery.
+section: "3.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

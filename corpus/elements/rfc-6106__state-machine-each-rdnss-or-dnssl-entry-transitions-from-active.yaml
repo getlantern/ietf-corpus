@@ -1,0 +1,10 @@
+document: rfc-6106
+kind: state-machine
+summary: Each RDNSS or DNSSL entry transitions from active to expired when the current system time exceeds its Expiration-time (set to current time plus Lifetime at receipt). On expiration the entry is deleted from both the DNS Repository and the Resolver Repository. A received Lifetime of zero triggers immediate deletion.
+section: "6.1"
+topics:
+    - dns
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

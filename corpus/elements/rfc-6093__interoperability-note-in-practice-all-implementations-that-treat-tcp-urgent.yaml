@@ -1,0 +1,8 @@
+document: rfc-6093
+kind: interoperability-note
+summary: In practice, all implementations that treat TCP urgent indications as an OOB mechanism maintain only a single-byte buffer for urgent data. If a new urgent indication arrives before the application reads the pending OOB byte, the pending byte is discarded (overwritten). This contradicts the RFC 1122 requirement to support urgent data sequences of any length.
+section: "3.3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

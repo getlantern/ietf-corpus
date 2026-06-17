@@ -1,0 +1,9 @@
+document: rfc-6107
+kind: design-rationale
+summary: A unified approach using the LSP_TUNNEL_INTERFACE_ID object with different C-Types for numbered and unnumbered, IPv4 and IPv6 links was chosen to avoid implementation complexity while supporting all address families. The Actions field allows the ingress to explicitly communicate link usage to the egress during signaling, eliminating the need for out-of-band coordination or inference from IGP advertisements.
+section: 2.1–2.2
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

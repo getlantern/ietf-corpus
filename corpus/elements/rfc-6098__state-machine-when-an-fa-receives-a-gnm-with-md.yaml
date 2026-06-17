@@ -1,0 +1,9 @@
+document: rfc-6098
+kind: state-machine
+summary: 'When an FA receives a GNM with MD=0 it relays it to the MN: it MAY validate the FA-HA AE; if valid (or absent), it MUST relay the GNM to the MN''s home address, MUST NOT modify fields up through the MN-HA AE, MUST process and remove extensions after the MN-HA AE, and MAY append its own non-auth extensions followed by MN-FA AE. With MD=1 (FA is target), the FA-HA AE MUST be validated before processing.'
+section: 4.6.1
+topics:
+    - mobility
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

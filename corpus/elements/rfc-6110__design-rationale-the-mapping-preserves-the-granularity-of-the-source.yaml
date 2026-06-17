@@ -1,0 +1,9 @@
+document: rfc-6110
+kind: design-rationale
+summary: The mapping preserves the granularity of the source YANG module rather than flattening it to a RELAX NG flat style. YANG 'augment' and 'refine' can address arbitrary schema depths via path expressions, so the fine granularity needed for RELAX NG extensibility is unnecessary; generating ad hoc schemas also makes flattening unnecessary since the schemas are not expected to be externally extended.
+section: "8.3"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

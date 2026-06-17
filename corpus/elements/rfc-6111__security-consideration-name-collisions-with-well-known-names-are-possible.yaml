@@ -1,0 +1,8 @@
+document: rfc-6111
+kind: security-consideration
+summary: Name collisions with well-known names are possible because RFC 4120 does not reserve names with special meanings. If a well-known name is not supported, authentication MUST fail; otherwise, access may be granted unintentionally. A KDC supporting this spec but not anonymous authentication could inadvertently grant anonymous users access if a principal is created with the anonymous principal's name.
+section: "4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6110
+kind: normative-requirement
+summary: The mapping MUST use specified rules to determine whether each YANG node is optional, and if so wrap it in <rng:optional>. However, alternatives inside <rng:choice> MUST NOT be defined as optional individually; if a choice is not mandatory, the entire <rng:choice> pattern MUST be wrapped in <rng:optional>.
+section: 9.1.1
+rfc2119_level: MUST
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

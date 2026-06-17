@@ -1,0 +1,10 @@
+document: rfc-6098
+kind: security-consideration
+summary: Timestamp-based replay protection uses the Identification field formatted as a 64-bit NTP timestamp. The receiver checks that the timestamp is close enough to its own clock (default tolerance 7 seconds, SHOULD be greater than 3 seconds) and that it is greater than all previously accepted timestamps from that sender. If the timestamp is invalid, the receiver copies only the low-order 32 bits and returns its own high-order 32 bits for clock re-synchronization, replying with Code 69/133/197.
+section: 7.1.1
+topics:
+    - mobility
+    - security
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6107
+kind: normative-requirement
+summary: An egress LSR that cannot accept parameters in a received LSP_TUNNEL_INTERFACE_ID object SHOULD respond with a PathErr using error code 38 (LSP Hierarchy Issue) and the appropriate error value. If the error arises after successful LSP setup, the PathErr SHOULD be sent with the Path_State_Removed flag clear so the LSP remains operational.
+section: "3.6"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

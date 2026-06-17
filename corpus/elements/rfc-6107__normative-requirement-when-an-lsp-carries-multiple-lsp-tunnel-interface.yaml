@@ -1,0 +1,10 @@
+document: rfc-6107
+kind: normative-requirement
+summary: When an LSP carries multiple LSP_TUNNEL_INTERFACE_ID objects (to offer capacity to multiple networks), each instance MUST have a different IGP Instance Identifier. A Path/Resv MUST NOT contain more than one C-Type 1 object; if one is present, all other instances MUST include an IGP Instance Identifier TLV with a non-0xffffffff value identifying a different IGP instance.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

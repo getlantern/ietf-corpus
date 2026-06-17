@@ -1,0 +1,8 @@
+document: rfc-6093
+kind: interoperability-note
+summary: Linux's net.ipv4.tcp_stdurg sysctl, intended to switch to RFC 1122 urgent pointer semantics, applies only to incoming segments and not outgoing segments. This asymmetry means a host with this sysctl enabled cannot interoperate with itself when both sender and receiver run on the same machine.
+section: "3.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
