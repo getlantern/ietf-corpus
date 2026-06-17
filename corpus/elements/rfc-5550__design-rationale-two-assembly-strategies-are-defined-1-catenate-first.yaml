@@ -1,0 +1,8 @@
+document: rfc-5550
+kind: design-rationale
+summary: 'Two assembly strategies are defined: (1) CATENATE-first: the client assembles the full message on the IMAP server using CATENATE, obtains a URLAUTH token, and gives it to the Submission Server via BURL; preferred when an fcc copy is needed. (2) BURL/BDAT inline: the client sends header text via BDAT and references IMAP body parts via BURL without prior CATENATE; preferred when no server-side copy is needed.'
+section: "8.4"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

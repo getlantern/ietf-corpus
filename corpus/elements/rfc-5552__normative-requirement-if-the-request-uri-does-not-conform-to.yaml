@@ -1,0 +1,10 @@
+document: rfc-5552
+kind: normative-requirement
+summary: If the Request-URI does not conform to this specification, the server MUST return 400 Bad Request. If a URI parameter is repeated, the request MUST be rejected with 400. If no 'voicexml' parameter is present and no default is used, the server MUST return 400 and SHOULD include a Warning header with code 399. If the VoiceXML document cannot be fetched or parsed, the server MUST return 500.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - sip
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

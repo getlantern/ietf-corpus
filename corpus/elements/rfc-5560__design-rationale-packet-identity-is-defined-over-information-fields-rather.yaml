@@ -1,0 +1,9 @@
+document: rfc-5560
+kind: design-rationale
+summary: Packet identity is defined over information fields rather than all bits, because duplicated copies routed along different paths may have different TTL values. This design choice ensures that legitimate duplicates are counted even when path-dependent header fields differ.
+section: "2.5"
+topics:
+    - measurement
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5552
+kind: protocol-element
+summary: 'Consultation transfer (attended transfer, RFC 5359) resembles bridge transfer but RTP streams are not mixed. The VoiceXML Media Server sends a REFER to the Caller with a Replaces: header (RFC 3891) referencing the Callee dialog, causing the Caller to directly call the Callee. Success is determined by a NOTIFY with 200 OK sipfrag; a non-2xx sipfrag causes the transfer item variable to be set to ''unknown''.'
+section: "6.3"
+topics:
+    - sip
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

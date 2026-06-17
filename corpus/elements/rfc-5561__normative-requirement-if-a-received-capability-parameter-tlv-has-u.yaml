@@ -1,0 +1,10 @@
+document: rfc-5561
+kind: normative-requirement
+summary: If a received Capability Parameter TLV has U-bit=1 and is unsupported, the receiver MUST silently ignore the TLV and allow session establishment. If U-bit=0 and the capability is unsupported, the receiver SHOULD send a Notification with Status Code Unsupported Capability before terminating the session.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

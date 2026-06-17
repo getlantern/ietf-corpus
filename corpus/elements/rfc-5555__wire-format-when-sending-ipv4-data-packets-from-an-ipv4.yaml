@@ -1,0 +1,11 @@
+document: rfc-5555
+kind: wire-format
+summary: 'When sending IPv4 data packets from an IPv4-only visited network, the format is: outer IPv4 header (src=V4CoA, dst=HA_V4ADDR), optional UDP header (if NAT detected or forced), inner IPv4 header (src=V4HoA, dst=V4CN), upper-layer protocols. The UDP header is omitted when IP-in-IP is sufficient.'
+section: 4.4.3
+topics:
+    - mobility
+    - ip
+    - nat
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

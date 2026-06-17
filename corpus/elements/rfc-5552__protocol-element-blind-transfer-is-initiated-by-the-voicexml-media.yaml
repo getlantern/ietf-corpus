@@ -1,0 +1,9 @@
+document: rfc-5552
+kind: protocol-element
+summary: Blind transfer is initiated by the VoiceXML Media Server via a REFER message (RFC 3515) on the original SIP dialog, with the Refer-To header containing the destination URI. On 2xx response to REFER, the server throws connection.disconnect.transfer and terminates the session with BYE. Non-2xx responses map to specific VoiceXML events (e.g., 404→error.connection.baddestination, 405→error.unsupported.transfer.blind).
+section: "6.1"
+topics:
+    - sip
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

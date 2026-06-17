@@ -1,0 +1,10 @@
+document: rfc-5550
+kind: security-consideration
+summary: When using BURL, the URLAUTH token transmitted to the Submission Server must be protected against interception to prevent replay attacks that could expose message content. Both the IMAP session issuing GENURLAUTH and the submission path must be TLS-protected. Submission Servers SHOULD use TLS-protected IMAP connections when fetching content via URLAUTH.
+section: "10.2"
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

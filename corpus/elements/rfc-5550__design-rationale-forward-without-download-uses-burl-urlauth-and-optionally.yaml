@@ -1,0 +1,8 @@
+document: rfc-5550
+kind: design-rationale
+summary: Forward without download uses BURL+URLAUTH (and optionally CATENATE) so that the SMTP submit server fetches message content directly from the IMAP store. This avoids the client downloading and re-uploading large attachments, which is prohibitive over low-bandwidth or high-latency mobile links. A single submission protocol is preserved rather than layering a separate forwarding protocol onto IMAP.
+section: "8.1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

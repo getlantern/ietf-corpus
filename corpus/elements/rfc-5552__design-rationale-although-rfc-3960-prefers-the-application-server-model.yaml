@@ -1,0 +1,10 @@
+document: rfc-5552
+kind: design-rationale
+summary: 'Although RFC 3960 prefers the Application Server model for early media over the Gateway model, the Gateway model is used here because forking — the primary issue with it — is significantly less common when issuing requests to VoiceXML Media Servers: they respond with 200 OK within hundreds of milliseconds, making them unlikely forking targets. Additionally, no media packets are generated until ACK receipt, eliminating the ringing tone generation problem.'
+section: "3.2"
+topics:
+    - sip
+    - voip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

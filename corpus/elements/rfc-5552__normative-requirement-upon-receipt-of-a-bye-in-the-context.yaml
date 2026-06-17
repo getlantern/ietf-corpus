@@ -1,0 +1,10 @@
+document: rfc-5552
+kind: normative-requirement
+summary: Upon receipt of a BYE in the context of an existing VoiceXML Session, the VoiceXML Media Server MUST send a 200 OK response and MUST throw a 'connection.disconnect.hangup' event to the VoiceXML application. If a Reason header (RFC 3326) is present, its value is provided via the '_message' variable in the catch element's anonymous variable scope.
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - sip
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

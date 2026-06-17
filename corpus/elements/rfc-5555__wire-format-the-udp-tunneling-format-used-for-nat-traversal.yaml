@@ -1,0 +1,11 @@
+document: rfc-5555
+kind: wire-format
+summary: 'The UDP tunneling format used for NAT traversal orders headers as: outer IPv4/v6, UDP, inner IP (v4 or v6), then upper-layer headers. An ESP-secured variant inserts an ESP header between UDP and the inner IP header. The receiver inspects the IP version field following the UDP header to determine the inner protocol.'
+section: "4.1"
+topics:
+    - mobility
+    - nat
+    - udp
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
