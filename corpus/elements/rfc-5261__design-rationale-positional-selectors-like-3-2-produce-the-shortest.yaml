@@ -1,0 +1,6 @@
+document: rfc-5261
+kind: design-rationale
+summary: 'Positional selectors like ''*/*[3]/*[2]'' produce the shortest selector strings but are fragile: when sibling elements are removed or inserted, positional indexes shift for subsequent operations. Named selectors with attribute predicates like ''doc[@sel="foo"]'' are safer for auto-diff tools despite producing larger diff documents.'
+section: "7"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

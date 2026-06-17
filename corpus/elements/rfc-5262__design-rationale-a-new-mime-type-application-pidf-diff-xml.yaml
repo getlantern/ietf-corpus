@@ -1,0 +1,9 @@
+document: rfc-5262
+kind: design-rationale
+summary: A new MIME type 'application/pidf-diff+xml' was introduced rather than extending the existing 'application/pidf+xml' because PIDF was not originally designed for partial updates. The new type allows applications to negotiate partial update support via the Accept header, which would not have been possible without a distinct MIME type.
+section: "1"
+topics:
+    - realtime
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

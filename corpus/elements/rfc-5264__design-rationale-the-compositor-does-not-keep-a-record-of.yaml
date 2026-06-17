@@ -1,0 +1,9 @@
+document: rfc-5264
+kind: design-rationale
+summary: The compositor does not keep a record of applied patches, so there is no rollback to an earlier version when a partial publication expires; instead, the entire full state is cleared. This simplifies compositor state management at the cost of requiring a new full-state publication after expiry.
+section: 4.3.2
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

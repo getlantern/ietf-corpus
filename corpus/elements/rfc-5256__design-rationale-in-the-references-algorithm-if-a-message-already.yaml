@@ -1,0 +1,8 @@
+document: rfc-5256
+kind: design-rationale
+summary: In the REFERENCES algorithm, if a message already has a parent when processing step 1.A, the existing link is not changed, because the References header may have been truncated by an MUA. If a message already has a parent in step 1.B, the existing link is broken in favor of the new one, as this is more likely to be the correct immediate parent.
+section: "3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

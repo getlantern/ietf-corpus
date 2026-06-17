@@ -1,0 +1,9 @@
+document: rfc-5263
+kind: design-rationale
+summary: The version counter is not reset on subscription refresh (only on termination) so that the PA and watcher stay synchronized even across SUBSCRIBE refreshes. If the PA reverts to pidf-diff+xml after using another content type, the counter continues incrementing from the last value rather than restarting, avoiding false-loss detection.
+section: "4.5"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

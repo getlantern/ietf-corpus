@@ -1,0 +1,9 @@
+document: rfc-5256
+kind: normative-requirement
+summary: Implementations of the REFERENCES threading algorithm MUST normalize any msg-id to avoid false non-matches due to differences in quoting. For example, <"01KF8JCEOCBS0045PS"@xxx.yyy.com> and <01KF8JCEOCBS0045PS@xxx.yyy.com> MUST be interpreted as the same Message ID. Message ID comparisons are case-sensitive.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

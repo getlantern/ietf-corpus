@@ -1,0 +1,10 @@
+document: rfc-5263
+kind: normative-requirement
+summary: On subsequent 'application/pidf-diff+xml' NOTIFYs, the watcher MUST compare the received 'version' with the local counter. If the received version is equal to or lower than the local value, the watcher SHOULD discard the document without further processing (treating it as a PA failure).
+section: "4.5"
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

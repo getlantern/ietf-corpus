@@ -1,0 +1,9 @@
+document: rfc-5261
+kind: security-consideration
+summary: This framework uses a restricted subset of XPath 1.0, making applications potentially vulnerable to XPath injection attacks that could reveal non-allowable content of an XML document. This risk is greatest with shared resources where per-user access is restricted. Implementors MUST sanitize input, for example by validating diff formats against the restrictive schemas defined in this document.
+section: "11"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

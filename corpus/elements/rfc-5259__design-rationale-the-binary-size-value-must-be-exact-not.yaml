@@ -1,0 +1,9 @@
+document: rfc-5259
+kind: design-rationale
+summary: 'The BINARY.SIZE value must be exact (not estimated) because prior experience with IMAP servers returning estimated RFC822.SIZE values caused interoperability problems: sizes smaller than actual caused data truncation with partial downloads, and sizes larger than actual misled clients about available storage.'
+section: "8.3"
+topics:
+    - email
+    - interoperability-note
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

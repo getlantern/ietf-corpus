@@ -1,0 +1,9 @@
+document: rfc-5263
+kind: state-machine
+summary: 'Watcher local state: (1) No subscription — watcher sends SUBSCRIBE with Accept including pidf-diff+xml. (2) Awaiting first NOTIFY — initializes version counter and local copy on receipt of <pidf-full>. (3) Active delta tracking — applies <pidf-diff> patches when version increments by exactly one; triggers re-subscribe on version gap > 1; discards document on version <= local. (4) Terminated — version counter reset.'
+section: "4.5"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

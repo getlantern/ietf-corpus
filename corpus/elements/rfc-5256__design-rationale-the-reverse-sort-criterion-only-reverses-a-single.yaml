@@ -1,0 +1,8 @@
+document: rfc-5256
+kind: design-rationale
+summary: The REVERSE sort criterion only reverses a single criterion and does not affect the implicit sequence-number tie-breaker. Consequently, reversing a multi-criterion sort requires placing REVERSE before each criterion individually. In general, it is faster and simpler for the client to reverse the final result list rather than issuing a new SORT command.
+section: "3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5263
+kind: security-consideration
+summary: 'A third party could inject a NOTIFY with partial state to cause the watcher to believe a notification was missed and request a full document (causing unnecessary load). This attack is no worse than injecting a NOTIFY with Subscription-State: terminated, which existing SIP security mechanisms already address.'
+section: "6"
+topics:
+    - security
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

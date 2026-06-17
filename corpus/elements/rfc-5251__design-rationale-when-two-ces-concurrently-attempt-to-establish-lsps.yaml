@@ -1,0 +1,9 @@
+document: rfc-5251
+kind: design-rationale
+summary: When two CEs concurrently attempt to establish LSPs to each other (creating a duplicate pair), the CE with the lower CPI value should terminate the LSP it originated. This optional, configurable tie-breaking rule avoids undesirable duplicate LSPs without requiring protocol negotiation.
+section: "4.2"
+topics:
+    - vpn
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

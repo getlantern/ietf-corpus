@@ -1,0 +1,9 @@
+document: rfc-5259
+kind: security-consideration
+summary: Conversions may present security threats including buffer overflows in media codecs, denial-of-service via requesting extremely large image scaling, or privilege escalation if the server's conversion library is vulnerable. Servers SHOULD refuse CPU-expensive conversions, SHOULD isolate conversion functions in a separate process, and SHOULD log client identity on APPEND and CONVERT operations.
+section: "13"
+topics:
+    - security
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
