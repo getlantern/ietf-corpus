@@ -1,0 +1,11 @@
+document: rfc-5575
+kind: protocol-element
+summary: VPN flow specification rules received via SAFI=134 apply only to traffic belonging to the VRF(s) into which they are imported via Route Target matching. Traffic from remote PEs is switched via MPLS by default and is not subject to flow-spec filtering. Contrary to the non-VPN behavior, flow rules are accepted by default when received from remote PE routers.
+section: "8"
+topics:
+    - bgp
+    - mpls
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

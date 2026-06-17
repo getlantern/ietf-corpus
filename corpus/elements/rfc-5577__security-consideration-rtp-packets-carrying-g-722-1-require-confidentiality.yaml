@@ -1,0 +1,10 @@
+document: rfc-5577
+kind: security-consideration
+summary: RTP packets carrying G.722.1 require confidentiality (via payload encryption), integrity protection, and source authentication. SRTP (RFC 3711) is recommended; IPsec and TLS are noted as alternatives. The payload format and decoder present no significant non-uniformity in receiver-side computational complexity and are unlikely to pose a denial-of-service threat.
+section: "6"
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

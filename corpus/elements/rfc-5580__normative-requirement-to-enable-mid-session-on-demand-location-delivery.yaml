@@ -1,0 +1,9 @@
+document: rfc-5580
+kind: normative-requirement
+summary: To enable mid-session on-demand location delivery, the RADIUS server MUST return a Requested-Location-Info Attribute with the FUTURE_REQUESTS flag set and instances of Basic-Location-Policy-Rules and Extended-Location-Policy-Rules in the Access-Accept. Upon receiving a CoA-Request with Service-Type 'Authorize Only', the NAS MUST include location information and echo the previously received policy rule attributes.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

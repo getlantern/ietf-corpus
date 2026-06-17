@@ -1,0 +1,9 @@
+document: rfc-5575
+kind: protocol-element
+summary: 'Traffic filtering rule ordering is deterministic and arrival-order-independent. Rules are compared component by component: the rule with the lowest numeric component type has higher precedence; for IP prefix types, the lowest IP value at the common prefix length wins, with most-specific prefix taking precedence on ties; for all other types, memcmp() determines ordering with the longer string having higher precedence on ties.'
+section: "5.1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

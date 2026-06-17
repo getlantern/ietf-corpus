@@ -1,0 +1,12 @@
+document: rfc-5566
+kind: normative-requirement
+summary: When R3 sends an Encapsulation SAFI indicating an IPsec tunnel type to R2, R3 SHOULD also send a corresponding IPsec Encapsulation SAFI update to R1 if both R1 and R2 may send data packets through R3 on the same interface. This ensures IPsec is required for all data packets on that interface, not just some.
+section: "3"
+rfc2119_level: SHOULD
+topics:
+    - bgp
+    - ipsec
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

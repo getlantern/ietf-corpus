@@ -1,0 +1,10 @@
+document: rfc-5568
+kind: security-consideration
+summary: FBU messages must be protected so that the PAR can verify the message was sent by an MN that legitimately owns the PCoA; this is achieved via the BADF option. Inter-access-router messages (HI/HAck) require a pre-established security association (e.g., via IKEv2) between PAR and NAR. When IPsec is used, appropriate SAD and SPD entries must be configured.
+section: "10"
+topics:
+    - security
+    - mobility
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

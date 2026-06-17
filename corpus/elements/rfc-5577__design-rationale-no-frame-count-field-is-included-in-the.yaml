@@ -1,0 +1,9 @@
+document: rfc-5577
+kind: design-rationale
+summary: No frame count field is included in the RTP payload because the fixed frame size at any given bit rate allows the receiver to compute the frame count by dividing the payload length by the known octets-per-frame value derived from the payload type.
+section: "3.4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

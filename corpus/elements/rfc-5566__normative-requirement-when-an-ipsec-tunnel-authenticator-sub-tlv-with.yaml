@@ -1,0 +1,12 @@
+document: rfc-5566
+kind: normative-requirement
+summary: When an IPsec Tunnel Authenticator sub-TLV with authenticator type 1 is present, R1 MUST use IKEv2 to obtain a certificate from R2, and R2 MUST send a certificate for the public key whose hash is in the sub-TLV. R1 MUST NOT attempt to establish an SA to R2 unless the certificate's public key hashes to a value present in one of the sub-TLVs.
+section: "4.1"
+rfc2119_level: MUST NOT
+topics:
+    - bgp
+    - ipsec
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

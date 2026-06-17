@@ -1,0 +1,9 @@
+document: rfc-5574
+kind: design-rationale
+summary: The ptime SDP attribute denotes the packetization interval. Since Speex uses 20 msec frames, ptime values should be multiples of 20. Non-multiple values should be rounded up to the nearest multiple of 20 before calculating the number of frames per packet.
+section: "5.6"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5568
+kind: state-machine
+summary: 'NAR UNA processing: upon receiving UNA, NAR (1) deletes proxy neighbor cache entry and sets state to STALE, forwarding buffered packets, or (2) if entry is INCOMPLETE, updates to STALE and forwards. If NAR wishes to assign a different address, it MUST delete proxy entry and send RA with NAACK option.'
+section: "4"
+topics:
+    - mobility
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

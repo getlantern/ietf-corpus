@@ -1,0 +1,10 @@
+document: rfc-5580
+kind: normative-requirement
+summary: A RADIUS server supporting location attributes MUST calculate the correct value of the Message-Authenticator (80) and MUST silently discard any Access-Request packet containing location attributes if the Message-Authenticator does not match. Access-Request packets with location attributes but without a Message-Authenticator SHOULD be silently discarded.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

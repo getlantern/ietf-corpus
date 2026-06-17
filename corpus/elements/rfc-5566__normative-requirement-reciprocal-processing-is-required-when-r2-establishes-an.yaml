@@ -1,0 +1,11 @@
+document: rfc-5566
+kind: normative-requirement
+summary: 'Reciprocal processing is required: when R2 establishes an SA from R1 and R1 has advertised an IPsec Tunnel Authenticator sub-TLV type 1, R2 MUST use IKEv2 to obtain a certificate from R1, and R2 MUST NOT establish the SA unless R1''s certificate public key hashes to a value in R1''s sub-TLV.'
+section: "4.1"
+rfc2119_level: MUST NOT
+topics:
+    - bgp
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

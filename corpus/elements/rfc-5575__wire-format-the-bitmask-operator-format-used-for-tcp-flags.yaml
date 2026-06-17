@@ -1,0 +1,9 @@
+document: rfc-5575
+kind: wire-format
+summary: 'The bitmask operator format (used for TCP flags Type 9 and Fragment Type 12) shares the most-significant nibble (e, a, len) with the numeric format but replaces the lower nibble with: not (logical negation) and m (match bit). When m is set, the match operation is ''(data & value) == value''; when unset, any matching bit in the value mask suffices.'
+section: "4"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
