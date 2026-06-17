@@ -1,0 +1,9 @@
+document: rfc-6311
+kind: security-consideration
+summary: Message ID synchronization messages are sent with Message ID zero, making them potentially vulnerable to replay attacks. Replay of a sync request is mitigated by requiring the cluster's Send counter to be strictly monotonically increasing; the peer silently drops requests that violate this. Replay of a sync response is mitigated by the nonce field that must match the outstanding request.
+section: "11"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

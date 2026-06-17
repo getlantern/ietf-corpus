@@ -1,0 +1,9 @@
+document: rfc-6295
+kind: wire-format
+summary: Delta times in the MIDI list use a 1–4 octet variable-length encoding derived from MIDI File format. Each continuation octet has MSB=1; the final octet has MSB=0. The four-byte form decodes to a 28-bit unsigned integer. There are four legal encodings of zero (0x00, 0x8000, 0x808000, 0x80808000).
+section: "3.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

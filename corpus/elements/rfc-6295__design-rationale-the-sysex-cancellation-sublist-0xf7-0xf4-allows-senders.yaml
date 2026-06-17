@@ -1,0 +1,9 @@
+document: rfc-6295
+kind: design-rationale
+summary: The SysEx cancellation sublist (0xF7 0xF4) allows senders to begin transmitting a SysEx command before the MIDI source has finished sending it, then abort mid-stream if the command must be excluded. Without cancellation, senders would be forced to use high-latency store-and-forward transcoding to validate each SysEx command before transmission begins.
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6307
+kind: design-rationale
+summary: The CRC in an FC frame is passed through the PW without recalculation or checking at the ingress PE; the receiving FC port performs CRC validation. This differs from RFC 4720 FCS retention, which mandates ingress inspection and discard of errored frames. The rationale is that CRC coverage extends end-to-end between FC ports, not just between PW endpoints.
+section: 3.3.1
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

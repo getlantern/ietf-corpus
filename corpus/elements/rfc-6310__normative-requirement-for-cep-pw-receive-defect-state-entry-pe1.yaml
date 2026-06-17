@@ -1,0 +1,10 @@
+document: rfc-6310
+kind: normative-requirement
+summary: For CEP PW receive defect state entry, PE1 MUST commence AIS-P/V insertion into the AC and MUST set the R bit in all PW packets sent back to PE2. On exit, PE1 MUST cease AIS-P/V insertion and MUST clear the R bit. On AC receive defect state entry, PE1 MUST set the L bit; if DBA is not enabled, PE1 SHOULD insert AIS-V/P in the SDH/SONET client layer in outgoing PW packets.
+section: 10.2.1
+rfc2119_level: MUST
+topics:
+    - mpls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

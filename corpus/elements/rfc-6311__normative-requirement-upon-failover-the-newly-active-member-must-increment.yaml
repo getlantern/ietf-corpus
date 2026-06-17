@@ -1,0 +1,10 @@
+document: rfc-6311
+kind: normative-requirement
+summary: Upon failover, the newly active member MUST increment its own outgoing IPsec replay counter to prevent traffic being dropped by the peer as replay. IPsec allows the replay counter to skip forward by any amount; where the increment is difficult to estimate, 2**30 is suggested.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

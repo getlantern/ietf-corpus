@@ -1,0 +1,8 @@
+document: rfc-6311
+kind: design-rationale
+summary: When it is difficult to estimate the correct replay counter increment, the document recommends skipping forward by a very large number (e.g., 2**30) followed by a rekey shortly afterwards, rather than risking counter reuse. This trades SA lifetime for guaranteed anti-replay correctness.
+section: "5.2"
+topics:
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6298
+kind: state-machine
+summary: 'The retransmission timer has three management rules: (5.1) start timer on any data send if not running; (5.2) stop timer when all outstanding data is acknowledged; (5.3) restart timer when an ACK acknowledging new data is received. On expiry: retransmit earliest unacknowledged segment, double RTO, and restart timer.'
+section: "5"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

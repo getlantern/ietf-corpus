@@ -1,0 +1,8 @@
+document: rfc-6310
+kind: state-machine
+summary: 'PE1 enters the PW receive defect state upon: receiving an FDI from PE2 indicating remote AC receive defect or downstream PW fault; detecting loss of PSN tunnel connectivity upstream; or detecting loss of PW connectivity via VCCV-BFD or VCCV-PING. PE1 exits when all detected defects have disappeared and PE2 has cleared any FDI. Loss of the PW control session (LDP, L2TP) results in the same consequent AC actions as entering the receive defect state.'
+section: 6.2.1
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

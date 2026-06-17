@@ -1,0 +1,10 @@
+document: rfc-6295
+kind: normative-requirement
+summary: The journalling method for a stream is set at the start of a session and MUST NOT be changed thereafter. Streams over unreliable transport default to using the recovery journal; streams over reliable transport default to no journal. If using the recovery journal, every payload MUST include a journal section; otherwise a journal section MUST NOT appear.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

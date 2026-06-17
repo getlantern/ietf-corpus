@@ -1,0 +1,8 @@
+document: rfc-6311
+kind: design-rationale
+summary: IPsec replay counter synchronization uses a delta increment rather than explicit counter values, because there may be numerous Child SAs under a single IKE SA and sending per-SA absolute values would be expensive. All Child SAs are incremented uniformly by the same delta, which constrains them to all use ESN or all not use ESN.
+section: "6.4"
+topics:
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6295
+kind: normative-requirement
+summary: The recovery journal mandate states that the MIDI performance rendered from an RTP MIDI stream over unreliable transport MUST NOT contain indefinite artifacts (long-lasting rendering errors such as a sustained note from a lost NoteOff). Senders prepare a journal for every packet; receivers MUST repair indefinite artifacts on loss detection.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

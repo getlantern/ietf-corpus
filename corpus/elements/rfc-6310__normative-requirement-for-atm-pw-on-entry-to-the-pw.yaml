@@ -1,0 +1,9 @@
+document: rfc-6310
+kind: normative-requirement
+summary: For ATM PW on entry to the PW receive defect state, PE1 MUST commence AIS insertion into the corresponding AC and MUST cease CC cell generation. If the defect was detected by PE1 without receiving FDI from PE2, PE1 MUST notify PE2 by sending RDI. On exit, PE1 MUST cease AIS insertion, MUST resume CC generation, and MUST clear the RDI to PE2.
+section: 7.3.1
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6295
+kind: normative-requirement
+summary: All command timestamps in a packet MUST be less than or equal to the RTP timestamp of the next packet in the stream (modulo 2^32). This rule ensures each RTP MIDI packet is uniquely responsible for encoding a distinct, non-overlapping time interval.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6295
+kind: protocol-element
+summary: The MIDI list encodes an ordered sequence of (delta-time, MIDI-command) pairs. When Z=0 the first command has an implicit delta time of zero. Each command timestamp is the cumulative sum (mod 2^32) of the RTP timestamp plus all preceding delta times. The final command field may be empty, enabling time-padding without a command.
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

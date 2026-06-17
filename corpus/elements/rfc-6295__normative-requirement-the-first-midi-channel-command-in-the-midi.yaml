@@ -1,0 +1,10 @@
+document: rfc-6295
+kind: normative-requirement
+summary: The first MIDI channel command in the MIDI list MUST include a status octet. Running status MAY be used for all subsequent channel commands. All system commands MUST include a status octet. The P (phantom) bit MUST be set to 1 when the first channel command's status octet was not physically present in the source data stream.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6310
+kind: normative-requirement
+summary: A PE using VCCV-BFD MUST use diagnostic code 0 to indicate correct BFD reception, MUST use code 1 when it stops receiving BFD control messages (PW down receive direction), MUST use code 3 to confirm session going down after receiving code 1 from peer (PW down transmit direction), and MUST use code 7 for administrative PW shutdown. All other defects MUST be communicated through LDP Status TLV or L2TP Circuit Status AVP.
+section: 6.1.3
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

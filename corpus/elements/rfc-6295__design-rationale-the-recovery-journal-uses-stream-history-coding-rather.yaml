@@ -1,0 +1,9 @@
+document: rfc-6295
+kind: design-rationale
+summary: The recovery journal uses stream history coding rather than packet retransmission to satisfy the no-indefinite-artifacts mandate. This avoids the latency penalty of retransmission-based schemes, making the format suitable for interactive real-time musical performance where retransmitted packets arrive too late to be useful.
+section: "4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

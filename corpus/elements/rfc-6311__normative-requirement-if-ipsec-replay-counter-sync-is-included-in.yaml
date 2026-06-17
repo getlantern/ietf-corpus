@@ -1,0 +1,10 @@
+document: rfc-6311
+kind: normative-requirement
+summary: If IPSEC_REPLAY_COUNTER_SYNC is included in the same message as IKEV2_MESSAGE_ID_SYNC, the peer MUST process the Message ID notification first (which might cause the entire message to be dropped as a replay), then MUST increment the replay counters for all Child SAs by the requested amount.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

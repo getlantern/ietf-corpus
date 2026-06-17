@@ -1,0 +1,9 @@
+document: rfc-6298
+kind: normative-requirement
+summary: If the timer expires waiting for the ACK of a SYN and the implementation is using an RTO less than 3 seconds, the RTO MUST be re-initialized to 3 seconds when data transmission begins (after the three-way handshake completes).
+section: "5.7"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

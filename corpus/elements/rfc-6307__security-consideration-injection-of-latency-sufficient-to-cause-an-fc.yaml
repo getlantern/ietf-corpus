@@ -1,0 +1,9 @@
+document: rfc-6307
+kind: security-consideration
+summary: Injection of latency sufficient to cause an FC PW's round-trip time to exceed R_T_TOV (default 100 ms) may cause active FC PW failure, as the FC link initialization protocol repeatedly times out. OAM functionality SHOULD monitor for persistence of this condition and respond, e.g., by shutting down the FC PW to avoid wasting WAN bandwidth.
+section: "6"
+topics:
+    - security
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

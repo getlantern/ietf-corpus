@@ -1,0 +1,10 @@
+document: rfc-6310
+kind: normative-requirement
+summary: For TDM PW AC receive defect state entry (single emulated OAM loop), PE1 SHOULD overwrite TDM data with AIS in outgoing PW packets, MUST set the L bit in these packets, MAY omit payload to conserve bandwidth, and a structure-aware PE1 SHOULD send RDI back towards CE1. On exit, PE1 MUST cease AIS overwriting, MUST clear the L bit, and a structure-aware PE1 MUST cease RDI.
+section: 9.3.3
+rfc2119_level: MUST
+topics:
+    - mpls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

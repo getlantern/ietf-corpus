@@ -1,0 +1,10 @@
+document: rfc-6298
+kind: security-consideration
+summary: An attacker who can forge ACKs for segments not yet received could lower RTO to an unsafe value, destabilizing the network. This requires the attacker to monitor path traffic to spoof correctly, and the sender's exponential backoff limits the sustained impact under actual congestion.
+section: "6"
+topics:
+    - tcp
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

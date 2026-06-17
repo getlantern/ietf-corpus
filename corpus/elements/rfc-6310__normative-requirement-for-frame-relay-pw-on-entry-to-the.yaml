@@ -1,0 +1,9 @@
+document: rfc-6310
+kind: normative-requirement
+summary: For Frame Relay PW on entry to the PW receive defect state, PE1 MUST clear the Active bit for the FR AC in a full Q.933 status report. On exit (but not on transition to PW transmit defect state), PE1 MUST set the Active bit. On entry to PW transmit defect state, PE1 MUST also clear the Active bit and, if defect was detected without RDI from PE2, MUST notify PE2 by sending FDI.
+section: 8.3.1
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

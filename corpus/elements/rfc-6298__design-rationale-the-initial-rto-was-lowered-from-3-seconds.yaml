@@ -1,0 +1,9 @@
+document: rfc-6298
+kind: design-rationale
+summary: The initial RTO was lowered from 3 seconds (RFC 2988) to 1 second because studies found over 97.5% of connections have RTTs under 1 second, and faster recovery from early packet loss outweighs the ~2.5% of connections that may incur a spurious SYN retransmission. The 3-second fallback after SYN timeout mitigates the impact on long-RTT connections.
+section: Appendix A
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

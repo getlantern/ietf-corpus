@@ -1,0 +1,9 @@
+document: rfc-6313
+kind: design-rationale
+summary: 'RFC 5101 IPFIX only supports flat Data Records with single-valued attributes, forcing awkward workarounds for repeated structures. The MPLS label stack problem illustrates this: ten numbered IEs (mplsTopLabelStackSection through mplsLabelStackSection10) were needed, and adding an eleventh could not be placed adjacent in the IANA registry. RFC 6313 introduces structured data types to solve this class of problem.'
+section: "2.2"
+topics:
+    - measurement
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

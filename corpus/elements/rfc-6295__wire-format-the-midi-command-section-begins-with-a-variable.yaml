@@ -1,0 +1,9 @@
+document: rfc-6295
+kind: wire-format
+summary: The MIDI command section begins with a variable-length header containing flags B (big LEN), J (journal present), Z (first delta time present), P (phantom status), plus a LEN field. If B=0, the header is 1 octet and LEN is 4 bits (max 15-octet MIDI list); if B=1, the header is 2 octets and LEN is 12 bits (max 4095-octet MIDI list), coded big-endian.
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

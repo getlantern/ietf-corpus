@@ -1,0 +1,9 @@
+document: rfc-6310
+kind: normative-requirement
+summary: When a BFD session changes state, the PEs MUST use state change diagnostic codes (0, 1, 3, 7) per RFC 5880 and MUST override any previously signaled AC/PW status diagnostic codes (6 or 8). A defect generating code 6 or 8 does not necessarily bring the BFD session down; if the session does time out, code 1 MUST be used.
+section: 6.1.3
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6311
+kind: state-machine
+summary: 'Failover state transitions: (1) Active member crashes → standby detects failover and becomes active; (2) Newly active member sends SA Counter Synchronization exchange (Message ID zero) → peer authenticates and responds with reconciled counters; (3) Both sides update their Message ID and replay counters to the negotiated values and resume normal operation.'
+section: "9"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

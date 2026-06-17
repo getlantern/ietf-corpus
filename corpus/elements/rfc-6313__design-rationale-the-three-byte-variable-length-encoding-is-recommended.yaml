@@ -1,0 +1,8 @@
+document: rfc-6313
+kind: design-rationale
+summary: The three-byte variable-length encoding is RECOMMENDED for all Structured Data IEs even when the encoded length may be less than 255 bytes. This allows the Exporting Process to begin writing data at a known fixed offset and fill in the final length afterwards, avoiding a two-pass encode.
+section: "5.1"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

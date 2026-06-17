@@ -1,0 +1,10 @@
+document: rfc-6298
+kind: normative-requirement
+summary: 'On subsequent RTT measurements R'', the host MUST update RTTVAR <- (1 - beta) * RTTVAR + beta * |SRTT - R''| then SRTT <- (1 - alpha) * SRTT + alpha * R'' (in that order), then RTO <- SRTT + max(G, K*RTTVAR). The update order is mandatory: RTTVAR must be computed before SRTT is updated.'
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
