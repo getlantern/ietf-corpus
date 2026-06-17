@@ -1,0 +1,9 @@
+document: rfc-5752
+kind: design-rationale
+summary: The SignAttrsHash hashes the complete signedAttrs of the referenced SignerInfo rather than hashing only the body, because the signed attributes include algorithm identifiers and the message digest, providing cross-binding that is computationally harder to attack than the body hash alone due to additional structure and shorter length.
+section: B.2
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5760
+kind: security-consideration
+summary: The Feedback Target Address sub-report block presents a significant security risk if accepted from unauthenticated RTCP packets, as an attacker could redirect all receiver unicast feedback to an arbitrary address. RTCP authentication (e.g., via SRTP) SHOULD be used before trusting dynamic Feedback Target address updates.
+section: 7.1.8
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

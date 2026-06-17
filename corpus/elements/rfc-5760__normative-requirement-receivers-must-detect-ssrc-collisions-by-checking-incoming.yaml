@@ -1,0 +1,10 @@
+document: rfc-5760
+kind: normative-requirement
+summary: Receivers MUST detect SSRC collisions by checking incoming RTP packets from Media Senders and the Collision SSRC sub-report list. Upon detecting a collision with its own SSRC, a receiver MUST change its SSRC immediately per RFC 3550 before sending further RTCP feedback, and MUST NOT use an SSRC known out-of-band to belong to a Media Sender.
+section: "7.4"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

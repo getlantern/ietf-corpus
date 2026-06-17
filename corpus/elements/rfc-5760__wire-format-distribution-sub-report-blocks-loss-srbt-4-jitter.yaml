@@ -1,0 +1,9 @@
+document: rfc-5760
+kind: wire-format
+summary: Distribution sub-report blocks (Loss SRBT=4, Jitter SRBT=5, RTT SRBT=6, Cumulative Loss SRBT=7) share a bucket format with a 12-bit NDB (number of distribution buckets), 4-bit Multiplicative Factor MF (bucket values are scaled by 2^MF), 32-bit minimum value, 32-bit maximum value, and variable-width distribution buckets sized ((length*4)-12)*8/NDB bits each.
+section: 7.1.3
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

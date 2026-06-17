@@ -1,0 +1,12 @@
+document: rfc-5761
+kind: security-consideration
+summary: When SRTP is used with multiplexed RTP and RTCP, multiplexing MUST be performed below the SRTP layer. The sender generates SRTP and SRTCP packets independently using their separate cryptographic contexts and multiplexes them immediately before transmission. The receiver derives cryptographic context from SSRC, destination address, and port, then uses payload type / RTCP packet type to demultiplex before cryptographic processing.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

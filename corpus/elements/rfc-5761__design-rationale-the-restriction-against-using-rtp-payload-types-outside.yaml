@@ -1,0 +1,9 @@
+document: rfc-5761
+kind: design-rationale
+summary: The restriction against using RTP payload types outside 72-73 (not just those two) when multiplexing is due to RFC 5506, which allows non-compound RTCP packets in some circumstances. Without this broader restriction, a non-compound RTCP packet of any type in the range 64-95 could be mistaken for an RTP data packet.
+section: "4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

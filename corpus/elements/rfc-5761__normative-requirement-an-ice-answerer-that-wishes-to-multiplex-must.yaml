@@ -1,0 +1,11 @@
+document: rfc-5761
+kind: normative-requirement
+summary: An ICE answerer that wishes to multiplex MUST generate an answer with 'a=rtcp-mux' and only a single 'a=candidate:' line for the RTP port (no RTCP candidate) per multiplexed media. If not wishing to multiplex, it MUST NOT include 'a=rtcp-mux' and MUST perform connectivity checks for all offered candidates.
+section: 5.1.3
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

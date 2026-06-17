@@ -1,0 +1,11 @@
+document: rfc-5761
+kind: normative-requirement
+summary: Any QoS reservation for a multiplexed RTP/RTCP stream SHOULD be made for 105% of the SDP 'b=AS:' value to account for RTCP's standard 5% bandwidth allocation. If non-standard RTCP bandwidth fractions are signalled via 'b=RR:' and 'b=RS:', the reservation SHOULD equal AS + RS + RR.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

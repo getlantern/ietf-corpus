@@ -1,0 +1,10 @@
+document: rfc-5760
+kind: normative-requirement
+summary: An RTP receiver in the Feedback Summary Model MUST process RSI packets and adapt RTCP bandwidth accordingly. If no RSI packets have been received from the Distribution Source for five times the sender reporting interval, the receiver MUST cease transmitting RTCP Receiver Reports until the next RSI packet is received.
+section: "7.4"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

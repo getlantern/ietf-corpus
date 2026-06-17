@@ -1,0 +1,10 @@
+document: rfc-5752
+kind: normative-requirement
+summary: During signature verification, for every SignerInfo to be considered complete, the number of MultipleSignatures AttributeValue(s) present MUST equal the number of SignerInfo objects for that signer less one, and each hash value MUST match the output of the message digest calculation over the referenced SignerInfo's signedAttrs.
+section: "4.6"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

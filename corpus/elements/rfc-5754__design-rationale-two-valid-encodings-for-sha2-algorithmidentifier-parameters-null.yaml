@@ -1,0 +1,9 @@
+document: rfc-5754
+kind: design-rationale
+summary: Two valid encodings for SHA2 AlgorithmIdentifier parameters (NULL vs absent) exist because the OPTIONAL qualifier was lost when the 1988 AlgorithmIdentifier syntax was translated into 1997 syntax, then recovered via a defect report. By the time of recovery, many implementations were already encoding parameters as NULL, creating a persistent interoperability split.
+section: "2"
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5761
+kind: interoperability-note
+summary: Multiplexing RTP and RTCP on a single port can disrupt header compression (CRTP, ROHC) by breaking the expected header change patterns. A classifier that assigns compression contexts based only on IP addresses and UDP ports will not perform well; classifiers should use the payload type field to separate RTP and RTCP into different compression contexts.
+section: 5.1.4
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

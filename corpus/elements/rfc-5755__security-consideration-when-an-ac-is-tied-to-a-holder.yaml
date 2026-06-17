@@ -1,0 +1,9 @@
+document: rfc-5755
+kind: security-consideration
+summary: When an AC is tied to a holder's PKC via baseCertificateID, a rogue CA with the same issuer name could issue a fraudulent PKC with the same serial number, enabling AC misuse. This SHOULD be avoided by ensuring no two CAs share the same name, or by using the publicKeyCert ObjectDigestInfo binding instead.
+section: "8"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

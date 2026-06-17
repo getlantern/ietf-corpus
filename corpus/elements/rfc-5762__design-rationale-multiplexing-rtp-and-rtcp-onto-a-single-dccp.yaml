@@ -1,0 +1,10 @@
+document: rfc-5762
+kind: design-rationale
+summary: Multiplexing RTP and RTCP onto a single DCCP connection is recommended because large telephony gateways can exhaust UDP ports (needing more than 32768 flows), and multiple ports complicate NAT traversal. DCCP exacerbates this since the naive mapping requires two connections per RTP flow.
+section: "4.3"
+topics:
+    - rtp
+    - nat
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

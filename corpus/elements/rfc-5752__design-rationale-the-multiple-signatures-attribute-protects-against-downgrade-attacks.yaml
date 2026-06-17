@@ -1,0 +1,9 @@
+document: rfc-5752
+kind: design-rationale
+summary: The multiple-signatures attribute protects against downgrade attacks where an attacker removes all SignerInfo structures except the one using a successfully attacked algorithm. Without this attribute, removal of a SignerInfo is undetectable and does not render the remaining signature invalid.
+section: "2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
