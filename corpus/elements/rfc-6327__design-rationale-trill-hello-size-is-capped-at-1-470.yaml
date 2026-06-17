@@ -1,0 +1,8 @@
+document: rfc-6327
+kind: design-rationale
+summary: TRILL Hello size is capped at 1,470 octets (not padded to MTU) for loop safety; MTU is tested separately so that a DRB can be uniquely elected even on links with small MTUs. This differs from Layer 3 IS-IS, which pads Hellos to maximum length to block discovery of unreachable neighbors.
+section: "2.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6323
+kind: security-consideration
+summary: An on-path attacker able to guess valid sequence numbers could alter the RTT Estimate Option to manipulate the perceived RTT, causing TFRC to compute inflated or deflated X_recv values and thus obtain higher or lower sending rates than network conditions warrant. The threat model requires the attacker to be on the same path as the DCCP sender and receiver.
+section: "4"
+topics:
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

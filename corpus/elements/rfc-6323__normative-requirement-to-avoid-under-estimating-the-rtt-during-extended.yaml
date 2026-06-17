@@ -1,0 +1,9 @@
+document: rfc-6323
+kind: normative-requirement
+summary: 'To avoid under-estimating the RTT during extended no-number RTT option periods, the receiver MUST back off receiver_RTT: if no-number options persist for longer than receiver_RTT seconds, set receiver_RTT = MIN(2 * receiver_RTT, t_mbi), where t_mbi = 64 seconds.'
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

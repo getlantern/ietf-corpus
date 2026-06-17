@@ -1,0 +1,9 @@
+document: rfc-6325
+kind: state-machine
+summary: An appointed VLAN-x forwarder transitions to an inhibited state (dropping native frames it receives or decapsulates) after observing a root bridge change on its link (inhibited for 0–30 seconds, default 30) or upon receiving a Hello from another RBridge claiming the same appointment. It resumes normal operation after the inhibit timer expires or the conflict resolves.
+section: 4.2.4.3
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

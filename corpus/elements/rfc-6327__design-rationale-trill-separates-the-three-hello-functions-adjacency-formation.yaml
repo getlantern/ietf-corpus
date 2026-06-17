@@ -1,0 +1,8 @@
+document: rfc-6327
+kind: design-rationale
+summary: TRILL separates the three Hello functions (adjacency formation, DRB election, MTU confirmation) because, unlike Layer 3 IS-IS where multiple Designated Routers on a LAN are tolerable, TRILL requires exactly one DRB per link to prevent native frame loops unprotected by the hop count.
+section: "2.5"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

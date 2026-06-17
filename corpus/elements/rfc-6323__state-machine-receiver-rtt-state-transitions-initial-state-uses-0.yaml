@@ -1,0 +1,8 @@
+document: rfc-6323
+kind: state-machine
+summary: 'Receiver RTT state transitions: initial state uses 0.5s receiver_RTT until first numeric option; on receiving numeric options, updates via moving average; on extended no-number options (duration > receiver_RTT), backs off via doubling capped at t_mbi=64s; MAY close connection when receiver_RTT reaches MAX_RTT.'
+section: "3.4"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

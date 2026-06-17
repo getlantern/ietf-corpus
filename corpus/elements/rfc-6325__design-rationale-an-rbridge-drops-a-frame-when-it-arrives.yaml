@@ -1,0 +1,8 @@
+document: rfc-6325
+kind: design-rationale
+summary: An RBridge drops a frame when it arrives with hop count zero rather than after decrementing to zero (the IPv4/IPv6 behavior). This non-obvious choice is made to support a future traceroute-like facility that needs to elicit a hop-count-exceeded error from the egress RBridge itself.
+section: "3.6"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

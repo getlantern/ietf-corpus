@@ -1,0 +1,8 @@
+document: rfc-6327
+kind: design-rationale
+summary: Only the DRB 'sprays' TRILL Hellos on all enabled VLANs; non-DRB RBridges send on only a limited set. This avoids the performance cost of up to 4,094× more Hellos while still allowing discovery across VLAN-partitioned bridged links.
+section: "3.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

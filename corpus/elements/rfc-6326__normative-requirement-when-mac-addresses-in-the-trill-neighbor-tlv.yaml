@@ -1,0 +1,9 @@
+document: rfc-6326
+kind: normative-requirement
+summary: When MAC addresses in the TRILL Neighbor TLV span multiple TLVs or PDUs, the highest MAC address in a TLV with L=0 MUST also appear in another TRILL Neighbor TLV, and the lowest MAC address in a TLV with S=0 MUST also appear in another TRILL Neighbor TLV. An RBridge with no neighbors MUST send a TRILL Neighbor TLV with an empty record list (both S and L set).
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6325
+kind: normative-requirement
+summary: VLAN ID 0xFFF MUST NOT be used. RBridges MUST discard any frame received with an Outer.VLAN ID of 0xFFF and MUST discard any frame for which examination of the Inner.VLAN ID reveals 0xFFF; this examination is required at all egress RBridges.
+section: 4.1.1
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

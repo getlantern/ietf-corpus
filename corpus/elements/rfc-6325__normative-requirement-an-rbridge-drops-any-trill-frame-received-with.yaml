@@ -1,0 +1,10 @@
+document: rfc-6325
+kind: normative-requirement
+summary: An RBridge drops any TRILL frame received with a hop count of zero; otherwise it MUST decrement the hop count by at least 1. For multi-destination frames, transit RBridges MAY decrease the hop count by more than 1 to protect against temporary loops, but MUST NOT reduce it below what is needed to reach all destinations in that branch.
+section: "3.6"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

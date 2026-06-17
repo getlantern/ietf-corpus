@@ -1,0 +1,10 @@
+document: rfc-6323
+kind: design-rationale
+summary: 'Receiver-based RTT sampling using the cyclic 4-bit CCVal window counter in CCID-3/CCID-4 is inherently unreliable: it requires adjacent packets with CCVal differences between 2 and 4, fails during loss events, and is distorted by NIC interrupt coalescing that delivers packets in bursts. The sender is better equipped to measure RTT using timestamps and elapsed time, producing higher-accuracy and more frequent samples.'
+section: "2"
+topics:
+    - congestion
+    - tcp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
