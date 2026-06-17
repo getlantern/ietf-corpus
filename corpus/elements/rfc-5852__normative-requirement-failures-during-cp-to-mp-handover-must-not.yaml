@@ -1,0 +1,10 @@
+document: rfc-5852
+kind: normative-requirement
+summary: Failures during CP-to-MP Handover MUST NOT result in the removal of any associated Data Plane state. While the H bit is set in Path state, a node MUST NOT send a PathTear when a failure is detected; instead the failure is reported upstream using a PathErr.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

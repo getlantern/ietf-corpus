@@ -1,0 +1,9 @@
+document: rfc-5852
+kind: state-machine
+summary: 'Node Graceful Restart during MP-to-CP Handover has three cases: (I) finite restart time — ingress aborts via PathTear, LSR B tears down LSP after restart timer expires but MUST NOT release DP resources; (II) infinite restart time — recovery timer expires at LSR B triggering PathTear/PathErr, no DP resources released; (III) ingress re-generates Path with H bit to restart Handover after node recovery.'
+section: 4.2.2.3
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

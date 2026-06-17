@@ -1,0 +1,9 @@
+document: rfc-5858
+kind: design-rationale
+summary: ROHC segmentation is not recommended for ROHCoIPsec because in-order delivery of ROHC segments cannot be guaranteed over IPsec, making reassembly unreliable. The MRRU SHOULD therefore be set to 0 to disable segmentation entirely.
+section: "4.3"
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

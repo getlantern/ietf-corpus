@@ -1,0 +1,10 @@
+document: rfc-5858
+kind: normative-requirement
+summary: 'When IPComp and ROHCoIPsec are nested, outbound processing order is: (1) compute ROHC ICV and compress headers, (2) apply IPComp, (3) apply IPsec security protocol. Inbound order reverses this: IPsec processing, then IPComp decompression, then ROHC decompression and integrity verification.'
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

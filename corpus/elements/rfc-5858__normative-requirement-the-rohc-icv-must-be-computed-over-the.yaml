@@ -1,0 +1,11 @@
+document: rfc-5858
+kind: normative-requirement
+summary: The ROHC ICV MUST be computed over the uncompressed IP header, higher-layer headers, and packet payload (excluding the authentication data). If the recomputed ICV at the decompressor does not match the appended ICV, the decompressed packet MUST be dropped.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

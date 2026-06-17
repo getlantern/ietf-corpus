@@ -1,0 +1,9 @@
+document: rfc-5864
+kind: security-consideration
+summary: Server authentication can prevent impersonation attacks, but only for authenticated AFS access. Much AFS access is unauthenticated, and clients may fall back to unauthenticated access after authentication failure, which an attacker's server may permit. Using DNSSEC can prevent DNS forgery but the underlying vulnerability requires AFS protocol changes to always authenticate services.
+section: "7"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

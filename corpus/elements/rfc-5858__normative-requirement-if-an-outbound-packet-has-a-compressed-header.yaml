@@ -1,0 +1,10 @@
+document: rfc-5858
+kind: normative-requirement
+summary: If an outbound packet has a compressed header, the Next Header field of the AH or ESP security protocol header MUST be set to the 'ROHC' protocol identifier. For inbound packets, the Next Header field MUST be checked to determine whether ROHC decompression is required.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

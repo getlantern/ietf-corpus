@@ -1,0 +1,9 @@
+document: rfc-5852
+kind: state-machine
+summary: 'MP-to-CP Handover two-stage state machine: (1) Ingress sends Path with H bit set and starts Expiration timer; LSRs save Path state with H bit; egress sends Resv with H bit set. (2) On receipt of Resv with H bit, ingress cancels timer and sends Path with H bit clear; LSRs release MP state on receipt of H-clear Path; completion confirmed when ingress receives Resv with H bit clear.'
+section: "4.1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

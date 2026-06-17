@@ -1,0 +1,9 @@
+document: rfc-5864
+kind: normative-requirement
+summary: 'Clients SHOULD query DNS SRV RRs by default but SHOULD fall back to AFSDB RRs if no DNS SRV RRs are found. In the absence of DNS SRV RRs, an AFSDB RR of subtype 1 SHOULD be treated as equivalent to a pair of DNS SRV RRs: one for _afs3-vlserver._udp on port 7003 and one for _afs3-prserver._udp on port 7002, both with priority 0 and weight 0.'
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5864
+kind: design-rationale
+summary: Implementations are not required to re-run the weighted server selection algorithm for each call; they MAY reuse results until DNS SRV RRs expire. This may affect load distribution, and server operators should account for this effect when setting TTL values.
+section: "4"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

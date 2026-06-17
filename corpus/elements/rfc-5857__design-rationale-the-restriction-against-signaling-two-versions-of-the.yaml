@@ -1,0 +1,9 @@
+document: rfc-5857
+kind: design-rationale
+summary: The restriction against signaling two versions of the same ROHC profile exists because ROHC-compressed packets only carry the 8 least-significant bits of the profile identifier; the 8 LSBs of corresponding ROHCv1 and ROHCv2 profiles are identical, so the decompressor cannot determine which version was used.
+section: 3.1.2
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

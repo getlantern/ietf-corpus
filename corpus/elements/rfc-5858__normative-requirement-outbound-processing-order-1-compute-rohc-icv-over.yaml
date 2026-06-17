@@ -1,0 +1,10 @@
+document: rfc-5858
+kind: normative-requirement
+summary: 'Outbound processing order: (1) compute ROHC ICV over uncompressed packet, (2) compress headers, (3) append ICV to compressed packet, (4) apply AH/ESP. Inbound order: (1) apply AH/ESP, (2) remove ICV, (3) decompress headers, (4) recompute ICV, (5) compare and drop if mismatch.'
+section: 4.2.1
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

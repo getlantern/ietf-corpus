@@ -1,0 +1,11 @@
+document: rfc-5857
+kind: normative-requirement
+summary: Two versions of the same ROHC profile MUST NOT be signaled simultaneously (e.g., ROHCv1 UDP 0x0002 and ROHCv2 UDP 0x0102), because compressed packets only express the 8 least-significant bits of the profile identifier, making the version indistinguishable at the decompressor.
+section: 3.1.2
+rfc2119_level: MUST NOT
+topics:
+    - ipsec
+    - vpn
+    - interoperability-note
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

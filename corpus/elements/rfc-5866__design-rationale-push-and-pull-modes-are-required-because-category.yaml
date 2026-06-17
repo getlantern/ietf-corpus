@@ -1,0 +1,9 @@
+document: rfc-5866
+kind: design-rationale
+summary: Push and Pull modes are required because Category 1 and 2 endpoints cannot initiate network-level QoS signaling (they lack network-layer QoS capability), so the Authorizing Entity must proactively push authorization state to the NE; Pull mode is only applicable where the endpoint can send network QoS signaling (Category 3).
+section: 3.2.2
+topics:
+    - diameter
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

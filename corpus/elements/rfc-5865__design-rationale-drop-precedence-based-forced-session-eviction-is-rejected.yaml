@@ -1,0 +1,10 @@
+document: rfc-5865
+kind: design-rationale
+summary: Drop-precedence-based forced session eviction is rejected as a capacity admission approach because it randomly degrades all active calls, and users who experience poor quality tend to hang up and redial, causing oscillating congestion. It is acceptable only on very fast links.
+section: "2.2"
+topics:
+    - diffserv
+    - qos
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

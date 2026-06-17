@@ -1,0 +1,9 @@
+document: rfc-5864
+kind: normative-requirement
+summary: AFS servers SHOULD NOT be advertised with AFSDB RRs unless they provide VLDB and PTS services via UDP on the standard ports. An AFS cell SHOULD have at least one VLDB and one PTS server on the standard ports (7003 and 7002 respectively) since clients without DNS SRV RR support cannot locate servers on non-standard ports.
+section: "5"
+rfc2119_level: SHOULD NOT
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
