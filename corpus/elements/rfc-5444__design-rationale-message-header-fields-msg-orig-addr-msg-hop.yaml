@@ -1,0 +1,8 @@
+document: rfc-5444
+kind: design-rationale
+summary: Message Header fields (<msg-orig-addr>, <msg-hop-limit>, <msg-hop-count>, <msg-seq-num>) are each optional and included only when flagged, keeping headers compact for protocols that do not need all features; multi-message packets further reduce overhead by amortizing transport, network, and lower-layer per-packet costs.
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

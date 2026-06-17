@@ -1,0 +1,10 @@
+document: rfc-5440
+kind: normative-requirement
+summary: After sending an Open message the sender MUST start an OpenWait timer (1 minute fixed); if no Open message is received it sends a PCErr and releases TCP. After receiving an Open message it MUST start a KeepWait timer (1 minute); if neither Keepalive nor PCErr arrives before expiry, it MUST send a PCErr and release the TCP connection.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

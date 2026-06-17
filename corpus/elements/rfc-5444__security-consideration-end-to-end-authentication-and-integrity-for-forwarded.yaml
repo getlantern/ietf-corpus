@@ -1,0 +1,9 @@
+document: rfc-5444
+kind: security-consideration
+summary: End-to-end authentication and integrity for forwarded messages MAY be implemented by including a Message TLV carrying a cryptographic signature. The signature is computed over the entire message with <msg-hop-count> and <msg-hop-limit> set to 0, since those are the only fields legitimately modified during forwarding.
+section: "7.1"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

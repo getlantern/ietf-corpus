@@ -1,0 +1,11 @@
+document: rfc-5440
+kind: normative-requirement
+summary: 'A PCEP implementation that receives an unrecognized message MUST send a PCErr with Error-value=2 (capability not supported). If unrecognized messages arrive at a rate ≥ MAX-UNKNOWN-MESSAGES (recommended: 5) per minute, the peer MUST send a Close message and MUST close the TCP session.'
+section: "6.9"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

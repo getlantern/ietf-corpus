@@ -1,0 +1,10 @@
+document: rfc-5441
+kind: normative-requirement
+summary: If a PCE requires relaying a path computation request per BRPC but no downstream PCE is available, the PCE MUST send a negative path computation reply using a PCReq message containing a NO-PATH object with the 'BRPC path computation chain unavailable' bit (bit 28) set in the NO-PATH-VECTOR TLV.
+section: "12"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

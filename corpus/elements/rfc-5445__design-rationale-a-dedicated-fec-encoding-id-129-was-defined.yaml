@@ -1,0 +1,8 @@
+document: rfc-5445
+kind: design-rationale
+summary: A dedicated FEC Encoding ID (129) was defined specifically for Small Block Systematic FEC codes rather than reusing the generic Under-Specified ID (128). Systematic codes frequently have small source blocks requiring dynamic block length changes; embedding Source Block Length directly in each Payload ID communicates this per-packet with minimal overhead, avoiding repeated out-of-band signaling.
+section: "5.1"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

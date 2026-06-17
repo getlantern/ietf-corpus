@@ -1,0 +1,11 @@
+document: rfc-5440
+kind: normative-requirement
+summary: Upon receipt of a valid Close message, the receiving peer MUST cancel all pending requests, MUST close the TCP connection, and MUST NOT send any further PCEP messages. A Close message can only be sent after a PCEP session has been successfully established.
+section: "6.8"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

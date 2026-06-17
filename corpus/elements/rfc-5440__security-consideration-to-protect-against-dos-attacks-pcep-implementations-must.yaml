@@ -1,0 +1,9 @@
+document: rfc-5440
+kind: security-consideration
+summary: To protect against DoS attacks, PCEP implementations must enforce MAX-UNKNOWN-MESSAGES and MAX-UNKNOWN-REQUESTS rate limits (both recommended at 5 per minute), close the session on breach, and implement request input shaping/policing. PCE overload should be signaled via PCNtf so PCCs can redirect to alternate PCEs.
+section: "10.7"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

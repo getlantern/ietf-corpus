@@ -1,0 +1,10 @@
+document: rfc-5440
+kind: normative-requirement
+summary: When a PCE cannot find a path satisfying the constraints, it MUST include a NO-PATH object in the PCRep message. When the R bit is set and the TE LSP is non-zero-bandwidth, the absence of an RRO object MUST trigger a PCErr with Error-Type='Required Object Missing' and Error-value='RRO Object missing for reoptimization'.
+section: "6.5"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

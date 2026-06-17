@@ -1,0 +1,10 @@
+document: rfc-5440
+kind: normative-requirement
+summary: When the P flag is set in a PCReq object, the PCE MUST take that object into account during path computation. If the PCE does not understand or chooses to ignore a P-flagged object, it MUST reject the entire corresponding request and send a PCErr with Error-Type 'Unknown Object' or 'Not supported Object'.
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
