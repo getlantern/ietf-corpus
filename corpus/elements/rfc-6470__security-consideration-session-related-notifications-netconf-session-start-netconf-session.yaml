@@ -1,0 +1,9 @@
+document: rfc-6470
+kind: security-consideration
+summary: Session-related notifications (netconf-session-start, netconf-session-end) expose username and source-host for each management session. The session-start event can alert an attacker that a concurrent session is editing an unlocked datastore; the session-end event signals that datastore changes may have been committed.
+section: "4"
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

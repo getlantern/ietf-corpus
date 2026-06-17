@@ -1,0 +1,9 @@
+document: rfc-6487
+kind: security-consideration
+summary: The same key that signs issued certificates must also sign the CRL that can revoke those certificates. Using a validation implementation capable of using separate paths for a certificate and its CRL may cause an RP to incorrectly conclude a valid certificate has been revoked.
+section: "10"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

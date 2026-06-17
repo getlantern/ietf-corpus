@@ -1,0 +1,11 @@
+document: rfc-6482
+kind: normative-requirement
+summary: Before using a ROA to validate a routing announcement, a relying party MUST first validate the ROA by performing all validation checks in RFC 6488 plus the ROA-specific step of verifying that each prefix in the ROA is contained within the EE certificate's IP address delegation extension.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - routing
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6476
+kind: security-consideration
+summary: An implementation that treats missing non-payload trailing data as non-fatal allows an attacker to truncate the message before the MAC value, defeating authentication. Any data-formatting problem such as truncated or missing trailing data MUST be treated as a MAC verification failure.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6475
+kind: design-rationale
+summary: 'pmip6LmaMaxDelayBeforeNewBCEAssign (default 1500 ms) has an explicit dependency on the PBU retransmission algorithm: retransmissions must complete before this window expires, otherwise a lost de-registration from a previous MAG may cause the LMA to needlessly create a new mobility session and allocate new prefixes.'
+section: "5.2"
+topics:
+    - mobility
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

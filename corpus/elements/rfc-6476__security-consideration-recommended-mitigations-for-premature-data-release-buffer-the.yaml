@@ -1,0 +1,9 @@
+document: rfc-6476
+kind: security-consideration
+summary: 'Recommended mitigations for premature data release: buffer the entire message and verify the MAC before decryption; if streaming is required, break messages into smaller atomically-verifiable chunks; otherwise clearly signal authentication failure to the caller and invalidate any previously returned data.'
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

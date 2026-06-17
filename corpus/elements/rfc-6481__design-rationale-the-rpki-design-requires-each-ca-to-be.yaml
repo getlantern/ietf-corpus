@@ -1,0 +1,9 @@
+document: rfc-6481
+kind: design-rationale
+summary: The RPKI design requires each CA to be uniquely associated with a single key pair. During key rollover, a new subject name is required because RPKI mandates unique subject names across all certificates issued by a CA, and the new key creates a new CA instance.
+section: "2.2"
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

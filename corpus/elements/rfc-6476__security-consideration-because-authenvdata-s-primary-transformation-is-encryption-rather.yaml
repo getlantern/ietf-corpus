@@ -1,0 +1,9 @@
+document: rfc-6476
+kind: security-consideration
+summary: Because AuthEnvData's primary transformation is encryption rather than authentication, an implementation may output decrypted data before reaching and verifying the trailing MAC value. If data is prematurely returned to the user and the MAC later fails, the user may have already acted on tainted data.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

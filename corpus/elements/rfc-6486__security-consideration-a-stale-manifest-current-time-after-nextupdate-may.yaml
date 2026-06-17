@@ -1,0 +1,9 @@
+document: rfc-6486
+kind: security-consideration
+summary: A stale manifest (current time after nextUpdate) may indicate suppression of a newer manifest. Signed objects covered by a stale manifest SHOULD be treated as suspect because a newer CRL or revocation may have been withheld. RPs SHOULD warn about stale manifests and apply local policy on whether to use the objects.
+section: "6.4"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6478
+kind: normative-requirement
+summary: S-PE bypass mode MUST NOT be used to send messages that may originate at an S-PE (e.g., 'clear all failures' 0x00000001); doing so could cause race conditions between control-plane messages from S-PEs and data-plane messages from T-PEs. Only status codes 0x00000002, 0x00000004, 0x00000020, and 0x00000040 are permitted via bypass.
+section: "5.5"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

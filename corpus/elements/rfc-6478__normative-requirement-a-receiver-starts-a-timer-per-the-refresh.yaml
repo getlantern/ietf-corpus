@@ -1,0 +1,9 @@
+document: rfc-6478
+kind: normative-requirement
+summary: A receiver starts a timer per the refresh rate in the packet. If a non-zero PW status message is not received within 3.5 times the specified timer value, the status condition times out and the default status of zero is assumed. Jitter in refresh transmissions is recommended but MUST remain within 3.5 times the timer value for 3 consecutive packets.
+section: "5.3"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

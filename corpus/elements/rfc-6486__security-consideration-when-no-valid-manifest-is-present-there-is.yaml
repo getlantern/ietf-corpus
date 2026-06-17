@@ -1,0 +1,9 @@
+document: rfc-6486
+kind: security-consideration
+summary: When no valid manifest is present, there is no protection against deletion or replay of signed objects. The primary risk is that a superseded CRL causes an RP to accept a revoked certificate. RPs SHOULD warn of missing manifests and MAY fall back to a locally cached previous manifest.
+section: "6.2"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

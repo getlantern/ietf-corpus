@@ -1,0 +1,9 @@
+document: rfc-6487
+kind: design-rationale
+summary: A CA instance is defined as a combination of a named entity and a specific key pair, so a CA cannot roll over its key pair in place. Instead, the entity creates a new CA instance with a new key pair and migrates all subordinate products. This bounds CRL scope to certificates issued under a single key.
+section: "8"
+topics:
+    - pkix
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

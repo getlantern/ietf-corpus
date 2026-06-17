@@ -1,0 +1,9 @@
+document: rfc-6476
+kind: design-rationale
+summary: The ContentEncryptionAlgorithmIdentifier is MACed as encoded (without re-coding to DER) to protect it alongside the encrypted content; otherwise an attacker could manipulate encryption parameters (e.g., the IV) to alter decryption results without triggering a MAC failure.
+section: "4.2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

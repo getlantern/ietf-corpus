@@ -1,0 +1,10 @@
+document: rfc-6487
+kind: state-machine
+summary: 'Resource certification path validation requires: (1) subject of cert x is issuer of cert x+1; (2) cert 1 is issued by a trust anchor; (3) each cert is valid per RFC 5280 plus RPKI constraints; (4) each cert''s resources are encompassed by the issuer''s resources; (5) certificate is not revoked per issuer''s current CRL verified with the same public key.'
+section: "7.2"
+topics:
+    - pkix
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6476
+kind: design-rationale
+summary: A PRF intermediate step (deriving separate MAC-K and CEK-K from a master_secret) is required so that any rollback attack—removing the outer MAC and rewriting the envelope to plain EnvelopedData—will result in decryption failure rather than silently succeeding.
+section: "3.1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
