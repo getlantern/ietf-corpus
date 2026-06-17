@@ -1,0 +1,10 @@
+document: rfc-6591
+kind: security-consideration
+summary: 'DKIM canonicalized header and body data must not be redacted when included, because redacting overlapping regions with any in-transit alteration renders the debugging comparison meaningless. This creates a privacy tension: unredacted canonicalized data may expose private information, which is why including these fields is not required.'
+section: "6.6"
+topics:
+    - email
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

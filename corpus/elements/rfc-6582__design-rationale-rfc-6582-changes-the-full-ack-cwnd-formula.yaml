@@ -1,0 +1,9 @@
+document: rfc-6582
+kind: design-rationale
+summary: RFC 6582 changes the full-ACK cwnd formula from RFC 3782 to ensure a minimum of max(FlightSize, SMSS) + SMSS. The RFC 3782 formula could yield 1 SMSS when FlightSize is zero, causing a one-segment transmission that triggers delayed ACK at the receiver and unnecessary delays. The fix ensures at least two segments can be sent.
+section: Appendix B
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6603
+kind: design-rationale
+summary: The IPv6 subnet ID in OPTION_PD_EXCLUDE is not the full excluded prefix; instead it carries only the bits that differ from the delegated prefix (i.e., bits starting at position 'OPTION_IAPREFIX prefix-length'), left-shifted to start on an octet boundary and zero-padded. This compact encoding avoids redundantly retransmitting the common prefix bits already present in OPTION_IAPREFIX.
+section: "4.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

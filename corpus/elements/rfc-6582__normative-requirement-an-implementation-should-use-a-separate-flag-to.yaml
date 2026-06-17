@@ -1,0 +1,10 @@
+document: rfc-6582
+kind: normative-requirement
+summary: An implementation should use a separate flag to record whether it is currently in fast recovery. Relying on the duplicate ACK counter for this purpose is unreliable because the counter can be reset upon window updates and out-of-order acknowledgments.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

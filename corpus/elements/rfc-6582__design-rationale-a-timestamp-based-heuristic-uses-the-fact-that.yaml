@@ -1,0 +1,9 @@
+document: rfc-6582
+kind: design-rationale
+summary: A timestamp-based heuristic uses the fact that a hole in sequence space causes duplicate ACKs to echo the timestamp of the last data packet that advanced the cumulative ACK. If the echoed timestamp equals the stored timestamp of the last acknowledged segment, this indicates a lost segment; otherwise it indicates unnecessary retransmission.
+section: "4.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

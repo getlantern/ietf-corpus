@@ -1,0 +1,8 @@
+document: rfc-6591
+kind: design-rationale
+summary: The DKIM canonicalized header and body fields are intended to aid in identifying message alterations that invalidate DKIM signatures in transit; their data must exactly match the verifier's computation. Including redacted versions would render the fields useless for this diagnostic purpose, so they are excluded entirely when redaction is needed rather than included in redacted form.
+section: 3.2.4
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

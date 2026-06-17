@@ -1,0 +1,10 @@
+document: rfc-6582
+kind: normative-requirement
+summary: When the third duplicate ACK is received, the sender checks if the cumulative ACK covers more than 'recover'. If so, 'recover' is incremented to the highest sequence number transmitted so far and the sender enters fast retransmit. If not, the sender does not enter fast retransmit and does not reset ssthresh.
+section: "3.2"
+rfc2119_level: RECOMMENDED
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

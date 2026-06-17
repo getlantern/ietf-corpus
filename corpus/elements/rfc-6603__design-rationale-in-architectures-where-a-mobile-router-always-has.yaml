@@ -1,0 +1,10 @@
+document: rfc-6603
+kind: design-rationale
+summary: In architectures where a mobile router always has a single /64 configured on its uplink and that /64 must be aggregatable with the delegated prefix (e.g., /56), it was previously impossible to use DHCPv6-PD without advertising two separate, non-aggregatable prefixes. The OPTION_PD_EXCLUDE mechanism solves this by allowing the /64 uplink prefix to be carved out of the delegated /56.
+section: "3"
+topics:
+    - ip
+    - v6ops
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

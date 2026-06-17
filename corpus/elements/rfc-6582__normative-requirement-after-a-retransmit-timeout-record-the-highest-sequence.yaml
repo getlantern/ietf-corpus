@@ -1,0 +1,10 @@
+document: rfc-6582
+kind: normative-requirement
+summary: After a retransmit timeout, record the highest sequence number transmitted in the variable 'recover' and exit the fast recovery procedure if applicable. This prevents the fast retransmit mechanism from being re-entered spuriously when duplicate ACKs arrive from unnecessary retransmissions.
+section: "3.2"
+rfc2119_level: RECOMMENDED
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

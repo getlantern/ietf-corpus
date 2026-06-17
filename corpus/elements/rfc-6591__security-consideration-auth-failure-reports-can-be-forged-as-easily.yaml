@@ -1,0 +1,9 @@
+document: rfc-6591
+kind: security-consideration
+summary: Auth-failure reports can be forged as easily as ordinary Internet email. Threats include falsified authentication failure notifications for messages that were actually delivered, and falsified DKIM signature metadata (selector, domain, etc.). Signing reports with DKIM is suggested as mitigation, though DKIM infrastructure failures at the verifier could render such signatures untrusted.
+section: "6.2"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

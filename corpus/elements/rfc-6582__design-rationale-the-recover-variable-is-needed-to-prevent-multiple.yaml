@@ -1,0 +1,9 @@
+document: rfc-6582
+kind: design-rationale
+summary: The 'recover' variable is needed to prevent multiple congestion window reductions from a single loss event. Without it, after a retransmit timeout the sender could incorrectly enter fast retransmit on duplicate ACKs that result from unnecessary retransmissions rather than new packet losses.
+section: "4"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

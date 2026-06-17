@@ -1,0 +1,9 @@
+document: rfc-6582
+kind: state-machine
+summary: NewReno fast recovery is entered when three duplicate ACKs are received and the cumulative ACK covers more than 'recover'. Fast recovery ends either when a retransmit timeout occurs or when an ACK arrives that acknowledges all data up to and including 'recover' (a full acknowledgment). Partial ACKs keep the sender in fast recovery.
+section: "3.1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

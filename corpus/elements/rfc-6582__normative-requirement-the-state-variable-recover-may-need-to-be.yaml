@@ -1,0 +1,10 @@
+document: rfc-6582
+kind: normative-requirement
+summary: The state variable 'recover' may need to be updated when the cumulative ACK field is updated outside of fast recovery, to handle sequence number wraparound that could affect ordering between the cumulative ACK field and 'recover'. Fast recovery entry is only possible when the cumulative ACK covers more than 'recover'.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6584
+kind: design-rationale
+summary: The Combined scheme prepends a cheap Group-keyed MAC check before the expensive Digital Signature verification to mitigate DoS attacks from outside-group attackers. Anti-replay protection is mandatory in this scheme because without it replayed valid packets would pass the MAC pre-check and force receivers into costly signature verification.
+section: "6.3"
+topics:
+    - security
+    - crypto
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

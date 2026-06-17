@@ -1,0 +1,10 @@
+document: rfc-6582
+kind: normative-requirement
+summary: After cwnd is set based on the fast recovery exit procedure (step 3 of Section 3.2), cwnd must not be updated until a further event occurs (e.g., arrival of an ACK or timeout). Some implementations erroneously enter slow start or congestion avoidance immediately after the cwnd assignment.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

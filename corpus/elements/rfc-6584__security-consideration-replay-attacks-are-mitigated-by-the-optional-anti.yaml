@@ -1,0 +1,9 @@
+document: rfc-6584
+kind: security-consideration
+summary: Replay attacks are mitigated by the optional anti-replay Sequence Number mechanism. The anti-replay service is RECOMMENDED for all schemes and MUST be used in the Combined scheme. Schemes without anti-replay are stateless and therefore replay-neutral at the authentication layer, but higher-level protocol state (especially in NORM) may still be affected.
+section: "7.2"
+topics:
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6582
+kind: normative-requirement
+summary: On receiving a full acknowledgment (ACK covering up to and including 'recover'), set cwnd to either min(ssthresh, max(FlightSize, SMSS) + SMSS) or ssthresh, then exit fast recovery. If the first option is used, the minimum result is 2*SMSS to avoid sending only one segment when FlightSize is zero.
+section: "3.2"
+rfc2119_level: RECOMMENDED
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

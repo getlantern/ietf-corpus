@@ -1,0 +1,10 @@
+document: rfc-6582
+kind: normative-requirement
+summary: The data receiver should send an immediate acknowledgment for an out-of-order segment, even when that segment fills a hole in the buffer. Delaying this ACK until the delayed-ACK timer expires severely limits NewReno's benefit by postponing partial acknowledgment delivery to the sender.
+section: "5"
+rfc2119_level: RECOMMENDED
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

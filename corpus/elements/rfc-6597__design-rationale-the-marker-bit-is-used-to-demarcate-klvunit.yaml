@@ -1,0 +1,9 @@
+document: rfc-6597
+kind: design-rationale
+summary: The marker bit is used to demarcate KLVunit boundaries so that receivers can pass a KLVunit for parsing/decoding immediately upon receipt of the last RTP packet, rather than waiting for the next packet with a different timestamp to signal the end of a KLVunit.
+section: "4.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

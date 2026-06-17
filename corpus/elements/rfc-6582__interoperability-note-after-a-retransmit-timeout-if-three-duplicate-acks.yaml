@@ -1,0 +1,9 @@
+document: rfc-6582
+kind: interoperability-note
+summary: After a retransmit timeout, if three duplicate ACKs arrive that do not cover more than 'recover', this may indicate either unnecessary retransmissions (no action needed) or a dropped retransmitted packet (fast retransmit would help). The retransmit timer serves as the backup mechanism for packet loss detection in this ambiguous case.
+section: "4"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

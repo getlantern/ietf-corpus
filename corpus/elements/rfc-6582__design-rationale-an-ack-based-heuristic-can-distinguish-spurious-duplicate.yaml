@@ -1,0 +1,9 @@
+document: rfc-6582
+kind: design-rationale
+summary: 'An ACK-based heuristic can distinguish spurious duplicate ACKs from those indicating real loss: if cwnd > SMSS and the difference between highest_ack and prev_highest_ack is at most 4*SMSS, duplicate ACKs indicate a lost segment; otherwise they likely result from unnecessary retransmissions. The cwnd check prevents fast retransmit immediately after a timeout.'
+section: "4.1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

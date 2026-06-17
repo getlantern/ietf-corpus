@@ -1,0 +1,10 @@
+document: rfc-6582
+kind: normative-requirement
+summary: When leaving fast recovery, implementations should take measures to avoid a burst of data, such as limiting the number of packets sent per ACK (maxburst). This is necessary because ACK losses or window updates during fast recovery can cause the sender to underestimate retransmissions already in flight.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

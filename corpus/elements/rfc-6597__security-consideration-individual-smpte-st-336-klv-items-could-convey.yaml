@@ -1,0 +1,10 @@
+document: rfc-6597
+kind: security-consideration
+summary: Individual SMPTE ST 336 KLV items could convey active content in a particular application. Accepting active content from streams lacking authenticity or integrity protection risks attacks using spoofed packets; receivers incapable of decoding such items are not at risk since unknown items are skipped per SMPTE ST 336 rules.
+section: "8"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

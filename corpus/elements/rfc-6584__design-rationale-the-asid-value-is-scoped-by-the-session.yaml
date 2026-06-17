@@ -1,0 +1,9 @@
+document: rfc-6584
+kind: design-rationale
+summary: The ASID value is scoped by the session identifier tuple ({sender IP; TSI} for ALC, {dst multicast address; dst port} or {src IP; dst multicast; dst port} for NORM) rather than the host participation tuple, so different sessions may reuse the same ASID values for different schemes without ambiguity.
+section: "2"
+topics:
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

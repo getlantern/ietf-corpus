@@ -1,0 +1,10 @@
+document: rfc-6584
+kind: wire-format
+summary: 'The RSA Digital Signature EXT_AUTH header extension contains: HET=1 (8 bits), HEL (8 bits), ASID (4 bits), rsvd (3 bits), AR flag (1 bit), SN (8 bits when AR=0, 40 bits when AR=1), variable-length Signature field (multiple of 32 bits, padded with zeros), and optional Padding. For a 1024-bit key, the extension is 132 bytes total.'
+section: "3.1"
+topics:
+    - security
+    - crypto
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

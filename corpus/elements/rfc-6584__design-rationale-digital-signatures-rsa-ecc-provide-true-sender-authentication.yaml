@@ -1,0 +1,10 @@
+document: rfc-6584
+kind: design-rationale
+summary: Digital Signatures (RSA/ECC) provide true sender authentication and non-delayed verification but impose high computational and transmission overhead. Group-keyed MACs are efficient for high-rate flows but cannot protect against attacks from inside the group. TESLA is also efficient but requires loose time synchronization and delayed authentication. These trade-offs determine the appropriate scheme per use case.
+section: "1"
+topics:
+    - security
+    - crypto
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

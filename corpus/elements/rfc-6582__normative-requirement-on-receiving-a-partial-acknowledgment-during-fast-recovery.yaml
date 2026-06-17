@@ -1,0 +1,10 @@
+document: rfc-6582
+kind: normative-requirement
+summary: On receiving a partial acknowledgment during fast recovery, retransmit the first unacknowledged segment, deflate the congestion window by the amount of new data acknowledged, and add back SMSS bytes if at least one SMSS of new data was acknowledged. Do not exit fast recovery.
+section: "3.2"
+rfc2119_level: RECOMMENDED
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

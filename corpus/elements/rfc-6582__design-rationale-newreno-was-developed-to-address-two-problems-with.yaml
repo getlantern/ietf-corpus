@@ -1,0 +1,9 @@
+document: rfc-6582
+kind: design-rationale
+summary: 'NewReno was developed to address two problems with Reno TCP when multiple packet losses occur in a single window: Reno often takes a retransmit timeout, and even when avoided, multiple fast retransmits and window reductions occur. In the absence of SACK, NewReno uses partial acknowledgments to infer additional losses without requiring a timeout.'
+section: "1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

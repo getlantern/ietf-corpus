@@ -1,0 +1,10 @@
+document: rfc-6584
+kind: normative-requirement
+summary: At the receiver, for each incoming packet the receiver MUST verify that the Sequence Number does not duplicate any prior packet's SN. If the preliminary check fails the packet is discarded without cryptographic processing; if the integrity check subsequently fails the packet MUST be discarded.
+section: 3.3.2
+rfc2119_level: MUST
+topics:
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

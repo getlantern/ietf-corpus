@@ -1,0 +1,9 @@
+document: rfc-6582
+kind: design-rationale
+summary: The congestion window is deflated after a partial acknowledgment because the window was likely considerably inflated during fast recovery. Without deflation, the sender might transmit nearly a full window of data back-to-back, causing a burst. Partial window deflation attempts to ensure approximately ssthresh data remains outstanding when fast recovery ends.
+section: "3.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
