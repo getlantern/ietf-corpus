@@ -1,0 +1,9 @@
+document: rfc-6347
+kind: wire-format
+summary: 'The DTLSPlaintext record adds two fields to the TLS 1.2 record: a uint16 epoch (incremented on every cipher state change) and a uint48 sequence_number. Version is encoded as {254, 253} for DTLS 1.2, the 1''s complement of the TLS 1.2 version, ensuring TLS and DTLS records are easily distinguished.'
+section: "4.1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

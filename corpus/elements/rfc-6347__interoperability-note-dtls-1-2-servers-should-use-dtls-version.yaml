@@ -1,0 +1,8 @@
+document: rfc-6347
+kind: interoperability-note
+summary: DTLS 1.2 servers SHOULD use DTLS version 1.0 in the HelloVerifyRequest server_version field to avoid version negotiation during the initial handshake. Clients MUST treat the version in HelloVerifyRequest only as a packet-format indicator, not as a signal of the server's DTLS version or the version that will be negotiated.
+section: 4.2.1
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

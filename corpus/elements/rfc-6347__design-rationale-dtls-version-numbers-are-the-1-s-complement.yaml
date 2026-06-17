@@ -1,0 +1,8 @@
+document: rfc-6347
+kind: design-rationale
+summary: DTLS version numbers are the 1's complement of TLS version numbers (DTLS 1.2 = {254, 253}), and future DTLS versions decrease numerically while conceptual version numbers increase. This maximal spacing between TLS and DTLS version values ensures records from the two protocols are easily distinguished on the wire.
+section: "4.1"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

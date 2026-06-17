@@ -1,0 +1,10 @@
+document: rfc-6347
+kind: normative-requirement
+summary: Each DTLS record MUST fit within a single datagram. Records may not span datagrams. Multiple DTLS records may be placed in one datagram, encoded consecutively, but the first byte of the datagram payload must be the beginning of a record.
+section: 4.1.1
+rfc2119_level: MUST
+topics:
+    - tls
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

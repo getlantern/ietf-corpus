@@ -1,0 +1,8 @@
+document: rfc-6352
+kind: interoperability-note
+summary: Servers supporting multiple vCard versions must accept all advertised media types on input. Clients may request a specific version via the HTTP Accept header on GET or via CARDDAV:address-data attributes in REPORT. When conversion is impossible, the server returns the CARDDAV:supported-address-data-conversion precondition (HTTP 415 per-resource in multiget).
+section: 5.1.1
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

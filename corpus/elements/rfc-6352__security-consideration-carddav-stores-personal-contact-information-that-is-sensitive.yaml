@@ -1,0 +1,9 @@
+document: rfc-6352
+kind: security-consideration
+summary: CardDAV stores personal contact information that is sensitive. Servers MUST support TLS (RFC 5246) with certificate validation per RFC 5280. WebDAV ACL provides per-collection and per-resource access control. Clients should use authenticated sessions and validate server certificates to prevent interception or spoofing.
+section: "13"
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

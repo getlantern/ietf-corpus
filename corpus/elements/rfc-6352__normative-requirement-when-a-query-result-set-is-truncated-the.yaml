@@ -1,0 +1,9 @@
+document: rfc-6352
+kind: normative-requirement
+summary: When a query result set is truncated, the response MUST use HTTP 207 (Multi-Status) with a 507 (Insufficient Storage) status on the Request-URI and SHOULD include a DAV:error element with the DAV:number-of-matches-within-limits precondition.
+section: 8.6.2
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

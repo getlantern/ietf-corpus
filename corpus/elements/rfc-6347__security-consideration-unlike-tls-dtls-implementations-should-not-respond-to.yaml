@@ -1,0 +1,10 @@
+document: rfc-6347
+kind: security-consideration
+summary: Unlike TLS, DTLS implementations SHOULD NOT respond to invalid records by terminating the connection. Generating fatal alerts in response to forged or invalid records over UDP makes the implementation highly susceptible to DoS attacks because UDP source addresses are trivially spoofable; this practice is NOT RECOMMENDED over UDP.
+section: 4.1.2.7
+topics:
+    - tls
+    - security
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

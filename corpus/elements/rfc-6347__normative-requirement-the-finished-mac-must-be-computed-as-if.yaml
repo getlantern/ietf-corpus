@@ -1,0 +1,11 @@
+document: rfc-6347
+kind: normative-requirement
+summary: The Finished MAC MUST be computed as if each handshake message had been sent as a single fragment, removing sensitivity to handshake message fragmentation. DTLS-specific header fields (message_seq, fragment_offset, fragment_length) are included in hash calculations for CertificateVerify and Finished.
+section: 4.2.6
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

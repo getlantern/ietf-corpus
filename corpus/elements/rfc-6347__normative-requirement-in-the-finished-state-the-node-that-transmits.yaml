@@ -1,0 +1,10 @@
+document: rfc-6347
+kind: normative-requirement
+summary: In the FINISHED state, the node that transmits the last flight MUST respond to a retransmit of the peer's last flight with a retransmit of its own last flight, for at least twice the default MSL. This prevents deadlock when the final flight is lost.
+section: 4.2.4
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

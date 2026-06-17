@@ -1,0 +1,11 @@
+document: rfc-6347
+kind: normative-requirement
+summary: The DTLS MAC uses a 64-bit sequence number formed by concatenating the epoch and the sequence_number in wire order, replacing TLS's implicit sequence number. If a DTLS implementation chooses to generate an alert on bad MAC, it MUST generate a fatal bad_record_mac alert.
+section: 4.1.2.1
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

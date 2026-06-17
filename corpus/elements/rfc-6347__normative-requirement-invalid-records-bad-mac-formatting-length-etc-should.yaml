@@ -1,0 +1,10 @@
+document: rfc-6347
+kind: normative-requirement
+summary: Invalid records (bad MAC, formatting, length, etc.) SHOULD be silently discarded rather than triggering connection termination. If an implementation generates an alert for an invalid record, it MUST use a fatal-level alert; sending non-fatal alerts is prohibited to avoid error oracle attacks.
+section: 4.1.2.7
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6347
+kind: design-rationale
+summary: DTLS bans stream ciphers (including RC4) because stream ciphers maintain cryptographic context between records and cannot be randomly accessed. DTLS records must be independently decryptable, which is incompatible with stream cipher operation. Explicit sequence numbers solve the complementary implicit-sequence-number problem.
+section: "3.1"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

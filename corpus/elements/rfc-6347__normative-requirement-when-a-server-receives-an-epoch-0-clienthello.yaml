@@ -1,0 +1,10 @@
+document: rfc-6347
+kind: normative-requirement
+summary: When a server receives an epoch=0 ClientHello on an existing association, it SHOULD proceed with a new handshake but MUST NOT destroy the existing association until the client has demonstrated reachability by completing a cookie exchange or delivering a verifiable Finished message.
+section: 4.2.8
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

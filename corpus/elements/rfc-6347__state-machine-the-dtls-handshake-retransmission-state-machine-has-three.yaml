@@ -1,0 +1,9 @@
+document: rfc-6347
+kind: state-machine
+summary: 'The DTLS handshake retransmission state machine has three states: PREPARING (compute next flight, buffer messages), SENDING (transmit flight, set retransmit timer), and WAITING (await response). Exits from WAITING occur on: timer expiry (→ SENDING), receipt of retransmitted flight from peer (→ SENDING), or receipt of the next expected flight (→ PREPARING or FINISHED).'
+section: 4.2.4
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6347
+kind: security-consideration
+summary: 'DTLS servers that do not use the cookie exchange are vulnerable to being used as DoS amplifiers: an attacker sends ClientHellos with a forged source address, causing the server to send large Certificate messages to the victim. Servers SHOULD use the cookie exchange unless amplification is clearly not a threat.'
+section: "5"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
