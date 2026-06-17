@@ -1,0 +1,9 @@
+document: rfc-5790
+kind: state-machine
+summary: 'On receiving Source-List-Change and Filter-Mode-Change Records, the LW-IGMPv3 router applies: ALLOW(B) → A+B, (B)=GMI; BLOCK(B) → A unchanged, send Q(G,A*B); TO_IN(B) → A+B, (B)=GMI, send Q(G,A-B), and if G_Timer>0 also send Q(G); TO_EX({}) → A unchanged, G_Timer=GMI.'
+section: "5.4"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

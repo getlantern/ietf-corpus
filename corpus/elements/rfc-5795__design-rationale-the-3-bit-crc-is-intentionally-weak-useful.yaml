@@ -1,0 +1,9 @@
+document: rfc-5795
+kind: design-rationale
+summary: The 3-bit CRC is intentionally weak—useful only for probabilistic context damage detection across multiple packets—while the 7-bit CRC is strong enough to validate a context repair from a single packet. This distinction drives the rule that headers with only a 3-bit CRC should not be used for context repair after context invalidation.
+section: 5.3.1.2
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

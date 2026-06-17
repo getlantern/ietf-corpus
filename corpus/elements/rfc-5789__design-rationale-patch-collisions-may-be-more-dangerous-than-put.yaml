@@ -1,0 +1,8 @@
+document: rfc-5789
+kind: design-rationale
+summary: PATCH collisions may be more dangerous than PUT collisions because some patch formats need to operate from a known base-point; applying them to an unexpected state will corrupt the resource rather than simply overwrite it, motivating the conditional-request SHOULD.
+section: "2"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

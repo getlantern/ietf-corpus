@@ -1,0 +1,9 @@
+document: rfc-5789
+kind: security-consideration
+summary: A document that is patched might be more likely to be corrupted than one overridden in entirety. This risk can be mitigated through conditional requests using ETags and the If-Match header. If a PATCH request fails or no response is received, the client SHOULD issue a GET (bypassing caches) to determine the resource state.
+section: "5"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

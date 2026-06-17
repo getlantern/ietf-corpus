@@ -1,0 +1,9 @@
+document: rfc-5793
+kind: normative-requirement
+summary: If a batch is received with an invalid B-Type value, the recipient MUST ignore the batch and send a fatal Invalid Parameter error in a CLOSE batch. If the batch type is valid but not permitted in the current state, the recipient MUST send a fatal Unexpected Batch Type error in a CLOSE batch.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

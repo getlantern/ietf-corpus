@@ -1,0 +1,10 @@
+document: rfc-5790
+kind: normative-requirement
+summary: An LW-IGMPv3 or LW-MLDv2 host SHOULD NOT invoke (*,G) join (TO_EX({})) or (*,G) leave (TO_IN({})) for applications whose multicast addresses are in the SSM address range. An upstream LW-IGMPv3/LW-MLDv2 router MUST NOT establish forwarding state upon receipt of such messages for SSM addresses and MAY log an error.
+section: "7.1"
+rfc2119_level: MUST NOT
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5795
+kind: normative-requirement
+summary: The decompressor MUST maintain established contexts within the negotiated MAX_CID space until either the CID is re-used by a new context or the channel is taken down. The PROFILES set after negotiation MUST NOT include more than one variant of the same profile (same 8 LSBs), and the compressor MUST NOT compress using a profile not in PROFILES.
+section: 5.1.2
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

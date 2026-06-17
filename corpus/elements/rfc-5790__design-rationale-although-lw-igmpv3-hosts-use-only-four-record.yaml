@@ -1,0 +1,9 @@
+document: rfc-5790
+kind: design-rationale
+summary: Although LW-IGMPv3 hosts use only four record types (ALLOW, BLOCK, TO_IN, TO_EX), using IS_EX({}) instead of TO_EX({}) and IS_IN(x) instead of ALLOW(x) in query responses is not prohibited. Because the router processes both pairs identically per full IGMPv3 rules, this does not introduce interoperability issues.
+section: "4.4"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

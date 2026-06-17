@@ -1,0 +1,8 @@
+document: rfc-5793
+kind: design-rationale
+summary: Dynamic identifiers (assigned per-session Posture Collector/Validator IDs) were chosen over static identifiers to avoid the brittleness of a static model. Static IDs fail when two components share the same ID; dynamic IDs are broker-assigned and unique per session. The tradeoff is that directed routing requires at least one prior message exchange to learn the peer's dynamic identifier.
+section: 2.1.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

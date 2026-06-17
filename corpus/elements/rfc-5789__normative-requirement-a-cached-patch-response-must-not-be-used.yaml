@@ -1,0 +1,9 @@
+document: rfc-5789
+kind: normative-requirement
+summary: A cached PATCH response MUST NOT be used to respond to other methods, in particular another PATCH request. It can only be used to respond to subsequent GET and HEAD requests, and only if it contains explicit freshness information and a matching Content-Location header.
+section: "2"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

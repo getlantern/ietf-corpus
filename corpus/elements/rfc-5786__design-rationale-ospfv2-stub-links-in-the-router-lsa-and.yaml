@@ -1,0 +1,9 @@
+document: rfc-5786
+kind: design-rationale
+summary: OSPFv2 stub links in the router LSA and OSPFv3 intra-prefix LSAs are insufficient to learn all local addresses of a router; for subnetted P2P interfaces the stub link ID is the subnet address, and for non-subnetted interfaces it is the neighbor address, so neither reliably identifies loopback or non-TE interface addresses needed for CSPF-computed MPLS TE LSPs.
+section: "1.1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

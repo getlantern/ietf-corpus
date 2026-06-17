@@ -1,0 +1,9 @@
+document: rfc-5790
+kind: design-rationale
+summary: Because hosts in LW-IGMPv3 only send INCLUDE requests and EXCLUDE(*,G) joins (never EXCLUDE with a non-null source list), multicast routers no longer need to maintain an EXCLUDE filter-mode. The router state model is simplified to (multicast address, group timer, source records), eliminating complex filter-mode transitions.
+section: "3.2"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

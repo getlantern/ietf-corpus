@@ -1,0 +1,9 @@
+document: rfc-5793
+kind: normative-requirement
+summary: When the FATAL flag is set in PB-Error, the recipient MUST terminate the PB-TNC session after processing the batch without sending any response. The sender of a fatal error MUST NOT process the triggering batch and MUST terminate after sending the CLOSE batch containing the error. Any PB-Error generated while processing a PB-Error MUST itself be fatal to avoid infinite error loops.
+section: "4.9"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

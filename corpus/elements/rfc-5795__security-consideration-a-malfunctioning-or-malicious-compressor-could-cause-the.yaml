@@ -1,0 +1,9 @@
+document: rfc-5795
+kind: security-consideration
+summary: A malfunctioning or malicious compressor could cause the decompressor to reconstruct packets with valid headers but mismatched content; ROHC's internal CRC reduces this probability, and end-to-end authentication and integrity mechanisms provide further protection. An attacker injecting bogus IR, IR-DYN, or feedback packets can degrade compression efficiency as a DoS attack.
+section: "9"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

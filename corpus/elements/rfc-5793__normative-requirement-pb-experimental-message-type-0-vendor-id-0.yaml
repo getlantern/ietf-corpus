@@ -1,0 +1,9 @@
+document: rfc-5793
+kind: normative-requirement
+summary: PB-Experimental (message type 0, Vendor ID 0) MUST NOT be used in production environments or products. A production implementation receiving it MUST ignore it unless NOSKIP is set, in which case it MUST respond with a fatal Unsupported Mandatory Message error in a CLOSE batch.
+section: "4.4"
+rfc2119_level: MUST NOT
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5789
+kind: design-rationale
+summary: A new HTTP method is necessary to improve interoperability and prevent errors because PUT is defined to overwrite a resource entirely, and reusing it for partial changes would confuse proxies, caches, clients, and servers. POST is used without broad interoperability for patching because there is no standard way to discover patch format support.
+section: "1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

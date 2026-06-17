@@ -1,0 +1,9 @@
+document: rfc-5790
+kind: design-rationale
+summary: EXCLUDE mode with non-null source lists is rarely used in practice because users typically specify desired sources, not undesired ones. Even when a user blocks sources, other hosts on the shared network may still request those sources, making the filter ineffective. LW-IGMPv3 drops this operation entirely to simplify both host and router behavior.
+section: "1"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

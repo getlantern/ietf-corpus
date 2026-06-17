@@ -1,0 +1,9 @@
+document: rfc-5793
+kind: design-rationale
+summary: Vendor IDs (SMI PENs) prefix all extensible value spaces (Message Types, PA Subtypes, Remediation Parameters Types, Error Codes) to allow vendor-specific extensions without central coordination. Vendor ID 0 means IANA-registered; non-zero values are managed by the owning vendor. Vendor-specific messages with unknown types are skipped unless NOSKIP is set.
+section: "2.2"
+topics:
+    - security
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

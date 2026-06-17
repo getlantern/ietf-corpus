@@ -1,0 +1,9 @@
+document: rfc-5790
+kind: state-machine
+summary: 'Interface state-change rules for LW-IGMPv3 hosts: INCLUDE(A)→INCLUDE(B) sends ALLOW(B-A) and BLOCK(A-B); INCLUDE(A)→EXCLUDE({}) sends TO_EX({}); INCLUDE({})→EXCLUDE({}) sends TO_EX({}); EXCLUDE({})→INCLUDE(B) sends TO_IN(B). State-Change Reports are retransmitted [Robustness Variable]-1 more times at random intervals within [0, Unsolicited Report Interval].'
+section: "4.2"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

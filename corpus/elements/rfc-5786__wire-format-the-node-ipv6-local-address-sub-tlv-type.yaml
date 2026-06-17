@@ -1,0 +1,10 @@
+document: rfc-5786
+kind: wire-format
+summary: 'The Node IPv6 Local Address sub-TLV (type 2) encodes each local IPv6 address using OSPFv3 procedures as a three-field tuple: PrefixLength (8 bits), PrefixOptions (8 bits, per RFC 5340), and Address Prefix encoded as an even multiple of 32-bit words with zero padding, consuming ceil((PrefixLength + 31) / 32) 32-bit words.'
+section: "4.1"
+topics:
+    - routing
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

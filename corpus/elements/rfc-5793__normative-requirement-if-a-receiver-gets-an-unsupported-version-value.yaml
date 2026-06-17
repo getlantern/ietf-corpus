@@ -1,0 +1,9 @@
+document: rfc-5793
+kind: normative-requirement
+summary: If a receiver gets an unsupported Version value, it MUST respond with a CLOSE batch containing only a fatal Version Not Supported error, with the Version header field set to 2. Implementations responding to a supported version MUST use the same version number. Reserved version values 0x00, 0x09, 0x0a, 0x0d, 0x20, and 0x3c MUST NOT be used.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

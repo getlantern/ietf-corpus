@@ -1,0 +1,8 @@
+document: rfc-5793
+kind: interoperability-note
+summary: On half-duplex transports, the Posture Broker Server cannot send SRETRY from the Decided state because it sent the last batch (RESULT). Instead, the server must close the PT connection without a CLOSE batch and initiate a new PB-TNC session. This limitation does not apply when a full-duplex transport is used.
+section: "3.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

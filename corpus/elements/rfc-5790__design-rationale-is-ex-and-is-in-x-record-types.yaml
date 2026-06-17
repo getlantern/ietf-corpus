@@ -1,0 +1,9 @@
+document: rfc-5790
+kind: design-rationale
+summary: IS_EX({}) and IS_IN(x) record types are eliminated from LW-IGMPv3 host behavior. IS_EX({}) is subsumed by TO_EX({}) because a router creates identical state for both; IS_IN(x) is replaced by ALLOW(x) because router processing is identical. This reduces the set of report types a host must generate from six to four (ALLOW, BLOCK, TO_IN, TO_EX).
+section: "4.4"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
