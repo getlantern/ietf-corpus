@@ -1,0 +1,9 @@
+document: rfc-5282
+kind: design-rationale
+summary: This document adopts the RFC 5116 interface where authenticated encryption produces a single ciphertext (C) output incorporating the integrity check, rather than the separate ciphertext and ICV outputs used by RFC 4106/4309. For AES GCM and AES CCM, the RFC 5116 C output is simply the concatenation of the RFC 4106/4309 ciphertext and ICV.
+section: "2"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

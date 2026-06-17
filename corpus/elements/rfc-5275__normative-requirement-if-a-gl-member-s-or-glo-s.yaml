@@ -1,0 +1,11 @@
+document: rfc-5275
+kind: normative-requirement
+summary: If a GL member's or GLO's encryption certificate has been revoked, the GLA or GLO MUST NOT use that certificate to generate the EnvelopedData encapsulating a glProvideCert request. Similarly, a GL member MUST NOT use a revoked encryption certificate to encapsulate a glUpdateCert request.
+section: 3.1.11
+rfc2119_level: MUST NOT
+topics:
+    - crypto
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5275
+kind: design-rationale
+summary: The recipientsNotMutuallyAware flag was introduced to support GLs where policy prohibits members from knowing who else is on the list. A single consolidated glKey message would expose member identities through RecipientInfos, so separate per-recipient messages are required when this flag is TRUE.
+section: 3.1.1
+topics:
+    - crypto
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

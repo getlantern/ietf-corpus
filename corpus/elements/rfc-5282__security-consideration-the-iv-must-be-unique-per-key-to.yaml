@@ -1,0 +1,10 @@
+document: rfc-5282
+kind: security-consideration
+summary: The IV MUST be unique per key to prevent nonce reuse, which would catastrophically compromise AES GCM and AES CCM security. The encryptor MAY use any method ensuring uniqueness, such as a counter or LFSR. All security considerations from RFC 5116, RFC 4106 (Section 10), and RFC 4309 (Section 9) apply; use of AES GCM/CCM with IKEv2 does not create additional security considerations beyond those for ESP.
+section: "11"
+topics:
+    - security
+    - crypto
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

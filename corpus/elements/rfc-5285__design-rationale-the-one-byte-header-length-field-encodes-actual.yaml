@@ -1,0 +1,9 @@
+document: rfc-5285
+kind: design-rationale
+summary: The one-byte header length field encodes (actual_length − 1), allowing values 1–16 bytes rather than 0–15. This specifically enables carriage of 16-byte payloads (a common length for labels and identifiers) at the cost of losing the ability to represent zero-length values, which would often require padding anyway.
+section: "4.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

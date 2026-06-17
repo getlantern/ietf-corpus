@@ -1,0 +1,10 @@
+document: rfc-5282
+kind: design-rationale
+summary: IKEv1 separates encryption from data integrity (via separate Hash or Signature Payloads), which prevents use of authenticated encryption. IKEv2 was designed with an Encrypted Payload that associates encryption and integrity protection together (modeled on ESP), enabling AEAD algorithm usage that is impossible with IKEv1.
+section: "1"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

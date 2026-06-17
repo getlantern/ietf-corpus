@@ -1,0 +1,9 @@
+document: rfc-5286
+kind: design-rationale
+summary: 'A per-next-hop LFA simplification computes a single link-protecting LFA per outgoing next-hop rather than per destination, reducing computation cost. This may reduce coverage: in ECMP topologies, a next-hop that has no per-hop LFA might still have an LFA when considering the specific destination prefix.'
+section: "3.8"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

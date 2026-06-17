@@ -1,0 +1,9 @@
+document: rfc-5286
+kind: design-rationale
+summary: The loop-free condition (Inequality 1) ensures neighbor N will not route back through S to reach D. A more restrictive downstream path criterion (D_opt(N,D) < D_opt(S,D)) prevents micro-loops in more complex failure scenarios such as node failures, at the cost of reduced coverage.
+section: "1"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

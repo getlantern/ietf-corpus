@@ -1,0 +1,8 @@
+document: rfc-5277
+kind: state-machine
+summary: A subscription session transitions from normal NETCONF session → active subscription (on <create-subscription> success) → replay phase (if <startTime> specified, ends with <replayComplete>) → live notification phase → terminated (on <close-session>, <kill-session>, transport close, or <stopTime> reached, followed by <notificationComplete> if stopTime was set).
+section: "3.7"
+topics:
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5286
+kind: normative-requirement
+summary: A router MUST NOT use an alternate next-hop along a link whose cost or reverse cost is LSInfinity (OSPF) or maximum cost (IS-IS), or where the IS-IS overload bit is set. For OSPF, if all links from S to neighbor N_i have reverse cost LSInfinity, S MUST NOT use N_i as an alternate.
+section: "3.5"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5280
+kind: security-consideration
+summary: 'Using HTTPS or similar protected schemes in CRL distribution points, authority information access, or subject information access extensions creates a circular dependency: validating the certificate requires fetching a resource that itself requires certificate validation. Implementations must avoid this bootstrapping problem.'
+section: "8"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

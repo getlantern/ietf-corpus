@@ -1,0 +1,9 @@
+document: rfc-5286
+kind: design-rationale
+summary: When a node fails and only link-protecting LFAs were installed, both S and the alternate neighbor N may simultaneously redirect traffic to each other, causing a forwarding micro-loop. Node-protecting LFAs or downstream paths prevent this by ensuring N's path to D does not transit E.
+section: "1.1"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

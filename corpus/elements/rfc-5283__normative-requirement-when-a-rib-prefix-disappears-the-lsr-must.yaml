@@ -1,0 +1,10 @@
+document: rfc-5283
+kind: normative-requirement
+summary: When a RIB prefix disappears, the LSR MUST check all FECs using that prefix as best match. If another RIB prefix matches, LDP MUST use it; otherwise the LSR MUST remove the FEC binding and send a Label Withdraw message.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

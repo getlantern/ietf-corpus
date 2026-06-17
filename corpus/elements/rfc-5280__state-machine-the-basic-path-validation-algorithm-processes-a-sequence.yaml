@@ -1,0 +1,9 @@
+document: rfc-5280
+kind: state-machine
+summary: 'The basic path validation algorithm processes a sequence of n certificates. For each certificate i (1 to n), it verifies the signature, validity period, name chaining (issuer[i] == subject[i-1]), revocation status, and extension constraints. States track: valid_policy_tree, working_public_key, working_issuer_name, explicit_policy, inhibit_anyPolicy, and policy_mapping inhibit counters.'
+section: "6.1"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

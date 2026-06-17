@@ -1,0 +1,11 @@
+document: rfc-5286
+kind: normative-requirement
+summary: When a next-hop failure is detected, the router SHOULD remove the failed primary next-hop and install the pre-computed loop-free alternate if not already installed. The alternate MUST only be used for traffic routed according to the shortest path; multicast traffic is explicitly out of scope.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - routing
+    - ip
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

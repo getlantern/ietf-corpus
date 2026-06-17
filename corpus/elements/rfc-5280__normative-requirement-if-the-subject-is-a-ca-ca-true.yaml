@@ -1,0 +1,9 @@
+document: rfc-5280
+kind: normative-requirement
+summary: If the subject is a CA (cA=TRUE in basicConstraints), the subject field MUST be populated with a non-empty DN matching the issuer field in all certificates issued by that CA. If subject naming is only in subjectAltName, the subject MUST be an empty sequence and subjectAltName MUST be critical.
+section: 4.1.2.6
+rfc2119_level: MUST
+topics:
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

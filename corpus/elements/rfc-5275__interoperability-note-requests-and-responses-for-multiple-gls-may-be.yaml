@@ -1,0 +1,9 @@
+document: rfc-5275
+kind: interoperability-note
+summary: 'Requests and responses for multiple GLs may be combined in one PKIData or PKIResponse using cmsSequence, but a separate cmsSequence MUST be used for each different GL. Processing priority is defined as: glUseKEK before glAddMember, glRekey before glAddMember, and glDeleteMember before glRekey.'
+section: 3.2.2
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

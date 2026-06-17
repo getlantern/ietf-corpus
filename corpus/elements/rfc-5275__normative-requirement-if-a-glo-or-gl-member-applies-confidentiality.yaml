@@ -1,0 +1,10 @@
+document: rfc-5275
+kind: normative-requirement
+summary: If a GLO or GL member applies confidentiality to a request, the EnvelopedData MUST include the GLA as a recipient. If the GLA forwards the request to the GLO, the GLA MUST decrypt the EnvelopedData, strip the confidentiality layer, and apply a new EnvelopedData with the GLO as recipient.
+section: 3.2.1.2
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

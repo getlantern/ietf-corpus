@@ -1,0 +1,10 @@
+document: rfc-5285
+kind: security-consideration
+summary: Header extensions have the same security coverage as the RTP header itself. When SRTP is used, the RTP payload may be encrypted and integrity protected while the header is at most integrity protected. Therefore, placing sensitive information in header extensions is inappropriate unless the entire RTP packet is protected by a lower-layer protocol providing both confidentiality and integrity.
+section: "8"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
