@@ -1,0 +1,10 @@
+document: rfc-6228
+kind: normative-requirement
+summary: A 199 response SHOULD NOT contain an SDP offer/answer message body unless required by RFC 3264 rules. If an INVITE contains no SDP offer and the 199 response is the first reliably sent response, the 199 is required to contain an SDP offer; in that case the UAS SHOULD send it unreliably, or include an SDP offer with no 'm=' lines.
+section: "8"
+rfc2119_level: SHOULD NOT
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6228
+kind: normative-requirement
+summary: 'A forking proxy MUST generate and send a 199 response upstream for each terminated early dialog when: it does not intend to forward the triggering non-2xx final response immediately; the UAC indicated ''199'' support; the UAC has not required reliable provisional responses (''100rel'' in Require/Proxy-Require); the proxy has not already forwarded a 199 for that dialog; and no final response has already been sent for any early dialog.'
+section: "6"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

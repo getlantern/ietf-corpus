@@ -1,0 +1,9 @@
+document: rfc-6230
+kind: normative-requirement
+summary: Any Framework message that contains an associated payload MUST include both 'Content-Type' and 'Content-Length' headers. If no payload is present, the 'Content-Length' header MUST have a value of '0'. A Control Client MUST also include a 'Control-Package' header identifying the target package in every CONTROL request.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

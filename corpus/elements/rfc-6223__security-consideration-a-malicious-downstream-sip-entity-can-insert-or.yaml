@@ -1,0 +1,10 @@
+document: rfc-6223
+kind: security-consideration
+summary: A malicious downstream SIP entity can insert or modify "keep" parameter values in non-topmost Via header fields of forwarded responses. A proxy that blindly forwards responses without inspecting the new topmost Via after stripping its own entry may unexpectedly start receiving STUN requests. Proxies should remove "keep" values from non-topmost Via fields before forwarding.
+section: "10"
+topics:
+    - sip
+    - security
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6232
+kind: security-consideration
+summary: Using the POI TLV with authentication (RFC 5304 or RFC 5310) will cause legacy systems in strict conformance with those RFCs to discard purges, potentially compromising routing database consistency. Therefore, all implementations in an authentication domain MUST be upgraded to receive the POI TLV before any IS is permitted to generate a purge containing it.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

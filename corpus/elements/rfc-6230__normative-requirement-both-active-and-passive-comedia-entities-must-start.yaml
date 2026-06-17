@@ -1,0 +1,9 @@
+document: rfc-6230
+kind: normative-requirement
+summary: Both active and passive COMEDIA entities MUST start a keep-alive timer equal to the negotiated 'Keep-Alive' value. The active entity MUST send K-ALIVE before the timer fires (RECOMMENDED at 80% of the timer interval). If the passive entity receives no K-ALIVE before its timer fires, it MUST tear down the SIP INVITE dialog and recover Control Channel resources.
+section: 6.3.3
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

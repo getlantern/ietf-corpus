@@ -1,0 +1,8 @@
+document: rfc-6230
+kind: state-machine
+summary: 'After a Control Channel TCP connection is established, the UA in the active COMEDIA role MUST send a SYNC request containing the ''Dialog-ID'' header before any other signaling. States are: (1) connected-uncorrelated → send SYNC with local cfw-id; (2) await 200 response; (3) on 200: correlated/operational; on 481: dialog does not exist, tear down; on timeout: tear down and send SIP BYE.'
+section: "6"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6228
+kind: design-rationale
+summary: The UAS normally should not send a 199 response when forking proxies are present, because proxies are better positioned to detect which early dialogs were terminated by a received non-2xx response. A UAS may deviate from this default if it knows that intermediate proxies lack 199 support, or if its deployment environment mandates sending 199 before non-2xx final responses.
+section: "5"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

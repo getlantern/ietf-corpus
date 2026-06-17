@@ -1,0 +1,11 @@
+document: rfc-6222
+kind: privacy-consideration
+summary: A fixed (persistent) RTCP CNAME allows separate RTP sessions to be correlated, undermining IPv6 privacy addresses (RFC 4941) and IPv4 NAPT obfuscation. In telephony and similar environments, implementations should either encrypt SRTCP or use per-session CNAMEs to mitigate session correlation.
+section: "6.2"
+topics:
+    - rtp
+    - realtime
+    - privacy
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

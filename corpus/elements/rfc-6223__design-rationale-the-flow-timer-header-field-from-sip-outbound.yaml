@@ -1,0 +1,9 @@
+document: rfc-6223
+kind: design-rationale
+summary: The Flow-Timer header field from SIP Outbound only travels between a UA and an edge proxy, so a single Flow-Timer value cannot carry different recommended frequencies for different hops. The "keep" parameter solves this by embedding the recommended frequency per-hop in the Via header field.
+section: "5"
+topics:
+    - sip
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

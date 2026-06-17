@@ -1,0 +1,10 @@
+document: rfc-6230
+kind: normative-requirement
+summary: A SYNC request MUST include a 'Packages' header listing all Control Packages the client supports. The server MUST respond with a 200 containing a 'Packages' header with the common subset; if no common packages exist, the server MUST respond with 422 and a 'Supported' header listing its capabilities.
+section: 6.3.4.2
+rfc2119_level: MUST
+topics:
+    - sip
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

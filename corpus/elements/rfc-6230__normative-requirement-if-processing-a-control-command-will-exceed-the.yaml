@@ -1,0 +1,9 @@
+document: rfc-6230
+kind: normative-requirement
+summary: If processing a CONTROL command will exceed the Transaction-Timeout (10 seconds), the server MUST respond with 202 and subsequently send REPORT messages. The 202 response MUST include a 'Timeout' header indicating the number of seconds the client must wait before considering the extended transaction failed.
+section: 6.3.2.1
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

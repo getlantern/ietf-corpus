@@ -1,0 +1,10 @@
+document: rfc-6228
+kind: normative-requirement
+summary: If a UAC receives an unreliably sent 199 response for a dialog not yet established (e.g., 199 arrives before the 18x that would create the dialog), it SHALL discard the 199 response. If the 199 was sent reliably on a non-established dialog, the UAC MUST acknowledge it per RFC 3262.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

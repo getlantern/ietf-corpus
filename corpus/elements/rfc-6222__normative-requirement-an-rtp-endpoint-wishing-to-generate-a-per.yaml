@@ -1,0 +1,11 @@
+document: rfc-6222
+kind: normative-requirement
+summary: An RTP endpoint wishing to generate a per-session RTCP CNAME MUST apply the Section 5 procedure for each new RTP session, take the least significant 96 bits of the SHA-256 output, and Base64-encode them, resulting in a 16-octet string. The 'user@' part MUST be omitted.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

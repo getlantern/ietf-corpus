@@ -1,0 +1,9 @@
+document: rfc-6228
+kind: interoperability-note
+summary: A forking proxy can detect additional downstream forking by storing the top Via branch parameter value from each response that creates an early dialog. Identical top Via branch values across multiple early dialogs indicate further forking downstream, and a non-2xx response on one such dialog also terminates all others sharing the same top Via branch value.
+section: "6"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

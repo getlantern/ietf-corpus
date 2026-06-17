@@ -1,0 +1,9 @@
+document: rfc-6228
+kind: design-rationale
+summary: A forking proxy receiving a non-2xx final response does not always immediately forward it upstream; instead it waits to select the 'best' final response. This leaves upstream entities—including the UAC—holding resources for early dialogs that have already been terminated at the UAS, wasting capacity that could be reused for other dialogs. The 199 response code was introduced to close this gap by proactively informing upstream entities of individual early-dialog termination before any final response is sent.
+section: "1"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

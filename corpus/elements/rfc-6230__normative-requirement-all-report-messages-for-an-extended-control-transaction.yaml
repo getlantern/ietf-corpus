@@ -1,0 +1,9 @@
+document: rfc-6230
+kind: normative-requirement
+summary: All REPORT messages for an extended CONTROL transaction MUST carry the same transaction ID as the original CONTROL, MUST include a 'Seq' header incrementing by 1 with each message, and MUST include a 'Timeout' header. A REPORT received with a non-sequential Seq MUST be responded to with 406 and the extended transaction MUST be terminated.
+section: 6.3.2
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
