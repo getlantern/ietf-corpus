@@ -1,0 +1,9 @@
+document: rfc-5272
+kind: normative-requirement
+summary: Servers MUST NOT alter an extension so as to invalidate the original intent of a client-requested extension (for example, changing key usage from keyAgreement to digitalSignature). If a certification request is denied due to an unsupported extension, the server MUST return CMCFailInfo value unsupportedExt.
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

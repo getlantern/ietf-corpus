@@ -1,0 +1,11 @@
+document: rfc-5265
+kind: security-consideration
+summary: The confidentiality of user data equals the minimum of IPsec security and the security of the internal network detection mechanism. If the MN incorrectly determines it is inside and sends plaintext over an untrusted network, IPsec security is fully bypassed. The detection relies on HMAC-MD5-authenticated MIPv4 registration, firewall blocking of i-HA from the outside, and the i-HA's trusted-source-address check with TNC extension; all three must fail simultaneously for user data to be exposed.
+section: "6.1"
+topics:
+    - security
+    - vpn
+    - ipsec
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

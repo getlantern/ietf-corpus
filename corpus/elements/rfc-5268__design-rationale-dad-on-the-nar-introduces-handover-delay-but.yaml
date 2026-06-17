@@ -1,0 +1,9 @@
+document: rfc-5268
+kind: design-rationale
+summary: 'DAD on the NAR introduces handover delay, but the protocol preserves correctness: the NAR SHOULD perform a DAD probe before proxying the NCoA unless DupAddrDetectTransmits is set to zero. This setting is appropriate only where address collision probability is negligible, balancing latency against uniqueness guarantees.'
+section: "5.5"
+topics:
+    - mobility
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

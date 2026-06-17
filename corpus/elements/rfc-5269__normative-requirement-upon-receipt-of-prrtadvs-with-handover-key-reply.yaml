@@ -1,0 +1,11 @@
+document: rfc-5269
+kind: normative-requirement
+summary: Upon receipt of PrRtAdvs with Handover Key Reply Option, the MN MUST first validate them per RFC 3971 and MUST check that the key used to sign the PrRtAdv is the router's certified public key. If a certified key was not used, the message MUST be dropped.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - mobility
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

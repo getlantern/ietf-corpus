@@ -1,0 +1,9 @@
+document: rfc-5272
+kind: normative-requirement
+summary: The final server MUST fail the processing of an entire PKIData if any included control is not recognized and is not already marked as processed by a Control Processed control. The PKI Response MUST include a CMCFailInfo of badRequest with the bodyList containing the bodyPartID of the unrecognized control(s).
+section: 3.2.1.1
+rfc2119_level: MUST
+topics:
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

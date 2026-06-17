@@ -1,0 +1,10 @@
+document: rfc-5265
+kind: state-machine
+summary: 'Upon a point-of-attachment change the MN issues simultaneous RRQs to both i-HA and x-HA. States: (1) Probing — retransmit to both; (2) Tentatively Outside — x-HA reply received, continue probing i-HA for a detection period; (3) Inside — i-HA reply with TNC extension received, de-register from x-HA, start T_MONITOR re-registration; (4) Outside — detection period expired without i-HA reply, proceed with IKE/VPN setup. Failure of re-registration while inside triggers return to Probing state and halts plaintext traffic.'
+section: "3.3"
+topics:
+    - mobility
+    - security
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

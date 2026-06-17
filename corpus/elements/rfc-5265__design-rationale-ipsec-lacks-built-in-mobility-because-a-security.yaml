@@ -1,0 +1,11 @@
+document: rfc-5265
+kind: design-rationale
+summary: IPsec lacks built-in mobility because a Security Association is identified by the triplet (destination address, security protocol, SPI). When the mobile peer changes care-of address, the SA destination becomes stale and the stationary peer continues sending to the old address; IKE re-negotiation is required, imposing too heavy computation and latency for useful mobility.
+section: "1.7"
+topics:
+    - ipsec
+    - vpn
+    - mobility
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

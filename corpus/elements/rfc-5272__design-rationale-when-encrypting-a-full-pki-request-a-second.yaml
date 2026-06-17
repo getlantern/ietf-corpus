@@ -1,0 +1,10 @@
+document: rfc-5272
+kind: design-rationale
+summary: When encrypting a Full PKI Request, a second signature layer placed outside the EnvelopedData is recommended (Option 2) so that the recipient can authenticate the source even before decryption. Option 1 (EnvelopedData wrapping SignedData) and plain SignedData are also supported; servers MUST support all three options.
+section: "5"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

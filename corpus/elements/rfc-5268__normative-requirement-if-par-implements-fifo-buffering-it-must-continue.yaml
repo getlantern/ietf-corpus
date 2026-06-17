@@ -1,0 +1,11 @@
+document: rfc-5268
+kind: normative-requirement
+summary: If PAR implements FIFO buffering, it MUST continue forwarding packets to the PCoA (buffer and forward). When buffering draining begins, a maximum of 5 packets MAY be sent back-to-back; all subsequent packets SHOULD use a sending rate metered by the original arrival rate.
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - mobility
+    - ip
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

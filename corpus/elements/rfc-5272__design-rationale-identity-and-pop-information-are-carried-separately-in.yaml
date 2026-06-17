@@ -1,0 +1,10 @@
+document: rfc-5272
+kind: design-rationale
+summary: Identity and POP information are carried separately in a Full PKI Request (identity in the outer SignedData signature, POP in each cert request), creating a substitution attack risk where an attacker could bundle cert requests from different entities. The POP Link Witness mechanism cryptographically binds each cert request's POP to the shared-secret to close this gap.
+section: "6.3"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,11 @@
+document: rfc-5272
+kind: normative-requirement
+summary: As part of processing a PKI Request/Response, the signature(s) on SignedData MUST be verified. If the signature does not verify and the message contains anything other than a CMC Status Info control, a Full PKI Response with CMCFailInfo value of badMessageCheck and bodyPartID of 0 MUST be returned.
+section: 3.2.1.3.4
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

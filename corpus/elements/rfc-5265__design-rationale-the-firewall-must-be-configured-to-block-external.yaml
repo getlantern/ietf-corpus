@@ -1,0 +1,10 @@
+document: rfc-5265
+kind: design-rationale
+summary: The firewall MUST be configured to block external access to the i-HA because a successful plaintext registration with the i-HA is used as proof of being inside the trusted network. If the i-HA were reachable from outside, an attacker could trick the mobile node into dropping IPsec protection. As a second layer, the i-HA itself checks source addresses and signals trusted-network awareness via the TNC extension, so both firewall AND i-HA must be misconfigured to expose user data.
+section: 3.6.1
+topics:
+    - security
+    - vpn
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

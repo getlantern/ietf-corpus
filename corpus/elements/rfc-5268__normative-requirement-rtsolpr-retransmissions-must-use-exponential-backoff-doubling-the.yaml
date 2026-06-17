@@ -1,0 +1,10 @@
+document: rfc-5268
+kind: normative-requirement
+summary: RtSolPr retransmissions MUST use exponential backoff (doubling the timeout of 2×RTT or 100 ms) up to RTSOLPR_RETRIES. When sent more than once, they MUST be rate limited to MAX_RTSOLPR_RATE per second.
+section: 6.1.1
+rfc2119_level: MUST
+topics:
+    - mobility
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

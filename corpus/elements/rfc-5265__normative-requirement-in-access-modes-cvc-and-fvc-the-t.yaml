@@ -1,0 +1,11 @@
+document: rfc-5265
+kind: normative-requirement
+summary: In access modes 'cvc' and 'fvc', the T-bit (reverse tunneling) SHOULD be set in the inner MIPv4 Registration Request to the i-HA, because IPsec selectors typically restrict the source address inside the tunnel to the VPN-TIA; without reverse tunneling the MN's home address would violate the IPsec security policy, silently blackholing traffic.
+section: "2.3"
+rfc2119_level: SHOULD
+topics:
+    - vpn
+    - ipsec
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5272
+kind: design-rationale
+summary: The CMC Unsigned Data attribute (id-aa-cmc-unsignedData) was introduced because signed controls inside a client request cannot be removed by an RA or Key Archive Agent without breaking the RA's signature. By placing data in unsigned/unauthenticated attributes, each RA can move it to its own outer wrapper without invalidating inner signatures.
+section: 3.2.3
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
