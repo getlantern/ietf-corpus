@@ -1,0 +1,10 @@
+document: rfc-5416
+kind: normative-requirement
+summary: When 802.11 encryption/decryption is performed at the WTP (Split MAC), the WTP MUST decrypt uplink frames, MUST set the Protected Frame field to 0, and MUST strip IV/EIV, MIC, and ICV fields before forwarding to the AC. For downlink frames, the AC MUST set Protected Frame to 0; the WTP MUST apply required protection policy and set Protected Frame on air transmission.
+section: 2.2.1
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

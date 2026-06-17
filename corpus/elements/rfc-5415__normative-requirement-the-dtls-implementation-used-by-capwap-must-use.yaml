@@ -1,0 +1,10 @@
+document: rfc-5415
+kind: normative-requirement
+summary: The DTLS implementation used by CAPWAP MUST use replay detection per Section 3.3 of RFC 4347. Because CAPWAP retransmissions re-encrypt lost frames, any duplicate DTLS frames are either unintentional or malicious and must be silently discarded.
+section: 2.4.1
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

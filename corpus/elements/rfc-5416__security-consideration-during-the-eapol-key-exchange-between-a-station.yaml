@@ -1,0 +1,9 @@
+document: rfc-5416
+kind: security-consideration
+summary: During the EAPOL-Key exchange between a station and the AC for GTK delivery, the Receive Sequence Counter (RSC) field for the Group Key must be present in the EAPOL-Key frame; the AC uses the value zero (0) during this initial exchange. Implementations should be aware that using RSC=0 means the WTP must accept frames with any sequence counter until normal sequence counter enforcement begins.
+section: "9.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

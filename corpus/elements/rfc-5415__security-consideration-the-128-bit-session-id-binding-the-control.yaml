@@ -1,0 +1,8 @@
+document: rfc-5415
+kind: security-consideration
+summary: The 128-bit Session ID binding the control and data channels must be kept secret. An attacker who observes the Session ID can inject spurious Data Channel Keep-Alive packets, disrupting data channel establishment. The Session ID MUST be generated using a cryptographically strong random number generator.
+section: "12.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

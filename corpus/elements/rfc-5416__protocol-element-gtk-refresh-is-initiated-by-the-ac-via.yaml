@@ -1,0 +1,9 @@
+document: rfc-5416
+kind: protocol-element
+summary: GTK refresh is initiated by the AC via an IEEE 802.11 WLAN Configuration Request containing an Update WLAN element with the new GTK, GTK index, Group TSC, and Key Status=3 (begin GTK update). When all STAs have been rekeyed, the AC sends a second Configuration Request with Key Status=4 (GTK update complete). During the update window, broadcast frames must be duplicated and sent with both the current and new GTK.
+section: "2.4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

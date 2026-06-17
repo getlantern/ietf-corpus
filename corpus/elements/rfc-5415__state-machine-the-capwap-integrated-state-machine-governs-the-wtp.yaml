@@ -1,0 +1,9 @@
+document: rfc-5415
+kind: state-machine
+summary: 'The CAPWAP integrated state machine governs the WTP-AC session lifecycle through states: Start, Idle, Discovery, Sulking, DTLS Setup, Authorize, DTLS Connect, DTLS Teardown, Dead, Join, Image Data, Configure, Data Check, Run, and Reset. Transitions are triggered by DTLS notifications (e.g., DTLSEstablished, DTLSAuthenticateFail), timer expirations, and protocol message exchanges. The AC uses three concurrent threads (Listener, Discovery, Service) while the WTP uses a single instance.'
+section: "2.3"
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
