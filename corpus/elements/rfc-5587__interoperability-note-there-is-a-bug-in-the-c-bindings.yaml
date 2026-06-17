@@ -1,0 +1,8 @@
+document: rfc-5587
+kind: interoperability-note
+summary: There is a bug in the C bindings of GSS-APIv2u1 (RFC 2744) where the C 'const' attribute is misapplied to pointer typedefs, declaring the pointer as const rather than the pointed-to object. New typedefs (gss_const_OID, gss_const_OID_set, etc.) are defined in this document to fix this.
+section: 3.4.6
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

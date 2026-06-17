@@ -1,0 +1,10 @@
+document: rfc-5595
+kind: security-consideration
+summary: IPsec (all modes) protects the integrity of the DCCP header, including the Service Code. ESP additionally encrypts the Service Code, hiding it from middleboxes. IKEv2 does not currently specify a method to use Service Codes in IPsec security-association setup; firewall and IPsec policies should not rely solely on ports or Service Codes to identify a service.
+section: "4.3"
+topics:
+    - security
+    - ipsec
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

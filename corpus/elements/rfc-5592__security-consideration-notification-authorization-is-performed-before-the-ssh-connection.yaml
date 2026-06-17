@@ -1,0 +1,9 @@
+document: rfc-5592
+kind: security-consideration
+summary: Notification authorization is performed before the SSH connection to the receiver is established and before the receiver's credentials are verified, so the locally configured securityName is entirely trusted within the notification originator. The receiver's credentials MUST be cryptographically verified when the connection is made.
+section: "9.2"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

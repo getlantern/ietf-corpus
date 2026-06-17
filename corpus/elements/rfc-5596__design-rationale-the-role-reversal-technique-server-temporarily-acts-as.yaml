@@ -1,0 +1,9 @@
+document: rfc-5596
+kind: design-rationale
+summary: The role-reversal technique (server temporarily acts as client to punch a hole, then reverts to passive) was rejected because it would require modifying DCCP's state machine, disrupting Service Code handling, Init Cookie support, and feature negotiation, which depend on stable, a priori knowledge of endpoint roles.
+section: A.2
+topics:
+    - nat
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5595
+kind: design-rationale
+summary: A 32-bit Service Code was chosen instead of a 32-bit port space because overhead was a concern for low-rate applications; placing the value only in the DCCP-Request packet adds no per-packet overhead to the data flow while still giving middleboxes and endpoints enough information to identify the intended service.
+section: "1.1"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

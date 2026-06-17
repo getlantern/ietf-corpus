@@ -1,0 +1,9 @@
+document: rfc-5596
+kind: design-rationale
+summary: The 200ms retransmission interval with a maximum of 3 DCCP-Listen transmissions was chosen to ensure the cumulative 600ms window fits within the 1-second DCCP-Request retransmission timeout, while spacing packets sufficiently to avoid correlated loss on both wireless and wired paths.
+section: "3.3"
+topics:
+    - nat
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

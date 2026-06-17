@@ -1,0 +1,9 @@
+document: rfc-5596
+kind: design-rationale
+summary: Using DCCP-Request as the listen signal was rejected because a client not yet in REQUEST state would respond with a DCCP-Reset (per RFC 4340 step 7), and a client already in REQUEST state would send a DCCP-Sync, neither of which is meaningful before sequence numbers are negotiated. A dedicated DCCP-Listen type allows clients to simply ignore the packet.
+section: "3.1"
+topics:
+    - nat
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

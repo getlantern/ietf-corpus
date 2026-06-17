@@ -1,0 +1,9 @@
+document: rfc-5592
+kind: design-rationale
+summary: The SSH Transport Model always sends SNMP messages with authPriv-level protection regardless of the requested securityLevel, because it has no mechanism to test whether an underlying SSH connection provides auth or priv; the design deliberately avoids exposing SSH transport-layer algorithm details to the Transport Model layer.
+section: 3.1.2
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

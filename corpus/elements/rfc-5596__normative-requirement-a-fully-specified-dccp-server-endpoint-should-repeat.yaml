@@ -1,0 +1,10 @@
+document: rfc-5596
+kind: normative-requirement
+summary: A fully specified DCCP server endpoint SHOULD repeat sending DCCP-Listen packets while in the INVITED state at a 200-millisecond interval with at most 2 repetitions (3 total transmissions). After a further 200ms following the third packet, the server SHOULD transition to the LISTEN1 state.
+section: 2.2.2
+rfc2119_level: SHOULD
+topics:
+    - nat
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

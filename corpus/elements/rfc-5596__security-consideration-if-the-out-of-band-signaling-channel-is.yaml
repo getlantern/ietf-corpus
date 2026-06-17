@@ -1,0 +1,10 @@
+document: rfc-5596
+kind: security-consideration
+summary: If the out-of-band signaling channel is not encrypted, an eavesdropper could forge a DCCP-Listen packet towards the client; however, the client only processes DCCP-Listen if the server IP:port matches an existing REQUEST-state connection, preventing redirection to a different server.
+section: "4"
+topics:
+    - security
+    - nat
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5584
+kind: normative-requirement
+summary: In multi-session streaming, paired base and enhancement layer sessions MUST use the same CNAME in RTCP to ensure correct source mapping. The two sessions MUST be synchronized using RTCP SR packet information. If enhancement layer data cannot arrive before presentation time, the decoder MUST decode only the base layer.
+section: 4.5.2
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

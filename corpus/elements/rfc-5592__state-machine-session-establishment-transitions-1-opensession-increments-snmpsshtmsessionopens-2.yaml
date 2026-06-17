@@ -1,0 +1,8 @@
+document: rfc-5592
+kind: state-machine
+summary: 'Session establishment transitions: (1) openSession increments snmpSshtmSessionOpens; (2) SSH transport connection and server authentication — failure increments snmpSshtmSessionOpenErrors; (3) SSH user authentication — failure increments snmpSshtmSessionUserAuthFailures and closes transport; (4) open ''session'' channel — failure increments snmpSshtmSessionNoChannels; (5) invoke ''snmp'' subsystem — failure increments snmpSshtmSessionNoSubsystems; (6) session ready, record tmSessionID.'
+section: "5.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

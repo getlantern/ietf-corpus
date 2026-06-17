@@ -1,0 +1,9 @@
+document: rfc-5588
+kind: security-consideration
+summary: Acceptor applications that have no use for delegated credentials MUST release them. In the GSS-API C-Bindings, this can be done by providing a NULL value for the delegated_cred_handle argument to gss_accept_sec_context(). Retaining unused delegated credentials is an unnecessary security risk.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5596
+kind: design-rationale
+summary: TCP-style simultaneous-open (both sides sending SYN/DCCP-Request) was explicitly rejected for DCCP because it would erase the clear client/server role distinction that DCCP relies on for feature negotiation (server-priority rule), closing state (CloseReq vs Close), Service Code multiplicity, and Init Cookie usage.
+section: A.1
+topics:
+    - nat
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

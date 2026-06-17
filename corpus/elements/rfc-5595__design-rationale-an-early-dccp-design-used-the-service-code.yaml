@@ -1,0 +1,9 @@
+document: rfc-5595
+kind: design-rationale
+summary: An early DCCP design used the Service Code as the sole socket identifier at the server, eliminating traditional ports entirely. This was abandoned because it prevented two server instances for the same service on one host and raised concerns about compatibility with NATs and other middleboxes that understand port-based demultiplexing.
+section: "1.1"
+topics:
+    - congestion
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

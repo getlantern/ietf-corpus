@@ -1,0 +1,9 @@
+document: rfc-5584
+kind: wire-format
+summary: 'The ATRAC Header Section is a fixed 1-byte field with three subfields: Continuation Flag (C, 1 bit), Fragment Number (FrgNo, 3 bits), and Number of Frames (NFrames, 4 bits). C=0 indicates the last or only fragment; FrgNo starts at 1 for fragmented frames and is 0 for unfragmented; NFrames encodes frame count as field value + 1.'
+section: 5.3.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

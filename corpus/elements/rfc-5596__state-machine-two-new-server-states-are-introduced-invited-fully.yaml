@@ -1,0 +1,9 @@
+document: rfc-5596
+kind: state-machine
+summary: 'Two new server states are introduced: INVITED (fully specified server socket generating DCCP-Listen packets toward the client; transitions to LISTEN1 on receipt of DCCP-Request) and LISTEN1 (passive listening without further DCCP-Listen generation; transitions to RESPOND on receipt of DCCP-Request). The existing path CLOSED→LISTEN→RESPOND is unchanged for unspecified servers.'
+section: 2.2.2
+topics:
+    - nat
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

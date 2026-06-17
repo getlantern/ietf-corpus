@@ -1,0 +1,10 @@
+document: rfc-5596
+kind: security-consideration
+summary: This specification requires the server to hold per-connection state (bound to client IP:port and Service Code) before the three-way handshake completes, removing the protection offered by RFC 4340's Init Cookie mechanism. The security impact is expected to be minimal and depends on the security properties of the out-of-band signaling channel (e.g., SIP/SDP).
+section: "4"
+topics:
+    - security
+    - nat
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

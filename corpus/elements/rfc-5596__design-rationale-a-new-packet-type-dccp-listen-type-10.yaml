@@ -1,0 +1,9 @@
+document: rfc-5596
+kind: design-rationale
+summary: 'A new packet type (DCCP-Listen, Type=10) was introduced rather than reusing DCCP-Request to avoid semantic overloading: DCCP-Request is the first packet of the three-way handshake, and dual use would require two distinct processing paths in hosts and stateful middleboxes, complicating implementation.'
+section: "3.1"
+topics:
+    - nat
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

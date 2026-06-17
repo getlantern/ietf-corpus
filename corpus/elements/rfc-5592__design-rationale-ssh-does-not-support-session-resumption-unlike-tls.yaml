@@ -1,0 +1,8 @@
+document: rfc-5592
+kind: design-rationale
+summary: SSH does not support session resumption (unlike TLS), making short-lived sessions computationally expensive due to CPU-intensive session-key establishment. SNMP applications SHOULD therefore keep SSH sessions for longer time periods to amortize setup costs.
+section: "8"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

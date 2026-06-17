@@ -1,0 +1,10 @@
+document: rfc-5596
+kind: security-consideration
+summary: A DCCP-Listen packet sent to a specific client exposes unencrypted server state (IP address, port, Service Code) on the network path. An on-path attacker could observe this and spoof a DCCP-Request or DCCP-Reset to inject data or deny the connection. This is comparable to existing on-path attack exposure once any DCCP session is initiated.
+section: "4"
+topics:
+    - security
+    - nat
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

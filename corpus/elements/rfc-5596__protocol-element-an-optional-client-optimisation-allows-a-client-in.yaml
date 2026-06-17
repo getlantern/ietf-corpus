@@ -1,0 +1,9 @@
+document: rfc-5596
+kind: protocol-element
+summary: An optional client optimisation allows a client in the REQUEST state to immediately retransmit its DCCP-Request upon receiving the first DCCP-Listen packet, avoiding a timeout wait. The client MUST perform only one such triggered retransmission per connection and SHOULD increase the exponential-backoff timer interval afterward. DCCP-Listen packets received in all other client states MUST be silently discarded.
+section: 2.2.3.1
+topics:
+    - nat
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

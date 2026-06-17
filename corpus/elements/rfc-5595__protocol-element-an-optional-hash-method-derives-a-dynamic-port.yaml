@@ -1,0 +1,8 @@
+document: rfc-5595
+kind: protocol-element
+summary: 'An optional hash method derives a Dynamic port from a Service Code: s_port = ((sc[0]<<7)^(sc[1]<<5)^(sc[2]<<3)^sc[3]) | 0xC000, with a special case avoiding 0xFFFF. This allows client and server to agree on a port without out-of-band signalling.'
+section: "2.7"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

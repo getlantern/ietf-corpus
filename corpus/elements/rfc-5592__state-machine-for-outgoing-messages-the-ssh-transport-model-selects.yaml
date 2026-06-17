@@ -1,0 +1,8 @@
+document: rfc-5592
+kind: state-machine
+summary: 'For outgoing messages, the SSH Transport Model selects a session by: (A) if tmSameSecurity is true, require matching tmSessionID/tmSecurityName/tmTransportAddress or discard; (B) match on tmSessionID+tmTransportAddress+tmSecurityName; (C) match on tmTransportAddress+tmSecurityName; (D) call openSession(). Invalid tmStateReference increments snmpSshtmSessionInvalidCaches.'
+section: "5.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
