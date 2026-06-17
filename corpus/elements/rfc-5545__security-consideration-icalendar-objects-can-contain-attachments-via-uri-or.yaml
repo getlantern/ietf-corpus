@@ -1,0 +1,8 @@
+document: rfc-5545
+kind: security-consideration
+summary: iCalendar objects can contain attachments via URI or inline binary, which may expose recipients to malicious content. The format includes no built-in authentication or integrity mechanisms; implementors should use external security mechanisms such as S/MIME or PGP when authenticity or confidentiality is required. The 'METHOD' property can be used to drive scheduling operations that may have significant consequences (e.g., meeting cancellations).
+section: "7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

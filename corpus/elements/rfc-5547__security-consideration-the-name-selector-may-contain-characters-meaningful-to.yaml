@@ -1,0 +1,9 @@
+document: rfc-5547
+kind: security-consideration
+summary: The 'name' selector may contain characters meaningful to the remote operating system (e.g., '\', '/', ':') even if not significant locally. Implementations are responsible for sanitizing filenames received from remote endpoints before performing local file system operations, including percent-encoding OS-meaningful characters.
+section: "6"
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

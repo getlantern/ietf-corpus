@@ -1,0 +1,8 @@
+document: rfc-5547
+kind: design-rationale
+summary: Each file uses its own 'm=' line (and thus its own MSRP session) so the answerer can individually accept or reject each file by setting that line's port to zero; multiple MSRP sessions may still share a single TCP connection to avoid excessive resource use.
+section: "4"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

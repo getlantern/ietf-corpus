@@ -1,0 +1,6 @@
+document: rfc-5537
+kind: design-rationale
+summary: The new Injection-Date header field (introduced in this revision) allows the Date header field to record article composition time even when injection is delayed. However, implementations predating this specification ignore Injection-Date and use Date for cutoff checks, so articles with a stale Date will still propagate poorly on legacy servers.
+section: "3.4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

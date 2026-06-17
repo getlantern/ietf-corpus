@@ -1,0 +1,9 @@
+document: rfc-5539
+kind: security-consideration
+summary: An attacker may inject arbitrary NETCONF messages via an application that does not check message content, or deliberately insert the ']]>]]>' delimiter to cause a DoS. Applications and NETCONF APIs MUST ensure the delimiter never appears in messages; receivers MUST silently discard and terminate the session if it is found inside a message.
+section: "4"
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

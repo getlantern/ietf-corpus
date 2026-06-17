@@ -1,0 +1,8 @@
+document: rfc-5539
+kind: interoperability-note
+summary: The ']]>]]>' message delimiter defined in RFC 4742 (NETCONF over SSH) is reused verbatim for NETCONF over TLS. Since this sequence can legally appear in XML attribute values, comments, and processing instructions, implementations must actively sanitize outbound NETCONF messages.
+section: "2.1"
+topics:
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
