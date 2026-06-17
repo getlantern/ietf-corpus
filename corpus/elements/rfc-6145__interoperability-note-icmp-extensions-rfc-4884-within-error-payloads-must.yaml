@@ -1,0 +1,9 @@
+document: rfc-6145
+kind: interoperability-note
+summary: ICMP extensions (RFC 4884) within error payloads must have their length attribute adjusted when the inner IP header translation changes packet length. Extensions not defined in RFC 4884 are passed as opaque bit strings; IPv4/IPv6 address literals within them will not be translated, potentially causing processing problems.
+section: "4.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

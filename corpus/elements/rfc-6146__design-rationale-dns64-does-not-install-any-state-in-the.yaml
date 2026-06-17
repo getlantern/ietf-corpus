@@ -1,0 +1,10 @@
+document: rfc-6146
+kind: design-rationale
+summary: DNS64 does not install any state in the NAT64. Because the IPv4-to-IPv6 address mapping is purely algorithmic (Pref64::/n concatenated with the IPv4 address), the NAT64 translates correctly as long as the IPv6 client uses an address derived from that algorithm, regardless of how it obtained the address.
+section: 1.2.2
+topics:
+    - nat
+    - v6ops
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

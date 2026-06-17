@@ -1,0 +1,9 @@
+document: rfc-6147
+kind: design-rationale
+summary: Non-zero, non-NXDOMAIN RCODE responses to AAAA queries are treated as empty answers (triggering A-record fallback) because many deployed name servers incorrectly return various error codes when no AAAA record exists, rather than returning NOERROR with an empty answer section (see RFC 4074).
+section: 5.1.2
+topics:
+    - dns
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

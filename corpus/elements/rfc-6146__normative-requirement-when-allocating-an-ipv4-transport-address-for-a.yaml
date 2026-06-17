@@ -1,0 +1,11 @@
+document: rfc-6146
+kind: normative-requirement
+summary: When allocating an IPv4 transport address for a new UDP BIB entry, the NAT64 SHOULD reuse an IPv4 address already mapped from the same IPv6 address in any BIB. The allocated (T,t) MUST NOT be in use in another entry within the same BIB, though it may be reused across different protocol BIBs.
+section: 3.5.1.1
+rfc2119_level: MUST NOT
+topics:
+    - nat
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

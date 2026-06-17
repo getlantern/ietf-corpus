@@ -1,0 +1,11 @@
+document: rfc-6147
+kind: security-consideration
+summary: If an attacker modifies the Pref64::/n configured in DNS64, traffic from hosts receiving synthetic AAAA replies will be delivered to the attacker-controlled prefix. This enables denial-of-service (if the altered prefix is unrouted), flooding attacks (if it routes to unwilling recipients), or eavesdropping (if it routes through the attacker).
+section: "8"
+topics:
+    - dns
+    - security
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

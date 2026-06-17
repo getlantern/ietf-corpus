@@ -1,0 +1,11 @@
+document: rfc-6147
+kind: normative-requirement
+summary: In validating DNS64 (vDNS64) mode with CD not set and DO set, vDNS64 MUST validate the negative AAAA response before querying for A records, to confirm no legitimate AAAA exists. If both the negative AAAA and the A query validate, vDNS64 MAY synthesize and SHOULD set the AD bit. If validation fails, vDNS64 MUST return RCODE=2.
+section: "5.5"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

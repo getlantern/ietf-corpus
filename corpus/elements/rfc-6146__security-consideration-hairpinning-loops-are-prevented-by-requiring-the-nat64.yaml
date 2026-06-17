@@ -1,0 +1,10 @@
+document: rfc-6146
+kind: security-consideration
+summary: Hairpinning loops are prevented by requiring the NAT64 to silently discard any incoming IPv6 packet whose source address contains Pref64::/n. Without this rule, a crafted packet could loop indefinitely inside the NAT64 or trigger traffic amplification.
+section: "5.4"
+topics:
+    - nat
+    - security
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

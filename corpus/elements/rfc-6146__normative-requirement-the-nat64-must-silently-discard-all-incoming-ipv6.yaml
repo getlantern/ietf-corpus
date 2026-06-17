@@ -1,0 +1,11 @@
+document: rfc-6146
+kind: normative-requirement
+summary: The NAT64 MUST silently discard all incoming IPv6 packets whose source address contains Pref64::/n, and MUST only process IPv6 packets whose destination address contains Pref64::/n. Incoming IPv4 packets MUST only be processed if their destination address belongs to the NAT64's IPv4 pool.
+section: "3.5"
+rfc2119_level: MUST
+topics:
+    - nat
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6147
+kind: normative-requirement
+summary: When synthesizing a AAAA RR, the TTL MUST be set to the minimum of the original A RR's TTL and the SOA RR's TTL for the queried domain. If the SOA was not delivered with the negative AAAA response, the DNS64 SHOULD use the minimum of the A RR TTL and 600 seconds.
+section: 5.1.7
+rfc2119_level: SHOULD
+topics:
+    - dns
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

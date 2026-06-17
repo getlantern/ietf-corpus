@@ -1,0 +1,11 @@
+document: rfc-6145
+kind: normative-requirement
+summary: If the address translation algorithm is not checksum neutral, translators MUST recalculate and update transport-layer headers for TCP, ICMP, and UDP packets with a non-zero UDP checksum. Other transport protocols (e.g., DCCP) are OPTIONAL to support but MUST be forwarded.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

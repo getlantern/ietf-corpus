@@ -1,0 +1,10 @@
+document: rfc-6147
+kind: design-rationale
+summary: 'Appendix A explains why an administrator may choose to synthesize AAAA records even when real AAAA records exist: an IPv4-only application running on a dual-stack host may have a AAAA record (for the host), but an IPv6-only client can only reach it via NAT64. Without synthesis of the translated address, communication fails despite the real AAAA being present.'
+section: A
+topics:
+    - dns
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

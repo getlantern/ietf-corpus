@@ -1,0 +1,10 @@
+document: rfc-6145
+kind: normative-requirement
+summary: ICMP error messages containing a packet in error MUST be translated just like a normal IP packet. If translation changes the length, the Total Length in the outer IPv6 header MUST be updated. Translation MUST stop at the first embedded header; packets with more embedded headers are dropped.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

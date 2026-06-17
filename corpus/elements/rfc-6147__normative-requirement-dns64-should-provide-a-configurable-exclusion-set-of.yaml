@@ -1,0 +1,11 @@
+document: rfc-6147
+kind: normative-requirement
+summary: DNS64 SHOULD provide a configurable exclusion set of IPv6 prefix ranges; AAAA records whose addresses fall within these ranges are treated as empty answers. Implementations SHOULD include ::ffff:0:0/96 in the exclusion set by default. If all returned AAAA records are within excluded ranges, the DNS64 MUST treat the answer as empty and MUST NOT return the offending records.
+section: 5.1.4
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - v6ops
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

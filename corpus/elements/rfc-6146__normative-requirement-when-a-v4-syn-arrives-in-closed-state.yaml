@@ -1,0 +1,10 @@
+document: rfc-6146
+kind: normative-requirement
+summary: When a V4 SYN arrives in CLOSED state and its destination transport address is not in the TCP BIB, the NAT64 MUST create a Session Table Entry with lifetime TCP_INCOMING_SYN and store the packet rather than drop it, to support simultaneous TCP open.
+section: 3.5.2.2
+rfc2119_level: MUST
+topics:
+    - nat
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

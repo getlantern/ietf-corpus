@@ -1,0 +1,9 @@
+document: rfc-6145
+kind: design-rationale
+summary: For IPv6-to-IPv4 translation of packets without a Fragment Header, setting DF=1 is preferred over clearing it, because while DF=1 may create PMTUD black holes on IPv4 links smaller than 1260 bytes, clearing DF risks IPv4 reassembly errors (RFC 4963), which is considered the more dangerous failure.
+section: "5"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

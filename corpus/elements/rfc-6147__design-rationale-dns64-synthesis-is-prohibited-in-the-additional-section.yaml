@@ -1,0 +1,10 @@
+document: rfc-6147
+kind: design-rationale
+summary: DNS64 synthesis is prohibited in the additional section because clients cannot rely on the additional section being complete and will re-query for needed records anyway. Replacing A records in the additional section with synthetic AAAA records could cause an IPv6-only host to query a name server unaware of NAT64, resulting in resolution failure.
+section: 5.3.2
+topics:
+    - dns
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

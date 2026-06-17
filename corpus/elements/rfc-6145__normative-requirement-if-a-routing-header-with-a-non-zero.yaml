@@ -1,0 +1,10 @@
+document: rfc-6145
+kind: normative-requirement
+summary: If a Routing header with a non-zero Segments Left field is present in an IPv6 packet, the packet MUST NOT be translated; an ICMPv6 'parameter problem/erroneous header field' (Type 4, Code 0) with Pointer indicating the Segments Left field SHOULD be returned.
+section: "5.1"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

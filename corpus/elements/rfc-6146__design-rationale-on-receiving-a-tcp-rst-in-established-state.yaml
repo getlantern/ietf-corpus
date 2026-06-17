@@ -1,0 +1,9 @@
+document: rfc-6146
+kind: design-rationale
+summary: On receiving a TCP RST in ESTABLISHED state, the NAT64 moves to TRANS rather than CLOSED because it cannot be certain the peer will accept the RST. If no further data packets arrive within TCP_TRANS, the state is deleted; if packets continue, the state reverts to ESTABLISHED.
+section: 3.5.2.2
+topics:
+    - nat
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

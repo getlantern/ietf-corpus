@@ -1,0 +1,10 @@
+document: rfc-6145
+kind: normative-requirement
+summary: When translating ICMPv4 Code 4 (Fragmentation Needed) to ICMPv6 Packet Too Big, the MTU field MUST be set to minimum(advertised MTU+20, MTU_of_IPv6_nexthop, (MTU_of_IPv4_nexthop)+20). If the IPv4 router set MTU to zero, the translator MUST use RFC 1191 plateau values.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

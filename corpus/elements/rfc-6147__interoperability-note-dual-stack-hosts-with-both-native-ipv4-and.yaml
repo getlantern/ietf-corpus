@@ -1,0 +1,11 @@
+document: rfc-6147
+kind: interoperability-note
+summary: Dual-stack hosts with both native IPv4 and IPv6 connectivity via NAT64 should avoid using DNS64 resolvers. Per RFC 3484 default address selection (preferring IPv6), the host may route traffic through NAT64 even when native IPv4 would be more efficient or functional. Hosts with IPv4 Internet connectivity should not use DNS64.
+section: 6.3.2
+topics:
+    - dns
+    - v6ops
+    - nat
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

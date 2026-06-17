@@ -1,0 +1,10 @@
+document: rfc-6146
+kind: normative-requirement
+summary: The TCP session lifetime in ESTABLISHED state MUST NOT be less than TCP_EST (per RFC 5382), and the default SHOULD be TCP_EST. When the lifetime expires in ESTABLISHED state, the NAT64 SHOULD send a zero-data probe TCP segment before transitioning to TRANS.
+section: 3.5.2.2
+rfc2119_level: MUST NOT
+topics:
+    - nat
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

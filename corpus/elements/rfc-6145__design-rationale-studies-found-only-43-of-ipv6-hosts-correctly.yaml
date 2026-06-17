@@ -1,0 +1,9 @@
+document: rfc-6145
+kind: design-rationale
+summary: Studies found only 43% of IPv6 hosts correctly handled ICMPv6 Packet Too Big with MTU < 1280 (vs. 95% for MTU=1280), attributed to firewalls violating RFC 4890. The translator SHOULD change MTU values < 1280 to 1280 in the IPv4-to-IPv6 direction, causing hosts to send packets with Fragment Headers that the translator can handle in the reverse direction.
+section: "6"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

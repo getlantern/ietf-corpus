@@ -1,0 +1,10 @@
+document: rfc-6147
+kind: state-machine
+summary: 'DNS64 DNSSEC handling is governed by the DO and CD bits: (1) DO=0: no DNSSEC concern, synthesize normally; (2) DO=1, CD=0, non-validating: pass data unchanged; (3) DO=1, CD=0, validating (vDNS64): validate both negative AAAA and A response before synthesis, set AD bit on success; (4) DO=1, CD=1: MUST NOT synthesize, pass raw data to client for self-validation.'
+section: "3"
+topics:
+    - dns
+    - security
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

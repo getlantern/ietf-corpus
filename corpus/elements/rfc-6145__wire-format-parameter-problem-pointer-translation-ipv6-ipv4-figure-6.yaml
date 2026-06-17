@@ -1,0 +1,9 @@
+document: rfc-6145
+kind: wire-format
+summary: 'Parameter Problem pointer translation IPv6→IPv4 (Figure 6): offset 0→0, 1→1, 4-5(Payload Length)→2, 6(Next Header)→9, 7(Hop Limit)→8, 8-23(Source Address)→12, 24-39(Dest Address)→16. Offsets 2-3 (Flow Label) map to n/a causing the packet to be dropped.'
+section: "5.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

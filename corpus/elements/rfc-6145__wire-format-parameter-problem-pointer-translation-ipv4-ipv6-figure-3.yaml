@@ -1,0 +1,9 @@
+document: rfc-6145
+kind: wire-format
+summary: 'Parameter Problem pointer translation IPv4→IPv6 (Figure 3): offset 0(Version/IHL)→0, 1(TOS)→1, 2-3(Total Length)→4, 8(TTL)→7, 9(Protocol)→6, 12-15(Source)→8, 16-19(Dest)→24. Offsets for Identification (4-5), Flags/Fragment Offset (6-7), and Header Checksum (10-11) map to n/a causing the packet to be dropped.'
+section: "4.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

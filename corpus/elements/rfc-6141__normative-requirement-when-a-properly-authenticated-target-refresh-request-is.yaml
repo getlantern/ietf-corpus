@@ -1,0 +1,10 @@
+document: rfc-6141
+kind: normative-requirement
+summary: When a properly authenticated target-refresh request is received, the UA SHOULD generate a reliable provisional or 2xx response. If not possible, it SHOULD send an in-dialog request using the new remote target. On doing so, the UA MUST replace the dialog's remote target URI with the URI from the Contact header of the target-refresh request.
+section: "4.6"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

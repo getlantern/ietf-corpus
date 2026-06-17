@@ -1,0 +1,10 @@
+document: rfc-6145
+kind: normative-requirement
+summary: 'When translating ICMPv6 Packet Too Big (Type 2) to ICMPv4 Destination Unreachable (Type 3, Code 4), the MTU field MUST be adjusted: minimum(advertised MTU-20, MTU_of_IPv4_nexthop, (MTU_of_IPv6_nexthop)-20), accounting for whether the packet in error includes a Fragment Header.'
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

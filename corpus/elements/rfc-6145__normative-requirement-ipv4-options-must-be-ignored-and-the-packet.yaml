@@ -1,0 +1,10 @@
+document: rfc-6145
+kind: normative-requirement
+summary: IPv4 options MUST be ignored and the packet translated normally. However, if an unexpired source route option is present, the packet MUST be discarded and an ICMPv4 'Destination Unreachable, Source Route Failed' (Type 3, Code 5) SHOULD be returned.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

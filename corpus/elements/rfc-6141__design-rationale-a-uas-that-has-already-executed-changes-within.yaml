@@ -1,0 +1,9 @@
+document: rfc-6141
+kind: design-rationale
+summary: A UAS that has already executed changes within a re-INVITE must not return an error response to undo them, because an error response is effectively requesting a session state change that the UAC cannot reject if it cannot execute the reversion — the UAC has no mechanism to communicate that failure to the UAS.
+section: "3.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

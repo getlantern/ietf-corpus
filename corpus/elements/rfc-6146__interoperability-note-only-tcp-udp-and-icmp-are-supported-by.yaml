@@ -1,0 +1,10 @@
+document: rfc-6146
+kind: interoperability-note
+summary: Only TCP, UDP, and ICMP are supported by this specification. IPv6 packets carrying other transport protocols (e.g., SCTP, DCCP) SHOULD be discarded with an ICMPv6 Destination Unreachable Code 4 (Port Unreachable); IPv4 packets with unknown protocols SHOULD receive ICMPv4 Destination Unreachable Code 2 (Protocol Unreachable).
+section: "3.4"
+topics:
+    - nat
+    - v6ops
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

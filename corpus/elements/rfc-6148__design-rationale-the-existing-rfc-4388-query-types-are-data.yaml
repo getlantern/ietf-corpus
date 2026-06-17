@@ -1,0 +1,8 @@
+document: rfc-6148
+kind: design-rationale
+summary: The existing RFC 4388 query types are data-driven, requiring upstream client traffic before a relay agent can query lease information. This approach causes increased client outage time after relay agent reboot, excessive negative caching under spoofing attacks, and forces antispoofing into the slow path instead of the fast path.
+section: "3"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

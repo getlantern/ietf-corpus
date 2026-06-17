@@ -1,0 +1,10 @@
+document: rfc-6147
+kind: normative-requirement
+summary: If the AAAA query returns an RCODE other than 0 (No error) or 3 (Name Error), DNS64 treats it as RCODE=0 with an empty answer section and proceeds to query for A records. RCODE=3 is returned normally to the client without triggering A-record synthesis.
+section: 5.1.2
+rfc2119_level: MUST
+topics:
+    - dns
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

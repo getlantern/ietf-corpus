@@ -1,0 +1,10 @@
+document: rfc-6145
+kind: normative-requirement
+summary: For IPv4-to-IPv6 translation, the Next Header field MUST be copied from the IPv4 Protocol field except ICMPv4 (1) which becomes ICMPv6 (58). As part of decrementing TTL or Hop Limit, the translator MUST check for zero and send the appropriate ICMP error.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6147
+kind: security-consideration
+summary: 'DNS64 fundamentally conflicts with DNSSEC: DNS64 modifies DNS answers, and DNSSEC is designed to detect such modifications and treat them as bogus. In validating resolver mode, DNS64 must validate the negative AAAA response before proceeding to A-record synthesis, or an attacker could use DNS64 to circumvent DNSSEC protections.'
+section: "8"
+topics:
+    - dns
+    - security
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

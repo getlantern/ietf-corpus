@@ -1,0 +1,9 @@
+document: rfc-6145
+kind: design-rationale
+summary: When the IPv4 sender does not set the DF bit, the translator SHOULD include an IPv6 Fragment Header to signal that the sender allows fragmentation. This ensures that if the packet is later translated back to IPv4 the DF flag is not set, preserving correct fragmentation semantics end-to-end.
+section: "4"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

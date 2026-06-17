@@ -1,0 +1,10 @@
+document: rfc-6145
+kind: normative-requirement
+summary: If a translated IPv6-to-IPv4 packet with DF=1 will be larger than the MTU of the next-hop interface, the translator MUST drop the packet and send ICMPv6 Packet Too Big (Type 2, Code 0) to the IPv6 host with an adjusted MTU.
+section: 5.1.1
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

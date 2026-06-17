@@ -1,0 +1,10 @@
+document: rfc-6147
+kind: normative-requirement
+summary: When a DNS64 server receives a PTR query for an address in IP6.ARPA, it MUST strip the IP6.ARPA labels, reverse the address portion, and check whether the prefix matches any configured Pref64::/n or the Well-Known Prefix. The DNS64 server MUST provide exactly one of two defined response strategies (authoritative response or synthetic CNAME to IN-ADDR.ARPA) and SHOULD NOT provide both simultaneously.
+section: 5.3.1
+rfc2119_level: MUST
+topics:
+    - dns
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

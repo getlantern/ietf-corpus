@@ -1,0 +1,9 @@
+document: rfc-6141
+kind: design-rationale
+summary: ACK routing for non-2xx final responses is fixed at re-INVITE send time via Via headers, independent of any target refresh that occurs mid-transaction. This is why a UAS that loses its old contact cannot receive the ACK, requiring special recovery procedures rather than normal dialog termination.
+section: "5.1"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

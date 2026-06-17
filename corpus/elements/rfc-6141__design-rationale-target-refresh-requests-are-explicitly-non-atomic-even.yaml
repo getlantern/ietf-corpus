@@ -1,0 +1,9 @@
+document: rfc-6141
+kind: design-rationale
+summary: 'Target-refresh requests are explicitly non-atomic: even if a re-INVITE ends with a final error response, a remote target update conveyed in a prior reliable provisional response may have already taken effect. This is by design to allow UASs to authenticate target-refresh requests via challenge-response without losing the new target.'
+section: "4.3"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

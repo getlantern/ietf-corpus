@@ -1,0 +1,11 @@
+document: rfc-6147
+kind: normative-requirement
+summary: When a vDNS64 receives a query with both the CD bit and DO bit set, it MAY perform validation but MUST NOT perform synthesis. It MUST return all data to the query initiator as a regular recursive resolver would, allowing the client to perform its own DNSSEC validation and DNS64 synthesis.
+section: "5.5"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

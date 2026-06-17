@@ -1,0 +1,10 @@
+document: rfc-6146
+kind: state-machine
+summary: 'NAT64 tracks each TCP connection with an 8-state machine: CLOSED, V6 INIT (IPv6-side SYN sent), V4 INIT (IPv4-side SYN stored), ESTABLISHED, V4 FIN RCV, V6 FIN RCV, V6 FIN + V4 FIN RCV, and TRANS (post-RST or near-expiry). Transitions are triggered by V6/V4 SYN, FIN, RST packets, data packets, and timer expiry.'
+section: 3.5.2
+topics:
+    - nat
+    - tcp
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

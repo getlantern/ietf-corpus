@@ -1,0 +1,9 @@
+document: rfc-6147
+kind: wire-format
+summary: 'A synthetic AAAA RR is constructed from an A RR as follows: NAME copied from A RR; TYPE=28 (AAAA); CLASS=1 (IN); TTL set to the minimum of the A RR TTL and the SOA RR TTL (or min(A TTL, 600s) if SOA is unavailable); RDLENGTH=16; RDATA set to the 16-byte IPv6 representation of the A record''s IPv4 address using the configured Pref64::/n.'
+section: 5.1.7
+topics:
+    - dns
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6146
+kind: design-rationale
+summary: When an IPv4-initiated TCP SYN arrives and the destination is not in the BIB, the NAT64 stores the packet and creates only a Session Table Entry (no BIB entry) with a short TCP_INCOMING_SYN timer. This design supports simultaneous TCP open without permanently allocating a BIB entry for an unconfirmed connection.
+section: 3.5.2.2
+topics:
+    - nat
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
