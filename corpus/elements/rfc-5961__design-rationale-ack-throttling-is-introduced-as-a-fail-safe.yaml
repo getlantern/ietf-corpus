@@ -1,0 +1,9 @@
+document: rfc-5961
+kind: design-rationale
+summary: ACK throttling is introduced as a fail-safe to prevent a flood of spoofed RST/SYN segments from causing a flood of challenge ACKs. A timestamp-and-counter mechanism (no timer needed) is suggested; no amplification is expected but throttling guards against resource exhaustion and unusual network conditions.
+section: "7"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

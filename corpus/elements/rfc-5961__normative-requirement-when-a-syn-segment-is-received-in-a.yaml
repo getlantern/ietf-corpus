@@ -1,0 +1,10 @@
+document: rfc-5961
+kind: normative-requirement
+summary: When a SYN segment is received in a synchronized state, irrespective of sequence number, TCP MUST send a challenge ACK (<SEQ=SND.NXT><ACK=RCV.NXT><CTL=ACK>) and MUST drop the segment. This replaces the RFC 793 behavior of sending RST on an in-window SYN. Implementations SHOULD apply this handling.
+section: "4.2"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

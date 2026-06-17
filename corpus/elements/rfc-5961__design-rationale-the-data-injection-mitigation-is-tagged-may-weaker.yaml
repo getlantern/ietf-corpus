@@ -1,0 +1,9 @@
+document: rfc-5961
+kind: design-rationale
+summary: The data injection mitigation is tagged MAY (weaker than the SHOULD for RST/SYN) because data injection requires correctly guessing both a sequence number and an ACK value, making it statistically twice as difficult as RST/SYN injection. Nonetheless, it improves robustness and is still recommended.
+section: "6"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

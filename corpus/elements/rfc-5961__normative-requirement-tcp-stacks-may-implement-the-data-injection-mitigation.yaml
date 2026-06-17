@@ -1,0 +1,10 @@
+document: rfc-5961
+kind: normative-requirement
+summary: TCP stacks MAY implement the data injection mitigation. Stacks that do implement it MUST add an input check requiring SEG.ACK to satisfy ((SND.UNA - MAX.SND.WND) <= SEG.ACK <= SND.NXT); segments failing this check MUST be discarded and an ACK sent back.
+section: "5.2"
+rfc2119_level: MAY
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5961
+kind: interoperability-note
+summary: A middlebox that caches and resends RSTs with the old (non-exact) sequence number after receiving a challenge ACK will cause a RST/ACK loop; such middleboxes are generating non-conformant packets. RFC 793 requires RST sequence numbers to be derived from the ACK field of the incoming ACK, so this behavior is out of scope for mitigation here.
+section: "9.1"
+topics:
+    - tcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

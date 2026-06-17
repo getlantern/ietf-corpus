@@ -1,0 +1,10 @@
+document: rfc-5961
+kind: normative-requirement
+summary: If a RST segment arrives with a sequence number within the receive window but not an exact match to RCV.NXT (RCV.NXT < SEG.SEQ < RCV.NXT+RCV.WND), TCP MUST send a challenge ACK (<SEQ=SND.NXT><ACK=RCV.NXT><CTL=ACK>) and MUST drop the unacceptable segment. Implementations SHOULD apply this rule in place of the original RFC 793 RST handling.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

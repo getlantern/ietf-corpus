@@ -1,0 +1,8 @@
+document: rfc-5961
+kind: design-rationale
+summary: 'The challenge-ACK mechanism for SYN attacks leaves an unhandled corner case: if a restarted host happens to reuse the same 4-tuple and its new ISN is exactly RCV.NXT-1 of the peer still in ESTABLISHED, the challenge ACK will be accepted and the reconnection will silently stall. The document notes this pre-exists in RFC 793 and is not introduced by these requirements.'
+section: "4.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

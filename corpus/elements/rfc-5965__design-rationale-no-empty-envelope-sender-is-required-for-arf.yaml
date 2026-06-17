@@ -1,0 +1,8 @@
+document: rfc-5965
+kind: design-rationale
+summary: No empty envelope sender is required for ARF reports (unlike DSN), because an ARF report generating another ARF report in response is considered unlikely. However, using a non-empty envelope sender risks DSN flood attacks if the report is sent to a non-working address.
+section: "5"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

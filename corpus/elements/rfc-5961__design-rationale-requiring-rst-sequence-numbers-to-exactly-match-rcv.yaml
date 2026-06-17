@@ -1,0 +1,9 @@
+document: rfc-5961
+kind: design-rationale
+summary: Requiring RST sequence numbers to exactly match RCV.NXT (rather than falling anywhere in the window) forces an attacker to generate on average 1/2 the entire 32-bit sequence space (2^31 attempts) instead of only 2^31/window attempts, restoring the original design assumption of sequence-number protection.
+section: "1.2"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

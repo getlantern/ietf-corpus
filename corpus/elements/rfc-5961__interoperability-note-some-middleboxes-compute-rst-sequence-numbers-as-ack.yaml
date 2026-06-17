@@ -1,0 +1,9 @@
+document: rfc-5961
+kind: interoperability-note
+summary: Some middleboxes compute RST sequence numbers as (ACK + advertised window), placing the RST at the high end of the acceptable window. This causes repeated challenge-ACK/RST exchanges; the ACK throttling mechanism described in Section 7 can mitigate the resulting traffic.
+section: "9.2"
+topics:
+    - tcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

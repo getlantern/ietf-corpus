@@ -1,0 +1,10 @@
+document: rfc-5969
+kind: security-consideration
+summary: A malicious user aware of a 6rd domain and BR IPv4 address can construct packets causing a BR to reflect tunneled packets outside its domain, potentially creating forwarding loops between 6rd domains and enabling packet amplification attacks. Mitigations include restricting BR IPv4 address reachability to within the SP's 6rd domain and installing null routes for the BR's 6rd delegated prefix.
+section: "12"
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

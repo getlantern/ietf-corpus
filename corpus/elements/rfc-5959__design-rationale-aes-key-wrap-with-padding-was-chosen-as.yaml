@@ -1,0 +1,9 @@
+document: rfc-5959
+kind: design-rationale
+summary: AES Key Wrap with Padding was chosen as the content encryption algorithm because it is specifically designed for encrypting one cryptographic key with another, enabling segregation of cryptographic keying material from other data — a property desirable in high-assurance modules. AES-GCM and AES-CCM do not provide the same segregation properties.
+section: "6"
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

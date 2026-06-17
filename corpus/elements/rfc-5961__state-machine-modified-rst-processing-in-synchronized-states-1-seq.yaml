@@ -1,0 +1,9 @@
+document: rfc-5961
+kind: state-machine
+summary: 'Modified RST processing in synchronized states: (1) SEQ outside window → silently discard; (2) SEQ == RCV.NXT → reset connection; (3) RCV.NXT < SEQ < RCV.NXT+RCV.WND → send challenge ACK and discard. In SYN-SENT, a RST is acceptable only if the ACK field acknowledges the SYN; otherwise silently discard.'
+section: "3.2"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

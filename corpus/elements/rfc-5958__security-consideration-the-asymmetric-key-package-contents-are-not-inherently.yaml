@@ -1,0 +1,10 @@
+document: rfc-5958
+kind: security-consideration
+summary: The asymmetric key package contents are not inherently protected by this content type; it must be combined with a CMS security protocol (SignedData, EncryptedData, EnvelopedData, etc.) to protect the package contents. Removing encapsulating security layers will invalidate any signature and may expose the key to unauthorized disclosure.
+section: "6"
+topics:
+    - crypto
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

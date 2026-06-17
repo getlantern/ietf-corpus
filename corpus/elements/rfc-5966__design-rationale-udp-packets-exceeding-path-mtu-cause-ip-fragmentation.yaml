@@ -1,0 +1,10 @@
+document: rfc-5966
+kind: design-rationale
+summary: 'UDP packets exceeding path MTU cause IP fragmentation, which is unreliable: many firewalls block fragmented packets, some devices refuse EDNS0 options entirely, making TCP the only robust mechanism for large DNS responses.'
+section: "3"
+topics:
+    - dns
+    - tcp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

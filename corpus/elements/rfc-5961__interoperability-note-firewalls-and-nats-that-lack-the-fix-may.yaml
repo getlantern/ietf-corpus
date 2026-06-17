@@ -1,0 +1,9 @@
+document: rfc-5961
+kind: interoperability-note
+summary: Firewalls and NATs that lack the fix may drop the challenge ACK because the original in-window RST already cleared their flow-state entry. This leaves the TCP connection open at both endpoints indefinitely. The issue is resolved only if the middlebox is made conformant with this document.
+section: "9.3"
+topics:
+    - tcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
