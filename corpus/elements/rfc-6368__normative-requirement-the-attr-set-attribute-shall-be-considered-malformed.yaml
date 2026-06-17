@@ -1,0 +1,10 @@
+document: rfc-6368
+kind: normative-requirement
+summary: The ATTR_SET attribute SHALL be considered malformed if its length is less than 4 octets, if the enclosed attributes include MP_REACH or MP_UNREACH, or if the included attributes are themselves malformed. A malformed ATTR_SET is treated as a route withdraw when the Partial flag is set and Neighbor-Complete is clear; otherwise Optional Attribute Error procedures of RFC 4271 MUST be followed.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

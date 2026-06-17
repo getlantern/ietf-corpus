@@ -1,0 +1,9 @@
+document: rfc-6378
+kind: design-rationale
+summary: 'The PSC protocol is single-phased: the initiating LER performs the protection switchover and informs the far-end LER without waiting for acknowledgement. This means there is a short window during one-sided triggers when the two endpoints may be selecting from different paths, which self-corrects once the remote message is received.'
+section: 4.3.1
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

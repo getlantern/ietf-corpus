@@ -1,0 +1,10 @@
+document: rfc-6378
+kind: security-consideration
+summary: Accidental corruption of PSC messages (through faulty implementations or random corruption) is a concern, particularly changes to the Request, FPath, and Path fields which would alter peer endpoint behavior. However, state transitions are designed to converge on a known stable behavior even in the presence of messages that do not match reality.
+section: "6"
+topics:
+    - mpls
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

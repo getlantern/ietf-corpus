@@ -1,0 +1,9 @@
+document: rfc-6384
+kind: design-rationale
+summary: When EPSV ALL is received, the ALG MUST NOT pass it to the server and instead returns 504, because if the server accepts EPSV ALL it would reject subsequent PASV commands that the ALG needs to issue as part of EPSV-to-PASV translation.
+section: "6"
+topics:
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

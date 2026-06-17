@@ -1,0 +1,9 @@
+document: rfc-6387
+kind: interoperability-note
+summary: Nodes that do not implement this extension will not recognize UPSTREAM_FLOWSPEC, UPSTREAM_TSPEC, or UPSTREAM_ADSPEC (all in the 0bbbbbbb class range) and will respond with an 'Unknown Object Class' error per RFC 2205. This error propagates to the ingress, which can then route around the incompatible node or terminate the session.
+section: "4"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

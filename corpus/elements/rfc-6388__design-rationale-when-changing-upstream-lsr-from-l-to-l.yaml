@@ -1,0 +1,9 @@
+document: rfc-6388
+kind: design-rationale
+summary: When changing upstream LSR from L to L', if L' is added before L is removed there is risk of packet duplication and/or transient forwarding loops; if L is removed before L' is added, packet loss may result. The RECOMMENDED default is to remove L before adding L' to avoid duplication, accepting the risk of brief packet loss.
+section: 2.4.3
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

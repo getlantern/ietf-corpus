@@ -1,0 +1,9 @@
+document: rfc-6388
+kind: design-rationale
+summary: Root node redundancy for MP2MP LSPs is achieved by building separate MP2MP LSPs (same opaque value, different root addresses) to each candidate root. Sending leaves select a single active root based on unicast routing metric; all leaves MUST join all available roots. This provides fast failover without additional signaling because root selection is a local leaf policy.
+section: "7.2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

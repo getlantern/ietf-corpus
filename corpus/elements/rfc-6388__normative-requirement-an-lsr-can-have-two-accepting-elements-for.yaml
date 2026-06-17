@@ -1,0 +1,10 @@
+document: rfc-6388
+kind: normative-requirement
+summary: An LSR can have two accepting elements for a specific MBB LSP, but only one MUST be active at a time. If multiple successive routing changes occur while awaiting MBB notification, older inactive accepting elements MUST be replaced with newer ones, and a Label Withdraw MUST be sent to the replaced neighbor.
+section: 8.4.2
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

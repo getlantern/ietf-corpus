@@ -1,0 +1,9 @@
+document: rfc-6384
+kind: design-rationale
+summary: The ALG translates EPSV to PASV (rather than leaving EPSV in place) because a survey found only ~65% of FTP servers support EPSV successfully vs ~96% for PASV, and some servers react adversely to EPSV with connection resets, possibly due to EPSV-unaware application firewalls blocking the data channel.
+section: "1"
+topics:
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

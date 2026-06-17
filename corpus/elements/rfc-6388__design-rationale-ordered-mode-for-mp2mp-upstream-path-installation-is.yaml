@@ -1,0 +1,9 @@
+document: rfc-6388
+kind: design-rationale
+summary: Ordered mode for MP2MP upstream path installation is preferred over hop-by-hop method because it guarantees the upstream path to the root is complete before a leaf starts sending, preventing packet drops due to an incomplete LSP. Hop-by-hop method (Method 1) cannot provide this guarantee.
+section: 3.3.1.3
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6374
+kind: design-rationale
+summary: Transmit counters/timestamps are always written at fixed offsets in both LM and DM messages (Counter/Timestamp 1 for querier transmit, Counter/Timestamp 3 for responder transmit), as are receive values (positions 2 and 4). This fixed-offset layout allows hardware to stamp fields without parsing the full message structure.
+section: "3.1"
+topics:
+    - mpls
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

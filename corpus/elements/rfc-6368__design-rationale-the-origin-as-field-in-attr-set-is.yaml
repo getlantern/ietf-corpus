@@ -1,0 +1,10 @@
+document: rfc-6368
+kind: design-rationale
+summary: The Origin AS field in ATTR_SET is included specifically to prevent a route originating in one customer AS's iBGP from being silently leaked into a different AS without proper AS_PATH manipulation, enabling correct eBGP-like attribute construction when routes cross AS boundaries at VRF import.
+section: "5"
+topics:
+    - bgp
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

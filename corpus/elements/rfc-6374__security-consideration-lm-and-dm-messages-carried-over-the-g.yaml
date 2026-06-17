@@ -1,0 +1,10 @@
+document: rfc-6374
+kind: security-consideration
+summary: LM and DM messages carried over the G-ACh are subject to the security properties of the MPLS data plane. Unauthorized injection or modification of measurement messages can corrupt SLA data or disrupt operations; the Control Code 0x14 (Authentication Failure) provides a defined error path for implementations that apply authentication to measurement sessions. Responders SHOULD employ rate-limiting to guard against excessive query traffic.
+section: "8"
+topics:
+    - mpls
+    - measurement
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

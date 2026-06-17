@@ -1,0 +1,10 @@
+document: rfc-6368
+kind: design-rationale
+summary: NEXT_HOP is rewritten at the VRF import/export boundary rather than preserved, because customer and provider IGP metrics are incomparable. PE routers use the PE-PE IGP distance calculated by the customer network IGP when selecting between routes from different PEs, allowing independent per-site IGPs.
+section: "6"
+topics:
+    - bgp
+    - vpn
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

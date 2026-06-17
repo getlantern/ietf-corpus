@@ -1,0 +1,10 @@
+document: rfc-6388
+kind: normative-requirement
+summary: 'When selecting an upstream LSR over a LAN interface, a CRC32-based hash SHOULD be applied to ensure a single forwarder is elected: H = CRC32(Opaque Value) modulo N, where N is the number of candidate upstream LSRs sorted from lower to higher IP address; the selected upstream is LSR number H.'
+section: 2.4.1.1
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

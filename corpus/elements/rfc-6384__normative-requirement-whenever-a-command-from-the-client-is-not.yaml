@@ -1,0 +1,10 @@
+document: rfc-6384
+kind: normative-requirement
+summary: Whenever a command from the client is not propagated to the server, the FTP ALG instead issues a NOOP command to keep keepalive state synchronized. The response to the NOOP command MUST NOT be relayed back to the client.
+section: "12"
+rfc2119_level: MUST NOT
+topics:
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

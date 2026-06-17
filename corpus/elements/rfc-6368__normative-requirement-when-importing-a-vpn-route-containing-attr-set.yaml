@@ -1,0 +1,11 @@
+document: rfc-6368
+kind: normative-requirement
+summary: When importing a VPN route containing ATTR_SET into a destination VRF, a PE MUST check that the Origin AS in ATTR_SET matches the AS associated with the VRF. On match, the route is imported with ATTR_SET attributes; on mismatch, the PE constructs new attributes by discarding iBGP-specific attributes (LOCAL_PREF, ORIGINATOR, CLUSTER_LIST) and prepending the Origin AS to AS_PATH per eBGP rules.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - vpn
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

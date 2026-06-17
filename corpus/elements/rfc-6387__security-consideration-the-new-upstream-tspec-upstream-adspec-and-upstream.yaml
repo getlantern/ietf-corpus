@@ -1,0 +1,9 @@
+document: rfc-6387
+kind: security-consideration
+summary: The new UPSTREAM_TSPEC, UPSTREAM_ADSPEC, and UPSTREAM_FLOWSPEC objects parallel the existing downstream objects and share their vulnerability surface; any security weakness exploitable via those objects now also applies to messages flowing in the reverse (upstream) direction. No new signaling messages or control-plane adjacencies are introduced, so no additional message- or neighbor-level threats arise beyond those in RFC 3473 and RFC 5920.
+section: "6"
+topics:
+    - security
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

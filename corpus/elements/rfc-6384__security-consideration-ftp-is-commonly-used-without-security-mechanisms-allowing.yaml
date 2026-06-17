@@ -1,0 +1,11 @@
+document: rfc-6384
+kind: security-consideration
+summary: FTP is commonly used without security mechanisms, allowing passive interception of credentials and active modification of transferred data. FTP over TLS (RFC 4217) addresses these issues, and IPv6-to-IPv4 translation and the FTP ALG do not impact these security properties. However, when TLS is negotiated, the ALG exits translation mode and only extended-passive-capable servers or PASV-capable clients will succeed.
+section: "14"
+topics:
+    - security
+    - nat
+    - v6ops
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-6381
+kind: security-consideration
+summary: An incorrect 'codecs' parameter can cause content to be sent to an incapable device or withheld from a capable one, enabling denial-of-service attacks. However, this is most likely accidental; an attacker capable of altering media in transit could cause more harm by altering the media format itself or the full Content-Type header rather than just the 'codecs' parameter.
+section: "7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

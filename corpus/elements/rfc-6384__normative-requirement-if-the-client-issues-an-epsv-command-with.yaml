@@ -1,0 +1,10 @@
+document: rfc-6384
+kind: normative-requirement
+summary: If the client issues an EPSV command with a numeric argument other than 2, the ALG MUST NOT pass the command on to the server but rather respond with a 522 error. If the client issues EPSV ALL, the FTP ALG MUST NOT pass this command to the server, but respond with a 504 error.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

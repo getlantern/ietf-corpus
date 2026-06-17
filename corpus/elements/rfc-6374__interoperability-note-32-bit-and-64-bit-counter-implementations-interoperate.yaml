@@ -1,0 +1,9 @@
+document: rfc-6374
+kind: interoperability-note
+summary: '32-bit and 64-bit counter implementations interoperate via the X flag: any interface writing 32-bit counters clears X to 0, and the loss calculation uses only the low-order 32 bits of all counter fields. This ensures backward compatibility without error signaling.'
+section: 4.2.6
+topics:
+    - mpls
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

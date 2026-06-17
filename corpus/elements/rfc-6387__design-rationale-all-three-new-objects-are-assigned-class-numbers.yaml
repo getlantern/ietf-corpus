@@ -1,0 +1,9 @@
+document: rfc-6387
+kind: design-rationale
+summary: All three new objects are assigned class numbers in the 0bbbbbbb range (120–122), which causes nodes that do not recognize them to return an 'Unknown Object Class' error rather than silently dropping or forwarding the message, enabling the ingress to detect incompatible nodes.
+section: "4"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
