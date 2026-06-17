@@ -1,0 +1,9 @@
+document: rfc-6562
+kind: interoperability-note
+summary: SRTP leaves the RTP header and any header extension in the clear and provides only payload encryption. None of the predefined SRTP encryption transforms apply any padding, so RTP and SRTP payload sizes match exactly, meaning packet-length variation directly reflects codec output variation.
+section: "1"
+topics:
+    - rtp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

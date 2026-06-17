@@ -1,0 +1,9 @@
+document: rfc-6575
+kind: design-rationale
+summary: IPv4 ARP and Inverse ARP are not IP packets and therefore cannot be carried on an IP pseudowire, requiring explicit LDP signaling of IPv4 addresses between PEs. IPv6 uses ICMPv6-based ND/IND which are IP packets and can traverse the IP pseudowire in-band, eliminating the need for separate IPv6 address signaling.
+section: 4.3.1
+topics:
+    - vpn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

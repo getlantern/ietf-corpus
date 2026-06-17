@@ -1,0 +1,10 @@
+document: rfc-6575
+kind: normative-requirement
+summary: In stack capability fallback mode, the PE MUST send a Label Withdraw with status 0x0000004B ('Wrong IP Address Type') followed by a Label Mapping without the Stack Capability sub-TLV. A PE receiving a Label Withdraw with this status MUST NOT respond with a Label Release and MUST wait for the next control message.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - vpn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6562
+kind: design-rationale
+summary: VBR audio can be safely used with SRTP for congestion control purposes provided the packet size variation is driven entirely by available network bandwidth rather than by the speech signal itself — in that case, packet sizes and spacing are constant unless network conditions change, so no speech information is exposed.
+section: "3"
+topics:
+    - security
+    - rtp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6575
+kind: security-consideration
+summary: Data traffic between CE and PE is unencrypted. To prevent MAC address spoofing on Ethernet ACs, the local PE may verify source MAC addresses; when spoofing is detected, the PE MUST sever the CE connection, tear down the PW, and restart the address resolution process.
+section: "8.2"
+rfc2119_level: MUST
+topics:
+    - security
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

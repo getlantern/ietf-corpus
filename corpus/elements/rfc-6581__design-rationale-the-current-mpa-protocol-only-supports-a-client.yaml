@@ -1,0 +1,8 @@
+document: rfc-6581
+kind: design-rationale
+summary: The current MPA protocol only supports a client-server connection model, which forces peer-to-peer applications (e.g., MPI cluster nodes) to artificially designate one side as 'client.' This document adds peer-to-peer support because in cluster workloads neither node predictably sends first, and the workaround of injecting a dummy first message is incompatible with transport-neutral APIs, disrupts Work/Completion Queue accounting, and conflicts with host-based MPA Fencing implementations.
+section: "4.3"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

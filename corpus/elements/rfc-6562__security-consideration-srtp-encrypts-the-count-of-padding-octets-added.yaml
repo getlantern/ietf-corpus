@@ -1,0 +1,9 @@
+document: rfc-6562
+kind: security-consideration
+summary: SRTP encrypts the count of padding octets added to a packet but leaves the RTP header padding indicator bit in the clear. Without uniform padding across all packets, an attacker can identify which packets were padded, partially defeating the padding-based mitigation.
+section: "5"
+topics:
+    - security
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

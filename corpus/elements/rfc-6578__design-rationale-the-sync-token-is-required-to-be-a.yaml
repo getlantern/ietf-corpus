@@ -1,0 +1,8 @@
+document: rfc-6578
+kind: design-rationale
+summary: The sync token is required to be a valid URI (not just an opaque string) specifically to enable its use in WebDAV If precondition headers, which require state tokens to be URI-formatted. This allows clients to perform conditional operations that atomically check collection state.
+section: "3.2"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

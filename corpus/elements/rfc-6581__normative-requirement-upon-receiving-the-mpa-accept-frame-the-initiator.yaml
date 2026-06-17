@@ -1,0 +1,9 @@
+document: rfc-6581
+kind: normative-requirement
+summary: Upon receiving the MPA Accept Frame, the initiator MUST set its IRD at least to the responder ORD and its ORD at most to the responder IRD. If the initiator lacks sufficient resources for the required IRD, it MUST send a TERM message (Layer 2, Error Type 0, Error Code 6) and terminate the connection.
+section: "9.1"
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

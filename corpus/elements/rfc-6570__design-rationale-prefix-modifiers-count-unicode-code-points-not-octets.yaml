@@ -1,0 +1,8 @@
+document: rfc-6570
+kind: design-rationale
+summary: Prefix modifiers count Unicode code points (not octets) to avoid splitting multi-octet UTF-8 sequences or pct-encoded triplets that represent a single code point. This ensures the truncated value is always a valid Unicode string.
+section: 2.4.1
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

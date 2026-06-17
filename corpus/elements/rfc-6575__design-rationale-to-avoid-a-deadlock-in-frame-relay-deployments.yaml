@@ -1,0 +1,8 @@
+document: rfc-6575
+kind: design-rationale
+summary: To avoid a deadlock in Frame Relay deployments (where CE sends Inverse ARP only after DLCI activation, but DLCI activation requires the PE to have received the remote CE IPv4 address), PEs advertise the PW FEC with an all-zeros IPv4 address first, then re-advertise once the CE address is learned.
+section: "5.1"
+topics:
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

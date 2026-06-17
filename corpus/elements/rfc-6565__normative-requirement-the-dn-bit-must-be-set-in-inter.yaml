@@ -1,0 +1,11 @@
+document: rfc-6565
+kind: normative-requirement
+summary: The DN-bit MUST be set in Inter-area-prefix LSAs, NSSA LSAs, and AS-External LSAs when these are originated from a PE to a CE, to prevent those prefixes from being re-advertised into BGP. Any LSA with the DN-bit set must not be used for route calculations on PE routers.
+section: 4.5.1
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

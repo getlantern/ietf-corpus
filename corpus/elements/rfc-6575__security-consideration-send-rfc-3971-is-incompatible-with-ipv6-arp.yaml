@@ -1,0 +1,11 @@
+document: rfc-6575
+kind: security-consideration
+summary: SEND (RFC 3971) is incompatible with IPv6 ARP Mediation because PEs must modify Neighbor Discovery packets. PEs MUST remove all SEND packet options from ND packets before forwarding into the pseudowire. CE devices MUST be configured to accept non-SEND packets, and IPv6 ARP Mediation SHOULD only be used with physically secure Attachment Circuits.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - vpn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-6581
+kind: design-rationale
+summary: The RTR indication type is made flexible (zero-length FULPDU Send, RDMA Write, or RDMA Read) because RDMA implementations are tightly coupled to hardware and application libraries. Allowing multiple RTR message types lets implementations choose the type least disruptive to their structure; the initiator selects among mutually supported types at its sole discretion.
+section: "1.1"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6575
+kind: security-consideration
+summary: The LDP connection between PEs MUST be secured by verifying the incoming connection against the configured peer address and authenticating LDP messages per RFC 5036 Section 2.9. During ARP/Inverse ARP processing, the PE MUST verify received IP and MAC address information against local configuration before forwarding to the remote PE, to protect against CE connection hijacking.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-6581
+kind: state-machine
+summary: 'Enhanced connection negotiation proceeds in three steps: (1) Initiator sends MPA Request with Control Flag A, IRD/ORD, and RTR option flags B/C/D; (2) Responder sends MPA Reply echoing Flag A and setting supported RTR flags and actual IRD/ORD values; (3) Initiator sends first RDMA message as RTR indication, or sends TERM (Error Code 7) if no RTR option is mutually supported.'
+section: "9.3"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

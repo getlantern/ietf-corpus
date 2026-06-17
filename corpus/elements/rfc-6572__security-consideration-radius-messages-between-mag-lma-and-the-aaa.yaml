@@ -1,0 +1,11 @@
+document: rfc-6572
+kind: security-consideration
+summary: RADIUS messages between MAG/LMA and the AAA server may traverse one or more AAA brokers or RADIUS proxies; the security of those exchanges depends on the trustworthiness of those intermediaries. MAG, LMA, and AAA server SHOULD avoid including personally identifying attributes (Interface ID, link-layer address, NAI) except as needed, especially when identity hiding is desired.
+section: "8"
+topics:
+    - security
+    - radius
+    - mobility
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

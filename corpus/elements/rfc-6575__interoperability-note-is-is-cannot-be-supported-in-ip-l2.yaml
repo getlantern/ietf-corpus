@@ -1,0 +1,9 @@
+document: rfc-6575
+kind: interoperability-note
+summary: IS-IS cannot be supported in IP L2 Interworking L2VPNs because IS-IS does not encapsulate its PDUs in IP, making them unable to traverse an IP pseudowire. OSPF over Ethernet CEs cross-connected to point-to-point CEs requires configuring ospfIfType to treat the broadcast link as point-to-point to avoid DR/BDR election issues and LSA type mismatches.
+section: A
+topics:
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,12 @@
+document: rfc-6565
+kind: normative-requirement
+summary: If the next-hop interface for a route is a sham link, the PE SHOULD NOT redistribute that route into BGP as a VPN-IPv6 route. Any other route advertised in an LSA transmitted over a sham link MUST be redistributed into BGP.
+section: "5.3"
+rfc2119_level: SHOULD NOT
+topics:
+    - routing
+    - mpls
+    - vpn
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6578
+kind: normative-requirement
+summary: When results are truncated, the response MUST use status 207, return a DAV:multistatus body, and indicate status 507 (Insufficient Storage) for the request-URI. The returned DAV:sync-token MUST represent the correct state for the partial set of changes returned, allowing clients to page through changes.
+section: "3.6"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
