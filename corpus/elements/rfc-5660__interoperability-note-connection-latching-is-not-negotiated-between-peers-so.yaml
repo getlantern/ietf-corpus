@@ -1,0 +1,9 @@
+document: rfc-5660
+kind: interoperability-note
+summary: Connection latching is not negotiated between peers, so one end may use it while the other does not. If the non-latched end sends data unprotected due to a local policy change, the latched end will reject the packets but sensitive data may already have been exposed.
+section: "6.3"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

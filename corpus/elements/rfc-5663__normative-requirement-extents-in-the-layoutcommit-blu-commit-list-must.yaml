@@ -1,0 +1,7 @@
+document: rfc-5663
+kind: normative-requirement
+summary: Extents in the LAYOUTCOMMIT blu_commit_list MUST be disjoint and MUST be sorted by bex_file_offset. They MUST be aligned to the server's file-system block size granularity with sizes that are multiples of that granularity. If the end-of-file falls within a committed block, the client MUST zero-fill from EOF to the end of that block before committing.
+section: 2.3.2
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

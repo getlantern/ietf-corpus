@@ -1,0 +1,7 @@
+document: rfc-5663
+kind: normative-requirement
+summary: The server MUST maintain the last blh_maximum_io_time hint per client and MUST apply any updated value to all files for which that client holds a layout. A client that receives NFS4ERR_INVAL in response to the layout-hint SETATTR MUST NOT subsequently issue LAYOUTGET; the server MUST then return NFS4ERR_LAYOUTUNAVAILABLE to all subsequent LAYOUTGET requests from that client.
+section: 2.3.8
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

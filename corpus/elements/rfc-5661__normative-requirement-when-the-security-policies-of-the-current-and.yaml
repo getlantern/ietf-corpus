@@ -1,0 +1,9 @@
+document: rfc-5661
+kind: normative-requirement
+summary: When the security policies of the current and saved filehandles have no mutually acceptable security tuple, the server MUST NOT return NFS4ERR_WRONGSEC from LINK or RENAME; instead it MUST return NFS4ERR_XDEV or allow the current filehandle's security policy to override.
+section: 2.6.3.1.2
+rfc2119_level: MUST NOT
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

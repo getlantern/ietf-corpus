@@ -1,0 +1,12 @@
+document: rfc-5660
+kind: normative-requirement
+summary: When the key manager notifies a ULP of a BROKEN latch, the ULP MUST stop sending and MUST drop all subsequent inbound packets for the affected connection until the latch transitions back to ESTABLISHED; connection-oriented ULPs SHOULD treat this as packet loss.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+    - tcp
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

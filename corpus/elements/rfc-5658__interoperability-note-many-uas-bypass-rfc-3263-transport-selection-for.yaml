@@ -1,0 +1,9 @@
+document: rfc-5658
+kind: interoperability-note
+summary: Many UAs bypass RFC 3263 transport selection for initial requests by allowing users to configure transport explicitly. This creates transport-switching failures in subsequent in-dialog messages when proxies Record-Route without a transport parameter, as the UA is then forced by RFC 3263 to use a different transport for the route URI.
+section: "6.1"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

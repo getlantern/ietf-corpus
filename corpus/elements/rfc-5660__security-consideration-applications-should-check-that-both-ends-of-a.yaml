@@ -1,0 +1,9 @@
+document: rfc-5660
+kind: security-consideration
+summary: Applications SHOULD check that both ends of a connection are latched (implicit when using channel binding to IPsec). Applications using multiple concurrent connections between two nodes must individually verify that each connection's latched peer IPsec ID is consistent.
+section: "6.3"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

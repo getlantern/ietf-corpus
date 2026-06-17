@@ -1,0 +1,9 @@
+document: rfc-5660
+kind: state-machine
+summary: 'Connection latches have four states: LISTENER (3-tuple scope, gives rise to new latches), ESTABLISHED (active 5-tuple latch), BROKEN (SA/SPD conflict or IKEv2 DPD dead-peer detected), and CLOSED (released by ULP, application, or administratively). ESTABLISHED and BROKEN can transition to each other; all active states can transition to CLOSED; BROKEN transitions always notify the holder.'
+section: "2.2"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

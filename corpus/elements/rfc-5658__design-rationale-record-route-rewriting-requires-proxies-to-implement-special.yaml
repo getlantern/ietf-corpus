@@ -1,0 +1,9 @@
+document: rfc-5658
+kind: design-rationale
+summary: 'Record-Route rewriting requires proxies to implement special multi-homed logic: during request forwarding, resolve the output interface and encode it in the Record-Route URI; during response processing, inspect and selectively rewrite each Record-Route. This lookup on every forwarded response introduces a CPU drag that double Record-Routing avoids entirely.'
+section: "4"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

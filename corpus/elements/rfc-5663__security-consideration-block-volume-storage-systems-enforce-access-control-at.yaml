@@ -1,0 +1,8 @@
+document: rfc-5663
+kind: security-consideration
+summary: Block/volume storage systems enforce access control at volume (LUN) granularity, not per-file or per-block. pNFS clients must be trusted to restrict I/O to the layout extents they hold, because the server cannot prevent a client from accessing parts of a physical disk not covered by its layout, nor from accessing blocks covered by a layout it has already returned.
+section: "3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

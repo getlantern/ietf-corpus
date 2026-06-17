@@ -1,0 +1,9 @@
+document: rfc-5660
+kind: interoperability-note
+summary: Non-native IPsec implementations (BITS, BITW, SG) can implement connection latching by inferring ULP connection state from packet inspection, but they cannot provide APIs and thus are not suitable for channel binding applications. When a latch is broken, a BITS/SG implementation may need to send fake TCP RST packets.
+section: "2.5"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

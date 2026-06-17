@@ -1,0 +1,10 @@
+document: rfc-5658
+kind: interoperability-note
+summary: UAs that always keep the same transport for a given dialog behave erroneously when proxies are not Record-Routing, because the callee may receive subsequent requests over a transport different from the one specified in its Contact. Correct behavior requires DNS-driven transport selection, not static configuration.
+section: "6.1"
+topics:
+    - sip
+    - dns
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

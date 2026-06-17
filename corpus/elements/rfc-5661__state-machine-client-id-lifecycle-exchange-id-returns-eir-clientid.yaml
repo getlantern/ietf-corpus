@@ -1,0 +1,6 @@
+document: rfc-5661
+kind: state-machine
+summary: 'Client ID lifecycle: EXCHANGE_ID (returns eir_clientid) → CREATE_SESSION (client ID confirmed, session active) → steady state (all session requests renew the lease) → DESTROY_CLIENTID (graceful teardown) or NFS4ERR_STALE_CLIENTID/NFS4ERR_BADSESSION (server restart, triggers new EXCHANGE_ID + CREATE_SESSION).'
+section: "2.4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

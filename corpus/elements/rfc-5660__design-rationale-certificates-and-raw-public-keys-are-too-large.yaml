@@ -1,0 +1,10 @@
+document: rfc-5660
+kind: design-rationale
+summary: Certificates and raw public keys are too large to store in kernel-mode implementations. Peer IDs should be interned in a user-mode database using small integer references from the kernel SAD/LD; corruption of this database MUST cause all ESTABLISHED and BROKEN latches to be administratively closed.
+section: "2.6"
+topics:
+    - ipsec
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

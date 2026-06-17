@@ -1,0 +1,8 @@
+document: rfc-5663
+kind: security-consideration
+summary: Block/volume storage devices are unable to validate NFS ACLs, mandatory locks, or file open modes. In environments where pNFS clients cannot be trusted to enforce such file-based policies, pNFS block/volume storage layouts SHOULD NOT be used. Virtual block addresses exported by storage devices can enable device-side access checks as an alternative.
+section: "3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

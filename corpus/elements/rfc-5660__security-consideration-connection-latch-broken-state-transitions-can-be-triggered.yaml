@@ -1,0 +1,9 @@
+document: rfc-5660
+kind: security-consideration
+summary: Connection latch BROKEN state transitions can be triggered by on-path attackers and off-path attackers able to manipulate routers or ICMP Redirect messages. Breaking a latch requires successfully establishing a conflicting SA, which for off-path attackers requires taking over the peer's IP addresses, ruling out purely off-path attacks.
+section: "6.5"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

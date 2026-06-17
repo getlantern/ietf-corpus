@@ -1,0 +1,7 @@
+document: rfc-5663
+kind: normative-requirement
+summary: All block/volume pNFS clients MUST support copy-on-write processing. When writing to an area covered by PNFS_BLOCK_READ_DATA extents, the client MUST request a writable layout, merge partial block changes with data fetched from the READ_DATA extent, and write the merged result to the corresponding PNFS_BLOCK_INVALID_DATA extent. After storing data in INVALID_DATA, subsequent reads MUST come from that (now READ_WRITE_DATA) extent; the READ_DATA extent MUST NOT be used.
+section: 2.3.4
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

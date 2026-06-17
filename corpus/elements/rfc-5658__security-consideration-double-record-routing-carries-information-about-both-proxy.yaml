@@ -1,0 +1,11 @@
+document: rfc-5658
+kind: security-consideration
+summary: Double Record-Routing carries information about both proxy interfaces to each involved endpoint and any intermediaries, whereas the rewriting technique only exposes the interface closest to each endpoint. If topology hiding or privacy (per RFC 3323) is a concern, the URI values in each Record-Route must be carefully constructed to avoid leaking unintended internal network topology.
+section: "8"
+topics:
+    - sip
+    - security
+    - privacy
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

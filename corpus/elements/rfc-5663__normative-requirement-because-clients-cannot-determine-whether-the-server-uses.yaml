@@ -1,0 +1,9 @@
+document: rfc-5663
+kind: normative-requirement
+summary: Because clients cannot determine whether the server uses LUN masking, clients MUST always implement timed-lease fencing. After a layout lease expires (lease_time seconds since last renewal), the client MUST cease using that layout and SHOULD revert to standard NFSv4.1 READ/WRITE operations. If max I/O time cannot be bounded, the client MUST use all-1s as blh_maximum_io_time.
+section: 2.3.8
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

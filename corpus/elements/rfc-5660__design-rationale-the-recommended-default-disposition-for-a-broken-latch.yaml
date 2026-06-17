@@ -1,0 +1,11 @@
+document: rfc-5660
+kind: design-rationale
+summary: The RECOMMENDED default disposition for a BROKEN latch is connection reset (rather than waiting), because a conflicting SA most likely indicates that the original peer is gone and replaced by another; waiting for recovery that is unlikely to occur would unnecessarily delay application failure detection.
+section: "5.5"
+topics:
+    - ipsec
+    - security
+    - tcp
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

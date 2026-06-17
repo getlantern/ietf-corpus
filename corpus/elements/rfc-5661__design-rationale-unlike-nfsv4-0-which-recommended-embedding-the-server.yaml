@@ -1,0 +1,6 @@
+document: rfc-5661
+kind: design-rationale
+summary: Unlike NFSv4.0 (which recommended embedding the server's network address in the client owner string), NFSv4.1 recommends using the same co_ownerid string across all server addresses. This enables session trunking, where a single client ID is shared across multiple network paths to the same server.
+section: "2.4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

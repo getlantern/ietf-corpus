@@ -1,0 +1,8 @@
+document: rfc-5663
+kind: protocol-element
+summary: 'Client fencing prevents a client with an expired or revoked layout from continuing I/O to storage. Two approaches are defined: LUN masking/mapping at the storage system or SAN (preferred), and timed-lease fencing where the client ceases I/O after lease_time seconds. The server must wait at least lease_time + blh_maximum_io_time before reallocating layouts from the original client to another.'
+section: 2.3.8
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

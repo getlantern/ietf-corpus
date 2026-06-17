@@ -1,0 +1,6 @@
+document: rfc-5663
+kind: design-rationale
+summary: Negative bsc_sig_offset values (indicating byte offsets from the end of the volume) are permitted in pnfs_block_sig_component4 to simplify client implementation on systems where device labels are at a fixed offset from the volume end. However, they SHOULD NOT be used on dynamically resizable volumes unless the label is guaranteed to track the end-of-volume offset.
+section: 2.2.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

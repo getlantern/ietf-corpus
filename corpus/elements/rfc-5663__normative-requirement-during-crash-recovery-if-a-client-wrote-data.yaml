@@ -1,0 +1,7 @@
+document: rfc-5663
+kind: normative-requirement
+summary: During crash recovery, if a client wrote data to PNFS_BLOCK_INVALID_DATA blocks that are no longer in the client cache, the client MUST NOT attempt to source that data from the data servers. Instead, it should commit the blocks to the server during the recovery grace period via LAYOUTCOMMIT with the loca_reclaim flag set to true.
+section: "2.4"
+rfc2119_level: MUST NOT
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

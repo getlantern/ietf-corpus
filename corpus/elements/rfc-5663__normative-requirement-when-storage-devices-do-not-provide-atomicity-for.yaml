@@ -1,0 +1,9 @@
+document: rfc-5663
+kind: normative-requirement
+summary: When storage devices do not provide atomicity for concurrent read/write or write/write operations, the pNFS server MUST implement a single-writer XOR multiple-readers concurrency control policy via layout grants and recalls. The server MUST NOT grant layouts conflicting with mandatory locks or share reservations, and MUST recall conflicting layout portions before granting such requests.
+section: 2.3.5
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

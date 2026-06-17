@@ -1,0 +1,6 @@
+document: rfc-5663
+kind: design-rationale
+summary: Client participation in copy-on-write is enabled by the combination of PNFS_BLOCK_READ_DATA and PNFS_BLOCK_INVALID_DATA extent states with their permitted overlap in writable layouts. In classic NFS, copy-on-write is done server-side; since pNFS enables direct client block access, shifting CoW to clients reduces server load and improves parallelism.
+section: 2.3.4
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

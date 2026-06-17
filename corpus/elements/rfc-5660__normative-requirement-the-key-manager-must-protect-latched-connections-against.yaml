@@ -1,0 +1,10 @@
+document: rfc-5660
+kind: normative-requirement
+summary: The key manager MUST protect latched connections against SPD changes that would alter the quality of protection or bypass a latched connection's traffic. The REQUIRED behavior is to transition conflicting latches to BROKEN; an OPTIONAL behavior is to insert a logical PROTECT SPD entry for the latch's exact 5-tuple (which MUST NOT survive reboots).
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

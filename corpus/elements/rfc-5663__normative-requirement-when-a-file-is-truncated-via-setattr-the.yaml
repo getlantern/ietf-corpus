@@ -1,0 +1,7 @@
+document: rfc-5663
+kind: normative-requirement
+summary: When a file is truncated via SETATTR, the server MUST recall from clients all pNFS layout portions referring to blocks that will be freed or zeroed by the truncation before processing the request. If unable to complete in reasonable time, the server SHOULD reply with NFS4ERR_DELAY.
+section: 2.3.6
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5658
+kind: interoperability-note
+summary: When a proxy inserts a Record-Route with a numeric IP address and no transport parameter, RFC 3263 procedures resolve the URI to UDP by default (no NAPTR lookup is performed for numeric IPs). This causes subsequent in-dialog requests such as ACK to be sent over UDP even when the initial request arrived over TCP, typically causing the ACK to fail.
+section: "6.1"
+topics:
+    - sip
+    - dns
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

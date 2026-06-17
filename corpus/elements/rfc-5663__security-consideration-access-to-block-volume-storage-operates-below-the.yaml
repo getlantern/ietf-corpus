@@ -1,0 +1,8 @@
+document: rfc-5663
+kind: security-consideration
+summary: 'Access to block/volume storage operates below the NFSv4 security layer; NFSv4 security mechanisms (encryption, cryptographic integrity) may not apply. Security granularities differ: NFSv4 controls user-to-file access, while iSCSI controls initiator-to-volume access. Administrators must ensure appropriate protection for the storage protocol; in environments where requirements cannot be met, block/volume pNFS layouts SHOULD NOT be used.'
+section: "3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5661
+kind: design-rationale
+summary: 'SECINFO and SECINFO_NO_NAME consume the current filehandle in NFSv4.1, a deliberate change from NFSv4.0. This resolves security enforcement ambiguity for operations following SECINFO within a COMPOUND: without a current filehandle, subsequent data operations return NFS4ERR_NOFILEHANDLE rather than silently applying the wrong security context.'
+section: 2.6.3.1.1.8
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
