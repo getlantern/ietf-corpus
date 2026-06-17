@@ -1,0 +1,9 @@
+document: rfc-5403
+kind: design-rationale
+summary: A one-way hash of channel bindings is used in rbcmia_bind_chan_hash rather than the raw channel bindings because some channel bindings (e.g., those composed of public keys) can be relatively large, imposing a space management burden on implementations.
+section: "3.3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

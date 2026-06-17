@@ -1,0 +1,9 @@
+document: rfc-5393
+kind: design-rationale
+summary: Loop detection alone is insufficient when an attacker controls N distinct AORs each forking to all others; traffic grows faster than N! even with loop detection at all proxies. The Max-Breadth mechanism is designed to limit the effectiveness of this multi-AOR variant by capping concurrent branches.
+section: "3"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

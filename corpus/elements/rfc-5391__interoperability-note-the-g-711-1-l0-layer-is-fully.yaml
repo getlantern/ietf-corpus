@@ -1,0 +1,10 @@
+document: rfc-5391
+kind: interoperability-note
+summary: The G.711.1 L0 layer is fully interoperable with G.711. A gateway can extract a G.711-compatible payload from a G.711.1 packet by stripping the L1/L2 layers without decoding and re-encoding the audio. For multi-frame packets, the concatenated L0 layers form a valid G.711 payload.
+section: "6"
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

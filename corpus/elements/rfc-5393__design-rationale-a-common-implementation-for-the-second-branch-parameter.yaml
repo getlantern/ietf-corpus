@@ -1,0 +1,10 @@
+document: rfc-5393
+kind: design-rationale
+summary: A common implementation for the second branch-parameter part is a hash (e.g., CRC-32c or MD5 used non-cryptographically) over the Request-URI, Route header values, and other location-service inputs. Implementations SHOULD include at least one field that varies between different transactions to the same destination (e.g., Call-ID and CSeq) to avoid repeated failure on hash collision.
+section: 4.2.4
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

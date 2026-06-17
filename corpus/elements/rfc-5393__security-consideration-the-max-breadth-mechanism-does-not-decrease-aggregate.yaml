@@ -1,0 +1,9 @@
+document: rfc-5393
+kind: security-consideration
+summary: The Max-Breadth mechanism does not decrease aggregate traffic from a forking-loop attack; it only spreads traffic over a longer period by capping concurrent branches. An attacker can pump multiple requests to gradually build traffic. Deployments must monitor for gradual increases in concurrent outstanding transactions and be prepared to disable compromised resources.
+section: "7"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

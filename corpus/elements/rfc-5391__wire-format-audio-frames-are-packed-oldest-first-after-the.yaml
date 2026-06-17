@@ -1,0 +1,9 @@
+document: rfc-5391
+kind: wire-format
+summary: 'Audio frames are packed oldest-first after the payload header. Within each frame, layers are always in order: L0 only for R1; L0 then L1 for R2a; L0 then L2 for R2b; L0 then L1 then L2 for R3. All frames in a payload MUST be the same mode.'
+section: "4.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

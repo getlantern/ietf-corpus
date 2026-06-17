@@ -1,0 +1,10 @@
+document: rfc-5389
+kind: normative-requirement
+summary: The transaction ID MUST be uniformly and randomly chosen from 0..2^96-1 and SHOULD be cryptographically random. A new transaction ID MUST be chosen for new transactions; retransmissions reuse the same ID. Success and error responses MUST carry the same transaction ID as their corresponding request.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

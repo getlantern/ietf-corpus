@@ -1,0 +1,8 @@
+document: rfc-5401
+kind: protocol-element
+summary: Timer-based NACK suppression uses randomly picked backoff timeouts with a truncated exponential distribution parameterized by groupSize and T_maxBackoff. The optimal mean is L = log(groupSize) + 1, and the expected NACK count within one GRTT is approximately N = exp(1.2 * L / (2 * T_maxBackoff / GRTT)).
+section: 3.2.2
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

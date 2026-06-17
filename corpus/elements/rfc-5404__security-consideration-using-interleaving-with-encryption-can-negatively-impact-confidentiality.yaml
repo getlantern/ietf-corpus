@@ -1,0 +1,11 @@
+document: rfc-5404
+kind: security-consideration
+summary: 'Using interleaving with encryption can negatively impact confidentiality: when a key change is used to revoke access, frames already distributed in prior packets under the previous key may still allow reconstruction of audio beyond the intended cutoff point.'
+section: "10"
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

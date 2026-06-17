@@ -1,0 +1,9 @@
+document: rfc-5389
+kind: security-consideration
+summary: Outside attackers can inject or modify STUN messages to cause clients to learn incorrect reflexive addresses, silence clients, or amplify a DDoS against a third party by spoofing source addresses in Binding requests. Message integrity (HMAC-SHA1) and TLS mitigate injection; each STUN usage must assess which attacks apply.
+section: 16.1.1
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

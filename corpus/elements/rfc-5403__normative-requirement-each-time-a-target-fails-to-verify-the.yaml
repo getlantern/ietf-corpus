@@ -1,0 +1,10 @@
+document: rfc-5403
+kind: normative-requirement
+summary: Each time a target fails to verify the MIC of an RPCSEC_GSS_BIND_CHANNEL request, it SHOULD significantly reduce the lifetime of the underlying GSS context (e.g., by 50% per failure) to limit the window for a MITM brute-force attack.
+section: "9"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5393
+kind: normative-requirement
+summary: Proxies required to perform loop detection MUST inspect each Via header field value whose sent-by matches a value placed by this proxy. If the second part is present and equals the freshly-computed second part, the request has looped and the proxy MUST reject it with a 482 (Loop Detected) response.
+section: 4.2.2
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

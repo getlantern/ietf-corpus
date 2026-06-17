@@ -1,0 +1,9 @@
+document: rfc-5403
+kind: design-rationale
+summary: 'Protecting the RPCSEC_GSS version number within RPCSEC_GSS_INIT and RPCSEC_GSS_CONTINUE_INIT tokens was considered as a MITM mitigation but rejected: it does not fully prevent the attack (merely moves MIC guessing to the INIT message), and including the version number in GSS tokens would require changing GSS or the GSS mechanism itself.'
+section: "9"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

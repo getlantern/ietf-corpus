@@ -1,0 +1,8 @@
+document: rfc-5401
+kind: protocol-element
+summary: When FEC is used and receivers construct explicit repair requests, the rule is to request the lowest ordinal parity symbols first to fill erasures on the first NACK cycle. If available parity is insufficient, also request the ordinally highest missing data symbols. On subsequent cycles, request only symbols not yet received, applying the same strategy.
+section: 3.2.3.1
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

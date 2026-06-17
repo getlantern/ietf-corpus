@@ -1,0 +1,9 @@
+document: rfc-5403
+kind: security-consideration
+summary: With channel bindings, a single forged GSS MIC allows an attacker to inject bogus requests for the lifetime of the channel, compared to RPCSEC_GSSv1 where a forged MIC enables only a single bogus request. This significantly raises the security requirement for the MIC algorithm used by the GSS mechanism.
+section: "9"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

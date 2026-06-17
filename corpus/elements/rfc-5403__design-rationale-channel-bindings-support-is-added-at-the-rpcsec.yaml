@@ -1,0 +1,9 @@
+document: rfc-5403
+kind: design-rationale
+summary: Channel bindings support is added at the RPCSEC_GSS protocol layer rather than relying on native GSS mechanism channel bindings because, as RFC 2743 Section 1.1.6 notes, not all GSS mechanism implementations support channel bindings. This approach makes the feature available regardless of the underlying GSS mechanism's capabilities.
+section: "1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

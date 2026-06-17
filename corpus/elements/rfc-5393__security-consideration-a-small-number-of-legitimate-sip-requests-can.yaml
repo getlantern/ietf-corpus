@@ -1,0 +1,9 @@
+document: rfc-5393
+kind: security-consideration
+summary: A small number of legitimate SIP requests can stimulate exponentially growing proxy-to-proxy traffic by leveraging forking. With RFC 3261 defaults, fewer than ten messages can stimulate potentially 2^71 messages through cross-registration of AORs across two proxies.
+section: "3"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

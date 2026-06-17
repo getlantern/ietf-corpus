@@ -1,0 +1,8 @@
+document: rfc-5389
+kind: design-rationale
+summary: STUN is intentionally a tool rather than a complete NAT traversal solution, reversing the RFC 3489 approach. Classic STUN's NAT classification algorithm was found faulty (many NATs did not fit the defined types), and it could not determine whether a learned address would actually be reachable by a peer. Complete solutions such as ICE incorporate STUN as one component.
+section: "2"
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5401
+kind: protocol-element
+summary: 'GRTT update rules: (1) if RTT_rcvr exceeds current GRTT, immediately set GRTT = RTT_rcvr; (2) at end of probe interval if peak RTT_peak < current GRTT, set GRTT = MAX(0.9*GRTT, RTT_peak); (3) if no feedback received, GRTT is unchanged; (4) reset peak tracking value RTT_peak to zero at end of each probe interval.'
+section: 3.7.1
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

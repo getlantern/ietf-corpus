@@ -1,0 +1,8 @@
+document: rfc-5389
+kind: interoperability-note
+summary: A server detects RFC 3489 clients by the absence of 0x2112A442 in the magic cookie field. When detected, the server SHOULD echo the magic cookie value from the request back in the response and insert MAPPED-ADDRESS instead of XOR-MAPPED-ADDRESS. RFC 3489-compatible implementations SHOULD NOT be used where STUN is multiplexed with other protocols.
+section: "12.2"
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

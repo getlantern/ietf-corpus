@@ -1,0 +1,10 @@
+document: rfc-5393
+kind: normative-requirement
+summary: If a SIP proxy receives a request with no Max-Breadth header field value, it MUST add one; the value is RECOMMENDED to be 60. Proxies MUST have a maximum allowable Incoming Max-Breadth (RECOMMENDED 60), and MUST overwrite values exceeding this maximum with a value that SHOULD be no greater than the allowable maximum.
+section: 5.3.3
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

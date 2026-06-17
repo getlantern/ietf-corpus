@@ -1,0 +1,8 @@
+document: rfc-5401
+kind: protocol-element
+summary: GRTT is quantized to a single byte for low-overhead embedding in sender messages. The encoding uses linear quantization for small values (grtt < 33*RTT_MIN) and logarithmic quantization for larger values, implemented via QuantizeGrtt() and UnquantizeRtt() functions covering the range RTT_MIN to RTT_MAX.
+section: 3.7.4
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

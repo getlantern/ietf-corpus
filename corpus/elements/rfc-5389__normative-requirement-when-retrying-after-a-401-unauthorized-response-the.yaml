@@ -1,0 +1,10 @@
+document: rfc-5389
+kind: normative-requirement
+summary: When retrying after a 401 (Unauthorized) response, the client MUST NOT retry if it is not changing the USERNAME, REALM, or password from the previous attempt. On a 438 (Stale Nonce) response, the client MUST retry using the new NONCE supplied in the response.
+section: 10.2.3
+rfc2119_level: MUST
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

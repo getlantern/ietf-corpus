@@ -1,0 +1,8 @@
+document: rfc-5401
+kind: design-rationale
+summary: The lowest-ordinal-parity-first NACK strategy is chosen so that all receivers in the group use the same consistent algorithm to express repair needs, simplifying NACK suppression across multiple repair cycles. Receivers can directly compare NACKs heard from others against their own calculated repair needs to decide whether to suppress.
+section: 3.2.3.1
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

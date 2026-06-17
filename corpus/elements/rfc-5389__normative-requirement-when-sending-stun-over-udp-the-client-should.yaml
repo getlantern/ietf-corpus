@@ -1,0 +1,11 @@
+document: rfc-5389
+kind: normative-requirement
+summary: When sending STUN over UDP, the client SHOULD retransmit with exponential backoff beginning at RTO (initial value SHOULD be configurable, SHOULD be >500 ms, default 500 ms for fixed-line). The client retransmits up to Rc times (default 7) and waits Rm*RTO (default Rm=16) after the last request before declaring failure.
+section: 7.2.1
+rfc2119_level: SHOULD
+topics:
+    - nat
+    - udp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

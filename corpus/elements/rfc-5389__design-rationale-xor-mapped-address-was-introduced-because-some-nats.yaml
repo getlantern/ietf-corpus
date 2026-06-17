@@ -1,0 +1,8 @@
+document: rfc-5389
+kind: design-rationale
+summary: XOR-MAPPED-ADDRESS was introduced because some NATs apply misguided ALG functions that rewrite binary payloads resembling IP addresses, corrupting MAPPED-ADDRESS values and breaking HMAC message-integrity checks. XOR obfuscation with the magic cookie prevents NATs from recognizing and rewriting the reflexive address.
+section: "15.2"
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

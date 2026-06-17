@@ -1,0 +1,9 @@
+document: rfc-5392
+kind: design-rationale
+summary: Because there is no IGP peering on inter-AS links, bidirectional TE link information is unavailable. The ASBR therefore proxies for the remote ASBR by generating an additional LSA describing the remote device's view of the link, enabling CSPF to perform its normal two-way check during path computation.
+section: "4"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

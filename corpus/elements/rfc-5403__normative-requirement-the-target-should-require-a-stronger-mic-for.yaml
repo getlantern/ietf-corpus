@@ -1,0 +1,10 @@
+document: rfc-5403
+kind: normative-requirement
+summary: The target SHOULD require a stronger MIC for RPCSEC_GSS_BIND_CHANNEL than for RPCSEC_GSS_DATA requests. If HMACs are used and N DATA requests are expected before context expiry, the HMAC for BIND_CHANNEL SHOULD be log2(N) bits longer than normal.
+section: "9"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

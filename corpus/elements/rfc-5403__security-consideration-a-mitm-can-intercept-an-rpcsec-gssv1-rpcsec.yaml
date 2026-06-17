@@ -1,0 +1,9 @@
+document: rfc-5403
+kind: security-consideration
+summary: A MITM can intercept an RPCSEC_GSSv1 RPCSEC_GSS_INIT message, upgrade the version number to 2 toward a v2 target, then attempt to construct a valid RPCSEC_GSS_BIND_CHANNEL by reusing MICs from subsequent DATA requests, eventually gaining the ability to send unauthenticated channel-protected requests.
+section: "9"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
