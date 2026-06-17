@@ -1,0 +1,10 @@
+document: rfc-6506
+kind: wire-format
+summary: 'The HMAC computation uses Apad as a placeholder in the Authentication Data field during computation: Apad consists of the 16-octet IPv6 source address followed by the value 0x878FE1F3 repeated (L-16)/4 times, where L is the hash output length. The final HMAC output replaces Apad in the transmitted packet.'
+section: "4.5"
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

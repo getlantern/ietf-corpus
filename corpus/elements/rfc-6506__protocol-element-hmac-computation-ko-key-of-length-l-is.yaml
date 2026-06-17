@@ -1,0 +1,10 @@
+document: rfc-6506
+kind: protocol-element
+summary: 'HMAC computation: Ko (key of length L) is derived from Ks; if Ks > L octets, Ko = H(Ks); if Ks < L, Ko is zero-padded. First-Hash = H(Ko XOR Ipad || OSPFv3 Packet including LLS and AT with Apad). Second-Hash = H(Ko XOR Opad || First-Hash). The Second-Hash is the Authentication Data placed in the trailer.'
+section: "4.5"
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

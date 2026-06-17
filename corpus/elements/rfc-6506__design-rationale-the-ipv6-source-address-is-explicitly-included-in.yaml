@@ -1,0 +1,9 @@
+document: rfc-6506
+kind: design-rationale
+summary: The IPv6 source address is explicitly included in the HMAC digest computation (via Apad) even though OSPFv3 uses Router ID for neighbor identification, because the source address is copied into neighbor data structures from Hello packets and could be forged in a Man-in-the-Middle attack.
+section: "2.3"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

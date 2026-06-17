@@ -1,0 +1,9 @@
+document: rfc-6503
+kind: normative-requirement
+summary: AUTO_GENERATE_X placeholder values MUST appear only within the value part of an attribute or element. If a server receives AUTO_GENERATE_X outside the value part, it MUST return a response-code of '400 Bad Request'. Each distinct wildcard index (e.g., AUTO_GENERATE_1 vs. AUTO_GENERATE_2) MUST be replaced with a different generated identifier within the same document.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

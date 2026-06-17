@@ -1,0 +1,8 @@
+document: rfc-6503
+kind: design-rationale
+summary: 'Users are added to conferences one at a time via individual userRequest/create messages rather than in bulk. This design simplifies error reporting: if adding one user fails, the failure is unambiguous and the remaining users are unaffected. Bulk addition via the usersRequest/update is still possible for updating the <users> element as a whole.'
+section: "3.2"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

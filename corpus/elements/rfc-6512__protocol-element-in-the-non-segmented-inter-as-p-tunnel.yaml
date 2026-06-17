@@ -1,0 +1,11 @@
+document: rfc-6512
+kind: protocol-element
+summary: In the non-segmented inter-AS P-tunnel scenario, PE1 constructs an FEC of the form <root=ASBR1, opaque_value=<root=PE2, RD, opaque_value=Q>>. ASBR1, on receiving this FEC, extracts PE2 and the RD from the VPN-Recursive Opaque Value and either uses a direct route to PE2 (substituting <root=PE2, opaque_value=Q>) or re-wraps with the next ASBR as the new outer root.
+section: 3.2.1
+topics:
+    - mpls
+    - routing
+    - bgp
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

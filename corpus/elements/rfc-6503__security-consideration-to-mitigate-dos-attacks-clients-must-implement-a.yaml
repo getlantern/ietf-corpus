@@ -1,0 +1,10 @@
+document: rfc-6503
+kind: security-consideration
+summary: To mitigate DoS attacks, clients MUST implement a connection timeout (30 seconds recommended, 60 seconds maximum) and close connections when the timer expires. Servers SHOULD return response-code '510' when overloaded rather than holding connections open indefinitely.
+section: "10.4"
+rfc2119_level: MUST
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

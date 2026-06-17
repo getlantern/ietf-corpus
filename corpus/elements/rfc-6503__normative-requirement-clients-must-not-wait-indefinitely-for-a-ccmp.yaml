@@ -1,0 +1,10 @@
+document: rfc-6503
+kind: normative-requirement
+summary: Clients MUST NOT wait indefinitely for a CCMP response and MUST implement a timer; when the timer expires, the client MUST close the connection. Thirty seconds is RECOMMENDED as the default; sixty seconds is a reasonable upper range. A server that cannot process pending requests in time SHOULD return a response-code of '510'.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - http
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

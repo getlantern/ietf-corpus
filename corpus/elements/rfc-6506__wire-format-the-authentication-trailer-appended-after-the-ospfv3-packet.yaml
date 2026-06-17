@@ -1,0 +1,10 @@
+document: rfc-6506
+kind: wire-format
+summary: 'The Authentication Trailer appended after the OSPFv3 packet (and optional LLS block) contains: Authentication Type (16-bit), Auth Data Len (16-bit, total trailer length including 16-octet fixed header plus digest), Reserved (16-bit, SHOULD be 0), Security Association ID (16-bit), Cryptographic Sequence Number (64-bit strictly increasing), and Authentication Data (variable, carrying the HMAC digest).'
+section: "4.1"
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6506
+kind: normative-requirement
+summary: If the Authentication Trailer is configured for an OSPFv3 link, OSPFv3 Hello and Database Description packets with the AT-bit clear in the Options field MUST be dropped. All OSPFv3 packet types MUST be dropped if the AT is configured and the IPv6 header length is insufficient to include an Authentication Trailer.
+section: "4.6"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

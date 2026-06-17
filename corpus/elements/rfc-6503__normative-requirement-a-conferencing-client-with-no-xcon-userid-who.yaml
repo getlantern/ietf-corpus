@@ -1,0 +1,9 @@
+document: rfc-6503
+kind: normative-requirement
+summary: A conferencing client with no XCON-USERID who wishes to join a known conference MAY send a userRequest/create with a void <confUserID>; this is the only valid case for a CCMP request with a null confUserID. A <userInfo> parameter with at least a contact URI MUST be included, and the 'entity' attribute MUST use an AUTO_GENERATE_X placeholder. The server returns the newly assigned XCON-USERID in the <confUserID> of the response.
+section: 5.3.6
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

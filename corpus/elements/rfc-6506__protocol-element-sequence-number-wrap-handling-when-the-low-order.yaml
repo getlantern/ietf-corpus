@@ -1,0 +1,9 @@
+document: rfc-6506
+kind: protocol-element
+summary: 'Sequence number wrap handling: when the low-order 32-bit value wraps, the high-order 32-bit value is incremented and saved to non-volatile storage. If there is any possibility the full 64-bit value may wrap, all keys MUST be reset to prevent replay attacks, after which the high-order bits may be reset to 0.'
+section: 4.1.1
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

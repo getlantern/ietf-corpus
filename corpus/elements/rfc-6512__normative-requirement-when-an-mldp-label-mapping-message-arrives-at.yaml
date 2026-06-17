@@ -1,0 +1,11 @@
+document: rfc-6512
+kind: normative-requirement
+summary: When an mLDP Label Mapping message arrives at a PE router over a VRF interface and that PE is identified as the root with a VPN-Recursive Opaque Value, the PE MUST replace the received FEC element with the contents of the VPN-Recursive Opaque Value (i.e., the embedded FEC element) before any further processing, and MUST use the VRF to look up the path to the inner root.
+section: 3.2.2
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

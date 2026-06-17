@@ -1,0 +1,11 @@
+document: rfc-6512
+kind: design-rationale
+summary: The VPN-Recursive Opaque Value was defined separately from the plain Recursive Opaque Value because in MVPN and Carrier's Carrier scenarios the recursion-terminating router must look up the inner root in a specific VRF, not the global table; embedding the Route Distinguisher alongside the inner FEC provides the VRF identifier needed at that point.
+section: "3"
+topics:
+    - mpls
+    - routing
+    - bgp
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6511
+kind: design-rationale
+summary: Non-PHP behavior is required for OOB mapping because an egress LSR cannot make correct forwarding decisions until OOB mapping information (e.g., via BGP) is received. To identify the incoming LSP on which traffic arrives, the egress LSR must receive a non-NULL label rather than having it popped by the penultimate hop.
+section: "1"
+topics:
+    - mpls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

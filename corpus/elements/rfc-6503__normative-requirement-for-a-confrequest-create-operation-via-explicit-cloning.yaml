@@ -1,0 +1,9 @@
+document: rfc-6503
+kind: normative-requirement
+summary: For a confRequest create operation via explicit cloning, the <confObjID> MUST contain the XCON-URI of the blueprint or conference to clone, and <confInfo> MUST NOT be included. For direct creation, <confObjID> MUST NOT be present and the client MAY provide <confInfo>; if absent, the system default blueprint is cloned. The confResponse MUST include the XCON-URI of the newly created conference in <confObjID>.
+section: 5.3.4
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

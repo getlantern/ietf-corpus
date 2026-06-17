@@ -1,0 +1,8 @@
+document: rfc-6503
+kind: design-rationale
+summary: CCMP uses a versioning mechanism for conference objects so that clients can detect whether their locally cached copy is stale. If a client receives a version of X+2 in a response, it knows the server had a more recent version than what was submitted, and can issue a retrieve to resync. This design avoids requiring the server to reject stale updates outright.
+section: "4.2"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6512
+kind: design-rationale
+summary: The BGP-free core problem arises when the root node address of an MP LSP is reachable only via a BGP route, but intermediate P routers have no BGP routes and therefore cannot forward mLDP messages toward that root. The recursive opaque value mechanism solves this by temporarily substituting the BGP next-hop PE as the root in messages traversing the BGP-free core.
+section: "1"
+topics:
+    - mpls
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

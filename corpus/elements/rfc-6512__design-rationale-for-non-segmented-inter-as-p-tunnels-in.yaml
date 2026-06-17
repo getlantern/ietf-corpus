@@ -1,0 +1,11 @@
+document: rfc-6512
+kind: design-rationale
+summary: For non-segmented inter-AS P-tunnels in option B VPN interconnect, ASBR1 may itself lack a route to PE2. The procedures allow ASBR1 to forward the VPN-Recursive FEC element unchanged but substitute the next-hop ASBR (ASBR2) as the new outer root, propagating the unchanged inner VPN-Recursive value hop by hop until a router with a route to PE2 is reached.
+section: 3.2.1
+topics:
+    - mpls
+    - routing
+    - bgp
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
