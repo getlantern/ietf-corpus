@@ -1,0 +1,11 @@
+document: rfc-5764
+kind: security-consideration
+summary: Framing confusion — treating an SRTP-framed RTP packet as a DTLS record or vice versa — is prevented by using separate MAC keys for each content type. The DTLS record type is also included in the MAC, so an injected SRTP record would be treated as an unknown type and silently ignored.
+section: "7.2"
+topics:
+    - tls
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

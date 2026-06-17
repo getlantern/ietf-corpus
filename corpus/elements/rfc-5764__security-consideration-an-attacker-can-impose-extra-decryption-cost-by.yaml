@@ -1,0 +1,10 @@
+document: rfc-5764
+kind: security-consideration
+summary: An attacker can impose extra decryption cost by injecting packets with unknown SSRCs, forcing the receiver to attempt decryption against each active DTLS-SRTP association. Under such attack, implementations SHOULD prioritize packets from known SSRCs or source addresses matching established peers.
+section: "7.4"
+topics:
+    - rtp
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

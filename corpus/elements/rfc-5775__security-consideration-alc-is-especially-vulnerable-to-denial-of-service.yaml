@@ -1,0 +1,9 @@
+document: rfc-5775
+kind: security-consideration
+summary: 'ALC is especially vulnerable to denial-of-service attacks via forged packets, which can prevent or corrupt object reconstruction at scale since many receivers may receive the same forged packet. Two layers of protection are RECOMMENDED: application-level object integrity checking (using digital signatures) and packet-level authentication to discard forged packets individually.'
+section: "5"
+topics:
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

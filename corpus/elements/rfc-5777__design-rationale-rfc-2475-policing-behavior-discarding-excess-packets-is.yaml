@@ -1,0 +1,10 @@
+document: rfc-5777
+kind: design-rationale
+summary: RFC 2475 policing behavior (discarding excess packets) is not defined as a distinct Treatment-Action value. Instead, policing is modeled by including an Excess-Treatment AVP within the Filter-Rule with its inner Treatment-Action set to 'drop', keeping the action enumeration minimal while still supporting the full DiffServ behavior model.
+section: "5.1"
+topics:
+    - diameter
+    - qos
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

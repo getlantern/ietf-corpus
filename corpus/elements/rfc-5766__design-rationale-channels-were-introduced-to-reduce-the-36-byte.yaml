@@ -1,0 +1,10 @@
+document: rfc-5766
+kind: design-rationale
+summary: Channels were introduced to reduce the 36-byte overhead of Send/Data indications, which can substantially increase bandwidth for applications such as VoIP. The ChannelData message uses only a 4-byte header, trading flexibility for efficiency on high-volume real-time media paths.
+section: "2.5"
+topics:
+    - nat
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

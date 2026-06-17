@@ -1,0 +1,9 @@
+document: rfc-5766
+kind: security-consideration
+summary: A TURN loop attack is possible if a client installs a permission and binds a channel using the server's own relayed transport address, causing the server to forward traffic to itself in a loop. Servers SHOULD check for and reject such configurations.
+section: 17.1.7
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

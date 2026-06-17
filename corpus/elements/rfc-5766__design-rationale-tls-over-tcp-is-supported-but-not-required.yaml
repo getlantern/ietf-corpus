@@ -1,0 +1,10 @@
+document: rfc-5766
+kind: design-rationale
+summary: TLS-over-TCP is supported (but not required) because it provides server authentication and control-message confidentiality that STUN's digest mechanism does not. It is optional because TLS overhead causes application data to be doubly encrypted when the peer connection is also secured.
+section: "2.1"
+topics:
+    - nat
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

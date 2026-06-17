@@ -1,0 +1,9 @@
+document: rfc-5766
+kind: security-consideration
+summary: 'Because Send indications cannot be authenticated (STUN''s long-term credential mechanism does not cover indications), an attacker can inject bogus Send indications to cause the server to relay traffic to a peer. The permission system partially mitigates this: a permission must be installed before the server relays data.'
+section: 17.1.4
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,11 @@
+document: rfc-5763
+kind: design-rationale
+summary: Key exchange is performed along the media path via DTLS, not in SIP signaling as with MIKEY or SDESCRIPTIONS. This means intermediate proxies never see keying material and need not be trusted for confidentiality; only integrity protection of the fingerprint is required from the signaling path.
+section: "3"
+topics:
+    - tls
+    - sip
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

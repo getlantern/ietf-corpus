@@ -1,0 +1,10 @@
+document: rfc-5763
+kind: design-rationale
+summary: Conference servers cannot share a single encryption context for all participants because each DTLS handshake establishes fresh keys not fully under either side's control. Future extensions (SRTP-EKT or KEY-TRANSPORT) would be needed to enable shared encryption contexts.
+section: "6.9"
+topics:
+    - tls
+    - crypto
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

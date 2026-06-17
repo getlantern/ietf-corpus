@@ -1,0 +1,9 @@
+document: rfc-5777
+kind: design-rationale
+summary: RFC 5777 replaces the IPFilterRule and QoSFilterRule AVPs from RFC 3588 and RFC 4005, which relied on free-text syntax based on the FreeBSD ipfw tool. The new design uses native Diameter ABNF-encoded grouped AVPs to provide a uniform, extensible traffic classification mechanism that also supports Ethernet-layer (VLAN, MAC, LLC) matching—a capability absent from the prior approach.
+section: "1"
+topics:
+    - diameter
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

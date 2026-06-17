@@ -1,0 +1,10 @@
+document: rfc-5764
+kind: normative-requirement
+summary: The server MUST NOT select an SRTPProtectionProfile value the client did not offer. If no shared profile exists, the server SHOULD NOT return the use_srtp extension (causing fallback to the negotiated DTLS cipher suite); if that is unacceptable, the server SHOULD return an appropriate DTLS alert.
+section: 4.1.1
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

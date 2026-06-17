@@ -1,0 +1,10 @@
+document: rfc-5766
+kind: normative-requirement
+summary: All requests after the initial Allocate MUST use the same username as that used to create the allocation. If the 5-tuple identifies an existing allocation but the username differs, the request MUST be rejected with a 441 (Wrong Credentials) error.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

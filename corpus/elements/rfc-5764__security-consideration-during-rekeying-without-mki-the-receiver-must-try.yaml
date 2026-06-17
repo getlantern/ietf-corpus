@@ -1,0 +1,11 @@
+document: rfc-5764
+kind: security-consideration
+summary: During rekeying without MKI, the receiver must try multiple key sets, weakening authentication by log_2(k) bits (where k is the number of active key sets). With the default 80-bit SRTP MAC and a very small k, this reduction is negligible in practice.
+section: 7.3.2
+topics:
+    - rtp
+    - crypto
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

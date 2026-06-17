@@ -1,0 +1,10 @@
+document: rfc-5763
+kind: interoperability-note
+summary: 'DTLS packets fail the RTP validity check by design: all current DTLS content type values have the first two bits set to zero, producing a version of zero in RTP terms. This property is exploited by RFC 5764 to demultiplex DTLS, STUN, and SRTP packets on the same port.'
+section: A.11
+topics:
+    - tls
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,11 @@
+document: rfc-5764
+kind: protocol-element
+summary: To handle SIP forking, the implementation maintains a per-endpoint table mapping SSRCs to DTLS-SRTP associations. For an unknown SSRC, the receiver tries each known association; on successful authentication the SSRC is recorded. Entries MUST be removed when the corresponding DTLS-SRTP association is closed.
+section: 5.1.2
+topics:
+    - tls
+    - rtp
+    - sip
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

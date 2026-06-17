@@ -1,0 +1,9 @@
+document: rfc-5766
+kind: normative-requirement
+summary: If an Allocate success response is received, the client MUST check that the mapped address and relayed transport address are in an address family it understands. If not, it MUST delete the allocation and MUST NOT attempt to create another allocation on that server until the mismatch is resolved.
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

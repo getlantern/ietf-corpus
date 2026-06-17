@@ -1,0 +1,10 @@
+document: rfc-5775
+kind: state-machine
+summary: 'Upon receipt of each ALC packet, the receiver must: (1) parse and validate the header, discarding invalid packets; (2) verify the (sender IP, TSI) pair matches a joined session, silently discarding mismatches; (3) process the CCI field per congestion control; (4) verify TOI validity if multi-object session; (5) process remaining header fields and reconstruct the object using FEC.'
+section: "4.4"
+topics:
+    - multicast
+    - congestion
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

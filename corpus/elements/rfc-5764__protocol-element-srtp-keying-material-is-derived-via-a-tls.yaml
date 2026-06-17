@@ -1,0 +1,10 @@
+document: rfc-5764
+kind: protocol-element
+summary: SRTP keying material is derived via a TLS exporter (RFC 5705) with the label 'EXTRACTOR-dtls_srtp' and an empty per-association context. The exporter produces four values — client_write_SRTP_master_key, server_write_SRTP_master_key, client_write_SRTP_master_salt, and server_write_SRTP_master_salt — which are fed into the SRTP KDF to produce independent encrypt/authenticate keys for each direction.
+section: "4.2"
+topics:
+    - tls
+    - crypto
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

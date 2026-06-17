@@ -1,0 +1,11 @@
+document: rfc-5764
+kind: design-rationale
+summary: DTLS-SRTP was designed so that RTP/RTCP application data is protected by SRTP (optimized for real-time media) rather than by the generic DTLS record-layer, while the DTLS handshake provides integrated key management and algorithm negotiation. This combines SRTP's per-packet efficiency with DTLS's flexible and convenient key-management infrastructure.
+section: "1"
+topics:
+    - tls
+    - rtp
+    - webrtc
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

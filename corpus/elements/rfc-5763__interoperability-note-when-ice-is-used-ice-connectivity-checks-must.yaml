@@ -1,0 +1,10 @@
+document: rfc-5763
+kind: interoperability-note
+summary: When ICE is used, ICE connectivity checks must complete before the DTLS handshake begins. If aggressive nomination mode is used, multiple candidate pairs may be marked valid; all must be treated as part of the same DTLS association so only one handshake occurs, with endpoint IP addresses adjusted if the selected pair shifts.
+section: 6.7.1
+topics:
+    - tls
+    - nat
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

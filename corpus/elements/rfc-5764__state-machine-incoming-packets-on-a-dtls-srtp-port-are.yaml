@@ -1,0 +1,11 @@
+document: rfc-5764
+kind: state-machine
+summary: 'Incoming packets on a DTLS-SRTP port are demultiplexed by examining the first byte B: B < 2 → STUN; 19 < B < 64 → DTLS; 127 < B < 192 → RTP (or RTCP if multiplexed). Values outside these ranges are unspecified and designers SHOULD ensure additional packet types can also be distinguished.'
+section: 5.1.2
+topics:
+    - tls
+    - rtp
+    - webrtc
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

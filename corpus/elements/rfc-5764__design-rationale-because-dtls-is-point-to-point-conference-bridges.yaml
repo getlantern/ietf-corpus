@@ -1,0 +1,11 @@
+document: rfc-5764
+kind: design-rationale
+summary: Because DTLS is point-to-point, conference bridges using DTLS-SRTP cannot share a single encryption context; each bridge-to-participant flow uses independent keys, requiring the bridge to decrypt and re-encrypt all traffic for each recipient. A future specification could define key-sharing for conferencing systems that do not modify media.
+section: "6"
+topics:
+    - rtp
+    - tls
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

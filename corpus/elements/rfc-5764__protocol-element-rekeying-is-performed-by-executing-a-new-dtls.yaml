@@ -1,0 +1,10 @@
+document: rfc-5764
+kind: protocol-element
+summary: Rekeying is performed by executing a new DTLS handshake over the existing channel while data transport continues in parallel. Receivers SHOULD maintain both old and new key sets for the maximum segment lifetime to correctly handle reordered packets protected by the old keys. If MKI is in use, the receiver uses the MKI to select the key set; otherwise it tries the new keys first and falls back to the old ones on authentication failure.
+section: "5.2"
+topics:
+    - tls
+    - rtp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

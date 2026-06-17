@@ -1,0 +1,11 @@
+document: rfc-5763
+kind: normative-requirement
+summary: If ICE is not being used and the DTLS handshake has not completed upon receiving the other side's SDP, the passive side MUST perform a single unauthenticated STUN connectivity check to open the appropriate pinhole. All implementations MUST be prepared to answer this request; the active side MUST proceed with the DTLS handshake even if no STUN check is received, and the passive MUST NOT wait for a STUN answer before sending its ServerHello.
+section: 6.7.2
+rfc2119_level: MUST
+topics:
+    - tls
+    - nat
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

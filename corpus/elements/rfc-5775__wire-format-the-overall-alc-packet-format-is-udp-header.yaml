@@ -1,0 +1,10 @@
+document: rfc-5775
+kind: wire-format
+summary: 'The overall ALC packet format is: UDP Header | LCT Header | FEC Payload ID | Encoding Symbol(s). Data-less packets (used to signal session end or carry congestion control info) contain only the LCT header with no FEC Payload ID or payload; their absence is detected via the total datagram length in outer protocol headers.'
+section: "4.1"
+topics:
+    - realtime
+    - multicast
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
