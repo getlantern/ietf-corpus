@@ -1,0 +1,8 @@
+document: rfc-5306
+kind: design-rationale
+summary: The SA (Suppress Adjacency) bit is used by a starting router—not a restarting router—because a starting router has no maintained forwarding state, and stale copies of previous-incarnation LSPs with higher sequence numbers may exist in the network, causing temporary blackholes until newer LSP versions propagate.
+section: 3.2.2
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

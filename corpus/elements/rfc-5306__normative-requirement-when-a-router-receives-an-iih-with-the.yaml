@@ -1,0 +1,9 @@
+document: rfc-5306
+kind: normative-requirement
+summary: When a router receives an IIH with the SA bit set and an UP adjacency to the sender exists, it MUST suppress advertisement of that adjacency in its own LSPs and MUST continue suppression until an IIH with SA bit clear is received. If the adjacency transitions to UP, the new adjacency MUST NOT be advertised until an IIH with SA bit clear has been received.
+section: 3.2.2
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

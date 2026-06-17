@@ -1,0 +1,8 @@
+document: rfc-5324
+kind: security-consideration
+summary: The T11-FC-SP-AUTHENTICATION-MIB contains read-write objects including notification enable flags, default SA lifetime (t11FcSpAuDefaultLifetime, default 8 hours), and reject table size. Unauthorized modification could suppress security notifications or weaken authentication policy; these objects SHOULD be protected using SNMPv3 with both authentication and privacy.
+section: "8.3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

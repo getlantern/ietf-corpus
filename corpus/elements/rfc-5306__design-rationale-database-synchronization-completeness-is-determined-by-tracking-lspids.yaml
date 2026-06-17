@@ -1,0 +1,8 @@
+document: rfc-5306
+kind: design-rationale
+summary: Database synchronization completeness is determined by tracking LSPIDs from the first complete CSNP set received over each interface and removing entries as LSPs arrive. This avoids indefinite waiting by not tracking LSPs with zero remaining lifetime and expiring entries that never arrive.
+section: "3.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

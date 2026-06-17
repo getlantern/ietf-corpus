@@ -1,0 +1,9 @@
+document: rfc-5324
+kind: design-rationale
+summary: T11FcSpHashCalculationStatus provides a three-state (stale/correct/calculate) mechanism for deferring Policy Object hash recalculation. Because multiple fields may need to be changed atomically before a valid hash can be computed, this avoids redundant cryptographic computation after each individual field change; the operator writes 'calculate' once after all edits are complete.
+section: "6.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

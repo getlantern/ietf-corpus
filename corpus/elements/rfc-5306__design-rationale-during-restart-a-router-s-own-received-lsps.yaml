@@ -1,0 +1,8 @@
+document: rfc-5306
+kind: design-rationale
+summary: During restart, a router's own received LSPs are not purged even though normal operation would purge unknown own-LSPs, because premature purging could cause churn in remote routers. The restriction is lifted once own LSPs are generated and flooded post-synchronization.
+section: 3.4.1.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5324
+kind: design-rationale
+summary: Rate control is applied only to t11FcSpSaNotifyAuthFailure (a data-plane event that could fire for every ingress frame), while all other notifications are control-plane events triggered by operator actions and need no throttling. After the first failure on an SA, subsequent failures within a configurable time window are suppressed; authentication failures are still counted even when notifications are suppressed.
+section: "4.9"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

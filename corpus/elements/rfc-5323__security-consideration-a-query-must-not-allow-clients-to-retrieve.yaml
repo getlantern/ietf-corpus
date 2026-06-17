@@ -1,0 +1,10 @@
+document: rfc-5323
+kind: security-consideration
+summary: A query MUST NOT allow clients to retrieve information that wouldn't have been available through GET or PROPFIND. Query constraints on properties or content for which the client does not have read access MUST be evaluated as if the property did not exist or as if GET would return a 4xx status code, preventing information leakage via search.
+section: "7"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

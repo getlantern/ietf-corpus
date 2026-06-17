@@ -1,0 +1,8 @@
+document: rfc-5324
+kind: design-rationale
+summary: Egress Traffic Selectors on active SAs (t11FcSpSaTSelNegOutTable) include a numerically-lowest-wins precedence value in the INDEX because multiple selectors may match an egress frame. Ingress Traffic Selectors on active SAs (t11FcSpSaTSelNegInTable) use an arbitrary integer index because the SA is identified by the SPI in the frame and precedence is irrelevant for that lookup path.
+section: "4.7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

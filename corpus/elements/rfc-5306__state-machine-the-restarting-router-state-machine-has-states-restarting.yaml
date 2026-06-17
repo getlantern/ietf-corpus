@@ -1,0 +1,8 @@
+document: rfc-5306
+kind: state-machine
+summary: 'The Restarting Router state machine has states: Restarting → ADJ Seen RA (on RX RA) → cancels T1 when both RA and CSNP set received; → SPF Wait (on T2 expiry or LSP DB Sync, triggering SPF); → Running (on all SPFs done, clearing overload bit and updating forwarding plane). T3 expiry causes immediate overload bit set, forwarding table update, and LSP flood with overload bit.'
+section: "4.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

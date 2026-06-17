@@ -1,0 +1,8 @@
+document: rfc-5324
+kind: design-rationale
+summary: Three Switch roles (Server, Autonomous, Client) exist to address the O(n²) or O(n×m) scaling problem of Switch Connectivity Objects for n Switches and m Nodes. Server Switches hold all Fabric-wide objects; Autonomous Switches hold only their own connectivity object; Client Switches hold only the subset needed for their operation, relying on a client-server protocol to retrieve additional Zoning information on demand.
+section: 3.4.6
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

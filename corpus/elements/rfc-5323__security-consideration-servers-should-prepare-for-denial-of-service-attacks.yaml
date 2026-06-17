@@ -1,0 +1,9 @@
+document: rfc-5323
+kind: security-consideration
+summary: Servers should prepare for denial-of-service attacks where a client issues a query with a large or expensive result set. XML external entities in SEARCH request bodies are untrustworthy and can modify the effective DTD or cause large numbers of outbound HTTP GETs, creating both security and scalability risks; implementations should treat them with caution.
+section: "7.1"
+topics:
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5329
+kind: design-rationale
+summary: The OSPFv2 Link ID sub-TLV cannot be used in OSPFv3 because it relies on IPv4 interface addresses to identify the DR on multi-access networks. OSPFv3 always uses Router IDs for neighbor identification, requiring a new Neighbor ID sub-TLV carrying both Neighbor Interface ID and Neighbor Router ID.
+section: "4"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

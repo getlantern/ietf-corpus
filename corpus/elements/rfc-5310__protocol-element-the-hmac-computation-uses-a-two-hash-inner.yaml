@@ -1,0 +1,10 @@
+document: rfc-5310
+kind: protocol-element
+summary: The HMAC computation uses a two-hash (inner/outer) construction. The Authentication Data field is first filled with Apad (0x878FE1F3 repeated L/4 times), then First-Hash = H(Ko XOR Ipad || PDU) and Second-Hash = H(Ko XOR Opad || First-Hash), with the second hash placed in the Authentication Data field.
+section: "3.3"
+topics:
+    - routing
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

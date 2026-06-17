@@ -1,0 +1,9 @@
+document: rfc-5306
+kind: security-consideration
+summary: A false IIH with the RA bit set could cause a (re)starting router to falsely believe a neighbor supports restart procedures; in the absence of a complete CSNP set, this could delay restart completion by requiring T1 to exhaust its maximum retry count. A false RR bit causes neighbors to maintain adjacency state and resend CSNPs, which is wasteful but not disruptive to correct operation.
+section: "5"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
