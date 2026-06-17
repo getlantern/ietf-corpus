@@ -1,0 +1,10 @@
+document: rfc-5991
+kind: interoperability-note
+summary: Deprecating the cone bit forces peers to always send indirect bubbles as if communicating with a restricted NAT, which is less efficient but backward compatible because skipping case 4 of RFC 4380 Section 5.2.4 is already allowed for reliability reasons; peers behind cone NATs will reply to the indirect bubbles normally.
+section: "3.2"
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

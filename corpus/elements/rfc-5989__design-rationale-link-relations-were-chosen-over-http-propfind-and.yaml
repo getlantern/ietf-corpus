@@ -1,0 +1,9 @@
+document: rfc-5989
+kind: design-rationale
+summary: Link relations were chosen over HTTP PROPFIND and XRDS for associating monitoring SIP URIs with HTTP URLs because link relations allow the SIP URI to be returned in the same GET/HEAD transaction that retrieves the document, avoiding an extra round trip. PROPFIND requires a separate request and wider (but still incomplete) client support; XRDS also requires two round trips and has an excessive number of retrieval options.
+section: Appendix A
+topics:
+    - sip
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

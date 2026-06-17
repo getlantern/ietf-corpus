@@ -1,0 +1,11 @@
+document: rfc-5990
+kind: security-consideration
+summary: Combined use of an RSA key pair for multiple schemes (e.g., both key transport and digital signatures) is NOT RECOMMENDED. An RSA key pair used for RSA-KEM SHOULD NOT also be used for digital signatures, other key establishment schemes, data encryption, or with more than one set of underlying algorithm components.
+section: "3"
+rfc2119_level: SHOULD NOT
+topics:
+    - crypto
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

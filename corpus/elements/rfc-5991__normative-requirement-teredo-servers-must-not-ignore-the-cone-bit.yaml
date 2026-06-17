@@ -1,0 +1,11 @@
+document: rfc-5991
+kind: normative-requirement
+summary: Teredo servers MUST NOT ignore the cone bit because the cone bit in the IPv6 source address of a Router Solicitation from a client controls what IPv4 source address the server uses when sending a Router Advertisement; ignoring it would cause legacy clients to incorrectly conclude they are behind a cone NAT.
+section: "3.2"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

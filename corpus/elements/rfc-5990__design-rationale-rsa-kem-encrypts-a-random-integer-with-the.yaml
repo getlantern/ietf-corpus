@@ -1,0 +1,9 @@
+document: rfc-5990
+kind: design-rationale
+summary: 'RSA-KEM encrypts a random integer with the recipient''s public key rather than the keying data itself, then derives a key-encrypting key via a KDF and wraps the keying data symmetrically. This provides a ''tight'' security proof in the random oracle model because the RSA input has no exploitable structure and is independent of the keying data, unlike PKCS #1 v1.5.'
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5995
+kind: security-consideration
+summary: On servers that do not implement this specification, a malicious user could set DAV:add-member as a custom (dead) property, tricking other users into POSTing content to an unintended URI. Clients can mitigate this by refusing to follow Add-Member URIs to different servers, and/or by verifying that DAV:add-member is a live property via DAV:supported-live-property-set or PROPFIND/allprop.
+section: "7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

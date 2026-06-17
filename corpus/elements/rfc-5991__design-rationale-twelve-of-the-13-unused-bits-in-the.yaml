@@ -1,0 +1,11 @@
+document: rfc-5991
+kind: design-rationale
+summary: Twelve of the 13 unused bits in the Flags field are randomized to guard against address-scanning risks. Even if an attacker knows the external IPv4 address and port assigned by a NAT, they must still attack a range of 4,096 IPv6 addresses (2^12) to find the actual Teredo address.
+section: "1"
+topics:
+    - ip
+    - v6ops
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

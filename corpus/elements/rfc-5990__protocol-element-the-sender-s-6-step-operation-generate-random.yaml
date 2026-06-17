@@ -1,0 +1,8 @@
+document: rfc-5990
+kind: protocol-element
+summary: 'The sender''s 6-step operation: generate random z in [0, n-1], compute ciphertext C = z^e mod n (nLen bytes), derive KEK = KDF(Z, kekLen), compute WK = Wrap(KEK, K), output EK = C || WK. The recipient''s operation reverses this: split EK, decrypt C to recover z, re-derive KEK, unwrap WK to recover K.'
+section: A.2
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

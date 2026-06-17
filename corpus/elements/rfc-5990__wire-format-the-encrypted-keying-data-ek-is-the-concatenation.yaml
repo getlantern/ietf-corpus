@@ -1,0 +1,8 @@
+document: rfc-5990
+kind: wire-format
+summary: The encrypted keying data EK is the concatenation EK = C || WK, where C is the RSA ciphertext (nLen bytes, big-endian encoding of z^e mod n) and WK is the symmetrically wrapped keying data. The recipient splits EK by taking the first nLen bytes as C and the remainder as WK.
+section: A.2
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

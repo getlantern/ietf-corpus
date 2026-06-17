@@ -1,0 +1,8 @@
+document: rfc-5990
+kind: design-rationale
+summary: The architecture separates public-key operations from symmetric operations on the keying data, and the length of the keying data is bounded only by the symmetric key-wrapping scheme rather than the RSA modulus size. This is architecturally convenient and avoids the length constraints of direct RSA encryption.
+section: "1"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
