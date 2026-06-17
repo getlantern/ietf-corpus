@@ -1,0 +1,10 @@
+document: rfc-6062
+kind: security-consideration
+summary: Between a successful peer TCP connection and receipt of a ConnectionBind request, the server buffers all data received from the peer. The server SHOULD drop the connection if the buffer size is about to exceed a locally defined limit to prevent memory exhaustion. This guards against resource-consumption attacks (see RFC 4732 Section 2.1.3).
+section: "7"
+topics:
+    - security
+    - nat
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6062
+kind: design-rationale
+summary: TURN-TCP uses separate control and data connections. The control connection carries only TURN messaging, while each data connection carries only raw application data after a ConnectionBind. This strict separation prevents TURN messaging on data connections and application data on the control connection.
+section: "3"
+topics:
+    - nat
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

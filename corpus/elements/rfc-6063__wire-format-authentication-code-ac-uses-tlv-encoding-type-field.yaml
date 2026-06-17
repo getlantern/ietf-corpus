@@ -1,0 +1,9 @@
+document: rfc-6063
+kind: wire-format
+summary: 'Authentication Code (AC) uses TLV encoding: Type field is 1 hex character; Length field is 2 hex characters (value up to 255); Value is a variable-length hex string. Mandatory TLVs: Client ID (type 1, max 255 chars) and Password (type 2). Optional Checksum (type 3) uses CRC16 (ISO 3309). Vendor-specific TLV types MUST have the high bit set.'
+section: 3.4.1.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6063
+kind: design-rationale
+summary: 'Four-pass DSKPP was designed so that K_TOKEN is never transmitted: both parties independently derive it from shared random inputs (R_C, R_S, K) via DSKPP-PRF. This eliminates wire-exposure risk during provisioning and avoids a single point of compromise after provisioning since neither party alone holds all key derivation inputs.'
+section: 3.2.4.1
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

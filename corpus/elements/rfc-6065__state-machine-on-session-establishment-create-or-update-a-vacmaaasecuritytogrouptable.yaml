@@ -1,0 +1,9 @@
+document: rfc-6065
+kind: state-machine
+summary: 'On session establishment: create or update a vacmAaaSecurityToGroupTable entry, then create a corresponding vacmSecurityToGroupTable entry (StorageType ''volatile'', RowStatus ''active'') if none exists. On session termination: delete matching vacmAaaSecurityToGroupTable entries, and if the last entry for a (securityModel, securityName) pair is removed, delete the corresponding volatile/active vacmSecurityToGroupTable row.'
+section: "7"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

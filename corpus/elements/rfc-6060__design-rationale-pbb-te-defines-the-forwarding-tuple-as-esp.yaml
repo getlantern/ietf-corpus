@@ -1,0 +1,9 @@
+document: rfc-6060
+kind: design-rationale
+summary: PBB-TE defines the forwarding tuple as <ESP-MAC DA, ESP-MAC SA, ESP-VID> for unique connection identification, but the actual forwarding operation only uses ESP-MAC DA and ESP-VID in each direction. ESP-VIDs can be reused across ESPs, and there is no requirement that the two ESPs of a P2P TESI use the same VID.
+section: "3"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

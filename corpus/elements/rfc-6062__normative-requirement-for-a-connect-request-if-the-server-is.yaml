@@ -1,0 +1,10 @@
+document: rfc-6062
+kind: normative-requirement
+summary: For a Connect request, if the server is already processing or has already successfully processed a Connect request for the same allocation and XOR-PEER-ADDRESS with pending or active data connections, the server MUST return 446 (Connection Already Exists). This enforces a maximum of one connection per peer transport address per allocation.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - nat
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

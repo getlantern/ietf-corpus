@@ -1,0 +1,9 @@
+document: rfc-6066
+kind: normative-requirement
+summary: If the server understood the ClientHello extension but does not recognize the server name, it SHOULD either abort with a fatal unrecognized_name(112) alert or continue the handshake. It is NOT RECOMMENDED to send a warning-level unrecognized_name alert because client behavior in response to warning-level alerts is unpredictable.
+section: "3"
+rfc2119_level: SHOULD
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

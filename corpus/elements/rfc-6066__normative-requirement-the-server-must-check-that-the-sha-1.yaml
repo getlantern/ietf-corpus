@@ -1,0 +1,11 @@
+document: rfc-6066
+kind: normative-requirement
+summary: The server MUST check that the SHA-1 hash of the retrieved object matches the given hash. If any retrieved object does not have the correct SHA-1 hash, the server MUST abort the handshake with a fatal bad_certificate_hash_value(114) alert.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

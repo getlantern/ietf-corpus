@@ -1,0 +1,10 @@
+document: rfc-6062
+kind: normative-requirement
+summary: After a successful Connect response, the client MUST initiate a new TCP connection to the server using a different local transport address, authenticate using the same credentials as the control connection, and send a ConnectionBind request including the CONNECTION-ID echoed from the Connect response.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - nat
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

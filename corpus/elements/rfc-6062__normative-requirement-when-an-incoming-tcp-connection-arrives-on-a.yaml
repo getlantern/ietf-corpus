@@ -1,0 +1,10 @@
+document: rfc-6062
+kind: normative-requirement
+summary: When an incoming TCP connection arrives on a relayed transport address, the server MUST accept it. If no permission for the peer is installed, the server MUST immediately close the accepted connection. If a permission exists, the server sends a ConnectionAttempt indication over the control connection with XOR-PEER-ADDRESS and CONNECTION-ID.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - nat
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

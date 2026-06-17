@@ -1,0 +1,9 @@
+document: rfc-6062
+kind: state-machine
+summary: 'A peer data connection transitions through: (1) initiated/accepted (pending) — after a successful TCP connection to/from a peer but before ConnectionBind; (2) active — after a ConnectionBind request binds a client data connection to it; (3) closed — on timeout (30s without ConnectionBind), allocation expiry, or corresponding connection closure.'
+section: "5.2"
+topics:
+    - nat
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

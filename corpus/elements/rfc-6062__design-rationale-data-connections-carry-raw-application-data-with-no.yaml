@@ -1,0 +1,9 @@
+document: rfc-6062
+kind: design-rationale
+summary: Data connections carry raw application data with no encapsulation or framing, and TURN messaging is prohibited on them after ConnectionBind. This design provides a transparent TCP relay while keeping the control plane strictly separate, preventing general-purpose server use of relayed addresses.
+section: "3"
+topics:
+    - nat
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

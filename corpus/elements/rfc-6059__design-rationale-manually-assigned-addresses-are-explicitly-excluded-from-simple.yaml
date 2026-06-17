@@ -1,0 +1,9 @@
+document: rfc-6059
+kind: design-rationale
+summary: Manually assigned addresses are explicitly excluded from Simple DNA. Probes for manual addresses require aggressive retransmission (no fallback autoconfiguration exists if probes are lost), and a DHCPv6 exchange on a network using manual addressing could cause the host to adopt a dynamic address instead of its manual configuration, inverting the expected precedence.
+section: A
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

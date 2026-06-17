@@ -1,0 +1,9 @@
+document: rfc-6063
+kind: security-consideration
+summary: Key confirmation via MAC is required to prevent a false Commit message from causing the cryptographic module to store a key the server does not recognize. The MAC binds K_TOKEN to the full message transcript, ensuring both parties share the same key derivation inputs.
+section: 10.6.2
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

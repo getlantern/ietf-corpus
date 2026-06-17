@@ -1,0 +1,10 @@
+document: rfc-6066
+kind: normative-requirement
+summary: 'If HMAC truncation is successfully negotiated and the cipher suite uses HMAC, both client and server MUST use truncated HMACs: SecurityParameters.mac_length is 10 bytes and only the first 10 bytes of the HMAC output are transmitted and checked. This does not affect PRF calculations.'
+section: "7"
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

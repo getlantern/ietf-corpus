@@ -1,0 +1,10 @@
+document: rfc-6062
+kind: design-rationale
+summary: 'End-to-end flow control is maintained by the relay: if the relay cannot write data to the destination, it stops reading from the source. Combined with the requirement to adjust the TCP receive window based on buffer occupancy, this prevents unbounded memory use at the relay.'
+section: "3"
+topics:
+    - nat
+    - tcp
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

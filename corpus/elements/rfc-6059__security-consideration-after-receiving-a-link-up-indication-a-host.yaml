@@ -1,0 +1,10 @@
+document: rfc-6059
+kind: security-consideration
+summary: After receiving a link-up indication, a host may receive spoofed RAs from non-SEND devices. The host SHOULD send a Neighbor Solicitation to its existing SEND router and SHOULD ensure that unsecured RA information does not replace SEND state within MIN_DELAY_BETWEEN_RAS, giving a legitimate SEND router time to respond. If the current default router is SEND-secured, the host SHOULD wait SEND_NA_GRACE_TIME before adopting a new default router.
+section: "9"
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

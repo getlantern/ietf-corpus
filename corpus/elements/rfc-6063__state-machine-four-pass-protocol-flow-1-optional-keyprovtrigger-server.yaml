@@ -1,0 +1,9 @@
+document: rfc-6063
+kind: state-machine
+summary: 'Four-pass protocol flow: (1) optional KeyProvTrigger (server→client); (2) KeyProvClientHello (client→server); (3) KeyProvServerHello with status=Continue and R_S (server→client); (4) KeyProvClientNonce with E(K,R_C) and AD (client→server); (5) KeyProvServerFinished with KP and MAC (server→client). Any non-Continue/Success status triggers immediate termination.'
+section: "4.2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

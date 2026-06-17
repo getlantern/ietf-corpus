@@ -1,0 +1,9 @@
+document: rfc-6066
+kind: design-rationale
+summary: The status_request extension allows OCSP certificate status to be delivered within the TLS handshake, saving round trips and conserving bandwidth on constrained networks compared to fetching CRLs separately. The server MAY choose not to send a CertificateStatus even after advertising support, providing flexibility.
+section: "8"
+topics:
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6066
+kind: security-consideration
+summary: 'The client_certificate_url extension causes the TLS server to act as a client in another protocol when fetching certificates, making it subject to SSRF-like attacks: an attacker may prompt the server to connect to arbitrary URLs, potentially targeting internal hosts behind firewalls or launching DoS attacks. It is RECOMMENDED that this extension be explicitly enabled by an administrator and that only a minimal set of URI schemes be allowed.'
+section: "11.3"
+topics:
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

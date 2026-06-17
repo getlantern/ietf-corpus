@@ -1,0 +1,10 @@
+document: rfc-6062
+kind: normative-requirement
+summary: After a successful outgoing or incoming TCP connection (peer data connection), the server MUST buffer data received from the peer and adjust its advertised TCP receive window to reflect available buffer space. The Connect success response MUST include a CONNECTION-ID attribute uniquely identifying the peer data connection.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - nat
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6063
+kind: security-consideration
+summary: A man-in-the-middle presenting a substitute public key learns the client's K_TOKEN but cannot cause the legitimate server to derive the same value, since K_TOKEN is a function of the encryption key used. Client and server will detect desynchronization at authentication time. Independently validating K_SERVER via a separate connection is recommended.
+section: 10.2.7
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

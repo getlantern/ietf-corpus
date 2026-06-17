@@ -1,0 +1,10 @@
+document: rfc-6063
+kind: normative-requirement
+summary: After receiving KeyProvServerFinished with Status='Success', the DSKPP Client MUST verify the key confirmation MAC; if verification fails, the client MUST terminate the session and delete any nonces, keys, and secrets associated with the failed run.
+section: 4.2.5
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

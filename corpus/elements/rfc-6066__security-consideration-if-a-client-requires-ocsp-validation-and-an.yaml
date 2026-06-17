@@ -1,0 +1,10 @@
+document: rfc-6066
+kind: security-consideration
+summary: If a client requires OCSP validation and an attacker's server using a compromised key pretends not to support the status_request extension, the client SHOULD either contact the OCSP server directly or abort the handshake. Use of the OCSP nonce extension may improve security against replay attacks.
+section: "11.6"
+topics:
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6059
+kind: design-rationale
+summary: False positives (a host incorrectly concluding it has reattached to a previously visited network) are not acceptable, whereas false negatives (failing to recognize a known link and re-running full address configuration) are acceptable. This asymmetry motivates the conservative verification requirements such as matching both IPv6 and MAC addresses in the NA response.
+section: "1.1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

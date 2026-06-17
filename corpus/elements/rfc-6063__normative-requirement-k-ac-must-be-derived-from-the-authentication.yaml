@@ -1,0 +1,10 @@
+document: rfc-6063
+kind: normative-requirement
+summary: 'K_AC MUST be derived from the Authentication Code password via PBKDF2: K_AC = PBKDF2(AC->password, R_C || K, iter_count, 16). The iteration count MUST be at least 100,000 in the general case; it MUST be 1 when K is K_SHARED or a passphrase-derived key.'
+section: 3.4.1.2
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

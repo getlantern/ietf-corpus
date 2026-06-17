@@ -1,0 +1,9 @@
+document: rfc-6063
+kind: security-consideration
+summary: Server authentication in four-pass DSKPP relies on TLS certificate validation per RFC 2818 Section 3.1. When K equals K_SERVER, the cryptographic module SHOULD verify the server's certificate before using it to encrypt R_C, preventing rogue key substitution.
+section: 10.6.3
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
