@@ -1,0 +1,9 @@
+document: rfc-5520
+kind: security-consideration
+summary: A rogue LSR can modify the RSVP-TE ERO to insert or alter Path-Keys, causing downstream LSRs to issue spurious decode requests to the PCE. This is an existing RSVP security problem; it results in DoS rather than confidentiality breach, since the PCE can validate the requester identity.
+section: "5"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

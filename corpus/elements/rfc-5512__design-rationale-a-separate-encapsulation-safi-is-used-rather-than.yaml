@@ -1,0 +1,9 @@
+document: rfc-5512
+kind: design-rationale
+summary: A separate Encapsulation SAFI is used (rather than attaching the tunnel encapsulation attribute directly to each prefix) so that a change in encapsulation information requires only a single BGP update, avoiding a large number of updates that would result if every prefix carried encapsulation information directly.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

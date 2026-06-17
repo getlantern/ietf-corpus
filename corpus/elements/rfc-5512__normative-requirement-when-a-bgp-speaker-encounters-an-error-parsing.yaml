@@ -1,0 +1,10 @@
+document: rfc-5512
+kind: normative-requirement
+summary: When a BGP speaker encounters an error parsing the tunnel encapsulation attribute, it MUST treat the UPDATE as a withdrawal of existing routes to the included Encapsulation SAFI NLRIs, or discard the UPDATE if no such routes exist. A log entry should be raised for local analysis.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5512
+kind: normative-requirement
+summary: If a BGP speaker receives an update for prefix P with color C whose best-route next hop is N, but no Encapsulation SAFI update from N containing color C has been received, no route to P will be installed until the corresponding Encapsulation SAFI update is received or the decision process selects a different route.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

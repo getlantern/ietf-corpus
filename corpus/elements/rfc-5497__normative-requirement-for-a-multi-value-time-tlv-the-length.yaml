@@ -1,0 +1,9 @@
+document: rfc-5497
+kind: normative-requirement
+summary: For a multi-value Time TLV, the <length> field MUST contain the value m*(2n+1), where m is number-values per RFC 5444 and n is the number of (time-value, hop-count) pairs per <time-data> structure. n := ((<length> / number-values) - 1) / 2 MUST be an integer.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

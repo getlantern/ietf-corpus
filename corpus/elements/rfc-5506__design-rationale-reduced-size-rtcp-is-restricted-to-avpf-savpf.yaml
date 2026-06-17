@@ -1,0 +1,9 @@
+document: rfc-5506
+kind: design-rationale
+summary: Reduced-Size RTCP is restricted to AVPF/SAVPF Early RTCP and Immediate Feedback modes because those modes enable event-driven, time-sensitive feedback. In these modes, the AVPF scheduling algorithm already ensures regular compound RTCP is sent, so Reduced-Size RTCP is only used for supplemental transmissions.
+section: "4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

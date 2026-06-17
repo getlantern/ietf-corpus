@@ -1,0 +1,9 @@
+document: rfc-5506
+kind: design-rationale
+summary: Delivery verification is required for Reduced-Size RTCP because middle boxes and legacy endpoints may silently discard it. SR delivery can be verified via echoed timestamps in received RRs; feedback message delivery can often be inferred from protocol responses (e.g., retransmission following NACK, TMMBN following TMMBR).
+section: 4.2.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

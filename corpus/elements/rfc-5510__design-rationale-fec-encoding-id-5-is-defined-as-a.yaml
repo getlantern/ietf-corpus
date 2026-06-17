@@ -1,0 +1,8 @@
+document: rfc-5510
+kind: design-rationale
+summary: FEC Encoding ID 5 is defined as a special case of ID 2 (fixing m=8 and G=1) to provide a simpler fixed-format scheme with a compact 8-byte EXT_FTI header versus the 12-byte header required by the general ID 2 scheme. This enables implementations that only need GF(2^^8) without encoding symbol groups to avoid carrying unnecessary parameters.
+section: "5"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

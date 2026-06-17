@@ -1,0 +1,10 @@
+document: rfc-5512
+kind: design-rationale
+summary: A single Encapsulation SAFI is used for all tunnel types (rather than one SAFI per tunnel type) so that encapsulation information can pass transparently through intermediate BGP speakers (e.g., route reflectors) that do not understand the encapsulation attribute, since the Tunnel Encapsulation Attribute is defined as optional transitive. This allows new encapsulations to be added without reconfiguring intermediate BGP systems.
+section: "1"
+topics:
+    - bgp
+    - routing
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

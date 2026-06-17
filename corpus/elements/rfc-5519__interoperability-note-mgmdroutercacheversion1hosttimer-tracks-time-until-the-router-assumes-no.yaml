@@ -1,0 +1,8 @@
+document: rfc-5519
+kind: interoperability-note
+summary: mgmdRouterCacheVersion1HostTimer tracks time until the router assumes no IGMPv1 members remain; upon receiving any IGMPv1 Membership Report this timer resets to the group membership timer, and while non-zero the router ignores MGMDv2 Leave messages for that group. This timer applies only to IGMPv1 hosts, not MLD.
+section: "5"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
