@@ -1,0 +1,11 @@
+document: rfc-6016
+kind: interoperability-note
+summary: When RSVP aggregation (RFC 3175 / RFC 4860) is used, it applies only when Aggregator and Deaggregator nodes are CE devices and the entire MPLS VPN lies within the Aggregation Region. Aggregate RSVP sessions MUST be treated identically to regular IPv4 sessions with the corresponding VPN-typed objects. End-To-End RSVP messages (IP protocol 134, RSVP-E2E-IGNORE) MUST be passed through as regular customer traffic, ignoring the Router Alert Option.
+section: "7.3"
+rfc2119_level: MUST
+topics:
+    - qos
+    - diffserv
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

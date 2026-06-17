@@ -1,0 +1,10 @@
+document: rfc-6015
+kind: security-consideration
+summary: Altering FEC packets can critically impact source packet reconstruction; for example, changing the Length recovery field can produce a recovered packet that is excessively long. Implementations should perform sanity checks on received source and FEC packets before recovery and validate recovered packets before use.
+section: "9"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

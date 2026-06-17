@@ -1,0 +1,10 @@
+document: rfc-6010
+kind: interoperability-note
+summary: When multiple SignerInfo elements appear within a single SignedData, each is treated independently for CCC purposes (not collaboratively). A content is valid if at least one valid CMS path employing one SignerInfo within each SignedData is found. Applications requiring collaborative multi-signer validation SHOULD use multiple nested SignedData contents.
+section: 4.1.1.1
+rfc2119_level: RECOMMENDED
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

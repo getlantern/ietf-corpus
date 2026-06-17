@@ -1,0 +1,10 @@
+document: rfc-6016
+kind: protocol-element
+summary: The VPN-IPv4 RSVP_HOP object (Class=3, C-Type=5) carries both a standard IPv4 next/previous hop address and a VPN-IPv4 address (12 bytes). The sender MUST advertise the VPN-IPv4 address into BGP with an associated label; a receiving RSVP neighbor uses that label to MPLS-encapsulate reply messages, enabling reachability between PEs separated by Option-B ASBRs without requiring direct IP reachability.
+section: "3.1"
+topics:
+    - qos
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

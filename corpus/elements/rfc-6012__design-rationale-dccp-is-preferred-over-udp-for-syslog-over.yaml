@@ -1,0 +1,10 @@
+document: rfc-6012
+kind: design-rationale
+summary: DCCP is preferred over UDP for syslog over DTLS because UDP lacks congestion control; unrestricted syslog data over UDP is problematic for stable Internet operation. DCCP's built-in congestion control (CCID 3 required, CCID 2 recommended) addresses this.
+section: "6"
+topics:
+    - syslog
+    - congestion
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

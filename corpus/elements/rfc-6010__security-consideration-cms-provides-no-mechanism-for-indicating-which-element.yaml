@@ -1,0 +1,9 @@
+document: rfc-6010
+kind: security-consideration
+summary: CMS provides no mechanism for indicating which element within a ContentCollection or across CMS layers an attribute applies to. CCC collects all attributes from the CMS path and treats them as applying to the encapsulated content type, which can result in attributes unrelated to the leaf node being included. Care should be taken not to constrain attribute types never used to describe leaf content (e.g., MessageDigest).
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

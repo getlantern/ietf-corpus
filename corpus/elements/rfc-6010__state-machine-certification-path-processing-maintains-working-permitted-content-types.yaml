@@ -1,0 +1,10 @@
+document: rfc-6010
+kind: state-machine
+summary: Certification path processing maintains working_permitted_content_types and excluded_content_types state variables, initialized from the trust anchor CCC. For each certificate, entries are intersected (constraining attribute values), removed if the intersection is empty (moving the content type to excluded_content_types), or unchanged if absenceEqualsUnconstrained is true and CCC is absent. The wrap-up procedure checks cms_content_type against working_permitted_content_types.
+section: "3"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

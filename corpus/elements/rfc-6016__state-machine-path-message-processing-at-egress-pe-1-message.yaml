@@ -1,0 +1,10 @@
+document: rfc-6016
+kind: state-machine
+summary: 'Path message processing at egress PE: (1) message arrives addressed to PE itself; (2) extract RD and IPv4 address from VPN-IPv4 SESSION to determine local VRF; (3) store incoming message and VRF as Path state; (4) reconstruct Path with original IPv4 destination, plain IPv4 SESSION/SENDER_TEMPLATE (RD stripped), and standard RSVP_HOP with PE outgoing interface address; (5) forward with Router Alert Option toward receiver.'
+section: "3.3"
+topics:
+    - qos
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

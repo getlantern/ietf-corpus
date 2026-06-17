@@ -1,0 +1,10 @@
+document: rfc-6012
+kind: normative-requirement
+summary: A transport sender MUST close the DTLS connection when no more syslog messages are expected and MUST send a DTLS close_notify alert before closing. Once the transport receiver gets a close_notify, it MUST reply with a close_notify.
+section: "5.5"
+rfc2119_level: MUST
+topics:
+    - tls
+    - syslog
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

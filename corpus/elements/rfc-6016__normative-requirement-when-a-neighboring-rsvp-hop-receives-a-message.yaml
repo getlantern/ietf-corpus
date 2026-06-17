@@ -1,0 +1,11 @@
+document: rfc-6016
+kind: normative-requirement
+summary: When a neighboring RSVP hop receives a message containing a VPN-IPv4 RSVP_HOP object, it MUST encapsulate any reply message with the BGP label associated with the VPN-IPv4 address and forward it via MPLS to the BGP next hop. If the received RSVP_HOP is a plain IPv4 object, the reply is IP-encapsulated instead.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - qos
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

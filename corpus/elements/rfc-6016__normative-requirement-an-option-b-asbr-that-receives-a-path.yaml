@@ -1,0 +1,11 @@
+document: rfc-6016
+kind: normative-requirement
+summary: An Option-B ASBR that receives a Path message with an IPv4 RSVP_HOP and does not wish to install local state MUST NOT forward the Path message, and SHOULD send a PathError with Error Code 'RSVP over MPLS Problem' and Error Value 'RSVP_HOP not reachable across VPN'.
+section: 5.2.2
+rfc2119_level: MUST NOT
+topics:
+    - qos
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

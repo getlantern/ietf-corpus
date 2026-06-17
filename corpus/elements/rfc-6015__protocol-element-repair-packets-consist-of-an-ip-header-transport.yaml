@@ -1,0 +1,9 @@
+document: rfc-6015
+kind: protocol-element
+summary: Repair packets consist of an IP header, transport header, RTP header, 16-octet FEC header, and repair symbols. The P bit, X bit, CC field, and M bit of the repair RTP header each equal the XOR of the corresponding fields from the protected source packets, but no actual padding, extension, or CSRC list is ever present in a repair packet.
+section: "4.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

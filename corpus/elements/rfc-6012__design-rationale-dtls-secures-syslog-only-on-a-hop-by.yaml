@@ -1,0 +1,10 @@
+document: rfc-6012
+kind: design-rationale
+summary: DTLS secures syslog only on a hop-by-hop basis; the authenticated identity of the transport sender (e.g., certificate subject name) is not necessarily related to the HOSTNAME field of the syslog message. RFC 5848 (Signed Syslog Messages) should be used when end-to-end message origin authentication is required.
+section: "4"
+topics:
+    - syslog
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

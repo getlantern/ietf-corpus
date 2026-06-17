@@ -1,0 +1,10 @@
+document: rfc-6012
+kind: interoperability-note
+summary: A DTLS record MUST NOT span multiple datagrams. For UDP, message size limits are governed by RFC 5426 Section 3.2; for DCCP, the implementer SHOULD determine the maximum record size from RFC 4340. The common interoperability baseline requires receivers to handle at least 2048-octet messages.
+section: 5.4.1
+topics:
+    - syslog
+    - tls
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

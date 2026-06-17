@@ -1,0 +1,10 @@
+document: rfc-6016
+kind: state-machine
+summary: 'Path message processing at ingress PE: (1) identify VRF from incoming interface; (2) store Path state associated with VRF; (3) look up receiver address in VRF to find egress PE (BGP next hop); (4) construct new VPN-IPv4 SESSION (with RD from VPN-IPv4 route) and VPN-IPv4 SENDER_TEMPLATE; (5) send new Path addressed to egress PE loopback, without Router Alert Option, with VPN-IPv4 RSVP_HOP.'
+section: "3.2"
+topics:
+    - qos
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

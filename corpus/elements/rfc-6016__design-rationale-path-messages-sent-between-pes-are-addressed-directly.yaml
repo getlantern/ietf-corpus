@@ -1,0 +1,10 @@
+document: rfc-6016
+kind: design-rationale
+summary: Path messages sent between PEs are addressed directly to the egress PE's loopback address and sent without the IP Router Alert Option (RAO), rather than using the receiver's address. This avoids requiring egress PEs to inspect IP headers inside MPLS-encapsulated packets ('pop and go' behavior) and eliminates dependency on RAO processing in the backbone.
+section: "3.2"
+topics:
+    - qos
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

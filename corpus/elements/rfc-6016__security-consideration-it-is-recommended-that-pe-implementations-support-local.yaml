@@ -1,0 +1,12 @@
+document: rfc-6016
+kind: security-consideration
+summary: It is RECOMMENDED that PE implementations support local policy to limit the total backbone resources reservable by a given customer or CE. A VPN-IPv4 RSVP_HOP address used for RSVP signaling MUST NOT be redistributed to or made reachable by any CE; a dedicated 'control-plane VPN' carrying route targets not imported into customer VRFs is one way to ensure isolation.
+section: "10"
+rfc2119_level: RECOMMENDED
+topics:
+    - security
+    - qos
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

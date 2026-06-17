@@ -1,0 +1,10 @@
+document: rfc-6016
+kind: design-rationale
+summary: VPN-IPv4 (and VPN-IPv6) addresses are embedded directly into RSVP SESSION, SENDER_TEMPLATE, FILTER_SPEC, and RSVP_HOP objects rather than relying on MPLS VPN labels to identify the VPN context. This preserves the RSVP principle that all session-identifying information is contained within RSVP objects, ensuring compatibility with protocols like COPS/RSVP that re-encapsulate RSVP messages.
+section: "2"
+topics:
+    - qos
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6012
+kind: wire-format
+summary: DTLS application data for syslog consists of one or more SYSLOG-FRAMEs. Each SYSLOG-FRAME is MSG-LEN SP SYSLOG-MSG, where MSG-LEN is a decimal octet count (nonzero leading digit) and SP is ASCII 0x20. Multiple messages may share a single DTLS record or a message may span multiple DTLS records.
+section: "5.4"
+topics:
+    - syslog
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

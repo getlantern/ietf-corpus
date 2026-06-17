@@ -1,0 +1,9 @@
+document: rfc-6019
+kind: design-rationale
+summary: 'BinaryTime was chosen over UTCTime and GeneralizedTime because: (1) it produces smaller encoded values, (2) it maps directly to OS integer representations with only straightforward arithmetic conversion, and (3) integer comparison for date ordering is simpler than comparing UTC/GeneralizedTime strings across time zones.'
+section: "1.1"
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
