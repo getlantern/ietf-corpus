@@ -1,0 +1,11 @@
+document: rfc-6333
+kind: normative-requirement
+summary: When decapsulating packets, the AFTR MUST only forward packets sourced by RFC 1918 addresses, the IANA reserved range 192.0.0.0/29, or pre-authorized out-of-band addresses. The AFTR MUST drop all other packets, preventing rogue devices from launching DoS attacks using spoofed public IPv4 source addresses.
+section: "11"
+rfc2119_level: MUST
+topics:
+    - nat
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

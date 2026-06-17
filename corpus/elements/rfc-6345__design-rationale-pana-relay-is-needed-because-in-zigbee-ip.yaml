@@ -1,0 +1,10 @@
+document: rfc-6345
+kind: design-rationale
+summary: PANA relay is needed because in ZigBee IP networks using 6LoWPAN, a joining node (PaC) can only use a link-local IPv6 address before authentication completes, while the PAA typically resides in a 6LowPAN Border Router multiple IP hops away. The PRE on the parent node bridges this routing gap without requiring the PaC to have a routable address.
+section: "1"
+topics:
+    - routing
+    - security
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

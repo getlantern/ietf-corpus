@@ -1,0 +1,10 @@
+document: rfc-6333
+kind: normative-requirement
+summary: The B4 element MUST perform fragmentation and reassembly if the outgoing link MTU cannot accommodate the extra IPv6 encapsulation header. The inner IPv4 packet MUST NOT be fragmented; fragmentation MUST happen after IPv6 encapsulation, and reassembly MUST happen before IPv4 decapsulation, following RFC 2473 Section 7.2.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

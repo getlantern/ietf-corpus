@@ -1,0 +1,8 @@
+document: rfc-6339
+kind: design-rationale
+summary: These three interfaces were added because protocols such as SASL GS2 (RFC 5801) need to programmatically add and remove the mechanism-independent GSS-API token header (ASN.1 tags, length, OID), and OID comparison is needed to validate that a negotiated mechanism matches the requested one. Prior to this document, GSS-API libraries lacked standard APIs for these operations.
+section: "1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

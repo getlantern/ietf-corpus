@@ -1,0 +1,8 @@
+document: rfc-6329
+kind: design-rationale
+summary: Head-end replication eliminates multicast state in core bridges entirely by having the ingress SPBM node replicate and unicast to each receiver, making it suitable for sparse I-SID communities. Tandem replication is bandwidth-efficient but requires multicast FDB state on every transit node along the shortest path tree.
+section: "4.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

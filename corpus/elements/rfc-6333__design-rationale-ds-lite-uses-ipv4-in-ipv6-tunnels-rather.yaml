@@ -1,0 +1,10 @@
+document: rfc-6333
+kind: design-rationale
+summary: DS-Lite uses IPv4-in-IPv6 tunnels rather than a cascade of NATs so that communications stay within a single address family — IPv6 sources talk to IPv6 destinations, IPv4 sources to IPv4 destinations — with no protocol-family translation. This greatly simplifies applications that embed literal IP addresses in their payloads.
+section: "4.1"
+topics:
+    - nat
+    - v6ops
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

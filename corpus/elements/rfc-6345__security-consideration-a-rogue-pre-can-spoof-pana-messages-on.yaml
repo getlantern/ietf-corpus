@@ -1,0 +1,8 @@
+document: rfc-6345
+kind: security-consideration
+summary: A rogue PRE can spoof PANA messages on behalf of a victim PaC without needing to be an MitM (unlike non-relayed PANA). However, it cannot complete initial authentication without the PaC's credentials, and post-authentication spoofed messages fail integrity checks when a key-generating EAP method is used.
+section: "6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
