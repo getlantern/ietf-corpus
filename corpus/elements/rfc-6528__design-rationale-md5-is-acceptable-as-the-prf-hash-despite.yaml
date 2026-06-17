@@ -1,0 +1,10 @@
+document: rfc-6528
+kind: design-rationale
+summary: MD5 is acceptable as the PRF hash despite known weaknesses (RFC 6151) because the threat model only requires preventing off-path guessing, not resisting a keyed-hash attack; MD5 is faster and used in virtually all existing implementations of this algorithm.
+section: "3"
+topics:
+    - tcp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-6526
+kind: protocol-element
+summary: 'Data Record loss per Template is calculated using the IPFIX Sequence Number: loss = (S2 - (S0 + N0)) mod(2^32), where S0 is the sequence number of the last IPFIX Message before the loss, N0 is the Data Record count in that message, and S2 is the sequence number of the first message after the loss. Unsigned32 arithmetic handles the modulo automatically.'
+section: 4.5.4
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

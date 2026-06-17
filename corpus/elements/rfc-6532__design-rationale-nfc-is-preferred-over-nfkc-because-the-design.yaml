@@ -1,0 +1,8 @@
+document: rfc-6532
+kind: design-rationale
+summary: NFC is preferred over NFKC because the design goal of internationalization is to let people spell their names correctly; NFKC's compatibility decompositions can destroy distinctions needed for some names. Since mailbox local parts often reflect personal names, name-preserving normalization is load-bearing.
+section: "3.1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

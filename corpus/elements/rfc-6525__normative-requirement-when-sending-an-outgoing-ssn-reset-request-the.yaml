@@ -1,0 +1,9 @@
+document: rfc-6525
+kind: normative-requirement
+summary: When sending an Outgoing SSN Reset Request, the sender MUST stop assigning new SSNs to user data on the affected streams and queue that data (step A1), because a lost request could cause out-of-sequence errors on the receiver before it is prepared to accept them.
+section: 5.1.2
+rfc2119_level: MUST
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

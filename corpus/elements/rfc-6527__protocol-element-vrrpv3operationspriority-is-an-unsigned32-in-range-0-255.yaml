@@ -1,0 +1,8 @@
+document: rfc-6527
+kind: protocol-element
+summary: vrrpv3OperationsPriority is an Unsigned32 in range 0–255 with default 100. Priority 255 indicates the router owns the associated IP address(es); priority 0 (not settable via SNMP) signals the current master is ceasing participation. Agents MUST reject SET operations with value 0 or 255, returning badValue(3).
+section: "10"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

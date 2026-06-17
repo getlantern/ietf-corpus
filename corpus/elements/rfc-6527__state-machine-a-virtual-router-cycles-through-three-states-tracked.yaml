@@ -1,0 +1,8 @@
+document: rfc-6527
+kind: state-machine
+summary: 'A virtual router cycles through three states tracked by vrrpv3OperationsStatus: initialize(1) — awaiting startup event; backup(2) — monitoring master availability; master(3) — forwarding packets for associated IP addresses. A row must start in initialize(1) and cannot transition to backup(2) or master(3) until vrrpv3OperationsRowStatus becomes active(1).'
+section: "10"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

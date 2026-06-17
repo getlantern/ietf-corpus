@@ -1,0 +1,8 @@
+document: rfc-6525
+kind: design-rationale
+summary: SCTP streams are uni-directional with no correspondence between outgoing and incoming streams. The protocol mandates that the incoming side always resets its SSN before the outgoing side; therefore, a reset request must always originate from the outgoing side, forcing a peer that wants its incoming streams reset to ask the peer to initiate an outgoing reset.
+section: "5"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6525
+kind: security-consideration
+summary: The sockets API exposes SCTP SSNs to applications, which may assume monotonically increasing values. Stream reconfiguration breaks that assumption, so applications MUST explicitly opt in via socket options and event subscriptions before the extension is activated.
+section: "7"
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

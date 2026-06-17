@@ -1,0 +1,9 @@
+document: rfc-6533
+kind: normative-requirement
+summary: The utf-8-address form MUST NOT be used in the ORCPT parameter when the SMTP server does not advertise SMTPUTF8, when the address contains ASCII characters forbidden in ORCPT (e.g., SP or '='), or in a 7-bit transport environment including message/delivery-status fields; utf-8-addr-xtext MUST be used instead in those cases.
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

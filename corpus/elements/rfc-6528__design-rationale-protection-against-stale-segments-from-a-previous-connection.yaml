@@ -1,0 +1,8 @@
+document: rfc-6528
+kind: design-rationale
+summary: Protection against stale segments from a previous connection incarnation is primarily enforced by the TIME-WAIT state and TCP's quiet-time concept, not by the ISN monotonicity requirement; this makes the ISN free to be per-connection-id rather than globally monotonic.
+section: "2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

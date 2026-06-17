@@ -1,0 +1,8 @@
+document: rfc-6526
+kind: design-rationale
+summary: By restricting each Template and its Data Records to a single SCTP stream and enforcing in-order delivery, any Data Record loss detected via the IPFIX Sequence Number can be attributed to the specific Template(s) using that stream, resolving the RFC 5101 limitation where multi-Template associations made per-Template loss calculation impossible.
+section: 3.1.2
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

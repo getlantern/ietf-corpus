@@ -1,0 +1,9 @@
+document: rfc-6525
+kind: normative-requirement
+summary: After sending a RE-CONFIG chunk containing at least one request parameter, the sender MUST start the Re-configuration Timer set to the RTO value. The timer MUST use exponential backoff; on expiry, the sender MUST retransmit the RE-CONFIG chunk and increment error counters, applying SCTP threshold management.
+section: 5.1.1
+rfc2119_level: MUST
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

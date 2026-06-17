@@ -1,0 +1,9 @@
+document: rfc-6531
+kind: normative-requirement
+summary: If a MAIL command does not include the SMTPUTF8 parameter, an SMTPUTF8-aware server MUST NOT return 251 or 551 responses containing non-ASCII mailboxes; it MUST transform such responses into 250 or 550 responses without non-ASCII addresses.
+section: 3.7.4.1
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

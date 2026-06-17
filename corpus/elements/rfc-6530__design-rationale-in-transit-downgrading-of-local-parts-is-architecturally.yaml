@@ -1,0 +1,8 @@
+document: rfc-6530
+kind: design-rationale
+summary: In-transit downgrading of local parts is architecturally prohibited because a relay has no way to distinguish whether a local part such as 'user%foo@example.com' encodes routing information or is simply a local address. Only the final delivery server can safely interpret local-part semantics.
+section: "9"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

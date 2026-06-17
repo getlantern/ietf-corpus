@@ -1,0 +1,8 @@
+document: rfc-6526
+kind: design-rationale
+summary: In-order delivery within a single SCTP stream guarantees that the Template Withdrawal Message arrives before any new Template definition, eliminating the need for the 5-second Template Reuse Delay when reusing Template IDs within the same stream. This delay is still required when reusing on a different stream.
+section: 3.2.2
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

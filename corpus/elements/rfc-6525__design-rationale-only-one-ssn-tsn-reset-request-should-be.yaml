@@ -1,0 +1,8 @@
+document: rfc-6525
+kind: design-rationale
+summary: Only one SSN/TSN Reset Request SHOULD be sent within 30 seconds (the IP MSL) to prevent TSN wrap-around. The Receiver's Next TSN is set to the smallest unacknowledged TSN plus 2^31 to place the new TSN sequence safely beyond any in-flight or delayed segments.
+section: 5.1.4
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

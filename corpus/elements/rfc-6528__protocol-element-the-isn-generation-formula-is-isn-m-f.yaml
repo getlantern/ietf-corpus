@@ -1,0 +1,10 @@
+document: rfc-6528
+kind: protocol-element
+summary: The ISN generation formula is ISN = M + F(localip, localport, remoteip, remoteport, secretkey), where M is a 4-microsecond timer and F() is a PRF (e.g., a cryptographic hash such as MD5) keyed on the 4-tuple and a secret. This gives each connection a separate sequence number space.
+section: "3"
+topics:
+    - tcp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

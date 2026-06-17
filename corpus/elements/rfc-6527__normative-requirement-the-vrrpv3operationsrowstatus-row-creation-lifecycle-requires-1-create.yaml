@@ -1,0 +1,9 @@
+document: rfc-6527
+kind: normative-requirement
+summary: 'The vrrpv3OperationsRowStatus row-creation lifecycle requires: (1) create row with createAndWait(5), (2) create associated rows in vrrpv3AssociatedIpAddrTable, (3) populate the entry, (4) set RowStatus to active(1). Deletion requires setting RowStatus to notInService(2), destroying associated address rows, then setting RowStatus to destroy(6).'
+section: "10"
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6531
+kind: normative-requirement
+summary: An SMTPUTF8-aware SMTP server MUST NOT use UTF-8 strings in VRFY/EXPN replies if the client did not transmit the SMTPUTF8 parameter. If UTF-8 is required but not permitted, the server MUST use reply-code 252 or 550 (with enhanced code X.6.8).
+section: 3.7.4.2
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

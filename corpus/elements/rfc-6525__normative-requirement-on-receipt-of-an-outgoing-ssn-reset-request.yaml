@@ -1,0 +1,9 @@
+document: rfc-6525
+kind: normative-requirement
+summary: On receipt of an Outgoing SSN Reset Request, if the Sender's Last Assigned TSN is greater than the cumulative acknowledgment point, the receiver MUST enter 'deferred reset processing', queue arriving data with TSNs beyond that value, and respond with 'In progress' until the cumulative ACK catches up.
+section: 5.2.2
+rfc2119_level: MUST
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-6532
+kind: design-rationale
+summary: RFC 2045's prohibition on content-transfer-encodings for message/ subtypes is relaxed because message/global may need encoding when downgraded from 8-bit to 7-bit per RFC 6152. Allowing nested encodings was deemed less complex than alternative approaches even though multiple encoding levels may occur in practice.
+section: "3.5"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

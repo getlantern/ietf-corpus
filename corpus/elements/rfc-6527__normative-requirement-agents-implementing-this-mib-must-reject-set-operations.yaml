@@ -1,0 +1,9 @@
+document: rfc-6527
+kind: normative-requirement
+summary: Agents implementing this MIB MUST reject SET operations that attempt to write priority values of 0 or 255 to vrrpv3OperationsPriority. For example, an SNMP agent would return 'badValue(3)' for such attempts.
+section: "10"
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-6531
+kind: design-rationale
+summary: ASCII-only messages SHOULD be sent without the SMTPUTF8 extension because next-hop servers may not support it, and during early deployment the risk of transmission failure is high. The long-term advantage of casting ASCII characters as UTF-8 is enabling pure-Unicode environments, but the near-term cost is real.
+section: "3.4"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

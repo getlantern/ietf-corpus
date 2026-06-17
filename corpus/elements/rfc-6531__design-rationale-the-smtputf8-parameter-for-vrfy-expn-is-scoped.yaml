@@ -1,0 +1,8 @@
+document: rfc-6531
+kind: design-rationale
+summary: The SMTPUTF8 parameter for VRFY/EXPN is scoped per-command (not session-wide) to allow servers to use UTF-8 replies safely only when the client has explicitly signaled acceptance, preventing confusion in non-SMTPUTF8-aware clients that might mishandle UTF-8 in replies.
+section: 3.7.4.2
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

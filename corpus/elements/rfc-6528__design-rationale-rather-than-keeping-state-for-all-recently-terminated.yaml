@@ -1,0 +1,9 @@
+document: rfc-6528
+kind: design-rationale
+summary: Rather than keeping state for all recently terminated connections (which wastes memory), the algorithm uses a secret-keyed PRF so that the ISN space per connection-id is unpredictable without that state.
+section: "2"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

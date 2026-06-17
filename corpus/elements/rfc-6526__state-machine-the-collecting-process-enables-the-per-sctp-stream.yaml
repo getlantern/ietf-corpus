@@ -1,0 +1,8 @@
+document: rfc-6526
+kind: state-machine
+summary: 'The Collecting Process enables the per-SCTP-stream extension for a Transport Session when the first Data Record received is associated with the Data Records Reliability Options Template; otherwise, the extension MUST NOT be enabled. The extension is disabled (and an error logged) if any of six violation conditions are detected, including: Data Record before reliability notification, cross-stream Template/Data Record mismatch, duplicate reliability notification, unordered message flag set, or unexplained loss in a reliably-declared stream.'
+section: 4.5.2
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

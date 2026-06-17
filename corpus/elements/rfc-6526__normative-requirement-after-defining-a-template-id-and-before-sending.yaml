@@ -1,0 +1,9 @@
+document: rfc-6526
+kind: normative-requirement
+summary: After defining a Template ID and before sending any associated Data Records on an SCTP stream, the Exporting Process MUST notify the Collecting Process of its intention to send those Data Records reliably or unreliably by sending a Data Record via the Data Records Reliability Options Template. If it fails to do so, the Collecting Process MUST disable this extension for the SCTP association.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

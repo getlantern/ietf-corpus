@@ -1,0 +1,9 @@
+document: rfc-6525
+kind: security-consideration
+summary: When both SSN and TSN are reset, the maximum segment lifetime (30 seconds) is used as the minimum interval between successive SSN/TSN resets, preventing TSN wrap-around from causing data from an old epoch to be accepted as valid in the new epoch.
+section: "7"
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,11 @@
+document: rfc-6528
+kind: normative-requirement
+summary: TCP SHOULD generate its Initial Sequence Numbers using the expression ISN = M + F(localip, localport, remoteip, remoteport, secretkey), where M is the 4 microsecond timer and F() is a pseudorandom function of the connection-id.
+section: "3"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

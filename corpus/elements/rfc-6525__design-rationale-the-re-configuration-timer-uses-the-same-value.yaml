@@ -1,0 +1,8 @@
+document: rfc-6525
+kind: design-rationale
+summary: The Re-configuration Timer uses the same value as SCTP's RTO with exponential backoff, reusing SCTP's existing retransmission and threshold management machinery rather than defining a separate mechanism. This keeps association failure detection consistent.
+section: 5.1.1
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
