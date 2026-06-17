@@ -1,0 +1,9 @@
+document: rfc-5685
+kind: state-machine
+summary: 'IKE_SA_INIT redirect flow: (1) Initiator sends IKE_SA_INIT with REDIRECT_SUPPORTED; (2) Responder replies with REDIRECT (no IKE_SA is created, responder SPI=0); (3) Initiator verifies nonce, then initiates a new IKE_SA_INIT to the new gateway with REDIRECTED_FROM; (4) Normal IKE_AUTH exchange proceeds with the new gateway.'
+section: "3"
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

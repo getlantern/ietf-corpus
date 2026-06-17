@@ -1,0 +1,8 @@
+document: rfc-5682
+kind: design-rationale
+summary: In step 2a, if the first ACK covers 'recover' but not beyond, the timeout cannot be declared spurious because there is insufficient evidence that a non-retransmitted segment arrived; this correctly handles the common case where a fast retransmission is lost and then retransmitted after an RTO.
+section: "2.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

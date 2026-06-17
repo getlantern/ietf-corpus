@@ -1,0 +1,10 @@
+document: rfc-5682
+kind: security-consideration
+summary: The primary security threat of F-RTO is a receiver misleading the sender into setting an excessively large congestion window after an RTO. Loss of the unnecessary RTO retransmission cannot be detected without an explicit acknowledgment scheme such as DSACK, a limitation shared with Eifel and regular TCP without DSACK.
+section: "6"
+topics:
+    - tcp
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

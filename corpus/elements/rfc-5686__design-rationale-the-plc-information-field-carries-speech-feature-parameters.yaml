@@ -1,0 +1,9 @@
+document: rfc-5686
+kind: design-rationale
+summary: The PLC information field carries speech feature parameters (pitch, VAD, power) for a past frame identified by offset K, rather than for the current frame. This design choice maintains speech quality by allowing the decoder to use PLC parameters associated with a prior frame during packet loss recovery.
+section: 3.3.1.2
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

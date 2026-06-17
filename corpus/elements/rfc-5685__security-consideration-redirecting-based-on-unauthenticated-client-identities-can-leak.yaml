@@ -1,0 +1,11 @@
+document: rfc-5685
+kind: security-consideration
+summary: 'Redirecting based on unauthenticated client identities can leak user-specific information: an active attacker posing as a VPN client can probe which gateway a real user was redirected to, potentially exposing internal routing or user-classification information. Redirection based on unauthenticated IDs should be avoided and performed only after client authentication.'
+section: "11"
+topics:
+    - security
+    - ipsec
+    - privacy
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

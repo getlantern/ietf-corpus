@@ -1,0 +1,9 @@
+document: rfc-5682
+kind: state-machine
+summary: 'The SACK-enhanced F-RTO operates in three steps: Step 1 fires on RTO expiry (reset SACK scoreboard, check RecoveryPoint vs. SND.UNA); Step 2 waits for the cumulative ACK of retransmitted data while updating the scoreboard from SACKs; Step 3 declares SPUR_TO if cumulative ACK or SACK acknowledges previously unacknowledged data not transmitted after the timeout, otherwise reverts to conventional recovery.'
+section: "3.1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

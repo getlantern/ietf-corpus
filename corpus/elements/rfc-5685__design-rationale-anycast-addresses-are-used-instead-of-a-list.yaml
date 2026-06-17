@@ -1,0 +1,9 @@
+document: rfc-5685
+kind: design-rationale
+summary: Anycast addresses are used instead of a list of unicast VPN gateway addresses in DNS so that clients can send IKE_SA_INIT to a single well-known anycast address; the receiving gateway then redirects the client to a specific unicast address, enabling load-based assignment without requiring the client to enumerate individual gateways.
+section: "4"
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

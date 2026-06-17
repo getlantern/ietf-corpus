@@ -1,0 +1,9 @@
+document: rfc-5689
+kind: normative-requirement
+summary: Servers MUST process DAV:set instructions in document order. If any one instruction fails, all instructions MUST fail (all-or-nothing); all executed instructions MUST be undone and a proper error result returned. Failure to set a property MUST result in failure of the overall MKCOL request — the collection is not created.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

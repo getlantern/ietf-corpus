@@ -1,0 +1,9 @@
+document: rfc-5682
+kind: design-rationale
+summary: 'When the receiver window prevents new transmissions in step 2b, reverting to conventional RTO recovery is recommended to prevent the transfer from stalling: without new segments the pipe drains and no further ACKs arrive. Appendix A discusses alternative window-limited strategies.'
+section: "2.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

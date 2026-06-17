@@ -1,0 +1,9 @@
+document: rfc-5691
+kind: design-rationale
+summary: 'MPEG Surround (SAC) enables N-channel audio reconstruction from M < N transmitted channels plus control data, where M is typically mono or stereo. This design ensures backwards compatibility: legacy stereo decoders ignore the spatial data and play back the downmix without quality degradation, while MPEG-Surround-enabled decoders deliver full multi-channel audio.'
+section: "1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

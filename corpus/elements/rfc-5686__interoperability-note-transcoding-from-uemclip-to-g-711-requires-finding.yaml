@@ -1,0 +1,10 @@
+document: rfc-5686
+kind: interoperability-note
+summary: Transcoding from UEMCLIP to G.711 requires finding the sub-layer with layer index 0x00 and extracting 160 bytes (SB=160 for a 20-ms frame); the core layer is not guaranteed to immediately follow the main header. The reverse (G.711 to UEMCLIP) can only produce Mode 0, and A-law input must first be converted to u-law.
+section: "4"
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

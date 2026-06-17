@@ -1,0 +1,9 @@
+document: rfc-5691
+kind: design-rationale
+summary: 'Two transport modes are defined: embedding SpatialFrame()s inside AAC payloads via extension_payload() (Section 4.1), and transmitting MPEG Surround as a separate elementary stream alongside the downmix (Section 4.2). The embedded mode reuses existing RFC 3640 transport without a new mode; the separate stream mode is required when high-bitrate applications exceed the AAC decoder buffer limit.'
+section: "4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

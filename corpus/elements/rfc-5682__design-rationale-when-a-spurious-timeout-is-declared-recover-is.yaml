@@ -1,0 +1,9 @@
+document: rfc-5682
+kind: design-rationale
+summary: When a spurious timeout is declared, 'recover' is reset to SND.UNA so that subsequent duplicate ACKs can trigger fast retransmit. Because F-RTO only retransmits the segment that triggered the timeout, the NewReno problem of unnecessary multiple fast retransmits cannot occur.
+section: "2.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

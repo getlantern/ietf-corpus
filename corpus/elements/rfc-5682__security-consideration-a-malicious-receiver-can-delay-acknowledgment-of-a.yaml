@@ -1,0 +1,10 @@
+document: rfc-5682
+kind: security-consideration
+summary: 'A malicious receiver can delay acknowledgment of a segment until after the sender enters F-RTO step 3, causing a genuine timeout to be falsely declared spurious. Mitigation: when an RTO occurs during fast recovery the sender should reduce the congestion window to 1 rather than fully reverting it.'
+section: "6"
+topics:
+    - tcp
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

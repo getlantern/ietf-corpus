@@ -1,0 +1,9 @@
+document: rfc-5682
+kind: interoperability-note
+summary: When packet reordering or duplication affects the segment that triggered the spurious timeout, the basic F-RTO algorithm may fail to detect the spurious timeout due to incoming duplicate ACKs. The SACK-enhanced version handles most such cases by using SACK information to identify new data.
+section: "2.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5677
+kind: design-rationale
+summary: TCP is recommended as the default transport because its built-in congestion control and retransmission suit large IS messages. UDP is preferred for ES and CS because those messages are small (50–100 bytes) and have tight latency requirements that TCP's concatenation, segment splitting, and retransmission delays would violate.
+section: "6.5"
+topics:
+    - mobility
+    - tcp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

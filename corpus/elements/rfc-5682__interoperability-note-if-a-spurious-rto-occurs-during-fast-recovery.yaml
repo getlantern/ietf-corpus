@@ -1,0 +1,9 @@
+document: rfc-5682
+kind: interoperability-note
+summary: If a spurious RTO occurs during fast recovery, F-RTO often cannot detect it because segments transmitted before the fast-recovery trigger generate duplicate ACKs. In those cases F-RTO falls back to conventional slow-start retransmissions, performing the same as regular RTO recovery.
+section: "2.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

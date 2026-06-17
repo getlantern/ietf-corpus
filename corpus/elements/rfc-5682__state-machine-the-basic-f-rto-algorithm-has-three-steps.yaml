@@ -1,0 +1,9 @@
+document: rfc-5682
+kind: state-machine
+summary: 'The basic F-RTO algorithm has three steps triggered by RTO expiry: Step 1 retransmits the first unacknowledged segment and sets SpuriousRecovery=FALSE; Step 2 processes the first post-RTO ACK (revert to conventional recovery on duplicate ACK or ''recover''-covering ACK, else send two new segments); Step 3 processes the second ACK (declare SPUR_TO if the window advances on non-retransmitted data, else set cwnd ≤ 3*MSS and retransmit in slow start).'
+section: "2.1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

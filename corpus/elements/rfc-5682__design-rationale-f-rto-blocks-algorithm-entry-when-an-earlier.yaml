@@ -1,0 +1,8 @@
+document: rfc-5682
+kind: design-rationale
+summary: F-RTO blocks algorithm entry when an earlier RTO recovery is underway (recover ≥ SND.UNA check) because acknowledgments for retransmitted segments could falsely lead the sender to declare the timeout spurious; the exception is multiple consecutive RTO expirations for the same segment.
+section: "2.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

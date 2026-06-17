@@ -1,0 +1,9 @@
+document: rfc-5686
+kind: security-consideration
+summary: Memory attacks via illegal layer indices or byte sizes in sub-layer headers may cause a decoder to read beyond bitstream boundaries. Decoder implementations SHOULD reject layers with out-of-bounds indices. Additionally, RTP packets are subject to the security considerations of RFC 3550, requiring encryption for confidentiality.
+section: "7"
+topics:
+    - security
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

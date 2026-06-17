@@ -1,0 +1,10 @@
+document: rfc-5685
+kind: security-consideration
+summary: An on-path eavesdropper can inject IKE_SA_INIT responses with REDIRECT payloads to redirect many clients to a victim gateway, flooding it with IKE_SA_INIT requests. The nonce-matching requirement mitigates spoofed redirects but does not fully prevent this amplification attack against third parties.
+section: "11"
+topics:
+    - security
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

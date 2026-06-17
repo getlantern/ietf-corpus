@@ -1,0 +1,9 @@
+document: rfc-5682
+kind: security-consideration
+summary: A malicious receiver can acknowledge data it has not received, causing F-RTO step 3 to declare a spurious timeout. However, the sender's resulting incorrect state means it cannot retransmit the undelivered segment, limiting the practical benefit of this attack to the receiver.
+section: "6"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

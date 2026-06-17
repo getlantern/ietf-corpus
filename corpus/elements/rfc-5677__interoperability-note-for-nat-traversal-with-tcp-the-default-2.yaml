@@ -1,0 +1,11 @@
+document: rfc-5677
+kind: interoperability-note
+summary: For NAT traversal with TCP, the default 2-hour 4-minute connection timeout (per RFC 5382, assuming 2-hour TCP keep-alive) is considered adequate. For UDP, middleboxes may destroy per-flow state during idle periods, requiring MN and Mobility Server to gracefully handle failures and re-establish sessions.
+section: "6.4"
+topics:
+    - mobility
+    - nat
+    - tcp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

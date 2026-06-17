@@ -1,0 +1,11 @@
+document: rfc-5685
+kind: normative-requirement
+summary: When the client receives an IKE_SA_INIT response containing a REDIRECT payload, it MUST verify that the nonce data in the REDIRECT payload matches the Ni value it sent. If the values do not match, the client MUST silently discard the response to prevent DoS attacks via injected REDIRECT payloads.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5682
+kind: design-rationale
+summary: The SACK-enhanced F-RTO leverages the assumption that when a genuine RTO occurs in steady state there are no segments left in the pipe; if ACKs for pre-timeout segments arrive in response to the two new segments sent at step 2, normal TCP operation was merely delayed and the timeout is spurious.
+section: "3.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

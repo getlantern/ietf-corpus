@@ -1,0 +1,10 @@
+document: rfc-5686
+kind: design-rationale
+summary: The G.711 u-law bitstream (Layer a) is always embedded as the UEMCLIP core layer, reducing transcoding from UEMCLIP to G.711 to a simple bitstream extraction rather than full decode/re-encode. This is intended to minimize transcoding cost in RTCP-terminating MCUs where narrowband and wideband terminals coexist.
+section: "2"
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
