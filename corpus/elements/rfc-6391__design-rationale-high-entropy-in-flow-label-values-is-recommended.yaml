@@ -1,0 +1,8 @@
+document: rfc-6391
+kind: design-rationale
+summary: 'High entropy in flow label values is recommended because ECMP load balancing is statistical: it does not account for per-flow bandwidth. A large number of low-bandwidth flows with randomly distributed labels approximates an even spread; recommending high entropy discourages overloading the label value with additional semantic meaning.'
+section: "8.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

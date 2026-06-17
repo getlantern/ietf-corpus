@@ -1,0 +1,10 @@
+document: rfc-6389
+kind: design-rationale
+summary: RFC 6388 uses ingress replication for P2MP LSPs on a LAN, requiring a branch LSR to send a separate copy to each downstream LSR. Upstream label assignment allows the branch LSR to send a single copy on the LAN, with all downstream LSRs using the same upstream-assigned label to identify the P2MP LSP, eliminating redundant traffic replication.
+section: "6"
+topics:
+    - mpls
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

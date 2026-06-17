@@ -1,0 +1,10 @@
+document: rfc-6389
+kind: normative-requirement
+summary: When the label in a Label Mapping message is upstream-assigned, the Upstream-Assigned Label TLV MUST be included. If a receiver does not recognize the TLV, it MUST generate a Notification with status 'Unknown TLV'; if it recognizes but cannot process it, it MUST generate a Notification with status 'No Label Resources'.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

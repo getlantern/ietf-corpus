@@ -1,0 +1,9 @@
+document: rfc-6396
+kind: design-rationale
+summary: The 4-octet MRT Timestamp is a UNIX epoch value and cannot represent times before January 1, 1970 or after 03:14:07 on January 19, 2038 (0x7FFFFFFF). Implementations creating MRT records after that date will need an alternate EPOCH base; mechanisms for indicating this are currently out of scope.
+section: "2"
+topics:
+    - routing
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
