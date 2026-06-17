@@ -1,0 +1,10 @@
+document: rfc-6074
+kind: normative-requirement
+summary: When a PE receives a Label Mapping message (LDP) or ICRQ (L2TP) for an AC already bound to a PW with a different remote PE, it MUST send a Label Release or CDN with Status Code 'Attachment Circuit bound to different PE'. If the AC is already bound but the remote AI differs from the SAI/SAII in the incoming message, the PE sends a release with 'Attachment Circuit bound to different remote Attachment Circuit'.
+section: 3.1.2
+rfc2119_level: MUST
+topics:
+    - mpls
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

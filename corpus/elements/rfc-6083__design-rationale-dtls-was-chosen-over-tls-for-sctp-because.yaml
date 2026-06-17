@@ -1,0 +1,10 @@
+document: rfc-6083
+kind: design-rationale
+summary: DTLS was chosen over TLS for SCTP because TLS over SCTP (RFC 3436) does not support unordered delivery, partial reliability (RFC 3758), asymmetric stream counts, and requires one TLS connection per bidirectional stream. DTLS over SCTP overcomes all these limitations while preserving message boundaries and supporting dynamic address reconfiguration.
+section: "1.1"
+topics:
+    - tls
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

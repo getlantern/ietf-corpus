@@ -1,0 +1,11 @@
+document: rfc-6083
+kind: normative-requirement
+summary: The new Shared Key Identifier MUST be the old one incremented by 1; if the old one is 65535, the new one MUST be 1. Before sending the Finished message, the active SCTP-AUTH key MUST be switched to the new one.
+section: "4.8"
+rfc2119_level: MUST
+topics:
+    - tls
+    - sctp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6081
+kind: security-consideration
+summary: The nonce mechanism in the Nonce Trailer authenticates the actual mapped address/port of a peer behind a symmetric NAT, preventing spoofed address/port injection. A direct bubble with a non-matching mapped address is accepted only if its nonce matches the value sent in the most recent indirect bubble to that peer, providing replay protection equivalent to RFC 4380's ICMPv6-based connectivity test.
+section: "7"
+topics:
+    - nat
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

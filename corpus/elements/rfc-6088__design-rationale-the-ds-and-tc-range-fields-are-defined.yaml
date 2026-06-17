@@ -1,0 +1,10 @@
+document: rfc-6088
+kind: design-rationale
+summary: The DS and TC range fields are defined as 8 bits wide even though only 6 bits are significant, and the 2 LSBs are explicitly required to be ignored during comparison. This preserves the byte boundary alignment while accommodating the RFC 3168 ECN reclamation of those bits.
+section: "3.1"
+topics:
+    - ip
+    - diffserv
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

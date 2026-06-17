@@ -1,0 +1,10 @@
+document: rfc-6083
+kind: security-consideration
+summary: DTLS endpoints may be authenticated based on IP addresses in certificates, but SCTP associations can use multiple addresses per endpoint. DTLS records may therefore arrive from a different IP address than originally authenticated; security decisions MUST be based on the peer's authenticated identity, not its transport-layer IP address.
+section: "6"
+topics:
+    - tls
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

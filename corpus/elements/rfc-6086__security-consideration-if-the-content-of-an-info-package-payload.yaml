@@ -1,0 +1,11 @@
+document: rfc-6086
+kind: security-consideration
+summary: If the content of an Info Package payload is private, UAs must use end-to-end encryption such as S/MIME, because INFO requests traverse SIP proxies and B2BUAs that the user may not trust. TLS provides only hop-by-hop protection; any SIP hop along the path can view, modify, or intercept INFO requests.
+section: "13"
+topics:
+    - sip
+    - security
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

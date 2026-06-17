@@ -1,0 +1,10 @@
+document: rfc-6089
+kind: design-rationale
+summary: Per-packet load balancing is explicitly not envisioned because it disrupts TCP congestion avoidance (packet ordering within a connection), introduces variable round-trip times for real-time traffic, and defeats anti-replay protection mechanisms. Flow-level granularity is used instead.
+section: "1"
+topics:
+    - ip
+    - mobility
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

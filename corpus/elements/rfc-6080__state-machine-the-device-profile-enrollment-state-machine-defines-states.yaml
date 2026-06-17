@@ -1,0 +1,8 @@
+document: rfc-6080
+kind: state-machine
+summary: 'The device profile enrollment state machine defines states: Initialize, Prepare Enrollment Request, Await Enrollment Acceptance, Enrollment Accepted (await NOTIFY), Retrieving Profile, Enrollment Successful (monitoring), and Failure Handling & Delay. Key transitions include 200 OK leading to await NOTIFY; NOTIFY with content indirection triggering profile retrieval; NOTIFY with profile data leading to enrollment success; timeouts and non-2xx responses triggering failure handling with exponential back-off; retries exceeded triggering re-enrollment.'
+section: 5.3.2
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6080
+kind: security-consideration
+summary: Device bootstrapping represents a high-risk scenario where the device has no pre-existing credentials and may receive sensitive data in initial notifications. When bootstrapping data contains sensitive information, the SIP Identity header per RFC 4474 SHOULD be used to allow validation against pre-configured CA certificates.
+section: "9.2"
+topics:
+    - sip
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

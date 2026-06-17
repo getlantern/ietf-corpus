@@ -1,0 +1,11 @@
+document: rfc-6083
+kind: normative-requirement
+summary: DTLS replay detection MUST NOT be used when running over SCTP. Because DTLS/SCTP provides a reliable service if requested by the application, replay detection at the DTLS layer would incorrectly drop retransmitted SCTP messages.
+section: "3.3"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

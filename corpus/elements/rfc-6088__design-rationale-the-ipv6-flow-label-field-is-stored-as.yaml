@@ -1,0 +1,9 @@
+document: rfc-6088
+kind: design-rationale
+summary: The IPv6 flow label field is stored as a 32-bit quantity despite being only 24 bits wide per RFC 2460; senders zero-pad the high 8 bits and receivers ignore them. This decision keeps the field 32-bit aligned within the sub-option without introducing a special-case partial-word encoding.
+section: "3.2"
+topics:
+    - ip
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

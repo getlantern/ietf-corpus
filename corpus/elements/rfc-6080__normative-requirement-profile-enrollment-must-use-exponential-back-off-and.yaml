@@ -1,0 +1,9 @@
+document: rfc-6080
+kind: normative-requirement
+summary: 'Profile enrollment MUST use exponential back-off and retry: delay is 2^i * (64*T1) seconds where i starts at 0, increments on each failure, and is capped at 8. Cached profiles MAY be used during retries, but cached local-network profiles MUST NOT be used unless the device can confirm it is in the same local network.'
+section: 5.3.2
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

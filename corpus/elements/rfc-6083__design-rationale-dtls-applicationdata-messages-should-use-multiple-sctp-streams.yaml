@@ -1,0 +1,9 @@
+document: rfc-6083
+kind: design-rationale
+summary: DTLS ApplicationData messages SHOULD use multiple SCTP streams other than stream 0 to minimize head-of-line blocking; using stream 0 exclusively is permitted for simplicity when head-of-line blocking is acceptable. Restricting control messages (handshake, alert, ChangeCipherSpec) to stream 0 ensures their ordered, reliable delivery.
+section: "4.4"
+topics:
+    - tls
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6081
+kind: design-rationale
+summary: RFC 4380 recommended going offline when a symmetric NAT is detected because peers see a different mapped address/port than what is embedded in the Teredo IPv6 address, causing incoming packets to be dropped. The Symmetric NAT Support Extension overrides this by using nonces to authenticate the actual mapped address/port seen by the peer, enabling connectivity despite the mismatch.
+section: "3.1"
+topics:
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

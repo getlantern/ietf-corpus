@@ -1,0 +1,10 @@
+document: rfc-6074
+kind: interoperability-note
+summary: 'BGP-AD (this document) and VPLS-BGP (RFC 4761) share AFI=25, SAFI=65. The NLRI length is used as a demultiplexer: BGP-AD NLRIs are exactly 12 bytes (8-byte RD + 4-byte VSI-ID); VPLS-BGP NLRIs are 17 bytes. Implementations of BGP-AD MUST ignore NLRIs longer than 12 bytes to coexist with RFC 4761.'
+section: "7"
+topics:
+    - mpls
+    - vpn
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

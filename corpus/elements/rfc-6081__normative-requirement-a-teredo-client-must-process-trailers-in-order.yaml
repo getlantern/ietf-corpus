@@ -1,0 +1,10 @@
+document: rfc-6081
+kind: normative-requirement
+summary: A Teredo client MUST process trailers in order. If an unrecognized trailer type has highest-order bits '01', the client MUST discard the packet; otherwise it MUST skip past the trailer. Processing MUST stop immediately upon encountering a malformed trailer.
+section: 5.1.2
+rfc2119_level: MUST
+topics:
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

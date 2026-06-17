@@ -1,0 +1,10 @@
+document: rfc-6083
+kind: normative-requirement
+summary: User messages that arrive between ChangeCipherSpec and Finished using the new epoch MUST be buffered by DTLS until the Finished message is read, to handle the epoch transition correctly during handshake.
+section: "4.7"
+rfc2119_level: MUST
+topics:
+    - tls
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

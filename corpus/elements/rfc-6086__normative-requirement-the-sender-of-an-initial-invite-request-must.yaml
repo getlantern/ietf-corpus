@@ -1,0 +1,10 @@
+document: rfc-6086
+kind: normative-requirement
+summary: The sender of an initial INVITE request MUST include a Recv-Info header field in the initial INVITE, even if not willing to receive INFO requests for any Info Package. The receiver of a request containing Recv-Info MUST include a Recv-Info header field in a reliable 18x/2xx response, using the same value in all responses for the same transaction.
+section: 5.2.3
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

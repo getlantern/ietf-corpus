@@ -1,0 +1,11 @@
+document: rfc-6081
+kind: normative-requirement
+summary: When sending an indirect bubble, a Teredo client MUST generate a random 4-byte nonce, include it in a Nonce Trailer, and store it in the Nonce Sent field of the Peer Entry. When sending a direct bubble in response to an indirect bubble that carried a Nonce Trailer, the client MUST include a Nonce Trailer with the same nonce value.
+section: 5.2.4.1
+rfc2119_level: MUST
+topics:
+    - nat
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

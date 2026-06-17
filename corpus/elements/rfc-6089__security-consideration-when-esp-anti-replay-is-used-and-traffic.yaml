@@ -1,0 +1,13 @@
+document: rfc-6089
+kind: security-consideration
+summary: When ESP anti-replay is used and traffic for multiple care-of addresses shares the same SA, the windowing mechanism may discard packets. A sender SHOULD place traffic to/from different CoAs (same HoA) on different SAs; IPsec implementations SHOULD support multiple parallel SAs with the same selectors.
+section: "7"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - ipsec
+    - vpn
+    - ip
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

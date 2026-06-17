@@ -1,0 +1,10 @@
+document: rfc-6083
+kind: normative-requirement
+summary: A DTLS CloseNotify message MUST only be sent after all outstanding SCTP user messages have been acknowledged by the peer and MUST NOT still be revocable. Prior to processing a received CloseNotify, all buffered SCTP user messages MUST be read and processed.
+section: "4.9"
+rfc2119_level: MUST
+topics:
+    - tls
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

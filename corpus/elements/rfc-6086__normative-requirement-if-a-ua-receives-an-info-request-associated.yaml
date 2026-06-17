@@ -1,0 +1,10 @@
+document: rfc-6086
+kind: normative-requirement
+summary: If a UA receives an INFO request associated with an Info Package that the UA has not indicated willingness to receive, the UA MUST send a 469 (Bad Info Package) response containing a Recv-Info header field listing the Info Packages for which the UA is currently willing to receive requests. The UA MUST NOT use the response to update that set.
+section: 4.2.2
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
