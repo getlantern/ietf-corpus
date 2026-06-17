@@ -1,0 +1,10 @@
+document: rfc-5796
+kind: design-rationale
+summary: Anti-replay is not recommended with manual keying because link-local messages have TTL=1 and never propagate beyond one hop, limiting the replay attack surface. The per-sender SA lookup (using interface ID + sender address) eliminates the multi-sender SA problem that would otherwise prevent anti-replay.
+section: "12"
+topics:
+    - ipsec
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

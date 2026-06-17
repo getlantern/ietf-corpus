@@ -1,0 +1,8 @@
+document: rfc-5798
+kind: state-machine
+summary: 'VRRP defines three states per virtual router: Initialize (awaiting Startup event), Backup (monitoring Master availability via Master_Down_Timer), and Master (forwarding packets and sending periodic ADVERTISEMENTs). The IP address owner transitions Initialize→Master immediately; others go Initialize→Backup. Master_Down_Timer expiry triggers Backup→Master.'
+section: "6.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

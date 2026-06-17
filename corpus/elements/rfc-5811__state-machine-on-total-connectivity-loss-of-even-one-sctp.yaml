@@ -1,0 +1,10 @@
+document: rfc-5811
+kind: state-machine
+summary: On total connectivity loss of even one SCTP socket, both FE and CE SHOULD treat this as equivalent to a ForCES AssociationTeardown being issued and follow the shutdown sequence (close all three channel sockets, perform SCTP-level shutdown, clean up state).
+section: A.3
+rfc2119_level: SHOULD
+topics:
+    - sctp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

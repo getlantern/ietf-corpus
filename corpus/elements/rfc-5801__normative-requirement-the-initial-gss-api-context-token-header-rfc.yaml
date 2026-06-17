@@ -1,0 +1,9 @@
+document: rfc-5801
+kind: normative-requirement
+summary: The initial GSS-API context token header (RFC 2743, Section 3.1) MUST be removed by the client before prefixing the GS2 header. The server MUST recompute and restore it before passing the token to GSS_Accept_sec_context, except when the gs2-nonstd-flag is present.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

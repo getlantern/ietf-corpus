@@ -1,0 +1,9 @@
+document: rfc-5811
+kind: design-rationale
+summary: The LP channel is unreliable because some redirected control protocols are themselves reliable (adding TML reliability would be harmful) or desire message obsolescence over retransmission. ForCES heartbeats are also traffic-sensitive and tolerate loss if the peer is busy.
+section: 4.2.1.4
+topics:
+    - sctp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

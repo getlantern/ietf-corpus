@@ -1,0 +1,10 @@
+document: rfc-5796
+kind: state-machine
+summary: 'Manual rekeying follows a three-step atomic procedure: (1) add new inbound SA with new SPI and key on all routers; (2) atomically replace outbound SA with new SPI/key on all routers (no gaps in protection); (3) remove original inbound SA on all routers. Each step must complete across all routers before the next begins, controlled by KeyRolloverInterval.'
+section: "9.1"
+topics:
+    - ipsec
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

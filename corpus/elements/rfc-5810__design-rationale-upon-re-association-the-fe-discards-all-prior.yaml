@@ -1,0 +1,8 @@
+document: rfc-5810
+kind: design-rationale
+summary: Upon re-association, the FE discards all prior state and fetches entirely new state from the CE. This design prioritizes simplicity over efficiency, explicitly avoiding the additional complexity of managing graceful restarts, even though the approach may cause temporary data-path traffic loss.
+section: 4.2.2.3
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

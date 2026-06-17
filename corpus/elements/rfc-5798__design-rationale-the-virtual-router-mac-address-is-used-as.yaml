@@ -1,0 +1,8 @@
+document: rfc-5798
+kind: design-rationale
+summary: The virtual router MAC address is used as the source MAC in all VRRP messages and ARP/ND responses so that learning bridges correctly track which segment the virtual router is on. Using the physical MAC would result in bridge flooding for all traffic destined to the virtual router.
+section: "2.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

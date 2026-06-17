@@ -1,0 +1,8 @@
+document: rfc-5804
+kind: design-rationale
+summary: 'Response codes use a slash-separated hierarchy to allow future extension while preserving backward compatibility: a client that recognizes a parent code but not a more specific child (e.g., understands QUOTA but not QUOTA/MAXSCRIPTS) treats the child as the parent, so new detail can be added without breaking existing clients.'
+section: "1.3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

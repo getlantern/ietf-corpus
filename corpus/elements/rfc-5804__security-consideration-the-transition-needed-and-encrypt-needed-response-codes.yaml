@@ -1,0 +1,9 @@
+document: rfc-5804
+kind: security-consideration
+summary: The TRANSITION-NEEDED and ENCRYPT-NEEDED response codes on failed AUTHENTICATE may disclose whether a username is valid. Server implementations SHOULD provide the ability to disable per-user conditional application of these codes. A malicious server can use TRANSITION-NEEDED to force disclosure of a user's password; clients SHOULD be able to disable the password-transition feature.
+section: "5"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

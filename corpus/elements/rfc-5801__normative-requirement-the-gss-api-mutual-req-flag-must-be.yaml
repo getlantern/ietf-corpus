@@ -1,0 +1,10 @@
+document: rfc-5801
+kind: normative-requirement
+summary: The GSS-API mutual_req_flag MUST be set. Clients MUST verify that the corresponding ret_flag is set when the context is fully established; if not, authentication MUST fail. Per-message req_flags SHOULD NOT be set since GS2 does not use per-message tokens.
+section: "8"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

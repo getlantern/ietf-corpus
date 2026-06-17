@@ -1,0 +1,10 @@
+document: rfc-5801
+kind: security-consideration
+summary: When constructing input_name_string for GSS_Import_name with GSS_C_NT_HOSTBASED_SERVICE, the client SHOULD NOT canonicalize the server's FQDN using an insecure directory service such as DNS without DNSSEC, to prevent name substitution attacks.
+section: "16"
+rfc2119_level: SHOULD NOT
+topics:
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

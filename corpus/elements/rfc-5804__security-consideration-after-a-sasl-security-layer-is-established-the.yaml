@@ -1,0 +1,10 @@
+document: rfc-5804
+kind: security-consideration
+summary: After a SASL security layer is established, the server MUST re-announce all SASL mechanisms it was capable of negotiating. Clients MAY compare the pre- and post-authentication mechanism lists to detect active down-negotiation attacks; user-oriented clients SHOULD notify the user or close the connection if a downgrade is detected.
+section: "2.1"
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

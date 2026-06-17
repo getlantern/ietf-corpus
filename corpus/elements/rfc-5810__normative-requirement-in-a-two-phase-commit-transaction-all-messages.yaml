@@ -1,0 +1,9 @@
+document: rfc-5810
+kind: normative-requirement
+summary: In a two-phase commit transaction, all messages MUST have the AT flag set. Before the CE issues a COMMIT, the FE MUST only validate that operations can be executed but MUST NOT execute them. All messages in a transaction MUST use the execute-all-or-none execution mode; other EM settings result in a transaction failure.
+section: 4.3.1.2.2
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

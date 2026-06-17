@@ -1,0 +1,9 @@
+document: rfc-5802
+kind: design-rationale
+summary: The server stores only StoredKey = H(ClientKey) and ServerKey rather than the plaintext password or SaltedPassword. This means the stored authentication information is not sufficient by itself to impersonate the client, and a server compromise does not directly yield impersonation capability.
+section: "1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5804
+kind: security-consideration
+summary: ManageSieve transactions are susceptible to passive eavesdropping and man-in-the-middle attacks unless TLS (STARTTLS) and/or SASL integrity/confidentiality services are used. If an implementation supports eavesdropping-vulnerable mechanisms such as PLAIN, it MUST support at least one configuration where those mechanisms are not advertised or used without an external security layer.
+section: "5"
+topics:
+    - email
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5796
+kind: design-rationale
+summary: Link-local communication is treated as Source-Specific Multicast (SSM) even though ALL_PIM_ROUTERS is an Any-Source Multicast address, because the sender address combined with the interface ID tag makes each communicating pair unique. This allows anti-replay and per-sender SA lookup despite the shared multicast destination.
+section: "11"
+topics:
+    - multicast
+    - ipsec
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

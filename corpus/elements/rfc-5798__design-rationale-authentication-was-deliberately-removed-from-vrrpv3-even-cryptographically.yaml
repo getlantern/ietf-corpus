@@ -1,0 +1,9 @@
+document: rfc-5798
+kind: design-rationale
+summary: Authentication was deliberately removed from VRRPv3. Even cryptographically authenticated VRRP could not prevent a hostile node from behaving as a Master; multiple Masters are as disruptive as no routers. Additionally, misconfigured shared secrets in VRRPv2 caused spurious multiple-Master elections.
+section: "9"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5810
+kind: design-rationale
+summary: TRCOMP is added beyond classical two-phase commit (2PC) to allow FEs to release rollback state once the CE confirms the transaction is complete. Without it, FEs would need to retain rollback buffers indefinitely after committing.
+section: 4.3.1.2.2
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

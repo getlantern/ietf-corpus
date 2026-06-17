@@ -1,0 +1,9 @@
+document: rfc-5810
+kind: normative-requirement
+summary: The FE MUST respond to the CE's EOT (End of Transaction) COMMIT message. If any participating FE responds with failure or no response is received within a specified timeout, the CE MUST abort the transaction by sending a Config message with the ABT TP flag and a COMMIT operation.
+section: 4.3.1.2.2
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

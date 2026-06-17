@@ -1,0 +1,9 @@
+document: rfc-5798
+kind: security-consideration
+summary: VRRPv3 includes no authentication. Authentication was present in earlier versions but removed because it could not prevent hostile nodes from acting as a VRRP Master and creating multiple Masters, which is as disruptive as having no Master. The TTL=255 check limits attacks to local network nodes.
+section: "9"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

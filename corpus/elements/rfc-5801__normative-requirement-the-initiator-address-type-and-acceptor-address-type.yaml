@@ -1,0 +1,10 @@
+document: rfc-5801
+kind: normative-requirement
+summary: The initiator-address-type and acceptor-address-type fields of the GSS-CHANNEL-BINDINGS structure MUST be set to 0, and the corresponding address fields MUST be the empty string. The application-data field MUST be set to the gs2-header (excluding the gs2-nonstd-flag part) concatenated with the channel binding data when 'p' is used.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5804
+kind: normative-requirement
+summary: The ManageSieve client MUST resolve DNS using an SRV record for service 'sieve' and proto 'tcp' (e.g., _sieve._tcp.example.net) before connecting; if SRV lookup fails, the fallback SHOULD be a normal A/AAAA lookup to the default port 4190.
+section: "1.8"
+rfc2119_level: MUST
+topics:
+    - email
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

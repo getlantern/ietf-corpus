@@ -1,0 +1,9 @@
+document: rfc-5801
+kind: design-rationale
+summary: SHA-1 is used only to derive SASL mechanism names from GSS-API OIDs; no traditional cryptographic collision-resistance property is required — only that truncated outputs are distinct for practical input values. GS2 itself uses no other cryptographic algorithm and is otherwise as algorithm-agile as the underlying GSS-API mechanisms.
+section: "16"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
