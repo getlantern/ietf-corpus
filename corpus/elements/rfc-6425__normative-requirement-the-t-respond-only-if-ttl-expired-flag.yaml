@@ -1,0 +1,10 @@
+document: rfc-6425
+kind: normative-requirement
+summary: The T (Respond Only If TTL Expired) flag MUST be set only in echo request packets. If the T flag is 1 and the incoming MPLS label TTL is greater than 1, the receiving node MUST drop the echo request and MUST NOT send any echo reply.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

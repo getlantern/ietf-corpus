@@ -1,0 +1,10 @@
+document: rfc-6407
+kind: design-rationale
+summary: 'In the GROUPKEY-PUSH message, the SIG payload is computed over the plaintext payloads before encryption (sign-then-encrypt). This ordering is intentional (rationale in Section 7.3.5): the ''rekey'' string prefix ensures the signature is context-bound and cannot be repurposed for other GDOI messages, while allowing receivers to verify authenticity independently of decryption.'
+section: "4"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

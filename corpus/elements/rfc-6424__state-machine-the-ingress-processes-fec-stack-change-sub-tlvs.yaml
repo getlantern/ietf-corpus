@@ -1,0 +1,8 @@
+document: rfc-6424
+kind: state-machine
+summary: 'The ingress processes FEC Stack Change sub-TLVs sequentially: it POPs entries from the FEC stack for POP operations and PUSHes entries for PUSH operations, tracking push_seen to enforce the no-POP-after-PUSH rule. If the resulting FEC stack depth reaches zero or the ordering rule is violated, the echo reply is dropped and the original FEC stack is restored.'
+section: 4.3.1.2
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

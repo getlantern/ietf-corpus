@@ -1,0 +1,9 @@
+document: rfc-6416
+kind: design-rationale
+summary: Multiple small VOPs (e.g., empty VOPs with vop_coded=0, or arbitrarily shaped VOPs with few coding blocks) are permitted to be concatenated into one RTP packet to reduce per-packet header overhead, despite the general rule that different VOPs should be in separate packets.
+section: "1.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

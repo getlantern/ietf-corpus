@@ -1,0 +1,9 @@
+document: rfc-6425
+kind: design-rationale
+summary: The T (Respond Only If TTL Expired) flag is introduced specifically to prevent bud and egress nodes from sending redundant replies to successive traceroute echo requests as TTL values increase beyond their hop depth. Without this flag, these nodes would respond to every subsequent echo request in the traceroute sequence.
+section: 4.3.2
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

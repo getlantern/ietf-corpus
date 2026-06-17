@@ -1,0 +1,10 @@
+document: rfc-6427
+kind: security-consideration
+summary: If external MPLS traffic is mapped to an LSP via a PHP forwarding operation, it is possible to insert a GAL followed by a fault OAM message. An operator SHOULD protect against this by filtering fault OAM messages with the GAL at the top of the label stack.
+section: "7"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

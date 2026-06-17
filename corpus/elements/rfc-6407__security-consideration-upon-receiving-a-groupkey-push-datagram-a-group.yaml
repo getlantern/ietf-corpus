@@ -1,0 +1,9 @@
+document: rfc-6407
+kind: security-consideration
+summary: Upon receiving a GROUPKEY-PUSH datagram, a group member MUST validate the SEQ payload sequence number against the previously received value and MUST verify the SIG payload signature; messages failing either check MUST be discarded. SIG verification uses the public key distributed during GROUPKEY-PULL.
+section: "4.4"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

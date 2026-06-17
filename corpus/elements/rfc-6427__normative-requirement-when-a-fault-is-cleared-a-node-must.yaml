@@ -1,0 +1,9 @@
+document: rfc-6427
+kind: normative-requirement
+summary: When a fault is cleared, a node MUST cease sending the associated FM messages. To clear more quickly, the R-Flag is set to 1, the message is sent immediately and retransmitted two more times at one-second intervals. If a new fault occurs, the node MUST cease these retransmissions and generate new FM messages.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6424
+kind: security-consideration
+summary: To prevent tracing inside a tunnel, operators can use the Pipe Model (RFC 3443) by not propagating the MPLS TTL into the outer tunnel at its start, causing echo request packets to never expire inside the tunnel and thus preventing the outer tunnel from being traced.
+section: "5"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

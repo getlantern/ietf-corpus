@@ -1,0 +1,8 @@
+document: rfc-6427
+kind: state-machine
+summary: 'On receiving an FM message with R-Flag=0: if no matching condition exists, enter the condition and set Expiration timer to 3.5 × Refresh Timer; if condition exists, treat as refresh and reset the timer. On R-Flag=1: clear the matching condition by message type and IF_ID. Expiration timer expiry clears the condition.'
+section: "5.3"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

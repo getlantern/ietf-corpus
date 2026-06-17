@@ -1,0 +1,10 @@
+document: rfc-6420
+kind: normative-requirement
+summary: An upstream router receiving conflicting PIM MT-ID attributes from Join packets MUST follow RFC 5384 to select one; it MAY ignore incoming Join packets altogether to minimize transient forwarding loops. For Assert packets, the RFC 4601 tiebreaker rules apply and PIM MT-ID is not considered in selecting the Assert winner.
+section: 4.2.4.1
+rfc2119_level: MUST
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

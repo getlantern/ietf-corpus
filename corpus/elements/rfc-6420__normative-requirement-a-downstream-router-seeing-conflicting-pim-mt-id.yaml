@@ -1,0 +1,10 @@
+document: rfc-6420
+kind: normative-requirement
+summary: A downstream router seeing conflicting PIM MT-ID attributes in Join packets MUST follow RFC 4601 as if the attribute did not exist (e.g., suppress its own Join) and MUST NOT use RFC 5384 rules to select among downstream MT-IDs. If the Assert winner uses a different MT-ID, the downstream router SHOULD choose the winner as RPF neighbor but MUST NOT encode PIM MT-ID in Joins sent to it.
+section: 4.2.4.2
+rfc2119_level: MUST NOT
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

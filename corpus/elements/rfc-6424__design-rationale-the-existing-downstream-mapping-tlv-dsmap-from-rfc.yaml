@@ -1,0 +1,8 @@
+document: rfc-6424
+kind: design-rationale
+summary: 'The existing Downstream Mapping TLV (DSMAP) from RFC 4379 is not extensible: variable-length and optional fields cannot be added on a per-downstream basis. This made it impossible to convey tunnel or stitched-LSP FEC stack changes to the ingress. The new Downstream Detailed Mapping TLV (DDMAP) converts those fields into sub-TLVs, enabling the required extensibility.'
+section: "3.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

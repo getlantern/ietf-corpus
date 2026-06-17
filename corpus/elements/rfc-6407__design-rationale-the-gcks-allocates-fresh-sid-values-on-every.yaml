@@ -1,0 +1,10 @@
+document: rfc-6407
+kind: design-rationale
+summary: The GCKS allocates fresh SID values on every GROUPKEY-PULL re-registration rather than tracking previously issued SIDs per member. This avoids persistent GCKS state about each member's IV usage history; since the GCKS cannot reliably know which counter-mode nonces a member has consumed, fresh allocation with new Data-Security SAs guarantees IV uniqueness.
+section: "3.5"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

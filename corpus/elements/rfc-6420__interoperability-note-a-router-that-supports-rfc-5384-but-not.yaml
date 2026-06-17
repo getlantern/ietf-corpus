@@ -1,0 +1,9 @@
+document: rfc-6420
+kind: interoperability-note
+summary: A router that supports RFC 5384 but not this document will skip the PIM MT-ID Join Attribute and proceed to the next attribute without altering its RPF decision. A router that supports neither RFC 5384 will ignore the entire Join/Assert message. A router supporting both but administratively suppressing the options SHOULD ignore Join/Assert messages containing the PIM MT-ID attribute.
+section: 4.2.2
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

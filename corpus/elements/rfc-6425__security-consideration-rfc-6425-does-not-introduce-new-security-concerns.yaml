@@ -1,0 +1,9 @@
+document: rfc-6425
+kind: security-consideration
+summary: RFC 6425 does not introduce new security concerns beyond those in RFC 4379, but the multi-egress nature of P2MP LSPs heightens the concern about denial-of-service via LSP ping traffic. Rate limiting on the LSP ping well-known UDP port is strongly advised, though it may lead to false indications of LSP failure.
+section: "8"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

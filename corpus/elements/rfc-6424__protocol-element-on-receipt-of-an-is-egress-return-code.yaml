@@ -1,0 +1,8 @@
+document: rfc-6424
+kind: protocol-element
+summary: On receipt of an IS_EGRESS (Return Code 3) reply, the ingress SHOULD check whether the Target FEC stack depth sent matches the depth being traced. If additional FECs were pushed, it pops entries and resends with the same TTL until a non-IS_EGRESS reply is received or all added FECs are exhausted, allowing reconstruction of hierarchical LSP topology.
+section: 4.3.2
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6407
+kind: protocol-element
+summary: 'The GROUPKEY-PULL is a four-message Phase 2 exchange: (1) GM→GCKS: HDR*, HASH(1), Ni, ID; (2) GCKS→GM: HDR*, HASH(2), Nr, SA; (3) GM→GCKS: HDR*, HASH(3) [,GAP]; (4) GCKS→GM: HDR*, HASH(4), [SEQ,] KD. Each HASH is prf(SKEYID_a, M-ID | nonces | payloads), providing replay protection and liveness proof.'
+section: "3.2"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

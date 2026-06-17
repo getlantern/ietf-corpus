@@ -1,0 +1,8 @@
+document: rfc-6424
+kind: design-rationale
+summary: RFC 4379 traceroute cannot perform complete FEC validation when a traced LSP crosses MPLS tunnels (e.g., LDP over RSVP) because transit nodes receive an echo request with labels for which no FEC is present in the Target FEC stack. Similarly, stitched LSPs change the FEC at stitching points, which RFC 4379 has no mechanism to communicate to the ingress.
+section: "2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

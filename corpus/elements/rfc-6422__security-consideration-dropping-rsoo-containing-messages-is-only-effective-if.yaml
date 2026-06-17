@@ -1,0 +1,8 @@
+document: rfc-6422
+kind: security-consideration
+summary: Dropping RSOO-containing messages is only effective if the DHCP server's response to the client is authenticated per RFC 3315 Section 21 or a similar mechanism; without authentication, a malicious node can modify the server's response in transit and the client cannot detect it.
+section: "7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

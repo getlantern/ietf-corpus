@@ -1,0 +1,10 @@
+document: rfc-6407
+kind: normative-requirement
+summary: The GCKS MUST NOT adjust its internal state (e.g., keeping a record of the GM) until it receives a message with Nr included properly in the HASH payload, ensuring that replayed GROUPKEY-PULL messages cannot alter group state without confirmed GM liveness.
+section: "3.2"
+rfc2119_level: MUST NOT
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
