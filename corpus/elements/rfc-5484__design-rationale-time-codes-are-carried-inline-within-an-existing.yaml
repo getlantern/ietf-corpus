@@ -1,0 +1,9 @@
+document: rfc-5484
+kind: design-rationale
+summary: Time-codes are carried inline within an existing RTP stream rather than as a separate RTP stream because the data rate is so low that a dedicated stream would be wasteful. Inline packing also preserves backwards compatibility with gateways already handling dual-stream sessions.
+section: "8"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

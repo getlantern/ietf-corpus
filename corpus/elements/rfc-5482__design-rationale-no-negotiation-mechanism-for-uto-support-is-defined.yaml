@@ -1,0 +1,8 @@
+document: rfc-5482
+kind: design-rationale
+summary: No negotiation mechanism for UTO support is defined during the three-way handshake. Studies showed only 3% of connections fail with unknown TCP options, and those failures result from non-compliant stacks already violating RFC 1122's requirement to ignore unknown options, so the failure rate does not warrant a negotiation round-trip.
+section: "4.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

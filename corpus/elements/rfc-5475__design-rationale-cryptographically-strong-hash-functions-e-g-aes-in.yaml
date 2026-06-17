@@ -1,0 +1,9 @@
+document: rfc-5475
+kind: design-rationale
+summary: Cryptographically strong hash functions (e.g., AES in CBC mode, MD5/SHA1 with private initial vector) are the ideal choice for security but are 7-10 times slower than non-cryptographic functions. Because not all PSAMP Devices can apply them at line rate, the specification mandates the weaker BOB function while encouraging cryptographic functions where feasible.
+section: 6.2.4
+topics:
+    - measurement
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5484
+kind: design-rationale
+summary: The initial mapping is not placed in SDP because SDP would need knowledge of the RTP random offset, which is undesirable. Embedding the mapping in all RTCP sender reports is considered sufficient; without time-codes, audio-video sync would also be unavailable.
+section: "8"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-5482
+kind: design-rationale
+summary: The recommended formula selects the maximum of the two endpoints' advertised user timeout values so that the connection survives longer periods without connectivity. The endpoint that advertised the lower value can still close or abort at will, so choosing the maximum does not prevent it from releasing state early.
+section: "3.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

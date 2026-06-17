@@ -1,0 +1,9 @@
+document: rfc-5480
+kind: design-rationale
+summary: The specifiedCurve (SpecifiedECDomain) choice is prohibited in PKIX because allowing arbitrary curve specifications would be a security risk and harm interoperability; only well-known namedCurve OIDs are permitted. Implementers needing specifiedCurve should use the X9.62 ASN.1 module directly.
+section: 2.1.1
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

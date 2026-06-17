@@ -1,0 +1,9 @@
+document: rfc-5487
+kind: security-consideration
+summary: Authentication-only cipher suites with NULL encryption (TLS_PSK_WITH_NULL_SHA256, TLS_PSK_WITH_NULL_SHA384, etc.) do not support confidentiality. Care should be taken not to send sensitive information such as passwords over connections protected with these NULL-encryption cipher suites.
+section: "4"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

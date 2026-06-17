@@ -1,0 +1,8 @@
+document: rfc-5482
+kind: interoperability-note
+summary: Some TCP implementations (e.g., BSD) apply a different abort policy for TCP keep-alives than for user data, so keep-alives may abort a connection that a long UTO was intended to sustain. Requiring the keep-alive timer to exceed USER_TIMEOUT resolves this conflict.
+section: "4.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
