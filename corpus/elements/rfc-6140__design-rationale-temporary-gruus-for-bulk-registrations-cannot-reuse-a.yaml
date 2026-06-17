@@ -1,0 +1,10 @@
+document: rfc-6140
+kind: design-rationale
+summary: Temporary GRUUs for bulk registrations cannot reuse a single invariant SIP-PBX identifier, because that would allow any party to correlate multiple UAs as being behind the same SIP-PBX, violating GRUU anonymity. The SSP therefore provides a per-registration 'temp-gruu-cookie' that the SIP-PBX uses to mint GRUUs that only the SSP can decode.
+section: 7.1.2
+topics:
+    - sip
+    - realtime
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

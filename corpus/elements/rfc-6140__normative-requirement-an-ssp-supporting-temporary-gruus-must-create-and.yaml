@@ -1,0 +1,11 @@
+document: rfc-6140
+kind: normative-requirement
+summary: An SSP supporting temporary GRUUs MUST create and store an asymmetric RSA key pair {K_e1, K_e2}; K_e1 is kept secret by the SSP while K_e2 is shared with SIP-PBXes via provisioning. The SSP MUST include a 'temp-gruu-cookie' parameter on all 'Contact' header fields with a 'bnc' parameter in 200-class REGISTER responses.
+section: 7.1.2.1
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

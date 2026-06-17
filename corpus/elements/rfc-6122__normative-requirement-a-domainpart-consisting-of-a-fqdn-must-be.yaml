@@ -1,0 +1,9 @@
+document: rfc-6122
+kind: normative-requirement
+summary: A domainpart consisting of a FQDN MUST be an internationalized domain name per IDNA2003; each label MUST survive the ToASCII operation with UseSTD3ASCIIRules set (forbidding ASCII characters other than letters, digits, and hyphens). If an ACE label is received, the application SHOULD convert it to an internationalized label via ToUnicode before sending over an XMPP network.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

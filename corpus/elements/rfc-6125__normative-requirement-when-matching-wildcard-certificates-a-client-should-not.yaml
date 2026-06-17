@@ -1,0 +1,12 @@
+document: rfc-6125
+kind: normative-requirement
+summary: When matching wildcard certificates, a client SHOULD NOT match a wildcard that comprises a label other than the left-most label. A wildcard as the entire left-most label (e.g., *.example.com) SHOULD NOT match against anything but the left-most label of the reference identifier, so it matches foo.example.com but not bar.foo.example.com.
+section: 6.4.3
+rfc2119_level: SHOULD NOT
+topics:
+    - tls
+    - pkix
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

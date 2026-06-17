@@ -1,0 +1,11 @@
+document: rfc-6140
+kind: normative-requirement
+summary: Systems MUST include an easy mechanism to update the RSA public key provided to the SIP-PBX. The SSP SHOULD retain the retired RSA key for a grace period and attempt decryption with it when decryption under the new key fails. SIP-PBXes MUST discard the retired key immediately and use only the new key.
+section: "10"
+rfc2119_level: MUST
+topics:
+    - sip
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

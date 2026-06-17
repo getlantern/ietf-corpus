@@ -1,0 +1,9 @@
+document: rfc-6140
+kind: security-consideration
+summary: SSP processing of requests containing temporary GRUUs involves an RSA decryption operation, which can be exploited in Denial-of-Service attacks to amplify CPU load. Standard DoS mitigations such as rate-limiting received-message processing should be applied.
+section: "10"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6134
+kind: security-consideration
+summary: Matching values against externally stored lists can be I/O- and CPU-intensive, enabling denial-of-service attacks against the mail server or list service. Implementations SHOULD use protocol-specific search features (e.g., LDAP search filters) to minimize network traffic and server load rather than retrieving entire lists.
+section: "3"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

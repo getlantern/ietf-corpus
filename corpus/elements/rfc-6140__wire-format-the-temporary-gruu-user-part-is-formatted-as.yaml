@@ -1,0 +1,10 @@
+document: rfc-6140
+kind: wire-format
+summary: The temporary GRUU user part is formatted as 'tgruu.' followed by base64(E) followed by '.' followed by base64(PA), where E = RSA-Encrypt(K_e2, base64dec(SSP-cookie) || D) and PA = HMAC(PK_a, E). All base64 encoding uses RFC 4648 Section 4 with trailing '=' stripped on encoding.
+section: 7.1.2.2
+topics:
+    - sip
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

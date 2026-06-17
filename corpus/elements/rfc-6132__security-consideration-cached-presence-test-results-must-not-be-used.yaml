@@ -1,0 +1,10 @@
+document: rfc-6132
+kind: security-consideration
+summary: Cached presence test results MUST NOT be used outside the context in which they were retrieved. For example, presence information cached for a script running on behalf of Adam MUST NOT be used to satisfy the same query in a script running on behalf of Cindy, because the presence server must independently determine Cindy's access rights.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
