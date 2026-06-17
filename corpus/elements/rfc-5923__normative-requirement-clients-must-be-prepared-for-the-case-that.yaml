@@ -1,0 +1,10 @@
+document: rfc-5923
+kind: normative-requirement
+summary: Clients MUST be prepared for the case that a previously aliased connection no longer exists; in such a case, a new connection MUST be opened to the resolved address and the alias table updated. For CANCEL or ACK-to-non-2xx sent after the connection closed, the client SHOULD open a new connection and MAY insert it into the alias table.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - sip
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

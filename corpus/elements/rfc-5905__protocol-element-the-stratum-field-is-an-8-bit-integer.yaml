@@ -1,0 +1,8 @@
+document: rfc-5905
+kind: protocol-element
+summary: 'The Stratum field is an 8-bit integer: 0 = unspecified/invalid (KoD packets), 1 = primary server synchronized directly to a reference clock, 2–15 = secondary servers via NTP, 16 = unsynchronized, 17–255 = reserved. Received stratum 0 is mapped to MAXSTRAT (16) internally; p.stratum values >= MAXSTRAT are mapped to 0 in transmitted packets.'
+section: "7.3"
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

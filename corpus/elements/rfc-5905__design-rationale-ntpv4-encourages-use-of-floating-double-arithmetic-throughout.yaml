@@ -1,0 +1,8 @@
+document: rfc-5905
+kind: design-rationale
+summary: NTPv4 encourages use of floating double arithmetic throughout the implementation. First-order timestamp differences (which are small relative to the seconds magnitude) are converted to floating double for further processing, restoring the unambiguous offset/delay computation range from 34 years (64-bit integer) to 68 years without loss of precision.
+section: "8"
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5923
+kind: state-machine
+summary: 'Client alias formation: (1) perform RFC 3263 resolution on next-hop URI; (2) if no existing alias matches, open TLS connection and authenticate peer certificate per RFC 5922; (3) populate alias table with {IP, port, transport, identity, descriptor}; (4) for subsequent requests, reuse the connection if RFC 3263 resolution yields a matching alias table row AND the URI matches a cached identity; (5) if connection is gone, open a new one and update table.'
+section: "8.1"
+topics:
+    - sip
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

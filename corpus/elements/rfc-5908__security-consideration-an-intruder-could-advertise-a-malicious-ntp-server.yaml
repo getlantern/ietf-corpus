@@ -1,0 +1,9 @@
+document: rfc-5908
+kind: security-consideration
+summary: An intruder could advertise a malicious NTP server via this option, adversely affecting clock synchronization on the network. This is critical because many security protocols depend on time synchronization; for example, an attacker could break SEND-enabled node connectivity (RFC 3971) by skewing their clocks.
+section: "6"
+topics:
+    - ntp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

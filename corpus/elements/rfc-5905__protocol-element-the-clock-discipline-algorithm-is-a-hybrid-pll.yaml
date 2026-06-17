@@ -1,0 +1,8 @@
+document: rfc-5905
+kind: protocol-element
+summary: The clock discipline algorithm is a hybrid PLL/FLL that controls both time and frequency of the system clock (modeled as a VFO). The poll exponent tau ranges from MINPOLL (4, 16 s) to MAXPOLL (17, 36 h); the loop time constant T_c = 2^tau is dynamically adjusted. The adjtime() function is used for small adjustments; settimeofday() for adjustments exceeding the step threshold.
+section: "11.3"
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

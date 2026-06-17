@@ -1,0 +1,9 @@
+document: rfc-5923
+kind: state-machine
+summary: 'Server alias formation: on receipt of a request with "alias" in the topmost Via, (1) authenticate the client certificate per RFC 5922 Section 7.4; (2) if client presented no certificate, treat as if "alias" not present and do not update alias table; (3) otherwise cache client identities, populate {IP from "received" param, port from Via sent-by or 5061 default, transport, descriptor} in alias table; (4) reuse the connection for subsequent outbound requests when both RFC 3263 resolved address and URI identity match the cached row.'
+section: "8.2"
+topics:
+    - sip
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

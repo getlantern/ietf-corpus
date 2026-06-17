@@ -1,0 +1,8 @@
+document: rfc-5905
+kind: design-rationale
+summary: NTP uses UDP rather than TCP because retransmissions in a reliable transport protocol would increase measured delay values and introduce errors; the returnable-time on-wire protocol depends only on measured clock offsets and is inherently tolerant of lost or reordered packets without needing retransmission.
+section: "1"
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

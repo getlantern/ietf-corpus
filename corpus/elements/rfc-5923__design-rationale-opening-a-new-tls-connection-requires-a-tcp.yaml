@@ -1,0 +1,9 @@
+document: rfc-5923
+kind: design-rationale
+summary: Opening a new TLS connection requires a TCP three-way handshake, multiple round trips for TLS negotiation, expensive asymmetric cryptography, and certificate verification. Reusing an existing connection for requests in both directions avoids this overhead, preventing CPU saturation and reducing latency for subsequent in-dialog requests such as re-INVITE and BYE.
+section: "4"
+topics:
+    - sip
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

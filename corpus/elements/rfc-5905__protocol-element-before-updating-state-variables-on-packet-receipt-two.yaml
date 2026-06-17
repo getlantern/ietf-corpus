@@ -1,0 +1,9 @@
+document: rfc-5905
+kind: protocol-element
+summary: Before updating state variables on packet receipt, two sanity checks detect duplicate/replay packets (transmit timestamp t3 matches state variable T3) and bogus packets (origin timestamp t1 does not match state variable T1). To resist replay of the last transmitted packet, the xmt state variable is set to zero immediately after a successful bogus check.
+section: "8"
+topics:
+    - ntp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

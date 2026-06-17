@@ -1,0 +1,10 @@
+document: rfc-5923
+kind: design-rationale
+summary: Connection reuse is restricted to TLS (over TCP or SCTP) because TLS mutual certificate exchange authoritatively establishes the identities of both communicating parties. Plain TCP and SCTP connections carry no such guarantee, leaving them vulnerable to inadvertent or malicious connection hijacking when reused in the backwards direction.
+section: "3"
+topics:
+    - sip
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5913
+kind: state-machine
+summary: 'PKC certification path processing maintains a single state variable permitted-clearances, initialized to user input or all-clearances. The variable is updated by processing the trust anchor''s ACC extension and each intermediate PKC''s ACC extension. At wrap-up, the end PKC''s Clearance is intersected with permitted-clearances to yield effective-clearance. Outputs: effective-clearance and success/failure with reason code.'
+section: "4"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5905
+kind: security-consideration
+summary: 'NTP is vulnerable to replay attacks: replaying a client request packet causes the server to generate a fresh response with new T2 and T3 values, producing incorrect offset and delay at the client. This can be mitigated by zeroing the xmt state variable after computing offset and delay, ensuring a replayed response is rejected as bogus.'
+section: "15"
+topics:
+    - ntp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

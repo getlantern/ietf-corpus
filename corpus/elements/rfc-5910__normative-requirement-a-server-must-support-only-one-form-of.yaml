@@ -1,0 +1,10 @@
+document: rfc-5910
+kind: normative-requirement
+summary: A server MUST support only one form of interface (DS Data Interface or Key Data Interface) within a single command or response; <secDNS:dsData> and <secDNS:keyData> MUST NOT be mixed, except when <secDNS:keyData> is a child of <secDNS:dsData> for server validation. The server MUST return EPP error 2306 if it receives a command using an unsupported interface.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

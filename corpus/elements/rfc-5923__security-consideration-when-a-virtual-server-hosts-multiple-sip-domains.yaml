@@ -1,0 +1,10 @@
+document: rfc-5923
+kind: security-consideration
+summary: When a virtual server hosts multiple SIP domains on the same IP address and port, a cached aliased connection authenticated for domain A MUST NOT be reused for requests destined to domain B, even if RFC 3263 resolution for domain B resolves to the same IP/port tuple. The "Destination Identity" column in the alias table enforces this per-domain isolation.
+section: "9.3"
+topics:
+    - sip
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

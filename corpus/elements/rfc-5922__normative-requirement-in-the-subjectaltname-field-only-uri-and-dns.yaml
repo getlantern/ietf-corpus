@@ -1,0 +1,11 @@
+document: rfc-5922
+kind: normative-requirement
+summary: In the subjectAltName field, only URI and DNS types are acceptable for encoding a SIP domain identity. For URI type, the scheme must be 'sip' and no userinfo component (no '@') may be present; if a userpart is present, the implementation MUST NOT accept it as a SIP domain identity.
+section: "7.1"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - pkix
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

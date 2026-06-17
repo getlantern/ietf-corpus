@@ -1,0 +1,9 @@
+document: rfc-5905
+kind: normative-requirement
+summary: Upon receiving a KoD packet with kiss code DENY or RSTR, the client MUST demobilize all associations to that server and stop sending packets to it. Upon receiving kiss code RATE, the client MUST immediately reduce its polling interval to that server and continue reducing it each time a RATE code is received.
+section: "7.4"
+rfc2119_level: MUST
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,11 @@
+document: rfc-5923
+kind: normative-requirement
+summary: A proxy hosting multiple virtual domains MUST NOT open a connection on behalf of one domain and reuse it to send a new request on behalf of another domain. Separate alias tables (or equivalent bookkeeping) SHOULD be maintained per virtual domain to preserve the boundary between domains.
+section: "9.3"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

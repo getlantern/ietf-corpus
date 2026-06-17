@@ -1,0 +1,11 @@
+document: rfc-5923
+kind: normative-requirement
+summary: Before closing a TLS connection, the initiating party MUST either wait for any outstanding SIP transactions to complete or explicitly abandon them. After sending a TLS closure alert, it MUST discard TLS messages until receiving the peer's closure alert. The receiver of a closure alert MUST NOT start any new SIP transactions.
+section: "8.3"
+rfc2119_level: MUST
+topics:
+    - sip
+    - tls
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

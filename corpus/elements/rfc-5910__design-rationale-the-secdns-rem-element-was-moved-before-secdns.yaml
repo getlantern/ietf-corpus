@@ -1,0 +1,9 @@
+document: rfc-5910
+kind: design-rationale
+summary: 'The <secDNS:rem> element was moved before <secDNS:add> in the XML schema to conform to EPP order semantics, enabling a replace pattern: sending <secDNS:rem><secDNS:all>true</secDNS:all></secDNS:rem> followed by <secDNS:add> atomically replaces all DNSSEC data. This replaced the ambiguous <secDNS:chg> replace behavior from RFC 4310.'
+section: 5.2.5
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
