@@ -1,0 +1,9 @@
+document: rfc-6625
+kind: design-rationale
+summary: The (C-S,C-*) wildcard is restricted to SSM group addresses because the use case is binding all SSM channels from a given source to a single P-tunnel. Using it for ASM would create ambiguity with shared-tree semantics where the source is not authoritative.
+section: "4.3"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

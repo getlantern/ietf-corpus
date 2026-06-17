@@ -1,0 +1,9 @@
+document: rfc-6630
+kind: design-rationale
+summary: The pRK is derived from the DSRK (not EMSK) when the peer is in a visited realm, and if the peer has previously authenticated via ERP or ERP/AAK the DSRK SHOULD be directly reused. This avoids redundant key derivation while preserving domain isolation when roaming.
+section: "4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

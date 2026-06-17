@@ -1,0 +1,9 @@
+document: rfc-6638
+kind: normative-requirement
+summary: 'Servers MUST automatically resolve conflicts with inconsequential scheduling changes when If-Schedule-Tag-Match is present: if the header value matches the current CALDAV:schedule-tag, the server MUST merge any ATTENDEE property changes for other attendees into the submitted resource. If the values do not match, the server MUST return 412 Precondition Failed.'
+section: 3.2.10.1
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

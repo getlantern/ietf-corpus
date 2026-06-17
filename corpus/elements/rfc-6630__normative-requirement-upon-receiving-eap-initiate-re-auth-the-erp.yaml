@@ -1,0 +1,9 @@
+document: rfc-6630
+kind: normative-requirement
+summary: Upon receiving EAP-Initiate/Re-auth, the ERP/AAK server MUST use the keyName from the keyName-NAI to look up the rIK, check message integrity and freshness, verify the peer's identity via the username portion, and authorize the specified CAP. Any failure MUST result in EAP-Finish/Re-auth with Result flag set to '1' (Failure).
+section: "3"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

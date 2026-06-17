@@ -1,0 +1,9 @@
+document: rfc-6638
+kind: normative-requirement
+summary: When an Organizer creates a scheduling object resource, the server MUST inspect each ATTENDEE property and send an iTIP REQUEST to every attendee whose SCHEDULE-AGENT is SERVER (the default). The server MUST add or update SCHEDULE-STATUS parameters on each ATTENDEE property to reflect delivery status, and MUST NOT set SCHEDULE-STATUS on attendees for which no delivery was attempted.
+section: 3.2.1.1
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

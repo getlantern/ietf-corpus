@@ -1,0 +1,10 @@
+document: rfc-6625
+kind: design-rationale
+summary: Wildcards in S-PMSI A-D route NLRIs were introduced because the base MVPN specifications required one S-PMSI A-D route per customer flow, with no way to bind multiple flows to a single tunnel in one advertisement or to designate a selective P-tunnel as a default. This document eliminates those restrictions by allowing C-S, C-G, or both to be replaced by a wildcard (C-*), enabling a single route to represent multiple or all customer flows.
+section: "1"
+topics:
+    - multicast
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

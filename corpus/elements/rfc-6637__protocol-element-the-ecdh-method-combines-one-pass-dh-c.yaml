@@ -1,0 +1,8 @@
+document: rfc-6637
+kind: protocol-element
+summary: The ECDH method combines One-Pass DH C(1,1,ECC CDH) with cofactor assumed to be 1, the Section 7 KDF, and AES Key Wrap (RFC 3394). The sender generates an ephemeral key pair, derives Z via KDF, wraps the session key with AES Key Wrap, and outputs (MPI(ephemeral point) || len(C) || C).
+section: "8"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

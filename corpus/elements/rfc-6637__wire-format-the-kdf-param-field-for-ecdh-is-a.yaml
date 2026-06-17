@@ -1,0 +1,8 @@
+document: rfc-6637
+kind: wire-format
+summary: 'The KDF Param field for ECDH is a concatenation of: curve OID (1-octet length + OID bytes), 1-octet public key algorithm ID, KDF parameters (1-octet size + 0x01 + hash ID + KEK alg ID), 20 octets of UTF-8 ''Anonymous Sender    '', and 20 octets of recipient key fingerprint. Total size is 54 or 51 octets for the three defined curves.'
+section: "8"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
