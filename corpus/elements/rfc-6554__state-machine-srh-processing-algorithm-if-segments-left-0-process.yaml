@@ -1,0 +1,9 @@
+document: rfc-6554
+kind: state-machine
+summary: 'SRH processing algorithm: if Segments Left = 0, process next header. Otherwise compute n from (((Hdr Ext Len * 8) - Pad - (16 - CmprE)) / (16 - CmprI)) + 1; if Segments Left > n, send ICMP Parameter Problem and discard; else decrement Segments Left, compute index i = n - Segments Left, check for multicast or loop, then swap IPv6 Destination with Address[i] and decrement Hop Limit before resubmitting to IPv6 module.'
+section: "4.2"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

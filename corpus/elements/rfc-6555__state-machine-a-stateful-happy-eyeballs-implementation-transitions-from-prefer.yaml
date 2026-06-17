@@ -1,0 +1,9 @@
+document: rfc-6555
+kind: state-machine
+summary: A stateful Happy Eyeballs implementation transitions from 'prefer IPv6' to 'prefer IPv4' when an IPv6 connection attempt fails within the timeout period. It returns to 'prefer IPv6' after 10 minutes (by flushing state) and retrying; if IPv6 succeeds again, it remains in the 'prefer IPv6' state. State is reset on network re-initialization.
+section: "4.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

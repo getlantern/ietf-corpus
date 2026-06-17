@@ -1,0 +1,9 @@
+document: rfc-6550
+kind: design-rationale
+summary: RPL prohibits 'greedy' parent selection (a node moving to a deeper Rank to gain additional parents) and forbids processing DIOs from sub-DODAG nodes, preventing the count-to-infinity oscillation that would otherwise arise when two nodes each attempt to optimize against the other's Rank.
+section: 3.7.1
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

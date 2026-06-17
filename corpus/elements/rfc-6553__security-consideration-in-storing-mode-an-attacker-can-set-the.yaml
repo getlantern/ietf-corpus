@@ -1,0 +1,9 @@
+document: rfc-6553
+kind: security-consideration
+summary: 'In Storing mode, an attacker can set the Forwarding-Error ''F'' flag to cause RPL routers to discard valid Downward routing state, disrupting downward traffic delivery. Implementations MAY rate-limit such discards to no more than MAX_RPL_OPTION_FORWARD_ERRORS (recommended: 20) per hour. Non-Storing mode is immune since only the LBR holds Downward state.'
+section: "5.2"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6554
+kind: wire-format
+summary: 'The RPL Source Routing Header (SRH) contains: Next Header (8-bit), Hdr Ext Len (8-bit, in 8-octet units excluding first 8 octets), Routing Type (8-bit, value 3), Segments Left (8-bit), CmprI (4-bit), CmprE (4-bit), Pad (4-bit), Reserved (20-bit), and a variable-length Addresses[1..n] vector where each element in [1..n-1] has size (16 - CmprI) octets and element [n] has size (16 - CmprE) octets.'
+section: "3"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

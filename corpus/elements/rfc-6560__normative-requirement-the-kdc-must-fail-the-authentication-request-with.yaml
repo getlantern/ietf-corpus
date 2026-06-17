@@ -1,0 +1,9 @@
+document: rfc-6560
+kind: normative-requirement
+summary: The KDC MUST fail the authentication request with KDC_ERR_INVALID_HASH_ALG (94) if hashed OTP values are required but the hashAlg field is absent or non-conforming; with KDC_ERR_INVALID_ITERATION_COUNT (95) if the iterationCount is below the value specified in PA-OTP-CHALLENGE; and with KDC_ERR_PIN_REQUIRED (97) if a separate PIN is required but otp-pin was not included.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

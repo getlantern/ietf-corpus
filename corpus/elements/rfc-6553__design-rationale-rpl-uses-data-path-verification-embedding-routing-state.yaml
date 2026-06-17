@@ -1,0 +1,8 @@
+document: rfc-6553
+kind: design-rationale
+summary: RPL uses data-path verification (embedding routing state in each forwarded datagram) rather than frequent control-plane beaconing to detect and resolve topology inconsistencies. This bounds control traffic relative to data traffic — there is no need to fix routing issues in the absence of data traffic.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

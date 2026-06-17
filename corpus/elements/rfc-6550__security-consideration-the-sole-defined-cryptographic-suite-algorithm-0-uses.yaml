@@ -1,0 +1,10 @@
+document: rfc-6550
+kind: security-consideration
+summary: The sole defined cryptographic suite (Algorithm=0) uses CCM with AES-128 for encryption and MAC, and RSA with SHA-256 for signatures. Security Level (LVL) selects among MAC-only and encrypt-then-MAC variants at 32-bit or 64-bit MAC lengths; replay protection uses a Counter field that can be either a monotonic counter or a timestamp.
+section: "6.1"
+topics:
+    - security
+    - crypto
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

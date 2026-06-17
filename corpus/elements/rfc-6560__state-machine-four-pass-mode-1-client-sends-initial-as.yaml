@@ -1,0 +1,8 @@
+document: rfc-6560
+kind: state-machine
+summary: 'Four-pass mode: (1) client sends initial AS-REQ → (2) KDC returns KRB-ERROR with PA-OTP-CHALLENGE → (3) client sends second AS-REQ with PA-OTP-REQUEST (encData = encrypted nonce) → (4) KDC returns AS-REP encrypted with Reply Key. Two-pass mode collapses steps 1–3: client includes PA-OTP-REQUEST with encData = encrypted timestamp in the initial AS-REQ without receiving a challenge.'
+section: "1.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

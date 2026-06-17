@@ -1,0 +1,9 @@
+document: rfc-6553
+kind: interoperability-note
+summary: To avoid fragmentation due to tunnel header expansion, deployments should employ MTU sizes of at least 1280 + 40 (outer IP header) + RPL_OPTION_MAX_SIZE bytes. On 6LoWPAN links limited to 1280 octets this may not be achievable, but most LLN traffic is much smaller than the MTU, limiting performance impact.
+section: "4"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

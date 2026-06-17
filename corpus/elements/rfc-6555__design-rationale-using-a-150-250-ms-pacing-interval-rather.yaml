@@ -1,0 +1,9 @@
+document: rfc-6555
+kind: design-rationale
+summary: Using a 150-250 ms pacing interval rather than aggressive millisecond-scale timeouts is chosen because aggressive timeouts create billable traffic on some networks, create state in middleboxes (firewalls, IDS, NATs), and consume shared IPv4 ports; the longer interval still achieves imperceptible delay for users.
+section: "5.5"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

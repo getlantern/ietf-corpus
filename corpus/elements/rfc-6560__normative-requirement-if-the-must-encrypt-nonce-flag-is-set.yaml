@@ -1,0 +1,10 @@
+document: rfc-6560
+kind: normative-requirement
+summary: If the must-encrypt-nonce flag is set in the OTP-TOKENINFO, the OTP value MUST be used to generate the Client Key and Reply Key as described in Section 3.6 and MUST NOT be included in the otp-value field of the PA-OTP-REQUEST. If the flag is not set, the OTP value MUST be included in otp-value and MUST NOT be used in key derivation.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6554
+kind: design-rationale
+summary: The SRH enforces a strict source route policy (every IPv6 hop must be specified) and is confined to the RPL routing domain to address the security vulnerabilities that led to RH0 deprecation in RFC 5095. Loop detection per-packet is required despite significant processing overhead because it is necessary to mitigate the bandwidth exhaustion attacks that originally motivated RH0 deprecation.
+section: "2"
+topics:
+    - ip
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

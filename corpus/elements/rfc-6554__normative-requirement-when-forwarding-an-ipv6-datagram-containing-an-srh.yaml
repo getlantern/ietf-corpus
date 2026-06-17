@@ -1,0 +1,11 @@
+document: rfc-6554
+kind: normative-requirement
+summary: When forwarding an IPv6 datagram containing an SRH with a non-zero Segments Left value, if the IPv6 Destination Address is not on-link, a router MUST drop the datagram and SHOULD send an ICMPv6 Destination Unreachable (Type 1) message with Code 7 to the packet's Source Address.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

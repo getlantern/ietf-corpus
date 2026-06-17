@@ -1,0 +1,10 @@
+document: rfc-6554
+kind: normative-requirement
+summary: When generating an SRH and the router is the source of the original packet and the destination is within the same RPL routing domain, the router SHOULD include the SRH directly within the original packet. Otherwise, the router MUST use IPv6-in-IPv6 tunneling (RFC 2473) and place the SRH in the tunnel header.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

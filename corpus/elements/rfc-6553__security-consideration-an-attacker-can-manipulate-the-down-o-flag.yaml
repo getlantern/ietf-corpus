@@ -1,0 +1,9 @@
+document: rfc-6553
+kind: security-consideration
+summary: 'An attacker can manipulate the Down ''O'' flag and SenderRank field to falsely signal a DAG inconsistency, causing targeted RPL routers to reset their Trickle timers and flood the network with DIO messages. Implementations MAY rate-limit such resets to no more than MAX_RPL_OPTION_RANK_ERRORS (recommended: 20) per hour.'
+section: "5.1"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

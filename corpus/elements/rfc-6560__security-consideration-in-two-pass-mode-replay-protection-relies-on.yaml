@@ -1,0 +1,8 @@
+document: rfc-6560
+kind: security-consideration
+summary: In two-pass mode, replay protection relies on an external OTP server or timestamp replay cache rather than a KDC-generated nonce. OTPs generated solely from a client-generated challenge (without combining with time or counter) SHOULD NOT be supported in two-pass mode due to inability to detect replay.
+section: "6.4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

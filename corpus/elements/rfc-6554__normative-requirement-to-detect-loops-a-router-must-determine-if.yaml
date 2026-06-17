@@ -1,0 +1,11 @@
+document: rfc-6554
+kind: normative-requirement
+summary: To detect loops, a router MUST determine if the SRH includes multiple addresses assigned to any of its interfaces. If such addresses appear more than once separated by at least one address not assigned to that router, the router MUST drop the packet and SHOULD send an ICMPv6 Parameter Problem, Code 0, to the Source Address.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

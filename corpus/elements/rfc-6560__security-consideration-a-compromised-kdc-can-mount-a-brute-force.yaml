@@ -1,0 +1,9 @@
+document: rfc-6560
+kind: security-consideration
+summary: A compromised KDC can mount a brute-force attack against short OTP values by iterating Client Key candidates and testing decryption of encData. Use of an iteration count in key derivation makes brute-force computationally infeasible within the OTP lifetime. Clients SHOULD choose an iteration count accordingly.
+section: "6.5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
