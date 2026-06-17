@@ -1,0 +1,8 @@
+document: rfc-6206
+kind: state-machine
+summary: 'The Trickle algorithm defines six rules: (1) on start, set I in [Imin, Imax]; (2) on interval begin, reset c=0 and pick t randomly from [I/2, I); (3) on consistent reception, increment c; (4) at time t, transmit only if c < k; (5) on interval expiry, double I up to Imax; (6) on inconsistent reception with I > Imin, reset I to Imin and begin a new interval.'
+section: "4.2"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

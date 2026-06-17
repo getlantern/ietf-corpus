@@ -1,0 +1,9 @@
+document: rfc-6184
+kind: design-rationale
+summary: Application-layer fragmentation (FUs) was chosen over IP-layer fragmentation to support NAL units exceeding 64 KB (possible in HD video with limited slice counts), and to enable per-fragment forward error correction. IP fragmentation cannot be controlled at the application layer and is generally avoided in modern networks.
+section: "5.8"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

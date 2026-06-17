@@ -1,0 +1,8 @@
+document: rfc-6213
+kind: design-rationale
+summary: The solution is to have each IS-IS router explicitly advertise, via a new TLV in its IIHs, which topologies/protocols have BFD enabled on that interface. This allows a neighbor to distinguish 'BFD not supported' from 'BFD enabled but session not yet UP', enabling correct reaction to forwarding failures.
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

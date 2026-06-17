@@ -1,0 +1,9 @@
+document: rfc-6184
+kind: wire-format
+summary: 'FU-A (type 28) payload: 1-octet FU indicator (F|NRI|Type=28), 1-octet FU header (S|E|R|Type), then fragmentation payload. FU-B (type 29) is identical but includes an additional 16-bit DON field (network byte order) between the FU header and payload. The FU header S bit marks the start and E bit marks the end of a fragmented NAL unit.'
+section: "5.8"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

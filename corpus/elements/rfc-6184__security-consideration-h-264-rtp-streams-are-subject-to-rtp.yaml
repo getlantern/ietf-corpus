@@ -1,0 +1,10 @@
+document: rfc-6184
+kind: security-consideration
+summary: H.264 RTP streams are subject to RTP security considerations (RFC 3550); SRTP (RFC 3711) SHOULD be used to provide confidentiality, integrity, and authentication. MANEs that manipulate RTP payloads must be trusted entities within SRTP-protected sessions, as they require access to the media content. The F bit can be used by MANEs to signal detected bit errors.
+section: "9"
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

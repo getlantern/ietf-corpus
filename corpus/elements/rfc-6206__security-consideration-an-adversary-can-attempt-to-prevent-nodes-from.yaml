@@ -1,0 +1,9 @@
+document: rfc-6206
+kind: security-consideration
+summary: An adversary can attempt to prevent nodes from reaching consistency by sending spoofed 'consistent' messages that suppress a node's transmissions, keeping it unable to notify neighbors of an inconsistency. Authenticated messages or a transitive consistency model mitigate this; additionally, because Trickle operates on shared broadcast media, an adversary suppressing node A must itself send messages inconsistent with A's neighbors, so it cannot simultaneously suppress A and hide the inconsistency from the network. Trickle should filter unicast messages to limit this attack surface.
+section: "8"
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

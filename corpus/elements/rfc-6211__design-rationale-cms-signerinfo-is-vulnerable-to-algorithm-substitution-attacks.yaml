@@ -1,0 +1,9 @@
+document: rfc-6211
+kind: design-rationale
+summary: CMS SignerInfo is vulnerable to algorithm substitution attacks because the digestAlgorithm and signatureAlgorithm fields are only implicitly protected rather than explicitly covered by the signature. X.509 certificates avoid this by duplicating the signature algorithm in TBSCertificate.signature, requiring validators to compare both; CMS had no equivalent mechanism before this document.
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

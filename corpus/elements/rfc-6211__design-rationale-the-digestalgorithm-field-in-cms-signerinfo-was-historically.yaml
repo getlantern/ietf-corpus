@@ -1,0 +1,9 @@
+document: rfc-6211
+kind: design-rationale
+summary: The digestAlgorithm field in CMS SignerInfo was historically given implicit protection by the convention that only one digest algorithm existed per hash value length and that the same digest algorithm was used for both content and signature digest. The anticipated arrival of SHA-3 variants producing identical-length outputs would break this implicit protection, motivating an explicit attribute.
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

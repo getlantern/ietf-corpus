@@ -1,0 +1,9 @@
+document: rfc-6211
+kind: design-rationale
+summary: 'RSA PKCS #1 v1.5 signatures encode the hash algorithm internally, making them inherently resistant to algorithm substitution. DSA was historically tied to SHA-1 by design. However, RSA-PSS and new multi-algorithm environments break these implicit protections, motivating an explicit attribute.'
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

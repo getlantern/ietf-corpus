@@ -1,0 +1,11 @@
+document: rfc-6188
+kind: design-rationale
+summary: The crypto suites retain HMAC-SHA1 with 160-bit authentication keys (rather than 192- or 256-bit keys) because HMAC-SHA1 has only 160 bits of internal state and larger keys provide no additional security. This also maximizes compatibility with existing SRTP implementations.
+section: "4"
+topics:
+    - crypto
+    - realtime
+    - rtp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6186
+kind: security-consideration
+summary: A malicious attacker with access to DNS data can cause MUAs to connect to attacker-chosen servers. In the absence of secure DNS, MUAs SHOULD verify that the SRV target FQDN matches the queried service domain; if not, SHOULD confirm with the user before connecting. When TLS is used, MUAs MUST apply RFC 6125 verification.
+section: "6"
+topics:
+    - email
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

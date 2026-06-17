@@ -1,0 +1,9 @@
+document: rfc-6213
+kind: design-rationale
+summary: RFC 5882 permits IS-IS adjacencies to form without a prior BFD session to allow mixed deployments. However, IS-IS hellos (IIHs) do not travel over IPv4/IPv6, so they do not share fate with IPv4/IPv6 forwarded data. A neighbor experiencing an IPv4 forwarding failure can still exchange IIHs, causing a restarting router to incorrectly assume BFD is unsupported and forward traffic through the broken path.
+section: "2"
+topics:
+    - routing
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6184
+kind: normative-requirement
+summary: Fragments of the same NAL unit MUST be sent in consecutive order with ascending RTP sequence numbers, with no other packets of the same RTP stream interleaved. A NAL unit MUST be reassembled in RTP sequence number order. The S and E bits MUST NOT both be set to 1 in the same FU header (a NAL unit MUST NOT be transmitted as a single FU).
+section: "5.8"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

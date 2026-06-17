@@ -1,0 +1,9 @@
+document: rfc-6184
+kind: design-rationale
+summary: The Decoding Order Number (DON) was introduced to support interleaved transmission, where NAL units are intentionally sent out of decoding order to improve error resilience — for example, transmitting reference frames earlier than their decoding position. Without DON, a receiver has no way to reconstruct correct decoding order from RTP sequence numbers alone.
+section: "13.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

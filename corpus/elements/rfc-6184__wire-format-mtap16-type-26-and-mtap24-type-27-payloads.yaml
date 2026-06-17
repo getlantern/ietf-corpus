@@ -1,0 +1,9 @@
+document: rfc-6184
+kind: wire-format
+summary: 'MTAP16 (type 26) and MTAP24 (type 27) payloads begin with a 16-bit DONB field. Each multi-time aggregation unit contains: 16-bit NAL unit size, 8-bit DOND, 16-bit (MTAP16) or 24-bit (MTAP24) timestamp offset, then the NAL unit. The DON of each unit equals (DONB + DOND) % 65536; the earliest aggregation unit''s timestamp offset MUST be zero.'
+section: 5.7.2
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

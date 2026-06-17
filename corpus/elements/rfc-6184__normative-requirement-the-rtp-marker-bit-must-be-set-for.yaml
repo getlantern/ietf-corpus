@@ -1,0 +1,10 @@
+document: rfc-6184
+kind: normative-requirement
+summary: The RTP marker bit MUST be set for the very last packet of each access unit. For aggregation packets, the marker bit MUST reflect the value the last aggregated NAL unit's marker bit would have if transported individually. Decoders MAY use this as an early end-of-access-unit indicator but MUST NOT rely on it.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

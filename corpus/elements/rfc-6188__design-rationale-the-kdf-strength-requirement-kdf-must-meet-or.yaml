@@ -1,0 +1,11 @@
+document: rfc-6188
+kind: design-rationale
+summary: The KDF strength requirement (KDF must meet or exceed cipher strength) is the reason a weaker PRF is prohibited with a stronger cipher. Using the same function for both encryption and KDF is natural but not required, to allow future alternative KDFs to be paired with these ciphers.
+section: "3.1"
+topics:
+    - crypto
+    - realtime
+    - rtp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

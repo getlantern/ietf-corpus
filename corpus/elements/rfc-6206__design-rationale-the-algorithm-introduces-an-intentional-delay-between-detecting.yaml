@@ -1,0 +1,8 @@
+document: rfc-6206
+kind: design-rationale
+summary: The algorithm introduces an intentional delay between detecting an inconsistency (resetting I to Imin) and responding to it (transmitting at time t). Immediately transmitting upon detecting inconsistency would cause a broadcast storm where many nodes respond simultaneously; the Trickle delay allows the suppression mechanism to scale the response across all node densities.
+section: "4.2"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

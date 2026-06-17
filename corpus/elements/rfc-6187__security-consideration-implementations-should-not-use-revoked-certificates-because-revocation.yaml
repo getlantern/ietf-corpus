@@ -1,0 +1,9 @@
+document: rfc-6187
+kind: security-consideration
+summary: Implementations SHOULD NOT use revoked certificates because revocation typically means critical authentication properties are no longer valid (e.g., private key compromise or mis-issuance). Attempted use of a revoked certificate SHOULD be logged with date, time, certificate identity, and apparent origin IP.
+section: "5"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
