@@ -1,0 +1,11 @@
+document: rfc-5696
+kind: design-rationale
+summary: PCN-marking must use the 11 (CE) codepoint because it is the only ECN codepoint guaranteed to be copied into the forwarded inner header upon decapsulation from an IP-in-IP or IPsec tunnel. This was the tightest constraint on the encoding choice.
+section: "4.3"
+topics:
+    - ecn
+    - diffserv
+    - ipsec
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

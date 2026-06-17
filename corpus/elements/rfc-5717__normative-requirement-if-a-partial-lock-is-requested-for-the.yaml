@@ -1,0 +1,10 @@
+document: rfc-5717
+kind: normative-requirement
+summary: If a partial lock is requested for the running datastore while the :confirmed-commit capability is active and a confirming commit has not yet been received, the lock MUST be denied with error-tag 'in-use' and error-app-tag 'outstanding-confirmed-commit'.
+section: 2.6.2
+rfc2119_level: MUST
+topics:
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5696
+kind: interoperability-note
+summary: If a packet marked CE (11) by end-to-end ECN enters the PCN-domain, the PCN-egress-node's reset of the ECN field to 00 violates RFC 3168's rule that CE marks must never be lost except via packet drop. Mitigations include tunneling, extended encoding, explicit signaling, or re-marking to a local DSCP.
+section: B
+topics:
+    - ecn
+    - diffserv
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

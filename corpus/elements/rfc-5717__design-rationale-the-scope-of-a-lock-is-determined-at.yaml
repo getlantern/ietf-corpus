@@ -1,0 +1,9 @@
+document: rfc-5717
+kind: design-rationale
+summary: The scope of a lock is determined at grant time and is not modified thereafter (except when nodes are deleted by the lock owner). This is explicitly chosen so that users can easily understand the exact scope of a lock, which is why partial locking should not be used as an authorization mechanism.
+section: "3"
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

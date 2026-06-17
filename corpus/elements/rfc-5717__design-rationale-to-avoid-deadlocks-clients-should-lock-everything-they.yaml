@@ -1,0 +1,10 @@
+document: rfc-5717
+kind: design-rationale
+summary: To avoid deadlocks, clients SHOULD lock everything they need in one <partial-lock> operation. If locking fails, the client MUST back off, release any previously acquired locks, and SHOULD retry after a randomized time interval.
+section: 2.4.1.2
+rfc2119_level: SHOULD
+topics:
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5712
+kind: design-rationale
+summary: 'The preempting node zeros its local bandwidth accounting for the soft preempted TE LSP immediately rather than waiting for the reroute to complete, creating a temporary under-provisioning condition. This is intentional: it frees capacity for the higher-priority LSP while the lower-priority LSP reroutes non-disruptively.'
+section: "6.1"
+topics:
+    - mpls
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

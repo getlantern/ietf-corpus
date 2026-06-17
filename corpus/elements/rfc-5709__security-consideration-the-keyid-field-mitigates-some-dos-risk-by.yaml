@@ -1,0 +1,9 @@
+document: rfc-5709
+kind: security-consideration
+summary: The KeyID field mitigates some DoS risk by allowing the receiver to select the correct SA directly rather than trying all configured SAs. However, an on-link adversary can still force expensive cryptographic operations by sending syntactically valid packets with invalid Authentication Data.
+section: "3.5"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

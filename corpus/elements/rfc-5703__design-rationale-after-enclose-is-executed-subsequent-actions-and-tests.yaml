@@ -1,0 +1,8 @@
+document: rfc-5703
+kind: design-rationale
+summary: After 'enclose' is executed, subsequent actions and tests operate on the newly created wrapper message rather than the original. Therefore, any 'replace' or similar actions should be executed before 'enclose' to affect the original message content.
+section: "6"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

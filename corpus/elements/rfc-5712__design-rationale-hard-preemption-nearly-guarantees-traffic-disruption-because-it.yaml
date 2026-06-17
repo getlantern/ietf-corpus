@@ -1,0 +1,10 @@
+document: rfc-5712
+kind: design-rationale
+summary: Hard preemption nearly guarantees traffic disruption because it tears down TE LSPs before reestablishment, even when reservation contention does not reflect actual data-plane congestion. Soft preemption was introduced to allow make-before-break rerouting, avoiding needless traffic loss when sufficient bandwidth exists for both LSPs.
+section: "3"
+topics:
+    - mpls
+    - qos
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

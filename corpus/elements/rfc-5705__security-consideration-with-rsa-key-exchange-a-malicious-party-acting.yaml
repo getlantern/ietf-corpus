@@ -1,0 +1,10 @@
+document: rfc-5705
+kind: security-consideration
+summary: With RSA key exchange, a malicious party acting as TLS server in one session and TLS client in another can cause both sessions to share the same TLS master secret. Applications using EKM must consider this; requiring Diffie-Hellman key exchange cipher suites may be advisable.
+section: "5"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

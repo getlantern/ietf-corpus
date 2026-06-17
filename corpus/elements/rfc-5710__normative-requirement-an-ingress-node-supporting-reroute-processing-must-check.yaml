@@ -1,0 +1,10 @@
+document: rfc-5710
+kind: normative-requirement
+summary: An ingress node supporting reroute processing MUST check received PathErr messages for reroute requests, MUST check for all three error code combinations, and MUST attempt to identify an alternate path avoiding the resource identified in ERROR_SPEC. If no alternate is found, the request MUST be discarded; if found, make-before-break procedures MUST be followed.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5702
+kind: wire-format
+summary: 'The RRSIG signature field for RSA/SHA-2 uses RSASSA-PKCS1-v1_5: the padded structure is (00 | 01 | FF* | 00 | prefix | hash) raised to the private exponent mod n. The FF octet is repeated until the total length equals the modulus length.'
+section: "3"
+topics:
+    - dns
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5717
+kind: design-rationale
+summary: XPath expressions are evaluated only once at lock time; the scope is maintained as a static set of nodes. If configuration changes would cause the XPath to return a different set, the lock scope is unaffected. This ensures the lock scope is deterministic and easily understood.
+section: 2.4.1
+topics:
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5722
+kind: design-rationale
+summary: The RFC 1858 mitigation for overlapping fragment attacks (dropping packets with fragment offset of 1) works for IPv4 but is ineffective for IPv6 because the fragmentable part of an IPv6 packet can contain extension headers before the TCP header, making the offset-based check unreliable.
+section: "2"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

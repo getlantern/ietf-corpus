@@ -1,0 +1,9 @@
+document: rfc-5722
+kind: security-consideration
+summary: 'Overlapping IPv6 fragments can be used to bypass stateful firewalls: a first fragment carries a TCP SYN+ACK (appearing as a response to an initiated connection) to pass the firewall, while a subsequent overlapping fragment overwrites the TCP flags to change it to a SYN (connection request), effectively bypassing the firewall''s access control.'
+section: "3"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

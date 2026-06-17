@@ -1,0 +1,10 @@
+document: rfc-5710
+kind: normative-requirement
+summary: When a boundary transit node triggers rerouting per RFC 4920, it MUST first identify an alternate path within the domain. When such a path is available, the node MUST terminate the PathErr and issue a Path message reflecting the alternate path. When no alternate is available, the node MUST propagate the PathErr to the previous hop.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

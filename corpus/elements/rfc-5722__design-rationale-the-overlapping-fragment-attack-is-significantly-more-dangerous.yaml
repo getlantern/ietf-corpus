@@ -1,0 +1,9 @@
+document: rfc-5722
+kind: design-rationale
+summary: The overlapping fragment attack is significantly more dangerous in IPv6 than in IPv4. In IPv4, the overlapping region of a TCP header typically does not include source and destination ports, but in IPv6 an attacker can craft overlapping fragments that replace the source or destination port, enabling broader bypass of port-based access controls.
+section: "3"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

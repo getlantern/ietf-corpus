@@ -1,0 +1,9 @@
+document: rfc-5703
+kind: security-consideration
+summary: The 'enclose' action creates an entirely new message, so site policies applicable to message submission should be enforced. Using 'replace' or 'enclose' may interfere with digital signatures (DKIM, S/MIME, PGP, OpenPGP) that cover the message content.
+section: "11"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

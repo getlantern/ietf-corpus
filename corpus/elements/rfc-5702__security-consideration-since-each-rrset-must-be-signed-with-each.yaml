@@ -1,0 +1,10 @@
+document: rfc-5702
+kind: security-consideration
+summary: Since each RRSet MUST be signed with each algorithm present in the DNSKEY RRSet at the zone apex (per RFC 4035 Section 2.2), a malicious party cannot filter out RSA/SHA-2 RRSIG records to force use of RSA/SHA-1, providing resilience against algorithm downgrade attacks when validators support RSA/SHA-2.
+section: "8.2"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5710
+kind: normative-requirement
+summary: If the reroute request timeout expires, the initiating node MUST remove the LSP and its state/resources, signal removal downstream via PathTear, and signal upstream via a PathErr with error code 'Service preempted'. The Path_State_Removed flag MUST be set if supported; if not supported, a ResvTear MUST also be sent.
+section: 2.1.1
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

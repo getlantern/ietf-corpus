@@ -1,0 +1,8 @@
+document: rfc-5703
+kind: design-rationale
+summary: 'When a ''foreverypart'' loop replaces a multipart MIME part via ''replace'', structural changes take effect immediately: the currently executing iterator does not descend into the now-removed children, and subsequent iterators use the new structure. This avoids undefined behavior from iterating over deleted parts.'
+section: "5"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

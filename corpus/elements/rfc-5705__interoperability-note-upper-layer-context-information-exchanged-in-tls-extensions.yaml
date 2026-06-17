@@ -1,0 +1,9 @@
+document: rfc-5705
+kind: interoperability-note
+summary: Upper-layer context information exchanged in TLS extensions (ClientHello/ServerHello) is protected by Finished messages, ensuring both peers share the same view. However, upper-layer messages embedded in the protocol are not covered by TLS Finished messages and may not automatically secure all important context information.
+section: "3"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

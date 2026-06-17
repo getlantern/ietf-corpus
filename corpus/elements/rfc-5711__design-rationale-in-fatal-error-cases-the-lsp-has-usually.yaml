@@ -1,0 +1,9 @@
+document: rfc-5711
+kind: design-rationale
+summary: In fatal error cases, the LSP has usually already failed in the data plane and traffic has already been disrupted before the PathErr is sent. When the error arises during LSP establishment, there is no traffic disruption since no traffic flows until the LSP is fully established.
+section: "2.1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

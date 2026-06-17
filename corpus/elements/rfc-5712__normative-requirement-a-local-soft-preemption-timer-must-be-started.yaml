@@ -1,0 +1,10 @@
+document: rfc-5712
+kind: normative-requirement
+summary: A local 'Soft Preemption Timer' MUST be started on the preempting node upon soft preemption to guard against indefinite bandwidth under-provisioning. If the timer expires, the node SHOULD send an RSVP PathTear and either a ResvTear or a PathErr with the 'Path_State_Removed' flag set.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
