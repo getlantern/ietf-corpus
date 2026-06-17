@@ -1,0 +1,9 @@
+document: rfc-6536
+kind: design-rationale
+summary: For <get> and <get-config>, inaccessible data nodes are silently omitted from the reply rather than generating an access-denied error. This allows NETCONF subtree and XPath filters to function correctly against the authorized subset of the datastore, rather than failing when filter criteria span unauthorized nodes.
+section: 3.2.2
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

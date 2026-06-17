@@ -1,0 +1,10 @@
+document: rfc-6545
+kind: security-consideration
+summary: RID relies on a PKI for authentication; each participating entity must hold a certificate. Multi-hop TraceRequests require intermediate RID systems to verify the enveloped signature of the immediate sender and the detached signature of the original requestor. PKI trust anchors and consortium membership must be negotiated in advance.
+section: "9.3"
+topics:
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

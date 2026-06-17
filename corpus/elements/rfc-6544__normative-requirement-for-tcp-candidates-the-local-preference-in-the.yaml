@@ -1,0 +1,10 @@
+document: rfc-6544
+kind: normative-requirement
+summary: 'For TCP candidates, the local preference in the ICE priority formula is updated to: local preference = (2^13) * direction-pref + other-pref. The direction-pref MUST be between 0 and 7 inclusive and other-pref MUST be between 0 and 8191 inclusive. Any two candidates with the same type-preference and direction-pref MUST have a unique other-pref.'
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

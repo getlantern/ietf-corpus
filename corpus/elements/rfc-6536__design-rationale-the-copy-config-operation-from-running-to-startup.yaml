@@ -1,0 +1,9 @@
+document: rfc-6536
+kind: design-rationale
+summary: The <copy-config> operation from running to startup requires only exec permission (no per-node checks), because copying between these two standard datastores is a common administrative operation and the data already exists in the running datastore. All other copy-config operations require per-node CRUDX checks.
+section: 3.2.4
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

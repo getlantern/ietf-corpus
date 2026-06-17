@@ -1,0 +1,10 @@
+document: rfc-6535
+kind: security-consideration
+summary: BIH modifies DNS answers (synthesizing A records), which directly conflicts with DNSSEC, which is designed to detect such modifications and treat them as bogus. DNSSEC validation of synthetic A records will fail by design.
+section: "6.4"
+topics:
+    - security
+    - dns
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

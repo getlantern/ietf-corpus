@@ -1,0 +1,10 @@
+document: rfc-6544
+kind: security-consideration
+summary: When both agents use lite mode, no connectivity checks are sent, so additional procedures such as media-level security are needed to validate the connection. The lack of checks is especially problematic when a host is behind a NAT with a private address, as the peer may accidentally connect to a different host in the same private address space.
+section: "12"
+topics:
+    - security
+    - nat
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

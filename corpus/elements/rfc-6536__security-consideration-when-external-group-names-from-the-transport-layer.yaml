@@ -1,0 +1,9 @@
+document: rfc-6536
+kind: security-consideration
+summary: When external group names from the transport layer (e.g., RADIUS) are used and the transport does not protect against man-in-the-middle attacks, an attacker could inject group names configured in NACM, granting a user more permissions than intended. Administrators should set /nacm/enable-external-groups to 'false' when using such protocols.
+section: 3.7.1
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

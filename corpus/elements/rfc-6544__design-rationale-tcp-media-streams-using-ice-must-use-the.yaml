@@ -1,0 +1,9 @@
+document: rfc-6544
+kind: design-rationale
+summary: TCP media streams using ICE must use the RFC 4571 framing shim even if the application protocol is not RTP. Stream-oriented transports require a framing mechanism to extract STUN packets from application-layer traffic; RFC 4571 provides this, allowing ICE to demultiplex STUN and data on the same TCP connection.
+section: "3"
+topics:
+    - tcp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

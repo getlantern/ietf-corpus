@@ -1,0 +1,10 @@
+document: rfc-6544
+kind: security-consideration
+summary: A STUN amplification attack (described in RFC 5245 Section 18.5.2) is more severe for TCP than UDP because TCP connection establishment is required before any checks are performed. An ICE agent SHOULD NOT have more than 5 outstanding TCP connection attempts with the same peer to the same IP address.
+section: "12"
+rfc2119_level: SHOULD NOT
+topics:
+    - security
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

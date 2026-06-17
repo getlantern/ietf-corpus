@@ -1,0 +1,10 @@
+document: rfc-6544
+kind: normative-requirement
+summary: During an ICE restart for a media stream with selected TCP candidate pairs, agents MUST NOT close the existing connections. If both agents include a S-O candidate matching the previously selected connection, they MUST NOT attempt to open a new connection; instead the existing connection is reused for STUN checks.
+section: "9.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

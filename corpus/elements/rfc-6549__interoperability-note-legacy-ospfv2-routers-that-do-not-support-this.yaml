@@ -1,0 +1,9 @@
+document: rfc-6549
+kind: interoperability-note
+summary: Legacy OSPFv2 routers that do not support this specification will interpret a non-zero Instance ID in the packet header as being part of the AuType field, causing them to treat it as a mismatched authentication type and drop the packet. This behavior is intentional and desired — legacy routers should only participate in the default instance (Instance ID 0).
+section: "6"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

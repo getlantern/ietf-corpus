@@ -1,0 +1,10 @@
+document: rfc-6544
+kind: security-consideration
+summary: The main threat in ICE is connection hijacking to direct media to DoS targets or malicious users. Full ICE TCP implementations prevent this by requiring STUN validation (which requires a shared secret from the rendezvous protocol) on each TCP connection before it can carry media. Usage of SIPS is RECOMMENDED to protect the rendezvous exchange.
+section: "12"
+topics:
+    - security
+    - tcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

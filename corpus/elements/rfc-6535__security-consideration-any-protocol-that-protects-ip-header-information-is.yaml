@@ -1,0 +1,11 @@
+document: rfc-6535
+kind: security-consideration
+summary: Any protocol that protects IP header information is incompatible with BIH. End-to-end IPsec verification fails when AH is used (both transport and tunnel mode) and when ESP is used in transport mode. UDP encapsulation per RFC 3948 can restore end-to-end IPsec protection.
+section: "6.1"
+topics:
+    - security
+    - ipsec
+    - v6ops
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

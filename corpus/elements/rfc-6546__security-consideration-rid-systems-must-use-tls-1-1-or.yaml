@@ -1,0 +1,11 @@
+document: rfc-6546
+kind: security-consideration
+summary: RID systems MUST use TLS 1.1 or higher with mutual X.509 certificate authentication and non-NULL ciphersuites. SSL and TLS versions prior to 1.1 MUST NOT be used due to known security vulnerabilities. Certificate reference identifiers must be verified against a whitelist or via reverse DNS lookup.
+section: "4"
+topics:
+    - tls
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

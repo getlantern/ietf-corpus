@@ -1,0 +1,10 @@
+document: rfc-6535
+kind: design-rationale
+summary: The socket API-layer implementation (Bump-in-the-API) is RECOMMENDED over the network-layer implementation (Bump-in-the-Stack) because it is name-resolution protocol agnostic, supports hosts-file, mDNS, NetBIOS, and avoids DNSSEC conflicts with synthetic A records. Network-layer translation can only intercept actual DNS queries.
+section: "2.3"
+topics:
+    - ip
+    - v6ops
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

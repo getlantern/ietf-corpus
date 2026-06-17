@@ -1,0 +1,9 @@
+document: rfc-6545
+kind: security-consideration
+summary: RID messages require both enveloped and detached XML digital signatures. An enveloped signature authenticates the sending CSIRT for each hop; a detached signature on a RecordItem entry by the initiating CSIRT is preserved through all relay hops to authenticate the original requestor. XML encryption is applied to message content as required by policy, agreements, and iodef:restriction data markers.
+section: "9.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

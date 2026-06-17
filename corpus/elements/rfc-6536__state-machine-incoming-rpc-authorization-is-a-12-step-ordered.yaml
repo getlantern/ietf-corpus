@@ -1,0 +1,9 @@
+document: rfc-6536
+kind: state-machine
+summary: 'Incoming RPC authorization is a 12-step ordered procedure: (1) permit if NACM disabled; (2) permit if recovery session; (3) permit close-session; (4) collect user''s groups; (5-8) match ordered rule-lists and rules on module-name, rule-type (protocol-operation), and exec access-operations bit; (9) no rule found; (10) deny if default-deny-all present; (11) deny kill-session or delete-config; (12) apply exec-default fallback.'
+section: 3.4.4
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,8 @@
+document: rfc-6546
+kind: state-machine
+summary: 'A RID request-response exchange has two states: (1) immediate response — the receiver returns a RID message with HTTP 200 within the client timeout; (2) deferred callback — the receiver returns HTTP 202 with a RID-Callback-Token, then later initiates a new HTTPS connection to deliver the reply.'
+section: "3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

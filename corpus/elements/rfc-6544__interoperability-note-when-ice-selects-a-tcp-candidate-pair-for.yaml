@@ -1,0 +1,11 @@
+document: rfc-6544
+kind: interoperability-note
+summary: When ICE selects a TCP candidate pair for a media stream protected by SRTP, it is RECOMMENDED that the agent still uses SRTP over the ICE-established TCP connection rather than RTP over TLS. RTP over TLS breaks RTP header compression and on-path RTP analysis tools.
+section: "4.5"
+topics:
+    - tcp
+    - tls
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

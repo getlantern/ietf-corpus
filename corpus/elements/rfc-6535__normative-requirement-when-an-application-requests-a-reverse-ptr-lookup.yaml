@@ -1,0 +1,11 @@
+document: rfc-6535
+kind: normative-requirement
+summary: When an application requests a reverse PTR lookup for a synthetic IPv4 address, the ENR MUST check the mapping table, and if a synthetic entry is found, MUST initiate a reverse lookup for the corresponding real IPv6 address. Requests for non-synthetic addresses MUST be passed on unmodified.
+section: 2.3.3
+rfc2119_level: MUST
+topics:
+    - dns
+    - v6ops
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

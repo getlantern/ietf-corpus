@@ -1,0 +1,10 @@
+document: rfc-6544
+kind: normative-requirement
+summary: The RFC 4571 framing MUST be used when sending and receiving media. When sending non-RTP media, if the arbitrary bytes chosen would be interpreted as a STUN packet (based on RFC 5389 checks on the two most significant bits, magic cookie, length, and fingerprint), the sender MUST choose a different number of bytes.
+section: "10.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

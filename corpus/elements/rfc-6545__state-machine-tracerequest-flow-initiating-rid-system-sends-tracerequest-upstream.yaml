@@ -1,0 +1,8 @@
+document: rfc-6545
+kind: state-machine
+summary: 'TraceRequest flow: initiating RID system sends TraceRequest upstream; each SP generates an Acknowledgement (Approved/Denied/Pending) and, if approved, forwards the TraceRequest further upstream while appending its AS/path information; upon source identification, the terminal SP sends a Result back through the same path to the originator. A Pending Acknowledgement is automatically generated after a 2-minute timeout without administrator action.'
+section: "7.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

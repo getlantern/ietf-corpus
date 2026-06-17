@@ -1,0 +1,10 @@
+document: rfc-6535
+kind: design-rationale
+summary: RFC 1918 address space was chosen for synthetic IPv4 addresses because legacy applications generally understand it as private, ensuring NAT traversal techniques are initiated. 127/8 and 169.254/16 were rejected because applications may make special assumptions about those ranges. Addresses from 172.16/12 are preferred over 10/8 or 192.168/16 as less likely to conflict.
+section: "4.4"
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

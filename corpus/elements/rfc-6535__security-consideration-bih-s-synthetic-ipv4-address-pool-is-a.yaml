@@ -1,0 +1,11 @@
+document: rfc-6535
+kind: security-consideration
+summary: 'BIH''s synthetic IPv4 address pool is a DoS attack surface: an attacker can exhaust the pool by triggering DNS queries that cause ENR to synthesize A records. Implementations MUST protect against this and against memory exhaustion from fragment storage attacks.'
+section: "6.3"
+topics:
+    - security
+    - ip
+    - v6ops
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-6549
+kind: design-rationale
+summary: The AuType field was reduced from 16 bits to 8 bits to make room for the new 8-bit Instance ID within the same 32-bit word of the packet header. This is justified by the fact that only three OSPFv2 authentication types have ever been standardized, leaving the upper 8 bits of the original AuType unused.
+section: "7"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

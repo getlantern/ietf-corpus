@@ -1,0 +1,9 @@
+document: rfc-6536
+kind: state-machine
+summary: 'Data node access authorization is a 12-step ordered procedure: permit if NACM disabled or recovery session; collect user''s groups; match ordered rule-lists and rules on module-name, data-node path, and CRUDX access-operations bits; apply action; check nacm:default-deny-all (for read/write) and nacm:default-deny-write (for write); apply read-default or write-default fallback. Denied reads silently omit the node from the reply.'
+section: 3.4.5
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

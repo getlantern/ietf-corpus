@@ -1,0 +1,10 @@
+document: rfc-6544
+kind: normative-requirement
+summary: If both agents use lite mode, the answerer MUST still accept incoming TCP connections to any of its passive candidates from any IP address listed in the initial offer. If a connection created in parallel does not match the candidate pair in the new offer, it MUST be closed and ICE restart SHOULD be performed.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

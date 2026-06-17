@@ -1,0 +1,9 @@
+document: rfc-6544
+kind: design-rationale
+summary: TCP candidates require the regular (not aggressive) ICE selection algorithm because aggressive selection might pick a transient pair, causing the agent to close other connections—one of which might be about to be selected as a better candidate. This race condition could accidentally close the connection for the ultimately selected pair.
+section: "8"
+topics:
+    - tcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

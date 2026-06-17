@@ -1,0 +1,10 @@
+document: rfc-6544
+kind: interoperability-note
+summary: When TLS or DTLS is used, it runs over the RFC 4571 framing shim while STUN runs outside the (D)TLS connection. ICE and (D)TLS are peers in the protocol stack; STUN messages are never sent within the TLS or DTLS-SRTP session, even for keepalive purposes.
+section: "3"
+topics:
+    - tcp
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-6544
+kind: normative-requirement
+summary: If a relayed candidate from a TURN server was selected by ICE, the TCP connection to the TURN server MUST be kept open for the duration of the media session. If the connection to the TURN server fails, the client SHOULD reconnect, obtain a new allocation, and restart ICE for the media stream.
+section: "11.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

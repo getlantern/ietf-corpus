@@ -1,0 +1,8 @@
+document: rfc-6545
+kind: design-rationale
+summary: RID maintains a separate schema rather than using IODEF's AdditionalData extension so that the RIDPolicy class can be extracted by the transport protocol without decrypting the IODEF payload. This separation allows routing and policy decisions to operate on unencrypted RIDPolicy metadata while the incident content remains confidential.
+section: "5"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
