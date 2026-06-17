@@ -1,0 +1,9 @@
+document: rfc-5424
+kind: security-consideration
+summary: The syslog protocol has no mechanism to detect message replay. An attacker may record messages, then replay them (possibly with modified TIMESTAMPs) to falsely indicate normal activity. Cryptographically signing messages is recommended to prevent TIMESTAMP alteration and replay.
+section: "8.4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

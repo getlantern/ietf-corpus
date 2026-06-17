@@ -1,0 +1,9 @@
+document: rfc-5433
+kind: wire-format
+summary: When encryption is used, PD_Payload_Block includes a 1-octet IV Length field followed by the Initialization Vector, the concatenated PD_Payloads, optional Padding (0–255 octets), and a 1-octet Pad Length. The PD_Payloads, Padding, and Pad Length are all encrypted. When no encryption is used, IV Length and Pad Length fields MUST still be present with value 0x00.
+section: "9.4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

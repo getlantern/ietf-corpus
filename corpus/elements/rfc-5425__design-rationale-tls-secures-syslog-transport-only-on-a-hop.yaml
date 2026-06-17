@@ -1,0 +1,10 @@
+document: rfc-5425
+kind: design-rationale
+summary: TLS secures syslog transport only on a hop-by-hop basis and does not address the contents of syslog messages. The authenticated identity of the transport sender (e.g., subject name in the certificate) is not necessarily related to the HOSTNAME field in the syslog message; end-to-end message origin authentication requires a separate mechanism such as signed syslog.
+section: "3"
+topics:
+    - tls
+    - syslog
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

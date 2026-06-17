@@ -1,0 +1,10 @@
+document: rfc-5436
+kind: security-consideration
+summary: Automated sending of email notifications exposes the system to mail loops. Implementations MUST protect against loops; rate-limiting (e.g., no more than 30 notifications per user in 60 minutes) is suggested. Administrative mechanisms MUST be available to re-enable disabled notifications or terminate slow loops that evade automatic detection.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

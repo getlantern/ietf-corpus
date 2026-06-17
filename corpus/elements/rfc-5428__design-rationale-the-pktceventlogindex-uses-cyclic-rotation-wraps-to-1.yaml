@@ -1,0 +1,8 @@
+document: rfc-5428
+kind: design-rationale
+summary: The pktcEventLogIndex uses cyclic rotation (wraps to 1 after reaching 2^32-1, or on reset for non-persistent storage) rather than stopping. This avoids log unavailability at the cost of potentially overwriting old entries, which is acceptable for operational event logs.
+section: "6"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

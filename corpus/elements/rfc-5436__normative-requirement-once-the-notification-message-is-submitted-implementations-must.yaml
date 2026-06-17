@@ -1,0 +1,9 @@
+document: rfc-5436
+kind: normative-requirement
+summary: Once the notification message is submitted, implementations MUST NOT resubmit it, as resubmission is likely to result in multiple notifications and increases the danger of message loops. Implementations SHOULD use normal SMTP submission and retry mechanisms for the initial submission only.
+section: "2.7"
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5428
+kind: security-consideration
+summary: 'The pktcEventReset object poses a significant security risk: a rogue management station with write access can clear event logs and reset event descriptions to factory defaults, disrupting event collection for all other management stations and potentially masking misconfiguration or denial-of-service attacks. The MIB does not address multi-manager contention and recommends using pktcEventReset with caution.'
+section: "8"
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

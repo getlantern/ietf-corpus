@@ -1,0 +1,9 @@
+document: rfc-5433
+kind: security-consideration
+summary: An adversary may downgrade ciphersuite negotiation to force selection of a suite without confidentiality, exposing PD_Payload_Block in GPSK-2 in cleartext. Extensions that carry sensitive data in GPSK-2's PD_Payload_Block MUST indicate whether confidentiality is mandatory; if so, transmission should be deferred to GPSK-4.
+section: "12.16"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

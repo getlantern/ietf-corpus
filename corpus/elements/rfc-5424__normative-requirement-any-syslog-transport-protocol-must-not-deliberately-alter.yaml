@@ -1,0 +1,10 @@
+document: rfc-5424
+kind: normative-requirement
+summary: Any syslog transport protocol MUST NOT deliberately alter the syslog message. If the transport performs temporary transformations at the sender, those MUST be reversed at the receiver so that the relay or collector sees an exact copy of the original message.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

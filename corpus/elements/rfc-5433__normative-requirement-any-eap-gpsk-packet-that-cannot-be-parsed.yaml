@@ -1,0 +1,9 @@
+document: rfc-5433
+kind: normative-requirement
+summary: Any EAP-GPSK packet that cannot be parsed MUST be silently discarded. Any unexpected packet (e.g., GPSK-3 received before GPSK-1) MUST be silently discarded. For GPSK-3, a peer MUST silently discard messages where RAND_Peer, ID_Server, or CSuite_Sel do not match those in GPSK-2.
+section: "10"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

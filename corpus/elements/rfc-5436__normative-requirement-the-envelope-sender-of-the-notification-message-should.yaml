@@ -1,0 +1,9 @@
+document: rfc-5436
+kind: normative-requirement
+summary: The envelope sender of the notification message SHOULD be set to the value of the ':from' tag if specified, valid, and has email address syntax; otherwise SHOULD be set to the envelope 'to' of the triggering message or a notification system address. This MUST NOT be overridden by a 'from' URI header, which MUST be ignored.
+section: "2.7"
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

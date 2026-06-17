@@ -1,0 +1,9 @@
+document: rfc-5425
+kind: wire-format
+summary: All syslog messages MUST be sent as TLS 'application data' framed as SYSLOG-FRAME = MSG-LEN SP SYSLOG-MSG, where MSG-LEN is a decimal octet count (NONZERO-DIGIT *DIGIT) and SYSLOG-MSG is the syslog message per RFC 5424. Multiple messages may share one TLS record or span multiple records.
+section: "4.3"
+topics:
+    - tls
+    - syslog
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

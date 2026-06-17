@@ -1,0 +1,8 @@
+document: rfc-5436
+kind: design-rationale
+summary: Because mailto uses a store-and-forward system (SMTP), the Sieve processor should not need to retry notifications. This is why SHOULD use normal SMTP retry mechanisms for initial submission but MUST NOT resubmit — unlike interactive notification methods, delivery is delegated to the mail system.
+section: "2.7"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

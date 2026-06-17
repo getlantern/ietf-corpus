@@ -1,0 +1,9 @@
+document: rfc-5429
+kind: normative-requirement
+summary: When a message arrives over SMTP with multiple recipients and only some are refusing delivery, the server MUST accept the message and generate DSNs for all recipients refusing it; this exception does not apply to LMTP, which supports per-recipient rejection.
+section: 2.1.2
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

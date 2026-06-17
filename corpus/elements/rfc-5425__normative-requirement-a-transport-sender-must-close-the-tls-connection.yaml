@@ -1,0 +1,10 @@
+document: rfc-5425
+kind: normative-requirement
+summary: A transport sender MUST close the TLS connection and MUST send a TLS close_notify alert before closing if no further syslog messages are expected. The transport receiver MUST reply with a close_notify unless it knows the connection is already closed.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - tls
+    - syslog
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

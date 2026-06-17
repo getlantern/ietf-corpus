@@ -1,0 +1,11 @@
+document: rfc-5424
+kind: security-consideration
+summary: Because UDP lacks congestion control, transferring syslog over UDP is problematic for Internet stability. The TLS transport is REQUIRED to implement and RECOMMENDED for general use; UDP MAY only be used in explicitly engineered managed networks with rate limiting or capacity reservations.
+section: "8.6"
+topics:
+    - security
+    - congestion
+    - tls
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

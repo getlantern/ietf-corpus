@@ -1,0 +1,11 @@
+document: rfc-5426
+kind: normative-requirement
+summary: It is RECOMMENDED that syslog senders restrict message sizes such that IP datagrams do not exceed the smallest MTU of the network in use, to avoid datagram fragmentation. When network MTU is not known, the safest assumption is 480 octets for IPv4 and 1180 octets for IPv6.
+section: "3.2"
+rfc2119_level: RECOMMENDED
+topics:
+    - syslog
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

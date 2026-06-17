@@ -1,0 +1,8 @@
+document: rfc-5429
+kind: design-rationale
+summary: 'The ''ereject'' and ''reject'' actions intentionally differ in their handling of non-ASCII reason strings: ''ereject'' will silently replace non-ASCII with ASCII at the protocol level to maximize protocol-level rejection, while ''reject'' preserves exact reason text by falling back to an MDN. Users who want exact text preservation should use ''reject''.'
+section: 2.1.1
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5436
+kind: security-consideration
+summary: Notification recipients might not own the addresses specified in the Sieve script, enabling scripts to be used for mail-bomb attacks or generating unwanted notifications due to mistyped or reassigned addresses. Forgotten scripts left running indefinitely are a specific risk. Domains that enable this extension MUST be prepared to respond to complaints using the Auto-Submitted owner-email or owner-token to identify and disable faulty scripts.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,10 @@
+document: rfc-5426
+kind: design-rationale
+summary: Fragmentation is undesirable for syslog over UDP because loss of a single fragment causes the entire message to be discarded, and syslog has no acknowledgement facility that would enable retransmission. This also makes it impossible for syslog to utilize packetization layer path MTU discovery.
+section: "3.2"
+topics:
+    - syslog
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

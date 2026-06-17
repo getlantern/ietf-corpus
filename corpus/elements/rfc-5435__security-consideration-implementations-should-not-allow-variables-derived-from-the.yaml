@@ -1,0 +1,9 @@
+document: rfc-5435
+kind: security-consideration
+summary: Implementations SHOULD NOT allow variables derived from the incoming email message (via header/envelope tests) to be used in the "method" parameter, as this can create an open relay allowing any sender to trigger notifications to arbitrary recipients, potentially causing financial loss.
+section: "8"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

@@ -1,0 +1,9 @@
+document: rfc-5428
+kind: normative-requirement
+summary: The MTA MUST perform reset actions specified by pktcEventReset (clear log table, reset event table to factory defaults) regardless of whether the data is stored in non-volatile memory. Setting a reset bit to '0' MUST NOT result in any action, and the object MUST always return '00' when read.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"

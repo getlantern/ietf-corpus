@@ -1,0 +1,8 @@
+document: rfc-5428
+kind: wire-format
+summary: pktcEventLogTargetInfo encodes external notification targets as a comma-separated list in the form '<action-1/IP>,<action-2/IP>,...' where each entry uses 'syslog/<IP>', 'snmpTrap/<IP>', or 'snmpInform/<IP>'. When data exceeds capacity (e.g., multiple IPv6 addresses), the MTA MUST append '...' to indicate truncation.
+section: "6"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-17"
