@@ -1,0 +1,8 @@
+document: rfc-6901
+kind: design-rationale
+summary: The '-' character as an array index always causes an error because it refers to a nonexistent element past the end of the array. Applications that wish to use '-' (e.g., for append semantics) must explicitly define how to handle it; the JSON Pointer specification itself does not assign it a successful resolution.
+section: "4"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

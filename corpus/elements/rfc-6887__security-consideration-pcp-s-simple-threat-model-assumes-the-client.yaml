@@ -1,0 +1,9 @@
+document: rfc-6887
+kind: security-consideration
+summary: PCP's simple threat model assumes the client and the PCP-controlled device are in the same administrative domain. On-path attackers between client and server can forge or suppress responses. The 96-bit Mapping Nonce in MAP and PEER opcodes reduces, but does not eliminate, mapping hijacking by off-path attackers; full security requires an authentication mechanism beyond the base protocol.
+section: "18.1"
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

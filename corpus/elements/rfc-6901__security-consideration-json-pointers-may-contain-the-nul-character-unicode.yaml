@@ -1,0 +1,9 @@
+document: rfc-6901
+kind: security-consideration
+summary: JSON pointers may contain the NUL character (Unicode U+0000). Implementations in languages that use NUL as a string terminator must take care not to misinterpret this character, as it could cause pointer truncation or misbehavior.
+section: "8"
+topics:
+    - json
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

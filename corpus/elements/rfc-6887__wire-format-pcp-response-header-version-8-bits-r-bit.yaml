@@ -1,0 +1,9 @@
+document: rfc-6887
+kind: wire-format
+summary: 'PCP response header: Version (8 bits), R bit (MUST be 1), Opcode (7 bits), Reserved (8 bits), Result Code (8 bits), Lifetime (32 bits), Epoch Time (32 bits), Reserved (96 bits), followed by opcode-specific data and options. On parse failure the server copies the last 96 bits of the client IP address field into the reserved field.'
+section: "7.2"
+topics:
+    - nat
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

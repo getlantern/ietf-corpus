@@ -1,0 +1,9 @@
+document: rfc-6887
+kind: normative-requirement
+summary: Multiple options in a PCP request MAY be encoded in any order by the client but MUST be processed by the server in the order they appear. If an option defined to appear only once appears more than once and is understood, the server MUST respond with MALFORMED_OPTION. Clients MUST ignore options they do not understand in responses, even mandatory-to-process ones.
+section: "7.3"
+rfc2119_level: MUST
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

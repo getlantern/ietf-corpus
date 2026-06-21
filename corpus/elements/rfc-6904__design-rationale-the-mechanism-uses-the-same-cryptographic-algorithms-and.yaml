@@ -1,0 +1,10 @@
+document: rfc-6904
+kind: design-rationale
+summary: The mechanism uses the same cryptographic algorithms and parameters (transform, IV, master key, master salt, index, key_derivation_rate) as SRTP payload encryption, deriving only separate header-specific encryption and salting keys. This avoids introducing new cryptographic machinery while achieving equivalent security properties for header extensions.
+section: "3"
+topics:
+    - rtp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

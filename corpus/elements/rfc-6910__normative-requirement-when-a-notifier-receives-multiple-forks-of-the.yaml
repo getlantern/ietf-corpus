@@ -1,0 +1,9 @@
+document: rfc-6910
+kind: normative-requirement
+summary: When a notifier receives multiple forks of the same SUBSCRIBE (identified by matching Call-Id and overlapping request-URI scope), it MUST reject all but one with 482 Merged Request. Short-term queue-capacity denial requires 480 Temporarily Unavailable; permanent denial requires 403 Forbidden.
+section: "9.7"
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

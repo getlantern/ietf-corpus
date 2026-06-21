@@ -1,0 +1,8 @@
+document: rfc-6898
+kind: interoperability-note
+summary: 'When a non-supporting legacy node receives a Config message with BehaviorConfig or multiple CONFIG objects, it may: (a) send ConfigNack with unsupported C-type, (b) send ConfigNack for multiple CONFIG objects, (c) silently ignore unknown objects and respond with ConfigAck without CONFIG objects, or (d) discard the message silently. A supporting node SHOULD infer lack of extension support in cases (a)-(c) and revert to prior Config usage.'
+section: "4"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

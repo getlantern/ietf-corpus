@@ -1,0 +1,9 @@
+document: rfc-6887
+kind: security-consideration
+summary: A malicious PCP client can use MAP requests to expose other hosts on the same subnet by creating mappings pointing inbound traffic at arbitrary internal addresses (mapping theft). PCP servers should implement per-subscriber mapping quotas and, for THIRD_PARTY requests, enforce authorization checks to prevent cross-subscriber mapping abuse.
+section: 18.3.3
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

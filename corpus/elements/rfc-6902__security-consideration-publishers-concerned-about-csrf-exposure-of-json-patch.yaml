@@ -1,0 +1,10 @@
+document: rfc-6902
+kind: security-consideration
+summary: Publishers concerned about CSRF exposure of JSON Patch documents (whose root is an array) are advised to avoid serving such documents via HTTP GET, since older browsers (estimated <1% market share at time of writing) can be coerced into fetching them cross-origin.
+section: "7"
+topics:
+    - json
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

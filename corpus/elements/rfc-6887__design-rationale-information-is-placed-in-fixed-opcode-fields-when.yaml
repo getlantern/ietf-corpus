@@ -1,0 +1,8 @@
+document: rfc-6887
+kind: design-rationale
+summary: Information is placed in fixed Opcode fields when it is usually required (simpler parsing, fixed offset) or in options when it is needed less often (smaller packets, allows implementations to omit code for unused features). For example, THIRD_PARTY is an option because most clients never manage mappings on behalf of other devices.
+section: "7.3"
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

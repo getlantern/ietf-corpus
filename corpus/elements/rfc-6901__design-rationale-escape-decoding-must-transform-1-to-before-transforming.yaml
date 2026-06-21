@@ -1,0 +1,8 @@
+document: rfc-6901
+kind: design-rationale
+summary: Escape decoding must transform '~1' to '/' before transforming '~0' to '~', not the reverse. Performing substitutions in this order prevents '~01' from being incorrectly decoded to '/' (it should become '~1').
+section: "4"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

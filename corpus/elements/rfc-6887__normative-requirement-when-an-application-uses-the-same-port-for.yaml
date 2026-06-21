@@ -1,0 +1,9 @@
+document: rfc-6887
+kind: normative-requirement
+summary: When an application uses the same port for both incoming and outgoing connections (symmetric client/server, e.g., Symmetric RTP), it MUST send a MAP request and receive a positive response before sending any packets from that port, to ensure the NAT-assigned external port is consistent across both explicit and subsequent implicit mappings.
+section: "10.2"
+rfc2119_level: MUST
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

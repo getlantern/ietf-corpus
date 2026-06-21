@@ -1,0 +1,8 @@
+document: rfc-6910
+kind: design-rationale
+summary: Because SIP forking allows a call to fail from the user's perspective while succeeding from SIP's (e.g., a busy user's call routed to voicemail returns 200 but the caller considers it 'no reply'), the caller's agent must record successful SIP calls as failures and callers must be able to invoke CC even after receiving a 200 response.
+section: "4.4"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

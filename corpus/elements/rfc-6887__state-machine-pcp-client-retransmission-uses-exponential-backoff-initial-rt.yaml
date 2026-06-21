@@ -1,0 +1,9 @@
+document: rfc-6887
+kind: state-machine
+summary: 'PCP client retransmission uses exponential backoff: initial RT = (1+RAND)*IRT (IRT SHOULD be 3 s); subsequent RT = (1+RAND)*MIN(2*RTprev, MRT) (MRT SHOULD be 1024 s). RAND is uniform [-0.1, +0.1]. MRC and MRD default to 0 (no maximum). After a successful response, RT resets to a random value in [lifetime/2, 5*lifetime/8] for periodic renewal.'
+section: 8.1.1
+topics:
+    - nat
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

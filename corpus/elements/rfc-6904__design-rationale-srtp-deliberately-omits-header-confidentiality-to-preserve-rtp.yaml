@@ -1,0 +1,10 @@
+document: rfc-6904
+kind: design-rationale
+summary: SRTP deliberately omits header confidentiality to preserve RTP header compression efficiency. Standard header fields reveal little beyond what an attacker could infer from packet size and timing, so authentication alone is sufficient for them. However, header extensions can carry sensitive data (e.g., per-packet audio levels) for which confidentiality is essential.
+section: "1"
+topics:
+    - rtp
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

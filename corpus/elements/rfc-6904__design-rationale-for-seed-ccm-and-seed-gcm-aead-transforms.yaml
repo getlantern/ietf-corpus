@@ -1,0 +1,10 @@
+document: rfc-6904
+kind: design-rationale
+summary: For SEED-CCM and SEED-GCM AEAD transforms, the header extension keystream is generated using SEED-CTR rather than the native AEAD mode. This is because the RTP header (including the header extension) is already included in the Associated Authenticated Data (AAD) of the AEAD transform, so counter-mode encryption for the extension is considered cryptographically equivalent.
+section: "3.2"
+topics:
+    - rtp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

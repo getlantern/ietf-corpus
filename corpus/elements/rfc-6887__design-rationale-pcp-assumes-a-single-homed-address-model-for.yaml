@@ -1,0 +1,8 @@
+document: rfc-6887
+kind: design-rationale
+summary: 'PCP assumes a single-homed address model: for a given internal IP address there is exactly one default path to the Internet. This is required because after a PCP mapping forwards an inbound packet, the host''s outbound response must traverse the same NAT in reverse; multiple egress paths would make it impossible to guarantee which NAT rewrites the return traffic.'
+section: "2.3"
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

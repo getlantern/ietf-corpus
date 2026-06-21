@@ -1,0 +1,8 @@
+document: rfc-6887
+kind: design-rationale
+summary: 'PCP has no transaction ID because it is designed as a hint/notification protocol rather than strict request/response: responses are self-describing (containing internal address, external address, protocol, port, and lifetime) and clients can correlate them from opcode-specific data alone. A transaction ID would unnecessarily limit the protocol and complicate implementations without providing benefit.'
+section: "6"
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

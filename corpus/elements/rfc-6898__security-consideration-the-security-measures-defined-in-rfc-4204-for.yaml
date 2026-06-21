@@ -1,0 +1,10 @@
+document: rfc-6898
+kind: security-consideration
+summary: The security measures defined in RFC 4204 for LMP peer communication (referencing IPsec via RFC 4301 and IKEv2 via RFC 5996) are equally applicable to messages carrying the new BehaviorConfig object. Use of LMP security measures is RECOMMENDED because intercepted or spoofed BehaviorConfig messages could cause peers to incorrectly enable or disable protocol extensions, resulting in bogus management-plane alerts.
+section: "5"
+rfc2119_level: RECOMMENDED
+topics:
+    - security
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

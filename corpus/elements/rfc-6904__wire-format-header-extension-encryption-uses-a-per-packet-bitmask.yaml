@@ -1,0 +1,9 @@
+document: rfc-6904
+kind: wire-format
+summary: Header extension encryption uses a per-packet bitmask over the RFC 5285 extension payload region. Encrypted element payload octets are masked 0xff; all other octets (element headers, non-encrypted payloads, padding) are masked 0x00. The ciphertext is computed as (Encrypt(Key, Plaintext) AND MASK) OR (Plaintext AND (NOT MASK)).
+section: "3.1"
+topics:
+    - rtp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

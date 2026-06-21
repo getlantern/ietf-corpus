@@ -1,0 +1,9 @@
+document: rfc-6887
+kind: normative-requirement
+summary: Clients validate Epoch Time by comparing client_delta (elapsed local time) to server_delta (elapsed server epoch). If client_delta+2 < server_delta - server_delta/16 or server_delta+2 < client_delta - client_delta/16, the client treats the Epoch Time as invalid and immediately renews all active mapping leases. The /16 tolerance accommodates up to 6.25% clock inaccuracy.
+section: "8.5"
+rfc2119_level: MUST
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

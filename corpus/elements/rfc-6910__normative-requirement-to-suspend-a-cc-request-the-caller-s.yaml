@@ -1,0 +1,9 @@
+document: rfc-6910
+kind: normative-requirement
+summary: To suspend a CC request, the caller's agent SHALL publish PIDF state 'closed' via PUBLISH to each callee's monitor. To resume, the agent SHALL publish PIDF state 'open'. The PUBLISH SHOULD include an Expires header matching the remaining CC subscription duration.
+section: "6.5"
+rfc2119_level: SHALL
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

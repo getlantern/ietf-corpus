@@ -1,0 +1,9 @@
+document: rfc-6904
+kind: protocol-element
+summary: An encryption mask is computed for each packet containing encrypted header extension elements. The mask has 0xff octets for extension element payload octets to be encrypted and 0x00 for non-encrypted payload octets, element headers, and padding. The masked keystream (mask AND keystream) is XORed with the header extension to produce the ciphertext.
+section: "3"
+topics:
+    - rtp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
