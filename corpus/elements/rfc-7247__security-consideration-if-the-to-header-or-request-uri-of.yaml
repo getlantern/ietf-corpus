@@ -1,0 +1,12 @@
+document: rfc-7247
+kind: security-consideration
+summary: If the To header or Request-URI of a SIP message contains a SIPS URI (indicating all hops must be TLS-protected), the SIP-to-XMPP gateway MUST NOT translate the message into an XMPP stanza and MUST NOT route it to the destination XMPP server, because XMPP lacks a mechanism to signal per-hop security requirements.
+section: "8"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - tls
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

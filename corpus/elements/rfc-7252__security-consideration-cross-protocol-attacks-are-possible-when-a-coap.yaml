@@ -1,0 +1,10 @@
+document: rfc-7252
+kind: security-consideration
+summary: Cross-protocol attacks are possible when a CoAP message is crafted to look like another protocol (e.g., HTTP). To mitigate, implementations parsing CoAP over TCP or TLS MUST verify the CoAP version and reject mismatched messages; endpoints SHOULD use DTLS to prevent injection of foreign-protocol messages.
+section: "11.5"
+topics:
+    - security
+    - http
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7235
+kind: security-consideration
+summary: The HTTP authentication framework does not define a mechanism for maintaining confidentiality of credentials; each scheme defines its own encoding. HTTP depends on the security properties of the underlying transport-level connection (e.g., TLS) for confidential transmission of credentials. Services requiring individual user authentication often require a TLS-secured connection prior to exchanging credentials.
+section: "6.1"
+topics:
+    - http
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

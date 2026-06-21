@@ -1,0 +1,10 @@
+document: rfc-7247
+kind: design-rationale
+summary: Mapping XMPP <service-unavailable/> to SIP 503 is NOT RECOMMENDED because SIP 503 signals that a server is unreachable for all future requests, whereas XMPP uses <service-unavailable/> to indicate missing feature support, user-level unavailability, or to avoid disclosing account existence. SIP 403 or 405 are the closest alternatives.
+section: "7.1"
+rfc2119_level: SHOULD NOT
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

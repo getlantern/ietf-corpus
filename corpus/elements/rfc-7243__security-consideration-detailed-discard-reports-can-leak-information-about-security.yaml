@@ -1,0 +1,10 @@
+document: rfc-7243
+kind: security-consideration
+summary: 'Detailed discard reports can leak information about security processing: an attacker injecting a packet with a stale timestamp can infer whether security processing occurred based on whether a discard report is returned with matching byte count. Implementations should apply encryption and authentication (e.g., SAVPF) to mitigate this.'
+section: "6"
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,11 @@
+document: rfc-7252
+kind: normative-requirement
+summary: For multicast CoAP, only NON messages SHOULD be used for requests to multicast addresses. Responses to multicast requests MUST be suppressed if the server would return a 5.xx or 4.xx error. Servers SHOULD delay their response by a random interval within DEFAULT_LEISURE (5 s) to avoid a response implosion.
+section: "8"
+rfc2119_level: SHOULD
+topics:
+    - http
+    - udp
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

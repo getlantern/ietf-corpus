@@ -1,0 +1,10 @@
+document: rfc-7250
+kind: design-rationale
+summary: 'Raw public keys reuse the SubjectPublicKeyInfo structure from PKIX certificates rather than defining a new encoding, retaining the algorithm identifier and parameters while omitting certificate-specific fields. This minimizes the ASN.1 parsing footprint: only a minimal parser is needed, and no certificate path validation code is required.'
+section: "1"
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

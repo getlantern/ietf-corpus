@@ -1,0 +1,8 @@
+document: rfc-7239
+kind: interoperability-note
+summary: Proxies receiving X-Forwarded-For, X-Forwarded-By, or X-Forwarded-Proto headers are encouraged to convert them to the "Forwarded" field where sensible. However, when multiple X-Forwarded-* fields coexist, conversion may not be possible because the original ordering cannot be determined. Removing X-Forwarded-For may break parties that have not yet implemented "Forwarded".
+section: "7.4"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7239
+kind: privacy-consideration
+summary: The client IP address carried in the "for" parameter can uniquely identify a client, reveal their operator, and estimate geographic location. If an HTTP request contains header fields specifically requesting privacy semantics, the proxy SHOULD NOT use the "Forwarded" field or otherwise pass private information such as IP addresses to the next hop.
+section: "8.3"
+rfc2119_level: SHOULD NOT
+topics:
+    - http
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

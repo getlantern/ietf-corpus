@@ -1,0 +1,10 @@
+document: rfc-7252
+kind: normative-requirement
+summary: Once a server sends an Empty ACK for a CON request (initiating a separate response), it MUST NOT later send the response in another ACK. If a retransmitted request arrives, another Empty ACK is sent and the response MUST be sent as a separate response. The client's ACK to a Confirmable separate response MUST be an Empty message.
+section: 5.2.2
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

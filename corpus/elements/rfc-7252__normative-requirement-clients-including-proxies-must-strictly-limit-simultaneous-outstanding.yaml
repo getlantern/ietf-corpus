@@ -1,0 +1,11 @@
+document: rfc-7252
+kind: normative-requirement
+summary: Clients (including proxies) MUST strictly limit simultaneous outstanding interactions to a given server to NSTART (default 1). An endpoint MUST NOT exceed an average data rate of PROBING_RATE (1 byte/second) when sending to a non-responding endpoint. Configurations MUST NOT decrease ACK_TIMEOUT or increase NSTART without mechanisms that ensure congestion control safety.
+section: "4.7"
+rfc2119_level: MUST
+topics:
+    - http
+    - udp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

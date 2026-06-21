@@ -1,0 +1,11 @@
+document: rfc-7244
+kind: security-consideration
+summary: When using Secure RTP (RFC 3711) or other media-layer security, reporting accurate synchronization offset information can expose timing details of cryptographic operations, potentially enabling a side-channel attack on the encryption. Implementations in sensitive environments MUST ensure cryptographic processing and media compression take constant time irrespective of media content.
+section: "7"
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

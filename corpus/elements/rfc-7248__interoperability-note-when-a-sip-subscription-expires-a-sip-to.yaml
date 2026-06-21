@@ -1,0 +1,9 @@
+document: rfc-7248
+kind: interoperability-note
+summary: When a SIP subscription expires, a SIP-to-XMPP gateway may either cancel the XMPP subscription (treating it as temporary) or maintain it as long-lived by sending a NOTIFY with PIDF 'closed' status and Subscription-State 'terminated;reason=timeout', plus an XMPP 'unavailable' stanza. The choice is implementation-defined.
+section: 4.3.2
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7243
+kind: design-rationale
+summary: A dedicated bytes-discarded XR block was defined because deriving byte counts from high-frequency packet-count reports (RFC 7002) would require unduly high RTCP overhead with non-deterministic scheduling, while using Discard RLE (RFC 7097) would incur significant complexity from storing a sequence-number-to-packet-size map.
+section: "1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

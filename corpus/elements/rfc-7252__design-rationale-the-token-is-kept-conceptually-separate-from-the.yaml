@@ -1,0 +1,9 @@
+document: rfc-7252
+kind: design-rationale
+summary: The Token is kept conceptually separate from the Message ID because Message IDs serve the messaging layer (matching ACK/RST to CON/NON) while Tokens serve the request/response layer (matching responses to outstanding requests). This separation allows a single CON to carry a request while the response arrives in a separate message exchange with a different Message ID.
+section: "5.3"
+topics:
+    - http
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

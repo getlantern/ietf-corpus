@@ -1,0 +1,9 @@
+document: rfc-7252
+kind: wire-format
+summary: 'CoAP messages begin with a fixed 4-byte header containing: Ver (2-bit, MUST be 1), Type T (2-bit: CON/NON/ACK/RST), Token Length TKL (4-bit, 0-8), Code (8-bit, class.detail), and Message ID (16-bit network byte order). The header is followed by a variable-length Token (0-8 bytes), zero or more options, and an optional payload preceded by the 0xFF payload marker.'
+section: "3"
+topics:
+    - http
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

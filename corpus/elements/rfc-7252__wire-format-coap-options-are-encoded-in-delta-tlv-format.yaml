@@ -1,0 +1,9 @@
+document: rfc-7252
+kind: wire-format
+summary: 'CoAP options are encoded in delta-TLV format: each option specifies a 4-bit Option Delta and 4-bit Option Length, with extended 1- or 2-byte fields for values 13 and 14 respectively. Options MUST appear in ascending Option Number order; the actual number is the sum of all preceding deltas. Delta or length value 15 is reserved and MUST be processed as a message format error.'
+section: "3.1"
+topics:
+    - http
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

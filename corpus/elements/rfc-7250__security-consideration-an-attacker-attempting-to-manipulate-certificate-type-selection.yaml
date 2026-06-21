@@ -1,0 +1,9 @@
+document: rfc-7250
+kind: security-consideration
+summary: An attacker attempting to manipulate certificate-type selection during the handshake must actively modify handshake messages, which causes client and server to compute different handshake hash values. The resulting Finished message mismatch will reveal the attack, since the attacker cannot forge valid Finished messages without the master_secret.
+section: "6"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

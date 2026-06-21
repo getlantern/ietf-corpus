@@ -1,0 +1,11 @@
+document: rfc-7248
+kind: security-consideration
+summary: Before refreshing an XMPP user's long-lived subscription to a SIP contact, the XMPP-to-SIP gateway MUST first send an XMPP <presence type='probe'/> to the bare JID of the XMPP user; the XMPP server MUST respond per RFC6121. This places equal burden on both servers and mitigates unauthorized refresh amplification.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

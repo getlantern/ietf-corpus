@@ -1,0 +1,10 @@
+document: rfc-7248
+kind: security-consideration
+summary: The mismatch between long-lived XMPP and short-lived SIP presence subscriptions enables an amplification attack from the XMPP network against SIP presence servers (each long-lived XMPP subscription causes multiple SIP refresh requests). XMPP-to-SIP gateway access SHOULD be restricted to a single controlled domain/trust realm, and SIP servers SHOULD refuse traffic from gateways whose users are not associated with the gateway's domain.
+section: "7"
+topics:
+    - sip
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

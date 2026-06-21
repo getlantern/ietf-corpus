@@ -1,0 +1,8 @@
+document: rfc-7250
+kind: state-machine
+summary: 'When the server receives a ClientHello containing client_certificate_type and/or server_certificate_type extensions, three outcomes are defined: (1) server does not support the extension — returns ServerHello without the extensions; (2) server supports it but has no common certificate type — terminates with fatal ''unsupported_certificate'' alert; (3) server supports it and has at least one common type — proceeds with negotiation.'
+section: "4.2"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

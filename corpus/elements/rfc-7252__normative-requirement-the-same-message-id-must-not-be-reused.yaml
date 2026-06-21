@@ -1,0 +1,10 @@
+document: rfc-7252
+kind: normative-requirement
+summary: The same Message ID MUST NOT be reused when communicating with the same endpoint within the EXCHANGE_LIFETIME (247 seconds with default parameters). An ACK or RST matches a CON or NON only if the Message ID and source endpoint of the reply match the Message ID and destination endpoint of the original message.
+section: "4.4"
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

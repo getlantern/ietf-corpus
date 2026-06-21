@@ -1,0 +1,8 @@
+document: rfc-7235
+kind: interoperability-note
+summary: New authentication schemes that choose not to carry credentials in the Authorization header field (e.g., using a newly defined header field) will need to explicitly disallow caching by mandating use of Cache-Control directives (e.g., "no-store" or "private"), since Authorization credentials automatically have the effect of the "private" Cache-Control directive.
+section: 5.1.2
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

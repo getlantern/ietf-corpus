@@ -1,0 +1,9 @@
+document: rfc-7243
+kind: design-rationale
+summary: The 'bytes discarded' field counts only RTP payload bytes, excluding header extensions and padding, so that the metric reflects actual media data loss rather than protocol overhead. The discarded packet is attributed to the interval in which it was discarded, not when it was expected.
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

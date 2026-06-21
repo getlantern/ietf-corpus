@@ -1,0 +1,9 @@
+document: rfc-7247
+kind: protocol-element
+summary: The SIP-to-XMPP address mapping algorithm removes the URI scheme, splits at '@', percent-decodes the local part, treats it as UTF-8, translates '&' to '\26', "'" to '\27', and '/' to '\2f', optionally applies Nodeprep canonicalization, then recombines with the hostname; if a 'gr' URI parameter is present, it is appended as a resourcepart.
+section: "6.4"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7252
+kind: normative-requirement
+summary: Token Length values 9-15 are reserved, MUST NOT be sent, and MUST be processed as a message format error. The presence of a Payload Marker (0xFF) followed by a zero-length payload MUST also be processed as a message format error.
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

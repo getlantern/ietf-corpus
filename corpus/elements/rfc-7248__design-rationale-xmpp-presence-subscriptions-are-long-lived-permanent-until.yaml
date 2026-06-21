@@ -1,0 +1,10 @@
+document: rfc-7248
+kind: design-rationale
+summary: XMPP presence subscriptions are long-lived (permanent until cancelled), whereas SIP presence subscriptions are short-lived with a default TTL of 3600 seconds per RFC3856 Section 6.4. This disparity requires XMPP-to-SIP gateways to manage periodic subscription refreshes on the SIP side to maintain the appearance of permanence.
+section: "4.1"
+topics:
+    - sip
+    - realtime
+    - interoperability-note
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

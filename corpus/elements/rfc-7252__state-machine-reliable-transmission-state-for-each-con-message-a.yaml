@@ -1,0 +1,10 @@
+document: rfc-7252
+kind: state-machine
+summary: 'Reliable transmission state: for each CON message, a sender maintains a timeout (initially random between ACK_TIMEOUT and ACK_TIMEOUT*ACK_RANDOM_FACTOR) and a retransmission counter (initially 0). On timeout, if counter < MAX_RETRANSMIT, the message is retransmitted, counter incremented, and timeout doubled. On counter reaching MAX_RETRANSMIT or receiving RST, transmission is canceled. On receiving ACK, transmission succeeds.'
+section: "4.2"
+topics:
+    - http
+    - udp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

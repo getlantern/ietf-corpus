@@ -1,0 +1,9 @@
+document: rfc-7244
+kind: design-rationale
+summary: The Initial Synchronization Delay block is designed to be sent only occasionally (e.g., once at session start) because synchronization delay is primarily a startup metric rather than a continuous one. In the absence of packet loss it equals the time to receive the first RTCP SR in the session with the longest RTCP reporting interval.
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

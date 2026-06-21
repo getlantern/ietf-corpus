@@ -1,0 +1,9 @@
+document: rfc-7252
+kind: security-consideration
+summary: IP address spoofing attacks are a concern since CoAP runs over UDP. Clients SHOULD use randomized tokens (at least 32 bits for Internet-connected clients) to guard against spoofed responses. ICMP errors should be verified against the original datagram's port, Message ID, and Token fields before acting on them.
+section: "11.4"
+topics:
+    - security
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

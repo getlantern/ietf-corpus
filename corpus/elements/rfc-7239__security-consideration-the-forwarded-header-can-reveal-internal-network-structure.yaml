@@ -1,0 +1,9 @@
+document: rfc-7239
+kind: security-consideration
+summary: The "Forwarded" header can reveal internal network structure behind NATs or proxies. Mitigations include using obfuscated identifiers, preventing internal nodes from updating the field, or having an egress proxy strip entries that reveal internal topology. The header MUST NOT be copied into responses, and TRACE requests should be disallowed where Forwarded is in use.
+section: "8.2"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

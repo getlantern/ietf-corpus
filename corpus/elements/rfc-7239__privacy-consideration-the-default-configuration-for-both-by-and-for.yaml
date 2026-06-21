@@ -1,0 +1,10 @@
+document: rfc-7239
+kind: privacy-consideration
+summary: The default configuration for both "by" and "for" parameters SHOULD contain obfuscated identifiers randomly generated per request. If persistent identifiers are required, their lifetimes SHOULD be limited and SHOULD NOT exceed the lifetime of client IP addresses. Even without unique client identifiers, the Forwarded header may enable fingerprinting by revealing the proxy chain.
+section: "8.3"
+rfc2119_level: SHOULD
+topics:
+    - http
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7239
+kind: security-consideration
+summary: The "Forwarded" header cannot be relied upon to be correct; any node in the path, including the client, can modify or forge it. Whitelisting trusted proxies partially mitigates this, but IP addresses listed before the trusted proxy remain unverifiable, and network-level attackers can modify the field if connections between proxies are not secured.
+section: "8.1"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

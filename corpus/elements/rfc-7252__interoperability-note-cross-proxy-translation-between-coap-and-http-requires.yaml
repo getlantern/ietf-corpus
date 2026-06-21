@@ -1,0 +1,9 @@
+document: rfc-7252
+kind: interoperability-note
+summary: Cross-proxy translation between CoAP and HTTP requires mapping Method Codes (GET/POST/PUT/DELETE) and Response Codes bidirectionally. CoAP 2.05 Content maps to HTTP 200 OK; CoAP 4.04 maps to HTTP 404; HTTP OPTIONS and TRACE have no CoAP equivalent and MUST be rejected by an HTTP-to-CoAP proxy with 501 Not Implemented. Max-Age maps to HTTP Cache-Control max-age.
+section: "10"
+topics:
+    - http
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

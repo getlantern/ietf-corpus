@@ -1,0 +1,10 @@
+document: rfc-7252
+kind: security-consideration
+summary: CoAP is susceptible to amplification attacks because a small multicast or unicast request can elicit large responses from many nodes. Servers SHOULD implement rate limiting for response transmission. For multicast, clients MUST NOT use CON messages; this limits the amplification factor.
+section: "11.3"
+topics:
+    - security
+    - udp
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
