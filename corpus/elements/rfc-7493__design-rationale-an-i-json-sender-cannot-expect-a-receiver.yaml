@@ -1,0 +1,8 @@
+document: rfc-7493
+kind: design-rationale
+summary: An I-JSON sender cannot expect a receiver to treat an integer whose absolute value exceeds 9007199254740991 (outside [-(2**53)+1, (2**53)-1]) as an exact value, due to the limited precision of JavaScript/IEEE 754 double numbers.
+section: "2.2"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7488
+kind: state-machine
+summary: 'PCP client address-selection state: (1) build candidate source addresses, (2) sort server IP addresses via RFC 6724, (3) set MRC=4, (4) send with retransmission; on MRC exhaustion move to next address, on ICMP hard error immediately move to next address, on success pin that address until unresponsive.'
+section: "3"
+topics:
+    - pcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

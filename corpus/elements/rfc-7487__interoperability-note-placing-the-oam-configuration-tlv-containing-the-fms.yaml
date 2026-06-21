@@ -1,0 +1,8 @@
+document: rfc-7487
+kind: interoperability-note
+summary: Placing the OAM Configuration TLV containing the FMS Sub-TLV in LSP_ATTRIBUTES allows nodes that cannot process it to forward silently without error, whereas placement in LSP_REQUIRED_ATTRIBUTES forces RFC 7260-capable but FMS-unaware nodes to generate a PathErr. Nodes that do not support RFC 7260 at all will not raise errors in either case.
+section: "3.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7490
+kind: interoperability-note
+summary: 'When the failure is a node failure rather than a link failure, RLFA repairs can loop: two neighbors of the failed node, each with the failed node as next-hop to some destination, may attempt to repair via each other, forming a mutual repair loop. Mitigations include dropping re-arrived repair packets, requiring node-protecting paths, or applying a downstream constraint.'
+section: "7"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

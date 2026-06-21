@@ -1,0 +1,9 @@
+document: rfc-7495
+kind: design-rationale
+summary: The IODEF Reference class originally used a free-form ML_STRING for ReferenceName, making it impossible for implementers to determine what type of enumeration (CVE, CCE, CPE, etc.) was referenced or how to parse it. The solution adopted here is to require a specific structured format for ReferenceName and use an IANA registry to map specIndex values to enumeration specifications.
+section: "2"
+topics:
+    - security
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

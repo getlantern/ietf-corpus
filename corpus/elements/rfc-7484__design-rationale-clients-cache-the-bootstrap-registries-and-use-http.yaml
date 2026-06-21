@@ -1,0 +1,9 @@
+document: rfc-7484
+kind: design-rationale
+summary: Clients cache the Bootstrap Registries and use HTTP Expires to limit fetch frequency, rather than querying IANA on every RDAP lookup, because registry download demand from software could be unusually high compared to normal IANA registries; caching reduces load on IANA servers while keeping data timely.
+section: "8"
+topics:
+    - http
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7482
+kind: security-consideration
+summary: Search functionality requires significantly more server resources than basic lookup (memory, CPU, bandwidth), increasing denial-of-service risk. Mitigations include restricting search to authorized clients, suspending or revoking search privileges for misbehaving clients, rate limiting per RFC 7480 Section 5.5, and restricting the amount of information returned.
+section: "7"
+topics:
+    - security
+    - http
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

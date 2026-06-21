@@ -1,0 +1,9 @@
+document: rfc-7487
+kind: design-rationale
+summary: BFD Control packets transported over G-ACh are not protected by an end-to-end checksum; only lower layers provide error detection. A single flipped bit in the BFD State field could trigger false protection switching. The Integrity (I) flag uses Keyed SHA1 with an empty key as a checksum mechanism — error detection only, not authentication — avoiding the need for pre-shared key management.
+section: 3.1.1
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
