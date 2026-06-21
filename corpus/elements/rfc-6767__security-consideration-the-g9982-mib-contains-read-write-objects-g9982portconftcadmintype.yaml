@@ -1,0 +1,9 @@
+document: rfc-6767
+kind: security-consideration
+summary: The G9982-MIB contains read-write objects (g9982PortConfTcAdminType, g9982PortConfAdminCp) and read-write BACP configuration (g9982BceConfEligibleGroupID) that can disrupt traffic if modified by unauthorized users. SNMPv3 with authentication and privacy MUST be used to protect access to these sensitive objects, as unauthorized modification could cause service disruption on bonded xDSL interfaces.
+section: "7"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

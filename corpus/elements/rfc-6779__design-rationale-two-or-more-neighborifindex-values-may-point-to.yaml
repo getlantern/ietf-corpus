@@ -1,0 +1,8 @@
+document: rfc-6779
+kind: design-rationale
+summary: Two or more NeighborIfIndex values may point to address sets that actually belong to the same neighbor interface, and similarly for NeighborRouterIndex, because NHDP may initially discover distinct address sets before topology information allows it to associate them. The MIB agent is responsible for aggregating and retiring indexes as knowledge increases.
+section: "5.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

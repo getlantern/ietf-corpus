@@ -1,0 +1,12 @@
+document: rfc-6773
+kind: normative-requirement
+summary: If the 'a=rtcp-mux' attribute is not present in an SDP negotiation using RTP over DCCP-UDP, the second demultiplexing method (supporting multiple DCCP connections per UDP 4-tuple) MUST be implemented; otherwise the RTCP DCCP connection will be rejected. Using 'a=rtcp-mux' is RECOMMENDED with RTP over DCCP-UDP.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - udp
+    - nat
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

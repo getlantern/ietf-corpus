@@ -1,0 +1,9 @@
+document: rfc-6772
+kind: security-consideration
+summary: Location obfuscation does not prevent information leakage over time. Even when returning consistent grid-based regions, a Location Recipient can narrow down the Target's true location by collecting multiple reports. The geodetic algorithm mitigates this by returning the same obscured location while the Target stays in the same grid cell, but transitions between cells still reveal movement.
+section: "13.2"
+topics:
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

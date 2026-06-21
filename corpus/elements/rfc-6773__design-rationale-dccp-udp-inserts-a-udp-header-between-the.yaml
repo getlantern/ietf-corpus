@@ -1,0 +1,9 @@
+document: rfc-6773
+kind: design-rationale
+summary: DCCP-UDP inserts a UDP header between the IP header and the DCCP packet; this is not a tunneling approach. The IP addresses of communicating end systems are carried in the IP header without embedding additional IP addresses, allowing NAT/NAPT to translate addresses normally.
+section: "3"
+topics:
+    - nat
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

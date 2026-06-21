@@ -1,0 +1,8 @@
+document: rfc-6772
+kind: design-rationale
+summary: The geodetic obfuscation algorithm uses a fixed grid of landmarks rather than randomly computed regions to prevent incremental information leakage. Random obfuscation reveals more and more about the Target's location over time (illustrated by the intersecting ellipses figure); a fixed grid ensures the same location is reported for all requests while the Target remains in the same cell.
+section: "13.2"
+topics:
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

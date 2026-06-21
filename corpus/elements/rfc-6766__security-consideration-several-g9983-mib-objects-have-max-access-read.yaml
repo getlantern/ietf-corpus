@@ -1,0 +1,9 @@
+document: rfc-6766
+kind: security-consideration
+summary: Several G9983-MIB objects have MAX-ACCESS read-write or read-create, including FEC configuration and service configuration objects. Unauthorized write access could disrupt bonded xDSL services; implementations SHOULD apply SNMPv3 authentication and privacy (authPriv) for any management access that modifies these objects.
+section: "7"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

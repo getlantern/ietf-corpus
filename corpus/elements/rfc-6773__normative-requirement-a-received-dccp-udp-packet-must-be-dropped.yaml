@@ -1,0 +1,10 @@
+document: rfc-6773
+kind: normative-requirement
+summary: 'A received DCCP-UDP packet MUST be dropped if: (1) the UDP Length field is less than 20 bytes, (2) the UDP Checksum is invalid, or (3) the UDP Length field is less than the full UDP+DCCP header length or greater than the total packet length.'
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - udp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

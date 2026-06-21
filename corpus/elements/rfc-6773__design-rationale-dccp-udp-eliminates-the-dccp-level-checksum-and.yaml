@@ -1,0 +1,9 @@
+document: rfc-6773
+kind: design-rationale
+summary: DCCP-UDP eliminates the DCCP-level checksum and relies solely on the UDP checksum because NAT/NAPT traversal methods are unaware that DCCP is encapsulated and will not update the inner DCCP checksum after translating addresses. The UDP checksum covers the entire encapsulated DCCP datagram, providing equivalent protection.
+section: "3.3"
+topics:
+    - nat
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

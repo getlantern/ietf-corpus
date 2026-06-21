@@ -1,0 +1,10 @@
+document: rfc-6775
+kind: security-consideration
+summary: DAR/DAC messages are forwarded by intermediate 6LRs and therefore bypass the hop-limit=255 security check; to mitigate this, they MUST NOT modify NCEs on intermediate routers. Address registration error NAs are sent to the EUI-64-derived link-local address rather than the NS source to avoid L2 address collision risk.
+section: "11"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

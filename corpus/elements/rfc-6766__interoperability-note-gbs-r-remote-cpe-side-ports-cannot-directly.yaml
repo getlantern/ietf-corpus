@@ -1,0 +1,8 @@
+document: rfc-6766
+kind: interoperability-note
+summary: GBS-R (remote/CPE side) ports cannot directly modify service type, FEC configuration, or service lists; all such configuration must be performed on the GBS-C (CO side), which propagates changes to the remote end via G.998.3 BCC messages. MIB write attempts to GBS-R objects MUST be rejected.
+section: "5.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

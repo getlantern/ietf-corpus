@@ -1,0 +1,11 @@
+document: rfc-6773
+kind: security-consideration
+summary: 'DTLS may be applied in two ways with DCCP-UDP: (1) per DCCP connection as with native DCCP, leaving the UDP transport header unprotected; or (2) at the UDP encapsulation layer, protecting all DCCP headers from inspection or modification by middleboxes and eliminating per-connection DTLS handshakes.'
+section: "6"
+topics:
+    - security
+    - udp
+    - nat
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

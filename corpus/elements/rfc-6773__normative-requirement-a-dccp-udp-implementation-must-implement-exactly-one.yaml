@@ -1,0 +1,10 @@
+document: rfc-6773
+kind: normative-requirement
+summary: 'A DCCP-UDP implementation MUST implement exactly one of two demultiplexing methods: (1) accept only one active 6-tuple per UDP 4-tuple and send DCCP-Reset code 12 on conflict, or (2) support multiple DCCP connections per UDP 4-tuple by tracking each 6-tuple, discarding unmatched packets if resources are exhausted.'
+section: "3.8"
+rfc2119_level: MUST
+topics:
+    - udp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

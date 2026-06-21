@@ -1,0 +1,9 @@
+document: rfc-6779
+kind: security-consideration
+summary: The NHDP-MIB contains read-create and read-write objects (HELLO intervals, hold times, hysteresis thresholds, row creation) whose unauthorized modification could disrupt NHDP neighbor discovery across the MANET. Implementors SHOULD use SNMPv3 with authentication and privacy (authPriv) to protect write access.
+section: "8"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

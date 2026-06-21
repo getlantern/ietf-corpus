@@ -1,0 +1,11 @@
+document: rfc-6777
+kind: security-consideration
+summary: Measurement parameters must be carefully selected to inject only trivial amounts of additional traffic; excessive traffic can skew results and in extreme cases cause congestion and denial of service. In the data plane, injected traffic MUST NOT exceed the rate specified in the LSP setup request, and wavelength-switched measurements MUST use the specified or negotiated lambda with appropriate power.
+section: "12"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

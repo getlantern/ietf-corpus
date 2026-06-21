@@ -1,0 +1,8 @@
+document: rfc-6766
+kind: design-rationale
+summary: A two-table design separates service definitions (g9983SvcTable, up to 255 entries) from active service ordering (g9983PortConfAdminServices byte-vector). This allows easy modification of service drop priority by reordering entries in the byte-vector without recreating service objects.
+section: "5.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6775
+kind: design-rationale
+summary: 'Context lifecycle management uses a two-phase approach: new context is introduced with C=0 (decompression-only) to allow dissemination before enabling compression with C=1. Conversely, before reusing a CID, the old context must remain in C=0 dissemination for at least MIN_CONTEXT_CHANGE_DELAY to prevent decompression ambiguity.'
+section: "7.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
