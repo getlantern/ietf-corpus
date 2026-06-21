@@ -1,0 +1,9 @@
+document: rfc-7050
+kind: design-rationale
+summary: Two WKAs (192.0.0.170 and 192.0.0.171) are allocated rather than one because some NSP prefixes may contain the same 32-bit pattern as the primary WKA, making it appear more than once in the synthetic IPv6 address. The second address provides an unambiguous alternative for locating the embedded IPv4 value.
+section: Appendix B
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

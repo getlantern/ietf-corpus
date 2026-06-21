@@ -1,0 +1,10 @@
+document: rfc-7050
+kind: security-consideration
+summary: DNSSEC protection is required for AAAA resource record queries to 'ipv4only.arpa.' because fake positive AAAA responses could cause nodes to erroneously detect a Pref64::/n and use an attacker-injected prefix for address synthesis. The zone MUST be signed.
+section: "7"
+topics:
+    - security
+    - dns
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

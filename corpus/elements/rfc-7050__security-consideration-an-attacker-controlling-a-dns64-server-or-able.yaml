@@ -1,0 +1,11 @@
+document: rfc-7050
+kind: security-consideration
+summary: An attacker controlling a DNS64 server or able to intercept DNS responses can inject a malicious Pref64::/n, redirecting all synthesized traffic to an attacker-controlled destination, causing denial-of-service, flooding, or eavesdropping. Nodes SHOULD use a trusted DNS64 server over a secure channel or validate using DNSSEC.
+section: "7"
+topics:
+    - security
+    - ip
+    - v6ops
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

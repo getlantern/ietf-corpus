@@ -1,0 +1,10 @@
+document: rfc-7050
+kind: design-rationale
+summary: The WKAs must be global (not RFC 5735 non-global) IPv4 addresses because DNS64 servers may refuse to synthesize AAAA records for non-global IPv4 addresses when the Well-Known Prefix is in use, per RFC 6052 Section 3.1. The addresses need not be routable since no actual communication is directed to them.
+section: Appendix B
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

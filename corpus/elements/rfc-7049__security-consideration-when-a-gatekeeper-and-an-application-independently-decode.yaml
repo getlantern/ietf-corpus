@@ -1,0 +1,9 @@
+document: rfc-7049
+kind: security-consideration
+summary: When a gatekeeper and an application independently decode the same CBOR item, an attacker can exploit duplicate map keys or number precision differences to cause the two decoders to reach different interpretations, bypassing the gatekeeper's security check. Firewalls and security systems decoding CBOR should only operate in strict mode.
+section: "8"
+topics:
+    - cbor
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7053
+kind: design-rationale
+summary: No capability negotiation is required for this extension because RFC 4960 already mandates that unknown chunk flags be ignored by receivers. The sender can gracefully handle a receiver that does not honor the I bit (it simply falls back to delayed SACK behavior), making negotiation unnecessary overhead.
+section: "6"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7053
+kind: security-consideration
+summary: A malicious sender can set the I bit on every DATA chunk, forcing the peer to emit a SACK for each received packet rather than every other packet. The additional processing cost is limited because, in the absence of loss or reordering, the extra SACKs contain only the simplest form (no gap reports, no duplicate TSNs); furthermore, a receiver sending a SACK per packet is already permitted by RFC 4960, so this does not introduce new traffic volume.
+section: "9"
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

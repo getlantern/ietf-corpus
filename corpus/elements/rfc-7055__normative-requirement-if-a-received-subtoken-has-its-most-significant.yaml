@@ -1,0 +1,9 @@
+document: rfc-7055
+kind: normative-requirement
+summary: If a received subtoken has its most-significant bit (0x80000000) set in the type field (the 'critical bit'), the receiver MUST fail context establishment unless the subtoken is understood and processed for the current state. A required subtoken absent from a token also causes MUST-fail.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

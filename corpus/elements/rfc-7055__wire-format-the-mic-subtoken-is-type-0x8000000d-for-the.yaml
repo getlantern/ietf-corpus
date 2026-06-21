@@ -1,0 +1,9 @@
+document: rfc-7055
+kind: wire-format
+summary: The MIC subtoken is type 0x8000000D for the initiator and 0x8000000E for the acceptor. Its body is an RFC 3961 get_mic result computed over the DER-encoded mechanism OID, the 16-bit token type, and the concatenated type/length/value of all preceding subtokens. Key usages are 61 (acceptor→initiator) and 62 (initiator→acceptor).
+section: 5.6.3
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

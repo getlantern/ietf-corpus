@@ -1,0 +1,9 @@
+document: rfc-7055
+kind: protocol-element
+summary: 'The Context Root Key (CRK) is derived from the GMSK (itself produced by RFC 3961 random-to-key over the first L bytes of the EAP MSK) using iterated pseudorandom calls: Tn = pseudorandom(GMSK, n || "rfc4121-gss-eap"); CRK = random-to-key(truncate(L, T0||T1||…||Tn)). If the MSK is too short, authentication MUST fail.'
+section: "6"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

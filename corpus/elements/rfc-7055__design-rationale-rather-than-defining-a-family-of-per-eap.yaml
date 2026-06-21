@@ -1,0 +1,8 @@
+document: rfc-7055
+kind: design-rationale
+summary: Rather than defining a family of per-EAP-method GSS-API mechanisms (one OID per method), a single mechanism was chosen to avoid forcing clients to commit to EAP before learning whether a preferred EAP method is available, at the cost of potential bid-down to a non-optimal EAP method. The EAP encryption type is encoded in the OID only to allow SASL name registration.
+section: "4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

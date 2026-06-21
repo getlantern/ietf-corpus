@@ -1,0 +1,10 @@
+document: rfc-7049
+kind: security-consideration
+summary: 'In-place JSON-to-CBOR encoding in a single buffer is risky: strings with few escapes longer than 255 bytes may expand during CBOR encoding, and some short decimal floating-point values (1.1, 1e9) may expand in binary form, creating vulnerabilities exploitable by an attacker supplying crafted JSON.'
+section: "4.2"
+topics:
+    - cbor
+    - security
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

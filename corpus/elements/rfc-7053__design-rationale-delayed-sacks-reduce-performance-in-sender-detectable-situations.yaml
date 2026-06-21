@@ -1,0 +1,8 @@
+document: rfc-7053
+kind: design-rationale
+summary: Delayed SACKs reduce performance in sender-detectable situations such as closing an association, hitting window limits, or resetting streams. Because RFC 4960 provides no mechanism for the sender to request immediate acknowledgment in these cases, a new flag bit in the DATA chunk header was chosen as the simplest extension point.
+section: "1"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

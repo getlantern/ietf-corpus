@@ -1,0 +1,9 @@
+document: rfc-7049
+kind: normative-requirement
+summary: Within an indefinite-length byte string, every chunk between the indefinite-length indicator and the 'break' MUST be a definite-length byte string item; encountering any other item type is a parse error. Likewise, all chunks of indefinite-length text strings MUST be definite-length text strings, and a single UTF-8 character cannot be split across chunks.
+section: 2.2.2
+rfc2119_level: MUST
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7050
+kind: interoperability-note
+summary: The heuristic discovery method does not support learning per-IPv4-address-range prefix mapping rules used by some DNS64 deployments (e.g., separate NAT64 for data-center vs. Internet ranges). Nodes will apply a single discovered Pref64::/n to all IPv4 addresses, which may cause routing issues.
+section: "5.1"
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7049
+kind: interoperability-note
+summary: When converting CBOR maps to JSON objects, only UTF-8 string keys map directly; converting other key types (e.g., integers) to strings risks key collisions. CBOR bytes strings without an encoding hint are base64url-encoded (no padding) when converted to JSON strings.
+section: "4.1"
+topics:
+    - cbor
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

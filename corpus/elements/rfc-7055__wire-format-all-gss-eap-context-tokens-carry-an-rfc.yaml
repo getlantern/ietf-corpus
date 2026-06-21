@@ -1,0 +1,9 @@
+document: rfc-7055
+kind: wire-format
+summary: All GSS-EAP context tokens carry an RFC 2743 [APPLICATION 0] IMPLICIT SEQUENCE wrapper. The innerToken begins with a 2-octet network-byte-order token type ID (0x0601 initiator→acceptor, 0x0602 acceptor→initiator), followed by TLV subtokens each consisting of a 4-octet type, 4-octet body length, and the body.
+section: "5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7055
+kind: security-consideration
+summary: Every proxy in the AAA chain from the authenticator to the EAP server must be trusted to verify channel bindings and protect key material integrity. RADIUS provides only weak MD5-based hop-by-hop confidentiality; RADIUS over TLS (RFC 6614) or Diameter with TLS/IPsec provides significantly better protection of key material in transit.
+section: "8"
+topics:
+    - security
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

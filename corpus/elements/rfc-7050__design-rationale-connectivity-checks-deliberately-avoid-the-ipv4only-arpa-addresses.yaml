@@ -1,0 +1,10 @@
+document: rfc-7050
+kind: design-rationale
+summary: Connectivity checks deliberately avoid the 'ipv4only.arpa.' addresses and instead resolve a separate A record from the NAT64 FQDN. This prevents packet leakage to the Internet and avoids false-negative connectivity results when operators neglect to provision a connectivity check server.
+section: 3.2.1
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
