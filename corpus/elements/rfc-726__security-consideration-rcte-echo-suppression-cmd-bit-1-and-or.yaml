@@ -1,0 +1,8 @@
+document: rfc-726
+kind: security-consideration
+summary: RCTE echo suppression (cmd bit 1 and/or bit 2) is used in practice to hide sensitive terminal input such as passwords from local display, as shown in the sample interaction where cmd value 7 suppresses all echo during password entry. However, RCTE provides no in-transit confidentiality; the suppressed text is still transmitted in plaintext over the network connection.
+section: "6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

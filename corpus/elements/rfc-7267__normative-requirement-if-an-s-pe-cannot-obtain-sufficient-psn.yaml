@@ -1,0 +1,11 @@
+document: rfc-7267
+kind: normative-requirement
+summary: If an S-PE cannot obtain sufficient PSN resources to set up a segment, a Label Release MUST be returned to the previous hop with status 'Bandwidth resources unavailable'. The T-PE receiving this status MUST also withdraw the Label Mapping for the opposite direction if it was already set up.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - qos
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

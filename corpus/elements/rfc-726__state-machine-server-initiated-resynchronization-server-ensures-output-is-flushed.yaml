@@ -1,0 +1,6 @@
+document: rfc-726
+kind: state-machine
+summary: 'Server-initiated resynchronization: server ensures output is flushed (e.g., via Timing Mark Option), sends AO; user flushes all pending user-to-server data, sends SYNCH (DM + INS), and enters initial state; server flushes data preceding DM, then sends a new break reset command. User-initiated resync: user discards buffered data, sends AO, enters step 1; server discards unsent buffered output, sends SYNCH followed by a new break reset command.'
+section: "5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7261
+kind: design-rationale
+summary: The offer/answer semantics for annexa and annexb were underspecified, causing implementations to interpret mismatched parameter values differently — some proceeding with the offerer's value, others with the answerer's — resulting in codec negotiation failures. This document resolves the ambiguity by mandating that if either side indicates no support for Annex A/B, it MUST NOT be used.
+section: "1"
+topics:
+    - realtime
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

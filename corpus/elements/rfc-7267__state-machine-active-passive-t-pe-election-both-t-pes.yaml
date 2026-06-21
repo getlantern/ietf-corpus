@@ -1,0 +1,9 @@
+document: rfc-7267
+kind: state-machine
+summary: 'Active/Passive T-PE election: both T-PEs compare SAII and TAII as unsigned integers (Global ID first, then Prefix, then AC ID). If SAII > TAII the T-PE is active (ST-PE, initiates signaling); if SAII < TAII the T-PE is passive (TT-PE, waits). If all fields are equal, there is a configuration error.'
+section: 4.2.2
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

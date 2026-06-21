@@ -1,0 +1,9 @@
+document: rfc-7266
+kind: design-rationale
+summary: 'Two distinct segment types (single-channel per SSRC and multi-channel per SSRC) are defined to handle two deployment models: separate RTP streams per media channel (identified by SSRC) versus multi-channel audio multiplexed into one RTP stream. The segment type bit (S) allows both to coexist in the same block structure, though they cannot be mixed within a single block.'
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

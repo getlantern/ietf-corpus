@@ -1,0 +1,6 @@
+document: rfc-726
+kind: interoperability-note
+summary: RCTE functionally replaces both the Telnet Go-Ahead (IAC GA) mechanism and the Echo Telnet option. Implementations negotiating RCTE must simultaneously ensure Suppress-Go-Ahead is active and the Echo option is inactive. On exit from RCTE, echo mode must revert to the Telnet default (DON'T ECHO / WON'T ECHO), not whatever state was in force before RCTE was negotiated.
+section: "2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

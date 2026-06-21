@@ -1,0 +1,6 @@
+document: rfc-726
+kind: design-rationale
+summary: RCTE is intentionally restricted to full-duplex hosts only. The Go-Ahead Telnet feature is fully adequate for half-duplex server hosts and RCTE should not be used with them. In a true character-at-a-time scenario the RCTE overhead is also not justified; it pays off only when input can be buffered into meaningful units.
+section: "4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

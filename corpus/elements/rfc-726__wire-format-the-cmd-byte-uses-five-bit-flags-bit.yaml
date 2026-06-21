@@ -1,0 +1,6 @@
+document: rfc-726
+kind: wire-format
+summary: 'The <cmd> byte uses five bit flags: bit 0 = act on other bits (1) vs. continue current behavior (0); bit 1 = skip (1) or print (0) break character; bit 2 = skip (1) or print (0) text up to break; bit 3 = reset break classes using the following BC1 BC2 bytes; bit 4 = reset transmission classes using TC1 TC2. Valid non-zero cmd values are always odd; even values greater than zero are errors. Class bytes BC and TC use 16-bit bitmaps with the rightmost bit of the second byte (BC2/TC2) representing class 1 and the leftmost bit of the first byte representing the currently undefined class 16.'
+section: "2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

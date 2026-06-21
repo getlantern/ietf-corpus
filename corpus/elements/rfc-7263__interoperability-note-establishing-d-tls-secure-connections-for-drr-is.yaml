@@ -1,0 +1,9 @@
+document: rfc-7263
+kind: interoperability-note
+summary: Establishing (D)TLS secure connections for DRR is sub-optimal because DRR typically uses temporary direct connections. With DTLS, a DRR response requires 7+1 messages (versus 1 for unprotected DRR), which may exceed SRR message counts for small overlays (N < 256).
+section: Appendix B.1
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

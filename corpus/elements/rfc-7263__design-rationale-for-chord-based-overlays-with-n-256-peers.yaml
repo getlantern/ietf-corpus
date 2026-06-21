@@ -1,0 +1,8 @@
+document: rfc-7263
+kind: design-rationale
+summary: For Chord-based overlays with N > 256 peers, DRR uses both fewer hops (1 vs log(N)) and fewer messages than SRR. For N <= 256, DRR uses fewer hops but more messages (1 vs log(N)), so the decision depends on whether intermediate peer resource savings outweigh message count.
+section: Appendix B.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

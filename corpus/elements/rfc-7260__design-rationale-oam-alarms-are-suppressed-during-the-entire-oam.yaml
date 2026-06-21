@@ -1,0 +1,9 @@
+document: rfc-7260
+kind: design-rationale
+summary: OAM alarms are suppressed during the entire OAM establishment and parameter adjustment process to avoid spurious alarms caused by missing or unidentified OAM messages before both endpoints are fully configured. Alarms are only enabled after a dedicated Path/Resv exchange with the 'OAM Alarms Enabled' flag set.
+section: "3.1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

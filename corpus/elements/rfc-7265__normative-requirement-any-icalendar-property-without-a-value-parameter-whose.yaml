@@ -1,0 +1,9 @@
+document: rfc-7265
+kind: normative-requirement
+summary: Any iCalendar property without a VALUE parameter whose default value type is not known MUST be converted to a primitive JSON string with the raw unprocessed value text, and the value type MUST be set to 'unknown'. Using 'text' instead risks incorrect escaping that breaks round-tripping.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7263
+kind: normative-requirement
+summary: When using DRR, the sending peer MUST set the IGNORE-STATE-KEEPING flag in the ForwardingHeader and MUST construct a ForwardingOption with type extensive_routing_mode, routemode=0x01 (DRR), appropriate transport, the peer's own transport address in ipaddressport, and a single Destination entry of type 'node' containing the sending peer's own Node-ID.
+section: 5.3.1
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

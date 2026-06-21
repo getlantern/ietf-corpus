@@ -1,0 +1,6 @@
+document: rfc-726
+kind: design-rationale
+summary: Transmission class resets are deliberately non-mandatory guidelines rather than hard constraints. The using host is always permitted to send a character at a time, and may transmit break characters without yet knowing they are break characters (type-ahead). When a transmission classes reset arrives mid-buffer, flushing the buffered text as a group is the simpler and probably adequate response rather than rescanning under the new scheme.
+section: "5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

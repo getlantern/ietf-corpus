@@ -1,0 +1,6 @@
+document: rfc-726
+kind: state-machine
+summary: 'The user Telnet printing control procedure cycles through four steps: (1) read from network—print data items, set classes on command receipt; (2) check terminal input buffer—if empty go to (3), else go to (4); (3) wait for terminal or network input—print spontaneous network data and loop, a network command here is an error; (4) process terminal items—print/skip non-break characters and return to (2), print/skip break characters and return to (1).'
+section: "5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

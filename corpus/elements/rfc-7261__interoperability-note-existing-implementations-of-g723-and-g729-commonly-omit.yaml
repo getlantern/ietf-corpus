@@ -1,0 +1,9 @@
+document: rfc-7261
+kind: interoperability-note
+summary: Existing implementations of G723 and G729 commonly omit the annexa or annexb parameter in the SDP answer even when the offer explicitly set it to 'no'. Compliant implementations must therefore treat an absent parameter in the answer as annexb=yes, while still honoring an explicit no in the offer.
+section: "3.2"
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

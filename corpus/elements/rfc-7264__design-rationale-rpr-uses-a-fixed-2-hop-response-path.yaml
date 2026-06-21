@@ -1,0 +1,8 @@
+document: rfc-7264
+kind: design-rationale
+summary: RPR uses a fixed 2-hop response path regardless of overlay size, while SRR requires O(log N) hops. RPR is more efficient than SRR when N > 4 in terms of hops, and when N > 512 in terms of total messages, making it especially attractive in large or resource-constrained deployments.
+section: B.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
