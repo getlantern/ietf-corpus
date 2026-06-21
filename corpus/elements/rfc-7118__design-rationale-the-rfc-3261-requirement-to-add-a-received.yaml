@@ -1,0 +1,10 @@
+document: rfc-7118
+kind: design-rationale
+summary: The RFC 3261 requirement to add a "received" parameter to the top Via header is relaxed for WebSocket because HTTP proxies and TCP load balancers may sit between client and server, making the recorded source address that of an intermediary rather than the client—potentially revealing sensitive internal topology information.
+section: "5.3"
+topics:
+    - websocket
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

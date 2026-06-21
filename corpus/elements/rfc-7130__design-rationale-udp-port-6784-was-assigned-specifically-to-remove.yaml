@@ -1,0 +1,8 @@
+document: rfc-7130
+kind: design-rationale
+summary: UDP port 6784 was assigned specifically to remove the ambiguity between BFD-over-LAG packets and BFD-over-single-hop-IP (RFC 5881) packets. A misconfiguration where one side uses per-member micro-BFD and the other uses a single RFC 5881 session would otherwise be indistinguishable.
+section: "2.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

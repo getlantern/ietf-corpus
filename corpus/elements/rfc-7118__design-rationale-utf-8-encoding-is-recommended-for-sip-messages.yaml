@@ -1,0 +1,9 @@
+document: rfc-7118
+kind: design-rationale
+summary: UTF-8 encoding is RECOMMENDED for SIP messages over WebSocket because JavaScript and the WebSocket API are natively oriented toward text; the entire SIP message (including headers and body) must be sent as a binary frame if any non-UTF-8 byte is present.
+section: "4.2"
+topics:
+    - websocket
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

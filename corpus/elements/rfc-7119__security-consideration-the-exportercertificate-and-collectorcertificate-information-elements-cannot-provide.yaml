@@ -1,0 +1,10 @@
+document: rfc-7119
+kind: security-consideration
+summary: The exporterCertificate and collectorCertificate Information Elements cannot provide true end-to-end assertions about a chain of IPFIX Mediators because any Mediator in the chain can falsify information about upstream Transport Sessions. Chain-of-mediation integrity must be determined out of band. An Exporting Process has no in-band way to determine whether a given Collecting Process will act as a Mediator.
+section: "12"
+topics:
+    - security
+    - measurement
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

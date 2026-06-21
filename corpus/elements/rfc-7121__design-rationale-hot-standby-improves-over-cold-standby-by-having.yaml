@@ -1,0 +1,8 @@
+document: rfc-7121
+kind: design-rationale
+summary: Hot standby improves over cold standby by having the FE pre-associate with all backup CEs while the master is active. On master failure, there is no association setup cost — the FE simply promotes an already-associated backup, reducing failover time to near-zero for steps 2 and 3 of the NE recovery metric.
+section: "1.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

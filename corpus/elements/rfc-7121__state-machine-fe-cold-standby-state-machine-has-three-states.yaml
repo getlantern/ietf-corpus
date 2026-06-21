@@ -1,0 +1,8 @@
+document: rfc-7121
+kind: state-machine
+summary: 'FE cold standby state machine has three states: Pre-association, Associated, and Not Associated. Triggers include CE mastership change, CE-issued Teardown, or lost association. CEFailoverPolicy=0 causes immediate return to Pre-association; CEFailoverPolicy=1 transitions to Not Associated and starts the CEFTI timer.'
+section: 2.1.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

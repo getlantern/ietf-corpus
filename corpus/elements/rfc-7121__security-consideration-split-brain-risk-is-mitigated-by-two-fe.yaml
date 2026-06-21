@@ -1,0 +1,9 @@
+document: rfc-7121
+kind: security-consideration
+summary: 'Split-brain risk is mitigated by two FE fail-safes: the CEID component designates exactly one master CE, and backup CEs are prohibited from sending configuration messages to the FE. Backup CEs that believe the master has dropped SHOULD query the FE CEID component before acting as master.'
+section: "5"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

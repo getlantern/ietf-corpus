@@ -1,0 +1,9 @@
+document: rfc-7121
+kind: normative-requirement
+summary: When the master CE is considered down in hot standby mode, the FE MUST try to find the first already-associated CE from the AllCEs list in round-robin fashion. If none is found, it MUST attempt to connect and associate with the first CE in the list, cycling round-robin until success or CEFTI expiry.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

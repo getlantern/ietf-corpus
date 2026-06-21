@@ -1,0 +1,9 @@
+document: rfc-7112
+kind: design-rationale
+summary: Unlike IPv4, which had a fixed maximum length for all IPv4 options in a single packet, IPv6 originally imposed no equivalent limit on the combined size of Extension Headers and options. This document closes that gap by requiring all headers to fit within the First Fragment, implicitly bounding header chain length to at most the Path MTU (or 1280 bytes when Path MTU is unknown).
+section: "1"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

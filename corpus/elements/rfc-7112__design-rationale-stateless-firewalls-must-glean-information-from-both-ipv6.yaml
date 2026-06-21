@@ -1,0 +1,9 @@
+document: rfc-7112
+kind: design-rationale
+summary: Stateless firewalls must glean information from both IPv6 and upper-layer headers to enforce forwarding policy. If the header chain spans multiple fragments, the First Fragment alone is insufficient for policy enforcement, causing the firewall to either forward or drop the packet without correctly applying its policy. Requiring the entire header chain in the First Fragment resolves this ambiguity.
+section: "4"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

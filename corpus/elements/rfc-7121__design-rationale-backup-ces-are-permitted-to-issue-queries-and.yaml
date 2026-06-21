@@ -1,0 +1,8 @@
+document: rfc-7121
+kind: design-rationale
+summary: Backup CEs are permitted to issue queries and receive heartbeats from the FE (even though SET/DEL config messages are dropped) because in practice it has been found useful to allow backup CEs to monitor FE state before taking over as master.
+section: "3.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7119
+kind: design-rationale
+summary: Absolute timestamps (e.g., flowStartSeconds, flowStartMilliseconds) are RECOMMENDED over relative timestamps (e.g., flowStartSysUpTime, flowStartDeltaMicroseconds) because relative timestamps require constant translation across mediation operations and can introduce range problems — for example, flowStartDeltaMicroseconds requires export within 71 minutes.
+section: "7"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

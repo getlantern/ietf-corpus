@@ -1,0 +1,9 @@
+document: rfc-7121
+kind: normative-requirement
+summary: If CE failover policy is 1 and HAMode is 2 (hot standby), after successfully associating with the master CE, the FE MUST attempt to connect and associate with all the CEs of which it is aware. The FE MAY flag unreachable CEs to avoid continuous reconnection attempts.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
