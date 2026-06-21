@@ -1,0 +1,8 @@
+document: rfc-6675
+kind: interoperability-note
+summary: Implementers may optionally re-arm the RTO timer on each retransmission sent during recovery (rather than on each cumulative ACK advance per RFC 6298). This more conservative variant can prevent needless retransmissions when a loss event lasts longer than the RTO, but may not always be desirable.
+section: "6"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,12 @@
+document: rfc-6679
+kind: design-rationale
+summary: ECN support for RTP is more important than for TCP because packet loss in real-time audio-visual media is highly visible to users and cannot be repaired by retransmission. ECN allows applications to reduce transmission rate before routers drop packets, preserving media quality in a controlled manner.
+section: "3"
+topics:
+    - rtp
+    - ecn
+    - congestion
+    - realtime
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

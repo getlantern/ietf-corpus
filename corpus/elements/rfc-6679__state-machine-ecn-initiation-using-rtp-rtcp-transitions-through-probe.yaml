@@ -1,0 +1,10 @@
+document: rfc-6679
+kind: state-machine
+summary: ECN initiation using RTP/RTCP transitions through probe, feedback collection, and determination states. Success requires stable group membership (at least 3 RTCP intervals) with all known participants having sent ECN feedback confirming ECT receipt. Failure is declared when a participant's RTCP report indicates it should have received >3 ECT packets but contains no ECN feedback.
+section: 7.2.1
+topics:
+    - rtp
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6675
+kind: state-machine
+summary: Loss recovery is entered when DupAcks >= DupThresh (step 1) or IsLost(HighACK+1) returns true (step 2). Entry sets RecoveryPoint = HighData, reduces ssthresh and cwnd to FlightSize/2, retransmits first presumed-dropped segment, and runs SetPipe(). Recovery ends when a cumulative ACK exceeds RecoveryPoint.
+section: "5"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

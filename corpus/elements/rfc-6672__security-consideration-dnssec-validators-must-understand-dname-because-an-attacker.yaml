@@ -1,0 +1,10 @@
+document: rfc-6672
+kind: security-consideration
+summary: DNSSEC validators MUST understand DNAME because an attacker can collate existing DNS records to forge a bogus NXDOMAIN response. Without understanding the DNAME bit in the NSEC type bitmap, a validator cannot distinguish a valid name error from a spoofed one.
+section: 5.3.4
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

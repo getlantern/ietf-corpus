@@ -1,0 +1,8 @@
+document: rfc-6675
+kind: design-rationale
+summary: The duplicate acknowledgment definition was broadened to include any ACK carrying new SACK data covering the range HighACK to HighData. This allows SACK information (rather than just cumulative ACK stagnation) to trigger loss recovery entry, enabling more accurate distinction between loss and reordering.
+section: "9"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

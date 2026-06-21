@@ -1,0 +1,8 @@
+document: rfc-6677
+kind: design-rationale
+summary: A local database at the EAP/AAA server is essential because a lying authenticator could include false information in both i1 (sent to peer) and i2 (sent to AAA server), making consistency checks between i1 and i2 alone insufficient to detect the attack. The database provides trusted ground-truth for comparing received information.
+section: "5.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

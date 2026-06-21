@@ -1,0 +1,9 @@
+document: rfc-6672
+kind: security-consideration
+summary: DNAME redirects queries to potentially different security zones. The lowest security status of any link in a CNAME/DNAME chain determines the security status of the final result. Wildcarded DNAMEs create additional security issues because the synthesized CNAME has no signature and the server's intended result may differ from what the resolver computes.
+section: "8"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

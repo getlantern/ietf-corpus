@@ -1,0 +1,9 @@
+document: rfc-6677
+kind: security-consideration
+summary: When channel binding is added to tunnel EAP methods, existing cryptographic binding does not typically provide the mutual authentication required for channel binding because the MSK from the inner method is often accessible to the authenticator, which can use it to control channel-binding parameters. Server certificate validation with name checking can provide the required mutual authentication instead.
+section: "9.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

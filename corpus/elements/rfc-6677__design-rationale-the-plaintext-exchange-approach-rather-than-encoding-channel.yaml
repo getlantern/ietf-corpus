@@ -1,0 +1,8 @@
+document: rfc-6677
+kind: design-rationale
+summary: The plaintext exchange approach (rather than encoding channel-binding info directly into key derivation) was chosen because it allows policy-based comparisons rather than requiring bitwise equality, facilitates debugging and incremental deployment, and does not require extensive revisions to existing EAP methods. Consistent canonicalization required for key-derivation inclusion would likely cause significant deployment problems.
+section: "4.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

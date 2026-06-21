@@ -1,0 +1,11 @@
+document: rfc-6679
+kind: security-consideration
+summary: The ECN feedback mechanism creates potential for cheating by both sender and receiver. A receiver could falsely report ECN-CE marks to throttle the sender, or falsely omit reports to let a congestion-causing sender continue. The mechanism includes counter-based verification (comparing ECT sent vs. ECT received) to detect such manipulation.
+section: "11"
+topics:
+    - security
+    - rtp
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

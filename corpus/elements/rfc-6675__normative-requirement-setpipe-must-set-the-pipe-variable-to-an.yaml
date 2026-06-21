@@ -1,0 +1,10 @@
+document: rfc-6675
+kind: normative-requirement
+summary: SetPipe() MUST set the 'pipe' variable to an estimate of octets currently in transit between sender and receiver, by traversing sequence space from HighACK to HighData. Pipe is incremented for each non-SACKed octet where IsLost returns false, and again for each octet at or below HighRxt (retransmitted octets are counted twice).
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

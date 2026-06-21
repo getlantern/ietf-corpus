@@ -1,0 +1,9 @@
+document: rfc-6675
+kind: security-consideration
+summary: SACK-based loss recovery mitigates a blind in-window attack variant (per RFC 5961 and CPNI309) where spoofed out-of-window data causes duplicate cumulative ACKs. Requiring SACK information to trigger loss recovery means attacker-induced duplicate ACKs without corresponding in-window SACK data will not trigger a recovery phase.
+section: "8"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

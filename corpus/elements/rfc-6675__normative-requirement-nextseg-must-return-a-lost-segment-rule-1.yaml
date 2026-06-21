@@ -1,0 +1,9 @@
+document: rfc-6675
+kind: normative-requirement
+summary: 'NextSeg() MUST return a lost segment (rule 1: smallest unSACKed S2 > HighRxt, below highest SACK coverage, where IsLost returns true) if one exists; otherwise MUST return new unsent data if available (rule 2); otherwise SHOULD return an unconfirmed-lost segment (rule 3); otherwise SHOULD return a single rescue retransmission of the highest outstanding unSACKed segment (rule 4).'
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

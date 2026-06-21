@@ -1,0 +1,8 @@
+document: rfc-6675
+kind: design-rationale
+summary: The RescueRxt variable was added to allow one extra optimistic retransmission per loss recovery entry, limited to at most one segment of no more than 1 SMSS. This prevents ACK clock stalling when loss occurs at the end of the window and no new data is available.
+section: "9"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

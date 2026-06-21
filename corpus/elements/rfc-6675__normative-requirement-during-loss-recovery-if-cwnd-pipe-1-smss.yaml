@@ -1,0 +1,10 @@
+document: rfc-6675
+kind: normative-requirement
+summary: During loss recovery, if cwnd - pipe >= 1 SMSS, the sender SHOULD transmit one or more segments as directed by NextSeg(). HighRxt MUST be updated to the highest retransmitted sequence number when retransmitting below HighData (unless NextSeg() rule 4 was used).
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

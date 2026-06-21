@@ -1,0 +1,11 @@
+document: rfc-6679
+kind: design-rationale
+summary: RTCP ECN feedback counts the number of ECN-CE marked packets rather than flipping a single bit per RTT as TCP does. This is because real-time applications need to distinguish between a burst of congestion marks and a single mark, and RTCP reporting periods are not aligned with RTTs.
+section: "3"
+topics:
+    - rtp
+    - ecn
+    - congestion
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

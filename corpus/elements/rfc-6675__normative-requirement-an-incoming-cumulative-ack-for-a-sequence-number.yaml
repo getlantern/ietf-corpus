@@ -1,0 +1,9 @@
+document: rfc-6675
+kind: normative-requirement
+summary: An incoming cumulative ACK for a sequence number greater than RecoveryPoint signals end of loss recovery and the recovery phase MUST be terminated. Scoreboard information for sequence numbers greater than the new HighACK SHOULD NOT be cleared when leaving recovery.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6677
+kind: security-consideration
+summary: If an EAP server validates a channel-binding attribute (such as a username) that was guessed by the authenticator in i2 and fails when it mismatches the peer's i1, the server inadvertently confirms the authenticator's guess, creating a privacy oracle. Similar exposures arise whenever one party can guess channel-binding information provided by another.
+section: "9.4"
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

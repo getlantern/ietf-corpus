@@ -1,0 +1,9 @@
+document: rfc-6675
+kind: normative-requirement
+summary: After an RTO, a SACK TCP sender SHOULD expunge SACK information (per RFC 2018) and MUST ignore prior SACK information when determining which data to retransmit. However, the sender SHOULD utilize all new SACK information made available during post-RTO loss recovery.
+section: "5.1"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

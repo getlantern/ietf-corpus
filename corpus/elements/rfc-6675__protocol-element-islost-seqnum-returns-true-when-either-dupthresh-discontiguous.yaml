@@ -1,0 +1,8 @@
+document: rfc-6675
+kind: protocol-element
+summary: IsLost(SeqNum) returns true when either DupThresh discontiguous SACKed sequences have arrived above SeqNum, or more than (DupThresh - 1) * SMSS bytes with sequence numbers greater than SeqNum have been SACKed. This improvement over RFC 3517 handles segments smaller than SMSS.
+section: "4"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

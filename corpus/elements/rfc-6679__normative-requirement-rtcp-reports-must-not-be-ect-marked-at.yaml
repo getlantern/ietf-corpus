@@ -1,0 +1,11 @@
+document: rfc-6679
+kind: normative-requirement
+summary: RTCP reports MUST NOT be ECT marked at any time, since ECT-marked traffic may be dropped if the path is not ECN compliant, and RTCP is needed to provide feedback even when ECT-marked RTP traffic is not getting through.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - ecn
+    - rtp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

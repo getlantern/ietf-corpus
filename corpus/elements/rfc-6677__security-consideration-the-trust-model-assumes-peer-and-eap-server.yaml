@@ -1,0 +1,8 @@
+document: rfc-6677
+kind: security-consideration
+summary: The trust model assumes peer and EAP server are honest while the authenticator may be malicious. The server trusts channel-binding info from the peer reflects what the authenticator advertised; the peer trusts the server's channel-binding result; and the server trusts its local database. If any of these trust relationships are violated, channel binding cannot be provided.
+section: "9.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

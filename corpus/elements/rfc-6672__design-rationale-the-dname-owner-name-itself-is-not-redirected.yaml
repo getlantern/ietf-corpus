@@ -1,0 +1,8 @@
+document: rfc-6672
+kind: design-rationale
+summary: The DNAME owner name itself is not redirected — only subordinate names are. This differs from CNAME, which redirects the owner name itself. This allows a zone apex to have a DNAME while retaining its SOA and NS records, though it cannot be used to completely mirror a zone.
+section: "2.3"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

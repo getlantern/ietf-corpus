@@ -1,0 +1,9 @@
+document: rfc-6675
+kind: security-consideration
+summary: SACK-based loss recovery is more robust than standard TCP against attackers forging duplicate ACKs to force cwnd reduction, because SACK provides an additional check on ACK legitimacy. While not fool-proof, SACK offers meaningful protection against this attack vector.
+section: "8"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
