@@ -1,0 +1,8 @@
+document: rfc-7352
+kind: design-rationale
+summary: The ':handle' argument was introduced to prevent interference between unrelated 'duplicate' tests that may encounter similar or overlapping ID values (e.g., two tests using different headers whose values happen to collide). Without ':handle', all duplicate tests share the same tracking namespace.
+section: "3.2"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

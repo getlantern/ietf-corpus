@@ -1,0 +1,10 @@
+document: rfc-7349
+kind: protocol-element
+summary: To compute the HMAC, the Authentication Data field is first filled with AuthTag (a value encoding the IP source address followed by the repeated byte pattern 0x878FE1F3). Then AuthData = HMAC(Ko, Hello Message) is computed over the LDP Hello message excluding IP and UDP headers.
+section: "5.2"
+topics:
+    - mpls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

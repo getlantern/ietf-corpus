@@ -1,0 +1,8 @@
+document: rfc-7357
+kind: interoperability-note
+summary: The ESADI PDU format changed from IS-IS Level 1 (PDU numbers 18/24/26) to E-L1CS (PDU numbers 10/11/12), which is not backwards compatible with RFC 6325. Implementations of each type will discard the other's PDUs; enabling data plane address learning during migration fills the resulting gap, albeit without ESADI's speed or security advantages.
+section: A.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,11 @@
+document: rfc-7350
+kind: normative-requirement
+summary: In the TURN resolution mechanism, if <secure> is true and <transport> is 'udp' but the application does not support DTLS, the resolution MUST stop with an error. If <secure> is true and <transport> is not defined but neither TLS nor DTLS is supported, resolution MUST stop with an error.
+section: 4.6.2
+rfc2119_level: MUST
+topics:
+    - tls
+    - dns
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7349
+kind: design-rationale
+summary: To prevent cross-protocol replay attacks among protocols sharing common keys, a 2-octet LDP Cryptographic Protocol ID (value 2) is appended to the authentication key before use, producing a protocol-specific key Ks. Other protocols using the same key append their own Protocol IDs, ensuring distinct effective key values per protocol.
+section: "4"
+topics:
+    - mpls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7352
+kind: design-rationale
+summary: The mechanism to track duplicate messages is very similar to the mechanism needed for tracking duplicate responses for the 'vacation' action. One recommended implementation strategy is to store a hash of the tracked unique ID combined with the ':handle' argument, leveraging the existing vacation-tracking infrastructure.
+section: "3.2"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

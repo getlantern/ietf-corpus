@@ -1,0 +1,9 @@
+document: rfc-7357
+kind: normative-requirement
+summary: The MAC-Reachability TLVs in TRILL ESADI PDUs MUST NOT contain the Data Label ID; only the Inner.VLAN or Inner.FGL tag indicates the applicable Data Label. A received Confidence of 255 MUST be treated as 254 to preserve override by statically configured local information with Confidence 255.
+section: "6.2"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

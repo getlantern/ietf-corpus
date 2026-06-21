@@ -1,0 +1,11 @@
+document: rfc-7349
+kind: normative-requirement
+summary: Key storage SHOULD persist across a system restart (warm or cold). If the last key associated with an interface expires, the router SHOULD send a 'last Authentication Key expiration' notification and treat the key as having an infinite lifetime rather than reverting to an unauthenticated condition.
+section: "2.2"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7344
+kind: state-machine
+summary: 'KSK rollover using CDS (Double-DS method): (1) Child publishes CDS with keys AB; (2) Parent updates DS to AB after detecting change; (3) Child switches active KSK from A to B; (4) Child removes key A from CDS (CDS=B); (5) Parent removes DS for A (DS=B); (6) optionally Child removes CDS entirely. Each transition requires waiting for TTL expiry of the prior RRset.'
+section: B
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,6 @@
+document: rfc-735
+kind: design-rationale
+summary: The BM option is motivated as a simple data compression technique. Standard Telnet subcommands require a minimum of five characters overhead (IAC SB <option> IAC SE). For block-oriented data with blocks as small as five or ten bytes, the majority of cross-network traffic would otherwise be control overhead; BM removes this burden by substituting single bytes for longer strings.
+section: "4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

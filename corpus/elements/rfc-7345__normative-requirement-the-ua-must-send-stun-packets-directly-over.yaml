@@ -1,0 +1,11 @@
+document: rfc-7345
+kind: normative-requirement
+summary: 'The UA MUST send STUN packets directly over UDP, not over DTLS. The UA MUST support demultiplexing incoming packets: first byte 0 or 1 indicates STUN; first byte between 20 and 63 inclusive indicates DTLS.'
+section: 5.2.2
+rfc2119_level: MUST
+topics:
+    - tls
+    - nat
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

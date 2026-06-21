@@ -1,0 +1,10 @@
+document: rfc-7357
+kind: security-consideration
+summary: ESADI PDUs can be authenticated via the Authentication TLV [RFC5310] using keying material derived as HMAC-SHA256('TRILL ESADI', IS-IS-LSP-shared-key). Combined with 802.1X/EAP end station registration, ESADI MAC reachability information can be made substantially more trustworthy than data plane learning, though it still requires trusting all RBridges holding valid keying material.
+section: "8"
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

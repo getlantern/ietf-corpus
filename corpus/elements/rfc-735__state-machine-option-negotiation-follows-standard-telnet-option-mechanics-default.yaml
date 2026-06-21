@@ -1,0 +1,6 @@
+document: rfc-735
+kind: state-machine
+summary: 'Option negotiation follows standard Telnet option mechanics: default state is WON''T BM / DON''T BM (no reinterpretation). Transition to active state requires WILL BM + DO BM exchange. WON''T BM or DON''T BM at any point returns to default and discards all macro definitions. If a receiver insists on canceling a macro it cannot refuse, it may send DONT BM, await WONT BM, then restart with DO BM, resetting all macros.'
+section: "2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

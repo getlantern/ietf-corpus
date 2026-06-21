@@ -1,0 +1,8 @@
+document: rfc-7356
+kind: design-rationale
+summary: Standard TLVs are limited to 255 octets because of their 8-bit Type and Length fields. When sub-TLV usage grows, splitting object information across multiple TLVs requires repeating identifying keys and increases receiver complexity. Extended TLVs with 16-bit fields solve this without that overhead.
+section: "2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

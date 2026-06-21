@@ -1,0 +1,8 @@
+document: rfc-7356
+kind: design-rationale
+summary: The 5-bit PDU Type field caps IS-IS at 32 PDU types. To conserve this scarce space, new PDUs carry a Scope field so that multiple flooding scopes share the same PDU type codes (FS-LSP=10, FS-CSNP=11, FS-PSNP=12), allowing future scopes without new PDU type allocations.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

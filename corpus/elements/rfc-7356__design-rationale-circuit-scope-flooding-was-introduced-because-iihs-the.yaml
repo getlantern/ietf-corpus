@@ -1,0 +1,8 @@
+document: rfc-7356
+kind: design-rationale
+summary: Circuit scope flooding was introduced because IIHs — the only existing circuit-scope PDU — are unreliable; individual IIHs may be lost without affecting protocol correctness. When circuit-scope information (e.g., TRILL Appointed Forwarder data per RFC 7176) exceeds a single PDU or requires reliability, periodic retransmission is inefficient and still cannot guarantee delivery.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

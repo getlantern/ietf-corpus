@@ -1,0 +1,9 @@
+document: rfc-7349
+kind: interoperability-note
+summary: If the Cryptographic Authentication TLV (0x0405) is unknown to the receiving LSR, the received packet MUST be discarded per the unknown-TLV handling rules in RFC 5036 Section 3.5.1.2.2. Bit pattern 0|0 in the TLV type field causes unknown TLVs to be dropped.
+section: "6.2"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

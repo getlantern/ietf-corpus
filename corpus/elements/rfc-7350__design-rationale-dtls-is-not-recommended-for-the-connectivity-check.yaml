@@ -1,0 +1,10 @@
+document: rfc-7350
+kind: design-rationale
+summary: DTLS is not recommended for the Connectivity Check usage because adding DTLS on top would delay and impair the ICE process. MESSAGE-INTEGRITY already protects STUN responses against injection attacks without requiring the overhead of DTLS.
+section: "4.2"
+topics:
+    - tls
+    - nat
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

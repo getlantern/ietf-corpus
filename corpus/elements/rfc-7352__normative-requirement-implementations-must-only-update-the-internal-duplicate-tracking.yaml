@@ -1,0 +1,9 @@
+document: rfc-7352
+kind: normative-requirement
+summary: Implementations MUST only update the internal duplicate-tracking list when the Sieve script execution finishes successfully. Failing script executions MUST NOT add the unique ID to the list, as doing so would cause all 'duplicate' tests to erroneously yield 'true' for the next delivery attempt.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
