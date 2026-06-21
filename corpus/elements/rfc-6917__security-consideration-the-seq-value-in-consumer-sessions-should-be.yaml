@@ -1,0 +1,9 @@
+document: rfc-6917
+kind: security-consideration
+summary: The <seq> value in Consumer sessions SHOULD be randomly initialized by the MRB to reduce the likelihood that a malicious entity (e.g., a rogue MRB) could predict and disrupt an existing session by injecting requests with valid sequence numbers. The 0..2^31-1 range provides the randomization space.
+section: 5.2.3
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

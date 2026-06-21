@@ -1,0 +1,8 @@
+document: rfc-6920
+kind: security-consideration
+summary: Two names are the same ONLY if algorithm, length, AND value all match. A 32-bit truncated sha-256 name is NOT the same as a full 256-bit sha-256 name even if one is a prefix of the other; treating them as equivalent opens collision and confusion attacks.
+section: "10"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

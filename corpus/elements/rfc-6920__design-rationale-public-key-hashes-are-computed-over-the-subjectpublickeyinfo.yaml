@@ -1,0 +1,10 @@
+document: rfc-6920
+kind: design-rationale
+summary: Public key hashes are computed over the SubjectPublicKeyInfo structure (RFC 5280 Section 4.1) for compatibility with DANE TSLA (RFC 6698) and to ensure relevant public key parameters are included in the hash input, which is sometimes necessary for security. This does not require full X.509 compliance since formatting as SubjectPublicKeyInfo is well-supported by libraries.
+section: "2"
+topics:
+    - crypto
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-6920
+kind: normative-requirement
+summary: When comparing two ni/nih names, an implementation MUST only consider the digest algorithm and the digest value; it MUST NOT consider other fields such as the authority or query parameters. Two hashes are identical if and only if the decoded hashes have the same algorithm, same length, and same binary value.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

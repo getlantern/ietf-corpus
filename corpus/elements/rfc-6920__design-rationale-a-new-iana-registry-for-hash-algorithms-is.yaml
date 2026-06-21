@@ -1,0 +1,10 @@
+document: rfc-6920
+kind: design-rationale
+summary: A new IANA registry for hash algorithms is created specifically for this specification rather than reusing existing registries, in order to avoid mixing strong full-length and weaker truncated hash algorithms in other protocol registries. Inclusion of weak hash functions (e.g., MD5) can trigger costly false positives in code audits for obsolete ciphers.
+section: "1"
+topics:
+    - registry
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
