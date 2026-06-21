@@ -1,0 +1,8 @@
+document: rfc-6667
+kind: design-rationale
+summary: Graceful PW shutdown without a session flap is achieved by sending a single Label Withdraw message containing Typed Wildcard FEC Elements for both PWid and Generalized PWid (PW type 0x7FFF each), causing the peer to delete all corresponding bindings and respond with Label Release messages.
+section: "4.2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

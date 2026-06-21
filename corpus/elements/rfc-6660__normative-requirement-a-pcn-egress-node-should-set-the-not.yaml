@@ -1,0 +1,12 @@
+document: rfc-6660
+kind: normative-requirement
+summary: A PCN-egress-node SHOULD set the not-PCN ('00') codepoint on all packets it forwards out of the PCN-domain, preventing leakage of PCN or ECN marks. An exception is allowed only if the egress is certain that exposing other codepoints complies with RFC 4774.
+section: "5.3"
+rfc2119_level: SHOULD
+topics:
+    - ecn
+    - diffserv
+    - qos
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

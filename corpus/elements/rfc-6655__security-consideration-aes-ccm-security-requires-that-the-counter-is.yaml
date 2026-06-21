@@ -1,0 +1,10 @@
+document: rfc-6655
+kind: security-consideration
+summary: AES-CCM security requires that the counter is never reused. The IV construction (4-byte implicit salt plus 8-byte explicit per-record nonce) is specifically designed to prevent counter reuse across records.
+section: "8.2"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

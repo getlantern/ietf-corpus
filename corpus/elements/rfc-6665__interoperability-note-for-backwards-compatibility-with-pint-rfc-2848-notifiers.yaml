@@ -1,0 +1,9 @@
+document: rfc-6665
+kind: interoperability-note
+summary: For backwards compatibility with PINT (RFC 2848), notifiers MAY interpret a SUBSCRIBE request with no Event header field as a request for PINT events. Non-PINT notifiers SHOULD return 489 (Bad Event) for any SUBSCRIBE without an Event header field.
+section: 4.2.3
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

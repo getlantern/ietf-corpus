@@ -1,0 +1,10 @@
+document: rfc-6660
+kind: design-rationale
+summary: When only Threshold-marking is active, an unexpected ETM packet is not re-marked to ThM even though ETM is invalid in that configuration. This preserves the global invariant that ETM is more severe and MUST never be downgraded, avoiding the need for a data-plane code path exception and reducing misconfiguration risk.
+section: Appendix D
+topics:
+    - ecn
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

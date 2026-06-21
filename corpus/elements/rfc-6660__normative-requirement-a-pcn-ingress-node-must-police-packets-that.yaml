@@ -1,0 +1,12 @@
+document: rfc-6660
+kind: normative-requirement
+summary: A PCN-ingress-node MUST police packets that carry a PCN-compatible DSCP, are not classified as PCN-packets, and have an ECN field codepoint other than Not-ECT, by re-marking the DSCP to a non-PCN-compatible value, tunnelling with a non-PCN DSCP, or dropping. In the absence of operator-specific configuration, an implementation SHOULD re-mark the DSCP to zero.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - ecn
+    - diffserv
+    - qos
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

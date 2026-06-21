@@ -1,0 +1,10 @@
+document: rfc-6665
+kind: normative-requirement
+summary: Event packages that support state deltas MUST include a version number that increases by exactly one for each NOTIFY transaction in a subscription. If a NOTIFY arrives with a version increment greater than one, the subscriber ignores the delta body and re-subscribes to obtain full state.
+section: 5.3.2
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

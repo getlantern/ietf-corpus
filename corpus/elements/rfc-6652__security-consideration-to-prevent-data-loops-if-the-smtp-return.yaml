@@ -1,0 +1,10 @@
+document: rfc-6652
+kind: security-consideration
+summary: To prevent data loops, if the SMTP return address used for SPF failure reports is not the NULL return address ('<>'), it MUST be selected such that it will pass SPF MAIL FROM checks upon initial receipt. The HELO/EHLO parameter SHOULD also be selected to pass SPF HELO checks when submitting via an MSA.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

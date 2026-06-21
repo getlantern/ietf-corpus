@@ -1,0 +1,9 @@
+document: rfc-6655
+kind: wire-format
+summary: When nonce_explicit equals the sequence number, the CCMClientNonce is struct { uint32 client_write_IV; uint64 seq_num; } and CCMServerNonce is struct { uint32 server_write_IV; uint64 seq_num; }. In DTLS the 64-bit seq_num is the 16-bit epoch concatenated with the 48-bit sequence number.
+section: "3"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

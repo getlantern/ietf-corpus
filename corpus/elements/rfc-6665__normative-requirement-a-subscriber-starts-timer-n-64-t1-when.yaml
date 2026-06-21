@@ -1,0 +1,10 @@
+document: rfc-6665
+kind: normative-requirement
+summary: A subscriber starts Timer N (64*T1) when sending a SUBSCRIBE request. If Timer N expires before a NOTIFY is received, the subscription is considered failed. After Timer N expiry, NOTIFY requests that would establish new dialog usages SHOULD be rejected with 481.
+section: 4.1.2.4
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

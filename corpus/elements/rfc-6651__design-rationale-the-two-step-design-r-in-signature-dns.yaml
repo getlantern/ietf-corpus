@@ -1,0 +1,9 @@
+document: rfc-6651
+kind: design-rationale
+summary: The two-step design (r= in signature + DNS confirmation record) prevents a malicious Signer from directing reports to an arbitrary address; the DNS record must exist under the Signer's own domain, making it impossible to redirect reports outside that domain. This addresses both unauthorized report flooding and distributed email-based DoS.
+section: "3.3"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

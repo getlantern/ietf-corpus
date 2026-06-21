@@ -1,0 +1,9 @@
+document: rfc-6651
+kind: security-consideration
+summary: An attacker can forge DKIM-Signature fields with 'r=y' and 'd=<target>' to flood a victim domain with reports. Implementers are strongly advised not to publish the reporting DNS record unless failure reports are actively desired, and should anticipate denial-of-service traffic if they do.
+section: "8.3"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

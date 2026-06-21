@@ -1,0 +1,9 @@
+document: rfc-6657
+kind: design-rationale
+summary: The RFC 2046 rule that the default charset for 'text/*' is 'US-ASCII' is considered outdated. Many complex subtypes such as 'text/html' and 'text/xml' have internal charset mechanisms, and existing user agents already ignore the US-ASCII default for those types. Additionally, RFC 2616 introduced a conflicting 'ISO-8859-1' default for HTTP, creating ambiguity about which specification is authoritative.
+section: "1"
+topics:
+    - email
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

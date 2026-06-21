@@ -1,0 +1,9 @@
+document: rfc-6650
+kind: security-consideration
+summary: If a host is known to generate reports upon certain incidents, an attacker can forge high volumes of triggering messages to inundate the report recipient. Mitigation includes using ARF's incident count field to batch reports, applying inverse-exponential rate limiting, and halting generation upon temporary failure responses from the destination.
+section: "7.5"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

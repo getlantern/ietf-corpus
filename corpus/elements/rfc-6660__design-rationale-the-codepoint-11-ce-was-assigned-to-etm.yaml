@@ -1,0 +1,11 @@
+document: rfc-6660
+kind: design-rationale
+summary: The codepoint '11' (CE) was assigned to ETM (the most severe PCN state) because legacy pre-RFC6040 tunnels always propagated '11' correctly but did not reliably propagate '01'. This makes ETM a fail-safe signal even if a misconfigured legacy tunnel suppresses ThM ('01') marks.
+section: "4.2"
+topics:
+    - ecn
+    - diffserv
+    - qos
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

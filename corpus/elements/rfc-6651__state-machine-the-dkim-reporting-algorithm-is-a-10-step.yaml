@@ -1,0 +1,9 @@
+document: rfc-6651
+kind: state-machine
+summary: 'The DKIM Reporting Algorithm is a 10-step process: (1) check for ''r='' tag; (2) DNS TXT query to ''_report._domainkey.<d=>''; (3) validate RCODE and single-record response; (4) concatenate fragments; (5) validate syntax; (6) match failure reason to ''rr=''; (7) apply ''rp='' random sampling; (8–9) construct recipient and send ARF report; (10) optionally include ''rs='' string in SMTP reply. Processing MUST NOT affect the DKIM evaluation outcome.'
+section: "3.3"
+topics:
+    - email
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

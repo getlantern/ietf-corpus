@@ -1,0 +1,8 @@
+document: rfc-6667
+kind: design-rationale
+summary: A PW consistency check is enabled by having LSR A mark all learned Generalized PWid bindings from LSR B as stale, send a Typed Wildcard Label Request (PW type 0x7FFF), and then purge any still-stale bindings upon receipt of the End-of-LIB notification (RFC 5919) from LSR B, leveraging the wildcard to avoid per-PW request messages.
+section: "4.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-6658
+kind: design-rationale
+summary: Two adjacent MPLS LSRs exchange not only MPLS packets but also IP packets (for adjacency, routing, label exchange), data-link packets (IS-IS hellos, LSPs), and OAM packets (LLDP). All these protocols must fate-share, which requires a multiplexing attachment mechanism — motivating the use of a virtual Ethernet rather than a single-protocol link.
+section: "1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

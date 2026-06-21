@@ -1,0 +1,8 @@
+document: rfc-6651
+kind: design-rationale
+summary: Placing the report request in the DKIM-Signature header (rather than only in the key record, as in early OpenDKIM implementations) ensures the request is visible even for failure cases where the key record is not retrieved, while the DNS confirmation step prevents forgery.
+section: "3.3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

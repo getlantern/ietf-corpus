@@ -1,0 +1,10 @@
+document: rfc-6665
+kind: normative-requirement
+summary: If a NOTIFY transaction fails due to receipt of a 404, 405, 410, 416, 480-485, 489, 501, or 604 response, the notifier MUST remove the corresponding subscription. If a SUBSCRIBE refresh receives the same error codes, the subscriber MUST consider the subscription terminated.
+section: 4.2.2
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6655
+kind: wire-format
+summary: 'The CCMNonce is exactly 12 bytes: a 4-byte implicit salt (client_write_IV or server_write_IV, not transmitted on the wire) concatenated with an 8-byte explicit nonce (nonce_explicit) carried in each TLS record''s GenericAEADCipher.nonce_explicit field. SecurityParameters.fixed_iv_length is 4; SecurityParameters.record_iv_length is 8.'
+section: "3"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
