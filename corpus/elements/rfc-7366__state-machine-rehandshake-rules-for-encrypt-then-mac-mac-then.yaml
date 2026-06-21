@@ -1,0 +1,9 @@
+document: rfc-7366
+kind: state-machine
+summary: 'Rehandshake rules for encrypt-then-MAC: MAC-then-encrypt -> MAC-then-encrypt is no change; MAC-then-encrypt -> encrypt-then-MAC is an upgrade; encrypt-then-MAC -> MAC-then-encrypt is an error (downgrade forbidden); encrypt-then-MAC -> encrypt-then-MAC is no change. These rules apply across all rehandshakes, including indirect downgrades via AEAD ciphersuites.'
+section: "3.1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

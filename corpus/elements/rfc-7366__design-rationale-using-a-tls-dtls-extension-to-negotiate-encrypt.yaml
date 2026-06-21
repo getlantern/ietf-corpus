@@ -1,0 +1,9 @@
+document: rfc-7366
+kind: design-rationale
+summary: Using a TLS/DTLS extension to negotiate encrypt-then-MAC is preferred over defining new ciphersuites because new ciphersuites would cause a Cartesian explosion requiring duplication of every existing suite. The extension approach requires a single new extension type and changed less than a dozen lines of code in one implementation.
+section: "2.1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

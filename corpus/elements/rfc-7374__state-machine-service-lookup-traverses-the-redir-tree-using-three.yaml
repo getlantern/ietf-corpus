@@ -1,0 +1,8 @@
+document: rfc-7374
+kind: state-machine
+summary: 'Service lookup traverses the ReDiR tree using three conditions: (1) no successor found → move up one level; (2) n.id is neither lowest nor highest in its interval → move down one level; (3) a successor exists and n.id is at a boundary → lookup complete. The walk terminates when Condition 3 holds or the root is reached.'
+section: "4.5"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

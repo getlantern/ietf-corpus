@@ -1,0 +1,10 @@
+document: rfc-7377
+kind: normative-requirement
+summary: If the server supports the ACL extension, the user must have the 'r' right for explicitly named mailboxes and the 'l' right for implicitly included ones (e.g., via 'personal' or 'subtree'). Mailboxes for which the user lacks rights MUST be silently ignored; ESEARCH responses MUST NOT be returned for them.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7361
+kind: design-rationale
+summary: The document introduces 'negative' MAC flushing ('flush-all-from-me', N=1) as an optimization over the RFC 4762 'positive' MAC flushing ('flush-all-but-mine', N=0). In positive flushing, a PE receiving a flush discards all MACs except those on the receiving PW, causing unnecessary flooding across many VPLS instances; negative flushing scopes the flush only to MACs learned from the failing PE's specific PW.
+section: "3.2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

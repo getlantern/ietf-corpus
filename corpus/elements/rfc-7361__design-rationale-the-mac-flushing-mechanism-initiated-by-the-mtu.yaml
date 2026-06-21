@@ -1,0 +1,8 @@
+document: rfc-7361
+kind: design-rationale
+summary: The MAC flushing mechanism initiated by the MTU-s is modeled after the Topology Change Notification (TCN) in RSTP (IEEE 802.1Q). When a bridge switches from a failed link to its backup, it sends a TCN message over the newly activated link, causing the upstream bridge to flush MAC addresses except those received on that link.
+section: 3.1.2
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7374
+kind: design-rationale
+summary: A local temporary cache MAY be maintained during a lookup to store all RedirServiceProvider entries fetched during the walk. If the lookup fails because a successor's record has just expired, the cache can be searched for a fallback successor, recovering gracefully from the race condition.
+section: "4.5"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

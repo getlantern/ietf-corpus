@@ -1,0 +1,8 @@
+document: rfc-7361
+kind: design-rationale
+summary: In PBB-VPLS, simply using RFC 4762 B-MAC flushing to address I-component topology changes causes excessive, unnecessary B-MAC flushing in the backbone even though the backbone itself has not failed. The MAC Flush Parameters TLV with C=1 allows I-component events to propagate through B-VPLS infrastructure without triggering spurious B-MAC flush actions.
+section: "4.2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7377
+kind: security-consideration
+summary: A single ESEARCH command can trigger expensive searches across tens of thousands of mailboxes, creating a resource-exhaustion vector not easily possible with standard per-mailbox SEARCH commands. Servers must implement per-client resource limits and per-search mailbox count limits to prevent one client from adversely affecting others.
+section: "5"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

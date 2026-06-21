@@ -1,0 +1,9 @@
+document: rfc-7363
+kind: security-consideration
+summary: Malicious peers may share false join rate, leave rate, and network size estimates via Probe requests, potentially manipulating a victim's stabilization interval. The use of 75th percentile aggregation mitigates this when the number of malicious peers is modest, but an attacker who can impersonate peers in strategic locations may send enough false estimates to influence the victim's behavior.
+section: "8"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7374
+kind: design-rationale
+summary: A naive approach of storing all service provider Node-IDs under a single well-known key scales linearly with providers, overloading the responsible node. ReDiR instead builds a distributed tree structure so that lookup load is spread across many nodes and lookup completes in a constant average number of Fetch operations.
+section: "1"
+topics:
+    - routing
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

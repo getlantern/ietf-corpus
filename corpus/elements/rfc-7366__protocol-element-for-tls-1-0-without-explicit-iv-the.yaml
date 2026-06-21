@@ -1,0 +1,10 @@
+document: rfc-7366
+kind: protocol-element
+summary: For TLS 1.0 (without explicit IV), the MAC is computed as MAC(MAC_write_key, seq_num + TLSCipherText.type + TLSCipherText.version + TLSCipherText.length + ENC(content+padding+padding_length)). For TLS 1.1 and greater with explicit IV, the IV field is included between the length and the encrypted payload in the MAC input.
+section: "3"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

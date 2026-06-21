@@ -1,0 +1,10 @@
+document: rfc-7366
+kind: wire-format
+summary: Under encrypt-then-MAC, TLS processing switches from encrypt(data||MAC||pad) to encrypt(data||pad)||MAC, with the MAC covering the entire packet up to the start of the MAC value. The TLSCiphertext struct gains a trailing opaque MAC field outside the GenericBlockCipher fragment.
+section: "3"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

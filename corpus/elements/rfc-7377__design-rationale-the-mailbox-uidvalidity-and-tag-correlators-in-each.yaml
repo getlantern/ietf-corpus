@@ -1,0 +1,8 @@
+document: rfc-7377
+kind: design-rationale
+summary: The MAILBOX, UIDVALIDITY, and TAG correlators in each ESEARCH response allow a client to safely pipeline multiple ESEARCH commands without waiting for each to complete, since responses from different commands and mailboxes can be unambiguously matched. This was the primary motivation for using ESEARCH over untagged SEARCH.
+section: "1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

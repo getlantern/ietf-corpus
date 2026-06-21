@@ -1,0 +1,10 @@
+document: rfc-7366
+kind: normative-requirement
+summary: Encrypt-then-MAC applies only to block ciphers (GenericBlockCipher). If a server receives an encrypt-then-MAC request extension but then selects a stream or AEAD ciphersuite, it MUST NOT send an encrypt-then-MAC response extension back to the client.
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

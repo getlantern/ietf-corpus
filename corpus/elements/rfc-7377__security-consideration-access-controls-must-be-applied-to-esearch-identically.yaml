@@ -1,0 +1,9 @@
+document: rfc-7377
+kind: security-consideration
+summary: Access controls MUST be applied to ESEARCH identically to any other IMAP command. Mailboxes for which the user lacks rights must be silently ignored; distinguishing 'insufficient access' from 'non-existent mailbox' in error responses could expose information about the mailbox hierarchy that is not otherwise available.
+section: "5"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
