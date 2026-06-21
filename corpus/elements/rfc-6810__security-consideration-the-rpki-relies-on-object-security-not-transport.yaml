@@ -1,0 +1,10 @@
+document: rfc-6810
+kind: security-consideration
+summary: The RPKI relies on object security, not transport security, for inter-cache trust. However, routers cannot perform RPKI cryptographic validation, so the cache-to-router link relies on server authentication and transport-level security — a fundamentally weaker threat model. The cache SHOULD be topologically and administratively close to the router.
+section: "11"
+topics:
+    - routing
+    - bgp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-6822
+kind: design-rationale
+summary: 'Dedicated MAC multicast addresses are required for non-zero IID PDUs on broadcast circuits because ISO 10589 requires legacy routers to silently ignore unknown TLVs, causing them to misinterpret MI-IS-IS PDUs as belonging to IID #0, which would corrupt LSDBs and DIS elections.'
+section: 2.6.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

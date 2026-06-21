@@ -1,0 +1,10 @@
+document: rfc-6811
+kind: normative-requirement
+summary: When a prefix-to-AS mapping is added or deleted, the implementation MUST re-validate any affected prefixes and run the BGP decision process if needed. An 'affected prefix' is any prefix that was matched by a deleted or updated mapping, or could be matched by an added or updated mapping.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

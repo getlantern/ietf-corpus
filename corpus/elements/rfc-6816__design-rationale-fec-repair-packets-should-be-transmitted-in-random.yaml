@@ -1,0 +1,6 @@
+document: rfc-6816
+kind: design-rationale
+summary: FEC repair packets should be transmitted in random order (while source packets go first and in sequence) rather than sequentially. This strategy works well for any channel loss model; sending all packets randomly is also possible but requires all repair symbols to be ready before transmission, adding latency at the sender.
+section: "7.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

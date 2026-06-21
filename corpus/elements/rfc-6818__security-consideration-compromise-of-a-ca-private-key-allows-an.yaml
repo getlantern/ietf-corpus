@@ -1,0 +1,11 @@
+document: rfc-6818
+kind: security-consideration
+summary: Compromise of a CA private key allows an attacker to issue bogus certificates and CRLs, including bogus CA certificates with the same subject names as legitimate CAs, enabling issuance of certificates with matching issuer names and possibly the same serial numbers as legitimate ones. All certificates issued to a compromised CA MUST be revoked.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

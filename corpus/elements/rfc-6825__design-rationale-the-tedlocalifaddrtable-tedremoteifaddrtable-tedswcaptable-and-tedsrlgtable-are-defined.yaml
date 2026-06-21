@@ -1,0 +1,9 @@
+document: rfc-6825
+kind: design-rationale
+summary: The tedLocalIfAddrTable, tedRemoteIfAddrTable, tedSwCapTable, and tedSrlgTable are defined as separate tables (rather than columns in tedTable) because their corresponding sub-TLVs may appear multiple times within the same Link-TLV, requiring a one-to-many relationship.
+section: "5"
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

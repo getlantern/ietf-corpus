@@ -1,0 +1,8 @@
+document: rfc-6816
+kind: security-consideration
+summary: Setting the encoding symbol length E to a smaller-than-valid value causes an incoherency at the receiver (repair symbols exceed declared E), enabling DoS. Setting E larger than valid when S=1 has similar impact; when S=0, the receiver derives E from the first repair packet, mitigating the attack on E.
+section: "6.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

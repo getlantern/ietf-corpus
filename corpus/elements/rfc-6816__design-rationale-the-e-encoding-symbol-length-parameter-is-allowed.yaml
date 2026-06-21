@@ -1,0 +1,6 @@
+document: rfc-6816
+kind: design-rationale
+summary: The E (encoding symbol length) parameter is allowed to be either fixed per session (S=1) or determined per source block by the size of the first received repair symbol (S=0), because ADU sizes can vary significantly across frames (e.g., H.264 GOP frames) and across flows; the S=0 mode avoids the need to pre-negotiate a fixed E while still conveying E implicitly.
+section: "4.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
