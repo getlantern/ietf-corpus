@@ -1,0 +1,8 @@
+document: rfc-6719
+kind: design-rationale
+summary: A node advertises the path cost of the worst (highest-cost) member of the parent set, not the preferred parent's cost. This conservative advertisement ensures that other nodes selecting this node as a parent can rely on any member of the parent set, but may result in suboptimal routing if parent set path costs vary widely.
+section: "3.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

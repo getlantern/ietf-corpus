@@ -1,0 +1,9 @@
+document: rfc-6716
+kind: design-rationale
+summary: Super-wideband (SWB) uses a 24 kHz effective sample rate rather than 32 kHz because the MDCT band layout allows cleanly skipping frequencies above 12 kHz but not those above 16 kHz, and 24 evenly divides 48 kHz. Experimental changes to support a 16 kHz cutoff showed quality degradations at other sample rates and saved negligible bits at typical bitrates.
+section: "2"
+topics:
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-6724
+kind: state-machine
+summary: 'Source address selection applies 8 pair-wise comparison rules in order: (1) prefer same address, (2) prefer appropriate scope, (3) avoid deprecated addresses, (4) prefer home addresses, (5) prefer outgoing interface, (5.5) prefer addresses from a prefix advertised by the next-hop, (6) prefer matching label, (7) prefer temporary addresses, (8) use longest matching prefix. If all 8 rules tie, the tiebreaker is implementation-specific.'
+section: "5"
+topics:
+    - ip
+    - v6ops
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

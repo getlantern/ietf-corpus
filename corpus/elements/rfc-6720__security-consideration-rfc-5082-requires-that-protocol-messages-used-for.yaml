@@ -1,0 +1,10 @@
+document: rfc-6720
+kind: security-consideration
+summary: RFC 5082 requires that protocol messages used for dynamic GTSM negotiation MUST be authenticated, but LDP Basic Discovery uses UDP and lacks an authentication mechanism. The use of link-level multicast (224.0.0.2) provides basic protection against off-the-wire attacks but not insider on-the-wire attacks.
+section: "4"
+topics:
+    - mpls
+    - security
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

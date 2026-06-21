@@ -1,0 +1,8 @@
+document: rfc-6726
+kind: design-rationale
+summary: FEC OTI can be delivered either via EXT_FTI (per-packet, lower latency but higher overhead) or via the FDT (once in the file description entry, lower overhead). When both are available, receivers SHOULD prioritize EXT_FTI, as the FDT may arrive later.
+section: "5"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

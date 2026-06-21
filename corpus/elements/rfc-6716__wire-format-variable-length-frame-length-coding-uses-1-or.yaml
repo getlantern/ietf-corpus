@@ -1,0 +1,9 @@
+document: rfc-6716
+kind: wire-format
+summary: 'Variable-length frame length coding uses 1 or 2 bytes: values 1–251 encode the length directly; values 252–255 signal a second byte, with total length = (second_byte × 4) + first_byte; value 0 indicates no frame (DTX or lost). Maximum representable length is 1275 bytes.'
+section: 3.2.1
+topics:
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

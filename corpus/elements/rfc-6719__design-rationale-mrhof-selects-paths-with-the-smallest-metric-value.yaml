@@ -1,0 +1,8 @@
+document: rfc-6719
+kind: design-rationale
+summary: MRHOF selects paths with the smallest metric value while using hysteresis to prevent excessive churn. It switches to a minimum-cost path only if that path is cheaper than the current path by at least PARENT_SWITCH_THRESHOLD, avoiding instability from small metric fluctuations.
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

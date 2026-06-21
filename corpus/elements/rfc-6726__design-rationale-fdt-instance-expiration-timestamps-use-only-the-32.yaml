@@ -1,0 +1,8 @@
+document: rfc-6726
+kind: design-rationale
+summary: FDT Instance expiration timestamps use only the 32 most significant bits of a 64-bit NTP time value, representing whole seconds. Both senders and receivers determine the correct 136-year epoch by choosing whichever makes the expiration time closest to current time, handling the 2036 wraparound without flag bits.
+section: "3.3"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

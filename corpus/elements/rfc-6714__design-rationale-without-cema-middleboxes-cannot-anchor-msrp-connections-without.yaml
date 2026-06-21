@@ -1,0 +1,11 @@
+document: rfc-6714
+kind: design-rationale
+summary: Without CEMA, middleboxes cannot anchor MSRP connections without acting as MSRP B2BUAs because MSRP routing information is embedded in message headers. An active UA establishes the TCP/TLS connection using the SDP 'path' attribute URI rather than the c/m-line, so middlebox c/m-line modifications are ignored unless the middlebox also modifies the 'path' attribute, which then breaks MSRP URI comparison. This B2BUA requirement imposes high resource cost and violates end-to-end confidentiality.
+section: "1"
+topics:
+    - realtime
+    - sip
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

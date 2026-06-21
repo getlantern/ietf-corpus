@@ -1,0 +1,9 @@
+document: rfc-6724
+kind: state-machine
+summary: 'Destination address selection applies 10 pair-wise comparison rules in order: (1) avoid unusable destinations, (2) prefer matching scope, (3) avoid deprecated source, (4) prefer home addresses, (5) prefer matching label, (6) prefer higher precedence, (7) prefer native transport over encapsulating mechanisms, (8) prefer smaller scope, (9) use longest matching prefix (same address family), (10) preserve original order. Rules MUST be applied in order; a rule that determines a result means remaining rules MUST be ignored.'
+section: "6"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

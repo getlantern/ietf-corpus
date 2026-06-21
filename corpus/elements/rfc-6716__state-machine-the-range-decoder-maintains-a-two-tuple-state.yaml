@@ -1,0 +1,9 @@
+document: rfc-6716
+kind: state-machine
+summary: The range decoder maintains a two-tuple state (val, rng), both 32-bit unsigned integers. Initialization sets rng = 128 and val = 127 − (b0 >> 1). After each symbol decode, renormalization repeats until rng > 2^23 by left-shifting rng by 8 and consuming 7 bits from the next input byte.
+section: 4.1.1
+topics:
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

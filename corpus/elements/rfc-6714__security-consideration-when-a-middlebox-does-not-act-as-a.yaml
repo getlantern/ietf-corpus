@@ -1,0 +1,10 @@
+document: rfc-6714
+kind: security-consideration
+summary: When a middlebox does not act as a TLS B2BUA under CEMA, TLS is established peer-to-peer and the middlebox forwards encrypted packets without being able to inspect content. When endpoints fall back to RFC 4975 behavior, the middlebox acts as a TLS B2BUA, decrypting and re-encrypting all MSRP traffic.
+section: "7.4"
+topics:
+    - security
+    - tls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

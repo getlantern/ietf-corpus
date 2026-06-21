@@ -1,0 +1,9 @@
+document: rfc-6723
+kind: state-machine
+summary: 'The Appendix A diagram extends RFC 4447''s C-bit handling: when control word changes from NOT PREFERRED to PREFERRED, the PE deletes and reconfigures the PW, sends Label Release and Label Withdraw, waits for Label Release, then sends Label Request. On receiving the remote Label Mapping, it proceeds with normal RFC 4447 C-bit resolution. A ''Wrong C-bit'' branch triggers sending a new Label Mapping message.'
+section: A
+topics:
+    - realtime
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

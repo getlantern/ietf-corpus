@@ -1,0 +1,11 @@
+document: rfc-6714
+kind: security-consideration
+summary: Fingerprint-based TLS authentication requires signaling integrity protection. Without cryptographic end-to-end SDP protection, any on-path proxy can replace fingerprints and insert a TLS B2BUA. Endpoints using fingerprint-based authentication are therefore forced to trust the entire signaling path, and signaling over the Internet SHOULD NOT be trusted for this purpose.
+section: "7.7"
+rfc2119_level: SHOULD NOT
+topics:
+    - security
+    - tls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

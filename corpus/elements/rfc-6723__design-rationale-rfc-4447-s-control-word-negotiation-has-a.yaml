@@ -1,0 +1,9 @@
+document: rfc-6723
+kind: design-rationale
+summary: 'RFC 4447''s control-word negotiation has a bug: when a PE changes its preference from NOT PREFERRED to PREFERRED, if the peer had already advertised C=0, the PE will still send C=0 in its Label Mapping, resulting in ''not used'' even though both endpoints are configured PREFERRED. This occurs because the previously received Label Mapping with C=0 drives the re-advertisement.'
+section: "3"
+topics:
+    - realtime
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

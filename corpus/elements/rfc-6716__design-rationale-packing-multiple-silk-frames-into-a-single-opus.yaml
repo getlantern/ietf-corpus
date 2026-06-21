@@ -1,0 +1,9 @@
+document: rfc-6716
+kind: design-rationale
+summary: Packing multiple SILK frames into a single Opus packet saves on average half a byte per SILK frame by eliminating inter-frame padding in the range coder, and allows some parameters to be predicted across frames without degrading packet-loss robustness.
+section: 4.2.2
+topics:
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

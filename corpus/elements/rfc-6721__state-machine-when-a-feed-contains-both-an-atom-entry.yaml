@@ -1,0 +1,6 @@
+document: rfc-6721
+kind: state-machine
+summary: When a feed contains both an atom:entry and an at:deleted-entry sharing the same atom:id, processors compare the at:deleted-entry 'when' attribute to the atom:entry 'atom:updated' value. If 'when' is equal to or newer, the entry is treated as deleted and the atom:entry SHOULD be ignored; if 'when' is older, the entry is treated as republished and the at:deleted-entry SHOULD be ignored.
+section: "3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

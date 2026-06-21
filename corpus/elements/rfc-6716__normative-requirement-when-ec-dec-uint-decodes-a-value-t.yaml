@@ -1,0 +1,10 @@
+document: rfc-6716
+kind: normative-requirement
+summary: When ec_dec_uint() decodes a value t that is >= ft (indicating a corrupt frame), the decoder SHOULD take measures to conceal the error, such as saturating to ft−1 or invoking Packet Loss Concealment (PLC), and/or report the error to the application.
+section: 4.1.5
+rfc2119_level: SHOULD
+topics:
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

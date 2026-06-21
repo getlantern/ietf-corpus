@@ -1,0 +1,9 @@
+document: rfc-6723
+kind: state-machine
+summary: 'Renegotiation state sequence for a PE changing control-word preference from NOT PREFERRED to PREFERRED: (1) send Label Release (and Label Withdraw + await Label Release if Label Mapping was previously sent); (2) send Label Request and await Label Mapping; (3) upon receipt of Label Mapping with current C bit, send own Label Mapping per RFC 4447 Section 6. The entire sequence must complete before processing further configuration changes.'
+section: "4"
+topics:
+    - realtime
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6726
+kind: security-consideration
+summary: File-level integrity (digital signature applied once per file) has low overhead but cannot isolate corrupt packets. Packet-level integrity (TESLA, HMAC Group-Keyed MAC, per-packet digital signatures) can isolate corrupt packets but adds per-packet overhead. At least one technique SHOULD be used when file corruption is a concern.
+section: 7.2.2
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

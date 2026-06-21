@@ -1,0 +1,10 @@
+document: rfc-6716
+kind: security-consideration
+summary: Implementations must carefully validate all length fields in Opus packets before use, as malformed packets with inconsistent or oversized frame lengths could cause buffer overreads or overflows in a decoder. The constraints R1–R7 in Section 3.4 are the normative guard against such attacks.
+section: "7"
+topics:
+    - realtime
+    - voip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

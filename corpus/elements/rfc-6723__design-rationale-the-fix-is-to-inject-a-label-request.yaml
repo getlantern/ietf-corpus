@@ -1,0 +1,9 @@
+document: rfc-6723
+kind: design-rationale
+summary: The fix is to inject a Label Request message into the renegotiation sequence so that the local PE can obtain a fresh Label Mapping from the remote PE reflecting its current (updated) control-word preference rather than relying on cached state. This resolves the stale C-bit problem without changing the core RFC 4447 negotiation algorithm.
+section: "4"
+topics:
+    - realtime
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-6724
+kind: design-rationale
+summary: CommonPrefixLen was changed from RFC 3484 to compare only bits up to the source address's prefix length, excluding the interface ID. The prior definition caused matching interface-ID bits to override DNS load balancing by always selecting the destination sharing the most bits with the source.
+section: Appendix B
+topics:
+    - ip
+    - v6ops
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

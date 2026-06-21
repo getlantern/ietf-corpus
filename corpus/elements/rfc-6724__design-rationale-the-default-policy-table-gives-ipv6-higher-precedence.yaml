@@ -1,0 +1,9 @@
+document: rfc-6724
+kind: design-rationale
+summary: The default policy table gives IPv6 higher precedence than IPv4 (::ffff:0:0/96 at precedence 35 vs ::/0 at 40), making applications prefer IPv6 when equally suitable. An administrator can reverse this by raising ::ffff:0:0/96 to precedence 100, which is the recommended fix for environments needing IPv4 preference.
+section: "10.3"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

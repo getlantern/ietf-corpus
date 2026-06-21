@@ -1,0 +1,10 @@
+document: rfc-6714
+kind: design-rationale
+summary: CEMA allows middleboxes to anchor MSRP by modifying only the SDP c/m-line (as they do for other media types), without needing to parse or modify MSRP messages. CEMA-enabled endpoints use the c/m-line address to establish the TCP/TLS connection rather than the 'path' attribute URI, enabling end-to-end TLS even with an anchoring middlebox.
+section: "1"
+topics:
+    - realtime
+    - sip
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

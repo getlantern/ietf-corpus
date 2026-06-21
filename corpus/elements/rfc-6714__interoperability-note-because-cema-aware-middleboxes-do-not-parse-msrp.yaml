@@ -1,0 +1,10 @@
+document: rfc-6714
+kind: interoperability-note
+summary: Because CEMA-aware middleboxes do not parse MSRP payloads, they cannot reuse TCP connections across multiple MSRP sessions. Instead, each session typically gets a unique local address:port, which may result in a separate TCP connection per session between two middleboxes.
+section: "6.3"
+topics:
+    - realtime
+    - sip
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

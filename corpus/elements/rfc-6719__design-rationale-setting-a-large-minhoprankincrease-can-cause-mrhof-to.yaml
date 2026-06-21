@@ -1,0 +1,8 @@
+document: rfc-6719
+kind: design-rationale
+summary: Setting a large MinHopRankIncrease can cause MRHOF to be unable to distinguish paths with different hop counts but similar metric values. If MinHopRankIncrease increment exceeds link cost, metrics drive parent selection but advertised Rank becomes a simple hop count, which may be unintended.
+section: "6.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

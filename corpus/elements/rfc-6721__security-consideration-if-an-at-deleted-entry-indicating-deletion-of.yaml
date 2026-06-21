@@ -1,0 +1,9 @@
+document: rfc-6721
+kind: security-consideration
+summary: If an at:deleted-entry indicating deletion of an atom:entry is signed with a different key than the original entry, or is unsigned while the entry was signed, this may indicate a spoofing attack. Processors must verify the validity of at:deleted-entry elements in relation to the signing keys of the referenced entries.
+section: "7"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
