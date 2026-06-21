@@ -1,0 +1,9 @@
+document: rfc-6733
+kind: normative-requirement
+summary: The End-to-End Identifier MUST remain locally unique for at least 4 minutes even across reboots; request senders MUST insert a unique value on each message. Answer originators MUST copy the End-to-End Identifier from the corresponding request. Diameter agents MUST NOT modify it; the combination of Origin-Host and this field is used for duplicate detection.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

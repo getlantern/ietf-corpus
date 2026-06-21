@@ -1,0 +1,10 @@
+document: rfc-6733
+kind: normative-requirement
+summary: Diameter SCTP messages SHOULD be mapped to avoid head-of-line (HOL) blocking; the RECOMMENDED approach is to send every Diameter message over stream zero with the unordered flag set. The receiving entity MUST be ready to receive Diameter messages over any SCTP stream. During connection establishment, the responder SHOULD NOT use out-of-order delivery until the first message is received from the initiator, to avoid a race condition with CEA delivery.
+section: 2.1.1
+rfc2119_level: RECOMMENDED
+topics:
+    - diameter
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

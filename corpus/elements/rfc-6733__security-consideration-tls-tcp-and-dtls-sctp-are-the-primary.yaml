@@ -1,0 +1,11 @@
+document: rfc-6733
+kind: security-consideration
+summary: TLS/TCP and DTLS/SCTP are the primary mandatory transport security mechanisms. Using a dedicated secured port (5658) where TLS is established before any Diameter messages is the required approach; the deprecated Inband-Security AVP negotiation left CER/CEA messages unprotected. IPsec is an acceptable alternative but secondary to TLS/DTLS.
+section: "13.1"
+topics:
+    - diameter
+    - tls
+    - security
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

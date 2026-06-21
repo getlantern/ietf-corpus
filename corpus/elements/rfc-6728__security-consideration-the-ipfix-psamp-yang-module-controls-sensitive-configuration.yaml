@@ -1,0 +1,11 @@
+document: rfc-6728
+kind: security-consideration
+summary: The IPFIX/PSAMP YANG module controls sensitive configuration data including export destinations, TLS credentials, and rate limits. NETCONF sessions carrying this data MUST be protected using SSH or TLS as required by RFC 6241. Unauthorized write access could redirect or disable traffic monitoring; unauthorized read access could expose network topology and measurement policy.
+section: "8"
+topics:
+    - security
+    - netconf
+    - yang
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

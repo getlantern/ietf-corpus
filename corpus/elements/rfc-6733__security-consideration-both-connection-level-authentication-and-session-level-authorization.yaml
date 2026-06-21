@@ -1,0 +1,10 @@
+document: rfc-6733
+kind: security-consideration
+summary: 'Both connection-level authentication and session-level authorization are required: peers must verify that connecting nodes are authorized to act in their advertised roles, not merely that they authenticated. The home server MUST check Route-Record AVPs to authorize the full routing path. The End-to-End security framework (E2E-Sequence AVP and P-bit in the AVP header) has been deprecated; transport-level security replaces it.'
+section: "13.2"
+topics:
+    - diameter
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

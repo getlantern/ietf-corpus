@@ -1,0 +1,8 @@
+document: rfc-6733
+kind: protocol-element
+summary: The Session-Id AVP globally and eternally uniquely identifies a Diameter user session; its value MUST be globally unique and never reused. Its format is '<DiameterIdentity>;<high 32 bits>;<low 32 bits>[;<optional value>]', where the high-order 32 bits commonly encode time and the low-order 32 bits are a monotonically increasing counter. All messages within a session MUST carry the same Session-Id.
+section: "8.8"
+topics:
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

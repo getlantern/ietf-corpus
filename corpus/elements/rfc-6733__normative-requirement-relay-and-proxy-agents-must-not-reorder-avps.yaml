@@ -1,0 +1,10 @@
+document: rfc-6733
+kind: normative-requirement
+summary: Relay and proxy agents MUST NOT reorder AVPs in a Diameter message. Relay agents SHOULD NOT maintain session state but MUST maintain transaction state, saving the incoming Hop-by-Hop Identifier and replacing it with a locally unique value when forwarding, then restoring the original when the corresponding answer is received.
+section: "2.7"
+rfc2119_level: MUST NOT
+topics:
+    - diameter
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

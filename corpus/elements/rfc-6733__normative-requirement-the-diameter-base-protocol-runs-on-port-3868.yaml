@@ -1,0 +1,12 @@
+document: rfc-6733
+kind: normative-requirement
+summary: The Diameter base protocol runs on port 3868 for both TCP and SCTP. A node initiating a TLS/TCP or DTLS/SCTP connection prior to any message exchange MUST use port 5658. When DNS SRV-based peer discovery is used, port numbers from SRV records take precedence over the defaults (3868 and 5658).
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - diameter
+    - tls
+    - tcp
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

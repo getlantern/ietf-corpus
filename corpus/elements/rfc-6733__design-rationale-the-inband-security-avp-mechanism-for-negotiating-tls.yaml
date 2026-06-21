@@ -1,0 +1,10 @@
+document: rfc-6733
+kind: design-rationale
+summary: The Inband-Security AVP mechanism for negotiating TLS was deprecated because bootstrapping TLS through CER/CEA exchanges means those messages are sent unprotected, creating a window where an active attacker can observe or tamper with capability negotiation. The fix—a well-known port (5658) where TLS is established before any Diameter traffic—closes this vulnerability.
+section: 1.1.3
+topics:
+    - diameter
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

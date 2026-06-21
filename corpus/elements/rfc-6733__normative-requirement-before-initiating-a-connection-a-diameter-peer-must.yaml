@@ -1,0 +1,11 @@
+document: rfc-6733
+kind: normative-requirement
+summary: Before initiating a connection, a Diameter peer MUST verify that its peers are authorized to act in their claimed roles. The home server MUST check Route-Record AVPs to confirm that the traversed path is acceptable, returning DIAMETER_AUTHORIZATION_REJECTED if not. Diameter sessions MUST be routed only through nodes that have advertised support for the required Diameter application.
+section: "2.9"
+rfc2119_level: MUST
+topics:
+    - diameter
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

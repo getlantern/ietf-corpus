@@ -1,0 +1,9 @@
+document: rfc-6728
+kind: design-rationale
+summary: Incomplete configurations—where a functional block lacks a reference to a downstream block (e.g., a SelectionProcess without a Cache reference)—are intentionally not treated as invalid. This allows multi-step configuration and pre-configuration of device functions; absent output references cause output to be dropped without error.
+section: "3.2"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

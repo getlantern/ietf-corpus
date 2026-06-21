@@ -1,0 +1,10 @@
+document: rfc-6731
+kind: normative-requirement
+summary: When a requested name matches a specific domain or network rule accepted from any interface, a DNSSEC-aware resolver MUST NOT proceed with a reply that cannot be validated using DNSSEC until all RDNSSes on the preference list have been contacted or timed out, to protect against redirection attacks.
+section: "4.1"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
