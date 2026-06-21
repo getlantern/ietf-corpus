@@ -1,0 +1,8 @@
+document: rfc-7450
+kind: design-rationale
+summary: AMT relays do not send unsolicited query messages to gateways because the set of active gateways may be unknown to the relay and potentially very large. Instead, each gateway periodically sends a Request message to solicit a query, mimicking the periodic query behavior of an IGMP/MLD router.
+section: 4.2.1.2
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

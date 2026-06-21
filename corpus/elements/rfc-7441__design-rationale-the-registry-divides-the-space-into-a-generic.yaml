@@ -1,0 +1,11 @@
+document: rfc-7441
+kind: design-rationale
+summary: The registry divides the space into a Generic/PIM range (0x01-0x3F), an mLDP range (0x43-0x7F), and a reserved range (0x80-0xFF). Corresponding PIM and mLDP route types share the same low-order 6 bits. When requesting new codepoints, both a Generic/PIM and an mLDP codepoint should be requested simultaneously, even if one will only be marked Reserved.
+section: "5"
+topics:
+    - registry
+    - bgp
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

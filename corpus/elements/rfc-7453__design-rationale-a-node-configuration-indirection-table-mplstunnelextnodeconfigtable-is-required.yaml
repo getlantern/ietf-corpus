@@ -1,0 +1,8 @@
+document: rfc-7453
+kind: design-rationale
+summary: A node-configuration indirection table (mplsTunnelExtNodeConfigTable) is required because the existing mplsTunnelTable indexes LSRs with a 4-byte Unsigned32, while MPLS-TP tunnel endpoints are identified by Global_ID::Node_ID (8 bytes) or ICC_Operator_ID::Node_ID (12 bytes). The indirection maps the wider identifiers to a local 4-byte handle for backward-compatible indexing.
+section: 6.2.1
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

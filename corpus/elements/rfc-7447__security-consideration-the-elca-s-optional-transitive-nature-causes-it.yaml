@@ -1,0 +1,11 @@
+document: rfc-7447
+kind: security-consideration
+summary: The ELCA's optional, transitive nature causes it to be tunneled through routers that don't implement it; implementations receiving such tunneled attributes could improperly rely on them, potentially creating a black hole in the forwarding path for affected routes. Deprecating the ELCA eliminates this risk.
+section: "4"
+topics:
+    - bgp
+    - mpls
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

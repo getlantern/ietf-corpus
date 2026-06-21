@@ -1,0 +1,10 @@
+document: rfc-7447
+kind: interoperability-note
+summary: An ELCA-oblivious intermediate node that modifies a route's next hop will propagate the ELCA attribute rather than removing it (as required by RFC 6790), because propagation of unrecognized optional, transitive attributes is the default BGP behavior per RFC 4271. This interoperability constraint is the core motivation for deprecation.
+section: "1"
+topics:
+    - bgp
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

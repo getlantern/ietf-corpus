@@ -1,0 +1,10 @@
+document: rfc-7438
+kind: normative-requirement
+summary: When the Ingress LSR receives a wildcard-source Opaque Value TLV and PIM is enabled for a non-bidirectional ASM group, it MUST act as if it received a (*,G) IGMP/MLD report from downstream and follow RFC 4601 procedures. For PIM-SSM groups, all known multicast sources MUST be forwarded down the MP-LSP. If PIM is not enabled, it MUST follow RFC 4605 (IGMP/MLD proxying) procedures.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

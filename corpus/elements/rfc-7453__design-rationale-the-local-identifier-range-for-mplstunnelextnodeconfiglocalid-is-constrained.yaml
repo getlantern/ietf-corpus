@@ -1,0 +1,8 @@
+document: rfc-7453
+kind: design-rationale
+summary: The local identifier range for mplsTunnelExtNodeConfigLocalId is constrained to 0–16777215 because the first valid IP address is 16777216 (1.0.0.0). This boundary allows implementations to determine whether an mplsTunnelTable Ingress/Egress LSR ID is an IP address or a locally assigned MPLS-TP identifier without an additional flag.
+section: 6.2.1
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

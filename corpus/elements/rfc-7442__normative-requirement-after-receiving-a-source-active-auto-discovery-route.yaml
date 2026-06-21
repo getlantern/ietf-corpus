@@ -1,0 +1,10 @@
+document: rfc-7442
+kind: normative-requirement
+summary: After receiving a Source Active auto-discovery route for (S,G), if conditions (a) (*,G) TIB entry exists, (b) iif list contains an IP interface, (c) at least one MPLS interface is in the oif list, and (d) the LSR does not originate an mLDP Label Mapping for (S,G) with Transit Source TLV are all met, the LSR MUST transition the (S,G,RPT-bit) downstream state to the Prune state.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

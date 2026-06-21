@@ -1,0 +1,8 @@
+document: rfc-7440
+kind: design-rationale
+summary: The appropriate windowsize depends on underlying networking technology and topology. Rather than mandating a fixed value, the extension allows negotiation so operators can tune for their environment. The example configuration (windowsize=8, blksize=1456, 6 max retries, 1s timeout, 80µs inter-packet delay) is scaled for a 1 Gbit/s Ethernet environment.
+section: "6"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

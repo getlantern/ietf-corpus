@@ -1,0 +1,8 @@
+document: rfc-7453
+kind: interoperability-note
+summary: An associated bidirectional MPLS-TP tunnel is represented by two separate unidirectional tunnel entries in mplsTunnelTable, linked to each other via mplsTunnelExtOppositeDirTnlPtr in mplsTunnelExtTable. This contrasts with a co-routed bidirectional tunnel, which may be managed by a single mplsTunnelTable entry with mplsTunnelExtOppositeDirTnlPtr set to zeroDotZero.
+section: "9.2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

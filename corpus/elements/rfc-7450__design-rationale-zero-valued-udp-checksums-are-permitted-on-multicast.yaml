@@ -1,0 +1,9 @@
+document: rfc-7450
+kind: design-rationale
+summary: Zero-valued UDP checksums are permitted on Multicast Data messages because many routing/forwarding platforms cannot compute checksums on UDP-encapsulated packets, and requiring valid checksums on every replicated multicast packet would impose an undue computational burden on the relay.
+section: 4.2.2.3
+topics:
+    - multicast
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

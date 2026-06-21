@@ -1,0 +1,9 @@
+document: rfc-7438
+kind: design-rationale
+summary: In PIM-SM deployments with 'threshold infinity', last hop routers deliberately avoid joining source-specific trees and receive all traffic via the (*,G) shared tree. This is preferred when the RP lies on the shortest source-to-receiver path, making source trees add only state overhead. Wildcard source encoding efficiently maps this (*,G) tree to an MP-LSP in such deployments.
+section: "4.1"
+topics:
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

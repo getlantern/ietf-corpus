@@ -1,0 +1,9 @@
+document: rfc-7438
+kind: design-rationale
+summary: When senders and receivers are directly connected to an MPLS domain, IGMP/MLD proxying (RFC 4605) can replace PIM entirely, treating the MPLS domain as a single hop. In this scenario the mLDP root is manually configured, and the MP-LSP must carry all sources for the ASM group, requiring a wildcard source in the Opaque Value TLV.
+section: "4.2"
+topics:
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

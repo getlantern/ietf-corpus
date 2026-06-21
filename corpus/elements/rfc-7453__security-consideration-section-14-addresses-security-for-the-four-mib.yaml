@@ -1,0 +1,9 @@
+document: rfc-7453
+kind: security-consideration
+summary: Section 14 addresses security for the four MIB modules. Objects with MAX-ACCESS read-write or read-create (e.g., mplsIdGlobalId, mplsIdNodeId, mplsXCExtOppositeDirXCPtr) can alter tunnel configuration; unauthorized writes could disrupt MPLS-TP forwarding. Implementations should enforce appropriate SNMP access control (e.g., SNMPv3 USM/VACM) to restrict write access to these objects.
+section: "14"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

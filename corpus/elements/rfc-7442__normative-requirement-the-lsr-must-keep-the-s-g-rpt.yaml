@@ -1,0 +1,10 @@
+document: rfc-7442
+kind: normative-requirement
+summary: 'The LSR MUST keep the (S,G,RPT-bit) downstream state machine in the Prune state for as long as: the (*,G) oif list contains an MPLS interface, the LSR has at least one Source Active auto-discovery route for (S,G), and the LSR does not originate an mLDP Label Mapping for (S,G) with the Transit Source TLV. Once any of these conditions become invalid, the LSR MUST transition to the NoInfo state.'
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7442
+kind: normative-requirement
+summary: In Mechanism 1, when an LSR creates a new (*,G) TIB entry with IP multicast outgoing interfaces, the LSR MUST check for any Source Active auto-discovery routes for G. If such a route exists, S is reachable via MPLS, and no (S,G) TIB state exists, the LSR MUST originate an mLDP Label Map with the Transit IPv4/IPv6 Source TLV for (S,G) per RFC 6826.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

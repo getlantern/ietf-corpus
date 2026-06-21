@@ -1,0 +1,8 @@
+document: rfc-7440
+kind: design-rationale
+summary: The windowed scheme dramatically reduces transfer time by reducing the number of synchronous acknowledgements exchanged. Measurements on Gigabit Ethernet showed a windowsize of 4 reduced transfer time by 70%, windowsize 16 by 84%, and windowsize 64 by 86% compared to the lockstep (windowsize 1) baseline, motivating the extension over the existing blocksize-only optimization.
+section: "5"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

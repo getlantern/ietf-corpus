@@ -1,0 +1,10 @@
+document: rfc-7447
+kind: design-rationale
+summary: 'The ELCA was deprecated because it is an optional, transitive BGP path attribute: nodes that do not support it will propagate it by definition (per RFC 4271), yet those same nodes are precisely the ones that must remove it when modifying the next hop. This fundamental contradiction makes correct operation unenforceable.'
+section: "1"
+topics:
+    - bgp
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

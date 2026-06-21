@@ -1,0 +1,10 @@
+document: rfc-7450
+kind: interoperability-note
+summary: AMT specifically permits zero-valued UDP checksums on Multicast Data messages to reduce relay burden. However, UDP over IPv6 requires a non-zero checksum per RFC 2460, so zero-checksum Multicast Data messages over IPv6 may fail to reach the gateway; the recommended solution is described in RFC 6935.
+section: 4.2.2.3
+topics:
+    - multicast
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
