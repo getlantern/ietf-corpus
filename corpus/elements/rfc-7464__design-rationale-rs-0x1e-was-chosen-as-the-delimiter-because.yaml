@@ -1,0 +1,8 @@
+document: rfc-7464
+kind: design-rationale
+summary: RS (0x1E) was chosen as the delimiter because it is an ASCII control character that may only appear in JSON strings in escaped form, making it unambiguous as a sequence element start delimiter without requiring a streaming parser. LF was added after each element specifically to detect truncation of top-level non-self-delimited values (numbers, true, false, null).
+section: "2.2"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

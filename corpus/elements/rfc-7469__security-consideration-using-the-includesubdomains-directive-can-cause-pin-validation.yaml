@@ -1,0 +1,9 @@
+document: rfc-7469
+kind: security-consideration
+summary: Using the includeSubDomains directive can cause Pin Validation failures for subdomains that legitimately use different certificate chains, depending on the order in which a UA encounters Valid Pinning Headers. Operators must use overlapping pin sets or coordinate pin sets across parent and subdomain hosts.
+section: "4.2"
+topics:
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

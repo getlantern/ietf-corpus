@@ -1,0 +1,10 @@
+document: rfc-7469
+kind: security-consideration
+summary: 'Hostile pinning: an attacker who obtains a valid certificate for a domain (through CA misissuance or prior domain ownership) can serve a Valid Pinning Header that pins the UA to the attacker''s keys, blocking access to the legitimate site for the duration of max-age. Mitigation includes capping max-age and preloading legitimate pins.'
+section: "4.5"
+topics:
+    - security
+    - pkix
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

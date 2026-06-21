@@ -1,0 +1,8 @@
+document: rfc-7464
+kind: design-rationale
+summary: Objects, arrays, and strings are self-delimited in JSON and need no special truncation detection. Numbers and the literals true, false, and null are not self-delimited and require the trailing LF 'canary' octet (0x0A) to distinguish a complete value from a truncated one (e.g., '123' could be a truncated '1234').
+section: "2.4"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

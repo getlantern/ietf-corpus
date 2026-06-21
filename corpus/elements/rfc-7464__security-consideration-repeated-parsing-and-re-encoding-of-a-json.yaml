@@ -1,0 +1,10 @@
+document: rfc-7464
+kind: security-consideration
+summary: Repeated parsing and re-encoding of a JSON text sequence can result in addition or stripping of trailing LF bytes from sequence elements, breaking signature validation. JSON has no canonical form, so neither does the JSON text sequence format; cryptographic integrity protection is not provided.
+section: "3"
+topics:
+    - json
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7466
+kind: design-rationale
+summary: When link quality from a symmetric 1-hop neighbor drops below threshold, NHDP RFC 6130 removes corresponding 2-Hop Tuples immediately. This means that even a momentary quality drop causes symmetric 2-hop neighbor information to be permanently lost until the next HELLO messages are received, unlike 1-hop information which is retained. This RFC addresses that asymmetry.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

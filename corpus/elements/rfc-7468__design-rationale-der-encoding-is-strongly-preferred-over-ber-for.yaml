@@ -1,0 +1,10 @@
+document: rfc-7468
+kind: design-rationale
+summary: 'DER encoding is strongly preferred over BER for certificates, CRLs, certification requests, and attribute certificates because: (1) digital signatures are computed over the DER encoding; (2) cryptographic hashes for identification use DER; and (3) DER uses definite-length form, allowing parsers to anticipate memory usage upfront. CMS is an exception since indefinite-length encoding enables one-pass streaming generation.'
+section: B
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

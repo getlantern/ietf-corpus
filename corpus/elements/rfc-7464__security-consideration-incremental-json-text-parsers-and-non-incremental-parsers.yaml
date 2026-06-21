@@ -1,0 +1,9 @@
+document: rfc-7464
+kind: security-consideration
+summary: Incremental JSON text parsers and non-incremental parsers may disagree on what constitutes a valid sequence element. For example, '<RS>"foo"<LF>456<LF><RS>' may be parsed as one element by an incremental parser and as empty by a non-incremental parser. This disagreement can be exploited to smuggle data past sequence parsers that do not warn on JSON text failures.
+section: "3"
+topics:
+    - json
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7465
+kind: design-rationale
+summary: RC4 is prohibited across all TLS versions rather than just newer ones because the cryptographic weaknesses (keystream biases enabling plaintext recovery) apply regardless of the TLS version negotiated. The prohibition is a blanket ban, not a version-specific deprecation.
+section: "1"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7469
+kind: security-consideration
+summary: Operators MUST include at least one Backup Pin — a fingerprint for a secondary not-yet-deployed key pair kept offline. Without a backup pin, loss of the primary private key would make the host inaccessible to UAs for the entire pin lifetime. UAs enforce this requirement by rejecting PKP headers without a backup pin.
+section: "4.3"
+topics:
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

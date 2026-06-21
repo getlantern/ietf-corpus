@@ -1,0 +1,10 @@
+document: rfc-7468
+kind: security-consideration
+summary: 'This document does not define canonical encodings, so implementations relying on canonical representation or fingerprinting must be aware of multiple ambiguity sources: text vs. binary encoding, multiple treated-as-equivalent labels, whitespace variations, and non-base64 characters. These ambiguities create opportunities for side channels; if canonical encoding is needed, the data must be decoded and re-encoded as DER.'
+section: "14"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

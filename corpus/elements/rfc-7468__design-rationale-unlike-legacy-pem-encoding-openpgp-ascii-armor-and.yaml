@@ -1,0 +1,9 @@
+document: rfc-7468
+kind: design-rationale
+summary: Unlike legacy PEM encoding, OpenPGP ASCII armor, and OpenSSH key file format, textual encoding does NOT define or permit headers alongside the data. Generators SHOULD NOT emit any empty spacing between the pre-encapsulation boundary and the base64 data, though the area exists as a PEM throwback.
+section: "2"
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

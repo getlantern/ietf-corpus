@@ -1,0 +1,11 @@
+document: rfc-7469
+kind: normative-requirement
+summary: When a UA connects to a Known Pinned Host via TLS and the connection has errors, the UA MUST terminate the connection without allowing the user to proceed. If connection is error-free, the UA SHOULD perform Pin Validation by checking that the set of SPKI fingerprints in the certificate chain intersects the noted Pinning Metadata; if not, the UA MUST treat this as a non-recoverable error.
+section: "2.6"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

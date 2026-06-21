@@ -1,0 +1,10 @@
+document: rfc-7469
+kind: design-rationale
+summary: 'Public Key Pinning is a trust-on-first-use (TOFU) mechanism: the UA cannot detect a MITM on the very first connection because it has no prior pinning state. A MITM on the first connection can also inject a hostile PKP header. The spec acknowledges nothing short of pre-shared keys can defend against a first-connection MITM.'
+section: "1"
+topics:
+    - security
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

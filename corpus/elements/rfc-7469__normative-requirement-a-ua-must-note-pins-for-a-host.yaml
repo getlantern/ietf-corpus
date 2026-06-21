@@ -1,0 +1,12 @@
+document: rfc-7469
+kind: normative-requirement
+summary: 'A UA MUST note Pins for a host only if all three conditions hold: the PKP header was received over an error-free TLS connection; the TLS connection was authenticated with a certificate chain containing at least one SPKI matching a given fingerprint; and the pin set contains at least one Backup Pin not referencing an SPKI in the current chain.'
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+    - pkix
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7469
+kind: design-rationale
+summary: Pins are computed over the SubjectPublicKeyInfo (SPKI) structure rather than over entire certificates, so that operators can generate new certificates reusing existing public keys without breaking pinned clients. This enables certificate renewal without re-pinning.
+section: "2.4"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

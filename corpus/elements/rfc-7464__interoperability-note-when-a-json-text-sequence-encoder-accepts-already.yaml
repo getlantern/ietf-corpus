@@ -1,0 +1,8 @@
+document: rfc-7464
+kind: interoperability-note
+summary: When a JSON text sequence encoder accepts already-encoded JSON texts (rather than encoding them itself), it ought to parse them before adding them to a sequence to ensure they are properly formed. Truncation detection for non-self-delimited values is only reliable when the encoder controls the encoding of individual texts.
+section: "2.2"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
