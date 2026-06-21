@@ -1,0 +1,9 @@
+document: rfc-6876
+kind: design-rationale
+summary: NEA Clients SHOULD proactively establish and hold open a TLS session to the NEA Server after obtaining network access, rather than listening for inbound server-initiated connections. Server-initiated sessions require the NEA Client to hold an X.509 certificate and expose inbound TCP ports, creating scalability, cost, and security-policy challenges.
+section: 3.1.1
+topics:
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-6876
+kind: design-rationale
+summary: Rather than integrating PT into the TLS handshake (which would require changes to widely deployed TLS implementations), PT-TLS was designed to layer on top of TLS as an application protocol using the standard application_data ContentType. This allowed existing TLS software to be reused and offered the fastest path to adoption.
+section: "2.4"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

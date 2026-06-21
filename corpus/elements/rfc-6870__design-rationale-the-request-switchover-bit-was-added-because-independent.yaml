@@ -1,0 +1,8 @@
+document: rfc-6870
+kind: design-rationale
+summary: The Request Switchover bit was added because independent mode endpoints may fail to agree on a common active PW (e.g., due to misconfiguration or certain failure scenarios). Unlike master/slave mode, the request requires explicit peer acknowledgment before the requesting endpoint switches, preventing traffic loss.
+section: "6.3"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6872
+kind: security-consideration
+summary: Implementers must pay particular attention to buffer handling when reading or writing SIP CLF log files, because entries can be unbounded in length (potentially thousands of octets for a full SIP message dump), posing buffer-overflow risks especially in log parsers that must handle extension fields.
+section: "10"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

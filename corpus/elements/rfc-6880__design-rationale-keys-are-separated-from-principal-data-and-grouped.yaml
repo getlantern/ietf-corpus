@@ -1,0 +1,9 @@
+document: rfc-6880
+kind: design-rationale
+summary: Keys are separated from principal data and grouped into KeySet objects (indexed by kvno) rather than stored as flat attributes, because this grouping naturally supports key rollover scenarios where a principal may temporarily have multiple active KeySets.
+section: "4.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

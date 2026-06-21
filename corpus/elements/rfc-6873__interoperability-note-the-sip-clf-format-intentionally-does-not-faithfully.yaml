@@ -1,0 +1,9 @@
+document: rfc-6873
+kind: interoperability-note
+summary: The SIP CLF format intentionally does not faithfully recreate the bit-exact SIP message. The formatting rules, encoding, and character escaping requirements (tab replacement, dash/question-mark substitution, CRLF omission) may introduce information loss relative to the original SIP message; log readers should never unescape SIP CLF records.
+section: "4.3"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

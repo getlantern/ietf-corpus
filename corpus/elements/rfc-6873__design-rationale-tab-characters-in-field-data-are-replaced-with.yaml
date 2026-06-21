@@ -1,0 +1,9 @@
+document: rfc-6873
+kind: design-rationale
+summary: 'Tab characters in field data are replaced with spaces rather than using a more complex escaping scheme because tabs in SIP headers carry no meaning beyond whitespace. This choice has known consequences: it makes impossible the reconstruction of cryptographic signatures over logged fields and may corrupt tab semantics in message bodies.'
+section: "4.3"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

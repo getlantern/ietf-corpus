@@ -1,0 +1,9 @@
+document: rfc-6873
+kind: design-rationale
+summary: The indexed text format was chosen to address the high processor cost of purely text-based log formats (like Apache CLF). By prepending fixed-size hexadecimal pointers to each record, readers can skip directly to desired fields without scanning the entire record, achieving radically faster processing while retaining human readability and compatibility with Unix text tools (sed, awk, grep, cut, perl).
+section: "1"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-6874
+kind: security-consideration
+summary: The ZoneID URI format creates a specific pathway by which a deceitful zone index might be communicated to a host. Implementations MUST NOT allow use of this format except for well-defined usages, such as sending to link-local addresses under prefix fe80::/10, which is the only well-defined usage known at time of writing.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

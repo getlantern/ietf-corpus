@@ -1,0 +1,9 @@
+document: rfc-6876
+kind: security-consideration
+summary: 'PT-TLS is vulnerable to NEA Asokan attacks (RFC 6813), where a MITM forwards PA-TNC messages from a healthy machine through an unhealthy one. The countermeasure is to use tls-unique channel bindings (RFC 5929): an EMA-equipped endpoint includes the tls-unique value in its attestation, enabling the Posture Validator to verify that the attesting endpoint is the same as the TLS client.'
+section: "3.3"
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

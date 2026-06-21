@@ -1,0 +1,10 @@
+document: rfc-6873
+kind: normative-requirement
+summary: When a mandatory field is absent, it MUST be encoded as a single horizontal dash ('-'). If a field failed to parse, it MUST be encoded as a single question mark ('?'). If the actual field value is a single '-' or '?', the implementation SHOULD insert the percent-encoded equivalent (%2D or %3F).
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

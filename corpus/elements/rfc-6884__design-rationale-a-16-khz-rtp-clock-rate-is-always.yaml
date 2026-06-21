@@ -1,0 +1,9 @@
+document: rfc-6884
+kind: design-rationale
+summary: A 16 kHz RTP clock rate is always mandated even when the encoder input or decoder output is configured at 8 kHz, because the EVRC-NW decoder does not require a priori knowledge of the encoder's sampling rate and can produce output at either rate. A single fixed clock rate simplifies RTP session negotiation.
+section: "5"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
