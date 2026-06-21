@@ -1,0 +1,9 @@
+document: rfc-6936
+kind: design-rationale
+summary: Hardware routers commonly expose only the first ~128 bytes of a packet to their forwarding engine. Computing a full-datagram UDP checksum requires access to the entire packet, making RFC 2460's mandatory UDP checksum poorly suited for tunnel ingress/egress routers and impacting router design, performance, energy consumption, and cost.
+section: 1.3.3
+topics:
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

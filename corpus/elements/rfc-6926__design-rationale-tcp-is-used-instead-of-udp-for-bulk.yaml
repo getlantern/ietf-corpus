@@ -1,0 +1,9 @@
+document: rfc-6926
+kind: design-rationale
+summary: TCP is used instead of UDP for Bulk Leasequery because a single request may return thousands of DHCPv4 bindings, making UDP's per-message overhead impractical. The existing UDP Leasequery is data-driven and cannot efficiently support proactive bulk recovery before traffic begins.
+section: "1"
+topics:
+    - dns
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

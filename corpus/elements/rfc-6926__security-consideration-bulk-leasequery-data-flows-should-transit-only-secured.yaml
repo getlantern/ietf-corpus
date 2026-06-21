@@ -1,0 +1,10 @@
+document: rfc-6926
+kind: security-consideration
+summary: Bulk Leasequery data flows SHOULD transit only secured networks; where unsecured paths are unavoidable, the flows MUST be protected by external mechanisms such as VPNs. RFC 3118 DHCP authentication MUST NOT be used, as it was designed for UDP only and does not cover TCP framing.
+section: "9"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

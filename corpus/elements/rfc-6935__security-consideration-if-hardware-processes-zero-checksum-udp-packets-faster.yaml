@@ -1,0 +1,10 @@
+document: rfc-6935
+kind: security-consideration
+summary: If hardware processes zero-checksum UDP packets faster than non-zero-checksum packets, an attacker can inject non-zero-checksum packets into a tunnel that forwards zero-checksum packets to cause overload in the slow path. Protection mechanisms such as source-address filtering and throttling of non-zero-checksum traffic should be employed.
+section: "7"
+topics:
+    - security
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

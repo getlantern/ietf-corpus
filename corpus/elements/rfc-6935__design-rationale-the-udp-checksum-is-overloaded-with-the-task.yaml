@@ -1,0 +1,9 @@
+document: rfc-6935
+kind: design-rationale
+summary: The UDP checksum is overloaded with the task of protecting the IPv6 header for UDP flows (analogous to TCP checksum for TCP). Protocols that do not use a pseudo-header approach to checksums have essentially no protection from misdelivered packets.
+section: "6"
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6939
+kind: security-consideration
+summary: A rogue DHCPv6 relay agent or a DHCPv6 client posing as a relay agent can insert an incorrect Client Link-Layer Address option, enabling a DHCPv6 client to masquerade as a DHCPv4 client with the same link-layer address. This could allow DNS spoofing attacks, e.g., installing a fraudulent AAAA record under the same name as a legitimate DHCPv4 client's A record.
+section: "9"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

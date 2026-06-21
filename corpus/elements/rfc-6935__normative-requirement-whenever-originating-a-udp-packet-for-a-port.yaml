@@ -1,0 +1,10 @@
+document: rfc-6935
+kind: normative-requirement
+summary: Whenever originating a UDP packet for a port in the default mode, an IPv6 node MUST compute a UDP checksum over the packet and pseudo-header; if that computation yields zero, the checksum MUST be changed to hex FFFF before placement in the UDP header.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

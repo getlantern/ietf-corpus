@@ -1,0 +1,9 @@
+document: rfc-6935
+kind: design-rationale
+summary: In tunnel usage, each outer encapsulating packet provides only transport from ingress to egress; a corruption typically affects only that single tunneled packet rather than cascading into protocol state. This limits the blast radius of undetected corruption compared to stateful non-tunnel protocols.
+section: "4.2"
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

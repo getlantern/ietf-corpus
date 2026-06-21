@@ -1,0 +1,9 @@
+document: rfc-6933
+kind: security-consideration
+summary: Several objects have read-write MAX-ACCESS (entPhysicalSerialNum, entPhysicalAlias, entPhysicalAssetID, entPhysicalUris). Unauthorized writes could corrupt inventory and asset-tracking information; implementations should apply SNMPv3 access controls to restrict write operations to authorized principals.
+section: "5"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

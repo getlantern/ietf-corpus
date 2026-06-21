@@ -1,0 +1,10 @@
+document: rfc-6929
+kind: normative-requirement
+summary: When the More (M) bit is set to 1, the attribute MUST have Length=255, there MUST be a following attribute with the same Type and Extended-Type, and all fragments MUST be consecutive in the packet. The last attribute in a packet MUST NOT have M set. Missing subsequent fragments render the attribute invalid.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

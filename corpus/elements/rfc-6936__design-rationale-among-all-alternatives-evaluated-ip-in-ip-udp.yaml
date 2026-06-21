@@ -1,0 +1,9 @@
+document: rfc-6936
+kind: design-rationale
+summary: Among all alternatives evaluated (IP-in-IP, UDP-Lite, delta checksum, UDPTT, IPv6 Destination Options header, checksum-ignore), zero UDP checksum was selected as the best fit because it minimizes per-packet processing, works with the largest class of existing middleboxes, and is identifiable (unlike silent checksum-ignore).
+section: A.2.6
+topics:
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

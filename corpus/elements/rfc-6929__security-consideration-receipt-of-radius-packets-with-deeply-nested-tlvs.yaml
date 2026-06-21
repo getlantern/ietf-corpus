@@ -1,0 +1,9 @@
+document: rfc-6929
+kind: security-consideration
+summary: Receipt of RADIUS packets with deeply nested TLVs (more than 4 levels) may indicate implementation errors or deliberate attacks. Where implementations do not support deep nesting, it is RECOMMENDED that unsupported layers be treated as invalid attributes rather than silently accepted.
+section: 2.3.1
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

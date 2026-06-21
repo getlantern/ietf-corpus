@@ -1,0 +1,8 @@
+document: rfc-6933
+kind: design-rationale
+summary: entPhysicalUUID is read-only and fixed-size (RFC 4122 compliant only), while entPhysicalUris is writable and format-free. To support backward compatibility with RFC 4133 (v3) implementations, the UUID value should also be stored in entPhysicalUris in URN format, deliberately duplicating the information.
+section: 2.12.1
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

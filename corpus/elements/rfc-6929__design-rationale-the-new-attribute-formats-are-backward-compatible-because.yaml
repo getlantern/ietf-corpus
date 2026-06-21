@@ -1,0 +1,8 @@
+document: rfc-6929
+kind: design-rationale
+summary: The new attribute formats are backward-compatible because they do not insert new fields; instead, they 'steal' one or more octets from the existing Value field, leaving the Type and Length fields unchanged. RADIUS implementations that do not support these extensions can simply forward the Value verbatim.
+section: "2"
+topics:
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6935
+kind: design-rationale
+summary: Zero UDP checksum is restricted to tunnel protocols because tunneled (inner) packets carry their own checksums or integrity mechanisms, providing a second layer of corruption detection. Non-tunnel protocols that directly consume the payload must rely on the UDP checksum for first-level verification and therefore cannot safely use a zero checksum.
+section: "4.2"
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

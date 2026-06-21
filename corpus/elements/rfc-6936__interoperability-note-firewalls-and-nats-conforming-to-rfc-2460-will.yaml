@@ -1,0 +1,10 @@
+document: rfc-6936
+kind: interoperability-note
+summary: Firewalls and NATs conforming to RFC 2460 will regard zero-checksum IPv6 UDP datagrams as invalid and discard them. A NAT that increments the checksum field will also corrupt a zero-checksum datagram. Both must be updated before zero-checksum traffic can traverse them.
+section: 1.3.4
+topics:
+    - udp
+    - ip
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

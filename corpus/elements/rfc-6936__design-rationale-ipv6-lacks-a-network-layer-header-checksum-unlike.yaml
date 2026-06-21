@@ -1,0 +1,9 @@
+document: rfc-6936
+kind: design-rationale
+summary: IPv6 lacks a network-layer header checksum (unlike IPv4), so the UDP transport checksum in IPv6 is overloaded with functions including verifying destination address correctness, extension header delimitation, reassembly, payload length, port demultiplexing, and payload integrity. Removing the UDP checksum therefore has greater risk in IPv6 than in IPv4.
+section: "3"
+topics:
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

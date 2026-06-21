@@ -1,0 +1,10 @@
+document: rfc-6931
+kind: normative-requirement
+summary: 'For RSA-MD5 signatures, the FF octet in the PKCS#1 v1.5 padding MUST be repeated enough times that the value being encrypted is exactly one octet shorter than the RSA modulus. The padded structure is: 01 | FF* | 00 | prefix | hash.'
+section: 2.3.1
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6935
+kind: design-rationale
+summary: IPv4 allows zero UDP checksum because IPv4 has a checksum over the IP header. IPv6 has no IP header checksum, so RFC 2460 explicitly forbade zero UDP checksums. This update relaxes that rule specifically for tunnel protocols whose inner packets carry their own checksums.
+section: "1"
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

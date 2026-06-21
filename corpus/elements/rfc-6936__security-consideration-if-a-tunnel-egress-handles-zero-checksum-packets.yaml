@@ -1,0 +1,10 @@
+document: rfc-6936
+kind: security-consideration
+summary: If a tunnel egress handles zero-checksum packets in the fast path but non-zero checksum packets in the slow path, an attacker can inject non-zero checksummed packets to cause overload. Protection must include source-address filtering and rate-limiting of non-zero checksum traffic on zero-checksum tunnel ports.
+section: "7"
+topics:
+    - udp
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-6931
+kind: normative-requirement
+summary: For RSASSA-PSS SignatureMethod identifiers, the default salt length if SaltLength is not specified SHALL be the number of octets in the hash value of the digest method, as recommended in RFC 4055. SHA-256 is the default digest if none is specified (overriding RFC 3447's SHA-1 default due to SHA-1 weakness).
+section: 2.3.9
+rfc2119_level: SHALL
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
