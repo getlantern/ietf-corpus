@@ -1,0 +1,11 @@
+document: rfc-7293
+kind: security-consideration
+summary: A server implementing RRVS can disclose the age of an existing mailbox through its responses, enabling probing attacks. Implementation of countermeasures is RECOMMENDED, such as tracking timestamps submitted for a given mailbox and ignoring the field (silently discarding the message) when a variety of timestamps are tried in rapid succession.
+section: "13.1"
+rfc2119_level: RECOMMENDED
+topics:
+    - email
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

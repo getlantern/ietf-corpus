@@ -1,0 +1,8 @@
+document: rfc-7293
+kind: design-rationale
+summary: 'The Require-Recipient-Valid-Since header field includes the recipient address alongside the timestamp because SMTP has never required correspondence between envelope recipients and message header addresses. Including the address allows the header field to remain actionable after forwarding: if the MTA for the original address satisfies the ownership test and forwards the message, the receiving MTA at the new address finds no matching envelope recipient and simply delivers normally.'
+section: 5.2.1
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

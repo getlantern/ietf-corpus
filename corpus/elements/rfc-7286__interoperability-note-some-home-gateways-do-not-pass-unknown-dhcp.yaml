@@ -1,0 +1,8 @@
+document: rfc-7286
+kind: interoperability-note
+summary: Some home gateways do not pass unknown DHCP options (such as OPTION_V4_ACCESS_DOMAIN or OPTION_V6_ACCESS_DOMAIN) to downstream hosts, eliminating those options and forcing fallback to local configuration. Home-gateway-specific DNS domain names (e.g., ".local") may also shadow the network operator's domain, making U-NAPTR lookups fail unless the gateway implements DNS split-horizon.
+section: "4.1"
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7293
+kind: interoperability-note
+summary: When a relay (B) receives a message with a Require-Recipient-Valid-Since header field and must forward to a server (C) that advertises RRVS SMTP extension support, B SHOULD delete the header field and instead convey the information via the SMTP extension. The reverse conversion—SMTP extension to header field—SHOULD only occur when the eventual MDA is known to support it.
+section: "6.1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,11 @@
+document: rfc-7277
+kind: security-consideration
+summary: The YANG module is accessed via NETCONF over a mandatory SSH secure transport (RFC 6242); NETCONF access control (RFC 6536) must be used to restrict write access. Unauthorized modification of 'ipv4/enabled', 'ipv6/enabled', 'forwarding', 'address' lists, or 'mtu' can disrupt routing, deny service, open unsecured paths, or enable traffic interception.
+section: "6"
+topics:
+    - yang
+    - netconf
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

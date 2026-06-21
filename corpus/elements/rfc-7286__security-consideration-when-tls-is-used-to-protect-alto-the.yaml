@@ -1,0 +1,10 @@
+document: rfc-7286
+kind: security-consideration
+summary: When TLS is used to protect ALTO, the server certificate authenticates only the host part of the HTTPS URI (the CN), so the U-NAPTR mapping that produces the URI must itself be secured (e.g., via DNSSEC) to prevent URI substitution before TLS establishment.
+section: "6.1"
+topics:
+    - security
+    - tls
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

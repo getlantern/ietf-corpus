@@ -1,0 +1,9 @@
+document: rfc-7286
+kind: security-consideration
+summary: The most serious security threat is compromise of the ALTO server discovery infrastructure (DHCP or DNS) so that clients discover a wrong ALTO server URI, which could yield suboptimal or forged guidance, affect traffic distribution, or threaten user privacy. DNSSEC [RFC4033] should be applied to U-NAPTR DNS records to limit this attack vector.
+section: "6.1"
+topics:
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
