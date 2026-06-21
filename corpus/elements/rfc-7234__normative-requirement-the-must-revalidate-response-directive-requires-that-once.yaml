@@ -1,0 +1,9 @@
+document: rfc-7234
+kind: normative-requirement
+summary: The must-revalidate response directive requires that once a response becomes stale, a cache MUST NOT use it to satisfy subsequent requests without successful origin-server validation. If the origin cannot be reached, the cache MUST generate a 504 (Gateway Timeout). This directive is intended for responses where serving stale content would cause incorrect operation (e.g., financial transactions).
+section: 5.2.2.1
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

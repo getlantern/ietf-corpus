@@ -1,0 +1,11 @@
+document: rfc-7225
+kind: security-consideration
+summary: An attacker who can alter PCP messages or impersonate a PCP server can change the Pref64::/n delivered to clients, resulting in DoS, flooding, or man-in-the-middle attacks by directing traffic to an altered prefix. Means to defend against such attacks (e.g., ACLs between PCP client and server) SHOULD be enabled.
+section: "7"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

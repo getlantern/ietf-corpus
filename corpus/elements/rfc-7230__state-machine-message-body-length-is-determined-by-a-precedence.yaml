@@ -1,0 +1,8 @@
+document: rfc-7230
+kind: state-machine
+summary: 'Message body length is determined by a precedence-ordered algorithm: (1) HEAD/1xx/204/304 responses have no body; (2) 2xx CONNECT responses switch to tunnel; (3) chunked Transfer-Encoding decodes to termination; (4) non-chunked Transfer-Encoding with no final chunked reads until connection close; (5) invalid/conflicting Content-Length is an unrecoverable error; (6) valid Content-Length defines length; (7) request with no indicator has zero-length body; (8) response body ends at connection close.'
+section: 3.3.3
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

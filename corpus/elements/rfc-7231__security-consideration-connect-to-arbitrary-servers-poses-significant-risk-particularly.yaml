@@ -1,0 +1,9 @@
+document: rfc-7231
+kind: security-consideration
+summary: CONNECT to arbitrary servers poses significant risk, particularly when the destination is a well-known port not intended for Web traffic (e.g., port 25 for SMTP), which could be used to relay spam or probe internal services. Proxies supporting CONNECT SHOULD restrict targets to a known-safe whitelist.
+section: 4.3.6
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

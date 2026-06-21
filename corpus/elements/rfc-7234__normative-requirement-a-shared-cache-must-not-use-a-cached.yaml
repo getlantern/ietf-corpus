@@ -1,0 +1,10 @@
+document: rfc-7234
+kind: normative-requirement
+summary: A shared cache MUST NOT use a cached response to a request with an Authorization header field to satisfy subsequent requests unless the response explicitly allows it via must-revalidate, public, or s-maxage directives. Responses with must-revalidate or s-maxage cannot be served stale by shared caches.
+section: "3.2"
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

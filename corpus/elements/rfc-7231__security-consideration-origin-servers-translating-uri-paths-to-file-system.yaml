@@ -1,0 +1,9 @@
+document: rfc-7231
+kind: security-consideration
+summary: Origin servers translating URI paths to file system paths must guard against path traversal attacks (e.g., '..', symlinks, OS-specific naming tricks). GET semantics imply resource retrieval but must not automatically execute files in response to a GET request in a way that exposes the file system.
+section: "9.1"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

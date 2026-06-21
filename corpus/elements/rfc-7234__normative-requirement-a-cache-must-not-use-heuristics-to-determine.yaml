@@ -1,0 +1,9 @@
+document: rfc-7234
+kind: normative-requirement
+summary: 'A cache MUST NOT use heuristics to determine freshness when an explicit expiration time is present in the stored response. Heuristics may only be used on responses whose status codes are defined as cacheable by default or that are marked explicitly cacheable. When a heuristic freshness lifetime exceeds 24 hours and current_age exceeds 24 hours, the cache SHOULD generate Warning: 113.'
+section: 4.2.2
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7234
+kind: security-consideration
+summary: Implementation flaws or misunderstanding of cache semantics may result in caching of sensitive information such as authentication credentials, exposing it to unauthorized parties. The Set-Cookie response header field does not inhibit caching; servers must use explicit Cache-Control directives to prevent caching of responses containing cookies.
+section: "8"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

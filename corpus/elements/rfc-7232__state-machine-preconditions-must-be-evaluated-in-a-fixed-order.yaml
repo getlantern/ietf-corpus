@@ -1,0 +1,8 @@
+document: rfc-7232
+kind: state-machine
+summary: 'Preconditions MUST be evaluated in a fixed order: (1) If-Match at origin server; (2) If-Unmodified-Since at origin server when If-Match absent; (3) If-None-Match; (4) If-Modified-Since for GET/HEAD when If-None-Match absent; (5) If-Range when method is GET with Range present; (6) otherwise perform the action. False conditions at steps 1–2 yield 412; false at steps 3–4 yield 304 for GET/HEAD or 412 for other methods.'
+section: "6"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7234
+kind: normative-requirement
+summary: A cache recipient parsing a delta-seconds value MUST use an arithmetic type of at least 31 bits. If a value exceeds the representable range or causes overflow in subsequent calculations, the cache MUST treat the value as 2147483648 (2^31) or the greatest positive integer it can represent, ensuring overflow is detected and not treated as a negative value.
+section: 1.2.1
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

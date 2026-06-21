@@ -1,0 +1,9 @@
+document: rfc-7231
+kind: normative-requirement
+summary: A client MUST NOT generate a 100-continue expectation in a request that does not include a message body. A client that receives a 417 (Expectation Failed) SHOULD repeat the request without the 100-continue expectation.
+section: 5.1.1
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

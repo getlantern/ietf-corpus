@@ -1,0 +1,9 @@
+document: rfc-7231
+kind: security-consideration
+summary: Clients that perform 'content sniffing' (overriding a server's declared Content-Type by examining payload content) risk privilege escalation and incorrect processing, since many data formats match multiple media types that differ only in processing semantics. Implementers should provide a means to disable content sniffing.
+section: 3.1.1.5
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7233
+kind: normative-requirement
+summary: A Content-Range field value is invalid if last-byte-pos is less than first-byte-pos, or if complete-length is less than or equal to last-byte-pos. The recipient of an invalid Content-Range MUST NOT attempt to recombine the received content with a stored representation.
+section: "4.2"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

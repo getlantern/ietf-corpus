@@ -1,0 +1,10 @@
+document: rfc-7230
+kind: normative-requirement
+summary: When both Transfer-Encoding and Content-Length are present, Transfer-Encoding overrides Content-Length. A sender MUST remove the received Content-Length field prior to forwarding such a message, as it may indicate request smuggling or response splitting.
+section: 3.3.3
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

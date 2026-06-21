@@ -1,0 +1,8 @@
+document: rfc-7232
+kind: design-rationale
+summary: A Last-Modified time used as a validator is implicitly weak unless the origin server can confirm the representation did not change twice during the same second, or the client has a cache entry with a Date value at least 60 seconds newer than the Last-Modified time. The 60-second limit guards against clock skew between Date and Last-Modified generation.
+section: 2.2.2
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7232
+kind: normative-requirement
+summary: A recipient cache or origin server MUST evaluate received request preconditions after successfully performing its normal request checks and just before it would perform the action associated with the request method. A server MUST ignore all received preconditions if its response without those conditions would have been a status code other than 2xx or 412.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7233
+kind: normative-requirement
+summary: A client MUST NOT generate an If-Range header field containing a weak entity-tag, and MUST NOT generate one containing an HTTP-date unless the client has no entity-tag and the date is a strong validator. A server evaluating If-Range MUST use the strong comparison function for entity-tags.
+section: "3.2"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

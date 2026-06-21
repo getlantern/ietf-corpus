@@ -1,0 +1,9 @@
+document: rfc-7230
+kind: design-rationale
+summary: The userinfo subcomponent is prohibited from appearing in http URI references sent in messages because it may expose credentials and is commonly used to obscure authority for phishing attacks. A sender MUST NOT generate userinfo in an http URI within a message.
+section: 2.7.1
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

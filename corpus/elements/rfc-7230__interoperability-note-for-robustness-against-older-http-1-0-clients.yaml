@@ -1,0 +1,8 @@
+document: rfc-7230
+kind: interoperability-note
+summary: For robustness against older HTTP/1.0 clients that send an extra CRLF after POST, a server SHOULD ignore at least one empty line (CRLF) received prior to the request-line. An HTTP/1.1 user agent MUST NOT preface or follow a request with an extra CRLF.
+section: "3.5"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

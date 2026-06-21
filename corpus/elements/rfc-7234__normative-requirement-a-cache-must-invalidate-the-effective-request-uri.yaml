@@ -1,0 +1,10 @@
+document: rfc-7234
+kind: normative-requirement
+summary: A cache MUST invalidate the effective Request URI and URIs in Location and Content-Location response header fields upon receiving a non-error response to an unsafe request method. A cache MUST NOT invalidate a URI from Location or Content-Location if the host part differs from the effective request URI, to prevent denial-of-service attacks.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

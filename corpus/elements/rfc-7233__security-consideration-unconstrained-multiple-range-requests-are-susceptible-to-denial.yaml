@@ -1,0 +1,9 @@
+document: rfc-7233
+kind: security-consideration
+summary: Unconstrained multiple range requests are susceptible to denial-of-service attacks because requesting many overlapping ranges requires minimal effort from the client but consumes disproportionate time, memory, and bandwidth on the server. Servers ought to ignore, coalesce, or reject egregious range requests, such as more than two overlapping ranges or many small ranges in a single set.
+section: "6.1"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
