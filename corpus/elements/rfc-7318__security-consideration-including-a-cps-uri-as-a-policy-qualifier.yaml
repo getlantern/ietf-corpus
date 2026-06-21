@@ -1,0 +1,9 @@
+document: rfc-7318
+kind: security-consideration
+summary: 'Including a CPS URI as a policy qualifier could provide a denial-of-service (DoS) vector: a target host may be subjected to bogus work if relying parties dereference the URI. However, neither RFC 7318 nor RFC 5280 places any processing requirements on dereferencing the URI, so validation implementations SHOULD NOT dereference it.'
+section: "3"
+topics:
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

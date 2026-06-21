@@ -1,0 +1,9 @@
+document: rfc-7323
+kind: normative-requirement
+summary: The shift count MUST be limited to 14 (maximum window 2^30 = 1 GiB). If a Window Scale option is received with shift.cnt greater than 14, the TCP SHOULD log the error but MUST use 14 instead of the specified value.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

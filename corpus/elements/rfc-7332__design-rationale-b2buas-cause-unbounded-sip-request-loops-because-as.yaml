@@ -1,0 +1,8 @@
+document: rfc-7332
+kind: design-rationale
+summary: B2BUAs cause unbounded SIP request loops because, as UACs, they may legally reset the Max-Forwards value on their outgoing side. Via-based loop detection defined in RFC 3261 cannot detect loops across such B2BUAs any earlier than when Max-Forwards reaches zero.
+section: "3"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7323
+kind: security-consideration
+summary: Middleboxes that remove the Window Scale or Timestamps option from SYN or SYN-ACK segments break protocol negotiation. Removing WSopt from SYN-ACK leaves hosts with incorrect scale factors; removing TSopt disables PAWS protection; removing TSopt from a data segment after negotiation causes the receiver to silently discard it.
+section: "7"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7323
+kind: state-machine
+summary: 'The timestamp echo selection algorithm maintains two per-connection state variables: TS.Recent (latest received timestamp to be echoed) and Last.ACK.sent (last ACK field sent). TS.Recent is updated when SEG.TSval >= TS.Recent AND SEG.SEQ <= Last.ACK.sent; otherwise the incoming TSval is ignored.'
+section: "4.3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

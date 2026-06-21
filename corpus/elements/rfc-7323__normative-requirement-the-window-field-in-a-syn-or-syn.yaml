@@ -1,0 +1,9 @@
+document: rfc-7323
+kind: normative-requirement
+summary: The window field in a SYN or SYN-ACK segment MUST NOT be scaled. Upon receiving a SYN with WSopt containing shift.cnt=S, the TCP MUST set Snd.Wind.Shift to S and Rcv.Wind.Shift to R; otherwise, both shift values MUST be set to zero.
+section: "2.2"
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

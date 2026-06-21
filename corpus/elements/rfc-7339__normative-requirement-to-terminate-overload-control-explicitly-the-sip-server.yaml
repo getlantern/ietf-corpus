@@ -1,0 +1,11 @@
+document: rfc-7339
+kind: normative-requirement
+summary: To terminate overload control explicitly, the SIP server MUST set "oc-validity" to 0 and MUST increment "oc-seq", and SHOULD set "oc" to 0; upon receiving this, the client SHOULD disregard the "oc" value and cease throttling.
+section: "5.7"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

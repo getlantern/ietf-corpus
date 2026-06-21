@@ -1,0 +1,8 @@
+document: rfc-7324
+kind: design-rationale
+summary: A strict FSM reading of RFC 6378 would require a node to transition through Normal (N) state when the highest-priority of two simultaneous inputs is removed, even though a lower-priority request remains. This is deemed unreasonable because no sensible justification exists for a node behaving as if conditions are normal when a known remote request is still active.
+section: "6"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

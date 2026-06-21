@@ -1,0 +1,9 @@
+document: rfc-7323
+kind: normative-requirement
+summary: The incoming window field SEG.WND MUST be left-shifted by Snd.Wind.Shift before updating SND.WND (SND.WND = SEG.WND << Snd.Wind.Shift), and the outgoing window field MUST be right-shifted by Rcv.Wind.Shift (SEG.WND = RCV.WND >> Rcv.Wind.Shift), except for SYN segments.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7343
+kind: design-rationale
+summary: All bits beyond the 28-bit prefix and 4-bit OGA ID are used as hash output, maximizing hash length. The Context Identifier is included only as hash input (not in the ORCHID itself) to keep more bits available for the hash, trading direct context inference for longer hash security.
+section: "4"
+topics:
+    - ip
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

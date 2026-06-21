@@ -1,0 +1,9 @@
+document: rfc-7323
+kind: normative-requirement
+summary: RST segments MUST NOT be subjected to the PAWS timestamp check, and timestamp information from RST segments MUST NOT be used to update connection state. However, it is RECOMMENDED that an RST generated in response to a segment with TSopt also carry TSopt, with TSecr set to the incoming TSval and TSval set to zero.
+section: "5.2"
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7323
+kind: security-consideration
+summary: Large TCP windows make it easier for an attacker to generate forged packets that fall within the window. PAWS mitigates this, but an attacker able to forge an acceptable segment could inject a future-timestamped packet causing valid segments to be dropped by PAWS. Implementations should not open the window drastically beyond connection requirements.
+section: "7"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

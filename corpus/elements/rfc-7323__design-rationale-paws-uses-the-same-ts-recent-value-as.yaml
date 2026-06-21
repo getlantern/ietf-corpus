@@ -1,0 +1,8 @@
+document: rfc-7323
+kind: design-rationale
+summary: PAWS uses the same TS.Recent value as RTTM (rather than tracking the timestamp of the last in-sequence segment separately) because it simplifies implementation. TS.Recent differs from the last in-sequence segment's timestamp only in the case of delayed ACKs, and the difference is less than one window — acceptable for wrap-around protection.
+section: "5.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7323
+kind: normative-requirement
+summary: Once TSopt is successfully negotiated (both SYN and SYN-ACK contain TSopt), it MUST be sent in every non-RST segment for the duration of the connection. If a non-RST segment is received without a TSopt, a TCP SHOULD silently drop the segment; it MUST NOT abort the connection due to a missing TSopt.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

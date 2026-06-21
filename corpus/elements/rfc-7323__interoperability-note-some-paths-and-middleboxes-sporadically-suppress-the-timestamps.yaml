@@ -1,0 +1,8 @@
+document: rfc-7323
+kind: interoperability-note
+summary: Some paths and middleboxes sporadically suppress the Timestamps option while maintaining payload integrity. RFC 7323's stricter requirement that segments missing TSopt (after negotiation) be dropped may expose previously-hidden broken middlebox behavior, potentially resulting in unresponsive TCP sessions where RFC 1323 would have continued.
+section: "3.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

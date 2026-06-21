@@ -1,0 +1,11 @@
+document: rfc-7332
+kind: security-consideration
+summary: Some B2BUAs intentionally reset Max-Forwards and Max-Breadth to obfuscate the number of hops a request has traversed for privacy or security reasons. This goal conflicts with loop-detection requirements; administrators must choose between obfuscation and loop detection. Manufacturers MUST comply with the normative rules by default but MAY provide user-configurable overrides.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

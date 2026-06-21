@@ -1,0 +1,8 @@
+document: rfc-7323
+kind: design-rationale
+summary: For outdated timestamps on idle connections, TS.Recent invalidation (after 24 days of idle) was chosen over sending keep-alives at sub-wraparound intervals because the TCP specification has never included keep-alives, and the invalidation approach imposes no overhead.
+section: "5.5"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

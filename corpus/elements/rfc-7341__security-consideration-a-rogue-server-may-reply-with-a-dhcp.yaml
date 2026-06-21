@@ -1,0 +1,11 @@
+document: rfc-7341
+kind: security-consideration
+summary: A rogue server may reply with a DHCP 4o6 Server Address option containing duplicate IPv6 addresses, enabling an amplification attack. The client MUST check for duplicate addresses and MUST ignore all but the first instance of each address.
+section: "12"
+rfc2119_level: MUST
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

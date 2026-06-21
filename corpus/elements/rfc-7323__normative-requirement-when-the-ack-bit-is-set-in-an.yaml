@@ -1,0 +1,9 @@
+document: rfc-7323
+kind: normative-requirement
+summary: When the ACK bit is set in an outgoing segment, the sender MUST echo a recently received TSval in the TSecr field. When the ACK bit is not set, TSecr SHOULD be set to zero, and the receiver MUST ignore the TSecr field.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

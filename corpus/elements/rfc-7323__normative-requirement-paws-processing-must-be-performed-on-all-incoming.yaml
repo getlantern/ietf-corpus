@@ -1,0 +1,9 @@
+document: rfc-7323
+kind: normative-requirement
+summary: 'PAWS processing MUST be performed on all incoming segments for a synchronized connection and MUST take precedence over the regular TCP acceptability check (RFC 793 Section 3.3). A segment with SEG.TSval < TS.Recent (and valid TS.Recent, and RST bit not set) MUST be treated as unacceptable: send an ACK and drop the segment.'
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

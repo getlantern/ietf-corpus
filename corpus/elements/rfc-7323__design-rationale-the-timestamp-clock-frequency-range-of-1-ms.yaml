@@ -1,0 +1,8 @@
+document: rfc-7323
+kind: design-rationale
+summary: The timestamp clock frequency range of 1 ms to 1 sec per tick was chosen to satisfy both PAWS (must tick at least once per 2^31 bytes, and recycle time must exceed MSL) and RTTM (resolution need not exceed the granularity of the retransmit timer, i.e., tens to hundreds of milliseconds).
+section: "5.4"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

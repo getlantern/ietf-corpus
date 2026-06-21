@@ -1,0 +1,9 @@
+document: rfc-7321
+kind: design-rationale
+summary: Triple-DES is demoted from MUST- to MAY due to its small 64-bit block size causing information leakage above the birthday bound, worse performance than AES, and smaller key size than AES; it is retained only for backwards compatibility.
+section: "4.2"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

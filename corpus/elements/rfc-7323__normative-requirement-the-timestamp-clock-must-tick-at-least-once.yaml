@@ -1,0 +1,9 @@
+document: rfc-7323
+kind: normative-requirement
+summary: The timestamp clock MUST tick at least once for each 2^31 bytes sent. The clock's recycling period MUST be greater than MSL seconds; since the clock is 32 bits and worst-case MSL is 255 seconds, the maximum acceptable clock frequency is one tick every 59 ns.
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

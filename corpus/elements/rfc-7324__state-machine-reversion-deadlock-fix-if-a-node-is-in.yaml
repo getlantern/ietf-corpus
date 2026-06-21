@@ -1,0 +1,8 @@
+document: rfc-7324
+kind: state-machine
+summary: 'Reversion deadlock fix: if a node is in Protecting Failure state due to a remote SF-W and receives NR(0,1), this SHALL cause the node to begin recovery procedures. For revertive behavior, the LER enters Wait-to-Restore state, starts the WTR timer, and begins transmitting WTR(0,1); for non-revertive behavior, it enters Do-Not-Revert state and begins transmitting DNR(0,1).'
+section: "5"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7341
+kind: design-rationale
+summary: The DHCP 4o6 server lacks DHCPv4 context (giaddr, IPv4 interface address) because the DHCPv4 message is encapsulated in DHCPv6. The server therefore allocates addresses by administrator-defined local policy; for relayed messages it MAY use the Relay-forward link-address, and for direct messages it MAY use the IPv6 source address to determine the appropriate IPv4 subnet.
+section: "11"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

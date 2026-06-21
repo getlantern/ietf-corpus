@@ -1,0 +1,11 @@
+document: rfc-7323
+kind: privacy-consideration
+summary: Using the system clock as the raw source for TSval reveals characteristics of the TCP stack (notably, system uptime), enabling fingerprinting and more targeted attacks. A random per-connection offset SHOULD be applied to the clock source. Additionally, the combination, ordering, and padding of WSopt and TSopt reveal OS fingerprinting clues.
+section: "7.1"
+rfc2119_level: RECOMMENDED
+topics:
+    - tcp
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

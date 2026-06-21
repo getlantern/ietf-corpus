@@ -1,0 +1,8 @@
+document: rfc-7323
+kind: design-rationale
+summary: The Window Scale shift count is capped at 14 to ensure the maximum window (2^(S+16)) remains less than 2^30. This bound is required because TCP sequence number arithmetic determines 'old vs new' segments using 2^31 as the half-space, and allowing windows >= 2^30 would cause ambiguity between the sender's right edge and receiver's left edge.
+section: "2.3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

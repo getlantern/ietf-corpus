@@ -1,0 +1,10 @@
+document: rfc-7323
+kind: security-consideration
+summary: A naive implementation deriving the timestamp clock directly from system uptime leaks system boot time to attackers. It is RECOMMENDED to add a random per-connection offset to the timestamp clock when generating TSval (see RFC 6528 for the analogous technique with ISN randomization).
+section: "7"
+rfc2119_level: RECOMMENDED
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7341
+kind: design-rationale
+summary: The Unicast flag in the DHCPv4-query is necessary because IPv6 is used as the outer transport, eliminating any relationship between the outer IPv6 destination address and the DHCPv4 broadcast/unicast semantics; the server cannot infer the client's DHCPv4 state (e.g., RENEWING vs. REBINDING) from the IPv6 address.
+section: "8"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

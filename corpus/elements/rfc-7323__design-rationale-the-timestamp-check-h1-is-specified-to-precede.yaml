@@ -1,0 +1,8 @@
+document: rfc-7323
+kind: design-rationale
+summary: 'The timestamp check (H1) is specified to precede header prediction (H2) despite the performance argument for reversing them. Putting H2 first would create a hazard: a segment from 2^32 bytes in the past could arrive at the exact left window edge and be mistakenly accepted; the probabilistic argument was not universally accepted.'
+section: "5.6"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
