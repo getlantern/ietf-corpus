@@ -1,0 +1,6 @@
+document: rfc-7145
+kind: design-rationale
+summary: iSER does not use SCSI Data-Out PDUs for solicited write data; instead, the target uses RDMA Read to pull data directly from the initiator's advertised buffer. This eliminates the store-and-forward overhead of TCP reassembly that motivates iSER's design.
+section: "1.4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

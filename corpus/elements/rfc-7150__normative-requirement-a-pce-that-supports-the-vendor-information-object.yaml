@@ -1,0 +1,9 @@
+document: rfc-7150
+kind: normative-requirement
+summary: A PCE that supports the Vendor Information object but receives one with an unsupported Enterprise Number MUST act according to the P flag. If the P flag is set, the PCE MUST reject the PCReq by sending an Error message with Error-Type='Not supported Object' along with the corresponding Vendor Information object.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7145
+kind: security-consideration
+summary: Premature allocation of RCaP connection resources exposes the iSER target to resource exhaustion attacks via multiple connections that only progress to the resource allocation point. The countermeasure is to require initiator authentication before allocating resources, deferring allocation to the LoginOperationalNegotiation stage when a SecurityNegotiation stage is present.
+section: 5.1.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

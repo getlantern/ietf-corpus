@@ -1,0 +1,6 @@
+document: rfc-7151
+kind: state-machine
+summary: The HOST command login state machine begins at (B) after connection or REIN. HOST transitions to wait (W); on 2xx/500/502 the flow proceeds to USER; on 4xx/501/503/504 it may go to error (E) or allow retry. USER then PASS transitions yield success (S), failure (F), or error (E). A REIN at any wait state returns to (B).
+section: 3.2.3
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

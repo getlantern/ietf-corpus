@@ -1,0 +1,6 @@
+document: rfc-7145
+kind: design-rationale
+summary: The target drives all solicited data transfers (RDMA Read for SCSI Write, RDMA Write for SCSI Read) rather than the initiator, because RDMA requires the Data Sink to issue Read Requests and the Data Source to initiate Writes. Only the target knows which direction each command requires, and having the target drive all transfers simplifies buffer advertisement.
+section: "1.4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

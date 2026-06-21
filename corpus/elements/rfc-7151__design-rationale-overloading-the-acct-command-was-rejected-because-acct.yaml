@@ -1,0 +1,9 @@
+document: rfc-7151
+kind: design-rationale
+summary: Overloading the ACCT command was rejected because ACCT is sent after USER and PASS in the login sequence, meaning virtual host selection would occur after credentials are sent—too late to select the correct TLS certificate or per-virtual-host credential store.
+section: A.2
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

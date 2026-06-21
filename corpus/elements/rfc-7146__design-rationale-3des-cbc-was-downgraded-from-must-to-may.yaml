@@ -1,0 +1,10 @@
+document: rfc-7146
+kind: design-rationale
+summary: 3DES CBC was downgraded from MUST to MAY because its 64-bit block size creates a birthday bound of 32 GiB, requiring frequent rekeying (e.g., every 3 GiB for a 10x safety margin) at multi-gigabit/second block storage rates. AES CBC with its 128-bit block size has a birthday bound of 2^68 bytes, making it the appropriate mandatory-to-implement replacement.
+section: "2.2"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

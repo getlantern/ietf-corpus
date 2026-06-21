@@ -1,0 +1,10 @@
+document: rfc-7155
+kind: security-consideration
+summary: The ARAP-Challenge-Response AVP uses DES encryption keyed on the user's password to compute the response; if the password is fewer than 8 octets, it is NULL-padded. This legacy mechanism is inherently weak and should be considered in risk assessments.
+section: 4.3.10
+topics:
+    - diameter
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

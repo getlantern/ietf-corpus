@@ -1,0 +1,6 @@
+document: rfc-7145
+kind: design-rationale
+summary: SendSE and SendInvSE messages are treated as optional optimizations, not requirements. New iSER implementations SHOULD use plain Send because SendSE/SendInvSE are not universally supported across RCaP implementations (e.g., InfiniBand does not mandate them), and using them with a non-supporting peer causes fatal RCaP connection closure.
+section: 1.5.2
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7145
+kind: security-consideration
+summary: If an Advertised STag is not invalidated after task completion (e.g., cached for reuse), the I/O Buffer remains exposed for RDMA Read or Write access by the remote peer outside the scope of the original iSCSI operation, risking both unauthorized data access and unexpected memory modification by the network.
+section: 1.5.1
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

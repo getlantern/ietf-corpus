@@ -1,0 +1,10 @@
+document: rfc-7147
+kind: normative-requirement
+summary: When an iscsiPortalAttributesTable row is deleted, all connections associated with that row are terminated — either immediately or via clean shutdown per RFC 7143. Matching for outbound connections uses iscsiCxnLocalAddr; inbound connections additionally match iscsiCxnLocalPort.
+section: "6.4"
+rfc2119_level: MUST
+topics:
+    - snmp
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
