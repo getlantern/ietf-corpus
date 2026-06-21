@@ -1,0 +1,9 @@
+document: rfc-3841
+kind: design-rationale
+summary: Reject-Contact is designed to only discard contacts where the UA has explicitly indicated support for the unwanted features. A Reject-Contact predicate is discarded for a given contact if any feature tag in the predicate is absent from the contact predicate, preventing rejection of contacts that simply haven't declared the feature.
+section: 7.2.4
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

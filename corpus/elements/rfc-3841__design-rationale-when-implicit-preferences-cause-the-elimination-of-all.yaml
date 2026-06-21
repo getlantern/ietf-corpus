@@ -1,0 +1,9 @@
+document: rfc-3841
+kind: design-rationale
+summary: When implicit preferences cause the elimination of all potential targets, the proxy reverts to the original target set ordered by q-values rather than returning a 480. This ensures the UAC receives a 405 or 489 explaining why the request failed, rather than a misleading 480 with no indication of the true cause.
+section: 7.2.4
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,7 +1,9 @@
 document: rfc-3986
 kind: normative-requirement
-summary: Implementations MUST NOT percent-encode or decode the same string more than once, as decoding an already-decoded string may cause a percent data octet to be misinterpreted as the beginning of a percent-encoding, or vice versa.
+summary: Implementations must not percent-encode or decode the same string more than once. Decoding an already-decoded string may cause a percent data octet to be misinterpreted as the start of a percent-encoding.
 section: "2.4"
 rfc2119_level: MUST NOT
+topics:
+    - security
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-06-15"
+extracted_at: "2026-06-21"

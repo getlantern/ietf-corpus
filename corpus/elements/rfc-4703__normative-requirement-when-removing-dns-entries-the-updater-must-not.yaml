@@ -1,0 +1,9 @@
+document: rfc-4703
+kind: normative-requirement
+summary: When removing DNS entries, the updater MUST NOT delete the FQDN if either the specific A/AAAA RR delete or the subsequent full FQDN delete UPDATE request fails, as the client may have moved and updated from another server.
+section: "5.5"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

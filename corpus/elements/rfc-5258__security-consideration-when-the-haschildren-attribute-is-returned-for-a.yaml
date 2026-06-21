@@ -1,0 +1,9 @@
+document: rfc-5258
+kind: security-consideration
+summary: When the \HasChildren attribute is returned for a mailbox whose children are inaccessible to the authenticated user, more information about the mailbox hierarchy is conveyed than intended. Servers SHOULD respond with \HasNoChildren in such cases, but may not be able to efficiently compute access to all children. The CHILDINFO extended data item carries the same concern.
+section: "8"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

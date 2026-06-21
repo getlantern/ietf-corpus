@@ -1,0 +1,8 @@
+document: rfc-4704
+kind: design-rationale
+summary: Authority over PTR RRs for an address logically belongs to the DHCPv6 server that allocates the address, since PTR records are tied to the assigned address space. Authority over AAAA RRs may rest with either the client (if it controls its FQDN) or the server (to prevent clients from associating addresses with arbitrary domain names).
+section: "3"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

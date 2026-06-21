@@ -1,0 +1,9 @@
+document: rfc-4703
+kind: normative-requirement
+summary: When a lease expires or a client issues DHCPRELEASE/Release, the DHCP server SHOULD delete the PTR RR matching the DHCP binding and SHOULD assert in its UPDATE request that the PTR record's PTRDNAME matches the client's FQDN before deleting all RRs for the FQDN.
+section: "5.5"
+rfc2119_level: SHOULD
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

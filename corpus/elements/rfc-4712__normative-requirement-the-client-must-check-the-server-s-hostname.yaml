@@ -1,0 +1,11 @@
+document: rfc-4712
+kind: normative-requirement
+summary: The client MUST check the server's hostname against the server's identity in its TLS certificate using the dnsNAME in the subjectAltName field in order to prevent man-in-the-middle attacks. Matching is case-insensitive and wildcards apply only to the left-most name component.
+section: 2.2.1.5
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

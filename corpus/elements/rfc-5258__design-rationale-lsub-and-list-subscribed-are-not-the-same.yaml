@@ -1,0 +1,8 @@
+document: rfc-5258
+kind: design-rationale
+summary: '''LSUB'' and ''LIST (SUBSCRIBED)'' are not the same thing: LSUB may return inaccurate attributes and overloads \NoSelect with a second meaning (not subscribed itself but has subscribed descendants), whereas LIST (SUBSCRIBED) returns accurate, complete attributes with no special meanings. Because of this additional cost, clients SHOULD continue to use LSUB unless they specifically want the extra information.'
+section: "3.1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

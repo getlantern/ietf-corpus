@@ -1,0 +1,11 @@
+document: rfc-3841
+kind: security-consideration
+summary: Processing caller preferences requires set operations and searches that can consume significant computation, enabling a DoS attack via requests with large numbers of caller preferences. Servers SHOULD reject requests with too many rules; a reasonable limit is around 20.
+section: "11"
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

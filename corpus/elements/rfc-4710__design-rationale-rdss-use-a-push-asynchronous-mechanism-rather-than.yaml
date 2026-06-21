@@ -1,0 +1,9 @@
+document: rfc-4710
+kind: design-rationale
+summary: RDSs use a PUSH (asynchronous) mechanism rather than a poll/response model because RDS firmware runs on low-powered embedded devices not in the data-forwarding path; the application determines PDU content appropriate for its context and sends reports to RRCs without solicitation.
+section: 2.1.1
+topics:
+    - qos
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

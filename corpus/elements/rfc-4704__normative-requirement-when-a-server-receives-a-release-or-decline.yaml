@@ -1,0 +1,9 @@
+document: rfc-4704
+kind: normative-requirement
+summary: When a server receives a RELEASE or DECLINE, detects address lifetime expiry, or terminates a binding, the server SHOULD delete any PTR RR associated with the address. If the server took responsibility for AAAA RRs, it SHOULD also delete the AAAA RR.
+section: "6.1"
+rfc2119_level: SHOULD
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

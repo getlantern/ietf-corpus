@@ -1,0 +1,8 @@
+document: rfc-4706
+kind: design-rationale
+summary: 'A new ifType value (adsl2plus=238) was required rather than reusing adsl(94) because this MIB''s management model is incompatible with RFC 2662: both documents coexist, and the ifType determines which MIB a management system must use, preventing management conflicts on deployments that support both ADSL and ADSL2/ADSL2+.'
+section: "2.2"
+topics:
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

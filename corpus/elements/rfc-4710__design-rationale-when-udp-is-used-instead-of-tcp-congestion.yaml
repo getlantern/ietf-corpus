@@ -1,0 +1,11 @@
+document: rfc-4710
+kind: design-rationale
+summary: 'When UDP is used instead of TCP, congestion safety can be achieved by: (1) a constant transmission rate policy with jittered timers (e.g., at most one PDU every two minutes), (2) single-outstanding-request ping-pong serialization with backed-off retransmissions, or (3) restricting PDU size to local interface MTU to avoid fragmentation.'
+section: "3"
+topics:
+    - qos
+    - realtime
+    - congestion
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-4712
+kind: design-rationale
+summary: TCP port 7744 was chosen specifically to lie above 5000 because Unix systems auto-assign ephemeral ports between 1024 and 5000 and restrict ports below 1024 to privileged processes, making those ranges unsuitable for a fixed well-known service port.
+section: "3"
+topics:
+    - registry
+    - tcp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
