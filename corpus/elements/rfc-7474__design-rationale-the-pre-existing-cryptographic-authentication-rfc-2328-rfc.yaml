@@ -1,0 +1,9 @@
+document: rfc-7474
+kind: design-rationale
+summary: The pre-existing cryptographic authentication (RFC 2328, RFC 5709) does not cover the IP header. Because OSPFv2 on broadcast and NBMA networks uses the IP source address to identify neighbors, an attacker can change the source address to disrupt adjacency state, reflect Hello packets, or replay Database Description packets. This document addresses the omission by binding the IP source address into the authentication hash.
+section: "1"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

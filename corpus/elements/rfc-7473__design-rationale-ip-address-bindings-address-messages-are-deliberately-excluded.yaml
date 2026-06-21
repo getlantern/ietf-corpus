@@ -1,0 +1,9 @@
+document: rfc-7473
+kind: design-rationale
+summary: IP address bindings (ADDRESS messages) are deliberately excluded from the uninteresting state category for Prefix-LSPs. LSRs such as mLDP use peer IP addresses to determine upstream LSRs toward the root node and to select forwarding interfaces toward downstream LSRs; disabling IP address advertisement would break mLDP and other dependent applications.
+section: 3.1.1
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

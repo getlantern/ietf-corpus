@@ -1,0 +1,9 @@
+document: rfc-7474
+kind: design-rationale
+summary: OSPFv2 per-packet sequence numbers are maintained as adjacency state; when an adjacency is torn down the sequence numbers are reinitialized, enabling inter-session replay attacks. Additionally, sequence number rollover is unspecified, enabling intra-session replay. These gaps motivated the 64-bit extended sequence number design.
+section: "1"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

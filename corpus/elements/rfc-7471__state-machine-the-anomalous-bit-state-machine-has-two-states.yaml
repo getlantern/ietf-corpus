@@ -1,0 +1,8 @@
+document: rfc-7471
+kind: state-machine
+summary: 'The Anomalous bit state machine has two states: steady-state (A=0) and anomalous (A=1). Transition to anomalous occurs when a measured value exceeds the configured maximum threshold; transition back to steady-state occurs when the value falls below the configured reuse threshold and has remained there for at least one advertisement interval. Only one threshold direction (high or low) may trigger any given sub-TLV at a time to prevent oscillations.'
+section: 4.1.3
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

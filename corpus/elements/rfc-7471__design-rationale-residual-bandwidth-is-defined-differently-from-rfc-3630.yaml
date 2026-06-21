@@ -1,0 +1,9 @@
+document: rfc-7471
+kind: design-rationale
+summary: 'Residual Bandwidth is defined differently from RFC 3630''s Unreserved Bandwidth: Residual Bandwidth subtracts RSVP-TE tunnel reservations from Maximum Bandwidth (link capacity) and provides an aggregated remainder across all priorities, whereas Unreserved Bandwidth subtracts from Maximum Reservable Bandwidth per priority. Both can be used concurrently for different use cases (e.g., Weighted ECMP vs. call admission control).'
+section: 4.5.3
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

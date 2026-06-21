@@ -1,0 +1,9 @@
+document: rfc-7474
+kind: design-rationale
+summary: 'Incorporating the IP source address into Apad rather than into the OSPF packet itself is the minimal change needed to bind the IP header to the authentication: it reuses the RFC 5709 hash framework and requires only that the Apad initialization change, leaving the overall cryptographic process unchanged.'
+section: "5"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

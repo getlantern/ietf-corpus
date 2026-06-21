@@ -1,0 +1,10 @@
+document: rfc-7474
+kind: normative-requirement
+summary: The lower-order 32-bit sequence number MUST be incremented for every OSPF packet sent. Upon reception, the received sequence number MUST be greater than the sequence number in the last accepted OSPF packet of that type from the same neighbor; otherwise the packet MUST be treated as a replay and dropped.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

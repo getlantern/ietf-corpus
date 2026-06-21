@@ -1,0 +1,10 @@
+document: rfc-7474
+kind: normative-requirement
+summary: When sending an OSPFv2 packet, implementations MUST initialize the first 4 octets of the Apad constant to the IP source address that would be used, with the remainder filled with 0x878FE1F3 repeated (L-4)/4 times, where L is the hash output length in octets.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

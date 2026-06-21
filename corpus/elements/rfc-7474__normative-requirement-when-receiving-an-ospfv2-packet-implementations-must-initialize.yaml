@@ -1,0 +1,10 @@
+document: rfc-7474
+kind: normative-requirement
+summary: When receiving an OSPFv2 packet, implementations MUST initialize the first 4 octets of Apad to the IP source address from the IP header of the incoming packet. This ensures that any alteration of the IP source address will cause authentication verification to fail.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

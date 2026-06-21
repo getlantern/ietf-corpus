@@ -1,0 +1,9 @@
+document: rfc-7477
+kind: security-consideration
+summary: CSYNC processing MUST NOT be used to synchronize DS records, DNSKEY materials, CDS records, CDNSKEY records, or CSYNC records themselves. All DNS transactions must be validated by DNSSEC as 'secure'. Child zones deploying CSYNC MUST be signed and properly linked to the parent with a DS record.
+section: "5"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
