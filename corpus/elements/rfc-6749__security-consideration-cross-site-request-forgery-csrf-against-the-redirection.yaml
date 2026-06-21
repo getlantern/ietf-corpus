@@ -1,0 +1,9 @@
+document: rfc-6749
+kind: security-consideration
+summary: Cross-site request forgery (CSRF) against the redirection endpoint can allow attackers to inject authorization codes or access tokens. The 'state' request parameter SHOULD be used by clients to bind the request to the user-agent session and validate it on callback; its value SHOULD be unguessable.
+section: "10.12"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

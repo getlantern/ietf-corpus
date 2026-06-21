@@ -1,0 +1,9 @@
+document: rfc-6737
+kind: normative-requirement
+summary: If the receiver of a CUR has no applications in common with the sender, it MUST return a CUA with Result-Code set to DIAMETER_NO_COMMON_APPLICATION and SHOULD disconnect the transport-layer connection. If active sessions are using the connection, peers MAY delay disconnection until sessions can be redirected or gracefully terminated.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

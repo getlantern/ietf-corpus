@@ -1,0 +1,9 @@
+document: rfc-6734
+kind: design-rationale
+summary: The existing Diameter EAP application (RFC 4072) allows at most one instance of EAP-Master-Session-Key or EAP-Key-Name AVPs per message, which is insufficient for newer EAP methods and ERP (RFC 6696) that require transport of multiple derived keys. This document introduces a Grouped Key AVP to enable multiple cryptographic keys in a single Diameter message.
+section: "1"
+topics:
+    - diameter
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-6749
+kind: normative-requirement
+summary: The authorization code MUST expire shortly after issuance (maximum lifetime of 10 minutes RECOMMENDED) and MUST NOT be used more than once. If reuse is detected, the authorization server MUST deny the request and SHOULD revoke all tokens previously issued based on that code.
+section: 4.1.2
+rfc2119_level: MUST
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

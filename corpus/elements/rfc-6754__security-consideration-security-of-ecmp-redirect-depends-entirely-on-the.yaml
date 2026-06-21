@@ -1,0 +1,9 @@
+document: rfc-6754
+kind: security-consideration
+summary: Security of ECMP Redirect depends entirely on the security of the underlying PIM packet; the security considerations for PIM Assert packets in RFC 4601 apply. Spoofed ECMP Redirect packets may cause downstream routers to send PIM Joins to an undesired upstream router and trigger cascading ECMP Redirect messages.
+section: "7"
+topics:
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

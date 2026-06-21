@@ -1,0 +1,10 @@
+document: rfc-6738
+kind: design-rationale
+summary: 'The default SK derivation follows the methodology of RFC 5295 Section 3.1: SK = KDF(PSK, key label | ''\0'' | Ni | Nr | IDi | length), where KDF is HMAC-SHA-256 and the key label is ''sk4ikev2@ietf.org''. This binds the SK to the specific IKEv2 session parameters to ensure key freshness and limit scope.'
+section: "4.1"
+topics:
+    - diameter
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

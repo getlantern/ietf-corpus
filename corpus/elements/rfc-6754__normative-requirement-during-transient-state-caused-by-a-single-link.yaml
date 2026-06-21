@@ -1,0 +1,10 @@
+document: rfc-6754
+kind: normative-requirement
+summary: During transient state caused by a single link cut, the downstream router SHOULD select a new RPF neighbor, preferring one on the same LAN as the previous RPF neighbor. If none is reachable there, a different LAN is used, preferring the router that previously served as RPF neighbor (identified by Router ID in the Interface ID Hello option).
+section: "5.3"
+rfc2119_level: SHOULD
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-6749
+kind: security-consideration
+summary: In the implicit grant, the access token is delivered in the URI fragment and may be exposed to the resource owner, browser history, and third-party scripts in the redirection endpoint. Clients MUST NOT include third-party scripts in the redirection response without ensuring their own credential-extraction scripts execute first.
+section: "10.16"
+topics:
+    - oauth
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

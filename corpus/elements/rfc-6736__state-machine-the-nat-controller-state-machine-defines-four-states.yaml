@@ -1,0 +1,9 @@
+document: rfc-6736
+kind: state-machine
+summary: 'The NAT controller state machine defines four states: Idle (no session), Pending (NCR Initial sent, awaiting NCA), Open (session active, may send Update NCRs), and Discon (STR sent). Key transitions: new endpoint detected triggers NCR (Idle→Pending); successful NCA moves to Open; access session end or ASR triggers STR (Open→Discon); STA receipt completes teardown (Discon→Idle). Any event not in the state table MUST be treated as an error.'
+section: "7"
+topics:
+    - nat
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

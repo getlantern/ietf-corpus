@@ -1,0 +1,10 @@
+document: rfc-6736
+kind: design-rationale
+summary: DNCA limits per-endpoint NAT bindings primarily to protect against denial-of-service attacks. If one endpoint could consume all bindings for a shared public IP address, it would deny service to co-located endpoints. The optimal per-endpoint maximum varies by endpoint type (e.g., broadband PC vs. mobile phone), motivating active management.
+section: "1"
+topics:
+    - nat
+    - diameter
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6736
+kind: state-machine
+summary: 'The NAT device state machine defines three states: Idle, Open, and Discon. A successful INITIAL_REQUEST NCR moves Idle→Open; a failed NCR keeps Idle. Any STR received in any state causes cleanup and moves to Idle. When unable to maintain a session (resource exhaustion), the device sends ASR (Open→Discon) and retries until an ASA is received. Unplanned loss of connection to the NAT controller causes immediate cleanup (Open→Idle).'
+section: "7"
+topics:
+    - nat
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

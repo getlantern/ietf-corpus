@@ -1,0 +1,11 @@
+document: rfc-6738
+kind: security-consideration
+summary: Diameter messages between the IKEv2 server and the HAAA may traverse AAA brokers or Diameter agents and are only hop-by-hop protected; any intermediate agent processing IKEv2-SK-Answer messages can see the contents of the Key AVP, so the communication path must be secured.
+section: "10"
+topics:
+    - diameter
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
