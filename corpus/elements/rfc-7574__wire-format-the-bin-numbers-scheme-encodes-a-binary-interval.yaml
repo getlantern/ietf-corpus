@@ -1,0 +1,8 @@
+document: rfc-7574
+kind: wire-format
+summary: The Bin Numbers scheme encodes a binary interval of chunks as a single 32-bit or 64-bit integer. Leaf bins use even numbers (chunk index × 2); parent bin = (leftBin + rightBin) / 2. The special value 0xFFFFFFFF (32-bit) or 0xFFFFFFFFFFFFFFFF (64-bit) denotes an empty interval; 0x7FFF...FFF denotes 'everything'. Support is optional.
+section: "4.2"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

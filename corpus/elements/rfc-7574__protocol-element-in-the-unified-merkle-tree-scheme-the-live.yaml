@@ -1,0 +1,10 @@
+document: rfc-7574
+kind: protocol-element
+summary: In the Unified Merkle Tree scheme, the live injector generates NCHUNKS_PER_SIG chunks (a fixed power of 2, ≥2) per cycle, computes a munro hash (root of the new subtree), signs it with the swarm private key, and sends a SIGNED_INTEGRITY message containing the signed munro hash before the uncle hashes and DATA for each requested chunk. Peers verify the munro signature using the swarm public key (the swarm ID).
+section: 6.1.2.1
+topics:
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

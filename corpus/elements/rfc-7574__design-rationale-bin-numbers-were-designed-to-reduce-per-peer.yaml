@@ -1,0 +1,8 @@
+document: rfc-7574
+kind: design-rationale
+summary: Bin numbers were designed to reduce per-peer state and wire overhead for expressing chunk intervals. By mapping binary tree intervals to a flat integer, PPSPP can use arrays instead of binary trees, reducing implementation complexity. A single bin number can compactly express any power-of-two-aligned interval.
+section: "4.2"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

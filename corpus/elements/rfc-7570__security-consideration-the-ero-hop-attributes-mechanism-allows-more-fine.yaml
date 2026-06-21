@@ -1,0 +1,10 @@
+document: rfc-7570
+kind: security-consideration
+summary: The ERO Hop Attributes mechanism allows more fine-grained control of LSP attributes at individual nodes, which can reveal information about LSP requests and node status to unauthorized parties. A node SHOULD validate hop attributes against its policies and admission procedures and MAY reject requests using 'Policy Control Failure' or 'Admission Control Failure' error codes. Full resolution requires encrypting entire RSVP signaling messages.
+section: "5"
+topics:
+    - security
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

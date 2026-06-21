@@ -1,0 +1,10 @@
+document: rfc-7571
+kind: normative-requirement
+summary: The ERO subobject type preceding the ERO Hop Attributes subobject MUST be less than 32 (to identify a specific loopback entity). For type 1 (IPv4 prefix) the prefix length MUST be 32, and for type 2 (IPv6 prefix) it MUST be 128. If the loopback entity is not explicitly identified, the request MUST be ignored and a 'Bad EXPLICIT_ROUTE object' error SHOULD be generated.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

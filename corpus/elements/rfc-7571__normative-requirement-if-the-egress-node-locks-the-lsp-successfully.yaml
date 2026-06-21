@@ -1,0 +1,10 @@
+document: rfc-7571
+kind: normative-requirement
+summary: If the egress node locks the LSP successfully, it MUST send a Resv message with the A bit in the ADMIN_STATUS Object set. Otherwise, it MUST send a PathErr with Error Code 'OAM Problem' and Error Value 'Lock Failure', and subsequent Resv messages MUST have the A bit cleared.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

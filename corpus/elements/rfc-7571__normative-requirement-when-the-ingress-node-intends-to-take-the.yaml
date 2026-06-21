@@ -1,0 +1,10 @@
+document: rfc-7571
+kind: normative-requirement
+summary: When the ingress node intends to take the LSP out of lock mode, it MUST send a Path message with the A bit in the ADMIN_STATUS Object cleared. On successful unlock the egress MUST send Resv with A bit cleared; otherwise MUST send PathErr with Error Value 'Unlock Failure' and subsequent Resv MUST keep A bit set.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

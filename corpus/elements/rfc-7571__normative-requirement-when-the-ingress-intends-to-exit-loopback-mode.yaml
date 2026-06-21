@@ -1,0 +1,10 @@
+document: rfc-7571
+kind: normative-requirement
+summary: When the ingress intends to exit loopback mode, it MUST send a Path message with the Loopback Attribute Flag cleared. The A bit MUST remain set. If the node exits loopback successfully it MUST clear the Loopback flag in the RRO Hop Attributes subobject; on failure it MUST send PathErr with Error Value 'Exit Loopback Failure'.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7574
+kind: state-machine
+summary: 'The handshake follows a three-way procedure: (1) initiating Peer P sends a HANDSHAKE with random chanP and swarm metadata, prefixed with destination channel ID 0; (2) responding Peer Q replies with HANDSHAKE containing chanQ, prefixed with chanP; (3) the channel is fully established when Peer Q receives a datagram from Peer P carrying chanQ. Either peer may close with an all-zeros channel ID HANDSHAKE.'
+section: 3.1.1
+topics:
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

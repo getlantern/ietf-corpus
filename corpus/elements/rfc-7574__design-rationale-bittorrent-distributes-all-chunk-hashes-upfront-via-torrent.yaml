@@ -1,0 +1,9 @@
+document: rfc-7574
+kind: design-rationale
+summary: BitTorrent distributes all chunk hashes upfront via .torrent metadata files. This is unsuitable for streaming because when chunks are small (as in PPSPP over UDP), it requires downloading a large number of hashes before content playback can begin, increasing time-till-playback. PPSPP's Merkle hash tree sends only the uncle hashes needed per chunk inline with the data.
+section: "5.5"
+topics:
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

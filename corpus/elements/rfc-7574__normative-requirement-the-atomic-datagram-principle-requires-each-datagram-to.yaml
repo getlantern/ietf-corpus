@@ -1,0 +1,10 @@
+document: rfc-7574
+kind: normative-requirement
+summary: The Atomic Datagram Principle requires each datagram to be independently processable. The INTEGRITY messages (uncle hashes) needed to verify a chunk SHOULD be in the same datagram as the DATA message; if datagram size prevents this, the INTEGRITY messages MUST be sent first in one or more preceding datagrams.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

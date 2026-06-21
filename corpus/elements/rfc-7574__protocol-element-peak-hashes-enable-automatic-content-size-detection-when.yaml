@@ -1,0 +1,9 @@
+document: rfc-7574
+kind: protocol-element
+summary: Peak hashes enable automatic content size detection when fixed-size chunks are used. A peak hash is the hash of a filled Merkle tree node whose sibling is incomplete; the set of peak hashes corresponds to the '1' bits in the binary representation of the chunk count. A newcomer peer verifies received peak hashes against the trusted root hash to determine approximate file size, then fetches the last chunk to get the exact size.
+section: 5.6.1
+topics:
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

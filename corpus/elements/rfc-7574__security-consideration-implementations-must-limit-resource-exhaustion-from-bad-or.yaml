@@ -1,0 +1,9 @@
+document: rfc-7574
+kind: security-consideration
+summary: 'Implementations must limit resource exhaustion from bad or broken peers by enforcing per-message constraints: discarding unexpected HAVEs before handshake completion, ignoring DATA for unrequested chunks, rate-limiting PEX responses, and discarding unsolicited messages. Peers classified as bad (non-responsive or sending invalid messages) should be excluded from further communication.'
+section: "12.6"
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

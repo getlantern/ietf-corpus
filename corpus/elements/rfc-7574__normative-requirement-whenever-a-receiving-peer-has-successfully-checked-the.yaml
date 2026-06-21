@@ -1,0 +1,9 @@
+document: rfc-7574
+kind: normative-requirement
+summary: Whenever a receiving peer has successfully checked the integrity of a chunk or interval of chunks, it MUST send a HAVE message to all peers it wants to allow to download those chunks. The HAVE message MUST contain the chunk specification of the biggest complete interval of all verified chunks covering the newly received interval.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

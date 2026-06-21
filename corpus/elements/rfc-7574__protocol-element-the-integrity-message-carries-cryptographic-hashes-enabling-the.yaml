@@ -1,0 +1,10 @@
+document: rfc-7574
+kind: protocol-element
+summary: The INTEGRITY message carries cryptographic hashes enabling the receiver to verify chunk integrity. Under the Merkle Hash Tree scheme it MUST contain a hash of a subtree and the chunk specification identifying that subtree. A datagram carrying a chunk MUST consist of a list of INTEGRITY messages sorted descending by tree height, followed by a DATA message.
+section: "3.5"
+topics:
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

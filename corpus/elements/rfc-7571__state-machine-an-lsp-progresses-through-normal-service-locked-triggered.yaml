@@ -1,0 +1,9 @@
+document: rfc-7571
+kind: state-machine
+summary: 'An LSP progresses through: normal service → locked (triggered by ingress Path with A bit set and R bit set, confirmed by egress Resv with A bit set) → loopback (triggered by ingress Path with Loopback flag set while locked, confirmed by RRO with Loopback flag set) → locked (Loopback flag cleared) → normal service (A bit cleared). Transitions from loopback directly to unlocked are prohibited.'
+section: "3"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7571
+kind: normative-requirement
+summary: If a node successfully enters loopback mode, it MUST set the Loopback Attribute Flag in any RRO Hop Attributes subobject it adds per RFC7570, and the A bit MUST be kept set. If loopback cannot be enabled, the node MUST send a PathErr with Error Code 'OAM Problem' and Error Value 'Loopback Failure'.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
