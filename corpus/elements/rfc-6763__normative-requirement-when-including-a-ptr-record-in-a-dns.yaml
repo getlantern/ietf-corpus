@@ -1,0 +1,10 @@
+document: rfc-6763
+kind: normative-requirement
+summary: When including a PTR record in a DNS-SD response, the server SHOULD also include the corresponding SRV record(s), TXT record(s), and all A/AAAA address records named in the SRV rdata as additional records. Clients MUST be capable of functioning correctly even if these additional records are absent.
+section: "12.1"
+rfc2119_level: SHOULD
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

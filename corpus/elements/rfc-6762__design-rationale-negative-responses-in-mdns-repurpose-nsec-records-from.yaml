@@ -1,0 +1,9 @@
+document: rfc-6762
+kind: design-rationale
+summary: Negative responses in mDNS repurpose NSEC records (from DNSSEC) rather than using NXDOMAIN, because NXDOMAIN in Unicast DNS asserts the entire name does not exist, whereas in mDNS a host can only authoritatively assert the nonexistence of records it exclusively owns, not all records for a name (Appendix E).
+section: Appendix E
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

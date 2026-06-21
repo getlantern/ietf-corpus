@@ -1,0 +1,11 @@
+document: rfc-6762
+kind: normative-requirement
+summary: A Multicast DNS responder MUST NOT (except when answering probe queries) multicast a record on a given interface until at least one second has elapsed since the last time that record was multicast on that interface, to protect against excessive packet flooding.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - multicast
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

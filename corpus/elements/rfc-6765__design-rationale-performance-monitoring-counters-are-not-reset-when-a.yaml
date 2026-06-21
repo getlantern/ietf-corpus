@@ -1,0 +1,8 @@
+document: rfc-6765
+kind: design-rationale
+summary: Performance Monitoring counters are not reset when a GBS is re-initialized, but only when the agent itself is reset or re-initialized. This prevents loss of accumulated PM data from transient link events such as BCE drop-outs and re-training.
+section: "5.2"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

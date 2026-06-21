@@ -1,0 +1,9 @@
+document: rfc-6765
+kind: normative-requirement
+summary: Changes to gBondPortConfAdminScheme and gBondPortConfPeerAdminScheme MUST be performed when the link is administratively 'down'. Attempts to change these when the link is 'up' or initializing MUST be rejected (SNMP error inconsistentValue); setting an unsupported scheme SHALL be rejected (wrongValue); setting 'none' on a multi-BCE GBS MUST be rejected (inconsistentValue).
+section: "6"
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

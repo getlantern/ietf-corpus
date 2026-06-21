@@ -1,0 +1,10 @@
+document: rfc-6762
+kind: normative-requirement
+summary: When Known-Answer records overflow a single query packet, the querier MUST set the TC (Truncated) bit and MUST immediately follow with additional packets containing more Known-Answer records. A responder seeing TC set MUST defer its response for 400-500 ms to collect all Known-Answer packets.
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-6762
+kind: normative-requirement
+summary: A Multicast DNS responder MUST NOT answer a query if the answer it would give is already in the query's Answer Section with an RR TTL at least half the correct value (Known-Answer Suppression). If the TTL is less than half, the responder MUST send an answer to refresh the querier's cache.
+section: "7.1"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

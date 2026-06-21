@@ -1,0 +1,9 @@
+document: rfc-6764
+kind: state-machine
+summary: 'The client bootstrapping procedure has five stages: (1) parse user input to extract domain and local-part, (2) SRV lookup for _caldavs/_carddavs (then _caldav/_carddav if no TLS result), (3) determine context path via TXT record or well-known URI, (4) determine user identifier from mailbox or userinfo, (5) connect, issue PROPFIND for DAV:current-user-principal to obtain principal-URL.'
+section: "6"
+topics:
+    - dns
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6762
+kind: interoperability-note
+summary: Legacy DNS resolvers that send queries from a source port other than 5353 are handled by sending a conventional unicast response with TTL capped at 10 seconds and the cache-flush bit unset, preventing stale data retention by resolvers that do not implement mDNS cache coherency mechanisms.
+section: "6.7"
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

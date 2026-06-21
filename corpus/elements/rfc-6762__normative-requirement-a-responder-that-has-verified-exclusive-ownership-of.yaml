@@ -1,0 +1,10 @@
+document: rfc-6762
+kind: normative-requirement
+summary: A responder that has verified exclusive ownership of a name MUST respond to queries for record types that do not exist for that name by sending a negative answer (NSEC record) asserting the nonexistence of that record. For shared records, NXDOMAIN and other error responses MUST NOT be sent.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

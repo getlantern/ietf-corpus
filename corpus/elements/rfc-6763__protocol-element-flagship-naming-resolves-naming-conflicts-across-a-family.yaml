@@ -1,0 +1,9 @@
+document: rfc-6763
+kind: protocol-element
+summary: Flagship naming resolves naming conflicts across a family of protocols serving the same logical function. If a device does not implement the flagship protocol, it creates a placeholder SRV record (priority=0, weight=0, port=0) under that name to stake a claim and detect conflicts with other devices in the fleet. No PTR record is created for the placeholder.
+section: "8"
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

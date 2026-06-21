@@ -1,0 +1,9 @@
+document: rfc-6764
+kind: design-rationale
+summary: Well-known URIs are used because CalDAV or CardDAV services may not be located at the HTTP server root; SRV records only supply an FQDN and port, not a path. The well-known URI provides a stable, discoverable stub that redirects to the actual context path, decoupling discovery from deployment topology.
+section: "1"
+topics:
+    - dns
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

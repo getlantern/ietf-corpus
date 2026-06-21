@@ -1,0 +1,10 @@
+document: rfc-6762
+kind: normative-requirement
+summary: Whenever a Multicast DNS responder receives a Multicast DNS response containing a conflicting resource record (same name/rrtype/rrclass but inconsistent rdata) for any of its unique records, it MUST immediately reset that record to probing state and repeat the full startup sequence.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

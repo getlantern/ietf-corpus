@@ -1,0 +1,11 @@
+document: rfc-6762
+kind: normative-requirement
+summary: If the source UDP port in a received query is not 5353 (indicating a legacy resolver), the responder MUST send a conventional unicast DNS response directly to the querier. This legacy unicast response MUST repeat the query ID and question, MUST NOT set the cache-flush bit, and SHOULD NOT give a TTL greater than ten seconds.
+section: "6.7"
+rfc2119_level: MUST
+topics:
+    - dns
+    - udp
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

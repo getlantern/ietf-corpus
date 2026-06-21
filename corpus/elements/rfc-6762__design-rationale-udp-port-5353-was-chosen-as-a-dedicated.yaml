@@ -1,0 +1,10 @@
+document: rfc-6762
+kind: design-rationale
+summary: UDP port 5353 was chosen as a dedicated well-known port rather than reusing port 53 because mDNS responders need to receive unsolicited multicast messages without interfering with normal DNS operation, and to allow both compliant mDNS and legacy one-shot resolvers to coexist on the same host (Appendix A).
+section: Appendix A
+topics:
+    - dns
+    - udp
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

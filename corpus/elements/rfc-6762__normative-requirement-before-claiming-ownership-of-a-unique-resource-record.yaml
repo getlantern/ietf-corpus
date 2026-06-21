@@ -1,0 +1,10 @@
+document: rfc-6762
+kind: normative-requirement
+summary: Before claiming ownership of a unique resource record set, a Multicast DNS responder MUST send three probe queries (qtype ANY) 250 ms apart, preceded by an initial random delay of 0-250 ms. If fifteen conflicts occur within any ten-second period, the host MUST wait at least five seconds before each successive probe attempt.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

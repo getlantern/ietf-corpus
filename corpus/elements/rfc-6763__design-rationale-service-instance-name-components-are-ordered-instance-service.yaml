@@ -1,0 +1,9 @@
+document: rfc-6763
+kind: design-rationale
+summary: 'Service Instance Name components are ordered ''<Instance>.<Service>.<Domain>'' rather than ''<Domain>.<Service>.<Instance>'' for three reasons: semantic clarity (instance is the most specific part), network efficiency (DNS name compression compresses the common suffix shared by all instances), and operational flexibility (the subdomain can be delegated independently of instance names).'
+section: B
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

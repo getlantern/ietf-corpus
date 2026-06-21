@@ -1,0 +1,11 @@
+document: rfc-6764
+kind: security-consideration
+summary: A malicious attacker controlling DNS can redirect clients to arbitrary servers. Without secure DNS, clients SHOULD verify the SRV target FQDN matches the queried domain, or prompt the user if it does not. When the FQDN does not match, clients MUST check the SRV-ID in the server certificate; if it does match, clients MUST check SRV-ID or, absent SRV-ID, DNS-ID identifiers.
+section: "8"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

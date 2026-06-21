@@ -1,0 +1,10 @@
+document: rfc-6763
+kind: normative-requirement
+summary: 'When more than one SRV record is returned for a service instance, clients MUST correctly interpret the priority and weight fields per RFC 2782: lower-priority-number servers are preferred, and equal-priority servers are selected randomly in proportion to weight. In the common single-SRV case, both fields SHOULD be set to zero.'
+section: "5"
+rfc2119_level: MUST
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

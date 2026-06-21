@@ -1,0 +1,10 @@
+document: rfc-6762
+kind: security-consideration
+summary: Multicast DNS is substantially less secure than Unicast DNS because it relies on all responders on the local link being trustworthy. An attacker on the local network can poison mDNS caches by sending fraudulent responses. When resolving global names via local multicast, DNSSEC or other security mechanisms MUST be used.
+section: "21"
+topics:
+    - security
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

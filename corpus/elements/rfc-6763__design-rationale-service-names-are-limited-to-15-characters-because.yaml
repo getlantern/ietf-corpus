@@ -1,0 +1,9 @@
+document: rfc-6763
+kind: design-rationale
+summary: 'Service Names are limited to 15 characters because of DNS domain name length constraints: the full Service Instance Name must fit within 255 bytes, and conserving bytes in the service label leaves space for descriptive service subdomains and long parent domain names. Allowing more characters would not add expressiveness but would reduce usable parent domain length.'
+section: "7.2"
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

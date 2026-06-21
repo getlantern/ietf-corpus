@@ -1,0 +1,9 @@
+document: rfc-6763
+kind: design-rationale
+summary: A DNS-SD Service Name must encode both the semantics (what the service does) and the protocol (how it is implemented), not just the underlying transport mechanism. For example, iTunes music sharing uses '_daap._tcp' rather than '_http._tcp', even though it is built on HTTP, because a generic HTTP client cannot meaningfully interact with it.
+section: "7"
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6765
+kind: normative-requirement
+summary: Target upstream and downstream data rate objects (gBondPortConfTargetUpDataRate, gBondPortConfTargetDnDataRate) MUST only be changed when the link is administratively 'down'; changes MUST be rejected with inconsistentValue when the link is 'up' or initializing. These objects are irrelevant for -R subtype ports and MUST be rejected on access.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
