@@ -1,0 +1,11 @@
+document: rfc-7543
+kind: design-rationale
+summary: 'CP-ORF implements a ''route pull'' paradigm: a spoke (V-spoke or EVPN Spoke) initially receives only default/summary routes from a hub, then on-demand pulls more-specific routes covering particular host addresses by sending CP-ORF entries. This avoids advertising all VPN routes to all spokes upfront.'
+section: "4"
+topics:
+    - bgp
+    - routing
+    - mpls
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

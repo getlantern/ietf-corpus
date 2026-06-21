@@ -1,0 +1,9 @@
+document: rfc-7541
+kind: security-consideration
+summary: An attacker who can both inject headers into a compressed stream and observe the encoded lengths can probe the dynamic table state to confirm guesses about secret header values (a CRIME-style attack). HPACK mitigates this by requiring whole-field matches rather than character-by-character, but low-entropy values remain vulnerable.
+section: "7.1"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

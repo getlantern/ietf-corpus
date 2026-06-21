@@ -1,0 +1,10 @@
+document: rfc-7542
+kind: normative-requirement
+summary: If decorated identifiers (e.g., 'homerealm.example.org!user@otherrealm.example.net') are used, the part before the unescaped '!' MUST be a valid utf8-realm. The receiving system MUST convert the identifier to 'user@homerealm.example.org' before forwarding, then apply normal AAA routing.
+section: 3.3.1
+rfc2119_level: MUST
+topics:
+    - radius
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

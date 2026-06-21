@@ -1,0 +1,8 @@
+document: rfc-7540
+kind: design-rationale
+summary: The client connection preface magic string 'PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n' was chosen so that a large proportion of HTTP/1.1 or HTTP/1.0 servers and intermediaries would reject the connection immediately rather than attempting to parse subsequent binary HTTP/2 frames as HTTP/1.x text, reducing interoperability hazards during accidental cleartext HTTP/2 connections.
+section: "3.5"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

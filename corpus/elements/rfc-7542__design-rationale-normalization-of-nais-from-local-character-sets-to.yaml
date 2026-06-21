@@ -1,0 +1,9 @@
+document: rfc-7542
+kind: design-rationale
+summary: Normalization of NAIs from local character sets to UTF-8 SHOULD be performed by edge systems (laptops, phones, etc.) rather than AAA intermediaries, because edge systems have access to locale and character set information that intermediate nodes lack. However, in practice, edge systems do not normalize, so AAA systems SHOULD attempt normalization despite this contradiction.
+section: "2.6"
+topics:
+    - radius
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

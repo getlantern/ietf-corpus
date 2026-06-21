@@ -1,0 +1,11 @@
+document: rfc-7543
+kind: interoperability-note
+summary: Upon receipt of a ROUTE-REFRESH with CP-ORF from a V-spoke, the RR MUST ensure it carries all routes for the relevant VPN. In the special case where all RR clients are V-spokes and none are V-hubs, the RR may lack required routes and MUST send a Route Target Membership NLRI to solicit them from peers.
+section: "4"
+topics:
+    - bgp
+    - routing
+    - mpls
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

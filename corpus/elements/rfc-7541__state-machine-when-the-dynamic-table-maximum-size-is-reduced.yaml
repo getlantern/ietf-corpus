@@ -1,0 +1,8 @@
+document: rfc-7541
+kind: state-machine
+summary: When the dynamic table maximum size is reduced, entries are evicted from the end (oldest entries) until the table size is within the new maximum. When a new entry is added, entries are evicted from the end until the table has room (size ≤ max − new entry size) or is empty; entries larger than the maximum size cause a complete table clear.
+section: "4.3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

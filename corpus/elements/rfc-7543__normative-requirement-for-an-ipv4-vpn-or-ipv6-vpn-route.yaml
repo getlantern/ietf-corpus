@@ -1,0 +1,12 @@
+document: rfc-7543
+kind: normative-requirement
+summary: 'For an IPv4-VPN or IPv6-VPN route to match a CP-ORF, all of the following MUST be true: the route carries an RT matching the CP-ORF VPN Route Target; the prefix length is within [Minlen+64, Maxlen+64]; the leading Minlen bits match the Host Address; and Loc-RIB contains no more-specific covering route satisfying all conditions.'
+section: "3"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - mpls
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

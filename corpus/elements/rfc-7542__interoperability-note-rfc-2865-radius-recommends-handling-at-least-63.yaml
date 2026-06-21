@@ -1,0 +1,9 @@
+document: rfc-7542
+kind: interoperability-note
+summary: RFC 2865 (RADIUS) recommends handling at least 63 octets in the User-Name attribute, and the maximum RADIUS attribute length is 253 octets. NAIs transported in RADIUS are therefore effectively limited to 253 octets; any NAI that passes through a Diameter-to-RADIUS translation may be truncated if it exceeds this limit.
+section: "2.3"
+topics:
+    - radius
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

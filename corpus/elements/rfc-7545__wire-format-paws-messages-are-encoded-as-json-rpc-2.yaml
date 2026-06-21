@@ -1,0 +1,9 @@
+document: rfc-7545
+kind: wire-format
+summary: PAWS messages are encoded as JSON-RPC 2.0 carried over HTTPS. Method names follow the form 'spectrum.paws.<methodname>' (e.g., 'spectrum.paws.init', 'spectrum.paws.getSpectrum'). The JSON-RPC 'params' field carries the PAWS request object and the 'result' field carries the PAWS response object; errors are returned in the standard JSON-RPC 'error' field.
+section: "6.1"
+topics:
+    - json
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

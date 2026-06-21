@@ -1,0 +1,8 @@
+document: rfc-7541
+kind: wire-format
+summary: Integers are encoded with an N-bit prefix (N between 1 and 8). Values that fit in the prefix (< 2^N−1) are stored directly; larger values set the prefix to all 1s and encode the remainder in subsequent octets using a 7-bit base-128 varint with continuation flags in the MSB.
+section: "5.1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

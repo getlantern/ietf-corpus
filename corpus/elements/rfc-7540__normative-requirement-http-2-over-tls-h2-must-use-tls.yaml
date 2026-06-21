@@ -1,0 +1,11 @@
+document: rfc-7540
+kind: normative-requirement
+summary: HTTP/2 over TLS (h2) MUST use TLS 1.2 or higher, MUST NOT negotiate compression, and MUST use SNI. Implementations MUST NOT negotiate cipher suites listed in the Appendix A blacklist (export ciphers, NULL, anonymous, RC4, many CBC-mode suites). An endpoint that cannot negotiate an acceptable cipher suite SHOULD use the INADEQUATE_SECURITY error code.
+section: "9.2"
+rfc2119_level: MUST
+topics:
+    - http
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

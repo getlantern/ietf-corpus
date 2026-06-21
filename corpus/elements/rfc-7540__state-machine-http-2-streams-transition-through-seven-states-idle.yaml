@@ -1,0 +1,8 @@
+document: rfc-7540
+kind: state-machine
+summary: 'HTTP/2 streams transition through seven states: idle, reserved (local), reserved (remote), open, half-closed (local), half-closed (remote), and closed. Transitions are triggered by sending or receiving HEADERS frames (opening), PUSH_PROMISE frames (reserving), the END_STREAM flag (half-closing), and RST_STREAM frames (immediate close). Frames received in an unexpected state MUST be treated as a PROTOCOL_ERROR.'
+section: "5.1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

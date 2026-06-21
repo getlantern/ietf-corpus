@@ -1,0 +1,9 @@
+document: rfc-7540
+kind: normative-requirement
+summary: Upon receiving a SETTINGS frame, the recipient MUST apply all parameters and acknowledge with a SETTINGS frame bearing the ACK flag (0x1) and an empty payload. A SETTINGS ACK with a non-empty payload MUST be treated as a FRAME_SIZE_ERROR. An endpoint that does not receive timely acknowledgement SHOULD treat this as a connection error of type SETTINGS_TIMEOUT.
+section: 6.5.3
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

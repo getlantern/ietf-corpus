@@ -1,0 +1,9 @@
+document: rfc-7540
+kind: security-consideration
+summary: Cross-protocol attacks can occur if cleartext HTTP/2 traffic is misinterpreted by HTTP/1.x servers or intermediaries. The client connection preface ('PRI * HTTP/2.0...') was chosen to be an invalid HTTP/1.x method line, mitigating unintentional processing. Implementations MUST still validate the protocol identifier before processing frames.
+section: "10.2"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

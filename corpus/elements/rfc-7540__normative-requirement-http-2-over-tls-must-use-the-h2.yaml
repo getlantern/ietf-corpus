@@ -1,0 +1,10 @@
+document: rfc-7540
+kind: normative-requirement
+summary: HTTP/2 over TLS MUST use the 'h2' ALPN protocol identifier; 'h2c' MUST NOT be sent over TLS. For cleartext TCP, a client with prior knowledge MUST send the connection preface but MAY skip the HTTP/1.1 Upgrade mechanism. Implementations supporting HTTP/2 over TLS MUST use ALPN negotiation rather than cleartext prior-knowledge procedures.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - http
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

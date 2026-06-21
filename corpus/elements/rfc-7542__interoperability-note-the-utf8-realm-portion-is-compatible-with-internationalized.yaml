@@ -1,0 +1,9 @@
+document: rfc-7542
+kind: interoperability-note
+summary: The utf8-realm portion is compatible with Internationalized Domain Names (IDNs) and does not need to be converted to Punycode before being placed in a RADIUS User-Name attribute. Punycode conversion should only occur when the realm is used for DNS lookups, and applications SHOULD NOT blindly convert non-ASCII names to A-labels without knowing which protocol the name resolution library will select.
+section: "3.2"
+topics:
+    - radius
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

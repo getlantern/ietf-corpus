@@ -1,0 +1,9 @@
+document: rfc-7540
+kind: normative-requirement
+summary: HTTP/2 request pseudo-header fields (:method, :scheme, :path, :authority) and the response pseudo-header :status MUST appear before any regular header fields. Pseudo-headers MUST NOT appear in trailers. All pseudo-headers defined for a request MUST be present (with :method and :path required; :scheme required except for CONNECT). An endpoint MUST treat a violation as a malformed request.
+section: 8.1.2
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

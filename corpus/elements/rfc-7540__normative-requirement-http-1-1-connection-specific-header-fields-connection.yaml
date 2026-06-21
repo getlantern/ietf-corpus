@@ -1,0 +1,9 @@
+document: rfc-7540
+kind: normative-requirement
+summary: 'HTTP/1.1 connection-specific header fields (Connection, Keep-Alive, Proxy-Connection, Transfer-Encoding, Upgrade) MUST NOT be used in HTTP/2. An endpoint that receives such a field MUST treat the associated request or response as malformed. The TE header is an exception: it MAY be included if its value is exactly ''trailers''.'
+section: 8.1.2
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

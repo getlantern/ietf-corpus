@@ -1,0 +1,10 @@
+document: rfc-7542
+kind: normative-requirement
+summary: Strings that are not in Unicode Normal Form Composed (NFC) are not valid NAIs and SHOULD NOT be treated as such. Implementations that receive a non-normalized but otherwise valid UTF-8 string SHOULD create a local normalized copy for local processing only; that local version MUST NOT be used outside the local context.
+section: "2.1"
+rfc2119_level: SHOULD NOT
+topics:
+    - radius
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

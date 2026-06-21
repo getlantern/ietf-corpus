@@ -1,0 +1,9 @@
+document: rfc-7542
+kind: security-consideration
+summary: Multiple identifier formats allow attackers to make contradictory claims without being detected. In TTLS, there is no requirement that inner and outer identifiers be related, enabling cross-domain authentication abuses where a misconfigured home domain proxies inner authentication to a completely different domain. Such disparate-realm requests SHOULD be rejected.
+section: "4.2"
+topics:
+    - security
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

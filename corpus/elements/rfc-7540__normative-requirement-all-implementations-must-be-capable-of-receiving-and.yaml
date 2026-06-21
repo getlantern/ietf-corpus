@@ -1,0 +1,9 @@
+document: rfc-7540
+kind: normative-requirement
+summary: All implementations MUST be capable of receiving and minimally processing frames up to 2^14 (16,384) octets in length plus the 9-octet header. SETTINGS_MAX_FRAME_SIZE may be set to any value between 2^14 and 2^24-1 (16,777,215) octets. Exceeding the negotiated maximum MUST be treated as a FRAME_SIZE_ERROR, which is a connection error for frames that carry header blocks or SETTINGS.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7540
+kind: security-consideration
+summary: 'HTTP/2 header compression creates CRIME-like attack vectors: compressing sensitive header fields (e.g., cookies, Authorization) alongside attacker-controlled data on the same connection can allow a compression-ratio side-channel to leak secrets. HTTP/2 does not mandate any mitigations but notes that disabling compression or limiting cross-origin header sharing reduces exposure.'
+section: "10.6"
+topics:
+    - http
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

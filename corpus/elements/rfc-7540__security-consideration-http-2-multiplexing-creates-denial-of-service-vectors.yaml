@@ -1,0 +1,9 @@
+document: rfc-7540
+kind: security-consideration
+summary: 'HTTP/2 multiplexing creates denial-of-service vectors: an adversary can send many small or rapid RST_STREAM frames (causing server state churn), large header blocks exceeding available memory, or large numbers of SETTINGS frames requiring processing. Servers MUST impose limits on header block size and SHOULD rate-limit control frame processing.'
+section: "10.5"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

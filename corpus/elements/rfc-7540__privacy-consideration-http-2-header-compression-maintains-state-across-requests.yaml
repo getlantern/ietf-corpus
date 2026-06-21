@@ -1,0 +1,9 @@
+document: rfc-7540
+kind: privacy-consideration
+summary: HTTP/2 header compression maintains state across requests, and the association of multiple requests over a single TCP connection can reveal browsing patterns more readily than separate connections. Traffic analysis of compressed header sizes may leak information about request content. The use of padding in DATA and HEADERS frames provides limited mitigation against size-based traffic analysis.
+section: "10.8"
+topics:
+    - http
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

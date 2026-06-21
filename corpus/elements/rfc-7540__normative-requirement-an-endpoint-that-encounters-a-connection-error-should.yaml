@@ -1,0 +1,9 @@
+document: rfc-7540
+kind: normative-requirement
+summary: An endpoint that encounters a connection error SHOULD send a GOAWAY frame with the Last-Stream-ID set to the highest-numbered stream it has processed, along with an error code, and MUST then close the TCP connection. GOAWAY provides a best-effort signal; reliable delivery is not guaranteed.
+section: 5.4.1
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

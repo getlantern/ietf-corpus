@@ -1,0 +1,8 @@
+document: rfc-7540
+kind: protocol-element
+summary: HTTP/2 header compression uses HPACK (RFC 7541) with a single stateful compression context and a single decompression context shared across the entire connection. Header block fragments are transmitted inside HEADERS, PUSH_PROMISE, and CONTINUATION frames. A decoding error in any header block MUST be treated as a connection error of type COMPRESSION_ERROR.
+section: "4.3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

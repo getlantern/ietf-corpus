@@ -1,0 +1,9 @@
+document: rfc-7540
+kind: interoperability-note
+summary: HTTP/2 uses 'h2' as the ALPN identifier for TLS-based HTTP/2 and 'h2c' for cleartext TCP. Negotiating either token commits both endpoints to all transport, framing, and message semantics of this specification. The 'h2c' token is reserved in the ALPN space but describes a non-TLS protocol and MUST NOT be selected in TLS negotiation.
+section: "3.1"
+topics:
+    - http
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
