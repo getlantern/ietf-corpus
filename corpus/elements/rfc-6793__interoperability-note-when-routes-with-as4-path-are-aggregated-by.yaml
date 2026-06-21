@@ -1,0 +1,9 @@
+document: rfc-6793
+kind: interoperability-note
+summary: When routes with AS4_PATH are aggregated by an OLD BGP speaker, the AS4_PATH may be lost or result in valid but partial information that cannot be seamlessly combined, yielding incomplete AS path information. This incompleteness can create a routing loop risk in cases where the aggregated route is not less specific than all component routes.
+section: 4.2.3
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

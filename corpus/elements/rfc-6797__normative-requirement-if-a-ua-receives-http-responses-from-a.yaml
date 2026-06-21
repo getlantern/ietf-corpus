@@ -1,0 +1,10 @@
+document: rfc-6797
+kind: normative-requirement
+summary: If a UA receives HTTP responses from a Known HSTS Host over a secure channel but the responses lack the STS header field, the UA MUST continue to treat the host as a Known HSTS Host until the max-age expires. The absence of the header does not remove Known HSTS Host status.
+section: "8.6"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

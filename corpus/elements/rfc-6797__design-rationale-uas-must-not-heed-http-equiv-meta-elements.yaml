@@ -1,0 +1,9 @@
+document: rfc-6797
+kind: design-rationale
+summary: UAs MUST NOT heed `http-equiv` meta elements for HSTS because a page served over HTTP (or injected by a MITM) could otherwise set HSTS Policy fraudulently; policy must only be established via the out-of-band HTTP response header over verified secure transport.
+section: "8.5"
+topics:
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

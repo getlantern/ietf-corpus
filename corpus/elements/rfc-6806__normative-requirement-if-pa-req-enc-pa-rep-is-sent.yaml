@@ -1,0 +1,10 @@
+document: rfc-6806
+kind: normative-requirement
+summary: If PA-REQ-ENC-PA-REP is sent in the request, the KDC MUST include PA-REQ-ENC-PA-REP in the encrypted-pa-data of any generated reply, containing a checksum over the AS-REQ or TGS-REQ using the reply key, checksum type required for the reply key encryption type, and key usage KEY_USAGE_AS_REQ (56).
+section: "11"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

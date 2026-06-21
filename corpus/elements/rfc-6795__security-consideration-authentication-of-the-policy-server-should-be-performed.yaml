@@ -1,0 +1,11 @@
+document: rfc-6795
+kind: security-consideration
+summary: Authentication of the policy server SHOULD be performed by verifying the X.509 certificate presented during TLS establishment. The UA SHOULD ensure the identity in the certificate matches the policy server URI. New subscriptions SHOULD trigger UA authentication via X.509 or HTTP Digest.
+section: "4"
+topics:
+    - sip
+    - security
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

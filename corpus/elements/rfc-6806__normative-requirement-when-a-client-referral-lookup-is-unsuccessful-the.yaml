@@ -1,0 +1,9 @@
+document: rfc-6806
+kind: normative-requirement
+summary: When a client referral lookup is unsuccessful, the KDC MUST return KDC_ERR_C_PRINCIPAL_UNKNOWN. When lookup succeeds but the account is in another realm, the KDC MUST return KDC_ERR_WRONG_REALM with the true or closer realm in crealm. The client MUST NOT use the cname from this error.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

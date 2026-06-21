@@ -1,0 +1,10 @@
+document: rfc-6798
+kind: design-rationale
+summary: MAPDV2 is suited for RTP endpoints using adaptive de-jitter buffers that track average delay variation, because it measures the envelope of instantaneous delay relative to a short-term moving average. 2-point PDV is better for networks with fixed de-jitter buffers or distributed synchronization, as it reports absolute delay variation relative to a reference packet.
+section: "3.3"
+topics:
+    - rtp
+    - realtime
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

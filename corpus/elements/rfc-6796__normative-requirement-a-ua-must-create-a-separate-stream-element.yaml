@@ -1,0 +1,10 @@
+document: rfc-6796
+kind: normative-requirement
+summary: A UA MUST create a separate <stream> element for each 'm=' line in a session description or SDP offer/answer pair, in the same order. For a session description the UA MUST insert the media type and MUST create a <codec> element for each codec listed. <codec> elements MUST have 'q' attributes with values decreasing with codec order in the 'm=' line.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

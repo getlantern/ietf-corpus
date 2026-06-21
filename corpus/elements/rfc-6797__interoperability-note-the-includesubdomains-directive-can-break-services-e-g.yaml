@@ -1,0 +1,10 @@
+document: rfc-6797
+kind: interoperability-note
+summary: The `includeSubDomains` directive can break services (e.g., CRL distribution, OCSP) offered only over plain HTTP at subdomains of an HSTS Host. Operators must either avoid `includeSubDomains`, migrate subdomains to HTTPS, use a different domain for HTTP-only services, or adopt OCSP Stapling.
+section: 11.4.1
+topics:
+    - security
+    - tls
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

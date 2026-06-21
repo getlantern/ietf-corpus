@@ -1,0 +1,9 @@
+document: rfc-6797
+kind: design-rationale
+summary: HSTS Policy is established only when the STS header is received over error-free secure transport to prevent a MITM from maliciously setting, updating, or zeroing the max-age — which could cause unauthorized policy establishment, denial-of-service, or removal of Known HSTS Host status.
+section: "14.3"
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

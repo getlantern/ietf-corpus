@@ -1,0 +1,9 @@
+document: rfc-6806
+kind: state-machine
+summary: 'Client referral loop: client sends AS-REQ → if KDC_ERR_WRONG_REALM is received, client sends new AS-REQ to the realm specified in crealm of the error → repeat until AS-REP is received or the true realm is found. Implementations SHOULD limit referral hops to 5 to avoid infinite loops.'
+section: "7"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

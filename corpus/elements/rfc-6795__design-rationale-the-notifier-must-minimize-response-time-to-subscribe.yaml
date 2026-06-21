@@ -1,0 +1,8 @@
+document: rfc-6795
+kind: design-rationale
+summary: The notifier must minimize response time to SUBSCRIBE requests because delay in generating the initial NOTIFY increases call setup latency during an INVITE transaction. Subscriptions can be established while in an INVITE transaction between 200 OK and ACK, so delays would defer ACK transmission.
+section: "3.7"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

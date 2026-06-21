@@ -1,0 +1,9 @@
+document: rfc-6806
+kind: design-rationale
+summary: Client referrals use an error response (KDC_ERR_WRONG_REALM) while server referrals use a cross-realm TGT response, because for client referrals the KDC cannot issue a ticket for a principal not in its realm, whereas for server referrals the KDC can return a useful credential (a cross-realm TGT) to advance the lookup chain.
+section: "8"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

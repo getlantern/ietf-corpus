@@ -1,0 +1,11 @@
+document: rfc-6797
+kind: normative-requirement
+summary: When a UA prepares to load any `http` URI and the domain name matches a Known HSTS Host (directly or via an includeSubDomains superdomain match), the UA MUST replace the URI scheme with `https`, convert explicit port 80 to 443, preserve any other explicit port, and not add a port if none was present.
+section: "8.3"
+rfc2119_level: MUST
+topics:
+    - http
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

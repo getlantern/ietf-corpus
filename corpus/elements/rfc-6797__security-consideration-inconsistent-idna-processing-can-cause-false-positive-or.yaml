@@ -1,0 +1,9 @@
+document: rfc-6797
+kind: security-consideration
+summary: Inconsistent IDNA processing can cause false-positive or false-negative domain name matching in HSTS enforcement, potentially connecting users to unintended hosts or blocking intended ones. IDNA-canonicalization with full Unicode and IDNA validation MUST occur before HSTS domain matching.
+section: "14.10"
+topics:
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

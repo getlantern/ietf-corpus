@@ -1,0 +1,10 @@
+document: rfc-6793
+kind: normative-requirement
+summary: 'When a NEW BGP speaker receives both AS4_AGGREGATOR and AGGREGATOR from an OLD speaker: if AGGREGATOR''s AS number is not AS_TRANS, then AS4_AGGREGATOR and AS4_PATH SHALL be ignored and AGGREGATOR/AS_PATH are authoritative. If AGGREGATOR''s AS number is AS_TRANS, then AGGREGATOR SHALL be ignored and AS4_AGGREGATOR taken as the aggregating node.'
+section: 4.2.3
+rfc2119_level: SHALL
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

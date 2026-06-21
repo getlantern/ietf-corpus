@@ -1,0 +1,10 @@
+document: rfc-6806
+kind: normative-requirement
+summary: The Kerberos client MUST explicitly request the 'canonicalize' KDC option (bit 15) in the AS-REQ or TGS-REQ to trigger referral or name-canonicalization processing. Without this flag, the KDC will not return referrals or alternative principal names.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

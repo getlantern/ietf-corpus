@@ -1,0 +1,11 @@
+document: rfc-6797
+kind: normative-requirement
+summary: When an HSTS Host receives an HTTP request over a non-secure transport, it SHOULD send a permanent redirect (e.g., 301) with a Location header value using the `https` scheme. The HSTS Host SHOULD include the STS header field in responses over secure transport.
+section: "7.1"
+rfc2119_level: SHOULD
+topics:
+    - http
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

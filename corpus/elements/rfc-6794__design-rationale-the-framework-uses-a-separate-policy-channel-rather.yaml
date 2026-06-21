@@ -1,0 +1,9 @@
+document: rfc-6794
+kind: design-rationale
+summary: The framework uses a separate policy channel rather than piggybacking policy information on SIP signaling messages. This decouples endpoint-to-endpoint signaling from endpoint-to-policy-server policy exchange, enables separate encryption on each path, prevents policies from traversing multiple unintended domains, and allows policy servers to push updates at any time without waiting for a SIP message to flow by.
+section: "4.2"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

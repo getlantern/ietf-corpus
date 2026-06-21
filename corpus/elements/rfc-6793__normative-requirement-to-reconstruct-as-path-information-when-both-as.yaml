@@ -1,0 +1,10 @@
+document: rfc-6793
+kind: normative-requirement
+summary: 'To reconstruct AS path information when both AS_PATH and AS4_PATH are present: if AS_PATH has fewer AS numbers than AS4_PATH, AS4_PATH SHALL be ignored. Otherwise, construct the path by prepending leading segments from AS_PATH to AS4_PATH until the total AS number count equals that of AS_PATH.'
+section: 4.2.3
+rfc2119_level: SHALL
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

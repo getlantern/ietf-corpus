@@ -1,0 +1,9 @@
+document: rfc-6797
+kind: state-machine
+summary: A UA transitions a host to 'Known HSTS Host' upon receiving a valid STS header over error-free secure transport; updates cached max-age and includeSubDomains on subsequent valid headers; transitions back to 'unknown' when max-age=0 is received or the cached entry expires. Expired Known HSTS Hosts MUST be evicted from cache.
+section: "8.1"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

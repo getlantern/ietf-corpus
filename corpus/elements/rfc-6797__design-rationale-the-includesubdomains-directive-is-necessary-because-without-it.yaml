@@ -1,0 +1,9 @@
+document: rfc-6797
+kind: design-rationale
+summary: The `includeSubDomains` directive is necessary because without it, HSTS cannot protect 'domain cookies' (Secure-flagged cookies scoped to a parent domain). An attacker who registers a novel subdomain can still receive such cookies from a UA that has no HSTS Policy for that specific subdomain.
+section: "14.4"
+topics:
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

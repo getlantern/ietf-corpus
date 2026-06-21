@@ -1,0 +1,9 @@
+document: rfc-6794
+kind: security-consideration
+summary: Malicious session policies can be used to deny service — for example, setting available bandwidth to zero mid-session forces termination. Policy enforcement without policy signaling also creates a denial-of-service condition since UAs cannot know what is enforced. It is RECOMMENDED that UAs only accept session-independent policies from trustworthy, configured servers; session-specific policies from other servers MAY be accepted since they apply to only a single session.
+section: "5"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

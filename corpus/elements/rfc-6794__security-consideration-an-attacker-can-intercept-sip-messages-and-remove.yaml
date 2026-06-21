@@ -1,0 +1,9 @@
+document: rfc-6794
+kind: security-consideration
+summary: An attacker can intercept SIP messages and remove Policy-Contact header fields, preventing UA/policy server rendezvous and blocking session setup; or modify the policy server URI to redirect the UA to a compromised server. UAs SHOULD use TLS between UA and proxy to protect Policy-Contact header integrity, and it is RECOMMENDED that UAs authenticate policy servers.
+section: "5"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
