@@ -1,0 +1,10 @@
+document: rfc-7001
+kind: protocol-element
+summary: The 'iprev' method performs a reverse DNS lookup (PTR query) on the client IP address, then forward lookups (A/AAAA) on the returned names, and reports 'pass' if the original IP appears in the forward lookup results. Result values are pass, fail, temperror, and permerror; there is no 'none' since every TCP connection has an IP address.
+section: 2.6.3
+topics:
+    - email
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

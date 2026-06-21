@@ -1,0 +1,9 @@
+document: rfc-7001
+kind: security-consideration
+summary: 'Forged Authentication-Results header fields are the primary threat: a malicious sender can forge an authserv-id matching the receiving ADMD and claim authentication passed. A non-conformant MTA that fails to strip such fields will cause MUAs to trust forged results. Mitigation requires border MTA compliance with Section 5 (stripping untrusted instances) and consumer configuration to only process the field from known-trusted producers.'
+section: "7.1"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

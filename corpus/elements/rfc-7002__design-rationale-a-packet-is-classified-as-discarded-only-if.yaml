@@ -1,0 +1,9 @@
+document: rfc-7002
+kind: design-rationale
+summary: A packet is classified as 'discarded' only if it arrives within the implementation-specific time window but is too early, too late, or a duplicate. Packets dropped during decoding by a higher layer (e.g., decoding error) are NOT counted as discarded, keeping the metric focused on transport-layer problems.
+section: "2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7001
+kind: normative-requirement
+summary: Any MTA conforming to this specification MUST delete any discovered instance of the Authentication-Results header field that claims, by virtue of its authserv-id, to have been added within its trust boundary but did not arrive from a trusted internal MTA. This prevents injection of forged authentication assertions by external senders.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

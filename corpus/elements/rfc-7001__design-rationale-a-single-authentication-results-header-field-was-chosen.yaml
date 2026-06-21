@@ -1,0 +1,8 @@
+document: rfc-7001
+kind: design-rationale
+summary: A single Authentication-Results header field was chosen to unify results from multiple authentication schemes (SPF, DKIM, iprev, AUTH, etc.) rather than defining a separate header field for each method. Method-specific fields like Received-SPF and DomainKey-Status proved insufficient for conveying results from multiple coexisting authentication systems.
+section: "1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

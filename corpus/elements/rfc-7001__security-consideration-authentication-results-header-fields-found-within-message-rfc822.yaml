@@ -1,0 +1,9 @@
+document: rfc-7001
+kind: security-consideration
+summary: Authentication-Results header fields found within message/rfc822 MIME attachments (encapsulated messages) MUST be ignored by MUAs, since the encapsulated message may have transited outside the trust boundary. When extracting encapsulated messages to separate mail store entries, such header fields should be removed.
+section: "7.10"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7001
+kind: security-consideration
+summary: A compromised internal MTA or MUA could generate forged Authentication-Results header fields endorsing fraudulent From addresses. Mitigation requires that internal MTAs strip this header field from any message claiming a trusted authserv-id that did not arrive via a known-authorized internal SMTP connection.
+section: "7.9"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

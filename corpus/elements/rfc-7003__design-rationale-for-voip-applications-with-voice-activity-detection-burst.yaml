@@ -1,0 +1,10 @@
+document: rfc-7003
+kind: design-rationale
+summary: For VoIP applications with voice activity detection, burst and gap durations shall be determined as if silence packets had been sent, so that a silence period exceeding Gmin packets terminates a burst condition. This ensures consistent burst/gap accounting regardless of whether silence suppression is active.
+section: "4"
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
