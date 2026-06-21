@@ -1,0 +1,10 @@
+document: rfc-7182
+kind: design-rationale
+summary: Type extension 2 (ICV over IP source address) was added because protocols like NHDP (RFC 6130) use the IP source address to identify links; without protecting it, the address is vulnerable to tampering if it is not otherwise present in the packet/message payload. This extension is only applicable to single-hop packets and messages.
+section: 12.1.1
+topics:
+    - security
+    - crypto
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

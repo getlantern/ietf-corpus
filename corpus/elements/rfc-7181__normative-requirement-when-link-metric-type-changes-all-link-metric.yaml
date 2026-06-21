@@ -1,0 +1,9 @@
+document: rfc-7181
+kind: normative-requirement
+summary: When LINK_METRIC_TYPE changes, all link metric information is invalid; the router MUST invalidate all Link Tuples (setting L_out_metric := UNKNOWN_METRIC, L_SYM_time := EXPIRED) and remove all Router Topology, Routable Address Topology, Attached Network, and Routing Tuples.
+section: "5.5"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7184
+kind: security-consideration
+summary: The OLSRv2-MIB contains numerous read-write configuration objects (message intervals, hop limits, willingness, link metric type) that directly affect routing behavior; unauthorized writes could destabilize the MANET. Implementations must apply SNMP access control (e.g., SNMPv3 USM/VACM) to restrict write access to these objects.
+section: "8"
+topics:
+    - routing
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

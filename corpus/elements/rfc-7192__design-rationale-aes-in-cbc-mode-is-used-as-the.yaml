@@ -1,0 +1,8 @@
+document: rfc-7192
+kind: design-rationale
+summary: AES in CBC mode is used as the content-encryption algorithm instead of AES Key Wrap with MLI (as used in related RFCs for key packages) because receipt and error content types are not keys; AES Key Wrap with MLI is therefore inappropriate for this content-encryption role.
+section: "1"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

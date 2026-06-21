@@ -1,0 +1,9 @@
+document: rfc-7191
+kind: security-consideration
+summary: The receiptsFrom and receiptsTo lists in KeyPkgReceiptReq have no enforced size limit, and receiptsTo entries need not relate to the key package sender. To avoid denial-of-service amplification, receipts should only be returned for key packages with a valid signature from a trusted signer.
+section: "9"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

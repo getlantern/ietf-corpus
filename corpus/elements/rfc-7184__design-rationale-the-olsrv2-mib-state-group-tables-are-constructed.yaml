@@ -1,0 +1,9 @@
+document: rfc-7184
+kind: design-rationale
+summary: The OLSRv2-MIB State Group tables are constructed as extensions to corresponding NHDP-MIB (RFC 6779) tables using the SMIv2 AUGMENTS clause, sharing common indexes (nhdpIfIndex, nhdpDiscIfIndex, nhdpDiscRouterIndex). This avoids duplicate neighbor discovery state and enables cross-referencing between both MIBs within a single SNMP context.
+section: "6.2"
+topics:
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

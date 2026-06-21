@@ -1,0 +1,9 @@
+document: rfc-7183
+kind: design-rationale
+summary: Different ICV TLV type extensions are used for HELLO messages (type-extension 2) versus TC messages (type-extension 1) because HELLO message ICVs also protect the IP datagram source address, which NHDP uses to determine neighbor interface addresses and which is not necessarily contained in the HELLO message itself. TC messages are forwarded in new packets and thus have no single IP datagram source address.
+section: "1"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

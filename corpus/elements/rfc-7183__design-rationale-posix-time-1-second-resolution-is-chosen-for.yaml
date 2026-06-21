@@ -1,0 +1,9 @@
+document: rfc-7183
+kind: design-rationale
+summary: POSIX time (1-second resolution) is chosen for the timestamp because many MANET use cases cannot achieve sub-second time synchronization due to unreliable and high-delay channels, mobility, and resource limitations. A finer granularity is RECOMMENDED only when message validity times fall below 1 second.
+section: "5"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

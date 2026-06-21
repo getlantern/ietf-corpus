@@ -1,0 +1,10 @@
+document: rfc-7181
+kind: security-consideration
+summary: Because OLSRv2 uses a reduced topology (only routing MPR selectors advertise links), integrity protection of HELLO and TC messages is strongly recommended. Without it, an attacker injecting false TC messages can manipulate the entire MANET's routing table. Key management for any security mechanism is a separate, unsolved problem addressed in Section 23.6.
+section: "23.2"
+topics:
+    - security
+    - routing
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7188
+kind: security-consideration
+summary: Reducing the latitude to reject messages with unexpected TLV values does not introduce new security concerns, because the protocols are specified in terms of specific value associations (e.g., 'if associated with LOST by LINK_STATUS TLV'); unknown values have no effect on such logic. Extensions using new TLV values MUST specify appropriate security considerations.
+section: "6"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

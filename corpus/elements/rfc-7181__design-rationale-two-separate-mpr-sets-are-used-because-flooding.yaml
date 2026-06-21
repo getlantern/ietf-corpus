@@ -1,0 +1,8 @@
+document: rfc-7181
+kind: design-rationale
+summary: Two separate MPR sets are used because flooding MPRs use outgoing link metrics and are selected per OLSRv2 interface, whereas routing MPRs use incoming neighbor metrics and are selected per router. A single shared set would force a suboptimal compromise between these incompatible selection criteria.
+section: "4.6"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
