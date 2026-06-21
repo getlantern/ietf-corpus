@@ -1,0 +1,9 @@
+document: rfc-7257
+kind: design-rationale
+summary: MAC address association with VPLS entries uses a turnstile function via SNMP-CONTEXT-MAP-MIB rather than direct MIB linkage. This maps vacmContextName to dot1dBasePort and vplsConfigIndex, allowing access to MAC addresses in the BRIDGE-MIB without duplicating the MAC table in the VPLS MIB.
+section: "4.4"
+topics:
+    - snmp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

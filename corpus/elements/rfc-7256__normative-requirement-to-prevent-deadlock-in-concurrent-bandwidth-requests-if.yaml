@@ -1,0 +1,10 @@
+document: rfc-7256
+kind: normative-requirement
+summary: 'To prevent deadlock in concurrent bandwidth requests: if the NAS receives a Bandwidth Reallocation Request while its own is outstanding for the same line, the NAS MUST immediately return a failure response with Result Code 0x68 or 0x69; if the AN receives one while its own is outstanding, it MUST release any bandwidth already committed to pending joins before responding.'
+section: 4.5.2
+rfc2119_level: MUST
+topics:
+    - multicast
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

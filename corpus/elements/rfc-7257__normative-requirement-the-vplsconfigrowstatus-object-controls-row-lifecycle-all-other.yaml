@@ -1,0 +1,10 @@
+document: rfc-7257
+kind: normative-requirement
+summary: The vplsConfigRowStatus object controls row lifecycle; all other objects MUST be set to valid values before it can be set to active(1). Setting it to destroy(6) SHALL delete all associated entries in vplsPwBindTable, vplsBgpRteTargetTable, and vplsBgpVETable.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - snmp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

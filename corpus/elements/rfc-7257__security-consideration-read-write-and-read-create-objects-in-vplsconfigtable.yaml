@@ -1,0 +1,10 @@
+document: rfc-7257
+kind: security-consideration
+summary: Read-write and read-create objects in vplsConfigTable, vplsPwBindTable, vplsBgpADConfigTable, vplsBgpRteTargetTable, vplsLdpPwBindTable, vplsLdpConfigTable, vplsBgpConfigTable, and vplsBgpVETable can disrupt VPLS services if improperly configured. SNMPv3 VACM and USM MUST be used with any v3 agent providing SET access to these tables.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

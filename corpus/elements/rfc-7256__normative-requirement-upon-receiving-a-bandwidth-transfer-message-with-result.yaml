@@ -1,0 +1,10 @@
+document: rfc-7256
+kind: normative-requirement
+summary: Upon receiving a Bandwidth Transfer message with Result Code 0x68 ('Inconsistent views of delegated bandwidth'), the AN MUST issue a Delegated Bandwidth Query Request to learn the NAS's current view and update its own accordingly; for Result Code 0x69 ('Bandwidth request conflict') the AN SHOULD follow the same procedure unless it can account for the discrepancy.
+section: 4.6.2.2
+rfc2119_level: MUST
+topics:
+    - multicast
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
