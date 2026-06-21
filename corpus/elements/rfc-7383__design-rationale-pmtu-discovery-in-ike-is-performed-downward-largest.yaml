@@ -1,0 +1,8 @@
+document: rfc-7383
+kind: design-rationale
+summary: PMTU discovery in IKE is performed downward (largest to smallest threshold) unlike RFC 4821's upward approach. Since IKE typically sends only one large message per SA establishment, probing upward from the minimum would cause that single large message to be fragmented using the smallest possible threshold with no further benefit.
+section: 2.5.2
+topics:
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

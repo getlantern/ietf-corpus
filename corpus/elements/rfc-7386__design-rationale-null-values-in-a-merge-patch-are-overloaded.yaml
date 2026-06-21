@@ -1,0 +1,8 @@
+document: rfc-7386
+kind: design-rationale
+summary: Null values in a merge patch are overloaded to mean 'remove this member' rather than 'set this member to null'. As a consequence, the format is unsuitable for JSON documents that legitimately use explicit null values, because there is no way to distinguish a deletion instruction from a real null.
+section: "1"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

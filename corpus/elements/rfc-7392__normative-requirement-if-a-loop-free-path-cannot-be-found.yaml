@@ -1,0 +1,9 @@
+document: rfc-7392
+kind: normative-requirement
+summary: If a loop-free path cannot be found by an ST-PE or S-PE, the node MUST NOT attempt to signal the MS-PW. For an S-PE, if it cannot determine a loop-free path, the received Label Mapping message MUST be released with a status code of 'PW Loop Detected' per Section 4.2.3 of RFC 7267.
+section: "4.1"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

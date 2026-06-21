@@ -1,0 +1,9 @@
+document: rfc-7392
+kind: normative-requirement
+summary: The node receiving the Label Mapping message MUST evaluate the first ER-Hop. If the L bit is not set and the node is not part of the abstract node described by the first ER-Hop, it MUST reply with a Label Release message carrying a 'Bad Initial ER-Hop Error' (0x04000004) status code.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

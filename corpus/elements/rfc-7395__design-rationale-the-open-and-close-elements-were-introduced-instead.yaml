@@ -1,0 +1,9 @@
+document: rfc-7395
+kind: design-rationale
+summary: The <open/> and <close/> elements were introduced (instead of reusing <stream:stream/>) because the parsable XML document framing restriction in Section 3.3.3 requires each WebSocket message to be a complete standalone XML document; a wrapping stream element would span multiple messages and cannot be self-contained.
+section: 3.3.1
+topics:
+    - websocket
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

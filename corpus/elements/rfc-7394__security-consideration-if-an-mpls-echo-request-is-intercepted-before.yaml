@@ -1,0 +1,9 @@
+document: rfc-7394
+kind: security-consideration
+summary: If an MPLS Echo Request is intercepted before its intended destination for reasons other than label TTL expiry (e.g., network fault), and the return TTL is set directly from the TTL TLV value, the echo response may travel beyond the originating node, creating a security risk. The TTL adjustment formula (Section 4.2) mitigates this.
+section: "4.2"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

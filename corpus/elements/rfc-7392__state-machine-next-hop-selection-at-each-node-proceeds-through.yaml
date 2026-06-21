@@ -1,0 +1,8 @@
+document: rfc-7392
+kind: state-machine
+summary: 'Next-hop selection at each node proceeds through seven ordered steps: (1) validate the first ER-Hop against node identity; (2) if no further hops, remove ER-TLV; (3) if node also matches second ER-Hop, delete first and repeat; (4) if topologically adjacent to second ER-Hop''s abstract node, select and delete first; (5) otherwise route within first abstract node toward second, returning error if no path; (6) replace first ER-Hop with one denoting the selected next hop; (7) forward Label Mapping to next hop.'
+section: "4.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

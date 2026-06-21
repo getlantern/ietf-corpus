@@ -1,0 +1,8 @@
+document: rfc-7383
+kind: interoperability-note
+summary: IKE_SA_INIT messages cannot be fragmented because SK_a and SK_e have not yet been calculated; fragmentation requires a pre-existing Encrypted payload. This means IP-level fragmentation of IKE_SA_INIT (e.g., with long algorithm lists or large MODP groups) cannot be prevented by this mechanism.
+section: "2.2"
+topics:
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

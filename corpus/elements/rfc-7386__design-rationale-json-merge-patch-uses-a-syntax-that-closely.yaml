@@ -1,0 +1,9 @@
+document: rfc-7386
+kind: design-rationale
+summary: 'JSON merge patch uses a syntax that closely mimics the document being modified. Recipients determine changes by comparing the patch against the current target: missing members are added, existing members are replaced, and null signals deletion. This makes patches human-readable without a separate diff language.'
+section: "1"
+topics:
+    - json
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

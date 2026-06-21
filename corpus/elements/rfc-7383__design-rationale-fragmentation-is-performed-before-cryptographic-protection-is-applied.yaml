@@ -1,0 +1,9 @@
+document: rfc-7383
+kind: design-rationale
+summary: Fragmentation is performed before cryptographic protection is applied so that each IKE Fragment message receives individual encryption and authentication. This prevents a DoS attack where an attacker injects forged but valid-looking post-encryption fragments that cannot be detected until the full message is reassembled and its authenticity check fails.
+section: A
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

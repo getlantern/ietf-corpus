@@ -1,0 +1,9 @@
+document: rfc-7395
+kind: security-consideration
+summary: When presented with a new endpoint via 'see-other-uri', clients MUST NOT accept it if the security context is lower than the current connection, preventing downgrade attacks from wss:// to ws://.
+section: "6"
+topics:
+    - security
+    - websocket
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

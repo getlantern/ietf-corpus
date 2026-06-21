@@ -1,0 +1,10 @@
+document: rfc-7394
+kind: security-consideration
+summary: Setting the TTL TLV enables intermediate devices to receive MPLS Echo Reply packets redirected to the CPU, potentially allowing a flood of LSP-Ping packets to overwhelm the CPU. Implementations SHOULD rate-limit LSP-Ping packets redirected to the CPU.
+section: "5"
+topics:
+    - mpls
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

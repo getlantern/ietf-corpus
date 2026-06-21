@@ -1,0 +1,9 @@
+document: rfc-7383
+kind: normative-requirement
+summary: PMTU discovery is OPTIONAL in IKE fragmentation. When performed, the initiator MUST start from larger fragment sizes and reduce them; when starting a new probe, it MUST reset retransmission timers. After reaching the smallest allowed fragmentation threshold, it MUST continue retransmitting until the exchange completes or times out.
+section: 2.5.2
+rfc2119_level: OPTIONAL
+topics:
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

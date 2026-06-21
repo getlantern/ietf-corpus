@@ -1,0 +1,9 @@
+document: rfc-7383
+kind: security-consideration
+summary: An attacker can complete IKE_SA_INIT, compute SK_a and SK_e, and then send a large but incomplete set of IKE_AUTH fragments that pass ICV checks and fill reassembly buffers indefinitely, potentially exhausting memory. To mitigate this, it is RECOMMENDED that receivers limit total buffered fragment content to less than 64 KB; if exceeded, the receiver SHOULD drop the connection and discard all received fragments.
+section: "5"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

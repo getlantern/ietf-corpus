@@ -1,0 +1,9 @@
+document: rfc-7383
+kind: security-consideration
+summary: The receiver MUST NOT parse or act on partially reassembled message content before all fragments have arrived. Fragments received out of order might be followed by payloads that change the meaning of earlier ones, and an attacker could exploit early parsing to manipulate behavior.
+section: "5"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

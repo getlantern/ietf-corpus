@@ -1,0 +1,11 @@
+document: rfc-7394
+kind: normative-requirement
+summary: 'To prevent echo reply packets from traveling beyond the originating node in error scenarios, the return TTL value on the MPLS Echo Reply MUST be computed as: (TTL TLV Value) - (Incoming Label TTL) + 1. If the packet is punted to CPU before TTL decrement, an additional 1 MUST be added.'
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - measurement
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

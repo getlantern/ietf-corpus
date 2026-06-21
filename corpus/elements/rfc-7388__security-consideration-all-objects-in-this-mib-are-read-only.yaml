@@ -1,0 +1,10 @@
+document: rfc-7388
+kind: security-consideration
+summary: All objects in this MIB are read-only (no read-write or read-create), so there is no risk of an intruder altering management objects via SNMP SET operations. However, GET access to traffic counters should still be controlled as they reveal communication patterns, and reassembly counters could inform denial-of-service attacks on the reassembly mechanism.
+section: "7"
+topics:
+    - snmp
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
