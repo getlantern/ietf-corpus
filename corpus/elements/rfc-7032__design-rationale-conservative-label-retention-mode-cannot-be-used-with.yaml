@@ -1,0 +1,8 @@
+document: rfc-7032
+kind: design-rationale
+summary: Conservative label retention mode cannot be used with access LDP DoD because it prevents LSRs from requesting and maintaining label mappings for backup routes not currently used for forwarding, disabling IPFRR LFA and primary/backup static route protection. Liberal retention mode enables pre-programming of alternate forwarding paths.
+section: "4.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

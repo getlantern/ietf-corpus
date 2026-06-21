@@ -1,0 +1,9 @@
+document: rfc-7044
+kind: normative-requirement
+summary: On receiving a non-100 response or a request timeout, a SIP entity MUST (Step 1) add the hi-entry for the timed-out/responded request to the cache, (Step 2) add a Reason header field to that hi-entry unless the response is 2xx, and (Step 3) add any hi-entries from the response not already in the cache, all in ascending hi-index order.
+section: "9.3"
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

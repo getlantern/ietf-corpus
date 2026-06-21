@@ -1,0 +1,8 @@
+document: rfc-7044
+kind: interoperability-note
+summary: RFC 7044 is backwards compatible with RFC 4244 because RFC 4244 allows optional parameters and its ABNF permits '0' as a valid DIGIT. Entities compliant only to RFC 4244 will ignore the new 'rc', 'mp', 'np' parameters but MUST NOT remove them. An RFC 7044 entity receiving RFC 4244-only hi-entries MUST NOT add new parameters to those entries.
+section: "16.1"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

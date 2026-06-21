@@ -1,0 +1,10 @@
+document: rfc-7044
+kind: normative-requirement
+summary: The Privacy Service MUST anonymize hi-targeted-to-uris for the responsible domain when a 'header' or 'history' priv-value is present in the message-level Privacy header, changing unanonymized URIs to 'anonymous@anonymous.invalid'. After anonymizing, the Privacy Service MUST remove the 'history' priv-value and, if no priv-values remain, the Privacy header field itself.
+section: 10.1.2
+rfc2119_level: MUST
+topics:
+    - sip
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7032
+kind: security-consideration
+summary: TCP Authentication Option (TCP-AO, RFC 5925) with strong hashing (e.g., SHA1) is recommended over MD5 for LDP session security. LDP Hello spoofing is mitigated by accepting Basic Hellos only on trusted interfaces, ignoring non-multicast-addressed Hellos, and optionally using the Cryptographic Authentication TLV during LDP discovery.
+section: "7.3"
+topics:
+    - security
+    - mpls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

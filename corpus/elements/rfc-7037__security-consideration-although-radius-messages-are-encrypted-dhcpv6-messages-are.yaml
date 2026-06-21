@@ -1,0 +1,11 @@
+document: rfc-7037
+kind: security-consideration
+summary: Although RADIUS messages are encrypted, DHCPv6 messages are always unencrypted. RADIUS vendor-specific attributes may contain sensitive or confidential information; administrators are strongly advised to prevent such information from being included in DHCPv6 messages, or to use IPsec ESP with encryption to protect confidentiality.
+section: "8"
+topics:
+    - security
+    - radius
+    - ip
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

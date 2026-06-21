@@ -1,0 +1,9 @@
+document: rfc-7032
+kind: normative-requirement
+summary: Upon receipt of an unknown TLV with U-bit=1, the TLV MUST be silently ignored and the rest of the message processed as if the TLV did not exist. If the requested route is not available and the Queue Request TLV is unrecognized, the downstream LSR MUST ignore the TLV and send a 'No Route' notification to ensure backward compatibility.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7044
+kind: normative-requirement
+summary: When a non-100, non-2xx response is received, the SIP entity MUST include a Reason header field containing the SIP response code in the hi-targeted-to-uri of the last cached hi-entry. If a request times out, the entity MUST treat this as a 408 response for Reason purposes.
+section: "10.2"
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

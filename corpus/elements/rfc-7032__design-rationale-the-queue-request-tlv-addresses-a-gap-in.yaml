@@ -1,0 +1,8 @@
+document: rfc-7032
+kind: design-rationale
+summary: The Queue Request TLV addresses a gap in RFC 5036 where a 'No Route' response followed by exponential backoff can impose significant delay before re-requesting a label for a route that becomes available shortly after. By queuing the request at the downstream LSR, the label mapping is sent immediately upon route availability, eliminating the backoff penalty.
+section: "5"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

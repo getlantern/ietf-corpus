@@ -1,0 +1,8 @@
+document: rfc-7048
+kind: state-machine
+summary: A new UNREACHABLE state is introduced in the NUD conceptual model. When a PROBE NCE exhausts N retransmissions, it transitions to UNREACHABLE (instead of being discarded). In UNREACHABLE, the NCE retains the cached link-layer address, packets continue to be sent to that address, but NUD probes switch to multicast Neighbor Solicitations with exponential backoff. UNREACHABLE re-transitions to UNREACHABLE on each retransmit timeout.
+section: "3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

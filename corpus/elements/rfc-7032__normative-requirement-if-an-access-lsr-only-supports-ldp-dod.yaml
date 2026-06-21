@@ -1,0 +1,9 @@
+document: rfc-7032
+kind: normative-requirement
+summary: If an access LSR only supports LDP DoD and the peer proposes Downstream Unsolicited mode, the access LSR must send a Notification with status 'Session Rejected/Parameters Advertisement Mode', close the session, and retry with exponential backoff starting at 15 seconds and growing to a maximum delay of 2 minutes.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7048
+kind: design-rationale
+summary: The example algorithm uses BACKOFF_MULTIPLE=3, MARK_UNREACHABLE=3, MAX_UNICAST_SOLICIT=5, and MAX_RETRANS_TIMER=60. This marks the NCE UNREACHABLE after 4 seconds (vs. 2 seconds in RFC 4861), a small additional delay relative to the 30,000 ms default ReachableTime, while providing much greater robustness to transient failures.
+section: "4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

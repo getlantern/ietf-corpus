@@ -1,0 +1,10 @@
+document: rfc-7044
+kind: security-consideration
+summary: TLS is strongly RECOMMENDED to ensure confidentiality of History-Info header fields. Without TLS, the intermediary MUST ensure messages remain within a secured environment or do not leave its domain. Malicious intermediaries on the path could arbitrarily delete, rewrite, or insert hi-entries; this specification does not attempt to prevent or detect such attacks.
+section: "13"
+topics:
+    - sip
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

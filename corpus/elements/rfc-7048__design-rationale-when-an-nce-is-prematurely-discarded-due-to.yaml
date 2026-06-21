@@ -1,0 +1,9 @@
+document: rfc-7048
+kind: design-rationale
+summary: When an NCE is prematurely discarded due to short NUD timeouts and there is no alternative neighbor, subsequent IPv6 packets cause multicast Neighbor Solicitations (to the solicited-node multicast address) every second instead of unicast NUD probes, increasing network multicast load. Longer probing also handles transient failures like spanning tree reconvergence.
+section: "1"
+topics:
+    - ip
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

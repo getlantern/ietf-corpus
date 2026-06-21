@@ -1,0 +1,9 @@
+document: rfc-7044
+kind: normative-requirement
+summary: When sending a request, a SIP entity MUST include all cached hi-entries plus a new hi-entry for the current outgoing Request-URI, with hi-targeted-to-uri set to the outgoing Request-URI, the correct hi-index, and the appropriate rc/mp/np parameter. The new hi-entry MUST NOT be added to the cache until a non-100 response is received.
+section: "9.2"
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7044
+kind: state-machine
+summary: 'The hi-index tree tracks forwarding state: index ''1'' is the root (initial request). Each new forwarding hop appends a level (e.g., 1 → 1.1 → 1.1.1). Parallel forks at the same hop increment the last digit (1.1.1, 1.1.2, ...). A response triggers caching the outgoing hi-entry; a timeout triggers caching with a synthetic 408 Reason. Gaps from non-supporting intermediaries are marked with a ''0'' segment.'
+section: "10.3"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

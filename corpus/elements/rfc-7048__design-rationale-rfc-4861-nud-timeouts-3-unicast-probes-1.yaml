@@ -1,0 +1,9 @@
+document: rfc-7048
+kind: design-rationale
+summary: RFC 4861 NUD timeouts (3 unicast probes, 1 second apart) were optimized for the case where alternative neighbors exist, allowing fast failover. When no alternative neighbor is available, these timeouts are far too short and cause unnecessary multicast traffic and spurious NCE invalidation.
+section: "1"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

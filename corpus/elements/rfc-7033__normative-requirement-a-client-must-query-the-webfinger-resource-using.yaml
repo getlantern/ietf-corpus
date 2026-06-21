@@ -1,0 +1,10 @@
+document: rfc-7033
+kind: normative-requirement
+summary: A client MUST query the WebFinger resource using HTTPS only. If the certificate is invalid, the server returns 4xx/5xx, or the HTTPS connection cannot be established, the client MUST accept failure and MUST NOT reissue the request over HTTP.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
