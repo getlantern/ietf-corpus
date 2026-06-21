@@ -1,0 +1,10 @@
+document: rfc-7166
+kind: protocol-element
+summary: 'The HMAC computation uses a two-pass construction: Ko (derived from Ks, always L octets long) is XORed with Ipad for the inner hash over the full OSPFv3 packet (with Auth Data field set to Apad), then XORed with Opad for the outer hash. Apad consists of the 16-octet IPv6 source address followed by 0x878FE1F3 repeated (L-16)/4 times.'
+section: "4.5"
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

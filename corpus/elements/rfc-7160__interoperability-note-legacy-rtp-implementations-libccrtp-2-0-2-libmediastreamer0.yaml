@@ -1,0 +1,9 @@
+document: rfc-7160
+kind: interoperability-note
+summary: Legacy RTP implementations (libccrtp 2.0.2, libmediastreamer0 2.6.0, libpjmedia 1.0) use the non-monotonic timestamp formula (timestamp = capture_time * clock_rate). Some of these use gettimeofday(2) which is not guaranteed to increment monotonically, e.g., when the clock is adjusted by NTP.
+section: Appendix C
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

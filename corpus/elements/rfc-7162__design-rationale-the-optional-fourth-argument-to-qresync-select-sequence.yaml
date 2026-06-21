@@ -1,0 +1,8 @@
+document: rfc-7162
+kind: design-rationale
+summary: The optional fourth argument to QRESYNC SELECT (sequence number/UID match data) allows clients to provide sample seq-to-UID mappings so the server can restrict the range of reported expunged messages. This is especially effective when no expunges have occurred or all expunges are toward the end of the mailbox, substantially reducing VANISHED response size.
+section: 3.2.5.2
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

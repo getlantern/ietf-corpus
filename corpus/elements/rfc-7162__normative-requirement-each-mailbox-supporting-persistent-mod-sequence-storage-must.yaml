@@ -1,0 +1,9 @@
+document: rfc-7162
+kind: normative-requirement
+summary: Each mailbox supporting persistent mod-sequence storage MUST increment its per-mailbox mod-sequence when messages are expunged by EXPUNGE, UID EXPUNGE, CLOSE, or MOVE, and MUST associate the incremented mod-sequence with the UIDs of the expunged messages for later QRESYNC queries.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

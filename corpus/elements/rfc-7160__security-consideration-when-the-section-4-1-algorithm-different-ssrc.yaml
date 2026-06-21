@@ -1,0 +1,10 @@
+document: rfc-7160
+kind: security-consideration
+summary: 'When the Section 4.1 algorithm (different SSRC per clock rate) is used, the security considerations of RFC 3550 apply unchanged. The Section 4.2 algorithm (same SSRC, without RTCP) is new: although the RTP timestamp is initialized with a random value, it depends on current and previous clock rates, which may introduce a security vulnerability not analyzed in RFC 3550.'
+section: "5"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

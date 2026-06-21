@@ -1,0 +1,9 @@
+document: rfc-7160
+kind: design-rationale
+summary: The monotonic timestamp approach (timestamp increments based on elapsed time * current clock rate) produces incorrect jitter calculations at clock rate transitions because the receiver cannot determine the capture time without depending on previous potentially-lost or reordered packets.
+section: 3.2.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

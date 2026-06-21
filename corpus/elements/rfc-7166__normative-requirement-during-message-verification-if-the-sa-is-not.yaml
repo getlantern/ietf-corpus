@@ -1,0 +1,10 @@
+document: rfc-7166
+kind: normative-requirement
+summary: During message verification, if the SA is not found or not valid for reception (current time < KeyStartAccept or current time >= KeyStopAccept), the OSPFv3 packet MUST be dropped. After successful authentication, implementations MUST store the 64-bit cryptographic sequence number for each OSPFv3 packet type received from the neighbor.
+section: "4.6"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

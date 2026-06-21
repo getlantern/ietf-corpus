@@ -1,0 +1,10 @@
+document: rfc-7166
+kind: normative-requirement
+summary: The 64-bit Cryptographic Sequence Number MUST be incremented for every OSPFv3 packet sent, and upon reception the sequence number MUST be greater than the sequence number in the last accepted packet of the same type from the sending neighbor; otherwise the packet is considered replayed and dropped.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

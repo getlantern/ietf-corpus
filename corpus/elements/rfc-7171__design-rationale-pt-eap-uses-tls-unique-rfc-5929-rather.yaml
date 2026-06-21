@@ -1,0 +1,9 @@
+document: rfc-7171
+kind: design-rationale
+summary: PT-EAP uses tls-unique (RFC 5929) rather than a mutual cryptographic binding because PT-EAP generates no keying material — it is a posture data transport method, not an authentication method. The EMA on the NEA Client can cryptographically bind the tls-unique value, which prevents the client's attestation from being replayed in a different TLS session context.
+section: "3.4"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

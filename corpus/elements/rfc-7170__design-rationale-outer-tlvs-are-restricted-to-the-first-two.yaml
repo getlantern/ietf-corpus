@@ -1,0 +1,9 @@
+document: rfc-7170
+kind: design-rationale
+summary: Outer TLVs are restricted to the first two TEAP messages (before the TLS tunnel is established) so they can assist tunnel establishment without exposing unprotected data thereafter. All subsequent TLV exchanges occur as Inner TLVs within the protected tunnel.
+section: "2.2"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

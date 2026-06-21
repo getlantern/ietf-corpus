@@ -1,0 +1,9 @@
+document: rfc-7166
+kind: design-rationale
+summary: The IPv6 source address is included in the HMAC message digest computation to protect against Man-in-the-Middle attacks that modify the source address. OSPFv3 uses Router ID for neighbor identification but learns the IPv6 source address from Hello packets, making it vulnerable without this protection.
+section: "2.3"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7160
+kind: design-rationale
+summary: The non-monotonic timestamp approach (timestamp = capture_time * clock_rate) produces correct jitter calculations but yields non-monotonically increasing timestamps. RFC 3550 requires the sampling clock to increment monotonically but does not require the RTP timestamp itself to increment monotonically, making this approach technically compliant. Survey data from SIPit26 and open source implementations showed this is the most common legacy approach.
+section: 3.2.2
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

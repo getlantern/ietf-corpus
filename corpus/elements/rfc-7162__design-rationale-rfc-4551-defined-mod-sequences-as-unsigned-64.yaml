@@ -1,0 +1,8 @@
+document: rfc-7162
+kind: design-rationale
+summary: RFC 4551 defined mod-sequences as unsigned 64-bit values; this document redefines them as unsigned 63-bit values to simplify implementations on platforms such as Java. The system clock cannot be used directly as a mod-sequence source because NTP adjustments could produce non-monotonic values.
+section: "3.1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

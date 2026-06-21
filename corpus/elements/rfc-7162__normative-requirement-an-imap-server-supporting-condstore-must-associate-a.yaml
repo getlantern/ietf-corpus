@@ -1,0 +1,9 @@
+document: rfc-7162
+kind: normative-requirement
+summary: An IMAP server supporting CONDSTORE MUST associate a positive unsigned 63-bit mod-sequence with every message. Each STORE command on the same mailbox MUST receive a different mod-sequence value, and for any two successful STORE operations within a session on the same mailbox, the second completed operation MUST have a greater mod-sequence than the first.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

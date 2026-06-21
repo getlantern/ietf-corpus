@@ -1,0 +1,10 @@
+document: rfc-7160
+kind: normative-requirement
+summary: An RTP Receiver MUST calculate the jitter using the formula D(i,j) = (arrival_time_j * clock_rate_i - timestamp_j) - (arrival_time_i * clock_rate_i - timestamp_i), which correctly handles multiple clock rates.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

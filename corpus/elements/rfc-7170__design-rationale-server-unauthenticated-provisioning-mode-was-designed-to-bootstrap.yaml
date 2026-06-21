@@ -1,0 +1,8 @@
+document: rfc-7170
+kind: design-rationale
+summary: Server Unauthenticated Provisioning Mode was designed to bootstrap peers that cannot authenticate the TEAP server during Phase 1 (e.g., no trusted root certificate). The Crypto-Binding TLV exchange at Phase 2 completion still guards against man-in-the-middle because the inner method must provide mutual authentication and key derivation.
+section: 3.8.3
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

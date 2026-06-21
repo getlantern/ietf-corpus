@@ -1,0 +1,9 @@
+document: rfc-7160
+kind: protocol-element
+summary: 'For an RTP Sender without RTCP, when the clock rate changes the start_offset and capture_start are updated as: start_offset += (capture_time - capture_start) * previous_clock_rate; capture_start = capture_time. The RTP timestamp is then: timestamp = (capture_time - capture_start) * clock_rate + start_offset.'
+section: "4.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

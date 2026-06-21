@@ -1,0 +1,9 @@
+document: rfc-7160
+kind: design-rationale
+summary: Using a different SSRC for each clock rate was the original intent of RTP (per RFC 3550 Section 5.2), as it avoids ambiguity about which clock rate applies to RTCP fields. However, changing SSRC can be a problem for implementations designed for unicast addresses where multiple SSRCs are a corner case, and lip synchronization may be disrupted before the first RTCP SR is received.
+section: "3.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7162
+kind: interoperability-note
+summary: This document updates RFC 2683's recommended IMAP command line length limit from 1000 octets to approximately 8192 octets (including quoted strings but not literals), because CONDSTORE/QRESYNC clients may send long UID sequences in extended SELECT or FETCH commands that would otherwise trigger server rejections.
+section: "4"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

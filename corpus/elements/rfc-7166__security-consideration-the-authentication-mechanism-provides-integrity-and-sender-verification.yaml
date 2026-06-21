@@ -1,0 +1,11 @@
+document: rfc-7166
+kind: security-consideration
+summary: The authentication mechanism provides integrity and sender verification but not confidentiality. It does not authenticate the specific originator but confirms the packet was issued by a router with access to the Authentication Key. Deployments SHOULD use sufficiently long and random Authentication Keys; at least 128 pseudorandom bits are RECOMMENDED to resist guessing and cryptographic attacks.
+section: "6"
+rfc2119_level: RECOMMENDED
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7162
+kind: security-consideration
+summary: The CONDSTORE and QRESYNC extensions allow clients to retrieve complete metadata change histories for a mailbox. Implementations must ensure that mod-sequence data is only returned to sessions authorized to access the corresponding metadata items; in particular, private metadata changes MUST NOT be reported to sessions authenticated as different users, as shown in the flag-sharing examples.
+section: "8"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

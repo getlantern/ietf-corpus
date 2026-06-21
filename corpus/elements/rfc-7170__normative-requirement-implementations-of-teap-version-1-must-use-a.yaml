@@ -1,0 +1,10 @@
+document: rfc-7170
+kind: normative-requirement
+summary: Implementations of TEAP version 1 MUST use a Version field set to 1. Because the TEAP version is not protected by TLS and can be modified in transit, peers MUST exchange the version number received during negotiation using the Crypto-Binding TLV, and the receiver MUST verify it matches the version the receiver sent.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

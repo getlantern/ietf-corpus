@@ -1,0 +1,10 @@
+document: rfc-7164
+kind: design-rationale
+summary: RTP senders and receivers near a leap second should rely on internal clocks rather than RTCP sender reports to maintain synchronization, because the NTP timestamps in those reports become ambiguous or inaccurate during the two-second window surrounding a positive leap second.
+section: "5.1"
+topics:
+    - rtp
+    - ntp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

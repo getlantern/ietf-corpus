@@ -1,0 +1,9 @@
+document: rfc-7162
+kind: normative-requirement
+summary: When QRESYNC is enabled, the server MUST use VANISHED responses instead of EXPUNGE responses for all mailboxes not returning NOMODSEQ. A VANISHED response without EARLIER MUST NOT be sent during FETCH, STORE, or SEARCH commands, and MUST NOT reference UIDs not yet announced to the client.
+section: 3.2.10.2
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

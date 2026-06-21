@@ -1,0 +1,9 @@
+document: rfc-7162
+kind: protocol-element
+summary: The NOMODSEQ response code is returned during SELECT/EXAMINE when the mailbox does not support persistent mod-sequence storage. A server that returned NOMODSEQ MUST reject with a tagged BAD any FETCH with CHANGEDSINCE, FETCH/SEARCH with MODSEQ, or STORE with UNCHANGEDSINCE while that mailbox remains selected.
+section: 3.1.2.2
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
