@@ -1,0 +1,9 @@
+document: rfc-7216
+kind: security-consideration
+summary: An on-path attacker can manipulate STUN responses to supply a falsified reflexive transport address, causing the Device to discover a wrong or malicious LIS. Even though STUN uses HMAC MESSAGE-INTEGRITY, an on-path attacker can rewrite source/destination addresses. The recommended remedy is independent verification of the reflexive address.
+section: "6"
+topics:
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

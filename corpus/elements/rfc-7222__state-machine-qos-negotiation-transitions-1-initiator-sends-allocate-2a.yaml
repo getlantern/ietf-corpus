@@ -1,0 +1,8 @@
+document: rfc-7222
+kind: state-machine
+summary: 'QoS negotiation transitions: (1) initiator sends ALLOCATE → (2a) peer returns RESPONSE with status 0 (accepted, QoS rules installed) or (2b) peer returns CANNOT_MEET_QOS_SERVICE_REQUEST with NEGOTIATE and revised attributes (counter-proposal, SR-ID reset to 0) → (3) initiator may re-send ALLOCATE with revised parameters. MODIFY updates an existing request by SR-ID; DE-ALLOCATE releases it; QUERY retrieves currently active requests.'
+section: "5"
+topics:
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

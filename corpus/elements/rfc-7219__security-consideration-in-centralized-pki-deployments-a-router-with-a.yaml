@@ -1,0 +1,10 @@
+document: rfc-7219
+kind: security-consideration
+summary: In centralized PKI deployments, a router with a globally valid certificate could masquerade as a legitimate router on any link. SEND SAVI mitigates this by rejecting RADV messages and traffic with off-link source addresses arriving on Validating ports, regardless of certificate validity.
+section: "5.3"
+topics:
+    - ip
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

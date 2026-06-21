@@ -1,0 +1,9 @@
+document: rfc-7216
+kind: design-rationale
+summary: A single NAPTR record can be placed at a higher node of the reverse DNS tree (corresponding to /24 or /16 for IPv4; /64, /56, /48, or /32 for IPv6) to avoid proliferating identical records; records at lower points (longer prefix) override those at higher points, allowing exceptions.
+section: "4.8"
+topics:
+    - dns
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7219
+kind: security-consideration
+summary: SEND SAVI strengthens replay-attack protection beyond SEND by restricting DAD_NSOL propagation only to ports that previously held a binding for the same address. An attacker cannot replay a captured DAD_NSOL to forge a binding from a different port without being able to generate a new valid CGA-signed message, which is deemed infeasible.
+section: "5.1"
+topics:
+    - ip
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

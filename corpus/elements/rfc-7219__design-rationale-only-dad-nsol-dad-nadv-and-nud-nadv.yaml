@@ -1,0 +1,9 @@
+document: rfc-7219
+kind: design-rationale
+summary: Only DAD_NSOL, DAD_NADV, and NUD_NADV messages can trigger transitions between forwarding and non-forwarding states; arbitrary data packets cannot. This design choice simplifies SEND SAVI processing and prevents data-plane traffic from disrupting binding validity.
+section: 3.3.2
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

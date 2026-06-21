@@ -1,0 +1,9 @@
+document: rfc-7223
+kind: design-rationale
+summary: Configuration data and operational state data are kept in separate lists ('/interfaces/interface' and '/interfaces-state/interface') rather than merged, enabling clear separation between desired configuration and actual runtime state. System-controlled interfaces always appear in the state list whether configured or not.
+section: "3.1"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

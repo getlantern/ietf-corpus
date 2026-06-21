@@ -1,0 +1,10 @@
+document: rfc-7216
+kind: normative-requirement
+summary: The DHCP method described in RFC 5986 MUST be attempted on all local network interfaces before attempting the reverse DNS method. The reverse DNS method is employed only after DHCP fails, the DHCP server provides no access network domain name, or the resulting LIS returns a HELD 'notLocatable' error.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

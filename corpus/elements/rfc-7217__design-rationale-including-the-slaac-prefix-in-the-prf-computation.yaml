@@ -1,0 +1,10 @@
+document: rfc-7217
+kind: design-rationale
+summary: Including the SLAAC prefix in the PRF computation causes the IID to vary across each prefix (link-local, global, etc.) and across networks as the host moves. This mitigates correlation of multihomed hosts' addresses and prevents address-scanning attacks that exploit predictable IIDs.
+section: "5"
+topics:
+    - ip
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

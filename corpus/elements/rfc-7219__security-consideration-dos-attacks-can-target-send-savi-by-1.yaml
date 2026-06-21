@@ -1,0 +1,9 @@
+document: rfc-7219
+kind: security-consideration
+summary: DoS attacks can target SEND SAVI by (1) sending many distinct source addresses to exhaust binding memory, or (2) forcing expensive cryptographic operations per new source address to drain CPU. Mitigations are per-port memory reservations, newest-first cache eviction, and per-port rate-limiting.
+section: "5.2"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

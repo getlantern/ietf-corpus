@@ -1,0 +1,9 @@
+document: rfc-7222
+kind: security-consideration
+summary: The QoS option is conveyed within PMIPv6 signaling messages (PBU, PBA, UPN, UPA) and therefore inherits the security model of RFC 5213, which mandates IPsec protection for MAG-LMA signaling. Without this protection, unauthorized QoS ALLOCATE or MODIFY requests could allow an attacker to manipulate traffic priority, exhaust network resources, or preempt existing sessions via the Allocation-Retention-Priority mechanism.
+section: "8"
+topics:
+    - qos
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

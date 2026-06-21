@@ -1,0 +1,9 @@
+document: rfc-7217
+kind: design-rationale
+summary: All bits in the resulting IIDs are treated as opaque (RFC 7136), including the universal/local bit of Modified EUI-64 format. This is acceptable because random 64-bit IIDs have very low DAD collision probability, and real-world MAC address reuse means EUI-64-based IIDs also collide in practice.
+section: "5"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

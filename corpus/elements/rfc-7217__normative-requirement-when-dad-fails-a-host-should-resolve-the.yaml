@@ -1,0 +1,10 @@
+document: rfc-7217
+kind: normative-requirement
+summary: When DAD fails, a host SHOULD resolve the conflict by incrementing DAD_Counter and generating a new tentative address, with a random delay of 0 to IDGEN_DELAY seconds before retrying. Hosts MUST limit the number of tentative addresses tried and MUST NOT indefinitely retry.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

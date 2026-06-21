@@ -1,0 +1,10 @@
+document: rfc-7223
+kind: normative-requirement
+summary: When a server maps 'description' to ifAlias and the device supports ':startup', reading ifAlias MUST return the value of 'description' in the 'startup' datastore, and writing ifAlias MUST write to both 'running' and 'startup' datastores. If ':startup' is not supported, ifAlias MUST be mapped to the 'description' leaf in the 'running' datastore.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

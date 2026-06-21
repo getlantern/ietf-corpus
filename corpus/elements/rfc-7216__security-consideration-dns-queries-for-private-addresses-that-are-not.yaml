@@ -1,0 +1,10 @@
+document: rfc-7216
+kind: security-consideration
+summary: DNS queries for private addresses that are not blocked as RFC 6303 requires, or directed to external servers, can expose the addresses in use within the network outside of it. Implementing RFC 6303 on resolvers inside the network avoids this; otherwise the problem cannot be prevented without blocking external DNS queries.
+section: "6"
+topics:
+    - security
+    - dns
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7217
+kind: normative-requirement
+summary: DAD_Counter MUST be initialized to 0 and incremented by 1 for each new tentative address configured as a result of a DAD conflict. Implementations that record DAD_Counter in non-volatile memory for each {Prefix, Net_Iface, Network_ID} tuple MUST initialize it to the recorded value if such an entry exists.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
