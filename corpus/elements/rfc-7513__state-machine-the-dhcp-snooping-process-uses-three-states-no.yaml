@@ -1,0 +1,9 @@
+document: rfc-7513
+kind: state-machine
+summary: 'The DHCP Snooping Process uses three states: NO_BIND, INIT_BIND, and BOUND. Transitions are: NO_BIND → INIT_BIND on Request/Confirm/Reboot/Solicit_RC; INIT_BIND → BOUND on ACK/Reply (success); BOUND → NO_BIND on Release, Decline, or entry expiry. BOUND → BOUND on Renew/Rebind/Reply/Leasequery-Reply updates the lifetime.'
+section: "6.4"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

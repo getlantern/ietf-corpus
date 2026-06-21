@@ -1,0 +1,9 @@
+document: rfc-7513
+kind: design-rationale
+summary: Trusted DHCP servers and relays must be placed inside the SAVI perimeter because SAVI-DHCP cannot distinguish a legitimate DHCP server outside the perimeter from a bogus one. A valid server outside the perimeter will have its Server-to-Client messages dropped just like those from an attacker.
+section: 4.3.3
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

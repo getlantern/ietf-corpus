@@ -1,0 +1,8 @@
+document: rfc-7504
+kind: design-rationale
+summary: Without codes like 521, a host that does not run SMTP causes connection attempts to time out, forcing clients to queue messages and retry for extended periods, wasting resources and delaying error notification to originators. A dummy SMTP server returning a fatal error is the preferred alternative.
+section: "2"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

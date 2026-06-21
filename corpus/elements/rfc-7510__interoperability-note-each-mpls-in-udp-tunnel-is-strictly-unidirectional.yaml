@@ -1,0 +1,10 @@
+document: rfc-7510
+kind: interoperability-note
+summary: 'Each MPLS-in-UDP tunnel is strictly unidirectional: traffic is always directed to destination port 6635 and never sent back to the ephemeral source port. This contradicts the common middlebox assumption of bidirectional UDP traffic on a symmetric port pair, requiring separate per-direction configuration to traverse firewalls and NATs.'
+section: "4"
+topics:
+    - mpls
+    - udp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

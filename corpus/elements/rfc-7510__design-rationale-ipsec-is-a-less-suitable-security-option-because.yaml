@@ -1,0 +1,12 @@
+document: rfc-7510
+kind: design-rationale
+summary: IPsec is a less suitable security option because it hides the UDP header from intermediate routers (in both tunnel and transport mode), negating the load-balancing benefit that motivates MPLS-in-UDP. DTLS is preferred because it preserves network- and transport-layer header visibility for intermediaries.
+section: "6"
+topics:
+    - mpls
+    - udp
+    - security
+    - ipsec
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

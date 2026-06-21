@@ -1,0 +1,8 @@
+document: rfc-7503
+kind: design-rationale
+summary: Autoconfigured OSPFv3 routers do not require identical HelloInterval and RouterDeadInterval to form adjacencies. The received HelloInterval is ignored, and the received RouterDeadInterval is used to determine liveliness, allowing each neighbor's Inactivity Timer to reflect that neighbor's advertised RouterDeadInterval independently.
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

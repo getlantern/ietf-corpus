@@ -1,0 +1,9 @@
+document: rfc-7504
+kind: security-consideration
+summary: Running a minimal dummy SMTP server that emits only fixed strings in response to connections provides significantly fewer attack surfaces than a full SMTP implementation. Use of the specific 521/556 codes provides more information to clients than a generic 5yz response but has no other security impact.
+section: "7"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7507
+kind: interoperability-note
+summary: 'Updating legacy server clusters to simultaneously add newer protocol versions and TLS_FALLBACK_SCSV support is risky if old nodes are version-intolerant. The recommended approach is a two-step upgrade: first deploy SCSV support without enabling new versions, then enable new versions only after all version-intolerant nodes are removed.'
+section: "5"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

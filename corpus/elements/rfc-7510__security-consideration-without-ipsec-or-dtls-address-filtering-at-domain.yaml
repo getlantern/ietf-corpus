@@ -1,0 +1,10 @@
+document: rfc-7510
+kind: security-consideration
+summary: Without IPsec or DTLS, address filtering at domain boundaries is needed to prevent unauthorized decapsulation. If only source-address filtering is deployed at boundaries, the decapsulator must also validate the IP source address; the IPv6 source address MUST be validated when UDP zero-checksum mode is in use.
+section: "6"
+topics:
+    - mpls
+    - udp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

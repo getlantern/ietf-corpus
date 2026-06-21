@@ -1,0 +1,10 @@
+document: rfc-7512
+kind: normative-requirement
+summary: The 'id' attribute value SHOULD NOT be encoded as UTF-8 because it can contain non-textual binary data; instead it SHOULD be entirely percent-encoded. All other textual attribute values SHOULD first be encoded as UTF-8 octets, then percent-encoded for characters outside the unreserved/permitted reserved sets.
+section: "2.3"
+rfc2119_level: SHOULD NOT
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

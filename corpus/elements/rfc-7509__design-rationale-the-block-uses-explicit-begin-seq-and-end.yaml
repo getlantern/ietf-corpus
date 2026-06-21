@@ -1,0 +1,8 @@
+document: rfc-7509
+kind: design-rationale
+summary: The block uses explicit begin_seq and end_seq fields to define the reported sequence number range, avoiding ambiguity when comparing post-repair metrics against the cumulative loss in RTCP SR/RR, since some packets not repaired in one interval may be repaired later.
+section: "3"
+topics:
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

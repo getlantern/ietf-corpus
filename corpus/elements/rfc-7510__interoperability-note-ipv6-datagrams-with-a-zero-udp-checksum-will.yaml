@@ -1,0 +1,11 @@
+document: rfc-7510
+kind: interoperability-note
+summary: IPv6 datagrams with a zero UDP checksum will be discarded by any middlebox (NAT, firewall) that validates checksums per RFC 2460 or rewrites the UDP checksum. MPLS-in-UDP provides no fallback mechanism when a path change routes traffic through such a middlebox, resulting in a black hole.
+section: "3.2"
+topics:
+    - mpls
+    - udp
+    - ip
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7513
+kind: security-consideration
+summary: When a client departs without sending a DHCP Release message, its binding remains in the BST until lease expiry. During this window a different client may be assigned the same address by DHCP, causing valid traffic from the new client to be dropped until the stale binding expires.
+section: "11.3"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

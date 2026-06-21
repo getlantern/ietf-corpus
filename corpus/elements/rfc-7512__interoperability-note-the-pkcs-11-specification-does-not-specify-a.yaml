@@ -1,0 +1,9 @@
+document: rfc-7512
+kind: interoperability-note
+summary: 'The PKCS #11 specification does not specify a canonical form for CK_UTF8CHAR strings, creating false-negative and false-positive concerns when matching URI attributes. Applications SHOULD normalize names to NFC; applications MAY convert to a chosen normalization form before string comparison when matching URIs to older objects.'
+section: "5"
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7510
+kind: design-rationale
+summary: MPLS-in-UDP is motivated by the fact that most existing routers already perform five-tuple (source IP, destination IP, source port, destination port, protocol) load-balancing for UDP/TCP, so using the UDP source port as an entropy field enables fine-grained ECMP and LAG distribution without requiring router upgrades.
+section: "1.2"
+topics:
+    - mpls
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

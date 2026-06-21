@@ -1,0 +1,9 @@
+document: rfc-7505
+kind: design-rationale
+summary: Without null MX, if a domain has no MX records, senders fall back to A/AAAA records and repeatedly attempt delivery for typically a week before giving up. Null MX causes all delivery attempts to fail immediately, saving sender resources and providing faster failure notification.
+section: "1"
+topics:
+    - email
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
