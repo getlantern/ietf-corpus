@@ -1,0 +1,8 @@
+document: rfc-6840
+kind: errata
+summary: 'RFC 5155 Section 3.2.1 contains a contradiction: it states ''Blocks with no types present MUST NOT be included'' but the accompanying regular expression uses ''+'' (one or more), implying at least one window block is required. The correct regular expression uses ''*'' (zero or more) to allow an empty type bitmap for NSEC3 records matching Empty Non-Terminals.'
+section: "6.4"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-6846
+kind: normative-requirement
+summary: On NACK reception, the compressor SHOULD assume only the static context is valid and re-send all dynamic information via IR or IR-DYN the next time it compresses for that flow, unless it is already confident that subsequently sent packets provide a suitable response.
+section: 5.2.2.2
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

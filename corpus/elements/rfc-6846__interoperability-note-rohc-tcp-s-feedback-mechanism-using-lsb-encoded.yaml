@@ -1,0 +1,9 @@
+document: rfc-6846
+kind: interoperability-note
+summary: ROHC-TCP's feedback mechanism using LSB-encoded MSN bits in FEEDBACK-2 is not suitable when MSN bits could wrap around within one round-trip time. In such environments, unidirectional operation—where the compressor periodically sends larger context-updating IR/IR-DYN packets—is more appropriate than using feedback.
+section: 4.2.2
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

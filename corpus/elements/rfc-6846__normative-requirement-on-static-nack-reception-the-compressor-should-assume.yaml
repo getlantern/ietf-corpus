@@ -1,0 +1,10 @@
+document: rfc-6846
+kind: normative-requirement
+summary: On STATIC-NACK reception, the compressor SHOULD assume the decompressor has no valid context and re-send all static and dynamic information via an IR packet next time it compresses for that flow, unless subsequent packets already provide a suitable response.
+section: 5.2.2.2
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

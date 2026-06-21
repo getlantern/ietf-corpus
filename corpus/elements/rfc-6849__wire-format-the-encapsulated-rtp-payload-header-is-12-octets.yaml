@@ -1,0 +1,9 @@
+document: rfc-6849
+kind: wire-format
+summary: 'The encapsulated RTP payload header is 12 octets prepended to the original received RTP packet (header+payload). Fields: receive timestamp (32-bit), followed by a modified copy of the received RTP header where the first 2 bits are overwritten with the Fragmentation (F) field (2 bits: First=00, Last=01, None=10, Intermediate=11), then R (2 bits), CC, M, PT, sequence number, transmit timestamp (32-bit), SSRC, and optional CSRCs.'
+section: 7.1.2
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

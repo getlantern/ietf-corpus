@@ -1,0 +1,11 @@
+document: rfc-6840
+kind: normative-requirement
+summary: A signed zone MUST include a DNSKEY for each algorithm present in the zone's DS RRset and expected trust anchors, and MUST be signed with each such algorithm. Validators SHOULD accept any single valid path and MUST NOT insist that all algorithms signaled in the DNSKEY RRset work.
+section: "5.11"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

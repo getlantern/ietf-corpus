@@ -1,0 +1,10 @@
+document: rfc-6846
+kind: normative-requirement
+summary: Until the decompressor has established a feedback channel, the compressor SHOULD periodically send IR and/or IR-DYN packets to refresh the context, based on timeouts, packet counts, or other implementation-specific strategies. Once feedback is established, the compressor MAY stop periodic refreshes.
+section: 5.2.1.2
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

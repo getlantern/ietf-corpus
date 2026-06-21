@@ -1,0 +1,8 @@
+document: rfc-6845
+kind: design-rationale
+summary: Broadcast networks with non-uniform link costs (e.g., radio networks with varying signal strength) cannot accurately advertise per-neighbor costs using standard OSPF broadcast mode, which only allows a single cost per interface. P2MP mode solves this but requires O(N^2) adjacencies. The hybrid mode combines broadcast efficiency with P2MP's per-neighbor cost flexibility.
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6846
+kind: design-rationale
+summary: No TCP header field is suitable as a master sequence number—unlike UDP/IP profiles—because the TCP Sequence Number may fluctuate within the TCP window due to retransmissions and is not monotonically increasing per compressed packet. ROHC-TCP therefore introduces the compressor-created MSN field as a stable per-packet reference for feedback correlation and IP-ID inference.
+section: 6.1.1
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

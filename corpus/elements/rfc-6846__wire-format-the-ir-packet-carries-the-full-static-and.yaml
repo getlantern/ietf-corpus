@@ -1,0 +1,9 @@
+document: rfc-6846
+kind: wire-format
+summary: The IR packet carries the full static and dynamic chains. Its type octet is 0xFD (11111101 binary), followed by 0-2 CID octets (large CID mode), a 1-octet Profile=0x06 field, a 1-octet 8-bit CRC covering the entire IR header, a variable-length static chain, a variable-length dynamic chain, and optional payload.
+section: "7.1"
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

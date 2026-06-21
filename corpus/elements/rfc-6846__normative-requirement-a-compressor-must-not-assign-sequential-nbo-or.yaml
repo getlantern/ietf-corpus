@@ -1,0 +1,10 @@
+document: rfc-6846
+kind: normative-requirement
+summary: A compressor MUST NOT assign sequential (NBO) or sequential byte-swapped IP-ID behavior to outer (tunneling) IP headers. Only the innermost IP header's IP-ID may be treated as sequentially changing, because only it has sufficient correlation with the MSN.
+section: 6.1.2
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

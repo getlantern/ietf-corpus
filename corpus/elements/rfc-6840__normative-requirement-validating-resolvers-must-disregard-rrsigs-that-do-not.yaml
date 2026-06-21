@@ -1,0 +1,10 @@
+document: rfc-6840
+kind: normative-requirement
+summary: Validating resolvers MUST disregard RRSIGs that do not have a corresponding DNSKEY in the zone, and MUST disregard RRSIGs with algorithm types not present in the DNSKEY RRset. Such signatures may legitimately appear during key or algorithm rollovers.
+section: "5.12"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

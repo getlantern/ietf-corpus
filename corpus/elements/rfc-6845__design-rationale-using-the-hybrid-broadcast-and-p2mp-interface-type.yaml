@@ -1,0 +1,8 @@
+document: rfc-6845
+kind: design-rationale
+summary: Using the hybrid-broadcast-and-P2MP interface type results in O(N^2) links in router-LSAs to represent an N-router network instead of O(N) as with broadcast mode, increasing memory usage and negatively impacting route calculation performance across the area. Network designers must weigh this cost against the benefit of per-neighbor cost accuracy.
+section: "6"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

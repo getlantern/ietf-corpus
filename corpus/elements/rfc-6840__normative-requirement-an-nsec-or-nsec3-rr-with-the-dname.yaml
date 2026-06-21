@@ -1,0 +1,10 @@
+document: rfc-6840
+kind: normative-requirement
+summary: An NSEC or NSEC3 RR with the DNAME bit set MUST NOT be used to assume the nonexistence of any subdomain of that RR's owner name. Without this check, an attacker could falsely prove nonexistence beneath a DNAME.
+section: "4.1"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

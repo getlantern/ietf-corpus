@@ -1,0 +1,10 @@
+document: rfc-6840
+kind: normative-requirement
+summary: When multiple RRSIGs cover a given RRset, a resolver SHOULD accept any single valid RRSIG as sufficient and only determine an RRset is Bogus if all RRSIGs fail validation. More restrictive policies risk cache timing failures and incompatibility with ZSK rollover techniques.
+section: "5.4"
+rfc2119_level: SHOULD
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

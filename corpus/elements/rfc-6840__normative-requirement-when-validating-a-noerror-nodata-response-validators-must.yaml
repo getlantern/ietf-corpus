@@ -1,0 +1,10 @@
+document: rfc-6840
+kind: normative-requirement
+summary: When validating a NOERROR/NODATA response, validators MUST check the CNAME bit in the matching NSEC or NSEC3 RR's type bitmap in addition to the bit for the query type. Without this, an attacker can strip a CNAME RRset to forge a NODATA response.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

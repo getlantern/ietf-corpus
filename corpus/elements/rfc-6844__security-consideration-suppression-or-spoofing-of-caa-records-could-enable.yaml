@@ -1,0 +1,10 @@
+document: rfc-6844
+kind: security-consideration
+summary: Suppression or spoofing of CAA records could enable an attacker to obtain a certificate from an unauthorized issuer. Issuers SHOULD perform DNSSEC validation to detect missing or modified CAA RRsets; where DNSSEC is unavailable, lookups SHOULD go directly to the authoritative name server.
+section: "6.3"
+topics:
+    - dns
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

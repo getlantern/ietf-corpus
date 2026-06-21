@@ -1,0 +1,8 @@
+document: rfc-6846
+kind: wire-format
+summary: The compressed list of TCP options uses a 1-octet header encoding Reserved(3 bits, MUST be zero), PS(1 bit, selects 4-bit or 8-bit XI fields), and m(4 bits, count of XI items). This is followed by m XI items, optional 4-bit padding when PS=0 and m is odd, and variable-length item data for options whose X bit is set.
+section: 6.3.3
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

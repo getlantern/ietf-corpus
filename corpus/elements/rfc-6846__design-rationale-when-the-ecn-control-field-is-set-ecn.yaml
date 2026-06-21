@@ -1,0 +1,10 @@
+document: rfc-6846
+kind: design-rationale
+summary: When the ECN control field is set, ECN bits from all IP headers (not just the innermost) are included in the irregular chain. This is necessary to efficiently support the RFC 3168 'full-functionality option' in tunneled flows, where inner IP ECN bit changes propagate to outer headers. For 'limited-functionality' flows this wastes one extra octet per tunnel header, a trade-off the designers accepted.
+section: 6.1.3
+topics:
+    - tcp
+    - ip
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

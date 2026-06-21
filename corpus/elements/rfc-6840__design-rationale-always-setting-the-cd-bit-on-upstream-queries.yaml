@@ -1,0 +1,9 @@
+document: rfc-6840
+kind: design-rationale
+summary: Always setting the CD bit on upstream queries is recommended because it ensures only one resolver performs validation (predictable behavior) and populates the cache with all DNSSEC data so subsequent CD=1 queries can be satisfied locally. The downside is that the resolver forgoes stricter validation or additional trust anchors at an upstream validator.
+section: "5.9"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

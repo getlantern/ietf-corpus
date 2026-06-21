@@ -1,0 +1,10 @@
+document: rfc-6846
+kind: normative-requirement
+summary: If field X changes value, the compressor MUST use a packet type containing an encoding for X until it is confident the decompressor has received at least one packet with the new value. The compressor SHOULD choose the compressed format with the smallest header that can convey the required changes (the optimistic approach).
+section: 5.2.1.1
+rfc2119_level: MUST
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

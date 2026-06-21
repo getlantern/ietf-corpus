@@ -1,0 +1,9 @@
+document: rfc-6844
+kind: state-machine
+summary: 'CAA lookup algorithm for domain X: (1) If CAA(X) is non-empty, R(X) = CAA(X); else (2) if A(X) (CNAME/DNAME alias) is non-null and R(A(X)) is non-empty, R(X) = R(A(X)); else (3) if X is not a TLD, R(X) = R(P(X)) where P(X) is the parent label; else (4) R(X) is empty.'
+section: "4"
+topics:
+    - dns
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

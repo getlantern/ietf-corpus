@@ -1,0 +1,9 @@
+document: rfc-6846
+kind: state-machine
+summary: 'The decompressor operates in three states: No Context (NC), Static Context (SC), and Full Context (FC). It always starts in NC; successful decompression always transitions it to FC. Repeated CRC failures cause downward transitions: FC to SC on dynamic context damage, SC to NC on static context damage.'
+section: 5.3.1
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

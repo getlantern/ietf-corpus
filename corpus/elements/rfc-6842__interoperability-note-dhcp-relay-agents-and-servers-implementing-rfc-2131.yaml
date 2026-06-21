@@ -1,0 +1,8 @@
+document: rfc-6842
+kind: interoperability-note
+summary: DHCP relay agents and servers implementing RFC 2131 MAY drop DHCP packets in the absence of both the 'client identifier' and 'chaddr' option. When a client sets 'chaddr' to all zeroes (e.g., mobile devices) and the server omits 'client identifier' in replies, relay agents may drop valid downstream DHCPOFFER, DHCPACK, and DHCPNAK packets.
+section: "2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

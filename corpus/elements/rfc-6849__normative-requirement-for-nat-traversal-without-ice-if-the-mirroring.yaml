@@ -1,0 +1,11 @@
+document: rfc-6849
+kind: normative-requirement
+summary: For NAT traversal without ICE, if the mirroring entity is behind a NAT it MUST send some packets to the peer's address/port to open the NAT pinhole, since a mirror does not originate RTP and would otherwise never create the binding.
+section: "5.5"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - nat
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

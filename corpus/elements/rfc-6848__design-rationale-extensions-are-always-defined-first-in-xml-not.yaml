@@ -1,0 +1,8 @@
+document: rfc-6848
+kind: design-rationale
+summary: Extensions are always defined first in XML, not DHCP, because the XML format has a well-defined extension point (via XML namespaces) while DHCP does not. DHCP carriage is achieved by encoding the XML namespace URI, local name, and value into the single extension CAtype 40, avoiding the need for translating entities to understand each extension individually.
+section: "1"
+topics:
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

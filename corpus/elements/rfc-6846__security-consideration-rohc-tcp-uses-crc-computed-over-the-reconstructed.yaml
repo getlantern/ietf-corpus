@@ -1,0 +1,10 @@
+document: rfc-6846
+kind: security-consideration
+summary: ROHC-TCP uses CRC computed over the reconstructed headers as the primary integrity verification mechanism at the decompressor; a corrupted or injected compressed packet that passes CRC may update the decompressor context incorrectly. The IPv4 header checksum is not transmitted and is recomputed at the decompressor—this is safe only if the compressor does not forward a corrupted header, as an undetected corruption would cause the recomputed checksum to differ from the original.
+section: "10"
+topics:
+    - tcp
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,11 @@
+document: rfc-6840
+kind: normative-requirement
+summary: When private algorithm DS records are present and might be supported, the resolver MUST retrieve the corresponding DNSKEY for each and MUST verify the hash of the DNSKEY RR's owner name and RDATA matches the DS digest before using it to determine zone security status.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

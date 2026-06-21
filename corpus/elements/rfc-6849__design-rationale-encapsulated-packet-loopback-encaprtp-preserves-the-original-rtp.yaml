@@ -1,0 +1,10 @@
+document: rfc-6849
+kind: design-rationale
+summary: Encapsulated packet loopback (encaprtp) preserves the original RTP header so the loopback source can compute per-direction metrics by comparing sequence numbers and timestamps in the outer and inner headers. The tradeoff is a 16-byte overhead increase that may cause MTU issues and an increased reverse-path bitrate.
+section: 1.1.1
+topics:
+    - rtp
+    - realtime
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

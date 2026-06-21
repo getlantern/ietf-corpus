@@ -1,0 +1,9 @@
+document: rfc-6840
+kind: design-rationale
+summary: The SEP (Secure Entry Point) bit in DNSKEY RRs has no effect on validation — RFC 4034 Section 2.1.2 explicitly prohibits validators from using it. Any DNSKEY in the signed DNSKEY RRset may authenticate any RRset in the zone regardless of the SEP bit.
+section: "6.2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

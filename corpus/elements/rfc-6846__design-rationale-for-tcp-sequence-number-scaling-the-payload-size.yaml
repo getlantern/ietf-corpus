@@ -1,0 +1,8 @@
+document: rfc-6846
+kind: design-rationale
+summary: For TCP sequence number scaling, the payload size serves as the scaling factor and is inferred by the decompressor from the payload length—no explicit transmission needed. For ACK number scaling, an explicit ack_stride is transmitted because the opposite-direction packet sizes required to derive the stride may not be locally available to the compressor.
+section: 6.4.8
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

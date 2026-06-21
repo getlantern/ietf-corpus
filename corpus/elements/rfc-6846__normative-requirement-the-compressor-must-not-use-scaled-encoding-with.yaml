@@ -1,0 +1,10 @@
+document: rfc-6846
+kind: normative-requirement
+summary: The compressor MUST NOT use scaled encoding with a scaling_factor of zero. If the residue changes or a different scaling factor is used, scaled encoding MUST NOT be applied until the decompressor has received the updated values; this also applies when the unscaled field wraps around.
+section: 6.4.8
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
