@@ -1,0 +1,9 @@
+document: rfc-6856
+kind: normative-requirement
+summary: When UTF-8 mode has not been enabled, character strings outside the ASCII repertoire MUST NOT be sent to the client as-is. If a client requests a UTF-8 message without enabling UTF-8 mode, the server MUST either send a surrogate compliant message or fail with -ERR.
+section: "2.1"
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

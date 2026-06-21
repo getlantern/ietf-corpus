@@ -1,0 +1,10 @@
+document: rfc-6850
+kind: security-consideration
+summary: The RBRIDGE-MIB contains numerous read-write and read-create objects that can alter forwarding behavior (port disable, VLAN forwarder, multipath, learning suppression). SNMP access should be restricted using SNMPv3 authentication and privacy. A read-only compliance variant (rbridgeReadOnlyCompliance) is provided for monitoring-only deployments that cannot allow configuration via SNMP.
+section: "8"
+topics:
+    - security
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6855
+kind: normative-requirement
+summary: When the extended UTF-8 quoting mechanism is used, the server MUST reject with a "BAD" response any octet sequences with the high bit set that fail to comply with the formal syntax of UTF-8 (RFC 3629). The server MUST NOT send UTF-8 in quoted-strings unless the client has issued "ENABLE UTF8=ACCEPT".
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

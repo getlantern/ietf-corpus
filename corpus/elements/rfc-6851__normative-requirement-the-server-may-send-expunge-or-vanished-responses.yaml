@@ -1,0 +1,9 @@
+document: rfc-6851
+kind: normative-requirement
+summary: The server may send EXPUNGE (or VANISHED) responses before the tagged response to MOVE, so the client MUST NOT safely send more commands with message sequence number arguments while the server is processing MOVE or UID MOVE.
+section: "3.3"
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

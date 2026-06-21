@@ -1,0 +1,11 @@
+document: rfc-6857
+kind: security-consideration
+summary: Downgrading invalidates digital signatures over any part of the message, breaking DKIM and possibly S/MIME and PGP. The downgrade mechanism SHOULD NOT remove signatures even if they will fail validation after downgrading; MUAs may use Authentication-Results header fields to assess pre-downgrade validity.
+section: "5"
+rfc2119_level: SHOULD NOT
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

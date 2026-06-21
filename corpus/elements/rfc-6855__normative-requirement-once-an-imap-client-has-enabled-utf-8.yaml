@@ -1,0 +1,9 @@
+document: rfc-6855
+kind: normative-requirement
+summary: Once an IMAP client has enabled UTF-8 support with "ENABLE UTF8=ACCEPT", it MUST NOT issue a SEARCH command containing a charset specification; if the server receives such a command, it SHOULD reject it with a "BAD" response due to conflicting charset labels.
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

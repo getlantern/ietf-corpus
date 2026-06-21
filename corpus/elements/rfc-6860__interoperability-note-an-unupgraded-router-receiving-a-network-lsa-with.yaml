@@ -1,0 +1,9 @@
+document: rfc-6860
+kind: interoperability-note
+summary: An unupgraded router receiving a network-LSA with mask 255.255.255.255 will install a host route to the DR's interface rather than the subnet route. In a partial-deployment scenario this creates routing black holes, but this is acceptable as it actually helps DRs defend against remote attacks by dropping packets destined for transit-only networks.
+section: 2.2.2.2.1
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

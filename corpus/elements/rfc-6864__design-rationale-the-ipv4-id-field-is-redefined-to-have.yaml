@@ -1,0 +1,8 @@
+document: rfc-6864
+kind: design-rationale
+summary: The IPv4 ID field is redefined to have meaning only for fragmented or fragmentable datagrams, mirroring IPv6 where the fragment header (and its ID) is absent for non-fragmented datagrams. This eliminates non-fragmentation uses such as duplicate detection and diagnostic correlation, which are already non-interoperable with implementations that generate non-varying IDs.
+section: "4.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-6860
+kind: design-rationale
+summary: Unnumbered point-to-point interfaces in OSPFv2 are already effectively hidden since no host route is generated for them. However, the associated numbered interface (e.g., a loopback) may still need hiding and must be evaluated carefully before suppression, as it may serve as a virtual link endpoint or inter-domain peering point.
+section: "4.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

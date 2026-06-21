@@ -1,0 +1,9 @@
+document: rfc-6854
+kind: security-consideration
+summary: Protocols that validate the originator by matching 'From:' to a verified domain (e.g., DKIM ADSP, RFC 5617) will not be applicable to messages lacking an actual email address in 'From:'. Senders using group syntax in 'From:' should be aware this may adversely affect deliverability.
+section: "5"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

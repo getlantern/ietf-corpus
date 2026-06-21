@@ -1,0 +1,9 @@
+document: rfc-6860
+kind: security-consideration
+summary: Hiding transit-only networks removes their prefixes from routers' forwarding tables so that even if the address is known, the forwarding information is absent and the destination is unreachable. This reduces the attack surface by preventing remote attacks launched against router interfaces on transit-only networks.
+section: "5"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

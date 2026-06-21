@@ -1,0 +1,8 @@
+document: rfc-6855
+kind: design-rationale
+summary: The IMAP base specification forbids 8-bit characters in atoms or quoted-strings, requiring UTF-8 to be sent as literals, which adds extra round trips unless the server supports non-synchronizing literals (RFC 2088). The "UTF8=ACCEPT" extension was introduced to allow UTF-8 directly in quoted-strings and reduce this overhead.
+section: "3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

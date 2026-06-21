@@ -1,0 +1,10 @@
+document: rfc-6864
+kind: security-consideration
+summary: The IPv4 ID field of atomic datagrams is no longer required to be unique, so it contributes no entropy to the header. Previously, the ID (though weakly) added uniqueness per source/destination/protocol within one MDL; this is now gone for atomic datagrams and should not be used as input to cryptographic algorithms or pseudorandom generators.
+section: "7"
+topics:
+    - ip
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

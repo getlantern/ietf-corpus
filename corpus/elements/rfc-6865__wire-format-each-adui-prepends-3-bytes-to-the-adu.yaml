@@ -1,0 +1,6 @@
+document: rfc-6865
+kind: wire-format
+summary: 'Each ADUI prepends 3 bytes to the ADU before FEC encoding: F[i] (1 byte Flow ID) and L[i] (2 bytes ADU length, big-endian). Zero padding Pad[i] follows the ADU to reach size E. These 3 header bytes and padding are present during encoding but are never sent on the wire.'
+section: "4.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

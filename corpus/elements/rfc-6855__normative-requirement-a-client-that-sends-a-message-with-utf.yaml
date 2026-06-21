@@ -1,0 +1,9 @@
+document: rfc-6855
+kind: normative-requirement
+summary: A client that sends a message with UTF-8 headers MUST use the "UTF8" data extension to the APPEND command. If the client has not issued "ENABLE UTF8=ACCEPT", the server MUST reject with a "NO" response any APPEND command that includes 8-bit characters in message header fields.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

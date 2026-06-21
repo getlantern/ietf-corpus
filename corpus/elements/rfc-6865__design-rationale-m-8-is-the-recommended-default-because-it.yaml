@@ -1,0 +1,6 @@
+document: rfc-6865
+kind: design-rationale
+summary: m=8 is the recommended default because it allows small-to-medium source blocks (up to 255 encoding symbols) while keeping GF elements byte-aligned, enabling efficient read/write memory operations during encoding and decoding. m=4 suits very small blocks; m=16 suits very large blocks but at high computational and memory cost.
+section: "7.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

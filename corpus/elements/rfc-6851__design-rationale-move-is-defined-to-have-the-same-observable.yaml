@@ -1,0 +1,8 @@
+document: rfc-6851
+kind: design-rationale
+summary: MOVE is defined to have the same observable effect as COPY + STORE \Deleted + UID EXPUNGE but without producing the intermediate states those steps would generate. This preserves the semantics of related extensions (e.g., TRYCREATE response codes still apply) while eliminating the window for partial-failure inconsistencies.
+section: "3.3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6864
+kind: design-rationale
+summary: Tunnel ingresses act as originating sources for the outermost IPv4 header and therefore control the uniqueness of the outer IPv4 ID independently of the inner header. This means tunnel ingresses can always fragment as originating sources without violating the inner datagram's ID constraints.
+section: 5.3.1
+topics:
+    - ip
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

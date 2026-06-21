@@ -1,0 +1,8 @@
+document: rfc-6851
+kind: design-rationale
+summary: 'MOVE was introduced because the existing COPY/STORE/EXPUNGE sequence for moving messages is non-atomic: interruptions or concurrent clients can observe intermediate states, and expunging can affect more messages than intended if other messages are already flagged \Deleted. Servers with efficient backend stores also cannot exploit those efficiencies through the three-step process.'
+section: "1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

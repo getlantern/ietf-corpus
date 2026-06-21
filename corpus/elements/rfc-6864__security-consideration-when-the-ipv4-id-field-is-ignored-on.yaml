@@ -1,0 +1,10 @@
+document: rfc-6864
+kind: security-consideration
+summary: When the IPv4 ID field is ignored on receipt for atomic datagrams, its value becomes unconstrained and can more easily be used as a covert channel. It may be desirable for middleboxes to rewrite the ID field of atomic datagrams to prevent this, though rewriting is prohibited for datagrams protected by the IPsec Authentication Header (AH).
+section: "7"
+topics:
+    - ip
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
