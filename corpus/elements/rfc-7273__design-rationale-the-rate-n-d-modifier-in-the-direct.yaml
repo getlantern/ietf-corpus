@@ -1,0 +1,9 @@
+document: rfc-7273
+kind: design-rationale
+summary: The `rate=N/D` modifier in the direct media clock is included specifically to accommodate NTSC 'oddball' audio sample rates (e.g., 44056 Hz derived via 1000/1001 pull-down from 44100 Hz). It is not recommended for video streams, which use a fixed 90 kHz RTP clock regardless of frame rate.
+section: "5.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

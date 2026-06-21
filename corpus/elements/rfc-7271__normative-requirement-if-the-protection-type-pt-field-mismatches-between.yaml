@@ -1,0 +1,10 @@
+document: rfc-7271
+kind: normative-requirement
+summary: If the Protection Type (PT) field mismatches between a permanent bridge and selector bridge configuration, the node MUST notify the operator and MUST NOT perform protection switching. If the bridge type matches but switching type mismatches (uni vs. bidirectional), the bidirectional node SHOULD fall back to unidirectional switching to allow interworking.
+section: "12"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

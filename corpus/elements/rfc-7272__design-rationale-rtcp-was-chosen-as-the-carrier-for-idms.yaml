@@ -1,0 +1,9 @@
+document: rfc-7272
+kind: design-rationale
+summary: RTCP was chosen as the carrier for IDMS because IDMS involves collection and distribution of RTP packet arrival and presentation times — information that is inherently reception quality feedback, exactly what RTCP (including RTCP XR) is designed to carry. This avoids the need for a separate out-of-band signaling channel.
+section: "2.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

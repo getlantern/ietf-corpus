@@ -1,0 +1,10 @@
+document: rfc-7271
+kind: normative-requirement
+summary: When a node receives a remote EXER message, it SHOULD respond with a Reverse Request (RR) message with FPath and Path set to the current condition. The RR message SHALL be generated only in response to a remote EXER. If EXER is received before RR when local EXER is pending, the received EXER MUST be treated as an RR.
+section: "8"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

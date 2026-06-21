@@ -1,0 +1,10 @@
+document: rfc-7268
+kind: normative-requirement
+summary: An EAP-Key-Name Attribute sent in an Access-Request MUST contain only a single NUL character, because the NAS operates as a pass-through in EAP and cannot know the EAP Session-Id before receiving it from the RADIUS server. A RADIUS server receiving an Access-Request with an EAP-Key-Name Attribute containing anything other than a single NUL character MUST silently discard the attribute.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

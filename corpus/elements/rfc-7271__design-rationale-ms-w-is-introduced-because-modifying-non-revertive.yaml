@@ -1,0 +1,9 @@
+document: rfc-7271
+kind: design-rationale
+summary: MS-W is introduced because modifying non-revertive behavior (Capability 2) creates a need to revert from the DNR state without using Lockout of Protection—which introduces an unprotected interval. RFC 6378 required issuing LO followed by Clear to exit DNR, but MS-W provides a safer direct revert command corresponding to the 'Manual switch-over for recovery LSP/span' command mandated by RFC 5654 Requirement 83.
+section: "6.1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

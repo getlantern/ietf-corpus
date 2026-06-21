@@ -1,0 +1,9 @@
+document: rfc-7271
+kind: wire-format
+summary: 'The Capabilities TLV carries a Type field (value=1), a Length field (length of Flags in octets, must be a multiple of 4 and the minimum needed), and a 32-bit Flags field. Five capabilities occupy the five most significant bits: 0x80000000 (priority modification), 0x40000000 (non-revertive modification), 0x20000000 (MS-W), 0x10000000 (SD protection), 0x08000000 (EXER). APS mode sets Flags=0xF8000000.'
+section: "9.1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

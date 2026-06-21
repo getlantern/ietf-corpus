@@ -1,0 +1,10 @@
+document: rfc-7271
+kind: normative-requirement
+summary: A node MUST include its Capabilities TLV in every PSC message it transmits. Upon receiving a Capabilities TLV, the node MUST compare the received Flags to its own transmitted Flags; if they differ, the node MUST alert the operator and MUST NOT perform any protection switching until the mismatch is resolved.
+section: 9.1.1
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

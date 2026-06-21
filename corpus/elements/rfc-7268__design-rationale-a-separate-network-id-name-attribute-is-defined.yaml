@@ -1,0 +1,8 @@
+document: rfc-7268
+kind: design-rationale
+summary: A separate Network-Id-Name Attribute is defined because the IEEE 802.1X NID-Name can be up to 253 octets, whereas the IEEE 802.11 SSID is at most 32 octets. When the Called-Station-Id Attribute already carries a MAC address there may not be sufficient remaining space for a full NID-Name, necessitating the separate attribute for wired 802.1X deployments.
+section: "2.7"
+topics:
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

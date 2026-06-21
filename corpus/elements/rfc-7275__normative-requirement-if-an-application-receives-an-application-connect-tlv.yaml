@@ -1,0 +1,9 @@
+document: rfc-7275
+kind: normative-requirement
+summary: If an application receives an Application Connect TLV with a version number higher than its own, it MUST send a Notification message with a NAK TLV indicating 'Incompatible Protocol Version' and supplying its locally supported version. If the received version is lower, it MAY respond with a matching version or reject with NAK.
+section: 4.4.1
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

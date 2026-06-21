@@ -1,0 +1,9 @@
+document: rfc-7271
+kind: design-rationale
+summary: 'The low priority of Clear Signal Fail (SFc) defined in RFC 6378 causes traffic disruption when a node recovers from simultaneous signal fails on both working and protection paths: once SF-P is cleared, the SFc request cannot preempt the remaining SF-W condition, leaving traffic stranded on an unavailable path. This document raises SFc priority above SF-P to correct this.'
+section: "4.2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7272
+kind: normative-requirement
+summary: When reporting on an RTP packet that is one of several consecutive packets sharing the same RTP timestamp, an SC SHOULD report on the packet with the lowest sequence number in the received sequence (not from a prior wrap-around period), to avoid synchronization errors caused by ambiguous multi-packet frames.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

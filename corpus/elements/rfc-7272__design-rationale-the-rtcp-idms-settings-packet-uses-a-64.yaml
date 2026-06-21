@@ -1,0 +1,10 @@
+document: rfc-7272
+kind: design-rationale
+summary: The RTCP IDMS Settings Packet uses a 64-bit Presented NTP timestamp while the RTCP XR IDMS Report Block uses only a 32-bit truncated form. The MSAS always adds extra delay beyond the most lagged receiver, so 32 bits suffice for SC reporting; however, fine-grained MSAS control (e.g., phased-array transducers) requires the full 64-bit precision in the settings distribution.
+section: "7"
+topics:
+    - rtp
+    - realtime
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

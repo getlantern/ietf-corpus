@@ -1,0 +1,9 @@
+document: rfc-7271
+kind: design-rationale
+summary: RFC 6378 supports non-revertive operation only when recovering from defect conditions, but not when operator commands such as FS or MS are cleared. This document modifies non-revertive behavior so a node enters the Do-not-Revert (DNR) state whenever any switch-over condition—including operator commands—is cleared, aligning with RFC 4427 and other transport network behaviors.
+section: "5"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

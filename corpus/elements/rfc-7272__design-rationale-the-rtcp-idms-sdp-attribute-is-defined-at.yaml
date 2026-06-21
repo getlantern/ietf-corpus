@@ -1,0 +1,9 @@
+document: rfc-7272
+kind: design-rationale
+summary: The rtcp-idms SDP attribute is defined at the media level rather than the session level because IDMS is performed on a single reference stream; other streams are synchronized to it using existing inter-stream mechanisms (lip-sync via sender reports). Audio is recommended as the IDMS reference stream because humans are more sensitive to audio synchronization errors than video.
+section: "10"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

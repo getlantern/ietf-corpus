@@ -1,0 +1,10 @@
+document: rfc-7268
+kind: normative-requirement
+summary: If an EAP-Key-Name Attribute is included in an Access-Request but is absent from the corresponding Access-Accept, the NAS SHOULD treat the Access-Accept as though it were an Access-Reject, since the NAS only sends EAP-Key-Name when it is required to provision service. Conversely, if EAP-Key-Name was not in the Access-Request but appears in the Access-Accept, the NAS SHOULD silently discard it.
+section: "2.2"
+rfc2119_level: SHOULD
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7271
+kind: interoperability-note
+summary: Capability advertisement is not a negotiation but a verification that both endpoints use the same mode. If the Capabilities TLVs do not match, the node must alert the operator and halt protection switching. To support backward compatibility with RFC 6378 implementations, a node supporting PSC mode MUST be configurable to either send a Capabilities TLV with Flags=0x0 or send no Capabilities TLV at all.
+section: 9.2.1
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

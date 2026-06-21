@@ -1,0 +1,10 @@
+document: rfc-7272
+kind: security-consideration
+summary: Erroneous or malicious RTCP XR IDMS reports can cause other devices in the synchronization group to introduce large, unintended playout delays (e.g., a falsely reported two-hour delay). Both SCs and MSASs SHOULD check for out-of-bound information and reject reports where playout differences exceed configured limits.
+section: "12"
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

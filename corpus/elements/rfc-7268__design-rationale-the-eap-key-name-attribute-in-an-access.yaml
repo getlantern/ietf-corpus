@@ -1,0 +1,9 @@
+document: rfc-7268
+kind: design-rationale
+summary: The EAP-Key-Name Attribute in an Access-Request is constrained to a single NUL character because the NAS operates as a pass-through in EAP and cannot know the EAP Session-Id before receiving it from the RADIUS server. The placeholder NUL signals to the server that the NAS requires the EAP Session-Id in the Access-Accept.
+section: "2.2"
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7273
+kind: design-rationale
+summary: Marking a clock as `traceable` allows senders to omit specific server addresses or PTP master identifiers from SDP, since any traceable clock at the answerer is considered an appropriate reference. This simplifies signalling for globally distributed sessions where GPS, Galileo, or GLONASS is available at both endpoints.
+section: "4.7"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

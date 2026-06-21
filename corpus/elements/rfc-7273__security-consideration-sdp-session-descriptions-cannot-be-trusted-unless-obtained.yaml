@@ -1,0 +1,10 @@
+document: rfc-7273
+kind: security-consideration
+summary: SDP session descriptions cannot be trusted unless obtained via an authenticated transport from a known source. Incorrect reference or media clock parameters may cause devices to synchronise to unintended clock sources, and assigning enough devices to a fraudulent IEEE 1588 grandmaster may constitute a denial-of-service attack on that source. Devices MAY validate the integrity of clock descriptions before connecting to unfamiliar sources.
+section: "7"
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
