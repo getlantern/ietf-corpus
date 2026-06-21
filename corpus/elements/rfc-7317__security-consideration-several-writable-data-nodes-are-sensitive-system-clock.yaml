@@ -1,0 +1,10 @@
+document: rfc-7317
+kind: security-consideration
+summary: 'Several writable data nodes are sensitive: /system/clock/timezone, /system/ntp, /system/dns-resolver, /system/radius, /system/authentication/user-authentication-order, and /system/authentication/user. Unauthorized write access via edit-config can negatively affect network operations; NETCONF ACM (RFC 6536) should be used to restrict write access.'
+section: "8"
+topics:
+    - security
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

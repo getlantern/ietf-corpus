@@ -1,0 +1,8 @@
+document: rfc-7303
+kind: security-consideration
+summary: Non-recursive XML entity expansion can exhaust computing resources even though recursive expansions are prohibited by XML. For example, entity A consisting of 100 copies of entity B, which consists of 100 copies of entity C, creates exponential expansion (the 'billion laughs' class of attack).
+section: "10"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

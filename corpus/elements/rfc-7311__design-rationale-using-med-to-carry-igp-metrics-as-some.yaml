@@ -1,0 +1,9 @@
+document: rfc-7311
+kind: design-rationale
+summary: Using MED to carry IGP metrics (as some implementations already do) does not provide true IGP-like shortest path routing because BGP's decision process gives priority to AS_PATH length over MED, and MED does not ensure proper accumulation of IGP metrics along the full path.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

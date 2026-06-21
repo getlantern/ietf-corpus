@@ -1,0 +1,10 @@
+document: rfc-7317
+kind: design-rationale
+summary: The crypt-hash '$0$' prefix for clear-text input allows clients to send unencrypted passwords; the server is responsible for hashing and storing the result. This avoids requiring clients to implement the crypt() function while still ensuring passwords are never stored in clear text.
+section: "5"
+topics:
+    - crypto
+    - security
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

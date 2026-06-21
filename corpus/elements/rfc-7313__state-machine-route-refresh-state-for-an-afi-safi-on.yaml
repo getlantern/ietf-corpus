@@ -1,0 +1,9 @@
+document: rfc-7313
+kind: state-machine
+summary: 'Route refresh state for an <AFI, SAFI>: on BoRR receipt, all routes from peer transition to Stale; incoming updates replace stale entries; on EoRR receipt, all remaining Stale routes are purged immediately; if stale timeout expires before EoRR, routes are purged without waiting.'
+section: "4"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7313
+kind: normative-requirement
+summary: If the length (excluding the fixed-size message header) of a received ROUTE-REFRESH message with subtype 1 or 2 is not 4, the BGP speaker MUST send a NOTIFICATION with Error Code 'ROUTE-REFRESH Message Error' and subcode 'Invalid Message Length', including the complete ROUTE-REFRESH message in the Data field.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

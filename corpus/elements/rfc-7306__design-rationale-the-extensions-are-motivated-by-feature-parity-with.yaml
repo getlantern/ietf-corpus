@@ -1,0 +1,9 @@
+document: rfc-7306
+kind: design-rationale
+summary: 'The extensions are motivated by feature parity with InfiniBand: RSockets cannot use RDMA Write with Immediate Data over iWARP, and DAT Atomics primitives available for InfiniBand are absent in iWARP RNICs. Adding Atomic Operations and Immediate Data closes this gap so middleware like RSockets and DAT Atomics can operate interchangeably over InfiniBand and iWARP.'
+section: "1"
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

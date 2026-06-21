@@ -1,0 +1,10 @@
+document: rfc-7311
+kind: normative-requirement
+summary: The AIGP attribute MUST NOT be sent on any BGP session for which AIGP_SESSION is disabled. If received on a disabled session, it MUST be treated as an unrecognized non-transitive attribute and discarded, though the receipt SHOULD be logged in a rate-limited manner.
+section: "3.3"
+rfc2119_level: MUST NOT
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

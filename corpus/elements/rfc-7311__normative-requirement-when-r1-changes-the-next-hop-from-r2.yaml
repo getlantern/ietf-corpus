@@ -1,0 +1,10 @@
+document: rfc-7311
+kind: normative-requirement
+summary: When R1 changes the next hop from R2 to R1 and R1's route to R2 is an IGP-learned or non-recursive static route, R1 MUST increase the AIGP TLV value by adding the distance from R1 to R2, and the increase MUST be by a non-zero amount.
+section: 3.4.3
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

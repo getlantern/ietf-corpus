@@ -1,0 +1,6 @@
+document: rfc-7303
+kind: design-rationale
+summary: BOM takes priority over the charset parameter because BOMs are in-band signals that survive transcoding less ambiguously than out-of-band MIME headers. Making BOMs authoritative, together with deprecating UTF-32 and requiring XML encoding declarations in certain cases, is intended to improve practical interoperability over time.
+section: C.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

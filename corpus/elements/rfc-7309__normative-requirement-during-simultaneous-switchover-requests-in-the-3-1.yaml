@@ -1,0 +1,9 @@
+document: rfc-7309
+kind: normative-requirement
+summary: During simultaneous switchover requests in the 3:1 Option A model, the PE MUST compare IP addresses with the remote PW peer. The PE with the higher IP address SHOULD ignore the request and wait for acknowledgement; the PE with the lower IP address SHOULD clear the 'request switchover' bit, set the 'Preferential Forwarding' local status bit, and update the PW status to its ICCP peer.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

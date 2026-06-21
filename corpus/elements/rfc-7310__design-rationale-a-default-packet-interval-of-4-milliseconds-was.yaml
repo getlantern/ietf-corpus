@@ -1,0 +1,10 @@
+document: rfc-7310
+kind: design-rationale
+summary: A default packet interval of 4 milliseconds was chosen to maintain an acceptable ratio of payload to header bytes while minimizing end-to-end delay, enabling viable interactive applications. At certain sample rates (11025, 22050, 44100 Hz) the interval must be rounded down to 3.99 ms to preserve an integer number of coded samples.
+section: "5.3"
+topics:
+    - realtime
+    - rtp
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

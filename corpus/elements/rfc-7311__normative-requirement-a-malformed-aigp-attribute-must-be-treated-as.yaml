@@ -1,0 +1,10 @@
+document: rfc-7311
+kind: normative-requirement
+summary: A malformed AIGP attribute MUST be treated as an unrecognized non-transitive attribute and quietly discarded without passing it to other BGP peers. An attribute is malformed if it has the transitive bit set or if its first AIGP TLV contains the maximum value 0xffffffffffffffff (SHOULD discard).
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

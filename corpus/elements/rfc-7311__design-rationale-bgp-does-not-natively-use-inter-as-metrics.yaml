@@ -1,0 +1,9 @@
+document: rfc-7311
+kind: design-rationale
+summary: BGP does not natively use inter-AS metrics because local distance changes would violate Internet scaling principles if globally propagated, and inter-domain routing policy must not be forced to be revealed or agreed upon across administrative boundaries. The AIGP attribute is scoped to a single AIGP administrative domain to avoid these problems.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

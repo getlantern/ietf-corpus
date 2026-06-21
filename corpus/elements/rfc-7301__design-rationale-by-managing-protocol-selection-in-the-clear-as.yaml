@@ -1,0 +1,9 @@
+document: rfc-7301
+kind: design-rationale
+summary: By managing protocol selection in the clear as part of the handshake, ALPN avoids introducing false confidence about the ability to hide the negotiated protocol. If hiding the protocol is required, renegotiation after connection establishment is the preferred methodology, as it provides true TLS security guarantees.
+section: "4"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
