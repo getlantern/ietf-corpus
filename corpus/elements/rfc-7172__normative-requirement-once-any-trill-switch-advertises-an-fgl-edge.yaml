@@ -1,0 +1,10 @@
+document: rfc-7172
+kind: normative-requirement
+summary: Once any TRILL switch advertises an FGL-edge, any FGL-safe TRILL switch (RB1) that observes a VL RBridge on one of its ports MUST take Step (A) — discard FGL output to that port and report increased adjacency cost (2^23 higher) — or Step (B) — report adjacency cost as 2^24−1 to block the adjacency from least-cost calculations.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

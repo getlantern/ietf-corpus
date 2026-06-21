@@ -1,0 +1,9 @@
+document: rfc-7173
+kind: design-rationale
+summary: PPP pseudowire encoding was chosen over Ethernet pseudowires or a new TRILL-specific pseudowire type. Ethernet pseudowires would add 12-16 bytes of overhead per packet. A new pseudowire type was rejected because any efficiency gain over PPP pseudowires would be too small to justify the complexity, and PPP pseudowire encoding allows existing TRILL PPP and PPP pseudowire dissectors to automatically decode TRILL traffic.
+section: A
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7177
+kind: normative-requirement
+summary: 'A received TRILL Hello MUST be discarded if: its Circuit Type is not 1; it lacks an Area Address TLV with only Area Address zero; a Protocols Supported TLV is present but does not list TRILL NLPID (0xC0); it lacks an MT Port Capabilities TLV with a VLAN-FLAGS sub-TLV; its maximumAreaAddresses field is not 1; or IS-IS authentication is in use and the PDU fails authentication.'
+section: "8.3"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

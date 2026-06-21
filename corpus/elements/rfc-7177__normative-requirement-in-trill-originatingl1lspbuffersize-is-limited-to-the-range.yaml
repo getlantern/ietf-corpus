@@ -1,0 +1,9 @@
+document: rfc-7177
+kind: normative-requirement
+summary: In TRILL, originatingL1LSPBufferSize is limited to the range 1,470 to 65,535 bytes inclusive (unlike Layer 3 IS-IS which limits it to 512–1,492 bytes). An RBridge determines the desired campus link MTU as the minimum of its own and all other RBridges' advertised values, but not less than 1,470 bytes.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

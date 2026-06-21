@@ -1,0 +1,10 @@
+document: rfc-7180
+kind: normative-requirement
+summary: When an overloaded RBridge RB2 needs to originate a multi-destination frame and has a neighbor offering OOMF service, the frame MUST NOT be locally distributed in native form at RB2 before tunneling, to prevent duplicate delivery. If no OOMF neighbor exists, RB2 MUST locally distribute the frame where it is Appointed Forwarder for the frame's VLAN.
+section: 2.4.2
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

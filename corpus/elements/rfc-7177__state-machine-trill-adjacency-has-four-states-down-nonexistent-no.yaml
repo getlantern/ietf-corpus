@@ -1,0 +1,8 @@
+document: rfc-7177
+kind: state-machine
+summary: 'TRILL adjacency has four states: Down (nonexistent, no table entry), Detect (neighbor seen but 2-way connectivity not confirmed or detected outside Designated VLAN), 2-Way (bidirectional confirmed on Designated VLAN but enabled tests not yet passed), and Report (all enabled tests including optional MTU and/or BFD passed; adjacency is advertised in LSPs). An RBridge participates in LSP synchronization on a port whenever it has at least one adjacency in the 2-Way or Report state.'
+section: "3.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

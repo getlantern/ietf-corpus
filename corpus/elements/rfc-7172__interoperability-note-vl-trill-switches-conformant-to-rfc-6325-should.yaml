@@ -1,0 +1,9 @@
+document: rfc-7172
+kind: interoperability-note
+summary: VL TRILL switches conformant to RFC 6325 should discard frames with 0x893B after the inner MAC addresses, but non-conformant implementations could mishandle FGL packets by egressing them into the wrong VLAN, incorrectly pruning multicast distribution, or persistently misordering packets due to ECMP flow miscomputation.
+section: "5.1"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

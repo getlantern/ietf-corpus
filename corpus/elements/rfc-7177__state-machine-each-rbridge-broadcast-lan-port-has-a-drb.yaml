@@ -1,0 +1,8 @@
+document: rfc-7177
+kind: state-machine
+summary: 'Each RBridge broadcast LAN port has a DRB election state machine with four states: Down (operationally down, no traffic), Suspended (a higher-priority port with the same MAC address exists; port only monitors Hellos to update its Suspension Timer), DRB (this port won the election and controls Designated VLAN and Appointed Forwarder decisions), and Not DRB (deferring to another port). Events D1–D5 drive transitions; D4 (receiving a Hello with the same MAC and higher DRB priority) forces the port into Suspended and discards all adjacencies.'
+section: "4.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

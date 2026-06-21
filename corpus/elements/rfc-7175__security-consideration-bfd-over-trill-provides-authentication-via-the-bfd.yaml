@@ -1,0 +1,9 @@
+document: rfc-7175
+kind: security-consideration
+summary: BFD over TRILL provides authentication via the BFD authentication facility but no encryption. Failure to check the TRILL Header M bit in BFD Control frames enables denial-of-service attacks using bogus multi-destination frames. Failure to check hop counts makes BFD Control frame spoofing easier; for stronger protection, BFD Authentication (RFC 5880) should be used.
+section: "7"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7175
+kind: normative-requirement
+summary: On returned TRILL BFD Echo frames, the M bit MUST be checked and the frame discarded if set. The hop count as received MUST be 0x3E (or 0x3D if already decremented), and the Channel Header MH bit MUST be one; otherwise, the frame is discarded.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

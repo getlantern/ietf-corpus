@@ -1,0 +1,8 @@
+document: rfc-7177
+kind: design-rationale
+summary: TRILL cannot tolerate the Layer 3 IS-IS behavior of allowing multiple Designated Routers on a LAN. In TRILL, multiple DRBs would cause multiple RBridges to ingress and egress the same native frame simultaneously, creating forwarding loops that the TRILL hop count cannot protect against — particularly catastrophic for multi-destination frames, which could multiply on each loop iteration.
+section: "2.5"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

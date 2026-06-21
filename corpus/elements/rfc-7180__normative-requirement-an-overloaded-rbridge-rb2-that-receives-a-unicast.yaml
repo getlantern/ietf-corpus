@@ -1,0 +1,9 @@
+document: rfc-7180
+kind: normative-requirement
+summary: An overloaded RBridge RB2 that receives a unicast TRILL Data frame for which it is not the egress MUST NOT discard the frame solely because the egress nickname is unknown (overload may cause incomplete nickname tables). If any non-overloaded neighbor exists (other than the source), RB2 MUST attempt to forward to one of those neighbors.
+section: 2.3.1
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

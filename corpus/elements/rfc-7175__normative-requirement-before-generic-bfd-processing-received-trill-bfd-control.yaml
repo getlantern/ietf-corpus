@@ -1,0 +1,10 @@
+document: rfc-7175
+kind: normative-requirement
+summary: 'Before generic BFD processing, received TRILL BFD Control frames SHOULD be checked: frames with the M bit set in the TRILL Header MUST be discarded (multi-destination BFD not yet defined). For one-hop (MH=0), the received hop count must be 0x3F (or 0x3E if already decremented); for multi-hop (MH=1), the hop count must not be less than a configurable value defaulting to 0x30.'
+section: "3.2"
+rfc2119_level: SHOULD
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

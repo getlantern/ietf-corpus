@@ -1,0 +1,8 @@
+document: rfc-7177
+kind: design-rationale
+summary: RBridges do not implement the IS-IS externalDomain flag (or fix it to 'false') because unlike Layer 3 routers that may connect to separate routing domains, all neighbor RBridges merge into a single TRILL campus. For loop safety, TRILL Hellos must be sent and received on every non-disabled port.
+section: "8"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

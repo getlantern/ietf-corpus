@@ -1,0 +1,9 @@
+document: rfc-7177
+kind: normative-requirement
+summary: When a BFD session is initiated while the adjacency is in the 2-Way state, the adjacency MUST NOT advance to the Report state until BFD and all other enabled connectivity tests have succeeded. If BFD is enabled while the adjacency is already in the Report state, the adjacency MUST remain in Report until BFD or another enabled test fails, to minimize unnecessary topology changes.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

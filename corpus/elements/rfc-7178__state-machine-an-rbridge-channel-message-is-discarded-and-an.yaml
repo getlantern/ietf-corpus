@@ -1,0 +1,8 @@
+document: rfc-7178
+kind: state-machine
+summary: 'An RBridge Channel message is discarded and an error returned when: (1) Ethertype is unrecognized, (2) CHV is non-zero or header is truncated, (3) Channel Protocol is reserved or unknown, (4) ERR is non-zero with Protocol not 0x001, or (5) NA flag is set on a TRILL Data frame. At transit RBridges with only Non-critical Alert set, no error is generated and frame is forwarded.'
+section: "3.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

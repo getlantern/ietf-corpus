@@ -1,0 +1,8 @@
+document: rfc-7176
+kind: design-rationale
+summary: PORT-TRILL-VER and TRILL-VER carry disjoint capability bit spaces because some capabilities (e.g., cryptographic hardware assist) can vary per port of an IS and must be advertised in IIHs, while others are IS-wide and belong in LSPs. The TRILL version number is shared between both sub-TLVs, and an adjacent IS prefers PORT-TRILL-VER for version negotiation.
+section: 2.2.4
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

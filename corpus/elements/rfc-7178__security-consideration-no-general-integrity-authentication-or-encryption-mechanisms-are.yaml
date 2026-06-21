@@ -1,0 +1,10 @@
+document: rfc-7178
+kind: security-consideration
+summary: No general integrity, authentication, or encryption mechanisms are provided for RBridge Channel messages. If these services are required for a particular channel protocol, they MUST be supplied by that channel protocol. TRILL provides no protection against forging the Ingress Nickname or Outer.MacSA, which may result in misdirected return responses or error messages.
+section: "8"
+rfc2119_level: MUST
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

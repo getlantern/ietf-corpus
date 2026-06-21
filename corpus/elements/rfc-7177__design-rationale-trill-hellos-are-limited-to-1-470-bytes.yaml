@@ -1,0 +1,8 @@
+document: rfc-7177
+kind: design-rationale
+summary: TRILL Hellos are limited to 1,470 bytes and are not padded to the link MTU (unlike Layer 3 IS-IS which pads Hellos for MTU discovery) because TRILL must assure correct adjacency and DRB election even on links that accommodate only classic Ethernet frame size. MTU discovery is handled separately via explicit MTU-probe/MTU-ack PDUs.
+section: "2.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7177
+kind: state-machine
+summary: 'Adjacency state transitions are driven by events A1–A8: A1 (Hello confirming 2-way) advances toward 2-Way; A2 (Hello received but 2-way not confirmed) sets Detect; A3 (Hello explicitly covering receiver''s address range but not listing receiver) regresses to Detect; A4 (all Hello hold timers expired) transitions to Down; A5 (Designated VLAN timer expired, non-DV timer still running) regresses to Detect; A6 (all enabled connectivity tests succeed) advances to Report; A7 (a previously passing enabled test fails) regresses to 2-Way; A8 (port operationally down) transitions to Down. The special A0 event (self-sourced Hello with higher DRB priority) discards all adjacencies on the port.'
+section: "3.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

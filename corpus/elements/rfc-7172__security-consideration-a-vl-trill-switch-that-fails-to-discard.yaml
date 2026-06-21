@@ -1,0 +1,9 @@
+document: rfc-7172
+kind: security-consideration
+summary: A VL TRILL switch that fails to discard packets with non-0x8100 Ethertype after the Inner.MacSA could egress an FGL packet (X.Y) into VLAN X, violating the security policy requiring configurable separation of differently labeled data. For multi-destination packets, it could also incorrectly prune based on VLAN X, preventing delivery to intended recipients.
+section: "9"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7175
+kind: design-rationale
+summary: TRILL IS-IS Hellos have a minimum failure-detection time of one second and are multicast-only, so some failures (e.g., those that affect unicast while passing multicast) cannot be detected via Hellos. BFD provides a low-overhead mechanism for rapid continuity testing on the TRILL data plane between neighbor RBridges.
+section: "1"
+topics:
+    - routing
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

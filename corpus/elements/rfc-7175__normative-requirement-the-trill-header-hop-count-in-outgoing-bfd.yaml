@@ -1,0 +1,10 @@
+document: rfc-7175
+kind: normative-requirement
+summary: The TRILL Header hop count in outgoing BFD packets MUST be set to the maximum value of 0x3F. For a single-hop session, if the received hop count is less than 0x3F and the RBridge Channel Header MH flag is zero, the packet MUST be discarded to prevent spoofing attacks.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7179
+kind: security-consideration
+summary: The RBridge Channel Alert flags may be erroneously set. If either Channel Alert flag is found set in a frame that is not an RBridge Channel message, the flag MAY be cleared and should otherwise have no effect (except possibly delaying processing). If the flag is erroneously omitted, desired per-hop processing may not occur.
+section: "6"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
