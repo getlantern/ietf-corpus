@@ -1,0 +1,8 @@
+document: rfc-6970
+kind: design-rationale
+summary: When a short-lifetime PCP error occurs (e.g., NETWORK_FAILURE, NO_RESOURCES), the IWF MAY resend the request after 30 seconds without informing the IGD Control Point, because some applications (e.g., uTorrent, Vuze, eMule) wait 90 seconds or more for a UPnP response, giving time for a retry to succeed transparently.
+section: 5.6.1
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

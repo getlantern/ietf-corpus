@@ -1,0 +1,9 @@
+document: rfc-6961
+kind: design-rationale
+summary: The original Certificate Status extension did not provide a way to request status for intermediate CA certificates, forcing clients to use CRLs or direct OCSP queries for those certs and adding extra round trips. The ocsp_multi method was designed to allow the server to staple status responses for the entire certificate chain in one go.
+section: "1"
+topics:
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-6960
+kind: normative-requirement
+summary: When a responder sends a 'revoked' response for a non-issued certificate, it MUST include the extended revoked definition extension (id-pkix-ocsp-extended-revoke), MUST specify revocation reason certificateHold (6), MUST specify revocationTime January 1 1970, and MUST NOT include a CRL references extension or CRL entry extensions.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

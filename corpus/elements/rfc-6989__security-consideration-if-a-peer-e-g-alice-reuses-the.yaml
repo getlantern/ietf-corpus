@@ -1,0 +1,10 @@
+document: rfc-6989
+kind: security-consideration
+summary: If a peer (e.g., Alice) reuses the same ECDH private key across multiple IKE SAs and does not validate received public keys, a malicious peer (Eve) can send a specially crafted invalid public key to efficiently recover Alice's private key via a small-subgroup attack, then derive Alice's shared key with any other peer (Bob).
+section: "4.1"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

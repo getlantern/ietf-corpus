@@ -1,0 +1,11 @@
+document: rfc-6961
+kind: normative-requirement
+summary: Clients receiving one or more OCSP responses in a CertificateStatus message MUST check the responses and abort the handshake with a fatal bad_certificate_status_response(113) alert if any response has a 'revoked' status or other unacceptable status per client policy.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-6980
+kind: security-consideration
+summary: When SEND Certification Path Advertisement messages employ IPv6 fragmentation, an attacker on the same broadcast domain can forge IPv6 fragments to cause Fragment ID collisions, causing both attack and legitimate fragments to be discarded. This can cause Authorization Delegation Discovery to fail, leading the host to fall back to unsecured mode or reject Router Advertisements, resulting in a denial of service.
+section: "3"
+topics:
+    - ip
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

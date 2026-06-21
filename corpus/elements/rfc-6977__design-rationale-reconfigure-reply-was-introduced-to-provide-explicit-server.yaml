@@ -1,0 +1,6 @@
+document: rfc-6977
+kind: design-rationale
+summary: Reconfigure-Reply was introduced to provide explicit server acknowledgment rather than having the relay monitor Reconfigure messages implicitly. The implicit approach can fail when the server accepts the request but delays generating Reconfigure messages due to rate-limiting, or when the request partially fails for some clients.
+section: "4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

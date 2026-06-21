@@ -1,0 +1,9 @@
+document: rfc-6961
+kind: design-rationale
+summary: The existing Certificate Status extension (RFC 6066) only permitted a single status method per extension record, and TLS only allows one record per extension type. This made it impossible for clients to indicate support for new status methods while remaining compatible with older servers, motivating the new status_request_v2 extension with a list-based format.
+section: "1"
+topics:
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6989
+kind: design-rationale
+summary: The failure behavior in Section 2.5 is designed to balance DoS resistance (not requiring error responses, allowing silent drops) against implementation debuggability (allowing INVALID_SYNTAX notifications). The stricter behavior for CREATE_CHILD_SA failures is justified because those exchanges occur within an authenticated IKE SA, so error notifications can be trusted.
+section: "2.5"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

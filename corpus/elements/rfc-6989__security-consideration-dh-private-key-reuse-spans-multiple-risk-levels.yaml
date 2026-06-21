@@ -1,0 +1,10 @@
+document: rfc-6989
+kind: security-consideration
+summary: 'DH private key reuse spans multiple risk levels: (1) reuse across connections to different peers is most dangerous, (2) reuse only within a single peer is somewhat less so, and (3) reuse only on failed exchanges (e.g., after INVALID_KE_PAYLOAD) is the most limited. The small-subgroup and timing attacks apply to at least options 1 and 2.'
+section: "4.2"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

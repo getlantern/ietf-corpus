@@ -1,0 +1,10 @@
+document: rfc-6961
+kind: interoperability-note
+summary: For the 'id-pkix-ocsp-nonce' OCSP extension, RFC 2560 was unclear about encoding. RFC 6961 clarifies (consistent with RFC 6960) that the nonce MUST be a DER-encoded OCTET STRING encapsulated as another OCTET STRING; existing implementations based on OCSP clients must be checked for conformance.
+section: "2.2"
+topics:
+    - tls
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

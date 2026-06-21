@@ -1,0 +1,9 @@
+document: rfc-6989
+kind: design-rationale
+summary: The recipient tests are only REQUIRED for implementations that reuse DH private keys because reuse is what creates the small-subgroup leakage vulnerability; implementations that generate a fresh DH private value per exchange are not vulnerable even without these checks.
+section: "2"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

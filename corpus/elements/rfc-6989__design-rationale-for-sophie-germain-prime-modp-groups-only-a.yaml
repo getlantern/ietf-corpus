@@ -1,0 +1,9 @@
+document: rfc-6989
+kind: design-rationale
+summary: For Sophie Germain Prime MODP groups, only a range check (1 < r < p-1) is needed because (p-1)/2 being prime means any value in this range is either in the full group or the size-2 subgroup {1, p-1}, and even with reuse this leaks at most one bit of the secret exponent—an amount deemed insignificant.
+section: "2.1"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

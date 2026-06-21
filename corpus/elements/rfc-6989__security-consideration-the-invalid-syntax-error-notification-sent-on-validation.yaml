@@ -1,0 +1,9 @@
+document: rfc-6989
+kind: security-consideration
+summary: The INVALID_SYNTAX error notification sent on validation failure leaks no secret information, as all IKEv2 DH groups are publicly known and no test depends on a private key. However, in the IKE_SA_INIT context, the notification is unauthenticated and may have been injected by an attacker for DoS purposes, so the recipient cannot rely on it.
+section: "4.4"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

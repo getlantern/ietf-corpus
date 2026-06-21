@@ -1,0 +1,9 @@
+document: rfc-6980
+kind: design-rationale
+summary: 'Forbidding IPv6 fragmentation in Neighbor Discovery normalizes existing behavior and sets expectations to the lowest common denominator, because: (1) a significant number of existing implementations already silently drop fragmented ND messages; (2) packets large enough to require fragmentation are unlikely in practice; and (3) large ND information can always be split across multiple messages.'
+section: "4"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

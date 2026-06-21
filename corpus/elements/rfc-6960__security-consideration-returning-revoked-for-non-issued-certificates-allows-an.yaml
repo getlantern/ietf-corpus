@@ -1,0 +1,9 @@
+document: rfc-6960
+kind: security-consideration
+summary: Returning 'revoked' for non-issued certificates allows an attacker to predict or guess a serial number that will be issued and pre-obtain a revocation response. CAs using sequential serial numbers are especially vulnerable; using random high-entropy serial numbers mitigates the risk. The certificateHold reason code avoids permanently blocking a serial number.
+section: "5"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

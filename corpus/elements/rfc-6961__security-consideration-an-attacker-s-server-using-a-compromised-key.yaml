@@ -1,0 +1,10 @@
+document: rfc-6961
+kind: security-consideration
+summary: An attacker's server using a compromised key could pretend not to support the status_request_v2 extension. A client that requires OCSP validation SHOULD either contact the OCSP server directly or abort the handshake when the extension is not acknowledged.
+section: "4.1"
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

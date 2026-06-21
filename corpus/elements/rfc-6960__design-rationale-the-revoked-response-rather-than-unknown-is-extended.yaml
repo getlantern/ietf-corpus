@@ -1,0 +1,9 @@
+document: rfc-6960
+kind: design-rationale
+summary: The 'revoked' response (rather than 'unknown') is extended to non-issued certificates so the client rejects the certificate outright rather than falling back to another status source such as a CRL. The 'unknown' response would invite retries, while 'revoked' definitively blocks use of a certificate that was never legitimately issued.
+section: "2.2"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

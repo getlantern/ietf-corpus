@@ -1,0 +1,9 @@
+document: rfc-6961
+kind: design-rationale
+summary: By combining certificate status checks into one extension, the CA server load depends on the number of issued certificates rather than the number of visitors to subscriber sites, addressing cases where direct OCSP requests for a single high-traffic site caused significant network problems for the issuing CA.
+section: "1"
+topics:
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

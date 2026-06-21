@@ -1,0 +1,8 @@
+document: rfc-6970
+kind: interoperability-note
+summary: AddPortMapping() cannot be implemented without the PREFER_FAILURE PCP option, since that option is the mechanism by which the PCP server signals failure when a specific requested external port is unavailable. If the PCP server does not support PREFER_FAILURE, AddPortMapping() cannot function correctly.
+section: "4.3"
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

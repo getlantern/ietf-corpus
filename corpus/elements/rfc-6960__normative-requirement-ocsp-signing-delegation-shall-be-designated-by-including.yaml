@@ -1,0 +1,11 @@
+document: rfc-6960
+kind: normative-requirement
+summary: OCSP signing delegation SHALL be designated by including id-kp-OCSPSigning in the extended key usage extension of the responder's certificate, which MUST be issued directly by the CA identified in the request. Systems relying on OCSP MUST detect and enforce this EKU value and MUST reject responses whose signing certificate fails the authorized responder criteria.
+section: 4.2.2.2
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6977
+kind: security-consideration
+summary: Because Reconfigure-Request can trigger DHCPv6 Reconfigure messages (which can control the timing of DHCPv6 renewal), the server MUST have a mechanism for determining that the relay agent is a trusted entity. DHCPv6 servers and relay agents MUST implement relay message authentication as described in Section 21.1 of RFC 3315.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

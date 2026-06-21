@@ -1,0 +1,10 @@
+document: rfc-6989
+kind: security-consideration
+summary: 'When DH private values are reused, a timing side-channel attack (Kocher, 1996) can recover the exponent. A countermeasure is the blinding factor technique: choose a random group element r, compute r_inv = r^{-1} mod p, then compute A=r·g^y, B=A^x, C=B·r_inv^x = g^{xy}. Blinding is only necessary if the exponent is used more than 100 times.'
+section: "3"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

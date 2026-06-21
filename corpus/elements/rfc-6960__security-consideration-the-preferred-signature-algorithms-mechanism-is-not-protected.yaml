@@ -1,0 +1,10 @@
+document: rfc-6960
+kind: security-consideration
+summary: The preferred signature algorithms mechanism is not protected against a man-in-the-middle downgrade attack. This is accepted because the responder MUST NOT sign with weak algorithms even if requested, and clients MAY independently reject responses that do not meet their cryptographic strength criteria.
+section: 5.1.2
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

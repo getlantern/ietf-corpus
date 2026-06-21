@@ -1,0 +1,9 @@
+document: rfc-6960
+kind: interoperability-note
+summary: HTTP GET may be used for OCSP requests that after base-64 and URL encoding are less than 255 bytes (to enable HTTP caching); larger requests SHOULD use POST with Content-Type application/ocsp-request. Responses use Content-Type application/ocsp-response with the binary DER-encoded OCSPResponse as the body.
+section: A
+topics:
+    - pkix
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

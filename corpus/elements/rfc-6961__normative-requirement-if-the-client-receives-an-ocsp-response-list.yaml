@@ -1,0 +1,10 @@
+document: rfc-6961
+kind: normative-requirement
+summary: If the client receives an ocsp_response_list without a response for one or more certificates in the chain, the client SHOULD attempt to validate the certificate using an alternative retrieval method such as downloading the relevant CRL; OCSP SHOULD only be used for the end-entity certificate in this situation.
+section: "2.2"
+rfc2119_level: SHOULD
+topics:
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
