@@ -1,0 +1,9 @@
+document: rfc-6955
+kind: protocol-element
+summary: The Static DH POP algorithm establishes proof-of-possession by computing a shared DH secret ZZ = g^(x*y) mod p, deriving a temporary key K = KDF(LeadingInfo | ZZ | TrailingInfo), and producing MAC(K, text) where LeadingInfo is the Subject DN and TrailingInfo is the Issuer DN from the recipient's certificate.
+section: "4"
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

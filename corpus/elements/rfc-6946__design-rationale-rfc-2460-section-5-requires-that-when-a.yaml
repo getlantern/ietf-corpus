@@ -1,0 +1,10 @@
+document: rfc-6946
+kind: design-rationale
+summary: RFC 2460 Section 5 requires that when a host receives an ICMPv6 Packet Too Big message with a Next-Hop MTU smaller than 1280, it must include a Fragment Header in all subsequent packets to that destination rather than reducing packet size below the IPv6 minimum MTU. This enables IPv6-to-IPv4 translating routers to obtain a suitable Fragment Identification value for resulting IPv4 fragments.
+section: "3"
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

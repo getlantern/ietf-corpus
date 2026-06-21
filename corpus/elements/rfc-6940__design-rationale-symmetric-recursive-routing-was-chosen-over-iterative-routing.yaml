@@ -1,0 +1,8 @@
+document: rfc-6940
+kind: design-rationale
+summary: Symmetric recursive routing was chosen over iterative routing because it naturally supports NAT traversal (responses follow the existing request path without the responder initiating a new connection), keeps state low on intermediate peers, and allows re-routing in unstable topologies via end-to-end retransmission.
+section: A.1
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

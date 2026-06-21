@@ -1,0 +1,9 @@
+document: rfc-6955
+kind: protocol-element
+summary: 'The Static ECDH POP algorithm mirrors the Static DH POP process but uses elliptic curve operations: shared secret ZZ is the x-coordinate of the point Epriv * Rpub, key K is derived as KDF(LeadingInfo | ZZ | TrailingInfo), and the POP value is MAC(K, text) encoded in DhSigStatic.'
+section: "6"
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

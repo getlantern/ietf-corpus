@@ -1,0 +1,9 @@
+document: rfc-6951
+kind: design-rationale
+summary: Each SCTP stack uses a single local UDP encapsulation port number as the destination for all incoming SCTP packets. Using a single port greatly simplifies implementation because multiple per-address ports would require the sender to choose the correct port during source address selection.
+section: "5.1"
+topics:
+    - sctp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

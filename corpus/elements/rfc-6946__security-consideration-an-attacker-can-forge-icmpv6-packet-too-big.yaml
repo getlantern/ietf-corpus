@@ -1,0 +1,10 @@
+document: rfc-6946
+kind: security-consideration
+summary: An attacker can forge ICMPv6 Packet Too Big messages advertising a Next-Hop MTU smaller than 1280 to remotely trigger atomic fragment generation in target hosts. The attacker can then forge fragments with matching {IPv6 Source Address, IPv6 Destination Address, Fragment Identification} tuples that get incorrectly reassembled with the atomic fragment, causing packet drops or enabling firewall bypass.
+section: "3"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,11 @@
+document: rfc-6951
+kind: normative-requirement
+summary: When using UDP encapsulation for legacy NAT traversal, IP addresses that might require translation MUST NOT be put into any SCTP packet. A multihomed association must be set up initially as single-homed, and RFC 5061 with RFC 4895 must be used with wildcard addresses only to add additional addresses.
+section: "5.7"
+rfc2119_level: MUST NOT
+topics:
+    - sctp
+    - nat
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-6957
+kind: state-machine
+summary: 'The DAD-Proxy state machine (Appendix A) defines four states/events: DAD-NS reception (no entry → create entry; entry exists → Existing Entry event), Existing Entry (same L2 → no action; different L2 → Conflict? event), Conflict? (in NC with correct L2 → Reachable? event; not in NC → create STALE NC entry, then Reachable? event), Reachable? (NUD negative → update Binding Table to CPE2; NUD positive → send NA).'
+section: A
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

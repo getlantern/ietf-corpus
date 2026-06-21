@@ -1,0 +1,8 @@
+document: rfc-6940
+kind: design-rationale
+summary: The Message Transport layer omits end-to-end congestion control because RELOAD is a request-response protocol with at most two request-response pairs per typical transaction, providing no opportunity to observe and react to congestion. Congestion control is handled at the link layer between overlay neighbors.
+section: 1.2.2
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

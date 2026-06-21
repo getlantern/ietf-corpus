@@ -1,0 +1,10 @@
+document: rfc-6951
+kind: normative-requirement
+summary: If an SCTP endpoint starts to encapsulate the packets of a path, it MUST decrease the Path MTU of that path by the size of the UDP header. PMTU discovery using ICMP feedback cannot be relied upon due to the ICMP limitations described in Section 5.5.
+section: "5.6"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

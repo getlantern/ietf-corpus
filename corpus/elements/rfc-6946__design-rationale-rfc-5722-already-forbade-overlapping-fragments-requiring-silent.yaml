@@ -1,0 +1,10 @@
+document: rfc-6946
+kind: design-rationale
+summary: 'RFC 5722 already forbade overlapping fragments (requiring silent discard of all fragments in a colliding set), but this rule paradoxically worsened the atomic-fragment attack: an attacker could forge a colliding fragment to cause an RFC 5722-compliant implementation to silently discard legitimate atomic fragments. Isolating atomic fragment processing supersedes this interaction.'
+section: "1"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

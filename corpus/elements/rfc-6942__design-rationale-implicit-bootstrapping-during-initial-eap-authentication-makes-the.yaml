@@ -1,0 +1,9 @@
+document: rfc-6942
+kind: design-rationale
+summary: Implicit bootstrapping (during initial EAP authentication) makes the ER server immediately available for re-authentication but wastes resources deriving keys for peers that may never use ERP. Explicit bootstrapping (during first re-authentication) is more resource-efficient but requires a round trip to the home EAP server, increasing first re-authentication latency.
+section: "5"
+topics:
+    - diameter
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

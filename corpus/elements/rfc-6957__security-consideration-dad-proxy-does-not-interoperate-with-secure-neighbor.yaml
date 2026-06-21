@@ -1,0 +1,11 @@
+document: rfc-6957
+kind: security-consideration
+summary: DAD-Proxy does not interoperate with SEcure Neighbor Discovery (SEND, RFC 3971) because the BNG does not hold the private key of the CGA needed to sign proxied ND messages. RFC 6496 (Secure Proxy ND Support for SEND) SHOULD be implemented on both BNG and CPEs to address this.
+section: "6.1"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - ip
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

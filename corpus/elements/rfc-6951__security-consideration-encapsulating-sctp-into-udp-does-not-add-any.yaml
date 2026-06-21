@@ -1,0 +1,10 @@
+document: rfc-6951
+kind: security-consideration
+summary: Encapsulating SCTP into UDP does not add any security considerations beyond those in RFC 4960 and RFC 5061. An attacker attempting to change the encapsulation port for a remote address must supply a valid verification tag, providing the same blind-attacker protection as native SCTP.
+section: "8"
+topics:
+    - sctp
+    - udp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

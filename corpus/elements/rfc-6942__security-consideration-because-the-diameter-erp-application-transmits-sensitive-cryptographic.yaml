@@ -1,0 +1,13 @@
+document: rfc-6942
+kind: security-consideration
+summary: Because the Diameter ERP application transmits sensitive cryptographic key material (rRK, rMSK), all transport MUST be protected using TLS, DTLS, or IPsec ESP. If TLS or DTLS is used, the bulk encryption algorithm negotiated MUST be non-null; if ESP is used, the encryption algorithm MUST also be non-null.
+section: "11"
+rfc2119_level: MUST
+topics:
+    - security
+    - tls
+    - ipsec
+    - crypto
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

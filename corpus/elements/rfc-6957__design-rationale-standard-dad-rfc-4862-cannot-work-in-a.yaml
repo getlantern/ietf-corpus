@@ -1,0 +1,9 @@
+document: rfc-6957
+kind: design-rationale
+summary: Standard DAD (RFC 4862) cannot work in a point-to-multipoint network with a split-horizon forwarding scheme because the Access Node forwards NS messages only to the BNG, never to other CPEs, so a CPE performing DAD never receives a reply from a conflicting peer.
+section: "3.1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

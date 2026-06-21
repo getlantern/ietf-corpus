@@ -1,0 +1,10 @@
+document: rfc-6945
+kind: normative-requirement
+summary: The management agent MUST throttle consecutive rpkiRtrCacheServerConnectionStateChange notifications so that there is at least a 5-second gap between them; if multiple events occur within that window, only the most recent is sent and the others are discarded.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

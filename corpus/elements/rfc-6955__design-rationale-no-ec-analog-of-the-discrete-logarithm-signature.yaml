@@ -1,0 +1,9 @@
+document: rfc-6955
+kind: design-rationale
+summary: No EC analog of the Discrete Logarithm Signature (ECDSA-like DH POP) was defined because ECDH keys use predefined named curves paired with specific hash algorithms; if a key can perform ECDSA it should use the correctly sized hash directly, making a modified variant unnecessary unlike the DH case where group parameters are typically aligned to encryption rather than hash sizes.
+section: "1"
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

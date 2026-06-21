@@ -1,0 +1,10 @@
+document: rfc-6946
+kind: design-rationale
+summary: 'Processing IPv6 atomic fragments as regular fragmented packets (as done by many implementations) is the root cause of the attack vector: it allows malicious injected fragments to collide with legitimate atomic-fragment traffic in the reassembly queue. Processing atomic fragments in isolation completely eliminates this vector.'
+section: "5"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

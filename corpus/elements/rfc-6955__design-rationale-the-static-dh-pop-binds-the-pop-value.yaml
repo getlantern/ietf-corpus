@@ -1,0 +1,10 @@
+document: rfc-6955
+kind: design-rationale
+summary: The Static DH POP binds the POP value to a specific recipient by incorporating the recipient's Subject DN as LeadingInfo and Issuer DN as TrailingInfo in the KDF input. This means only the intended CA can verify the request, protecting the entity from rogue CAs that might intercept the certification request.
+section: "4"
+topics:
+    - crypto
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
