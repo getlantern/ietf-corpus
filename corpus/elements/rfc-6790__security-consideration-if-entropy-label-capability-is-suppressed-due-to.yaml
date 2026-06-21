@@ -1,0 +1,9 @@
+document: rfc-6790
+kind: security-consideration
+summary: If Entropy Label Capability is suppressed due to misconfiguration or malicious activity on an egress PE, the network falls back to load balancing without entropy labels, which is no worse than current production behavior. Operators should monitor PE configuration changes and the fairness of load distribution over LAG or ECMP paths.
+section: "9"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

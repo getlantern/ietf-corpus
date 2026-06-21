@@ -1,0 +1,10 @@
+document: rfc-6785
+kind: security-consideration
+summary: Script processing loops can arise when a flag-change-triggered script uses imap4flags actions to further change flags. Implementations MUST prevent such loops; the recommended approach is that flag changes made by a flag-triggered script SHOULD NOT themselves trigger a new script invocation. Similarly, 'fileinto' must never trigger a subsequent script invocation to prevent cross-mailbox redirect loops.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

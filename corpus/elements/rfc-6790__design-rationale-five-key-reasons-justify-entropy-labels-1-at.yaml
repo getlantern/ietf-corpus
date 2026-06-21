@@ -1,0 +1,8 @@
+document: rfc-6790
+kind: design-rationale
+summary: 'Five key reasons justify entropy labels: (1) at ingress, MPLS encapsulation hasn''t occurred so deep inspection is unnecessary; (2) ingress LSRs have more context about packet contents; (3) ingress LSRs operate at lower bandwidths, allowing more per-packet work; (4) transit LSRs can load balance using only the label stack; and (5) transit LSRs are relieved of the risky choice between misinterpreting packet fields or adopting conservative (suboptimal) load balancing.'
+section: "1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

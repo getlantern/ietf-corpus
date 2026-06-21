@@ -1,0 +1,9 @@
+document: rfc-6790
+kind: security-consideration
+summary: There is little risk of entropy label forgery since end-users have no control over EL values. However, if EL values are computed solely from packet headers, a wiretapping side-channel becomes possible. Implementations should add a random or secret input to EL generation; many ECMP hashing algorithms already include a random factor to avoid polarization.
+section: "9"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

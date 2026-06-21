@@ -1,0 +1,8 @@
+document: rfc-6785
+kind: design-rationale
+summary: Only one Sieve script is allowed per mailbox to eliminate complexity and ambiguity from coordinating multiple scripts. Any sub-filtering (e.g., acting only on flag changes and not APPEND) is handled inside the single script by checking the 'imap.cause' environment item.
+section: 2.3.1
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

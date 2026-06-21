@@ -1,0 +1,8 @@
+document: rfc-6790
+kind: design-rationale
+summary: The Entropy Label Indicator (ELI) approach was chosen over (1) allocating label pairs per FEC (which doubles control and data plane state) and (2) restricting EL placement to unambiguous positions (too restrictive). The trade-off is increasing label stack depth by two entries (ELI + EL) per tunnel rather than multiplying forwarding state.
+section: "2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

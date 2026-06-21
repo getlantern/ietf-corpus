@@ -1,0 +1,8 @@
+document: rfc-6790
+kind: state-machine
+summary: 'Ingress LSR EL insertion has five steps: (1) identify application, select fields, compute load-balancing hash LB; (2) push application label AL; (3) determine egress, tunnel, next-hop interface, and generate EL from LB; (4) push <TL, ELI, EL> if egress signaled ELC, else push <TL> only; (5) repeat from step 3 for additional tunnel hierarchy layers.'
+section: "4.2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

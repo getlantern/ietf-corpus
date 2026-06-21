@@ -1,0 +1,9 @@
+document: rfc-6787
+kind: normative-requirement
+summary: Clients MUST utilize monotonically increasing request-ids for consecutive requests within an MRCP session. The request-id space is linear (not mod 32) and does not wrap. If the server receives duplicate or out-of-order requests, it MUST reject them with response code 410.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

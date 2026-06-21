@@ -1,0 +1,8 @@
+document: rfc-6785
+kind: interoperability-note
+summary: When messages are processed under IMAP events, delivery envelope information may be absent. Sieve actions that rely on envelope data (such as the 'envelope' test) are prohibited. The 'redirect' action must cope with missing information by using message submission and synthesizing MAIL FROM from the mailbox owner's address.
+section: "1.2"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

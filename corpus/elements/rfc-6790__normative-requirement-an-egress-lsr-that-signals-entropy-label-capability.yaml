@@ -1,0 +1,9 @@
+document: rfc-6790
+kind: normative-requirement
+summary: An egress LSR that signals Entropy Label Capability MUST be prepared to handle both packets with an imposed EL (identified by ELI) and those without. Upon receiving <TL, ELI, EL>, it pops TL, recognizes ELI, pops both ELI and EL, and processes the remaining header normally.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

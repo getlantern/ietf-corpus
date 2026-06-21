@@ -1,0 +1,10 @@
+document: rfc-6790
+kind: normative-requirement
+summary: A BGP speaker that changes the NEXT_HOP attribute and pops the entire label stack in the data plane MUST remove the ELC attribute unless it can itself process entropy labels and sets NEXT_HOP to itself. Route Reflectors that do not change NEXT_HOP may re-advertise ELC unchanged.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

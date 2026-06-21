@@ -1,0 +1,9 @@
+document: rfc-6786
+kind: security-consideration
+summary: AES-CTR nonce uniqueness-per-key is guaranteed as long as the PANA sequence number does not wrap. When the sequence number approaches wraparound, re-authentication is mandated to generate a fresh MSK and new encryption keys.
+section: "7.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

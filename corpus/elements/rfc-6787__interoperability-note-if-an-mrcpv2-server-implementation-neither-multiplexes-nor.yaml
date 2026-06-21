@@ -1,0 +1,10 @@
+document: rfc-6787
+kind: interoperability-note
+summary: If an MRCPv2 server implementation neither multiplexes nor mixes multiple resource streams onto a single audio session, it MUST reject the SDP offer with SIP 488. New implementations SHOULD treat a legacy SIP 501 response in this context as equivalent to a 488, to maintain interoperability with a large installed base that returns 501.
+section: "4.4"
+rfc2119_level: SHOULD
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

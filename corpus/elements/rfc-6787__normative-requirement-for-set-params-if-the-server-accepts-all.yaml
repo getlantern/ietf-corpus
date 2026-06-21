@@ -1,0 +1,9 @@
+document: rfc-6787
+kind: normative-requirement
+summary: For SET-PARAMS, if the server accepts all parameters it MUST return 200; if it ignores optional header fields it MUST return 201. Error 403 takes priority over 409; error 404 takes priority over both. Error responses MUST echo back the bad or unsupported header fields exactly as sent.
+section: 6.1.1
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
