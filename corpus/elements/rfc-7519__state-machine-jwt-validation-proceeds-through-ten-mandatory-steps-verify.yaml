@@ -1,0 +1,9 @@
+document: rfc-7519
+kind: state-machine
+summary: 'JWT validation proceeds through ten mandatory steps: verify presence of at least one period; extract and base64url-decode the JOSE Header; verify it is a valid UTF-8 JSON object; verify supported parameters; determine JWS or JWE; validate per JWS/JWE spec; handle nested JWT via "cty":"JWT" recursion; decode the Message; verify it is a valid UTF-8 JSON object as the JWT Claims Set. Any step failure means the JWT MUST be rejected.'
+section: "7.2"
+topics:
+    - jose
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

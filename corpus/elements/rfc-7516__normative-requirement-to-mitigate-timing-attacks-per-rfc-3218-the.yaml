@@ -1,0 +1,11 @@
+document: rfc-7516
+kind: normative-requirement
+summary: To mitigate timing attacks (per RFC 3218), the recipient MUST NOT distinguish between format, padding, and length errors of encrypted keys. Upon receiving an improperly formatted key, it is strongly recommended the recipient substitute a randomly generated CEK and proceed to the next step.
+section: "11.5"
+rfc2119_level: MUST NOT
+topics:
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

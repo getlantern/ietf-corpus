@@ -1,0 +1,10 @@
+document: rfc-7516
+kind: security-consideration
+summary: JWE implementations must guard against adaptive chosen-ciphertext attacks. All formatting errors related to CEK, AAD, or ciphertext MUST be reported as a single unified error to prevent oracle attacks. Restricting a key to a single algorithm (e.g., 'RSA-OAEP' only) prevents downgrade attacks that substitute 'RSA1_5'.
+section: "11.4"
+topics:
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7517
+kind: security-consideration
+summary: RSA key blinding (a defense against timing attacks) requires all of the values "n", "e", and "d". RSA private key representations that omit the public exponent "e" (such as Java's RSAPrivateKeySpec) should be avoided; RSAPrivateCrtKeySpec is preferred.
+section: "9.3"
+topics:
+    - jose
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

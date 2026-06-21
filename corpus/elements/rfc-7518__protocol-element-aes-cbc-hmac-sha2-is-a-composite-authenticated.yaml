@@ -1,0 +1,9 @@
+document: rfc-7518
+kind: protocol-element
+summary: 'AES_CBC_HMAC_SHA2 is a composite authenticated encryption family using AES-CBC (PKCS#7 padding) plus HMAC. The input key K is split: MAC_KEY occupies the initial half, ENC_KEY the final half. MAC input is A || IV || E || AL (where AL is the 64-bit big-endian bit-length of AAD), and the tag is the first T_LEN octets of the HMAC output.'
+section: 5.2.2
+topics:
+    - jose
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

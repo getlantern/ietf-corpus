@@ -1,0 +1,10 @@
+document: rfc-7518
+kind: security-consideration
+summary: RSAES-PKCS1-v1_5 (RSA1_5) is vulnerable to adaptive chosen-ciphertext attacks (Bleichenbacher attack). Implementations MUST use constant-time decryption and random padding checks to mitigate this; its Implementation Requirement is marked Recommended- indicating likely future deprecation.
+section: "8.3"
+topics:
+    - jose
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

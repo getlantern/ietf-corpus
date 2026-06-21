@@ -1,0 +1,11 @@
+document: rfc-7518
+kind: normative-requirement
+summary: For PBES2 key encryption, a Salt Input value containing 8 or more octets MUST be used, and a new Salt Input MUST be generated randomly for every encryption operation. The actual PBKDF2 salt is UTF8(Alg) || 0x00 || Salt Input.
+section: 4.8.1.1
+rfc2119_level: MUST
+topics:
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

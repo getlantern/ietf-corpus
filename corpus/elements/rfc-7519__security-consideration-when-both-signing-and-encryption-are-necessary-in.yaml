@@ -1,0 +1,10 @@
+document: rfc-7519
+kind: security-consideration
+summary: When both signing and encryption are necessary in a Nested JWT, producers should sign first and then encrypt the result (encrypting the signature). This prevents signature-stripping attacks, provides signer privacy, and avoids jurisdictional issues with signatures over encrypted text.
+section: "11.2"
+topics:
+    - jose
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7518
+kind: design-rationale
+summary: In the AES_CBC_HMAC_SHA2 key K, the MAC key occupies the initial (first) octets and the ENC key occupies the final octets — the opposite order from the algorithm name 'AES_CBC_HMAC_SHA2'. This non-obvious ordering is explicitly called out in the specification to prevent implementation errors.
+section: 5.2.2.1
+topics:
+    - jose
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

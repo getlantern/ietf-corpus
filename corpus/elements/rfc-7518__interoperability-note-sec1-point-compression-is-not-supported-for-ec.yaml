@@ -1,0 +1,9 @@
+document: rfc-7518
+kind: interoperability-note
+summary: SEC1 point compression is not supported for EC keys (P-256, P-384, P-521) represented as JWKs. Some cryptographic libraries prefix an extra zero-valued octet to RSA modulus representations (e.g., 257 octets for a 2048-bit key); implementations must omit this extra octet from Base64urlUInt encoding.
+section: 6.2.1.1
+topics:
+    - jose
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

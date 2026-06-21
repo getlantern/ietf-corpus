@@ -1,0 +1,10 @@
+document: rfc-7518
+kind: security-consideration
+summary: AES GCM is vulnerable to catastrophic failure if an IV is ever reused with the same key. For AES GCM content encryption, a 96-bit IV is required and must never be reused; direct encryption ('dir') with AES GCM requires careful IV management over the key's lifetime.
+section: "8.4"
+topics:
+    - jose
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

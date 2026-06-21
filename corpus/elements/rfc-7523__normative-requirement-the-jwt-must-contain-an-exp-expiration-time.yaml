@@ -1,0 +1,11 @@
+document: rfc-7523
+kind: normative-requirement
+summary: The JWT MUST contain an 'exp' (expiration time) claim limiting the window during which the JWT can be used. The authorization server MUST reject any JWT whose expiration time has passed, subject to allowable clock skew; the server MAY also reject JWTs with an 'exp' unreasonably far in the future.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

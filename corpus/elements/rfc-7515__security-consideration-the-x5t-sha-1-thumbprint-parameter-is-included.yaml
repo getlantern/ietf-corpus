@@ -1,0 +1,11 @@
+document: rfc-7515
+kind: security-consideration
+summary: The 'x5t' SHA-1 thumbprint parameter is included for compatibility reasons only. An attacker with write access to a certificate store could create a colliding certificate; use of 'x5t#S256' (SHA-256) is preferred where possible.
+section: "10.11"
+topics:
+    - jose
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

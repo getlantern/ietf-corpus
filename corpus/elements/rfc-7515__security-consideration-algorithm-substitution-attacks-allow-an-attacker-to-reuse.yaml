@@ -1,0 +1,10 @@
+document: rfc-7515
+kind: security-consideration
+summary: 'Algorithm substitution attacks allow an attacker to reuse an existing signature value with a different algorithm. Mitigations include: using only algorithms not vulnerable to substitution (all JWA-defined algorithms use SHA-2), requiring ''alg'' in the JWS Protected Header, and including the algorithm in the application payload for independent verification.'
+section: "10.7"
+topics:
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

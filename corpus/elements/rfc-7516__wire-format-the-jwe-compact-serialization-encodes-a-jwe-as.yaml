@@ -1,0 +1,10 @@
+document: rfc-7516
+kind: wire-format
+summary: 'The JWE Compact Serialization encodes a JWE as five base64url-encoded segments separated by four period characters: BASE64URL(UTF8(JWE Protected Header)) || ''.'' || BASE64URL(JWE Encrypted Key) || ''.'' || BASE64URL(JWE Initialization Vector) || ''.'' || BASE64URL(JWE Ciphertext) || ''.'' || BASE64URL(JWE Authentication Tag). Only one recipient is supported and no unprotected headers or AAD can be represented.'
+section: "7.1"
+topics:
+    - jose
+    - json
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

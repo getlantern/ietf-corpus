@@ -1,0 +1,9 @@
+document: rfc-7518
+kind: security-consideration
+summary: Unsecured JWSs (alg='none') provide no integrity protection. Applications accepting them are vulnerable to downgrade attacks where an attacker strips a valid signature and presents an unsigned token. Per-object acceptance control is required to mitigate this.
+section: "8.5"
+topics:
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

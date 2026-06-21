@@ -1,0 +1,9 @@
+document: rfc-7516
+kind: interoperability-note
+summary: JWS and JWE objects can be distinguished by segment count in compact serialization (JWS has 3 segments/2 periods; JWE has 5 segments/4 periods), by JSON member presence ('payload' for JWS, 'ciphertext' for JWE), or by the 'alg' value (signature/MAC/none → JWS; key management algorithm → JWE). Presence of 'enc' member also signals JWE.
+section: "9"
+topics:
+    - jose
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

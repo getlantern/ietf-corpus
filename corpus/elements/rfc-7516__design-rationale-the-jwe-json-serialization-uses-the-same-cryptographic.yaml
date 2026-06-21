@@ -1,0 +1,9 @@
+document: rfc-7516
+kind: design-rationale
+summary: 'The JWE JSON Serialization uses the same cryptographic computations as the JWE Compact Serialization: each per-recipient JWE Encrypted Key is identical to what would be computed in Compact Serialization for the same parameters, and all recipients share the same ciphertext and Authentication Tag, yielding significant space savings for large messages.'
+section: 7.2.1
+topics:
+    - jose
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
