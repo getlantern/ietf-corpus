@@ -1,0 +1,10 @@
+document: rfc-7200
+kind: normative-requirement
+summary: A notifier MUST send a NOTIFY request with its current load-filtering policy to the subscriber upon successfully accepting or refreshing a subscription. If no policy exists, the notifier SHOULD send a NOTIFY without a body, but the Content-Type header MUST still indicate the correct body format.
+section: "4.7"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

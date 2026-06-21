@@ -1,0 +1,10 @@
+document: rfc-7198
+kind: design-rationale
+summary: Temporal redundancy interleaves duplicate packets with a delay so that if a packet is lost in transit, the duplicate (sent later) still arrives; the probability that the same packet is lost twice under non-congestive conditions is small. Spatial redundancy routes the two streams over physically diverse paths, making unrecoverable loss possible only when both paths fail simultaneously.
+section: "3.3"
+topics:
+    - rtp
+    - realtime
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

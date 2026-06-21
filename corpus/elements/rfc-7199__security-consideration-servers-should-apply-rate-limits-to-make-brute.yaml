@@ -1,0 +1,8 @@
+document: rfc-7199
+kind: security-consideration
+summary: Servers SHOULD apply rate limits to make brute-force guessing infeasible. If N bits of entropy are used with lifetime T seconds, the server should limit clients to (2^(N/2))/T queries per second, bounding the probability of URI compromise over its lifetime.
+section: "7.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

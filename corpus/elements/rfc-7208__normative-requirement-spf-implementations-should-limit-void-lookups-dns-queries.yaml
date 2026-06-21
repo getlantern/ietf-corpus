@@ -1,0 +1,11 @@
+document: rfc-7208
+kind: normative-requirement
+summary: SPF implementations SHOULD limit 'void lookups' (DNS queries returning RCODE 0 with zero answers, or RCODE 3) to two per check_host() evaluation. Exceeding this limit produces a 'permerror' result; the default of two is RECOMMENDED when this limit is configurable.
+section: 4.6.4
+rfc2119_level: SHOULD
+topics:
+    - email
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

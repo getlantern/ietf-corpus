@@ -1,0 +1,10 @@
+document: rfc-7200
+kind: security-consideration
+summary: 'The "redirect" action can facilitate a reflection DoS attack: an attacker spoofing a central server''s address could send NOTIFY bodies instructing proxy servers to redirect all calls to a victim outside the Trust Domain. Mitigation requires the Trust Domain to agree on permitted redirect destinations in advance, as specified in Section 3.4.'
+section: "7"
+topics:
+    - sip
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

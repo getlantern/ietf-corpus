@@ -1,0 +1,11 @@
+document: rfc-7198
+kind: design-rationale
+summary: SRTP encryption does not affect stream de-duplication middleboxes because RTP headers (including SSRC and sequence number fields needed for duplicate identification) are sent in the clear, allowing middleboxes to perform de-duplication without requiring decryption keys.
+section: "8"
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

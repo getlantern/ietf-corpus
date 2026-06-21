@@ -1,0 +1,10 @@
+document: rfc-7208
+kind: privacy-consideration
+summary: Macros that expand to the sender's local-part (%{l}) or full address (%{s}) cause DNS queries containing private email addresses, exposing them in resolver logs and potentially to third-party DNS operators. The %{p} macro additionally triggers reverse DNS lookups revealing the connecting IP address.
+section: "11.6"
+topics:
+    - email
+    - privacy
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

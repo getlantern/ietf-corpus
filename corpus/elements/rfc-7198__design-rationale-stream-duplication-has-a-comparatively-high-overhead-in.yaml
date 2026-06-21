@@ -1,0 +1,9 @@
+document: rfc-7198
+kind: design-rationale
+summary: Stream duplication has a comparatively high overhead in terms of bandwidth (everything sent twice) but low processing overhead and very predictable cost proportional to minimum session bandwidth, independent of the number of receivers experiencing loss. Retransmission-based recovery (RFC 4588) and FEC (RFC 6363) are identified as alternatives for other scenarios.
+section: "1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

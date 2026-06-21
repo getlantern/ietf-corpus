@@ -1,0 +1,10 @@
+document: rfc-7208
+kind: design-rationale
+summary: When the PTR lookup limit is exceeded, all extra records are ignored rather than producing 'permerror' (unlike the MX limit) because PTR records are controlled by the owner of the connecting IP — potentially an adversary — while MX records are controlled by the publishing ADMD.
+section: 4.6.4
+topics:
+    - email
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

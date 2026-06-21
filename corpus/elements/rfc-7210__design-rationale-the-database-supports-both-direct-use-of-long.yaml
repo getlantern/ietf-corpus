@@ -1,0 +1,9 @@
+document: rfc-7210
+kind: design-rationale
+summary: The database supports both direct use of long-lived keys and use via a key derivation function to produce short-lived keys, because some security protocols use the long-lived key directly while others derive short-term session keys. The KDF field set to 'none' indicates direct use.
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

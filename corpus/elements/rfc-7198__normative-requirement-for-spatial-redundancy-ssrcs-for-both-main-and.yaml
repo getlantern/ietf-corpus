@@ -1,0 +1,10 @@
+document: rfc-7198
+kind: normative-requirement
+summary: For spatial redundancy, SSRCs for both main and duplicate streams MUST be chosen randomly following RFC 3550 Section 8 and will almost certainly not match. The sender MUST use the same RTCP CNAME for both streams. Duplication is signaled using 'a=group:DUP' or 'a=ssrc-group:DUP'.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

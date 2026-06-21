@@ -1,0 +1,9 @@
+document: rfc-7198
+kind: interoperability-note
+summary: The SSRC listed first in 'a=ssrc-group:DUP' is advisably sent first as the primary stream, but a receiver should size its playout buffer based on the 'duplication-delay' attribute and play whichever stream arrives first, treating the other as a repair stream, regardless of signaling order.
+section: "4.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

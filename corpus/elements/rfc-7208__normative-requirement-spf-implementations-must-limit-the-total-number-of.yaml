@@ -1,0 +1,11 @@
+document: rfc-7208
+kind: normative-requirement
+summary: SPF implementations MUST limit the total number of DNS-querying terms (include, a, mx, ptr, exists, redirect) to 10 during SPF evaluation to avoid unreasonable DNS load. Exceeding this limit MUST return 'permerror'.
+section: 4.6.4
+rfc2119_level: MUST
+topics:
+    - email
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

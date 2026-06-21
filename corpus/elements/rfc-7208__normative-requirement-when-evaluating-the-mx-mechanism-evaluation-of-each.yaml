@@ -1,0 +1,10 @@
+document: rfc-7208
+kind: normative-requirement
+summary: When evaluating the 'mx' mechanism, evaluation of each MX record MUST NOT result in querying more than 10 address records (A or AAAA); exceeding this limit MUST produce 'permerror'. For 'ptr', records beyond the first 10 MUST be ignored rather than producing an error.
+section: 4.6.4
+rfc2119_level: MUST
+topics:
+    - email
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

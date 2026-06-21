@@ -1,0 +1,10 @@
+document: rfc-7200
+kind: normative-requirement
+summary: For each NOTIFY transaction, a version number that increases by exactly one MUST be included in the NOTIFY request body when the body is present. Versions MUST be representable using a non-negative 32-bit integer. If a subscriber receives a NOTIFY with a version gap greater than one, it must resend a SUBSCRIBE to force a full state snapshot.
+section: "4.11"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

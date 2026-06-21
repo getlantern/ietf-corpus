@@ -1,0 +1,11 @@
+document: rfc-7198
+kind: normative-requirement
+summary: For temporal redundancy, the main and duplicate RTP streams SHOULD be sent using the same 5-tuple (transport protocol, source/destination IP addresses, source/destination ports). Use of anything other than an identical 5-tuple and flow label is NOT RECOMMENDED unless the path is known to be free of NAPT devices, load balancers, or other middleboxes, since non-identical 5-tuples may introduce unintended spatial redundancy and additional path-delay delta.
+section: "4"
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
