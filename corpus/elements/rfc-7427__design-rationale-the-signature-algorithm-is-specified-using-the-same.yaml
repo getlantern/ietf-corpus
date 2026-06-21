@@ -1,0 +1,10 @@
+document: rfc-7427
+kind: design-rationale
+summary: The signature algorithm is specified using the same ASN.1 AlgorithmIdentifier format used in PKIX (RFC 5280), encoded in DER, placed before the actual signature. This allows the OID to identify both the signature algorithm and the hash function, and enables simple implementations to treat the ASN.1 object as a binary blob compared against a fixed set of known values without needing a full ASN.1 parser.
+section: "3"
+topics:
+    - ipsec
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

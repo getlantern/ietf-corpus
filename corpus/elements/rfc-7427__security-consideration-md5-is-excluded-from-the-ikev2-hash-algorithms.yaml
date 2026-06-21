@@ -1,0 +1,10 @@
+document: rfc-7427
+kind: security-consideration
+summary: MD5 is excluded from the IKEv2 Hash Algorithms registry because it is not considered safe for signature use. The existing IKEv2 RSASSA-PKCS1-v1_5 method has known security vulnerabilities; the new Digital Signature method enables use of RSASSA-PSS and other more secure padding methods. The existing DSS/SHA-1-only method is also replaced, allowing longer keys and hashes.
+section: "6"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

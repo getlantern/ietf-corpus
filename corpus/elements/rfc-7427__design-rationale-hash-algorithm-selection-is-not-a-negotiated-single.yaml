@@ -1,0 +1,9 @@
+document: rfc-7427
+kind: design-rationale
+summary: Hash algorithm selection is not a negotiated single common value; each direction independently picks a hash algorithm from the other peer's advertised list. This avoids a mandatory intersection step and allows asymmetric algorithm use, simplifying the protocol while still ensuring each side uses a peer-accepted algorithm.
+section: "4"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

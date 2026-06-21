@@ -1,0 +1,10 @@
+document: rfc-7432
+kind: protocol-element
+summary: For fast convergence, each PE advertises Ethernet A-D per ES routes for each locally attached Ethernet segment. Upon a failure, the PE withdraws these routes, causing all receiving PEs to update next-hop adjacencies for all MAC addresses on that segment in a single BGP operation rather than per-MAC withdrawals.
+section: "8.2"
+topics:
+    - bgp
+    - routing
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

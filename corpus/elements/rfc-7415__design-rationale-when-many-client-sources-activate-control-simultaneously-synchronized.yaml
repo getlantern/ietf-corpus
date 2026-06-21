@@ -1,0 +1,10 @@
+document: rfc-7415
+kind: design-rationale
+summary: When many client sources activate control simultaneously, synchronized bucket occupancies can cause batched arrivals ('resonance') at the server, leading to control instability, poor delays, and lost messages. Randomizing the bucket occupancy at activation and whenever the bucket empties avoids this resonance phenomenon.
+section: 3.5.3
+topics:
+    - sip
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

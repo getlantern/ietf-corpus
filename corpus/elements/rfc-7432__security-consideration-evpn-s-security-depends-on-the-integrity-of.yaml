@@ -1,0 +1,10 @@
+document: rfc-7432
+kind: security-consideration
+summary: EVPN's security depends on the integrity of the BGP control plane. Injection of fraudulent MAC/IP Advertisement routes could redirect traffic; rogue Ethernet Segment routes could disrupt DF election and split-horizon filtering, potentially causing BUM traffic loops. Operators should apply BGP security mechanisms (e.g., authentication, route filtering) to protect EVPN route exchange.
+section: "19"
+topics:
+    - security
+    - bgp
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

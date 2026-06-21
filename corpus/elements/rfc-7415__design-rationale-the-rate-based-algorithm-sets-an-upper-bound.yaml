@@ -1,0 +1,10 @@
+document: rfc-7415
+kind: design-rationale
+summary: The rate-based algorithm sets an upper bound on request rate that remains constant between server updates, unlike the loss-based scheme where any increase in load is directly reflected in offered load. The trade-off is that the server is more likely to compute a different target rate for each client, increasing algorithmic complexity.
+section: "1"
+topics:
+    - sip
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

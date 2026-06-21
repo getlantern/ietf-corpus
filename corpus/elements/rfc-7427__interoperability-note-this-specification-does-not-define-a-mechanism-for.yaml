@@ -1,0 +1,10 @@
+document: rfc-7427
+kind: interoperability-note
+summary: This specification does not define a mechanism for peers to explicitly advertise their public/private key pair types. Responders can infer the initiator's supported key type via the IDr payload, the Certificate Request payload (e.g., a CA cert signed by an ECDSA key implies the initiator can process ECDSA), or by mirroring the key type used by the initiator. If no compatible key type is found, the responder replies with AUTHENTICATION_FAILED.
+section: "5"
+topics:
+    - ipsec
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7415
+kind: protocol-element
+summary: The default client algorithm is a leaky bucket based on ITU-T I.371 Appendix A.2. The bucket counter increases by T per forwarded request and drains continuously at rate 1; a request is forwarded only if the provisional counter X' = X - (ta(k) - LCT) is less than or equal to tolerance TAU, otherwise it is rejected.
+section: 3.5.1
+topics:
+    - sip
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7432
+kind: state-machine
+summary: 'Designated Forwarder election (''service carving''): (1) PE advertises Ethernet Segment route; (2) PE starts a 3-second timer; (3) on expiry, PEs build an ordered list by originating IP address and assign ordinals 0..N-1; (4) PE with ordinal i is DF for <ES, VLAN V> when (V mod N) = i. Re-triggered on link failure, PE failure, or commissioning/decommissioning.'
+section: "8.5"
+topics:
+    - bgp
+    - routing
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

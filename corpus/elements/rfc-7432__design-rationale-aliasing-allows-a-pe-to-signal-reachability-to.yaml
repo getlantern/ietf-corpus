@@ -1,0 +1,10 @@
+document: rfc-7432
+kind: design-rationale
+summary: Aliasing allows a PE to signal reachability to an EVI/ES even when it has learned no MAC addresses from that segment, using an Ethernet A-D per EVI route. This solves the problem where LAG hashing causes only one PE to learn a CE's MACs, enabling all attached PEs to receive load-balanced traffic from remote PEs.
+section: "8.4"
+topics:
+    - bgp
+    - routing
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

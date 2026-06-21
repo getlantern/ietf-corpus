@@ -1,0 +1,10 @@
+document: rfc-7432
+kind: design-rationale
+summary: In EVPN, MAC address learning between PEs occurs in the BGP control plane rather than the data plane as in traditional VPLS. This enables policies, load balancing to multihomed CEs, and faster convergence because failures are signaled via BGP route withdrawals rather than per-MAC updates.
+section: "4"
+topics:
+    - bgp
+    - routing
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

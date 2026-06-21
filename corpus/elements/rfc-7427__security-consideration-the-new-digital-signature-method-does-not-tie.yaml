@@ -1,0 +1,10 @@
+document: rfc-7427
+kind: security-consideration
+summary: The new Digital Signature method does not tie the elliptic curve to a specific hash function, making it possible to mix security levels (e.g., a 512-bit curve with SHA-1). The effective security is determined by the weakest component. Implementers should provide policy mechanisms in IKE databases to limit such mixing or restrict algorithm combinations.
+section: "6"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

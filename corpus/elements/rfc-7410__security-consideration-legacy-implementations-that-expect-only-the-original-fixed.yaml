@@ -1,0 +1,9 @@
+document: rfc-7410
+kind: security-consideration
+summary: Legacy implementations that expect only the original fixed set of ptype tokens may respond to new tokens by either blocking delivery or ignoring the unrecognized portions of the header field. Because the semantics of an unknown ptype report are indeterminate—it could indicate authenticity, fraud, or an incomplete test—the recommendation is to ignore unknown ptypes rather than prevent delivery.
+section: "4"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,8 @@
+document: rfc-7420
+kind: design-rationale
+summary: During session initialization, pcePcepSessTable may transiently contain two rows for the same peer — one for the locally initiated TCP connection and one for the peer-initiated connection — distinguished by the pcePcepSessInitiator index. Once either reaches sessionUp, the other is discarded. This is why pcePcepSessInitiator is part of the table index.
+section: "3.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

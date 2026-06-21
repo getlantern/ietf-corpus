@@ -1,0 +1,10 @@
+document: rfc-7420
+kind: security-consideration
+summary: The sole read-write object, pcePcepNotificationsMaxRate, could be used by an attacker to suppress PCEP event notifications entirely by setting it to zero, masking session failures or overload conditions from network management systems. Write access to this object should be strictly controlled via SNMP access control.
+section: "5"
+topics:
+    - security
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

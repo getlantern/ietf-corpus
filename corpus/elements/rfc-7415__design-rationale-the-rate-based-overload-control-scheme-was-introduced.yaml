@@ -1,0 +1,10 @@
+document: rfc-7415
+kind: design-rationale
+summary: The rate-based overload control scheme was introduced because the loss-based scheme cannot guarantee an upper bound on the load from clients towards an overloaded server and requires frequent updates with implications for stability. Rate-based control guarantees a constant upper bound on request rate between server updates, at the cost of higher algorithmic complexity since the server is more likely to use different targets for each client.
+section: "1"
+topics:
+    - sip
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

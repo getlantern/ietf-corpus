@@ -1,0 +1,8 @@
+document: rfc-7420
+kind: design-rationale
+summary: pcePcepPeerTable retains rows for peers even when no PCEP session currently exists, so that aggregate statistics spanning multiple successive sessions remain accessible. An implementation MAY discard a row only if no session exists to that peer, allowing optional cleanup of ephemeral peer state.
+section: "3.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

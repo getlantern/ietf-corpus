@@ -1,0 +1,9 @@
+document: rfc-7427
+kind: design-rationale
+summary: An 8-bit length field is prepended to the ASN.1 AlgorithmIdentifier object so that simple implementations can determine the ASN.1 object's length without parsing it, allowing the signature value to be located immediately following. This avoids requiring all IKEv2 implementations to implement a full DER parser.
+section: "3"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

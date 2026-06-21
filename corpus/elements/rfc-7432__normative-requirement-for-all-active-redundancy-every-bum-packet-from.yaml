@@ -1,0 +1,12 @@
+document: rfc-7432
+kind: normative-requirement
+summary: For All-Active redundancy, every BUM packet from a non-DF PE MUST be encapsulated with the ESI label of the originating segment. A DF PE receiving its own ESI label MUST drop the packet and not forward it onto the CE segment (split-horizon filtering).
+section: "8.3"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - vpn
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
