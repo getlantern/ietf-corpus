@@ -1,0 +1,11 @@
+document: rfc-7078
+kind: security-consideration
+summary: A rogue DHCPv6 server could issue bogus address selection policies, causing a client to use incorrect addresses. Affected packets may be blocked by ingress filtering, incur additional charges, or be misdirected to an attacker. Mitigation includes IPsec, SEND, DHCP authentication (RFC 3315 Section 21), or Layer 2 DHCP snooping.
+section: "5"
+topics:
+    - security
+    - ip
+    - v6ops
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

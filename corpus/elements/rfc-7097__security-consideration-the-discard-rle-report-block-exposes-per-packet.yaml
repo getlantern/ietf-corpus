@@ -1,0 +1,9 @@
+document: rfc-7097
+kind: security-consideration
+summary: The Discard RLE report block exposes per-packet statistics, creating a confidentiality risk as documented in RFC 3611 Section 7. Detailed error information in the report can provide attackers insight into security processing; implementations should apply encryption and authentication (e.g., SAVPF combining AVPF and SRTP) where security is a concern.
+section: "6"
+topics:
+    - security
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

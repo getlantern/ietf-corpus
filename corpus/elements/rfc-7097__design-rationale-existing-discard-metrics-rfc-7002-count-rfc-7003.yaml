@@ -1,0 +1,9 @@
+document: rfc-7097
+kind: design-rationale
+summary: Existing discard metrics (RFC 7002 count, RFC 7003 gap/burst) cannot precisely identify which individual packets were discarded. High-frequency count reporting would require excessive RTCP bandwidth with non-deterministic scheduling, and gap/burst reporting incurs complexity without sufficient accuracy—motivating a per-packet RLE approach.
+section: "1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

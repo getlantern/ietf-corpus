@@ -1,0 +1,9 @@
+document: rfc-7110
+kind: normative-requirement
+summary: The P bit and S bit in the Tunnel sub-TLV Flags field MUST NOT both be set; if both are set, an echo reply with RP return code 'Malformed Reply Path TLV was received' SHOULD be returned. If neither is set, the return path may be any LSP from the specified tunnel.
+section: 4.3.1
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

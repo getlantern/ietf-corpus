@@ -1,0 +1,8 @@
+document: rfc-7075
+kind: state-machine
+summary: 'Proxy rerouting on DIAMETER_REALM_REDIRECT_INDICATION: (1) select a realm from Redirect-Realm AVP instances; (2) locate and establish a route to a peer in that realm via normal discovery; (3) update routing cache, remove Destination-Host and Destination-Realm AVPs, add new Destination-Realm, and forward; (4) if steps 2-3 fail, try the next Redirect-Realm AVP instance.'
+section: 3.2.2
+topics:
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

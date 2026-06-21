@@ -1,0 +1,9 @@
+document: rfc-7110
+kind: normative-requirement
+summary: When receiving an echo request, if the egress LSR finds a matched return path it SHOULD send an echo reply with a Reply Path TLV identifying the return path and return code 'The echo reply was sent successfully using the specified Reply Path'. If no matching path is found, an echo reply SHOULD be sent with the appropriate return code reflecting whether an alternate LSP or IP path was used.
+section: "5.2"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

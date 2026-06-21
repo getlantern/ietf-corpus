@@ -1,0 +1,9 @@
+document: rfc-7110
+kind: security-consideration
+summary: The extensions defined in this document may enable 'proxying' attacks where an echo request initiator specifies a return path whose destination differs from the initiator's address. To mitigate this, the return path LSP should have a destination to the same node where the forward path originates, and receivers may drop echo requests when they cannot verify the return path LSP destination matches the initiator.
+section: "6"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

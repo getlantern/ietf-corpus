@@ -1,0 +1,9 @@
+document: rfc-7095
+kind: security-consideration
+summary: jCard inherits the security risks of JSON as discussed in RFC 4627 Section 7. A flaw in the JSON parser could impose threats not present with conventional vCard data. Use of JavaScript's eval() is only allowed using the regular expression from RFC 4627 Section 6; a native JSON parser should be preferred.
+section: "6"
+topics:
+    - json
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

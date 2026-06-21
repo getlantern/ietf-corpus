@@ -1,0 +1,9 @@
+document: rfc-7110
+kind: normative-requirement
+summary: When sending an echo request using the 'Reply via Specified Path' mode, the Reply Mode of the echo request MUST be set to 5, and a Reply Path TLV MUST be carried in the echo request message. For a bidirectional LSP, only the B bit SHOULD be set; if a non-reverse path is desired, the A bit SHOULD be set or a FEC sub-TLV SHOULD be carried, and the B bit MUST be clear.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

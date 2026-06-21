@@ -1,0 +1,9 @@
+document: rfc-7083
+kind: design-rationale
+summary: The default values of SOL_MAX_RT and INF_MAX_RT were raised from 120 seconds to 3600 seconds because deployments observed unacceptably high aggregated DHCPv6 traffic when many clients sent Solicit messages to a server configured not to respond. The change reduces long-term retransmission frequency from every 2 minutes to every hour.
+section: "1"
+topics:
+    - dns
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

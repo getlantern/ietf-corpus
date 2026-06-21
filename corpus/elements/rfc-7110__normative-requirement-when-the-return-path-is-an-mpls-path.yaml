@@ -1,0 +1,9 @@
+document: rfc-7110
+kind: normative-requirement
+summary: When the return path is an MPLS path, the destination IP address of the echo reply MUST be set to numbers from the range 127/8 (IPv4) or 0:0:0:0:0:FFFF:127.0.0.0/104 (IPv6), the IP TTL MUST be set to 1, and the TTL in the outermost label MUST be set to 255 to prevent the destination IP address from being used in a forwarding decision.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,11 @@
+document: rfc-7075
+kind: security-consideration
+summary: Because a Diameter proxy may change the Destination-Realm AVP during realm-based redirection, any cryptographic algorithm that uses the Destination-Realm AVP as input would be broken. Application specifications relying on such algorithms SHOULD NOT incorporate realm-based redirection.
+section: "4"
+rfc2119_level: SHOULD NOT
+topics:
+    - diameter
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
