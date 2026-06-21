@@ -1,0 +1,8 @@
+document: rfc-7455
+kind: security-consideration
+summary: TRILL OAM messages must be protected using the Authentication TLV (Type 74) to prevent unauthorized injection or replay of OAM messages (e.g., spoofed CCM or LBM frames) that could disrupt network operation or be used for reconnaissance. An RBridge enforcing authentication discards any OAM message that lacks a valid Authentication TLV.
+section: "14"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

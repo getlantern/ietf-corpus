@@ -1,0 +1,8 @@
+document: rfc-7460
+kind: interoperability-note
+summary: The ENTITY-SENSOR MIB (RFC 3433) uses a scientific-notation precision model (entPhySensorPrecision = number of decimal places) that does not align with ANSI C12.20 and IEC 62053 accuracy classes required for electricity metering. The ENERGY-OBJECT-MIB therefore introduces its own eoPowerAccuracy (in hundredths of a percent) and eoPowerUnitMultiplier (SI exponent) rather than reusing the ENTITY-SENSOR MIB objects.
+section: "7.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

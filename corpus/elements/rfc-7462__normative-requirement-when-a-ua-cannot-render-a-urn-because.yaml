@@ -1,0 +1,10 @@
+document: rfc-7462
+kind: normative-requirement
+summary: When a UA cannot render a URN because it is unrecognized or precluded by preceding URNs, it MUST repeatedly remove the final <alert-ind-part> until the resulting URN is renderable or has no <alert-ind-part> remaining, in which case the URN is ignored. Earlier URNs have precedence over later ones.
+section: "11.1"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

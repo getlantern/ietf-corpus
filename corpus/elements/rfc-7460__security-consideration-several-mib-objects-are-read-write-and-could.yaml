@@ -1,0 +1,9 @@
+document: rfc-7460
+kind: security-consideration
+summary: 'Several MIB objects are read-write and could be exploited to alter device power states or energy logging configuration: eoPowerAdminState (controls Power State), eoPowerStateEnterReason, and all eoEnergyParameters table objects. Implementations SHOULD use SNMPv3 with authentication and privacy (USM) and apply VACM access control to restrict write access to these objects to authorized management stations only.'
+section: "10"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

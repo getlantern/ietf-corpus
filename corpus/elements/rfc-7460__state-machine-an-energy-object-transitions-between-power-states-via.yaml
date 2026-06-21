@@ -1,0 +1,8 @@
+document: rfc-7460
+kind: state-machine
+summary: 'An Energy Object transitions between Power States via the admin/oper state model: eoPowerAdminState holds the requested Power State (read-write), eoPowerOperState holds the current operational Power State (read-only). A difference between the two values indicates the object is busy transitioning. eoPowerStateEnterReason records the reason for the last admin transition. An eoPowerStateChange SNMP notification is generated when eoPowerStateIndex, eoPowerOperState, or eoPowerAdminState changes.'
+section: "5.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

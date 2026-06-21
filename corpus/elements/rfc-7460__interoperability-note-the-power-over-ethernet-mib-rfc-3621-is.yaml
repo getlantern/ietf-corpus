@@ -1,0 +1,8 @@
+document: rfc-7460
+kind: interoperability-note
+summary: The Power-over-Ethernet MIB (RFC 3621) is indexed by pethMainPseGroupIndex rather than entPhysicalIndex, so there is no direct mapping. When RFC 3621 is supported, the Energy Object fields eoethPortIndex and eoethPortGrpIndex carry the pethPsePortIndex and pethPsePortGroupIndex values; otherwise they are set to zero using the PethPsePortIndexOrZero and PethPsePortGroupIndexOrZero Textual Conventions.
+section: "7.3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

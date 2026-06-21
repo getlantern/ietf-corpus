@@ -1,0 +1,6 @@
+document: rfc-7455
+kind: design-rationale
+summary: A new Path Trace Message is defined rather than reusing the 802.1Q Link Trace Message because in TRILL, unicast and multicast paths are not congruent. Link Trace Messages use a well-known multicast MAC address, which follows the distribution tree rather than the unicast forwarding path, making them unsuitable for TRILL unicast fault isolation.
+section: "10"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

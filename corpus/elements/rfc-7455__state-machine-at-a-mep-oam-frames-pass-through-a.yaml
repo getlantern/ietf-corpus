@@ -1,0 +1,6 @@
+document: rfc-7455
+kind: state-machine
+summary: 'At a MEP, OAM frames pass through a three-stage demultiplexer: (1) Tap captures frames with Alert flag and CFM Ethertype; (2) MD-Level demultiplexer drops frames with MD-Level less than the MEP''s configured level, passes matching levels to the OpCode demux, and forwards higher levels onward; (3) OpCode demultiplexer dispatches to CCM, LBM, LBR, PTM, PTR, MTVM, or MTVR processors, discarding unknown OpCodes.'
+section: "6"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

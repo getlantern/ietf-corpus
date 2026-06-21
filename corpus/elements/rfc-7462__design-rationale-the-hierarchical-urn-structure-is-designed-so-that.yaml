@@ -1,0 +1,9 @@
+document: rfc-7462
+kind: design-rationale
+summary: 'The hierarchical URN structure is designed so that removing the final <alert-ind-part> always produces a less-specific but still meaningful URN. This enables graceful degradation: a receiver that does not recognize a full URN can truncate it until it reaches a recognizable parent, preserving partial intent rather than silently ignoring the entire indication.'
+section: "7"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
