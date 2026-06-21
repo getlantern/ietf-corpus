@@ -1,0 +1,11 @@
+document: rfc-7030
+kind: design-rationale
+summary: 'EST uses a three-layer stack—EST messages over HTTP over TLS over TCP—so that the TLS and HTTP layers supply proof-of-identity, allowing the Simple PKI (PKCS #10) message type to be used. Per CMC Section 3.1, the Simple PKI Request MUST NOT be used if proof-of-identity must be included in the message itself; by delegating identity proof to the transport layers, EST avoids the complexity of Full PKI messages for the common case.'
+section: "3"
+topics:
+    - pkix
+    - tls
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

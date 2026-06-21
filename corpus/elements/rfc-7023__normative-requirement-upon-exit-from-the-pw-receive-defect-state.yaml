@@ -1,0 +1,9 @@
+document: rfc-7023
+kind: normative-requirement
+summary: Upon exit from the PW receive defect state, if PE1 has a Down MEP on the AC with CCM transmission enabled and Interface Status TLV support, the MEP MUST transmit CCM frames with the Interface Status TLV set to Up; without TLV support, it MUST resume CCM transmission; and PE1 MUST notify PE2 of cleared reverse defect via PW status or VCCV-BFD.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

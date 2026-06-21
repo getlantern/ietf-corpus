@@ -1,0 +1,10 @@
+document: rfc-7030
+kind: security-consideration
+summary: Server-side key generation creates a server that knows a client's private key. It is strongly RECOMMENDED that clients request CMS EnvelopedData wrapping of the private key in addition to TLS transport protection. The server is responsible for proper random number and key generation (RFC 4086); server archiving of generated keys is governed by CA policy.
+section: "4.4"
+topics:
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

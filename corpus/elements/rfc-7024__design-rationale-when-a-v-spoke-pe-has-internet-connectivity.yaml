@@ -1,0 +1,12 @@
+document: rfc-7024
+kind: design-rationale
+summary: When a V-spoke PE has Internet connectivity via a CE advertising an IP default route, the V-spoke must not advertise an IP default back to that CE (which would cause a loop); the CE is instead required to use the V-spoke as next-hop for all VPN traffic, relying on the VPN-IP default from the V-hub for routing within the VPN.
+section: "5"
+topics:
+    - mpls
+    - bgp
+    - vpn
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

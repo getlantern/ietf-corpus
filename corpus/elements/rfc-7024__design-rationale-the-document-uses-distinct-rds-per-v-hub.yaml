@@ -1,0 +1,11 @@
+document: rfc-7024
+kind: design-rationale
+summary: The document uses distinct RDs per V-hub for the VPN-IP default route so that a V-spoke importing multiple default routes (one per V-hub) can load-share outbound traffic across V-hubs when all routes have equal preference, without requiring any per-prefix state at the V-spoke.
+section: "3"
+topics:
+    - mpls
+    - bgp
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

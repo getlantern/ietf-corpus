@@ -1,0 +1,11 @@
+document: rfc-7024
+kind: design-rationale
+summary: 'To handle multihomed CE sites connected to both a V-hub and a V-spoke, two options are described: (1) prohibit provisioning such PEs as V-spokes, or (2) have the V-spoke not install CE routes in its forwarding table but re-advertise them with MPLS labels pointing to the CE, forcing all inter-spoke traffic through the V-hub. Implementations supporting IBGP/EBGP load balancing SHOULD support option 2.'
+section: "4"
+topics:
+    - mpls
+    - bgp
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

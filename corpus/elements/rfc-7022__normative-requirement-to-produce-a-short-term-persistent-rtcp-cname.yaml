@@ -1,0 +1,11 @@
+document: rfc-7022
+kind: normative-requirement
+summary: To produce a short-term persistent RTCP CNAME, an RTP endpoint MUST generate an identifier using the CSPRNG procedure in Section 5, performing it at least once per software initialization. At minimum the least significant 96 bits SHOULD be Base64-encoded (RFC 4648), producing a 16-octet string.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

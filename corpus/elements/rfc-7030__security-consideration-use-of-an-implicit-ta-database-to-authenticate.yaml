@@ -1,0 +1,10 @@
+document: rfc-7030
+kind: security-consideration
+summary: 'Use of an Implicit TA database to authenticate an EST server carries risk: the Implicit TA may authenticate a server that is authorized for other purposes (e.g., HTTPS web browsing) but not specifically authorized as an EST server. Clients that successfully populate an Explicit TA database SHOULD disable the Implicit TA for that EST server and include the Trusted CA Indication TLS extension (RFC 6066) in future sessions.'
+section: 3.6.2
+topics:
+    - security
+    - pkix
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

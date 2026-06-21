@@ -1,0 +1,10 @@
+document: rfc-7030
+kind: interoperability-note
+summary: HTTP 3xx redirections to the same web origin (RFC 6454) SHOULD be handled automatically by the client if all applicable security checks have been enforced on the initial connection. Redirections to other web origins require a new TLS connection with all security checks, and if a CSR already embeds tls-unique information it MUST be recreated to incorporate the tls-unique of the new TLS session.
+section: 3.2.1
+topics:
+    - http
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

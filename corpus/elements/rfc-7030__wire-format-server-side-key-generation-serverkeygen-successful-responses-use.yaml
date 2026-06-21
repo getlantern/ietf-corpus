@@ -1,0 +1,10 @@
+document: rfc-7030
+kind: wire-format
+summary: 'Server-side key generation (/serverkeygen) successful responses use Content-Type multipart/mixed with two parts: the private key as application/pkcs8 (base64 DER PrivateKeyInfo) if unencrypted, or application/pkcs7-mime with smime-type server-generated-key if CMS EnvelopedData-encrypted; plus the certificate as application/pkcs7-mime matching the /simpleenroll response format.'
+section: 4.4.2
+topics:
+    - pkix
+    - http
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

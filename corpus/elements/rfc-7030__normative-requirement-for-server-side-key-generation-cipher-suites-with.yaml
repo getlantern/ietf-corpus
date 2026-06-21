@@ -1,0 +1,12 @@
+document: rfc-7030
+kind: normative-requirement
+summary: For server-side key generation, cipher suites with a NULL confidentiality algorithm MUST NOT be used as they will disclose the contents of an unprotected private key. The cipher suite MUST offer confidentiality commensurate with the private key being delivered.
+section: "4.4"
+rfc2119_level: MUST NOT
+topics:
+    - pkix
+    - security
+    - crypto
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

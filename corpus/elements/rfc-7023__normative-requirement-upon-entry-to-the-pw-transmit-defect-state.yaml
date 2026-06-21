@@ -1,0 +1,9 @@
+document: rfc-7023
+kind: normative-requirement
+summary: Upon entry to the PW transmit defect state, if PE1 has a Down MEP with CCM enabled, the MEP MUST set the RDI bit in transmitted CCM frames or send a Status TLV with interface down to the peer MEP at CE1. If the PW failure was detected locally without receiving an RDI from PE2, PE1 MUST send an FDI to PE2.
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

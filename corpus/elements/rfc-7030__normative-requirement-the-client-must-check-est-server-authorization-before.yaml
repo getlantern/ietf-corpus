@@ -1,0 +1,11 @@
+document: rfc-7030
+kind: normative-requirement
+summary: The client MUST check EST server authorization before accepting any server responses or responding to HTTP authentication requests. When the Explicit TA database is used, the client MUST check the URI against the server's identity per RFC 6125 Section 6.4, or the EST server certificate MUST contain the id-kp-cmcRA extended key usage extension.
+section: "3.6"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

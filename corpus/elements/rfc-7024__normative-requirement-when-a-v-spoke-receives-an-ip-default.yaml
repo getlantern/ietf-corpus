@@ -1,0 +1,12 @@
+document: rfc-7024
+kind: normative-requirement
+summary: When a V-spoke receives an IP default route from a CE, it MUST NOT install that route as an IP default in its VRF; instead it MUST originate a VPN-IP default route carrying only RT-VPN with an MPLS label whose NHLFE next-hop points directly to that CE.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - bgp
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

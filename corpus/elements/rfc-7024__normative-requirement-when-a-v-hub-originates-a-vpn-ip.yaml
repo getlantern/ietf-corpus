@@ -1,0 +1,12 @@
+document: rfc-7024
+kind: normative-requirement
+summary: 'When a V-hub originates a VPN-IP default route, it MUST NOT install an IP default route in its own VRF unless: (a) a CE advertises an IP default route to it, (b) it receives and imports the Internet VPN-IP default route, or (c) the VRF is provisioned with a default pointing to the Internet routing table.'
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - bgp
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

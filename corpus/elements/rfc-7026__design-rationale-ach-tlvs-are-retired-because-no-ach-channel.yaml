@@ -1,0 +1,8 @@
+document: rfc-7026
+kind: design-rationale
+summary: ACH TLVs are retired because no ACH Channel Type defined at the time of writing uses them, and handling variable-length TLVs in hardware introduces significant problems to the fast path. Since G-ACh messages are intended to be processed substantially in hardware, ACH TLVs are considered undesirable.
+section: "1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

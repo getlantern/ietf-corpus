@@ -1,0 +1,9 @@
+document: rfc-7023
+kind: normative-requirement
+summary: Upon entry to the PW receive defect state, PE1 MUST assume PE2 has no knowledge of the defect and MUST send a reverse defect failure notification to PE2 via PW status notification message or VCCV-BFD diagnostic code (if CV type 0x08 or 0x20 was negotiated); NS OAM may also be used per Section 4.1. This requirement does not apply if the defect state was entered due to a forward defect notification from PE2 or loss of control adjacency.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

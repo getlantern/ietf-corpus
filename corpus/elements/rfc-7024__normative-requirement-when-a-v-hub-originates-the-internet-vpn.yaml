@@ -1,0 +1,12 @@
+document: rfc-7024
+kind: normative-requirement
+summary: When a V-hub originates the Internet VPN-IP default route, it MUST withdraw any non-Internet VPN-IP default route it had originated; conversely, when the Internet VPN-IP default route is withdrawn, the V-hub MUST re-originate a non-Internet VPN-IP default route. At any time, a V-hub originates exactly one of these two.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - bgp
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

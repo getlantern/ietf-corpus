@@ -1,0 +1,12 @@
+document: rfc-7022
+kind: privacy-consideration
+summary: Earlier fixed RTCP CNAME values allowed attackers to easily correlate separate RTP sessions, defeating the obfuscation of IPv6 privacy addresses and IPv4 NAPT. This specification eliminates fixed CNAMEs; per-session CNAMEs prevent such session linking, though non-RTP traffic analysis may still allow correlation by a determined analyst.
+section: "6.2"
+topics:
+    - rtp
+    - realtime
+    - privacy
+    - security
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

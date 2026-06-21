@@ -1,0 +1,9 @@
+document: rfc-7030
+kind: interoperability-note
+summary: When an EST server returns HTTP 202 to a /simpleenroll or /simplereenroll request (indicating the request is accepted but pending manual administrator review), it MUST include a Retry-After header. The client MUST wait at least the specified retry-after interval and then repeat the identical request; the server is stateful for retries while the client is stateless.
+section: 4.2.3
+topics:
+    - http
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
