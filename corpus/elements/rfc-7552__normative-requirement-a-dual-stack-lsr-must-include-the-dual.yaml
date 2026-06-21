@@ -1,0 +1,11 @@
+document: rfc-7552
+kind: normative-requirement
+summary: A Dual-stack LSR MUST include the Dual-Stack capability TLV in all of its LDP Hellos and MUST set the TR field to announce its transport connection preference. If the remote preference does not match the local preference, the LSR MUST discard the Hello message and, if a session was already established, MUST send a fatal Notification with status code 'Transport Connection Mismatch' (0x00000032) and reset the session.
+section: 6.1.1
+rfc2119_level: MUST
+topics:
+    - mpls
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

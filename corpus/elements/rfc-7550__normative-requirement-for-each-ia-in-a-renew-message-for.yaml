@@ -1,0 +1,10 @@
+document: rfc-7550
+kind: normative-requirement
+summary: For each IA in a Renew message for which the server cannot find a client binding, the server may create a new binding (if configured to do so), return NoAddrsAvail (if configured to create bindings but cannot assign addresses), or return NoBinding (if not configured to create bindings for Renew). The server MUST include Server Identifier and Client Identifier in the Reply.
+section: 4.4.6
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

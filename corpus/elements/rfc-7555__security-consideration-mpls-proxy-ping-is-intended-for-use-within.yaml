@@ -1,0 +1,9 @@
+document: rfc-7555
+kind: security-consideration
+summary: MPLS Proxy Ping is intended for use within a single service provider network. If the network also carries Internet traffic, Proxy Ping messages SHOULD be discarded at ingress points where IP packets are received from other administrations, using source address filtering or by filtering all MPLS ping messages on UDP port 3503.
+section: "6"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

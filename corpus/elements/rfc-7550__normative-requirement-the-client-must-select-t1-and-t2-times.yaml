@@ -1,0 +1,10 @@
+document: rfc-7550
+kind: normative-requirement
+summary: The client MUST select T1 and T2 times as the minimum across all received IA options, guaranteeing that Renew/Rebind messages are sent no later than the earliest T1/T2 time associated with any binding. For example, a T1 of 0 from any IA means renew time is at the client's discretion but cannot exceed the corresponding T2.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

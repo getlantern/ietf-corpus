@@ -1,0 +1,8 @@
+document: rfc-7568
+kind: interoperability-note
+summary: TLS specifications were historically unclear about what value TLSPlaintext.version could contain when sending ClientHello. RFC 5246 Appendix E permits selecting the record layer version to maximize interoperability; servers must therefore accept any {03,XX} record layer version for ClientHello even though SSLv3 negotiation itself is forbidden.
+section: "3"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

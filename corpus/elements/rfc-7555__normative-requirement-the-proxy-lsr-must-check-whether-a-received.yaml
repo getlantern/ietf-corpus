@@ -1,0 +1,11 @@
+document: rfc-7555
+kind: normative-requirement
+summary: The Proxy LSR MUST check whether a received MPLS Proxy Ping Request arrived via exception path (IP TTL expiry, IP destination set to a loopback address, or label TTL expiry). Packets arriving via any of these paths MUST be treated as Unauthorized; a Proxy Ping Reply MAY be sent with Return Code 16.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7568
+kind: design-rationale
+summary: SSLv3 cannot be patched to fix its CBC, key exchange, or primitive flaws because the available correction mechanisms (extensions, renegotiation indication, encrypt-then-MAC) were all introduced as TLS extensions, a feature SSLv3 does not support. This structural limitation makes deprecation the only viable path.
+section: "4"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

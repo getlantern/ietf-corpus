@@ -1,0 +1,8 @@
+document: rfc-7568
+kind: design-rationale
+summary: SSLv3 is unable to use ClientHello extensions and therefore cannot benefit from AEAD modes, ECDH/ECDSA, stateless session tickets, DTLS, or ALPN — all significant capabilities added in TLS 1.0 and later. Even new cipher suites cannot compensate for the absence of modern cryptographic modes.
+section: "5"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

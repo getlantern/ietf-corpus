@@ -1,0 +1,10 @@
+document: rfc-7550
+kind: normative-requirement
+summary: A client MUST ignore an Advertise message that contains no addresses (IAADDR in IA_NA/IA_TA) and no delegated prefixes (IAPREFIX in IA_PD), except that the client MUST still process any included SOL_MAX_RT and INF_MAX_RT options per RFC 7083, and MUST NOT restart the Solicit retransmission timer.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

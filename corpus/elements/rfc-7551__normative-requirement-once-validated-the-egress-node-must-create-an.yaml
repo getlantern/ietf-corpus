@@ -1,0 +1,10 @@
+document: rfc-7551
+kind: normative-requirement
+summary: Once validated, the egress node MUST create an LSP in the reverse direction or reject the Path message. If creation fails, the egress node MUST return a PathErr with Error Code 'Admission Control Failure' (1) and Sub-code 'Reverse LSP Failure' (6).
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

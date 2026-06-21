@@ -1,0 +1,10 @@
+document: rfc-7552
+kind: state-machine
+summary: If the Dual-Stack capability TLV is absent and only IPv4 Hellos are received, the neighbor is treated as a legacy IPv4-only LSR and LDPoIPv4 is established; if IPv6 Hellos subsequently arrive, the session is reset with 'Dual-Stack Noncompliance' (0x00000033). If only IPv6 Hellos are received, LDPoIPv6 is established; later IPv4 Hellos also trigger noncompliance reset. If both IPv4 and IPv6 Hellos arrive without the TLV, the neighbor is noncompliant and no session is allowed.
+section: 6.1.1
+topics:
+    - mpls
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

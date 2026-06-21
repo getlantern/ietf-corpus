@@ -1,0 +1,10 @@
+document: rfc-7550
+kind: normative-requirement
+summary: When a client receives a Reply to a Renew or Rebind containing a NoBinding status code for any IA, the client sends a Request message for only those IAs with NoBinding, while continuing to use other bindings that did not return an error. If IAs are missing from the Reply entirely, the client MUST limit the rate of subsequent Renew/Rebind messages to avoid a storm.
+section: 4.4.5
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

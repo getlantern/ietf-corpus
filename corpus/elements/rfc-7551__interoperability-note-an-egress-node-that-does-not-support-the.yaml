@@ -1,0 +1,9 @@
+document: rfc-7551
+kind: interoperability-note
+summary: An egress node that does not support the new Association Types will return a PathErr with Error Code 'Admission Control Failure' (1) and Sub-code 'Bad Association Type' (5) per RFC 4872. The REVERSE_LSP Object likewise uses the 11bbbbbb class number range, so non-supporting transit nodes will ignore and forward it without modification.
+section: 5.1.1
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

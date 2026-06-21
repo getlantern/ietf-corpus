@@ -1,0 +1,11 @@
+document: rfc-7552
+kind: normative-requirement
+summary: Two LSRs MUST maintain a single LDP session regardless of the number of Link or targeted Hello adjacencies. If the last Hello adjacency for the address family used for the transport connection goes down, the LDP session MUST be reset; otherwise the session MUST stay intact.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

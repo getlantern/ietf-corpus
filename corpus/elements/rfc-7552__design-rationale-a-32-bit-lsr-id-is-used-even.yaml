@@ -1,0 +1,10 @@
+document: rfc-7552
+kind: design-rationale
+summary: A 32-bit LSR Id is used even for IPv6-only deployments because it must be globally unique within the MPLS network regardless of address family. In IPv6-only networks the value need not map to any IPv4 address; it must be derived by means guaranteeing global uniqueness, analogous to the BGP Identifier and OSPFv3 router Id. The value 0.0.0.0 is reserved and prohibited.
+section: A.4
+topics:
+    - mpls
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

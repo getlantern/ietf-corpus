@@ -1,0 +1,10 @@
+document: rfc-7551
+kind: normative-requirement
+summary: When the egress node receives a PathTear for the forward LSP or the forward LSP is torn down for any reason, the node MUST remove the associated reverse LSP using standard PathTear processing. Independent teardown of the reverse LSP SHOULD NOT trigger removal of the initiating LSP, but SHOULD cause the egress node to send a PathErr with Sub-code 'Reverse LSP Failure' (6).
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

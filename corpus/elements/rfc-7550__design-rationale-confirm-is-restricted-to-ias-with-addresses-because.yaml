@@ -1,0 +1,9 @@
+document: rfc-7550
+kind: design-rationale
+summary: Confirm is restricted to IAs with addresses because the on-link verification mechanism compares the link's /64 prefix against the prefix-length-first bits of IA_NA/IA_TA addresses. IA_PD requires verifying that the delegating router holds the binding, which only Rebind can accomplish.
+section: "4.5"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

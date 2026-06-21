@@ -1,0 +1,9 @@
+document: rfc-7563
+kind: design-rationale
+summary: The ANI Update-Timer sub-option is introduced to handle WLC (Wireless LAN Controller) deployments where the MAG is co-located with the WLC rather than individual APs. In such cases, intra-WLC AP roaming is invisible to the LMA, causing ANI information to go stale. The timer lets the LMA control how frequently it receives ANI refreshes without requiring a PBU per AP transition.
+section: "1"
+topics:
+    - mobility
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

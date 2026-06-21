@@ -1,0 +1,9 @@
+document: rfc-7555
+kind: design-rationale
+summary: 'The Proxy LSR is designed to be stateless with respect to LSP Ping responses: it sends MPLS Echo Requests on behalf of the initiator but does not maintain state to handle the corresponding replies. Responders send their replies directly to the initiator (or a Reply-to address the initiator supplies), keeping the Proxy LSR out of the return path.'
+section: "2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7550
+kind: normative-requirement
+summary: A client MUST have a binding with an IA containing addresses (IA_NA or IA_TA) to use the Confirm message. A client that has only IA_PD bindings (no address IAs) MUST use the Rebind message instead of Confirm. When a client has both address IAs and delegated prefix IAs, it MUST use Rebind and MUST include all bindings.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

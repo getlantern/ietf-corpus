@@ -1,0 +1,9 @@
+document: rfc-7550
+kind: design-rationale
+summary: RFC 7550 recommends that clients use a single DHCPv6 session and state machine when requesting both IA_NA and IA_PD options, rather than resetting the state machine or creating separate sessions per IA type. Separate sessions cause additional resource use, extra protocol traffic, duplication of configuration options, and divergence across IA-type specifications.
+section: "4"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

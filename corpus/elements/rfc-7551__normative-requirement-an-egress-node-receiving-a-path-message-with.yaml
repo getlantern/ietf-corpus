@@ -1,0 +1,10 @@
+document: rfc-7551
+kind: normative-requirement
+summary: An egress node receiving a Path message with a REVERSE_LSP Object MUST verify that the message also contains an ASSOCIATION or Extended ASSOCIATION Object with Association Type 'Single-Sided Associated Bidirectional LSP'. If not, the Path message MUST NOT trigger a reverse LSP; the failure SHOULD be logged locally but SHOULD NOT trigger any RSVP message.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

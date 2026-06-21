@@ -1,0 +1,10 @@
+document: rfc-7568
+kind: security-consideration
+summary: The non-deterministic padding used in the CBC construction of SSLv3 trivially permits recovery of plaintext (POODLE attack). The CBC modes use a flawed MAC-then-encrypt construction that cannot be corrected in SSLv3 because the fix relies on TLS extensions, a feature SSLv3 lacks.
+section: "4.1"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
