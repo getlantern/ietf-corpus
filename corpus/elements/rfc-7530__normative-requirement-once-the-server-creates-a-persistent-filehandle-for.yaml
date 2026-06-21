@@ -1,0 +1,7 @@
+document: rfc-7530
+kind: normative-requirement
+summary: Once the server creates a persistent filehandle for a file system object, it MUST accept the same filehandle for the lifetime of the object, including across server restarts and file system migration. When a persistent filehandle refers to a deleted object, the server MUST return NFS4ERR_STALE.
+section: 4.2.2
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

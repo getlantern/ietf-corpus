@@ -1,0 +1,10 @@
+document: rfc-7524
+kind: normative-requirement
+summary: When MVPN I-PMSI/S-PMSI A-D routes are advertised to signal inter-area P2MP service LSPs, they MUST carry the Inter-Area P2MP Segmented Next-Hop Extended Community. The originating PE or ASBR MUST include this community and set its Global Administrator field to their own IP address; ABRs re-advertising such routes MUST also include and update this community to their own IP address.
+section: 5.1.3
+rfc2119_level: MUST
+topics:
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

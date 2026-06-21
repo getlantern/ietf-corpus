@@ -1,0 +1,10 @@
+document: rfc-7524
+kind: normative-requirement
+summary: The address family of the Ingress PE's IP Address and Originating Router's IP Address in Leaf A-D routes for global table multicast MUST NOT be inferred from the AFI field of the MP_REACH_NLRI/MP_UNREACH_NLRI attribute; instead, address family is determined by field length (4 octets = IPv4, 16 octets = IPv6). If the computed length is neither 4 nor 16, the MP_REACH_NLRI MUST be treated as incorrect per Section 7 of RFC 4760.
+section: 6.2.2
+rfc2119_level: MUST NOT
+topics:
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

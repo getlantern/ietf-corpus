@@ -1,0 +1,10 @@
+document: rfc-7524
+kind: normative-requirement
+summary: When an ASBR receives from an IBGP peer an I-PMSI or S-PMSI A-D route carrying the Inter-Area P2MP Segmented Next-Hop Extended Community, before re-advertising to an EBGP peer, the ASBR SHOULD remove this Extended Community. If such a route is received from an EBGP peer and the LSP should not be segmented, the ASBR MUST remove this Extended Community before re-advertising to IBGP peers.
+section: 5.1.3
+rfc2119_level: SHOULD
+topics:
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

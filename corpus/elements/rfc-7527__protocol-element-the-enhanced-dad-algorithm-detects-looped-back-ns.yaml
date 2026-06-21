@@ -1,0 +1,9 @@
+document: rfc-7527
+kind: protocol-element
+summary: The Enhanced DAD algorithm detects looped back NS(DAD) messages by embedding a random nonce (from the SEND Nonce Option, RFC 3971) in each Neighbor Solicitation sent during Duplicate Address Detection. Each NS(DAD) for a given interface address uses a unique nonce, and if the sender receives back an NS(DAD) with a matching nonce, it identifies the message as looped back rather than a genuine duplicate.
+section: "4"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

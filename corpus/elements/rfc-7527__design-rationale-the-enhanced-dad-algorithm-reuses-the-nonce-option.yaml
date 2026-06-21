@@ -1,0 +1,9 @@
+document: rfc-7527
+kind: design-rationale
+summary: The Enhanced DAD algorithm reuses the Nonce Option from SEND (RFC 3971) rather than defining a new option, because a single-use nonce already provides the necessary uniqueness property. Each NS(DAD) per address uses a different nonce, so a looped back message is identifiable by matching the stored nonce.
+section: "4"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

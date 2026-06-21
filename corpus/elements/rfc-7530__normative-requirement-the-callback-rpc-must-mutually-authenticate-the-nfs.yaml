@@ -1,0 +1,10 @@
+document: rfc-7530
+kind: normative-requirement
+summary: The callback RPC MUST mutually authenticate the NFS server to the principal that acquired the client ID, using the security flavor of the original SETCLIENTID operation. When using RPCSEC_GSS, the server MUST identify itself via a GSS_C_NT_HOSTBASED_SERVICE name of the form 'nfs@hostname'; for Kerberos V5 the form 'nfs/hostname' is RECOMMENDED.
+section: 3.3.3
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

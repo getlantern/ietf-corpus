@@ -1,0 +1,6 @@
+document: rfc-7530
+kind: design-rationale
+summary: NFSv4 eliminates the MOUNT ancillary protocol in favor of built-in PUTROOTFH and PUTPUBFH operations that set the current filehandle to the server root or a configured public filehandle. The MOUNT protocol had security weaknesses and poor firewall traversal; its function was demonstrated to be redundant given LOOKUP.
+section: "4.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7524
+kind: normative-requirement
+summary: When the egress ABR re-advertises a wildcard (*,*) S-PMSI A-D route into the egress area, the route MUST carry an AS-specific Route Target Extended Community with the Global Administrator field set to the AS of the advertising ABR and Local Administrator set to 0, so egress area PEs participating in global table multicast can import it.
+section: 7.2.2.2
+rfc2119_level: MUST
+topics:
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

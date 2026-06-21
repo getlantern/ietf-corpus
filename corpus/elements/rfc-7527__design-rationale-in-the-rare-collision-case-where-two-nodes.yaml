@@ -1,0 +1,9 @@
+document: rfc-7527
+kind: design-rationale
+summary: 'In the rare collision case where two nodes use the same target address and generate the same random nonce, the algorithm incorrectly treats a genuine duplicate as a loopback. The design accepts this because: the event is logged for administrator review, the nodes will continue probing, and it is unlikely they will choose the same nonce again given quality random number generators.'
+section: "4"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

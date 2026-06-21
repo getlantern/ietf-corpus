@@ -1,0 +1,10 @@
+document: rfc-7527
+kind: normative-requirement
+summary: If a receiver using Enhanced DAD finds a nonce match between a received NS(DAD) targeting its tentative/optimistic address and a stored nonce, the node SHOULD log a system management message, SHOULD update statistics counters, and MUST drop the received message (treating it as looped back).
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

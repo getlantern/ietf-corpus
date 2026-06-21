@@ -1,0 +1,6 @@
+document: rfc-7533
+kind: design-rationale
+summary: FEDFS_CREATE_JUNCTION does not require the target fileset to exist at junction creation time; if the target fileset is missing, the junction is still created and an NFS client discovers the absence only upon traversal. This decouples namespace construction from fileset availability.
+section: 5.2.2
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

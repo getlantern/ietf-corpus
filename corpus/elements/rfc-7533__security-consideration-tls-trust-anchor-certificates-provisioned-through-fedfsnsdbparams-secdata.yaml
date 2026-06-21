@@ -1,0 +1,11 @@
+document: rfc-7533
+kind: security-consideration
+summary: TLS trust anchor certificates provisioned through FedFsNsdbParams secData MUST only be used for authenticating the NSDB service, not installed as system-wide trust anchors for other services. This prevents provisioned credentials from inadvertently expanding trust scope beyond the federation.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - security
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7524
+kind: normative-requirement
+summary: To support a common tunnel type in ingress and egress areas, when re-advertising MVPN I-PMSI/S-PMSI or VPLS A-D routes into the backbone, an ingress ABR places the original PMSI Tunnel attribute into the ATTR_SET BGP attribute [RFC6368], adds it to the re-advertised route, and replaces the PMSI Tunnel attribute with a new one potentially of a different Tunnel Type. The egress ABR reverses this on re-advertisement into the egress area.
+section: "10"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

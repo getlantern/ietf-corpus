@@ -1,0 +1,9 @@
+document: rfc-7527
+kind: security-consideration
+summary: The nonce does not protect against a DoS attack where a rogue node replies with a fake NA to all DAD probes, causing DAD failure for all probed addresses. SEND is recommended to circumvent this exploit. Additionally, disabling DAD creates a window during which a remote on-link rogue can issue reflected NS(DAD) messages; SAVI (RFC 6620) and SEND are recommended mitigations.
+section: "6"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

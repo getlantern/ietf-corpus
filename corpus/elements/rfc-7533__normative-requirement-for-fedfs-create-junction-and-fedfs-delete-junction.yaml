@@ -1,0 +1,7 @@
+document: rfc-7533
+kind: normative-requirement
+summary: For FEDFS_CREATE_JUNCTION and FEDFS_DELETE_JUNCTION, the path MUST NOT contain a junction except (for delete/lookup) as the final component. If any non-final component is a junction, the operation MUST fail with FEDFS_ERR_NOTLOCAL. Path traversal MUST remain within the server-local namespace even if symbolic links are present.
+section: 5.2.2
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

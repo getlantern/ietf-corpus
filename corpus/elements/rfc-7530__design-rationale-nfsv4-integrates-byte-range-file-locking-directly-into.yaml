@@ -1,0 +1,6 @@
+document: rfc-7530
+kind: design-rationale
+summary: NFSv4 integrates byte-range file locking directly into the NFS protocol under a lease-based model, replacing the separate Network Lock Manager (NLM) from NFSv3. This eliminates the requirement for an RPC callback mechanism for locking and allows the server to maintain a single fixed lease period for all client state.
+section: 1.4.5
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

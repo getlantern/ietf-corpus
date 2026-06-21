@@ -1,0 +1,8 @@
+document: rfc-7527
+kind: state-machine
+summary: During Enhanced DAD, an interface address begins in tentative or optimistic state. If no DAD failure indication or looped back probe is received within RetransTimer × DupAddrDetectTransmits, the address moves to assigned state. If looped back probes are detected, the interface retransmits up to MAX_MULTICAST_SOLICIT additional NS(DAD) messages; if none loop back within that period, probing stops and the address moves to assigned state. A genuine duplicate causes a DAD-failed state.
+section: "4.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

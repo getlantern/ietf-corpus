@@ -1,0 +1,9 @@
+document: rfc-7533
+kind: normative-requirement
+summary: For FEDFS_LOOKUP_JUNCTION with resolve=FEDFS_RESOLVE_NONE, the fileserver MUST NOT attempt to resolve the FSN and returns a zero-length fsl list. With FEDFS_RESOLVE_CACHE, the server MUST attempt cache-only resolution and MUST NOT contact the NSDB. With FEDFS_RESOLVE_NSDB, the server MUST contact the NSDB and MUST NOT use cached information.
+section: 5.4.2
+rfc2119_level: MUST
+topics:
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

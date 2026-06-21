@@ -1,0 +1,9 @@
+document: rfc-7532
+kind: security-consideration
+summary: Version 1 UUIDs embedded in FSN and FSL records expose the generating host's MAC address and a timestamp in cleartext. Since FSN/FSL records are readable by unauthenticated users, security-sensitive installations should be aware that externally facing NSDBs can reveal host identity information through UUIDs.
+section: "2.12"
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

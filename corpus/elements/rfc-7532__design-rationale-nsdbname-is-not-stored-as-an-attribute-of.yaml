@@ -1,0 +1,8 @@
+document: rfc-7532
+kind: design-rationale
+summary: NsdbName is not stored as an attribute of FSN or FSL records because it is implicit from the NSDB node that a client is accessing and, when TLS is in effect, is authenticated by the TLS connection. Storing it redundantly would create inconsistency risks.
+section: "2.7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,11 @@
+document: rfc-7533
+kind: normative-requirement
+summary: When FEDFS_SEC_TLS is configured, the fileserver MUST use StartTLS (RFC 4513) for all connections to that NSDB, and MUST use the DER-encoded X.509v3 certificate in secData as the trust anchor to validate the NSDB's TLS server certificate chain. These trust anchors MUST only be used for the NSDB service, not as system-wide trust anchors.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tls
+    - pkix
+    - ldap
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

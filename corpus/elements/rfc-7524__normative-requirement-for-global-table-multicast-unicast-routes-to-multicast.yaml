@@ -1,0 +1,10 @@
+document: rfc-7524
+kind: normative-requirement
+summary: For global table multicast, unicast routes to multicast sources/RPs SHOULD carry the VRF Route Import Extended Community [RFC6514] with Local Administrator set to 0. If not, these routes MUST be advertised using multicast SAFI (SAFI 2) with this community. BGP unicast routes to PE/ASBR/ABR addresses SHOULD carry the Inter-Area P2MP Segmented Next-Hop Extended Community, or else MUST be advertised using SAFI 2.
+section: 6.1.2
+rfc2119_level: SHOULD
+topics:
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

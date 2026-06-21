@@ -1,0 +1,8 @@
+document: rfc-7533
+kind: design-rationale
+summary: FEDFS_GET_LIMITED_NSDB_PARAMS exists to expose only the FedFsConnectionSec security type (not the full connection parameters including potentially sensitive TLS certificate material) to less-privileged callers. This allows checking what security mechanism is in use without revealing the trust anchor certificate.
+section: 5.10.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

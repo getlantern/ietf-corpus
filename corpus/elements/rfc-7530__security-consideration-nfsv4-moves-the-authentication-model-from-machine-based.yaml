@@ -1,0 +1,8 @@
+document: rfc-7530
+kind: security-consideration
+summary: NFSv4 moves the authentication model from machine-based to principal-based. However, this does not change the TCP connection management model; clients continue to multiplex multiple users over shared connections. The NFS4ERR_WRONGSEC error allows servers to indicate that the current security triple is insufficient for a resource, triggering SECINFO-based renegotiation.
+section: "19"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
