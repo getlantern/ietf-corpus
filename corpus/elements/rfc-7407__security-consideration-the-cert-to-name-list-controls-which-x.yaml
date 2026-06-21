@@ -1,0 +1,11 @@
+document: rfc-7407
+kind: security-consideration
+summary: The cert-to-name list controls which X.509 certificates are authorized and how they map to security names. Misconfiguration (e.g., mapping a CA fingerprint too broadly) could allow unintended certificates to authenticate. Administrators are encouraged to use subjectAltName-based mappings and per-certificate fingerprints rather than CA-level fingerprints where possible.
+section: "4.1"
+topics:
+    - snmp
+    - security
+    - pkix
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

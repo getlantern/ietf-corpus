@@ -1,0 +1,10 @@
+document: rfc-7402
+kind: normative-requirement
+summary: All HIP packets (protocol 139) MUST bypass ESP processing. A host MUST initiate a rekey if its incoming ESP sequence counter is about to overflow, and MUST NOT replace keying material until rekeying completes.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

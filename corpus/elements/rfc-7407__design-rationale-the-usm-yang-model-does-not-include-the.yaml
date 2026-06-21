@@ -1,0 +1,10 @@
+document: rfc-7407
+kind: design-rationale
+summary: The USM YANG model does not include the MIB objects for changing authentication and privacy keys (e.g., usmUserAuthKeyChange). Instead, only the localized key can be set directly. This implies that if the engine ID changes, all user keys must be reconfigured, which is a deliberate simplification over the MIB's key-change protocol.
+section: "2.10"
+topics:
+    - snmp
+    - yang
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

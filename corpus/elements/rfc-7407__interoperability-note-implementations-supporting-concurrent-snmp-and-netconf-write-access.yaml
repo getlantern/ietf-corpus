@@ -1,0 +1,9 @@
+document: rfc-7407
+kind: interoperability-note
+summary: Implementations supporting concurrent SNMP and NETCONF write access must ensure that SNMP spin lock objects (snmpTargetSpinLock, usmUserSpinLock, vacmViewSpinLock) are incremented whenever corresponding data is modified via NETCONF. This allows cooperating SNMP management applications to detect concurrent modifications.
+section: "3.2"
+topics:
+    - snmp
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,11 @@
+document: rfc-7401
+kind: normative-requirement
+summary: If the DH group chosen in R1 does not match the best common preference of both parties, the Initiator MUST either restart the BEX with a new I1 or abort — indicating a downgrade attack. The Initiator MUST verify the R1 signature before restarting or aborting, and MUST silently ignore R1 if the signature is invalid.
+section: 4.1.3
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

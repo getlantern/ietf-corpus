@@ -1,0 +1,10 @@
+document: rfc-7401
+kind: security-consideration
+summary: Both the Initiator's and Responder's HITs are transported in cleartext in BEX packets, allowing an eavesdropper with a priori knowledge of the parties to identify them. Encrypting the Initiator's HI in I2 does not provide privacy against such an attacker and may interfere with packet-inspecting middleboxes.
+section: "1.2"
+topics:
+    - security
+    - privacy
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

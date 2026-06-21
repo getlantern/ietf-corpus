@@ -1,0 +1,10 @@
+document: rfc-7407
+kind: design-rationale
+summary: The YANG model omits the 'StorageType' and 'RowStatus' Textual Convention columns present in the corresponding SNMP MIBs. In NETCONF, persistency is determined by the datastore rather than per-row annotations, and row creation/deletion is handled by the protocol rather than the data model. This eliminates these MIB-specific constructs from the YANG representation.
+section: "2.2"
+topics:
+    - snmp
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

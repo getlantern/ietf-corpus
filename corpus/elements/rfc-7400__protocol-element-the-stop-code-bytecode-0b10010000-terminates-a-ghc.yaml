@@ -1,0 +1,8 @@
+document: rfc-7400
+kind: protocol-element
+summary: The stop code (bytecode 0b10010000) terminates a GHC-encoded extension header. It is required for extension headers because the Length field is elided and there is no other way to detect the end of the compressed header; it is not needed for final payloads, which end with the packet.
+section: "3.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

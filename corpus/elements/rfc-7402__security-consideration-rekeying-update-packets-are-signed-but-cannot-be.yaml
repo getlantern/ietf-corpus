@@ -1,0 +1,9 @@
+document: rfc-7402
+kind: security-consideration
+summary: Rekeying UPDATE packets are signed but cannot be encrypted because intermediate systems using the SPI must be able to inspect the new SPI values they carry. This is an explicit design tradeoff between middlebox support and confidentiality of rekeying information.
+section: 5.3.1
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

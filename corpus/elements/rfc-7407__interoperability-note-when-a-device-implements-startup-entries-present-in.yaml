@@ -1,0 +1,9 @@
+document: rfc-7407
+kind: interoperability-note
+summary: When a device implements :startup, entries present in 'running' but not 'startup' should be mapped with StorageType 'volatile', while entries in 'startup' but not 'running' should not appear in the default SNMP context. This asymmetry requires special handling to correctly reflect datastore state over SNMP.
+section: "3.1"
+topics:
+    - snmp
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

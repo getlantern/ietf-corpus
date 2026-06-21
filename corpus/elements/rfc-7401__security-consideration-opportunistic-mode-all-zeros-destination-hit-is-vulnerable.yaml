@@ -1,0 +1,10 @@
+document: rfc-7401
+kind: security-consideration
+summary: Opportunistic mode (all-zeros destination HIT) is vulnerable to man-in-the-middle attacks because the Initiator has no a priori public key information about the peer. An on-path attacker can insert itself by providing its own HI. However, subsequent datagrams within the same HIP association cannot be MitM-compromised after the BEX completes.
+section: 4.1.8
+topics:
+    - security
+    - ip
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

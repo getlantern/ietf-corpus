@@ -1,0 +1,8 @@
+document: rfc-7401
+kind: design-rationale
+summary: The HIT (a fixed 128-bit hash) is used as the operational protocol identifier instead of the variable-length public key (HI) because different algorithms produce keys of different lengths, making the raw HI unsuitable as a packet identifier or state index. The HIT also provides a consistent format independent of the underlying identity technology.
+section: "3.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

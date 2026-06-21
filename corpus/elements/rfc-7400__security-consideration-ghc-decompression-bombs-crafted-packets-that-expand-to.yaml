@@ -1,0 +1,9 @@
+document: rfc-7400
+kind: security-consideration
+summary: GHC decompression bombs (crafted packets that expand to consume excessive resources) are bounded by the MTU. Worst-case GHC amplification is 17x, enabling an MTU-size packet to be generated from a 76-byte 6LoWPAN packet, potentially turning a 250 kbit/s 802.15.4 network into a 3.8 Mbit/s attacker at the edge router. All such attacks are mitigated by network access control.
+section: "5"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7407
+kind: interoperability-note
+summary: The persistency models of NETCONF (datastore-based) and SNMP (StorageType per row) are incompatible, making simultaneous NETCONF and SNMP write access to the same data challenging. Configuration data may exist across up to three NETCONF datastores (running, candidate, startup) and must be mapped to SNMP table rows with appropriate StorageType values; no single recommended solution is provided.
+section: "3"
+topics:
+    - snmp
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

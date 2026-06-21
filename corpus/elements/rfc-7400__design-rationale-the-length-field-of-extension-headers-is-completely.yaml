@@ -1,0 +1,8 @@
+document: rfc-7400
+kind: design-rationale
+summary: The Length field of extension headers is completely elided (not compressed, but omitted) in GHC encoding and reconstructed only on decompression. This is the easiest and most efficient approach given that the length cannot be extracted before decoding the GHC bytecodes.
+section: "3.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

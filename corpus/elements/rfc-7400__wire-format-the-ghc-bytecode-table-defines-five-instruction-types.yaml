@@ -1,0 +1,8 @@
+document: rfc-7400
+kind: wire-format
+summary: 'The GHC bytecode table defines five instruction types encoded in a single code byte: literal copy (0kkkkkkk, k<96 bytes of data follow), zero-fill (1000nnnn, appends nnnn+2 zero bytes), stop code (10010000), extended backreference setup (101nssss, modifies sa/na variables), and backreference (11nnnkkk, copies n=na+nnn+2 bytes from s=kkk+sa+n bytes back in the output buffer).'
+section: "2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
