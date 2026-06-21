@@ -1,0 +1,8 @@
+document: rfc-7143
+kind: wire-format
+summary: 'Additional Header Segments (AHS) follow the BHS and are 4-byte aligned. Each AHS has a 2-byte AHSLength (excluding the 4-byte AHS header), 1-byte AHSType, and 1-byte AHSSpecific field followed by variable-length data. Two types are defined: Extended CDB AHS (0x01) for CDBs exceeding 16 bytes, and Bidirectional Read Expected Data Transfer Length AHS (0x02).'
+section: 11.2.2
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

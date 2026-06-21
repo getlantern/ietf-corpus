@@ -1,0 +1,8 @@
+document: rfc-7143
+kind: state-machine
+summary: Standard connection states are FREE (initial/terminal), XPT_WAIT (TCP SYN sent), XPT_UP (TCP established), IN_LOGIN (login negotiation), LOGGED_IN (full feature phase), IN_LOGOUT (logout in progress), LOGOUT_REQUESTED (async logout requested by target), and CLEANUP_WAIT (awaiting connection cleanup). Transitions are triggered by TCP events, Login PDU exchanges, Logout PDUs, and timeout/error events.
+section: "8.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

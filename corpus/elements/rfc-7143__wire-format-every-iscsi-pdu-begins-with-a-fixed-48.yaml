@@ -1,0 +1,8 @@
+document: rfc-7143
+kind: wire-format
+summary: 'Every iSCSI PDU begins with a fixed 48-byte Basic Header Segment (BHS): byte 0 carries the I (immediate) bit and 6-bit Opcode; byte 1 carries the F (Final) bit and opcode-specific flags; bytes 4–7 carry TotalAHSLength (1 byte) and DataSegmentLength (3 bytes); bytes 8–15 carry the LUN; bytes 16–19 carry the Initiator Task Tag; remaining bytes are opcode-specific. All PDUs MUST be padded to 4-byte boundaries.'
+section: 11.2.1
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

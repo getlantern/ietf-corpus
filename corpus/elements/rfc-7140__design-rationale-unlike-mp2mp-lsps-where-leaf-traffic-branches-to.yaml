@@ -1,0 +1,9 @@
+document: rfc-7140
+kind: design-rationale
+summary: Unlike MP2MP LSPs where leaf traffic branches to all other leaf nodes, in an HSMP LSP traffic from a leaf is sent only to the root, which then redistributes it on the P2MP downstream path to all leaves including the original sender. This hub-and-spoke topology prevents direct leaf-to-leaf communication by design.
+section: "3"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

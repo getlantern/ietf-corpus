@@ -1,0 +1,8 @@
+document: rfc-7139
+kind: design-rationale
+summary: The ODUflex(CBR) bit rate tolerance (100 ppm) is implicit in the Signal Type and not explicitly signaled, while the nominal bit rate is signaled as an IEEE 754 single-precision float. This allows nodes to compute the exact number of tributary slots for each HO ODUk link independently, since TS bit rates differ between ODU2, ODU3, and ODU4.
+section: "5.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

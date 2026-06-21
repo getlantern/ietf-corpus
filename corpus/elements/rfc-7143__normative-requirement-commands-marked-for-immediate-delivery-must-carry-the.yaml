@@ -1,0 +1,9 @@
+document: rfc-7143
+kind: normative-requirement
+summary: Commands marked for immediate delivery MUST carry the current CmdSN, and the CmdSN MUST NOT advance after such a command is sent. The target MUST NOT transmit a MaxCmdSN less than ExpCmdSN − 1, and MUST silently ignore non-immediate commands outside the ExpCmdSN-to-MaxCmdSN window.
+section: 4.2.2.1
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

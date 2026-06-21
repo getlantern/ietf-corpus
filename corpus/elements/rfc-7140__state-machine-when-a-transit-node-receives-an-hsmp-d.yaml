@@ -1,0 +1,9 @@
+document: rfc-7140
+kind: state-machine
+summary: When a transit node receives an HSMP-D Label Withdraw, it deletes the label from downstream forwarding state, sends a Label Release to the withdrawing node, and if no state remains for <X,Y>, propagates the Label Withdraw upstream. If all downstream nodes are released and no incoming interface remains, it sends an HSMP-U Label Release upstream.
+section: 3.5.2
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

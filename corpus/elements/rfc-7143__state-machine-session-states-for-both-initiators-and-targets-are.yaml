@@ -1,0 +1,8 @@
+document: rfc-7143
+kind: state-machine
+summary: Session states for both initiators and targets are FREE (no session), LOGGED_IN (at least one connection in LOGGED_IN state), and FAILED (all connections failed, session not yet timed out or reinstated). The session enters LOGGED_IN on the first connection reaching LOGGED_IN, and returns to FREE via explicit logout or session timeout/reinstatement.
+section: "8.3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

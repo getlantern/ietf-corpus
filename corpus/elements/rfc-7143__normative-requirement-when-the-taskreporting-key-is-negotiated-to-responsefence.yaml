@@ -1,0 +1,9 @@
+document: rfc-7143
+kind: normative-requirement
+summary: When the TaskReporting key is negotiated to ResponseFence or FastAbort on a multi-connection session, the target iSCSI layer MUST NOT send a fenced SCSI Response PDU until acknowledgments are received for all unacknowledged StatSNs on every session connection. All subsequent responses for the affected I_T_L nexus MUST be queued until the fence is cleared.
+section: 4.2.2.3.3
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

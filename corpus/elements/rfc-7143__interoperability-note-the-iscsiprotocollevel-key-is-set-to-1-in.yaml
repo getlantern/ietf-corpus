@@ -1,0 +1,8 @@
+document: rfc-7143
+kind: interoperability-note
+summary: The iSCSIProtocolLevel key is set to '1' in RFC 7143 to distinguish implementations from RFC 3720 (level 0). When the TaskReporting negotiation results in 'RFC3720' or 'NotUnderstood', the peer is an RFC 3720-only implementation. Initiators SHOULD NOT use ACA on multi-connection sessions with such targets due to absence of ACA-related response fencing in RFC 3720.
+section: 4.2.2.3.4
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

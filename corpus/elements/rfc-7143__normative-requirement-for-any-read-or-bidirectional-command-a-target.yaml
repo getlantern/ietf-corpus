@@ -1,0 +1,9 @@
+document: rfc-7143
+kind: normative-requirement
+summary: For any read or bidirectional command, a target MUST issue fewer than 2**32 combined R2T and Data-In PDUs. Any output data sequence MUST contain fewer than 2**32 Data-Out PDUs. DataSN starts at 0 for the first PDU of a sequence and advances by 1 for each subsequent PDU.
+section: 4.2.2.4
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

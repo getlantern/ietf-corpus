@@ -1,0 +1,8 @@
+document: rfc-7143
+kind: design-rationale
+summary: FastAbort multi-task abort semantics were introduced so that after issuing a multi-task abort TMF, an initiator can immediately issue new commands without waiting for per-task cleanup confirmations from third-party sessions. The standard abort model required the initiator to wait for explicit per-task completion acknowledgments, creating a significant latency penalty during error recovery.
+section: 4.2.3.4
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,9 @@
+document: rfc-7140
+kind: design-rationale
+summary: On HSMP LSPs, a transit node distributes the same upstream label Lu' to all downstream nodes, whereas MP2MP LSPs require a distinct label per downstream node. This simplification is valid because upstream packets from any downstream node are forwarded only toward the root, not branched to other downstream nodes.
+section: 3.4.2
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-7140
+kind: normative-requirement
+summary: For LSP Ping of an HSMP LSP, the root node sending an Echo Request MUST attach the Target FEC Stack TLV with the HSMP-downstream FEC type and MUST set the R flag (Validate Reverse Path) to '1' in the Global Flags field. When the leaf node receives the Echo Request, it MUST send the Echo Reply along the associated HSMP upstream path.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

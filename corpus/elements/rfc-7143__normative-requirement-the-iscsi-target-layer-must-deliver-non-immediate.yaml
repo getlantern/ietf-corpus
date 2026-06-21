@@ -1,0 +1,9 @@
+document: rfc-7143
+kind: normative-requirement
+summary: The iSCSI target layer MUST deliver non-immediate commands for execution in the order specified by CmdSN. An initiator MUST send commands in increasing CmdSN order on any connection, except for retransmissions. Comparisons and arithmetic on CmdSN, ExpCmdSN, and MaxCmdSN MUST use Serial Number Arithmetic per RFC 1982 with SERIAL_BITS=32.
+section: 4.2.2.1
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

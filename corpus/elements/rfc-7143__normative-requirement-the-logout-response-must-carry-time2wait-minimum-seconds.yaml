@@ -1,0 +1,9 @@
+document: rfc-7143
+kind: normative-requirement
+summary: The Logout Response MUST carry Time2Wait (minimum seconds before attempting a new connection) and Time2Retain (maximum seconds during which connection or task resources are retained for recovery). Initiators MUST NOT attempt to reuse resources or reconnect until Time2Wait seconds have elapsed after receiving a Logout Response.
+section: "11.15"
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
