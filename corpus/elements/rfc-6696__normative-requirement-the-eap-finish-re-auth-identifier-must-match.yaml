@@ -1,0 +1,9 @@
+document: rfc-6696
+kind: normative-requirement
+summary: The EAP-Finish/Re-auth Identifier MUST match that of the currently outstanding EAP-Initiate message; a mismatched Identifier MUST cause silent discard. If the authenticator receives a valid duplicate EAP-Initiate/Re-auth for which it already sent a finish, it MUST resend the stored EAP-Finish/Re-auth without reprocessing.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

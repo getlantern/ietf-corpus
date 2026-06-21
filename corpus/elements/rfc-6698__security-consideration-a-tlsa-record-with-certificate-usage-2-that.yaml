@@ -1,0 +1,10 @@
+document: rfc-6698
+kind: security-consideration
+summary: A TLSA record with certificate usage 2 that matches a revoked certificate effectively overrides revocation checking because the client treats the matched certificate as a trust anchor and does not check its revocation status. Domain administrators using usage 2 bear responsibility for ensuring those certificates remain trustworthy.
+section: "8"
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

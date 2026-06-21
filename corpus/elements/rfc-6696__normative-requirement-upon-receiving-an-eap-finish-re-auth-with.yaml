@@ -1,0 +1,10 @@
+document: rfc-6696
+kind: normative-requirement
+summary: Upon receiving an EAP-Finish/Re-auth with Result flag set to '1', the peer MUST verify the sequence number and, if possible, the authentication tag. If the message contains a cryptosuite list TLV (Type=5), the peer SHOULD retry ERP using a cryptosuite from that list, deriving a new rIK (and rRK/DSRK if the PRF changes) before retrying.
+section: 5.2.2
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

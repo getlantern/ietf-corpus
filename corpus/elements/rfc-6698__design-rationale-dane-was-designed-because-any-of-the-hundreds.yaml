@@ -1,0 +1,11 @@
+document: rfc-6698
+kind: design-rationale
+summary: 'DANE was designed because any of the hundreds of public CAs can issue a certificate for any domain name, meaning a single compromised CA can undermine TLS security globally. DNSSEC restricts assertions to keys within the signing zone''s hierarchy, implementing the principle of least privilege: only the zone''s own DNS administrator can assert certificate bindings for that zone.'
+section: "1.1"
+topics:
+    - tls
+    - security
+    - pkix
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

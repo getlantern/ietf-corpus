@@ -1,0 +1,8 @@
+document: rfc-6696
+kind: interoperability-note
+summary: Lower-layer specifications (including IKEv2/RFC 5996) must be revised to carry EAP messages with code values higher than 4 and to support peer-initiated ERP. Some non-RFC-3748-compliant EAP implementations treat code values > 4 as errors rather than silently discarding them; lower layers SHOULD ensure both parties support ERP or fall back to full EAP authentication.
+section: "6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

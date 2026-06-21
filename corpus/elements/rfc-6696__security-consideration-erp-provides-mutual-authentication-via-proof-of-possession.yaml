@@ -1,0 +1,9 @@
+document: rfc-6696
+kind: security-consideration
+summary: ERP provides mutual authentication via proof of possession of the rIK. Both EAP-Initiate/Re-auth and EAP-Finish/Re-auth messages are integrity-protected. When no valid rIK exists for the peer, a cryptosuite rejection EAP-Finish/Re-auth message is unauthenticated, meaning an attacker could tamper with the offered cryptosuite list without detection.
+section: "8"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

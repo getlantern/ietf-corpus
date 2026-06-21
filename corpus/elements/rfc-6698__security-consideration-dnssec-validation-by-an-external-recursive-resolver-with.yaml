@@ -1,0 +1,9 @@
+document: rfc-6698
+kind: security-consideration
+summary: DNSSEC validation by an external recursive resolver, with the AD bit set but no authenticated channel to the client, can be trivially spoofed. Even with a secure channel, a compromised external validator can falsify DNSSEC data. For best security, DNSSEC validation should be performed on-host.
+section: "8.3"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

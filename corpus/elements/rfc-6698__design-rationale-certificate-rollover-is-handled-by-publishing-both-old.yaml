@@ -1,0 +1,9 @@
+document: rfc-6698
+kind: design-rationale
+summary: Certificate rollover is handled by publishing both old and new TLSA records simultaneously (pre-publish method, analogous to DNSSEC key rollover), waiting for TTL expiry before switching the server certificate, and then removing the old TLSA record. This avoids client downtime during the transition.
+section: A.4
+topics:
+    - dns
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

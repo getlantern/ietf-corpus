@@ -1,0 +1,8 @@
+document: rfc-6704
+kind: state-machine
+summary: During capability negotiation, the client includes FORCERENEW_NONCE_CAPABLE in DISCOVER and REQUEST; upon receiving an ACK with the nonce, the client stores it and enters the bound state. On receiving a FORCERENEW, the client validates the HMAC-MD5 using the stored nonce, then transitions back through REQUEST/ACK to obtain a new nonce, or discards the message and stays bound if validation fails. If the server fails to respond at T1, the client enters REBINDING and a new server MUST generate a fresh nonce.
+section: "3.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

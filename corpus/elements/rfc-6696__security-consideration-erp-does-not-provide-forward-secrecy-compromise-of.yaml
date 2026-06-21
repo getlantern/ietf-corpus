@@ -1,0 +1,9 @@
+document: rfc-6696
+kind: security-consideration
+summary: ERP does not provide forward secrecy. Compromise of a DSRK retroactively compromises all ERP keys derived from it. The AAA protocol carrying DSRKs and rMSKs is RECOMMENDED to be protected using IPsec or TLS, but hop-by-hop protection means compromise of any AAA proxy in the path can expose key material.
+section: "8"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

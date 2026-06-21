@@ -1,0 +1,11 @@
+document: rfc-6698
+kind: normative-requirement
+summary: Clients that validate DNSSEC signatures themselves MUST use standard DNSSEC validation procedures. Clients relying on an external validator MUST use a secure mechanism (e.g., TSIG, SIG(0), IPsec) between themselves and the validator; using secure transport to a non-validating resolver is not sufficient.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

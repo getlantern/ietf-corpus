@@ -1,0 +1,9 @@
+document: rfc-6704
+kind: design-rationale
+summary: HMAC-MD5 was chosen without providing an extensible HMAC mechanism because on-link attackers can trivially observe DHCP renewal traffic regardless of the algorithm, making stronger algorithms unnecessary; the only relevant threat is off-network attackers, for whom any HMAC with a secret nonce suffices.
+section: "5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

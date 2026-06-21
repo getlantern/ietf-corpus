@@ -1,0 +1,10 @@
+document: rfc-6712
+kind: security-consideration
+summary: There is a denial-of-service risk through resource exhaustion by opening many connections to an HTTP server. Idle connections should be terminated after an appropriate timeout, and the server should close the connection after sending a CMP Error Message even if the transaction is incomplete.
+section: "5"
+topics:
+    - security
+    - http
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

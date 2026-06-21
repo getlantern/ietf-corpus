@@ -1,0 +1,9 @@
+document: rfc-6712
+kind: design-rationale
+summary: Chunked Transfer-Encoding is discouraged because the length of an ASN.1 sequence is known before transmission begins, making chunking unnecessary overhead. The Expect/100-continue mechanism is also unnecessary since CMP payloads are small and servers seldom reject without evaluating the body.
+section: "3.8"
+topics:
+    - http
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

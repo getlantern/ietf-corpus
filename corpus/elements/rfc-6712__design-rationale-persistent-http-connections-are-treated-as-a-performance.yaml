@@ -1,0 +1,9 @@
+document: rfc-6712
+kind: design-rationale
+summary: Persistent HTTP connections are treated as a performance optimization only, not as a mechanism to correlate CMP messages or transactions. CMP's own transaction ID handles multi-message transaction correlation, making HTTP statefulness unnecessary.
+section: "3.2"
+topics:
+    - http
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

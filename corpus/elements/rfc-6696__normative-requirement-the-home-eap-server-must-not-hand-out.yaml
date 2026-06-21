@@ -1,0 +1,10 @@
+document: rfc-6696
+kind: normative-requirement
+summary: The home EAP server MUST NOT hand out a given DSRK to a local domain server more than once unless it can verify the receiving entity is the same one that received it originally. If authorization is verified, the server MAY hand out the DSRK again and SHOULD include the Authorization Indication TLV (Type=6) to assure the peer that delivery is secure.
+section: "8"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

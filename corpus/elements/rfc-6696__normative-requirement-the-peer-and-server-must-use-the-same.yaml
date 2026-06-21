@@ -1,0 +1,10 @@
+document: rfc-6696
+kind: normative-requirement
+summary: The peer and server MUST use the same integrity algorithm with a given rIK for all ERP messages protected by that key. If the server's policy disallows the cryptosuite selected by the peer, the server SHALL reject the EAP-Initiate/Re-auth message and SHOULD send a list of acceptable cryptosuites in the EAP-Finish/Re-auth failure response.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

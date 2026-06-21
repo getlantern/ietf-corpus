@@ -1,0 +1,10 @@
+document: rfc-6698
+kind: design-rationale
+summary: Selector type 1 (SubjectPublicKeyInfo) is preferred over selector type 0 (full certificate) when associating with CA or intermediate certificates, because TLS clients may rebuild trust chains using locally cached or AIA-retrieved reissued certificates that share the same public key but differ in signature algorithm or extensions, causing full-certificate associations to fail with false negatives.
+section: A.1.2
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

@@ -1,0 +1,10 @@
+document: rfc-6698
+kind: normative-requirement
+summary: If an application has TLSA use turned on and a request for a TLSA record returns neither a valid signed response nor verification that the domain is insecure/indeterminate, the application either MUST NOT start a TLS connection or MUST abort the TLS handshake, and SHOULD NOT indicate that TLSA was applied.
+section: "4.1"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

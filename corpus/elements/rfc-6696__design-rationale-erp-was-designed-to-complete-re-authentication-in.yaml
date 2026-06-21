@@ -1,0 +1,9 @@
+document: rfc-6696
+kind: design-rationale
+summary: ERP was designed to complete re-authentication in less than 2 round trips, preferably with a local server, to support low-latency handovers. Full EAP exchanges take several round trips; method-specific re-authentication requires at least 2 round trips with the original EAP server; and key sharing across authenticators risks compromise propagation, making a dedicated method-independent protocol necessary.
+section: "1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

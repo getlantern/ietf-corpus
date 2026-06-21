@@ -1,0 +1,8 @@
+document: rfc-6704
+kind: security-consideration
+summary: The Forcerenew Nonce Authentication protocol protects against off-network attackers triggering DHCP renewal via spoofed FORCERENEW messages; since the attacker lacks the nonce exchanged in the initial ACK, it cannot forge a valid HMAC-MD5 digest. However, an on-link attacker can observe the renewal exchange directly, making the nonce ineffective against on-link threats.
+section: "5"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

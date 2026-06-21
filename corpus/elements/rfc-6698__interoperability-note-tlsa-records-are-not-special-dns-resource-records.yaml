@@ -1,0 +1,9 @@
+document: rfc-6698
+kind: interoperability-note
+summary: TLSA records are not special DNS resource records; they follow standard DNS aliasing rules. A CNAME on the prefixed name (e.g., _443._tcp.host) aliases the TLSA lookup, but a CNAME on the base host name alone does not alias TLSA lookups at the prefixed name. DNAME records can alias entire _tcp subtrees.
+section: A.2.1
+topics:
+    - dns
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

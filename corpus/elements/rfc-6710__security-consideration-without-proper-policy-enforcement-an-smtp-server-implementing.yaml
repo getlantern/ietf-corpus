@@ -1,0 +1,9 @@
+document: rfc-6710
+kind: security-consideration
+summary: Without proper policy enforcement, an SMTP server implementing this extension is susceptible to denial-of-service attacks where malicious clients always request priority 9 to obtain preferential treatment. MSAs and MTAs must authenticate and authorize senders before accepting elevated priority values.
+section: "11"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

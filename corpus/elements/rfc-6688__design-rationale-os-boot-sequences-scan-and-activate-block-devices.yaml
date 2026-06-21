@@ -1,0 +1,9 @@
+document: rfc-6688
+kind: design-rationale
+summary: OS boot sequences scan and activate block devices (e.g., SCSI) before activating the NFS/pNFS client, creating a window during which the client OS may modify a pNFS block device without contacting the server. This document specifies a GPT-based identification mechanism to close this vulnerability at boot time.
+section: "1"
+topics:
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

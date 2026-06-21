@@ -1,0 +1,11 @@
+document: rfc-6698
+kind: security-consideration
+summary: DANE's security depends entirely on DNSSEC integrity. A rogue DNS administrator who can modify A/AAAA and TLSA records can redirect clients to unauthorized servers, but PKIX certificate path validation (for usages 0 and 1) limits the damage. A weaker authentication mechanism for TLSA records than for A/AAAA records creates an additional man-in-the-middle vector.
+section: "8"
+topics:
+    - dns
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"
