@@ -1,0 +1,10 @@
+document: rfc-7670
+kind: wire-format
+summary: 'For RSA keys, the SubjectPublicKeyInfo BIT STRING begins with 0x00 (no unused bits), followed by an ASN.1 SEQUENCE containing two INTEGERs: the modulus (prefixed with 0x00 to avoid sign ambiguity) and the public exponent. The OID rsaEncryption (1.2.840.113549.1.1.1) with NULL parameters precedes the BIT STRING.'
+section: A.2
+topics:
+    - ipsec
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

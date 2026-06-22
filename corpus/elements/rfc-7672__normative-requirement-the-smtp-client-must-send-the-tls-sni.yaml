@@ -1,0 +1,10 @@
+document: rfc-7672
+kind: normative-requirement
+summary: The SMTP client MUST send the TLS SNI extension containing the TLSA base domain to ensure the server sends the correct certificate chain. Servers MUST NOT enforce the use of SNI by clients; if the client sends no SNI or an SNI for an unsupported domain, the server MUST send a fallback certificate chain.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

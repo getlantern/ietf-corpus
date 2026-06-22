@@ -1,0 +1,10 @@
+document: rfc-7670
+kind: design-rationale
+summary: 'RFC 5996 supported only PKCS #1 encoded RSA raw public keys in IKEv2; RFC 7296 removed that support entirely. This document reintroduces raw public keys in a generic, algorithm-agnostic form using the SubjectPublicKeyInfo structure from PKIX so that all current and future public-key types (e.g., ECDSA) are automatically supported without further IKEv2 changes.'
+section: "1"
+topics:
+    - ipsec
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

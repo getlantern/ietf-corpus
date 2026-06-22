@@ -1,0 +1,11 @@
+document: rfc-7672
+kind: normative-requirement
+summary: The SMTP client MUST perform A and/or AAAA queries for the destination before attempting to locate TLSA records. If address records are found but the DNSSEC validation status of the first response is 'insecure', the client SHOULD NOT proceed to search for TLSA records.
+section: 2.2.2
+rfc2119_level: MUST
+topics:
+    - dns
+    - email
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

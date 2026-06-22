@@ -1,0 +1,10 @@
+document: rfc-7672
+kind: design-rationale
+summary: TLSA records with matching type Full(0) are discouraged for DANE-TA(2) because client implementations may not be able to augment the server certificate chain with DNS-supplied data, especially for bare-key SPKI(1) selectors. Servers should publish non-Full(0) matching types to avoid interoperability issues with large TLSA records.
+section: 3.1.2
+topics:
+    - tls
+    - email
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

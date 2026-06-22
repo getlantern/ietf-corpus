@@ -1,0 +1,10 @@
+document: rfc-7673
+kind: interoperability-note
+summary: Servers using only DANE-EE TLSA records may prevent clients that do not support this specification from successfully connecting with TLS, since those clients will check the certificate against the service domain name per RFC 6125. SNI support or its functional equivalent is therefore necessary for backward compatibility in multi-tenanted environments.
+section: "6"
+topics:
+    - tls
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

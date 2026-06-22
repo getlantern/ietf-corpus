@@ -1,0 +1,10 @@
+document: rfc-7671
+kind: design-rationale
+summary: Supporting all four TLSA certificate usages simultaneously is not recommended because an attacker who can compromise DNSSEC needs only to replace PKIX-type records with DANE-type records, meaning PKIX-TA(0) and PKIX-EE(1) provide only illusory incremental security when DANE-TA(2) and DANE-EE(3) are also supported.
+section: "4"
+topics:
+    - tls
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

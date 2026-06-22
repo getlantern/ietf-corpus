@@ -1,0 +1,10 @@
+document: rfc-7672
+kind: interoperability-note
+summary: Some large email provider nameservers mishandle TLSA queries for unsigned zones, returning SERVFAIL or NOTIMP instead of NXDOMAIN. To avoid consistent delivery failures, the SMTP client MUST perform A/AAAA lookups before TLSA lookups; if address records are 'insecure', TLSA lookup SHOULD be skipped.
+section: 2.2.2
+topics:
+    - dns
+    - email
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

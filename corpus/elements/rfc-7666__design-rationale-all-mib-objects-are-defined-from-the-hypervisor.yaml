@@ -1,0 +1,8 @@
+document: rfc-7666
+kind: design-rationale
+summary: All MIB objects are defined from the hypervisor operator's viewpoint (resource allocation), not the VM operator's viewpoint (resource utilization). For example, vmNetworkIfIndex 'in'/'out' directions mean from-VM-to-hypervisor and from-hypervisor-to-VM, and vmStorageAllocatedSize reflects what the hypervisor has allocated rather than what the guest OS actually uses.
+section: "3"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

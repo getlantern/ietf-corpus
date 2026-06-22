@@ -1,0 +1,12 @@
+document: rfc-7671
+kind: normative-requirement
+summary: With DANE-EE(3), the server MUST be considered authenticated even if none of the names in the certificate match the client's reference identity. Additionally, the expiration date of the server certificate MUST be ignored; validity is determined solely by the TLSA record's DNSSEC signatures.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - dns
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

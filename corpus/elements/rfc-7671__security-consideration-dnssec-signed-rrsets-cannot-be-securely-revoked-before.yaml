@@ -1,0 +1,10 @@
+document: rfc-7671
+kind: security-consideration
+summary: DNSSEC-signed RRsets cannot be securely revoked before they expire, so operators must use short DNSSEC signature lifetimes (a few days for high-value keys, a few weeks for less critical data) and re-sign zones frequently. Short signature lifetimes require tight synchronization of primary and secondary nameservers.
+section: "11"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

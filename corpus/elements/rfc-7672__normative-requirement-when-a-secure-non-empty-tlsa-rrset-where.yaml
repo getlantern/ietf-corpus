@@ -1,0 +1,11 @@
+document: rfc-7672
+kind: normative-requirement
+summary: When a 'secure' non-empty TLSA RRset where all records are unusable is found, any connection MUST be made via TLS, but authentication is not required. Failure to establish an encrypted TLS connection MUST result in falling back to the next SMTP server or delayed delivery.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - tls
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

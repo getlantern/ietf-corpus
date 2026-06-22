@@ -1,0 +1,10 @@
+document: rfc-7672
+kind: design-rationale
+summary: SMTP channel security must be opportunistic because email recipient addresses cannot encode transport security policy (unlike HTTPS URIs), STARTTLS offers over a cleartext connection can be trivially suppressed by an MITM attacker, and no TLS security feature can prevent a downgrade to cleartext in the pre-DANE model.
+section: 1.3.1
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

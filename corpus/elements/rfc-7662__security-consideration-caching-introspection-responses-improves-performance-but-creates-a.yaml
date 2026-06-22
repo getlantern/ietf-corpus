@@ -1,0 +1,9 @@
+document: rfc-7662
+kind: security-consideration
+summary: Caching introspection responses improves performance but creates a window where a revoked token could still be accepted at the protected resource. Highly sensitive environments should disable caching entirely; if the 'exp' claim is present, the cache MUST NOT be retained past that time.
+section: "4"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,12 @@
+document: rfc-7671
+kind: normative-requirement
+summary: When matching a usage PKIX-TA(0) TLSA record, a client MUST continue extending the chain even after finding a locally trusted certificate, and if that certificate is not self-issued, MUST attempt to build a longer chain in case a certificate closer to the root matches the TLSA record.
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - tls
+    - dns
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

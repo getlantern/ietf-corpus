@@ -1,0 +1,9 @@
+document: rfc-7674
+kind: design-rationale
+summary: RFC 5575 registered only a single codepoint (0x8008) for the Flowspec Redirect Extended Community without clearly specifying the Route Target format, leading to 'value wildcard' matching behavior at receiving routers. This ambiguity caused wrong VRF matching decisions because the format of the Route Target in the Redirect community was undefined.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

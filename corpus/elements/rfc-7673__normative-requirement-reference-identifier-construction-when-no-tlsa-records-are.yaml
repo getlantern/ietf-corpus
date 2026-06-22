@@ -1,0 +1,12 @@
+document: rfc-7673
+kind: normative-requirement
+summary: 'Reference identifier construction when no TLSA records are usable depends on SRV security: if SRV is insecure, identifiers SHALL include the service domain name and MUST NOT include the SRV target server hostname; if SRV is secure, identifiers SHALL include both the service domain name and the SRV target server hostname.'
+section: "4.1"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - pkix
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

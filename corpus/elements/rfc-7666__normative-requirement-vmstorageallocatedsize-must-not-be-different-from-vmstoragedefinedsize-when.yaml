@@ -1,0 +1,9 @@
+document: rfc-7666
+kind: normative-requirement
+summary: vmStorageAllocatedSize MUST NOT be different from vmStorageDefinedSize when vmStorageSourceType is 'block' or 'raw', because block devices and raw files have no thin-provisioning gap. Both values MUST be set to -1 if the information is unavailable.
+section: "6.1"
+rfc2119_level: MUST NOT
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

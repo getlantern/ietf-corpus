@@ -1,0 +1,12 @@
+document: rfc-7673
+kind: normative-requirement
+summary: If the TLS server certificate or its public key matches a usable TLSA record with certificate usage DANE-EE, the client MUST ignore PKIX validation checks (RFC 5280) and reference identifier checks (RFC 6125), since the DANE-EE record supersedes non-key information in the certificate.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - tls
+    - pkix
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

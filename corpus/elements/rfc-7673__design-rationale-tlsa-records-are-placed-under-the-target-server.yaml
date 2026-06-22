@@ -1,0 +1,10 @@
+document: rfc-7673
+kind: design-rationale
+summary: TLSA records are placed under the target server hostname (not the service domain name) because the certificate is part of server configuration, certificate replacement requires updating only one DNS location, and some protocols (e.g., SMTP) allow transactions with multiple service domains per connection making service-domain TLSA records infeasible.
+section: Appendix B
+topics:
+    - dns
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

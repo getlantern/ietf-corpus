@@ -1,0 +1,10 @@
+document: rfc-7673
+kind: protocol-element
+summary: The client SHALL construct the TLSA query name per RFC 6698 Section 3, using the port number from the SRV RDATA, the transport protocol from the SRV query name, and the TLSA base domain from the SRV target server hostname (not the service domain name). For example, SRV target imap.example.net on port 9143/tcp yields query _9143._tcp.imap.example.net TLSA.
+section: "3.3"
+topics:
+    - dns
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

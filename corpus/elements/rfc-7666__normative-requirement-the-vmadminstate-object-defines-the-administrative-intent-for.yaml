@@ -1,0 +1,9 @@
+document: rfc-7666
+kind: normative-requirement
+summary: 'The vmAdminState object defines the administrative intent for a VM (running, suspended, paused, shutdown), while vmOperState reflects the actual operational state. Writes to vmAdminState trigger state transitions; the resulting vmOperState changes generate notifications. Per-VM compliance requires mandatory groups: vmHypervisorGroup, vmVirtualMachineGroup, vmCpuGroup, vmCpuAffinityGroup, vmStorageGroup, and vmNetworkGroup.'
+section: "6.1"
+rfc2119_level: REQUIRED
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

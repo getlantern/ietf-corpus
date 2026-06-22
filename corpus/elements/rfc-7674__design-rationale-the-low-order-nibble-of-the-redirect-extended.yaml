@@ -1,0 +1,9 @@
+document: rfc-7674
+kind: design-rationale
+summary: The low-order nibble of the Redirect Extended Community's Type field is intentionally aligned with the Route Target Extended Community format field (Type), so that 0x00, 0x01, and 0x02 in the nibble correspond to 2-octet AS, IPv4, and 4-octet AS formats respectively. The Sub-Type is 0x08 for Redirect rather than 0x02 as used for Route Targets.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

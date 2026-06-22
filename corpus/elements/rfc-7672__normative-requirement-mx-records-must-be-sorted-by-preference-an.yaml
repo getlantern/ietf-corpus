@@ -1,0 +1,11 @@
+document: rfc-7672
+kind: normative-requirement
+summary: MX records MUST be sorted by preference. An MX hostname with a worse (numerically higher) preference that has TLSA records MUST NOT preempt one with a better (lower) preference that lacks TLSA records. Prevention of delivery loops by obeying MX preferences MUST take precedence over channel security.
+section: 2.2.1
+rfc2119_level: MUST NOT
+topics:
+    - email
+    - dns
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

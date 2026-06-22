@@ -1,0 +1,10 @@
+document: rfc-7666
+kind: security-consideration
+summary: Several read-only objects expose sensitive operational data about virtual machine configuration and resource utilization (vmOSType, vmStorageResourceID, vmNetworkPhysAddress, vmCpuTime, vmUpTime). Unauthorized read access to these objects could allow an attacker to enumerate VM inventory and hardware layout. SNMPv3 with view-based access control is recommended to limit exposure.
+section: "8"
+topics:
+    - security
+    - snmp
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

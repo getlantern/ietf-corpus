@@ -1,0 +1,11 @@
+document: rfc-7672
+kind: state-machine
+summary: 'TLS discovery defines four states based on TLSA lookup outcome: (1) secure usable TLSA → MUST authenticate via TLS or skip/delay; (2) secure all-unusable TLSA → MUST use TLS without authentication or skip/delay; (3) insecure or absent TLSA → SHOULD use opportunistic TLS, MAY fall back to cleartext; (4) any lookup error → MUST skip that server or delay delivery.'
+section: "2.2"
+topics:
+    - tls
+    - email
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

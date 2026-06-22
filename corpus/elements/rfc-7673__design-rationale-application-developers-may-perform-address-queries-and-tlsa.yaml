@@ -1,0 +1,10 @@
+document: rfc-7673
+kind: design-rationale
+summary: Application developers may perform address queries and TLSA queries in parallel to reduce connection latency. Because a TLSA record can be ignored if its corresponding address record is not 'secure', this parallelism is safe from a security perspective.
+section: "7"
+topics:
+    - dns
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

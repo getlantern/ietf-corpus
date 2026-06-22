@@ -1,0 +1,11 @@
+document: rfc-7673
+kind: security-consideration
+summary: Name checks are unnecessary when the matching TLSA record is certificate usage DANE-EE, as that record already identifies the specific certificate or public key. For other usage types, clients must check reference identifiers because DNSSEC+TLSA only binds to a CA, and third parties can obtain certificates from the same CA.
+section: "9.2"
+topics:
+    - security
+    - tls
+    - pkix
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

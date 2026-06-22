@@ -1,0 +1,11 @@
+document: rfc-7672
+kind: normative-requirement
+summary: Server operators MUST NOT implement selective STARTTLS (e.g., only with clients demonstrating 'proper MTA behavior' via greylisting) if they also publish DANE TLSA records, as this prevents DANE clients from completing the required TLS negotiation.
+section: "9.2"
+rfc2119_level: MUST NOT
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

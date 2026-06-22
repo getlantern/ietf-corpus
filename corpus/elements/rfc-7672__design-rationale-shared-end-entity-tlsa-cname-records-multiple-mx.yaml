@@ -1,0 +1,10 @@
+document: rfc-7672
+kind: design-rationale
+summary: Shared end-entity TLSA CNAME records (multiple MX hosts pointing to a common TLSA RRset bearing a shared end-entity certificate) SHOULD be avoided because they expose the domain to substitution attacks where an MITM can reroute traffic to a different server sharing the same certificate. Shared trust anchor (DANE-TA(2)) CNAMEs do not have this problem.
+section: 2.2.3
+topics:
+    - tls
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

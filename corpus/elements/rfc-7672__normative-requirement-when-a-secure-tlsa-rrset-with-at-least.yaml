@@ -1,0 +1,11 @@
+document: rfc-7672
+kind: normative-requirement
+summary: When a 'secure' TLSA RRset with at least one usable record is found, any connection to the MTA MUST employ TLS encryption and MUST authenticate the SMTP server. Failure to establish an authenticated TLS connection MUST result in falling back to the next SMTP server or delayed delivery.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - tls
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

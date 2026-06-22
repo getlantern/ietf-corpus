@@ -1,0 +1,10 @@
+document: rfc-7672
+kind: protocol-element
+summary: TLSA records are queried at '_<port>._tcp.<base-domain>'. The TLSA base domain is derived from the MX hostname (or its CNAME-expanded form); when a secure CNAME exists, the fully expanded name is tried first, then the unexpanded name. The first candidate yielding a secure TLSA RRset becomes the actual base domain.
+section: 2.2.3
+topics:
+    - dns
+    - tls
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,9 @@
+document: rfc-7662
+kind: design-rationale
+summary: 'Inactive or unauthorized tokens return HTTP 200 with ''active'': false rather than an HTTP error code to avoid disclosing authorization server state to third parties — an attacker cannot distinguish a revoked token from a non-existent one from the response alone.'
+section: "2.2"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

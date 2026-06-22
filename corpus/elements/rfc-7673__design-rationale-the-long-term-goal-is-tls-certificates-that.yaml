@@ -1,0 +1,10 @@
+document: rfc-7673
+kind: design-rationale
+summary: The long-term goal is TLS certificates that verify the target server hostname rather than the service domain name, as this scales better for multi-tenanted environments and simplifies server certificate management. The disadvantage is that non-DANE clients must use RFC 6125 name checks against the service domain name, requiring SNI support for backward compatibility.
+section: Appendix B
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

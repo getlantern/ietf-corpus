@@ -1,0 +1,11 @@
+document: rfc-7672
+kind: normative-requirement
+summary: SMTP servers relying on DANE-TA(2) TLSA records MUST include the TA certificate as part of the certificate chain presented in the TLS handshake server certificate message, even when it is a self-signed root certificate, because clients may not have it locally.
+section: 3.1.2
+rfc2119_level: MUST
+topics:
+    - tls
+    - email
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

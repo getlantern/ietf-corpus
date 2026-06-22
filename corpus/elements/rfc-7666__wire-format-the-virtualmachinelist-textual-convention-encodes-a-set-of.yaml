@@ -1,0 +1,8 @@
+document: rfc-7666
+kind: wire-format
+summary: The VirtualMachineList textual convention encodes a set of VM indices as an OCTET STRING bitfield. Each octet covers eight consecutive vmIndex values starting from the lowest; within each octet, the most significant bit represents the lowest-numbered vmIndex. A set bit means the VM is included. This type is used exclusively in bulk notifications via vmAffectedVMs.
+section: "6.1"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

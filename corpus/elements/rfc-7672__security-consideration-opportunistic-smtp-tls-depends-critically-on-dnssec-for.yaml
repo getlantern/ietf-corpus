@@ -1,0 +1,11 @@
+document: rfc-7672
+kind: security-consideration
+summary: Opportunistic SMTP TLS depends critically on DNSSEC for downgrade resistance. A successful DNSSEC breach allows an attacker to publish usage DANE-EE(3) certificate associations, bypassing any protection from PKIX-TA(0) or PKIX-EE(1) records; this further reinforces avoiding those usages in SMTP.
+section: "10"
+topics:
+    - security
+    - tls
+    - dns
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

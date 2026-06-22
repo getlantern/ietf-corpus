@@ -1,0 +1,8 @@
+document: rfc-7666
+kind: design-rationale
+summary: The bulk notification mechanism was designed to reduce the number of notifications trapped by an SNMP manager. In large data centers, thousands of VMs managed across many hypervisors could produce an unmanageable notification volume if per-VM notifications are used for every state change. Bulk notifications carry only a vmAffectedVMs bitmask and prompt the manager to poll for details.
+section: "4"
+topics:
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

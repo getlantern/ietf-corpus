@@ -1,0 +1,11 @@
+document: rfc-7671
+kind: interoperability-note
+summary: When a DANE-TA(2) TLSA record is a digest (not Full(0)), the TA certificate must be present in the TLS certificate chain because clients may ignore locally configured TAs and rely exclusively on certificates in the server's chain; without the TA certificate, authentication fails.
+section: 5.2.2
+topics:
+    - tls
+    - dns
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

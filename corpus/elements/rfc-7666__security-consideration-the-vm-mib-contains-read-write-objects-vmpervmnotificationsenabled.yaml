@@ -1,0 +1,9 @@
+document: rfc-7666
+kind: security-consideration
+summary: The VM-MIB contains read-write objects (vmPerVMNotificationsEnabled, vmBulkNotificationsEnabled) that could be exploited to suppress or flood notifications if unauthorized access is granted. Implementations MUST apply SNMP access-control mechanisms to restrict write access to these objects, and MUST use SNMPv3 with authentication and privacy to protect management traffic.
+section: "8"
+topics:
+    - security
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

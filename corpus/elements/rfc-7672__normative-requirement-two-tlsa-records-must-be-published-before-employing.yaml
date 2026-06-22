@@ -1,0 +1,12 @@
+document: rfc-7672
+kind: normative-requirement
+summary: 'Two TLSA records MUST be published before employing a new EE or TA public key or certificate: one matching the currently deployed key and one matching the new key. Servers may only switch to the new key after sufficient time for all DNS caches to expire the previous TLSA RRset.'
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tls
+    - dns
+    - email
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

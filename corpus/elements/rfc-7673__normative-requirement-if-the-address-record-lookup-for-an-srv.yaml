@@ -1,0 +1,11 @@
+document: rfc-7673
+kind: normative-requirement
+summary: If the address record lookup for an SRV target fails with a 'bogus' or 'indeterminate' validation status, the client MUST NOT connect to that connection endpoint and MUST use the next most appropriate SRV target, helping prevent downgrade attacks.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

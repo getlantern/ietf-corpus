@@ -1,0 +1,10 @@
+document: rfc-7671
+kind: security-consideration
+summary: When TLSA records are used with opportunistic protocols where PKIX-TA(0) and PKIX-EE(1) don't apply, servers SHOULD NOT publish such TLSA records. Clients that receive only PKIX-type TLSA records in this context treat them as unusable and fall back to unauthenticated TLS, which is still stronger than cleartext.
+section: "14"
+topics:
+    - tls
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"
