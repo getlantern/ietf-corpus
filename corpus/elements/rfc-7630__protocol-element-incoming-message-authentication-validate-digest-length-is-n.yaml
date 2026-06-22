@@ -1,0 +1,10 @@
+document: rfc-7630
+kind: protocol-element
+summary: 'Incoming message authentication: validate digest length is N octets (else return authenticationError), save MAC, replace with N zero octets, recompute HMAC, compare with saved MAC. Mismatch returns authenticationFailure. On success, restore saved MAC and return authenticatedWholeMsg.'
+section: 4.2.2
+topics:
+    - snmp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

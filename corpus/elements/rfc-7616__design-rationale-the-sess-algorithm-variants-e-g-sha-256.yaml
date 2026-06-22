@@ -1,0 +1,10 @@
+document: rfc-7616
+kind: design-rationale
+summary: The "-sess" algorithm variants (e.g., SHA-256-sess) hash the user credentials once and then incorporate the server and client nonces into A1, creating a per-session key. This limits the amount of material hashed with any one key and enables third-party authentication servers that need only H(A1) rather than the cleartext password.
+section: 3.4.2
+topics:
+    - http
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,10 @@
+document: rfc-7630
+kind: design-rationale
+summary: The HMAC-SHA-2 protocols use longer MAC outputs than the 12-octet truncation of HMAC-MD5-96 and HMAC-SHA-96 (ranging from 16 to 48 octets), reflecting advances in cryptanalysis and the larger internal state sizes of SHA-2 functions. The truncation lengths were chosen to remain at or above half the internal state size as required by RFC 2104.
+section: "4.1"
+topics:
+    - snmp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

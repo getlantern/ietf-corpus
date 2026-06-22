@@ -1,0 +1,8 @@
+document: rfc-7617
+kind: design-rationale
+summary: The default character encoding for user-pass is intentionally left undefined (as long as it is US-ASCII compatible) for backwards compatibility, because existing implementations used either locale-specific encodings like ISO-8859-1 or UTF-8, and mandating UTF-8 would break sites expecting the legacy encoding.
+section: "2"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

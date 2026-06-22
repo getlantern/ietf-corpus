@@ -1,0 +1,9 @@
+document: rfc-7619
+kind: security-consideration
+summary: Establishing an IPsec SA for an unauthenticated peer may accidentally circumvent packet filters or firewall rules, as ESP (protocol 50) or ESPinUDP (port 4500) traffic does not match filters defined for unencrypted traffic. IKE peers supporting unauthenticated IKE MUST pass all decrypted traffic through the same packet filters as plaintext traffic.
+section: "3.4"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

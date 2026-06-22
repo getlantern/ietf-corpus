@@ -1,0 +1,9 @@
+document: rfc-7618
+kind: state-machine
+summary: When the client has a previously allocated address and port set and its DHCP 4o6 IPv6 source address is unchanged, it enters the INIT-REBOOT state (per RFC 2131 Section 3.2) and MUST include OPTION_V4_PORTPARAMS with the requested port-set in the DHCPREQUEST flow. If the IPv6 source address changes, the client transitions back to DHCPDISCOVER.
+section: "6"
+topics:
+    - ip
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

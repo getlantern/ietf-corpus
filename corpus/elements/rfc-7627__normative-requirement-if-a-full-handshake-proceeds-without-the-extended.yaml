@@ -1,0 +1,10 @@
+document: rfc-7627
+kind: normative-requirement
+summary: If a full handshake proceeds without the extended master secret extension, the client or server MUST NOT export any key material based on the new master secret for any subsequent application-level authentication. In particular, it MUST disable RFC 5705 keying material export and any EAP relying on compound authentication.
+section: "5.4"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,10 @@
+document: rfc-7627
+kind: design-rationale
+summary: The session hash is defined to include all handshake messages up to and including ClientKeyExchange—but not CertificateVerify—because these messages capture all significant new-session content, and stopping at ClientKeyExchange allows the extended master secret to be computed immediately after the pre-master secret, enabling implementations to shred the temporary pre-master secret from memory as early as possible.
+section: "6.3"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

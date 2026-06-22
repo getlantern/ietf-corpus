@@ -1,0 +1,9 @@
+document: rfc-7628
+kind: design-rationale
+summary: The error sequence requires an extra client dummy message because some protocols and SASL implementations do not support both sending a SASL message and finalizing a SASL negotiation simultaneously; RFC 4422 Section 3.6 prohibits additional information in an unsuccessful authentication outcome, so the error is sent as a normal challenge.
+section: 3.2.3
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,9 @@
+document: rfc-7622
+kind: design-rationale
+summary: This document replaces stringprep (used in RFC 6122) with the PRECIS framework (RFC 7564) for XMPP address preparation, following the movement of internationalized domain names away from stringprep. Strict backward compatibility is not guaranteed because PRECIS handling is based on current Unicode properties rather than a hardcoded character table, so previously valid JIDs might become invalid or vice versa.
+section: "1"
+topics:
+    - realtime
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

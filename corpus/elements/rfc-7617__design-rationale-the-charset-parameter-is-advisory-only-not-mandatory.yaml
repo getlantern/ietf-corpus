@@ -1,0 +1,8 @@
+document: rfc-7617
+kind: design-rationale
+summary: The 'charset' parameter is advisory only (not mandatory on the client) and is defined only in challenges, not in credentials, because the credentials use the non-extensible token68 syntax. Switching the default to UTF-8 was rejected because sites using legacy encodings (ISO-8859-1) would break.
+section: B.3
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,9 @@
+document: rfc-7627
+kind: protocol-element
+summary: The TLS session hash is defined as session_hash = Hash(handshake_messages), where handshake_messages is the concatenation of all Handshake structures from ClientHello through ClientKeyExchange inclusive, including type and length fields. For TLS 1.2, Hash is the function used in Finished computation; for earlier versions, it is the concatenation of MD5 and SHA1.
+section: "3"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

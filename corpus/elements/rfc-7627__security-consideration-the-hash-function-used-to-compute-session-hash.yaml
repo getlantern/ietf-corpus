@@ -1,0 +1,11 @@
+document: rfc-7627
+kind: security-consideration
+summary: The Hash function used to compute session_hash must be collision resistant because distinct sessions require distinct session hashes. MD5 and SHA1 are NOT RECOMMENDED. TLS 1.2 ciphersuites use SHA-256 or better; earlier versions use the MD5+SHA1 concatenation as in the Finished message computation.
+section: "6.2"
+rfc2119_level: RECOMMENDED
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,10 @@
+document: rfc-7627
+kind: security-consideration
+summary: 'The triple handshake attack requires two preconditions: (1) the client connects to a malicious server (easily achieved in browser contexts), and (2) the pre-master secret is synchronized across two sessions (straightforward with RSA and DHE, also possible with ECDHE when arbitrary explicit curves or small subgroups are allowed, and with SRP/PSK under some conditions). Once master secrets are synchronized, session resumption, TLS exporters, channel bindings, and renegotiation all lose their security guarantees.'
+section: "6.1"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,9 @@
+document: rfc-7619
+kind: security-consideration
+summary: Existing IKEv2 DoS defenses (COOKIES per RFC 7296 Section 2.6) do not distinguish NULL-authenticated peers from legitimate peers; an attacker using NULL authentication is a fully legitimate IKE peer. Implementers must ensure no assumptions are made that IKE peers are 'friendly', 'trusted', or 'identifiable'.
+section: "3.2"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

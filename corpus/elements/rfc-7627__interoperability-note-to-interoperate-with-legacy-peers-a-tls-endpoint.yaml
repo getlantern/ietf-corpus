@@ -1,0 +1,8 @@
+document: rfc-7627
+kind: interoperability-note
+summary: To interoperate with legacy peers, a TLS endpoint may accept full handshakes using the legacy master secret computation, but it must differentiate such sessions from extended-master-secret sessions by adding a flag to session state. Sessions without the extension are vulnerable to key-synchronization attacks and must not be used for application-level authentication.
+section: "5.4"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

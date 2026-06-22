@@ -1,0 +1,9 @@
+document: rfc-7616
+kind: design-rationale
+summary: The URI is duplicated in the Authorization header field (even though it is already in the Request-Line) to protect against intermediate proxies that may alter the request target in transit; the digest over the client's original URI lets the server detect such alterations.
+section: 3.4.6
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

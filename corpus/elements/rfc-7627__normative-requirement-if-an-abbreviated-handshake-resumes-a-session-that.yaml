@@ -1,0 +1,10 @@
+document: rfc-7627
+kind: normative-requirement
+summary: If an abbreviated handshake resumes a session that does not use extended_master_secret, the client or server MUST NOT use the current handshake's verify_data for application-level authentication. The client MUST disable renegotiation and any use of the tls-unique channel binding (RFC 5929) on the current connection.
+section: "5.4"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

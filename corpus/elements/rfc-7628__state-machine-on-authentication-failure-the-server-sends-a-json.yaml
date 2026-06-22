@@ -1,0 +1,10 @@
+document: rfc-7628
+kind: state-machine
+summary: On authentication failure, the server sends a JSON error message; the client MUST then send either a dummy response consisting of a single %x01 byte or a SASL abort message (e.g., IMAP 'BAD' response or '*') to allow the server to complete the exchange.
+section: 3.2.3
+rfc2119_level: MUST
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

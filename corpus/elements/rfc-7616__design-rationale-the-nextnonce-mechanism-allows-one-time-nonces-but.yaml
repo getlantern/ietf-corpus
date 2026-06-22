@@ -1,0 +1,9 @@
+document: rfc-7616
+kind: design-rationale
+summary: The nextnonce mechanism allows one-time nonces but impairs HTTP pipelining because each response must be processed before the next request can be authorized. The spec recommends considering the nc parameter as a way to retain most security benefits without blocking pipelining.
+section: "3.5"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

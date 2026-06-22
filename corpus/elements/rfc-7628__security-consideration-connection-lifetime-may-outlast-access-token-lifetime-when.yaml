@@ -1,0 +1,10 @@
+document: rfc-7628
+kind: security-consideration
+summary: Connection lifetime may outlast access token lifetime when SASL authenticates a long-lived connection; resource servers may unilaterally disconnect clients. The client MAY request a new access token per connection but SHOULD cache and reuse valid credentials.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

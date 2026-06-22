@@ -1,0 +1,9 @@
+document: rfc-7623
+kind: design-rationale
+summary: No C-MAC address flushing is required for All-Active multihoming topology changes because remote PEs learn C-MAC-to-B-MAC bindings in the data plane. A link failure causes only a B-MAC route withdrawal, updating the next-hop adjacency without invalidating C-MAC entries.
+section: "9.6"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

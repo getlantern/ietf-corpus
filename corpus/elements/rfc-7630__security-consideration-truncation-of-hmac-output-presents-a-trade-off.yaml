@@ -1,0 +1,10 @@
+document: rfc-7630
+kind: security-consideration
+summary: 'Truncation of HMAC output presents a trade-off: shorter output gives attackers fewer bits to predict in forgery attempts but also less information about the compression function output. RFC 2104 and [BCK] permit truncation to any length not less than half the internal state size; all four protocols defined here satisfy this constraint.'
+section: "9.2"
+topics:
+    - snmp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

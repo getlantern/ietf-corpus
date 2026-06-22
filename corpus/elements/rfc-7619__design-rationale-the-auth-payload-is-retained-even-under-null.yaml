@@ -1,0 +1,9 @@
+document: rfc-7619
+kind: design-rationale
+summary: The AUTH payload is retained even under NULL authentication because it cryptographically links the IKE_SA_INIT exchange messages with the IKE_AUTH messages, preserving IKEv2's message integrity guarantees even when peer identity is not verified. The use of SK_pi/SK_pr as the 'shared secret' mirrors EAP non-key-generating method behavior.
+section: "2.1"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

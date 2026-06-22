@@ -1,0 +1,10 @@
+document: rfc-7616
+kind: security-consideration
+summary: A MITM or malicious server can execute chosen plaintext attacks by choosing the server nonce. The countermeasure is the client cnonce parameter, which varies the hash input in a way not controlled by the attacker. cnonce also defends against precomputed dictionary attacks and batch brute-force attacks.
+section: "5.9"
+topics:
+    - security
+    - http
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

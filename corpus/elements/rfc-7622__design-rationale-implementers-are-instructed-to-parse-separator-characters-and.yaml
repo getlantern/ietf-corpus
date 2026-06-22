@@ -1,0 +1,8 @@
+document: rfc-7622
+kind: design-rationale
+summary: Implementers are instructed to parse separator characters '@' and '/' before applying any transformation algorithms, because transformation might decompose certain Unicode code points into those separator characters, resulting in incorrect JID splitting if transformations were applied first.
+section: "3.1"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

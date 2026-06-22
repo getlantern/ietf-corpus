@@ -1,0 +1,10 @@
+document: rfc-7614
+kind: security-consideration
+summary: 'A malicious agent controlling the Refer-Events-At URI in a REFER response can cause a SIP SUBSCRIBE to be sent as raw traffic toward a victim, with up to 11x amplification over UDP due to retransmissions. This risk is lower than the Refer-To URI attack because only sip:/sips: schemes are allowed and a valid REFER request must be received first.'
+section: "8"
+topics:
+    - sip
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"
