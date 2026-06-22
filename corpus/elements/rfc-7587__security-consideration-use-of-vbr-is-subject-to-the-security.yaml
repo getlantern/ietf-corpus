@@ -1,0 +1,12 @@
+document: rfc-7587
+kind: security-consideration
+summary: Use of VBR is subject to the security considerations in RFC 6562, as variable bitrate audio may leak information about the content when encrypted. RTP packets using this format are subject to RFC 3550 security considerations and applicable RTP profiles (RTP/AVP, RTP/AVPF, RTP/SAVP, RTP/SAVPF). Applications SHOULD use one or more appropriate strong security mechanisms.
+section: "8"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - rtp
+    - realtime
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

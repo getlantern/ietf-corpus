@@ -1,0 +1,11 @@
+document: rfc-7596
+kind: normative-requirement
+summary: On receipt of an ICMPv6 error message (Type 1, Code 5) from the lwAFTR, the lwB4 MUST validate that the source address matches the configured lwAFTR address. If they do not match, the lwB4 MUST discard the ICMP error message to prevent acceptance of forged messages.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - nat
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

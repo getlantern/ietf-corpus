@@ -1,0 +1,9 @@
+document: rfc-7581
+kind: design-rationale
+summary: The two-action encoding for Resource Block Pool State (integer list vs. bitmap) is chosen because some resource blocks contain multiple resources and require a count (Action=0), while single-element resource blocks are more compactly represented by a single availability bit (Action=1). The encoding matches the structure of the resource pool.
+section: "3.3"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-21"

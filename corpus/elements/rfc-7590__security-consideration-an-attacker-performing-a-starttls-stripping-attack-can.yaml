@@ -1,0 +1,9 @@
+document: rfc-7590
+kind: security-consideration
+summary: An attacker performing a STARTTLS-stripping attack can remove the <starttls/> stream feature or its <required/> child from the server's stream features advertisement, misleading the initiating entity into thinking TLS is unavailable or optional; implementors must not rely solely on the advertised feature.
+section: "3.1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

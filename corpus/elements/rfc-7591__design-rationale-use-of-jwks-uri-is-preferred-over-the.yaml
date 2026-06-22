@@ -1,0 +1,10 @@
+document: rfc-7591
+kind: design-rationale
+summary: Use of 'jwks_uri' is preferred over the inline 'jwks' parameter because it allows for easier key rotation without requiring re-registration. The inline 'jwks' is intended only for clients that cannot host public URLs, such as native clients.
+section: "2"
+topics:
+    - oauth
+    - jose
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

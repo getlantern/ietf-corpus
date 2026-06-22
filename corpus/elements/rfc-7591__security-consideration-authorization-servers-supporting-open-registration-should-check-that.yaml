@@ -1,0 +1,9 @@
+document: rfc-7591
+kind: security-consideration
+summary: Authorization servers supporting open registration SHOULD check that logo_uri, tos_uri, client_uri, and policy_uri share the same host and scheme as redirect_uris, and that all URIs resolve to valid web pages. Servers SHOULD protect users from malicious content at these URLs, for example by running malware scanning before presenting links.
+section: "5"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

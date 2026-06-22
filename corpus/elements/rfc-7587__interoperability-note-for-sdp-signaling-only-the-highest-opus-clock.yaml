@@ -1,0 +1,9 @@
+document: rfc-7587
+kind: interoperability-note
+summary: For SDP signaling, only the highest Opus clock rate (48000 Hz) is used, though the actual media clock rate is signaled inside the payload. The decoder MUST be capable of decoding every received clock rate. The RTP clock rate in 'a=rtpmap' is always 48000/2.
+section: "7.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

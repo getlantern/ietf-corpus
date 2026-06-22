@@ -1,0 +1,9 @@
+document: rfc-7589
+kind: security-consideration
+summary: The EOM sequence ]]>]]> can appear in well-formed XML and could be used for injection attacks. This document retains EOM for the initial <hello> for backward compatibility, then switches to chunked framing (RFC 6242) when both peers support :base:1.1 to mitigate injection risk.
+section: "9"
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

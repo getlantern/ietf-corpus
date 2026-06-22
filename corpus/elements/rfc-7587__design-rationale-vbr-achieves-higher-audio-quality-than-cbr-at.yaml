@@ -1,0 +1,11 @@
+document: rfc-7587
+kind: design-rationale
+summary: VBR achieves higher audio quality than CBR at the same average bitrate and is recommended for voice transmission. CBR may be chosen to prevent potential information leakage when encrypting the stream; when converting a VBR stream to CBR, the Opus internal padding mechanism (not the RTP padding bit) is RECOMMENDED because the RTP padding bit is unencrypted.
+section: 3.1.2
+topics:
+    - rtp
+    - realtime
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

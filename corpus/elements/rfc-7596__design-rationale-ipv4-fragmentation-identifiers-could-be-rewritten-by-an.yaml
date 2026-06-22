@@ -1,0 +1,10 @@
+document: rfc-7596
+kind: design-rationale
+summary: IPv4 fragmentation identifiers could be rewritten by an lwB4 to fall within its allocated port set to prevent reassembly collisions when multiple B4s share the same IPv4 address. However, splitting the identifier space in this fashion would increase the probability of reassembly collision for all connections through the lwB4.
+section: 5.2.1
+topics:
+    - nat
+    - v6ops
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

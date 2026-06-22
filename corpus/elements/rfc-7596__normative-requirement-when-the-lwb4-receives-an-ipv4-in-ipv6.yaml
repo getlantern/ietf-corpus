@@ -1,0 +1,11 @@
+document: rfc-7596
+kind: normative-requirement
+summary: When the lwB4 receives an IPv4-in-IPv6 packet, if the IPv6 source address does not match the configured lwAFTR address, the packet MUST be discarded. If the decapsulated IPv4 packet has an invalid destination address or port not matching the lwB4's configuration, it MUST be dropped.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - nat
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"
