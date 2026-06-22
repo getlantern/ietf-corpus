@@ -1,0 +1,10 @@
+document: rfc-7606
+kind: normative-requirement
+summary: 'MP_REACH_NLRI or MP_UNREACH_NLRI (if present) SHALL be encoded as the very first path attribute in an UPDATE message. An UPDATE message MUST NOT contain more than one of: non-empty Withdrawn Routes field, non-empty NLRI field, MP_REACH_NLRI attribute, or MP_UNREACH_NLRI attribute. Implementations MUST still handle messages where these appear in any position or combination.'
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

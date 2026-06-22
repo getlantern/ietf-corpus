@@ -1,0 +1,9 @@
+document: rfc-7602
+kind: security-consideration
+summary: The ESN TLV mitigates replay attacks on IS-IS IIH and SNP PDUs, which can otherwise cause adjacency bouncing, blackholing, and DoS. It is intended to be deployed alongside cryptographic authentication per RFC 5304 and RFC 5310; replay mitigation is only possible when authentication information is also present.
+section: "7"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

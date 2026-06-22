@@ -1,0 +1,9 @@
+document: rfc-7597
+kind: design-rationale
+summary: The port-mapping algorithm uses an infix representation (PSID embedded in the middle of the port number) rather than a prefix/suffix representation. This minimizes restrictions on possible PSID values when the PSID is embedded in the End-user IPv6 prefix, reducing dependencies between the IPv6 prefix and the assigned port set. Well-known ports are excluded by restricting the high-order A field rather than the PSID.
+section: "5.1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

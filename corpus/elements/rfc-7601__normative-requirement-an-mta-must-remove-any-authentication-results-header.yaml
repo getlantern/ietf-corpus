@@ -1,0 +1,10 @@
+document: rfc-7601
+kind: normative-requirement
+summary: An MTA MUST remove any Authentication-Results header field bearing a version it does not support if the SMTP connection relaying the message is not from a trusted internal MTA. This ensures consumers do not act on header fields with semantics they cannot correctly interpret.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

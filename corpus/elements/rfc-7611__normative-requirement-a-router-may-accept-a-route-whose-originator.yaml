@@ -1,0 +1,10 @@
+document: rfc-7611
+kind: normative-requirement
+summary: 'A router MAY accept a route whose ORIGINATOR_ID or NEXT_HOP matches its own address if: (1) ACCEPT_OWN processing is enabled by configuration, (2) the route carries the ACCEPT_OWN community, (3) the route originated from a source VRF on the router (matching Route Distinguisher), (4) the route is targeted to one or more destination VRFs on the router, and (5) at least one destination VRF differs from the source VRF.'
+section: "2.1"
+rfc2119_level: MAY
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

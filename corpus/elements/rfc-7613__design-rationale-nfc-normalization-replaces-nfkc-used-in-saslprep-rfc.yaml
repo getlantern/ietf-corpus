@@ -1,0 +1,9 @@
+document: rfc-7613
+kind: design-rationale
+summary: NFC normalization replaces NFKC (used in SASLprep/RFC 4013) because the PRECIS IdentifierClass entirely disallows characters with compatibility equivalents, making NFKC's compatibility decomposition unnecessary. For passwords, the switch from NFKC to NFC has the security benefit of fewer false positives during comparison.
+section: Appendix A
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,10 @@
+document: rfc-7606
+kind: normative-requirement
+summary: AS_PATH is malformed if an unrecognized segment type is found, or a segment has a Path Segment Length that overruns the Attribute Length, an underrun leaving only one octet after the last parsed segment, or a Path Segment Length of zero. Malformed AS_PATH SHALL be handled using treat-as-withdraw. Violations of the leftmost-AS check SHOULD also use treat-as-withdraw but MAY use session reset if configured.
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

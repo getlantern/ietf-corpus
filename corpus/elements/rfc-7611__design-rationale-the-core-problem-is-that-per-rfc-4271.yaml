@@ -1,0 +1,9 @@
+document: rfc-7611
+kind: design-rationale
+summary: The core problem is that per RFC 4271, a BGP speaker rejects received prefix advertisements it originated itself — route reflectors attach ORIGINATOR_ID so originators can detect and reject their own routes, and NEXT_HOP matching the receiver's own IP is also grounds for rejection. This prevents the RT-modification technique from working when source and destination VRFs are on the same PE.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

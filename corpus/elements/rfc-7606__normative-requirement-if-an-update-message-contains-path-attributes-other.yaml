@@ -1,0 +1,10 @@
+document: rfc-7606
+kind: normative-requirement
+summary: If an UPDATE message contains path attributes other than MP_UNREACH_NLRI but encodes no reachable NLRI, and any path attribute error specifies handling other than attribute discard, then the session reset approach MUST be used, because it is not possible to confirm the NLRI were successfully parsed.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

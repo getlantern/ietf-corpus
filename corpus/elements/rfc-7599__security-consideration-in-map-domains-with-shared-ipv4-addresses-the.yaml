@@ -1,0 +1,12 @@
+document: rfc-7599
+kind: security-consideration
+summary: In MAP domains with shared IPv4 addresses, the need for IPv4 datagram reassembly introduces a denial-of-service attack vector; this is inherent to address sharing and common with DS-Lite and NAT64/DNS64. To mitigate port-guessing attacks enabled by restricted port sets, the MAP CE's NAT44 filtering behavior SHOULD be 'Address-Dependent Filtering' (RFC 4787 Section 5), and CEs SHOULD use a DNS transport proxy sourcing DNS from IPv6 interfaces not assigned to MAP-T.
+section: "13"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - nat
+    - v6ops
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

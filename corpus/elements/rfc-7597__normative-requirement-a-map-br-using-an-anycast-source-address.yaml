@@ -1,0 +1,10 @@
+document: rfc-7597
+kind: normative-requirement
+summary: A MAP BR using an anycast source address SHOULD NOT by default use Path MTU Discovery across the MAP domain, because ICMP error messages generated on the path may be sent to a different BR, making dynamic tunnel MTU (per RFC 2473 Section 6.7) subject to IPv6 Path MTU black holes.
+section: 8.3.1
+rfc2119_level: SHOULD NOT
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

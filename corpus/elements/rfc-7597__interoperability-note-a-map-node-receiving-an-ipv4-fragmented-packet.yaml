@@ -1,0 +1,9 @@
+document: rfc-7597
+kind: interoperability-note
+summary: A MAP node receiving an IPv4 fragmented packet from outside the MAP domain must reassemble the packet before forwarding it onto the MAP link, because the transport-protocol destination port (needed for PSID lookup) is only in the first fragment. Implementations should be aware of known attacks against IP fragmentation (RFC 1858, RFC 3128) and high-rate reassembly issues (RFC 4963).
+section: 8.3.2
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

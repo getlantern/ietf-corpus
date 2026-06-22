@@ -1,0 +1,10 @@
+document: rfc-7606
+kind: normative-requirement
+summary: If MP_REACH_NLRI or MP_UNREACH_NLRI appears more than once in an UPDATE message, a NOTIFICATION MUST be sent with Error Subcode 'Malformed Attribute List'. For any other attribute appearing more than once, all occurrences after the first SHALL be discarded and processing continues.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

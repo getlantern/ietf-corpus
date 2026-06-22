@@ -1,0 +1,10 @@
+document: rfc-7607
+kind: security-consideration
+summary: By ensuring all implementations ignore routes containing AS 0, the document prevents malicious parties from announcing routes with AS 0 to hijack address resources that RPKI ROAs have marked as not in use. Allowing a resource holder to issue a ROA with AS 0 as the only valid origin signals that a prefix should not be routed.
+section: "4"
+topics:
+    - security
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

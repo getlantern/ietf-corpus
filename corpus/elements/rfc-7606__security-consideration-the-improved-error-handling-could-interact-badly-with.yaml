@@ -1,0 +1,10 @@
+document: rfc-7606
+kind: security-consideration
+summary: The improved error handling could interact badly with hypothetical confidentiality-only (non-integrity-protecting) cryptographic mechanisms applied to BGP, allowing an attacker to make repeated ciphertext manipulation attempts rather than a single attempt before session teardown. The recommended mitigation is to use AEAD ciphers (RFC 5116) so messages that fail integrity checks are discarded.
+section: "9"
+topics:
+    - bgp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

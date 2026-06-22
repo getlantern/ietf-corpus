@@ -1,0 +1,10 @@
+document: rfc-7606
+kind: normative-requirement
+summary: The Community attribute is malformed if its length is not a non-zero multiple of 4; treat-as-withdraw SHALL be used. ORIGINATOR_ID received from an external neighbor SHALL be discarded; from an internal neighbor it is malformed if length != 4 and SHALL use treat-as-withdraw. CLUSTER_LIST from an external neighbor SHALL be discarded; from an internal neighbor it is malformed if length is not a non-zero multiple of 4 and SHALL use treat-as-withdraw.
+section: "7.8"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

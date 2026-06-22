@@ -1,0 +1,11 @@
+document: rfc-7599
+kind: normative-requirement
+summary: When constructing the IPv4 packet at the BR (IPv6-to-IPv4), the BR MUST derive source and destination IPv4 addresses per Section 5 and translate headers per RFC 6145. For IPv4-to-IPv6 at the BR, the BR MUST compute IPv6 destination addresses from the IPv4 destination and port via the FMR, and MUST compute IPv6 source addresses using the DMR (IPv4-embedded IPv6 address with the BR's IPv6 prefix).
+section: "8.3"
+rfc2119_level: MUST
+topics:
+    - nat
+    - v6ops
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

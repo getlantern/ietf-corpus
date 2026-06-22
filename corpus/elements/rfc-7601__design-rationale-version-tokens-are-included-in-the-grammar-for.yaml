@@ -1,0 +1,8 @@
+document: rfc-7601
+kind: design-rationale
+summary: Version tokens are included in the grammar for both the header field (attached to authserv-id) and individual methods to avoid misinterpretation of results. A parser encountering an unknown authserv-id version can immediately stop parsing; for unknown method versions, the parser SHOULD ignore the result in case the semantics differ from the expected version.
+section: "2.6"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,10 @@
+document: rfc-7597
+kind: security-consideration
+summary: MAP provides consistency checks between IPv4 and IPv6 sources on received packets, preventing new spoofing attack opportunities beyond those already present in IPv6. Routing loop attacks (documented in RFC 6324) cannot occur because each BR checks that the IPv6 source address of a received packet is a valid CE address based on the FMR.
+section: "10"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

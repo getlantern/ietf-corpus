@@ -1,0 +1,9 @@
+document: rfc-7601
+kind: security-consideration
+summary: Sites should issue SMTP-level rejection (per Section 4.2) rather than adding the Authentication-Results header field and allowing a message to proceed when local policy treats authentication failure as grounds for rejection. Allowing the message to proceed risks generating backscatter DSN messages to forged originator addresses.
+section: "7.5"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

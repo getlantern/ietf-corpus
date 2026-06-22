@@ -1,0 +1,11 @@
+document: rfc-7597
+kind: normative-requirement
+summary: To prevent IPv4 address spoofing, any MAP node (CE and BR) MUST validate received packets by extracting the embedded IPv4 address/prefix and PSID from the source IPv6 address and verifying them against the source IPv4 address and port in the encapsulated packet. Packets failing validation MUST be silently discarded with a counter incremented.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

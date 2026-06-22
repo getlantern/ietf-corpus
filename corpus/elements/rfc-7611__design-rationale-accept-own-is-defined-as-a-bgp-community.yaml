@@ -1,0 +1,9 @@
+document: rfc-7611
+kind: design-rationale
+summary: ACCEPT_OWN is defined as a BGP community rather than a new attribute because a community is the minimal, backward-compatible signal needed. A PE that does not support ACCEPT_OWN will simply ignore the community and continue to reject its own routes, preserving existing behavior.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

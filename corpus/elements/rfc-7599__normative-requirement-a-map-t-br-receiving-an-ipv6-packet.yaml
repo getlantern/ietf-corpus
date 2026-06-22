@@ -1,0 +1,11 @@
+document: rfc-7599
+kind: normative-requirement
+summary: A MAP-T BR receiving an IPv6 packet MUST select the matching MAP Rule via longest source-address match, verify the CE is using its allowed address and port range, and MUST drop packets whose source port is outside the allowed range (SHOULD respond with ICMPv6 Type 1, Code 5).
+section: "8.3"
+rfc2119_level: MUST
+topics:
+    - nat
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

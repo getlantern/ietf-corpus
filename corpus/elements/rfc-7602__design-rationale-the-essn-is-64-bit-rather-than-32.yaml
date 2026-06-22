@@ -1,0 +1,9 @@
+document: rfc-7602
+kind: design-rationale
+summary: The ESSN is 64-bit rather than 32-bit to allow encoding as a timestamp (e.g., NTP long format) or as a wrap/boot counter in non-volatile storage, ensuring the strictly increasing property is maintained across cold restarts without key changes.
+section: A
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

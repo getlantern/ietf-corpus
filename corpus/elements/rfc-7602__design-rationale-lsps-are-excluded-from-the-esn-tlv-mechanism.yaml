@@ -1,0 +1,9 @@
+document: rfc-7602
+kind: design-rationale
+summary: LSPs are excluded from the ESN TLV mechanism because the existing IS-IS LSP sequence number in the LSP header (per ISO 10589) already provides effective mitigation of intra-session replay attacks; the ESN mechanism adds value specifically for IIHs and SNPs which lack such built-in protection.
+section: "2.2"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,11 @@
+document: rfc-7599
+kind: normative-requirement
+summary: When a CE receives a packet whose source IP address longest-matches an FMR prefix and the source port number is outside the allocated range, the CE MUST drop the packet and SHOULD respond with an ICMPv6 'Destination Unreachable, source address failed ingress/egress policy' (Type 1, Code 5).
+section: "8.2"
+rfc2119_level: MUST
+topics:
+    - nat
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

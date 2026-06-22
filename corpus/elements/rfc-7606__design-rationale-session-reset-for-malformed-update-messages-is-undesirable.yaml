@@ -1,0 +1,10 @@
+document: rfc-7606
+kind: design-rationale
+summary: Session reset for malformed UPDATE messages is undesirable because it impacts all valid routes on the session, not just the offending route. For optional transitive attributes, the session reset may fall on a router that merely forwarded the attribute without checking it, potentially causing cascading resets across many peering sessions when a single malformed attribute is replicated.
+section: "1"
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,9 @@
+document: rfc-7611
+kind: design-rationale
+summary: The extra ACCEPT_OWN preference step in the decision process is placed after LOCAL_PREF comparison to ensure that routes re-advertised by the route reflector with ACCEPT_OWN are selected as best over other paths the BGP speaker may have received, enabling the intended extranet VPN use case.
+section: "3"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,9 @@
+document: rfc-7601
+kind: security-consideration
+summary: A 'pass' result in the Authentication-Results header field does not render a message trustworthy. Spam can pass DKIM, SPF, and other checks while still being undesirable mail. MUAs and downstream filters must exercise care even after stripping possibly malicious headers.
+section: "7.2"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

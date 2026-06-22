@@ -1,0 +1,10 @@
+document: rfc-7599
+kind: interoperability-note
+summary: A MAP node receiving an IPv4 fragmented packet from outside the MAP domain SHOULD reassemble the packet before forwarding it into the MAP domain, because the transport-protocol destination port needed for address mapping is only present in the first fragment. An optimization using a forwarding cache for the initial fragment is possible but outside scope.
+section: "10.2"
+topics:
+    - nat
+    - v6ops
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

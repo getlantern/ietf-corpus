@@ -1,0 +1,10 @@
+document: rfc-7599
+kind: security-consideration
+summary: MAP's consistency checks between IPv4 and IPv6 sources on packets received by MAP nodes (at both CE and BR) ensure that MAP does not introduce new spoofing attack opportunities beyond those already present in IPv6. The BR validates that the CE's source address and port match the Forwarding Mapping Rule, preventing routing loop attacks documented in RFC 6324.
+section: "13"
+topics:
+    - security
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

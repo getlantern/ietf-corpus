@@ -1,0 +1,8 @@
+document: rfc-7613
+kind: security-consideration
+summary: Comparing internationalized identifiers can lead to false negatives or false positives, both with security implications. For example, treating SUPERSCRIPT ONE (U+00B9) as equivalent to DIGIT ONE (U+0031) would allow attackers to spoof accounts. PRECIS profiles protect against this by disallowing characters with compatibility equivalents in usernames.
+section: "8.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

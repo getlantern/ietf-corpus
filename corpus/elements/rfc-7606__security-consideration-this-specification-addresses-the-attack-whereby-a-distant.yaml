@@ -1,0 +1,10 @@
+document: rfc-7606
+kind: security-consideration
+summary: This specification addresses the attack whereby a distant attacker generates a malformed optional transitive attribute that propagates through routers that do not recognize it. When the attribute reaches a recognizing router, the resulting session reset can be amplified many times due to fan-out, making the attack particularly harmful. Treating such attributes with treat-as-withdraw instead of session reset mitigates this amplification.
+section: "9"
+topics:
+    - bgp
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"
