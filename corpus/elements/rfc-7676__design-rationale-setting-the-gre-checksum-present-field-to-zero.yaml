@@ -1,0 +1,8 @@
+document: rfc-7676
+kind: design-rationale
+summary: Setting the GRE Checksum Present field to zero reduces computational cost of encapsulation/decapsulation. In many cases the GRE Checksum is partially redundant with checksums in payload protocols (IPv4, TCP, UDP), though the GRE header itself would then be unprotected.
+section: "2.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

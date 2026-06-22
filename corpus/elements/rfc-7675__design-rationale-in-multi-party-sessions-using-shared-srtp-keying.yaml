@@ -1,0 +1,11 @@
+document: rfc-7675
+kind: design-rationale
+summary: In multi-party sessions using shared SRTP keying (MIKEY, Security Descriptions, EKT), receipt of an authenticated SRTP packet is not sufficient to verify consent, because any party with the shared key could have sent it. Hence, STUN-based consent is required even when SRTP authentication is present.
+section: "4"
+topics:
+    - webrtc
+    - security
+    - crypto
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

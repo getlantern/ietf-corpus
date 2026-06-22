@@ -1,0 +1,9 @@
+document: rfc-7675
+kind: design-rationale
+summary: ICE keepalives are STUN Indications (send-and-forget) and do not evoke a response, so they are insufficient for consent freshness. A request/response mechanism is required, and STUN binding requests serving as consent checks also serve the keepalive purpose, eliminating the need for dedicated keepalive messages on those pairs.
+section: "4"
+topics:
+    - webrtc
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,11 @@
+document: rfc-7676
+kind: security-consideration
+summary: The IPv6 delivery header has no checksum of its own, and the GRE checksum does not protect it. A corrupted destination address could cause the delivery packet to be misdelivered to a different GRE-capable node, which might decapsulate and forward the payload to an unintended destination, constituting a security breach especially in VPN environments with non-unique address space.
+section: "4.2"
+topics:
+    - ip
+    - v6ops
+    - security
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"
