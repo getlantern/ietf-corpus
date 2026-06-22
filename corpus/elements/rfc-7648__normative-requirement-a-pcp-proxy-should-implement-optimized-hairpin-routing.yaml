@@ -1,0 +1,10 @@
+document: rfc-7648
+kind: normative-requirement
+summary: 'A PCP proxy SHOULD implement optimized hairpin routing: if an outgoing packet is addressed to an external address/port in the NAT''s own mapping table, the NAT SHOULD rewrite and deliver the packet locally rather than sending it to the outermost NAT and back.'
+section: "3.1"
+rfc2119_level: SHOULD
+topics:
+    - pcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

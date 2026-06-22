@@ -1,0 +1,10 @@
+document: rfc-7655
+kind: interoperability-note
+summary: Converting a G.711 RTP packet to G.711.0 requires only compressing the payload, changing the PT to the negotiated dynamic value, and copying all other RTP header fields unchanged; the reverse restores the original G.711 packet bit-for-bit, enabling invisible in-path compression.
+section: "3.1"
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

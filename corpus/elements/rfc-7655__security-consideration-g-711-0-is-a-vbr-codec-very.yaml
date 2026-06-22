@@ -1,0 +1,11 @@
+document: rfc-7655
+kind: security-consideration
+summary: G.711.0 is a VBR codec; very short G.711.0 frames reveal silence or near-silence conditions even when the payload is encrypted. The RFC recommends adding statistically variable 0x00 padding to G.711.0 frames that compress to less than about 20% of the original G.711 frame size to mitigate silence/non-silence traffic analysis.
+section: "8"
+topics:
+    - rtp
+    - security
+    - privacy
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

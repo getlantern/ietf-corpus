@@ -1,0 +1,10 @@
+document: rfc-7659
+kind: security-consideration
+summary: 'NATV2-MIB contains read-write objects (resource limits and notification thresholds) that are security-sensitive: an attacker with write access could set address/port map entry limits to zero, causing all new NAT sessions to be dropped. SNMPv3 with authentication and privacy is required for access to these objects.'
+section: "6"
+topics:
+    - nat
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

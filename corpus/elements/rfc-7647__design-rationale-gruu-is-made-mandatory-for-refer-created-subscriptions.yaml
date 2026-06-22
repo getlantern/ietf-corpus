@@ -1,0 +1,8 @@
+document: rfc-7647
+kind: design-rationale
+summary: GRUU is made mandatory for REFER-created subscriptions because RFC 6665 requires notifiers to use GRUUs, and accepting a REFER implicitly makes the UA an RFC 6665 notifier. Without a GRUU, out-of-dialog REFER requests for a resulting dialog may not reach the correct UA.
+section: "3"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,10 @@
+document: rfc-7652
+kind: design-rationale
+summary: EAP was chosen as the authentication framework because it provides algorithm agility, handles credential exchange, and naturally produces keying material (MSK) for deriving transport keys. Encapsulating EAP inside PCP avoids out-of-band channels and allows the existing PCP UDP transport to carry authentication.
+section: "1"
+topics:
+    - pcp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

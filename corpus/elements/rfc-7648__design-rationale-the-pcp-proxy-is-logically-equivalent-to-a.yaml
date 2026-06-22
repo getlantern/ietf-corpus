@@ -1,0 +1,9 @@
+document: rfc-7648
+kind: design-rationale
+summary: The PCP proxy is logically equivalent to a PCP client back-to-back with a PCP server, enabling PCP clients that cannot be configured with the address of a PCP server more than one hop away to still communicate successfully. This architecture abstracts multiple upstream NATs from downstream clients, keeping client implementations simple.
+section: "1"
+topics:
+    - pcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,8 @@
+document: rfc-7653
+kind: design-rationale
+summary: Active Leasequery sends only the current binding state rather than a complete history of all state transitions. If the TCP connection blocks, the server may create the message at the moment the connection becomes writable, discarding intermediate state changes — this is a deliberate trade-off favouring simplicity and real-time accuracy over completeness.
+section: "7"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

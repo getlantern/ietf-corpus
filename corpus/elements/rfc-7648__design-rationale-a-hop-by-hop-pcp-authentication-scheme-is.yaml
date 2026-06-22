@@ -1,0 +1,9 @@
+document: rfc-7648
+kind: design-rationale
+summary: A hop-by-hop PCP authentication scheme is used rather than end-to-end, so the PCP client authenticates with the PCP proxy, and the PCP proxy authenticates with the upstream server. This is more suitable from a deployment standpoint and allows the proxy to alter PCP messages (e.g., strip options, modify fields).
+section: "1"
+topics:
+    - pcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

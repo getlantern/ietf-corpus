@@ -1,0 +1,10 @@
+document: rfc-7655
+kind: design-rationale
+summary: G.711.0 was designed to be stateless (compression of a frame depends only on that frame, not on prior frames) to completely eliminate error propagation. A lost G.711.0 packet has the same effect as a lost G.711 packet, allowing existing G.711 PLC mechanisms to be reused directly.
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+    - voip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

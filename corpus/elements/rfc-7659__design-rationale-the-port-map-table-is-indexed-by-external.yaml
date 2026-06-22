@@ -1,0 +1,9 @@
+document: rfc-7659
+kind: design-rationale
+summary: The port map table is indexed by external realm, address, and port rather than internal address, so that individual sessions can be traced directly back to the host based on the contents of packets observed in the external realm. This indexing design specifically simplifies operator traceback in CGN deployments.
+section: 3.3.9
+topics:
+    - nat
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

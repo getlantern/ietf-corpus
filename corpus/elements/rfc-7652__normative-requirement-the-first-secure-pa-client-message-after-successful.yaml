@@ -1,0 +1,11 @@
+document: rfc-7652
+kind: normative-requirement
+summary: The first secure PA-Client message after successful authentication MUST include the full set of PRF and MAC_ALGORITHM options received from the server. If the server detects a downgrade attack (algorithm mismatch), it MUST send DOWNGRADE_ATTACK_DETECTED and terminate the session.
+section: 3.1.3
+rfc2119_level: MUST
+topics:
+    - pcp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

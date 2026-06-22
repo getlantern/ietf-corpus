@@ -1,0 +1,9 @@
+document: rfc-7655
+kind: state-machine
+summary: 'The RTP payload decoding heuristic (H1–H5) processes the payload iteratively: initialize counters (H1); read up to 321 octets into the internal buffer (H2); if the first octet is 0x00, skip it as padding (H3–H4); otherwise decode the G.711.0 frame and advance the processed-octet pointer (H5); STOP when all payload octets are consumed.'
+section: 4.2.3
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

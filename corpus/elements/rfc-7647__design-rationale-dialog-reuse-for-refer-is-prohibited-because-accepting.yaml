@@ -1,0 +1,8 @@
+document: rfc-7647
+kind: design-rationale
+summary: Dialog reuse for REFER is prohibited because accepting a REFER within an existing dialog creates a new, problematic multiple dialog usage (per RFC 5057). The norefersub extension (RFC 4488) cannot prevent implicit subscription creation even if accepted with Require, so dialog reuse must be avoided at the sender.
+section: "4"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

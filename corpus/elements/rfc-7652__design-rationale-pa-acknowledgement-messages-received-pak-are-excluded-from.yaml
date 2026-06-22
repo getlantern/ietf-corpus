@@ -1,0 +1,9 @@
+document: rfc-7652
+kind: design-rationale
+summary: PA-Acknowledgement messages (RECEIVED_PAK) are excluded from sequence number incrementing because they carry no EAP payload and loss of an acknowledgement must not cause permanent sequence mismatch; this design also supports reassembly of fragmented EAP messages across multiple PA messages before a response is generated.
+section: "6.4"
+topics:
+    - pcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

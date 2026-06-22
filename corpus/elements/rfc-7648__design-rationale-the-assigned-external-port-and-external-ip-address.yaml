@@ -1,0 +1,9 @@
+document: rfc-7648
+kind: design-rationale
+summary: The assigned external port and external IP address in the downstream PCP reply are copied from the upstream server's reply (the outermost external address/port, not the locally assigned ones). By recursive application, the outermost address/port propagate through intervening proxies to the downstream client.
+section: "3"
+topics:
+    - pcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

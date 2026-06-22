@@ -1,0 +1,10 @@
+document: rfc-7655
+kind: security-consideration
+summary: 'G.711.0 has no known denial-of-service vulnerability from decoding: the decompression algorithm has a finite worst-case path (no infinite loops), and internal buffer reads are bounded to at most 321 octets per decode request, preventing buffer overruns from malformed payloads.'
+section: "8"
+topics:
+    - rtp
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,9 @@
+document: rfc-7653
+kind: state-machine
+summary: 'TLS negotiation state for a new TCP connection: (1) requestor sends STARTTLS → (2a) no response / server closes / TLSConnectionRefused → requestor MUST close TCP; or (2b) server replies with REPLY (no status code) → (3) TLS handshake with mutual certificate validation → (4) if handshake fails requestor MUST close TCP; if succeeds, send ACTIVELEASEQUERY.'
+section: "8.2"
+topics:
+    - tls
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

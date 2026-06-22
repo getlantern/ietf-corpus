@@ -1,0 +1,10 @@
+document: rfc-7652
+kind: security-consideration
+summary: Before transport key establishment, PA messages have little cryptographic protection and are vulnerable to man-in-the-middle and DoS attacks. An attacker can strip PRF/MAC options from the initial exchange and force weaker algorithm selection; therefore all server-supported algorithms must individually be strong enough.
+section: "8"
+topics:
+    - pcp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"
