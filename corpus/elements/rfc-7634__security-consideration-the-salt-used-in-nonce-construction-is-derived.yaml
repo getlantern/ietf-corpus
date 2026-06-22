@@ -1,0 +1,10 @@
+document: rfc-7634
+kind: security-consideration
+summary: The Salt used in nonce construction is derived from the keystream (same as the encryption key) and is never transmitted on the wire. The algorithm's security does not depend on Salt secrecy, so implementations MAY export the Salt from a security boundary, which is useful when a crypto library API accepts the nonce rather than the IV directly.
+section: "5"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

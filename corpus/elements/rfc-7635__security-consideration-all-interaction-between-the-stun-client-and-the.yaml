@@ -1,0 +1,10 @@
+document: rfc-7635
+kind: security-consideration
+summary: All interaction between the STUN client and the authorization server requires TLS with a ciphersuite offering confidentiality protection, per RFC 7525 guidance. The session key MUST NOT be transmitted in clear, as doing so completely destroys the security benefits of the scheme.
+section: "11"
+topics:
+    - security
+    - tls
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

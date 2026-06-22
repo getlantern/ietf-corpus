@@ -1,0 +1,10 @@
+document: rfc-7635
+kind: security-consideration
+summary: An attacker may remove the THIRD-PARTY-AUTHORIZATION attribute from a 401 error response, forcing the client to fall back to weaker first-party authentication. This downgrade attack is mitigated by using TLS or DTLS as the STUN transport protocol.
+section: "11"
+topics:
+    - security
+    - tls
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

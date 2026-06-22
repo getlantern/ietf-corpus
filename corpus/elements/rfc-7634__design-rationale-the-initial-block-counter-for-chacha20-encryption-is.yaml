@@ -1,0 +1,9 @@
+document: rfc-7634
+kind: design-rationale
+summary: The Initial Block Counter for ChaCha20 encryption is set to 1 rather than 0. Block counter 0 is reserved for generating the one-time Poly1305 key by running the ChaCha20 block function with the same key and nonce at counter zero and taking the top 256 bits.
+section: "2"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

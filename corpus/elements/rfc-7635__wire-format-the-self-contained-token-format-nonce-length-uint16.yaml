@@ -1,0 +1,10 @@
+document: rfc-7635
+kind: wire-format
+summary: 'The self-contained token format: nonce_length (uint16), nonce (opaque), then an encrypted_block containing key_length (uint16), mac_key (opaque), timestamp (uint64 fixed-point: 48-bit seconds since Unix epoch + 16-bit 1/64000-second fractions), and lifetime (uint32, seconds). All fields are in network byte order; the encrypted_block is base64-encoded for signaling to the client.'
+section: "6.2"
+topics:
+    - nat
+    - oauth
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

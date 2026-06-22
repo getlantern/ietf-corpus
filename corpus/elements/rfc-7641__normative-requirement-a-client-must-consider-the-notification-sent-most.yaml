@@ -1,0 +1,7 @@
+document: rfc-7641
+kind: normative-requirement
+summary: A client MUST consider the notification sent most recently as the freshest regardless of arrival order. An incoming notification V2 is more recent than the current freshest V1 when (V1 < V2 and V2 − V1 < 2^23), or (V1 > V2 and V1 − V2 > 2^23), or the client timestamp difference exceeds 128 seconds.
+section: "3.4"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

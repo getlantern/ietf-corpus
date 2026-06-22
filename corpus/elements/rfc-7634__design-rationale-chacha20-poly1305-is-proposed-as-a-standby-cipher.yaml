@@ -1,0 +1,11 @@
+document: rfc-7634
+kind: design-rationale
+summary: ChaCha20-Poly1305 is proposed as a standby cipher for IPsec because AES dominates VPN deployments, and if AES is broken, the only alternative (3DES) is too slow and uses a 64-bit block that limits the data encrypted before rekeying. A fast, secure alternative cipher should be available before such a crisis occurs.
+section: "1"
+topics:
+    - ipsec
+    - vpn
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

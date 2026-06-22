@@ -1,0 +1,8 @@
+document: rfc-7631
+kind: design-rationale
+summary: 'Two distinct forms of TLV allocation exist: one where the TLV type immediately defines all type extensions (e.g., LINK_METRIC), and one where only type extension 0 (and possibly 1) is defined. The naming policy differs: the first form receives a common name at the type level; the second form should only name the specific full type (type + extension), not the type itself, to avoid blocking future type extensions with counterintuitive names.'
+section: "1"
+topics:
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

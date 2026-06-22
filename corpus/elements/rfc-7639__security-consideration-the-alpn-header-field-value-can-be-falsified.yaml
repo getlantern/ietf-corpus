@@ -1,0 +1,10 @@
+document: rfc-7639
+kind: security-consideration
+summary: The ALPN header field value can be falsified by a client. If tunnel data is encrypted (e.g., with TLS), the proxy may be unable to verify the claimed protocol, meaning a proxy cannot rely solely on the ALPN header field value as a policy input in all cases.
+section: "4"
+topics:
+    - http
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

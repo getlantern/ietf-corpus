@@ -1,0 +1,10 @@
+document: rfc-7643
+kind: normative-requirement
+summary: The cleartext value or hashed value of a 'password' SHALL NOT be returnable by a service provider (mutability is 'writeOnly', returned is 'never'). If immediately passed to another system, the value MUST be transmitted over a secured connection (e.g., TLS); if temporarily persisted, it MUST be protected by encryption.
+section: 4.1.1
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

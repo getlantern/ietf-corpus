@@ -1,0 +1,7 @@
+document: rfc-7641
+kind: normative-requirement
+summary: Each notification MUST echo the token specified by the client in the GET request. When a resource change would cause a normal GET to return a non-2.xx response, the server SHOULD send a notification with an appropriate error code (e.g., 4.04 Not Found) and MUST subsequently remove the client's entry from the observer list.
+section: "4.2"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

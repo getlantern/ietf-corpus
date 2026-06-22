@@ -1,0 +1,10 @@
+document: rfc-7635
+kind: state-machine
+summary: 'STUN third-party authorization flow: (1) client sends unauthenticated request; (2) server responds 401 Unauthorized with THIRD-PARTY-AUTHORIZATION and NONCE; (3) client fetches OAuth token from authorization server; (4) client retries with ACCESS-TOKEN (kid in USERNAME) and MESSAGE-INTEGRITY; (5) server validates token, timestamp, and integrity — success or 401.'
+section: "3.1"
+topics:
+    - nat
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

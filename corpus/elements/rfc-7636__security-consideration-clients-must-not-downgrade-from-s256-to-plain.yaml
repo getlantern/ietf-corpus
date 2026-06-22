@@ -1,0 +1,10 @@
+document: rfc-7636
+kind: security-consideration
+summary: Clients MUST NOT downgrade from 'S256' to 'plain' after a failure, as an error when 'S256' is presented can only mean the server is faulty or a MITM attacker is performing a downgrade attack. The 'plain' method SHOULD NOT be used in new implementations.
+section: "7.2"
+rfc2119_level: MUST NOT
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

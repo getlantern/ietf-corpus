@@ -1,0 +1,9 @@
+document: rfc-7635
+kind: security-consideration
+summary: 'Replay attacks using a captured ACCESS-TOKEN are mitigated by frequent nonce rotation (per RFC 5389 Section 10.2) and by server-side timestamp validation: a token is accepted only if lifetime + Delta > abs(RDnew - TS), with a recommended Delta of 5 seconds.'
+section: "11"
+topics:
+    - security
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

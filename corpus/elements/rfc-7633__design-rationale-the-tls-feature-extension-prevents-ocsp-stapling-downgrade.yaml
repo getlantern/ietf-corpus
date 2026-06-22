@@ -1,0 +1,10 @@
+document: rfc-7633
+kind: design-rationale
+summary: The TLS feature extension prevents OCSP stapling downgrade attacks by allowing a client to fail immediately if the server does not provide the OCSP status response that the certificate advertises it will supply. Without this extension, a client cannot distinguish a server that does not support OCSP stapling from one that is withholding a status response because the certificate is invalid.
+section: "3"
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

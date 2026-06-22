@@ -1,0 +1,10 @@
+document: rfc-7636
+kind: design-rationale
+summary: Salting is intentionally omitted from the code_challenge production because the code_verifier already contains sufficient entropy (256 bits) to prevent brute-force attacks. Unlike passwords, the code_verifier's high entropy makes salt unnecessary for security, and modern GPUs can compute SHA-256 hashes faster than dictionary lookups anyway.
+section: "7.3"
+topics:
+    - oauth
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

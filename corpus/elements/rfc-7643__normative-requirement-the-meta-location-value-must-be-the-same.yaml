@@ -1,0 +1,10 @@
+document: rfc-7643
+kind: normative-requirement
+summary: The 'meta.location' value MUST be the same as the 'Content-Location' HTTP response header, and 'meta.version' must be the same as the entity-tag (ETag) HTTP response header. If the ETag does not satisfy all characteristics of a strong validator, the server MUST mark it as weak by prefixing with 'W/'.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - http
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

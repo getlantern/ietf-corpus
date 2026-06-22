@@ -1,0 +1,7 @@
+document: rfc-7641
+kind: normative-requirement
+summary: The server MUST set the Observe Option in each notification to the 24 least significant bits of a strictly increasing sequence number; the sequence number MUST NOT increase by more than 2^23 within less than 256 seconds. On retransmission, the server MUST update the Observe Option to the sequence number current at the time of retransmission.
+section: "4.4"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,9 @@
+document: rfc-7636
+kind: design-rationale
+summary: OAuth 2.0 public clients using the Authorization Code Grant are susceptible to authorization code interception attacks, where a malicious app registered with the same custom URI scheme can intercept the authorization code returned via the redirect URI and use it to obtain an access token. PKCE mitigates this by binding the authorization code to a dynamically created cryptographic secret (code_verifier) that the attacker does not possess.
+section: "1"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

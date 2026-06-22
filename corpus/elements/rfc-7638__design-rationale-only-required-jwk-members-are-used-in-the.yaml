@@ -1,0 +1,10 @@
+document: rfc-7638
+kind: design-rationale
+summary: Only required JWK members are used in the thumbprint computation so that optional attributes do not alter the result. This means the thumbprint identifies a key itself, not a key with a particular set of attributes, allowing the same thumbprint regardless of which optional members are present.
+section: 3.2.2
+topics:
+    - jose
+    - crypto
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"

@@ -1,0 +1,9 @@
+document: rfc-7641
+kind: normative-requirement
+summary: Servers MUST strictly limit simultaneous outstanding notifications/responses to a given client to NSTART (1 by default). The server SHOULD NOT send more than one non-confirmable notification per RTT; without an RTT estimate it SHOULD NOT send more than one every 3 seconds.
+section: 4.5.1
+rfc2119_level: MUST
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-22"
