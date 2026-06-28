@@ -1,0 +1,8 @@
+document: rfc-7692
+kind: interoperability-note
+summary: On platforms that only expose compressed data with a zlib header and Adler-32 checksum (rather than raw DEFLATE), developers must write stub code to strip and restore the zlib wrapper and checksum, since permessage-deflate uses raw DEFLATE (RFC 1951) without zlib framing.
+section: "7.3"
+topics:
+    - websocket
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

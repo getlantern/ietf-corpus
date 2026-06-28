@@ -1,0 +1,10 @@
+document: rfc-7701
+kind: normative-requirement
+summary: For private messages, the MSRP endpoint MUST populate a single To header in the Message/CPIM wrapper with the intended recipient's URI. The switch MUST reject with 404 if the To URI does not match a chat room participant, and MUST reject with 428 if the recipient does not support private messages.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

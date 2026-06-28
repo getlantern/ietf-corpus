@@ -1,0 +1,8 @@
+document: rfc-7692
+kind: design-rationale
+summary: The RSV1 bit is used as a per-message (not per-frame) flag so that endpoints can choose not to compress messages with incompressible contents without additional framing overhead. Compression is applied to the concatenated payload of all frames forming a message, not frame by frame.
+section: "1"
+topics:
+    - websocket
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

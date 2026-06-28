@@ -1,0 +1,9 @@
+document: rfc-7699
+kind: interoperability-note
+summary: 'A legacy management system expecting 32-bit lambda labels will not fail ungracefully when encountering 64-bit flexi-grid labels because the first 32 bits follow the RFC 6205 format. Migration can be done in two steps: first handle 64-bit label length, then add full field-level parsing.'
+section: "5.2"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

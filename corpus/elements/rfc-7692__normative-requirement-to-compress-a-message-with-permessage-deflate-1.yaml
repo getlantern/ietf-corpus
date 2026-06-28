@@ -1,0 +1,9 @@
+document: rfc-7692
+kind: normative-requirement
+summary: 'To compress a message with permessage-deflate: (1) compress payload using DEFLATE, (2) append an empty DEFLATE block with no compression (BTYPE=00) if not already present, (3) remove the trailing 4 octets 0x00 0x00 0xff 0xff. For non-final fragments, removal of the 4 octets MUST NOT be done.'
+section: 7.2.1
+rfc2119_level: MUST
+topics:
+    - websocket
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

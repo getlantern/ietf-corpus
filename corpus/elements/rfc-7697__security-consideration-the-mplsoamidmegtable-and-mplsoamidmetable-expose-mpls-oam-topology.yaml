@@ -1,0 +1,11 @@
+document: rfc-7697
+kind: security-consideration
+summary: The mplsOamIdMegTable and mplsOamIdMeTable expose MPLS OAM topology characteristics that may be sensitive. GET and NOTIFY access to these objects should be controlled, and values should potentially be encrypted when sent over the network via SNMP. SNMP versions prior to SNMPv3 lack adequate security even on IPsec-protected networks.
+section: "8"
+topics:
+    - mpls
+    - snmp
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,8 @@
+document: rfc-7692
+kind: design-rationale
+summary: Context takeover (reusing the LZ77 sliding window across messages) can improve compression ratio by exploiting redundancy between successive messages, but requires the decompressor to retain state. The no_context_takeover parameters allow resource-limited devices to trade compression efficiency for lower memory usage.
+section: 7.1.1
+topics:
+    - websocket
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

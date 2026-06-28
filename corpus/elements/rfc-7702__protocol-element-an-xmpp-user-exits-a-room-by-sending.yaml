@@ -1,0 +1,9 @@
+document: rfc-7702
+kind: protocol-element
+summary: An XMPP user exits a room by sending a directed presence stanza of type 'unavailable' to their occupant JID. The gateway translates this into a SIP BYE to the conference focus, which responds with a SIP 200 OK, and the XMPP server delivers an unavailable presence to the user.
+section: "5.8"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

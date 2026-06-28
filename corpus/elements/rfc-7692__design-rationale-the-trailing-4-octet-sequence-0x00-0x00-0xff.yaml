@@ -1,0 +1,8 @@
+document: rfc-7692
+kind: design-rationale
+summary: The trailing 4-octet sequence 0x00 0x00 0xff 0xff is removed from the compressed output and re-appended during decompression to align compressed data to an octet boundary, following the algorithm from RFC 1979 (PPP Deflate). This avoids transmitting a known constant suffix on every message.
+section: 7.2.1
+topics:
+    - websocket
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,11 @@
+document: rfc-7701
+kind: normative-requirement
+summary: When using fast-forward, the MSRP switch MUST set a chunk reception timer upon receiving the first chunk of a message. When this timer expires, the switch MUST treat the message as aborted and MAY discard all associated state and send an abort chunk to recipients.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

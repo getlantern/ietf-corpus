@@ -1,0 +1,9 @@
+document: rfc-7702
+kind: design-rationale
+summary: Because the XMPP room roster is communicated as multiple presence stanzas (one per participant) while the SIP conference participant list is a single conference-info document, the SIP-to-XMPP gateway must track participants and detect when the complete roster has been received—specifically when the joining user's own in-room presence arrives (as XEP-0045 defines this as the last stanza in the initial batch).
+section: "6.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

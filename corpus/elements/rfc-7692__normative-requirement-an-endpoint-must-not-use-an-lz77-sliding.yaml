@@ -1,0 +1,9 @@
+document: rfc-7692
+kind: normative-requirement
+summary: An endpoint MUST NOT use an LZ77 sliding window longer than 32,768 bytes to compress messages. If the agreed parameters contain server_max_window_bits or client_max_window_bits with a value of w, the respective compressor MUST NOT use an LZ77 sliding window longer than 2^w bytes.
+section: 7.2.1
+rfc2119_level: MUST NOT
+topics:
+    - websocket
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

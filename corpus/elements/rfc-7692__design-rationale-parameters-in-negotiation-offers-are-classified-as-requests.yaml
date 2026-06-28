@@ -1,0 +1,8 @@
+document: rfc-7692
+kind: design-rationale
+summary: Parameters in negotiation offers are classified as 'requests' (binding constraints the server must honor if it accepts the offer) or 'hints' (advisory information the server may ignore). This distinction is why a client-side hint like 'client_no_context_takeover' in an offer does not bind the client unless echoed back in the server's agreed parameters.
+section: "5"
+topics:
+    - websocket
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

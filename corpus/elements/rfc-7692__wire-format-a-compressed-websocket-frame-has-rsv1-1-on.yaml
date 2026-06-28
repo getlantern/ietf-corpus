@@ -1,0 +1,8 @@
+document: rfc-7692
+kind: wire-format
+summary: 'A compressed WebSocket frame has RSV1=1 on its first fragment. The payload data portion contains DEFLATE-compressed data with the trailing 4 octets (0x00 0x00 0xff 0xff) removed. For example, ''Hello'' compresses to 7 bytes: 0xf2 0x48 0xcd 0xc9 0xc9 0x07 0x00.'
+section: 7.2.3.1
+topics:
+    - websocket
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

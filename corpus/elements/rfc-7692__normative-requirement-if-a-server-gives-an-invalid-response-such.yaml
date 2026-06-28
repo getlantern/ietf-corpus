@@ -1,0 +1,9 @@
+document: rfc-7692
+kind: normative-requirement
+summary: If a server gives an invalid response — such as accepting a PMCE the client did not offer — the client MUST Fail the WebSocket Connection. A server MUST NOT accept a PMCE together with an extension that requires frame-boundary preservation or uses the Extension data field or reserved bits as per-frame attributes.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - websocket
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,9 @@
+document: rfc-7697
+kind: design-rationale
+summary: The mplsOamIdMeServicePointer is placed in the ME table rather than the MEG table because in the point-to-multipoint case, each ME (leaf) will point to a different branch of the tree. If placed in the MEG table, it would be impossible to have per-leaf path pointers within a single MEG.
+section: "7"
+topics:
+    - mpls
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

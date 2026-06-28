@@ -1,0 +1,9 @@
+document: rfc-7695
+kind: design-rationale
+summary: Naive random prefix selection is inefficient because a few long prefixes can exhaust the pool of available short prefixes. The recommended procedure selects candidates from available prefixes with the longest prefix lengths (maximizing address-space usage efficiency) and uses pseudorandom Node- and Link-specific values to promote stability across reboots.
+section: "5"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

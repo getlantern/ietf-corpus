@@ -1,0 +1,9 @@
+document: rfc-7702
+kind: interoperability-note
+summary: In practice, SIP implementations treat <display-text/> as canonical for display, and XMPP implementations use the resourcepart of the occupant JID when <nick/> (XEP-0172) is absent. Gateways should use <display-text/> if the XCON 'nickname' attribute is absent (SIP side) and use the occupant JID resourcepart if <nick/> is absent (XMPP side).
+section: "7"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"
