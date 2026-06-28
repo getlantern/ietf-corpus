@@ -1,0 +1,9 @@
+document: rfc-7733
+kind: security-consideration
+summary: During initial deployment, nodes are secured consecutively at the link layer using the PANA/EAP-TLS/TLS authentication stack (Section 4.1.8.2). The Authentication Server sends the network-wide symmetric key to the joining node via PANA after successful mutual authentication; unsecured PANA authentication packets are exempted at network edge enforcement points, but all other unsecured MAC-layer traffic MUST be discarded.
+section: "7.1"
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

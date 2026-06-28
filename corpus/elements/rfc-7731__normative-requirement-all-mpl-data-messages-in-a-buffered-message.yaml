@@ -1,0 +1,10 @@
+document: rfc-7731
+kind: normative-requirement
+summary: All MPL Data Messages in a Buffered Message Set MUST have sequence numbers greater than or equal to MinSequence for the corresponding SeedID. When MinSequence increases, the forwarder MUST delete any Buffered Message Set entries that fall below the new MinSequence.
+section: "7.4"
+rfc2119_level: MUST
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

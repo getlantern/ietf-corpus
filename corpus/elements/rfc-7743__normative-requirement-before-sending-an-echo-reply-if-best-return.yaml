@@ -1,0 +1,9 @@
+document: rfc-7743
+kind: normative-requirement
+summary: Before sending an Echo Reply, if Best-return-code is 3 (egress for FEC) or 8 (label switched at stack-depth) and the packet size exceeds MTU, Best-return-code MUST be set to 20 (MTU Exceeded). If the full reply would exceed MTU, the Relay Node Address Stack TLV SHOULD still be included while other optional TLVs are excluded.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

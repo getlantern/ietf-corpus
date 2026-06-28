@@ -1,0 +1,10 @@
+document: rfc-7746
+kind: security-consideration
+summary: LSP Self-ping messages are easily forged, allowing an attacker to send a forged message to the ingress LSR and cause premature termination of the LSP Self-ping session. Operators SHOULD filter LSP Self-ping packets at the edges of the MPLS signaling domain to mitigate this threat.
+section: "7"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

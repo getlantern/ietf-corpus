@@ -1,0 +1,9 @@
+document: rfc-7743
+kind: normative-requirement
+summary: When processing the Relay Node Address Stack TLV on receipt of an Echo Request, the receiver MUST scan from bottom to top for the last K-bit-set entry (or use top-of-stack if none), then scan downward from there to find the first routable IP address; that entry becomes the Destination Address Offset. Address entries below the first routable address MUST be deleted, and at least one address entry for the replying LSR MUST be added at the bottom.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

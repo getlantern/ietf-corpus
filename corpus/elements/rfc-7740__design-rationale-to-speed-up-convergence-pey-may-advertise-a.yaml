@@ -1,0 +1,10 @@
+document: rfc-7740
+kind: design-rationale
+summary: To speed up convergence, PEy MAY advertise a Leaf A-D route even if it does not choose PEx as its Upstream PE; it will then receive traffic from all PEs, discarding those whose label does not correspond to its chosen Upstream PE, but avoids waiting for new Leaf A-D routes to propagate when the Upstream PE changes.
+section: "2.1"
+topics:
+    - multicast
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

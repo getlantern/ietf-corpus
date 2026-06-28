@@ -1,0 +1,10 @@
+document: rfc-7731
+kind: interoperability-note
+summary: When the original multicast destination address is not the MPL Domain Address, the MPL Seed MUST use IPv6-in-IPv6 encapsulation (RFC 2473) to encapsulate the original multicast message in an MPL Data Message, preserving the original IPv6 Destination Address inside the tunnel while the outer header uses the MPL Domain Address.
+section: "9.1"
+rfc2119_level: MUST
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

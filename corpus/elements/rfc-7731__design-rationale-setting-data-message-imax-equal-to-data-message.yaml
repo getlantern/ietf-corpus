@@ -1,0 +1,9 @@
+document: rfc-7731
+kind: design-rationale
+summary: Setting DATA_MESSAGE_IMAX equal to DATA_MESSAGE_IMIN in the default configuration is acceptable because subsequent MPL Data Message retransmissions are driven by MPL Control Messages (which have CONTROL_MESSAGE_IMAX > CONTROL_MESSAGE_IMIN), rather than the Data Message Trickle timer itself.
+section: "5.4"
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

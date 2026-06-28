@@ -1,0 +1,10 @@
+document: rfc-7740
+kind: design-rationale
+summary: MP2MP tunnels realized via BIDIR-PIM or mLDP (as assumed by RFC 7582) require signaling and state on both PEs and P routers. This document instead simulates the MP2MP tunnel with a mesh of P2MP Ingress Replication tunnels, which confines state to PEs only and avoids any P-router involvement.
+section: "1"
+topics:
+    - multicast
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

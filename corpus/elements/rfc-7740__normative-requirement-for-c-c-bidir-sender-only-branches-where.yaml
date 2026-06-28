@@ -1,0 +1,11 @@
+document: rfc-7740
+kind: normative-requirement
+summary: For (C-*,C-*-BIDIR) 'Sender Only Branches' where a PE only has data to send upstream toward C-RPA with no explicit join state for a bidirectional group, traffic MUST be sent to all PEs in the partition (not just the Upstream PE), because they may have specific (C-*,C-G-BIDIR) join states that the sending PE is unaware of.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - multicast
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

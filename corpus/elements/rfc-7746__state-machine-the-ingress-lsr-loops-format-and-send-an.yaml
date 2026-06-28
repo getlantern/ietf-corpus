@@ -1,0 +1,8 @@
+document: rfc-7746
+kind: state-machine
+summary: 'The ingress LSR loops: format and send an LSP Self-ping message through the LSP under test, then wait Retry Timer milliseconds. If the corresponding message returns, set Status to TRUE (session succeeds). Otherwise, decrement Retry Counter and optionally increase Retry Timer via back-off. The loop terminates when Status is TRUE or Retry Counter reaches zero.'
+section: "4"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

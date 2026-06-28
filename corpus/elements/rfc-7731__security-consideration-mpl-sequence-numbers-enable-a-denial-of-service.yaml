@@ -1,0 +1,10 @@
+document: rfc-7731
+kind: security-consideration
+summary: 'MPL sequence numbers enable a denial-of-service attack: an attacker can spoof a message with a sufficiently large sequence number to flush the Buffered Message Set and advance MinSequence, halting forwarding and preventing acceptance of legitimate MPL Data Messages until the Seed Set entry expires. This affects both proactive and reactive forwarding modes.'
+section: "12"
+topics:
+    - multicast
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

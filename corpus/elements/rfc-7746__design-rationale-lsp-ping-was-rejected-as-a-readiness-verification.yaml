@@ -1,0 +1,9 @@
+document: rfc-7746
+kind: design-rationale
+summary: LSP Ping was rejected as a readiness-verification mechanism because it sends MPLS Echo Requests to the egress LSR's control plane, imposing control-plane overhead that the egress cannot bound. During convergence events affecting large numbers of LSPs, this overhead is prohibitive. LSP Self-ping requires only that the egress data plane forward an ordinary IP packet.
+section: Appendix A
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

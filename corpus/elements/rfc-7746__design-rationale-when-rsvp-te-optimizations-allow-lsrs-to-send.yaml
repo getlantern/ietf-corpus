@@ -1,0 +1,9 @@
+document: rfc-7746
+kind: design-rationale
+summary: 'When RSVP-TE optimizations allow LSRs to send RESV messages before installing forwarding state, a race condition arises: the ingress LSR may forward traffic through an LSP before all downstream nodes have installed forwarding state, causing traffic loss. LSP Self-ping was created specifically to close this gap by confirming end-to-end forwarding state installation.'
+section: "1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

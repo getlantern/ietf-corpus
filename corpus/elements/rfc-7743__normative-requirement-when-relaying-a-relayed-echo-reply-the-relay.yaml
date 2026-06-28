@@ -1,0 +1,9 @@
+document: rfc-7743
+kind: normative-requirement
+summary: When relaying a Relayed Echo Reply, the relay node MUST determine the next relay address using the Destination Address Offset as the starting position (not the bottom of stack). If the next relay is not the initiator, the relay node MUST forward the Relayed Echo Reply with payload unchanged except for the updated TLV. The TTL SHOULD be copied from the received message and decremented by 1.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,9 @@
+document: rfc-7743
+kind: normative-requirement
+summary: When originating a Relayed Echo Reply (i.e., the first address in the stack is not the next relay), the replying LSR SHOULD send a Relayed Echo Reply (Message Type 5) to the next relay node address. The destination IP is the next relay node address, and both source and destination UDP ports MUST be 3503. The updated Relay Node Address Stack TLV MUST be carried in the Relayed Echo Reply.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

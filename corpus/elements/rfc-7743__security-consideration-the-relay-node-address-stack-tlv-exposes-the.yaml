@@ -1,0 +1,11 @@
+document: rfc-7743
+kind: security-consideration
+summary: The Relay Node Address Stack TLV exposes the LSP path topology. To mitigate this, the K bit SHOULD only be set when required (e.g., at AS boundaries), and NIL address entries SHOULD be used to hide node identities where possible. Operators wishing to obscure their nodes SHOULD replace the originating Echo Reply node's address with a NIL entry.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

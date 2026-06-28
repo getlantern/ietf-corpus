@@ -1,0 +1,9 @@
+document: rfc-7743
+kind: design-rationale
+summary: In inter-AS and inter-area deployments, the replying LSR in one AS may have no routable path back to the Echo Request initiator in another AS, causing Echo Reply messages to be discarded and LSP Ping/Traceroute to fail with false negatives. The Relayed Echo Reply mechanism introduces relay nodes (e.g., ASBRs) to forward the reply hop-by-hop until the initiator is reached.
+section: "2"
+topics:
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

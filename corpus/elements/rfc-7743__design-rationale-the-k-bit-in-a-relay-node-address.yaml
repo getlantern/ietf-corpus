@@ -1,0 +1,8 @@
+document: rfc-7743
+kind: design-rationale
+summary: The K bit in a relay node address entry is introduced to mark addresses that must be preserved throughout the traceroute operation. Without such a flag, intermediate relay nodes at AS boundaries (ASBRs) could be optimized away from the stack, breaking the relay chain on subsequent Echo Requests with higher TTLs.
+section: "3.2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

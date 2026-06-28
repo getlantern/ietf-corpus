@@ -1,0 +1,9 @@
+document: rfc-7741
+kind: design-rationale
+summary: 'VP8 frames are divided into partitions (mode/motion vectors in the first partition, DCT/WHT coefficients in remaining partitions) to enable loss robustness: the first partition is decodable alone, and subsequent partitions provide value even with partial frame loss. This motivated the PID, S, and 1st-partition-size fields.'
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

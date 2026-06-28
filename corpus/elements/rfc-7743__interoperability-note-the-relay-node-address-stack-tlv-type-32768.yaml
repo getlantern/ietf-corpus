@@ -1,0 +1,8 @@
+document: rfc-7743
+kind: interoperability-note
+summary: The Relay Node Address Stack TLV type (32768) falls in the RFC 4379 optional TLV range that nodes silently ignore if unrecognized. When a non-supporting node is encountered, the initiator will not receive the TLV in the Echo Reply; an indication SHOULD be reported and the TLV from the previous Echo Request SHOULD be copied forward to continue the ping.
+section: "7"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

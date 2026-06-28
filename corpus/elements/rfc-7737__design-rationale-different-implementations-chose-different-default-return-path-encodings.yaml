@@ -1,0 +1,8 @@
+document: rfc-7737
+kind: design-rationale
+summary: Different implementations chose different default return-path encodings for different LSP types, causing MPLS echo replies to fail in many cases because responder LSRs drop echo requests with unavailable return paths. The Reply Mode Order TLV eliminates guessing by letting the responder pick the first available path from a preference list.
+section: "2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,9 @@
+document: rfc-7731
+kind: state-machine
+summary: Upon receiving an MPL Data Message, a forwarder classifies it as 'old' if the sequence number is less than MinSequence in the Seed Set or if the same sequence number exists in the Buffered Message Set. Otherwise it is 'new'. New messages trigger Seed Set update, Buffered Message Set insertion, payload processing, and multicast retransmission; old messages are discarded.
+section: "4.3"
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

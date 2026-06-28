@@ -1,0 +1,10 @@
+document: rfc-7743
+kind: security-consideration
+summary: The Relayed Echo Reply mechanism increases DoS risk because an attacker can place a target router's IP in the Relay Node Address Stack, causing it to be overwhelmed with relay traffic. A rate limiter SHOULD be applied to the well-known UDP port 3503 on relay nodes, and relay nodes SHOULD validate source addresses against a set of trusted border router addresses.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"
