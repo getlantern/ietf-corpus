@@ -1,0 +1,8 @@
+document: rfc-7811
+kind: design-rationale
+summary: Whenever an ear endpoint is the GADAG root R, the ear is always directed away from R (R's interface is OUTGOING). This ensures exactly one node M exists as the largest predecessor of R, so the MRT-Red path for unordered node pairs never passes through R, preventing the intermediary nodes G and H from coinciding at R and breaking disjointness.
+section: 5.7.2
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

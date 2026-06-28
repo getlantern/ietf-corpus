@@ -1,0 +1,9 @@
+document: rfc-7825
+kind: design-rationale
+summary: Aggressive nomination is recommended for RTSP ICE because, unlike SIP/SDP offer/answer, RTSP media delivery only begins after a separate PLAY request, so the risk of a path change while media is already flowing can be avoided by delaying PLAY until outstanding checks complete.
+section: "6.7"
+topics:
+    - nat
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

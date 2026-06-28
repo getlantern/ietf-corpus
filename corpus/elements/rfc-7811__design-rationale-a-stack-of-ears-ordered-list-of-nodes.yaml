@@ -1,0 +1,8 @@
+document: rfc-7811
+kind: design-rationale
+summary: A stack of ears (ordered list of nodes) is used during GADAG construction so that nodes are processed in partial-order sequence. This guarantees that all ears connecting to a node are found before exploring ears from nodes higher in the partial order, ensuring correct direction assignment for every ear.
+section: "5.5"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,9 @@
+document: rfc-7812
+kind: security-consideration
+summary: MRT-FRR requires all routers in the MRT Island to correctly compute next hops using the same algorithm and install corresponding forwarding state. This is a stronger correctness requirement than LFA/RLFA methods, which reuse existing SPF-based forwarding state from the widely deployed SPF algorithm. Incorrect computation by any node can silently cause forwarding failures during failure events.
+section: "15"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

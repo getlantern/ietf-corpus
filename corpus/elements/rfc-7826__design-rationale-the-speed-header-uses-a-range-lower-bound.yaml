@@ -1,0 +1,9 @@
+document: rfc-7826
+kind: design-rationale
+summary: The Speed header uses a range (lower bound to upper bound) rather than a single value to resolve the conflict between buffer-filling (where quality reduction is unacceptable) and local-playout scaling (where exact speed is required). The server operates at the highest speed within the range that the network path supports, degrading quality only if it cannot sustain even the minimum speed.
+section: 2.5.1
+topics:
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

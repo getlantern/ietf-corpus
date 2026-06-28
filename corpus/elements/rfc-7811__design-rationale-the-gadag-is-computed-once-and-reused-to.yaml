@@ -1,0 +1,8 @@
+document: rfc-7811
+kind: design-rationale
+summary: The GADAG is computed once and reused to derive MRT next hops rooted at every node, rather than computing separate MRTs for each destination root. This is significantly faster and is enabled by using increasing-SPF (following OUTGOING links) and decreasing-SPF (following INCOMING links) on the common GADAG.
+section: "5.7"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

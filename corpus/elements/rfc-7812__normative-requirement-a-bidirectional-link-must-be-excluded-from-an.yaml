@@ -1,0 +1,9 @@
+document: rfc-7812
+kind: normative-requirement
+summary: A bidirectional link MUST be excluded from an MRT Island if either forward or reverse cost is 0xFFFFFE (IS-IS) or 0xFFFF (OSPF). A router MUST be excluded if it has the IS-IS overload bit set, all OSPF outgoing metrics are 0xFFFF, or its Router LSA has the V6-bit or R-bit not set.
+section: 7.3.1
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

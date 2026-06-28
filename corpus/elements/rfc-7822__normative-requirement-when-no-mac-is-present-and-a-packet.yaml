@@ -1,0 +1,9 @@
+document: rfc-7822
+kind: normative-requirement
+summary: When no MAC is present and a packet includes a single extension field, the length of that extension field MUST be at least 7 words (28 octets). If more than one extension field is present, the last MUST be at least 28 octets and all others MUST be at least 16 octets each.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

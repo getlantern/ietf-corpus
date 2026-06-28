@@ -1,0 +1,9 @@
+document: rfc-7826
+kind: security-consideration
+summary: A remote DoS attack (Section 21.2.1) can be launched by directing a media server to send high-bandwidth streams to a victim address by manipulating the Transport header destination. Servers MUST take precautions to verify delivery destinations, such as requiring unicast delivery only to the client's source address or implementing a reachability check.
+section: 21.2.1
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

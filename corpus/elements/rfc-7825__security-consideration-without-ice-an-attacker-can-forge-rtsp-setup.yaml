@@ -1,0 +1,10 @@
+document: rfc-7825
+kind: security-consideration
+summary: Without ICE, an attacker can forge RTSP SETUP requests using a victim's IP address and cause the media server to flood that victim with media packets. ICE connectivity checks require the client to confirm it wants media before delivery begins, directly mitigating this DDoS vector. ICE-Lite is explicitly excluded because it omits the server-initiated check that provides this protection.
+section: "11.1"
+topics:
+    - security
+    - nat
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

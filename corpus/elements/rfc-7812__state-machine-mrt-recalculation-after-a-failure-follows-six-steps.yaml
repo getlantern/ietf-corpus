@@ -1,0 +1,8 @@
+document: rfc-7812
+kind: state-machine
+summary: 'MRT recalculation after a failure follows six steps: (1) receive failure notification, (2) recompute SPT, (3) install new SPT in FIB, (4) wait a configured period for all routers to switch to SPTs and traffic to drain from MRTs, (5) recompute MRTs, (6) install new MRTs in FIB. New MRTs MUST NOT be installed until traffic has drained from old MRT topologies to avoid disrupting in-flight FRR traffic.'
+section: "12.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

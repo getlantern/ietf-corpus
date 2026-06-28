@@ -1,0 +1,11 @@
+document: rfc-7825
+kind: normative-requirement
+summary: For RTP-based media streams, candidates for RTP MUST have component-id of 1 and candidates for RTCP MUST have component-id of 2, unless RTP/RTCP multiplexing is used in which case only component 1 is used. The rel-addr and rel-port fields MUST be present for server-reflexive, peer-reflexive, and relayed candidates, and MUST be omitted for host candidates.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - nat
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

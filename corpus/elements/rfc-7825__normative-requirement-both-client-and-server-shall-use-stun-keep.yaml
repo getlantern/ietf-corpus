@@ -1,0 +1,10 @@
+document: rfc-7825
+kind: normative-requirement
+summary: Both client and server SHALL use STUN keep-alive messages for the nominated candidate pair(s) following ICE §10 during steady state. This is critical because RTSP play sessions carry traffic only from server to client, so NAT bindings must be refreshed by client-to-server STUN traffic.
+section: "6.11"
+rfc2119_level: SHALL
+topics:
+    - nat
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

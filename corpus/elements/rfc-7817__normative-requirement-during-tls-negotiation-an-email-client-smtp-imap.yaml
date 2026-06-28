@@ -1,0 +1,12 @@
+document: rfc-7817
+kind: normative-requirement
+summary: During TLS negotiation, an email client (SMTP, IMAP, POP3, or ManageSieve) MUST check its understanding of the server identity against the server's identity as presented in the Certificate message to prevent man-in-the-middle attacks. This check is only performed after the server certificate passes certification path validation per RFC 5280.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - tls
+    - email
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

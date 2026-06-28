@@ -1,0 +1,10 @@
+document: rfc-7812
+kind: normative-requirement
+summary: A router supporting MRT LDP Label Option 1A MUST be able to receive and correctly interpret the Rainbow-FEC. If a FEC is advertised from outside the MRT Island under Option 1A, routers learning that FEC MUST advertise labels for (MRT-Red, FEC) and (MRT-Blue, FEC) to neighbors inside the MRT Island, and MUST compute and install transit MRT-Blue and MRT-Red next hops.
+section: "10.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

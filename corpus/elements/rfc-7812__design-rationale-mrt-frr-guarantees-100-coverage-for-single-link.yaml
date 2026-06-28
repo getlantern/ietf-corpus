@@ -1,0 +1,8 @@
+document: rfc-7812
+kind: design-rationale
+summary: MRT-FRR guarantees 100% coverage for single link or node failure in any connected topology because real networks constantly change topology due to maintenance, failures, and additions, causing coverage-sensitive methods like LFA to silently lose coverage. Complete coverage is also required when Ordered FIB or Nearside Tunneling micro-loop prevention is deployed, as those mechanisms require all destinations to have alternates.
+section: "1.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

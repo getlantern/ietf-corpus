@@ -1,0 +1,8 @@
+document: rfc-7812
+kind: design-rationale
+summary: 'Traffic on MRT-Red or MRT-Blue is required to exit the MRT forwarding topology and return to shortest-path forwarding when leaving an IGP area/level, for three reasons: the packet takes the shortest path to its destination, a single ABR/LBR failure can be independently repaired in each area, and the packet can be fast-rerouted again if a second distinct failure occurs in a different area.'
+section: "10"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

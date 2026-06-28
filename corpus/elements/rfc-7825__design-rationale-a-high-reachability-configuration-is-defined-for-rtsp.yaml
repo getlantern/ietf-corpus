@@ -1,0 +1,10 @@
+document: rfc-7825
+kind: design-rationale
+summary: A high-reachability configuration is defined for RTSP servers not behind NATs, allowing them to reduce their candidate set to one per (address family, media stream, component) tuple and suppress self-initiated checks until triggered by the client. This reduces load and mitigates STUN amplification DDoS, while still verifying client presence via triggered checks.
+section: "5.2"
+topics:
+    - nat
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

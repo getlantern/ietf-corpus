@@ -1,0 +1,9 @@
+document: rfc-7812
+kind: design-rationale
+summary: For LDP traffic, IP tunneling is avoided in favor of MRT LDP labels because tunneling LDP traffic to a remote node requires targeted LDP sessions so the PLR can learn remote FEC-label bindings. The MRT LDP label options forward LDP traffic along MRT paths to the destination FEC without any targeted LDP sessions.
+section: "6.2"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

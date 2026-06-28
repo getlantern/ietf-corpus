@@ -1,0 +1,10 @@
+document: rfc-7825
+kind: design-rationale
+summary: RTP/RTCP multiplexing is mandated alongside D-ICE for RTP because it halves the number of STUN connectivity check instances and candidate combinations per media stream, reducing ICE completion time by at least one round-trip per stream. The demultiplexer required for STUN/RTP separation makes the additional RTCP demux point relatively cheap.
+section: "8"
+topics:
+    - nat
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"
