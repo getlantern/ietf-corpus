@@ -1,0 +1,9 @@
+document: rfc-7783
+kind: design-rationale
+summary: When an RBridge advertises an Affinity sub-TLV designating one of its own nicknames as a child in a specific distribution tree, the effect is that nickname is ignored in all other distribution trees, enforcing RPF so that only that RBridge can use the nickname as ingress/egress on the designated tree. This has no effect on unicast SPF calculations.
+section: "4.1"
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

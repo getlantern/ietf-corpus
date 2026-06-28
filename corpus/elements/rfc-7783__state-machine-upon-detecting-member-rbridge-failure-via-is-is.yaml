@@ -1,0 +1,9 @@
+document: rfc-7783
+kind: state-machine
+summary: 'Upon detecting member RBridge failure (via IS-IS LSP absence), surviving edge group members start recovery timer T_rec. If the failed RBridge has not recovered after T_rec, members recalculate tree assignment and re-advertise Affinity sub-TLVs. On RBi restart, T_i and T_j timers coordinate rejoining; T_j SHOULD be less than T_i (recommended default: T_j = T_i / 2) to minimize packet duplication.'
+section: 5.6.1
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,7 @@
+document: rfc-7787
+kind: normative-requirement
+summary: Every node MUST update the Milliseconds Since Origination field in any Node State TLV it sends, based on the estimated original publication time. To prevent 32-bit overflow, the originating node MUST republish its TLV set roughly every 48 days even when unchanged (when the field would exceed 2³² − 2¹⁶).
+section: 7.2.3
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

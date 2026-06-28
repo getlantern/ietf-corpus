@@ -1,0 +1,7 @@
+document: rfc-7787
+kind: normative-requirement
+summary: The topology graph MUST be updated immediately or within less than Trickle Imin whenever a Peer TLV or node is added or removed, or a node's origination time approaches 32-bit overflow (> current time − 2³² + 2¹⁵ ms). Nodes not reachable in the latest topology traversal MUST NOT contribute to the network state hash or be provided to applications or remote nodes.
+section: "4.6"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

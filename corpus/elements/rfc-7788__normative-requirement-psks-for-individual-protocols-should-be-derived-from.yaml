@@ -1,0 +1,10 @@
+document: rfc-7788
+kind: normative-requirement
+summary: PSKs for individual protocols SHOULD be derived from the managed random PSK using a suitable one-way hashing algorithm (e.g., HKDF based on HMAC-SHA256 with the protocol name in the info field), so that disclosure of any derived key does not impact other users. Derived PSKs MUST be updated whenever the managed PSK changes.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

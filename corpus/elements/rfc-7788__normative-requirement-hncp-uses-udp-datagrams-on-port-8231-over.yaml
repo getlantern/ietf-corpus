@@ -1,0 +1,10 @@
+document: rfc-7788
+kind: normative-requirement
+summary: HNCP uses UDP datagrams on port 8231 over link-local scoped IPv6, with unicast and multicast (FF02:0:0:0:0:0:0:11). Received datagrams where either IPv6 source or destination address is not link-local scoped MUST be ignored. Each node MUST be able to receive UDP datagrams with a payload of at least 4000 bytes.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

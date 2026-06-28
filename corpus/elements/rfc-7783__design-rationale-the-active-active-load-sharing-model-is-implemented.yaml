@@ -1,0 +1,9 @@
+document: rfc-7783
+kind: design-rationale
+summary: The active-active load-sharing model is implemented by representing the edge group with a single virtual RBridge nickname. Without this, existing RPF check algorithms (which strictly depend on link cost and parent RBridge priority) may leave a given edge RBridge with no valid distribution tree on which to forward traffic on behalf of the virtual RBridge.
+section: "1"
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

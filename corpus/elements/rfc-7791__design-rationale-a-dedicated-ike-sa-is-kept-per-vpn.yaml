@@ -1,0 +1,9 @@
+document: rfc-7791
+kind: design-rationale
+summary: A dedicated IKE SA is kept per VPN (rather than multiplexing Child SAs under one IKE SA) to simplify reachability tests and VPN maintenance. Cloning preserves this one-IKE-SA-per-VPN invariant while avoiding re-authentication.
+section: "1"
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

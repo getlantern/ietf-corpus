@@ -1,0 +1,9 @@
+document: rfc-7788
+kind: security-consideration
+summary: The Managed-PSK scheme SHOULD NOT be used unless HNCP unicast transport is secured with DTLS, since transferring the PSK in plaintext is a potential risk especially as the originator may not know about security on all links. The PSK MUST be regenerated whenever a node is removed from the DNCP topology to prevent access by former members.
+section: "9"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

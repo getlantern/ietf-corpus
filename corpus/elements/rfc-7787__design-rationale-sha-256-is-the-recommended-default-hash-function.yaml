@@ -1,0 +1,8 @@
+document: rfc-7787
+kind: design-rationale
+summary: SHA-256 is the recommended default hash function for both node data hashing and network state hash computation. A non-cryptographic hash is permissible; however, a hash collision in the network state hash will partition the network until some data changes or conflicting Node State TLVs cross the partition boundary via Trickle.
+section: "9"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

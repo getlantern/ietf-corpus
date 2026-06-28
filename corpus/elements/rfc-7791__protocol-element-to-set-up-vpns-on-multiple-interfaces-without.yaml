@@ -1,0 +1,10 @@
+document: rfc-7791
+kind: protocol-element
+summary: 'To set up VPNs on multiple interfaces without re-authentication, peers combine IKE SA cloning with MOBIKE: (1) establish initial IKE SA and VPN on Interface_0, (2) clone the IKE SA via CREATE_CHILD_SA with CLONE_IKE_SA, (3) create a Child SA for the second VPN under the new IKE SA, then (4) use MOBIKE UPDATE_SA_ADDRESSES to migrate that VPN to Interface_1.'
+section: A
+topics:
+    - ipsec
+    - vpn
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

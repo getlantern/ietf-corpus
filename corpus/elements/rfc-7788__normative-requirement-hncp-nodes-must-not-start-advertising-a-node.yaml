@@ -1,0 +1,9 @@
+document: rfc-7788
+kind: normative-requirement
+summary: HNCP nodes MUST NOT start advertising a node address already advertised by another node. An address MUST NOT be used unless it has been advertised for at least ADDRESS_APPLY_DELAY (default 3 seconds) consecutive seconds. When the same address is advertised by more than one node, all but the one with the greatest node identifier MUST be removed.
+section: "6.4"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

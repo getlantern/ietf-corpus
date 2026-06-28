@@ -1,0 +1,8 @@
+document: rfc-7787
+kind: design-rationale
+summary: The dense multicast optimization (Section 6.2) avoids O(N²) growth in both published state size and keep-alive traffic on large multicast-enabled links. Nodes without the highest node identifier delegate to the highest-identifier node via unicast, reducing full-mesh Peer TLV and keep-alive counts to O(N).
+section: "6.2"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

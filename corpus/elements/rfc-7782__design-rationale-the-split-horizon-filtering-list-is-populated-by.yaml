@@ -1,0 +1,8 @@
+document: rfc-7782
+kind: design-rationale
+summary: The split horizon filtering list is populated by listening to AA-LAALP-GROUP-RBRIDGES APPsub-TLVs, which identify all other RBridges sharing the same LAALP. The Sender Nickname from each such APPsub-TLV is added to the local port's filtering list, enabling each AAE member to block echoes from peer AAE members without needing out-of-band coordination.
+section: 5.3.2
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

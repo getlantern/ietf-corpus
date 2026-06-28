@@ -1,0 +1,10 @@
+document: rfc-7788
+kind: normative-requirement
+summary: If no Managed-PSK TLV is currently being announced, an HNCP node using this mechanism MUST create one after a random delay of 0–10 seconds with a 32-byte random key. The node advertising the Managed-PSK TLV MUST generate and advertise a new random one whenever an unreachable node is removed from the DNCP topology.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

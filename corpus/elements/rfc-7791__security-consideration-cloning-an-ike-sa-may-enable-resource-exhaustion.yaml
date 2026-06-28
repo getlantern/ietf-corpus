@@ -1,0 +1,10 @@
+document: rfc-7791
+kind: security-consideration
+summary: 'Cloning an IKE SA may enable resource exhaustion: a single end user can populate multiple IKE SAs against a system that limits total SA count, or bypass per-SA Child SA limits. Implementations should enforce limits on cloned SAs per authenticated identity and evaluate Child SA counts across all IKE SAs belonging to a user.'
+section: "8"
+topics:
+    - ipsec
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

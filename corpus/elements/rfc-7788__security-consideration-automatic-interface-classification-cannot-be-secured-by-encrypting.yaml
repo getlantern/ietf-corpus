@@ -1,0 +1,8 @@
+document: rfc-7788
+kind: security-consideration
+summary: Automatic interface classification cannot be secured by encrypting or authenticating HNCP traffic because external routers do not participate in the protocol. Threats include forged uplinks to redirect traffic and forged internal status by external routers to circumvent the perimeter firewall. Mitigation requires securing individual links at the physical or link layer, or preconfiguring adjacent interfaces to a fixed category.
+section: "12.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

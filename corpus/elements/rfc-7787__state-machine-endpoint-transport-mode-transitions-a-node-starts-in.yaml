@@ -1,0 +1,8 @@
+document: rfc-7787
+kind: state-machine
+summary: 'Endpoint transport mode transitions: a node starts in Multicast+Unicast or unicast mode. When peer count on a Multicast+Unicast endpoint exceeds the profile upper bound and the local node does not have the highest node identifier, the endpoint SHOULD transition to MulticastListen+Unicast (unicast only, to the highest-identifier peer, while continuing to listen to multicast). If the local node becomes the highest-identifier node, it MUST switch back to Multicast+Unicast and form full peer relationships.'
+section: "6.2"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

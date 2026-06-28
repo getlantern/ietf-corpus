@@ -1,0 +1,6 @@
+document: rfc-7788
+kind: design-rationale
+summary: HNCP uses the "HOMENET" DHCP user class string to distinguish internal DHCP servers from external ones. Because other HNCP nodes will reject requests containing this user class, any DHCP server that replies is unambiguously external (or a malicious internal node), enabling reliable automatic border detection without requiring out-of-band coordination.
+section: "5.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

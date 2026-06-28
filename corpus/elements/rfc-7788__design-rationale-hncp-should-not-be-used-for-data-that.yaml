@@ -1,0 +1,6 @@
+document: rfc-7788
+kind: design-rationale
+summary: HNCP should not be used for data that changes rapidly and constantly, because it is built on DNCP which is designed for slowly-changing state. For services like naming and service discovery, HNCP only transports DNS server addresses rather than per-name or per-service data, keeping state churn proportional to the number of external connections rather than the home network size.
+section: "1.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

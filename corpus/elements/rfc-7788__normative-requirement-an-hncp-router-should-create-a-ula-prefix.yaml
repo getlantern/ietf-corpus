@@ -1,0 +1,11 @@
+document: rfc-7788
+kind: normative-requirement
+summary: An HNCP router SHOULD create a ULA prefix if there is no other IPv6 prefix with a preferred time greater than 0. An HNCP router MUST create a private IPv4 prefix whenever it wishes to provide IPv4 Internet connectivity and no other private IPv4 prefix with Internet connectivity currently exists. Creation of ULA and IPv4 prefixes MUST be delayed by a random time between 0 and 10 seconds.
+section: "6.5"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

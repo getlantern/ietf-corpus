@@ -1,0 +1,9 @@
+document: rfc-7782
+kind: normative-requirement
+summary: To prevent echo/forwarding loops, AAE member RBridges MUST set up per-port filtering lists of <ingress nickname, VLAN> tuples. Packets matching any entry in the filtering list MUST NOT be egressed out of the corresponding LAALP port (split horizon). All enabled VLANs MUST be consistent on all ports connected to an LAALP.
+section: 5.3.2
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

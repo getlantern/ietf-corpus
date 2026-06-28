@@ -1,0 +1,9 @@
+document: rfc-7791
+kind: interoperability-note
+summary: In a regular IKEv2 SA rekey (without CLONE_IKE_SA), the old SA is deleted after the rekey completes per RFC 7296 Section 2.8. The CLONE_IKE_SA notification explicitly overrides this behavior, causing both SAs to coexist. Implementations must distinguish cloned rekeys from standard rekeys.
+section: "5.2"
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"
