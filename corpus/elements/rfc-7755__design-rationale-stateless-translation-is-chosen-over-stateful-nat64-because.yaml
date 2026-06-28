@@ -1,0 +1,10 @@
+document: rfc-7755
+kind: design-rationale
+summary: Stateless translation is chosen over stateful NAT64 because it enables line-rate performance with no per-flow state, per-packet ECMP load balancing between BRs, and high availability without state synchronization. The limiting factors are packets-per-second and bandwidth, not concurrent flow count.
+section: "1.2"
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

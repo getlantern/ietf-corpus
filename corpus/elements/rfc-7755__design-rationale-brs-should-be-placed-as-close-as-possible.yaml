@@ -1,0 +1,9 @@
+document: rfc-7755
+kind: design-rationale
+summary: BRs should be placed as close as possible to the direct path between IPv6 Service Addresses and end users to avoid RTT detour overhead (a distant BR adds 2× the detour latency). Implementing the BR as a logical function within the routers already handling native IPv6 traffic eliminates the need for dedicated hardware, separate network ports, and extra rack space.
+section: "4.6"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

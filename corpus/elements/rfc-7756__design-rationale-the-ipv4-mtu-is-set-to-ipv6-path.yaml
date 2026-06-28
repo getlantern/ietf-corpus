@@ -1,0 +1,9 @@
+document: rfc-7756
+kind: design-rationale
+summary: The IPv4 MTU is set to IPv6 Path MTU minus 20 bytes (the size of the IPv4-to-IPv6 header increase) so that a maximum-sized IPv4 packet fits within an unfragmented IPv6 packet, allowing application-layer segmentation (e.g., TCP MSS) to prevent IP-level fragmentation in the ER-to-BR path.
+section: "4.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

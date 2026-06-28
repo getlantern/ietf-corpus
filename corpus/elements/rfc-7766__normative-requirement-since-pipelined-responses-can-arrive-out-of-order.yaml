@@ -1,0 +1,10 @@
+document: rfc-7766
+kind: normative-requirement
+summary: Since pipelined responses can arrive out of order, clients MUST match responses to outstanding queries on the same TCP connection using the Message ID. If the response contains a question section, the client MUST match the QNAME, QCLASS, and QTYPE fields.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - dns
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,9 @@
+document: rfc-7766
+kind: wire-format
+summary: Each DNS message sent over TCP is preceded by a two-octet (16-bit) length field that gives the message length in bytes, not including the two-octet length field itself. Clients and servers SHOULD pass the length field and the message to the TCP layer at the same time (e.g., in a single 'write' call) to maximize likelihood of transmission in a single TCP segment.
+section: "8"
+topics:
+    - dns
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,10 @@
+document: rfc-7753
+kind: security-consideration
+summary: A single PORT_SET MAP request can trigger multiple responses (one per overlapping existing mapping). An on-path attacker who eavesdrops a mapping nonce can exploit this to mount an amplification attack. Using PCP authentication (RFC 6887, Section 18) eliminates this vector.
+section: "7"
+topics:
+    - nat
+    - pcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

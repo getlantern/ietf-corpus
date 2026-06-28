@@ -1,0 +1,10 @@
+document: rfc-7759
+kind: design-rationale
+summary: BFD Control packets transported in ACH encapsulation lack end-to-end checksums; only lower layers provide error detection. A single flipped bit in the BFD State field could incorrectly trigger protection switching. The Integrity flag therefore enables Keyed SHA1 with an empty key so every BFD packet carries a SHA1 hash detectable as corrupt, preventing false alarms without requiring a full pre-shared key.
+section: 2.1.1
+topics:
+    - mpls
+    - measurement
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,9 @@
+document: rfc-7751
+kind: security-consideration
+summary: The kdc-verifier binds only to the authorization data within the AD-CAMMAC elements field, not to any authorization data outside the CAMMAC in the ticket. It also does not bind to the service principal name, since the service name is not part of EncTicketPart.
+section: "7"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

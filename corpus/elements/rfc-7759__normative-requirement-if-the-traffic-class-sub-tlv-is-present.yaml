@@ -1,0 +1,11 @@
+document: rfc-7759
+kind: normative-requirement
+summary: If the Traffic Class sub-TLV is present in the BFD Configuration or Fault Management Signal sub-TLV, the sender of periodic continuity monitoring messages or FMS packets MUST use the TC field value as the TC field in the top MPLS label stack entry. If the sub-TLV is absent, TC selection is a local decision.
+section: 2.2.5
+rfc2119_level: MUST
+topics:
+    - mpls
+    - measurement
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

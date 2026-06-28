@@ -1,0 +1,10 @@
+document: rfc-7751
+kind: security-consideration
+summary: An entity with access to keys of two different service principals can decrypt a ticket for one service and re-encrypt it under the other service's key, altering the svc-verifier to match. Both kdc-verifier and svc-verifier would still validate despite the ticket being fabricated. If an authenticated binding between the service principal name and the CAMMAC is required, the KDC MUST include an authorization data element naming the service principal.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

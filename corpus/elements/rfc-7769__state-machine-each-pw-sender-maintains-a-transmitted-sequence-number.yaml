@@ -1,0 +1,8 @@
+document: rfc-7769
+kind: state-machine
+summary: Each PW sender maintains a transmitted sequence-number counter initialized to 1. The transmit counter is incremented on each new MAC withdrawal, reset to 1 after wrap or R-bit reset acknowledgement, and set to 2 in the first message after initialization. Each PW receiver maintains an expected sequence-number register initialized to 1, updated to the received sequence number when a higher-numbered message arrives.
+section: "4"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

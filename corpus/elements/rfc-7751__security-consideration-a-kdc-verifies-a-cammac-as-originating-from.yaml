@@ -1,0 +1,9 @@
+document: rfc-7751
+kind: security-consideration
+summary: 'A KDC verifies a CAMMAC as originating from a local-realm KDC if: (1) the kdc-verifier validates, or (2) the svc-verifier validates using a key known only to local-realm KDCs, or (3) no verifiers are present but the ticket-encrypting key is KDC-only and all local KDCs filter client-submitted CAMMACs.'
+section: "7"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

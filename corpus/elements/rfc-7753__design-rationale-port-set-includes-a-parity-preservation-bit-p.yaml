@@ -1,0 +1,10 @@
+document: rfc-7753
+kind: design-rationale
+summary: PORT_SET includes a parity-preservation bit (P) because protocols such as RTP assign semantic meaning to port parity (even ports for media, odd for RTCP). Without parity preservation, mapping a port set for RTP/RTCP use would be functionally incorrect.
+section: "2"
+topics:
+    - nat
+    - pcp
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

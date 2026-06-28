@@ -1,0 +1,10 @@
+document: rfc-7755
+kind: security-consideration
+summary: When a Network-Specific Prefix from the provider's own address space is the translation prefix, translated IPv4 Internet traffic may appear to application-level ACLs as originating from the provider's own network. The translation prefix must be treated the same as the Internet at large. Using a prefix distinct from and not a subset of any internal network prefix mitigates this risk.
+section: "5.1"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

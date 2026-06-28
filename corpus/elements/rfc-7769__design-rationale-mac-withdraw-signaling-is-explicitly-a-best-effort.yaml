@@ -1,0 +1,8 @@
+document: rfc-7769
+kind: design-rationale
+summary: MAC withdraw signaling is explicitly a best-effort scheme designed to optimize convergence by reducing blackholes during PW failover, not to guarantee delivery. Fallback to MAC re-learning via bidirectional traffic or MAC aging is relied upon when signaling fails, causing only temporary blackouts.
+section: "1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

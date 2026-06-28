@@ -1,0 +1,9 @@
+document: rfc-7766
+kind: design-rationale
+summary: Response reordering over TCP is explicitly permitted and recommended because recursive resolvers may process queries concurrently in ways that produce out-of-order completions. RFC 1035's reordering text only addressed UDP, leaving TCP ambiguous; this document clarifies that the same principle applies to TCP.
+section: "7"
+topics:
+    - dns
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

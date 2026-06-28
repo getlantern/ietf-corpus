@@ -1,0 +1,9 @@
+document: rfc-7753
+kind: design-rationale
+summary: No capability-discovery mechanism is defined for PORT_SET because the option code is in the 'optional to process' range, and a client cannot distinguish 'server does not support PORT_SET' from 'server chose to allocate only one port.' Adding discovery would add complexity without solving the ambiguity.
+section: "4.3"
+topics:
+    - nat
+    - pcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

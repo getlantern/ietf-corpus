@@ -1,0 +1,11 @@
+document: rfc-7766
+kind: design-rationale
+summary: TCP was previously treated as an optional fallback for DNS (only for zone transfers or responses exceeding 512 bytes), but the growth of DNSSEC, IPv6, and privacy-focused DNS (e.g., DNS-over-TLS) increased response sizes and the need for TCP, making mandatory TCP support necessary for modern DNS implementations.
+section: "1"
+topics:
+    - dns
+    - tcp
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,8 @@
+document: rfc-7751
+kind: security-consideration
+summary: Extracting a CAMMAC from a ticket for use as a credential removes it from the ticket's context, potentially turning it into a bearer token. The CAMMAC also does not necessarily contain sufficient information to identify the client principal, so application protocols relying on extracted CAMMACs may need to duplicate substantial ticket contents inside the CAMMAC.
+section: "7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

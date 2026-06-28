@@ -1,0 +1,9 @@
+document: rfc-7755
+kind: interoperability-note
+summary: When an IPv6 node receives an ICMPv6 Packet Too Big error with an MTU below 1280, it must emit atomic fragments. The BR's 'second approach' from RFC 6145 Section 6 prevents this by clamping translated ICMPv6 Packet Too Big values to a minimum of 1280, and sets DF=0 on translated IPv4 packets ≤1280 bytes so IPv4 routers handle fragmentation instead.
+section: 4.9.3
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

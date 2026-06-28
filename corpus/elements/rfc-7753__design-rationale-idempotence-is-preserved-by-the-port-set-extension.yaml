@@ -1,0 +1,9 @@
+document: rfc-7753
+kind: design-rationale
+summary: Idempotence is preserved by the PORT_SET extension, but the order in which overlapping port-set requests arrive determines which mapping is created. Clients are therefore required to prevent overlapping requests rather than relying on server-side deduplication.
+section: "6.3"
+topics:
+    - nat
+    - pcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

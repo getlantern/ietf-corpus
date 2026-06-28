@@ -1,0 +1,9 @@
+document: rfc-7759
+kind: interoperability-note
+summary: If an egress LSR receives a BFD Configuration sub-TLV with the Symmetric (S) flag set and cannot support the proposed timer values, it SHOULD reply with an updated BFD Negotiation Timer Parameters sub-TLV containing the interval values it can support (per RFC 7419), allowing graceful fallback rather than hard failure.
+section: 2.2.1
+topics:
+    - mpls
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

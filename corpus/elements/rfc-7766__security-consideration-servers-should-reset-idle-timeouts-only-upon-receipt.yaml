@@ -1,0 +1,10 @@
+document: rfc-7766
+kind: security-consideration
+summary: Servers should reset idle timeouts only upon receipt of a complete DNS message, not on any partial segment read, to prevent slow-read attacks where an attacker sends data slowly to keep a connection alive and exhaust server resources.
+section: 6.2.3
+topics:
+    - dns
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

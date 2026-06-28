@@ -1,0 +1,10 @@
+document: rfc-7755
+kind: interoperability-note
+summary: 'For TCP, the 20-byte IPv4-to-IPv6 header size increase is automatically handled: the IPv6 node advertises an MSS of 1440 bytes during the handshake, preventing IPv4 clients from sending 1500-byte packets that would require fragmentation after translation. Non-TCP transports require either raising the path MTU to the BR to 1520 bytes or accepting BR-side fragmentation.'
+section: 4.9.1
+topics:
+    - ip
+    - v6ops
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

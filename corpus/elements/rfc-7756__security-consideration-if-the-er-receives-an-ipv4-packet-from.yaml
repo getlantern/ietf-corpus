@@ -1,0 +1,11 @@
+document: rfc-7756
+kind: security-consideration
+summary: If the ER receives an IPv4 packet from a source address for which no EAM exists, both source and destination will be rewritten using the translation prefix per RFC 6052, resulting in a spoofed IPv4 source address after the BR reverses the translation. The ER SHOULD apply ingress filtering (RFC 2827) on its IPv4 interface to immediately discard such packets.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

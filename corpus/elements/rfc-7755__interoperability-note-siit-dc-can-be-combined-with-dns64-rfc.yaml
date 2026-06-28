@@ -1,0 +1,11 @@
+document: rfc-7755
+kind: interoperability-note
+summary: SIIT-DC can be combined with DNS64 (RFC 6147) to allow IPv6-only applications to initiate communication with IPv4-only nodes. However, outgoing traffic must be sourced from an IPv6 Service Address covered by an EAM in the BR; otherwise the BR cannot translate the source to IPv4 and will discard the packet. Modifying the Default Address Selection Policy Table (RFC 6724) on the node can enforce this.
+section: "4.3"
+topics:
+    - ip
+    - v6ops
+    - dns
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

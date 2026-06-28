@@ -1,0 +1,9 @@
+document: rfc-7753
+kind: design-rationale
+summary: PORT_SET is preferred over multiple individual MAP requests because it reduces network traffic and latency, enables server-side bulk allocation that improves data-plane efficiency (e.g., CGN bulk port schemes), and allows a single state-table entry per client, greatly improving scalability.
+section: "2"
+topics:
+    - nat
+    - pcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,11 @@
+document: rfc-7756
+kind: security-consideration
+summary: If the ER receives an IPv6 packet whose source address equals one of its own local IPv6 Service Addresses (or translates to a local IPv4 Service Address), the IPv4-only application would receive a packet appearing to originate from itself, potentially trusting it as locally generated. The ER SHOULD discard any received IPv6 packets with such source addresses.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,9 @@
+document: rfc-7751
+kind: protocol-element
+summary: The kdc-verifier MAC is computed over the ASN.1 DER encoding of a modified EncTicketPart where the authorization-data field is replaced with the AuthorizationData from the AD-CAMMAC elements field (not the full ticket authorization-data). This binds the kdc-verifier to the ticket context and prevents a malicious service from substituting a mismatched AD-CAMMAC from another ticket.
+section: "4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"
