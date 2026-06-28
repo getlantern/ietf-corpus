@@ -1,0 +1,10 @@
+document: rfc-7728
+kind: security-consideration
+summary: A malicious participant could send spurious RESUME requests to force resumption of a stream that a legitimate receiver deliberately paused. Conversely, injection of REFUSED notifications could prevent legitimate RESUME requests from being retried for an inappropriate time. Authentication of RTCP feedback messages via SRTCP addresses both attack vectors.
+section: "12"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,8 @@
+document: rfc-7727
+kind: design-rationale
+summary: 'During initial setup, a PE device SHOULD advertise TLVs in the order: STP System Config TLV, remaining Configuration TLVs, then State TLVs. This ordering allows peers to begin updating STP state as early as possible, since state updates depend on configuration information.'
+section: 4.2.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

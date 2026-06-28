@@ -1,0 +1,9 @@
+document: rfc-7723
+kind: design-rationale
+summary: Anycast addresses are particularly useful in larger topologies where the PCP-enabled NAT/firewall is not on the client's default gateway (e.g., Carrier-Grade NAT). With dynamic routing protocols like OSPF, DHCP-based discovery may not be feasible, while anycast lets PCP requests travel like any other packet without special support from DNS, DHCP, or other infrastructure.
+section: "1"
+topics:
+    - pcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

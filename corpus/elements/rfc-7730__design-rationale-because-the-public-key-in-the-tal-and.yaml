@@ -1,0 +1,11 @@
+document: rfc-7730
+kind: design-rationale
+summary: Because the public key in the TAL and trust anchor must be stable, this motivates operation of the trust anchor CA in offline mode, using a subordinate CA for online operations. This allows the CRL issued by the trust anchor entity to revoke the subordinate CA certificate in case of suspected key compromise.
+section: "2.2"
+topics:
+    - pkix
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

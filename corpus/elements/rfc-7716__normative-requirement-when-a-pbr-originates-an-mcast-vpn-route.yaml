@@ -1,0 +1,11 @@
+document: rfc-7716
+kind: normative-requirement
+summary: When a PBR originates an MCAST-VPN route in support of GTM, the RD field (for those route types where it is defined) of that route's NLRI MUST be set to zero (64 bits of zero). This distinguishes GTM MCAST-VPN routes from VPN-specific MCAST-VPN routes, since no VRF may have an RD of zero.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

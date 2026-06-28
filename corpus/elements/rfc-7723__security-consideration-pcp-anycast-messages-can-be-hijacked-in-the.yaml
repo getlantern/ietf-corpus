@@ -1,0 +1,11 @@
+document: rfc-7723
+kind: security-consideration
+summary: PCP anycast messages can be hijacked in the first network segment by impersonating the default router (e.g., ARP spoofing) or further in the core network by injecting counterfeited routing protocol messages (OSPF/BGP). PCP authentication [RFC7652] may be useful in some scenarios, but its setup cost conflicts with the goal of fully automatic configuration via anycast.
+section: "5.2"
+topics:
+    - pcp
+    - security
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

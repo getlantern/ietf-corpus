@@ -1,0 +1,11 @@
+document: rfc-7716
+kind: normative-requirement
+summary: The Single Forwarder Selection (SFS) procedure defined in Section 9.1.2 of RFC 6513 MUST NOT be used for GTM. In GTM, UMH-eligible routes are of SAFI 1, 2, or 4 (not SAFI 128/129) and share the same prefix NLRI, so route reflectors may suppress duplicates, making it impossible to guarantee all PBRs see the same candidate routes for SFS.
+section: "2.3"
+rfc2119_level: MUST NOT
+topics:
+    - bgp
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

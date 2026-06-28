@@ -1,0 +1,6 @@
+document: rfc-7724
+kind: design-rationale
+summary: 'Active Leasequery transmits only the current binding state when the packet is created, not a full history of state changes. This is intentional: it avoids complexity while still allowing requestors to reconstruct important transitions if DHCP server lease-expiry and release hold-times are tuned to exceed the receive timeout.'
+section: "6"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

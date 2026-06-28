@@ -1,0 +1,9 @@
+document: rfc-7726
+kind: state-machine
+summary: BFD session discriminators for an MPLS LSP session cannot be changed in UP state. To change discriminators, the session must transition gracefully to AdminDown (via diagnostic code AdminDown), be removed, then a new session established with different discriminators. Either the ingress or egress LSR may initiate this transition.
+section: "2.4"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

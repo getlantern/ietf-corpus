@@ -1,0 +1,10 @@
+document: rfc-7716
+kind: design-rationale
+summary: The alternative UMH-eligible route procedures in Section 2.3.2 (attaching MVPN ECs to the PBR's self-originated route rather than all UMH-eligible routes) exist because some service providers may find it undesirable or impractical to attach VRF Route Import ECs to all UMH-eligible routes. This procedure is only safe when the Next Hop of distributed routes is known to remain unchanged.
+section: 2.3.2
+topics:
+    - bgp
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

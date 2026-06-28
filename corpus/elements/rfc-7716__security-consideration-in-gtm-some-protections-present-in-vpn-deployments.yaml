@@ -1,0 +1,11 @@
+document: rfc-7716
+kind: security-consideration
+summary: 'In GTM, some protections present in VPN deployments are lost: import of MCAST-VPN routes is not restricted to authorized VRFs, and the RT infrastructure that controls distribution among VRFs is absent. Care must be taken to avoid deleting or modifying VRF Route Import ECs and Source AS ECs, as incorrect manipulation may cause multicast streams to be lost or misrouted.'
+section: "4"
+topics:
+    - security
+    - bgp
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

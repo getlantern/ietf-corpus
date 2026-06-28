@@ -1,0 +1,10 @@
+document: rfc-7730
+kind: security-consideration
+summary: The TAL does not directly provide a list of resources covered by the referenced self-signed CA certificate; the RP must consult the trust anchor's INR extensions directly. This provides operational flexibility but allows the certificate issuer to claim authority over any resource, so RPs should have high confidence in issuers they configure as trust anchors or issue their own self-signed trust anchor with appropriate constraints.
+section: "4"
+topics:
+    - pkix
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

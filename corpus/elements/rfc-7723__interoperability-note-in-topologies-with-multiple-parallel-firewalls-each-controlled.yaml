@@ -1,0 +1,9 @@
+document: rfc-7723
+kind: interoperability-note
+summary: In topologies with multiple parallel firewalls each controlled by its own PCP server, only one server will receive messages from a given client based on routing table state. If routing is asymmetric (upstream and downstream packets traverse different firewalls), establishing rules via anycast in only one firewall will not enable bidirectional connectivity.
+section: "3"
+topics:
+    - pcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

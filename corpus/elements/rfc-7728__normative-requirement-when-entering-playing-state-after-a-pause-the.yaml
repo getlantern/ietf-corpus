@@ -1,0 +1,10 @@
+document: rfc-7728
+kind: normative-requirement
+summary: When entering Playing state after a pause, the current PauseID MUST be incremented by one (modulo arithmetic). The RTP sequence number for the first packet SHALL be incremented by one compared to the highest sent before the pause, and the first RTP timestamp SHOULD reflect actual capture time so that the timestamp gap reflects the pause duration.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

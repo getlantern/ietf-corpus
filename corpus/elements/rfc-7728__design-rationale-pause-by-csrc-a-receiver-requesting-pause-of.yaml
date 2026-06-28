@@ -1,0 +1,9 @@
+document: rfc-7728
+kind: design-rationale
+summary: 'Pause-by-CSRC (a receiver requesting pause of a stream via the Mixer''s CSRC identifying the original source, Section 3.5) was deliberately excluded because: the Mixer may not include CSRC; CSRC cannot reliably identify the stream when media is mixed; and the requesting endpoint cannot determine whether the Mixer still needs that stream for other participants.'
+section: "3.5"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,6 @@
+document: rfc-7724
+kind: interoperability-note
+summary: Applications should use an initial Bulk Leasequery (RFC 6926) to populate their binding database and then switch to Active Leasequery for continuous updates. If DataMissing is received during catch-up, the requestor SHOULD issue a DHCPBULKLEASEQUERY with query-start-time matching the original and query-end-time equal to the server's base-time from the DataMissing response.
+section: "4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

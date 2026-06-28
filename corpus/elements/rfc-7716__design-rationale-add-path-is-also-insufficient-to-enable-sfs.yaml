@@ -1,0 +1,10 @@
+document: rfc-7716
+kind: design-rationale
+summary: ADD-PATH is also insufficient to enable SFS for GTM because limiting advertisement to the n-best paths creates an exponential explosion of paths across AS boundaries, yet still cannot guarantee that every PBR sees at least one path via each candidate Upstream PBR. The path-count explosion in multi-AS scenarios (illustrated with a diagram in Section 2.3.4) makes ADD-PATH+SFS unworkable for GTM.
+section: 2.3.4
+topics:
+    - bgp
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

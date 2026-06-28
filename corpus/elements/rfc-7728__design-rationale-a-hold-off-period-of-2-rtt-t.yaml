@@ -1,0 +1,9 @@
+document: rfc-7728
+kind: design-rationale
+summary: 'A hold-off period of 2*RTT + T_dither_max was introduced in Pausing state to achieve consensus: in shared-network topologies (multicast, mesh, translator), a single receiver must not single-handedly pause a stream that other receivers still want. Any receiver wishing to disapprove simply sends a RESUME with the same PauseID within the hold-off window.'
+section: "4.4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

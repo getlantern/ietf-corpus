@@ -1,0 +1,10 @@
+document: rfc-7728
+kind: normative-requirement
+summary: When entering Paused state, the RTP stream sender SHALL send a PAUSED indication to all known receivers and SHALL repeat PAUSED in the next two regular RTCP reports while still in paused state. Pausing transmission SHOULD only be done at an appropriate media boundary to avoid triggering repair or concealment at the receiver.
+section: "6.3"
+rfc2119_level: SHALL
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

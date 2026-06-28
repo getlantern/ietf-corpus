@@ -1,0 +1,9 @@
+document: rfc-7727
+kind: interoperability-note
+summary: If a PE device supports MAC Address Withdrawal (RFC 4762, Section 6.2), it SHOULD send an LDP Address Withdraw Message with the list of MAC addresses towards the core upon receiving an STP Topology Changed Instances TLV. No such message need be sent to PEs in the same RG since they flush MAC tables upon receipt of the TLV.
+section: 3.4.1
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

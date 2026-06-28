@@ -1,0 +1,9 @@
+document: rfc-7727
+kind: security-consideration
+summary: An attack on the ICCP channel (running in the provider's network) can break not only provider traffic delivery but also STP routing within the customer's network. DoS attacks on the channel as described in RFC 7275 can break STP within the customer network; implementations MUST provide mitigation mechanisms, such as blocking the port between a PE device and a malicious CE device.
+section: "5"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

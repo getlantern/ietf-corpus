@@ -1,0 +1,10 @@
+document: rfc-7716
+kind: design-rationale
+summary: 'Service providers using Inclusive Tunnels for GTM should carefully consider scale: there may be many more PBRs for GTM than PEs for a particular VPN. If the PBR set is large and growing but most flows do not need all PBRs, exclusive use of Selective Tunnels may be preferable to Inclusive Tunnels.'
+section: "2.4"
+topics:
+    - bgp
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

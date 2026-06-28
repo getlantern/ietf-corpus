@@ -1,0 +1,9 @@
+document: rfc-7728
+kind: design-rationale
+summary: PAUSE, RESUME, and PAUSED share a single PauseID sequence space (rather than having separate counters) so that strict ordering between pause and resume operations is maintained. Since RESUME always takes precedence over PAUSE, they must reference the same logical sequence to unambiguously determine which PAUSE a RESUME is overriding.
+section: "4.7"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

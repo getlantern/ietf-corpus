@@ -1,0 +1,9 @@
+document: rfc-7728
+kind: state-machine
+summary: 'An RTP stream sender has four states: Playing (normal sending), Pausing (received PAUSE, waiting hold-off period for potential RESUME), Paused (hold-off expired without RESUME, transmission stopped), and Local Paused (paused by sender''s own local decision, cannot be resumed by RESUME alone). Transitions: Playing→Pausing on PAUSE received; Pausing→Paused after hold-off; Pausing/Paused→Playing on RESUME; any state→Local Paused on local PAUSE decision; Local Paused→Playing on local RESUME decision.'
+section: "6"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

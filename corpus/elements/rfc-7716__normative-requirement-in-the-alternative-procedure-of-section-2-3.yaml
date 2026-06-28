@@ -1,0 +1,11 @@
+document: rfc-7716
+kind: normative-requirement
+summary: In the alternative procedure of Section 2.3.2, each PBR MUST originate a BGP route of SAFI 1, 2, or 4 whose NLRI is an IP address of the PBR itself, carrying a VRF Route Import EC and a Source AS EC. The NLRI address, Global Administrator field of the EC, and Next Hop field MUST all be the same address. This procedure MUST NOT be used in scenarios where the Next Hop may change during route distribution.
+section: 2.3.2
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

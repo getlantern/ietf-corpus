@@ -1,0 +1,10 @@
+document: rfc-7728
+kind: normative-requirement
+summary: In Pausing state, the RTP stream sender SHALL wait a hold-off period of 2*RTT + T_dither_max (where RTT is the longest known round-trip time and T_dither_max is from RFC 4585 Section 3.4) before actually pausing transmission, to allow other receivers to send a disapproving RESUME. The hold-off period MAY be set to 0 when signaling confirms a single receiver.
+section: "6.2"
+rfc2119_level: SHALL
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

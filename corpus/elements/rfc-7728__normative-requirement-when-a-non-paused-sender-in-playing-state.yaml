@@ -1,0 +1,10 @@
+document: rfc-7728
+kind: normative-requirement
+summary: When a non-paused sender in Playing state receives a PAUSE with the current PauseID, it SHALL enter Pausing state unless local considerations make pausing impossible. PAUSE received while already in Pausing, Paused, or Local Paused state SHALL be ignored. If the PAUSE uses a non-current PauseID, the sender SHALL schedule a REFUSED containing the current PauseID.
+section: "8.1"
+rfc2119_level: SHALL
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

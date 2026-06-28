@@ -1,0 +1,9 @@
+document: rfc-7728
+kind: design-rationale
+summary: RTCP was chosen over SIP/SDP for pause/resume signaling because SIP/SDP requires traversal of the full signaling path through proxies and is approximately 10 times more bandwidth-intensive. RTCP travels through the shorter media path with less processing overhead at intermediate nodes, and the real-time nature of resume (Section 4.1) makes the latency of SIP/SDP signaling unacceptable, particularly over mobile wireless access.
+section: "4.8"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

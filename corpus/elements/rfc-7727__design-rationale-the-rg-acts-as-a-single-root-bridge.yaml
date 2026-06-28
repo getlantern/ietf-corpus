@@ -1,0 +1,9 @@
+document: rfc-7727
+kind: design-rationale
+summary: The RG acts as a single root bridge (using the numerically lowest BridgeIdentifier as the virtual root's MAC address) so that STP within the customer network always breaks loops by partitioning the multihomed STP network into separate islands, each attached to one PE, forcing all PEs to be active simultaneously. This differs from generic VPLS where the root bridge resides in the customer network and multihomed PEs operate in active-standby mode.
+section: "2"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

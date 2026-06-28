@@ -1,0 +1,10 @@
+document: rfc-7728
+kind: normative-requirement
+summary: If an RTP sender receives PAUSE or RESUME with the current PauseID but cannot fulfill the request, it SHALL schedule a REFUSED containing that PauseID. If the request uses a non-current PauseID, it SHALL schedule a REFUSED containing the current PauseID (except RESUME with past PauseID in Playing state, which is ignored). Duplicate REFUSED notifications for identical requests MUST NOT be scheduled.
+section: "8.4"
+rfc2119_level: SHALL
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

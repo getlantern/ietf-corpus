@@ -1,0 +1,10 @@
+document: rfc-7723
+kind: security-consideration
+summary: Sensitive PCP clients can set an IP TTL on their PCP requests to limit how far they travel toward the public Internet, preventing information leakage about internal devices. Additionally, clients can send a parameterless ANNOUNCE request first to probe whether a PCP server is present at the anycast address before sending privacy-sensitive requests.
+section: "5.1"
+topics:
+    - pcp
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

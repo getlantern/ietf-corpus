@@ -1,0 +1,9 @@
+document: rfc-7728
+kind: interoperability-note
+summary: TMMBR 0 may be used as an equivalent of PAUSE and TMMBN 0 as PAUSED/REFUSED for point-to-point interworking with implementations predating this specification. TMMBR 0 has no hold-off period requirement. TMMBR > 0 serves as RESUME when the stream was paused with TMMBR 0; however, TMMBN > 0 cannot serve as a REFUSED for TMMBR 0 due to existing RFC 5104 bounding-set constraints.
+section: "5.6"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

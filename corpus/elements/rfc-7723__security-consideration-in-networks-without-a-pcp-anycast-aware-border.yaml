@@ -1,0 +1,10 @@
+document: rfc-7723
+kind: security-consideration
+summary: In networks without a PCP-anycast-aware border gateway, NAT, or firewall, outgoing PCP requests could leak onto the external Internet and reveal information about internal devices. Border gateways should block such packets; in the default-free zone, routers should drop them, naturally achieved via BGP messages advertising no route to the anycast address.
+section: "5.1"
+topics:
+    - pcp
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

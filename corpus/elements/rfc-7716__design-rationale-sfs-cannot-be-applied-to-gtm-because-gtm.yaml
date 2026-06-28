@@ -1,0 +1,10 @@
+document: rfc-7716
+kind: design-rationale
+summary: SFS cannot be applied to GTM because GTM UMH-eligible routes are of SAFI 1/2/4 and share the same IP prefix NLRI, so route reflectors may choose only the best path to S and suppress other paths. Unlike VPN context where distinct RDs ensure all PEs see all routes to S, there is no mechanism in GTM to guarantee all PBRs see the same set of candidate routes for deterministic forwarder selection.
+section: 2.3.4
+topics:
+    - bgp
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

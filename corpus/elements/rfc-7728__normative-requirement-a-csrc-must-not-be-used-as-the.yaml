@@ -1,0 +1,10 @@
+document: rfc-7728
+kind: normative-requirement
+summary: A CSRC MUST NOT be used as the Target SSRC in any PAUSE-RESUME message because the interpretation of a pause request targeting a CSRC is unclear. The SSRC of the media source field in the common RTCP feedback header SHALL be set to 0 for PAUSE-RESUME messages; the Target SSRC within the FCI identifies the actual target.
+section: "7"
+rfc2119_level: MUST NOT
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

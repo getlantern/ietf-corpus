@@ -1,0 +1,9 @@
+document: rfc-7717
+kind: design-rationale
+summary: 'Setting IKEv2Derived mode in the Server Greeting poses no backwards-compatibility problems: legacy Control-Client implementations simply disregard the new Modes bit, while a client implementing this method can detect that the contacted server does not support IKEv2 key derivation and fall back to RFC 4656/5357 modes.'
+section: "5.2"
+topics:
+    - measurement
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

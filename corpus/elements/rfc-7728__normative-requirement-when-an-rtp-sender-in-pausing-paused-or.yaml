@@ -1,0 +1,10 @@
+document: rfc-7728
+kind: normative-requirement
+summary: When an RTP sender in Pausing, Paused, or Local Paused state receives a RESUME with the current PauseID and has no local barrier, it SHALL enter Playing state. If it cannot honor the RESUME, it SHALL schedule a REFUSED. A RESUME with a past PauseID received in Playing state SHALL be ignored.
+section: "8.3"
+rfc2119_level: SHALL
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

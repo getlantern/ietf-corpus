@@ -1,0 +1,6 @@
+document: rfc-7724
+kind: state-machine
+summary: A DHCPACTIVELEASEQUERY connection has two phases. If query-start-time is present, it enters the catch-up phase (historical binding data, possibly interleaved with real-time updates); the catch-up phase ends when the server sends DHCPLEASEQUERYSTATUS with CatchUpComplete or DataMissing. After that (or immediately if no query-start-time), only real-time DHCPLEASEACTIVE/DHCPLEASEUNASSIGNED updates flow until the connection is closed or QueryTerminated is received.
+section: "7.4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

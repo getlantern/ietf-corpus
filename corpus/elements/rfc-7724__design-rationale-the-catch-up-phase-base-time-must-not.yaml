@@ -1,0 +1,6 @@
+document: rfc-7724
+kind: design-rationale
+summary: The catch-up phase base-time must not be updated until CatchUpComplete is received because catch-up replies are not delivered in the order binding changes occurred; using an intermediate base-time would leave gaps in recovery if the connection drops mid-catch-up.
+section: 7.4.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"
