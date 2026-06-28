@@ -1,0 +1,9 @@
+document: rfc-7798
+kind: wire-format
+summary: A PACI packet (Type=50) contains a 2-byte PayloadHdr, a 16-bit control word with A (1 bit, copy of payload NAL unit F bit), cType (6 bits), PHSsize (5 bits, max 32 octets), F0/F1/F2 (3 bits for extensions), and Y (1 bit for further extension), followed by the variable-length PHES and the PACI payload (NAL unit, FU, or AP, omitting its first 2 bytes).
+section: 4.4.4
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

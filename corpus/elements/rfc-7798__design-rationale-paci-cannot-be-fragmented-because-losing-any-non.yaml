@@ -1,0 +1,9 @@
+document: rfc-7798
+kind: design-rationale
+summary: PACI cannot be fragmented because losing any non-first fragment would make the PACI control information inaccessible. PACI cannot be aggregated because multiple NAL units would redundantly replicate shared PACI fields; instead, NAL units should be aggregated inside a PACI payload using an AP.
+section: 4.4.4.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

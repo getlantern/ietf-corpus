@@ -1,0 +1,10 @@
+document: rfc-7798
+kind: security-consideration
+summary: The HEVC RTP payload inherits the security considerations of RFC 6184. Confidentiality and integrity of the media stream should be provided using SRTP. MANEs that drop or modify RTP packets must rewrite RTCP packets to match as specified in RFC 3550 Section 7, and must be trusted entities within SRTP deployments.
+section: "9"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

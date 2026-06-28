@@ -1,0 +1,9 @@
+document: rfc-7798
+kind: wire-format
+summary: The HEVC NAL unit header is 2 bytes with fields F (1 bit, forbidden_zero_bit, must be 0), Type (6 bits, nal_unit_type), LayerId (6 bits, nuh_layer_id, must be 0 for single-layer), and TID (3 bits, nuh_temporal_id_plus1, value 0 is illegal). This same header structure serves as the RTP payload header for all packet types.
+section: 1.1.4
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

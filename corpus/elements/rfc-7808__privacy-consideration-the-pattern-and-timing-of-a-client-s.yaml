@@ -1,0 +1,9 @@
+document: rfc-7808
+kind: privacy-consideration
+summary: The pattern and timing of a client's time zone requests can fingerprint devices and reveal user behavior (e.g., that a user has moved to a new time zone). Mitigations include always fetching the full zone set, randomizing fetch order, avoiding conditional requests, TLS session resumption, cookies, and jittering poll intervals. A malicious server may also insert fake time zones with unique identifiers to track individual clients.
+section: "9"
+topics:
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

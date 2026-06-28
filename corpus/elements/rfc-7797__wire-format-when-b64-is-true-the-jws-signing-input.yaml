@@ -1,0 +1,10 @@
+document: rfc-7797
+kind: wire-format
+summary: When "b64" is true, the JWS Signing Input is ASCII(BASE64URL(UTF8(JWS Protected Header)) || '.' || BASE64URL(JWS Payload)). When "b64" is false, the signing input is ASCII(BASE64URL(UTF8(JWS Protected Header)) || '.') || JWS Payload, i.e., the raw payload bytes are appended after the period delimiter without encoding.
+section: "3"
+topics:
+    - jose
+    - crypto
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

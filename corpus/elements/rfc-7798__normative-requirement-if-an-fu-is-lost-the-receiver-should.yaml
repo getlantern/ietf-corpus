@@ -1,0 +1,10 @@
+document: rfc-7798
+kind: normative-requirement
+summary: If an FU is lost, the receiver SHOULD discard all following fragmentation units in transmission order for the same fragmented NAL unit, unless the decoder is known to gracefully handle incomplete NAL units. A receiver or MANE MAY aggregate the first n-1 fragments with the forbidden_zero_bit set to 1 to indicate a syntax violation.
+section: 4.4.3
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,10 @@
+document: rfc-7797
+kind: security-consideration
+summary: When "b64" is false, the base64url encoding that normally restricts payload characters to avoid JWS delimiters ('.' in Compact Serialization, '"' in JSON Serialization) is no longer applied. It becomes the application's responsibility to ensure payloads contain only safe characters and that the payload will not be modified during transmission.
+section: "8"
+topics:
+    - jose
+    - security
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

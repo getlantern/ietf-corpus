@@ -1,0 +1,9 @@
+document: rfc-7798
+kind: design-rationale
+summary: The basic payload header is intentionally limited to the 16-bit NAL unit header to minimize packetization overhead. The PACI mechanism was introduced as an optional, extensible wrapper to carry additional per-packet control information (such as TSCI) only when needed, avoiding overhead for deployments that do not require it.
+section: 4.4.4
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

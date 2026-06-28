@@ -1,0 +1,10 @@
+document: rfc-7797
+kind: security-consideration
+summary: If a JWS is created with "b64":false but without including "crit":["b64"], an implementation not supporting "b64" will still verify the signature but will misinterpret the payload as the base64url decoding of the received value (e.g., interpreting "NDA1" as "405" instead of the literal string). Requiring "crit" prevents this silent misinterpretation.
+section: "8"
+topics:
+    - jose
+    - security
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

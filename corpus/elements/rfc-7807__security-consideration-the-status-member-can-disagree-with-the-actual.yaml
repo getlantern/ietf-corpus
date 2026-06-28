@@ -1,0 +1,9 @@
+document: rfc-7807
+kind: security-consideration
+summary: The 'status' member can disagree with the actual HTTP status code (e.g., if an intermediary modifies the code in transit). Generic software such as proxies, load balancers, and firewalls will not respect the status code in the problem body; both generators and consumers must be aware of this ambiguity.
+section: "5"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

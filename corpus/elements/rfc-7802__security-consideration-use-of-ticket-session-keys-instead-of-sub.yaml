@@ -1,0 +1,9 @@
+document: rfc-7802
+kind: security-consideration
+summary: Use of Ticket session keys instead of sub-session keys is dangerous because ticket reuse leads to key reuse. Initiators should always assert sub-session keys, and acceptors should assert sub-session keys at least when initiators fail to do so.
+section: "5"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

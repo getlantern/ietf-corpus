@@ -1,0 +1,9 @@
+document: rfc-7796
+kind: design-rationale
+summary: A single T-VSI with a dual-VLAN interface was chosen over two VSIs (one per root/leaf VLAN) because the two-VSI model requires two VPLS instances and two sets of PWs per E-Tree service, which scales poorly in large MPLS/VPLS networks and requires the two VSIs to share MAC addresses.
+section: "4.1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,9 @@
+document: rfc-7797
+kind: design-rationale
+summary: The "b64" option was introduced because base64url-encoding large payloads is unnecessary overhead when the payload is already being transmitted intact between parties. Avoiding encoding eliminates additional storage allocation for the encoded form and the encoding computation itself, yielding significant space and time improvements for large-payload deployments.
+section: "1"
+topics:
+    - jose
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

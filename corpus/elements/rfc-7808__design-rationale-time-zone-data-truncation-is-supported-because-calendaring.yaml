@@ -1,0 +1,9 @@
+document: rfc-7808
+kind: design-rationale
+summary: Time zone data truncation is supported because calendaring clients typically need only data within a window of one or two years around the present; sending full historical and far-future data wastes bandwidth. Servers that truncate MUST advertise their truncation ranges in the capabilities response so clients can detect when their needed range falls outside what the server provides.
+section: "3.9"
+topics:
+    - http
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"
