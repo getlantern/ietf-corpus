@@ -1,0 +1,10 @@
+document: rfc-7677
+kind: security-consideration
+summary: The '-PLUS' variants (SCRAM-SHA-256-PLUS, SCRAM-SHA-1-PLUS) MUST only be used over a TLS channel with the RFC 7627 session hash extension negotiated, or where session resumption has not been used, because TLS without that extension does not provide the security properties required for 'tls-unique' channel binding.
+section: "4"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

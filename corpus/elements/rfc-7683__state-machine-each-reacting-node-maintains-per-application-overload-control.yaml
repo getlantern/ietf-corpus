@@ -1,0 +1,9 @@
+document: rfc-7683
+kind: state-machine
+summary: 'Each reacting node maintains per-application Overload Control State (OCS) with a host-type entry (keyed by Application-ID + DiameterIdentity) and a realm-type entry (keyed by Application-ID + realm). Transitions: new OCS created on first OLR, updated when incoming sequence number exceeds stored value, marked expired when validity-duration is zero, unchanged when no OC-OLR AVP is present in an answer.'
+section: 5.2.1
+topics:
+    - diameter
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

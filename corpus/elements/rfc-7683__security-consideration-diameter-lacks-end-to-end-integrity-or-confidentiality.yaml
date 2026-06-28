@@ -1,0 +1,10 @@
+document: rfc-7683
+kind: security-consideration
+summary: 'Diameter lacks end-to-end integrity or confidentiality, creating a transitive-trust chain through agents: any agent in the path can read or modify overload reports. Operators MUST be able to configure which peers are trusted to deliver and which are authorized to receive overload reports. Non-supporting agents passing DOIC AVPs as unknown may be mistakenly treated as DOIC-supporting.'
+section: "10.4"
+topics:
+    - security
+    - diameter
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

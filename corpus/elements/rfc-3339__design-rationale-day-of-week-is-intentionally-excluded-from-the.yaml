@@ -1,6 +1,8 @@
 document: rfc-3339
 kind: design-rationale
-summary: Day-of-week is intentionally excluded from the format because it is redundant information (computable from the date) whose inclusion would introduce the possibility of inconsistency.
+summary: Day of week is intentionally excluded from the format because it is redundant (computable from the date) and its inclusion would create the possibility of inconsistencies between the day-of-week field and the date.
 section: "5.4"
+topics:
+    - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-05-24"
+extracted_at: "2026-06-28"

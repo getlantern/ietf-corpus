@@ -1,0 +1,10 @@
+document: rfc-7683
+kind: security-consideration
+summary: Injected or maliciously crafted OLRs can be used as DoS vectors—for example, a realm OLR with 100% reduction percentage can silence all traffic to a realm. Implementations MUST validate that an answer containing an OLR is a properly constructed response to a pending request and was received over an appropriate transport connection before acting on it.
+section: "10.1"
+topics:
+    - security
+    - diameter
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

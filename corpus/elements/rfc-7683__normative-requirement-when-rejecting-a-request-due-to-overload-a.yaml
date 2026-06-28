@@ -1,0 +1,10 @@
+document: rfc-7683
+kind: normative-requirement
+summary: When rejecting a request due to overload, a DOIC node SHOULD send DIAMETER_TOO_BUSY if the request may succeed on a different path, and SHOULD send DIAMETER_UNABLE_TO_COMPLY if retrying on a different path is unlikely to succeed (e.g., a Destination-Host AVP targets the reporting node itself).
+section: "8"
+rfc2119_level: SHOULD
+topics:
+    - diameter
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

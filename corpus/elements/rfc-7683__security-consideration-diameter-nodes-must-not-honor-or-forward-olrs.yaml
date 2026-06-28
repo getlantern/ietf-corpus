@@ -1,0 +1,11 @@
+document: rfc-7683
+kind: security-consideration
+summary: Diameter nodes MUST NOT honor or forward OLRs received from peers not trusted to send them. DOIC nodes MUST strip DOIC AVPs from messages received from untrusted peers, and nodes MUST NOT send overload reports to peers not authorized to receive them. Agents MUST remove OLRs before forwarding to unauthorized peers.
+section: "10.4"
+rfc2119_level: MUST
+topics:
+    - security
+    - diameter
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

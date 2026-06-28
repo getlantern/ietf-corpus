@@ -1,0 +1,8 @@
+document: rfc-7685
+kind: interoperability-note
+summary: At least one TLS implementation is known to hang when it receives a ClientHello with a TLSCiphertext.length between 256 and 511 bytes inclusive. The padding extension can be used to push the record payload to at least 512 bytes to avoid this bug.
+section: "4"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

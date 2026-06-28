@@ -1,0 +1,9 @@
+document: rfc-7677
+kind: security-consideration
+summary: The strength of SCRAM is partly dependent on the hash iteration-count; as a rule of thumb it should be set so a modern machine takes 0.1 seconds for the complete algorithm (approximately 15,000 iterations at time of writing), though 4096 is a practical floor for mobile devices. Caching ClientKey can amortize the cost when salt and iteration-count are stable.
+section: "4"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

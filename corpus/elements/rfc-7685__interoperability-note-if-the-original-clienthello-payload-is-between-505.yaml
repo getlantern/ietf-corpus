@@ -1,0 +1,8 @@
+document: rfc-7685
+kind: interoperability-note
+summary: If the original ClientHello payload is between 505 and 507 bytes, the handshake protocol overhead places the record payload between 509 and 511 bytes. Since an extension requires at least four bytes, the padding must expand the payload beyond 512 bytes in these cases.
+section: "4"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

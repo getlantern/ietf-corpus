@@ -1,0 +1,10 @@
+document: rfc-7683
+kind: normative-requirement
+summary: When a reacting node receives an OC-OLR, it MUST update the matching OCS entry if the received sequence number is greater than the stored one, and MUST silently ignore the OLR (leaving OCS unchanged) if the received sequence number is less than or equal to the stored one. Sequence rollover MUST also be detected and treated as an update.
+section: 5.2.1.3
+rfc2119_level: MUST
+topics:
+    - diameter
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

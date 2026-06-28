@@ -1,0 +1,9 @@
+document: rfc-7685
+kind: design-rationale
+summary: Successive TLS versions added cipher suites and extensions, causing ClientHello messages to grow. At least one implementation bug is triggered by certain ClientHello sizes and can be worked around by making the ClientHello larger, which is preferable to comprehensively patching affected implementations.
+section: "1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,8 @@
+document: rfc-7159
+kind: interoperability-note
+summary: String comparison implementations should decode escape sequences before comparing, so that 'a\\b' and 'a\u005Cb' are recognized as equal. Implementations that compare without decoding may incorrectly report inequality.
+section: "8.3"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,7 +1,9 @@
 document: rfc-3986
 kind: normative-requirement
-summary: When a new URI scheme defines a component representing UCS text, the data should first be encoded as UTF-8 octets, then only octets not corresponding to unreserved characters should be percent-encoded. Non-ASCII registered names must be encoded in UTF-8 before percent-encoding.
+summary: When a new URI scheme defines a component representing textual UCS data, the data SHOULD first be encoded as octets per UTF-8, and then only those octets outside the unreserved set should be percent-encoded.
 section: "2.5"
 rfc2119_level: SHOULD
+topics:
+    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-06-21"
+extracted_at: "2026-06-28"

@@ -1,8 +1,8 @@
 document: rfc-7159
 kind: interoperability-note
-summary: Unpaired UTF-16 surrogates (e.g., '\uDEAD') are syntactically allowed by the ABNF grammar but their behavior in receiving software is unpredictable — implementations may return different string lengths or suffer fatal runtime exceptions.
+summary: Unpaired UTF-16 surrogates (e.g., '\uDEAD') are syntactically permitted by the ABNF but produce unpredictable behavior in receivers, including incorrect string length reporting or fatal runtime exceptions. These arise from libraries that truncate UTF-16 strings mid-surrogate-pair.
 section: "8.2"
 topics:
     - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-06-15"
+extracted_at: "2026-06-28"
