@@ -1,0 +1,8 @@
+document: rfc-7781
+kind: protocol-element
+summary: The Designated Forwarder (DF) per VLAN is elected within each RBv to prevent duplicate delivery of multi-destination frames to CE(s). The DF is chosen per VLAN per LAALP by sorting member RBridges on SHA-256(System ID | LAALP ID) and assigning VLAN n to the RBridge at position (n mod k), where k is the number of members.
+section: "5.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

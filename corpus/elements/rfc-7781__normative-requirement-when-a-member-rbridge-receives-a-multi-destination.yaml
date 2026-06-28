@@ -1,0 +1,9 @@
+document: rfc-7781
+kind: normative-requirement
+summary: When a member RBridge receives a multi-destination TRILL Data packet on an RBv port, it MUST NOT egress it out of RBv ports where it is not the DF for the packet's Inner.VLAN. This prevents duplicate frame delivery to multiply-attached CEs.
+section: "5.2"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

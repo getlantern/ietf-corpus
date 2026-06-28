@@ -1,0 +1,10 @@
+document: rfc-7773
+kind: security-consideration
+summary: This extension allows a CA to outsource subject authentication to another trust infrastructure dynamically, so two certificates from the same issuer may carry different levels of assurance. A relying party unable to process the authentication context extension MUST assume the certificate was issued at the lowest allowed level of assurance declared by the CA's policy.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

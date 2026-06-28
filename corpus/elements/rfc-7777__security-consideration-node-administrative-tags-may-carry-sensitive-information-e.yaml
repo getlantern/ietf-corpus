@@ -1,0 +1,10 @@
+document: rfc-7777
+kind: security-consideration
+summary: Node administrative tags may carry sensitive information (e.g., geographical location). Since OSPF authentication mechanisms do not provide confidentiality (RFC 2328, RFC 5340), tag values could be leaked to an IGP snooper; confidentiality requires running OSPF over IPsec tunnels or applying IPsec-based security (RFC 4552).
+section: "4"
+topics:
+    - routing
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

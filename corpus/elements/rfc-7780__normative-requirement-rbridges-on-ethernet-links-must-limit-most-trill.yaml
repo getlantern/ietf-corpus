@@ -1,0 +1,9 @@
+document: rfc-7780
+kind: normative-requirement
+summary: RBridges on Ethernet links MUST limit most TRILL IS-IS PDUs so that PDUz (the length from just after the L2-IS-IS Ethertype to just before the FCS) does not exceed the campus-wide minimum Sz. Exceptions are TRILL Hello PDUs (capped at 1470 bytes) and MTU-probe/ack PDUs padded for size testing.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

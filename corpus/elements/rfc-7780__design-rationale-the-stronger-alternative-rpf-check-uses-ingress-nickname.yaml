@@ -1,0 +1,9 @@
+document: rfc-7780
+kind: design-rationale
+summary: The stronger alternative RPF check uses {ingress nickname, source SNPA, tree, input port} instead of the RFC 6325 triplet to prevent packet duplication on multi-access links during topology transients. It is optional because it multiplies RPF state by the number of ports an RBridge has on a link and may increase transient packet loss when topology updates are partially applied.
+section: 3.6.2
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

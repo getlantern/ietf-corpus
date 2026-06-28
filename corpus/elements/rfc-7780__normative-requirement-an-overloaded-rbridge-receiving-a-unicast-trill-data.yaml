@@ -1,0 +1,9 @@
+document: rfc-7780
+kind: normative-requirement
+summary: An overloaded RBridge receiving a unicast TRILL Data packet for which it is not the egress MUST NOT discard the packet solely because the egress is unknown; it MUST attempt to forward to a non-overloaded neighbor (selected at random per RFC 4086) if any such neighbor exists other than the one from which the packet arrived.
+section: 2.3.1
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

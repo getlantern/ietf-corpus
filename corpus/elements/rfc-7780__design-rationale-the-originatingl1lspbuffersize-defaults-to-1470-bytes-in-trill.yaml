@@ -1,0 +1,8 @@
+document: rfc-7780
+kind: design-rationale
+summary: The originatingL1LSPBufferSize defaults to 1470 bytes in TRILL rather than 1492 (the Layer 3 IS-IS default) to provide a 27-byte safety margin accommodating headers such as Outer.VLAN on legacy devices with the classic 1500-byte Ethernet maximum MTU.
+section: "5.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,9 @@
+document: rfc-7771
+kind: design-rationale
+summary: Statically provisioned PWs do not use LDP for setup, signaling, or status; instead they rely on RFC 6478 PW OAM status signaling via the PW Associated Channel Header (ACH). The PW Status TLV carried via this OAM path is identical to the LDP-carried version, including the same PW Status Codes, enabling RFC 6870 procedures to operate identically.
+section: "2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

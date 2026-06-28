@@ -1,0 +1,8 @@
+document: rfc-7780
+kind: errata
+summary: RFC 6325 Section 4.5.1 incorrectly specifies distribution tree parent selection as 'j mod p'; the correct formula is '(j-1) mod p', where trees are numbered starting at 1 and possible parents starting at 0. This non-backward-compatible fix ensures all RBridges compute identical distribution trees.
+section: "3.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

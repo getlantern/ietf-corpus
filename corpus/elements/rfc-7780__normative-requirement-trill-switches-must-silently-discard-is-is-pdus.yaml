@@ -1,0 +1,9 @@
+document: rfc-7780
+kind: normative-requirement
+summary: TRILL switches MUST silently discard IS-IS PDUs with unknown PDU numbers and SHOULD maintain a per-PDU-number counter of such discards. Treating unknown PDU numbers as fatal errors (e.g., dropping adjacency) is incorrect given the addition of MTU-probe/ack in RFC 7176 and three more PDUs in RFC 7356.
+section: "8.3"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

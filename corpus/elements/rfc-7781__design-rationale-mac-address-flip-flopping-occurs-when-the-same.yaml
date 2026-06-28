@@ -1,0 +1,8 @@
+document: rfc-7781
+kind: design-rationale
+summary: MAC address flip-flopping occurs when the same source MAC and VLAN are ingressed by different member RBridges of an active-active edge group, causing remote egress RBridges to continuously update their MAC-to-nickname mapping. Using a shared pseudo-nickname for all member RBridges as the ingress nickname eliminates flip-flopping because all ingressed frames appear to come from the same virtual RBridge.
+section: "2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,8 @@
+document: rfc-7774
+kind: design-rationale
+summary: TUNIT is introduced as a configurable time unit (in milliseconds) for timer parameters rather than encoding absolute millisecond values directly. This allows a single 16-bit field to represent a wide range of timer durations with appropriate precision for the target network, avoiding excessively large field widths in constrained-node environments.
+section: "2.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"
