@@ -1,0 +1,11 @@
+document: rfc-7714
+kind: normative-requirement
+summary: For AEAD_AES_128_GCM, the keystream used for RFC 6904 header extension encryption MUST be generated using AES Counter Mode (AES-CM). For AEAD_AES_256_GCM, the keystream MUST be generated using the AES_256_CM transform. Header extension encryption must be performed before the AEAD algorithm is invoked.
+section: "8.3"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

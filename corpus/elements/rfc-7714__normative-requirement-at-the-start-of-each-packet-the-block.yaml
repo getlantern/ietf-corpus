@@ -1,0 +1,12 @@
+document: rfc-7714
+kind: normative-requirement
+summary: At the start of each packet, the Block Counter MUST be reset to 1 and MUST NOT be allowed to exceed 2^32-1 for GCM. Processing MUST cease if either the 31-bit SRTCP index or the 48-bit SRTP packet index (ROC||SEQ) cycles back to its initial value; processing MUST NOT resume until a new session is established with a new master key.
+section: "13.1"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

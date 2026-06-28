@@ -1,0 +1,10 @@
+document: rfc-7705
+kind: normative-requirement
+summary: When using 'Local AS', a BGP speaker SHOULD send BGP OPEN messages to configured eBGP peers using the local ASN as the value in 'My Autonomous System', and SHOULD NOT use the globally configured ASN in that field, to prevent the neighbor from generating a 'Bad Peer AS' error.
+section: "3.3"
+rfc2119_level: SHOULD
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

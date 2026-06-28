@@ -1,0 +1,11 @@
+document: rfc-7714
+kind: security-consideration
+summary: 'IV reuse is catastrophic for GCM: using the same (IV, Encryption_key) pair twice produces identical keystreams, compromising GCM''s integrity mechanism not only for the current packet stream but for all future uses of the current encryption key.'
+section: "6"
+topics:
+    - crypto
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

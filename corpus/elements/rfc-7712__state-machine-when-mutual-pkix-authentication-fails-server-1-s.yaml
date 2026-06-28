@@ -1,0 +1,10 @@
+document: rfc-7712
+kind: state-machine
+summary: 'When mutual PKIX authentication fails (Server 1''s client certificate is unacceptable to Server 2), Server 2 falls back to Server Dialback: Server 1 sends <db:result from=''a.example'' to=''b.example''> with a dialback key, Server 2 opens a new back-connection to Server 1, Server 1 presents its certificate, and Server 2 sends <db:verify> to which Server 1 responds with type=''valid'', completing the DNA for that direction.'
+section: "4.3"
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,11 @@
+document: rfc-7712
+kind: state-machine
+summary: 'C2S DNA flow: client resolves _xmpp-client._tcp DNS SRV, opens TCP, sends stream header with ''to'' attribute naming the service domain, server responds asserting its domain via ''from'', TLS is negotiated with the server presenting a PKIX certificate, and the client establishes DNA by checking that certificate per RFC 6125 matching rules and RFC 5280 validity.'
+section: "3.1"
+topics:
+    - tls
+    - pkix
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,11 @@
+document: rfc-7714
+kind: security-consideration
+summary: When a rekey occurs, the initial values of both the 31-bit SRTCP index and the 48-bit SRTP packet index (ROC||SEQ) MUST be saved to prevent IV reuse. If either counter reaches its initial value, processing must cease and a new SRTP/SRTCP session must be established.
+section: "13.1"
+topics:
+    - crypto
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,10 @@
+document: rfc-7705
+kind: interoperability-note
+summary: If there are still routers operating under the old ASN, it is possible for them to accept routes that had the old ASN removed from the AS_PATH by 'No Prepend Inbound' as if those routes had not passed through their ASN. This bypasses BGP's normal loop-prevention, potentially causing routing loops. Careful filtering between old-ASN and new-ASN routers is necessary.
+section: "3.1"
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

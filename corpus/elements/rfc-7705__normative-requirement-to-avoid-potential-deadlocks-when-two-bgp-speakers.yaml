@@ -1,0 +1,10 @@
+document: rfc-7705
+kind: normative-requirement
+summary: To avoid potential deadlocks when two BGP speakers both configured with 'Internal BGP AS Migration' attempt to establish a session, the speaker SHOULD send BGP OPEN using the globally configured ASN first, and only fall back to the locally configured ASN if the remote neighbor responds with 'Bad Peer AS'.
+section: "4.2"
+rfc2119_level: SHOULD
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

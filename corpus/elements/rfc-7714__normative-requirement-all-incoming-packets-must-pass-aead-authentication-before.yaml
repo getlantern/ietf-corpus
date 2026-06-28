@@ -1,0 +1,12 @@
+document: rfc-7714
+kind: normative-requirement
+summary: All incoming packets MUST pass AEAD authentication before any other action takes place. Plaintext and Associated Data MUST NOT be released until the AEAD authentication tag has been validated, and the ciphertext MUST NOT be decrypted until the AEAD tag has been validated.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

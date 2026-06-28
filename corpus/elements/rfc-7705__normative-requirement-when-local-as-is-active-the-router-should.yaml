@@ -1,0 +1,10 @@
+document: rfc-7705
+kind: normative-requirement
+summary: When 'Local AS' is active, the router SHOULD append the configured 'Local AS' ASN in the AS_PATH attribute before installing the route or advertising the UPDATE to an iBGP neighbor (internal direction). For external direction, it SHOULD first append the globally configured ASN then the 'Local AS' value before advertising to an eBGP neighbor.
+section: "3.3"
+rfc2119_level: SHOULD
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

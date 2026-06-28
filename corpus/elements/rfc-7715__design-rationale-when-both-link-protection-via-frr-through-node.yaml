@@ -1,0 +1,9 @@
+document: rfc-7715
+kind: design-rationale
+summary: When both link protection (via FRR through node M) and node protection are simultaneously invoked by the PLR, downstream MPTs may receive duplicate packets. The design resolves this by having MPTs select the upstream (primary N vs. secondary PLR) based on reachability of the protected node, ensuring only one path is active at a time.
+section: "4"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

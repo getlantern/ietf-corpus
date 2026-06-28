@@ -1,0 +1,9 @@
+document: rfc-7711
+kind: state-machine
+summary: 'POSH client state flow: (1) GET /.well-known/posh/{service}.json at source domain; (2) if 404 → no POSH; if 200 with ''url'' → fetch fingerprints from delegated domain; if 200 with ''fingerprints'' → proceed to verification; (3) compare each fingerprint descriptor against server cert; (4) match → accept; no match → SHOULD reject (unless DANE or other method succeeds).'
+section: "3"
+topics:
+    - pkix
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,11 @@
+document: rfc-7712
+kind: security-consideration
+summary: 'If DNSSEC is not used, DNS SRV delegation from a service domain (e.g., example.com) to a target hostname (e.g., hosting.example.net) is inherently insecure: S2S communications will either be unencrypted or TLS-encrypted with unchecked certificates, the latter being functionally equivalent to anonymous key exchange.'
+section: "6"
+topics:
+    - tls
+    - pkix
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

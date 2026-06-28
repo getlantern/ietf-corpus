@@ -1,0 +1,9 @@
+document: rfc-7708
+kind: design-rationale
+summary: VCCV CC Types 2 and 3 require IP encapsulation for OAM packets, conflicting with MPLS-TP design goals that do not otherwise require IP availability. Type 2 is not applicable to MS-PWs, and Type 3 (TTL-based) risks VCCV packets failing to reach the T-PE or leaking into the attachment circuit if the PW LSE TTL is set incorrectly. Type 4 using GAL addresses these problems for PWs that do not use the Control Word.
+section: "1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

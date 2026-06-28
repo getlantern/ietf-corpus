@@ -1,0 +1,12 @@
+document: rfc-7714
+kind: normative-requirement
+summary: SRTP using GCM with shared master keys MUST prevent an SSRC collision from happening even once. Each originating endpoint MUST only issue SSRC values from its assigned disjoint pool, MUST maintain a history of issued SSRCs, and MUST NOT reuse any previously issued SSRC identifier within the current master key lifetime.
+section: "8.4"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

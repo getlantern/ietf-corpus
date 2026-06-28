@@ -1,0 +1,9 @@
+document: rfc-7715
+kind: security-consideration
+summary: The new TLVs defined in this document are protected by the same mechanisms used for LDP messages as described in RFC 6388 and RFC 5920. An attacker exploiting these mechanisms could induce a PLR or MPT to support a large number of tLDP sessions and even larger numbers of LSPs; implementations should count protection sessions and LSPs and log a warning if a threshold is crossed.
+section: "6"
+topics:
+    - security
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

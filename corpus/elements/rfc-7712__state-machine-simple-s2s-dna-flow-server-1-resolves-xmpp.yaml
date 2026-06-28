@@ -1,0 +1,11 @@
+document: rfc-7712
+kind: state-machine
+summary: 'Simple S2S DNA flow: Server 1 resolves _xmpp-server._tcp SRV, opens TCP, both sides exchange stream headers asserting their respective domains, mutual TLS is negotiated with each presenting a PKIX client or server certificate, and each server checks the other''s certificate per RFC 6125 and RFC 5280 to achieve bidirectional DNA establishment.'
+section: "4.2"
+topics:
+    - tls
+    - pkix
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

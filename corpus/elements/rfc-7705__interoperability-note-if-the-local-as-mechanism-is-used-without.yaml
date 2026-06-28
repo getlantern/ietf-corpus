@@ -1,0 +1,9 @@
+document: rfc-7705
+kind: interoperability-note
+summary: If the 'Local AS' mechanism is used without 'No Prepend Inbound', the AS_PATH seen by remote iBGP peers will contain the legacy ASN (e.g., 64510 64496 instead of 64496), which is an unacceptable lengthening. Both mechanisms must be used together to keep AS_PATH length unchanged internally.
+section: "3.1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

@@ -1,0 +1,10 @@
+document: rfc-7711
+kind: design-rationale
+summary: POSH was designed to address the multi-tenancy problem where hosting providers cannot obtain PKIX certificates identifying their customers' domains (CAs won't issue them; customers won't share private keys). By hosting certificate fingerprints at a well-known HTTPS URI on the customer's domain, POSH allows verification without private key transfer.
+section: "1"
+topics:
+    - pkix
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

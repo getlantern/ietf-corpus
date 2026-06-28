@@ -1,0 +1,12 @@
+document: rfc-7714
+kind: normative-requirement
+summary: All SRTP packets MUST be both authenticated and encrypted. Even if the Plaintext field is empty, AEAD encryption must still be performed, resulting in a cipher consisting solely of the 16-octet authentication tag.
+section: "8.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"

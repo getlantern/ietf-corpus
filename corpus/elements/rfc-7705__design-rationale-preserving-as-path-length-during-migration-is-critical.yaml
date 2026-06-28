@@ -1,0 +1,9 @@
+document: rfc-7705
+kind: design-rationale
+summary: Preserving AS_PATH length during migration is critical because BGP path selection favors shorter AS_PATHs. Artificially lengthening the AS_PATH during migration would cause sudden, undesirable traffic pattern shifts. The three mechanisms (Local AS, No Prepend, Replace Old AS) work together specifically to prevent any AS_PATH lengthening.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-06-28"
