@@ -1,0 +1,8 @@
+document: rfc-8539
+kind: design-rationale
+summary: A new DHCPv4 option (OPTION_DHCP4O6_S46_SADDR) is defined rather than reusing existing DHCPv4 client identification fields because the softwire source IPv6 address may not be known until after the client receives the server's DHCPV4-RESPONSE containing OPTION_S46_BIND_IPV6_PREFIX, making it impossible to place in fields that must be constant from the initial DHCPDISCOVER.
+section: "6.2"
+topics:
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

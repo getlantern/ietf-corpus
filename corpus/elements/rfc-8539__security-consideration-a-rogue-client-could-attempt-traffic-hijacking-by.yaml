@@ -1,0 +1,9 @@
+document: rfc-8539
+kind: security-consideration
+summary: A rogue client could attempt traffic hijacking by sending a DHCPREQUEST for another client's active IPv4 lease with the attacker's IPv6 address in OPTION_DHCP4O6_S46_SADDR. The attack requires knowing another client's IPv4 lease and client identifier, making it difficult in dedicated Layer 2 access networks. This mechanism is NOT RECOMMENDED on shared-medium access networks.
+section: "9"
+topics:
+    - security
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

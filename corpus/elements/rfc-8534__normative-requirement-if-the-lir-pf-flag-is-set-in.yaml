@@ -1,0 +1,11 @@
+document: rfc-8534
+kind: normative-requirement
+summary: If the LIR-pF flag is set in the PTA of an S-PMSI A-D route, the originator of that route MUST also set the LIR flag. If a received wildcard S-PMSI A-D route has LIR-pF set but LIR not set, the receiver MUST log the improper flag state and then process the route as if both flags were set.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - multicast
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

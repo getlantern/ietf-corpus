@@ -1,0 +1,8 @@
+document: rfc-8536
+kind: design-rationale
+summary: The utoff field MUST NOT equal -2**31 so that 32-bit clients can negate the value without integer overflow. The SHOULD range of [-89999, 93599] is chosen to accommodate implementations already supporting the POSIX range of [-24:59:59, 25:59:59].
+section: "3.2"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8534
+kind: design-rationale
+summary: The separation of 'match for tracking' from 'match for reception' is introduced to handle the case where an ingress node uses a wildcard S-PMSI A-D route with 'no tunnel information present' and LIR set purely for explicit tracking of individual flows, while a separate wildcard route with a real tunnel handles actual data forwarding. Without this distinction, tracking routes without tunnel info would be ignored.
+section: "3"
+topics:
+    - multicast
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

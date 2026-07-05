@@ -1,0 +1,11 @@
+document: rfc-8533
+kind: security-consideration
+summary: Access to the `continuity-check` and `path-discovery` RPC operations MUST be controlled because unauthorized use of these operations can enable network reconnaissance or trigger denial-of-service attacks on the local device and the network. Implementations SHOULD use NACM (RFC 8341) to restrict which NETCONF/RESTCONF users can invoke these operations.
+section: "5"
+topics:
+    - security
+    - yang
+    - netconf
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

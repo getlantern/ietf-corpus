@@ -1,0 +1,9 @@
+document: rfc-8536
+kind: normative-requirement
+summary: The version field MUST be one of 0x00 (version 1), '2' (0x32), or '3' (0x33). Version 1 files MUST NOT contain a version 2+ header, data block, or footer; versions 2 and 3 MUST contain the version 1 block, a version 2+ block, and a footer.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

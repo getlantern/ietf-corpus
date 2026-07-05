@@ -1,0 +1,9 @@
+document: rfc-8539
+kind: normative-requirement
+summary: On receipt of every client DHCPREQUEST containing OPTION_DHCP4O6_S46_SADDR, the server MUST check the received IPv6 address against all existing active CE source addresses to ensure uniqueness. If a conflict exists with another active lease, the address MUST NOT be stored or updated.
+section: "8.2"
+rfc2119_level: MUST
+topics:
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

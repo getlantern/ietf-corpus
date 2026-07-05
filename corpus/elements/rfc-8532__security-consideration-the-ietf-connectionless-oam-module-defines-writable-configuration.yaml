@@ -1,0 +1,10 @@
+document: rfc-8532
+kind: security-consideration
+summary: The 'ietf-connectionless-oam' module defines writable configuration nodes (test-point-locations, tp-tools, oam-neighboring-tps, session-type, etc.) whose unauthorized modification could disrupt OAM monitoring and affect network operations. Readable state nodes (cc-session-statistics-data) may reveal topology or traffic information. Implementations must enforce access control consistent with RFC 6536 (NETCONF Access Control Model).
+section: "7"
+topics:
+    - security
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

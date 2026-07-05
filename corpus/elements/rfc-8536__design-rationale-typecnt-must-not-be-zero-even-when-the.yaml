@@ -1,0 +1,8 @@
+document: rfc-8536
+kind: design-rationale
+summary: typecnt MUST NOT be zero even when the TZ string makes local time type records unnecessary, because many TZif readers reject files with zero time types. This is an explicit concession to deployed reader behavior rather than a principled constraint.
+section: "3.1"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

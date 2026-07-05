@@ -1,0 +1,10 @@
+document: rfc-8534
+kind: interoperability-note
+summary: If egress nodes that do not support LIR-pF receive a wildcard S-PMSI A-D route with LIR-pF set, they respond with Leaf A-D routes without LIR-pF (per RFC 6514 LIR behavior). The ingress node can detect non-supporting egress nodes this way; the software MUST detect this and MUST have a way to alert the operator of misconfiguration.
+section: "2"
+topics:
+    - multicast
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

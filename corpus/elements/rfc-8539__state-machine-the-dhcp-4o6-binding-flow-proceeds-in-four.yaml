@@ -1,0 +1,8 @@
+document: rfc-8539
+kind: state-machine
+summary: 'The DHCP 4o6 binding flow proceeds in four steps: (1) client sends DHCPDISCOVER with ORO listing options 90 and 137; (2) server replies with DHCPOFFER including OPTION_S46_BR and optionally OPTION_S46_BIND_IPV6_PREFIX; (3) client sends DHCPREQUEST with OPTION_DHCP4O6_S46_SADDR; (4) server sends DHCPACK with bound IPv6 source address. On DHCPNAK, client restarts from step 1.'
+section: "5"
+topics:
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

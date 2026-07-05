@@ -1,0 +1,10 @@
+document: rfc-8538
+kind: security-consideration
+summary: This specification relaxes RFC 4724's protection against repeated session resets, creating a risk that an attacker could use repeated resets to prevent stale routes from ever being deleted. The mandatory stale timer mitigates this risk. The extension may modestly increase control-plane resilience, but no general claims can be made due to deployment-specific factors.
+section: "9"
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

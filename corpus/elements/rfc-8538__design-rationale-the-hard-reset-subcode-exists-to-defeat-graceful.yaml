@@ -1,0 +1,9 @@
+document: rfc-8538
+kind: design-rationale
+summary: The Hard Reset subcode exists to defeat graceful restart semantics when a full session teardown is warranted, such as for permanent errors (Maximum Prefixes Reached, Administrative Shutdown, Peer De-configured). Transient conditions (Connection Rejected, Configuration Change, Out of Resources) are better served by Graceful Cease.
+section: "5.1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

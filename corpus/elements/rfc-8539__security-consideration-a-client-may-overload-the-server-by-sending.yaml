@@ -1,0 +1,9 @@
+document: rfc-8539
+kind: security-consideration
+summary: A client may overload the server by sending rapid repeated source address update messages. This risk can be mitigated by implementing a server-side minimum time interval between client address changes (default 60 seconds per Section 8.1), and by using a random-based client identifier to reduce brute-force guessing risk.
+section: "9"
+topics:
+    - security
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

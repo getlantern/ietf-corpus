@@ -1,0 +1,9 @@
+document: rfc-8537
+kind: design-rationale
+summary: A unique Extended Association ID is required per LSP pair (rather than relying on the base Association Object alone) because restoration LSPs and protected LSPs at the same midpoint can carry identical base ASSOCIATION Objects, causing incorrect LSP pairing during fast reroute bypass assignment.
+section: "3.3"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8532
+kind: wire-format
+summary: 'The ''timestamp'' grouping models four on-wire formats selected by ''timestamp-type'': 64-bit (timestamp-sec uint32 + timestamp-nanosec uint32, for PTP truncated or NTP64); 80-bit PTP (timestamp-sec uint64 range 0..281474976710655 + timestamp-nanosec uint32, guarded by ''ptp-long-format'' feature); 32-bit NTP short (timestamp-sec uint16 + timestamp-nanosec uint16, guarded by ''ntp-short-format'' feature); 32-bit ICMP (timestamp-millisec uint32, guarded by ''icmp-timestamp'' feature).'
+section: "5"
+topics:
+    - yang
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

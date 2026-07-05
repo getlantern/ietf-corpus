@@ -1,0 +1,10 @@
+document: rfc-8538
+kind: design-rationale
+summary: The stale timer, previously OPTIONAL in RFC 4724, is made MUST to mitigate the risk introduced by relaxing protection against repeated resets. Without a mandatory upper bound, an attacker could repeatedly reset sessions to prevent stale routes from ever being deleted.
+section: "9"
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
