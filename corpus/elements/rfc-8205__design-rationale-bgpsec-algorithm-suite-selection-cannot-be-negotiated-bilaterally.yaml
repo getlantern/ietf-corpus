@@ -1,0 +1,11 @@
+document: rfc-8205
+kind: design-rationale
+summary: BGPsec algorithm suite selection cannot be negotiated bilaterally between peers because the chosen suite must be understood by all BGPsec speakers along the entire propagation path, not just the direct peer. Therefore, a single mandatory-to-use algorithm suite is coordinated Internet-wide via RFC 8208 rather than per-session.
+section: "6.1"
+topics:
+    - bgp
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

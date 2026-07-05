@@ -1,0 +1,10 @@
+document: rfc-8210
+kind: normative-requirement
+summary: When a router receives a Cache Reset, it SHOULD attempt to connect to any more-preferred caches. If none are more-preferred, it MUST issue a Reset Query. When a router receives a No Data Available error, it SHOULD try other caches; if none are available it MUST issue periodic Reset Queries.
+section: "8.3"
+rfc2119_level: MUST
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

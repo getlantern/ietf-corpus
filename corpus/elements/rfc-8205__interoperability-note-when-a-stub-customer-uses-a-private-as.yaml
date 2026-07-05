@@ -1,0 +1,11 @@
+document: rfc-8205
+kind: interoperability-note
+summary: When a stub customer uses a private AS number, the ISP's edge BGPsec speaker MUST strip the private AS from the AS_PATH or Secure_Path and re-originate the prefix—using its own signature for BGPsec peers—only if a valid ROA in the Global RPKI authorizes the ISP's AS to originate the prefix.
+section: "7.5"
+topics:
+    - bgp
+    - routing
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

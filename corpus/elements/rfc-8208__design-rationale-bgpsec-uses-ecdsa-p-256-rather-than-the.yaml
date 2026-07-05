@@ -1,0 +1,11 @@
+document: rfc-8208
+kind: design-rationale
+summary: BGPsec uses ECDSA P-256 rather than the RSA algorithm used in the rest of RPKI specifically to minimize the size of the protocol data exchanged between routers, since BGPsec signatures appear in every BGP UPDATE message propagated through the path.
+section: "1"
+topics:
+    - bgp
+    - routing
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,12 @@
+document: rfc-8209
+kind: security-consideration
+summary: A BGPsec Router Certificate will fail standard RPKI validation (RFC 6487) because its cryptographic algorithms differ from those used for RPKI CA certificates. Relying Parties must identify the EKU to determine the appropriate validation constraint and algorithm set.
+section: "6"
+topics:
+    - bgp
+    - pkix
+    - security
+    - routing
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

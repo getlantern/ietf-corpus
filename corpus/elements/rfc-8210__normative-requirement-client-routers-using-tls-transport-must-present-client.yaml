@@ -1,0 +1,13 @@
+document: rfc-8210
+kind: normative-requirement
+summary: Client routers using TLS transport MUST present client-side certificates containing a subjectAltName with iPAddress identities, and the cache MUST verify the connecting IP address against them. Routers MUST verify the cache's TLS server certificate using dNSName identities per RFC 6125; CN-ID identifiers MUST NOT be used for authentication.
+section: "9.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - bgp
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

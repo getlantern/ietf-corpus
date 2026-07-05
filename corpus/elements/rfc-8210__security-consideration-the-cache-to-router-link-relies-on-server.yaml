@@ -1,0 +1,10 @@
+document: rfc-8210
+kind: security-consideration
+summary: The cache-to-router link relies on server authentication and transport-level security rather than RPKI object security, creating a fundamentally different and weaker trust model. A compromised transport or forged cache can corrupt the router's routing decisions. Caches SHOULD be topologically close to their routers on DDoS-protected, controlled networks; the cache and router's identity SHOULD be mutually verified before any data exchange.
+section: "13"
+topics:
+    - routing
+    - bgp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

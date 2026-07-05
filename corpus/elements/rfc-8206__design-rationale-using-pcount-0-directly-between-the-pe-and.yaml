@@ -1,0 +1,10 @@
+document: rfc-8206
+kind: design-rationale
+summary: Using pCount=0 directly between the PE and CE (different administrative domains) was rejected because it would represent a significant attack vector — legitimate pCount=0 use requires an explicit trust relationship and policy configuration between peers, which cannot be assumed for migrating SPs and their customers.
+section: "5"
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

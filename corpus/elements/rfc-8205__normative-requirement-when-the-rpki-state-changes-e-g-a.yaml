@@ -1,0 +1,12 @@
+document: rfc-8205
+kind: normative-requirement
+summary: When the RPKI state changes (e.g., a router certificate expires or is revoked), a BGPsec speaker MUST rerun validation on all affected UPDATE messages in its Adj-RIB-In. All UPDATE messages whose SKI matches a newly invalid certificate MUST be reassessed.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

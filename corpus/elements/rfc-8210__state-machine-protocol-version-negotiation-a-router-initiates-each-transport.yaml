@@ -1,0 +1,9 @@
+document: rfc-8210
+kind: state-machine
+summary: 'Protocol version negotiation: a router initiates each transport connection with a Reset Query or Serial Query carrying its version. A v1 cache receiving a v0 query MUST downgrade or terminate with an error. A v1 router receiving a v0 response MUST downgrade or terminate. Once agreed, the version is stable for the life of the session; receipt of a PDU with a different version after negotiation MUST cause the session to be dropped.'
+section: "7"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

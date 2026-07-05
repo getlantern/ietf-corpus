@@ -1,0 +1,11 @@
+document: rfc-8205
+kind: normative-requirement
+summary: When a confederation member propagates a BGPsec UPDATE to a peer outside the confederation, it MUST remove all Secure_Path Segments with Confed_Segment flag set to 1 (and the same count of Signature Segments), then add a new Secure_Path Segment with the confederation's public AS number and a corresponding signature.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

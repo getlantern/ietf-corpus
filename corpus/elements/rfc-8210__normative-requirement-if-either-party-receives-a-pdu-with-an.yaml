@@ -1,0 +1,10 @@
+document: rfc-8210
+kind: normative-requirement
+summary: If either party receives a PDU with an unexpected Protocol Version after negotiation completes, that party MUST drop the session and SHOULD send an Error Report with error code 8 (Unexpected Protocol Version), unless the unexpected PDU was itself an Error Report.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

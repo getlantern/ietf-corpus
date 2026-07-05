@@ -1,0 +1,11 @@
+document: rfc-8210
+kind: normative-requirement
+summary: If either the router or cache finds that the Session ID value does not match the other's (after protocol version negotiation), the detecting party MUST immediately terminate the session with an Error Report PDU with code 0 (Corrupt Data), and the router MUST flush all data learned from that cache.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - bgp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

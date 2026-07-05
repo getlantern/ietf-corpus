@@ -1,0 +1,10 @@
+document: rfc-8205
+kind: security-consideration
+summary: BGPsec validation is computationally expensive (public-key cryptography per AS hop). Implementations should rate-limit validation, and operators SHOULD monitor for anomalous UPDATE volumes. A BGPsec speaker MAY temporarily defer validation under exceptional load, but deferred status SHOULD be visible to operators.
+section: "8.3"
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

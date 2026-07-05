@@ -1,0 +1,10 @@
+document: rfc-8214
+kind: design-rationale
+summary: 'EVPN-VPWS enables faster failover than PW redundancy: a single BGP route withdrawal per EVPL service triggers convergence, whereas PW redundancy requires two control-plane messages (deactivate primary group, then activate backup group). Additionally, EVPN can use data-plane egress link protection via the backup PE''s label.'
+section: "5"
+topics:
+    - routing
+    - mpls
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

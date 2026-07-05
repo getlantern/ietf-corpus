@@ -1,0 +1,11 @@
+document: rfc-8205
+kind: normative-requirement
+summary: Any BGP speaker that announces the BGPsec capability MUST also announce the capability for 4-byte AS number support (RFC 6793). If the 4-byte AS capability is absent, BGPsec has not been successfully negotiated and UPDATE messages containing BGPsec_PATH MUST NOT be sent.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

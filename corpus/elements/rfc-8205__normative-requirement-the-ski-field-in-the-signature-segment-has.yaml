@@ -1,0 +1,13 @@
+document: rfc-8205
+kind: normative-requirement
+summary: The SKI field in the Signature Segment has a fixed size of 20 octets. If the RPKI certificate's SKI is longer than 20 octets, use only the leftmost 20 octets (excluding tag and length). If shorter, pad with zero bytes on the right to reach 20 octets.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

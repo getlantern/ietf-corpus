@@ -1,0 +1,10 @@
+document: rfc-8206
+kind: security-consideration
+summary: The AS migration process intentionally manipulates AS_PATH in exactly the manner BGPsec is designed to prevent; BGPsec must manage this legitimate use without creating a vulnerability in RPKI route security infrastructure. The double-signing solution is considered reasonably secure because it requires both signatures to be secured as if forward-signed between two eBGP neighbors, requiring the router to hold valid keys for both ASNs.
+section: "7"
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

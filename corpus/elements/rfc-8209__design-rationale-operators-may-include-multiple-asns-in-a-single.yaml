@@ -1,0 +1,10 @@
+document: rfc-8209
+kind: design-rationale
+summary: 'Operators may include multiple ASNs in a single BGPsec Router Certificate, but this creates a fragility: the certificate becomes invalid if any one ASN is removed from a superior CA certificate. Issuing separate certificates per ASN avoids this interdependency.'
+section: "5"
+topics:
+    - bgp
+    - pkix
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

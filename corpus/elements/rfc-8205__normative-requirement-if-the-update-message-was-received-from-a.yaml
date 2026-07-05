@@ -1,0 +1,11 @@
+document: rfc-8205
+kind: normative-requirement
+summary: If the UPDATE message was received from a BGPsec peer not in the speaker's AS confederation, validation MUST check that no Secure_Path Segment has the Confed_Segment flag set to 1. Conversely, if received from a confederation peer, the corresponding Secure_Path Segment MUST have Confed_Segment set to 1.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

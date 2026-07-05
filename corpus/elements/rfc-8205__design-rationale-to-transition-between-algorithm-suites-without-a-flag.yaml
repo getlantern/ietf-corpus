@@ -1,0 +1,11 @@
+document: rfc-8205
+kind: design-rationale
+summary: To transition between algorithm suites without a flag day, all BGPsec UPDATE messages SHOULD include two Signature_Blocks (one for the current and one for the new suite) during the transition period. A message is 'Valid' if either block is valid, allowing incremental rollout of the new suite.
+section: "6.1"
+topics:
+    - bgp
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

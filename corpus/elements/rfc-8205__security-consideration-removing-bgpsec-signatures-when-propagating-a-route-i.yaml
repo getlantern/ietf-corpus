@@ -1,0 +1,10 @@
+document: rfc-8205
+kind: security-consideration
+summary: Removing BGPsec signatures when propagating a route (i.e., downgrading to an unsigned UPDATE) is NOT RECOMMENDED because it allows any on-path AS to strip path security without detection; downstream receivers cannot distinguish a legitimate downgrade from an attack. Stripping is only acceptable when forwarding to a peer that did not advertise BGPsec receive capability.
+section: "8.2"
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

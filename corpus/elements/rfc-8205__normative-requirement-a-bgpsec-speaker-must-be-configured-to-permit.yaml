@@ -1,0 +1,11 @@
+document: rfc-8205
+kind: normative-requirement
+summary: A BGPsec speaker MUST be configured to permit pCount=0 from an IXP (route server) peer. If a peer not expected to set pCount=0 sends a Secure_Path Segment with pCount=0, the UPDATE message MUST be treated as an error.
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

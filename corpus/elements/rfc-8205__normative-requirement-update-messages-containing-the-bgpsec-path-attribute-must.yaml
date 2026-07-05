@@ -1,0 +1,11 @@
+document: rfc-8205
+kind: normative-requirement
+summary: UPDATE messages containing the BGPsec_PATH attribute MUST NOT contain the AS_PATH attribute, and vice versa. A BGPsec speaker MUST generate a separate BGPsec UPDATE message for each unique peer AS to which the UPDATE is sent, because the peer AS number is included in the signed data.
+section: "4.1"
+rfc2119_level: MUST NOT
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8209
+kind: design-rationale
+summary: 'CAs are required by the RPKI Certificate Policy (RFC 6484) to issue properly formed BGPsec Router Certificates regardless of what is in the certificate request. This means CA behavior overrides request content: EE-only certificates are always issued, invalid Key Usage values are dropped, the BGPsec EKU is always added, and the SIA extension is always removed.'
+section: "4"
+topics:
+    - bgp
+    - pkix
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

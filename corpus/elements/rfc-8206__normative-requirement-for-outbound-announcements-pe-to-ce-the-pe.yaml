@@ -1,0 +1,11 @@
+document: rfc-8206
+kind: normative-requirement
+summary: 'For outbound announcements (PE to CE), the PE router MUST generate a valid BGPsec signature for both configured ASNs: a signature from the new (global) ASN forward-signing to the old (local) ASN with pCount=0, and then a forward signature from the old (local) ASN to the target eBGP ASN with pCount=1.'
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

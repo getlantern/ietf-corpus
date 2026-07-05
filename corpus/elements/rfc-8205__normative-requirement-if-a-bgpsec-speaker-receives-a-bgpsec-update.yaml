@@ -1,0 +1,12 @@
+document: rfc-8205
+kind: normative-requirement
+summary: If a BGPsec speaker receives a BGPsec UPDATE with two Signature_Blocks and supports both algorithm suites, the new outgoing UPDATE MUST include both Signature_Blocks. If only one suite is supported, the unsupported block MUST be removed. If no supported suite exists, the route MUST NOT be propagated with BGPsec_PATH.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

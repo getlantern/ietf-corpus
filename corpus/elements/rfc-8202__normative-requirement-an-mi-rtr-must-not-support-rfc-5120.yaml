@@ -1,0 +1,9 @@
+document: rfc-8202
+kind: normative-requirement
+summary: An MI-RTR MUST NOT support RFC 5120 multi-topology within a non-zero instance when any non-zero ITID is supported. TLVs 222 (MT IS Neighbors), 235 (MT IP Reachability), and 237 (MT IPv6 Reachability) MUST NOT be sent in LSPs associated with a non-zero instance supporting a non-zero ITID, and such LSPs MUST be ignored when received.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8205
+kind: normative-requirement
+summary: A BGPsec UPDATE message MUST advertise a route to only a single prefix, encoded using the MP_REACH_NLRI attribute (RFC 4760). This constraint exists because a receiver cannot construct valid path signatures for a subset of prefixes from a multi-prefix UPDATE.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

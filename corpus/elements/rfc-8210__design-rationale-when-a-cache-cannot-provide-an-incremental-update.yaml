@@ -1,0 +1,9 @@
+document: rfc-8210
+kind: design-rationale
+summary: 'When a cache cannot provide an incremental update (Cache Reset), the protocol requires the router to explicitly initiate a fallback Reset Query rather than having the cache force it. This is deliberate: the cache cannot know whether the router has other caches that may be able to provide better service, so the decision is left to the router.'
+section: "4"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

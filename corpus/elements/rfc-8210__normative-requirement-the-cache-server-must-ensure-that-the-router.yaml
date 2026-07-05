@@ -1,0 +1,10 @@
+document: rfc-8210
+kind: normative-requirement
+summary: The cache server MUST ensure that the router client holds one and only one IPvX PDU for each unique {Prefix, Len, Max-Len, ASN} tuple at any point in time. If a router receives a duplicate announcement, it SHOULD raise a Duplicate Announcement Received error (code 7).
+section: "5.6"
+rfc2119_level: MUST
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
