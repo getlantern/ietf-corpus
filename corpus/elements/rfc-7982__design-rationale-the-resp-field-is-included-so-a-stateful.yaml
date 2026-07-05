@@ -1,0 +1,9 @@
+document: rfc-7982
+kind: design-rationale
+summary: The Resp field is included so a stateful server can report how many responses it has sent, giving the client a hint about whether loss occurred upstream (client-to-server) or downstream (server-to-client). The document acknowledges it cannot always distinguish loss from reordering, but aggregate metrics over time can reveal patterns.
+section: "3"
+topics:
+    - nat
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-7989
+kind: normative-requirement
+summary: When an endpoint or intermediary receives a mid-dialog request with a new UUID from a peer, all responses MUST contain the new UUID as the 'remote' parameter; acceptance is confirmed only upon a 2xx or 3xx response, not a failure response. For CANCEL requests, the new UUID MUST NOT be accepted.
+section: "8"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

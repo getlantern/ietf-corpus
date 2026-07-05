@@ -1,0 +1,10 @@
+document: rfc-7983
+kind: design-rationale
+summary: RFC 5764 did not handle TURN channel packets, whose first byte falls in [64..127]. Implementations had been silently violating RFC 5764 by treating these as TURN data anyway. This document formalizes first-byte values 64–79 as TURN Channel to match deployed behavior, while restricting the usable TURN channel space.
+section: "6"
+topics:
+    - rtp
+    - nat
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

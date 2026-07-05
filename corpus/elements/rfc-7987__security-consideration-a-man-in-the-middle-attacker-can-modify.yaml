@@ -1,0 +1,9 @@
+document: rfc-7987
+kind: security-consideration
+summary: A man-in-the-middle attacker can modify an LSP in transit by setting the Remaining Lifetime to a small value, causing premature purges even when cryptographic authentication (RFC 5304 or RFC 5310) is in use, because the Remaining Lifetime is excluded from the authentication hash. The MaxAge floor mechanism defined in this document prevents such an attack from being effective by overriding any small received Remaining Lifetime value.
+section: "4"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8000
+kind: design-rationale
+summary: AUTH_SYS cannot be used in multi-domain deployments because it uses a host-based authentication model with small integers (uidNumber, gidNumber) that have no domain component; collisions are inevitable when multiple name services are used and there is no namespace negotiation in AUTH_SYS.
+section: "6.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

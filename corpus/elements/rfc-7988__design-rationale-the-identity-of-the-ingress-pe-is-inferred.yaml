@@ -1,0 +1,10 @@
+document: rfc-7988
+kind: design-rationale
+summary: The identity of the ingress PE is inferred from the P-tunnel label rather than the IP source address of the encapsulating header. Using the IP source address is unreliable for segmented P-tunnels (where the source may be an intermediate node), may differ from the MVPN signaling address, and cannot yield the ingress VRF needed for extranet (RFC 7900) duplicate-prevention procedures.
+section: "6"
+topics:
+    - routing
+    - multicast
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

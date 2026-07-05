@@ -1,0 +1,9 @@
+document: rfc-7988
+kind: design-rationale
+summary: Unlike all other P-tunnel types, the IR P-tunnel identifier does not appear in the PTA's Tunnel Identifier field at all; instead, the IR P-tunnel is identified by the NLRI of the advertising A-D route. This is because IR P-tunnels have no pre-existing setup protocol with its own tree-identifier syntax — BGP A-D routes are both the setup and the identifier.
+section: "3"
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

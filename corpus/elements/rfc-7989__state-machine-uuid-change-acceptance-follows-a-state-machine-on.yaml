@@ -1,0 +1,9 @@
+document: rfc-7989
+kind: state-machine
+summary: 'UUID change acceptance follows a state machine: on receiving a mid-dialog request with a new UUID, tentatively accept it in responses; commit if a 2xx/3xx response or ACK for 2xx/3xx is sent; revert to the previously stored UUID if a 4xx/5xx/6xx response is sent or a CANCEL is received.'
+section: "8"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

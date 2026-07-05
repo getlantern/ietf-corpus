@@ -1,0 +1,9 @@
+document: rfc-7988
+kind: interoperability-note
+summary: An IR P-tunnel can instantiate only a single PMSI because two different advertising A-D routes (with different NLRIs) cannot advertise the same IR P-tunnel. To bind multiple customer multicast flows to a single IR P-tunnel, the ingress PE must use an I-PMSI A-D route or an S-PMSI A-D route with wildcards (RFC 6625).
+section: "3"
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

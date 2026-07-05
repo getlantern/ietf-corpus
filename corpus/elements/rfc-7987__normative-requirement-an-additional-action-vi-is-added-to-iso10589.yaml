@@ -1,0 +1,9 @@
+document: rfc-7987
+kind: normative-requirement
+summary: 'An additional action vi is added to ISO10589 Section 7.3.15.1.e(1): when a received LSP is newer than the local LSPDB copy and has a non-zero Remaining Lifetime, if the Remaining Lifetime of the new LSP is less than MaxAge, it MUST be set to MaxAge before storage. This ensures no non-originator IS will purge an LSP until it has existed in the database for at least MaxAge.'
+section: "2"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

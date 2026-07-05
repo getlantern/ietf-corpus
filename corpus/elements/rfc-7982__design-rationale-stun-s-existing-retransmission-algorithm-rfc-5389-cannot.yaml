@@ -1,0 +1,9 @@
+document: rfc-7982
+kind: design-rationale
+summary: STUN's existing retransmission algorithm (RFC 5389) cannot determine RTT when a request is retransmitted because each request and retransmission packet is bit-wise identical. This attribute makes retransmits distinguishable by incrementing a counter, enabling accurate RTT calculation and directional loss hints.
+section: "1"
+topics:
+    - nat
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

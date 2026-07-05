@@ -1,0 +1,8 @@
+document: rfc-7987
+kind: design-rationale
+summary: The MaxAge floor mechanism may result in retaining an LSP longer than its original lifetime, but this has no negative side effects beyond additional LSPDB memory usage. When the originator becomes unreachable (the condition under which delayed purging occurs), ISO10589 already specifies that unreachable-node LSPs are not used for routing, so stale LSP retention does not impact forwarding correctness.
+section: "3.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

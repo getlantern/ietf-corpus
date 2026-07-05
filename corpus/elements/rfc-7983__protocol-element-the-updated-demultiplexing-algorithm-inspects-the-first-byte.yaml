@@ -1,0 +1,10 @@
+document: rfc-7983
+kind: protocol-element
+summary: 'The updated demultiplexing algorithm inspects the first byte of every received packet: [0..3] → STUN, [16..19] → ZRTP, [20..63] → DTLS, [64..79] → TURN Channel, [128..191] → RTP/RTCP. Packets outside these ranges are dropped.'
+section: "7"
+topics:
+    - rtp
+    - webrtc
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

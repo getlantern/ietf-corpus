@@ -1,0 +1,6 @@
+document: rfc-7986
+kind: design-rationale
+summary: All new properties not defined in RFC 5545 should always include a VALUE parameter when the type is other than TEXT. This avoids parser ambiguity where a generator unaware of the property's default type might incorrectly apply backslash escaping (e.g., treating a URI with a comma as TEXT).
+section: "3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

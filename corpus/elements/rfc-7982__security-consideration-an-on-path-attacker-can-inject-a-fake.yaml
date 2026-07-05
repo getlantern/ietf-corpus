@@ -1,0 +1,9 @@
+document: rfc-7982
+kind: security-consideration
+summary: 'An on-path attacker can inject a fake response or modify TRANSACTION_TRANSMIT_COUNTER values to mislead client and server. This attack is mitigated by STUN authentication: ICE uses STUN short-term credentials, and TURN Allocate requests should use the STUN long-term credential mechanism, RFC 7635 third-party authorization, or a TLS/DTLS connection.'
+section: "5"
+topics:
+    - security
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

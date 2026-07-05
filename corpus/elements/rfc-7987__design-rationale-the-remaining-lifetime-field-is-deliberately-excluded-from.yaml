@@ -1,0 +1,9 @@
+document: rfc-7987
+kind: design-rationale
+summary: The Remaining Lifetime field is deliberately excluded from the LSP checksum calculation (ISO10589) and from cryptographic authentication hashes (RFC 5304, RFC 5310), because it must be decremented by all intermediate systems. This exclusion makes corruption of the Remaining Lifetime field undetectable.
+section: "1"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

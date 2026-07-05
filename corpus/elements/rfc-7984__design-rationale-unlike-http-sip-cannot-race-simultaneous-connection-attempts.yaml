@@ -1,0 +1,10 @@
+document: rfc-7984
+kind: design-rationale
+summary: Unlike HTTP, SIP cannot 'race' simultaneous connection attempts across IPv4 and IPv6 without risk of duplicate requests propagating through the SIP network, because a sender cannot test a route in a non-state-changing way. This prevents direct application of the Happy Eyeballs algorithm to SIP.
+section: "3.2"
+topics:
+    - sip
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

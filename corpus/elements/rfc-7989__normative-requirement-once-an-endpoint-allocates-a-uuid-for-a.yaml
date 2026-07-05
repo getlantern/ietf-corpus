@@ -1,0 +1,10 @@
+document: rfc-7989
+kind: normative-requirement
+summary: Once an endpoint allocates a UUID for a session, it MUST NOT change that UUID for the duration of the session, including when communication attempts are retried (4xx/timeout), the session is redirected (3xx), transferred via REFER, or an INVITE with Replaces is used.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

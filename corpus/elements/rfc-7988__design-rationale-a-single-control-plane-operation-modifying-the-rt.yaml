@@ -1,0 +1,9 @@
+document: rfc-7988
+kind: design-rationale
+summary: A single control-plane operation (modifying the RT and PTA of the Leaf A-D route) simultaneously joins the new UMH and prunes the old one, so a child cannot stagger these events. The parent-continues and switch-parents-delay timers are therefore required to implement 'make before break' UMH switching at the data plane.
+section: "10"
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

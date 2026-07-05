@@ -1,0 +1,9 @@
+document: rfc-7986
+kind: security-consideration
+summary: A short REFRESH-INTERVAL value could be used to cause rapid polling, leading to denial-of-service attacks against servers. Clients MUST throttle requests; if REFRESH-INTERVAL is shorter than once per day, clients SHOULD warn the user and allow them to override with a longer value.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

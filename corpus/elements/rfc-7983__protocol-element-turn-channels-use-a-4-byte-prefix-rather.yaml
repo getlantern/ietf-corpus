@@ -1,0 +1,9 @@
+document: rfc-7983
+kind: protocol-element
+summary: TURN channels use a 4-byte prefix rather than the standard 36-byte STUN overhead (per RFC 5766, Section 2.5). Their first byte falls in [64..79] under the updated multiplexing scheme, restricting the number of usable TURN channel bindings when combined with RFC 5764 demultiplexing.
+section: "6"
+topics:
+    - nat
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

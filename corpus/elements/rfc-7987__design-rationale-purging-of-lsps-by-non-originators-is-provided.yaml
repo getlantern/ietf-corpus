@@ -1,0 +1,8 @@
+document: rfc-7987
+kind: design-rationale
+summary: 'Purging of LSPs by non-originators is provided as an optimization to remove stale entries from the LSPDB, not as a correctness requirement. ISO10589 specifies two legitimate non-originator purge cases: LSP aging out (implying originator unreachable), and DIS change on a LAN (stale pseudonode LSPs). Neither is required for protocol correctness.'
+section: "2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

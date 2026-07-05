@@ -1,0 +1,10 @@
+document: rfc-7989
+kind: normative-requirement
+summary: An endpoint that receives a Session-ID with a non-nil 'local-uuid' MUST treat that value as the peer's UUID and include it as the 'remote' parameter in subsequent messages. If a message is received without a Session-ID header, the endpoint MUST NOT change its internally maintained remote-uuid value.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

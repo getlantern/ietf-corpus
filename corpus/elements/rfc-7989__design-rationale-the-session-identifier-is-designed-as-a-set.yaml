@@ -1,0 +1,9 @@
+document: rfc-7989
+kind: design-rationale
+summary: 'The session identifier is designed as a set of two UUIDs (one per endpoint) rather than a single value to handle forking and conferencing: in a fork, each answering UA contributes a distinct UUID yielding {A,B1}, {A,B2}, etc.; in a conference, the focus reuses its UUID across all participants to enable session correlation.'
+section: "4.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

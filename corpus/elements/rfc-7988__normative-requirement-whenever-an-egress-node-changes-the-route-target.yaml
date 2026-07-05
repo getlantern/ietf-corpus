@@ -1,0 +1,11 @@
+document: rfc-7988
+kind: normative-requirement
+summary: Whenever an egress node changes the Route Target of a Leaf A-D route (i.e., changes its parent node on a segmented P-tunnel), it MUST also change the MPLS label specified in the Leaf A-D route's PTA. This allows the egress node to distinguish packets from the old parent versus the new parent during the changeover.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - multicast
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

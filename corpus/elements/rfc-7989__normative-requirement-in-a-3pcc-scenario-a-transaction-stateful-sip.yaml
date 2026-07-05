@@ -1,0 +1,10 @@
+document: rfc-7989
+kind: normative-requirement
+summary: In a 3PCC scenario, a transaction-stateful SIP server MUST replace its own temporary UUID 'X' with a nil UUID when forwarding the INVITE to the second UAS, so that the second UAS sees the originating endpoint's UUID as the remote peer rather than the intermediary's fabricated UUID.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
