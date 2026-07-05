@@ -1,0 +1,10 @@
+document: rfc-8037
+kind: security-consideration
+summary: Key material must not be separated from information about which key subtype it is for. When using keys, implementations must check that the algorithm is compatible with the key subtype to prevent attacks via algorithm mixing. Mixing signature and MAC algorithms is particularly dangerous.
+section: "4"
+topics:
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

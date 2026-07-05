@@ -1,0 +1,10 @@
+document: rfc-8045
+kind: security-consideration
+summary: All known RADIUS vulnerabilities apply to this specification. When RADIUS packets are sent in the clear, an attacker can manipulate per-user port limits via IP-Port-Limit-Info, exhaust port quotas by injecting IP-Port-Forwarding-Map entries, redirect traffic by altering forwarding maps, or discover user address/port assignments from IP-Port-Range. IPsec or TLS (RFC 6614) is recommended to secure the RADIUS client-server channel.
+section: "6"
+topics:
+    - security
+    - radius
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

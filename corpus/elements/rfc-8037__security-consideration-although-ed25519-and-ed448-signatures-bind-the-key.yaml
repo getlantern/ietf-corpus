@@ -1,0 +1,10 @@
+document: rfc-8037
+kind: security-consideration
+summary: Although Ed25519 and Ed448 signatures bind the key used for signing, implementations should not assume this property holds for other signature algorithms. If key-binding is desired, include the signing key inside the JWS protected header or the data to sign.
+section: "4"
+topics:
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

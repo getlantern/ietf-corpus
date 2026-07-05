@@ -1,0 +1,9 @@
+document: rfc-8030
+kind: normative-requirement
+summary: A push service MAY retain a push message for a shorter duration than requested, indicated by returning a TTL header field in its response with the actual TTL, which MUST be less than or equal to the value provided by the application server. Once the TTL period elapses, the push service MUST NOT attempt delivery.
+section: "5.2"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

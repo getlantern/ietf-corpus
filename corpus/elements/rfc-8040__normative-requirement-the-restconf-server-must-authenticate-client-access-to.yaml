@@ -1,0 +1,11 @@
+document: rfc-8040
+kind: normative-requirement
+summary: The RESTCONF server MUST authenticate client access to any protected resource. If the client is not authenticated, the server SHOULD return '401 Unauthorized'. TLS client certificates are the preferred authentication mechanism; HTTP authentication schemes MAY be used if certificate-based authentication is not feasible.
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - security
+    - tls
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

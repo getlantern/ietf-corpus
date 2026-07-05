@@ -1,0 +1,9 @@
+document: rfc-8044
+kind: design-rationale
+summary: The 'ipv4prefix' definition intentionally differs from RFC 6572 by aligning the Reserved and Prefix-Length fields on octet boundaries (each one full octet), eliminating the need for bit masking. The result is backward-compatible because RFC 6572 required Reserved to be zero.
+section: "3.11"
+topics:
+    - radius
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

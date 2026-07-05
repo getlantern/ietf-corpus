@@ -1,0 +1,10 @@
+document: rfc-8037
+kind: security-consideration
+summary: The JWA ECDH-ES KDF construction does not mix keys into the final shared secret. Problems require either a maliciously chosen receiver public key or a malicious sender; in either case all security evaporates. The nominal security strengths of X25519 and X448 are ~126 and ~223 bits respectively.
+section: "4"
+topics:
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

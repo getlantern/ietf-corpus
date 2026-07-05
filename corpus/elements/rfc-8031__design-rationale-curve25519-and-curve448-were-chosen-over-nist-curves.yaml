@@ -1,0 +1,10 @@
+document: rfc-8031
+kind: design-rationale
+summary: Curve25519 and Curve448 were chosen over NIST curves because they allow faster implementations while being much easier to implement in constant time, making them resilient to time-based side-channel attacks. The NIST curves' generation seeds have no explanation, whereas Curve25519/448 generation is fully documented and independently verifiable.
+section: "1"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

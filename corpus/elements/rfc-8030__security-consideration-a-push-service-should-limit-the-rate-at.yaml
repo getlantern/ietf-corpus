@@ -1,0 +1,9 @@
+document: rfc-8030
+kind: security-consideration
+summary: A push service SHOULD limit the rate at which push messages are sent to individual user agents to mitigate denial-of-service attacks. A push service MAY return 429 (Too Many Requests) with a Retry-After header when rate limits are exceeded.
+section: "8.4"
+topics:
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

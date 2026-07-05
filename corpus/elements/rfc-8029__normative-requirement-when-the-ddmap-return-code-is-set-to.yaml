@@ -1,0 +1,9 @@
+document: rfc-8029
+kind: normative-requirement
+summary: When the DDMAP Return Code is set to a non-zero value in the DDMAP TLV by the receiver, the receiver MUST also set the echo reply header Return Code to 14 ('See DDMAP TLV for Return Code and Return Subcode'). Return Code 14 MUST be used when there are multiple downstreams (e.g., P2MP or ECMP) requiring per-downstream Return Codes.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

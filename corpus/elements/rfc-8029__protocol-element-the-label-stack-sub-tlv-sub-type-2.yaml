@@ -1,0 +1,8 @@
+document: rfc-8029
+kind: protocol-element
+summary: 'The Label Stack sub-TLV (sub-type 2 within DDMAP) lists downstream label/protocol pairs for a given interface. Each entry is 4 octets: 24-bit downstream label (20-bit value + 3-bit TC + 1-bit S) and 8-bit Protocol (0=Unknown, 1=Static, 2=BGP, 3=LDP, 4=RSVP-TE). Implicit Null labels are explicitly included. This sub-TLV MUST be included when DDMAP appears in an echo reply.'
+section: 3.4.1.2
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

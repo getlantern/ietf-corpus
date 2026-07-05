@@ -1,0 +1,11 @@
+document: rfc-8035
+kind: normative-requirement
+summary: If the offer does not contain the 'a=rtcp-mux' attribute, the answerer MUST NOT include an 'a=rtcp-mux' attribute in the answer, and MUST NOT multiplex RTP and RTCP packets on a single port. This is the key clarification added by RFC 8035 over RFC 5761.
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - rtp
+    - realtime
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

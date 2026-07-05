@@ -1,0 +1,9 @@
+document: rfc-8029
+kind: design-rationale
+summary: Private address space was rejected as a destination for MPLS echo requests because IPv4 VPNs (the primary MPLS service) commonly use private addresses, creating ambiguity. IPv4 link-local addresses were also rejected because a broken LSP could deliver a diagnostic packet to a router that had a link-local address assigned to the receiving interface, and older routers may incorrectly forward link-local-addressed packets toward the default route.
+section: "2.1"
+topics:
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

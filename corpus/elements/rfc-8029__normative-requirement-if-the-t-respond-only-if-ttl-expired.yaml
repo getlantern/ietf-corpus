@@ -1,0 +1,9 @@
+document: rfc-8029
+kind: normative-requirement
+summary: If the T (Respond Only If TTL Expired) flag is set in an incoming echo request and the incoming MPLS label TTL is greater than 1, the receiving node MUST drop the echo request and MUST NOT send any echo reply. The T flag MUST NOT be set in echo reply packets; if set in a reply, it MUST be ignored.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

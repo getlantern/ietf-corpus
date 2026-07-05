@@ -1,0 +1,9 @@
+document: rfc-8045
+kind: interoperability-note
+summary: All numeric TLV value fields (IP-Port-Type, IP-Port-Limit, IP-Port-Int-Port, IP-Port-Ext-Port, IP-Port-Alloc, IP-Port-Range-Start, IP-Port-Range-End) are encoded in 32 bits per RFC 6158 Appendix A.2.1 even when the underlying IPFIX data type is shorter (unsigned8 or unsigned16); unused high-order bits MUST be set to zero.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

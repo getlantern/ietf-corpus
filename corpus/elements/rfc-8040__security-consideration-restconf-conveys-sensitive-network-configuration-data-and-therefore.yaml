@@ -1,0 +1,11 @@
+document: rfc-8040
+kind: security-consideration
+summary: RESTCONF conveys sensitive network configuration data and therefore mandates TLS for all connections. Servers must authenticate all clients accessing protected resources, preferably via TLS client certificates. NACM (RFC 6536) is used for authorization, with RESTCONF operations mapped to equivalent NETCONF operations for access control rule application.
+section: "12"
+topics:
+    - security
+    - tls
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

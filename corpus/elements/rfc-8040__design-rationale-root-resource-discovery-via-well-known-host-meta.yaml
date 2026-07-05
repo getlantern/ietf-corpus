@@ -1,0 +1,9 @@
+document: rfc-8040
+kind: design-rationale
+summary: Root resource discovery via '/.well-known/host-meta' was chosen so deployments can place the RESTCONF API at any path, rather than mandating a fixed '/restconf' root. This also means a single host:port endpoint can only support one RESTCONF server, since discovery returns exactly one 'restconf' link relation.
+section: "3.1"
+topics:
+    - http
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

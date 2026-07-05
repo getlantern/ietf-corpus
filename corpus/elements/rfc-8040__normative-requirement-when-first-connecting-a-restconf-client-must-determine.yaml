@@ -1,0 +1,11 @@
+document: rfc-8040
+kind: normative-requirement
+summary: When first connecting, a RESTCONF client MUST determine the root of the RESTCONF API by retrieving '/.well-known/host-meta' (RFC 6415) and using the Link element with the 'restconf' relation. There MUST be exactly one 'restconf' link relation returned.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - http
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

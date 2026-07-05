@@ -1,0 +1,9 @@
+document: rfc-8029
+kind: security-consideration
+summary: The use of 127/8 as the MPLS echo request destination ensures that if a diagnostic packet escapes a broken LSP and reaches a host, the host discards it silently per RFC 1122, and routers will not IP-forward it per RFC 1812; this limits the blast radius of misdirected OAM traffic and prevents diagnostic packets from being delivered to end users of MPLS services.
+section: "2.1"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

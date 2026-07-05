@@ -1,0 +1,10 @@
+document: rfc-8035
+kind: design-rationale
+summary: RFC 5761 was ambiguous about whether an answerer could include 'a=rtcp-mux' in an answer even if the offer did not contain the attribute. RFC 8035 clarifies that the answerer may only include 'a=rtcp-mux' if the offer also contained it, preventing one-sided multiplexing configurations.
+section: "1"
+topics:
+    - rtp
+    - realtime
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

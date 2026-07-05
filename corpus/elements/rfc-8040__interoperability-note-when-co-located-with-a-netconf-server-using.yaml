@@ -1,0 +1,9 @@
+document: rfc-8040
+kind: interoperability-note
+summary: When co-located with a NETCONF server using :candidate, RESTCONF edits are performed in the candidate datastore and MUST be automatically committed to running immediately after each successful edit. If a confirmed commit with a 'persist-id' is in progress, the RESTCONF edit MUST fail with '409 Conflict' and error-tag 'in-use'.
+section: "1.4"
+topics:
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

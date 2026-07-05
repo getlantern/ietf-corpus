@@ -1,0 +1,8 @@
+document: rfc-8029
+kind: design-rationale
+summary: The Nil FEC sub-TLV (sub-type 16) was introduced to handle labels from the reserved range (e.g., Router Alert, Explicit Null) added to the label stack for diagnostic purposes such as influencing load-balancing. Since these labels have no explicit FEC, the Nil FEC placeholder allows proper validation of the full label stack.
+section: 3.2.17
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

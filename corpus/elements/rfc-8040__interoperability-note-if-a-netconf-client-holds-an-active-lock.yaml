@@ -1,0 +1,9 @@
+document: rfc-8040
+kind: interoperability-note
+summary: If a NETCONF client holds an active lock on a datastore that a RESTCONF operation would modify, the RESTCONF edit MUST fail with '409 Conflict' and error-tag 'in-use'. RESTCONF cannot acquire or release NETCONF locks.
+section: "1.4"
+topics:
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8029
+kind: normative-requirement
+summary: 'TLV types with the high-order bit = 0 (types < 32768) are mandatory: an implementation MUST either support them or return Return Code 2 (''One or more of the TLVs was not understood''). TLV types >= 32768 (high-order bit = 1) are optional and SHOULD be ignored if not understood.'
+section: "3"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

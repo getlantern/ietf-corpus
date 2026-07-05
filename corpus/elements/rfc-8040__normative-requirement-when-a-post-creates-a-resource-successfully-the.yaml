@@ -1,0 +1,11 @@
+document: rfc-8040
+kind: normative-requirement
+summary: When a POST creates a resource successfully, the server MUST return '201 Created' with no response body and MUST include a 'Location' header identifying the created child resource. If the resource already exists, the server MUST return '409 Conflict' with error-tag 'resource-denied'.
+section: 4.4.1
+rfc2119_level: MUST
+topics:
+    - http
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

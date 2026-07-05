@@ -1,0 +1,9 @@
+document: rfc-8029
+kind: design-rationale
+summary: The 127/8 address range was chosen for MPLS echo request destination addresses because RFC 1122 requires hosts to discard such packets (preventing unintended delivery), RFC 1812 prohibits routers from IP-forwarding them (preventing escaped diagnostic packets from traversing the network), and the 16M address space provides sufficient diversity to exercise all ECMP paths via varied IP destination addresses.
+section: "2.1"
+topics:
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
