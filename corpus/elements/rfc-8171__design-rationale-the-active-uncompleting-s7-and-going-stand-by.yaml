@@ -1,0 +1,8 @@
+document: rfc-8171
+kind: design-rationale
+summary: The Active Uncompleting (S7) and Going Stand-By Was Complete (S6) transition states exist to ensure that the information indicating a directory will no longer be complete has enough time (the Time Condition) to propagate to all edge TRILL switches before the server stops advertising updates. Without these states, a rapid sequence of 'incomplete' configuration followed by Stand-By Condition could leave switches with stale completeness assumptions.
+section: 2.3.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

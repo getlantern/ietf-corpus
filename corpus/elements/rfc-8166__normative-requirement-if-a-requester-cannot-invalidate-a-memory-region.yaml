@@ -1,0 +1,9 @@
+document: rfc-8166
+kind: normative-requirement
+summary: If a Requester cannot invalidate a memory region due to an unrecoverable error after receiving a reply, it MUST close the connection to prevent Responder access to that memory. Similarly, a Responder unable to send an RPC Reply or error message MUST close the connection to signal reply loss.
+section: 4.5.4
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

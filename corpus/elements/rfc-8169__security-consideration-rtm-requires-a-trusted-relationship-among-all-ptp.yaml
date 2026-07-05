@@ -1,0 +1,9 @@
+document: rfc-8169
+kind: security-consideration
+summary: RTM requires a trusted relationship among all PTP-aware nodes on the path, since intermediate nodes must modify PTP message content (updating the Scratch Pad / correctionField). Those message portions cannot be protected by confidentiality or integrity mechanisms with current practical methods, as intermediate modifications must remain detectable and unauthenticated.
+section: "8"
+topics:
+    - security
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

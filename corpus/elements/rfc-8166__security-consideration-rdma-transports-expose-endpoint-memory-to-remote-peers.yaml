@@ -1,0 +1,8 @@
+document: rfc-8166
+kind: security-consideration
+summary: RDMA transports expose endpoint memory to remote peers via steering tags (STags). A Requester must ensure that memory regions associated with each RPC transaction are protected from Responder access before allowing upper-layer access, and must not access those regions while the Responder retains access rights—including for canceled RPCs.
+section: "8.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

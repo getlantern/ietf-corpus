@@ -1,0 +1,9 @@
+document: rfc-8169
+kind: normative-requirement
+summary: Each RTM-capable node MUST examine the Resv message for the RTM_SET Attribute Flag. If more than one RTM_SET TLV is found, LSP setup MUST fail with ResvErr Error Code 41 (Duplicate TLV). If no RTM_SET TLV is found, it MUST fail with Error Code 43 (RTM_SET TLV Absent).
+section: 4.4.1
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

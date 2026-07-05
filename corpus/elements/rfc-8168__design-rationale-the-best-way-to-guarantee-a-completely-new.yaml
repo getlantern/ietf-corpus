@@ -1,0 +1,9 @@
+document: rfc-8168
+kind: design-rationale
+summary: The best way to guarantee a completely new delegated prefix is to use a new IAID in the IA_PD, but this requires persistent storage across reboots; without it, the device would revert to the original IAID after rebooting, so the prefix-length hint mechanism is used instead.
+section: "3.1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

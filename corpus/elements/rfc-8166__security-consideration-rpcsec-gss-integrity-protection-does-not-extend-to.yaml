@@ -1,0 +1,8 @@
+document: rfc-8166
+kind: security-consideration
+summary: RPCSEC_GSS integrity protection does not extend to data transferred via RDMA Read and Write operations because such data bypasses the normal message path. Implementations requiring end-to-end integrity over RDMA chunks must employ additional protection mechanisms at the ULP level.
+section: "8.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

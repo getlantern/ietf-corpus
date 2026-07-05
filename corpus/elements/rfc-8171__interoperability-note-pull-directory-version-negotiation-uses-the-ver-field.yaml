@@ -1,0 +1,9 @@
+document: rfc-8171
+kind: interoperability-note
+summary: Pull Directory version negotiation uses the Ver field in paired messages. If a responder does not understand the version in a request, it MUST send a 'Version not understood' error correctly formatted for that version. Consequently, all implementations supporting any version X MUST be able to send a Version not understood error formatted for all lower versions down to version 0.
+section: 3.1.1
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

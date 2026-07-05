@@ -1,0 +1,7 @@
+document: rfc-8166
+kind: normative-requirement
+summary: If an incoming message is shorter than the 28-byte minimal RPC-over-RDMA header, the receiver MUST silently discard it without parsing. If other header errors are detected in an RPC Call, the Responder MUST send an RDMA_ERROR reply; errors in an RPC Reply MUST be silently discarded by the Requester.
+section: "4.5"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

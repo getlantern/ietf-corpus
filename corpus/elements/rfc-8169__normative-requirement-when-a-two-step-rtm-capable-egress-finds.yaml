@@ -1,0 +1,9 @@
+document: rfc-8169
+kind: normative-requirement
+summary: When a two-step RTM-capable egress finds the S bit clear, it MUST set the S bit and create a follow-up PTP Type RTM message. If S is already set, it MUST wait for the matching follow-up RTM message with matching PTP type, Port ID, and Sequence ID; the wait period MUST be reasonably bounded.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

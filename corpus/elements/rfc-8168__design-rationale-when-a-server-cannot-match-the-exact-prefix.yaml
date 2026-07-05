@@ -1,0 +1,9 @@
+document: rfc-8168
+kind: design-rationale
+summary: When a server cannot match the exact prefix-length hint, it should assign the next shorter (not longer) length closest to the hint. This is because a client such as one needing a /56 to split across interfaces may be completely non-functional if given a longer prefix like /64, making correctness of direction critical.
+section: "3.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

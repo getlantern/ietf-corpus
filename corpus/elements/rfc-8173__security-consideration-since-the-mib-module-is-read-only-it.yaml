@@ -1,0 +1,10 @@
+document: rfc-8173
+kind: security-consideration
+summary: Since the MIB module is read-only, it presents lower risk than a writable MIB; however, network management access must still be protected. SNMP versions without message integrity (SNMPv1, SNMPv2c) are not recommended; SNMPv3 with authentication and privacy (authPriv) should be used to prevent eavesdropping and tampering with management traffic for PTP monitoring data.
+section: "5"
+topics:
+    - snmp
+    - security
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

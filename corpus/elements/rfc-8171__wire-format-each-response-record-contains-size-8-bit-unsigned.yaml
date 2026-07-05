@@ -1,0 +1,8 @@
+document: rfc-8171
+kind: wire-format
+summary: 'Each RESPONSE Record contains: SIZE (8-bit unsigned, excluding SIZE byte and preceding byte), OV overflow flag (1 bit), RESV (3 bits, MUST be zero), Index (4 bits, identifying which QUERY Record this responds to), Lifetime (16-bit, units of 100 ms; 0 = do not cache; 0xFFFF = keep until server unreachable), and variable-length Response Data formatted as the value part of an Interface Addresses APPsub-TLV.'
+section: 3.2.2.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

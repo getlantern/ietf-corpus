@@ -1,0 +1,8 @@
+document: rfc-8169
+kind: design-rationale
+summary: Ingress and egress timestamps should be captured as close to the physical layer as possible to avoid attributing queuing or processing jitter as propagation delay. A common free-running clock with ~4.6 ppm accuracy introduces only ~4.6 ns error per millisecond of residence time, which is acceptable for applications targeting hundreds-of-nanoseconds accuracy.
+section: "5"
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

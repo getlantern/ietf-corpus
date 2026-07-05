@@ -1,0 +1,8 @@
+document: rfc-8171
+kind: wire-format
+summary: 'Each QUERY Record in a Pull Directory Query Message begins with a 16-bit word containing: SIZE (8-bit unsigned byte count excluding SIZE and following byte), FR flag (Flood Record, 1 bit), RESV (3 bits, MUST be zero), and QTYPE (4 bits). For QTYPE=1 (address query), a 16-bit AFN and variable-length Query Address follow; for QTYPE=2 or 5 (frame query), a variable-length Query Frame follows.'
+section: 3.2.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

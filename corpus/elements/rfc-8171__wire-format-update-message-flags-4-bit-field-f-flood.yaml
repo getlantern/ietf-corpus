@@ -1,0 +1,8 @@
+document: rfc-8171
+kind: wire-format
+summary: 'Update Message Flags (4-bit field): F (Flood, 1 = multicast to All-Egress-RBridges), P (Positive, 1 = positive cache update), N (Negative, 1 = negative cache update), R (Reserved, MUST be zero). For Methods 2 and 3, an Update Message MUST have exactly one of P or N set; if both are set, the message MUST be ignored (valid only for Method 1 all-addresses flush).'
+section: 3.3.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

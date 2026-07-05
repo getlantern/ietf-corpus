@@ -1,0 +1,6 @@
+document: rfc-8166
+kind: design-rationale
+summary: An Offset field is included in every RDMA segment to support pre-registration and region-based memory registration strategies. Without this field, implementations would be forced to register individual memory regions on each RPC, which is expensive on RDMA transports that lack zero-based offset schemes.
+section: 4.4.3
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

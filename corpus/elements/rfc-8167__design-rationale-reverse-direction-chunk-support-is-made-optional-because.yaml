@@ -1,0 +1,6 @@
+document: rfc-8167
+kind: design-rationale
+summary: Reverse-direction chunk support is made optional because some ULPs have no DDP-eligible data items or can restrict message sizes natively, and omitting chunk support avoids the added complexity of performing RDMA Reads and Writes in the reverse direction.
+section: "5.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
