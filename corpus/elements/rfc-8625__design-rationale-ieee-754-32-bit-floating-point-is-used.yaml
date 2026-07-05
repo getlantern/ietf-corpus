@@ -1,0 +1,9 @@
+document: rfc-8625
+kind: design-rationale
+summary: IEEE 754 32-bit floating-point is used for the Availability field to align with RFC 8330. While floating-point introduces precision errors above 0.999999, this is acceptable because 0.99999 (five nines, ~5 minutes outage per year) is the practical maximum in telecom networks.
+section: "3.1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

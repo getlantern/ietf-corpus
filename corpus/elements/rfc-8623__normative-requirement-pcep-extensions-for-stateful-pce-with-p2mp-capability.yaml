@@ -1,0 +1,10 @@
+document: rfc-8623
+kind: normative-requirement
+summary: PCEP extensions for stateful PCE with P2MP capability MUST NOT be used if the PCE has not advertised its stateful capability with P2MP. If a PCC receives a PCUpd without having advertised capability, it SHOULD generate a PCErr with error-type 19 and error-value 12 and terminate the session.
+section: "9"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

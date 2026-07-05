@@ -1,0 +1,9 @@
+document: rfc-8624
+kind: design-rationale
+summary: Since using an unknown DNSKEY algorithm causes a zone to be treated as insecure (equivalent to unsigned), algorithms downgraded to NOT RECOMMENDED or lower should not be used by authoritative nameservers and DNSSEC signers for new DNSKEYs, allowing deprecated algorithms to gradually disappear.
+section: "1.2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

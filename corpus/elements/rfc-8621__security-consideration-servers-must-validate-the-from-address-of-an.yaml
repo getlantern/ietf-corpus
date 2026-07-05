@@ -1,0 +1,9 @@
+document: rfc-8621
+kind: security-consideration
+summary: Servers must validate the 'from' address of an EmailSubmission against identities the user is permitted to send as, preventing email address spoofing. Unauthorized MAIL FROM addresses should yield 'forbiddenMailFrom'; unauthorized From header addresses should yield 'forbiddenFrom'.
+section: "9.4"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

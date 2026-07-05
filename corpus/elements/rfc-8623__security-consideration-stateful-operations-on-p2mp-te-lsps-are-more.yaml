@@ -1,0 +1,10 @@
+document: rfc-8623
+kind: security-consideration
+summary: Stateful operations on P2MP TE LSPs are more CPU-intensive and bandwidth-consuming than P2P TE LSPs. A rogue PCC requesting unauthorized stateful PCE operations could mount a DoS attack against a PCE, disrupting the network. An attacker may also flood a PCC with PCUpd messages by spoofing messages or compromising the PCE itself. It is RECOMMENDED that PCEP extensions only be activated on authenticated and encrypted sessions using TLS (RFC 8253).
+section: "12"
+topics:
+    - security
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

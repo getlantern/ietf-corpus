@@ -1,0 +1,11 @@
+document: rfc-8622
+kind: interoperability-note
+summary: Applications sending LE-marked flows must tolerate short or very long interruptions due to starvation during severe congestion. When LE traffic is mapped to the default PHB in domains that do not support LE, it competes with BE traffic; in such cases applications SHOULD additionally use a lower-than-BE transport protocol such as LEDBAT (RFC 6817) to enforce lower-than-BE precedence.
+section: "3"
+rfc2119_level: SHOULD
+topics:
+    - diffserv
+    - qos
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8628
+kind: state-machine
+summary: 'The device polling state machine has the following outcomes at the token endpoint: success (access token issued), ''authorization_pending'' (continue polling, respecting interval), ''slow_down'' (increase interval by 5 seconds and continue polling), ''access_denied'' (stop, user denied), ''expired_token'' (stop, device_code expired). On any other error, the client MUST stop polling.'
+section: "3.5"
+topics:
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

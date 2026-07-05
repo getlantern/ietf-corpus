@@ -1,0 +1,9 @@
+document: rfc-8623
+kind: design-rationale
+summary: Stateful PCE significantly reduces message size for P2MP operations by using PLSP-ID to reference previously exchanged LSP information. For a stateless PCE, modifying an existing P2MP tree requires sending all leaves and full path information, whereas a stateful PCE only needs to encode the modifications (new or removed leaf nodes).
+section: "3.1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

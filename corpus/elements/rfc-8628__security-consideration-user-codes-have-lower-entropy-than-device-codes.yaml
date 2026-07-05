@@ -1,0 +1,9 @@
+document: rfc-8628
+kind: security-consideration
+summary: User codes have lower entropy than device codes due to usability constraints, making them susceptible to brute force. The server SHOULD rate-limit user code attempts; the user code SHOULD have enough entropy that, combined with rate-limiting and the code's finite lifetime, a brute-force attack becomes infeasible.
+section: "5.1"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

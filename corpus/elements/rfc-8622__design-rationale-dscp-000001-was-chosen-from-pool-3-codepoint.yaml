@@ -1,0 +1,9 @@
+document: rfc-8622
+kind: design-rationale
+summary: DSCP '000001' was chosen from Pool 3 (codepoint space xxxx01) rather than the Standards Action Pool 1 (xxxxx0), because some network domains set the former IP Precedence bits to zero, which could accidentally re-mark other standardized DSCPs to the LE PHB DSCP if it were taken from Pool 1. Measurements of observable DSCP re-marking behavior in the Internet informed this choice.
+section: "6"
+topics:
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

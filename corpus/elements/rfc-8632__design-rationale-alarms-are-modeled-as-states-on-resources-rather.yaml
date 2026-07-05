@@ -1,0 +1,8 @@
+document: rfc-8632
+kind: design-rationale
+summary: Alarms are modeled as states on resources rather than as discrete notifications, so that 'link-down' and 'link-up' notifications are treated as two events updating the same 'link-alarm' state. This eliminates ambiguity in alarm/clear correlation present in X.733 and 3GPP Alarm IRP.
+section: "3.1"
+topics:
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

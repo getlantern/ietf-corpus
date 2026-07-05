@@ -1,0 +1,10 @@
+document: rfc-8622
+kind: normative-requirement
+summary: '''DSCP bleaching'' (setting the DSCP to ''000000'', the default PHB) is NOT RECOMMENDED for LE-marked packets, as it may cause effects contrary to the original intent of protecting BE traffic from LE traffic. DS domains without LE support SHOULD map LE DSCP to the default PHB without re-marking to ''000000'' so that downstream domains can still treat packets as LE.'
+section: "8"
+rfc2119_level: RECOMMENDED
+topics:
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

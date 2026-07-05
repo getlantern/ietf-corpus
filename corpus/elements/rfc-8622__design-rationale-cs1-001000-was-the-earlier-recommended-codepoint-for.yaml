@@ -1,0 +1,9 @@
+document: rfc-8622
+kind: design-rationale
+summary: 'CS1 (''001000'') was the earlier recommended codepoint for LE/Low-Priority Data traffic (per RFC 3662 and RFC 4594), but this is problematic: CS1 was defined in RFC 2474 to have higher precedence than CS0 (the default PHB), so Diffserv domains implementing CS1 per RFC 2474 cause a priority inversion that forwards LE packets with higher precedence than BE packets — the opposite of the intended behavior.'
+section: "6"
+topics:
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
