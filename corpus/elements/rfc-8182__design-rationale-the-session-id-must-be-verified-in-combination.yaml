@@ -1,0 +1,9 @@
+document: rfc-8182
+kind: design-rationale
+summary: The session_id must be verified in combination with the Update Notification File's URL — not alone — because a malicious server could replay a valid session_id from a different Repository Server. Using both the UUID and the URL together as the unique session key closes this attack vector.
+section: 3.4.1
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

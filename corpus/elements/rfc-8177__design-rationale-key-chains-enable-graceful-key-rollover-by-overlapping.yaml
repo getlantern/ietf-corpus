@@ -1,0 +1,10 @@
+document: rfc-8177
+kind: design-rationale
+summary: Key chains enable graceful key rollover by overlapping send and accept lifetimes across multiple key entries. The sender uses the key with the most recent send lifetime; receivers accept all keys with a valid accept lifetime during the rollover window, avoiding traffic disruption.
+section: "2.2"
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8185
+kind: state-machine
+summary: 'The dual-homing PE forwarding state machine determines traffic forwarding based on three inputs: Service PW state (Active/Standby), AC state (Active/Standby), and DNI-PW state (Up/Down). Key transitions: Service PW Active + AC Active + DNI-PW Up → forward Service PW to AC; Service PW Active + AC Standby + DNI-PW Up → forward Service PW to DNI-PW; Service PW Standby + AC Active + DNI-PW Up → forward DNI-PW to AC; all Standby or DNI-PW Down with any Standby → drop all packets.'
+section: "4"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

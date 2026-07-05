@@ -1,0 +1,6 @@
+document: rfc-8178
+kind: interoperability-note
+summary: 'When a server supports a newer minor version but a client uses an older one, the server must emulate a server with a more limited XDR: unknown operations return NFS4ERR_OP_ILLEGAL (not NFS4ERR_NOTSUPP), unknown attributes return NFS4ERR_INVAL (not NFS4ERR_ATTRNOTSUPP), unknown switch cases return NFS4ERR_BADXDR (not NFS4ERR_UNION_NOTSUPP), and unknown flag bits return NFS4ERR_INVAL.'
+section: "8.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

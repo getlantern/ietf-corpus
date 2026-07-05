@@ -1,0 +1,9 @@
+document: rfc-8175
+kind: security-consideration
+summary: DLEP enforces its single-hop requirement via GTSM (RFC 5082) with TTL=255. In 'networked deployments' where router and modem are reachable from other network points, Layer 2 tunneling technology MUST be used to maintain the single-hop invariant. Without TLS, a rogue participant on the same segment could inject false link metrics or destination events, directly influencing routing decisions.
+section: "14"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

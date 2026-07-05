@@ -1,0 +1,6 @@
+document: rfc-8178
+kind: interoperability-note
+summary: 'A requester tests a responder''s knowledge of protocol elements via specific error responses: NFS4ERR_INVAL on GETATTR/SETATTR or flag bit use means the attribute or flag is unknown; NFS4ERR_OP_ILLEGAL or NFS4ERR_BADXDR on an operation means the operation is unknown; NFS4ERR_BADXDR on a switch arm means the switch case is unknown. Any other error (including NOTSUPP/ATTRNOTSUPP/UNION_NOTSUPP) indicates the element is known but unsupported.'
+section: 4.4.3
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

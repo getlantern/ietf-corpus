@@ -1,0 +1,9 @@
+document: rfc-8181
+kind: security-consideration
+summary: The SHA-256 hashes in <publish/> and <withdraw/> PDUs are not security-sensitive because those PDUs are protected by CMS signatures; the primary reason to change the digest algorithm would be to track a change in the RPKI manifest digest algorithm, which would require incrementing the protocol version.
+section: "5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

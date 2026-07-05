@@ -1,0 +1,9 @@
+document: rfc-8175
+kind: normative-requirement
+summary: 'DLEP enforces a per-destination transaction model: only one request per destination may be in progress at a time. If a participant receives a request for a destination with an outstanding request, it MUST terminate the session with status code 129 ''Unexpected Message''. There is no restriction on total concurrent transactions, provided each references a different destination.'
+section: "8"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

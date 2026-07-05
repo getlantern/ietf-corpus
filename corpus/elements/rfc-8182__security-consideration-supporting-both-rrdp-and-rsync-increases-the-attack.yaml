@@ -1,0 +1,9 @@
+document: rfc-8182
+kind: security-consideration
+summary: Supporting both RRDP and rsync increases the attack surface for denial-of-service by a malicious RPKI CA, since the CA can supply an effectively infinite series of URIs for Relying Parties to follow. The document recommends Relying Parties apply bounds on how much work they will perform; this attack requires the attacker to be a legitimate RPKI CA.
+section: "5"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

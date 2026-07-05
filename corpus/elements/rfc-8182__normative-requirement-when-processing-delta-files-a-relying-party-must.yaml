@@ -1,0 +1,10 @@
+document: rfc-8182
+kind: normative-requirement
+summary: When processing Delta Files, a Relying Party MUST verify the file's hash matches the hash listed in the Update Notification File, MUST verify the session_id matches, and MUST verify the serial is exactly one greater than the last processed serial; any mismatch requires falling back to the Snapshot File.
+section: 3.4.2
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

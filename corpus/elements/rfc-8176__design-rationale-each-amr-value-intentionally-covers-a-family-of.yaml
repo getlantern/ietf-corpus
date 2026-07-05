@@ -1,0 +1,10 @@
+document: rfc-8176
+kind: design-rationale
+summary: Each 'amr' value intentionally covers a family of closely related authentication methods rather than distinguishing every implementation variant. For example, 'otp' covers both HOTP and TOTP, and 'fpt' covers fingerprint matching regardless of algorithm or sensor model, because most relying parties only need to know which broad method was used.
+section: "1"
+topics:
+    - oauth
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

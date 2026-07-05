@@ -1,0 +1,9 @@
+document: rfc-8175
+kind: normative-requirement
+summary: If an unrecognized Message is received, the implementation MUST issue a Session Termination Message with status code 128 'Unknown Message'. If a Message contains unrecognized, invalid, or disallowed duplicate Data Items, the implementation MUST terminate the session with status code 130 'Invalid Data'.
+section: "12.1"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

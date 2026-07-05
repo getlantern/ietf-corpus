@@ -1,0 +1,6 @@
+document: rfc-8178
+kind: design-rationale
+summary: NFSv4 uses XDR extension rather than XDR replacement to implement version changes. In XDR extension, the set of valid messages in the extended definition is a superset of the base, each previously valid message retains the same structure/interpretation, and messages valid only in the extended definition must be recognizable as unknown extensions when decoded with the base definition.
+section: "4.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

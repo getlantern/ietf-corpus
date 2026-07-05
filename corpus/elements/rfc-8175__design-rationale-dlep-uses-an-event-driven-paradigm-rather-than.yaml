@@ -1,0 +1,8 @@
+document: rfc-8175
+kind: design-rationale
+summary: DLEP uses an event-driven paradigm rather than timer-based inference (as used by routing protocol hellos and dead-adjacency timers) because mobile wireless links acquire and lose neighbors without any change to router interface state. Explicit event signaling over a reliable local TCP session substantially shortens routing convergence time.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

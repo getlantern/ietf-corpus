@@ -1,0 +1,9 @@
+document: rfc-8175
+kind: normative-requirement
+summary: A DLEP participant receiving any Message (other than a Session Termination Message) that contains a Status Data Item with failure mode 'Terminate' (status code ≥ 100) MUST immediately issue a Session Termination Message echoing the received Status Data Item and transition to the Session Termination state.
+section: "12.2"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8182
+kind: design-rationale
+summary: RRDP was designed to replace rsync as the RPKI repository distribution mechanism because rsync requires significant per-connection CPU and memory on the server side, making central repositories vulnerable to denial-of-service attacks when thousands of Relying Parties connect. A secondary concern was the lack of supported rsync libraries, forcing all implementations to make system calls to an rsync binary.
+section: "1"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

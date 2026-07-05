@@ -1,0 +1,9 @@
+document: rfc-8175
+kind: normative-requirement
+summary: Periodic Heartbeat Messages MUST be exchanged during In-Session state. An implementation MUST allow a minimum of 2 heartbeat intervals to expire with no Messages from its peer before terminating the session with status code 132 'Timed Out'. Receipt of any valid DLEP Message MUST reset the heartbeat interval timer.
+section: 7.3.1
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

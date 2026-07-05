@@ -1,0 +1,9 @@
+document: rfc-8175
+kind: normative-requirement
+summary: Prior to exchanging Destination Up/Destination Announce messages for a destination, no Messages concerning that destination may be sent. An implementation receiving a Message with an undeclared destination MUST terminate the session with status code 131 'Invalid Destination'. The same applies after Destination Down exchange until a new Destination Up is issued.
+section: "12.1"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8183
+kind: design-rationale
+summary: The recommended BPKI integration approach is to cross-certify a received self-signed public key under one's own BPKI using BasicConstraints cA=TRUE, pathLenConstraint=0, which permits the cross-certified cert to issue EE certificates but not further CA certificates. This keeps the BPKI structure simple while allowing CMS message verification.
+section: "4"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

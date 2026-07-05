@@ -1,0 +1,9 @@
+document: rfc-8182
+kind: design-rationale
+summary: RRDP publishes repository changes as immutable Snapshot and Delta Files at unique URLs so that the server pre-calculates them once for all clients. This enables CDN or other caching infrastructure to serve most requests, drastically reducing load on the primary Repository Server.
+section: "1"
+topics:
+    - routing
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

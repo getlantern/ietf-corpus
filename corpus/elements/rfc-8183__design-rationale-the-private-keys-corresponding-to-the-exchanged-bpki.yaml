@@ -1,0 +1,10 @@
+document: rfc-8183
+kind: design-rationale
+summary: The private keys corresponding to the exchanged BPKI CA certificates are not used to sign CMS messages directly; instead those CA certificates issue BPKI EE certificates included in CMS wrappers. This separation allows the static self-signed CA certificates exchanged during setup to remain long-lived while EE certificates can be rotated.
+section: "4"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8175
+kind: normative-requirement
+summary: The router MUST send a Session Initialization Message as the first Message of the TCP session. If a modem receives any Message other than Session Initialization first, or fails to parse it, it MUST NOT send any Message, MUST terminate the TCP connection, and MUST transition to Session Reset state.
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8175
+kind: design-rationale
+summary: DLEP uses UDP multicast for peer discovery and TCP for all session messages. TCP was chosen because DLEP relies on guaranteed, ordered delivery of link-state events; losing a Destination Down notification, for example, could cause persistent routing black holes. UDP is used only for the initial single-hop discovery exchange, which falls outside the transaction model.
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

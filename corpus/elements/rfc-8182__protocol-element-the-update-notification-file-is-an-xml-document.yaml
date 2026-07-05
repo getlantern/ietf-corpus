@@ -1,0 +1,9 @@
+document: rfc-8182
+kind: protocol-element
+summary: The Update Notification File is an XML document with a root 'notification' element carrying a version (must be '1'), a session_id (version 4 UUID), and an unbounded unsigned serial number. It contains exactly one 'snapshot' child element (with uri and SHA-256 hash) and zero or more 'delta' child elements (each with serial, uri, and hash), forming a contiguous chain of serials up to the current one.
+section: 3.5.1
+topics:
+    - routing
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

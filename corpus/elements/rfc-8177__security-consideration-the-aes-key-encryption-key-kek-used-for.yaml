@@ -1,0 +1,10 @@
+document: rfc-8177
+kind: security-consideration
+summary: The AES key-encryption key (KEK) used for AES Key Wrap is not included in the YANG model and must be set or derived independently of key chain configuration. The hex-key-string feature is also required when AES key encryption is enabled, because encrypted keys contain non-ASCII characters.
+section: "5"
+topics:
+    - security
+    - crypto
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8182
+kind: security-consideration
+summary: Because RRDP treats an entire set of changes as one atomic delta, it may not be practical to begin processing any object in the delta until the full delta has been received. This increases RRDP's transactional correctness compared to rsync, which may deliver a partial set of updated objects.
+section: "5"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

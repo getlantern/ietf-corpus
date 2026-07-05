@@ -1,0 +1,10 @@
+document: rfc-8182
+kind: security-consideration
+summary: A MITM on the HTTPS channel cannot forge validly signed RPKI objects but can perform withhold or replay attacks, preventing a Relying Party from learning about repository changes. Therefore Relying Parties SHOULD perform TLS certificate and hostname validation per RFC 6125; however, since RPKI object security does not depend on channel security, Relying Parties MUST continue to retrieve data even if TLS validation fails.
+section: "4.3"
+topics:
+    - security
+    - tls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
