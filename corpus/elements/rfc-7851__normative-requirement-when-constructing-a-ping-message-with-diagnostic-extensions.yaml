@@ -1,0 +1,9 @@
+document: rfc-7851
+kind: normative-requirement
+summary: When constructing a Ping message with diagnostic extensions, the sender MUST create a MessageExtension with type 0x2 and critical set to FALSE. The extension_contents MUST be a DiagnosticsRequest structure. The message MUST NOT be sent to the broadcast NodeID.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

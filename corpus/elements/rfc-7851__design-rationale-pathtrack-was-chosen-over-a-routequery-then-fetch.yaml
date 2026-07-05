@@ -1,0 +1,8 @@
+document: rfc-7851
+kind: design-rationale
+summary: PathTrack was chosen over a RouteQuery-then-Fetch approach because in high-churn environments, the path can change between the two separate operations, making results inconsistent. A single message per step is more likely to traverse the same path and provide coherent diagnostics.
+section: "4.3"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

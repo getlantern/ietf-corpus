@@ -1,0 +1,12 @@
+document: rfc-7858
+kind: security-consideration
+summary: DNS over TLS does not resist traffic analysis or side-channel leaks. A well-positioned attacker may glean details from message timings and sizes. Clients and servers MAY use the EDNS(0) Padding Option (RFC 7830) to mitigate privacy leakage, though simple padding alone may not be sufficient against sophisticated classifiers.
+section: "8"
+topics:
+    - dns
+    - tls
+    - security
+    - privacy
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

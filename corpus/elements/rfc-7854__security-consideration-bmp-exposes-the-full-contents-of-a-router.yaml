@@ -1,0 +1,11 @@
+document: rfc-7854
+kind: security-consideration
+summary: BMP exposes the full contents of a router's BGP RIB and received messages, including routes in private contexts such as L3VPN. An attacker could infer the monitored router's import policy by comparing pre-policy routes exposed by BMP against post-policy routes exported in BGP. Implementations SHOULD require manual configuration of monitored and monitoring devices.
+section: "11"
+topics:
+    - bgp
+    - measurement
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

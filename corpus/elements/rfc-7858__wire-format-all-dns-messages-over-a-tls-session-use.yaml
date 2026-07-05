@@ -1,0 +1,10 @@
+document: rfc-7858
+kind: wire-format
+summary: All DNS messages over a TLS session use the two-octet length field from RFC 1035 Section 4.2.2, prepended to each DNS message, identical to the DNS-over-TCP framing. Implementations SHOULD pass the length field and message to the TCP layer together in a single write to encourage single-segment transmission.
+section: "3.3"
+topics:
+    - dns
+    - tls
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

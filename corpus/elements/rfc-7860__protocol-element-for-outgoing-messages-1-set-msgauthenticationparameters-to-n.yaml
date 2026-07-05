@@ -1,0 +1,10 @@
+document: rfc-7860
+kind: protocol-element
+summary: 'For outgoing messages: (1) set msgAuthenticationParameters to N zero octets, (2) compute HMAC over wholeMsg using authKey of M octets, (3) take first N octets as MAC, (4) replace msgAuthenticationParameters with the MAC, (5) return authenticatedWholeMsg with success.'
+section: 4.2.1
+topics:
+    - snmp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-7858
+kind: design-rationale
+summary: 'An earlier draft used a STARTTLS-like upgrade approach with a ''TLS OK'' EDNS(0) flag and a dummy STARTTLS query, allowing negotiation over port 53. This was abandoned because: (1) uncertainty about middlebox support for the EDNS(0) flag, (2) the TLS OK bit makes downgrade attacks easy and indistinguishable from broken middleboxes, and (3) the approach required an extra RTT for the dummy query. The well-known port approach was chosen for simplicity and security.'
+section: "7"
+topics:
+    - dns
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

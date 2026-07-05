@@ -1,0 +1,9 @@
+document: rfc-7851
+kind: normative-requirement
+summary: Each intermediate peer receiving a Ping with diagnostic extensions or a PathTrack request/response MUST check the expiration value and, if the message is expired, MUST generate a response with error code 0x17 (Error_Message_Expired) and discard the message.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

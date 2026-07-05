@@ -1,0 +1,9 @@
+document: rfc-7861
+kind: interoperability-note
+summary: When RPCSEC_GSSv3 contexts are used with NFSv4.1's SSV mechanism, man-in-the-middle attacks described in RFC 5661 Section 2.10.10 are mitigated by the new RPCSEC_GSSv3 reply verifier. However, use of an SSV-backed parent handle in RPCSEC_GSS_CREATE is complicated by SSV context lifetime rules. Servers MUST use RPCSEC_GSS context handles that authenticate the client when protecting callbacks related to state initiated by RPCSEC_GSSv3-protected RPCs.
+section: "4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

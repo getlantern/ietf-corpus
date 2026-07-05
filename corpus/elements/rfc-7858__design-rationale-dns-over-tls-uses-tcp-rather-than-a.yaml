@@ -1,0 +1,10 @@
+document: rfc-7858
+kind: design-rationale
+summary: DNS over TLS uses TCP rather than a new transport because connection-oriented TCP simplifies ordering, reliability, and session management. Performance overhead from TCP and TLS setup is mitigated by connection reuse, pipelining, TCP Fast Open (RFC 7413), and TLS session resumption (RFC 5077).
+section: "5"
+topics:
+    - dns
+    - tls
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

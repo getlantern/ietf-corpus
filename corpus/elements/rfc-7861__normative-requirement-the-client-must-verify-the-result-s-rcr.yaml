@@ -1,0 +1,10 @@
+document: rfc-7861
+kind: normative-requirement
+summary: The client MUST verify the result's rcr_chan_bind_mic by calling GSS_VerifyMIC(); if client-side channel-binding verification fails, the client MUST call RPCSEC_GSS_DESTROY. If the client considers channel binding critical and the server omitted the field, it MUST call RPCSEC_GSS_DESTROY.
+section: 2.7.1.2
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

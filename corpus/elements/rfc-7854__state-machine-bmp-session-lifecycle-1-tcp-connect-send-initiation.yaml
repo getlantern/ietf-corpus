@@ -1,0 +1,10 @@
+document: rfc-7854
+kind: state-machine
+summary: 'BMP session lifecycle: (1) TCP connect → send Initiation → send Peer Up per established BGP peer → send Route Monitoring (initial table dump) → send End-of-RIB per peer; (2) ongoing: incremental Route Monitoring, Peer Up on new sessions, Peer Down on teardowns, optional Stats Reports; (3) optional Termination message → TCP close.'
+section: "3.3"
+topics:
+    - bgp
+    - measurement
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

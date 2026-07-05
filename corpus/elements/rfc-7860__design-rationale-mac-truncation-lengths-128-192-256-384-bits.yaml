@@ -1,0 +1,10 @@
+document: rfc-7860
+kind: design-rationale
+summary: MAC truncation lengths (128, 192, 256, 384 bits) are larger than the 96 bits used in HMAC-MD5-96 and HMAC-SHA-96, reflecting improved security margins. RFC 2104 and [BCK] allow truncation to any length not less than half the internal state size.
+section: "4.1"
+topics:
+    - snmp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-7852
+kind: design-rationale
+summary: Device/service-specific additional data can be carried either as a new registered block or via the DeviceSpecificData URI in DeviceInfo. The by-reference approach via DeviceInfo provides extra privacy protection (requester must supply a verified certificate) and prevents by-value transmission of very large payloads; a new block is preferred for small, widely applicable data that benefits from by-value delivery.
+section: "5.1"
+topics:
+    - privacy
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

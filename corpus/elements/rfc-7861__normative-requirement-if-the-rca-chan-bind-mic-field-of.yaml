@@ -1,0 +1,10 @@
+document: rfc-7861
+kind: normative-requirement
+summary: If the rca_chan_bind_mic field of an RPCSEC_GSS_CREATE message is set, the server MUST verify the client's channel-binding MIC if it supports this feature; on success, the server MUST generate a new MIC of the same channel bindings and place it in rcr_chan_bind_mic.
+section: 2.7.1.2
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

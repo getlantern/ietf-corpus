@@ -1,0 +1,9 @@
+document: rfc-7861
+kind: design-rationale
+summary: 'RPCSEC_GSSv3 channel binding differs from v2 in two ways: it reuses existing established context handles rather than providing a new RPC security flavor, and it does not hash the channel-bindings data because there is now general agreement that the secure channel is responsible for producing channel-bindings data of manageable size.'
+section: 2.7.1.2
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

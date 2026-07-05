@@ -1,0 +1,9 @@
+document: rfc-7861
+kind: design-rationale
+summary: A new reply verifier is needed in RPCSEC_GSSv3 because child and parent handles share the same GSS context and can therefore have the same RPCSEC_GSS sequence numbers. The prior verifier computed a MIC on only the sequence number, enabling man-in-the-middle attacks; the new verifier covers the full RPC reply header including xid, mtype, rpcvers, prog, vers, proc, and cred.
+section: "2.3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

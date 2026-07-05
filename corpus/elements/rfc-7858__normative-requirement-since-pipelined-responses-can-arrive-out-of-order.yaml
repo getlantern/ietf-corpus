@@ -1,0 +1,10 @@
+document: rfc-7858
+kind: normative-requirement
+summary: Since pipelined responses can arrive out of order, clients MUST match responses to outstanding queries on the same TLS connection using the Message ID. If the response contains a Question Section, the client MUST also match QNAME, QCLASS, and QTYPE fields.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - dns
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

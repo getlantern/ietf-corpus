@@ -1,0 +1,9 @@
+document: rfc-7851
+kind: design-rationale
+summary: 'An earlier design generated responses from each intermediate peer as the message traversed the overlay, but this was discarded because it created a DoS amplification vector: one spoofed request would cause multiple peers to send responses to the spoofed victim. The iterative PathTrack approach preserves the request-response model of RELOAD.'
+section: B
+topics:
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
