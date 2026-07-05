@@ -1,0 +1,10 @@
+document: rfc-8556
+kind: design-rationale
+summary: The LIR-pF method (Section 2.2.2) greatly reduces the number of S-PMSI A-D routes a BFIR must originate (potentially just one wildcard route instead of one per C-flow), but cannot be used with segmented P-tunnels because it does not allow the BFIR to assign a distinct label to each C-flow, which is required for label-based segment switching.
+section: 2.2.2
+topics:
+    - multicast
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

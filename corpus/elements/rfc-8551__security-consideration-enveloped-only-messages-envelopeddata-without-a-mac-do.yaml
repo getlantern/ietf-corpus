@@ -1,0 +1,10 @@
+document: rfc-8551
+kind: security-consideration
+summary: Enveloped-only messages (EnvelopedData without a MAC) do not provide data integrity; ciphertext can be altered such that the processed message remains syntactically valid but has different meaning. The 'enveloped-only' structure does not support authenticated symmetric algorithms; AuthEnvelopedData should be used when integrity matters.
+section: "3.3"
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8555
+kind: normative-requirement
+summary: The key authorization value used in challenges MUST be formed as token || '.' || base64url(JWK Thumbprint of the account public key). Challenge tokens MUST be at least 128 bits of entropy and use only URL-safe base64 characters.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

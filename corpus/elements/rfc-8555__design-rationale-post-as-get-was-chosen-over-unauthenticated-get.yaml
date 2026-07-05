@@ -1,0 +1,9 @@
+document: rfc-8555
+kind: design-rationale
+summary: POST-as-GET was chosen over unauthenticated GET so that all resource accesses (fetching certificates, authorizations, orders) are authenticated via JWS. Plain GET requests cannot carry a signed body, leaving them unauthenticated and susceptible to unauthorized access.
+section: "6.3"
+topics:
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

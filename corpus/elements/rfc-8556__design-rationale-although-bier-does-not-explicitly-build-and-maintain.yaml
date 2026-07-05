@@ -1,0 +1,9 @@
+document: rfc-8556
+kind: design-rationale
+summary: Although BIER does not explicitly build and maintain multicast tunnels, MVPN procedures treat BIER as if it were a type of tunnel (Tunnel Type 0x0B). One can conceptually think of an implicit P2MP tunnel from each BFIR to all BFERs, enabling reuse of existing MVPN multi-VPN aggregation procedures without protocol changes.
+section: "1"
+topics:
+    - multicast
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

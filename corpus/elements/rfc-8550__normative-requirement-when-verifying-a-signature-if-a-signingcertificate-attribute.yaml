@@ -1,0 +1,11 @@
+document: rfc-8550
+kind: normative-requirement
+summary: When verifying a signature, if a signingCertificate attribute (RFC 2634) or signingCertificateV2 attribute (RFC 5035) is found in an S/MIME message, it SHALL be used to identify the signer's certificate. When decrypting, if an SMIMEEncryptionKeyPreference attribute is found in an encapsulating SignedData, it SHALL be used to identify the originator's certificate.
+section: "4.2"
+rfc2119_level: REQUIRED
+topics:
+    - email
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

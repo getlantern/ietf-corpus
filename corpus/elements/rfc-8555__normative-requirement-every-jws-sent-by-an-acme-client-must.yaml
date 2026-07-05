@@ -1,0 +1,10 @@
+document: rfc-8555
+kind: normative-requirement
+summary: Every JWS sent by an ACME client MUST include a 'nonce' header parameter with a value previously issued by the server in a Replay-Nonce header field. Once a nonce appears in a request, the server MUST treat it as invalid. The server MUST include a Replay-Nonce header in every successful response to a POST request.
+section: "6.5"
+rfc2119_level: MUST
+topics:
+    - security
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

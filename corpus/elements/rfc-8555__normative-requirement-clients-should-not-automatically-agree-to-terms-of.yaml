@@ -1,0 +1,9 @@
+document: rfc-8555
+kind: normative-requirement
+summary: Clients SHOULD NOT automatically agree to terms of service by default and SHOULD require user interaction for agreement. If a server's ToS change requires re-agreement, it MUST return HTTP 403 with error type 'userActionRequired', a 'terms-of-service' Link header, and an 'instance' URL directing the user to agree.
+section: 7.3.3
+rfc2119_level: SHOULD NOT
+topics:
+    - acme
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

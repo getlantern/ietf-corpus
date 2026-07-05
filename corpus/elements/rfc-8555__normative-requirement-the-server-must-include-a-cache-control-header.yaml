@@ -1,0 +1,10 @@
+document: rfc-8555
+kind: normative-requirement
+summary: The server MUST include a Cache-Control header with the 'no-store' directive in responses for the newNonce resource to prevent proxy caching, which would cause clients to receive duplicate nonces and trigger 'badNonce' errors.
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8550
+kind: security-consideration
+summary: The signingTime attribute could be deliberately set to a time where the receiving agent would use a CRL that does not contain a revocation for the signing certificate, or use a certificate that has expired or is not yet valid. Agents should use a reliable time—normally the current time—for certificate validity checks.
+section: "6"
+topics:
+    - email
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

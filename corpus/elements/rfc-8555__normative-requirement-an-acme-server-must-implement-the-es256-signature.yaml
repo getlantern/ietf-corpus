@@ -1,0 +1,11 @@
+document: rfc-8555
+kind: normative-requirement
+summary: An ACME server MUST implement the ES256 signature algorithm and SHOULD implement EdDSA with the Ed25519 variant. If a client uses an unsupported algorithm, the server MUST return HTTP 400 with error type 'badSignatureAlgorithm' and include an 'algorithms' field listing supported values.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

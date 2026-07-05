@@ -1,0 +1,10 @@
+document: rfc-8555
+kind: normative-requirement
+summary: All ACME requests with a non-empty body MUST encapsulate their payload in a JWS object signed with the account private key. The JWS MUST be in Flattened JSON Serialization, MUST NOT have multiple signatures, and the 'alg' field MUST NOT be 'none' or any MAC-based algorithm.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

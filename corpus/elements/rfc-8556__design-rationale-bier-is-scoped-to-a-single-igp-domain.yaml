@@ -1,0 +1,10 @@
+document: rfc-8556
+kind: design-rationale
+summary: BIER is scoped to a single IGP domain, but MVPN traffic may traverse multiple IGP domains. The document leverages existing MVPN P-tunnel segmentation (at ASBRs or ABRs) to allow BIER to cover individual segments, with segmentation points acting as BFERs of one BIER domain and BFIRs of the next.
+section: "1"
+topics:
+    - multicast
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

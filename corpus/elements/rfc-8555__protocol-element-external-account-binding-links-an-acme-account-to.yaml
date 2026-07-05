@@ -1,0 +1,10 @@
+document: rfc-8555
+kind: protocol-element
+summary: External account binding links an ACME account to an existing non-ACME account via a MAC-signed inner JWS whose payload is the ACME account key in JWK form. The inner JWS protected header MUST use a MAC algorithm, MUST include the CA-provided key identifier as 'kid', MUST omit 'nonce', and MUST set 'url' to the same value as the outer JWS.
+section: 7.3.4
+topics:
+    - jose
+    - acme
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

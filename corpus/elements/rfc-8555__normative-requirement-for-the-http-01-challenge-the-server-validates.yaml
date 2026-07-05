@@ -1,0 +1,11 @@
+document: rfc-8555
+kind: normative-requirement
+summary: For the http-01 challenge, the server validates by performing an HTTP GET to http://<domain>/.well-known/acme-challenge/<token>. The client MUST ensure this resource returns the key authorization with Content-Type application/octet-stream.
+section: "8.3"
+rfc2119_level: MUST
+topics:
+    - http
+    - acme
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

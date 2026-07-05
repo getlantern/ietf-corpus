@@ -1,0 +1,10 @@
+document: rfc-8555
+kind: design-rationale
+summary: The 'url' field is bound into the JWS protected header because TLS-terminating intermediaries such as CDNs can modify the HTTP request URL after TLS is terminated. HTTPS alone does not protect the URL from modification by such in-path entities.
+section: "6.4"
+topics:
+    - security
+    - tls
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

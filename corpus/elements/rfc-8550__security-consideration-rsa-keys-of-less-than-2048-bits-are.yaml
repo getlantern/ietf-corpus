@@ -1,0 +1,12 @@
+document: rfc-8550
+kind: security-consideration
+summary: RSA keys of less than 2048 bits are considered cryptographically insecure. If an implementation supports verification of certificates or CRLs generated with RSA or DSA keys of less than 2048 bits, it MUST warn the user. Server implementations where user warnings are not appropriate SHOULD reject messages with weak cryptography.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - email
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

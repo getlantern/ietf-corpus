@@ -1,0 +1,9 @@
+document: rfc-8549
+kind: design-rationale
+summary: The Exporter is the preferred entity to export BGP community information rather than an IPFIX Mediator or Collector, because the Exporter already holds the up-to-date BGP routing table and performs lookups for existing BGP-related IEs; the additional load of exporting community information is minimal. Correlation on the Exporter is also more accurate since the BGP routing table may be updated by the time Collectors receive the flow information.
+section: "1"
+topics:
+    - bgp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8550
+kind: normative-requirement
+summary: All subject and issuer names MUST be populated (not an empty SEQUENCE) in S/MIME-compliant X.509 certificates, except that the subject distinguished name in an end entity's certificate MAY be an empty SEQUENCE, in which case the subjectAltName extension will include the subject's identifier and MUST be marked as critical.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - email
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

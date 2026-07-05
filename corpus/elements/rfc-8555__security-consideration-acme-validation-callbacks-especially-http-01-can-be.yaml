@@ -1,0 +1,8 @@
+document: rfc-8555
+kind: security-consideration
+summary: ACME validation callbacks (especially http-01) can be abused as a server-side request forgery (SSRF) vector, causing the CA to make requests to internal network addresses. CAs should restrict outbound validation connections to public IP space.
+section: "10.4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

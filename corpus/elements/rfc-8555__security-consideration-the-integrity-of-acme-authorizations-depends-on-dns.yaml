@@ -1,0 +1,10 @@
+document: rfc-8555
+kind: security-consideration
+summary: The integrity of ACME authorizations depends on DNS security. Attackers who can manipulate DNS responses (e.g., via cache poisoning) can redirect http-01 or dns-01 challenges and obtain fraudulent certificates. ACME servers SHOULD use DNSSEC-validating resolvers and query from multiple network vantage points.
+section: "10.2"
+topics:
+    - dns
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

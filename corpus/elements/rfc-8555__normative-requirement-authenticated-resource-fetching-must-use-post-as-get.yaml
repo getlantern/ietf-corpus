@@ -1,0 +1,10 @@
+document: rfc-8555
+kind: normative-requirement
+summary: 'Authenticated resource fetching MUST use POST-as-GET: a POST with a JWS whose payload field is set to the empty string (""). Plain GET requests (except for directory and newNonce) MUST be rejected with HTTP 405 and error type ''malformed''.'
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

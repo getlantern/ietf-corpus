@@ -1,0 +1,9 @@
+document: rfc-8551
+kind: interoperability-note
+summary: Some early S/MIME implementations emitted 'rsa-md5', 'rsa-sha1', and 'sha1' for the micalg parameter instead of the standardized 'md5', 'sha-1' values. Receiving agents SHOULD recover gracefully from unrecognized micalg parameter values. Future values come from the IANA 'Hash Function Textual Names' registry.
+section: 3.5.3.2
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

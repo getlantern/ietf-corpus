@@ -1,0 +1,10 @@
+document: rfc-8550
+kind: security-consideration
+summary: An S/MIME message sender could deliberately include an older unexpired CRL that does not contain recently revoked certificates, leading an agent to accept a revoked certificate. Agents SHOULD ensure they consult the most recently issued CRL for a CA when validating certificate paths.
+section: "6"
+topics:
+    - email
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
