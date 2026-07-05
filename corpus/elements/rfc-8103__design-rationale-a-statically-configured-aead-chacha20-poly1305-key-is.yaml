@@ -1,0 +1,9 @@
+document: rfc-8103
+kind: design-rationale
+summary: A statically configured AEAD_CHACHA20_POLY1305 key is considered impractical because reliably avoiding nonce reuse is extremely difficult. The CMS AuthEnvelopedData content type is used instead because it supports key management techniques that provide a fresh key for each protected content item.
+section: "2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

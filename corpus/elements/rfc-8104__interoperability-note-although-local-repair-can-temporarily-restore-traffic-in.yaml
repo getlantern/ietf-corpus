@@ -1,0 +1,9 @@
+document: rfc-8104
+kind: interoperability-note
+summary: Although local repair can temporarily restore traffic in tens of milliseconds, if the failure persists, LDP sessions between the ingress PE or protector and the failed egress PE/S-PE may eventually expire, causing the primary PW to be torn down or the protector's forwarding entry to be removed. Global repair SHOULD take place in a timely manner to move traffic to a fully functional alternative path.
+section: "5"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

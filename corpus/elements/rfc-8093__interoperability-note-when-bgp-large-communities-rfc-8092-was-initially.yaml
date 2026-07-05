@@ -1,0 +1,8 @@
+document: rfc-8093
+kind: interoperability-note
+summary: When BGP Large Communities (RFC 8092) was initially assigned attribute value 30 by IANA, a widely deployed BGP-4 implementation already used that value with a different data structure. That implementation applied a "Treat-as-withdraw" (RFC 7606) strategy to routes containing a valid Large Community attribute, causing early adopters of Large Communities to be unreachable from parts of the Internet.
+section: "1"
+topics:
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

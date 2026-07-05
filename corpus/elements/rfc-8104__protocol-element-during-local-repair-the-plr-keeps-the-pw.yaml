@@ -1,0 +1,9 @@
+document: rfc-8104
+kind: protocol-element
+summary: During local repair, the PLR keeps the PW label intact in packets and pushes a bypass tunnel label (MPLS) or IP header (IP tunnel) onto the stack when rerouting to the protector. The protector uses the bypass tunnel (context label or IP destination) as a pointer to determine which primary PE's label space to use for the PW label lookup.
+section: "4.6"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

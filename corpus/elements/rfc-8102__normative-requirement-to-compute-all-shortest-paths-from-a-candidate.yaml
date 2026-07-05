@@ -1,0 +1,9 @@
+document: rfc-8102
+kind: normative-requirement
+summary: To compute all shortest paths from a candidate node-protecting PQ-node to destinations, the computing router MUST run a forward SPF rooted at each candidate node-protecting PQ-node. After the SPF, it SHOULD apply the inequality D_opt(Y,D) < D_opt(Y,E) + D_opt(E,D) once per destination to verify node protection.
+section: 2.3.2
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

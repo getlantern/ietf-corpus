@@ -1,0 +1,9 @@
+document: rfc-8104
+kind: design-rationale
+summary: During local repair, the PLR keeps the PW label intact rather than swapping it. This design choice obviates the need for the PLR to maintain bypass routes on a per-PW basis and enables bypass tunnel sharing between multiple PWs, at the cost of requiring the protector to understand upstream-assigned PW labels.
+section: "4.2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

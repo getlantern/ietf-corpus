@@ -1,0 +1,9 @@
+document: rfc-8092
+kind: design-rationale
+summary: The existing BGP Communities attribute (RFC 1997) splits a 32-bit value into two 16-bit halves, making it incompatible with four-octet ASNs adopted in RFC 6793. The BGP Extended Communities attribute (RFC 4360) is also unsuitable because its six-octet value length precludes encoding four-octet ASNs in both the Global Administrator and Local Administrator sub-fields.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

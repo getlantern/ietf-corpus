@@ -1,0 +1,9 @@
+document: rfc-8103
+kind: security-consideration
+summary: The maximum plaintext size for a single AEAD_CHACHA20_POLY1305 invocation is (2^32 - 1) × 64 octets ≈ 247.9 GB, limited by the ChaCha20 block counter field size. This is sufficient for any anticipated CMS content type.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

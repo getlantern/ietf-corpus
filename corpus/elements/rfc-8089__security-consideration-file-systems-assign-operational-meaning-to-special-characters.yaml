@@ -1,0 +1,8 @@
+document: rfc-8089
+kind: security-consideration
+summary: File systems assign operational meaning to special characters such as "/", "\", ":", "[", "]", and special device names like ".", "..", "aux", "lpt". Testing for existence of such names may cause OS pauses or unrelated system calls, leading to denial-of-service and unintended data transfer risks. Implementers should research reserved names for their storage devices.
+section: "5"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

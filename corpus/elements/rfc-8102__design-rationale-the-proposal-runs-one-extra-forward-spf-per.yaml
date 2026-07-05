@@ -1,0 +1,8 @@
+document: rfc-8102
+kind: design-rationale
+summary: The proposal runs one extra forward SPF per PQ-node rather than per destination; since PQ-nodes are significantly more numerous than directly connected neighbors, a configurable subset limit (default 16) is introduced to keep computational overhead bounded — an explicit tradeoff between coverage breadth and SPF computation time.
+section: 2.3.4
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
