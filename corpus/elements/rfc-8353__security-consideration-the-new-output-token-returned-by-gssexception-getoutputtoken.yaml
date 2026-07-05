@@ -1,0 +1,8 @@
+document: rfc-8353
+kind: security-consideration
+summary: The new output token returned by GSSException.getOutputToken() when initSecContext or acceptSecContext fail may contain mechanism-specific diagnostic information. Implementations and applications should consider whether transmitting this error token to the peer could leak sensitive information about the failure cause.
+section: "9"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

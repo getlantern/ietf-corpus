@@ -1,0 +1,9 @@
+document: rfc-8353
+kind: security-consideration
+summary: Inter-process tokens exported via GSSContext.export() may contain sensitive security context data including cryptographic session keys. Applications must ensure these tokens are transmitted only to trustworthy processes and protected against interception during transfer.
+section: "9"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

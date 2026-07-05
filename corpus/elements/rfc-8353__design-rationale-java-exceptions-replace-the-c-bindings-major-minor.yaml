@@ -1,0 +1,8 @@
+document: rfc-8353
+kind: design-rationale
+summary: Java exceptions replace the C-bindings major/minor status code return mechanism for signaling fatal errors. Supplementary non-fatal status (duplicate/old/out-of-sequence tokens) is returned via the MessageProp object rather than exceptions, since exceptions are not appropriate for informational or warning-level conditions.
+section: "5.12"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

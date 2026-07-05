@@ -1,0 +1,10 @@
+document: rfc-8348
+kind: security-consideration
+summary: Read-sensitive nodes include '/hardware/component' (exposes vendor, model, version, and device-identification information), '/hardware/component/sensor-data/value' (physical sensor readings), and '/hardware/component/state' (reveals active and standby resource configuration). Read access should be controlled via NACM.
+section: "9"
+topics:
+    - yang
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
