@@ -1,0 +1,9 @@
+document: rfc-8599
+kind: security-consideration
+summary: If a malicious endpoint or network entity obtains the 'pn-*' parameters from SIP signaling, it can request unsolicited push notifications to the UA. Such notifications degrade battery life and trigger unnecessary SIP traffic. The VAPID mechanism (RFC 8292) allows a proxy to sign a JWT so the UA can restrict push notifications to a known proxy public key.
+section: "13"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8599
+kind: normative-requirement
+summary: A UA MUST NOT insert the SIP URI parameters defined in this specification (except 'pn-purr') in non-REGISTER requests, to prevent PNS information associated with the UA from reaching the remote peer. For example, the UA MUST NOT insert 'pn-prid' in the Contact header field URI of an INVITE request.
+section: "4.1"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

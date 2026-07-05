@@ -1,0 +1,8 @@
+document: rfc-8610
+kind: protocol-element
+summary: The '.bits' control on a byte string or unsigned integer restricts which bit positions may be set. Bit n is set in string str when '(str[n>>3] & (1<<(n&7))) != 0'. For unsigned integer i, all n where '(i & (1<<n)) != 0' must be in the control type.
+section: 3.8.2
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

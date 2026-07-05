@@ -1,0 +1,10 @@
+document: rfc-8591
+kind: design-rationale
+summary: The application/pkcs7-mime format is RECOMMENDED over multipart/signed because email experience shows multipart/signed bodies are at greater risk of 'helpful' tampering by intermediaries (e.g., insertion of IMDN requests), which causes signature validation failures. It is also more compact, important for SIP MESSAGE's 1300-octet size limit.
+section: "4.1"
+topics:
+    - sip
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

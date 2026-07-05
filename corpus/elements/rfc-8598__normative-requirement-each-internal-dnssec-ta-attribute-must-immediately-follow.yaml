@@ -1,0 +1,11 @@
+document: rfc-8598
+kind: normative-requirement
+summary: Each INTERNAL_DNSSEC_TA attribute MUST immediately follow the INTERNAL_DNS_DOMAIN attribute it applies to in the CFG_REPLY payload; any INTERNAL_DNSSEC_TA not immediately preceded by a corresponding INTERNAL_DNS_DOMAIN or another INTERNAL_DNSSEC_TA for the same domain MUST be ignored.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - dns
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

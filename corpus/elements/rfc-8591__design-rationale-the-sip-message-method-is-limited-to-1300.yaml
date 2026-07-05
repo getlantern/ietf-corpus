@@ -1,0 +1,9 @@
+document: rfc-8591
+kind: design-rationale
+summary: The SIP MESSAGE method is limited to 1300 octets to avoid UDP fragmentation. Certificates embedded in SignedData can push messages past this limit; omitting the certificate when the recipient is known to have it is permitted as a size optimization.
+section: "7.1"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

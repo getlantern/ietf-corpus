@@ -1,0 +1,10 @@
+document: rfc-8599
+kind: normative-requirement
+summary: To prevent client fingerprinting, the proxy MUST periodically generate a new PURR value even if 'pn-*' parameters did not change. However, while ongoing dialogs are associated with the old value, the proxy MUST store the old value to support mid-dialog push requests.
+section: 6.2.1
+rfc2119_level: MUST
+topics:
+    - sip
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8601
+kind: security-consideration
+summary: A compromised internal MTA or MUA can generate mail with forged From and Authentication-Results header fields. This risk is mitigated by configuring internal MTAs to remove any Authentication-Results header field claiming to be from a trusted border MTA when the SMTP connection is not from a known authorized internal host.
+section: "7.9"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

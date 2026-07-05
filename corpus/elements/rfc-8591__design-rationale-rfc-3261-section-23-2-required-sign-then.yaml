@@ -1,0 +1,10 @@
+document: rfc-8591
+kind: design-rationale
+summary: RFC 3261 Section 23.2 required sign-then-encrypt order (SignedData inside EnvelopedData), but this document reverses it to sign-first-then-encrypt (SignedData inside AuthEnvelopedData) for SIP MESSAGE, because authenticated encryption provides authentication without the SignedData layer and ciphertext modification in EnvelopedData can otherwise go undetected.
+section: "4.3"
+topics:
+    - sip
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

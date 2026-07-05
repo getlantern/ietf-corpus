@@ -1,0 +1,9 @@
+document: rfc-8599
+kind: design-rationale
+summary: The mechanism inherently delays the final response to any non-INVITE request requiring a push notification. As discussed in RFC 4320 and RFC 4321, non-INVITE transactions must complete quickly to avoid state misalignment; the Bucket Timer must be set short enough that the error response reaches the sender before the transaction times out at the UAC.
+section: 5.6.2
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

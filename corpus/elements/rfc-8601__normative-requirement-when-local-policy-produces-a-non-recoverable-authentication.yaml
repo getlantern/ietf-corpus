@@ -1,0 +1,10 @@
+document: rfc-8601
+kind: normative-requirement
+summary: When local policy produces a non-recoverable authentication failure, the border MTA SHOULD issue an SMTP rejection rather than adding the header field and allowing the message to proceed, to avoid generating DSN backscatter to forged originators.
+section: "4.2"
+rfc2119_level: SHOULD
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8599
+kind: normative-requirement
+summary: If the UA is willing to receive push notifications for mid-dialog requests, the UA MUST insert a 'pn-purr' SIP URI parameter in the Contact header of the initial dialog request, with a value identical to the last 'sip.pnspurr' indicator received in a REGISTER response. If no such indicator was received, the UA MUST NOT insert 'pn-purr'.
+section: 6.1.1
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

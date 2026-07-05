@@ -1,0 +1,10 @@
+document: rfc-8595
+kind: security-consideration
+summary: Packets originating outside the SFC-enabled domain MUST be dropped if they contain an NSH (or MPLS encoding of a logical NSH), and packets exiting the SFC-enabled domain MUST be dropped if they contain such encapsulation. The classifier is a fully trusted element whose classification decisions are treated as accurate.
+section: "15"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

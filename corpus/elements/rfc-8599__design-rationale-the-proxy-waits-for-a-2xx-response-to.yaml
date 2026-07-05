@@ -1,0 +1,8 @@
+document: rfc-8599
+kind: design-rationale
+summary: The proxy waits for a 2xx response to the REGISTER request before forwarding a pending SIP request to the UA. This ensures the REGISTER was accepted by the registrar and that the UA is authorized to receive messages for the Request-URI, preventing unauthorized delivery.
+section: 5.6.2
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8595
+kind: normative-requirement
+summary: A system using MPLS representation of the logical NSH MUST NOT assign SPI values greater than 2^20 - 1 or less than 16, because the 20-bit MPLS Label field cannot carry the full 24-bit NSH SPI and values 0-15 are reserved as special-purpose labels.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

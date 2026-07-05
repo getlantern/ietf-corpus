@@ -1,0 +1,8 @@
+document: rfc-8599
+kind: interoperability-note
+summary: When comparing the Contact URI of a REGISTER 2xx response to Request-URIs in the SIP Request Push Bucket, the proxy uses standard RFC 3261 URI comparison rules augmented to require that 'pn-prid', 'pn-provider', and 'pn-param' also match. If a 'pn-*' parameter is in one URI but not the other, the URIs do not match.
+section: "5.3"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

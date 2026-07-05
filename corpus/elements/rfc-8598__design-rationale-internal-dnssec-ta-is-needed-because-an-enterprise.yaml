@@ -1,0 +1,10 @@
+document: rfc-8598
+kind: design-rationale
+summary: INTERNAL_DNSSEC_TA is needed because an enterprise may run a different version of its public domain internally; without it, existing DNSSEC signatures from the public view would cause DNSSEC validation failures for the internal view, making split DNS impossible in DNSSEC-validating environments.
+section: "1"
+topics:
+    - ipsec
+    - dns
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

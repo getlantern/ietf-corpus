@@ -1,0 +1,9 @@
+document: rfc-8601
+kind: security-consideration
+summary: A malicious agent can forge an Authentication-Results header field using a legitimate ADMD's authserv-id to falsely claim authentication success. Non-conformant MTAs that do not strip such headers expose downstream consumers to false trust conclusions. Mitigation requires strict removal of inbound header fields claiming internal origin.
+section: "7.1"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

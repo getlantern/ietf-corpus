@@ -1,0 +1,8 @@
+document: rfc-8591
+kind: design-rationale
+summary: MSRP's streaming mode (sending chunks before knowing total message length) is incompatible with S/MIME because S/MIME must operate on the entire message. The Byte-Range header with total length must be present in every chunk to enable reassembly before S/MIME processing.
+section: "8.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

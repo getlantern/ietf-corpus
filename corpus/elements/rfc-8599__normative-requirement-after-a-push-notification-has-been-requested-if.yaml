@@ -1,0 +1,9 @@
+document: rfc-8599
+kind: normative-requirement
+summary: After a push notification has been requested, if the proxy does not receive a matching REGISTER response before the Bucket Timer times out, the proxy MUST remove the SIP request from the SIP Request Push Bucket and send a 480 (Temporarily Unavailable) response.
+section: 5.6.2
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

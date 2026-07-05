@@ -1,0 +1,8 @@
+document: rfc-8599
+kind: design-rationale
+summary: Mid-dialog SIP requests do not carry 'pn-*' URI parameters (which are only in registrar Contact URIs), so a separate mechanism — the PURR stored by the proxy at registration time — is required to map an incoming mid-dialog request to the UA's PRID and trigger push notification.
+section: "6"
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

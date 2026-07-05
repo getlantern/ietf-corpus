@@ -1,0 +1,8 @@
+document: rfc-8595
+kind: design-rationale
+summary: The SPI requires 24 bits as defined in RFC 8300, but the MPLS 20-bit Label field can only carry 20 bits and reserves values 0-15. This constrains deployments to SPI values in the range 16...2^20-1, a limitation not present when using the NSH directly.
+section: "6"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

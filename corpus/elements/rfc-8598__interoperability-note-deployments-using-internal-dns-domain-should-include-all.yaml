@@ -1,0 +1,9 @@
+document: rfc-8598
+kind: interoperability-note
+summary: Deployments using INTERNAL_DNS_DOMAIN should include all domains referenced by indirect RRtypes (NS, CNAME, DNAME, MX, SRV) in their internal domain names; for example, if the MX for an internal domain points to a host in a different domain, that second domain also needs its own INTERNAL_DNS_DOMAIN attribute.
+section: "8"
+topics:
+    - ipsec
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

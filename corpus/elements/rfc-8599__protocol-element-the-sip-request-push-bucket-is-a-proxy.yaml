@@ -1,0 +1,9 @@
+document: rfc-8599
+kind: protocol-element
+summary: The SIP Request Push Bucket is a proxy-side store for pending SIP requests (new dialog or standalone) that triggered a push notification. A per-request Bucket Timer governs how long the proxy waits for the UA's binding-refresh REGISTER before sending a 480 error. Requests are removed on REGISTER match, error response, or timer expiry.
+section: "5.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
