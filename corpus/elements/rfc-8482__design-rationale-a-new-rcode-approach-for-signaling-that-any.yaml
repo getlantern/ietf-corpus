@@ -1,0 +1,8 @@
+document: rfc-8482
+kind: design-rationale
+summary: A new RCODE approach for signaling that ANY queries are unsupported was rejected because resolvers receiving an unknown RCODE would resend the same query to all available authoritative servers rather than suppress future ANY queries for the same QNAME. Returning a non-empty RRset instead gives resolvers something to cache, effectively suppressing repeat queries.
+section: "3"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

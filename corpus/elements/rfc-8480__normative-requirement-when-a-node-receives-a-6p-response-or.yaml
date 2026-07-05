@@ -1,0 +1,7 @@
+document: rfc-8480
+kind: normative-requirement
+summary: When a node receives a 6P Response or Confirmation with an error return code, it MUST consider the transaction failed and MUST NOT add, delete, or relocate any cells. An unrecognized return code also causes the transaction to be treated as failed; in a 3-step transaction the requester MUST send a Confirmation with RC_ERR.
+section: 3.4.7
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

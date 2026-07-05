@@ -1,0 +1,9 @@
+document: rfc-8473
+kind: design-rationale
+summary: The 'Sec-' prefix was chosen for the Sec-Token-Binding header field name specifically because the Fetch specification designates 'Sec-' prefixed names as 'forbidden header names', preventing web content (via DOM APIs or JavaScript) from reading or setting the header. This provides the integrity protection required to prevent cross-origin attacks.
+section: "7.2"
+topics:
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

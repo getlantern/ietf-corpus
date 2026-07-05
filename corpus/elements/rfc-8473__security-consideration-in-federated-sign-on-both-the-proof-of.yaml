@@ -1,0 +1,10 @@
+document: rfc-8473
+kind: security-consideration
+summary: In federated sign-on, both the proof of the provided Token Binding private key and the proof of the referred Token Binding private key are necessary. Without the provided-key proof, a man-in-the-middle between the client and the Token Provider can substitute its own Token Binding ID; without the referred-key proof, a MITM between the client and the Token Consumer can substitute its own Token Binding ID as the Referred ID.
+section: "7.3"
+topics:
+    - security
+    - oauth
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

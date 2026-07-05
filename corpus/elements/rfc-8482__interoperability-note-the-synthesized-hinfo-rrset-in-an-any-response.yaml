@@ -1,0 +1,8 @@
+document: rfc-8482
+kind: interoperability-note
+summary: The synthesized HINFO RRset in an ANY response, once cached by the initiator, might suppress subsequent queries from that initiator with QTYPE=HINFO, effectively masking any real HINFO RRset present in the zone. Operators serving zones that rely on HINFO SHOULD use the single-RRset method or select another RRtype for the synthesized response.
+section: "6"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

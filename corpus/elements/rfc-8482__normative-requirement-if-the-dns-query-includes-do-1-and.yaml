@@ -1,0 +1,10 @@
+document: rfc-8482
+kind: normative-requirement
+summary: If the DNS query includes DO=1 and the QNAME corresponds to a signed zone known to the responder, a valid RRSIG for the RRsets in the answer (or authority if answer is empty) section MUST be returned. If DO=0, the RRSIG SHOULD be omitted.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8481
+kind: design-rationale
+summary: 'The design separates the act of setting validation state from the act of applying policy: routers set state on all routes unconditionally, but policy actions are only taken when the operator explicitly configures them. This prevents unexpected route drops due to implicit default behavior.'
+section: "5"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

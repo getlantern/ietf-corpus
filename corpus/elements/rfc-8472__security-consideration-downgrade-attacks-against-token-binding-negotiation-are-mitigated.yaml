@@ -1,0 +1,9 @@
+document: rfc-8472
+kind: security-consideration
+summary: 'Downgrade attacks against Token Binding negotiation are mitigated by TLS itself: because TLS detects modification of handshake messages by active attackers, an attacker cannot remove or modify the ''token_binding'' extension without breaking the TLS handshake. The signature algorithm and key length used in ''provided_token_binding'' MUST match the negotiated parameters.'
+section: "6.1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8473
+kind: normative-requirement
+summary: If the Include-Referred-Token-Binding-ID header is received in response to a request that did not include the Sec-Token-Binding header, the client MUST ignore the Include-Referred-Token-Binding-ID header. For any HTTP status code other than a redirect (300–399), the client MUST also ignore this header.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8476
+kind: normative-requirement
+summary: When multiple Node MSD TLVs are received from a given router, the receiver MUST use the first occurrence in the RI LSA. If the TLV appears in multiple RI LSAs with different flooding scopes, the area-scoped RI LSA MUST be used; among same-scope duplicates, the RI LSA with the numerically smallest Instance ID MUST be used and others MUST be ignored.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

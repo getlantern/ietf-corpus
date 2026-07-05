@@ -1,0 +1,9 @@
+document: rfc-8484
+kind: design-rationale
+summary: The use of a DNS ID of 0 in GET requests is recommended because HTTP correlates request and response, eliminating the need for the DNS ID field. Using varying IDs causes semantically equivalent queries to be cached separately, harming cache efficiency.
+section: "4.1"
+topics:
+    - dns
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

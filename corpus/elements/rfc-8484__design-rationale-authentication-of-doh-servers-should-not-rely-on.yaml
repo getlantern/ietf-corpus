@@ -1,0 +1,10 @@
+document: rfc-8484
+kind: design-rationale
+summary: Authentication of DoH servers SHOULD NOT rely on DNS-based references to external resources (e.g., OCSP servers, CRL distribution points) in the TLS handshake, to avoid a bootstrapping deadlock where resolving the server's hostname requires the DoH server itself.
+section: "10"
+topics:
+    - dns
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

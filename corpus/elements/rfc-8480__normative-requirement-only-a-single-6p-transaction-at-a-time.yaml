@@ -1,0 +1,7 @@
+document: rfc-8480
+kind: normative-requirement
+summary: Only a single 6P Transaction at a time in a given direction may occur between two neighbors. A node MUST NOT issue a new 6P Request to a neighbor before the previous transaction has finished or timed out. If a second request arrives before the first is answered, the node MUST respond with RC_RESET and discard the second transaction.
+section: 3.4.3
+rfc2119_level: MUST NOT
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

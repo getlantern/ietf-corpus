@@ -1,0 +1,12 @@
+document: rfc-8473
+kind: normative-requirement
+summary: The referred_token_binding TokenBinding in the redirect request to the Token Provider MUST be signed with the Token Binding private key used by the client for connections between itself and the Token Consumer (the server that issued the Include-Referred-Token-Binding-ID response). The TokenBindingMessage MUST also contain a provided_token_binding signed with the key used with the Token Provider.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - tls
+    - http
+    - security
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

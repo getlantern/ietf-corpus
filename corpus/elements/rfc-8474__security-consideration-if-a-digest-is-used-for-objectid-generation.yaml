@@ -1,0 +1,10 @@
+document: rfc-8474
+kind: security-consideration
+summary: If a digest is used for ObjectID generation, it must have a collision-resistant property; server implementors should monitor current security research and choose secure digests. Digest-based IDs may serve as proof that a particular byte sequence was seen by the server, which is a risk if IDs are leaked to clients without permission to fetch the data directly.
+section: "11"
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

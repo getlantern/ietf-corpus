@@ -1,0 +1,10 @@
+document: rfc-8472
+kind: security-consideration
+summary: The triple handshake attack (TRIPLE-HS) affects TLS 1.2 and older by allowing an attacker to synchronize keying material between connections and replay bound tokens. Therefore, Token Binding MUST NOT be negotiated with these TLS versions unless both the extended master secret (RFC 7627) and renegotiation indication (RFC 5746) extensions are also negotiated.
+section: "6.2"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

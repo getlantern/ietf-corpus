@@ -1,0 +1,10 @@
+document: rfc-8472
+kind: normative-requirement
+summary: 'The client receiving the ''token_binding'' extension MUST terminate the handshake with a fatal ''unsupported_extension'' alert if: the client did not send the extension; the returned version is higher than what the client advertised; key_parameters_list has more than one entry; it contains an unadvertised identifier; or TLS 1.2/older is used without extended master secret and renegotiation indication.'
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

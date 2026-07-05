@@ -1,0 +1,8 @@
+document: rfc-8480
+kind: state-machine
+summary: 'The SeqNum is maintained per neighbor (and per SF when multiple SFs are active) as a lollipop counter: it resets to 0x00 after CLEAR or device reset, then increments through 0x01–0xFF, rolling over from 0xFF back to 0x01 (never to 0x00). A received SeqNum of 0 when the stored value is non-zero signals a neighbor reset and triggers RC_ERR_SEQNUM. The SeqNum increments by exactly 1 after every completed transaction.'
+section: 3.4.6
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

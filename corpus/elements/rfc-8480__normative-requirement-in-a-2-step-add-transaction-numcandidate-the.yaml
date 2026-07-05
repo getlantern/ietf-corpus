@@ -1,0 +1,7 @@
+document: rfc-8480
+kind: normative-requirement
+summary: In a 2-step ADD transaction, NumCandidate (the number of cells in the CellList) MUST be greater than or equal to NumCells. If node B receives a CellList shorter than NumCells, it MUST return RC_ERR_CELLLIST. If CellOptions encodes an invalid combination (e.g., TX=0, RX=0, S=0), node B MUST return RC_ERR.
+section: 3.3.1
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

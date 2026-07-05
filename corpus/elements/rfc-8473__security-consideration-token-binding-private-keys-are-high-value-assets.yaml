@@ -1,0 +1,10 @@
+document: rfc-8473
+kind: security-consideration
+summary: Token Binding private keys are high-value assets because an attacker who obtains one can craft valid Sec-Token-Binding headers and impersonate the client even against servers that use Token Binding to protect cookies or OAuth tokens. Private keys SHOULD be strongly protected, ideally generated in a hardware security module that prevents key export.
+section: "7.1"
+topics:
+    - security
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

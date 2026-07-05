@@ -1,0 +1,8 @@
+document: rfc-8480
+kind: state-machine
+summary: 'A schedule inconsistency is detected when a received 6P Request carries a SeqNum that differs from the expected value. Two triggers: (1) a neighbor power-cycles, resetting its SeqNum to 0; (2) maximum link-layer retransmissions are reached on the final ACK, leaving the two nodes with diverged SeqNums. The detecting node MUST return RC_ERR_SEQNUM; the SF then decides whether to issue CLEAR, LIST, or internally roll back.'
+section: 3.4.6.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

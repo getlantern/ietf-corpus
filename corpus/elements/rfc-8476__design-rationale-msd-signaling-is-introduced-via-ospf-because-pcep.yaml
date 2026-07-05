@@ -1,0 +1,9 @@
+document: rfc-8476
+kind: design-rationale
+summary: MSD signaling is introduced via OSPF because PCEP may not be configured on all SR tunnel head-ends, and BGP-LS is typically configured only on a small number of nodes. Advertising MSD via OSPF IGP ensures that a centralized controller receiving topology via BGP-LS can learn the MSD of every node and link in the network.
+section: "1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

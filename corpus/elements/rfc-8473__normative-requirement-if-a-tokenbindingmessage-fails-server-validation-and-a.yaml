@@ -1,0 +1,10 @@
+document: rfc-8473
+kind: normative-requirement
+summary: If a TokenBindingMessage fails server validation and a Token Binding is rejected, any associated bound tokens MUST also be rejected. HTTP requests containing invalid tokens MUST be rejected; the server MAY return 400, use an application-specific invalid-token response, or terminate the connection.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
