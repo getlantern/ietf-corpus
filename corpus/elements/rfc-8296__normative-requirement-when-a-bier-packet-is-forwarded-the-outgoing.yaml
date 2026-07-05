@@ -1,0 +1,10 @@
+document: rfc-8296
+kind: normative-requirement
+summary: When a BIER packet is forwarded, the outgoing BIER-MPLS label MUST have a TTL value one less than the packet's incoming TTL. If the incoming TTL is 0, or if TTL is 1 and the BitString has bits set for BFRs other than the current one, the packet is expired and SHOULD be passed to an error-handling procedure.
+section: 2.1.1.2
+rfc2119_level: MUST
+topics:
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

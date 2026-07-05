@@ -1,0 +1,8 @@
+document: rfc-8297
+kind: design-rationale
+summary: HTTP/2 server push can accelerate resource delivery but only for resources where the server is authoritative and sends the response regardless of client cache state. Delivering Link header fields via 103 responses costs one extra round trip in the worst case compared to server push but is more flexible and may consume less bandwidth.
+section: "1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

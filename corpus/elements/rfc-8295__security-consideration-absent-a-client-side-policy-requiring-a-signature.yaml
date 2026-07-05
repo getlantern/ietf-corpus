@@ -1,0 +1,10 @@
+document: rfc-8295
+kind: security-consideration
+summary: Absent a client-side policy requiring a signature on symmetric or asymmetric key packages, a malicious EST server can strip the signature, bypassing the validation check entirely. The signature-validation requirement is therefore only a sanity check against mis-signed packages or misconfiguration, not a strong security guarantee without a corresponding client policy.
+section: 5.1.2
+topics:
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

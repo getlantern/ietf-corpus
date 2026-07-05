@@ -1,0 +1,10 @@
+document: rfc-8296
+kind: security-consideration
+summary: The BIER encapsulation provides no cryptographic integrity protection; unauthorized modifications to the BIER header are likely to go undetected and may cause packets to be lost, stolen, or misdelivered. Layer 2 encryption can protect packets in transit between adjacent BFRs, but a compromised BFR cannot be prevented from making illegitimate modifications.
+section: "6"
+topics:
+    - security
+    - multicast
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

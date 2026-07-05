@@ -1,0 +1,10 @@
+document: rfc-8299
+kind: design-rationale
+summary: The L3VPN service model is intentionally an abstraction layer to be instantiated at an orchestration or management system, not directly on network elements. The management system is responsible for translating this model into device-specific configuration (via CLI, NETCONF/RESTCONF, or other means). This separation keeps the service model vendor-neutral and operator-agnostic.
+section: "5"
+topics:
+    - yang
+    - vpn
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

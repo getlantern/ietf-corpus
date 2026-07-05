@@ -1,0 +1,10 @@
+document: rfc-8302
+kind: design-rationale
+summary: For SEND requests when the target's location is known, only actions a.2 (unicast to target's RBridge) or a.5 (flood) are valid because cryptography prevents the ingress RBridge from constructing a locally generated SEND reply—the RBridge cannot sign the response with the target's private key.
+section: "4.4"
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

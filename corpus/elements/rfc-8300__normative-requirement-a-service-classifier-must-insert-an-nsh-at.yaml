@@ -1,0 +1,9 @@
+document: rfc-8300
+kind: normative-requirement
+summary: A Service Classifier MUST insert an NSH at the start of an SFP containing valid Base and Service Path Headers. At the end of an SFP, an SFF MUST remove the NSH before forwarding the un-encapsulated packet. When re-classification results in a new SPI, the Classifier MUST replace the existing NSH with a new one and MUST set the initial SI.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

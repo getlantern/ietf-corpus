@@ -1,0 +1,8 @@
+document: rfc-8300
+kind: security-consideration
+summary: NSH domain boundary enforcement requires that packets entering the SFC domain MUST be filtered to prevent attackers from injecting NSH packets with arbitrary SPI/SI and metadata. Packets originating outside the SFC domain MUST be dropped if they contain an NSH; packets exiting MUST also be dropped if they contain an NSH.
+section: "8.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

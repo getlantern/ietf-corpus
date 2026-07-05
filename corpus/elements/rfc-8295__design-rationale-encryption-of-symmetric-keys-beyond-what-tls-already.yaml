@@ -1,0 +1,10 @@
+document: rfc-8295
+kind: design-rationale
+summary: Encryption of symmetric keys beyond what TLS already provides is OPTIONAL because TLS already provides confidentiality; however, when additional encryption is used, several CMS content type nesting options are supported (plain DER, enveloped-data over signed-data, signed-data over enveloped-data, or CCC encrypted key package) to accommodate different server capabilities and security policies.
+section: 5.1.2
+topics:
+    - security
+    - crypto
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8305
+kind: normative-requirement
+summary: During connection setup, if an address already being attempted is removed from DNS answers, the connection attempt SHOULD NOT be canceled. If an address not yet attempted is removed, it SHOULD be removed from the list. New addresses added to DNS answers should be sorted into the list of un-attempted addresses.
+section: "6"
+rfc2119_level: SHOULD NOT
+topics:
+    - dns
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

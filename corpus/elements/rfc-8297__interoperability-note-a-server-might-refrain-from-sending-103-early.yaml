@@ -1,0 +1,8 @@
+document: rfc-8297
+kind: interoperability-note
+summary: A server might refrain from sending 103 (Early Hints) responses over HTTP/1.1 unless the client is known to handle informational responses correctly, because HTTP/1.1 clients that mishandle informational responses as final responses may treat all subsequent responses on the same connection as continuations of the final response.
+section: "3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

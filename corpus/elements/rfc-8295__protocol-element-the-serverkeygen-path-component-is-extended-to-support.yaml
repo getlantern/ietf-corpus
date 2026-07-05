@@ -1,0 +1,10 @@
+document: rfc-8295
+kind: protocol-element
+summary: 'The /serverkeygen path component is extended to support PKCS #12 (PFX, RFC 7292): the client POSTs a PKCS #10 CSR, and on success the server returns HTTP 200 with Content-Type ''application/pkcs12'' containing a base64-encoded DER PFX that bundles both the private key and the certificate. Password-based encryption (PBE) shrouding is supported; the DecryptKeyIdentifier from RFC 7030 is not used with PKCS #12.'
+section: "8.3"
+topics:
+    - pkix
+    - crypto
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

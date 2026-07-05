@@ -1,0 +1,8 @@
+document: rfc-8297
+kind: design-rationale
+summary: An origin server cannot always generate the full header block of a final response immediately (e.g., when delegating to a distant upstream server or when the status code depends on a database query). The 103 status code allows sending useful header fields like Link preload hints before the final response is determined.
+section: "1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8299
+kind: interoperability-note
+summary: The module defined in RFC 8299 is not backward compatible with RFC 8049. RFC 8049 could not be implemented because several `must` expressions used broken XPATH (rejected by tools that fully parse XPATH), and ACL rule ordering in RFC 8049 contradicted the English-language prose. RFC 8299 fixes these by rewriting `must` as `when` statements, switching to relative paths, and adopting `ordered-by user` for ACL rules.
+section: 1.4.1
+topics:
+    - yang
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

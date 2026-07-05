@@ -1,0 +1,11 @@
+document: rfc-8305
+kind: normative-requirement
+summary: Connection attempts SHOULD NOT be made simultaneously; instead one attempt is started first and subsequent attempts are staggered. Once one connection succeeds, all other pending attempts SHOULD be canceled and any un-attempted addresses SHOULD be ignored.
+section: "5"
+rfc2119_level: SHOULD NOT
+topics:
+    - tcp
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

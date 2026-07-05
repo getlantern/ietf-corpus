@@ -1,0 +1,10 @@
+document: rfc-8305
+kind: design-rationale
+summary: A minimum Connection Attempt Delay of 10 ms (recommended 100 ms) is required to avoid congestion collapse in the presence of high packet-loss rates; without a floor, historical RTT data could drive attempts so close together they overwhelm the network.
+section: "5"
+topics:
+    - tcp
+    - congestion
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

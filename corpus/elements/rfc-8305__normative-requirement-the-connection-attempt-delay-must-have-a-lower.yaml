@@ -1,0 +1,12 @@
+document: rfc-8305
+kind: normative-requirement
+summary: The Connection Attempt Delay MUST have a lower bound; a subsequent connection MUST NOT be started within 10 milliseconds of the previous attempt. The recommended minimum (Minimum Connection Attempt Delay) is 100 milliseconds. The maximum (Maximum Connection Attempt Delay) SHOULD be bounded, with a recommended value of 2 seconds.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - ip
+    - v6ops
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8296
+kind: design-rationale
+summary: The BSL field in the BIER header is present solely for offline tools (e.g., LAN analyzers); BFRs MUST infer the BitString length from the BIFT-id, not from this field. This prevents misforwarding due to a mismatch between the header field and the label binding.
+section: 2.1.2
+topics:
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8299
+kind: security-consideration
+summary: The model includes an encryption container at both site and site-network-access levels, supporting layer selection (Layer 2 or Layer 3) and either a provider-supplied encryption profile or a customer-defined algorithm with a pre-shared key (`preshared-key` string). The preshared key is stored in plaintext within the YANG model; implementations should apply appropriate data-at-rest protections and access controls to this sensitive leaf.
+section: 6.9.2
+topics:
+    - yang
+    - vpn
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

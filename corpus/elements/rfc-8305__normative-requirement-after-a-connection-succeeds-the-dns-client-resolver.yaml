@@ -1,0 +1,11 @@
+document: rfc-8305
+kind: normative-requirement
+summary: After a connection succeeds, the DNS client resolver SHOULD still process DNS replies from the network for a short period (recommended 1 second) to populate the DNS cache for subsequent connections, even if the asynchronous DNS query may be canceled.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - dns
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

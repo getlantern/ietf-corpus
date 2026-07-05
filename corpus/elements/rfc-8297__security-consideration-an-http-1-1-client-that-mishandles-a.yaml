@@ -1,0 +1,9 @@
+document: rfc-8297
+kind: security-consideration
+summary: An HTTP/1.1 client that mishandles a 103 informational response as a final response may consider all responses to succeeding requests on the same connection to be part of that final response, which could constitute a cross-origin information disclosure vulnerability when the client multiplexes requests to different origins onto a single persistent connection.
+section: "3"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

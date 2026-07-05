@@ -1,0 +1,11 @@
+document: rfc-8295
+kind: normative-requirement
+summary: If a symmetric key package (or encrypted key package) that is digitally signed is received by the client, the client MUST reject it if the digital signature does not validate back to an authorized TA. The server similarly MUST reject a digitally signed key package receipt or error that does not validate to an authorized TA.
+section: 5.1.2
+rfc2119_level: MUST
+topics:
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

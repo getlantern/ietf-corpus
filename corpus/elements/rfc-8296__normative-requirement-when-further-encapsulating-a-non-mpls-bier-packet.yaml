@@ -1,0 +1,10 @@
+document: rfc-8296
+kind: normative-requirement
+summary: When further encapsulating a non-MPLS BIER packet, the outer encapsulation's next-protocol codepoint MUST be set to a value meaning 'non-MPLS BIER' and MUST NOT use an MPLS codepoint. For Ethernet, the Ethertype MUST NOT be 0x8847 or 0x8848; IEEE-assigned Ethertype 0xAB37 MUST be used.
+section: 2.2.3
+rfc2119_level: MUST
+topics:
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

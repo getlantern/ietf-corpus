@@ -1,0 +1,11 @@
+document: rfc-8299
+kind: security-consideration
+summary: The YANG module `ietf-l3vpn-svc` defines configuration data nodes that are readable and writable; unauthorized access could allow an attacker to read sensitive VPN topology and addressing information, or to modify VPN configurations, potentially disrupting service or enabling traffic interception. Implementations MUST use secure management protocols (e.g., NETCONF over SSH) and enforce appropriate access control (e.g., NACM per RFC 8341).
+section: "10"
+topics:
+    - yang
+    - vpn
+    - security
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

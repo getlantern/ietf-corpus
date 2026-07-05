@@ -1,0 +1,9 @@
+document: rfc-8300
+kind: normative-requirement
+summary: The Version field MUST be set to 0x0 by the sender. If an SFF receives an NSH packet with an unrecognized version, the packet MUST be discarded and the event SHOULD be logged. Version 01b is reserved and MUST NOT be used in future versions.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8305
+kind: design-rationale
+summary: The algorithm interleaves address families rather than exhausting one family at a time to avoid waiting through a long list of addresses from a given family if connectivity over that family is impaired. This provides the racing benefit of Happy Eyeballs across all resolved addresses, not just the first IPv4 and first IPv6 pair.
+section: "4"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

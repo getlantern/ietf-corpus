@@ -1,0 +1,11 @@
+document: rfc-8305
+kind: protocol-element
+summary: To handle hostnames with broken AAAA records (valid addresses that never reply) on IPv6-only/NAT64 networks, the client starts a Last Resort Local Synthesis Delay timer (recommended 2 seconds) when the last connection attempt fires. If no connection succeeds when the timer fires, the client queries the DNS for the A record and synthesizes an IPv6 address locally.
+section: "7.2"
+topics:
+    - dns
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

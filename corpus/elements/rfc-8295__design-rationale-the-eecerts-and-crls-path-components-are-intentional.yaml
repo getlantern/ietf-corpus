@@ -1,0 +1,9 @@
+document: rfc-8295
+kind: design-rationale
+summary: 'The /eecerts and /crls path components are intentional push-only mechanisms rather than general-purpose repository queries: the server knows a priori (via out-of-band configuration) which peer certificates and CRLs the client will need, so pushing them during bootstrapping avoids requiring the client to parse CRL Distribution Point extensions and make additional round trips.'
+section: "1"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

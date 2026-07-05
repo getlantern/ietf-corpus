@@ -1,0 +1,8 @@
+document: rfc-8300
+kind: design-rationale
+summary: The TTL field is the primary loop-prevention mechanism, decrement by each SFF, complementing the Service Index (which is decremented by SFs). Handling of an incoming 0 TTL (resulting in value 63) allows better interoperation with pre-standard implementations that do not support the TTL field.
+section: "2.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

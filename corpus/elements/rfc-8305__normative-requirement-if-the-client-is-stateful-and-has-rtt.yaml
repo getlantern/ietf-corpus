@@ -1,0 +1,11 @@
+document: rfc-8305
+kind: normative-requirement
+summary: If the client is stateful and has RTT history, it SHOULD add a Destination Address Selection rule between rules 8 and 9 preferring lower-RTT addresses, and another rule preferring previously used addresses. This historical RTT data MUST NOT be used across different network interfaces and SHOULD be flushed when the network changes.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - v6ops
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

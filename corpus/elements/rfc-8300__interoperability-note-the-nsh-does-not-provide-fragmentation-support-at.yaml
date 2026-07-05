@@ -1,0 +1,9 @@
+document: rfc-8300
+kind: interoperability-note
+summary: The NSH does not provide fragmentation support at the service plane; fragmentation must be handled by the transport encapsulation protocol. When NSH is encapsulated in IP, IP-level fragmentation coupled with PMTUD (e.g., RFC 8201) is used, requiring ICMP packets not be blocked.
+section: "5"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

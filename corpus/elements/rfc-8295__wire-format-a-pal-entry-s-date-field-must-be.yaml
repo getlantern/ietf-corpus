@@ -1,0 +1,9 @@
+document: rfc-8295
+kind: wire-format
+summary: A PAL entry's 'date' field MUST be encoded as Generalized Time in exactly 20 characters (YYYY-MM-DDTHH:MM:SSZ); implementations SHOULD NOT rely on sub-second resolution and MUST NOT generate leap-second instants. The 'type' field is a 4-digit string; 'size' is a nonNegativeInteger (zero means the client must initiate a transaction or return a receipt/error); 'info' is a choice of dn (string per RFC 4514), ski (hexBinary), iasn (issuer+serial), or uri.
+section: "2.1"
+topics:
+    - pkix
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
