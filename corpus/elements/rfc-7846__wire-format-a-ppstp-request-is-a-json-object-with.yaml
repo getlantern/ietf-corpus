@@ -1,0 +1,9 @@
+document: rfc-7846
+kind: wire-format
+summary: 'A PPSTP request is a JSON object with root key ''PPSPTrackerProtocol'' containing fields: version (integer), request_type (string: ''CONNECT''|''FIND''|''STAT_REPORT''), transaction_id (string), peer_id (string), and request_data (one of connect, find, or stat_report objects). All messages are sent via HTTP POST with Content-Type application/ppsp-tracker+json.'
+section: 3.3.3
+topics:
+    - http
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

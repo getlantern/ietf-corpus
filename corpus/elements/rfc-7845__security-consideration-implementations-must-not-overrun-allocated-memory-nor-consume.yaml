@@ -1,0 +1,8 @@
+document: rfc-7845
+kind: security-consideration
+summary: Implementations MUST NOT overrun allocated memory nor consume excessive resources when decoding payloads. Comment headers with inflated string length or user comment count fields could trigger integer overflow or excessive memory allocation; implementations should validate sizes before allocating.
+section: "8"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

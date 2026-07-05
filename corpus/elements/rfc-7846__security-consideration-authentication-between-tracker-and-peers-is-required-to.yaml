@@ -1,0 +1,9 @@
+document: rfc-7846
+kind: security-consideration
+summary: Authentication between tracker and peers is required to prevent unauthorized peers from joining swarms or obtaining peer lists. The recommended mechanism is TLS Client Authentication; HTTP Digest Access Authentication (RFC 7616) MUST also be supported. The tracker validates peer authentication information on every CONNECT request.
+section: "6.1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

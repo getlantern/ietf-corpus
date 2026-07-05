@@ -1,0 +1,9 @@
+document: rfc-7843
+kind: design-rationale
+summary: The THIRD_PARTY_ID option was introduced because some CGN deployments use overlapping private/shared IP address spaces (RFC 1918, RFC 6598) for different subscribers, requiring an additional identifier (e.g., tunnel ID) beyond the IP address to uniquely identify internal hosts. The THIRD_PARTY option alone is insufficient in these L2-aware NAT scenarios.
+section: "1"
+topics:
+    - pcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

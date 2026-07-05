@@ -1,0 +1,10 @@
+document: rfc-7830
+kind: security-consideration
+summary: The Padding option only provides a privacy benefit when DNS packets are not transported in cleartext. Using it over unencrypted transport wastes bandwidth and may make DNS amplification attacks easier; implementations MUST NOT use the option without encrypted transport.
+section: "6"
+topics:
+    - dns
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

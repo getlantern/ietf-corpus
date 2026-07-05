@@ -1,0 +1,6 @@
+document: rfc-7846
+kind: state-machine
+summary: 'The tracker-level state machine has three states: INIT (no peers connected), STARTED (at least one peer ID registered), and TERMINATED (last peer ID removed, transient—immediately returns to INIT). The machine transitions from INIT to STARTED when the first peer registers, and from STARTED to TERMINATED (then immediately INIT) when the last registration is removed.'
+section: "2.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

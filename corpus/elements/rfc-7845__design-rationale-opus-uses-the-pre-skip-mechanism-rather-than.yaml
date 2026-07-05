@@ -1,0 +1,6 @@
+document: rfc-7845
+kind: design-rationale
+summary: Opus uses the pre-skip mechanism rather than Vorbis's trimmed granule position approach because the encoder might introduce more than a single packet's worth of latency, and very large packets in streams with many channels might not fit on a single page.
+section: "4.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

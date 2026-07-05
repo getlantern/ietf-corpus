@@ -1,0 +1,9 @@
+document: rfc-7838
+kind: security-consideration
+summary: Server-side applications may confuse connection context with security context (e.g., equating port 443 with https://), which can lead to sending sensitive data over an insecure alternative service. Servers should use the URI scheme as carried by the protocol (e.g., ':scheme' in HTTP/2) rather than connection properties to determine security context.
+section: "9.5"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-7846
+kind: interoperability-note
+summary: The CONNECT request may contain peer_addr elements with ICE (RFC 5245) candidate information. If STUN (RFC 5389) or TURN (RFC 5766) is used to gather candidates, peer_addr SHOULD NOT be present in the response. If no STUN is used and the tracker can inspect the peer's public address, it can return it with type 'REFLEXIVE'.
+section: 4.1.1
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

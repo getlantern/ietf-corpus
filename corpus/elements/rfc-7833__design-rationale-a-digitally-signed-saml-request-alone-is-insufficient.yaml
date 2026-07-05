@@ -1,0 +1,9 @@
+document: rfc-7833
+kind: design-rationale
+summary: A digitally signed SAML request alone is insufficient to establish the identity of the RP because a malicious RADIUS entity could relay the SAML message in a different RADIUS exchange without the original issuer's consent; the RADIUS client identity must therefore be confirmed via trusted metadata or a signed message containing that identity.
+section: 4.3.2
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

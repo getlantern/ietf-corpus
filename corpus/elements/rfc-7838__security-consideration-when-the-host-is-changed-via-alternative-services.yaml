@@ -1,0 +1,12 @@
+document: rfc-7838
+kind: security-consideration
+summary: When the host is changed via alternative services, attackers could hijack communication by masquerading as an origin. Alternative services could be used to persist such attacks by directing traffic to an attacker's service with a large freshness lifetime. Implementations MUST perform certificate-pinning validation on alternative services just as for direct connections to the origin.
+section: "9.2"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

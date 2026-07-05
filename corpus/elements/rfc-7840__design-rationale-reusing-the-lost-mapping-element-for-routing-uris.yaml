@@ -1,0 +1,9 @@
+document: rfc-7840
+kind: design-rationale
+summary: Reusing the LoST <mapping> element for routing URIs was rejected because the mandatory 'source' attribute requires an authoritative LoST application-unique string, but there may be no authoritative LoST server in this scenario, making any value misleading. Additionally, routing information returned via HELD should not be cached, making the expiry and last-updated fields of <mapping> irrelevant.
+section: "3.1"
+topics:
+    - realtime
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

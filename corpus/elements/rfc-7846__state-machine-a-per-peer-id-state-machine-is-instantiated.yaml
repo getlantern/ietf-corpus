@@ -1,0 +1,6 @@
+document: rfc-7846
+kind: state-machine
+summary: 'A per-Peer-ID state machine is instantiated for each registered peer with states: START (transient, on registration), PEER REGISTERED (after CONNECT received), TRACKING (after successful swarm action processing), and TERMINATE (transient, on deregistration or error). Timeout of the ''track timer'' in TRACKING state causes cleanup and transition to TERMINATE. The machine is destroyed on entering TERMINATE.'
+section: "2.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-7838
+kind: security-consideration
+summary: When the ALPN protocol is changed via an alternative service, the security properties of the new connection may differ. Clients cannot blindly use alternative services but must evaluate that security requirements of specifications, implementations, and end users are met — for example, an 'https://' URI must not be redirected to a protocol without end-to-end encryption.
+section: "9.3"
+topics:
+    - http
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

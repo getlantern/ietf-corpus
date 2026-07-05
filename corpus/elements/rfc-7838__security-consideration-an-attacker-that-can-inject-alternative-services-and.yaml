@@ -1,0 +1,9 @@
+document: rfc-7838
+kind: security-consideration
+summary: An attacker that can inject alternative services and listen at the advertised port can hijack an origin. On servers with user-controlled pages on shared ports or less-privileged ports, an attacker can redirect traffic for an entire origin to an attacker-controlled port using the Alt-Svc header field. This risk is mitigated by the host authentication requirements in Section 2.1.
+section: "9.1"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
