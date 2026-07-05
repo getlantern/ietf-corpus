@@ -1,0 +1,8 @@
+document: rfc-8449
+kind: design-rationale
+summary: '`max_fragment_length` is asymmetric by design flaw: it limits what the server sends to the client''s stated limit, but cannot limit what the client receives from a more constrained server. `record_size_limit` fixes this by letting each endpoint independently advertise the limit it is willing to receive.'
+section: "3"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

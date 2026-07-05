@@ -1,0 +1,11 @@
+document: rfc-8450
+kind: security-consideration
+summary: To avoid buffer overruns, the receiver MUST consider both the reported Fragment Length field and the actual received size of a packet containing slice data. Transmitters decoding variable-length coded headers to extract VC-2 bitstream data before assembling packets are also potentially subject to buffer overruns if not implemented carefully.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

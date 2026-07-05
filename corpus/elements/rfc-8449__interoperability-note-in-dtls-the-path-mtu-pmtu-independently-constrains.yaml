@@ -1,0 +1,9 @@
+document: rfc-8449
+kind: interoperability-note
+summary: In DTLS, the Path MTU (PMTU) independently constrains record sizes. The `record_size_limit` extension SHOULD be set independently of PMTU discovery because the limit is fixed at handshake time based on endpoint constraints, whereas PMTU is dynamic.
+section: "4"
+topics:
+    - tls
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

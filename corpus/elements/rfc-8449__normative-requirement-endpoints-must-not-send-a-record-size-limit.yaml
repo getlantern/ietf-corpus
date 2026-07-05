@@ -1,0 +1,10 @@
+document: rfc-8449
+kind: normative-requirement
+summary: Endpoints MUST NOT send a `record_size_limit` extension with a value smaller than 64. An endpoint MUST treat receipt of a value smaller than 64 as a fatal error and generate an `illegal_parameter` alert.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

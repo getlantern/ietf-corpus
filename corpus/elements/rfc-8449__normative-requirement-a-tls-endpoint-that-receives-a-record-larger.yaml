@@ -1,0 +1,10 @@
+document: rfc-8449
+kind: normative-requirement
+summary: A TLS endpoint that receives a record larger than its advertised RecordSizeLimit MUST generate a fatal `record_overflow` alert. A DTLS endpoint in the same situation MAY either generate the alert or silently discard the record.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

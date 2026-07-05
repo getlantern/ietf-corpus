@@ -1,0 +1,9 @@
+document: rfc-8445
+kind: state-machine
+summary: 'Each candidate pair has one of five states: Frozen (initial; cannot be checked yet), Waiting (unfrozen; ready to check), In-Progress (check sent; awaiting response), Succeeded (check succeeded), or Failed (check failed or timed out). Transitions: Frozen→Waiting (unfreeze), Waiting→In-Progress (perform), In-Progress→Succeeded or Failed.'
+section: 6.1.2.6
+topics:
+    - nat
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

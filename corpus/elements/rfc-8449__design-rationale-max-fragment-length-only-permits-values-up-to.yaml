@@ -1,0 +1,8 @@
+document: rfc-8449
+kind: design-rationale
+summary: '`max_fragment_length` only permits values up to 2^12, which is smaller than the protocol''s 2^14 maximum, and RFC 6066 requires servers to abort with `illegal_parameter` on unknown values, making it impossible to add a 2^14 codepoint without breaking existing servers.'
+section: "3"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

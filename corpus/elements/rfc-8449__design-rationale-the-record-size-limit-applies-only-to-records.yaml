@@ -1,0 +1,8 @@
+document: rfc-8449
+kind: design-rationale
+summary: The record size limit applies only to records sent toward the advertising endpoint; a sender may transmit records larger than its own advertised limit. This reflects that encryption is not atomically constrained the same way decryption is for AEAD ciphers.
+section: "4"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

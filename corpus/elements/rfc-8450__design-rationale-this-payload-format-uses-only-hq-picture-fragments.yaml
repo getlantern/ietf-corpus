@@ -1,0 +1,9 @@
+document: rfc-8450
+kind: design-rationale
+summary: This payload format uses only HQ Picture Fragments (PC=0xEC), not HQ Pictures (PC=0xE8), because Fragments are specifically designed to facilitate transmission via packet-based protocols such as RTP. High Quality Pictures can be transported by converting them into an equivalent set of Fragments sized to fit within the network MTU.
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

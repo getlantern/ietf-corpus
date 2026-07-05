@@ -1,0 +1,10 @@
+document: rfc-8449
+kind: design-rationale
+summary: AEAD ciphers require an entire record to be present before decryption and authentication can complete; incremental processing exposes endpoints to forged data. This is the core motivation for allowing constrained receivers to negotiate smaller record sizes.
+section: "1"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

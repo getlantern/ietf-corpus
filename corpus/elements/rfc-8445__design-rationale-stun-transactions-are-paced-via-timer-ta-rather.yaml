@@ -1,0 +1,10 @@
+document: rfc-8445
+kind: design-rationale
+summary: STUN transactions are paced via timer Ta rather than sent as fast as possible to avoid overloading NAT binding tables, STUN/TURN servers, and the network path. The recommended Ta formula (default ~50 ms) is based on the number of active data streams and an assumed bandwidth target for signaling traffic.
+section: B.1
+topics:
+    - nat
+    - webrtc
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

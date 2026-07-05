@@ -1,0 +1,10 @@
+document: rfc-8445
+kind: design-rationale
+summary: The STUN username in connectivity checks is formed by concatenating both agents' username fragments to prevent cross-session replay attacks and to allow the receiving agent to unambiguously look up the correct password. A globally unique username per session is required because STUN short-term credentials do not include a session identifier.
+section: B.4
+topics:
+    - security
+    - nat
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
