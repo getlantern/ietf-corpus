@@ -1,0 +1,8 @@
+document: rfc-8508
+kind: design-rationale
+summary: Similar to MOVE (RFC 6851), REPLACE ensures that intermediate states — such as a message flagged \Deleted before expunge — do not occur and are not visible to other clients or Sieve scripts. The response codes for APPEND and EXPUNGE are returned, but the STORE response code is suppressed.
+section: "3.4"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

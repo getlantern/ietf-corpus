@@ -1,0 +1,9 @@
+document: rfc-8508
+kind: security-consideration
+summary: The REPLACE command is believed to add no security problems beyond those of the base IMAP specification. It may actually prevent some potential security problems because it avoids the intermediate message states (message temporarily flagged \Deleted but not yet expunged) that could be exploited by an attacker observing or interacting with the mailbox.
+section: "6"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

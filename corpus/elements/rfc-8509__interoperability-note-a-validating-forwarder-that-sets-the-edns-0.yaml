@@ -1,0 +1,8 @@
+document: rfc-8509
+kind: interoperability-note
+summary: A validating forwarder that sets the EDNS(0) CD bit on all forwarded queries acts identically to a standalone resolver for sentinel purposes. However, if both the local validating resolver and the forwarder target support the sentinel mechanism but disagree on trusted key state and CD is not set, results are indeterminate (Vind or 'other').
+section: "3.1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

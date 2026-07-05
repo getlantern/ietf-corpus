@@ -1,0 +1,8 @@
+document: rfc-8514
+kind: design-rationale
+summary: 'The save date attribute was introduced because the existing internal date attribute can be set to an arbitrary value for messages delivered via APPEND and is usually copied from the source for COPY, making it unreliable for determining when a message arrived in its current mailbox. A concrete use case is expiring messages in a Trash mailbox: internal date reflects original receipt time, not when the user moved the message to Trash.'
+section: "1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

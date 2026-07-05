@@ -1,0 +1,10 @@
+document: rfc-8509
+kind: normative-requirement
+summary: 'All six preconditions must be satisfied to trigger sentinel special processing: the response is DNSSEC-validated with a Secure result, the EDNS(0) CD bit is not set, QTYPE is A or AAAA, OPCODE is QUERY, and the leftmost label matches a sentinel pattern. If any precondition fails, the resolver MUST NOT alter the DNS response.'
+section: "2.1"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

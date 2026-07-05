@@ -1,0 +1,10 @@
+document: rfc-8513
+kind: security-consideration
+summary: All writable data nodes in the module are considered sensitive. An attacker with write access could redirect B4 traffic by changing 'aftr-ipv6-addr', cause fragmentation by lowering 'tunnel-mtu', enable resource exhaustion by inflating 'max-softwires-per-subscriber', disrupt state migration by setting 'state-migrate' to false, ease DoS by lowering 'b4-address-change-limit', or degrade QoS-based policies by disabling DSCP preservation.
+section: "4"
+topics:
+    - security
+    - v6ops
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

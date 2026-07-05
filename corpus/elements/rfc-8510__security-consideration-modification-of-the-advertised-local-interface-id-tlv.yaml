@@ -1,0 +1,10 @@
+document: rfc-8510
+kind: security-consideration
+summary: Modification of the advertised Local Interface ID TLV may result in the wrong neighbor Interface ID being advertised in the OSPFv2 Extended Link Opaque LSA, potentially preventing the link from being used. If authentication is used in the OSPF routing domain, the Cryptographic Authentication TLV SHOULD also protect the LLS block contents.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8509
+kind: protocol-element
+summary: 'For multi-resolver environments, the test uses three queries: a bogus-signed name, ''root-key-sentinel-not-ta-<KSK-current>'', and ''root-key-sentinel-is-ta-<KSK-new>''. Response triplets (S=SERVFAIL, A=answer) yield four outcomes: (A * *) means non-validating resolver present; (S A *) means indeterminate; (S S A) means no negative impact from KSK roll; (S S S) means user will be negatively impacted.'
+section: "4.3"
+topics:
+    - dns
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

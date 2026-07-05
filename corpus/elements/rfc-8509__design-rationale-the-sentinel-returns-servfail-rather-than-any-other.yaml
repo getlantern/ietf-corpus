@@ -1,0 +1,8 @@
+document: rfc-8509
+kind: design-rationale
+summary: The sentinel returns SERVFAIL (rather than any other signal) because SERVFAIL is the existing DNSSEC validation-failure response code, allowing the mechanism to be layered onto existing resolver behavior without requiring clients to distinguish a new response type.
+section: "2.2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

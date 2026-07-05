@@ -1,0 +1,8 @@
+document: rfc-8508
+kind: design-rationale
+summary: Quota implications of the APPEND portion of REPLACE are evaluated within the context of the pending EXPUNGE, so that only the net quota consumption is considered. This avoids the failure mode of the legacy APPEND/STORE/EXPUNGE sequence where APPEND could fail due to an over-quota condition even though the subsequent expunge would free sufficient space.
+section: "3.4"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

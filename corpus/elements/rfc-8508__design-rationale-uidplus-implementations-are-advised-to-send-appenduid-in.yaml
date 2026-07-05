@@ -1,0 +1,8 @@
+document: rfc-8508
+kind: design-rationale
+summary: UIDPLUS implementations are advised to send APPENDUID in an untagged OK before EXPUNGE responses rather than in the tagged OK. Sending APPENDUID in the tagged OK causes the client to receive EXPUNGE for the old message before learning the UID of the new message, which is unnecessarily difficult to process usefully.
+section: "4.3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

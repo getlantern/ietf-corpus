@@ -1,0 +1,9 @@
+document: rfc-8512
+kind: design-rationale
+summary: 'No mapping table is maintained for stateless NAT variants: NPTv6 (stateless and transport-agnostic), EAM (no per-flow mapping), SIIT (internal nodes use IPv4-translatable IPv6 addresses), and CLAT when a dedicated /64 prefix is provided. Keeping the mapping-table optional avoids imposing stateful overhead on inherently stateless mechanisms.'
+section: "2.8"
+topics:
+    - nat
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

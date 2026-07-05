@@ -1,0 +1,10 @@
+document: rfc-8503
+kind: state-machine
+summary: 'mvpnMrouteNextHopState has two states: pruned(1) and forwarding(2). In the pruned state, mvpnMrouteNextHopExpiryTime counts down the remaining prune lifetime; upon expiry the entry transitions to forwarding(2). In forwarding state, the expiry time indicates when the entry will be aged out.'
+section: "3.2"
+topics:
+    - multicast
+    - routing
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

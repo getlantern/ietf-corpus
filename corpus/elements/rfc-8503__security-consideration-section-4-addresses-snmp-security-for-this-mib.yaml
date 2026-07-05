@@ -1,0 +1,13 @@
+document: rfc-8503
+kind: security-consideration
+summary: Section 4 addresses SNMP security for this MIB. Read-write objects (mvpnSPTunnelLimit, BGP timers and thresholds) can be used to misconfigure MVPN behavior, potentially causing service disruption; implementations should apply appropriate access controls such as SNMPv3 with authentication and privacy. Read-only objects expose sensitive topology information (peer addresses, tunnel types, route details) that could aid network reconnaissance.
+section: "4"
+topics:
+    - multicast
+    - mpls
+    - bgp
+    - snmp
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8503
+kind: interoperability-note
+summary: Several conceptual rows use multi-component OID indexes that can exceed 128 sub-identifiers when address strings are long (e.g., mvpnSpmsiEntry warns if mplsL3VpnVrfName + group addr + source addr exceeds 113 octets). Such rows cannot be accessed via SNMPv1, SNMPv2c, or SNMPv3.
+section: "3.2"
+topics:
+    - multicast
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

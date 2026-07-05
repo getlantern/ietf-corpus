@@ -1,0 +1,11 @@
+document: rfc-8512
+kind: security-consideration
+summary: The ietf-nat module exposes sensitive operational data (subscriber addresses, active port mappings, external address pools) and security-relevant configuration. NACM (RFC 8341) MUST be used to restrict access, and NETCONF or RESTCONF sessions MUST run over a secure transport (TLS or SSH) to prevent eavesdropping or tampering.
+section: "4"
+topics:
+    - nat
+    - yang
+    - security
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

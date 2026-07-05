@@ -1,0 +1,9 @@
+document: rfc-8516
+kind: security-consideration
+summary: A client should trust the 4.29 response code only to the extent that it trusts the underlying security mechanisms (e.g., DTLS) for authentication and freshness. An unauthenticated 4.29 response can be spoofed by an attacker to force the client to wait an extended period before retrying.
+section: "5"
+topics:
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

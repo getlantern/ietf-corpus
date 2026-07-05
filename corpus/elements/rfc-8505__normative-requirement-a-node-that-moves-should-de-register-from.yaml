@@ -1,0 +1,11 @@
+document: rfc-8505
+kind: normative-requirement
+summary: A node that moves SHOULD de-register from the old 6LR and register to a new 6LR with an incremented TID. An asynchronous NA(EARO) or EDAC with status 'Moved' SHOULD be used to clean up state at the previous location; the receiver MUST clean up said state.
+section: "5.7"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
