@@ -1,0 +1,10 @@
+document: rfc-7829
+kind: design-rationale
+summary: Frequent path changes (path-bouncing) caused by SCTP-PF are not harmful in practice because SCTP maintains per-destination path parameters (CWND, ssthresh, RTT, error count) independently. When migrating to a new path, SCTP starts with the minimal initial CWND, limiting packet reordering or duplication.
+section: B
+topics:
+    - sctp
+    - multipath
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

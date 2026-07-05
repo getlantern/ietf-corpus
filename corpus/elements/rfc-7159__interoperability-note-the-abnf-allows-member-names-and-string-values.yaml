@@ -1,8 +1,8 @@
 document: rfc-7159
 kind: interoperability-note
-summary: The ABNF allows member names and string values to contain bit sequences that cannot encode valid Unicode characters (e.g., a single unpaired UTF-16 surrogate `\uDEAD`). Software receiving such values may behave unpredictably, including returning wrong string lengths or fatal exceptions.
+summary: The ABNF allows member names and string values to contain bit sequences that cannot encode valid Unicode characters (e.g., unpaired UTF-16 surrogates like '\uDEAD'). Software receiving such values behaves unpredictably, potentially returning wrong string lengths or suffering fatal runtime exceptions.
 section: "8.2"
 topics:
     - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-05-23"
+extracted_at: "2026-07-05"

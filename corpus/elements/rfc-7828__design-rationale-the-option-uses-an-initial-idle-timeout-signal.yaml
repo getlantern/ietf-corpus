@@ -1,0 +1,9 @@
+document: rfc-7828
+kind: design-rationale
+summary: The option uses an initial idle-timeout signal rather than a default-persistent model with a close signal (as HTTP/1.1 uses) because RFC 6891 prohibits including an OPT RR in a response when the request lacks one, preventing servers from signalling timeout changes if the client stops sending OPT RRs.
+section: "3.4"
+topics:
+    - dns
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

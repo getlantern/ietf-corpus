@@ -1,0 +1,10 @@
+document: rfc-7829
+kind: design-rationale
+summary: Forced switchback to the original primary path after recovery (RFC 4960 default) is suboptimal because the CWND on the primary path must be rebuilt from scratch. Primary Path Switchover eliminates this by permanently switching the primary to the currently working path when the old primary's error counter exceeds PSMR.
+section: "5"
+topics:
+    - sctp
+    - multipath
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

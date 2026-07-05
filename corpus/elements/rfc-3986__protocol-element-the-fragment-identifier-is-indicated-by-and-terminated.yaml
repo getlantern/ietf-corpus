@@ -1,6 +1,8 @@
 document: rfc-3986
 kind: protocol-element
-summary: 'The fragment identifier is indicated by "#" and terminated by the end of the URI: fragment = *( pchar / "/" / "?" ). Fragment semantics are defined by the media type of the retrieved representation, not the URI scheme; fragment identification is separated from the URI before dereference and resolved solely by the user agent.'
+summary: 'The fragment identifier is indicated by "#" and terminated by end of URI: fragment = *( pchar / "/" / "?" ). Fragment semantics are defined by the media type of the representation, not the URI scheme, and are processed solely by the user agent prior to any dereference.'
 section: "3.5"
+topics:
+    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-05-24"
+extracted_at: "2026-07-05"

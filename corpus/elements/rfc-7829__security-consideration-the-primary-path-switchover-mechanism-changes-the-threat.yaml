@@ -1,0 +1,10 @@
+document: rfc-7829
+kind: security-consideration
+summary: 'The Primary Path Switchover mechanism changes the threat model materially: on-path attackers can force a permanent primary path change by blocking the primary long enough to trigger the switchover. The risk is highest when PSMR = PFMR = 0, where switchover occurs on the very first RTO timeout. Implementers and users of Primary Path Switchover should be aware of this.'
+section: "8"
+topics:
+    - sctp
+    - security
+    - multipath
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

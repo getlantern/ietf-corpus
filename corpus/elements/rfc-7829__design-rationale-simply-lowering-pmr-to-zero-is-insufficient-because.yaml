@@ -1,0 +1,9 @@
+document: rfc-7829
+kind: design-rationale
+summary: Simply lowering PMR to zero is insufficient because RFC 4960 governs HEARTBEAT recovery using HB.Interval (typically 30 s), causing a long delay before SCTP can verify whether a spurious failover occurred and resume on the original path. SCTP-PF solves this by sending HEARTBEATs once per RTO on PF-state destinations, enabling rapid recovery detection.
+section: A.1
+topics:
+    - sctp
+    - multipath
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

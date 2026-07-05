@@ -1,9 +1,10 @@
 document: rfc-7159
 kind: normative-requirement
-summary: The names within an object SHOULD be unique. When names are not unique, behavior of receiving software is unpredictable — many implementations report the last name/value pair only, others report an error.
+summary: The names within an object SHOULD be unique. When names are not unique, the behavior of receiving software is unpredictable, with implementations varying between reporting the last pair, reporting an error, or reporting all pairs including duplicates.
 section: "4"
 rfc2119_level: SHOULD
 topics:
     - json
+    - interoperability-note
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-06-28"
+extracted_at: "2026-07-05"

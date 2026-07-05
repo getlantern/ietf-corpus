@@ -1,0 +1,9 @@
+document: rfc-7829
+kind: normative-requirement
+summary: For Primary Path Switchover, implementations MUST reject PSMR settings where PSMR < PFMR (SCTP-PF) or PSMR < PMR (standard SCTP). For SCTP-PF, spt_pathcpthld < spt_pathpfthld MUST be rejected with errno EINVAL.
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

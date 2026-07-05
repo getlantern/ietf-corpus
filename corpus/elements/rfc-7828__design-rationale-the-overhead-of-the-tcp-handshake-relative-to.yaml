@@ -1,0 +1,9 @@
+document: rfc-7828
+kind: design-rationale
+summary: The overhead of the TCP handshake relative to total session cost follows the formula (1+N)/N, where N is the number of DNS message pairs sharing the session; as N increases the overhead approaches unity, making long-lived TCP sessions efficient and motivating the keepalive mechanism.
+section: "1"
+topics:
+    - dns
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

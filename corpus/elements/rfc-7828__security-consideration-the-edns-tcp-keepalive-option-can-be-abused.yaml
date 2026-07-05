@@ -1,0 +1,11 @@
+document: rfc-7828
+kind: security-consideration
+summary: The edns-tcp-keepalive option can be abused to request large numbers of long-lived sessions in a quick burst; when a DNS server detects abusive behaviour, it SHOULD immediately close the TCP connection and free the associated resources.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - dns
+    - security
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

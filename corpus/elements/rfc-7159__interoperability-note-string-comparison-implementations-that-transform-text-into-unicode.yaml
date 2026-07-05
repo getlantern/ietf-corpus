@@ -1,8 +1,8 @@
 document: rfc-7159
 kind: interoperability-note
-summary: String comparison implementations that transform text into Unicode code unit sequences and compare numerically are interoperable; implementations comparing strings with escaped characters unconverted may incorrectly find that 'a\\b' and 'a\u005Cb' are not equal.
+summary: String comparison implementations that transform text into Unicode code unit sequences and compare numerically code-unit by code-unit are interoperable. Implementations comparing escaped characters unconverted may incorrectly find '"a\\b"' and '"a\u005Cb"' unequal.
 section: "8.3"
 topics:
     - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-06-15"
+extracted_at: "2026-07-05"

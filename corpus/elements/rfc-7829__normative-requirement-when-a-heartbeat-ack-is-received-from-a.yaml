@@ -1,0 +1,10 @@
+document: rfc-7829
+kind: normative-requirement
+summary: When a HEARTBEAT ACK is received from a PF-state destination, the sender SHOULD clear the error counter and transition that destination back to active state. Resuming data transmission after this transition MUST follow RFC 4960 Section 7.2 (congestion window handling).
+section: "3.2"
+rfc2119_level: SHOULD
+topics:
+    - sctp
+    - multipath
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
