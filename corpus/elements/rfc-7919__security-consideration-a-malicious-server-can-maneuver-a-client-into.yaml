@@ -1,0 +1,10 @@
+document: rfc-7919
+kind: security-consideration
+summary: A malicious server can maneuver a client into selecting a premaster secret of the server's choice using a weak FFDHE group, which can then be replayed against a non-FFDHE server to bootstrap client authentication. Clients concerned about this attack (e.g., those using client certificate authentication) should reject non-negotiated FFDHE cipher suites with unverified group structure and reconnect without FFDHE cipher suites.
+section: "8.7"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

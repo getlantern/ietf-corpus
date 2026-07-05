@@ -1,0 +1,10 @@
+document: rfc-7919
+kind: security-consideration
+summary: The contents of the Supported Groups extension are covered by the TLS Finished message hash, so an active MITM that strips or modifies the extension will cause the handshake to fail. Impersonation attacks that manipulate the offered group list (upward or downward) are caught at the Finished check, preventing undetected downgrade to a weaker group.
+section: "8.1"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

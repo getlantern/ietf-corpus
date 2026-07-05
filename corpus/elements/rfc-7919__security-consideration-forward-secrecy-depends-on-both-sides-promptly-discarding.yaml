@@ -1,0 +1,10 @@
+document: rfc-7919
+kind: security-consideration
+summary: Forward secrecy depends on both sides promptly discarding ephemeral key material. Implementations SHOULD wipe FFDHE secret key material from memory as soon as it is no longer needed and MUST NOT store it in persistent storage. The strength of the DH group must also match the symmetric cipher to avoid shifting the adversary's attack to the weaker component.
+section: "8.8"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

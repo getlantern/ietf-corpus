@@ -1,0 +1,12 @@
+document: rfc-7915
+kind: normative-requirement
+summary: Translators MUST update transport-layer checksums for TCP and ICMP packets and for UDP packets with a non-zero checksum, when using a non-checksum-neutral address mapping algorithm. For UDP packets with a zero checksum, the translator SHOULD either drop the packet (generating a management event) or calculate an IPv6 checksum before forwarding.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+    - udp
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

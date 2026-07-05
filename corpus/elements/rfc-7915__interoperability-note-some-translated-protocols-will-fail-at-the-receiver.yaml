@@ -1,0 +1,11 @@
+document: rfc-7915
+kind: interoperability-note
+summary: 'Some translated protocols will fail at the receiver: IPsec Authentication Header (protocol 51) is known to fail when translated. Transport mode ESP will fail with IPv6-to-IPv4 translation unless checksum-neutral addresses are used; in both cases, IPsec ESP endpoints will normally detect the translator and encapsulate ESP in UDP (RFC 3948).'
+section: "5.1"
+topics:
+    - ip
+    - v6ops
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

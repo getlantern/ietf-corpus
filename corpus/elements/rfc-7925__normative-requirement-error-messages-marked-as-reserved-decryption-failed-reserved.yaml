@@ -1,0 +1,9 @@
+document: rfc-7925
+kind: normative-requirement
+summary: Error messages marked as RESERVED (decryption_failed_RESERVED, no_certificate_RESERVED, export_restriction_RESERVED) MUST NOT be used with this profile. The TLS server MUST return decrypt_error instead of unknown_psk_identity for PSK ciphersuites.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

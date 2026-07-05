@@ -1,0 +1,12 @@
+document: rfc-7909
+kind: normative-requirement
+summary: 'During signature validation, the verifier MUST: check syntax of the "signature" attribute, fetch and validate the certificate per RFC 6487, verify the signed attribute list includes the minimum required set, apply canonicalization, then verify the cryptographic signature using the algorithm in "m", the public key from "c", and the value in "b".'
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

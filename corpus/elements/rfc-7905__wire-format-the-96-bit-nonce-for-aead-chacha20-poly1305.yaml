@@ -1,0 +1,9 @@
+document: rfc-7905
+kind: wire-format
+summary: The 96-bit nonce for AEAD_CHACHA20_POLY1305 in TLS is formed by serializing the 64-bit record sequence number as an 8-byte big-endian value, left-padding with four 0x00 bytes, then XORing with the sender's write_IV (client_write_IV or server_write_IV). SecurityParameters.fixed_iv_length is 12 bytes and SecurityParameters.record_iv_length is 0 bytes.
+section: "2"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

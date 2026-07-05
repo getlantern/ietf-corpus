@@ -1,0 +1,10 @@
+document: rfc-7919
+kind: interoperability-note
+summary: A client that rejects a non-compatible server's custom FFDHE group MAY retry the connection omitting all FFDHE cipher suites, but SHOULD only do so after successfully verifying the server's signature over ServerDHParams to avoid being forced by an active attacker into a non-preferred cipher suite.
+section: "3.1"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

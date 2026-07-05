@@ -1,0 +1,9 @@
+document: rfc-7925
+kind: security-consideration
+summary: IoT devices often lack sources of randomness available on desktop systems (mouse movement, keystroke timing, hard drive turbulence). Insufficient entropy can cause the same keys to be generated repeatedly. Dedicated hardware RNGs or alternative entropy sources must be used, and deriving shared secrets from low-entropy sources such as passwords or device identifiers is not secure.
+section: "12"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

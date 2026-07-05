@@ -1,0 +1,9 @@
+document: rfc-7909
+kind: design-rationale
+summary: Strict canonicalization rules are required because destination databases may transform submitted data after signing (e.g., notational changes to IP prefixes, auto-modification of "changed" attributes, different line endings across systems), which would otherwise cause signature verification to fail.
+section: "3.1"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-7919
+kind: design-rationale
+summary: 'This document defines new FFDHE groups rather than reusing IKE groups (e.g., strongSwan''s MODP groups) for three reasons: sharing groups across protocols increases the value to an attacker who cracks a single group; IKE groups include weak entries like MODP768; and mixing group parameters across implementations risks cross-protocol attacks.'
+section: "8.5"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

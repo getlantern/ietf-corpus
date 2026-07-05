@@ -1,0 +1,10 @@
+document: rfc-7924
+kind: normative-requirement
+summary: The fingerprint MUST be computed as the SHA-256 hash of the full handshake message (not including record-layer type/length). New hash algorithms added for future cached info types MUST NOT have collision resistance worse than SHA-256.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

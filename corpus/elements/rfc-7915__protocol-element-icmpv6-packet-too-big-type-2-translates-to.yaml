@@ -1,0 +1,10 @@
+document: rfc-7915
+kind: protocol-element
+summary: 'ICMPv6 Packet Too Big (Type 2) translates to ICMPv4 Destination Unreachable (Type 3) with Code 4. The MTU field MUST be adjusted for the difference between IPv4 and IPv6 header sizes: minimum((MTU in Packet Too Big)-20, MTU_of_IPv4_nexthop, (MTU_of_IPv6_nexthop)-20).'
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

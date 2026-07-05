@@ -1,0 +1,9 @@
+document: rfc-7915
+kind: wire-format
+summary: 'ICMPv4 Parameter Problem pointer values are translated to ICMPv6 using a defined mapping table: IPv4 pointer 0 (Version/IHL) → IPv6 pointer 0; pointer 1 (TOS) → pointer 1; pointers 2,3 (Total Length) → pointer 4; pointer 8 (TTL) → pointer 7; pointer 9 (Protocol) → pointer 6; pointers 12-15 (Source) → pointer 8; pointers 16-19 (Destination) → pointer 24. Unmapped pointer values result in the packet being silently dropped.'
+section: "4.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

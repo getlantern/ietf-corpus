@@ -1,0 +1,11 @@
+document: rfc-7919
+kind: normative-requirement
+summary: A compatible client that accepts FFDHE cipher suites using custom groups from non-compatible servers MUST reject any group with |dh_p| < 768 bits and SHOULD reject any group with |dh_p| < 1024 bits.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

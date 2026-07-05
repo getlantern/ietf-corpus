@@ -1,0 +1,10 @@
+document: rfc-7919
+kind: normative-requirement
+summary: If a compatible server receives a Supported Groups extension containing FFDHE groups but none are acceptable to the server, the server MUST NOT select an FFDHE cipher suite. If additionally no non-FFDHE cipher suite is acceptable, the server MUST terminate the connection with a fatal insufficient_security(71) alert.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

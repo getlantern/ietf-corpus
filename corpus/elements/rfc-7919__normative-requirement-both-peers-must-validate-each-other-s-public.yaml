@@ -1,0 +1,11 @@
+document: rfc-7919
+kind: normative-requirement
+summary: Both peers MUST validate each other's public key Y (dh_Ys or dh_Yc) by ensuring 1 < Y < p−1. With a known safe-prime group this simple range check suffices, whereas an unknown group would require primality testing and subgroup checks.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

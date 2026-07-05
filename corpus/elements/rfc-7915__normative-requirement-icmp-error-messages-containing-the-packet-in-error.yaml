@@ -1,0 +1,10 @@
+document: rfc-7915
+kind: normative-requirement
+summary: ICMP error messages containing the packet in error MUST be translated just like a normal IP packet (except TTL/Hop Limit of the inner packet). If translation of the inner 'packet in error' changes the datagram length, the Total Length field in the outer header MUST be updated. Translation MUST stop at the first embedded header and drop the packet if it contains more embedded headers.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

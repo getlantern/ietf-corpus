@@ -1,0 +1,9 @@
+document: rfc-7919
+kind: interoperability-note
+summary: When a compatible peer interacts with a non-compatible peer, the mechanism is designed to have no detrimental effects. A non-compatible server will not receive the Supported Groups extension with FFDHE groups, so it proceeds with its existing behavior; a compatible server that receives no FFDHE groups MAY select a traditional DHE cipher suite or a non-FFDHE alternative.
+section: "1"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

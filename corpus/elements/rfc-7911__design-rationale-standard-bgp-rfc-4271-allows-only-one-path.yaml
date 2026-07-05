@@ -1,0 +1,9 @@
+document: rfc-7911
+kind: design-rationale
+summary: Standard BGP (RFC 4271) allows only one path per address prefix; a new advertisement for the same NLRI implicitly replaces the previous one. ADD-PATH introduces a Path Identifier so multiple paths for the same prefix can coexist, reducing persistent route oscillations and enabling optimal routing and faster convergence via alternate/backup paths.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

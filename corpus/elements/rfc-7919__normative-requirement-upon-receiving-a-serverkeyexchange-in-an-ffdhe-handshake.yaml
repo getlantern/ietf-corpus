@@ -1,0 +1,11 @@
+document: rfc-7919
+kind: normative-requirement
+summary: Upon receiving a ServerKeyExchange in an FFDHE handshake, the client MUST verify that dh_Ys is in the range 1 < dh_Ys < dh_p − 1. If dh_Ys is out of this range, the client MUST terminate the connection with a fatal handshake_failure(40) alert.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

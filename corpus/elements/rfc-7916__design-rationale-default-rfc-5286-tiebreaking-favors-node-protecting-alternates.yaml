@@ -1,0 +1,8 @@
+document: rfc-7916
+kind: design-rationale
+summary: Default RFC 5286 tiebreaking favors node-protecting alternates over link-protecting ones, which can cause a PE router with lower-capacity links to be selected as the alternate for core link failures. This generates congestion on PE links and may harm traffic that was unaffected by the original failure, motivating operator-configurable policy tiebreakers.
+section: "3.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

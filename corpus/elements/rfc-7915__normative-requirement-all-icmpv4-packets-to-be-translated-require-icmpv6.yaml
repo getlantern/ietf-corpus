@@ -1,0 +1,10 @@
+document: rfc-7915
+kind: normative-requirement
+summary: All ICMPv4 packets to be translated require ICMPv6 checksum recalculation since ICMPv6, unlike ICMPv4, uses a pseudo-header checksum like UDP and TCP. All ICMPv4 packets MUST have the Type translated, and for ICMPv4 error messages the included IP header also MUST be translated.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

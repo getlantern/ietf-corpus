@@ -1,0 +1,10 @@
+document: rfc-7915
+kind: normative-requirement
+summary: 'The translator MUST behave as a router: it MUST send a Packet Too Big error message or fragment the packet when the packet size exceeds the MTU of the next-hop interface. Due to the 20-byte difference between IPv4 (20+ octets) and IPv6 (40 octets) headers, MTU handling is critical for correct operation.'
+section: "1.4"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

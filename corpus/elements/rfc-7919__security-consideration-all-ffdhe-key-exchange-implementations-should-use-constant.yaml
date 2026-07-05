@@ -1,0 +1,10 @@
+document: rfc-7919
+kind: security-consideration
+summary: All FFDHE key exchange implementations should use constant-time modular-exponentiation to prevent timing attacks, especially when DHE secret keys are reused ('semi-static' keying) or shared across multiple machines in a load-balancer scenario.
+section: "8.6"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

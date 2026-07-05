@@ -1,0 +1,9 @@
+document: rfc-7925
+kind: design-rationale
+summary: The 9-second initial retransmission timeout was chosen over the RFC 6347-recommended 1 second because IoT networks (e.g., IEEE 802.15.4, GSM-SMS) have high latency variance and low bandwidth. It achieves the same worst-case wait time (63 seconds) as a 1-second timeout but triggers fewer than half the retransmissions (2 vs. 5), reducing congestion.
+section: "11"
+topics:
+    - tls
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

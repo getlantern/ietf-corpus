@@ -1,0 +1,11 @@
+document: rfc-7915
+kind: security-consideration
+summary: The IPsec Authentication Header (RFC 4302) cannot be used for NAT44 or NAT64, as the AH covers the IP header fields that are modified by translation. Tunnel mode ESP can be translated since it does not depend on header fields prior to the ESP header.
+section: "8"
+topics:
+    - security
+    - ipsec
+    - vpn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

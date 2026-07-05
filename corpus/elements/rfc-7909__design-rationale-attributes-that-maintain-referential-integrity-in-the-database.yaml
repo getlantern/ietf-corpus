@@ -1,0 +1,9 @@
+document: rfc-7909
+kind: design-rationale
+summary: Attributes that maintain referential integrity in the database (such as mnt-by, admin-c, tech-c) are excluded from mandatory signing sets because they can change without modification to the signed object. Including them would create a false sense of security; they should only be signed when full object integrity protection is explicitly desired.
+section: "4"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

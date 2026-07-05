@@ -1,0 +1,9 @@
+document: rfc-7915
+kind: wire-format
+summary: 'ICMPv6 Parameter Problem pointer values are translated to ICMPv4 using a defined mapping table: IPv6 pointer 0 (Version/TC) → IPv4 pointer 0; pointer 4-5 (Payload Length) → pointer 2; pointer 6 (Next Header) → pointer 9; pointer 7 (Hop Limit) → pointer 8; pointers 8-23 (Source) → pointer 12; pointers 24-39 (Destination) → pointer 16. Flow Label (pointers 2-3) maps to n/a (packet dropped).'
+section: "5.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

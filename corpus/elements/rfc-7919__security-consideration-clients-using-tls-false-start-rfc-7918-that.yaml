@@ -1,0 +1,11 @@
+document: rfc-7919
+kind: security-consideration
+summary: Clients using TLS False Start (RFC 7918) that receive a weak FFDHE group may send data encrypted under a weak key before the Finished message is verified. Compatible clients performing a full handshake MUST NOT use the False Start modification if the server selects an FFDHE cipher suite but provides a group that is not cryptographically strong from the client's perspective.
+section: "8.9"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

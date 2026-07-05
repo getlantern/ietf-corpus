@@ -1,0 +1,11 @@
+document: rfc-7919
+kind: normative-requirement
+summary: If a non-anonymous FFDHE cipher suite is selected and the client has offered a group of comparable or greater strength than the server's public key, the server SHOULD select an FFDHE group at least as strong as the server's public key (e.g., prefer ffdhe4096 over ffdhe2048 for a 3072-bit RSA key).
+section: "4"
+rfc2119_level: SHOULD
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

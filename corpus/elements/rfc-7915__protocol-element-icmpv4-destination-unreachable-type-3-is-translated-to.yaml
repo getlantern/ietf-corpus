@@ -1,0 +1,10 @@
+document: rfc-7915
+kind: protocol-element
+summary: 'ICMPv4 Destination Unreachable (Type 3) is translated to ICMPv6 Type 1, with code mapping: Codes 0,1 → Code 0; Code 2 (Protocol Unreachable) → ICMPv6 Parameter Problem Type 4 Code 1; Code 3 → Code 4; Code 4 (Fragmentation Needed) → ICMPv6 Packet Too Big (Type 2) with MTU adjustment. The MTU field MUST be adjusted for IPv4/IPv6 header size difference but MUST NOT be set below 1280 bytes.'
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

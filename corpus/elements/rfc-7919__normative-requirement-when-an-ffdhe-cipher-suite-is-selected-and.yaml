@@ -1,0 +1,11 @@
+document: rfc-7919
+kind: normative-requirement
+summary: When an FFDHE cipher suite is selected and the client sends a ClientKeyExchange, the server MUST verify that 1 < dh_Yc < dh_p − 1. If dh_Yc is out of range, the server MUST terminate the connection with a fatal handshake_failure(40) alert.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

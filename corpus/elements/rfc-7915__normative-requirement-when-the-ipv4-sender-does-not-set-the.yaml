@@ -1,0 +1,10 @@
+document: rfc-7915
+kind: normative-requirement
+summary: When the IPv4 sender does not set the DF bit, the translator MUST NOT include the Fragment Header for non-fragmented IPv6 packets. If the DF bit is set and the MTU of the next-hop interface is less than the total length of the IPv4 packet plus 20, the translator MUST send an ICMPv4 'Fragmentation Needed' error message to the IPv4 source address.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

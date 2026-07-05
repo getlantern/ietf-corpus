@@ -1,0 +1,9 @@
+document: rfc-7905
+kind: design-rationale
+summary: The nonce is constructed from the record sequence number and shared secret (both known to the recipient), so no per-record explicit nonce is transmitted. This saves eight bytes per record and prevents implementations from mistakenly using a random nonce. This construction also matches the scheme expected for TLS 1.3.
+section: "2"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

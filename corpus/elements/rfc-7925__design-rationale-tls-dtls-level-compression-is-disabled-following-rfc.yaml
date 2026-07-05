@@ -1,0 +1,9 @@
+document: rfc-7925
+kind: design-rationale
+summary: TLS/DTLS-level compression is disabled following RFC 7525 guidance due to the CRIME attack. For IoT applications, application-layer protocols are already highly optimized, and compression at the DTLS layer only increases code size and complexity without meaningful benefit.
+section: "8"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-7919
+kind: interoperability-note
+summary: When the ClientHello cipher suite preference order conflicts with the Supported Groups extension order (e.g., DHE ranked first but secp256r1 ranked first in Supported Groups), servers SHOULD give priority to the Supported Groups extension ordering. Clients SHOULD NOT present such contradictions.
+section: "6.1"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-7925
+kind: design-rationale
+summary: All certificates in this profile (end-entity and CA) are signed using ECDSA exclusively, rather than supporting RSA, DSA, and ECDSA. This reduces the amount of flash memory needed on an IoT device because fewer algorithm implementations must be stored.
+section: 4.4.4
+topics:
+    - tls
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

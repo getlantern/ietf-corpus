@@ -1,0 +1,9 @@
+document: rfc-7919
+kind: wire-format
+summary: FFDHE group moduli are derived by the formula p = 2^b − 2^(b−64) + {floor(2^(b−130) * e) + X} * 2^64 − 1, where b is the bit length and X is the smallest positive integer yielding a safe prime. This structure ensures the middle bits are effectively random while the high and low 64 bits are all 1s.
+section: A
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

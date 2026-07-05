@@ -1,0 +1,10 @@
+document: rfc-7925
+kind: normative-requirement
+summary: The client MUST send the 'signature_algorithms' extension to select SHA-256; if absent, RFC 5246 defaults to SHA-1/ECDSA for ECDH_ECDSA and ECDHE_ECDSA key exchange algorithms. This extension is not applicable to PSK-based ciphersuites.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

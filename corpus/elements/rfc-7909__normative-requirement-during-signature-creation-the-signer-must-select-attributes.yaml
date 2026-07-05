@@ -1,0 +1,11 @@
+document: rfc-7909
+kind: normative-requirement
+summary: 'During signature creation, the signer MUST: select attributes to sign (at minimum the required set for the object type), arrange them per the "a" field order, construct the "signature" attribute with an empty "b" field, apply canonicalization, compute the signature, base64-encode it into "b", and append the attribute to the object.'
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

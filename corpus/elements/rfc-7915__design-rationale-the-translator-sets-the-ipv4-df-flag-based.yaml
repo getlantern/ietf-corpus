@@ -1,0 +1,9 @@
+document: rfc-7915
+kind: design-rationale
+summary: The translator sets the IPv4 DF flag based on packet size (≤1260 bytes → DF=0, otherwise DF=1) to accommodate the different minimum MTUs of IPv4 (68 bytes) and IPv6 (1280 bytes). This approach allows Path MTU Discovery to operate end-to-end for paths with MTU ≥1280 bytes (corresponding to 1260 in the IPv4 domain), while IPv4 routers handle fragmentation on links with MTU <1260.
+section: "5"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
