@@ -1,0 +1,11 @@
+document: rfc-7904
+kind: normative-requirement
+summary: When routing AppAttach for SIP connection setup, the 'application' field MUST be either 5060 (SIP) or 5061 (SIPS). If certificate-based authentication is in use, the responding peer MUST present a certificate with a Node-ID matching the terminal entry in the destination list; otherwise the connection MUST NOT be used and MUST be closed.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

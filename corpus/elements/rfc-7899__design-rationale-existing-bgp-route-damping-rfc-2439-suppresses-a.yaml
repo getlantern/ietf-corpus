@@ -1,0 +1,10 @@
+document: rfc-7899
+kind: design-rationale
+summary: Existing BGP route damping (RFC 2439) suppresses a damped route, but for multicast the desired behavior is to keep advertising a damped route (hold the state active) rather than withdraw it. This inversion makes standard BGP damping inapplicable directly, so new procedures adapted from its exponential-decay parameters are defined instead.
+section: "4.3"
+topics:
+    - bgp
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

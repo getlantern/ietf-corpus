@@ -1,0 +1,12 @@
+document: rfc-7899
+kind: normative-requirement
+summary: When not all routers can drop traffic from the wrong PE, the withdrawal of a C-multicast route due to a change in the Upstream Multicast Hop or Upstream Multicast PE SHOULD NOT be damped. An implementation MUST either not damp these withdrawals by default and/or provide a configuration knob to disable damping of such withdrawals.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - multicast
+    - vpn
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

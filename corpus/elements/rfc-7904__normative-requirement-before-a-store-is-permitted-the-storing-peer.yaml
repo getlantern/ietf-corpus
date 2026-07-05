@@ -1,0 +1,12 @@
+document: rfc-7904
+kind: normative-requirement
+summary: Before a Store is permitted, the Storing Peer MUST check that the AOR is a valid Resource Name for configured namespaces, that the certificate contains a SIP AOR username that hashes to the Resource-ID, and that the certificate Node-ID matches the dictionary key. Failed checks MUST result in an Error_Forbidden error.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

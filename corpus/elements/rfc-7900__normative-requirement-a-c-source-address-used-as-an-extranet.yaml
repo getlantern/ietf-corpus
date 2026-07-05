@@ -1,0 +1,14 @@
+document: rfc-7900
+kind: normative-requirement
+summary: A C-source address used as an extranet C-source MUST be unambiguous (denote the same host) across all VPNs whose VRFs contain extranet C-receivers allowed by policy to receive flows from it. Policy MUST ensure this; if ambiguous, that C-source MUST NOT be permitted as an extranet source for the conflicting VPN.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - bgp
+    - mpls
+    - multicast
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

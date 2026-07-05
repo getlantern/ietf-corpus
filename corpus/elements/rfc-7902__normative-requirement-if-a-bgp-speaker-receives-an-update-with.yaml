@@ -1,0 +1,10 @@
+document: rfc-7902
+kind: normative-requirement
+summary: If a BGP speaker receives an UPDATE with one or more 'Additional PMSI Tunnel Attribute Flags' Extended Communities but either no 'PMSI Tunnel' attribute is present or the Extension flag is not set, the Extended Community(ies) SHOULD be removed and SHOULD NOT be redistributed; the UPDATE MUST be processed as if the Extended Community(ies) had not been present.
+section: "2"
+rfc2119_level: SHOULD NOT
+topics:
+    - bgp
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

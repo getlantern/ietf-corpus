@@ -1,0 +1,10 @@
+document: rfc-7899
+kind: normative-requirement
+summary: When damping becomes active and the received message has caused the upstream state machine to transition to NotJoined state, the upstream state machine for (S,G) MUST NOT be updated; instead it is held in Joined state and events that would cause a state update SHOULD be ignored until the reuse-threshold is reached, preventing PIM Prune messages from being sent.
+section: "5.1"
+rfc2119_level: SHOULD
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

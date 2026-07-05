@@ -1,0 +1,12 @@
+document: rfc-7900
+kind: design-rationale
+summary: UMH-eligible extranet C-source routes MAY be SAFI 129 (multicast-only) routes rather than unicast SAFI 1 routes. This allows a receiver VPN to determine the upstream multicast hop without creating a unicast route to the C-source, preventing unintended unicast traffic flows across the extranet boundary.
+section: "4.1"
+topics:
+    - routing
+    - bgp
+    - mpls
+    - multicast
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

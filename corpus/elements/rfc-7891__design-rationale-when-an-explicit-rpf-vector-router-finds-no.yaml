@@ -1,0 +1,9 @@
+document: rfc-7891
+kind: design-rationale
+summary: When an Explicit RPF Vector router finds no PIM neighbor matching the next-hop vector, it does NOT fall back to loose routing; instead it may store the RPF Vector list so the Join can be sent as soon as the neighbor appears. This strict behavior is intentional to guarantee path diversity rather than silently rerouting.
+section: "1"
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

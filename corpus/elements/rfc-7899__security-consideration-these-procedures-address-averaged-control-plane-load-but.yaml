@@ -1,0 +1,10 @@
+document: rfc-7899
+kind: security-consideration
+summary: These procedures address averaged control-plane load but not instantaneous peaks; a burst of simultaneous Join/Prune events on many states can still cause a peak load before damping activates. Damping must be complemented by configuration limiting the number of multicast states createable via protocol interactions with receivers, neighboring ASes, or multicast CEs.
+section: "8"
+topics:
+    - security
+    - multicast
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

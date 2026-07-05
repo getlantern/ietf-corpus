@@ -1,0 +1,8 @@
+document: rfc-7889
+kind: design-rationale
+summary: Computing the APPENDLIMIT should be fast and must not take ACLs, quotas, or other dynamic policy into account. The APPENDLIMIT is a static policy hint; APPEND may still fail for ACL or quota reasons even when the message is within the limit.
+section: "3.3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

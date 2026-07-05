@@ -1,0 +1,10 @@
+document: rfc-7891
+kind: normative-requirement
+summary: When there is a conflict between RPF Vector types or RPF Vector content from multiple downstream neighbors, the router MUST use the RPF Vector stack from the PIM adjacency with the numerically smallest IP address (link-local for IPv6). When two neighbors share the same IP address, the interface index MUST be used as a tie breaker.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

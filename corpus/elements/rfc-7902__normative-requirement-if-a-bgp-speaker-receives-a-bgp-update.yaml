@@ -1,0 +1,10 @@
+document: rfc-7902
+kind: normative-requirement
+summary: If a BGP speaker receives a BGP UPDATE with more than one 'Additional PMSI Tunnel Attribute Flags' Extended Community, only the flag settings in the first occurrence are significant; settings in subsequent occurrences MUST be ignored. When propagating the UPDATE, all instances other than the first SHOULD be removed.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

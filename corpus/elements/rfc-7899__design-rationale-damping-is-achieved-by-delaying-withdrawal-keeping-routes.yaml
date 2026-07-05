@@ -1,0 +1,10 @@
+document: rfc-7899
+kind: design-rationale
+summary: Damping is achieved by delaying withdrawal (keeping routes advertised) rather than suppressing advertisement, because multicast traffic must continue flowing to active receivers; this is the opposite of BGP unicast damping where a route is withdrawn/suppressed. The term 'suppressed' from RFC 2439 is intentionally avoided.
+section: "3"
+topics:
+    - multicast
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

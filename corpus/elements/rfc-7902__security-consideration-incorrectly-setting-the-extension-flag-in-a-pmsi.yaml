@@ -1,0 +1,10 @@
+document: rfc-7902
+kind: security-consideration
+summary: Incorrectly setting the 'Extension' flag in a 'PMSI Tunnel' attribute without including the corresponding 'Additional PMSI Tunnel Attribute Flags' Extended Community causes the receiving BGP speaker to treat the UPDATE as a withdrawal via the RFC 7606 treat-as-withdraw procedure. This can be exploited to cause spurious route withdrawals.
+section: "4"
+topics:
+    - bgp
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

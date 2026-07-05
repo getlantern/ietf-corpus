@@ -1,0 +1,9 @@
+document: rfc-7891
+kind: design-rationale
+summary: The Explicit RPF Vector was created because RFC 5496 loose RPF Vectors still depend on unicast reachability, which may route two PIM trees over the same transit router. For PIM Live-Live resiliency (two spatially diverse trees carrying the same broadcast video), network administrators need strictly path-diverse trees that do not share any transit router, necessitating explicit hop-by-hop path control.
+section: "3"
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

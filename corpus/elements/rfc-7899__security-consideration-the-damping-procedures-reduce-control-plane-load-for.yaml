@@ -1,0 +1,10 @@
+document: rfc-7899
+kind: security-consideration
+summary: The damping procedures reduce control-plane load for routing state updates sent upstream but do not reduce load from downstream interfaces; protection against downstream churn (from customer-facing interfaces or adjacent-AS routers) requires enabling damping on those downstream neighbors or at network edges, and is complemented by per-router multicast state limits.
+section: "8"
+topics:
+    - security
+    - multicast
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

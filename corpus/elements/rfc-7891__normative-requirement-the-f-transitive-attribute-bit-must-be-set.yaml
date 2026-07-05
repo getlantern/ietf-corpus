@@ -1,0 +1,10 @@
+document: rfc-7891
+kind: normative-requirement
+summary: The F (Transitive Attribute) bit MUST be set to 0 in the Explicit RPF Vector TLV. Setting it to 1 could cause routing loops because routers that do not understand the attribute would propagate it upstream rather than discarding it.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

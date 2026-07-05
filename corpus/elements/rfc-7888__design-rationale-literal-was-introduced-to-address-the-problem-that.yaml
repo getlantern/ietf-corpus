@@ -1,0 +1,8 @@
+document: rfc-7888
+kind: design-rationale
+summary: LITERAL- was introduced to address the problem that LITERAL+ servers facing oversized literals must choose between wasteful bandwidth consumption (reading then rejecting) or closing the connection with BYE (risking infinite reconnect loops in naive clients). Restricting non-synchronizing literals to 4096 bytes except for APPEND mitigates denial-of-service risk while retaining performance benefits for small literals.
+section: "4"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-7904
+kind: wire-format
+summary: 'SipRegistration encodes as: SipRegistrationType (1 byte enum, values 1=uri, 2=route), uint16 length, then SipRegistrationData. For sip_registration_uri, data is an opaque string up to 2^16-1 bytes. For sip_registration_route, data is an opaque contact_prefs string (up to 2^16-1 bytes) followed by a Destination list (3..2^16-1 bytes).'
+section: "3.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
