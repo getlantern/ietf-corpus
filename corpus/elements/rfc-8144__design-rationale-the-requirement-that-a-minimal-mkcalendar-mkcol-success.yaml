@@ -1,0 +1,8 @@
+document: rfc-8144
+kind: design-rationale
+summary: 'The requirement that a minimal MKCALENDAR/MKCOL success response have an empty body is based on two constraints: RFC 4791 requires any successful body to be a CALDAV:mkcalendar-response XML element, and RFC 5689 states that an empty body with a success status implies all properties were set, making a non-empty body ambiguous.'
+section: "2.3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

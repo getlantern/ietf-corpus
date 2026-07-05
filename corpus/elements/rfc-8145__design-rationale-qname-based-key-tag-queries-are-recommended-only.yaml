@@ -1,0 +1,8 @@
+document: rfc-8145
+kind: design-rationale
+summary: QNAME-based Key Tag queries are recommended only for trust anchors (not all DNSKEY queries) because each Key Tag query is a separate DNS transaction, whereas the EDNS option is piggybacked on an existing DNSKEY query at no extra query cost.
+section: "1.1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

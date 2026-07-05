@@ -1,0 +1,10 @@
+document: rfc-8149
+kind: normative-requirement
+summary: An ingress node SHOULD wait to accumulate all S2L sub-LSPs before triggering reoptimization when a PathErr with Notify error code and 'Preferable Path Exists' sub-code is received with an S2L_SUB_LSP_FRAG object. If fragments are not all received within a configurable time interval, it SHOULD trigger reoptimization of all S2L sub-LSPs transiting the midpoint node that sent the PathErr. The ingress MUST receive at least one fragment to trigger this.
+section: "4.2"
+rfc2119_level: SHOULD
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

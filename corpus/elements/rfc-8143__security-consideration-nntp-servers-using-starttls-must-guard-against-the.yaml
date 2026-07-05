@@ -1,0 +1,9 @@
+document: rfc-8143
+kind: security-consideration
+summary: 'NNTP servers using STARTTLS must guard against the STARTTLS command injection vulnerability (RFC 7457 Section 2.2): although STARTTLS MUST NOT be pipelined, an attacker could pipeline it, so servers MUST discard all NNTP commands received between STARTTLS and the end of TLS negotiation.'
+section: "4"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

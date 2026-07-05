@@ -1,0 +1,8 @@
+document: rfc-8147
+kind: design-rationale
+summary: SIP INFO was chosen over MESSAGE, OPTIONS, re-INVITE, SUBSCRIBE/NOTIFY, and media-plane mechanisms for mid-call eCall data transport. MESSAGE is not bound to a dialog; OPTIONS and re-INVITE are less semantically clean; SUBSCRIBE/NOTIFY provides one-way notification semantics ill-suited to bidirectional data exchange; media-plane setup (e.g., MSRP) would be disproportionately heavy for the very low message volume expected.
+section: 14.9.2
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

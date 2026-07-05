@@ -1,0 +1,6 @@
+document: rfc-8139
+kind: design-rationale
+summary: The root bridge change inhibition timer defaults to 30 seconds rather than being derived from spanning tree timers because TRILL switches may not know which spanning tree protocol is running. Operators who know RSTP is deployed throughout the attached bridged LAN may safely reduce this to 7 seconds (or 4 seconds with minimum Bridge Hello Timer configured).
+section: "3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

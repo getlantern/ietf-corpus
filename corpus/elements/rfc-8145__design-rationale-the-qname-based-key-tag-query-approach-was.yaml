@@ -1,0 +1,8 @@
+document: rfc-8145
+kind: design-rationale
+summary: The QNAME-based Key Tag query approach was chosen over a pure EDNS(0) option approach because EDNS(0) is hop-by-hop and unknown option codes are not forwarded by default, middleboxes may block queries with unknown EDNS(0) options, and recursive resolvers would need to maintain state for stub client Key Tags across queries.
+section: "1.1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

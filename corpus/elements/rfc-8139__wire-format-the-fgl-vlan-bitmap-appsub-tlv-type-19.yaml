@@ -1,0 +1,8 @@
+document: rfc-8139
+kind: wire-format
+summary: The FGL-VLAN-Bitmap APPsub-TLV (type 19) maps FGLs to VLANs using 4-bit RESV, 12-bit Starting VLAN ID, 3-byte Starting FGL, and a variable Bit Map where bit N represents (Starting VLAN ID + N) ↔ (Starting FGL + N). Length = 5 + bitmap size; corrupt (Length < 5) APPsub-TLVs MUST be ignored.
+section: "10.4"
+topics:
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

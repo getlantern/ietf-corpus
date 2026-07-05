@@ -1,0 +1,9 @@
+document: rfc-8147
+kind: security-consideration
+summary: An attacker able to intercept and spoof the PSAP response to the initial INVITE could send a 600/486/603 rejection with a metadata/control object setting 'received=true', causing the IVS to believe the PSAP received the MSD and refrain from re-initiating the call. Mitigation requires integrity protection of the SIP signaling path.
+section: "11"
+topics:
+    - security
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8150
+kind: security-consideration
+summary: 'Read-write/read-create objects in mplsLpsConfigTable are sensitive: improper manipulation can delay traffic switching (mplsLpsConfigHoldOff), delay/accelerate reversion (mplsLpsConfigWaitToRestore), cause unexpected traffic switching (mplsLpsConfigCommand), or discontinue protection switching (mplsLpsConfigMode, mplsLpsConfigProtectionType). Manipulation of mplsLpsMeConfigTable can also discontinue protection switching, and compromise of mplsLpsNotificationEnable can prevent operator notification of failures.'
+section: "9"
+topics:
+    - mpls
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

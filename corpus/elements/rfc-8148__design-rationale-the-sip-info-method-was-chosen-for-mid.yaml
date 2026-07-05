@@ -1,0 +1,9 @@
+document: rfc-8148
+kind: design-rationale
+summary: The SIP INFO method was chosen for mid-call data transport over alternatives (MESSAGE, OPTIONS, re-INVITE, SUBSCRIBE/NOTIFY, media-plane) because it is bound to the SIP dialog, semantics fit two-way data exchange, and the overhead of user-plane setup (e.g., MSRP) would be disproportionately large given that most dialogs carry zero or very few data messages.
+section: 14.7.2
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

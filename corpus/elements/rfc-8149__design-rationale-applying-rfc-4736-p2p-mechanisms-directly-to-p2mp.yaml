@@ -1,0 +1,9 @@
+document: rfc-8149
+kind: design-rationale
+summary: 'Applying RFC 4736 P2P mechanisms directly to P2MP-TE LSP tree reoptimization leads to scaling issues: midpoint LSRs must accumulate path re-evaluation requests for all S2L sub-LSPs and use heuristic timers, while ingress nodes may prematurely reoptimize a subset rather than the full tree. This motivated a new tree-level re-evaluation flag and PathErr sub-code.'
+section: "3.2"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

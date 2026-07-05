@@ -1,0 +1,9 @@
+document: rfc-8145
+kind: interoperability-note
+summary: Aggressive NSEC/NSEC3 negative caching can suppress Key Tag queries when responses are NXDOMAIN. Zone operators should consider adding explicit NULL records for expected Key Tag QNAMEs (e.g., '_ta-1111', '_ta-2222', '_ta-1111-2222') to prevent aggressive negative caching from reducing signaling fidelity during rollovers.
+section: 5.3.1
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

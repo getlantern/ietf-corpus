@@ -1,0 +1,9 @@
+document: rfc-8143
+kind: design-rationale
+summary: Implicit TLS (immediate negotiation on a dedicated port) is preferred over STARTTLS because it eliminates the opportunity for SSL Stripping attacks that exist when a dynamic upgrade path from plaintext is available, and aligns with best practices for other protocols (e.g., email MUA-STS).
+section: "2"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
