@@ -1,0 +1,10 @@
+document: rfc-8007
+kind: normative-requirement
+summary: Each CDN MUST append its CDN PID to the 'cdn-path' JSON array in every CI/T Command it originates or cascades. When receiving CI/T Commands, a dCDN MUST reject any command that already contains its own CDN PID, and transit CDNs MUST NOT cascade commands to dCDNs already listed in cdn-path.
+section: "4.6"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

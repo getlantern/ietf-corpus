@@ -1,0 +1,10 @@
+document: rfc-8002
+kind: security-consideration
+summary: Certificate grouping across multiple consecutive packets may allow attacks similar to IP-layer fragmentation attacks, such as sending fragments out of order or skipping fragments to exhaust victim CPU or memory. Hosts SHOULD implement mechanisms to discard certificate groups with outstanding certificates when state space is scarce.
+section: "7"
+rfc2119_level: SHOULD
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

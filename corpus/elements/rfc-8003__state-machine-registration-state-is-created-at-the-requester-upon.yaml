@@ -1,0 +1,8 @@
+document: rfc-8003
+kind: state-machine
+summary: Registration state is created at the requester upon successful processing of REG_RESPONSE, and at the registrar (and optionally the service) upon successful processing of REG_REQUEST. Either party may cancel state before expiry; the registrar SHOULD notify registered requesters with a zero-lifetime REG_RESPONSE if it cancels.
+section: "5"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

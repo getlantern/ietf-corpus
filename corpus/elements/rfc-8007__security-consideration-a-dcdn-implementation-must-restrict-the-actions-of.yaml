@@ -1,0 +1,8 @@
+document: rfc-8007
+kind: security-consideration
+summary: A dCDN implementation MUST restrict the actions of a uCDN to data corresponding to that uCDN. HTTP requests attempting to access CI/T data belonging to another CDN MUST be rejected with HTTP 403 or 404. Injected CI/T Commands could generate excessive load and decrease caching efficiency.
+section: "8.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

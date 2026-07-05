@@ -1,0 +1,10 @@
+document: rfc-8004
+kind: normative-requirement
+summary: When a rendezvous client receives an I1, it MUST validate any present RVS_HMAC. If verification fails and a FROM parameter is present, the packet MUST be dropped; if no FROM parameter is present, the packet SHOULD be dropped.
+section: 4.3.2
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

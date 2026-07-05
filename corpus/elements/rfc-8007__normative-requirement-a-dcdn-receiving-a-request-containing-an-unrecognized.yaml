@@ -1,0 +1,10 @@
+document: rfc-8007
+kind: normative-requirement
+summary: A dCDN receiving a request containing an unrecognized or unsupported trigger type MUST reject the request by creating a Trigger Status Resource with status 'failed' and an error of 'eunsupported'. All trigger types MUST be registered in the IANA 'CDNI CI/T Trigger Types' registry.
+section: 5.2.2
+rfc2119_level: MUST
+topics:
+    - http
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

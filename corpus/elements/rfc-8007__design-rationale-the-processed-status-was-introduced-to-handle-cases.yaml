@@ -1,0 +1,8 @@
+document: rfc-8007
+kind: design-rationale
+summary: The 'processed' status was introduced to handle cases where a dCDN cannot track or confirm completion of triggered activity. In this state, the Trigger Status Resource is treated as complete for collection purposes, allowing a uCDN to schedule subsequent operations (e.g., pre-positioning after a purge) using the 'etime' estimated completion time.
+section: "4.1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

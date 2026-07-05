@@ -1,0 +1,9 @@
+document: rfc-8004
+kind: design-rationale
+summary: The RVS_HMAC parameter has a different type code than the standard HMAC so that it is positioned after the FROM parameter in the HIP packet. This ordering ensures the FROM parameter is covered by the HMAC integrity check while still allowing the Responder to validate the I1 checksum without parsing FROM parameters.
+section: 4.2.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

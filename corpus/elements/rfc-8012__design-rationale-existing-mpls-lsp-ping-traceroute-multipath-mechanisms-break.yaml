@@ -1,0 +1,9 @@
+document: rfc-8012
+kind: design-rationale
+summary: Existing MPLS LSP ping/traceroute multipath mechanisms break when some LSRs use EL-based load balancing and others use IP-based load balancing, or when EL-based LSPs are stitched with non-EL LSPs. The initiating LSR loses the ability to discover and exercise specific ECMP paths in these mixed environments, which are common in real deployments.
+section: "1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
