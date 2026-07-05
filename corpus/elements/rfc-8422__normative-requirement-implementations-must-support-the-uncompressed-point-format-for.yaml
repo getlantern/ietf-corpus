@@ -1,0 +1,10 @@
+document: rfc-8422
+kind: normative-requirement
+summary: Implementations MUST support the uncompressed point format for all supported curves and MUST NOT support other point formats for curves defined in this specification. If the client sends a point format list that does not include uncompressed (0) and has indicated support for curves in this spec, the server MUST abort with an illegal_parameter alert.
+section: 5.1.2
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

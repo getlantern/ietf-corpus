@@ -1,0 +1,9 @@
+document: rfc-8419
+kind: design-rationale
+summary: HashEdDSA mode is not used with CMS because CMS SignedData typically includes signed attributes with the message digest of the content, making HashEdDSA offer no benefit. Only PureEdDSA is used with CMS.
+section: "2"
+topics:
+    - crypto
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

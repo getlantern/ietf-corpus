@@ -1,0 +1,10 @@
+document: rfc-8422
+kind: security-consideration
+summary: Public key validation failure with NIST curves allows small-subgroup and invalid-curve attacks that can recover the static private key in a small number of handshakes. For X25519/X448, computing an all-zero shared secret indicates a degenerate input and requires aborting the handshake.
+section: "5.11"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

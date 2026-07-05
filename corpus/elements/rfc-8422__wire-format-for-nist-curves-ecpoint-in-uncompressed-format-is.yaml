@@ -1,0 +1,9 @@
+document: rfc-8422
+kind: wire-format
+summary: 'For NIST curves, ECPoint in uncompressed format is encoded as: a leading byte 0x04 (PointConversionForm=uncompressed), followed by X and Y coordinates each padded to the field size (32 bytes for P-256, 48 for P-384, 66 for P-521) in big-endian order. For X25519 and X448, the encoding is a 32- or 56-octet u-coordinate value per RFC 7748.'
+section: 5.4.1
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

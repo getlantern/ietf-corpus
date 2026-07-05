@@ -1,0 +1,9 @@
+document: rfc-8417
+kind: security-consideration
+summary: This specification defines no ordering mechanism for multiple SETs. Profiling specifications and implementers SHOULD define a detection mechanism for event order when order matters (e.g., using the 'txn' claim as an ordered counter), and SHOULD be cautious about relying on timestamps ('iat', 'toe') due to clock skew in distributed systems.
+section: "5.3"
+topics:
+    - security
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

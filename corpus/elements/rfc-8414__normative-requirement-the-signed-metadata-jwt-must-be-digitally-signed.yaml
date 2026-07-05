@@ -1,0 +1,11 @@
+document: rfc-8414
+kind: normative-requirement
+summary: The signed_metadata JWT MUST be digitally signed or MACed using JWS and MUST contain an 'iss' (issuer) claim. If a consumer supports signed metadata, metadata values in the signed metadata MUST take precedence over corresponding values in plain JSON elements.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - jose
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

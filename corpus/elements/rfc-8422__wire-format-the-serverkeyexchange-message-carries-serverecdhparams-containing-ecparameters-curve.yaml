@@ -1,0 +1,9 @@
+document: rfc-8422
+kind: wire-format
+summary: The ServerKeyExchange message carries ServerECDHParams containing ECParameters (curve_type=named_curve plus a NamedCurve identifier) and an ECPoint (the ephemeral public key), followed by a Signature. ECDSA signatures are DER-encoded as `Ecdsa-Sig-Value ::= SEQUENCE { r INTEGER, s INTEGER }`. EdDSA signatures are the raw octet string output of the EdDSA signing algorithm.
+section: "5.4"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

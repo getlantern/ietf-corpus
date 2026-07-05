@@ -1,0 +1,9 @@
+document: rfc-8420
+kind: design-rationale
+summary: EdDSA (Ed25519 and Ed448) accepts messages of arbitrary size without prehashing, unlike most signature algorithms that either cannot sign messages larger than their key or truncate them. RFC 7427's SIGNATURE_HASH_ALGORITHMS notification assumes a hashing phase followed by a signing phase, which does not apply to EdDSA; hence the new "Identity" value is introduced to signal no hashing is needed.
+section: "1"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

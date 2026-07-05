@@ -1,0 +1,8 @@
+document: rfc-8419
+kind: design-rationale
+summary: The SignedData digestAlgorithms field SHOULD include the relevant hash OID when signing with signed attributes, but MAY include or omit it when signing without signed attributes, because in the latter case the digest is used internally to the signing operation rather than as a separately computed input.
+section: "3.1"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

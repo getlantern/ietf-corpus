@@ -1,0 +1,10 @@
+document: rfc-8417
+kind: security-consideration
+summary: To prevent confusion with OpenID Connect ID Tokens, SET profiles that could otherwise produce a valid-looking ID Token MUST require that the 'exp' claim be absent, since 'exp' is required by ID Tokens and its absence will cause rejection. Note that explicit 'typ' typing does not help here because ID Token validation rules do not use the 'typ' header parameter.
+section: "4.1"
+topics:
+    - security
+    - oauth
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

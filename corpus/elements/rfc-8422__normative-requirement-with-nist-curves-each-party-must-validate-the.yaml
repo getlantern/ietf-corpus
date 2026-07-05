@@ -1,0 +1,11 @@
+document: rfc-8422
+kind: normative-requirement
+summary: With NIST curves, each party MUST validate the peer's public key from ClientKeyExchange and ServerKeyExchange by verifying that the x and y parameters satisfy the curve equation y^2 = x^3 + ax + b mod p. Failure allows attackers to recover the private key in a few requests.
+section: "5.11"
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

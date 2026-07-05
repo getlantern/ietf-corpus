@@ -1,0 +1,9 @@
+document: rfc-8414
+kind: security-consideration
+summary: An attacker may attempt to impersonate an authorization server by publishing a metadata document with the victim server's 'issuer' claim but the attacker's own endpoints and keys. Clients MUST validate that the 'issuer' in the response exactly matches the issuer identifier used to construct the metadata URL.
+section: "6.2"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

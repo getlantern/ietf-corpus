@@ -1,0 +1,9 @@
+document: rfc-8416
+kind: security-consideration
+summary: An RP using a SLURM file trusts the assertions made in that file. Errors in the SLURM file can undermine the security offered by the RPKI; it could declare valid ROAs as invalid and vice versa. An RP MUST carefully consider the security implications, especially when the file is provided by a third party.
+section: "6"
+topics:
+    - security
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

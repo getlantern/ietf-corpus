@@ -1,0 +1,10 @@
+document: rfc-8422
+kind: normative-requirement
+summary: A TLS client that proposes ECC cipher suites SHOULD include the Supported Elliptic Curves Extension and Supported Point Formats Extension. Servers implementing ECC cipher suites MUST support these extensions and MUST NOT negotiate an ECC cipher suite unless the handshake can complete while respecting the client's stated curve choices.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

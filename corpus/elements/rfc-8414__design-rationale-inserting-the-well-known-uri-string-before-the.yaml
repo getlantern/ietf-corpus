@@ -1,0 +1,9 @@
+document: rfc-8414
+kind: design-rationale
+summary: Inserting the well-known URI string before the path component (rather than appending it) allows a single host to support multiple issuers via path components, which is required for multi-tenant hosting configurations. This is the key semantic difference from RFC 5785's original 'host-level' well-known URI concept.
+section: "3.1"
+topics:
+    - oauth
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

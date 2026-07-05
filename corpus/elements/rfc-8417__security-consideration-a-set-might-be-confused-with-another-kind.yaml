@@ -1,0 +1,10 @@
+document: rfc-8417
+kind: security-consideration
+summary: A SET might be confused with another kind of JWT from the same issuer, because RFC 7519 states that unrecognized claims MUST be ignored. An attacker possessing a SET could attempt to use it in a context expecting a different JWT type. Mitigations include explicit typing via the 'typ' header, omitting claims required by other JWT types, and validating presence of the 'events' claim.
+section: "4"
+topics:
+    - security
+    - oauth
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

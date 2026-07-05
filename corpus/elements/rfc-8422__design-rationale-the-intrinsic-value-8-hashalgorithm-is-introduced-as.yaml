@@ -1,0 +1,9 @@
+document: rfc-8422
+kind: design-rationale
+summary: The 'Intrinsic' (value 8) HashAlgorithm is introduced as a dummy value so that pure EdDSA (which does not pre-hash externally) can be represented in the TLS 1.2 signature_algorithms extension using the same encoding as TLS 1.3, enabling wire-format compatibility across versions.
+section: 5.1.3
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

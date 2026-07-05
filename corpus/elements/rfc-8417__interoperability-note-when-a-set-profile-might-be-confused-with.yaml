@@ -1,0 +1,10 @@
+document: rfc-8417
+kind: interoperability-note
+summary: When a SET profile might be confused with other JWT profiles (e.g., SIP PASSporT or RFC 8055), the most direct mitigation is explicit 'typ' typing combined with requiring token validators to check 'typ'. For contexts where 'typ' is not checked, omitting claims required by the target JWT type or requiring absence of the 'events' claim in non-SET validators are effective alternatives.
+section: "4.3"
+topics:
+    - oauth
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

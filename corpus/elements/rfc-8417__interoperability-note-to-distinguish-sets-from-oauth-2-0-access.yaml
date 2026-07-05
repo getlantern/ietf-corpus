@@ -1,0 +1,10 @@
+document: rfc-8417
+kind: interoperability-note
+summary: To distinguish SETs from OAuth 2.0 access tokens implemented as JWTs, SET profiles should prohibit 'exp', use separate 'aud' values, modify access token validators to detect the 'events' claim, and/or employ explicit 'typ' typing. The appropriate strategy is implementation-specific because access token JWT structure is not standardized.
+section: "4.2"
+topics:
+    - oauth
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

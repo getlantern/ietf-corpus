@@ -1,0 +1,9 @@
+document: rfc-8415
+kind: normative-requirement
+summary: 'Clients MUST implement exponential backoff retransmission with randomization: RT = 2*RTprev + RAND*RTprev (approximately doubling with ±10% jitter), bounded by the message-specific MAX_RT. A client receiving no response within MAX_WAIT_TIME (60 s) MAY conclude no servers are available.'
+section: "15"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

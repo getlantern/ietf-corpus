@@ -1,0 +1,9 @@
+document: rfc-8414
+kind: interoperability-note
+summary: RFC 8414 and OpenID Connect Discovery 1.0 differ in how they construct the metadata URL when the issuer contains a path component. OIDC Discovery appends the well-known string to the issuer (e.g., 'https://example.com/issuer1/.well-known/openid-configuration'), while RFC 8414 inserts it before the path (e.g., 'https://example.com/.well-known/openid-configuration/issuer1').
+section: "5"
+topics:
+    - oauth
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

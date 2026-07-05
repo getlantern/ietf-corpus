@@ -1,0 +1,8 @@
+document: rfc-8422
+kind: interoperability-note
+summary: If a ClientHello omits the Supported Point Formats Extension, servers MUST treat this as equivalent to an extension allowing only the uncompressed format (per RFC 4492 behavior). Session resumption causes servers to ignore these extensions entirely; they only apply during new session negotiation.
+section: 5.1.2
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

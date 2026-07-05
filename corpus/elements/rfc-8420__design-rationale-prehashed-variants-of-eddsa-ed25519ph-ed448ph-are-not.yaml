@@ -1,0 +1,9 @@
+document: rfc-8420
+kind: design-rationale
+summary: Prehashed variants of EdDSA (Ed25519ph, Ed448ph) are not recommended for IKEv2 because there is minimal burden in buffering the entire message to make two passes, as recommended in RFC 8032 Section 8.5. IKEv2 is an appropriate protocol for the non-prehashed forms.
+section: "1"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

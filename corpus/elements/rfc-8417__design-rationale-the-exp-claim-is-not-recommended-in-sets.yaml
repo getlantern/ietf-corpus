@@ -1,0 +1,10 @@
+document: rfc-8417
+kind: design-rationale
+summary: The 'exp' claim is NOT RECOMMENDED in SETs because a SET describes something that has already happened and is historical in nature, making the concept of token expiration semantically inappropriate. Additionally, omitting 'exp' serves as a concrete defense against confusion with ID Tokens, which require 'exp'.
+section: "2.2"
+topics:
+    - oauth
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

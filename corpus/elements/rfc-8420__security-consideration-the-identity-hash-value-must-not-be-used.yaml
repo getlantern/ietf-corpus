@@ -1,0 +1,10 @@
+document: rfc-8420
+kind: security-consideration
+summary: The "Identity" hash value MUST NOT be used if none of the supported and configured algorithms accept arbitrary-size inputs, as it would provide no benefit and could create misleading capability signals. Conversely, when EdDSA is configured, "Identity" MUST appear in the notification to allow EdDSA to operate correctly.
+section: "3"
+topics:
+    - security
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

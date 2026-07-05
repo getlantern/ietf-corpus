@@ -1,0 +1,10 @@
+document: rfc-8422
+kind: normative-requirement
+summary: All ECDH calculations for NIST curves use the ECKAS-DH1 scheme from IEEE 1363 with the identity KDF; the premaster secret is the x-coordinate of the ECDH shared secret as an octet string, and leading zeros MUST NOT be truncated. For X25519/X448, if either party computes an all-zeroes premaster secret, it MUST abort the handshake.
+section: "5.10"
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

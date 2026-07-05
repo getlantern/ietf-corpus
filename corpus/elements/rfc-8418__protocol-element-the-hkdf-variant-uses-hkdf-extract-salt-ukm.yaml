@@ -1,0 +1,8 @@
+document: rfc-8418
+kind: protocol-element
+summary: The HKDF variant uses HKDF-Extract(salt=ukm, K) to produce PRK, then HKDF-Expand(PRK, DER(ECC-CMS-SharedInfo), SizeInOctets(KEK)) to produce the KEK; if no ukm is provided, HKDF uses an all-zero salt.
+section: "2.2"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
