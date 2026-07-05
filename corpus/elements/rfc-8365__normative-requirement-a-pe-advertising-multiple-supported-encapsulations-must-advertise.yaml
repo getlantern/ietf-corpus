@@ -1,0 +1,9 @@
+document: rfc-8365
+kind: normative-requirement
+summary: A PE advertising multiple supported encapsulations MUST advertise encapsulations that use the same EVPN procedures including split-horizon filtering. A PE MUST NOT advertise VXLAN and MPLS encapsulations together because the MPLS field is set to either an MPLS label or VNI but not both, and some EVPN procedures differ.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

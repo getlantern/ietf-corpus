@@ -1,0 +1,10 @@
+document: rfc-8357
+kind: design-rationale
+summary: Fixed UDP source ports for DHCP relay (67 for DHCPv4, 547 for DHCPv6) prevent distributing relay functionality across multiple processes sharing a single IP address on a switch node, because all relay processes would contend for the same transport socket. Assigning distinct IP addresses per process is an alternative but is operationally complex and wasteful of scarce IPv4 addresses.
+section: "1"
+topics:
+    - registry
+    - nat
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

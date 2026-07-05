@@ -1,0 +1,10 @@
+document: rfc-8360
+kind: state-machine
+summary: Amended path validation iterates over each certificate x in the chain. VRS-IP is set to the trust anchor's IP resources for x=1, and to the intersection of the certificate's IP resources with the prior VRS-IP for x>1; VRS-IP is set to NULL if the extension is absent. VRS-AS follows the same logic for AS identifiers. Overclaims trigger rejection (old OIDs) or a warning (new OIDs).
+section: 4.2.4.4
+topics:
+    - pkix
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

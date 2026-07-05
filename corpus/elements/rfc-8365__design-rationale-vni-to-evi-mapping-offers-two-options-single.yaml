@@ -1,0 +1,9 @@
+document: rfc-8365
+kind: design-rationale
+summary: 'VNI-to-EVI mapping offers two options: single broadcast domain per EVI (Option 1, akin to VLAN-Based Service) enables BGP RT constraint to limit route propagation, while multiple broadcast domains per EVI (Option 2, akin to VLAN-aware bundle service) avoids per-VNI RD/RT provisioning overhead at the cost of importing routes to NVEs not interested in a given VNI.'
+section: 5.1.2
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

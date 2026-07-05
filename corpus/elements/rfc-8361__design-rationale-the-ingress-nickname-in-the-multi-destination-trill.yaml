@@ -1,0 +1,8 @@
+document: rfc-8361
+kind: design-rationale
+summary: The ingress nickname in the multi-destination TRILL header forwarded by the centralized node is kept identical to the one in the received unicast packet (the pseudo-nickname). This ensures that MAC address learning by all egress RBridges is bound to the pseudo-nickname, preserving the MAC flip-flop avoidance property of RFC 7781.
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

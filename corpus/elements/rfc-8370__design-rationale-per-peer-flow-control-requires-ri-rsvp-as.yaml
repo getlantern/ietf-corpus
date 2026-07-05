@@ -1,0 +1,9 @@
+document: rfc-8370
+kind: design-rationale
+summary: Per-Peer Flow Control requires RI-RSVP as a prerequisite because its back-pressure mechanism (detecting congestion via missing ACKs) only works reliably when acknowledgements are mandatory and the refresh interval is large enough to make ACK absence meaningful.
+section: "4"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

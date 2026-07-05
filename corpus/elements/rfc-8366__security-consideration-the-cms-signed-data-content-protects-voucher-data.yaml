@@ -1,0 +1,12 @@
+document: rfc-8366
+kind: security-consideration
+summary: The CMS signed-data content protects voucher data from modification but not disclosure. Adversaries can observe device-to-organization mappings and CRL/OCSP URLs. When privacy is important, the signed-data SHOULD be encrypted via mutually authenticated TLS or wrapped in a CMS enveloped-data structure.
+section: "7.4"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - privacy
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

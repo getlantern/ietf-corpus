@@ -1,0 +1,9 @@
+document: rfc-8359
+kind: protocol-element
+summary: During initial wavelength setup, the ingress router sends a Path message with an Unassigned Upstream Label (0xFFFFFFFF) and keeps the laser off. The downstream WDM node selects the wavelength and forwards it; the egress router tunes its laser accordingly and responds with a Resv. The ingress router then tunes its laser to the network-assigned symmetric label.
+section: "4.1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

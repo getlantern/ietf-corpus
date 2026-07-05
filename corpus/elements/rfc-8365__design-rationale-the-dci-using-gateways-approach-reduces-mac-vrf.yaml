@@ -1,0 +1,8 @@
+document: rfc-8365
+kind: design-rationale
+summary: The DCI using Gateways approach reduces MAC-VRF and IP-VRF size at NVEs by using default IP routes and unknown MAC routes, forwarding unknown traffic to GWs that maintain all VPN routes. This also results in faster convergence because failure-related BGP routes do not need to propagate to remote NVEs in remote DCs.
+section: "10.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

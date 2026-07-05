@@ -1,0 +1,11 @@
+document: rfc-8360
+kind: design-rationale
+summary: The Verified Resource Set (VRS) concept keeps a per-certificate running intersection of INRs separate from the raw resource extension values. This allows a CA certificate to temporarily contain overclaimed resources without being outright rejected, while ensuring no subordinate attestation can be valid for those overclaimed resources.
+section: "4.1"
+topics:
+    - routing
+    - bgp
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

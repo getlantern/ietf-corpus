@@ -1,0 +1,8 @@
+document: rfc-8361
+kind: design-rationale
+summary: When a pseudo-nickname is used as the ingress nickname for BUM traffic, RBridges between the ingress RBridge and the distribution tree root may receive traffic from different ports for the same virtual RBridge, causing RPF check failures and incorrect packet drops. Centralized replication resolves this by sending all BUM traffic to a single centralized node via unicast TRILL encapsulation, then having that node distribute it on a tree for which it is root.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

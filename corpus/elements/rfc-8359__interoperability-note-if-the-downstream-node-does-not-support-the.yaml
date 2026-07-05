@@ -1,0 +1,9 @@
+document: rfc-8359
+kind: interoperability-note
+summary: If the downstream node does not support the Unassigned Upstream Label semantics, it will either (a) reject the special label and generate an error per RFC 3473 Section 3.1 (no compatibility concern), or (b) accept it and return an all-ones label in the Resv LABEL object, which the upstream node will reject with a ResvErr. Both paths result in a well-defined failure mode.
+section: "3.2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

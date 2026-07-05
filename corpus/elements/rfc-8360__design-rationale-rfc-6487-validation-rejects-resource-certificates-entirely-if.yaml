@@ -1,0 +1,11 @@
+document: rfc-8360
+kind: design-rationale
+summary: 'RFC 6487 validation rejects Resource Certificates entirely if they overclaim any resources not on the issuing certificate. This creates operational fragility: a single overclaim anywhere in the hierarchy invalidates the entire subtree below it, even for ROAs that do not use the disputed resources. RFC 8360 addresses this by limiting invalidation to only the overclaimed resources.'
+section: "1"
+topics:
+    - routing
+    - bgp
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

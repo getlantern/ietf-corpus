@@ -1,0 +1,8 @@
+document: rfc-8361
+kind: design-rationale
+summary: BUM traffic in the centralized replication solution is initially ingressed as a unicast TRILL data packet (not a multi-destination packet as required by RFC 6325), representing a deliberate update to RFC 6325 behavior. This allows all edge RBridges to direct BUM traffic to the centralized node without triggering the distributed RPF check against the actual ingress RBridge.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

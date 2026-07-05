@@ -1,0 +1,10 @@
+document: rfc-8366
+kind: security-consideration
+summary: If a domain certificate is compromised, any outstanding vouchers for that domain could be used by an attacker. Protocols for voucher distribution are RECOMMENDED to check for revocation of domain identity certificates before signing vouchers, and the MASA should be notified to block automated renewal.
+section: "7.3"
+rfc2119_level: RECOMMENDED
+topics:
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

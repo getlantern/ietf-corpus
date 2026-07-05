@@ -1,0 +1,9 @@
+document: rfc-8359
+kind: design-rationale
+summary: The upstream node continues to signal the Unassigned Upstream Label in the Path message even after receiving an appropriate symmetric label in the Resv message. This ensures the downstream node can pick a different symmetric label if it needs to change the label at a later time (e.g., during wavelength change).
+section: "3.1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

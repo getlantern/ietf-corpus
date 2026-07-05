@@ -1,0 +1,8 @@
+document: rfc-8365
+kind: design-rationale
+summary: 'VXLAN and NVGRE encapsulations do not include the ESI label used for split-horizon filtering in standard EVPN/MPLS. Therefore, an alternative ''Local Bias'' approach is used: the egress NVE examines the source IP address in the tunnel header and filters frames on all local interfaces connected to ESs shared with the ingress NVE.'
+section: 8.3.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

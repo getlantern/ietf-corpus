@@ -1,0 +1,8 @@
+document: rfc-8357
+kind: design-rationale
+summary: Relay agents are stateless; to enable stateless routing of replies back to the correct downstream port, the upstream relay must encode the downstream source port in the Relay-forward message rather than maintaining per-session state. The 'Relay Source Port Option' carries this information so no state table is required.
+section: "4"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

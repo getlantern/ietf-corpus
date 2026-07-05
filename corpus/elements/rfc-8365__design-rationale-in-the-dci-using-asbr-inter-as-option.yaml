@@ -1,0 +1,9 @@
+document: rfc-8365
+kind: design-rationale
+summary: In the DCI using ASBR (inter-AS Option B) scenario, BGP next-hop rewriting by ASBRs causes mass withdrawal per ES to fail because the receiving PE cannot correlate Ethernet A-D per ES routes with MAC routes (different RDs). The functionality falls back to mass withdrawal per EVI level, which is slower but much faster than per-MAC withdrawal.
+section: 10.2.2
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
