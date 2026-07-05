@@ -1,0 +1,10 @@
+document: rfc-8613
+kind: normative-requirement
+summary: An AEAD nonce MUST NOT be used more than once per AEAD key. When processing requests concurrently, reading and incrementing the Sender Sequence Number MUST be atomic to preserve (key, nonce) uniqueness.
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

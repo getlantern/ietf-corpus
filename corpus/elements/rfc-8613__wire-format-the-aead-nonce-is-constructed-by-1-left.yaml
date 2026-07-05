@@ -1,0 +1,9 @@
+document: rfc-8613
+kind: wire-format
+summary: The AEAD nonce is constructed by (1) left-padding the Partial IV to 5 bytes, (2) left-padding the sender's ID (ID_PIV) to nonce-length minus 6 bytes, (3) prepending the 1-byte size S of ID_PIV, and (4) XOR-ing the concatenated result with the Common IV. Only AEAD algorithms with nonces ≥ 7 bytes are supported.
+section: "5.2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

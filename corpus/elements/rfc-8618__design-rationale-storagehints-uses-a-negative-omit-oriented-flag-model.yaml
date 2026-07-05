@@ -1,0 +1,9 @@
+document: rfc-8618
+kind: design-rationale
+summary: 'StorageHints uses a negative/omit-oriented flag model: an unset bit means the field is omitted. A positive/include flag would not guarantee presence, only possible presence. This lets decoders quickly determine whether input data is insufficient for their needs (e.g., traffic regeneration) without scanning the data.'
+section: 6.2.1
+topics:
+    - dns
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8613
+kind: normative-requirement
+summary: The Sender Sequence Number SHALL be less than 2^40. If it reaches the maximum, the endpoint MUST NOT process any more messages with that Sender Context and SHOULD acquire a new security context before the limit is reached.
+section: 7.2.1
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

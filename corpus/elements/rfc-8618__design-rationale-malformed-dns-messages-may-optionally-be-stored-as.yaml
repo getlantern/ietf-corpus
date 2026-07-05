@@ -1,0 +1,9 @@
+document: rfc-8618
+kind: design-rationale
+summary: Malformed DNS messages may optionally be stored as raw wire-format bytes. Without this, a malformed Query that cannot be represented structurally causes its FORMERR Response to appear as 'unmatched', which can produce misleading statistics in downstream analysis.
+section: "4"
+topics:
+    - dns
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

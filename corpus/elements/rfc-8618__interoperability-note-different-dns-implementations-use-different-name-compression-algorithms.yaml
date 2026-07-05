@@ -1,0 +1,9 @@
+document: rfc-8618
+kind: interoperability-note
+summary: Different DNS implementations use different name compression algorithms when generating packets (e.g., NSD vs. Knot Authoritative). C-DNS stores names uncompressed; when converting back to PCAP, the reconstructed compression will generally differ from the original, producing valid but byte-for-byte non-identical packets.
+section: "9.1"
+topics:
+    - dns
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

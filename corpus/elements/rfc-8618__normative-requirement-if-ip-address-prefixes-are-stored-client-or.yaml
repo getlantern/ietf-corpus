@@ -1,0 +1,11 @@
+document: rfc-8618
+kind: normative-requirement
+summary: If IP address prefixes are stored (client or server prefix lengths specified in StorageParameters), then 'qr-transport-flags' in QueryResponseSignature, 'ae-transport-flags' in AddressEventCount, and 'mm-transport-flags' in MalformedMessageData MUST be present, as they carry the IP version bit needed to interpret the truncated address.
+section: 6.2.4
+rfc2119_level: MUST
+topics:
+    - dns
+    - ip
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

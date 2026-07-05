@@ -1,0 +1,10 @@
+document: rfc-8613
+kind: wire-format
+summary: 'The Additional Authenticated Data (AAD) is built from a CBOR array ''aad_array'' containing: oscore_version (uint, MUST be 1), algorithms (array containing alg_aead), request_kid (bstr), request_piv (bstr), and options (bstr encoding Class I options). The AAD fed to AEAD is the COSE Enc_structure wrapping external_aad.'
+section: "5.4"
+topics:
+    - security
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

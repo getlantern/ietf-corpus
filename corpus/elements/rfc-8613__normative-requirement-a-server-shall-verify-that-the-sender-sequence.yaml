@@ -1,0 +1,9 @@
+document: rfc-8613
+kind: normative-requirement
+summary: A server SHALL verify that the Sender Sequence Number in the received 'Partial IV' has not been received before (replay protection). If verification fails, the server SHALL stop processing and MAY respond with 4.01 (Unauthorized). The operation of validating the Partial IV and updating the replay window MUST be atomic.
+section: "7.4"
+rfc2119_level: SHALL
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

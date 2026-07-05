@@ -1,0 +1,9 @@
+document: rfc-8618
+kind: interoperability-note
+summary: C-DNS can be converted back to PCAP format, but this requires a sufficient set of stored fields. If so few fields are stored that a decoder cannot determine whether a Q/R data item originated from a Query only, a Response only, or a Query/Response pair, DNS traffic cannot be reconstructed even with sensible defaults for missing fields.
+section: "9"
+topics:
+    - dns
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

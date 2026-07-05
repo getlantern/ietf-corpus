@@ -1,0 +1,9 @@
+document: rfc-8613
+kind: wire-format
+summary: 'The OSCORE option value is a compact byte sequence: a 1-byte flag field (bits: h=kid-context present, k=kid present, n=Partial IV length in 3 LSBs), followed by n bytes of Partial IV, then 1-byte length s + s bytes of ''kid context'' if h=1, then remaining bytes for ''kid'' if k=1. Bits 5–7 of the flag byte are reserved and SHALL be zero; a set reserved bit renders the message malformed.'
+section: "6.1"
+topics:
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

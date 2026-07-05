@@ -1,0 +1,9 @@
+document: rfc-8613
+kind: design-rationale
+summary: Responses without a Partial IV reuse the nonce from the corresponding request. This is intentional to reduce message overhead for the common case of a single response, while still providing all required security properties since the response is cryptographically bound to the request via the AAD.
+section: "5.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

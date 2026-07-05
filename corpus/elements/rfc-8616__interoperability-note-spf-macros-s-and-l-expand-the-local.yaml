@@ -1,0 +1,9 @@
+document: rfc-8616
+kind: interoperability-note
+summary: SPF macros %{s} and %{l} expand the local part of the sender's mailbox. If the local part contains non-ASCII characters, terms including %{s} or %{l} do not match anything, because non-ASCII local parts cannot be used as DNS labels.
+section: "4"
+topics:
+    - email
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8613
+kind: wire-format
+summary: 'Key derivation uses HKDF with an ''info'' CBOR array containing: id (Sender ID, Recipient ID, or empty for Common IV), id_context (bstr or nil), alg_aead (int/tstr), type (''Key'' or ''IV''), and L (output length in bytes). For default AES-CCM-16-64-128, L=16 for keys and L=13 for Common IV.'
+section: 3.2.1
+topics:
+    - crypto
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

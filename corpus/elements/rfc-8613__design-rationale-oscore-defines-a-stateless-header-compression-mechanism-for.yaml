@@ -1,0 +1,9 @@
+document: rfc-8613
+kind: design-rationale
+summary: OSCORE defines a stateless header compression mechanism for COSE objects because standard COSE is designed for a large number of stateless use cases and produces larger-than-necessary overhead for a stateful security protocol. Compression removes redundant information, significantly reducing per-packet overhead on constrained networks.
+section: "6"
+topics:
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

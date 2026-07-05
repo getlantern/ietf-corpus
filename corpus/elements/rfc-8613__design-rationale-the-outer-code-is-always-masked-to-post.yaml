@@ -1,0 +1,8 @@
+document: rfc-8613
+kind: design-rationale
+summary: The Outer Code is always masked to POST (0.02) for requests and Changed (2.04) for responses because the true CoAP method and response code must be hidden from proxies. This prevents intermediaries from eavesdropping on or manipulating the request type (e.g., converting GET to DELETE).
+section: "4.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
