@@ -1,0 +1,10 @@
+document: rfc-7862
+kind: normative-requirement
+summary: Servers SHOULD reject COPY_NOTIFY requests that do not use RPCSEC_GSS with privacy to ensure the cnr_stateid in the reply is encrypted. For the same reason, clients SHOULD send COPY requests to the destination using RPCSEC_GSS with privacy.
+section: 4.9.1.2
+rfc2119_level: SHOULD
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

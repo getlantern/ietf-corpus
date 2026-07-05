@@ -1,0 +1,11 @@
+document: rfc-7873
+kind: normative-requirement
+summary: The cookie computation algorithm SHOULD be based on a pseudorandom function at least as strong as 64-bit FNV, since an excessively weak algorithm could allow adversaries to guess cookies. Stronger algorithms such as HMAC-SHA-256 truncated to 64 bits are acceptable but impose additional computational load.
+section: "9.1"
+rfc2119_level: SHOULD
+topics:
+    - dns
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

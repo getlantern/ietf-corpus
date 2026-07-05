@@ -1,0 +1,8 @@
+document: rfc-7864
+kind: design-rationale
+summary: FMI/FMA messages are introduced as separate message types (reusing UPN/UPA from RFC 7077) because the LMA cannot send a PBA without first receiving a PBU; this asymmetry prevents the LMA from proactively signaling flow mobility events to MAGs using the standard PBU/PBA exchange.
+section: 3.2.2
+topics:
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

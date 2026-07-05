@@ -1,0 +1,8 @@
+document: rfc-7862
+kind: security-consideration
+summary: Without RPCSEC_GSS, inter-server copy over ONC RPC (AUTH_SYS or AUTH_NONE) lacks strong mutual authentication between source and destination. The cnr_stateid provides initial authentication but cannot defend against man-in-the-middle attacks; additional secure transport (e.g., IPsec) is necessary.
+section: 4.9.1.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

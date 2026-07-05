@@ -1,0 +1,11 @@
+document: rfc-7873
+kind: normative-requirement
+summary: It is RECOMMENDED that a server retain its previous secret after rollover for a configurable period of 1–300 seconds (default 150 seconds), treating requests with old-secret Server Cookies as valid during that window. When responding with an old cookie, the server MUST include a new Server Cookie.
+section: "7.1"
+rfc2119_level: RECOMMENDED
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

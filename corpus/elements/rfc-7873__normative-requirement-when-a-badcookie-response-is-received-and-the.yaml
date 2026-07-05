@@ -1,0 +1,10 @@
+document: rfc-7873
+kind: normative-requirement
+summary: When a BADCOOKIE response is received and the Client Cookie in the reply matches what was sent, the client SHOULD retry the request using the new Server Cookie from the response. If BADCOOKIE persists after retrying with the new cookie, the client SHOULD fall back to TCP.
+section: "5.3"
+rfc2119_level: SHOULD
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

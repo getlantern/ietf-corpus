@@ -1,0 +1,10 @@
+document: rfc-7867
+kind: security-consideration
+summary: This block introduces no new security considerations beyond RFC 3611. Per-packet statistics are not provided, so the confidentiality risk described in RFC 3611 Section 7 paragraph 3 does not apply. Implementers SHOULD apply encryption and authentication (e.g., SAVPF per RFC 5124) where security is a concern, as attackers could inject incorrect concealment reports to distort QoE estimation.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

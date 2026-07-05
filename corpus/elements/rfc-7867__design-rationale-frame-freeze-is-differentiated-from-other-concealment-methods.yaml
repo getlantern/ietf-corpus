@@ -1,0 +1,9 @@
+document: rfc-7867
+kind: design-rationale
+summary: Frame-freeze is differentiated from other concealment methods (interframe extrapolation, interpolation, error-resilient encoding) because frame-freeze repairs video based on whole frames whereas the others repair at finer granularity (macroblocks or bitstreams), causing measurement metrics to differ. This difference necessitates separate report blocks and a distinct V flag value.
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

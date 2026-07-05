@@ -1,0 +1,9 @@
+document: rfc-7873
+kind: design-rationale
+summary: 'The Server Cookie is NOT used as an input to the Client Cookie (asymmetric dependency) because doing so would create an almost infinite series of errors in anycast environments: each retry would generate a new Client Cookie, requiring a new Server Cookie, causing perpetual BADCOOKIE loops. The Client Cookie is therefore derived solely from stable client-side state.'
+section: "6"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

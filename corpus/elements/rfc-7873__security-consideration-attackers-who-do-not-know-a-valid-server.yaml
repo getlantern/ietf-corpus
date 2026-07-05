@@ -1,0 +1,9 @@
+document: rfc-7873
+kind: security-consideration
+summary: Attackers who do not know a valid Server Cookie can omit the COOKIE option or send a random one; servers must apply independent rate-limiting of error responses to mitigate amplification and denial-of-service under these conditions. Increased rates of bad cookies should prompt more frequent secret rollover.
+section: "9"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

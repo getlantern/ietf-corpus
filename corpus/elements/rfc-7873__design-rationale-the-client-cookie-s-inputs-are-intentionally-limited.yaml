@@ -1,0 +1,9 @@
+document: rfc-7873
+kind: design-rationale
+summary: The Client Cookie's inputs are intentionally limited to the Server IP Address and slowly-changing quantities (Client Secret) rather than per-request data like request ID. This keeps the Client Cookie stable across a session, which is required because the Server Cookie is derived from the Client Cookie; a changing Client Cookie would force each request to be sent twice—once to learn the new Server Cookie, once to use it.
+section: "6"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-7873
+kind: state-machine
+summary: 'When a DNS server with Cookies enabled receives a request, it follows five branches: (1) no OPT/COOKIE—respond normally; (2) malformed COOKIE—return FORMERR; (3) only Client Cookie—silently discard, send BADCOOKIE, or process normally per policy; (4) Client Cookie plus invalid Server Cookie—treat as case (3); (5) Client Cookie plus valid Server Cookie—process and include COOKIE in response.'
+section: "5.2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

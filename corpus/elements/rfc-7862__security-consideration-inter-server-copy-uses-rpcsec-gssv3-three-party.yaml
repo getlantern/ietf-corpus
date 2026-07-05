@@ -1,0 +1,9 @@
+document: rfc-7862
+kind: security-consideration
+summary: Inter-server COPY uses RPCSEC_GSSv3 three-party authorization to prevent the destination server from accessing files beyond the one being copied. The copy_from_auth/copy_to_auth/copy_confirm_auth privilege chain ties the destination's read access to a specific source file and user principal, eliminating the need for preconfigured trust between servers.
+section: "4.9"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

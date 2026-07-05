@@ -1,0 +1,6 @@
+document: rfc-7862
+kind: state-machine
+summary: 'An asynchronous copy offload moves through three states: initiated (COPY operation returns a copy offload stateid), in-progress (client may poll via OFFLOAD_STATUS or cancel via OFFLOAD_CANCEL), and completed (server invokes CB_OFFLOAD callback). The stateid is invalidated by server/client restart, OFFLOAD_CANCEL, or client acknowledgment of CB_OFFLOAD.'
+section: "4.8"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

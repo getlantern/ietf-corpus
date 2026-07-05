@@ -1,0 +1,10 @@
+document: rfc-7873
+kind: design-rationale
+summary: The Server Cookie is computed as a PRF of the request source IP address and the Client Cookie (in addition to the Server Secret) so that different clients behind the same NAT box—sharing one external IP address—produce distinct Server Cookies. Without including the Client Cookie, an attacker behind the same NAT could reuse a legitimately obtained Server Cookie against forged source addresses of other hosts behind that NAT.
+section: "6"
+topics:
+    - dns
+    - security
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,6 @@
+document: rfc-7862
+kind: design-rationale
+summary: READ_PLUS is introduced as a separate operation rather than extending READ because existing READ clients cannot accept a response containing compact hole metadata. Clients that support READ_PLUS should always prefer it over READ when the server also supports it, as it performs no worse and can dramatically reduce data transfer for sparse files.
+section: 6.2.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
