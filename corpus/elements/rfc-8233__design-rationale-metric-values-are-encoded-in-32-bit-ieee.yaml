@@ -1,0 +1,9 @@
+document: rfc-8233
+kind: design-rationale
+summary: Metric values are encoded in 32-bit IEEE 754 floating point (inherited from the METRIC object definition in RFC 5440) even though IGP advertisements use 24-bit integers. This conversion may introduce slight precision loss but maintains consistency with existing PCEP metric encoding.
+section: 3.1.1.1
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

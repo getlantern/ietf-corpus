@@ -1,0 +1,10 @@
+document: rfc-8232
+kind: normative-requirement
+summary: Prior to completing the initialization phase when State Synchronization is required, the PCE MUST mark any LSPs in the LSP-DB that were previously reported by the PCC as stale. After receiving the end-of-synchronization marker, the PCE MUST purge any LSPs from the LSP-DB that are still marked as stale.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

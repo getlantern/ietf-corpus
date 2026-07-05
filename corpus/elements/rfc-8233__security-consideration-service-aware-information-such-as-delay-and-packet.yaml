@@ -1,0 +1,11 @@
+document: rfc-8233
+kind: security-consideration
+summary: Service-aware information such as delay and packet loss is sensitive; snooping PCEP messages carrying these metrics or using them for network reconnaissance may expose operational details to attackers. Deployments should use TCP-AO (RFC 5925) or PCEPS (TLS-based) for PCEP security, with TLS considered the preferred option for sensitive service-aware data.
+section: "8"
+topics:
+    - security
+    - mpls
+    - routing
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

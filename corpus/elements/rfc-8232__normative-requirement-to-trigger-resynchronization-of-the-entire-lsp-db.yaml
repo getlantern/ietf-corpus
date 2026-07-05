@@ -1,0 +1,10 @@
+document: rfc-8232
+kind: normative-requirement
+summary: To trigger resynchronization of the entire LSP-DB, the PCE MUST first mark all LSPs previously reported by the PCC as stale, then send a PCUpd with PLSP-ID=0, SYNC=1, and an empty ERO. After receiving the end-of-synchronization marker, the PCE will purge LSPs not refreshed.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

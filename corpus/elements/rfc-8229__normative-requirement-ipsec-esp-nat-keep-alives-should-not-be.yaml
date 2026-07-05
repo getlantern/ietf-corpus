@@ -1,0 +1,11 @@
+document: rfc-8229
+kind: normative-requirement
+summary: IPsec ESP NAT keep-alives SHOULD NOT be sent when using TCP encapsulation, and any implementation using TCP encapsulation MUST silently drop incoming NAT keep-alive packets (one-octet 0xFF ESP payload) and not treat them as errors.
+section: "10"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - vpn
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

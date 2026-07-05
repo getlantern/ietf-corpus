@@ -1,0 +1,9 @@
+document: rfc-8230
+kind: security-consideration
+summary: There is a theoretical hash substitution attack against RSASSA-PSS; the mitigation is requiring the same hash function be used consistently for all operations. Unlike ECDSA, hash outputs are not truncated, and RSASSA-PSS's internal padding structure requires multiple collisions to forge a signature by changing hash functions, making this attack highly unlikely.
+section: "6.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

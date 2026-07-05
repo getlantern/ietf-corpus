@@ -1,0 +1,10 @@
+document: rfc-8232
+kind: normative-requirement
+summary: If the TRIGGERED-INITIAL-SYNC capability is not advertised by a PCE and the PCC receives a PCUpd with SYNC=1, the PCC MUST send a PCErr with Error-type=20 and Error-value=4 'Attempt to trigger a synchronization when the PCE triggered synchronization capability has not been advertised'.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

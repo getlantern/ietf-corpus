@@ -1,0 +1,10 @@
+document: rfc-8232
+kind: normative-requirement
+summary: If a PCEP speaker receives the SPEAKER-ENTITY-ID on a new PCEP session that matches an existing alive PCEP session, the PCEP speaker MUST send a PCErr with Error-type=20 and Error-value=7 'Received an invalid Speaker Entity Identifier', and close the PCEP session.
+section: 3.3.2
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

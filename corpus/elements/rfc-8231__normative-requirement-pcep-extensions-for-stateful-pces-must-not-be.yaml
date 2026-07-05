@@ -1,0 +1,11 @@
+document: rfc-8231
+kind: normative-requirement
+summary: PCEP extensions for stateful PCEs MUST NOT be used if one or both PCEP speakers have not included the STATEFUL-PCE-CAPABILITY TLV in their OPEN message. A PCC that receives a PCUpd without having advertised the capability MUST generate PCErr Error-type=19, error-value=2, and SHOULD terminate the session.
+section: "5.4"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

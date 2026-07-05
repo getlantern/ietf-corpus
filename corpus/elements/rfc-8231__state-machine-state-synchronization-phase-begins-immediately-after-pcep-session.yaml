@@ -1,0 +1,9 @@
+document: rfc-8231
+kind: state-machine
+summary: State Synchronization phase begins immediately after PCEP session initialization. PCC sends PCRpt messages with SYNC=1 for each LSP snapshot. Synchronization ends with a PCRpt having SYNC=0 and PLSP-ID=0. PCE MUST NOT send PCUpd, and PCC MUST NOT send PCReq, until synchronization completes.
+section: "5.6"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

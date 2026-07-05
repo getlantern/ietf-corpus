@@ -1,0 +1,10 @@
+document: rfc-8232
+kind: normative-requirement
+summary: If both PCEP speakers set the S flag in the OPEN object's STATEFUL-PCE-CAPABILITY TLV to 1, the PCC MUST include the LSP-DB-VERSION TLV in each LSP object of the PCRpt message. If missing, the PCE generates an error with Error-type=6 and Error-value=12 'LSP-DB-VERSION TLV missing', and closes the session.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

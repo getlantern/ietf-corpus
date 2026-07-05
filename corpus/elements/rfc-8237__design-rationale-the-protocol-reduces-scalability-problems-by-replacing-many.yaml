@@ -1,0 +1,8 @@
+document: rfc-8237
+kind: design-rationale
+summary: The protocol reduces scalability problems by replacing many per-PW periodic status refreshes with a single LSP-level keepalive. Once the ACTIVE state is reached, PW status messages can use a Refresh Timer of zero (no further retransmission), greatly decreasing message volume.
+section: "1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

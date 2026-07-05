@@ -1,0 +1,10 @@
+document: rfc-8232
+kind: normative-requirement
+summary: To enable PCE-triggered initial synchronization, both PCEP speakers MUST set the F bit (TRIGGERED-INITIAL-SYNC) to 1 in the OPEN message. The PCE triggers synchronization by sending a PCUpd with PLSP-ID=0 and SYNC=1; the PCC MUST NOT trigger State Synchronization on its own when this capability is advertised.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

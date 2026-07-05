@@ -1,0 +1,9 @@
+document: rfc-8230
+kind: design-rationale
+summary: The mask generation function for both RSASSA-PSS and RSAES-OAEP is fixed to MGF1 (as defined in RFC 8017) using the same hash function as used for data hashing. This simplifies parameterization and is the recommended practice to mitigate hash substitution attacks.
+section: "2"
+topics:
+    - crypto
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8237
+kind: state-machine
+summary: 'The PW status refresh reduction protocol operates in three states: INACTIVE (protocol off or all PWs deprovisioned), STARTUP (transmitting periodic messages with Ack Session ID=0, awaiting correct acknowledgment), and ACTIVE (correct local Session ID received in Ack Session ID within 3.5x Refresh Timer). Transitions: STARTUP→ACTIVE on correct ack, ACTIVE→STARTUP on timeout or wrong Ack Session ID, any→INACTIVE on deprovision or disable.'
+section: "2.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

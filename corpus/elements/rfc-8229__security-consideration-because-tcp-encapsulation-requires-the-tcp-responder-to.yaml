@@ -1,0 +1,12 @@
+document: rfc-8229
+kind: security-consideration
+summary: Because TCP encapsulation requires the TCP Responder to accept connections from new source addresses and ports, an attacker that can pass validation checks could redirect subsequent packets. Validation of messages on reconnection MUST include decryption, authentication, and replay checks.
+section: "13"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - vpn
+    - security
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

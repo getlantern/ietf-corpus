@@ -1,0 +1,9 @@
+document: rfc-8231
+kind: state-machine
+summary: 'LSP delegation lifecycle: PCC delegates by setting D=1 in PCRpt; PCE accepts by setting D=1 in subsequent PCUpd, or rejects by responding with D=0. PCC revokes by sending PCRpt with D=0; PCE returns by sending PCUpd with D=0. An LSP remains delegated only while each successive PCRpt and PCUpd carries D=1.'
+section: "5.7"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

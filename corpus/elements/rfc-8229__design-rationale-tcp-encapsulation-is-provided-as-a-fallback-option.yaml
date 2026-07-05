@@ -1,0 +1,11 @@
+document: rfc-8229
+kind: design-rationale
+summary: TCP encapsulation is provided as a fallback option because many network middleboxes block all UDP traffic, including IKE and IPsec, but allow TCP connections through because they appear to be web traffic. Direct ESP or UDP encapsulation should be preferred due to performance concerns.
+section: "1"
+topics:
+    - ipsec
+    - vpn
+    - nat
+    - censorship
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

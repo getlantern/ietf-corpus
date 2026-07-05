@@ -1,0 +1,11 @@
+document: rfc-8247
+kind: security-consideration
+summary: The Diffie-Hellman Group is the most critical parameter to choose conservatively. An attacker who can later break the DH group used in IKE can retroactively decrypt all recorded ESP traffic, since the DH exchange provides the symmetric session keys.
+section: "5"
+topics:
+    - ipsec
+    - crypto
+    - security
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8229
+kind: design-rationale
+summary: 'Running TCP within TCP is discouraged for performance reasons: outer TCP packet loss is hidden from inner TCP connections (interpreted as delay, not loss), causing spurious retransmissions, degraded RTT estimation, reduced sending rates, and potential bufferbloat.'
+section: "12.1"
+topics:
+    - ipsec
+    - vpn
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

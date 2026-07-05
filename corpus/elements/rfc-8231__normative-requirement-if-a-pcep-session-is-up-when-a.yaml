@@ -1,0 +1,10 @@
+document: rfc-8231
+kind: normative-requirement
+summary: If a PCEP session is UP when a PCC revokes delegation, the PCC MUST notify the PCE by sending an LSP State Report with the Delegate flag set to 0. After revocation, an attempt by the PCE to update a non-delegated LSP results in PCErr Error-type=19, error-value=1.
+section: 5.7.2.1
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

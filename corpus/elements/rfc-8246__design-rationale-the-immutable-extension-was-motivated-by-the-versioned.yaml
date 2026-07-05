@@ -1,0 +1,8 @@
+document: rfc-8246
+kind: design-rationale
+summary: The immutable extension was motivated by the 'versioned URL' design pattern in which sub-resources are published at new URLs when updated, making conditional revalidation requests wasteful. Without immutable, user-driven reloads generate hundreds of 304 responses for sub-resources that have not changed.
+section: "1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
