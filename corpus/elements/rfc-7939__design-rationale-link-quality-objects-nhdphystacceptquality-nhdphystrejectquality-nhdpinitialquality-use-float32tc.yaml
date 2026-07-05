@@ -1,0 +1,8 @@
+document: rfc-7939
+kind: design-rationale
+summary: Link quality objects (nhdpHystAcceptQuality, nhdpHystRejectQuality, nhdpInitialQuality) use Float32TC from RFC 6340 rather than integer-scaled values, but cannot carry formal DEFVAL clauses because SMIv2 range constraints are unavailable for OCTET STRING-based textual conventions; default values are documented in DESCRIPTION clauses only.
+section: "7"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

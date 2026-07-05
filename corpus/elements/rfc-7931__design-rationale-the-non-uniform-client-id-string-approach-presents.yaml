@@ -1,0 +1,6 @@
+document: rfc-7931
+kind: design-rationale
+summary: The non-uniform client ID string approach presents a different id string to each server network address, resulting in a separate clientid4/lease per server IP. This mirrors NFSv3 behavior and simplifies the client, but is discouraged for clients supporting transparent state migration because migrating leases can result in multiple leases for the same client on the same server, vitiating the approach's advantages.
+section: "5.5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

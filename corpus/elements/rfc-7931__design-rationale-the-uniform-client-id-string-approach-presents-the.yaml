@@ -1,0 +1,6 @@
+document: rfc-7931
+kind: design-rationale
+summary: The uniform client ID string approach presents the same id string to all servers, giving the server the basis for a single clientid4/lease per distinct client. Within this approach, the verifier field (boot instance id) must change if and only if a new client instance is created (typically on reboot), so clients should establish the verifier once per reboot rather than recreating it each time an (IP-address, clientid4) tracking structure is destroyed and recreated.
+section: "5.6"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

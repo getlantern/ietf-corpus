@@ -1,0 +1,6 @@
+document: rfc-7931
+kind: interoperability-note
+summary: Some existing NFSv4.0 servers that implement IP address failover rely on the non-uniform client ID string approach to keep separate state corpora distinct; others incorrectly return NFS4ERR_CLID_INUSE when a multihomed client using the uniform approach presents the same id string from a second IP address. Clients may need to support both approaches simultaneously (selected per-mount via mount options) to interoperate with such servers.
+section: "5.7"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

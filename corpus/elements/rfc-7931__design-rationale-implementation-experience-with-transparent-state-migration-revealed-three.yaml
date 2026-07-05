@@ -1,0 +1,6 @@
+document: rfc-7931
+kind: design-rationale
+summary: 'Implementation experience with transparent state migration revealed three problems in RFC 7530: client reboots after migration did not promptly free old state; a server could end up with multiple leases sharing the same nfs_client_id4 (violating the one-lease-per-client assumption); and clients had to manage locking state split across multiple clientid4s. The root cause was that prior specs required transferring clientid4s without defining how migrated state integrates with existing leases on the destination server.'
+section: "4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

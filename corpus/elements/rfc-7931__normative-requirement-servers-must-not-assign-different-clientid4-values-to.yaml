@@ -1,0 +1,7 @@
+document: rfc-7931
+kind: normative-requirement
+summary: Servers MUST NOT assign different clientid4 values to the same client (presenting the same nfs_client_id4) on different IP addresses and then act as if those clientid4s belong to the same client. This behavior would defeat the primary purpose of the trunking determination algorithm and is the only server behavior that can cause the algorithm to fail.
+section: "5.8"
+rfc2119_level: MUST NOT
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-7931
+kind: normative-requirement
+summary: To prevent malicious destruction of locking state, the server MUST NOT cancel a client's leased state if the principal that established the state for a given id string is not the same as the principal issuing the SETCLIENTID. This prevents unauthorized lease cancellation by a different security principal.
+section: 5.2.1
+rfc2119_level: MUST NOT
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

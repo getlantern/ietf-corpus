@@ -1,0 +1,10 @@
+document: rfc-7941
+kind: design-rationale
+summary: Not all SDES items are appropriate for RTP header extension transport. Items like NAME and LOC are privacy-sensitive and have no use case requiring them at the time the first RTP packets arrive, so only items with timeliness requirements (e.g., CNAME) are registered for use with this header extension.
+section: "1"
+topics:
+    - rtp
+    - privacy
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

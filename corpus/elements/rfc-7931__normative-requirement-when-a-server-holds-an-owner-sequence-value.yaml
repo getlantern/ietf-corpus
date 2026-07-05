@@ -1,0 +1,7 @@
+document: rfc-7931
+kind: normative-requirement
+summary: When a server holds an owner sequence value that matches a reissued request, it MUST NOT respond with the stored associated response if the file system associated with that stored response is not currently part of the set of file systems handled by that server. This prevents stale responses from being returned for file systems that have since migrated away.
+section: 6.1.1.2
+rfc2119_level: MUST NOT
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

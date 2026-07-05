@@ -1,0 +1,7 @@
+document: rfc-7931
+kind: normative-requirement
+summary: If the destination server has a lease with the same id string but a different boot verifier from a migrated lease (partial match), the server MUST eliminate one of the two conflicting leases. Since boot instance ids are not ordered, the lease with the later renewal time prevails, and the other clientid4 is invalidated.
+section: 6.1.1.1
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

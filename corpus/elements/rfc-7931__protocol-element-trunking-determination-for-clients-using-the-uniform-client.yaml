@@ -1,0 +1,6 @@
+document: rfc-7931
+kind: protocol-element
+summary: 'Trunking determination for clients using the uniform client ID string approach: when two server IP addresses return the same clientid4, the client performs a cross-confirmation test — doing SETCLIENTID to each candidate lead IP to obtain a new setclientid_confirm verifier (SCn), then sending SETCLIENTID_CONFIRM with each SCn to the new IP address (X). A successful confirmation proves trunking; no success means X is a distinct server. The procedure must be serialized per clientid4 value to prevent races.'
+section: "5.8"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

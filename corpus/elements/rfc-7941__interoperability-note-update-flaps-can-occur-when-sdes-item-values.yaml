@@ -1,0 +1,9 @@
+document: rfc-7941
+kind: interoperability-note
+summary: Update flaps can occur when SDES item values change and arrive via both RTCP and RTP header extensions due to packet reordering or different code paths. Receivers should use the RTP extended sequence number and RTCP SR timestamp to determine which update is more recent before applying a new value.
+section: 4.2.6
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

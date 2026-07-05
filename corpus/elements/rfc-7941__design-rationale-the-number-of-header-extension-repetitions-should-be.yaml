@@ -1,0 +1,9 @@
+document: rfc-7941
+kind: design-rationale
+summary: The number of header extension repetitions should be tailored to achieve a desired delivery probability given the expected packet loss rate P, using the formula 1-P^N for N repetitions. For point-to-point or small receiver populations, RTCP feedback (XR Loss RLE, NACK) can be used to stop repetitions once delivery is confirmed.
+section: 4.2.3
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

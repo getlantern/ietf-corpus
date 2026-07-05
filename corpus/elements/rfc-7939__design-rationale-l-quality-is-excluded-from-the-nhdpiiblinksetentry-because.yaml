@@ -1,0 +1,9 @@
+document: rfc-7939
+kind: design-rationale
+summary: L_quality is excluded from the nhdpIibLinkSetEntry because link quality updates may be required too frequently to be practical in a MIB table without causing excessive SNMP traffic. Only the derived boolean L_lost flag (from RFC 7466) is included.
+section: "7"
+topics:
+    - routing
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

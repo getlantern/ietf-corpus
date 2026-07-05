@@ -1,0 +1,7 @@
+document: rfc-7931
+kind: normative-requirement
+summary: When a server implements migration but chooses not to transfer state information, it MUST provide a file-system-specific grace period to allow clients to reclaim locks associated with files in the migrated file system. Without this grace period, clients cannot guarantee that no conflicting lock was granted after migration but before their re-acquisition.
+section: 6.1.1
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

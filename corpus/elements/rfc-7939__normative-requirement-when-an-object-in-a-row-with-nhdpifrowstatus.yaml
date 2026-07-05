@@ -1,0 +1,9 @@
+document: rfc-7939
+kind: normative-requirement
+summary: When an object in a row with nhdpIfRowStatus of 'active(1)' is changed, the updated value MUST be reflected in the running NHDP instance and MUST be written to nonvolatile storage. If nhdpIfRowStatus is not 'active(1)', all associated entries in nhdpLibLocalIfSetTable, nhdpInterfaceStateTable, nhdpIibLinkSetTable, and nhdpInterfacePerfTable MUST be deleted.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-7944
+kind: design-rationale
+summary: Higher-priority messages should represent a relatively small portion of normal traffic to prevent starvation of lower-priority messages, which would otherwise be retried and generate more total traffic than without DRMP; however, blocking of lower-priority messages is explicitly required in scenarios like first responder signaling.
+section: "10"
+topics:
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

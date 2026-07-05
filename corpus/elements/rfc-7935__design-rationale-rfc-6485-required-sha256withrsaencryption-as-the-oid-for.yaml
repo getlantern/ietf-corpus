@@ -1,0 +1,10 @@
+document: rfc-7935
+kind: design-rationale
+summary: RFC 6485 required sha256WithRSAEncryption as the OID for the CMS SignerInfo signatureAlgorithm field, but existing implementations use rsaEncryption because library support for rsaEncryption is broader. This document changed to follow existing practice rather than force an implementation switch; this is an identifier change only, not a cryptographic algorithm change.
+section: "7"
+topics:
+    - crypto
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-7941
+kind: design-rationale
+summary: SDES items are placed in RTP header extensions to speed up delivery when a new SSRC joins a session, enabling receivers to determine synchronization context before the first RTCP interval. This is particularly valuable for CNAME, which is needed to synchronize related RTP streams and cannot wait for the regular RTCP transmission schedule.
+section: "3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

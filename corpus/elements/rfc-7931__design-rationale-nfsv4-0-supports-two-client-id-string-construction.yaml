@@ -1,0 +1,6 @@
+document: rfc-7931
+kind: design-rationale
+summary: 'NFSv4.0 supports two client ID string construction approaches: ''non-uniform'' (different id strings per server address, one clientid4/lease per IP, NFSv3-like) and ''uniform'' (same id string to all servers, enabling server trunking detection and automatic lease merger on migration). Clients supporting transparent state migration are recommended to use the uniform approach because it enables the destination server to perform lease merger without client involvement.'
+section: "5.4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
