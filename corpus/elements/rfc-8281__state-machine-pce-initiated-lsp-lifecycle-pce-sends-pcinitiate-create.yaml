@@ -1,0 +1,9 @@
+document: rfc-8281
+kind: state-machine
+summary: 'PCE-initiated LSP lifecycle: PCE sends PCInitiate (create) → PCC assigns PLSP-ID and delegates via PCRpt → PCE may update via PCUpd → PCE sends PCInitiate with R=1 (delete) → PCC removes LSP and sends PCRpt with R=1. On PCEP session failure, the LSP enters an orphan state governed by the State Timeout Interval timer before cleanup.'
+section: "3.2"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

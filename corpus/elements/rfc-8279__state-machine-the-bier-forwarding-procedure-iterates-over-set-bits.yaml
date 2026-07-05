@@ -1,0 +1,8 @@
+document: rfc-8279
+kind: state-machine
+summary: 'The BIER forwarding procedure iterates over set bits in the packet''s BitString. For each lowest set bit k: if k identifies the local BFR, deliver a copy to the multicast flow overlay and clear bit k; otherwise, look up entry k in the BIFT to get F-BM and BFR-NBR, copy the packet with BitString AND''d by F-BM, forward the copy to BFR-NBR, and update the original BitString by AND''ing with ~F-BM. The loop terminates when the BitString is all zeros.'
+section: "6.5"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

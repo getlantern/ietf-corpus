@@ -1,0 +1,8 @@
+document: rfc-8279
+kind: design-rationale
+summary: BIER eliminates the need for per-flow state at transit BFRs and explicit multicast tree-building protocols. The set of egress routers is explicitly encoded in the packet header as a BitString, so transit BFRs need only maintain per-neighbor state (the BIFT) rather than per-flow state, resulting in a considerable simplification of multicast operations.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

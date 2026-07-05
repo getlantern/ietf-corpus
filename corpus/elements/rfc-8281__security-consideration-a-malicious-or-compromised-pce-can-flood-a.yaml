@@ -1,0 +1,10 @@
+document: rfc-8281
+kind: security-consideration
+summary: A malicious or compromised PCE can flood a PCC with LSP instantiation requests, consuming network and LSR resources. The PCC MUST enforce resource limits and send PCErr Error-type=19 Error-value=6 when the limit is reached; rapid LSP flaps are addressed by PCErr Error-type=19 Error-value=10 and a cool-off period.
+section: "9.1"
+topics:
+    - security
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

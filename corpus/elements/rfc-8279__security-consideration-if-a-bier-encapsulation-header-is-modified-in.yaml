@@ -1,0 +1,9 @@
+document: rfc-8279
+kind: security-consideration
+summary: If a BIER encapsulation header is modified in transit (through error or malicious action) so that the SI or BitString differs from the BFIR's intention, the packet is likely to be misdelivered — sent to unintended BFERs or not sent to intended ones. Protecting the integrity of the BIER header therefore requires mechanisms provided by the encapsulation or by the routing underlay.
+section: "9"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

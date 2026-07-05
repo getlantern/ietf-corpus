@@ -1,0 +1,8 @@
+document: rfc-8279
+kind: wire-format
+summary: 'BFR-id N is encoded in a BIER packet as: SI = integer part of (N-1)/BitStringLength; bit position = ((N-1) modulo BitStringLength)+1. Multiple BFR-ids sharing the same SI can be combined into a single BitString via bitwise OR. Different deployments may use different BitStringLengths.'
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8292
+kind: security-consideration
+summary: The 'vapid' authentication scheme is vulnerable to replay attacks if an attacker acquires a valid JWT. HTTPS (required by RFC 8030) provides confidentiality, and limiting token validity to 24 hours reduces the value of a stolen token.
+section: "5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

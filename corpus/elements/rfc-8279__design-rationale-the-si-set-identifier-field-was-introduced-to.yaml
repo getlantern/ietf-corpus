@@ -1,0 +1,8 @@
+document: rfc-8279
+kind: design-rationale
+summary: The SI (Set Identifier) field was introduced to allow BIER to scale beyond the number of BFERs representable in a single BitString. When a domain has more BFERs than bits in the BitString, the BFIR creates one copy of the packet per SI-subset, each with its own SI value and a BitString covering only the BFERs in that subset.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

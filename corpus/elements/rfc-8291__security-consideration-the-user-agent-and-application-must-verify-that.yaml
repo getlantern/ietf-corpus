@@ -1,0 +1,10 @@
+document: rfc-8291
+kind: security-consideration
+summary: The user agent and application MUST verify that received ECDH public keys are on the P-256 curve (checking Y is not the point at infinity, coordinates are in valid range, and the point satisfies the curve equation), as failure to validate allows an attacker to extract private keys.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

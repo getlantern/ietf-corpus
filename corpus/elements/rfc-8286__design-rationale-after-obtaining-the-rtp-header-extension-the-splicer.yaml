@@ -1,0 +1,9 @@
+document: rfc-8286
+kind: design-rationale
+summary: After obtaining the RTP header extension, the splicer generates its own stream and MUST NOT include the header extension in outgoing packets. This reduces header overhead for downstream receivers who have no use for splicing interval information.
+section: "3.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

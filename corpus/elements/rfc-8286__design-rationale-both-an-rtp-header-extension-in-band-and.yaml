@@ -1,0 +1,9 @@
+document: rfc-8286
+kind: design-rationale
+summary: 'Both an RTP header extension (in-band) and an RTCP packet (out-of-band) are defined to carry the same Splicing Interval. This dual approach provides robustness: splicing-unaware middleboxes may strip RTP header extensions, so RTCP serves as a fallback. RTCP is considered a complement rather than a primary mechanism because it is also unreliable and less immediate.'
+section: "1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

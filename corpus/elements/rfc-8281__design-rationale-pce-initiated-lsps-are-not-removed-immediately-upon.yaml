@@ -1,0 +1,9 @@
+document: rfc-8281
+kind: design-rationale
+summary: PCE-initiated LSPs are not removed immediately upon PCE failure; instead, the State Timeout Interval timer allows network cleanup without manual intervention and prevents instantaneous service disruption from a PCE crash. This design trades immediate resource reclamation for operational resilience.
+section: "6"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

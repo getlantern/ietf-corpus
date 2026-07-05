@@ -1,0 +1,8 @@
+document: rfc-8279
+kind: wire-format
+summary: The BIER header contains a BitString field and a Set Identifier (SI). Each bit in the BitString represents one BFER; if a packet has SI=n and bit k set, it must be delivered to the BFER with BFR-id = n*BitStringLength+k. The least significant (rightmost) bit is bit 1 and the most significant is bit BitStringLength.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

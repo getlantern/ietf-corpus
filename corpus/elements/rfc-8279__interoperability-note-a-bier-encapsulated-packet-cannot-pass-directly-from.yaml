@@ -1,0 +1,8 @@
+document: rfc-8279
+kind: interoperability-note
+summary: A BIER-encapsulated packet cannot pass directly from one BIER domain to another; at the boundary it must be decapsulated and passed to the multicast flow overlay. The flow overlay then re-encapsulates it as a new BIER packet if the packet needs to traverse a second BIER domain.
+section: "6.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

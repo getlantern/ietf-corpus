@@ -1,0 +1,10 @@
+document: rfc-8279
+kind: normative-requirement
+summary: When unicast traffic to a BFR-NBR uses a bypass tunnel, BIER-encapsulated multicast traffic to that BFR-NBR SHOULD also use that tunnel, so that existing fast-reroute schemes apply to multicast traffic as well. The BIER packet SHOULD NOT inherit TTL from the tunnel encapsulation; TTL processing SHOULD follow the Pipe Model of RFC 3443.
+section: "6.9"
+rfc2119_level: SHOULD
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

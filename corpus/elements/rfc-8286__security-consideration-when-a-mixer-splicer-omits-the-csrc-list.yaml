@@ -1,0 +1,9 @@
+document: rfc-8286
+kind: security-consideration
+summary: When a mixer splicer omits the CSRC list from output packets (to simplify receivers), the standard RTP loop detection mechanism is disabled. This creates a risk of forwarding loops that could form a serious denial-of-service threat; non-RTP loop detection signaling is required as a compensating control.
+section: "7"
+topics:
+    - rtp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

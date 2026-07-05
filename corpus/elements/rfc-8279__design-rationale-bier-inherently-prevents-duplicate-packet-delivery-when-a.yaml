@@ -1,0 +1,8 @@
+document: rfc-8279
+kind: design-rationale
+summary: 'BIER inherently prevents duplicate packet delivery: when a packet is replicated, no two copies share a BFER in their BitStrings, and a BFER clears its own bit before forwarding. This eliminates the need for an RPF (Reverse Path Forwarding) check that conventional IP multicast requires.'
+section: "6.8"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

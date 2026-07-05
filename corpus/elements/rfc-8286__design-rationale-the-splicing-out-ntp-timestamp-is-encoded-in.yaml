@@ -1,0 +1,10 @@
+document: rfc-8286
+kind: design-rationale
+summary: The splicing-out NTP timestamp is encoded in only 7 octets (56 bits) rather than the full 64 bits to reduce header size. The top 8 bits are inferred from the splicing-in timestamp, valid because the splicing interval is assumed to be less than 2^25 seconds (~1 year). A wrap condition is detected by comparing the 56-bit splicing-out value against the lower 56 bits of the splicing-in timestamp.
+section: "3.1"
+topics:
+    - rtp
+    - realtime
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

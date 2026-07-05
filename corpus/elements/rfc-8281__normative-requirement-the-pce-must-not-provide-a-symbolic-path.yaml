@@ -1,0 +1,10 @@
+document: rfc-8281
+kind: normative-requirement
+summary: The PCE MUST NOT provide a symbolic path name that conflicts with an existing LSP on the PCC. If a conflict exists, the PCC MUST send PCErr Error-type=23 Error-value=1 (SYMBOLIC-PATH-NAME in use), except for LSPs whose State Timeout Interval timer is running.
+section: "5.3"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8286
+kind: design-rationale
+summary: The splicer is not allowed to forward the RTCP splicing notification message to downstream receivers, since the message is intentionally targeted at the splicer and forwarding it would cause useless processing and additional RTCP bandwidth consumption in downstream receivers.
+section: "3.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

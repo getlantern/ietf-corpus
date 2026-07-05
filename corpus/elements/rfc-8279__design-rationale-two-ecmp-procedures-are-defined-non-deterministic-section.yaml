@@ -1,0 +1,8 @@
+document: rfc-8279
+kind: design-rationale
+summary: 'Two ECMP procedures are defined: non-deterministic (Section 6.7.1), which minimizes packet replications but makes a packet''s path to a BFER dependent on which other BFERs are also receiving the flow; and deterministic (Section 6.7.2), which uses multiple BIFTs indexed by entropy hash to make each path independent of other destinations, at the cost of more memory and potentially more replications.'
+section: "6.7"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

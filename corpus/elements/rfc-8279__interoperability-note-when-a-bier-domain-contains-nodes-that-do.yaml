@@ -1,0 +1,9 @@
+document: rfc-8279
+kind: interoperability-note
+summary: When a BIER domain contains nodes that do not support BIER, a BFR constructs a modified BIER-SPF tree by removing non-BFR child nodes and re-parenting their children directly under the BFR. Packets are then tunneled (e.g., via MPLS unicast tunnel) to BFR-NBRs that are not Layer-2 adjacent, allowing BIER to operate in mixed-capability networks.
+section: "6.9"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

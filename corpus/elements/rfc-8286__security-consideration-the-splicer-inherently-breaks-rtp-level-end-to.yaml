@@ -1,0 +1,10 @@
+document: rfc-8286
+kind: security-consideration
+summary: The splicer inherently breaks RTP-level end-to-end security (source authentication and integrity protection) because it replaces content. End-to-end source authentication is not possible with any existing splicing solution. When using SRTP, the splicer must be provisioned with the same security association as the main RTP sender.
+section: "7"
+topics:
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

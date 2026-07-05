@@ -1,0 +1,9 @@
+document: rfc-8279
+kind: normative-requirement
+summary: If a BFR detects that two different BFRs have advertised the same BFR-id for the same sub-domain, it MUST log an error and MUST NOT encode that duplicate BFR-id in any BIER encapsulation. A BFR that has not yet advertised its own BFR-id but sees a conflicting advertisement SHOULD log an error and MUST NOT advertise its own ownership of that BFR-id while the conflicting advertisement is extant.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

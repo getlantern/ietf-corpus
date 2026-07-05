@@ -1,0 +1,9 @@
+document: rfc-8281
+kind: design-rationale
+summary: The reserved PLSP-ID 0 is used in PCInitiate messages for new LSP creation because the PCC, not the PCE, assigns the PLSP-ID. Using 0 as a sentinel distinguishes create requests (PLSP-ID=0) from update/delete requests (non-zero PLSP-ID), avoiding ambiguity in the stateful PCE model.
+section: "5.3"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

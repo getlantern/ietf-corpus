@@ -1,0 +1,11 @@
+document: rfc-8281
+kind: normative-requirement
+summary: A PCC SHOULD impose a limit on the number of LSPs or resource percentage allocated to PCE-initiated requests. When the limit is reached, the PCC MUST send PCErr Error-type=19 Error-value=6 (PCE-initiated LSP limit reached) and may drop further PCInitiate messages.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

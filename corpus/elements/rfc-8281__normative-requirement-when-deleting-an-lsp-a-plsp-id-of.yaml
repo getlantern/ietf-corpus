@@ -1,0 +1,10 @@
+document: rfc-8281
+kind: normative-requirement
+summary: When deleting an LSP, a PLSP-ID of zero in the PCInitiate message removes all PCE-initiated LSPs (C flag=1) delegated to that PCE. If the PLSP-ID is unknown, the PCC MUST send PCErr Error-type=19 Error-value=3. If the LSP is not PCE-initiated, the PCC MUST send PCErr Error-type=19 Error-value=9.
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

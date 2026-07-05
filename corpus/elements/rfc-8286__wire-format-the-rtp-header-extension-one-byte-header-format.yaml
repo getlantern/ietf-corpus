@@ -1,0 +1,10 @@
+document: rfc-8286
+kind: wire-format
+summary: The RTP header extension (one-byte header format, L=14) encodes the splicing-out NTP timestamp in 7 octets (bits 8–31 of Seconds plus 32-bit Fraction) followed by the splicing-in NTP timestamp in 8 octets (full 64-bit NTP timestamp). The top 8 bits of the splicing-out timestamp are inferred from the splicing-in timestamp, assuming the interval is less than 2^25 seconds.
+section: "3.1"
+topics:
+    - rtp
+    - realtime
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8282
+kind: design-rationale
+summary: 'The I and M flags differ in key ways: when I=0, virtual TE links must not be used and loose hops spanning lower-layer networks must not be specified. When I=1 and M=0 and T=1, virtual TE links are allowed and loose hops spanning the lower-layer may be specified, which will initiate lower-layer LSP setup even though the path computation result includes hops from the same layer only.'
+section: "3.1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

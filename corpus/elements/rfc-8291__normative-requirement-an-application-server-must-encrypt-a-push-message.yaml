@@ -1,0 +1,11 @@
+document: rfc-8291
+kind: normative-requirement
+summary: An application server MUST encrypt a push message with a single record, and MUST set the 'rs' parameter in the 'aes128gcm' header to a value greater than the sum of plaintext length, padding delimiter (1 octet), any padding, and authentication tag (16 octets).
+section: "4"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

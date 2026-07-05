@@ -1,0 +1,9 @@
+document: rfc-8291
+kind: interoperability-note
+summary: A push service is not required to support more than 4096 octets of payload body per RFC 8030. After subtracting the 86-octet header, 1-octet padding delimiter, and 16-octet AEAD tag, at most 3993 octets of plaintext can be delivered.
+section: "4"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
