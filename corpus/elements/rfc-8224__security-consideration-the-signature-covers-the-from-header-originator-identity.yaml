@@ -1,0 +1,9 @@
+document: rfc-8224
+kind: security-consideration
+summary: The signature covers the From header (originator identity), Date header (anti-replay), To header (destination), and SDP 'a=fingerprint' media keys (DTLS binding). These collectively prevent impersonation attacks, cut-and-paste/replay attacks, and media key substitution described in the STIR threat model (RFC 7375).
+section: "12.1"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

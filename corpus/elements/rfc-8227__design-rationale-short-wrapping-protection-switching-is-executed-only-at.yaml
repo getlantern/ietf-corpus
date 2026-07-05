@@ -1,0 +1,9 @@
+document: rfc-8227
+kind: design-rationale
+summary: Short-wrapping protection switching is executed only at the node upstream of the failure, and the packet leaves the ring via the protection ring tunnel at the egress node. This reduces the additional latency and bandwidth consumption compared to wrapping, where traffic is wrapped twice (switched at both adjacent nodes), at the cost of making the two directions of a protected bidirectional LSP non-co-routed during protection.
+section: 4.3.2
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

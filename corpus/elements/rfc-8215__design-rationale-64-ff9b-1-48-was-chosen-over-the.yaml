@@ -1,0 +1,9 @@
+document: rfc-8215
+kind: design-rationale
+summary: 64:ff9b:1::/48 was chosen over the alternative 64:ff9a:ffff::/48 because it yields a smaller aggregate prefix (64:ff9b::/47 vs. 64:ff9a::/31) when combined with the WKP 64:ff9b::/96, minimizing pollution of unallocated IPv6 address space. Its shorter textual representation was also a factor.
+section: "4.2"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

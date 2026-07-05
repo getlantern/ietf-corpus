@@ -1,0 +1,9 @@
+document: rfc-8224
+kind: security-consideration
+summary: An adversary positioned as an intermediary could maliciously remove Identity header fields from a request. TLS on the last hop helps protect against this; verification services should implement per-domain or per-user policies that require Identity headers and reject requests lacking them when appropriate.
+section: "12.3"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

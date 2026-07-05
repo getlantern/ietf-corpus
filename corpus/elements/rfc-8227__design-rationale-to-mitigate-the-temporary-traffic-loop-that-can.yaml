@@ -1,0 +1,9 @@
+document: rfc-8227
+kind: design-rationale
+summary: To mitigate the temporary traffic loop that can occur in wrapping protection when the egress node fails (before failure-location information propagates to all ring nodes), the TTL of the ring tunnel label SHOULD be set to 2*N by the ingress ring node, where N is the number of nodes on the ring.
+section: 4.3.1.2
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

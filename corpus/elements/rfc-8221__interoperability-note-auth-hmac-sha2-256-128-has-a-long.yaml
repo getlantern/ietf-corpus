@@ -1,0 +1,10 @@
+document: rfc-8221
+kind: interoperability-note
+summary: AUTH_HMAC_SHA2_256_128 has a long-standing common implementation bug that truncates the hash at 96 bits instead of 128 bits. Implementations that support AUTH_HMAC_SHA2_512_256 should prefer it over AUTH_HMAC_SHA2_256_128 to avoid this interoperability hazard.
+section: "6"
+topics:
+    - ipsec
+    - vpn
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

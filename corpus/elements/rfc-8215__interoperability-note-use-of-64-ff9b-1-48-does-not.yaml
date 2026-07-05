@@ -1,0 +1,10 @@
+document: rfc-8215
+kind: interoperability-note
+summary: Use of 64:ff9b:1::/48 does not guarantee checksum neutrality, as many IPv4/IPv6 translation algorithms are fundamentally incompatible with it. When using RFC 7915 (SIIT) with RFC 6052 algorithms, operators must select a /96 sub-prefix whose six 16-bit words sum to a multiple of 0xffff. Example checksum-neutral sub-prefixes include 64:ff9b:1:fffe::/96 and 64:ff9b:1:fffd:1::/96.
+section: "6"
+topics:
+    - ip
+    - v6ops
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

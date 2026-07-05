@@ -1,0 +1,10 @@
+document: rfc-8225
+kind: wire-format
+summary: 'The compact form of PASSporT omits the header and payload, consisting of two periods followed by the BASE64URL-encoded JWS Signature: ".." || BASE64URL(JWS Signature). The receiving party must reconstruct the header and claims from signaling protocol context to verify the signature.'
+section: "7"
+topics:
+    - jose
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

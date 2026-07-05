@@ -1,0 +1,10 @@
+document: rfc-8225
+kind: design-rationale
+summary: Deterministic JSON serialization is required because JSON is inherently non-deterministic (arbitrary key ordering and whitespace). PASSporT adopts rules based on JWK Thumbprint (RFC 7638, Section 3 Step 1) to ensure digital signature verification works consistently across implementations.
+section: "9"
+topics:
+    - jose
+    - json
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

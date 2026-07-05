@@ -1,0 +1,10 @@
+document: rfc-8224
+kind: normative-requirement
+summary: When the full form of PASSporT is present, the verification service MUST NOT treat the 'orig' value as the originating identity of the call. The originating identity is always derived from the SIP signaling (From header per Section 6.2 Step 2); using the PASSporT 'orig' directly would enable cut-and-paste attacks.
+section: 6.2.4
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

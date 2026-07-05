@@ -1,0 +1,9 @@
+document: rfc-8227
+kind: design-rationale
+summary: RPS is defined as a new protocol instead of reusing PSC (RFC 6378/6974) because PSC on a ring of N nodes requires (N-1) PSC instances and 2*(N-1) MEPs per ring node. RPS requires only a single protocol instance and 2 MEPs per ring node, regardless of the number of protected LSPs, meeting RFC 5654 efficiency requirements.
+section: "5.1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

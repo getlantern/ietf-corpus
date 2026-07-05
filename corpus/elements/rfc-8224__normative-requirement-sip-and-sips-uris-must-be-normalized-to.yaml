@@ -1,0 +1,10 @@
+document: rfc-8224
+kind: normative-requirement
+summary: SIP and SIPS URIs must be normalized to canonical form 'sip:user@host' before inclusion in PASSporT claims, discarding all uri-parameters, escaped headers, passwords, and port numbers. Implementations MUST perform case normalization (lowercase scheme, user, host) and percent-encoding normalization per RFC 3986 Section 6.2.2.
+section: "8.5"
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8224
+kind: privacy-consideration
+summary: Using the full form of PASSporT in conjunction with the P-Asserted-Identity header is NOT RECOMMENDED outside trust domains, because the canonical 'orig' claim may disclose network or user information not otherwise present in the SIP request. If P-Asserted-Identity is stripped at a trust boundary, the PASSporT must be converted to compact form to avoid leakage.
+section: "11"
+topics:
+    - sip
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

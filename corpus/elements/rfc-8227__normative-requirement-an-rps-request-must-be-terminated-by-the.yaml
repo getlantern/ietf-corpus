@@ -1,0 +1,10 @@
+document: rfc-8227
+kind: normative-requirement
+summary: An RPS request MUST be terminated by the destination node of the message. If a node receives an RPS request with its own node ID set as the source node, the message MUST be dropped and not forwarded. A non-destination node with no higher-priority local request MUST forward the RPS request in the same direction.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

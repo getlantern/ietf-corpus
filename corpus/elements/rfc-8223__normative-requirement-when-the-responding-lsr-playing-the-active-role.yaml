@@ -1,0 +1,9 @@
+document: rfc-8223
+kind: normative-requirement
+summary: When the responding LSR playing the active role receives a 'Session Rejected/Targeted Application Capability Mismatch' Notification, it MUST set its session setup retry interval to 0xFFFF (maximum). When it detects a configuration change pertaining to TAC, it MUST clear the session setup backoff delay to reattempt session establishment.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

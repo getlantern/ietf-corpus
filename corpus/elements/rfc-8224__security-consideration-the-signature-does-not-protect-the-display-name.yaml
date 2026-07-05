@@ -1,0 +1,9 @@
+document: rfc-8224
+kind: security-consideration
+summary: The signature does not protect the display-name portion of the From header field; only the addr-spec (URI) is covered. Attackers can set an arbitrary display-name even when the Identity header is valid, so relying parties MUST NOT rely solely on display-names for user-visible identity.
+section: "12.6"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

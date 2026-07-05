@@ -1,0 +1,9 @@
+document: rfc-8223
+kind: security-consideration
+summary: This document does not introduce new security changes to LDP beyond RFC 5036. DoS attacks via Extended Hellos can be mitigated by filtering using access lists defining permitted addresses for Extended Discovery. Additionally, with TAC, the tLDP session is only established after successful TAC negotiation, and LSRs MUST only advertise TA-Ids they are configured to support.
+section: "6"
+topics:
+    - mpls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

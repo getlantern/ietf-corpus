@@ -1,0 +1,10 @@
+document: rfc-8224
+kind: normative-requirement
+summary: Telephone number canonicalization MUST drop any '+', dashes, parentheses, and other non-numeric characters except '#' and '*'. Implementations SHOULD then convert the number to E.164 format by adding a country code if necessary, resulting in an ASCII string of digits, '#', and '*' only.
+section: "8.3"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

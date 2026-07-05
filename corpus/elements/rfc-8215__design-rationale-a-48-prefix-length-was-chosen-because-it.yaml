@@ -1,0 +1,9 @@
+document: rfc-8215
+kind: design-rationale
+summary: A /48 prefix length was chosen because it is the longest 16-bit-aligned prefix that can accommodate multiple instances of /64 translation prefixes (the shortest observed in live deployments). A /16 would have accommodated /32 prefixes but was deemed too wasteful by the IPv6 Operations Working Group.
+section: "4.1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

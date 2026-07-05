@@ -1,0 +1,10 @@
+document: rfc-8227
+kind: normative-requirement
+summary: When a failure clears, the node MUST enter the Wait-to-Restore (WTR) condition and remain in it for the configured interval, unless preempted by a higher-priority request, another failure, or an external command. The WTR time may be configured in 1-minute steps between 0 and 12 minutes; the default value is 5 minutes.
+section: 5.3.1.2
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

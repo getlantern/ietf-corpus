@@ -1,0 +1,10 @@
+document: rfc-8224
+kind: normative-requirement
+summary: The PASSporT payload 'iat' key MUST appear. The authentication service SHOULD set it to the SIP Date header value encoded as UNIX time, but MAY use its own clock, in which case the full form of PASSporT is REQUIRED. The authentication service MUST NOT generate a PASSporT if the Date header is outside local freshness policy (sixty seconds is RECOMMENDED).
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

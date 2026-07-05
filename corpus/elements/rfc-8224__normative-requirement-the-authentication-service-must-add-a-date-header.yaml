@@ -1,0 +1,10 @@
+document: rfc-8224
+kind: normative-requirement
+summary: The authentication service MUST add a Date header field to requests that do not have one and MUST ensure any pre-existing Date header is accurate. If the Date header differs by more than one minute from the authentication service's current time, the service SHOULD reject the request. A maximum discrepancy of sixty seconds is RECOMMENDED.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8225
+kind: security-consideration
+summary: PASSporTs SHOULD only be sent with application-level protocol information corresponding to the required token fields. The "iat" claim mitigates replay attacks by binding the token to the origination time, and the "dest" claim restricts reuse to the intended recipient only.
+section: "10.1"
+topics:
+    - security
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

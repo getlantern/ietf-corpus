@@ -1,0 +1,10 @@
+document: rfc-8224
+kind: normative-requirement
+summary: A verification service MUST ignore an Identity header field whose 'ppt' parameter value is present but not supported. If Identity is required by local policy but no usable header exists (absent or all ppt values unsupported), a 428 'Use Identity Header' response MUST be sent.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

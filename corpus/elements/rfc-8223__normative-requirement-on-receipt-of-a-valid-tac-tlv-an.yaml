@@ -1,0 +1,9 @@
+document: rfc-8223
+kind: normative-requirement
+summary: On receipt of a valid TAC TLV, an LSR MUST generate its own TAC TLV. If at least one common TAE exists between the received and generated TAC TLVs, the session MUST proceed to establishment; otherwise the LSR MUST send a 'Session Rejected/Targeted Application Capability Mismatch' Notification and close the session.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

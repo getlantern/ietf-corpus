@@ -1,0 +1,12 @@
+document: rfc-8221
+kind: normative-requirement
+summary: If manual keying is used, counter mode algorithms (ENCR_AES_CTR, ENCR_AES_CCM, ENCR_AES_GCM, ENCR_CHACHA20_POLY1305) MUST NOT be used, as they are incompatible with secure counter handling across reboots. ENCR_AES_CBC is the only mandatory-to-implement encryption algorithm suitable for manual keying.
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - ipsec
+    - vpn
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
