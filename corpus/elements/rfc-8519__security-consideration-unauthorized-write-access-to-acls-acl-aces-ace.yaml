@@ -1,0 +1,11 @@
+document: rfc-8519
+kind: security-consideration
+summary: Unauthorized write access to /acls/acl/aces/ace/actions/logging can enable logging on many ACEs, overwhelming the server. Unauthorized read access to logging configuration can reveal information useful for crafting attacks. NETCONF transport MUST use SSH; RESTCONF MUST use TLS (RFC 8446).
+section: "5"
+topics:
+    - security
+    - yang
+    - netconf
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

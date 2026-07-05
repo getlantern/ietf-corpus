@@ -1,0 +1,9 @@
+document: rfc-8528
+kind: design-rationale
+summary: Schema mount was introduced because the existing 'uses' and 'augment' YANG mechanisms are insufficient for attaching existing modules (e.g., 'ietf-interfaces') at non-root locations. The 'uses' approach requires wrapping every module in a grouping and updating the parent model for each new module, while 'augment' would require defining the same hierarchy twice. Schema mount allows mounting without modifying the mounted modules.
+section: "1"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

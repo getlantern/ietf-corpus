@@ -1,0 +1,9 @@
+document: rfc-8530
+kind: design-rationale
+summary: The 'managed' boolean distinguishes host-device-managed LNEs (where the host can read/write the LNE's mounted data tree) from self-managed LNEs (where only the LNE's own management sessions have access). This distinction is necessary because some implementations—particularly those using traditional hypervisors—cannot expose LNE internals to the host.
+section: "3.3"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

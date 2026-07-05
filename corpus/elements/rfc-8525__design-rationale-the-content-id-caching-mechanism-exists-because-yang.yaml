@@ -1,0 +1,9 @@
+document: rfc-8525
+kind: design-rationale
+summary: The content-id caching mechanism exists because YANG library contents can be large (many modules) but change very infrequently. Clients fetch the library once, cache it, and only re-fetch when the content-id changes, minimizing retrieval overhead.
+section: "3"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

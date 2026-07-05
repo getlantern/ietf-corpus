@@ -1,0 +1,9 @@
+document: rfc-8531
+kind: protocol-element
+summary: The 'traceroute' RPC (gated by feature 'traceroute') starts with TTL of 1 and increments by 1 per hop until the destination is reached or TTL reaches max. Input includes count (default 1, representing probes per TTL), interval, and destination-mep. Output is a list of 'response' entries keyed by 'response-index' (uint8) containing TTL, destination-mep, optional MIP, and monitor-stats.
+section: "4.4"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

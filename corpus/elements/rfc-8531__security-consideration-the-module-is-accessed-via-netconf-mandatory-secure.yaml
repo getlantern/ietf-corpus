@@ -1,0 +1,11 @@
+document: rfc-8531
+kind: security-consideration
+summary: 'The module is accessed via NETCONF (mandatory secure transport: SSH per RFC 6242) or RESTCONF (mandatory secure transport: TLS per RFC 8446). Access control MUST be enforced using NACM (RFC 8341) to restrict write operations to authorized users. Unauthorized write access to the domain, MA, MEP, and session data nodes can cause inconsistent OAM configuration and network management failures.'
+section: "8"
+topics:
+    - yang
+    - netconf
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

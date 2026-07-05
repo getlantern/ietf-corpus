@@ -1,0 +1,10 @@
+document: rfc-8519
+kind: security-consideration
+summary: Unauthorized write access to /acls/acl/aces can allow intruders to modify ACEs to permit traffic that should be denied (potentially enabling compromise or DoS) or deny traffic that should be permitted (DoS). Read access exposes which rules are in effect, aiding attack crafting. NACM (RFC 8341) should be used to restrict access.
+section: "5"
+topics:
+    - security
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

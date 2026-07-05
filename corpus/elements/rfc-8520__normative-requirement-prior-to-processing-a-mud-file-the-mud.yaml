@@ -1,0 +1,11 @@
+document: rfc-8520
+kind: normative-requirement
+summary: Prior to processing a MUD file, the MUD manager MUST retrieve and validate the CMS signature; the signing certificate MUST have the digitalSignature(0) bit set in the Key Usage Extension; if validation fails or the chain of trust to a known anchor cannot be established, the MUD manager MUST cease processing until an administrator approves.
+section: "13.2"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8520
+kind: security-consideration
+summary: A rogue CA may sign a certificate with the same subject name as the MUDsigner field, enabling a substitute MUD file; mitigations include flagging signer changes as exceptions and requiring administrator approval when the MUD file changes, with MUD managers MUST maintaining a cache of trusted CAs.
+section: "16"
+topics:
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

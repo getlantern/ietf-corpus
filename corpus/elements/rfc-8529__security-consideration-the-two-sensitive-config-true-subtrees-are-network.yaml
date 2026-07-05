@@ -1,0 +1,11 @@
+document: rfc-8529
+kind: security-consideration
+summary: The two sensitive 'config true' subtrees are '/network-instances/network-instance' (specifying NIs and their control-plane protocols) and '/if:interfaces/if:interface/*/bind-network-instance-name' (interface-to-NI assignments). Unauthorized write access to either can adversely affect the routing subsystem, leading to packet misdelivery or network malfunctions.
+section: "4"
+topics:
+    - security
+    - netconf
+    - yang
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
