@@ -1,0 +1,6 @@
+document: rfc-7959
+kind: state-machine
+summary: 'For a Block1 atomic PUT/POST: the server accumulates blocks, responding 2.31 Continue (M=1 in Block1 response) for non-final blocks. On the final block (M=0 in request), the server either commits atomically and returns a success code, or returns 4.08 if prior blocks are missing, or 4.13 if it lacks resources.'
+section: "2.5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

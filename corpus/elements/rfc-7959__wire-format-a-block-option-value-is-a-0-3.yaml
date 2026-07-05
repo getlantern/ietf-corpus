@@ -1,0 +1,6 @@
+document: rfc-7959
+kind: wire-format
+summary: 'A Block option value is a 0–3 byte unsigned integer encoding three fields: SZX (3 LSBs, bits 0–2) encodes block size as 2^(SZX+4) bytes (16–1024); M bit (bit 3) indicates whether more blocks follow; NUM (remaining upper bits) is the zero-based block sequence number. The byte offset of the block is NUM << (SZX+4).'
+section: "2.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

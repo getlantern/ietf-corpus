@@ -1,0 +1,9 @@
+document: rfc-7959
+kind: security-consideration
+summary: A stateless server is susceptible to resource exhaustion if an attacker sends a Block1 request with a high block number, causing the server to allocate a large sparse representation. Servers SHOULD avoid resource exhaustion from state created by untrusted sources and SHOULD prefer stateless approaches to minimize attack surface.
+section: "7.1"
+rfc2119_level: SHOULD
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

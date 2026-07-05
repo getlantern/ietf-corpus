@@ -1,0 +1,9 @@
+document: rfc-7956
+kind: protocol-element
+summary: The ingress edge RBridge performing inter-subnet forwarding terminates the inner Ethernet header, looks up the destination IP in the tenant VRF, rewrites the inner Ethernet header with its own gateway MAC as Inner.MacSA and the egress RBridge's gateway MAC as Inner.MacDA, sets the egress RBridge's tenant Data Label as Inner.VLAN/FGL, and TRILL-encapsulates to the egress nickname.
+section: "5.4"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

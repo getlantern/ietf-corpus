@@ -1,0 +1,9 @@
+document: rfc-7947
+kind: design-rationale
+summary: The most portable mitigation for path hiding is to use per-client Loc-RIBs, performing the best path calculation separately for each client after applying that client's policies. Implementations can optimize by storing per-client Loc-RIBs as deltas from a global Loc-RIB.
+section: 2.3.2.1
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

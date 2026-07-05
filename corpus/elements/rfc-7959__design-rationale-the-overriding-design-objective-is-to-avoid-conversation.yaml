@@ -1,0 +1,6 @@
+document: rfc-7959
+kind: design-rationale
+summary: The overriding design objective is to avoid conversation state on the server for block-wise GET. Each block transfer is an independent CoAP exchange; the server can be truly stateless. Atomicity for POST/PUT necessarily requires some state, but stateless per-block handling is also permitted where intermediate inconsistency is acceptable.
+section: "1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

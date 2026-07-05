@@ -1,0 +1,10 @@
+document: rfc-7949
+kind: interoperability-note
+summary: When OSPFv2 and OSPFv3-over-IPv4 coexist on the same link, both processes receive each other's packets (same protocol number 89, same multicast groups). Packets are silently dropped after version-field validation; implementations should suppress the resulting SNMP bad-packet notifications to avoid spurious alerts.
+section: "4.1"
+topics:
+    - routing
+    - ip
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

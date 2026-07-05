@@ -1,0 +1,10 @@
+document: rfc-7951
+kind: design-rationale
+summary: 64-bit numeric types (int64, uint64, decimal64) are encoded as JSON strings rather than numbers because I-JSON (RFC 7493, Section 2.2) recommends encoding numbers outside the IEEE 754-2008 double-precision range as strings to guarantee reliable exchange across implementations.
+section: "6.1"
+topics:
+    - yang
+    - json
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

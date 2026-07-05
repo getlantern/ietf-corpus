@@ -1,0 +1,10 @@
+document: rfc-7949
+kind: design-rationale
+summary: Some deployed link-layer equipment (notably VSAT and serial-line hardware) only supports IPv4 EtherType (0x0800) and ARP (0x0806), rejecting IPv6 frames (EtherType 0x86dd) in hardware filters. OSPFv3 over IPv4 allows these devices to participate in an OSPFv3 routing domain without hardware upgrades, deferring equipment replacement costs.
+section: "1.1"
+topics:
+    - routing
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-7949
+kind: protocol-element
+summary: OSPFv2 and OSPFv3 share IP protocol number 89 and place the OSPF version field at the same offset in the packet header. When both run over IPv4, mismatched packets are delivered to both processes by the socket layer but dropped upon version field validation, distinguishing OSPFv2 (version 2) from OSPFv3 (version 3).
+section: "4.1"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

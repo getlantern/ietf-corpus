@@ -1,0 +1,8 @@
+document: rfc-7956
+kind: interoperability-note
+summary: If an edge RBridge changes its tenant gateway MAC, in-flight traffic using the old MAC as Inner.MacDA may be discarded or misforwarded as L2 intra-subnet traffic at the egress RBridge. If the inter-subnet tenant Data Label is shared with an access Data Label, the misforwarded traffic bypasses filtering unless an explicit traffic-filtering policy is in place.
+section: "5.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

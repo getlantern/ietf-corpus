@@ -1,0 +1,9 @@
+document: rfc-7956
+kind: design-rationale
+summary: In active-active mode, both edge RBridges independently announce the same ES's IP address. Remote ingress RBridges generate equal-cost routing entries with two next hops and perform load balancing, providing both resilience against link failure and bandwidth utilization without requiring a separate protocol.
+section: "5.3"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-7949
+kind: security-consideration
+summary: When using the optional OSPFv3 Authentication Trailer (RFC 7166) with IPv4 encapsulation, the Apad value used in the authentication data calculation must be formed by placing the IPv4 source address in the first 4 octets followed by the repeating pattern 0x878FE1F3 for the remaining (L-4)/4 32-bit words, where L is the hash length in octets. All other Authentication Trailer generation and validation logic remains unchanged.
+section: "5"
+topics:
+    - routing
+    - security
+    - crypto
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

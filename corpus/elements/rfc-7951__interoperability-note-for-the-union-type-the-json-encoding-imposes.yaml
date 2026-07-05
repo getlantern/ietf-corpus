@@ -1,0 +1,10 @@
+document: rfc-7951
+kind: interoperability-note
+summary: 'For the ''union'' type, the JSON encoding imposes stricter type constraints than XML: a floating-point JSON number like 13.5 cannot be assigned to a union{uint16, string} leaf even though the XML encoding ''<bar>13.5</bar>'' would be accepted as a string.'
+section: "6.10"
+topics:
+    - yang
+    - json
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

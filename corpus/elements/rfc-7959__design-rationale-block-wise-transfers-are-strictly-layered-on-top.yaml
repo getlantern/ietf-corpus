@@ -1,0 +1,8 @@
+document: rfc-7959
+kind: design-rationale
+summary: Block-wise transfers are strictly layered on top of the CoAP base protocol (RFC 7252) and do not remove or bypass its congestion control (NSTART, PROBING_RATE). Non-confirmable requests within block-wise transfers outside of multicast use are discouraged because they escalate the overall non-delivery probability.
+section: "1"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

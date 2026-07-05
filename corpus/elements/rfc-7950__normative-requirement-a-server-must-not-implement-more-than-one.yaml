@@ -1,0 +1,10 @@
+document: rfc-7950
+kind: normative-requirement
+summary: A server MUST NOT implement more than one revision of a module. If a server implements module A that imports module B and uses any node from B in an 'augment' or 'path' statement, the server MUST implement a revision of B that defines those nodes.
+section: 5.6.5
+rfc2119_level: MUST NOT
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
