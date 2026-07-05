@@ -1,0 +1,10 @@
+document: rfc-8277
+kind: normative-requirement
+summary: In the multi-label NLRI encoding, the S bit MUST be 0 in all labels except the last (the one immediately preceding the prefix), and MUST be 1 in the last label. Failure to set the S bit in the last label makes correct NLRI parsing impossible.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

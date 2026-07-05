@@ -1,0 +1,9 @@
+document: rfc-8271
+kind: state-machine
+summary: 'Node-protection FRR for bidirectional GMPLS LSPs operates in two phases: Phase 1 — downstream PLR and upstream PLR independently fast-reroute data traffic onto their respective bypass tunnels; Phase 2 — downstream MP (promoted to PRR) finds the reverse bypass tunnel terminating on the downstream PLR and reroutes upstream traffic and Resv signaling onto it, restoring co-routing. If no reverse bypass tunnel is found in Phase 2, the PRR tears down the protected LSP.'
+section: "5.2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

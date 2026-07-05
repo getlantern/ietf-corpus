@@ -1,0 +1,8 @@
+document: rfc-8275
+kind: design-rationale
+summary: The attribute was defined as a (mode, umask) pair rather than just a umask alone, following reviewer suggestion, so the server has both the unmodified user-requested mode and the process umask and can apply the appropriate logic without needing additional round-trips.
+section: "5"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

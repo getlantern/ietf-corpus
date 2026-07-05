@@ -1,0 +1,6 @@
+document: rfc-8267
+kind: design-rationale
+summary: The NFSACL RPC program is conveyed on the same connection as the NFS RPC program (100003) to avoid separate rpcbind queries. ACL data items are not DDP-eligible because ACLs must be encoded and decoded regardless of size.
+section: "5.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

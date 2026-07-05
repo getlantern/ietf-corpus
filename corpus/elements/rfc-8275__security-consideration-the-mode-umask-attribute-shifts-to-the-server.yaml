@@ -1,0 +1,8 @@
+document: rfc-8275
+kind: security-consideration
+summary: The mode_umask attribute shifts to the server the decision about when to apply the umask. Because the server MUST apply the umask if there are no inheritable permissions, traditional semantics are preserved in the absence of a permission inheritance mechanism; the only relaxation occurs when the server ignores the umask in the presence of inheritable permissions.
+section: "6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

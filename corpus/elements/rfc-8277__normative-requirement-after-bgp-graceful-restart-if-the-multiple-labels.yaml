@@ -1,0 +1,10 @@
+document: rfc-8277
+kind: normative-requirement
+summary: After BGP Graceful Restart, if the Multiple Labels Capability for a given AFI/SAFI was exchanged on the failed session but not on the restarted session (or if Count decreased), any prefixes advertised with more labels than now valid MUST be explicitly withdrawn, and Accelerated Routing Convergence procedures MUST NOT be applied.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8275
+kind: normative-requirement
+summary: 'If no ACEs are inherited, mu_umask MUST be used to limit the mode: all bits in mu_mode that are set in mu_umask MUST be turned off, yielding a final mode of (mu_mode & ~mu_umask).'
+section: "5"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

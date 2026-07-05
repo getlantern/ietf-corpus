@@ -1,0 +1,9 @@
+document: rfc-8271
+kind: security-consideration
+summary: The BYPASS_ASSIGNMENT subobject in an intercepted RSVP signaling message reveals additional information about the LSP's FRR protection (bypass tunnel IDs and destination addresses), but this is judged a minor risk as the information is available by other means. A randomly forged address in the subobject causes the MP to silently ignore it (no matching local tunnel found), limiting attack impact.
+section: "9"
+topics:
+    - security
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

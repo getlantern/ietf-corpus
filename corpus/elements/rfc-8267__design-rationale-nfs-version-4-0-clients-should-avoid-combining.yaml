@@ -1,0 +1,6 @@
+document: rfc-8267
+kind: design-rationale
+summary: NFS version 4.0 clients should avoid combining non-idempotent operations (e.g., RENAME) with GETATTR operations requesting variable-length results in the same COMPOUND, because short Reply chunk retry cannot safely be applied to such combinations. GETATTR with unpredictable-length results should be sent in a COMPOUND by itself.
+section: 6.2.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

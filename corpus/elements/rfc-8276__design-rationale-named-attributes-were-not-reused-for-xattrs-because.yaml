@@ -1,0 +1,6 @@
+document: rfc-8276
+kind: design-rationale
+summary: 'Named attributes were not reused for xattrs because they have fundamentally different semantics: xattrs are atomic per-attribute operations with size limits fitting in a single COMPOUND request, while named attributes are unbounded data streams opened and closed like files with close-to-open caching semantics.'
+section: "6"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

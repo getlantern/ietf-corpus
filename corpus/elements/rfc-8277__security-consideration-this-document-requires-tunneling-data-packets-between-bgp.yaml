@@ -1,0 +1,10 @@
+document: rfc-8277
+kind: security-consideration
+summary: This document requires tunneling data packets between BGP speakers but does not mandate a specific encapsulation. The most commonly used tunnel encapsulation (MPLS) does not provide integrity or authentication, making it possible for a packet's label stack to be modified in transit, resulting in misdelivery.
+section: "7"
+topics:
+    - security
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

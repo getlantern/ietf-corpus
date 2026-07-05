@@ -1,0 +1,10 @@
+document: rfc-8271
+kind: normative-requirement
+summary: If the upstream PLR cannot find a matching bypass tunnel identified in the BYPASS_ASSIGNMENT subobject, it SHOULD send a Notify message with Error Code 44 'FRR Bypass Assignment Error' and Sub-code 1 'Bypass Tunnel Not Found' to the downstream PLR. Upon receiving this error, the downstream PLR SHOULD remove the bypass tunnel assignment and select an alternate.
+section: 4.5.1
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8271
+kind: interoperability-note
+summary: When using GMPLS out-of-band signaling, after a link failure RSVP messages are rerouted over control channels to the MPs (not over the bypass tunnel itself), unlike in-band signaling where messages flow through the bypass tunnel. The RSVP soft-state timeout problem after node-protection FRR is equally applicable to out-of-band signaling; however, unidirectional link failures do not cause soft-state timeout with out-of-band signaling.
+section: "6"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

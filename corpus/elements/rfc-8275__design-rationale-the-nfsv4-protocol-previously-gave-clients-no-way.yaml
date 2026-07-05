@@ -1,0 +1,8 @@
+document: rfc-8275
+kind: design-rationale
+summary: The NFSv4 protocol previously gave clients no way to transmit the process umask separately from the mode; clients applied the umask before sending OPEN, so the server could not intelligently ignore it when inheritable ACEs were present. This extension solves that by conveying umask and mode as separate values.
+section: "1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

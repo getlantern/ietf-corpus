@@ -1,0 +1,7 @@
+document: rfc-8267
+kind: normative-requirement
+summary: An NFS version 4 server SHOULD return either an RDMA_ERROR message with ERR_CHUNK or an RPC Reply with GARBAGE_ARGS when an RPC transaction cannot be processed due to chunk list complexity limits. After receiving one of these errors, an NFS version 4 client SHOULD NOT retransmit the failing request.
+section: 6.4.2
+rfc2119_level: SHOULD
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

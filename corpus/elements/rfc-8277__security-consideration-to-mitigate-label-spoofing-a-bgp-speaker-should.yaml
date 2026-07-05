@@ -1,0 +1,10 @@
+document: rfc-8277
+kind: security-consideration
+summary: To mitigate label spoofing, a BGP speaker SHOULD distinguish internal from external interfaces and avoid advertising the same labels to both. An incoming data packet whose top label was not advertised over the interface type from which the packet was received can then be discarded.
+section: "7"
+topics:
+    - security
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

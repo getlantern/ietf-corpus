@@ -1,0 +1,6 @@
+document: rfc-8267
+kind: design-rationale
+summary: Reply size estimation is necessary to avoid reply resource overruns, where the RPC Reply Payload stream does not fit into the provided Reply chunk, preventing the responder from returning the upper-layer reply. Clients can use count/offset fields, result limits, cached sizes, or negotiated maximums (CREATE_SESSION) to estimate reply sizes.
+section: "3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

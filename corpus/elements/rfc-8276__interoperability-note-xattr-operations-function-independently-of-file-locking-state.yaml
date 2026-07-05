@@ -1,0 +1,6 @@
+document: rfc-8276
+kind: interoperability-note
+summary: Xattr operations function independently of file locking state and do not require a corresponding OPEN; share denials (OPEN4_SHARE_DENY_READ, OPEN4_SHARE_DENY_BOTH) do not prevent xattr access or modification. However, xattrs cannot be modified when a delegation for the file is held by another client.
+section: "8.8"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8264
+kind: design-rationale
+summary: The HasCompat (Q) category is disallowed in the IdentifierClass but valid in the FreeformClass. This ensures that IdentifierClass strings are stable under NFKC normalization—code points with compatibility equivalents could map to different strings under normalization, creating ambiguity in identifiers used for authentication or authorization.
+section: 4.2.3
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8265
+kind: interoperability-note
+summary: Migration from SASLprep to this specification may require scrubbing existing username data due to differences in normalization (NFKC vs NFC) and handling of 'characters commonly mapped to nothing'. Operators should search for usernames with Unicode compatibility equivalents and resolve conflicts before migrating.
+section: "6.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

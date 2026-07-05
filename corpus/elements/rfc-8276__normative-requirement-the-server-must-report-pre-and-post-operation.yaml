@@ -1,0 +1,7 @@
+document: rfc-8276
+kind: normative-requirement
+summary: The server must report pre- and post-operation change attribute values atomically for SETXATTR and REMOVEXATTR. When unable to report them atomically, the server must indicate this in the change_info4 return value, and the client should not assume other clients have not changed the xattrs.
+section: "8.7"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

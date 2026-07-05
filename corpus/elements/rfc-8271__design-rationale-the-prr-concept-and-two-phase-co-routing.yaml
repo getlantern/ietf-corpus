@@ -1,0 +1,9 @@
+document: rfc-8271
+kind: design-rationale
+summary: The PRR concept and two-phase co-routing restoration procedure are introduced because asymmetric paths taken by bidirectional LSP signaling (upstream and downstream PLRs independently triggering FRR under node protection) can cause RSVP soft-state timeout at intermediate nodes, tearing down the protected LSP. RFC 6378 Protection State Coordination addresses traffic disruption but not this control-plane timeout issue.
+section: "1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

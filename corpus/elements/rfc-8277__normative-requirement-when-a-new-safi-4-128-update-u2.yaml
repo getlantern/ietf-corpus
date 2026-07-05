@@ -1,0 +1,10 @@
+document: rfc-8277
+kind: normative-requirement
+summary: When a new SAFI-4/128 UPDATE U2 specifying label L2 and prefix P arrives on the same session as a prior UPDATE U1 specifying label L1 and the same prefix and next hop (without RFC 7911 add-paths), U2 MUST be interpreted as replacing U1, i.e., L1 is implicitly withdrawn.
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

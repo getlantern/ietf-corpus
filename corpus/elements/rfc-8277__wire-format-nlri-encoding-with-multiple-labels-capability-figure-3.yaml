@@ -1,0 +1,10 @@
+document: rfc-8277
+kind: wire-format
+summary: 'NLRI encoding with Multiple Labels Capability (Figure 3): Length (8 bits), then one or more 24-bit label entries each consisting of Label (20 bits) + Rsrv (3 bits) + S (1 bit), followed by the address prefix. The S bit MUST be 0 in all labels except the last, and MUST be 1 in the last label.'
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
