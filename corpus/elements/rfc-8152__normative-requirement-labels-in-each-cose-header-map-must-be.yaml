@@ -1,0 +1,10 @@
+document: rfc-8152
+kind: normative-requirement
+summary: Labels in each COSE header map MUST be unique; a message with duplicate labels MUST be rejected as malformed. Applications SHOULD verify no label appears in both protected and unprotected headers. When a label appears in both, attributes MUST be taken from the protected bucket.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - cbor
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

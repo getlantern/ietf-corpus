@@ -1,0 +1,7 @@
+document: rfc-8154
+kind: normative-requirement
+summary: All SCSI pNFS clients MUST support copy-on-write processing. When writing to a PNFS_SCSI_READ_DATA extent region, the client MUST copy data from the READ_DATA extent for partial blocks, merge in the changes, and write the result to the corresponding PNFS_SCSI_INVALID_DATA extent.
+section: 2.4.5
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

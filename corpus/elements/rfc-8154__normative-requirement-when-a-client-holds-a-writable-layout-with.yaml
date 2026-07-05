@@ -1,0 +1,7 @@
+document: rfc-8154
+kind: normative-requirement
+summary: When a client holds a writable layout with data in PNFS_SCSI_INVALID_DATA state after a server crash and the data is no longer in the client's cache, the client MUST NOT source data from the data servers; instead it SHOULD commit blocks to the server during the recovery grace period via LAYOUTCOMMIT with loca_reclaim set to true.
+section: "2.5"
+rfc2119_level: MUST NOT
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8154
+kind: protocol-element
+summary: Client fencing is implemented using SCSI persistent reservations of type 'Exclusive Access - Registrants Only' (type 8h) on each SCSI LU. The MDS registers a key and places the reservation before returning any PNFS_SCSI_VOLUME_BASE volume to clients, enabling it to preempt non-responding clients at any time.
+section: 2.4.10
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

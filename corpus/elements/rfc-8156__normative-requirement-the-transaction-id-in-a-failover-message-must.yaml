@@ -1,0 +1,7 @@
+document: rfc-8156
+kind: normative-requirement
+summary: The transaction-id in a failover message MUST be unique among all currently outstanding messages sent to the failover partner. Implementors must take care that long-outstanding UPDREQ or UPDREQALL transaction-ids are not duplicated by subsequent messages before the corresponding UPDDONE is received, since the 24-bit transaction-id can wrap.
+section: "5.4"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

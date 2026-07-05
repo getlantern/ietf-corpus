@@ -1,0 +1,9 @@
+document: rfc-8152
+kind: design-rationale
+summary: COSE uses binary (bstr) encodings for cryptographic values rather than base64url strings as in JOSE/JSON. This reduces message size and eliminates base64 encoding/decoding overhead, which is significant for constrained IoT devices targeted by this specification.
+section: "1.1"
+topics:
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

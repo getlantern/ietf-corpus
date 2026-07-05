@@ -1,0 +1,9 @@
+document: rfc-8156
+kind: design-rationale
+summary: 'The DHCPv6 failover protocol defines an active-passive (hot standby) model rather than active-active: during normal operation the primary server handles client traffic while the secondary maintains a copy of the binding database and responds only to requests directed specifically to it. This design simplifies consistency guarantees and avoids split-brain address allocation conflicts.'
+section: "1"
+topics:
+    - security
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

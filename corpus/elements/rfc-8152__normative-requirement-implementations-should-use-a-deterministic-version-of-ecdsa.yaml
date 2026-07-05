@@ -1,0 +1,10 @@
+document: rfc-8152
+kind: normative-requirement
+summary: Implementations SHOULD use a deterministic version of ECDSA such as RFC 6979 to avoid relying on a random number generator for the per-message value 'k'. Biased or reused values of 'k' can be attacked and collisions lead to private key leakage.
+section: "8.1"
+rfc2119_level: SHOULD
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8152
+kind: normative-requirement
+summary: The 'kty' field MUST be present in every COSE_Key. Implementations MUST verify that the key type is appropriate for the algorithm being processed. If the 'alg' field is present, the application MUST verify it matches the algorithm in use, and MUST NOT use the key if they differ.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

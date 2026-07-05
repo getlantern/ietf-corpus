@@ -1,0 +1,11 @@
+document: rfc-8155
+kind: security-consideration
+summary: In networks without a TURN anycast-aware server, outgoing TURN requests sent to the anycast address could leak onto the public Internet, potentially revealing client presence. Border gateways SHOULD block such packets; sensitive clients can set a low IP TTL to limit how far requests travel.
+section: "9.3"
+topics:
+    - nat
+    - ip
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

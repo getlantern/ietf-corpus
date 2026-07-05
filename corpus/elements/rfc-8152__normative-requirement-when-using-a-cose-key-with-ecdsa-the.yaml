@@ -1,0 +1,10 @@
+document: rfc-8152
+kind: normative-requirement
+summary: When using a COSE key with ECDSA, the 'kty' field MUST be 'EC2'; if 'alg' is present it MUST match the algorithm; if 'key_ops' is present it MUST include 'sign' for signing operations and 'verify' for verification. Implementations must check that the curve matches the algorithm.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

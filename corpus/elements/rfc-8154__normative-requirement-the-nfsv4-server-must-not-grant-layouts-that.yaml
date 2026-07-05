@@ -1,0 +1,9 @@
+document: rfc-8154
+kind: normative-requirement
+summary: The NFSv4 server MUST NOT grant layouts that conflict with mandatory locks or share reservations. If a conflicting mandatory lock or OPEN request arrives, the server MUST recall the conflicting portion of the layout before granting the request.
+section: 2.4.6
+rfc2119_level: MUST NOT
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

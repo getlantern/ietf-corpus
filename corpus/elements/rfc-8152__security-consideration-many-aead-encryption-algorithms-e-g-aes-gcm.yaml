@@ -1,0 +1,9 @@
+document: rfc-8152
+kind: security-consideration
+summary: 'Many AEAD encryption algorithms (e.g., AES-GCM) lose all security if the same (key, IV) pair is used twice. The Base IV and Partial IV mechanism requires careful application design: when the same key is shared by multiple senders, the IV space must be explicitly partitioned to prevent reuse.'
+section: "7.1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

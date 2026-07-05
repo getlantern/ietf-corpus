@@ -1,0 +1,9 @@
+document: rfc-8152
+kind: wire-format
+summary: 'COSE_Sign is a CBOR array [Headers, payload: bstr/nil, signatures: [+COSE_Signature]]. COSE_Signature is [Headers, signature: bstr]. CBOR tag 98 marks a tagged COSE_Sign. Algorithms MUST specify padding if the signature value is not a multiple of 8 bits.'
+section: "4.1"
+topics:
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

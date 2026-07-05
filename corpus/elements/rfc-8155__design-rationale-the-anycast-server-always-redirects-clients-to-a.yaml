@@ -1,0 +1,9 @@
+document: rfc-8155
+kind: design-rationale
+summary: The anycast server always redirects clients to a unicast address rather than serving requests directly because two packets sent to an anycast address may reach two different anycast servers, which would break TURN's stateful allocation model. The client must also ensure the initial request fits in a single packet.
+section: "6"
+topics:
+    - nat
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

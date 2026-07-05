@@ -1,0 +1,8 @@
+document: rfc-8154
+kind: security-consideration
+summary: SCSI storage device access control operates at host/LU granularity, not at file or block granularity. The responsibility for enforcing NFSv4 security and locking semantics—including restricting access to extents covered by the layout and preventing access beyond returned layouts—is delegated entirely to the pNFS client.
+section: "4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

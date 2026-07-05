@@ -1,0 +1,10 @@
+document: rfc-8163
+kind: design-rationale
+summary: Extending MS/TP payloads to 1500 octets required upgrading the Data CRC from 16 bits to 32 bits. BACnet Clause 9 specifies the CRC-32K (Koopman) polynomial, which was identified by P. Koopman as exceeding the IEEE 802.3 polynomial in performance for network applications. The resulting Encoded CRC-32K field is always exactly five octets.
+section: Appendix C
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

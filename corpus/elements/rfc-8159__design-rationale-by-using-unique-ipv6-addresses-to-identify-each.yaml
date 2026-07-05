@@ -1,0 +1,9 @@
+document: rfc-8159
+kind: design-rationale
+summary: By using unique IPv6 addresses to identify each Ethernet attachment circuit, processing of the L2TPv3 Session ID can be bypassed upon receipt since each tunnel has one and only one associated session. This enables better ECMP load balancing (unique source/destination IPv6 address pairs per tunnel) and finer-grained routing protocol control compared to the traditional approach of using a loopback address with multiple sessions.
+section: "1"
+topics:
+    - ip
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

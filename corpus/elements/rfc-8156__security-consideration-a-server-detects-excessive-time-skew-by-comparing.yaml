@@ -1,0 +1,8 @@
+document: rfc-8156
+kind: security-consideration
+summary: A server detects excessive time skew by comparing its current time with the sent-time field of received messages; if the skew exceeds 5 seconds, it SHOULD respond with the ExcessiveTimeSkew (22) status code and SHOULD close the connection. Time skew can indicate clock misconfiguration or a man-in-the-middle attack replaying old messages.
+section: "5.6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

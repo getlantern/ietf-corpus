@@ -1,0 +1,9 @@
+document: rfc-8156
+kind: security-consideration
+summary: The failover protocol carries sensitive binding information and must be protected. The TCP connection between failover partners SHOULD be secured using TLS as defined for DHCPv6 Bulk Leasequery (RFC 7653), which provides mutual authentication and confidentiality. An unauthenticated or unencrypted failover channel allows an attacker to inject false binding updates, redirect clients, or disrupt service.
+section: "10"
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

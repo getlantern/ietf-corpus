@@ -1,0 +1,9 @@
+document: rfc-8154
+kind: normative-requirement
+summary: Before performing the first I/O to a device, the client MUST register the sbv_pr_key reservation key via PERSISTENT RESERVE OUT (REGISTER). When a client stops using a device, it MUST unregister the key via PERSISTENT RESERVE OUT (REGISTER) with the earlier key in the RESERVATION KEY field.
+section: 2.4.10.3
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

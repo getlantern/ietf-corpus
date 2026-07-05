@@ -1,0 +1,8 @@
+document: rfc-8154
+kind: security-consideration
+summary: NFSv4 security is not directly applicable to pNFS SCSI layouts because SCSI storage access is at a lower layer than NFSv4. The security provided depends on the storage protocol (e.g., SAS provides essentially none; iSCSI can provide significant security via IPsec per RFC 3723/RFC 7146). In environments where security requirements for the storage protocol cannot be met, pNFS SCSI layouts SHOULD NOT be used.
+section: "4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

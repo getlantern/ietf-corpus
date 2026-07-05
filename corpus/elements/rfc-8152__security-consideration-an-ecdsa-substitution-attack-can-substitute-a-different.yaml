@@ -1,0 +1,9 @@
+document: rfc-8152
+kind: security-consideration
+summary: An ECDSA substitution attack can substitute a different curve during signature validation, potentially finding a second message with the same signature under the new curve. Implementations must bind and verify the curve parameter from the key; the 'kty' and curve fields in COSE_Key provide this binding.
+section: 8.1.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

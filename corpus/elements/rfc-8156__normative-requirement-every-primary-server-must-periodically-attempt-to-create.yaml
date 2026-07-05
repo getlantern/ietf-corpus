@@ -1,0 +1,7 @@
+document: rfc-8156
+kind: normative-requirement
+summary: Every primary server MUST periodically attempt to create a TCP connection to port 647 of all configured partners, and MUST continue attempting to connect even after rejection. Every secondary server MUST listen for TCP connection attempts on port 647. The primary always initiates connections and sends the CONNECT message; the secondary responds with CONNECTREPLY.
+section: "6.1"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

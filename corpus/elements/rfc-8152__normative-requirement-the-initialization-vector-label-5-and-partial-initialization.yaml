@@ -1,0 +1,10 @@
+document: rfc-8152
+kind: normative-requirement
+summary: The 'Initialization Vector' (label 5) and 'Partial Initialization Vector' (label 6) parameters MUST NOT both be present in the same security layer. The full IV is computed by left-padding the Partial IV with zeros to IV length and XORing with the context Base IV.
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

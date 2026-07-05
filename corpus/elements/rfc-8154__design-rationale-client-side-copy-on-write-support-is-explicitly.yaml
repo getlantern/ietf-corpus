@@ -1,0 +1,6 @@
+document: rfc-8154
+kind: design-rationale
+summary: Client-side copy-on-write support is explicitly required (via the READ_DATA / INVALID_DATA extent overlap mechanism) because pNFS enables clients to perform direct block access; classic NFS would have the server perform copy-on-write, but doing so through the MDS in a pNFS environment would negate the performance benefits of direct I/O.
+section: 2.4.5
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

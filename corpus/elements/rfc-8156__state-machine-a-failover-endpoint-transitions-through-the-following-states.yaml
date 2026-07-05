@@ -1,0 +1,6 @@
+document: rfc-8156
+kind: state-machine
+summary: 'A failover endpoint transitions through the following states: STARTUP (initial, indicated via flag not STATE message) → NORMAL (both servers healthy) → COMMUNICATIONS-INTERRUPTED (link lost) → PARTNER-DOWN (partner confirmed down, manual or auto) → RECOVER (partner reconnects and requests full sync) → RECOVER-WAIT (sync complete, waiting MCLT) → RECOVER-DONE (interlock before NORMAL). Additional states: POTENTIAL-CONFLICT, RESOLUTION-INTERRUPTED, and CONFLICT-DONE handle binding conflicts during resynchronization.'
+section: "8"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

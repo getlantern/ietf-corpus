@@ -1,0 +1,6 @@
+document: rfc-8156
+kind: design-rationale
+summary: The lazy update mechanism allows a server to respond to a DHCP client immediately after allocating or extending a lease, deferring the synchronization BNDUPD message to its partner until time permits. This satisfies the RFC 7031 requirement that failover must not introduce significant performance impact on server response times, at the cost of a bounded window of inconsistency bounded by MCLT.
+section: "4.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

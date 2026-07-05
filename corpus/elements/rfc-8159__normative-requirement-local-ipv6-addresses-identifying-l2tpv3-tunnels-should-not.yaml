@@ -1,0 +1,10 @@
+document: rfc-8159
+kind: normative-requirement
+summary: Local IPv6 addresses identifying L2TPv3 tunnels SHOULD NOT be assigned from connected IPv6 subnets facing towards remote tunnel endpoints, as this would create an IPv6 Neighbor Discovery cache entry per tunnel on the next-hop router. It is RECOMMENDED that such addresses be assigned from dedicated subnets used only for tunnel endpoints.
+section: "2"
+rfc2119_level: SHOULD NOT
+topics:
+    - ip
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

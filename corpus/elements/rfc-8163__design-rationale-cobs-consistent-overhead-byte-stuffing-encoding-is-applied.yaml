@@ -1,0 +1,9 @@
+document: rfc-8163
+kind: design-rationale
+summary: COBS (Consistent Overhead Byte Stuffing) encoding is applied to the Data and CRC fields to eliminate preamble sequences (0x55) from the encoded content, correcting a long-standing MS/TP issue where unescaped preamble sequences in data fields caused dropped frames due to loss of frame synchronization.
+section: Appendix B
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
