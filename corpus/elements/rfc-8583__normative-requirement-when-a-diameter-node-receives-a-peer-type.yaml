@@ -1,0 +1,9 @@
+document: rfc-8583
+kind: normative-requirement
+summary: When a Diameter node receives a PEER-type load report, it MUST determine whether the report was inserted by the peer from which the message was received by comparing the SourceID DiameterIdentity against the connection's DiameterIdentity; if they do not match, the node MUST ignore the load report.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8586
+kind: design-rationale
+summary: The existing Via header field (RFC 7230 Section 5.7.1) was considered for CDN loop detection but is not used in practice for this purpose. Some HTTP server implementations disable certain HTTP/1.1 features when Via is present, making Via unsuitable for general CDN loop signaling without unintended side effects.
+section: "1.1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

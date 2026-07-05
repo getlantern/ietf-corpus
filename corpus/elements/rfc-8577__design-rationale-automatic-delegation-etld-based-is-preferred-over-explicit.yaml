@@ -1,0 +1,9 @@
+document: rfc-8577
+kind: design-rationale
+summary: Automatic delegation (ETLD-based) is preferred over explicit delegation when loose hops exist in the ERO, because the ingress may not know the label stack depth limits of all transit LSRs in advance. The ETLD mechanism allows delegation hops to be self-selected during Path message processing without requiring pre-knowledge at the ingress.
+section: "5.3"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8577
+kind: normative-requirement
+summary: The ingress LER or delegation hop MUST check the type of label received from each transit hop as recorded in the RRO and generate the appropriate label stack. Each RRO label sub-object MUST be processed starting with the label sub-object from the first downstream hop, and any label provided by the first downstream hop MUST always be pushed on the label stack.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

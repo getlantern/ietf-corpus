@@ -1,0 +1,8 @@
+document: rfc-8581
+kind: design-rationale
+summary: The SourceID AVP is included in the OC-OLR AVP to carry the DiameterIdentity of the reporting agent specifically to handle the case where a non-supporting agent sits between the reporting node and reacting node; without it, the reacting node could incorrectly attribute the peer report to the non-supporting intermediate node and unnecessarily throttle or divert traffic.
+section: "7.2"
+topics:
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8584
+kind: interoperability-note
+summary: The default RFC 7432 modulus-based DF election cannot correctly order a candidate list that mixes IPv4 and IPv6 PE addresses, because RFC 7432 does not specify how to determine ordinal ranking when both address families are present. The HRW algorithm resolves this because only the low-order 31 bits of the PE IP address are significant in the weight computation, making address-family irrelevant.
+section: "3.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

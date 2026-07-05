@@ -1,0 +1,8 @@
+document: rfc-8584
+kind: design-rationale
+summary: The default DF election can black-hole traffic when an individual AC or bridge table is logically failed (e.g., administratively shut down) without triggering an ES route withdrawal, because the ACS is not a variable in the default algorithm. The AC-DF capability was introduced to allow ACS to influence DF election and protect against such logical failures.
+section: 1.3.2
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

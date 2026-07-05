@@ -1,0 +1,9 @@
+document: rfc-8586
+kind: security-consideration
+summary: The threat model addressed is a customer (intentionally or accidentally) configuring a forwarding loop that attacks a CDN service provider. CDNs must not permit customers to modify or remove the CDN-Loop header field; any CDN that does so remains an attack vector against both implementing and non-implementing CDNs.
+section: "3"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

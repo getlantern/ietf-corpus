@@ -1,0 +1,6 @@
+document: rfc-8587
+kind: design-rationale
+summary: Because fs_locations provides no connection-type hints, clients supporting multiple connection types must probe serially (declining preference order) or simultaneously. Simultaneous probing avoids long waits from network partitions but requires discarding less-preferred connections once one succeeds.
+section: 5.2.3
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

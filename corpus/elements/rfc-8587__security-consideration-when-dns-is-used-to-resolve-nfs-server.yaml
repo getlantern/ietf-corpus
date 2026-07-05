@@ -1,0 +1,10 @@
+document: rfc-8587
+kind: security-consideration
+summary: When DNS is used to resolve NFS server hostnames and DNSSEC is unavailable, the validity of returned network addresses cannot be relied upon. RPCSEC_GSS mutual authentication or transport-layer security (e.g., TLS 1.3) can detect invalid server addresses obtained via compromised DNS.
+section: "7"
+topics:
+    - security
+    - dns
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8584
+kind: design-rationale
+summary: The HRW Weight function includes the ESI as an input parameter (in addition to Ethernet Tag and PE IP address) because if the same PE set is multihomed to multiple ESes, a two-input hash would elect the same PE as DF for the same BDs on each ES, harming load balancing and redundancy. Adding the ESI introduces entropy that significantly reduces this probability.
+section: "3.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8582
+kind: design-rationale
+summary: The loss algorithm is inadequate for rapidly changing traffic because it specifies a percentage reduction rather than an absolute rate. When offered load spikes, a fixed loss percentage still allows traffic to surge far above the reporting node's capacity, requiring a slow feedback loop that can cause wide oscillations across the Diameter network.
+section: "1"
+topics:
+    - diameter
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

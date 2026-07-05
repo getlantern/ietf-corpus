@@ -1,0 +1,9 @@
+document: rfc-8582
+kind: design-rationale
+summary: The rate algorithm allows a reporting node to specify an absolute maximum request rate (requests per second) per reacting node rather than a loss percentage. This means reacting nodes send exactly the allocated rate regardless of whether offered load is 100 or 1000 requests per second, providing stable and predictable load at the reporting node.
+section: "1"
+topics:
+    - diameter
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8584
+kind: state-machine
+summary: 'The DF Election FSM runs per <ES, VLAN> (VLAN-based) or <ES, VLANs in VLAN Bundle>. States are INIT, DF_WAIT, DF_CALC, and DF_DONE. Key transitions: ES_UP moves INIT→DF_WAIT; DF_TIMER expiry moves DF_WAIT→DF_CALC; CALCULATED moves DF_CALC→DF_DONE; VLAN_CHANGE, RCVD_ES, or LOST_ES from DF_DONE re-enters DF_CALC; ES_DOWN from ANY_STATE stops the timer and assumes NDF.'
+section: "2.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

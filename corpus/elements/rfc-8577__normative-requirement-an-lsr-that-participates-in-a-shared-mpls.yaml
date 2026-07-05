@@ -1,0 +1,10 @@
+document: rfc-8577
+kind: normative-requirement
+summary: An LSR that participates in a shared MPLS forwarding plane MUST allocate a unique TE link label for each TE link. When an LSR encounters a TE link label at the top of the label stack, it MUST pop the label and forward the packet over the TE link to the downstream neighbor on the RSVP-TE tunnel.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

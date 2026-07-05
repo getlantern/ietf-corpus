@@ -1,0 +1,9 @@
+document: rfc-8584
+kind: security-consideration
+summary: If an attacker modifies the DF election configuration of one PE in an ES so that it disagrees with the others on DF Alg or capabilities, the unanimity requirement causes all PEs in the ES to fall back to the default DF election algorithm (RFC 7432), re-exposing them to unfair load balancing, service disruption, and traffic black-holing. This fallback behavior is a security-relevant property that operators must account for.
+section: "6"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

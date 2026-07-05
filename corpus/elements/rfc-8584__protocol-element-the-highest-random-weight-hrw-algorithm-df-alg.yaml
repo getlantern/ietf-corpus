@@ -1,0 +1,8 @@
+document: rfc-8584
+kind: protocol-element
+summary: The Highest Random Weight (HRW) algorithm (DF Alg 1) elects the DF as the PE Si for which Weight(V, Es, Si) is highest, with ties broken by lowest IP address numerically. The Weight function is Wrand(V, Es, Si) = (1103515245·((1103515245·Si+12345) XOR D(V,Es))+12345) mod 2^31, where D(V,Es) is the 31-bit CRC-32 digest of the 14-octet concatenation of Ethernet Tag V and ESI Es in network byte order.
+section: "3.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

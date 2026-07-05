@@ -1,0 +1,8 @@
+document: rfc-8587
+kind: security-consideration
+summary: An NFSv4 server SHOULD present file system location entries for file systems on other servers using only hostnames rather than bare IP addresses. This allows the client to interrogate fs_locations on the destination using RPCSEC_GSS with integrity, validating the hostname and ensuring the response has not been corrupted.
+section: "7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

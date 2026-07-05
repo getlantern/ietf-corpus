@@ -1,0 +1,6 @@
+document: rfc-8587
+kind: state-machine
+summary: 'When the set of server network addresses changes: (1) if the new list is a superset, no client action is required; (2) if it is a subset and the removed address is not in use, no immediate action is needed but the address should be avoided; (3) if an address in use is removed, the client may continue using it until NFS4ERR_MOVED is received, which is not a migration event unless the last path becomes unusable.'
+section: 5.2.6
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

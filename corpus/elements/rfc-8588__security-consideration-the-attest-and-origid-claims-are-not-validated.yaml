@@ -1,0 +1,10 @@
+document: rfc-8588
+kind: security-consideration
+summary: The 'attest' and 'origid' claims are not validated against SIP message fields (unlike 'dest', 'orig', and 'iat'). They carry additional information from signer to consumer and share the same integrity protection and non-repudiation properties as the base PASSporT claims.
+section: "9"
+topics:
+    - security
+    - sip
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

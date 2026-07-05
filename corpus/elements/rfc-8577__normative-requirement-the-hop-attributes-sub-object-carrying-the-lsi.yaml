@@ -1,0 +1,10 @@
+document: rfc-8577
+kind: normative-requirement
+summary: The HOP_ATTRIBUTES sub-object carrying the LSI-D flag for explicit delegation MUST have the R (Required) bit set. If the hop cannot comply with the explicit delegation mandate, it MUST send a PathErr with error code 'Routing Problem (24)' and error value 'Label stack imposition failure (71)'.
+section: "9.4"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

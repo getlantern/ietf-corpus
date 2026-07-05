@@ -1,0 +1,9 @@
+document: rfc-8582
+kind: design-rationale
+summary: 'When many reacting nodes activate overload control simultaneously, their leaky buckets can synchronize, causing ''resonance'': batched bursts of requests arriving at the reporting node with poor delay and potential message loss. Randomizing bucket occupancy at activation and whenever the bucket empties (by adding a uniform random offset in [-T/2, +T/2] to the increment) breaks this synchronization without sacrificing long-term rate precision.'
+section: 8.3.3
+topics:
+    - diameter
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

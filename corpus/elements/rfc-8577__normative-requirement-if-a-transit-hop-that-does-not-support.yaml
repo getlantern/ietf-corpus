@@ -1,0 +1,10 @@
+document: rfc-8577
+kind: normative-requirement
+summary: If a transit hop that does not support the 'Stack to reach egress' approach receives an LSI-D-S2E flag, it MUST send a PathErr message with error code 'Routing Problem (24)' and error value 'Label stack imposition failure (71)'.
+section: "9.6"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

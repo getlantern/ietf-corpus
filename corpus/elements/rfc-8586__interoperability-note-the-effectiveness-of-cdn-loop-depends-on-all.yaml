@@ -1,0 +1,9 @@
+document: rfc-8586
+kind: interoperability-note
+summary: The effectiveness of CDN-Loop depends on all intermediaries preserving the header field. Removing the header—whether deliberately or through customer configuration—prevents downstream CDNs from detecting loops. In general, unknown header fields are not removed by intermediaries, but implementations should ensure CDN-Loop is explicitly protected from removal.
+section: "2"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

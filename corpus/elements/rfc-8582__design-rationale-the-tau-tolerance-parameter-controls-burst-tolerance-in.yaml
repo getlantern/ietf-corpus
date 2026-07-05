@@ -1,0 +1,9 @@
+document: rfc-8582
+kind: design-rationale
+summary: 'The TAU tolerance parameter controls burst tolerance in the leaky bucket: larger TAU allows more consecutive requests to be forwarded before rejection, improving tolerance to inter-arrival jitter, but increases queuing at the reporting node. TAU = 4*T is recommended as a reasonable compromise; for priority treatment, TAU1 = TAU2/2 and TAU2 = 10*T are suggested defaults.'
+section: 8.3.1
+topics:
+    - diameter
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

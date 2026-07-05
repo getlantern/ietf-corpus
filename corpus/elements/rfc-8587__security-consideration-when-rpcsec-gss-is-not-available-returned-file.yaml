@@ -1,0 +1,8 @@
+document: rfc-8587
+kind: security-consideration
+summary: When RPCSEC_GSS is not available, returned file system location information is subject to corruption in transit. A client directed to another server after NFS4ERR_MOVED without integrity-protected location data cannot reliably authenticate the destination; it should not use such unverified entries as a basis for migration.
+section: "7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

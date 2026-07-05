@@ -1,0 +1,10 @@
+document: rfc-8577
+kind: normative-requirement
+summary: When automatic delegation is requested, the ingress MUST populate the ETLD with the maximum number of transport labels that it can potentially send to its downstream hop. If a node is reached where the ETLD set from the previous hop is 1, that node MUST select itself as the delegation hop.
+section: 5.3.1
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

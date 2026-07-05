@@ -1,0 +1,9 @@
+document: rfc-8582
+kind: state-machine
+summary: 'The default leaky bucket algorithm for rate control maintains counter X, last-cleared-time LCT, and inter-transmission interval T = 1/OC-Maximum-Rate. On each request arrival at time ta: compute Xp = X - (ta - LCT); if Xp <= TAU, transmit and set X = max(0,Xp)+T and LCT = ta; otherwise apply abatement treatment and leave X and LCT unchanged.'
+section: 8.3.1
+topics:
+    - diameter
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
