@@ -1,0 +1,10 @@
+document: rfc-8345
+kind: state-machine
+summary: A configured overlay object (node, link, or termination point) transitions out of `<operational>` when its `supporting-*` leafref becomes dangling (i.e., the referenced underlay object is deleted). The object remains in `<intended>`. It re-enters `<operational>` when either the supporting object reappears in `<operational>` or the reference is reconfigured to an existing object.
+section: 4.4.3
+topics:
+    - yang
+    - netconf
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

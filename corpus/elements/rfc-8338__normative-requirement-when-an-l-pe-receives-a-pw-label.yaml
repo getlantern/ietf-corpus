@@ -1,0 +1,9 @@
+document: rfc-8338
+kind: normative-requirement
+summary: When an L-PE receives a PW Label Mapping Message, it MUST verify the associated P2MP PSN LSP is in place. If it is not in place and the type is LDP P2MP LSP, the L-PE MUST attempt to join that LSP; if RSVP-TE, the L-PE SHOULD wait for the transport LSP to be signaled.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

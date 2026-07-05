@@ -1,0 +1,8 @@
+document: rfc-8339
+kind: design-rationale
+summary: For Inclusive and Selective P2MP Trees, the echo request is sent using only the P2MP MPLS LSP label. For Aggregate Inclusive and Aggregate Selective P2MP Trees, a label stack of [P2MP MPLS LSP label (outer), upstream assigned P2MP PW label (inner)] is required because multiple VPN/VPLS instances share the same P2MP MPLS LSP and the upstream-assigned label disambiguates the service instance.
+section: "3.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

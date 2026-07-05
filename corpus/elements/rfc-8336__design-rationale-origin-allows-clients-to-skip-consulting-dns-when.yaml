@@ -1,0 +1,9 @@
+document: rfc-8336
+kind: design-rationale
+summary: ORIGIN allows clients to skip consulting DNS when determining authority for an origin in the Origin Set. This removes latency from DNS lookups and relaxes the dual DNS+certificate authority check required by HTTP/2, at the cost of a new attack surface described in Section 4.
+section: "1"
+topics:
+    - http
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

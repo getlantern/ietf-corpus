@@ -1,0 +1,10 @@
+document: rfc-8342
+kind: security-consideration
+summary: The 'origin' metadata annotation exposes the origin of values in the applied configuration, potentially revealing which control-plane protocols are active on a device. Since origin information is tied to applied configuration values, it is only accessible to clients with permissions to read those values; security administrators should consider the sensitivity of origin information when defining access control rules.
+section: "9"
+topics:
+    - security
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

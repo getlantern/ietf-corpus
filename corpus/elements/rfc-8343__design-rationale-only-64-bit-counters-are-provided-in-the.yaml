@@ -1,0 +1,10 @@
+document: rfc-8343
+kind: design-rationale
+summary: Only 64-bit counters are provided in the statistics container, unlike the IF-MIB which defines both 32-bit and 64-bit versions. The rationale is that today's implementations generally support high-speed interfaces (>20 Mbps) where 64-bit counters are needed, making the 32-bit variants redundant.
+section: "4"
+topics:
+    - yang
+    - netconf
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8345
+kind: design-rationale
+summary: All data nodes are designated `config true` even though much topology information is discovered rather than configured. The distinction between configured and discovered data is handled by NMDA datastores (`<intended>` vs `<operational>`) rather than by separate `config true`/`config false` trees, preserving a single coherent model.
+section: 4.4.10
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

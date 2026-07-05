@@ -1,0 +1,11 @@
+document: rfc-8335
+kind: security-consideration
+summary: To prevent VPN information leakage, when a node receives an ICMP Extended Echo Request where the proxy interface is in a different VPN than the probed interface, the node MUST return an Extended Echo Reply with error code No Such Interface (2).
+section: "8"
+rfc2119_level: MUST
+topics:
+    - security
+    - ip
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
