@@ -1,0 +1,9 @@
+document: rfc-8559
+kind: security-consideration
+summary: There are no provisions in RADIUS for end-to-end security; visited and home networks cannot communicate privately in the presence of proxies. RADIUS proxies that see Access-Request and Accounting-Request packets gain sufficient information to forge CoA packets, but this capability is equivalent to their existing ability to return Access-Accept or modify authorization attributes.
+section: "6.1"
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

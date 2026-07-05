@@ -1,0 +1,10 @@
+document: rfc-8572
+kind: design-rationale
+summary: Artifacts are always signed and then encrypted (never encrypted then signed). This ensures the signer's certificate is shrouded, the owner knows what content is being signed, and the owner can inspect an unencrypted voucher obtained from a manufacturer and then encrypt it later themselves, possibly while also stapling fresh revocation objects.
+section: "3.4"
+topics:
+    - crypto
+    - security
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

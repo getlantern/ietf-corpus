@@ -1,0 +1,9 @@
+document: rfc-8560
+kind: design-rationale
+summary: When ingress replication is used in the integrated network, the solution reduces MMRP scope (a soft-state protocol) to only existing VPLS PEs and uses the more robust BGP-based mechanism for multicast pruning among EVPN PEs. This avoids extending the fragile MMRP soft state into the new EVPN domain.
+section: "1"
+topics:
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

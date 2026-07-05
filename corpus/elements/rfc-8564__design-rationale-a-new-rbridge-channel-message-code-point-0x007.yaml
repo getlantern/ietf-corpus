@@ -1,0 +1,8 @@
+document: rfc-8564
+kind: design-rationale
+summary: A new RBridge Channel message code point (0x007) was allocated for P2MP BFD rather than reusing 0x002 because P2MP BFD head-to-tail probing requires multicast (M bit = 1), which is explicitly rejected by the existing point-to-point BFD channel handler.
+section: "4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

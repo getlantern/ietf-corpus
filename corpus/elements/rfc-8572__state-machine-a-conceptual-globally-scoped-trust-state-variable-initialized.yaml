@@ -1,0 +1,9 @@
+document: rfc-8572
+kind: state-machine
+summary: A conceptual globally scoped 'trust-state' variable, initialized to FALSE, governs what bootstrapping data a device may accept. Trust-state is set to TRUE when the device authenticates a bootstrap server to a pre-configured trust anchor or when it successfully validates signed data per Section 5.4. Onboarding information MUST NOT be processed when trust-state is FALSE.
+section: "5.3"
+topics:
+    - security
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8560
+kind: state-machine
+summary: 'An EVPN PE manages PW operational state based on route advertisement order: (1) if it first receives a VPLS A-D route then an EVPN IMET route from the same PE, it MUST bring the existing PW operationally down; (2) if it receives EVPN IMET first then VPLS A-D from the same PE, it sets up the PW but MUST keep it operationally down.'
+section: "3.2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8564
+kind: interoperability-note
+summary: RFC 7175 states that if the M bit of the TRILL Header containing a BFD Control packet is nonzero, the packet is generally dropped. P2MP BFD requires M=1 (multicast), making the existing 0x002 protocol code point unusable; hence the new 0x007 code point is required.
+section: "4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

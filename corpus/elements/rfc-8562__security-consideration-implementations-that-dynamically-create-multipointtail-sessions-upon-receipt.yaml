@@ -1,0 +1,11 @@
+document: rfc-8562
+kind: security-consideration
+summary: Implementations that dynamically create MultipointTail sessions upon receipt of multipoint BFD Control packets MUST implement protective measures to prevent an unbounded number of sessions from being created, including verifying multicast path validity, bounding session counts based on expected stream count, and generating alarms on anomalies.
+section: "8"
+rfc2119_level: MUST
+topics:
+    - security
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8572
+kind: design-rationale
+summary: DHCP is restricted to conveying only unsigned redirect information because DHCPv4 in particular is severely limited in payload capacity, making it impossible to carry signed data artifacts (owner certificate, ownership voucher, signed conveyed information). Including a trust anchor in DHCP redirect options is deliberately unsupported since the device would discard it anyway as untrusted data.
+section: "4.3"
+topics:
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

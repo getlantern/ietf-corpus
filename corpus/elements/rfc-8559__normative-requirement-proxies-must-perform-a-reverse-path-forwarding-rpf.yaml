@@ -1,0 +1,10 @@
+document: rfc-8559
+kind: normative-requirement
+summary: Proxies MUST perform a reverse path forwarding (RPF) check to verify that a CoA packet originates from an authorized Dynamic Authorization Client, strengthening the MAY in RFC 5176 Section 6.1. Where the check fails, the proxy MUST return a NAK with Error-Cause 502.
+section: 4.3.1
+rfc2119_level: MUST
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

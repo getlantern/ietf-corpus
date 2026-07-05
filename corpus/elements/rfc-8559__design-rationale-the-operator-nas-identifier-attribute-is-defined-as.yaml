@@ -1,0 +1,10 @@
+document: rfc-8559
+kind: design-rationale
+summary: The Operator-NAS-Identifier attribute is defined as an opaque token rather than exposing the NAS IP address directly. The rationale is that there is no compelling reason to make NAS topology information public to upstream proxies and home servers; however, the security of the attribute is not load-bearing since modification can only result in the erroneous transaction being rejected.
+section: "6.2"
+topics:
+    - radius
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

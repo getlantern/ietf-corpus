@@ -1,0 +1,9 @@
+document: rfc-8562
+kind: state-machine
+summary: 'MultipointTail sessions have only two states: Down and Up (no Init state). Transitions: Down→Up on receiving State=Up from head; Up→Down on receiving State=Down or AdminDown, or on Detection Timer expiration. MultipointHead sessions have no Detection Timer and are driven purely by administrative action.'
+section: "5.5"
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

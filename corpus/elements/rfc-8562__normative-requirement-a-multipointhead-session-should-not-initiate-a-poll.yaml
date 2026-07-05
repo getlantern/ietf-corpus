@@ -1,0 +1,10 @@
+document: rfc-8562
+kind: normative-requirement
+summary: A MultipointHead session SHOULD NOT initiate a Poll Sequence for timer changes; instead it MUST send packets with the P bit set to signal a change. A MultipointTail MUST NOT reply when the M and P bits are set and bfd.RequiredMinRxInterval is zero.
+section: "5.10"
+rfc2119_level: MUST
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

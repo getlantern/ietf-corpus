@@ -1,0 +1,10 @@
+document: rfc-8559
+kind: normative-requirement
+summary: The CoA server at the visited network MUST validate the NAI in Operator-Name against the list of realms it hosts. If not found, it MUST return a NAK with Error-Cause 502. It SHOULD also validate the User-Name NAI, and if the home network lacks permission, MUST return a NAK with Error-Cause 502.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

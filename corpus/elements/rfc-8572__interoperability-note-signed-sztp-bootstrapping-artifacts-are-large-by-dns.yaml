@@ -1,0 +1,9 @@
+document: rfc-8572
+kind: interoperability-note
+summary: Signed SZTP bootstrapping artifacts are large by DNS conventions (several to many kilobytes). Because mDNS bounds responses to 9000 bytes and UDP DNS is limited even with EDNS(0), DNS Transport over TCP (RFC 7766) is expected to be required whenever signed data is returned via DNS. If onboarding information exceeds the 65535-byte TXT record limit, redirect information should be used instead.
+section: 4.2.4
+topics:
+    - dns
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

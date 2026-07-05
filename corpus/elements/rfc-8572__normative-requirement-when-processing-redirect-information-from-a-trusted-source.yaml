@@ -1,0 +1,12 @@
+document: rfc-8572
+kind: normative-requirement
+summary: When processing redirect information from a trusted source that includes a trust anchor certificate for a bootstrap server, the device MUST authenticate the bootstrap server's TLS certificate using X.509 path validation to that anchor. If no trust anchor is included, the device MUST establish a provisional (blind) TLS connection and set trust-state to FALSE.
+section: "5.5"
+rfc2119_level: MUST
+topics:
+    - tls
+    - pkix
+    - security
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

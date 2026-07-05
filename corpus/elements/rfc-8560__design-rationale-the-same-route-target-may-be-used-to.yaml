@@ -1,0 +1,8 @@
+document: rfc-8560
+kind: design-rationale
+summary: The same Route Target may be used to identify a VPN on both EVPN and VPLS networks, relying on VPLS PEs to silently ignore unknown SAFIs (EVPN IMET). Alternatively, separate RTs combined with RT Constrain (RFC 4684) can prevent EVPN routes from reaching VPLS PEs entirely, providing a cleaner separation.
+section: "3.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

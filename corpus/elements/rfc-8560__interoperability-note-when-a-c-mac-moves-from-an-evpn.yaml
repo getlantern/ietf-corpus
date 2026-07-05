@@ -1,0 +1,8 @@
+document: rfc-8560
+kind: interoperability-note
+summary: When a C-MAC moves from an EVPN PE to a VPLS PE, traffic black-holing can occur if only known unicast traffic is initiated from the moved MAC, because EVPN PEs do not re-advertise C-MACs learned over PWs. Black-holing persists until BUM traffic with the moved C-MAC as source is flooded (e.g., after MAC age-out).
+section: "3.3"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

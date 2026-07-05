@@ -1,0 +1,9 @@
+document: rfc-8560
+kind: normative-requirement
+summary: C-MAC addresses learned over VPLS PWs MUST be injected into the bridge table of the associated MAC-VRF on the EVPN PE. Because these PWs belong to the same split-horizon group as MP2P EVPN service tunnels, such C-MAC addresses MUST NOT be advertised in the control plane to remote EVPN PEs.
+section: "3.2"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

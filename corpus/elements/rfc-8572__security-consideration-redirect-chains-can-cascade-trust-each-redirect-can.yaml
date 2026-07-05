@@ -1,0 +1,9 @@
+document: rfc-8572
+kind: security-consideration
+summary: 'Redirect chains can cascade trust: each redirect can specify a new trust anchor for the next bootstrap server. An operator must understand that trusting the first redirect server implicitly trusts all subsequent redirects in the chain. Implementations MUST cap recursive redirects (SHOULD be no more than ten) to prevent redirect loops or abuse.'
+section: "9.12"
+topics:
+    - security
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

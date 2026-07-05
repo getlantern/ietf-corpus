@@ -1,0 +1,11 @@
+document: rfc-8572
+kind: protocol-element
+summary: The owner certificate artifact is an X.509 certificate (RFC 5280) identifying the device owner, wrapped in a degenerate CMS SignedData structure with no signers. It MUST contain all intermediate certificates up to the 'pinned-domain-cert' from the ownership voucher, and MAY include stapled CRLs or OCSP responses for offline revocation checking.
+section: "3.2"
+topics:
+    - pkix
+    - crypto
+    - security
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

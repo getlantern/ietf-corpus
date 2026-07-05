@@ -1,0 +1,10 @@
+document: rfc-8563
+kind: security-consideration
+summary: Dynamic creation of MultipointClient sessions on receipt of BFD packets from tails creates a resource exhaustion attack surface. Implementations should alarm when session count exceeds the expected number of tails and enforce a reasonable upper bound on the number of sessions, potentially computed from the expected number of multicast streams.
+section: "10"
+topics:
+    - security
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

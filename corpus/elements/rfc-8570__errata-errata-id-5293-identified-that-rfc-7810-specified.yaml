@@ -1,0 +1,9 @@
+document: rfc-8570
+kind: errata
+summary: Errata ID 5293 identified that RFC 7810 specified Length 4 for sub-TLVs 37, 38, and 39 but the figures showed an additional RESERVED byte (implying Length 5). This caused interoperability failures between implementations that omitted the RESERVED field and those that included it. RFC 8570 resolves this by omitting the RESERVED field and using Length 4, consistent with the OSPF TE (RFC 7471) and BGP-LS (RFC 8571) equivalents.
+section: Appendix A
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

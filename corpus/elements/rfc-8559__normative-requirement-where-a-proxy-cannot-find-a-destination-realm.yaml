@@ -1,0 +1,9 @@
+document: rfc-8559
+kind: normative-requirement
+summary: Where a proxy cannot find a destination realm from Operator-Name, the proxy MUST return a NAK packet containing an Error-Cause Attribute with value 502 ('Request Not Routable'). Proxies MUST NOT use the NAI from User-Name to make CoA proxying decisions.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

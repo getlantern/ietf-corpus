@@ -1,0 +1,10 @@
+document: rfc-8563
+kind: normative-requirement
+summary: When bfd.SessionType is MultipointTail and periodic BFD Control packet transmission is just starting, the first packet MUST be delayed by a random amount of time between zero and (0.9 * bfd.RemoteMinRxInterval) to avoid synchronization of tail responses.
+section: 6.13.3
+rfc2119_level: MUST
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

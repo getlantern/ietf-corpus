@@ -1,0 +1,10 @@
+document: rfc-8562
+kind: normative-requirement
+summary: To shut down a multipoint session in a controlled fashion, the head MUST administratively set bfd.SessionState to Down or AdminDown and SHOULD continue sending BFD Control packets in that state for (bfd.DesiredMinTxInterval * bfd.DetectMult) so tails detect the shutdown quickly.
+section: "5.9"
+rfc2119_level: MUST
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8572
+kind: security-consideration
+summary: Certificate validity checking in ownership voucher validation requires an accurate clock. If a device has an inaccurate or no clock, it cannot verify 'created-on' and 'expires-on' timestamps, potentially accepting expired or future-dated vouchers. Devices with accurate clocks MUST perform these timestamp checks.
+section: "9.1"
+topics:
+    - security
+    - pkix
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

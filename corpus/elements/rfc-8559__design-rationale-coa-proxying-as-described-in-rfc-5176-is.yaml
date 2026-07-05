@@ -1,0 +1,9 @@
+document: rfc-8559
+kind: design-rationale
+summary: CoA proxying as described in RFC 5176 is impossible in practice because proxies are stateless with respect to user sessions, RFC 5176 is silent on which attributes constitute session identification, and requiring session tracking would not scale for roaming consortia handling tens of millions of users. The solution is realm-based proxying on the reverse path using Operator-Name instead of User-Name.
+section: "2.3"
+topics:
+    - radius
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

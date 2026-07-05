@@ -1,0 +1,10 @@
+document: rfc-8563
+kind: normative-requirement
+summary: In head-notification mode (Section 5.2), if bfd.SessionType is MultipointTail, bfd.SilentTail MUST be set to zero; if bfd.SessionType is MultipointHead or MultipointClient, bfd.ReportTailDown MUST be set to 1; and the head MUST set bfd.RequiredMinRxInterval to nonzero.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

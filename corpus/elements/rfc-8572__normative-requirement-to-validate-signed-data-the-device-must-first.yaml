@@ -1,0 +1,12 @@
+document: rfc-8572
+kind: normative-requirement
+summary: To validate signed data, the device MUST first authenticate the ownership voucher to a pre-configured trust anchor, verify its serial number field, optionally verify timestamps and expiry, extract the pinned-domain-cert, then authenticate the owner certificate chain to that pinned-domain-cert, and finally verify the conveyed information was signed by the validated owner certificate. Failure at any step MUST invalidate the signed data.
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - security
+    - pkix
+    - crypto
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

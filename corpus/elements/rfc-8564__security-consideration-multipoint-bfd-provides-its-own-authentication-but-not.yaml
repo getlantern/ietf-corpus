@@ -1,0 +1,9 @@
+document: rfc-8564
+kind: security-consideration
+summary: Multipoint BFD provides its own authentication but not encryption. RFC 7978 extends RBridge Channel messages with security but its encryption is only for point-to-point messages, so encryption is not available for P2MP BFD. RFC 7978 authentication is stronger than BFD's own mechanisms, so BFD security is redundant when RFC 7978 authentication is in use. Group keying support is expected in a future TRILL document to enable both encryption and authentication.
+section: "7"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

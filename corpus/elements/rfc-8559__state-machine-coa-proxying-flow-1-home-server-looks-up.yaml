@@ -1,0 +1,8 @@
+document: rfc-8559
+kind: state-machine
+summary: 'CoA proxying flow: (1) Home server looks up Operator-Name realm in AAA routing table, sends CoA-Request to next-hop CoA server. (2) Intermediate proxies perform RPF check, look up realm from Operator-Name, forward or return NAK 502. (3) Visited network receives packet, validates Operator-Name realm and Operator-NAS-Identifier, strips proxy attributes, restores NAS identity attributes, forwards to NAS. (4) NAS response propagates back up the proxy chain.'
+section: "5.2"
+topics:
+    - radius
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

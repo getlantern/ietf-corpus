@@ -1,0 +1,10 @@
+document: rfc-8572
+kind: normative-requirement
+summary: For DNS-based bootstrapping, devices MUST first query device-specific TXT records under '<serial-number>._sztp', and only if that fails MUST query device-independent SRV records under '_sztp._tcp'. Within each category, multicast DNS (mDNS) MUST be tried before unicast DNS.
+section: 4.2.1
+rfc2119_level: MUST
+topics:
+    - dns
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

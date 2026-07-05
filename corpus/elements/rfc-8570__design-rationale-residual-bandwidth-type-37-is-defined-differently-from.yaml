@@ -1,0 +1,9 @@
+document: rfc-8570
+kind: design-rationale
+summary: 'Residual bandwidth (type 37) is defined differently from existing unreserved bandwidth (RFC 5305): residual subtracts RSVP-TE tunnel reservations from maximum link capacity and aggregates across all priorities, whereas unreserved bandwidth subtracts from maximum reservable bandwidth and provides per-priority remainders. Both can coexist; residual bandwidth is suited for Weighted ECMP and unreserved bandwidth for call admission control.'
+section: "4.5"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

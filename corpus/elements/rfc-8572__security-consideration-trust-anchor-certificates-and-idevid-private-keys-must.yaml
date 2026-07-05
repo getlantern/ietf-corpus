@@ -1,0 +1,10 @@
+document: rfc-8572
+kind: security-consideration
+summary: Trust anchor certificates and IDevID private keys MUST be stored in read-only or secure (ideally hardware-backed, e.g., TPM) storage on the device. Compromise of the IDevID private key would allow impersonation of the device; compromise of trust anchor certificates would allow a rogue manufacturer or CA to redirect or onboard the device maliciously.
+section: "9.3"
+topics:
+    - security
+    - crypto
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

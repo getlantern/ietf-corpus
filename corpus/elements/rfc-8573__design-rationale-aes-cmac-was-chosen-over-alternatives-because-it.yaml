@@ -1,0 +1,10 @@
+document: rfc-8573
+kind: design-rationale
+summary: AES-CMAC was chosen over alternatives because it is immune to nonce-reuse vulnerabilities (it does not use a nonce), has good performance in latency and throughput, benefits from native hardware support (e.g., Intel AES-NI), and is widely supported in open source implementations.
+section: "4"
+topics:
+    - ntp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
