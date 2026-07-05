@@ -1,0 +1,8 @@
+document: rfc-8016
+kind: design-rationale
+summary: The old 5-tuple is retained after a successful mobility Refresh (rather than immediately deleted) to support both Break-Before-Make and Make-Before-Break handover scenarios and to handle potential loss of the Refresh response — the client can continue sending data on the old path until the new path is confirmed.
+section: 3.2.2
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

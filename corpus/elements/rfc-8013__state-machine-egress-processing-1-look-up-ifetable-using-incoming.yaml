@@ -1,0 +1,6 @@
+document: rfc-8013
+kind: state-machine
+summary: 'Egress processing: (1) look up IFETable using incoming EgressInGroup port; on miss, send to EXCEPTIONOUT with EncapTableLookupFailed. (2) Apply MetaFilterList whitelist; if no metadata passes, send to EXCEPTIONOUT. (3) Check that Ethernet header plus encapsulated metadata does not exceed MTU; on failure, send to EXCEPTIONOUT with FragRequired. (4) Build Ethernet header, TLV-encode allowed metadata, append original payload, forward to OUT1.'
+section: 6.1.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

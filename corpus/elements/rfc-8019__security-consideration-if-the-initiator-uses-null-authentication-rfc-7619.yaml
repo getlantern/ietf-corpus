@@ -1,0 +1,9 @@
+document: rfc-8019
+kind: security-consideration
+summary: If the Initiator uses NULL Authentication (RFC 7619), its identity is never verified, allowing anonymous peers to mount post-SA DoS attacks (e.g., endless Child SA rekeying, IP address pool exhaustion). Responders permitting NULL Authentication must apply the post-SA countermeasures in Section 5.
+section: "10"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

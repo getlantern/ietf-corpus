@@ -1,0 +1,10 @@
+document: rfc-8019
+kind: protocol-element
+summary: 'The puzzle computation for IKE_AUTH differs from IKE_SA_INIT: S is the concatenation of Nr (Responder nonce, stripped of headers) and SPIr (Responder SPI from the IKE header). The task is otherwise identical: find four keys Ki such that PRF(Ki, Nr | SPIr) each has at least ZBC trailing zero bits.'
+section: 7.2.3
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

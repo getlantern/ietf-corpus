@@ -1,0 +1,9 @@
+document: rfc-8016
+kind: design-rationale
+summary: The TURN server supporting mobility MUST assume that the path MTU is unknown and size the ticket accordingly per STUN UDP fragmentation guidance (RFC 5389 Section 7.1). This is because a roaming client may move between networks with different MTUs and between address families (e.g., IPv6 to IPv4).
+section: 3.1.2
+topics:
+    - nat
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

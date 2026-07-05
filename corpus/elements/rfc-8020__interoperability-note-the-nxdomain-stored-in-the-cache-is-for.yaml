@@ -1,0 +1,8 @@
+document: rfc-8020
+kind: interoperability-note
+summary: The NXDOMAIN stored in the cache is for the denied name (the last name in a CNAME/DNAME chain per RFC 6604), not necessarily the QNAME. Implementations must account for CNAME/DNAME chains when determining which name is subject to the NXDOMAIN cut.
+section: "2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

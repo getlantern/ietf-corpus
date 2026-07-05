@@ -1,0 +1,11 @@
+document: rfc-8019
+kind: normative-requirement
+summary: If a received IKE_AUTH message fails to decrypt or fails the ICV check, the Responder SHOULD still keep the computed SK_* keys so that an attacker cannot repeatedly force expensive key derivation on the same half-open SA.
+section: "4.6"
+rfc2119_level: SHOULD
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

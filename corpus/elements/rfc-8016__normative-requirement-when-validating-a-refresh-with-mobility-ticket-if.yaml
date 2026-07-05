@@ -1,0 +1,10 @@
+document: rfc-8016
+kind: normative-requirement
+summary: When validating a Refresh with MOBILITY-TICKET, if the source IP address and port differ from the stored 5-tuple, the server performs MESSAGE-INTEGRITY validation; if it fails, the server MUST reject with a 441 (Wrong Credentials) error.
+section: 3.2.2
+rfc2119_level: MUST
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

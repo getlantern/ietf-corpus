@@ -1,0 +1,9 @@
+document: rfc-8028
+kind: design-rationale
+summary: 'The proposal is most similar to the Strong Host model (RFC 1122): routing is keyed on (src IP addr, dest IP addr, TOS) rather than just (dest IP addr, TOS). However, it differs slightly in that the packet goes to a router that advertised the prefix without specifying which interface, so a MIF router spanning two LANs could be reached via either LAN.'
+section: "1.1"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

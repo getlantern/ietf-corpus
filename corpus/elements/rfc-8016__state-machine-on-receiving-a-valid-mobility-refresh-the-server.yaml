@@ -1,0 +1,8 @@
+document: rfc-8016
+kind: state-machine
+summary: 'On receiving a valid mobility Refresh, the server transitions the allocation''s active 5-tuple from old to new: it adds the new client IP/port to state while retaining the old 5-tuple; upon receiving a Send Indication or ChannelData on the new 5-tuple (or a connection-close signal on the old), the server discards the old 5-tuple and old ticket, fully completing the transition.'
+section: 3.2.2
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

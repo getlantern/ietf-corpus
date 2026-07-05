@@ -1,0 +1,10 @@
+document: rfc-8020
+kind: normative-requirement
+summary: If the NXDOMAIN response due to a cached nonexistence is from a DNSSEC-signed zone, the iterative caching resolver MUST return the accompanying NSEC or NSEC3 records in the response to the triggering query if the query had the DNSSEC OK (DO) bit set.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

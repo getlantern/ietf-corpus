@@ -1,0 +1,9 @@
+document: rfc-8026
+kind: interoperability-note
+summary: Deployed CPEs that support multiple softwire mechanisms but do not implement OPTION_S46_PRIORITY will request configuration for all supported mechanisms in their DHCPv6 ORO but will not request OPTION_S46_PRIORITY, potentially resulting in unpredictable client configuration. Operators may need to implement server-side logic to identify such clients and restrict them to a single mechanism.
+section: "2.2"
+topics:
+    - v6ops
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

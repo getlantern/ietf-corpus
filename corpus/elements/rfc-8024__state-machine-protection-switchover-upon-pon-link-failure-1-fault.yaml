@@ -1,0 +1,8 @@
+document: rfc-8024
+kind: state-machine
+summary: 'Protection switchover upon PON link failure: (1) fault detected on working PON link → working OLT deactivates faulty interface and sends LDP fault notification and ICCP PON State TLV; (2) protection OLT receives PON State TLV → activates protection PON link and advertises Preferential Forwarding active on protection PW; (3) remote PE selects protection PW as active forwarding path per RFC 6870.'
+section: "4.1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

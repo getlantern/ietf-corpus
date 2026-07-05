@@ -1,0 +1,10 @@
+document: rfc-8016
+kind: security-consideration
+summary: An attacker monitoring traffic between the TURN client and server can impersonate the client and refresh the allocation using an intercepted ticket with the attacker's IP address. To prevent this, TURN client and server MUST use STUN long-term credential mechanism, STUN Third-Party Authorization (RFC 7635), or a (D)TLS connection.
+section: "5"
+topics:
+    - security
+    - nat
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

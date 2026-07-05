@@ -1,0 +1,9 @@
+document: rfc-8026
+kind: security-consideration
+summary: Misbehaving intermediate nodes may alter the content of the S46 Priority Option, causing a different IPv4 service continuity mechanism to be configured than the one preferred by the network. A misbehaving node could also modify other DHCPv6 options (e.g., option 64 or 90) to redirect traffic to an illegitimate node. These attacks apply to any DHCPv6 option, not just OPTION_S46_PRIORITY.
+section: "3"
+topics:
+    - security
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

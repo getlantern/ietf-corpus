@@ -1,0 +1,11 @@
+document: rfc-8022
+kind: security-consideration
+summary: Configuration and state data conforming to the core routing data model should be accessed via a secure transport such as NETCONF with the NETCONF access control model (RFC 6536) to restrict access. Unauthorized write access to '/routing/control-plane-protocols/control-plane-protocol' or '/routing/ribs/rib' can adversely affect the routing subsystem, potentially causing network malfunctions or delivery of packets to inappropriate destinations.
+section: "11"
+topics:
+    - yang
+    - security
+    - routing
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8020
+kind: normative-requirement
+summary: When an iterative caching DNS resolver receives an NXDOMAIN response, it SHOULD store it in its cache and then all names and resource record sets (RRsets) at or below that node SHOULD be considered unreachable. Subsequent queries for such names SHOULD elicit an NXDOMAIN response.
+section: "2"
+rfc2119_level: SHOULD
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

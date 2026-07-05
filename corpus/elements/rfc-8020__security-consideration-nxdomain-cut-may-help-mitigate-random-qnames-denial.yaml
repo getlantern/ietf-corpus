@@ -1,0 +1,9 @@
+document: rfc-8020
+kind: security-consideration
+summary: NXDOMAIN cut may help mitigate 'random qnames' denial-of-service attacks where queries with a fixed nonexistent suffix and random prefixes flood resolvers; once the resolver caches the NXDOMAIN for the fixed suffix, it stops forwarding the flood to authoritative servers.
+section: "7"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

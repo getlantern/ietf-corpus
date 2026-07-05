@@ -1,0 +1,6 @@
+document: rfc-8013
+kind: state-machine
+summary: 'Ingress processing: (1) identify inter-FE frame by ethertype and optionally MAC addresses, map to IngressInGroup port. (2) Walk TLVs using metadata length field; for each metadatum, compare against MetaFilterList whitelist—unknown or disallowed IDs are ignored and the error statistic is incremented. (3) Reset data pointer past IFE header to reconstruct original packet and metadata; forward to OUT2. On failure, send to EXCEPTIONOUT.'
+section: 6.1.2
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
