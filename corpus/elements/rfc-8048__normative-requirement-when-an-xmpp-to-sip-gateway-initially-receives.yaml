@@ -1,0 +1,10 @@
+document: rfc-8048
+kind: normative-requirement
+summary: When an XMPP-to-SIP gateway initially receives NOTIFY messages with a Subscription-State header value of 'pending', it MUST respond to them on the SIP side but refrain from sending any presence stanzas from the SIP contact to the XMPP user until a NOTIFY with Subscription-State 'active' is received.
+section: 5.2.1
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

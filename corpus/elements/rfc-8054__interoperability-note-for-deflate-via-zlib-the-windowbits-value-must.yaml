@@ -1,0 +1,7 @@
+document: rfc-8054
+kind: interoperability-note
+summary: For DEFLATE via zlib, the windowBits value MUST be in the range -8 to -15 for deflateInit2(); the windowBits value SHOULD be -15 for inflateInit2(), otherwise it will not be able to decompress a stream with a larger window size, reducing interoperability.
+section: "4"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

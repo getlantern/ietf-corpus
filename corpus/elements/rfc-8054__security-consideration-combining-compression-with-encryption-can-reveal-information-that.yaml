@@ -1,0 +1,10 @@
+document: rfc-8054
+kind: security-consideration
+summary: Combining compression with encryption can reveal information that would not have been revealed without compression; adversaries observing the length of compressed data may derive information about the uncompressed data. The CRIME and BREACH attacks are examples of this. To mitigate, authentication MUST NOT be attempted after successful use of COMPRESS.
+section: "7"
+topics:
+    - security
+    - tls
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

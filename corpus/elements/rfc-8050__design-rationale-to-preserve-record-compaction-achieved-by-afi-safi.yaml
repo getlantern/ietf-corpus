@@ -1,0 +1,10 @@
+document: rfc-8050
+kind: design-rationale
+summary: To preserve record compaction achieved by AFI/SAFI-specific subtypes and allow multiple RIB Entries per TABLE_DUMP_V2 record, the RIB Entries field is redefined in place rather than introducing a wholly new record layout. The RIB_GENERIC_ADDPATH subtype does not redefine RIB Entries because it already encapsulates raw NLRI.
+section: "4.1"
+topics:
+    - bgp
+    - routing
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

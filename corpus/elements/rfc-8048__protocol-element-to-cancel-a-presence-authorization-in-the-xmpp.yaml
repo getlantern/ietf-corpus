@@ -1,0 +1,9 @@
+document: rfc-8048
+kind: protocol-element
+summary: 'To cancel a presence authorization in the XMPP-to-SIP direction, an XMPP unsubscribe stanza is translated to a SIP SUBSCRIBE request with Expires: 0. The gateway then sends a NOTIFY with Subscription-State: terminated to formally end the SIP dialog. Cancelling an outbound authorization does not affect any inbound authorization.'
+section: 5.2.3
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

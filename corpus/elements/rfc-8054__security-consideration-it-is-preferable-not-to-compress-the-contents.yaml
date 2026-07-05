@@ -1,0 +1,9 @@
+document: rfc-8054
+kind: security-consideration
+summary: It is preferable not to compress the contents of two distinct confidential articles together; adversaries might derive information if they share common header fields or body lines. This can be mitigated with DEFLATE by clearing the compression dictionary (Z_FULL_FLUSH) between confidential articles.
+section: "7"
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

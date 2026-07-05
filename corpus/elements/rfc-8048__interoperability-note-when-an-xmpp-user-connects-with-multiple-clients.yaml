@@ -1,0 +1,9 @@
+document: rfc-8048
+kind: interoperability-note
+summary: When an XMPP user connects with multiple clients simultaneously, each client generates a separate presence notification (keyed by distinct XMPP resourcepart), and the contact's SIP UA will receive a separate NOTIFY per client. A SIP UA should model these multiple notifications the same way it handles multiple PIDF tuples from a SIP user.
+section: "6.2"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

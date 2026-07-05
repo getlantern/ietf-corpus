@@ -1,0 +1,10 @@
+document: rfc-8048
+kind: normative-requirement
+summary: An XMPP-to-SIP gateway MUST consider the XMPP presence authorization to be permanently cancelled (and inform the XMPP user) if it receives a SIP response of 403, 489, or 603. By contrast, a response of 423 or 481 is a transient error and the long-lived XMPP presence authorization should be honored.
+section: 5.2.2
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

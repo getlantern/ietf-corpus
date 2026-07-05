@@ -1,0 +1,9 @@
+document: rfc-8048
+kind: interoperability-note
+summary: 'SIP does not have a direct construct for cancelling an outbound presence authorization as XMPP does; instead, a SIP user terminates the notification dialog by sending SUBSCRIBE with Expires: 0 and never renewing it. XCAP (RFC 4825) could be used in SIP to remove a contact from an address list, but that is outside the scope of this gateway specification.'
+section: 5.2.3
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

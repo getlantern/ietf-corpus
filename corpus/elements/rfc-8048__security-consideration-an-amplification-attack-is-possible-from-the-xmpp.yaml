@@ -1,0 +1,11 @@
+document: rfc-8048
+kind: security-consideration
+summary: An amplification attack is possible from the XMPP network against a SIP Presence Server, because each long-lived XMPP presence authorization results in multiple SIP notification dialog refreshes. Access to an XMPP-to-SIP gateway SHOULD be restricted to a single domain or trust realm, and the gateway should be hosted only by XMPP services with controlled account provisioning.
+section: "8.1"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

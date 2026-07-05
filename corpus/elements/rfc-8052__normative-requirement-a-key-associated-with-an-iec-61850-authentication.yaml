@@ -1,0 +1,11 @@
+document: rfc-8052
+kind: normative-requirement
+summary: A key associated with an IEC 61850 authentication algorithm MUST be distributed as a TEK_INTEGRITY_KEY attribute in the KD payload, with key sizes matching the algorithm (32 octets for HMAC-SHA256-128/HMAC-SHA256; 20 octets for AES-GMAC-128 with 16-octet key and 4-octet salt; 36 octets for AES-GMAC-256 with 32-octet key and 4-octet salt).
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

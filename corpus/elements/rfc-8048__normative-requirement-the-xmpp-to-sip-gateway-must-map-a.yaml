@@ -1,0 +1,10 @@
+document: rfc-8048
+kind: normative-requirement
+summary: The XMPP-to-SIP gateway MUST map a missing 'type' attribute (available) to PIDF basic status 'open', and MUST map type='unavailable' to PIDF basic status 'closed'. Only <presence/> stanzas with no type or type='unavailable' are mapped to SIP NOTIFY requests.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

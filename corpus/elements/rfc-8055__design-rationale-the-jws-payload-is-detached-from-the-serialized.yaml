@@ -1,0 +1,9 @@
+document: rfc-8055
+kind: design-rationale
+summary: The JWS Payload is detached from the serialized JWS conveyed in the header field parameter (per RFC 7515 Appendix F) because the payload information is already present in other SIP header fields. This avoids redundant encoding while still cryptographically binding the realm claim to the specific SIP message.
+section: "5.1"
+topics:
+    - sip
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

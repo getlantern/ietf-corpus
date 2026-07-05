@@ -1,0 +1,9 @@
+document: rfc-8046
+kind: state-machine
+summary: 'Each learned locator has one of three states: UNVERIFIED (reachability not yet confirmed), ACTIVE (reachability verified and not deprecated), or DEPRECATED (lifetime expired). Allowed transitions are UNVERIFIED→ACTIVE (reachability verified), UNVERIFIED→DEPRECATED (lifetime expires), ACTIVE→DEPRECATED (lifetime expires), ACTIVE→UNVERIFIED (local policy re-verification), and DEPRECATED→UNVERIFIED (new lifetime received). A DEPRECATED address MUST NOT transition directly to ACTIVE.'
+section: "5.1"
+topics:
+    - ip
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

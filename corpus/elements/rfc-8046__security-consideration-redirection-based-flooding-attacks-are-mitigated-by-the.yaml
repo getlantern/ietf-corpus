@@ -1,0 +1,10 @@
+document: rfc-8046
+kind: security-consideration
+summary: Redirection-based flooding attacks are mitigated by the combination of address reachability checks and CBA. CBA prevents amplification by bounding redirected traffic to the volume recently received from the peer, lowering a redirection-based flood to the level of direct flooding. A HIP association SHOULD also limit the number of IP addresses associatable with any HI to prevent memory/computational exhaustion via crafted UPDATEs.
+section: "6.2"
+topics:
+    - security
+    - ip
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8055
+kind: normative-requirement
+summary: A SIP entity consuming the 'received-realm' value MUST first recalculate the JWS and verify it matches the received JWS. If there is a mismatch, the entity MUST discard the received parameter; it MAY also take additional actions such as rejecting the SIP request based on local policy.
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - sip
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8052
+kind: design-rationale
+summary: The ID and SA TEK payloads include explicit OID Length and OID-Specific Payload Length fields even though these lengths are redundant with the DER encoding. This is to allow implementations to construct and sanity-check GDOI messages without needing to parse the DER itself.
+section: B.1
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

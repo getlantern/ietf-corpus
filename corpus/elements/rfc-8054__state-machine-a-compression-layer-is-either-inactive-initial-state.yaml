@@ -1,0 +1,9 @@
+document: rfc-8054
+kind: state-machine
+summary: 'A compression layer is either inactive (initial state) or active (after successful COMPRESS or TLS-level compression negotiation). In the active state: COMPRESS, STARTTLS, AUTHINFO (with arguments), and MODE READER commands are prohibited; the server must not advertise the COMPRESS, STARTTLS, or MODE-READER capabilities.'
+section: 2.2.2
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

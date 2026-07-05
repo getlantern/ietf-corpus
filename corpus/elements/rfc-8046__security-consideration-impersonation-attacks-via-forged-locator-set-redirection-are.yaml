@@ -1,0 +1,10 @@
+document: rfc-8046
+kind: security-consideration
+summary: 'Impersonation attacks via forged LOCATOR_SET redirection are prevented by HIP UPDATE authentication: UPDATE packets use HMAC and carry a signature, so an attacker cannot create an accepted UPDATE without the target host''s secret keys. Replay attacks on UPDATE are also prevented as described in RFC 7401.'
+section: "6.1"
+topics:
+    - security
+    - ip
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

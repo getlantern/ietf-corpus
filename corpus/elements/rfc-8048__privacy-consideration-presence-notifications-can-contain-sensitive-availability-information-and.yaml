@@ -1,0 +1,12 @@
+document: rfc-8048
+kind: privacy-consideration
+summary: Presence notifications can contain sensitive availability information, and both SIP and XMPP allow sending different notifications to different subscribers. A gateway MUST NOT route or deliver a presence notification to any entity other than the intended recipient (identified by XMPP 'to' address or SIP Request-URI), because authorization information resides at the user's home service, not at the receiving gateway.
+section: "8.2"
+rfc2119_level: MUST NOT
+topics:
+    - privacy
+    - security
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

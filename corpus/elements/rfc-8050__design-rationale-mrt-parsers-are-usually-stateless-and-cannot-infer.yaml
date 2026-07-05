@@ -1,0 +1,10 @@
+document: rfc-8050
+kind: design-rationale
+summary: MRT parsers are usually stateless and cannot infer BGP capability negotiation from context. Because RFC 7911 Additional Path support alters the NLRI encoding for withdraws and announcements, new BGP4MP/BGP4MP_ET subtypes are required to signal to a parser how to decode the NLRI.
+section: "2"
+topics:
+    - bgp
+    - routing
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

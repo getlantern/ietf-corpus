@@ -1,0 +1,9 @@
+document: rfc-8047
+kind: design-rationale
+summary: For fault tolerance, a single SA pair for all addresses is generally sufficient. For load balancing across parallel paths, a separate SA pair per active path is recommended because mixing traffic from different paths on a single SA may cause packets to fall outside the ESP anti-replay window due to differing path latencies.
+section: 4.2.2
+topics:
+    - mobility
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

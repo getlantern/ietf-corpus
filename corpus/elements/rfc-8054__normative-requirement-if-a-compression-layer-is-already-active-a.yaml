@@ -1,0 +1,10 @@
+document: rfc-8054
+kind: normative-requirement
+summary: If a compression layer is already active, a server MUST reply with a 502 response code if a syntactically valid COMPRESS or STARTTLS command is received, and MUST NOT return the COMPRESS or STARTTLS capability labels in response to a CAPABILITIES command.
+section: 2.2.2
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
