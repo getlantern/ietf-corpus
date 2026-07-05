@@ -1,0 +1,10 @@
+document: rfc-7965
+kind: normative-requirement
+summary: Either the C-bit or the S-bit MUST be set in the PSN Tunnel Binding TLV; they are mutually exclusive and cannot both be set or both be cleared. If a message with both set or both cleared is received, a Label Release with status code 0x0000003C MUST be sent and the PW will not be established.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

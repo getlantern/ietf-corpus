@@ -1,0 +1,10 @@
+document: rfc-7965
+kind: normative-requirement
+summary: For SS-PW strict binding, when two PEs both initiate PSN Binding, the receiving PE MUST compare its own Node ID against the received Source Node ID as unsigned integers. If the received Source Node ID is larger, the PE confirms the binding; otherwise, it MUST reply with a Label Release with status code 0x0000003B.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

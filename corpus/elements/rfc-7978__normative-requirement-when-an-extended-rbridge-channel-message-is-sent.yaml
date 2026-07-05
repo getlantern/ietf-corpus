@@ -1,0 +1,10 @@
+document: rfc-7978
+kind: normative-requirement
+summary: When an extended RBridge Channel message is sent with security and an Ethertyped payload containing a nested RBridge Channel message, any error response for the nested message SHOULD itself be nested in an extended RBridge Channel message using the same type of security, with ERR=8 in the outer envelope.
+section: "5.2"
+rfc2119_level: SHOULD
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-7968
+kind: design-rationale
+summary: Not pruning distribution trees wastes bandwidth for broadcast/unknown-unicast traffic and Layer 3 multicast (e.g., IPTV), and only helps pure transit nodes — edge nodes always need the full (tree + VLAN) forwarding table. Security concerns about VLAN isolation also make no-prune inappropriate.
+section: "2"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

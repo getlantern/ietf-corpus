@@ -1,0 +1,8 @@
+document: rfc-7968
+kind: design-rationale
+summary: Some fast-path silicon uses VLAN-based tree selection (mapping incoming VLAN x to a fixed tree t in the control plane) rather than hash-based selection, because hashing across trees is not supported in hardware. This document's mechanism is compatible with such implementations.
+section: "2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

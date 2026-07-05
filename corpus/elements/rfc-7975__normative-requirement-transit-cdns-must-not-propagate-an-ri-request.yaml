@@ -1,0 +1,10 @@
+document: rfc-7975
+kind: normative-requirement
+summary: Transit CDNs MUST NOT propagate an RI request downstream if the number of CDN Provider IDs in cdn-path (before adding the transit CDN's own ID) is equal to or greater than max-hops. The dCDN MUST respond with error-code 503 if cdn-path length exceeds max-hops.
+section: "4.8"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

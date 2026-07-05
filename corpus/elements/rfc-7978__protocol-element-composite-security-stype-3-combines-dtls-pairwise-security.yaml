@@ -1,0 +1,11 @@
+document: rfc-7978
+kind: protocol-element
+summary: Composite Security (SType = 3) combines DTLS Pairwise Security and IS-IS CRYPTO_AUTH-Based Authentication. On transmission, the payload is first secured via DTLS (Section 4.4), then IS-IS CRYPTO_AUTH authentication (Section 4.3) is applied over the result. On reception, IS-IS authentication is verified first; only on success are the DTLS records processed.
+section: "4.5"
+topics:
+    - routing
+    - security
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-7978
+kind: design-rationale
+summary: The header extension is implemented as an RBridge Channel protocol (assigned protocol number 0x004) rather than as a new Ethertype or framing layer. This design makes it easy to determine whether a remote RBridge supports the extension, because RBridges advertise in their IS-IS LSP which RBridge Channel protocols they support.
+section: "2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

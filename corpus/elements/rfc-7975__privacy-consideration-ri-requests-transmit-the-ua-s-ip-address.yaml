@@ -1,0 +1,8 @@
+document: rfc-7975
+kind: privacy-consideration
+summary: RI requests transmit the UA's IP address and requested URI to the dCDN. If a uCDN queries multiple candidate dCDNs via the RI, those not ultimately selected still learn UA IP addresses and URIs they would not otherwise see. IP anonymization (e.g., masking last bits) is possible but reduces routing effectiveness and may prevent correlation of RI requests with subsequent UA requests.
+section: "5.2"
+topics:
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

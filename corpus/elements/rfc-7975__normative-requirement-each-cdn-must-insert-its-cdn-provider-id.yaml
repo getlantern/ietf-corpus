@@ -1,0 +1,10 @@
+document: rfc-7975
+kind: normative-requirement
+summary: Each CDN MUST insert its CDN Provider ID into the cdn-path of every RI request it originates or cascades. A dCDN MUST check cdn-path on receipt and MUST reject any RI request already containing its own Provider ID, responding with error-code 502.
+section: "4.8"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-7968
+kind: state-machine
+summary: 'Failure handling defines two tree root failure states: (1) non-highest-priority tree root failure — highest-priority tree root reassigns the failed tree''s VLANs to other trees; (2) highest-priority tree root failure — second-priority tree root''s pre-stored announcements take effect, and RBridges fall back to RFC 6325 behavior if no valid tree is available, with a timer set to at least the LSP flooding time before downgrade.'
+section: "3.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

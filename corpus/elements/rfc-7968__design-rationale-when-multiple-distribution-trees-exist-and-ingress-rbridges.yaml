@@ -1,0 +1,8 @@
+document: rfc-7968
+kind: design-rationale
+summary: When multiple distribution trees exist and ingress RBridges can use any tree for any VLAN/FGL, the multicast forwarding table size grows as n*m (trees × VLANs/FGLs), quickly exhausting limited fast-path hardware capacity. Restricting each VLAN/FGL to a subset of trees reduces table size by a factor equal to the number of trees.
+section: "2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

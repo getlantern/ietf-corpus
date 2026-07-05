@@ -1,0 +1,9 @@
+document: rfc-7977
+kind: design-rationale
+summary: No new SDP transport protocol is defined for MSRP over WebSocket. Because all traffic goes through a relay, the client specifies "TCP/TLS/MSRP" in the SDP m-line (the protocol used between relays and non-WebSocket clients), while the "ws" transport appears only in the SDP path attribute URI.
+section: 5.2.2
+topics:
+    - websocket
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

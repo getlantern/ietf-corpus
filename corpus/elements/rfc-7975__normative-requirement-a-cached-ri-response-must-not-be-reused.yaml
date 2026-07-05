@@ -1,0 +1,9 @@
+document: rfc-7975
+kind: normative-requirement
+summary: A cached RI response MUST NOT be reused unless the new UA request would generate an identical RI request (except for c-ip when the UA IP falls within the scope iprange of the original response). The uCDN SHOULD use the most recent cached response when multiple cached responses have overlapping scopes.
+section: "4.6"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

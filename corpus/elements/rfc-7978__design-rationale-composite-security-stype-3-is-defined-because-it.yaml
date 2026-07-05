@@ -1,0 +1,11 @@
+document: rfc-7978
+kind: design-rationale
+summary: 'Composite Security (SType = 3) is defined because it provides complementary coverage: DTLS secures the payload with modern authenticated encryption and key negotiation, while the outer IS-IS CRYPTO_AUTH layer also authenticates the RBridge Channel Header and (in non-native cases) the preceding MAC addresses and Data Label, which DTLS alone cannot cover.'
+section: "4.5"
+topics:
+    - routing
+    - security
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-7975
+kind: normative-requirement
+summary: A dCDN MUST NOT return a Redirection Target that is a Request Router if the dns-only key is set to True in the RI request. CDNs MUST include dns-only set to True on any cascaded RI requests when the original request had dns-only=True.
+section: 4.4.2
+rfc2119_level: MUST
+topics:
+    - dns
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
