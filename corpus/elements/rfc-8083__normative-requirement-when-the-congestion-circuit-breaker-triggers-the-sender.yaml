@@ -1,0 +1,11 @@
+document: rfc-8083
+kind: normative-requirement
+summary: When the congestion circuit breaker triggers, the sender SHOULD cease transmission; however the sender MAY first reduce its sending rate by a factor of approximately ten, but if the circuit breaker triggers again after the next CB_INTERVAL the sender MUST cease transmission.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - congestion
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

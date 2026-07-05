@@ -1,0 +1,11 @@
+document: rfc-8083
+kind: normative-requirement
+summary: When a sender transmitting at least one RTP packet every max(Tdr, Tr) seconds receives an RTCP SR or RR packet with a report block, it MUST record the fraction lost and time since the last report; if more than CB_INTERVAL reports have been received it MUST calculate average fraction lost and estimate TCP throughput X, triggering the congestion circuit breaker if the actual sending rate exceeds 10 * X.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - congestion
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

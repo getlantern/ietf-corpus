@@ -1,0 +1,11 @@
+document: rfc-8079
+kind: normative-requirement
+summary: For Feedback messages, a media-aware B2BUA MUST update the Packet Sender SSRC and media source SSRC if changed, but MUST NOT change a media source SSRC that was originally set to zero (unless zero is actually an endpoint's chosen SSRC). For NACK, it MUST rewrite Packet IDs if sequence numbers were changed.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8086
+kind: interoperability-note
+summary: IPv6 datagrams with a zero UDP checksum will be dropped by middleboxes (e.g., firewalls) that validate checksums per RFC 2460. There is no fallback mechanism in GRE-in-UDP to recover from such black-holing; use of UDP checksum is RECOMMENDED when middleboxes are present.
+section: "7.1"
+topics:
+    - nat
+    - udp
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

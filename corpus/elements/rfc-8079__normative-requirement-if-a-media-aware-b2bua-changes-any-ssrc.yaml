@@ -1,0 +1,11 @@
+document: rfc-8079
+kind: normative-requirement
+summary: If a media-aware B2BUA changes any SSRC, it MUST update the related 'ssrc' SDP attributes before sending to the recipient, and MUST rewrite the 'rtcp' SDP attribute if provided. It MUST advertise its RTCP support level coherently in SDP to prevent sending unsupported feedback types.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

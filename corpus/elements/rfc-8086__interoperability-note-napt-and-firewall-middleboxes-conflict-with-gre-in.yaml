@@ -1,0 +1,9 @@
+document: rfc-8086
+kind: interoperability-note
+summary: 'NAPT and firewall middleboxes conflict with GRE-in-UDP tunnels that use the UDP source port for entropy: NAPT rewrites the source port, and firewalls may require symmetric bidirectional port pairs. If middleboxes are present on the path, entropy usage should be disabled or middleboxes updated.'
+section: "7"
+topics:
+    - nat
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

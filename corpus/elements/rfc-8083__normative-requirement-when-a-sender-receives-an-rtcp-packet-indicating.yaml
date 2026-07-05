@@ -1,0 +1,11 @@
+document: rfc-8083
+kind: normative-requirement
+summary: When a sender receives an RTCP packet indicating that its media was not received, it MUST calculate a new value for MEDIA_TIMEOUT; if the new value is larger than the previous it replaces the old value, otherwise it keeps the original.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - congestion
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

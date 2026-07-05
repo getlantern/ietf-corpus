@@ -1,0 +1,9 @@
+document: rfc-8086
+kind: security-consideration
+summary: Using a single standardized UDP destination port increases vulnerability to off-path attacks; an alternate agreed-upon port between encapsulator and decapsulator (per RFC 6056) may be used to mitigate this. The GRE Key field MAY be used to authenticate the encapsulator, and packets with invalid keys MUST be dropped.
+section: "11"
+topics:
+    - security
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8086
+kind: wire-format
+summary: 'The GRE-in-UDP packet structure over IPv6 consists of: IPv6 header (NxtHdr=17/UDP, Flow Label may carry entropy), UDP header (Source Port=entropy, Dest Port=4754/4755), then GRE header with optional fields. The IPv6 flow label field SHOULD also carry entropy per RFC 6438.'
+section: "3"
+topics:
+    - udp
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

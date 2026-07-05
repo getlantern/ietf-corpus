@@ -1,0 +1,9 @@
+document: rfc-8083
+kind: design-rationale
+summary: RTT estimates and jitter from RTCP RR packets were explicitly rejected as standalone circuit breaker signals because RTCP under RTP/AVP timing is too infrequent and cannot distinguish routing-change delay from congestion queuing delay; only sustained packet loss provides a sufficiently strong signal.
+section: "4"
+topics:
+    - rtp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

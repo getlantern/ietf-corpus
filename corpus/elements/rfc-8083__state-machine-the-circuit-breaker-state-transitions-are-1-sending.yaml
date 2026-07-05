@@ -1,0 +1,9 @@
+document: rfc-8083
+kind: state-machine
+summary: 'The circuit breaker state transitions are: (1) Sending — normal operation; (2) Circuit Breaker Triggered — sender SHOULD cease transmission on triggering conditions (RTCP timeout, media timeout, congestion, or media unusability); (3) Restarted — flow may resume only after congestion is confirmed dissipated, with rate limiting on restart attempts.'
+section: "4.5"
+topics:
+    - rtp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

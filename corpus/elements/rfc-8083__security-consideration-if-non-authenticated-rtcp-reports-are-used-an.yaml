@@ -1,0 +1,10 @@
+document: rfc-8083
+kind: security-consideration
+summary: If non-authenticated RTCP reports are used, an on-path attacker can trivially generate fake RTCP packets indicating high packet loss rates and cause the circuit breaker to trigger, disrupting an RTP session. This attack is harder for off-path attackers who must guess the RTP SSRC and sequence number. Authentication per RFC 7201 prevents this attack.
+section: "9"
+topics:
+    - rtp
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8086
+kind: design-rationale
+summary: The UDP checksum is preferred over the GRE checksum because the UDP checksum covers the pseudo-header and the full packet payload including the GRE header, making the GRE checksum mostly redundant when the UDP checksum is enabled. Enabling both may result in unnecessary processing.
+section: "3.3"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

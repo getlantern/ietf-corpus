@@ -1,0 +1,9 @@
+document: rfc-8083
+kind: design-rationale
+summary: The minimum sending rate threshold (at least one RTP packet every max(Tdr, Tr) seconds) before the congestion circuit breaker applies is included to avoid spurious triggers when few packets are sent per RTCP interval and loss fraction samples suffer measurement artifacts.
+section: "4.3"
+topics:
+    - rtp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

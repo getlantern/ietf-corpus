@@ -1,0 +1,10 @@
+document: rfc-8079
+kind: design-rationale
+summary: When a B2BUA rewrites SSRC values in RTP streams, blindly relaying RTCP messages without updating the referenced SSRCs causes recipients to receive feedback referencing unknown SSRCs, which they discard. This breaks congestion control, NACK retransmission, and other feedback mechanisms, potentially degrading or terminating the session.
+section: "1"
+topics:
+    - rtp
+    - realtime
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

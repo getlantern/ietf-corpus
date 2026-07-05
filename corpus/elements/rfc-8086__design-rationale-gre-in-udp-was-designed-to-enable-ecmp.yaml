@@ -1,0 +1,10 @@
+document: rfc-8086
+kind: design-rationale
+summary: GRE-in-UDP was designed to enable ECMP load-balancing of GRE traffic by exposing the UDP five-tuple (including source port as entropy) to transit routers' hash functions, since plain GRE traffic only contributes IP addresses and protocol number to the ECMP hash, resulting in single-path forwarding.
+section: "1"
+topics:
+    - udp
+    - ip
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

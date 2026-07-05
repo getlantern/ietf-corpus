@@ -1,0 +1,9 @@
+document: rfc-8083
+kind: design-rationale
+summary: The congestion circuit breaker threshold of 10 * X (ten times estimated TCP throughput) rather than 1 * X reflects the RTP/AVP profile's 'order of magnitude' fairness requirement; this accounts for the imprecision of using loss fraction as a proxy for loss event rate and the coarse RTCP reporting interval.
+section: "4.3"
+topics:
+    - rtp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8083
+kind: security-consideration
+summary: Timely circuit breaker operation depends on the RTCP reporting interval; a receiver configured with an overly long reporting interval (e.g., many minutes) can effectively disable the circuit breaker. Implementations MUST impose an upper limit on the RTCP reporting interval they are willing to negotiate.
+section: "9"
+topics:
+    - rtp
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

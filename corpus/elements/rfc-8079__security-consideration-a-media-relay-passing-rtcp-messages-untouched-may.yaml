@@ -1,0 +1,12 @@
+document: rfc-8079
+kind: security-consideration
+summary: A Media Relay passing RTCP messages untouched may leak internal topology information such as domain names or IP addresses embedded in CNAME items. If a NAT is involved, unmodified CNAME values containing internal IP addresses may cause CNAME collisions that break end-to-end RTCP behavior.
+section: "3.1"
+topics:
+    - rtp
+    - realtime
+    - security
+    - nat
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

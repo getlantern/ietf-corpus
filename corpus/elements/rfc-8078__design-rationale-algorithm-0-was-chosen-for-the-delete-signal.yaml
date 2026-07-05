@@ -1,0 +1,9 @@
+document: rfc-8078
+kind: design-rationale
+summary: Algorithm 0 was chosen for the delete signal because no DNSSEC validator can treat it as a valid signature algorithm; if a validator sees a DNSKEY or DS with algorithm 0, it treats it as unknown, causing the zone to be treated as unsigned.
+section: "4"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

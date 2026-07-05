@@ -1,0 +1,10 @@
+document: rfc-8083
+kind: normative-requirement
+summary: Implementations that cannot determine whether a flow restart was user-initiated or automatic MUST rate limit attempts to restart a flow on the same 5-tuple as used by a flow that triggered the circuit breaker, such that the reaction lasts for at least the triggering interval.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

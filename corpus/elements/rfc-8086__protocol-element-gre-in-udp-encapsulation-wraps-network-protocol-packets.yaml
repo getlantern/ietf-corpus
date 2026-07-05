@@ -1,0 +1,10 @@
+document: rfc-8086
+kind: protocol-element
+summary: GRE-in-UDP encapsulation wraps network protocol packets in a GRE header followed by a UDP header. The UDP source port carries a 16-bit entropy value for ECMP load-balancing, while the destination port is set to 4754 (GRE-in-UDP) or 4755 (GRE-in-UDP with DTLS).
+section: "3"
+topics:
+    - udp
+    - ip
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8079
+kind: security-consideration
+summary: When SRTP/SRTCP is in use and the B2BUA lacks access to the session keys, it cannot modify packet headers without violating the SRTP authentication tag. Only the Media Relay scenario can be properly addressed with SRTP; Media-aware Relay and Media Terminator scenarios require the B2BUA to act as a man-in-the-middle, which is unspecified and discouraged.
+section: "5"
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

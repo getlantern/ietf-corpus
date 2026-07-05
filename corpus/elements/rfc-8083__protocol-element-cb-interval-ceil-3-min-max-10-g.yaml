@@ -1,0 +1,9 @@
+document: rfc-8083
+kind: protocol-element
+summary: CB_INTERVAL = ceil(3*min(max(10*G*Tf, 10*Tr, 3*Tdr), max(15, 3*Td))/(3*Tdr)) is the number of RTCP reporting intervals over which average fraction lost is calculated for the congestion circuit breaker; it ensures at least three RTCP reports, ten RTTs, and ten frame groups for congestion control to react.
+section: "4.3"
+topics:
+    - rtp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

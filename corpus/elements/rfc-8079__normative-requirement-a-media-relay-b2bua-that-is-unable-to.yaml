@@ -1,0 +1,11 @@
+document: rfc-8079
+kind: normative-requirement
+summary: A Media Relay B2BUA that is unable to parse RTP/RTCP SHOULD reject RTP/RTCP multiplexing by removing the 'rtcp-mux' SDP attribute. If it can parse RTP/RTCP and verify no Payload Type overlap with RTCP space exists, it SHOULD negotiate RTP/RTCP multiplexing if advertised.
+section: "3.1"
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
