@@ -1,0 +1,9 @@
+document: rfc-8437
+kind: interoperability-note
+summary: Some imaps-port server implementations authenticate immediately using the TLS client certificate and signal this with a PREAUTH greeting. TLS client certificates cannot be used for administrative proxy authentication on the imaps port unless UNAUTHENTICATE is also advertised, allowing the client to issue UNAUTHENTICATE after PREAUTH before re-authenticating via AUTHENTICATE EXTERNAL.
+section: "4.2"
+topics:
+    - email
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

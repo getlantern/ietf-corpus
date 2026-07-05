@@ -1,0 +1,8 @@
+document: rfc-8440
+kind: design-rationale
+summary: Prior to this extension, clients were forced to issue LIST or LSUB commands followed by a separate MYRIGHTS command for each mailbox, wasting bandwidth and degrading performance when requests were not pipelined. Combining both into a single LIST command with a MYRIGHTS return option eliminates this round-trip overhead.
+section: "1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

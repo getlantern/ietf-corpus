@@ -1,0 +1,10 @@
+document: rfc-8441
+kind: security-consideration
+summary: 'RFC 6455''s protections against non-WebSocket clients (e.g., XMLHttpRequest) are preserved: XMLHttpRequest prohibits both the CONNECT method and Sec-prefixed headers. Additionally, HTTP/2 pseudo-headers like :protocol can never be created outside the protocol stack, preventing forgery.'
+section: "8"
+topics:
+    - websocket
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

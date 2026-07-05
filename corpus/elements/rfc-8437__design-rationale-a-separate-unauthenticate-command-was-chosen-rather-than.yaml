@@ -1,0 +1,9 @@
+document: rfc-8437
+kind: design-rationale
+summary: A separate UNAUTHENTICATE command was chosen rather than allowing LOGIN or AUTHENTICATE to be issued in non-unauthenticated states, because the code that transitions to authenticated state is the most security-sensitive code in the server — it must handle hostile attackers unconditionally — and keeping that code path simple (starting only from unauthenticated state) makes it easier to audit and implement securely.
+section: A
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

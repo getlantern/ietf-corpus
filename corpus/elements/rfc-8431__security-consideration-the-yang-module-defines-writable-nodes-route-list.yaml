@@ -1,0 +1,10 @@
+document: rfc-8431
+kind: security-consideration
+summary: The YANG module defines writable nodes (route-list, rib-list, nexthop-list and all RPC operations) that directly manipulate the routing information base; unauthorized write access could disrupt network routing, create black holes, or enable traffic interception. Access to this module must be controlled using standard NETCONF/RESTCONF access control mechanisms.
+section: "5"
+topics:
+    - yang
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

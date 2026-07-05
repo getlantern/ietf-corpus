@@ -1,0 +1,9 @@
+document: rfc-8437
+kind: normative-requirement
+summary: When a server advertises CONTEXT=SEARCH or CONTEXT=SORT (RFC 5267), the UNAUTHENTICATE command includes an implicit CANCELUPDATE for all server contexts. When NOTIFY (RFC 5465) is advertised, UNAUTHENTICATE cancels server state related to NOTIFY and reverts to default IMAP notification behavior.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

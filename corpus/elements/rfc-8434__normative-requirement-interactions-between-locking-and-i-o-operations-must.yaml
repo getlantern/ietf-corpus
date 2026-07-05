@@ -1,0 +1,9 @@
+document: rfc-8434
+kind: normative-requirement
+summary: Interactions between locking and I/O operations MUST obey existing semantic restrictions. If an I/O operation would be invalid when directed at the metadata server, it must not be allowed when performed on the storage device. For block and SCSI layouts where the storage device cannot reject the I/O, the client is responsible for enforcing this requirement.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

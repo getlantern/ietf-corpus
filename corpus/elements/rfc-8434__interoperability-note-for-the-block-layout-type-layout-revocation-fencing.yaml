@@ -1,0 +1,8 @@
+document: rfc-8434
+kind: interoperability-note
+summary: For the block layout type, layout revocation fencing can only be at the granularity of host and logical unit. If one of a client's layouts is revoked, it will effectively revoke all of the client's layouts for files on the storage units comprising the logical volume, potentially including layouts for files in other file systems. Clients must be prepared for such broad revocations and reacquire layouts as needed.
+section: "4.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

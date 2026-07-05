@@ -1,0 +1,6 @@
+document: rfc-8435
+kind: design-rationale
+summary: The flexible file layout type only supports sparse mapping (not dense mapping). With sparse mapping, the logical file offset is also the physical offset on the storage device, resulting in holes across storage devices that do not contain the current stripe index. This simplifies the layout type while supporting striping.
+section: "6"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8434
+kind: design-rationale
+summary: For the object layout type, security checks occur at layout allocation time rather than per I/O. Capabilities embedded in the layout enforce access control at storage devices. This design allows the client to perform subsequent I/O without per-operation layout lookups, while permission changes and revocations are handled by invalidating the capability version attribute on affected objects.
+section: "4.3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

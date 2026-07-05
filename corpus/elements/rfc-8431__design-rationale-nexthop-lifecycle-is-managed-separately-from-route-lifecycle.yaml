@@ -1,0 +1,9 @@
+document: rfc-8431
+kind: design-rationale
+summary: Nexthop lifecycle is managed separately from route lifecycle via dedicated nh-add/nh-delete RPCs that return a server-allocated nexthop-id. This enables nexthop sharing (sharing-flag=true) across multiple routes, reducing FIB memory when many routes share the same forwarding action.
+section: "2.5"
+topics:
+    - yang
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

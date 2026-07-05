@@ -1,0 +1,6 @@
+document: rfc-8428
+kind: interoperability-note
+summary: The cumulative Sum field may wrap to zero, reset on device power loss or replacement, or begin accumulation at an arbitrary time. Applications consuming Sum values must handle wrap-around and resets; a common heuristic is that non-negative-measurement sums should never decrease, so a decrease signals a reset event.
+section: "10"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

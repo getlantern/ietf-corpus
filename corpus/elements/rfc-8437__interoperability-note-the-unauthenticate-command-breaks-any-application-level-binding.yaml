@@ -1,0 +1,10 @@
+document: rfc-8437
+kind: interoperability-note
+summary: The UNAUTHENTICATE command breaks any application-level binding of TLS client credentials but does not discard those credentials. An administrative client may therefore use a single client certificate with administrative privilege to act on behalf of multiple IMAP users via SASL EXTERNAL across UNAUTHENTICATE calls.
+section: "4.2"
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

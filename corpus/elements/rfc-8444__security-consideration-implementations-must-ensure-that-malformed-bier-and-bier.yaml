@@ -1,0 +1,10 @@
+document: rfc-8444
+kind: security-consideration
+summary: Implementations MUST ensure that malformed BIER and BIER MPLS Encapsulation Sub-TLVs are detected and do not allow attackers to crash the OSPF router or routing process. Reception of malformed TLVs SHOULD be counted and/or logged, and such logging SHOULD be rate-limited to prevent DoS via log flooding.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

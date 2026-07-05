@@ -1,0 +1,8 @@
+document: rfc-8434
+kind: design-rationale
+summary: The block layout type shifts security enforcement from storage devices to the client because SAN disk arrays provide only coarse-grained access control (LUN mapping/masking at host and logical unit granularity), making NFSv4 file-based security inapplicable. RFC 5663 Section 2.1 specifies that in environments where pNFS clients cannot be trusted to enforce such policies, block layout types SHOULD NOT be used.
+section: "4.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

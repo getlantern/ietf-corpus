@@ -1,0 +1,7 @@
+document: rfc-8435
+kind: normative-requirement
+summary: If ffdv_tightly_coupled is not set, then the client MUST commit writes to the storage devices for the file before sending a LAYOUTCOMMIT to the metadata server — writes MUST be committed via WRITEs with stable_how == FILE_SYNC or by issuing a COMMIT after WRITEs with stable_how != FILE_SYNC.
+section: "4.1"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

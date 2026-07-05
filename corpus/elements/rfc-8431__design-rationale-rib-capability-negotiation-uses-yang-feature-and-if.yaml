@@ -1,0 +1,9 @@
+document: rfc-8431
+kind: design-rationale
+summary: RIB capability negotiation uses YANG feature and if-feature statements rather than a separate capability exchange protocol. This is necessary because not all hardware supports all nexthop types (chain, protection, replicate, load-balance, tunnel variants) or arbitrary levels of recursive lookup; advertisment at model-load time avoids runtime negotiation complexity.
+section: "2.1"
+topics:
+    - yang
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

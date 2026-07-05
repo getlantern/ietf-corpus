@@ -1,0 +1,10 @@
+document: rfc-8444
+kind: security-consideration
+summary: An attack on the OSPF control plane cannot be used to cause a BIER BitString DoS attack (setting too many bits), because the BFIR decides which bits to set independently of OSPF control messages; OSPF BIER advertisements are only used to build forwarding tables, not to influence encapsulation decisions.
+section: "3"
+topics:
+    - security
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

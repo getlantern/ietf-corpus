@@ -1,0 +1,10 @@
+document: rfc-8437
+kind: security-consideration
+summary: In two-tier IMAP proxy deployments, UNAUTHENTICATE could allow a client to bypass security restrictions present in the proxy layer but absent in the backend. Server implementations of this extension MUST provide a way to disable it when not needed; alternatively, the proxy itself can process the UNAUTHENTICATE command, or servers can restrict the extension to administrative identities.
+section: "8"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

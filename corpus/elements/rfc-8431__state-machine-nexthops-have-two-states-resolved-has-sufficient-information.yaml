@@ -1,0 +1,9 @@
+document: rfc-8431
+kind: state-machine
+summary: 'Nexthops have two states: resolved (has sufficient information to forward on an interface to a directly connected neighbor) and unresolved (requires the RIB manager to determine the final resolved nexthop, e.g., by IP lookup or MPLS tunnel). Unresolved nexthops are NOT eligible for FIB installation. State changes trigger nexthop-resolution-status-change notifications.'
+section: "2.6"
+topics:
+    - yang
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

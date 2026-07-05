@@ -1,0 +1,8 @@
+document: rfc-8435
+kind: security-consideration
+summary: The metadata server enforces access control at LAYOUTGET time, verifying permissions and ACL. When file permissions or ACL change, the MDS SHOULD recall all layouts and MUST fence off clients still holding layouts by invalidating their distributed credentials before committing to new permissions. Clients must re-authenticate via new LAYOUTGET.
+section: "15"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

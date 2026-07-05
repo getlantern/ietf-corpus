@@ -1,0 +1,10 @@
+document: rfc-8437
+kind: normative-requirement
+summary: Upon UNAUTHENTICATE, if a mailbox was selected it ceases to be selected without generating an expunge event. If a SASL security layer was active, the server terminates its outgoing security layer immediately after sending the CRLF following the OK response; the client terminates its outgoing security layer immediately after the CRLF following the UNAUTHENTICATE command.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

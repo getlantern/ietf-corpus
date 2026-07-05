@@ -1,0 +1,9 @@
+document: rfc-8428
+kind: design-rationale
+summary: 'Separate SenML (non-streaming) and SenSML (streaming) media types are defined because they are fundamentally different data formats: non-streaming implementations wait for an end-of-pack marker before processing, while streaming implementations cannot wait for such a marker. Separate negotiation is therefore required.'
+section: "12.3"
+topics:
+    - json
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

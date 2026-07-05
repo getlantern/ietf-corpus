@@ -1,0 +1,10 @@
+document: rfc-8431
+kind: normative-requirement
+summary: For nexthop-load-balance, each list member SHOULD be assigned a weight (uint8, 1..99). The weight 0 is reserved for equal load-balancing (ECMP) and, if applied, MUST be applied to all member nexthops; mixing weight 0 with non-zero weights is not permitted.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - yang
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8437
+kind: normative-requirement
+summary: If no SASL security layer is active, the client is permitted to pipeline the UNAUTHENTICATE command with a subsequent AUTHENTICATE command, enabling re-authentication in one round trip when SASL-IR is also advertised. A server advertising UNAUTHENTICATE is not permitted to respond with NO when it cannot reset state.
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

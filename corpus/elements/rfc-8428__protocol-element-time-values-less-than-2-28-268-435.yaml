@@ -1,0 +1,9 @@
+document: rfc-8428
+kind: protocol-element
+summary: Time values less than 2**28 (268,435,456) represent seconds relative to 'now'; values greater than or equal to 2**28 represent absolute seconds since the Unix epoch (1970-01-01T00:00Z). Base Time and Time fields are summed; care must be taken that relative times do not inadvertently cross the 2**28 boundary.
+section: 4.5.3
+topics:
+    - json
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
