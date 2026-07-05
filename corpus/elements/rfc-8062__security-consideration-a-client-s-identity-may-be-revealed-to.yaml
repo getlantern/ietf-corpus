@@ -1,0 +1,10 @@
+document: rfc-8062
+kind: security-consideration
+summary: A client's identity may be revealed to the KDC of the server principal (when in a different realm) and to any KDC on the cross-realm authentication path, even when using anonymous tickets. The Kerberos client MUST verify the ticket is anonymous before communicating with the server.
+section: "8"
+rfc2119_level: MUST
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8070
+kind: normative-requirement
+summary: If the freshness token present in PA_PK_AS_REQ is not valid, the KDC MUST return a KRB_ERROR with error-code KDC_ERR_PREAUTH_EXPIRED (RFC 6113), and the e-data field MUST contain a METHOD-DATA object specifying a valid PA_AS_FRESHNESS padata-value.
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

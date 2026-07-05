@@ -1,0 +1,10 @@
+document: rfc-8071
+kind: normative-requirement
+summary: 'If a persistent connection is desired, the NETCONF/RESTCONF server SHOULD actively test connection aliveness using keep-alives: HeartbeatRequest messages (RFC 6520) for TLS connections, or SSH_MSG_GLOBAL_REQUEST with a nonexistent request name and ''want reply'' set to 1 for SSH connections.'
+section: "4.1"
+rfc2119_level: SHOULD
+topics:
+    - netconf
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,12 @@
+document: rfc-8071
+kind: normative-requirement
+summary: The NETCONF/RESTCONF client MUST validate the server's presented host key or certificate, either by certificate path validation or by comparing to a previously trusted/pinned value. If a certificate is presented with revocation-checking information, the client SHOULD check revocation status; if revoked, the client MUST immediately close the connection.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - netconf
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

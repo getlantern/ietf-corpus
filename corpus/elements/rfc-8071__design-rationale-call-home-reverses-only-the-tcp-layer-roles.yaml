@@ -1,0 +1,9 @@
+document: rfc-8071
+kind: design-rationale
+summary: 'Call home reverses only the TCP layer roles: the NETCONF/RESTCONF server initiates the TCP connection, but retains its SSH/TLS server role and NETCONF/RESTCONF server role. This preserves existing certificate chains and user authentication mechanisms so deployed management infrastructure can support call home without changes.'
+section: "1"
+topics:
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

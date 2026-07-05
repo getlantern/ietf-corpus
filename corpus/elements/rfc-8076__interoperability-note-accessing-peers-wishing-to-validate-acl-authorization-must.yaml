@@ -1,0 +1,7 @@
+document: rfc-8076
+kind: interoperability-note
+summary: Accessing peers wishing to validate ACL authorization must first send a Stat request to obtain all array indexes of stored ACL Kinds, then fetch all existing ACL items; cached ACLs may be used up to item maximum lifetime, but a Stat request SHOULD be used to check for updates before using cached data.
+section: "6.5"
+rfc2119_level: SHOULD
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

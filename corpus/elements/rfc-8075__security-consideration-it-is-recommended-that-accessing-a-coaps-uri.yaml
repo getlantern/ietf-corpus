@@ -1,0 +1,11 @@
+document: rfc-8075
+kind: security-consideration
+summary: It is RECOMMENDED that accessing a 'coaps' URI be allowed only from a corresponding 'https' URI by default. An HC Proxy SHOULD reject any secured CoAP client request lacking a configured security policy mapping; however, this MAY be relaxed when the destination network is secured by other means (e.g., isolated behind a firewall).
+section: "10.3"
+rfc2119_level: RECOMMENDED
+topics:
+    - tls
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

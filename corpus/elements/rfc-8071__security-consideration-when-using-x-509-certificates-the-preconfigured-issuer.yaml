@@ -1,0 +1,10 @@
+document: rfc-8071
+kind: security-consideration
+summary: When using X.509 certificates, the preconfigured issuer certificate used for path validation SHOULD be unique to the server's manufacturer and not belong to a third-party CA that could issue certificates for multiple manufacturers, to prevent credential leakage to a rogue server with a matching identity (e.g., same serial number).
+section: "5"
+topics:
+    - netconf
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

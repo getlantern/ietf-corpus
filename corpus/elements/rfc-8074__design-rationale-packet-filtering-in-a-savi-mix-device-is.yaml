@@ -1,0 +1,10 @@
+document: rfc-8074
+kind: design-rationale
+summary: Packet filtering in a SAVI-MIX device is not performed by each SAVI method separately; instead, all individual SAVI methods submit candidate bindings to SAVI-MIX, and the combined table drives filtering. This avoids one method incorrectly dropping addresses discovered by another.
+section: "4"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

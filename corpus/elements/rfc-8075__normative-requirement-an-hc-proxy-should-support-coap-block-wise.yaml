@@ -1,0 +1,9 @@
+document: rfc-8075
+kind: normative-requirement
+summary: An HC Proxy SHOULD support CoAP block-wise transfers (RFC 7959) to handle large payloads and constrained datagram buffers. It SHOULD retry a PUT or POST with block-wise transfer if the CoAP server responds with 4.13 (Request Entity Too Large), and SHOULD proactively use block-wise when request size exceeds BLOCKWISE_THRESHOLD.
+section: "8.3"
+rfc2119_level: SHOULD
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

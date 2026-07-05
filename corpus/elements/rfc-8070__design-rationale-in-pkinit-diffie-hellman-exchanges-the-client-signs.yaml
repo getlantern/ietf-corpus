@@ -1,0 +1,9 @@
+document: rfc-8070
+kind: design-rationale
+summary: In PKINIT Diffie-Hellman exchanges, the client signs the AuthPack before any traffic is sent to the KDC, making it possible to pre-generate requests with future timestamps and send them later without possessing the private key at that time. This means DH-based PKINIT proves only prior use of the private key, not current possession.
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

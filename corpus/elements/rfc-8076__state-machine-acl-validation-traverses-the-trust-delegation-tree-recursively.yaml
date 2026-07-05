@@ -1,0 +1,8 @@
+document: rfc-8076
+kind: state-machine
+summary: 'ACL validation traverses the trust delegation tree recursively: (1) obtain the signer''s username from the Shared Resource write request, (2) find a matching ''to_user'' in the ACL, (3) check the signing certificate of that ACL item, (4) repeat up the chain until reaching a root item signed by the Resource Owner. The chain is valid only if all steps succeed.'
+section: "6.3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

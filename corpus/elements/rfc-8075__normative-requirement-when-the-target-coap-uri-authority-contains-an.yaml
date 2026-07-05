@@ -1,0 +1,10 @@
+document: rfc-8075
+kind: normative-requirement
+summary: When the Target CoAP URI authority contains an IPv6address, the surrounding square brackets MUST be percent-encoded in the Hosting HTTP URI path segment (e.g., coap://[2001:db8::1]/light becomes coap://%5B2001:db8::1%5D/light), and MUST be reverted when the HC Proxy unpacks the Target CoAP URI.
+section: 5.3.2
+rfc2119_level: MUST
+topics:
+    - http
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8071
+kind: security-consideration
+summary: An attacker can launch a DoS attack on the call home client by triggering computationally expensive operations (e.g., TLS 1.3 KeyShare asymmetric operations) before being rejected. Mitigations such as temporarily blacklisting source addresses after repeated failed login attempts are recommended.
+section: "5"
+topics:
+    - netconf
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

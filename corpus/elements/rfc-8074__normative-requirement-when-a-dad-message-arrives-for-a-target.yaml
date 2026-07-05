@@ -1,0 +1,11 @@
+document: rfc-8074
+kind: normative-requirement
+summary: When a DAD message arrives for a target matching a configured preference entry but with a different anchor, the switch SHOULD defend the address by sending a Neighbor Advertisement on behalf of the target node, SHOULD NOT install the entry into the binding table, and SHOULD discard (not forward) the DAD message.
+section: 6.1.2.2
+rfc2119_level: SHOULD
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

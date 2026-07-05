@@ -1,0 +1,10 @@
+document: rfc-8071
+kind: security-consideration
+summary: The TCP role reversal (SSH/TLS server initiating the TCP connection) is incongruous with RFC 4253 and RFC 6125, which assume client-initiated connections. The mitigations are mandatory server authentication via certificate path validation or pinning, and requiring the client to match an identifier in the certificate to a preconfigured expected identifier.
+section: "5"
+topics:
+    - netconf
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8062
+kind: design-rationale
+summary: 'The KDC contribution key mechanism (PA_PKINIT_KX) prevents a man-in-the-middle attacker from intercepting an anonymous PKINIT exchange: without it, an MITM could perform separate DH exchanges with both client and KDC, decrypt the session key, and relay the ticket while keeping a copy. Binding the ticket session key to a KDC-generated key encrypted under the DH reply key forces the session key to be verifiable by the client.'
+section: "7"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

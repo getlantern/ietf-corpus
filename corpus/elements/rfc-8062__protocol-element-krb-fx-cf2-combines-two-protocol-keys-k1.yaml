@@ -1,0 +1,9 @@
+document: rfc-8062
+kind: protocol-element
+summary: KRB-FX-CF2 combines two protocol keys K1 and K2 using PRF+(K1, pepper1) XOR PRF+(K2, pepper2), then applies random-to-key(). For anonymous PKINIT, K1 is the KDC contribution key, K2 is the reply key, pepper1 is 'PKINIT', and pepper2 is 'KEYEXCHANGE'.
+section: "7.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

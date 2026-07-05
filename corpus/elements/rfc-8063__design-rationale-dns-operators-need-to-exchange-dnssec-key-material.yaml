@@ -1,0 +1,10 @@
+document: rfc-8063
+kind: design-rationale
+summary: DNS operators need to exchange DNSSEC key material before a domain transfer to keep the DNSSEC chain of trust intact, but often no direct trusted path exists between the gaining and losing DNS operators. The registry acts as a relay channel via EPP, allowing both parties to securely interact through the administrative channel. The registry is merely a relay; it is up to the losing DNS operator to complete the transaction.
+section: "1.2"
+topics:
+    - dns
+    - security
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

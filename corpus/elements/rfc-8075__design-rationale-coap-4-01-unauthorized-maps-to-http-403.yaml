@@ -1,0 +1,9 @@
+document: rfc-8075
+kind: design-rationale
+summary: CoAP 4.01 (Unauthorized) maps to HTTP 403 (Forbidden) rather than HTTP 401 (Unauthorized) because HTTP 401 mandates a WWW-Authenticate header field, which has no equivalent in CoAP, making a semantically correct 401 response impossible to construct.
+section: "7"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

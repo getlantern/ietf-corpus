@@ -1,0 +1,10 @@
+document: rfc-8072
+kind: normative-requirement
+summary: Each edit within a YANG Patch MUST identify exactly one data resource instance. If an edit represents more than one resource instance or does not identify any existing instance (and the operation is not 'create'), the request MUST NOT be processed; a 'yang-patch-status' response MUST be sent identifying the invalid edits.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8062
+kind: normative-requirement
+summary: When an anonymous ticket is returned by the TGS, if an authorization data element of unknown type has no defined processing rule, the authentication MUST be rejected with KDC_ERR_POLICY. If an element would reveal the client's identity but is needed to restrict ticket use, the TGS MUST also reject with KDC_ERR_POLICY.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

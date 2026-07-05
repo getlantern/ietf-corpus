@@ -1,0 +1,8 @@
+document: rfc-8066
+kind: design-rationale
+summary: Multiple ESC dispatch types MAY appear in a 6LoWPAN header, though this is not desirable. Placing an EET toward the front of the packet increases the probability of the packet being dropped by legacy devices that don't understand it; placing it later allows legacy devices to process recognized dispatch types before encountering the unknown EET.
+section: "3.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8070
+kind: state-machine
+summary: 'The protocol follows a five-step flow: (1) client sends KRB_AS_REQ with PA_AS_FRESHNESS but no PA_PK_AS_REQ; (2) KDC returns KRB_ERROR with freshness token; (3) client sends KRB_AS_REQ with the freshness token embedded in the signed PKAuthenticator; (4) KDC validates the request and freshness token; (5) KDC and client continue per RFC 4120/4556.'
+section: "2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

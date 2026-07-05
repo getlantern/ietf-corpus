@@ -1,0 +1,9 @@
+document: rfc-8072
+kind: design-rationale
+summary: Edits within a YANG Patch are conceptually applied in sequence to a copy of the target datastore, validated after all edits succeed, and only then committed. This all-or-nothing transactional model avoids partial state corruption and enables precise error reporting per edit.
+section: "3"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

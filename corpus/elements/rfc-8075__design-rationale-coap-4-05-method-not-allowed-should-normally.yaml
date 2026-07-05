@@ -1,0 +1,8 @@
+document: rfc-8075
+kind: design-rationale
+summary: CoAP 4.05 (Method Not Allowed) SHOULD normally map to HTTP 400 rather than HTTP 405 because HTTP 405 requires listing allowed methods in an 'Allow' header, and CoAP servers generally do not convey that information. HTTP 405 MAY be used only when the HC Proxy has explicit knowledge of the allowed methods (e.g., from a Resource Directory).
+section: "7"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
