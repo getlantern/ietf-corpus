@@ -1,0 +1,9 @@
+document: rfc-8490
+kind: normative-requirement
+summary: Upon receipt of a DSO Retry Delay message, the client MUST note the reconnect delay and immediately close the connection gracefully. When reconnecting to the same service instance, the client MUST respect the indicated delay before attempting to reconnect; clients SHOULD NOT randomize the delay, as the server handles jitter.
+section: 6.6.3
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

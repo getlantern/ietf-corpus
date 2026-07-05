@@ -1,0 +1,11 @@
+document: rfc-8489
+kind: normative-requirement
+summary: Over UDP or DTLS-over-UDP, a client SHOULD retransmit STUN requests starting with an RTO of at least 500 ms, doubling after each retransmission. The retransmit count Rc SHOULD default to 7; the client SHOULD consider the transaction failed after Rm (default 16) times the RTO without a response. STUN indications over UDP are not retransmitted.
+section: 6.2.1
+rfc2119_level: SHOULD
+topics:
+    - nat
+    - udp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

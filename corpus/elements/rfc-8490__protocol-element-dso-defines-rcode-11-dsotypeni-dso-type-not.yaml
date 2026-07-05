@@ -1,0 +1,8 @@
+document: rfc-8490
+kind: protocol-element
+summary: DSO defines RCODE 11 (DSOTYPENI, 'DSO-TYPE Not Implemented') to indicate that the server supports DSO but does not implement the DSO-TYPE of the Primary TLV in the request. This is distinct from NOTIMP (4), which signals that the server does not implement DSO at all. A server MUST NOT return DSOTYPENI for a DSO Keepalive request, as the Keepalive TLV is mandatory.
+section: 5.1.1
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

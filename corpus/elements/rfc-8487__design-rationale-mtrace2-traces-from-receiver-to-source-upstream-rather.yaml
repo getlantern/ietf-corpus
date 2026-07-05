@@ -1,0 +1,9 @@
+document: rfc-8487
+kind: design-rationale
+summary: Mtrace2 traces from receiver to source (upstream) rather than source to receiver (downstream) because walking up the tree is easy — most multicast routing protocols know the upstream router for each source — while tracing downstream is difficult due to the lack of an efficient, deterministic way to identify which branch a receiver lies on.
+section: "1"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

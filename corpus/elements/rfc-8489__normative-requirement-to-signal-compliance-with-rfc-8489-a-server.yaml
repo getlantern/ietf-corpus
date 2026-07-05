@@ -1,0 +1,10 @@
+document: rfc-8489
+kind: normative-requirement
+summary: To signal compliance with RFC 8489, a server MUST prepend the NONCE attribute value with the 13-character 'nonce cookie' ('obMatJos2' concatenated with a 4-character base64 encoding of the 24-bit STUN Security Features). This enables detection of bid-down attacks on new security features.
+section: "9.2"
+rfc2119_level: MUST
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

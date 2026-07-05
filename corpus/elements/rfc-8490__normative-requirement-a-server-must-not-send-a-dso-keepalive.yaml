@@ -1,0 +1,9 @@
+document: rfc-8490
+kind: normative-requirement
+summary: A server MUST NOT send a DSO Keepalive message with a keepalive interval value less than ten seconds. If a client receives a DSO Keepalive specifying a keepalive interval less than ten seconds, this is a fatal error and the client MUST forcibly abort the connection immediately.
+section: 6.5.2
+rfc2119_level: MUST NOT
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

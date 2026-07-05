@@ -1,0 +1,8 @@
+document: rfc-8490
+kind: design-rationale
+summary: DSO uses a TLV-based format appended to a bare DNS header rather than an RR-based format, specifically to avoid conflating stateful operations with normal DNS or EDNS(0) functionality and to avoid the middlebox-incompatibility problems that have affected EDNS(0). The format is more explicit and compact, with no redundant or overloaded fields.
+section: "1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

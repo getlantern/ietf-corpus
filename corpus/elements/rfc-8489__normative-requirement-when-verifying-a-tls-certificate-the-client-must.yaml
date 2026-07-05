@@ -1,0 +1,12 @@
+document: rfc-8489
+kind: normative-requirement
+summary: When verifying a TLS certificate, the client MUST verify certificate validity and identity per RFC 6125, accepting identifiers of type DNS-ID or CN-ID (optionally with wildcards) but not SRV-ID or URI-ID. The client MUST NOT send the STUN message if the certificate is invalid, revoked, or identifies the wrong party.
+section: 6.2.3
+rfc2119_level: MUST
+topics:
+    - tls
+    - pkix
+    - security
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

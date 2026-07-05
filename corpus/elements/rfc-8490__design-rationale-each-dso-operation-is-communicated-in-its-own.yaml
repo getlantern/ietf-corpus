@@ -1,0 +1,8 @@
+document: rfc-8490
+kind: design-rationale
+summary: Each DSO operation is communicated in its own separate DNS message rather than packing multiple operations into a single message. Because DSO always uses connection-oriented transport, TCP handles batching; this yields per-operation success/failure semantics via a clear RCODE in each response, avoiding the ambiguity of EDNS(0) where there is no mechanism to acknowledge individual options within a combined OPT RR.
+section: "1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

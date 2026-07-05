@@ -1,0 +1,11 @@
+document: rfc-8502
+kind: security-consideration
+summary: The MIB modules define no read-write or read-create objects, so direct SNMP SET attacks cannot alter or create management objects. However, read access to l2L3VpnMcastPmsiTunnelAttributeTable reveals P-tunnel topology information including identifiers composed of source and multicast group IP addresses, and pointers to configuration/performance tables; these should be considered sensitive and access-controlled.
+section: "5"
+topics:
+    - security
+    - snmp
+    - multicast
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

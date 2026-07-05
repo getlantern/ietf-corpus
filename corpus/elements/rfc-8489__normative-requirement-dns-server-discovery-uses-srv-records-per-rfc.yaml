@@ -1,0 +1,11 @@
+document: rfc-8489
+kind: normative-requirement
+summary: DNS server discovery uses SRV records per RFC 2782. The default port for STUN over UDP and TCP is 3478; the default port for STUN over TLS and DTLS is 5349. A 'stuns' URI containing an IP address MUST be rejected. Dual-stack clients MUST query both A and AAAA records and try all received addresses.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - nat
+    - dns
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

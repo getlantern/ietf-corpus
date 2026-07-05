@@ -1,0 +1,9 @@
+document: rfc-8489
+kind: design-rationale
+summary: The STUN nonce cookie bid-down prevention mechanism was added because the new password algorithm selection and username anonymity features are optional and backwards-compatible, making them vulnerable to an on-path attacker stripping the capabilities. The nonce cookie encodes which features are active, allowing the client to detect tampering.
+section: 9.2.1
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

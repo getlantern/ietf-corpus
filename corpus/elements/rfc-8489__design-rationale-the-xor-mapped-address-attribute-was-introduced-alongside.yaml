@@ -1,0 +1,8 @@
+document: rfc-8489
+kind: design-rationale
+summary: The XOR-MAPPED-ADDRESS attribute was introduced alongside MAPPED-ADDRESS to defeat NAT Application Layer Gateways (ALGs) that rewrite IP addresses found in packet payloads. XOR-encoding the address with the magic cookie and transaction ID obscures the address from ALGs that scan for recognizable IP address patterns.
+section: "14.2"
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

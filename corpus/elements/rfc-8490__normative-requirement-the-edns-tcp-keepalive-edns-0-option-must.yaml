@@ -1,0 +1,9 @@
+document: rfc-8490
+kind: normative-requirement
+summary: The edns-tcp-keepalive EDNS(0) Option MUST NOT be used in any messages sent on a DSO Session. If a message on a DSO Session contains this option, it is a fatal error and the recipient MUST forcibly abort the connection immediately, because DSO's Keepalive TLV supersedes this option.
+section: 5.4.6
+rfc2119_level: MUST NOT
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

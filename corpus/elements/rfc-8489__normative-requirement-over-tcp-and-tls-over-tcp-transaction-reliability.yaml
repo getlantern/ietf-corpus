@@ -1,0 +1,11 @@
+document: rfc-8489
+kind: normative-requirement
+summary: Over TCP and TLS-over-TCP, transaction reliability is provided by TCP itself with no STUN-level retransmissions. If no response is received within Ti (default 39.5 s), the transaction is considered timed out. A server MUST NOT open a connection back to the client to send a response.
+section: 6.2.2
+rfc2119_level: MUST
+topics:
+    - nat
+    - tcp
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

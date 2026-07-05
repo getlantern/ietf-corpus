@@ -1,0 +1,9 @@
+document: rfc-8490
+kind: normative-requirement
+summary: After sending a DSO Retry Delay message, the server MUST NOT send any further messages on that DSO Session and MUST silently ignore any incoming requests. The server SHOULD allow the client five seconds to close gracefully before forcibly aborting.
+section: 6.6.1
+rfc2119_level: MUST NOT
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

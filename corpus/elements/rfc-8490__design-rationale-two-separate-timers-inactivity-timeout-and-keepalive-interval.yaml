@@ -1,0 +1,9 @@
+document: rfc-8490
+kind: design-rationale
+summary: 'Two separate timers—inactivity timeout and keepalive interval—serve distinct purposes: the inactivity timeout governs speculative idle sessions, while the keepalive interval ensures sufficient traffic to maintain NAT/firewall state. A session with an active long-lived operation (e.g., a Push Notification subscription) is not considered inactive even with no messages flowing, which is why the two timers are independent.'
+section: "6.2"
+topics:
+    - dns
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

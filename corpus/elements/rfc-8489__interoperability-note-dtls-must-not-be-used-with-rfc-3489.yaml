@@ -1,0 +1,9 @@
+document: rfc-8489
+kind: interoperability-note
+summary: 'DTLS MUST NOT be used with RFC 3489 (classic STUN). Any STUN request or indication without the magic cookie received over DTLS MUST be considered invalid: requests generate a 500 (Server Error) response and indications are discarded.'
+section: "11"
+topics:
+    - nat
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

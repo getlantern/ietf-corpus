@@ -1,0 +1,9 @@
+document: rfc-8487
+kind: wire-format
+summary: The Mtrace2 Extended Query Block (Type 0x06) carries a 7-bit MBZ field, a 1-bit T-bit (Transitive Attribute), a 16-bit Extended Query Type, and a 16-bit Value. If the T-bit is set and the type is unrecognized, the router MUST forward the TLV; if clear, the router MUST send a Reply with UNKNOWN_QUERY error.
+section: 3.2.7
+rfc2119_level: MUST
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

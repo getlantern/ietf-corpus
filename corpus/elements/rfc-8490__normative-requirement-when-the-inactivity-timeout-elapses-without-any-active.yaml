@@ -1,0 +1,9 @@
+document: rfc-8490
+kind: normative-requirement
+summary: When the inactivity timeout elapses without any active operation on the DSO Session, the client MUST begin closing the idle connection gracefully. The server MUST consider the client delinquent and MUST forcibly abort the session if the idle period exceeds five seconds or twice the current inactivity timeout value, whichever is greater.
+section: 6.4.1
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

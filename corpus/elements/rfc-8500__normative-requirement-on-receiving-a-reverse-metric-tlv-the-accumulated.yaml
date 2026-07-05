@@ -1,0 +1,9 @@
+document: rfc-8500
+kind: normative-requirement
+summary: On receiving a Reverse Metric TLV, the accumulated value of the configured metric plus the reverse-metric offset MUST be limited to 63 in narrow metric mode and to (2^24 - 2) in wide metric mode. If the U bit is set, the limit is (2^24 - 1) for both normal and TE metrics.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8487
+kind: security-consideration
+summary: Mtrace2 is susceptible to amplification attacks because a single Query produces larger Request and Reply messages. Mitigation requires restricting permitted source addresses (Section 9.2) and, for PIM routers, dropping any Request or Reply from an IP address that does not correspond to an authenticated PIM neighbor.
+section: 9.7.2
+topics:
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

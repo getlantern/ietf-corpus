@@ -1,0 +1,11 @@
+document: rfc-8490
+kind: normative-requirement
+summary: Servers MUST NOT enable TCP Fast Open (TFO) when listening for connections that do not require TLS, because the early-data restrictions for DSO (which prohibit certain Primary TLVs and all unidirectional messages from appearing in early data) cannot be enforced on non-TLS connections.
+section: "5.1"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - tls
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

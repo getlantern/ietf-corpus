@@ -1,0 +1,8 @@
+document: rfc-8490
+kind: wire-format
+summary: A DSO message begins with the standard 12-byte DNS header with OPCODE=6; the four count fields (QDCOUNT, ANCOUNT, NSCOUNT, ARCOUNT) are all set to zero and their corresponding sections are absent. DSO Data expressed in TLV syntax immediately follows the header. As in DNS-over-TCP, a 16-bit length prefix frames each message.
+section: "5.4"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

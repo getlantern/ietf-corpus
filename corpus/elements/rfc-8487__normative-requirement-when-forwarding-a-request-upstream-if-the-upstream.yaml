@@ -1,0 +1,10 @@
+document: rfc-8487
+kind: normative-requirement
+summary: When forwarding a Request upstream, if the upstream router is unknown, the Request MUST be sent to a link-scoped multicast address (224.0.0.0/24 for IPv4, FF02::/16 for IPv6) and MUST NOT be sent to the all-systems group (224.0.0.1) or All Nodes Address (FF02::1).
+section: 4.3.1
+rfc2119_level: MUST
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
