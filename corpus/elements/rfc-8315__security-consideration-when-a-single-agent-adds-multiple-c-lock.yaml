@@ -1,0 +1,9 @@
+document: rfc-8315
+kind: security-consideration
+summary: When a single agent adds multiple <c-lock> elements with different <scheme> values using the same K, a preimage attack on the weaker scheme may be easier because the attacker knows multiple hash outputs correspond to identical input. Agents MUST use distinct K values for each c-lock element to prevent this.
+section: "7"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

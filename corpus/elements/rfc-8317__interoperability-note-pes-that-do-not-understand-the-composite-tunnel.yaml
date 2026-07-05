@@ -1,0 +1,10 @@
+document: rfc-8317
+kind: interoperability-note
+summary: PEs that do not understand the composite tunnel bit in the PMSI Tunnel Attribute Tunnel Type field will treat the resulting value as an undefined Tunnel Type and process the attribute as malformed per RFC 6514. This backward-compatible degradation is intentional and is why the bit is placed in Tunnel Type rather than the Flags field.
+section: "6.2"
+topics:
+    - routing
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8315
+kind: wire-format
+summary: 'The Cancel-Lock body uses ABNF: c-lock-list = [CFWS] c-lock *(CFWS c-lock) [CFWS]; c-lock = scheme ":" c-lock-string; c-lock-string = *(4base64-char) [base64-terminal]. The c-lock-string field encodes the Base64-encoded output of hash(Base64(K)), where K is the secret key.'
+section: "2.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

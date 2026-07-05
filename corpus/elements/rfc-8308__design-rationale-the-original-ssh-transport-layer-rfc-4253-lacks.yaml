@@ -1,0 +1,9 @@
+document: rfc-8308
+kind: design-rationale
+summary: The original SSH transport layer (RFC 4253) lacks proper extension negotiation, and diverse implementations discard unrecognized information, making it risky to signal capabilities without risking disconnection. This mechanism was motivated by the need for clients to discover which public key algorithms a server accepts (e.g., for RSA-SHA-256/512 per RFC 8332) without trial-and-error and associated authentication penalties.
+section: "1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

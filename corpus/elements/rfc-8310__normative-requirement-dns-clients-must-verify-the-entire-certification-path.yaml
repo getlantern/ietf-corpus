@@ -1,0 +1,12 @@
+document: rfc-8310
+kind: normative-requirement
+summary: DNS clients MUST verify the entire certification path per RFC 5280 when a server presents a PKIX certificate, and MUST only inspect the certificate's subjectAltName extension for the reference identifier — they MUST NOT inspect the Subject field itself.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8317
+kind: design-rationale
+summary: The composite tunnel bit is placed in the Tunnel Type field rather than the Flags field so that PEs that do not understand the new meaning treat the Tunnel Type as an undefined type and handle the PMSI Tunnel attribute as malformed per RFC 6514, ensuring backward-compatible behavior.
+section: "6.2"
+topics:
+    - routing
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

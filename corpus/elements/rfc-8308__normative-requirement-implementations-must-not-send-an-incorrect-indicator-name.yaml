@@ -1,0 +1,10 @@
+document: rfc-8308
+kind: normative-requirement
+summary: Implementations MUST NOT send an incorrect indicator name for their role (i.e., a server must not send 'ext-info-c' and vice versa). Implementations MAY disconnect if the counterparty sends an incorrect indicator. If 'ext-info-c' or 'ext-info-s' is actually negotiated as a key exchange method, the parties MUST disconnect.
+section: "2.2"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

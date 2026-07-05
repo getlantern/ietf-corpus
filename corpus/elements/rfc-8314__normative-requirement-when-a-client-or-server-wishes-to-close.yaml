@@ -1,0 +1,10 @@
+document: rfc-8314
+kind: normative-requirement
+summary: When a client or server wishes to close a POP, IMAP, or SMTP Submission connection, it SHOULD initiate the exchange of TLS close alerts before TCP connection termination. The client MAY send a TLS close alert and then close the TCP connection without waiting for a TLS response.
+section: "3.4"
+rfc2119_level: SHOULD
+topics:
+    - tls
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8320
+kind: normative-requirement
+summary: A red proxy-node attachment router for a given prefix MUST originate a label mapping for the red FEC for that prefix; a blue proxy-node attachment router MUST originate a label mapping for the blue FEC. If the proxy-node attachment router is an IBR, it MUST forward packets with the red(blue) FEC label to the Island Neighbor and MUST swap the incoming label for the outgoing label corresponding to the shortest-path FEC; if the IN does not support LDP, the IBR MUST pop the incoming label.
+section: 5.1.2
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

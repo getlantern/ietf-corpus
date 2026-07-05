@@ -1,0 +1,10 @@
+document: rfc-8306
+kind: security-consideration
+summary: P2MP path computation requests are more CPU-intensive and consume more link bandwidth than P2P requests. Unauthorized requests or DoS attacks can be disruptive; securing and authenticating PCEP sessions using TCP-AO (RFC 5925) or TLS (RFC 8253) is RECOMMENDED, and implementations SHOULD support TCP-AO rather than TCP MD5 due to TCP MD5's known vulnerabilities.
+section: "5"
+topics:
+    - security
+    - tls
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

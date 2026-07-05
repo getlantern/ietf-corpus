@@ -1,0 +1,9 @@
+document: rfc-8308
+kind: protocol-element
+summary: The 'no-flow-control' extension, sent by either party with a value of 'p' (preferred) or 's' (supported), disables SSH channel flow control when both parties send it and at least one sends 'p'. When in effect, initial window size fields become meaningless, SSH_MSG_CHANNEL_WINDOW_ADJUST messages MUST be ignored, and channels behave as if all window sizes are infinite.
+section: "3.3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

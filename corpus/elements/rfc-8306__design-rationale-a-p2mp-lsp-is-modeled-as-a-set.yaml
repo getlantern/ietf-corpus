@@ -1,0 +1,9 @@
+document: rfc-8306
+kind: design-rationale
+summary: A P2MP LSP is modeled as a set of source-to-leaf (S2L) sub-LSPs. The protocol deliberately allows a PCC to request computation of the entire P2MP tree in one message or split the request across multiple messages per sub-LSP, giving the PCC flexibility to decide whether to signal individual S2L sub-LSPs or combine results into a full P2MP LSP signal.
+section: "1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8306
+kind: normative-requirement
+summary: When a P2MP request or response exceeds the PCEP message size limit, it MUST be split across multiple messages all carrying the same request ID; every fragment except the last MUST set the F-bit in the RP object. If the last fragment is not received, the PCE MUST send PCErr Error-Type=18, Error-value=1 (Fragmented request failure).
+section: "3.13"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

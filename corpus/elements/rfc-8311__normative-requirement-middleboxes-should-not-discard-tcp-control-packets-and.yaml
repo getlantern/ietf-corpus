@@ -1,0 +1,12 @@
+document: rfc-8311
+kind: normative-requirement
+summary: Middleboxes SHOULD NOT discard TCP control packets and retransmitted TCP packets solely because the ECN field does not contain Not-ECT. An exception applies when responding to an attack using ECN codepoints other than Not-ECT; any such exceptional discarding MUST NOT be done routinely and SHOULD only be done if ECN is determined to be contributing to the attack.
+section: "4.3"
+rfc2119_level: SHOULD NOT
+topics:
+    - ecn
+    - tcp
+    - congestion
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

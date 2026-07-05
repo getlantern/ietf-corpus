@@ -1,0 +1,9 @@
+document: rfc-8320
+kind: design-rationale
+summary: MRT-related LDP advertisements do not affect the MRT topology or MRT-Red/Blue next-hop computations; those rely solely on IGP advertisements. Missing LDP label exchanges on a link only produce missing MPLS forwarding entries, analogous to how normal LDP advertisement gaps do not alter IGP-computed shortest paths.
+section: "4.4"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

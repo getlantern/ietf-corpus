@@ -1,0 +1,10 @@
+document: rfc-8315
+kind: design-rationale
+summary: 'SHA2 was chosen over SHA1 for the two mandatory schemes because: (1) the original USEFOR-CANCEL-LOCK spec is nearly two decades old and newsreader deployment is slow, so today''s choice must remain strong for another 20 years; (2) SHA1 collision resistance is already broken, making it obsolete for TLS; (3) using SHA2 allows shared cryptographic library functions between Cancel-Lock and TLS implementations; (4) SHA3 was too recent and understudied at publication time.'
+section: "7"
+topics:
+    - security
+    - crypto
+    - design-rationale
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

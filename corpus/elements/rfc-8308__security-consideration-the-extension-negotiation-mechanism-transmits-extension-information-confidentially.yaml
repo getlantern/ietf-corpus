@@ -1,0 +1,9 @@
+document: rfc-8308
+kind: security-consideration
+summary: The extension negotiation mechanism transmits extension information confidentially after key exchange, which protects capability disclosure from passive observers. However, security considerations of the base SSH protocol (RFC 4251) and related documents continue to apply. Authentication penalties — including IP throttling, blocking, and alerting — may be triggered if clients use unexpected public key algorithms, motivating correct use of 'server-sig-algs'.
+section: "5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8306
+kind: normative-requirement
+summary: If a PCE understands the P2MP N-bit but cannot perform P2MP computation, it MUST send a PCErr with Error-Type=16, Error-value=2, and the request MUST be cancelled at the PCC. If the PCE does not understand the N-bit at all, it sends Error-Type=2 (Capability not supported) per RFC 5440.
+section: "3.7"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

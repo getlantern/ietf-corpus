@@ -1,0 +1,11 @@
+document: rfc-8317
+kind: normative-requirement
+summary: Using the composite tunnel bit with Tunnel Types 0x00 ('no tunnel information present') or 0x06 ('Ingress Replication') is invalid. A PE receiving such a PMSI Tunnel attribute considers it malformed and SHOULD treat the Update as though all routes it contained had been withdrawn per RFC 6514 Section 6.
+section: "6.2"
+rfc2119_level: SHOULD
+topics:
+    - routing
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8308
+kind: interoperability-note
+summary: OpenSSH clients up to version 7.5 advertise support for SSH_MSG_EXT_INFO but disconnect upon receiving an extension-value containing null bytes. The 'delay-compression' extension uses a binary encoding with potential null bytes. Implementations interoperating with OpenSSH ≤7.5 should detect the version string and omit 'delay-compression'; the extension SHOULD NOT be omitted for OpenSSH ≥7.6.
+section: 3.2.3
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8317
+kind: design-rationale
+summary: E-Tree over EVPN performs filtering of unicast traffic at the ingress PE rather than sending traffic through the network to be filtered at the egress PE as in VPLS-based E-Tree (RFC 7796). This ingress filtering is possible because EVPN performs MAC learning in the control plane via BGP, making destination site type known before forwarding.
+section: "1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

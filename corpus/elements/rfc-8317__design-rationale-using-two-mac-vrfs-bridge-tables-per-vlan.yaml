@@ -1,0 +1,9 @@
+document: rfc-8317
+kind: design-rationale
+summary: Using two MAC-VRFs (bridge tables) per VLAN for E-Tree is rejected because it would require either two MAC lookups per address or duplication of MAC entries across both tables for locally and remotely learned addresses, causing data-plane performance inefficiencies on some platforms.
+section: A
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

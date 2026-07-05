@@ -1,0 +1,9 @@
+document: rfc-8308
+kind: design-rationale
+summary: 'Prior practice of disabling SSH flow control by sending an initial window size of 2^32-1 is problematic: it can cause channel hang if more than 2^32 bytes are transferred (the other party may implement flow control per RFC 4254), and some implementations cannot handle large window sizes and may disconnect. The ''no-flow-control'' extension provides a safe, negotiated alternative.'
+section: 3.3.1
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

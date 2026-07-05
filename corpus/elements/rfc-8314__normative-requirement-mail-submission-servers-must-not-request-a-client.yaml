@@ -1,0 +1,12 @@
+document: rfc-8314
+kind: normative-requirement
+summary: Mail Submission Servers MUST NOT request a client certificate during the TLS handshake unless the server is configured to accept some certificates as sufficient for authentication and can determine a matching authorization identity. If a certificate is accepted, the server MUST enable SASL EXTERNAL.
+section: "4.2"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - email
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

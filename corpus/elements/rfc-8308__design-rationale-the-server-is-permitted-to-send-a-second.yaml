@@ -1,0 +1,9 @@
+document: rfc-8308
+kind: design-rationale
+summary: The server is permitted to send a second SSH_MSG_EXT_INFO immediately before SSH_MSG_USERAUTH_SUCCESS to reveal extensions it was unwilling to expose to unauthenticated clients. The second message completely replaces the first, causing both parties to re-evaluate extensions in effect.
+section: "2.4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

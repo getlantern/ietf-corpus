@@ -1,0 +1,9 @@
+document: rfc-8315
+kind: security-consideration
+summary: Because Cancel-Key values are published for every cancel or supersede request, an attacker who recovers the local secret <sec> (by breaking HMAC) can forge cancel/supersede authentication for all past articles whose Cancel-Lock was generated with that <sec>. Rotating <sec> at regular intervals mitigates this risk. Breaking only <scheme> allows forging a single article at a time.
+section: "7"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

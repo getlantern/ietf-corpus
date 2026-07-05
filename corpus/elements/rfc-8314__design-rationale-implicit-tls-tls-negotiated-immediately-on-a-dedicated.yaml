@@ -1,0 +1,10 @@
+document: rfc-8314
+kind: design-rationale
+summary: Implicit TLS (TLS negotiated immediately on a dedicated port) is preferred over STARTTLS because it is simpler to implement, debug, and deploy. The STARTTLS command injection vulnerability (CERT VU#555316) demonstrated that STARTTLS complexity is an enemy of security; independent implementers made the same mistake. Implicit TLS also enables generic TLS load-balancers.
+section: A
+topics:
+    - tls
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

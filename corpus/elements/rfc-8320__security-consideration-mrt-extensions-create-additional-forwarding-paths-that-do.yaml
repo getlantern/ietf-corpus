@@ -1,0 +1,10 @@
+document: rfc-8320
+kind: security-consideration
+summary: MRT extensions create additional forwarding paths that do not follow shortest-path routes. A malicious packet with an appropriate MRT label injected from a compromised location would be forwarded along a non-shortest path. Network security designs MUST NOT rely on assumptions that potentially malicious traffic only follows shortest paths when MRT is deployed.
+section: "6"
+topics:
+    - mpls
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

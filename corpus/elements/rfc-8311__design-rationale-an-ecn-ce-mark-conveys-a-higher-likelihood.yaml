@@ -1,0 +1,10 @@
+document: rfc-8311
+kind: design-rationale
+summary: An ECN CE mark conveys a higher likelihood than a dropped packet that a short AQM-managed queue exists at the bottleneck, because AQM indicates congestion before queue overflow. This asymmetry motivates experimenting with a smaller sender backoff in response to CE marks than to drops (e.g., TCP-ABE), which RFC 3168 previously prohibited.
+section: "4.1"
+topics:
+    - ecn
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

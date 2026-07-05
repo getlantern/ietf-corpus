@@ -1,0 +1,9 @@
+document: rfc-8315
+kind: design-rationale
+summary: 'A key design property of the Cancel-Lock system is that it prevents tracking of individual users: the Cancel-Lock header field exposes only a hash of the secret key, revealing no identity information, while the preimage (Cancel-Key) is published only at cancellation time. This differs from OpenPGP signatures, which are appropriate when public verifiability of originator identity is required.'
+section: "1"
+topics:
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

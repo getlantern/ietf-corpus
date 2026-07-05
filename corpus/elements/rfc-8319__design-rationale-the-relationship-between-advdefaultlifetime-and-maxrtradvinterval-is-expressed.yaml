@@ -1,0 +1,8 @@
+document: rfc-8319
+kind: design-rationale
+summary: The relationship between AdvDefaultLifetime and MaxRtrAdvInterval is expressed as the ratio K = AdvDefaultLifetime / MaxRtrAdvInterval, representing the number of RAs guaranteed before router lifetime expiry. With 1% packet loss, K=2 yields 99.99% reliability and K=3 yields 99.9999% reliability; the document leaves the exact choice to each link's use case rather than mandating a specific K.
+section: "3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

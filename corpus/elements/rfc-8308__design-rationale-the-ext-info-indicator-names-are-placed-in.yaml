@@ -1,0 +1,9 @@
+document: rfc-8308
+kind: design-rationale
+summary: The ext-info indicator names are placed in kex_algorithms because it is one of two name-list fields in SSH_MSG_KEXINIT without separate per-direction copies. The client and server use different indicator names ('ext-info-c' vs 'ext-info-s') to ensure they never produce a matching key exchange algorithm, thus not affecting algorithm negotiation.
+section: "2.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
