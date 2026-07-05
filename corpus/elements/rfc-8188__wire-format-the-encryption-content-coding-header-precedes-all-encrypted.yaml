@@ -1,0 +1,9 @@
+document: rfc-8188
+kind: wire-format
+summary: 'The encryption content-coding header precedes all encrypted records and contains: salt (16 octets), rs/record-size (4-octet unsigned 32-bit integer in network byte order), idlen (1-octet unsigned integer giving the length of keyid), and keyid (idlen octets). Values of rs smaller than 18 are invalid.'
+section: "2.1"
+topics:
+    - http
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

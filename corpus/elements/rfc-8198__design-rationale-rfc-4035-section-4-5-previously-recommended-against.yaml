@@ -1,0 +1,8 @@
+document: rfc-8198
+kind: design-rationale
+summary: RFC 4035 Section 4.5 previously recommended against synthesizing answers from NSEC/wildcard records to avoid blocking new authoritative data. This document relaxes that recommendation because, even without this technique, an exact-name lookup could result in a cached negative answer during the same interval — so zone operators already cannot expect newly added names to be usable immediately.
+section: "4"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

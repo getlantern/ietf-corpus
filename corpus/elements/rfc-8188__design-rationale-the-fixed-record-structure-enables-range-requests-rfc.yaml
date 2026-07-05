@@ -1,0 +1,8 @@
+document: rfc-8188
+kind: design-rationale
+summary: The fixed record structure enables range requests (RFC 7233) and random access to encrypted payload bodies at record-size granularity. Partial records at range boundaries cannot be decrypted, so range requests should start and end on record boundaries.
+section: "2"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

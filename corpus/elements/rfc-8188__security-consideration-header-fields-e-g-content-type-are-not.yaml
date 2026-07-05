@@ -1,0 +1,10 @@
+document: rfc-8188
+kind: security-consideration
+summary: 'Header fields (e.g., Content-Type) are not encrypted and can leak information about the payload. Mitigations include omitting or normalizing sensitive headers, always sending Content-Type: application/octet-stream, or encapsulating the full HTTP message as application/http and encrypting it as the outer payload.'
+section: "4.6"
+topics:
+    - http
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

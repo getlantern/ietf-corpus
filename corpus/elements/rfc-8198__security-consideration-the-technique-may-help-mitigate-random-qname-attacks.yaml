@@ -1,0 +1,9 @@
+document: rfc-8198
+kind: security-consideration
+summary: The technique may help mitigate 'random QNAME attacks' where attackers send many queries for random subdomains, causing DoS on authoritative servers. A resolver using aggressive caching can answer directly from cache for random queries falling within already-requested NSEC ranges, though coverage is limited to DNSSEC-signed zones.
+section: "6"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8188
+kind: design-rationale
+summary: The nonce is constructed by XORing an HKDF-derived base nonce with the record sequence number rather than transmitting nonces per-record. This prevents record removal and reordering without adding per-record nonce overhead on the wire.
+section: "2.3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

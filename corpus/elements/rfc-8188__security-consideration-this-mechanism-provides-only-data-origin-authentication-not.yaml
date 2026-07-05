@@ -1,0 +1,9 @@
+document: rfc-8188
+kind: security-consideration
+summary: This mechanism provides only data-origin authentication, not sender authentication or authorization. Any entity holding the content-encryption key can produce valid ciphertext, including all recipients of the same message. Separate HTTP authentication (RFC 7235) is still required to authenticate the message creator.
+section: "4.5"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

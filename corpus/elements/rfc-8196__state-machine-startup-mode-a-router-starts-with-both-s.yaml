@@ -1,0 +1,8 @@
+document: rfc-8196
+kind: state-machine
+summary: 'Startup mode: a router starts with both S and A flags set, generates only LSP #0 with no IS/IP reachability TLVs, and remains in startup mode for at least 1 minute. It exits startup mode after the minimum time has elapsed and full LSP database synchronization is achieved with all UP neighbors, at which point it clears the S flag and MAY advertise reachability and generate non-zero LSPs.'
+section: 3.4.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

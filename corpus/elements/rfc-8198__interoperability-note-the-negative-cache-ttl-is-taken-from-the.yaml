@@ -1,0 +1,8 @@
+document: rfc-8198
+kind: interoperability-note
+summary: The negative cache TTL is taken from the minimum of SOA.MINIMUM and SOA's TTL (per RFC 2308), which can be less than the TTL of NSEC/NSEC3 records. Resolvers must use this minimum rather than the NSEC/NSEC3 record TTL directly to avoid serving stale negative answers.
+section: "5.4"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

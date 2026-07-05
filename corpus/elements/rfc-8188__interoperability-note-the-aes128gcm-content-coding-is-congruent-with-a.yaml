@@ -1,0 +1,10 @@
+document: rfc-8188
+kind: interoperability-note
+summary: 'The ''aes128gcm'' content coding is congruent with a sequence of JWE (RFC 7516) compact-serialized objects using { "alg": "dir", "enc": "A128GCM" }. The JWE Protected Header and IV are implied rather than transmitted; the ciphertext and authentication tag are concatenated without base64url encoding or ''.'' separators.'
+section: A
+topics:
+    - http
+    - jose
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8188
+kind: protocol-element
+summary: 'The 96-bit nonce for each record is derived via HKDF with info ''Content-Encoding: nonce'' || 0x00 and L=12, then XORed with the 96-bit record sequence number (starting at zero in network byte order). This construction prevents record removal or reordering.'
+section: "2.3"
+topics:
+    - http
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

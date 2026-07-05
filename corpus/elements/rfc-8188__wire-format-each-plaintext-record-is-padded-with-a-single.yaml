@@ -1,0 +1,9 @@
+document: rfc-8188
+kind: wire-format
+summary: Each plaintext record is padded with a single delimiter octet (0x01 for all records except the last, 0x02 for the last), followed by zero or more 0x00 octets, to fill up to rs-16 octets before AES-GCM encryption. AEAD_AES_128_GCM adds a 16-octet authentication tag, making each full record exactly rs octets.
+section: "2"
+topics:
+    - http
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

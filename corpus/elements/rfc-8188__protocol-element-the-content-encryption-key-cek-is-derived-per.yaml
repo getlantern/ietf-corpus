@@ -1,0 +1,9 @@
+document: rfc-8188
+kind: protocol-element
+summary: 'The content-encryption key (CEK) is derived per-message using HKDF (RFC 5869) with SHA-256. The salt parameter is the HKDF salt, the IKM identified by keyid is the HKDF input-keying material, and the info string is ''Content-Encoding: aes128gcm'' followed by a zero octet. The output length L is 16 octets: CEK = HMAC-SHA-256(PRK, cek_info || 0x01).'
+section: "2.2"
+topics:
+    - http
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

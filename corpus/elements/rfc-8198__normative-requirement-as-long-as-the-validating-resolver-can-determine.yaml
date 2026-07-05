@@ -1,0 +1,10 @@
+document: rfc-8198
+kind: normative-requirement
+summary: As long as the validating resolver can determine that a name would not exist without the wildcard match, it SHOULD synthesize an answer (or NODATA response) for that name using the cache-deduced wildcard. If the corresponding wildcard record is not in the cache, it MUST fall back to query authoritative DNS servers.
+section: "5.3"
+rfc2119_level: SHOULD
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

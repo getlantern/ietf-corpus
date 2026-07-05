@@ -1,0 +1,10 @@
+document: rfc-8188
+kind: normative-requirement
+summary: A decrypter MUST fail if a record contains no non-zero octet (i.e., no padding delimiter is present). A decrypter MUST fail if the last record's padding delimiter is not 0x02, or if any non-last record's padding delimiter is not 0x01.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - http
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

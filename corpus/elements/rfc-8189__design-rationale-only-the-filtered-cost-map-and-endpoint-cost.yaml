@@ -1,0 +1,9 @@
+document: rfc-8189
+kind: design-rationale
+summary: Only the Filtered Cost Map and Endpoint Cost Map Services are extended (not the full cost map) because full cost map resources are GET-mode requests, and a legacy ALTO Client cannot interpret 'multi-cost-types' in 'meta' or array-valued cost entries.
+section: "3.5"
+topics:
+    - http
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

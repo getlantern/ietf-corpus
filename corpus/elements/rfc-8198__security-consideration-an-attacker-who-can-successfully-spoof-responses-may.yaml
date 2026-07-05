@@ -1,0 +1,9 @@
+document: rfc-8198
+kind: security-consideration
+summary: An attacker who can successfully spoof responses may poison a cache with old NSEC/NSEC3 records whose RRSIG expiration time is far in the future (weeks). With aggressive NSEC/NSEC3 use, one successful cache-poisoning attack can suppress many queries for new names up to the negative TTL, whereas without this technique the attacker must repeat the attack for every query.
+section: "9"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

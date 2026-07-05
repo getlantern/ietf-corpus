@@ -1,0 +1,9 @@
+document: rfc-8188
+kind: security-consideration
+summary: Automatic decryption by an intermediary can silently strip the 'aes128gcm' content coding before the message reaches the ultimate consumer. Recipients relying on content-origin authentication must explicitly check for the coding's presence and reject messages that lack it.
+section: "4.1"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

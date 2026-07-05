@@ -1,0 +1,8 @@
+document: rfc-8196
+kind: design-rationale
+summary: 'Startup mode exists to minimize disruption: a router entering the network defers advertising IS neighbor and prefix reachability until it has fully synchronized its LSPDB, so any System ID collision that forces a restart has minimal impact because the router is not yet forwarding traffic.'
+section: 3.4.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

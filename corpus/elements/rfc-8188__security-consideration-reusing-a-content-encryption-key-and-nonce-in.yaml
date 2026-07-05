@@ -1,0 +1,9 @@
+document: rfc-8188
+kind: security-consideration
+summary: 'Reusing a content-encryption key and nonce in AES-GCM is catastrophic: it exposes both the plaintext and the authentication key, nullifying all protection. A unique salt per message when IKM is reused is the required mitigation.'
+section: "4.3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
