@@ -1,0 +1,10 @@
+document: rfc-8635
+kind: security-consideration
+summary: Key revocation requires placing the BGPsec certificate on the CA's CRL, re-keying the router's certificate, and deciding whether to keep the router operational with the compromised key or bring it offline. Routers supporting multiple simultaneous private keys facilitate revocation by allowing a spare key to become operational before the compromised key is revoked.
+section: "10.3"
+topics:
+    - bgp
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

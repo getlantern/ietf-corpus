@@ -1,0 +1,10 @@
+document: rfc-8635
+kind: design-rationale
+summary: Two key provisioning methods are defined — router-driven (key generated on-router, private key never leaves trusted storage) and operator-driven (key generated off-router and installed via protected channel). The operator-driven method exists because hot-swapping routers requires the same private key to be installed in a replacement router, minimizing downtime compared to the RPKI propagation delay of a day or longer for a new key.
+section: "1"
+topics:
+    - bgp
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
