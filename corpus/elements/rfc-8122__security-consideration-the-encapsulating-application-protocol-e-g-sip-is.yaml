@@ -1,0 +1,10 @@
+document: rfc-8122
+kind: security-consideration
+summary: The encapsulating application protocol (e.g., SIP) is responsible for ensuring the integrity of SDP security descriptions. It SHOULD either invoke its own security mechanisms or utilize a lower-layer security service providing strong message authentication and effective replay protection. Without SDP integrity, the mechanism is vulnerable to man-in-the-middle attacks on first contact (similar to SSH trust-on-first-use).
+section: "7"
+topics:
+    - security
+    - tls
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

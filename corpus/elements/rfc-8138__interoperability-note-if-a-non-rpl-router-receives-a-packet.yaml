@@ -1,0 +1,9 @@
+document: rfc-8138
+kind: interoperability-note
+summary: If a non-RPL router receives a packet with an SRH-6LoRH or RPI-6LoRH header, it indicates a routing or configuration error. Both headers are Critical, so the non-RPL router will drop the packet rather than forward it. Forwarding would risk forming loops (RPI case) or violating strict source-route constraints (SRH case). Deployments must ensure 6LoRH-compressed packets only traverse RPL routers.
+section: "5.1"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

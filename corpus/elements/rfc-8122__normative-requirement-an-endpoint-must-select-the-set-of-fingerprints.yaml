@@ -1,0 +1,11 @@
+document: rfc-8122
+kind: normative-requirement
+summary: An endpoint MUST select the set of fingerprints using its most preferred hash function (out of those offered by the peer) and verify that each certificate used matches one fingerprint out of that set. If a certificate does not match any such fingerprint, the endpoint MUST NOT establish the TLS connection.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

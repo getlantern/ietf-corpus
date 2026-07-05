@@ -1,0 +1,10 @@
+document: rfc-8124
+kind: design-rationale
+summary: Requiring the WebSocket server to always use 'setup:passive' (and the client 'setup:active') avoids the need for ICE between WebSocket client and server, since the connection model is a typical client-to-server web connection where the server has a global IP address.
+section: "5"
+topics:
+    - websocket
+    - realtime
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

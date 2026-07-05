@@ -1,0 +1,11 @@
+document: rfc-8122
+kind: normative-requirement
+summary: When using the SDP offer/answer model, the client (setup:active role) MUST also present a certificate. The server MUST request a certificate; if the client does not provide one, or if it does not match a fingerprint, the server MUST terminate the connection with a bad_certificate error.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

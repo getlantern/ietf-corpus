@@ -1,0 +1,10 @@
+document: rfc-8122
+kind: design-rationale
+summary: Self-signed certificates are permitted because many endpoints have dynamic IP addresses and cannot practically obtain CA-signed certificates. Security is maintained by including a secure hash (fingerprint) of the certificate in the SDP description, so that if SDP integrity is assured, even self-signed certificates can be trusted.
+section: "3.3"
+topics:
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

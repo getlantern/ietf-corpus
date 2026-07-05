@@ -1,0 +1,9 @@
+document: rfc-8138
+kind: design-rationale
+summary: This specification places the inner IP header as the first header compressed by LOWPAN_IPHC (RFC 6282), keeping the inner packet encoded identically whether or not it is IP-in-IP encapsulated. This preserves existing implementations and achieves better compression than variable per-hop compression because the outer encapsulation endpoint is typically the DODAG root, enabling consistent stateful compression.
+section: "1"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

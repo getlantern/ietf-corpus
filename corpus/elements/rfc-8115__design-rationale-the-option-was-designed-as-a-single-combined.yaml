@@ -1,0 +1,9 @@
+document: rfc-8115
+kind: design-rationale
+summary: The option was designed as a single combined structure rather than three distinct DHCPv6 options to avoid the unintended side effect of enabling unicast Prefix64 discovery in multicast-disabled environments, which would conflict with the recommended Well-Known DNS Name heuristic discovery method for unicast-only environments (RFC 7051 Section 6).
+section: "3"
+topics:
+    - multicast
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

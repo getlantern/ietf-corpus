@@ -1,0 +1,9 @@
+document: rfc-8138
+kind: design-rationale
+summary: The RPI-6LoRH is designated Critical rather than Elective because a non-RPL router that skips it and forwards the packet could reinject it into the wrong RPL Instance, forming routing loops. Dropping the packet on unrecognized Critical headers prevents this failure mode at the cost of requiring homogeneous deployment.
+section: "6.3"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

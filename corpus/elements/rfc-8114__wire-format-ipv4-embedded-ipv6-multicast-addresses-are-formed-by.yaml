@@ -1,0 +1,10 @@
+document: rfc-8114
+kind: wire-format
+summary: 'IPv4-embedded IPv6 multicast addresses are formed by concatenating the 96-bit mPrefix64 with the 32-bit IPv4 multicast address, yielding a 128-bit IPv6 address. Extraction reverses this: strip the known /96 prefix and take the last 32 bits as the IPv4 address.'
+section: "5.2"
+topics:
+    - multicast
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8114
+kind: state-machine
+summary: 'The mAFTR maintains two TIBs (TIB4 and TIB6) bridged by an IPv4-in-IPv6 virtual interface. On receipt of PIMv6 Join (*,G6): update TIB6 entry (create if absent), extract G4, update TIB4 entry (create if absent). On receipt of multicast data: look up TIB4, encapsulate and look up TIB6, forward on IPv6 tree.'
+section: "7.2"
+topics:
+    - multicast
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

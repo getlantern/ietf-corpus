@@ -1,0 +1,10 @@
+document: rfc-8108
+kind: interoperability-note
+summary: An endpoint that incorrectly uses the full compound RTCP packet size for avg_rtcp_size will derive an RTCP reporting interval inflated by a factor proportional to the number of SSRCs aggregated, potentially causing premature timeouts. For compatibility with non-updated endpoints, aggregation SHOULD be limited to two reports per compound packet.
+section: 5.3.1
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8138
+kind: normative-requirement
+summary: To disambiguate headers belonging to inner versus outer IP chains in nested IP-in-IP encapsulations, it is REQUIRED that the compressed IP-in-IP header (IP-in-IP-6LoRH) be placed last in the encoded 6LoRH chain. Headers following the last IP-in-IP-6LoRH are interpreted as belonging to the inner IPv6 header when decompressing.
+section: 3.2.2
+rfc2119_level: REQUIRED
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

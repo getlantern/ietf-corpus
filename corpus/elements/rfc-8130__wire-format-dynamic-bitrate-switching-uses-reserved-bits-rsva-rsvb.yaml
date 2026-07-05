@@ -1,0 +1,9 @@
+document: rfc-8130
+kind: wire-format
+summary: 'Dynamic bitrate switching uses reserved bits RSVA, RSVB, RSVC in the last octet of each frame: 2400 bps = (0,0,N/A), 1200 bps = (1,0,0), 600 bps = (0,1,N/A), comfort noise = (1,0,1). If bitrate switching is not used, all reserved bits are encoded as 0 by the sender and ignored by the receiver.'
+section: "3.3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

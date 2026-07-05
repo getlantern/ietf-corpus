@@ -1,0 +1,9 @@
+document: rfc-8138
+kind: protocol-element
+summary: The SenderRank field in the RPI can be compressed to 1 byte by eliding the least significant octet when MinHopRankIncrease is a multiple of 256 (the RPL default of DEFAULT_MIN_HOP_RANK_INCREASE = 256 per RFC 6552 makes this the common case). The K flag in RPI-6LoRH signals whether this compression is applied.
+section: "6.2"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

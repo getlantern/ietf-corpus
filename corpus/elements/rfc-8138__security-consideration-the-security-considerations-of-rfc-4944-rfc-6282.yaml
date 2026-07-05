@@ -1,0 +1,10 @@
+document: rfc-8138
+kind: security-consideration
+summary: The security considerations of RFC 4944, RFC 6282, and RFC 6553 apply. Using the compressed 6LoRH format is logically equivalent to the full in-line format and is believed not to introduce new threats versus RFC 6550, 6553, and 6554. Although consumed SRH entries are stripped, a node can still detect loops in the remaining path; if the attacker is not part of the loop, a node at the loop's start can detect and remove it.
+section: "9"
+topics:
+    - security
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

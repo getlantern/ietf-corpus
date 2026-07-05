@@ -1,0 +1,9 @@
+document: rfc-8108
+kind: protocol-element
+summary: When a compound RTCP packet reports on multiple SSRCs, each reporting SSRC updates avg_rtcp_size using div_packet_size = packet_size / number_of_SSRCs_reporting (via the formula avg_rtcp_size = (1/16)*div_packet_size + (15/16)*avg_rtcp_size) rather than the full compound packet size.
+section: 5.3.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

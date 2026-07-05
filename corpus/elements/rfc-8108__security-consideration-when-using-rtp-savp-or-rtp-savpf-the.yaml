@@ -1,0 +1,11 @@
+document: rfc-8108
+kind: security-consideration
+summary: When using RTP/SAVP or RTP/SAVPF, the cryptographic context of a compound secure RTCP packet is determined by the SSRC of the sender of the first RTCP sub-packet. This is significant for keying mechanisms such as MIKEY (RFC 3830) that support per-SSRC keying.
+section: "8"
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

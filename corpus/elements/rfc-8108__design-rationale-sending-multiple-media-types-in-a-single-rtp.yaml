@@ -1,0 +1,9 @@
+document: rfc-8108
+kind: design-rationale
+summary: 'Sending multiple media types in a single RTP session increases cross-reporting between SSRCs: each SSRC reports on all others, inflating RTCP report sizes and reducing sending frequency for a given RTCP bandwidth, compared to using separate RTP sessions per media type.'
+section: "7"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

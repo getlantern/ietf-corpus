@@ -1,0 +1,9 @@
+document: rfc-8138
+kind: wire-format
+summary: The SRH-6LoRH header (Critical, Types 0–4) encodes a compressed source routing list. The 5-bit TSE field is used as Size (hops minus 1, maximum 32), followed by N compressed hop addresses. Type 0 compresses addresses to 1 byte; Type 1 to 2 bytes; Type 2 to 4 bytes; Type 3 to 8 bytes; Type 4 to 16 bytes (uncompressed). Total header length = 2 + address_length × (Size + 1).
+section: "5.1"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

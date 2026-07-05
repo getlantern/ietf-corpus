@@ -1,0 +1,10 @@
+document: rfc-8108
+kind: normative-requirement
+summary: Each endpoint MUST schedule RTCP transmission independently for each SSRC. When a timer tn expires, RTCP packets SHOULD be aggregated from additional SSRCs with future tn values into the same compound RTCP packet, selecting SSRCs in order of increasing tn until the packet is full or the MTU is reached.
+section: 5.3.2
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

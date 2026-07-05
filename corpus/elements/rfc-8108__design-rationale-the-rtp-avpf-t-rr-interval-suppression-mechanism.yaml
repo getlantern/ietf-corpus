@@ -1,0 +1,9 @@
+document: rfc-8108
+kind: design-rationale
+summary: 'The RTP/AVPF T_rr_interval suppression mechanism skews RTCP transmission intervals: the actual interval when suppression is active can reach up to 1.5*T_rr_interval + 1.5/1.21828*Td, meaning a single RTCP packet loss can time out an SSRC when T_rr_interval is non-zero.'
+section: 7.1.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

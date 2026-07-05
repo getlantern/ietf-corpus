@@ -1,0 +1,9 @@
+document: rfc-8138
+kind: state-machine
+summary: 'When a router pops the first SRH-6LoRH entry, four cases apply: (1) Size ≥ 1 — remove first entry, decrement Size; (2) Size = 0, no subsequent SRH-6LoRH — remove the entire header; (3) Size = 0, next SRH-6LoRH Type ≥ current Type — remove current header; (4) Size = 0, next SRH-6LoRH Type < current Type — remove first entry of next header and coalesce it with the current first entry. If no SRH-6LoRH remain, the node is the last router on the source route path.'
+section: "5.5"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

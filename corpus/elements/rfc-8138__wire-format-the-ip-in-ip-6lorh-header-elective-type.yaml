@@ -1,0 +1,9 @@
+document: rfc-8138
+kind: wire-format
+summary: 'The IP-in-IP-6LoRH header (Elective, Type 6) encodes a compressed outer IPv6 header. The 5-bit Length field indicates bytes beyond the 2-byte base: Length=1 means Hop Limit only (Encapsulator Address elided, implying the DODAG root); Length>1 includes a compressed Encapsulator Address of (Length−1) bytes coalesced against the root address.'
+section: "7"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8114
+kind: normative-requirement
+summary: When the mB4 receives an IPv6 multicast packet, it MUST check the group and source addresses. If the group prefix is mPrefix64 and source prefix is uPrefix64, the mB4 MUST decapsulate the IPv6 header per RFC 2473 and forward the IPv4 packet; otherwise the mB4 MUST silently drop the packet.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - multicast
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

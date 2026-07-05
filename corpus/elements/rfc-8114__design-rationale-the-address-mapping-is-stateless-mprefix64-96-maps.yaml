@@ -1,0 +1,10 @@
+document: rfc-8114
+kind: design-rationale
+summary: 'The address mapping is stateless: mPrefix64 (/96) maps IPv4 multicast group addresses to IPv6 multicast addresses by simple concatenation, while uPrefix64 maps IPv4 source addresses to IPv6 unicast addresses per RFC 6052. Stateless translation simplifies the solution and avoids per-flow state at translation points.'
+section: "4.1"
+topics:
+    - multicast
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8138
+kind: design-rationale
+summary: The RPL Option (RFC 6553) in a Hop-by-Hop header consumes 8 bytes per packet, yet the actual RPI payload is only 19 bits. On IEEE 802.15.4 with a 127-byte frame limit, this overhead can force fragmentation. The RPI-6LoRH reduces the per-packet cost to as few as 3 bytes (I=1, K=1), directly addressing 6TiSCH bandwidth and battery constraints.
+section: "1"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

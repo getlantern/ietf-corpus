@@ -1,0 +1,10 @@
+document: rfc-8108
+kind: interoperability-note
+summary: Mixing endpoints using RTP/AVP and RTP/AVPF profiles in a single RTP session is NOT RECOMMENDED. If mixed profiles are unavoidable and endpoints are not updated per Section 7.1.4, the RTP/AVPF session SHOULD be configured with T_rr_interval = 4 seconds to avoid premature SSRC timeouts.
+section: 7.1.3
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

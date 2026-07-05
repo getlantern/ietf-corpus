@@ -1,0 +1,9 @@
+document: rfc-8138
+kind: wire-format
+summary: 'The RPI-6LoRH header (Critical, Type 5) encodes RPL Packet Information compactly. Byte 1 (TSE): bits O, R, F (from RFC 6553), I (set = RPLInstanceID elided, implying Global Instance 0), and K (set = SenderRank compressed to 1 byte with LSB elided). Followed by optional RPLInstanceID (1 byte if I=0) then SenderRank (1 byte if K=1, else 2 bytes). Minimum encoding (I=1, K=1) is 3 bytes versus 8 bytes for RFC 6553.'
+section: "6.3"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
