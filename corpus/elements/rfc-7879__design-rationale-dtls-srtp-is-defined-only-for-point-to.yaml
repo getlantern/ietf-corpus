@@ -1,0 +1,11 @@
+document: rfc-7879
+kind: design-rationale
+summary: DTLS-SRTP is defined only for point-to-point media sessions, so B2BUAs sitting between endpoints commonly break end-to-end DTLS-SRTP by terminating the DTLS session and decrypting the RTP payload. This document targets the subset of B2BUAs that can relay media at the transport layer without needing to terminate DTLS.
+section: "1.1"
+topics:
+    - sip
+    - tls
+    - realtime
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

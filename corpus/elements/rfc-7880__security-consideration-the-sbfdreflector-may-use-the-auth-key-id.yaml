@@ -1,0 +1,10 @@
+document: rfc-7880
+kind: security-consideration
+summary: The SBFDReflector MAY use the Auth Key ID in the incoming packet to verify Authentication Data and MUST accept the packet if authentication succeeds. This approach keeps the reflector stateless while still enabling BFD authentication, and prevents replay attacks because the initiator only accepts responses carrying the sequence number it originally sent.
+section: "11"
+topics:
+    - security
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

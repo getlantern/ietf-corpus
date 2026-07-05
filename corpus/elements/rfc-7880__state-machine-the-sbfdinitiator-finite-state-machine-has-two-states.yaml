@@ -1,0 +1,8 @@
+document: rfc-7880
+kind: state-machine
+summary: The SBFDInitiator finite state machine has two states, DOWN and UP. The machine transitions from DOWN to UP upon receiving a packet with State=UP; it transitions from UP to DOWN upon receiving AdminDown or on Detection Timer expiry. The INIT state of classical BFD is absent because SBFDReflectors never send INIT.
+section: 7.3.1
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

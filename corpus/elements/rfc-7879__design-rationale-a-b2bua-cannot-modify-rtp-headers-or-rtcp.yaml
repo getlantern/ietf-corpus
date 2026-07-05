@@ -1,0 +1,11 @@
+document: rfc-7879
+kind: design-rationale
+summary: A B2BUA cannot modify RTP headers or RTCP packets without first acting as a DTLS endpoint, terminating the DTLS-SRTP session, and decrypting/re-encrypting the RTP payload. Any modification to the authenticated portions will fail the HMAC integrity check (negotiated during the DTLS handshake per RFC 5764 Section 4.1.2) and cause the endpoint to drop the packet.
+section: 5.1.2.2
+topics:
+    - rtp
+    - realtime
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

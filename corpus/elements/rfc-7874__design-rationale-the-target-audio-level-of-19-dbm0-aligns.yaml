@@ -1,0 +1,9 @@
+document: rfc-7874
+kind: design-rationale
+summary: The target audio level of -19 dBm0 aligns with ITU-T G.169 and G.115 recommendations. However, frequency normalization above 300 Hz (rather than the G.712 passband) is required because WebRTC audio is not constrained to the G.712 passband and can be sampled at 8–48 kHz or higher.
+section: "4"
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-7880
+kind: design-rationale
+summary: Keeping the SBFDReflector discriminator pool separate from BFD/SBFDInitiator pools is recommended because S-BFD Discriminators may be derived from protocol IDs (System-ID, Router-ID) or network targets (IP addresses), which could collide with arbitrarily assigned BFD Discriminators if the pools were shared.
+section: "4.2"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

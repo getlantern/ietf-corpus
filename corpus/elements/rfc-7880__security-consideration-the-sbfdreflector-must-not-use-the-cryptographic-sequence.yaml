@@ -1,0 +1,10 @@
+document: rfc-7880
+kind: security-consideration
+summary: The SBFDReflector MUST NOT use the cryptographic sequence number to decide whether to accept a packet, because the reflector is stateless and may receive packets from multiple SBFDInitiators with differing sequence numbers. Instead, the reflector MUST echo back the same sequence number it received, while the SBFDInitiator SHOULD accept responses only within a permissible sequence-number range.
+section: "11"
+topics:
+    - security
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

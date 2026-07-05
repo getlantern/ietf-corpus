@@ -1,0 +1,9 @@
+document: rfc-7880
+kind: design-rationale
+summary: 'The Demand (D) bit is used to break the infinite reflection loop that a Man-in-the-Middle could trigger: SBFDInitiators always set D=1, SBFDReflectors always clear D=0 and discard any received packet with D=0. Without this, a single spoofed packet could cause two reflectors to bounce packets between each other indefinitely at TTL=255.'
+section: A
+topics:
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

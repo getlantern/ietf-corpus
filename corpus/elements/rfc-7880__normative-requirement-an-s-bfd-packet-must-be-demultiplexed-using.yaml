@@ -1,0 +1,9 @@
+document: rfc-7880
+kind: normative-requirement
+summary: An S-BFD packet MUST be demultiplexed using lower-layer information (e.g., dedicated destination UDP port or associated Channel Type) before inspecting the Your Discriminator field. Packets bound for an SBFDReflector are looked up in the S-BFD Discriminator table; others are looked up in the BFD Discriminator table and MUST be discarded if no match is found.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

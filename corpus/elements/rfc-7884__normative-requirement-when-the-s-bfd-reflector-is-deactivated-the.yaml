@@ -1,0 +1,9 @@
+document: rfc-7884
+kind: normative-requirement
+summary: When the S-BFD reflector is deactivated, the OSPF speaker MUST originate a new Router Information LSA that no longer includes the corresponding S-BFD Discriminator TLV (if other TLVs remain), or MUST send an empty RI LSA or purge it by prematurely aging it if no other TLVs remain.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-7876
+kind: design-rationale
+summary: UDP is required as a return path to support firewall traversal, bistatic operation where the querier and collector are not co-located, and multi-CPU LSR deployments where the Response must be forwarded internally to the correct processing node. The existing MPLS Associated Channel return path cannot address these scenarios.
+section: "1"
+topics:
+    - mpls
+    - udp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
