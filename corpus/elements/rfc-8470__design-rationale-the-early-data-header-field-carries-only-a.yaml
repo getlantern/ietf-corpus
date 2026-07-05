@@ -1,0 +1,9 @@
+document: rfc-8470
+kind: design-rationale
+summary: The Early-Data header field carries only a single bit of information (value "1") because what matters is not the details of the early data exchange but simply whether the client understands and is willing to retry on receipt of a 425 (Too Early) response. User agents do not need to set it; their act of sending in early data implies this willingness.
+section: "5.1"
+topics:
+    - http
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

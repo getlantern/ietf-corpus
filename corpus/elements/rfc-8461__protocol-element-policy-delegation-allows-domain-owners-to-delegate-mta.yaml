@@ -1,0 +1,11 @@
+document: rfc-8461
+kind: protocol-element
+summary: Policy delegation allows domain owners to delegate MTA-STS to a hosting provider by (1) pointing '_mta-sts' via CNAME to the provider's TXT record, and (2) pointing the 'mta-sts' hostname to the provider (via IP/CNAME or reverse proxy). The policy endpoint must always present a certificate valid for the delegating domain's Policy Host, not the provider's.
+section: "8.2"
+topics:
+    - email
+    - tls
+    - dns
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

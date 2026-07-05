@@ -1,0 +1,8 @@
+document: rfc-8469
+kind: design-rationale
+summary: Without a CW, LSRs that inspect past the MPLS label stack to apply five-tuple ECMP can mistake an Ethernet PW packet for an IP packet when the destination MAC address starts with 0x4 (IPv4) or 0x6 (IPv6), causing packet misordering or OAM path deviation.
+section: "1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

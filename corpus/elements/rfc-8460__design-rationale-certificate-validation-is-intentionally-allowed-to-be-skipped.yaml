@@ -1,0 +1,10 @@
+document: rfc-8460
+kind: design-rationale
+summary: Certificate validation is intentionally allowed to be skipped when submitting reports via HTTPS POST because a misconfigured SMTP server likely also has a misconfigured HTTPS server, and failing to deliver reports on benign misconfigurations outweighs the risk of an attacker intercepting reports (who could already obtain the metadata passively).
+section: "7"
+topics:
+    - security
+    - tls
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8470
+kind: normative-requirement
+summary: Once a server has decided to accept TLS early data, it MUST process all requests received in early data, even if it ultimately rejects individual requests with a 425 (Too Early) response. TLS does not permit selective rejection of early data.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - http
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8463
+kind: interoperability-note
+summary: For backward compatibility, signers can add multiple DKIM signatures using both old (RSA) and new (Ed25519) algorithms. Because only one key record can exist per selector, the two signatures must use different s= selectors, though they may share the same d= and i= identifiers.
+section: "6"
+topics:
+    - email
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

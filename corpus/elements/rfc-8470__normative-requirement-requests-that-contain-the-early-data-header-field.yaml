@@ -1,0 +1,11 @@
+document: rfc-8470
+kind: normative-requirement
+summary: Requests that contain the Early-Data header field and cannot be safely processed MUST be rejected using the 425 (Too Early) status code. A server cannot make such a request safe by waiting for the handshake to complete, because the early data already occurred on a prior hop.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - http
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

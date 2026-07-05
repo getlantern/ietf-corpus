@@ -1,0 +1,11 @@
+document: rfc-8461
+kind: normative-requirement
+summary: Policies fetched via HTTPS are only valid if the HTTP response code is 200 (OK). HTTP 3xx redirects MUST NOT be followed, and HTTP caching (as specified in RFC 7234) MUST NOT be used when fetching MTA-STS policies.
+section: "3.3"
+rfc2119_level: MUST NOT
+topics:
+    - email
+    - tls
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

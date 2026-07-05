@@ -1,0 +1,10 @@
+document: rfc-8466
+kind: security-consideration
+summary: The ietf-l2vpn-svc YANG module contains writable data nodes that are potentially sensitive, including VPN topology configurations, cloud access authorization policies, and site attachment rules. Unauthorized access could allow VPN misconfiguration, traffic leakage between VPNs, or denial of service. Implementations must enforce access control (e.g., via NETCONF access control model, RFC 8341).
+section: "9"
+topics:
+    - yang
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

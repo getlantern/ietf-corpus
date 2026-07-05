@@ -1,0 +1,12 @@
+document: rfc-8461
+kind: design-rationale
+summary: MTA-STS uses PKIX-based certificate authentication rather than DNSSEC (as used by DANE) to avoid requiring DNSSEC deployment. This trades the ability to authoritatively determine 'no record' (a DANE/DNSSEC feature) for broader deployability, at the cost of vulnerability to CA compromise and policy-discovery downgrade attacks.
+section: "2"
+topics:
+    - email
+    - tls
+    - pkix
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

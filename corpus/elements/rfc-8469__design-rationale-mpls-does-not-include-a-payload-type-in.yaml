@@ -1,0 +1,8 @@
+document: rfc-8469
+kind: design-rationale
+summary: MPLS does not include a payload type in the packet; it relies on the control plane to signal payload type. Some LSRs attempt to deduce type via payload inspection, which is not exact science and can cause misordering even when a CW is present if inspection looks past the CW.
+section: "7"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

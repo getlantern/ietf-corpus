@@ -1,0 +1,10 @@
+document: rfc-8471
+kind: design-rationale
+summary: Token Binding IDs are never conveyed over insecure connections to protect privacy, even though the bindings are long-lived across multiple TLS sessions. The design allows users to reset their Token Binding ID at any time (e.g., by clearing browser cookies), balancing the security benefit of persistent binding against user privacy control.
+section: "1"
+topics:
+    - tls
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

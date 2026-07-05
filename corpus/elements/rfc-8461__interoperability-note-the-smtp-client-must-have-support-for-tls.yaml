@@ -1,0 +1,10 @@
+document: rfc-8461
+kind: interoperability-note
+summary: The SMTP client MUST have support for TLS SNI (RFC 6066). When connecting to the HTTPS policy server, SNI MUST contain the Policy Host name (e.g., 'mta-sts.example.com'). When connecting to SMTP servers, SNI MUST contain the MX hostname. SMTP servers MUST NOT enforce the use of SNI by clients, and MUST send a fallback certificate chain if no SNI is provided.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - email
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

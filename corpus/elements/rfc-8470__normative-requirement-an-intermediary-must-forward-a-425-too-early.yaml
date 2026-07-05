@@ -1,0 +1,10 @@
+document: rfc-8470
+kind: normative-requirement
+summary: An intermediary MUST forward a 425 (Too Early) status code if the request it received and forwarded contained an Early-Data header field. Otherwise, an intermediary that received the request in early data MAY retry that request in response to 425, but MUST wait for the TLS handshake to complete first.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - http
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

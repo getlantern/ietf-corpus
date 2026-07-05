@@ -1,0 +1,11 @@
+document: rfc-8471
+kind: normative-requirement
+summary: TokenBinding.signature MUST be a signature of the EKM value derived from the TLS master secret that produced the session keys encrypting the TLS application_data record(s) containing the TokenBinding. This makes replay of bound tokens within renegotiated TLS sessions detectable.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

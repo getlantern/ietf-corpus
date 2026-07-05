@@ -1,0 +1,10 @@
+document: rfc-8470
+kind: security-consideration
+summary: 'Consistent treatment of requests arriving fully or partially in early data is critical: if any server instance might initiate processing before TLS handshake completion, all instances must account for possible replay. Disabling early data, delaying, or rejecting with 425 are equally valid and may be chosen per-instance based on conditions such as server load.'
+section: "6.2"
+topics:
+    - security
+    - tls
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

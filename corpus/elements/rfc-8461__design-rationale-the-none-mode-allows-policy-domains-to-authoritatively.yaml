@@ -1,0 +1,9 @@
+document: rfc-8461
+kind: design-rationale
+summary: 'The ''none'' mode allows Policy Domains to authoritatively signal opt-out of MTA-STS, distinguishing deliberate removal from attack-induced policy absence. The recommended removal workflow publishes ''mode: none'' with a short max_age, then waits for all previously cached policies to expire before removing DNS and HTTPS endpoints.'
+section: "8.3"
+topics:
+    - email
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

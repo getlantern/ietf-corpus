@@ -1,0 +1,12 @@
+document: rfc-8461
+kind: normative-requirement
+summary: When fetching a policy, senders SHOULD validate that the media type is 'text/plain' to guard against cases where web servers allow untrusted users to host non-text content at user-defined paths. HTTPS policy fetch failures SHOULD be rate-limited to at least five minutes per version ID to avoid overwhelming recipients.
+section: "3.3"
+rfc2119_level: SHOULD
+topics:
+    - email
+    - tls
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

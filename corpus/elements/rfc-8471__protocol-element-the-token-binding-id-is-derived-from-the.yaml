@@ -1,0 +1,10 @@
+document: rfc-8471
+kind: protocol-element
+summary: The Token Binding ID is derived from the TokenBinding structure by discarding the type, signature, and extensions, leaving key_parameters, key_length, and the public key. For RSA, the modulus and exponent are big-endian with leading zeros omitted; for ecdsap256, the uncompressed X and Y coordinates are 32-byte big-endian values with leading zeros preserved.
+section: "3.2"
+topics:
+    - tls
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8471
+kind: normative-requirement
+summary: If the Token Binding message does not contain at least one TokenBinding structure, or if any signature is invalid, the server MUST reject the binding. If a Token Binding is rejected, any associated bound tokens presented on the current TLS connection MUST also be rejected.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

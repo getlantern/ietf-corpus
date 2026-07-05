@@ -1,0 +1,9 @@
+document: rfc-8461
+kind: design-rationale
+summary: Implementers are advised against a 'two-pass' model that pre-filters the MX candidate list by policy validity before attempting delivery, as this risks message loops and incorrect behavior. Instead, implementers should traverse MX candidates in the normal priority order, treating MTA-STS-invalid candidates as transiently unreachable.
+section: "8.4"
+topics:
+    - email
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

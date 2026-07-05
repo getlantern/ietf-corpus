@@ -1,0 +1,9 @@
+document: rfc-8471
+kind: security-consideration
+summary: The triple handshake attack (TRIPLE-HS) is a known vulnerability in TLS 1.2 and older that allows an attacker to synchronize keying material between TLS connections, enabling successful replay of bound tokens. Token Binding MUST NOT be negotiated with these versions without the extended master secret and renegotiation indication extensions.
+section: "7.4"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

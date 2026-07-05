@@ -1,0 +1,12 @@
+document: rfc-8461
+kind: normative-requirement
+summary: The Policy Host HTTPS server MUST present an X.509 certificate valid for the 'mta-sts' DNS-ID (e.g., 'mta-sts.example.com'), chaining to a root CA trusted by the Sending MTA, and must be non-expired. Matching is performed only against DNS-ID identifiers per RFC 6125.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - email
+    - tls
+    - pkix
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

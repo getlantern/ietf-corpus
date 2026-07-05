@@ -1,0 +1,11 @@
+document: rfc-8470
+kind: security-consideration
+summary: Using early data exposes a client to the risk that their request is replayed by an attacker. Replayed or retried requests can produce different side effects on the server and may be used for traffic analysis to recover information about requests or target resources, even when content is confidential (via response length differences).
+section: "6"
+topics:
+    - security
+    - tls
+    - http
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

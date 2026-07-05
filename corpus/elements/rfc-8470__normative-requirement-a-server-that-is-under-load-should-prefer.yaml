@@ -1,0 +1,11 @@
+document: rfc-8470
+kind: normative-requirement
+summary: A server that is under load SHOULD prefer rejecting TLS early data as a whole rather than accepting early data and selectively processing requests, to avoid amplifying load through client retries triggered by 503 or 425 responses.
+section: "6.3"
+rfc2119_level: SHOULD
+topics:
+    - http
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8461
+kind: state-machine
+summary: 'Policy application control flow: (1) check for a non-expired cached policy, else attempt to fetch a new one; (2) for each candidate MX in priority order, attempt delivery enforcing STARTTLS and certificate validity if mode is ''enforce'', skipping failing candidates; (3) a message delivery attempt MUST NOT be permanently failed until the sender has checked for a new policy via the ''_mta-sts'' TXT ''id'' field.'
+section: "5.1"
+topics:
+    - email
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8461
+kind: security-consideration
+summary: Weak 'mx' policy patterns (e.g., '*.example.com') can allow any host in the domain with a valid CA-signed certificate to be treated as a valid MX by MTA-STS validation, including dynamically assigned or user-controlled hostnames. Policy authors must carefully scope MX patterns.
+section: "10.4"
+topics:
+    - email
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8470
+kind: normative-requirement
+summary: A gateway MUST NOT forward requests received in early data unless it knows the origin server understands the Early-Data header field and will correctly generate a 425 (Too Early) status code. An uncertain gateway SHOULD delay forwarding until the TLS handshake completes or respond with 425 directly.
+section: "6.1"
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

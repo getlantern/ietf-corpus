@@ -1,0 +1,10 @@
+document: rfc-8461
+kind: normative-requirement
+summary: If a valid TXT record is found but no policy can be fetched via HTTPS and there is no valid non-expired cached policy, senders MUST continue delivery as though the domain has not implemented MTA-STS. Conversely, if no live policy is discoverable but a valid cached policy exists, the sender MUST apply that cached policy.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - email
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

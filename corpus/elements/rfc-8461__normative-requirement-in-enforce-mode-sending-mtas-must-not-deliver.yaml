@@ -1,0 +1,11 @@
+document: rfc-8461
+kind: normative-requirement
+summary: In 'enforce' mode, Sending MTAs MUST NOT deliver the message to hosts that fail MX matching or certificate validation or that do not support STARTTLS. When a message fails due to an enforce policy, a compliant MTA MUST NOT permanently fail delivery before checking via DNS for the presence of an updated policy.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

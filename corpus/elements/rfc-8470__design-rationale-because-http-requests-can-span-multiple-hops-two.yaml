@@ -1,0 +1,10 @@
+document: rfc-8470
+kind: design-rationale
+summary: 'Because HTTP requests can span multiple hops, two explicit signaling mechanisms are needed: the Early-Data header field (to indicate a request arrived in early data on a prior hop) and the 425 (Too Early) status code (to trigger a retry). Gateways typically lack the information to decide replay safety; only the origin server has that context.'
+section: "5"
+topics:
+    - http
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8470
+kind: security-consideration
+summary: In protocols with out-of-order delivery such as QUIC, early data can arrive after the handshake completes. A server MAY process such requests after handshake completion only if it can rely on other instances correctly handling replays of the same requests.
+section: "6.4"
+topics:
+    - security
+    - tls
+    - quic
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

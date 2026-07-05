@@ -1,0 +1,11 @@
+document: rfc-8461
+kind: security-consideration
+summary: 'MTA-STS is vulnerable to policy-discovery suppression attacks: an attacker who can block DNS responses can prevent senders from discovering the MTA-STS policy, effectively downgrading security. The sender policy cache mitigates this by reducing discovery frequency; proactive pre-expiry refresh further reduces the attack window.'
+section: "10.2"
+topics:
+    - email
+    - tls
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

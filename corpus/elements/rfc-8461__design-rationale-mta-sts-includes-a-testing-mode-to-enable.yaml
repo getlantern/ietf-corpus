@@ -1,0 +1,10 @@
+document: rfc-8461
+kind: design-rationale
+summary: MTA-STS includes a 'testing' mode to enable soft deployments where senders report failures without blocking delivery. This allows policy authors to verify correct configuration before switching to 'enforce' mode, a capability not available in DANE which only supports partial deployment via per-MX TLSA records.
+section: "2"
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

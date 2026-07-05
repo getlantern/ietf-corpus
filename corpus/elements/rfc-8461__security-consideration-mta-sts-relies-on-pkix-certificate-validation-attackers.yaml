@@ -1,0 +1,11 @@
+document: rfc-8461
+kind: security-consideration
+summary: MTA-STS relies on PKIX certificate validation; attackers who obtain a valid certificate for the targeted mail service (e.g., by compromising a CA) can circumvent STS authentication entirely. This is a known limitation versus DNSSEC/DANE. Implementers are recommended to support certificate revocation via OCSP or CRLs.
+section: "10.1"
+topics:
+    - email
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

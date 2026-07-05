@@ -1,0 +1,11 @@
+document: rfc-8470
+kind: normative-requirement
+summary: 'An intermediary MUST NOT use early data when forwarding a request unless early data was used on a previous hop, or it has out-of-band knowledge that the request can be retried safely. Absent better information, this means the request must have arrived in early data or with Early-Data: 1.'
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

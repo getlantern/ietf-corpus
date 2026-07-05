@@ -1,0 +1,10 @@
+document: rfc-8463
+kind: design-rationale
+summary: Because Ed25519 public keys are only 256 bits (44 base64 octets), DKIM DNS key records will generally fit in a single 255-byte TXT string, avoiding interoperability problems with DNS provisioning software that cannot handle multistring TXT records.
+section: "3"
+topics:
+    - email
+    - crypto
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
