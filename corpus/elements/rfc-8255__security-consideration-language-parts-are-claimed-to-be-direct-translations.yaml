@@ -1,0 +1,9 @@
+document: rfc-8255
+kind: security-consideration
+summary: Language parts are claimed to be direct translations of the original but may contain undesirable or malicious content. A spam or content filter that does not scan all parts could miss harmful material in alternate language parts. The risk is mitigated because RFC 2046 requires unknown multipart subtypes to be treated as 'multipart/mixed', causing each part to be scanned individually.
+section: "10"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

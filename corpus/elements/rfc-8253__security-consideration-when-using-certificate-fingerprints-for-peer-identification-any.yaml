@@ -1,0 +1,12 @@
+document: rfc-8253
+kind: security-consideration
+summary: When using certificate fingerprints for peer identification, any two certificates producing the same hash value are considered the same peer. SHA-256 is mandated, but implementations should track cryptographic advances; a future revision may require stronger hash functions.
+section: "7"
+topics:
+    - tls
+    - security
+    - crypto
+    - pkix
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

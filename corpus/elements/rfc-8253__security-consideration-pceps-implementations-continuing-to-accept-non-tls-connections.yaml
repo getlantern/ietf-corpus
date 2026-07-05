@@ -1,0 +1,10 @@
+document: rfc-8253
+kind: security-consideration
+summary: PCEPS implementations continuing to accept non-TLS connections are susceptible to downgrade attacks per RFC 7457. An attacker can remove StartTLS messages or inject a PCErr suggesting non-TLS reconnection, since StartTLS messages are sent in the clear before TLS is established.
+section: "7"
+topics:
+    - tls
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8261
+kind: design-rationale
+summary: The inability to process ICMP or ICMPv6 messages does not introduce a security issue. When SCTP runs over connectionless layers (IPv4, IPv6, UDP), processing ICMP is required to protect other non-SCTP nodes; since DTLS is connection-oriented, that protection is unnecessary.
+section: "8"
+topics:
+    - sctp
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

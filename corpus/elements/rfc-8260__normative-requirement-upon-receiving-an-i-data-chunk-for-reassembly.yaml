@@ -1,0 +1,10 @@
+document: rfc-8260
+kind: normative-requirement
+summary: Upon receiving an I-DATA chunk for reassembly, the receiver MUST use SID to identify the stream, the U bit to determine ordered/unordered, the MID to identify the user message, and the FSN for reassembly — not the TSN. The receiver MUST NOT make any assumption about the sender's TSN assignments.
+section: 2.2.3
+rfc2119_level: MUST
+topics:
+    - sctp
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

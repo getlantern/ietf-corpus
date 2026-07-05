@@ -1,0 +1,11 @@
+document: rfc-8253
+kind: normative-requirement
+summary: A PCC supporting PCEPS but allowing non-PCEPS connections MUST first try to establish PCEPS by sending a StartTLS message; if it receives a PCErr, it MAY retry without PCEPS. Re-establishing without TLS SHOULD be limited to only one attempt.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,6 @@
+document: rfc-8251
+kind: protocol-element
+summary: 'The SILK resampler buffer (silk/resampler_private_IIR_FIR.c) had three bugs: memcpy used sizeof(opus_int32) for an opus_int16 buffer, the buffer was sized to RESAMPLER_MAX_BATCH_SIZE_IN but needed 2× that (nSamplesIn<<1), and overlapping memcpy regions required switching to memmove. All three are corrected in this update.'
+section: "5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8262
+kind: design-rationale
+summary: Prior to this document, implementations were forced to wrap a single MIME entity in an unnecessary multipart message-body simply to attach a Content-ID for referencing (e.g., in INVITE with location, REFER with URI list). This document eliminates that overhead by allowing the SIP Content-ID header field to identify a non-multipart message-body directly.
+section: "1.3"
+topics:
+    - sip
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

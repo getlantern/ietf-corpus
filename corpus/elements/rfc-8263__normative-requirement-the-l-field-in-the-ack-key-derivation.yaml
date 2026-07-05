@@ -1,0 +1,10 @@
+document: rfc-8263
+kind: normative-requirement
+summary: The L field in the ack_key derivation MUST match the length of the base_key (e.g., 512 bits for PRF-HMAC-SHA-256) and is represented as two octets in network byte order. If the base_key or derived ack_key is smaller than the prf block size it is zero-filled to the right.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

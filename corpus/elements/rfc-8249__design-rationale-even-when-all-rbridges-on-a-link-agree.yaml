@@ -1,0 +1,8 @@
+document: rfc-8249
+kind: design-rationale
+summary: Even when all RBridges on a link agree on Lz, an intermediate bridge (non-RBridge) with a smaller port MTU can silently discard PDUs. For example, if three RBridges agree on Lz=1800 but a bridge between two of them has port MTU 1700, PDUs of size 1800 are dropped. This motivates actual link MTU testing rather than relying solely on advertised values.
+section: "2.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8263
+kind: normative-requirement
+summary: When a GROUPKEY-PUSH message includes a Delete payload for the KEK protecting it, the GCKS SHOULD NOT delete the KEK until it has given GMs the opportunity to acknowledge receipt, which could be several seconds due to jitter.
+section: "6"
+rfc2119_level: SHOULD NOT
+topics:
+    - security
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

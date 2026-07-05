@@ -1,0 +1,8 @@
+document: rfc-8249
+kind: state-machine
+summary: A binary search MTU testing algorithm is defined. Step 0 probes at link-wide Lz; on success, MTU is set to Lz. On failure, it probes at 1470 (setting a 'failed minimum MTU' flag on total failure) and initializes bounds. Step 1 iteratively bisects [lowerBound, upperBound] updating bounds based on MTU-ack reception, stopping when lowerBound >= upperBound or after n iterations (default n=5). Default retry count k=3, default RTT estimate 5 ms.
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

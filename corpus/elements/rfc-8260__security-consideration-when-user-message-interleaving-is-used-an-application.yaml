@@ -1,0 +1,10 @@
+document: rfc-8260
+kind: security-consideration
+summary: When user message interleaving is used, an application must provide a reassembly buffer for each incoming stream rather than a single buffer per association, and must protect itself against excessive resource consumption from these per-stream buffers. Applications must explicitly consent to support the more complex reassembly required.
+section: "6"
+topics:
+    - sctp
+    - security
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8250
+kind: design-rationale
+summary: PDM does not require time synchronization between session partners because only time differentials (deltas) computed locally are placed in packets. Each host uses its own clock exclusively, and round-trip delay is derived by arithmetic combination of the deltas, not by comparing absolute timestamps across hosts.
+section: "1.2"
+topics:
+    - ip
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

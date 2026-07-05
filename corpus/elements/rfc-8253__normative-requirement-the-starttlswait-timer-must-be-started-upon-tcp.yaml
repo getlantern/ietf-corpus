@@ -1,0 +1,11 @@
+document: rfc-8253
+kind: normative-requirement
+summary: The StartTLSWait timer MUST be started upon TCP connection establishment. A RECOMMENDED value is 60 seconds; if it expires without receiving StartTLS, PCErr, or Open, the speaker MUST send PCErr Error-Type 25 Error-value 5 and release the TCP connection. The StartTLSWait timer MUST NOT be less than the OpenWait timer.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8261
+kind: design-rationale
+summary: SCTP associations over DTLS are constrained to be single-homed because DTLS does not expose any address management to its upper layer, making it impossible for SCTP to use multiple IP addresses for multihoming as it would over IPv4/IPv6 directly.
+section: "6.1"
+topics:
+    - sctp
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

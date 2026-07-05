@@ -1,0 +1,9 @@
+document: rfc-8249
+kind: security-consideration
+summary: A forged TRILL Hello containing an erroneous originatingSNPBufferSize APPsub-TLV can reduce Lz to Sz, disabling the link-MTU optimization but not causing a protocol failure. Protection against forged IS-IS PDUs, including such Hellos, can be obtained through IS-IS PDU cryptographic authentication per RFC 5310.
+section: "9"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

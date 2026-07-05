@@ -1,0 +1,11 @@
+document: rfc-8261
+kind: normative-requirement
+summary: The implementation MUST NOT rely on processing ICMP or ICMPv6 packets, since the SCTP layer most likely is unable to access the SCTP common header in the plaintext that triggered the ICMP message. This applies in particular to path MTU discovery performed by SCTP.
+section: "6.1"
+rfc2119_level: MUST NOT
+topics:
+    - sctp
+    - tls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

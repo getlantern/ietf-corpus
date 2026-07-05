@@ -1,0 +1,6 @@
+document: rfc-8251
+kind: design-rationale
+summary: In hybrid mode at low bitrate, only one CELT band (8–9.6 kHz) may be coded, causing the second band (9.6–12 kHz) to fall back to white noise via LCG rather than folding. This fallback can produce audible pre-echo on transients. The fix repeats part of the first band in the second band's folding, eliminating the forced LCG fallback.
+section: "9"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

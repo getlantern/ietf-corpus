@@ -1,0 +1,11 @@
+document: rfc-8253
+kind: normative-requirement
+summary: A PCEP speaker receiving a StartTLS message after any other PCEP exchange has taken place MUST treat it as an unexpected message, reply with PCErr Error-Type 25 Error-value 1 (Reception of StartTLS after any PCEP exchange), and MUST close the TCP connection.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

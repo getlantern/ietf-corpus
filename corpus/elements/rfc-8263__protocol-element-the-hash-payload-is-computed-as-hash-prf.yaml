@@ -1,0 +1,10 @@
+document: rfc-8263
+kind: protocol-element
+summary: 'The HASH payload is computed as HASH = prf(ack_key, SEQ | ID), where ack_key is derived via KDF in feedback mode (NIST SP800-108): ack_key = prf(base_key, "GROUPKEY-PUSH ACK" | SPI | L). The label is null-terminated ASCII; SPI is the Initiator followed by Responder Cookie from the GROUPKEY-PUSH HDR.'
+section: "3.2"
+topics:
+    - security
+    - crypto
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

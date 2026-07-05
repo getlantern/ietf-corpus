@@ -1,0 +1,6 @@
+document: rfc-8251
+kind: protocol-element
+summary: Hybrid folding in celt/bands.c is updated so the second CELT band (band 18, start+1) always has sufficient folding data by copying the tail of the first band's norm buffer. This avoids white-noise fallback when the first band alone is narrower than the second.
+section: "9"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8263
+kind: normative-requirement
+summary: A GM receiving a GROUPKEY-PUSH as multicast MAY introduce jitter in its ACK timing, but MUST NOT delay sending the Acknowledgement Message for more than 5 seconds. A GCKS SHOULD NOT declare an ACK as missing until it has waited at least 10 seconds. Both timers SHOULD be configurable.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

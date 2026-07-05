@@ -1,0 +1,6 @@
+document: rfc-8251
+kind: design-rationale
+summary: Opus intensity stereo optionally encodes two channels 180 degrees out of phase per band for better stereo quality, but this causes energy cancellation when downmixed to mono. The chosen fix is a decoder-side option to suppress the phase shift rather than changing the encoding, because changing encoding would break backward compatibility.
+section: "10"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8263
+kind: security-consideration
+summary: When REKEY_ACK_KEK is used, impersonation of a victim GM by another authorized GM is possible because the KEK is a group secret. An attacker GM can falsely claim the victim received a GROUPKEY-PUSH, potentially causing the victim to miss retransmissions. REKEY_ACK_LKH mitigates this via pairwise keys.
+section: "7.1"
+topics:
+    - security
+    - vpn
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

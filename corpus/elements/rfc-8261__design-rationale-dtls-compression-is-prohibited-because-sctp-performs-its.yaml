@@ -1,0 +1,9 @@
+document: rfc-8261
+kind: design-rationale
+summary: DTLS compression is prohibited because SCTP performs its own segmentation and reassembly based on the path MTU; if DTLS compressed the SCTP payload, the apparent message sizes would no longer correspond to actual IP packet sizes, breaking SCTP's MTU-based fragmentation logic.
+section: "5"
+topics:
+    - sctp
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

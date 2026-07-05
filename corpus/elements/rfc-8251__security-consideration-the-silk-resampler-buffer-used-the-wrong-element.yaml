@@ -1,0 +1,8 @@
+document: rfc-8251
+kind: security-consideration
+summary: The SILK resampler buffer used the wrong element size (opus_int32 instead of opus_int16) in memcpy calls, and the buffer was undersized. While the overlap was unlikely to be exploitable in practice, the undefined behavior was a potential security risk.
+section: "5"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8260
+kind: design-rationale
+summary: 'SCTP''s original design used the TSN for three purposes: reliable transfer identification, fragment reassembly sequencing, and stream sequence numbering. This overloading required all fragments of a user message to have consecutive TSNs, causing sender-side head-of-line blocking when large messages occupied consecutive TSN space and prevented interleaving.'
+section: "1.1"
+topics:
+    - sctp
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

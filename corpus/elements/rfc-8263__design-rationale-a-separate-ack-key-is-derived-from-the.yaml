@@ -1,0 +1,9 @@
+document: rfc-8263
+kind: design-rationale
+summary: A separate ack_key is derived from the base_key rather than using the KEK directly, so that the acknowledgement's authentication key is cryptographically distinct from the group encryption key. This limits the exposure of the KEK material through the unencrypted ACK messages.
+section: "3.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

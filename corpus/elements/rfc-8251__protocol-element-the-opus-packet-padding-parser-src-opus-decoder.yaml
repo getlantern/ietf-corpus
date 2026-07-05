@@ -1,0 +1,6 @@
+document: rfc-8251
+kind: protocol-element
+summary: The Opus packet padding parser (src/opus_decoder.c ~line 596) must decrement the signed 'len' value by each padding byte rather than accumulating into a separate counter, preventing integer overflow when padding signals more than 2^31-1 bytes.
+section: "4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

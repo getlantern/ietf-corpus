@@ -1,0 +1,8 @@
+document: rfc-8249
+kind: interoperability-note
+summary: CSNPs and PSNPs formatted up to link-wide Lz are processed normally even if received at larger-than-Sz sizes. In the 2-Way state (before MTU testing), link-wide Lz may exceed the actual link MTU, causing discards; after successful MTU testing, PDUs are bounded by the tested size and will get through.
+section: "6"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
