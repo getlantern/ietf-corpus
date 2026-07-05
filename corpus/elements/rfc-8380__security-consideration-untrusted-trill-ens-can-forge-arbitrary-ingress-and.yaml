@@ -1,0 +1,8 @@
+document: rfc-8380
+kind: security-consideration
+summary: Untrusted TRILL-ENs can forge arbitrary ingress and egress nicknames in TRILL headers, causing incorrect data-plane MAC learning at egress RBridges and directing future traffic to wrong RBridges. RBridge ports must only accept TRILL-encapsulated frames from trusted end stations.
+section: "7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8375
+kind: design-rationale
+summary: The delegation of 'home.arpa.' must be insecure (no DS record) rather than providing an authenticated denial of existence because a validating resolver lacking special-case logic for 'home.arpa.' would treat an authenticated denial as proof that names under 'home.arpa.' don't exist, causing validation failures on homenets.
+section: "6.2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

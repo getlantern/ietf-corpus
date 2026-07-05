@@ -1,0 +1,8 @@
+document: rfc-8381
+kind: protocol-element
+summary: 'Error responses are sent by setting the SL flag in the RBridge Channel Header. For RBridge-to-RBridge messages, the TRILL Header is modified: M bit cleared, egress nickname set to the received ingress nickname, ingress nickname set to a local nickname, and hop count set to the usual value. For RBridge-to-end-station messages, Outer.MacDA is set to the received Outer.MacSA and Outer.MacSA to the sending port''s MAC address.'
+section: "3.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

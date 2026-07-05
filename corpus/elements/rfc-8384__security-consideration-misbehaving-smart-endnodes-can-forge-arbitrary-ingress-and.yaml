@@ -1,0 +1,9 @@
+document: rfc-8384
+kind: security-consideration
+summary: Misbehaving Smart Endnodes can forge arbitrary ingress and egress nicknames in TRILL headers, causing remote RBridges to misdirect future traffic via data-plane learning. RBridge ports MUST NOT be configured for Smart Endnodes unless end stations are trusted or adequately authenticated.
+section: "7"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

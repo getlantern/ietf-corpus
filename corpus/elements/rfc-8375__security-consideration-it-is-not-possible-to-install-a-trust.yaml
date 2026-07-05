@@ -1,0 +1,10 @@
+document: rfc-8375
+kind: security-consideration
+summary: It is not possible to install a trust anchor (DS RR) for 'home.arpa.' in the '.arpa' zone because no single key-signing key would work for a non-globally-unique zone. Consequently, DNSSEC signing and validation of names within 'home.arpa.' is not possible unless a trust anchor for that specific instance is manually configured.
+section: "6.2"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

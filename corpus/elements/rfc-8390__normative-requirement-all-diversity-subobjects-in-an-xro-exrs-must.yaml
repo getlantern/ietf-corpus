@@ -1,0 +1,10 @@
+document: rfc-8390
+kind: normative-requirement
+summary: All Diversity subobjects in an XRO/EXRS MUST contain the same Diversity Identifier Type. If a Path message contains an XRO/EXRS with multiple Diversity subobjects of different DI Types, the processing node MUST return a PathErr with error code 'Routing Problem' (24) and error sub-code 'XRO/EXRS Too Complex' (68/69).
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8392
+kind: security-consideration
+summary: For Nested CWTs requiring both signing and encryption, producers normally should sign first and then encrypt the result (encrypting the signature). This prevents signature-stripping attacks and provides signer privacy; signatures over encrypted text are not valid in many jurisdictions.
+section: "8"
+topics:
+    - cbor
+    - jose
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

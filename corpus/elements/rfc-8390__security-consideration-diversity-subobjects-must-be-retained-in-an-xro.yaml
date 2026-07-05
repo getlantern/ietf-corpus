@@ -1,0 +1,11 @@
+document: rfc-8390
+kind: security-consideration
+summary: Diversity subobjects MUST be retained in an XRO crossing an administrative boundary, even if other subobjects are removed. Removing an XRO containing diversity subobjects at an administrative boundary would silently drop the diversity request, causing path computation to likely produce a non-diverse path. This retention is based on operator policy and mutual agreement.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

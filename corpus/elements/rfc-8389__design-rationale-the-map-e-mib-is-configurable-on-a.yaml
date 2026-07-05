@@ -1,0 +1,10 @@
+document: rfc-8389
+kind: design-rationale
+summary: The MAP-E MIB is configurable on a per-interface basis and depends on the IF-MIB (RFC 2863), because each MAP-E tunnel endpoint acts as a virtual interface with a corresponding ifEntry indexed by ifIndex. This reuse of IF-MIB avoids duplicating generic interface management objects.
+section: "4"
+topics:
+    - snmp
+    - mobility
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

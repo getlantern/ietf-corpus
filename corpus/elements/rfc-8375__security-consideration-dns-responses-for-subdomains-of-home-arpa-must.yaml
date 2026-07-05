@@ -1,0 +1,9 @@
+document: rfc-8375
+kind: security-consideration
+summary: DNS responses for subdomains of 'home.arpa.' MUST NOT be considered more trustworthy than responses for any other DNS query; because 'home.arpa.' is not globally scoped and cannot be DNSSEC-secured via the root trust anchor, users may receive surprising results when roaming to different homenets.
+section: "6.1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

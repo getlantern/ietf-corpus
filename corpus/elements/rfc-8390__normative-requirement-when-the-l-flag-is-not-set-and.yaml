@@ -1,0 +1,10 @@
+document: rfc-8390
+kind: normative-requirement
+summary: When the L-flag is not set and the excluded path referenced in the XRO subobject is unknown to the processing node, the node SHOULD ignore the Diversity XRO subobject and proceed with signaling. After sending the Resv, the node MUST return a PathErr with error code 'Notify Error' (25) and sub-code 'Route of XRO LSP identifier unknown' (14).
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

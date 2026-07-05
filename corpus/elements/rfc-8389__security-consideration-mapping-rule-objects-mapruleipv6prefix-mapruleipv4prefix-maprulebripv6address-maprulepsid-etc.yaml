@@ -1,0 +1,11 @@
+document: rfc-8389
+kind: security-consideration
+summary: Mapping rule objects (mapRuleIPv6Prefix, mapRuleIPv4Prefix, mapRuleBRIPv6Address, mapRulePSID, etc.) are sensitive because they can be used to deduce customer IPv4/IPv6 topologies and address-sharing ratios, potentially enabling targeted attacks against MAP nodes. GET and NOTIFY access should be controlled and values encrypted when transmitted via SNMP.
+section: "7"
+topics:
+    - security
+    - snmp
+    - privacy
+    - mobility
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

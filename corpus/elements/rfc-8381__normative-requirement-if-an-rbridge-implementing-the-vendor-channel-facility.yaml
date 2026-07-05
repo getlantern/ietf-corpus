@@ -1,0 +1,9 @@
+document: rfc-8381
+kind: normative-requirement
+summary: If an RBridge implementing the Vendor Channel facility receives a Vendor Channel message with RBridge-Channel-Specific Data less than 4 bytes, it MUST extend the data through the VERR field, set VERR to 1, and return the packet as an error response.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

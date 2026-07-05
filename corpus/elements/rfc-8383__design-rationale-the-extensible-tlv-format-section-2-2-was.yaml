@@ -1,0 +1,8 @@
+document: rfc-8383
+kind: design-rationale
+summary: The extensible TLV format (Section 2.2) was chosen to support multiple encoding strategies for VLANs and FGLs — blocks are most efficient for consecutive values, bit maps for scattered values in a limited range, and lists for widely scattered values — allowing senders to optimize message size depending on the distribution of identifiers to flush.
+section: "2.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

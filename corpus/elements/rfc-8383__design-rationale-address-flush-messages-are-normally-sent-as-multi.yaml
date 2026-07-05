@@ -1,0 +1,8 @@
+document: rfc-8383
+kind: design-rationale
+summary: Address Flush messages are normally sent as multi-destination TRILL packets (M-bit=1) over the Data Label VLAN or FGL so they reach all edge RBridges offering service in that label. A Management VLAN option is provided to allow flush messages that explicitly specify the Data Labels to flush, enabling unicast or cross-VLAN delivery.
+section: "2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

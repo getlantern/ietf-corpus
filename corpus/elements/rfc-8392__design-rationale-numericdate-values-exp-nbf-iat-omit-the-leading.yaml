@@ -1,0 +1,9 @@
+document: rfc-8392
+kind: design-rationale
+summary: NumericDate values (exp, nbf, iat) omit the leading CBOR tag 1 (epoch-based date/time) that would logically prefix them, because the claim definition already specifies the encoding and adding the tag would waste space without adding information.
+section: "2"
+topics:
+    - cbor
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

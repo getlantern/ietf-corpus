@@ -1,0 +1,9 @@
+document: rfc-8381
+kind: normative-requirement
+summary: If the bottom two bits of the first byte of the Vendor ID field are neither 0b00 (OUI) nor 0b10 (CID), the value is invalid and a VERR of 2 MUST be returned, subject to possible rate limiting.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

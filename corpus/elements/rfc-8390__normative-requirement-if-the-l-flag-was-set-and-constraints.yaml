@@ -1,0 +1,10 @@
+document: rfc-8390
+kind: normative-requirement
+summary: If the L-flag was set and constraints become newly satisfied after previously being violated, the processing node MUST send a PathErr with error code 'Notify Error' (25) and sub-code 'Compliant path exists' (16), with PSR flag MUST NOT be set. The source node MAY then move the LSP to a compliant path.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
