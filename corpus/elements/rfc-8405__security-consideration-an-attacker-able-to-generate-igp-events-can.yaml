@@ -1,0 +1,9 @@
+document: rfc-8405
+kind: security-consideration
+summary: An attacker able to generate IGP events can delay IGP convergence by keeping the FSM in SHORT_WAIT or LONG_WAIT states. The LONG_SPF_DELAY state partially mitigates DoS attacks that generate large numbers of IGP events by throttling SPF computation frequency, but it does not prevent the delay itself.
+section: "10"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

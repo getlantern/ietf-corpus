@@ -1,0 +1,8 @@
+document: rfc-8405
+kind: design-rationale
+summary: The algorithm uses elapsed time since the initial IGP event (TIME_TO_LEARN_INTERVAL) rather than a count of SPF computations to drive state transitions. This improves network-wide consistency because different routers may receive the same failure events at different times and thus perform different numbers of SPF computations.
+section: "4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

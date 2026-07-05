@@ -1,0 +1,9 @@
+document: rfc-8408
+kind: normative-requirement
+summary: If a PCRpt message is triggered by a PCUpd or PCInitiate message, the PST in the PCRpt MUST match the PST intended in the triggering message. If it does not match, the PCE MUST send PCErr Error-Type=21, Error-value=2 and close the session.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

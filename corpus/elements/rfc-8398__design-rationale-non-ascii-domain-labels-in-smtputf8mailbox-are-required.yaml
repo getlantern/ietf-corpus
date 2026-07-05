@@ -1,0 +1,10 @@
+document: rfc-8398
+kind: design-rationale
+summary: Non-ASCII domain labels in SmtpUTF8Mailbox are required to be U-labels rather than A-labels to remove the ambiguity of which label encoding is present, simplifying comparison and reducing conversion errors. This document recommends transforming domains to U-labels for comparison rather than A-labels, to reduce conversions as more implementations natively support U-labels.
+section: "3"
+topics:
+    - pkix
+    - email
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,8 @@
+document: rfc-8397
+kind: design-rationale
+summary: The unique nickname approach assigns globally unique nicknames to all TRILL switches across the multilevel campus, so border RBridges do not rewrite nickname fields when packets transition between Level 1 and Level 2, unlike the aggregated nickname approach. This simplifies border RBridge logic and testing/maintenance operations that cross areas, but at the cost of scalability for very large campuses.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

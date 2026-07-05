@@ -1,0 +1,10 @@
+document: rfc-8400
+kind: normative-requirement
+summary: A backup egress node MUST be configured on the primary egress node of the LSP to protect it if and only if the backup egress node is not configured on the ingress node; if so, the primary egress node MUST send its upstream node a Resv message with an SERO for protecting the primary egress node.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,11 @@
+document: rfc-8402
+kind: security-consideration
+summary: By default, SR operates within a trusted domain and traffic MUST be filtered at the domain boundaries. For SR-MPLS, domain boundary routers MUST filter any external traffic destined to labels within the SRGB, SRLB, or outside these blocks. Explicit routing information MUST NOT be leaked through the boundaries of the administered domain.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

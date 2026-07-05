@@ -1,0 +1,10 @@
+document: rfc-8397
+kind: security-consideration
+summary: Malicious devices may forge NickBlockFlags APPsub-TLVs to announce large nickname ranges, thereby attracting TRILL data packets destined for other RBridges. RBridges SHOULD be configured to use IS-IS Authentication TLV (10) in IS-IS PDUs containing the NickBlockFlags APPsub-TLV so that forged PDUs can be detected and discarded per RFC 5310.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

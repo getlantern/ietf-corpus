@@ -1,0 +1,9 @@
+document: rfc-8402
+kind: design-rationale
+summary: Identical SRGBs are strongly recommended on all nodes in an SR-MPLS domain because computing the label following an anycast segment requires knowing which label a set of topologically-equal next-hops will use. Without identical SRGBs, the label stack following an anycast segment cannot be correctly computed and misrouting (including VPN traffic leakage) may result.
+section: 3.3.1
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

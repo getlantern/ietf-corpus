@@ -1,0 +1,10 @@
+document: rfc-8410
+kind: security-consideration
+summary: The procedures for deriving a public key from a private key differ between Diffie-Hellman (X25519/X448) and Edwards Signatures (Ed25519/Ed448). Consequently, the same private key will not produce the same public key for both operations, and the same public key cannot be used for both ECDH and EdDSA.
+section: "12"
+topics:
+    - crypto
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

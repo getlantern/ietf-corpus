@@ -1,0 +1,9 @@
+document: rfc-8400
+kind: design-rationale
+summary: When a backup egress node is not explicitly configured, the primary and backup egress nodes SHOULD share the same local address (acting as a 'virtual node'), with the cost to that address on the backup being much higher than on the primary, enabling transparent failover without changes to the ingress VRF routing.
+section: "5.4"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

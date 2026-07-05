@@ -1,0 +1,9 @@
+document: rfc-8408
+kind: normative-requirement
+summary: If the PCE does not support the PST requested in a PCReq, it MUST send PCErr with Error-Type=21, Error-value=1 (Unsupported path setup type) and close the PCEP session. If PSTs in PCReq and PCRep do not match, the PCC MUST send the same error and close the session.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

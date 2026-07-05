@@ -1,0 +1,9 @@
+document: rfc-8408
+kind: normative-requirement
+summary: When a stateful PCE sends a PCUpd or PCInitiate message, it MUST include the PATH-SETUP-TYPE TLV in the SRP object unless the PST is RSVP-TE. If the PCC does not support the PST, it MUST send PCErr Error-Type=21, Error-value=1 and close the session.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

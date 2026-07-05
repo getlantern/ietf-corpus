@@ -1,0 +1,6 @@
+document: rfc-8412
+kind: design-rationale
+summary: EID Epoch values should not be assigned sequentially because loss of state (e.g., SWIMA-PC reverts to a snapshot) could cause an earlier sequential epoch value to be reused, destroying the ordering invariant. Non-sequential epoch generation (e.g., timestamp-based or random) minimizes the chance of reuse even after state loss.
+section: 3.7.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,10 @@
+document: rfc-8399
+kind: security-consideration
+summary: CAs that fail to validate IDN code points per IDNA2008 (RFC 5892) may issue certificates containing invalid A-labels or U-labels that cannot be correctly represented in the DNS, potentially leading to naming mismatches or spoofing. The CA/Browser Forum also offers guidance on internal server names in certificates.
+section: "3"
+topics:
+    - pkix
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

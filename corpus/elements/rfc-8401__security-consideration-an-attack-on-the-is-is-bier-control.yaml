@@ -1,0 +1,10 @@
+document: rfc-8401
+kind: security-consideration
+summary: An attack on the IS-IS BIER control plane cannot cause a BitString DoS attack because BFIRs independently decide which bits to set in encapsulations and are not influenced by IS-IS BIER advertisements. The IS-IS advertisements only inform forwarding table construction, not bit selection.
+section: "7"
+topics:
+    - security
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

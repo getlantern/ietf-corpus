@@ -1,0 +1,9 @@
+document: rfc-8402
+kind: normative-requirement
+summary: 'Parallel adjacency suppression MUST NOT be performed by the IGP, so that all Adj-SIDs representing IGP adjacencies between two nodes can be advertised. When a node binds Adj-SID V to local data-link L it MUST install a FIB entry: Incoming Active Segment = V, Ingress Operation = NEXT, Egress Interface = L.'
+section: "3.4"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

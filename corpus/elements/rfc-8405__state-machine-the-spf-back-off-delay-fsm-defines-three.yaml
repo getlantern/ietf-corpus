@@ -1,0 +1,8 @@
+document: rfc-8405
+kind: state-machine
+summary: 'The SPF Back-Off Delay FSM defines three states — QUIET, SHORT_WAIT, and LONG_WAIT — controlled by three timers (SPF_TIMER, HOLDDOWN_TIMER, LEARN_TIMER). Transitions occur on IGP events or timer expirations: QUIET→SHORT_WAIT on first IGP event, SHORT_WAIT→LONG_WAIT on LEARN_TIMER expiration, and either LONG_WAIT or SHORT_WAIT→QUIET on HOLDDOWN_TIMER expiration.'
+section: "5.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
