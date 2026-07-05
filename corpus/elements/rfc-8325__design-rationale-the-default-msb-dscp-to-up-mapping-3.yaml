@@ -1,0 +1,9 @@
+document: rfc-8325
+kind: design-rationale
+summary: 'The default ''MSB'' DSCP-to-UP mapping (3 high-order bits of DSCP → UP) is widely deployed but produces systematic conflicts with RFC 4594 recommendations: EF maps to AC_VI instead of AC_VO, CS3/Broadcast Video maps to AC_BE instead of AC_VI, CS2/OAM maps to AC_BK instead of AC_BE, and Low-Latency Data maps to AC_BK.'
+section: "2.3"
+topics:
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

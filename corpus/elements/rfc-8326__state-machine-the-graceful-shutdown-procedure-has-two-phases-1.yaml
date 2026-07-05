@@ -1,0 +1,9 @@
+document: rfc-8326
+kind: state-machine
+summary: 'The graceful shutdown procedure has two phases: (1) pre-configuration, where receivers install an inbound policy setting LOW LOCAL_PREF for paths tagged with GRACEFUL_SHUTDOWN; and (2) maintenance time, where the initiator tags outbound and inbound paths with GRACEFUL_SHUTDOWN and LOW LOCAL_PREF, waits for convergence, then shuts the session.'
+section: "4"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

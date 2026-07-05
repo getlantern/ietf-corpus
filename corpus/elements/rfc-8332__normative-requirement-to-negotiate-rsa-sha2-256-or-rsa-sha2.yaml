@@ -1,0 +1,10 @@
+document: rfc-8332
+kind: normative-requirement
+summary: To negotiate rsa-sha2-256 or rsa-sha2-512 for server authentication, the client or server includes the algorithm name(s) in the 'server_host_key_algorithms' name-list in SSH_MSG_KEXINIT; the server then sends an 'ssh-rsa' public key and signs with the negotiated algorithm name.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

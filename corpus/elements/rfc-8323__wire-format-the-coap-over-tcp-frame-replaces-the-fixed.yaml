@@ -1,0 +1,8 @@
+document: rfc-8323
+kind: wire-format
+summary: The CoAP over TCP frame replaces the fixed 4-byte UDP header with a variable-length framing header. A 4-bit Len field encodes message length (0–12 = literal bytes; 13 = 8-bit Extended Length minus 13; 14 = 16-bit Extended Length minus 269; 15 = 32-bit Extended Length minus 65805). The Version, Type, and Message ID fields are absent.
+section: "3.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

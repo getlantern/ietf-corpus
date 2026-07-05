@@ -1,0 +1,9 @@
+document: rfc-8326
+kind: design-rationale
+summary: The procedure retains paths to be shut down but with a lowered LOCAL_PREF, rather than withdrawing them, so that alternate paths can be selected and propagated before the session goes down. This ensures routers always have a valid route available during the convergence process.
+section: "4"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

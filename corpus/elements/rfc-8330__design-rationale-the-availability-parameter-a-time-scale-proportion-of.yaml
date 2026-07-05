@@ -1,0 +1,9 @@
+document: rfc-8330
+kind: design-rationale
+summary: The availability parameter (a time-scale proportion of operating time at which a requested bandwidth is ensured) is used instead of a simple bandwidth value because different service types require different availability guarantees — voice typically needs 'five nines' while non-real-time services may accept lower availability — necessitating multiple <availability, bandwidth> pairs per link.
+section: "1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

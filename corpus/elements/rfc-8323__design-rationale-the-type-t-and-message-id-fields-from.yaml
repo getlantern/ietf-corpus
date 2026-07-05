@@ -1,0 +1,8 @@
+document: rfc-8323
+kind: design-rationale
+summary: The Type (T) and Message ID fields from CoAP over UDP are elided in the TCP message format because TCP provides reliable delivery and deduplication, making those fields redundant. The Version field is also elided; if version negotiation is needed in the future, the CSM mechanism was specifically designed to enable that.
+section: "3.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

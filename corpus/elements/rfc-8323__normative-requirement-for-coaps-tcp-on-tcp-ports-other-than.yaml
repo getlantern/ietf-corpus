@@ -1,0 +1,10 @@
+document: rfc-8323
+kind: normative-requirement
+summary: For coaps+tcp on TCP ports other than 5684, the TLS client MUST use the ALPN extension to advertise the "coap" protocol identifier. If the server does not negotiate ALPN or returns no_application_protocol, the client MUST close the connection.
+section: "8.2"
+rfc2119_level: MUST
+topics:
+    - tls
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

@@ -1,0 +1,9 @@
+document: rfc-8322
+kind: security-consideration
+summary: When using TLS 1.3, 0-RTT (Zero Round-Trip Time Resumption) should not be used to prevent replay attacks. An attacker could replay a stored PUT request to revert a resource to an older version, disrupting repository operation without the client's awareness.
+section: "5.3"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

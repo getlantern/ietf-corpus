@@ -1,0 +1,9 @@
+document: rfc-8332
+kind: interoperability-note
+summary: OpenSSH 7.2 (but not 7.2p2) incorrectly encodes the signature algorithm as 'ssh-rsa' even when the request specifies 'rsa-sha2-256' or 'rsa-sha2-512'; the actual hash used is still SHA-256 or SHA-512. A server MAY accept this variant as a good-faith implementation.
+section: "3.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

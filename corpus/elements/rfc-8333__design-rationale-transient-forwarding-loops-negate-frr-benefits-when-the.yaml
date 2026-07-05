@@ -1,0 +1,8 @@
+document: rfc-8333
+kind: design-rationale
+summary: 'Transient forwarding loops negate FRR benefits: when the PLR converges and replaces its FRR path before neighbors converge, a micro-loop forms that drops traffic FRR was protecting. Delaying FIB updates on the failure-adjacent node allows the FRR path to remain active until neighbors have converged.'
+section: "3.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

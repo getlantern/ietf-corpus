@@ -1,0 +1,10 @@
+document: rfc-8332
+kind: security-consideration
+summary: Implementations SHOULD start to disable 'ssh-rsa' (SHA-1) in their default configurations as soon as the new RSA signature algorithms have been widely adopted, while using SSH_MSG_EXT_INFO and 'server-sig-algs' to allow coexistence with legacy deployments during transition.
+section: "5.2"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

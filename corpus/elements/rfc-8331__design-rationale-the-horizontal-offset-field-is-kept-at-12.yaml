@@ -1,0 +1,9 @@
+document: rfc-8331
+kind: design-rationale
+summary: The Horizontal_Offset field is kept at 12 bits to maintain easy conversion to/from SMPTE ST 2038, which also uses a 12-bit Horizontal_Offset field, even though some future formats might require larger values (handled by the 0xFFC special value).
+section: "2.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"

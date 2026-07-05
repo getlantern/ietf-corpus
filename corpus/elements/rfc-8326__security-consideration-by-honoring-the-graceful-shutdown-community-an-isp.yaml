@@ -1,0 +1,9 @@
+document: rfc-8326
+kind: security-consideration
+summary: By honoring the GRACEFUL_SHUTDOWN community, an ISP gives its neighbor (and potentially downstream ASes) the ability to lower the LOCAL_PREF of received paths. A malicious or misconfigured neighbor could abuse this for inbound traffic engineering by falsely declaring prefixes under maintenance.
+section: "6"
+topics:
+    - bgp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-05"
