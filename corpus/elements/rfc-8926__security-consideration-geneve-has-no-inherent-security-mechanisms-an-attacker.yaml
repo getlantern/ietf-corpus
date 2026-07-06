@@ -1,0 +1,11 @@
+document: rfc-8926
+kind: security-consideration
+summary: Geneve has no inherent security mechanisms. An attacker with access to the underlay network can snoop, alter, or inject packets, and compromised endpoints can spoof VNIs to access other tenants' networks. Isolation (separate VLANs, filtering) is recommended within a trusted domain; IPsec or other VPN technologies SHOULD be used when crossing untrusted links such as the general Internet.
+section: "6"
+topics:
+    - security
+    - routing
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

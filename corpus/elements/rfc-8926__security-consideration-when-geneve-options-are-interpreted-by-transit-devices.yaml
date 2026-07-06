@@ -1,0 +1,11 @@
+document: rfc-8926
+kind: security-consideration
+summary: When Geneve options are interpreted by transit devices, the operator MUST ensure those transit devices are trusted and not compromised. If the Geneve packet is end-to-end encrypted (e.g., via IPsec), transit devices will have no visibility into the Geneve header or options and MUST treat the packet as any other IP packet.
+section: "6.4"
+rfc2119_level: MUST
+topics:
+    - security
+    - routing
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

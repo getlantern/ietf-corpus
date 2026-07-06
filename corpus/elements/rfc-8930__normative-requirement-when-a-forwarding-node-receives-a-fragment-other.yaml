@@ -1,0 +1,10 @@
+document: rfc-8930
+kind: normative-requirement
+summary: When a forwarding node receives a fragment other than a first fragment, it MUST look up state based on the source link-layer address and the Datagram_Tag; if no such state is found, the fragment MUST be dropped; otherwise, the fragment MUST be forwarded using the information in the state found.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

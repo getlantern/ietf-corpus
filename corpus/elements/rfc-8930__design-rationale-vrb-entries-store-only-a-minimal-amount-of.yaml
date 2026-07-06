@@ -1,0 +1,9 @@
+document: rfc-8930
+kind: design-rationale
+summary: VRB entries store only a minimal amount of state (predecessor/successor addresses, tag swap values, and a few bytes of fragment remainder) rather than the full 1280-byte datagram, making the memory footprint roughly two orders of magnitude smaller than per-hop reassembly buffers.
+section: "6"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

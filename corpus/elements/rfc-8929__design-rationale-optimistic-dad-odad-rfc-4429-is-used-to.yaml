@@ -1,0 +1,8 @@
+document: rfc-8929
+kind: design-rationale
+summary: Optimistic DAD (ODAD, RFC 4429) is used to enable immediate connectivity during the DAD period. The 6BBR sends an RS using the Registered Address as source without an SLLAO (to avoid invalidating existing NCEs), allowing the default router to create a Binding and begin forwarding before DAD completes.
+section: "3.6"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

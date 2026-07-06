@@ -1,0 +1,9 @@
+document: rfc-8930
+kind: security-consideration
+summary: 'A DoS resource-exhaustion attack is possible: an attacker sends many bogus first fragments without subsequent fragments, filling the VRB table. Implementations MUST limit VRB table size and enforce a timeout to destroy stale entries. This attack can be performed remotely on all nodes along a path simultaneously.'
+section: "7"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

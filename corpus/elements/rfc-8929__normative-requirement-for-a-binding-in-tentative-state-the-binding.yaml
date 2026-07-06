@@ -1,0 +1,9 @@
+document: rfc-8929
+kind: normative-requirement
+summary: For a Binding in Tentative state, the Binding MUST be removed and a status-3 ('Moved') NA returned if an NA or NS(DAD) with the same ROVR but a fresher TID is received. Conversely, if an older TID for the same ROVR is received, the Binding MUST be kept and the message answered with a status-3 NA with Override not set.
+section: "9.1"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

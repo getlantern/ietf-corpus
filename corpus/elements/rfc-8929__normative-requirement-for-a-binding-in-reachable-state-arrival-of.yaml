@@ -1,0 +1,9 @@
+document: rfc-8929
+kind: normative-requirement
+summary: For a Binding in Reachable state, arrival of a fresher registration (same ROVR, fresher TID) over the backbone MUST trigger removal of the Binding with a status-4 ('Removed') asynchronous NA. NS(DAD) with different ROVR MUST be answered with a status-1 ('Duplicate') NA; older TID messages MUST be answered with status-3 ('Moved').
+section: "9.2"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

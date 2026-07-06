@@ -1,0 +1,10 @@
+document: rfc-8925
+kind: normative-requirement
+summary: If a server cannot offer 0.0.0.0, it MAY include an available IPv4 address in the DHCPOFFER per RFC 2131, but that address MUST be valid and not committed to any other client. The server SHOULD NOT reserve it or verify its uniqueness since the client is not expected to request it.
+section: "3.3"
+rfc2119_level: MAY
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

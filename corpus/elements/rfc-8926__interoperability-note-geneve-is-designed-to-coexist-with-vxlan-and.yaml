@@ -1,0 +1,9 @@
+document: rfc-8926
+kind: interoperability-note
+summary: Geneve is designed to coexist with VXLAN and NVGRE; since these protocols share base data-plane functionality, porting an existing control plane to Geneve requires minimal effort. Transit devices see all protocols equivalently as IP/UDP traffic, so no additional interoperability concerns are introduced at the transit layer. Implementations are strongly suggested to support simultaneous operation of Geneve and existing tunneling protocols.
+section: "5"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

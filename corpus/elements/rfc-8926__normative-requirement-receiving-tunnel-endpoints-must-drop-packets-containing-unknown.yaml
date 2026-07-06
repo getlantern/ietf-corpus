@@ -1,0 +1,9 @@
+document: rfc-8926
+kind: normative-requirement
+summary: Receiving tunnel endpoints MUST drop packets containing unknown options with the critical 'C' bit set in the option type field. If the C bit is set in any option, the C bit in the Geneve base header MUST also be set. Transit devices MUST NOT drop packets due to unknown options, including critical ones.
+section: 3.5.1
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

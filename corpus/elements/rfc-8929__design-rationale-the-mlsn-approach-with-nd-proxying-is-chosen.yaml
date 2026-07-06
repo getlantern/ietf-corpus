@@ -1,0 +1,8 @@
+document: rfc-8929
+kind: design-rationale
+summary: 'The MLSN approach with ND proxying is chosen as a middle ground: deploying a single large flat subnet causes excessive multicast/broadcast on wireless, while assigning per-host /64 prefixes (RFC 8273) avoids that but forces renumbering and loses subnet cohesion for large mobile deployments in a bounded area.'
+section: "1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

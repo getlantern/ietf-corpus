@@ -1,0 +1,9 @@
+document: rfc-8930
+kind: design-rationale
+summary: Per-hop reassembly is avoided because it causes additive latency at every hop (each node must wait for all fragments before re-forming and forwarding the IPv6 packet) and exhausts scarce reassembly buffers on constrained nodes, leading to packet drops when multiple flows compete.
+section: "4"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

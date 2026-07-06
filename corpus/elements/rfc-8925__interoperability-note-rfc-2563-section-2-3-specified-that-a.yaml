@@ -1,0 +1,9 @@
+document: rfc-8925
+kind: interoperability-note
+summary: RFC 2563 Section 2.3 specified that a DHCPDISCOVER without the Auto-Configure option is not answered when no address is chosen. This document updates RFC 2563 so that a DHCPDISCOVER containing the IPv6-Only Preferred option (but not the Auto-Configure option) is still processed per the IPv6-Only Preferred option rules, preventing clients from silently waiting for a response that would never arrive.
+section: 3.3.1
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8926
+kind: design-rationale
+summary: The UDP source port is used to expose entropy from encapsulated inner packets to underlay ECMP fabric. Without this, only tunnel endpoint addresses are available for ECMP hashing, leading to poor load distribution. The source port SHOULD be computed as a hash (e.g., 5-tuple) of inner packet headers, and the full 16-bit range MAY be used to maximize entropy.
+section: "3.3"
+topics:
+    - routing
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

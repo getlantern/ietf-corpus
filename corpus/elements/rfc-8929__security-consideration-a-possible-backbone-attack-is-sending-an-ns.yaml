@@ -1,0 +1,9 @@
+document: rfc-8929
+kind: security-consideration
+summary: A possible backbone attack is sending an NS with EARO to elicit an NA(EARO) that reveals the TID and ROVR of an existing Binding; with that information, an attacker can increment the TID and take over the Binding. Disabling classical ND on the backbone and mandating RFC 8928 with a 6LBR eliminates this by providing ROVR-based ownership proof throughout the MLSN.
+section: "11"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

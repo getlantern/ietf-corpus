@@ -1,0 +1,9 @@
+document: rfc-8926
+kind: normative-requirement
+summary: When performing LSO, a NIC MUST replicate the entire Geneve header and all options (including unknown ones) onto each resulting segment unless an option provides an exception. Options MUST NOT be reordered during offload processing. NICs performing offloads MUST NOT drop packets with unknown or critical options unless explicitly configured to do so.
+section: "4.6"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

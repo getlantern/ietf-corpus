@@ -1,0 +1,10 @@
+document: rfc-8920
+kind: security-consideration
+summary: Implementations MUST ensure malformed TLVs and sub-TLVs defined in this document are detected and do not enable attackers to crash the OSPF router or routing process. Reception of malformed TLVs SHOULD be counted and/or logged, and such logging SHOULD be rate-limited to prevent the OSPF control plane from being overwhelmed by a DoS attack.
+section: "13"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

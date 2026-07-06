@@ -1,0 +1,9 @@
+document: rfc-8928
+kind: design-rationale
+summary: The proof of ownership is validated at the edge (6LR), not the center (6LBR), to reduce DoS risk to the central registry and avoid back-and-forth exchanges across a large constrained network. The downside is that the 6LBR must trust the 6LR to perform the check, requiring protected communication between them.
+section: "7.4"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

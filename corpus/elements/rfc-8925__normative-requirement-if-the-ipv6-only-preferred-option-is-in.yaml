@@ -1,0 +1,10 @@
+document: rfc-8925
+kind: normative-requirement
+summary: If the IPv6-Only Preferred option is in the client's Parameter Request List and the pool is IPv6-mostly, the server MUST include the option in DHCPOFFER or DHCPACK. The server SHOULD NOT assign an address from the pool; instead it SHOULD return 0.0.0.0 as the offered address.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

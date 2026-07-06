@@ -1,0 +1,10 @@
+document: rfc-8925
+kind: security-consideration
+summary: The rogue-DHCPOFFER attack vector enabled by this option is not materially worse than the pre-existing attack of offering an invalid address with Lease Time set to 0xffffffff (RFC 2132), which affects all hosts. Standard DHCPv4 server authentication and rogue-server protection mitigates both. Additionally, disabling IPv4 on receipt of the option reduces the IPv4 attack surface and can be considered a security benefit.
+section: "6"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

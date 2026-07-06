@@ -1,0 +1,10 @@
+document: rfc-8928
+kind: normative-requirement
+summary: The 6LR MUST indicate to the 6LBR that it performed a successful validation by setting status code 5 ('Validation Requested') in the EDAR. Upon a subsequent EDAR from a new 6LR without status 5 for a validated Binding, the 6LBR MUST return status 5 in the EDAC to require re-challenge.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

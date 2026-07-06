@@ -1,0 +1,10 @@
+document: rfc-8925
+kind: normative-requirement
+summary: If the client receives a valid IPv6-Only Preferred option in a DHCPOFFER, it SHOULD NOT request the IPv4 address provided. It SHOULD set V6ONLY_WAIT to the option value if >= MIN_V6ONLY_WAIT, otherwise to MIN_V6ONLY_WAIT, and SHOULD stop DHCPv4 configuration for that duration or until a network attachment event.
+section: "3.2"
+rfc2119_level: SHOULD NOT
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

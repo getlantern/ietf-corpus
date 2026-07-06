@@ -1,0 +1,9 @@
+document: rfc-8930
+kind: state-machine
+summary: 'On receiving a first fragment: create forwarding state and forward (atomic); if forwarding fails, remove state. On receiving a non-first fragment: look up state by source link-layer address + Datagram_Tag; if state found, forward; if no state found, drop. State is destroyed on timer expiry.'
+section: "5"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

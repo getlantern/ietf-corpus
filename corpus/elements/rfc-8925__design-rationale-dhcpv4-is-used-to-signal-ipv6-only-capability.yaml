@@ -1,0 +1,10 @@
+document: rfc-8925
+kind: design-rationale
+summary: DHCPv4 is used to signal IPv6-only capability because it is already the mechanism used for IPv4 configuration, avoids requiring separate network segments for IPv6-only and dual-stack hosts, and ensures IPv4 is disabled only when both client and server explicitly agree, limiting the attack surface to existing DHCPv4 threat vectors without introducing new ones.
+section: "2"
+topics:
+    - ip
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

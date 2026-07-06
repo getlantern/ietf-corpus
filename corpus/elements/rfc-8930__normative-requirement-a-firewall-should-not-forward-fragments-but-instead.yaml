@@ -1,0 +1,10 @@
+document: rfc-8930
+kind: normative-requirement
+summary: A firewall SHOULD NOT forward fragments but instead should recompose the IP packet, check it in uncompressed form, and then forward it again as fragments if necessary. The firewall MUST drop the whole packet if overlapping fragments result in different data at the same offset.
+section: "7"
+rfc2119_level: SHOULD NOT
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

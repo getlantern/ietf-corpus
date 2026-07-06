@@ -1,0 +1,9 @@
+document: rfc-8928
+kind: security-consideration
+summary: Careless implementations of Ed25519 signing may leak private key material via micro-architectural side channels; a secure Ed25519 implementation requires a protected SHA-512 implementation, which is not necessary for ECDSA256/ECDSA25519 using SHA-256.
+section: "7.6"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

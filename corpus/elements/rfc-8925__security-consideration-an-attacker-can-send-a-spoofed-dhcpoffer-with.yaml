@@ -1,0 +1,10 @@
+document: rfc-8925
+kind: security-consideration
+summary: An attacker can send a spoofed DHCPOFFER with the IPv6-Only Preferred option value set to 0xffffffff, effectively disabling DHCPv4 on supporting clients. On IPv4-only networks this causes complete connectivity loss; on dual-stack networks without NAT64, only IPv4-only destinations are affected. Recovery requires a network attachment event.
+section: "6"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

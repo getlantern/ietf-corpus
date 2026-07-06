@@ -1,0 +1,9 @@
+document: rfc-8930
+kind: design-rationale
+summary: Fragment forwarding requires all fragments of a datagram to follow the same path as the first fragment because subsequent fragments carry no IP header for routing; this is a fundamental caveat labeled 'No Per-Fragment Routing' that precludes per-fragment multipath.
+section: "6"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

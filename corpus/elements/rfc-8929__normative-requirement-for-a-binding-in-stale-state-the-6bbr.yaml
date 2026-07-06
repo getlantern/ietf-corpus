@@ -1,0 +1,9 @@
+document: rfc-8929
+kind: normative-requirement
+summary: For a Binding in Stale state, the 6BBR MUST attempt NUD per RFC 7048 to the Registering Node before answering any NS(Lookup) or NS(NUD); if NUD succeeds, Reachable-state operations apply; if NUD fails, the 6BBR refrains from answering. When STALE_DURATION elapses, the Binding MUST be removed.
+section: "9.3"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

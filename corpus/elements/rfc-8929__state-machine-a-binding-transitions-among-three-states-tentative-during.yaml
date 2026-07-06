@@ -1,0 +1,8 @@
+document: rfc-8929
+kind: state-machine
+summary: 'A Binding transitions among three states: Tentative (during backbone DAD, lasts TENTATIVE_DURATION=800ms), Reachable (after successful DAD, lasts for Registration Lifetime), and Stale (post-expiry tracking, STALE_DURATION default 24h for LPWANs or 5min for rapid-renewal). Transitions: new registration creates Tentative; DAD timeout → Reachable; Registration Lifetime expires → Stale; STALE_DURATION expires → removed.'
+section: "9"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
