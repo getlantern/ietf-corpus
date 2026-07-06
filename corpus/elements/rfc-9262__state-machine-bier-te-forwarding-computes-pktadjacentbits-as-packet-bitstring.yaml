@@ -1,0 +1,8 @@
+document: rfc-9262
+kind: state-machine
+summary: 'BIER-TE forwarding computes PktAdjacentBits as (Packet->BitString AND AdjacentBits[SI]), clears all adjacent bits in the packet header (Packet->BitString AND NOT AdjacentBits[SI]), then loops over PktAdjacentBits: for each set bit, iterates over BIFT adjacencies, resolves ECMP if needed, copies the packet, restores the DNC bit if applicable, and dispatches via forward_connected (L2 unicast), forward_routed (L3 encap), or local_decap.'
+section: "4.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

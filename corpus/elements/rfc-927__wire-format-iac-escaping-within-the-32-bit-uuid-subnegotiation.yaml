@@ -1,0 +1,6 @@
+document: rfc-927
+kind: wire-format
+summary: 'IAC escaping within the 32-bit UUID subnegotiation payload: any byte with value 255 must be sent as two consecutive IAC bytes (IAC IAC). For example, a UUID of all-ones (0xFFFFFFFF) is transmitted as IAC SB TUID IAC IAC IAC IAC IAC IAC IAC IAC IAC SE (eight IAC bytes for four UUID octets plus framing).'
+section: "6"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

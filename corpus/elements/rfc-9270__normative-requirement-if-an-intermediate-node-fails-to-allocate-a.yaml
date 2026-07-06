@@ -1,0 +1,10 @@
+document: rfc-9270
+kind: normative-requirement
+summary: If an intermediate node fails to allocate a protection resource during protection switching, it MUST send a Notify message to notify the requesting end node, which will then stop bridging/selecting traffic and proceed to remove the protection allocation per the APS protocol.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9262
+kind: design-rationale
+summary: A BP can be reused across multiple BFRs provided no single forwarding path ever traverses more than one BFR in the reuse set, either because they lie on mutually exclusive alternative paths (case A) or on different branches of the same tree (case B). Reuse across sequentially traversed BFRs is forbidden because the first BFR clears the BP.
+section: 5.1.9
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

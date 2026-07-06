@@ -1,0 +1,10 @@
+document: rfc-9266
+kind: security-consideration
+summary: The 'tls-exporter' binding provides only the weaker form of channel binding uniqueness (unique per TLS connection), not the stronger form (unique per upper-layer authentication protocol instance). Applications MUST NOT use the channel binding for more than one authentication mechanism instance on a given TLS connection, and MUST immediately close the TLS connection after the upper-layer protocol concludes.
+section: "4.1"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

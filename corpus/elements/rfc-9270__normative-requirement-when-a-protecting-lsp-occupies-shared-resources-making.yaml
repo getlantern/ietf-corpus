@@ -1,0 +1,10 @@
+document: rfc-9270
+kind: normative-requirement
+summary: When a protecting LSP occupies shared resources making them unavailable, the intermediate node MUST send a 'Shared resources unavailable' Notify message to all end nodes of protecting LSPs with lower SMP preemption priorities. If the shared resources fail, the same message MUST be sent to all end nodes of protecting LSPs configured to use those resources.
+section: "5.5"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

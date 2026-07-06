@@ -1,0 +1,8 @@
+document: rfc-9277
+kind: design-rationale
+summary: The CBOR Tag Wrapped format is easier to retrofit to an existing single-item CBOR format because existing parsers typically tolerate unknown tags and may simply ignore them; the Labeled CBOR Sequence is preferred when the on-wire overhead of 8 extra bytes is unacceptable or when many items are concatenated.
+section: A
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

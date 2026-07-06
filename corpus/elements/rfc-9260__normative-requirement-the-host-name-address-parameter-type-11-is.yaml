@@ -1,0 +1,9 @@
+document: rfc-9260
+kind: normative-requirement
+summary: The Host Name Address parameter (Type=11) is deprecated; senders of INIT or INIT ACK chunks MUST NOT include it. A receiver of an INIT or INIT ACK containing this parameter MUST send an ABORT chunk and MAY include an 'Unresolvable Address' error cause.
+section: 3.3.2.1.4
+rfc2119_level: MUST NOT
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

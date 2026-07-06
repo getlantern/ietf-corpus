@@ -1,0 +1,9 @@
+document: rfc-9261
+kind: normative-requirement
+summary: If an authenticator request was provided, the Certificate message MUST contain only extensions present in the authenticator request. Without a request, the Certificate message MUST contain only extensions present in the (D)TLS ClientHello. Unrecognized extensions in the authenticator request MUST be ignored.
+section: 5.2.1
+rfc2119_level: MUST
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

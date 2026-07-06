@@ -1,0 +1,10 @@
+document: rfc-9260
+kind: normative-requirement
+summary: 'The Verification Tag in the SCTP common header MUST be set to the Initiate Tag received from the peer during association setup. Three exceptions apply: INIT chunks MUST have a zero tag; SHUTDOWN COMPLETE with T-bit set copies the tag from the SHUTDOWN ACK packet; ABORT MAY copy the tag from the triggering packet.'
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

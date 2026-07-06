@@ -1,0 +1,8 @@
+document: rfc-9262
+kind: design-rationale
+summary: 'BIER-TE''s forwarding pseudocode is derived from the BIER forwarding pseudocode with one key change: step [1] (clearing bits from the original Packet->BitString after the first copy) is omitted, because BIER-TE does not need to suppress duplicates from multiple bits sharing the same BFR-NBR. All necessary bit clearing is done via the AdjacentBits mask applied to each packet copy.'
+section: "4.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

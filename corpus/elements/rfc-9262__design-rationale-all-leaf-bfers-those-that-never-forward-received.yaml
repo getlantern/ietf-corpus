@@ -1,0 +1,8 @@
+document: rfc-9262
+kind: design-rationale
+summary: All leaf BFERs — those that never forward received BIER-TE packets onward — can share a single local_decap() bit position, saving significant BP space. Non-leaf BFERs require a unique BP because their BIFT must distinguish between decapsulating and transiting the same packet.
+section: 5.1.3
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

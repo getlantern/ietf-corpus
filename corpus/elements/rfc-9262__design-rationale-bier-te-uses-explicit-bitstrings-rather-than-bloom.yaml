@@ -1,0 +1,8 @@
+document: rfc-9262
+kind: design-rationale
+summary: BIER-TE uses explicit BitStrings rather than Bloom filters to represent tree edges because Bloom filters introduce false-positive heuristic risk and cannot clear bits during forwarding, which is necessary to prevent loops. Explicit BitStrings can be seen as a special, lossless Bloom filter.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

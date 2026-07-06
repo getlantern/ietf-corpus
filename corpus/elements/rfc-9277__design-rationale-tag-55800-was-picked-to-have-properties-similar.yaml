@@ -1,0 +1,8 @@
+document: rfc-9277
+kind: design-rationale
+summary: 'Tag 55800 was picked to have properties similar to 55799: its encoded form 0xd9d9f8 is not valid UTF-8 (second 0xd9 is not a valid UTF-8 continuation byte) and not valid UTF-16 (0xd9d9 is in the high-half surrogate zone with no valid following sequence), preventing false-positive format identification.'
+section: "4.1"
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

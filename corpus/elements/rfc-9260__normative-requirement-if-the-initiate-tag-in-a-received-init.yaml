@@ -1,0 +1,10 @@
+document: rfc-9260
+kind: normative-requirement
+summary: If the Initiate Tag in a received INIT chunk equals 0, the receiver MUST silently discard the packet. If a_rwnd is less than 1500, or OS or MIS equals 0, the receiver MUST discard the packet and SHOULD send an ABORT chunk using the Initiate Tag as the Verification Tag.
+section: 3.3.2
+rfc2119_level: MUST
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9262
+kind: security-consideration
+summary: Duplicate packets can arise when a BitString encodes a non-tree graph (redundant BFR connections). The BIER-TE controller MUST ensure only tree-shaped BitStrings are installed in BFIRs. Physical reconnection of links before the controller updates BitStrings can cause transient duplicates; forward_connected() adjacency link-layer addressing provides partial protection.
+section: 5.2.2
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

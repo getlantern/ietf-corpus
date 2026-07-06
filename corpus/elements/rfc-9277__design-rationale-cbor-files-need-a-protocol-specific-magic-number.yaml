@@ -1,0 +1,8 @@
+document: rfc-9277
+kind: design-rationale
+summary: CBOR files need a protocol-specific magic number because identifying content as merely 'CBOR' is insufficient, analogous to how APK, OpenOffice, and MSOffice files are all ZIP files yet require further identification. This document provides a way to encode a magic number into the beginning of a CBOR format file so file(1) and similar tools can identify the specific CBOR Protocol.
+section: "1"
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

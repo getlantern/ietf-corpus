@@ -1,0 +1,10 @@
+document: rfc-9261
+kind: normative-requirement
+summary: The certificate_request_context value MUST be unique for each authenticator request within the scope of a connection, preventing replay attacks and context confusion. This uniqueness requirement spans both CertificateRequest and ClientCertificateRequest messages used as authenticator requests on the same connection.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-9278
+kind: security-consideration
+summary: For certain cryptographic algorithms (e.g., X25519/X448 from RFC 7748), multiple public keys correspond to the same private key. Using a JWK Thumbprint URI as an identifier in such cases may lead to subtle vulnerabilities. A recommended mitigation is to sign a message containing the correct public key with the private key to bind the thumbprint to the actual key used.
+section: "7.1"
+topics:
+    - oauth
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

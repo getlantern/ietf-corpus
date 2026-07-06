@@ -1,0 +1,9 @@
+document: rfc-9260
+kind: normative-requirement
+summary: All arithmetic on Transmission Sequence Numbers MUST be performed modulo 2^32. An endpoint SHOULD NOT transmit a DATA chunk with a TSN more than 2^31 - 1 above the beginning TSN of its current send window, as doing so causes TSN comparison problems.
+section: "1.6"
+rfc2119_level: MUST
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

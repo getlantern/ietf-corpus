@@ -1,0 +1,9 @@
+document: rfc-9272
+kind: design-rationale
+summary: A BIER-specific constraint such as 'excluding BIER-incapable routers' can be defined as a BAR value with NULL BA, allowing the constraint to augment any IPA's routing constraints. If BC and RC conflict and result in an empty topology, no BIER forwarding path will be found, which is a network design issue operators must avoid.
+section: "4"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9270
+kind: state-machine
+summary: 'During SMP protection switching: on failure detection (SF/SD), end node sends APS request to adjacent intermediate node; if resource available, intermediate sends confirmation upstream and forwards request downstream, triggering cross-connect setup; if resource unavailable (used by higher-priority LSP), intermediate sends ''Shared resources unavailable'' Notify; if intermediate fails to allocate, it notifies end node which stops bridging and removes protection allocation.'
+section: "4"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

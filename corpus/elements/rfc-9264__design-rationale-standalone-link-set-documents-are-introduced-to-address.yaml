@@ -1,0 +1,8 @@
+document: rfc-9264
+kind: design-rationale
+summary: Standalone link set documents are introduced to address cases where writing to the HTTP 'Link' header field is impractical (no direct header access), the header would be unpredictably large, or links are managed by a third party. HTTP lacks a response error code for truncated 'Link' headers, making header-size management unreliable.
+section: "3.2"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

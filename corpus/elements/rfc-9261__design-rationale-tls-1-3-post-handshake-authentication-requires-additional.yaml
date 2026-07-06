@@ -1,0 +1,9 @@
+document: rfc-9261
+kind: design-rationale
+summary: TLS 1.3 post-handshake authentication requires additional TLS state-machine state and its authentication boundaries align with TLS record boundaries, which do not align with multiplexed protocols like HTTP/2. Exported Authenticators avoid both problems by operating entirely at the application layer without modifying the TLS layer.
+section: "1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9279
+kind: security-consideration
+summary: Implementations must take care not to exceed the packet boundary when parsing TLVs, because an attacker could intentionally specify a TLV with a length exceeding the boundary. Additionally, an attacker could add a large number of minimal TLVs to increase processing cost and magnify a denial-of-service attack.
+section: "7"
+topics:
+    - multicast
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

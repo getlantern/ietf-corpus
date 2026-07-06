@@ -1,0 +1,9 @@
+document: rfc-9261
+kind: protocol-element
+summary: 'An empty authenticator is an authenticated refusal: a Finished message sent without a Certificate or CertificateVerify. Its HMAC is computed over Hash(Handshake Context || authenticator request || Certificate) where Certificate contains no CertificateEntries. Well-formed empty authenticators MUST be treated as invalid by the validate API.'
+section: "6"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
