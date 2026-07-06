@@ -1,0 +1,9 @@
+document: rfc-8650
+kind: design-rationale
+summary: Subscribers cannot predetermine the subscription URI before issuing 'establish-subscription' because the URI only exists after the RPC is accepted. Therefore, the POST for 'establish-subscription' replaces the GET for the 'location' leaf used in RFC 8040, and the URI is returned in the RPC response.
+section: "3"
+topics:
+    - netconf
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

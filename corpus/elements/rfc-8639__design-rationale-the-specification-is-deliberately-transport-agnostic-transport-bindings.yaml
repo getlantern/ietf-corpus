@@ -1,0 +1,9 @@
+document: rfc-8639
+kind: design-rationale
+summary: The specification is deliberately transport-agnostic; transport bindings (NETCONF in RFC 8640, RESTCONF in a companion document) are defined separately and augment the base YANG module. This allows subscription semantics to be reused across transports without redefining them, and transport-specific lifecycle details are delegated to each binding specification.
+section: "1.3"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

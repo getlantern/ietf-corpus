@@ -1,0 +1,10 @@
+document: rfc-8641
+kind: security-consideration
+summary: If read access to previously accessible nodes is lost due to a receiver permissions change, this SHOULD be reported as a YANG Patch 'delete' operation for on-change subscriptions. If the publisher cannot handle this, it MUST force dynamic subscription re-establishment or configured subscription reinitialization.
+section: "3.9"
+topics:
+    - yang
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

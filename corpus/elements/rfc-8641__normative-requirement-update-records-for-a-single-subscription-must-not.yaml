@@ -1,0 +1,10 @@
+document: rfc-8641
+kind: normative-requirement
+summary: Update records for a single subscription MUST NOT be resequenced prior to transport. When a publisher cannot include the full set of desired objects, it MUST set the incomplete-update flag and MAY suspend the subscription; if no update record is created at all, the publisher MUST suspend the subscription.
+section: 3.11.1
+rfc2119_level: MUST
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

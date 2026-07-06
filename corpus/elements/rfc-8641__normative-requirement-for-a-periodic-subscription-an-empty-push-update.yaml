@@ -1,0 +1,11 @@
+document: rfc-8641
+kind: normative-requirement
+summary: For a periodic subscription, an empty push-update MUST be sent when, after access control, no objects remain in an update record, to prevent clients from thinking an update was lost. For an on-change subscription, a push-update MUST NOT be sent in the same situation, so clients remain unaware of changes to nodes they cannot read.
+section: "3.9"
+rfc2119_level: MUST
+topics:
+    - yang
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

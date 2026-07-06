@@ -1,0 +1,9 @@
+document: rfc-8641
+kind: wire-format
+summary: The patch-id field in push-change-update SHOULD be a uint32 counter starting at 0 that increments with every push-change-update for a subscription. This counter MUST be reset to 0 on resynchronization (i.e., when a push-update is sent) and MUST wrap back to 0 after reaching the maximum value 4294967295, enabling detection of lost or out-of-sequence records.
+section: "3.7"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

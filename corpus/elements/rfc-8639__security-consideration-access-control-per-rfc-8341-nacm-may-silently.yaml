@@ -1,0 +1,10 @@
+document: rfc-8639
+kind: security-consideration
+summary: Access control (per RFC 8341 NACM) may silently exclude event records from an event stream for which the receiver has no read access. A subscription MUST be terminated if permissions change such that event stream access is no longer permitted, preventing covert information delivery through lingering subscriptions.
+section: "8"
+topics:
+    - yang
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

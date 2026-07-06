@@ -1,0 +1,10 @@
+document: rfc-8636
+kind: security-consideration
+summary: For anonymous PKINIT (RFC 8062), the AuthPack is unsigned, so an attacker can trivially remove the supportedKDFs field and force a downgrade to the old RFC 4556 KDF. The kdf field in DHRepInfo is also unauthenticated and could be altered, though this typically causes a decryption failure rather than a silent downgrade.
+section: "9"
+topics:
+    - crypto
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8636
+kind: design-rationale
+summary: RFC 4556 hardwired SHA-1 in multiple places (paChecksum, KDF, CMS digest) without negotiation or discovery mechanisms. Following Wang et al.'s 2004 collision attacks on MD4/MD5/SHA-1 and IETF's BCP 201 call for algorithm agility, this document removes those hardwired dependencies to allow incremental deployment of newer algorithms.
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

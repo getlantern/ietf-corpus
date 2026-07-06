@@ -1,0 +1,9 @@
+document: rfc-8639
+kind: state-machine
+summary: 'Each receiver of a valid configured subscription has its own state machine with states: ''connecting'', ''active'', ''suspended'', and ''disconnected''. A receiver becomes ''active'' when subscription-started is successfully delivered (a); moves to ''suspended'' on buffer overflow or insufficient CPU (d) with a subscription-suspended notification; and returns to ''active'' when resources recover (e) via subscription-resumed or subscription-modified.'
+section: 2.5.1
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

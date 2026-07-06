@@ -1,0 +1,11 @@
+document: rfc-8639
+kind: normative-requirement
+summary: If the publisher supports the 'dscp' feature, a subscription with a 'dscp' leaf MUST result in a corresponding DSCP marking in the IP header of all resulting notification messages and subscription state change notifications. Where TCP is used, all subscription traffic MUST share a single TCP session with the subscription's DSCP value; if this cannot be guaranteed, the establish-subscription RPC SHOULD be rejected with 'dscp-unavailable'.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - yang
+    - netconf
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

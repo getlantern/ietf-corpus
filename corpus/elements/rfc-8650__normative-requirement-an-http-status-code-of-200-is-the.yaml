@@ -1,0 +1,10 @@
+document: rfc-8650
+kind: normative-requirement
+summary: An HTTP status code of 200 is the proper response to any successful RPC defined within RFC 8639 or RFC 8641. When an HTTP error code is returned, the RPC reply MUST include an <rpc-error> element per Section 7.1 of RFC 8040 with error-type 'application', an error-tag, and an error-app-tag.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - http
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

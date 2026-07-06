@@ -1,0 +1,9 @@
+document: rfc-8636
+kind: protocol-element
+summary: 'The KDF uses a counter-based construction: reps = ceiling(L/H_outputBits), iterating Hashi = H(counter || Z || OtherInfo) with a 32-bit big-endian counter, then concatenating hash outputs and truncating to L bits, with the result fed into random-to-key() per RFC 3961.'
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

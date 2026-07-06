@@ -1,0 +1,10 @@
+document: rfc-8639
+kind: normative-requirement
+summary: If a subscription has the 'dependency' parameter set, buffered notification messages of the parent subscription MUST be dequeued before those of the dependent subscription. If a referenced dependency no longer exists or is inaccessible, it MUST be silently removed. Dependency and weighting are only enforced between subscriptions sharing the same 'dscp' value.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

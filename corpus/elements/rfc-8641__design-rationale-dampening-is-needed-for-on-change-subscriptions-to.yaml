@@ -1,0 +1,9 @@
+document: rfc-8641
+kind: design-rationale
+summary: Dampening is needed for on-change subscriptions to prevent flooding receivers with rapid successive updates for fast-changing or oscillating objects. When a dampening period is active, only the value current at the end of the period is sent, not the entire interim history; objects that changed and reverted still appear to indicate churn.
+section: "3.3"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

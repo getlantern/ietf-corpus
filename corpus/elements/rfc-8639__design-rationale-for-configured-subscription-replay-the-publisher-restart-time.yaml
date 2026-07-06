@@ -1,0 +1,9 @@
+document: rfc-8639
+kind: design-rationale
+summary: For configured subscription replay, the publisher restart time is used as the earliest possible replay point rather than an arbitrary past time. This prevents duplicate event records from a previous boot cycle and guarantees all receivers — regardless of when they connect — receive the same set of replayed records.
+section: 2.5.6
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

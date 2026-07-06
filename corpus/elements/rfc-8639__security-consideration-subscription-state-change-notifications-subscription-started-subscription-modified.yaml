@@ -1,0 +1,10 @@
+document: rfc-8639
+kind: security-consideration
+summary: Subscription state change notifications (subscription-started, subscription-modified, subscription-terminated, etc.) are never filtered out, cannot be stored in replay buffers, and are delivered only to impacted receivers. This ensures receivers are always notified of lifecycle events regardless of configured filter criteria.
+section: "2.7"
+topics:
+    - yang
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

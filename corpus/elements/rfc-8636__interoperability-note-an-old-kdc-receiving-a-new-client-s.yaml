@@ -1,0 +1,9 @@
+document: rfc-8636
+kind: interoperability-note
+summary: An old KDC receiving a new client's AuthPack with the supportedKDFs extension will ignore it as an unknown extension and respond without the kdf field, falling back to the RFC 4556 KDF; new clients must detect this and apply local policy on whether to accept the old KDF.
+section: "7"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

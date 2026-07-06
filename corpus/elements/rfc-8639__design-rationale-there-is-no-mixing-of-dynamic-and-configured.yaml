@@ -1,0 +1,9 @@
+document: rfc-8639
+kind: design-rationale
+summary: 'There is no mixing of dynamic and configured operations on a single subscription: a configured subscription cannot be modified or deleted via RPCs, and a dynamic subscription cannot be directly modified or deleted via configuration. This clean separation avoids conflicting ownership semantics, though a configuration change to a referenced filter can indirectly affect a dynamic subscription.'
+section: "1.3"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

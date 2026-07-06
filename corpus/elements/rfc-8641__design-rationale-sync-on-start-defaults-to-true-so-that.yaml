@@ -1,0 +1,9 @@
+document: rfc-8641
+kind: design-rationale
+summary: sync-on-start defaults to true so that an on-change subscription begins by sending a full push-update snapshot, establishing a reference frame for the receiver before subsequent incremental push-change-update notifications. Setting it to false restricts the subscription to change-only updates, which is appropriate when the receiver already has current state.
+section: "4.2"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

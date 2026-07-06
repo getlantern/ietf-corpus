@@ -1,0 +1,10 @@
+document: rfc-8650
+kind: normative-requirement
+summary: Any GET request received while there is a current GET request on the same subscription URI MUST be rejected with HTTP error code 409, preventing two or more simultaneous GET requests on a subscription URI.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - http
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8640
+kind: security-consideration
+summary: A buggy or compromised NETCONF subscriber may send numerous 'establish-subscription' requests causing subscriptions to accumulate and exhaust system resources. Publishers MAY terminate the underlying NETCONF session, or MAY suspend or terminate a subset of active subscriptions on that session to reclaim resources.
+section: "8"
+topics:
+    - security
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

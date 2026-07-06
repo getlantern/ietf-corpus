@@ -1,0 +1,10 @@
+document: rfc-8641
+kind: security-consideration
+summary: A receiver MUST only be sent updates for which it has proper authorization. The publisher MUST silently omit data nodes from results that a client is not authorized to see, applying access control per the NACM model (RFC 8341, Section 3.2.4) extended to notifications, equivalent to a regular 'get' operation.
+section: "3.9"
+topics:
+    - yang
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

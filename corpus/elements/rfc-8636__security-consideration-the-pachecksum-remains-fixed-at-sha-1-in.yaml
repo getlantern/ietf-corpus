@@ -1,0 +1,9 @@
+document: rfc-8636
+kind: security-consideration
+summary: The paChecksum remains fixed at SHA-1 in this update; if an attacker mounts a second-preimage attack on SHA-1 to substitute the request body, the KDC will not detect it, but a client that negotiated a new KDF will detect the substitution via decryption failure.
+section: "9"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

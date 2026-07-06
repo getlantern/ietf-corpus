@@ -1,0 +1,10 @@
+document: rfc-8639
+kind: normative-requirement
+summary: If a configured subscription's replay-start-time precedes retained history and a receiver needs pre-reboot records, the publisher MUST include the 'replay-previous-event-time' leaf in the 'subscription-started' notification, indicating that earlier events exist before the replay window. If the replay-start-time is earlier than retained history, the revised actual start time MUST be returned in 'replay-start-time-revision'.
+section: 2.5.6
+rfc2119_level: MUST
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
