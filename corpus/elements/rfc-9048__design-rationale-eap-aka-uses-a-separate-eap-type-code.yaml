@@ -1,0 +1,9 @@
+document: rfc-9048
+kind: design-rationale
+summary: EAP-AKA' uses a separate EAP Type code (0x32 vs 0x17) rather than negotiating within EAP-AKA, because any change to key derivation must be unambiguous to both sides — accidental connection of old and new equipment must not silently produce wrong keys. Explicit method type negotiation via EAP makes this unambiguous.
+section: "1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9033
+kind: security-consideration
+summary: Unauthenticated pledges may inject traffic with nonzero DSCP values that MSF counts as normal traffic, potentially exhausting link-layer resources on intermediate nodes. The IPv6 layer SHOULD rate-limit join traffic before it reaches the 6top sublayer; without rate limiting, intermediate nodes are vulnerable to resource exhaustion attacks.
+section: "16"
+rfc2119_level: SHOULD
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

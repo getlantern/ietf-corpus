@@ -1,0 +1,8 @@
+document: rfc-9034
+kind: design-rationale
+summary: DT and OT are represented modulo 2^N (derived from DTL and BinaryPt) rather than as absolute timestamps, enabling compact encoding suitable for constrained 6LoWPAN headers. The originating node must pick N large enough that DT_abs - OT_abs < 2^N, or the modular representation becomes ambiguous.
+section: "5"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9034
+kind: design-rationale
+summary: OTD is encoded as a delta (offset subtracted from DT) rather than an absolute origination timestamp, because the difference DT - OT is always smaller than DT itself; this reduces the OTD field to fewer bits than would be needed for an absolute value, conserving header space in constrained networks.
+section: "4"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

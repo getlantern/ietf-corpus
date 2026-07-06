@@ -1,0 +1,9 @@
+document: rfc-9041
+kind: normative-requirement
+summary: An implementation that does not understand a TLV or sub-TLV with type >= 32768 (high-order bit 1) SHOULD ignore and step over it; however, an implementation MAY send an echo response with Return Code 2 as it would have for a lower-range TLV.
+section: "4.1"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

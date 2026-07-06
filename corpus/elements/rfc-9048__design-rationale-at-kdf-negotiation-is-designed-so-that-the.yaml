@@ -1,0 +1,9 @@
+document: rfc-9048
+kind: design-rationale
+summary: AT_KDF negotiation is designed so that the peer accepts the server's first-choice silently, but can propose an alternative by sending back only one AT_KDF. The server's re-sent challenge carries the selected alternative at the front plus the full original list, and a deliberate duplicate is the only legal form of duplication. This prevents a MITM from silently substituting a KDF without either party being aware.
+section: "3.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

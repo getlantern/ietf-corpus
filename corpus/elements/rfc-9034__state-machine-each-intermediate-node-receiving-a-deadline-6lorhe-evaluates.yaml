@@ -1,0 +1,8 @@
+document: rfc-9034
+kind: state-machine
+summary: Each intermediate node receiving a Deadline-6LoRHE evaluates the condition ((CT - DT) mod 2^N) > SAFETY_FACTOR * 2^N; if the condition is NOT satisfied, the deadline has expired and the packet is subject to the D-flag action (drop or conditional forward). The node transitions from 'in-deadline' to 'expired' when this test fails.
+section: "5"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

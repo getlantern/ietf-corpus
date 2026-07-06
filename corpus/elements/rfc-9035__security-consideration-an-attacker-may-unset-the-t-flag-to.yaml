@@ -1,0 +1,9 @@
+document: rfc-9035
+kind: security-consideration
+summary: An attacker may unset the 'T' flag to force additional energy consumption on downstream nodes (by preventing compression), or set it to cause downstream nodes to compress when undesired (potentially causing packet loss). Such manipulation is detectable because downstream nodes with multiple parents may observe the bit with conflicting values and trigger an alert.
+section: "7"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,7 @@
+document: rfc-9033
+kind: normative-requirement
+summary: Once a routing parent is selected, the joined node MUST generate a 6P ADD Request with CellOptions TX=1, RX=0, SHARED=0 and NumCells=1, containing at least 5 cells in the CellList. If the transaction fails, the node MUST repeat until a Tx cell is installed.
+section: "4.6"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

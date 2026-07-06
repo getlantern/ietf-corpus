@@ -1,0 +1,8 @@
+document: rfc-9034
+kind: wire-format
+summary: The Deadline-6LoRHE format begins with the standard 6LoRHE 2-byte header (3-bit prefix 101, 5-bit Length, 8-bit Type=7), followed by a control byte containing D (1 bit), TU (2 bits), DTL (4 bits), OTL (3 bits), and BinaryPt (6 bits), then a variable-length DT field of (DTL+1) hex digits (4–64 bits) and an optional variable-length OTD field of OTL hex digits (4–28 bits).
+section: "5"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9044
+kind: design-rationale
+summary: AES-GMAC can be computed using an AES-GCM implementation by supplying the content-authentication key as the AES key, the nonce as the IV, zero-length plaintext, and the content to authenticate as AAD. The encryption step is skipped when no plaintext is provided, so no ciphertext is produced.
+section: "4"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

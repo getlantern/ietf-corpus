@@ -1,0 +1,8 @@
+document: rfc-9035
+kind: state-machine
+summary: 'During migration, the DODAG transitions through states: (1) ''T'' flag unset — all packets uncompressed; (2) ''T'' flag set by Root — DIO propagates flag causing gradual, inconsistent transition where some nodes compress and others do not; (3) all nodes upgraded and ''T'' seen — all packets compressed. Rollback reverses by unsetting ''T'' and waiting for full propagation before admitting non-RFC-8138 nodes.'
+section: "5.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

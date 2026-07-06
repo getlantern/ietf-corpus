@@ -1,0 +1,9 @@
+document: rfc-9048
+kind: protocol-element
+summary: PRF' is defined as T1|T2|T3|... where T1=HMAC-SHA-256(K,S|0x01), T2=HMAC-SHA-256(K,T1|S|0x02), etc. K is 256 bits; S is arbitrary-length. This construction is identical to the one used in IKEv2 (RFC 7296, Section 2.13).
+section: 3.4.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

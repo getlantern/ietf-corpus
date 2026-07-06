@@ -1,0 +1,8 @@
+document: rfc-9042
+kind: design-rationale
+summary: Sieve rules created via graphical interfaces reference mailboxes by name; if a mailbox is renamed by another IMAP client, those rules go out of sync. By referencing the immutable MAILBOXID (RFC 8474) instead of the mailbox name, Sieve rules continue to target the correct mailbox even after renaming.
+section: "1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9044
+kind: security-consideration
+summary: If AES-GMAC is used as a building block in another algorithm (e.g., as a pseudorandom function), AES-GMAC MUST be used only one time. For instance, AES-GMAC MUST NOT be used as the pseudorandom function for PBKDF2.
+section: "7"
+rfc2119_level: MUST NOT
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

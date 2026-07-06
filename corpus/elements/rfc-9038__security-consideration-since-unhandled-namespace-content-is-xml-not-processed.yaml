@@ -1,0 +1,9 @@
+document: rfc-9038
+kind: security-consideration
+summary: Since unhandled namespace content is XML not processed in the first pass by the XML parser, the client SHOULD validate the XML when the content is eventually processed, to protect against the inclusion of malicious content embedded in <extValue><value> elements.
+section: "9"
+rfc2119_level: SHOULD
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

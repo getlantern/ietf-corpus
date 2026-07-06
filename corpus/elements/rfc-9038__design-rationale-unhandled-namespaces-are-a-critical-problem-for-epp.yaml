@@ -1,0 +1,6 @@
+document: rfc-9038
+kind: design-rationale
+summary: Unhandled namespaces are a critical problem for EPP poll messages because the server inserts poll messages before knowing the client's supported services, and returning an error for an unhandled namespace would make the poll message a 'poison message' that halts queue processing. Wrapping unhandled data in <extValue> avoids both non-compliance and queue stalls.
+section: "1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

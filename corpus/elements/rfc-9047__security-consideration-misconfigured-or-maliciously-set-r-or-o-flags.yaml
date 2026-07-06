@@ -1,0 +1,9 @@
+document: rfc-9047
+kind: security-consideration
+summary: Misconfigured or maliciously set R or O flags on one PE will cause all PEs in the BD to reply to Neighbor Solicitations with incorrect NA messages. A wrong O flag can break communication (receiver won't update its cache), and a wrong R flag can corrupt the Default Router List, causing traffic to be dropped.
+section: "4"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

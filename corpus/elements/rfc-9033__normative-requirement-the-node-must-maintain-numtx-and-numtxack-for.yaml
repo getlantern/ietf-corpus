@@ -1,0 +1,7 @@
+document: rfc-9033
+kind: normative-requirement
+summary: The node MUST maintain NumTx and NumTxAck for each negotiated Tx cell to the selected parent. Every HOUSEKEEPINGCOLLISION_PERIOD, a cell whose PDR is more than RELOCATE_PDRTHRES below the highest-PDR cell is relocated via a 6P RELOCATE command, provided NumTx has been divided by 2 at least once since last reset.
+section: "5.3"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

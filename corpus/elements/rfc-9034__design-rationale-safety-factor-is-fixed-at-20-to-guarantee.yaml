@@ -1,0 +1,8 @@
+document: rfc-9034
+kind: design-rationale
+summary: SAFETY_FACTOR is fixed at 20% to guarantee that every packet is tested against the current time at least once during every subinterval of length SAFETY_FACTOR*2^N, ensuring timely detection that CT_abs > DT_abs. Without this margin, modular-arithmetic ambiguity (where 'slightly past deadline' looks identical to 'almost a full epoch before deadline') would prevent reliable drop decisions.
+section: "5"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

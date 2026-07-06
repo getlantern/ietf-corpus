@@ -1,0 +1,10 @@
+document: rfc-9048
+kind: normative-requirement
+summary: 'If the peer performs a comparison of its locally determined network name against the AT_KDF_INPUT value, it MUST use a prefix-match algorithm: break each name into colon-separated fields, ignore extra fields in the longer name, and compare remaining fields character by character. If the peer chooses to proceed despite discrepancy, it MUST use the network name from AT_KDF_INPUT.'
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

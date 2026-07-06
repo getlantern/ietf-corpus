@@ -1,0 +1,10 @@
+document: rfc-9044
+kind: security-consideration
+summary: The probability of a successful forgery is close to 2^(-t), where t is the number of bits in the authentication tag (MACLength*8). Implementations SHOULD use 16-octet authentication tags for messages over 2^64 octets, as GMAC strength degrades with message length.
+section: "7"
+rfc2119_level: SHOULD
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

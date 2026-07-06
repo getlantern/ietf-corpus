@@ -1,0 +1,8 @@
+document: rfc-9035
+kind: interoperability-note
+summary: External targets (RFC 9008) are not expected to support RFC 8138. Packets to/from external targets are tunneled between the border router and the Root; the inner packet is typically uncompressed, so the border router decapsulates the compressed outer header and forwards the uncompressed inner packet.
+section: "4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

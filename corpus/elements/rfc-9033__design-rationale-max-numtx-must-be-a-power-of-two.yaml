@@ -1,0 +1,6 @@
+document: rfc-9033
+kind: design-rationale
+summary: MAX_NUMTX MUST be a power of two to allow exact integer division of NumTx and NumTxAck by 2 without introducing division error. This halving mechanism keeps the counters from saturating while preserving the PDR value, allowing ongoing statistical accumulation.
+section: "5.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

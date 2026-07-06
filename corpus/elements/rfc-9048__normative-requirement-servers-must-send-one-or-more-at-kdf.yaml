@@ -1,0 +1,10 @@
+document: rfc-9048
+kind: normative-requirement
+summary: Servers MUST send one or more AT_KDF attributes in EAP-Request/AKA'-Challenge, ordered by preference. If the peer receives multiple EAP-Request/AKA'-Challenge messages with differing AT_KDF attributes without having requested negotiation, the peer MUST behave as if AT_MAC were incorrect and fail the authentication.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

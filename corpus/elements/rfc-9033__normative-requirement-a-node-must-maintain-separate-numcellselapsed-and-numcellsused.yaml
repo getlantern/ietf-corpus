@@ -1,0 +1,7 @@
+document: rfc-9033
+kind: normative-requirement
+summary: A node MUST maintain separate NumCellsElapsed and NumCellsUsed counter pairs for negotiated Tx cells and negotiated Rx cells to the selected parent. When NumCellsElapsed reaches MAX_NUM_CELLS, if NumCellsUsed exceeds LIM_NUMCELLSUSED_HIGH a 6P ADD is issued; if below LIM_NUMCELLSUSED_LOW a 6P DELETE is issued; both counters are then reset to 0.
+section: "5.1"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

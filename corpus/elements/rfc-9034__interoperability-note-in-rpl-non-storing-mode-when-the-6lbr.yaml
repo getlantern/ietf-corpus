@@ -1,0 +1,8 @@
+document: rfc-9034
+kind: interoperability-note
+summary: In RPL non-storing mode, when the 6LBR generates an IPv6-in-IPv6 encapsulated packet for downstream delivery, it copies the Deadline-6LoRHE from the inner IP header to the outer IP header and removes it from the inner header. At the tunnel endpoint, the header is copied back from outer to inner before delivery to the receiver.
+section: "6.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

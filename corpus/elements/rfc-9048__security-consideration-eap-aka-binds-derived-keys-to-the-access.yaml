@@ -1,0 +1,9 @@
+document: rfc-9048
+kind: security-consideration
+summary: EAP-AKA' binds derived keys to the access network name via CK'/IK', preventing keys stolen from one network from being used on another. The server verifies that the claimed access network name matches what it should be, and the peer compares it with its own local observation, preventing 'lying NAS' attacks. The AMF separation bit MUST be set to 1 and checked by the peer.
+section: "7.4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

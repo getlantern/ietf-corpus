@@ -1,0 +1,9 @@
+document: rfc-9044
+kind: security-consideration
+summary: When IV lengths other than 96 bits are used, the GHASH function processes the IV, introducing potential for IV collisions. This is not a concern with CMS AuthenticatedData because a fresh content-authentication key is usually generated per message.
+section: "7"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

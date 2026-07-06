@@ -1,0 +1,9 @@
+document: rfc-9048
+kind: protocol-element
+summary: AT_KDF negotiation allows the peer to reject the server's first-choice KDF by responding with an EAP-Response/AKA'-Challenge containing only one AT_KDF attribute set to its preferred alternative. The server then re-sends the challenge with the selected alternative prepended to the AT_KDF list, resulting in a deliberate duplication that signals the agreed change.
+section: "3.2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
