@@ -1,0 +1,10 @@
+document: rfc-9097
+kind: wire-format
+summary: Each offered load rate is encoded as datagrams of fixed payload size ss (no default; ≤1222 bytes tested), sent as a burst of count cc (tested range 1–100) every burst interval tt (default 100 microsec). The maximum UDP payload size MUST account for IP header overhead and tunnel headers to avoid IP-layer fragmentation.
+section: "8.1"
+topics:
+    - measurement
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

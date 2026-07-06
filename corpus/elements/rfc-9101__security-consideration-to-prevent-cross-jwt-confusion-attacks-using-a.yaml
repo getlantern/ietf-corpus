@@ -1,0 +1,11 @@
+document: rfc-9101
+kind: security-consideration
+summary: To prevent cross-JWT confusion attacks (using a Request Object as a client authentication JWT), implementers should never use the client ID as the 'sub' value, use explicit typing with 'typ':'oauth-authz-req+jwt' in the header, or use keys identifiably distinct from keys used for other purposes.
+section: "10.8"
+topics:
+    - oauth
+    - jose
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

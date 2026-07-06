@@ -1,0 +1,9 @@
+document: rfc-9097
+kind: interoperability-note
+summary: If traffic conditioning (shaping or policing) exists along the path, different values for dt SHOULD be used across multiple measurement intervals [T,T+I]. Each dt SHOULD be an integer multiple of increasing values k times the serialization delay of a Path MTU at the conditioning point, to avoid mistaking burst tolerance for valid Maximum Capacity.
+section: "6.5"
+topics:
+    - measurement
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

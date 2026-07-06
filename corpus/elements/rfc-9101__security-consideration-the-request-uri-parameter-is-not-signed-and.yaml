@@ -1,0 +1,9 @@
+document: rfc-9101
+kind: security-consideration
+summary: The 'request_uri' parameter is not signed and can be tampered with by a man-in-the-browser attacker, enabling scope elevation or DoS attacks. Mitigations include validating the URI points to an expected location, verifying the 'application/oauth-authz-req+jwt' media type, implementing timeouts, and not performing recursive GET on the URI.
+section: 10.4.2
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9097
+kind: design-rationale
+summary: The default sub-interval dt=1 second was chosen to avoid false-maximum readings from path buffers filling transiently. Shorter dt values can alias onto burst patterns from shapers/policers, producing unsustainable capacity readings; dt=1s also aligns naturally with Mbps reporting units.
+section: "8.2"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

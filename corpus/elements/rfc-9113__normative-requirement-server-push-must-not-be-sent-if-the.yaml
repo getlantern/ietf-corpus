@@ -1,0 +1,9 @@
+document: rfc-9113
+kind: normative-requirement
+summary: Server push MUST NOT be sent if the SETTINGS_ENABLE_PUSH setting from the client is 0. A pushed response MUST be cacheable, MUST be safe (in the HTTP sense), and MUST NOT include a request body. Clients may reject pushed streams by sending RST_STREAM with REFUSED_STREAM.
+section: "8.4"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9097
+kind: protocol-element
+summary: The Lost Status Backoff timeout is computed as UDRT + (2+w)*FT, where UDRT is the upper delay range threshold (default 90 msec), FT is the feedback interval (default 50 msec), and w is the count of repeated timeouts (initially 0, incremented on each timeout, reset on message receipt). When the timeout fires, the sender decreases the offered load as if congestion was detected.
+section: "8.1"
+topics:
+    - measurement
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

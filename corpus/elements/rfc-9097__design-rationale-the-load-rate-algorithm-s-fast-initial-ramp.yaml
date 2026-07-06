@@ -1,0 +1,9 @@
+document: rfc-9097
+kind: design-rationale
+summary: 'The load rate algorithm''s fast initial ramp-up (Rx+10 steps) followed by a one-time large drop (Rx-30) on first congestion confirmation is intentional: it quickly finds the near-maximum rate while compensating for overshoot. Making the algorithm TCP-like would give it TCP''s weaknesses and prevent accurate Maximum IP-Layer Capacity measurement.'
+section: "8.1"
+topics:
+    - measurement
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

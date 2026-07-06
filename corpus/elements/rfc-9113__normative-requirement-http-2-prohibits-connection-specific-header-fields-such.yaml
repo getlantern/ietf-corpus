@@ -1,0 +1,9 @@
+document: rfc-9113
+kind: normative-requirement
+summary: HTTP/2 prohibits connection-specific header fields such as Connection, Keep-Alive, Proxy-Connection, Transfer-Encoding, and Upgrade. An endpoint MUST treat a message containing these fields as malformed. The TE header field is permitted only if its value is 'trailers'.
+section: 8.2.2
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

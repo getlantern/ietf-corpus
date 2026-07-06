@@ -1,0 +1,10 @@
+document: rfc-9113
+kind: security-consideration
+summary: Combining compression with encryption (as HTTP/2 does via HPACK) can expose plaintext to CRIME-like attacks if an attacker controls part of the compressed payload. HTTP/2 limits this risk by using HPACK rather than general-purpose compression, which is designed to mitigate such attacks.
+section: "10.6"
+topics:
+    - http
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

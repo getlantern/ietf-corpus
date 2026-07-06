@@ -1,0 +1,9 @@
+document: rfc-9101
+kind: security-consideration
+summary: A set of malicious clients can launch DoS attacks against the authorization server by pointing 'request_uri' to large, slow, or recursive URIs. The server should validate URI destinations, check media types, implement timeouts, and prohibit recursive lookups.
+section: 10.4.1
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9108
+kind: design-rationale
+summary: The 'dns-class' and 'rr-type' types are defined as unions of uint16 and an enumeration name because RFC 3597 permits specifying class or RR type via assigned decimal number as an alternative to the mnemonic (e.g., 'CLASS1' for IN, 'TYPE28' for AAAA). Unassigned and reserved values not present in enumerations can only be expressed numerically.
+section: "3"
+topics:
+    - dns
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

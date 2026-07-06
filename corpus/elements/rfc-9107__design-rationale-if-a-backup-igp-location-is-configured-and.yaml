@@ -1,0 +1,9 @@
+document: rfc-9107
+kind: design-rationale
+summary: If a backup IGP location is configured and the primary IGP location disappears from the IGP (fails), the backup is used. Similar to the failure of a route reflector itself, this may result in less optimal paths being selected and advertised; the smaller the IGP distance between primary and backup, the smaller the impact.
+section: "4"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

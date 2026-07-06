@@ -1,0 +1,10 @@
+document: rfc-9101
+kind: security-consideration
+summary: The source of the authorization request MUST always be verified via JWS signature verification, symmetric JWE key verification, TLS server identity verification (with caveats), or client authentication when exchanging Request Objects for URIs. Request Object URIs issued by an AS service MUST have short lifetime (under a minute) and 128-bit minimum entropy.
+section: "10.2"
+topics:
+    - oauth
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9103
+kind: interoperability-note
+summary: XoT servers that do not wish to support DoT for general recursive queries may refuse non-XFR queries on TLS connections with REFUSED and EDE code 21. However, servers must cater to non-XoT clients and non-EDE clients whose behavior upon REFUSED varies from continual retry to complete abandonment of the server across all transports.
+section: "7.7"
+topics:
+    - dns
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

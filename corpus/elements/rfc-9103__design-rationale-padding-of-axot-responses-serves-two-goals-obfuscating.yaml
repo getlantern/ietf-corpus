@@ -1,0 +1,10 @@
+document: rfc-9103
+kind: design-rationale
+summary: 'Padding of AXoT responses serves two goals: obfuscating the total size of the transferred zone and obfuscating incremental changes between SOA updates. Effective padding may require stateful tracking since zones grow and shrink over time. Empty AXoT responses (containing only an OPT RR with padding) must be supported to meet padding requirements for small zones.'
+section: 7.9.1
+topics:
+    - dns
+    - tls
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

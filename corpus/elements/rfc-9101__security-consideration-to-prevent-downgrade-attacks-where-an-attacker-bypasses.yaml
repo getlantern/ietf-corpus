@@ -1,0 +1,9 @@
+document: rfc-9101
+kind: security-consideration
+summary: To prevent downgrade attacks where an attacker bypasses JAR protections using plain RFC 6749 requests, the 'require_signed_request_object' metadata value (boolean) can be set to true on the server, causing it to MUST reject non-JAR requests and requests using 'alg':'none'.
+section: "10.5"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

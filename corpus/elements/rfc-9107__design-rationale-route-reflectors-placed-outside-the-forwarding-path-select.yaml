@@ -1,0 +1,9 @@
+document: rfc-9107
+kind: design-rationale
+summary: Route reflectors placed outside the forwarding path select the best path based on their own IGP location, not their clients'. When IGP tie-breaking determines the best path, the exit point chosen is closest to the route reflector, not to the clients, making hot potato routing unachievable.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

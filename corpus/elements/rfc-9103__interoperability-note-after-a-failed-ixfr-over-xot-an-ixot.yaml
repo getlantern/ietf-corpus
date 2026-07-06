@@ -1,0 +1,9 @@
+document: rfc-9103
+kind: interoperability-note
+summary: After a failed IXFR over XoT, an IXoT client SHOULD request the AXFR on the already open XoT connection rather than opening a new connection. Fallback to AXFR occurs when the primary cannot provide IXFR for the requested SOA serial.
+section: 7.10.2
+topics:
+    - dns
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

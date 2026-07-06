@@ -1,0 +1,8 @@
+document: rfc-9113
+kind: design-rationale
+summary: The client connection preface string ("PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n") was chosen so that a large proportion of HTTP/1.1 or HTTP/1.0 servers and intermediaries would not attempt to process further frames, providing a degree of cross-protocol safety for cleartext connections.
+section: "3.4"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

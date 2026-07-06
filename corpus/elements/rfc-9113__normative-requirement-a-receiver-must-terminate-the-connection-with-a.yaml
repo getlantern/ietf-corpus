@@ -1,0 +1,9 @@
+document: rfc-9113
+kind: normative-requirement
+summary: A receiver MUST terminate the connection with a connection error of type COMPRESSION_ERROR if it does not decompress a field block, even if the frames are to be discarded. HPACK compression state is connection-wide and stateful; all field blocks on a connection share the same encoder/decoder context.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

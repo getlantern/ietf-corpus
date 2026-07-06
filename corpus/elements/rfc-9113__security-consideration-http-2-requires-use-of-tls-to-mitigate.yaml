@@ -1,0 +1,10 @@
+document: rfc-9113
+kind: security-consideration
+summary: HTTP/2 requires use of TLS to mitigate cross-protocol attacks. TLS 1.2 implementations MUST NOT negotiate cipher suites from the prohibited list in Appendix A, which includes all cipher suites with NULL, export-grade, or RC4 encryption. TLS 1.2 MUST support SNI.
+section: "9.2"
+topics:
+    - http
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

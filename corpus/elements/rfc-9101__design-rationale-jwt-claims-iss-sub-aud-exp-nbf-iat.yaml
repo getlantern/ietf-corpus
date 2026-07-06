@@ -1,0 +1,10 @@
+document: rfc-9101
+kind: design-rationale
+summary: JWT claims 'iss', 'sub', 'aud', 'exp', 'nbf', 'iat', and 'jti' are registered as OAuth parameters not because JAR uses all of them, but to prevent future OAuth extensions from assigning them different meanings — since the Request Object is a JWT, these claims have fixed JWT semantics.
+section: "9.1"
+topics:
+    - oauth
+    - jose
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

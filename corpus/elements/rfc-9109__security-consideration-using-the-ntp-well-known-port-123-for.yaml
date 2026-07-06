@@ -1,0 +1,10 @@
+document: rfc-9109
+kind: security-consideration
+summary: Using the NTP well-known port 123 for both srcport and dstport in client mode unnecessarily reduces the search space for blind/off-path attackers who need to guess the five-tuple {Protocol, IP src, IP dst, src port, dst port} to forge packets targeting an NTP association. This issue is assigned CVE-2019-11331.
+section: "6"
+topics:
+    - ntp
+    - security
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

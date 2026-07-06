@@ -1,0 +1,10 @@
+document: rfc-9103
+kind: normative-requirement
+summary: XoT clients and servers MUST implement EDE (Extended DNS Error) codes. If a XoT server receives non-XoT traffic it is not willing to answer on a TLS connection, it SHOULD respond with REFUSED and EDE code 21 - Not Supported.
+section: "7.8"
+rfc2119_level: MUST
+topics:
+    - dns
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

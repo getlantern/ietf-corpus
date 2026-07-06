@@ -1,0 +1,11 @@
+document: rfc-9109
+kind: design-rationale
+summary: The choice of whether to randomize the ephemeral port on a per-request or per-association basis is left to the implementation; per-request randomization better mitigates blind/off-path attacks but may negatively affect time measurement stability due to ECMP path variation.
+section: "4"
+topics:
+    - ntp
+    - udp
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

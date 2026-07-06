@@ -1,0 +1,9 @@
+document: rfc-9113
+kind: privacy-consideration
+summary: HTTP/2 field compression makes it possible for an eavesdropper to observe patterns in traffic even when TLS is used. Padding (in DATA, HEADERS, and PUSH_PROMISE frames) can be used to obscure message sizes but does not eliminate traffic analysis. The amount of padding SHOULD be chosen to make traffic analysis difficult.
+section: "10.7"
+topics:
+    - http
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

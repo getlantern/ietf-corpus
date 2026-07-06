@@ -1,0 +1,10 @@
+document: rfc-9109
+kind: design-rationale
+summary: Port randomization is recommended on a per-association basis to minimize impact on clock stability, since per-request randomization causes packets in different exchanges to take different ECMP paths, leading to less stable offset and delay measurements.
+section: "3.2"
+topics:
+    - ntp
+    - udp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9101
+kind: interoperability-note
+summary: Some existing deployments may use the media type 'application/jwt' for Request Objects instead of the registered 'application/oauth-authz-req+jwt'. Similarly, requiring explicit typing ('typ':'oauth-authz-req+jwt') would break most existing deployments using OpenID Connect, as existing clients commonly use untyped Request Objects.
+section: "4"
+topics:
+    - oauth
+    - jose
+    - interoperability
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9113
+kind: wire-format
+summary: The PING frame (type=0x06) has a fixed 8-octet payload of opaque data and MUST be associated with stream 0x00. Receivers of a PING without the ACK flag MUST respond with a PING with the ACK flag set and identical payload. A PING with length other than 8 MUST be treated as a connection error of type FRAME_SIZE_ERROR.
+section: "6.7"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

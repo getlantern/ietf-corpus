@@ -1,0 +1,12 @@
+document: rfc-9101
+kind: normative-requirement
+summary: The authorization server MUST validate the JWS signature of the Request Object using a key associated with the client. Algorithm verification MUST be performed per Sections 3.1 and 3.2 of RFC 8725. Signature validation failure MUST result in an 'invalid_request_object' error.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

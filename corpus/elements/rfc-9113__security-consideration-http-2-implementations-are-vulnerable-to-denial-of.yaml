@@ -1,0 +1,9 @@
+document: rfc-9113
+kind: security-consideration
+summary: HTTP/2 implementations are vulnerable to denial-of-service via resource exhaustion. Endpoints should limit field block sizes (SETTINGS_MAX_HEADER_LIST_SIZE), the number of concurrent streams (SETTINGS_MAX_CONCURRENT_STREAMS), and monitor for excessive CONTINUATION frames, which can be used to exhaust memory.
+section: "10.5"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

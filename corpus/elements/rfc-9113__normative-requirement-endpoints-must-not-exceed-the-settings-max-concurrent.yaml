@@ -1,0 +1,9 @@
+document: rfc-9113
+kind: normative-requirement
+summary: Endpoints MUST NOT exceed the SETTINGS_MAX_CONCURRENT_STREAMS limit set by their peer. Receiving a HEADERS frame that causes the advertised concurrent stream limit to be exceeded MUST be treated as a stream error of type PROTOCOL_ERROR or REFUSED_STREAM. Streams in 'open' or either 'half-closed' state count toward the limit.
+section: 5.1.2
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

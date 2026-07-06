@@ -1,0 +1,9 @@
+document: rfc-9107
+kind: design-rationale
+summary: 'Granularity of IGP location configuration presents a precision-vs-performance tradeoff: per-client is most precise but most CPU-intensive (one SPF and Decision Process subset per client); per-set-of-clients reduces precision but lowers compute load; per-routing-instance is equivalent in both precision and performance to standard RFC 4456 route reflection.'
+section: "4"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

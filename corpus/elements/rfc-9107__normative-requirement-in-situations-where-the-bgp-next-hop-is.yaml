@@ -1,0 +1,10 @@
+document: rfc-9107
+kind: normative-requirement
+summary: In situations where the BGP next hop is itself a BGP route, the IGP metric used for resolution SHOULD be the final IGP cost to reach that next hop. Implementations that cannot provide the final IGP metric to a recursive next hop MUST treat such paths as least preferred during next-hop metric comparisons.
+section: 3.1.1
+rfc2119_level: SHOULD
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
