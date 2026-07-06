@@ -1,0 +1,9 @@
+document: rfc-9135
+kind: design-rationale
+summary: IRB functionality is placed on PEs/NVEs to avoid inefficient centralized L3 gateway backhauling and hair-pinning of inter-subnet tenant traffic. Each PE with IRB capability can locally bridge intra-subnet traffic and locally route inter-subnet traffic on a packet-by-packet basis.
+section: "1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

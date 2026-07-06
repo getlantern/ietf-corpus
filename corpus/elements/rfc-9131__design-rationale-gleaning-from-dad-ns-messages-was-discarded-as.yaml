@@ -1,0 +1,8 @@
+document: rfc-9131
+kind: design-rationale
+summary: Gleaning from DAD NS messages was discarded as the sole solution because it requires routers to listen to all solicited-node multicast groups (CPU impact), and the address resolution triggered during DAD may complete before the host finishes DAD, causing the host to silently ignore the router's NS per RFC 4862 Section 5.4.3.
+section: "8.5"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

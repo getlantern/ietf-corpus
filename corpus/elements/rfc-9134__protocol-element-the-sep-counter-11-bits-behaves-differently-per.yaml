@@ -1,0 +1,9 @@
+document: rfc-9134
+kind: protocol-element
+summary: 'The SEP counter (11 bits) behaves differently per mode: in codestream mode (K=0) it extends the P counter by incrementing whenever P overflows; in slice packetization mode (K=1) it identifies the slice index modulo 2047, with value 0x07FF reserved to indicate the JPEG XS header segment.'
+section: "4.3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9134
+kind: design-rationale
+summary: 'Only slice packetization mode supports out-of-order packet transmission; codestream packetization mode requires sequential delivery. This is why T=0 (out-of-order) mandates K=1 (slice mode): the slice-level granularity provides the independent unit boundaries needed to reassemble out-of-order packets.'
+section: "4.3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9132
+kind: protocol-element
+summary: Mitigation efficacy updates are sent via PUT with the mandatory 'attack-status' parameter (1=still under attack, 2=successfully mitigated). The PUT MUST include all parameters from the original mitigation request unchanged except 'lifetime'; an If-Match Option with empty value makes the request conditional on the mitigation's existence.
+section: 4.4.3
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

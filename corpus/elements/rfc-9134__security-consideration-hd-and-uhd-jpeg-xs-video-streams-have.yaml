@@ -1,0 +1,11 @@
+document: rfc-9134
+kind: security-consideration
+summary: HD and UHD JPEG XS video streams have significant bandwidth requirements (typically more than 1 Gbps for UHD), which is sufficient to cause denial-of-service if transmitted onto most currently available Internet paths. Applications using best-effort service SHALL monitor packet loss and adapt transmission rate or leave the session if loss is unacceptably high.
+section: "10"
+topics:
+    - security
+    - rtp
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

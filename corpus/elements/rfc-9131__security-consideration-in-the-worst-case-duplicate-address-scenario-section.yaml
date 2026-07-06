@@ -1,0 +1,9 @@
+document: rfc-9131
+kind: security-consideration
+summary: In the worst-case duplicate address scenario (Section 5.3.2), an Optimistic Address duplicate can cause traffic disruption for the rightful owner for up to DELAY_FIRST_PROBE_TIME + (MAX_UNICAST_SOLICIT-1)*RetransTimer = 7 seconds. This risk is deemed acceptable due to low probability and the fact that the rightful owner can prevent it by implementing this document's mechanism.
+section: "10"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

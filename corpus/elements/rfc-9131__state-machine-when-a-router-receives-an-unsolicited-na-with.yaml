@@ -1,0 +1,9 @@
+document: rfc-9131
+kind: state-machine
+summary: 'When a router receives an unsolicited NA with no existing NC entry: create STALE entry. When the STALE entry is used to forward return traffic, transition to DELAY. After DELAY_FIRST_PROBE_TIME (5 seconds), transition to PROBE and send up to MAX_UNICAST_SOLICIT unicast NSes. If no response, delete the entry.'
+section: 5.3.1
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9136
+kind: design-rationale
+summary: A separate route type (RT-5) is required instead of repurposing RT-2 (MAC/IP Advertisement) for IP prefix advertisement because RT-2 tightly couples prefixes to a specific MAC address. In the floating IP scenario, 1,000 prefixes associated with a floating IP would require mass withdrawal/readvertisement on ownership change if encoded in RT-2, but only a single RT-2 update is needed when RT-5 decouples the prefix from the MAC.
+section: "2.2"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

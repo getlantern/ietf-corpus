@@ -1,0 +1,9 @@
+document: rfc-9133
+kind: design-rationale
+summary: The activation-type update applied via the DOTS signal channel is maintained as the new activation type for the ACL even after the termination of the mitigation request. This persistence means the signal channel override survives mitigation teardown, and the DOTS client must use the data channel afterward if it wishes to revert.
+section: 3.2.1
+topics:
+    - security
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

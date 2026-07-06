@@ -1,0 +1,9 @@
+document: rfc-9133
+kind: design-rationale
+summary: The DOTS data channel protocol is not designed to withstand attack conditions; when a DDoS attack saturates the inbound link, the DOTS client cannot use the data channel to modify or withdraw filtering rules (e.g., accept-lists that conflict with mitigation). The signal channel is designed to be resilient under exactly these conditions, making it the appropriate vehicle for in-attack filter control.
+section: "1.1"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

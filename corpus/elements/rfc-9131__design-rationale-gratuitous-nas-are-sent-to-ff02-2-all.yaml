@@ -1,0 +1,9 @@
+document: rfc-9131
+kind: design-rationale
+summary: Gratuitous NAs are sent to ff02::2 (all-routers) rather than ff02::1 (all-nodes) to reduce multicast noise. With MLD snooping enabled, these NAs are only delivered to routers on the segment rather than flooded to all nodes.
+section: "4.1"
+topics:
+    - ip
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

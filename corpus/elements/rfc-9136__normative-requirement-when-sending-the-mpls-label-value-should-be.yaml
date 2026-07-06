@@ -1,0 +1,11 @@
+document: rfc-9136
+kind: normative-requirement
+summary: When sending, the MPLS label value SHOULD be zero if a recursive resolution based on an Overlay Index is used. If the received MPLS label is zero and the route does not contain an Overlay Index, it MUST be treated as withdraw per RFC 7606.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

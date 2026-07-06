@@ -1,0 +1,10 @@
+document: rfc-9132
+kind: security-consideration
+summary: DOTS agents MUST mutually authenticate using (D)TLS with certificates or pre-shared keys. An unauthenticated DOTS server exposes clients to man-in-the-middle attacks where an attacker could reject mitigation requests or redirect the client to a rogue server; an unauthenticated client could be used to launch DoS attacks against the DOTS server.
+section: "11"
+topics:
+    - security
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

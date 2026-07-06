@@ -1,0 +1,9 @@
+document: rfc-9135
+kind: design-rationale
+summary: Symmetric IRB performs lookups at both ingress and egress PEs (MAC then IP at ingress, IP then MAC at egress), enabling IP-only tunnels and eliminating the need for ingress PEs to maintain ARP entries for remote hosts. Asymmetric IRB performs all three lookups at the ingress PE only, requiring all PEs to maintain ARP entries and bridge tables for all subnets including non-locally-attached ones.
+section: "4"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

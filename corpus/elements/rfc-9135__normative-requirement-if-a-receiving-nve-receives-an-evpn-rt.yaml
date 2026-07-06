@@ -1,0 +1,11 @@
+document: rfc-9135
+kind: normative-requirement
+summary: If a receiving NVE receives an EVPN RT-2 with only Label1 and a single IP-VRF Route Target, or with only a single MAC-VRF Route Target but both Label1 and Label2, or with a MAC address length of zero, it MUST apply the treat-as-withdraw approach per RFC 7606 and SHOULD log an error.
+section: 9.1.1
+rfc2119_level: MUST
+topics:
+    - routing
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
