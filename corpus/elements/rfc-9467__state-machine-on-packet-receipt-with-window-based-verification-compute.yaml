@@ -1,0 +1,9 @@
+document: rfc-9467
+kind: state-machine
+summary: On packet receipt with window-based verification, compute index i = PC - PCh + S - 1. If i < 0, discard (too old). If 0 ≤ i < S and window[i] is set, discard (replay). If 0 ≤ i < S and window[i] is unset, mark set and accept. If i ≥ S, shift window left by (i - S + 1), set PCh to received PC, mark right edge set, and accept.
+section: "3.2"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

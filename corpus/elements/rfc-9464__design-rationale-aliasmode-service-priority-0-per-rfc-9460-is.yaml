@@ -1,0 +1,10 @@
+document: rfc-9464
+kind: design-rationale
+summary: AliasMode (Service Priority = 0 per RFC 9460) is explicitly not supported because it would trigger additional Do53 queries to resolve the aliased name, whereas the required data can be supplied directly in the IKE response without additional round trips.
+section: "3.1"
+topics:
+    - dns
+    - vpn
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

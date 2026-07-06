@@ -1,0 +1,9 @@
+document: rfc-9475
+kind: design-rationale
+summary: The expiry freshness window recommended by RFC 8224 may be too strict for store-and-forward messaging, where routine delivery of a MESSAGE may occur minutes or hours after it was sent. The PASSporT timestamp can still mitigate replay attacks and allow ordering messages in a user inbox.
+section: "3.2"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

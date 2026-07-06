@@ -1,0 +1,9 @@
+document: rfc-9467
+kind: design-rationale
+summary: Generalizing beyond two PC values (e.g., per-TOS or per-802.11 access category) would be unsafe because the field used to select the highest PC must itself be MAC-protected. Only destination address/port and packet body are covered by the MAC; TOS and 802.11 access category are not, so an attacker could replay a packet by changing the unprotected field to select a lower stored PC.
+section: 3.1.1
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

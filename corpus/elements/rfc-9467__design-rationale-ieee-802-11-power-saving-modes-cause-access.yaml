@@ -1,0 +1,9 @@
+document: rfc-9467
+kind: design-rationale
+summary: IEEE 802.11 power-saving modes cause access points to buffer multicast packets and release them after the power-saving interval ends, delaying them by up to hundreds of milliseconds relative to unicast packets. This systematically causes RFC 8967 PC verification to fail for multicast packets on Wi-Fi links, motivating the relaxed verification rules in this document.
+section: "1"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

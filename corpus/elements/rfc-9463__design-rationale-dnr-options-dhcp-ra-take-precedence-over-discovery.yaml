@@ -1,0 +1,9 @@
+document: rfc-9463
+kind: design-rationale
+summary: DNR options (DHCP/RA) take precedence over Discovery of Designated Resolvers (DDR, RFC 9462), because DDR uses Do53 queries to an external resolver that is susceptible to both internal and external attacks, whereas DHCP/RA is protected by link-layer mechanisms such as DHCPv6-Shield and RA-Guard.
+section: "3.2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

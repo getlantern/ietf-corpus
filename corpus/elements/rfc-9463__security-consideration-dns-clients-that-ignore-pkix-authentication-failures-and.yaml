@@ -1,0 +1,10 @@
+document: rfc-9463
+kind: security-consideration
+summary: DNS clients that ignore PKIX authentication failures and accept spoofed certificates will be subject to attacks such as redirection to malicious resolvers or interception of sensitive data. Encrypted DNS sessions with rogue resolvers spoofing an IP address will fail authentication because the ADN in the option will not match the certificate.
+section: "7.1"
+topics:
+    - dns
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

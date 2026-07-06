@@ -1,0 +1,10 @@
+document: rfc-9463
+kind: design-rationale
+summary: The Encrypted DNS options always include an ADN to enable PKIX-based authentication of the resolver. IP-address-only certificates are extremely rare (less than 1% of issued certificates per RFC 6125 Section 1.7.2), so using an FQDN as the reference identifier aligns with current certificate issuance best practices.
+section: 3.1.1
+topics:
+    - dns
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

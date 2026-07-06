@@ -1,0 +1,8 @@
+document: rfc-9471
+kind: design-rationale
+summary: Sibling domain glue is treated as optional (SHOULD rather than MUST) because resolvers can make follow-on queries to resolve sibling name server addresses. The exception is cyclic sibling dependencies, which cannot be resolved without glue; however, such delegations are rare (222 out of ~209,000,000 total in a 2021 analysis).
+section: "2.3"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

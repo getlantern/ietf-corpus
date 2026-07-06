@@ -1,0 +1,10 @@
+document: rfc-9470
+kind: normative-requirement
+summary: When processing an authorization request that includes `acr_values`, the authorization server SHOULD consider the requested ACR value as necessary for successfully fulfilling the request; if the requirement cannot be met, the request fails with an `unmet_authentication_requirements` error rather than returning a non-compliant token.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9463
+kind: design-rationale
+summary: IP addresses are included alongside the ADN to avoid adding a dependency on an external resolver to resolve the ADN. Early drafts considered reusing the existing DNS server address options, but that would require clients to probe each address for each supported protocol. Bundling the ADN with IPs and SvcParams eliminates this probing.
+section: 3.1.2
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

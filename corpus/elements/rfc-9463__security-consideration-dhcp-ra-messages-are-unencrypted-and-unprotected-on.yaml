@@ -1,0 +1,9 @@
+document: rfc-9463
+kind: security-consideration
+summary: DHCP/RA messages are unencrypted and unprotected on the LAN; an active attacker can spoof them to advertise a rogue encrypted DNS resolver. Mitigation mechanisms include DHCPv6-Shield (RFC 7610), RA-Guard (RFC 7113), and SAVI for DHCP (RFC 7513). Even so, these mechanisms cannot authenticate the DHCP server itself; PKIX validation of the resolver certificate against the ADN provides the end-to-end authentication.
+section: "7.1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

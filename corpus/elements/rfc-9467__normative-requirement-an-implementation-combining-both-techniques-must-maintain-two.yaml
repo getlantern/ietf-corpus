@@ -1,0 +1,10 @@
+document: rfc-9467
+kind: normative-requirement
+summary: An implementation combining both techniques MUST maintain two distinct windows per neighbour table entry (one for multicast, one for unicast). When a successful Challenge Reply is received, both windows MUST be reset. Incoming packets consult the multicast or unicast window based on the destination address.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

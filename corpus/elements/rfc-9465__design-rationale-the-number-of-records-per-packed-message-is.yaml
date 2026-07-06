@@ -1,0 +1,9 @@
+document: rfc-9465
+kind: design-rationale
+summary: The number of records per packed message is not encoded explicitly; it is inferred from the IP-layer length. This avoids adding a count field to the message header but requires parsers to iterate until the IP-indicated end of the packet.
+section: "3"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

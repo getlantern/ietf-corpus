@@ -1,0 +1,9 @@
+document: rfc-9467
+kind: security-consideration
+summary: The destination IP address used to select between PCm and PCu is included in the MAC pseudo-header and therefore integrity-protected. An attacker cannot replay a unicast packet as a multicast packet (or vice versa) without invalidating the MAC, preserving the anti-replay properties of RFC 8967.
+section: "4"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

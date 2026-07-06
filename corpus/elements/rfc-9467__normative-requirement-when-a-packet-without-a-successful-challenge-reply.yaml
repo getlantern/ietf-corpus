@@ -1,0 +1,10 @@
+document: rfc-9467
+kind: normative-requirement
+summary: When a packet without a successful Challenge Reply is received and the Index matches, the receiver compares the received PC against PCm (multicast destination) or PCu (unicast destination). If the received PC is smaller than or equal to the stored value, the packet MUST be dropped without sending a challenge.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

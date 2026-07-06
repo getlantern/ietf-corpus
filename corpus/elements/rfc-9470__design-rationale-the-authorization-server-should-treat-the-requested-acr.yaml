@@ -1,0 +1,9 @@
+document: rfc-9470
+kind: design-rationale
+summary: The authorization server SHOULD treat the requested `acr` value as a hard requirement (failing with `unmet_authentication_requirements` if unmet) rather than falling back to a weaker ACR, specifically to prevent clients from being stuck in a loop where the AS keeps issuing tokens the RS already rejected.
+section: "5"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
