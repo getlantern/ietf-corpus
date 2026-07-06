@@ -1,0 +1,11 @@
+document: rfc-9147
+kind: normative-requirement
+summary: Implementations MUST count received packets failing authentication per key. If failures exceed the AEAD-specific integrity limit—2^36 for AEAD_AES_128_GCM, AEAD_AES_256_GCM, and AEAD_CHACHA20_POLY1305; 2^23.5 for AEAD_AES_128_CCM—the connection SHOULD be closed immediately. Implementations SHOULD initiate a key update before reaching the limit.
+section: 4.5.3
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

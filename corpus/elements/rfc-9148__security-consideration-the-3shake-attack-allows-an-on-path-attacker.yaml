@@ -1,0 +1,10 @@
+document: rfc-9148
+kind: security-consideration
+summary: The 3SHAKE attack allows an on-path attacker to leverage session resumption/renegotiation to invalidate POP linking. For DTLS 1.2, tls-unique (RFC 5929) is retained as the risk is limited; for DTLS 1.3, tls-exporter binding is mandated to mitigate the attack. The Extended Master Secret Extension (RFC 7627) SHOULD be used with DTLS 1.2.
+section: "9.1"
+topics:
+    - security
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

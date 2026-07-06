@@ -1,0 +1,11 @@
+document: rfc-9147
+kind: security-consideration
+summary: Record number encryption hides per-record sequence numbers from on-path observers, preventing traffic-analysis attacks based on sequence number patterns. Encrypted records MUST be at least 16 bytes for the encryption mechanism to function; receivers MUST reject shorter records as deprotection failures.
+section: 4.2.3
+topics:
+    - tls
+    - crypto
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

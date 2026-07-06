@@ -1,0 +1,10 @@
+document: rfc-9147
+kind: normative-requirement
+summary: Invalid DTLS records (bad formatting, length, or authentication) SHOULD be silently discarded to preserve the association. Implementations that generate alerts MUST use fatal alerts. Generating fatal alerts is NOT RECOMMENDED over UDP because UDP forgery enables DoS attacks and spoofed traffic to third parties.
+section: 4.5.2
+rfc2119_level: SHOULD
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

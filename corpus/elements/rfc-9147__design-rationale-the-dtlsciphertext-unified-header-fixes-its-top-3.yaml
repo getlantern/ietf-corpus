@@ -1,0 +1,8 @@
+document: rfc-9147
+kind: design-rationale
+summary: The DTLSCiphertext unified header fixes its top 3 bits to '001', placing encrypted records in the range 32–63, which is disjoint from all prior DTLS plaintext content types. This enables demultiplexing by inspecting only the first byte, and allows DTLS 1.2 and 1.3 records to coexist on the same host/port quartet when CIDs are in use.
+section: "4.1"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9147
+kind: interoperability-note
+summary: DTLS 1.3 replaces the DTLS 1.2 HelloVerifyRequest with the TLS 1.3 HelloRetryRequest plus 'cookie' extension; DTLS 1.3-only implementations MUST NOT send HelloVerifyRequest. Dual-stack DTLS 1.2/1.3 clients MUST accept HelloVerifyRequest from DTLS 1.2 servers. DTLS 1.3 servers ignore the legacy_cookie field in ClientHello.
+section: "5.2"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

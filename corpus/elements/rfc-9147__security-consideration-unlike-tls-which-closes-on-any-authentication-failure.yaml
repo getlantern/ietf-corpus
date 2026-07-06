@@ -1,0 +1,10 @@
+document: rfc-9147
+kind: security-consideration
+summary: Unlike TLS, which closes on any authentication failure, DTLS silently discards unauthenticated packets, enabling an attacker to make repeated forgery attempts indefinitely. Per-key authentication-failure counters with AEAD-specific limits are therefore essential to bound attacker advantage in the DTLS threat model.
+section: 4.5.3
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

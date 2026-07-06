@@ -1,0 +1,8 @@
+document: rfc-9147
+kind: state-machine
+summary: 'DTLS uses a four-state retransmission machine: PREPARING (compute next flight, buffer messages), SENDING (transmit buffered flight, arm retransmit timer), WAITING (await ACK, timer expiry, or incoming flight), and FINISHED. Clients start in PREPARING; servers start in WAITING with empty buffers. In FINISHED, the server MUST respond to the client''s final-flight retransmissions with ACK for at least 2×MSL.'
+section: 5.8.1
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

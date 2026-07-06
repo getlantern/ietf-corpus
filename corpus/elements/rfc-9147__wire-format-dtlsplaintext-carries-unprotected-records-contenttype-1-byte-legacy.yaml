@@ -1,0 +1,9 @@
+document: rfc-9147
+kind: wire-format
+summary: 'DTLSPlaintext carries unprotected records: ContentType (1 byte), legacy_record_version (2 bytes, must be {254,253}), epoch (2 bytes, always 0), sequence_number (uint48, 6 bytes), length (2 bytes), and opaque fragment. DTLSCiphertext uses a variable-length unified_hdr followed by an encrypted_record.'
+section: "4"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

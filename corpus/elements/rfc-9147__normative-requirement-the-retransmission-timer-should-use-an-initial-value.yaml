@@ -1,0 +1,9 @@
+document: rfc-9147
+kind: normative-requirement
+summary: The retransmission timer SHOULD use an initial value of 1000 ms, doubling at each retransmission up to at least 60 seconds maximum. When external RTT information is available (e.g., from ICE), implementations SHOULD use 1.5× the RTT estimate as the initial value. For DTLS-SRTP, a default of 400 ms is RECOMMENDED.
+section: 5.8.2
+rfc2119_level: SHOULD
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

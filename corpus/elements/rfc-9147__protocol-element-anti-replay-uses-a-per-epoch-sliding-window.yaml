@@ -1,0 +1,9 @@
+document: rfc-9147
+kind: protocol-element
+summary: Anti-replay uses a per-epoch sliding window adapted from RFC 4303 §3.4.3. Each epoch has its own counter initialized to zero; records outside the window or duplicates are rejected. The window MUST NOT be updated until a record is successfully deprotected, to avoid timing side-channels on the record number.
+section: 4.5.1
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

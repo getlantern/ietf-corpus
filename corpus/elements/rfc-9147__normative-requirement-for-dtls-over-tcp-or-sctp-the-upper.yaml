@@ -1,0 +1,11 @@
+document: rfc-9147
+kind: normative-requirement
+summary: For DTLS over TCP or SCTP, the upper layer MUST NOT write any record exceeding 2^14 bytes. For DTLS over UDP or DCCP, PMTU estimates SHOULD be made available to upper layer protocols; ICMP PMTU indications below IPv4/IPv6 minimums (576/1280 bytes) SHOULD be ignored.
+section: "4.4"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - tcp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

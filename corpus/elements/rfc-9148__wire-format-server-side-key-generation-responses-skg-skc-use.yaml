@@ -1,0 +1,10 @@
+document: rfc-9148
+kind: wire-format
+summary: 'Server-side key generation responses (/skg, /skc) use Content-Format 62 (application/multipart-core, RFC 8710), encoded as a CBOR array of four items: [Content-Format-ID, key-bytes, Content-Format-ID, cert-bytes]. For /skg: [284, key, 281, cert]; for /skc: [280, enc-key, 287, cert].'
+section: "4.3"
+topics:
+    - tls
+    - crypto
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

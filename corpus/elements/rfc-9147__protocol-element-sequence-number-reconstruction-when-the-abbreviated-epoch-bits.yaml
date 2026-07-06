@@ -1,0 +1,9 @@
+document: rfc-9147
+kind: protocol-element
+summary: 'Sequence number reconstruction: when the abbreviated epoch bits in a received record match the current epoch, implementations SHOULD reconstruct the full sequence number as the value numerically closest to one plus the highest successfully deprotected sequence number. After the handshake, mismatched epoch bits trigger use of the most recent past epoch with matching bits.'
+section: 4.2.2
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

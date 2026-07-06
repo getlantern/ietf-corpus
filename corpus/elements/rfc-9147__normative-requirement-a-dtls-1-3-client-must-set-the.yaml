@@ -1,0 +1,9 @@
+document: rfc-9147
+kind: normative-requirement
+summary: A DTLS 1.3 client MUST set the legacy_cookie field to zero length in ClientHello. If a server receives a DTLS 1.3 ClientHello with a non-zero legacy_cookie value, the server MUST abort the handshake with an 'illegal_parameter' alert.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

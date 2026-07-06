@@ -1,0 +1,8 @@
+document: rfc-9147
+kind: design-rationale
+summary: EndOfEarlyData is omitted from DTLS 1.3 because epochs already demarcate the early-data/handshake-traffic boundary, making the message redundant. Additionally, DTLS's lossy nature means that deletion attacks EndOfEarlyData prevents in TLS are trivially achievable in DTLS regardless.
+section: "5.6"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

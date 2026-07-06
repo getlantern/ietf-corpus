@@ -1,0 +1,9 @@
+document: rfc-9147
+kind: design-rationale
+summary: The HKDF label 'dtls13' omits a trailing space (unlike TLS 1.3's 'tls13 ') to keep the overall label within one hash iteration, since 'DTLS' is one character longer than 'TLS' and adding a space would exceed a single iteration boundary.
+section: "5.9"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

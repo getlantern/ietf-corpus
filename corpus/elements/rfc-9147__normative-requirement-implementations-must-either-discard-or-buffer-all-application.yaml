@@ -1,0 +1,9 @@
+document: rfc-9147
+kind: normative-requirement
+summary: Implementations MUST either discard or buffer all application data records for epoch 3 and above until the Finished message from the peer has been received. Retransmissions of lost handshake messages MUST use the same epoch and keying material as the original transmission.
+section: 5.8.1
+rfc2119_level: MUST
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
