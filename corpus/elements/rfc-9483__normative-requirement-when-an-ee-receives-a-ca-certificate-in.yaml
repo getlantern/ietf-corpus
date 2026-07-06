@@ -1,0 +1,10 @@
+document: rfc-9483
+kind: normative-requirement
+summary: When an EE receives a CA certificate in caPubs for installation as a new trust anchor, it MUST properly authenticate the message and authorize the sender. A certificate received in caPubs MUST NOT be accepted as a trust anchor if it is the root CA certificate of the certificate used to protect the message.
+section: "4.1"
+rfc2119_level: MUST NOT
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

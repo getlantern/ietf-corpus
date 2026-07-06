@@ -1,0 +1,9 @@
+document: rfc-9483
+kind: state-machine
+summary: The EE state machine begins with sending ir/cr/kur/p10cr/rr/genm, then enters 'waiting for response'. On receiving ip/cp/kup with status 'accepted'/'grantedWithMods', it either uses implicitConfirm or sends certConf and awaits pkiConf. Status 'waiting' triggers a polling sub-loop using pollReq/pollRep. The operation ends on receiving pkiConf, rp/genp, or any rejection.
+section: "4"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
