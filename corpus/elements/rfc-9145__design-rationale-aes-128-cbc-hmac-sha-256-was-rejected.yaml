@@ -1,0 +1,9 @@
+document: rfc-9145
+kind: design-rationale
+summary: 'AES_128_CBC_HMAC_SHA_256 was rejected because CBC mode allows plaintext malleability: an attacker who knows the MAC key but not the encryption key can alter ciphertext to produce known arbitrary plaintext blocks. Separate AEAD and MAC protections prevent this attack class.'
+section: "4.3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

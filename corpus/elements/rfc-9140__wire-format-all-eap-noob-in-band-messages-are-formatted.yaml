@@ -1,0 +1,10 @@
+document: rfc-9140
+kind: wire-format
+summary: 'All EAP-NOOB in-band messages are formatted as JSON objects (RFC 8259) in UTF-8. Key field sizes: Noob=16 bytes, Hoob=16 bytes (truncated hash), NoobId=16 bytes (truncated hash), nonces Ns/Np/Ns2/Np2=32 bytes each, MACs/MACp/MACs2/MACp2=32 bytes each (truncated HMAC). ECDHE public keys PKs/PKp are in JWK format (RFC 7517). ServerInfo and PeerInfo JSON objects MUST NOT exceed 500 bytes each.'
+section: 3.3.2
+topics:
+    - json
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

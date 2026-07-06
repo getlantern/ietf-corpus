@@ -1,0 +1,9 @@
+document: rfc-9140
+kind: wire-format
+summary: The OOB message carries PeerId, Noob (16-byte random secret), and Hoob computed as H(Dir,Vers,Verp,PeerId,Cryptosuites,Dirs,ServerInfo,Cryptosuitep,Dirp,NAI,PeerInfo,0,PKs,Ns,PKp,Np,Noob) truncated to 16 bytes. NoobId is computed as H('NoobId',Noob) truncated to 16 bytes. The Dir field (1=peer-to-server, 2=server-to-peer) is included in Hoob but is never sent over any channel.
+section: 3.2.3
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

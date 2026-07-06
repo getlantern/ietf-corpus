@@ -1,0 +1,9 @@
+document: rfc-9140
+kind: protocol-element
+summary: The Reconnect Exchange provides fast reconnect without repeating the OOB Step, using three request-response pairs (Type=7 for cryptosuite negotiation, Type=8 for KeyingMode/nonces/optional ECDHE keys, Type=9 for mutual MACs2). The KeyingMode field (0=Completion, 1=reconnect no ECDHE, 2=reconnect with ECDHE same suite, 3=reconnect with ECDHE new suite) selects the key derivation variant.
+section: 3.4.2
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

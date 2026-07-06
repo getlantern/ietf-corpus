@@ -1,0 +1,9 @@
+document: rfc-9145
+kind: design-rationale
+summary: Both AEAD (for encryption) and HMAC (for integrity) are used rather than AEAD alone, so that NSH-aware SFs can recompute only the MAC (not the ciphertext) after decrementing the Service Index, and so that SFFs can be given MAC_KEY for integrity verification without receiving ENC_KEY.
+section: "4.2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

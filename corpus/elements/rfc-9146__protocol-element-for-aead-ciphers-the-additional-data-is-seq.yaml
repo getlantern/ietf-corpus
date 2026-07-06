@@ -1,0 +1,9 @@
+document: rfc-9146
+kind: protocol-element
+summary: For AEAD ciphers, the additional_data is seq_num_placeholder + tls12_cid + cid_length + tls12_cid + version + epoch + sequence_number + cid + length_of_DTLSInnerPlaintext. The modified algorithm MUST NOT be applied to non-tls12_cid records.
+section: "5.3"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

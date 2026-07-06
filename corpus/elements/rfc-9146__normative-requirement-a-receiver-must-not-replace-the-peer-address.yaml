@@ -1,0 +1,10 @@
+document: rfc-9146
+kind: normative-requirement
+summary: 'A receiver MUST NOT replace the peer address on receiving a CID record with a new source address unless: (1) the datagram passed cryptographic verification, (2) it is newer than the most recently received datagram (by epoch and sequence number), and (3) a strategy confirms the new address can receive DTLS records.'
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

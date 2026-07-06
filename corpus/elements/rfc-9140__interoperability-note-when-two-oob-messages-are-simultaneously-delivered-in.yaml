@@ -1,0 +1,8 @@
+document: rfc-9140
+kind: interoperability-note
+summary: When two OOB messages are simultaneously delivered in both directions (a rare but possible event due to poor UI design), the server detects this by observing both endpoints in OOB Received (2) state and MUST act as if only the server-to-peer message was delivered, using it as a tiebreaker to resolve the ambiguity.
+section: 3.2.4
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

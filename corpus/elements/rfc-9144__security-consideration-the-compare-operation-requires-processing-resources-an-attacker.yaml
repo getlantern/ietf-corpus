@@ -1,0 +1,10 @@
+document: rfc-9144
+kind: security-consideration
+summary: The <compare> operation requires processing resources; an attacker could mount a denial-of-service attack by making a high volume of comparison requests. Implementations SHOULD use NACM (RFC 8341) to enforce authorization and SHOULD rate-limit requests, rejecting those exceeding a sustainable frequency.
+section: "8"
+topics:
+    - security
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

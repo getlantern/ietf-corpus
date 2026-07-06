@@ -1,0 +1,9 @@
+document: rfc-9140
+kind: security-consideration
+summary: EAP-NOOB authentication relies on the OOB channel being secure against eavesdropping and modification. The ECDHE exchange establishes keys over an insecure network, and the Hoob fingerprint sent via OOB authenticates the entire Initial Exchange to the OOB receiver, binding the key exchange to the correct participants.
+section: "6.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

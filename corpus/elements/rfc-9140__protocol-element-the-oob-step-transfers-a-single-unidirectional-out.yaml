@@ -1,0 +1,9 @@
+document: rfc-9140
+kind: protocol-element
+summary: The OOB Step transfers a single unidirectional out-of-band message containing PeerId, the 16-byte secret nonce Noob, and the 16-byte cryptographic fingerprint Hoob. The OOB receiver MUST compare Hoob against a locally computed value; if equal, the receiver moves to OOB Received (2) state; otherwise the OOB message MUST be rejected.
+section: 3.2.3
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

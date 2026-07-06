@@ -1,0 +1,10 @@
+document: rfc-9143
+kind: security-consideration
+summary: The BUNDLE mechanism shares a single transport for multiple media streams; an attacker capable of injecting or intercepting packets on the shared transport can affect all bundled media simultaneously. Security relies on the underlying transport-layer protections (e.g., DTLS-SRTP, ICE) applied to the BUNDLE transport.
+section: "17"
+topics:
+    - security
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

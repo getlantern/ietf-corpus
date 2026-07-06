@@ -1,0 +1,9 @@
+document: rfc-9140
+kind: protocol-element
+summary: 'Key derivation uses NIST C(2e,0s,ECC CDH) ECDHE followed by the NIST one-step KDF (SP 800-56Ar3 §5.8.2.1) with AlgorithmId=''EAP-NOOB'' (8-byte ASCII). KDF outputs (per Table 5): MSK (bytes 0–63), EMSK (64–127), AMSK (128–191), MethodId (192–223), MAC keys Kms/Kmp (224–287), and persistent key Kz (288–319, KeyingMode 0 and 3 only).'
+section: "3.5"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9146
+kind: design-rationale
+summary: The MAC construction for CID records uses seq_num_placeholder (0xff * 8) followed by tls12_cid to ensure MAC inputs for CID-carrying records are structurally distinct from non-CID records, where a sequence number is always followed by a content type other than tls12_cid.
+section: "5.1"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
