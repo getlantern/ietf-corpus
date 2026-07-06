@@ -1,0 +1,7 @@
+document: rfc-9174
+kind: normative-requirement
+summary: During contact initiation, the active TCPCL entity SHALL send the highest TCPCL protocol version on a first session attempt. If it receives a lower version in response, the TCP connection SHALL be closed. If the passive entity receives an unrecognized version, it SHALL send its Contact Header and immediately terminate with reason code 'Version mismatch'.
+section: "4.3"
+rfc2119_level: SHALL
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

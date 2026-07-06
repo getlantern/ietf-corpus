@@ -1,0 +1,10 @@
+document: rfc-9173
+kind: normative-requirement
+summary: Prior to generating the IPPT, if a CRC value is present for the target block of the BIB, that CRC MUST be removed from the target block and the CRC type field set to 'no CRC is present.' If the security acceptor is not the bundle destination and no other integrity service applies, a CRC MUST be included for the target block upon completion.
+section: 3.8.1
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

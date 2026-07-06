@@ -1,0 +1,8 @@
+document: rfc-9177
+kind: state-machine
+summary: 'For Q-Block1 server-side recovery: server waits NON_RECEIVE_TIMEOUT (exponentially scaled) after the last received payload or after sending 2.31 (Continue), then sends 4.08 listing missing blocks. After NON_MAX_RETRANSMIT retries without response, server discards the partial body and stops requesting missing payloads.'
+section: "7.2"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9177
+kind: security-consideration
+summary: An intermediary node can modify unprotected Outer Q-Block1/Q-Block2 options to cause a transfer to fail or to force re-requesting all blocks by setting the M bit, enabling amplification attacks. Using OSCORE does not fully protect against this because Outer options remain visible to proxies. It is NOT RECOMMENDED to use NoSec mode with Q-Block options.
+section: "11"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

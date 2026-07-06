@@ -1,0 +1,8 @@
+document: rfc-9175
+kind: security-consideration
+summary: Servers SHOULD use a monotonic clock for timestamps used in Echo option values. Non-monotonic clocks are not secure because a backward clock shift causes the server to accept expired Echo values; when resetting a timer, the server MUST reject all Echo option values created before the reset.
+section: "5"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

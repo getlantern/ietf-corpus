@@ -1,0 +1,8 @@
+document: rfc-9175
+kind: state-machine
+summary: 'Echo challenge-response flow: server receives request → if freshness required and not verifiable, reject with 4.01+Echo → client resends original request with echoed Echo value → server verifies freshness (time-based: t1−t0 < T; or event-based: e0 = e1) → server processes request or sends new Echo on failure.'
+section: "2.3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9175
+kind: interoperability-note
+summary: When CoAP over TLS (RFC 8323) is used, the Request-Tag mechanism for body integrity is implicitly satisfied because TLS guarantees ordered delivery, making earlier messages unreplayable as each new message arrives. Clients using TLS without Observe can reuse a Token as soon as the previous response with that Token has been received.
+section: 3.5.1
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

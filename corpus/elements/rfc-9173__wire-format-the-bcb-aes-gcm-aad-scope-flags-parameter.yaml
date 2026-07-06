@@ -1,0 +1,10 @@
+document: rfc-9173
+kind: wire-format
+summary: The BCB-AES-GCM AAD Scope Flags parameter (Parm Id 4) is a CBOR unsigned integer processed as a 16-bit field. Bit 0 = include primary block, Bit 1 = include target header, Bit 2 = include security header. Default value is 7. These flags MUST be included in the AAD value itself even if omitted from the BCB.
+section: 4.3.4
+rfc2119_level: MUST
+topics:
+    - crypto
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

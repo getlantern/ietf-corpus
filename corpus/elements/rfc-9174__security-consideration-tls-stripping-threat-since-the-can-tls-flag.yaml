@@ -1,0 +1,9 @@
+document: rfc-9174
+kind: security-consideration
+summary: 'TLS Stripping threat: since the CAN_TLS flag is exchanged over an unsecured TCP connection, an active on-path attacker can clear the flag to downgrade a session to non-TLS. The recommended mitigation is a local policy that requires TLS, causing the entity to terminate any session where Enable TLS negotiates to false.'
+section: "7.4"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9177
+kind: state-machine
+summary: 'For Q-Block2 missing block recovery: client waits NON_RECEIVE_TIMEOUT after last received payload, then requests missing blocks via GET/FETCH with one or more Q-Block2 options. Each re-request doubles the wait (Time-to-Wait = NON_RECEIVE_TIMEOUT * 2^(Re-Request-Count − 1)). After NON_MAX_RETRANSMIT failures, client discards the partial body.'
+section: "7.2"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

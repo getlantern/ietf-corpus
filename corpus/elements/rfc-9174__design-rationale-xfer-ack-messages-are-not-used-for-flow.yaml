@@ -1,0 +1,6 @@
+document: rfc-9174
+kind: design-rationale
+summary: 'XFER_ACK messages are not used for flow control (there is no explicit flow control in TCPCL) but to support reactive fragmentation: by tracking the cumulative acknowledged length, a transmitting BPA that must interrupt a transfer can avoid resending the portion already confirmed as received by the peer.'
+section: "3.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9174
+kind: privacy-consideration
+summary: TCPCL session establishment exposes each entity's node ID to its peer via SESS_INIT, and TLS handshake metadata (certificates, SNI HostName) may leak identity information before full encryption is established. A TCPCL entity MAY send a zero-length Node ID Data field in SESS_INIT to avoid exposing its node ID on untrusted networks.
+section: "7.1"
+topics:
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

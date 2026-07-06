@@ -1,0 +1,10 @@
+document: rfc-9174
+kind: normative-requirement
+summary: Immediately before session parameter negotiation, each entity SHALL validate the NODE-ID from the peer's SESS_INIT against the peer's certificate using RFC 6125 logic. If NODE-ID validation is Failure, or Absent when security policy requires it, the entity SHALL terminate the session with reason code 'Contact Failure'.
+section: 4.4.4.3
+rfc2119_level: SHALL
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

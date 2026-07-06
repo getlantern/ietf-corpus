@@ -1,0 +1,6 @@
+document: rfc-9174
+kind: design-rationale
+summary: Segments from different bundles are never interleaved on a single TCPCL transfer stream; transfers are serialized. Bundle interleaving requires either BP-layer fragmentation or establishing multiple concurrent TCPCL sessions between the same peers. This avoids complex stream-multiplexing state in the convergence layer.
+section: "3.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

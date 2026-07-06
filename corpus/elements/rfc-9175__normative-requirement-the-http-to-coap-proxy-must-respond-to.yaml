@@ -1,0 +1,10 @@
+document: rfc-9175
+kind: normative-requirement
+summary: The HTTP-to-CoAP proxy MUST respond to Echo challenges itself if it knows from recent connection establishment that the HTTP request is fresh; otherwise it MUST NOT repeat an unsafe request and SHOULD respond with 503 (Service Unavailable) with Retry-After of 0 seconds.
+section: "2.3"
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9171
+kind: normative-requirement
+summary: During bundle reception (Section 5.6), CRCs SHOULD be computed for every block with an attached CRC. If any block is malformed (including syntactically invalid CBOR) or any CRC fails verification, the BPA MUST delete the bundle for reason 'Block unintelligible'.
+section: "5.6"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

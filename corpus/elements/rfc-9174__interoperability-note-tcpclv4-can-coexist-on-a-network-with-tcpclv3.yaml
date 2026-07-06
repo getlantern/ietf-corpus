@@ -1,0 +1,6 @@
+document: rfc-9174
+kind: interoperability-note
+summary: TCPCLv4 can coexist on a network with TCPCLv3 (RFC 7242) entities through Contact Header version negotiation. If the active entity receives a SESS_TERM with reason 'Version mismatch', it MAY retry using decreasing version numbers. A passive entity receiving an unsupported version SHALL terminate with 'Version mismatch' or may adapt to an older version at its discretion.
+section: "4.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

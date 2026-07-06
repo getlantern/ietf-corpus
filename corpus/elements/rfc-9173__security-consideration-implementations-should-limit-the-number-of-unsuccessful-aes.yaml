@@ -1,0 +1,10 @@
+document: rfc-9173
+kind: security-consideration
+summary: Implementations SHOULD limit the number of unsuccessful AES-GCM verification attempts per key to reduce the likelihood of tag guessing. When AES-KW is used, an attacker could cause a large number of keys to be used at least once, creating state-keeping challenges for this check.
+section: "4.6"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

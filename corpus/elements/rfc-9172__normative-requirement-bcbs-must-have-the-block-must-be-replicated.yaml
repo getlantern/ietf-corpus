@@ -1,0 +1,9 @@
+document: rfc-9172
+kind: normative-requirement
+summary: BCBs MUST have the 'Block must be replicated in every fragment' flag set if one of its targets is the payload block. BCBs MUST NOT have the 'Block must be removed from bundle if it can't be processed' flag set, as removing a BCB without decrypting its targets would prevent later decryption.
+section: "3.8"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

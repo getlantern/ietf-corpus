@@ -1,0 +1,10 @@
+document: rfc-9173
+kind: normative-requirement
+summary: The same key (whether a KEK or wrapped key) MUST NOT be used for different algorithms, as doing so might leak key material. A KEK MUST NOT be used to wrap keys for different security contexts; a KEK for BIB-HMAC-SHA2 must not be used to wrap keys for BCB-AES-GCM.
+section: "6.2"
+rfc2119_level: MUST NOT
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-9174
+kind: normative-requirement
+summary: For any peer end-entity certificate received during the TLS handshake, the entity SHALL perform certification path validation per RFC 5280. If OCSP is enabled by local policy, an OCSP check SHALL be performed for each certificate. If validation fails, the entity SHALL fail the TLS handshake with a 'bad_certificate' alert.
+section: 4.4.4.1
+rfc2119_level: SHALL
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

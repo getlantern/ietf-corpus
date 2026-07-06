@@ -1,0 +1,9 @@
+document: rfc-9173
+kind: design-rationale
+summary: The security context identifier and security context parameters of the security block are deliberately excluded from both the IPPT (BIB-HMAC-SHA2) and AAD (BCB-AES-GCM) because these values are required to perform verification or decryption — successful processing implicitly verifies they are unchanged. Keys cannot be reused across contexts and scope flags are included in the protected data.
+section: "3.2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

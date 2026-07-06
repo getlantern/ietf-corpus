@@ -1,0 +1,10 @@
+document: rfc-9173
+kind: wire-format
+summary: The Wrapped Key parameter (Parm Id 2 in both BIB-HMAC-SHA2 and BCB-AES-GCM) is a CBOR byte string carrying the output of the AES key wrap function (RFC 3394) applied to the symmetric content key. If absent, security verifiers and acceptors MUST determine the key via local BPSec policy.
+section: 3.3.2
+rfc2119_level: MUST
+topics:
+    - crypto
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

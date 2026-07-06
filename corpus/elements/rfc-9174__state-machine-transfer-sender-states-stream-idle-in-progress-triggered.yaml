@@ -1,0 +1,6 @@
+document: rfc-9174
+kind: state-machine
+summary: 'Transfer sender states: Stream Idle → In Progress (triggered by first XFER_SEGMENT transmission; loops on additional segments) → Waiting for Ack (after all segments sent) → Stream Idle (triggered by receipt of final XFER_ACK). Pipelining is permitted by starting a new transfer while in Waiting for Ack.'
+section: "3.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

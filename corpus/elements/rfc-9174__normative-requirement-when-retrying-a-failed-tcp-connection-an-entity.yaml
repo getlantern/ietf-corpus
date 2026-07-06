@@ -1,0 +1,9 @@
+document: rfc-9174
+kind: normative-requirement
+summary: When retrying a failed TCP connection, an entity MUST NOT retry earlier than some delay from the last attempt and SHOULD use exponential backoff. The upper backoff limit SHOULD be no longer than 60 seconds before signaling to the BPA that a connection cannot be made.
+section: "4.1"
+rfc2119_level: MUST NOT
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

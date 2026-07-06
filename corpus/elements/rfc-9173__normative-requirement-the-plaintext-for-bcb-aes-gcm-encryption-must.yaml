@@ -1,0 +1,10 @@
+document: rfc-9173
+kind: normative-requirement
+summary: The plaintext for BCB-AES-GCM encryption MUST be the value of the block-type-specific data field of the security target excluding the BP CBOR byte string encoding wrapper. Similarly the ciphertext for decryption excludes the CBOR byte string identifying byte and optional length field.
+section: 4.7.1
+rfc2119_level: MUST
+topics:
+    - crypto
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
