@@ -1,0 +1,10 @@
+document: rfc-8766
+kind: design-rationale
+summary: Link-local multicast was a conscious design choice for Multicast DNS because multicast traffic is more expensive than unicast (impacts many devices), and on Wi-Fi is less efficient and unreliable due to lower data rates and lack of acknowledgment. The Discovery Proxy avoids forwarding multicast across links by acting as a proxy that issues local queries on behalf of remote clients.
+section: "1"
+topics:
+    - dns
+    - zeroconf
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

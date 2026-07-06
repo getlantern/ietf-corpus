@@ -1,0 +1,10 @@
+document: rfc-8766
+kind: interoperability-note
+summary: Because a Discovery Proxy cannot enumerate all existing names, it synthesizes per-name NSEC records asserting nonexistence of only the specific name queried. This makes NSEC3 unnecessary (no zone walking risk) but means traditional broad-range NSEC/NSEC3 denial-of-existence records cannot be generated.
+section: "7.2"
+topics:
+    - dns
+    - zeroconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-8767
+kind: design-rationale
+summary: Only NoError and NXDomain with the AA bit set invalidate previously cached data because other RCODEs make no authoritative assertion about the queried name or its associated data, consistent with existing resolver behavior where failed prefetch lookups do not invalidate cache state.
+section: "6"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

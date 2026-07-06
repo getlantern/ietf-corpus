@@ -1,0 +1,8 @@
+document: rfc-8765
+kind: design-rationale
+summary: TYPE 255 in a SUBSCRIBE is interpreted as 'ALL' (not 'ANY' as in normal DNS QUERY), requiring the server to deliver notifications for every matching record, not just a server-chosen subset. This avoids the well-known surprising behavior of QTYPE=ANY queries.
+section: 6.2.1
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

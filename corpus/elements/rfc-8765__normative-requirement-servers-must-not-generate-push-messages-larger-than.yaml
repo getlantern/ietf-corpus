@@ -1,0 +1,9 @@
+document: rfc-8765
+kind: normative-requirement
+summary: Servers MUST NOT generate PUSH messages larger than 16,382 bytes (counting from the start of the DSO 12-byte header). If a client receives a PUSH message larger than this, it MUST forcibly abort the connection immediately.
+section: 6.3.1
+rfc2119_level: MUST NOT
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

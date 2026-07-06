@@ -1,0 +1,9 @@
+document: rfc-8767
+kind: normative-requirement
+summary: Answers from authoritative servers with a DNS response code of either 0 (NoError) or 3 (NXDomain) and the AA bit set MUST be considered to have refreshed the data at the resolver. All other response codes SHOULD be treated as a failure to refresh, leaving prior cached state intact.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

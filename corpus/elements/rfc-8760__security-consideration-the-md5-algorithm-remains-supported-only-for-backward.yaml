@@ -1,0 +1,10 @@
+document: rfc-8760
+kind: security-consideration
+summary: The MD5 algorithm remains supported only for backward compatibility with RFC 2617, but its use is NOT RECOMMENDED. Supporting MD5 alongside stronger algorithms opens the system to a potential downgrade attack by an on-path attacker. Mitigations include validating the client and challenging accordingly, or removing MD5 support entirely.
+section: "3"
+topics:
+    - sip
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

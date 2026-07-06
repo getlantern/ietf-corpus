@@ -1,0 +1,8 @@
+document: rfc-8768
+kind: design-rationale
+summary: Each intermediate proxy prepends its identifier to the 5.08 diagnostic payload (space-separated) rather than appending, to limit message size, ease correlation with hop count, and detect proxy participation in error forwarding. Prepending is skipped if Path MTU would be exceeded.
+section: "4"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

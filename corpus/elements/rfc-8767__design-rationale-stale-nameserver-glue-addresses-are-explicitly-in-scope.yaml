@@ -1,0 +1,9 @@
+document: rfc-8767
+kind: design-rationale
+summary: Stale nameserver glue addresses are explicitly in scope for serve-stale. If a top-level domain's nameservers are taken offline (e.g., by a DDoS), resolvers with expired glue for subdomains can still resolve names within those subdomains — providing meaningful resiliency even for names not previously cached.
+section: "6"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

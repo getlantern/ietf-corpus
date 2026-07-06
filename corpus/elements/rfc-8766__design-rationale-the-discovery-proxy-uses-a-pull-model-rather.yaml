@@ -1,0 +1,10 @@
+document: rfc-8766
+kind: design-rationale
+summary: The Discovery Proxy uses a 'pull' model rather than a 'push' model. Multicast DNS devices remain silent until queried, making it impractical to discover all names by passive listening; a push-based proxy would need to query every possible name and would generate continuous network load even when no clients are interested.
+section: "1"
+topics:
+    - dns
+    - zeroconf
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

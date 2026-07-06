@@ -1,0 +1,10 @@
+document: rfc-8765
+kind: design-rationale
+summary: DNS Push Notifications use TCP (via DSO over TLS) instead of UDP, unlike the earlier LLQ protocol. This avoids reimplementing TCP features (flow control, reliability, three-way handshake) in user space, and gives better NAT traversal for long-lived low-traffic connections without depending on NAT-PMP or PCP.
+section: "2"
+topics:
+    - dns
+    - tcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

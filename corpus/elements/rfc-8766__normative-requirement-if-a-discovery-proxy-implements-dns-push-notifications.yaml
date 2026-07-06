@@ -1,0 +1,10 @@
+document: rfc-8766
+kind: normative-requirement
+summary: If a Discovery Proxy implements DNS Push Notifications (RFC 8765), it MUST positively respond to '_dns-push-tls._tcp.<zone>' SRV queries; otherwise it MUST return an immediate negative answer. It MUST also return immediate negative answers for DNS Update SRV queries since DNS Update cannot modify dynamically generated zones.
+section: "6.4"
+rfc2119_level: MUST
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

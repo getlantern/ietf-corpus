@@ -1,0 +1,10 @@
+document: rfc-8766
+kind: normative-requirement
+summary: For a standard DNS query with no cache entry, if after six seconds no relevant Multicast DNS answers have been received, the Discovery Proxy MUST cancel the mDNS query and return a negative response. DNS TTLs in responses MUST be capped to at most ten seconds.
+section: "5.6"
+rfc2119_level: MUST
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

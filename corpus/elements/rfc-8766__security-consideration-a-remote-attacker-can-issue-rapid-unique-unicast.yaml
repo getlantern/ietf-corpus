@@ -1,0 +1,12 @@
+document: rfc-8766
+kind: security-consideration
+summary: A remote attacker can issue rapid unique unicast queries to force the Discovery Proxy to generate a high rate of Multicast DNS queries on local links. To mitigate this, the Discovery Proxy MUST implement mDNS query rate limiting; a limit of 20 mDNS query packets per second is RECOMMENDED for 802.11b/g/n/ac Wi-Fi links.
+section: "9.3"
+rfc2119_level: MUST
+topics:
+    - security
+    - dns
+    - zeroconf
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

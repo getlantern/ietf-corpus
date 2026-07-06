@@ -1,0 +1,10 @@
+document: rfc-8766
+kind: normative-requirement
+summary: For any query for the zone apex name, the Discovery Proxy MUST generate appropriate immediate answers; for any query below the zone apex for RRTYPEs SOA, NS, or DS, the Discovery Proxy MUST generate an immediate negative answer, since the mDNS spec prohibits delegation (subdomains) within '.local'.
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

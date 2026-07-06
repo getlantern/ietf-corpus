@@ -1,0 +1,9 @@
+document: rfc-8760
+kind: design-rationale
+summary: RFC 7616 requires a server to verify that the URI in the request line and the URI in the Authorization header point to the same resource. In SIP, these two URIs may refer to different users due to proxy forwarding, so the requirement is relaxed to allow acceptance even when they differ.
+section: "2.6"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

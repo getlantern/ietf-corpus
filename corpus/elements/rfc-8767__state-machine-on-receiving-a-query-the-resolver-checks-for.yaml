@@ -1,0 +1,8 @@
+document: rfc-8767
+kind: state-machine
+summary: On receiving a query, the resolver checks for unexpired cache entries; if none and Recursion Desired is unset, it returns immediately without consulting stale data. Otherwise it starts the client response timer and attempts iterative resolution; if the client response timer fires before resolution completes, it falls back to stale cache data (if available) and sends a response with TTL > 0, continuing resolution in the background until the query resolution timer expires.
+section: "5"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

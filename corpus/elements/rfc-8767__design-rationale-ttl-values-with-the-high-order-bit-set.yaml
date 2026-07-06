@@ -1,0 +1,8 @@
+document: rfc-8767
+kind: design-rationale
+summary: 'TTL values with the high-order bit set are now treated as positive integers and then clamped, rather than as zero per RFC 2181. The rationale is engineering simplicity: no operator has a rational purpose for TTLs above 2^25 seconds, no such TTLs were found in DNS-OARC Day-in-the-Life samples, and treating them as zero was needlessly disruptive compared to clamping.'
+section: "6"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

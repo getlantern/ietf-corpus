@@ -1,0 +1,9 @@
+document: rfc-8765
+kind: normative-requirement
+summary: Servers MUST silently ignore UNSUBSCRIBE messages that do not match any currently active subscription, to handle the race condition where a client sends UNSUBSCRIBE before receiving an error response to SUBSCRIBE.
+section: 6.4.1
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

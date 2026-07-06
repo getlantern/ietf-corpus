@@ -1,0 +1,9 @@
+document: rfc-8768
+kind: interoperability-note
+summary: For HTTP/CoAP mapping, the HTTP-to-CoAP proxy maps 5.08 (Hop Limit Reached) to HTTP 508 (Loop Detected), and the CoAP-to-HTTP proxy maps 508 (Loop Detected) back to 5.08. The CoAP-to-HTTP proxy inserts a Via header (or optionally CDN-Loop) when the CoAP request includes a Hop-Limit option.
+section: "5"
+topics:
+    - http
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

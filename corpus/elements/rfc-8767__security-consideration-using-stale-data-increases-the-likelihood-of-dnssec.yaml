@@ -1,0 +1,10 @@
+document: rfc-8767
+kind: security-consideration
+summary: Using stale data increases the likelihood of DNSSEC validation failures because signatures may be returned outside their validity period. Stale negative records (cached NSEC/NSEC3) can delay use of newly published TLSA or DS RRs. These failures only occur when authoritative servers are unreachable — the same condition that triggers serve-stale — so no new failure mode is introduced.
+section: "10"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

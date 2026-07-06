@@ -1,0 +1,9 @@
+document: rfc-8766
+kind: state-machine
+summary: 'Answer aggregation has five cases based on query type (standard DNS, LLQ, Push Notification) and cache state (answer present or absent). Standard DNS with no cache: issue mDNS query, wait up to 6 seconds, return first answer or negative; standard DNS with cache: return immediately; LLQ: return cached immediately then keep subscription active; Push Notification: acknowledge immediately, send cached answers, keep subscription active indefinitely.'
+section: "5.6"
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

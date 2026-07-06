@@ -1,0 +1,9 @@
+document: rfc-8765
+kind: normative-requirement
+summary: SUBSCRIBE requests on a given session MUST be unique. A client MUST NOT send a SUBSCRIBE message that duplicates the name, type, and class of an existing active subscription on that DSO session. If a server receives a duplicate SUBSCRIBE, it MUST forcibly abort the connection.
+section: 6.2.1
+rfc2119_level: MUST NOT
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

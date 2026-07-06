@@ -1,0 +1,11 @@
+document: rfc-8767
+kind: security-consideration
+summary: Serve-stale potentially enlarges the window in which stale hostnames pointing to addresses no longer controlled by the legitimate owner can be exploited to fraudulently obtain domain-validated certificates (as demonstrated in the CloudStrife research). Mitigations include certificate authorities performing full DNS root-anchored lookups or using non-stale-serving resolvers.
+section: "10"
+topics:
+    - dns
+    - security
+    - pkix
+    - acme
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-8767
+kind: interoperability-note
+summary: CNAME and DNAME records co-existing with other record types at the same owner name in an expired cache can cause incorrect stale answers. For example, if a name transitions from an A record to a CNAME and both expire while authorities are unreachable, a resolver that did not evict the A record upon caching the CNAME may return the stale A instead of the newer CNAME.
+section: "7"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
