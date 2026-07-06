@@ -1,0 +1,8 @@
+document: rfc-9066
+kind: security-consideration
+summary: A misbehaving Call Home DOTS client may arbitrarily signal legitimate traffic as attack traffic or falsify mitigation signals to disconnect sources or rate-limit traffic. Call Home DOTS servers should not blindly trust mitigation requests; they should validate source prefixes, inspect relevant traffic for attack signatures, or seek administrator consent before acting.
+section: "8"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

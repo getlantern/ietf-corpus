@@ -1,0 +1,10 @@
+document: rfc-9066
+kind: design-rationale
+summary: The Call Home DOTS server adjusts the 'heartbeat-interval' to accommodate binding timers of on-path NATs and firewalls, ensuring the same external IP address and port are retained for the DOTS signal channel session. This adaptation is needed because the server initiates the (D)TLS connection from behind the NAT.
+section: 5.2.1
+topics:
+    - security
+    - nat
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

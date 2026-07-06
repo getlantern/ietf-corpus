@@ -1,0 +1,10 @@
+document: rfc-9059
+kind: normative-requirement
+summary: If a PCE speaker receives a Bidirectional LSP Association Type it does not support, it MUST send PCErr with Error-Type=26, Error-value=1 (Association Type not supported). If PST is not RSVP-TE (value 0), the speaker MUST return PCErr Error-Type=26, Error-value=16.
+section: "5.7"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

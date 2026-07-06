@@ -1,0 +1,10 @@
+document: rfc-9060
+kind: protocol-element
+summary: A STIR delegate certificate is an X.509v3 certificate containing a TNAuthList extension, signed by the private key of a parent certificate that also contains a TNAuthList. The parent MUST have a basic constraints extension with the cA boolean set to 'true', and every delegate certificate MUST include a standard Authority Key Identifier extension identifying its parent.
+section: "4"
+topics:
+    - pkix
+    - security
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

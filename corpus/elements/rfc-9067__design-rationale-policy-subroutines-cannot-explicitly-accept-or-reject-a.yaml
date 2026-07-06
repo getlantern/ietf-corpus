@@ -1,0 +1,9 @@
+document: rfc-9067
+kind: design-rationale
+summary: Policy subroutines cannot explicitly accept or reject a route—they return only Boolean true/false to the caller. This design ensures that route acceptance or rejection is solely determined by the top-level policy, avoiding ambiguity from nested dispositions.
+section: "4.4"
+topics:
+    - yang
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

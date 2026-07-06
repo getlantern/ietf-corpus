@@ -1,0 +1,10 @@
+document: rfc-9050
+kind: normative-requirement
+summary: For a transit LSR in a P2P LSP via PCECC, two CCI objects are expected (incoming and outgoing labels). If the transit LSR did not receive two CCI objects with one O bit set and one unset, it MUST send PCErr Error-Type=31, Error-value=3 (Invalid CCI).
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

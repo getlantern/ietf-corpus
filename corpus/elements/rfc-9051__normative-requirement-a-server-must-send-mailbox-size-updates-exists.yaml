@@ -1,0 +1,9 @@
+document: rfc-9051
+kind: normative-requirement
+summary: A server MUST send mailbox size updates (EXISTS response) automatically if a mailbox size change is observed during command processing. Only the EXPUNGE response can reduce the reported message count; an EXISTS response MUST NOT be used to reduce it.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

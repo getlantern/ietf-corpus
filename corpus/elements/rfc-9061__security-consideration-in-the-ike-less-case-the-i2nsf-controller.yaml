@@ -1,0 +1,10 @@
+document: rfc-9061
+kind: security-consideration
+summary: In the IKE-less case, the I2NSF Controller is responsible for IV generation and prevention of counter resets for the same key — functions that IKEv2 would otherwise handle locally in the NSF. Failure in the controller to manage these correctly can lead to IV reuse, which is catastrophic for confidentiality.
+section: "7.2"
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

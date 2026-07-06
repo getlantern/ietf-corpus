@@ -1,0 +1,9 @@
+document: rfc-9061
+kind: design-rationale
+summary: The IKE case offloads IPsec SA lifecycle management to IKEv2 in the NSF, with the controller only providing initial configuration. This reduces controller overhead and avoids controller involvement in per-SA rekeying, improving scalability compared to the IKE-less case where every rekey requires a round-trip to the controller.
+section: "4"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

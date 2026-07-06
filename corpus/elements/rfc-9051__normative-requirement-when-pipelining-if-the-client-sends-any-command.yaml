@@ -1,0 +1,9 @@
+document: rfc-9051
+kind: normative-requirement
+summary: When pipelining, if the client sends any command other than FETCH, STORE, or SEARCH, it MUST wait for the completion result response before sending a command that uses message sequence numbers, to avoid sequence-number invalidation from unsolicited EXPUNGE responses.
+section: "5.5"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

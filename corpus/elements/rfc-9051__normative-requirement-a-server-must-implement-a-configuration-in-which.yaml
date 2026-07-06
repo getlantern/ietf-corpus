@@ -1,0 +1,11 @@
+document: rfc-9051
+kind: normative-requirement
+summary: A server MUST implement a configuration in which plaintext password mechanisms are not permitted unless STARTTLS has been negotiated, TLS is in use on an Implicit TLS port, or equivalent protection is in place. A client MUST NOT send a LOGIN command if the LOGINDISABLED capability is advertised.
+section: 6.2.3
+rfc2119_level: MUST NOT
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9051
+kind: normative-requirement
+summary: Upon a client-initiated LOGOUT, the server MUST send an untagged BYE response before the tagged OK, and the client MUST read the tagged OK before closing the connection. A server SHOULD NOT unilaterally close the connection without first sending an untagged BYE with the reason.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

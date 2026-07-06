@@ -1,0 +1,10 @@
+document: rfc-9061
+kind: normative-requirement
+summary: IPsec transport mode MUST NOT be used when NAT traversal is required. UDP or TCP encapsulation for ESP packets (RFC 3948, RFC 8229) is required in that case; only tunnel mode is compatible with the NAT traversal support defined in this specification.
+section: "4.3"
+rfc2119_level: MUST NOT
+topics:
+    - ipsec
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

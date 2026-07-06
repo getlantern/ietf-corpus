@@ -1,0 +1,9 @@
+document: rfc-9050
+kind: normative-requirement
+summary: If a PCEP speaker receives the PATH-SETUP-TYPE-CAPABILITY TLV with the PCECC PST but without the PCECC-CAPABILITY sub-TLV, it MUST send a PCErr with Error-Type=10, Error-value=33 (Missing PCECC Capability sub-TLV) and terminate the PCEP session.
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-9061
+kind: security-consideration
+summary: The YANG modules contain sensitive data including pre-shared keys and private keys. Access to these modules via NETCONF or RESTCONF MUST be restricted using NETCONF Access Control Model (NACM, RFC 8341). The 'nacm:default-deny-all' extension is applied to the PSK secret and private-key leaves.
+section: "7.3"
+topics:
+    - ipsec
+    - security
+    - netconf
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

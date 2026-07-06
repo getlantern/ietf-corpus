@@ -1,0 +1,8 @@
+document: rfc-9051
+kind: state-machine
+summary: 'IMAP4rev2 defines four connection states: Not Authenticated (initial, requires credentials), Authenticated (mailbox must be selected), Selected (a mailbox is open for message access), and Logout (connection terminating). Transitions are driven by successful commands (AUTHENTICATE/LOGIN → Authenticated; SELECT/EXAMINE → Selected; CLOSE/UNSELECT → Authenticated; LOGOUT or connection close → Logout) or server greeting type (OK, PREAUTH, or BYE).'
+section: "3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

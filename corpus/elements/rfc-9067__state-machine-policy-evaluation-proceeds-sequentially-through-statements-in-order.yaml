@@ -1,0 +1,9 @@
+document: rfc-9067
+kind: state-machine
+summary: Policy evaluation proceeds sequentially through statements in order. When all conditions in a statement are satisfied, its actions execute; if actions include accept-route or reject-route, evaluation stops. If no conditions are satisfied in any statement, the chain's default route disposition (reject-route unless overridden) is applied.
+section: "5"
+topics:
+    - yang
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

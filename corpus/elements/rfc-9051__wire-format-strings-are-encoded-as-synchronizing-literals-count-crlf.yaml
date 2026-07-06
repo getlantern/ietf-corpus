@@ -1,0 +1,8 @@
+document: rfc-9051
+kind: wire-format
+summary: Strings are encoded as synchronizing literals ({count}CRLF + octets, requiring a '+' server continuation before client sends data), non-synchronizing literals ({count+}CRLF, no round-trip, max 4096 octets client-to-server only), or quoted strings (double-quoted UTF-8, no CR or LF). The non-synchronizing form MUST NOT be sent server-to-client.
+section: "4.3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

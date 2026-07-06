@@ -1,0 +1,9 @@
+document: rfc-9066
+kind: design-rationale
+summary: The Call Home approach uses role reversal at the (D)TLS layer rather than extending the base DOTS signal channel with a new attribute because initiating a signal channel from an upstream network into a source network is complicated by NATs and firewalls. Additionally, sharing one channel for both inbound and outbound attacks would complicate heartbeat and redirection mechanisms, and would expose the DOTS server to fingerprinting and DoS attacks.
+section: "1"
+topics:
+    - security
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

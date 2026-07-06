@@ -1,0 +1,11 @@
+document: rfc-9051
+kind: normative-requirement
+summary: The server MUST respond with a tagged BAD when STARTTLS is received on an Implicit TLS port. Once a client issues STARTTLS, it MUST NOT issue further commands until the server responds and TLS negotiation completes. After successful STARTTLS the client MUST discard cached capability information and SHOULD re-issue CAPABILITY.
+section: 6.2.1
+rfc2119_level: MUST
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9050
+kind: design-rationale
+summary: 'PCECC LSP updates follow make-before-break: the PCE first downloads new label instructions for the updated path, then instructs the ingress to switch traffic via PCUpd, and only after receiving the PCRpt acknowledgment does it clean up the former label instructions.'
+section: 5.5.4
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

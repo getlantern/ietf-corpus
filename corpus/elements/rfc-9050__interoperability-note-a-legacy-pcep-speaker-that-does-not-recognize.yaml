@@ -1,0 +1,8 @@
+document: rfc-9050
+kind: interoperability-note
+summary: A legacy PCEP speaker that does not recognize the PCECC Capability sub-TLV will ignore it per RFC 8408 and RFC 5440. On receipt of the unsupported PST=2 in an RP/SRP object, it will send PCErr Error-Type=21, Error-value=1 (Unsupported path setup type) and terminate the session.
+section: "5.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9050
+kind: normative-requirement
+summary: If the PCECC-CAPABILITY sub-TLV is advertised but the STATEFUL-PCE-CAPABILITY TLV is not advertised (or is advertised without the I flag set) in the OPEN object, the receiver MUST send a PCErr with Error-Type=19, Error-value=17 and terminate the session.
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

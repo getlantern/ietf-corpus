@@ -1,0 +1,8 @@
+document: rfc-9051
+kind: design-rationale
+summary: 'The \Recent flag is deprecated in IMAP4rev2 because it could not be reliably implemented in concurrent multi-session environments: only the first session to SELECT a mailbox after new message arrival would see \Recent set, leading to unpredictable client behavior. IMAP4rev2 servers may still emit the untagged RECENT response for IMAP4rev1 compatibility; pure IMAP4rev2 clients should ignore it.'
+section: 2.3.2
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

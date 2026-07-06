@@ -1,0 +1,10 @@
+document: rfc-9066
+kind: normative-requirement
+summary: A Call Home DOTS server MUST NOT support the redirected signaling mechanism from RFC 9132 Section 4.6 (the 5.03 response conveying an alternate DOTS server FQDN or IP addresses). A Call Home DOTS client MUST silently discard such a message because only a Call Home DOTS server can initiate a new (D)TLS connection.
+section: 5.2.2
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

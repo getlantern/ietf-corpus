@@ -1,0 +1,9 @@
+document: rfc-9066
+kind: design-rationale
+summary: A dedicated port number is used to disambiguate the base DOTS signal channel from the DOTS Call Home channel, rather than using role-signaling via the DOTS data channel. The data channel may not function during an attack, role-signaling adds protocol complexity, and the port-based approach requires only two (D)TLS sessions which is simpler and more efficient.
+section: Appendix B
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
