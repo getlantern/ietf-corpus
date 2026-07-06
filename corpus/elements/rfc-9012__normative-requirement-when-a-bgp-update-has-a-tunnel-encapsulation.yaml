@@ -1,0 +1,10 @@
+document: rfc-9012
+kind: normative-requirement
+summary: When a BGP UPDATE has a Tunnel Encapsulation attribute containing at least one feasible tunnel for packet P, router R MUST send packet P through one of those feasible tunnels. A tunnel is feasible only if its type is supported, it can carry the payload, its egress endpoint is reachable, and no local policy prohibits it.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

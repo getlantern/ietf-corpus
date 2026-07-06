@@ -1,0 +1,8 @@
+document: rfc-9018
+kind: design-rationale
+summary: The Reserved Sub-Field in the Server Cookie structure is intentionally not enforced to be zero on verification; this allows future versions to use those bits while remaining backward-compatible, as long as the Hash is computed over the received Reserved value.
+section: "4.2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

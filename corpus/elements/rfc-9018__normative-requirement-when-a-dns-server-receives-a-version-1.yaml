@@ -1,0 +1,10 @@
+document: rfc-9018
+kind: normative-requirement
+summary: When a DNS server receives a version 1 Server Cookie for validation, the length of the received COOKIE option MUST be precisely 24 bytes (8-byte Client Cookie plus 16-byte Server Cookie); this length verification is REQUIRED to guarantee correct SipHash-2-4 input lengths.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

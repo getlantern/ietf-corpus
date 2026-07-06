@@ -1,0 +1,9 @@
+document: rfc-9014
+kind: security-consideration
+summary: 'GWs provide superior per-tenant security compared to ASBRs: GWs perform MAC lookups on frames received from the WAN and apply filtering (undesired frames, source MAC matching protected DC MACs, MAC-duplication from RFC 7432). ASBRs forward based on a label or VNI swap with no visibility into encapsulated frames, which can carry malicious traffic.'
+section: "5"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

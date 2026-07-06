@@ -1,0 +1,10 @@
+document: rfc-9012
+kind: security-consideration
+summary: Misconfiguration or malicious alteration of the Tunnel Encapsulation attribute can create mutually recursive tunnel dependencies (X's egress is Y, Y's egress is X), rendering BGP routes unresolvable, or can cause long-lasting forwarding loops. TTL fields in payload packets bound loop duration but the control plane cannot detect the condition.
+section: "7.2"
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

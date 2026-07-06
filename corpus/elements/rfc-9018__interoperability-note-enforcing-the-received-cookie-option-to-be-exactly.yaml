@@ -1,0 +1,9 @@
+document: rfc-9018
+kind: interoperability-note
+summary: Enforcing the received COOKIE option to be exactly 24 bytes for version 1 ensures the SipHash-2-4 input is an injective function of its elements, specifically preventing a 36-byte COOKIE option from an IPv4 client from being mistakenly validated as if it came from an IPv6 client (data substitution attack).
+section: "4.4"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

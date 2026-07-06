@@ -1,0 +1,9 @@
+document: rfc-9012
+kind: wire-format
+summary: The Tunnel Egress Endpoint sub-TLV (type 6) encodes a 4-octet Reserved field, a 2-octet Address Family, and a variable-length Address. For IPv4 the address is 4 octets (/32); for IPv6 it is 16 octets (/128). Address Family 0 indicates the next-hop address, with no Address subfield; in that case the Length MUST be 6.
+section: "3.1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

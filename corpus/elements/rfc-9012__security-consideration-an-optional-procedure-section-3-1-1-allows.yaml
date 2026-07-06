@@ -1,0 +1,10 @@
+document: rfc-9012
+kind: security-consideration
+summary: An optional procedure (Section 3.1.1) allows validation that the Tunnel Egress Endpoint address belongs to the same AS that originated the route, using RFC 6811 Route Origin ASN comparison. If Route_AS ≠ Egress_AS, the sub-TLV is considered invalid. This procedure MUST be reapplied if the forwarding route changes.
+section: 3.1.1
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

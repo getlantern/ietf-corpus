@@ -1,0 +1,8 @@
+document: rfc-9017
+kind: interoperability-note
+summary: A preexisting implementation searching for the Entropy Label Indicator (ELI, label 7) may fail to inspect the previous label and not detect that it is an XL. Such systems can continue processing entropy information and forward the packet without immediate harm, but the packet will be dropped when the XL reaches the top of the stack at another LSR.
+section: "4"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

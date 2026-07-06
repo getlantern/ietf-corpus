@@ -1,0 +1,9 @@
+document: rfc-9012
+kind: design-rationale
+summary: RFC 5512 defined all sub-TLVs with a 1-octet Length field (max 255 bytes). RFC 9012 introduces a dual-width scheme where sub-TLV types 0–127 use 1-octet Length and types 128–255 use 2-octet Length, enabling sub-TLVs that need more than 255 octets without breaking existing parsers.
+section: "1.2"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

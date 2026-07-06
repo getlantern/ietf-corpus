@@ -1,0 +1,10 @@
+document: rfc-9020
+kind: design-rationale
+summary: The SR YANG model is split into three modules (ietf-segment-routing, ietf-segment-routing-common, ietf-segment-routing-mpls) to avoid requiring implementations to support all IGP extensions. An implementation may support IS-IS SR extensions but not OSPF SR extensions, so the generic framework is kept separate from data-plane-specific modules.
+section: "1"
+topics:
+    - routing
+    - mpls
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

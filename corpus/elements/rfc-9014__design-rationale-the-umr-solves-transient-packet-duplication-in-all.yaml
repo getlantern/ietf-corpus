@@ -1,0 +1,9 @@
+document: rfc-9014
+kind: design-rationale
+summary: 'The UMR solves transient packet duplication in all-active multihoming: without UMR, an NVE flooding an unknown unicast sends it to both GWs, which both forward it since VXLAN carries no BUM indicator. With UMR, the NVE unicasts to one GW, eliminating the duplication.'
+section: 4.4.5
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

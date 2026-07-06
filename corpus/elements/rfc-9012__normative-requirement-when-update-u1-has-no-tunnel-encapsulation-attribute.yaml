@@ -1,0 +1,10 @@
+document: rfc-9012
+kind: normative-requirement
+summary: When UPDATE U1 has no Tunnel Encapsulation attribute but resolves its next hop via UPDATE U2 that does have such an attribute, packet P MUST be sent through one of U2's tunnels. However, if a TLV in U2 has a Color sub-TLV, it MUST NOT be used unless U1 carries a matching Color Extended Community.
+section: "8"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

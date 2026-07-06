@@ -1,0 +1,10 @@
+document: rfc-9012
+kind: wire-format
+summary: The MPLS Label Stack sub-TLV (type 10) carries a sequence of 4-octet MPLS label stack entries (Label 20 bits, TC 3 bits, S bit, TTL 8 bits) as defined in RFC 3032. The first entry is topmost; ordering MUST be preserved when pushing. TTL SHOULD be 255; a TTL of zero MUST be changed to non-zero.
+section: "3.6"
+topics:
+    - bgp
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-9015
+kind: normative-requirement
+summary: If a Tunnel TLV lacks an SPI/SI Representation Sub-TLV, it MUST be treated as if the Sub-TLV is present with only Bit 0 (NSH) set. If the Sub-TLV has no flags set, or both Bit 0 and Bit 1 set simultaneously, the tunnel MUST NOT be used for forwarding SFC packets.
+section: "7.5"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

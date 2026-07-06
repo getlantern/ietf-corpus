@@ -1,0 +1,9 @@
+document: rfc-9015
+kind: design-rationale
+summary: A controller changing an SFP content is RECOMMENDED to assign a new SPI rather than updating the existing SFPR, so classifiers can transition flows to the new SFP before withdrawal of the old one, eliminating race conditions between advertisement and withdrawal of SFPRs.
+section: 3.2.2
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

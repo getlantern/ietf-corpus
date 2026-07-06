@@ -1,0 +1,9 @@
+document: rfc-9015
+kind: design-rationale
+summary: SI values in an SFP are required to be monotonically decreasing but not necessarily sequential, allowing insertion or removal of SFs without renumbering downstream SFs. Renumbering all downstream SFs would cause significant SFF disruption during convergence and is avoided by supporting SI gaps.
+section: 4.5.1
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
