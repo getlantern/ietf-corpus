@@ -1,0 +1,10 @@
+document: rfc-8679
+kind: normative-requirement
+summary: In centralized protector mode, there MUST be a service label distribution protocol session between the backup egress router and the protector. The backup egress router MUST advertise a unique service label for egress protection (not its regular label) if the regular label's forwarding state would route packets toward the protected egress router, to avoid a loop.
+section: "5.12"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

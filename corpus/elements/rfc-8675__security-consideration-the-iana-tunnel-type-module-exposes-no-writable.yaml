@@ -1,0 +1,11 @@
+document: rfc-8675
+kind: security-consideration
+summary: The iana-tunnel-type module exposes no writable nodes, read-only state, or RPCs; it only defines YANG identities intended to be referenced by other modules, so no additional security issues arise from this module itself. NETCONF access requires SSH transport (RFC 6242) and RESTCONF requires TLS 1.3 (RFC 8446) as mandatory-to-implement secure transports.
+section: "3"
+topics:
+    - security
+    - yang
+    - netconf
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-8668
+kind: design-rationale
+summary: A new TLV (Type 25) is used rather than reusing existing Extended IS Neighbor TLVs (22/222) specifically to ensure that changes to L2 Bundle Member link attribute advertisements do not trigger unnecessary action by the IS-IS Decision Process (ISO 10589). Keeping L2 bundle member data separate from L3 adjacency data avoids unintended SPF recalculations.
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

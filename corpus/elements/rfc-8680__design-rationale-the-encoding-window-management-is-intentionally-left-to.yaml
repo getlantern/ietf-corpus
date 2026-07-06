@@ -1,0 +1,8 @@
+document: rfc-8680
+kind: design-rationale
+summary: The encoding window management is intentionally left to the FEC scheme rather than specified in the FEC Framework. Source symbols are removed from the window either after a real-time timeout (old ADUs expire) or once the window reaches its maximum size (oldest symbol evicted on each new addition), with the specific policy being FEC-scheme-dependent.
+section: A
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

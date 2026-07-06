@@ -1,0 +1,10 @@
+document: rfc-8680
+kind: design-rationale
+summary: Sliding window FEC codes (convolutional codes) are used instead of block codes to significantly reduce FEC-related latency for real-time flows. With block codes, no repair symbol can be generated before the entire block is collected, creating a delay proportional to block size; sliding window codes generate repair symbols on the fly at any time, enabling receivers to quickly recover losses.
+section: "1"
+topics:
+    - realtime
+    - rtp
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

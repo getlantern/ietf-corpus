@@ -1,0 +1,9 @@
+document: rfc-8681
+kind: design-rationale
+summary: 'Sliding Window RLC codes reduce FEC-related latency for real-time flows compared to block codes: an isolated lost source packet is recovered with the next repair packet, whereas block codes require waiting until the end of an entire block. Under constant bitrate conditions, sliding window codes can also achieve target quality with fewer repair packets (higher code rate).'
+section: "1.2"
+topics:
+    - realtime
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

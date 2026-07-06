@@ -1,0 +1,9 @@
+document: rfc-8671
+kind: design-rationale
+summary: Pre-policy Adj-RIB-Out does not contain all local RIB routes; it contains only the candidate routes available based on the BGP peering type (IBGP, IBGP RR client, EBGP, confederation, route server client). This mirrors the candidate-set semantics of RFC 4271 rather than exposing the full local RIB.
+section: "5.2"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

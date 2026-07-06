@@ -1,0 +1,11 @@
+document: rfc-8676
+kind: security-consideration
+summary: All config-true data nodes in the softwire YANG modules are considered sensitive. An attacker with NETCONF/RESTCONF write access could redirect CE traffic to a rogue BR (by changing br-ipv6-addr), set a low MTU to increase fragmentation, disable hairpinning, inflate softwire-num-max to enable a DoS on the BR, suppress ICMP handling by lowering rate limits, or trigger DDoS via maliciously crafted binding table notifications.
+section: "9"
+topics:
+    - security
+    - yang
+    - netconf
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

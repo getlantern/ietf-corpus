@@ -1,0 +1,10 @@
+document: rfc-8667
+kind: normative-requirement
+summary: When adding a new SRGB Descriptor, a router SHOULD append it at the end and SHOULD NOT reorder existing blocks; reordering causes FIB label churn and may black-hole traffic during IGP convergence. The originating router MUST ensure SRGB order is preserved after graceful restart.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

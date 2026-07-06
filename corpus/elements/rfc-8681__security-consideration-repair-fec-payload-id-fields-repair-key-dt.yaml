@@ -1,0 +1,8 @@
+document: rfc-8681
+kind: security-consideration
+summary: 'Repair FEC Payload ID fields (Repair_Key, DT, NSS, FSS_ESI) and the Source FEC Payload ID ESI field are all attack surfaces: modifying any of them causes receivers to reconstruct incorrect encoding windows or coefficient sequences, yielding corrupted decoded symbols or increased processing overhead. Integrity protection of source and repair packets per RFC 6363 is RECOMMENDED.'
+section: "7.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

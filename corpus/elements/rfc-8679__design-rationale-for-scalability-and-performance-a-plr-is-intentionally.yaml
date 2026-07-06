@@ -1,0 +1,9 @@
+document: rfc-8679
+kind: design-rationale
+summary: For scalability and performance, a PLR is intentionally agnostic to services and service labels, maintaining bypass forwarding state per transport tunnel rather than per service destination or service label. This allows bypass tunnel sharing among multiple egress-protected tunnels and avoids state explosion at the PLR.
+section: "4"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

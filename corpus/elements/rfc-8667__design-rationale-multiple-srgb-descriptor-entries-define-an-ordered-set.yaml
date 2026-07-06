@@ -1,0 +1,9 @@
+document: rfc-8667
+kind: design-rationale
+summary: Multiple SRGB Descriptor entries define an ordered set of label ranges that together form the full SRGB; SID indexes span across all ranges in advertisement order. The ordering is load-bearing — changing it changes the label each index resolves to — which motivates the strict append-only requirement for new descriptors.
+section: "3.1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

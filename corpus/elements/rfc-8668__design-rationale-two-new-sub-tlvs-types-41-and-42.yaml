@@ -1,0 +1,9 @@
+document: rfc-8668
+kind: design-rationale
+summary: Two new sub-TLVs (Types 41 and 42) are defined instead of reusing the RFC 8667 Adj-SID sub-TLVs because the existing sub-TLVs support only a single Adj-SID per sub-TLV. Since each L2 Bundle Member is expected to have a unique Adj-SID in most deployments, the new format allows a set of Adj-SIDs (one per member) to be encoded in a single sub-TLV for efficiency.
+section: "4"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

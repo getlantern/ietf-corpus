@@ -1,0 +1,9 @@
+document: rfc-8667
+kind: interoperability-note
+summary: PHP behavior cannot be determined solely from a Mapping Server advertisement because the originator of the prefix is not identified. PHP MAY be applied if a prefix reachability advertisement exists with a Prefix Attribute Flags sub-TLV where X-Flag and R-Flag are both 0. In the absence of such a sub-TLV, the A-Flag in the Binding TLV indicates direct connectivity and PHP MUST be performed by neighbors of the prefix originator.
+section: 2.4.4.2
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

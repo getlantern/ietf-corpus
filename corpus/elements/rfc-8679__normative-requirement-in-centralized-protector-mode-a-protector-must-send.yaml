@@ -1,0 +1,10 @@
+document: rfc-8679
+kind: normative-requirement
+summary: In centralized protector mode, a protector MUST send service packets via a transport tunnel to the corresponding backup service instance on a backup egress router, rather than forwarding directly to the service destination. For MPLS services, the protector MUST swap the service label to the backup egress router's label before pushing the tunnel label.
+section: "5.12"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

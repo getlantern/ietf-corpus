@@ -1,0 +1,9 @@
+document: rfc-8671
+kind: design-rationale
+summary: The Admin Label TLV was introduced instead of a peer group name because BGP implementations use structured, hierarchical policy groupings (session, AFI/SAFI, template-based inheritance) that do not map to a single flat group name or ID. Free-form labels allow operators to attach administratively meaningful metadata (e.g., 'type=wholesale', 'region=west') without requiring protocol-level group semantics.
+section: "7.1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

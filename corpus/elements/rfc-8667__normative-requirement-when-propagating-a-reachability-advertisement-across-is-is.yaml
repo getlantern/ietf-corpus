@@ -1,0 +1,10 @@
+document: rfc-8667
+kind: normative-requirement
+summary: When propagating a reachability advertisement across IS-IS levels, the router MUST set the P-Flag and MUST clear the E-Flag on the related Prefix-SIDs. If P-Flag is not set, upstream neighbors MUST pop (PHP) the Prefix-SID; if both P-Flag and E-Flag are set, upstream neighbors MUST replace the Prefix-SID with Explicit NULL (0 for IPv4, 2 for IPv6).
+section: 2.1.1.3
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
