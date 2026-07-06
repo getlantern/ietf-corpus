@@ -1,0 +1,9 @@
+document: rfc-9254
+kind: wire-format
+summary: The bits type MUST be encoded as a CBOR byte string (major type 2) when only one byte string suffices, or as a CBOR array alternating byte strings and positive unsigned integers (skip offsets multiplied by 8). An array with a single byte string MUST be encoded as just that byte string; trailing zero bytes at the end of a byte string MUST be omitted.
+section: "6.7"
+topics:
+    - yang
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

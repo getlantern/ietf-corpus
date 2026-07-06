@@ -1,0 +1,9 @@
+document: rfc-9258
+kind: design-rationale
+summary: Depreciating a hash function for TLS 1.3 is accomplished by simply removing the corresponding KDF from the set of target KDFs used for import. This does not affect the HKDF operation used to derive the imported PSKs themselves.
+section: "6"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

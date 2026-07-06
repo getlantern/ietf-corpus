@@ -1,0 +1,10 @@
+document: rfc-9252
+kind: normative-requirement
+summary: The Argument Length (AL) MUST be set to 0 for SIDs where the Argument is not applicable to the SRv6 Endpoint Behavior. A receiver MUST ignore SRv6 SIDs with a non-zero AL when the SRv6 Endpoint Behavior is unknown to it. For known behaviors, the receiver MUST validate that AL is consistent with the specific Endpoint Behavior definition.
+section: 3.2.1
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

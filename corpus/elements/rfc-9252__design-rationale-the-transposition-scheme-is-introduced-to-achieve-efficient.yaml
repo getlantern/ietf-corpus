@@ -1,0 +1,9 @@
+document: rfc-9252
+kind: design-rationale
+summary: The Transposition Scheme is introduced to achieve efficient packing of BGP update messages. For services requiring per-prefix SID allocation (e.g., EVPN VPWS with End.DX2), encoding the full 128-bit SID in every NLRI is wasteful; instead, the common Locator part is placed in the SRv6 Services TLV and the variable Function or Argument part is transposed into the existing MPLS Label field, reusing space already present in the NLRI encoding.
+section: "4"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

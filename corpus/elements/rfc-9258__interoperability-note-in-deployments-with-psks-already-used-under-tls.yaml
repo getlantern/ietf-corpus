@@ -1,0 +1,8 @@
+document: rfc-9258
+kind: interoperability-note
+summary: In deployments with PSKs already used under TLS 1.2, incrementally enabling the importer results in the same PSK being used directly as a TLS 1.2 PSK and as an EPSK for TLS 1.3, which means the same KDF and key could be used in two protocol contexts — a non-recommended but potentially necessary transitional configuration.
+section: "7"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

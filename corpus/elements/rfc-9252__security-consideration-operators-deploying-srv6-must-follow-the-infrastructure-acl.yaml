@@ -1,0 +1,10 @@
+document: rfc-9252
+kind: security-consideration
+summary: Operators deploying SRv6 MUST follow the infrastructure ACL recommendations in RFC 8754 Section 7 (and BCP 38/BCP 84) to prevent packets destined to SRv6 SIDs from entering the SR domain from external/unauthorized networks. A single ACL matching the SRv6 Block applied at border nodes suffices to block all SRv6 SID-destined packets from outside.
+section: "9.3"
+topics:
+    - security
+    - bgp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

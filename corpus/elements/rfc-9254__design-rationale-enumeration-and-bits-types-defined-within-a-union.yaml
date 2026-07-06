@@ -1,0 +1,9 @@
+document: rfc-9254
+kind: design-rationale
+summary: Enumeration and bits types defined within a union are encoded as CBOR text strings (rather than integers or byte strings) to maintain compatibility with the XML and JSON encodings of overlapping unions, which is required by the idiosyncrasy of YANG's data model for unions (RFC 7950 Section 9.12).
+section: "6.12"
+topics:
+    - yang
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

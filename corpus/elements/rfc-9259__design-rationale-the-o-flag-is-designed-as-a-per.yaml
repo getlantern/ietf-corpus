@@ -1,0 +1,9 @@
+document: rfc-9259
+kind: design-rationale
+summary: The O-flag is designed as a per-packet marking mechanism (not in-band recording like IOAM per RFC 9197) so that telemetry data is exported out-of-band to an OAM process, avoiding the need to record OAM data in the forwarded packet itself. This enables controllable and predictable flow sampling without modifying packet payload.
+section: A.3
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

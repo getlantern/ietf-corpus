@@ -1,0 +1,9 @@
+document: rfc-9258
+kind: protocol-element
+summary: 'An imported PSK (ipskx) is derived from an EPSK as: epskx = HKDF-Extract(0, epsk); ipskx = HKDF-Expand-Label(epskx, "derived psk", Hash(ImportedIdentity), L), where L is the KDF output length for target_kdf. HKDF-Expand-Label internally uses the label for the target protocol (e.g., "tls13").'
+section: "5.1"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

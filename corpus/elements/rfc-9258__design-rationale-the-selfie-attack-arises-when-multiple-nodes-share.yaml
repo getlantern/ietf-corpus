@@ -1,0 +1,9 @@
+document: rfc-9258
+kind: design-rationale
+summary: The Selfie attack arises when multiple nodes share a single PSK and TLS only authenticates group membership, allowing a node to authenticate itself as its own peer. Incorporating client and server roles (e.g., MAC addresses) into ImportedIdentity.context defeats this attack by ensuring redirected ClientHellos produce a different context string and fail.
+section: A
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

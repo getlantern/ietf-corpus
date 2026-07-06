@@ -1,0 +1,10 @@
+document: rfc-9258
+kind: security-consideration
+summary: 'KDFs modeled as computational extractors require source-independence: the same IKM must not be used for two different KDFs. The PSK importer ensures each imported PSK is used as IKM for at most one KDF by diversifying on ImportedIdentity.target_kdf.'
+section: "8"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

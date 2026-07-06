@@ -1,0 +1,9 @@
+document: rfc-9258
+kind: protocol-element
+summary: Imported PSKs use the binder key derivation label "imp binder" instead of the standard "ext binder" or "res binder". This ensures a client and server negotiate an imported PSK if and only if both import it, or neither does. Since binder_key is a leaf key, this change does not affect any other key.
+section: "5.2"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9252
+kind: normative-requirement
+summary: When propagating a route with SRv6 Service TLVs and the BGP next hop is unchanged, the SRv6 Service TLVs (including unrecognized Sub-TLV and Sub-Sub-TLV types) SHOULD be propagated; all Reserved fields MUST be propagated unchanged. When the next hop changes, unrecognized Sub-TLVs and Sub-Sub-TLVs MUST be removed and the TLVs SHOULD be updated with locally allocated SRv6 SID information.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
