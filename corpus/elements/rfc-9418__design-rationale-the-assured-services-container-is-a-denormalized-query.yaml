@@ -1,0 +1,9 @@
+document: rfc-9418
+kind: design-rationale
+summary: 'The `assured-services` container is a denormalized query-optimization index: without it, retrieving all subservices for a specific service instance would require recursively following dependency leafrefs starting from the service-instance node. The container precomputes and flattens this traversal.'
+section: "3.2"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

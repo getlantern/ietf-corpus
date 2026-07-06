@@ -1,0 +1,10 @@
+document: rfc-9404
+kind: security-consideration
+summary: Blob/upload with carefully chosen data sources can be used to reassemble dangerous content on the far side of security scanners (anti-virus, exfiltration scanners) watching the upload endpoint. Server implementations SHOULD provide a hook for security scanners to inspect the fully concatenated resulting blob.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9406
+kind: protocol-element
+summary: The RTT threshold RttThresh is computed each round as max(MIN_RTT_THRESH, min(lastRoundMinRTT / MIN_RTT_DIVISOR, MAX_RTT_THRESH)). Slow start exit is triggered when currentRoundMinRTT >= lastRoundMinRTT + RttThresh and at least N_RTT_SAMPLE samples have been collected.
+section: "4.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

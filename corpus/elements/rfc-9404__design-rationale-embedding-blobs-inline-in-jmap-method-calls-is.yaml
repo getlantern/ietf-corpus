@@ -1,0 +1,8 @@
+document: rfc-9404
+kind: design-rationale
+summary: Embedding blobs inline in JMAP method calls is analogous to IMAP literals extended by RFC 7888, reducing round trips. Base64 encoding (RFC 4648) is used for both creating and fetching blob data because raw blobs may contain arbitrary binary data that cannot be directly embedded in JSON.
+section: "1"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

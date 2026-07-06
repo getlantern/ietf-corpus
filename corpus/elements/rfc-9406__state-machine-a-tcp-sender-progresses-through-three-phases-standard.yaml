@@ -1,0 +1,9 @@
+document: rfc-9406
+kind: state-machine
+summary: 'A TCP sender progresses through three phases: standard Slow Start, Conservative Slow Start (CSS), and Congestion Avoidance. The trigger from Slow Start to CSS is a round-trip delay increase exceeding RttThresh; CSS returns to Slow Start if currentRoundMinRTT drops below cssBaselineMinRtt, and advances to Congestion Avoidance after CSS_ROUNDS rounds or on loss/ECN.'
+section: "4.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

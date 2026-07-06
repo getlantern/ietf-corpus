@@ -1,0 +1,8 @@
+document: rfc-9404
+kind: design-rationale
+summary: 'The definition of ''reference'' in Blob/lookup is intentionally loose: it means ''you could discover this blobId by looking at this object or at other objects recursively contained within it''. For example, a Thread references a blobId if any Email in that Thread does, but an Email referencing a Mailbox does not inherit all blobs referenced by other Emails in that Mailbox.'
+section: "4.3"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

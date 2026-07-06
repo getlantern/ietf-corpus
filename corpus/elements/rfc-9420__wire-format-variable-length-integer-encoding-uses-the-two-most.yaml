@@ -1,0 +1,8 @@
+document: rfc-9420
+kind: wire-format
+summary: Variable-length integer encoding uses the two most significant bits of the first byte as a length prefix (00=1 byte, 01=2 bytes, 10=4 bytes, 11=invalid). The encoded value MUST use the minimum number of bits; over-long encodings MUST be rejected as malformed. Vectors may range from 0 to 2^30 bytes.
+section: 2.1.2
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-9399
+kind: normative-requirement
+summary: CAs MUST include a hash value for each referenced logotype object calculated over the whole object, and MUST use the hash function associated with the certificate signature. Clients MUST compute a hash using one of the identified functions and MUST discard logotype data if the computed hash does not match the certificate extension value.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

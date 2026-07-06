@@ -1,0 +1,9 @@
+document: rfc-9399
+kind: security-consideration
+summary: SVG images can reference external data. If this feature were used, the hash would only cover the URI reference, not the referenced image data. Clients SHOULD verify that SVG images meet all Section 7 requirements and reject images containing references to external data.
+section: "9"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

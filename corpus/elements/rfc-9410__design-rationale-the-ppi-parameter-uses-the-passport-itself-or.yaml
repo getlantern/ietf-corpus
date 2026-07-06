@@ -1,0 +1,9 @@
+document: rfc-9410
+kind: design-rationale
+summary: The "ppi" parameter uses the PASSporT itself (or its compact form) as a unique identifier for correlating a Reason header field error to a specific Identity header field, rather than introducing a separate sequence-number mechanism. This leverages the cryptographic uniqueness of the PASSporT signature to avoid ambiguity when multiple Identity headers are present.
+section: "5"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9420
+kind: design-rationale
+summary: The filtered direct path removes intermediate nodes whose copath child has an empty resolution, reducing unnecessary key pairs. Encrypting to such a node would be equivalent to encrypting to its non-copath child, so omitting the key pair has no security impact while reducing tree size.
+section: 4.1.2
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

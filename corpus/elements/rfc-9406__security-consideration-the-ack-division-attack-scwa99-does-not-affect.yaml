@@ -1,0 +1,10 @@
+document: rfc-9406
+kind: security-consideration
+summary: The ACK division attack (SCWA99) does not affect HyStart++ because cwnd increase is based on the number of bytes newly acknowledged per ACK rather than a fixed constant per ACK arrival, removing the incentive to split ACKs.
+section: "6"
+topics:
+    - tcp
+    - congestion
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

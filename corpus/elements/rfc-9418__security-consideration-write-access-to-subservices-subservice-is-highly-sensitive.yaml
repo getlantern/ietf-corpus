@@ -1,0 +1,10 @@
+document: rfc-9418
+kind: security-consideration
+summary: 'Write access to `/subservices/subservice` is highly sensitive: unauthorized modifications can alter the assurance graph, causing false-positive alerts (reporting healthy services as broken, wasting operator time) or false-negative suppression (hiding real failures), potentially resulting in SLA violations or disruption of emergency services.'
+section: "7"
+topics:
+    - security
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

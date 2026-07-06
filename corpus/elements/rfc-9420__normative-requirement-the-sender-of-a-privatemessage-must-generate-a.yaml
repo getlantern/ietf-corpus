@@ -1,0 +1,10 @@
+document: rfc-9420
+kind: normative-requirement
+summary: The sender of a PrivateMessage MUST generate a fresh random 4-byte reuse guard and XOR it with the first four bytes of the key-schedule nonce before encryption. The reuse guard MUST be included in the SenderData so recipients can reconstruct the nonce.
+section: 6.3.1
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

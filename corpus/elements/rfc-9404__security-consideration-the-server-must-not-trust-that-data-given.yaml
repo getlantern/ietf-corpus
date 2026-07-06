@@ -1,0 +1,10 @@
+document: rfc-9404
+kind: security-consideration
+summary: The server MUST NOT trust that data given to Blob/upload is a well-formed instance of the specified media type. If the server parses the blob, it MUST use only hardened parsers designed for arbitrary untrusted data. The server SHOULD NOT reject data solely because it is not a valid specimen of the stated media type.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

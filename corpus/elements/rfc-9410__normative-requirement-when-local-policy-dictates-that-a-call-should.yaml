@@ -1,0 +1,10 @@
+document: rfc-9410
+kind: normative-requirement
+summary: When local policy dictates that a call should continue despite verification errors (including 4xx errors per RFC 8224 Section 6.2.2), the verification service MUST NOT send the 4xx as a response. Instead, it should include the error response code and reason phrase in a Reason header field in the next provisional or final response sent to the authentication service.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

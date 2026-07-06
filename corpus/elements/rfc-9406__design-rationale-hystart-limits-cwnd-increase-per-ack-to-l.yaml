@@ -1,0 +1,9 @@
+document: rfc-9406
+kind: design-rationale
+summary: HyStart++ limits cwnd increase per ACK to L*SMSS bytes to control burstiness. For non-paced implementations L=8 balances cwnd growth on high-speed networks against burstiness; for paced implementations L=infinity is safe because pacing already smooths output.
+section: "4.3"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

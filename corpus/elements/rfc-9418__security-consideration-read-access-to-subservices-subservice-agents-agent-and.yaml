@@ -1,0 +1,10 @@
+document: rfc-9418
+kind: security-consideration
+summary: Read access to `/subservices/subservice`, `/agents/agent`, and `/assured-services/assured-service` must be controlled via NACM (RFC 8341), as these subtrees reveal underlying network structure, deployed services, and customer service topology. Customer access should be scoped strictly to their own service nodes.
+section: "7"
+topics:
+    - security
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

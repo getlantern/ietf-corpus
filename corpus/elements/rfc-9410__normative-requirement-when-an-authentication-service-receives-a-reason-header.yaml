@@ -1,0 +1,11 @@
+document: rfc-9410
+kind: normative-requirement
+summary: When an authentication service receives a Reason header field containing a PASSporT it generated, it MUST remove that Reason header field from the response before forwarding upstream, to prevent PASSporT information from reaching a UAC or UAS not authorized to see it.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

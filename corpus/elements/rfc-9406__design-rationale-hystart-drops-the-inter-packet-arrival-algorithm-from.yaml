@@ -1,0 +1,9 @@
+document: rfc-9406
+kind: design-rationale
+summary: HyStart++ drops the Inter-Packet Arrival algorithm from the original HyStart and relies solely on the Delay Increase algorithm, because the Inter-Packet Arrival algorithm performs poorly in practice due to ACK compression and fails to detect congestion early.
+section: "4.1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

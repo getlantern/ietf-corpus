@@ -1,0 +1,9 @@
+document: rfc-9418
+kind: design-rationale
+summary: Circular dependency detection is performed at the server rather than enforced as a YANG XPath constraint because implementing a full graph-traversal reachability check in XPath is impractical, and because merging two independently loop-free graphs can produce a graph with a loop (as demonstrated in RFC 9417 Section 3.1.1).
+section: "3.4"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

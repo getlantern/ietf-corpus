@@ -1,0 +1,9 @@
+document: rfc-9420
+kind: security-consideration
+summary: MLS provides forward secrecy and post-compromise security (PCS). FS is achieved because epoch secrets are deleted after use. PCS is achieved because each Commit provides fresh entropy derived from an updated ratchet tree, ensuring that compromise of an old epoch's keys does not compromise future epochs.
+section: "16.6"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

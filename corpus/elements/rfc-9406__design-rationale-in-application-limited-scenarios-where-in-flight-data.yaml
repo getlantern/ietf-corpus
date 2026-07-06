@@ -1,0 +1,9 @@
+document: rfc-9406
+kind: design-rationale
+summary: 'In application-limited scenarios where in-flight data falls below the BDP, smaller RTT samples may repeatedly trigger the CSS-to-slow-start reentry, causing oscillation between CSS and slow start. This is expected and harmless: it neither causes premature congestion avoidance entry nor overshooting.'
+section: "4.3"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

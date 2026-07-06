@@ -1,0 +1,9 @@
+document: rfc-9399
+kind: security-consideration
+summary: Fraudulent CAs can create certificates with names and logotypes they have no claim to, attempting social engineering. The logotype trust model requires that logotype graphics are trusted only if the certificate is successfully validated within a valid certification path. No technical mechanism prevents subordinate CAs from including inappropriate logotypes; parent CAs must rely on contractual agreements, monitoring (e.g., Certificate Transparency), and revocation.
+section: "9"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

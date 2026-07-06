@@ -1,0 +1,10 @@
+document: rfc-9420
+kind: normative-requirement
+summary: The padding field in PrivateMessageContent MUST be filled with all zero bytes. A receiver MUST verify that there are no non-zero bytes in the padding field; if this check fails, the PrivateMessage MUST be rejected as malformed.
+section: 6.3.1
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

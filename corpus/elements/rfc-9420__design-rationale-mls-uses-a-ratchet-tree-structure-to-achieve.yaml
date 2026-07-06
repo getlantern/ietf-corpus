@@ -1,0 +1,9 @@
+document: rfc-9420
+kind: design-rationale
+summary: MLS uses a ratchet tree structure to achieve O(log N) cost for group key updates, as opposed to sender-key schemes that require O(N) or O(N^2) operations. This enables efficient post-compromise security for large groups by encrypting new entropy to only the necessary subtree of the group.
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

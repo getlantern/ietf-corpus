@@ -1,0 +1,10 @@
+document: rfc-9403
+kind: security-consideration
+summary: 'Writable data nodes for static route preferences and tags (e.g., rib-ext:preference, rib-ext:tag on IPv4/IPv6 next hops) are sensitive: unauthorized write access could cause traffic misrouting. These must be protected via NACM (RFC 8341) and accessed only over secure transports (SSH for NETCONF, TLS for RESTCONF).'
+section: "6"
+topics:
+    - security
+    - yang
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

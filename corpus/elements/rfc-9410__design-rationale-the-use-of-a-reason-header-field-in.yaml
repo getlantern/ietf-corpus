@@ -1,0 +1,9 @@
+document: rfc-9410
+kind: design-rationale
+summary: The use of a Reason header field in provisional (1xx) responses allows a verification error to be communicated back to the authentication service without terminating the call. This enables deployments where policy prefers to continue the call despite unverified identity, while still notifying the authentication service for corrective action such as logging or alarming.
+section: "1"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

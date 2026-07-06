@@ -1,0 +1,11 @@
+document: rfc-9404
+kind: normative-requirement
+summary: If a blob is not visible to a user or does not exist at all, the server MUST still return an empty array for each type in a Blob/lookup response, so as not to leak information about whether the blob exists but is inaccessible to the requester.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - json
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

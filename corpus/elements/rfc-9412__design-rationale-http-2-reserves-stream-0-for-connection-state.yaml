@@ -1,0 +1,9 @@
+document: rfc-9412
+kind: design-rationale
+summary: HTTP/2 reserves stream 0 for connection-state frames, whereas HTTP/3 uses a pair of unidirectional control streams for this purpose. The ORIGIN frame is therefore mapped to the HTTP/3 server control stream rather than stream 0.
+section: "2"
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9418
+kind: protocol-element
+summary: The `symptoms` container holds a list keyed by `[start-date-time agent-id symptom-id]`, with a `unique` constraint on `[agent-id symptom-id]`. Each symptom entry references the agent and symptom via leafrefs into the `agents` container, and carries a `health-score-weight` (uint8, 0..100), a `start-date-time`, and an optional `stop-date-time`.
+section: "3.2"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
