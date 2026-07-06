@@ -1,0 +1,9 @@
+document: rfc-8733
+kind: wire-format
+summary: The Overflow-Threshold Sub-TLV (Type=10, Length=8) encodes a 5-bit Count field (consecutive samples; value 0 invalid) and a 4-octet IEEE 754 absolute threshold in bytes per second. The Overflow-Threshold-Percentage Sub-TLV (Type=11, Length=8) instead carries a 7-bit Percentage, the Count, and a Minimum-Threshold. If the threshold is met consecutively for Count samples, the LSP bandwidth is immediately adjusted, bypassing the Adjustment-Interval.
+section: 5.2.5.1
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8733
+kind: normative-requirement
+summary: If a PCEP speaker supports the extensions defined in this document but did not advertise this capability, then upon receipt of AUTO-BANDWIDTH-ATTRIBUTES TLV in the LSPA object, it SHOULD generate a PCErr with Error-Type 19 (Invalid Operation) and Error-value 14 (Auto-Bandwidth capability was not advertised) and ignore the AUTO-BANDWIDTH-ATTRIBUTES TLV.
+section: "5.1"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8737
+kind: design-rationale
+summary: 'The tls-alpn-01 challenge was created to replace the TLS SNI challenge from early ACME drafts, which had a security vulnerability discovered by Frans Rosen: many service providers did not enforce that users could only respond to SNI requests for their own registered names, allowing a user to hijack validation for another user''s domain by responding to the SNI challenge name (a synthetic subdomain) on shared infrastructure.'
+section: A
+topics:
+    - acme
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

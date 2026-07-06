@@ -1,0 +1,8 @@
+document: rfc-8732
+kind: state-machine
+summary: 'ECDH GSS key exchange: Client generates ephemeral key pair and calls GSS_Init_sec_context(), sends SSH_MSG_KEXGSS_INIT. Server may send SSH_MSG_KEXGSS_HOSTKEY. The loop exchanges SSH_MSG_KEXGSS_CONTINUE tokens until context is established. Server then generates its key pair, computes shared secret and hash H, calls GSS_GetMIC(H), and sends SSH_MSG_KEXGSS_COMPLETE. Client verifies key, computes shared secret and H, calls GSS_VerifyMIC.'
+section: "5.1"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

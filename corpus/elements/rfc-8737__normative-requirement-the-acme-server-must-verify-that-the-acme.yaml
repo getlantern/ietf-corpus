@@ -1,0 +1,11 @@
+document: rfc-8737
+kind: normative-requirement
+summary: The ACME server MUST verify that the "acme-tls/1" protocol was successfully negotiated (ALPN contained only this value) and that the certificate contains a subjectAltName with only the dNSName being validated and a critical acmeIdentifier extension with the expected SHA-256 digest.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - acme
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

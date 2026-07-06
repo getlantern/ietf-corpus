@@ -1,0 +1,9 @@
+document: rfc-8733
+kind: normative-requirement
+summary: A PCEP speaker that becomes overwhelmed by auto-bandwidth adjustments SHOULD notify its peer via a PCNtf message with Notification-type=5 and Notification-value=1 (Entering Auto-Bandwidth Overwhelm State). Upon receipt, the peer SHOULD NOT send any further auto-bandwidth PCEP messages; if one is received while in the overwhelmed state, it MUST be ignored.
+section: "5.7"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

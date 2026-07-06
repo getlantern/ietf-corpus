@@ -1,0 +1,9 @@
+document: rfc-8732
+kind: security-consideration
+summary: When deleg_req_flag is set, extra care must be taken to verify that the GSS-API acceptor matches the intended target. Some implementations (e.g., Kerberos krb5 libraries) use insecure DNS resolution to canonicalize target names, making them vulnerable to DNS spoofing that could cause silent credential delegation to an attacker.
+section: "8.3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

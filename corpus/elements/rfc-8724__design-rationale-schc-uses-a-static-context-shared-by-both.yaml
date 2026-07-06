@@ -1,0 +1,9 @@
+document: rfc-8724
+kind: design-rationale
+summary: SCHC uses a static Context shared by both ends to avoid resynchronization traffic. In LPWANs the return path may be restricted, expensive, or entirely unavailable; a compression protocol depending on feedback is incompatible with these constraints. The static approach also exploits the high predictability of LPWAN application traffic.
+section: "1"
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8723
+kind: protocol-element
+summary: Encryption applies the inner (E2E) algorithm to a synthetic RTP packet with the X bit cleared and extensions removed, appends an empty OHB (0x00) after the inner ciphertext and tag, restores the original header, then applies the outer (hop-by-hop) algorithm to the full packet. Repair-mode packets skip the inner step.
+section: "5.1"
+topics:
+    - rtp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

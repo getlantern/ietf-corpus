@@ -1,0 +1,10 @@
+document: rfc-8723
+kind: design-rationale
+summary: AES-GCM is chosen as the RECOMMENDED algorithm for both inner and outer transforms because it provides authenticated encryption; using it twice adds 32 octets of overhead (16 per application) plus 1-4 octets for the OHB, which is considered an acceptable trade-off for the security model.
+section: "8"
+topics:
+    - rtp
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

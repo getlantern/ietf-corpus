@@ -1,0 +1,10 @@
+document: rfc-8723
+kind: security-consideration
+summary: An MD decrypting and re-encrypting with the same key and salt causes reuse of a (key, nonce) pair with two different plaintexts, which substantially degrades AES-GCM security. The MD must treat its relationship with sender and receiver as independent AES-GCM sessions with distinct keys.
+section: "9"
+topics:
+    - security
+    - crypto
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

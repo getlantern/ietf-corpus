@@ -1,0 +1,8 @@
+document: rfc-8724
+kind: state-machine
+summary: 'ACK-on-Error receiver operates in three phases: ''acceptance phase'' (receives fragments, updates Bitmap), ''retransmission phase'' (sends SCHC ACK with missing-tile Bitmap, accepts retransmissions), and ''clean-up phase'' (responds to late ACK REQs after successful reassembly). Sender and receiver operate in a decoupled fashion; sender may advance to later windows before earlier ones are confirmed.'
+section: 8.4.3
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

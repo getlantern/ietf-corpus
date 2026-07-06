@@ -1,0 +1,10 @@
+document: rfc-8723
+kind: normative-requirement
+summary: When using FlexFEC (RFC 8627) with the double transform, repair packets MUST be constructed by first double-encrypting the source packet, then performing FEC over the ciphertext. The FEC repair packet itself MUST then be encrypted with only the outer hop-by-hop transform.
+section: "7.3"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

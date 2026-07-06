@@ -1,0 +1,8 @@
+document: rfc-8724
+kind: wire-format
+summary: The SCHC Receiver-Abort shares the SCHC ACK header format (C=1, W=all-ones). After the header, bits are appended to reach the next L2 Word boundary (all set to 1), followed by exactly one additional L2 Word with all bits set to 1. This pattern is guaranteed to never occur in a legitimate SCHC ACK.
+section: 8.3.5
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

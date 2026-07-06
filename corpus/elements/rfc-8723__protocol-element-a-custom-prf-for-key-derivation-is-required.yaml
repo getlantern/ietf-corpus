@@ -1,0 +1,9 @@
+document: rfc-8723
+kind: protocol-element
+summary: 'A custom PRF for key derivation is required: PRF_double_n(k_master, x) = PRF_(n/2)(inner(k_master), x) || PRF_(n/2)(outer(k_master), x). This preserves independent management of inner and outer keys from a single master key; AES_CM PRF is used for 128-bit and AES_256_CM_PRF for 256-bit variants.'
+section: "3.1"
+topics:
+    - rtp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8737
+kind: design-rationale
+summary: By requiring a new ALPN protocol ID ("acme-tls/1") rather than relying solely on SNI, and by using the domain name itself (not a synthetic subdomain) in the SAN, the tls-alpn-01 challenge ensures service providers must opt in and deploy explicit code, enabling stronger access controls and eliminating the SNI hijack vector.
+section: A
+topics:
+    - acme
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8737
+kind: security-consideration
+summary: The challenge assumes that HTTPS servers hosting multiple domain names from a single IP properly segregate SNI-based control between users. If a server allows User B to serve TLS for a name registered by User A, User B can illegitimately prove domain control to the ACME server.
+section: "5"
+topics:
+    - acme
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

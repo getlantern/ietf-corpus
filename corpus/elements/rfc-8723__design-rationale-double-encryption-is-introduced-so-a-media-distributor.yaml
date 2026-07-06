@@ -1,0 +1,11 @@
+document: rfc-8723
+kind: design-rationale
+summary: Double encryption is introduced so a Media Distributor (MD) can modify certain RTP header fields (PT, SEQ, marker bit) while endpoints still verify end-to-end integrity and confidentiality of the payload. The MD holds only the outer (hop-by-hop) key and never learns the inner (end-to-end) key.
+section: "1"
+topics:
+    - rtp
+    - crypto
+    - security
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

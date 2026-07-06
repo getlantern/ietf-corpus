@@ -1,0 +1,9 @@
+document: rfc-8724
+kind: wire-format
+summary: 'Variable-length field residues are prefixed with a compact size field: sizes 0–14 are encoded as a 4-bit unsigned integer; sizes 15–254 are encoded as 0b1111 followed by an 8-bit integer; larger sizes use 0xfff followed by a 16-bit integer. The most significant bit of the size is stored leftmost.'
+section: 7.4.2
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

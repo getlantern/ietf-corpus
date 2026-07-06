@@ -1,0 +1,11 @@
+document: rfc-8723
+kind: security-consideration
+summary: Header extensions in the outer packet are not protected end-to-end. Implementations SHOULD reject RTP packets containing header extensions that would require end-to-end protection, as the MD can modify or forge them.
+section: "5.3"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - rtp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

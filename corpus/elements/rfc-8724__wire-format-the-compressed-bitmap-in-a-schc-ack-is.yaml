@@ -1,0 +1,8 @@
+document: rfc-8724
+kind: wire-format
+summary: The Compressed Bitmap in a SCHC ACK is derived by trimming trailing 1-bits from the right of the full Bitmap until reaching an L2 Word boundary of the SCHC ACK message; bits to the right of that boundary are dropped. The original Bitmap can be reconstructed by the sender because it knows WINDOW_SIZE.
+section: 8.3.2.1
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

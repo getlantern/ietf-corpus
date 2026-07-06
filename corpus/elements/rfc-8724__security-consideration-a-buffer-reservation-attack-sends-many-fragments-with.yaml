@@ -1,0 +1,9 @@
+document: rfc-8724
+kind: security-consideration
+summary: A buffer reservation attack sends many fragments with distinct DTag values, exhausting reassembler memory. Receivers that are under-resourced MUST respond with a SCHC Receiver-Abort or MUST silently drop messages they cannot process, to avoid unbounded resource consumption.
+section: 12.2.1
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

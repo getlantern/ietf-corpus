@@ -1,0 +1,9 @@
+document: rfc-8723
+kind: protocol-element
+summary: Decryption first applies the outer key; on success, the receiver strips the inner authentication tag and OHB from the payload, forms a synthetic packet by replacing header fields with OHB values and removing extensions, then applies the inner key. The application MUST use only the synthetic packet's fields, except it uses PT and SEQ from the outer packet for SDP matching and RTP ordering respectively.
+section: "5.3"
+topics:
+    - rtp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

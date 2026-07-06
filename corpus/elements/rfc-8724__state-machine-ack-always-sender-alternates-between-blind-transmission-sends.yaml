@@ -1,0 +1,8 @@
+document: rfc-8724
+kind: state-machine
+summary: ACK-Always sender alternates between 'blind transmission' (sends all tiles of a window in decreasing FCN order) and 'retransmission phase' (awaits SCHC ACK; retransmits missing tiles; increments Attempts). On Retransmission Timer expiry, if Attempts < MAX_ACK_REQUESTS, sends SCHC ACK REQ; otherwise sends Sender-Abort. Advances to next window only after all tiles confirmed received.
+section: 8.4.2.1
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

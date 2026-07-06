@@ -1,0 +1,10 @@
+document: rfc-8724
+kind: normative-requirement
+summary: The RCS MUST be computed over the full SCHC Packet concatenated with any padding bits of the last SCHC Fragment, because the SCHC reassembler cannot determine the boundary between the last tile and padding without decompressing the packet, which is outside the reassembler's scope.
+section: 8.2.3
+rfc2119_level: MUST
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
