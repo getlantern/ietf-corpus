@@ -1,0 +1,10 @@
+document: rfc-8800
+kind: security-consideration
+summary: Adding a spurious LSP into a Disjoint Association Group can trigger recomputation and setup of all LSPs in the group, which could be exploited to overwhelm the PCE and the network. A spurious LSP may also carry flags inconsistent with legitimate LSPs, causing allocation failures, or set the 'T' bit creating unresolvable conflicts.
+section: "6"
+topics:
+    - security
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

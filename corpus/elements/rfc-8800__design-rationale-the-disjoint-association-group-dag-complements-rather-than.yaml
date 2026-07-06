@@ -1,0 +1,9 @@
+document: rfc-8800
+kind: design-rationale
+summary: The Disjoint Association Group (DAG) complements rather than replaces the SVEC object. The key difference is that the DAG persists in the stateful PCE database and any future change to an LSP in the DAG automatically triggers recomputation considering disjointness, whereas the SVEC object is processed only once upon receipt of the PCReq message.
+section: "5.4"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

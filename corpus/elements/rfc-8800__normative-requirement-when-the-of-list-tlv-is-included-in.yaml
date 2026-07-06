@@ -1,0 +1,10 @@
+document: rfc-8800
+kind: normative-requirement
+summary: When the OF-List TLV is included in the ASSOCIATION object, the first OF-code inside the OF object MUST be one of the disjoint OFs defined in this document (MSL=15, MSS=16, MSN=17). If this condition is not met, the PCEP speaker MUST respond with a PCErr message with Error-Type 10 and Error-value 32 (Incompatible OF code).
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8801
+kind: security-consideration
+summary: The prefix validation check (Section 4.4) provides reasonable assurance against misconfigured or mismatched routers but cannot prevent a hostile router using NPTv6 to spoof PvD ownership. The HTTPS server SHOULD reject requests whose source addresses are not covered by the advertised prefixes as an additional layer of defense.
+section: "4.4"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

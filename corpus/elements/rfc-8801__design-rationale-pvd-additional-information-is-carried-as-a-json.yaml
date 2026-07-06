@@ -1,0 +1,9 @@
+document: rfc-8801
+kind: design-rationale
+summary: PvD Additional Information is carried as a JSON object retrieved over HTTPS rather than embedded in the RA because the data is typically too large or not critical enough for inclusion in an RA option, yet may be valuable to applications or users when selecting among PvDs. IoT devices that prefer CBOR representation are acknowledged but out of scope for this document.
+section: "4"
+topics:
+    - ip
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8804
+kind: design-rationale
+summary: The uCDN SHOULD use a different fallback target address for each uCDN host, enabling load balancing of fallback traffic using the same methods as for original hosts. This is important because extreme dCDN failures or DoS attacks could route large segments of dCDN traffic back to the uCDN simultaneously.
+section: "3.3"
+topics:
+    - http
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

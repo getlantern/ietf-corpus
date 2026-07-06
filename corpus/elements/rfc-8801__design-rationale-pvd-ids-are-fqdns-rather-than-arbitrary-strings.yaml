@@ -1,0 +1,10 @@
+document: rfc-8801
+kind: design-rationale
+summary: 'PvD IDs are FQDNs rather than arbitrary strings because domain name ownership provides a lightweight authorization mechanism: TLS certificate validation against the PvD ID FQDN confirms that the FQDN owner authorizes use of that PvD ID with the advertised prefix, without requiring any modifications to the Neighbor Discovery security model.'
+section: "6"
+topics:
+    - ip
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

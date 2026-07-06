@@ -1,0 +1,10 @@
+document: rfc-8812
+kind: design-rationale
+summary: RS1 (RSASSA-PKCS1-v1_5 with SHA-1) is registered despite being deprecated because deployed Trusted Platform Modules (TPMs) continue to use it, and WebAuthn implementations need a COSE algorithm identifier for 'RS1' when TPM attestations using this algorithm are being represented.
+section: "5.3"
+topics:
+    - crypto
+    - cbor
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

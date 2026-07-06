@@ -1,0 +1,10 @@
+document: rfc-8800
+kind: normative-requirement
+summary: All LSPs in a particular Disjoint Association Group MUST use the same combination of T, S, N, and L flags in the DISJOINTNESS-CONFIGURATION TLV. If a PCEP peer receives inconsistent flag combinations for LSPs in the same DAG, it MUST NOT add those LSPs and MUST reply with PCErr Error-Type 26 (Association Error), Error-value 6 (Association information mismatch).
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

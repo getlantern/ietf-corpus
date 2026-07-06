@@ -1,0 +1,10 @@
+document: rfc-8800
+kind: normative-requirement
+summary: The Disjoint Association Group (ASSOCIATION object with Association type = 2) MUST carry the DISJOINTNESS-CONFIGURATION TLV. If a PCEP speaker receives a DAG without this TLV, it SHOULD reply with PCErr Error-Type 6 (Mandatory Object missing), Error-value 15 (DISJOINTNESS-CONFIGURATION TLV missing).
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

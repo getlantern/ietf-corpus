@@ -1,0 +1,10 @@
+document: rfc-8800
+kind: interoperability-note
+summary: A particular LSP MAY be associated with multiple Disjoint Association Groups simultaneously. The PCE SHOULD try to consider all applicable DAGs during path computation; if it cannot support multi-DAG computation, it MUST NOT add the LSP into the association group and MUST return a PCErr with Error-Type 26, Error-value 7.
+section: "5.1"
+rfc2119_level: MAY
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8814
+kind: design-rationale
+summary: BGP-LS MSD advertisement is needed because if PCEP is not supported or configured on the head-end of an SR tunnel or Binding-SID anchor node, and the controller does not participate in IGP routing, it has no way of learning the MSD of nodes and links. BGP-LS provides the mechanism to expose this topology capability to centralized controllers.
+section: "1"
+topics:
+    - routing
+    - bgp
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

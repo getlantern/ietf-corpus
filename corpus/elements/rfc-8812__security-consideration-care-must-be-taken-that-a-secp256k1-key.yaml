@@ -1,0 +1,9 @@
+document: rfc-8812
+kind: security-consideration
+summary: Care must be taken that a secp256k1 key is not mistaken for a P-256 key, since their representations differ only in the 'crv' value. The only current mitigation is to restrict the set of curves that can be used per algorithm.
+section: "5.4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

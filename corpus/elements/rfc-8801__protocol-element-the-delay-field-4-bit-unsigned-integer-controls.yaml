@@ -1,0 +1,8 @@
+document: rfc-8801
+kind: protocol-element
+summary: The Delay field (4-bit unsigned integer) controls randomized backoff before hosts fetch updated PvD Additional Information. When a Sequence Number change is detected, the host waits a uniformly random time between 0 and 2^(10 + Delay) milliseconds before querying. When the H-flag is not set, senders SHOULD set Delay to zero.
+section: "3.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

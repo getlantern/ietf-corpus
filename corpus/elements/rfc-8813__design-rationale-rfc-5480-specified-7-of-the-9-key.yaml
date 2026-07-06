@@ -1,0 +1,9 @@
+document: rfc-8813
+kind: design-rationale
+summary: RFC 5480 specified 7 of the 9 key usage values for ECC certificates but made no mention of keyEncipherment and dataEncipherment. RFC 8813 corrects this omission by explicitly prohibiting both bits, since ECC key agreement algorithms do not perform key encipherment or data encipherment.
+section: "1"
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

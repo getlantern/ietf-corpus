@@ -1,0 +1,10 @@
+document: rfc-8801
+kind: security-consideration
+summary: An attacker can use the H-flag and arbitrary PvD IDs in forged RAs to amplify a DoS attack by causing hosts to initiate TLS connections to arbitrary servers. Mitigation requires hosts to rate-limit per-PvD requests, rate-limit total requests per network, stop requesting PvDs returning invalid JSON, and cease all PvD requests after 10 or more failures on a given network.
+section: "6"
+topics:
+    - security
+    - ip
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

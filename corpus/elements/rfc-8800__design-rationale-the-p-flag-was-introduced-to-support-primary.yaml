@@ -1,0 +1,9 @@
+document: rfc-8800
+kind: design-rationale
+summary: The P flag was introduced to support primary/backup scenarios where the primary path should use the most optimal route without regard to diversity constraints, while backup paths are then constrained to be disjoint from the primary. Without this hint, a disjointness algorithm may suboptimally assign both paths, failing to meet the customer's requirement that the primary use the best available path.
+section: "5.5"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

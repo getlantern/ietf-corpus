@@ -1,0 +1,10 @@
+document: rfc-8800
+kind: normative-requirement
+summary: When the T flag (Strict disjointness) is set and disjointness cannot be ensured, the PCE MUST reply to a PCReq with a PCRep containing a NO-PATH object, or in case of a PCRpt, MUST return a PCErr with Error-Type 26 and Error-value 7 (Cannot join the association group). In case of a network event causing impossible strict disjointness, the PCE MUST send a PCUpd with an empty ERO.
+section: "5.6"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

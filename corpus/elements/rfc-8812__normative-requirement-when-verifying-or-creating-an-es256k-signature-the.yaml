@@ -1,0 +1,11 @@
+document: rfc-8812
+kind: normative-requirement
+summary: When verifying or creating an ES256K signature, the 'kty' field MUST be present ('EC' for JOSE or 'EC2' for COSE), the 'crv' field MUST be 'secp256k1', and if 'alg' is present it MUST be 'ES256K'. If 'key_ops' is present, it MUST include 'sign' or 'verify' as appropriate; if JWK 'use' is present it MUST be 'sig'.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - jose
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

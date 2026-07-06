@@ -1,0 +1,11 @@
+document: rfc-8801
+kind: normative-requirement
+summary: Servers MUST mark responses with the 'application/pvd+json' Content-Type header. Clients SHOULD include this media type as an Accept header in GET requests. If the HTTP response status is ≥ 400, hosts MUST close the connection and consider no Additional Information available; status 300–399 MUST trigger redirect following.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - http
+    - ip
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8801
+kind: normative-requirement
+summary: If exactly one Explicit PvD sets the L-flag, hosts MUST associate DHCPv4 information with that PvD. If multiple Explicit PvDs set the L-flag (a misconfiguration), hosts SHOULD NOT associate the DHCPv4 information with any Explicit PvD. If no Explicit PvD claims association, DHCPv4 configuration MUST be associated with all Implicit PvDs on that interface.
+section: 3.4.2
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

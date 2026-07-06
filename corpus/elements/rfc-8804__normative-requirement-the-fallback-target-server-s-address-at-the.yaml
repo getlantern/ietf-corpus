@@ -1,0 +1,10 @@
+document: rfc-8804
+kind: normative-requirement
+summary: The fallback target server's address at the uCDN MUST be different from the original uCDN address from which the client was redirected to the dCDN, to avoid redirect loops. The uCDN MUST avoid further redirection when receiving client requests at the fallback target.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - http
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
