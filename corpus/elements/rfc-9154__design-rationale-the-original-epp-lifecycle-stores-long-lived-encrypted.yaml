@@ -1,0 +1,9 @@
+document: rfc-9154
+kind: design-rationale
+summary: The original EPP lifecycle stores long-lived encrypted (not hashed) passwords, presenting a significant latent risk of password compromise inconsistent with current best practices. The new model avoids long-term password storage entirely, requiring only hashed (non-retrievable) storage and limiting the authorization information to the period when a transfer is actively in process.
+section: "1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

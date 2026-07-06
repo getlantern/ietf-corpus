@@ -1,0 +1,8 @@
+document: rfc-9149
+kind: design-rationale
+summary: The extension uses separate new_session_count and resumption_count fields because clients may need different numbers of tickets for new versus resumed connections — e.g., a resumption_count of 1 suffices when the cache is primed, but more tickets are needed after a forced full handshake that invalidates all prior tickets.
+section: "3"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

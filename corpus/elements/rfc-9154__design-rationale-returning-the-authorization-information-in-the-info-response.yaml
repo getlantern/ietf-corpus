@@ -1,0 +1,9 @@
+document: rfc-9154
+kind: design-rationale
+summary: Returning the authorization information in the info response is not supported because the value is stored as a one-way hash and cannot be reversed. An empty value in the info response is used to indicate 'set' state to the sponsoring registrar without exposing the actual value.
+section: "5.3"
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

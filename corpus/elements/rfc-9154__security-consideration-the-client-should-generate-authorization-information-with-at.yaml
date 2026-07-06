@@ -1,0 +1,9 @@
+document: rfc-9154
+kind: security-consideration
+summary: The client SHOULD generate authorization information with at least 128 bits of entropy, and the registrar SHOULD only set the authorization information during the transfer process (setting at start, unsetting at end). The registry MUST store authorization information using a one-way hash of at least 256 bits with a per-value random salt of at least 128 bits, and MUST communicate it only over encrypted channels. Plain-text authorization information MUST NOT appear in logs.
+section: "8"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

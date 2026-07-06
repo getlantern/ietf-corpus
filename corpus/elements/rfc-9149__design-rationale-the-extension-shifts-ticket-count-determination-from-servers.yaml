@@ -1,0 +1,8 @@
+document: rfc-9149
+kind: design-rationale
+summary: The extension shifts ticket count determination from servers (which currently use hard-coded or application-specific logic) to clients, who have direct knowledge of their concurrency needs (e.g., parallel HTTP connections, Happy Eyeballs racing), thereby reducing ticket waste and avoiding reuse.
+section: "1"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
