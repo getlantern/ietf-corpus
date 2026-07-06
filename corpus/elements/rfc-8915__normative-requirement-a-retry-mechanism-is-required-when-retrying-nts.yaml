@@ -1,0 +1,9 @@
+document: rfc-8915
+kind: normative-requirement
+summary: A retry mechanism is REQUIRED when retrying NTS-KE due to errors. Clients SHOULD use exponential backoff with initial interval 10 seconds, maximum 5 days, base 1.5. Clients MUST NOT reset the retry interval until a successful NTS-KE followed by successful Next Protocol use.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

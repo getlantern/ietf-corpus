@@ -1,0 +1,8 @@
+document: rfc-8917
+kind: design-rationale
+summary: The NENA i3 architecture requires the mapping (ECRF) and validation (LVF) functions to be separable because the mapping service is used in real time during emergency call routing with high availability requirements, while validation is used in advance during data provisioning and can tolerate lower availability. A separate tag allows operators to deploy these on independent server clusters.
+section: "2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8915
+kind: security-consideration
+summary: Implementations SHOULD NOT revert from NTS-protected to unprotected NTP without explicit user action. A man-in-the-middle can force NTS-KE failures or send faked NTS NAK KoD replies to trigger renegotiation, potentially as the first step of a more advanced attack.
+section: "8.7"
+topics:
+    - security
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

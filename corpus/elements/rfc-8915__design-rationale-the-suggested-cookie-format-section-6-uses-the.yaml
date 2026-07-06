@@ -1,0 +1,9 @@
+document: rfc-8915
+kind: design-rationale
+summary: The suggested cookie format (Section 6) uses the server's own AEAD key to encrypt the C2S key, S2C key, and negotiated AEAD algorithm, analogous to TLS session tickets (RFC 5077). Periodic key rotation with a deterministic HKDF ratchet allows key synchronization across NTS-KE/NTP clusters without central key-management infrastructure.
+section: "6"
+topics:
+    - ntp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-8918
+kind: design-rationale
+summary: PDU validation must be independent from TLV validation because the unit of flooding for the IS-IS Update process is the entire LSP. Rejecting an LSP due to an invalid TLV would cause inconsistent LSP Databases across nodes, compromising correct protocol operation.
+section: "4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

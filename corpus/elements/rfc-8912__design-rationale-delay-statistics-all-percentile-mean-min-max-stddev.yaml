@@ -1,0 +1,8 @@
+document: rfc-8912
+kind: design-rationale
+summary: Delay statistics (all percentile, mean, min, max, StdDev outputs) are computed on the conditional distribution, excluding packets with undefined delay (i.e., those arriving after Tmax). This approach, backed by RFC 6703 Section 5, avoids conflating loss with delay and provides interpretable statistics over only successfully delivered packets.
+section: 7.4.2.1
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

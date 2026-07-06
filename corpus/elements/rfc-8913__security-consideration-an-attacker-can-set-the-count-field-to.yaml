@@ -1,0 +1,9 @@
+document: rfc-8913
+kind: security-consideration
+summary: An attacker can set the Count field to its maximum (2^32) in a Server Greeting to cause the targeted system to stall for a significant period generating keys (DoS). Implementations SHOULD limit Count via max-count-exponent with a default of 15 (32768), and operators must size this parameter against their processing capacity.
+section: "7"
+topics:
+    - measurement
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8915
+kind: security-consideration
+summary: A client without a synchronized clock cannot reliably verify TLS certificate validity periods. Mitigations include checking ntp_adjtime() return codes, persisting the last-known time, requiring that NTP time replies fall within the certificate validity period, and using multiple time sources.
+section: "8.5"
+topics:
+    - security
+    - tls
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

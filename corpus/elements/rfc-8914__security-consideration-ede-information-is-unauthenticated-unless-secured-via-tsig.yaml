@@ -1,0 +1,9 @@
+document: rfc-8914
+kind: security-consideration
+summary: EDE information is unauthenticated unless secured via TSIG, SIG(0), DNS-over-DTLS, or DoH. An attacker could insert false extended error responses; therefore EDE content must be treated only as diagnostic information and MUST NOT alter DNS protocol processing.
+section: "6"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

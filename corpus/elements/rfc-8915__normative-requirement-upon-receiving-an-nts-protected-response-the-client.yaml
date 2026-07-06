@@ -1,0 +1,10 @@
+document: rfc-8915
+kind: normative-requirement
+summary: Upon receiving an NTS-protected response, the client MUST verify that the Unique Identifier matches an outstanding request and that the packet authenticates under the S2C key. If either check fails, or if the response is unprotected, the packet MUST be discarded.
+section: "5.7"
+rfc2119_level: MUST
+topics:
+    - ntp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

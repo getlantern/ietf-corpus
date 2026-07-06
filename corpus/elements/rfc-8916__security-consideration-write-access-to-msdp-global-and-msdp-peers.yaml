@@ -1,0 +1,11 @@
+document: rfc-8916
+kind: security-consideration
+summary: 'Write access to msdp:global and msdp:peers subtrees must be protected: modifying global config can delete default peers or rebuild connections with unexpected SA filtering; modifying peer config allows unexpected peer establishment and SA learning/advertisement. The ''key'' field writeability must be strictly controlled as misoperation breaks connections and deletes associated SA caches.'
+section: "5"
+topics:
+    - security
+    - yang
+    - multicast
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

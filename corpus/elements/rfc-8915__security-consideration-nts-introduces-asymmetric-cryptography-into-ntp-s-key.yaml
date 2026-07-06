@@ -1,0 +1,9 @@
+document: rfc-8915
+kind: security-consideration
+summary: NTS introduces asymmetric cryptography into NTP's key establishment phase, making NTS-KE servers susceptible to DDoS. Because NTS-KE and NTP server functions can be separated, a successful DDoS on the NTS-KE server will not affect clients already holding valid cookies and AEAD keys.
+section: "8.3"
+topics:
+    - security
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

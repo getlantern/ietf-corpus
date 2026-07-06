@@ -1,0 +1,10 @@
+document: rfc-8912
+kind: normative-requirement
+summary: For DNS metrics, the DNS Message ID Number MUST be retained at the Src and included with each response packet to disambiguate packet reordering. If a DNS Response does not arrive within Tmax, RTDNS is undefined and RLDNS=1; the Message ID SHALL be used to disambiguate successive identical queries.
+section: 6.3.1
+rfc2119_level: MUST
+topics:
+    - measurement
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

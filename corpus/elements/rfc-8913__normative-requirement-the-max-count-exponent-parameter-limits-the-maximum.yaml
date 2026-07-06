@@ -1,0 +1,10 @@
+document: rfc-8913
+kind: normative-requirement
+summary: The max-count-exponent parameter limits the maximum Count value a Control-Client will accept. A Control-Client MUST close the control connection if the Server Greeting contains a Count exceeding this maximum, defending against DoS attacks that stall key generation. The default max-count-exponent SHOULD be 15 (= 32768).
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - measurement
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

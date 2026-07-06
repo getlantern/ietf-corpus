@@ -1,0 +1,10 @@
+document: rfc-8915
+kind: security-consideration
+summary: Packet delay attacks cannot be mitigated cryptographically because NTS authenticates content but not timing. An on-path adversary can introduce error up to MAXDIST/2 (typically 0.5 seconds). Using multiple time sources or multiple network paths reduces exposure.
+section: "8.6"
+topics:
+    - security
+    - ntp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

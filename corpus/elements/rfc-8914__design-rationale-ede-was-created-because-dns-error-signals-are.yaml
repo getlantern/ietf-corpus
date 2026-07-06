@@ -1,0 +1,9 @@
+document: rfc-8914
+kind: design-rationale
+summary: 'EDE was created because DNS error signals are very limited: SERVFAIL is overloaded to signal many error types, causing stub resolvers that receive a DNSSEC validation failure to silently retry with a non-validating resolver, bypassing DNSSEC protections entirely (~11% of clients exhibit this behavior).'
+section: "1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
