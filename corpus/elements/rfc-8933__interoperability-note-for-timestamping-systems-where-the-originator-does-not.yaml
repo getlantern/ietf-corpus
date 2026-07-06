@@ -1,0 +1,10 @@
+document: rfc-8933
+kind: interoperability-note
+summary: For timestamping systems where the originator does not share message content with the TSA, the originator sends a MessageImprint with a digest algorithm identifier and digest value. The TSA uses the originator-provided digest, so the TSA's own digest algorithm must match the MessageImprint algorithm for new TimeStampTokens, but legacy tokens are not invalidated.
+section: "3.5"
+topics:
+    - crypto
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8934
+kind: normative-requirement
+summary: The PCEP extensions for scheduling MUST NOT be used if one or both PCEP speakers have not set the corresponding capability bits. If a speaker supports the extensions but did not advertise, upon receipt of LSP object with scheduled TLV it MUST generate PCErr with Error-Type=19, Error-value=15.
+section: "6.6"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

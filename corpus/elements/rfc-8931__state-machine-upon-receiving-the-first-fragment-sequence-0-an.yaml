@@ -1,0 +1,9 @@
+document: rfc-8931
+kind: state-machine
+summary: Upon receiving the first fragment (Sequence=0), an intermediate router creates a VRB and forward LSP indexed by (incoming interface, previous-hop L2 address, Datagram_Tag), plus a reverse LSP for RFRAG-ACK return. Subsequent fragments are label-switched along this LSP. On FULL bitmap receipt, the router arms a short timer and destroys the VRB and LSP states on expiry.
+section: "6.1"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8933
+kind: design-rationale
+summary: When a digest algorithm produces a result larger than needed by the signature algorithm, the digest is reduced (e.g., by truncation). This means an attacker only needs to find a collision with the reduced digest value. For example, SHA-512 with ECDSA P-256 requires only a collision in the first half of the digest.
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

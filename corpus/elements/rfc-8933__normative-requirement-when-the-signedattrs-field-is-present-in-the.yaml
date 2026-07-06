@@ -1,0 +1,10 @@
+document: rfc-8933
+kind: normative-requirement
+summary: When the signedAttrs field is present in the SignerInfo, the same digest algorithm MUST be used to compute both the digest of the SignedData encapContentInfo eContent (carried in the message-digest attribute) and the digest of the DER-encoded signedAttrs passed to the signature algorithm.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

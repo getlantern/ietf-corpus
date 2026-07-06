@@ -1,0 +1,8 @@
+document: rfc-8931
+kind: wire-format
+summary: 'The RFRAG header is 4 bytes long: 7-bit dispatch (1110100), 1-bit E flag, 8-bit Datagram_Tag, 1-bit X (Ack-Request), 5-bit Sequence, 10-bit Fragment_Size, and 16-bit Fragment_Offset. Fragment_Offset encodes Datagram_Size when Sequence=0 and byte offset otherwise; Fragment_Offset=0 signals an abort condition.'
+section: "5.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

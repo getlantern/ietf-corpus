@@ -1,0 +1,11 @@
+document: rfc-8931
+kind: normative-requirement
+summary: The reassembling endpoint of a fragment with the 'E' (ECN) flag set MUST echo that information at most once by setting the 'E' flag in the next RFRAG-ACK. Upon receiving an 'E' flag, the window SHOULD be reduced at least by 1 and at most to 1.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - ip
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

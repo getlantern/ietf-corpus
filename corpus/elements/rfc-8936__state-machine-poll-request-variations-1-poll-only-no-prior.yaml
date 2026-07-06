@@ -1,0 +1,8 @@
+document: rfc-8936
+kind: state-machine
+summary: 'Poll request variations: (1) Poll-Only — no prior SETs to acknowledge, omits ''ack'' and ''setErrs''; (2) Acknowledge-Only — sets ''maxEvents'' to 0 with ''ack''/''setErrs'' populated, no new SETs returned; (3) Combined Acknowledge and Poll — populates ''ack''/''setErrs'' while waiting for next batch of SETs.'
+section: "2.4"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

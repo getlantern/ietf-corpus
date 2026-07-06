@@ -1,0 +1,8 @@
+document: rfc-8941
+kind: interoperability-note
+summary: Strings split across multiple HTTP field lines will have unpredictable results because concatenation inserts one or more commas (with optional whitespace) into the string. Tokens, Integers, Decimals, and Byte Sequences cannot be split across field lines because the inserted commas will cause parsing to fail.
+section: "4.2"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

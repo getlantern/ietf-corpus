@@ -1,0 +1,9 @@
+document: rfc-8940
+kind: design-rationale
+summary: The original RFC 5247 Appendix A defined Session-Id for EAP-AKA and EAP-SIM using parameters (RAND, AUTN, NONCE_MT) only available in full authentication, making it unusable for fast reconnect. NONCE_S corresponds to RAND and MAC in EAP-Request/AKA-Reauthentication corresponds to AUTN, making NONCE_S || MAC the natural analog for the fast reconnect case.
+section: "2.3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

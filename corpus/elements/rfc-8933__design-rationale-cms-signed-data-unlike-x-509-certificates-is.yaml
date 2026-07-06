@@ -1,0 +1,9 @@
+document: rfc-8933
+kind: design-rationale
+summary: CMS signed-data, unlike X.509 certificates, is vulnerable to algorithm substitution attacks because it does not cryptographically bind the algorithm identifier. An attacker can change the algorithm identifier or its parameters to alter the verification process. This document addresses this by requiring consistent use of the same hash algorithm and recommending the CMSAlgorithmProtection attribute.
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

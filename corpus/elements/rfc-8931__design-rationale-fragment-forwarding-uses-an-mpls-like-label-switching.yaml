@@ -1,0 +1,10 @@
+document: rfc-8931
+kind: design-rationale
+summary: 'Fragment forwarding uses an MPLS-like label-switching model derived from RFC 8930: the Datagram_Tag serves as the label, swapped at each hop as the source L2 address changes. This avoids per-hop datagram reassembly, which RFC 4944''s original store-and-forward design required and which caused excessive memory, latency, and battery drain in multi-hop LLNs.'
+section: "2.2"
+topics:
+    - ip
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

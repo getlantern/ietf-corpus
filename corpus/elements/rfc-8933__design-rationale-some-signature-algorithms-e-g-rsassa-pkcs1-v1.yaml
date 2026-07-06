@@ -1,0 +1,10 @@
+document: rfc-8933
+kind: design-rationale
+summary: Some signature algorithms (e.g., RSASSA-PKCS1-v1_5) internally protect the digest algorithm identifier, while others (e.g., RSASSA-PSS) do not. Because newer algorithms may lack this 'firewall,' signers need an explicit mechanism — such as CMSAlgorithmProtection or certificate extensions — to signal which digest algorithms are permitted for signature verification.
+section: "6"
+topics:
+    - crypto
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

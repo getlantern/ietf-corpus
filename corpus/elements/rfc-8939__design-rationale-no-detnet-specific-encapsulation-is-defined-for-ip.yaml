@@ -1,0 +1,9 @@
+document: rfc-8939
+kind: design-rationale
+summary: No DetNet-specific encapsulation is defined for IP flows; instead, existing IP-layer and higher-layer protocol header information is reused for flow identification. This limits the data plane to forwarding sub-layer functions only, as the service sub-layer (PREOF) requires additional header fields not present in plain IP.
+section: "1"
+topics:
+    - ip
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

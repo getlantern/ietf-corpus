@@ -1,0 +1,9 @@
+document: rfc-8931
+kind: security-consideration
+summary: The VRB state required at intermediate routers exposes them to DoS attacks, as an attacker can exhaust router state by initiating many fragmented flows. The 8-bit Datagram_Tag wraps faster than RFC 4944's tag, but the ACK mechanism enables rapid state cleanup once a datagram is fully transmitted or aborted, mitigating lingering state exhaustion.
+section: "8"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

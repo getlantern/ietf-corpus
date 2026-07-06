@@ -1,0 +1,9 @@
+document: rfc-8931
+kind: security-consideration
+summary: An on-path attacker can prematurely end the transmission of a datagram by sending a forged RFRAG-ACK to the fragmenting endpoint, or cause extra fragment retransmissions by resetting bits in the RFRAG-ACK Bitmap, or force unnecessary acknowledgments by setting the Ack-Request bit in forwarded fragments. Link-layer security is required to mitigate these threats.
+section: "8"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

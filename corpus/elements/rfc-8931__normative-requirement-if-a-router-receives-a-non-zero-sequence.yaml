@@ -1,0 +1,10 @@
+document: rfc-8931
+kind: normative-requirement
+summary: If a router receives a non-zero Sequence fragment and the VRB lookup fails, it MUST NOT forward the fragment; instead it builds a NULL bitmap RFRAG-ACK abort and sends it back to the previous hop. If the reverse LSP for an RFRAG-ACK is not found, the router MUST silently drop the RFRAG-ACK.
+section: 6.1.2
+rfc2119_level: MUST
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8934
+kind: security-consideration
+summary: Scheduling information in PCEP messages can reveal sensitive details about network operations, and a single PCEP message can instruct a PCC to set up and tear down an LSP repeatedly (e.g., every second), potentially causing significant network impact. Deployments SHOULD use PCEP security mechanisms like TCP-AO (RFC 5925) or PCEPS (RFC 8253), and PCCs may need to apply rate limiting to scheduled LSP processing.
+section: "7"
+topics:
+    - security
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

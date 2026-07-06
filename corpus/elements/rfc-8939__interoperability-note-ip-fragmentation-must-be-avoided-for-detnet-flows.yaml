@@ -1,0 +1,9 @@
+document: rfc-8939
+kind: interoperability-note
+summary: IP fragmentation must be avoided for DetNet flows because fragments do not include transport headers or port information, making full 6-tuple flow identification impossible on fragments. Applications and end systems should use Path MTU Discovery or Controller Plane guidance to determine the maximum packet size.
+section: "4.1"
+topics:
+    - ip
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

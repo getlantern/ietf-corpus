@@ -1,0 +1,10 @@
+document: rfc-8934
+kind: normative-requirement
+summary: The SCHED-LSP-ATTRIBUTE TLV MUST NOT be included unless both PCEP peers have set the B (LSP-SCHEDULING-CAPABILITY) bit to 1. If received when the B bit was not set, the peer MUST generate a PCErr with Error-Type=19 and Error-value=15.
+section: 5.2.1
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

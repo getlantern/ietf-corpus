@@ -1,0 +1,9 @@
+document: rfc-8946
+kind: design-rationale
+summary: The "div" signer must have authority over the "div" claim (the previous destination) rather than the "orig" field. This is because the "div" value is the URI that caused the call to be routed to the retargeting entity, so the retargeting entity would already hold appropriate private keying material for that identity in ordinary operations.
+section: "4.1"
+topics:
+    - sip
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

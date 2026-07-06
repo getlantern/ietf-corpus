@@ -1,0 +1,8 @@
+document: rfc-8931
+kind: state-machine
+summary: An abort condition is signaled on the forward path by a pseudo-fragment with Fragment_Offset=0. Each intermediate router forwards the abort along the VRB and destroys its state. The reassembling endpoint cleans up resources and, if an ACK was requested, responds with a NULL bitmap RFRAG-ACK that flows back to the fragmenting endpoint cleaning up all intermediate state.
+section: "6.3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

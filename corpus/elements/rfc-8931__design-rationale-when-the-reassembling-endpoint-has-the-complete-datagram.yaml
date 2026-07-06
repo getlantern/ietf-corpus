@@ -1,0 +1,8 @@
+document: rfc-8931
+kind: design-rationale
+summary: When the reassembling endpoint has the complete datagram, it sends an RFRAG-ACK with a FULL bitmap (all bits set) rather than a partial bitmap reflecting only received fragments. This allows intermediate nodes to unambiguously recognize datagram completion and clean up VRB state, even when fragment splitting and reassignment of sequence numbers occurred.
+section: "6.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

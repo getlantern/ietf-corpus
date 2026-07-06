@@ -1,0 +1,8 @@
+document: rfc-8931
+kind: design-rationale
+summary: The Sequence number and Fragment_Offset are kept as separate independent fields rather than deriving offset as Sequence × Fragment_Size. This design enables retrying a long fragment (e.g., Sequence 5) as multiple smaller fragments (e.g., Sequences 13 and 14) when the path MTU decreases, without disrupting the reassembly buffer layout.
+section: "5.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

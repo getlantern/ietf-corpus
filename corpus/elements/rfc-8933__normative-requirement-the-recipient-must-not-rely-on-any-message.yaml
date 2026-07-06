@@ -1,0 +1,10 @@
+document: rfc-8933
+kind: normative-requirement
+summary: The recipient MUST NOT rely on any message digest values computed by the originator. If the SignedData signerInfo includes the signedAttrs field, the content message digest MUST be calculated using the same digest algorithm to compute both the digest of the encapContentInfo eContent OCTET STRING and the message-digest attribute.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

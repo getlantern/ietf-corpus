@@ -1,0 +1,10 @@
+document: rfc-8931
+kind: normative-requirement
+summary: If an intermediate node modifies the size of the first fragment (e.g., consuming a Routing Header), it MUST adapt the Datagram_Size (Fragment_Size field) and MUST save the difference in the VRB to add it as a correction to Fragment_Offset of all subsequent forwarded fragments.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

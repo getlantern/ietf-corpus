@@ -1,0 +1,8 @@
+document: rfc-8931
+kind: wire-format
+summary: 'The RFRAG-ACK header is 6 bytes: 7-bit dispatch (1110101), 1-bit E (ECN echo) flag, 8-bit Datagram_Tag, and a 32-bit RFRAG Acknowledgment Bitmap where bit offset x=1 means fragment with Sequence x was received. A NULL bitmap (all zeros) signals abort; a FULL bitmap (all ones) signals datagram fully received.'
+section: "5.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

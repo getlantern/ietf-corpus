@@ -1,0 +1,8 @@
+document: rfc-8931
+kind: design-rationale
+summary: Refragmentation at intermediate nodes (allowed by RFC 8930) is explicitly prohibited here because fragments are recovered end-to-end based on their Sequence number; splitting a fragment mid-path would corrupt the sequence-to-offset mapping. Instead, the fragmenting endpoint is required to leave slack in the first fragment to absorb expansion at intermediate hops.
+section: "4.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

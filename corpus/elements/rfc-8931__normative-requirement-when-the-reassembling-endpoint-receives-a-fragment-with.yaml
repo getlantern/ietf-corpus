@@ -1,0 +1,9 @@
+document: rfc-8931
+kind: normative-requirement
+summary: When the reassembling endpoint receives a fragment with the Ack-Request ('X') flag set, it MUST send an RFRAG-ACK back to the originator to confirm receipt of all fragments received so far. The Ack-Request MUST be set on the last fragment if the fragmenting endpoint wishes to perform ARQ for the datagram.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

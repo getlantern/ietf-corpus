@@ -1,0 +1,10 @@
+document: rfc-8935
+kind: normative-requirement
+summary: When a SET parsing, validation, or authentication error is detected, the SET Recipient SHALL respond with HTTP 400 (Bad Request). The Content-Type MUST be 'application/json' and the body MUST be a UTF-8 JSON object containing 'err' (error code) and 'description' fields.
+section: "2.3"
+rfc2119_level: REQUIRED
+topics:
+    - http
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

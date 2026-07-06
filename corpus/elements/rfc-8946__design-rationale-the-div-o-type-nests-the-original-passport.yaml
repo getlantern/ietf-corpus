@@ -1,0 +1,9 @@
+document: rfc-8946
+kind: design-rationale
+summary: The "div-o" type nests the original PASSporT in an "opt" field rather than carrying it in a parallel Identity header, making it suitable for out-of-band STIR and non-SIP environments where multiple Identity header fields cannot be conveyed. Verification of "div-o" is simpler because chains are self-contained rather than requiring correlation of separate header fields.
+section: "5"
+topics:
+    - sip
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

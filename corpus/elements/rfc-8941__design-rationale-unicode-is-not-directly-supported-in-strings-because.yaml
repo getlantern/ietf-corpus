@@ -1,0 +1,8 @@
+document: rfc-8941
+kind: design-rationale
+summary: Unicode is not directly supported in Strings because it causes interoperability issues (e.g., in comparison) and most HTTP field values do not require it. When non-ASCII content is needed, a Byte Sequence with an explicit character encoding (preferably UTF-8) should be used instead.
+section: 3.3.3
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

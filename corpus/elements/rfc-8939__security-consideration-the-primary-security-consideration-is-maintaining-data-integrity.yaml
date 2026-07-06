@@ -1,0 +1,10 @@
+document: rfc-8939
+kind: security-consideration
+summary: The primary security consideration is maintaining data integrity and DetNet service delivery. Since no DetNet-specific fields are added, integrity and confidentiality can be protected using underlying mechanisms such as IPsec for IP flows or MACsec for Layer 2. Per-flow identification at the Controller Plane may expose additional information about data flows to Controller Plane attackers.
+section: "7"
+topics:
+    - security
+    - ip
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8935
+kind: security-consideration
+summary: When a SET is forwarded or retrieved from storage, TLS and HTTP authentication context used at delivery time is typically unavailable. If authenticity validation outside the delivery context is required, the SET Recipient SHOULD ensure SETs are signed per RFC 7515.
+section: "5.5"
+topics:
+    - security
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
