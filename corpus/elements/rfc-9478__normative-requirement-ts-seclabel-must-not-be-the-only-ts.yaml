@@ -1,0 +1,10 @@
+document: rfc-9478
+kind: normative-requirement
+summary: TS_SECLABEL MUST NOT be the only TS Type present in a TS payload; it MUST be accompanied by an IP address Traffic Selector Type (TS_IPV4_ADDR_RANGE and/or TS_IPV6_ADDR_RANGE). If a TS payload is received with only TS_SECLABEL TS Types, the exchange MUST be aborted with a TS_UNACCEPTABLE Error Notify message.
+section: "1.3"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9478
+kind: normative-requirement
+summary: If the TSi payload contains a TS_SECLABEL, the responder MUST create each TS response for the other TS Types using its normal rules and then add exactly one TS_SECLABEL to the TS payload(s). If this is not possible, it MUST return a TS_UNACCEPTABLE Error Notify payload.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

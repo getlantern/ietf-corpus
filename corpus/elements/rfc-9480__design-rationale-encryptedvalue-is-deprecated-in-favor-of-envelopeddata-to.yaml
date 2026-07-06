@@ -1,0 +1,10 @@
+document: rfc-9480
+kind: design-rationale
+summary: EncryptedValue is deprecated in favor of EnvelopedData to improve crypto agility, consistent with RFC 4211 Section 2.1 point 9. The EncryptedKey CHOICE wrapper is bits-on-the-wire compatible with the old EncryptedValue syntax when the untagged default choice is used, enabling backward-compatible migration.
+section: "2.7"
+topics:
+    - crypto
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

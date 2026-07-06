@@ -1,0 +1,10 @@
+document: rfc-9480
+kind: wire-format
+summary: CertStatus gains an optional hashAlg field ([0] AlgorithmIdentifier) for explicitly specifying the digest algorithm when the certificate's signatureAlgorithm OID does not indicate a hash (e.g., EdDSA). If hashAlg is present, the certConf message header MUST use cmp2021(3).
+section: "2.10"
+topics:
+    - crypto
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9478
+kind: security-consideration
+summary: A packet matching an SPD entry for all components except the Security Label is treated as 'not matching'. If no other SPD entries match, mislabeled traffic might be transmitted in the clear. The specification presumes that other MAC methods prevent mislabeled traffic from reaching the IPsec subsystem, or that the IPsec subsystem installs a REJECT/DISCARD rule to prevent unlabeled traffic from being transmitted without IPsec protection.
+section: "4"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

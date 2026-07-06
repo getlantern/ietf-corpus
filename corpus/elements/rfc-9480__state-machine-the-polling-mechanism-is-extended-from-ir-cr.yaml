@@ -1,0 +1,9 @@
+document: rfc-9480
+kind: state-machine
+summary: The polling mechanism is extended from ir/cr/kur to all PKI message types. An EE enters the Polling state upon receiving any response with PKIStatus 'waiting' (including error messages with certReqId -1). The EE sends pollReq, and the CA/RA returns pollRep (with checkAfter seconds) or the final response.
+section: "2.19"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

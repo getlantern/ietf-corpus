@@ -1,0 +1,11 @@
+document: rfc-9480
+kind: normative-requirement
+summary: A trust anchor provider MUST NOT include to-be-trusted CA certificates in a CMP message unless the deployment ensures adequacy. Whenever an EE receives a CA certificate as a trust anchor, it MUST authenticate the message sender using existing trust anchor information and MUST verify the sender is authorized to provide trust anchors.
+section: "2.24"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

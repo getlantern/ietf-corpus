@@ -1,0 +1,10 @@
+document: rfc-9478
+kind: normative-requirement
+summary: If the Security Label TS Type is optional and the responder did not include TS_SECLABEL in its response, the initiator installs the Child SA without a Security Label. If the initiator required TS_SECLABEL, it MUST NOT install the Child SA and MUST send a Delete notification so the responder can uninstall its Child SA.
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

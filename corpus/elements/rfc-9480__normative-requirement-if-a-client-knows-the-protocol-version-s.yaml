@@ -1,0 +1,10 @@
+document: rfc-9480
+kind: normative-requirement
+summary: If a client knows the protocol version(s) supported by the server, it MUST send a PKIMessage with the highest version supported by both parties. If the server version is unknown, the client MUST send using its highest supported version, except that cmp2021 SHOULD only be used if cmp2021 syntax (EnvelopedData or hashAlg) is actually needed.
+section: "2.20"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

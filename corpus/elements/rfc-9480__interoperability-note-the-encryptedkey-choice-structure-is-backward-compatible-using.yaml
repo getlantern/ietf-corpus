@@ -1,0 +1,10 @@
+document: rfc-9480
+kind: interoperability-note
+summary: 'The EncryptedKey CHOICE structure is backward compatible: using the untagged default choice EncryptedValue is bits-on-the-wire identical to the old CMP v2 syntax. CMP v3 (cmp2021) MUST use the EnvelopedData choice; CMP v2 implementations using thisMessage for POPOPrivKey MUST encode its contents as EncryptedValue wrapped in a BIT STRING.'
+section: "2.27"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

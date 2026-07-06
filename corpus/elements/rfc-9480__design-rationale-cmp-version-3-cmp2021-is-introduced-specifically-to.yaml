@@ -1,0 +1,10 @@
+document: rfc-9480
+kind: design-rationale
+summary: CMP version 3 (cmp2021) is introduced specifically to signal support for EnvelopedData instead of EncryptedValue, and to signal use of an explicit hash AlgorithmIdentifier in certConf messages. Using cmp2000 as the default pvno avoids extra version-negotiation round trips and maintains compatibility with existing implementations.
+section: "2.20"
+topics:
+    - crypto
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9480
+kind: normative-requirement
+summary: The hashAlg field in CertStatus SHOULD be used only when the signatureAlgorithm of the confirmed certificate does not specify a hash algorithm. In such cases (e.g., EdDSA), hashAlg MUST be used to specify the hash algorithm for computing certHash.
+section: "2.10"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
