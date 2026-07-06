@@ -1,0 +1,9 @@
+document: rfc-9202
+kind: security-consideration
+summary: Session resumption should only be used with reasonably short-lived PoP keys; long-lived keying material combined with resumption can undermine forward secrecy and allows clients to resume without re-proving PoP key possession. Servers wanting to rekey SHOULD periodically force a full handshake.
+section: "7.1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

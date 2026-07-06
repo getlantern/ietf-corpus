@@ -1,0 +1,9 @@
+document: rfc-9198
+kind: design-rationale
+summary: Maintaining a constant ICMP checksum in IPv4 is the most challenging aspect of flow-consistent probing because ICMP sequence number and identifier fields change between probes. The solution is to use arbitrary bytes in the ICMP data field to offset these changes and hold the checksum constant.
+section: "4.1"
+topics:
+    - measurement
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

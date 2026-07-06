@@ -1,0 +1,8 @@
+document: rfc-9198
+kind: design-rationale
+summary: RTD statistics use quartiles (min, Q1, Q2, Q3, max) rather than mean/variance because network traffic has a self-similar nature causing spiky queuing behavior; quartiles provide a nonparametric representation and the P² algorithm enables on-the-fly computation without storing the full dataset.
+section: "6"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

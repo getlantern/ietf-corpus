@@ -1,0 +1,9 @@
+document: rfc-9202
+kind: security-consideration
+summary: Constrained devices using DTLS are vulnerable to DoS attacks during the handshake and at the unprotected authz-info endpoint. Adversaries can fill up the resource server's storage with valid intercepted access tokens; the resource server should set a time boundary to delete unused tokens.
+section: "7"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

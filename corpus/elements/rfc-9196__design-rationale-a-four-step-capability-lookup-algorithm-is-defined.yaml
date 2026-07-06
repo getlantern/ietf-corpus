@@ -1,0 +1,9 @@
+document: rfc-9196
+kind: design-rationale
+summary: 'A four-step capability lookup algorithm is defined: (1) find the datastore entry; (2) scan per-node-capabilities in order for the first entry matching the node and specifying the capability; (3) fall back to the system-level capability; (4) if still not found, the system behavior is unspecified. This hierarchy allows per-node values to override datastore-level values, which override system-level values.'
+section: "4.2"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

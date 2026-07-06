@@ -1,0 +1,10 @@
+document: rfc-9200
+kind: normative-requirement
+summary: A client using the authz-info method MUST POST the access token to the RS's authz-info endpoint. The RS MUST verify the token before storing it; if valid, the RS MUST respond with CoAP 2.01 (Created). The RS MUST be prepared to store at least one access token for future use.
+section: 5.10.1
+rfc2119_level: MUST
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9200
+kind: design-rationale
+summary: Proof-of-possession (PoP) tokens are the default instead of bearer tokens because IoT tokens may traverse untrusted networks or be stored on constrained devices. PoP requires the client to demonstrate possession of a key bound to the token, providing security even if the token is intercepted.
+section: "3.1"
+topics:
+    - oauth
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

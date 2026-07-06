@@ -1,0 +1,10 @@
+document: rfc-9201
+kind: design-rationale
+summary: The restriction that an RS MUST NOT hold several asymmetric key pairs for the same algorithm exists because the RS has no way of determining which key to use before the client's identity is established, meaning authentication attempts could randomly fail based on which key the RS selects.
+section: "7"
+topics:
+    - oauth
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

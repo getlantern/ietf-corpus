@@ -1,0 +1,10 @@
+document: rfc-9200
+kind: normative-requirement
+summary: 'When CoAP is used for the token or introspection endpoints, the sender MUST encode request parameters as a CBOR map submitted as the payload of a POST request, rather than using URI-query parameters. Profiles using CBOR at the outermost layer MUST use Content-Format ''application/ace+cbor'' (CoAP ID: 19).'
+section: "5"
+rfc2119_level: REQUIRED
+topics:
+    - oauth
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

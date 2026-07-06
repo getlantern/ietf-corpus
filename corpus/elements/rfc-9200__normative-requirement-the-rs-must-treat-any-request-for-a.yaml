@@ -1,0 +1,10 @@
+document: rfc-9200
+kind: normative-requirement
+summary: 'The RS MUST treat any request for a protected resource as an Unauthorized Resource Request when: the request arrives on an unsecured channel, the RS has no valid access token for the sender, or the token does not authorize the requested action on the resource. Such requests MUST be denied with an ''unauthorized_client'' error.'
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

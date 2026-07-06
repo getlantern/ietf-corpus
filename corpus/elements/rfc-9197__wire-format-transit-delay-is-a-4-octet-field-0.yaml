@@ -1,0 +1,8 @@
+document: rfc-9197
+kind: wire-format
+summary: Transit delay is a 4-octet field (0 to 2^31-1 nanoseconds). When transit delay exceeds 2^31-1 ns, the top 'O' bit is set and value is 0x80000000 to indicate overflow; 0xFFFFFFFF indicates not populated.
+section: 4.4.2.5
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

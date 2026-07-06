@@ -1,0 +1,10 @@
+document: rfc-9202
+kind: security-consideration
+summary: Multiple access tokens for a single client should be avoided. Dynamic update via access token upload can be compromised by packet delay or reordering, making it impossible to guarantee that reduced permissions take effect before the original token expires.
+section: "7.2"
+topics:
+    - tls
+    - security
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

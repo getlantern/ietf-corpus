@@ -1,0 +1,8 @@
+document: rfc-9197
+kind: design-rationale
+summary: Two separate trace option types (Pre-allocated and Incremental) are defined to optimize for different hardware and software forwarding implementations. Pre-allocated suits software forwarders that can index into a fixed array; Incremental suits hardware that benefits from pushing data without reading the full array and allows packets as long as MTU permits.
+section: "4.4"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

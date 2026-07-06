@@ -1,0 +1,10 @@
+document: rfc-9200
+kind: normative-requirement
+summary: A client receiving a cnonce in AS Request Creation Hints MUST include it in the access token request to the AS. The AS MUST include the cnonce value in the issued access token. An RS using the client-nonce mechanism MUST verify the token contains a fresh cnonce claim; otherwise it MUST discard the token and respond with 4.01 (Unauthorized).
+section: 5.3.1
+rfc2119_level: MUST
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

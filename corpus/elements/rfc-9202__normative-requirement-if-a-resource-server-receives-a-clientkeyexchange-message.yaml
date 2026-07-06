@@ -1,0 +1,12 @@
+document: rfc-9202
+kind: normative-requirement
+summary: If a resource server receives a ClientKeyExchange message with a psk_identity length greater than zero, it MUST parse the contents as a CBOR data structure; if it does not yield a valid access token, the server aborts the DTLS handshake with an illegal_parameter alert.
+section: 3.3.2
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+    - oauth
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
