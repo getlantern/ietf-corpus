@@ -1,0 +1,11 @@
+document: rfc-9298
+kind: normative-requirement
+summary: If 'target_host' is a DNS name, the UDP proxy MUST perform DNS resolution before replying to the HTTP request. If errors occur, the UDP proxy MUST reject the request and SHOULD send details using an appropriate Proxy-Status header field.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - udp
+    - dns
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

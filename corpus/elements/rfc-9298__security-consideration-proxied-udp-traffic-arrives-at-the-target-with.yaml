@@ -1,0 +1,10 @@
+document: rfc-9298
+kind: security-consideration
+summary: Proxied UDP traffic arrives at the target with the UDP proxy's source IP address. Software performing access control based on source IP (e.g., allowing unauthenticated configuration from 127.0.0.1) could be exploited. UDP proxies should disallow requests to localhost, link-local, multicast, and broadcast addresses.
+section: "7"
+topics:
+    - security
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

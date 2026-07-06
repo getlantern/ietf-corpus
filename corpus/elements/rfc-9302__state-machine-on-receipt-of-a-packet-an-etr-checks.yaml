@@ -1,0 +1,9 @@
+document: rfc-9302
+kind: state-machine
+summary: 'On receipt of a packet, an ETR checks the Source Map-Version against its EID-to-RLOC Map-Cache (if an entry exists): (1) equal — no action; (2) newer than cache — ETR has stale mapping, MUST send a Map-Request; (3) older than cache — packet SHOULD be silently dropped. If no cache entry exists, the Source Map-Version MUST be ignored.'
+section: "7.2"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

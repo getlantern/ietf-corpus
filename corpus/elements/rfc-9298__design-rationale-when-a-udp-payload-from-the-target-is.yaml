@@ -1,0 +1,10 @@
+document: rfc-9298
+kind: design-rationale
+summary: When a UDP payload from the target is too large to fit in a QUIC DATAGRAM frame, the UDP proxy SHOULD NOT send it in a DATAGRAM capsule because doing so defeats the end-to-end unreliability that DPLPMTUD depends on. Instead, the proxy SHOULD drop the payload and send an ICMP Packet Too Big message.
+section: "6.1"
+topics:
+    - udp
+    - quic
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

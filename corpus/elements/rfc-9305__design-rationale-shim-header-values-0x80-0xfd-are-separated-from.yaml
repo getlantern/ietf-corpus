@@ -1,0 +1,8 @@
+document: rfc-9305
+kind: design-rationale
+summary: Shim header values (0x80-0xFD) are separated from direct payload values (0x00-0x7F) to allow xTR implementations to process known shim headers in the fast path (ASIC) while punting unknown GPE features to the slow path, enabling incremental hardware deployment.
+section: "3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

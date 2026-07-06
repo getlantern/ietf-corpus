@@ -1,0 +1,10 @@
+document: rfc-9298
+kind: normative-requirement
+summary: The UDP proxy MUST keep the socket open while the request stream is open. If the socket becomes unusable (e.g., ICMP Destination Unreachable), it MUST close the request stream. Proxies that close sockets due to inactivity MUST also close the request stream and SHOULD NOT use an inactivity timeout lower than two minutes.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - udp
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

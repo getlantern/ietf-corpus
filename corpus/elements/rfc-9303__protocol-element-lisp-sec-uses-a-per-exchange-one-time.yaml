@@ -1,0 +1,10 @@
+document: rfc-9303
+kind: protocol-element
+summary: 'LISP-SEC uses a per-exchange One-Time Key (OTK) scheme: the ITR generates an ITR-OTK, the Map-Server derives an MS-OTK from it via a KDF, and the ETR uses the MS-OTK to HMAC-protect the Map-Reply. This two-layer key derivation ensures the Map-Server can authorize the EID-Prefix while the ETR independently authenticates the Map-Reply payload.'
+section: "5"
+topics:
+    - security
+    - crypto
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

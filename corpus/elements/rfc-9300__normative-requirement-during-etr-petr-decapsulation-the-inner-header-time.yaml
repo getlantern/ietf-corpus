@@ -1,0 +1,9 @@
+document: rfc-9300
+kind: normative-requirement
+summary: During ETR/PETR decapsulation, the inner-header Time to Live (or Hop Limit) field MUST be replaced with the outer-header value when the outer TTL/Hop Limit is less than the inner value, to prevent TTL incrementing across encapsulation/decapsulation cycles.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

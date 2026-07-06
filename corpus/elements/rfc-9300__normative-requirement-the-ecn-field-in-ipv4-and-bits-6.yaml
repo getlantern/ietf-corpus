@@ -1,0 +1,11 @@
+document: rfc-9300
+kind: normative-requirement
+summary: The ECN field in IPv4 and bits 6-7 of the IPv6 Traffic Class field require special treatment per RFC 6040 during both encapsulation and decapsulation to avoid discarding congestion indications. For re-encapsulating xTRs, each operation (decap then encap) MUST apply the RFC 6040 rules separately.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - ip
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

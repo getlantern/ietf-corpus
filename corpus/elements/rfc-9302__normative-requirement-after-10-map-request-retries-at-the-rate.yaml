@@ -1,0 +1,10 @@
+document: rfc-9302
+kind: normative-requirement
+summary: After 10 Map-Request retries at the rate defined in RFC 9301, if the Dest Map-Version in arriving packets is still stale, the ETR SHOULD drop those packets. If the Record TTL of the previous mapping has already expired, stale-versioned packets MUST be dropped immediately without issuing any Map-Request.
+section: "7.1"
+rfc2119_level: SHOULD
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

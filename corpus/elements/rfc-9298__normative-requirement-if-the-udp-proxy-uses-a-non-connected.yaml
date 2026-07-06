@@ -1,0 +1,10 @@
+document: rfc-9298
+kind: normative-requirement
+summary: If the UDP proxy uses a non-connected socket, it MUST validate the IP source address and UDP source port on received packets to ensure they match the client's request. Packets that do not match MUST be discarded.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - udp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

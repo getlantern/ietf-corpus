@@ -1,0 +1,9 @@
+document: rfc-9301
+kind: security-consideration
+summary: Map-Register replay attacks are mitigated by a monotonically increasing nonce. A Map-Server must persist the last nonce per ETR/key and reject messages with non-increasing nonces, logging potential replay attempts. If an ETR cannot persist its nonce across restarts, it MUST use a new authentication key when it restarts.
+section: "5.6"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

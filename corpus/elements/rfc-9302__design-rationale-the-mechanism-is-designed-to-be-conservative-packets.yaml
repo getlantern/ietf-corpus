@@ -1,0 +1,9 @@
+document: rfc-9302
+kind: design-rationale
+summary: 'The mechanism is designed to be conservative: packets with invalid or stale Map-Version numbers are dropped in several cases rather than forwarded, because control-plane actions triggered by data-plane events could be exploited for attacks. Manageability was prioritized over requiring complex machinery to distinguish legitimate traffic.'
+section: "8"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

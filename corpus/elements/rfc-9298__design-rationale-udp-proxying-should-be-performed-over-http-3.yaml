@@ -1,0 +1,11 @@
+document: rfc-9298
+kind: design-rationale
+summary: UDP proxying SHOULD be performed over HTTP/3 to allow the use of QUIC DATAGRAM frames, avoiding double loss recovery that occurs when UDP-over-TCP proxying causes both the inner and outer protocol to independently retransmit the same data.
+section: "6"
+topics:
+    - udp
+    - http
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

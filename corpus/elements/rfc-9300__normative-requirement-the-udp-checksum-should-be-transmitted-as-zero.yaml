@@ -1,0 +1,10 @@
+document: rfc-9300
+kind: normative-requirement
+summary: The UDP Checksum SHOULD be transmitted as zero by an ITR. When an ETR receives a packet with a non-zero UDP checksum and verification fails, the packet MUST be silently dropped; if verification succeeds or is skipped, the packet MUST be accepted for decapsulation.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - udp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

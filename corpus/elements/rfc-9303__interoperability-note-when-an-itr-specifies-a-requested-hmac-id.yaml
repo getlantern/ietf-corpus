@@ -1,0 +1,9 @@
+document: rfc-9303
+kind: interoperability-note
+summary: When an ITR specifies a Requested HMAC ID in its Map-Request but the Map-Reply returns a different PKT HMAC ID, the ITR MUST discard the Map-Reply and send a new Map-Request with a different Requested HMAC ID; this negotiation repeats until a mutually supported algorithm is found or all supported IDs are exhausted.
+section: "6.9"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

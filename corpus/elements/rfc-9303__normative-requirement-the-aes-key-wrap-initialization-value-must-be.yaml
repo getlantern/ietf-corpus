@@ -1,0 +1,10 @@
+document: rfc-9303
+kind: normative-requirement
+summary: The AES Key Wrap Initialization Value MUST be set to 0xA6A6A6A6A6A6A6A6 (64 bits) when wrapping the OTK. When decrypting, the receiver MUST verify this value and MUST discard the entire message if verification fails.
+section: "6.5"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9301
+kind: normative-requirement
+summary: The Map-Register Nonce MUST be monotonically increasing to protect against replay attacks. A Map-Server MUST track and save in persistent storage the last nonce per ETR xTR-ID/key pair and MUST drop any Map-Register with a nonce not greater than the saved value.
+section: "5.6"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

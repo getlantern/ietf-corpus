@@ -1,0 +1,9 @@
+document: rfc-9303
+kind: state-machine
+summary: 'Map-Server processing follows a priority-ordered table: (1) if any ETR registered with P-bit=1, generate a LISP-SEC proxy Map-Reply with E-bit=0; (2) if any ETR registered with S-bit=1 and P-bit=0, forward a LISP-SEC Encapsulated Map-Request to an S-bit ETR, setting E-bit=1 if any ETR has S-bit=0; (3) if all ETRs registered with S-bit=0, send a Negative Map-Reply with E-bit=1.'
+section: "6.7"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

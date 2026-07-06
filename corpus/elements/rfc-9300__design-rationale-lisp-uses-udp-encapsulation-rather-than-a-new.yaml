@@ -1,0 +1,10 @@
+document: rfc-9300
+kind: design-rationale
+summary: LISP uses UDP encapsulation (rather than a new IP protocol or raw IP tunneling) specifically so that core routers performing 5-tuple hashing for Link Aggregation Group (LAG) load-balancing can distribute LISP-encapsulated flows across member links, rather than seeing all traffic as a single flow from the ITR address.
+section: "12"
+topics:
+    - ip
+    - udp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

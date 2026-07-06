@@ -1,0 +1,10 @@
+document: rfc-9298
+kind: normative-requirement
+summary: Endpoints MUST NOT send HTTP Datagrams with a UDP Proxying Payload longer than 65527 bytes using Context ID zero (UDP header limit). A receiver of such an oversized datagram MUST abort the corresponding stream.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - udp
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

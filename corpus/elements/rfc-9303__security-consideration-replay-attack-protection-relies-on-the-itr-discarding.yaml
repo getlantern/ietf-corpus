@@ -1,0 +1,8 @@
+document: rfc-9303
+kind: security-consideration
+summary: Replay attack protection relies on the ITR discarding the <nonce, ITR-OTK> pair after processing the original Map-Reply. A replayed Map-Reply will find no matching OTK and be dropped. A replayed Map-Request forces LISP-SEC computation at Map-Server/ETR but yields no useful result to the attacker since the corresponding Map-Reply is discarded.
+section: "7.6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9302
+kind: security-consideration
+summary: Attackers can forge packets with random Map-Version numbers to trigger a large number of Map-Requests. Map-Versioning mitigates this by allowing packets carrying invalid version numbers to be filtered before a Map-Request is issued, reducing DoS amplification, though it may not be sufficient against a full DDoS attack.
+section: "8"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

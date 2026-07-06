@@ -1,0 +1,9 @@
+document: rfc-9298
+kind: security-consideration
+summary: UDP proxies can be misused for DoS amplification. Unlike TCP CONNECT proxies, which stop forwarding once the TCP path is flooded (no SYN-ACK), UDP proxies have no shared state with the target and may continue sending traffic indefinitely. Packet-count limits provide only limited mitigation.
+section: "7"
+topics:
+    - security
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9300
+kind: normative-requirement
+summary: The stateless MTU fragmentation behavior (splitting oversized packets into two equal fragments) MUST be implemented by the ITR only when the source host originates a packet with the DF bit set to 0. When DF=1 or the packet is IPv6, the ITR MUST drop and send an ICMP Fragmentation Needed or PTB message with value S=(L-H).
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

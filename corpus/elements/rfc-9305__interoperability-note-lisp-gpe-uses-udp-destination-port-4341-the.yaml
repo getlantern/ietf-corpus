@@ -1,0 +1,9 @@
+document: rfc-9305
+kind: interoperability-note
+summary: LISP-GPE uses UDP destination port 4341 (the same port as LISP). Because non-LISP-GPE routers ignore the P-bit per RFC 9300, sending LISP-GPE frames (P=1) to such routers would cause misinterpretation of other header fields; capability detection and P-bit=0 enforcement are required before transmitting to legacy endpoints.
+section: "5"
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

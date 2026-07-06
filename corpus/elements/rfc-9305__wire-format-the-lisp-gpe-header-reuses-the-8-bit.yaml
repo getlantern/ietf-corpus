@@ -1,0 +1,9 @@
+document: rfc-9305
+kind: wire-format
+summary: The LISP-GPE header reuses the 8-bit flag field from RFC 9300 but repurposes Flag bit 5 as the P-bit (Next Protocol bit). When P=1, bits 8-23 of the first 32-bit word are zeroed and the lower 8 bits carry the Next Protocol value, forming a 2-word (64-bit) header.
+section: "3"
+topics:
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

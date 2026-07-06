@@ -1,0 +1,8 @@
+document: rfc-9302
+kind: design-rationale
+summary: The circular 12-bit version number space uses serial number arithmetic (RFC 1982) so that exactly half the space (2048 values) is considered newer and the other half older than the current version. This enables unambiguous comparison and triggers the correct actions (discard vs. Map-Request) for stale and future versions.
+section: "6"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

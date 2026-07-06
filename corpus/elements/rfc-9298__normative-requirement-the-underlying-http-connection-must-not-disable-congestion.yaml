@@ -1,0 +1,12 @@
+document: rfc-9298
+kind: normative-requirement
+summary: The underlying HTTP connection MUST NOT disable congestion control unless it has an out-of-band way of knowing with certainty that the inner traffic is congestion-controlled. If congestion control is disabled, ECN support MUST NOT be signaled and all IP headers MUST be marked Not-ECT.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - udp
+    - congestion
+    - ecn
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

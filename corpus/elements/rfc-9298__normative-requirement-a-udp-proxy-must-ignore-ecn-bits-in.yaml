@@ -1,0 +1,11 @@
+document: rfc-9298
+kind: normative-requirement
+summary: A UDP proxy MUST ignore ECN bits in the IP header of UDP packets received from the target, and MUST set the ECN bits to Not-ECT on UDP packets it sends to the target. These are decoupled from the ECN markings of the client-to-proxy HTTP connection.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - udp
+    - ecn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

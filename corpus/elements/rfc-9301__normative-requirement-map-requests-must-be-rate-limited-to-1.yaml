@@ -1,0 +1,10 @@
+document: rfc-9301
+kind: normative-requirement
+summary: Map-Requests MUST be rate limited to 1 per second per EID-Prefix. After 10 retransmits without receiving the corresponding Map-Reply, the sender MUST wait 30 seconds before retrying.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - routing
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
