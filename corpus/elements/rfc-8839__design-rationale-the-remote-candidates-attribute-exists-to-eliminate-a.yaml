@@ -1,0 +1,9 @@
+document: rfc-8839
+kind: design-rationale
+summary: 'The ''remote-candidates'' attribute exists to eliminate a race condition: after the controlling agent nominates a pair, an updated offer may reach the answerer before the STUN Binding response confirming the pair is valid. Including the selected remote candidates in the offer lets the answerer wait to confirm validity before answering.'
+section: Appendix B
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

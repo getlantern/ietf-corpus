@@ -1,0 +1,9 @@
+document: rfc-8838
+kind: interoperability-note
+summary: When receiving trickled candidates, if a redundancy exists between a newly received peer-reflexive remote candidate and an existing pair, the agent SHOULD discard the peer-reflexive pair and update the priority of the existing pair. This prevents priority disagreements that arise when one agent sees a candidate as peer-reflexive and the other sees it as server-reflexive.
+section: "11"
+topics:
+    - webrtc
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

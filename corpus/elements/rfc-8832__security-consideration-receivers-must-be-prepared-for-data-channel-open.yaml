@@ -1,0 +1,9 @@
+document: rfc-8832
+kind: security-consideration
+summary: Receivers must be prepared for DATA_CHANNEL_OPEN messages with Label and Protocol fields at maximum length (65535 bytes each), and must handle error cases such as inconsistent field lengths, unknown parameter values, and odd/even rule violations by closing the corresponding data channel. Implementations must also handle peers opening the maximum number of data channels.
+section: "7"
+topics:
+    - webrtc
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

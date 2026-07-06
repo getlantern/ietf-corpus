@@ -1,0 +1,10 @@
+document: rfc-8834
+kind: design-rationale
+summary: Multi-unicast conferencing (multiple RTCPeerConnections) is RECOMMENDED to be implemented as several individual RTP sessions rather than a single RTP session spanning multiple transport connections, because separate sessions allow different media bitrates per peer and distinct session configurations, even though this prevents endpoints from seeing third-party RTCP reception quality reports.
+section: 12.1.2
+topics:
+    - webrtc
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

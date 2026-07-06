@@ -1,0 +1,10 @@
+document: rfc-8835
+kind: design-rationale
+summary: 'Temporary IPv6 addresses are preferred over permanent ones for privacy, but the standard IPV6_PREFER_SRC_TMP flag does not apply in ICE because ICE gathers and reveals all addresses. Therefore WebRTC defines its own rule: discard permanent addresses when nondeprecated temporaries of the same scope exist.'
+section: "3.3"
+topics:
+    - webrtc
+    - privacy
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8839
+kind: normative-requirement
+summary: If the answer does not indicate ICE support, or includes 'ice-mismatch' for all active data streams, the offerer MUST terminate ICE for the entire session and fall back to RFC 3264 procedures. If only some streams have 'ice-mismatch', ICE MUST be terminated only for those streams.
+section: 4.3.3
+rfc2119_level: MUST
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

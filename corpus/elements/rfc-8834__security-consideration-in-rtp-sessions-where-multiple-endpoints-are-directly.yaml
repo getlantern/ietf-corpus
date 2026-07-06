@@ -1,0 +1,11 @@
+document: rfc-8834
+kind: security-consideration
+summary: In RTP sessions where multiple endpoints are directly visible, all endpoints share knowledge of each other's master keys and could inject packets claiming to come from another endpoint. Cryptographic source authentication for multiparty sessions would require additional mechanisms (e.g., TESLA for SRTP) that are not part of base WebRTC standards.
+section: 12.1.2
+topics:
+    - webrtc
+    - rtp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-8839
+kind: interoperability-note
+summary: ICE works through an ALG only if the ALG correctly handles the SDP. An SBC acting as a proper B2BUA will strip unknown ICE attributes, causing ICE to be disabled. If an SBC passes ICE attributes but modifies the default media destination, an ICE mismatch is detected and ICE is aborted.
+section: "8"
+topics:
+    - webrtc
+    - realtime
+    - nat
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

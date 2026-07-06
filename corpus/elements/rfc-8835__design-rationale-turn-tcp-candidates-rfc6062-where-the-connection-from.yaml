@@ -1,0 +1,10 @@
+document: rfc-8835
+kind: design-rationale
+summary: 'TURN TCP candidates (RFC6062), where the connection from the TURN server to the peer is TCP, are only MAY because: they are only relevant when both peers require TCP; the same use case is covered by both sides establishing UDP relay candidates over TURN/TCP; and TCP between TURN server and peer introduces head-of-line blocking.'
+section: "3.4"
+topics:
+    - webrtc
+    - nat
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

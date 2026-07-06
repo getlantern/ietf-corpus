@@ -1,0 +1,9 @@
+document: rfc-8829
+kind: design-rationale
+summary: The preferred JSEP pattern for answerers is to send an immediate 'sendonly' final answer with a null MediaStreamTrack rather than a pranswer. This avoids leaving the offer/answer exchange open, allowing the caller to send an updated offer and enabling bidirectional media to start promptly upon user acceptance.
+section: 4.1.10.1
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

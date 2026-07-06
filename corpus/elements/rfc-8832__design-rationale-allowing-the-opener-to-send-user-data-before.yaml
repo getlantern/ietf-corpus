@@ -1,0 +1,8 @@
+document: rfc-8832
+kind: design-rationale
+summary: Allowing the opener to send user data before receiving DATA_CHANNEL_ACK reduces latency for applications that need to send immediately after opening, at the cost of requiring ordered delivery of those early messages to preserve semantics if the channel turns out to be unordered.
+section: "6"
+topics:
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

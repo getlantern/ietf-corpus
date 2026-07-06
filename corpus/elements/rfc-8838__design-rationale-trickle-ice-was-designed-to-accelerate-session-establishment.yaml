@@ -1,0 +1,9 @@
+document: rfc-8838
+kind: design-rationale
+summary: Trickle ICE was designed to accelerate session establishment by allowing ICE agents to begin connectivity checks while still gathering candidates, avoiding the blocking sequential gather-then-exchange model of regular ICE. Candidate gathering often involves slow STUN and TURN server queries, so parallelizing gathering with connectivity checks reduces overall establishment time.
+section: "1"
+topics:
+    - webrtc
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

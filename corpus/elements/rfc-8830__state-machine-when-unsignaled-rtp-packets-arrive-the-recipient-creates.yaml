@@ -1,0 +1,10 @@
+document: rfc-8830
+kind: state-machine
+summary: When unsignaled RTP packets arrive, the recipient creates a MediaStreamTrack and waits if the connection is not in RTCSignalingState 'stable'. Once 'stable' is reached, it assigns IDs from any 'msid' attribute, or generates a random ID and associates the track with a 'Non-WebRTC stream' MediaStream if no 'msid' is present.
+section: "3.1"
+topics:
+    - webrtc
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

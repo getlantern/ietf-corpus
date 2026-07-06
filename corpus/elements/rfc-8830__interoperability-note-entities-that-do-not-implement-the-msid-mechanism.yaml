@@ -1,0 +1,10 @@
+document: rfc-8830
+kind: interoperability-note
+summary: Entities that do not implement the MSID mechanism will not send 'msid' attributes, resulting in incoming RTP packets with no associated MediaStream ID. Recipients must handle this by creating tracks with randomly generated IDs associated with a 'Non-WebRTC stream' MediaStream.
+section: "3.1"
+topics:
+    - webrtc
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

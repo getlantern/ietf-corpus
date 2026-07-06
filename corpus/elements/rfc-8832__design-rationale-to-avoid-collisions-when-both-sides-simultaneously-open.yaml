@@ -1,0 +1,9 @@
+document: rfc-8832
+kind: design-rationale
+summary: To avoid collisions when both sides simultaneously open a data channel, the DTLS client MUST use even stream identifiers and the DTLS server MUST use odd stream identifiers. This leverages the existing DTLS role negotiation to assign disjoint identifier spaces without additional signaling.
+section: "4"
+topics:
+    - webrtc
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

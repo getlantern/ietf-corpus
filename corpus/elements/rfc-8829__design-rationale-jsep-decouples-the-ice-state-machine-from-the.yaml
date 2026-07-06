@@ -1,0 +1,9 @@
+document: rfc-8829
+kind: design-rationale
+summary: JSEP decouples the ICE state machine from the signaling state machine to allow transport information to be sent separately from session descriptions, enabling faster ICE and DTLS startup via Trickle ICE (RFC 8838). This accommodates both traditional SIP (combined) and Trickle ICE (separated) models without requiring signaling protocol changes.
+section: "1.1"
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

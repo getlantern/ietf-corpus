@@ -1,0 +1,9 @@
+document: rfc-8831
+kind: design-rationale
+summary: WebRTC data channels do not support SCTP multihoming. The DTLS layer presents a connection-oriented, single-homed abstraction, so the SCTP layer acts as if running on a single-homed host even though the underlying IP may be multihomed.
+section: "5"
+topics:
+    - webrtc
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

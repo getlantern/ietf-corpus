@@ -1,0 +1,11 @@
+document: rfc-8834
+kind: security-consideration
+summary: Despite SRTP media encryption, the first 12 bytes of the RTP header remain unencrypted, enabling deep packet inspectors to identify RTP streams via SSRC, correlate packet sizes and inter-spacing, and classify media types. Per-packet DiffServ marking or packet size patterns reveal codec and stream details.
+section: 12.1.3
+topics:
+    - webrtc
+    - rtp
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

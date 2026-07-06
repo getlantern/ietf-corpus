@@ -1,0 +1,10 @@
+document: rfc-8829
+kind: interoperability-note
+summary: Some endpoints generate legacy profile strings such as 'RTP/AVP' while supplying 'a=fingerprint' and 'a=rtcp-fb' attributes indicating SAVPF intent. JSEP implementations must accept these strings in received offers, but re-offers MUST use correct profile strings regardless of what the initial exchange used.
+section: 5.1.2
+topics:
+    - webrtc
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8832
+kind: normative-requirement
+summary: Before any message has been received on a data channel (i.e., before DATA_CHANNEL_ACK or any user message arrives), all outgoing user messages for that channel MUST be sent ordered, regardless of the channel's configured ordering. After the first received message, ordered channels MUST send ordered and unordered channels MUST send unordered.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

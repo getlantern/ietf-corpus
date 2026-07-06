@@ -1,0 +1,12 @@
+document: rfc-8834
+kind: normative-requirement
+summary: Each RTP endpoint MUST have at least one unique RTCP CNAME within the RTCPeerConnection. A WebRTC endpoint MUST NOT use more than one RTCP CNAME in RTP sessions belonging to a single RTCPeerConnection, and MUST generate a new, unique, short-term persistent RTCP CNAME for each RTCPeerConnection following RFC 7022.
+section: "4.9"
+rfc2119_level: MUST
+topics:
+    - webrtc
+    - rtp
+    - privacy
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
