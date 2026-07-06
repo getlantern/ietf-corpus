@@ -1,0 +1,11 @@
+document: rfc-8899
+kind: state-machine
+summary: 'DPLPMTUD defines five states: DISABLED (initial, or on loss of connectivity), BASE (confirms BASE_PLPMTU is path-supported; enters SEARCHING on success or ERROR on failure), SEARCHING (main probing state; increases PLPMTU via search algorithm; exits to SEARCH_COMPLETE or BASE on black hole), SEARCH_COMPLETE (normal maintenance; PMTU_RAISE_TIMER triggers re-entry to SEARCHING), and ERROR (conflicting path info; exits to SEARCHING once consistent BASE_PLPMTU confirmed).'
+section: "5.2"
+topics:
+    - udp
+    - sctp
+    - quic
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

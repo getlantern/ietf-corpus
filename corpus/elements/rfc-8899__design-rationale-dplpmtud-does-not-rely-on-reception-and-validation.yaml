@@ -1,0 +1,9 @@
+document: rfc-8899
+kind: design-rationale
+summary: DPLPMTUD does not rely on reception and validation of PTB messages, making it more robust than Classical PMTUD. PTB messages can be filtered by firewalls, rate-limited, lost due to tunnel misconfiguration, or blocked by routing asymmetry — any of which creates a packet black hole the classical method cannot detect.
+section: "1.2"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

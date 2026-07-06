@@ -1,0 +1,9 @@
+document: rfc-8899
+kind: security-consideration
+summary: PTB messages MUST be validated to protect against off-path attackers. A node supporting DPLPMTUD must validate the PTB payload to ensure it corresponds to a datagram actually sent by the PL. Validation SHOULD utilize information not easily determined by an off-path attacker, such as a protocol header field known only to the two PL endpoints.
+section: "8"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

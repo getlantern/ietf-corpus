@@ -1,0 +1,10 @@
+document: rfc-8899
+kind: design-rationale
+summary: BASE_PLPMTU is set to a size expected to work for most paths (RECOMMENDED > 1200 bytes) rather than the minimum IP-layer size, so that DPLPMTUD can allow applications to continue working during transient PMTU reductions without falling back to the minimum fragment size. This prevents long periods of unnecessarily low MPS.
+section: 5.1.2
+topics:
+    - ip
+    - udp
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

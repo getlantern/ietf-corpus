@@ -1,0 +1,11 @@
+document: rfc-8898
+kind: normative-requirement
+summary: When a UAS or registrar receives a SIP request containing an Authorization header field with an access token, it MUST validate the access token using procedures associated with the token type. For expired tokens it MUST reply with a 401 response; if validation fails it MUST also reply with 401.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - sip
+    - oauth
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,12 @@
+document: rfc-8899
+kind: normative-requirement
+summary: A PL implementing this specification MUST suspend network layer processing of outgoing packets that enforces a PMTU for each flow utilizing DPLPMTUD, and instead use DPLPMTUD to control the size of packets sent by a flow.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - ip
+    - udp
+    - sctp
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

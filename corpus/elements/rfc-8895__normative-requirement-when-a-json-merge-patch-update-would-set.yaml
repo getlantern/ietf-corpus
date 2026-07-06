@@ -1,0 +1,10 @@
+document: rfc-8895
+kind: normative-requirement
+summary: When a JSON merge patch update would set a field to null but the resource distinguishes null from undefined, the server MUST choose JSON patch instead of JSON merge patch; if JSON patch is not supported, the server must send a full replacement.
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - http
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

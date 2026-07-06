@@ -1,0 +1,9 @@
+document: rfc-8899
+kind: security-consideration
+summary: 'An on-path attacker able to create PTB messages with valid quoted IP packets could drive down the PLPMTU. Two mitigations are specified: (1) a PL sender never reduces PLPMTU below BASE_PLPMTU solely in response to a PTB message (it enters BASE state first); (2) PTB processing can be suspended in a robustness mode when subsequent probes confirm a larger size is path-supported.'
+section: "8"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

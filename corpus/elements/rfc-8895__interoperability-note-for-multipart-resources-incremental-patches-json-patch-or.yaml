@@ -1,0 +1,9 @@
+document: rfc-8895
+kind: interoperability-note
+summary: For multipart resources, incremental patches (JSON patch or merge patch) apply to individual parts rather than the whole multipart message. Each part must have a static Content-ID in the initial full message, and incremental update events use 'substream-id.content-id' as the data-id.
+section: 6.7.3
+topics:
+    - http
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

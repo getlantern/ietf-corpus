@@ -1,0 +1,8 @@
+document: rfc-8895
+kind: design-rationale
+summary: 'Stream restart is explicitly not supported: once an update stream is closed, the client must create a new one. This avoids the complexity of tracking which updates were missed during a gap and simplifies server state management.'
+section: "13"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

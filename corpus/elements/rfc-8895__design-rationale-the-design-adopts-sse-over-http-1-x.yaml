@@ -1,0 +1,8 @@
+document: rfc-8895
+kind: design-rationale
+summary: The design adopts SSE over HTTP/1.x rather than HTTP/2 server push because HTTP/2 client libraries may cache pushed resources without notifying the application, proxies may disable server push, and HTTP/1.x-compatible implementations are simpler to build with standard libraries.
+section: "3.3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

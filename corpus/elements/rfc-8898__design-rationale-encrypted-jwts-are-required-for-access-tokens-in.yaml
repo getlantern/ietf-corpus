@@ -1,0 +1,11 @@
+document: rfc-8898
+kind: design-rationale
+summary: Encrypted JWTs are required for access tokens in SIP requests because RFC 6749 mandates TLS protection for tokens in transit, but SIP uses intermediary proxies and TLS only provides hop-to-hop protection — meaning an intermediary proxy could otherwise read the token.
+section: 2.1.2
+topics:
+    - sip
+    - oauth
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

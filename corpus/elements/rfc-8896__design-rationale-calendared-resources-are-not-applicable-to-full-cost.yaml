@@ -1,0 +1,8 @@
+document: rfc-8896
+kind: design-rationale
+summary: Calendared resources are not applicable to full cost maps (fetched via HTTP GET) because a legacy ALTO Client receiving a calendared cost map would ignore the Calendar 'meta' attributes per RFC 7285 Section 8.3.7, leaving it unable to correctly interpret the array values. POST-based Filtered Cost Map and Endpoint Cost Service are used instead.
+section: 3.3.2
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

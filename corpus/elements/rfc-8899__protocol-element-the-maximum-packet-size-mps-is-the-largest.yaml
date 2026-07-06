@@ -1,0 +1,10 @@
+document: rfc-8899
+kind: protocol-element
+summary: The Maximum Packet Size (MPS) is the largest application data block that can be sent using a single datagram. It is smaller than the PLPMTU because it is reduced by PL header sizes (including AEAD tags and TLS record layer padding). The PL SHOULD provide a primitive returning the current MPS to the higher layer.
+section: "4.4"
+topics:
+    - udp
+    - sctp
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

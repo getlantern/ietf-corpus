@@ -1,0 +1,10 @@
+document: rfc-8895
+kind: normative-requirement
+summary: On any request error, the update stream server MUST NOT create an update stream and MUST return HTTP 400 with an ALTO error body. Specific error codes include E_MISSING_FIELD (no 'add' field) and E_INVALID_FIELD_VALUE (bad resource-id or invalid input).
+section: "6.6"
+rfc2119_level: MUST
+topics:
+    - http
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

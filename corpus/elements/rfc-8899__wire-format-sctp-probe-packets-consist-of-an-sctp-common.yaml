@@ -1,0 +1,8 @@
+document: rfc-8899
+kind: wire-format
+summary: SCTP probe packets consist of an SCTP common header followed by a HEARTBEAT chunk and a PAD chunk (RFC 4820). The PAD chunk length is set to (probe_size - sizeof(SCTP_common_header) - sizeof(HEARTBEAT_chunk)). The HEARTBEAT chunk SHOULD include the probe size to help associate HEARTBEAT ACKs with probe sizes.
+section: 6.2.1.2
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

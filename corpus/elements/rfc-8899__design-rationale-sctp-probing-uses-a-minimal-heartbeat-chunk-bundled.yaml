@@ -1,0 +1,8 @@
+document: rfc-8899
+kind: design-rationale
+summary: SCTP probing uses a minimal HEARTBEAT chunk bundled with a PAD chunk rather than DATA chunks with padding. This enables probing without affecting user message transfer and without being limited by congestion control or flow control, because these probe packets do not carry application data.
+section: "6.2"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
