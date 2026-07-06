@@ -1,0 +1,11 @@
+document: rfc-8656
+kind: design-rationale
+summary: TURN supports TCP and TLS-over-TCP between client and server because some enterprise firewalls block UDP entirely. TCP's three-way handshake and explicit teardown give firewalls clearer signals about intended connections than stateless UDP, so those firewalls permit TCP while blocking UDP.
+section: "3.1"
+topics:
+    - nat
+    - tcp
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

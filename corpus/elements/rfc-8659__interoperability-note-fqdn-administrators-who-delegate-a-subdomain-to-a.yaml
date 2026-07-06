@@ -1,0 +1,10 @@
+document: rfc-8659
+kind: interoperability-note
+summary: FQDN administrators who delegate a subdomain to a private nameserver will cause CAs to receive SERVFAIL when looking up CAA records. Administrators wishing to issue certificates for such FQDNs SHOULD use split-horizon DNS with a publicly available nameserver that returns a valid, empty CAA response.
+section: "6.3"
+rfc2119_level: SHOULD
+topics:
+    - dns
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

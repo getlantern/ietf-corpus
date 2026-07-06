@@ -1,0 +1,9 @@
+document: rfc-8659
+kind: state-machine
+summary: 'The Relevant RRset for a domain X is determined by climbing the DNS name tree: starting at X, if CAA(X) is non-empty return it; otherwise move to Parent(X) and repeat until the DNS root is reached, returning Empty if no CAA RRset is found. CNAME/DNAME processing is left to the recursive resolver.'
+section: "3"
+topics:
+    - dns
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8659
+kind: design-rationale
+summary: RFC 6844's tree-climbing algorithm also climbed CNAMEs and DNAMEs, making processing inefficient for FQDNs with many aliases and making it difficult for hosting providers to set CAA policies without imposing unwanted policies on customers. RFC 8659 simplifies the algorithm to climb only the FQDN being processed, delegating CNAME/DNAME resolution to the CA's recursive resolver.
+section: "7"
+topics:
+    - dns
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

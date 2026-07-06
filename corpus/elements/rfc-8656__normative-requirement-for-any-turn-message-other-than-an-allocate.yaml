@@ -1,0 +1,9 @@
+document: rfc-8656
+kind: normative-requirement
+summary: For any TURN message other than an Allocate request, if the 5-tuple does not identify an existing allocation, the message MUST be rejected with a 437 (Allocation Mismatch) error if it is a request, or silently ignored if it is an indication or ChannelData message. A client receiving 437 on a non-Allocate MUST assume the allocation no longer exists.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

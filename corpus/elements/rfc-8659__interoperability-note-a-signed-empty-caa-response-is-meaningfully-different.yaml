@@ -1,0 +1,9 @@
+document: rfc-8659
+kind: interoperability-note
+summary: 'A signed empty CAA response is meaningfully different from a bogus response: it proves no CAA policy exists at that label. Known bugs in at least two authoritative resolvers (including PowerDNS prior to 4.0.4) caused incorrect signing of empty RRsets when combined with mixed-case (DNS 0x20) queries, producing bogus DNSSEC responses for CAA lookups.'
+section: "6.4"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

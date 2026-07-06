@@ -1,0 +1,8 @@
+document: rfc-8659
+kind: interoperability-note
+summary: Some middleboxes drop DNS packets of unknown types, manifesting as timeouts or SERVFAIL. Some authoritative nameservers return REJECTED or NOTIMP for unrecognized RR types, and at least one produces a malformed response with the QR bit set to 0; the correct RCODE per RFC 1034 is 0 (No error condition).
+section: "6.1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

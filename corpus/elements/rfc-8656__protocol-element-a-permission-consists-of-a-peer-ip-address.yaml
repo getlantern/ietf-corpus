@@ -1,0 +1,9 @@
+document: rfc-8656
+kind: protocol-element
+summary: A Permission consists of a peer IP address and a lifetime. The server only relays inbound UDP datagrams whose source IP matches an installed permission; datagrams from non-permitted peers are silently discarded. Permissions expire after 5 minutes if not refreshed, mirroring RFC 4787 NAT address-restricted filtering behavior.
+section: "9"
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

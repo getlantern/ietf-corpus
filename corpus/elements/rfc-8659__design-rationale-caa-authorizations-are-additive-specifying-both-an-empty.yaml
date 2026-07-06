@@ -1,0 +1,9 @@
+document: rfc-8659
+kind: design-rationale
+summary: 'CAA authorizations are additive: specifying both an empty issuer-domain-name and a non-empty issuer-domain-name is equivalent to specifying only the non-empty name. This simplifies multi-CA scenarios and avoids implicit denials from partial record sets. Issuers MAY also accept parameters (e.g., account numbers) in the issue value, whose semantics are determined solely by the Issuer.'
+section: "4.2"
+topics:
+    - dns
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

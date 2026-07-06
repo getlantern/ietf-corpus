@@ -1,0 +1,9 @@
+document: rfc-8656
+kind: security-consideration
+summary: Send and Data indications are never authenticated because STUN's long-term credential mechanism does not support authenticating indications. An on-path attacker can therefore inject bogus Send indications. The permission requirement (peer IP must be pre-authorized) provides partial mitigation; full end-to-end security requires application-level encryption.
+section: 21.1.4
+topics:
+    - security
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

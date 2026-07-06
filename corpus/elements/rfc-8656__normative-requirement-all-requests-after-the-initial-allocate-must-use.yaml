@@ -1,0 +1,10 @@
+document: rfc-8656
+kind: normative-requirement
+summary: All requests after the initial Allocate MUST use the same username as that used to create the allocation. If an authenticated non-Allocate request identifies an existing allocation but uses a different username, the server MUST reject it with a 441 (Wrong Credentials) error to prevent allocation hijacking.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - nat
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

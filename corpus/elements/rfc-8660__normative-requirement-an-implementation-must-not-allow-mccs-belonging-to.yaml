@@ -1,0 +1,10 @@
+document: rfc-8660
+kind: normative-requirement
+summary: An implementation MUST NOT allow MCCs belonging to the same router to assign the same incoming label to more than one SR FEC. When a collision occurs across MCCs, tiebreaking rules MUST deterministically select one FEC regardless of the order in which the colliding FEC-to-label mappings are received.
+section: "2.5"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

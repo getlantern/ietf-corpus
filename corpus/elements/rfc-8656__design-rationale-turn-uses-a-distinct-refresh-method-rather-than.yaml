@@ -1,0 +1,8 @@
+document: rfc-8656
+kind: design-rationale
+summary: TURN uses a distinct Refresh method rather than reusing Allocate for keepalives so that the client is explicitly notified if the allocation has vanished on the server. Using Allocate for refresh would risk silently creating a new allocation instead of detecting loss of the original.
+section: "3.2"
+topics:
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8660
+kind: normative-requirement
+summary: A FEC that loses its incoming label to the tiebreaking rules MUST NOT be installed in the FIB with an outgoing Segment Routing label based on the SID corresponding to the lost incoming label. The ingress node must apply the same collision-resolution procedure using the receiving node's data when determining the outgoing label.
+section: "2.6"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-8659
+kind: security-consideration
+summary: The use of DNSSEC to authenticate CAA RRs is strongly RECOMMENDED. An Issuer MUST NOT issue certificates if doing so would conflict with the Relevant RRset, irrespective of whether the corresponding DNS records are signed. DNSSEC provides proof of non-existence, enabling distinction between an empty RRset and a suppressed response.
+section: "5.1"
+rfc2119_level: RECOMMENDED
+topics:
+    - dns
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

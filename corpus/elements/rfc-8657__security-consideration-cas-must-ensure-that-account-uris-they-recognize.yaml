@@ -1,0 +1,12 @@
+document: rfc-8657
+kind: security-consideration
+summary: CAs MUST ensure that account URIs they recognize are unique within the scope of all domain names they recognize as identifying that CA for CAA validation, to prevent ambiguity when a CA uses multiple domain names. CAs SHOULD use URIs that include an authority component (e.g., "https://a.example.com/account/1234").
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - acme
+    - pkix
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

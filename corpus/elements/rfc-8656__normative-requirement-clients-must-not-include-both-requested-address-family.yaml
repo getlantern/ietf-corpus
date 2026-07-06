@@ -1,0 +1,11 @@
+document: rfc-8656
+kind: normative-requirement
+summary: Clients MUST NOT include both REQUESTED-ADDRESS-FAMILY and ADDITIONAL-ADDRESS-FAMILY attributes in the same Allocate request. Neither attribute may appear alongside a RESERVATION-TOKEN attribute, since the reserved address is already determined and its family cannot be further constrained.
+section: "7.1"
+rfc2119_level: MUST NOT
+topics:
+    - nat
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

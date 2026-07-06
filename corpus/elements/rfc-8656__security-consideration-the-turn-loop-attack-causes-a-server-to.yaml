@@ -1,0 +1,9 @@
+document: rfc-8656
+kind: security-consideration
+summary: The TURN Loop Attack causes a server to relay traffic destined for another TURN allocation, creating a traffic amplification loop. Servers MUST verify that the peer address specified in XOR-PEER-ADDRESS is not the server's own relayed transport address to prevent this attack.
+section: 21.1.7
+topics:
+    - security
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

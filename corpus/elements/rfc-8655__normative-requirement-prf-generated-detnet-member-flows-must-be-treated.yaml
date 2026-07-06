@@ -1,0 +1,11 @@
+document: rfc-8655
+kind: normative-requirement
+summary: PRF-generated DetNet member flows must be treated as not using transport-layer congestion control, even if the original App-flow supports it, because PREOF (specifically PEF) can remove congestion indications such as drops, ECN markings, and increased latency, hiding them from end systems.
+section: 3.3.2
+rfc2119_level: MUST
+topics:
+    - routing
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

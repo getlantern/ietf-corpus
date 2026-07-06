@@ -1,0 +1,10 @@
+document: rfc-8656
+kind: interoperability-note
+summary: 'Dual-stack TURN clients MUST implement Happy Eyeballs (RFC 8305): querying both A and AAAA records and racing connections on both address families. For UDP, the client sends unauthenticated Allocate requests to both families and uses the first returning a 401; for DTLS, the first completed handshake wins and the other is terminated with close_notify.'
+section: "3.9"
+topics:
+    - nat
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

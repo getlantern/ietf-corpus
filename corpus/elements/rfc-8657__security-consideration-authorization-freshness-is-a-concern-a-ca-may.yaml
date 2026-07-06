@@ -1,0 +1,11 @@
+document: rfc-8657
+kind: security-consideration
+summary: 'Authorization freshness is a concern: a CA may establish account authorization substantially prior to issuance, during which the CAA policy may change. CAs SHOULD reduce this risk by using short-lived authorizations (e.g., one hour) or revalidating CAA policy at issuance time.'
+section: "5.5"
+rfc2119_level: SHOULD
+topics:
+    - acme
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

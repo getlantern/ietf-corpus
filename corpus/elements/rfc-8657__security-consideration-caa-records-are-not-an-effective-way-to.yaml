@@ -1,0 +1,11 @@
+document: rfc-8657
+kind: security-consideration
+summary: CAA records are not an effective way to restrict issuance for subdomains whose DNS control is delegated to another party, since CAA record lookup walks up the DNS hierarchy and subdelegation can supersede restrictions.
+section: "5.7"
+topics:
+    - acme
+    - pkix
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

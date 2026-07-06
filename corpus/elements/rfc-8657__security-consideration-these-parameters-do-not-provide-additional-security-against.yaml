@@ -1,0 +1,11 @@
+document: rfc-8657
+kind: security-consideration
+summary: These parameters do not provide additional security against global man-in-the-middle attackers unless the domain is signed with DNSSEC and the CA performs CAA validation via a trusted DNSSEC-validating resolver. Without DNSSEC, the parameters still provide administrative control over issuance.
+section: "5.6"
+topics:
+    - acme
+    - pkix
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
