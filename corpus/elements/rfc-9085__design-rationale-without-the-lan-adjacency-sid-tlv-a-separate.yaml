@@ -1,0 +1,9 @@
+document: rfc-9085
+kind: design-rationale
+summary: Without the LAN Adjacency SID TLV, a separate BGP-LS Link NLRI would need to be originated for each additional LAN neighbor adjacency in order to carry the per-neighbor SR TLVs. The LAN Adjacency SID TLV bundles all per-neighbor adjacency SIDs into a single Link NLRI, reducing the number of NLRI instances required.
+section: 2.2.2
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

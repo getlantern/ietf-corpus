@@ -1,0 +1,9 @@
+document: rfc-9085
+kind: design-rationale
+summary: IGP link-state flooding is scoped to a single IGP area, so the contents of an LSDB/TED cannot cross area or AS boundaries alone. BGP-LS was therefore defined to carry link-state information — including SR SID advertisements — across IGP areas and ASes to enable end-to-end path construction by external controllers.
+section: "1"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
