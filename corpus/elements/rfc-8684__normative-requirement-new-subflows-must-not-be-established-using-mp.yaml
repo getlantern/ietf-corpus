@@ -1,0 +1,10 @@
+document: rfc-8684
+kind: normative-requirement
+summary: New subflows MUST NOT be established using MP_JOIN until a DSS option has been successfully received across the path. If at any point the MPTCP negotiation is compromised by a middlebox, the host MUST stop using MPTCP and no longer include MPTCP options in future packets.
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - multipath
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

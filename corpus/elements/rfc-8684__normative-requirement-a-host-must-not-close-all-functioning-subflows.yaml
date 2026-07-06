@@ -1,0 +1,10 @@
+document: rfc-8684
+kind: normative-requirement
+summary: A host MUST NOT close all functioning subflows unless all outstanding data has been DATA_ACKed or the DATA_FIN segment is the only outstanding segment. Once a DATA_FIN has been acknowledged, all remaining subflows MUST be closed with standard FIN exchanges.
+section: 3.3.3
+rfc2119_level: MUST NOT
+topics:
+    - multipath
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

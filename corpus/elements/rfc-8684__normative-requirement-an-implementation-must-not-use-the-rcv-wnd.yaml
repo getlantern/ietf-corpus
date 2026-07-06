@@ -1,0 +1,10 @@
+document: rfc-8684
+kind: normative-requirement
+summary: An implementation MUST NOT use the RCV.WND field of a TCP segment at the connection level if the segment does not also carry a DSS option with a Data ACK field. A receiver MUST NOT shrink the right edge of the receive window (DATA_ACK + receive window).
+section: 3.3.4
+rfc2119_level: MUST NOT
+topics:
+    - multipath
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

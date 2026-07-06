@@ -1,0 +1,10 @@
+document: rfc-8684
+kind: design-rationale
+summary: 'MPTCP uses a shared receive window across all subflows rather than per-subflow windows to prevent subflow starvation: with per-subflow windows, slower or temporarily stalled subflows would consume receive window that faster subflows could use, reducing aggregate throughput.'
+section: 3.3.4
+topics:
+    - multipath
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

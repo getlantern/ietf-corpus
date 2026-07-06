@@ -1,0 +1,10 @@
+document: rfc-8689
+kind: normative-requirement
+summary: Following REQUIRETLS delivery failure, the SMTP client MUST send a non-delivery notification to the reverse-path. Status code 5.7.30 ('REQUIRETLS support required') SHOULD be used when the server lacks REQUIRETLS; 5.7.10 ('Encryption needed') when TLS cannot be established.
+section: 4.2.1
+rfc2119_level: MUST
+topics:
+    - email
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

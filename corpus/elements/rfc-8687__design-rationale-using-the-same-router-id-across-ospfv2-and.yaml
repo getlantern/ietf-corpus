@@ -1,0 +1,9 @@
+document: rfc-8687
+kind: design-rationale
+summary: Using the same Router ID across OSPFv2 and OSPFv3 instances was considered as a solution for X-AF mapping but rejected because it relies on correct configuration, provides no mechanism to detect misalignment, and misaligned Router IDs can cause traffic delivery to the wrong tail-end router, leading to suboptimal routing or traffic loops.
+section: "1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

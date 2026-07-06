@@ -1,0 +1,11 @@
+document: rfc-8689
+kind: normative-requirement
+summary: When a REQUIRETLS message is bounced, the server MUST behave as if RET=HDRS were present (per RFC 3461); if both RET=FULL and REQUIRETLS are present, RET=FULL MUST be disregarded to avoid leaking full message content in the bounce.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

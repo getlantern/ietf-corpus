@@ -1,0 +1,9 @@
+document: rfc-8688
+kind: security-consideration
+summary: 'A 608-aware gateway that plays an audio announcement can be used as an amplification attack vector: an attacker crafts a small INVITE with an SDP pointing to a victim device, causing the gateway to send a large audio file to the victim. Mitigation is to only play media in response to STIR-validated INVITEs and/or perform ICE connectivity checks (RFC 8445).'
+section: "6"
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

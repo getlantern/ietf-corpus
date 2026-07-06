@@ -1,0 +1,10 @@
+document: rfc-8689
+kind: security-consideration
+summary: 'The ''TLS-Required: No'' header field may conflict with recipient domain policies expressed via DANE or MTA-STS. It effectively instructs the client MTA to behave as if it does not support those mechanisms; the recipient domain can still enforce TLS by refusing connections without STARTTLS.'
+section: "8.4"
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-8689
+kind: security-consideration
+summary: REQUIRETLS defends against man-in-the-middle attacks by requiring successful certificate validation (via trust chain or DANE) before sending a message; connections that lack verified server identity are rejected. DNS MX record spoofing is countered by requiring DNSSEC validation or MTA-STS policy confirmation of MX hostnames.
+section: "8.2"
+topics:
+    - email
+    - tls
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

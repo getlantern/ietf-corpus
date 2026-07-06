@@ -1,0 +1,10 @@
+document: rfc-8687
+kind: protocol-element
+summary: The X-AF routing calculation walks all MPLS TE tunnels headed by the computing router; for each X-AF tunnel, it searches all connected areas' LSDBs for a matching destination IP in a Node Local Address sub-TLV, then marks the tunnel as belonging to the area and tail-end router that advertised the matching address, assigning the intra-area SPF cost as the IGP cost of the tunnel.
+section: "3"
+topics:
+    - routing
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

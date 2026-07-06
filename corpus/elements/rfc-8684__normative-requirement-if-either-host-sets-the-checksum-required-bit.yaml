@@ -1,0 +1,10 @@
+document: rfc-8684
+kind: normative-requirement
+summary: If either host sets the Checksum Required bit (A=1) in its MP_CAPABLE SYN, checksums MUST be used for the connection. If a host receives A=1 but does not want to use checksums, it MUST fall back to regular TCP by ignoring the MP_CAPABLE option.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - multipath
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

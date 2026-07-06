@@ -1,0 +1,11 @@
+document: rfc-8684
+kind: security-consideration
+summary: Keys are sent in the clear only in the MP_CAPABLE handshake and MP_FASTCLOSE; all subsequent subflow authentications use HMAC-SHA256 over the exchanged keys and per-connection random nonces to prevent replay attacks. ADD_ADDR is protected by an HMAC to prevent address injection by on-path attackers.
+section: "5"
+topics:
+    - multipath
+    - tcp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

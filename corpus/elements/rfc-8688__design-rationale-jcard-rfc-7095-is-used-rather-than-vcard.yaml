@@ -1,0 +1,10 @@
+document: rfc-8688
+kind: design-rationale
+summary: jCard (RFC 7095) is used rather than vCard (RFC 6350) for the remediation contact because jCard is JSON-encoded and can be integrity-protected via JSON Web Signature (JWS), following the same pattern as STIR (RFC 8224). Signing is essential to prevent malicious intermediaries from inserting phishing contact information.
+section: "1"
+topics:
+    - sip
+    - jose
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

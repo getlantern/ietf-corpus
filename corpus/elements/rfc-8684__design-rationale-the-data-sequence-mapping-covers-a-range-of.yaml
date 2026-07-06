@@ -1,0 +1,9 @@
+document: rfc-8684
+kind: design-rationale
+summary: The Data Sequence Mapping covers a range of bytes (subflow sequence space + length) rather than using per-packet signaling, to handle TCP segmentation offloading on NICs and Performance Enhancing Proxies that split or coalesce segments independently of the stack generating the data.
+section: 3.3.1
+topics:
+    - multipath
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

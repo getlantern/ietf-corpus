@@ -1,0 +1,11 @@
+document: rfc-8689
+kind: normative-requirement
+summary: If any REQUIRETLS step fails (TLS negotiation, certificate validation, or REQUIRETLS not advertised), the client MUST issue QUIT and retry with subsequent MX hosts. If no more MX hosts remain, the client MUST NOT transmit the message.
+section: 4.2.1
+rfc2119_level: MUST NOT
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

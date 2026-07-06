@@ -1,0 +1,10 @@
+document: rfc-8689
+kind: security-consideration
+summary: REQUIRETLS is effective against passive eavesdropping attacks because it refuses to send messages in the clear if TLS negotiation fails. Active attacks that modify the STARTTLS command (e.g., replacing it with an illegal string) are also defeated, as REQUIRETLS detects STARTTLS failure and declines to transmit.
+section: "8.1"
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

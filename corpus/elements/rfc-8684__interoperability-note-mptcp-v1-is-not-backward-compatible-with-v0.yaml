@@ -1,0 +1,9 @@
+document: rfc-8684
+kind: interoperability-note
+summary: MPTCP v1 is not backward compatible with v0 (RFC 6824). When a v1 initiator contacts a v0-only listener, the listener ignores the v1 SYN (which lacks a key) and replies without MP_CAPABLE. The v1 initiator MAY then retry with v0 if it supports it, or fall back to plain TCP.
+section: "3.1"
+topics:
+    - multipath
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

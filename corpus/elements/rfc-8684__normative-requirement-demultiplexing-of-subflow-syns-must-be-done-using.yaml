@@ -1,0 +1,10 @@
+document: rfc-8684
+kind: normative-requirement
+summary: Demultiplexing of subflow SYNs MUST be done using the token (not destination port as in standard TCP). If the token is unknown or local policy prohibits the subflow, the receiver MUST respond with a TCP RST, optionally including MP_TCPRST with an 'Administratively prohibited' reason code.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - multipath
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

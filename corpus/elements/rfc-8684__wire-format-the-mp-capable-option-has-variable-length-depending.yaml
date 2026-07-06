@@ -1,0 +1,10 @@
+document: rfc-8684
+kind: wire-format
+summary: 'The MP_CAPABLE option has variable length depending on which handshake packet it appears in: SYN carries only the 4-byte header (Kind, Length, Subtype, Version, flags); SYN/ACK adds the sender''s 64-bit key (Length=12); ACK adds both keys (Length=20); ACK with first data also includes Data-Level Length and optional Checksum (Length=22 or 24).'
+section: "3.1"
+topics:
+    - multipath
+    - tcp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

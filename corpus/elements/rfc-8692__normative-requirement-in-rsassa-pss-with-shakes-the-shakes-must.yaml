@@ -1,0 +1,10 @@
+document: rfc-8692
+kind: normative-requirement
+summary: In RSASSA-PSS with SHAKEs, the SHAKEs MUST be used natively as the MGF, instead of the MGF1 algorithm that uses the hash function in multiple iterations. The trailerField MUST be 1, representing the trailer field with hexadecimal value 0xBC.
+section: 4.1.1
+rfc2119_level: MUST
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

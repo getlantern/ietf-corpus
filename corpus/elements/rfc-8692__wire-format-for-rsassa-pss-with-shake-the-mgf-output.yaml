@@ -1,0 +1,9 @@
+document: rfc-8692
+kind: wire-format
+summary: For RSASSA-PSS with SHAKE, the MGF output length maskLen is (8*emLen - 264) bits for SHAKE128 or (8*emLen - 520) bits for SHAKE256, where emLen = ceil((n-1)/8) and n is the RSA modulus in bits. For a 2048-bit modulus, SHAKE128 MGF output is 1784 bits and SHAKE256 MGF output is 1528 bits.
+section: 4.1.1
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

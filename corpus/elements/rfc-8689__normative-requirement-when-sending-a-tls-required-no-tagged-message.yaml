@@ -1,0 +1,10 @@
+document: rfc-8689
+kind: normative-requirement
+summary: 'When sending a ''TLS-Required: No'' tagged message, the sending MTA MUST open an SMTP session and attempt STARTTLS if possible, but MUST NOT fail delivery if STARTTLS cannot be negotiated; recipient domain policies (MTA-STS, DANE) MUST be ignored.'
+section: 4.2.2
+rfc2119_level: MUST
+topics:
+    - email
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

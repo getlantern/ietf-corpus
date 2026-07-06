@@ -1,0 +1,10 @@
+document: rfc-8685
+kind: normative-requirement
+summary: When the OF-List TLV is included inside the OF object, the OF code in the OF object MUST be one of the H-PCE OFs (MTD/MBN/MCTD), and the OF code in the OF-List TLV MUST NOT be an H-PCE OF. Violation requires a PCErr with Error-Type=10, Error-Value=23 (Incompatible OF codes in H-PCE).
+section: 3.4.2
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

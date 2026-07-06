@@ -1,0 +1,10 @@
+document: rfc-8689
+kind: security-consideration
+summary: REQUIRETLS is a transport-layer security mechanism only; messages are not encrypted end-to-end and are visible in cleartext to intermediate MTAs on the delivery path. Messages containing sensitive content that MTAs should not access MUST use end-to-end content encryption such as OpenPGP or S/MIME.
+section: "8.3"
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

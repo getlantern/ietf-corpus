@@ -1,0 +1,11 @@
+document: rfc-8684
+kind: normative-requirement
+summary: An MPTCP implementation receiving a duplicate ACK that contains an MPTCP option MUST NOT treat it as a signal of congestion. An implementation SHOULD NOT send more than two duplicate ACKs in a row solely for the purpose of carrying MPTCP options.
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - multipath
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,12 @@
+document: rfc-8689
+kind: normative-requirement
+summary: When the MX lookup for a REQUIRETLS message is not accompanied by a valid DNSSEC signature, the client MUST also validate the SMTP server name using MTA-STS. The server hostname MUST match the DNS-ID or CN-ID of the certificate presented.
+section: 4.2.1
+rfc2119_level: MUST
+topics:
+    - email
+    - tls
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

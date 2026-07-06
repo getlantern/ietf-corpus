@@ -1,0 +1,10 @@
+document: rfc-8689
+kind: security-consideration
+summary: Bounce (non-delivery) messages for REQUIRETLS-tagged messages must themselves be sent with REQUIRETLS; if the return path lacks REQUIRETLS support, bounce messages will be lost. Senders requiring TLS should ensure they can also receive mail using REQUIRETLS to avoid losing bounce notifications.
+section: "5"
+topics:
+    - email
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

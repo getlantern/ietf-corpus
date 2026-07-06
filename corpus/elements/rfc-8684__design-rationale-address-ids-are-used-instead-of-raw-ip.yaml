@@ -1,0 +1,10 @@
+document: rfc-8684
+kind: design-rationale
+summary: Address IDs are used instead of raw IP addresses to identify endpoints, so that address removal and subflow association work correctly through NATs that change the source IP address. The Address ID is locally assigned by the sender and must map uniquely to a source address.
+section: "2.7"
+topics:
+    - multipath
+    - tcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

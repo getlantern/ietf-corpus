@@ -1,0 +1,11 @@
+document: rfc-8688
+kind: normative-requirement
+summary: Upon receiving a 608 response, the UAC MUST check the 'iat' claim in the JWT and MUST reject jCards with an expired 'iat'. A reasonable expiry window is on the order of one minute to account for clock drift and audio announcement delays.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - sip
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-8684
+kind: normative-requirement
+summary: The connection token MUST be the most significant 32 bits of the SHA-256 hash of the host's key, and the IDSN MUST be the least significant 64 bits of the SHA-256 hash of the key. The key MUST be hashed in network byte order.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - multipath
+    - tcp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

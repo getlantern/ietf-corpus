@@ -1,0 +1,9 @@
+document: rfc-8692
+kind: design-rationale
+summary: SHAKE functions are used natively as the MGF instead of MGF1 because SHAKE is a variable-length extendable-output function, making native use straightforward. All algorithm parameters (hash, MGF, trailer, salt) are embedded in the OID definition itself, eliminating the need for separate RSASSA-PSS-params encoding and simplifying the AlgorithmIdentifier structure.
+section: 4.1.1
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

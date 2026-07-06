@@ -1,0 +1,12 @@
+document: rfc-8684
+kind: normative-requirement
+summary: A host's MPTCP key MUST be hard to guess and MUST be unique across all current MPTCP connections on that host. An implementation SHOULD check its list of connection tokens for collisions before sending a key and generate a new key if a collision is found.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - multipath
+    - tcp
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

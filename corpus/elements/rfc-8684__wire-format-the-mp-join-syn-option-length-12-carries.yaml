@@ -1,0 +1,10 @@
+document: rfc-8684
+kind: wire-format
+summary: 'The MP_JOIN SYN option (Length=12) carries: Subtype, 3 reserved bits, B (backup) flag, Address ID (8 bits), Receiver''s Token (32 bits), and Sender''s Random Number (32 bits). The SYN/ACK variant (Length=16) replaces the token with a truncated 64-bit HMAC and adds its own nonce. The ACK variant (Length=24) carries only the full 160-bit truncated HMAC.'
+section: "3.2"
+topics:
+    - multipath
+    - tcp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

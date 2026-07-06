@@ -1,0 +1,9 @@
+document: rfc-8684
+kind: state-machine
+summary: The MP_JOIN ACK places the subflow in the PRE_ESTABLISHED state; it transitions to ESTABLISHED only on receipt of a TCP ACK from the peer. Data MUST NOT be sent while in PRE_ESTABLISHED. The ACK carrying the initiator's 160-bit HMAC must be retransmitted until acknowledged.
+section: "3.2"
+topics:
+    - multipath
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

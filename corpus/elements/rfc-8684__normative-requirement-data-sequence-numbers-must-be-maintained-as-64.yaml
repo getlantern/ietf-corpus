@@ -1,0 +1,10 @@
+document: rfc-8684
+kind: normative-requirement
+summary: Data sequence numbers MUST be maintained as 64-bit quantities internally. An implementation MUST send the full 64-bit DSN when transmitting at a rate where the 32-bit value could wrap within the MSL. Implementations MUST accept both 32-bit and 64-bit DSN values and MUST promote 32-bit values to 64-bit.
+section: 3.3.1
+rfc2119_level: MUST
+topics:
+    - multipath
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
