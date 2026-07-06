@@ -1,0 +1,8 @@
+document: rfc-9290
+kind: design-rationale
+summary: The response-code value is the numeric representation of the CoAP code (e.g., 132 for 4.04), not the dotted presentation form. This is because CoAP response codes are defined as structured bytes, and the numeric form is canonical; it also allows the field to persist in logs and databases without CoAP framing context.
+section: "2"
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

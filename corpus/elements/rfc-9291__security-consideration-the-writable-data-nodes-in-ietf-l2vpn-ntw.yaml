@@ -1,0 +1,11 @@
+document: rfc-9291
+kind: security-consideration
+summary: 'The writable data nodes in ''ietf-l2vpn-ntw'' and ''ietf-ethernet-segment'' (VPN topology, signaling parameters, route targets, MAC policies, ESI assignments) are sensitive: unauthorized write access could disrupt L2VPN services or redirect traffic to unintended parties. Standard NETCONF/RESTCONF access control (NACM, RFC 8341) must be applied to restrict modification to authorized principals.'
+section: "9"
+topics:
+    - yang
+    - security
+    - vpn
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

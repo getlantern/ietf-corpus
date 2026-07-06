@@ -1,0 +1,8 @@
+document: rfc-9297
+kind: interoperability-note
+summary: In HTTP/1.x, only the last HTTP request on a connection can start the Capsule Protocol because the data stream consists of all bytes following the blank line concluding the header section, making it impossible to multiplex Capsule Protocol sessions on a single HTTP/1.x connection.
+section: "3.1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

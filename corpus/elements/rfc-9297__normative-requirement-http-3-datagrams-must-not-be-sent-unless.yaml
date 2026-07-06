@@ -1,0 +1,10 @@
+document: rfc-9297
+kind: normative-requirement
+summary: HTTP/3 Datagrams MUST NOT be sent unless the corresponding stream's send side is open. If a datagram is received after the corresponding stream's receive side is closed, the received datagrams MUST be silently dropped.
+section: "2.1"
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

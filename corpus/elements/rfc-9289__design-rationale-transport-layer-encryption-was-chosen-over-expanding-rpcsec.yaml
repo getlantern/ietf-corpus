@@ -1,0 +1,10 @@
+document: rfc-9289
+kind: design-rationale
+summary: Transport-layer encryption was chosen over expanding RPCSEC_GSS privacy because RPCSEC_GSS leaves parts of the RPC header in cleartext (metadata confidentiality loss), cannot be offloaded at scale (per-user keying), and its deployment complexity has historically led to non-deployment — making a weaker but widely deployed alternative preferable.
+section: "1"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

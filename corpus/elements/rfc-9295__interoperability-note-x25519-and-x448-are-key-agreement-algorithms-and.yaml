@@ -1,0 +1,9 @@
+document: rfc-9295
+kind: interoperability-note
+summary: X25519 and X448 are key agreement algorithms and MUST NOT carry digitalSignature or nonRepudiation bits; Ed25519 and Ed448 are signature algorithms and MUST NOT carry keyAgreement bits. Mixing these bit patterns across algorithm types indicates a misconfigured certificate.
+section: "3"
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

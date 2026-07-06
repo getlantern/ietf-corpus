@@ -1,0 +1,8 @@
+document: rfc-9287
+kind: design-rationale
+summary: The QUIC Bit (second-most significant bit of the first byte, value 0x40) has a fixed value in QUIC version 1 to allow endpoints to efficiently distinguish QUIC from other protocols. If systems come to depend on this fixed value, it could become infeasible to define a future QUIC version that attributes semantics to the bit, motivating the greasing mechanism.
+section: "1"
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

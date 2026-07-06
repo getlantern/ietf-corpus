@@ -1,0 +1,9 @@
+document: rfc-9286
+kind: interoperability-note
+summary: During CA key rollover (RFC 6489), two CA instances may simultaneously publish into the same repository publication point, resulting in multiple manifests. Each manifest describes only the objects of its associated CA instance, and manifest processing is performed separately per CA instance guided by each CA certificate's SIA.
+section: "6.1"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

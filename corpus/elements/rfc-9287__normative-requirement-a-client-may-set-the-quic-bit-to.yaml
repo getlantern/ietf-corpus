@@ -1,0 +1,9 @@
+document: rfc-9287
+kind: normative-requirement
+summary: A client MAY set the QUIC Bit to 0 in Initial, Handshake, or 0-RTT packets sent prior to receiving server transport parameters, but MUST NOT do so unless the Initial packets include a NEW_TOKEN frame token received from the server less than 604800 seconds (7 days) prior on a connection where the server also included grease_quic_bit.
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

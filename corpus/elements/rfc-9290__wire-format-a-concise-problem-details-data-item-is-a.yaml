@@ -1,0 +1,9 @@
+document: rfc-9290
+kind: wire-format
+summary: 'A Concise Problem Details data item is a CBOR map with optional fields: title (key -1, text/tag38), detail (key -2, text/tag38), instance (key -3, ~uri), response-code (key -4, uint .size 1), base-uri (key -5, ~uri), base-lang (key -6, tag38-ltag), base-rtl (key -7, tag38-direction), plus standard-problem-detail-entries (negative integer keys) and custom-problem-detail-entries (unsigned integer or URI keys mapping to nested maps). The map must be non-empty.'
+section: "2"
+topics:
+    - cbor
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

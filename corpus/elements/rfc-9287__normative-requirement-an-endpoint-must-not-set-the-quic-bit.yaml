@@ -1,0 +1,9 @@
+document: rfc-9287
+kind: normative-requirement
+summary: An endpoint MUST NOT set the QUIC Bit to 0 without knowing whether the peer supports the extension. Stateless Reset packets are unlikely to be able to use the cleared QUIC Bit since they are only used after loss of connection state.
+section: "3.1"
+rfc2119_level: MUST NOT
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

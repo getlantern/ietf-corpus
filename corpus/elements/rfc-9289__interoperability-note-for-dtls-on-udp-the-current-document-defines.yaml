@@ -1,0 +1,9 @@
+document: rfc-9289
+kind: interoperability-note
+summary: For DTLS on UDP, the current document defines no mechanism for a server to distinguish DTLS traffic from unprotected RPC traffic on the same port; each peer matches ingress datagrams to existing DTLS session state, and any datagram failing the match is treated as a plain RPC message.
+section: 5.1.2
+topics:
+    - tls
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

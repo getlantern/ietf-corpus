@@ -1,0 +1,11 @@
+document: rfc-9297
+kind: normative-requirement
+summary: Receivers SHOULD avoid accumulating the full Capsule Value field before processing, because doing so can consume flow control in underlying layers and lead to deadlocks if Capsule data exhausts the flow control window.
+section: "3.2"
+rfc2119_level: SHOULD
+topics:
+    - http
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

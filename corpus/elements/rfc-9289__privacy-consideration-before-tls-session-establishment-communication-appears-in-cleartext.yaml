@@ -1,0 +1,10 @@
+document: rfc-9289
+kind: privacy-consideration
+summary: 'Before TLS session establishment, communication appears in cleartext: transport handshake, NULL AUTH_TLS probe, and initial TLS handshake are visible. If PSK is used, the PSK identifier is exposed during the handshake and can track the RPC client. A secure client limits unprotected RPC exchanges.'
+section: 6.1.2
+topics:
+    - tls
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

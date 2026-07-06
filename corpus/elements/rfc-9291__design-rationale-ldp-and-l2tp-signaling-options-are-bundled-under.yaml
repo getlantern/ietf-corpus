@@ -1,0 +1,9 @@
+document: rfc-9291
+kind: design-rationale
+summary: LDP and L2TP signaling options are bundled under a single 'ldp-or-l2tp' container because both protocols share the AGI, SAII, and TAII attachment identifier parameters (encoded per RFC 4446 §3.4); only the inner choice discriminates between LDP-specific and L2TP-specific leaves.
+section: 7.5.2
+topics:
+    - yang
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

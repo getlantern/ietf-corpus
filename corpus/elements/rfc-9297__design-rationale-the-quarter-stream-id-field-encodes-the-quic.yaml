@@ -1,0 +1,9 @@
+document: rfc-9297
+kind: design-rationale
+summary: The Quarter Stream ID field encodes the QUIC stream ID divided by four because HTTP requests are sent on client-initiated bidirectional streams whose IDs are divisible by four. This division reduces the encoded value and exploits a structural property of QUIC stream ID assignment.
+section: "2.1"
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

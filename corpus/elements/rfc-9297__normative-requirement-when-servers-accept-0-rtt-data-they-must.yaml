@@ -1,0 +1,11 @@
+document: rfc-9297
+kind: normative-requirement
+summary: When servers accept 0-RTT data, they MUST send a SETTINGS_H3_DATAGRAM setting greater than or equal to the value sent in the connection where the NewSessionTicket was sent. Clients MUST validate the new setting value is >= the stored value, and terminate with H3_SETTINGS_ERROR if not.
+section: 2.1.1
+rfc2119_level: MUST
+topics:
+    - http
+    - quic
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

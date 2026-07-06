@@ -1,0 +1,10 @@
+document: rfc-9286
+kind: normative-requirement
+summary: If a fetch fails, the RP MUST issue a warning and SHOULD continue using cached versions of objects for the CA instance until they become stale or are replaced by a successful fetch. The RP MUST NOT try to acquire subordinate signed objects until the next scheduled fetch interval.
+section: "6.6"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

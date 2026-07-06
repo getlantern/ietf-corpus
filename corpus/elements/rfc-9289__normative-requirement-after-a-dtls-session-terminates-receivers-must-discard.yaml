@@ -1,0 +1,10 @@
+document: rfc-9289
+kind: normative-requirement
+summary: After a DTLS session terminates, receivers MUST discard datagrams on the same 5-tuple for a sufficient time (expected to be at least 60 seconds) to ensure retransmissions have ceased and in-flight packets have been delivered.
+section: 5.1.2
+rfc2119_level: MUST
+topics:
+    - tls
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

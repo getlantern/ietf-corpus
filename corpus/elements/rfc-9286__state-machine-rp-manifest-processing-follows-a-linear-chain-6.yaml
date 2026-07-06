@@ -1,0 +1,9 @@
+document: rfc-9286
+kind: state-machine
+summary: 'RP manifest processing follows a linear chain: (6.2) acquire manifest via SIA URI → (6.3) check thisUpdate/nextUpdate time validity → (6.4) acquire all listed files → (6.5) verify file hashes → success. Any failure in steps 6.2–6.5 transitions to the failed-fetch state (6.6), where the RP falls back to cached data and suppresses subordinate object retrieval.'
+section: "6.1"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

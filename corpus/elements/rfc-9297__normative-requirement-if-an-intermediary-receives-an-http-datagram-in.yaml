@@ -1,0 +1,10 @@
+document: rfc-9297
+kind: normative-requirement
+summary: If an intermediary receives an HTTP Datagram in a QUIC DATAGRAM frame and is forwarding on a connection that supports QUIC DATAGRAM frames, the intermediary SHOULD NOT convert it to a DATAGRAM Capsule. If too large to fit in a DATAGRAM frame, the intermediary SHOULD drop the datagram rather than convert it.
+section: "3.5"
+rfc2119_level: SHOULD NOT
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

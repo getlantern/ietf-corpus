@@ -1,0 +1,9 @@
+document: rfc-9289
+kind: state-machine
+summary: 'RPC-with-TLS negotiation: (1) client sends NULL RPC with AUTH_TLS credential; (2) if server replies with MSG_ACCEPTED and ''STARTTLS'' verifier, client proceeds to TLS ClientHello on the same connection/port; (3) on handshake success, all subsequent traffic is TLS-protected; on failure, the failure is reported as AUTH_ERROR.'
+section: "4.1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

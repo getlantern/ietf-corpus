@@ -1,0 +1,10 @@
+document: rfc-9297
+kind: normative-requirement
+summary: Receipt of an HTTP/3 Datagram with a Quarter Stream ID larger than 2^60-1 MUST be treated as an HTTP/3 connection error of type H3_DATAGRAM_ERROR (0x33). Receipt of a QUIC DATAGRAM frame whose payload is too short to parse the Quarter Stream ID MUST also be treated as H3_DATAGRAM_ERROR.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9289
+kind: normative-requirement
+summary: If an RPC client uses the AUTH_TLS flavor on any procedure other than NULL, or sends an AUTH_TLS probe within an existing (D)TLS session, the RPC server MUST reject the call with MSG_DENIED, reject_stat AUTH_ERROR, auth_stat AUTH_BADCRED.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

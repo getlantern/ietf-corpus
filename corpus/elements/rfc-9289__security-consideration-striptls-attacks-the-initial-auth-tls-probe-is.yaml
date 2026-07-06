@@ -1,0 +1,10 @@
+document: rfc-9289
+kind: security-consideration
+summary: 'STRIPTLS attacks: the initial AUTH_TLS probe is in cleartext, allowing an on-path attacker to suppress TLS support signaling. Mitigation options include checking DANE TLSA records before initiating RPC-with-TLS, or enforcing a policy that requires TLS on every connection and rejects fallback to cleartext.'
+section: 6.1.1
+topics:
+    - tls
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

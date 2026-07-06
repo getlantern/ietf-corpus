@@ -1,0 +1,10 @@
+document: rfc-9289
+kind: security-consideration
+summary: When AUTH_SYS is used with RPC-with-TLS, mutual TLS authentication is RECOMMENDED. Without it, the server acts on RPC requests for which there is no trustworthy authentication of the client; a client can still misrepresent user identity without server detection.
+section: "6.3"
+rfc2119_level: RECOMMENDED
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

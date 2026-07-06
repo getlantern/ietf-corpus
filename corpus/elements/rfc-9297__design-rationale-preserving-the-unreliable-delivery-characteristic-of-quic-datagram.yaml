@@ -1,0 +1,9 @@
+document: rfc-9297
+kind: design-rationale
+summary: Preserving the unreliable delivery characteristic of QUIC DATAGRAM frames end-to-end is important because methods such as DPLPMTUD depend on it. An intermediary that converts QUIC DATAGRAM frames to DATAGRAM Capsules allows arbitrarily large HTTP Datagrams without loss, misrepresenting the true path properties and defeating PMTU discovery.
+section: "3.5"
+topics:
+    - quic
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

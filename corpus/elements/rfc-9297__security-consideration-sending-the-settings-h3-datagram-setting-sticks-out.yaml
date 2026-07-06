@@ -1,0 +1,11 @@
+document: rfc-9297
+kind: security-consideration
+summary: Sending the SETTINGS_H3_DATAGRAM setting 'sticks out', allowing probing clients to detect whether a server supports HTTP Datagrams over QUIC DATAGRAM frames. To mitigate this fingerprinting, implementations that support the feature are recommended to always send the setting with value 1, even when the application does not intend to use HTTP Datagrams.
+section: "4"
+topics:
+    - security
+    - http
+    - quic
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

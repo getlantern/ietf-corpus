@@ -1,0 +1,9 @@
+document: rfc-9291
+kind: design-rationale
+summary: The 'connection' container deliberately excludes physical-layer configuration, which is left to dedicated device modules (e.g., RFC 8343 interfaces module). This avoids manipulating global parameters at the service level and reduces the risk of inadvertently impacting other services sharing the same physical interface.
+section: 7.6.1
+topics:
+    - yang
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

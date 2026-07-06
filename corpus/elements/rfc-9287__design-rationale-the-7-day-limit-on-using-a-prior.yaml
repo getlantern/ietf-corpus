@@ -1,0 +1,8 @@
+document: rfc-9287
+kind: design-rationale
+summary: The 7-day limit on using a prior server NEW_TOKEN to pre-clear the QUIC Bit accommodates server configuration changes. If the server's configuration changes and removes grease_quic_bit support, a client that still clears the bit could cause the server to drop packets and trigger connection failures.
+section: "3.1"
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9286
+kind: design-rationale
+summary: The manifest does not include a self-reference (its own file name and hash) because it would be impossible to compute the hash of the manifest itself prior to it being signed. The manifest's publication URL is kept stable across generation cycles because it is embedded in the SIA of issued certificates.
+section: "5.1"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

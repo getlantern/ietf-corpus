@@ -1,0 +1,9 @@
+document: rfc-9286
+kind: design-rationale
+summary: Every RPKI signed object includes the EE certificate used to verify it within the CMS wrapper (per RFC 6488), so there is no requirement to separately publish EE certificates at the CA's repository publication point. This avoids redundant publication and simplifies repository management.
+section: "2"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
