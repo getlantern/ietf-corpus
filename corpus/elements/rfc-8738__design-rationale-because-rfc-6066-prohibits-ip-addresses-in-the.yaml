@@ -1,0 +1,10 @@
+document: rfc-8738
+kind: design-rationale
+summary: Because RFC 6066 prohibits IP addresses in the TLS SNI HostName field, the reverse DNS mapping (IN-ADDR.ARPA / IP6.ARPA) is used as a workaround to allow the "tls-alpn-01" challenge to function with IP address identifiers without violating TLS extension constraints.
+section: "6"
+topics:
+    - acme
+    - tls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

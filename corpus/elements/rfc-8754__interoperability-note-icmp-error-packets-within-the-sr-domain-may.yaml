@@ -1,0 +1,9 @@
+document: rfc-8754
+kind: interoperability-note
+summary: ICMP error packets within the SR domain may contain an SRH where the destination address changes at each segment. To determine the ultimate destination for protocol error handlers, implementations should walk extension headers to the SRH and use Segment List[0] as the destination address of the invoking packet.
+section: "5.4"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

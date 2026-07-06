@@ -1,0 +1,10 @@
+document: rfc-8739
+kind: design-rationale
+summary: The lifetime-adjust attribute is provided to let clients pre-date certificate validity (left-pad) to accommodate clients with skewed clocks. Research shows ~95% of severe clock skews (clients >24h behind) fall within 6-7 days, suggesting a 5-7 day adjustment covers 97-99% of skewed clients for Web-facing certificates.
+section: "4.1"
+topics:
+    - acme
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

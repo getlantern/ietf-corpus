@@ -1,0 +1,9 @@
+document: rfc-8739
+kind: normative-requirement
+summary: A client MUST NOT send a cancellation request for an Order not in 'valid' state, and a server MUST return HTTP 400 with type 'urn:ietf:params:acme:error:autoRenewalCancellationInvalid' for such requests. Explicit revocation via revokeCert is not supported for STAR certificates; a server receiving such a request MUST return 403 with type 'urn:ietf:params:acme:error:autoRenewalRevocationNotSupported'.
+section: 3.1.2
+rfc2119_level: MUST NOT
+topics:
+    - acme
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

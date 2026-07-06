@@ -1,0 +1,10 @@
+document: rfc-8739
+kind: normative-requirement
+summary: For expired Orders, the server MUST respond with 403 Forbidden to any requests to the star-certificate endpoint, with a problem document of type 'urn:ietf:params:acme:error:autoRenewalExpired'. The Order resource's state remains 'valid' per the base protocol.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - acme
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

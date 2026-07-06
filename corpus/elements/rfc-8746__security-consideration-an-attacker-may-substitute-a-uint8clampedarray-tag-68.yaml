@@ -1,0 +1,9 @@
+document: rfc-8746
+kind: security-consideration
+summary: An attacker may substitute a Uint8ClampedArray (tag 68) for a Uint8Array (tag 64) or vice versa, causing unexpected processing semantics. Applications must validate the specific typed array variant during input validation to prevent this.
+section: "7"
+topics:
+    - cbor
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

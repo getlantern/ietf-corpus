@@ -1,0 +1,9 @@
+document: rfc-8748
+kind: normative-requirement
+summary: If a server receives a command without required fee extension data, it MUST respond with a 2003 'Required parameter missing' error. If the client-provided total fee is less than the server's calculation or the currency is inappropriate, the server MUST reject with a 2004 'Parameter value range error'.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

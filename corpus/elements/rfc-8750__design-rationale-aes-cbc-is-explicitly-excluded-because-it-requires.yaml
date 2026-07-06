@@ -1,0 +1,10 @@
+document: rfc-8750
+kind: design-rationale
+summary: AES-CBC is explicitly excluded because it requires an unpredictable IV; deriving the IV from the packet counter is insecure for CBC and has led to real-world chosen-plaintext attacks such as BEAST.
+section: "1"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

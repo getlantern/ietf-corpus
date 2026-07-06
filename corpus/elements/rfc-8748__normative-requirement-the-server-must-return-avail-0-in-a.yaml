@@ -1,0 +1,9 @@
+document: rfc-8748
+kind: normative-requirement
+summary: The server MUST return avail='0' in a <check> response for any object lacking a <fee:check> extension when the server would fail a domain <create> command without fee data for that object. If fees are ambiguous (multiple possible combinations), the server MUST reject the command with a 2003 error.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8739
+kind: normative-requirement
+summary: The server SHOULD include 'Cert-Not-Before' and 'Cert-Not-After' HTTP headers in certificate fetch responses. When they exist, they MUST equal the respective fields inside the end-entity certificate. If an intermediary inserts these headers, it MUST ensure the values match the certificate.
+section: "3.3"
+rfc2119_level: SHOULD
+topics:
+    - acme
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

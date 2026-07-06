@@ -1,0 +1,10 @@
+document: rfc-8740
+kind: design-rationale
+summary: RFC 7540 allowed renegotiation before the HTTP/2 connection preface to provide confidentiality for the client certificate. TLS 1.3 encrypts the client certificate in the initial handshake, making this pre-preface allowance unnecessary and thus the prohibition applies unconditionally.
+section: "3"
+topics:
+    - http
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

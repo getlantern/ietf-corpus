@@ -1,0 +1,10 @@
+document: rfc-8739
+kind: security-consideration
+summary: 'STAR amplifies denial-of-service risk: a single Order can produce hundreds of certificates, allowing attackers to exhaust CA resources by setting aggressively short lifetimes. The CA SHOULD enforce a minimum auto-renewal lifetime value and/or rate-limit internal certificate generation, accounting for both scheduled renewals and new requests.'
+section: "6.2"
+rfc2119_level: SHOULD
+topics:
+    - acme
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

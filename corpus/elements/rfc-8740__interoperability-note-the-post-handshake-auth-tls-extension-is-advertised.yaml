@@ -1,0 +1,9 @@
+document: rfc-8740
+kind: interoperability-note
+summary: The 'post_handshake_auth' TLS extension is advertised independently of ALPN, so its presence in a ClientHello does not indicate HTTP/2 support for post-handshake authentication. HTTP/2 clients offering HTTP/1.1 alongside HTTP/2 MAY include 'post_handshake_auth' to support HTTP/1.1 only.
+section: "3"
+topics:
+    - http
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

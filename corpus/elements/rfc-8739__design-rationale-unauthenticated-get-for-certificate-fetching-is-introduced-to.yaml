@@ -1,0 +1,9 @@
+document: rfc-8739
+kind: design-rationale
+summary: Unauthenticated GET for certificate fetching is introduced to improve HTTP cacheability and reduce dependence on ACME server availability. POST-as-GET cannot be cached by on-path HTTP caches, making STAR clients in high-scale deployments (e.g., many CDN edge nodes) critically dependent on server uptime.
+section: "4.3"
+topics:
+    - acme
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-8741
+kind: security-consideration
+summary: 'A new attack vector is introduced: an attacker may flood the PCC with control requests for all LSPs at a rate exceeding the PCC''s processing capacity, either by spoofing messages or by compromising the PCE. The PCC SHOULD be configured with a threshold rate for delegation requests, and if the threshold is reached, it is RECOMMENDED to log the issue.'
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

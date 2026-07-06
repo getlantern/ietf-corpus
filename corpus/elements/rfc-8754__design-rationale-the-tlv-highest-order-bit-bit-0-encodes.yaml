@@ -1,0 +1,9 @@
+document: rfc-8754
+kind: design-rationale
+summary: 'The TLV highest-order bit (bit 0) encodes mutability en route: 0 means TLV data does not change en route, 1 means it may change. This design allows the SRH source to build headers with predictable immutability guarantees without requiring per-TLV-type processing rules at every node.'
+section: "2.1"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8746
+kind: security-consideration
+summary: A decoder must not be driven into an undefined state by array elements that violate the homogeneous array tag's promise, since a maliciously constructed CBOR input can tag non-homogeneous data with tag 41. The decoder must continue to fulfill its API contract regardless.
+section: "7"
+topics:
+    - cbor
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

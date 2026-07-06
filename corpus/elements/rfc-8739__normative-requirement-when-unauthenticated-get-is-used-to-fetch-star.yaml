@@ -1,0 +1,10 @@
+document: rfc-8739
+kind: normative-requirement
+summary: When unauthenticated GET is used to fetch STAR certificates, the server SHALL use appropriate cache directives (RFC 7234 Section 5.2) to set the response freshness lifetime such that on-path caches consider the response stale before or at the time the certificate's effective lifetime expires.
+section: "4.3"
+rfc2119_level: REQUIRED
+topics:
+    - acme
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8754
+kind: security-consideration
+summary: 'The SR domain must enforce two levels of access control: (1) edge nodes drop any incoming external packet destined to a SID within the SR domain using an inbound IACL, and (2) each SR node drops packets destined to its local SIDs arriving from source addresses outside the SR domain. Failure to implement these controls exposes the domain to the source-routing attacks documented in RFC 5095.'
+section: "5.1"
+topics:
+    - ip
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8754
+kind: state-machine
+summary: 'SRH processing at a segment endpoint: if Segments Left is zero, proceed to the next header. Otherwise, validate Last Entry and Segments Left bounds (send ICMP Parameter Problem on violation), decrement Segments Left, copy Segment List[Segments Left] to the IPv6 DA, check Hop Limit (send ICMP Time Exceeded if ≤1), decrement Hop Limit, and resubmit the packet.'
+section: 4.3.1.1
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

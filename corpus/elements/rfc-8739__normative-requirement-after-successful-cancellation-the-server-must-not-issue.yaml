@@ -1,0 +1,10 @@
+document: rfc-8739
+kind: normative-requirement
+summary: After successful cancellation, the server MUST NOT issue any additional certificates for the Order. The server MUST update Order status to 'canceled', MUST set an appropriate 'expires' date, and MUST respond with 403 Forbidden to any requests to the star-certificate endpoint, including a problem document of type 'urn:ietf:params:acme:error:autoRenewalCanceled'.
+section: 3.1.2
+rfc2119_level: MUST
+topics:
+    - acme
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

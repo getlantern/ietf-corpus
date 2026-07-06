@@ -1,0 +1,9 @@
+document: rfc-8739
+kind: protocol-element
+summary: 'The notBefore and notAfter of each STAR certificate are computed as: notAfter = min(nrd[i] + T, end); notBefore = nrd[i] - max(adjust_client, adjust_server), where adjust_client = min(T, la) and adjust_server = f * T (with 0.5 <= f < 1). The server MUST NOT set notBefore of the first certificate before the auto-renewal start-date.'
+section: "3.5"
+topics:
+    - acme
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

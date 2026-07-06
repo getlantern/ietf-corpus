@@ -1,0 +1,10 @@
+document: rfc-8739
+kind: normative-requirement
+summary: The next STAR certificate MUST be made available at the star-certificate URL halfway through the lifetime of the currently active certificate at the latest. The notBefore of the 'next' certificate MUST be set so that it is already valid when published. The server MUST NOT issue any certificates with notAfter after the auto-renewal end-date.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - acme
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

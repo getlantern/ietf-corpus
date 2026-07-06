@@ -1,0 +1,11 @@
+document: rfc-8739
+kind: design-rationale
+summary: 'STAR certificates replace revocation with expiration: instead of revoking a compromised certificate, the CA simply stops issuing the next short-term certificate in the sequence. This avoids reliance on unreliable revocation mechanisms (CRL/OCSP) by limiting the window of exposure to the certificate''s short validity period.'
+section: "1"
+topics:
+    - acme
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8750
+kind: design-rationale
+summary: Implicit IV is motivated by IoT use cases where saving the 8-byte IV per packet is significant. Since counter-based AEAD algorithms (AES-GCM, AES-CCM, ChaCha20-Poly1305) require the IV to be unique but not unpredictable, the ESP Sequence Number can directly serve as the IV source.
+section: "1"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

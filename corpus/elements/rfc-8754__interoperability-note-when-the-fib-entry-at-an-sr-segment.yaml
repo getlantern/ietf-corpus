@@ -1,0 +1,9 @@
+document: rfc-8754
+kind: interoperability-note
+summary: 'When the FIB entry at an SR segment endpoint represents a local interface but is not instantiated as an SRv6 SID, the node processes per RFC 8200 routing header rules: if Segments Left is zero, ignore the SRH and proceed to the next header; if Segments Left is non-zero, discard and send ICMP Parameter Problem pointing to the unrecognized Routing Type.'
+section: 4.3.2
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
