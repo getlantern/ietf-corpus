@@ -1,0 +1,10 @@
+document: rfc-8697
+kind: normative-requirement
+summary: The OP-CONF-ASSOC-RANGE TLV MUST NOT appear more than once in an OPEN object; if it does, the session MUST be rejected with Error-Type 1, Error-value 1. Start-Assoc-ID values 0 and 0xffff MUST NOT be used; Range MUST be greater than 0 and (Start-Assoc-ID + Range) MUST NOT exceed 0xffff.
+section: "5.1"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

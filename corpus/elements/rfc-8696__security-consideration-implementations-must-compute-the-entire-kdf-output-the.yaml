@@ -1,0 +1,9 @@
+document: rfc-8696
+kind: security-consideration
+summary: Implementations must compute the entire KDF output (the key-encryption key) before outputting any portion of it, and must protect the resulting KEK. Compromise of the KEK may result in disclosure of all CEKs protected with that keying material.
+section: "7"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

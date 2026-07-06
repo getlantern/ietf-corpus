@@ -1,0 +1,10 @@
+document: rfc-8702
+kind: normative-requirement
+summary: In RSASSA-PSS with SHAKEs, the SHAKEs MUST be used natively as the mask generation function (MGF), instead of MGF1. The MGF output length is (8*emLen - 264) bits for SHAKE128 or (8*emLen - 520) bits for SHAKE256.
+section: 3.2.1
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

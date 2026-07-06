@@ -1,0 +1,8 @@
+document: rfc-8696
+kind: design-rationale
+summary: Two separate key management techniques are defined — keyTransPSK and keyAgreePSK — rather than one unified approach, because CMS already distinguishes key transport (e.g., RSA encrypt) from key agreement (e.g., ECDH), and each requires a structurally different way to produce the key-derivation key that is subsequently mixed with the PSK.
+section: "2"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

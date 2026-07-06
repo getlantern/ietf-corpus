@@ -1,0 +1,8 @@
+document: rfc-8708
+kind: wire-format
+summary: The HSS signature value for a standalone tree is u32str(0) || lms_signature. For a tree with Nspk signed public keys it is u32str(Nspk) || signed_public_key[0] || ... || signed_public_key[Nspk-1] || lms_signature, where Nspk is the number of hierarchy levels minus 1.
+section: "2.1"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

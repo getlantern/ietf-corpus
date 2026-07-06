@@ -1,0 +1,8 @@
+document: rfc-8706
+kind: state-machine
+summary: 'Restarting Router state table: states are Restarting, ADJ-Seen-RA, ADJ-Seen-CSNP, and SPF-Wait. Key transitions: restart event sends IIH/RR and starts T1/T2/T3; RX RA adjusts T3 and advances to ADJ-Seen-RA; RX CSNP-set advances to ADJ-Seen-CSNP; T3 expiry sets overload bit; LSP-DB-Sync cancels T2/T3 and triggers SPF; All-SPF-done clears overload bit, updates forwarding, and transitions to Running.'
+section: "4.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

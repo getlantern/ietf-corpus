@@ -1,0 +1,9 @@
+document: rfc-8696
+kind: security-consideration
+summary: The key-encryption algorithm must be as strong or stronger than the content-encryption algorithm; if the CEK is protected with 256-bit AES but wrapped with 128-bit AES, only 128 bits of protection are provided. Implementers must ensure matching algorithm strengths.
+section: "7"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

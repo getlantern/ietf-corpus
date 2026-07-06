@@ -1,0 +1,11 @@
+document: rfc-8705
+kind: security-consideration
+summary: For confidential clients using tls_client_auth or self_signed_tls_client_auth, refresh tokens are indirectly certificate-bound through the client_id and the requirement for certificate-based authentication. For public clients, the authorization server SHOULD explicitly bind the refresh token to the certificate and verify the binding on presentation.
+section: "7.1"
+rfc2119_level: SHOULD
+topics:
+    - oauth
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

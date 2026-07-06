@@ -1,0 +1,9 @@
+document: rfc-8707
+kind: security-consideration
+summary: Using only a single 'resource' parameter is encouraged. If a bearer token has multiple intended recipients (audiences), the token is valid at more than one protected resource and can be used by any one of those resources to access any of the others, requiring a high degree of trust between involved parties.
+section: "3"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

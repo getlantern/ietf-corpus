@@ -1,0 +1,9 @@
+document: rfc-8696
+kind: security-consideration
+summary: Implementers should not mix quantum-resistant key management algorithms with non-quantum-resistant counterparts on the same content — e.g., a message should not be protected by both KeyTransRecipientInfo and KeyTransPSKRecipientInfo simultaneously, as this makes the content vulnerable to a future quantum computer.
+section: "7"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

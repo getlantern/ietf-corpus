@@ -1,0 +1,8 @@
+document: rfc-8706
+kind: state-machine
+summary: 'Starting Router state table: states are Starting, ADJ-Seen-RA, and ADJ-Seen-CSNP. Key transitions: router starts sends IIH/SA and starts T1/T2; ADJ-UP starts T1 and sends local LSPs with overload bit; T2 expiry clears overload bit, sends normal IIH, and transitions to Running; LSP-DB-Sync cancels T2 and clears overload bit.'
+section: "4.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

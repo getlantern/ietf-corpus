@@ -1,0 +1,8 @@
+document: rfc-8706
+kind: design-rationale
+summary: Timer T3 is initialized to 65535 seconds and then set to the minimum remaining Holding Time of neighbors that have acknowledged the restart (RA set with UP adjacency). This allows the restarting router to avoid flooding its LSPs prematurely while bounding the restart window to the neighbors' actual adjacency lifetimes.
+section: "3.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

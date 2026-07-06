@@ -1,0 +1,9 @@
+document: rfc-8696
+kind: security-consideration
+summary: The PSK needs at least 256 bits of entropy to provide 128 bits of security, because a large-scale quantum computer effectively halves the security of symmetric keys. To match, the KDF must be quantum resistant and produce a key-encryption key of at least 256 bits, and the CEK must also be at least 256 bits.
+section: "7"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

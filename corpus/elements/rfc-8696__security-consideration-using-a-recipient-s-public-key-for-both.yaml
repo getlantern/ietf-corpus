@@ -1,0 +1,10 @@
+document: rfc-8696
+kind: security-consideration
+summary: Using a recipient's public key for both traditional CMS and the PSK-mixing variation violates the cryptographic hygiene principle of single-purpose keys. While no known attack exploits this, applications should enforce key separation wherever possible, potentially via an X.509 extended key usage OID.
+section: "7"
+topics:
+    - security
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

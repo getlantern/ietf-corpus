@@ -1,0 +1,9 @@
+document: rfc-8696
+kind: design-rationale
+summary: The PSK is included directly inside the CMSORIforPSKOtherInfo 'info' structure passed to the KDF rather than as the IKM, so that the PSK is cryptographically bound to the key-encryption algorithm identity and key management type. This prevents cross-context use of a derived key with a different algorithm or key management mode.
+section: "5"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

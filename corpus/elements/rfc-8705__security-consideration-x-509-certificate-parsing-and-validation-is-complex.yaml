@@ -1,0 +1,11 @@
+document: rfc-8705
+kind: security-consideration
+summary: X.509 certificate parsing and validation is complex and has historically exposed security vulnerabilities; implementors SHOULD use an established and well-tested X.509 library and SHOULD NOT write their own certificate validation procedures. Key complexities include basic constraints, NUL bytes in ASN.1 strings, wildcard handling, and recursive chain verification.
+section: "7.5"
+rfc2119_level: SHOULD
+topics:
+    - pkix
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

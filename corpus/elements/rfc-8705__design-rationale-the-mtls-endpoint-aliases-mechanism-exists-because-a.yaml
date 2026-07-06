@@ -1,0 +1,9 @@
+document: rfc-8705
+kind: design-rationale
+summary: The 'mtls_endpoint_aliases' mechanism exists because a server requesting a TLS client certificate can cause undesirable behavior (e.g., intrusive certificate-selection prompts) for conventional browser-based clients; separate endpoints allow the server to apply mutual-TLS TLS behavior only to clients that intend to use it.
+section: "5"
+topics:
+    - oauth
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

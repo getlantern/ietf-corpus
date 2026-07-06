@@ -1,0 +1,8 @@
+document: rfc-8696
+kind: wire-format
+summary: 'KeyTransPSKRecipientInfo is a SEQUENCE containing: version (CMSVersion, always 0), pskid (PreSharedKeyIdentifier OCTET STRING), kdfAlgorithm (KeyDerivationAlgorithmIdentifier), keyEncryptionAlgorithm (KeyEncryptionAlgorithmIdentifier), ktris (SEQUENCE OF KeyTransRecipientInfo, each carrying the encrypted KDK rather than the CEK), and encryptedKey (EncryptedKey OCTET STRING, the wrapped CEK).'
+section: "3"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

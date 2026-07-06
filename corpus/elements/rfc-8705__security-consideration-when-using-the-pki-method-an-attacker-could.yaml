@@ -1,0 +1,12 @@
+document: rfc-8705
+kind: security-consideration
+summary: When using the PKI method, an attacker could impersonate a client using a certificate with the same subject but from a different trusted CA. To mitigate this, the authorization server SHOULD only accept a limited set of CAs whose issuance policies meet its security requirements; otherwise, subject-based identification is vulnerable to certificate spoofing.
+section: "7.4"
+rfc2119_level: SHOULD
+topics:
+    - oauth
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

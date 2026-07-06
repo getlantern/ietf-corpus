@@ -1,0 +1,9 @@
+document: rfc-8706
+kind: normative-requirement
+summary: A starting router MUST transmit its own zeroth LSP with the overload bit set as soon as each adjacency is established, before any CSNP exchanges, preventing other routers from computing routes through it until LSPDB synchronization is complete. When all T2 timers are canceled, the starting router MUST transmit IIHs with the SA bit clear.
+section: 3.4.1.2
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

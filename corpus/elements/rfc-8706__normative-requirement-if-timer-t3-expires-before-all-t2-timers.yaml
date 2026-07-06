@@ -1,0 +1,9 @@
+document: rfc-8706
+kind: normative-requirement
+summary: If timer T3 expires before all T2 timers complete, the router MUST flood its own LSPs with the overload bit set, resume normal update operation, update local forwarding tables, and transmit normal-Holding-Time IIHs without RR or RA set to prevent neighbor adjacencies from expiring.
+section: 3.4.1.1
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

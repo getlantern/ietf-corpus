@@ -1,0 +1,9 @@
+document: rfc-8702
+kind: design-rationale
+summary: SHAKE128 and SHAKE256 are used natively as the MGF in RSASSA-PSS rather than via the MGF1 construction, exploiting SHAKE's extendable-output property to produce arbitrary-length output directly without iterating the hash function.
+section: 3.2.1
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

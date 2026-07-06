@@ -1,0 +1,9 @@
+document: rfc-8705
+kind: interoperability-note
+summary: The access token cannot be used as input to the decision of whether to request mutual TLS at the resource server, because TLS CertificateRequest occurs during the handshake before Application Data (including the token) is available; resource servers must apply mutual TLS policy a priori.
+section: "3"
+topics:
+    - oauth
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

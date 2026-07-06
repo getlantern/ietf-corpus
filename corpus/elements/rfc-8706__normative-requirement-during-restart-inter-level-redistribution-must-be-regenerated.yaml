@@ -1,0 +1,9 @@
+document: rfc-8706
+kind: normative-requirement
+summary: During restart, inter-level redistribution MUST be regenerated before the router's LSP is flooded. Level-n non-pseudonode LSPs MUST NOT be flooded until the other level's T2 timer has expired and its SPF has been run, ensuring inter-level information can be included.
+section: 3.4.1.1
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

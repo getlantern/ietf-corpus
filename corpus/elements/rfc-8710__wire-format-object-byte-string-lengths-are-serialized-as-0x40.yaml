@@ -1,0 +1,8 @@
+document: rfc-8710
+kind: wire-format
+summary: 'Object (byte string) lengths are serialized as: 0x40–0x57 for lengths 0–23, 0x58 0xnn for 24–255, 0x59 0xnn 0xnn for 256–65535, 0x5a 0xnn 0xnn 0xnn 0xnn for 65536–4294967295, and 0x5b followed by 8 bytes for larger lengths.'
+section: "4"
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

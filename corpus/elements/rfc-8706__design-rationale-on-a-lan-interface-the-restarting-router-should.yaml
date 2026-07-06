@@ -1,0 +1,8 @@
+document: rfc-8706
+kind: design-rationale
+summary: On a LAN interface, the restarting router SHOULD use the same LAN-ID as before the restart. If it was previously DIS and uses a different LAN-ID, new pseudonode LSPs must be generated and all neighboring routers must update their LSPs, causing unnecessary churn. Preserving LAN-ID prevents this. The LAN-ID in an IIH with RR set MUST be ignored by the receiver to allow this.
+section: 3.3.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
