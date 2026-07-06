@@ -1,0 +1,11 @@
+document: rfc-8854
+kind: design-rationale
+summary: Proactive FEC always consumes bandwidth for redundant data within congestion-control limits, reducing bandwidth available for the primary encoding even when not needed — unlike RTX or Flexible FEC retransmission which only send redundant data on demand at the cost of extra latency.
+section: "8"
+topics:
+    - webrtc
+    - rtp
+    - realtime
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

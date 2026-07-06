@@ -1,0 +1,10 @@
+document: rfc-8855
+kind: normative-requirement
+summary: To avoid IP-layer fragmentation, BFCP messages exceeding the path MTU MUST be fragmented at the BFCP application layer using the Fragment Offset and Fragment Length fields in the COMMON-HEADER. Receivers that detect fragments exceeding the Payload Length MUST discard the message; servers MUST also send Error code 13.
+section: 6.2.3
+rfc2119_level: MUST
+topics:
+    - realtime
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

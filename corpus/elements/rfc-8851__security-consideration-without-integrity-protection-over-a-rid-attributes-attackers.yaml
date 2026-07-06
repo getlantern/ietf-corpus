@@ -1,0 +1,11 @@
+document: rfc-8851
+kind: security-consideration
+summary: Without integrity protection over 'a=rid' attributes, attackers can modify session restrictions, potentially causing an implementation to send more data than the recipient desires. However, since 'a=rid' can only restrict streams to a subset of what is otherwise allowable, a modified value cannot result in higher bandwidth than would be sent to an implementation that does not support this mechanism.
+section: "13"
+topics:
+    - security
+    - rtp
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

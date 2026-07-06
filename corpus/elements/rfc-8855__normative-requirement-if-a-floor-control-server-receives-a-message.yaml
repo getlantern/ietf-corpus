@@ -1,0 +1,9 @@
+document: rfc-8855
+kind: normative-requirement
+summary: If a floor control server receives a message with an incorrect Payload Length, it MUST send an Error message with parameter value 13 (Incorrect Message Length) and discard the message. Other entities that receive an incorrect length MUST also discard the message.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

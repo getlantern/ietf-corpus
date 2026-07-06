@@ -1,0 +1,10 @@
+document: rfc-8858
+kind: design-rationale
+summary: The 'rtcp-mux-only' attribute was created for newer applications (such as WebRTC) that do not require backward compatibility with peers unable to multiplex RTCP, and which choose not to implement separation of RTP and RTCP. Using this attribute in offers may harm interoperability with peers that do not support RTP/RTCP multiplexing.
+section: "1"
+topics:
+    - rtp
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

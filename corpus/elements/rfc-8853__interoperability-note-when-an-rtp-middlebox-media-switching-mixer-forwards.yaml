@@ -1,0 +1,9 @@
+document: rfc-8853
+kind: interoperability-note
+summary: When an RTP middlebox (media-switching mixer) forwards simulcast to receivers, any MID SDES item from the originating media source MUST be removed and not associated with the mixer's SSRC, to prevent receivers from incorrectly treating it as an SSRC collision. CSRC may carry the originating SSRC.
+section: 6.2.1
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

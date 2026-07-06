@@ -1,0 +1,11 @@
+document: rfc-8851
+kind: normative-requirement
+summary: In generating the initial SDP offer, the offerer MUST generate a rid-id unique within a media description, MUST set the direction to 'send' or 'recv', and if a codec would require an 'a=fmtp' line when used without 'a=rid', the offer MUST include a valid corresponding 'a=fmtp' line even when using 'a=rid'.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8855
+kind: normative-requirement
+summary: Over UDP, clients MUST announce their presence by sending a Hello message before any other BFCP interaction. The client considers the server available only upon receiving the HelloAck response. Each BFCP UDP datagram MUST contain exactly one BFCP message or fragment.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - realtime
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

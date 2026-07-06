@@ -1,0 +1,10 @@
+document: rfc-8853
+kind: security-consideration
+summary: A false inclusion of 'a=simulcast' may cause simultaneous transmission of multiple RTP streams, increasing the number of streams competing for bandwidth of the jointly bounded media description. A hostile removal of 'a=simulcast' silently disables simulcast. Integrity protection and source authentication of all SDP signaling, including simulcast attributes, can mitigate these risks.
+section: "10"
+topics:
+    - security
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

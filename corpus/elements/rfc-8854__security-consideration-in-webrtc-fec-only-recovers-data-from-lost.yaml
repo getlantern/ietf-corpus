@@ -1,0 +1,11 @@
+document: rfc-8854
+kind: security-consideration
+summary: In WebRTC, FEC only recovers data from lost packets; corrupted packets are discarded by SRTP decryption. The required processing order is FEC then SRTP at the sender, and SRTP then FEC at the receiver, as described in RFC 3711, Section 10. This ordering applies to all DTLS-SRTP protection profiles.
+section: "9"
+topics:
+    - webrtc
+    - rtp
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

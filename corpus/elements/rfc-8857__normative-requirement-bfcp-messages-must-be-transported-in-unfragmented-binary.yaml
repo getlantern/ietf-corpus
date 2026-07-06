@@ -1,0 +1,11 @@
+document: rfc-8857
+kind: normative-requirement
+summary: 'BFCP messages MUST be transported in unfragmented binary WebSocket frames (FIN: 1, opcode: %x2). The WebSocket frame data MUST be a valid BFCP message, and the payload length MUST be lower than 2^16 + 12 bytes.'
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - websocket
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

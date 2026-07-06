@@ -1,0 +1,10 @@
+document: rfc-8858
+kind: design-rationale
+summary: Providing only RTP ICE candidates (component ID 1) does not by itself imply exclusive RTP/RTCP multiplexing support, as RTCP candidates are also absent when RTCP is not supported at all. The 'rtcp-mux-only' SDP attribute is therefore needed to signal exclusive multiplexing intent unambiguously.
+section: "6"
+topics:
+    - rtp
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

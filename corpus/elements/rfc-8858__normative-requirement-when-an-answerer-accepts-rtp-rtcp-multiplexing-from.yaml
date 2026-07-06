@@ -1,0 +1,11 @@
+document: rfc-8858
+kind: normative-requirement
+summary: When an answerer accepts RTP/RTCP multiplexing from an offer containing 'rtcp-mux-only', it MUST associate 'rtcp-mux' with the corresponding SDP media description in the answer. If the answerer does not accept multiplexing, it MUST either reject the media description (port set to zero) or reject the whole offer.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

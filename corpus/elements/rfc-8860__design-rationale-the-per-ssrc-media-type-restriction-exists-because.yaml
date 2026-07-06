@@ -1,0 +1,9 @@
+document: rfc-8860
+kind: design-rationale
+summary: The per-SSRC media type restriction exists because each SSRC has its own sequence number and timestamp spaces; allowing media type changes would make packet loss detection impossible and clock rate determination ambiguous for a given SSRC.
+section: "5.3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

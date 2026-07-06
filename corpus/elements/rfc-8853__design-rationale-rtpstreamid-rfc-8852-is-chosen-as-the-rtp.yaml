@@ -1,0 +1,9 @@
+document: rfc-8853
+kind: design-rationale
+summary: RtpStreamId (RFC 8852) is chosen as the RTP-level identification mechanism for simulcast streams rather than SSRC alone, because SSRC values can collide and change. RtpStreamId provides stable stream identity that survives SSRC changes, and both RTCP SDES and RTP header extension methods are supported for rapid initial reception.
+section: "5.5"
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

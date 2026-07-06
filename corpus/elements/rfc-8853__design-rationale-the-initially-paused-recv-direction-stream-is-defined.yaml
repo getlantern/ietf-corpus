@@ -1,0 +1,9 @@
+document: rfc-8853
+kind: design-rationale
+summary: The initially paused 'recv'-direction stream is defined as causing the remote sender to enter an unsolicited locally paused state (rather than being treated as an explicit pause request) because when TMMBR/TMMBN is used for pause/resume, the pausing RTP sender cannot know which receiving SSRC owns the restriction since the receiver's SSRC may not yet be known.
+section: "5.2"
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

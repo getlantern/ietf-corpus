@@ -1,0 +1,8 @@
+document: rfc-8855
+kind: design-rationale
+summary: The floor control server retains ultimate authority over floor state even when a ChairAction instructs a specific outcome. For example, a chair granting one floor of an atomic multi-floor request will not result in a grant until chairs for all floors agree — the server enforces consistency.
+section: "4.2"
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

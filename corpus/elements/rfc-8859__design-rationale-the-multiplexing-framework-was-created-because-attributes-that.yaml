@@ -1,0 +1,11 @@
+document: rfc-8859
+kind: design-rationale
+summary: The multiplexing framework was created because attributes that make sense on independent "m=" lines may not make sense when those lines share a single 5-tuple. For example, each "m=" line may independently specify "ice-ufrag", but when multiplexed over the same ICE component the meaning becomes muddled. SRTP setup, ICE, and DTLS procedures motivate conservation of NAT port bindings.
+section: "3"
+topics:
+    - realtime
+    - rtp
+    - webrtc
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

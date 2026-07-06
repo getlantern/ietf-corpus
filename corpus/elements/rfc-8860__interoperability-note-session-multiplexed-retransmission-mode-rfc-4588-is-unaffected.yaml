@@ -1,0 +1,9 @@
+document: rfc-8860
+kind: interoperability-note
+summary: Session-multiplexed retransmission mode (RFC 4588) is unaffected by multiple media types in a single session, since each media type uses a different SSRC which is preserved in the retransmission session. SDP grouping uses BUNDLE plus FID grouping, requiring a separate 'm=' line per retransmitted original source.
+section: "6.1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8855
+kind: normative-requirement
+summary: The Version field MUST be set to 1 over reliable transport and MUST be set to 2 over unreliable transport. If a server receives an unsupported version or a version inconsistent with the transport, it MUST send an Error message with error code 12 (Unsupported Version).
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

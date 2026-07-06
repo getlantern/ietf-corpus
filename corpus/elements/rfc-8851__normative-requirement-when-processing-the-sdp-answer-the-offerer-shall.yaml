@@ -1,0 +1,11 @@
+document: rfc-8851
+kind: normative-requirement
+summary: When processing the SDP answer, the offerer SHALL discard any 'a=rid' line if the answer contains new restrictions not in the offer, if modifications are not more restrictive, if pt= appears in the answer but not the offer, or if pt= payload type validation fails using semantic (not byte-wise) comparison of rtpmap/fmtp parameters.
+section: "6.4"
+rfc2119_level: SHALL
+topics:
+    - rtp
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

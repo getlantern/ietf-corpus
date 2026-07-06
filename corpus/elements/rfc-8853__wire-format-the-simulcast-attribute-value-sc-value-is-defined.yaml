@@ -1,0 +1,9 @@
+document: rfc-8853
+kind: wire-format
+summary: 'The simulcast attribute value (sc-value) is defined in ABNF as: sc-value = (sc-send [SP sc-recv]) / (sc-recv [SP sc-send]); sc-send = %s"send" SP sc-str-list; sc-recv = %s"recv" SP sc-str-list; sc-str-list = sc-alt-list *(";"; sc-alt-list); sc-alt-list = sc-id *("," sc-id); sc-id = ["~"] rid-id. Semicolons separate simulcast streams; commas separate alternative formats within a stream; "~" prefix indicates initially paused.'
+section: "5.1"
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

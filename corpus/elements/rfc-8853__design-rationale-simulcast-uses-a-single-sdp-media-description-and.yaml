@@ -1,0 +1,10 @@
+document: rfc-8853
+kind: design-rationale
+summary: Simulcast uses a single SDP media description (and thus a single RTP session) for all simulcast streams of a media source. This enables joint congestion control and simpler signaling but precludes applying different QoS to different simulcast streams via separate RTP sessions or different multicast groups — a deliberate trade-off favoring simplicity and reduced middlebox load.
+section: "8"
+topics:
+    - realtime
+    - rtp
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
