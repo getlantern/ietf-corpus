@@ -1,0 +1,8 @@
+document: rfc-9390
+kind: state-machine
+summary: 'The client stateful authorization state machine adds group-aware transitions: in Open state, receiving a GRAR triggers sending GRAA and a service-specific group re-auth request (entering Pending); receiving a GASR triggers GASA and GSTR (entering Discon); in Discon, receiving GSTA moves to Idle. The action taken on GRAR/GASR depends on the Group-Response-Action value (ALL_GROUPS, PER_GROUP, or PER_SESSION).'
+section: A.1
+topics:
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

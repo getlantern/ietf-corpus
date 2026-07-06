@@ -1,0 +1,8 @@
+document: rfc-9390
+kind: state-machine
+summary: 'The server stateful authorization state machine adds group-aware transitions: in Open state, the server sends GASR to terminate groups (entering Discon) or sends GRAR to re-authenticate groups (entering Pending); GASA received in Discon triggers cleanup to Idle; any GSTR received causes GSTA and cleanup to Idle; successful GRAA in Pending updates sessions and returns to Open.'
+section: A.1
+topics:
+    - diameter
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

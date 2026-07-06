@@ -1,0 +1,8 @@
+document: rfc-9396
+kind: design-rationale
+summary: There is no standardized mechanism to compare two arbitrary `authorization_details` requests because field semantics are API-specific. The AS should not rely on simple object comparison; instead, it should apply the same processing used when granting the request to determine whether a new request is subsumed by an existing grant.
+section: "6.1"
+topics:
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

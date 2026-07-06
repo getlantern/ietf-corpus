@@ -1,0 +1,8 @@
+document: rfc-9388
+kind: design-rationale
+summary: The 'footprintunion' type was introduced because RFC 8008's narrowing semantics make it impossible to combine IPv4 and IPv6 CIDR footprint constraints in a single FCI advertisement — placing both 'ipv4cidr' and 'ipv6cidr' in the footprints array yields an empty client set since no client address can be both. The union type resolves this by providing explicit additive aggregation.
+section: "2.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

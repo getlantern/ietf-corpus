@@ -1,0 +1,9 @@
+document: rfc-9384
+kind: design-rationale
+summary: BGP's minimum Hold Time is at least three seconds (RFC 4271, Sections 4.2 and 4.4), which is too slow for fast failure detection. BFD provides sub-second detection of connectivity loss, and this subcode allows the reason for faster-than-Hold-Timer teardown to be communicated explicitly to the peer.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

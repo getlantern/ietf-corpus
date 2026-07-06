@@ -1,0 +1,10 @@
+document: rfc-9374
+kind: wire-format
+summary: When encoding a HHIT as a CTA 2063-A Serial Number, the low-order 72 bits (HHIT Suite ID | ORCHID hash) SHALL be left-padded with 3 zero bits to form a 75-bit number encoded into 15 characters using a custom Base32 alphabet (digits 0–9 and uppercase letters excluding O, I, Z, S). The manufacturer MUST use Length Code F (15).
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

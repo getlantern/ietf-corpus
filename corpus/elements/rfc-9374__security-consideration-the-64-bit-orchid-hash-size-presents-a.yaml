@@ -1,0 +1,9 @@
+document: rfc-9374
+kind: security-consideration
+summary: The 64-bit ORCHID hash size presents a real risk of second pre-image attack. A single bitcoin mining ASIC can perform approximately 2^62 SHA-256 hashes per day, making 2^64 EdDSA keypair generation feasible in parallel. For a fleet of 1,024 UAs, an attacker need only satisfy a 54-bit condition, further reducing difficulty.
+section: "9"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

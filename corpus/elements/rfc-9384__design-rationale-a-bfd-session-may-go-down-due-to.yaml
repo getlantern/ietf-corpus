@@ -1,0 +1,9 @@
+document: rfc-9384
+kind: design-rationale
+summary: A BFD session may go Down due to only partial connectivity loss between two BGP speakers, meaning the remote speaker may still be reachable enough to receive the Cease NOTIFICATION. The 'BFD Down' subcode lets the receiver distinguish a BFD-detected forwarding-plane issue from a BGP speaker fault, aiding operational diagnosis.
+section: "4"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

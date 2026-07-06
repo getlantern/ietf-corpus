@@ -1,0 +1,10 @@
+document: rfc-9384
+kind: normative-requirement
+summary: Even when total loss of connectivity prevents the Cease NOTIFICATION message from being delivered, BGP speakers SHOULD still record 'BFD Down' as part of their operational state, for example via bgpPeerLastError (BGP MIB, RFC 4273) or 'last-error' per the BGP YANG model.
+section: "4"
+rfc2119_level: SHOULD
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

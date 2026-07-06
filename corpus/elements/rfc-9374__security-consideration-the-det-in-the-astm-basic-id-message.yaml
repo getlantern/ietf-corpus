@@ -1,0 +1,9 @@
+document: rfc-9374
+kind: security-consideration
+summary: The DET in the ASTM Basic ID Message (Msg Type 0x0) provides no trust assertion; the 20-byte UA ID field cannot contain a full HHIT (16 bytes) plus a meaningful signature. A minimum of 88 bytes is required to prove ownership of a DET using a full EdDSA signature, which is only achievable via the ASTM Authentication Message (Msg Type 0x2).
+section: "9.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9396
+kind: security-consideration
+summary: The `authorization_details` parameter is sent through the user agent in an OAuth authorization request, making it vulnerable to modification by the user. If integrity is a concern, clients MUST protect `authorization_details` against tampering by signing the request using JAR (RFC 9101) or using PAR (RFC 9126) with `request_uri`.
+section: "12"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

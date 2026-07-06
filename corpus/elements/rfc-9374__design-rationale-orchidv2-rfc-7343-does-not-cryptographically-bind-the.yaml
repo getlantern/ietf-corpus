@@ -1,0 +1,10 @@
+document: rfc-9374
+kind: design-rationale
+summary: ORCHIDv2 (RFC 7343) does not cryptographically bind the IPv6 prefix or OGA ID to the HI hash, because such attacks were considered DoS-only. HHITs bind all ORCHID content through the hash function, so a DET recipient with the underlying HI can directly trust and act on all fields, enabling self-claimed hierarchy discovery.
+section: "4.4"
+topics:
+    - crypto
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
