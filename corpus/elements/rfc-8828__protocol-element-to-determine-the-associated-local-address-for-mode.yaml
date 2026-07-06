@@ -1,0 +1,9 @@
+document: rfc-8828
+kind: protocol-element
+summary: To determine the associated local address for Mode 2, the implementation resolves the web application host URI, creates a UDP socket bound to the wildcard address, connect()s to the remote IP (without sending packets), and queries the local address via getsockname(). This yields the correct source address for the kernel routing path.
+section: "6.2"
+topics:
+    - webrtc
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

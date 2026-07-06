@@ -1,0 +1,9 @@
+document: rfc-8824
+kind: wire-format
+summary: 'The OSCORE option value begins with a 1-byte flag field (bits: 000|h|k|nnn) where h indicates kid context presence, k indicates kid presence, and n (3 bits) encodes the length of the piv field. This is followed by piv (n bytes), a 1-byte length s and kid context (if h=1), and kid (if k=1).'
+section: "6.4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

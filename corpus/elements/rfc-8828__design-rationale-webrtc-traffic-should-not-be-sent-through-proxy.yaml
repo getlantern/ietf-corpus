@@ -1,0 +1,9 @@
+document: rfc-8828
+kind: design-rationale
+summary: WebRTC traffic should not be sent through proxy servers by default because WebRTC typically must use TCP when communicating with proxies, which degrades media quality; additionally, proxies may be overloaded by WebRTC's long-lived, high-bandwidth connections.
+section: "5.1"
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

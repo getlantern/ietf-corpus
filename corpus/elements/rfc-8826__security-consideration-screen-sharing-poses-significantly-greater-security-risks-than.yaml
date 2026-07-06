@@ -1,0 +1,10 @@
+document: rfc-8826
+kind: security-consideration
+summary: Screen sharing poses significantly greater security risks than camera/microphone access because it can violate the Same-Origin Policy invariant. An attacker site could request screen sharing, briefly open a window to the user's bank or webmail, and use the screen share to read displayed content including anti-CSRF tokens.
+section: 4.1.1
+topics:
+    - webrtc
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

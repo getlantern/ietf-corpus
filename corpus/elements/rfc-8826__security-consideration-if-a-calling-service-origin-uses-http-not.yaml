@@ -1,0 +1,10 @@
+document: rfc-8826
+kind: security-consideration
+summary: If a calling service origin uses HTTP (not HTTPS), a network attacker on any unsecured network can inject an IFRAME or redirect to that origin, then forge the HTTP response to inject JavaScript initiating a call to themselves. The attacker can semi-permanently infect the origin via a Web worker, bugging the user long after leaving the infected network.
+section: 4.1.4
+topics:
+    - webrtc
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

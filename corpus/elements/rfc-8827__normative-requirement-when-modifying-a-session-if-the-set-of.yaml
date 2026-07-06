@@ -1,0 +1,10 @@
+document: rfc-8827
+kind: normative-requirement
+summary: When modifying a session, if the set of fingerprints changes, the sender MUST either send a new 'identity' attribute or none at all, and the receiver MUST discard all previously established identities. If fingerprints are unchanged and the same 'identity' attribute is sent, the established identity MUST be applied to existing DTLS connections.
+section: 5.1.4
+rfc2119_level: MUST
+topics:
+    - webrtc
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

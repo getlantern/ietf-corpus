@@ -1,0 +1,9 @@
+document: rfc-8824
+kind: security-consideration
+summary: 'When compressing OSCORE Outer headers, the Initialization Vector (IV) size in the Compression Residue involves a trade-off: a longer MSB prefix improves compression efficiency but reduces the key lifetime, as the Device must re-establish keys before the IV grows beyond the compressed range.'
+section: "9"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

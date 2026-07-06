@@ -1,0 +1,10 @@
+document: rfc-8827
+kind: security-consideration
+summary: If HTTPS is not used and the identity mechanism is not used, any on-path attacker can replace DTLS-SRTP fingerprints and substitute its own identity. Even with HTTPS, the signaling server can mount a MITM attack. Content JavaScript MUST NOT be allowed to access or perform computations with DTLS keys, including performing operations that would be valid for a DTLS endpoint.
+section: "9.1"
+topics:
+    - webrtc
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

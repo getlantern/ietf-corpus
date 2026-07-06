@@ -1,0 +1,11 @@
+document: rfc-8826
+kind: security-consideration
+summary: Web-based identity providers (OAuth, OpenID, BrowserID, etc.) can be used to authenticate WebRTC calls by binding the user's identity to cryptographic keying material used to authenticate calling endpoints. Calls authenticated in this fashion are naturally resistant even to active MITM attack by the calling site. PKI-style certificates also work for calls from end users to large sites.
+section: 4.3.2.3
+topics:
+    - webrtc
+    - security
+    - crypto
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

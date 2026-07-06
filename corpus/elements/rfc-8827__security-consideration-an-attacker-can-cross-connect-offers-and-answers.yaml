@@ -1,0 +1,9 @@
+document: rfc-8827
+kind: security-consideration
+summary: An attacker can cross-connect offers and answers to induce multiple browsers to send media to a victim (large-scale parallel forking attack). Implementations can defend by only responding to ICE Binding Requests for a limited number of remote ufrags, which is the reason JS must not control the ufrag and password.
+section: "9.3"
+topics:
+    - webrtc
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

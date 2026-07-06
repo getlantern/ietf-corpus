@@ -1,0 +1,12 @@
+document: rfc-8827
+kind: normative-requirement
+summary: The API MUST generate a new authentication key pair for every new call by default (for unlinkability). Unless the user specifically configures an external key pair, different key pairs MUST be used for each origin to avoid creating a super-cookie. The API MUST NOT permit JS to obtain the negotiated DTLS-SRTP keying material.
+section: "6.5"
+rfc2119_level: MUST
+topics:
+    - webrtc
+    - security
+    - privacy
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

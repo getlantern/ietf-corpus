@@ -1,0 +1,10 @@
+document: rfc-8826
+kind: design-rationale
+summary: Key continuity (analogous to SSH host key tracking) is far less useful in the WebRTC context because users routinely use multiple browsers on different computers with different keying material, causing frequent legitimate key changes. This trains users to click through mismatch warnings, and the calling service can trivially bypass the mechanism by presenting a slightly different peer name.
+section: 4.3.2.1
+topics:
+    - webrtc
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

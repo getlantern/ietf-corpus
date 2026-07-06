@@ -1,0 +1,6 @@
+document: rfc-8824
+kind: design-rationale
+summary: Because SCHC fixes the number of Uri-Path/Uri-Query elements at Rule creation time, variable-length paths are handled by either creating multiple Rules for each possible element count or by using a zero-length Compression Residue entry to signal an absent Uri-Path element, at a cost of 4 additional bits per empty entry.
+section: 5.3.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

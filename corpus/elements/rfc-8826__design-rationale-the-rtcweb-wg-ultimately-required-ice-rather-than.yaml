@@ -1,0 +1,10 @@
+document: rfc-8826
+kind: design-rationale
+summary: The RTCWEB WG ultimately required ICE rather than STUN-without-ICE or RTCP-based consent. RTCP-based consent allows a short window of attack and many legacy endpoints don't support RTCP. Standalone STUN checks cannot verify the recipient consents to this particular call, not just that they run a STUN endpoint.
+section: 4.2.3
+topics:
+    - webrtc
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

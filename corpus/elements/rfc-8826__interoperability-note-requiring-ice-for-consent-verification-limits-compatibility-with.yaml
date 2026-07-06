@@ -1,0 +1,10 @@
+document: rfc-8826
+kind: interoperability-note
+summary: Requiring ICE for consent verification limits compatibility with legacy non-ICE clients. Standalone STUN (without ICE credentials) cannot verify per-call consent. RTCP-based consent allows a short pre-consent attack window and is not supported by all legacy endpoints. An ICE-Lite implementation is effectively equivalent to a tightly integrated STUN approach, making ICE the preferred solution even for legacy scenarios.
+section: 4.2.3
+topics:
+    - webrtc
+    - realtime
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8817
+kind: design-rationale
+summary: The number of frames in an RTP packet is not transmitted explicitly; the receiver determines frame count by identifying each frame type and length from the rate code bits, then summing octets across the packet. This avoids a redundant count field.
+section: "3.3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

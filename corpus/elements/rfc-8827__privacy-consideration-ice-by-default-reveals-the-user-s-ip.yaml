@@ -1,0 +1,9 @@
+document: rfc-8827
+kind: privacy-consideration
+summary: ICE by default reveals the user's IP address to the peer, leaking location information. The API must provide mechanisms to suppress ICE negotiation until call answer, restrict to TURN-only candidates, and suppress the related address field. These protections assume a non-malicious calling service; users needing privacy from the calling site must use separate technologies like Tor.
+section: 6.4, 9.2
+topics:
+    - webrtc
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

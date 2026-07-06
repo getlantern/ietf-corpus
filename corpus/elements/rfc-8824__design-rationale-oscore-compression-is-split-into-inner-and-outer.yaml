@@ -1,0 +1,9 @@
+document: rfc-8824
+kind: design-rationale
+summary: OSCORE compression is split into Inner and Outer stages to compress all fields of the original CoAP message while preserving end-to-end encryption. Inner compression reduces the plaintext before encryption; Outer compression reduces the OSCORE envelope including ciphertext as opaque payload, enabling proxy operation without decryption.
+section: "7.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

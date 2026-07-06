@@ -1,0 +1,10 @@
+document: rfc-8826
+kind: privacy-consideration
+summary: ICE candidates expose the callee's server-reflexive IP address to the caller, revealing location information. Implementations may suppress ICE negotiation until call answer to avoid pre-answer tracking, and either side may route all traffic through TURN to hide their location. Sites can also use WebRTC to learn a user's real IP even when behind a VPN.
+section: 4.2.4
+topics:
+    - webrtc
+    - privacy
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

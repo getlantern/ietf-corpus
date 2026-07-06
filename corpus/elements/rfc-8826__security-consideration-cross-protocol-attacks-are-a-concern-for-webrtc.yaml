@@ -1,0 +1,10 @@
+document: rfc-8826
+kind: security-consideration
+summary: Cross-protocol attacks are a concern for WebRTC because an attacking script could generate traffic acceptable to a non-Web protocol state machine. WebSockets mitigates this with masking to randomize bits on the wire; for DTLS over WebRTC the risk is lower since ICE enforces consent, but SCTP over TCP carries some residual risk of attacker-controlled ciphertext.
+section: 4.2.2
+topics:
+    - webrtc
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
