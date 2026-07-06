@@ -1,0 +1,8 @@
+document: rfc-9432
+kind: interoperability-note
+summary: If not all consumers support the coo property, migration must be performed by first removing the member zone from $OLDCATZ and then adding it to $NEWCATZ. Consumers that miss the removal may interpret the addition as a name clash, leaving the zone unmigrated; recovery from that situation is out of scope.
+section: "5.5"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

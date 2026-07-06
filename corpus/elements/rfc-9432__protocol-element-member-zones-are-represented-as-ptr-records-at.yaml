@@ -1,0 +1,8 @@
+document: rfc-9432
+kind: protocol-element
+summary: Member zones are represented as PTR records at '<unique-N>.zones.$CATZ' with TTL 0. Each PTR RRset MUST contain exactly one record; more than one PTR in the same RRset, or two RRs pointing to the same member zone, indicates a broken catalog zone that MUST NOT be processed.
+section: "4.1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

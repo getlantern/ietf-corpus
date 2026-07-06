@@ -1,0 +1,9 @@
+document: rfc-9432
+kind: normative-requirement
+summary: When a consumer receives a coo property update in $OLDCATZ, it MUST NOT migrate the member zone immediately; migration must wait until the member zone appears in $NEWCATZ. Before migrating, the consumer MUST verify that the coo property pointing to $NEWCATZ is still present in $OLDCATZ.
+section: 4.3.1
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9432
+kind: security-consideration
+summary: During coo-based migration, the new catalog owner can silently take over all zone-associated state (including DNSSEC keys) by retaining the same member node label. The original owner must enforce a state reset by changing the label before or simultaneously with publishing the coo property.
+section: "7"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
