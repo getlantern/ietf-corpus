@@ -1,0 +1,9 @@
+document: rfc-9079
+kind: security-consideration
+summary: 'Source-specific routing may invalidate route filtering used as a security mechanism: unless filters account for source-specific routes, a source-specific route could bypass filters and allow traffic to reach ostensibly protected network segments. Additionally, a host route is no longer guaranteed to be the most specific route, so using host routes to direct traffic through security devices (e.g., firewalls) may be bypassed.'
+section: "9"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9068
+kind: security-consideration
+summary: To prevent cross-JWT confusion between OAuth 2.0 JWT access tokens and OpenID Connect ID Tokens, the 'typ' header parameter MUST be set to 'at+jwt', enabling resource servers to reject ID Tokens presented as access tokens. This follows the recommendations in RFC 8725.
+section: "5"
+topics:
+    - oauth
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

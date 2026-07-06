@@ -1,0 +1,10 @@
+document: rfc-9069
+kind: normative-requirement
+summary: There MUST be at least one emulated peer for each Loc-RIB instance (e.g., each VRF). When multiple emulated peers represent the same Loc-RIB instance (e.g., for different address families), each MUST send a Peer Up with an OPEN message indicating its address family capabilities, and a BMP receiver MUST process these capabilities.
+section: 6.1.1
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9072
+kind: design-rationale
+summary: 'The backward-compatible design avoids new version negotiation by re-purposing the existing first-octet field position: setting Non-Ext OP Len. to 255 and Non-Ext OP Type to 255 is detectable by old speakers as an unrecognized parameter, causing a clean NOTIFICATION rather than silent misparse.'
+section: "3"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

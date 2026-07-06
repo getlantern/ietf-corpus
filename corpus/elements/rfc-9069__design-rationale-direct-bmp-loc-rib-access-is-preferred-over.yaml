@@ -1,0 +1,9 @@
+document: rfc-9069
+kind: design-rationale
+summary: Direct BMP Loc-RIB access is preferred over the alternative of deriving Loc-RIB by monitoring Adj-RIB-In pre-policy from a separate BGP peering router, because the alternative requires additional routers and peering sessions, is error-prone due to outbound policy transforms, and cannot provide system-level information (e.g., router name, VRF identity) needed to correctly correlate the data.
+section: "1.1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

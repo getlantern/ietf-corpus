@@ -1,0 +1,12 @@
+document: rfc-9068
+kind: normative-requirement
+summary: The resource server MUST validate the signature of all incoming JWT access tokens per RFC 7515 using the algorithm in the 'alg' header. The resource server MUST reject any JWT in which 'alg' is 'none' and MUST use keys provided by the authorization server.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

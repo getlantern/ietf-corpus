@@ -1,0 +1,9 @@
+document: rfc-9077
+kind: normative-requirement
+summary: A resolver that supports aggressive use of NSEC and NSEC3 MAY limit the TTL of NSEC and NSEC3 records to the lesser of the SOA.MINIMUM field and the TTL of the SOA in a response, if present. It MAY also use a previously cached SOA for a zone to find these values.
+section: "3.4"
+rfc2119_level: MAY
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

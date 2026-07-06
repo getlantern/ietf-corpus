@@ -1,0 +1,9 @@
+document: rfc-9077
+kind: design-rationale
+summary: The original RFC 4034 wording set NSEC TTL equal to SOA MINIMUM, which could be much larger than the effective negative TTL (min of SOA TTL and SOA MINIMUM). This discrepancy allowed aggressive NSEC use to deny existence of names for far longer than the zone operator intended — e.g., 86400 seconds instead of 900 seconds.
+section: "1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

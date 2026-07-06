@@ -1,0 +1,10 @@
+document: rfc-9081
+kind: design-rationale
+summary: MVPN SA routes functionally replace MSDP SA messages for inter-PE source discovery in 'spt-only' mode, eliminating the need for VPN-specific MSDP sessions between PEs. This leverages BGP hard state, allows route reflectors, and enables VPN extranet policy mechanisms that MSDP cannot provide.
+section: "1"
+topics:
+    - multicast
+    - routing
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9079
+kind: design-rationale
+summary: Destination-first ordering is mandated (rather than source-first) because with source-first ordering, a packet destined for an internal prefix D with source in S would be routed toward the Internet rather than toward D, making delivery impossible. All routers must use the same ordering to prevent persistent routing loops.
+section: "1.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

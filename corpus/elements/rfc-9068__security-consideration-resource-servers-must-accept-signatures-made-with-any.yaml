@@ -1,0 +1,11 @@
+document: rfc-9068
+kind: security-consideration
+summary: Resource servers must accept signatures made with any key published in AS metadata or OpenID Connect discovery, so an attacker compromising any one published key can forge valid tokens. Using distinct keys for ID Tokens vs. JWT access tokens does not meaningfully reduce attack surface.
+section: "5"
+topics:
+    - oauth
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9071
+kind: protocol-element
+summary: Empty T140blocks are used when no unsent T140blocks exist for a source but redundant retransmissions are still pending; they occupy zero length in the packet but their SSRC is still placed in the CSRC list. The first packet of a session, after a source switch, or after a pause SHALL use the available T140blocks as primary with empty T140blocks for redundancy slots.
+section: "3.10"
+topics:
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

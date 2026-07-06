@@ -1,0 +1,8 @@
+document: rfc-9077
+kind: interoperability-note
+summary: RFC 8198's Section 5.4 previously advised resolvers to reduce NSEC/NSEC3 TTLs to match SOA.MINIMUM if smaller, but because RFC 4034/5155 already set NSEC/NSEC3 TTL equal to SOA MINIMUM, this advice would not actually change anything for conformant authoritative servers. RFC 9077 corrects the root definition instead.
+section: "1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9077
+kind: design-rationale
+summary: RFC 4034 and RFC 5155 used SHOULD-level language requiring NSEC/NSEC3 TTLs to equal the SOA MINIMUM field. This was written before RFC 8198 enabled aggressive use of NSEC/NSEC3 records; once resolvers began synthesizing responses from cached NSEC/NSEC3 records, correctness of those TTLs became much more critical, justifying an upgrade to MUST.
+section: "3"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

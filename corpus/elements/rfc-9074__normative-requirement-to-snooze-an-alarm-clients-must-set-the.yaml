@@ -1,0 +1,7 @@
+document: rfc-9074
+kind: normative-requirement
+summary: To snooze an alarm, clients MUST set the ACKNOWLEDGED property on the triggered alarm and create a new sibling VALARM component set to trigger at the user's chosen snooze interval. The snooze alarm MUST use an absolute TRIGGER with UTC DATE-TIME (SHOULD) and MUST include a RELATED-TO property with RELTYPE=SNOOZE referencing the original alarm's UID.
+section: "7"
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

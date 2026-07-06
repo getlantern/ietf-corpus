@@ -1,0 +1,9 @@
+document: rfc-9079
+kind: normative-requirement
+summary: If the Length field of a Source Prefix sub-TLV indicates a length smaller than 1+(Source Plen)/8 rounded up, the sub-TLV is corrupt and the whole enclosing TLV must be ignored; extra octets beyond the expected length MUST be silently ignored.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

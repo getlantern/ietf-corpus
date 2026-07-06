@@ -1,0 +1,10 @@
+document: rfc-9081
+kind: design-rationale
+summary: MSDP SA messages require an RP address for peer RPF checks, but MVPN SA routes carry only (C-S,C-G). An Extended Community was chosen to carry the RP address alongside the MVPN SA route so that MSDP infrastructure can consume it without changes to the MVPN NLRI encoding.
+section: "1"
+topics:
+    - multicast
+    - routing
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

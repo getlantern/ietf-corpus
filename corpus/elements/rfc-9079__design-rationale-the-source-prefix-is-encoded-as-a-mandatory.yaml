@@ -1,0 +1,8 @@
+document: rfc-9079
+kind: design-rationale
+summary: The source prefix is encoded as a mandatory sub-TLV so that unextended (RFC 8966) implementations silently ignore the entire enclosing TLV, preserving interoperability. A zero-length source prefix is represented by the absence of the sub-TLV rather than an explicit zero-length value.
+section: "5"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-9068
+kind: normative-requirement
+summary: The current time MUST be before the 'exp' claim value. Implementers MAY provide small leeway (usually no more than a few minutes) to account for clock skew. Validation failures MUST result in an 'invalid_token' error per RFC 6750 Section 3.1.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

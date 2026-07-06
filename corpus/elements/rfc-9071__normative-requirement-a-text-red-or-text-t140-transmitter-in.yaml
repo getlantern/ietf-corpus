@@ -1,0 +1,11 @@
+document: rfc-9071
+kind: normative-requirement
+summary: A 'text/red' or 'text/t140' transmitter in a mixer SHALL send packets as long as there is something to transmit, with a maximum transmission interval of 330 ms per source. It is RECOMMENDED to send the next packet as soon as new text is available, provided the mean character rate over the last 10 one-second intervals does not exceed the receiver's 'cps' value.
+section: "3.4"
+rfc2119_level: SHALL
+topics:
+    - realtime
+    - rtp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
