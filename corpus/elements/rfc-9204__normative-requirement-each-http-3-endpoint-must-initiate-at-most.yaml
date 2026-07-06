@@ -1,0 +1,10 @@
+document: rfc-9204
+kind: normative-requirement
+summary: Each HTTP/3 endpoint MUST initiate at most one encoder stream and at most one decoder stream. Receipt of a second instance of either stream type MUST be treated as a connection error of type H3_STREAM_CREATION_ERROR.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

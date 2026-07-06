@@ -1,0 +1,10 @@
+document: rfc-9204
+kind: normative-requirement
+summary: The sender MUST NOT close either the encoder or decoder stream, and the receiver MUST NOT request that the sender close either stream. Closure of either unidirectional stream MUST be treated as a connection error of type H3_CLOSED_CRITICAL_STREAM.
+section: "4.2"
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

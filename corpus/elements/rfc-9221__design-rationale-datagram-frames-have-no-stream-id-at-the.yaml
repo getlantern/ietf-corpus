@@ -1,0 +1,8 @@
+document: rfc-9221
+kind: design-rationale
+summary: DATAGRAM frames have no stream ID at the QUIC layer; multiplexing of datagram flows is the responsibility of the application protocol. A recommended pattern is to use a variable-length integer at the start of the Datagram Data field to distinguish flows, allowing many flows with minimal overhead.
+section: "5.1"
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

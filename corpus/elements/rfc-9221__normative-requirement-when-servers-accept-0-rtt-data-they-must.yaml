@@ -1,0 +1,10 @@
+document: rfc-9221
+kind: normative-requirement
+summary: When servers accept 0-RTT data, they MUST send a max_datagram_frame_size transport parameter greater than or equal to the value sent in the connection where the NewSessionTicket message was sent. Clients using stored 0-RTT state MUST validate the new parameter is >= the stored value, or terminate with PROTOCOL_VIOLATION.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - quic
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

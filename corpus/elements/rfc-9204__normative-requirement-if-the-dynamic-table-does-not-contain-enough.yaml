@@ -1,0 +1,9 @@
+document: rfc-9204
+kind: normative-requirement
+summary: If the dynamic table does not contain enough room for a new entry without evicting non-evictable entries, the encoder MUST NOT insert that entry into the dynamic table (including duplicates). An entry is evictable only after its insertion is acknowledged and there are no outstanding references to it in unacknowledged representations.
+section: 2.1.1
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

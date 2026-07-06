@@ -1,0 +1,10 @@
+document: rfc-9207
+kind: security-consideration
+summary: 'The issuer identifier in the authorization response is not cryptographically protected against tampering. However, integrity protection is not necessary to defend against mix-up attacks: if an attacker can tamper with the authorization response, they already have direct access to the authorization code and do not need a mix-up attack.'
+section: "4"
+topics:
+    - oauth
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

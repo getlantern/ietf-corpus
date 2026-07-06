@@ -1,0 +1,9 @@
+document: rfc-9213
+kind: normative-requirement
+summary: When a cache receives a response with one or more header fields on its target list, the cache MUST select the first (in target-list order) field with a valid, non-empty value and use it to determine caching policy, and it MUST ignore Cache-Control and Expires in that response unless no valid, non-empty targeted value is available.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

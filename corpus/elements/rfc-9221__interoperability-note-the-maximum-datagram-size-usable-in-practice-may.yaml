@@ -1,0 +1,8 @@
+document: rfc-9221
+kind: interoperability-note
+summary: The maximum datagram size usable in practice may be further constrained beyond max_datagram_frame_size by the max_udp_payload_size transport parameter and the path MTU between endpoints. DATAGRAM frames cannot be fragmented, so application protocols must handle cases where the effective maximum datagram size is smaller than max_datagram_frame_size.
+section: "5"
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

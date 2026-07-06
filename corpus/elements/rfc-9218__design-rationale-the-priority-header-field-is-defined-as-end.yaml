@@ -1,0 +1,8 @@
+document: rfc-9218
+kind: design-rationale
+summary: The Priority header field is defined as end-to-end rather than hop-by-hop because the way a client processes a response is a property of the client, not an intermediary. Being end-to-end also allows caching intermediaries to store and reuse the Priority value with the cached response.
+section: "14"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

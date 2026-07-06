@@ -1,0 +1,9 @@
+document: rfc-9221
+kind: design-rationale
+summary: DATAGRAM frames provide no explicit flow control and do not contribute to per-flow or connection-wide data limits. The rationale is that datagrams are inherently unreliable and MAY be dropped by the receiver if it cannot process them, making explicit flow control unnecessary.
+section: "5.3"
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9204
+kind: design-rationale
+summary: QPACK was designed as a variation of HPACK specifically to avoid head-of-line blocking in HTTP/3. HPACK assumes a total ordering across frames on all streams, which would block field section processing when used over QUIC's out-of-order delivery. QPACK allows correctness in the presence of out-of-order delivery while flexibly balancing resilience against head-of-line blocking versus compression ratio.
+section: "1"
+topics:
+    - http
+    - quic
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

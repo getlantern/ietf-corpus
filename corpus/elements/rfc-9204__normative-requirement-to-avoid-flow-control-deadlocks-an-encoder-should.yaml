@@ -1,0 +1,11 @@
+document: rfc-9204
+kind: normative-requirement
+summary: To avoid flow-control deadlocks, an encoder SHOULD NOT write an instruction unless sufficient stream and connection flow-control credit is available for the entire instruction. A decoder withholding flow-control credit until instructions are complete can produce deadlocks.
+section: 2.1.3
+rfc2119_level: SHOULD NOT
+topics:
+    - http
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

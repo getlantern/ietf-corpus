@@ -1,0 +1,9 @@
+document: rfc-9218
+kind: normative-requirement
+summary: Servers SHOULD buffer the most recently received PRIORITY_UPDATE frame and apply it once the referenced stream is opened, to handle the race condition where a PRIORITY_UPDATE arrives before the referenced stream is opened. Only the most recent frame per stream needs to be stored.
+section: "7"
+rfc2119_level: SHOULD
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

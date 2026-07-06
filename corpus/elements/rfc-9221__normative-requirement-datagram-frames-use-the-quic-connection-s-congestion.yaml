@@ -1,0 +1,10 @@
+document: rfc-9221
+kind: normative-requirement
+summary: DATAGRAM frames use the QUIC connection's congestion controller. The sender MUST either delay sending the frame until the controller allows it, or drop the frame without sending it (and MAY notify the application of the drop).
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

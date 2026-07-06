@@ -1,0 +1,10 @@
+document: rfc-9203
+kind: security-consideration
+summary: Nonces N1 and N2 MUST NOT be reused with the same input keying material even after reboots. Random 64-bit nonces are RECOMMENDED; a counter-based nonce is susceptible to on-path attackers replaying a client message to force reuse of an old AEAD (nonce, key) pair.
+section: "7"
+rfc2119_level: REQUIRED
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9203
+kind: design-rationale
+summary: Nonces N1 and N2 are exchanged and incorporated into the Master Salt so that reposting the same (non-expired) access token always produces a different OSCORE security context. Without this, a rebooted node reusing an old token would risk AEAD nonce/key reuse, breaking both confidentiality and integrity.
+section: "2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9218
+kind: normative-requirement
+summary: The HTTP/3 PRIORITY_UPDATE frame MUST be sent on the client control stream; receiving it on any other stream MUST be treated as a connection error of type H3_FRAME_UNEXPECTED. Servers MUST NOT send PRIORITY_UPDATE frames of either type; a client receiving one MUST treat it as H3_FRAME_UNEXPECTED.
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

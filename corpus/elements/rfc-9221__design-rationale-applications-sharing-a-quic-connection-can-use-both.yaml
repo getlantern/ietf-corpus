@@ -1,0 +1,9 @@
+document: rfc-9221
+kind: design-rationale
+summary: Applications sharing a QUIC connection can use both reliable STREAM frames and unreliable DATAGRAM frames over a single handshake and authentication context, reducing latency compared to maintaining separate TLS and DTLS connections. QUIC datagrams also share a single congestion controller, which is more efficient than separate controllers.
+section: "2"
+topics:
+    - quic
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

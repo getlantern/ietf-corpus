@@ -1,0 +1,8 @@
+document: rfc-9204
+kind: protocol-element
+summary: 'The Required Insert Count (RIC) identifies the minimum dynamic table Insert Count needed to decode an encoded field section. It is encoded with a modular transformation: EncInsertCount = (ReqInsertCount mod (2 * MaxEntries)) + 1, where MaxEntries = floor(MaxTableCapacity / 32), limiting prefix length on long-lived connections.'
+section: 4.5.1.1
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

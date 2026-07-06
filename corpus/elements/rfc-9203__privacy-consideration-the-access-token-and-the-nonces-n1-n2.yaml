@@ -1,0 +1,9 @@
+document: rfc-9203
+kind: privacy-consideration
+summary: The access token and the nonces N1/N2 are sent in the clear to the authz-info endpoint. A client reusing the same token across multiple RSs or locations risks being tracked by the token's value. Random nonces are preferred over counters to avoid leaking state information.
+section: "8"
+topics:
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

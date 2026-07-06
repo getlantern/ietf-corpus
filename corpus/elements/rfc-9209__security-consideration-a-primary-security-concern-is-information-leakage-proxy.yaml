@@ -1,0 +1,10 @@
+document: rfc-9209
+kind: security-consideration
+summary: 'A primary security concern is information leakage: Proxy-Status can expose intermediary configuration and backend topology, allowing attackers to directly target backend services unprepared for high traffic or malformed inputs. Intermediaries are not required to generate the field and may conditionally emit it based on request attributes such as authentication tokens or IP address.'
+section: "4"
+topics:
+    - http
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

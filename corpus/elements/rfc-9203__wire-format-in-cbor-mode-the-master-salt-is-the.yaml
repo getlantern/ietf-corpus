@@ -1,0 +1,9 @@
+document: rfc-9203
+kind: wire-format
+summary: In CBOR mode, the Master Salt is the concatenation of the CBOR-encoded input salt, nonce1, and nonce2 byte strings (each with CBOR length prefix). In JSON mode, each component is prefixed by its 1-byte size then the whole is base64-encoded; maximum component size is 255 bytes.
+section: "4.3"
+topics:
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

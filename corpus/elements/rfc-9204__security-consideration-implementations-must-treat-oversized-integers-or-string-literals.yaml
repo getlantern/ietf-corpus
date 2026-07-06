@@ -1,0 +1,10 @@
+document: rfc-9204
+kind: security-consideration
+summary: Implementations MUST treat oversized integers or string literals as errors (QPACK_DECOMPRESSION_FAILED on request streams, or the appropriate stream-type error on encoder/decoder streams). Implementation limits for integer and string literal lengths SHOULD be large enough to accommodate the largest fields the HTTP implementation can accept.
+section: "7.4"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

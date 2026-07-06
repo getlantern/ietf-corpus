@@ -1,0 +1,10 @@
+document: rfc-9207
+kind: design-rationale
+summary: When JARM (JWT Secured Authorization Response Mode) is used, the JWT already contains an `iss` claim that provides equivalent mix-up protection if validated per Section 2.4. An additional `iss` parameter outside the JWT is therefore not necessary when JARM is in use.
+section: "2.4"
+topics:
+    - oauth
+    - security
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

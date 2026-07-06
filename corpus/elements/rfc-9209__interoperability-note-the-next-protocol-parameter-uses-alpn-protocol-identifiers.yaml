@@ -1,0 +1,9 @@
+document: rfc-9209
+kind: interoperability-note
+summary: The 'next-protocol' parameter uses ALPN protocol identifiers to name the protocol used toward the next hop, but the value may not have been used in actual ALPN negotiation — it identifies the protocol in use, not the negotiation mechanism. Implementors must not infer that ALPN was performed based solely on this parameter's presence.
+section: 2.1.3
+topics:
+    - http
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

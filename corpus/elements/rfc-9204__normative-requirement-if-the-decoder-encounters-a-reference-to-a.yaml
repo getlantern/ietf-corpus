@@ -1,0 +1,9 @@
+document: rfc-9204
+kind: normative-requirement
+summary: If the decoder encounters a reference to a dynamic table entry that has already been evicted or has an absolute index greater than or equal to the declared Required Insert Count, it MUST treat this as a connection error of type QPACK_DECOMPRESSION_FAILED. A reference in an encoder instruction to an evicted entry MUST be treated as QPACK_ENCODER_STREAM_ERROR.
+section: 2.2.3
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

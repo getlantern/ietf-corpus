@@ -1,0 +1,8 @@
+document: rfc-9221
+kind: protocol-element
+summary: Although DATAGRAM frames are not retransmitted upon loss, they are ack-eliciting. Receivers SHOULD support delaying ACK frames (within max_ack_delay limits) for packets containing only DATAGRAM frames, since the sender takes no action on temporary non-acknowledgement.
+section: "5.2"
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

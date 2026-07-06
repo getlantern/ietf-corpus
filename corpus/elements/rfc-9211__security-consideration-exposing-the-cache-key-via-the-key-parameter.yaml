@@ -1,0 +1,9 @@
+document: rfc-9211
+kind: security-consideration
+summary: Exposing the cache key via the `key` parameter can help attackers understand cache key modifications, potentially assisting cache poisoning attacks. Merely obfuscating the key does not mitigate this risk; the header field can be omitted or restricted to authorized clients.
+section: "6"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

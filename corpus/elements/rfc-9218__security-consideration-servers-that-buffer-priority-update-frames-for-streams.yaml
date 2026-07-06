@@ -1,0 +1,9 @@
+document: rfc-9218
+kind: security-consideration
+summary: Servers that buffer PRIORITY_UPDATE frames for streams not yet opened must bound the resources allocated, as there is no protocol limit on the number of PRIORITY_UPDATE frames a client may send. Implementations should store only the most recently received frame per stream to cap resource use.
+section: "15"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9218
+kind: normative-requirement
+summary: The Stream Identifier field in an HTTP/2 PRIORITY_UPDATE frame header MUST be zero (0x0); any other value MUST be treated as a connection error of type PROTOCOL_ERROR. Servers MUST NOT send PRIORITY_UPDATE frames; a client receiving one MUST respond with a connection error of type PROTOCOL_ERROR.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

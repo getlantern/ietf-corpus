@@ -1,0 +1,10 @@
+document: rfc-9203
+kind: normative-requirement
+summary: To update access rights using the same OSCORE security context, the client MUST include a req_cnf object with the kid field carrying the OSCORE Input Material identifier in its POST to the token endpoint. The AS MUST verify that the received kid identifies a PoP key previously issued to that client.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

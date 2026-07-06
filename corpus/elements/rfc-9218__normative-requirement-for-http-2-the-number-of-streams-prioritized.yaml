@@ -1,0 +1,9 @@
+document: rfc-9218
+kind: normative-requirement
+summary: For HTTP/2, the number of streams prioritized but in the idle state plus the number of active streams MUST NOT exceed SETTINGS_MAX_CONCURRENT_STREAMS. A server receiving a PRIORITY_UPDATE that violates this MUST respond with a connection error of type PROTOCOL_ERROR.
+section: "7.1"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

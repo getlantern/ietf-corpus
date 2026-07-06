@@ -1,0 +1,9 @@
+document: rfc-9209
+kind: normative-requirement
+summary: An intermediary MUST NOT send Proxy-Status as a trailer field unless it has also generated a Proxy-Status header field with the same member (though potentially different parameters) in that message. This allows recipients to reconstruct the relative ordering of members from both sections.
+section: "2"
+rfc2119_level: MUST NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9207
+kind: normative-requirement
+summary: Clients interacting with authorization servers that publish OAuth metadata (RFC 8414) MUST compare the `iss` parameter value to the `issuer` value in the server's metadata document. If OAuth metadata is not used, clients MUST use deployment-specific means (e.g., static configuration) to verify the expected `iss` value.
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

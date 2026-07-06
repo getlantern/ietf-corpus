@@ -1,0 +1,8 @@
+document: rfc-9218
+kind: interoperability-note
+summary: When an intermediary coalesces requests from multiple clients onto a single backend connection, naively honoring Priority signals from one client may starve responses to another. Servers aware of coalescing intermediaries (detectable via Forwarded, X-Forwarded-For, or Via headers) should consider distributing bandwidth more fairly.
+section: "13.1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

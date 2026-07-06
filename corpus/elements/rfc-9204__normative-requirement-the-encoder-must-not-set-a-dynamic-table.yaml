@@ -1,0 +1,10 @@
+document: rfc-9204
+kind: normative-requirement
+summary: The encoder MUST NOT set a dynamic table capacity that exceeds the maximum specified by the decoder via SETTINGS_QPACK_MAX_TABLE_CAPACITY. For 0-RTT clients using a previously remembered non-zero setting, the server MUST send the same non-zero value in its SETTINGS frame; any other value or omission MUST be treated as a connection error of type QPACK_DECODER_STREAM_ERROR.
+section: 3.2.3
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9209
+kind: design-rationale
+summary: HTTP's existing error status codes (502, 504) were found insufficient for debugging intermediary failures in practice. Proxy-Status was introduced to let intermediaries convey structured, machine-readable details about error conditions and response handling — including when no response was obtained from the origin at all — without requiring changes to the status code semantics.
+section: "1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

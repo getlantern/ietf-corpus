@@ -1,0 +1,9 @@
+document: rfc-9218
+kind: normative-requirement
+summary: Before receiving the server's first SETTINGS frame, a client SHOULD send both HTTP/2 priority signals and the extensible priority signals simultaneously. Once the client receives SETTINGS_NO_RFC7540_PRIORITIES=1 from the server, it SHOULD stop sending HTTP/2 priority signals to avoid redundant signaling.
+section: 2.1.1
+rfc2119_level: SHOULD
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9218
+kind: design-rationale
+summary: Absence of a priority parameter in a server's Priority response header field means the server does not wish to override the client-provided value for that parameter. This differs from a request header, where omission implies the parameter's default value. This asymmetry allows servers to selectively override only the parameters they care about.
+section: "8"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

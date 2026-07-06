@@ -1,0 +1,10 @@
+document: rfc-9221
+kind: normative-requirement
+summary: An endpoint MUST NOT send DATAGRAM frames larger than the max_datagram_frame_size value received from its peer. An endpoint that receives an oversized DATAGRAM frame or one received when support was not indicated MUST terminate the connection with PROTOCOL_VIOLATION.
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - quic
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

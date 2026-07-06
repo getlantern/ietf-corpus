@@ -1,0 +1,10 @@
+document: rfc-9204
+kind: security-consideration
+summary: QPACK is vulnerable to CRIME-like attacks where an attacker who can both inject field lines and observe encoded lengths can probe the dynamic table state. QPACK mitigates this by requiring a full field line match rather than character-by-character, reducing attacks to brute-force guessing, but low-entropy field values (e.g., Cookie, Authorization) remain at risk.
+section: "7.1"
+topics:
+    - security
+    - http
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

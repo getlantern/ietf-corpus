@@ -1,0 +1,10 @@
+document: rfc-9218
+kind: normative-requirement
+summary: The HTTP/3 request-stream PRIORITY_UPDATE (0xF0700) MUST reference a request stream; referencing a non-request stream MUST be treated as a connection error of type H3_ID_ERROR. The push-stream variant (0xF0701) MUST reference a promised push stream; referencing an unpromised or out-of-range push ID MUST be treated as H3_ID_ERROR.
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
