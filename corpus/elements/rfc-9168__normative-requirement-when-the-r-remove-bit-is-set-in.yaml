@@ -1,0 +1,10 @@
+document: rfc-9168
+kind: normative-requirement
+summary: When the R (Remove) bit is set in a FLOWSPEC object and no matching FS-ID exists, the receiver MUST generate a PCErr with Error-Type 30, Error-value 4 (Unknown FlowSpec). If the AFI is unrecognized, Error-value 2 (Malformed FlowSpec) MUST be returned.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

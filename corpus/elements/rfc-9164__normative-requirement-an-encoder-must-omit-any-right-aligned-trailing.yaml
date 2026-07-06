@@ -1,0 +1,10 @@
+document: rfc-9164
+kind: normative-requirement
+summary: An encoder MUST omit any right-aligned (trailing) sequence of bytes in which all bytes are zero from the prefix byte string. There is no relationship between the number of bytes omitted and the prefix length; for example, 2001:db8::/64 encodes as 54([64, h'20010db8']).
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - cbor
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9161
+kind: security-consideration
+summary: The duplicate IP detection function and AS-MAC mechanism protect the BD against ARP/ND spoofing attacks. Upon duplicate detection, the PE may advertise IP1->AS-MAC via GARP and RT2 so all CEs address traffic to a managed drop MAC, preventing the spoofer from attracting traffic for the duplicated IP.
+section: "6"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

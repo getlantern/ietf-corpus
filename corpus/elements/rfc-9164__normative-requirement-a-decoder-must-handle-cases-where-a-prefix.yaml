@@ -1,0 +1,10 @@
+document: rfc-9164
+kind: normative-requirement
+summary: A decoder MUST handle cases where a prefix length specifies more bits are relevant than are actually present in the encoded byte string, because encoders are required to remove zero-valued trailing bytes. For example, ::/128 is encoded as 54([128, h'']).
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - cbor
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

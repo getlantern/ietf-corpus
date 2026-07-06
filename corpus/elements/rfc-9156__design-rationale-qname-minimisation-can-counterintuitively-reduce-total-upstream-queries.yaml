@@ -1,0 +1,8 @@
+document: rfc-9156
+kind: design-rationale
+summary: QNAME minimisation can counterintuitively reduce total upstream queries in some cases. For example, if three QNAMEs share a non-existent TLD, traditional resolution sends three queries to the root, whereas minimisation sends one NXDOMAIN-returning query for the TLD and caches it, avoiding the subsequent two queries entirely.
+section: "5"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

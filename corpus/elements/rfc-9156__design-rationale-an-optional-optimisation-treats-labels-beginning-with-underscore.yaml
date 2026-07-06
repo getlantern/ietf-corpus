@@ -1,0 +1,9 @@
+document: rfc-9156
+kind: design-rationale
+summary: An optional optimisation treats labels beginning with underscore (_) as not representing privacy-relevant administrative boundaries. For example, when resolving '_25._tcp.mail.example.org' after querying 'mail.example.org', the resolver can jump directly to '_25._tcp.mail.example.org' rather than stepping through each underscore label.
+section: "2.3"
+topics:
+    - dns
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

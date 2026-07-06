@@ -1,0 +1,9 @@
+document: rfc-9161
+kind: protocol-element
+summary: 'Duplicate IP detection monitors IP-moves: when an existing IP1->MAC1 entry is replaced, the PE starts an M-second timer (default 180s); if N IP moves occur before expiry (default N=5), a duplicate IP situation is declared. Upon detection, the PE sends an AS-MAC GARP/unsolicited-NA to redirect traffic away from the disputed IP.'
+section: "3.7"
+topics:
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

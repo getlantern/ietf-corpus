@@ -1,0 +1,8 @@
+document: rfc-9156
+kind: state-machine
+summary: 'The QNAME minimisation algorithm iterates: (0) answer from cache or iterate; (1) find closest delegation point (ANCESTOR); (2) initialise CHILD=ANCESTOR; (3) if CHILD==QNAME resolve normally; (4) otherwise add next label(s) to CHILD; (5) check cache; (6) query with responses handled as referral, DNAME, NOERROR, NXDOMAIN, or timeout, looping back appropriately.'
+section: "3"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

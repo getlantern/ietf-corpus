@@ -1,0 +1,8 @@
+document: rfc-9161
+kind: design-rationale
+summary: Dynamic Proxy ND entries must not be learned from NS messages because NS messages do not carry the R Flag needed by the Reply sub-function to correctly set the router/host indication in NA responses. This is why only NA messages are snooped for dynamic Proxy ND learning.
+section: "3.2"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

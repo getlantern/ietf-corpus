@@ -1,0 +1,9 @@
+document: rfc-9156
+kind: design-rationale
+summary: QNAME minimisation reduces privacy exposure by sending only enough of the QNAME to an upstream name server to obtain a delegation, rather than the full original QNAME and QTYPE. The full QNAME and original QTYPE are only needed at the authoritative name server responsible for the record; all intermediate servers need only enough labels to return a delegation.
+section: "2"
+topics:
+    - dns
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

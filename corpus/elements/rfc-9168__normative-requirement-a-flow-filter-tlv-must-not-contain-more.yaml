@@ -1,0 +1,10 @@
+document: rfc-9168
+kind: normative-requirement
+summary: A Flow Filter TLV MUST NOT contain more than one Flow Specification TLV of the same type. A receiver finding duplicate types MUST respond with PCErr Error-Type 30, Error-value 2 (Malformed FlowSpec) and MUST NOT install the Flow Specification.
+section: "7"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

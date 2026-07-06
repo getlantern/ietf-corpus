@@ -1,0 +1,9 @@
+document: rfc-9156
+kind: design-rationale
+summary: The QTYPE used in minimised queries can be any type for which the authority always lies below the zone cut, excluding DS, NSEC, NSEC3, OPT, TSIG, TKEY, ANY, MAILA, MAILB, AXFR, and IXFR. A or AAAA are recommended because they are least likely to raise issues in DNS software and middleboxes, and blend into normal traffic.
+section: "2.1"
+topics:
+    - dns
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

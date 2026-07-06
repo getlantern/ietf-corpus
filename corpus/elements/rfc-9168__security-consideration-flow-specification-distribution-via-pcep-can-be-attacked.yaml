@@ -1,0 +1,10 @@
+document: rfc-9168
+kind: security-consideration
+summary: Flow Specification distribution via PCEP can be attacked to misroute traffic without tearing down LSPs or SR paths. Implementations MUST secure the PCEP session using IPsec (RFC 5440 Sections 10.4–10.6) or TLS (RFC 8253). TCP-MD5 SHOULD NOT be relied upon as it provides insufficient security guarantees.
+section: "11"
+topics:
+    - security
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

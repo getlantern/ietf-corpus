@@ -1,0 +1,9 @@
+document: rfc-9167
+kind: security-consideration
+summary: A server MUST only provide maintenance information to clients that are authorized. If a client queries a maintenance identifier it is not authorized to access, the server SHOULD return EPP error 2201 ('Authorization error') or 2303 ('Object does not exist').
+section: "7"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
