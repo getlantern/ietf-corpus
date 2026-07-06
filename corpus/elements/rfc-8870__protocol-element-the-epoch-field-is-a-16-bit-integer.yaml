@@ -1,0 +1,10 @@
+document: rfc-8870
+kind: protocol-element
+summary: The Epoch field is a 16-bit integer indicating how many SRTP keys have been sent for a given SSRC under the current EKTKey prior to the current key. It starts at zero and increments each time a sender transmits a new key. The recipient MUST reject any future FullEKTField for this SPI and SSRC with an epoch value equal to or lower than one already seen.
+section: "4.1"
+topics:
+    - rtp
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8870
+kind: state-machine
+summary: 'Inbound EKT processing: (1) check final byte to determine EKT format, (2) look up EKT parameter set by SPI — if no match, return authentication failure, (3) authenticate and decrypt EKTCiphertext — abort on failure, (4) parse EKTPlaintext, (5) verify SSRC in EKTPlaintext matches SRTP packet SSRC, (6) save recovered keys indexed by SSRC, (7) proceed with normal SRTP processing.'
+section: 4.3.2
+topics:
+    - rtp
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

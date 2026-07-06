@@ -1,0 +1,10 @@
+document: rfc-8876
+kind: design-rationale
+summary: Non-interactive emergency calls use SIP MESSAGE (not INVITE) because no two-way interactive media session is needed. The MESSAGE transaction does not create a session, distinguishing it from INVITE-based emergency calls that negotiate media streams such as voice, video, or real-time text.
+section: "1"
+topics:
+    - sip
+    - realtime
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

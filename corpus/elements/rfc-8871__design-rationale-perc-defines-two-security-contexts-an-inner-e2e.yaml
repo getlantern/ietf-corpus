@@ -1,0 +1,12 @@
+document: rfc-8871
+kind: design-rationale
+summary: PERC defines two security contexts — an 'inner' E2E key per transmitted media flow for authenticated encryption between endpoints, and an 'outer' HBH key known only to adjacent Media Distributors or endpoints for each hop. This dual-key design allows Media Distributors to modify certain RTP headers and process RTCP without ever having access to plaintext media content.
+section: "4.1"
+topics:
+    - rtp
+    - realtime
+    - security
+    - privacy
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

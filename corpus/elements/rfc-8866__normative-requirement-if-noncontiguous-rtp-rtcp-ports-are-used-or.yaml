@@ -1,0 +1,11 @@
+document: rfc-8866
+kind: normative-requirement
+summary: If noncontiguous RTP/RTCP ports are used or if they don't follow the parity rule of even RTP ports and odd RTCP ports, the 'a=rtcp:' attribute MUST be used. Applications MUST NOT subtract 1 from the RTP port when 'a=rtcp:' is present.
+section: "5.14"
+rfc2119_level: MUST
+topics:
+    - realtime
+    - rtp
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

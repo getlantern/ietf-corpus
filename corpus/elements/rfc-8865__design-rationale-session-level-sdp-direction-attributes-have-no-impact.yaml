@@ -1,0 +1,9 @@
+document: rfc-8865
+kind: design-rationale
+summary: Session-level SDP direction attributes have no impact on T.140 data channels; direction is instead negotiated per-channel via 'dcsa' attributes. This is necessary because a WebRTC data channel is always bidirectional at the transport layer, so direction restrictions must be applied at the application level.
+section: 4.2.3
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

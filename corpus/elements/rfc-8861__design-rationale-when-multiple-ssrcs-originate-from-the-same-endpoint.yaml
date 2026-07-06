@@ -1,0 +1,9 @@
+document: rfc-8861
+kind: design-rationale
+summary: When multiple SSRCs originate from the same endpoint and are co-located, they see identical network conditions (same lost packets, jitter, etc.). This allows a single representative SSRC to send RTCP reception quality reports on behalf of all others, dramatically reducing RTCP overhead without loss of useful information.
+section: "1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

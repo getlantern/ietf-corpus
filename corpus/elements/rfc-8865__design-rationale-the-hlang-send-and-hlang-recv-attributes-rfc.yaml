@@ -1,0 +1,9 @@
+document: rfc-8865
+kind: design-rationale
+summary: The 'hlang-send' and 'hlang-recv' attributes (RFC 8373) are placed in 'dcsa' rather than directly in the 'm=' section because they need to be scoped to individual data channels, not the entire SCTP association. A subprotocol specification must define the modality, which for T.140 is 'written'.
+section: "7"
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

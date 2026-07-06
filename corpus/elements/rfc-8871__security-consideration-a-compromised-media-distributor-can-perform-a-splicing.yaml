@@ -1,0 +1,10 @@
+document: rfc-8871
+kind: security-consideration
+summary: A compromised Media Distributor can perform a splicing attack by swapping SSRCs between streams. PERC prevents this by including the SSRC in both the HBH and E2E integrity checks, so any SSRC modification invalidates authentication at the receiver.
+section: 8.2.4
+topics:
+    - rtp
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

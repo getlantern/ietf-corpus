@@ -1,0 +1,10 @@
+document: rfc-8870
+kind: normative-requirement
+summary: Outbound packets SHOULD continue to use the old SRTP master key for 250 ms after sending any new key in a FullEKTField. This gives receivers time to obtain the new key before it is used for encryption.
+section: 4.3.1
+rfc2119_level: SHOULD
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8873
+kind: normative-requirement
+summary: When closing an MSRP session, the SDP port value for the 'm=' line SHOULD NOT be set to zero (unless all data channels are closing and the SCTP association is no longer needed), since doing so would close the SCTP association and impact all data channels. Instead, the offerer SHALL remove the 'dcmap' and 'dcsa' attributes.
+section: "4.6"
+rfc2119_level: SHOULD NOT
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

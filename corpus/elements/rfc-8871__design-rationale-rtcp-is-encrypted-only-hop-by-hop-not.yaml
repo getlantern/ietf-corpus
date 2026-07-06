@@ -1,0 +1,10 @@
+document: rfc-8871
+kind: design-rationale
+summary: RTCP is encrypted only hop by hop, not end to end. This deliberately gives the Media Distributor the flexibility to forward RTCP content unchanged, transmit compound RTCP packets, initiate RTCP reporting, or convey other information. As a consequence, endpoints MUST NOT send confidential information via RTCP.
+section: "4.1"
+topics:
+    - rtp
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

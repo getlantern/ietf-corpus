@@ -1,0 +1,10 @@
+document: rfc-8865
+kind: normative-requirement
+summary: After a T.140 data channel failure and reestablishment, the sending endpoint MUST NOT retransmit T140blocks, as the channel provides no mechanism for the receiver to identify retransmitted blocks. The receiver SHOULD indicate to the user that text may have been lost, for example by inserting missing text markers.
+section: "5.4"
+rfc2119_level: MUST NOT
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8863
+kind: normative-requirement
+summary: While the PAC timer is still running, the ICE agent MUST NOT update a checklist state from Running to Failed, even if there are no pairs left in the checklist to check. As a result, the ICE agent will not remove any data streams or set the ICE session state to Failed while the timer is running.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

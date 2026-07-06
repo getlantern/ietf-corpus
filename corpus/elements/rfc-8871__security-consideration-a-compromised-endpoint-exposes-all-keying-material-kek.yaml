@@ -1,0 +1,11 @@
+document: rfc-8871
+kind: security-consideration
+summary: A compromised endpoint exposes all keying material (KEK, E2E keys, HBH key) and allows injection of arbitrary media using the compromised SSRC or any other SSRC, since all participants share the KEK. PERC's cipher suite does not include per-source authentication (TESLA is noted as a future option); possession of the KEK is all that is verified.
+section: "8.4"
+topics:
+    - security
+    - realtime
+    - rtp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

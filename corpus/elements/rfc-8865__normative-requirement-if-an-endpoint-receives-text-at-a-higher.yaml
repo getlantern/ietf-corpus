@@ -1,0 +1,10 @@
+document: rfc-8865
+kind: normative-requirement
+summary: If an endpoint receives text at a higher rate than it can handle and the sending endpoint does not support 'cps', the receiver SHOULD either signal unwillingness to receive more text via direction attributes, or use flow control to reduce the rate. In emergency services contexts, discarding overflow and inserting a loss marker may be more appropriate.
+section: 4.2.1
+rfc2119_level: SHOULD
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

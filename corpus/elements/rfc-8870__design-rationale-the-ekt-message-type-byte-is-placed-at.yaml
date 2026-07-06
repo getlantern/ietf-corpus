@@ -1,0 +1,9 @@
+document: rfc-8870
+kind: design-rationale
+summary: The EKT Message Type byte is placed at the very end of the SRTP packet because the length of the SRTP portion is not known until decryption occurs, making forward parsing impossible. By parsing backwards from the packet end, the type can be determined before decryption.
+section: 4.3.2
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

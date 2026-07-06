@@ -1,0 +1,10 @@
+document: rfc-8864
+kind: normative-requirement
+summary: Both 'max-retr' and 'max-time' parameters MUST NOT be present simultaneously in an 'a=dcmap:' attribute line, as they are mutually exclusive. If an SDP offer contains both, the receiver MUST reject the offer; if an SDP answer contains both, the offerer MUST treat the offer/answer as failed.
+section: "6.2"
+rfc2119_level: MUST NOT
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8871
+kind: wire-format
+summary: An encrypted PERC media packet consists of the RTP fixed header and CSRCs (authenticated by both E2E and HBH), an optional RTP extension (authenticated HBH only), an E2E-encrypted-and-authenticated payload with E2E auth tag and OHB (Original Header Block), an HBH authentication tag wrapping all prior fields, and a plaintext EKT Tag appended after the double transform without additional encryption or authentication.
+section: "7"
+topics:
+    - rtp
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

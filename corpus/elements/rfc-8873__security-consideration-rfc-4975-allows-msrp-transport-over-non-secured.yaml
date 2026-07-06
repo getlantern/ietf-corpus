@@ -1,0 +1,9 @@
+document: rfc-8873
+kind: security-consideration
+summary: RFC 4975 allows MSRP transport over non-secured TCP connections and does not guarantee end-to-end TLS use; even with TLS on some hops, TCP may be used on others. Operators must establish policies to ensure MSRP traffic is protected between endpoints, particularly in gateway configurations mixing data channel and TCP/TLS transport.
+section: "8"
+topics:
+    - security
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

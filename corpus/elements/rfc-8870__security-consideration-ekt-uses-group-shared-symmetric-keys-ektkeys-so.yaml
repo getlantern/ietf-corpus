@@ -1,0 +1,11 @@
+document: rfc-8870
+kind: security-consideration
+summary: EKT uses group shared symmetric keys (EKTKeys), so group members can impersonate each other — any group member can generate an EKT Tag for any SSRC. The entity distributing EKTKeys can decrypt any keys distributed via EKT and thus any media protected with those keys. This is an inherent limitation of the group key model.
+section: "6"
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

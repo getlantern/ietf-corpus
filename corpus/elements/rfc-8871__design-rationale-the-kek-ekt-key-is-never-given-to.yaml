@@ -1,0 +1,10 @@
+document: rfc-8871
+kind: design-rationale
+summary: The KEK (EKT Key) is never given to the Media Distributor. Even the Key Distributor is unaware of locally generated E2E keys used by each endpoint after the endpoint optionally discards the DTLS-SRTP-derived E2E key. This two-layer approach ensures that neither the MD nor the KD can decrypt media once an endpoint generates a fresh E2E key.
+section: "6.4"
+topics:
+    - crypto
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

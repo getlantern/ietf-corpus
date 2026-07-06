@@ -1,0 +1,9 @@
+document: rfc-8870
+kind: design-rationale
+summary: SRTP (rather than SRTCP) is used to carry EKT keying material because it shares fate with the transmitted media, SRTP rekeying can occur without concern for RTCP transmission limits, and it avoids the need for SRTCP compound packets with RTP translators and mixers.
+section: "4"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

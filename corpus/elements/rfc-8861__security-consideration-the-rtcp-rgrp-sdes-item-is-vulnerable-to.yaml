@@ -1,0 +1,10 @@
+document: rfc-8861
+kind: security-consideration
+summary: The RTCP RGRP SDES item is vulnerable to malicious modification. Modifying its length field causes RTCP packet parsing to fail; modifying its value causes the receiver to associate the sender with an incorrect Reporting Group, potentially creating inconsistencies that could trigger bitrate reductions in congestion-controlled sessions.
+section: "5"
+topics:
+    - rtp
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

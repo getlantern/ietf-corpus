@@ -1,0 +1,9 @@
+document: rfc-8863
+kind: design-rationale
+summary: A side effect of the PAC timer is that scenarios where ICE should fail (e.g., both sides provide unsupported address families) will no longer fail immediately but will only fail after the PAC timer expires. Because most ICE scenarios already require extended time to determine failure, the application impact is expected to be minimal.
+section: "4"
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

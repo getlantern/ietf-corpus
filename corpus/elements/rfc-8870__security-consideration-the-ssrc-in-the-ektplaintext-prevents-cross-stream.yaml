@@ -1,0 +1,11 @@
+document: rfc-8870
+kind: security-consideration
+summary: The SSRC in the EKTPlaintext prevents cross-stream cut-and-paste attacks, since an attacker cannot use an EKT Tag from one SSRC to reset the key for another. The Epoch field prevents rollback to a previous key. However, EKT has no replay protection, so an attacker could implant improper keys by replaying captured EKTCiphertext values.
+section: "6"
+topics:
+    - rtp
+    - realtime
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

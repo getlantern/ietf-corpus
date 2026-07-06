@@ -1,0 +1,10 @@
+document: rfc-8871
+kind: security-consideration
+summary: A delayed playout attack allows a Media Distributor to hold received media and forward it later, bypassing E2E replay protection because the MD is permitted to skip stream forwarding. Periodic conference rekeying reduces effectiveness, since significantly delayed media encrypted with expired keys will not be decrypted.
+section: 8.2.3
+topics:
+    - rtp
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

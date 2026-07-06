@@ -1,0 +1,10 @@
+document: rfc-8870
+kind: state-machine
+summary: 'Outbound EKT processing: (1) set SPI from outbound parameter set, (2) compute EKTPlaintext from SRTP master key/SSRC/ROC, (3) encrypt to EKTCiphertext using EKTCipher and EKTKey, (4) form and append FullEKTField. When not sending a FullEKTField, a ShortEKTField MUST be appended instead.'
+section: 4.3.1
+topics:
+    - rtp
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

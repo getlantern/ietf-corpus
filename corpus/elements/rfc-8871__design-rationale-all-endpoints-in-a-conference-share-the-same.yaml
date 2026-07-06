@@ -1,0 +1,11 @@
+document: rfc-8871
+kind: design-rationale
+summary: All endpoints in a conference share the same SRTP master salt (transmitted with the EKT Key), but each endpoint generates its own distinct SRTP master key for E2E encryption. Only the SRTP master key (not the salt) is conveyed to other endpoints via the Full EKT Tag, reducing the data that must be distributed per-rekeying event.
+section: "6.3"
+topics:
+    - rtp
+    - realtime
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
