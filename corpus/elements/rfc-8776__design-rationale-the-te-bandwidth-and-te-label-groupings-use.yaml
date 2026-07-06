@@ -1,0 +1,9 @@
+document: rfc-8776
+kind: design-rationale
+summary: The 'te-bandwidth' and 'te-label' groupings use a 'choice' with a 'generic' default case specifically to allow augmentation by technology-specific modules (e.g., WSON, OTN) without modifying the base module. This makes the common types module importable by any TE module regardless of data-plane technology.
+section: "3.1"
+topics:
+    - routing
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

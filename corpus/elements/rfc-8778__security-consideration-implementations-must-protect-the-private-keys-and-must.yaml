@@ -1,0 +1,10 @@
+document: rfc-8778
+kind: security-consideration
+summary: Implementations MUST protect the private keys and MUST keep track of which leaf nodes in the tree have been used. Loss of integrity of this tracking data can cause a one-time key to be used more than once, and virtual machine snapshotting or cloning poses a particular risk requiring careful consideration.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

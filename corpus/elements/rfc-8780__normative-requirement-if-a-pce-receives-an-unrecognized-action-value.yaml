@@ -1,0 +1,9 @@
+document: rfc-8780
+kind: normative-requirement
+summary: If a PCE receives an unrecognized Action value in the Wavelength Restriction TLV, the PCE MUST send a PCErr message with Error-Type=27 and Error-value=3. Syntactical encoding errors (wrong link ID count, unknown identifier types, no matching link) also require a PCErr with Error-Type=27, Error-value=3.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

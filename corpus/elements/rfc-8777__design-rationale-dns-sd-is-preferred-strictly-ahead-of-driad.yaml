@@ -1,0 +1,9 @@
+document: rfc-8777
+kind: design-rationale
+summary: DNS-SD is preferred strictly ahead of DRIAD to prefer topologically local relays. A locally discovered relay results in more native multicast hops, increasing packet replication efficiency. An AMTRELAY RR from the sender can only advertise relays known to the sender, which may be far from the gateway.
+section: 3.1.1
+topics:
+    - dns
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

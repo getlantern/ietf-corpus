@@ -1,0 +1,10 @@
+document: rfc-8778
+kind: design-rationale
+summary: A COSE Key Type Parameter for encoding the HSS/LMS private key and state tracking was deliberately not defined to prevent the ability to save the private key and state, generate signatures, and then restore to a prior state — such restoration provides disastrous opportunities for tree node reuse.
+section: "5"
+topics:
+    - crypto
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

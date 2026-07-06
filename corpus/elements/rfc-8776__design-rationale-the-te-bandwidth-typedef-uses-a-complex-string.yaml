@@ -1,0 +1,9 @@
+document: rfc-8776
+kind: design-rationale
+summary: 'The ''te-bandwidth'' typedef uses a complex string pattern rather than a numeric type to support multiple encoding technologies in a single type field: IEEE 754 hex-float for packet (bytes/sec), integer ODU lists for OTN, and slot-number/width pairs for DWDM. This trades strict type safety for unified cross-technology representation in a single typedef.'
+section: "4"
+topics:
+    - routing
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

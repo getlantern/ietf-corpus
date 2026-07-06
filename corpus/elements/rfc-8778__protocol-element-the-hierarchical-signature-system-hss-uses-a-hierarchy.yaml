@@ -1,0 +1,9 @@
+document: rfc-8778
+kind: protocol-element
+summary: The Hierarchical Signature System (HSS) uses a hierarchy of LMS trees. An HSS signature carries u32str(Nspk) followed by Nspk signed public keys (each an lms_signature over the child public key followed by the public key itself), followed by the final LMS signature over the message. For a stand-alone tree, the format is u32str(0) || lms_signature.
+section: "2.1"
+topics:
+    - crypto
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

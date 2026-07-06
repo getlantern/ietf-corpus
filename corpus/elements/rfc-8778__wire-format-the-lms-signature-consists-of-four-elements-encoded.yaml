@@ -1,0 +1,9 @@
+document: rfc-8778
+kind: wire-format
+summary: 'The LMS signature consists of four elements encoded as: u32str(q) || ots_signature || u32str(type) || path[0] || path[1] || ... || path[h-1], where q is the leaf number, type is the LMS algorithm code, and path contains h sibling node values along the path from leaf to root.'
+section: "2.2"
+topics:
+    - crypto
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

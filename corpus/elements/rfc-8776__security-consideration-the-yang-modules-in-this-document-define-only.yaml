@@ -1,0 +1,11 @@
+document: rfc-8776
+kind: security-consideration
+summary: The YANG modules in this document define only data types and groupings with no writable, readable, or RPC data nodes of their own; security risk arises only in modules that import these types. Implementations of importing modules must apply NETCONF/RESTCONF access control (RFC 8341) to prevent unauthorized read or modification of sensitive TE state and configuration.
+section: "7"
+topics:
+    - security
+    - yang
+    - routing
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

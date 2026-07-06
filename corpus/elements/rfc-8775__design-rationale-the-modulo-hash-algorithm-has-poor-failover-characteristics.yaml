@@ -1,0 +1,9 @@
+document: rfc-8775
+kind: design-rationale
+summary: 'The modulo hash algorithm has poor failover characteristics with more than two GDRs: when one GDR fails, all groups may be reassigned to different GDRs rather than only those previously served by the failed router. This is acknowledged as a known limitation; future work may define consistent-hashing alternatives.'
+section: 5.2.2
+topics:
+    - multicast
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

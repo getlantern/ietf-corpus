@@ -1,0 +1,10 @@
+document: rfc-8781
+kind: design-rationale
+summary: The Scaled Lifetime field encodes the NAT64 prefix lifetime in units of 8 seconds (rather than 1 second) to ensure the NAT64 prefix lifetime can be at least as long as the 16-bit Router Lifetime defined in RFC 4861, preventing premature expiry between unsolicited RAs.
+section: "4.1"
+topics:
+    - ip
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

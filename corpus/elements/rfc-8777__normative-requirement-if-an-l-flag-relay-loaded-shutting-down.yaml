@@ -1,0 +1,9 @@
+document: rfc-8777
+kind: normative-requirement
+summary: If an L flag (relay loaded/shutting down) is received while a concurrent Happy Eyeballs discovery is underway for multiple candidate relays, the relay sending the L flag SHOULD NOT be considered for selection. Gateways SHOULD apply approximately a 10-minute hold-down for such relays.
+section: 3.3.5
+rfc2119_level: SHOULD NOT
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
