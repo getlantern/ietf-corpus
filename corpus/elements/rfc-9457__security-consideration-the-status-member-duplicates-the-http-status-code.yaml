@@ -1,0 +1,10 @@
+document: rfc-9457
+kind: security-consideration
+summary: The 'status' member duplicates the HTTP status code, creating a risk of disagreement between the two (e.g., if an intermediary changes the HTTP status code in transit). Generic HTTP software such as proxies, load balancers, firewalls, and virus scanners are unlikely to know of or respect the status code conveyed in this member.
+section: "5"
+topics:
+    - http
+    - security
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

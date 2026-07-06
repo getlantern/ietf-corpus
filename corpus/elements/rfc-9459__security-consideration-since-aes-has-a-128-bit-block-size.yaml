@@ -1,0 +1,10 @@
+document: rfc-9459
+kind: security-consideration
+summary: Since AES has a 128-bit block size, ciphertext becomes distinguishable from random values after 2^64 blocks are encrypted with a single key. Implementations should change the key before reaching this limit.
+section: "8"
+topics:
+    - crypto
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

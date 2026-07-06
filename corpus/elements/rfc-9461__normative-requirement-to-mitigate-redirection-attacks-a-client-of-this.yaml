@@ -1,0 +1,10 @@
+document: rfc-9461
+kind: normative-requirement
+summary: To mitigate redirection attacks, a client of this SVCB mapping MUST NOT identify or authenticate itself when performing DNS queries, except to servers it specifically knows are not vulnerable to redirection attacks. If an endpoint sends an invalid DNS response, the client SHOULD NOT send further queries to that endpoint and MAY log the error.
+section: 8.1.2
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9458
+kind: security-consideration
+summary: Oblivious HTTP does not provide forward secrecy for requests or responses during the lifetime of the key configuration. A server key compromise gives an attacker access to plaintext of all past requests and responses encrypted under the affected keys. Regular key rotation limits exposure.
+section: "6.6"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

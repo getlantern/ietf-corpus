@@ -1,0 +1,10 @@
+document: rfc-9458
+kind: normative-requirement
+summary: A Client or Oblivious Relay Resource MUST NOT automatically retry a failed request unless it receives a positive signal (e.g., HTTP/2 REFUSED_STREAM, HTTP/3 H3_REQUEST_REJECTED, or GOAWAY with a low enough identifier) that the request was not processed.
+section: "6.5"
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9458
+kind: security-consideration
+summary: Encapsulated Requests can be replayed by the Oblivious Relay Resource, and TLS early data can enable network-level replay. The application is responsible for either rejecting replayed requests or ensuring they have no adverse effect. The enc value (HPKE encapsulated key) serves as a high-entropy per-request unique identifier suitable for replay detection.
+section: "6.5"
+topics:
+    - security
+    - crypto
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

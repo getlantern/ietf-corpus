@@ -1,0 +1,11 @@
+document: rfc-9462
+kind: security-consideration
+summary: An attacker may attempt to redirect encrypted DNS traffic to a malicious resolver with a valid certificate by causing the client to think the Designated Resolver uses a different IP address; Verified Discovery prevents this by requiring the Unencrypted DNS Resolver's IP to appear in the Designated Resolver's TLS certificate SAN.
+section: "7"
+topics:
+    - dns
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

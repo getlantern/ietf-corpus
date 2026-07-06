@@ -1,0 +1,10 @@
+document: rfc-9460
+kind: normative-requirement
+summary: Clients for pre-existing protocols (e.g., HTTP) SHALL implement SVCB-optional behavior. After SVCB resolution, if at least one AliasMode record was processed, SVCB-optional clients SHALL append the final $QNAME with the authority endpoint's port and no SvcParams to the list of endpoints to try.
+section: "3"
+rfc2119_level: SHALL
+topics:
+    - dns
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

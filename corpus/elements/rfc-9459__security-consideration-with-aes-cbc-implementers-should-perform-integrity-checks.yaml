@@ -1,0 +1,10 @@
+document: rfc-9459
+kind: security-consideration
+summary: With AES-CBC, implementers should perform integrity checks prior to decryption to avoid padding oracle vulnerabilities (Vaudenay). An attacker able to strip the authentication mechanism can replace it with their own, and may guess plaintext 16 bytes at a time by switching algorithm identifiers and observing padding acceptance.
+section: "8"
+topics:
+    - crypto
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

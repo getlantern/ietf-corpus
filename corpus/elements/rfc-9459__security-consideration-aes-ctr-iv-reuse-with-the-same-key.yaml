@@ -1,0 +1,10 @@
+document: rfc-9459
+kind: security-consideration
+summary: 'AES-CTR IV reuse with the same key is catastrophic: if the same key stream is used to encrypt two plaintexts, XORing the ciphertexts cancels the key stream and directly exposes the XOR of the plaintexts, from which separating the plaintexts is straightforward.'
+section: "8"
+topics:
+    - crypto
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

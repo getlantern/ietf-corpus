@@ -1,0 +1,10 @@
+document: rfc-9459
+kind: security-consideration
+summary: 'Data forgery is trivial with AES-CTR: an attacker who knows a plaintext block can XOR the corresponding ciphertext block with any desired replacement plaintext, and decryption will yield the attacker''s chosen plaintext. This makes a companion authentication mechanism mandatory.'
+section: "8"
+topics:
+    - crypto
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

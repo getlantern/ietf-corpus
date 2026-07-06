@@ -1,0 +1,9 @@
+document: rfc-9458
+kind: design-rationale
+summary: The HPKE info string uses the media type 'message/bhttp request' (plus a zero byte and the header) to bind request encryption to the specific protocol, ensuring HPKE keys cannot be reused across protocols. The 'message/bhttp response' label provides key diversity only within the HPKE context established by the request label.
+section: "6.4"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

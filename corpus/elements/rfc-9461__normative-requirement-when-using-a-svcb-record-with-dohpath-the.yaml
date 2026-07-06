@@ -1,0 +1,10 @@
+document: rfc-9461
+kind: normative-requirement
+summary: When using a SVCB record with "dohpath", the client MUST send DoH requests to the HTTP origin identified by the "https" scheme, the authentication name, and the port from the "port" SvcParam (if present). HTTP requests MUST be directed to the resource resulting from DoH URI Template expansion of the "dohpath" value.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - dns
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

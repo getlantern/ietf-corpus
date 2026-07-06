@@ -1,0 +1,10 @@
+document: rfc-9462
+kind: normative-requirement
+summary: DNS forwarders SHOULD NOT forward queries for 'resolver.arpa' or its subdomains upstream, to prevent clients receiving SVCB records that will fail authentication due to IP address mismatch in the TLS certificate's SAN.
+section: "6.1"
+rfc2119_level: SHOULD NOT
+topics:
+    - dns
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

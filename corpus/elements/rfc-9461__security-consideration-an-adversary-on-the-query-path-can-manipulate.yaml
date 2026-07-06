@@ -1,0 +1,10 @@
+document: rfc-9461
+kind: security-consideration
+summary: An adversary on the query path can manipulate transport, port number, and "dohpath" value to redirect DNS queries to arbitrary ports and paths on the legitimate hostname. If shared TLS or HTTP state (e.g., client certificates, cookies) exists, the client may be correctly authenticated to a malicious endpoint, enabling data exfiltration or unexpected service interactions.
+section: 8.1.2
+topics:
+    - dns
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

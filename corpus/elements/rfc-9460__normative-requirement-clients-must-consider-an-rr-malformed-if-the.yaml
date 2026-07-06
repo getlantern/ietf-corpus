@@ -1,0 +1,9 @@
+document: rfc-9460
+kind: normative-requirement
+summary: Clients MUST consider an RR malformed if the RDATA ends within a SvcParam, if SvcParamKeys are not in strictly increasing numeric order, or if a SvcParamValue does not have the expected format. If any RR in an RRset is malformed, the client MUST reject the entire RRset and fall back to non-SVCB connection establishment.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

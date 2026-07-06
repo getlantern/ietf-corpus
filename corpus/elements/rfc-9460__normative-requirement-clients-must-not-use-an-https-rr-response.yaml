@@ -1,0 +1,11 @@
+document: rfc-9460
+kind: normative-requirement
+summary: Clients MUST NOT use an HTTPS RR response unless the client supports the TLS SNI extension and indicates the origin name in the ClientHello. The SNI and HTTP Host/:authority headers indicate the origin, not the TargetName.
+section: "9.4"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - tls
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

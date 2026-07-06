@@ -1,0 +1,11 @@
+document: rfc-9462
+kind: normative-requirement
+summary: If Verified Discovery checks fail, the client MUST NOT automatically use the discovered Designated Resolver when it was found via a _dns.resolver.arpa. query, and SHOULD suppress further queries for that Unencrypted DNS Resolver for the SVCB record's TTL.
+section: "4.2"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-9458
+kind: normative-requirement
+summary: When retrying with an updated Date field after a clock-skew rejection, the Client MUST create a fresh encryption of the modified request using a new HPKE context, and MUST NOT retry a request with an adjusted date more than once.
+section: 6.5.2
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

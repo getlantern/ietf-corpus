@@ -1,0 +1,9 @@
+document: rfc-9460
+kind: interoperability-note
+summary: 'Publishing a ServiceMode HTTPS RR resembles transmitting an Alt-Svc field value, but with key differences: HTTPS RRs are not authenticated (DNSSEC optional), there is no ''persist'' SvcParamKey (unsafe on untrusted channel), there is no ''ma'' parameter (TTL serves that purpose), and all clients in the same DNS scope receive the same SvcParams.'
+section: "9.2"
+topics:
+    - dns
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

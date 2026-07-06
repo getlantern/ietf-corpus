@@ -1,0 +1,9 @@
+document: rfc-9460
+kind: interoperability-note
+summary: DNS64 resolvers SHOULD synthesize AAAA records for TargetName when populating the Additional section, but MUST NOT apply DNS64 synthesis to the IP hints in 'ipv4hint'/'ipv6hint' SvcParams, as doing so would break DNSSEC validation for the SVCB record.
+section: 4.2.1
+topics:
+    - dns
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-9456
+kind: design-rationale
+summary: A new 'SNMP-TLSTM HashAlgorithms' registry was created rather than reusing the 'TLS HashAlgorithm' registry because the TLS community does not plan to add new values to the TLS HashAlgorithm registry (to avoid incorrectly implying a new hash algorithm overcomes TLS 1.2 limitations), but TLSTM still needs to support new hash algorithm values as they are developed.
+section: "2.1"
+topics:
+    - tls
+    - snmp
+    - registry
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

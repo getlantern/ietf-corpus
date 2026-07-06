@@ -1,0 +1,10 @@
+document: rfc-9458
+kind: normative-requirement
+summary: Clients MUST NOT construct a request that includes a 100-continue expectation; the Oblivious Gateway Resource MUST generate an error if a 100-continue expectation is received, because AEAD encapsulation cannot be removed until the entire message is received.
+section: "5.1"
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

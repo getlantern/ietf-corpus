@@ -1,0 +1,11 @@
+document: rfc-9460
+kind: normative-requirement
+summary: Before making an 'http' scheme request, clients SHOULD look up HTTPS RRs for the origin. If any AliasMode or compatible ServiceMode HTTPS RRs are found, the client SHOULD behave as if it received an HTTP 307 redirect to the 'https' URL. Clients MUST NOT place more trust in this signal than a cleartext HTTP 307 response.
+section: "9.5"
+rfc2119_level: SHOULD
+topics:
+    - dns
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

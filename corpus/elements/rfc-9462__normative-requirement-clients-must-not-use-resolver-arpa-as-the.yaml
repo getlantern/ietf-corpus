@@ -1,0 +1,11 @@
+document: rfc-9462
+kind: normative-requirement
+summary: Clients MUST NOT use 'resolver.arpa' as the server name in the TLS SNI for DoT, DoQ, or DoH connections, nor as the URI host for DoH requests; when discovering via IP address, clients MUST use the original Unencrypted DNS Resolver IP as the DoH URI host.
+section: "6.3"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - tls
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

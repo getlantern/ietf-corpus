@@ -1,0 +1,11 @@
+document: rfc-9461
+kind: security-consideration
+summary: During secure transport establishment, clients MUST authenticate the server to its authentication name, which is not influenced by SVCB record contents. This authentication requirement prevents impersonation even if the SVCB record is forged. DNSSEC is not mandated because the authentication name provides an independent trust anchor.
+section: "8.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

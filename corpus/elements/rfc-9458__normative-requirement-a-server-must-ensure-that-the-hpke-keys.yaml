@@ -1,0 +1,10 @@
+document: rfc-9458
+kind: normative-requirement
+summary: A server MUST ensure that the HPKE keys it uses are not valid for any other protocol that uses HPKE with the 'message/bhttp request' label, preventing cross-protocol key reuse attacks. Protocol designers can achieve key diversity by choosing a different label.
+section: "6.4"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

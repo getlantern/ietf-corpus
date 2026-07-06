@@ -1,0 +1,9 @@
+document: rfc-9460
+kind: security-consideration
+summary: A hostile DNS intermediary can block SVCB resolution to perform a downgrade attack, preventing the 'https' upgrade provided by HTTPS RRs and disabling SvcParam-based protections. Section 3.1 recommends clients abandon connection attempts when downgrade attacks are detected via authentication errors or transport failures.
+section: "12"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

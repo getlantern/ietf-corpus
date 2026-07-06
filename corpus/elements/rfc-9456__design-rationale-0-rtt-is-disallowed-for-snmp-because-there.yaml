@@ -1,0 +1,10 @@
+document: rfc-9456
+kind: design-rationale
+summary: '0-RTT is disallowed for SNMP because there are no ''safe'' SNMP messages that, if replayed, will be guaranteed to cause no harm at the server side: all incoming notifications or command responses are meant to be acted upon only once. RFC 8446 requires that a profile be written specifying which messages are ''safe to use'' with 0-RTT, and within SNMP, no messages qualify.'
+section: "3.1"
+topics:
+    - tls
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9460
+kind: design-rationale
+summary: AliasMode and ServiceMode are combined in a single RR type so that clients can fetch all relevant service-binding information in a single DNS query. Separate RR types would require querying multiple types to determine which mode applies, adding latency.
+section: "1.2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

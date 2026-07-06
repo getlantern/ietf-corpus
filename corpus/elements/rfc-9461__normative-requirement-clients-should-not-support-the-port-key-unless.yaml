@@ -1,0 +1,10 @@
+document: rfc-9461
+kind: normative-requirement
+summary: 'Clients SHOULD NOT support the "port" key unless: they trust the DNS server not to exploit port confusion, operate in a context where implicit elevated access cannot apply, or restrict allowed TCP port values to exclude ports susceptible to confusion attacks (e.g., using the "bad ports" list).'
+section: "4.2"
+rfc2119_level: SHOULD NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

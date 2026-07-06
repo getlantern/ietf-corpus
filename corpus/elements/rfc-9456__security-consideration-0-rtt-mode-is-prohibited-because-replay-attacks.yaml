@@ -1,0 +1,10 @@
+document: rfc-9456
+kind: security-consideration
+summary: '0-RTT mode is prohibited because replay attacks against SNMP are particularly harmful: all incoming notifications and command responses are meant to be acted upon only once, and no SNMP messages qualify as ''safe to replay'' under RFC 8446''s application-profile requirement.'
+section: "3.1"
+topics:
+    - tls
+    - snmp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

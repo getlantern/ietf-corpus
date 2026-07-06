@@ -1,0 +1,9 @@
+document: rfc-9460
+kind: security-consideration
+summary: SVCB/HTTPS RRs are distributed over untrusted channels and DNSSEC is OPTIONAL. Clients MUST ensure their DNS cache is partitioned per local network or flushed on network changes to prevent a local adversary from implanting forged DNS records that persist after the user leaves that network.
+section: "12"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

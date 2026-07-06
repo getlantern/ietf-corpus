@@ -1,0 +1,11 @@
+document: rfc-9461
+kind: security-consideration
+summary: An adversary on the transport path can modify traffic between the client and the alternative service TargetName. For SVCB-reliant clients this causes only denial of service; for SVCB-optional clients it enables a downgrade to unencrypted DNS. Accordingly, when SVCB use is optional, clients SHOULD switch to SVCB-reliant behavior if SVCB resolution succeeds.
+section: "8.2"
+rfc2119_level: SHOULD
+topics:
+    - dns
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

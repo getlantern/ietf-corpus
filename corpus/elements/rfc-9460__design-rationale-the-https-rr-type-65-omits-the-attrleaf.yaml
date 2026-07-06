@@ -1,0 +1,9 @@
+document: rfc-9460
+kind: design-rationale
+summary: The HTTPS RR (type 65) omits the Attrleaf underscore-label prefix required by SVCB for the https/port-443 case, enabling compatibility with wildcard domains and existing CNAME chains widely used with HTTP. This allows CDN target hosts to return HTTPS RRs without requiring origin domains to configure extra delegation records.
+section: "9.1"
+topics:
+    - dns
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

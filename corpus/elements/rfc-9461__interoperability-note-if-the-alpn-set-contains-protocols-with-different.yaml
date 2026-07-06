@@ -1,0 +1,10 @@
+document: rfc-9461
+kind: interoperability-note
+summary: If the "alpn" set contains protocols with different default ports and no "port" key is specified, each protocol is contacted separately on its default port. In this configuration, ALPN negotiation does not defend against cross-protocol downgrade attacks because no single port constrains the negotiation.
+section: "4.1"
+topics:
+    - dns
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
