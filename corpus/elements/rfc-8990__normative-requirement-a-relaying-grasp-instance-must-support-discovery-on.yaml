@@ -1,0 +1,9 @@
+document: rfc-8990
+kind: normative-requirement
+summary: A relaying GRASP instance MUST support discovery on all GRASP interfaces, MUST decrement the loop count within the objective, and MUST NOT relay a Discovery message if the result is zero. It MUST limit the relay rate to mitigate DoS attacks and MUST cache Session ID and initiator address to prevent loops (must not relay a given Session ID + initiator pair more than once).
+section: 2.5.4.4
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

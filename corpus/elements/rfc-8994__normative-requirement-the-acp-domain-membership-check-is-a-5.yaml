@@ -1,0 +1,11 @@
+document: rfc-8994
+kind: normative-requirement
+summary: 'The ACP domain membership check is a 5-step process: (1) peer proves private key ownership; (2) certificate path validation against TAs per RFC 5280; (3) OCSP/CRL revocation check when available — if revocation is later discovered, the ACP secure channel MUST be closed; (4) matching lowercase-normalized acp-domain-name; (5) non-omitted acp-address required for ACP secure channel establishment.'
+section: 6.2.3
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

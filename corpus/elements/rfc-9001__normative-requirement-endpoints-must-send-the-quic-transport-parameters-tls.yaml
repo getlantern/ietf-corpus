@@ -1,0 +1,10 @@
+document: rfc-9001
+kind: normative-requirement
+summary: Endpoints MUST send the quic_transport_parameters TLS extension in the ClientHello and EncryptedExtensions messages. Endpoints that receive these messages without the extension MUST close the connection with a TRANSPORT_PARAMETER_ERROR.
+section: "8.2"
+rfc2119_level: MUST
+topics:
+    - quic
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

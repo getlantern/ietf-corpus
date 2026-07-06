@@ -1,0 +1,10 @@
+document: rfc-8999
+kind: security-consideration
+summary: The QUIC version number does not appear in all QUIC packets (short headers omit it), meaning that reliably extracting version-based information from a flow requires middleboxes to maintain state for every connection ID they observe—a significant operational burden that limits practical version-based traffic analysis.
+section: "7"
+topics:
+    - quic
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

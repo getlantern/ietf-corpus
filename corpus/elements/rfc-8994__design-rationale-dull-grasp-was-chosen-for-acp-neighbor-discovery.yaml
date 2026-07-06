@@ -1,0 +1,9 @@
+document: rfc-8994
+kind: design-rationale
+summary: DULL GRASP was chosen for ACP neighbor discovery over LLDP or mDNS because GRASP is already a required ACP dependency and can be confined to link-local scope without traversing L2 domains that would undermine the hop-by-hop security model. LLDP lacks security and mDNS has L2 domain propagation issues incompatible with ACP's per-link authentication.
+section: A.3.3
+topics:
+    - zeroconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

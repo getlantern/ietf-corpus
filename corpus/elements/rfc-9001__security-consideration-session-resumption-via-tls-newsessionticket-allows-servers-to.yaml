@@ -1,0 +1,11 @@
+document: rfc-9001
+kind: security-consideration
+summary: Session resumption via TLS NewSessionTicket allows servers to link activity across connections, which may be a privacy issue. Clients SHOULD NOT reuse tickets, as doing so allows entities other than the server to correlate connections.
+section: "9.1"
+topics:
+    - quic
+    - tls
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

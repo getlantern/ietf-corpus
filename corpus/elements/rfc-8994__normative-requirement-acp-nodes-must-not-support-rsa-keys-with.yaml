@@ -1,0 +1,11 @@
+document: rfc-8994
+kind: normative-requirement
+summary: ACP nodes MUST NOT support RSA keys with modulus less than 2048 bits or ECC curves with group order less than 256 bits. RSA 2048-bit and ECDSA P-256 MUST be supported; P-384 and P-521 SHOULD be supported. ECDSA signatures on ECDSA certificates MUST be supported; RSA signatures on ECDSA certificates MUST also be supported because CAs may not yet support ECC.
+section: 6.2.1
+rfc2119_level: MUST NOT
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

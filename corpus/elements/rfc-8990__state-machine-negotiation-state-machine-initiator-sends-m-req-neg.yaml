@@ -1,0 +1,6 @@
+document: rfc-8990
+kind: state-machine
+summary: 'Negotiation state machine: Initiator sends M_REQ_NEG (starts GRASP_DEF_TIMEOUT timer with loop count). Counterpart replies M_NEGOTIATE (loop count decremented, propose alternative) or M_END+O_ACCEPT (immediate accept). Either side may send M_WAIT to extend the timer. Session terminates via M_END+O_ACCEPT, M_END+O_DECLINE, timer expiry, or loop count reaching zero.'
+section: 2.5.5
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

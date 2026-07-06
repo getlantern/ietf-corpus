@@ -1,0 +1,10 @@
+document: rfc-9001
+kind: wire-format
+summary: The Retry Integrity Tag is 128 bits computed using AEAD_AES_128_GCM with a fixed key (0xbe0c690b9f66575a1d766b54e368c84e) and nonce (0x461599d35d632bf2239825bb) over the Retry Pseudo-Packet, which prepends the Original Destination Connection ID to the transmitted Retry packet body.
+section: "5.8"
+topics:
+    - quic
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

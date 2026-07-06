@@ -1,0 +1,9 @@
+document: rfc-8990
+kind: normative-requirement
+summary: The originator of a Flood Synchronization message MUST set the loop count to a suitable value (default GRASP_DEF_LOOPCT). A relaying device MUST decrement the loop count and MUST NOT relay if the result is zero; it MUST limit relay rate and MUST cache Session ID and initiator address for at least 2×GRASP_DEF_TIMEOUT ms to prevent loops.
+section: 2.5.6.2
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-9001
+kind: normative-requirement
+summary: Endpoints MUST NOT send a TLS KeyUpdate message; receipt of one MUST be treated as a connection error of type 0x010a. QUIC uses its own Key Phase bit mechanism for key updates instead.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - quic
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

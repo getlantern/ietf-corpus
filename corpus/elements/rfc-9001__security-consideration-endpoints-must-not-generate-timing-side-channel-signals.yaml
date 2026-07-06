@@ -1,0 +1,11 @@
+document: rfc-9001
+kind: security-consideration
+summary: Endpoints MUST NOT generate timing side-channel signals when processing packets with an invalid Key Phase bit. Randomized packet protection keys SHOULD be used in place of discarded keys when key updates are not yet permitted, to prevent timing-based leakage of the Key Phase bit value.
+section: "9.5"
+topics:
+    - quic
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

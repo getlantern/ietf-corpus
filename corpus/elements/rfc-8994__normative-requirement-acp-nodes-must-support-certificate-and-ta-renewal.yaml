@@ -1,0 +1,11 @@
+document: rfc-8994
+kind: normative-requirement
+summary: ACP nodes MUST support certificate and TA renewal via EST. An ACP network MUST have at least one EST server node. The EST server MUST present a certificate passing the ACP domain membership check and MUST include the id-kp-cmcRA extended key usage attribute; EST clients MUST verify its presence to prevent illicit EST servers from supplying fake CA certificates.
+section: 6.2.5
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+    - acme
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

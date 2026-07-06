@@ -1,0 +1,9 @@
+document: rfc-8994
+kind: design-rationale
+summary: The ACP uses ULA (RFC 4193) IPv6 addressing to provide autonomically managed, collision-resistant addresses without a central global registry. The /48 ULA prefix is derived by hashing the ACP routing-subdomain, enabling per-domain automatic address generation; the rsub field allows a single ACP domain to employ multiple /48 prefixes for structured routing.
+section: 6.11.2
+topics:
+    - ip
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

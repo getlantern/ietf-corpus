@@ -1,0 +1,11 @@
+document: rfc-9001
+kind: security-consideration
+summary: 'AEAD usage limits are set per algorithm: AEAD_AES_128_GCM and AEAD_AES_256_GCM have a confidentiality limit of 2^23 encrypted packets and an integrity limit of 2^52 invalid packets. Exceeding these limits requires closing the connection with AEAD_LIMIT_REACHED.'
+section: "6.6"
+topics:
+    - quic
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

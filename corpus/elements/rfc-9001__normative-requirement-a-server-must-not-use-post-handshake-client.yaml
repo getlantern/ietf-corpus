@@ -1,0 +1,11 @@
+document: rfc-9001
+kind: normative-requirement
+summary: A server MUST NOT use post-handshake client authentication (TLS CertificateRequest after handshake) because QUIC multiplexing prevents clients from correlating the certificate request with the application-level event that triggered it. Clients MUST treat receipt of such messages as a PROTOCOL_VIOLATION connection error.
+section: "4.4"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - quic
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

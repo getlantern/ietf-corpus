@@ -1,0 +1,9 @@
+document: rfc-9001
+kind: design-rationale
+summary: The max_early_data_size field in NewSessionTicket is repurposed to a sentinel value 0xffffffff to indicate QUIC 0-RTT acceptance, rather than conveying a byte count, because QUIC uses its own initial_max_data transport parameter to control early data volume.
+section: 4.6.1
+topics:
+    - quic
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

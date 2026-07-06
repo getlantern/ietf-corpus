@@ -1,0 +1,10 @@
+document: rfc-9001
+kind: security-consideration
+summary: 0-RTT data is susceptible to replay attacks because it is sent before the server can verify client liveness. QUIC cannot prevent all replays; application protocols MUST define a 0-RTT usage profile and clients MUST NOT send application data in 0-RTT without one.
+section: "9.2"
+topics:
+    - quic
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

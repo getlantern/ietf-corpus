@@ -1,0 +1,8 @@
+document: rfc-8990
+kind: wire-format
+summary: The Flood Synchronization message is encoded as [M_FLOOD, session-id, initiator, ttl, +[objective, (locator-option / [])]]. The ttl is in milliseconds; zero indicates indefinite lifetime. Each objective MUST be followed by either a locator option or an empty array (null locator).
+section: 2.8.11
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

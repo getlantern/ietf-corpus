@@ -1,0 +1,9 @@
+document: rfc-9001
+kind: design-rationale
+summary: The TLS EndOfEarlyData message is not used in QUIC because QUIC itself provides reliable signaling of the end of early data via packet number spaces, making the TLS message redundant and potentially harmful to middlebox compatibility.
+section: "8.3"
+topics:
+    - quic
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

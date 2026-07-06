@@ -1,0 +1,11 @@
+document: rfc-9001
+kind: normative-requirement
+summary: A server MUST NOT process incoming 1-RTT protected packets before the TLS handshake is complete; it cannot send acknowledgments for such packets until the handshake is complete. Received 1-RTT packets MAY be stored for later decryption.
+section: "5.7"
+rfc2119_level: MUST NOT
+topics:
+    - quic
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

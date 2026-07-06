@@ -1,0 +1,10 @@
+document: rfc-8994
+kind: normative-requirement
+summary: ACP nodes acting as EST servers MUST announce the 'SRV.est' objective via GRASP M_FLOOD messages. The flood MUST be sent periodically (default 60 seconds, operator-configurable but not less than 60 s); TTL SHOULD be 3.5 times the period. The 'SRV.est' objective SHOULD only be announced when the node can successfully communicate with the CA.
+section: 6.2.5.1
+rfc2119_level: MUST
+topics:
+    - security
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

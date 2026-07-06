@@ -1,0 +1,10 @@
+document: rfc-9001
+kind: wire-format
+summary: Header protection masks 4 least-significant bits of the first byte (long header) or 5 bits (short header) plus the Packet Number field using a 5-byte mask. The mask is produced by AES-ECB (for AES AEADs) or raw ChaCha20 (for AEAD_CHACHA20_POLY1305) over a 16-byte ciphertext sample taken 4 bytes after the start of the Packet Number field.
+section: "5.4"
+topics:
+    - quic
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

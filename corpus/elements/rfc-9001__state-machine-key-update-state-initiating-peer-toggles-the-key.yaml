@@ -1,0 +1,10 @@
+document: rfc-9001
+kind: state-machine
+summary: 'Key update state: initiating peer toggles the Key Phase bit and sends packets with new keys (@N); responding peer detects the changed Key Phase bit, derives next keys, and MUST update send keys and acknowledge with the updated keys before sending any further packets. Key update is complete when the initiator receives acknowledgment of a packet protected with the new keys.'
+section: "6"
+topics:
+    - quic
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

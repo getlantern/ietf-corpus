@@ -1,0 +1,12 @@
+document: rfc-9001
+kind: normative-requirement
+summary: Endpoints MUST count encrypted packets per key and initiate a key update before exceeding the AEAD confidentiality limit. Endpoints MUST also count packets that fail authentication; if the integrity limit is exceeded the endpoint MUST immediately close the connection with AEAD_LIMIT_REACHED.
+section: "6.6"
+rfc2119_level: MUST
+topics:
+    - quic
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

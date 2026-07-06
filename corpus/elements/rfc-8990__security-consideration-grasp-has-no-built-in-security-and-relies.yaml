@@ -1,0 +1,9 @@
+document: rfc-8990
+kind: security-consideration
+summary: GRASP has no built-in security and relies entirely on an external security and transport substrate. Any member of the mutually trusted group can attack the entire network until revoked via PKI certificate revocation or expiry. If the substrate does not mandate encryption, services using GRASP MUST provide their own protection for sensitive message elements.
+section: 2.5.1
+topics:
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

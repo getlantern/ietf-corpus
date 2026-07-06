@@ -1,0 +1,10 @@
+document: rfc-9001
+kind: normative-requirement
+summary: Servers MUST NOT send the early_data extension in a NewSessionTicket with a max_early_data_size field set to any value other than 0xffffffff. A client MUST treat any other value as a connection error of type PROTOCOL_VIOLATION.
+section: 4.6.1
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

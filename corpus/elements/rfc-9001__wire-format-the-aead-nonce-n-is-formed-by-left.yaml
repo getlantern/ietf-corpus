@@ -1,0 +1,10 @@
+document: rfc-9001
+kind: wire-format
+summary: The AEAD nonce N is formed by left-padding the 62-bit reconstructed QUIC packet number (in network byte order) with zeros to the size of the IV, then XOR-ing with the packet protection IV derived using the 'quic iv' label.
+section: "5.3"
+topics:
+    - quic
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

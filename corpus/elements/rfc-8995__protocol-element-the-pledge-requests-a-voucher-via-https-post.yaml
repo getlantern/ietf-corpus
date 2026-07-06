@@ -1,0 +1,11 @@
+document: rfc-8995
+kind: protocol-element
+summary: The pledge requests a voucher via HTTPS POST to '/.well-known/brski/requestvoucher' using Content-Type 'application/voucher-cms+json'. The pledge signs the request with its IDevID credentials, populates the 'proximity' assertion, includes the registrar's end-entity TLS certificate in proximity-registrar-cert, and a mandatory cryptographic nonce.
+section: "5.2"
+topics:
+    - http
+    - json
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

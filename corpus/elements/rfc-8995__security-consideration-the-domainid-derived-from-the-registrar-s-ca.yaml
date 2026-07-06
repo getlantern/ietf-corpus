@@ -1,0 +1,10 @@
+document: rfc-8995
+kind: security-consideration
+summary: The domainID (derived from the registrar's CA certificate, see Section 5.8.2) MUST be computed using a hash function resistant to second-preimage attacks. A collision attack on domainID would allow an attacker to spoof a legitimate domain's identity in the MASA audit-log.
+section: "11.2"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

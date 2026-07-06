@@ -1,0 +1,7 @@
+document: rfc-8990
+kind: normative-requirement
+summary: A node that receives a Request message (M_REQ_NEG or M_REQ_SYN) for an objective for which no ASA is currently listening MUST immediately close the relevant socket. To avoid a race condition with simultaneous sessions, a node MUST verify that the received Session ID is not already locally active; on a clash it MUST discard the Request message.
+section: 2.8.6
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

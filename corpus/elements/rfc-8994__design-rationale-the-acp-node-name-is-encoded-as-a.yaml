@@ -1,0 +1,8 @@
+document: rfc-8994
+kind: design-rationale
+summary: The acp-node-name is encoded as a single email-like string in the X.509 SubjectAlternativeName otherName field rather than split across multiple certificate fields, enabling backend systems to identify ACP nodes by one unique string and avoiding occupation of the subject field attributes needed for other LDevID uses. The otherName form also avoids misinterpretation as a real email address.
+section: 6.2.2
+topics:
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

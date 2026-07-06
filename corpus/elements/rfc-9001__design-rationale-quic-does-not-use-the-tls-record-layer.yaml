@@ -1,0 +1,9 @@
+document: rfc-9001
+kind: design-rationale
+summary: QUIC does not use the TLS record layer; instead, TLS handshake and alert messages are carried directly over QUIC transport in CRYPTO frames, and QUIC packet protection replaces TLS record protection. This allows QUIC to manage encryption level transitions and retransmissions independently.
+section: "3"
+topics:
+    - quic
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

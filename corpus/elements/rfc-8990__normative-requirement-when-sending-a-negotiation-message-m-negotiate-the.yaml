@@ -1,0 +1,7 @@
+document: rfc-8990
+kind: normative-requirement
+summary: When sending a Negotiation message (M_NEGOTIATE), the sender MUST include the relevant Negotiation Objective option with its loop count decremented by 1. If the loop count becomes zero, the message MUST NOT be sent and the session has failed. A Request Negotiation message MUST initialize the loop count to the value specified by the objective or GRASP_DEF_LOOPCT.
+section: 2.8.7
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

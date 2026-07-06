@@ -1,0 +1,10 @@
+document: rfc-8995
+kind: state-machine
+summary: 'The pledge follows a five-state bootstrap sequence: (1) Discover a registrar via proxy, (2) Identify itself using IDevID in a TLS handshake, (3) Request Join by submitting a voucher-request with a nonce, (4) Imprint by validating the MASA-issued voucher, and (5) Enroll via EST to obtain a domain certificate. The device returns to the Discover state only after a factory reset.'
+section: "2.1"
+topics:
+    - security
+    - pkix
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8990
+kind: wire-format
+summary: The Locator IPv6 Address option is encoded as [O_IPv6_LOCATOR, ipv6-address (bytes .size 16), transport-proto (6=TCP / 17=UDP), port-number (0–65535)]. The IPv6 address MUST have global scope except in DULL GRASP objectives where a link-local address MAY be used; link-local addresses MUST NOT appear inside a Divert option.
+section: 2.9.5.1
+topics:
+    - ip
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
