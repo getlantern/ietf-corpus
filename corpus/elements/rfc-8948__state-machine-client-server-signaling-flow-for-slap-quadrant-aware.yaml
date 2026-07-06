@@ -1,0 +1,8 @@
+document: rfc-8948
+kind: state-machine
+summary: 'Client-server signaling flow for SLAP quadrant-aware MAC address assignment: (1) client sends Solicit(IA_LL(LLADDR, QUAD)); (2) server responds Advertise(IA_LL(LLADDR, QUAD)); (3) client sends Request(IA_LL(LLADDR, QUAD)); (4) server sends Reply(IA_LL(LLADDR)); then on timer expiry (5) client sends Renew with QUAD option and (6) server responds with Reply extending lifetime.'
+section: "3.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

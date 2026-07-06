@@ -1,0 +1,9 @@
+document: rfc-8956
+kind: wire-format
+summary: 'Type 12 (Fragment) uses a single-octet bitmask (bitmask_op len=00) with three defined bits: IsF (bit 4, Fragment Offset != 0), FF (bit 5, Fragment Offset=0 AND M=1), and LF (bit 3, Fragment Offset != 0 AND M=0). Reserved bits MUST be 0 on encoding and MUST be ignored on decoding.'
+section: "3.6"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

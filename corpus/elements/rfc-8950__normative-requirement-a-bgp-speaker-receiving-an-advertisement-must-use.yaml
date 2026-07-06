@@ -1,0 +1,11 @@
+document: rfc-8950
+kind: normative-requirement
+summary: A BGP speaker receiving an advertisement MUST use the Length of Next Hop Address field to determine which network-layer protocol the next-hop address belongs to. For AFI/SAFI <1/1>, <1/2>, or <1/4>, length 16 or 32 indicates IPv6; for AFI/SAFI <1/128> or <1/129>, length 24 or 48 indicates VPN-IPv6.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8951
+kind: design-rationale
+summary: RFC 7030 incorrectly specified EST endpoints using MIME Content-Transfer-Encoding headers (RFC 2045) rather than HTTP transfer semantics, even though RFC 2616 and RFC 7231 Appendix A.5 had already deprecated that header. Field reality—most implementations neither send nor check the header—made simple deprecation backward-compatible.
+section: "1"
+topics:
+    - http
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

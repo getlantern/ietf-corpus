@@ -1,0 +1,9 @@
+document: rfc-8954
+kind: security-consideration
+summary: An on-path attacker can intercept an OCSP request and respond with an earlier response lacking the Nonce extension, since responders may omit the Nonce even when clients include it. This can be mitigated by configuring short thisUpdate-to-nextUpdate intervals.
+section: "3.1"
+topics:
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

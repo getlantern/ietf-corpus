@@ -1,0 +1,8 @@
+document: rfc-8957
+kind: design-rationale
+summary: When sending IP over a single-label LSP (no application label), replacing the LSP label with an SFL would introduce network-wide forwarding state, which is unacceptable for scaling reasons. Therefore, an additional label must be pushed rather than replacing the existing label.
+section: "3"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8960
+kind: normative-requirement
+summary: The 'mpls-local-label' leaf under a route is only present when the 'mpls-enabled' leaf on that route is set to 'true', enforced by a YANG 'when' condition. NHLFE label stack augmentations on next-hops are also conditioned on the parent route's mpls-enabled being true.
+section: "2.5"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

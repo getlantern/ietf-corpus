@@ -1,0 +1,9 @@
+document: rfc-8955
+kind: wire-format
+summary: 'The Flow Specification NLRI length field uses variable-length encoding: if the NLRI length is less than 240 octets it is encoded as a single octet (0xnn); otherwise it is encoded as a 2-octet extended-length value where the most significant nibble is 0xf (0xfnnn), supporting lengths up to 4095 octets.'
+section: "4.1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

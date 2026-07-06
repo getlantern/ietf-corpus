@@ -1,0 +1,9 @@
+document: rfc-8947
+kind: normative-requirement
+summary: Servers MUST NOT allow administrators to configure address pools that cross the 2^42-bit boundary (for 48-bit MAC addresses) to avoid issues with the special bits in the first octet. Clients MUST reject assignments where the assigned block would cross this boundary by declining the allocation.
+section: "12"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

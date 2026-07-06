@@ -1,0 +1,9 @@
+document: rfc-8955
+kind: wire-format
+summary: The Bitmask Operator (bitmask_op) is a 1-octet field sharing the e, a, len, and two zero bits from numeric_op, but uses a NOT bit and a Match (m) bit instead of lt/gt/eq. When m=1, the match is '(data AND value) == value'; when m=0, any bit in the value mask being set in data evaluates to TRUE.
+section: 4.2.1.2
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

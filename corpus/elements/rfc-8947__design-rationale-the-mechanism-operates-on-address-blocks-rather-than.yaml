@@ -1,0 +1,8 @@
+document: rfc-8947
+kind: design-rationale
+summary: The mechanism operates on address blocks rather than single addresses because a hypervisor may need thousands of addresses; listing each address individually (as done for IPv6 IA_NA/IA_PD) would not scale. A single address is represented as an address block of size 1.
+section: "6"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

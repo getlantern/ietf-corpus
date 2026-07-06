@@ -1,0 +1,11 @@
+document: rfc-8960
+kind: security-consideration
+summary: 'Writable data nodes under ''/rt:routing/mpls:mpls/mpls:label-blocks'' (such as start-label and end-label) are sensitive: unauthorized write operations can disrupt existing MPLS traffic. Access MUST be protected via NACM (RFC 8341) over NETCONF/SSH or RESTCONF/TLS.'
+section: "4"
+topics:
+    - mpls
+    - yang
+    - security
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

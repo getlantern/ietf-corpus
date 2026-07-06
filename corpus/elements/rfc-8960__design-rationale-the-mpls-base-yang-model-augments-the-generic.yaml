@@ -1,0 +1,10 @@
+document: rfc-8960
+kind: design-rationale
+summary: The MPLS base YANG model augments the generic RIB model from RFC 8349 rather than defining a standalone model. This allows IP prefix routes (IPv4/IPv6) to carry additional MPLS forwarding data without duplicating the routing infrastructure, and enables other MPLS YANG modules (LDP, RSVP-TE, static) to augment the base module incrementally.
+section: "2.1"
+topics:
+    - mpls
+    - yang
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

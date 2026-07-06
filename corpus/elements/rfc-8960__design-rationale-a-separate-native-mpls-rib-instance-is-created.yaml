@@ -1,0 +1,10 @@
+document: rfc-8960
+kind: design-rationale
+summary: A separate native MPLS RIB instance is created (beyond IPv4/IPv6 RIBs) to store routes that are enabled for MPLS forwarding but not associated with any AF-specific RIB, such as RSVP-programmed transit LSP routes, Layer 2 cross-connects, and SR Adjacency Segments. This is achieved by extending the 'address-family' identity with a new 'mpls' identity.
+section: "2.3"
+topics:
+    - mpls
+    - yang
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

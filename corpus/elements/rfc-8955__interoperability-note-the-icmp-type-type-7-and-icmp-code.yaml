@@ -1,0 +1,10 @@
+document: rfc-8955
+kind: interoperability-note
+summary: The ICMP Type (Type 7) and ICMP Code (Type 8) components never match when the IP protocol is not 1 (ICMP), when the packet is a non-first fragment, or when the transport header cannot be located. Implementations may or may not decode the transport header in the presence of IP options or ESP NULL encryption.
+section: 4.2.2.7
+topics:
+    - bgp
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

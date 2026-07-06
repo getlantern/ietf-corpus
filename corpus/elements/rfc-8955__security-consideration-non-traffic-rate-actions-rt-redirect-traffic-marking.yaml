@@ -1,0 +1,11 @@
+document: rfc-8955
+kind: security-consideration
+summary: Non-traffic-rate actions (rt-redirect, traffic-marking) may allow a third party to modify packet forwarding and gain access to other routing tables or VPNs. Operators SHOULD filter Traffic Filtering Action communities at network borders and expose only a predefined subset to third parties, or map user-defined communities to internal actions rather than accepting action communities from third parties.
+section: "12"
+topics:
+    - bgp
+    - routing
+    - security
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

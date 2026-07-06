@@ -1,0 +1,10 @@
+document: rfc-8956
+kind: security-consideration
+summary: Oversized IPv6 header chains (RFC 7112) can prevent matching on transport headers. RFC 8200 Section 4.5 requires the first fragment to include the upper-layer header, but malformed packets may not comply. Type 3 (Upper-Layer Protocol) Flow Specification components will not be enforced for such illegal packets.
+section: "7"
+topics:
+    - security
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

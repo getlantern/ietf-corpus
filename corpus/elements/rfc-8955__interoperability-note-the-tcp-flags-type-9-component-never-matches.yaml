@@ -1,0 +1,10 @@
+document: rfc-8955
+kind: interoperability-note
+summary: The TCP Flags (Type 9) component never matches when the IP protocol is not 6 (TCP), when the packet is a non-first fragment, or when the transport header cannot be located. When a 2-octet bitmask is used, the leftmost 4 bits (data offset) are always treated as 0.
+section: 4.2.2.9
+topics:
+    - bgp
+    - routing
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
