@@ -1,0 +1,11 @@
+document: rfc-8784
+kind: security-consideration
+summary: If PPK use is optional for both peers and digital signatures are used, a real-time quantum attacker can mount a downgrade attack by stripping the USE_PPK notification and forging signatures. Making PPK mandatory for at least one peer, or using preshared key authentication, prevents this.
+section: "6"
+topics:
+    - ipsec
+    - vpn
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-8783
+kind: design-rationale
+summary: The 'reject' forwarding action (drop and send ICMP error) is intentionally not supported in 'ietf-dots-data-channel'. Generating ICMP error messages during DDoS mitigation would both exacerbate the attack and provide explicit feedback to the attacker that traffic is being blocked.
+section: "4.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

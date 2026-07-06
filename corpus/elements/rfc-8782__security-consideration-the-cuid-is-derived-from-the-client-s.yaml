@@ -1,0 +1,9 @@
+document: rfc-8782
+kind: security-consideration
+summary: The 'cuid' is derived from the client's cryptographic identity (SPKI hash or PSK identity hash) to tie the identifier to authentication material and prevent spoofing. DOTS gateways may rewrite 'cuid' values, but servers must enforce per-client access controls.
+section: "10"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

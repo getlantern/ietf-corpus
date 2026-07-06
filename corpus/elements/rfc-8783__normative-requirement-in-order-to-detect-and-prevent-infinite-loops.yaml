@@ -1,0 +1,9 @@
+document: rfc-8783
+kind: normative-requirement
+summary: In order to detect and prevent infinite loops, DOTS gateways MUST check that none of their own information appears in the Via header field. If a loop is detected, the gateway MUST NOT forward the message and SHOULD return '508 Loop Detected'. Otherwise, the DOTS agent MUST update or insert the Via header field with its own information.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-8783
+kind: normative-requirement
+summary: DOTS clients SHOULD reuse the same TLS session for multiple requests and responses to reduce workload. While quiescent, a DOTS client MAY probe the server (e.g., via TLS heartbeat per RFC 6520) to verify cryptographic state and maintain NAT/firewall bindings.
+section: "3.1"
+rfc2119_level: SHOULD
+topics:
+    - tls
+    - tcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

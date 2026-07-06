@@ -1,0 +1,10 @@
+document: rfc-8784
+kind: interoperability-note
+summary: When EAP is used, the responder must compute the first AUTH payload in IKE_AUTH using SK_pr' (without PPK) because the PPK_ID is not yet known. The PPK is applied only after the PPK_IDENTITY notification is received in the final IKE_AUTH request containing the AUTH payload.
+section: "3"
+topics:
+    - ipsec
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

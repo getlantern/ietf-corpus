@@ -1,0 +1,10 @@
+document: rfc-8783
+kind: security-consideration
+summary: DOTS servers MUST validate that IP prefixes in alias and filtering requests (including those resolved from FQDNs or URIs) fall within the scope of the DOTS client's domain. Prefix lists MUST NOT include broadcast, loopback, or multicast addresses. Mutual authentication between DOTS agents is required, as specified in Section 8 of RFC 8782.
+section: "10"
+topics:
+    - security
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

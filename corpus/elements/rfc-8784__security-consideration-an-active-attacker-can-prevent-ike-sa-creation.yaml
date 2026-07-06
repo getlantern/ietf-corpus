@@ -1,0 +1,10 @@
+document: rfc-8784
+kind: security-consideration
+summary: 'An active attacker can prevent IKE SA creation when PPK is mandatory by injecting a forged IKE_SA_INIT response without USE_PPK before the genuine response arrives, causing the initiator to abort. Mitigation: wait for retransmissions rather than aborting on the first non-USE_PPK response.'
+section: "6"
+topics:
+    - ipsec
+    - vpn
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8794
+kind: wire-format
+summary: A Variable-Size Integer (VINT) encodes its own length using a leading VINT_WIDTH (zero or more '0' bits), a VINT_MARKER (single '1' bit), and VINT_DATA. A 1-octet VINT supplies 7 bits of data; each additional octet adds 7 more bits. VINT_DATA MUST be zero-padded on the left and expressed as a big-endian unsigned integer.
+section: "4"
+topics:
+    - cbor
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

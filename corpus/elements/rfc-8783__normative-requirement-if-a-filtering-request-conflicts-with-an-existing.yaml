@@ -1,0 +1,9 @@
+document: rfc-8783
+kind: normative-requirement
+summary: If a filtering request conflicts with an existing rule from another DOTS client in the same domain and no local policy is set, the DOTS server returns a '409 Conflict' status-line with error-tag 'resource-denied'. DOTS servers SHOULD support a configurable conflict-resolution policy (e.g., reject all, reject new, notify administrator).
+section: "7.2"
+rfc2119_level: SHOULD
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

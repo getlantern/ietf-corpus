@@ -1,0 +1,6 @@
+document: rfc-8797
+kind: design-rationale
+summary: Remote invalidation is signaled via a simple R bit rather than a per-STag mechanism because some NFS/RDMA client implementations always expose STags that are safe to invalidate remotely. A blanket flag is sufficient for these clients without requiring new per-chunk XDR extensions.
+section: "3.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

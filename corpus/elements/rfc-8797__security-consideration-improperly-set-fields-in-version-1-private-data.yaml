@@ -1,0 +1,8 @@
+document: rfc-8797
+kind: security-consideration
+summary: Improperly set fields in version 1 Private Data can cause disconnection (self-imposed DoS). Similarly, non-RPC-over-RDMA CM Private Data that inadvertently contains the Format Identifier 0xf6ab0e18 could be misinterpreted; additional validation per Section 5.2 mitigates this risk.
+section: "7"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

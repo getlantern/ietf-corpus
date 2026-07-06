@@ -1,0 +1,11 @@
+document: rfc-8784
+kind: security-consideration
+summary: An attacker with a quantum computer that breaks the initial IKE SA can access peer identities, configuration parameters, and IPsec SA traffic selectors, but not the Child SA cryptographic keys protected by the PPK. Deployments treating this metadata as sensitive MUST rekey the IKE SA before transmitting it.
+section: "6"
+topics:
+    - ipsec
+    - vpn
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

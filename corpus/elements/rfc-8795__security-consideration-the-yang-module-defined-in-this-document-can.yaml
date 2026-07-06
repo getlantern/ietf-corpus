@@ -1,0 +1,10 @@
+document: rfc-8795
+kind: security-consideration
+summary: The YANG module defined in this document can be accessed via the NETCONF or RESTCONF protocol. Several data nodes are writable and could be used by a malicious user to disrupt TE topology services; implementations should restrict access using NACM (RFC 8341) to ensure only authorized users can modify sensitive topology data.
+section: "8"
+topics:
+    - yang
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

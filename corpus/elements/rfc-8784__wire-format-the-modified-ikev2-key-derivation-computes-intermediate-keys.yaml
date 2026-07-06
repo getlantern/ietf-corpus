@@ -1,0 +1,10 @@
+document: rfc-8784
+kind: wire-format
+summary: 'The modified IKEv2 key derivation computes intermediate keys SK_d'', SK_pi'', SK_pr'' via the standard process, then derives final keys as SK_d = prf+(PPK, SK_d''), SK_pi = prf+(PPK, SK_pi''), SK_pr = prf+(PPK, SK_pr''). For PRFs where output size equals key size, only one prf iteration is needed: SK_d = prf(PPK, SK_d'' | 0x01).'
+section: "3"
+topics:
+    - ipsec
+    - crypto
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

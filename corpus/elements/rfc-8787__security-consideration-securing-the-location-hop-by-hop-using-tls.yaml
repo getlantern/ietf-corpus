@@ -1,0 +1,11 @@
+document: rfc-8787
+kind: security-consideration
+summary: Securing the location hop by hop using TLS protects against eavesdropping and modification in transit, but exposes the information to all SIP intermediaries on the path and the endpoint. It is strongly recommended to delete location information including the 'loc-src' parameter when passed to another domain outside the trust domain.
+section: "7"
+topics:
+    - sip
+    - security
+    - tls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

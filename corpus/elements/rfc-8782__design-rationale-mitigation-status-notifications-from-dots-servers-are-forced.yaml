@@ -1,0 +1,8 @@
+document: rfc-8782
+kind: design-rationale
+summary: Mitigation status notifications from DOTS servers are forced to Non-confirmable (overriding RFC 7641's recommendation to send Confirmable at least every 24 hours) because the signal channel uses a heartbeat to detect liveness, and Confirmable messages impose excessive overhead during active DDoS attacks.
+section: 4.4.2.1
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

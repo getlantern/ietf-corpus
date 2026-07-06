@@ -1,0 +1,9 @@
+document: rfc-8796
+kind: design-rationale
+summary: A race condition can arise when the MP triggers a refresh without a B-SFRR-Ready object while the PLR simultaneously triggers Summary FRR due to a concurrent fault. The MP will receive an Srefresh with an unknown Message_Identifier, generate an Srefresh NACK per RFC 2961, and the PLR recovers by replaying the full Path state. No special new mechanism is required.
+section: 3.1.3
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

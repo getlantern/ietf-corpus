@@ -1,0 +1,9 @@
+document: rfc-8786
+kind: interoperability-note
+summary: SRP objects from implementations following this document set all unknown flags to zero, causing no issues to older RFC 8231 implementations. Conversely, a compliant implementation ignores unknown flag bits and is unaffected by older implementations regardless of how they set flags. However, an old RFC 8231 implementation that sets unassigned flags arbitrarily may conflict with new specifications that assign meaning to those flags.
+section: "4"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

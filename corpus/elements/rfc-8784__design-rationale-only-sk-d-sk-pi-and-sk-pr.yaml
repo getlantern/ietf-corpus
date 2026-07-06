@@ -1,0 +1,10 @@
+document: rfc-8784
+kind: design-rationale
+summary: Only SK_d, SK_pi, and SK_pr are modified by the PPK; SK_ei, SK_er, SK_ai, and SK_ar are left as standard IKEv2 values. This allows the responder to decrypt the IKE_AUTH message using standard keys before it knows which PPK to use, keeping the PPK lookup efficient.
+section: Appendix A
+topics:
+    - ipsec
+    - vpn
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

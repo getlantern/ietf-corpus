@@ -1,0 +1,9 @@
+document: rfc-8796
+kind: design-rationale
+summary: Per-LSP FRR signaling in RFC 4090 causes control-plane scalability and latency issues on PLR and MP nodes when a failure affects tens of thousands of LSPs traversing the same link. Summary FRR addresses this by allowing signaling to be performed on one or more per-bypass tunnel groups rather than individually for each protected LSP.
+section: "1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

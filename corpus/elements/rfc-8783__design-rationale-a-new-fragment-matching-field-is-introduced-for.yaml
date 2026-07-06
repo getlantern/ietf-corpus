@@ -1,0 +1,10 @@
+document: rfc-8783
+kind: design-rationale
+summary: A new 'fragment' matching field is introduced for both IPv4 and IPv6 because RFC 8519 lacked IPv6 fragment support and its IPv4 'flags' field does not allow bitmask definition, meaning packets with other flag bits set would bypass ACEs that use 'flags' alone.
+section: "4.2"
+topics:
+    - ip
+    - security
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

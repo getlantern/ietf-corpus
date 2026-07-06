@@ -1,0 +1,9 @@
+document: rfc-8796
+kind: security-consideration
+summary: Interception of signaling messages carrying the new Extended ASSOCIATION objects discloses slightly more network state information than RFC 4090 alone. More critically, a single rogue RSVP message can manipulate the entire group of protected LSPs assigned to the same bypass tunnel group, though such an attack is possible without these extensions at a higher per-LSP signaling cost.
+section: "5"
+topics:
+    - security
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

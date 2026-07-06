@@ -1,0 +1,8 @@
+document: rfc-8782
+kind: state-machine
+summary: 'Mitigation ''status'' values define the lifecycle: 1=setup in progress, 2=successfully mitigating, 3=attack stopped (client should withdraw), 4=exceeded mitigation capacity, 5=active but terminating (client withdrew), 6=terminated, 7=withdrawn by server, 8=awaiting signal-loss trigger. Preconfigured mitigations (trigger-mitigation=false) transition from status 3 or 7 to status 8 after four transmissions.'
+section: 4.4.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

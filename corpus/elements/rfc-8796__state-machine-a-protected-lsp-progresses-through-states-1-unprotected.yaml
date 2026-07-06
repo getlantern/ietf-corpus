@@ -1,0 +1,9 @@
+document: rfc-8796
+kind: state-machine
+summary: 'A protected LSP progresses through states: (1) unprotected — no B-SFRR-Ready object; (2) Summary FRR capable — PLR has sent B-SFRR-Ready in Path and received matching acknowledgment in Resv; (3) Summary FRR active — failure occurred, PLR sent B-SFRR-Active in bypass tunnel Path; (4) merged — MP applied B-SFRR-Active and resumed Srefresh. An LSP cannot join a group already in FRR active state.'
+section: "3.3"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

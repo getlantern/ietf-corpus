@@ -1,0 +1,9 @@
+document: rfc-8783
+kind: normative-requirement
+summary: A DOTS server MUST maintain a filtering rule for at least 10080 minutes (1 week). If no refresh request is received, the server removes expired entries. A refresh is typically a PUT that echoes the GET response with read-only parameters (e.g., 'pending-lifetime') stripped out.
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

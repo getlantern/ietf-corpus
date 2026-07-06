@@ -1,0 +1,9 @@
+document: rfc-8783
+kind: normative-requirement
+summary: A DOTS client MUST register with its DOTS server(s) by creating a 'dots-client' resource (via POST or PUT) before using the data channel. The registration MUST include a 'cuid' parameter; requests missing 'cuid' MUST be rejected with '400 Bad Request' and error-tag 'missing-attribute'.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
