@@ -1,0 +1,10 @@
+document: rfc-8664
+kind: normative-requirement
+summary: A PCC MUST NOT accept MPLS label value 3 (Implicit NULL) in an SR-ERO subobject with M=1. If it decides not to accept a label provided by the PCE, it MUST send PCErr Error-Type=10, Error-value=2 ('Bad label value').
+section: 5.2.1
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

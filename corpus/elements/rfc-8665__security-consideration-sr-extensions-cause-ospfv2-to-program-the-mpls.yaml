@@ -1,0 +1,11 @@
+document: rfc-8665
+kind: security-consideration
+summary: SR extensions cause OSPFv2 to program the MPLS data plane in addition to the IP data plane. Attacks on the OSPF control plane can now misdirect MPLS-forwarded traffic, which can be harder to detect and isolate than IP misrouting. Existing OSPFv2 security extensions (RFC 2328, RFC 7684) apply, and stronger authentication (RFC 7474) SHOULD be used in deployments where attackers may have access to the routing domain.
+section: "10"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

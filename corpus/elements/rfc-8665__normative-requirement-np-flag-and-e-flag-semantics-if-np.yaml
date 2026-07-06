@@ -1,0 +1,10 @@
+document: rfc-8665
+kind: normative-requirement
+summary: 'NP-Flag and E-Flag semantics: if NP is not set, upstream neighbors MUST pop the Prefix-SID (PHP). If NP is set and E is not set, upstream neighbors MUST keep the SID on the stack. If both NP and E are set, upstream neighbors MUST replace the Prefix-SID with Explicit NULL (label 0 for IPv4). When M-Flag is set, NP and E flags MUST be ignored.'
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

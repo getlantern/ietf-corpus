@@ -1,0 +1,9 @@
+document: rfc-8666
+kind: design-rationale
+summary: The LAN Adj-SID sub-TLV is necessary because OSPFv3 broadcast/NBMA networks use a star topology through the DR, meaning non-DR routers do not form or advertise adjacencies with each other. The LAN Adj-SID allows SR-capable routers to advertise direct adjacency SIDs to specific neighbors (BDR, DR-OTHER) that are reachable but not represented by the standard Adj-SID to the DR.
+section: "7.2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

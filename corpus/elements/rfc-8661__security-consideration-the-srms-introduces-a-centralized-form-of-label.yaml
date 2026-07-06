@@ -1,0 +1,10 @@
+document: rfc-8661
+kind: security-consideration
+summary: The SRMS introduces a centralized form of label binding advertisement on behalf of nodes advertising IP reachability, presenting a different and potentially higher risk profile than node-originated advertisements. Errors in SRMS configuration or programming may produce false or conflicting label binding advertisements compromising traffic forwarding; operators should implement strict configuration control, monitor advertised SIDs, prefer IP-reachability SID Advertisements over centralized ones, and log errors.
+section: "7"
+topics:
+    - security
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

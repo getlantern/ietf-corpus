@@ -1,0 +1,9 @@
+document: rfc-8663
+kind: design-rationale
+summary: The explicit NULL label is inserted at the penultimate SR-MPLS node because if the final label were popped and the payload encapsulated directly in MPLS-over-UDP, it would appear as an MPLS packet carrying a non-MPLS payload, confusing the egress node.
+section: 3.2.1
+topics:
+    - mpls
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

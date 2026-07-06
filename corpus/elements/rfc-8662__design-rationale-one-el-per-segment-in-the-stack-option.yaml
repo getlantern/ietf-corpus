@@ -1,0 +1,8 @@
+document: rfc-8662
+kind: design-rationale
+summary: One EL per segment in the stack (Option 2) was rejected because it causes the stack depth to grow by almost 3x (two additional labels per tunnel label). Existing hardware with limited label push capacity would be unable to create sufficiently deep LSPs, constraining the types of LSPs that can be created.
+section: "10.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

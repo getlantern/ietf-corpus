@@ -1,0 +1,9 @@
+document: rfc-8663
+kind: protocol-element
+summary: When an SR-MPLS-capable router (the penultimate node) pops the final SR-MPLS label and the next hop is IP-only, it MUST insert an explicit NULL label (RFC 3032) before encapsulating the payload in an MPLS-over-UDP tunnel toward the egress node to avoid delivering a raw non-MPLS payload inside an MPLS-over-UDP tunnel.
+section: 3.2.1
+topics:
+    - mpls
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

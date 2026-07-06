@@ -1,0 +1,8 @@
+document: rfc-8662
+kind: design-rationale
+summary: A single EL placed at the bottom of the SPRING stack (Option 1) was rejected because as the label stack grows with more SIDs, the EL sinks deeper. Hardware implementations with a low maximum readable label depth (low ERLD) cannot reach it, causing loss of load-balancing on a significant portion of the network.
+section: "10.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

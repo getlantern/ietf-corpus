@@ -1,0 +1,9 @@
+document: rfc-8664
+kind: design-rationale
+summary: The N-Flag and X-Flag in the SR-PCE-CAPABILITY sub-TLV are meaningful only in PCC-to-PCE direction. A PCE MUST set N=0, X=1, and MSD=0 in its outbound Open message to a PCC; the PCC MUST ignore any MSD received from a PCE. This asymmetry reflects that MSD is a PCC data-plane constraint, not a PCE constraint.
+section: "5.1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

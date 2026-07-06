@@ -1,0 +1,10 @@
+document: rfc-8664
+kind: normative-requirement
+summary: If a PCC detects that the subobjects of an ERO are a mixture of SR-ERO subobjects and other subobject types, it MUST send PCErr Error-Type=10, Error-value=5. If SR-ERO subobjects mix SID representations (MPLS label, index, or absent), it MUST send PCErr Error-value=20.
+section: 5.2.1
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8664
+kind: normative-requirement
+summary: Once an SR-capable PCEP session is established with a non-zero MSD value, the PCE MUST NOT send SR-TE paths with a number of SIDs exceeding that MSD value. If a PCC receives such a path, it MUST send PCErr Error-Type=10, Error-value=3 ('Unsupported number of SR-ERO subobjects').
+section: "5.1"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

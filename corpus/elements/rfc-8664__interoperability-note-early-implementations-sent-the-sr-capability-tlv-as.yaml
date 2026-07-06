@@ -1,0 +1,9 @@
+document: rfc-8664
+kind: interoperability-note
+summary: Early implementations sent the SR-CAPABILITY-TLV as a top-level TLV in the OPEN object instead of as a sub-TLV of PATH-SETUP-TYPE-CAPABILITY. Implementations wishing to interoperate SHOULD also send the top-level TLV and interpret receiving it as PATH-SETUP-TYPE-CAPABILITY with PST list (0, 1). If both appear, the top-level SR-CAPABILITY-TLV MUST be ignored.
+section: A
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
