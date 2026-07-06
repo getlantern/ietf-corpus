@@ -1,0 +1,9 @@
+document: rfc-9328
+kind: state-machine
+summary: 'The de-packetization buffer operates in two states: initial buffering (active from reception initialization) and buffering-while-playing. The transition occurs when the difference between the greatest and smallest AbsDon in the buffer reaches or exceeds sprop-max-don-diff; subsequently, NAL units with the smallest AbsDon are released to the decoder whenever the difference again meets or exceeds that threshold.'
+section: "6"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

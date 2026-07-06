@@ -1,0 +1,11 @@
+document: rfc-9329
+kind: design-rationale
+summary: The Don't Fragment (DF) bit from inner IPv4 headers cannot be copied to the outer header when using TCP encapsulation because the TCP/IP stack manages the DF bit in the outer IPv4 header and typically sets it to avoid IP fragmentation. All IPsec SAs created by a single IKE SA share one TCP connection, preventing DSCP-based QoS differentiation across child SAs.
+section: "6.8"
+topics:
+    - ipsec
+    - vpn
+    - tcp
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

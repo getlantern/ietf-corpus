@@ -1,0 +1,9 @@
+document: rfc-9322
+kind: security-consideration
+summary: 'Nested IOAM-Domains amplify the risk of Loopback-based attacks: a looped-back copy in an outer IOAM-Domain may traverse an inner IOAM-Domain and be subject to loopback there as well, causing amplification worse than in a single-domain scenario. IOAM nodes MUST NOT push a Loopback-flagged encapsulation onto packets already carrying IOAM encapsulation.'
+section: "8"
+topics:
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

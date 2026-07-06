@@ -1,0 +1,9 @@
+document: rfc-9314
+kind: design-rationale
+summary: Because BFD has no uniform session key across path types, the data model is split into multiple YANG modules — one per forwarding path type (IP single-hop, IP multihop, MPLS LSPs, LAG) — each with its own session key. A shared 'ietf-bfd-types' module provides common typedefs and groupings to avoid duplication.
+section: "2"
+topics:
+    - yang
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9329
+kind: interoperability-note
+summary: For IKEv2 High Availability with TCP encapsulation, if TCP states are not synchronized between cluster nodes, after failover the new node cannot initiate INFORMATIONAL exchanges until the client sends traffic and receives a TCP RST, prompting reconnection. TCP Originator clients SHOULD periodically send IKEv2 messages when no traffic is flowing to enable quick failover detection.
+section: "7.4"
+topics:
+    - ipsec
+    - vpn
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9328
+kind: security-consideration
+summary: The VVC RTP payload format shares the security design philosophy of AVC (RFC 6184) and HEVC (RFC 7798) payload formats. Implementers must guard against malformed bitstreams that could exploit decoder vulnerabilities. MANEs that operate on SRTP streams must be trusted parties; after dropping packets, they must rewrite RTCP to reflect the changes.
+section: "9"
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

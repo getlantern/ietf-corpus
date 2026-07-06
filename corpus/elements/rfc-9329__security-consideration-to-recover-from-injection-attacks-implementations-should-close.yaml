@@ -1,0 +1,11 @@
+document: rfc-9329
+kind: security-consideration
+summary: To recover from injection attacks, implementations should close the TCP connection when packets contain SPIs that don't match any known SAs; the TCP Originator will then re-establish the connection. Alternatively, implementations MAY attempt to resync by searching the stream for known SPI+sequence number patterns, but SHOULD limit resync attempts.
+section: "10"
+topics:
+    - ipsec
+    - vpn
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

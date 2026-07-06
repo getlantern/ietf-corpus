@@ -1,0 +1,10 @@
+document: rfc-9329
+kind: design-rationale
+summary: TCP encapsulation is defined as a fallback option rather than the default because it adds overhead and performance trade-offs (TCP-in-TCP, added reliability for unreliable ESP, QoS marking limitations). The design goal is to use IKE over UDP by default and only use TCP when UDP is blocked by middleboxes.
+section: "1.1"
+topics:
+    - ipsec
+    - vpn
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

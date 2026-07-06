@@ -1,0 +1,10 @@
+document: rfc-9329
+kind: wire-format
+summary: TCP-encapsulated IKE messages are preceded by a 16-bit Length field (network byte order) followed by a 32-bit zero Non-ESP Marker, then the IKE message body. The Length field value includes the length of the field itself and the Non-ESP marker and MUST NOT be 0 or 1.
+section: "3.1"
+topics:
+    - ipsec
+    - vpn
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

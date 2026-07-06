@@ -1,0 +1,9 @@
+document: rfc-9328
+kind: wire-format
+summary: An Aggregation Packet (AP) begins with a 2-byte PayloadHdr (Type=28), followed by two or more aggregation units. Each aggregation unit contains an optional conditional 16-bit DONL, a 16-bit unsigned NALU size in network byte order (not counting those 2 octets but including the NAL unit header), and the NAL unit including its header.
+section: 4.3.2
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

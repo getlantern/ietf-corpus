@@ -1,0 +1,9 @@
+document: rfc-9328
+kind: interoperability-note
+summary: When an FU is lost, the receiver SHOULD discard all subsequent fragmentation units for the same fragmented NAL unit in transmission order, unless the decoder is known to handle incomplete NAL units gracefully. A receiver MAY instead aggregate the first n-1 fragments into an incomplete NAL unit and set the forbidden_zero_bit to 1 to signal a syntax violation.
+section: 4.3.3
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

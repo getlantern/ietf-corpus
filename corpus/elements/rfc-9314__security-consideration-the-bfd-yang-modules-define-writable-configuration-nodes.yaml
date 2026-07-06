@@ -1,0 +1,9 @@
+document: rfc-9314
+kind: security-consideration
+summary: The BFD YANG modules define writable configuration nodes — including session parameters, authentication settings, and admin-down flags — that can directly affect network forwarding liveness detection. Unauthorized modification could disable BFD sessions or alter detection timers, leading to false failure indications or missed failures. Access to these nodes must be controlled using NETCONF access control (NACM, RFC 8341), and sessions must use an authenticated transport protocol.
+section: "4"
+topics:
+    - security
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

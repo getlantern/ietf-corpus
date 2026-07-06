@@ -1,0 +1,9 @@
+document: rfc-9324
+kind: design-rationale
+summary: The operator control for retaining dropped routes must be global (not per-peer) to avoid inconsistent behavior across peers; a misconfigured neighbor could send a massive number of paths consuming memory, so pre-policy filtering is recommended.
+section: "4"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

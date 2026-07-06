@@ -1,0 +1,10 @@
+document: rfc-9314
+kind: normative-requirement
+summary: For BFD IP multihop sessions, the 'rx-ttl' leaf is declared mandatory (no default). Incoming BFD control packets whose hop count is lower than 'rx-ttl' are dropped. This enforces the minimum TTL constraint for multihop BFD as per RFC 5883.
+section: "2.14"
+rfc2119_level: REQUIRED
+topics:
+    - yang
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

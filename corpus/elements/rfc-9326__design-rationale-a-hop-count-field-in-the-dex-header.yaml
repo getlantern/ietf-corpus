@@ -1,0 +1,8 @@
+document: rfc-9326
+kind: design-rationale
+summary: A Hop Count field in the DEX header was considered during design (incrementing from 0 at encapsulating node) but rejected in favor of using the existing Hop_Lim/Node_ID IOAM-Data-Field via the IOAM-Trace-Type bit, which avoids consuming space in the Flags field and reuses existing IOAM infrastructure.
+section: Appendix A
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

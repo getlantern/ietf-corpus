@@ -1,0 +1,10 @@
+document: rfc-9329
+kind: interoperability-note
+summary: IKE message fragmentation (RFC 7383) is redundant when using TCP encapsulation since TCP already handles fragmentation. Implementations SHOULD NOT send fragments over TCP, although they MUST support receiving fragments. If both MOBIKE and fragmentation are supported, IKE fragmentation SHOULD be negotiated over TCP in case the session switches to UDP.
+section: "7.5"
+topics:
+    - ipsec
+    - vpn
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

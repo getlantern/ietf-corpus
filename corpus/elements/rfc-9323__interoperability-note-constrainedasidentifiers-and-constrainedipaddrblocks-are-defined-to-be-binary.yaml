@@ -1,0 +1,10 @@
+document: rfc-9323
+kind: interoperability-note
+summary: ConstrainedASIdentifiers and ConstrainedIPAddrBlocks are defined to be binary-compatible with ASIdentifiers and IPAddrBlocks from RFC 3779 in their DER encoding. Implementations encountering decode errors MUST NOT ignore them; such errors MUST cause validation to fail, even if the data could be decoded under RFC 3779's more permissive rules.
+section: "4.2"
+topics:
+    - pkix
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

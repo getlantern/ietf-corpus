@@ -1,0 +1,9 @@
+document: rfc-9322
+kind: design-rationale
+summary: If an IOAM looped-back packet reaches an IOAM boundary node that is not the originating node, the IOAM encapsulation is removed and the packet terminated (since it has no payload), preventing IOAM information from leaking outside the IOAM-Domain regardless of whether the node recognizes the loopback origin.
+section: "4.4"
+topics:
+    - measurement
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

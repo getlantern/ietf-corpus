@@ -1,0 +1,10 @@
+document: rfc-9328
+kind: normative-requirement
+summary: If sprop-max-don-diff > 0, the DONL field MUST be present in single NAL unit packets and in the first aggregation unit of an AP, with DON derived directly from DONL; subsequent AP aggregation units derive DON as preceding DON plus 1 modulo 65536. If sprop-max-don-diff = 0, the DONL field MUST NOT be present.
+section: 4.3.1
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

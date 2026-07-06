@@ -1,0 +1,11 @@
+document: rfc-9329
+kind: interoperability-note
+summary: When using MOBIKE to switch networks, the UPDATE_SA_ADDRESSES INFORMATIONAL exchange SHOULD first be attempted over UDP; if no response is received, the Initiator may switch to TCP. The NO_NATS_ALLOWED notification SHOULD be ignored when using TCP encapsulation since TCP generally has no problems with NAT boxes.
+section: "7.1"
+topics:
+    - ipsec
+    - vpn
+    - tcp
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

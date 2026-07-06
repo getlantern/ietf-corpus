@@ -1,0 +1,9 @@
+document: rfc-9322
+kind: design-rationale
+summary: Only a single data field per hop (Hop_Lim and node_id) is permitted in loopback packets to minimize the impact of amplification attacks, since each loopback copy itself traverses the return path and could be further processed.
+section: "4.1"
+topics:
+    - measurement
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

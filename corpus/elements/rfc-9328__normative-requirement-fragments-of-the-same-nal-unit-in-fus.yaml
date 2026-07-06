@@ -1,0 +1,10 @@
+document: rfc-9328
+kind: normative-requirement
+summary: Fragments of the same NAL unit in FUs MUST be sent in consecutive order with ascending RTP sequence numbers, with no other RTP packets of the same stream interleaved. APs MUST NOT be fragmented; FUs MUST NOT be nested. The FU payload header F, LayerId, and TID MUST equal those of the fragmented NAL unit; FuType MUST equal the NAL unit Type.
+section: 4.3.3
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9323
+kind: normative-requirement
+summary: The addressFamily field in ConstrainedIPAddressFamily is a 2-octet AFI in network byte order; a third octet containing a SAFI MUST NOT be present, unlike IPAddrBlocks defined in RFC 3779. There MUST be only one instance of ConstrainedIPAddressFamily per unique AFI, and entries MUST be ordered by ascending addressFamily values.
+section: 4.2.2.1.1
+rfc2119_level: MUST NOT
+topics:
+    - pkix
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

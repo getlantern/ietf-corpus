@@ -1,0 +1,11 @@
+document: rfc-9329
+kind: design-rationale
+summary: IKEv2 Cookie requests provide less protection against DoS with TCP encapsulation because the TCP three-way handshake already verifies the Initiator's IP address before the IKE_SA_INIT request arrives, unlike UDP where the IP address is unverified. Puzzles remain useful because they require computational work regardless of transport.
+section: "6.3"
+topics:
+    - ipsec
+    - vpn
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

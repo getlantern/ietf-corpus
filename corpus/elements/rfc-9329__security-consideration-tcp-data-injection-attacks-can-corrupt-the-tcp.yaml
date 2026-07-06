@@ -1,0 +1,11 @@
+document: rfc-9329
+kind: security-consideration
+summary: TCP data injection attacks can corrupt the TCP stream by altering the Length field, causing the receiver to misidentify packet boundaries and drop all subsequent packets. An attacker that modifies the Non-ESP marker will cause IKE packets to be dispatched to ESP processing (and vice versa), dropping them. IPsec data integrity prevents application data compromise but not DoS.
+section: "10"
+topics:
+    - ipsec
+    - vpn
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9314
+kind: design-rationale
+summary: Because there is no existing LAG YANG data model that can be augmented, BFD-over-LAG configuration is placed as a 'lag' data node under the 'bfd' node rather than under the LAG interface hierarchy. BFD parameters are per-LAG attributes, and the destination IP address for micro-BFD sessions is configured per-LAG per address family.
+section: 2.1.5
+topics:
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

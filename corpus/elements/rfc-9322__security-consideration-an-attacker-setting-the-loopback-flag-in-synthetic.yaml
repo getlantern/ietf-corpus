@@ -1,0 +1,9 @@
+document: rfc-9322
+kind: security-consideration
+summary: 'An attacker setting the Loopback flag in synthetic or transit packets can cause amplification: each device along the path creates and returns a copy, potentially enabling a DDoS attack where multiple devices send looped-back copies to a single victim. Mitigation requires rate limiting at encapsulating and transit nodes as specified in Sections 4.1.1 and 4.2.'
+section: "8"
+topics:
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
