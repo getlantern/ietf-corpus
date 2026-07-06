@@ -1,0 +1,10 @@
+document: rfc-9421
+kind: security-consideration
+summary: Key and algorithm downgrade attacks can occur when the verifier accepts a weaker algorithm than intended or when a key is used with an algorithm for which it was not intended. Applications MUST specify allowed algorithms and ensure that algorithm-key combinations are validated; the alg parameter or key material derivation should be used to prevent substitution.
+section: 7.3.6
+topics:
+    - http
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

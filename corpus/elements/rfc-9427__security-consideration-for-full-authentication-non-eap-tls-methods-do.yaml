@@ -1,0 +1,9 @@
+document: rfc-9427
+kind: security-consideration
+summary: For full authentication, non-EAP-TLS methods do not provide protected success/failure indications at the outer TLS layer; only unprotected EAP-Success or EAP-Failure are sent. Inner methods such as EAP-TTLS with PAP/CHAP/MS-CHAPv1 have no mechanism to signal success or failure inside the tunnel.
+section: "5.2"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

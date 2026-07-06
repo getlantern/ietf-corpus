@@ -1,0 +1,9 @@
+document: rfc-9421
+kind: security-consideration
+summary: Signature replay attacks allow a valid signature captured from one context to be reused in a different context. Mitigations include using the created/expires parameters to bound validity windows, including a nonce, covering method/authority/path/query to constrain reuse scope, and binding to message content via the Content-Digest field from [DIGEST].
+section: 7.2.2
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

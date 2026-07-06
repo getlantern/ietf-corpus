@@ -1,0 +1,10 @@
+document: rfc-9431
+kind: normative-requirement
+summary: The Broker MUST NOT forward PUBLISH messages to unauthorized subscribers. To avoid silently dropping messages, the Broker MUST close the Network Connection and SHOULD send a DISCONNECT with reason code 0x87 (Not authorized) to affected subscribers.
+section: "3.2"
+rfc2119_level: MUST NOT
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

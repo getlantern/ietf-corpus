@@ -1,0 +1,9 @@
+document: rfc-9422
+kind: normative-requirement
+summary: Servers MAY return updated limits any time the protocol requires clients to reissue the EHLO command (e.g., after AUTH or STARTTLS). Clients MUST discard any previous limits in favor of those from the most recent EHLO, including the case where the new EHLO provides no limits at all.
+section: "3.6"
+rfc2119_level: MUST
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

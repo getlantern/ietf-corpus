@@ -1,0 +1,10 @@
+document: rfc-9427
+kind: interoperability-note
+summary: PEAP's crypto binding still uses HMAC-SHA1 (per [PEAP-MPPE]) for interoperability. This derivation is retained unchanged in TLS 1.3 because there are no known security issues with HMAC-SHA1 in this context, and the derived data is only visible to already-authenticated users inside the TLS tunnel.
+section: "5"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

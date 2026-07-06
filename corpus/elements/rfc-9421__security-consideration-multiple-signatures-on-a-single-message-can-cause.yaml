@@ -1,0 +1,9 @@
+document: rfc-9421
+kind: security-consideration
+summary: Multiple signatures on a single message can cause confusion when an attacker substitutes a valid signature from a different context (a different label or different application tag). Applications SHOULD use the tag parameter to scope signatures to specific application contexts and validate that the signature label and tag match expectations.
+section: 7.2.6
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

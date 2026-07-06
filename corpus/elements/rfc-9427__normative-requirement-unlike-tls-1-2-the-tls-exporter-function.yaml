@@ -1,0 +1,10 @@
+document: rfc-9427
+kind: normative-requirement
+summary: Unlike TLS 1.2, the TLS-Exporter function in TLS 1.3 depends on the length passed to it; implementations MUST pass the correct length instead of passing a large length and truncating the output, as truncated output will differ from correctly-length output.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

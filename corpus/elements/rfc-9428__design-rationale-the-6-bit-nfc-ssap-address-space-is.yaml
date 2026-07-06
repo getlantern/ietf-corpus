@@ -1,0 +1,10 @@
+document: rfc-9428
+kind: design-rationale
+summary: The 6-bit NFC SSAP address space is too short to directly form a collision-resistant IPv6 IID; therefore, the RID algorithm (RFC 7217) with SHA-256 is used, taking the SSAP as one input to generate a stable, opaque 64-bit IID that resists address scanning and correlation attacks.
+section: "4.2"
+topics:
+    - ip
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

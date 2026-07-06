@@ -1,0 +1,9 @@
+document: rfc-9431
+kind: security-consideration
+summary: If a Client's permissions are revoked before the access token expires, the Broker may still grant publish/subscribe access to revoked topics when using cached tokens or introspection results. The Broker SHOULD use a reasonable cache timeout; the AS should follow a reasonable token expiration strategy when permissions change dynamically.
+section: "8"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

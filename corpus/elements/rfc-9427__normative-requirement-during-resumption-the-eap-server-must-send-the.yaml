@@ -1,0 +1,10 @@
+document: rfc-9427
+kind: normative-requirement
+summary: During resumption, the EAP server MUST send the protected success result indication (one octet of 0x00) inside the TLS tunnel. The EAP peer MUST check for this octet and fail authentication if it is not received. All EAP servers and peers MUST support resumption for all TLS-based EAP methods.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

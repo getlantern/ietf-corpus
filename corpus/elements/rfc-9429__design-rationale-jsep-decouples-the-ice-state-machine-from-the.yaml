@@ -1,0 +1,9 @@
+document: rfc-9429
+kind: design-rationale
+summary: JSEP decouples the ICE state machine from the signaling state machine because only the implementation has the necessary knowledge of candidates and transport information. This allows JSEP to accommodate both traditional self-contained SDP offers (SIP) and Trickle ICE (RFC 8838), enabling faster ICE and DTLS startup.
+section: "1.1"
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

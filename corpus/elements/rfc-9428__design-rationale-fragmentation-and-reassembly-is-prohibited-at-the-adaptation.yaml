@@ -1,0 +1,8 @@
+document: rfc-9428
+kind: design-rationale
+summary: Fragmentation and reassembly is prohibited at the adaptation layer (unlike in RFC 4944 for IEEE 802.15.4) because the NFC LLCP MIU can be extended via the MIUX parameter to accommodate the full IPv6 minimum MTU of 1280 bytes, eliminating the need for link-layer fragmentation.
+section: "4.7"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

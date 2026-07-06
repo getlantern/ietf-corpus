@@ -1,0 +1,10 @@
+document: rfc-9427
+kind: protocol-element
+summary: 'Key derivation for all TLS-based EAP types uses TLS-Exporter with unified labels: Key_Material = TLS-Exporter("EXPORTER_EAP_TLS_Key_Material", Type, 128); Method-Id = TLS-Exporter("EXPORTER_EAP_TLS_Method-Id", Type, 64); Session-Id = Type || Method-Id; MSK = Key_Material(0,63); EMSK = Key_Material(64,127).'
+section: "2.1"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

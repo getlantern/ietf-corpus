@@ -1,0 +1,10 @@
+document: rfc-9427
+kind: design-rationale
+summary: The outer identity SHOULD use an anonymous NAI realm (RFC 7542 Section 2.4) to preserve user privacy and enable AAA routing, while the inner identity carries the real credentials inside the TLS tunnel. Mixing inner and outer identities from different organizations is NOT RECOMMENDED as it creates management fragility and potential credential harvesting.
+section: "3.1"
+topics:
+    - tls
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

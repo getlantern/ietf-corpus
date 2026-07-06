@@ -1,0 +1,9 @@
+document: rfc-9425
+kind: design-rationale
+summary: The Quota/changes method tracks 'used' property changes separately from other state changes because usage changes frequently while other properties rarely change. The 'updatedProperties' back-reference allows clients to fetch only changed properties in a subsequent Quota/get, optimizing data transfer.
+section: "4.3"
+topics:
+    - http
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,12 @@
+document: rfc-9429
+kind: security-consideration
+summary: JSEP mandates DTLS-SRTP for all media (RFC 8827) and prohibits the SDP security descriptions keying mechanism (RFC 4568). TLS fingerprints used in DTLS are declarative and non-negotiable; lack of an 'a=fingerprint' attribute leads to negotiation failure.
+section: 5.1.1
+topics:
+    - webrtc
+    - realtime
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

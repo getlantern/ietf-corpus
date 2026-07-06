@@ -1,0 +1,9 @@
+document: rfc-9431
+kind: security-consideration
+summary: 'The public "authz-info" topic is vulnerable to DDoS attack: many clients can upload tokens not intended to be used, forcing the Broker to store them until expiry. The Broker SHOULD monitor for repeated token-transfer attempts and other anomalous patterns.'
+section: "8"
+topics:
+    - security
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

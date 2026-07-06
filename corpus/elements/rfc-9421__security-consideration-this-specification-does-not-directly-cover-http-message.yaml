@@ -1,0 +1,9 @@
+document: rfc-9421
+kind: security-consideration
+summary: This specification does not directly cover HTTP message content (body). Applications that need to bind a signature to message content MUST include the Content-Digest field (defined in [DIGEST], RFC 9530) as a covered component, which provides a cryptographic hash of the message body.
+section: 7.2.8
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

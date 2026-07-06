@@ -1,0 +1,11 @@
+document: rfc-9431
+kind: normative-requirement
+summary: HMAC-SHA-256 (HS256) and Ed25519 are mandatory to implement for the Broker. The Client MUST implement at least one of them. Signature validation MUST fail if the algorithm is set to "none" or if the signature/MAC does not match.
+section: 2.2.5
+rfc2119_level: MUST
+topics:
+    - crypto
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

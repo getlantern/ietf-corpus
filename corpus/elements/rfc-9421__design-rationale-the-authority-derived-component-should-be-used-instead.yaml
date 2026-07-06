@@ -1,0 +1,8 @@
+document: rfc-9421
+kind: design-rationale
+summary: The @authority derived component SHOULD be used instead of signing the Host header field directly. Host is HTTP/1.1-specific, while @authority provides a uniform normalized representation across HTTP versions (HTTP/2 and HTTP/3 convey authority via the :authority pseudo-header).
+section: 2.2.3
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
