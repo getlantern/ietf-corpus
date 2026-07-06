@@ -1,0 +1,9 @@
+document: rfc-9348
+kind: protocol-element
+summary: The lost-packet-timer-interval leaf (decimal64 with 6 fraction-digits, units milliseconds, precision to 1 nanosecond) sets how long the receiver waits for a missing outer packet before declaring it lost. When send-immediately is false, each lost packet delays inner-packet delivery until this timer expires; setting it too low can degrade reordering and reassembly.
+section: "3.2"
+topics:
+    - ipsec
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

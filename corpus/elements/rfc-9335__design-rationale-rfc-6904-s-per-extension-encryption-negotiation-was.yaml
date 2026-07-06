@@ -1,0 +1,10 @@
+document: rfc-9335
+kind: design-rationale
+summary: RFC 6904's per-extension encryption negotiation was deliberately avoided because it created complexity, only protected extension values (not IDs/lengths/CSRCs), bloated header extension space past the 14-extension one-byte limit, and had a significant implementation bug undetected for five years. Cryptex instead encrypts all header extensions and CSRCs as a single all-or-nothing mechanism.
+section: "1.2"
+topics:
+    - rtp
+    - webrtc
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

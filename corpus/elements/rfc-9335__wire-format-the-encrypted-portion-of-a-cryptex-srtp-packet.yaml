@@ -1,0 +1,9 @@
+document: rfc-9335
+kind: wire-format
+summary: The Encrypted Portion of a Cryptex SRTP packet includes all CSRC identifiers, the RTP header extension data (excluding the first 4-byte extension header), and the RTP payload. The first 4 bytes of the extension block (the 'defined by profile' field and length) are authenticated but NOT encrypted, as required by RFC 8285.
+section: "6.1"
+topics:
+    - rtp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9345
+kind: security-consideration
+summary: If (D)TLS 1.2 servers support RSA key exchange using a DC-enabled certificate, a Bleichenbacher-style signature forgery attack could produce valid delegated credentials. Operators should minimize use of DC-enabled certificates where a signature forgery oracle may be present, and may prefer elliptic curve certificates for DC-enabled traffic.
+section: "7.6"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

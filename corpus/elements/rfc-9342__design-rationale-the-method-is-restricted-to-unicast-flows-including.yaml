@@ -1,0 +1,9 @@
+document: rfc-9342
+kind: design-rationale
+summary: The method is restricted to unicast flows (including anycast and ECMP) and explicitly excludes BUM (Broadcast, Unknown Unicast, Multicast) traffic, because traffic replication is not covered by the Multipoint Alternate-Marking Method. BUM traffic can be handled link-by-link using the basic RFC 9341 method.
+section: "1"
+topics:
+    - measurement
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

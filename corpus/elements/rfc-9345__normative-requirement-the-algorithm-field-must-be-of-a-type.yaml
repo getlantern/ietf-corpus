@@ -1,0 +1,10 @@
+document: rfc-9345
+kind: normative-requirement
+summary: The algorithm field MUST be of a type advertised by the client in the 'signature_algorithms' extension, and dc_cert_verify_algorithm MUST be of a type advertised in the SignatureSchemeList; clients that receive non-valid delegated credentials MUST terminate the connection with an 'illegal_parameter' alert.
+section: 4.1.1
+rfc2119_level: MUST
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

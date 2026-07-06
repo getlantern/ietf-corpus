@@ -1,0 +1,10 @@
+document: rfc-9347
+kind: design-rationale
+summary: Data block type values (0x0 for pad, 0x4 for IPv4, 0x6 for IPv6) were chosen to coincide with the IPv4/IPv6 version field values so that no per-data-block type overhead is required — the encapsulated IP packet begins immediately at the data block boundary.
+section: 2.2.1
+topics:
+    - ipsec
+    - vpn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

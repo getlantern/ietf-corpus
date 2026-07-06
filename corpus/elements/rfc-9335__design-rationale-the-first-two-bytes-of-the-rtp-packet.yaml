@@ -1,0 +1,9 @@
+document: rfc-9335
+kind: design-rationale
+summary: The first two bytes of the RTP packet and the SSRC/sequence number fields are intentionally left unencrypted to preserve backward compatibility with systems that expect a standard RTPv2 structure for demultiplexing, and because SRTP key scheduling depends on sequence number and SSRC.
+section: "7"
+topics:
+    - rtp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

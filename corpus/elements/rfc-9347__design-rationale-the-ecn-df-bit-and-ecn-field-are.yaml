@@ -1,0 +1,10 @@
+document: rfc-9347
+kind: design-rationale
+summary: The ECN DF bit and ECN field are not mapped from inner to outer headers in AGGFRAG mode. The DF bit is irrelevant because AGGFRAG handles fragmentation internally; the ECN field need not be mapped because constant-send-rate tunnel congestion is by design unrelated to inner traffic flow.
+section: 2.2.5
+topics:
+    - ipsec
+    - vpn
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

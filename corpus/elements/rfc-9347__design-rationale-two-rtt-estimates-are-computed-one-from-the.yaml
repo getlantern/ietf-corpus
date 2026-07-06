@@ -1,0 +1,10 @@
+document: rfc-9347
+kind: design-rationale
+summary: Two RTT estimates are computed — one from the timestamp echo path delay, one from the sum of both endpoints' transmission delays — and the larger is used. This guarantees RTT is never underestimated regardless of whether the tunnel rate or the path speed is the dominant latency factor.
+section: "3"
+topics:
+    - ipsec
+    - vpn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

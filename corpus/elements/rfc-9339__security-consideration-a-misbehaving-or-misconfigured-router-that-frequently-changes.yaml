@@ -1,0 +1,9 @@
+document: rfc-9339
+kind: security-consideration
+summary: A misbehaving or misconfigured router that frequently changes RM signaling values can cause neighbors to repeatedly update their Router-LSAs, leading to network churn and instability. Implementations SHOULD detect this and revert to provisioned metrics under such conditions.
+section: "10"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

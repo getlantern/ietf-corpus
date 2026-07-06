@@ -1,0 +1,8 @@
+document: rfc-9341
+kind: design-rationale
+summary: Alternate Marking avoids per-packet sequence numbers by 'coloring' packets so consecutive blocks have different colors. This eliminates the need to extract and process a sequence number from each packet in real time, which can overload devices, especially when higher-layer sequence numbers are buried inside the payload.
+section: "2"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

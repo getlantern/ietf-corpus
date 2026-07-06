@@ -1,0 +1,11 @@
+document: rfc-9346
+kind: security-consideration
+summary: Remote AS Number and Remote ASBR Identifier are obtained manually from a neighboring administration as part of a commercial relationship; if the Remote AS Number received in a BGP OPEN differs from the locally configured IS-IS TE value, local policy SHOULD be applied to alert the operator or suppress the advertisement to prevent inter-AS TE LSPs traversing unintended ASes.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

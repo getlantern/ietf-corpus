@@ -1,0 +1,10 @@
+document: rfc-9335
+kind: security-consideration
+summary: The fields left unencrypted by Cryptex — including RTP version, padding/extension bits, CSRC count, marker bit, payload type, sequence number, timestamp, SSRC, and header extension count — are considered to have low sensitivity. If any of these need encryption, SRTP is the wrong protocol and a fully encapsulating protocol like DTLS is preferred.
+section: "8"
+topics:
+    - rtp
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

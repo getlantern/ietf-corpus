@@ -1,0 +1,10 @@
+document: rfc-9345
+kind: normative-requirement
+summary: When using RSA in dc_cert_verify_algorithm, the public key MUST NOT use the rsaEncryption OID, which means rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, and rsa_pss_rsae_sha512 are not allowed for use with delegated credentials.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

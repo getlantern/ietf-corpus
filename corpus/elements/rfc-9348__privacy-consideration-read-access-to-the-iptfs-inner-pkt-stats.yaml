@@ -1,0 +1,11 @@
+document: rfc-9348
+kind: privacy-consideration
+summary: Read access to the iptfs-inner-pkt-stats and iptfs-outer-pkt-stats counters must be controlled because those statistics can reveal the true traffic activity that IP-TFS is designed to obscure, undermining traffic-flow confidentiality. An adversary with read access to these counters can infer flow activity patterns despite the fixed-size fixed-rate tunnel.
+section: "5"
+topics:
+    - ipsec
+    - privacy
+    - security
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

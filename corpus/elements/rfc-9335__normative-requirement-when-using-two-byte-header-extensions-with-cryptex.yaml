@@ -1,0 +1,9 @@
+document: rfc-9335
+kind: normative-requirement
+summary: When using two-byte header extensions with Cryptex, the extension identifier with value 256 MUST NOT be negotiated, as its value would normally occupy the 'appbits' of the 'defined by profile' field, which are unavailable with the Cryptex values.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
