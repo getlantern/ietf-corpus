@@ -1,0 +1,8 @@
+document: rfc-9031
+kind: design-rationale
+summary: The Link_Layer_Key object is encoded as a CBOR sequence rather than a CBOR map, avoiding the overhead of per-element integer labels. The CBOR type of the first element (uint for key_id) acts as a structural delimiter between successive key objects within the key-set array, enabling compact multi-key encoding.
+section: 8.4.3
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

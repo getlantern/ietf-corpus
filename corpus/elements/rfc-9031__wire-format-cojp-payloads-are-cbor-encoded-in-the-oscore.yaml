@@ -1,0 +1,9 @@
+document: rfc-9031
+kind: wire-format
+summary: CoJP payloads are CBOR-encoded. In the OSCORE option, the pledge sets the 'kid' flag with a 0-length 'kid' (because its Sender ID is the empty byte string) and transports its pledge identifier in the 'kid context' field, allowing the JRC to retrieve the per-pledge security context.
+section: "7.3"
+topics:
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

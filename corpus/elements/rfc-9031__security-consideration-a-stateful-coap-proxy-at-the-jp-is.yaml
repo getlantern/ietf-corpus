@@ -1,0 +1,8 @@
+document: rfc-9031
+kind: security-consideration
+summary: A stateful CoAP proxy at the JP is vulnerable to memory exhaustion DoS from unauthenticated pledges. The JP SHOULD operate statelessly by encoding per-pledge state in the CoAP extended token (RFC 8974), so that responding to the JRC's echoed token recovers all necessary forwarding state.
+section: "7.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

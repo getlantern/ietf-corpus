@@ -1,0 +1,8 @@
+document: rfc-9031
+kind: security-consideration
+summary: An attacker can replay legitimate EB frames to the pledge, acting as a man-in-the-middle to cause the pledge to adopt a stale Absolute Slot Number, potentially causing nonce reuse in the first link-layer-secured frame after joining. Requiring link-layer authentication of all JP-to-pledge frames during the join process mitigates this.
+section: "5.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

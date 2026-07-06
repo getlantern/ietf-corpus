@@ -1,0 +1,8 @@
+document: rfc-9032
+kind: security-consideration
+summary: All contents of the IE are transmitted in the clear; the EB is not encrypted. This is a restriction of the 802.15.4 cryptographic architecture, since the TSCH ASN (carried in the EB) is needed to decrypt Layer 2 frames. Pledges cannot authenticate beacons before enrollment and must temporarily trust the contents on faith.
+section: "3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

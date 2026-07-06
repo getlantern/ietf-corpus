@@ -1,0 +1,9 @@
+document: rfc-9024
+kind: normative-requirement
+summary: If the PE decides to forward a packet, it MUST be forwarded according to the TSN-Stream-specific configuration. If there are no TSN-Stream-specific forwarding configurations, the PE MUST flood the packet to other locally attached CEs and to the DetNet service proxy. If the administrative policy does not allow flooding, the PE MUST drop the packet.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

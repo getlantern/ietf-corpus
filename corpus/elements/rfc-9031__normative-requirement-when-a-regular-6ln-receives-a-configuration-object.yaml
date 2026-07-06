@@ -1,0 +1,10 @@
+document: rfc-9031
+kind: normative-requirement
+summary: When a regular 6LN receives a Configuration object with a new link-layer key set, it MUST install the new keys but MUST continue using old keys for outgoing traffic until it receives a frame authenticated with the new key set. It MUST then switch outgoing traffic and MUST remove old keys after COJP_REKEYING_GUARD_TIME.
+section: 8.4.3.2
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

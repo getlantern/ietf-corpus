@@ -1,0 +1,10 @@
+document: rfc-9031
+kind: normative-requirement
+summary: Implementations MUST ensure that multiple CoAP requests, including to different JRCs, properly increment OSCORE sequence numbers so that the same sequence number is never reused under the same PSK. Reuse breaks AEAD security guarantees due to nonce reuse.
+section: "7.3"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

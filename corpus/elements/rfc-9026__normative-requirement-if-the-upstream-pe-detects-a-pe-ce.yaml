@@ -1,0 +1,11 @@
+document: rfc-9026
+kind: normative-requirement
+summary: If the Upstream PE detects a PE-CE link failure, it MUST set bfd.LocalDiag to Concatenated Path Down or Reverse Concatenated Path Down (RFC 5880 Section 6.8.17) unless it switches to a new PE-CE link within bfd.DesiredMinTxInterval, signaling downstream PEs to switch to a backup PE.
+section: 3.1.7
+rfc2119_level: MUST
+topics:
+    - vpn
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
