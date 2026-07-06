@@ -1,0 +1,9 @@
+document: rfc-9437
+kind: security-consideration
+summary: Removing subscription state can enable replay attacks by resetting the nonce baseline. The Map-Server SHOULD retain the last nonce seen per xTR-ID after unsubscription; if it cannot, it MUST require xTRs to re-establish a new security association before re-subscribing.
+section: "5"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

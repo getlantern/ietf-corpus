@@ -1,0 +1,8 @@
+document: rfc-9436
+kind: design-rationale
+summary: Flag bits are defined on a per-message-type basis rather than globally because different message types have distinct operational needs. Bit 7 is the most significant (immediately after the Type field) and bit 0 is the least significant (immediately before the Checksum), providing a well-defined numbering convention for future specifications.
+section: "4"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

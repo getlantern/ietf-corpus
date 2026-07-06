@@ -1,0 +1,9 @@
+document: rfc-9438
+kind: design-rationale
+summary: CUBIC uses both the concave and convex profiles of a cubic function for window growth rather than a purely convex increase. This keeps the window nearly constant around the remembered W_max, promoting stability and high utilization while avoiding the packet bursts at the saturation point that purely convex functions cause.
+section: "3.1"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

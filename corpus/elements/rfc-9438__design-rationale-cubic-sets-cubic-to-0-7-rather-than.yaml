@@ -1,0 +1,9 @@
+document: rfc-9438
+kind: design-rationale
+summary: CUBIC sets β_cubic to 0.7 rather than Reno's 0.5 to balance scalability and convergence speed. The higher value improves scalability but slows convergence under low statistical multiplexing; this tradeoff is acceptable because the modern Internet is more asynchronous with less frequent loss synchronizations under high multiplexing.
+section: "3.4"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9438
+kind: protocol-element
+summary: On timeout, CUBIC follows Reno's cwnd reduction but sets ssthresh using β_cubic. The subsequent congestion avoidance uses W_cubic(t) with K=0 and W_max = cwnd at the start of congestion avoidance; W_est is also initialized to that cwnd for the Reno-friendly region.
+section: "4.8"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

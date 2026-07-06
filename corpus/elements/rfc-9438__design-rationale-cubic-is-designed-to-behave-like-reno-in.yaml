@@ -1,0 +1,9 @@
+document: rfc-9438
+kind: design-rationale
+summary: CUBIC is designed to behave like Reno in networks with short RTTs and small BDPs (the Reno-friendly region). When the cubic function would increase cwnd less aggressively than Reno, CUBIC simply follows Reno's window size, ensuring at least the same throughput as Reno in those environments.
+section: "3.2"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

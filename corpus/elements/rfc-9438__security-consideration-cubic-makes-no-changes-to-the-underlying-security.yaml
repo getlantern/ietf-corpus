@@ -1,0 +1,10 @@
+document: rfc-9438
+kind: security-consideration
+summary: CUBIC makes no changes to the underlying security of a transport protocol and inherits the general security concerns of RFC 5681. An attacker can drop or inject ACKs to force the CUBIC implementation to reduce its bandwidth or to mask congestion; these attacks are not new to CUBIC and are inherent to TCP.
+section: "6"
+topics:
+    - security
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

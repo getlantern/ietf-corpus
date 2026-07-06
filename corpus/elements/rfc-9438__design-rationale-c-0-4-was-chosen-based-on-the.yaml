@@ -1,0 +1,9 @@
+document: rfc-9438
+kind: design-rationale
+summary: C=0.4 was chosen based on the observation that at RTT=0.01s CUBIC with C≤0.4 achieves exactly the same average window as Reno (Reno-friendly), while C=4 becomes more aggressive. Tables 1–2 show CUBIC with C=0.4 is substantially more Reno-friendly than HSTCP across all tested loss rates.
+section: "5.1"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

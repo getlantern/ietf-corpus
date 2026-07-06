@@ -1,0 +1,10 @@
+document: rfc-9438
+kind: normative-requirement
+summary: In the concave region (cwnd < W_max, not Reno-friendly), cwnd MUST be incremented by (target − cwnd) / cwnd for each received new ACK, where target is W_cubic(t + RTT) as computed in Section 4.2.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

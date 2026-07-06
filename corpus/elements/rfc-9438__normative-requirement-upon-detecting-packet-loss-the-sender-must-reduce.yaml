@@ -1,0 +1,10 @@
+document: rfc-9438
+kind: normative-requirement
+summary: Upon detecting packet loss, the sender MUST reduce cwnd and ssthresh immediately upon entering loss recovery. β_cubic SHOULD be set to 0.7; ssthresh = flight_size * β_cubic, and cwnd is reduced to max(ssthresh, 2) on loss or max(ssthresh, 1) on ECN-Echo.
+section: "4.6"
+rfc2119_level: MUST
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

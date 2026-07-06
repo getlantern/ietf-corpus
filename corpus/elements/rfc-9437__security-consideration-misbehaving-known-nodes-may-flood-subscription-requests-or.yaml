@@ -1,0 +1,9 @@
+document: rfc-9437
+kind: security-consideration
+summary: Misbehaving known nodes may flood subscription requests or rapidly toggle subscription state, exhausting Map-Server resources. Mitigations include rate-limiting Map-Requests (RFC 9301 Section 5.3) and Map-Notifies (RFC 9301 Section 5.7); when the Map-Notify rate-limit threshold is reached for an xTR-ID, the Map-Server falls back to sending Map-Reply instead.
+section: "7.2"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

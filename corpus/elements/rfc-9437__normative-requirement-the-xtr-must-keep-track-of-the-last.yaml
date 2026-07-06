@@ -1,0 +1,10 @@
+document: rfc-9437
+kind: normative-requirement
+summary: The xTR MUST keep track of the last nonce seen in Map-Notify publications from the Map-Server per EID-Prefix. If a received Map-Notify nonce is not greater than the saved nonce, the xTR MUST drop the message and log that a replay attack may have occurred.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

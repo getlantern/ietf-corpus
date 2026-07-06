@@ -1,0 +1,10 @@
+document: rfc-9438
+kind: normative-requirement
+summary: CUBIC MUST continue to reduce cwnd in response to ECN-Echo ACKs until cwnd reaches 1 SMSS. If congestion persists at cwnd = 1 SMSS, the sender MUST reduce its sending rate further using a retransmission timer with exponential backoff.
+section: "4.6"
+rfc2119_level: MUST
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

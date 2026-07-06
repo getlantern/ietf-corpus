@@ -1,0 +1,10 @@
+document: rfc-9437
+kind: security-consideration
+summary: When using LISP-SEC to establish a PubSubKey, the Map-Server MUST verify that the One-Time Key (OTK) has not been used before; reuse triggers a Negative Map-Reply with ACT=5 (Drop/Auth-Failure). Implementations that do not track all past OTKs may use a hash, trading collision probability for storage.
+section: "7.1"
+topics:
+    - security
+    - crypto
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

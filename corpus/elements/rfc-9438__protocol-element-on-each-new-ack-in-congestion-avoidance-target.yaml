@@ -1,0 +1,9 @@
+document: rfc-9438
+kind: protocol-element
+summary: On each new ACK in congestion avoidance, target = W_cubic(t+RTT) bounded below by cwnd (non-decreasing) and above by 1.5*cwnd (below the slow-start rate). CUBIC then picks the maximum of W_cubic(t) and W_est as the effective window.
+section: "4.2"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

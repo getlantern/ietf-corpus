@@ -1,0 +1,9 @@
+document: rfc-9438
+kind: protocol-element
+summary: For spurious fast retransmits, a CUBIC implementation MAY save state (cwnd, cwnd_prior, ssthresh, W_max, K, t_epoch, W_est) before reducing the window. If the loss is confirmed spurious and current cwnd < cwnd_prior, these saved values MAY be restored to recover performance.
+section: 4.9.2
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

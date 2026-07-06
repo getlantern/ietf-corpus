@@ -1,0 +1,9 @@
+document: rfc-9438
+kind: design-rationale
+summary: CUBIC does not increase its congestion window if a flow is application-limited. The time variable t in W_cubic(t) explicitly excludes idle or rate-limited periods; otherwise, W_cubic would be unreasonably high after restarting, causing overshoot.
+section: "5.8"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

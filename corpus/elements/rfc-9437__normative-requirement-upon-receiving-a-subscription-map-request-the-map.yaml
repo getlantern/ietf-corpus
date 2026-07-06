@@ -1,0 +1,10 @@
+document: rfc-9437
+kind: normative-requirement
+summary: Upon receiving a subscription Map-Request the Map-Server MUST verify that the nonce is strictly greater than the stored nonce for that xTR-ID. If not, the Map-Server MUST silently drop the message and SHOULD log the event as a possible replay attack.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

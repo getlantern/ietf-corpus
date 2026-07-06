@@ -1,0 +1,8 @@
+document: rfc-9437
+kind: design-rationale
+summary: PubSub is an event-triggered mechanism, whereas TTL-based mapping refresh is a polling mechanism that generates constant signaling regardless of state changes. Production experience showed that TTL polling causes excessive signaling for negative cache entries and stale mappings during reconfiguration; PubSub eliminates these by pushing updates only when state actually changes.
+section: A.2
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

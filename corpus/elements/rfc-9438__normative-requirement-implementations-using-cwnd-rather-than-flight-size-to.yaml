@@ -1,0 +1,10 @@
+document: rfc-9438
+kind: normative-requirement
+summary: Implementations using cwnd (rather than flight_size) to calculate new ssthresh MUST use other measures to prevent cwnd from growing when bytes in flight is smaller than cwnd, to avoid using an arbitrarily high cwnd when congestion is detected.
+section: "4.6"
+rfc2119_level: MUST
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

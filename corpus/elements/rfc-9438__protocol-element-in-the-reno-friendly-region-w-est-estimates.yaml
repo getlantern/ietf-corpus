@@ -1,0 +1,9 @@
+document: rfc-9438
+kind: protocol-element
+summary: In the Reno-friendly region, W_est estimates the Reno congestion window via W_est += α_cubic * (segments_acked / cwnd), where α_cubic = 3*(1−β_cubic)/(1+β_cubic). Once W_est ≥ cwnd_prior, α_cubic SHOULD be set to 1 to match Reno's AIMD(1, 0.5) increment rate.
+section: "4.3"
+topics:
+    - congestion
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
