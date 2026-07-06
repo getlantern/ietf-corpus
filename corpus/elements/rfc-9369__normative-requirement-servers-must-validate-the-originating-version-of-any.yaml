@@ -1,0 +1,11 @@
+document: rfc-9369
+kind: normative-requirement
+summary: Servers MUST validate the originating version of any session ticket or token and not accept one issued from a different version. A rejected ticket falls back to a full TLS handshake; a rejected token leaves the client address unverified.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - quic
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9363
+kind: security-consideration
+summary: The /schc data tree contains sensitive writable nodes, notably application IPv6 addresses. An attacker modifying another device's Rules could redirect traffic or enable eavesdropping. Therefore, a device MUST be allowed to modify only its own rules, with requester identity validated through certificates or access lists.
+section: "8"
+topics:
+    - security
+    - netconf
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

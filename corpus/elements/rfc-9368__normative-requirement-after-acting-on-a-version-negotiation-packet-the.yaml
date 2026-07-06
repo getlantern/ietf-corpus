@@ -1,0 +1,10 @@
+document: rfc-9368
+kind: normative-requirement
+summary: After acting on a Version Negotiation packet, the client MUST validate the server's Available Versions by confirming it would have selected the same Negotiated Version given that list. If it would have chosen differently (including when Available Versions is empty), the client MUST close the connection with a version negotiation error.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - quic
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

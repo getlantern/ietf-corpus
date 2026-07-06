@@ -1,0 +1,8 @@
+document: rfc-9368
+kind: interoperability-note
+summary: If a client starting a QUIC version 1 connection in response to a Version Negotiation packet finds the version_information transport parameter missing, it SHALL treat the server as having sent a version_information with Chosen Version 0x00000001 and Available Versions containing only 0x00000001. This ensures interoperability with version-1-only servers.
+section: "8"
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9370
+kind: design-rationale
+summary: Negotiation via existing SA payload Transform Types (rather than new payload types or KE-payload-only approaches) was chosen to avoid backward-compatibility issues and to prevent downgrade attacks. A KE-payload-only approach was rejected because an on-path attacker could send INVALID_KE_PAYLOAD to force downgrade to a non-PQC fallback group.
+section: Appendix C
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

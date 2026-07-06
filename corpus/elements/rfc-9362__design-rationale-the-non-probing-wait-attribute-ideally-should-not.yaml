@@ -1,0 +1,9 @@
+document: rfc-9362
+kind: design-rationale
+summary: The 'non-probing-wait' attribute ideally should not be hard-coded with an explicit value; instead it should incorporate jitter. The recommended approach is to use a base value computed with NON_TIMEOUT (not NON_TIMEOUT_RANDOM) and add ACK_RANDOM_FACTOR-based jitter each time the value is checked.
+section: "3"
+topics:
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

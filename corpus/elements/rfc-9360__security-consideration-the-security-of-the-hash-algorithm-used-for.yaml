@@ -1,0 +1,10 @@
+document: rfc-9360
+kind: security-consideration
+summary: The security of the hash algorithm used for 'x5t' does not affect the security of the system because 'x5t' only selects a certificate already present on the system and does not itself provide trust. Placing 'x5bag', 'x5chain', and 'x5t' in the protected header helps mitigate risks from a misbehaving CA.
+section: "5"
+topics:
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

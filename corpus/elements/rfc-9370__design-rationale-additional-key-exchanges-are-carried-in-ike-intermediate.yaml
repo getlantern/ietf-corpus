@@ -1,0 +1,9 @@
+document: rfc-9370
+kind: design-rationale
+summary: Additional key exchanges are carried in IKE_INTERMEDIATE exchanges (rather than IKE_SA_INIT) specifically to enable IKE fragmentation (RFC 7383) for large post-quantum KE payloads. IKE_SA_INIT has no inherent fragmentation support, while IKE_INTERMEDIATE messages are encrypted and can use the standard fragmentation protocol.
+section: "2.1"
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9368
+kind: design-rationale
+summary: Version compatibility is intentionally asymmetric because a superset version B that adds new frame types to the first flight cannot always be converted to subset version A (which cannot parse those frames), whereas A can always be trivially converted to B. This asymmetry must be tracked explicitly per version pair.
+section: "2.2"
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

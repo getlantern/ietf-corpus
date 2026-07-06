@@ -1,0 +1,10 @@
+document: rfc-9370
+kind: normative-requirement
+summary: If the responder receives an IKE_FOLLOWUP_KE message for which it has no key exchange state, it MUST send the STATE_NOT_FOUND error notification. On receiving STATE_NOT_FOUND, the initiator MUST cancel the exchange and MUST treat the whole series from the CREATE_CHILD_SA as failed. After repeated STATE_NOT_FOUND notifications, the initiator MUST treat the situation as fatal and delete the IKE SA.
+section: 2.2.4
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

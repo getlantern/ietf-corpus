@@ -1,0 +1,9 @@
+document: rfc-9370
+kind: wire-format
+summary: For IKE SA rekey with multiple key exchanges, SKEYSEED = prf(SK_d, SK(0) | Ni | Nr | SK(1) | ... SK(n)), where SK_d is from the existing IKE SA, SK(0)/Ni/Nr are from the CREATE_CHILD_SA, and SK(1)...SK(n) are shared keys from the additional IKE_FOLLOWUP_KE exchanges.
+section: 2.2.4
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

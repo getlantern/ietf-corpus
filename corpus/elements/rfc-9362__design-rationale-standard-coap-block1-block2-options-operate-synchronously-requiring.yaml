@@ -1,0 +1,9 @@
+document: rfc-9362
+kind: design-rationale
+summary: Standard CoAP Block1/Block2 options operate synchronously, requiring each block to be acknowledged before the next is sent, with rates controlled by RTTs. During a DDoS 'flooded pipe' attack, returning ACK packets may not get through, making Confirmable (CON) responses ineffective and rendering Block1/Block2 insufficient for DOTS use.
+section: "1"
+topics:
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

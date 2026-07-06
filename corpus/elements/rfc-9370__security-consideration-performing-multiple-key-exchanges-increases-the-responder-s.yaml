@@ -1,0 +1,10 @@
+document: rfc-9370
+kind: security-consideration
+summary: Performing multiple key exchanges increases the responder's susceptibility to DoS attacks due to the additional resources required before the initiator is authenticated; this is especially true for post-quantum methods that are more memory/CPU intensive. Responders should consider RFC 8019 recommendations and may offer initial SA setup without additional key exchanges, deferring them to a subsequent CREATE_CHILD_SA rekey.
+section: "4"
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

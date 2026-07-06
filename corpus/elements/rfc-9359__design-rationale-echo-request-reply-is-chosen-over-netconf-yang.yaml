@@ -1,0 +1,10 @@
+document: rfc-9359
+kind: design-rationale
+summary: Echo request/reply is chosen over NETCONF/YANG or IGP for IOAM capability discovery because NETCONF requires each node to implement a client/server and maintain connections (scalability issue), and IGP domain coverage does not always align with the IOAM-Domain (availability issue when hosts are IOAM nodes). Echo request/reply avoids these limitations and supports policy-based capability advertisement per encapsulating node identity.
+section: "1"
+topics:
+    - measurement
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

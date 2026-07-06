@@ -1,0 +1,10 @@
+document: rfc-9368
+kind: normative-requirement
+summary: A given ALPN token MUST NOT be used with a new QUIC version unless the new version supports the required transport features, supports ALPN, and the original version is compatible with the new one. On incompatible version negotiation, ALPN negotiation MUST restart without considering the Original Version.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - quic
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

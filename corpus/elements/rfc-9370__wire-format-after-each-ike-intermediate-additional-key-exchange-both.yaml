@@ -1,0 +1,9 @@
+document: rfc-9370
+kind: wire-format
+summary: 'After each IKE_INTERMEDIATE additional key exchange, both sides compute SKEYSEED(n) = prf(SK_d(n-1), SK(n) | Ni | Nr), where SK(n) is the shared secret from the n-th exchange and Ni/Nr are IKE_SA_INIT nonces. All SK_* values are then rederived: {SK_d(n) | SK_ai(n) | SK_ar(n) | SK_ei(n) | SK_er(n) | SK_pi(n) | SK_pr(n)} = prf+(SKEYSEED(n), Ni | Nr | SPIi | SPIr).'
+section: 2.2.2
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-9360
+kind: security-consideration
+summary: Unless the CA required proof of possession of the subject's private key, the end-entity certificate MUST be integrity protected by COSE to prevent identity-misbinding attacks, where an on-path attacker replaces the real end-entity certificate with a CA-issued certificate containing a borrowed public key but different subject.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

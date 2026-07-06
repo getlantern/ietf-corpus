@@ -1,0 +1,11 @@
+document: rfc-9360
+kind: normative-requirement
+summary: The trust mechanism MUST process any certificates in the 'x5bag' or 'x5chain' header parameters as untrusted input. The presence of a self-signed certificate in these parameters MUST NOT cause the update of the set of trust anchors without some out-of-band confirmation.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

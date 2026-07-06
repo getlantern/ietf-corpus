@@ -1,0 +1,8 @@
+document: rfc-9363
+kind: design-rationale
+summary: Timer values use a two-parameter encoding (tick-duration and tick-numbers) where the tick unit is 2^(tick-duration)/10^6 seconds. This design supports a range from microseconds (real-time systems) to multiple days (worse-than-best-effort systems) without requiring a large integer type.
+section: 4.10.5
+topics:
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

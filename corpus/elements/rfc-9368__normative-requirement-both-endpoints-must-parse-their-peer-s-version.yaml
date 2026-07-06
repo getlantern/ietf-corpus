@@ -1,0 +1,9 @@
+document: rfc-9368
+kind: normative-requirement
+summary: Both endpoints MUST parse their peer's Version Information during the handshake. A parsing failure (e.g., length not divisible by four, Chosen Version zero, any Available Version zero, or client Chosen Version absent from Available Versions) MUST cause the endpoint to close the connection, using TRANSPORT_PARAMETER_ERROR for QUIC version 1.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-9360
+kind: security-consideration
+summary: Before using the key in a certificate, the key MUST be checked against the algorithm to be used, including validating elliptic curve points are on the correct curve and RSA key sizes are within acceptable ranges. Use of unvalidated keys can cause loss of security or excessive resource consumption.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

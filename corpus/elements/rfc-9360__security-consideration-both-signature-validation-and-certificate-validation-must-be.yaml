@@ -1,0 +1,11 @@
+document: rfc-9360
+kind: security-consideration
+summary: 'Both signature validation and certificate validation MUST be completed successfully before acting on any requests. On constrained devices there is a trade-off: validating certificates first consumes power/bandwidth for revocation checks, but validating signatures first may enable an oracle attack by revealing which messages pass signature validation via observable network access.'
+section: "5"
+rfc2119_level: MUST
+topics:
+    - security
+    - pkix
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

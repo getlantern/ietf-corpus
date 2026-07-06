@@ -1,0 +1,11 @@
+document: rfc-9360
+kind: normative-requirement
+summary: The end-entity certificate MUST be integrity protected by COSE when using 'x5bag', 'x5chain', 'x5t', or 'x5u'. This can be done by placing the parameter in the protected header, combining an unprotected certificate parameter with an 'x5t' in the protected header, or including the certificate in the external_aad.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
