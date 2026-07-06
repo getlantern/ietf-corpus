@@ -1,0 +1,9 @@
+document: rfc-9190
+kind: protocol-element
+summary: 'Key_Material and Method-Id are derived from the TLS exporter_secret using the TLS exporter interface: Key_Material = TLS-Exporter("EXPORTER_EAP_TLS_Key_Material", Type, 128) and Method-Id = TLS-Exporter("EXPORTER_EAP_TLS_Method-Id", Type, 64), where Type = 0x0D for EAP-TLS. MSK = Key_Material(0,63), EMSK = Key_Material(64,127).'
+section: "2.3"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9183
+kind: security-consideration
+summary: The newly defined TRILL APPsub-TLVs are transported in IS-IS PDUs. RBridges SHOULD be configured to use the IS-IS Authentication TLV (10) so that IS-IS security (RFC 5310) can authenticate PDUs and discard forged ones. Malicious devices may fake APPsub-TLVs to attract TRILL Data packets, interfere with multilevel operation, or induce excessive state.
+section: "9"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

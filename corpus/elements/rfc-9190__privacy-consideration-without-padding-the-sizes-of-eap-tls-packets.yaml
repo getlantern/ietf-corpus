@@ -1,0 +1,9 @@
+document: rfc-9190
+kind: privacy-consideration
+summary: Without padding, the sizes of EAP-TLS packets leak information about client certificate sizes that can be used to track or identify users. EAP-TLS peers SHOULD use TLS record padding (Section 5.4 of RFC 8446) to reduce this leakage.
+section: "5.8"
+topics:
+    - tls
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

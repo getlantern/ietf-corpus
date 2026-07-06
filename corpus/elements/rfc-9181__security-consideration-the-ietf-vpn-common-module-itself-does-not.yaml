@@ -1,0 +1,12 @@
+document: rfc-9181
+kind: security-consideration
+summary: The 'ietf-vpn-common' module itself does not expose any writable data nodes, read-only state nodes, or RPCs, so it introduces no direct security issues. However, modules that reuse its groupings must identify their own security considerations, particularly because groupings like 'vpn-description' expose privacy-sensitive data (e.g., 'customer-name') whose disclosure could violate customer-provider trust relationships.
+section: "5"
+topics:
+    - yang
+    - vpn
+    - security
+    - privacy
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

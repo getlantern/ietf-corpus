@@ -1,0 +1,9 @@
+document: rfc-9190
+kind: security-consideration
+summary: 'Resumption introduces a time-of-check time-of-use (TOCTOU) vulnerability: a malicious user could supply different information during resumption than during the initial handshake. If any authorization decision may differ based on changed information, it MUST be reevaluated; if a safe decision is not possible, resumption SHOULD be rejected in favor of a full handshake.'
+section: "5.7"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

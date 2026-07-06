@@ -1,0 +1,10 @@
+document: rfc-9190
+kind: security-consideration
+summary: Using the same certificate and resumption cache across different protocols (e.g., EAP and HTTPS) can allow cross-protocol resumption attacks where an attacker authenticates via one protocol and resumes in another, bypassing authorization. Using different certificates and resumption caches per protocol is RECOMMENDED.
+section: "5.11"
+topics:
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

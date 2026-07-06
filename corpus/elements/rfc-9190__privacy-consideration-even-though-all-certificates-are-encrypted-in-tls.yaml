@@ -1,0 +1,9 @@
+document: rfc-9190
+kind: privacy-consideration
+summary: Even though all certificates are encrypted in TLS 1.3, the server's identity is only protected against passive attackers while the client's identity is protected against both passive and active attackers. The realm portion of the NAI is still visible and may leak privacy-sensitive information if few peers share the same realm.
+section: "5.8"
+topics:
+    - tls
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

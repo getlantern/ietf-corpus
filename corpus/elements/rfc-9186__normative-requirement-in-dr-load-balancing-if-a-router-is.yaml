@@ -1,0 +1,10 @@
+document: rfc-9186
+kind: normative-requirement
+summary: In DR Load Balancing, if a router is no longer the GDR, it MUST shut down following RFC 8562 Section 5.9 procedures. If the PIM DR detects a session failure, it MUST remove that router from the GDR Candidate list and immediately transmit a new DRLB-List option.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9181
+kind: design-rationale
+summary: The 'qos-classification-policy' grouping intentionally limits Layer 4 match criteria to TCP and UDP in this revision, noting that future revisions may add SCTP or payload-based bitmask matching. Transport protocols using TCP/UDP as substrate may need to match on the 'protocol' field under 'l3' combined with TCP/UDP criteria.
+section: "3"
+topics:
+    - yang
+    - vpn
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

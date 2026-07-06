@@ -1,0 +1,10 @@
+document: rfc-9190
+kind: design-rationale
+summary: OCSP stapling is mandated for EAP-TLS 1.3 servers because the EAP-TLS peer may not have Internet connectivity before authentication completes, making out-of-band revocation checking infeasible during the handshake. TLS 1.3 improves on earlier versions by carrying OCSP in the CertificateEntry for each certificate rather than a separate CertificateStatus message.
+section: "5.4"
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

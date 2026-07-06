@@ -1,0 +1,11 @@
+document: rfc-9182
+kind: security-consideration
+summary: The L3NM YANG module contains sensitive data nodes (keying material, authentication keys, crypto algorithms) across BGP, OSPF, IS-IS, RIP, and BFD configurations. Access to the module MUST be restricted using NETCONF access control (NACM, RFC 8341) and transmitted only over secure, authenticated transports such as NETCONF over SSH.
+section: "9"
+topics:
+    - security
+    - netconf
+    - yang
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

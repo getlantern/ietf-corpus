@@ -1,0 +1,9 @@
+document: rfc-9193
+kind: security-consideration
+summary: The indication of a media type in SenML data does not exempt a consuming application from properly checking its inputs. An attacker who can supply crafted SenML data specifying attacker-chosen media types may expose vulnerabilities of handlers for those types, including 'decompression bombs' (compressed data crafted to decompress to extremely large items).
+section: "7"
+topics:
+    - security
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
