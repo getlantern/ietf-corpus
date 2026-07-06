@@ -1,0 +1,9 @@
+document: rfc-8985
+kind: state-machine
+summary: Upon RTO expiration, RACK marks the first outstanding segment (SEG.SEQ == SND.UNA) as lost unconditionally; all other unacknowledged segments are marked lost only if Segment.xmit_ts + RACK.rtt + RACK.reo_wnd <= now. This prevents spurious retransmissions of recently sent segments after a spurious RTO.
+section: "6.3"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

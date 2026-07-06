@@ -1,0 +1,8 @@
+document: rfc-8985
+kind: state-machine
+summary: The RACK reordering timer, TLP PTO timer, RTO timer, and Zero Window Probe timer are mutually exclusive. When arming a RACK reordering timer or TLP PTO, the sender SHOULD cancel any other pending timers. Implementations use a single timer with a state variable indicating which event fires next.
+section: "8"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

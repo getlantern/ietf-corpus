@@ -1,0 +1,9 @@
+document: rfc-8985
+kind: design-rationale
+summary: RACK uses a time-based reordering window instead of a packet-distance threshold (DupAck counting) because reordering degree in time is typically bounded within one RTT — whether segments traverse parallel paths with similar delays or are repaired quickly by local link-layer retransmissions — whereas reordering in packet distance can vary up to the full flight size.
+section: 3.3.1
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

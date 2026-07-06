@@ -1,0 +1,8 @@
+document: rfc-8985
+kind: design-rationale
+summary: The initial RACK reordering window is min_RTT/4 because Linux TCP used the same factor in Early Retransmit [RFC5827] to delay retransmission in the presence of reordering, and operational experience showed this worked well. It is a deliberate adoption of an empirically validated constant.
+section: "6.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

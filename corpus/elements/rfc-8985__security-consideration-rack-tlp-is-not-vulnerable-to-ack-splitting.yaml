@@ -1,0 +1,9 @@
+document: rfc-8985
+kind: security-consideration
+summary: 'RACK-TLP is not vulnerable to ACK-splitting attacks [SCWA99]: an attacker SACKing only one byte of an MSS-sized segment produces the same RACK.xmit_ts effect as SACKing the entire segment, because all bytes within the segment share the same transmission timestamp, so RACK.xmit_ts does not advance spuriously.'
+section: "10"
+topics:
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-8984
+kind: design-rationale
+summary: PatchObject is used in recurrence overrides and localizations to dramatically reduce file size and duplicated content. Unlike iCalendar, which requires duplicating an entire event for a single override, JSCalendar records only the differing properties, allowing occurrences to automatically inherit changes (e.g., a location change) unless explicitly overridden.
+section: 1.4.9
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

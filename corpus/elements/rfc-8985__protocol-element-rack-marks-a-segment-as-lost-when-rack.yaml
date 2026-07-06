@@ -1,0 +1,8 @@
+document: rfc-8985
+kind: protocol-element
+summary: 'RACK marks a segment as lost when RACK.xmit_ts >= Segment.xmit_ts AND (RACK.xmit_ts - Segment.xmit_ts + (now - RACK.ack_ts)) >= RACK.reo_wnd, which simplifies to: now >= Segment.xmit_ts + RACK.rtt + RACK.reo_wnd.'
+section: "6.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

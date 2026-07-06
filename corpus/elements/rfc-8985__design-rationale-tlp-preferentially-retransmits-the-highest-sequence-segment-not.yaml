@@ -1,0 +1,8 @@
+document: rfc-8985
+kind: design-rationale
+summary: 'TLP preferentially retransmits the highest-sequence segment (not the lowest unacknowledged) to resolve the retransmission ambiguity problem: any SACK for that segment — whether for the original or the retransmission — equally implies that the N-1 preceding segments were likely lost, so the choice of which copy is irrelevant to RACK''s inference.'
+section: "7.3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

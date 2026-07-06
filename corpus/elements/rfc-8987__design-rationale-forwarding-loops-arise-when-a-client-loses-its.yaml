@@ -1,0 +1,10 @@
+document: rfc-8987
+kind: design-rationale
+summary: 'Forwarding loops arise when a client loses its active lease state while the relay still holds the route: traffic is forwarded to the client, which returns it to the relay as its default gateway. Requirement R-5 (loop detection) and S-1/S-2 (state preservation) mitigate this.'
+section: "3.5"
+topics:
+    - ip
+    - v6ops
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

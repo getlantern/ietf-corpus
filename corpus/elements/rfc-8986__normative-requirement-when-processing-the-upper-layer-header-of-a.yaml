@@ -1,0 +1,11 @@
+document: rfc-8986
+kind: normative-requirement
+summary: When processing the Upper-Layer header of a packet matching a locally instantiated End SID, if the Upper-Layer header type is not allowed by local configuration, the node MUST send an ICMP Parameter Problem (Code 4, SR Upper-layer Header Error) and discard the packet. It is RECOMMENDED that only header types that do not result in forwarding (e.g., ICMPv6) be allowed.
+section: 4.1.1
+rfc2119_level: RECOMMENDED
+topics:
+    - routing
+    - ip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

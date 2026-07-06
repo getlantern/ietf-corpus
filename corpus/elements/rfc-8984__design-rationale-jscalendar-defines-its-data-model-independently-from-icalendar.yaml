@@ -1,0 +1,8 @@
+document: rfc-8984
+kind: design-rationale
+summary: JSCalendar defines its data model independently from iCalendar rather than providing a direct JSON mapping like jCal. This avoids inheriting iCalendar's ambiguities around time zones, recurrence rule interpretation, and parser interoperability issues, which jCal inherited wholesale.
+section: "1.1"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8985
+kind: normative-requirement
+summary: The RACK reordering window MUST be bounded, and this bound SHOULD be SRTT. The window grows linearly each round trip a DSACK is received — (N+1)*min_RTT/4 — up to SRTT, and resets to min_RTT/4 after 16 DSACK-free loss recoveries.
+section: 3.3.2
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

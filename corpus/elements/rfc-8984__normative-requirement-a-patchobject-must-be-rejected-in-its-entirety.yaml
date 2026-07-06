@@ -1,0 +1,9 @@
+document: rfc-8984
+kind: normative-requirement
+summary: 'A PatchObject MUST be rejected in its entirety if any of its patches are invalid; implementations MUST NOT apply partial patches. Validity conditions include: no pointer into an array interior, all parent path segments must exist, no pointer may be a prefix of another pointer in the same PatchObject, and the value must be type-correct or null for an optional property.'
+section: 1.4.9
+rfc2119_level: MUST
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

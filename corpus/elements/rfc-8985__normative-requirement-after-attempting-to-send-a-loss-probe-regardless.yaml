@@ -1,0 +1,9 @@
+document: rfc-8985
+kind: normative-requirement
+summary: After attempting to send a loss probe — regardless of whether one was actually sent — the sender MUST re-arm the RTO timer (not the PTO timer) if FlightSize is nonzero. This ensures RTO recovery remains the last resort if TLP fails.
+section: "7.3"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

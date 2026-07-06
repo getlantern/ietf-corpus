@@ -1,0 +1,10 @@
+document: rfc-8983
+kind: normative-requirement
+summary: If a dual-stack initiator requests both IPv6 prefix and IPv4 address but receives only one of the two along with both IP4_ALLOWED and IP6_ALLOWED, it MAY request the other address family. In such a case, the initiator MUST create a new IKE Security Association and request the other address family using the new IKE SA.
+section: "5"
+rfc2119_level: MAY
+topics:
+    - ipsec
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

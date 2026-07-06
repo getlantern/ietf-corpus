@@ -1,0 +1,9 @@
+document: rfc-8985
+kind: design-rationale
+summary: 'RACK-TLP intentionally decouples loss detection from congestion control: RACK only detects losses and does not modify the congestion control algorithm. This separation allows congestion control (e.g., PRR) to govern when and how retransmissions occur independently of the loss detection mechanism.'
+section: "9.3"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

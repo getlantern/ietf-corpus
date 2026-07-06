@@ -1,0 +1,10 @@
+document: rfc-8981
+kind: normative-requirement
+summary: The host MUST perform DAD on each generated temporary address. If DAD fails, the host MUST generate a new randomized IID and retry up to TEMP_IDGEN_RETRIES times; if all retries fail, the host MUST log a system error and SHOULD NOT attempt further temporary address generation for that prefix during the current attachment.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - ip
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

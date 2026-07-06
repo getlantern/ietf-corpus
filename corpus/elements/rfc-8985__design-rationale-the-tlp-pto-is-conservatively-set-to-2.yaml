@@ -1,0 +1,8 @@
+document: rfc-8985
+kind: design-rationale
+summary: The TLP PTO is conservatively set to 2*SRTT rather than 1*SRTT because network and end-host delay variance can delay an ACK beyond one SRTT, and using exactly SRTT would risk spurious probes. 2*SRTT is the next integral multiple of SRTT that provides adequate headroom.
+section: "7.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

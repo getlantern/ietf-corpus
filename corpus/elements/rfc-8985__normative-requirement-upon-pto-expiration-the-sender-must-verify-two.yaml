@@ -1,0 +1,9 @@
+document: rfc-8985
+kind: normative-requirement
+summary: 'Upon PTO expiration, the sender MUST verify two conditions before sending a probe: (1) no prior TLP is still in flight (TLP.end_seq is None), and (2) an RTT sample has been obtained since the last probe or connection start. If either condition fails, the sender MUST skip the probe and MUST re-arm the RTO timer.'
+section: "7.3"
+rfc2119_level: MUST
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

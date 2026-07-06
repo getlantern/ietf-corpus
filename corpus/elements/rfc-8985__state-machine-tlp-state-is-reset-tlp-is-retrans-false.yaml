@@ -1,0 +1,8 @@
+document: rfc-8985
+kind: state-machine
+summary: TLP state is reset (TLP.is_retrans = false, TLP.end_seq = None) when initiating a connection, fast recovery, or RTO recovery. TLP.end_seq is set to SND.NXT when a probe is sent and cleared to None when the probe is confirmed delivered, deemed lost, or superseded.
+section: "7.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

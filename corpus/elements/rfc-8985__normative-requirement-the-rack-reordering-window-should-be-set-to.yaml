@@ -1,0 +1,10 @@
+document: rfc-8985
+kind: normative-requirement
+summary: The RACK reordering window SHOULD be set to zero when no reordering has been observed and either three segments have been SACKed since the last recovery or the sender is already in fast or RTO recovery. Otherwise it SHOULD start from min_RTT/4.
+section: 3.3.2
+rfc2119_level: SHOULD
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

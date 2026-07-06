@@ -1,0 +1,10 @@
+document: rfc-8985
+kind: normative-requirement
+summary: After a TLP retransmission, if the sender does not receive a DSACK or DupAck confirming that both the original and probe arrived, it MUST assume that the original segment, the TLP retransmission, or a corresponding ACK was lost, and SHOULD invoke a congestion control response equivalent to fast recovery.
+section: 7.4.2
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

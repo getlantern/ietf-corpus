@@ -1,0 +1,8 @@
+document: rfc-8985
+kind: design-rationale
+summary: The RACK reordering window persists for up to 16 loss recoveries before resetting to min_RTT/4. This bounds spurious fast recovery episodes caused by a temporarily inflated window to approximately once every 16 recoveries (less than 7%), balancing adaptation to sustained reordering against unnecessary sensitivity.
+section: "6.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

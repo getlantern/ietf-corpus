@@ -1,0 +1,9 @@
+document: rfc-8985
+kind: normative-requirement
+summary: The default PTO interval is 2*SRTT. If no SRTT estimate is available, the PTO SHOULD be 1 second. When FlightSize is one segment, the sender MAY inflate the PTO by TLP.max_ack_delay. If the computed PTO would fire after the RTO, the sender schedules TLP at the RTO time instead.
+section: "7.2"
+rfc2119_level: SHOULD
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
