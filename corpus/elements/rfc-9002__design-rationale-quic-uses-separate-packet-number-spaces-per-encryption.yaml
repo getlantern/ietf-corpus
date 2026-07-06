@@ -1,0 +1,9 @@
+document: rfc-9002
+kind: design-rationale
+summary: QUIC uses separate packet number spaces per encryption level (except 0-RTT and 1-RTT share a space) to prevent acknowledgments at one encryption level from spuriously triggering retransmissions at another. RTT measurement and congestion control are unified across all packet number spaces.
+section: "4.1"
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

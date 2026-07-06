@@ -1,0 +1,9 @@
+document: rfc-9002
+kind: protocol-element
+summary: 'smoothed_rtt and rttvar are updated as: smoothed_rtt = 7/8 * smoothed_rtt + 1/8 * adjusted_rtt; rttvar = 3/4 * rttvar + 1/4 * |smoothed_rtt - adjusted_rtt|. adjusted_rtt subtracts the peer-reported ACK delay bounded by max_ack_delay (only enforced after handshake confirmation) provided the result is not less than min_rtt.'
+section: "5.3"
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

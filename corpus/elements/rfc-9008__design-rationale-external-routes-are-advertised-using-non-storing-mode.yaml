@@ -1,0 +1,9 @@
+document: rfc-9008
+kind: design-rationale
+summary: External routes are advertised using Non-Storing mode DAO messages even inside a Storing mode network so that all packets to external targets flow through the root. This makes the arrangement transparent to intermediate 6LRs, and only the root and the injecting 6LR need to be upgraded to support this function.
+section: 4.1.1
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

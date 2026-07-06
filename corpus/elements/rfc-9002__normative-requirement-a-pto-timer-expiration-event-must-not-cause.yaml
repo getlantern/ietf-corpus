@@ -1,0 +1,10 @@
+document: rfc-9002
+kind: normative-requirement
+summary: A PTO timer expiration event MUST NOT cause prior unacknowledged packets to be marked as lost; it only triggers sending of probe packets. Loss detection from packet and time thresholds proceeds only when an acknowledgment is received.
+section: "6.2"
+rfc2119_level: MUST NOT
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

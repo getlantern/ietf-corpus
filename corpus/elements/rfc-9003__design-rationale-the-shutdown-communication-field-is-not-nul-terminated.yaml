@@ -1,0 +1,9 @@
+document: rfc-9003
+kind: design-rationale
+summary: The Shutdown Communication field is not NUL-terminated, and when it contains multibyte characters the character count will be less than the Length value in octets. This design reflects that Length measures octets, not Unicode code points.
+section: "2"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

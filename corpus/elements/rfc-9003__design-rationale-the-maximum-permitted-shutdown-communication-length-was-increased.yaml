@@ -1,0 +1,9 @@
+document: rfc-9003
+kind: design-rationale
+summary: The maximum permitted Shutdown Communication length was increased from 128 (RFC 8203) to 255 octets because operators in regions using multibyte character sets (e.g., Russian) found that messages equivalent in meaning to 65-byte English messages required up to 139 bytes, exceeding the RFC 8203 limit.
+section: A
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9002
+kind: normative-requirement
+summary: Implementations SHOULD NOT use a packet reordering threshold (kPacketThreshold) less than 3, which is the RECOMMENDED initial value based on TCP loss detection best practices. Adaptive algorithms like RACK that increase the threshold after spurious losses are expected to be at least as useful in QUIC as in TCP.
+section: 6.1.1
+rfc2119_level: SHOULD NOT
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9002
+kind: design-rationale
+summary: QUIC recommends a minimum congestion window of two packets rather than TCP's one. With a one-packet minimum, loss forces the sender to wait for a PTO to recover, and sending a single ack-eliciting packet increases the chance of additional latency from receiver-delayed acknowledgments.
+section: "4.8"
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

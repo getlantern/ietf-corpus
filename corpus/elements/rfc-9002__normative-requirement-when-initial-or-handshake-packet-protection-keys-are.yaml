@@ -1,0 +1,10 @@
+document: rfc-9002
+kind: normative-requirement
+summary: When Initial or Handshake packet protection keys are discarded, the sender MUST discard all recovery state for those packets and MUST remove them from bytes in flight. The PTO and loss detection timers MUST be reset because discarding keys signals forward progress.
+section: "6.4"
+rfc2119_level: MUST
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9009
+kind: state-machine
+summary: 'DCO propagation state: upon receiving a DCO, a 6LR compares the DCO''s Path Sequence against its stored value for the target. If DCO Path Sequence is newer: invalidate routing entry and forward DCO downstream. If not newer: drop DCO and retain routing state. If the node itself is the target: strip the Target option and drop if it was the only one.'
+section: 4.3.3
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9007
+kind: design-rationale
+summary: The server is made responsible for generating originalRecipient and originalMessageId (per RFC 8098) rather than the client, since these values must be derived from the authoritative server-side message data rather than potentially stale or spoofed client input.
+section: "2.1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

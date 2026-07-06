@@ -1,0 +1,9 @@
+document: rfc-9002
+kind: protocol-element
+summary: 'The PTO period is computed as: PTO = smoothed_rtt + max(4*rttvar, kGranularity) + max_ack_delay. For Initial and Handshake packet number spaces max_ack_delay is 0. When ack-eliciting packets in multiple spaces are in flight, the timer MUST be set to the earlier of the Initial and Handshake values.'
+section: 6.2.1
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9002
+kind: design-rationale
+summary: QUIC uses monotonically increasing packet numbers within each packet number space, directly encoding transmission order and eliminating TCP's retransmission ambiguity problem. This enables more accurate RTT measurements and allows spurious retransmissions to be trivially detected without complex inference of transmission ordering.
+section: "4.2"
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

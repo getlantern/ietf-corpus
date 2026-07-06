@@ -1,0 +1,10 @@
+document: rfc-9002
+kind: normative-requirement
+summary: An RTT sample MUST NOT be generated on receiving an ACK frame that does not newly acknowledge at least one ack-eliciting packet, to avoid incorporating arbitrarily large ACK Delay values from ACKs covering only non-ack-eliciting packets.
+section: "5.1"
+rfc2119_level: MUST NOT
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

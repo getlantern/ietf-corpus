@@ -1,0 +1,10 @@
+document: rfc-9002
+kind: normative-requirement
+summary: min_rtt MUST be set to latest_rtt on the first RTT sample and to min(min_rtt, latest_rtt) on all subsequent samples. Endpoints SHOULD reset min_rtt to the newest RTT sample after persistent congestion is established to avoid repeatedly declaring persistent congestion when the RTT increases.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

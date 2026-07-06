@@ -1,0 +1,9 @@
+document: rfc-9010
+kind: normative-requirement
+summary: Upon reception of a DAO with an updated Target option where the X flag is 1, the root MUST notify the 6LBR via a proxied EDAR/EDAC exchange. Upon receiving an EDAC, if a DAO is pending the root MUST send a DAO-ACK; otherwise, if the EDAC status is not Success, it MUST send an asynchronous DCO to the 6LR.
+section: 9.2.3
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

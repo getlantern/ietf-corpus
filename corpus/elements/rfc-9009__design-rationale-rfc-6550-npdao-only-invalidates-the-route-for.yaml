@@ -1,0 +1,8 @@
+document: rfc-9009
+kind: design-rationale
+summary: RFC 6550 NPDAO only invalidates the route for the switching node itself; dependent nodes in the subDAG have no mechanism to invalidate their routes through the old path, leaving stale entries until route lifetime expiry. DCO allows the common ancestor to propagate cleanup downstream to all dependent nodes.
+section: "2.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

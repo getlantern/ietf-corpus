@@ -1,0 +1,9 @@
+document: rfc-9002
+kind: design-rationale
+summary: Persistent congestion is detected using a time duration rather than consecutive PTO events, because application send patterns can prevent PTO timers from expiring even when no acknowledgments are received. A duration-based approach allows persistent congestion to be established independently of PTO expiration.
+section: 7.6.1
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

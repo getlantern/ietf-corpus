@@ -1,0 +1,10 @@
+document: rfc-9002
+kind: normative-requirement
+summary: The time threshold for loss detection MUST be at least kGranularity (recommended 1 ms), computed as max(kTimeThreshold * max(smoothed_rtt, latest_rtt), kGranularity) with recommended kTimeThreshold of 9/8. Using max(smoothed_rtt, latest_rtt) protects against both lower and higher-than-expected latest RTT samples.
+section: 6.1.2
+rfc2119_level: MUST
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

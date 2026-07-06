@@ -1,0 +1,10 @@
+document: rfc-9002
+kind: normative-requirement
+summary: After handshake confirmation, an endpoint MUST use the lesser of the ACK delay and the peer's max_ack_delay when adjusting RTT samples, and MUST NOT subtract the ACK delay if it would make the adjusted sample smaller than min_rtt, limiting underestimation from a misreporting peer.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

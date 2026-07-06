@@ -1,0 +1,9 @@
+document: rfc-9009
+kind: security-consideration
+summary: The 'I' flag in the Transit Information option can be spoofed by a malicious intermediate 6LR, which could forge a DAO with the 'I' flag set to trigger unauthorized route invalidation for a child node. This attack is constrained by Path Sequence freshness requirements and is comparable in risk to existing NPDAO spoofing in RFC 6550. The RPL Status field in a DCO could also be used as a one-time covert channel.
+section: "6"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

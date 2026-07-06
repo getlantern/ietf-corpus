@@ -1,0 +1,10 @@
+document: rfc-9002
+kind: normative-requirement
+summary: Probe packets MUST NOT be blocked by the congestion controller, but a sender MUST count them as additionally in flight since they add network load. Senders MUST either use pacing or limit bursts; SHOULD limit bursts to the initial congestion window.
+section: "7.5"
+rfc2119_level: MUST NOT
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

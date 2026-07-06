@@ -1,0 +1,9 @@
+document: rfc-9002
+kind: state-machine
+summary: 'The NewReno congestion controller defines three states: Slow Start (window below ssthresh, grows by bytes acknowledged per ACK); Recovery (entered on loss or ECN-CE increase, window reduced to half then held until a packet sent during recovery is acknowledged); Congestion Avoidance (window at or above ssthresh outside recovery, AIMD growth). Persistent congestion or a new path resets to Slow Start.'
+section: "7.3"
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

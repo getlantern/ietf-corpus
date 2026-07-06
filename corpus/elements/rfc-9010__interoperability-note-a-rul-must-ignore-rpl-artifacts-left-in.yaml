@@ -1,0 +1,9 @@
+document: rfc-9010
+kind: interoperability-note
+summary: 'A RUL must ignore RPL artifacts left in forwarded packets: it skips an SRH (Routing Type 3) when Segments Left is zero, and skips an unrecognized RPL Option (Option Type 0x23) in the Hop-by-Hop Header per RFC 8200. When Segments Left is non-zero, the RUL discards the packet and sends an ICMP Parameter Problem.'
+section: "5.3"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

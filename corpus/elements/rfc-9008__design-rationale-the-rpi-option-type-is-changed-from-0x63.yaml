@@ -1,0 +1,9 @@
+document: rfc-9008
+kind: design-rationale
+summary: The RPI Option Type is changed from 0x63 to 0x23 so that the two high-order action bits become '00' (skip and continue) instead of '01' (discard if unrecognized). This ensures that if an RPL Option leaks into the Internet, RFC 8200-compliant nodes silently skip it rather than dropping the packet, reducing the need for IPv6-in-IPv6 encapsulation on constrained devices.
+section: "4.2"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

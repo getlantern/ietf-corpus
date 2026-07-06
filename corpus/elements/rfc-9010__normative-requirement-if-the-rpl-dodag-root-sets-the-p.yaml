@@ -1,0 +1,9 @@
+document: rfc-9010
+kind: normative-requirement
+summary: If the RPL DODAG root sets the P flag to 1 in the DODAG Configuration option, the 6LR MUST refrain from sending keep-alive EDAR messages and MUST set the X flag to 1 in the Target option of DAO messages to request proxy EDAR/EDAC by the root. If P=0, the 6LR MUST set X=0 and handle the EDAR/EDAC flow itself.
+section: 9.2.2
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

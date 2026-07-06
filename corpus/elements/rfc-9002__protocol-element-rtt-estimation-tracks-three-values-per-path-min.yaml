@@ -1,0 +1,9 @@
+document: rfc-9002
+kind: protocol-element
+summary: 'RTT estimation tracks three values per path: min_rtt (minimum observed over a period, unadjusted for ACK delay), smoothed_rtt (exponentially weighted moving average), and rttvar (mean deviation). These are initialized from kInitialRtt (recommended 333 ms) and updated on each RTT sample drawn from ACK frames.'
+section: "5"
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

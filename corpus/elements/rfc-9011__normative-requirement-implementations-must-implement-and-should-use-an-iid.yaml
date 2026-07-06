@@ -1,0 +1,11 @@
+document: rfc-9011
+kind: normative-requirement
+summary: 'Implementations MUST implement and SHOULD use an IID computation algorithm: key = AppSKey, cmac = aes128_cmac(key, DevEUI), IID = cmac[0..7]. This mitigates risks from RFC 8064 and RFC 8065 regarding stable and privacy-preserving interface identifiers.'
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - privacy
+    - crypto
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

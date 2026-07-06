@@ -1,0 +1,10 @@
+document: rfc-9002
+kind: normative-requirement
+summary: When a PTO timer expires, a sender MUST send at least one ack-eliciting packet as a probe. All probe packets sent on a PTO MUST be ack-eliciting. The sender MAY send up to two full-sized datagrams to reduce the probability of consecutive PTO events from a single lost datagram.
+section: 6.2.4
+rfc2119_level: MUST
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

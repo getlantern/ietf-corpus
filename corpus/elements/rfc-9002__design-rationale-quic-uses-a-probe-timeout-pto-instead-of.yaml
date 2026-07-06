@@ -1,0 +1,9 @@
+document: rfc-9002
+kind: design-rationale
+summary: QUIC uses a Probe Timeout (PTO) instead of TCP's RTO and TLP. Unlike TCP's RTO, QUIC does not collapse the congestion window on PTO expiration since a single tail loss does not indicate persistent congestion, avoiding the need for corrective mechanisms like F-RTO. The congestion window collapses only when persistent congestion is declared.
+section: "4.7"
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9009
+kind: design-rationale
+summary: 'NPDAO and regular DAO may race: the NPDAO can successfully remove the old route while the new DAO is lost in transit, causing route downtime for downstream traffic. The DCO mechanism ties route invalidation to receipt of a successful DAO at the common ancestor, avoiding this race condition.'
+section: "2.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

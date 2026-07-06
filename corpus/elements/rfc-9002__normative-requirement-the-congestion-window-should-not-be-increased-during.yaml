@@ -1,0 +1,10 @@
+document: rfc-9002
+kind: normative-requirement
+summary: The congestion window SHOULD NOT be increased during slow start or congestion avoidance when bytes_in_flight is smaller than the congestion window and sending is not pacing-limited, to avoid inflating the window during underutilization caused by application or flow control limits.
+section: "7.8"
+rfc2119_level: SHOULD NOT
+topics:
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

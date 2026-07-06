@@ -1,0 +1,11 @@
+document: rfc-9002
+kind: security-consideration
+summary: 'A receiver can misreport ECN-CE markings: suppressing them inflates the sender''s rate potentially causing congestion, while reporting extra markings unnecessarily reduces it. Senders can detect suppression by occasionally marking packets ECN-CE and disabling ECN if those marks are not reflected in subsequent acknowledgments.'
+section: "8.3"
+topics:
+    - quic
+    - security
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

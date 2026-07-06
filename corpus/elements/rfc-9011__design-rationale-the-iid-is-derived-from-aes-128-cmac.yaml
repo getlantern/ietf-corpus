@@ -1,0 +1,10 @@
+document: rfc-9011
+kind: design-rationale
+summary: The IID is derived from AES-128-CMAC over the DevEUI using the AppSKey, rather than being derived directly from the DevEUI. Since AppSKey is renewed at each LoRaWAN join, the IID changes over time, mitigating location tracking and preventing attackers from using the manufacturer OUI to target devices.
+section: "5.3"
+topics:
+    - privacy
+    - crypto
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9010
+kind: design-rationale
+summary: The specification avoids periodic EDAR/EDAC keep-alive messages traversing the full LLN by having the RPL DODAG root proxy the EDAR/EDAC exchange to the 6LBR upon each DAO refresh. Only the first registration requires a direct EDAR from the 6LR to the 6LBR, since DAD must be verified before the address is injected into RPL.
+section: "4.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
