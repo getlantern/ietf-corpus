@@ -1,0 +1,9 @@
+document: rfc-8841
+kind: design-rationale
+summary: The SDP 'sctp-port' attribute is used to manage SCTP association lifecycle (close and re-establish) rather than the SDP 'connection' attribute, because the 'connection' attribute does not apply to SCTP. A new sctp-port value triggers closure of the old association and establishment of a new one without affecting the underlying DTLS association.
+section: "9.3"
+topics:
+    - sctp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8841
+kind: normative-requirement
+summary: To close an SCTP association without closing the underlying DTLS association, the offerer MUST signal a new (different) sctp-port value to replace it, or a zero sctp-port value to close it without immediately replacing it. Changing sctp-port does not impact the underlying DTLS association.
+section: "10.5"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

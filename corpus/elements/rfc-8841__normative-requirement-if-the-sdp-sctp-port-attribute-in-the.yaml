@@ -1,0 +1,10 @@
+document: rfc-8841
+kind: normative-requirement
+summary: If the SDP 'sctp-port' attribute in the answer has a value of zero, the offerer MUST NOT establish an SCTP association, and if one exists, MUST close it. If the answer m= line itself contains a zero port, the offerer MUST NOT establish any TCP connection, DTLS association, or SCTP association.
+section: "10.4"
+rfc2119_level: MUST
+topics:
+    - sctp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

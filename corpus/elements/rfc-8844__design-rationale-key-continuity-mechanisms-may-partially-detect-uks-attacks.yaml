@@ -1,0 +1,11 @@
+document: rfc-8844
+kind: design-rationale
+summary: Key continuity mechanisms may partially detect UKS attacks only if a session with the attacker or the genuine peer was established in the past. Implementations that index by peer identity rather than key may silently accept a new key, mistaking the attack for a device change, so key continuity is not a reliable mitigation.
+section: "2.2"
+topics:
+    - security
+    - tls
+    - webrtc
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

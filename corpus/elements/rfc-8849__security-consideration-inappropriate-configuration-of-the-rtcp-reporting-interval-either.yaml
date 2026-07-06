@@ -1,0 +1,11 @@
+document: rfc-8849
+kind: security-consideration
+summary: Inappropriate configuration of the RTCP reporting interval—either too large (preventing effective congestion control) or too small (causing high-rate non-congestion-controlled RTCP traffic)—can lead to denial-of-service attacks. Endpoints SHOULD ignore parameters that configure the RTCP interval significantly longer than the default five-second interval or short enough that RTCP bandwidth would exceed media bandwidth.
+section: "9"
+topics:
+    - rtp
+    - realtime
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

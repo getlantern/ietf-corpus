@@ -1,0 +1,11 @@
+document: rfc-8844
+kind: normative-requirement
+summary: Where the compact form of PASSporT is used, it MUST be expanded into the full form before hashing for the 'external_id_hash' extension. The base64 encoding in the SIP Identity header MUST be decoded then used as input to SHA-256 to produce the 32-octet 'binding_hash' value.
+section: 3.2.2
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-8843
+kind: state-machine
+summary: 'RTP stream-to-''m=''-section association uses four lookup tables: MID→''m='' section, incoming SSRC→''m='' section, outgoing SSRC→''m='' section, and PT→''m='' section (PT entries excluded if ambiguous). On each received RTP packet: check MID first, then SSRC, then PT; discard if no match. Tables MUST be updated as ''m='' sections are added, removed, or reconfigured.'
+section: "9.2"
+topics:
+    - webrtc
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

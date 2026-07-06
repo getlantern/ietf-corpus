@@ -1,0 +1,11 @@
+document: rfc-8841
+kind: normative-requirement
+summary: For TCP/DTLS/SCTP, the SDP 'setup' attribute value 'holdconn' MUST NOT be used, because DTLS is transported on top of TCP and RFC 8842 forbids holdconn for DTLS.
+section: "9.5"
+rfc2119_level: MUST NOT
+topics:
+    - sctp
+    - realtime
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

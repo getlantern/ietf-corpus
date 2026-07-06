@@ -1,0 +1,10 @@
+document: rfc-8844
+kind: design-rationale
+summary: Rather than including the full identity binding in the TLS extension (which could be large), a collision- and preimage-resistant SHA-256 hash is used. This keeps the extension compact while still binding the identity to the TLS Finished MAC, preventing substitution attacks.
+section: "3"
+topics:
+    - security
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

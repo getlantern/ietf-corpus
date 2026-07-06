@@ -1,0 +1,10 @@
+document: rfc-8840
+kind: design-rationale
+summary: SIP INFO requests were chosen over UPDATE/Offer-Answer for candidate transport because INFO messages decouple candidate exchange from Offer/Answer negotiation, avoiding glare issues (where simultaneous Offers invalidate each other with up to 4-second backoff) and the sequential blocking nature of Offer/Answer defined in RFC 3264.
+section: "10.1"
+topics:
+    - sip
+    - webrtc
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

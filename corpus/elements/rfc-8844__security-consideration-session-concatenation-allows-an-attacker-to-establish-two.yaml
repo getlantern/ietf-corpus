@@ -1,0 +1,10 @@
+document: rfc-8844
+kind: security-consideration
+summary: Session concatenation allows an attacker to establish two concurrent sessions with different peers and relay signaling between them, causing both victims to believe they are communicating with the attacker while actually communicating with each other. This attack produces only one TLS connection and is not fully prevented by session identifiers alone; it requires higher-level peer authentication.
+section: "5"
+topics:
+    - security
+    - tls
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

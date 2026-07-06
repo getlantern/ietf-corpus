@@ -1,0 +1,11 @@
+document: rfc-8844
+kind: security-consideration
+summary: UKS attacks on DTLS-SRTP using identity bindings (WebRTC identity or SIP PASSporT) are feasible because identity providers are not required to verify that the requesting entity controls the keys associated with the fingerprints. An attacker obtains an identity assertion for an identity they control, but covers the fingerprint of a victim, causing a second victim to believe it is talking to the attacker.
+section: "3"
+topics:
+    - security
+    - webrtc
+    - sip
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

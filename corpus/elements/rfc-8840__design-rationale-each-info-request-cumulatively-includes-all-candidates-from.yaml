@@ -1,0 +1,10 @@
+document: rfc-8840
+kind: design-rationale
+summary: Each INFO request cumulatively includes all candidates from previous INFO requests so that candidate ordering is preserved end-to-end per RFC 8838 requirements, and so that message loss or reordering (detectable via CSeq) does not cause candidates to be missed by the ICE implementation.
+section: "4.4"
+topics:
+    - sip
+    - webrtc
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

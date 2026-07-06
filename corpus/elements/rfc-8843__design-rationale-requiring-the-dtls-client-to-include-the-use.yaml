@@ -1,0 +1,10 @@
+document: rfc-8843
+kind: design-rationale
+summary: Requiring the DTLS client to include the 'use_srtp' extension in the initial ClientHello (even when DTLS-SRTP is not currently negotiated) avoids the need for a DTLS renegotiation later if DTLS-SRTP encrypted media is added to the BUNDLE group mid-session.
+section: "11"
+topics:
+    - webrtc
+    - crypto
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

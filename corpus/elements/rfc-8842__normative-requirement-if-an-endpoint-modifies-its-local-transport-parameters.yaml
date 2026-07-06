@@ -1,0 +1,10 @@
+document: rfc-8842
+kind: normative-requirement
+summary: If an endpoint modifies its local transport parameters and the modification requires a new DTLS association, the endpoint MUST change its local 'tls-id' attribute value. Similarly, if the 5-tuple changes for a transport prohibiting multi-5-tuple DTLS (e.g., SCTP), it MUST change the 'tls-id' value.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - realtime
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

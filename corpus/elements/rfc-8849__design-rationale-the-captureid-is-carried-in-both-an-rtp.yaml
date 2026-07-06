@@ -1,0 +1,10 @@
+document: rfc-8849
+kind: design-rationale
+summary: The CaptureID is carried in both an RTP header extension and an RTCP SDES item because for switched captures, receivers need to know which original MC corresponds to the media being sent in an MCC in order to correctly apply geometric adjustments (e.g., scaling) to the received media. The original MC does not have its own Capture Encoding and cannot be associated with an 'm=' line label.
+section: "5.2"
+topics:
+    - rtp
+    - realtime
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,12 @@
+document: rfc-8844
+kind: normative-requirement
+summary: Endpoints MUST check that the 'session_id' parameter in the received 'external_session_id' extension includes the 'tls-id' attribute value from their peer's session description. An endpoint that receives a non-matching value MUST abort the connection with a fatal 'illegal_parameter' alert.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+    - webrtc
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

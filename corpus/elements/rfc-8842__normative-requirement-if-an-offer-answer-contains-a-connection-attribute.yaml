@@ -1,0 +1,10 @@
+document: rfc-8842
+kind: normative-requirement
+summary: If an offer/answer contains a 'connection' attribute with value 'new' and also a 'tls-id' attribute, the 'tls-id' value MUST be new and unique. If 'connection' is 'existing' and the endpoint previously sent a 'tls-id' for the same connection, it MUST reuse that same 'tls-id' value.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - realtime
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

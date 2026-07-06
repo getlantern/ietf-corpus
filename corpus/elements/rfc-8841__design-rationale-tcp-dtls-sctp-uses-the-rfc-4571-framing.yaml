@@ -1,0 +1,10 @@
+document: rfc-8841
+kind: design-rationale
+summary: TCP/DTLS/SCTP uses the RFC 4571 framing method (a length field preceding each DTLS message) rather than raw TLS-over-TCP, because this allows reuse of existing TCP-based media framing infrastructure. A separate proto value would be required for TLS-over-TCP without RFC 4571 framing.
+section: "8"
+topics:
+    - sctp
+    - tls
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

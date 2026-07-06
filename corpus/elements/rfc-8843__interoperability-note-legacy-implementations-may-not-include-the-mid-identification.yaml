@@ -1,0 +1,10 @@
+document: rfc-8843
+kind: interoperability-note
+summary: Legacy implementations may not include the MID identification-tag in RTP/RTCP traffic and instead use payload type values to associate RTP streams with 'm=' sections. For this to work reliably, each 'm=' section must use unique payload type values; if they are not unique, stream-to-section association via PT becomes impossible.
+section: "9.2"
+topics:
+    - webrtc
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,12 @@
+document: rfc-8844
+kind: normative-requirement
+summary: An endpoint that does not produce an identity binding MUST generate an empty 'external_id_hash' extension in its ClientHello, or — if a client provides the extension — in ServerHello or EncryptedExtensions. An empty extension has a zero-length 'binding_hash' field.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - security
+    - tls
+    - webrtc
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

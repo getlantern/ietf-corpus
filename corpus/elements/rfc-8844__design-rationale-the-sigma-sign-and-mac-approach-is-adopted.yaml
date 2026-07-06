@@ -1,0 +1,10 @@
+document: rfc-8844
+kind: design-rationale
+summary: 'The SIGMA (''SIGn-and-MAc'') approach is adopted: the identity of endpoints is included under a MAC during the cryptographic handshake so that peers can validate their peer''s identity. In TLS, the Finished message provides a MAC over the entire handshake, making inclusion of identity in a TLS extension sufficient to bind identity to the session.'
+section: "3"
+topics:
+    - security
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

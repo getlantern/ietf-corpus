@@ -1,0 +1,10 @@
+document: rfc-8843
+kind: security-consideration
+summary: Identification-tags MUST be generated in a fashion that does not leak user information (e.g., randomly or using a per-BUNDLE-group counter) and SHOULD be 3 bytes or less. Inconsistent generation methods across implementations could enable fingerprinting. Integrity and source authenticity of the identification-tag are important to prevent denial of service; existing SRTP protection provides this.
+section: "17"
+topics:
+    - security
+    - privacy
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

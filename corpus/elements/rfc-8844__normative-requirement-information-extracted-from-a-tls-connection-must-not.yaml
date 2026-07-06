@@ -1,0 +1,12 @@
+document: rfc-8844
+kind: normative-requirement
+summary: Information extracted from a TLS connection MUST NOT be used in a secondary protocol outside of that connection if that protocol assumes the signaling protocol has the same peers. Security-sensitive information from one TLS connection MUST NOT be used in other TLS connections, even if established as a result of the same signaling session.
+section: "5"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - tls
+    - webrtc
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

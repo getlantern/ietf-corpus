@@ -1,0 +1,10 @@
+document: rfc-8844
+kind: security-consideration
+summary: A UKS attack using fingerprints alone (without identity bindings) is possible when a victim reuses a certificate across two near-simultaneous sessions. The attacker substitutes the victim's fingerprint and forwards DTLS/media packets, causing the victim to believe it is communicating with the attacker when it is actually communicating with a second honest endpoint. The attack requires the attacker to be on-path for media.
+section: "4"
+topics:
+    - security
+    - tls
+    - webrtc
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

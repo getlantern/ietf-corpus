@@ -1,0 +1,10 @@
+document: rfc-8844
+kind: normative-requirement
+summary: A peer that receives an 'external_id_hash' extension that does not match the value of the identity binding from its peer MUST immediately fail the TLS handshake with an 'illegal_parameter' alert. The absence of an identity binding does not relax this requirement; a zero-length extension MUST be present for a peer that provided no identity binding.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-8844
+kind: design-rationale
+summary: The existing SDP 'tls-id' attribute is reused as the unique session identifier for the external_session_id extension because it is already required to be unique per offer/answer, meaning no two offers or answers from the same client share the same value, without requiring a new identifier mechanism.
+section: "4.2"
+topics:
+    - security
+    - tls
+    - webrtc
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8842
+kind: design-rationale
+summary: The 'tls-id' attribute was introduced because previously there was no way to explicitly signal in an SDP offer or answer whether a new DTLS association was required. ICE ufrag changes occur for both ICE negotiation and ICE restart, neither of which necessarily requires a new DTLS association, creating ambiguity that the 'tls-id' attribute resolves.
+section: "1"
+topics:
+    - realtime
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
