@@ -1,0 +1,10 @@
+document: rfc-8888
+kind: design-rationale
+summary: Transport-wide congestion control (a single transport-wide sequence number per RTP packet) was considered but rejected as the primary design because it increases each RTP packet by 8 octets, makes per-SSRC rate adaptation and repair more difficult, and is a less natural fit with the per-SSRC RTP framework.
+section: "8"
+topics:
+    - rtp
+    - congestion
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

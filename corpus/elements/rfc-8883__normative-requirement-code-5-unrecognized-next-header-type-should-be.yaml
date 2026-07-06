@@ -1,0 +1,9 @@
+document: rfc-8883
+kind: normative-requirement
+summary: Code 5 (Unrecognized Next Header type) SHOULD be sent by an intermediate node that discards a packet due to an unknown Next Header type, with the Pointer set to the offset of the unrecognized value. This code SHOULD NOT be sent by a final destination, which SHOULD instead use RFC 8200's code 1.
+section: "2.2"
+rfc2119_level: SHOULD
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

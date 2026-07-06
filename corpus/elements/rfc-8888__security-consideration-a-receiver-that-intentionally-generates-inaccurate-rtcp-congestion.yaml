@@ -1,0 +1,10 @@
+document: rfc-8888
+kind: security-consideration
+summary: A receiver that intentionally generates inaccurate RTCP congestion control feedback can trick the sender into transmitting at a rate exceeding path capacity, causing congestion, denial of service to other flows, and excessive resource use at the sender. A sender may intentionally drop packets to verify that losses are correctly reported.
+section: "10"
+topics:
+    - rtp
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

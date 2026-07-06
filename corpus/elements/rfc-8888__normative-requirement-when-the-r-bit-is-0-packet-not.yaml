@@ -1,0 +1,10 @@
+document: rfc-8888
+kind: normative-requirement
+summary: When the R bit is 0 (packet not received), the subsequent 15 bits (ECN and ATO) MUST be ignored. When ATO is over-range (> 8189/1024 s), the value 0x1FFE MUST be reported; when unavailable or arrival is after RTS, 0x1FFF MUST be reported.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

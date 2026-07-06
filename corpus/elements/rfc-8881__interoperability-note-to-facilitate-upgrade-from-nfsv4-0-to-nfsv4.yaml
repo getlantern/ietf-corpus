@@ -1,0 +1,6 @@
+document: rfc-8881
+kind: interoperability-note
+summary: To facilitate upgrade from NFSv4.0 to NFSv4.1, a server may compare a client_owner4 in EXCHANGE_ID with an nfs_client_id4 established via SETCLIENTID, allowing an upgraded client to avoid waiting for lease expiration. If the NFSv4.0 co_ownerid included the server address, the client should send two EXCHANGE_ID operations to avoid a trunking-hostile client ID.
+section: 2.4.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

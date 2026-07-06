@@ -1,0 +1,10 @@
+document: rfc-8888
+kind: interoperability-note
+summary: The RTCP ECN Feedback Packet defined in RFC 6679 is redundant when the RTP Congestion Control Feedback Packet (this memo) is used, since ECN marks are already carried in the ATO metric blocks. To avoid duplicate feedback, an answering party SHOULD NOT signal both "ack ccfb" and "nack ecn" in its SDP answer.
+section: "7"
+topics:
+    - rtp
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

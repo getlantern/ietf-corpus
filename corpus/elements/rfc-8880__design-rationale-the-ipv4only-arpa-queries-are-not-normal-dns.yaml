@@ -1,0 +1,10 @@
+document: rfc-8880
+kind: design-rationale
+summary: The 'ipv4only.arpa' queries are not normal DNS lookups; they are an improvised client-to-middlebox communication protocol co-opting the DNS protocol to discover the local network's DNS64/NAT64 IPv6 address synthesis prefix. No client ever needs to look up the IPv4 addresses for this name since those are already known by specification; the purpose is solely to interrogate the local DNS64/NAT64 gateway.
+section: "2"
+topics:
+    - dns
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

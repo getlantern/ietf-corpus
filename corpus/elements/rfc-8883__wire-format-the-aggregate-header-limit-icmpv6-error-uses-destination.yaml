@@ -1,0 +1,8 @@
+document: rfc-8883
+kind: wire-format
+summary: 'The aggregate header limit ICMPv6 error uses Destination Unreachable (Type 1, Code 8) with a multi-part format: an 8-bit Length field (invoking packet length in 64-bit words), followed by the padded invoking packet, then an ICMP extension with Version=2, Class-Num=4 (Extended Information), C-Type=1 (Pointer), and a 32-bit Pointer field. Length field in extension object is 8.'
+section: "3.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

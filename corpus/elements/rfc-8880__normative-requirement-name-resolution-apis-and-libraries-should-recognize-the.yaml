@@ -1,0 +1,11 @@
+document: rfc-8880
+kind: normative-requirement
+summary: 'Name resolution APIs and libraries SHOULD recognize the two reverse mapping names ''170.0.0.192.in-addr.arpa'' and ''171.0.0.192.in-addr.arpa'' as special and generate required responses locally: PTR queries yield ''ipv4only.arpa'', all other query types yield a negative response, and all subdomains yield NXDOMAIN. This avoids unnecessary load on the authoritative ''in-addr.arpa'' name servers.'
+section: "7.2"
+rfc2119_level: SHOULD
+topics:
+    - dns
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

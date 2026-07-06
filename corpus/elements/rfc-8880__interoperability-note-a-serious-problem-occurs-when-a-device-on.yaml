@@ -1,0 +1,11 @@
+document: rfc-8880
+kind: interoperability-note
+summary: A serious problem occurs when a device on a NAT64 network is configured to use a recursive resolver other than the one learned from the network (e.g., a public resolver like Cloudflare 1.1.1.1 or Google 8.8.8.8, or a corporate VPN resolver). Such resolvers cannot synthesize IPv6 addresses for the local NAT64 prefix, so 'ipv4only.arpa' queries sent to them will not return the correct NAT64 prefix.
+section: "3.1"
+topics:
+    - dns
+    - nat
+    - v6ops
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,12 @@
+document: rfc-8880
+kind: security-consideration
+summary: 'DNS64 conflicts with DNSSEC: if DNSSEC cryptographically asserts a name has no IPv6 AAAA records, this interferes with DNS64 address synthesis. Clients can resolve this by using the ''ipv4only.arpa'' query to learn the NAT64 prefix, then querying for signed IPv4 records, validating the DNSSEC response, and performing local IPv6 address synthesis.'
+section: "5"
+topics:
+    - dns
+    - security
+    - nat
+    - v6ops
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,12 @@
+document: rfc-8880
+kind: normative-requirement
+summary: On multihomed devices (devices with more than one logical or physical IP interface active simultaneously, including VPN connections), clients MUST use interface-aware name resolution APIs. DNS64 answers are only valid for the interface on which they were received, and different interfaces may yield different DNS64 answers.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - nat
+    - v6ops
+    - multipath
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

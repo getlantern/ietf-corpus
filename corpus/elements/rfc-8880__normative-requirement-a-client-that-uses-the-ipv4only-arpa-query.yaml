@@ -1,0 +1,11 @@
+document: rfc-8880
+kind: normative-requirement
+summary: A client that uses the 'ipv4only.arpa' query to discover IPv6 prefixes and performs its own local address synthesis MUST also synthesize 'ip6.arpa' reverse mapping PTR records for those discovered prefixes, returning 'ipv4only.arpa' for addresses 192.0.0.170 and 192.0.0.171 and performing IPv4 reverse mapping for all other addresses.
+section: 7.2.1
+rfc2119_level: MUST
+topics:
+    - dns
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

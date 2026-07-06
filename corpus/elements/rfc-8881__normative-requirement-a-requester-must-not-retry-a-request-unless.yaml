@@ -1,0 +1,9 @@
+document: rfc-8881
+kind: normative-requirement
+summary: A requester MUST NOT retry a request unless the connection was lost before the reply was received. A replier MUST NOT silently drop a request even if it is a retry; it SHOULD return an appropriate error or MAY disconnect.
+section: 2.9.2
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

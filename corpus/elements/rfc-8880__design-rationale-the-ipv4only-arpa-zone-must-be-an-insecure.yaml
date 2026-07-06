@@ -1,0 +1,12 @@
+document: rfc-8880
+kind: design-rationale
+summary: The 'ipv4only.arpa' zone must be an insecure delegation rather than a secure one because (1) the path from authoritative server to DNS64 resolver carries only A records whose values are already known by specification, so DNSSEC adds no value there, and (2) the path from DNS64 resolver to client carries synthesized AAAA records that cannot be signed by the resolver. Run-time cryptographic signatures are not needed to verify compile-time constants.
+section: "5"
+topics:
+    - dns
+    - nat
+    - v6ops
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

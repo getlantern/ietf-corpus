@@ -1,0 +1,11 @@
+document: rfc-8888
+kind: normative-requirement
+summary: When congestion control feedback is used with ECN, the SDP offer MUST include an "a=ecn-capable-rtp:" attribute and an "a=rtcp-fb:" attribute with the "ack" parameter "ccfb". The answering party SHOULD signal support for only one ECN feedback format to avoid duplicate feedback.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

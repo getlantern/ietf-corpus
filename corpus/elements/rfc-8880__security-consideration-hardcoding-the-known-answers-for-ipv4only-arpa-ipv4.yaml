@@ -1,0 +1,11 @@
+document: rfc-8880
+kind: security-consideration
+summary: Hardcoding the known answers for 'ipv4only.arpa' IPv4 address record queries in recursive resolvers reduces the risk of malicious devices intercepting those queries and returning incorrect answers, since the 'ipv4only.arpa' zone must be an insecure delegation and DNSSEC cannot protect these A record answers from tampering.
+section: "5"
+topics:
+    - dns
+    - security
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

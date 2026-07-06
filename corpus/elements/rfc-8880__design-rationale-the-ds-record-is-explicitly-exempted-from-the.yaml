@@ -1,0 +1,11 @@
+document: rfc-8880
+kind: design-rationale
+summary: 'The DS record is explicitly exempted from the DNS64 authoritative-response rule: DNS64 resolvers must resolve DS queries the usual way to allow clients to securely verify that ''ipv4only.arpa'' has an insecure delegation. However, this exception is not expected to see widespread use since compliant clients already know ''ipv4only.arpa'' is an insecure delegation.'
+section: "7.1"
+topics:
+    - dns
+    - nat
+    - v6ops
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

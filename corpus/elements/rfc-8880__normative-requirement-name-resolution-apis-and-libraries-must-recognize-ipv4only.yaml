@@ -1,0 +1,11 @@
+document: rfc-8880
+kind: normative-requirement
+summary: Name resolution APIs and libraries MUST recognize 'ipv4only.arpa' as special and MUST give it special treatment. All queries for 'ipv4only.arpa' and any subdomains MUST be sent to the recursive resolver learned from the network interface via IPv6 Router Advertisement Options (RFC 8106), DHCPv6 (RFC 3646), or other configuration mechanisms, regardless of any manual DNS configuration, VPN overrides, or local resolver.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,12 @@
+document: rfc-8880
+kind: interoperability-note
+summary: Multiple NAT64 services may be simultaneously available to a client (e.g., one from the local network and one from a corporate VPN), each with a different address synthesis prefix. It is essential that the NAT64 prefix used on each interface be learned from that interface's own recursive resolver, not from a shared or overriding resolver.
+section: "3.1"
+topics:
+    - dns
+    - nat
+    - v6ops
+    - vpn
+    - multipath
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

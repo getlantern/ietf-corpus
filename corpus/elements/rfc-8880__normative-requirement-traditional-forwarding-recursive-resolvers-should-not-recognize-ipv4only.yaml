@@ -1,0 +1,11 @@
+document: rfc-8880
+kind: normative-requirement
+summary: Traditional forwarding recursive resolvers SHOULD NOT recognize 'ipv4only.arpa' as special or give that name any special treatment, because a traditional forwarding resolver may itself be downstream of a DNS64 recursive resolver and should pass through queries to allow correct NAT64 prefix discovery.
+section: "7.1"
+rfc2119_level: SHOULD NOT
+topics:
+    - dns
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

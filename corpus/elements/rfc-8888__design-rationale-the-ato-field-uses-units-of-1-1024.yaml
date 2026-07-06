@@ -1,0 +1,9 @@
+document: rfc-8888
+kind: design-rationale
+summary: The ATO field uses units of 1/1024 seconds (not milliseconds or microseconds) so that offset values from the Report Timestamp can be computed exactly without rounding, since the RTS field itself uses the same NTP-derived clock base.
+section: "3.1"
+topics:
+    - rtp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

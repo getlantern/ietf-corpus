@@ -1,0 +1,10 @@
+document: rfc-8879
+kind: security-consideration
+summary: Certificate compression alters the observable on-wire length of the Certificate message. Any padding scheme (per TLS 1.3 Sections 5.4 and E.3 of RFC 8446) that covers the Certificate message must account for compression within its design or disable compression altogether, as the length change depends on actual certificate contents.
+section: "5"
+topics:
+    - tls
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

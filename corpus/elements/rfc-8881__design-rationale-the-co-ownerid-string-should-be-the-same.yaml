@@ -1,0 +1,6 @@
+document: rfc-8881
+kind: design-rationale
+summary: The co_ownerid string SHOULD be the same for every server network address the client accesses — the opposite of NFSv4.0 guidance — so that trunking over multiple network paths is possible. Including a dynamic IP address risks co_ownerid collisions after address reassignment.
+section: "2.4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

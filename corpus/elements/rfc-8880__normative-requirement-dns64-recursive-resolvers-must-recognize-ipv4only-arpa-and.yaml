@@ -1,0 +1,11 @@
+document: rfc-8880
+kind: normative-requirement
+summary: DNS64 recursive resolvers MUST recognize 'ipv4only.arpa' (and all subdomains) as special and MUST NOT attempt to look up NS records or otherwise query authoritative name servers to resolve this name. Instead, they MUST act as authoritative for this zone by generating immediate responses for all queries, with the sole exception of DS record queries.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

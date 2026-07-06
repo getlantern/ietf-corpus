@@ -1,0 +1,12 @@
+document: rfc-8880
+kind: security-consideration
+summary: The 'ipv4only.arpa' zone must be an insecure delegation because DNS64 resolvers synthesize IPv6 AAAA answers and do not possess the DNSSEC secret key required to sign those answers. The path from DNS64 resolver to client cannot be DNSSEC-protected. DNSSEC-capable resolvers following this specification MUST NOT attempt to validate AAAA answers for 'ipv4only.arpa'.
+section: "5"
+topics:
+    - dns
+    - security
+    - nat
+    - v6ops
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

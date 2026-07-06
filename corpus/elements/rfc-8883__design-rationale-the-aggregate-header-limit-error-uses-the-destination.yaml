@@ -1,0 +1,8 @@
+document: rfc-8883
+kind: design-rationale
+summary: The aggregate header limit error uses the Destination Unreachable type (not Parameter Problem) because it may apply to protocol headers beyond IPv6 and IPv6 extension headers—such as encapsulating UDP headers—and the multi-part ICMPv6 format (RFC 4884) accommodates a Pointer extension without being constrained to IPv6-only header errors.
+section: "3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

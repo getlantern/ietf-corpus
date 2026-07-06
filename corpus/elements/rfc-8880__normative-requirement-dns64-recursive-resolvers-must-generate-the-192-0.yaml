@@ -1,0 +1,11 @@
+document: rfc-8880
+kind: normative-requirement
+summary: DNS64 recursive resolvers MUST generate the 192.0.0.170 and 192.0.0.171 responses for IPv4 address queries (qtype A), synthesized IPv6 address record responses for AAAA queries, and a negative ('no error no answer') response for all other query types except DS. For all subdomains of 'ipv4only.arpa', DNS64 resolvers MUST generate immediate NXDOMAIN responses.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - nat
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

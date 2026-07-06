@@ -1,0 +1,8 @@
+document: rfc-8879
+kind: design-rationale
+summary: Certificate compression is limited to TLS 1.3+ specifically because middlebox interference is known to be widespread with older TLS versions. Only restricting to versions where the Certificate is encrypted avoids breaking deployments that have middleboxes performing certificate validation.
+section: "6"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

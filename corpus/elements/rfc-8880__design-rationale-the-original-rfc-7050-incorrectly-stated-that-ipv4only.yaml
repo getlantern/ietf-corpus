@@ -1,0 +1,12 @@
+document: rfc-8880
+kind: design-rationale
+summary: 'The original RFC 7050 incorrectly stated that ''ipv4only.arpa'' should be a signed zone with DNSSEC protection to allow validating DNS64 servers to detect malicious AAAA records. RFC 8880 corrects this error: because DNS64 resolvers cannot sign synthesized AAAA records, a secure delegation would defeat the entire purpose of the name by making synthesized answers unacceptable to DNSSEC-validating clients.'
+section: "5"
+topics:
+    - dns
+    - nat
+    - v6ops
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

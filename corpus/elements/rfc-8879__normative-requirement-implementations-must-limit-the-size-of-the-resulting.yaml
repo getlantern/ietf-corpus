@@ -1,0 +1,10 @@
+document: rfc-8879
+kind: normative-requirement
+summary: Implementations MUST limit the size of the resulting decompressed chain to the specified uncompressed_length and MUST abort the connection if the decompression output exceeds that limit. The TLS framing 16777216-byte ceiling applies; implementations MUST apply the same limit as if no compression were used.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

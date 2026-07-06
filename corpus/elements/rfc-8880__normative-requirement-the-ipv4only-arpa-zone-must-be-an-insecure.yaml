@@ -1,0 +1,12 @@
+document: rfc-8880
+kind: normative-requirement
+summary: The 'ipv4only.arpa' zone MUST be an insecure delegation to give DNS64/NAT64 gateways the freedom to synthesize answers to AAAA queries without those answers being rejected by DNSSEC-capable resolvers. Making it a secure delegation would make it impossible for DNS64 resolvers to create synthesized AAAA answers acceptable to DNSSEC validating clients.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - dns
+    - nat
+    - security
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

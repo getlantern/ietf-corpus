@@ -1,0 +1,10 @@
+document: rfc-8888
+kind: wire-format
+summary: The Arrival Time Offset (ATO) field is 13 bits wide and expressed in units of 1/1024 seconds, representing how far before the Report Timestamp the corresponding RTP packet arrived. The value 0x1FFE signals over-range (> 8189/1024 seconds); 0x1FFF signals unavailable or arrival after the RTS.
+section: "3.1"
+topics:
+    - rtp
+    - congestion
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

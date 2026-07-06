@@ -1,0 +1,9 @@
+document: rfc-8879
+kind: security-consideration
+summary: The underlying compression algorithm MUST output the same data as provided by the peer; any deviation is a security violation. Since certificate chains are per-server-name or per-user, a malicious application cannot control individual Certificate message fragments and cannot leak information by modifying plaintext.
+section: "5"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
