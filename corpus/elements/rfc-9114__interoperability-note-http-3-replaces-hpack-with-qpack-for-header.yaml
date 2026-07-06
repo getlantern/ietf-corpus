@@ -1,0 +1,9 @@
+document: rfc-9114
+kind: interoperability-note
+summary: HTTP/3 replaces HPACK with QPACK for header compression because HPACK requires in-order delivery of compressed field sections, a guarantee QUIC does not provide. QPACK uses separate unidirectional streams to modify and track field table state while encoded field sections only reference, not modify, the table.
+section: "2"
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

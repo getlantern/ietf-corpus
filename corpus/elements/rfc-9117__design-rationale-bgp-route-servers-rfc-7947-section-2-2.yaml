@@ -1,0 +1,9 @@
+document: rfc-9117
+kind: design-rationale
+summary: BGP route servers (RFC 7947 Section 2.2.2.1) do not insert their own AS number into AS_PATH by design, causing the original RFC 8955 rule—which requires the neighboring AS in the left-most position—to block Flow Specification exchange at Internet exchanges. The revised rule compares only the left-most AS in AS_PATH against the left-most AS of the best-match unicast route to permit route server peering.
+section: "4.2"
+topics:
+    - bgp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

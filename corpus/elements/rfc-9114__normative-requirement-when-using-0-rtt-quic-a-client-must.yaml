@@ -1,0 +1,11 @@
+document: rfc-9114
+kind: normative-requirement
+summary: When using 0-RTT QUIC, a client MUST comply with stored server settings (or default values if none stored). If a server accepts 0-RTT but then sends a SETTINGS frame that reduces limits or omits previously non-default values, this MUST be treated as a connection error of type H3_SETTINGS_ERROR.
+section: 7.2.4.2
+rfc2119_level: MUST
+topics:
+    - http
+    - quic
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9117
+kind: design-rationale
+summary: The RFC 8955 validation procedure requires the Flow Specification originator to match the best-match unicast route originator, which fails when Flow Specifications are originated from a centralized BGP route controller within the Local Domain that is not in the data forwarding path. This modification relaxes intra-domain validation to enable centralized origination without requiring each ASBR to originate its own Flow Specifications.
+section: "1"
+topics:
+    - bgp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

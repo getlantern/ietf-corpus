@@ -1,0 +1,10 @@
+document: rfc-9114
+kind: security-consideration
+summary: Compression of HTTP fields using QPACK can enable attacks similar to CRIME/BREACH against TLS-protected connections when secrets and attacker-controlled data share the same compression context. Implementations SHOULD be cautious about compressing content that includes secret data alongside user-controlled data.
+section: "10.6"
+topics:
+    - http
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

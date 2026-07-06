@@ -1,0 +1,11 @@
+document: rfc-9115
+kind: security-consideration
+summary: The IdO MUST ensure each NDC account is associated with exact delegation policies (via matching 'delegation' objects) defining which domain names can be delegated and how; out-of-band means are expected to preregister each NDC. The ACME account key pair's security is critical since delegation bypasses the normal ACME authorization challenge procedures.
+section: "7.2"
+topics:
+    - acme
+    - pkix
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

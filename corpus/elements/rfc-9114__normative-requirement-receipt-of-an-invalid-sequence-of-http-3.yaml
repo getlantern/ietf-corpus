@@ -1,0 +1,10 @@
+document: rfc-9114
+kind: normative-requirement
+summary: Receipt of an invalid sequence of HTTP/3 frames MUST be treated as a connection error of type H3_FRAME_UNEXPECTED. In particular, a DATA frame before any HEADERS frame, or a HEADERS or DATA frame after the trailing HEADERS frame, is considered invalid.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

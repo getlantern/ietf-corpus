@@ -1,0 +1,9 @@
+document: rfc-9115
+kind: design-rationale
+summary: The interactive identifier authorization phase of ACME (RFC 8555 Section 7.5) is suppressed on the NDC-IdO side because the delegated identity in the NDC's CSR is validated against the configured CSR template rather than via DNS/HTTP challenges, so the NDC sends the 'finalize' request immediately after Order1 is acknowledged.
+section: "2.2"
+topics:
+    - acme
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

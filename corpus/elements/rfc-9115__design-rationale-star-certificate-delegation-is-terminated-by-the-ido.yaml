@@ -1,0 +1,10 @@
+document: rfc-9115
+kind: design-rationale
+summary: STAR certificate delegation is terminated by the IdO canceling automatic renewal (letting the short-lived cert expire), rather than by revocation, because STAR explicitly disables the revokeCert interface; non-STAR delegation is terminated by explicit revocation via the CA's 'revokeCert' URL.
+section: 2.3.6
+topics:
+    - acme
+    - pkix
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9114
+kind: design-rationale
+summary: HTTP/3 uses QUIC stream multiplexing directly rather than adding its own multiplexing layer. Because QUIC provides per-stream reliability and connection-wide congestion control, head-of-line blocking across streams caused by TCP packet loss in HTTP/2 is eliminated.
+section: "1.2"
+topics:
+    - http
+    - quic
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,12 @@
+document: rfc-9115
+kind: security-consideration
+summary: 'To prevent a rogue CDN from obtaining unauthorized certificates, the domain holder should: (1) ensure only it can modify DNS records, (2) use a CAA record restricting issuance to specific CAs that implement RFC 8657, and (3) use the ACME-specific CAA mechanism to restrict issuance to a specific CA account and require ''dns-01'' as the sole validation method.'
+section: "7.4"
+topics:
+    - acme
+    - pkix
+    - security
+    - tls
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

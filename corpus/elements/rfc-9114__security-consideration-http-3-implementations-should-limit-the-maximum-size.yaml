@@ -1,0 +1,9 @@
+document: rfc-9114
+kind: security-consideration
+summary: HTTP/3 implementations should limit the maximum size of field sections they accept. Large or unbounded field sections can be used as a denial-of-service vector. The SETTINGS_MAX_FIELD_SECTION_SIZE parameter communicates this limit; servers may send HTTP 431 when exceeded.
+section: 10.5.1
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

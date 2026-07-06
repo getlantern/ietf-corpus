@@ -1,0 +1,10 @@
+document: rfc-9114
+kind: security-consideration
+summary: Clients MUST verify that the server certificate is an acceptable match for the URI's origin using the process in Section 4.3.4 of [HTTP]. If verification fails, the client MUST NOT consider the server authoritative for that origin. For connection reuse with a new origin, the same certificate validation process applies.
+section: "10.1"
+topics:
+    - http
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

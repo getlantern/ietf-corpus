@@ -1,0 +1,11 @@
+document: rfc-9114
+kind: normative-requirement
+summary: Unless some other mechanism is used to select HTTP/3, the token 'h3' MUST be used in the ALPN extension during the TLS handshake. HTTP/3 clients MUST support a mechanism to indicate the target host; if the server is identified by a domain name, clients MUST send the SNI TLS extension.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - http
+    - quic
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

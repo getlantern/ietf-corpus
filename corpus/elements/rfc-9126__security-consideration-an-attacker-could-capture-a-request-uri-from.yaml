@@ -1,0 +1,9 @@
+document: rfc-9126
+kind: security-consideration
+summary: An attacker could capture a request URI from one authorization request and substitute it into a different one (e.g., downgrading authentication assurance level). Clients SHOULD use PKCE, a unique 'state' parameter, or the OIDC 'nonce' parameter in the pushed Request Object to prevent this attack.
+section: "7.5"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

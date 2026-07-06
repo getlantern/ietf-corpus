@@ -1,0 +1,9 @@
+document: rfc-9125
+kind: design-rationale
+summary: BGP Add-Paths is insufficient for multi-gateway site interconnection because ASBRs reset the next hop when redistributing routes across AS boundaries, causing the original gateway identity to be lost. Additionally, Add-Paths experiences scaling issues across multiple ASes. The Tunnel Encapsulation attribute approach preserves all gateway information regardless of next-hop changes.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9114
+kind: wire-format
+summary: 'All HTTP/3 frames share a common layout: Type (variable-length integer), Length (variable-length integer describing payload length in bytes), and Frame Payload (variable-length bytes). A frame payload that contains extra bytes or terminates early MUST be treated as a connection error of type H3_FRAME_ERROR.'
+section: "7.1"
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

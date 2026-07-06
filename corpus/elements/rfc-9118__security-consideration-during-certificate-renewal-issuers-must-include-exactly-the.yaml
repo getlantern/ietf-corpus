@@ -1,0 +1,10 @@
+document: rfc-9118
+kind: security-consideration
+summary: During certificate renewal, issuers must include exactly the same EnhancedJWTClaimConstraints extension in the new certificate as in the old one. Differing constraints across two simultaneously valid certificates with the same public key can cause inconsistent PASSporT validation outcomes.
+section: "8"
+topics:
+    - jose
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9114
+kind: normative-requirement
+summary: Endpoints MUST NOT initiate new requests or promise new pushes on the connection after receipt of a GOAWAY frame from the peer. The identifier in each successive GOAWAY frame MUST NOT be greater than any previously sent identifier; a larger identifier MUST be treated as a connection error of type H3_ID_ERROR.
+section: "5.2"
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

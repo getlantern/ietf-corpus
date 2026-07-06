@@ -1,0 +1,9 @@
+document: rfc-9125
+kind: design-rationale
+summary: Each gateway advertises a Tunnel Encapsulation attribute that is the union of all active gateways' Tunnel Encapsulation attributes for the same site. This ensures that even if only one route to a prefix reaches a remote site (due to BGP best-path selection), the remote site still learns all possible gateways and can load-balance or select among them.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9127
+kind: interoperability-note
+summary: 'BFD packet transmission and reception on an interface depends on enabling flags from other YANG modules: /if:interfaces/if:interface/if:enabled (ietf-interfaces), /ip:ipv4/ip:enabled and /ip:ipv4/ip:forwarding (ietf-ip), and /mpls:mpls-enabled (ietf-mpls). Setting any of these to false prevents BFD packets on that interface.'
+section: "2.10"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

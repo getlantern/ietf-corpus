@@ -1,0 +1,10 @@
+document: rfc-9114
+kind: security-consideration
+summary: HTTP/3 is vulnerable to cross-protocol attacks if an attacker can cause a non-HTTP/3 server to respond to HTTP/3 frames. The use of TLS with ALPN negotiation of 'h3' mitigates this by ensuring the peer has selected HTTP/3 explicitly.
+section: "10.2"
+topics:
+    - http
+    - security
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

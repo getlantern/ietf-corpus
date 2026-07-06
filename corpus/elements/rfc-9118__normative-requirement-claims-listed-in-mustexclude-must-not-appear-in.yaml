@@ -1,0 +1,11 @@
+document: rfc-9118
+kind: normative-requirement
+summary: Claims listed in mustExclude MUST NOT appear in the PASSporT. The baseline PASSporT claims (iat, orig, dest) are always permitted and MUST NOT be part of the mustExclude list; if they appear there, the certificate MUST be treated as if the extension was not present.
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - jose
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

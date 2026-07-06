@@ -1,0 +1,9 @@
+document: rfc-9114
+kind: design-rationale
+summary: A pair of unidirectional streams is used for the control channel rather than a single bidirectional stream, allowing either peer to send data as soon as it is able. Depending on whether 0-RTT is available, either client or server might be able to send stream data first.
+section: 6.2.1
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

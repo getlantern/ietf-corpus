@@ -1,0 +1,10 @@
+document: rfc-9114
+kind: normative-requirement
+summary: Each push ID MUST only be used once in a push stream header. A client detecting that a push stream header includes a push ID used in another push stream header MUST treat this as a connection error of type H3_ID_ERROR. A MAX_PUSH_ID frame cannot reduce the maximum push ID.
+section: 6.2.2
+rfc2119_level: MUST
+topics:
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

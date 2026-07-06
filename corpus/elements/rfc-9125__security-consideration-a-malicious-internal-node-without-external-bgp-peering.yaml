@@ -1,0 +1,10 @@
+document: rfc-9125
+kind: security-consideration
+summary: A malicious internal node without external BGP peering may get itself advertised as a gateway by speaking BGP to genuine gateways within the site, causing those gateways to include it in externally advertised Tunnel Encapsulation attributes. This allows the malicious node to attract traffic without requiring secure BGP peerings with out-of-site nodes.
+section: "8"
+topics:
+    - security
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

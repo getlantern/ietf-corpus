@@ -1,0 +1,9 @@
+document: rfc-9117
+kind: security-consideration
+summary: 'Making the original RFC 4271 Section 6.3 AS_PATH rule optional for Flow Specification introduces risk: a rogue AS X speaker peering with a route server could advertise a Flow Specification with AS Y as the left-most AS_PATH entry; if Y is also the left-most AS of the best-match unicast route, downstream routers will validate and accept the rogue Flow Specification. This risk is unavoidable for route server peers.'
+section: "7"
+topics:
+    - bgp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

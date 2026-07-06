@@ -1,0 +1,9 @@
+document: rfc-9117
+kind: security-consideration
+summary: If configuration or other means indicate that an eBGP peer is not a route server, the original RFC 4271 Section 6.3 AS_PATH rule SHOULD be enforced for unicast and/or Flow Specification routes (enforcing it on either address family alone is sufficient). If the peer status is unknown or ambiguous, that rule SHOULD NOT be enforced.
+section: "7"
+topics:
+    - bgp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
