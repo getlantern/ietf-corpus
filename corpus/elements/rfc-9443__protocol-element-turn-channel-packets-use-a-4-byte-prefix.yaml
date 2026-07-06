@@ -1,0 +1,10 @@
+document: rfc-9443
+kind: protocol-element
+summary: TURN channel packets use a 4-byte prefix (versus the 36-byte STUN overhead) and have first-byte values in [64..79]. Disambiguation from QUIC packets in the same range is achieved by checking whether the source IP address and port match a TURN server that previously responded to allocation or channel-binding requests.
+section: "2"
+topics:
+    - nat
+    - quic
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

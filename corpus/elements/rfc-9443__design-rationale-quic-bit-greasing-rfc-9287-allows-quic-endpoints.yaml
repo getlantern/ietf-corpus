@@ -1,0 +1,8 @@
+document: rfc-9443
+kind: design-rationale
+summary: QUIC bit greasing (RFC 9287) allows QUIC endpoints to set the fixed QUIC bit to any value, which would cause QUIC packets to appear in byte ranges [0..63] or [128..191], colliding with STUN, ZRTP, DTLS, and RTP/RTCP ranges. The multiplexing scheme therefore requires grease_quic_bit to be disabled by endpoints that share a port.
+section: "1"
+topics:
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

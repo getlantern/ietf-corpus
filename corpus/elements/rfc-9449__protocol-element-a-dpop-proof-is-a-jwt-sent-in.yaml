@@ -1,0 +1,11 @@
+document: rfc-9449
+kind: protocol-element
+summary: A DPoP proof is a JWT sent in the DPoP HTTP header field, signed with a client-chosen private key. The JOSE Header MUST include typ (dpop+jwt), alg (asymmetric only), and jwk (public key in JWK format, no private key). The payload MUST include jti, htm, htu, and iat claims.
+section: "4.2"
+topics:
+    - oauth
+    - jose
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

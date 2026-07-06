@@ -1,0 +1,10 @@
+document: rfc-9449
+kind: security-consideration
+summary: Servers accepting DPoP proof JWTs MUST verify that the typ field is dpop+jwt in the JWT header to prevent signed JWTs created for other purposes (e.g., ID tokens) from being swapped in as DPoP proofs.
+section: "11.5"
+topics:
+    - oauth
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9451
+kind: normative-requirement
+summary: When SFC OAM data is included in the inner packet, the Next Protocol field is set to reflect the structure of that inner OAM packet. SFFs, SFC-aware SFs, and SFC Proxies SHOULD discard any NSH packets with the O bit set and Next Protocol set to something that is not itself an OAM protocol, including Next Protocol values 0x01 (IPv4), 0x02 (IPv6), 0x03 (MPLS), or 0x05 (Ethernet).
+section: "3"
+rfc2119_level: SHOULD
+topics:
+    - measurement
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

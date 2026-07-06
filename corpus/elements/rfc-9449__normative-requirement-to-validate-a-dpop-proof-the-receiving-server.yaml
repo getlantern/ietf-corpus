@@ -1,0 +1,12 @@
+document: rfc-9449
+kind: normative-requirement
+summary: 'To validate a DPoP proof, the receiving server MUST verify: no more than one DPoP header, well-formed JWT, all required claims present, typ is dpop+jwt, alg is acceptable asymmetric algorithm, signature verifies with jwk, jwk contains no private key, htm and htu match the current request, nonce matches if provided, iat is within acceptable window, and (for protected resources) ath matches the access token hash and public keys match.'
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - jose
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

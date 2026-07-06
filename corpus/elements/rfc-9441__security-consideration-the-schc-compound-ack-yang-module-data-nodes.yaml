@@ -1,0 +1,10 @@
+document: rfc-9441
+kind: security-consideration
+summary: 'The SCHC Compound ACK YANG module data nodes controlling F/R mode and Compound ACK configuration are sensitive: an attacker modifying another device''s Rules could block communication or generate extra ACKs. Access MUST be restricted so a device can only modify its own Rules on the remote SCHC instance, with requester identity validated via certificates or access lists. NETCONF/RESTCONF access to the module MUST use SSH or TLS as the secure transport.'
+section: "7"
+topics:
+    - security
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

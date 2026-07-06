@@ -1,0 +1,9 @@
+document: rfc-9442
+kind: security-consideration
+summary: Sigfox authenticates each message using the device's unique Device ID and an AES-128-based message authentication code, ensuring messages originate from the claimed device or network. Application data may optionally be encrypted using AES-128 in counter mode with per-device keys; confidentiality is not mandatory. The radio protocol includes replay-attack protections and the cloud network provides firewall protection.
+section: "6"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

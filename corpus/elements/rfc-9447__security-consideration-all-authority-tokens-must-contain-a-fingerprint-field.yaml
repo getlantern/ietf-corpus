@@ -1,0 +1,11 @@
+document: rfc-9447
+kind: security-consideration
+summary: All Authority Tokens MUST contain a fingerprint field identifying the ACME client that requested the token, and MUST specify an expiry. ACME services SHOULD NOT issue certificates with a longer expiry than the Authority Token's expiry.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - acme
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

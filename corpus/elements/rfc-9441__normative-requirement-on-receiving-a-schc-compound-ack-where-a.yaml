@@ -1,0 +1,7 @@
+document: rfc-9441
+kind: normative-requirement
+summary: On receiving a SCHC Compound ACK where a W field corresponds to the last window with C bit set, the sender MAY exit successfully. If C bit is not set and the profile mandates the last tile in All-1, but the Compound ACK shows no missing tiles, the sender MUST send a SCHC Sender-Abort; otherwise it MUST send SCHC Fragments for all missing tiles reported.
+section: 3.2.1.1
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

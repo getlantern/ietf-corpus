@@ -1,0 +1,10 @@
+document: rfc-9448
+kind: design-rationale
+summary: The fingerprint in the token request is explicitly not meant to be verified by the Token Authority. Instead, it is signed as part of the token so that the ACME server can verify the token was requested and used by the same party that controls the ACME client, binding the token to a specific account.
+section: "5.6"
+topics:
+    - acme
+    - voip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,6 @@
+document: rfc-9441
+kind: wire-format
+summary: The SCHC Compound ACK message format contains a SCHC ACK Header (RuleID, DTag, W=w1, C=0) followed by a bitmap for the first window with losses, then repeated (W=wi, Bitmap) pairs for each additional window with losses, ordered from lowest to highest window number, terminated by M zero bits if needed to signal end-of-message before L2 Word padding.
+section: "3.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9448
+kind: protocol-element
+summary: The Token Authority provides tokens via a RESTful HTTP POST to '/at/account/:id/token'. The request body MUST contain a JSON object with 'tktype', 'tkvalue', 'ca', and 'fingerprint' key-value pairs. A successful response returns HTTP 200 with a JSON body containing a 'token' key holding the base64url-encoded atc token.
+section: "5.5"
+topics:
+    - acme
+    - voip
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

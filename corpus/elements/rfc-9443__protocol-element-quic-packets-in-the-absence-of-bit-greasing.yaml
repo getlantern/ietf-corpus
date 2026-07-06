@@ -1,0 +1,9 @@
+document: rfc-9443
+kind: protocol-element
+summary: QUIC packets (in the absence of bit greasing) are assigned first-byte ranges [80..127] and [192..255] exclusively. The range [64..79], previously reserved solely for TURN channels, now also maps to QUIC when the source IP address and port do not match a responding TURN server.
+section: "3"
+topics:
+    - quic
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

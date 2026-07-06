@@ -1,0 +1,10 @@
+document: rfc-9444
+kind: security-consideration
+summary: When comparing domains to determine if one is a subdomain of another, implementations MUST compare entire DNS labels and not rely on string prefix matches, as prefix matching may yield incorrect results (e.g., ooo.example.com must not be considered a subdomain of oo.example.com).
+section: "7.2"
+topics:
+    - acme
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

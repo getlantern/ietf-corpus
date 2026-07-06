@@ -1,0 +1,10 @@
+document: rfc-9449
+kind: security-consideration
+summary: If untrusted code (e.g., via XSS) runs in the client's execution context, DPoP security is not guaranteed. If the private key is non-extractable (e.g., stored in a hardware/software security module), key exfiltration is prevented, but an online attacker can still create fresh DPoP proofs. Content Security Policy is recommended as a second layer of defense.
+section: "11.4"
+topics:
+    - oauth
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

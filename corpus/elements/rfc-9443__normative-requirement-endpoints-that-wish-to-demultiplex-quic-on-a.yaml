@@ -1,0 +1,11 @@
+document: rfc-9443
+kind: normative-requirement
+summary: Endpoints that wish to demultiplex QUIC on a shared socket MUST NOT send the grease_quic_bit transport parameter, as defined in RFC 9287. This is required because QUIC bit greasing makes the first-octet-based demultiplexing scheme unreliable.
+section: "1"
+rfc2119_level: MUST NOT
+topics:
+    - quic
+    - webrtc
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-9443
+kind: wire-format
+summary: 'The updated demultiplexing algorithm inspects the first byte of each arriving packet: [0..3] → STUN; [4..15] → DROP; [16..19] → ZRTP; [20..63] → DTLS; [64..79] → TURN Channel if source matches a responding TURN server, else QUIC; [80..127] → QUIC; [128..191] → RTP/RTCP; [192..255] → QUIC.'
+section: "3"
+topics:
+    - quic
+    - rtp
+    - webrtc
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

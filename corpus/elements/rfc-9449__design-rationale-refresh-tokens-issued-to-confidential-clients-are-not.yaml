@@ -1,0 +1,9 @@
+document: rfc-9449
+kind: design-rationale
+summary: Refresh tokens issued to confidential clients are not bound to the DPoP proof public key because they are already sender-constrained via client authentication. Existing OAuth 2.0 binding to client_id with authentication is more flexible (allows credential rotation) than binding to a specific public key.
+section: "5"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

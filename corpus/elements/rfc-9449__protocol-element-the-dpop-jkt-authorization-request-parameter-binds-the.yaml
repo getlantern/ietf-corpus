@@ -1,0 +1,10 @@
+document: rfc-9449
+kind: protocol-element
+summary: The dpop_jkt authorization request parameter binds the authorization code to a DPoP key. Its value is the JWK Thumbprint (SHA-256) of the proof-of-possession public key, the same value used for the jkt confirmation method. The authorization server MUST reject token requests where this value does not match the DPoP proof key.
+section: "10"
+topics:
+    - oauth
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9443
+kind: design-rationale
+summary: The 64–79 overlap between TURN channel packets and QUIC short-header packets does not require a protocol-level fix because TURN channel packets will only arrive from a TURN server to which the client has previously sent allocation and channel-binding requests. Other protocol types (SRTP, DTLS, QUIC) will never arrive from such a source address, so source-address checking provides unambiguous demultiplexing.
+section: "2"
+topics:
+    - quic
+    - nat
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

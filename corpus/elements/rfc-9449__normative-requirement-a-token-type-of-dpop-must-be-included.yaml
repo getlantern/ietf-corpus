@@ -1,0 +1,10 @@
+document: rfc-9449
+kind: normative-requirement
+summary: A token_type of DPoP MUST be included in the access token response to signal to the client that the access token is bound to its DPoP key. If the access token response contains a different token_type, the client MUST discard the response if DPoP protection is required for the application.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

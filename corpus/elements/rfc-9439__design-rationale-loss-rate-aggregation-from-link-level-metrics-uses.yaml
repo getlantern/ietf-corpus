@@ -1,0 +1,8 @@
+document: rfc-9439
+kind: design-rationale
+summary: Loss rate aggregation from link-level metrics uses sum of link loss rates only when rates are low and uncorrelated. When link loss rates are high but independent, end-to-end loss is computed as one minus the product of per-link success rates. Correlated loss requires more complex handling.
+section: 4.4.4
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

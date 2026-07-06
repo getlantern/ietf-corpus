@@ -1,0 +1,7 @@
+document: rfc-9441
+kind: normative-requirement
+summary: On receiving a SCHC ACK REQ or All-1 SCHC Fragment, if the receiver knows of windows with missing tiles, it MUST return a SCHC Compound ACK for the missing tiles starting from the lowest-numbered window. Otherwise, if it has received at least one tile, it MUST return a SCHC Compound ACK for the highest-numbered window; otherwise it MUST return one for window 0.
+section: 3.2.1.2
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

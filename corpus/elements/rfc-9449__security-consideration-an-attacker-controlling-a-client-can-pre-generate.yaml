@@ -1,0 +1,9 @@
+document: rfc-9449
+kind: security-consideration
+summary: An attacker controlling a client can pre-generate DPoP proofs with future iat values and exfiltrate them for later use without the private key. Server-provided unpredictable nonces prevent this attack by limiting proof lifetime. Deployments without nonces SHOULD NOT issue long-lived DPoP-constrained access tokens.
+section: "11.2"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

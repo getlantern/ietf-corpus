@@ -1,0 +1,6 @@
+document: rfc-9441
+kind: design-rationale
+summary: Intermediate bitmaps in the SCHC Compound ACK are prohibited from using compressed bitmap format (they MUST be full WINDOW_SIZE) to ensure unambiguous parsing of the variable-length message, since only the last bitmap has a known boundary from L2 Word alignment or the M-zero-bits terminator.
+section: "3.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

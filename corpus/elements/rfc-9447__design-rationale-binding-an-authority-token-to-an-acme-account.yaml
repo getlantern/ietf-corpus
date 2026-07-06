@@ -1,0 +1,9 @@
+document: rfc-9447
+kind: design-rationale
+summary: Binding an Authority Token to an ACME account fingerprint (rather than a per-challenge nonce) allows the token to be reused across multiple challenges within its lifetime. This is intentional for short-lived certificate workflows where challenges are issued more frequently than tokens should be refreshed.
+section: "3.3"
+topics:
+    - acme
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

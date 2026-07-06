@@ -1,0 +1,6 @@
+document: rfc-9441
+kind: design-rationale
+summary: The SCHC Compound ACK is designed to reduce the number of uplink transmissions in ACK-on-Error mode on LPWAN networks, where downlink capacity is scarce. In the RFC 8724 baseline, fragment losses spanning multiple windows require one failure SCHC ACK per window; the Compound ACK collapses these into a single message, reducing overhead proportionally to the number of windows with losses.
+section: "1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9448
+kind: state-machine
+summary: 'Upon receiving a challenge response, the ACME server performs a nine-step validation process: verify ''atc'' JSON structure, verify ''x5u''/''x5c'' certificate references, verify the token signature, verify ''tktype'' equals ''TNAuthList'', verify ''tkvalue'' matches the original challenge identifier, verify remaining claims (expiry, etc.), verify ''fingerprint'' matches the ACME client account key, and verify ''ca'' flag matches the CSR. If all steps pass, the challenge status transitions to ''valid''; any failure transitions it to ''invalid''.'
+section: "6"
+topics:
+    - acme
+    - voip
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

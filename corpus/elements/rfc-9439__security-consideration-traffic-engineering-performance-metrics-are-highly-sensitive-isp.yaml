@@ -1,0 +1,11 @@
+document: rfc-9439
+kind: security-consideration
+summary: Traffic engineering performance metrics are highly sensitive ISP information. ALTO servers MUST use HTTPS and TLS (RFC 8446) and SHOULD authenticate ALTO clients before transmitting resources containing sensitive TE performance metrics such as numerical delay, loss, or bandwidth values. Sharing such values requires full mutual trust between server and client operators.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - security
+    - tls
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

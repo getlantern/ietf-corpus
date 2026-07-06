@@ -1,0 +1,10 @@
+document: rfc-9449
+kind: security-consideration
+summary: DPoP does not ensure integrity of the request payload or general headers — only the HTTP URI and method are covered by the DPoP proof. This is an intentional design decision to keep DPoP simple; TLS is relied upon for message integrity.
+section: "11.7"
+topics:
+    - oauth
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

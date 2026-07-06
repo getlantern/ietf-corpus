@@ -1,0 +1,6 @@
+document: rfc-9441
+kind: design-rationale
+summary: The end-of-message signaling in the SCHC Compound ACK uses M zero bits (or implicit termination when padding is less than M bits) rather than an explicit length field. This approach works because window number 0, when present, is always placed first in the header, so M zero bits appearing later unambiguously signal end-of-message rather than window 0.
+section: "3.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9449
+kind: normative-requirement
+summary: When Pushed Authorization Requests are used with DPoP, an authorization server that supports both PAR and DPoP MUST support both the dpop_jkt parameter and the DPoP header in the PAR request. If both are used simultaneously, the server MUST reject the request if the JWK Thumbprints do not match.
+section: "10.1"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9449
+kind: security-consideration
+summary: Servers MUST only accept DPoP proofs for a limited time after their creation (preferably seconds or minutes) to prevent replay of captured DPoP proof JWTs at the same endpoint. Servers may store jti values for the validity window to enforce single-use, though this may not be feasible with stateless distributed servers.
+section: "11.1"
+topics:
+    - oauth
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

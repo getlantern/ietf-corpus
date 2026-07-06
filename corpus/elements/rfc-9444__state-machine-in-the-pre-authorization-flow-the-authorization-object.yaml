@@ -1,0 +1,10 @@
+document: rfc-9444
+kind: state-machine
+summary: In the pre-authorization flow, the authorization object starts in 'pending' state after creation. Once the ACME server validates the DNS challenge (or HTTP challenge), it transitions the authorization object and associated challenge object to 'valid' state. If validation is slow, the server may return 'processing' and the client must poll.
+section: "5"
+topics:
+    - acme
+    - pkix
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

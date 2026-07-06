@@ -1,0 +1,9 @@
+document: rfc-9451
+kind: design-rationale
+summary: RFC 8300 defined the O bit as indicating 'an OAM packet' without clarifying that such a packet must exclusively carry OAM data. RFC 9451 updates this to require that an NSH OAM packet contain only SFC OAM data, resolving ambiguity about mixed user-data/OAM packets and preventing non-deterministic behavior at SFC data plane elements.
+section: "1"
+topics:
+    - measurement
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

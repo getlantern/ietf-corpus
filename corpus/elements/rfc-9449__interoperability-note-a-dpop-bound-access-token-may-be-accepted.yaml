@@ -1,0 +1,10 @@
+document: rfc-9449
+kind: interoperability-note
+summary: A DPoP-bound access token may be accepted by a Bearer-only resource server unaware of DPoP, since JWT specs say to ignore unrecognized claims and RFC 6750 is silent on token content. This simplifies phased upgrades and mixed deployments, but requires DPoP-aware servers to explicitly reject DPoP tokens presented as Bearer tokens.
+section: "7.2"
+topics:
+    - oauth
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

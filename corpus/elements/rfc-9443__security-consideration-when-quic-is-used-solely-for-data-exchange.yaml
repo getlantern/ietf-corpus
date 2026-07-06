@@ -1,0 +1,12 @@
+document: rfc-9443
+kind: security-consideration
+summary: When QUIC is used solely for data exchange, the TLS-within-QUIC handshake (RFC 9001) derives keys that protect only QUIC data packets and should not affect SRTP transport or DTLS-SRTP key derivation. However, if a future specification were to derive SRTP keys from the TLS-within-QUIC exchange, a vulnerability in the QUIC implementation could compromise both transport and SRTP key derivation.
+section: "4"
+topics:
+    - security
+    - quic
+    - tls
+    - rtp
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
