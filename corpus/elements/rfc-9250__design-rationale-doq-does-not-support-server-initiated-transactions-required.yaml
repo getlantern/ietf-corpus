@@ -1,0 +1,9 @@
+document: rfc-9250
+kind: design-rationale
+summary: DoQ does not support server-initiated transactions (required by DNS Stateful Operations, DSO/RFC 8490) because QUIC does not guarantee in-order delivery of messages, which is a criterion for applicable DSO transports. Only the initiator of the DoQ connection may send queries over it.
+section: "3.4"
+topics:
+    - dns
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

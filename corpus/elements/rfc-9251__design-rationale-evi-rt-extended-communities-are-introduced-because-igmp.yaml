@@ -1,0 +1,9 @@
+document: rfc-9251
+kind: design-rationale
+summary: EVI-RT Extended Communities are introduced because IGMP Membership Report Synch and Leave Synch routes must be distributed only to PEs on the same ES (via ES-Import RT), not all PEs of the EVI, so the standard EVI RT cannot be used. A separate EC that identifies the EVI without influencing distribution is necessary.
+section: "9.5"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

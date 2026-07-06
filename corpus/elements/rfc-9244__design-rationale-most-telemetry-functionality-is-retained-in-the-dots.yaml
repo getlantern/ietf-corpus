@@ -1,0 +1,8 @@
+document: rfc-9244
+kind: design-rationale
+summary: Most telemetry functionality is retained in the DOTS signal channel rather than the data channel, even though the data channel normally handles bulk data. This is because telemetry about ongoing attacks must be available during an attack when the data channel may be impaired. The attack mapping database (Section 8.1.6) is the one exception, using the data channel for pre-population during idle time.
+section: "4.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

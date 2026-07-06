@@ -1,0 +1,9 @@
+document: rfc-9251
+kind: normative-requirement
+summary: An IGMPv2 Membership Report MUST NOT be sent on an AC that does not lead to a CE multicast router, because IGMPv2 hosts suppress their own Membership Reports upon receiving one for the same group, which would prevent the PE from forwarding multicast data to those hosts.
+section: 4.1.1
+rfc2119_level: MUST NOT
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

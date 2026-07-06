@@ -1,0 +1,10 @@
+document: rfc-9250
+kind: normative-requirement
+summary: DoQ servers MUST be able to handle multiple concurrent IXFR and AXFR requests on a single QUIC connection. Implementations SHOULD use the same QUIC connection for both AXFR and IXFR requests to the same primary, send requests in parallel without waiting for prior responses, and interleave response streams as they become available.
+section: "5.7"
+rfc2119_level: MUST
+topics:
+    - dns
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

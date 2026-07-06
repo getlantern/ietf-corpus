@@ -1,0 +1,10 @@
+document: rfc-9244
+kind: design-rationale
+summary: The DOTS telemetry YANG module uses 'enumerations' rather than 'identities' to define units, samples, and intervals. Using 'identities' would require the namespace identifier 'ietf-dots-telemetry' to be included in every telemetry attribute value, significantly increasing message size — contrary to the compactness requirement for DOTS signal channel messages.
+section: "4.4"
+topics:
+    - yang
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

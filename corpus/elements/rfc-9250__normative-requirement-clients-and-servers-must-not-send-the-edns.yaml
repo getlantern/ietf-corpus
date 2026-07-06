@@ -1,0 +1,10 @@
+document: rfc-9250
+kind: normative-requirement
+summary: Clients and servers MUST NOT send the edns-tcp-keepalive EDNS(0) Option (RFC 7828) in any messages on a DoQ connection, as it is specific to TCP/TLS transport; receiving it is a fatal protocol error. Clients wanting long-duration connections SHOULD use QUIC's idle timeout mechanisms instead.
+section: 5.5.2
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

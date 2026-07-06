@@ -1,0 +1,8 @@
+document: rfc-9251
+kind: interoperability-note
+summary: When a PE receives an EVPN SMET route with more than one version flag set (e.g., both v2 and v3), there must be no source IP address in the route. If there is a source IP address in such a route, an error SHOULD be logged. The PE MUST generate an IGMP Membership Report for each version indicated.
+section: 4.1.1
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

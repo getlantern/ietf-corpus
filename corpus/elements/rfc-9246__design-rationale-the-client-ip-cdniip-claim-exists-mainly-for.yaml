@@ -1,0 +1,10 @@
+document: rfc-9246
+kind: design-rationale
+summary: The Client IP (cdniip) claim exists mainly for legacy feature parity. Its use is NOT RECOMMENDED at large because IP addresses can change mid-session (dual-stack, MPTCP, QUIC, Wi-Fi-to-cellular handoff) and the claim only makes sense for controlled internal preview scenarios where the client IP is stable.
+section: 2.1.10
+topics:
+    - privacy
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

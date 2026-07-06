@@ -1,0 +1,11 @@
+document: rfc-9250
+kind: normative-requirement
+summary: The 0-RTT mechanism MUST NOT be used to send DNS requests that are not replayable transactions. Only QUERY and NOTIFY opcodes are considered replayable; all other OPCODES MUST NOT be sent in 0-RTT data. Servers supporting 0-RTT MUST NOT immediately process non-replayable transactions received in 0-RTT data and must queue them, refuse with REFUSED and EDE 'Too Early', or close the connection.
+section: "4.5"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - quic
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

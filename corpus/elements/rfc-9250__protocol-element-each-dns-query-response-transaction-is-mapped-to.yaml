@@ -1,0 +1,9 @@
+document: rfc-9250
+kind: protocol-element
+summary: Each DNS query/response transaction is mapped to a separate client-initiated bidirectional QUIC stream. The client selects the next available stream for each query; the server uses the same stream for all responses to that query. STREAM FIN is used to signal completion of sending on each side. The client's first query is on stream 0, the second on stream 4, and so on.
+section: "4.2"
+topics:
+    - dns
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

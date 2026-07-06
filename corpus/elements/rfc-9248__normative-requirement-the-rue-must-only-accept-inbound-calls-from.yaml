@@ -1,0 +1,9 @@
+document: rfc-9248
+kind: normative-requirement
+summary: The RUE MUST only accept inbound calls from a proxy mentioned in the configuration. When multiple RUEs share the same SIP URI, the provider MUST parallel fork the incoming call to all registered RUEs, and MUST cancel other branches via CANCEL after the first 200 OK.
+section: 5.2.4
+rfc2119_level: MUST
+topics:
+    - sip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

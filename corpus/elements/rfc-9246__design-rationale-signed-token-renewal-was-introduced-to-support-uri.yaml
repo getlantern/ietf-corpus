@@ -1,0 +1,10 @@
+document: rfc-9246
+kind: design-rationale
+summary: Signed Token Renewal was introduced to support URI Signing for segmented content (MPEG-DASH, HLS) without embedding pre-signed URIs in manifest files. Embedding signed URIs in manifests would require CDNs to understand each segmentation protocol and would force long expiration windows (e.g., 30+ minutes for live streams), undermining the security value of short-lived tokens.
+section: "3.1"
+topics:
+    - security
+    - jose
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

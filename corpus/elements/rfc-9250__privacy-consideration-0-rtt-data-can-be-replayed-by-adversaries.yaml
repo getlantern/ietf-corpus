@@ -1,0 +1,10 @@
+document: rfc-9250
+kind: privacy-consideration
+summary: 0-RTT data can be replayed by adversaries, potentially revealing queried names via observation of recursive resolver outgoing traffic triggered by a replayed query. Only QUERY and NOTIFY are permitted in 0-RTT to limit server state changes. TLS 1.3 replay protection limits but does not eliminate this risk; the replay window is limited to clock skew and network transmission variance.
+section: "7.1"
+topics:
+    - dns
+    - quic
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

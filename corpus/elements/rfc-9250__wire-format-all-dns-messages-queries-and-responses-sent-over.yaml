@@ -1,0 +1,9 @@
+document: rfc-9250
+kind: wire-format
+summary: All DNS messages (queries and responses) sent over DoQ MUST be encoded as a 2-octet length field followed by the message content, exactly as specified for DNS over TCP in RFC 1035. The practical result is that each QUIC stream's content is identical to a TCP connection managing exactly one query.
+section: "4.2"
+topics:
+    - dns
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

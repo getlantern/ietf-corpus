@@ -1,0 +1,12 @@
+document: rfc-9250
+kind: normative-requirement
+summary: Implementations MUST protect against traffic analysis attacks by injecting padding, either using the EDNS(0) Padding Option (RFC 7830) per DNS message or via QUIC packet-level padding APIs. If QUIC packet-level padding is unavailable or unused, DoQ MUST pad all DNS queries and responses to a small set of fixed sizes using EDNS(0) padding; the padding policies of RFC 8467 SHOULD be followed.
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - dns
+    - quic
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

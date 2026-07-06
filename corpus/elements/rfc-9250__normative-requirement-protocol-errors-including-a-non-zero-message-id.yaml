@@ -1,0 +1,10 @@
+document: rfc-9250
+kind: normative-requirement
+summary: Protocol errors including a non-zero Message ID, receiving STREAM FIN before all bytes, multiple queries on one stream, use of edns-tcp-keepalive, unidirectional streams, or a server-initiated bidirectional stream are fatal. The peer SHOULD forcibly abort the connection using CONNECTION_CLOSE with error code DOQ_PROTOCOL_ERROR. Unknown error codes MUST be treated as equivalent to DOQ_UNSPECIFIED_ERROR.
+section: 4.3.3
+rfc2119_level: MUST
+topics:
+    - dns
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

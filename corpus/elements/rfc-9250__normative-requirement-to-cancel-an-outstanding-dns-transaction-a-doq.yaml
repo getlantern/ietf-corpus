@@ -1,0 +1,10 @@
+document: rfc-9250
+kind: normative-requirement
+summary: To cancel an outstanding DNS transaction, a DoQ client MUST issue a QUIC STOP_SENDING and SHOULD use error code DOQ_REQUEST_CANCELLED; the corresponding DNS transaction MUST be abandoned. Servers MUST NOT continue processing a transaction if they receive RESET_STREAM before STREAM FIN from the client, and MUST issue RESET_STREAM in response.
+section: 4.3.1
+rfc2119_level: MUST
+topics:
+    - dns
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

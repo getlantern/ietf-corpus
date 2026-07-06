@@ -1,0 +1,12 @@
+document: rfc-9250
+kind: normative-requirement
+summary: Clients SHOULD use resumption tickets only once (per RFC 8446 Appendix C.4) and SHOULD NOT use session resumption if connectivity has changed. Servers SHOULD issue session resumption tickets with a sufficiently long lifetime (e.g., 6 hours) and SHOULD implement anti-replay mechanisms from RFC 8446 Section 8. Address validation tokens SHOULD only be used in conjunction with session resumption.
+section: 5.5.3
+rfc2119_level: SHOULD
+topics:
+    - dns
+    - quic
+    - privacy
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

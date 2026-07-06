@@ -1,0 +1,9 @@
+document: rfc-9244
+kind: design-rationale
+summary: The 'ietf-dots-telemetry' YANG module omits 'key' statements from some lists because those keys appear as mandatory Uri-Path parameters in CoAP requests rather than in the message body. This avoids duplicating key fields in both the URI and the payload, reducing message size.
+section: "4.4"
+topics:
+    - yang
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

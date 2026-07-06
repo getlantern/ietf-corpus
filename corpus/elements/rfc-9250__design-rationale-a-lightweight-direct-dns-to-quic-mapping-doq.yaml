@@ -1,0 +1,10 @@
+document: rfc-9250
+kind: design-rationale
+summary: A lightweight direct DNS-to-QUIC mapping (DoQ) is preferred over DNS over HTTPS (DoH with HTTP/3) for recursive-to-authoritative and zone transfer scenarios because these rarely involve intermediaries. The additional overhead of HTTP is not offset by proxying and caching benefits in these scenarios.
+section: "1"
+topics:
+    - dns
+    - quic
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

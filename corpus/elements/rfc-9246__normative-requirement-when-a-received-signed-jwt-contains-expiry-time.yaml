@@ -1,0 +1,10 @@
+document: rfc-9246
+kind: normative-requirement
+summary: When a received signed JWT contains Expiry Time, Not Before, Subject, Client IP, JWT ID, or Signed Token Depth claims, any subsequently generated JWT for CDNI redirection MUST also contain those claims with the same values. A redirection JWT MUST NOT add these claims if they were absent in the received JWT.
+section: 2.1.4
+rfc2119_level: MUST
+topics:
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

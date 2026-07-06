@@ -1,0 +1,9 @@
+document: rfc-9251
+kind: design-rationale
+summary: IGMP/MLD group state must be synchronized among all PEs serving the VPN (via SMET, Membership Report Synch, and Leave Synch routes) because EVPN's All-Active multihoming means different IGMP messages and their corresponding Leaves for the same flow can arrive at different PEs, making per-PE state inconsistent without explicit coordination.
+section: "6"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

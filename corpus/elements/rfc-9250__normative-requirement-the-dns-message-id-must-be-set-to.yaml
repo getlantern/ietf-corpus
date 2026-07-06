@@ -1,0 +1,10 @@
+document: rfc-9250
+kind: normative-requirement
+summary: The DNS Message ID MUST be set to 0 for all queries sent over DoQ connections. QUIC stream mapping provides unambiguous correlation of queries and responses, making the Message ID field unnecessary. When forwarding from another transport to DoQ, the Message ID MUST be set to 0; when forwarding from DoQ to another transport, a Message ID MUST be generated per that transport's rules.
+section: 4.2.1
+rfc2119_level: MUST
+topics:
+    - dns
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

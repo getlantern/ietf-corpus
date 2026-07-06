@@ -1,0 +1,11 @@
+document: rfc-9250
+kind: normative-requirement
+summary: DoQ implementations MUST conform to QUIC's address validation specification (RFC 9000 Section 8), which limits the worst-case amplification factor to 3. Implementations SHOULD consider configuring Address Validation using Retry Packets, imposing a 1-RTT delay for verifying the source address routability of a client.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - dns
+    - quic
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9246
+kind: security-consideration
+summary: 'A valid Signed URI is vulnerable to replay attacks. Mitigations include short exp/nbf windows and the jti (JWT ID) claim: the CDN stores all used jti values and MUST reject requests whose jti has been seen before. The jti list should be bounded by expiring entries based on the exp claim or using an LRU cache.'
+section: "7"
+topics:
+    - security
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

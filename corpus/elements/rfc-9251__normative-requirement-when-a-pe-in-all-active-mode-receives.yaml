@@ -1,0 +1,10 @@
+document: rfc-9251
+kind: normative-requirement
+summary: When a PE in All-Active mode receives an IGMP Membership Report for (x,G) on a multihomed ES and does not already have that state, it MUST instantiate the local IGMP Membership Request state and MUST advertise a BGP IGMP Membership Report Synch route carrying the ES-Import RT for that ES.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

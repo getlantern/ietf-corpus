@@ -1,0 +1,10 @@
+document: rfc-9250
+kind: privacy-consideration
+summary: Address validation tokens (NEW_TOKEN) are typically tied to IP addresses and may create linkability risk if clients inadvertently use them after changing location due to NAT or IPv6 address changes. Tokens should only be used in conjunction with session resumption to avoid introducing additional tracking risk beyond that already accepted.
+section: "7.3"
+topics:
+    - dns
+    - quic
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,10 @@
+document: rfc-9246
+kind: normative-requirement
+summary: URI Signing implementations MUST NOT allow for any time-synchronization 'leeway' for the Not Before (nbf) claim. If the Not Before time is later than the request time, the CDN MUST reject the request.
+section: 2.1.5
+rfc2119_level: MUST NOT
+topics:
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

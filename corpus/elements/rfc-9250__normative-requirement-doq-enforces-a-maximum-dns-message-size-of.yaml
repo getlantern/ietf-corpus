@@ -1,0 +1,10 @@
+document: rfc-9250
+kind: normative-requirement
+summary: DoQ enforces a maximum DNS message size of 65535 bytes, consistent with DNS over TCP and DoT. The EDNS(0) UDP message size parameter is ignored by DoQ; implementations always assume a maximum message size of 65535 bytes regardless of the EDNS(0) UDP size value advertised.
+section: "4.6"
+rfc2119_level: MUST
+topics:
+    - dns
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

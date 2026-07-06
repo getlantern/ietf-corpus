@@ -1,0 +1,10 @@
+document: rfc-9243
+kind: security-consideration
+summary: The YANG modules contain data nodes that are sensitive or vulnerable in a network management context. Write access to the dhcpv6-server, dhcpv6-relay, or dhcpv6-client containers allows modification of DHCPv6 service behavior; NACM should be used to limit access. The delete-address/prefix-lease RPCs carry nacm:default-deny-all to restrict administrative operations to authorized principals.
+section: "5"
+topics:
+    - yang
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

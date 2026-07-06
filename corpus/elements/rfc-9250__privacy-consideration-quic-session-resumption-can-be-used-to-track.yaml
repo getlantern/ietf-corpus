@@ -1,0 +1,11 @@
+document: rfc-9250
+kind: privacy-consideration
+summary: QUIC session resumption can be used to track clients across sessions if the same resumption token is used multiple times, or if the server correlates resumed sessions with initial sessions to build a virtual long-duration session. Mitigations include using tickets only once and refusing resumption when the client's IP address has changed.
+section: "7.2"
+topics:
+    - dns
+    - quic
+    - privacy
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

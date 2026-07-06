@@ -1,0 +1,8 @@
+document: rfc-9251
+kind: interoperability-note
+summary: When the first-hop PE receives IGMPv3 Membership Reports for (S,G), it MUST advertise the corresponding EVPN SMET route regardless of whether source S is locally attached, in order to facilitate source move in the future. The only valid version flag for (S,G) routes is v3; v2 flags MUST be set to 0.
+section: 4.1.1
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

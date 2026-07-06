@@ -1,0 +1,9 @@
+document: rfc-9246
+kind: security-consideration
+summary: A compromised symmetric signing key allows an attacker to embed arbitrarily expensive regular expressions in the cdniuc claim, forcing CDN verifiers to execute them and causing a denial-of-service. The document RECOMMENDS verifying JWT authenticity before evaluating regex patterns, and timely revocation of compromised keys.
+section: "7"
+topics:
+    - security
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

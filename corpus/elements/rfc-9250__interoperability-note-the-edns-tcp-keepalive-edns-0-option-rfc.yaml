@@ -1,0 +1,9 @@
+document: rfc-9250
+kind: interoperability-note
+summary: The edns-tcp-keepalive EDNS(0) Option (RFC 7828) MUST NOT be sent over DoQ and its receipt is a fatal protocol error requiring CONNECTION_CLOSE. This has implications for proxies bridging TCP/DoT/DoH to DoQ, since this option cannot be forwarded through a DoQ leg.
+section: 4.3.3
+topics:
+    - dns
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

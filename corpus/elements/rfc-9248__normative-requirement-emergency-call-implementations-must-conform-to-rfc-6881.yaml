@@ -1,0 +1,10 @@
+document: rfc-9248
+kind: normative-requirement
+summary: Emergency call implementations MUST conform to RFC 6881. If the device cannot determine its location, it MAY send the emergency call without a Geolocation header field. If an emergency call arrives at the provider without a Geolocation header, the provider MUST supply location by adding the Geolocation header and MUST supply the route by querying the LoST server. Implementations MUST implement additional data per RFC 7852 including data provider, device, and owner/subscriber information blocks.
+section: 5.2.5
+rfc2119_level: MUST
+topics:
+    - sip
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

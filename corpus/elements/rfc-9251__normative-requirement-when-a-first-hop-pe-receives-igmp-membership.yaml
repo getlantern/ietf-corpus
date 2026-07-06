@@ -1,0 +1,10 @@
+document: rfc-9251
+kind: normative-requirement
+summary: When a first-hop PE receives IGMP Membership Reports of different versions for the same (*,G), it MUST NOT withdraw the existing EVPN SMET route before sending the updated route, because the Flags field is not part of BGP route key processing and a withdraw-then-readvertise would cause state loss at remote PEs.
+section: 4.1.1
+rfc2119_level: MUST NOT
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

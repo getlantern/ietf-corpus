@@ -1,0 +1,10 @@
+document: rfc-9251
+kind: normative-requirement
+summary: When a PE receives an EVPN SMET route withdraw, it removes the remote PE from the OIF list for that multicast group, and if no OIF entries remain (local or remote), the PE MUST stop responding to Membership Queries from any locally attached router and stop sending multicast traffic for that source.
+section: 4.1.2
+rfc2119_level: MUST
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

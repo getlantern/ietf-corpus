@@ -1,0 +1,9 @@
+document: rfc-9246
+kind: design-rationale
+summary: Asymmetric public/private keys are strongly preferred over symmetric shared keys because symmetric key distribution requires confidentiality across all verifying CDNs, whereas public keys can be distributed openly. A compromised symmetric key allows an attacker to generate valid Signed URIs and also to embed computationally expensive regular expressions to cause denial-of-service against CDN verifiers.
+section: "1.3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

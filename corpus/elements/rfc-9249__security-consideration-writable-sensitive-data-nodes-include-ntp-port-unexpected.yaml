@@ -1,0 +1,10 @@
+document: rfc-9249
+kind: security-consideration
+summary: Writable sensitive data nodes include /ntp/port (unexpected changes disrupt service), /ntp/authentication and /ntp/access-rules (authentication and access control), /ntp/unicast-configuration (modifies NTP associations), and /ntp/interfaces/interface (could cause synchronization over an untrusted source over trusted ones).
+section: "11"
+topics:
+    - yang
+    - ntp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-9251
+kind: design-rationale
+summary: In the event of a PE or PE-to-CE link failure causing a mass withdrawal of Multicast Membership Report Synch routes, remote PEs SHOULD NOT immediately remove state; instead, a General Query SHOULD be generated to refresh states. This avoids unnecessary multicast traffic disruption when the failure may be transient or new hosts will rejoin.
+section: "6.3"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

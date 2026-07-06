@@ -1,0 +1,9 @@
+document: rfc-9246
+kind: interoperability-note
+summary: Cross-domain cookie restrictions in some application environments can break the cookie-based Signed Token Renewal mechanism (cdnistt=1) when used with HTTP 3xx redirection to a different domain. In such scenarios, Signed Token Renewal SHOULD instead be communicated via the query string (cdnistt=2). This mechanism only works when both manifest and segments are served from the same domain.
+section: 3.3.1
+topics:
+    - http
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-9246
+kind: privacy-consideration
+summary: When a client's IP address (cdniip) or Subject (sub) is embedded in the Signed URI, the privacy protections described in RFC 7937 apply. Both fields MUST be encrypted as JWE objects in compact serialization before inclusion in the URI Signing Package to prevent exposure of personally identifiable information in the URL.
+section: "8"
+topics:
+    - privacy
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

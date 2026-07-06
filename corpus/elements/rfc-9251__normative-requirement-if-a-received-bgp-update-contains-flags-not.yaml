@@ -1,0 +1,10 @@
+document: rfc-9251
+kind: normative-requirement
+summary: If a received BGP update contains Flags not in accordance with the IGMP/MLD version-X expectation, the PE MUST apply the 'treat-as-withdraw' procedure per RFC 7606. If route keys cannot be extracted due to malformation, the BGP update MUST be considered invalid and 'session reset' applied.
+section: "9.7"
+rfc2119_level: MUST
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

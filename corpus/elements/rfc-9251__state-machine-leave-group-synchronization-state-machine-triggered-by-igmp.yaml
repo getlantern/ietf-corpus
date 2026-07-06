@@ -1,0 +1,8 @@
+document: rfc-9251
+kind: state-machine
+summary: 'Leave group synchronization state machine: triggered by IGMP Leave reception, the PE (1) computes Maximum Response Time (Last Member Query Count × Last Member Query Interval + BGP propagation delta), (2) starts the timer, (3) sends Group-Specific Queries, (4) advertises Leave Synch route with Maximum Response Time. On timer expiry, the Leave Synch route is withdrawn and IGMP Membership Request state is removed if no new Membership Reports or Synch routes arrived.'
+section: "6.2"
+topics:
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

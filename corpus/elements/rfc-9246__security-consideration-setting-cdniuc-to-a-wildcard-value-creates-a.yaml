@@ -1,0 +1,9 @@
+document: rfc-9246
+kind: security-consideration
+summary: Setting cdniuc to a wildcard value creates a 'skeleton key' that is effectively valid for any URI. Because cdniuc is the only mandatory claim, doing so removes all URI scoping. This is NOT RECOMMENDED; the only mitigation after distribution is to revoke the signing key.
+section: "7"
+topics:
+    - security
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

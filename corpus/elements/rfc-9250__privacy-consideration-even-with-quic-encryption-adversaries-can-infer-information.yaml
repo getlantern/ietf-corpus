@@ -1,0 +1,11 @@
+document: rfc-9250
+kind: privacy-consideration
+summary: Even with QUIC encryption, adversaries can infer information from packet lengths and timing. A simple one-query-per-packet mapping could enable website fingerprinting since loading a web page may require resolving dozens of names with a characteristic succession of packet lengths. Implementations SHOULD use padding as specified in Section 5.4 to mitigate this attack.
+section: "7.5"
+topics:
+    - dns
+    - quic
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
