@@ -1,0 +1,9 @@
+document: rfc-9351
+kind: design-rationale
+summary: The Flexible Algorithm Unsupported sub-TLV was introduced because, unlike most protocol extensions where unknown sub-TLVs can be silently skipped, the entire FAD must be understood by anyone using it for computation (per RFC 9350 Section 5.3). This makes incomplete FAD advertisement more dangerous than typical unknown-TLV scenarios.
+section: "3.6"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

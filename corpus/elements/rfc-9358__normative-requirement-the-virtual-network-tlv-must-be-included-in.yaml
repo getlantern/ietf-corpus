@@ -1,0 +1,10 @@
+document: rfc-9358
+kind: normative-requirement
+summary: The VIRTUAL-NETWORK-TLV MUST be included in the VNAG object. If a PCEP speaker receives a VNAG object without it, it MUST send a PCErr with Error-Type=6 (Mandatory Object missing) and Error-value=18 (VIRTUAL-NETWORK-TLV missing) and close the session.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

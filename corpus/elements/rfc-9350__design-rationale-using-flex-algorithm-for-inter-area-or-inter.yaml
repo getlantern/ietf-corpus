@@ -1,0 +1,8 @@
+document: rfc-9350
+kind: design-rationale
+summary: Using Flex-Algorithm for inter-area or inter-domain prefix reachability without the M-flag is NOT RECOMMENDED because, without explicit FAPM (and FAAM for OSPF external routes), it is impossible to determine whether an ABR or ASBR has Flex-Algorithm reachability in the next area or domain, potentially causing persistent traffic drops or forwarding loops.
+section: "13.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

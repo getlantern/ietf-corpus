@@ -1,0 +1,10 @@
+document: rfc-9358
+kind: normative-requirement
+summary: The VN Association Type (7) MUST NOT be present in the Operator-configured Association Range TLV. If an implementation encounters it there, it MUST ignore the associated Start-Assoc-ID and Range values, because VNAG IDs are dynamically created by the parent PCE (MDSC) and operator configuration is not supported.
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

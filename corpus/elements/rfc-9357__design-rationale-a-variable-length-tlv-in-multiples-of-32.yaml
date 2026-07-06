@@ -1,0 +1,9 @@
+document: rfc-9357
+kind: design-rationale
+summary: A variable-length TLV (in multiples of 32 bits) was chosen over a fixed 32-bit length to allow future extensibility so that flags would never be exhausted and another new TLV would not need to be defined. This follows the same approach used for the PCE-CAP-FLAGS sub-TLV in RFC 5088 and RFC 5089.
+section: A
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-9349
+kind: security-consideration
+summary: Access to iptfsInnerStatsTable and iptfsOuterStatsTable can reveal information that IP-TFS is designed to obscure, such as the true activity of flows. GET and NOTIFY access to these tables should be controlled, and their values should be encrypted in transit via SNMPv3.
+section: "6"
+topics:
+    - snmp
+    - security
+    - ipsec
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
