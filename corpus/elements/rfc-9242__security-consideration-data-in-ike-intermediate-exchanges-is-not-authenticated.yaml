@@ -1,0 +1,9 @@
+document: rfc-9242
+kind: security-consideration
+summary: Data in IKE_INTERMEDIATE exchanges is not authenticated until IKE_AUTH completes. If placed in the Encrypted payload it is protected from eavesdropping; peers can verify message origin by checking Integrity Checksum Data. A malicious initiator may exploit this to mount DoS attacks by driving expensive IKE_INTERMEDIATE exchanges and then aborting before IKE_AUTH.
+section: "5"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

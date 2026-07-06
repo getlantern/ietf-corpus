@@ -1,0 +1,8 @@
+document: rfc-9233
+kind: design-rationale
+summary: No BackwardCompatible exception rule (per RFC 5892, Section 2.7) was added for U+111C9 SHARADA SANDHI MARK when it changed from DISALLOWED to PVALID. Adding an exception would require implementation changes to IDNA2008 deployments; allowing the property value change ensures all sandhi marks are treated equally.
+section: "4"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

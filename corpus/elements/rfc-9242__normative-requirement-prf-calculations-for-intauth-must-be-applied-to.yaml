@@ -1,0 +1,10 @@
+document: rfc-9242
+kind: normative-requirement
+summary: PRF calculations for IntAuth MUST be applied to whole messages only, before possible IKE fragmentation. If a message was received fragmented, it MUST be reconstructed before PRF computation; the RESERVED field in the reconstructed Encrypted payload header MUST be set to the value from the first fragment.
+section: 3.3.2
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

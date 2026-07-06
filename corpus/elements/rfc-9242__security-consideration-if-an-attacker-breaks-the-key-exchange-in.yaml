@@ -1,0 +1,10 @@
+document: rfc-9242
+kind: security-consideration
+summary: If an attacker breaks the key exchange in real time (e.g., quantum computer), it can read and forge Encrypted payload content; forgery becomes evident in IKE_AUTH unless the attacker also breaks authentication. Additionally, if the negotiated PRF is not secure against second preimage attacks with known key, the attacker could forge IKE_INTERMEDIATE messages undetected through IKE_AUTH.
+section: "5"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

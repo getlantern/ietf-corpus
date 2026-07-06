@@ -1,0 +1,8 @@
+document: rfc-9240
+kind: design-rationale
+summary: Property values are extended from JSONString (as RFC 7285 required) to any JSONValue, enabling richer structured property types such as objects, arrays, or numbers. A protocol implementation SHOULD assume values are JSONString or JSON null and fail to parse otherwise, unless an extension explicitly signals other data types.
+section: 5.2.3
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

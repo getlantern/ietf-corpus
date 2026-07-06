@@ -1,0 +1,9 @@
+document: rfc-9240
+kind: normative-requirement
+summary: If an IPv4 or IPv6 entity would inherit a property value but the server asserts 'no value', the server MUST return a JSON 'null' and the client MUST recognize 'null' as 'no value' (i.e., do not apply inheritance). If the entity would not inherit a value, the server MAY return 'null' or simply omit the property.
+section: 6.1.3
+rfc2119_level: MUST
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

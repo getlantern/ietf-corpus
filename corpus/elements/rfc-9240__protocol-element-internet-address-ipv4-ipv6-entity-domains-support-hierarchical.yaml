@@ -1,0 +1,8 @@
+document: rfc-9240
+kind: protocol-element
+summary: Internet address (ipv4/ipv6) entity domains support hierarchical property inheritance. If property P is undefined for address I but defined for a CIDR block C containing I, then I inherits P from C. When multiple enclosing blocks define P, the longest-prefix CIDR wins, ensuring unambiguous single-value inheritance. This rule also applies recursively among CIDR blocks.
+section: 6.1.3
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

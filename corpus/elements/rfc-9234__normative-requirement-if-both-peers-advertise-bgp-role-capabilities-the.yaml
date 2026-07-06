@@ -1,0 +1,10 @@
+document: rfc-9234
+kind: normative-requirement
+summary: If both peers advertise BGP Role Capabilities, the roles MUST correspond to one of the allowed pairs in Table 2 (Provider/Customer, RS/RS-Client, Peer/Peer). If they do not correspond, the speaker MUST reject the connection using the Role Mismatch Notification (code 2, subcode 11).
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

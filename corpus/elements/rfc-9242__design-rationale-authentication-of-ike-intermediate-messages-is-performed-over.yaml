@@ -1,0 +1,10 @@
+document: rfc-9242
+kind: design-rationale
+summary: Authentication of IKE_INTERMEDIATE messages is performed over pre-encryption plaintext (rather than on-wire bytes) because IKE fragmentation allows the same logical message to arrive in different forms (fragmented vs. unfragmented, different fragment sizes). Authenticating the on-wire form would make AUTH payload computation non-deterministic across peers.
+section: 3.3.2
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

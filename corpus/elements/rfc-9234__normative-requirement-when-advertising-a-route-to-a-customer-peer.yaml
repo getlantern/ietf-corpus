@@ -1,0 +1,10 @@
+document: rfc-9234
+kind: normative-requirement
+summary: When advertising a route to a Customer, Peer, or RS-Client and the OTC Attribute is absent, an OTC Attribute MUST be added with a value equal to the local AS number (egress procedure). If a route already contains the OTC Attribute, it MUST NOT be propagated to Providers, Peers, or RSes.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
