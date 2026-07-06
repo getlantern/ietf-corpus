@@ -1,0 +1,9 @@
+document: rfc-8968
+kind: security-consideration
+summary: A malicious client may perform a high number of DTLS handshakes (including Slowloris-style slow handshakes) against a server. Mitigations include rate-limiting handshakes from a given subnet; clients are not uniquely identified until the handshake completes and may use IPv6 temporary addresses to obscure their identity.
+section: "5"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

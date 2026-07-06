@@ -1,0 +1,8 @@
+document: rfc-8966
+kind: design-rationale
+summary: 'Update TLVs use a stateful parser to achieve compression: a Router-Id TLV can be shared among multiple subsequent Update TLVs, a Next Hop TLV establishes an implicit next hop per address family, and each Update TLV can omit a common subnet prefix shared with the previous Update in the same address family. This significantly reduces the bandwidth consumed by routing traffic in large networks.'
+section: "4.5"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,8 @@
+document: rfc-8966
+kind: design-rationale
+summary: 'Babel uses an EIGRP-derived feasibility condition (FD = minimum metric ever advertised) rather than the simpler DSDV condition (FD = current metric). The EIGRP variant is strictly less restrictive: it allows alternate routes with metrics larger than the currently selected route to remain feasible, increasing the availability of loop-free fallback paths.'
+section: "2.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

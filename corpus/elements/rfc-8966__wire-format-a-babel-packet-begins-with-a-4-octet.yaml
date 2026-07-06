@@ -1,0 +1,8 @@
+document: rfc-8966
+kind: wire-format
+summary: 'A Babel packet begins with a 4-octet header: Magic (1 octet, value 42), Version (1 octet, value 2), and Body length (2 octets, big-endian), followed by the packet body (a sequence of TLVs) and an optional packet trailer. The trailer may only contain TLVs explicitly permitted there; among base TLVs only Pad1 and PadN are allowed.'
+section: "4.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

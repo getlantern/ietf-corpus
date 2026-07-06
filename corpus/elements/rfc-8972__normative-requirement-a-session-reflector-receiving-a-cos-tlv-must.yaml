@@ -1,0 +1,11 @@
+document: rfc-8972
+kind: normative-requirement
+summary: A Session-Reflector receiving a CoS TLV MUST copy DSCP and ECN from the IP header into DSCP2, MUST verify whether DSCP1 is permitted under local policy, and if permitted MUST set the reflected packet's DSCP to DSCP1; otherwise MUST use the received DSCP and set RP=1.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - measurement
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

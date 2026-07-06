@@ -1,0 +1,9 @@
+document: rfc-8967
+kind: design-rationale
+summary: An 'index' field is introduced alongside the PC to handle PC resets. Whenever a node resets its PC or is unsure whether it has been reset, it picks a fresh index. A receiver that detects an index change re-challenges the sender, closing the replay window that a simple monotonic counter cannot close after a reboot.
+section: "2"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,9 @@
+document: rfc-8966
+kind: normative-requirement
+summary: A node that has lost all feasible routes to a destination but still has unexpired unfeasible routes MUST send a seqno request with the router-id of the lost route and the source-table seqno plus 1. It MUST send the request to at least one next-hop neighbour advertising such a route.
+section: 3.8.2.1
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

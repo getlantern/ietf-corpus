@@ -1,0 +1,10 @@
+document: rfc-8973
+kind: security-consideration
+summary: An attacker can spoof DHCP responses to redirect DOTS clients to a rogue DOTS agent using a domain-validated certificate. Mitigation includes pre-configuring DOTS agents with a list of trusted DOTS domain names and verifying the DNS-ID in the server certificate's subjectAltName against that list.
+section: "8.1"
+topics:
+    - security
+    - pkix
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

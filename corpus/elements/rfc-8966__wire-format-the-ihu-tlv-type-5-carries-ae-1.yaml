@@ -1,0 +1,8 @@
+document: rfc-8966
+kind: wire-format
+summary: The IHU TLV (Type=5) carries AE (1 octet), Reserved (1 octet), Rxcost (16-bit; 0xFFFF means unreachable), Interval (16-bit centiseconds, MUST NOT be 0), and Address (variable, no compression). The receiving node uses the Rxcost as its txcost and sets the IHU hold timer to a multiple of the Interval.
+section: 4.6.6
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

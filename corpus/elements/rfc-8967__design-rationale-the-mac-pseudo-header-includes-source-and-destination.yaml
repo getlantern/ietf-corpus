@@ -1,0 +1,9 @@
+document: rfc-8967
+kind: design-rationale
+summary: The MAC pseudo-header includes source and destination IP addresses and UDP ports but is never transmitted. Including the source address binds the MAC to a specific sender, which limits resource exhaustion attacks to one table entry per attacker-controlled source address.
+section: "4.1"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

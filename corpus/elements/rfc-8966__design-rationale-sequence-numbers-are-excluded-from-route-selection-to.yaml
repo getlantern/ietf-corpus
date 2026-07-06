@@ -1,0 +1,8 @@
+document: rfc-8966
+kind: design-rationale
+summary: 'Sequence numbers are excluded from route selection to prevent route oscillation: while a new seqno propagates across the network, nodes would otherwise oscillate between routes with different seqnos but similar metrics, and non-left-distributive metrics could cause persistent black-holes. Seqnos are used only to determine feasibility, not route preference.'
+section: "3.6"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

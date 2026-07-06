@@ -1,0 +1,9 @@
+document: rfc-8974
+kind: security-consideration
+summary: When using a nonce-based cipher such as AES-CCM for token encryption, nonce reuse under the same key catastrophically breaks confidentiality. Constrained devices with low-quality entropy sources must use a nonce-generation mechanism guaranteeing uniqueness (e.g., following the OSCORE sender-sequence-number model from RFC 8613 Appendix B.1.1).
+section: "5.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

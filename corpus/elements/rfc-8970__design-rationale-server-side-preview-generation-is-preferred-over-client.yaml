@@ -1,0 +1,8 @@
+document: rfc-8970
+kind: design-rationale
+summary: 'Server-side preview generation is preferred over client-side because: (1) it enables consistent representation across all clients; (2) it is more efficient — client-side requires non-pipelineable FETCH BODYSTRUCTURE then FETCH BODY commands; (3) it enables centralized caching so preview is generated once per message for its entire retention period.'
+section: "1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

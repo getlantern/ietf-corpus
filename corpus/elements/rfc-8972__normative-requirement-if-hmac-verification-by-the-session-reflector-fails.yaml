@@ -1,0 +1,10 @@
+document: rfc-8972
+kind: normative-requirement
+summary: If HMAC verification by the Session-Reflector fails, it MUST stop processing the received packet, copy TLVs into the reflected packet, and set the I flag to 1 in each copied TLV. If the Session-Sender receives a reflected packet with I flag set, it MUST stop processing TLVs.
+section: "4.8"
+rfc2119_level: MUST
+topics:
+    - measurement
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

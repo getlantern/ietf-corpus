@@ -1,0 +1,10 @@
+document: rfc-8976
+kind: normative-requirement
+summary: Generation of a ZONEMD signature MUST NOT also result in a change to the SOA serial number, because any SOA serial change would invalidate the computed digest. The ZONEMD RR and the matching SOA MUST be published at the same time.
+section: "3.4"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

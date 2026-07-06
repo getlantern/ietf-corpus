@@ -1,0 +1,9 @@
+document: rfc-8976
+kind: security-consideration
+summary: Attackers may perform downgrade attacks by removing ZONEMD records or stripping DNSSEC signatures; these are only detectable via DNSSEC validation of denial-of-existence proofs and RRset signatures. Verifiers must check for expected DNSSEC coverage before trusting the digest.
+section: "6.2"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

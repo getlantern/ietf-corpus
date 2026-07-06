@@ -1,0 +1,8 @@
+document: rfc-8966
+kind: design-rationale
+summary: When a prefix is originated by multiple routers, Babel maintains per-source (router-id, prefix) feasibility distances rather than per-prefix distances, because synchronising sequence numbers across distinct routers is impractical. This guarantees loop-freedom per source; loops involving routes from different originating routers are transient and bounded by the loop's diameter.
+section: "2.7"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

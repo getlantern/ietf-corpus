@@ -1,0 +1,9 @@
+document: rfc-8976
+kind: design-rationale
+summary: Placeholder ZONEMD RRs are added before DNSSEC signing so that denial-of-existence (NSEC/NSEC3) records include the ZONEMD type in their Type Bit Maps. Adding ZONEMD after signing would require updating NSEC/NSEC3 RRs, which would invalidate the digest.
+section: "3.1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

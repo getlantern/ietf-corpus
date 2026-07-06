@@ -1,0 +1,9 @@
+document: rfc-8967
+kind: interoperability-note
+summary: For incremental deployment, nodes are first configured to send authenticated packets but accept unauthenticated ones; once all nodes authenticate, unauthenticated packets are rejected. For key rotation, the new key is added to all nodes, both keys are sent per packet, and after propagation the old key is removed.
+section: "5"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

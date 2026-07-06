@@ -1,0 +1,9 @@
+document: rfc-8968
+kind: design-rationale
+summary: DTLS is a client-server protocol while Babel is peer-to-peer; to resolve this, the node with the numerically lower IP address (in network byte order) acts as DTLS client. This deterministic rule avoids the need for out-of-band coordination.
+section: "2.1"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

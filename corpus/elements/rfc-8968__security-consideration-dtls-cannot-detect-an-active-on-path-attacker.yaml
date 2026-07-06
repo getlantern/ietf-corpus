@@ -1,0 +1,9 @@
+document: rfc-8968
+kind: security-consideration
+summary: DTLS cannot detect an active on-path attacker that intercepts valid packets and replays them later, which could falsely maintain perceived bidirectional reachability after a neighbour disconnects. Nodes MUST discard DTLS state after a finite period without valid packets, and SHOULD discard packets reordered by more than two IHU intervals.
+section: "5"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

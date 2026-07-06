@@ -1,0 +1,9 @@
+document: rfc-8967
+kind: security-consideration
+summary: Resource exhaustion from replayed packets with obsolete indices is bounded because the MAC pseudo-header includes the sender's IP address, limiting the attacker to one neighbour-table entry per distinct source address per key. The neighbour table MUST NOT be populated before a successful MAC check.
+section: "7"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

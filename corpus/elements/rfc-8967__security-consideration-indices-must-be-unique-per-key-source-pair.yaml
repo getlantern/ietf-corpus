@@ -1,0 +1,10 @@
+document: rfc-8967
+kind: security-consideration
+summary: Indices must be unique per (key, source) pair and nonces unique per (key, source, destination) triple over the key's lifetime. 64-bit random values are considered sufficient; if uniqueness cannot be guaranteed (e.g., clock reset), rekeying is necessary.
+section: "7"
+topics:
+    - security
+    - crypto
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

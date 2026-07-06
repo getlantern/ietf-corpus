@@ -1,0 +1,9 @@
+document: rfc-8966
+kind: normative-requirement
+summary: Route selection MUST NOT take sequence numbers into account; a route MUST NOT be preferred solely because it carries a higher (more recent) seqno. Doing otherwise would cause route oscillation while a new seqno propagates and might create persistent black-holes with non-left-distributive metrics.
+section: "3.6"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

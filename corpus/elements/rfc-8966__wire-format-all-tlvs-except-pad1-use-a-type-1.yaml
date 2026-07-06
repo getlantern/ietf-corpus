@@ -1,0 +1,8 @@
+document: rfc-8966
+kind: wire-format
+summary: All TLVs (except Pad1) use a Type (1 octet) / Length (1 octet, body length excluding Type and Length) / Payload structure. TLVs with unknown type values MUST be silently ignored. Sub-TLVs use an identical encoding; if the mandatory bit (0x80) of a sub-TLV type is set and the sub-TLV is unknown, the entire enclosing TLV MUST be silently ignored.
+section: "4.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

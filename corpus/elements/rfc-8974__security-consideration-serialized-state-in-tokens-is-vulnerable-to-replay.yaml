@@ -1,0 +1,9 @@
+document: rfc-8974
+kind: security-consideration
+summary: Serialized state in tokens is vulnerable to replay, modification, and injection by on-path attackers or rogue servers. AES-CCM with a 64-bit tag combined with a sequence number and replay window is recommended; where confidentiality is not needed, HMAC-SHA-256 with a replay window may be used instead.
+section: "5.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

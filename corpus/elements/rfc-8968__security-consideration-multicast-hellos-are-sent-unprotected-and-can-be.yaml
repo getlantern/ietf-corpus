@@ -1,0 +1,9 @@
+document: rfc-8968
+kind: security-consideration
+summary: Multicast Hellos are sent unprotected and can be tampered with by an attacker, potentially causing bidirectional reachability detection to fail via erroneous Seqno or Interval values. Implementations SHOULD also emit protected Unicast Hellos to mitigate this denial-of-service vector.
+section: "5"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

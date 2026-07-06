@@ -1,0 +1,8 @@
+document: rfc-8966
+kind: state-machine
+summary: When a route's expiry timer fires and the metric is finite, the metric is set to infinity and the timer is reset (first expiry). When the timer fires again with an already-infinite metric, the route is flushed from the route table entirely (second expiry). This two-stage expiry ensures neighbours receive at least one retraction.
+section: 3.5.3
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

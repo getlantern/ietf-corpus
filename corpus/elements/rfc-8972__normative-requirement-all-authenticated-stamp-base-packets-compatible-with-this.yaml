@@ -1,0 +1,11 @@
+document: rfc-8972
+kind: normative-requirement
+summary: All authenticated STAMP base packets compatible with this specification MUST additionally authenticate optional TLVs by including the HMAC TLV, with the sole exception of when the only TLV present is the Extra Padding TLV. The HMAC TLV MUST be the last TLV (excluding Extra Padding); if mispositioned it MUST be treated as HMAC verification failure.
+section: "4.8"
+rfc2119_level: MUST
+topics:
+    - measurement
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

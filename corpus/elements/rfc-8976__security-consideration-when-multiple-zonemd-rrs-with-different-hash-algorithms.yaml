@@ -1,0 +1,10 @@
+document: rfc-8976
+kind: security-consideration
+summary: When multiple ZONEMD RRs with different hash algorithms are published, the overall security is only as strong as the weakest algorithm. Publishers SHOULD publish multiple records only during transitions and remove the old algorithm once the rollover is complete.
+section: "6.3"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

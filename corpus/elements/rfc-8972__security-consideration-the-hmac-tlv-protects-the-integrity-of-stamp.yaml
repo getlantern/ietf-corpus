@@ -1,0 +1,10 @@
+document: rfc-8972
+kind: security-consideration
+summary: The HMAC TLV protects the integrity of STAMP extension TLVs but does not protect against replay attacks. Implementations of Session-Sender and Session-Reflector MUST check the M flag and validate the Length field to protect against malformed TLVs.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

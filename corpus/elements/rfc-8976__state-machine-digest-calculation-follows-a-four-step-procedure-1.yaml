@@ -1,0 +1,9 @@
+document: rfc-8976
+kind: state-machine
+summary: 'Digest calculation follows a four-step procedure: (1) delete existing apex ZONEMD records and add placeholder ZONEMD RR(s); (2) optionally sign the zone with DNSSEC; (3) compute the digest over zone data per scheme-specific rules; (4) insert computed digest into the placeholder record and update any covering RRSIGs. Steps must proceed in this order to ensure correct denial-of-existence records.'
+section: "3"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

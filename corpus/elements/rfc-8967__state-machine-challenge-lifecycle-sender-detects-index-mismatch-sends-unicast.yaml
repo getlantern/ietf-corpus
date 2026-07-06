@@ -1,0 +1,9 @@
+document: rfc-8967
+kind: state-machine
+summary: 'Challenge lifecycle: sender detects Index mismatch → sends unicast Challenge Request with fresh nonce stored in neighbour table with 30-second expiry timer → receiver replies with Challenge Reply copying the nonce → challenger compares nonces; if equal, challenge succeeds and stored (Index, PC) is updated.'
+section: 4.3.1
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

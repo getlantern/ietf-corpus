@@ -1,0 +1,9 @@
+document: rfc-8974
+kind: wire-format
+summary: 'The 4-bit TKL field is extended: values 0–12 give the token length directly; value 13 means an 8-bit unsigned integer immediately precedes the Token field and encodes length minus 13; value 14 means a 16-bit unsigned integer in network byte order precedes the Token field and encodes length minus 269; value 15 is reserved. The maximum representable token length is thereby 65804 bytes.'
+section: "2.1"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

@@ -1,0 +1,11 @@
+document: rfc-8966
+kind: normative-requirement
+summary: A Babel packet MUST be sent as the body of a UDP datagram with the network-layer hop count set to 1. Both source and destination UDP port are set to the well-known Babel port (6696). A Babel packet MUST be silently ignored unless its source address is a link-local IPv6 address or an IPv4 address on the local network, and its source port is the well-known Babel port.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - routing
+    - ip
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

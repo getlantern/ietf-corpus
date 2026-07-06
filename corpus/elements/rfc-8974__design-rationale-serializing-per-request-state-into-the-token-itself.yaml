@@ -1,0 +1,6 @@
+document: rfc-8974
+kind: design-rationale
+summary: 'Serializing per-request state into the token itself allows a client to avoid storing per-request state locally: when the server echoes the token back, the client recovers its state from the token rather than a local store. This trades increased message size for reduced client memory use.'
+section: "1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

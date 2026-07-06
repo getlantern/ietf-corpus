@@ -1,0 +1,8 @@
+document: rfc-8966
+kind: protocol-element
+summary: 'The feasibility condition: a received update carrying distance (seqno'', metric'') is feasible if no source table entry exists for (prefix, plen, router-id), or if seqno'' > seqno (stored), or if seqno'' = seqno and metric'' < metric (stored). Retractions (metric = 0xFFFF) are always feasible. This prevents routing loops by ensuring the forwarding graph remains acyclic.'
+section: 3.5.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

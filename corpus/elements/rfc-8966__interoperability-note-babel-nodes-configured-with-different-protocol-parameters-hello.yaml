@@ -1,0 +1,8 @@
+document: rfc-8966
+kind: interoperability-note
+summary: Babel nodes configured with different protocol parameters (Hello intervals, Update intervals, metric strategies) will successfully interoperate and will not create routing loops, as long as each node satisfies the mandatory properties of route selection (never select retracted or unfeasible routes) and metric computation (strictly monotonic). This heterogeneity is intentional to support mixed wired/wireless and battery/mains-powered deployments.
+section: "1.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

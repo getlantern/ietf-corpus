@@ -1,0 +1,9 @@
+document: rfc-8966
+kind: normative-requirement
+summary: When a prefix P is retracted and a shorter covering prefix P' is reachable, packets destined to addresses within P MUST NOT be forwarded via P'. To prevent this, an infinite-metric route table entry is maintained; the RECOMMENDED approach is to send a retraction with an acknowledgment request to each neighbour and await all ACKs, rather than waiting for the full expiry timer.
+section: 3.5.4
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"

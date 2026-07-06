@@ -1,0 +1,10 @@
+document: rfc-8973
+kind: design-rationale
+summary: The DHCP options carry both a reference identifier name (FQDN) and IP addresses because PKIX-based authentication requires a domain name reference identifier, but most certificates (~99%) are name-based rather than IP-address-based. Supplying both avoids relying solely on DNS resolution during connection establishment.
+section: "5"
+topics:
+    - dns
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-06"
