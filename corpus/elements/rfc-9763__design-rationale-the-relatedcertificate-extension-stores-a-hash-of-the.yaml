@@ -1,0 +1,9 @@
+document: rfc-9763
+kind: design-rationale
+summary: The RelatedCertificate extension stores a hash of the related certificate rather than its full content or IssuerAndSerialNumber, because hashing the entire certificate provides a tamper-evident binding that also commits to all fields (public key, subject, validity) of the related certificate, ensuring a stronger linkage.
+section: "4.1"
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9763
+kind: normative-requirement
+summary: If a CA receives a CSR including the relatedCertRequest attribute and supports it, the CA MUST retrieve the certificate identified via the UniformResourceIdentifier, validate it per RFC 5280 path validation rules, and compare the IssuerAndSerialNumber extracted from the retrieved certificate against the certID field in the attribute.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

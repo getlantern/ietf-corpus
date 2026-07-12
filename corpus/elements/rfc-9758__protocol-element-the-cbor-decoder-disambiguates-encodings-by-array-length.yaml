@@ -1,0 +1,8 @@
+document: rfc-9758
+kind: protocol-element
+summary: 'The CBOR decoder disambiguates encodings by array length: a 3-element array maps fields directly to allocator_identifier, node_number, service_number; a 2-element array extracts allocator_identifier as enc_eid[0]>>32 and node_number as enc_eid[0]&(2^32-1), with service_number as enc_eid[1].'
+section: "6.2"
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

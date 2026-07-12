@@ -1,0 +1,9 @@
+document: rfc-9758
+kind: wire-format
+summary: In the three-element encoding, the array contains [Allocator Identifier, Node Number, Service Number] as separate CBOR unsigned integers, each constrained to values less than 2^32. Implementations are RECOMMENDED to use this encoding unless mitigating interoperability issues, except when the Default Allocator is in use (two-element is then more concise).
+section: 6.1.2
+rfc2119_level: RECOMMENDED
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

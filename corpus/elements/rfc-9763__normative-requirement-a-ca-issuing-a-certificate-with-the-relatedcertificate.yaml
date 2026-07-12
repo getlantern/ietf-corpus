@@ -1,0 +1,10 @@
+document: rfc-9763
+kind: normative-requirement
+summary: A CA issuing a certificate with the RelatedCertificate extension MUST only include a certificate that was listed in the relatedCertRequest attribute of the CSR, and MUST ensure that the related certificate contains the key usage (KU) bits and extended key usage (EKU) OIDs being asserted in the new certificate.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9763
+kind: interoperability-note
+summary: The RA MAY send the CA a CSR containing a relatedCertRequest attribute that includes the IssuerAndSerialNumber of a certificate issued by a different CA. This cross-CA scenario requires the data URL option in locationInfo (containing inline degenerate PKCS#7 with all validation material) so the receiving CA can validate without external lookups.
+section: "3.2"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

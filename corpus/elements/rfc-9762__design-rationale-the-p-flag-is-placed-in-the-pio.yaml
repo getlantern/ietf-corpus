@@ -1,0 +1,9 @@
+document: rfc-9762
+kind: design-rationale
+summary: 'The P flag is placed in the PIO (not as a standalone RA flag) for two reasons: (1) it must be available to the client before it decides to form SLAAC addresses, because forming SLAAC addresses and then switching to DHCPv6-PD is disruptive; (2) the preference is prefix-specific—a network might want DHCPv6-PD for global prefixes but SLAAC for ULA prefixes.'
+section: "4"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9767
+kind: security-consideration
+summary: 'Caching token validation results trades performance against liveness: a cached revoked token could be accepted during the cache window. Key proof validation results MUST NOT be cached across separate requests, as aspects of each call may vary.'
+section: "6.3"
+topics:
+    - security
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,8 @@
+document: rfc-9764
+kind: design-rationale
+summary: BFD encapsulation for multihop sessions is a simple UDP packet, and the BFD specification is silent on the length of the encapsulation carrying the BFD PDU. While the BFD PDU is typically exactly the UDP payload size, this is not required, which creates the possibility that the transport protocol length may be larger than the contained BFD PDU — the basis for this mechanism.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

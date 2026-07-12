@@ -1,0 +1,10 @@
+document: rfc-9763
+kind: design-rationale
+summary: The signature field in RequesterCertificate signs the concatenation of DER-encoded IssuerAndSerialNumber and BinaryTime rather than the full certificate to provide proof-of-possession (POP) with freshness. The BinaryTime field ensures the signed data cannot be replayed, binding the assertion to the specific CSR request time.
+section: "3.1"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

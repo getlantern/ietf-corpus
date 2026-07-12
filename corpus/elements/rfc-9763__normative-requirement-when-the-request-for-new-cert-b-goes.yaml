@@ -1,0 +1,10 @@
+document: rfc-9763
+kind: normative-requirement
+summary: When the request for new Cert B goes to the same CA organization that issued existing Cert A, the UniformResourceIdentifier in locationInfo SHOULD be an HTTP(S) URL to a CMS 'certs-only' message (DER-encoded). When the request goes to a different CA organization, the URI SHOULD be a data URL containing inline degenerate PKCS#7 with all certificates and CRLs needed to validate Cert A.
+section: "3.1"
+rfc2119_level: SHOULD
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

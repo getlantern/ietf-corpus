@@ -1,0 +1,9 @@
+document: rfc-9763
+kind: wire-format
+summary: RelatedCertificate ::= SEQUENCE { hashAlgorithm DigestAlgorithmIdentifier, hashValue OCTET STRING }. The hashAlgorithm field identifies the algorithm used to compute hashValue, which is the hash of the entire related certificate (DER-encoded). If the related certificate's signature OID explicitly indicates a hash algorithm (e.g., ecdsa-with-SHA512), that same algorithm SHOULD be used.
+section: "4.1"
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

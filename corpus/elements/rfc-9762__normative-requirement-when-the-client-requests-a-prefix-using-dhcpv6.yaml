@@ -1,0 +1,10 @@
+document: rfc-9762
+kind: normative-requirement
+summary: When the client requests a prefix using DHCPv6-PD, it SHOULD NOT use SLAAC to obtain IPv6 addresses from PIOs with both P and A bits set. If all PIOs have the P bit set, the client SHOULD NOT request individual IPv6 addresses from DHCPv6 (i.e., SHOULD NOT include IA_NA options in Solicit messages).
+section: "7.1"
+rfc2119_level: SHOULD NOT
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

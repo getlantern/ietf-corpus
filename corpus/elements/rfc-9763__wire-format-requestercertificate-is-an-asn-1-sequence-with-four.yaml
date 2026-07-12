@@ -1,0 +1,10 @@
+document: rfc-9763
+kind: wire-format
+summary: 'RequesterCertificate is an ASN.1 SEQUENCE with four fields: certID (IssuerAndSerialNumber identifying the previously issued certificate), requestTime (BinaryTime for freshness), locationInfo (UniformResourceIdentifier pointing to the existing certificate via HTTP(S) or data URL), and signature (BIT STRING over DER-encoded IssuerAndSerialNumber concatenated with BinaryTime, signed by the private key of the identified certificate).'
+section: "3.1"
+topics:
+    - pkix
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

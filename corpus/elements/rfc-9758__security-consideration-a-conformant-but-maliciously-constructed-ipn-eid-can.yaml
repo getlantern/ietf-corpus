@@ -1,0 +1,8 @@
+document: rfc-9758
+kind: security-consideration
+summary: A conformant but maliciously constructed ipn EID can direct bundles to harmful endpoints or declare a false source, causing incorrect processing. Receiving nodes should verify bundle authenticity using BPSec (RFC 9172) and TCPCLv4 with TLS (RFC 9174) before acting on any bundle.
+section: "8.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

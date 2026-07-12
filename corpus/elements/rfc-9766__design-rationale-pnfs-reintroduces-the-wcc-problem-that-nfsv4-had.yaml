@@ -1,0 +1,6 @@
+document: rfc-9766
+kind: design-rationale
+summary: 'pNFS reintroduces the WCC problem that NFSv4 had solved: because pNFS clients write directly to data servers, the metadata server cannot track file modifications without probing data servers via NFSv3 GETATTR, creating scalability and round-trip overhead. LAYOUT_WCC lets the client push WCC data it already received, eliminating many of those probes.'
+section: "2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

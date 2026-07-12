@@ -1,0 +1,10 @@
+document: rfc-9762
+kind: security-consideration
+summary: Without RA-Guard (RFC 6105), an attacker can send rogue RAs with PIO P=1, causing hosts to ignore the A flag and seek DHCPv6-PD. If no DHCPv6-PD infrastructure exists, hosts may receive no IPv6 addresses or experience delays falling back. Without DHCPv6-Shield (RFC 7610), an attacker could additionally run a rogue DHCPv6 server providing invalid prefixes.
+section: "10"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9762
+kind: normative-requirement
+summary: The client MUST NOT send or forward packets with destination addresses within a delegated prefix to the interface that it obtained the prefix on, as this can cause a routing loop. Prevention methods include assigning the prefix to another interface or adding a high-metric discard route.
+section: "7.2"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

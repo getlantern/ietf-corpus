@@ -1,0 +1,10 @@
+document: rfc-9762
+kind: normative-requirement
+summary: If the client has already received delegated prefix(es) from one or more servers, any time prefixes are added to or removed from the P-flag list, the client MUST consider this a change in configuration information per RFC 8415 Section 18.2.12, and MUST perform a REBIND unless the list is now empty. This handles network renumbering scenarios.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

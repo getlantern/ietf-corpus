@@ -1,0 +1,10 @@
+document: rfc-9767
+kind: security-consideration
+summary: Symmetric key binding divulges the full key to the RS via introspection, giving the RS the same token-reuse capability as a bearer token. Symmetric keys should only be used when the RS can be fully trusted not to create new requests with the presented token.
+section: "6.11"
+topics:
+    - security
+    - crypto
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

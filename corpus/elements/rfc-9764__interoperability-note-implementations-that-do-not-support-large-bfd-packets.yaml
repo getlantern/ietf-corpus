@@ -1,0 +1,8 @@
+document: rfc-9764
+kind: interoperability-note
+summary: Implementations that do not support large BFD packets may either discard the padded packets or improperly reject them during validation. In either case the BFD state machine behaves as if no Control packets are received, and if large BFD packets are enabled on an Up session whose remote peer cannot support them, the session will go Down.
+section: "4.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

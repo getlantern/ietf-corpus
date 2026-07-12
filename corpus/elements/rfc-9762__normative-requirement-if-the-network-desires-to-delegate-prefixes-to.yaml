@@ -1,0 +1,10 @@
+document: rfc-9762
+kind: normative-requirement
+summary: If the network desires to delegate prefixes to devices that support DHCPv6-PD but do not support the P flag, it SHOULD also set the M or O bits in the RA to 1, because some devices (e.g., CE routers per RFC 7084) might not initiate DHCPv6-PD if both M and O bits are zero.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
