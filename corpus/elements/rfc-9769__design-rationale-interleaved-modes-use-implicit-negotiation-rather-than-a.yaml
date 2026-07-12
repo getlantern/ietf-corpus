@@ -1,0 +1,8 @@
+document: rfc-9769
+kind: design-rationale
+summary: Interleaved modes use implicit negotiation rather than a new extension field because RFC 5905 does not specify how servers handle unknown extension fields, and some existing implementations do not respond to requests with unknown extension fields, which would prevent reliable detection of interleaved mode support.
+section: "1"
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

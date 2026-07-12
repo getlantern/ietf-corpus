@@ -1,0 +1,10 @@
+document: rfc-9769
+kind: security-consideration
+summary: Clients using interleaved mode SHOULD randomize all bits of receive and transmit timestamps in their requests (providing an effective precision of 2^32 seconds) to make it harder for off-path attackers to guess the origin timestamp used in the server response.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - ntp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

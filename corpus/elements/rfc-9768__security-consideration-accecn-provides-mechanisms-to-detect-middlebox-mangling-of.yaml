@@ -1,0 +1,11 @@
+document: rfc-9768
+kind: security-consideration
+summary: AccECN provides mechanisms to detect middlebox mangling of the IP-ECN field by comparing the ECN field set on the SYN/SYN/ACK with what the peer fed back. Detection of invalid ECN transitions advises the sender to revert to non-ECN-capable packets while continuing to mechanistically feed back any markings it receives.
+section: 3.2.2.3
+topics:
+    - tcp
+    - security
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9768
+kind: design-rationale
+summary: Counter initialization uses non-zero values (r.cep=5, r.e0b=r.e1b=1, r.ceb=0) to support stateless handshakes (SYN cookies) — values 0b000 and 0b001 in the ACE field on the ACK of the SYN/ACK signal that AccECN was not negotiated — and to distinguish normal operation from middlebox zeroing of the fields.
+section: 3.2.1
+topics:
+    - tcp
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

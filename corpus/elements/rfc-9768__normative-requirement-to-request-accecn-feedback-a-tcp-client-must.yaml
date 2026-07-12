@@ -1,0 +1,11 @@
+document: rfc-9768
+kind: normative-requirement
+summary: To request AccECN feedback, a TCP Client MUST set the TCP flags (AE,CWR,ECE)=(1,1,1) in the initial SYN segment. An AccECN-enabled TCP Server that receives such a SYN MUST set both its half-connections into AccECN mode and MUST NOT set one of the four AccECN SYN/ACK combinations unless the preceding SYN requested AccECN.
+section: 3.1.1
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

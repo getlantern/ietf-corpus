@@ -1,0 +1,9 @@
+document: rfc-9769
+kind: normative-requirement
+summary: A broadcast client supporting interleaved mode MUST check that the origin timestamp is non-zero to detect interleaved packets. It SHOULD also compare the origin timestamp with the previous packet's transmit timestamp to detect lost packets, and SHOULD NOT use the packet for synchronization if the difference exceeds a maximum (e.g., 1 second).
+section: "4"
+rfc2119_level: MUST
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

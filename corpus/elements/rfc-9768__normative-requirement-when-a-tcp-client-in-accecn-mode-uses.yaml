@@ -1,0 +1,11 @@
+document: rfc-9768
+kind: normative-requirement
+summary: When a TCP Client in AccECN mode uses a pure ACK with no SACK blocks to acknowledge the SYN/ACK, it MUST use the handshake encoding from Table 3 to feed back the IP-ECN field received on the SYN/ACK — the only exception to the standard ACE counter encoding rule on SYN=0 packets.
+section: 3.2.2.1
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

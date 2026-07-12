@@ -1,0 +1,11 @@
+document: rfc-9768
+kind: normative-requirement
+summary: 'An AccECN Data Receiver MUST emit an ACK (Increment-Triggered ACK) if ''n'' CE marks have arrived since the previous ACK: n SHOULD be 2 when unacknowledged data exists; otherwise n SHOULD be 3 and MUST be at least 3. In both cases n MUST NOT exceed 7.'
+section: 3.2.2.5.1
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

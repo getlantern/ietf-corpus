@@ -1,0 +1,10 @@
+document: rfc-9768
+kind: interoperability-note
+summary: If the AccECN Option is stripped by a middlebox, AccECN degrades gracefully to CE-only feedback via the 3-bit ACE field. The design ensures the protocol remains functional without the option, though with reduced resilience against ACK loss and no ECT(0)/ECT(1) byte feedback.
+section: "2.3"
+topics:
+    - tcp
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

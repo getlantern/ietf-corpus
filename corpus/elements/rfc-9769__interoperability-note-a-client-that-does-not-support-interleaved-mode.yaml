@@ -1,0 +1,8 @@
+document: rfc-9769
+kind: interoperability-note
+summary: 'A client that does not support interleaved mode but accidentally sets the origin timestamp to the server''s receive timestamp will still synchronize: it drops interleaved responses as bogus, and since the server MUST NOT respond twice to the same origin timestamp in interleaved mode, at least every other response will be in basic mode.'
+section: "5"
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

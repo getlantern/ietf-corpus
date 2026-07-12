@@ -1,0 +1,11 @@
+document: rfc-9768
+kind: normative-requirement
+summary: If a TCP Server receives a SYN with (AE,CWR,ECE) not in {(0,0,0),(0,1,1),(1,1,1)} and lacks specific logic for that combination, it MUST negotiate AccECN as if the flags were (1,1,1). However, an AccECN Client MUST NOT send a SYN with any combination other than those three.
+section: 3.1.3
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

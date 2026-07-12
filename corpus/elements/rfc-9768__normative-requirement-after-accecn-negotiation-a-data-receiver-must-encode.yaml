@@ -1,0 +1,11 @@
+document: rfc-9768
+kind: normative-requirement
+summary: After AccECN negotiation, a Data Receiver MUST encode the 3 least significant bits of its r.cep counter into the ACE field on every ACK with SYN=0, except when the special handshake encoding applies on the ACK of the SYN/ACK. The LSB is at TCP header bit offset 9.
+section: 3.2.2
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

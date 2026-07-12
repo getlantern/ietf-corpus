@@ -1,0 +1,10 @@
+document: rfc-9768
+kind: design-rationale
+summary: Two alternative AccECN Option orderings (Kind=172 and Kind=174) are defined so the receiver can place the most recently changed counter field first and truncate unchanged tail fields, reducing option space consumption. The 24-bit counter width was chosen to prevent rollover within a single TSO event while fitting within available TCP option space.
+section: 3.2.3
+topics:
+    - tcp
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

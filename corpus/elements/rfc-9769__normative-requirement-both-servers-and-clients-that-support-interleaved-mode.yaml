@@ -1,0 +1,9 @@
+document: rfc-9769
+kind: normative-requirement
+summary: Both servers and clients that support interleaved mode MUST NOT send a packet whose transmit timestamp equals its receive timestamp, so that the mode can be reliably detected. One remedy is to increment the transmit timestamp by 1 unit (~0.25 ns) when equality occurs.
+section: "2"
+rfc2119_level: MUST NOT
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

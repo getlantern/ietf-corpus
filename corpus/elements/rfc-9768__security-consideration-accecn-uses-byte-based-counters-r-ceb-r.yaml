@@ -1,0 +1,10 @@
+document: rfc-9768
+kind: security-consideration
+summary: AccECN uses byte-based counters (r.ceb, r.e0b, r.e1b) to protect against ACK-Division attacks where a middlebox or receiver splits acknowledgements to artificially inflate the congestion window, following RFC 5681's recommendation to count acknowledged bytes rather than packets.
+section: "2.4"
+topics:
+    - tcp
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,8 @@
+document: rfc-9769
+kind: design-rationale
+summary: The server SHOULD ensure receive and transmit timestamps are unique in a sufficiently long interval; a duplicated receive timestamp could cause a basic-mode request to be misidentified as interleaved, producing a bogus response dropped by the client, or could produce a slightly inaccurate interleaved response comparable in error to a basic-mode transmit timestamp.
+section: "5"
+topics:
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

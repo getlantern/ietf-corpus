@@ -1,0 +1,8 @@
+document: rfc-977
+kind: design-rationale
+summary: NNTP uses an interactive IHAVE/NEWNEWS mechanism for inter-server news distribution rather than flooding (sending all articles unconditionally). This allows hosts to first check which articles the remote already has, transferring only new, non-duplicate articles and eliminating redundant transfers common in UUCP-based flooding.
+section: "1.6"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

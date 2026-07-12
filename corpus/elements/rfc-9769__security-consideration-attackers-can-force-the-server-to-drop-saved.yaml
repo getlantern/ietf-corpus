@@ -1,0 +1,10 @@
+document: rfc-9769
+kind: security-consideration
+summary: Attackers can force the server to drop saved timestamps—by flooding with requests, spoofing source addresses, or replaying authenticated requests—preventing clients from receiving interleaved responses. Clients MUST NOT rely on servers to respond in the interleaved mode.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - ntp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

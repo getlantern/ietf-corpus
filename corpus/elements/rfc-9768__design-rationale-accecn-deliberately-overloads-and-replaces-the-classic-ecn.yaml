@@ -1,0 +1,10 @@
+document: rfc-9768
+kind: design-rationale
+summary: AccECN deliberately overloads and replaces the Classic ECN flags (CWR, ECE) and the formerly reserved NS bit rather than adding feedback alongside Classic ECN. This reuses scarce TCP header space, avoids a protocol fork, eliminates conflicting feedback signals from both schemes, and is more likely to traverse middleboxes faithfully than newly defined header areas.
+section: "2"
+topics:
+    - tcp
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

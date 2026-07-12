@@ -1,0 +1,10 @@
+document: rfc-9768
+kind: interoperability-note
+summary: When an AccECN TCP Client receives a SYN/ACK from a Classic ECN server (AE,CWR,ECE)=(0,0,1), it MUST fall back to Classic ECN feedback mode and comply with RFC 3168. When the server is not ECN-capable (0,0,0), ECN is disabled for the connection.
+section: 3.1.2
+topics:
+    - tcp
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

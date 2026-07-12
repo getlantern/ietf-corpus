@@ -1,0 +1,11 @@
+document: rfc-9768
+kind: normative-requirement
+summary: An AccECN implementation MUST NOT switch into a different feedback mode from the one it first entered per Table 2, regardless of subsequently received SYNs or SYN/ACKs. It MUST reset the connection with RST if it receives both a Classic ECN-setup SYN and an AccECN-requesting SYN during the same handshake.
+section: 3.1.5
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+    - congestion
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
