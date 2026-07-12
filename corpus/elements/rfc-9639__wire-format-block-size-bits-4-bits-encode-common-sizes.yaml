@@ -1,0 +1,6 @@
+document: rfc-9639
+kind: wire-format
+summary: 'Block size bits (4 bits) encode common sizes via lookup table: 0b0001=192, 0b0010–0b0101=144*2^v, 0b1000–0b1111=2^v. Values 0b0110 and 0b0111 signal an uncommon block size stored as 8-bit or 16-bit after the coded number (value is block_size-1).'
+section: 9.1.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

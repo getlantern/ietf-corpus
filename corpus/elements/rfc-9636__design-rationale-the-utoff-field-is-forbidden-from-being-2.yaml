@@ -1,0 +1,6 @@
+document: rfc-9636
+kind: design-rationale
+summary: The utoff field is forbidden from being -2^31 specifically to allow 32-bit clients to safely negate the value without integer overflow, a constraint that would otherwise be invisible from the protocol semantics alone.
+section: "3.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

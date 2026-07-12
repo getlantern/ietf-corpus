@@ -1,0 +1,6 @@
+document: rfc-9636
+kind: design-rationale
+summary: Version 1 header and data block are retained in version 2+ files solely for backward compatibility with obsolescent readers. The version 1 block uses 32-bit timestamps limited to 1901-2038; the version 2+ block with 64-bit timestamps is what current readers should use, ignoring the version 1 block entirely.
+section: "3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

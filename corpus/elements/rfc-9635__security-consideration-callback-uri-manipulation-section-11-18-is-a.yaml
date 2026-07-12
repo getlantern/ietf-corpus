@@ -1,0 +1,9 @@
+document: rfc-9635
+kind: security-consideration
+summary: Callback URI manipulation (Section 11.18) is a risk where an attacker substitutes or modifies the client's redirect URI. Clients MUST validate that incoming redirect parameters match those stored in their session, and the interaction hash provides cryptographic binding between the outgoing request and incoming callback.
+section: "11.18"
+topics:
+    - security
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

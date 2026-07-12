@@ -1,0 +1,8 @@
+document: rfc-9639
+kind: security-consideration
+summary: A decoder that blindly accepts maximum frame size, maximum block size, channel count, bit depth, and total sample count from the streaminfo metadata block without performing bounds checks during audio frame decoding could be vulnerable to buffer overflows. Decoders SHOULD validate these fields against actual frame data.
+section: "8.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

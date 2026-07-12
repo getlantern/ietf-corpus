@@ -1,0 +1,11 @@
+document: rfc-9640
+kind: normative-requirement
+summary: The cms-enveloped-data-format identity requires that the EnvelopedData structure MUST have exactly one RecipientInfo. For RSA keys, it MUST be KeyTransRecipientInfo with subjectKeyIdentifier using method 1 from RFC 7093. For ECC keys, it MUST be KeyAgreeRecipientInfo using OriginatorPublicKey with no UserKeyingMaterial and exactly one RecipientEncryptedKeys.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - yang
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

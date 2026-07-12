@@ -1,0 +1,9 @@
+document: rfc-9635
+kind: security-consideration
+summary: Bearer access tokens carry inherent risk because any party possessing the token can use it. The AS SHOULD use short expiration times for bearer tokens, and implementations SHOULD prefer key-bound tokens where possible. Stolen bearer tokens can be replayed by an attacker without limitation until expiry.
+section: "11.9"
+topics:
+    - security
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

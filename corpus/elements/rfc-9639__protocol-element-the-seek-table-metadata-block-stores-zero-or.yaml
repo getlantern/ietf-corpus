@@ -1,0 +1,6 @@
+document: rfc-9639
+kind: protocol-element
+summary: The seek table metadata block stores zero or more 18-byte seek points. Each seek point contains a u(64) first-sample number (0xFFFFFFFFFFFFFFFF for placeholder), u(64) byte offset from the first frame header, and u(16) sample count for the target frame. Seek points MUST be sorted ascending by sample number and MUST be unique by sample number (placeholders excepted).
+section: "8.5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

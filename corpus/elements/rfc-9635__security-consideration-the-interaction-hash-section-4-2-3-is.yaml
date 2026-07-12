@@ -1,0 +1,10 @@
+document: rfc-9635
+kind: security-consideration
+summary: The interaction hash (Section 4.2.3) is calculated from the interaction nonce, finish nonce, interaction reference, and grant endpoint URI, and MUST be validated by the client before continuing a grant after redirect-based interaction. This prevents interception and replay of redirect callbacks by a third party.
+section: "11.25"
+topics:
+    - security
+    - oauth
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

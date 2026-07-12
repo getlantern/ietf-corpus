@@ -1,0 +1,10 @@
+document: rfc-9635
+kind: security-consideration
+summary: All GNAP protocol interactions MUST be protected by TLS. Bearer access tokens in particular are sensitive to interception, and the AS MUST enforce TLS on all endpoints. Key-bound tokens provide additional protection against token theft even when transport security is compromised.
+section: "11.1"
+topics:
+    - security
+    - tls
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,11 @@
+document: rfc-9640
+kind: security-consideration
+summary: NACM 'default-deny-all' is applied to cleartext-password, cleartext-symmetric-key, and cleartext-private-key nodes so they are never returned to clients in normal use. NACM 'default-deny-write' is applied to all writable data nodes in the module, because even modification of a public key or certificate can dramatically alter the security policy.
+section: "3.8"
+topics:
+    - security
+    - yang
+    - netconf
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9635
+kind: security-consideration
+summary: An attacker can attempt Denial of Service by sending many polling continuation requests to the AS. The AS SHOULD enforce rate limiting, return the too_fast error when a client polls before the indicated wait time, and use the too_many_attempts error to signal excessive requests.
+section: "11.27"
+topics:
+    - security
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

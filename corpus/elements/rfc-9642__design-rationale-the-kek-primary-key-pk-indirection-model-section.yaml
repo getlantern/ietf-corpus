@@ -1,0 +1,11 @@
+document: rfc-9642
+kind: design-rationale
+summary: The KEK + primary key (PK) indirection model (Section 4.3) is designed to decouple crypto officers from regular administrators during server migrations. A globally unique built-in asymmetric PK encrypts a shared KEK offline per server; regular administrators then only need to swap the server-specific encrypted KEK entry when migrating a configuration, without ever seeing cleartext key material.
+section: "4.3"
+topics:
+    - yang
+    - netconf
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

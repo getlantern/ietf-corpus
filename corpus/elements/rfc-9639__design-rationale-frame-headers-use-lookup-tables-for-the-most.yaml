@@ -1,0 +1,6 @@
+document: rfc-9639
+kind: design-rationale
+summary: Frame headers use lookup tables for the most common sample rates, block sizes, channel counts, and bit depths to keep overhead small. When a value is not in the lookup table, the frame header redirects the decoder to an appended field or the streaminfo block. Relying on streaminfo makes a stream non-streamable.
+section: "6"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

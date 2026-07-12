@@ -1,0 +1,10 @@
+document: rfc-9636
+kind: security-consideration
+summary: TZif contains no executable code and no extensible areas for such code, but it provides no integrity protection. Since time zone data is used in critical applications, integrity protection MUST be provided externally, and TZif data transmitted over a public channel MUST be protected with a security layer such as TLS.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

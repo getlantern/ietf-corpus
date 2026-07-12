@@ -1,0 +1,9 @@
+document: rfc-9635
+kind: security-consideration
+summary: AS-mix-up attacks (Section 11.12) occur when a client sends a grant request to a malicious AS that then impersonates a legitimate AS. Clients MUST use the grant endpoint URI as the AS identifier and MUST validate that all components of the response (including continuation URIs) are from the expected AS.
+section: "11.12"
+topics:
+    - security
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
