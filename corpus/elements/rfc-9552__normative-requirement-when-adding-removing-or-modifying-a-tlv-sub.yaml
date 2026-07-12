@@ -1,0 +1,10 @@
+document: rfc-9552
+kind: normative-requirement
+summary: When adding, removing, or modifying a TLV/sub-TLV from a Link-State NLRI, the BGP-LS Producer MUST withdraw the old NLRI by including it in the MP_UNREACH_NLRI. Failure to do so results in duplicate and inconsistent link-state objects in the BGP-LS table.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

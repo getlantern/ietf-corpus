@@ -1,0 +1,6 @@
+document: rfc-9557
+kind: design-rationale
+summary: 'RFC 9557 reinterprets the RFC 3339 offset ''Z'' to mean ''the time in UTC is known, but the offset to local time is unknown'' — the same semantics as -00:00 — rather than implying UTC is the preferred reference point. This change aligns with actual implementation practice: because ISO 8601:2000 does not allow -00:00, implementations had been using Z to express those semantics anyway.'
+section: "2.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

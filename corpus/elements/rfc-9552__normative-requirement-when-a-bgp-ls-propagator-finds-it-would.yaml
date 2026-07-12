@@ -1,0 +1,10 @@
+document: rfc-9552
+kind: normative-requirement
+summary: When a BGP-LS Propagator finds it would exceed maximum BGP message size due to addition of other attributes (e.g., AS_PATH), it MUST consider the BGP-LS Attribute malformed and apply 'Attribute Discard' per RFC 7606. It MUST first discard the BGP-LS Attribute when performing Attribute Discard to reduce message size per RFC 8654.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

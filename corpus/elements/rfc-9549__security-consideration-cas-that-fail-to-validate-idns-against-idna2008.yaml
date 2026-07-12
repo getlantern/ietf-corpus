@@ -1,0 +1,10 @@
+document: rfc-9549
+kind: security-consideration
+summary: CAs that fail to validate IDNs against IDNA2008 may issue certificates with A-labels that cannot be correctly represented in DNS, potentially creating name mismatches or certificate validation failures. The CA/Browser Forum provides additional guidance on internal server names.
+section: "3"
+topics:
+    - pkix
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

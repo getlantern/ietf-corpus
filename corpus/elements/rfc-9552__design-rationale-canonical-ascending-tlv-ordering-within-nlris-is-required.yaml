@@ -1,0 +1,9 @@
+document: rfc-9552
+kind: design-rationale
+summary: Canonical ascending TLV ordering within NLRIs is required so that multiple BGP-LS Producers originating the same link-state object produce bit-identical NLRIs despite including optional TLVs. Without this rule, the BGP Decision Process would propagate different 'winner' NLRIs to consumers depending on which producer won, creating ambiguity.
+section: "5.1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

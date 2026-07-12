@@ -1,0 +1,6 @@
+document: rfc-9557
+kind: design-rationale
+summary: Offset time zones (e.g., [+08:45]) are supported for backwards compatibility with java.time.ZonedDateTime but are strongly discouraged. They incorrectly assert a permanently fixed UTC offset, causing wrong date arithmetic across DST boundaries. Named IANA Time Zones should be used instead.
+section: "1.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

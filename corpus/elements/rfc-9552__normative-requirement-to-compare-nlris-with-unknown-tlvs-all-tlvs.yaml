@@ -1,0 +1,10 @@
+document: rfc-9552
+kind: normative-requirement
+summary: To compare NLRIs with unknown TLVs, all TLVs within an NLRI MUST be ordered in ascending order by TLV Type; ties broken by ascending Length then lexicographic ascending Value. NLRIs with TLVs that do not follow this canonical ordering MUST be considered malformed by a BGP-LS Propagator.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

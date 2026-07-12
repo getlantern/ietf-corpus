@@ -1,0 +1,8 @@
+document: rfc-9555
+kind: interoperability-note
+summary: The vCard TEL property's default TYPE is 'voice', but the JSContact Phone object's features property is absent by default. Implementations SHOULD only set Phone features if the TEL property actually carries a TEL-specific TYPE parameter, to avoid spurious 'voice' features on converted entries.
+section: 2.7.6
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

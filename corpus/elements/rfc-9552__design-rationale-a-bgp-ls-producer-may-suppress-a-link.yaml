@@ -1,0 +1,9 @@
+document: rfc-9552
+kind: design-rationale
+summary: A BGP-LS Producer MAY suppress a Link NLRI (half-link) until the IGP has verified two-way connectivity — i.e., both connected nodes report the adjacency in their LSP/LSA. This avoids advertising one-sided adjacencies and ensures only established IGP adjacencies are reported via BGP-LS.
+section: 5.2.2
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

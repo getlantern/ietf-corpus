@@ -1,0 +1,10 @@
+document: rfc-9549
+kind: design-rationale
+summary: 'RFC 8399 required conversion of A-labels to U-labels to process name constraints for internationalized email addresses in SmtpUTF8Mailbox, which led to implementation complexity and at least two security vulnerabilities. RFC 9549 eliminates this requirement: all IDNs are now carried and processed exclusively as A-labels.'
+section: "1.2"
+topics:
+    - pkix
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

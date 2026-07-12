@@ -1,0 +1,10 @@
+document: rfc-9549
+kind: security-consideration
+summary: 'RFC 8399''s requirement to convert A-labels back to U-labels for processing name constraints on internationalized email addresses led to at least two security vulnerabilities (see CVE-2022-3602 / OpenSSL punycode vulnerability). RFC 9549 removes this conversion requirement entirely: A-labels are used throughout.'
+section: "3"
+topics:
+    - pkix
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

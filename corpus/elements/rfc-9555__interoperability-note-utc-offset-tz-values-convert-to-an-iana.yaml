@@ -1,0 +1,8 @@
+document: rfc-9555
+kind: interoperability-note
+summary: UTC-OFFSET TZ values convert to an IANA Time Zone Database name only when the offset has zero minutes and the hour is between -12 and +14 inclusive (e.g., '-0500' → 'Etc/GMT+5', zero → 'Etc/UTC'). All other UTC-OFFSET and URI TZ values must be preserved via vCardProps.
+section: 2.8.2
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
