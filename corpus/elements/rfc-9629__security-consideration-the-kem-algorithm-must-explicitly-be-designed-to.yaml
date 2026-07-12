@@ -1,0 +1,11 @@
+document: rfc-9629
+kind: security-consideration
+summary: The KEM algorithm MUST explicitly be designed to be secure when the public key is used many times, because the public key is expected to be carried in a long-lived certificate and reused. KEM algorithms offering IND-CCA2 security are appropriate; a common pattern for achieving this is the Fujisaki-Okamoto (FO) transform or a variant.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

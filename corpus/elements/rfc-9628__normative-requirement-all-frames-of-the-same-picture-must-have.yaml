@@ -1,0 +1,10 @@
+document: rfc-9628
+kind: normative-requirement
+summary: All frames of the same picture MUST have the same PID value. The PID SHOULD start on a random number and MUST wrap after reaching the maximum (0x7f for 7-bit, 0x7fff for 15-bit). The receiver MUST NOT assume the number of bits in the PID remains constant throughout the session.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

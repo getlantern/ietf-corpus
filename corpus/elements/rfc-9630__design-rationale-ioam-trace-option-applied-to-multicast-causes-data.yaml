@@ -1,0 +1,9 @@
+document: rfc-9630
+kind: design-rationale
+summary: IOAM trace option applied to multicast causes data redundancy because each replicated packet carries a complete trace at tree leaves. Most trace data (except the final leaf branch) appears in multiple copies, wasting bandwidth and complicating processing; the problem scales with tree size and path length.
+section: "3"
+topics:
+    - multicast
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9632
+kind: design-rationale
+summary: 'A signed geofeed file MUST only contain prefixes within the signing inetnum:''s range, making it incompatible with being referenced from multiple inetnum: objects; unsigned files may be shared across objects. This design ensures the signing certificate''s address coverage constraint is always satisfiable.'
+section: "3"
+topics:
+    - security
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9632
+kind: wire-format
+summary: The optional RPKI authenticator appended to a geofeed file is a CMS detached DER-encoded signature over the canonicalized (UTF-8, CRLF) geofeed body, then Base64-encoded with padding and line-wrapped to 72 or fewer characters, embedded as '#'-prefixed comment lines.
+section: "5"
+topics:
+    - security
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

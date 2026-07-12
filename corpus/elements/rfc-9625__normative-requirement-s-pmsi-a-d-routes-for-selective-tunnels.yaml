@@ -1,0 +1,10 @@
+document: rfc-9625
+kind: normative-requirement
+summary: S-PMSI A-D routes for selective tunnels MUST carry the SBD-RT so all Tenant Domain PEs import them. Each such route MUST also carry the RT of the source BD and have the source BD's Tag ID in its NLRI. For RSVP-TE P2MP selective tunnels, the LIR flag of the PTA SHOULD NOT be set because OISM PEs know which egress PEs are interested.
+section: 3.2.6
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9625
+kind: normative-requirement
+summary: Traffic originating in an actual BD MUST NOT be sent down the SBD IRB interface, as that traffic has already been distributed throughout the Tenant Domain via inter-PE tunneling. The SBD IRB interface OIF list must exclude locally-sourced intra-domain traffic to prevent duplicate delivery.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9625
+kind: security-consideration
+summary: The OISM control plane relies on BGP Route Target communities to scope route distribution; the route-validation rules in Section 2.2 require treat-as-withdraw for routes carrying ambiguous or conflicting RTs, guarding against misconfigured or malicious route advertisements that could misdirect multicast forwarding state.
+section: "9"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

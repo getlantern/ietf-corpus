@@ -1,0 +1,10 @@
+document: rfc-9632
+kind: design-rationale
+summary: The 'inherit' capability in IP Address Delegation extensions is prohibited for geofeed signing certificates because it would require the implementation to build the certification path, validate it, and then carry remembered state from path validation forward into CMS object processing — a complexity and error-prone coupling judged not worth the minor certificate size savings.
+section: "5"
+topics:
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

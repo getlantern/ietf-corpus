@@ -1,0 +1,9 @@
+document: rfc-9630
+kind: design-rationale
+summary: In the per-section postcard solution, each branch fork node exports accumulated trace data in a postcard before replicating the packet, then clears the IOAM node data list and resets RemainingLen. This avoids redundancy while preserving per-branch telemetry, with no modification needed to the IOAM trace option header format.
+section: "4.2"
+topics:
+    - multicast
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

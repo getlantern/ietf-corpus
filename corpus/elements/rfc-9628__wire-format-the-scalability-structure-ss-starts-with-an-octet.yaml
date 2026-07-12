@@ -1,0 +1,9 @@
+document: rfc-9628
+kind: wire-format
+summary: The Scalability Structure (SS) starts with an octet encoding N_S (3 bits, number of spatial layers minus 1), Y (1 bit, resolution present), G (1 bit, PG description present), and 3 reserved bits. When Y=1, each spatial layer has WIDTH and HEIGHT fields (2 octets each). When G=1, N_G (1 octet) precedes per-picture TID/U/R entries with R P_DIFF fields each.
+section: 4.2.1
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

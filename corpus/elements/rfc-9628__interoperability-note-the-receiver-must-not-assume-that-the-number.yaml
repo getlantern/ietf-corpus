@@ -1,0 +1,9 @@
+document: rfc-9628
+kind: interoperability-note
+summary: The receiver MUST NOT assume that the number of bits in the PID (7 or 15) stays the same through the session. Transitions are handled by zero-extension (7→15 bits) or truncation (15→7 bits), and the switch may only occur on the first packet of a key picture.
+section: "4.2"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9633
+kind: security-consideration
+summary: Unauthorized write operations (e.g., edit-config) to writable data nodes can break or incorrectly connect DetNet flows. Since DetNet is a configured data plane, uncoordinated changes result in denial of service; arbitrary writes could also reroute traffic to avoid security controls or expose it to an adversary node.
+section: "10"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

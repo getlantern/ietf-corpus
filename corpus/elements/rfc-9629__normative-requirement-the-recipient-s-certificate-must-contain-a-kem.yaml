@@ -1,0 +1,11 @@
+document: rfc-9629
+kind: normative-requirement
+summary: The recipient's certificate MUST contain a KEM public key. A recipient X.509 version 3 certificate that contains a key usage extension MUST assert the keyEncipherment bit. For recipient processing, implementations MUST support both issuerAndSerialNumber and subjectKeyIdentifier alternatives for specifying the recipient's certificate.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9629
+kind: wire-format
+summary: KEMRecipientInfo ::= SEQUENCE { version CMSVersion (always 0), rid RecipientIdentifier, kem KEMAlgorithmIdentifier, kemct OCTET STRING, kdf KeyDerivationAlgorithmIdentifier, kekLength INTEGER (1..65535), ukm [0] EXPLICIT UserKeyingMaterial OPTIONAL, wrap KeyEncryptionAlgorithmIdentifier, encryptedKey EncryptedKey }.
+section: "3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

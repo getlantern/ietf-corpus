@@ -1,0 +1,9 @@
+document: rfc-9630
+kind: protocol-element
+summary: The Per-Section Postcard solution combines IOAM trace option with postcard-based telemetry. Branch fork nodes and leaf nodes export postcards containing the accumulated trace section, then refresh the IOAM header (clear node data list, reset RemainingLen) before the packet continues, eliminating redundant data without modifying the trace option header format.
+section: "4.2"
+topics:
+    - multicast
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

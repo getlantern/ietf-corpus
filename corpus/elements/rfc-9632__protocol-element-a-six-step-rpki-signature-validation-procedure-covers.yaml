@@ -1,0 +1,11 @@
+document: rfc-9632
+kind: protocol-element
+summary: 'A six-step RPKI signature validation procedure covers: (1) extracting the signer certificate and verifying SubjectKeyIdentifier match, (2) confirming the certificate is on the current RPKI manifest with all resources covered, (3) building and validating the certification path per RFC 5280 and RFC 3779, (4) validating the CMS SignedData, (5) confirming the eContentType OID, and (6) verifying the IP Address Delegation extension covers all prefixes in the file. All six steps MUST succeed.'
+section: "5"
+topics:
+    - security
+    - pkix
+    - crypto
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

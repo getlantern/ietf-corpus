@@ -1,0 +1,10 @@
+document: rfc-9625
+kind: normative-requirement
+summary: If an egress PE withdraws its IMET route for a source BD, the ingress PE MUST immediately stop using the label from that IMET route and MUST use the SBD-IMET label from that egress PE instead. Implementations must handle BD-specific IMET routes arriving after the SBD-IMET route.
+section: 3.2.2
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

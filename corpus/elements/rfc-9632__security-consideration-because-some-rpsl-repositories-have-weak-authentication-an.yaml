@@ -1,0 +1,10 @@
+document: rfc-9632
+kind: security-consideration
+summary: 'Because some RPSL repositories have weak authentication, an attacker or customer can publish an unsigned, narrower inetnum: in a weakly-authorized WHOIS registry that points to a malicious geofeed file; since the most-specific inetnum: MUST be used, this overrides a broader RPKI-signed entry. Mandatory signatures would prevent this but are not required.'
+section: "9"
+topics:
+    - security
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

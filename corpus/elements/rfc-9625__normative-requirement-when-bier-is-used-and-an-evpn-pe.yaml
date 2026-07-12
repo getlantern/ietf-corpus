@@ -1,0 +1,10 @@
+document: rfc-9625
+kind: normative-requirement
+summary: When BIER is used and an EVPN PE may be an ingress for externally-sourced traffic, that PE MUST originate an SBD-IMET route. IMET routes for all other BDs in the Tenant Domain MUST carry the SBD-RT, and every IMET route MUST carry a PTA with an upstream-assigned MPLS label uniquely identifying its source BD.
+section: 3.2.4
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

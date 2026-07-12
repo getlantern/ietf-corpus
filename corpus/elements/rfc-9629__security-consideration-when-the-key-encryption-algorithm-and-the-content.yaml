@@ -1,0 +1,9 @@
+document: rfc-9629
+kind: security-consideration
+summary: When the key-encryption algorithm and the content-encryption (or authentication) algorithm use different key sizes, the effective security is determined by the weaker of the two. For example, AES-CBC with a 128-bit CEK wrapped under AES-KEYWRAP with a 256-bit KEK provides at most 128 bits of protection.
+section: "7"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

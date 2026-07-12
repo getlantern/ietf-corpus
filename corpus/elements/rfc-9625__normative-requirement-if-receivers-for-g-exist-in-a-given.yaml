@@ -1,0 +1,10 @@
+document: rfc-9625
+kind: normative-requirement
+summary: If receivers for (*,G) exist in a given Tenant Domain, there MUST NOT be anycast sources for group G within that Tenant Domain. Unlike PIM's RPF-based deduplication, OISM distributes all (S,G) flows with the same anycast source address independently, causing duplicate delivery to (*,G) receivers.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

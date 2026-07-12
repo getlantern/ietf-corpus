@@ -1,0 +1,10 @@
+document: rfc-9625
+kind: normative-requirement
+summary: At an ingress PE, an IP multicast frame received from an AC is (1) tunneled unchanged to interested remote PEs, and (2) sent up the BD's IRB interface for inter-subnet forwarding. IP multicast sent down a non-SBD IRB interface goes ONLY to local ACs of that BD; remote delivery has already occurred via step 1.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
