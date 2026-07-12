@@ -1,0 +1,8 @@
+document: rfc-9698
+kind: interoperability-note
+summary: All JMAP servers support internationalized email addresses (RFC 6530). If the IMAP server does not, or if the client does not issue ENABLE UTF8=ACCEPT (RFC 6855), the client may receive accurate address fields via JMAP but downgraded fields via IMAP. Issuing ENABLE UTF8=ACCEPT sidesteps this issue.
+section: "3"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

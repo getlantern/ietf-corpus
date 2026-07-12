@@ -1,0 +1,10 @@
+document: rfc-9692
+kind: normative-requirement
+summary: LIEs MUST be sent with an IPv4 TTL or IPv6 Hop Limit of either 1 or 255 to prevent RIFT information from reaching beyond a single Layer 3 next hop. TTL 1 is the more logical choice for link-local multicast addresses, as TTL 255 may cause drops in some environments.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

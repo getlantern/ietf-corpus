@@ -1,0 +1,9 @@
+document: rfc-9698
+kind: security-consideration
+summary: JMAPACCESS reveals to authenticated IMAP clients that their credentials also work for JMAP and that object IDs match. However, since the client is already authenticated, the attacker already has valid credentials, and RFC 8620 Section 2.2 already discloses how to find the JMAP session URL without this extension. The migration value is considered to far outweigh the marginal risk.
+section: "7"
+topics:
+    - security
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

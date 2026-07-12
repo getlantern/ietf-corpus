@@ -1,0 +1,8 @@
+document: rfc-9692
+kind: design-rationale
+summary: In a partitioned ToF fabric, positive disaggregation alone cannot solve the fallen leaf problem because ToF planes are isolated; disaggregation from one plane does not reach ToP switches in another plane. Negative, transitive disaggregation is required and must propagate all the way to the leaf nodes, which are the level that selects the ToF plane for each packet.
+section: "5.5"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

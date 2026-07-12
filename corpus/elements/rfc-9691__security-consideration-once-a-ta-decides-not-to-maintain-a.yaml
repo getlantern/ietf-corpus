@@ -1,0 +1,10 @@
+document: rfc-9691
+kind: security-consideration
+summary: Once a TA decides not to maintain a previously current key pair, it SHOULD destroy the associated private key and SHOULD reuse the TA CA certificate URLs from the previous TAL for the next TAL. These measures mitigate the risk of an adversary gaining access to the private key and sending invalid data to RPs seeded with old TAL data.
+section: "10.1"
+topics:
+    - routing
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

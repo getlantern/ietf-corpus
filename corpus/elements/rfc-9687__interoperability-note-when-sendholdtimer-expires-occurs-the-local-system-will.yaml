@@ -1,0 +1,9 @@
+document: rfc-9687
+kind: interoperability-note
+summary: When SendHoldTimer_Expires occurs, the local system will likely be unable to deliver a NOTIFICATION message to the remote peer since the connection is blocked. The specification allows an optional attempt to send NOTIFICATION only if doing so will not delay connection teardown, acknowledging the asymmetric visibility between local and remote systems.
+section: "7"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

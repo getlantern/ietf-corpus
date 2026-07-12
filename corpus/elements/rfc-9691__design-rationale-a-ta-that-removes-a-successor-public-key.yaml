@@ -1,0 +1,9 @@
+document: rfc-9691
+kind: design-rationale
+summary: A TA that removes a successor public key from a TAK object SHOULD NOT add the same successor public key back, because an RP that started an acceptance timer may not have fetched the TAK during its removal and would transition more quickly than other RPs. Updating the URL set forces all RPs to restart their acceptance timers.
+section: "9.1"
+topics:
+    - routing
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

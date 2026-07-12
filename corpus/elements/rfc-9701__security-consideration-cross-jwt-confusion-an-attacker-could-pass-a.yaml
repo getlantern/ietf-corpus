@@ -1,0 +1,10 @@
+document: rfc-9701
+kind: security-consideration
+summary: 'Cross-JWT confusion: an attacker could pass a JWT introspection response as an access token to the RS, since iss and aud may resemble those of a JWT access token. Countermeasures are the ''token-introspection+jwt'' typ header and encapsulation of introspection claims inside token_introspection; RS MUST check the typ header and verify all minimally required access token claims are present.'
+section: "8.1"
+topics:
+    - oauth
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

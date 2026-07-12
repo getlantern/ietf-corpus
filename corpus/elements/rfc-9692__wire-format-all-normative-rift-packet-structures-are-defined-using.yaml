@@ -1,0 +1,9 @@
+document: rfc-9692
+kind: wire-format
+summary: All normative RIFT packet structures are defined using Apache Thrift. The top-level _ProtocolPacket_ contains a _PacketHeader_ and a _PacketContent_ union of _LIEPacket_, _TIEPacket_, _TIDEPacket_, and _TIREPacket_. The serialized _ProtocolPacket_ is carried inside a UDP frame wrapped in a security envelope (Section 6.9.3).
+section: "6.1"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

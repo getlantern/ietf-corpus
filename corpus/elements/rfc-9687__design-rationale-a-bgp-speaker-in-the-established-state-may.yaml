@@ -1,0 +1,10 @@
+document: rfc-9687
+kind: design-rationale
+summary: A BGP speaker in the Established state may encounter a peer advertising a TCP Receive Window of zero, preventing transmission of KEEPALIVE, UPDATE, or any other BGP messages. Existing BGP implementations have no visibility into TCP window state and no mechanism to detect or handle this condition consistently, leading to stale routing information and potential traffic loss.
+section: "3"
+topics:
+    - bgp
+    - tcp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

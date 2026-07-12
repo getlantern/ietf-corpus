@@ -1,0 +1,10 @@
+document: rfc-9697
+kind: design-rationale
+summary: Comparing only the server-provided session_id and latest serial number across distinct RP instances is insufficient to detect divergence caused by mutated delta files. Hash comparison of all previously seen serial-to-hash mappings is required to surface this form of desynchronization.
+section: "2"
+topics:
+    - routing
+    - bgp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

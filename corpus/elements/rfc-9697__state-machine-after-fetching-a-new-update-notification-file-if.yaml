@@ -1,0 +1,10 @@
+document: rfc-9697
+kind: state-machine
+summary: After fetching a new Update Notification File, if the session_id matches the last known session_id, the RP compares each previously recorded serial-to-hash pair against the corresponding entry in the new file. A hash mismatch for any previously seen serial triggers the desynchronization-detected state and initiates snapshot recovery.
+section: "3"
+topics:
+    - routing
+    - bgp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

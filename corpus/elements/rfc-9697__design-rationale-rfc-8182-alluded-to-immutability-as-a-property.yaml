@@ -1,0 +1,10 @@
+document: rfc-9697
+kind: design-rationale
+summary: RFC 8182 alluded to immutability as a property of RRDP files but did not make it an absolute requirement. If a server serves differing data for the same session_id and serial number, distinct Relying Party instances that connected at different moments will end up with divergent local repositories, violating the principle of least astonishment.
+section: "2"
+topics:
+    - routing
+    - bgp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,8 @@
+document: rfc-9692
+kind: design-rationale
+summary: 'RIFT uses a hybrid approach: link-state flooding northbound so each level obtains full topology of levels below it, and distance-vector propagation southbound where each node generates and floods a default route only one hop south. This hybrid minimizes control-plane state, enables natural address aggregation, and supports loop-free valley-free forwarding.'
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

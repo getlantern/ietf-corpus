@@ -1,0 +1,11 @@
+document: rfc-9701
+kind: security-consideration
+summary: To prevent token data leakage, the AS MUST use TLS 1.2 or higher per BCP 195 (RFC 9325), and MUST require all requests to the introspection endpoint to be authenticated, preventing introspection by parties that are not the intended consumer.
+section: "8.2"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,8 @@
+document: rfc-9690
+kind: design-rationale
+summary: This document replaces the RFC 5990 KeyTransRecipientInfo approach with KEMRecipientInfo (RFC 9629), sending the ciphertext in the kemct field and the wrapped key in the encryptedKey field separately, rather than concatenating them as EK = (C || WK). The id-rsa-kem-spki alias for id-rsa-kem is introduced to avoid visual confusion and maintain backward compatibility.
+section: "1.6"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

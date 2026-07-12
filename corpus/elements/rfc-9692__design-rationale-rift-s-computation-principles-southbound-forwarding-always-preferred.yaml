@@ -1,0 +1,8 @@
+document: rfc-9692
+kind: design-rationale
+summary: 'RIFT''s computation principles (southbound forwarding always preferred) guarantee valley-free forwarding: packets may reverse direction from northbound to southbound, and may traverse horizontal links at most once during the northbound phase. This eliminates the need to tie-break identical reachability from multiple directions, enabling loop-free use of all available fabric paths.'
+section: "5.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

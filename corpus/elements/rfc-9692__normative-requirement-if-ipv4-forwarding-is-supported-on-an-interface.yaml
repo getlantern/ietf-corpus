@@ -1,0 +1,9 @@
+document: rfc-9692
+kind: normative-requirement
+summary: If IPv4 forwarding is supported on an interface, _ipv4_forwarding_capable_ MUST be set to true in all LIEs advertised from that interface. A node sending IPv4 LIEs MUST set this flag to true. In the absence of IPv4 LIEs with this flag set, a node MUST forward IPv4 packets using IPv6 gateways discovered on IPv6-only links that advertise this capability.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9687
+kind: state-machine
+summary: In the OpenConfirm state, upon receiving a KEEPALIVE (Event 26), the FSM now additionally starts the SendHoldTimer if SendHoldTime is non-zero before transitioning to the Established state. This extends the existing RFC 4271 behavior of restarting HoldTimer and changing state.
+section: "4.3"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

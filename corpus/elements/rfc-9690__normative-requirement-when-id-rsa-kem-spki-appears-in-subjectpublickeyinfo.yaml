@@ -1,0 +1,10 @@
+document: rfc-9690
+kind: normative-requirement
+summary: When id-rsa-kem-spki appears in SubjectPublicKeyInfo, the AlgorithmIdentifier parameters SHOULD be absent; with absent parameters, KDF3 with SHA-256 is used by default. When parameters are present, GenericHybridParameters MUST be used with id-kem-rsa and RsaKemParameters.
+section: "2.3"
+rfc2119_level: SHOULD
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

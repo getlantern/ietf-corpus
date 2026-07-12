@@ -1,0 +1,9 @@
+document: rfc-9690
+kind: security-consideration
+summary: RSA key size and underlying components must be selected consistent with the desired security level. For 128-bit security, the RSA key should be at least 3072 bits, the KDF should use SHA-256, and the symmetric key-encryption should use AES Key Wrap with a 128-bit key (per NIST SP 800-57).
+section: "3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

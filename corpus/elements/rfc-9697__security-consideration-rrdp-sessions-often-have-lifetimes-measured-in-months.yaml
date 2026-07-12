@@ -1,0 +1,10 @@
+document: rfc-9697
+kind: security-consideration
+summary: RRDP sessions often have lifetimes measured in months, so desynchronization can persist for an extended period if undetected. Caches in a desynchronized state emit a different set of Validated Payloads than they would from a consistent repository copy, causing route announcements to be incorrectly marked 'unknown' or 'invalid' for an indeterminate period.
+section: "6"
+topics:
+    - routing
+    - bgp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

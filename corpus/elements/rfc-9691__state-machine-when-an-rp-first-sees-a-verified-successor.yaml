@@ -1,0 +1,9 @@
+document: rfc-9691
+kind: state-machine
+summary: When an RP first sees a verified successor public key, it sets a 30-day acceptance timer and cancels any existing acceptance timer. On subsequent validation runs, if the timer has not expired the RP continues using the current key; once the timer expires and the successor key is still valid and unchanged, the RP transitions to using the successor public key.
+section: "4"
+topics:
+    - routing
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

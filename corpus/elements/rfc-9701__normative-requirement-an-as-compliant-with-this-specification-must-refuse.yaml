@@ -1,0 +1,11 @@
+document: rfc-9701
+kind: normative-requirement
+summary: An AS compliant with this specification MUST refuse to serve introspection requests that don't authenticate the caller and return an HTTP status code 400, to prevent downgrading to plain RFC 7662 behavior and ensure token data is released only to legitimate recipients.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

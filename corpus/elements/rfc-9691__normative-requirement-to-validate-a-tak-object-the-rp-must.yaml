@@ -1,0 +1,11 @@
+document: rfc-9691
+kind: normative-requirement
+summary: 'To validate a TAK object, the RP MUST verify: the eContentType OID matches, the TAK was issued by a TA CA certificate, only one TAK with .tak extension appears on the manifest, the EE certificate uses ''inherit'' for INRs, the decoded content conforms to the format, and the current SubjectPublicKeyInfo matches the issuing TA CA certificate.'
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - routing
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

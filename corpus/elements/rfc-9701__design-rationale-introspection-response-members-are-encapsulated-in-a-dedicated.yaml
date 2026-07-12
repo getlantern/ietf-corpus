@@ -1,0 +1,10 @@
+document: rfc-9701
+kind: design-rationale
+summary: Introspection response members are encapsulated in a dedicated 'token_introspection' JWT claim rather than placed at the top level to prevent conflict and confusion with top-level JWT claims that may bear the same name (e.g., sub, exp, scope), thereby also preventing misuse of the JWT as an access token.
+section: "5"
+topics:
+    - oauth
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

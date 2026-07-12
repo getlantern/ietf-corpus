@@ -1,0 +1,9 @@
+document: rfc-9687
+kind: state-machine
+summary: Each time the local system sends a BGP message in the Established state, it restarts the SendHoldTimer unless SendHoldTime is zero or the negotiated HoldTime is zero (in which case SendHoldTimer is stopped). The SendHoldTimer is also stopped following any transition out of Established state as part of releasing BGP resources.
+section: "4.3"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9687
+kind: state-machine
+summary: A new FSM event, Event 29 (SendHoldTimer_Expires), is defined as an optional event generated when the SendHoldTimer expires. Upon this event in the Established state, the local system optionally sends a NOTIFICATION, logs an error, releases all BGP resources, sets ConnectRetryTimer to zero, drops the TCP connection, increments ConnectRetryCounter, optionally damps peer oscillations, and transitions to Idle.
+section: "4.2"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

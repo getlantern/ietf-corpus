@@ -1,0 +1,9 @@
+document: rfc-9692
+kind: security-consideration
+summary: An attacker that can forge the outer security envelope fingerprint can potentially cause a node to accept malicious TIEs. The outer fingerprint covers the UDP payload before Thrift deserialization; Section 9.7 recommends verifying the outer fingerprint before any further processing to limit the attack surface.
+section: "9.7"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

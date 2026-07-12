@@ -1,0 +1,9 @@
+document: rfc-9692
+kind: security-consideration
+summary: RIFT LIEs MUST carry TTL/HL of 1 or 255 to contain packets to a single L3 hop; receiving implementations SHOULD validate these values and drop packets with unexpected values. This prevents off-link injection attacks against the neighbor discovery plane.
+section: "9.2"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
