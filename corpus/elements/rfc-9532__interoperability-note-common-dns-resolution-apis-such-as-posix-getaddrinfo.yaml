@@ -1,0 +1,9 @@
+document: rfc-9532
+kind: interoperability-note
+summary: Common DNS resolution APIs such as POSIX getaddrinfo may not expose the full CNAME chain. The AI_CANONNAME option returns only the final canonical name, not intermediate aliases. Implementations limited to getaddrinfo may therefore only be able to populate the canonical name in the parameter.
+section: "3"
+topics:
+    - http
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

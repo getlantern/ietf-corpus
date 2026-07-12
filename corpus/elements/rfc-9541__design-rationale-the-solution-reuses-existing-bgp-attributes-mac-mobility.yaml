@@ -1,0 +1,9 @@
+document: rfc-9541
+kind: design-rationale
+summary: The solution reuses existing BGP attributes (MAC Mobility extended community and EVPN MAC/IP Advertisement route) rather than defining new ones, encoding the I-SID in the Ethernet Tag field. This ensures RRs accept and reflect B-MAC/I-SID routes without modification, providing reliable flush propagation in networks with Route Reflectors.
+section: "3"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

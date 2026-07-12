@@ -1,0 +1,10 @@
+document: rfc-9540
+kind: security-consideration
+summary: Attackers on a network can strip SVCB records from unprotected DNS answers (lacking DNSSEC), effectively downgrading clients away from Oblivious HTTP. Clients can mitigate this by always checking for gateway configuration at the well-known URI; using encrypted DNS with DNSSEC also mitigates this.
+section: "7"
+topics:
+    - dns
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

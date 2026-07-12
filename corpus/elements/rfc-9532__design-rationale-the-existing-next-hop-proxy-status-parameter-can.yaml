@@ -1,0 +1,9 @@
+document: rfc-9532
+kind: design-rationale
+summary: The existing next-hop Proxy-Status parameter can contain only one hostname, IP address, or alias, so it cannot convey the full CNAME chain encountered during DNS resolution. A new parameter is needed to allow clients to see the complete chain of DNS names, which is particularly useful for CONNECT and UDP proxying clients.
+section: "1"
+topics:
+    - http
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

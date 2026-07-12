@@ -1,0 +1,11 @@
+document: rfc-9538
+kind: design-rationale
+summary: CDNI delegation via ACME avoids sharing private cryptographic key material between upstream and downstream CDNs. The uCDN generates on-demand an X.509 certificate that binds the delegated domain name with a key pair owned by the dCDN, keeping the uCDN in full control and allowing revocation at any time.
+section: "1"
+topics:
+    - acme
+    - pkix
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

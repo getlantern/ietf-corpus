@@ -1,0 +1,9 @@
+document: rfc-9541
+kind: design-rationale
+summary: Existing C-MAC flush in RFC 7623 operates at B-MAC granularity (B-MAC/0 routes) and, when reused for null-ESI scenarios, causes unnecessary flushing of all I-SIDs associated with a B-MAC rather than only the affected I-SID. This document introduces I-SID-encoded Ethernet Tag in MAC/IP Advertisement routes to achieve per-I-SID flush granularity.
+section: "1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

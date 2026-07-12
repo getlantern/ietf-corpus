@@ -1,0 +1,9 @@
+document: rfc-9537
+kind: design-rationale
+summary: jCard's heavy reliance on positional arrays (inherited from vCard) necessitates the Redaction by Empty Value Method for required properties like "fn", since removing array elements would produce non-conformant jCard and jCard extensions like JSContact avoid this issue entirely.
+section: "3"
+topics:
+    - json
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
