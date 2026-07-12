@@ -1,0 +1,9 @@
+document: rfc-9678
+kind: security-consideration
+summary: If a Cryptographically Relevant Quantum Computer (CRQC) is built, it could recover SHARED_SECRET from the ECDHE public keys. Combined with long-term key compromise, this would eliminate the forward secrecy property. Symmetric algorithms (HMAC-SHA-256, AT_AUTN, AT_RES) remain secure. Future documents can add PQC KEM support through the same AT_PUB_ECDHE/AT_KDF_FS framework.
+section: "7.7"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

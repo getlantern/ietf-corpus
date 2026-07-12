@@ -1,0 +1,10 @@
+document: rfc-9679
+kind: normative-requirement
+summary: 'A COSE Key Thumbprint MUST be computed by: (1) constructing a COSE_Key structure with only required parameters, (2) applying CBOR deterministic encoding per RFC 8949 Section 4.2.1, and (3) hashing the resulting bytes with a cryptographic hash function.'
+section: "3"
+rfc2119_level: MUST
+topics:
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

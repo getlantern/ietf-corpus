@@ -1,0 +1,10 @@
+document: rfc-9686
+kind: normative-requirement
+summary: To reduce packet-loss effects, the client MUST retransmit the ADDR-REG-INFORM message following RFC 8415 Section 15 retransmission logic with default IRT of 1 second and MRC of 3. The transaction ID MUST remain unchanged in retransmissions, but lifetimes MUST be updated to current values.
+section: "4.5"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

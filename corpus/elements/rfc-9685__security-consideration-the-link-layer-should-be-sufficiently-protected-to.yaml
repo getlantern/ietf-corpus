@@ -1,0 +1,9 @@
+document: rfc-9685
+kind: security-consideration
+summary: The link layer SHOULD be sufficiently protected to prevent rogue access. Using RFC 8505 ND-based subscription (instead of RPL DAO injection) for multicast/anycast provides a better security posture because nodes not trusted to inject RPL messages can be forbidden from participating as RPL-Aware Nodes while still obtaining multicast/anycast delivery via ND operations as RPL-Unaware Leaves.
+section: "12"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

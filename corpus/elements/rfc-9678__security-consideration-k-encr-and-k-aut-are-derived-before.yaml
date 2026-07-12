@@ -1,0 +1,10 @@
+document: rfc-9678
+kind: security-consideration
+summary: K_encr and K_aut are derived before the ECDHE shared secret is available. Consequently, data encrypted in AT_ENCR in the EAP-Request/AKA'-Challenge (e.g., re-authentication pseudonyms) is not forward secret. An adversary compromising the long-term key can link re-authentication runs within a sequence following a single full authentication.
+section: "7.6"
+topics:
+    - security
+    - crypto
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

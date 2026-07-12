@@ -1,0 +1,9 @@
+document: rfc-9678
+kind: protocol-element
+summary: 'When the FS extension is active (AT_KDF=1, AT_KDF_FS=1 or 2), key derivation proceeds as: MK=PRF''(IK''|CK'',"EAP-AKA''"|Identity); MK_ECDHE=PRF''(IK''|CK''|SHARED_SECRET,"EAP-AKA'' FS"|Identity). K_encr=MK[0..127], K_aut=MK[128..383], K_re=MK_ECDHE[0..255], MSK=MK_ECDHE[256..767], EMSK=MK_ECDHE[768..1279]. AT_KDF governs K_encr and K_aut; AT_KDF_FS governs K_re, MSK, and EMSK.'
+section: "6.3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

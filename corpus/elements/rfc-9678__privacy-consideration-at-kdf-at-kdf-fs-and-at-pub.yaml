@@ -1,0 +1,9 @@
+document: rfc-9678
+kind: privacy-consideration
+summary: AT_KDF, AT_KDF_FS, and AT_PUB_ECDHE are transmitted without protection and reveal the cryptographic algorithms in use; if algorithm choice depends on the Peer identity, they leak information about the Peer. AT_KDF_INPUT reveals the network name. An observer can use these for traffic flow analysis or endpoint tracking.
+section: "7.5"
+topics:
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

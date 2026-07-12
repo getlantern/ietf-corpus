@@ -1,0 +1,10 @@
+document: rfc-9684
+kind: design-rationale
+summary: The tpm20-attestation grouping includes optional unsigned-pcr-values alongside the mandatory TPMS_QUOTE_INFO digest. This is because the TPM2B_DIGEST is calculated across multiple PCRs, making it expensive for a Verifier to detect which single PCR changed. Providing individual PCR values allows the Verifier to confirm the signature while eliminating significant processing when only one PCR has changed.
+section: 2.1.1.3.2
+topics:
+    - yang
+    - security
+    - design-rationale
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

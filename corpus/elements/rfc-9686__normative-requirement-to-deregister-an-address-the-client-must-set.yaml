@@ -1,0 +1,10 @@
+document: rfc-9686
+kind: normative-requirement
+summary: To deregister an address, the client MUST set both preferred-lifetime and valid-lifetime to zero in the IA Address option of the ADDR-REG-INFORM message. The server receiving a valid-lifetime of zero MUST act as if the address has expired and remove the binding.
+section: 4.6.3
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

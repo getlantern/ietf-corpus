@@ -1,0 +1,10 @@
+document: rfc-9678
+kind: normative-requirement
+summary: When the Peer receives a new EAP-Request/AKA'-Challenge after requesting a KDF change, it MUST check that exactly the requested change, and only that change, occurred in the AT_KDF_FS list. If multiple unsolicited AT_KDF_FS changes arrive, the Peer MUST fail authentication as if AT_MAC were incorrect.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

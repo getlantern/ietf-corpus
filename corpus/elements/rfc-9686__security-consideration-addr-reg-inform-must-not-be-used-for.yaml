@@ -1,0 +1,11 @@
+document: rfc-9686
+kind: security-consideration
+summary: ADDR-REG-INFORM MUST NOT be used for authentication or authorization because the device itself controls whether it sends the message, a malicious device can simply omit it, and the packets may be dropped. The mechanism is explicitly informational and forensic in nature, not a security access control.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

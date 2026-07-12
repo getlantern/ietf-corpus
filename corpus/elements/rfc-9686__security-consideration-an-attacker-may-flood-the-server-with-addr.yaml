@@ -1,0 +1,10 @@
+document: rfc-9686
+kind: security-consideration
+summary: An attacker may flood the server with ADDR-REG-INFORM messages bearing many addresses to overwhelm the registration server or fill log files. This is analogous to existing DHCPv6 DoS vectors using spoofed DUIDs. FCFS SAVI (RFC 6620) can mitigate address-spoofing variants by ensuring the sender is the legitimate holder of the registered address.
+section: "6"
+topics:
+    - security
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

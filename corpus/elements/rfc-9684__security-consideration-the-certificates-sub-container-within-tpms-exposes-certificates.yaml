@@ -1,0 +1,10 @@
+document: rfc-9684
+kind: security-consideration
+summary: The 'certificates' sub-container within 'tpms' exposes certificates used for attestation, potentially allowing selection of a compromised certificate. The 'type' field could be misconfigured to represent a different key type, altering how a Verifier evaluates attestation results.
+section: "4"
+topics:
+    - yang
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

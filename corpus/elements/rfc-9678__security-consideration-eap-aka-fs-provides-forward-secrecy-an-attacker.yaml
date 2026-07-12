@@ -1,0 +1,9 @@
+document: rfc-9678
+kind: security-consideration
+summary: 'EAP-AKA'' FS provides forward secrecy: an attacker who gains the AKA long-term key cannot recover session keys from ended past sessions, provided those sessions destroyed all ephemeral key material. The ECDHE exchange also forces any attacker with the long-term key to be on-path during each authentication run, preventing passive mass surveillance.'
+section: "7.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

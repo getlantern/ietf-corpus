@@ -1,0 +1,9 @@
+document: rfc-9678
+kind: design-rationale
+summary: AT_KDF is retained for deriving K_encr and K_aut because these keys must be available before the ECDHE exchange completes (K_aut protects the AT_PUB_ECDHE attribute itself). AT_KDF_FS separately governs K_re, MSK, and EMSK, which incorporate SHARED_SECRET and thus gain the forward secrecy property.
+section: "6.3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

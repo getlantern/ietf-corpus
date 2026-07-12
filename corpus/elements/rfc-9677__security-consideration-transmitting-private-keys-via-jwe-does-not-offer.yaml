@@ -1,0 +1,10 @@
+document: rfc-9677
+kind: security-consideration
+summary: Transmitting private keys via JWE does not offer forward secrecy. If the dCDN's PrivateKeyEncryptionKey becomes compromised in the future, all encrypted JWEs transmitted using it will be compromised. The short-lived nature of delegated credentials limits the impact.
+section: "7"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

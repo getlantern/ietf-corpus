@@ -1,0 +1,10 @@
+document: rfc-9686
+kind: normative-requirement
+summary: When the client detects address registration support, it MUST immediately register any already-in-use addresses and MUST NOT stop registering addresses until it disconnects, even if subsequent messages lack OPTION_ADDR_REG_ENABLE. Registration support MUST be re-discovered on every new link attachment without using prior knowledge.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

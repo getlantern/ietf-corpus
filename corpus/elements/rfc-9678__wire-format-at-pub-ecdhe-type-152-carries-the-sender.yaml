@@ -1,0 +1,9 @@
+document: rfc-9678
+kind: wire-format
+summary: AT_PUB_ECDHE (type=152) carries the sender's ECDHE ephemeral public key. For X25519 the value is 32 bytes encoded per RFC 7748 Section 5; for P-256 it is 33 bytes in compressed form per SEC1 Section 2.3.3. The Value field is zero-padded to the next multiple of 4 bytes. Length is expressed in multiples of 4 bytes and includes the type, length, and value fields.
+section: "6.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9677
+kind: design-rationale
+summary: Private keys are optionally transmittable via MI rather than mandatory, because the preferred deployment has the dCDN generate its own key pair and provide only the public key out-of-band, limiting exposure. The JWE encryption with PrivateKeyEncryptionKey is specified for cases where the uCDN must supply the private key.
+section: "4"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9674
+kind: design-rationale
+summary: The original RRDP specification (RFC 8182) did not explicitly disallow cross-origin URI references from the Update Notification file towards Delta and Snapshot files, and was silent on HTTP Redirection. This oversight allowed one Repository Server to reference RRDP resources on another, inappropriately increasing resource consumption for both RRDP clients and the referenced server.
+section: "2"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

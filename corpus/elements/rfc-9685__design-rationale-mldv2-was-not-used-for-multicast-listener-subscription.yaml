@@ -1,0 +1,9 @@
+document: rfc-9685
+kind: design-rationale
+summary: MLDv2 was not used for multicast listener subscription in LLNs because MLD relies on multicasting queries to all nodes, which forces nodes to remain awake and wastes energy in duty-cycling low-power networks. Extending RFC 8505's unicast registration mechanism to multicast/anycast allows 6LNs to control when they update their subscription state during their own wake time.
+section: "1"
+topics:
+    - multicast
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

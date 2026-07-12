@@ -1,0 +1,9 @@
+document: rfc-9678
+kind: design-rationale
+summary: The extension is implemented as optional, skippable EAP attributes (AT_KDF_FS and AT_PUB_ECDHE) so legacy implementations can ignore them. However, these attributes are covered by AT_MAC in the base EAP-AKA' integrity check, making bidding-down attacks detectable to any party holding the long-term key.
+section: "3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
