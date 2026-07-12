@@ -1,0 +1,9 @@
+document: rfc-9739
+kind: protocol-element
+summary: Because Hello messages are not processed on PLIs, PLI failures may not be discovered in a PIM Light domain, causing multicast routes to remain active until OIF expiry. External failure detection mechanisms such as BFD can be used; if BFD to the far-end PLI goes down, PIM must remove that PLI from its OIF list for affected (S,G) routes.
+section: "3.4"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

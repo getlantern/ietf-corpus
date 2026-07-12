@@ -1,0 +1,11 @@
+document: rfc-9733
+kind: privacy-consideration
+summary: CMP messages themselves are not encrypted, which may allow eavesdroppers to learn which devices are being bootstrapped into the domain and potentially enable selective blocking of device enrollment. The TLS channel between pledge and registrar mitigates this on-site, but encryption must be added for onward exchange with backend systems.
+section: "8"
+topics:
+    - privacy
+    - security
+    - pkix
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

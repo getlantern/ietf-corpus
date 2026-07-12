@@ -1,0 +1,11 @@
+document: rfc-9731
+kind: security-consideration
+summary: Write access to the writable config nodes 'ap' (id, pe, max-bandwidth, avl-bandwidth), 'vn-ap' (id, vn, abstract-node, ltp, max-bandwidth), 'vn' (id, te-topology-identifier, abstract-node), and 'vn-member' (id, src/ap, src/vn-ap-id, dest/ap, dest/vn-ap-id, connectivity-matrix-id) without proper protection can allow an attacker to manipulate VN service delivery. NACM (RFC 8341) MUST be used to restrict access.
+section: "7"
+topics:
+    - security
+    - yang
+    - netconf
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

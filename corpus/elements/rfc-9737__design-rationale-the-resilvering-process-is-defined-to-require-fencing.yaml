@@ -1,0 +1,6 @@
+document: rfc-9737
+kind: design-rationale
+summary: The resilvering process is defined to require fencing the file first (RFC 8435 Section 2.2) before recording the resilvering need and releasing the write intent. This ordering ensures data consistency and prevents concurrent I/O from corrupting the resilvering operation.
+section: "2.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

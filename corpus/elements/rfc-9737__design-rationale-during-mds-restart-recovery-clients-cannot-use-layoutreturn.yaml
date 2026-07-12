@@ -1,0 +1,8 @@
+document: rfc-9737
+kind: design-rationale
+summary: During MDS restart recovery, clients cannot use LAYOUTRETURN to report I/O errors because layout stateids are invalid during the grace period and clients cannot obtain new layouts during grace recovery. This left the MDS with no choice but to assume all files with write intents needed resilvering.
+section: "2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

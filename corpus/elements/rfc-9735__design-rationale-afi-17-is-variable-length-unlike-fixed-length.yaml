@@ -1,0 +1,8 @@
+document: rfc-9735
+kind: design-rationale
+summary: AFI 17 is variable-length, unlike fixed-length AFIs (e.g., AFI 1 for IPv4 is always 4 octets). A NULL terminator (0x00) is defined to allow receivers to determine the string length without a separate explicit length field in the base EID encoding.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

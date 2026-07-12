@@ -1,0 +1,9 @@
+document: rfc-9740
+kind: wire-format
+summary: 'unsigned256 is encoded in network byte order (big-endian) using up to 32 octets. Reduced-size encoding (RFC 7011, Section 6.2) applies: leading zero octets MAY be dropped, so a field with only low-numbered extension headers or TCP options can be encoded in a single octet.'
+section: 8.3.1
+topics:
+    - ip
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

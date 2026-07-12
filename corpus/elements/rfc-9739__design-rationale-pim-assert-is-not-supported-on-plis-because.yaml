@@ -1,0 +1,9 @@
+document: rfc-9739
+kind: design-rationale
+summary: PIM Assert is not supported on PLIs because Assert messages are only accepted from known PIM neighbors (RFC 7761 Section 4.6), and PLIs do not establish PIM neighbor state. Network design or implementation-specific mechanisms (e.g., SPF-based EBBR selection with IP tie-breaking in BIER domains) must prevent duplicate streams instead.
+section: 3.2.3
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

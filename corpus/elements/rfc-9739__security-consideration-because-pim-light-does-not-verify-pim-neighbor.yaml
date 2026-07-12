@@ -1,0 +1,11 @@
+document: rfc-9739
+kind: security-consideration
+summary: Because PIM Light does not verify PIM neighbor adjacency for incoming Join/Prune messages, implementations MUST ensure only Join/Prune messages arriving at a configured PLI are processed; messages on non-PLI interfaces MUST be discarded. Route policies SHOULD additionally be implemented to accept only desired (S,G) pairs, discarding all others.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - multicast
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

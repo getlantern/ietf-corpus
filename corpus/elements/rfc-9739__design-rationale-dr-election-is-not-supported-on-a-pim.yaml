@@ -1,0 +1,9 @@
+document: rfc-9739
+kind: design-rationale
+summary: DR election is not supported on a PIM Light router because Hello messages are absent. The network design must ensure DR election occurs within the PIM domain; in BIER interconnect scenarios, redundant PIM routers at the BIER domain edge MUST establish PIM adjacency per RFC 7761 to prevent multicast stream duplication.
+section: 3.2.2
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,8 @@
+document: rfc-9740
+kind: design-rationale
+summary: The ipv6ExtensionHeadersLimit IE is introduced because some hardware implementations can only inspect extension headers up to a fixed parsing buffer size (as discussed in RFC 8883). Without this flag, a consumer of IPFIX data cannot determine whether a reported set of extension headers is complete or was truncated by implementation limits.
+section: "3.5"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

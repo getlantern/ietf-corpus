@@ -1,0 +1,8 @@
+document: rfc-9740
+kind: design-rationale
+summary: The old tcpOptions IE used a 64-bit bitmask and could only represent TCP options with Kind ≤ 63. The new tcpOptionsFull IE uses a 256-bit field to cover the full Kind 0–255 range, while separate tcpSharedOptionExID16List and tcpSharedOptionExID32List IEs allow reporting the specific ExIDs carried inside shared experimental options (Kind=253/254).
+section: "1.2"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

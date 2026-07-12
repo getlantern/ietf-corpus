@@ -1,0 +1,10 @@
+document: rfc-9729
+kind: design-rationale
+summary: The 'a' parameter (public key included in the Authorization header) avoids key confusion issues identified in the 'Seems Legit' paper, where an attacker could trick a server into accepting a signature computed for a different key. The 'v' parameter similarly guards against signature schemes where certain keys can produce signatures valid for multiple inputs.
+section: "4.2"
+topics:
+    - http
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9729
+kind: security-consideration
+summary: Freshness is provided by the TLS key exporter and thus can be as old as the underlying TLS connection. Servers requiring better freshness can force clients to create new connections, e.g., using the HTTP/3 GOAWAY frame.
+section: "8"
+topics:
+    - http
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

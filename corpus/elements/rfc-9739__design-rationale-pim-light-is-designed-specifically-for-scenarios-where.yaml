@@ -1,0 +1,9 @@
+document: rfc-9739
+kind: design-rationale
+summary: PIM Light is designed specifically for scenarios where full PIM-SM neighborship is impossible or undesirable, such as BIER networks connecting multiple PIM domains where PIM Join/Prune messages are tunneled via BIER. The trade-off is loss of Hello-dependent features (DR election, Assert, Join Attribute negotiation) in exchange for simpler cross-domain multicast state signaling.
+section: "1"
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,11 @@
+document: rfc-9729
+kind: design-rationale
+summary: The static prefix (64 x 0x20 + context string + zero separator) prepended before signing mirrors the TLS 1.3 CertificateVerify construction. Its purpose is to mitigate issues that could arise if authentication keys were accidentally reused across protocols, even though such reuse is explicitly forbidden.
+section: "3.3"
+topics:
+    - http
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

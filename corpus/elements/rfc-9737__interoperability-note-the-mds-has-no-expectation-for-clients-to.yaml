@@ -1,0 +1,6 @@
+document: rfc-9737
+kind: interoperability-note
+summary: The MDS has no expectation for clients to use the new anonymous-stateid functionality. If the client uses it but the MDS does not support it, the MDS MUST reply with NFS4ERR_BAD_STATEID, and the client should fall back to the old behavior of not reporting errors.
+section: "2.2"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

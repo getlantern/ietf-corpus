@@ -1,0 +1,8 @@
+document: rfc-9740
+kind: design-rationale
+summary: The old ipv6ExtensionHeaders IE used a fixed 4-byte bitmask covering only a frozen set of extension headers and could not represent EHs assigned after the original registry was defined (e.g., HIP=139, Shim6=140, experimental EHs 253/254). The new 256-bit IEs and the automatically mirrored 'IPFIX ipv6ExtensionHeaders Bits' registry eliminate this limitation.
+section: "1.1"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

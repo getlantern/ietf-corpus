@@ -1,0 +1,10 @@
+document: rfc-9729
+kind: security-consideration
+summary: Authentication proofs are not bound to individual HTTP requests; proofs on the same connection are identical, enabling replay of the Authorization header across multiplexed security contexts. Client implementations that multiplex different security contexts over a single HTTP connection must ensure those contexts cannot read each other's header fields.
+section: "8"
+topics:
+    - http
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

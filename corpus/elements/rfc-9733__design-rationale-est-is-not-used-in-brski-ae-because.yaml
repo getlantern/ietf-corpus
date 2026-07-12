@@ -1,0 +1,11 @@
+document: rfc-9733
+kind: design-rationale
+summary: EST is not used in BRSKI-AE because the binding of the pledge's TLS identity to the CSR (via 'tls-unique') is only valid within the registrar's TLS session and cannot be verified by backend RAs over multiple transport hops. SCEP, CMP, and CMC support authenticated self-contained objects and do not rely on transport-level security for origin authentication.
+section: "3.2"
+topics:
+    - security
+    - pkix
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

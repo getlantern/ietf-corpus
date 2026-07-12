@@ -1,0 +1,12 @@
+document: rfc-9739
+kind: security-consideration
+summary: Only forged Join/Prune messages are considered a potential attack vector for PIM Light, as it does not process Hello or Assert messages. Authentication mechanisms from RFC 5796 can be applied via IPsec ESP or optionally AH, and security considerations from RFC 7761 and RFC 4607 SHOULD be considered where appropriate.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - multicast
+    - routing
+    - security
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

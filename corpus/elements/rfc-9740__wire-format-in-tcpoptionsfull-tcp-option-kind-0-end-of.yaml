@@ -1,0 +1,8 @@
+document: rfc-9740
+kind: wire-format
+summary: In tcpOptionsFull, TCP option Kind 0 (End of Option List) maps to bit 0 (LSB) and Kind 255 maps to bit 255 (MSB). Common options (MSS=Kind 2, Window Scale=Kind 3) appear in low-order bits, allowing typical TCP Flows to be encoded in one octet with reduced-size encoding.
+section: 6.2.1
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

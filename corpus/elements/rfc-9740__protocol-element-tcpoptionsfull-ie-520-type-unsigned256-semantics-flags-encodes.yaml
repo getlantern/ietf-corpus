@@ -1,0 +1,8 @@
+document: rfc-9740
+kind: protocol-element
+summary: tcpOptionsFull (IE 520, type unsigned256, semantics flags) encodes a 256-bit field where each bit maps to a TCP option Kind number (Kind 0 at LSB, Kind 255 at MSB). A bit is set to 1 if any packet of the Flow contains that TCP option. Bits for shared options (Kind=253/254) MUST NOT be set when the corresponding ExID list IEs are present.
+section: "4.1"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

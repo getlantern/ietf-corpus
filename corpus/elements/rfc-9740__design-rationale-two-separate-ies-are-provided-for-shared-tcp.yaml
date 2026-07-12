@@ -1,0 +1,8 @@
+document: rfc-9740
+kind: design-rationale
+summary: Two separate IEs are provided for shared TCP option ExIDs (16-bit tcpSharedOptionExID16 and 32-bit tcpSharedOptionExID32) because ExIDs can be either 2 or 4 bytes per RFC 6994, and the length cannot be determined from the option content alone without knowing the ExID. A single Flow may contain a mix of both lengths, handled by including both list IEs in the same Template Record.
+section: "5"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

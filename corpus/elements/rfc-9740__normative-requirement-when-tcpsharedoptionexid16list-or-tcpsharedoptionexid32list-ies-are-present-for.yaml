@@ -1,0 +1,9 @@
+document: rfc-9740
+kind: normative-requirement
+summary: When tcpSharedOptionExID16List or tcpSharedOptionExID32List IEs are present for a Flow, the Exporter MUST NOT set the bits for shared TCP options (Kind=253 or 254) in the tcpOptionsFull IE for the same Flow, enabling reduced-size encoding of the tcpOptionsFull field.
+section: "4.1"
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,11 @@
+document: rfc-9729
+kind: design-rationale
+summary: Existing signature-based HTTP authentication schemes (e.g., HOBA) require the server to send a fresh nonce/challenge to the client, which reveals that authentication is expected. The Concealed scheme instead derives freshness from a TLS keying material exporter, allowing the server to never issue a challenge and thus remain non-probeable.
+section: "1"
+topics:
+    - http
+    - tls
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

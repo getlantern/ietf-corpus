@@ -1,0 +1,11 @@
+document: rfc-9729
+kind: design-rationale
+summary: 'Authentication checks can introduce timing side-channels: an attacker can compare response timing for known-nonexistent resources versus potentially authenticated resources. Servers should slightly delay responses to some nonexistent resources to mask authentication verification time, but must avoid making the delay itself reveal that this mechanism is in use.'
+section: "6.4"
+topics:
+    - http
+    - security
+    - privacy
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

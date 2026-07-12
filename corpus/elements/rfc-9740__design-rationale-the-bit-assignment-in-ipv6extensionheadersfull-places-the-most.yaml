@@ -1,0 +1,8 @@
+document: rfc-9740
+kind: design-rationale
+summary: The bit assignment in ipv6ExtensionHeadersFull places the most commonly observed extension headers at low-order bit positions (e.g., Destination Options at bit 0, Hop-by-Hop at bit 1) so that typical Flows produce small unsigned256 values with leading zeros. Combined with reduced-size encoding, this usually results in a one- or two-octet on-wire representation.
+section: "3.3"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

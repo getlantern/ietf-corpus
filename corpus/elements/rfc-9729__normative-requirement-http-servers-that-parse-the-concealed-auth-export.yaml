@@ -1,0 +1,10 @@
+document: rfc-9729
+kind: normative-requirement
+summary: HTTP servers that parse the Concealed-Auth-Export header field MUST ignore it unless they have already established that they trust the sender. Frontends that send Concealed-Auth-Export MUST ensure they do not forward any Concealed-Auth-Export header field received from the client.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

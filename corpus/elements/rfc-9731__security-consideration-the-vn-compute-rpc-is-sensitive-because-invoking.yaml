@@ -1,0 +1,11 @@
+document: rfc-9731
+kind: security-consideration
+summary: The 'vn-compute' RPC is sensitive because invoking it triggers computation at the MDSC and reveals VN information; access to this operation should be restricted via NACM. The MDSC represents a single point of failure and a significant threat vector requiring protection against malicious attacks and rogue elements.
+section: "7"
+topics:
+    - security
+    - yang
+    - netconf
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

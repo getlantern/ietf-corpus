@@ -1,0 +1,10 @@
+document: rfc-9731
+kind: design-rationale
+summary: The VN type (Type 1 vs Type 2) is not explicitly labeled in the YANG data model because the model itself is identical for both types; the type is implicitly determined by whether the referenced TE topology's connectivity matrix includes an underlay path (Type 2) or not (Type 1). This avoids a redundant discriminator field.
+section: "4.5"
+topics:
+    - yang
+    - routing
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
