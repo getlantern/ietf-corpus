@@ -1,0 +1,9 @@
+document: rfc-9709
+kind: design-rationale
+summary: Both the object identifier and the parameters of the content-encryption algorithm are fed into the KDF (not just the OID). This protects against hypothetical future attacks that manipulate only the parameters field, even though including only the OID would suffice against the known [RS2023] attack.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

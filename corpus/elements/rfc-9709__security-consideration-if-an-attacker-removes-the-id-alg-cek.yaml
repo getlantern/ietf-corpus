@@ -1,0 +1,9 @@
+document: rfc-9709
+kind: security-consideration
+summary: If an attacker removes the id-alg-cek-hkdf-sha256 OID from the contentEncryptionAlgorithm.algorithm field before delivery, the recipient will not derive CEK' and will fail to decrypt, denying access to the content but not aiding the attacker in recovering plaintext.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

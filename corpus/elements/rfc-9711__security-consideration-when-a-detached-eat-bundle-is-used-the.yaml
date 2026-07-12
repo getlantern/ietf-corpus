@@ -1,0 +1,9 @@
+document: rfc-9711
+kind: security-consideration
+summary: When a detached EAT bundle is used, the integrity of each detached claims set is protected only by the digest included in the main token. If the claims sets are modified in transit before the digest is verified, validation will fail; protocols carrying bundles must ensure integrity of the detached parts.
+section: "9.5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

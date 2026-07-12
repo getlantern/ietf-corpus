@@ -1,0 +1,9 @@
+document: rfc-9709
+kind: security-consideration
+summary: If an attacker modifies the contentEncryptionAlgorithm.parameters field, the recipient derives a different CEK', preventing decryption but not assisting the attacker in recovering plaintext. The AlgorithmIdentifier binding thus defeats both OID-manipulation and parameter-manipulation attacks.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

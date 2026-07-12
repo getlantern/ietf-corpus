@@ -1,0 +1,9 @@
+document: rfc-9709
+kind: design-rationale
+summary: The mechanism was created to thwart an AEAD-to-CBC downgrade attack presented at IETF 118 by Roth and Strenzke, where an attacker intercepts AES-GCM/CCM authenticated-enveloped-data, converts it to AES-CBC guess blocks, and recovers plaintext by observing the victim's decryption result. Binding the content-encryption key to the algorithm identifier prevents the attack because altering the identifier causes the recipient to derive a different key.
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

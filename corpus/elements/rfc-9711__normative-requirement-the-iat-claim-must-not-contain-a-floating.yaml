@@ -1,0 +1,10 @@
+document: rfc-9711
+kind: normative-requirement
+summary: The 'iat' claim MUST NOT contain a floating-point value in an EAT token; any recipient receiving a floating-point 'iat' MUST consider it an error. A 64-bit integer is sufficient to represent +/- 500 billion years.
+section: 4.3.1
+rfc2119_level: MUST NOT
+topics:
+    - cbor
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

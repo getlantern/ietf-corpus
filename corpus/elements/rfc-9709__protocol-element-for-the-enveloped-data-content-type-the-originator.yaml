@@ -1,0 +1,8 @@
+document: rfc-9709
+kind: protocol-element
+summary: For the enveloped-data content type, the originator places id-alg-cek-hkdf-sha256 in contentEncryptionAlgorithm.algorithm, puts the actual encryption AlgorithmIdentifier in contentEncryptionAlgorithm.parameters, derives CEK' = CMS_CEK_HKDF_SHA256(CEK, ContentEncryptionAlgorithmIdentifier), and encrypts content with CEK'.
+section: "5.1"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
