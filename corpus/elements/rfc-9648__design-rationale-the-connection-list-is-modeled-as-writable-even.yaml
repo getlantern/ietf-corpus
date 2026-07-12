@@ -1,0 +1,9 @@
+document: rfc-9648
+kind: design-rationale
+summary: The connection list is modeled as writable even though only some nodes are writable (e.g., keepalive), because different TCP implementations use different modeling approaches and there is no universal ground truth for TCP parameter configuration scope (system-wide, per-interface, per-connection, or application preference).
+section: "3.1"
+topics:
+    - tcp
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

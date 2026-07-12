@@ -1,0 +1,9 @@
+document: rfc-9651
+kind: design-rationale
+summary: 'Strict, step-by-step parsing and serialization algorithms are intentional: the only error handling defined is to fail the entire operation. Leniency would create pressure on other implementations to add subtly different workarounds, creating interoperability and security problems; strict processing lets producers discover and correct non-conformant output early.'
+section: "1.1"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,8 @@
+document: rfc-9651
+kind: wire-format
+summary: Display Strings are serialized with a leading '%' followed by a double-quoted string where non-ASCII bytes (and '%' and '"') are percent-encoded as lowercase hex pairs. The encoding applies UTF-8 first; surrogate code points (U+D800–U+DFFF) cause serialization to fail. Parsers decode the percent-encoded bytes and then UTF-8 decode the result.
+section: 3.3.8
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

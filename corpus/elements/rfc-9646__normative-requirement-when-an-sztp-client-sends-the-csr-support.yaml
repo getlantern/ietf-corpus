@@ -1,0 +1,11 @@
+document: rfc-9646
+kind: normative-requirement
+summary: When an SZTP-client sends the 'csr-support' node and the SZTP-server wishes to request a CSR, the SZTP-server MUST respond with an HTTP 400 Bad Request error code with an 'ietf-restconf:errors' message having error-tag 'missing-attribute' and error-info containing the 'csr-request' structure.
+section: "2.3"
+rfc2119_level: MUST
+topics:
+    - netconf
+    - pkix
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

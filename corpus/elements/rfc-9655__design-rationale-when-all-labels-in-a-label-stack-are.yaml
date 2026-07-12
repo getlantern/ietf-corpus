@@ -1,0 +1,8 @@
+document: rfc-9655
+kind: design-rationale
+summary: When all labels in a label stack are represented using the Nil FEC, there is no definite way for a receiving router to determine whether it is the intended egress, because the Nil FEC carries no information and no validation is performed. A misforwarded packet may still return an MPLS echo reply indicating success, producing a false positive.
+section: "2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9647
+kind: design-rationale
+summary: The statistics reset action is scoped to individual interface statistics containers rather than being system-wide (as in the RFC 9046 information model) because YANG associates actions with their enclosing container. Implementations wanting system-wide reset must call the action for every interface instance.
+section: "2.3"
+topics:
+    - yang
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

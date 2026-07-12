@@ -1,0 +1,9 @@
+document: rfc-9651
+kind: design-rationale
+summary: JSON was considered and rejected for Structured Fields because it has underspecified behavior for large numbers and duplicate object keys, Unicode string interoperability issues, and arbitrary nesting depth — all of which would require additional constraints that existing JSON parsers would not enforce, harming interoperability. The goal of a dedicated parser/serializer was to make non-conformance visible and correctible.
+section: A.1
+topics:
+    - http
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9654
+kind: security-consideration
+summary: Since the OCSP responder may choose not to send the Nonce extension in the response even if the requester sent it (per RFC 5019), an on-path attacker can intercept the request and respond with an earlier response without the Nonce. This can be mitigated by configuring a short interval between thisUpdate and nextUpdate in the OCSP response.
+section: "3.1"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

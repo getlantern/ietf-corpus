@@ -1,0 +1,9 @@
+document: rfc-9653
+kind: normative-requirement
+summary: If an endpoint has not received an INIT or INIT ACK chunk containing a Zero Checksum Acceptable Chunk Parameter from its peer during association setup, it MUST use a correct CRC32c checksum. Specifically, packets containing INIT chunks, responses to OOTB packets, packets containing COOKIE ECHO chunks, and packets containing ASCONF chunks MUST always carry a correct CRC32c checksum.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9646
+kind: security-consideration
+summary: The CSR extension cannot be used when the SZTP-client connects to an untrusted SZTP-server, because the HTTP 400 error response containing 'csr-request' cannot be signed data per RFC 8572. SZTP-clients SHOULD NOT pass 'csr-support' to an untrusted SZTP-server and SHOULD instead pass 'signed-data-preferred'.
+section: 4.1.4
+topics:
+    - security
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

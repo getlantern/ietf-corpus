@@ -1,0 +1,8 @@
+document: rfc-9651
+kind: wire-format
+summary: Byte Sequences are delimited by colons (':') and encoded using standard base64 (RFC 4648 Section 4) with required '=' padding. Parsers SHOULD NOT fail on missing padding or non-zero pad bits due to implementation variation, but MUST fail on characters outside the base64 alphabet or line feeds. Parsers MUST support at least 16384 octets after decoding.
+section: 3.3.5
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

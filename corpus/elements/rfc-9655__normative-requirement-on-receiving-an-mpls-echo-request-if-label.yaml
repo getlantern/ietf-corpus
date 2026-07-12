@@ -1,0 +1,9 @@
+document: rfc-9655
+kind: normative-requirement
+summary: On receiving an MPLS echo request, if Label-stack-depth is 0 and the Target FEC Stack sub-TLV at FEC-stack-depth is Nil FEC, the receiver MUST perform an exact-match lookup of the Egress TLV Address field against locally configured interfaces or loopback addresses. On success, Best-return-code is set to 36; on failure, it is set to 10.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

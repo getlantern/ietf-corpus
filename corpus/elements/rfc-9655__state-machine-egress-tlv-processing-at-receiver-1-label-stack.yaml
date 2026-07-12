@@ -1,0 +1,8 @@
+document: rfc-9655
+kind: state-machine
+summary: 'Egress TLV processing at receiver: (1) Label-stack-depth > 0 and Nil FEC → return code 8 (transit); (2) Label-stack-depth = 0 and Nil FEC → address lookup: success yields return code 36 (egress confirmed), failure yields return code 10 (label mapping mismatch); (3) Multiple Nil FECs with stack-R empty → strip all Nil FECs and validate Egress TLV.'
+section: "4.2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

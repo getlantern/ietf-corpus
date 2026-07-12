@@ -1,0 +1,9 @@
+document: rfc-9655
+kind: normative-requirement
+summary: In traceroute mode, when the sender builds an echo request with a Target FEC Stack TLV containing a Nil FEC for the last segment of the SR Policy, the sender MUST add an Egress TLV with the address from the SR Policy Endpoint field. If the endpoint is zero or unspecified, the sender MUST use the address of the ultimate egress.
+section: 4.1.2
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

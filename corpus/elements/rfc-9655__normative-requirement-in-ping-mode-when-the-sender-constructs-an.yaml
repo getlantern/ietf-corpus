@@ -1,0 +1,9 @@
+document: rfc-9655
+kind: normative-requirement
+summary: In ping mode, when the sender constructs an echo request with a Target FEC Stack TLV containing a single Nil FEC for the last segment of the SR Policy path, the sender MUST add an Egress TLV with the address obtained from the SR Policy Endpoint field. If the endpoint is unspecified or zero, the sender MUST use the address of the last segment of the SR Policy.
+section: 4.1.1
+rfc2119_level: MUST
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

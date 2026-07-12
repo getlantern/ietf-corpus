@@ -1,0 +1,9 @@
+document: rfc-9653
+kind: normative-requirement
+summary: A receiver that has sent the Zero Checksum Acceptable Chunk Parameter MUST accept SCTP packets with an incorrect checksum value of zero that fulfill the announced alternate error detection method's requirements; otherwise, it MUST drop all SCTP packets with an incorrect CRC32c checksum.
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

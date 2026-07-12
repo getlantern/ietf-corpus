@@ -1,0 +1,8 @@
+document: rfc-9655
+kind: interoperability-note
+summary: When a transit node does not support the Egress TLV, it ignores the TLV and sets Best-return-code to 8 ('Label switched at stack-depth <RSC>') per normal Nil FEC processing. The headend continues sending echo requests with the Egress TLV with incremented TTL, allowing the egress to still perform validation if it supports the extension.
+section: "5"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

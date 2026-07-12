@@ -1,0 +1,8 @@
+document: rfc-9653
+kind: design-rationale
+summary: COOKIE ECHO and ASCONF chunks are required to carry correct CRC32c checksums even when zero-checksum is negotiated because looking up the association for packets containing these chunk types may be more complex than for other packets, allowing a simpler implementation of the extension.
+section: "5.2"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

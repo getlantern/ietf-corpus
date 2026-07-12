@@ -1,0 +1,9 @@
+document: rfc-9654
+kind: security-consideration
+summary: During the interval in which a previous OCSP response for a certificate is not yet expired but the responder has a changed status for that certificate, a copy of the old response can be replayed to indicate the certificate is still valid. Including a requester's nonce value in the OCSP response ensures the response is the most recent one from the server.
+section: "3"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

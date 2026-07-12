@@ -1,0 +1,11 @@
+document: rfc-9654
+kind: normative-requirement
+summary: An OCSP responder that supports the Nonce extension MUST accept Nonce lengths of at least 16 octets and up to and including 32 octets. A responder MAY choose to respond without the Nonce extension for requests where the Nonce length is between 1–15 octets or 33–128 octets.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9646
+kind: security-consideration
+summary: The SZTP-server MUST verify proof-of-possession by checking the CSR signature against the public key contained in the CSR, and verify proof-of-origin either by validating the IDevID certification path (when reusing the manufacturer key) or via CMP/CMC protocol authentication mechanisms (when using a fresh key).
+section: 4.2.1
+topics:
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

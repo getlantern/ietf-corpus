@@ -1,0 +1,8 @@
+document: rfc-9655
+kind: design-rationale
+summary: A single Nil FEC is used in the MPLS echo request message irrespective of the number of segments in the label stack, because the Nil FEC's purpose is to hide transit tunnel information and avoid false negatives when FEC information is unknown. The Egress TLV supplements this by carrying only the destination address, enabling egress validation without exposing intermediate segment details.
+section: "2"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

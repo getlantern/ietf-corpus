@@ -1,0 +1,10 @@
+document: rfc-9647
+kind: security-consideration
+summary: The MAC key value leaf carries nacm:default-deny-all and the DTLS private-key leaf also carries nacm:default-deny-all, making these sensitive credentials unreadable via NETCONF/RESTCONF by default. The 'babel/hmac' and 'babel/dtls' subtrees influence whether incoming and outgoing packets are trusted.
+section: "4"
+topics:
+    - yang
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

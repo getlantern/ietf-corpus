@@ -1,0 +1,9 @@
+document: rfc-9653
+kind: design-rationale
+summary: SCTP Authentication (RFC 4895) is noted as a potential alternate error detection method, but without a heuristic to detect middleboxes expecting correct CRC32c checksums it does not fulfill the second requirement (no more than two RTO path failures). DTLS encapsulation inherently satisfies both requirements because the SCTP common header is not visible to middleboxes.
+section: "3"
+topics:
+    - sctp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

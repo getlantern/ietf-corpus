@@ -1,0 +1,8 @@
+document: rfc-9653
+kind: interoperability-note
+summary: An endpoint not supporting this extension that receives the Zero Checksum Acceptable Chunk Parameter in an INIT or INIT ACK is REQUIRED to skip the parameter and continue processing further parameters. This behavior follows from RFC 9260 because the highest-order two bits of the Type (0x8001) are '10', ensuring backwards compatibility.
+section: "4"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

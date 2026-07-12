@@ -1,0 +1,8 @@
+document: rfc-9653
+kind: design-rationale
+summary: 'Zero is a valid result of the CRC32c algorithm, so a receiver cannot distinguish a deliberately zeroed checksum from a genuinely computed zero. The design accepts this ambiguity as irrelevant: if the receiver declared willingness to use an alternate error detection method, it does not rely on CRC32c to protect incoming packets anyway.'
+section: "3"
+topics:
+    - sctp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

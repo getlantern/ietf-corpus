@@ -1,0 +1,10 @@
+document: rfc-9644
+kind: security-consideration
+summary: All writable data nodes in the ssh-client-grouping and ssh-server-grouping containers (client-identity, server-authentication, transport-params, keepalives, server-identity, client-authentication) are annotated with nacm:default-deny-write, restricting write access to users with explicit NACM permissions.
+section: "5"
+topics:
+    - security
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

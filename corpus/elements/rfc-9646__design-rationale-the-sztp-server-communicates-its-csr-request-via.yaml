@@ -1,0 +1,10 @@
+document: rfc-9646
+kind: design-rationale
+summary: The SZTP-server communicates its CSR request via an HTTP 400 'missing-attribute' error rather than a normal RPC reply, because SZTP's 'get-bootstrapping-data' RPC was not originally designed to support a multi-round CSR exchange. This error-based signaling allows the extension without modifying the original RPC output structure.
+section: "2.1"
+topics:
+    - netconf
+    - yang
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

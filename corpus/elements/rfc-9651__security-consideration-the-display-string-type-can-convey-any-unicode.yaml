@@ -1,0 +1,10 @@
+document: rfc-9651
+kind: security-consideration
+summary: The Display String type can convey any Unicode code point without sanitization, including unassigned code points, control characters (including NUL), and noncharacters. Applications consuming Display Strings MUST consider filtering or escaping untrusted content before displaying it; see PRECIS and Unicode Security Considerations.
+section: "6"
+topics:
+    - http
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
