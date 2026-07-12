@@ -1,0 +1,6 @@
+document: rfc-9669
+kind: protocol-element
+summary: Helper functions allow BPF programs to call platform-provided functions, identified either by a static numeric ID in the 'imm' field (src_reg=0x0) or by a BTF (BPF Type Format) ID (src_reg=0x2). Program-local functions are called with src_reg=0x1 using a PC-relative offset in 'imm', and EXIT within a local function returns to the caller.
+section: 4.3.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

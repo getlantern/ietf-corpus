@@ -1,0 +1,8 @@
+document: rfc-9664
+kind: interoperability-note
+summary: Older (pre-standard) requesters and servers may support only the 4-byte variant of the Update Lease option. Implementations supporting both variants must account for peers that only support the 4-byte variant. A requester receiving a 4-byte response to an 8-byte request MUST treat it as specifying both lease durations.
+section: "4.3"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

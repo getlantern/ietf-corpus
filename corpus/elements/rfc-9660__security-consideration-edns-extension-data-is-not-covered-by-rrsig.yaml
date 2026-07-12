@@ -1,0 +1,9 @@
+document: rfc-9660
+kind: security-consideration
+summary: EDNS extension data is not covered by RRSIG records, so the authenticity and integrity of ZONEVERSION data cannot be verified using DNSSEC. It could theoretically be tampered with by an on-path attacker when DNS transport is unencrypted. ZONEVERSION should be used only for troubleshooting and debugging.
+section: "7"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

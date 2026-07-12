@@ -1,0 +1,10 @@
+document: rfc-9662
+kind: design-rationale
+summary: Because many deployed syslog implementations use TLS_RSA_WITH_AES_128_CBC_SHA as mandated by RFC 6012, a sudden deprecation is undesirable. Both cipher suites are therefore permitted during migration, but TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 MUST be preferred to allow gradual transition.
+section: "3"
+topics:
+    - tls
+    - syslog
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

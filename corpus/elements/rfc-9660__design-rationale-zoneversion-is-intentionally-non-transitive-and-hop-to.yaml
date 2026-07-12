@@ -1,0 +1,8 @@
+document: rfc-9660
+kind: design-rationale
+summary: ZONEVERSION is intentionally non-transitive and hop-to-hop only, modeled after NSID (RFC 5001). This prevents recursive resolvers from accidentally propagating zone version data from upstream authoritative servers back to end clients without those clients requesting it.
+section: 3.2.2
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

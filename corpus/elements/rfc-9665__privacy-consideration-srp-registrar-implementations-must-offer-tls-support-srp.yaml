@@ -1,0 +1,11 @@
+document: rfc-9665
+kind: privacy-consideration
+summary: SRP registrar implementations MUST offer TLS support. SRP requesters using TCP SHOULD use DNS-over-TLS (RFC 7858) for opportunistic privacy and SHOULD NOT fall back to plain TCP. Public keys in SRP registrations can be used as host tracking identifiers; registrars MAY suppress KEY records from query responses.
+section: "7"
+topics:
+    - dns
+    - privacy
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

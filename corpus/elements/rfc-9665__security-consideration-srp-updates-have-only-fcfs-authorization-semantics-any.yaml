@@ -1,0 +1,9 @@
+document: rfc-9665
+kind: security-consideration
+summary: SRP Updates have only FCFS authorization semantics; any requester knowing the registrar's IP can send valid updates. Registrars SHOULD reject updates from addresses outside the administrative domain. For TCP, three-way handshake prevents off-path spoofing, but registrars relying on this MUST NOT accept TCP Fast Open payloads. For UDP on CNNs, source-address filtering at routers (RFC 2827) is required.
+section: "6.1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

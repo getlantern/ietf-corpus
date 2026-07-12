@@ -1,0 +1,8 @@
+document: rfc-9669
+kind: design-rationale
+summary: 'Division and modulo by zero are handled by defining safe fallbacks rather than undefined behavior: DIV by zero sets the destination register to zero, and MOD by zero leaves the destination unchanged (for ALU64) or zeroes the upper 32 bits (for ALU). This avoids undefined behavior for potentially untrusted BPF programs.'
+section: "4.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

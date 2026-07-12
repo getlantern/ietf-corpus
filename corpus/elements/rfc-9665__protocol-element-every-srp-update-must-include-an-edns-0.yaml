@@ -1,0 +1,9 @@
+document: rfc-9665
+kind: protocol-element
+summary: Every SRP Update MUST include an EDNS(0) Update Lease option (RFC 9664) carrying a LEASE time (typically 2 hours) for all DNS-SD records and a KEY-LEASE time (typically 14 days) for KEY records. The LEASE MUST be less than or equal to KEY-LEASE. Registrars MUST reject updates lacking this option.
+section: 3.3.2
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

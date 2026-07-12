@@ -1,0 +1,10 @@
+document: rfc-9668
+kind: design-rationale
+summary: EDHOC message_3 is placed in the payload rather than a CoAP option because it may be too large for an option, for example when conveying a large public key certificate chain in ID_CRED_I or large External Authorization Data in EAD_3. C_R, being compact, is instead reused from the OSCORE 'kid' field.
+section: "3"
+topics:
+    - security
+    - crypto
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

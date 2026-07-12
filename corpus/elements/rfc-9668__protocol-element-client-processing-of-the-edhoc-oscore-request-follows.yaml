@@ -1,0 +1,9 @@
+document: rfc-9668
+kind: protocol-element
+summary: 'Client processing of the EDHOC + OSCORE request follows six steps: (1) compose EDHOC message_3, (2) establish OSCORE Security Context and encrypt the CoAP request, (3) build COMB_PAYLOAD by concatenating EDHOC_MSG_3 and OSCORE_PAYLOAD, (4) replace the OSCORE request payload with COMB_PAYLOAD (C_R is already in the ''kid'' field), (5) include the EDHOC option, and (6) send.'
+section: 3.2.1
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

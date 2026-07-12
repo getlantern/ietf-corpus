@@ -1,0 +1,9 @@
+document: rfc-9670
+kind: security-consideration
+summary: Allowing users to edit their own Principal's name or email could enable spoofing — a user might impersonate another to trick others into sharing private data. Servers SHOULD keep audit logs of such changes; simply forbidding duplicate names is insufficient because visually similar Unicode characters can still be exploited.
+section: "6.1"
+topics:
+    - security
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

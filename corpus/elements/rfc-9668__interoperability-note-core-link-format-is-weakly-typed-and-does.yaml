@@ -1,0 +1,10 @@
+document: rfc-9668
+kind: interoperability-note
+summary: CoRE Link Format is weakly typed and does not distinguish between the string "-10" and the integer -10. Since 'ed-idcred-t' values come from the strongly typed 'Label' column of the COSE Header Parameters registry, string values that look like integers are not supported and MUST NOT be used in the 'ed-idcred-t' parameter when responses are in CoRE Link Format.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

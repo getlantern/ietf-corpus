@@ -1,0 +1,10 @@
+document: rfc-9664
+kind: security-consideration
+summary: Some authentication strategy SHOULD be used when accepting DNS updates. Shared secret (TSIG, RFC 8945) or public key signing (SIG(0), RFC 2931) should be required. Keys should have limited authority so that key compromise does not affect entire zones.
+section: "8"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9668
+kind: security-consideration
+summary: 'Even if a client sends multiple simultaneous EDHOC + OSCORE requests with the same C_R (violating the SHOULD NOT), there is no security impact: the server will not process the same EDHOC message_3 more than once in the same session and will enforce OSCORE replay protection regardless.'
+section: "7"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

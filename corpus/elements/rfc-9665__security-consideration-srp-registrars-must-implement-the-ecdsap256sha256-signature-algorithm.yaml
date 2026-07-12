@@ -1,0 +1,10 @@
+document: rfc-9665
+kind: security-consideration
+summary: SRP registrars MUST implement the ECDSAP256SHA256 signature algorithm for SIG(0) validation. They SHOULD also implement algorithms numbered 13 or higher from RFC 8624 that have MUST/RECOMMENDED/MAY in the validation column. SRP requesters MUST NOT assume availability of algorithms numbered below 13.
+section: "6.6"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

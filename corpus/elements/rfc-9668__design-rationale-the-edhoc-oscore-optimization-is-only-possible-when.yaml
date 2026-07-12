@@ -1,0 +1,9 @@
+document: rfc-9668
+kind: design-rationale
+summary: The EDHOC + OSCORE optimization is only possible when the default forward message flow is used (CoAP client as EDHOC Initiator, CoAP server as EDHOC Responder). The reverse message flow cannot achieve two round trips because the client already has enough state after receiving message_2 to preemptively derive the OSCORE Security Context.
+section: "3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

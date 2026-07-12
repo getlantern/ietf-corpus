@@ -1,0 +1,10 @@
+document: rfc-9661
+kind: normative-requirement
+summary: If SieveScript/set would result in duplicate names, the server MUST reject with an 'alreadyExists' SetError including an 'existingId' property. Exceeding maxSizeScript MUST return 'tooLarge'; exceeding maxNumberScripts or storage MUST return 'overQuota'.
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - email
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

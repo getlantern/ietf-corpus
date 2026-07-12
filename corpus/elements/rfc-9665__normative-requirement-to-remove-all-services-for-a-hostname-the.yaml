@@ -1,0 +1,10 @@
+document: rfc-9665
+kind: normative-requirement
+summary: To remove all services for a hostname, the SRP requester sends an SRP Update with LEASE=0 containing exactly one Host Description Instruction with a 'Delete All RRsets From A Name' for the hostname. The registrar MUST then remove all associated service instances and Service Discovery PTR records.
+section: 3.2.5.5.1
+rfc2119_level: MUST
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

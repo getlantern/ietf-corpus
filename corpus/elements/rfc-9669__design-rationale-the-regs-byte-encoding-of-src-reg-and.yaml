@@ -1,0 +1,6 @@
+document: rfc-9669
+kind: design-rationale
+summary: 'The ''regs'' byte encoding of src_reg and dst_reg is endian-dependent: on little-endian hosts, src_reg occupies the high nibble and dst_reg the low nibble; on big-endian hosts, the order is reversed. This design keeps the wire representation natural for each host architecture while maintaining identical instruction semantics.'
+section: "3.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

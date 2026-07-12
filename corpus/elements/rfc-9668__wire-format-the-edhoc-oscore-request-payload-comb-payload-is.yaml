@@ -1,0 +1,10 @@
+document: rfc-9668
+kind: wire-format
+summary: The EDHOC + OSCORE request payload (COMB_PAYLOAD) is the byte concatenation EDHOC_MSG_3 | OSCORE_PAYLOAD, where EDHOC_MSG_3 is the binary encoding of CIPHERTEXT_3 (a CBOR byte string) and OSCORE_PAYLOAD is the OSCORE ciphertext. C_R is not repeated in the payload; it is carried in the 'kid' field of the OSCORE option.
+section: 3.2.1
+topics:
+    - security
+    - crypto
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

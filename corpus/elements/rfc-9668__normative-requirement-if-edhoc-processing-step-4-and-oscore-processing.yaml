@@ -1,0 +1,10 @@
+document: rfc-9668
+kind: normative-requirement
+summary: 'If EDHOC processing (Step 4) and OSCORE processing (Step 8) both succeed, the server MUST reply with an OSCORE-protected response. If EDHOC processing fails, the server MUST NOT establish a new OSCORE Security Context and responds with an unprotected EDHOC error message (Content-Format: application/edhoc+cbor-seq).'
+section: 3.3.1
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

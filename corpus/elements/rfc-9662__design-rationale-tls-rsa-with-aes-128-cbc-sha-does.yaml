@@ -1,0 +1,11 @@
+document: rfc-9662
+kind: design-rationale
+summary: TLS_RSA_WITH_AES_128_CBC_SHA does not provide forward secrecy, which is highly desirable for securing event messages. TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 provides forward secrecy and is a currently RECOMMENDED algorithm per RFC 8447bis.
+section: "3"
+topics:
+    - tls
+    - syslog
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

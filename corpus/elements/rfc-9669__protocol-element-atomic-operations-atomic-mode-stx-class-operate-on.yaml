@@ -1,0 +1,6 @@
+document: rfc-9669
+kind: protocol-element
+summary: Atomic operations (ATOMIC mode, STX class) operate on memory atomically, preventing interruption by other BPF programs. Simple operations (ADD=0x00, OR=0x40, AND=0x50, XOR=0xa0) are supported for 32-bit (atomic32 group) and 64-bit (atomic64 group). Complex operations include FETCH modifier (returns old value), XCHG (atomic exchange), and CMPXCHG (compare-and-exchange against R0). 8-bit and 16-bit atomic operations are not supported.
+section: "5.3"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

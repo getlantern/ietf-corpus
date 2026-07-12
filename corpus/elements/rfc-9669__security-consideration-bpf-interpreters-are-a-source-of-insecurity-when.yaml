@@ -1,0 +1,8 @@
+document: rfc-9669
+kind: security-consideration
+summary: BPF interpreters are a source of insecurity when used in the same memory address space as confidential data, because they are susceptible to side-channel attacks via speculative execution gadgets. Use of a JIT compiler is recommended instead; compilers must be carefully audited to ensure compilation of verified BPF programs does not introduce vulnerabilities.
+section: "6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

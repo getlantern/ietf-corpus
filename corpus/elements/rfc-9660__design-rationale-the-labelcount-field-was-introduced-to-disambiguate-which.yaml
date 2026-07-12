@@ -1,0 +1,8 @@
+document: rfc-9660
+kind: design-rationale
+summary: The LABELCOUNT field was introduced to disambiguate which enclosing zone a ZONEVERSION value refers to, since a single QNAME may be subject to multiple zones (e.g., parent and child at a zone cut, or CNAME chains crossing zone boundaries). This allows a single response to carry multiple ZONEVERSION options for different zones.
+section: "2.1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

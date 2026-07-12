@@ -1,0 +1,9 @@
+document: rfc-9665
+kind: design-rationale
+summary: SRP restricts registrable record types (PTR, SRV, TXT, KEY, A, AAAA only) because SIG(0) authentication does not establish trust—it only proves continuity of identity from the initial claim. Allowing arbitrary records (SOA, MX, CNAME) would require a full trust model that is deferred to future work.
+section: "1"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

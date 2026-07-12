@@ -1,0 +1,9 @@
+document: rfc-9665
+kind: security-consideration
+summary: 'Using SRP for a zone also used for non-DNS-SD records risks name squatting (''www'', ''mail'') and offensive name registration. Recommended mitigations: use subdomains (e.g., ''dnssd.example.com.'') rather than organizational zones for SRP, and configure a prohibited-name dictionary that returns Refused (not a number-suffix-retry-able error).'
+section: "6.3"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

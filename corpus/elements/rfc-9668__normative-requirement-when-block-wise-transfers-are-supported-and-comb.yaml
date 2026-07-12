@@ -1,0 +1,9 @@
+document: rfc-9668
+kind: normative-requirement
+summary: When Block-wise transfers are supported and COMB_PAYLOAD exceeds MAX_UNFRAGMENTED_SIZE, the client MUST stop processing and MUST abandon the Block-wise transfer, then fall back to the sequential EDHOC workflow (sending EDHOC message_3 first, then the OSCORE request).
+section: 3.2.2
+rfc2119_level: MUST
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

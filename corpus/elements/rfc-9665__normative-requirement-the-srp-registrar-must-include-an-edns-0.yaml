@@ -1,0 +1,10 @@
+document: rfc-9665
+kind: normative-requirement
+summary: The SRP registrar MUST include an EDNS(0) Update Lease option in its response. The requester MUST check for this option and MUST use the granted lease times from the response (which may be shorter or longer than requested) when scheduling renewals.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - zeroconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

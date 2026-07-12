@@ -1,0 +1,8 @@
+document: rfc-9660
+kind: design-rationale
+summary: ZONEVERSION was designed to atomically pair a DNS answer with the version of the zone that produced it, simplifying debugging and diagnostics. This is especially useful when zones use IP anycast or multiple backend servers where two queries may reach different servers, making it impossible to ensure version consistency across separate queries.
+section: "1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

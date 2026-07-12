@@ -1,0 +1,10 @@
+document: rfc-9662
+kind: design-rationale
+summary: Early data (0-RTT) is prohibited in secure syslog because syslog lacks replay protection (per Section 8.4 of RFC 5424) and the security properties of early data are weaker—specifically, it is not forward secret and provides no protection against replay between connections.
+section: "6"
+topics:
+    - tls
+    - syslog
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

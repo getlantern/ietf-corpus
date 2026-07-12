@@ -1,0 +1,10 @@
+document: rfc-9668
+kind: design-rationale
+summary: Combining EDHOC message_3 with the first OSCORE request reduces the handshake from three round trips to the absolute minimum of two. This optimization is specifically motivated by constrained IoT scenarios where radio technology latency makes extra round trips costly, and is enabled by the fact that message_3 can be made relatively small.
+section: "1"
+topics:
+    - crypto
+    - security
+    - yang
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

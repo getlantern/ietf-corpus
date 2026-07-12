@@ -1,0 +1,10 @@
+document: rfc-9660
+kind: security-consideration
+summary: To certify the trustworthiness of ZONEVERSION data, an encrypted and authenticated DNS transport, TSIG (RFC 8945), or SIG(0) (RFC 2931) must be used. Authenticating the SOA-SERIAL value requires comparing it against a separate DNSSEC-signed SOA query, subject to loose coherency caveats.
+section: "7"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
