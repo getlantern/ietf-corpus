@@ -1,0 +1,11 @@
+document: rfc-9577
+kind: normative-requirement
+summary: Clients SHOULD discard context-bound tokens (those with non-empty redemption_context) upon flushing state such as HTTP cookies or upon a network change when no Origin-specific state is present, to prevent an Origin from using redemption context as a persistent identifier.
+section: 2.1.4
+rfc2119_level: SHOULD
+topics:
+    - privacy
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

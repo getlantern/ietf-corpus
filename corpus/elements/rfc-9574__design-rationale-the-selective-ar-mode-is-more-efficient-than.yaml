@@ -1,0 +1,9 @@
+document: rfc-9574
+kind: design-rationale
+summary: The selective AR mode is more efficient than non-selective AR in multi-stage IP fabrics by limiting replication at each AR-REPLICATOR to only the AR-LEAFs that explicitly requested replication (via Leaf A-D routes). The trade-off is additional BGP signaling overhead and an extra outer source IP address lookup at the AR-REPLICATOR.
+section: "6"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

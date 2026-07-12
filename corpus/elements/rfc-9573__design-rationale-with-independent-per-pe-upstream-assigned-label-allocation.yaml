@@ -1,0 +1,9 @@
+document: rfc-9573
+kind: design-rationale
+summary: With independent per-PE upstream-assigned label allocation, each egress PE must track up to PEs × VPNs/BDs labels (e.g., 1,000,000 labels for 1001 PEs each hosting 1000 VPNs). This scaling problem motivates the use of provisioned common labels so all ingress PEs assign the same label to a given VPN/BD/ES.
+section: "2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

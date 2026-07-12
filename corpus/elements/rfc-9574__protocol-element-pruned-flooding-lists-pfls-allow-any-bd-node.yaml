@@ -1,0 +1,10 @@
+document: rfc-9574
+kind: protocol-element
+summary: Pruned Flooding Lists (PFLs) allow any BD node to signal BM=1 ('prune me from the BM flooding list') or U=1 ('prune me from the Unknown unicast flooding list') in Regular-IR, Replicator-AR, or Leaf A-D routes. A receiving node marks the corresponding overlay tunnel entry and skips it when replicating the respective traffic type, reducing unnecessary replication to disinterested NVEs.
+section: "7"
+topics:
+    - mpls
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

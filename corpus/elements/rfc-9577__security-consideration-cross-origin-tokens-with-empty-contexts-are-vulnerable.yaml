@@ -1,0 +1,9 @@
+document: rfc-9577
+kind: security-consideration
+summary: 'Cross-Origin tokens with empty contexts are vulnerable to token exhaustion: any Origin in the cross-Origin set can deplete the Client''s token supply. Scoping tokens to single Origins via non-empty origin_info or client-side rate limits mitigates this. Token matching on origin_info requires exact string equality.'
+section: "5.4"
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

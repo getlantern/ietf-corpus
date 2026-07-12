@@ -1,0 +1,10 @@
+document: rfc-9574
+kind: security-consideration
+summary: 'PFLs should be used carefully: intentional or unintentional misconfiguration of BM/U flags on a leaf node may result in that node failing to receive required broadcast, multicast, or unknown unicast traffic. A mix of mistakenly configured selective and non-selective AR-REPLICATORs could cause packet duplication, though the document specifies a fallback to non-selective mode for inconsistent configurations.'
+section: "10"
+topics:
+    - mpls
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

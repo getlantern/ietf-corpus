@@ -1,0 +1,9 @@
+document: rfc-9570
+kind: design-rationale
+summary: The 127/8 IPv4 range was chosen as the MPLS echo request destination because RFC 1122 mandates hosts discard such packets, RFC 1812 directs routers not to forward them, and the range provides 16M addresses enabling ECMP path variation. These properties ensure diagnostic packets are contained.
+section: "4"
+topics:
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

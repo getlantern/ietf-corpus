@@ -1,0 +1,9 @@
+document: rfc-9571
+kind: design-rationale
+summary: RFC 6374's use of the Loss Measurement (LM) packet as the packet accounting demarcation point causes significant errors in ECMP environments (out-of-order arrival, multi-interface accounting), with distributed processor cores, link aggregation, and long forwarding pipelines. SFLs were introduced to batch-mark packets so each batch is recognizable by the receiver, mitigating synchronization issues without requiring hardware-level coordination.
+section: "1"
+topics:
+    - mpls
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

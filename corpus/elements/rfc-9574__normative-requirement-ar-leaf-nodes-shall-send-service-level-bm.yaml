@@ -1,0 +1,11 @@
+document: rfc-9574
+kind: normative-requirement
+summary: AR-LEAF nodes SHALL send service-level BM control plane packets (IGMP, MLD, PIM, link-local multicast) using regular ingress replication procedures, not via the AR-REPLICATOR path. AR-REPLICATORs MUST NOT replicate these control plane packets to other overlay tunnels, since they will arrive on the IR-IP address.
+section: "5.2"
+rfc2119_level: MUST NOT
+topics:
+    - mpls
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

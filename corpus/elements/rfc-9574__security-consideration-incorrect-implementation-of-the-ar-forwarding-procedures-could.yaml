@@ -1,0 +1,10 @@
+document: rfc-9574
+kind: security-consideration
+summary: Incorrect implementation of the AR forwarding procedures could produce BM traffic loops, where an AR-LEAF receives back a BM frame it originated. Correct use of distinct tunnel IP DAs (AR-IP vs. IR-IP) or VNIs prevents loops; both non-selective and selective modes rely on this mechanism, so implementation errors are the primary risk.
+section: "10"
+topics:
+    - mpls
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

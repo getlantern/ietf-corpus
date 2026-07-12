@@ -1,0 +1,6 @@
+document: rfc-9575
+kind: design-rationale
+summary: Legacy Transports (Bluetooth 4.x) lack lower-layer FEC and use one-way RF broadcasts that prohibit ACK/NACK-based loss recovery. DRIP therefore defines an application-level single-page XOR parity scheme, placed in the Additional Data field outside the signed payload, to enable recovery of a single erased Authentication Page without requiring interactive protocols.
+section: 3.2.4.1
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

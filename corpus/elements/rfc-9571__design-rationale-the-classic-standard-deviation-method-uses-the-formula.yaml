@@ -1,0 +1,9 @@
+document: rfc-9571
+kind: design-rationale
+summary: The Classic Standard Deviation method uses the formula var = (SumS - S*S/n)/(n-1), which avoids requiring a division in the forwarding hardware. The document acknowledges numerical precision concerns when SumS and S*S/n are similar (low-variance flows) but accepts this tradeoff for hardware simplicity.
+section: "7.2"
+topics:
+    - mpls
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9574
+kind: design-rationale
+summary: PFLs are decoupled from the AR role and can be used independently with regular ingress replication. The primary motivation is NVO networks where certain NVEs learn all MAC/IP addresses via EVPN control plane and use proxy ARP/ND, making broadcast and unknown unicast delivery to those NVEs unnecessary.
+section: "7"
+topics:
+    - mpls
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

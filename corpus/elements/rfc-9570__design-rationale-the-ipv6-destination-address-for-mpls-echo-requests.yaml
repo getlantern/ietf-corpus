@@ -1,0 +1,9 @@
+document: rfc-9570
+kind: design-rationale
+summary: The IPv6 destination address for MPLS echo requests was changed from the IPv4-mapped range (0:0:0:0:0:FFFF:7F00:0/104) to ::1/128 because IPv4-mapped addresses do not exhibit the same loopback behavior prescribed in RFC 1122, whereas ::1/128 is the standardized IPv6 loopback address per RFC 4291 with well-defined discard behavior.
+section: "4"
+topics:
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

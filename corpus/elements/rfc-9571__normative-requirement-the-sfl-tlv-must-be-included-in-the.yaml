@@ -1,0 +1,10 @@
+document: rfc-9571
+kind: normative-requirement
+summary: The SFL TLV MUST be included in the measurement message unless, by some out-of-scope method, it is known that the responder does not need it. The SFL TLV is required when messages are sent over UDP (RFC 7876), because many MPLS implementations do not pass the label stack to the OAM handler.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

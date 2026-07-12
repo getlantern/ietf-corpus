@@ -1,0 +1,9 @@
+document: rfc-9574
+kind: design-rationale
+summary: The AR-IP and IR-IP are kept as distinct IP addresses on an AR-REPLICATOR so that the data plane can unambiguously determine whether an incoming overlay packet must be forwarded in Assisted Replication mode (replicate to all tunnels) or Ingress Replication mode (replicate to ACs only). Conflating the two addresses requires using the VNI/VSID as the differentiator instead (Section 8 procedures), which is a special case for lower-end nodes.
+section: "4"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

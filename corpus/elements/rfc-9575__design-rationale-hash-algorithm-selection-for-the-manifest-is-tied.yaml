@@ -1,0 +1,8 @@
+document: rfc-9575
+kind: design-rationale
+summary: 'Hash algorithm selection for the Manifest is tied to the HHIT Suite ID of the signing DET: cSHAKE128 DETs compute cSHAKE128(ASTM Message, 64, "", "Remote ID Auth Hash") while ECDSA/SHA-384 DETs use a left-truncated SHA-384. This keeps cryptographic agility aligned with the DET''s own algorithm negotiation rather than introducing a separate negotiation.'
+section: 4.4.3
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

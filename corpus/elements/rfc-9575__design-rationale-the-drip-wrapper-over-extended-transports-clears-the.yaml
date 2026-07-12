@@ -1,0 +1,8 @@
+document: rfc-9575
+kind: design-rationale
+summary: The DRIP Wrapper over Extended Transports clears the Evidence field after signing and relies on co-located ASTM Message Pack content for verification. This approach is functionally equivalent to ASTM Authentication Type 0x3 (Message Set Signature) but avoids dependence on the ASTM validator system architecture, which requires Internet connectivity that offline Observers may not have.
+section: 4.3.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

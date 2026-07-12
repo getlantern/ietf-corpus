@@ -1,0 +1,10 @@
+document: rfc-9572
+kind: normative-requirement
+summary: When using ingress replication and an ASBR re-advertises IMET A-D routes to IBGP peers, it MUST advertise the same label for all those routes for the same Ethernet Tag ID and EVI. When building the flooding list, if multiple routes have the same (nexthop, label) tuple, they MUST only be added as a single branch.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

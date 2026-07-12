@@ -1,0 +1,9 @@
+document: rfc-9573
+kind: design-rationale
+summary: For segmented selective tunnels, a single per-VPN/BD DCB label cannot be used at segmentation points because different flows on the same aggregate tunnel in one region may fan out to different tunnels in the next region. Per-PMSI labels allocated from PE-specific disjoint blocks within a context-specific label space are required instead.
+section: 3.2.1
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9577
+kind: security-consideration
+summary: Context-bound tokens (non-empty redemption_context) should be discarded when flushing cookies or changing networks. Retaining and redeeming them in a new context allows the Origin to use the redemption context as a tracking cookie, linking otherwise-unlinkable sessions.
+section: "5.6"
+topics:
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

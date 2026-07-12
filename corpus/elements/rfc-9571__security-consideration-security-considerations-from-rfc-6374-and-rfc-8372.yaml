@@ -1,0 +1,10 @@
+document: rfc-9571
+kind: security-consideration
+summary: Security considerations from RFC 6374 and RFC 8372 (which reference RFC 5920 and RFC 7258) apply. An attacker corrupting the SFL TLV in Section 9.1 could disrupt measurements in a way undetectable by the RFC 6374 responder, though anomalous measurement results would likely be noticed by the operator, and normal MPLS security makes such attacks unlikely. Any control protocol used to request SFLs must ensure legitimacy of requests.
+section: "12"
+topics:
+    - mpls
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

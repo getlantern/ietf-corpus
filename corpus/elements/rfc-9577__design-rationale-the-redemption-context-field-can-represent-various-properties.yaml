@@ -1,0 +1,9 @@
+document: rfc-9577
+kind: design-rationale
+summary: 'The redemption_context field can represent various properties: a per-request nonce (32 random bytes), a time-window-bound value F(time window), a network-bound value F(Client ASN), or a combination. An empty context removes the need for per-context double-spend state but requires global state sharing across all Origin servers.'
+section: 2.1.1.2
+topics:
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9572
+kind: design-rationale
+summary: 'For inter-AS segmentation, EVPNs use a different approach than VPLS: each ASBR re-advertises its received Inter-AS A-D route to IBGP peers and becomes the root of its own intra-AS segment, rather than requiring complicated procedures for ASBRs to elect a single propagating ASBR. This matches MVPN behavior.'
+section: "5.1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

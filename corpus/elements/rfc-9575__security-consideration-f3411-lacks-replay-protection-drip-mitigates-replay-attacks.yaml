@@ -1,0 +1,8 @@
+document: rfc-9575
+kind: security-consideration
+summary: F3411 lacks replay protection. DRIP mitigates replay attacks by requiring Observers to verify a chain of DRIP Links and then verify that a Wrapper or Manifest authenticates nonce-like data (unique, frequently changing, easily validated content such as a Location/Vector Message), confirming the sender possesses the private key corresponding to the claimed DET.
+section: "9.1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

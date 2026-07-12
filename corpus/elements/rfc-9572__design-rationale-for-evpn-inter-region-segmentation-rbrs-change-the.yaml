@@ -1,0 +1,9 @@
+document: rfc-9572
+kind: design-rationale
+summary: For EVPN inter-region segmentation, RBRs change the BGP next hop when re-advertising I/S-PMSI A-D routes instead of using the S-NH-EC (as required by RFC 7524 for MVPNs/VPLSs). This makes the procedure transparent to ingress and egress PEs and provides a consistent approach across both inter-AS and inter-region segmentation.
+section: "6.3"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

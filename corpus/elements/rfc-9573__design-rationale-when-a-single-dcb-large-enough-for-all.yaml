@@ -1,0 +1,9 @@
+document: rfc-9573
+kind: design-rationale
+summary: When a single DCB large enough for all VPNs/BDs/ESs is impractical, a few context-specific label spaces (identified by small DCB labels) can hold the full VPN/BD/ES label set. Ingress PEs impose the context-identifying DCB label after the VPN/BD/ES label, allowing egress PEs to determine the correct forwarding table.
+section: "3"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

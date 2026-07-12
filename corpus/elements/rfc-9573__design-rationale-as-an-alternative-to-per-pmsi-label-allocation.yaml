@@ -1,0 +1,9 @@
+document: rfc-9573
+kind: design-rationale
+summary: As an alternative to per-PMSI label allocation at segmentation points, segmentation points could perform (C-S,C-G) lookups in VRFs, allowing S-PMSIs for the same VPN/BD to share a common VPN/BD-identifying label. However, this trades a label-count scaling problem for a (C-S/*,C-G) route-count scaling problem in VRFs.
+section: 3.2.3
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

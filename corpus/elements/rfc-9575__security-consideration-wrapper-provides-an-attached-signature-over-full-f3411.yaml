@@ -1,0 +1,9 @@
+document: rfc-9575
+kind: security-consideration
+summary: Wrapper provides an attached signature over full F3411 message content (up to 4 messages) but cannot directly bind to the trust chain. Manifest explicitly binds to the trust chain via the BE:HDA,UA hash and supports up to 11 messages but imposes Observer overhead to store and compare received message hashes. Manifests produce 25 total frames vs. 36 for Wrappers in typical operation.
+section: "9.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
