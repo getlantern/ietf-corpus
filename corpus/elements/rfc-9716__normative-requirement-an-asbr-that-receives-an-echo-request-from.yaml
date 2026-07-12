@@ -1,0 +1,9 @@
+document: rfc-9716
+kind: normative-requirement
+summary: An ASBR that receives an echo request from a neighbor in the same AS MUST look at the Reply Path TLV; if it contains a Type-C/Type-D segment, it MUST convert it to a Type-A segment by deriving a label from its own SRGB, and MUST set the Reply Path Return Code to 0x0006.
+section: 5.5.1
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

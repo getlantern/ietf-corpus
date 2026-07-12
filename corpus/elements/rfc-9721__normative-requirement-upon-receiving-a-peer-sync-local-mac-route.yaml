@@ -1,0 +1,9 @@
+document: rfc-9721
+kind: normative-requirement
+summary: Upon receiving a Peer-Sync-Local MAC route, if the current local MAC route Mx sequence number is less than the received Peer-Sync-Local MAC route sequence number, it MUST be increased to equal the received value. If updated, all local MAC-IP routes associated with MAC route Mx MUST inherit the updated sequence number.
+section: "6.4"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

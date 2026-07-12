@@ -1,0 +1,11 @@
+document: rfc-9725
+kind: normative-requirement
+summary: To set up an ingest session, the WHIP client MUST send an HTTP POST request to the configured WHIP endpoint URL with a content type of 'application/sdp' containing an SDP offer generated per JSEP rules. If the content type differs or the SDP is malformed, the endpoint MUST reject with an appropriate 4xx error.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - webrtc
+    - http
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

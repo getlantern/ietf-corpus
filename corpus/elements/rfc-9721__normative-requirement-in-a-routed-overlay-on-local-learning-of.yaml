@@ -1,0 +1,10 @@
+document: rfc-9721
+kind: normative-requirement
+summary: In a routed overlay, on local learning of a host IP on a new ESI, the host IP MUST be advertised via RT-5 with a sequence number higher than what is currently advertised with the old ESI. On receiving a host IP route advertisement with a higher sequence number, a PE MUST trigger ARP/NDP probe and deletion procedures on any local route for that IP with a lower sequence number.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

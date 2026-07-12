@@ -1,0 +1,9 @@
+document: rfc-9722
+kind: design-rationale
+summary: Existing timer-based DF election in RFC 7432 causes either loops and duplicates (timer too short) or prolonged traffic loss (timer too long). The HRW algorithm from RFC 8584 helps during failures but cannot prevent overlapping DF roles when a new PE is inserted, since there is no handshake mechanism.
+section: "1.3"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

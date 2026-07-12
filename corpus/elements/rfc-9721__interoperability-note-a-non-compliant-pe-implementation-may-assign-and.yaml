@@ -1,0 +1,8 @@
+document: rfc-9721
+kind: interoperability-note
+summary: A non-compliant PE implementation may assign and advertise independent sequence numbers to MAC and MAC+IP routes for the same MAC address, differing from compliant PEs where these sequence numbers are always identical. The receiving PE must handle this by computing the effective remote MAC route sequence number as the maximum across all received MAC+IP and MAC routes with the same MAC address, without requiring knowledge of whether the remote PE is compliant.
+section: "6.6"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

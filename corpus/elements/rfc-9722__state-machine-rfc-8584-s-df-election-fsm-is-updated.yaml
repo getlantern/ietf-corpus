@@ -1,0 +1,9 @@
+document: rfc-9722
+kind: state-machine
+summary: 'RFC 8584''s DF Election FSM is updated in the DF_CALC state: upon receiving RCVD_ES with an SCT, the FSM delays transitioning back to DF_DONE. The PE waits until SCT minus skew to assume NDF role, then waits the remaining skew before assuming the final elected role (DF or NDF) and transitioning to DF_DONE.'
+section: "2.3"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

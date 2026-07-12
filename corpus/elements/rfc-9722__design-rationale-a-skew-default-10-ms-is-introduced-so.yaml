@@ -1,0 +1,9 @@
+document: rfc-9722
+kind: design-rationale
+summary: A 'skew' (default 10 ms) is introduced so that previously inserted PEs perform DF-to-NDF transitions slightly before the SCT, ensuring both PEs are briefly in NDF state before NDF-to-DF transitions occur at the SCT. This eliminates overlapping DF roles and prevents duplicate traffic and loops.
+section: "2"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

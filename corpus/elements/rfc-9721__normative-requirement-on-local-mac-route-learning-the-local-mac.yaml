@@ -1,0 +1,9 @@
+document: rfc-9721
+kind: normative-requirement
+summary: On local MAC route learning, the local MAC route Mx sequence number MUST be higher than any existing remote MAC route for Mx, and MUST be at least equal to the corresponding Peer-Sync-Local MAC route sequence number. If the existing local sequence number is less than the Peer-Sync-Local sequence number, the PE MUST update it to equal the Peer-Sync-Local value. All local MAC-IP routes associated with Mx MUST inherit the updated sequence number.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

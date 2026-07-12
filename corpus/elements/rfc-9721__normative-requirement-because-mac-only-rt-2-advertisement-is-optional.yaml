@@ -1,0 +1,9 @@
+document: rfc-9721
+kind: normative-requirement
+summary: Because MAC-only RT-2 advertisement is optional, receiving a Peer-Sync-Local MAC-IP route for a locally attached host results in a derived Peer-Sync-Local MAC Mx route entry. If the current local MAC Mx sequence number is less than the received value, it MUST be increased to equal that value, and all local MAC-IP routes associated with Mx MUST inherit the updated sequence number.
+section: "6.5"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

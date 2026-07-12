@@ -1,0 +1,9 @@
+document: rfc-9725
+kind: design-rationale
+summary: The WHIP client is permitted to use SDP 'setup:active' (DTLS client role only) despite RFC 8842 requiring 'actpass' from the offerer. The rationale is that a WHIP client always communicates with a media server expected to support the DTLS server role, so a client-only DTLS implementation is a valid simplification.
+section: 4.4.4
+topics:
+    - webrtc
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

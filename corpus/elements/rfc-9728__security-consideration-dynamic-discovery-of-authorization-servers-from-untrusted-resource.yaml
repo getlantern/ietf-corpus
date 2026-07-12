@@ -1,0 +1,10 @@
+document: rfc-9728
+kind: security-consideration
+summary: Dynamic discovery of authorization servers from untrusted resource server metadata opens an SSRF risk. Clients SHOULD take precautions against SSRF attacks such as blocking requests to internal IP address ranges when fetching authorization server metadata derived from resource metadata.
+section: "7.7"
+topics:
+    - oauth
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

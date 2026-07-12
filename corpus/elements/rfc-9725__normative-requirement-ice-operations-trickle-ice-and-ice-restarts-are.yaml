@@ -1,0 +1,11 @@
+document: rfc-9725
+kind: normative-requirement
+summary: ICE operations (Trickle ICE and ICE restarts) are performed via HTTP PATCH requests to the WHIP session URL. The PATCH body MUST have content type 'application/trickle-ice-sdpfrag'; any other content type or malformed SDP fragment MUST be rejected with an appropriate 4xx.
+section: 4.3.1
+rfc2119_level: MUST
+topics:
+    - webrtc
+    - http
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

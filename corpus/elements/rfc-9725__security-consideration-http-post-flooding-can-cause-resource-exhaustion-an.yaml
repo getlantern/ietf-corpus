@@ -1,0 +1,10 @@
+document: rfc-9725
+kind: security-consideration
+summary: 'HTTP POST flooding can cause resource exhaustion: an authenticated attacker can submit many POST requests, forcing the endpoint to allocate ICE/DTLS resources that are held until timeout. WHIP endpoints SHOULD implement rate limiting and avalanche control for incoming POST requests.'
+section: "5"
+topics:
+    - security
+    - webrtc
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

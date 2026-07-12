@@ -1,0 +1,9 @@
+document: rfc-9721
+kind: design-rationale
+summary: MAC-IP routes are treated as children of the corresponding parent MAC route, inheriting the parent's sequence number. This ensures a single sequence number in a combined MAC+IP RT-2 represents both MAC and IP reachability, making MAC-only RT-2 advertisement truly optional and enabling a MAC address to assume a new IP address after moving while still establishing the most recent reachability.
+section: "5.1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

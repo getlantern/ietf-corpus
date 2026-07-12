@@ -1,0 +1,8 @@
+document: rfc-9721
+kind: design-rationale
+summary: In a MAC address sharing scenario, multiple local MAC-IP sibling routes inherit the sequence number from their common parent MAC route. When a host IP moves to a new physical server with a different MAC, the new MAC-IP route must be advertised with a sequence number higher than both the previous MAC-IP route's sequence number and the new MAC's prior sequence number, requiring re-advertisement of all child routes when the parent sequence number is incremented.
+section: "5.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

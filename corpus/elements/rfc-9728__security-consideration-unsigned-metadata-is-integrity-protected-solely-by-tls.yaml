@@ -1,0 +1,12 @@
+document: rfc-9728
+kind: security-consideration
+summary: Unsigned metadata is integrity protected solely by TLS and PKIX, while signed metadata is additionally protected by the JWS signature from the issuer (iss claim). Signed metadata allows trust decisions based on the signing issuer's identity, which is not available with unsigned metadata.
+section: "7.9"
+topics:
+    - oauth
+    - security
+    - crypto
+    - tls
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,11 @@
+document: rfc-9725
+kind: normative-requirement
+summary: When performing an ICE restart, the WHIP client MUST include updated 'ice-pwd' and 'ice-ufrag' in the PATCH body and MUST include an If-Match header with value '*'. The WHIP session MUST return '200 OK' with a new entity-tag and new ICE credentials/candidates in the response body.
+section: 4.3.3
+rfc2119_level: MUST
+topics:
+    - webrtc
+    - http
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

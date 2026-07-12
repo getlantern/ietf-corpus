@@ -1,0 +1,11 @@
+document: rfc-9725
+kind: normative-requirement
+summary: The WHIP client MUST wait and buffer all gathered ICE candidates until the '201 Created' response is received before sending them, because the WHIP session URL is not known until then. The client SHOULD send a single aggregated HTTP PATCH with all buffered candidates.
+section: 4.3.2
+rfc2119_level: MUST
+topics:
+    - webrtc
+    - http
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

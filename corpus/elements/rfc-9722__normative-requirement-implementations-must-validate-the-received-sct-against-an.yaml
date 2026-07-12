@@ -1,0 +1,12 @@
+document: rfc-9722
+kind: normative-requirement
+summary: Implementations MUST validate the received SCT against an upper bound to address both NTP Era rollover ambiguity and the attack vector of unreasonably large SCT values. The recommended approach is to compare the received offset to the local peering timer value.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+    - security
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

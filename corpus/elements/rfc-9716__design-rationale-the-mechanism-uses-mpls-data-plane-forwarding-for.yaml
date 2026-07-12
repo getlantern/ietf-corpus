@@ -1,0 +1,8 @@
+document: rfc-9716
+kind: design-rationale
+summary: The mechanism uses MPLS data plane forwarding for echo replies so that any MPLS-capable node can forward echo reply packets in the fast path without changes to the forwarding plane. This is preferred over RFC 7743's relay-based solution, which requires slow-path or bump-in-the-wire processing at every relay node.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,8 @@
+document: rfc-9721
+kind: state-machine
+summary: 'Duplicate host recovery transitions through states: (1) duplicate detected and route frozen, (2) corrective un-provisioning of one duplicate host, (3) recovery via route unfreezing CLI (advertising with higher sequence number triggers auto-clearing at the un-provisioned location) or route clearing CLI (Clear MAC CLI / Clear ARP/NDP), returning to normal operation. Without corrective CLI action, the frozen route remains frozen until the duplicate MAC or IP ages out.'
+section: "8.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

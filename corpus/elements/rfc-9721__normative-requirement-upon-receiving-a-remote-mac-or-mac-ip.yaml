@@ -1,0 +1,9 @@
+document: rfc-9721
+kind: normative-requirement
+summary: Upon receiving a remote MAC or MAC-IP route for MAC Mx with a sequence number higher than (or equal but selected as best due to lower VTEP IP per RFC 7432) the local route's sequence number, the PE MUST trigger a probe and deletion procedure for all local MAC-IP routes associated with MAC Mx and MUST trigger a deletion procedure for the local MAC route for Mx.
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

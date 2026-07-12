@@ -1,0 +1,11 @@
+document: rfc-9725
+kind: normative-requirement
+summary: The WHIP endpoint SHOULD NOT reject individual 'm=' sections on error; instead it SHOULD reject the entire HTTP POST with '422 Unprocessable Content' or '400 Bad Request' to prevent partially successful ingest sessions that could mislead end users.
+section: 4.4.3
+rfc2119_level: SHOULD NOT
+topics:
+    - webrtc
+    - http
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

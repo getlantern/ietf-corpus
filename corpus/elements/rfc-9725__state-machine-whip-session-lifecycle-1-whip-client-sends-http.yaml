@@ -1,0 +1,10 @@
+document: rfc-9725
+kind: state-machine
+summary: 'WHIP session lifecycle: (1) WHIP client sends HTTP POST with SDP offer → endpoint returns 201 Created with SDP answer and session URL; (2) ICE/DTLS establishment between client and media server; (3) RTP/RTCP media flow (unidirectional, client→server); (4) HTTP DELETE to session URL terminates the session. SDP renegotiation is not supported after step 1.'
+section: "3"
+topics:
+    - webrtc
+    - http
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

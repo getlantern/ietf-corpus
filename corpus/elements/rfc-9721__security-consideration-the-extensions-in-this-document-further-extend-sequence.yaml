@@ -1,0 +1,9 @@
+document: rfc-9721
+kind: security-consideration
+summary: The extensions in this document further extend sequence number consumption for IRB deployments, making them subject to the same security considerations as RFC 7432 if the control or data plane is compromised. A compromised host-facing data plane could enable spoofing attacks that make a legitimate host appear to have moved, eventually causing it to be marked as duplicate. Protections for control and data planes described in RFC 7432 apply equally to such mobility spoofing use cases.
+section: "9"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

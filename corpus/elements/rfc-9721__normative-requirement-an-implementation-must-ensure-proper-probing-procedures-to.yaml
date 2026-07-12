@@ -1,0 +1,9 @@
+document: rfc-9721
+kind: normative-requirement
+summary: An implementation MUST ensure proper probing procedures to remove stale ARP, NDP, and local MAC entries following a move, on learning remote routes as defined in Section 6.3 (and per RFC 9135), to minimize exposure to the MAC address sharing race condition where new MAC-IP routes can bounce between PEs with sequence number increments.
+section: "6.7"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

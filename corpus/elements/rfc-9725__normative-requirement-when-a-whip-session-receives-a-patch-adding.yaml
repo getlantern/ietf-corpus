@@ -1,0 +1,10 @@
+document: rfc-9725
+kind: normative-requirement
+summary: When a WHIP session receives a PATCH adding ICE candidates without an ICE restart, it MUST return '204 No Content' with no body and MUST NOT include an ETag header. Unsupported candidate transports MUST be silently discarded without failing the request.
+section: 4.3.2
+rfc2119_level: MUST
+topics:
+    - webrtc
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

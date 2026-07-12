@@ -1,0 +1,10 @@
+document: rfc-9722
+kind: security-consideration
+summary: 'The SCT Extended Community introduces attack vectors: setting SCT to zero or a past value causes fallback to RFC 7432 behavior (handled naturally by Section 2.2 past-timestamp logic), while setting SCT to a large future value is mitigated by mandatory upper-bound validation against the local peering timer.'
+section: "5"
+topics:
+    - security
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

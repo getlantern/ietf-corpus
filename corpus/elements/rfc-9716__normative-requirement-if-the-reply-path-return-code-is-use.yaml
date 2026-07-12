@@ -1,0 +1,9 @@
+document: rfc-9716
+kind: normative-requirement
+summary: If the Reply Path Return Code is 'Use Reply Path TLV from this echo reply for building the next echo request' (0x0006), the Reply Path TLV from the echo reply MUST be sent in the next echo request with the TTL incremented by 1. If the TTL is already 255, the traceroute procedure MUST be ended with an appropriate log message.
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

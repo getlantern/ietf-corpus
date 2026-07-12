@@ -1,0 +1,10 @@
+document: rfc-9725
+kind: security-consideration
+summary: 'Insecure Direct Object References (IDORs): if WHIP session URLs are guessable, an attacker can send HTTP DELETE requests to terminate all running sessions. Endpoints SHOULD generate session URLs with sufficient randomness using a CSPRNG per RFC 4086, and SHOULD rate-limit DELETE requests.'
+section: "5"
+topics:
+    - security
+    - webrtc
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

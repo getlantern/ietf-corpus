@@ -1,0 +1,9 @@
+document: rfc-9722
+kind: design-rationale
+summary: The SCT approach makes BGP transmission delay a non-issue because the peering PE uses the absolute SCT to schedule carving regardless of when it received the RT-4. This effectively shortens the 3-second RFC 7432 discovery timer window to the order of milliseconds.
+section: "3"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
