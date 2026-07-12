@@ -1,0 +1,9 @@
+document: rfc-9704
+kind: protocol-element
+summary: The Verification Token is computed as hash(len($SALT) || $SALT || $X), where $X is the concatenation of claimed subdomains in canonical form with their parent zone suffix replaced by a zero octet, and hash is the ZONEMD Hash Algorithm.
+section: "5"
+topics:
+    - dns
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

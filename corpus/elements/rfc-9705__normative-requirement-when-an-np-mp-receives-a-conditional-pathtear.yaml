@@ -1,0 +1,10 @@
+document: rfc-9705
+kind: normative-requirement
+summary: When an NP-MP receives a Conditional PathTear, it MUST NOT delete the LSP state; it MUST check for a previously included B-SFRR-Ready object from the PHOP, remove it, and trigger a Path downstream. When a non-NP-MP receives a Conditional PathTear, it MUST delete LSP state and propagate a normal PathTear downstream.
+section: 4.4.2
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

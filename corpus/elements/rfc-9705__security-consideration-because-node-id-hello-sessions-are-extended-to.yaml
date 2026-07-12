@@ -1,0 +1,11 @@
+document: rfc-9705
+kind: security-consideration
+summary: Because Node-ID Hello sessions are extended to non-immediate neighbors (TTL=255), implementations SHOULD provide options to configure per-neighbor or global Node-ID authentication keys, and SHOULD enable authentication for Hello messages received with TTL > 1. Implementations SHOULD also limit the number of Node-ID Hello sessions establishable on a router.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - mpls
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

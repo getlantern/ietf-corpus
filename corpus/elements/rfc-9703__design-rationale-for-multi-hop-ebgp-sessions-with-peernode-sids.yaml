@@ -1,0 +1,10 @@
+document: rfc-9703
+kind: design-rationale
+summary: For multi-hop EBGP sessions with PeerNode SIDs where traffic may be load-balanced across multiple interfaces, the advertising node sends a Downstream Detailed Mapping (DDMAP) TLV specifying next-hop interface details, allowing a controller to verify actual forwarding state against topology information. Discrepancies between controller state and forwarding state are not detected by the OAM procedures alone.
+section: "4.1"
+topics:
+    - mpls
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9705
+kind: design-rationale
+summary: RFC 4090 facility backup protection implicitly relies on short refresh timeouts for stale state cleanup. At long refresh intervals (order of minutes, as recommended by RFC 8370), stale states can linger causing scalability problems. This document introduces explicit teardown messages (Conditional PathTear and Remote PathTear) to eliminate this dependency.
+section: "1.1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

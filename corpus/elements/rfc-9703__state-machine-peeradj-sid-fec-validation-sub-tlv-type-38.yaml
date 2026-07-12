@@ -1,0 +1,10 @@
+document: rfc-9703
+kind: state-machine
+summary: 'PeerAdj SID FEC validation (sub-TLV type 38): when label-stack-depth is 0, validate that the receiving node''s BGP Local AS matches the FEC''s remote AS, BGP Router-ID matches the Remote Router ID, and an EBGP session exists with the specified peer; if remote interface address is non-zero, also validate the incoming interface. Set return code 3 on full success, 10 on AS/Router-ID mismatch, 35 on interface mismatch.'
+section: "5.1"
+topics:
+    - mpls
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
