@@ -1,0 +1,9 @@
+document: rfc-9504
+kind: normative-requirement
+summary: If the END-POINTS object is missing and the GMPLS G flag in LSP-EXTENDED-FLAG is set, the receiving PCE or PCC MUST send a PCErr with Error-Type 6 ('Mandatory Object missing') Error-value 3. If the Generalized Endpoint object type is received but the LSP-EXTENDED-FLAG TLV or G flag is absent, Error-Type 19 Error-value 28 MUST be sent.
+section: "7.4"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

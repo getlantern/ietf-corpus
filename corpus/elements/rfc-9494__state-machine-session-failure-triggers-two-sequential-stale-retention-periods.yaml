@@ -1,0 +1,9 @@
+document: rfc-9494
+kind: state-machine
+summary: 'Session failure triggers two sequential stale-retention periods: (1) GR period—routes are retained per RFC 4724 at normal preference until the Restart Time expires; (2) LLGR period—routes are depreferenced, tagged with LLGR_STALE, and retained until the Long-Lived Stale Time expires or the session re-establishes and synchronizes. If both timers are zero, standard RFC 4271 withdrawal applies.'
+section: "4.2"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

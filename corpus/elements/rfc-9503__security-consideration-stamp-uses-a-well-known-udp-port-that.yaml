@@ -1,0 +1,9 @@
+document: rfc-9503
+kind: security-consideration
+summary: STAMP uses a well-known UDP port that could be targeted for denial of service (DoS) or used to aid on-path attacks. Security measures from RFC 8545 Section 6 apply. Timestamp validation (e.g., T2 is later than T1) can mitigate attacks, and minimal state limits disruption to a single test cycle.
+section: "6"
+topics:
+    - security
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

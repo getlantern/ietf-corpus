@@ -1,0 +1,12 @@
+document: rfc-9494
+kind: normative-requirement
+summary: When IBGP is the PE-CE protocol in a VPN and a CE supports LLGR, the PE MUST include the LLGR_STALE community in routes advertised to the CE if it is present in the imported VPN route's path attributes, even if absent from the ATTR_SET. This updates RFC 6368.
+section: 4.7.2
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - vpn
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

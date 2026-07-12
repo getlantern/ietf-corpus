@@ -1,0 +1,10 @@
+document: rfc-9494
+kind: security-consideration
+summary: Depreferencing IBGP routes based on per-router session state can lead to inconsistent route selection across routers in an AS, potentially causing forwarding loops in hop-by-hop routed networks. LLGR is not recommended for AFI/SAFIs carrying conventional reachability information in networks without tunneled forwarding (e.g., MPLS).
+section: "5.2"
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

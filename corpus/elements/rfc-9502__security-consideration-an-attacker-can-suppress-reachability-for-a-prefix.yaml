@@ -1,0 +1,10 @@
+document: rfc-9502
+kind: security-consideration
+summary: An attacker can suppress reachability for a prefix that a legitimate node advertises under IP Flex-Algorithm X by advertising the same prefix under Flex-Algorithm Y from a malicious node, causing all such advertisements to be discarded (per the rule requiring consistent algorithm across originators). This attack is addressable by existing IGP authentication mechanisms (RFC 5304/5310 for IS-IS; RFC 2328/7474 for OSPFv2; RFC 4552/5340 for OSPFv3), but cannot be prevented if an authenticated node is compromised.
+section: "12"
+topics:
+    - security
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

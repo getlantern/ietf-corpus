@@ -1,0 +1,9 @@
+document: rfc-9494
+kind: design-rationale
+summary: LLGR depreferences stale routes (treats them as least preferred), whereas conventional GR leaves route preference unchanged. This design choice reflects the expectation that LLGR stale routes may be retained for a potentially unbounded period, making it preferable to advertise new state and use stale information only as a last resort.
+section: "1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

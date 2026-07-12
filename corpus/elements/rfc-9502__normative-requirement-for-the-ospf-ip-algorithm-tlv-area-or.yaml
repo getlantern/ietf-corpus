@@ -1,0 +1,10 @@
+document: rfc-9502
+kind: normative-requirement
+summary: For the OSPF IP Algorithm TLV, area- or AS-scoped flooding is REQUIRED. AS flooding scope SHOULD NOT be used unless local configuration policy on the originating router indicates domain-wide flooding. When multiple IP Algorithm TLVs are received from a given router, the one in the Router Information LSA with area-scoped flooding must be used; if same scope, the one with the numerically smallest Instance ID MUST be used.
+section: "5.2"
+rfc2119_level: REQUIRED
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

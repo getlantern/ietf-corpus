@@ -1,0 +1,11 @@
+document: rfc-9509
+kind: design-rationale
+summary: Without specific EKU constraints, a Network Function that generates keys and requests a certificate could obtain one misusable for tasks it is not entitled to perform. For example, a NF service consumer could use a client certificate to impersonate NF service producers or sign Client Credentials Assertions, violating the principle of segregation of duties.
+section: "1"
+topics:
+    - pkix
+    - security
+    - jose
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,11 @@
+document: rfc-9495
+kind: security-consideration
+summary: CAA Properties may have the "critical" flag set (flag value 128), requiring conforming CAs to process them. If a CA does not understand a critical Property, it MUST NOT issue the certificate. This mechanism can inadvertently block issuance if a CA supporting "issuemail" does not also support another critical Property Tag in the same RRSet.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - pkix
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

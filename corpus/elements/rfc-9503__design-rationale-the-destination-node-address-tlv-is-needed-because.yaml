@@ -1,0 +1,9 @@
+document: rfc-9503
+kind: design-rationale
+summary: The Destination Node Address TLV is needed because in ECMP environments, STAMP test packets may use non-routable destination addresses (e.g., 127/8 for IPv4 or ::1/128 for IPv6) to influence path selection, causing packets to potentially reach an unintended node. The TLV carries the true intended Session-Reflector address to detect this error condition.
+section: A
+topics:
+    - routing
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

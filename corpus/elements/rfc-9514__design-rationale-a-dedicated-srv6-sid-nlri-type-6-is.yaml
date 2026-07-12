@@ -1,0 +1,10 @@
+document: rfc-9514
+kind: design-rationale
+summary: A dedicated SRv6 SID NLRI (type 6) is introduced rather than embedding SIDs in the Node NLRI's BGP-LS Attribute. This avoids large, monolithic BGP-LS updates when the number of SRv6 SIDs on a node grows or when a single SID changes, enabling granular per-SID advertisement and better scaling.
+section: "2"
+topics:
+    - routing
+    - bgp
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9494
+kind: interoperability-note
+summary: When a Long-Lived Stale Time timer expires during synchronization (after session re-establishment but before EoR), any stale routes not refreshed by the peer are removed. If the session resets again before synchronization completes for an AFI/SAFI whose LLST timer already expired, all remaining routes for that AFI/SAFI MUST be removed immediately.
+section: "4.2"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9494
+kind: normative-requirement
+summary: Once the GR Restart Time period ends, the helper router MUST start an LLST timer per AFI/SAFI, attach the LLGR_STALE community to retained stale routes (requiring readvertisement), and delete those routes if the timer expires before session re-establishment.
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9494
+kind: interoperability-note
+summary: In VPN deployments using EBGP as the PE-CE protocol, an implementation MAY advertise LLGR stale routes over a PE-CE session to a non-LLGR CE when explicitly configured to do so, bypassing the normal restriction. The NO_EXPORT community SHOULD be attached by default as an additional safeguard against unbounded stale route propagation.
+section: 4.7.1
+topics:
+    - bgp
+    - routing
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

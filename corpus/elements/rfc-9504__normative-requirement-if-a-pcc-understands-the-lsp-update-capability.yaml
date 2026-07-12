@@ -1,0 +1,9 @@
+document: rfc-9504
+kind: normative-requirement
+summary: If a PCC understands the LSP-UPDATE-CAPABILITY flag but did not advertise it, and receives a PCUpd message for a GMPLS LSP, it SHOULD generate a PCErr with Error-Type 19 Error-value 25 ('Attempted LSP update request for GMPLS if stateful PCE capability not advertised') and terminate the PCEP session.
+section: "7.1"
+rfc2119_level: SHOULD
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

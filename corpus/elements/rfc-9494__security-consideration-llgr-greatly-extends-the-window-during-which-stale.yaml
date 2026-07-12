@@ -1,0 +1,12 @@
+document: rfc-9494
+kind: security-consideration
+summary: 'LLGR greatly extends the window during which stale routing information is present in the network, increasing the period during which certain attacks are feasible. This is especially relevant for MPLS VPN label entries: if an egress PE withdraws a VPN label L1 but ingress PEs still hold a long-lived stale route using L1, and L1 is reallocated to a different VPN before the stale routes expire, cross-VPN traffic leakage can occur.'
+section: "6"
+topics:
+    - bgp
+    - routing
+    - security
+    - mpls
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
