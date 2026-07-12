@@ -1,0 +1,9 @@
+document: rfc-9746
+kind: security-consideration
+summary: Misconfiguration of the desired SHT could lead to forwarding behaviors that differ from the intended configuration. However, the document's mismatch-fallback mechanism ensures all NVEs on an ES converge to a common SHT, so an attacker modifying the SHT on a single NVE should not cause traffic disruption (assuming a valid SHT value) but may alter forwarding behavior.
+section: "4"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

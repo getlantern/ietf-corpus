@@ -1,0 +1,10 @@
+document: rfc-9747
+kind: security-consideration
+summary: A DoS attacker may send spoofed Unaffiliated BFD Echo packets to the loopback device, triggering false session state changes. Some form of authentication SHOULD be included; specifically, the 'Authentication Section' as defined in RFC 5880 for a BFD Control packet is RECOMMENDED to be included within the Unaffiliated BFD Echo packet.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

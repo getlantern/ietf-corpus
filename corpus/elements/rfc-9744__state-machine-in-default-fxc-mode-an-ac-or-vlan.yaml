@@ -1,0 +1,10 @@
+document: rfc-9744
+kind: state-machine
+summary: In Default FXC mode, an AC or VLAN failure is not signaled in BGP; the egress PE with the failed AC drops packets but remote PEs continue directing traffic to it. In VLAN-Signaled FXC mode, an AC failure triggers withdrawal of the Ethernet A-D per-EVI route for the corresponding normalized VID, causing remote PEs to remove the failed PE from their outgoing adjacency list.
+section: "5.2"
+topics:
+    - vpn
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

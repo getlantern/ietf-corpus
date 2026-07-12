@@ -1,0 +1,10 @@
+document: rfc-9749
+kind: security-consideration
+summary: Per RFC 8620 Section 7.2, the server MUST NOT retry a rejected PushVerification request. The client is solely responsible for detecting and resolving key-rotation synchronization discrepancies by checking the applicationServerKey in the PushSubscription/set response sessionState.
+section: "6"
+topics:
+    - security
+    - crypto
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

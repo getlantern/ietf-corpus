@@ -1,0 +1,9 @@
+document: rfc-9755
+kind: normative-requirement
+summary: Once a client has enabled UTF-8 support with 'ENABLE UTF8=ACCEPT', it MUST NOT issue a SEARCH command containing a charset specification. Servers SHOULD reject such commands with 'BAD'. For commands with mandatory charset fields (SORT, THREAD), servers SHOULD reject non-UTF-8 charset values with 'BAD'.
+section: "3"
+rfc2119_level: MUST NOT
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

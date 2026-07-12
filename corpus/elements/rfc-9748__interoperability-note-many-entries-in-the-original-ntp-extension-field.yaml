@@ -1,0 +1,9 @@
+document: rfc-9748
+kind: interoperability-note
+summary: Many entries in the original 'NTP Extension Field Types' registry had nibble-swapped Field Type values due to documentation errors in the original Autokey implementation; for example, 0x0302 was listed instead of the correct 0x0203 for Cookie Message Request. This document marks the erroneous values as 'Reserved for historic reasons' rather than removing them, to preserve interoperability with any implementation that used the registered (incorrect) values.
+section: "2.2"
+topics:
+    - ntp
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,8 @@
+document: rfc-9755
+kind: design-rationale
+summary: APPEND's UTF8 data item from RFC 6855 was removed to align with IMAP4rev2 (RFC 9051) syntax and simplify client code for supporting both protocol versions. No client could reliably determine whether a stored message used the UTF8 item, and the only known client using it did so incorrectly (sending it for all messages regardless of UTF-8 content).
+section: B.1
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

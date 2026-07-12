@@ -1,0 +1,9 @@
+document: rfc-9747
+kind: security-consideration
+summary: Unaffiliated BFD Echo requires the remote device to loop packets back, which means the remote device cannot apply Unicast Strict Reverse Path Forwarding (RPF) per RFC 3704; otherwise, the Echo packets might fail the RPF check at the remote device.
+section: "5"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

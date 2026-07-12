@@ -1,0 +1,10 @@
+document: rfc-9744
+kind: design-rationale
+summary: Local switching takes precedence over MPLS/IP forwarding in VLAN-Signaled FXC, aligning with baseline EVPN principles from RFC 7432 where locally switched preference is specified for MAC/IP routes. When a PE processes an Ethernet A-D per-EVI route whose ESI is a local ESI, it does not modify its forwarding state.
+section: 3.3.1
+topics:
+    - vpn
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

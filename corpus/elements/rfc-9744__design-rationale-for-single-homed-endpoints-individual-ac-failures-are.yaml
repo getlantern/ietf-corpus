@@ -1,0 +1,9 @@
+document: rfc-9744
+kind: design-rationale
+summary: For single-homed endpoints, individual AC failures are not signaled in BGP because there is no alternative path to that endpoint anyway. The trade-off is that traffic destined for a failed AC may traverse the MPLS/IP core and be discarded at the egress PE, wasting network resources until application-layer OAM detects the failure.
+section: "2"
+topics:
+    - vpn
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

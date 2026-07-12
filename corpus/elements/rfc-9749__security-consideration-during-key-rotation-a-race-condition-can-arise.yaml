@@ -1,0 +1,10 @@
+document: rfc-9749
+kind: security-consideration
+summary: During key rotation, a race condition can arise if the server rotates its VAPID key after the client refreshes the session object but before PushSubscription/set is called. The push service will reject the subsequent PushVerification with HTTP 403, per RFC 8292 Section 4.2.
+section: "5"
+topics:
+    - security
+    - crypto
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

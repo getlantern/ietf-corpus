@@ -1,0 +1,6 @@
+document: rfc-9754
+kind: state-machine
+summary: 'Timestamp validation on SETATTR with delegation times: if presented time is before the file''s existing time_access/time_modify, the update is silently ignored; if the presented time is past current server time, the server clamps to current time or returns NFS4ERR_DELAY. All three times (access, modify, change) are compared against the same snapshot of current time.'
+section: "5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

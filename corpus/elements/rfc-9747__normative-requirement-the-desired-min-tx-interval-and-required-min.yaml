@@ -1,0 +1,10 @@
+document: rfc-9747
+kind: normative-requirement
+summary: The 'Desired Min TX Interval' and 'Required Min RX Interval' fields MUST be populated with a specific value to prevent potential exposure of uninitialized memory; a value of 1 second (1,000,000 microseconds) is RECOMMENDED. Upon receipt these values MUST be ignored and MUST NOT be used in the calculation of the Detection Time.
+section: "2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

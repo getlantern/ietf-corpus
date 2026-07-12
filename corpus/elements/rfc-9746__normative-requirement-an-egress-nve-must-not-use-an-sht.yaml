@@ -1,0 +1,11 @@
+document: rfc-9746
+kind: normative-requirement
+summary: An egress NVE MUST NOT use an SHT value other than 00 when advertising an A-D per ES route with VXLAN (type 8), NVGRE (type 9), MPLS (type 10), or no BGP Tunnel Encapsulation Extended Community. If such a route is received with SHT != 00, it SHOULD apply treat-as-withdraw per RFC 7606.
+section: "2.2"
+rfc2119_level: MUST NOT
+topics:
+    - bgp
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

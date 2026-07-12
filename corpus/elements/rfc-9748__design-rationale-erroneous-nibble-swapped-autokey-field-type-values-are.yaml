@@ -1,0 +1,9 @@
+document: rfc-9748
+kind: design-rationale
+summary: Erroneous nibble-swapped Autokey Field Type values are marked 'Reserved for historic reasons' rather than being silently removed or reassigned. This ensures any implementation that was built against the incorrect registered values (rather than the dominant implementation's actual wire values) can continue to function without conflict.
+section: "2.2"
+topics:
+    - ntp
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

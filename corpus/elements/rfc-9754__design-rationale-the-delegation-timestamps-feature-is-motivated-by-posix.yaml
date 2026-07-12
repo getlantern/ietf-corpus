@@ -1,0 +1,6 @@
+document: rfc-9754
+kind: design-rationale
+summary: 'The delegation timestamps feature is motivated by POSIX compliance requirements: under write delegation, the server cannot accurately report access and modify times to other clients without querying the delegating client, and the prior mechanism (SETATTR before DELEGRETURN) corrupted time_metadata. This extension allows the client to proxy these values correctly.'
+section: "5"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

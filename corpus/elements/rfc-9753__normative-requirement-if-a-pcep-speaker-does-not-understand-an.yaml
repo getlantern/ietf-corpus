@@ -1,0 +1,10 @@
+document: rfc-9753
+kind: normative-requirement
+summary: If a PCEP speaker does not understand an object with the P flag set, or understands but decides to ignore it, the entire stateful PCEP message MUST be rejected and the PCE MUST send a PCErr message with Error-Type 'Unknown Object' or 'Not supported object'. If the P flag is not set, the speaker can ignore the object and continue processing.
+section: "3.4"
+rfc2119_level: MUST
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

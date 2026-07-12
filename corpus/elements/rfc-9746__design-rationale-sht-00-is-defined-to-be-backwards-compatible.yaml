@@ -1,0 +1,9 @@
+document: rfc-9746
+kind: design-rationale
+summary: SHT=00 is defined to be backwards compatible with RFC 8365 and RFC 7432, so that non-upgraded NVEs that ignore the SHT bits (treating them as 00) continue to behave correctly. This allows incremental deployment without requiring all NVEs on an ES to be upgraded simultaneously.
+section: "2.1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

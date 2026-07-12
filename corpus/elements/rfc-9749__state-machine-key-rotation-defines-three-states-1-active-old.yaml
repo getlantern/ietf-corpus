@@ -1,0 +1,9 @@
+document: rfc-9749
+kind: state-machine
+summary: 'Key rotation defines three states: (1) active old key — server uses old key for all subscriptions; (2) transitional — server may use old key for existing subscriptions while clients recreate subscriptions with new key; (3) post-transition — server destroys all subscriptions using old key and uses only the new key. Trigger for transition is sessionState update advertising new applicationServerKey.'
+section: "5"
+topics:
+    - http
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

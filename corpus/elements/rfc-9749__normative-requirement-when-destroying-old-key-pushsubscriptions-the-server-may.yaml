@@ -1,0 +1,10 @@
+document: rfc-9749
+kind: normative-requirement
+summary: When destroying old-key PushSubscriptions, the server MAY issue one final StateChange push notification using the old URL and application server key, prompting the client to call PushSubscription/changes and discover the new VAPID key via the updated sessionState.
+section: "5"
+rfc2119_level: MAY
+topics:
+    - http
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

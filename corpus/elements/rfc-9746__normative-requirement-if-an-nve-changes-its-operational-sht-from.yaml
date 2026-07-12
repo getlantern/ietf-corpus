@@ -1,0 +1,10 @@
+document: rfc-9746
+kind: normative-requirement
+summary: If an NVE changes its operational SHT from 01 (Local Bias) to 00 (Default SHT) due to a new non-upgraded NVE joining the ES, and it previously advertised a zero ESI Label, it MUST send an update with a valid, non-zero ESI Label (unless all non-upgraded NVEs support only local bias).
+section: "2.4"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
