@@ -1,0 +1,9 @@
+document: rfc-9600
+kind: interoperability-note
+summary: For L4S (RFC 9331), a transit TRILL RBridge classifies packets with TRILL-ECN bit13=1 into the L4S queue and others into the Classic queue, using CCE for critical and NCCE for non-critical marking; an L4S-unaware egress will still drop CCE at p² probability, matching the Classic drop likelihood.
+section: "4.2"
+topics:
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

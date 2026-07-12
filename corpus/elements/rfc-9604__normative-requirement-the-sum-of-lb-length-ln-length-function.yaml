@@ -1,0 +1,9 @@
+document: rfc-9604
+kind: normative-requirement
+summary: The sum of LB Length, LN Length, Function Length, and Arguments Length MUST be less than or equal to 128 bits. If this condition is not met, or if the Endpoint Behavior is unknown or inconsistent, the TE-PATH-BINDING TLV is considered invalid and a PCErr with Error-Type=10, Error-value=37 ('Invalid SRv6 SID Structure') MUST be sent.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

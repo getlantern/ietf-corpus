@@ -1,0 +1,10 @@
+document: rfc-9605
+kind: protocol-element
+summary: 'The AES-CTR with SHA2 compound AEAD (Section 4.5.1) uses an encrypt-then-MAC approach: AES-CTR encryption with a subkey (first Nka bytes of sframe_key) followed by HMAC over aad_len || ct_len || tag_len || nonce || aad || ct, truncated to Nt bytes. This allows very short tag sizes (e.g., 32-bit) not supported by native AEADs.'
+section: 4.5.1
+topics:
+    - crypto
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

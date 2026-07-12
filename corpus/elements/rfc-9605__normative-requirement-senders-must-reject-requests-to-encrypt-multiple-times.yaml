@@ -1,0 +1,10 @@
+document: rfc-9605
+kind: normative-requirement
+summary: Senders MUST reject requests to encrypt multiple times with the same key and nonce, since several AEAD algorithms fail catastrophically under nonce reuse (per RFC 5116 Section 5.1.1).
+section: "7.4"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

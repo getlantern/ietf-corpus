@@ -1,0 +1,9 @@
+document: rfc-9601
+kind: design-rationale
+summary: RFC 6040 was intended to cover IP-in-IP tunnels with intervening shim headers, but its scope statement was ambiguous. This specification clarifies that RFC 6040 applies when an outer IP header encapsulates an inner IP header 'either directly or indirectly by encapsulating other headers that in turn encapsulate (or might encapsulate) an inner IP header,' covering the IP-shim-(L2)-IP pattern.
+section: "3"
+topics:
+    - ecn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

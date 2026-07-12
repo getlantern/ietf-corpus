@@ -1,0 +1,9 @@
+document: rfc-9603
+kind: normative-requirement
+summary: On receiving an SRv6-ERO, a PCC MUST validate consistency of the Length, S, F, T bits, and NT field against defined rules (e.g., NT=0 requires F=1, S=0, Length=24). Inconsistency MUST cause a PCErr with Error-Type=10 and Error-Value=11 ('Malformed object').
+section: 5.2.1
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

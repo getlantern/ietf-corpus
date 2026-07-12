@@ -1,0 +1,10 @@
+document: rfc-9605
+kind: protocol-element
+summary: 'The Sender Keys scheme encodes the KID as two concatenated unsigned integers: a key generation in the high (64-R) bits and a ratchet step modulo 2^R in the low R bits. The ratchet key update is: base_key[i+1] = HKDF-Expand(HKDF-Extract('''', base_key[i]), ''SFrame 1.0 Ratchet'', CipherSuite.Nh).'
+section: "5.1"
+topics:
+    - crypto
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

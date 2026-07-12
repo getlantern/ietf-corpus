@@ -1,0 +1,9 @@
+document: rfc-9604
+kind: normative-requirement
+summary: If a PCC receives a TE-PATH-BINDING TLV in any message other than PCUpd or PCInitiate, it MUST close the PCEP session with reason 'Reception of a malformed PCEP message'. Similarly, if a PCE receives a TE-PATH-BINDING TLV outside a PCRpt, or associated with an object other than LSP or PCEP-ERROR, it MUST close the session.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9606
+kind: normative-requirement
+summary: The DNS client MUST set the Recursion Desired (RD) bit of the RESINFO query to 0. The DNS client MUST discard the response if the AA flag in the response is set to 0, indicating the resolver is not authoritative for the response.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

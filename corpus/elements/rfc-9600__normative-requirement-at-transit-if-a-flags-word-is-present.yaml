@@ -1,0 +1,10 @@
+document: rfc-9600
+kind: normative-requirement
+summary: At transit, if a flags word is present and the AQM decides to signal critical congestion on a TRILL Data packet, the transit RBridge MUST set the CCE flag (bit 26). Classic ECN only uses critical congestion indications; PCN and L4S variants also use non-critical indications.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

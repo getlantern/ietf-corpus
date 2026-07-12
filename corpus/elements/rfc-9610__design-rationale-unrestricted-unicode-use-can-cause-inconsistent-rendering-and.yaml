@@ -1,0 +1,8 @@
+document: rfc-9610
+kind: design-rationale
+summary: Unrestricted Unicode use can cause inconsistent rendering and unexpected results when copying text. Servers MAY restrict characters using the PRECIS FreeformClass (RFC 8264) and may strip or replace forbidden code points rather than rejecting updates, as long as changed properties are returned in the /set response.
+section: "5"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

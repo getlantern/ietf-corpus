@@ -1,0 +1,10 @@
+document: rfc-9601
+kind: design-rationale
+summary: ECN propagation between IP tunnel headers must remain optional to implement because legacy tunnel implementations without any ECN support already exist, a network might have no bottleneck within the tunnel, and searching within an L2 header to find an encapsulated IP header may impose unacceptable performance overhead.
+section: "3.2"
+topics:
+    - ecn
+    - ip
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9600
+kind: normative-requirement
+summary: A transit RBridge does not examine the TRILL-ECN field before signaling CCE; it signals CCE regardless of whether the packet indicates an ECN-capable transport. The egress is responsible for converting CCE to a drop if the transport is not ECN-capable.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

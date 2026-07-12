@@ -1,0 +1,10 @@
+document: rfc-9605
+kind: design-rationale
+summary: SFrame can be applied per frame (higher efficiency, lower overhead) or per packet (simpler integration where depacketization inspects media content). Per-frame encryption requires reassembly of ciphertext fragments across multiple transport packets and a generic RTP packetization scheme, while per-packet adds roughly 22 bytes per packet.
+section: "4.1"
+topics:
+    - realtime
+    - rtp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

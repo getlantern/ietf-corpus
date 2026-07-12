@@ -1,0 +1,10 @@
+document: rfc-9605
+kind: security-consideration
+summary: SFrame provides integrity protection for the SFrame header (KID and CTR) but no confidentiality. Any observer of SFrame ciphertexts can learn which parties are sending (from KID) and at what rate (from CTR). HBH security (e.g., SRTP) is required to protect header confidentiality between hops.
+section: "7.1"
+topics:
+    - security
+    - privacy
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

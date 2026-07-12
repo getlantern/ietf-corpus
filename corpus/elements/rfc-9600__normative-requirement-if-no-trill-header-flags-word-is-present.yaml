@@ -1,0 +1,10 @@
+document: rfc-9600
+kind: normative-requirement
+summary: If no TRILL header flags word is present on a congested packet, the transit RBridge MAY add a flags word, set TRILL-ECN to Not-ECT (00), and set CCE along with the CRItE summary bit instead of dropping the packet.
+section: "3.2"
+rfc2119_level: MAY
+topics:
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9611
+kind: interoperability-note
+summary: An implementation lacking per-CPU packet trigger support MAY initiate all its Child SAs immediately upon receiving the single trigger message, but must handle the Delete Notify for a per-CPU Child SA carefully to avoid an infinite bring-up loop or a stall where both peers end up with only the first Child SA.
+section: "6"
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

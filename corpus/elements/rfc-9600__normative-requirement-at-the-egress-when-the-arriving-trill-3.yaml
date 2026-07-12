@@ -1,0 +1,10 @@
+document: rfc-9600
+kind: normative-requirement
+summary: At the egress, when the arriving TRILL 3-bit ECN codepoint is CE but the encapsulated inner IP header is Not-ECT, the egress RBridge MUST drop the packet, because a non-ECN-capable transport above IP will only understand dropped packets as congestion signals.
+section: 3.3.2
+rfc2119_level: MUST
+topics:
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

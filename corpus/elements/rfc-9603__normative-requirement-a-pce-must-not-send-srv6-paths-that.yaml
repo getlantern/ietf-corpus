@@ -1,0 +1,9 @@
+document: rfc-9603
+kind: normative-requirement
+summary: A PCE MUST NOT send SRv6 paths that exceed the SRv6 MSD capabilities of the PCC. If a PCC receives such a path, it MUST send a PCErr with Error-Type=10 and Error-Value=40 ('Unsupported number of SRv6-ERO subobjects').
+section: "5.1"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

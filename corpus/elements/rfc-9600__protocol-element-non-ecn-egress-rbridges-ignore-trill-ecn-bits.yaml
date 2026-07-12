@@ -1,0 +1,9 @@
+document: rfc-9600
+kind: protocol-element
+summary: Non-ECN egress RBridges ignore TRILL-ECN bits 12–13 but, because drop is the default decapsulation behavior for an unknown CItE flag, they will drop any packet where a transit RBridge set CCE (bit 26), providing implicit congestion notification.
+section: 3.3.1
+topics:
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

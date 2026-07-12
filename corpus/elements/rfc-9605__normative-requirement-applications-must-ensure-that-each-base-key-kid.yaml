@@ -1,0 +1,11 @@
+document: rfc-9605
+kind: normative-requirement
+summary: Applications MUST ensure that each (base_key, KID, CTR) combination is used for at most one SFrame encryption operation, ensuring the AEAD (key, nonce) pairs are never reused. The typical approach is a per-sender KID with a monotonically incrementing CTR.
+section: "9.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

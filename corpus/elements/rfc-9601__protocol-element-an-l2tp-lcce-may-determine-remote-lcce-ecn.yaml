@@ -1,0 +1,9 @@
+document: rfc-9601
+kind: protocol-element
+summary: An L2TP LCCE may determine remote LCCE ECN support either statically by configuration or dynamically during control connection setup using the ECN Capability AVP (Attribute Type 103). If the responder sends an SCCRP without the ECN Capability AVP, the initiator treats this as absence of ECN support and MUST use RFC 6040 compatibility mode (clearing the outer IP ECN field to 0b00).
+section: 6.1.1.2
+topics:
+    - ecn
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

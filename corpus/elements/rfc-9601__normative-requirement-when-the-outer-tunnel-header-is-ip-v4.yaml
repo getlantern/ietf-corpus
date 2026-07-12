@@ -1,0 +1,11 @@
+document: rfc-9601
+kind: normative-requirement
+summary: 'When the outer tunnel header is IP (v4 or v6), if possible, the tunnel ingress MUST be configured to zero the outer ECN field when: (1) the egress is known not to support ECN propagation per RFC 6040, RFC 4301, or RFC 3168 full functionality mode; (2) the egress behavior is unknown or a dynamically-paired egress with unknown behavior might be used; or (3) the ingress is encapsulating a non-IP header that might encapsulate IP but the ingress does not inspect within it.'
+section: "4"
+rfc2119_level: MUST
+topics:
+    - ecn
+    - ip
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

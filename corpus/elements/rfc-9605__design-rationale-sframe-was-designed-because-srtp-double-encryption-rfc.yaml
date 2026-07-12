@@ -1,0 +1,11 @@
+document: rfc-9605
+kind: design-rationale
+summary: SFrame was designed because SRTP 'double encryption' (RFC 8723) has poor efficiency, high complexity, and entanglement with RTP that makes it unworkable in realistic SFU scenarios. SFrame is a transport-agnostic E2EE framing that can operate over SRTP, QUIC, or any other HBH-encrypted transport.
+section: "1"
+topics:
+    - security
+    - realtime
+    - rtp
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

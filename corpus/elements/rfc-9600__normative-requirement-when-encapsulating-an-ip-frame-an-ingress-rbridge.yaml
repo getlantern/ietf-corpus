@@ -1,0 +1,9 @@
+document: rfc-9600
+kind: normative-requirement
+summary: When encapsulating an IP frame, an ingress RBridge MUST set the F flag in the main TRILL header, create a flags word, copy the two ECN bits from the IP header into TRILL-ECN (bits 12–13), and ensure the CCE flag (bit 26) is set to zero.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - ecn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

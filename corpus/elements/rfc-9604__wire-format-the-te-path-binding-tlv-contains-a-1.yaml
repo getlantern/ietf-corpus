@@ -1,0 +1,9 @@
+document: rfc-9604
+kind: wire-format
+summary: The TE-PATH-BINDING TLV contains a 1-octet Binding Type (BT) field, a 1-octet Flags field, a 2-octet Reserved field, and a variable-length Binding Value padded to a 4-octet boundary. BT=0 encodes a 20-bit MPLS label (Length=7); BT=1 encodes a 32-bit MPLS Label Stack Entry per RFC 3032 (Length=8); BT=2 encodes a 128-bit SRv6 SID (Length=20); BT=3 encodes an SRv6 SID with Endpoint Behavior and SID Structure (Length=28).
+section: "4"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

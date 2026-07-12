@@ -1,0 +1,9 @@
+document: rfc-9606
+kind: security-consideration
+summary: An encrypted resolver may return incorrect RESINFO. If the client cannot validate the attributes, it should process them only if the encrypted resolver has sufficient reputation according to local policy (user configuration, administrative configuration, or a built-in list of reputable resolvers), limiting a malicious resolver's ability to harm with false claims.
+section: "7"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

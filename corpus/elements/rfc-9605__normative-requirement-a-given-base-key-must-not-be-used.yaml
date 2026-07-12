@@ -1,0 +1,11 @@
+document: rfc-9605
+kind: normative-requirement
+summary: A given base_key MUST NOT be used for encryption by multiple senders; such reuse would cause multiple encrypted frames to be generated with the same (key, nonce) pair. Implementations MUST mark each base_key as usable for encryption or decryption only, never both.
+section: 4.4.1
+rfc2119_level: MUST NOT
+topics:
+    - crypto
+    - security
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

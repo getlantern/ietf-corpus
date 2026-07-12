@@ -1,0 +1,11 @@
+document: rfc-9605
+kind: normative-requirement
+summary: If a ciphertext fails to decrypt for any reason other than a missing key for the KID, the client MUST discard the ciphertext. Invalid ciphertexts SHOULD be discarded indistinguishably from valid ones (i.e., in constant time) to prevent timing side-channels.
+section: 4.4.4
+rfc2119_level: MUST
+topics:
+    - security
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9611
+kind: design-rationale
+summary: 'Populate From Packet (PFP) from RFC 4301 was considered as an alternative but rejected: it causes either too many Child SAs (one per network flow) or too few (one flow across multiple CPUs), and it is not widely implemented. Per-resource Child SAs with identical Traffic Selectors are a cleaner solution.'
+section: "1"
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

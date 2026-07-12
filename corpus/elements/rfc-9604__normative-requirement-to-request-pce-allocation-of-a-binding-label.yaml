@@ -1,0 +1,9 @@
+document: rfc-9604
+kind: normative-requirement
+summary: To request PCE allocation of a binding label/SID, a PCC MUST set P=1, D=1, and include an empty TE-PATH-BINDING TLV in the PCRpt message. If the PCE cannot allocate, it MUST send PCErr with Error-Type=32, Error-value=3 ('Unable to allocate a new binding label/SID').
+section: "8"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

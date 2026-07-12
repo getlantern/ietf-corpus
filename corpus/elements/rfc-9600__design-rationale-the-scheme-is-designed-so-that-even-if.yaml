@@ -1,0 +1,9 @@
+document: rfc-9600
+kind: design-rationale
+summary: The scheme is designed so that even if an egress RBridge is ECN-ignorant, it will drop CCE-marked packets (via default CItE drop behavior), ensuring that congestion is at minimum signaled by packet loss rather than being silently ignored.
+section: "1"
+topics:
+    - ecn
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

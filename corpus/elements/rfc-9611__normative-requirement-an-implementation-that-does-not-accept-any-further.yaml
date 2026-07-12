@@ -1,0 +1,10 @@
+document: rfc-9611
+kind: normative-requirement
+summary: An implementation that does not accept any further resource-specific Child SAs MUST NOT return the NO_ADDITIONAL_SAS error, as that would incorrectly imply that no other Child SAs with different TSi/TSr are possible. It MUST return TS_MAX_QUEUE instead.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - ipsec
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

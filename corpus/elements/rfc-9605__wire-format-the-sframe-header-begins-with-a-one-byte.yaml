@@ -1,0 +1,9 @@
+document: rfc-9605
+kind: wire-format
+summary: 'The SFrame header begins with a one-byte config byte containing: X flag (1 bit, extended KID), K field (3 bits, KID value or KID length minus one), Y flag (1 bit, extended CTR), and C field (3 bits, CTR value or CTR length minus one). When X or Y is set, the KID or CTR follows as a big-endian integer of 1-8 bytes appended after the config byte, KID first then CTR.'
+section: "4.3"
+topics:
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

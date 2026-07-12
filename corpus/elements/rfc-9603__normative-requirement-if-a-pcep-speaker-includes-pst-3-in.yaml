@@ -1,0 +1,9 @@
+document: rfc-9603
+kind: normative-requirement
+summary: If a PCEP speaker includes PST=3 in the PST list of the PATH-SETUP-TYPE-CAPABILITY TLV, it MUST also include the SRv6-PCE-CAPABILITY sub-TLV inside that TLV; if it is absent, the receiver MUST send a PCErr (Error-Type=10, Error-Value=34) and MUST close the PCEP session.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

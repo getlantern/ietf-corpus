@@ -1,0 +1,9 @@
+document: rfc-9606
+kind: interoperability-note
+summary: When 'resolver.arpa' (from RFC 9462) is used as the QNAME for RESINFO queries, the client risks receiving a positive RESINFO response from either a legitimate resolver or an attacker if the resolver passes the query upstream. This case cannot be protected by DNSSEC validation, only by an authenticated secure connection.
+section: "3"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

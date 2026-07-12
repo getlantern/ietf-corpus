@@ -1,0 +1,9 @@
+document: rfc-9604
+kind: normative-requirement
+summary: To withdraw a previously reported binding value, a PCC MUST send a PCRpt with the TE-PATH-BINDING TLV having R flag set to 1. To modify a binding, the PCC MUST first withdraw the former value (R=1) and include a new TE-PATH-BINDING TLV with the new binding value.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9605
+kind: security-consideration
+summary: SFrame does not provide per-sender authentication of media data because it uses symmetric keys. Any receiver who holds the decryption key also holds sufficient material to forge encrypted packets attributed to the sender; preventing impersonation requires a digital-signature layer not defined by SFrame.
+section: "7.2"
+topics:
+    - security
+    - realtime
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

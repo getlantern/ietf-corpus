@@ -1,0 +1,9 @@
+document: rfc-9604
+kind: security-consideration
+summary: BSID values are opaque aliases for longer path representations. A rogue PCE propagating paths containing BSIDs can substitute a BSID from a different LSP, redirecting traffic without the recipient detecting the change. When BT=3 is used, mischaracterizing the SRv6 SID structure bit division (e.g., shifting bits into or out of the 'argument') is an additional attack vector affecting packet processing.
+section: "9"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

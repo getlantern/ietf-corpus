@@ -1,0 +1,10 @@
+document: rfc-9605
+kind: security-consideration
+summary: Short authentication tags (as low as 32 bits in AES_128_CTR_HMAC_SHA256_32) enable brute-force forgery attacks; a gigabit link saturating a 32-bit tag succeeds roughly once per hour. Mitigations include HBH-secure channels, rate monitoring, no decryption-failure feedback, and anti-replay. Full-size tags are recommended when feasible.
+section: "7.5"
+topics:
+    - security
+    - crypto
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

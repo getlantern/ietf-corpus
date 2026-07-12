@@ -1,0 +1,10 @@
+document: rfc-9601
+kind: design-rationale
+summary: The rule that ECT(1) takes precedence over ECT(0) in fragment reassembly is independent of L4S experimental use of ECT(1) and is compatible with Pre-Congestion Notification (PCN, RFC 6660), which uses a severity ranking of CE > ECT(1) > ECT(0). RFC 8311 updated RFC 3168 to make ECT(1) available for congestion marking differences, motivating this ordering.
+section: "5"
+topics:
+    - ecn
+    - ip
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

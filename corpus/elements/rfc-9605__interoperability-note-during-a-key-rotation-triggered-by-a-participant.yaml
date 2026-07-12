@@ -1,0 +1,9 @@
+document: rfc-9605
+kind: interoperability-note
+summary: During a key rotation triggered by a participant joining, the SFU may request a video key frame while the sender is still using the old E2EE key. The new receiver discards the frame, then re-requests a key frame; if the sender does not generate a key frame under the new key promptly, video startup is delayed. Audio streams are unaffected because each frame is independently decodable.
+section: "6.2"
+topics:
+    - realtime
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

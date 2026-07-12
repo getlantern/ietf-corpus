@@ -1,0 +1,11 @@
+document: rfc-9601
+kind: normative-requirement
+summary: An implementation of a tunnel ingress MUST NOT treat the former Type of Service (ToS) octet (IPv4) or Traffic Class octet (IPv6) as a single 8-bit field, because doing so incorrectly links ECN and Diffserv field propagation in a way inconsistent with RFC 2474 and RFC 3260.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - ecn
+    - ip
+    - diffserv
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
