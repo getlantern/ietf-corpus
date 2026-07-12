@@ -1,0 +1,9 @@
+document: rfc-9528
+kind: interoperability-note
+summary: EDHOC is transport-agnostic and can be used without IP. Reliable transport such as CoAP in reliable mode is RECOMMENDED. If message correlation is not provided by the transport, the binding SHOULD mandate prepending C_I or C_R; if message_1 cannot be identified by other means, prepending the CBOR simple value true (0xf5) is RECOMMENDED.
+section: "3.4"
+topics:
+    - cbor
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

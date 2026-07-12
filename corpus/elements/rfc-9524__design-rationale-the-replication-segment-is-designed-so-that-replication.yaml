@@ -1,0 +1,9 @@
+document: rfc-9524
+kind: design-rationale
+summary: The Replication segment is designed so that replication to non-adjacent downstream nodes does not require state on transit routers. Transit nodes forward replicated packets based solely on the IPv6 locator unicast prefix (or MPLS forwarding), while only replication nodes hold Replication state.
+section: "1"
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

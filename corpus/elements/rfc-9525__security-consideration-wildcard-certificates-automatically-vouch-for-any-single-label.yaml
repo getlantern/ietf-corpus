@@ -1,0 +1,10 @@
+document: rfc-9525
+kind: security-consideration
+summary: Wildcard certificates automatically vouch for any single-label hostnames within their domain, posing the risk of vouching for rogue or buggy hosts. Restricting wildcards to one wildcard character in the left-most label only helps mitigate certain attack vectors; application protocols can disallow wildcard certificates entirely as a more foolproof mitigation.
+section: "7.1"
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9530
+kind: security-consideration
+summary: Before sending Integrity fields in a trailer section, senders should consider that intermediaries are explicitly allowed to drop trailers. Eager content processing before trailer receipt prevents digest validation, possibly leading to processing of corrupt or tampered data.
+section: "6.4"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

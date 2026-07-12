@@ -1,0 +1,9 @@
+document: rfc-9520
+kind: design-rationale
+summary: The 5-minute maximum cache duration for resolution failures (inherited from RFC 2308) is intentionally short to limit the impact of cache poisoning attacks that inject forged failure messages, since an attacker would need sustained spoofing throughout the backoff period and repeated attacks due to cache expiry.
+section: "5"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9530
+kind: security-consideration
+summary: Content coding mechanisms (e.g., GZIP at different compression levels, aes128gcm with nonces) can produce different outputs from the same input without reflecting the difference in representation metadata. Therefore, Integrity field digests cannot serve as at-rest integrity proofs unless the exact encoded content is persisted.
+section: "6.5"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

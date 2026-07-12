@@ -1,0 +1,11 @@
+document: rfc-9524
+kind: security-consideration
+summary: Incorrect provisioning of Replication segments without a control plane can result in a looping chain, causing a packet storm until MPLS TTL (SR-MPLS) or IPv6 Hop Limit (SRv6) decrements to zero. A control plane such as PCE should be used to prevent loops.
+section: "4"
+topics:
+    - security
+    - routing
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

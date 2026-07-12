@@ -1,0 +1,11 @@
+document: rfc-9524
+kind: normative-requirement
+summary: If a Replication segment has an IPv6 Hop Limit Threshold configured, a replication node MUST discard an incoming packet with a local Replication-SID if the IPv6 Hop Limit in the packet is less than the threshold, and log this in a rate-limited manner.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9527
+kind: design-rationale
+summary: No explicit port is encoded in the DHCPv6 options; the default port for the selected transport is used (853 for DomTLS per RFC 7858/RFC 9103). This simplifies the option format by avoiding a list of (transport, port) tuples, at the cost of requiring out-of-band coordination if the default port is occupied.
+section: "4.2"
+topics:
+    - dns
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

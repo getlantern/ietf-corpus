@@ -1,0 +1,8 @@
+document: rfc-9528
+kind: protocol-element
+summary: Connection identifiers (C_I, C_R) are byte strings, but values coinciding with one-byte CBOR-encoded integers (-24 to 23) MUST be represented as those integers on the wire rather than as CBOR byte strings, enabling 1-byte overhead. Other byte strings use normal CBOR bstr encoding.
+section: 3.3.2
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

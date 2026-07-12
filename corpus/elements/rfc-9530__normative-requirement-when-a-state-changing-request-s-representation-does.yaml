@@ -1,0 +1,9 @@
+document: rfc-9530
+kind: normative-requirement
+summary: When a state-changing request's representation does not describe the target resource, Repr-Digest MUST be computed on the representation data. In responses, if the representation describes the request status, Repr-Digest MUST be computed on the enclosed representation; if there is a referenced resource, Repr-Digest MUST be computed on the selected representation of that referenced resource.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

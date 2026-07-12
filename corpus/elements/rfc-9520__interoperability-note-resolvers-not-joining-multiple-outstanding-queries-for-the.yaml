@@ -1,0 +1,9 @@
+document: rfc-9520
+kind: interoperability-note
+summary: Resolvers not joining multiple outstanding queries for the same <name, type, class> tuple are more susceptible to Birthday Attacks (RFC 5452 Section 5), particularly when those queries result in timeouts, because multiple outstanding queries make it easier for attackers to match DNS message parameters.
+section: "2.3"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

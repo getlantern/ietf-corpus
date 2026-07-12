@@ -1,0 +1,10 @@
+document: rfc-9524
+kind: normative-requirement
+summary: When processing a packet destined to a local End.Replicate Replication-SID, the IPv6 Hop Limit MUST be decremented and MUST be non-zero for the packet to be replicated. If Hop Limit is less than or equal to 1, the packet is discarded without sending an ICMPv6 Time Exceeded message.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

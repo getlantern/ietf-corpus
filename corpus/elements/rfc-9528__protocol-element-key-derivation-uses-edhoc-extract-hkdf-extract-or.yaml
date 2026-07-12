@@ -1,0 +1,8 @@
+document: rfc-9528
+kind: protocol-element
+summary: Key derivation uses EDHOC_Extract (HKDF-Extract or KMAC) and EDHOC_Expand (HKDF-Expand or KMAC) to produce PRK_2e from G_XY and TH_2, PRK_3e2m (optionally incorporating G_RX for static DH Responder), PRK_4e3m (optionally incorporating G_IY for static DH Initiator), and PRK_out = EDHOC_KDF(PRK_4e3m, 7, TH_4, hash_length).
+section: "4.1"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

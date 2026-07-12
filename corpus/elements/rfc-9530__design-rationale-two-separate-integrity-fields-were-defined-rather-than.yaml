@@ -1,0 +1,8 @@
+document: rfc-9530
+kind: design-rationale
+summary: 'Two separate Integrity fields were defined rather than one: Content-Digest covers actual message content bytes (useful for simple integrity of transferred bytes), while Repr-Digest covers the full selected representation data (useful for range requests, HEAD responses, and multi-hop reassembly). This separation allows each to be useful independently.'
+section: "1.2"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

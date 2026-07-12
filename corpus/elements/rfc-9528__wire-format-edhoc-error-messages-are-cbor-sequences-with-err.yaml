@@ -1,0 +1,9 @@
+document: rfc-9528
+kind: wire-format
+summary: EDHOC error messages are CBOR Sequences with ERR_CODE (int; 0 reserved for success, all other values indicate errors) and ERR_INFO (type depends on error code). Error code 1 uses a text string; error code 2 uses suites; error code 3 uses the value true.
+section: "6"
+topics:
+    - cbor
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

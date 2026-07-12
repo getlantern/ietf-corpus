@@ -1,0 +1,9 @@
+document: rfc-9520
+kind: security-consideration
+summary: 'A cache poisoning denial-of-service attack is possible because failure messages cannot be DNSSEC-signed: an attacker can forge SERVFAIL or similar responses to cause resolvers to stop querying authoritative servers. This attack requires sustained spoofing and is mitigated by the 5-minute cache limit, making effects localized and time-bounded.'
+section: "5"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

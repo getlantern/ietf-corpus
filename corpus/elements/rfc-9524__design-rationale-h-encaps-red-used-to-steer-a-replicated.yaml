@@ -1,0 +1,9 @@
+document: rfc-9524
+kind: design-rationale
+summary: H.Encaps.Red used to steer a replicated packet to a downstream node is intentionally independent of the Replication segment itself — it is purely a traffic-engineering mechanism applied per branch. This separation allows some branches to use explicit paths while others use shortest-path routing, without coupling these choices to the Replication segment definition.
+section: "2.2"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

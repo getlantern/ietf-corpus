@@ -1,0 +1,9 @@
+document: rfc-9530
+kind: security-consideration
+summary: Integrity fields protect HTTP representation data or content but do not protect HTTP header and trailer fields. An on-path attacker can remove or substitute a digest value without additional protection. Mitigation requires combining Integrity fields with TLS or digital signatures such as HTTP Message Signatures (RFC 9421).
+section: "6.1"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

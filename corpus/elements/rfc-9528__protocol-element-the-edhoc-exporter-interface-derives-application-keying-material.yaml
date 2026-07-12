@@ -1,0 +1,8 @@
+document: rfc-9528
+kind: protocol-element
+summary: The EDHOC_Exporter interface derives application keying material as EDHOC_Exporter(exporter_label, context, length) = EDHOC_KDF(PRK_exporter, exporter_label, context, length), where PRK_exporter = EDHOC_KDF(PRK_out, 10, h'', hash_length). The (exporter_label, context) pair MUST be unique per purpose.
+section: 4.2.1
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

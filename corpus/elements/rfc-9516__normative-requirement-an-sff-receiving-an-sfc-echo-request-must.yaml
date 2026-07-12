@@ -1,0 +1,9 @@
+document: rfc-9516
+kind: normative-requirement
+summary: 'An SFF receiving an SFC Echo Request MUST validate in order: verify authentication if integrity-protected (failing auth triggers Echo Reply with Return Code 3), validate Source ID TLV (malformed TLV causes silent drop with optional logging), check overall packet well-formedness (malformed triggers Return Code 1), report unknown TLVs with Return Code 2, and at the end of the SFP reply with Return Code 5.'
+section: "6.4"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

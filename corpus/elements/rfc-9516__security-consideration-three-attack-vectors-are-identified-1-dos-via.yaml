@@ -1,0 +1,9 @@
+document: rfc-9516
+kind: security-consideration
+summary: 'Three attack vectors are identified: (1) DoS via flooding SFC Echo Requests to overload SFC elements—mitigated by RECOMMENDED throttling of messages to the control plane; (2) spoofing/replay of Echo Replies—mitigated by requiring matching Sender''s Handle and Sequence Number; (3) unauthorized information gathering via Echo Request/Reply—implementations MUST verify the source of Echo Requests is part of the SFP.'
+section: "7"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

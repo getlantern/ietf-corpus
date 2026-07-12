@@ -1,0 +1,10 @@
+document: rfc-9525
+kind: design-rationale
+summary: Intermediate domain names produced during DNS resolution (e.g., CNAME chains) are excluded from being treated as reference identifiers. This design choice removes DNS and DNS resolution from the attack surface by ensuring only the original user-supplied or explicitly configured domain name is used for certificate matching.
+section: 6.1.1
+topics:
+    - tls
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

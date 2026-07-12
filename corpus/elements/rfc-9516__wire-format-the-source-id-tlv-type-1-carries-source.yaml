@@ -1,0 +1,8 @@
+document: rfc-9516
+kind: wire-format
+summary: 'The Source ID TLV (Type=1) carries: Source ID (1-octet, value 1), Reserved1 (1-octet), Length (2-octet, value must be 8 for IPv4 or 20 for IPv6; any other value renders it malformed), Port Number (2-octet UDP port), Reserved2 (2-octet), and IP Address (4 or 16 octets). The Port Number and IP Address MUST be used as the destination UDP port and IP address for the Echo Reply.'
+section: 6.3.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

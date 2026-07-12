@@ -1,0 +1,10 @@
+document: rfc-9525
+kind: design-rationale
+summary: Wildcards are constrained to appear only as the complete left-most label (e.g., '*.bigcompany.example' but not '*.*.bigcompany.example') to limit their scope and mitigate attacks where a wildcard on a high-level domain could be used to impersonate many distinct services. This deviates from DNS wildcard matching semantics intentionally.
+section: "6.3"
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

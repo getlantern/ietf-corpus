@@ -1,0 +1,9 @@
+document: rfc-9528
+kind: interoperability-note
+summary: EDHOC always uses Deterministically Encoded CBOR (RFC 8949 Sections 4.2.1 and 4.2.2). Authentication credentials (CRED_I, CRED_R) SHOULD be used without re-encoding, because both endpoints must use bit-for-bit identical credential representations for integrity verification (via MAC fields) to succeed.
+section: 3.5.2
+topics:
+    - cbor
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

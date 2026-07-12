@@ -1,0 +1,9 @@
+document: rfc-9524
+kind: interoperability-note
+summary: OAM ping is possible for leaf or bud node Replication-SIDs (directly or via transit replication nodes), but pinging a transit node's Replication-SID directly is not possible because transit nodes do not process Upper-Layer headers. A transit replication node will replicate Echo Requests to all downstream nodes; nodes with incorrect checksums will drop them.
+section: 2.2.2
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9520
+kind: design-rationale
+summary: 'Aggressive requerying by recursive resolvers during resolution failures has been empirically documented at massive scale: the 2018 DNSSEC KSK rollover caused an 80x increase (to 1.2 billion/day) in DNSKEY queries to root servers, and during the 2021 Facebook outage, .COM/.NET query traffic rose from 7,000 to 900,000 queries per second, motivating mandatory negative caching.'
+section: "1.1"
+topics:
+    - dns
+    - measurement
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

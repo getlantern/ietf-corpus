@@ -1,0 +1,9 @@
+document: rfc-9520
+kind: normative-requirement
+summary: Upon encountering a zone whose name servers are all non-responsive, a resolver MUST cache the resolution failure and MUST limit queries to the non-responsive zone's parent zone (and all ancestor zones) just as it limits subsequent queries to the non-responsive zone itself. This updates RFC 4697 Section 2.1.1 to apply to all query types and all ancestor zones.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9530
+kind: security-consideration
+summary: When using Repr-Digest with digital signatures, the signature must also cover the representation metadata fields (Content-Type, Content-Encoding, etc.). A signature covering only Integrity fields allows an attacker to manipulate Content-Type and cause digest validation failure, consuming endpoint resources without delivering the representation.
+section: "6.3"
+topics:
+    - http
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

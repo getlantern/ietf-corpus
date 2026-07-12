@@ -1,0 +1,10 @@
+document: rfc-9521
+kind: security-consideration
+summary: There SHOULD be a mechanism to control the maximum number of active BFD sessions between the same pair of NVEs, since N VAPs per NVE can result in N-squared BFD sessions that could overload the NVE. It is recommended to run N sessions covering all N VAPs instead.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

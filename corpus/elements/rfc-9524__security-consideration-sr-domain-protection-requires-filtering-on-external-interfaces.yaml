@@ -1,0 +1,11 @@
+document: rfc-9524
+kind: security-consideration
+summary: 'SR domain protection requires filtering on external interfaces: for SR-MPLS, disable MPLS on external edge interfaces; for SRv6, configure inbound IACLs on each edge interface to drop packets with a DA in the SID prefix block S/s, and implement BCP 38/84 anti-spoofing recommendations. Failure to do so allows outsiders to exploit replication services.'
+section: "4"
+topics:
+    - security
+    - routing
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

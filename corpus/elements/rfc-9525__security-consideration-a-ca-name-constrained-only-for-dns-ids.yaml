@@ -1,0 +1,10 @@
+document: rfc-9525
+kind: security-consideration
+summary: A CA name-constrained only for DNS-IDs is not thereby constrained for SRV-IDs or URI-IDs. A client that constructs multiple reference identifiers of different types SHOULD ensure CAs issuing such certificates are appropriately constrained for all identifier types, not just one.
+section: "7.6"
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

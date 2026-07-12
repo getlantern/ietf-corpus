@@ -1,0 +1,11 @@
+document: rfc-9524
+kind: normative-requirement
+summary: If HMAC TLV verification fails on a Replication-SID implementation, it MUST NOT originate an ICMPv6 Parameter Problem message with code 0. The failure SHOULD be logged (rate-limited) and the packet SHOULD be discarded.
+section: 2.2.1.1
+rfc2119_level: MUST NOT
+topics:
+    - routing
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

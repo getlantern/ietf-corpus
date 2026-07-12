@@ -1,0 +1,10 @@
+document: rfc-9516
+kind: normative-requirement
+summary: To identify an SFC active OAM message, the NSH Next Protocol field MUST be set to SFC Active OAM (0x07) and the O bit in the NSH MUST be set per RFC 9451. An erroneous combination where the O bit is clear but Next Protocol is 0x07 MUST be reported with rate-limiting control, and the packet SHOULD be dropped.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
