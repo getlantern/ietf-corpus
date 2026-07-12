@@ -1,0 +1,9 @@
+document: rfc-9616
+kind: privacy-consideration
+summary: Timestamps use an arbitrary origin, so they do not leak a node's boot time or time zone. However, accurate timestamps may allow an attacker to determine physical location. Nodes may omit Timestamp sub-TLVs to avoid location disclosure, at the cost of falling back to hop-count routing for their neighbours.
+section: "8"
+topics:
+    - privacy
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

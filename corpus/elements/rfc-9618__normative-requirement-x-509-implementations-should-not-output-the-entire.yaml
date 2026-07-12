@@ -1,0 +1,10 @@
+document: rfc-9618
+kind: normative-requirement
+summary: X.509 implementations SHOULD NOT output the entire valid_policy_tree structure; instead they SHOULD limit output to just the set of authorities-constrained and/or user-constrained policies as described in X.509, because computing the full tree reintroduces the denial-of-service vulnerability.
+section: "4.2"
+rfc2119_level: SHOULD NOT
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9616
+kind: design-rationale
+summary: Existing Babel implementations use packet-loss-based or hop-count metrics and fail to prefer lower-latency routes in topologies with tunnels or VPNs. In a diamond topology with three Paris routers and one Tokyo router, hop-count treats both paths as equal, routing half the traffic through Tokyo unnecessarily.
+section: "1"
+topics:
+    - routing
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

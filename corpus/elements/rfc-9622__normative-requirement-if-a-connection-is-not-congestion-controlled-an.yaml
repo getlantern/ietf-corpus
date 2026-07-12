@@ -1,0 +1,9 @@
+document: rfc-9622
+kind: normative-requirement
+summary: If a Connection is not congestion controlled, an application using it SHOULD itself perform congestion control per RFC 2914 or use a circuit breaker per RFC 8084. If the Connection is congestion controlled, performing additional congestion control in the application can have negative performance implications.
+section: 6.2.9
+rfc2119_level: SHOULD
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9615
+kind: interoperability-note
+summary: DNSSEC bootstrapping does not work for fully in-domain delegations because no preexisting chain of trust to the child domain exists during bootstrapping. A workaround is to temporarily add an out-of-domain nameserver to the NS RRset and remove it after bootstrapping is complete, potentially using CSYNC records (RFC 7477).
+section: "4.4"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

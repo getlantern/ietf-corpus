@@ -1,0 +1,10 @@
+document: rfc-9618
+kind: design-rationale
+summary: The policy tree in RFC 5280 is exponential because when multiple issuer policies map to a single subject policy, the subject policy produces multiple duplicate nodes whose children are recursively duplicated. Replacing the tree with a directed acyclic graph (policy graph) eliminates duplicates by using a single node with multiple parents, bounding size linearly by the total number of certificate policies and policy mappings.
+section: "4.1"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

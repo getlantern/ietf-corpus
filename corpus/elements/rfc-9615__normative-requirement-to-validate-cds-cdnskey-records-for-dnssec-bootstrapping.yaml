@@ -1,0 +1,11 @@
+document: rfc-9615
+kind: normative-requirement
+summary: 'To validate CDS/CDNSKEY records for DNSSEC bootstrapping, the parental agent MUST execute four steps: (1) verify no DS records exist and at least one NS is out-of-domain; (2) query CDS/CDNSKEY directly from all authoritative servers without caching; (3) query CDS/CDNSKEY at each signaling name via a trusted DNSSEC-validating resolver; (4) verify all retrieved RRsets have equal contents by record type.'
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,11 @@
+document: rfc-9621
+kind: security-consideration
+summary: The Transport Services System MUST NOT automatically fall back from secure to insecure protocols or to weaker protocol versions. If an application requests a specific TLS version and it is unavailable, the connection fails rather than silently downgrading. Applications may explicitly specify minimum acceptable versions.
+section: "6"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9616
+kind: design-rationale
+summary: 'The protocol uses Mills'' algorithm (originally from the HELLO routing protocol, later used in NTP) for RTT estimation because it does not require synchronized clocks—it only ever computes differences of timestamps from a single clock—and requires minimal state: just two timestamps per neighbour.'
+section: "3.2"
+topics:
+    - routing
+    - ntp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

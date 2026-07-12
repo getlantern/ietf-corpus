@@ -1,0 +1,9 @@
+document: rfc-9618
+kind: protocol-element
+summary: The valid_policy_graph is a directed acyclic graph replacing the valid_policy_tree. Each node contains a valid_policy OID, a qualifier_set, and an expected_policy_set. Nodes at depth x have zero or more children at depth x+1 and one or more parents at depth x-1 (except depth zero). The initial state is a single anyPolicy node at depth zero.
+section: "5.2"
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

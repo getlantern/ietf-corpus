@@ -1,0 +1,11 @@
+document: rfc-9621
+kind: design-rationale
+summary: The API uses Messages rather than a byte-stream abstraction because most applications already interpret structure within streams (HTTP/1.1 uses delimiters, TLS uses record headers, HTTP/2 uses frames). Exposing Messages provides the Protocol Stack with additional information (deadlines, reliability preferences, multistreaming assignment) without changing on-wire formats.
+section: "2.2"
+topics:
+    - http
+    - tls
+    - quic
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

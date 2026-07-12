@@ -1,0 +1,10 @@
+document: rfc-9618
+kind: normative-requirement
+summary: Computing the valid_policy_tree from valid_policy_graph (by recursively duplicating every multi-parent node) is NOT RECOMMENDED because this computation may consume exponential time and memory. Implementations that require it for legacy compatibility SHOULD mitigate DoS attacks by other means such as limiting tree depth or size.
+section: "5.6"
+rfc2119_level: RECOMMENDED
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

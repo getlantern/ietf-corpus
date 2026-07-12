@@ -1,0 +1,9 @@
+document: rfc-9618
+kind: design-rationale
+summary: X.509's own specification (X.509 Section 12.2) only requires authorities-constrained policies, user-constrained policies, and their qualifiers as outputs—not the full valid_policy_tree. RFC 5280's inclusion of the tree as output was therefore beyond what X.509 required and is the proximate cause of the DoS exposure.
+section: "4.2"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

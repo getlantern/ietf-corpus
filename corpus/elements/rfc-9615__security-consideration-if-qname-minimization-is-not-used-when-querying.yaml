@@ -1,0 +1,10 @@
+document: rfc-9615
+kind: security-consideration
+summary: If QNAME minimization is not used when querying for signaling records, an upstream parent of a signaling domain will see the CDS/CDNSKEY queries and could respond with a fraudulent authoritative answer signed with its own key rather than returning a referral. Using QNAME minimization reduces this attack surface.
+section: "6"
+topics:
+    - dns
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

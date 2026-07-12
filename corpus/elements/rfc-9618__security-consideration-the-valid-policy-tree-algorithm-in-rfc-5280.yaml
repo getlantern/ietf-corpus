@@ -1,0 +1,10 @@
+document: rfc-9618
+kind: security-consideration
+summary: The valid_policy_tree algorithm in RFC 5280 Section 6.1 can grow exponentially in the depth of the certification path. An attacker can craft a certificate chain where every intermediate asserts two policies with full Cartesian-product mappings, causing the tree to double at each depth level, enabling denial-of-service attacks such as CVE-2023-0464 and CVE-2023-23524.
+section: "3"
+topics:
+    - security
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

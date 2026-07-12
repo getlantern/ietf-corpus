@@ -1,0 +1,8 @@
+document: rfc-9616
+kind: wire-format
+summary: 'Timestamp sub-TLV in an IHU TLV: Type=3 (1 octet), Length (1 octet), Origin Timestamp (32-bit, copy of neighbour''s Transmit Timestamp), Receive Timestamp (32-bit, local time of receipt). Body length is 8 octets. If Length < 8, MUST be ignored; if Length > 8, extra data MUST be silently ignored.'
+section: "6.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

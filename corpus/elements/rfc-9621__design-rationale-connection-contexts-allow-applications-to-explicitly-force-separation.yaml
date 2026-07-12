@@ -1,0 +1,11 @@
+document: rfc-9621
+kind: design-rationale
+summary: 'Connection Contexts allow applications to explicitly force separation of Cached State and Protocol Stacks between Connection Groups. The primary motivations are privacy: preventing linkability from reused TLS session state or HTTP cookies, and preventing a Remote Endpoint from inferring that multiple connections originate from the same application via HTTP/2 or QUIC multiplexing.'
+section: 4.2.3
+topics:
+    - privacy
+    - tls
+    - http
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9618
+kind: design-rationale
+summary: Limiting certificate chain depth can mitigate the exponential growth attack since the tree size is exponential in depth, but depth limits may reject legitimate paths if set too low and may still admit O(N^(depth/2)) attacks if the attacker increases the number of policies per certificate.
+section: "6.2"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

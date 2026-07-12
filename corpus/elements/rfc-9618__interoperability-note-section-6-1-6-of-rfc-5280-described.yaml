@@ -1,0 +1,8 @@
+document: rfc-9618
+kind: interoperability-note
+summary: Section 6.1.6 of RFC 5280 described the valid_policy_tree as an output of verification, but this document deprecates that output. Implementations needing it for legacy compatibility may reconstruct it from valid_policy_graph on demand by recursively duplicating multi-parent nodes, but must accept the exponential cost and apply additional mitigations.
+section: "5.6"
+topics:
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

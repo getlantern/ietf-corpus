@@ -1,0 +1,10 @@
+document: rfc-9615
+kind: normative-requirement
+summary: When discovering signaling names via NSEC walk or zone transfer, the parental agent MUST NOT assume that a nameserver under whose signaling domain a signaling record appears is actually authoritative for the corresponding child. The parental agent MUST ascertain that the delegation contains the nameserver hostname seen during discovery before querying signaling records.
+section: "4.3"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

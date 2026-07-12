@@ -1,0 +1,9 @@
+document: rfc-9616
+kind: normative-requirement
+summary: Upon receiving B's packet, A MUST verify it contains both a Hello TLV with timestamp t2' and an IHU TLV with timestamps t1 and t1' before computing RTT = (t2 - t1) - (t2' - t1') modulo 2^32.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

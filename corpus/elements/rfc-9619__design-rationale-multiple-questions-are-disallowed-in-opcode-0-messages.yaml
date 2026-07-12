@@ -1,0 +1,8 @@
+document: rfc-9619
+kind: design-rationale
+summary: Multiple questions are disallowed in OPCODE = 0 messages because response parameters such as AA (Authoritative Answer) and RCODE have no defined meaning when a message contains multiple questions — there is no mechanism to signal which question those parameters relate to.
+section: "1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9624
+kind: state-machine
+summary: 'At a BFIR ingress PE, four ordered rules determine the matched transmission route and leaf-tracking routes: (1) no selective forwarding → use IMET + all peer IMET routes; (2) all-IP-multicast SMET-based → use IMET + matching SMET routes; (3) S-PMSI A-D match → use S-PMSI + LIR/LIR-pF-derived Leaf A-D or SMET routes; (4) fallback → rule 1.'
+section: 4.1.1
+topics:
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,8 @@
+document: rfc-9616
+kind: protocol-element
+summary: 'Implementation strategy for accurate timestamping: buffer a Hello TLV with a 4-octet PadN sub-TLV placeholder; overwrite it with the Timestamp sub-TLV containing the current time immediately before the packet is handed to the network stack. On receive, record the timestamp immediately upon reception before further processing.'
+section: "3.4"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

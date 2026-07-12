@@ -1,0 +1,9 @@
+document: rfc-9616
+kind: design-rationale
+summary: 'Raw RTT samples are not directly usable for route selection because: (1) bursty traffic causes transient congestion spikes, (2) using RTT directly creates a negative feedback loop that causes oscillations, and (3) even without congestion, small RTT variations between parallel routes would trigger frequent re-routing that disrupts TCP.'
+section: "4"
+topics:
+    - routing
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
