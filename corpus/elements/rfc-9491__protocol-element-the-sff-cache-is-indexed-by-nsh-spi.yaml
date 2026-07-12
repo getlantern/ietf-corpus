@@ -1,0 +1,10 @@
+document: rfc-9491
+kind: protocol-element
+summary: The SFF cache is indexed by NSH SPI and SI-1. When an SFF receives a packet destined for a local SF SID, it strips the SR segment list, saves it to the cache, and forwards the NSH packet to the SF. When the packet returns, the SFF retrieves the cached SR header using the NSH SPI and SI and re-encapsulates the packet.
+section: "4"
+topics:
+    - routing
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

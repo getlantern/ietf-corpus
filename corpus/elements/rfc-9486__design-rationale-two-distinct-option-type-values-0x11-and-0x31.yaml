@@ -1,0 +1,8 @@
+document: rfc-9486
+kind: design-rationale
+summary: Two distinct Option-Type values (0x11 and 0x31) are assigned, differing only in the 'chg' bit. The 0x31 value (chg=1) signals that the option data may change en route, which is relevant for Trace and POT options that are modified at each hop, while 0x11 (chg=0) is used for options that are not modified in transit.
+section: "6"
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

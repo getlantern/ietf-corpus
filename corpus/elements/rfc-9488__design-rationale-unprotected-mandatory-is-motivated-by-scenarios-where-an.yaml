@@ -1,0 +1,8 @@
+document: rfc-9488
+kind: design-rationale
+summary: UNPROTECTED MANDATORY is motivated by scenarios where an LSP is protected via a diverse secondary LSP; if local protection is invoked on the primary LSP upon failure, traffic may temporarily traverse links violating TE requirements (e.g., insufficient bandwidth), making it preferable to tear down the LSP immediately and switch to the pre-engineered secondary path.
+section: "4.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

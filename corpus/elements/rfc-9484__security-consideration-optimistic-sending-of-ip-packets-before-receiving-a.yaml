@@ -1,0 +1,10 @@
+document: rfc-9484
+kind: security-consideration
+summary: Optimistic sending of IP packets before receiving a successful response is not allowed in HTTP/1.x, because a server rejecting the HTTP Upgrade could attempt to parse the IP packets as a subsequent HTTP request, enabling request smuggling. An intermediary re-encoding from HTTP/2 or HTTP/3 to HTTP/1.1 MUST NOT forward received capsules until it has parsed a successful IP proxying response.
+section: "11"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,10 @@
+document: rfc-9484
+kind: normative-requirement
+summary: In ROUTE_ADVERTISEMENT capsules, endpoints MUST NOT send routes that overlap via the IP Protocol = 0 (all protocols) ambiguity. If a receiver detects such overlap, it MUST abort the IP proxying request stream (validating this is OPTIONAL, but the abort upon detection is required).
+section: 4.7.3
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

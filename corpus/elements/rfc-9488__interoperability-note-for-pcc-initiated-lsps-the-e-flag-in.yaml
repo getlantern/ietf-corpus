@@ -1,0 +1,9 @@
+document: rfc-9488
+kind: interoperability-note
+summary: For PCC-initiated LSPs, the E flag in a PCUpd message from a legacy PCE is always 0 (echoed from PCRpt but the bit is ignored), so a supporting PCC SHOULD ignore the E flag value received from the PCE in a PCUpd message to avoid misinterpreting legacy behavior.
+section: "5.1"
+rfc2119_level: SHOULD
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

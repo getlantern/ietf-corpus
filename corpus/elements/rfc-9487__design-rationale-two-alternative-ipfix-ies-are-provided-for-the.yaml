@@ -1,0 +1,9 @@
+document: rfc-9487
+kind: design-rationale
+summary: Two alternative IPFIX IEs are provided for the SRv6 Segment List. srhSegmentIPv6BasicList uses IPFIX Structured Data basicList format, which is more convenient for collection (pre-structured list) but requires extra exporter processing to map to basicList encoding. srhSegmentIPv6ListSection exports raw bytes, enabling immediate export with no exporter manipulation, at the cost of collector-side SR decoding.
+section: "6.1"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

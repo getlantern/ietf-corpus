@@ -1,0 +1,10 @@
+document: rfc-9484
+kind: privacy-consideration
+summary: 'Address assignment can function as a tracking vector: if a proxy partitions its address space by client and assigns distinct ranges per client, target hosts can correlate IP packets to the same client. Proxies SHOULD avoid persistent per-client address (prefix) assignment when possible. Transferring DSCP markings to outer headers in privacy-sensitive contexts is NOT RECOMMENDED as it exposes end-to-end flow information to on-path observers.'
+section: "11"
+rfc2119_level: SHOULD
+topics:
+    - privacy
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

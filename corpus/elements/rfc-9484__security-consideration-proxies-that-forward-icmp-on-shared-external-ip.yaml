@@ -1,0 +1,10 @@
+document: rfc-9484
+kind: security-consideration
+summary: Proxies that forward ICMP on shared external IP addresses MUST inspect the invoking packet embedded in ICMP error messages and only forward the ICMP to the client whose request scope matches, to prevent one client's traffic information from being inadvertently disclosed to another client sharing the same proxy IP address.
+section: "11"
+rfc2119_level: MUST
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

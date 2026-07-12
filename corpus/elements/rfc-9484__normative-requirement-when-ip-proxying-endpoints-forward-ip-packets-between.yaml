@@ -1,0 +1,10 @@
+document: rfc-9484
+kind: normative-requirement
+summary: When IP proxying endpoints forward IP packets between different links, they will decrement the IP Hop Count (or TTL) upon encapsulation but NOT upon decapsulation. This prevents infinite loops in the presence of routing loops.
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,11 @@
+document: rfc-9484
+kind: normative-requirement
+summary: When using HTTP/2 or HTTP/3, IP proxying requests use HTTP Extended CONNECT with :method = CONNECT, :protocol = connect-ip, and non-empty :path and :scheme pseudo-header fields. A successful response SHALL have a 2xx status code; any other code causes the client to MUST abort the request.
+section: "4.4"
+rfc2119_level: MUST
+topics:
+    - http
+    - quic
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

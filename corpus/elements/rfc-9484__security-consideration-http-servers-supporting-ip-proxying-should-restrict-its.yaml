@@ -1,0 +1,11 @@
+document: rfc-9484
+kind: security-consideration
+summary: HTTP servers supporting IP proxying SHOULD restrict its use to authenticated users, as arbitrary clients could abuse tunnels to send traffic attributed to the proxy. Authentication mechanisms include mutual TLS, HTTP Authorization headers, or bearer tokens. Proxies can additionally rate-limit clients or restrict address assignment based on client attributes.
+section: "11"
+rfc2119_level: SHOULD
+topics:
+    - security
+    - http
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

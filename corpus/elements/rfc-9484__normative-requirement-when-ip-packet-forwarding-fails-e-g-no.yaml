@@ -1,0 +1,9 @@
+document: rfc-9484
+kind: normative-requirement
+summary: When IP packet forwarding fails (e.g., no route, policy rejection, MTU exceeded), IP proxying endpoints SHOULD use ICMP/ICMPv6 to signal the forwarding error to the peer by generating ICMP packets and sending them via HTTP Datagrams. Relevant errors include Destination Unreachable and Packet Too Big.
+section: 7.2.1
+rfc2119_level: SHOULD
+topics:
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

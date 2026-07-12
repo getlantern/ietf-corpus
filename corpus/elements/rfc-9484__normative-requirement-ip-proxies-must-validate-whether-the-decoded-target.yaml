@@ -1,0 +1,11 @@
+document: rfc-9484
+kind: normative-requirement
+summary: IP proxies MUST validate whether the decoded 'target' and 'ipproto' URI Template variables meet format requirements. If 'target' is a DNS name, the IP proxy MUST perform DNS resolution before replying. On DNS errors, the proxy MUST reject the request and SHOULD send a Proxy-Status header field with the dns_error proxy error type.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - http
+    - ip
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

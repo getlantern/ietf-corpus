@@ -1,0 +1,9 @@
+document: rfc-9493
+kind: design-rationale
+summary: The JWT "sub" Claim is defined in RFC 7519 as a string and cannot contain a JSON object; this motivated defining the separate "sub_id" Claim to carry Subject Identifiers. Both claims MAY coexist, enabling gradual adoption by implementations that may fall back from "sub_id" to "sub".
+section: "4.1"
+topics:
+    - jose
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

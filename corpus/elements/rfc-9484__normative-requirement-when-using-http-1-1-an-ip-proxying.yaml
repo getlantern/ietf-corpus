@@ -1,0 +1,10 @@
+document: rfc-9484
+kind: normative-requirement
+summary: 'When using HTTP/1.1, an IP proxying request SHALL use GET method, include Connection: Upgrade, and include Upgrade: connect-ip. A successful response SHALL use status code 101 (Switching Protocols) with matching Connection and Upgrade headers. If requirements are not met, the client MUST treat the proxying attempt as failed and close the connection.'
+section: "4.2"
+rfc2119_level: MUST
+topics:
+    - http
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

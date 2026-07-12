@@ -1,0 +1,9 @@
+document: rfc-9487
+kind: wire-format
+summary: Variable-length IPFIX IEs (srhSegmentIPv6BasicList, srhSegmentIPv6ListSection, srhIPv6Section) are declared in Template Records with Field Length 0xFFFF. For basicList, the actual length is carried in the List Length field per RFC 6313; for octetArray IEs, the actual length is encoded in the Data Set per RFC 7011 Section 7 (1 byte for lengths < 255, or 0xFF followed by a 2-byte length otherwise).
+section: A.1
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

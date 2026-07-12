@@ -1,0 +1,10 @@
+document: rfc-9484
+kind: protocol-element
+summary: 'The ROUTE_ADVERTISEMENT capsule (type 0x03) communicates to a peer which IP address ranges the sender is willing to route. Each capsule supersedes prior ones. Ranges MUST be ordered: IP Version ascending, then IP Protocol ascending, then non-overlapping End/Start addresses. A malformed or non-compliant capsule MUST cause the receiver to abort the IP proxying request stream.'
+section: 4.7.3
+topics:
+    - http
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

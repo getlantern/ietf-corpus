@@ -1,0 +1,9 @@
+document: rfc-9484
+kind: design-rationale
+summary: Context IDs are split into even (client-allocated) and odd (proxy-allocated) values to avoid requiring synchronization between endpoints when allocating new Context IDs for protocol extensions. Once allocated, a Context ID may be used by either endpoint regardless of who allocated it.
+section: "5"
+topics:
+    - ip
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

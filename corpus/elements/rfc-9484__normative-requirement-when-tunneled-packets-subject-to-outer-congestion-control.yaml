@@ -1,0 +1,12 @@
+document: rfc-9484
+kind: normative-requirement
+summary: When tunneled packets subject to outer congestion control carry different DSCP markings, the IP proxying endpoint MUST NOT copy the DSCP field from the inner IP header to the outer IP header, to prevent reordering from degrading the congestion controller. If using QUIC datagrams outside congestion control, endpoints MAY translate DSCP but MUST NOT coalesce inner packets with different DSCP markings into the same outer packet.
+section: "10.3"
+rfc2119_level: MUST NOT
+topics:
+    - ip
+    - diffserv
+    - congestion
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

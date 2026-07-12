@@ -1,0 +1,10 @@
+document: rfc-9484
+kind: protocol-element
+summary: Context IDs are 62-bit integers encoded as QUIC variable-length integers. Context ID 0 is reserved for IP payloads. Even non-zero Context IDs are client-allocated; odd non-zero Context IDs are proxy-allocated. Context IDs MUST NOT be re-allocated within a given HTTP request. The even/odd split avoids synchronization between endpoints.
+section: "5"
+topics:
+    - http
+    - ip
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
