@@ -1,0 +1,10 @@
+document: rfc-9595
+kind: security-consideration
+summary: SIDs map semantic concepts to integers; if the source of the mapping is not trusted, an attacker who can control the mapping introduces new security risks. Developers and systems processing '.sid' files are advised to only import them from authoritative sources — IANA is the authoritative source for IETF-managed YANG modules. Systems such as network management systems must take extra care to ensure they process '.sid' files only from appropriately authoritative sources.
+section: "5"
+topics:
+    - security
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

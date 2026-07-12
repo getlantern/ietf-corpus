@@ -1,0 +1,9 @@
+document: rfc-9588
+kind: protocol-element
+summary: The transcript hash is initialized to all zeros and iteratively updated with the hash of its current value concatenated with each input. In the normal flow it is updated with (SPAKESupport || SPAKEChallenge), then updated again with the client's pubkey value; the final value is used without change for all key derivations.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

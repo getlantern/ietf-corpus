@@ -1,0 +1,9 @@
+document: rfc-9588
+kind: security-consideration
+summary: Reflection attacks on encdata messages are prevented because client-originated messages use K'[odd n] and KDC-originated messages use K'[even n], so any reflected message would be decrypted with the wrong key and fail.
+section: "10.8"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

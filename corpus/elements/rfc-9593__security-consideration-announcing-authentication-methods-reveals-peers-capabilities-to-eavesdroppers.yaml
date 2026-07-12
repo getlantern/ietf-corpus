@@ -1,0 +1,10 @@
+document: rfc-9593
+kind: security-consideration
+summary: Announcing authentication methods reveals peers' capabilities to eavesdroppers. An active on-path attacker can strip all announcements except NULL Authentication, encouraging peers to use it — but this is only effective if NULL authentication is already permitted by local policy, so it is not a true downgrade attack.
+section: "6"
+topics:
+    - ipsec
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

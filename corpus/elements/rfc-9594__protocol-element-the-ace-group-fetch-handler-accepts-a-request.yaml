@@ -1,0 +1,9 @@
+document: rfc-9594
+kind: protocol-element
+summary: The /ace-group FETCH handler accepts a request with 'gid' (CBOR array of group identifiers) and returns a CBOR map with parallel arrays 'gid', 'gname' (text strings), and 'guri' (text strings), mapping each requested identifier to its group name and group-membership resource URI. If no matching group is found, the response payload is a zero-length CBOR byte string (0x40).
+section: 4.2.1
+topics:
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

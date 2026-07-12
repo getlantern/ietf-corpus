@@ -1,0 +1,10 @@
+document: rfc-9598
+kind: security-consideration
+summary: A Unicode string of user-perceived characters can be encoded in multiple ways, and RFC 6531 does not mandate normalization forms for the Local-part. This specification requires octet-for-octet comparison to mitigate attacks using different encodings, but this may raise interoperability concerns where the mail system and Certification Authority use different encodings.
+section: "7"
+topics:
+    - security
+    - pkix
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

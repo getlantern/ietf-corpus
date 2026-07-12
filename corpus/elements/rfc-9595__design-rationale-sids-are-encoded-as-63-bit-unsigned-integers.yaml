@@ -1,0 +1,9 @@
+document: rfc-9595
+kind: design-rationale
+summary: SIDs are encoded as 63-bit unsigned integers rather than 64-bit to allow easier manipulation on platforms that might lack 64-bit unsigned arithmetic. The loss of a single bit of range is not significant given the size of the remaining space.
+section: "1"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

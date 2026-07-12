@@ -1,0 +1,11 @@
+document: rfc-9594
+kind: normative-requirement
+summary: The Join Response MUST contain 'gkty' (key type integer or text string from the ACE Groupcomm Key Types registry), 'key' (the group keying material in the application-profile-defined format), and 'num' (current keying material version as a CBOR integer that strictly increases with each change). The response code is 2.01 (Created) for newly added members, 2.04 (Changed) for rejoining members.
+section: 4.3.1
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

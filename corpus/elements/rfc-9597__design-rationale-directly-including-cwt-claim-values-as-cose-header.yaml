@@ -1,0 +1,9 @@
+document: rfc-9597
+kind: design-rationale
+summary: Directly including CWT claim values as COSE header parameter values was not feasible because of conflicts between numeric COSE header parameter assignments and numeric CWT claim assignments. A single wrapping header parameter (label 15) was introduced to avoid this collision.
+section: "1"
+topics:
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9594
+kind: protocol-element
+summary: The 'get_creds' parameter in the Join Request is either the CBOR simple value null (0xf6) to retrieve all member credentials, or a three-element CBOR array [inclusion_flag (bool), role_filter ([role/comb_role]*), id_filter ([bstr]*)] for filtered retrieval. In initial Join Requests, inclusion_flag is always true and id_filter is always empty.
+section: 4.3.1
+topics:
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

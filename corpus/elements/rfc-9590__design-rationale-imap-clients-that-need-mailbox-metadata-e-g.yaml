@@ -1,0 +1,8 @@
+document: rfc-9590
+kind: design-rationale
+summary: IMAP clients that need mailbox metadata (e.g., display color) were previously forced to issue a LIST or LSUB command followed by a separate GETMETADATA command for each mailbox found, wasting bandwidth and degrading performance when requests are not pipelined. This extension collapses both operations into a single LIST command.
+section: "1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

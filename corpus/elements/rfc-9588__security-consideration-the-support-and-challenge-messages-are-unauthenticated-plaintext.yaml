@@ -1,0 +1,10 @@
+document: rfc-9588
+kind: security-consideration
+summary: The support and challenge messages are unauthenticated plaintext; downgrade attacks will result in the client and KDC deriving different keys, detected upon decryption. Second-factor challenge data SHOULD NOT be displayed to users as it could be modified by an attacker to contain misleading content. The KDC-REP message plaintext is not protected by this mechanism.
+section: "10.2"
+topics:
+    - crypto
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

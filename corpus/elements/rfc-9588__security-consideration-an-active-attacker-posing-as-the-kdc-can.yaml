@@ -1,0 +1,9 @@
+document: rfc-9588
+kind: security-consideration
+summary: An active attacker posing as the KDC can downgrade a client to encrypted timestamp pre-authentication. Client implementations SHOULD provide a per-realm configuration option to disable encrypted timestamp pre-authentication, and SHOULD assume timestamp/challenge mechanisms are unlikely to succeed after a second-pass SPAKE failure with SF-NONE.
+section: "10.5"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

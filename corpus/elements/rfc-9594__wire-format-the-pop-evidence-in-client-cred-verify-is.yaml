@@ -1,0 +1,10 @@
+document: rfc-9594
+kind: wire-format
+summary: 'The PoP evidence in ''client_cred_verify'' is computed over the byte-string concatenation: bstr(scope) || bstr(N_S) || bstr(N_C), where scope is from the Join Request''s ''scope'' field (or a default), N_S is the ''kdcchallenge'' value from the Token Transfer Response, and N_C is the Client nonce from ''cnonce''. Application profiles MUST specify the exact computation method.'
+section: 4.3.1
+topics:
+    - crypto
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

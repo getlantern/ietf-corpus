@@ -1,0 +1,10 @@
+document: rfc-9598
+kind: design-rationale
+summary: Octet-for-octet comparison of SmtpUTF8Mailbox Local-parts is required rather than Unicode-normalized comparison, to mitigate attacks where different encodings are used by the mail system and the Certification Authority. This trades potential interoperability concerns for improved security.
+section: "7"
+topics:
+    - security
+    - pkix
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

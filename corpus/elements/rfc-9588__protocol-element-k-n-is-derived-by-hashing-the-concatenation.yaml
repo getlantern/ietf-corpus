@@ -1,0 +1,9 @@
+document: rfc-9588
+kind: protocol-element
+summary: 'K''[n] is derived by hashing the concatenation of: the fixed string "SPAKEkey", group number (4 bytes big-endian), reply key encryption type (4 bytes), PRF+ output for w, SPAKE result K, transcript hash, inner KDC-REQ-BODY encoding, n (4 bytes unsigned), and a block counter starting at 0x01. The result is truncated to the key generation seed length and processed through random-to-key, then combined with KRB-FX-CF2.'
+section: "7"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

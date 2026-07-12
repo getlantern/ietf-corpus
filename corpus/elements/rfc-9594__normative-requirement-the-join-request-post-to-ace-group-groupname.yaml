@@ -1,0 +1,11 @@
+document: rfc-9594
+kind: normative-requirement
+summary: The Join Request (POST to /ace-group/GROUPNAME) MUST include 'cnonce' (a Client-generated nonce N_C as CBOR byte string). 'client_cred' (the Client's authentication credential as CBOR byte string) MUST be present when the KDC manages member credentials and the Client's role requires sending messages; 'client_cred_verify' MUST accompany 'client_cred' when no pre-stored credential is available.
+section: 4.3.1
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9589
+kind: design-rationale
+summary: The CMS signing-time attribute is leveraged to align file mod-times across RRDP and rsync, enabling rsync's default file comparison logic (mod-time + file size) to skip re-transferring files already fetched via RRDP, reducing bandwidth, disk I/O, and CPU usage.
+section: "2"
+topics:
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

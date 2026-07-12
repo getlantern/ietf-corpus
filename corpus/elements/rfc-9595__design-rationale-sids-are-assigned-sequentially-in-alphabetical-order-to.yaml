@@ -1,0 +1,10 @@
+document: rfc-9595
+kind: design-rationale
+summary: SIDs are assigned sequentially in alphabetical order to minimize serialization overhead, particularly when the delta between a reference SID and the current SID is used by protocols (such as YANG-CBOR) to reduce message size. Locality of assignment enables efficient use of the SID delta mechanism.
+section: B
+topics:
+    - yang
+    - cbor
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

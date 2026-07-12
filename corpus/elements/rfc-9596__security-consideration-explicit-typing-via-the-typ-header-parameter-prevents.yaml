@@ -1,0 +1,10 @@
+document: rfc-9596
+kind: security-consideration
+summary: Explicit typing via the "typ" header parameter prevents confusion between different kinds of COSE objects. Applications employing explicit typing should reject COSE objects with an unexpected type header parameter value, and should also reject COSE objects without a type header parameter when one is expected.
+section: "3"
+topics:
+    - cbor
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

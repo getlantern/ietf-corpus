@@ -1,0 +1,9 @@
+document: rfc-9594
+kind: security-consideration
+summary: Group keying material must be updated upon membership changes to enforce backward and forward security guarantees. Block-wise transfers (Section 10.3) of keying material introduce a window where partial keying material is available to the Client; implementations must ensure atomicity or handle partial-delivery failures to avoid security degradation.
+section: "10.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

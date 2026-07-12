@@ -1,0 +1,10 @@
+document: rfc-9594
+kind: protocol-element
+summary: The Join Response SHOULD include 'exp' (expiration time of keying material, CBOR unsigned integer seconds since Unix epoch) and 'exi' (residual lifetime in seconds as of KDC response time). If 'exp' is present, 'exi' MUST also be present. After 'exp', group members MUST NOT use that keying material.
+section: 4.3.1
+topics:
+    - security
+    - crypto
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

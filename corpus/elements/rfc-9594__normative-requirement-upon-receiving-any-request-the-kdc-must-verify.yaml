@@ -1,0 +1,10 @@
+document: rfc-9594
+kind: normative-requirement
+summary: Upon receiving any request, the KDC MUST verify it holds a valid access token for the Client (else reply 4.01 Unauthorized) and, for group-specific resources, that the token's scope authorizes the requested operation on that group (else reply 4.03 Forbidden). If the request is malformed, the KDC MUST reply with 4.00 Bad Request; unknown or unexpected fields MUST be silently ignored.
+section: 4.1.2
+rfc2119_level: MUST
+topics:
+    - security
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

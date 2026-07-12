@@ -1,0 +1,10 @@
+document: rfc-9588
+kind: normative-requirement
+summary: If either the first or second factor fails validation, the KDC MUST respond with a KDC_ERR_PREAUTH_FAILED error. If additional round trips are needed for second-factor validation, the KDC MUST reply with KDC_ERR_MORE_PREAUTH_DATA_REQUIRED containing an encdata PA-SPAKE element.
+section: "4.3"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

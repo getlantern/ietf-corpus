@@ -1,0 +1,9 @@
+document: rfc-9593
+kind: design-rationale
+summary: When the SUPPORTED_AUTH_METHODS notification is too large for IKE_SA_INIT (risking IP fragmentation), the responder may defer it to an IKE_INTERMEDIATE exchange, which supports IKE fragmentation (RFC 7383) and avoids IP-layer fragmentation that IKE_SA_INIT cannot use.
+section: "3.1"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

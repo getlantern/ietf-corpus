@@ -1,0 +1,10 @@
+document: rfc-9594
+kind: normative-requirement
+summary: If a scope entry in the access token specifies a role requiring the Client to send its authentication credential when joining, the Token Transfer Response MUST include the 'kdcchallenge' parameter containing a freshly generated challenge N_S. The KDC MUST store this value at least until it receives the corresponding Join Request.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

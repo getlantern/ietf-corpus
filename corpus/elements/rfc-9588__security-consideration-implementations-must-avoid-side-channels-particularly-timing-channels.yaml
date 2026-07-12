@@ -1,0 +1,9 @@
+document: rfc-9588
+kind: security-consideration
+summary: Implementations MUST avoid side channels, particularly timing channels, in the computation of w and the multiplications wM and wN. Generation of scalar values x and y need not be constant-time, but the time taken MUST NOT reveal information about the resulting value. P-521 requires special care due to its extra high bits in the multiplier input.
+section: "10.3"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
