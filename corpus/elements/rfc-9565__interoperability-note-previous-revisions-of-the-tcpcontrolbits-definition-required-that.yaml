@@ -1,0 +1,8 @@
+document: rfc-9565
+kind: interoperability-note
+summary: Previous revisions of the tcpControlBits definition required that bits at offset positions 8 and 9 be exported as zero even if observed. Collectors should therefore not assume that a value of zero for these bits indicates those bits were never set in observed traffic, especially if they are consistently zero in every Flow Record from a given Exporter.
+section: "3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

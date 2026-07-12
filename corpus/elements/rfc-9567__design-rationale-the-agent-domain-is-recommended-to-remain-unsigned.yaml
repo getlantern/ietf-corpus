@@ -1,0 +1,8 @@
+document: rfc-9567
+kind: design-rationale
+summary: The agent domain is recommended to remain unsigned (no DNSSEC) to avoid triggering aggressive negative caching (RFC 8198), which would use NSEC/NSEC3 records to synthesize negative answers from cache and suppress subsequent error-report queries to the monitoring agent.
+section: "8.2"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

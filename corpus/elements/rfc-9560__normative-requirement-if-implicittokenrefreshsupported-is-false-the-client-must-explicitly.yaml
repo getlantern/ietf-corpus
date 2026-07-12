@@ -1,0 +1,10 @@
+document: rfc-9560
+kind: normative-requirement
+summary: If 'implicitTokenRefreshSupported' is false, the client MUST explicitly refresh the session using farv1_session/refresh; if that fails, the client MUST establish a new session via farv1_session/login. If the OP does not support refresh tokens, the client MUST submit a new login request once the access token expires.
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9562
+kind: privacy-consideration
+summary: Embedding a real MAC address in UUIDv1/UUIDv6 node fields exposes network interface hardware details and can be used to locate or fingerprint machines. Implementations generating UUIDs for external consumption SHOULD use a cryptographically random node ID with the multicast bit set rather than a real MAC address.
+section: "8"
+topics:
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

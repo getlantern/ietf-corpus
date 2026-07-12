@@ -1,0 +1,8 @@
+document: rfc-9569
+kind: design-rationale
+summary: 'Persistent HTTP connections for client liveness detection were removed because they conflict with HTTP best practices: when a client accesses a TIPS view through an HTTP proxy, connections exist between client-proxy and proxy-server separately, so persistent connections do not correctly detect client liveness.'
+section: Appendix D
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9569
+kind: normative-requirement
+summary: 'The server''s processing logic for update item GET requests MUST be: return content if ''ug/<i>/<j>'' exists; else if long polling is acceptable, queue the request and respond when ready or interrupted; else return an error. It is RECOMMENDED that servers support long polling at least for <end-seq> -> <end-seq+1>.'
+section: "7.2"
+rfc2119_level: MUST
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

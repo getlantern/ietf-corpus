@@ -1,0 +1,8 @@
+document: rfc-9567
+kind: design-rationale
+summary: The error is encoded entirely in the QNAME of the report query so that the very act of sending the DNS query constitutes the error report. This keeps reporting lightweight, with minimal impact on the resolver's main functions, and requires no new protocol beyond standard DNS.
+section: "4"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

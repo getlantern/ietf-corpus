@@ -1,0 +1,8 @@
+document: rfc-9568
+kind: interoperability-note
+summary: 'A VRRPv2 Active Router interacting with a sub-second VRRPv3 Backup Router is problematic: the VRRPv2 implementation SHOULD NOT be given higher priority than a VRRPv3 router operating at sub-second rates. VRRPv3 Active Routers sending at centisecond rates could overwhelm VRRPv2 Backup Routers; initial deployments should use 100 centisecond intervals until VRRPv2 routers are upgraded.'
+section: 8.4.2.1
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

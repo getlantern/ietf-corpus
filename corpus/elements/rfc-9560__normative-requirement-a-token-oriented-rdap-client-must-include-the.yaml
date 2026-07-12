@@ -1,0 +1,11 @@
+document: rfc-9560
+kind: normative-requirement
+summary: A token-oriented RDAP client MUST include the 'farv1_iss' query parameter and Issuer Identifier with an RDAP query if the token was issued by a remote OP. The server MUST validate a received access token prior to using it for access control; validation MAY include token introspection (RFC 7662) or JWT analysis.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

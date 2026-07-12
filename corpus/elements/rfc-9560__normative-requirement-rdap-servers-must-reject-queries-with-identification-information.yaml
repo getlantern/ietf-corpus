@@ -1,0 +1,11 @@
+document: rfc-9560
+kind: normative-requirement
+summary: RDAP servers MUST reject queries with identification information from an unsupported OP by returning HTTP 400 (Bad Request). When identification information from a recognized OP is present, the server MUST perform user authentication with the OP, process the query, and return a response appropriate to the user's authorization level.
+section: 4.2.3
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

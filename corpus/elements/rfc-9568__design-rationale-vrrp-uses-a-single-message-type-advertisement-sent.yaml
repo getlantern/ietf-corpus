@@ -1,0 +1,8 @@
+document: rfc-9568
+kind: design-rationale
+summary: VRRP uses a single message type (ADVERTISEMENT) sent only by the Active Router, minimizing runtime state and protocol complexity. The design optimizes for the common case of two redundant routers with distinct path preferences, accepting that more than two equal-preference paths may cause brief duplicate forwarding during election — a tradeoff justified by the rarity of such topologies.
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,8 @@
+document: rfc-9569
+kind: state-machine
+summary: 'A TIPS view progresses through three states: Created (on client POST to TIPS frontend), Active (serving polling requests), and Closed (server may close at any time due to inactivity or load). Transitions: Created→Active on successful open; Active→Closed by server decision. When Closed, edge requests receive HTTP 404, and the client must open a new TIPS view.'
+section: "4.1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

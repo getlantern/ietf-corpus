@@ -1,0 +1,10 @@
+document: rfc-9560
+kind: normative-requirement
+summary: After receiving the farv1_session/device response, the client MUST send a farv1_session/devicepoll request. This request MUST include the farv1_dc query parameter carrying the device_code from the device response, and MUST include an end-user identifier or OP Issuer Identifier if the server supports only remote OPs.
+section: 5.2.4.2
+rfc2119_level: MUST
+topics:
+    - oauth
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

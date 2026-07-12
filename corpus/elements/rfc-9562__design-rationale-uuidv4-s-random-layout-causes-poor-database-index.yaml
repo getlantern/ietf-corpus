@@ -1,0 +1,6 @@
+document: rfc-9562
+kind: design-rationale
+summary: UUIDv4's random layout causes poor database-index locality because successive inserts land at random locations in B-tree indexes. UUIDv6 and UUIDv7 store timestamps in the most significant bytes so new values cluster near each other in the index, with real-world performance differences of one order of magnitude or more over random UUIDs.
+section: "6.11"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

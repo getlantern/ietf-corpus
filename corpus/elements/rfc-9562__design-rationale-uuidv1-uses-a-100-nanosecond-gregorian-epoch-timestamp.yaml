@@ -1,0 +1,6 @@
+document: rfc-9562
+kind: design-rationale
+summary: UUIDv1 uses a 100-nanosecond Gregorian Epoch timestamp (since 15 October 1582) that is uncommon, difficult to represent accurately in IEEE 754 floating point, and requires byte-order introspection to sort. UUIDv7 replaces it with a Unix Epoch millisecond timestamp (valid to year 10889 AD) that is natively sortable as raw bytes.
+section: "2.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

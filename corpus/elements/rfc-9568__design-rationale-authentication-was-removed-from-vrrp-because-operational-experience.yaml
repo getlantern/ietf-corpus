@@ -1,0 +1,9 @@
+document: rfc-9568
+kind: design-rationale
+summary: Authentication was removed from VRRP because operational experience showed that misconfigured shared secrets caused multiple Active Routers to be elected simultaneously — a failure mode as disruptive as having no Active Router. Since hostile LAN nodes can disrupt ARP/ND independently of VRRP regardless of authentication, the security benefit did not justify the complexity.
+section: "9"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

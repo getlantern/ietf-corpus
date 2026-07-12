@@ -1,0 +1,6 @@
+document: rfc-9569
+kind: design-rationale
+summary: 'Optional shortcut incremental updates (skipping versions i to i+k, k>1) can speed synchronization but have trade-offs: they may grow the updates graph to O(n^2) size, require extra server storage, and can reduce concurrency when updates are disjoint (a single shortcut cannot be transferred concurrently unlike multiple mandatory steps).'
+section: "8.4"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

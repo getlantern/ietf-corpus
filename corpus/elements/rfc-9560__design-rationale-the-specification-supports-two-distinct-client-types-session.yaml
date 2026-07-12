@@ -1,0 +1,9 @@
+document: rfc-9560
+kind: design-rationale
+summary: 'The specification supports two distinct client types (session-oriented and token-oriented) because different deployment contexts have different needs: web browsers naturally use cookie-based sessions, while headless scripts and CLI tools work better with direct OAuth token flows. Defining both allows the protocol to cover a broad range of RDAP client implementations without forcing a single authentication model.'
+section: 3.1.2
+topics:
+    - oauth
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

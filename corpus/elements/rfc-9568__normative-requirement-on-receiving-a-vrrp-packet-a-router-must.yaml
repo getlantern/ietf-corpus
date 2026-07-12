@@ -1,0 +1,10 @@
+document: rfc-9568
+kind: normative-requirement
+summary: 'On receiving a VRRP packet, a router MUST verify: TTL/Hop Limit is 255, VRRP version is 3, packet type is 1 (ADVERTISEMENT), packet is complete, checksum is valid, and VRID is configured locally with the local router not being the IPvX address owner. Any failed check MUST result in discarding the packet.'
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

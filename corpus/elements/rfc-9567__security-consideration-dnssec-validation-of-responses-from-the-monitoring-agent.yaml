@@ -1,0 +1,9 @@
+document: rfc-9567
+kind: security-consideration
+summary: DNSSEC validation of responses from the monitoring agent is mandated even when the agent domain is recommended to remain unsigned, to prevent downgrade attacks where a legitimately signed domain is deceptively advertised as an agent domain by a malicious actor, which would otherwise expose the resolver to cache poisoning.
+section: "9"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

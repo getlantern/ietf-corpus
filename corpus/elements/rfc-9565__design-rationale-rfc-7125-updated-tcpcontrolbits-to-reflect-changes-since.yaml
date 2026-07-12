@@ -1,0 +1,9 @@
+document: rfc-9565
+kind: design-rationale
+summary: RFC 7125 updated tcpControlBits to reflect changes since RFC 793, but that revision became problematic because the NS (Nonce Sum) bit was later deprecated by RFC 8311. This document removes stale information and defers to the authoritative 'TCP Header Flags' registry to avoid future conflicts from hardcoding flag definitions in the IPFIX IE.
+section: "1"
+topics:
+    - tcp
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

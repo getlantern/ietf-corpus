@@ -1,0 +1,8 @@
+document: rfc-9569
+kind: design-rationale
+summary: TIPS uses a client-pull (long-polling) model rather than server push. HTTP/2 and HTTP/3 server push was considered but not adopted due to lack of broad server push support and increased protocol complexity. The long-polling approach achieves sub-RTT update delivery while remaining compatible with HTTP/1.1.
+section: Appendix C
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

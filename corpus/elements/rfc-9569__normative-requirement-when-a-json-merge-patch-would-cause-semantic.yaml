@@ -1,0 +1,9 @@
+document: rfc-9569
+kind: normative-requirement
+summary: When a JSON merge patch would cause semantic ambiguity (because null means 'remove field' in merge patch but a resource may distinguish null from undefined), the server MUST choose JSON patch encoding over JSON merge patch for incremental updates if both are supported.
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

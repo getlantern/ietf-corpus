@@ -1,0 +1,8 @@
+document: rfc-9569
+kind: design-rationale
+summary: The TIPS view URI is NOT RECOMMENDED to encode properties outside the request body (such as cookies or client IP address) to avoid creating duplicate TIPS views for the same resource, e.g., when a mobile client changes IP. Servers may intentionally use client info for service isolation, but this is discouraged for common resources.
+section: "6.2"
+topics:
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

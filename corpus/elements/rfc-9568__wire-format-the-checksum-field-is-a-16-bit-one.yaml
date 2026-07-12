@@ -1,0 +1,9 @@
+document: rfc-9568
+kind: wire-format
+summary: The Checksum field is a 16-bit one's complement of the one's complement sum of the VRRP message. For IPv4, the checksum covers only the VRRP message (Version field through last IPv4 address) without a pseudo-header. For IPv6, the checksum includes a prepended pseudo-header as defined in RFC 8200 Section 8.1, with Next Header set to 112.
+section: 5.2.8
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

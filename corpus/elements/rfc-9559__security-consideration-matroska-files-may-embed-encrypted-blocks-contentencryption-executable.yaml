@@ -1,0 +1,8 @@
+document: rfc-9559
+kind: security-consideration
+summary: Matroska files may embed encrypted blocks (ContentEncryption), executable chapter codecs, and arbitrary attachments. Implementations must validate all element sizes, VINT encodings, and nesting depth to avoid buffer overflows, infinite loops, and resource exhaustion from malformed or malicious files.
+section: "26"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

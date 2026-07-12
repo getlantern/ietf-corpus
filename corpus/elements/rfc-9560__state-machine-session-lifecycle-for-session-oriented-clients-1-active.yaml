@@ -1,0 +1,9 @@
+document: rfc-9560
+kind: state-machine
+summary: 'Session lifecycle for session-oriented clients: (1) ACTIVE — entered via farv1_session/login or farv1_session/devicepoll; transitions to ACTIVE via farv1_session/refresh; (2) NO SESSION — entered via farv1_session/logout or server timeout; requests to status/refresh/logout in this state MUST return HTTP 409; requests with an expired session cookie MUST return HTTP 401.'
+section: "5.6"
+topics:
+    - oauth
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,9 @@
+document: rfc-9568
+kind: security-consideration
+summary: VRRP includes no authentication mechanism. Earlier authentication schemes were removed because misconfigured secrets caused multiple Active Routers to be elected, and even with cryptographic protection, hostile nodes can behave as Active Routers. VRRP's TTL/Hop Limit=255 check (GTSM) limits attacks to the local network, but cannot prevent LAN-local attacks such as ARP/ND spoofing, which can be performed independently of VRRP.
+section: "9"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

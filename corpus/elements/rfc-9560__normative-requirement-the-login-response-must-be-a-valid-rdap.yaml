@@ -1,0 +1,11 @@
+document: rfc-9560
+kind: normative-requirement
+summary: The login response MUST be a valid RDAP response per RFC 9083 and MUST NOT include members relating to a specific RDAP object type. On success it MUST include a 'farv1_session' with a 'sessionInfo' object; on failure it MUST include a 'farv1_session' omitting userClaims and sessionInfo.
+section: 5.2.3
+rfc2119_level: MUST
+topics:
+    - http
+    - oauth
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

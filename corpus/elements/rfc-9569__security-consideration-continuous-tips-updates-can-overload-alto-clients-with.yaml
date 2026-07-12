@@ -1,0 +1,9 @@
+document: rfc-9569
+kind: security-consideration
+summary: Continuous TIPS updates can overload ALTO clients with limited processing capacity. No built-in flow control for clients is specified; TCP, HTTP/2, and QUIC stream/connection flow control may help. Under overload, a client MAY drop high-update-rate resources and must be careful about using potentially stale information to avoid stability issues.
+section: "9.2"
+topics:
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

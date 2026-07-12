@@ -1,0 +1,8 @@
+document: rfc-9568
+kind: state-machine
+summary: 'VRRP defines three states: Initialize (waiting for Startup event), Backup (monitoring Active Router availability), and Active (forwarding packets for the Virtual Router). Transitions: Initialize→Active on Startup if priority=255; Initialize→Backup on Startup if priority<255; Backup→Active on Active_Down_Timer expiry; Active→Backup on receiving higher-priority advertisement; any state→Initialize on Shutdown.'
+section: "6.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

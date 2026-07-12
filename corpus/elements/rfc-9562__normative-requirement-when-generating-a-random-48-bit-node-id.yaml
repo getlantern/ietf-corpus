@@ -1,0 +1,10 @@
+document: rfc-9562
+kind: normative-requirement
+summary: When generating a random 48-bit Node ID for UUIDv1 or UUIDv6 (when no IEEE 802 MAC is available or desired), implementations MUST set the least significant bit of the first octet to 1 (the multicast bit), ensuring these node values never conflict with real hardware MAC addresses.
+section: "6.10"
+rfc2119_level: MUST
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

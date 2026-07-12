@@ -1,0 +1,8 @@
+document: rfc-9565
+kind: interoperability-note
+summary: When tcpControlBits is exported as a single octet using reduced-size encoding (RFC 7011 Section 6.2), only the low-order octet is covered, corresponding to bit offset positions 8 to 15 per the TCP Header Flags registry. A Collector receiving this reduced-size encoding must not assume anything about the content of the four bits at positions 4 to 7.
+section: "3"
+topics:
+    - tcp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

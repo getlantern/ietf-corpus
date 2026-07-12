@@ -1,0 +1,7 @@
+document: rfc-9561
+kind: normative-requirement
+summary: If an NVMe command returns a non-retryable error (DNR bit set), the client MUST commit all layouts using that storage device through the MDS, return all outstanding layouts, forget the device ID, and unregister its reservation key.
+section: 2.2.4
+rfc2119_level: MUST
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

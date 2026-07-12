@@ -1,0 +1,11 @@
+document: rfc-9560
+kind: normative-requirement
+summary: An RDAP server MUST maintain session state for the duration of an active session. In the absence of a logout request, the session MUST be terminated after a server-defined timeout. The server SHOULD invalidate the HTTP cookie and SHOULD revoke tokens or log out from the OP on session termination.
+section: "5.5"
+rfc2119_level: MUST
+topics:
+    - oauth
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

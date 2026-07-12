@@ -1,0 +1,10 @@
+document: rfc-9560
+kind: normative-requirement
+summary: When a session-oriented client receives a session cookie, it MUST include that cookie in all subsequent RDAP requests within the session scope, including refresh, status, and logout requests. A second login request without a cookie MUST start a new session; a second login that includes a cookie MUST receive HTTP 409 (Conflict).
+section: "5.2"
+rfc2119_level: MUST
+topics:
+    - http
+    - oauth
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

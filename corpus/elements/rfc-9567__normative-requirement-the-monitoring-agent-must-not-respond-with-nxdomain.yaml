@@ -1,0 +1,9 @@
+document: rfc-9567
+kind: normative-requirement
+summary: The monitoring agent MUST NOT respond with NXDOMAIN for domains it is monitoring, because an NXDOMAIN response would inhibit subsequent error-report queries via negative caching per RFC 8020. A wildcard domain name in the agent zone is one method to avoid this.
+section: "8.2"
+rfc2119_level: MUST NOT
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,8 @@
+document: rfc-9569
+kind: design-rationale
+summary: For load balancing, TIPS supports both a stateless architecture (TIPS view state stored in a distributed database, enabling any backend to serve requests) and a stateful architecture with Layer 7 load balancing routing based on the tips-view-path URI component. Layer 4 (TCP 5-tuple) load balancing is incompatible with stateful backends.
+section: "8.1"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
