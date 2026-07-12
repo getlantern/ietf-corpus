@@ -1,0 +1,10 @@
+document: rfc-9585
+kind: security-consideration
+summary: The client must protect itself against data from a malicious server, specifically guarding against values causing arithmetic exceptions such as GOAL=0, GOAL/VALUE < 0, GOAL/VALUE >= 2^32, or VALUE > GOAL; in these cases the notification MUST be disregarded.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - security
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

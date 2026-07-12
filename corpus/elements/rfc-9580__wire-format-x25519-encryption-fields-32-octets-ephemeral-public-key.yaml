@@ -1,0 +1,8 @@
+document: rfc-9580
+kind: wire-format
+summary: 'X25519 encryption fields: 32 octets ephemeral public key, 1-octet size, optional 1-octet symmetric algorithm ID (v3 PKESK only), encrypted session key. Key derivation uses HKDF-SHA256 with info ''OpenPGP X25519'' over the concatenation of ephemeral key, recipient key, and shared secret; output wraps session key with AES-128 key wrap.'
+section: 5.1.6
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

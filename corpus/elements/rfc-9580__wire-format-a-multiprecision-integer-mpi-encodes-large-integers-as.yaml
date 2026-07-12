@@ -1,0 +1,8 @@
+document: rfc-9580
+kind: wire-format
+summary: A Multiprecision Integer (MPI) encodes large integers as a 2-octet big-endian bit-length field followed by the minimal octet string representing the value. Total wire size is ((MPI.length + 7) / 8) + 2 octets. MPIs also encode EC points and fixed-length octet strings in some contexts.
+section: "3.2"
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,11 @@
+document: rfc-9582
+kind: normative-requirement
+summary: 'Before using a ROA, a Relying Party MUST perform all validation checks in RFC 6488 plus: (1) the EE certificate contains an IP address delegation extension covering every prefix in the ROA payload; (2) that extension MUST NOT contain ''inherit'' elements; (3) the AS identifier delegation extension MUST NOT be present in the EE certificate.'
+section: "5"
+rfc2119_level: MUST
+topics:
+    - routing
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

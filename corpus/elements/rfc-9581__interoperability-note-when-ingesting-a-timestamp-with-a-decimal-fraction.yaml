@@ -1,0 +1,8 @@
+document: rfc-9581
+kind: interoperability-note
+summary: When ingesting a timestamp with a decimal fraction key (e.g., -9 for nanoseconds) into a platform-native type such as C timespec, care must be taken to meet platform invariants. For example, C timespec requires tv_nsec in [0, 10^9), which may require adjusting the base time value accordingly.
+section: "3.3"
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

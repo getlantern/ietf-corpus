@@ -1,0 +1,11 @@
+document: rfc-9578
+kind: wire-format
+summary: 'The Blind RSA TokenRequest (type 0x0002) contains: token_type (2 octets = 0x0002), truncated_token_key_id (1 octet, least-significant byte of SHA256(DER-encoded SPKI)), and blinded_msg (Nk=256 octets, the blind RSA blinded message from Blind(pkI, PrepareIdentity(token_input))).'
+section: "6.1"
+topics:
+    - privacy
+    - security
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

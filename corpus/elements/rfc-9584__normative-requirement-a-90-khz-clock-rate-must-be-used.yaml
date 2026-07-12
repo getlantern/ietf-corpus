@@ -1,0 +1,10 @@
+document: rfc-9584
+kind: normative-requirement
+summary: A 90 kHz clock rate MUST be used for the RTP timestamp. NAL units lacking their own timing (e.g., parameter sets) MUST use the RTP timestamp of the coded picture of their containing access unit. Receivers MUST use the RTP timestamp for display, even when picture timing SEI messages are present.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

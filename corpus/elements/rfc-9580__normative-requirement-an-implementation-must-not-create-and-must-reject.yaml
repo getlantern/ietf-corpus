@@ -1,0 +1,10 @@
+document: rfc-9580
+kind: normative-requirement
+summary: An implementation MUST NOT create and MUST reject as malformed any Secret Key packet where the S2K usage octet is not AEAD (253) and the S2K Specifier Type is Argon2. Argon2 is only valid in combination with AEAD-protected secret keys.
+section: 3.7.2.1
+rfc2119_level: MUST NOT
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

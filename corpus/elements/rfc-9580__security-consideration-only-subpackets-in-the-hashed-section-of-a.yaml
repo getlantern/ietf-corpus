@@ -1,0 +1,9 @@
+document: rfc-9580
+kind: security-consideration
+summary: Only subpackets in the hashed section of a Signature packet are cryptographically protected. Unhashed subpackets such as Issuer Key ID can be modified by any third party and must be treated as advisory information only; implementations should not rely on them for security decisions.
+section: "13.13"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

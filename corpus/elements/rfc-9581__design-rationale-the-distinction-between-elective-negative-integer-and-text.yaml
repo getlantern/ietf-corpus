@@ -1,0 +1,8 @@
+document: rfc-9581
+kind: design-rationale
+summary: The distinction between elective (negative integer and text string) keys and critical (unsigned integer) keys allows an extended time tag to remain usable even when a recipient does not understand all supplementary keys, while ensuring that load-bearing information (base time or critical fields) is never silently ignored. This avoids the need for version negotiation.
+section: "3"
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

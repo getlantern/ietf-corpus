@@ -1,0 +1,9 @@
+document: rfc-9584
+kind: security-consideration
+summary: The EVC RTP payload format inherits RTP security considerations (RFC 3550). Implementers should apply SRTP for confidentiality and integrity. Malformed or crafted RTP packets and NAL unit structures could exploit decoder vulnerabilities; receiver implementations must validate packet structure, payload header type values, and aggregation/fragmentation fields before processing.
+section: "9"
+topics:
+    - security
+    - rtp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

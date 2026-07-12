@@ -1,0 +1,8 @@
+document: rfc-9581
+kind: design-rationale
+summary: Tag 1 (POSIX time as binary64 float) limits time resolution to approximately microseconds at the time of writing, with resolution degrading over time. Tag 1001 with keys 4 or 5 (Decimal or Bigfloat) was introduced to achieve higher resolution and avoid rounding errors inherent in binary floating-point representations of epoch-based time.
+section: "2"
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

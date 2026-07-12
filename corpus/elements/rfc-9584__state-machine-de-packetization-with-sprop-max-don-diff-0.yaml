@@ -1,0 +1,9 @@
+document: rfc-9584
+kind: state-machine
+summary: 'De-packetization with sprop-max-don-diff > 0 operates in two states: ''initial buffering'' (accumulates NAL units in the de-packetization buffer until the range of AbsDon values reaches sprop-max-don-diff) and ''buffering while playing'' (continuously removes the NAL unit with the smallest AbsDon whenever the AbsDon range meets or exceeds sprop-max-don-diff). When sprop-max-don-diff equals 0, buffer size is zero and NAL units pass directly to the decoder in transmission order.'
+section: "6"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

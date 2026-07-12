@@ -1,0 +1,10 @@
+document: rfc-9580
+kind: normative-requirement
+summary: An Ed25519 signature MUST use a hash algorithm with a digest size of at least 256 bits; Ed448 MUST use at least 512 bits. An ECDSA signature MUST use a hash algorithm whose digest size is at least the curve's fsize value. Verifying implementations MUST reject signatures that violate these constraints.
+section: 5.2.3
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

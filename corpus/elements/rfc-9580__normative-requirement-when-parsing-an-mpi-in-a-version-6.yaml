@@ -1,0 +1,10 @@
+document: rfc-9580
+kind: normative-requirement
+summary: When parsing an MPI in a version 6 Key, Signature, or PKESK packet, the implementation MUST check that the encoded bit-length matches the length starting from the most significant non-zero bit; if it does not match, reject the packet as malformed. Unused bits of an MPI MUST be zero.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

@@ -1,0 +1,11 @@
+document: rfc-9578
+kind: normative-requirement
+summary: VOPRF Issuer keys MUST NOT be reused in other protocols. The RECOMMENDED generation method is seed=random(Ns); (skI, pkI)=DeriveKeyPair(seed, "PrivacyPass"). The key identifier is token_key_id = SHA256(SerializeElement(pkI)).
+section: "5.5"
+rfc2119_level: MUST NOT
+topics:
+    - privacy
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

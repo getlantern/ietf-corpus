@@ -1,0 +1,10 @@
+document: rfc-9580
+kind: normative-requirement
+summary: When generating an S2K Specifier, an implementation MUST NOT use Simple S2K. Implementations SHOULD NOT generate Salted S2K unless the input is known to be high entropy. It is RECOMMENDED that implementations use Argon2; if unavailable, Iterated and Salted S2K MAY be used with a high octet count.
+section: 3.7.2
+rfc2119_level: MUST NOT
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

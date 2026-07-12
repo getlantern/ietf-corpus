@@ -1,0 +1,9 @@
+document: rfc-9584
+kind: wire-format
+summary: A Fragmentation Unit (FU) consists of a 2-byte PayloadHdr (Type=57), a 1-byte FU header containing S bit (start flag), E bit (end flag), and FuType (6 bits, equals the fragmented NAL unit's Type), a conditional 16-bit DONL field (present only in the first fragment when sprop-max-don-diff > 0), and the FU payload bytes.
+section: 4.3.3
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

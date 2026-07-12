@@ -1,0 +1,10 @@
+document: rfc-9578
+kind: normative-requirement
+summary: If a token-keys entry includes a not-before field, Clients SHOULD NOT use that key before the specified UNIX timestamp, as doing so can lead to issuance failures. Clients SHOULD use the first key in token-keys that either lacks a not-before value or has a not-before value in the past.
+section: "4"
+rfc2119_level: SHOULD NOT
+topics:
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
