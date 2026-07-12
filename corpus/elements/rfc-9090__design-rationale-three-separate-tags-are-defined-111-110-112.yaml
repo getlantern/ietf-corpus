@@ -1,0 +1,8 @@
+document: rfc-9090
+kind: design-rationale
+summary: Three separate tags are defined (111, 110, 112) rather than one because the semantics of absolute and relative OIDs differ, and because self-assigned numbers under '1.3.6.1.4.1' (Private Enterprise Numbers) are extremely common, adding 5 fixed bytes to each encoded OID; tag 112 eliminates this overhead.
+section: "2"
+topics:
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"

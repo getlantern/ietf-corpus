@@ -1,7 +1,7 @@
 document: rfc-3986
 kind: normative-requirement
-summary: 'Syntax-based normalization requires: percent-encoded unreserved characters should be decoded; percent-encoding should use uppercase hex digits; empty port and default port should be omitted; scheme and host should be lowercased. These normalizations preserve URI equivalence.'
+summary: 'Syntax-based normalization requires: percent-encoded unreserved characters should be decoded; empty port delimiter should be omitted; scheme and host are case-insensitive and should be lowercased. Normalizing percent-encoded octets that correspond to reserved characters changes URI semantics and MUST NOT be done.'
 section: 6.2.2
 rfc2119_level: SHOULD
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-06-21"
+extracted_at: "2026-07-12"

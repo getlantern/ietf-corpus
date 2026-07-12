@@ -1,0 +1,6 @@
+document: rfc-3986
+kind: interoperability-note
+summary: Some older implementations fail to separate the query or fragment component from the path before merging with the base path and removing dot-segments, causing failure when query data contains "/./" or "/../". All URI parsers must parse and separate components before merging.
+section: 5.2.4
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-12"
