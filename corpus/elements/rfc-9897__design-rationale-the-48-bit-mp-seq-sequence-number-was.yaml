@@ -1,0 +1,9 @@
+document: rfc-9897
+kind: design-rationale
+summary: The 48-bit MP_SEQ sequence number was chosen because, compared to TCP where sequence numbers are byte-based, DCCP increments per packet. At the current globally routable MPS of 1500 bytes, 48 bits corresponds to roughly 375 PiBs of data within the sequence number space, making it sufficiently large without requiring 64 bits as recommended for TCP.
+section: 3.2.5
+topics:
+    - multipath
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

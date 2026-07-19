@@ -1,0 +1,10 @@
+document: rfc-9887
+kind: design-rationale
+summary: The TACACS+ obfuscation mechanism is obsoleted because the underlying MD5 algorithm has been shown insecure for encryption (RFC 6151), preventing FIPS-140-3 compliant deployments. TLS 1.3 replaces obfuscation for both confidentiality/integrity and peer authentication (replacing shared secrets).
+section: "1"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

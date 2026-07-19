@@ -1,0 +1,10 @@
+document: rfc-9901
+kind: security-consideration
+summary: The hash function used for Disclosures MUST be preimage resistant and computationally hiding (so undisclosed values cannot be inferred from digests), MUST be second-preimage resistant (so forgery of alternate Disclosure values with the same digest is infeasible), and SHOULD be collision resistant to prevent an Issuer from creating multiple Disclosures with the same hash.
+section: "9.4"
+topics:
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

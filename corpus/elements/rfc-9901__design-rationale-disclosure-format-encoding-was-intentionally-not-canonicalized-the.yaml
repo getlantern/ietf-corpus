@@ -1,0 +1,9 @@
+document: rfc-9901
+kind: design-rationale
+summary: 'Disclosure format encoding was intentionally not canonicalized: the digest is computed over the exact base64url-encoded Disclosure string as produced by the Issuer, including any whitespace or Unicode encoding variations. This approach follows the JWS/JWE convention and means the Issuer''s choice of encoding is immutably committed by the signature.'
+section: 4.2.1
+topics:
+    - jose
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

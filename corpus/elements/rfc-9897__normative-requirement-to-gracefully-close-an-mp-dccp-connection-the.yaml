@@ -1,0 +1,10 @@
+document: rfc-9897
+kind: normative-requirement
+summary: To gracefully close an MP-DCCP connection, the regular DCCP termination procedure MUST be initiated on all subflows with the first packet on each subflow carrying MP_CLOSE. The selected Key Data of the peer host MUST be included in MP_CLOSE and MUST be validated by the peer host to prevent unauthorized shutdown.
+section: 3.2.11
+rfc2119_level: MUST
+topics:
+    - multipath
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

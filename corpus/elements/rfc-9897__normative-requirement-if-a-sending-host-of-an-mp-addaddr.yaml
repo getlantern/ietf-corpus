@@ -1,0 +1,10 @@
+document: rfc-9897
+kind: normative-requirement
+summary: If a sending host of an MP_ADDADDR knows that no incoming subflows can be established at a particular address, an MP_ADDADDR MUST NOT announce that address unless the sending host has new knowledge about the possibility to do so. The advertisement of broadcast or multicast IP addresses MUST be ignored by the recipient.
+section: 3.2.8
+rfc2119_level: MUST NOT
+topics:
+    - multipath
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

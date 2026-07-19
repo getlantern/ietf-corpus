@@ -1,0 +1,9 @@
+document: rfc-9897
+kind: state-machine
+summary: MP-DCCP per-subflow states follow DCCP state transitions (CLOSED → REQUEST → PARTOPEN → OPEN → CLOSEREQ/CLOSING → TIMEWAIT → CLOSED) with modifications for the 4-way handshake. Fast close (MP_FAST_CLOSE) transitions Client to TIMEWAIT and Server to CLOSED directly; application data cannot be sent while in REQUEST state.
+section: "3.7"
+topics:
+    - multipath
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

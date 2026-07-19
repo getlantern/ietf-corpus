@@ -1,0 +1,9 @@
+document: rfc-9901
+kind: protocol-element
+summary: The Key Binding JWT (KB-JWT) is a standard JWT whose JOSE header MUST set `typ` to `kb+jwt` and whose payload MUST contain `iat`, `aud`, `nonce`, and `sd_hash`. The `sd_hash` value is the base64url-encoded hash of the SD-JWT string (Issuer-signed JWT plus selected Disclosures, tilde-delimited) using the same hash algorithm as the Disclosures.
+section: "4.3"
+topics:
+    - jose
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

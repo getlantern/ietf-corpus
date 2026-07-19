@@ -1,0 +1,9 @@
+document: rfc-9897
+kind: design-rationale
+summary: Address IDs are used for address removal (via MP_REMOVEADDR) rather than source IP addresses to enable address removal through NATs and other middleboxes that rewrite source addresses. This design, borrowed from MPTCP, also allows correlation between MP_JOIN and MP_ADDADDR to prevent duplicate subflows on the same path.
+section: 3.2.2
+topics:
+    - multipath
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

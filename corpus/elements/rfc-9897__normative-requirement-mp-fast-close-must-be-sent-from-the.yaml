@@ -1,0 +1,11 @@
+document: rfc-9897
+kind: normative-requirement
+summary: MP_FAST_CLOSE MUST be sent from the initiating host on all subflows using a DCCP-Reset packet with Reset Code 13. After sending, Host A MUST tear down all subflows immediately. Upon reception with valid Key Data, Host B MUST send a DCCP-Reset on all subflows and MUST tear down all subflows.
+section: 3.2.3
+rfc2119_level: MUST
+topics:
+    - multipath
+    - congestion
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9897
+kind: normative-requirement
+summary: Multipath Options requiring confirmation (MP_ADDADDR, MP_REMOVEADDR, MP_PRIO) MUST be sent in a DCCP datagram with MP_SEQ to allow the receiver to identify whether options are associated with obsolete datasets. The order of confirmed Multipath Options in the MP_CONFIRM list MUST reflect the incoming order at the confirming host, with the most recent suboption listed first.
+section: 3.2.1
+rfc2119_level: MUST
+topics:
+    - multipath
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9893
+kind: normative-requirement
+summary: For each Credit Window Grant Data Item received in message types other than Credit Control Response, the receiving router MUST send a Credit Window Status Data Item reflecting the resultant credit window value. When received in a Destination Up Message, the status MUST be sent in the Destination Up Response; otherwise, a Credit Control Message MUST be sent.
+section: 2.3.3
+rfc2119_level: MUST
+topics:
+    - qos
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9887
+kind: design-rationale
+summary: A new well-known port (300) was chosen instead of an upgrade mechanism from non-TLS connections because it enables easy firewall blocking of unobfuscated traffic by port number, avoids on-path attacks that can interfere with upgrade negotiations, allows passive IDSs to remain unaffected, and prevents accidental sensitive data exposure from misconfiguration.
+section: "5.3"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

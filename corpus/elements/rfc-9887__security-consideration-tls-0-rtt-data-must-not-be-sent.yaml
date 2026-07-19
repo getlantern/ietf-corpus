@@ -1,0 +1,9 @@
+document: rfc-9887
+kind: security-consideration
+summary: TLS 0-RTT data MUST NOT be sent because replay attacks are a risk and TACACS+ data is highly sensitive. Both the 'early_data' extension and any early data transmission are prohibited; servers must abruptly disconnect violating clients.
+section: 5.1.2
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

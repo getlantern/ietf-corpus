@@ -1,0 +1,10 @@
+document: rfc-9899
+kind: design-rationale
+summary: RFC 8519's TCP flags field does not support bitmask operations as provided by BGP Flow Spec. A new 'flags-bitmask' container with an operator type (not, match, any) was added to support efficient TCP flags filtering, including detection of null attacks (all flags unset).
+section: A.5
+topics:
+    - yang
+    - tcp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

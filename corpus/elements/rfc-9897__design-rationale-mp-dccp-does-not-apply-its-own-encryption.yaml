@@ -1,0 +1,10 @@
+document: rfc-9897
+kind: design-rationale
+summary: MP-DCCP does not apply its own encryption mechanisms, making it an efficient choice for traffic that is already encrypted or does not need encryption. This design keeps MP-DCCP lean and consistent with DCCP's core service model, while still providing HMAC-based authentication against on-path attackers for control plane messages.
+section: "1"
+topics:
+    - multipath
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

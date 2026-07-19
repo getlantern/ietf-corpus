@@ -1,0 +1,10 @@
+document: rfc-9899
+kind: security-consideration
+summary: The 'defined-sets' container is tagged with 'nacm:default-deny-write'. Unauthorized write access could allow intruders to modify prefix, port, or protocol sets to permit traffic that should be blocked (enabling DoS or device compromise) or block traffic that should be allowed (also a DoS vector).
+section: "5"
+topics:
+    - yang
+    - security
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

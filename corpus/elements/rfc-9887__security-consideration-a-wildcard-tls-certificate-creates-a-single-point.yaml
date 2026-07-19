@@ -1,0 +1,10 @@
+document: rfc-9887
+kind: security-consideration
+summary: 'A wildcard TLS certificate creates a single point of failure: a compromised private key affects all servers using it. Wildcards MUST be confined to a subdomain dedicated solely to TACACS+ servers and those servers must be protected against traffic redirection attacks.'
+section: 5.1.6
+topics:
+    - tls
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

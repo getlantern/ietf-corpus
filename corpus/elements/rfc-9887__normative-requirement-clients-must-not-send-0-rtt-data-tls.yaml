@@ -1,0 +1,10 @@
+document: rfc-9887
+kind: normative-requirement
+summary: Clients MUST NOT send 0-RTT data; TLS TACACS+ servers MUST abruptly disconnect clients that do. TLS TACACS+ clients and servers MUST NOT include the 'early_data' extension, due to replay attack risk given the sensitivity of TACACS+ data.
+section: 5.1.2
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9901
+kind: normative-requirement
+summary: If any Disclosure was not referenced by a digest value in the Issuer-signed JWT (directly or recursively via other Disclosures), the SD-JWT MUST be rejected. A Holder MUST NOT send a Disclosure that was not included in the issued SD-JWT, and MUST NOT send a Disclosure more than once.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - jose
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9901
+kind: design-rationale
+summary: 'SD-JWT uses a ''salted hashes'' approach: instead of including cleartext claim values in the JWT payload, the Issuer places digests of each selectively disclosable claim. During presentation the Holder reveals selected claim values alongside their salts, and the Verifier recomputes and matches the digests. This allows the Issuer signature to cover all claims at issuance while the Holder controls what is revealed.'
+section: "1"
+topics:
+    - jose
+    - crypto
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

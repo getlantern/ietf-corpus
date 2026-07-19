@@ -1,0 +1,10 @@
+document: rfc-9897
+kind: security-consideration
+summary: MP-DCCP uses HMAC-SHA256 (truncated to 160 bits) to authenticate MP_ADDADDR and MP_REMOVEADDR messages and to authenticate new subflows joining via MP_JOIN, protecting against unauthorized injection of address signals or connection hijacking by on-path attackers. The key material is exchanged in plain text during the initial handshake (Key Type 0), providing protection only against off-path attackers.
+section: "4"
+topics:
+    - security
+    - crypto
+    - multipath
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

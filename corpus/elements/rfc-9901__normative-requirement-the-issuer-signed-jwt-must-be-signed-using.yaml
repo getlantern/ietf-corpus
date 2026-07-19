@@ -1,0 +1,11 @@
+document: rfc-9901
+kind: normative-requirement
+summary: The Issuer-signed JWT MUST be signed using the Issuer's private key and MUST NOT use the `none` algorithm. The Verifier MUST always check the signature; the Issuer-signed JWT MUST be rejected if verification fails.
+section: "4.1"
+rfc2119_level: MUST
+topics:
+    - jose
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

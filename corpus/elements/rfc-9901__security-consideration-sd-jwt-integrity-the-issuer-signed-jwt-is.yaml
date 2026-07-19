@@ -1,0 +1,10 @@
+document: rfc-9901
+kind: security-consideration
+summary: 'SD-JWT integrity: the Issuer-signed JWT is protected by the Issuer''s signature, and Disclosure values are protected by their digests. However, the specific set of Disclosures is not integrity-protected; Disclosures can be added or removed while the SD-JWT remains valid. Key Binding guards the selected Disclosure set via sd_hash.'
+section: "9.10"
+topics:
+    - jose
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

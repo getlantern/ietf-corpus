@@ -1,0 +1,9 @@
+document: rfc-9897
+kind: interoperability-note
+summary: During the MP-DCCP fallback procedure, if DCCP-Request or DCCP-Response messages do not carry the Multipath Capable Feature, the connection SHOULD fall back to regular DCCP; if fallback is not possible, the connection MUST be closed. A subflow attempting to join an existing connection with missing or faulty options MUST be closed rather than falling back.
+section: "3.6"
+topics:
+    - multipath
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

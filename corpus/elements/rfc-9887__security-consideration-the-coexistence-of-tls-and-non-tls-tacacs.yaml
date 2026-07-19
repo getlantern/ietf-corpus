@@ -1,0 +1,9 @@
+document: rfc-9887
+kind: security-consideration
+summary: The coexistence of TLS and non-TLS TACACS+ creates downgrade attack opportunities via connection failure to TLS service or negotiation of weak algorithms. The recommended mitigation is refusing all non-TLS connections at the host level, using separate hosts for TLS and non-TLS services.
+section: "5.3"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

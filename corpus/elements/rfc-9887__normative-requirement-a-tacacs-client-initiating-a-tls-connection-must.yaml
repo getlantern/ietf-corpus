@@ -1,0 +1,10 @@
+document: rfc-9887
+kind: normative-requirement
+summary: A TACACS+ client initiating a TLS connection MUST set the TAC_PLUS_UNENCRYPTED_FLAG bit, and all subsequent packets MUST have this bit set to 1. A TLS TACACS+ server receiving a packet without this flag set MUST return an appropriate error and terminate the session.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
