@@ -1,0 +1,9 @@
+document: rfc-9785
+kind: design-rationale
+summary: When a recovering PE has a higher (or lower) administrative preference than the current DF, the non-revertive procedure has it inherit the current DF's preference with DP=0. This prevents it from winning DF election via the tiebreaker (DP=1 is preferred), avoiding unnecessary traffic disruption upon recovery.
+section: "4.3"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

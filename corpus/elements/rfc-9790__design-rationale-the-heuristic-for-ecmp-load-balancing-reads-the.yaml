@@ -1,0 +1,8 @@
+document: rfc-9790
+kind: design-rationale
+summary: 'The heuristic for ECMP load balancing reads the PFN: 0x4 is treated as IPv4, 0x6 as IPv6, and anything else falls back to label-stack-based balancing. However, this fails badly for non-IP payloads such as Ethernet frames, where the first nibble of the destination MAC OUI can be 0x4 or 0x6, causing the frame to be misidentified as IP and resulting in unpredictable load balancing.'
+section: 2.1.1.1
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

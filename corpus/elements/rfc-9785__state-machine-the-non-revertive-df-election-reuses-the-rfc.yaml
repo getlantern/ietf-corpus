@@ -1,0 +1,9 @@
+document: rfc-9785
+kind: state-machine
+summary: The non-revertive DF election reuses the RFC 8584 Finite State Machine INIT→DF_WAIT states. When a PE recovers, it starts a boot-timer (node recovery) or hold-timer (port/EVC recovery) in the INIT state to gather remote Ethernet Segment routes before running DF election. It then selects reference PEs and may advertise a modified operational preference to avoid preemption.
+section: "4.3"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

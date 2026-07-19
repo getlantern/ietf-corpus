@@ -1,0 +1,9 @@
+document: rfc-9788
+kind: design-rationale
+summary: The HCP is deliberately not represented on the wire; instead, the rendering MUA infers the sender's confidentiality choices by comparing protected Inner Header Fields against HP-Outer fields. This avoids adding a new negotiation round-trip while still giving the receiver cryptographically verifiable information about which fields the composer intended to hide.
+section: "3"
+topics:
+    - email
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

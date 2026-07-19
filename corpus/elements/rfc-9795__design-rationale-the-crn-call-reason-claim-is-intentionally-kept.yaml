@@ -1,0 +1,9 @@
+document: rfc-9795
+kind: design-rationale
+summary: 'The "crn" call-reason claim is intentionally kept separate from the "rcd" claim because call reason is per-call data that may change frequently, whereas "rcd" contains stable caller-identity information. Future extensibility should maintain this grouping: jCard data refers to the caller as an entity; other claims like "crn" describe the specific call.'
+section: "3"
+topics:
+    - realtime
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

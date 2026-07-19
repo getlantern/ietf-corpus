@@ -1,0 +1,11 @@
+document: rfc-9795
+kind: normative-requirement
+summary: When JWT Claim Constraints are used together for both "rcd" and "rcdi", the certificate MUST include a "mustInclude" for the "rcd" claim and a "mustInclude" plus "permittedValues" equal to the "rcdi" claim value string. The "permittedValues" for "rcdi" may contain multiple entries to support multiple authorized RCD sets.
+section: "6.3"
+rfc2119_level: MUST
+topics:
+    - security
+    - pkix
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

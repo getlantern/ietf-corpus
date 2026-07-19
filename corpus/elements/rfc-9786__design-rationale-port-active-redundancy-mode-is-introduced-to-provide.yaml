@@ -1,0 +1,9 @@
+document: rfc-9786
+kind: design-rationale
+summary: Port-Active redundancy mode is introduced to provide deterministic traffic forwarding through a specific interface rather than statistical per-flow load balancing across multiple PEs. This determinism is essential for certain QoS features and ensures fast convergence during failure and recovery, which existing All-Active and Single-Active modes do not provide at the interface level.
+section: "1"
+topics:
+    - routing
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9786
+kind: design-rationale
+summary: Port-Active mode eliminates the need for ICCP and LDP, which are required by legacy MC-LAG solutions. This makes the solution agnostic to underlay technology (MPLS, VXLAN, SRv6) and enables efficient 1+N redundancy using BGP Route Reflectors, whereas ICCP requires a full mesh of LDP sessions.
+section: "2.1"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

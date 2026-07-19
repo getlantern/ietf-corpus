@@ -1,0 +1,10 @@
+document: rfc-9788
+kind: security-consideration
+summary: Encryption may be added to a message in transit after signing. A rendering MUA MUST NOT infer that the composer intended confidentiality merely because an encrypting layer is present; it must also confirm the hp='cipher' parameter was set by the composer in the Cryptographic Payload.
+section: "10.2"
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

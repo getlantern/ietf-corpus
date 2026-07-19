@@ -1,0 +1,10 @@
+document: rfc-9784
+kind: normative-requirement
+summary: 'Upon port failure in PBB-EVPN: if the physical port MAC is used as B-MAC SA, the PE MUST use EVPN MAC route withdrawal to signal the flush; if the PE''s shared MAC is used as B-MAC SA, the PE MUST re-advertise the MAC route with the MAC Mobility extended community. The first method is recommended as it minimizes flushing scope.'
+section: "5.4"
+rfc2119_level: MUST
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

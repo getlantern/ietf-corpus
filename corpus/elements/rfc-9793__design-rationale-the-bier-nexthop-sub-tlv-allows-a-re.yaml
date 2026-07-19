@@ -1,0 +1,10 @@
+document: rfc-9793
+kind: design-rationale
+summary: The BIER Nexthop sub-TLV allows a re-advertising BFR to insert itself as the next hop for BIER traffic, enabling BIER traffic to flow through the BFR rather than requiring a tunnel all the way to the BFER. Without the sub-TLV, the receiving BFR must tunnel BIER traffic to the BIER prefix directly.
+section: "5"
+topics:
+    - bgp
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

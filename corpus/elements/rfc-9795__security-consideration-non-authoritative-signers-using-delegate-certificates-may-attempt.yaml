@@ -1,0 +1,10 @@
+document: rfc-9795
+kind: security-consideration
+summary: Non-authoritative signers using delegate certificates may attempt to include unauthorized PASSporT claims not vetted by the certificate issuer. JWT Claim Constraints (RFC 9118) should be used to explicitly exclude claims beyond those authorized, preventing injection of unvetted RCD into signed PASSporTs.
+section: "16.1"
+topics:
+    - security
+    - pkix
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

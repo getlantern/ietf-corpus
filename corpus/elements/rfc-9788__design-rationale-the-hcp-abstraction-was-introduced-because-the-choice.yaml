@@ -1,0 +1,9 @@
+document: rfc-9788
+kind: design-rationale
+summary: The HCP abstraction was introduced because the choice of which Header Fields to make confidential in encrypted messages is a policy decision with real deliverability tradeoffs. Existing mail infrastructure may reject or delay messages with all Header Fields removed; hcp_baseline was chosen as default because it hides the Subject (the most sensitive field) while preserving routing-relevant fields.
+section: "3"
+topics:
+    - email
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

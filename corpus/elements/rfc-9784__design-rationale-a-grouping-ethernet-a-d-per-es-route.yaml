@@ -1,0 +1,10 @@
+document: rfc-9784
+kind: design-rationale
+summary: A Grouping Ethernet A-D per ES route (EVPN) and Grouping B-MAC route (PBB-EVPN) were introduced because a single ENNI can aggregate thousands of vESes; without grouping, port failure would require one BGP withdrawal per vES, causing significant DF election and convergence delay. A single Grouping route withdrawal allows all impacted vESes to be resolved in a single BGP message.
+section: "5.5"
+topics:
+    - mpls
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

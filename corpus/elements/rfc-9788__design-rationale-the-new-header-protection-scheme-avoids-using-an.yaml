@@ -1,0 +1,8 @@
+document: rfc-9788
+kind: design-rationale
+summary: The new Header Protection scheme avoids using an intervening message/rfc822 wrapper (as RFC8551HP did) because that structure caused pervasive Legacy MUA failures. Instead, protected Header Fields are copied directly into the Cryptographic Payload's Header Section, which Legacy MUAs can ignore without breaking message rendering.
+section: "1.1"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

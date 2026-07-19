@@ -1,0 +1,11 @@
+document: rfc-9788
+kind: normative-requirement
+summary: A composing implementation MUST NOT produce a Cryptographic Payload with hp='cipher' for an unencrypted message. Conversely, if composing an encrypted message with Header Protection, it MUST emit an hp='cipher' parameter regardless of which Header Fields were made confidential.
+section: 2.1.1
+rfc2119_level: MUST NOT
+topics:
+    - email
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

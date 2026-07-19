@@ -1,0 +1,9 @@
+document: rfc-9788
+kind: security-consideration
+summary: When a rendering MUA depends on its MTA to authenticate the outer From address but renders the inner (protected) From address that differs from the outer one without a valid bound signature, an attacker can substitute the sender identity. MUAs SHOULD warn users and render the outer From address under these conditions.
+section: "10.1"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

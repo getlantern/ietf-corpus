@@ -1,0 +1,10 @@
+document: rfc-9793
+kind: interoperability-note
+summary: A non-BFR BGP speaker that does not understand BIER will re-advertise the route with the BIER attribute unchanged (since it is optional transitive), without performing any BIER-specific action. The receiving BFR will then tunnel BIER traffic to the BIER prefix, bypassing the non-BFR speaker.
+section: "5"
+topics:
+    - bgp
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9784
+kind: design-rationale
+summary: 'Standard PBB-EVPN C-MAC flushing via MAC Mobility on a per-port B-MAC is too coarse for vES: a single physical port aggregates thousands of EVCs, so port-level flushing invalidates C-MACs across all EVCs when only one EVC failed. RFC 9541''s per-I-SID B-MAC/I-SID route was chosen to limit flushing blast radius to the single impacted service instance.'
+section: "5.2"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

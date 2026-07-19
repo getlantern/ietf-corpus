@@ -1,0 +1,9 @@
+document: rfc-9790
+kind: design-rationale
+summary: A registry is needed because the MPLS Network Actions (MNA) framework (RFC 9789) may place Post-Stack Data with values in the PFN position, potentially conflicting with other PSH uses. The ambiguity of PFN value 0x0 (used by both pseudowire control words and DetNet control words with different formats) further illustrates why formal tracking is required.
+section: "2.3"
+topics:
+    - mpls
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

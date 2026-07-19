@@ -1,0 +1,11 @@
+document: rfc-9795
+kind: normative-requirement
+summary: During "rcdi" integrity verification, any digest mismatch MUST be treated as a verification failure for the referenced content. HTTP/HTTPS errors when fetching URI-referenced content MUST cause that content to be considered not verified, though this SHOULD NOT affect verification of claims embedded directly in the PASSporT.
+section: "8.2"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

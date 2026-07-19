@@ -1,0 +1,10 @@
+document: rfc-9784
+kind: protocol-element
+summary: 'Fast convergence upon ENNI failure (optional) uses Grouping routes: the failing PE withdraws its Grouping Ethernet A-D per ES route (EVPN) or Grouping B-MAC route (PBB-EVPN) before individual vES route withdrawals. Receiving multihoming PEs use the color-to-vES list to initiate DF election for all affected vESes; individual vES withdrawals subsequently clean up BGP tables but do not re-trigger DF election if the Grouping route withdrawal was already received.'
+section: "5.5"
+topics:
+    - mpls
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

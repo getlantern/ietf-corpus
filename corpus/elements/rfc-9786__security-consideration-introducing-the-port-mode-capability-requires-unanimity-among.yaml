@@ -1,0 +1,10 @@
+document: rfc-9786
+kind: security-consideration
+summary: Introducing the Port Mode capability requires unanimity among PEs in a redundancy group. Without consensus, the DF election falls back to RFC 8584/RFC 7432 defaults. An attacker who modifies the configuration of one PE within an ES can exploit this fallback to force all PEs to revert to the default algorithm, potentially causing unfair load balancing, service disruption, traffic loss, or duplicate traffic.
+section: "7"
+topics:
+    - security
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

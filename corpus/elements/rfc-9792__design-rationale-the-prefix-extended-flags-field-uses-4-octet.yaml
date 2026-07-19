@@ -1,0 +1,8 @@
+document: rfc-9792
+kind: design-rationale
+summary: 'The Prefix Extended Flags field uses 4-octet blocks with a continuous bit-numbering scheme: bit 0 is the MSB of the first block, and if the field exceeds 4 octets, numbering picks up where the prior block ended (e.g., bit 32 is the MSB of the 5th octet). This design allows extensible growth without redefining the flag space.'
+section: "2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

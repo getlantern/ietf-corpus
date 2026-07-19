@@ -1,0 +1,11 @@
+document: rfc-9793
+kind: normative-requirement
+summary: When re-advertising a BIER prefix, a BFR SHOULD set/update the BIER Nexthop sub-TLV to its own BIER prefix; if it does so, it MUST replace the encapsulation sub-TLV with its own. If it does not update the Nexthop, it MUST NOT update the encapsulation sub-TLV.
+section: "4"
+rfc2119_level: SHOULD
+topics:
+    - bgp
+    - multicast
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

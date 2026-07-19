@@ -1,0 +1,10 @@
+document: rfc-9795
+kind: design-rationale
+summary: The "rcdi" digest mechanism is inspired by W3C Subresource Integrity, applying the same model of cryptographic hashes over URI-referenced external content to the PASSporT/STIR context. Digest input for JSON values uses deterministic JSON serialization per RFC 8225 Section 9; for URI-referenced binary content, the HTTP response body bytes are used directly.
+section: "4"
+topics:
+    - security
+    - crypto
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,12 @@
+document: rfc-9793
+kind: normative-requirement
+summary: A boundary router of the AD that supports the BIER attribute MUST support a policy (based on EBGP session/group) controlling whether the attribute is allowed outbound; by default it is NOT allowed. If not allowed, the BIER attribute MUST NOT be sent to EBGP peers, and any received BIER attribute MUST be quietly ignored and not passed to other BGP peers.
+section: "7"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - multicast
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

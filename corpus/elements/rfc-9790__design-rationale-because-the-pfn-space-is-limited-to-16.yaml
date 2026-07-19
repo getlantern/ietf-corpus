@@ -1,0 +1,8 @@
+document: rfc-9790
+kind: design-rationale
+summary: Because the PFN space is limited to 16 values and the PFN cannot be interpreted correctly without control/management plane context from the preceding label stack, reuse of PFN values across different protocols is explicitly encouraged when possible. The PFN value 0x0, for instance, is already shared by PW, DetNet, and NSH.
+section: "1"
+topics:
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
