@@ -1,0 +1,8 @@
+document: rfc-9859
+kind: design-rationale
+summary: The endpoint discovery mechanism is parameterized by the child name so that the lookup process is ignorant of parent-side relationships (e.g., whether a registrar is involved). The parent publishes notification endpoints in a delegation-specific way under _dsync, allowing senders to locate the correct endpoint with a single lookup without needing to know the internal structure of the parent operation.
+section: "1.1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

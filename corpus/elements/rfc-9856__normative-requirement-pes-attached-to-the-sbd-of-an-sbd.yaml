@@ -1,0 +1,10 @@
+document: rfc-9856
+kind: normative-requirement
+summary: PEs attached to the SBD of an SBD-RT (but not to the source BD) MUST import EVPN A-D per ES/EVI routes and use them for redundant G-source mass withdrawal. Upon importing A-D per ES routes for different S-ESes, a PE MUST select a primary S-ES and add an RPF check that discards packets not carrying the primary S-ESI label.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

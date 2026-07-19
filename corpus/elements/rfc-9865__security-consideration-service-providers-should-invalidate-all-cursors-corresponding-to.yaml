@@ -1,0 +1,8 @@
+document: rfc-9865
+kind: security-consideration
+summary: Service providers SHOULD invalidate all cursors corresponding to an actor immediately following a permission change, to prevent post-permission-change queries using old cursors from succeeding. Alternatively, providers may retain cursors but must update result set metadata to reflect new permissions.
+section: "5.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

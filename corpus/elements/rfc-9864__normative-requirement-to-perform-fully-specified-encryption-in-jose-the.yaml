@@ -1,0 +1,10 @@
+document: rfc-9864
+kind: normative-requirement
+summary: To perform fully-specified encryption in JOSE, the 'alg' value MUST specify all parameters for key establishment (or derive some from the accompanying 'enc' value), and the 'enc' value MUST specify all parameters for symmetric encryption. Deriving parameters from 'enc' (e.g., keydatalen for ECDH-ES) does not make the algorithm polymorphic.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - jose
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

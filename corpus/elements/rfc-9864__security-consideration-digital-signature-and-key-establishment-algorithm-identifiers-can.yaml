@@ -1,0 +1,10 @@
+document: rfc-9864
+kind: security-consideration
+summary: Digital signature and key establishment algorithm identifiers can contribute to an 'attack signature' used by rule-based detection systems. Some software may vary the algorithm identifier to evade such detection. Detection systems should note that polymorphic algorithms are harder to enumerate in rules, since each curve variant must be accounted for separately.
+section: "7"
+topics:
+    - security
+    - jose
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

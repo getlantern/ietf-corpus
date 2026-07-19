@@ -1,0 +1,8 @@
+document: rfc-9865
+kind: design-rationale
+summary: Translating from an underlying cursor-based pagination pattern to the index-based pagination defined in RFC 7644 requires the SCIM service provider to fully iterate the underlying cursor, store results, and serve indexed pages from stored results. This pagination translation increases complexity and memory requirements, impeding SCIM adoption for applications where cursor-based pagination is already established.
+section: "1"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

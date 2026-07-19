@@ -1,0 +1,9 @@
+document: rfc-9856
+kind: design-rationale
+summary: The Hot Standby solution triggers S-PMSI A-D route advertisement based on SFG configuration rather than on traffic reception (unlike Warm Standby). This ensures downstream PEs learn RPF check parameters before traffic arrives, enabling immediate fast failover without waiting for route convergence after the first packet.
+section: "5.1"
+topics:
+    - routing
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,8 @@
+document: rfc-9859
+kind: protocol-element
+summary: 'Upon receipt of a valid NOTIFY, the parent may: (1) acknowledge and schedule an immediate check of CDS/CDNSKEY/CSYNC RRsets (and optionally reduce subsequent scanning frequency), or (2) acknowledge the notification without acting on it (e.g., due to rate limiting). Recipients SHOULD always send a NOTIFY response to prevent retries even when ignoring the notification.'
+section: "4.3"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

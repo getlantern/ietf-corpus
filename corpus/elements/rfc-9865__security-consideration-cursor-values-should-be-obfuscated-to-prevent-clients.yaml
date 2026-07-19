@@ -1,0 +1,9 @@
+document: rfc-9865
+kind: security-consideration
+summary: Cursor values should be obfuscated to prevent clients from interpreting or forging cursors. Service providers should be able to detect forged cursor values and return an invalidCursor error. Error responses for out-of-scope or non-existent pages must use identical messages to avoid leaking information about underlying data or authorization failures.
+section: "5.2"
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

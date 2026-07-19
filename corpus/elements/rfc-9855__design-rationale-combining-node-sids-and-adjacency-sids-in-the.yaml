@@ -1,0 +1,8 @@
+document: rfc-9855
+kind: design-rationale
+summary: Combining Node-SIDs and Adjacency SIDs in the RL is preferred over Adjacency-SIDs only, because pure Adjacency-SID lists can exceed Maximum SID Depth (MSD) hardware limits. Node-SIDs also maximize ECMP over the backup path. Each implementation may independently optimize the segment list.
+section: "3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

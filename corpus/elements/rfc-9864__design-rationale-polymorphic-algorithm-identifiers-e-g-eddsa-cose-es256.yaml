@@ -1,0 +1,10 @@
+document: rfc-9864
+kind: design-rationale
+summary: Polymorphic algorithm identifiers (e.g., EdDSA, COSE ES256) require information beyond the algorithm identifier—such as the key's curve—to determine the cryptographic operations. This breaks protocol negotiation mechanisms (OAuth AS Metadata, OpenID Connect Discovery, WebAuthn/CTAP) that negotiate solely by algorithm identifier, causing real interoperability problems in practice.
+section: "1"
+topics:
+    - jose
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

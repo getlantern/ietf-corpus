@@ -1,0 +1,9 @@
+document: rfc-9864
+kind: design-rationale
+summary: WebAuthn works around COSE EdDSA polymorphism by redefining algorithm -8 as 'EdDSA where crv is 6 (Ed25519)', effectively eliminating Ed448 support. This ad-hoc fix illustrates the broader problem that prompted this specification to define fully-specified algorithm identifiers ('cipher suite' approach) as replacements for polymorphic ('à la carte') identifiers.
+section: "1"
+topics:
+    - jose
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,8 @@
+document: rfc-9865
+kind: security-consideration
+summary: 'Retaining substantial data or metadata per cursor creates a Denial-of-Service vector: numerous initial queries allocating cursors can exhaust service-provider resources. Mitigations include requiring authentication for large result sets, rate limiting per RFC 6585, administrator-configurable cursor count ceilings, and resource-efficient cursor invalidation mechanisms.'
+section: "5.3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

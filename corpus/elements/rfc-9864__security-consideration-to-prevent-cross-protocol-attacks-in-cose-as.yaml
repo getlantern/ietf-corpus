@@ -1,0 +1,10 @@
+document: rfc-9864
+kind: security-consideration
+summary: To prevent cross-protocol attacks in COSE (as described in RFC 9459), implementations should either allow only authenticated content encryption (AEAD) algorithms, or bind the potentially unauthenticated content encryption algorithm to the key protection algorithm so different content encryption algorithms produce different content encryption keys.
+section: "7"
+topics:
+    - security
+    - jose
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

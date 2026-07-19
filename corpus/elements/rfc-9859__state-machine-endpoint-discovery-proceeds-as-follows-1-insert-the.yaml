@@ -1,0 +1,8 @@
+document: rfc-9859
+kind: state-machine
+summary: 'Endpoint discovery proceeds as follows: (1) insert the _dsync label after the first label of the delegation owner name and query DSYNC; (2) on positive answer, return it; (3) on negative response, if the parent is more than one label away from _dsync, reconstruct the name placing _dsync just before the parent zone labels and retry; (4) otherwise strip labels in front of _dsync (e.g., _dsync.example) and retry; (5) otherwise return null.'
+section: "4.1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

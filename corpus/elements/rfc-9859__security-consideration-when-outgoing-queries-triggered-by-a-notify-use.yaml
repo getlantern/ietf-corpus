@@ -1,0 +1,9 @@
+document: rfc-9859
+kind: security-consideration
+summary: When outgoing queries triggered by a NOTIFY use encrypted transport, amplification is possible in both bandwidth and computation. The usual principle of bounding the work applies; rate limiting (MUST) is the primary mitigation. The one-child-per-NOTIFY requirement also limits the number of queries triggered per notification.
+section: "5"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
