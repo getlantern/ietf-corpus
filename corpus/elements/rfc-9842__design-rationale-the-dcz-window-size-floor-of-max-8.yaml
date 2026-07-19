@@ -1,0 +1,8 @@
+document: rfc-9842
+kind: design-rationale
+summary: The DCZ window size floor of max(8 MB, 1.25× dictionary size) is chosen so that the full dictionary remains available during compression and decompression for resources that have grown by up to 25% between releases, while still giving clients control over their maximum memory allocation for a given response.
+section: "5"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

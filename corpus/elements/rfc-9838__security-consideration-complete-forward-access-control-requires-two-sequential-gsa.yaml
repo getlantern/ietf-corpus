@@ -1,0 +1,11 @@
+document: rfc-9838
+kind: security-consideration
+summary: 'Complete forward access control requires two sequential GSA_REKEY messages: the first changes the KEK (excluded members can still decrypt this message but not future ones), and the second delivers changed group policy under the new KEK, making policy changes invisible to excluded members. A single rekey cannot atomically achieve both.'
+section: 3.2.1
+topics:
+    - ipsec
+    - security
+    - multicast
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

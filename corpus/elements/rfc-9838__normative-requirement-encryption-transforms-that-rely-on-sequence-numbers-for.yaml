@@ -1,0 +1,12 @@
+document: rfc-9838
+kind: normative-requirement
+summary: Encryption transforms that rely on Sequence Numbers for IV construction (implicit IV transforms, per RFC 8750) MUST NOT be used for any G-IKEv2 SA — unicast or multicast — unless sequence number uniqueness is guaranteed. Such transforms require anti-replay service, which is not reliably achievable in multicast groups with multiple senders.
+section: "2.7"
+rfc2119_level: MUST NOT
+topics:
+    - ipsec
+    - crypto
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

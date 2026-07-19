@@ -1,0 +1,10 @@
+document: rfc-9838
+kind: design-rationale
+summary: All key management complexity is confined to the GCKS; GM behavior is identical regardless of whether a simple key delivery or a hierarchy such as LKH is used. Keys are always transmitted as wrapped ciphertext with Key ID and KWK ID fields, so GMs can use a uniform decryption procedure without knowledge of the specific key management algorithm employed.
+section: "3.3"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

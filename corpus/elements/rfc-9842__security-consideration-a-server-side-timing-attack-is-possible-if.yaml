@@ -1,0 +1,9 @@
+document: rfc-9842
+kind: security-consideration
+summary: A server-side timing attack is possible if an attacker can control parts of the dictionary or content across multiple requests with varying content, using response size or processing time to infer secrets. Servers should mitigate by preventing multiple dictionaries per content, disabling compression when content comes from uncontrolled sources, and checking 'Sec-Fetch-Site'/'Sec-Fetch-Mode' headers to detect cross-origin requests.
+section: 9.3.3
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

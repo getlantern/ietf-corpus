@@ -1,0 +1,10 @@
+document: rfc-9838
+kind: design-rationale
+summary: The SAg payload is optional but RECOMMENDED so that the GCKS can select group policy compatible with all members. Unlike the IKEv2 SA payload, SAg proposals are not negotiated; the GM merely advertises constraints. The AEAD/non-AEAD mixing restriction from RFC 7296 Section 3.3 does not apply to SAg, allowing a GM to freely list all supported transforms.
+section: 2.3.3
+topics:
+    - ipsec
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

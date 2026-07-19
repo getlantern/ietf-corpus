@@ -1,0 +1,11 @@
+document: rfc-9838
+kind: normative-requirement
+summary: The GSA_INITIAL_MESSAGE_ID attribute value MUST be checked by a GM against previously received Message IDs for that group; if less than the previously received number, it MUST be ignored as stale. The first GSA_REKEY message MUST have a Message ID greater than or equal to this attribute, and subsequent messages MUST have strictly increasing IDs, providing replay protection.
+section: 2.3.3
+rfc2119_level: MUST
+topics:
+    - ipsec
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

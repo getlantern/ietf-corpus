@@ -1,0 +1,8 @@
+document: rfc-9842
+kind: design-rationale
+summary: The DCZ header is designed as a Zstandard skippable frame (magic 0x184D2A5E, 32-byte payload length) so that existing Zstandard decoders that do not understand the dictionary extension can parse and skip it without error, ensuring backward compatibility with the deployed Zstandard ecosystem.
+section: "5"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

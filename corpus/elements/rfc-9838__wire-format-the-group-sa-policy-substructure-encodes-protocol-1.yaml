@@ -1,0 +1,9 @@
+document: rfc-9838
+kind: wire-format
+summary: 'The Group SA Policy Substructure encodes: Protocol (1 octet: 6=GIKE_UPDATE, 2=AH, 3=ESP), SPI Size (1 octet: 16 for GIKE_UPDATE, 4 for AH/ESP), Length (2 octets, unsigned), SPI (variable), Source Traffic Selector (variable), Destination Traffic Selector (variable), Group SA Transforms (variable), and Group SA Attributes (variable). For GIKE_UPDATE, the 16-octet SPI maps to the two 8-octet IKE header SPI fields in GSA_REKEY messages.'
+section: 4.4.2
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

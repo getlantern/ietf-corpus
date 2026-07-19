@@ -1,0 +1,8 @@
+document: rfc-9842
+kind: interoperability-note
+summary: The match URL Pattern operates on the percent-encoded version of the URL path as per RFC 3986, meaning non-ASCII characters must be percent-encoded in the pattern (e.g., 'http://www.example.com/düsseldorf' is matched as '/d%C3%BCsseldorf'). Regular expressions are explicitly disallowed in match patterns.
+section: 2.1.1
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9838
+kind: security-consideration
+summary: The GSA_REKEY authentication using digital signatures covers both the IKE header and the plaintext inner payloads before encryption, preventing modification of group policy in transit. The GCKS distributes an explicit AUTH_KEY to GMs during registration for verifying subsequent rekey messages; the key is rotated in future rekey messages before expiry.
+section: "8.2"
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

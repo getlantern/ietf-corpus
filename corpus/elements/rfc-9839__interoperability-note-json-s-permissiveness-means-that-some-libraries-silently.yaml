@@ -1,0 +1,9 @@
+document: rfc-9839
+kind: interoperability-note
+summary: JSON's permissiveness means that some libraries silently parse strings containing surrogates and generate ill-formed UTF-8 output. The example field value containing NUL, a C1 control, an unpaired surrogate, and a noncharacter is a conforming JSON text yet cannot be serialized into well-formed UTF-8.
+section: "3"
+topics:
+    - json
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

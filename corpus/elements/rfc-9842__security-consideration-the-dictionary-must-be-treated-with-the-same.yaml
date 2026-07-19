@@ -1,0 +1,10 @@
+document: rfc-9842
+kind: security-consideration
+summary: The dictionary must be treated with the same security precautions as the response content, because a change to the dictionary can change the decompressed content. Dictionary integrity is validated with SHA-256; the same origin constraint means collision resistance is not strictly necessary but the header can be extended to specify a different algorithm if SHA-256 is weakened.
+section: "9.1"
+topics:
+    - http
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,11 @@
+document: rfc-9838
+kind: protocol-element
+summary: The Sender-ID mechanism assigns each group sender a unique portion of the IV space for counter-based cipher modes (AES-CTR, AES-GCM, AES-CCM, ChaCha20-Poly1305, AES-GMAC). The GCKS maintains a sequential counter and allocates one or more Sender-ID values per registering sender via a GROUP_SENDER Notify payload. Sender-IDs occupy the most-significant bits of the IV as configured by the GWP_SENDER_ID_BITS attribute.
+section: "2.5"
+topics:
+    - ipsec
+    - crypto
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

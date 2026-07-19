@@ -1,0 +1,10 @@
+document: rfc-9838
+kind: security-consideration
+summary: Replay protection for multicast Data-Security SAs is not always achievable. When multiple group senders share an SA, each independently increments the ESP/AH sequence number, making replay detection impossible for receivers. The GCKS should create separate SAs per sender when replay protection is required and can limit the sender count via policy.
+section: "2.6"
+topics:
+    - ipsec
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

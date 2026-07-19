@@ -1,0 +1,11 @@
+document: rfc-9838
+kind: normative-requirement
+summary: For forward access control, a new TEK policy and associated keys MUST NOT be included in the rekey message that changes group membership (changes the KEK). A subsequent rekey message protected under the new KEK must deliver new TEK policies, ensuring excluded members cannot access new data-plane keys.
+section: 3.2.1
+rfc2119_level: MUST NOT
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

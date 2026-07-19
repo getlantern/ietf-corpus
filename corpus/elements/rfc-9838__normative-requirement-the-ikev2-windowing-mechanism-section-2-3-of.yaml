@@ -1,0 +1,11 @@
+document: rfc-9838
+kind: normative-requirement
+summary: The IKEv2 windowing mechanism (Section 2.3 of RFC 7296) MUST NOT be used for GSA_REKEY messages, since they are sent to multiple GMs without expecting responses. Retransmitted GSA_REKEY copies MUST be bitwise identical and sent within a short time interval to avoid skewing SA lifetime calculations.
+section: 2.4.1
+rfc2119_level: MUST NOT
+topics:
+    - ipsec
+    - security
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9838
+kind: wire-format
+summary: 'GSA_REKEY authentication signs two chunks: Chunk A (adjusted IKE header concatenated with the Encrypted Payload header, with Length fields reduced to exclude IV, padding, and ICV) and Chunk P (inner plaintext payloads of the Encrypted Payload). The AUTH payload''s Authentication Data field is zeroed during signing, but ASN.1 Length and AlgorithmIdentifier fields must be correctly filled. DataToAuthenticate = A | P.'
+section: 2.4.1.1
+topics:
+    - ipsec
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

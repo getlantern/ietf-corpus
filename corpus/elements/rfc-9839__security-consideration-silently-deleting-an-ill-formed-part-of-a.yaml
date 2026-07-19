@@ -1,0 +1,9 @@
+document: rfc-9839
+kind: security-consideration
+summary: Silently deleting an ill-formed part of a string is a known security risk. The Unicode Standard (Section 3.2) recommends signaling an error or replacing problematic code points with U+FFFD (REPLACEMENT CHARACTER) rather than silently discarding them.
+section: "3"
+topics:
+    - security
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

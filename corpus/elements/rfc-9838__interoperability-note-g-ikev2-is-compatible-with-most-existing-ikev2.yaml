@@ -1,0 +1,9 @@
+document: rfc-9838
+kind: interoperability-note
+summary: G-IKEv2 is compatible with most existing IKEv2 extensions, including IKE_INTERMEDIATE exchanges (RFC 9242) for use during registration, IKE fragmentation (RFC 7383) for large GSA_REKEY messages, TCP encapsulation (RFC 9329) for the unicast registration SA, and post-quantum preshared key mixing (RFC 8784). It is NOT RECOMMENDED to create unicast Child SAs over the registration IKE SA, as authentication requirements may differ.
+section: "2.1"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

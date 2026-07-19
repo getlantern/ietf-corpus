@@ -1,0 +1,8 @@
+document: rfc-9842
+kind: wire-format
+summary: 'Dictionary-Compressed Zstandard (''dcz'') uses a 40-byte fixed header: Magic_Number is 8 bytes (0x5e, 0x2a, 0x4d, 0x18, 0x20, 0x00, 0x00, 0x00) followed by SHA_256_Hash of 32 bytes. The header is a Zstandard skippable frame (little-endian 0x184D2A5E, length 0x00000020) compatible with existing Zstandard decoders.'
+section: "5"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

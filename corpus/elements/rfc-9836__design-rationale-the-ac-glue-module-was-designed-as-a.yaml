@@ -1,0 +1,10 @@
+document: rfc-9836
+kind: design-rationale
+summary: The AC Glue module was designed as a separate augmentation module rather than modifying the LxSM/LxNM directly, enabling operators to separate AC provisioning from VPN service provisioning. A single AC may be reused across multiple connectivity services (L2VPN, L3VPN, Network Slice), so centralizing AC management via ACaaS avoids redundant information across service models.
+section: "4.2"
+topics:
+    - yang
+    - netconf
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

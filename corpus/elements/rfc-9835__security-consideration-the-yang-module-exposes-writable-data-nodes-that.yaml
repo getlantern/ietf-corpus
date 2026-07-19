@@ -1,0 +1,10 @@
+document: rfc-9835
+kind: security-consideration
+summary: The YANG module exposes writable data nodes that control network-level AC provisioning; unauthorized modification could disrupt connectivity or redirect traffic. The model relies on NETCONF access control (RFC 8341/NACM) to restrict write access. Read-only operational nodes (oper-status, child-ref, last-change) are protected from configuration writes by their 'config false' designation.
+section: "7"
+topics:
+    - security
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
