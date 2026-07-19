@@ -1,0 +1,10 @@
+document: rfc-9925
+kind: security-consideration
+summary: Self-signed end-entity certificates cause the subject's key to be used both for the X.509 self-signature and for the end-entity protocol, creating a cross-protocol attack surface when the two uses collide. Unsigned certificates remove the self-signature, eliminating this key reuse.
+section: "5"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

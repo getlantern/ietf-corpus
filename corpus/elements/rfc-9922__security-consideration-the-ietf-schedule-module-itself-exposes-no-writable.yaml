@@ -1,0 +1,10 @@
+document: rfc-9922
+kind: security-consideration
+summary: The ietf-schedule module itself exposes no writable data nodes, read-only state nodes, or RPCs, so it introduces no direct security issues. However, modules reusing its groupings must identify their own security considerations, particularly regarding time synchronization accuracy, recurring events masking abnormal behavior, absent audit logs, and high-frequency schedules as a denial-of-service vector.
+section: "7"
+topics:
+    - yang
+    - netconf
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

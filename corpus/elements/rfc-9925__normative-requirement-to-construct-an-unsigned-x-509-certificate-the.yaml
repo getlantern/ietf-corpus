@@ -1,0 +1,10 @@
+document: rfc-9925
+kind: normative-requirement
+summary: To construct an unsigned X.509 certificate, the sender MUST set both the Certificate's signatureAlgorithm and TBSCertificate's signature fields to an AlgorithmIdentifier with algorithm id-alg-unsigned. Parameters MUST be omitted and signatureValue MUST be a BIT STRING of length zero.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

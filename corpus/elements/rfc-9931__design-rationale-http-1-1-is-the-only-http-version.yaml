@@ -1,0 +1,9 @@
+document: rfc-9931
+kind: design-rationale
+summary: HTTP/1.1 is the only HTTP version that allows clients to change the protocol mid-connection. HTTP/2 and HTTP/3 use explicit stream IDs for multiplexing, making them structurally immune to the Request Smuggling attack described in this document. Migrating to HTTP/2 or HTTP/3 is the recommended long-term solution.
+section: "3"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

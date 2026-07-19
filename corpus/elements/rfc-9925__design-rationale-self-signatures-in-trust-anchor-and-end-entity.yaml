@@ -1,0 +1,10 @@
+document: rfc-9925
+kind: design-rationale
+summary: Self-signatures in trust anchor and end-entity certificates have no security value and are not verified by receivers; they are mere syntactic placeholders. Post-quantum algorithms make such signatures large, KEM keys cannot produce X.509 signatures at all, and self-signing end-entity keys risks cross-protocol attacks. Unsigned certificates eliminate these drawbacks by replacing the placeholder signature with a zero-length BIT STRING.
+section: "1"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

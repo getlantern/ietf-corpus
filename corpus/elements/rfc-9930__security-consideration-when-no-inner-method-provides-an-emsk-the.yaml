@@ -1,0 +1,9 @@
+document: rfc-9930
+kind: security-consideration
+summary: When no Inner Method provides an EMSK, the Crypto-Binding TLV offers little protection because it cannot tie the inner EMSK to the TLS session via the TLS-PRF. The TEAP session is then vulnerable to on-path active attacks; implementations SHOULD adopt mitigations from RFC 7029, Section 3.2, and implement the Inner Method ordering of Section 6.1.
+section: "8.5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

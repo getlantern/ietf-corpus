@@ -1,0 +1,10 @@
+document: rfc-9931
+kind: normative-requirement
+summary: 'Proxy clients that send CONNECT requests on behalf of untrusted TCP clients MUST either wait for a 2xx (Successful) response before forwarding any TCP payload data, or send a ''Connection: close'' request header. Clients not implementing at least one of these behaviors are vulnerable to a trivial Request Smuggling attack.'
+section: "8"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

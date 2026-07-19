@@ -1,0 +1,10 @@
+document: rfc-9931
+kind: normative-requirement
+summary: Proxy servers MUST close the underlying connection when rejecting a CONNECT request, without processing any further requests on that connection. This applies whether or not the request includes a 'close' connection option, and serves as a server-side mitigation for vulnerable proxy clients.
+section: "8"
+rfc2119_level: MUST
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

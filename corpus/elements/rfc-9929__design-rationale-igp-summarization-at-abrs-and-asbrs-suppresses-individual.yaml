@@ -1,0 +1,9 @@
+document: rfc-9929
+kind: design-rationale
+summary: IGP summarization at ABRs and ASBRs suppresses individual prefix state, leaving routers outside the area/domain unaware when a summarized prefix becomes unreachable. UPA is introduced to carry this unreachability signal across area and domain boundaries in a backward-compatible manner, enabling fast-convergence mechanisms such as BGP PIC Edge.
+section: "1"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

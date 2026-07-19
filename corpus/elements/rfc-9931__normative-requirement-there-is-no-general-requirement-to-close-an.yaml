@@ -1,0 +1,9 @@
+document: rfc-9931
+kind: normative-requirement
+summary: There is no general requirement to close an HTTP/1.1 connection after a rejected protocol transition; it is normally inappropriate to do so, as the connection can continue to be used for HTTP/1.1 requests. Keeping it open has performance advantages if additional requests are likely.
+section: "5"
+rfc2119_level: SHOULD NOT
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

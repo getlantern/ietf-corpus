@@ -1,0 +1,8 @@
+document: rfc-9925
+kind: design-rationale
+summary: An unsigned certificate has no specific issuer, so issuer-related RFC 5280 fields (issuer, issuerUniqueID, authorityKeyIdentifier, issuerAltName) are not meaningful. Senders are given flexibility to populate the issuer field in ways compatible with pre-existing applications while being clear that this is a placeholder, not self-issuance.
+section: "3.2"
+topics:
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

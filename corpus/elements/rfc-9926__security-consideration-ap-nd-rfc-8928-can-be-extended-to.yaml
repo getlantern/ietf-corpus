@@ -1,0 +1,10 @@
+document: rfc-9926
+kind: security-consideration
+summary: AP-ND (RFC 8928) can be extended to prefix registrations to prevent a rogue node from registering a prefix it does not own, by pre-associating a keypair and ROVR with the prefix and installing them in the 6LBR. Node-local autoconfigured keypairs from RFC 8928 cannot be reused for prefixes because multiple nodes may legitimately register the same prefix.
+section: "11"
+topics:
+    - security
+    - ip
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

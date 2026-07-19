@@ -1,0 +1,8 @@
+document: rfc-9925
+kind: interoperability-note
+summary: The issuer field in X.509 is not optional, and both X.509 and RFC 5280 forbid empty issuers, so an empty issuer may not be interoperable with existing applications. Senders may use either the subject as the issuer value or the id-rdna-unsigned placeholder RDN to satisfy syntactic requirements.
+section: "3.2"
+topics:
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

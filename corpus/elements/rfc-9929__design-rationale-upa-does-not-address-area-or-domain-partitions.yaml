@@ -1,0 +1,8 @@
+document: rfc-9929
+kind: design-rationale
+summary: UPA does not address area or domain partitions. When an area partitions and multiple ABRs/ASBRs each cover only a portion of the summarized prefix space, each ABR/ASBR generates UPAs only for destinations locally unreachable, potentially redirecting traffic to an alternative egress — but if that egress is also in the partitioned area, traffic will still be dropped, mirroring behavior without UPA.
+section: "6"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

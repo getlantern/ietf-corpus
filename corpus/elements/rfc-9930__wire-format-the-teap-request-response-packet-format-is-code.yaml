@@ -1,0 +1,8 @@
+document: rfc-9930
+kind: wire-format
+summary: 'The TEAP Request/Response packet format is: Code (1 octet, 1=Request/2=Response), Identifier (1 octet), Length (2 octets), Type (1 octet, value 55), Flags (5 bits: L M S O R) and Ver (3 bits, value 1), optional Message Length (4 octets, present if L bit set), optional Outer TLV Length (4 octets, if O bit set), TLS Data, and Outer TLVs.'
+section: "4.1"
+topics:
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9931
+kind: security-consideration
+summary: Request Smuggling is the primary security risk from optimistic protocol transitions. If a client sends post-transition data before the server confirms the upgrade, and the server rejects the transition, attacker-controlled data in the new protocol stream may be misinterpreted as a subsequent authenticated HTTP/1.1 request issued by the client.
+section: "4.1"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

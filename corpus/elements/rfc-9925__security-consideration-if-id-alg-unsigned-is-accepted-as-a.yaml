@@ -1,0 +1,10 @@
+document: rfc-9925
+kind: security-consideration
+summary: If id-alg-unsigned is accepted as a valid signature in a certification path or any context requiring X.509 signature verification, the signature check is entirely bypassed. This risk is analogous to the JWT 'alg:none' vulnerability class and the JOSE 'none' deprecation, motivating the MUST NOT rule in Section 4.
+section: "5"
+topics:
+    - pkix
+    - security
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9931
+kind: design-rationale
+summary: 'The optimistic sending pattern is motivated by latency reduction: if a previous transition request with the same upgrade token succeeded, the client may predict future success and send new-protocol data before receiving the server''s response. This document demonstrates that the pattern is unsafe in HTTP/1.1 when third-party data is involved.'
+section: "3"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

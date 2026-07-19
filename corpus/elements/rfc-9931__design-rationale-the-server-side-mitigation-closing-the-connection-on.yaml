@@ -1,0 +1,9 @@
+document: rfc-9931
+kind: design-rationale
+summary: The server-side mitigation (closing the connection on CONNECT rejection) is acknowledged to cause performance degradation, especially when returning 407 responses requiring re-authentication. The document explicitly notes this cost can be avoided by upgrading clients and servers to HTTP/2 or HTTP/3, which are not vulnerable to this attack.
+section: "8"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

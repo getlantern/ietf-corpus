@@ -1,0 +1,9 @@
+document: rfc-9925
+kind: design-rationale
+summary: Implementations are RECOMMENDED to comply with the consumption rules simply by treating id-alg-unsigned as any other unrecognized signature algorithm, requiring no code changes. An unmodified validator will fail signature verification and reject the path, while an application already ignoring the self-signature will ignore id-alg-unsigned more efficiently.
+section: "4"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

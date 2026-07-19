@@ -1,0 +1,11 @@
+document: rfc-9931
+kind: normative-requirement
+summary: Clients MUST NOT send UDP packets optimistically in HTTP/1.x due to the risk of Request Smuggling attacks. A client MAY optimistically start sending UDP packets in HTTP Datagrams before receiving a response to its UDP proxying request only if the HTTP version in use is HTTP/2 or later. This updates RFC 9298.
+section: "6.3"
+rfc2119_level: MUST NOT
+topics:
+    - http
+    - security
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

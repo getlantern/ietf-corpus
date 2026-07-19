@@ -1,0 +1,10 @@
+document: rfc-9930
+kind: normative-requirement
+summary: TEAP implementations MUST NOT permit TLS restarts. Fatal TLS errors cause the TLS conversation to fail; non-fatal TLS errors can be ignored. When the TEAP server detects a TLS error, it SHOULD send a TLS alert; the peer MUST send a response and the server MUST terminate with EAP Failure.
+section: 3.9.2
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

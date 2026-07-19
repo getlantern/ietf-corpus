@@ -1,0 +1,10 @@
+document: rfc-9931
+kind: interoperability-note
+summary: 'The ''TLS'' upgrade token is self-mitigating: optimistic TLS data begins with octet 22 (ContentType.handshake), which is not an allowed character in an HTTP/1.1 method. A compliant HTTP/1.1 server will treat this as a parse error and close the connection, preventing Request Smuggling but also preventing connection reuse.'
+section: "6.1"
+topics:
+    - http
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

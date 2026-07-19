@@ -1,0 +1,9 @@
+document: rfc-9926
+kind: design-rationale
+summary: The EARO is used for prefix registration instead of the Route Information Option (RIO, RFC 4191) because the RIO is not designed to inject routes into routing protocols and lacks the R bit and ROVR equivalents needed for safe redistribution. An RA with RIO also cannot be trusted for safe injection into a routing protocol without the ownership verification that ROVR provides.
+section: "1"
+topics:
+    - ip
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
