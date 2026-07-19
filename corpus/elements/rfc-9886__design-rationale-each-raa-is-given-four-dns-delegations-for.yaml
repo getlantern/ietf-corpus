@@ -1,0 +1,9 @@
+document: rfc-9886
+kind: design-rationale
+summary: Each RAA is given four DNS delegations (for HDA values 0, 4096, 8192, 12288) by borrowing the upper two bits of HDA space, enabling a clean nibble boundary in the DNS delegation from 3.0.0.1.0.0.2.ip6.arpa. This nibble-splitting approach accommodates the IPv6 reverse lookup structure while preserving the DET hierarchy.
+section: "3"
+topics:
+    - dns
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

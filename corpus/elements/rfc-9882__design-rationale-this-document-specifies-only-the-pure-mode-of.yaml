@@ -1,0 +1,9 @@
+document: rfc-9882
+kind: design-rationale
+summary: This document specifies only the pure mode of ML-DSA (not HashML-DSA pre-hash mode) for use with CMS, following the precedent of EdDSA and SLH-DSA. CMS signatures are typically computed over signed attributes (which are small and already contain a hash of the content), so pre-hash mode offers no meaningful size reduction and hence no benefit.
+section: "3.1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

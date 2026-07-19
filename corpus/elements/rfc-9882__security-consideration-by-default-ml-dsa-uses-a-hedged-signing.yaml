@@ -1,0 +1,10 @@
+document: rfc-9882
+kind: security-consideration
+summary: By default ML-DSA uses a 'hedged' signing mode combining fresh random data with precomputed private-key randomness to mitigate faulty RNGs, side-channel attacks, and fault attacks. The signer SHOULD NOT use the deterministic variant on platforms where side-channel or fault attacks are a concern.
+section: "4"
+rfc2119_level: SHOULD NOT
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

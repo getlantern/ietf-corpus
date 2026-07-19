@@ -1,0 +1,8 @@
+document: rfc-9885
+kind: design-rationale
+summary: RFC 7356 defined 16-bit Length fields for TLVs in flooding-scoped PDUs, which would largely avoid the 255-octet problem. However, these new PDU types are not backwards compatible, so multiple TLV occurrences (MP-TLV) is used to expand information in existing 8-bit Length PDUs instead.
+section: "1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

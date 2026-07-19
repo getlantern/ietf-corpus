@@ -1,0 +1,9 @@
+document: rfc-9882
+kind: design-rationale
+summary: HashML-DSA (the pre-hash variant of ML-DSA) is not specified for CMS use. Since CMS signed attributes are typically small and already embed a hash of the content, supplying a pre-hash to ML-DSA would not meaningfully reduce the data signed by the algorithm and thus provides no benefit.
+section: "3.1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

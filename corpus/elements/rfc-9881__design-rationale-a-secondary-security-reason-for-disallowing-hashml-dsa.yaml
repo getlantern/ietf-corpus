@@ -1,0 +1,10 @@
+document: rfc-9881
+kind: design-rationale
+summary: A secondary security reason for disallowing HashML-DSA is that pure ML-DSA prepends SHAKE256(public_key) to the message before hashing, requiring a public-key-specific collision search rather than a generic hash collision; HashML-DSA removes this enhanced targeted-collision protection.
+section: "8.3"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

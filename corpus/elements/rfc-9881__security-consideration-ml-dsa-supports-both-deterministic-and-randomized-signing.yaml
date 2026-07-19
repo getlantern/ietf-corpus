@@ -1,0 +1,9 @@
+document: rfc-9881
+kind: security-consideration
+summary: ML-DSA supports both deterministic and randomized signing; a verifier cannot distinguish the two. Randomized signing mixes in a 256-bit random string from an approved RBG and provides greater resistance to fault and hardware side-channel attacks; deterministic signing simplifies testing and needs no randomness source at signing time.
+section: "9"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

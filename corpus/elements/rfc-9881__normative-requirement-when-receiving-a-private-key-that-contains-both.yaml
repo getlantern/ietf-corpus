@@ -1,0 +1,11 @@
+document: rfc-9881
+kind: normative-requirement
+summary: When receiving a private key that contains both the seed and the expandedKey, the recipient SHOULD perform a seed consistency check by regenerating the expanded key via ML-DSA.KeyGen_internal and comparing bytewise. If the check is performed and fails, the recipient MUST reject the private key as malformed.
+section: "8.2"
+rfc2119_level: SHOULD
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

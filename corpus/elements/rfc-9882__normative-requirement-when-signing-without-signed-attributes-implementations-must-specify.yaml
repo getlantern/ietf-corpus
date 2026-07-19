@@ -1,0 +1,10 @@
+document: rfc-9882
+kind: normative-requirement
+summary: When signing without signed attributes, implementations MUST specify SHA-512 as the digestAlgorithm to minimize interoperability failures. When processing such a SignerInfo, implementations MUST ignore the content of the digestAlgorithm field, since ML-DSA operates over the entire message.
+section: "3.3"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

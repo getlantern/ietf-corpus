@@ -1,0 +1,11 @@
+document: rfc-9886
+kind: normative-requirement
+summary: When DNSSEC is not in use, clients MUST 'walk' the tree of certificates by performing DNS lookups of HHIT RRTypes for each DET in the hierarchy chain, verifying each certificate's inclusion. This certificate chain walk is the only way to prove valid registration without DNSSEC.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

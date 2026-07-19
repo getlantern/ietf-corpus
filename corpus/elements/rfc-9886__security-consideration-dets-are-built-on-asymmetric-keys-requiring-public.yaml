@@ -1,0 +1,12 @@
+document: rfc-9886
+kind: security-consideration
+summary: DETs are built on asymmetric keys, requiring public key exposure in DNS for signature verification. It is RECOMMENDED to delay publishing HHIT RRTypes until required ('just-in-time' publishing) to minimize the window during which the public key is exposed, reducing the risk from potential private key forgery.
+section: "7.2"
+rfc2119_level: RECOMMENDED
+topics:
+    - dns
+    - security
+    - crypto
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

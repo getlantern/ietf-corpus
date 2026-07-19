@@ -1,0 +1,9 @@
+document: rfc-9881
+kind: design-rationale
+summary: 'HashML-DSA is disallowed primarily to increase interoperability: ML-DSA and HashML-DSA require different Verify() routines, and since the same OIDs identify both public keys and signature algorithms, an implementation would need to commit a key to pure or pre-hashed mode at certificate creation time — creating operational problems when the use case is unknown at key-generation time.'
+section: "8.3"
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

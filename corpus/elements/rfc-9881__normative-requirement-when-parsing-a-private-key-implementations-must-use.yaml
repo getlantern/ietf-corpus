@@ -1,0 +1,10 @@
+document: rfc-9881
+kind: normative-requirement
+summary: 'When parsing a private key, implementations MUST use the ASN.1 tag to determine which CHOICE variant is present: context-specific IMPLICIT [0] (0x80) for seed, OCTET STRING (0x04) for expandedKey, and SEQUENCE (0x30) for both, rather than length-based heuristics.'
+section: "6"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

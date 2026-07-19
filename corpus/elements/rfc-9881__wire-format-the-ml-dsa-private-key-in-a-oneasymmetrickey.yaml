@@ -1,0 +1,9 @@
+document: rfc-9881
+kind: wire-format
+summary: 'The ML-DSA private key in a OneAsymmetricKey structure uses a DER-encoded CHOICE with three alternatives: seed ([0] OCTET STRING SIZE 32 for all levels), expandedKey (OCTET STRING SIZE 2560/4032/4896 for levels 44/65/87), or both (SEQUENCE containing seed and expandedKey). The seed format is a fixed 34 bytes total including tag and length.'
+section: "6"
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
