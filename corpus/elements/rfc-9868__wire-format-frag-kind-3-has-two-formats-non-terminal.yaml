@@ -1,0 +1,8 @@
+document: rfc-9868
+kind: wire-format
+summary: 'FRAG (Kind=3) has two formats: non-terminal (Len=10) contains Frag.Start (2 bytes), Identification (4 bytes), Frag.Offset (2 bytes); terminal (Len=12) appends a Reassembled Datagram Option Start (RDOS, 2 bytes) pointer. The 32-bit Identification field combined with the socket 4-tuple uniquely identifies the original datagram.'
+section: "11.4"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

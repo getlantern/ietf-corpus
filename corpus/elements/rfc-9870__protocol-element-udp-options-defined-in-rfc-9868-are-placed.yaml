@@ -1,0 +1,8 @@
+document: rfc-9870
+kind: protocol-element
+summary: UDP Options (defined in RFC 9868) are placed in the 'surplus area'—the IP payload region following the UDP packet—identified by a 1-byte Kind field. Kind 0-191 are SAFE Options (silently ignorable by legacy receivers); Kind 192-255 are UNSAFE Options (alter UDP user data and must not be silently ignored).
+section: "3"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

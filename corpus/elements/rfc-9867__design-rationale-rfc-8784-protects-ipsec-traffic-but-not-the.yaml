@@ -1,0 +1,11 @@
+document: rfc-9867
+kind: design-rationale
+summary: RFC 8784 protects IPsec traffic but not the initial IKE SA, leaving peer identities and sensitive IKE-level data exposed to a future CRQC. This specification fills that gap by mixing a PPK in the IKE_INTERMEDIATE exchange before IKE_AUTH, so the initial IKE SA is fully quantum-secure from the start.
+section: "1"
+topics:
+    - ipsec
+    - crypto
+    - security
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

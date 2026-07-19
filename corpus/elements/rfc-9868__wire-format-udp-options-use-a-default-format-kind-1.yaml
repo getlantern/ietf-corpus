@@ -1,0 +1,8 @@
+document: rfc-9868
+kind: wire-format
+summary: 'UDP Options use a default format: Kind (1 byte) + Length (1 byte, covering the entire option including Kind and Length, valid for lengths ≤254) + value bytes. When Length=255, an extended format applies: Kind (1 byte) + 0xFF (1 byte) + Extended Length (16-bit, network byte order) + value bytes.'
+section: "10"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

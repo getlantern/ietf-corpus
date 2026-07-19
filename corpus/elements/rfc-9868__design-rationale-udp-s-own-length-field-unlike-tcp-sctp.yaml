@@ -1,0 +1,8 @@
+document: rfc-9868
+kind: design-rationale
+summary: 'UDP''s own Length field — unlike TCP/SCTP/DCCP which infer payload size from IP — creates a redundancy with the IP-indicated payload size. This specification exploits that redundancy: setting UDP Length smaller than the IP transport payload creates the surplus area used for options without changing the UDP header format or requiring IP-layer changes.'
+section: "4"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

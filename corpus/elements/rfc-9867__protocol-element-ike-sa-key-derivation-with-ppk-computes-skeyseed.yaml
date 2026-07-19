@@ -1,0 +1,10 @@
+document: rfc-9867
+kind: protocol-element
+summary: IKE SA key derivation with PPK computes SKEYSEED' = prf+(PPK, SK_d), then derives all SK_* keys via prf+(SKEYSEED', Ni | Nr | SPIi | SPIr). Unlike RFC 8784, SK_d, SK_pi, and SK_pr are not individually recalculated with PPK.
+section: 3.1.1
+topics:
+    - ipsec
+    - vpn
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,8 @@
+document: rfc-9868
+kind: state-machine
+summary: 'Receiver processing order: (1) If UDP checksum fails, drop entire packet. (2) If OCS is non-zero and fails, or OCS is zero but UDP checksum is non-zero, deliver user data but ignore all options (legacy emulation). (3) If OCS passes or both checksums are zero, deliver user data after parsing and processing all options regardless of whether each succeeds.'
+section: "14"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

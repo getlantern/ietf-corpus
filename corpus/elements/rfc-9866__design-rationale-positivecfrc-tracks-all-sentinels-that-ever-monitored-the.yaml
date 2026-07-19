@@ -1,0 +1,8 @@
+document: rfc-9866
+kind: design-rationale
+summary: PositiveCFRC tracks all Sentinels that ever monitored the root (not just current ones) so that the NegativeCFRC/PositiveCFRC ratio reflects historical consensus rather than instantaneous membership. Nodes add themselves to NegativeCFRC when reverting from Sentinel to Acceptor in UP/SUSPECTED DOWN states, preserving the invariant that PositiveCFRC >= NegativeCFRC.
+section: "3.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9873
+kind: security-consideration
+summary: The syntax for internationalized email local-parts is very liberal and domains are normalized during MX lookup while local-parts are unconstrained. Implementers should test that their database can store difficult local-parts such as U+0061 U+0300 U+00E0 (see RFC 5198 for normalization context).
+section: "8"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

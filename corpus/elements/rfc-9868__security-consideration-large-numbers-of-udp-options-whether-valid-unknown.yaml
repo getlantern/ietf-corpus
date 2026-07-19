@@ -1,0 +1,9 @@
+document: rfc-9868
+kind: security-consideration
+summary: Large numbers of UDP Options — whether valid, unknown, or repeating — constitute a DoS attack vector. Requiring must-support options to appear first enables implementations to apply resource limits early. Receivers persistently seeing more than seven consecutive NOPs SHOULD log such events as potential DoS indicators.
+section: "25.3"
+topics:
+    - udp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

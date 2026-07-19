@@ -1,0 +1,9 @@
+document: rfc-9868
+kind: security-consideration
+summary: Some middleboxes incorrectly compute the UDP checksum over the entire IP payload rather than just the UDP header and payload. The OCS is designed so that, when non-zero, it effectively cancels out the erroneous contribution of the surplus area to the UDP checksum, ensuring traversal compatibility with such middleboxes.
+section: "9"
+topics:
+    - udp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

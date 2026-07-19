@@ -1,0 +1,9 @@
+document: rfc-9868
+kind: normative-requirement
+summary: The UDP Length field MUST be at least 8 (the UDP header length) and no larger than the IP transport payload length. Datagrams with values outside this range MUST be silently dropped and logged. All logging SHOULD be rate limited to prevent resource overloading.
+section: "10"
+rfc2119_level: MUST
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

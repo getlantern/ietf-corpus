@@ -1,0 +1,8 @@
+document: rfc-9866
+kind: design-rationale
+summary: 'GLOBALLY DOWN forces the root to prove liveness by issuing a new DODAG Version rather than attempting in-place recovery, because a crashed-and-restarted root inherently loses its prior state anyway. This makes recovery unambiguous: any new version resets all RNFD state network-wide.'
+section: "3.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

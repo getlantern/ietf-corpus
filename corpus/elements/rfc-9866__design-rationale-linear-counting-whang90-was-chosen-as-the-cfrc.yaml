@@ -1,0 +1,8 @@
+document: rfc-9866
+kind: design-rationale
+summary: Linear counting (Whang90) was chosen as the CFRC implementation because bitwise OR satisfies the required idempotent, commutative, and associative merge semantics, enabling eventual consistency of counters regardless of merge order, DODAG shape, or network topology. The bit length is constrained to the largest prime below the byte-aligned bound to improve hash collision properties.
+section: "4.1"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

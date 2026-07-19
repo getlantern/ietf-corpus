@@ -1,0 +1,8 @@
+document: rfc-9868
+kind: wire-format
+summary: The surplus area begins with a 2-byte Option Checksum (OCS) field, aligned to the first 2-byte boundary (relative to the IP datagram start) of the surplus area. Zero padding bytes before OCS must be zero; any non-zero alignment bytes cause all options to be discarded. TLV-encoded UDP options follow immediately after OCS.
+section: "8"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

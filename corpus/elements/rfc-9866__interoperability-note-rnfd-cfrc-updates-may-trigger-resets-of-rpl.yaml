@@ -1,0 +1,8 @@
+document: rfc-9866
+kind: interoperability-note
+summary: RNFD CFRC updates may trigger resets of RPL's DIO Trickle timer; a dedicated Trickle timer for RNFD is RECOMMENDED to decouple RNFD-driven resets from RPL's normal DIO scheduling. Without a dedicated timer, implementations SHOULD ensure the RNFD Option appears in multicast DIOs sufficiently often to propagate CFRC changes quickly.
+section: "5.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

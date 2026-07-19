@@ -1,0 +1,8 @@
+document: rfc-9868
+kind: design-rationale
+summary: The SAFE/UNSAFE distinction is based on whether an option alters UDP user data. Kinds 0–191 are SAFE (ignorable without affecting user data semantics); Kinds 192–255 are UNSAFE (may transform user data). UNSAFE options are restricted to use within FRAG payloads, ensuring legacy receivers see only empty UDP packets and silently discard the modified payload.
+section: "10"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

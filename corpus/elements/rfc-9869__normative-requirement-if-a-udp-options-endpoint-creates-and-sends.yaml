@@ -1,0 +1,10 @@
+document: rfc-9869
+kind: normative-requirement
+summary: If a UDP Options endpoint creates and sends a datagram with a RES Option solely as a response to a received REQ Option, the responder MUST limit the rate of these responses (e.g., 1 per measured RTT or 1 per second per port pair) to mitigate DoS amplification.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - udp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

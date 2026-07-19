@@ -1,0 +1,10 @@
+document: rfc-9867
+kind: design-rationale
+summary: By performing PPK exchange in a separate IKE_INTERMEDIATE round trip before IKE_AUTH, the initiator can propose multiple PPK IDs and the responder can pick one. This is not possible when PPK is exchanged within IKE_AUTH (RFC 8784), and simplifies PPK rollover scenarios.
+section: A
+topics:
+    - ipsec
+    - vpn
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

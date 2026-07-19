@@ -1,0 +1,9 @@
+document: rfc-9866
+kind: normative-requirement
+summary: RNFD activation and deactivation MUST be controlled by the DODAG root; other nodes MUST comply. A non-root node MUST NOT activate RNFD unless it receives a valid RNFD Option with positive Option Length. An explicit deactivation MUST occur upon receiving an RNFD Option with Option Length equal to zero, after which RNFD MUST NOT be reactivated within the same DODAG Version.
+section: "5.5"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

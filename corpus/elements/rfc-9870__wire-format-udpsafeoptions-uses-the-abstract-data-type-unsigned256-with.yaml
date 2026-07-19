@@ -1,0 +1,9 @@
+document: rfc-9870
+kind: wire-format
+summary: udpSafeOptions uses the abstract data type unsigned256 with flags semantics. Reduced-size encoding per RFC 7011 Section 6.2 is applied, so if only Kinds <= 31 are observed the IE can be encoded as unsigned32; if only Kinds <= 63 are observed, as unsigned64. For mandatory SAFE Options (EOL, APC), one octet suffices.
+section: "4.1"
+topics:
+    - udp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

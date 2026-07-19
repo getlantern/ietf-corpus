@@ -1,0 +1,8 @@
+document: rfc-9866
+kind: design-rationale
+summary: The SUSPECTED DOWN state exists as an intermediate verification opportunity before committing to LOCALLY DOWN, because each LOCALLY DOWN transition saturates NegativeCFRC bits. Skipping verification on direct observations (e.g., missing L2 ACKs) is explicitly allowed as an optimization since such evidence is already strong.
+section: "5.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9866
+kind: normative-requirement
+summary: Upon receiving an RNFD Option, a node MUST merge received PosCFRC and NegCFRC into its local PositiveCFRC and NegativeCFRC. If value(NegativeCFRC)/value(PositiveCFRC) then reaches at least RNFD_CONSENSUS_THRESHOLD (default 0.51), the node MUST set LORS to GLOBALLY DOWN and both CFRCs to infinity().
+section: "5.3"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

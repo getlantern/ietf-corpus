@@ -1,0 +1,8 @@
+document: rfc-9868
+kind: design-rationale
+summary: FRAG is classified as SAFE (Kind=3, within the 0–191 range) despite modifying what UDP user data means, because FRAG is only ever present on fragments with zero-length UDP user data (UDP Length=8). Legacy receivers simply receive zero-length UDP packets and pass them to the application, which is the same behavior as without FRAG.
+section: "10"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

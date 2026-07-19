@@ -1,0 +1,8 @@
+document: rfc-9869
+kind: design-rationale
+summary: Probes seeking to increase the PLPMTU should not carry application data because they will be dropped whenever their size exceeds the actual PMTU, avoiding the need to retransmit lost application data on probe failure.
+section: "4.4"
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

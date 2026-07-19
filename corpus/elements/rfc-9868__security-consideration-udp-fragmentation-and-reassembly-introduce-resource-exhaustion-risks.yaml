@@ -1,0 +1,9 @@
+document: rfc-9868
+kind: security-consideration
+summary: UDP fragmentation and reassembly introduce resource exhaustion risks. Reassembly space SHOULD be limited and SHOULD NOT be shared across socket pairs to prevent cross-socket DoS. Reassembly expiration MUST NOT generate ICMP errors to avoid amplification.
+section: "25.4"
+topics:
+    - udp
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

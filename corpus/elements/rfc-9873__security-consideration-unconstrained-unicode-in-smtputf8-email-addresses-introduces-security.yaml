@@ -1,0 +1,10 @@
+document: rfc-9873
+kind: security-consideration
+summary: Unconstrained Unicode in SMTPUTF8 email addresses introduces security threats not present with ASCII-only addresses (as noted in RFC 6530). Because EPP email addresses appear in RDAP and are often copy-pasted during domain transfers, policies SHOULD disallow unconstrained Unicode; the domain-part SHOULD conform to IDNA2008 and the local-part SHOULD be restricted to non-threatening Unicode, e.g., limited to Unicode Annex 31 characters.
+section: "8"
+rfc2119_level: SHOULD
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

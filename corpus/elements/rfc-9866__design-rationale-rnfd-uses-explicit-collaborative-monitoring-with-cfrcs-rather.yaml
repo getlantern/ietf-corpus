@@ -1,0 +1,8 @@
+document: rfc-9866
+kind: design-rationale
+summary: RNFD uses explicit collaborative monitoring with CFRCs rather than relying on RPL's emergent per-node behavior because independent operation generates slow, traffic-heavy DODAG repair with routing loops; the paper cites detection periods spanning many low-data-rate link timeouts followed by cascaded Trickle timer resets. Coordination cuts detection latency by enabling concurrent suspicion-checking across all Sentinels simultaneously.
+section: "1.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

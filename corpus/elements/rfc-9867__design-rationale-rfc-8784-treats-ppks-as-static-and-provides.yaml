@@ -1,0 +1,11 @@
+document: rfc-9867
+kind: design-rationale
+summary: RFC 8784 treats PPKs as static and provides no mechanism to use a fresh PPK on an active IKE SA; the only recourse is tearing down and recreating the SA. This specification adds PPK support to the CREATE_CHILD_SA exchange so fresh PPKs from sources like QKD can be consumed without that overhead.
+section: "1"
+topics:
+    - ipsec
+    - crypto
+    - security
+    - vpn
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

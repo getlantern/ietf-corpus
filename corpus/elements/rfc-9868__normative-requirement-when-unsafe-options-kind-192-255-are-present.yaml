@@ -1,0 +1,9 @@
+document: rfc-9868
+kind: normative-requirement
+summary: When UNSAFE Options (Kind 192–255) are present, the UDP user data MUST be empty and any transport payload MUST be carried inside a FRAG Option. Receivers encountering an unsupported UNSAFE option MUST terminate all option processing and MUST silently drop all UDP Options in that datagram.
+section: "10"
+rfc2119_level: MUST
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

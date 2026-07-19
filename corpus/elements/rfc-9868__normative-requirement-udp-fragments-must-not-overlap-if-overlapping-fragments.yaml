@@ -1,0 +1,9 @@
+document: rfc-9868
+kind: normative-requirement
+summary: UDP fragments MUST NOT overlap. If overlapping fragments are detected during reassembly, the entire reassembly MUST be abandoned and all fragments discarded without generating ICMP errors. The default reassembly expiration timeout SHOULD be no more than 2 minutes, and reassembly space SHOULD be limited and SHOULD NOT be shared across socket pairs.
+section: "11.4"
+rfc2119_level: MUST
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

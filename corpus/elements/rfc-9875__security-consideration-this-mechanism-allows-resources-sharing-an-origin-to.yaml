@@ -1,0 +1,9 @@
+document: rfc-9875
+kind: security-consideration
+summary: This mechanism allows resources sharing an origin to invalidate each other. In shared hosting environments where one origin represents multiple parties, one party could group its resources with another party's resources or send Cache-Group-Invalidation signals that have side effects on them. Shared hosts can mitigate this by controlling access to these header fields.
+section: "5"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

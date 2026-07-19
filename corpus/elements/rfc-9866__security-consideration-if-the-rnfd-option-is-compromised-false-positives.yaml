@@ -1,0 +1,9 @@
+document: rfc-9866
+kind: security-consideration
+summary: If the RNFD Option is compromised, false positives may cause all nodes to set LORS to GLOBALLY DOWN and halt routing until a new DODAG Version is issued; false negatives may prevent crash detection, leaving RPL to rely on its slower built-in mechanisms. Compromised options may also generate increased DIO traffic via Trickle timer resets.
+section: "7"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

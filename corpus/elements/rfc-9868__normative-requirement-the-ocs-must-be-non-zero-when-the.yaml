@@ -1,0 +1,9 @@
+document: rfc-9868
+kind: normative-requirement
+summary: The OCS MUST be non-zero when the UDP checksum is non-zero, and UDP Option implementations MUST default to using a non-zero OCS. If OCS validation fails, all options MUST be silently discarded; however, UDP user data validated by a correct UDP checksum MUST still be delivered to the application unless explicitly configured otherwise.
+section: "9"
+rfc2119_level: MUST
+topics:
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

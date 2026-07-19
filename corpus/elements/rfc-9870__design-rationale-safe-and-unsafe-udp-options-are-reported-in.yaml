@@ -1,0 +1,9 @@
+document: rfc-9870
+kind: design-rationale
+summary: SAFE and UNSAFE UDP Options are reported in separate IPFIX IEs (udpSafeOptions and udpUnsafeOptions) rather than a single multiplexed IE. A single IE would require at least 24 octets to cover both Kind ranges, negating the benefits of reduced-size encoding; the split allows mandatory SAFE Options to be reported in as little as one octet.
+section: "4"
+topics:
+    - udp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

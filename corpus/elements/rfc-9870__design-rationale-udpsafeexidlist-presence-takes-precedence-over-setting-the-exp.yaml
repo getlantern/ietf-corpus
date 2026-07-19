@@ -1,0 +1,9 @@
+document: rfc-9870
+kind: design-rationale
+summary: udpSafeExIDList presence takes precedence over setting the EXP bit in udpSafeOptions for the same Flow. This design avoids redundant signaling and preserves reduced-size encoding benefits, since setting the EXP bit would force a larger encoding even when the ExID list already conveys the information.
+section: "4.1"
+topics:
+    - udp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
