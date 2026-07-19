@@ -1,0 +1,10 @@
+document: rfc-9849
+kind: protocol-element
+summary: For HelloRetryRequest, the backend server signals ECH acceptance via an encrypted_client_hello extension carrying hrr_accept_confirmation = HKDF-Expand-Label(HKDF-Extract(0, ClientHelloInner1.random), "hrr ech accept confirmation", transcript_hrr_ech_conf, 8), computed over the HRR with the extension payload initially set to 8 zero bytes.
+section: 7.2.1
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

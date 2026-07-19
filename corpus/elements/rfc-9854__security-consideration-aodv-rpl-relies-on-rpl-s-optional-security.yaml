@@ -1,0 +1,9 @@
+document: rfc-9854
+kind: security-consideration
+summary: AODV-RPL relies on RPL's optional security framework (RFC 6550 Section 6.1) for confidentiality, authentication, replay protection, and delay protection. A rogue router that possesses the group key can join route discovery, advertise false DIOs to insert itself into routes, generate bogus RREQ-DIO/RREP-DIO messages, or launch DoS attacks via fake route discoveries; RPL's preinstalled key mode SHOULD be used when rogue routers may be present.
+section: "10"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,11 @@
+document: rfc-9848
+kind: security-consideration
+summary: ECH protects the SNI within TLS, but the same hostname information is present in DNS queries used to resolve the server. This specification does not conceal the server name from the DNS resolver; attackers on the path between client and resolver, or who can link clients to resolver-to-authority queries, can learn the destination server name.
+section: "8"
+topics:
+    - tls
+    - dns
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

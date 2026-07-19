@@ -1,0 +1,9 @@
+document: rfc-9844
+kind: interoperability-note
+summary: An address string such as 'fe80::1%eth0' cannot be converted to binary by the POSIX socket API function inet_pton(). It must be converted using getaddrinfo(), or by splitting into two strings and applying inet_pton() and if_nametoindex() successively.
+section: "5"
+topics:
+    - ip
+    - v6ops
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

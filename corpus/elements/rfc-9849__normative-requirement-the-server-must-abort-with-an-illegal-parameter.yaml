@@ -1,0 +1,10 @@
+document: rfc-9849
+kind: normative-requirement
+summary: The server MUST abort with an illegal_parameter alert if any padding byte in EncodedClientHelloInner is non-zero, if any referenced outer extension is missing, if any extension is referenced more than once in OuterExtensions, if encrypted_client_hello is itself referenced, or if the outer extensions are out of order.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9854
+kind: normative-requirement
+summary: When the RPLInstanceID candidate for a new RREP-Instance is already occupied by an active RREP-Instance, the occupied RPLInstanceID MUST NOT be reused; TargNode MUST choose a different value and encode the offset from the RREQ-InstanceID in the 6-bit Delta field of the RREP option, rolling over at 255.
+section: 6.3.3
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

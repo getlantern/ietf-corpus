@@ -1,0 +1,10 @@
+document: rfc-9853
+kind: security-consideration
+summary: RRC cookies must be freshly generated using a reliable source of entropy (RFC 4086). Reusing a cookie without anti-replay protection allows an attacker to replay a previously sent path_response to mislead the challenger into switching to an attacker-controlled path.
+section: "8"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

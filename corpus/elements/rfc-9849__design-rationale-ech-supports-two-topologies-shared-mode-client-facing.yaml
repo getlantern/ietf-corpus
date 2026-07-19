@@ -1,0 +1,10 @@
+document: rfc-9849
+kind: design-rationale
+summary: 'ECH supports two topologies: Shared Mode (client-facing and backend server are the same entity) and Split Mode (client-facing server relays to a separate backend). In Split Mode, the client-facing server never sees the plaintext of the inner connection, and the spec assumes the inter-server channel is authenticated and correlation-resistant.'
+section: "3.1"
+topics:
+    - tls
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

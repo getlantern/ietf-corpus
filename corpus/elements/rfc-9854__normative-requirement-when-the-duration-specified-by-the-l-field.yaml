@@ -1,0 +1,9 @@
+document: rfc-9854
+kind: normative-requirement
+summary: When the duration specified by the L field has elapsed, a node SHOULD leave the RREQ-Instance and stop sending or receiving DIOs for it. After leaving, a node MUST NOT rejoin the same RREQ-Instance for at least the REJOIN_REENABLE interval (default 15 minutes), to prevent unnecessary consumption of memory and network resources.
+section: "4.1"
+rfc2119_level: MUST NOT
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

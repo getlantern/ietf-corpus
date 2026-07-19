@@ -1,0 +1,9 @@
+document: rfc-9849
+kind: interoperability-note
+summary: TLS-terminating middleboxes that comply with RFC 8446 Section 9.3 will ignore the encrypted_client_hello extension and generate their own ClientHello for the plaintext server_name (the public name), preserving interoperability. A non-authoritative proxy cannot forge a signal to disable ECH.
+section: 8.1.2
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

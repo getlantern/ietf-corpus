@@ -1,0 +1,8 @@
+document: rfc-9854
+kind: design-rationale
+summary: 'The 6-bit Delta field in the RREP option allows TargNode to signal a modified RPLInstanceID without requiring global coordination: since RPLInstanceIDs are locally assigned, two simultaneous route discoveries from different OrigNodes to the same TargNode could collide on the same RPLInstanceID. Delta encodes the additive offset so intermediate routers can recover the correct RREQ-InstanceID.'
+section: 6.3.3
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

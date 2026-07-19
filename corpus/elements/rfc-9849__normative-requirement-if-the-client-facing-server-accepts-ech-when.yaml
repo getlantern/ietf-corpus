@@ -1,0 +1,10 @@
+document: rfc-9849
+kind: normative-requirement
+summary: If the client-facing server accepts ECH, when it receives the second ClientHelloOuter after HelloRetryRequest it MUST verify that cipher_suite and config_id are unchanged and that enc is empty; failure MUST result in an illegal_parameter abort. Decryption of the second payload reuses the original HPKE context.
+section: 7.1.1
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

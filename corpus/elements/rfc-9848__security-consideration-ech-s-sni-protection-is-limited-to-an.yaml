@@ -1,0 +1,10 @@
+document: rfc-9848
+kind: security-consideration
+summary: ECH's SNI protection is limited to an anonymity set of all ECH-enabled server domains sharing a given ECH configuration. An attacker enumerating this set can guess the encrypted SNI with probability at least 1/K, and may achieve greater accuracy via traffic analysis, popularity weighting, and similar techniques.
+section: "8"
+topics:
+    - tls
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

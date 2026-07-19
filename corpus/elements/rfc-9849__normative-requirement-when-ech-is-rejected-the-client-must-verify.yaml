@@ -1,0 +1,11 @@
+document: rfc-9849
+kind: normative-requirement
+summary: When ECH is rejected, the client MUST verify the server certificate is valid for ECHConfig.contents.public_name, interpreting it as a DNS-based reference identity per RFC 9525. If the server requests a client certificate, the client MUST respond with an empty Certificate message. The TLS implementation MUST NOT report the connection as successful to the application.
+section: 6.1.7
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

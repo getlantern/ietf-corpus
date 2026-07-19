@@ -1,0 +1,9 @@
+document: rfc-9849
+kind: security-consideration
+summary: To prevent a packet amplification attack, the server enforces that ech_outer_extensions references must appear contiguously, not be duplicated, and not reference encrypted_client_hello itself. Additionally, server implementations SHOULD construct ClientHelloInner in linear time to avoid quadratic denial-of-service from naive extension expansion.
+section: "5.1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9849
+kind: wire-format
+summary: 'EncodedClientHelloInner wraps ClientHelloInner with a zeros padding field: struct { ClientHello client_hello; uint8 zeros[length_of_padding]; }. The legacy_session_id field is set to the empty string before encryption, and all padding bytes MUST be zero.'
+section: "5.1"
+topics:
+    - tls
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

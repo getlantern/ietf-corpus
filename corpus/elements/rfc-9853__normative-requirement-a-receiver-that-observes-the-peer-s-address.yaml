@@ -1,0 +1,10 @@
+document: rfc-9853
+kind: normative-requirement
+summary: A receiver that observes the peer's address change MUST stop sending any buffered application data or limit data sent to the unvalidated address to the anti-amplification limit (three times the amount of data received from that address), then initiate a return routability check.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

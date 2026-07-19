@@ -1,0 +1,9 @@
+document: rfc-9853
+kind: interoperability-note
+summary: In DTLS 1.3, the encrypted record type is opaque to on-path observers, making RRC messages immune to middlebox interference. In DTLS 1.2, if CID is not used in both directions, the return_routability_check content type appears in plaintext and is susceptible to middlebox dropping. CID should be enabled in both directions when middlebox interference is a concern in DTLS 1.2.
+section: "7.2"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9853
+kind: security-consideration
+summary: 'RRC mitigates amplification attacks: when a packet arrives with a known CID but a different source address, the endpoint sends only a small path_challenge rather than a large response. Since a spoofed victim cannot decrypt and respond correctly, address validation fails and the original binding is preserved.'
+section: 8.1.1
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

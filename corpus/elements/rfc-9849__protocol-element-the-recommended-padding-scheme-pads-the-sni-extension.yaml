@@ -1,0 +1,9 @@
+document: rfc-9849
+kind: protocol-element
+summary: The recommended padding scheme pads the SNI extension by max(0, M - D) bytes using ECHConfig.maximum_name_length M, or M+9 bytes if no SNI is present. After per-extension padding, the total EncodedClientHelloInner length is rounded up to the next multiple of 32 bytes to reduce length fingerprinting.
+section: 6.1.3
+topics:
+    - tls
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

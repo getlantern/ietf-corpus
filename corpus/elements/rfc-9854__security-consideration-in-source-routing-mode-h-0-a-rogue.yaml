@@ -1,0 +1,9 @@
+document: rfc-9854
+kind: security-consideration
+summary: In source-routing mode (H=0), a rogue router may populate the Address Vector with a crafted set of addresses that causes the RREP-DIO to traverse a routing loop. Additionally, a rogue router that can forge a G-RREP could mount denial-of-service attacks against OrigNode by causing it to send data along a false route.
+section: "10"
+topics:
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

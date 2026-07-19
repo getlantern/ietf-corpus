@@ -1,0 +1,9 @@
+document: rfc-9854
+kind: normative-requirement
+summary: In source-routing mode (H=0), a router MUST drop an RREQ-DIO if one of its own addresses appears in the Address Vector (loop prevention). In hop-by-hop mode (H=1), a router MUST drop the RREQ if Orig SeqNo is older than the stored sequence number for an existing route to OrigNode.
+section: 6.2.1
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

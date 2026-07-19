@@ -1,0 +1,9 @@
+document: rfc-9849
+kind: wire-format
+summary: The encrypted_client_hello extension (type 0xfe0d) carries an ECHClientHello with an outer or inner type. The outer variant includes cipher_suite, config_id (1 byte), enc (HPKE encapsulated key, empty on HRR), and payload (encrypted EncodedClientHelloInner). The inner variant has an empty payload.
+section: "5"
+topics:
+    - tls
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

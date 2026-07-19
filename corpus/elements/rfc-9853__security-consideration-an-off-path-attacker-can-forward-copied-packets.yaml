@@ -1,0 +1,9 @@
+document: rfc-9853
+kind: security-consideration
+summary: An off-path attacker can forward copied packets over a faster path to appear as a legitimate NAT rebinding, placing itself on-path. The enhanced path validation (Section 5.2) mitigates this by probing the old path first; if the old path is still functional and preferred, migration is suppressed.
+section: 8.1.2
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9849
+kind: design-rationale
+summary: ECH does not provide forward secrecy for ClientHelloInner because the server's ECH key is static (long-lived DNS key). The exposure window is bounded by the key lifetime, so servers are RECOMMENDED to rotate ECH keys regularly.
+section: 10.10.5
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

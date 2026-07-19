@@ -1,0 +1,10 @@
+document: rfc-9849
+kind: protocol-element
+summary: The backend server signals ECH acceptance by computing accept_confirmation = HKDF-Expand-Label(HKDF-Extract(0, ClientHelloInner.random), "ech accept confirmation", transcript_ech_conf, 8) and overwriting the last 8 bytes of ServerHello.random with this value, where the transcript includes a ServerHello with those 8 bytes initially set to zero.
+section: "7.2"
+topics:
+    - tls
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

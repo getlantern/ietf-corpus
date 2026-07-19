@@ -1,0 +1,10 @@
+document: rfc-9849
+kind: normative-requirement
+summary: If all candidate ECHConfig values fail decryption, the client-facing server MUST proceed with ClientHelloOuter and, if configured with any ECHConfigs, MUST include the encrypted_client_hello extension in EncryptedExtensions with retry_configs set to one or more up-to-date ECHConfig structures.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

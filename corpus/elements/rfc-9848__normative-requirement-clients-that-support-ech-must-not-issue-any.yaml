@@ -1,0 +1,10 @@
+document: rfc-9848
+kind: normative-requirement
+summary: Clients that support ECH MUST NOT issue any TLS ClientHello until after SVCB resolution has completed, because the "ech" SvcParam alters the contents of the TLS ClientHello if present.
+section: "5.3"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

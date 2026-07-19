@@ -1,0 +1,11 @@
+document: rfc-9849
+kind: normative-requirement
+summary: When offering a PSK in ClientHelloInner, clients SHOULD send a GREASE pre_shared_key extension in ClientHelloOuter with randomized identities and binders of matching length to avoid revealing to observers that a PSK extension is present without solicitation. The client MUST NOT use this extension to advertise a real PSK to the client-facing server.
+section: 6.1.2
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

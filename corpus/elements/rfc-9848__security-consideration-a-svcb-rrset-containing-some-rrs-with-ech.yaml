@@ -1,0 +1,10 @@
+document: rfc-9848
+kind: security-consideration
+summary: 'A SVCB RRSet containing some RRs with "ech" and some without is vulnerable to a downgrade attack: a network intermediary can block connections to ECH-capable endpoints, forcing fallback to non-ECH endpoints. This mixed configuration is NOT RECOMMENDED; when unavoidable, ECH-capable RRs SHOULD have lower SvcPriority values.'
+section: "8"
+topics:
+    - tls
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

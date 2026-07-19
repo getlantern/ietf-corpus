@@ -1,0 +1,9 @@
+document: rfc-9843
+kind: normative-requirement
+summary: If the metric-type corresponds to one for which legacy advertisement mechanisms exist (IGP Metric, Min Unidirectional Link Delay, TE Default Metric), the legacy metric-types MUST be utilized; if a Generic Metric sub-TLV advertises a legacy metric, it MUST be ignored. Duplicate instances for the same metric-type use the lowest-numbered fragment and MUST ignore subsequent instances.
+section: "2.1"
+rfc2119_level: MUST
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9849
+kind: normative-requirement
+summary: When constructing ClientHelloInner for ECH, the client MUST NOT offer TLS 1.2 or below, MUST NOT offer to resume any TLS 1.2-or-below session, MUST include the encrypted_client_hello extension of type inner, and MUST NOT choose a cipher suite or ECH version not advertised in the selected ECHConfig.
+section: "6.1"
+rfc2119_level: MUST NOT
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

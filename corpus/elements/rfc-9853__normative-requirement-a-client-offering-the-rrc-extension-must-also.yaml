@@ -1,0 +1,10 @@
+document: rfc-9853
+kind: normative-requirement
+summary: A client offering the rrc extension MUST also offer the connection_id extension. If the client includes rrc but omits connection_id, the server MUST NOT include rrc in its ServerHello. The client and server MUST NOT use RRC unless both sides have successfully exchanged rrc extensions.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,12 @@
+document: rfc-9848
+kind: normative-requirement
+summary: Origins that publish an "ech" SvcParam in their HTTPS record SHOULD also publish an HTTPS record with the "ech" SvcParam for every alt-authority offered in Alt-Svc field values. Otherwise, clients might reveal the server name in an unencrypted ClientHello to an alt-authority.
+section: "6"
+rfc2119_level: SHOULD
+topics:
+    - tls
+    - dns
+    - http
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
