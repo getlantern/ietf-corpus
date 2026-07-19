@@ -1,0 +1,10 @@
+document: rfc-9828
+kind: normative-requirement
+summary: If P=1, the transmission time offset TOFF for two consecutive RTP packets with identical timestamp fields MUST NOT differ by more than 4095 (approximately 45 ms at 90 kHz). The sender SHOULD set P=1 but only when it can generate PTSTAMP accurately.
+section: "7.4"
+rfc2119_level: MUST NOT
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9833
+kind: design-rationale
+summary: The common AC module is intentionally a pure library of groupings, identities, and types that exposes no writable data nodes, read-only state, or RPCs on its own. This design keeps security concerns in the consuming modules and allows the common module to be reused across service, network, and device model layers without introducing independent management attack surface.
+section: "6"
+topics:
+    - yang
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

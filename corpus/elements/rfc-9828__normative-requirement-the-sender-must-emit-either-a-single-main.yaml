@@ -1,0 +1,10 @@
+document: rfc-9828
+kind: normative-requirement
+summary: The sender MUST emit either a single Main Packet with MH=3 (sole Main Packet for the codestream), or one or more Main Packets with MH=1 followed by exactly one Main Packet with MH=2. Main Packet Payload Header fields MUST be identical across all Main Packets of a codestream except for MH, ESEQ, and PTSTAMP.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9828
+kind: design-rationale
+summary: The extended sequence number (ESEQ field providing high-order bits beyond the standard 16-bit RTP sequence number) is borrowed from RFC 4175 to prevent ambiguity at high data rates. At 1 Gbps with 1000-octet RTP packets, the standard 16-bit sequence number rolls over in 0.5 seconds, which is shorter than typical round-trip times.
+section: "1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

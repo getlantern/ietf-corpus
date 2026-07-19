@@ -1,0 +1,9 @@
+document: rfc-9828
+kind: design-rationale
+summary: Only ORDH values 4 (PCRL) and 6 (PRCL) support sub-codestream latency streaming because these progression orders emit image data in position-first order, allowing RTP packets to be sent as the top of the frame is encoded before the rest is available. The PRCL order defined in JPEG 2000-2 (T.801) is particularly useful for subframe latency operations.
+section: "5.3"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

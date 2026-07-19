@@ -1,0 +1,9 @@
+document: rfc-9828
+kind: design-rationale
+summary: Sub-codestream latency is achieved by avoiding JPEG 2000 PLM and PLT marker segments, which can only be written after the entire codestream is complete. Instead, the payload header fields ORDH, ORDB, POS, and PID indicate resynchronization points so receivers can restart codestream processing mid-stream without needing those markers.
+section: "1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

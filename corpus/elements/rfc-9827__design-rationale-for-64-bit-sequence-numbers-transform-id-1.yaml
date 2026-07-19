@@ -1,0 +1,9 @@
+document: rfc-9827
+kind: design-rationale
+summary: For 64-bit sequence numbers (Transform ID 1), only the low-order 32 bits are transmitted in the AH/ESP Sequence Number field because that field is only 32 bits wide. The high-order bits are reconstructed by the receiver, making authentication of incoming packets a requirement even without active replay protection.
+section: "3"
+topics:
+    - ipsec
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

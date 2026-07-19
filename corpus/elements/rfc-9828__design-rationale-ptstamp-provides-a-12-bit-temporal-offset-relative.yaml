@@ -1,0 +1,9 @@
+document: rfc-9828
+kind: design-rationale
+summary: PTSTAMP provides a 12-bit temporal offset relative to the first RTP packet with the same timestamp, allowing receivers to recover the sender clock more rapidly than is possible using only the 90 kHz RTP timestamp. PTSTAMP is only applicable when consecutive RTP packets with the same timestamp are transmitted within 45 ms of each other.
+section: "1"
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

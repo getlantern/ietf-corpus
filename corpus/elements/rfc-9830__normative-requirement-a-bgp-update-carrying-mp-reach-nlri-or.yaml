@@ -1,0 +1,10 @@
+document: rfc-9830
+kind: normative-requirement
+summary: A BGP UPDATE carrying MP_REACH_NLRI or MP_UNREACH_NLRI with SR Policy SAFI MUST also carry the BGP mandatory attributes. The Tunnel Encapsulation Attribute MUST be attached and MUST contain a Tunnel Type TLV set to SR Policy (15); any other Tunnel Type MUST be treated as malformed via treat-as-withdraw.
+section: "2.2"
+rfc2119_level: MUST
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9829
+kind: design-rationale
+summary: In the RPKI, the ordering functionality provided by CRL Numbers is fully subsumed by monotonically increasing manifest numbers (RFC 9286 Section 4.2.1). Because an RPKI RP can always unambiguously identify exactly one current CRL via the manifest fileList and hash, the CRL Number extension adds only complexity and fragility to path validation rather than providing useful ordering information.
+section: "1"
+topics:
+    - pkix
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

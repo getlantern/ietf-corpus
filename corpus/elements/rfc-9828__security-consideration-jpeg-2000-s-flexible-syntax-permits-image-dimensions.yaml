@@ -1,0 +1,10 @@
+document: rfc-9828
+kind: security-consideration
+summary: JPEG 2000's flexible syntax permits image dimensions up to 2^32−1 pixels, which can cause memory structure sizes to vary enormously. Implementations SHOULD take care when processing input that influences memory allocation and SHOULD fail gracefully when resource constraints are exceeded, to avoid denial-of-service from pathological inputs.
+section: "9.2"
+topics:
+    - security
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

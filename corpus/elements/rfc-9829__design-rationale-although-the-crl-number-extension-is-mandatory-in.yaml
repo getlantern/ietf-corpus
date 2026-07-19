@@ -1,0 +1,10 @@
+document: rfc-9829
+kind: design-rationale
+summary: Although the CRL Number extension is mandatory in RPKI CRLs for compliance with the X.509 v2 CRL Profile (RFC 5280 Section 5), any reliance on it by RPKI RPs merely adds complexity because the manifest already provides unambiguous, tamper-evident CRL identification. The document therefore mandates that RPs ignore the CRL Number for ordering purposes.
+section: "1"
+topics:
+    - pkix
+    - security
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

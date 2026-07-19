@@ -1,0 +1,10 @@
+document: rfc-9828
+kind: normative-requirement
+summary: The sender MUST set XTRAC to 0 and MUST set all unassigned (reserved) values to 0. A sender MUST NOT use extension values. Receivers MUST accept XTRAC ≠ 0 and MUST ignore XTRAB; receivers MUST ignore unassigned values; receivers MUST discard any RTP packet containing an extension value.
+section: "7.6"
+rfc2119_level: MUST
+topics:
+    - rtp
+    - realtime
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
