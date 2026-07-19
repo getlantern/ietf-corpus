@@ -1,0 +1,8 @@
+document: rfc-9808
+kind: design-rationale
+summary: Limits communicated from dCDN to uCDN use the TTL provided by the underlying transport (e.g., HTTP Cache-Control header) to determine validity. If the transport lacks such a mechanism, TTL must be communicated out-of-band. This design reuses existing HTTP caching infrastructure rather than defining a new TTL field.
+section: "1.3"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

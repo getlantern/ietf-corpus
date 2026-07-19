@@ -1,0 +1,10 @@
+document: rfc-9802
+kind: security-consideration
+summary: 'Correct state management for stateful HBS private keys is crucial. Recommended strategies include: logging OTS key indexes and checking before each signature release; limiting total signatures to a manageable count; and applying a state reservation strategy (reserving upcoming states in advance) to reduce synchronizations between nonvolatile and volatile memory.'
+section: "10"
+topics:
+    - crypto
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

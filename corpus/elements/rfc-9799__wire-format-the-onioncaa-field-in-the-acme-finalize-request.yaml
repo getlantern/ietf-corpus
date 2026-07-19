@@ -1,0 +1,11 @@
+document: rfc-9799
+kind: wire-format
+summary: 'The onionCAA field in the ACME finalize request carries an in-band CAA record set per ''.onion'' domain, with subfields: ''caa'' (string or null), ''expiry'' (Unix timestamp, MUST be processed as at least 64-bit integer), and ''signature'' (base64url Ed25519 signature). The signature covers ''onion-caa|'' || expiry || ''|'' || caa in UTF-8.'
+section: "6.4"
+topics:
+    - security
+    - crypto
+    - json
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9799
+kind: normative-requirement
+summary: The onion-csr-01 challenge nonce MUST contain at least 64 bits of entropy. A response generated using a nonce MUST NOT be accepted by the ACME server if the nonce was generated more than 30 days prior, per CA/Browser Forum Baseline Requirements.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

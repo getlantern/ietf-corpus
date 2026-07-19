@@ -1,0 +1,10 @@
+document: rfc-9802
+kind: design-rationale
+summary: Root CA certificates are more appropriate for stateful HBS public keys than subordinate CA certificates because root CAs sign in more secure environments and issue fewer certificates, keeping signature counts well below the OTS key limit. A subordinate CA may use stateful HBS only if it matches root CA security and signature-count restrictions.
+section: "3"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

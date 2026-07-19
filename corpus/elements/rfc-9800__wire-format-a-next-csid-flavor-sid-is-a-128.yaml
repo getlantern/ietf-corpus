@@ -1,0 +1,9 @@
+document: rfc-9800
+kind: wire-format
+summary: 'A NEXT-CSID flavor SID is a 128-bit container structured as: Locator-Block (LBL bits) | Locator-Node+Function of first CSID (LNFL bits) | Argument carrying subsequent CSIDs (AL = 128-LBL-LNFL bits). Each subsequent CSID is packed into the Argument in forward order, most significant bits first. A container can carry up to K = floor((128-LBL)/LNFL) CSIDs.'
+section: "4.1"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

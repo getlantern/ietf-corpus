@@ -1,0 +1,9 @@
+document: rfc-9799
+kind: protocol-element
+summary: A 'caa-critical' flag in the First Layer Hidden Service Descriptor signals that CAA records are present in the Second Layer Descriptor. If an ACME server encounters this flag, it MUST NOT proceed with issuance until it can decrypt and parse the CAA records, preventing mis-issuance by CAs unaware of the CAA policy.
+section: "6.3"
+topics:
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

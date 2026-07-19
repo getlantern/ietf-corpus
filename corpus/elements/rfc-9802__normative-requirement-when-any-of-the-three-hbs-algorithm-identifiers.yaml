@@ -1,0 +1,10 @@
+document: rfc-9802
+kind: normative-requirement
+summary: When any of the three HBS algorithm identifiers appears in the SubjectPublicKeyInfo of an end-entity X.509 certificate, the keyUsage extension MUST contain at least one of digitalSignature, nonRepudiation, or cRLSign, and MUST NOT contain other values. The keyCertSign bit is excluded for end entities.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

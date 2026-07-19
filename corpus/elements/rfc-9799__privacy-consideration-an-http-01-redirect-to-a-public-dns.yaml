@@ -1,0 +1,9 @@
+document: rfc-9799
+kind: privacy-consideration
+summary: An http-01 redirect to a public DNS domain during validation reveals the target site's IP address and other information to the ACME server operator that Tor was designed to protect. If an ACME server receives such a redirect, it MUST NOT use Tor to connect to the redirected destination. Hidden Service operators MUST consider these privacy implications.
+section: "8.5"
+topics:
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9800
+kind: wire-format
+summary: A REPLACE-CSID container in packed format is a 128-bit Segment List entry split into K = floor(128/LNFL) positions of LNFL bits each, with CSIDs packed from least significant to most significant position (the second CSID in the sequence occupies position K-1, the third K-2, etc.). If LNFL does not divide 128 evenly, zero padding fills the least significant remaining bits.
+section: "4.2"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

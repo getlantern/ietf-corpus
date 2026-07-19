@@ -1,0 +1,9 @@
+document: rfc-9799
+kind: design-rationale
+summary: The 'dns' identifier type is reused for '.onion' domains rather than defining a new identifier type because existing ACME tooling (e.g., Certbot with NGINX) can remain unaware of '.onion' special handling when placed behind a Tor-terminating proxy, requiring no modification. This backward compatibility was a key design driver.
+section: A
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

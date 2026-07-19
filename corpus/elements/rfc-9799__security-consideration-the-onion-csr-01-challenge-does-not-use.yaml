@@ -1,0 +1,9 @@
+document: rfc-9799
+kind: security-consideration
+summary: The onion-csr-01 challenge does not use the key authorization string from RFC 8555 Section 8.1, but this does not weaken authorization integrity. Because the validation channel is ACME itself and ACME requires requests to be signed by the account key, the key authorization is redundant.
+section: "8.3"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

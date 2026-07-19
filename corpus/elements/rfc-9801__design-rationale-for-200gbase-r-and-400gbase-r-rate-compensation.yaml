@@ -1,0 +1,6 @@
+document: rfc-9801
+kind: design-rationale
+summary: For 200GBASE-R and 400GBASE-R, rate compensation is applied so the 66B-encoded bit-stream carried by PLE runs at 528/544 times the nominal PMA interface bitrate. Rate compensation blocks are 66B control characters of type 0x00, inserted at a defined rate (X=16 for 200GBASE-R, X=32 for 400GBASE-R) so the CE-bound IWF can identify and strip them.
+section: 4.2.4
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

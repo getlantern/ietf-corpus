@@ -1,0 +1,10 @@
+document: rfc-9809
+kind: design-rationale
+summary: A separate id-kp-trustAnchorConfigSigning was defined rather than relying on id-kp-configSigning because trust anchor management is a particularly critical task; a device must only accept trust anchor configuration files verified by a certificate explicitly issued for that purpose, preventing misuse of general signing certificates.
+section: "1"
+topics:
+    - pkix
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

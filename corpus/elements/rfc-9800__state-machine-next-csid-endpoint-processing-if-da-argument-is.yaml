@@ -1,0 +1,9 @@
+document: rfc-9800
+kind: state-machine
+summary: 'NEXT-CSID endpoint processing: if DA.Argument is non-zero, copy DA.Argument into bits [LBL..(LBL+AL-1)] of the Destination Address, zero bits [(LBL+AL)..127], decrement Hop Limit, and submit for FIB lookup (without advancing Segments Left). If DA.Argument is zero, advance normally per RFC 8986 by copying the next SRH Segment List entry to the Destination Address.'
+section: 4.1.1
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

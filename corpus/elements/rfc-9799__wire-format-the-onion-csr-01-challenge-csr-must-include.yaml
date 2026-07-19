@@ -1,0 +1,10 @@
+document: rfc-9799
+kind: wire-format
+summary: 'The onion-csr-01 challenge CSR must include two OID-identified extension attributes: caSigningNonce (OID cabf 41) containing the server''s raw nonce bytes, and applicantSigningNonce (OID cabf 42) containing a client-generated nonce of at least 64 bits of entropy. Both attributes use OCTET STRING syntax with SINGLE VALUE constraint. The CSR is submitted as base64url-encoded DER in the ''csr'' field.'
+section: "3.2"
+topics:
+    - pkix
+    - crypto
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

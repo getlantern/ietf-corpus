@@ -1,0 +1,9 @@
+document: rfc-9803
+kind: security-consideration
+summary: An attacker who compromises a registrar customer account could make unauthorized NS/glue record changes and then increase associated TTLs so the malicious changes persist in caches long after detection. Client implementations should enforce upper TTL limits and apply best practices for credential management, MFA, and risk-based access control.
+section: "6.2"
+topics:
+    - security
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,6 @@
+document: rfc-9801
+kind: state-machine
+summary: 'The CE-bound IWF operates in three states: (1) Intermediate — VPWS has just come up, packets are buffered and fault-indication signal is injected until the jitter buffer reaches a preconfigured fill level (typically 50%); (2) Normal — jitter buffer sufficiently filled, bit-stream is streamed out with egress clock recovery; (3) PLOS — consecutive packet loss exceeds 1 ms threshold, fault-indication injected and R bit signaled upstream. Transition from PLOS back to Normal requires the same preconfigured buffer fill as the Intermediate-to-Normal transition.'
+section: 7.2.2
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

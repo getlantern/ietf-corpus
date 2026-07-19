@@ -1,0 +1,9 @@
+document: rfc-9799
+kind: privacy-consideration
+summary: ACME clients requesting certificates for '.onion' domains over a non-Tor connection can inadvertently expose the existence of the Hidden Service, even with ECH, because ACME server IP addresses are well-known. ACME clients SHOULD connect to ACME servers over Tor, preferring a Hidden Service endpoint.
+section: "8.9"
+topics:
+    - privacy
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

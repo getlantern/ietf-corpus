@@ -1,0 +1,10 @@
+document: rfc-9799
+kind: normative-requirement
+summary: All subdomains under a '.onion' Special-Use Domain Name share the same CAA record set as the apex, since subdomain delegation is impossible. Implementors MUST NOT look for CAA records at the 'onion' Special-Use TLD as it does not exist in any form except as described in RFC 7686.
+section: "6.1"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9800
+kind: design-rationale
+summary: CSIDs within a given NEXT-CSID container appear in forward order to leverage longest-prefix match (LPM) IP forwarding, while entries in the SRH Segment List appear in reversed processing order as required by RFC 8754. This asymmetry is intentional to enable hardware-efficient LPM-based SID lookup at each hop without reordering the SRH.
+section: "3"
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

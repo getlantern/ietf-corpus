@@ -1,0 +1,10 @@
+document: rfc-9803
+kind: normative-requirement
+summary: EPP servers implementing this extension MUST restrict accepted DNS record types to those registered in IANA-RRTYPES and appropriate for use above a zone cut. A server receiving a <create> or <update> command attempting to set TTL values for inapplicable DNS record types MUST respond with a 2306 'Parameter value policy' error.
+section: 1.2.1.2
+rfc2119_level: MUST
+topics:
+    - dns
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

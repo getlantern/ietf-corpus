@@ -1,0 +1,8 @@
+document: rfc-9799
+kind: security-consideration
+summary: An ACME server MUST make its own connection to the Hidden Service via the Tor network and MUST NOT outsource this to a third-party service such as Tor2Web. Additionally, an ACME server MUST NOT utilize Tor for validation of domains that are not '.onion', due to the risk of exit hijacking.
+section: "8.4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

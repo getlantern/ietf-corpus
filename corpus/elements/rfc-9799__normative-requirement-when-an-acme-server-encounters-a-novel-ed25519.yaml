@@ -1,0 +1,9 @@
+document: rfc-9799
+kind: normative-requirement
+summary: When an ACME server encounters a novel Ed25519 authKey, the client must resign and republish its Hidden Service Descriptor and wait for propagation. ACME servers MUST NOT expire challenges before a reasonable time; it is RECOMMENDED the server allow at least 30 minutes for descriptor propagation.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

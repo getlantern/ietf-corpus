@@ -1,0 +1,9 @@
+document: rfc-9799
+kind: security-consideration
+summary: The Second Layer Hidden Service Descriptor is signed, encrypted, and encoded with a MAC such that only the holder of the hidden service secret key can manipulate what is published there, giving CAA records in the descriptor equivalent or better security to DNS CAA. In-band CAA from the ACME client is verified using the same hidden service key, so the security model is equivalent.
+section: "8.6"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

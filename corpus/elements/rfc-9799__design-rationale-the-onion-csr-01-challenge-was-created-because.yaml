@@ -1,0 +1,9 @@
+document: rfc-9799
+kind: design-rationale
+summary: The onion-csr-01 challenge was created because http-01 and tls-alpn-01 do not allow issuance of wildcard certificates, but '.onion' domains can have subdomains and operators may need a single certificate for all virtual hosts. Incorporating the CA/Browser Forum's specially-signed CSR method into ACME enables wildcard issuance.
+section: "3.2"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9800
+kind: state-machine
+summary: 'REPLACE-CSID endpoint processing: if DA.Arg.Index is non-zero, decrement it and extract the CSID at the new index from the current packed container into bits [LBL..LBL+LNFL-1] of the Destination Address. If DA.Arg.Index is zero, decrement Segments Left and set DA.Arg.Index to K-1, then extract the CSID from the next packed container. A zero CSID value or reaching the end of the segment list terminates the CSID sequence.'
+section: 4.2.1
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
