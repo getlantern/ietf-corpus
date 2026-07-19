@@ -1,0 +1,9 @@
+document: rfc-9946
+kind: wire-format
+summary: 'Load PDU (pduId=0xBEEF, 2 octets): contains pduId (2), testAction (1), rxStopped (1), lpduSeqNo (4), udpPayload (2), spduSeqErr (2), spduTime_sec (4), spduTime_nsec (4), followed by variable payload; authentication is not applied to Load PDUs, but the optional UDPSTP checksum SHALL be used when UDP data integrity is uncertain.'
+section: "8.1"
+topics:
+    - measurement
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

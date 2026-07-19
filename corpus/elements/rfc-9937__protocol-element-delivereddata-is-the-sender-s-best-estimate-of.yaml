@@ -1,0 +1,9 @@
+document: rfc-9937
+kind: protocol-element
+summary: DeliveredData is the sender's best estimate of bytes delivered since the previous ACK. With SACK it equals the change in SND.UNA plus the signed change in SACKed bytes. Without SACK, it is estimated as 1 SMSS per duplicate ACK, or the change in SND.UNA minus 1 SMSS per preceding duplicate ACK on a full/partial ACK.
+section: "6.2"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

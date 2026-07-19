@@ -1,0 +1,9 @@
+document: rfc-9937
+kind: protocol-element
+summary: Recovery Flight Size (RecoverFS) is the sender's estimate of bytes possibly delivered during a PRR episode. It is initialized as SND.NXT - SND.UNA, minus bytes already SACKed in scoreboard, plus newly SACKed bytes, plus newly cumulatively acknowledged bytes. It remains constant during a recovery episode.
+section: "6.1"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

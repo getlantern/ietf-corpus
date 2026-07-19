@@ -1,0 +1,10 @@
+document: rfc-9937
+kind: normative-requirement
+summary: For non-SACK connections, senders MUST subtract min(RecoverFS, 1 SMSS per preceding duplicate ACK) from the inflight estimate, rather than subtracting SACKed bytes. The min() with RecoverFS protects against misbehaving receivers.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

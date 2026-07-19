@@ -1,0 +1,10 @@
+document: rfc-9937
+kind: normative-requirement
+summary: On completion of a PRR episode (end of fast recovery or start of a new congestion control response), cwnd MUST be set to ssthresh. This prevents cwnd from ending recovery well below ssthresh due to application-limited behavior.
+section: "6.4"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

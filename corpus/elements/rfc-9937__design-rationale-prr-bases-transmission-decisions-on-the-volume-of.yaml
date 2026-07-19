@@ -1,0 +1,9 @@
+document: rfc-9937
+kind: design-rationale
+summary: PRR bases transmission decisions on the volume of delivered data rather than the volume of lost data, unlike RFC 6675 where a single SACK-carrying ACK implying large missing data can cause a step discontinuity in the pipe estimator and trigger a large unclocked burst. This is the core motivation for PRR's self-clocking approach.
+section: "11.3"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

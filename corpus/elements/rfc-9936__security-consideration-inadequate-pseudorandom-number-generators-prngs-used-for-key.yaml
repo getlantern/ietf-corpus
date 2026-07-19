@@ -1,0 +1,9 @@
+document: rfc-9936
+kind: security-consideration
+summary: Inadequate pseudorandom number generators (PRNGs) used for key generation or encapsulation can result in little or no security. Key generation uses a random 32-byte seed; encapsulation deterministically encrypts a random 32-byte message. Weak randomness allows an attacker to search a small set of possibilities rather than mount an algorithmic attack.
+section: "4"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9944
+kind: design-rationale
+summary: SCIM was chosen over NETCONF/RESTCONF for device provisioning because NETCONF and RESTCONF focus on configuration rather than provisioning, SCIM is designed for inter-domain provisioning over HTTP (supporting user-based, OAuth, and certificate authentication), and SCIM's data model is more targeted to provisioning as articulated in RFC 7643. End devices are not intended to be directly configured, leaving SCIM as the best standard option.
+section: "1.1"
+topics:
+    - json
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

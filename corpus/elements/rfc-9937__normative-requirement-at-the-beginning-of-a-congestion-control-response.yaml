@@ -1,0 +1,10 @@
+document: rfc-9937
+kind: normative-requirement
+summary: 'At the beginning of a congestion control response episode, a data sender using PRR MUST initialize PRR state variables: ssthresh (via CongCtrlAlg()), prr_delivered = 0, prr_out = 0, and RecoverFS computed from SND.NXT - SND.UNA adjusted for SACKed bytes.'
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

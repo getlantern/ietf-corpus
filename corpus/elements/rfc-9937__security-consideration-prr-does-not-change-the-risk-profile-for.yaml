@@ -1,0 +1,10 @@
+document: rfc-9937
+kind: security-consideration
+summary: PRR does not change the risk profile for transport protocols. However, implementations that count segments instead of bytes must be cautious about ACK splitting attacks (Savage99), where a misbehaving receiver acknowledges partial segments to confuse the sender's congestion accounting.
+section: "13"
+topics:
+    - tcp
+    - security
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

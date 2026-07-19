@@ -1,0 +1,9 @@
+document: rfc-9937
+kind: design-rationale
+summary: PRR is less sensitive to errors in the inflight estimator than RFC 6675. When inflight is misestimated (e.g., underestimated due to premature loss marking of reordered data), PRR's response differs by at most 1 segment per ACK between its two sub-algorithms, whereas RFC 6675 can send large bursts that cannot be retracted once the estimator corrects.
+section: "7"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

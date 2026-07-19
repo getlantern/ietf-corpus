@@ -1,0 +1,9 @@
+document: rfc-9937
+kind: design-rationale
+summary: RecoverFS was changed to properly account for sequence ranges SACKed before entering fast recovery, correcting a defect in RFC 6937 where PRR would send too slowly after entering recovery following a large amount of pre-recovery SACKing (e.g., when the sender had previously detected high reordering).
+section: "4"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9935
+kind: protocol-element
+summary: 'ML-KEM private keys are encoded as a DER CHOICE with three alternatives: seed (context-specific [0] implicit tag, 64 octets for all levels), expandedKey (OCTET STRING, size varies by level), and both (SEQUENCE containing seed and expandedKey). All three are wrapped in the privateKey field of OneAsymmetricKey (RFC 5958).'
+section: "6"
+topics:
+    - pkix
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

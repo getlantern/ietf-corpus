@@ -1,0 +1,10 @@
+document: rfc-9946
+kind: security-consideration
+summary: Authentication uses HMAC-SHA-256 over the entire PDU with authDigest and checkSum fields preset to zero before hashing. Replay protection is provided by a 32-bit authUnixTime with a ±5-second tolerance window. Encryption is deliberately omitted because only synthetic payload data is carried.
+section: "11"
+topics:
+    - security
+    - crypto
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

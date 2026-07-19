@@ -1,0 +1,10 @@
+document: rfc-9937
+kind: normative-requirement
+summary: If prr_out is 0 and SndCnt is 0 upon entering recovery, SndCnt MUST be forced to SMSS to ensure a fast retransmit is sent, maintaining the ACK clock and avoiding potential RTO events.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

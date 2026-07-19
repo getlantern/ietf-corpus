@@ -1,0 +1,10 @@
+document: rfc-9946
+kind: protocol-element
+summary: The server assigns a unique ephemeral UDP port per test connection (returned in the testPort field of the Setup Response). The server immediately sends a Null Request from that port to open firewall pinholes; Status messages during the Data phase also keep NAT/firewall mappings active.
+section: "5.5"
+topics:
+    - measurement
+    - nat
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

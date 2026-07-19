@@ -1,0 +1,8 @@
+document: rfc-9944
+kind: security-consideration
+summary: Deletion of a SCIM device object is only a signal of intent; the server may or may not revoke network access. It is RECOMMENDED that SCIM delete operations trigger a workflow in accordance with local network policy. Read and update operations SHOULD be restricted to clients that created the objects or those they explicitly authorize.
+section: "8.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

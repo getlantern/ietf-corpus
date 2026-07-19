@@ -1,0 +1,11 @@
+document: rfc-9937
+kind: normative-requirement
+summary: Without SACK, PRR disallows incrementing DeliveredData when the total bytes delivered in a PRR episode would exceed RecoverFS, as a mitigation against misbehaving receivers that return extraneous duplicate ACKs to artificially inflate DeliveredData.
+section: "6.2"
+rfc2119_level: MUST NOT
+topics:
+    - tcp
+    - congestion
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9937
+kind: design-rationale
+summary: 'Setting cwnd = ssthresh at the end of recovery (not the start, as in RFC 6675) is critical for robust performance: without it, application-limited senders and certain loss patterns could end fast recovery well below ssthresh, causing worse performance than RFC 6675.'
+section: "4"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9937
+kind: design-rationale
+summary: 'PRR-CRB satisfies the Strong Packet Conservation Bound: it never transmits more data than has been delivered to the receiver, ensuring a bottleneck queue maintains exactly constant length during recovery. However, this bound alone is less aggressive than RFC 6675 in burst-loss scenarios, motivating PRR-SSRB as a compromise that allows one extra segment per ACK when recovery is progressing well.'
+section: "7"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

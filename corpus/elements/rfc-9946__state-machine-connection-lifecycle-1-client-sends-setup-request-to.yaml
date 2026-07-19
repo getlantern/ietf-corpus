@@ -1,0 +1,9 @@
+document: rfc-9946
+kind: state-machine
+summary: 'Connection lifecycle: (1) Client sends Setup Request to standard port → server accepts, allocates ephemeral port, sends Setup Response + Null Request; (2) Client sends Activation Request to ephemeral port → server accepts/modifies/rejects; (3) Sender streams Load PDUs, receiver streams Status Feedback PDUs; (4) Server sets TEST_ACT_STOP in outgoing PDU → client acknowledges with TEST_ACT_STOP → graceful teardown. Watchdog timers at both ends enforce non-graceful termination on silence.'
+section: "4"
+topics:
+    - measurement
+    - udp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

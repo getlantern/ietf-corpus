@@ -1,0 +1,10 @@
+document: rfc-9937
+kind: normative-requirement
+summary: SACK-enabled connections using RACK-TLP or other non-pipe loss detection MUST calculate inflight as SND.NXT - SND.UNA, minus SACKed bytes, minus bytes marked lost, plus bytes retransmitted since last marked lost.
+section: "6.2"
+rfc2119_level: MUST
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

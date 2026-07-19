@@ -1,0 +1,10 @@
+document: rfc-9935
+kind: security-consideration
+summary: Protection of the private key (seed) is vital. Disclosure enables masquerades. The generation of private keys relies on a CSPRNG; inadequate PRNGs can result in little or no security, as an attacker may find it much easier to reproduce the PRNG environment than brute-force the full key space.
+section: "9"
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

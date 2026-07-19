@@ -1,0 +1,9 @@
+document: rfc-9937
+kind: design-rationale
+summary: 'The SafeACK heuristic was introduced after traffic policing research showed that both PRR-CRB and PRR-SSRB performed poorly under high-loss policer conditions. PRR-CRB was too timid and PRR-SSRB too aggressive, both causing prolonged recovery. SafeACK dynamically switches: use PRR-CRB by default, switch to PRR-SSRB only when ACKs show SND.UNA advancing without new losses.'
+section: "4"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
