@@ -1,0 +1,9 @@
+document: rfc-9967
+kind: design-rationale
+summary: The asynchronous bulk txn claim format (base-txn:index) was chosen over 'bulkId' because bulkId is a temporary identifier not required on every operation, whereas zero-based array index maps deterministically back to the original request ordering even when the service provider optimizes operation sequence.
+section: 2.5.1.2
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

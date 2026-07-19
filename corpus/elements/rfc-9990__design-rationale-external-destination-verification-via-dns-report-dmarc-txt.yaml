@@ -1,0 +1,10 @@
+document: rfc-9990
+kind: design-rationale
+summary: 'External destination verification via DNS (''_report._dmarc'' TXT lookup) is required to prevent abuse: without it, a bad actor could publish a DMARC record directing high-volume failed-authentication reports at an arbitrary victim address, causing a report-based DDoS.'
+section: "4"
+topics:
+    - email
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

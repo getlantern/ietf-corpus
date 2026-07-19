@@ -1,0 +1,9 @@
+document: rfc-9989
+kind: state-machine
+summary: DMARC produces a 'pass' result if at least one Authenticated Identifier (from DKIM or SPF) aligns with the Author Domain; otherwise it produces 'fail'. If zero or more than one RFC5322.From domain is present, DMARC validation terminates. DNS errors during validation prevent a definitive pass or fail, leaving handling to Mail Receiver discretion.
+section: 5.3.5
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

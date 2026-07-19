@@ -1,0 +1,8 @@
+document: rfc-9991
+kind: wire-format
+summary: 'The Identity-Alignment field carries a comma-separated list of authentication mechanism names (''dkim'' and/or ''spf'') that failed to authenticate an aligned identity, or the keyword ''none'' if all attempted methods succeeded. ABNF: id-align = ''Identity-Alignment:'' [CFWS] ( ''none'' / dmarc-method *( [CFWS] '','' [CFWS] dmarc-method ) ) [CFWS]; each method may appear at most once.'
+section: "4"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

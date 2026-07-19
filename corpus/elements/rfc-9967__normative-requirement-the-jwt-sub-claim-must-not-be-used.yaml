@@ -1,0 +1,10 @@
+document: rfc-9967
+kind: normative-requirement
+summary: The JWT 'sub' claim MUST NOT be used to identify subjects in SCIM Events, to prevent confusion with JWT authorization tokens. Instead, the top-level claim 'sub_id' SHALL be used with 'format' set to 'scim'.
+section: "2.1"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,8 @@
+document: rfc-9967
+kind: security-consideration
+summary: High-rate SCIM resources (e.g., Groups with thousands of members) can cause excessive change rates leading to loss of SET Events. Mitigations include preferring SCIM PATCH over PUT for large groups, using notice-mode events with periodic GETs, and aggregating multiple PATCH events into a single event.
+section: "5"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

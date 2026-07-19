@@ -1,0 +1,9 @@
+document: rfc-9989
+kind: interoperability-note
+summary: SPF with a hard-fail ('-all') suffix can cause message rejection early in the SMTP transaction before DMARC processing occurs, preventing a DKIM-aligned pass from saving the message and causing those rejections to be invisible to DMARC aggregate reports since the DATA phase is never reached.
+section: "7.1"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

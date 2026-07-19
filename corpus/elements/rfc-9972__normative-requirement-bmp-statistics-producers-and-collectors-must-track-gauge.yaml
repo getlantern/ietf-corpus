@@ -1,0 +1,10 @@
+document: rfc-9972
+kind: normative-requirement
+summary: BMP statistics producers and collectors MUST track Gauge discontinuities (e.g., from manual clearance or overflow) and log this anomaly. They MAY perform consistency checks but MUST NOT assume strict dependencies between global and per-AFI/SAFI counts due to potential race conditions.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

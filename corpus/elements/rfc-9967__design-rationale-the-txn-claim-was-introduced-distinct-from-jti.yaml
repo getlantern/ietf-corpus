@@ -1,0 +1,9 @@
+document: rfc-9967
+kind: design-rationale
+summary: The 'txn' claim was introduced distinct from 'jti' because 'jti' uniquely identifies a token whereas 'txn' identifies an underlying transaction — the same transaction can produce multiple SETs (e.g., for retransmission or multiple receivers) that all share the same 'txn' value, enabling deduplication in CP and async scenarios.
+section: "2.2"
+topics:
+    - security
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

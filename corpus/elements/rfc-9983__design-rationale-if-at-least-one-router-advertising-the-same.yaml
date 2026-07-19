@@ -1,0 +1,8 @@
+document: rfc-9983
+kind: design-rationale
+summary: If at least one router advertising the same prefix sets the AC-Flag, the prefix is considered anycast. A prefix advertised by a single node without an AC-Flag is considered node-specific. This asymmetric rule means a single AC-Flag setter overrides the absence of the flag from other advertisers.
+section: "2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

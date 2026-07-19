@@ -1,0 +1,10 @@
+document: rfc-9983
+kind: security-consideration
+summary: The YANG data node 'anycast-flag' is writable and sensitive; unauthorized write operations could prevent correct interpretation of a prefix as anycast or node-specific. YANG management protocols must use secure transport (SSH, TLS, QUIC) with mutual authentication, and NACM should restrict access.
+section: "6.2"
+topics:
+    - security
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

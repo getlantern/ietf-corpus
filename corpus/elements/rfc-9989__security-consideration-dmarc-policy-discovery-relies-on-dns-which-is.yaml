@@ -1,0 +1,10 @@
+document: rfc-9989
+kind: security-consideration
+summary: DMARC policy discovery relies on DNS, which is susceptible to cache poisoning and other attacks. Mail Receivers should use DNSSEC where possible. A transient DNS failure during policy lookup cannot produce a definitive DMARC result; Mail Receivers may 'fail open' (deliver) or 'fail closed' (issue a 4xx SMTP reply) depending on local policy.
+section: "11.3"
+topics:
+    - email
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

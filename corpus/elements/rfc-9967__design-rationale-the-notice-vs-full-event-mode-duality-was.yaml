@@ -1,0 +1,9 @@
+document: rfc-9967
+kind: design-rationale
+summary: 'The ''notice'' vs ''full'' event mode duality was designed to support two distinct deployment patterns: Domain-Based Replication (DBR) uses ''full'' to replicate complete resource state without callbacks, while Coordinated Provisioning (CP) uses ''notice'' to minimize data shared in transit and requires the receiver to call back for data, enabling per-receiver access control.'
+section: "2.4"
+topics:
+    - security
+    - privacy
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

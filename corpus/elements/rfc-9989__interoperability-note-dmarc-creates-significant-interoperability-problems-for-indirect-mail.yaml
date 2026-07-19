@@ -1,0 +1,8 @@
+document: rfc-9989
+kind: interoperability-note
+summary: DMARC creates significant interoperability problems for indirect mail flows such as mailing lists, forwarders, and alias services, where the RFC5322.From domain is preserved but SPF and DKIM alignment may break. Mail Receivers SHOULD NOT reject solely on 'p=reject' to avoid rejecting legitimate forwarded mail.
+section: "7.4"
+topics:
+    - email
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

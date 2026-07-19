@@ -1,0 +1,11 @@
+document: rfc-9990
+kind: normative-requirement
+summary: When the Organizational Domain of the reporting URI host differs from the policy domain, verification MUST be performed by querying DNS for a TXT record at '<policy-domain>._report._dmarc.<destination-host>'. The record must contain 'v=DMARC1' as the first tag; unauthorized external reporting URIs MUST be ignored.
+section: "4"
+rfc2119_level: MUST
+topics:
+    - email
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

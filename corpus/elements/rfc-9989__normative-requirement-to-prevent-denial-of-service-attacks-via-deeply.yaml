@@ -1,0 +1,11 @@
+document: rfc-9989
+kind: normative-requirement
+summary: To prevent denial-of-service attacks via deeply nested Author Domains, the DNS Tree Walk MUST NOT result in more than eight DNS queries for any Author Domain. For domains with more than eight labels, queries skip intermediate labels so that at most eight queries are issued.
+section: "4.10"
+rfc2119_level: MUST NOT
+topics:
+    - email
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9991
+kind: security-consideration
+summary: 'Failure reports represent a possible denial-of-service attack: an attacker sending numerous messages purporting to be from a victim Domain Owner but failing SPF and DKIM causes participating Mail Receivers to flood the Domain Owner with reports. Mitigation includes aggregating reports via the ARF Incidents field, storing reports before sending, and applying rate-limiting.'
+section: "8.1"
+topics:
+    - email
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

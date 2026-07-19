@@ -1,0 +1,9 @@
+document: rfc-9989
+kind: protocol-element
+summary: The DNS Tree Walk is the algorithm for discovering an Organizational Domain or applicable DMARC Policy Record. Starting from the Author Domain, it queries for '_dmarc.<domain>' TXT records, removing one label at a time, stopping when a record with 'psd=n' or 'psd=y' is found or labels are exhausted. Author Domains with more than eight labels trigger a shortcut limiting the walk to eight total queries.
+section: "4.10"
+topics:
+    - email
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
