@@ -1,0 +1,10 @@
+document: rfc-9820
+kind: normative-requirement
+summary: If the EAP authenticator sends a restricted list of cipher suites, it MUST include the default value 0 (AES-CCM-16-64-128, SHA-256), since that cipher suite is mandatory to implement. The keying material MUST also be renewed before Session-Lifetime expiration.
+section: "6.1"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

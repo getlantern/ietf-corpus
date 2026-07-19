@@ -1,0 +1,9 @@
+document: rfc-9819
+kind: design-rationale
+summary: The RFC 9252 bitwise logical-OR approach for combining LOC:FUNC and ARG assumes a uniform SID structure across both route types, which is not universally valid. This document removes that restriction by specifying explicit offset-based ARG encoding using the SID Structure Sub-Sub-TLV fields, enabling deployments where bridge domains use different function lengths (e.g., FL:16 vs FL:32 as shown in Figure 7).
+section: "1"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

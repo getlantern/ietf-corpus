@@ -1,0 +1,9 @@
+document: rfc-9820
+kind: design-rationale
+summary: Only the HKDF-Expand function (not HKDF-Extract) is used for key derivation because the MSK exported by compliant EAP methods (RFC 4017) is already considered strong and fresh keying material. Using KDF-Extract in addition would be redundant and add unnecessary overhead on constrained devices.
+section: "8.1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

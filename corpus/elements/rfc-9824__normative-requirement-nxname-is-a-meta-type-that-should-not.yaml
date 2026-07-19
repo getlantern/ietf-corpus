@@ -1,0 +1,9 @@
+document: rfc-9824
+kind: normative-requirement
+summary: NXNAME is a Meta-TYPE that SHOULD NOT appear anywhere in a DNS message except in the NSEC Type Bit Maps field of a Compact Answer response for a nonexistent name. A server MAY also include Extended DNS Error (EDE) code 30 (Invalid Query Type) when returning FORMERR for an NXNAME query.
+section: "3.5"
+rfc2119_level: SHOULD NOT
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

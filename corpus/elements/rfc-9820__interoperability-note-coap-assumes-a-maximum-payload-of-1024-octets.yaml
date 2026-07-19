@@ -1,0 +1,9 @@
+document: rfc-9820
+kind: interoperability-note
+summary: CoAP assumes a maximum payload of 1024 octets, which satisfies EAP's minimum MTU requirement of 1020 octets for the common case. For identities or EAP methods exceeding this, CoAP block-wise transfers (RFC 7959) can be used to overcome the limitation.
+section: "7.1"
+topics:
+    - security
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

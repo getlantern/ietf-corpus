@@ -1,0 +1,9 @@
+document: rfc-9815
+kind: design-rationale
+summary: A new BGP-LS-SPF SAFI (80) is introduced rather than reusing the BGP-LS SAFI to ensure backward compatibility. The BGP-LS SAFI uses the standard BGP Decision Process, whereas BGP-LS-SPF replaces it with SPF computation; sharing a SAFI would create conflicts.
+section: "3"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

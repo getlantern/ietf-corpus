@@ -1,0 +1,9 @@
+document: rfc-9815
+kind: state-machine
+summary: 'The Dijkstra SPF algorithm proceeds in six steps: (1) invalidate Local-RIB and clear CAN-LIST; (2) seed computing router at cost 0; (3) pop lowest-cost node, skip if SPF Status = unreachable; (4) install prefix routes for current node; (5) evaluate links with bidirectional connectivity check, update CAN-LIST; (6) apply Local-RIB changes to GLOBAL-RIB.'
+section: "6.3"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

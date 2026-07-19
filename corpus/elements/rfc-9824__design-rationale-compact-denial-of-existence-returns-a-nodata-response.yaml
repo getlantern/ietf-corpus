@@ -1,0 +1,10 @@
+document: rfc-9824
+kind: design-rationale
+summary: Compact Denial of Existence returns a NODATA response (RCODE NOERROR, empty ANSWER) for nonexistent names rather than NXDOMAIN, claiming the name exists but has no records for the queried type. This requires only one minimally covering NSEC or NSEC3 record instead of up to two (NSEC) or three (NSEC3), reducing response size, online signing work, and enabling zone-content protection.
+section: "1"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

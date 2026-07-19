@@ -1,0 +1,9 @@
+document: rfc-9819
+kind: state-machine
+summary: 'Ingress PE SID construction follows a three-branch decision: (1) AL=0 in IMET route → use LOC:FUNC only; (2) non-zero AL in IMET but no matching End.DT2M SID or AL=0 in A-D per ES → use LOC:FUNC only; (3) non-zero equal AL in both routes → combine LOC:FUNC with ARG at offset LBL+LNL+FL. A fourth branch fires when AL values are both non-zero but unequal: suppress BUM forwarding.'
+section: "3.3"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,11 @@
+document: rfc-9815
+kind: normative-requirement
+summary: When a BGP speaker receives a self-originated NLRI with a more recent sequence number, it MUST immediately advance its own sequence number past the received value and readvertise the NLRI to all peers. Subsequent stale self-originated NLRIs trigger a delay of BGP_LS_SPF_SELF_READVERTISEMENT_DELAY (default 5 seconds) before readvertisement.
+section: 6.1.1
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

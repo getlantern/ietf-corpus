@@ -1,0 +1,9 @@
+document: rfc-9820
+kind: security-consideration
+summary: The EAP peer can trust the EAP authenticator because the OSCORE security association key material is derived from the MSK. If the EAP authenticator possesses the MSK, it means the EAP peer's AAA server has already authenticated and trusted it. No additional nonce exchange is needed because the MSK/EMSK are intrinsically fresh per RFC 5247.
+section: "8.4"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

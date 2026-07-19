@@ -1,0 +1,9 @@
+document: rfc-9824
+kind: design-rationale
+summary: NSEC is preferred over NSEC3 for Compact Denial of Existence because minimally covering NSEC records already prevent zone enumeration (NSEC3's primary advantage), and NSEC3's Opt-Out feature provides no benefit for online signing since minimally covering NSEC3 records provide no useful Opt-Out span. NSEC3 support is provided only to ease migration from existing NSEC3 online signing implementations.
+section: "4"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9814
+kind: security-consideration
+summary: To prevent algorithm-substitution attacks, the CMSAlgorithmProtection attribute (RFC 6211) SHOULD be included in signed attributes. Without it, an attacker could replace the signatureAlgorithm identifier with one that maps to a weaker or different algorithm.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

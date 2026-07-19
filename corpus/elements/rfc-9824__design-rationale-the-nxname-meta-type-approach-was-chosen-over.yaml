@@ -1,0 +1,8 @@
+document: rfc-9824
+kind: design-rationale
+summary: The NXNAME Meta-TYPE approach was chosen over the ENT-sentinel approach (defining a synthetic type for ENTs rather than for NXDOMAIN) because NXNAME explicitly and conclusively identifies NXDOMAIN responses, distinguishing them from potential ENT responses in other online signing NSEC implementations, even though ENT-sentinel imposes less server work given NXDOMAIN is more common than ENTs.
+section: A
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

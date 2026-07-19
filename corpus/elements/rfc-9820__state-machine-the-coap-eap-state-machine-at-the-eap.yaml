@@ -1,0 +1,8 @@
+document: rfc-9820
+kind: state-machine
+summary: The CoAP-EAP state machine at the EAP peer removes state when EXCHANGE_LIFETIME triggers or the EAP peer state machine returns eapFail. At the EAP authenticator, state is removed when EXCHANGE_LIFETIME triggers or, in pass-through mode, the authenticator state machine returns aaaTimeout. During re-authentication, two states coexist; on success the old state is replaced.
+section: 3.5.2
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

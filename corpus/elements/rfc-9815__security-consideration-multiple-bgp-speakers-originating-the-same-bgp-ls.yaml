@@ -1,0 +1,11 @@
+document: rfc-9815
+kind: security-consideration
+summary: Multiple BGP speakers originating the same BGP-LS-SPF NLRI (identified by Node Descriptors) indicate either a configuration error or a masquerading attack; an error SHOULD be logged so operators can take corrective action. The BGP-LS-SPF SAFI is also vulnerable to DoS via malformed BGP attributes that trigger treat-as-withdraw processing.
+section: "9"
+rfc2119_level: SHOULD
+topics:
+    - bgp
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

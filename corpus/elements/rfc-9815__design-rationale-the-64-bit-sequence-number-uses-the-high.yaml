@@ -1,0 +1,9 @@
+document: rfc-9815
+kind: design-rationale
+summary: The 64-bit sequence number uses the high-order 32 bits as a boot/wrap count stored in non-volatile storage, so that after a cold restart or sequence number wrap the strictly-increasing property is preserved. If state is completely lost, the NLRI selection rules (adjacent peers prefer self-originated NLRIs) still ensure convergence.
+section: 5.2.4
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

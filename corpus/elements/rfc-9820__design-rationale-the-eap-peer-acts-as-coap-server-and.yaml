@@ -1,0 +1,8 @@
+document: rfc-9820
+kind: design-rationale
+summary: The EAP peer acts as CoAP server and the EAP authenticator acts as CoAP client, reversing the typical IoT roles. This is because EAP Requests always travel from EAP server to EAP peer; mapping EAP Request/Response onto CoAP POST/Response requires the EAP peer to be the CoAP server so it can generate CoAP responses carrying EAP Responses.
+section: "2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9810
+kind: normative-requirement
+summary: For multi-message transactions containing a KemCiphertextInfo infoValue, the client MUST generate a transactionID; otherwise it SHOULD generate one. Servers MUST echo the received transactionID and MUST respond with transactionIdInUse if the ID conflicts with an in-progress transaction.
+section: 5.1.1
+rfc2119_level: MUST
+topics:
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

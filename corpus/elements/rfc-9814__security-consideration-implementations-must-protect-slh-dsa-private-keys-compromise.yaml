@@ -1,0 +1,10 @@
+document: rfc-9814
+kind: security-consideration
+summary: Implementations MUST protect SLH-DSA private keys; compromise allows signature forgery. Each key pair MUST be generated independently of all other key pairs in the SLH-DSA hypertree. A given SLH-DSA tree MUST NOT be used for more than 2^64 signing operations.
+section: "5"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

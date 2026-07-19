@@ -1,0 +1,8 @@
+document: rfc-9820
+kind: design-rationale
+summary: HATEOAS resource management — creating a new CoAP resource per EAP step and deleting the prior one — was chosen to provide ordering guarantees required by EAP without adding new CoAP options. Each '2.01 Created' response with a new Location-Path signals state advancement, leveraging standard CoAP mechanisms.
+section: "3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

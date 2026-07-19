@@ -1,0 +1,8 @@
+document: rfc-9824
+kind: interoperability-note
+summary: Address lookup functions may issue extra queries when receiving NODATA instead of NXDOMAIN for a nonexistent name (e.g., a AAAA NODATA response will not suppress subsequent A queries), increasing DNS traffic. Connection functions like Happy Eyeballs that issue back-to-back queries are less affected.
+section: "6"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9815
+kind: normative-requirement
+summary: All malformed BGP-LS-SPF TLVs (SPF Status TLV with reserved value, missing IGP Metric, malformed Address Family Link Descriptor, malformed Sequence Number TLV) cause the corresponding NLRI to be treated as treat-as-withdraw per RFC 7606. Implementations SHOULD log errors subject to rate limiting.
+section: "7.1"
+rfc2119_level: MUST
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

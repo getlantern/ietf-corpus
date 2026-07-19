@@ -1,0 +1,9 @@
+document: rfc-9814
+kind: design-rationale
+summary: SLH-DSA is stateless, unlike HSS/LMS and XMSS which require the signer to maintain state to prevent WOTS+ key reuse. Without that state requirement, SLH-DSA is considerably less operationally fragile, as accidental key reuse degrades but does not collapse security (unlike stateful schemes).
+section: "1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

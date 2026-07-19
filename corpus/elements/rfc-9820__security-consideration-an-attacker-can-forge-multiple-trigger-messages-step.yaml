@@ -1,0 +1,8 @@
+document: rfc-9820
+kind: security-consideration
+summary: An attacker can forge multiple trigger messages (Step 0) to cause the EAP authenticator to start parallel EAP authentications, resulting in a DoS attack. Rate limiting of Step 0 processing is RECOMMENDED, and minimizing authenticator state until EAP-Resp/Id arrival further limits the attack surface.
+section: "8.6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

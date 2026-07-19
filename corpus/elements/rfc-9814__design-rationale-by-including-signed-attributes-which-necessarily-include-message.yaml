@@ -1,0 +1,9 @@
+document: rfc-9814
+kind: design-rationale
+summary: By including signed attributes (which necessarily include message-digest and content-type), implementations can avoid sending the full message content to an HSM or portable cryptographic token—only the much smaller signed-attributes set is transmitted for signing. This makes SLH-DSA practical with hardware security devices despite the algorithm's large signature-input requirements.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

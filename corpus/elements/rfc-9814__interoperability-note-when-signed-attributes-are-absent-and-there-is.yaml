@@ -1,0 +1,9 @@
+document: rfc-9814
+kind: interoperability-note
+summary: When signed attributes are absent and there is concern about legacy implementations that do not support all hash functions, signers MAY choose to always use the SHA-256 algorithm identifier as the digestAlgorithm, even for SLH-DSA variants that internally use SHA-512 or SHAKE, since digestAlgorithm has no functional significance when signed attributes are absent.
+section: "4"
+rfc2119_level: MAY
+topics:
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9814
+kind: security-consideration
+summary: Private key generation relies on random numbers, and use of inadequate PRNGs can result in little or no security. An attacker may reproduce the PRNG environment and search a small key space rather than brute-forcing the full space. RFC 4086 guidance on randomness MUST be followed.
+section: "5"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9815
+kind: normative-requirement
+summary: On link or prefix failure, the originating BGP speaker SHOULD advertise a more recent NLRI with the SPF Status TLV set to unreachable before withdrawing, using the configurable LinkStatusDownAdvertise or PrefixStatusDownAdvertise timer (suggested default 2 seconds). If the link/prefix recovers during that interval, the speaker MUST readvertise without the SPF Status TLV.
+section: 6.5.1
+rfc2119_level: SHOULD
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

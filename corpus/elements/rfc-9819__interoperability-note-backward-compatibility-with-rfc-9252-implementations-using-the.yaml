@@ -1,0 +1,9 @@
+document: rfc-9819
+kind: interoperability-note
+summary: Backward compatibility with RFC 9252 implementations using the bitwise logical-OR operation is maintained only when the Inclusive Multicast Ethernet Tag route and the Ethernet A-D per ES route advertise SIDs with identical SID structures. When structures differ, the bitwise OR cannot be applied; the explicit offset-based ARG encoding procedure in Section 3.3 MUST be used instead.
+section: "4"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

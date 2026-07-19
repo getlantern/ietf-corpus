@@ -1,0 +1,8 @@
+document: rfc-9824
+kind: protocol-element
+summary: For unsigned referrals with Compact Denial of Existence, the Next Domain Name field is formed by appending a zero octet to the first label of the owner name (e.g., 'sub.example.com. 300 IN NSEC sub\000.example.com. NS RRSIG NSEC'), rather than using the immediate lexicographic successor, to avoid falling under the delegated subzone.
+section: "3.4"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

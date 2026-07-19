@@ -1,0 +1,9 @@
+document: rfc-9811
+kind: design-rationale
+summary: HTTP POST is used exclusively (rather than GET or other methods) because PKI management operations can only be triggered via CMP PKI messages; while tunneling over POST is generally bad practice per BCP 56, HTTP is widely implemented, traverses proxies, and is already prevalent in existing CMP deployments.
+section: "1"
+topics:
+    - http
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

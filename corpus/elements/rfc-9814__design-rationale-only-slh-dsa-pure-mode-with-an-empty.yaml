@@ -1,0 +1,9 @@
+document: rfc-9814
+kind: design-rationale
+summary: Only SLH-DSA pure mode with an empty context string is specified for CMS signed-data; pre-hash mode is intentionally excluded. When signed attributes are present, the small DER-encoded signed-attributes set is passed to the signing function instead of the full content, providing equivalent interface characteristics to pre-hash mode without requiring a separate mode specification.
+section: "6"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

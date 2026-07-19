@@ -1,0 +1,10 @@
+document: rfc-9814
+kind: normative-requirement
+summary: 'When signed attributes are present, the digestAlgorithm in SignerInfo MUST identify a hash function that produces an output of at least twice the bit size of the hash function used internally in the SLH-DSA tree, to ensure collision resistance. Specific required pairings are defined: e.g., id-slh-dsa-sha2-128s/128f require SHA-256, 192-bit variants require SHA-512, and SHAKE variants require the corresponding SHAKE with doubled output.'
+section: "4"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

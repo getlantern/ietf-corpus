@@ -1,0 +1,9 @@
+document: rfc-9820
+kind: security-consideration
+summary: The cipher suite negotiation (CS-C and CS-I) is embedded in the OSCORE Master Secret derivation to prevent downgrading attacks. If an attacker alters the negotiated cipher suite values, the resulting OSCORE Security Contexts will differ between the two parties, causing OSCORE-protected messages in Steps 7 and 8 to fail.
+section: "6.2"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9824
+kind: security-consideration
+summary: Security tools that rely on detecting nonexistent domain names by examining the RCODE field will see NOERROR instead of NXDOMAIN, impairing detection. Implementing the optional response code restoration scheme (Section 5.1) helps recover NXDOMAIN visibility. Notably, inferring status from signed NSEC data in the body is more secure than trusting the unprotected DNS header RCODE field.
+section: "8"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

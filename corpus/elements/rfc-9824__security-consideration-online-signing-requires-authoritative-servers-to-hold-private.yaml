@@ -1,0 +1,10 @@
+document: rfc-9824
+kind: security-consideration
+summary: Online signing requires authoritative servers to hold private signing keys and be Internet-reachable, increasing vulnerability to key compromise. Additionally, generating signatures on demand is more computationally intensive than returning precomputed signatures, making servers more vulnerable to computational denial-of-service attacks even though Compact Answers reduces signing operations compared to prior techniques like White Lies.
+section: "8"
+topics:
+    - dns
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

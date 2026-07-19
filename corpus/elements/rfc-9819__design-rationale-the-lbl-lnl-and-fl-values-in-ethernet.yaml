@@ -1,0 +1,9 @@
+document: rfc-9819
+kind: design-rationale
+summary: The LBL, LNL, and FL values in Ethernet A-D per ES route advertisements are required to be set consistently with the End.DT2M SID structure rather than set to zero, to maintain backward compatibility with RFC 9252 implementations. Setting these to zero would be incompatible even though it might appear simpler for ARG-only advertisements.
+section: "3.1"
+topics:
+    - routing
+    - bgp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
