@@ -1,8 +1,8 @@
 document: rfc-7159
 kind: interoperability-note
-summary: 'JSON texts containing unpaired UTF-16 surrogates (e.g., "\uDEAD") have unpredictable behavior: implementations may return different string lengths or suffer fatal runtime exceptions. This can arise when a library truncates a UTF-16 string without checking for surrogate pairs.'
+summary: JSON texts containing unpaired UTF-16 surrogates (e.g., `"\uDEAD"`) have unpredictable behavior across implementations — some return wrong string lengths, others throw fatal runtime exceptions.
 section: "8.2"
 topics:
     - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-07-12"
+extracted_at: "2026-07-19"

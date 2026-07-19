@@ -1,0 +1,9 @@
+document: rfc-3986
+kind: normative-requirement
+summary: Non-ASCII registered names must first be encoded as UTF-8, then each octet must be percent-encoded. URI producing applications must not use percent-encoding in host unless it represents a UTF-8 character sequence. Non-ASCII internationalized domain names must be transformed to IDNA encoding prior to DNS lookup.
+section: 3.2.2
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

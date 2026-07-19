@@ -1,0 +1,8 @@
+document: rfc-3986
+kind: security-consideration
+summary: Semantic attacks craft the userinfo subcomponent to mimic a trusted hostname, e.g., "http://trusted.example.com@evil.example.com/". Browsers and clients must distinguish userinfo from the host component; scheme-specific resolvers should flag references violating scheme syntax as errors rather than silently ignoring them.
+section: "7.6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

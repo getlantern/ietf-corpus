@@ -1,0 +1,8 @@
+document: rfc-7159
+kind: interoperability-note
+summary: Implementations should normalize escape sequences before string comparison; comparing strings with escaped characters unconverted may incorrectly find `"a\\b"` and `"a\u005Cb"` unequal. Comparison should be done numerically, code unit by code unit.
+section: "8.3"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

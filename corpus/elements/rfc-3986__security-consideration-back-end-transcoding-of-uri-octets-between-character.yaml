@@ -1,0 +1,8 @@
+document: rfc-3986
+kind: security-consideration
+summary: Back-end transcoding of URI octets between character encodings can silently alter percent-encoded sequences and cause a URI to reference a different resource or bypass security checks. Percent-encoded octets must be decoded only after components are fully separated.
+section: "7.3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

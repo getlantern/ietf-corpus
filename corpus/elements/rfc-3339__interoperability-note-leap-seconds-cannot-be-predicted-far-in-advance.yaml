@@ -1,8 +1,6 @@
 document: rfc-3339
 kind: interoperability-note
-summary: Leap seconds cannot be predicted far in advance; the IERS publishes bulletins announcing them with only a few weeks' warning. Applications must not generate timestamps for future leap seconds until after the IERS announcement.
+summary: Leap seconds cannot be predicted far in advance; applications must not generate timestamps for inserted leap seconds before they are announced by the IERS. The leap second value of time-second=60 is only valid at the end of June or December (primary) or March or September (secondary).
 section: "5.7"
-topics:
-    - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-06-28"
+extracted_at: "2026-07-19"
