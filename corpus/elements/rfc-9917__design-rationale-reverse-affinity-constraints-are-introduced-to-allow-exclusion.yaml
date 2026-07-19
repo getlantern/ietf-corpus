@@ -1,0 +1,9 @@
+document: rfc-9917
+kind: design-rationale
+summary: Reverse affinity constraints are introduced to allow exclusion of a forward-direction link based on conditions detectable only at the far end of the link — for example, CRC or input errors at node B on the link from A to B, which node B can signal by setting Extended Administrative Groups on its reverse-direction edge (B to A). This enables policy-driven topology pruning based on far-end link health.
+section: "3"
+topics:
+    - routing
+    - mpls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

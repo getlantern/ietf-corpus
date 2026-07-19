@@ -1,0 +1,8 @@
+document: rfc-9914
+kind: state-machine
+summary: 'Forwarding along a Track follows a strict priority order among four methods: (1) direct next hop, (2) indirect neighbor via a common neighbor, (3) forwarding along a segment, and (4) forwarding along a nested Track. A higher-order method may use lower-order ones but never a higher-order one; e.g., a segment may use direct or indirect neighbors but not another Track. This total order prevents forwarding loops across multiple topologies.'
+section: "3.2"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

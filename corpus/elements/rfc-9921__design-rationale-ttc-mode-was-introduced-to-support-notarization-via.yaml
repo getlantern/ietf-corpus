@@ -1,0 +1,9 @@
+document: rfc-9921
+kind: design-rationale
+summary: TTC mode was introduced to support notarization via transparency services. The TST must be in the protected (signed) part of the COSE message so it survives immutable append-only log registration; placing it in unprotected headers would allow loss or tampering during registration.
+section: "1.1"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

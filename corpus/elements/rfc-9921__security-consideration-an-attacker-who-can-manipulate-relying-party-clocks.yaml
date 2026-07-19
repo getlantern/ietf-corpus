@@ -1,0 +1,9 @@
+document: rfc-9921
+kind: security-consideration
+summary: An attacker who can manipulate relying party clocks (but not the TSA) can cause CMS validation to fail, causing a denial of service for timestamp validation in both CTT and TTC modes. Once a TST is obtained from the TSA, the TSA clock becomes the only reliable time source; local clock manipulation does not affect the TST itself.
+section: "5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

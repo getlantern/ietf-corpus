@@ -1,0 +1,9 @@
+document: rfc-9914
+kind: security-consideration
+summary: The Root and PCE have the authority to install arbitrary routing state in RPL nodes via P-DAO messages; a compromised Root or PCE can redirect or blackhole traffic across the domain. Implementations should secure the control plane between the PCE and Root (out of scope), and between the Root and RPL nodes using the security mechanisms defined in RFC 6550 (RPL).
+section: "10"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

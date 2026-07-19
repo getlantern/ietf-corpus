@@ -1,0 +1,9 @@
+document: rfc-9911
+kind: design-rationale
+summary: The date-and-time canonical format uses Z for UTC with unknown local timezone and +00:00 for UTC with a known UTC reference point, aligning with RFC 9557 Section 2. This distinction was not present in earlier versions and breaks SMIv2 DateAndTime equivalence because RFC 3339 uses 'T' as the date/time separator rather than a comma.
+section: "3"
+topics:
+    - yang
+    - netconf
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9921
+kind: security-consideration
+summary: 'Semantic confusion between CTT and TTC modes can cause critical vulnerabilities: validators MUST NOT interpret protected-header payload timestamps (TTC) as proof of signature creation time. Only TSA timestamps explicitly covering signature data (CTT) may be used for determining signature validity timing.'
+section: "5.1"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

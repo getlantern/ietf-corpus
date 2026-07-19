@@ -1,0 +1,9 @@
+document: rfc-9921
+kind: security-consideration
+summary: In CTT mode, an attacker can manipulate the unprotected header by removing or replacing the TST. To mitigate this, the COSE Signed Message SHOULD be integrity-protected during transit and at rest, since the unprotected header provides no cryptographic binding to the signature.
+section: "5"
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

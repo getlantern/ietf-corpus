@@ -1,0 +1,8 @@
+document: rfc-9914
+kind: design-rationale
+summary: RPL is anisotropic (polar), optimizing only MP2P (toward Root) and P2MP (from Root) paths; all P2P traffic must follow the same DODAG, producing routing stretch. DAO Projection was introduced to complement RPL with centralized PCE-computed paths that bypass the Root for select P2P flows, reducing latency, packet size, fragmentation risk, and Root bottleneck load without changing the base RPL operation.
+section: "3.3"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

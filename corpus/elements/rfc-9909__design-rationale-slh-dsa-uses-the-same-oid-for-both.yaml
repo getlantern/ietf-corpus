@@ -1,0 +1,9 @@
+document: rfc-9909
+kind: design-rationale
+summary: SLH-DSA uses the same OID for both the public key and signature algorithm. Consequently, a key identified by a Pure SLH-DSA OID is not permitted to sign or verify using a HashSLH-DSA OID and vice versa, even though it is mathematically possible. CA operators must choose the mode at key generation time.
+section: "8"
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

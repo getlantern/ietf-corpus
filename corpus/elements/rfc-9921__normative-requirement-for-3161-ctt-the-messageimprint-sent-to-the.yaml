@@ -1,0 +1,10 @@
+document: rfc-9921
+kind: normative-requirement
+summary: For 3161-ctt, the MessageImprint sent to the TSA MUST be the hash of the CBOR-encoded signature field of a COSE_Sign1, or the hash of the CBOR-encoded signatures field of a COSE_Sign. Importantly, the bstr heading bytes (e.g., 0x5840 for a 64-byte signature) are included in the input to the hash.
+section: "3.1"
+rfc2119_level: MUST
+topics:
+    - crypto
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

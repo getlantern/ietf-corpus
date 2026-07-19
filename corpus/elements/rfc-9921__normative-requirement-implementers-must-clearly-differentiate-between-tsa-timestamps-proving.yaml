@@ -1,0 +1,10 @@
+document: rfc-9921
+kind: normative-requirement
+summary: Implementers MUST clearly differentiate between TSA timestamps proving the existence of payload data at an earlier point in time (TTC) and timestamps explicitly providing evidence of the existence of the cryptographic signature (CTT). Failing to distinguish can lead to accepting signatures created after key revocation based on older payload-only timestamps.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

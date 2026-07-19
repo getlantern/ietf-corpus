@@ -1,0 +1,8 @@
+document: rfc-9914
+kind: design-rationale
+summary: Tracks are modeled as separate Local RPL Instances with their own RIBs (rather than extending the main Instance) so that each Track defines an independent routing topology. This reuses the existing RPL Instance machinery for RIB isolation and loop avoidance while allowing the Track to serve as a transparent underlay with higher RIB precedence than the main Instance.
+section: 3.4.2
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

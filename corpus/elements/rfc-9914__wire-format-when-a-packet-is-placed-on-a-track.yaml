@@ -1,0 +1,9 @@
+document: rfc-9914
+kind: wire-format
+summary: When a packet is placed on a Track, it is IP-in-IP encapsulated. The outer IPv6 source address is set to the Track ingress IP address, and the RPL Packet Information (RPI) Hop-by-Hop option in the outer header carries the Local RPLInstanceID identifying the Track. The encapsulated (inner) packet carries no RPI.
+section: 3.4.2
+topics:
+    - routing
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

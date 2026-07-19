@@ -1,0 +1,9 @@
+document: rfc-9921
+kind: design-rationale
+summary: 'Two distinct modes are defined because the semantic meaning differs: CTT (COSE, Then Timestamp) records when a signature was created by timestamping the signature field, while TTC (Timestamp, Then COSE) embeds a payload timestamp in the protected header to survive immutable registration at a transparency service. Because these semantics differ, two separate header parameters are required.'
+section: "2"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

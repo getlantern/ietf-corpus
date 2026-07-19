@@ -1,0 +1,9 @@
+document: rfc-9909
+kind: design-rationale
+summary: 'HashSLH-DSA was introduced to accommodate Hardware Security Modules with data-transfer or memory limits: Pure SLH-DSA requires the entire certificate or CRL to be held in memory (the randomizer R must be extracted from the signature before M'' is processed), while HashSLH-DSA reduces the size of M'' by pre-hashing. This is also why streaming verification is not possible for certificates.'
+section: "8"
+topics:
+    - crypto
+    - pkix
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

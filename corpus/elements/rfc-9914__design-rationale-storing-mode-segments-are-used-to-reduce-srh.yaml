@@ -1,0 +1,8 @@
+document: rfc-9914
+kind: design-rationale
+summary: 'Storing Mode segments are used to reduce SRH overhead in deep networks: the Root can elide the corresponding stretch of hops from the strict Source Routing Header, making it loose. Non-Storing Mode protection paths require encapsulation to carry an SRH at the Track ingress but avoid per-hop state in intermediate nodes, enabling a hybrid that balances memory constraints against packet-size constraints.'
+section: "3.5"
+topics:
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

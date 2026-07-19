@@ -1,0 +1,10 @@
+document: rfc-9911
+kind: design-rationale
+summary: The object-identifier type is a superset of the SMIv2 OBJECT IDENTIFIER type (no 128 sub-identifier limit) and SHOULD NOT be used to represent SMIv2 OBJECT IDENTIFIER; instead, object-identifier-128 SHOULD be used. This preserves strict SMIv2 equivalence while allowing extensibility for non-SMIv2 contexts.
+section: "3"
+topics:
+    - yang
+    - netconf
+    - snmp
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9908
+kind: design-rationale
+summary: 'Prior template approaches (RFC 8295 Appendix B via pKCS7PDU, and RFC 9810/RFC 9483 via CRMF) had drawbacks: absent RDN values encoded as invalid empty strings, absent subjectPublicKey as empty BIT STRING, and absent extension values as empty OCTET STRING causing strict ASN.1 parsing failures. The new CertificationRequestInfoTemplate avoids these by making those fields genuinely OPTIONAL.'
+section: "3.4"
+topics:
+    - pkix
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

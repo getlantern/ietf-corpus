@@ -1,0 +1,9 @@
+document: rfc-9903
+kind: wire-format
+summary: 'The SID TLV encoding (grouping ''sid-tlv-encoding'') carries either a 20-bit MPLS label (label-value, uint32 range 0–1048575) or a 32-bit SID index (index-value, uint32). Interpretation depends on TLV length (3 octets for label, 4 for index) or V-Flag and L-Flag: V=0,L=0 means 4-octet index; V=1,L=1 means 3-octet local label with 20 rightmost bits as label value.'
+section: "3"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

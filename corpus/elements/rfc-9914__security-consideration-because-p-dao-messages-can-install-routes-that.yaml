@@ -1,0 +1,9 @@
+document: rfc-9914
+kind: security-consideration
+summary: Because P-DAO messages can install routes that bypass the normal DODAG structure, rogue P-DAOs could create forwarding loops or traffic-engineering attacks. The RPI-based TrackID tagging and the strict forwarding-method ordering provide loop protection, but they rely on the integrity of the installed state; unauthorized P-DAO injection must be prevented at the RPL security layer.
+section: "10"
+topics:
+    - routing
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

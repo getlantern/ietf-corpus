@@ -1,0 +1,9 @@
+document: rfc-9909
+kind: security-consideration
+summary: Fault attacks can lead to signature forgeries for SLH-DSA (see CMP2018, Ge2023). The typical countermeasure of verifying before releasing a signature is not effective for SLH-DSA; instead, redundancy by replicating the signature generation process is recommended, though it adds to the already slow signing time.
+section: "9"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

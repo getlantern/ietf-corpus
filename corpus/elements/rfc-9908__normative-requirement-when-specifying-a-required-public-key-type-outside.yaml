@@ -1,0 +1,11 @@
+document: rfc-9908
+kind: normative-requirement
+summary: When specifying a required public key type outside the template approach, the server MUST include exactly one Attribute whose 'type' OID identifies the key algorithm (e.g., ecPublicKey or rsaEncryption). The 'values' field MAY be empty (no further constraints) or MUST contain suitable parameters such as an EC curve OID or an RSA modulus size integer.
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - pkix
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

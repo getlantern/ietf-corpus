@@ -1,0 +1,9 @@
+document: rfc-9909
+kind: security-consideration
+summary: SLH-DSA security relies on preimage resistance of internal hash/XOF functions, not collision resistance; however, HashSLH-DSA additionally requires collision resistance of the pre-hash function, which is why pre-hash output lengths are twice the internal hash length. Inadequate PRNGs for key generation can critically weaken security.
+section: "9"
+topics:
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
