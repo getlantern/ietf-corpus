@@ -1,0 +1,11 @@
+document: rfc-9770
+kind: normative-requirement
+summary: When issuing an access token that is a CWT, the AS MUST ensure all 'unprotected' fields (top-level, in 'signatures' array, in 'recipients' array) are empty (0xa0). The CWT MUST use its corresponding tagged COSE structure with the CWT CBOR tag (61) as the outer tag, tag numbers encoded at minimum length, and MUST NOT be further tagged.
+section: "3"
+rfc2119_level: MUST
+topics:
+    - cbor
+    - crypto
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

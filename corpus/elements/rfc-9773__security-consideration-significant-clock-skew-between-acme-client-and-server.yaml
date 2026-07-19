@@ -1,0 +1,9 @@
+document: rfc-9773
+kind: security-consideration
+summary: 'Significant clock skew between ACME client and server can cause undesired behavior: a client with a slow clock may see a past-dated suggested window as future, and servers attempting precise renewal scheduling may fail if clients have skewed clocks. Server operators should account for this when setting suggested renewal windows.'
+section: "6"
+topics:
+    - acme
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

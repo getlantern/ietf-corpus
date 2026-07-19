@@ -1,0 +1,9 @@
+document: rfc-9770
+kind: protocol-element
+summary: The Cursor extension for diff queries allows pagination of diff entries. The AS maintains a per-requester 'index' counter (0 to MAX_INDEX) assigned to each series item, with wraparound at MAX_INDEX. MAX_DIFF_BATCH limits entries per response. Full and diff query responses include 'cursor' (index) and 'more' (boolean) parameters when this extension is active.
+section: 6.2.1
+topics:
+    - cbor
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

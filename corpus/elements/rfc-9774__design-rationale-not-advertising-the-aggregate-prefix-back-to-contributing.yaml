@@ -1,0 +1,9 @@
+document: rfc-9774
+kind: design-rationale
+summary: Not advertising the aggregate prefix back to contributing ASes avoids data-plane forwarding loops that arise when brief aggregation is used, since AS_PATH loop detection no longer prevents contributing ASes from installing the less-specific aggregate route.
+section: "6.2"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

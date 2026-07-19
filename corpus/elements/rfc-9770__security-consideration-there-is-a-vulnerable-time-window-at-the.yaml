@@ -1,0 +1,8 @@
+document: rfc-9770
+kind: security-consideration
+summary: There is a vulnerable time window at the RS between when an access token is revoked and when the RS learns of the revocation via TRL polling or Observe notification. During this window a client may use a revoked token successfully. Using CoAP Observe subscriptions minimizes this window.
+section: "14.5"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

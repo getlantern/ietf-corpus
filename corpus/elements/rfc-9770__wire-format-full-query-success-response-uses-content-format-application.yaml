@@ -1,0 +1,9 @@
+document: rfc-9770
+kind: wire-format
+summary: 'Full query success response uses Content-Format ''application/ace-trl+cbor'' (code 262). The payload is a CBOR map with a mandatory ''full_set'' parameter encoding a CBOR array of CBOR byte strings (token hashes). The array MUST be treated as a set. CDDL: full_set_value = [* token_hash], where token_hash = bytes.'
+section: "7"
+topics:
+    - cbor
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

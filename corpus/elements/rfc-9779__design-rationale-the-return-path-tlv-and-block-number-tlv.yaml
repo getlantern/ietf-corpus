@@ -1,0 +1,9 @@
+document: rfc-9779
+kind: design-rationale
+summary: The Return Path TLV and Block Number TLV are defined in the 'Mandatory TLV Type' registry space of RFC 6374 rather than as optional TLVs, ensuring that responders which do not support them return a standardized error (0x17) rather than silently ignoring them, preserving measurement integrity.
+section: "6.1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

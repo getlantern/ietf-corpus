@@ -1,0 +1,10 @@
+document: rfc-9773
+kind: normative-requirement
+summary: On receiving a temporary error (connection timeout, request timeout, 5xx HTTP errors), clients SHOULD do exponential backoff with a capped number of tries. If all tries are exhausted, clients MUST treat the request as a long-term error.
+section: 4.3.3
+rfc2119_level: SHOULD
+topics:
+    - acme
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

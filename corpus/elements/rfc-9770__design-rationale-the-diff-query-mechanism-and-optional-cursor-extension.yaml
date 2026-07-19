@@ -1,0 +1,9 @@
+document: rfc-9770
+kind: design-rationale
+summary: The diff query mechanism and optional Cursor extension implement the Series Transfer Pattern (Appendix A, referencing [STP]), allowing incremental transfer of ordered update entries. This avoids full TRL retransmission while the Cursor extension handles cases where update history exceeds MAX_DIFF_BATCH entries per response.
+section: "8"
+topics:
+    - cbor
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9770
+kind: interoperability-note
+summary: An RS using the method defined in this document with CWT access tokens must attempt hash computation under both CBOR-encoded and JSON-encoded AS-to-Client response assumptions, because the RS may not know which encoding was used. Failure under the first assumption triggers a retry with the second, based on base64url decoding of TOKEN_INFO.
+section: 4.3.1
+topics:
+    - cbor
+    - json
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

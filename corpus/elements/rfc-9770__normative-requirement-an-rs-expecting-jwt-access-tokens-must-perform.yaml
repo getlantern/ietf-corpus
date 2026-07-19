@@ -1,0 +1,11 @@
+document: rfc-9770
+kind: normative-requirement
+summary: An RS expecting JWT access tokens MUST perform Step 3 (compute a hash assuming JSON-encoded AS-to-Client response) and MUST perform Step 4 (compute a hash assuming CBOR-encoded AS-to-Client response), unless it is certain all pertaining tokens arrive via only one encoding type. If both are performed, the RS MUST store, maintain, and rely on both token hashes.
+section: 4.3.2
+rfc2119_level: MUST
+topics:
+    - security
+    - jose
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

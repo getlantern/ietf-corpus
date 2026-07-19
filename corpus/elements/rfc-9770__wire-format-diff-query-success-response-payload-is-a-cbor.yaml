@@ -1,0 +1,9 @@
+document: rfc-9770
+kind: wire-format
+summary: 'Diff query success response payload is a CBOR map with a mandatory ''diff_set'' parameter encoding a CBOR array of diff_entry items, each being [removed: trl_patch, added: trl_patch], where trl_patch = [* token_hash]. Entries are sorted in reverse chronological order (most recent first). CDDL: diff_entry = [removed: trl_patch, added: trl_patch].'
+section: "8"
+topics:
+    - cbor
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

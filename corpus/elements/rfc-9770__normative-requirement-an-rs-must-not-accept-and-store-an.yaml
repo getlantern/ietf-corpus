@@ -1,0 +1,11 @@
+document: rfc-9770
+kind: normative-requirement
+summary: An RS MUST NOT accept and store an access token if its token hash is already stored, if a CWT has non-empty unprotected fields or non-conformant CBOR tag structure, or if a JSON-serialized token includes an unprotected header. This prevents replay of tokens previously revoked and later expired.
+section: "11.1"
+rfc2119_level: MUST NOT
+topics:
+    - security
+    - cbor
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

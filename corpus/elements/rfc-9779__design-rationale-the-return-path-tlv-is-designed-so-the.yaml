@@ -1,0 +1,9 @@
+document: rfc-9779
+kind: design-rationale
+summary: The Return Path TLV is designed so the querier, not the responder, maintains return path state. By including the return path in the query message, the responder avoids creating and maintaining per-session state containing return paths, simplifying responder implementation especially in ECMP environments.
+section: "6.1"
+topics:
+    - mpls
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

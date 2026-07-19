@@ -1,0 +1,8 @@
+document: rfc-9772
+kind: design-rationale
+summary: The Management VNI is terminated on the tenant-facing side rather than the DC-network-facing side so that Geneve encap/decap functionality is included in its scope. This allows a repeated ICMP echo request/reply test to detect intermittent problems in Geneve encap/decap hardware that would otherwise be missed if the Management VNI were handled as a special case at the DC-network-facing interface.
+section: "2.2"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9782
+kind: design-rationale
+summary: The 'eat_profile' media type parameter is placed at the API layer so that routers can dispatch payloads to profile-specific processors without inspecting request bodies. This provides a finer-grained, scalable type system matching EAT's inherent extensibility, where each EAT profile automatically derives a media type from the base type by populating 'eat_profile'.
+section: "3"
+topics:
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9770
+kind: security-consideration
+summary: A dishonest client can present a JWT access token to an RS via a specific encoding path (CBOR or JSON AS-to-Client response) to cause the RS to compute a different token hash from the one the AS stored. Computing and storing both possible token hashes at the RS (Section 4.3.2) neutralizes this attack.
+section: "14.7"
+topics:
+    - security
+    - jose
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

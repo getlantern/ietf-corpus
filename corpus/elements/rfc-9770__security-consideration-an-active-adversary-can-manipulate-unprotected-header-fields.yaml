@@ -1,0 +1,10 @@
+document: rfc-9770
+kind: security-consideration
+summary: An active adversary can manipulate unprotected header fields of a CWT to cause an RS to compute a different token hash than the one stored by the AS, making revocation notifications ineffective. Requiring all unprotected fields to be empty (Section 3) neutralizes this attack by ensuring deterministic CWT encoding.
+section: "14.6"
+topics:
+    - security
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

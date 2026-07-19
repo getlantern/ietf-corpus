@@ -1,0 +1,9 @@
+document: rfc-9774
+kind: design-rationale
+summary: Consistent brief aggregation (truncating the AS_PATH at the desired origin AS rather than generating an AS_SET) is recommended because brief aggregation without it can yield an unstable origin AS that varies depending on which contributing routes are present, breaking RPKI-ROV.
+section: "5.1"
+topics:
+    - bgp
+    - routing
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

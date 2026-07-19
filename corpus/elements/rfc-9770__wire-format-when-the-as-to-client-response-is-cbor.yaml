@@ -1,0 +1,9 @@
+document: rfc-9770
+kind: wire-format
+summary: 'When the AS-to-Client response is CBOR-encoded (application/ace+cbor), HASH_INPUT is computed as: take BYTES (the value of the ''access_token'' CBOR byte string), base64url-encode it to produce HASH_INPUT_TEXT, then use the UTF-8 binary representation of HASH_INPUT_TEXT as HASH_INPUT.'
+section: 4.2.1
+topics:
+    - cbor
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

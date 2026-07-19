@@ -1,0 +1,10 @@
+document: rfc-9773
+kind: design-rationale
+summary: RenewalInfo resources are exposed via unauthenticated GET requests (departing from RFC 8555's POST-as-GET requirement) because the renewal information is not confidential, and allowing easy caching helps shed load from clients that do not respect the Retry-After header.
+section: "6"
+topics:
+    - acme
+    - http
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

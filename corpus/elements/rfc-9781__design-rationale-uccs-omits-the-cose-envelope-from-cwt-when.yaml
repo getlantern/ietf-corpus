@@ -1,0 +1,11 @@
+document: rfc-9781
+kind: design-rationale
+summary: UCCS omits the COSE envelope from CWT when communicating parties have a preexisting security association (e.g., a mutually secured TLS channel), enabling resource-parsimonious use of CWT claims without redundant cryptographic protection. This follows the same principle as JWT 'none' algorithm over TLS.
+section: "1"
+topics:
+    - cbor
+    - jose
+    - security
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

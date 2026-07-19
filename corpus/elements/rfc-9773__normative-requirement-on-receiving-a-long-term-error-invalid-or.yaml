@@ -1,0 +1,10 @@
+document: rfc-9773
+kind: normative-requirement
+summary: On receiving a long-term error (invalid or missing Retry-After, invalid RenewalInfo object, DNS failure, connection refused, non-5xx HTTP error), clients MUST make the next renewalInfo request as soon as possible after six hours have passed or some other locally configured default.
+section: 4.3.3
+rfc2119_level: MUST
+topics:
+    - acme
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

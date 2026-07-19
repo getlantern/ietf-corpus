@@ -1,0 +1,9 @@
+document: rfc-9780
+kind: design-rationale
+summary: The IPv6-mapped IPv4 loopback address ::ffff:127.0.0.1/128 is discouraged as the BFD destination because using a loopback address as a tunneled packet's inner destination violates RFC 4291 Section 2.5.3, and the mapped address is not functionally analogous to its IPv4 counterpart. IANA allocated 100:0:0:1::/64 as a proper Dummy IPv6 Prefix for this use case.
+section: "1"
+topics:
+    - mpls
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

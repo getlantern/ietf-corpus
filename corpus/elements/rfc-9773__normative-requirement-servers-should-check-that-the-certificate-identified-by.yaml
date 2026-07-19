@@ -1,0 +1,10 @@
+document: rfc-9773
+kind: normative-requirement
+summary: Servers SHOULD check that the certificate identified by 'replaces' and the newOrder request correspond to the same ACME Account, share at least one identifier, and that the certificate has not already been marked as replaced by a non-invalid Order. If the certificate has already been replaced, the server MUST return HTTP 409 with an 'alreadyReplaced' problem document.
+section: "5"
+rfc2119_level: SHOULD
+topics:
+    - acme
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

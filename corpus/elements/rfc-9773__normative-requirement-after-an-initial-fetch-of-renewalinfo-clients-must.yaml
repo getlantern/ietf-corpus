@@ -1,0 +1,10 @@
+document: rfc-9773
+kind: normative-requirement
+summary: After an initial fetch of RenewalInfo, clients MUST fetch it again as soon as possible after the time indicated in the Retry-After header (with error backoff taking priority). Clients MUST set reasonable limits on their checking interval, for example treating values under one minute as one minute and values over one day as one day.
+section: 4.3.2
+rfc2119_level: MUST
+topics:
+    - acme
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
