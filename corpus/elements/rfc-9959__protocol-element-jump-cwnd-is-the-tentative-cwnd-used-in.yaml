@@ -1,0 +1,10 @@
+document: rfc-9959
+kind: protocol-element
+summary: jump_cwnd is the tentative CWND used in the Unvalidated Phase, set to min(max_jump, saved_cwnd/2). PipeSize tracks the validated portion of capacity, initialised to flight_size on entry to the Unvalidated Phase and incremented per acknowledged byte. Beta is a scaling factor (0.5–1, default 0.5) applied to PipeSize when setting ssthresh on Safe Retreat exit.
+section: "2.4"
+topics:
+    - congestion
+    - tcp
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

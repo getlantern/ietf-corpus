@@ -1,0 +1,10 @@
+document: rfc-9964
+kind: interoperability-note
+summary: ML-DSA produces significantly larger public keys and signatures compared to traditional algorithms (e.g., ML-DSA-87 public key is 2592 bytes, signature 4627 bytes). This may make ML-DSA unsuitable for deployments with limited bandwidth, memory, or processing capacity. Use of thumbprints per RFC 7638 and RFC 9679 can reduce the need to repeat public key representations.
+section: "5"
+topics:
+    - crypto
+    - jose
+    - cbor
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

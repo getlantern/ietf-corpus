@@ -1,0 +1,8 @@
+document: rfc-9959
+kind: design-rationale
+summary: Proportional Rate Reduction (PRR) is explicitly not used in the Safe Retreat Phase because PRR assumes it is safe to reduce rate gradually during congestion avoidance. When Careful Resume produces significant overshoot, gradual reduction would maintain an excessively high rate and further starve competing flows.
+section: "4.5"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

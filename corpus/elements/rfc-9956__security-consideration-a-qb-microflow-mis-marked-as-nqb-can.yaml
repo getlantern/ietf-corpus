@@ -1,0 +1,10 @@
+document: rfc-9956
+kind: security-consideration
+summary: A QB microflow mis-marked as NQB can contribute to NQB queue formation, causing queuing delay and/or loss for all other microflows sharing the NQB queue. Full NQB PHB support with traffic protection limits incentives for this mis-marking, since mis-marked QB traffic typically experiences degradation (excessive packet loss, delay variation, out-of-order delivery) rather than benefit. If traffic protection is absent, a mis-marked QB flow can degrade all NQB traffic sharing the shallow buffer.
+section: "9"
+topics:
+    - security
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

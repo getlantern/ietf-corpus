@@ -1,0 +1,9 @@
+document: rfc-9953
+kind: normative-requirement
+summary: The DoC server MUST ensure that the sum of the CoAP Max-Age value and any DNS TTL in the response is less than or equal to the corresponding TTL received from the upstream DNS server. The DoC client MUST add the Max-Age value of the carrying CoAP response to all TTLs in the DNS response upon reception.
+section: 4.3.2
+rfc2119_level: MUST
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

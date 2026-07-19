@@ -1,0 +1,9 @@
+document: rfc-9951
+kind: design-rationale
+summary: 'unsigned64 was chosen for pathDelaySumDeltaMicroseconds (rather than unsigned32) to avoid overflow: a flow with 100 ms path delay cannot exceed 42,949 packets without wrapping an unsigned32 counter. Reduced-size encoding per RFC 7011 Section 6.2 may be applied when unsigned32 suffices.'
+section: "7.3"
+topics:
+    - measurement
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

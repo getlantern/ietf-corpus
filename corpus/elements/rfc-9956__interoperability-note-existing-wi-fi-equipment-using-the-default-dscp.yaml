@@ -1,0 +1,9 @@
+document: rfc-9956
+kind: interoperability-note
+summary: Existing Wi-Fi equipment using the default DSCP-to-UP mapping (RFC 8325, Section 2.3) maps DSCP 45 to UP 5, placing it in the Video Access Category (AC_VI), which provides statistical prioritization over Best Effort (AC_BE). This achieves separate queuing from Default traffic but violates the equal-forwarding-preference recommendation. Wi-Fi equipment SHOULD map DSCP 45 to a separate queue in UP 0 (AC_BE); if unavailable, MAY map to UP 3.
+section: 7.3.1
+topics:
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

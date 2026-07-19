@@ -1,0 +1,10 @@
+document: rfc-9959
+kind: state-machine
+summary: 'Careful Resume defines five phases: Observing (normal CC, saving parameters), Reconnaissance (confirm path using IW), Unvalidated (tentative jump to saved_cwnd/2 with pacing), Validating (check unvalidated packets for congestion), and Safe Retreat (drain path, reduce CWND to PipeSize/2 on detected congestion). Transitions back to normal CC can occur from any phase.'
+section: "3"
+topics:
+    - congestion
+    - tcp
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9959
+kind: design-rationale
+summary: The Reconnaissance Phase uses the standard IW (no more than recommended maximum initial window per RFC 6928 / RFC 9002) for the first RTT rather than jumping immediately to saved_cwnd. This ensures any path with persistent congestion is detected before the large CWND jump, and establishes the current minimum RTT needed to validate the saved parameters.
+section: "4.2"
+topics:
+    - congestion
+    - tcp
+    - quic
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

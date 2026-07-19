@@ -1,0 +1,9 @@
+document: rfc-9961
+kind: design-rationale
+summary: Unlike Multicast LDP where the initiating LSR may not know all Leaf routers and thus requires a configurable TTL upper limit for traceroute, the SR P2MP Root node has full visibility into the Leaf nodes, providing a definitive way to estimate when traceroute processing ends. A configurable TTL limit is therefore an implementation choice rather than a requirement.
+section: 3.1.1
+topics:
+    - mpls
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9956
+kind: design-rationale
+summary: The NQB PHB is designed without prioritization and without reserved capacity relative to Default traffic, giving NQB and Default traffic equal forwarding preference. This incentive-alignment design means mis-marking QB traffic as NQB provides no capacity benefit and typically causes degradation (shallow buffer loss, out-of-order delivery), eliminating the need for access control or admission control mechanisms that complicate traditional Diffserv deployments.
+section: "3.2"
+topics:
+    - diffserv
+    - qos
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,8 @@
+document: rfc-9953
+kind: design-rationale
+summary: 'The CoAP FETCH method was chosen over GET and POST: it places the DNS query in the request body (avoiding base64 encoding required for GET), while retaining the same caching semantics as GET responses. This also enables block-wise transfer of large DNS queries.'
+section: "1"
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

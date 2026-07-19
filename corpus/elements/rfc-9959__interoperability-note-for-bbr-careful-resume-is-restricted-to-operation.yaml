@@ -1,0 +1,8 @@
+document: rfc-9959
+kind: interoperability-note
+summary: For BBR, Careful Resume is restricted to operation during BBR's Startup state only. The 'carefully-resuming' flag gates unvalidated packet transmission and triggers entry into BBR's Drain state (Safe Retreat) on congestion. The flag is cleared two rounds after being set to allow measured delivery rates to reflect actual path capacity.
+section: C.1
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

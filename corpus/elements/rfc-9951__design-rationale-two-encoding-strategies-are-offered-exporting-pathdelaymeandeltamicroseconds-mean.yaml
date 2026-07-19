@@ -1,0 +1,8 @@
+document: rfc-9951
+kind: design-rationale
+summary: 'Two encoding strategies are offered: exporting pathDelayMeanDeltaMicroseconds (mean computed on the exporter) reduces Collector processing, while exporting pathDelaySumDeltaMicroseconds allows the Collector to compute mean as sum/packetDeltaCount, reducing Exporter computation and per-packet caching requirements.'
+section: "3"
+topics:
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

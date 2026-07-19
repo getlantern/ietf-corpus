@@ -1,0 +1,10 @@
+document: rfc-9956
+kind: security-consideration
+summary: The Diffserv DS field has no integrity protection; an on-path attacker can re-mark the DSCP. Malicious re-marking of NQB traffic could negatively affect QoS for tampered microflows, though this is a general Diffserv limitation and not specific to NQB. On-path attackers can cause greater harm by modifying other mutable IP header fields (e.g., TTL).
+section: "9"
+topics:
+    - security
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

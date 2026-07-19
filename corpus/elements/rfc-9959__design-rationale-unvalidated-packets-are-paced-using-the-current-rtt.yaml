@@ -1,0 +1,8 @@
+document: rfc-9959
+kind: design-rationale
+summary: Unvalidated packets are paced using the current RTT rather than the saved_rtt. This avoids a smaller saved_rtt inflating the sending rate beyond what was previously observed, providing a safety margin proportional to actual path conditions.
+section: 4.3.2
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

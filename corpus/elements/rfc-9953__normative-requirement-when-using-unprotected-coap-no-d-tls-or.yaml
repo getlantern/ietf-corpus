@@ -1,0 +1,10 @@
+document: rfc-9953
+kind: normative-requirement
+summary: When using unprotected CoAP (no (D)TLS or OSCORE), a DoC message MUST use a random CoAP token with a length of at least 2 bytes to mitigate off-path cache poisoning attacks caused by setting the DNS ID to 0.
+section: "6"
+rfc2119_level: MUST
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

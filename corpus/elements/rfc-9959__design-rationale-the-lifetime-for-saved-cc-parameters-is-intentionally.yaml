@@ -1,0 +1,8 @@
+document: rfc-9959
+kind: design-rationale
+summary: The Lifetime for saved CC parameters is intentionally configurable rather than fixed. For dynamic or shared paths a short Lifetime (minutes) is recommended to reduce risk; for stable, lightly shared paths a longer Lifetime (hours) is justified because Careful Resume's overshoot mitigations reduce the safety risk compared to RFC 7661's fixed 5-minute NVP.
+section: 4.3.1
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9953
+kind: normative-requirement
+summary: 'When constructing a DoC request from an SVCB record: if the "alpn" SvcParam is "coap", a CoAP-over-TLS request MUST be constructed; if it is "co", a CoAP-over-DTLS request MUST be constructed. The destination port MUST come from the "port" SvcParam if present, otherwise defaulting to TCP/UDP port 5684.'
+section: "3.2"
+rfc2119_level: MUST
+topics:
+    - dns
+    - tls
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

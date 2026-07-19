@@ -1,0 +1,9 @@
+document: rfc-9959
+kind: interoperability-note
+summary: A TCP sender is limited by the receiver-advertised window (rwnd). Unless the receiver configures a sufficiently large rwnd, it will constrain the rate of increase and reduce the benefit of Careful Resume, since the CWND increase enabled by the method may not be usable.
+section: "4.7"
+topics:
+    - tcp
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

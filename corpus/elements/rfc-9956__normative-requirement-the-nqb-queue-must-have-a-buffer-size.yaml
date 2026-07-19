@@ -1,0 +1,10 @@
+document: rfc-9956
+kind: normative-requirement
+summary: The NQB queue MUST have a buffer size significantly smaller than the buffer provided for Default traffic; it is RECOMMENDED to configure an NQB buffer size less than or equal to 10 ms at the shared NQB/Default egress rate. A similarly deep NQB buffer would undermine the low-latency goal and erode incentives for correct marking.
+section: "5.1"
+rfc2119_level: MUST
+topics:
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

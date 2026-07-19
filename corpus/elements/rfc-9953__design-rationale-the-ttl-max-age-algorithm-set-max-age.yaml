@@ -1,0 +1,8 @@
+document: rfc-9953
+kind: design-rationale
+summary: The TTL/Max-Age algorithm (set Max-Age = min TTL, subtract min TTL from all TTLs) prevents cache poisoning from stale records in intermediate CoAP caches and keeps the ETag stable even as upstream caches update TTLs, enabling efficient CoAP cache validation.
+section: 4.3.2
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,11 @@
+document: rfc-9960
+kind: security-consideration
+summary: Incorrect provisioning of Replication segments by a controller can result in a chain of Replication segments forming a loop. Replicated packets can create a packet storm until MPLS TTL (for SR-MPLS) or IPv6 Hop Limit (for SRv6) decrements to zero.
+section: "7"
+topics:
+    - security
+    - routing
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

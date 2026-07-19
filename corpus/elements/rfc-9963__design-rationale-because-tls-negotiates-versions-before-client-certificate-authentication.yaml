@@ -1,0 +1,9 @@
+document: rfc-9963
+kind: design-rationale
+summary: Because TLS negotiates versions before client certificate authentication, clients and servers cannot know each other's key capabilities at handshake time; disabling TLS 1.3 globally or using external fallbacks both introduce security problems (e.g., POODLE-class vulnerabilities), motivating dedicated code points instead.
+section: "1"
+topics:
+    - tls
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

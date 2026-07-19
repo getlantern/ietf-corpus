@@ -1,0 +1,10 @@
+document: rfc-9956
+kind: protocol-element
+summary: The traffic protection function is a per-node mechanism that identifies microflows inconsistent with NQB sender requirements (Section 4) and either reclassifies them to the QB (Default) queue or discards offending traffic. It SHOULD base decisions on actual microflow behavior (packet arrival patterns and observed queuing delay), not application-layer constructs such as port numbers or IP addresses. Implementations may optionally re-mark offending traffic to Default DSCP to propagate the decision downstream.
+section: "5.2"
+topics:
+    - diffserv
+    - qos
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

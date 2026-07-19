@@ -1,0 +1,11 @@
+document: rfc-9956
+kind: interoperability-note
+summary: Reordering-sensitive tunnel protocols (e.g., IPsec, L2TP) carrying a mix of QB and NQB traffic must use a non-NQB DSCP on the outer tunnel header (e.g., Default), because NQB traffic protection and shallow buffer overrun responses can introduce out-of-order delivery. The 'pipe' tunnel model is preferable in this case as it preserves inner DSCP differentiation at decapsulation.
+section: "6.5"
+topics:
+    - diffserv
+    - qos
+    - vpn
+    - ipsec
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,10 @@
+document: rfc-9960
+kind: design-rationale
+summary: A controller may instantiate Replication segments in a batch, first at Leaf and intermediate nodes, then at the Root node. If Root instantiation succeeds, the instance can immediately be activated to carry traffic, minimizing the window of potential traffic disruption.
+section: "5.5"
+topics:
+    - routing
+    - mpls
+    - multicast
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

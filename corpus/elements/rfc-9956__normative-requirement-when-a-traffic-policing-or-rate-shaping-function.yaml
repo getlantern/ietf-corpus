@@ -1,0 +1,10 @@
+document: rfc-9956
+kind: normative-requirement
+summary: When a traffic policing or rate-shaping function is applied to NQB traffic destined to a non-DS-capable domain, the policer/shaper rate SHOULD be set to either 5% of the interconnection data rate or 5% of the typical rate for such interconnections (whichever is greater), with excess traffic re-marked for Default forwarding or dropped. Burst tolerance SHOULD be approximately 100 ms for policing, 10 ms for shaping (with no more than 50 ms of buffering).
+section: 6.4.1
+rfc2119_level: SHOULD
+topics:
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

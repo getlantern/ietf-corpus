@@ -1,0 +1,9 @@
+document: rfc-9953
+kind: normative-requirement
+summary: CoAP responses with non-successful response codes MUST NOT contain a DNS response body; they MUST only be used for CoAP-layer errors or protocol violations. DNS operational errors (e.g., upstream timeouts) MUST be reported using the appropriate DNS RCODE inside a 2.xx CoAP response.
+section: 4.3.1
+rfc2119_level: MUST NOT
+topics:
+    - dns
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9959
+kind: normative-requirement
+summary: When using BBR, delivery rates measured in the Drain state MUST be discarded if the 'carefully-resuming' flag is True, because packets sent during the attempt may still be queued at the bottleneck and could have displaced competing flows' packets.
+section: C.3
+rfc2119_level: MUST
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

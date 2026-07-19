@@ -1,0 +1,10 @@
+document: rfc-9956
+kind: normative-requirement
+summary: Applications MUST NOT mark traffic with the NQB DSCP if the microflow's traffic exceeds the rate equation (bytes ≤ R*T + MTU, where R is 1% of typical path capacity). Exceeding this rate risks traffic protection penalties or shallow buffer overflow causing packet loss or out-of-order delivery.
+section: "4"
+rfc2119_level: MUST NOT
+topics:
+    - diffserv
+    - qos
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,8 @@
+document: rfc-9959
+kind: design-rationale
+summary: The RTT lower bound for path confirmation is saved_rtt/2, because jump_cwnd is set to saved_cwnd/2 and the resulting sending rate should not exceed the previously observed rate. A factor of two arises directly from the relationship between CWND, RTT, and throughput.
+section: 4.2.1
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

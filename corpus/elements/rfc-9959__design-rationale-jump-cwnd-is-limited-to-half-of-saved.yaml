@@ -1,0 +1,8 @@
+document: rfc-9959
+kind: design-rationale
+summary: jump_cwnd is limited to half of saved_cwnd to avoid starving flows that started or increased their capacity since the last observation. A direct reuse of saved_cwnd at full value would risk a disproportionate share of the bottleneck, displacing existing flows.
+section: "4.3"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

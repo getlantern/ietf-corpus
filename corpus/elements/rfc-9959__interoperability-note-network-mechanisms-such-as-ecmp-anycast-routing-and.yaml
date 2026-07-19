@@ -1,0 +1,10 @@
+document: rfc-9959
+kind: interoperability-note
+summary: Network mechanisms such as ECMP, anycast routing, and NAT can silently change the forwarding path between connections. Servers using anycast addresses cannot guarantee that the same physical path is used across connections; operators must ensure alternative paths have equivalent capacity or avoid using Careful Resume in such deployments.
+section: "5"
+topics:
+    - ip
+    - congestion
+    - nat
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

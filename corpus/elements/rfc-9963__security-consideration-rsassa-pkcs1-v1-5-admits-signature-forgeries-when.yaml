@@ -1,0 +1,10 @@
+document: rfc-9963
+kind: security-consideration
+summary: RSASSA-PKCS1-v1_5 admits signature forgeries when implemented incorrectly (as demonstrated by MFSA 2014-73). Strict conformance to RFC 8017 Section 8.2, including the NULL parameter in DigestInfo and valid DER encoding, is required to prevent such attacks.
+section: "4"
+topics:
+    - tls
+    - security
+    - crypto
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

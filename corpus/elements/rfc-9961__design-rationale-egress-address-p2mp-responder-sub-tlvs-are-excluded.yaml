@@ -1,0 +1,9 @@
+document: rfc-9961
+kind: design-rationale
+summary: Egress Address P2MP Responder sub-TLVs are excluded from SR P2MP Policy echo requests because, analogous to Multicast LDP, transit routers in an SR P2MP domain (often programmed via PCE) do not have visibility into downstream Leaf nodes. Only the Root node—where the SR P2MP Policy is programmed—knows the Leaf nodes.
+section: 3.1.1
+topics:
+    - mpls
+    - measurement
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

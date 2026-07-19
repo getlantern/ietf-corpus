@@ -1,0 +1,10 @@
+document: rfc-9956
+kind: design-rationale
+summary: DSCP value 45 (decimal, binary 101101) was chosen because its three most significant bits (101) cause existing Wi-Fi equipment using the default DSCP-to-UP mapping to classify it into the Video Access Category (AC_VI), achieving separate queuing from Default traffic even on non-upgraded equipment. It also simplifies range-based aggregation in network equipment (DSCPs 40–47 share the MSBs 0b101).
+section: "4"
+topics:
+    - diffserv
+    - qos
+    - registry
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

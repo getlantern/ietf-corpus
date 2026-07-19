@@ -1,0 +1,8 @@
+document: rfc-9959
+kind: design-rationale
+summary: Only one connection at a time may use a specific set of saved CC parameters. Allowing multiple simultaneous connections to each jump by saved_cwnd/2 would create an excessive aggregate load at the bottleneck. Implementations must coordinate (e.g., via hash table or distributed lock) when load balancing may route concurrent connections from the same client to different server processes.
+section: "4.2"
+topics:
+    - congestion
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

@@ -1,0 +1,9 @@
+document: rfc-9953
+kind: security-consideration
+summary: Setting the DNS message ID to 0 (as recommended for caching) when using unprotected CoAP exposes the DoC client's DNS cache to cache poisoning via response spoofing. This is mitigated by requiring a random CoAP token of at least 2 bytes in unprotected mode; (D)TLS and OSCORE make ID=0 safe.
+section: "7"
+topics:
+    - dns
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"

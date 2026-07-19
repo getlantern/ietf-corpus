@@ -1,0 +1,10 @@
+document: rfc-9956
+kind: design-rationale
+summary: Traffic protection is placed at PHB nodes (not just domain ingress edges) so it can monitor the actual NQB queue and act only when a queue begins to form. Edge-only policing is simultaneously too lenient (cannot guarantee ≤100 NQB flows per internal bottleneck) and too strict (would police based on minimum link capacity, not actual bottleneck capacity).
+section: "5.2"
+topics:
+    - diffserv
+    - qos
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-07-19"
