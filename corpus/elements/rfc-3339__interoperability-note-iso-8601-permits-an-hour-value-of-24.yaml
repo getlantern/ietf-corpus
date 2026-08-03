@@ -1,8 +1,6 @@
 document: rfc-3339
 kind: interoperability-note
-summary: ISO 8601 permits an hour value of "24" to represent midnight at the end of a day, but this profile restricts the hour to values between "00" and "23" to reduce confusion.
+summary: ISO 8601 permits an hour value of '24', but this profile restricts hours to 00–23 to reduce confusion. Implementations parsing ISO 8601 input may encounter this value, but conformant RFC 3339 generators must not emit it.
 section: "5.7"
-topics:
-    - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-06-28"
+extracted_at: "2026-07-26"

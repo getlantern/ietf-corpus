@@ -1,6 +1,8 @@
 document: rfc-3986
 kind: protocol-element
-summary: The reference resolution algorithm transforms a URI reference R against a base URI into a target URI T by parsing R into (scheme, authority, path, query, fragment) and merging components, with dot-segment removal via remove_dot_segments applied to the merged path.
+summary: The reference resolution algorithm transforms a URI reference R against a base URI into a target URI T by selectively inheriting scheme, authority, path, and query from either R or the base, then applying remove_dot_segments to the path.
 section: 5.2.2
+topics:
+    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-07-12"
+extracted_at: "2026-07-26"

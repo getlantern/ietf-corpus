@@ -1,8 +1,9 @@
 document: rfc-7159
 kind: design-rationale
-summary: JSON's design goals were to be minimal, portable, textual, and a subset of JavaScript. It was derived from ECMAScript object literals, which explains its syntax and the choice to reuse the terms 'object' and 'array'.
+summary: JSON's design goals were to be minimal, portable, textual, and a subset of JavaScript. It was derived from ECMAScript object literals but excludes assignment and invocation, which are the basis of the security concern with eval().
 section: "1"
 topics:
     - json
+    - security
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-06-21"
+extracted_at: "2026-07-26"
