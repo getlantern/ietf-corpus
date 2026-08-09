@@ -1,0 +1,8 @@
+document: rfc-7159
+kind: interoperability-note
+summary: The ABNF grammar permits member names and string values to contain bit sequences that do not encode valid Unicode characters, such as unpaired UTF-16 surrogates (e.g., `\uDEAD`). Software receiving such values may behave unpredictably, including returning wrong string lengths or throwing fatal exceptions.
+section: "8.2"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-08-09"

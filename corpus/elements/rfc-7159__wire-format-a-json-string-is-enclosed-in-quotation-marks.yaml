@@ -1,8 +1,8 @@
 document: rfc-7159
 kind: wire-format
-summary: A JSON string is enclosed in quotation marks (U+0022). Characters that must be escaped include quotation mark, reverse solidus, and control characters U+0000–U+001F. Non-BMP characters are encoded as a 12-character UTF-16 surrogate pair escape sequence (e.g., \uD834\uDD1E for U+1D11E).
+summary: 'A JSON string is enclosed in quotation marks (0x22). All Unicode characters are permitted except those that must be escaped: quotation mark, reverse solidus, and control characters U+0000 through U+001F. Non-BMP characters are encoded as a 12-character UTF-16 surrogate pair escape sequence.'
 section: "7"
 topics:
     - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-07-26"
+extracted_at: "2026-08-09"

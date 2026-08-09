@@ -1,0 +1,9 @@
+document: rfc-7159
+kind: design-rationale
+summary: JSON is a proper subset of JavaScript but deliberately excludes assignment and invocation, which reduces but does not eliminate security risks relative to arbitrary JavaScript execution. The security problem with `eval()` stems from JSON's syntactic compatibility with JavaScript, not from JSON itself.
+section: "12"
+topics:
+    - json
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-08-09"

@@ -1,0 +1,8 @@
+document: rfc-7159
+kind: interoperability-note
+summary: String comparison is interoperable only when implementations first decode escaped characters into Unicode code units and then compare numerically, code unit by code unit. Comparing strings with unconverted escape sequences may incorrectly treat `"a\\b"` and `"a\u005Cb"` as unequal.
+section: "8.3"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-08-09"
