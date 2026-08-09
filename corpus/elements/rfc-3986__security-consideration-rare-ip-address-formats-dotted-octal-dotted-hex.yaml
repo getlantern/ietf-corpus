@@ -1,0 +1,9 @@
+document: rfc-3986
+kind: security-consideration
+summary: Rare IP address formats — dotted-octal, dotted-hex, and single-number decimal — may be accepted by some platforms but are not valid URI syntax; only dotted-decimal IPv4 (four decimal octets) is permitted. Applications that silently normalize such forms may allow bypassing access controls based on URI comparison.
+section: "7.4"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-08-09"

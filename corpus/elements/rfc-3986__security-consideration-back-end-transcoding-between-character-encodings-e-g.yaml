@@ -1,0 +1,8 @@
+document: rfc-3986
+kind: security-consideration
+summary: Back-end transcoding between character encodings (e.g., EBCDIC to UTF-8) during URI production or consumption can introduce vulnerabilities when the encoding used for decoding differs from the one used during production. Implementations must decode percent-encoded octets before reverse-transcoding to obtain local names, not after.
+section: "7.3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-08-09"

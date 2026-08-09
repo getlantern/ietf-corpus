@@ -1,0 +1,8 @@
+document: rfc-3986
+kind: security-consideration
+summary: Maliciously constructed URIs can use percent-encoding, uncommon syntax, or lookalike characters to obscure the true nature of a URI from both users and automated security checks. Implementations should not blindly decode URIs before applying security policies, and scheme-specific parsers should flag references that violate scheme restrictions rather than silently ignoring unused parts.
+section: "7.2"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-08-09"

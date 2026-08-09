@@ -1,8 +1,6 @@
 document: rfc-3986
 kind: interoperability-note
-summary: Some older implementations fail to separate a reference's query or fragment component from the path before merging with the base path and removing dot-segments, causing failures when the query contains strings like "/../" or "/./". All conformant parsers must separate query and fragment before path merging.
+summary: Some older implementations fail to separate a reference's query component from its path before merging with the base path and removing dot-segments. This causes incorrect resolution when a query component contains '/../' or '/./' strings, and parsers must ensure query and fragment are stripped before path merging.
 section: 5.2.4
-topics:
-    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-06-28"
+extracted_at: "2026-08-09"
