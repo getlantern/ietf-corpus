@@ -1,6 +1,6 @@
 document: rfc-3986
 kind: protocol-element
-summary: 'The reference resolution algorithm (Section 5.2.2) transforms a URI reference R to target URI T by checking, in order: whether R has a scheme (use R in full), whether R has an authority (use R''s authority and path with base scheme), whether R''s path is empty (inherit base path/query), and whether R''s path is absolute or relative. The remove_dot_segments routine then removes all "." and ".." path segments.'
+summary: The reference resolution algorithm (Section 5.2.2) transforms a URI reference R against base URI B into target URI T by progressively inheriting scheme, authority, path, and query from B when R's corresponding components are undefined. remove_dot_segments is applied to the merged path before forming T.
 section: 5.2.2
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-09"
+extracted_at: "2026-08-16"

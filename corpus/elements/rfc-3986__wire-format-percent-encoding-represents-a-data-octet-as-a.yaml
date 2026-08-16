@@ -1,8 +1,6 @@
 document: rfc-3986
 kind: wire-format
-summary: 'Percent-encoding represents a data octet as a character triplet: "%" followed by two uppercase hexadecimal digits (e.g., "%20" for SP). The ABNF is: pct-encoded = "%" HEXDIG HEXDIG.'
+summary: 'Percent-encoding represents a data octet as a character triplet: the "%" character followed by two hexadecimal digits (pct-encoded = "%" HEXDIG HEXDIG). Uppercase and lowercase hex digits are equivalent; URI producers should use uppercase for consistency.'
 section: "2.1"
-topics:
-    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-07-26"
+extracted_at: "2026-08-16"
