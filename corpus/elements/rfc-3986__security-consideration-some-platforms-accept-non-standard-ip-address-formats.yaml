@@ -1,0 +1,10 @@
+document: rfc-3986
+kind: security-consideration
+summary: Some platforms accept non-standard IP address formats such as octal or hexadecimal dotted notation, which this grammar disallows (only standard dotted-decimal IPv4 is permitted). Implementations that pass host components to OS APIs without strict validation may be vulnerable to access-control bypasses when those APIs accept non-standard formats.
+section: "7.4"
+topics:
+    - security
+    - ip
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-08-23"

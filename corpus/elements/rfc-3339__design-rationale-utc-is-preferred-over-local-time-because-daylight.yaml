@@ -1,6 +1,8 @@
 document: rfc-3339
 kind: design-rationale
-summary: UTC is preferred over local time because daylight saving rules are convoluted and can change unpredictably based on local law. True interoperability is best achieved by expressing all times relative to UTC.
+summary: UTC is preferred over local time because daylight saving rules for local time zones are convoluted and can change based on local law at unpredictable times. True interoperability is best achieved using UTC, and the specification explicitly does not cater to local time zone rules.
 section: "4.1"
+topics:
+    - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-16"
+extracted_at: "2026-08-23"

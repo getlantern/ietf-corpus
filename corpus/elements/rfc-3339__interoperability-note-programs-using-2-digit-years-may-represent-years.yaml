@@ -1,6 +1,8 @@
 document: rfc-3339
 kind: interoperability-note
-summary: Programs using 2-digit years may represent years after 1999 as three digits or as non-numeric decade characters. Implementations wishing to interoperate with such broken software may add 1900 to three-digit years and detect non-numeric decades.
+summary: Programs using 2-digit years may represent years after 1999 as three digits (by subtracting 1900 without checking digit count) or as non-numeric characters. Robust parsers may add 1900 to three-digit years or detect and handle non-numeric decade values.
 section: "3"
+topics:
+    - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-16"
+extracted_at: "2026-08-23"

@@ -1,6 +1,8 @@
 document: rfc-3339
 kind: design-rationale
-summary: The day of the week is intentionally excluded from the Internet Date/Time Format because it is redundant (computable from the date) and its inclusion would create the possibility of internally inconsistent timestamps.
+summary: The day of the week is intentionally excluded from the format because it is redundant information that could be inconsistent with the date, and can be computed algorithmically (see Appendix B). Including redundant fields creates the possibility of conflicting values.
 section: "5.4"
+topics:
+    - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-05-23"
+extracted_at: "2026-08-23"

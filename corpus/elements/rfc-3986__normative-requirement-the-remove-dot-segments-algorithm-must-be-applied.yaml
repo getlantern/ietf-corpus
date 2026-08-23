@@ -1,7 +1,9 @@
 document: rfc-3986
 kind: normative-requirement
-summary: The remove_dot_segments algorithm must be applied to all paths after reference resolution to eliminate "." and ".." segments. Excess ".." segments beyond the root are absorbed without error; ".." syntax cannot change the authority component of a URI.
+summary: The remove_dot_segments algorithm must be applied after path extraction to eliminate "." and ".." complete path segments from the target URI path. More ".." segments than hierarchical levels in the base path are silently consumed rather than treated as errors.
 section: 5.2.4
 rfc2119_level: MUST
+topics:
+    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-07-19"
+extracted_at: "2026-08-23"

@@ -1,0 +1,9 @@
+document: rfc-3986
+kind: security-consideration
+summary: Maliciously constructed URIs may use percent-encoding, dot-segments, or scheme-specific syntax to bypass security checks in gateways or parsers. Software that validates URIs must normalize and fully parse URIs before making access-control decisions, applying the same transformation as the eventual dereference agent.
+section: "7.2"
+topics:
+    - security
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-08-23"

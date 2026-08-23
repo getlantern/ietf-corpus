@@ -1,9 +1,10 @@
 document: rfc-3339
 kind: normative-requirement
-summary: Systems configured with a local time but unaware of the corresponding UTC offset that depend on time synchronization with other Internet systems MUST use a mechanism that ensures correct synchronization with UTC (e.g., NTP).
+summary: Systems configured with a local time but unaware of the corresponding UTC offset that depend on time synchronization with other Internet systems MUST use a mechanism that ensures correct synchronization with UTC (e.g., NTP, a gateway host that corrects local times, or prompting the user for time zone settings).
 section: "4.4"
 rfc2119_level: MUST
 topics:
+    - json
     - ntp
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-07-12"
+extracted_at: "2026-08-23"

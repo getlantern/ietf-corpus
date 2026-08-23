@@ -1,8 +1,8 @@
 document: rfc-3986
 kind: state-machine
-summary: 'The reference resolution algorithm transforms a URI reference R into target URI T: if R has a scheme, use all of R''s components with dot-segments removed; else if R has an authority, take authority/path/query from R with scheme from Base; else if R''s path is empty, inherit Base path and optionally Base query; else merge and remove dot-segments. T.fragment always comes from R.'
+summary: 'The reference resolution algorithm transforms a URI reference R against a base URI Base into target URI T. If R has a scheme, T takes R''s components directly (with dot-segments removed). If R lacks a scheme but has an authority, T takes R''s authority and path. Otherwise, T inherits base components progressively: authority, then path (merged with base path and dot-segments removed), then query, always appending R''s fragment.'
 section: 5.2.2
 topics:
     - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-07-05"
+extracted_at: "2026-08-23"
