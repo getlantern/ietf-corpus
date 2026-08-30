@@ -1,0 +1,8 @@
+document: rfc-3986
+kind: security-consideration
+summary: Back-end transcoding of URI components from one character encoding to another can expose vulnerabilities if percent-decoded octets are passed directly through the transcoding layer without re-encoding. Percent-encoded octets must be decoded only after components are fully parsed, and only before the reverse transcoding is applied.
+section: "7.3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-08-30"

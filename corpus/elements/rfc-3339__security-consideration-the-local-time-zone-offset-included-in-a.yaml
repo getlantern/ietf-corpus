@@ -1,9 +1,9 @@
 document: rfc-3339
 kind: security-consideration
-summary: The local time zone offset included in a timestamp may reveal the geographic location of a site, which could be exploited to determine when systems are less likely to be monitored and more susceptible to security probes. Sites may choose to emit times in UTC only to mitigate this.
+summary: The local time zone offset included in a timestamp may reveal information useful to an attacker for determining when a site is less likely to be monitored; sites concerned about this may choose to emit timestamps in UTC only (using "Z" offset).
 section: "7"
 topics:
     - security
     - privacy
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-16"
+extracted_at: "2026-08-30"

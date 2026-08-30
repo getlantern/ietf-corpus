@@ -1,9 +1,8 @@
 document: rfc-3986
 kind: wire-format
-summary: 'The host subcomponent is: host = IP-literal / IPv4address / reg-name. IPv6 and future IP literals are enclosed in square brackets: IP-literal = "[" ( IPv6address / IPvFuture ) "]". A "first-match-wins" rule disambiguates IPv4address from reg-name.'
+summary: 'The host subcomponent is: host = IP-literal / IPv4address / reg-name. IPv6 and future IP literals are enclosed in square brackets (the only place square brackets are allowed in URI syntax); IPv4address uses dotted-decimal notation with exactly four decimal octets 0–255.'
 section: 3.2.2
 topics:
     - ip
-    - dns
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-07-19"
+extracted_at: "2026-08-30"

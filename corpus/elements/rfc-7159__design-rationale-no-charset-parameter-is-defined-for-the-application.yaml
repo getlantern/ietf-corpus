@@ -1,9 +1,9 @@
 document: rfc-7159
 kind: design-rationale
-summary: No 'charset' parameter is defined for the application/json media type registration because JSON's encoding is self-describing (UTF-8/16/32 detectable from initial bytes) and adding one has no effect on compliant recipients.
+summary: No 'charset' parameter is defined for the application/json media type because adding one has no effect on compliant recipients — the encoding is determined by the content itself, not a media-type parameter.
 section: "11"
 topics:
     - json
     - registry
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-23"
+extracted_at: "2026-08-30"

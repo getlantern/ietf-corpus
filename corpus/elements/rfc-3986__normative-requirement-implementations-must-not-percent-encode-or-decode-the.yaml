@@ -1,10 +1,9 @@
 document: rfc-3986
 kind: normative-requirement
-summary: Implementations must not percent-encode or decode the same string more than once. Decoding an already decoded string may misinterpret a data octet as a percent-encoding prefix, and double-encoding corrupts the URI.
+summary: Implementations must not percent-encode or decode the same string more than once. Double-decoding may cause a percent data octet ("%25") to be misinterpreted as the start of a new percent-encoding, leading to security vulnerabilities.
 section: "2.4"
 rfc2119_level: MUST NOT
 topics:
-    - http
     - security
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-23"
+extracted_at: "2026-08-30"

@@ -1,6 +1,9 @@
 document: rfc-3986
 kind: wire-format
-summary: 'The generic URI syntax is: URI = scheme ":" hier-part [ "?" query ] [ "#" fragment ], where hier-part may include an authority preceded by "//" or one of four path forms. The scheme and path components are required; the path may be empty but must begin with "/" when authority is present.'
+summary: 'The generic URI syntax is: URI = scheme ":" hier-part [ "?" query ] [ "#" fragment ], where hier-part is one of "//" authority path-abempty, path-absolute, path-rootless, or path-empty. Scheme and path are required; path may be empty.'
 section: "3"
+topics:
+    - http
+    - security
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-09"
+extracted_at: "2026-08-30"

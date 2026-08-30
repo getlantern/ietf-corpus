@@ -1,0 +1,8 @@
+document: rfc-3986
+kind: security-consideration
+summary: Malicious URIs may be crafted to mislead users, for example by embedding userinfo that visually resembles a trusted domain name (e.g., 'http://trusted.example.com@attacker.example/'). Applications should render userinfo distinctly and scheme-specific parsers should flag constraint violations as errors rather than silently ignoring unused parts.
+section: "7.6"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-08-30"

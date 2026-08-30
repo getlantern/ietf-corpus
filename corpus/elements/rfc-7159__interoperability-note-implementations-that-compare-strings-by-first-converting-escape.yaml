@@ -1,0 +1,8 @@
+document: rfc-7159
+kind: interoperability-note
+summary: Implementations that compare strings by first converting escape sequences to Unicode code units and then comparing numerically are interoperable. Comparing escaped and unescaped representations without normalization may incorrectly treat equal strings as unequal (e.g., 'a\\b' vs 'a\u005Cb').
+section: "8.3"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-08-30"
