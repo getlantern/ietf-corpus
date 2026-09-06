@@ -1,8 +1,8 @@
 document: rfc-3986
 kind: interoperability-note
-summary: Suffix references (e.g., "www.example.com/path") used in traditional media are not standard URI references and rely on context-dependent heuristics that change over time. They should be avoided whenever possible and never used where long-term references are expected.
+summary: Suffix references (e.g., "www.example.com/path" used without a scheme) are commonly entered by users and heuristically resolved by clients, but have the same syntax as relative-path references and SHOULD be avoided in contexts where long-term references are expected, as heuristics change over time.
 section: "4.5"
 topics:
     - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-06-28"
+extracted_at: "2026-09-06"

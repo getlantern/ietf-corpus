@@ -1,8 +1,6 @@
 document: rfc-3339
 kind: design-rationale
-summary: Date and time components are ordered from least precise to most precise (year to second) so that timestamps with the same time zone, same offset string, and same fractional-second width can be correctly sorted using a simple string comparison (e.g., strcmp()). Optional punctuation would violate this property.
+summary: Date and time components are ordered from least precise (year) to most precise (second/fraction) so that timestamps with the same time zone and same number of fractional second digits can be sorted correctly using simple string comparison (e.g., strcmp()).
 section: "5.1"
-topics:
-    - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-23"
+extracted_at: "2026-09-06"

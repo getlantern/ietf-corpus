@@ -1,8 +1,8 @@
 document: rfc-3339
 kind: wire-format
-summary: 'The Internet Date/Time Format is defined as: date-time = full-date "T" full-time, where full-date = date-fullyear "-" date-month "-" date-mday and full-time = partial-time time-offset. All fields are fixed-width decimal digits with mandatory punctuation separators.'
+summary: 'The Internet Date/Time Format is defined as: date-time = full-date "T" full-time, where full-date = date-fullyear "-" date-month "-" date-mday and full-time = partial-time time-offset. Fields are: date-fullyear (4DIGIT), date-month (2DIGIT 01-12), date-mday (2DIGIT), time-hour (2DIGIT 00-23), time-minute (2DIGIT 00-59), time-second (2DIGIT 00-60), optional time-secfrac ("." 1*DIGIT), and time-offset ("Z" or numeric "+"/"-" HH:MM).'
 section: "5.6"
 topics:
     - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-30"
+extracted_at: "2026-09-06"

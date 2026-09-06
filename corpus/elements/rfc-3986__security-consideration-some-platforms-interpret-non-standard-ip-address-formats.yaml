@@ -1,9 +1,10 @@
 document: rfc-3986
 kind: security-consideration
-summary: Some platforms interpret non-standard IP address formats such as octal, hexadecimal, or fewer than four dotted parts, which can resolve to addresses not obvious from the text. Only the strict dotted-decimal four-octet form is valid per this grammar; other forms may be used to bypass access controls or safeguards.
+summary: Some platforms interpret non-standard IP address formats (octal, hexadecimal, fewer than four dotted-decimal parts) that differ from the RFC 3986 grammar. An application may be misled into connecting to a different host than expected if it fails to reject these forms.
 section: "7.4"
 topics:
     - security
+    - http
     - ip
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-07-19"
+extracted_at: "2026-09-06"

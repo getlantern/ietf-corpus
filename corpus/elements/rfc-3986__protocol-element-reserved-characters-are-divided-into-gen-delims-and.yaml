@@ -1,6 +1,8 @@
 document: rfc-3986
 kind: protocol-element
-summary: Reserved characters are divided into gen-delims (":" "/" "?" "#" "[" "]" "@") and sub-delims ("!" "$" "&" "'" "(" ")" "*" "+" "," ";" "="). These serve as delimiters within URI components and must be percent-encoded when used as data that would conflict with their delimiter role.
+summary: 'Reserved characters are divided into gen-delims (: / ? # [ ] @) and sub-delims (! $ & '' ( ) * + , ; =). Data that conflicts with a reserved character''s delimiter role must be percent-encoded before the URI is formed.'
 section: "2.2"
+topics:
+    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-16"
+extracted_at: "2026-09-06"
