@@ -1,8 +1,8 @@
 document: rfc-7159
 kind: interoperability-note
-summary: Numbers representable as IEEE 754-2008 binary64 (double precision) integers in the range [-(2**53)+1, (2**53)-1] are interoperable across implementations. Numbers with greater magnitude or precision (e.g., 1E400) may cause interoperability problems since not all implementations can represent them.
+summary: Numbers representable as IEEE 754-2008 binary64 (double precision) in the integer range [-(2**53)+1, (2**53)-1] are interoperable across implementations. Numbers outside this range or with extreme precision (e.g., 1E400) may cause interoperability problems.
 section: "6"
 topics:
     - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-09-06"
+extracted_at: "2026-09-13"

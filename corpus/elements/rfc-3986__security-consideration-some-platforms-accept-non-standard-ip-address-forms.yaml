@@ -1,0 +1,8 @@
+document: rfc-3986
+kind: security-consideration
+summary: Some platforms accept non-standard IP address forms (octal notation, hexadecimal, fewer than four dotted octets) that resolve to valid IPv4 addresses but are not recognized as IP literals by naive parsers. These can be used to bypass access controls; parsers should reject non-dotted-decimal IPv4 forms.
+section: "7.4"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-09-13"

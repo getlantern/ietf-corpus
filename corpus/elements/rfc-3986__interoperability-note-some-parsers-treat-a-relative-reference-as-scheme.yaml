@@ -1,0 +1,6 @@
+document: rfc-3986
+kind: interoperability-note
+summary: Some parsers treat a relative reference as scheme-relative when its scheme equals the base URI's scheme (e.g., "http:g" resolved against an http base). This loophole from RFC 1630 should be avoided in new implementations but is permitted for backward compatibility; strict mode MUST treat it as an absolute URI reference.
+section: 5.4.2
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-09-13"
