@@ -1,8 +1,8 @@
 document: rfc-7159
 kind: wire-format
-summary: 'A JSON number is represented in base 10 as: optional minus sign, integer part (no leading zeros), optional fraction (decimal point followed by one or more digits), and optional exponent (E/e with optional sign followed by one or more digits). Infinity and NaN are not permitted.'
+summary: A JSON number is represented in base 10 as '[ minus ] int [ frac ] [ exp ]'. Leading zeros are not allowed; Infinity and NaN are not permitted; an optional minus may prefix the integer component, and an optional exponent begins with 'e' or 'E'.
 section: "6"
 topics:
     - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-30"
+extracted_at: "2026-09-20"

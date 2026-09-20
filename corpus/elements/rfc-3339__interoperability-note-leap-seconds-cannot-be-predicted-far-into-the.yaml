@@ -1,6 +1,6 @@
 document: rfc-3339
 kind: interoperability-note
-summary: Leap seconds cannot be predicted far into the future; the IERS publishes announcements only a few weeks in advance. Implementations must handle time-second values of 60 without treating them as invalid.
+summary: Leap seconds cannot be predicted far into the future; the IERS publishes bulletins announcing them with only a few weeks' warning. Applications processing timestamps near a known leap second point must handle time-second=60 without treating it as an error.
 section: "5.7"
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-16"
+extracted_at: "2026-09-20"
