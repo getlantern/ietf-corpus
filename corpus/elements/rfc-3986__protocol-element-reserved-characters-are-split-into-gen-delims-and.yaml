@@ -1,6 +1,6 @@
 document: rfc-3986
 kind: protocol-element
-summary: Reserved characters are split into gen-delims (":", "/", "?", "#", "[", "]", "@") and sub-delims ("!", "$", "&", "'", "(", ")", "*", "+", ",", ";", "="). They serve as structural delimiters; URIs differing only in whether a reserved character is percent-encoded are not equivalent.
+summary: Reserved characters are split into gen-delims (":", "/", "?", "#", "[", "]", "@") and sub-delims ("!", "$", "&", "'", "(", ")", "*", "+", ",", ";", "="). Unreserved characters are ALPHA, DIGIT, "-", ".", "_", "~". URIs differing only in reserved vs. percent-encoded form are NOT equivalent; those differing only in unreserved character encoding ARE equivalent.
 section: "2.2"
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-09-13"
+extracted_at: "2026-09-20"

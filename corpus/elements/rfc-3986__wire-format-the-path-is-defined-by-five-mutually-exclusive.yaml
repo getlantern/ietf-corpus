@@ -1,6 +1,6 @@
 document: rfc-3986
 kind: wire-format
-summary: 'The path is defined by five mutually exclusive ABNF rules (path-abempty, path-absolute, path-noscheme, path-rootless, path-empty) to resolve ambiguities. A path segment character is: pchar = unreserved / pct-encoded / sub-delims / ":" / "@".'
+summary: 'The path is defined by five mutually exclusive ABNF rules: path-abempty (begins with "/" or empty), path-absolute (begins with "/" but not "//"), path-noscheme (non-colon first segment), path-rootless (begins with segment), and path-empty (zero characters). Segments are separated by "/"; dot-segments "." and ".." are removed during resolution.'
 section: "3.3"
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-06-15"
+extracted_at: "2026-09-20"

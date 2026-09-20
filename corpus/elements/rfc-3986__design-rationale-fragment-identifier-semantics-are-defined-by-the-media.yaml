@@ -1,8 +1,8 @@
 document: rfc-3986
 kind: design-rationale
-summary: Fragment identifier semantics are defined by the media type of the retrieved representation, not by the URI scheme, making them orthogonal to scheme definition. This prevents information providers from denying reference authors the right to selectively refer to content within a resource.
+summary: Fragment identifier semantics are defined by the media type of the retrieved representation, not the URI scheme; scheme specifications cannot redefine fragment behavior. The fragment is separated from the URI before any dereference and processed entirely by the user agent, preventing information providers from blocking selective referencing by authors.
 section: "3.5"
 topics:
     - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-07-26"
+extracted_at: "2026-09-20"
