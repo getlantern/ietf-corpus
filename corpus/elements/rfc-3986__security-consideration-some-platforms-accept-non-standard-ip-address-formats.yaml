@@ -1,9 +1,10 @@
 document: rfc-3986
 kind: security-consideration
-summary: Some platforms accept non-standard IP address formats (octal notation, dotted hexadecimal, fewer than four octets) that are forbidden by the URI grammar but may be resolved by lower-level routines, potentially allowing a URI to bypass security checks that test only the canonical dotted-decimal form.
+summary: Some platforms accept non-standard IP address formats (octal notation, fewer than four octets, hexadecimal) that may bypass access controls. Only the standard dotted-decimal four-octet IPv4 form is permitted by the URI grammar; implementations should reject other dotted-notation forms.
 section: "7.4"
 topics:
     - security
+    - http
     - ip
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-09-20"
+extracted_at: "2026-09-27"

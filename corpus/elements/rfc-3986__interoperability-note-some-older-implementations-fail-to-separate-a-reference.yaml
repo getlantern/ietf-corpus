@@ -1,8 +1,8 @@
 document: rfc-3986
 kind: interoperability-note
-summary: Some older implementations fail to separate a reference's query or fragment component from its path before merging with the base path during relative resolution, causing incorrect behavior when query strings contain "/../" or "/./". All parsers SHOULD be capable of resolving abnormal dot-segment examples consistently.
+summary: Some older implementations fail to separate a reference's query and fragment components from the path before merging with the base path and removing dot-segments. This causes incorrect resolution when query data contains the strings "/../" or "/./", an error that is rarely noticed in typical usage.
 section: 5.2.4
 topics:
     - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-09-06"
+extracted_at: "2026-09-27"
