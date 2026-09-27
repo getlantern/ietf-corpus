@@ -1,6 +1,6 @@
 document: rfc-3339
 kind: protocol-element
-summary: Leap seconds are represented by setting time-second to "60" (e.g., 1990-12-31T23:59:60Z). A leap second occurs simultaneously in all time zones; in non-Z zones the leap second point is shifted by the zone offset.
+summary: Leap seconds are represented by setting time-second to "60" at the end of months in which a leap second occurs (historically June 30 or December 31), yielding timestamps of the form YYYY-MM-DDT23:59:60Z. A subtracted leap second allows time-second as low as "58".
 section: "5.7"
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-07-19"
+extracted_at: "2026-09-27"

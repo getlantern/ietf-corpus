@@ -1,0 +1,8 @@
+document: rfc-7159
+kind: interoperability-note
+summary: The JSON ABNF allows string values to contain bit sequences that do not encode valid Unicode characters, such as a single unpaired UTF-16 surrogate (e.g., '\uDEAD'). Software receiving such values behaves unpredictably — implementations may return different string lengths or raise fatal exceptions.
+section: "8.2"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-09-27"
