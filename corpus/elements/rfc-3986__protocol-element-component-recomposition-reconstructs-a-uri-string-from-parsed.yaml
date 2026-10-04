@@ -1,6 +1,8 @@
 document: rfc-3986
 kind: protocol-element
-summary: Component recomposition reconstructs a URI string from parsed components by appending scheme+":", then "//"+authority if defined, then path, then "?"+query if defined, then "#"+fragment if defined. The distinction between an undefined component (delimiter absent) and an empty component (delimiter present, no content) is preserved.
+summary: 'Component recomposition reconstructs a URI string from parsed components: scheme+":", "//"+authority (if defined), path, "?"+query (if defined), "#"+fragment (if defined). An undefined component (no separator) is distinct from an empty component (separator present but empty).'
 section: "5.3"
+topics:
+    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-09"
+extracted_at: "2026-10-04"

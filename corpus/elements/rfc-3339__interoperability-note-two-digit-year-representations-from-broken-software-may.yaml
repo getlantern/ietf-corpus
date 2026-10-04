@@ -1,6 +1,6 @@
 document: rfc-3339
 kind: interoperability-note
-summary: Two-digit year representations from broken software may appear as three digits (year - 1900) or as non-numeric decade characters. Robust implementations should handle these edge cases when accepting legacy data.
+summary: Two-digit year representations from broken software may appear as three digits (e.g., 100 for year 2000) if the program subtracts 1900 without checking digit count, or as non-numeric characters (e.g., ":0") if it adds the decade to ASCII zero. Robust implementations must handle both cases.
 section: "3"
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-05-22"
+extracted_at: "2026-10-04"

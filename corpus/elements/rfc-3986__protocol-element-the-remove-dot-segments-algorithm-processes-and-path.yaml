@@ -1,6 +1,8 @@
 document: rfc-3986
 kind: protocol-element
-summary: 'The remove_dot_segments algorithm processes "." and ".." path segments using an input/output buffer loop: "/." or "/./" is replaced by "/"; "/../" or "/.." pops the last output segment; standalone "." or ".." is removed. Excess ".." segments beyond the root are silently absorbed.'
+summary: 'The remove_dot_segments algorithm processes "." and ".." path segments using an input/output buffer loop: "./" and "../" prefixes are stripped; "/./" is replaced by "/"; "/../" removes the last output segment; lone "." or ".." are removed.'
 section: 5.2.4
+topics:
+    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-30"
+extracted_at: "2026-10-04"
