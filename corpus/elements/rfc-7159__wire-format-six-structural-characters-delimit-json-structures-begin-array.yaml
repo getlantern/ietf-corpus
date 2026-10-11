@@ -1,8 +1,8 @@
 document: rfc-7159
 kind: wire-format
-summary: 'Six structural characters delimit JSON structures: begin-array (%x5B), end-array (%x5D), begin-object (%x7B), end-object (%x7D), name-separator (%x3A), and value-separator (%x2C), each optionally surrounded by whitespace (space, tab, line-feed, carriage-return).'
+summary: 'Six structural characters delimit JSON structures: `[` (begin-array, %x5B), `]` (end-array, %x5D), `{` (begin-object, %x7B), `}` (end-object, %x7D), `:` (name-separator, %x3A), and `,` (value-separator, %x2C). Insignificant whitespace (space %x20, tab %x09, line feed %x0A, carriage return %x0D) is permitted before or after each.'
 section: "2"
 topics:
     - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-10-04"
+extracted_at: "2026-10-11"

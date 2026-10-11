@@ -1,8 +1,8 @@
 document: rfc-7159
 kind: interoperability-note
-summary: Implementations that compare object member names by converting to Unicode code-unit sequences and comparing numerically are interoperable. Implementations that compare escaped and unescaped representations directly may incorrectly treat 'a\\b' and 'a\u005Cb' as unequal.
+summary: Implementations that compare object member names by converting escape sequences to Unicode code units and comparing numerically (code unit by code unit) are interoperable. Implementations that compare escaped characters unconverted may incorrectly find that `"a\\b"` and `"a\u005Cb"` are not equal.
 section: "8.3"
 topics:
     - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-09-20"
+extracted_at: "2026-10-11"

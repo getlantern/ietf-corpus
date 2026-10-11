@@ -1,8 +1,8 @@
 document: rfc-3986
 kind: security-consideration
-summary: Back-end transcoding between character encodings (e.g., EBCDIC to UTF-8) applied to URI components can alter percent-encoded sequences in ways that bypass security filters. All security-relevant URI processing must occur after a single, consistent decode step.
+summary: Back-end transcoding between character encodings (e.g., EBCDIC to UTF-8) can introduce double-encoding or incorrect decoding of percent-encoded octets if implementations fail to decode before transcoding, potentially producing incorrect resource identifiers.
 section: "7.3"
 topics:
     - security
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-09-13"
+extracted_at: "2026-10-11"
