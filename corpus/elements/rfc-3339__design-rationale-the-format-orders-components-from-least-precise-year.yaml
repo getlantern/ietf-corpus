@@ -1,0 +1,6 @@
+document: rfc-3339
+kind: design-rationale
+summary: The format orders components from least precise (year) to most precise (second/fraction), enabling lexicographic string comparison (e.g., strcmp) to produce chronological ordering—provided all timestamps share the same time zone string and fractional-second digit count. Optional punctuation or variable-length components would break this property.
+section: "5.1"
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-10-18"
