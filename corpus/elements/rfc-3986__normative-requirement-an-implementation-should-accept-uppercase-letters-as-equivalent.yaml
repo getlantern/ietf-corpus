@@ -1,7 +1,9 @@
 document: rfc-3986
 kind: normative-requirement
-summary: An implementation SHOULD accept uppercase letters as equivalent to lowercase in scheme names for robustness but SHOULD produce only lowercase scheme names. Scheme specifications must define their own syntax such that all conforming strings also match the absolute-URI grammar.
+summary: An implementation SHOULD accept uppercase letters as equivalent to lowercase in scheme names (e.g., "HTTP" as well as "http") for robustness, but SHOULD produce only lowercase scheme names for consistency.
 section: "3.1"
 rfc2119_level: SHOULD
+topics:
+    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-09"
+extracted_at: "2026-10-18"

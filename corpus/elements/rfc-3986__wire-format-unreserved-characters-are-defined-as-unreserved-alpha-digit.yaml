@@ -1,6 +1,8 @@
 document: rfc-3986
 kind: wire-format
-summary: 'Unreserved characters are defined as: unreserved = ALPHA / DIGIT / "-" / "." / "_" / "~". URIs that differ only in the replacement of an unreserved character with its percent-encoded equivalent identify the same resource.'
+summary: 'Unreserved characters are defined as: unreserved = ALPHA / DIGIT / "-" / "." / "_" / "~". URIs differing only in percent-encoding of unreserved characters are equivalent; normalizers should decode percent-encoded unreserved characters rather than leaving them encoded.'
 section: "2.3"
+topics:
+    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-30"
+extracted_at: "2026-10-18"

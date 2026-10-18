@@ -1,6 +1,8 @@
 document: rfc-3986
 kind: protocol-element
-summary: 'Reference resolution transforms a URI reference R against a base URI into a target URI T via a defined pseudocode algorithm: if R has a scheme, use R directly (removing dot-segments); otherwise inherit scheme and optionally authority and path from the base, merging and removing dot-segments as needed.'
+summary: 'Reference resolution transforms a URI reference R against a base URI into a target URI T: if R has a defined scheme, use R''s components; if R has authority, take R''s authority and remove_dot_segments(R.path); if R''s path is empty, inherit base path and optionally query; if R''s path starts with "/", use remove_dot_segments(R.path); otherwise merge base path with R.path then remove dot-segments.'
 section: 5.2.2
+topics:
+    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-06-21"
+extracted_at: "2026-10-18"

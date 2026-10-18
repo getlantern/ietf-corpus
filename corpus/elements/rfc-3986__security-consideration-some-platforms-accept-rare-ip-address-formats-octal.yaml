@@ -1,10 +1,10 @@
 document: rfc-3986
 kind: security-consideration
-summary: Some platforms accept rare IP address formats (octal, hexadecimal, fewer than four dotted octets) not allowed by the URI grammar. User agents resolving host names must reject such forms to prevent attackers from bypassing access controls via alternate address representations.
+summary: Some platforms accept rare IP address formats (octal, hexadecimal, or fewer than four dotted-decimal octets) that are not allowed by the URI grammar. These non-standard formats may bypass security checks that rely on recognizing address forms, and implementations should be alert to their use.
 section: "7.4"
 topics:
     - security
     - http
     - ip
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-07-26"
+extracted_at: "2026-10-18"

@@ -1,6 +1,8 @@
 document: rfc-3986
 kind: wire-format
-summary: 'The path is defined by five mutually exclusive ABNF rules: path-abempty, path-absolute, path-noscheme, path-rootless, and path-empty, depending on whether an authority is present and whether the path begins with "/".'
+summary: 'The path is defined by five mutually exclusive ABNF rules (path-abempty, path-absolute, path-noscheme, path-rootless, path-empty) that enforce structural constraints: with authority, path must be empty or start with "/"; without authority, path cannot start with "//"; a relative-path reference''s first segment cannot contain ":".'
 section: "3.3"
+topics:
+    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-10-11"
+extracted_at: "2026-10-18"

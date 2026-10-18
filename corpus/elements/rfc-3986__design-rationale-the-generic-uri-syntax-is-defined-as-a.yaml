@@ -1,6 +1,8 @@
 document: rfc-3986
 kind: design-rationale
-summary: The generic URI syntax is defined as a superset of all valid URI scheme syntaxes. This allows scheme-independent parsing of any URI reference into its components without knowledge of scheme-specific semantics, decoupling the evolution of naming schemes from the protocols and formats that use URIs.
+summary: The generic URI syntax is defined as a superset of all URI scheme syntaxes, enabling scheme-independent parsing of common components (scheme, authority, path, query, fragment) without knowing scheme-specific requirements. This decouples the evolution of identification schemes from the evolution of protocols, data formats, and implementations.
 section: 1.1.1
+topics:
+    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-30"
+extracted_at: "2026-10-18"
