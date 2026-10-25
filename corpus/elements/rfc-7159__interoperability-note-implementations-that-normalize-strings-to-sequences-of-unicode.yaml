@@ -1,0 +1,8 @@
+document: rfc-7159
+kind: interoperability-note
+summary: Implementations that normalize strings to sequences of Unicode code units before comparing numerically, code unit by code unit, are interoperable. Comparing strings with escaped characters unconverted may cause incorrect inequality results (e.g., treating "a\\b" and "a\u005Cb" as different).
+section: "8.3"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-10-25"
