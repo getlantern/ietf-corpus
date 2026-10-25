@@ -1,9 +1,7 @@
 document: rfc-3986
 kind: normative-requirement
-summary: When a new URI scheme defines a component representing textual data from the Universal Character Set, the data SHOULD first be encoded as UTF-8 octets; then only those octets not in the unreserved set should be percent-encoded.
+summary: When a new URI scheme defines a component representing UCS textual data, the data should first be encoded as UTF-8 octets and only those octets outside the unreserved set should be percent-encoded. URI producing applications must not use percent-encoding in host unless representing a UTF-8 character sequence.
 section: "2.5"
 rfc2119_level: SHOULD
-topics:
-    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-10-18"
+extracted_at: "2026-10-25"
