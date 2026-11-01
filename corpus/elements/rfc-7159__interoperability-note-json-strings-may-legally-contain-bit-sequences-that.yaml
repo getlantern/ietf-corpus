@@ -1,0 +1,8 @@
+document: rfc-7159
+kind: interoperability-note
+summary: JSON strings may legally contain bit sequences that do not encode valid Unicode characters (e.g., a single unpaired UTF-16 surrogate such as \uDEAD). Software receiving such values behaves unpredictably, including returning wrong string lengths or suffering fatal runtime exceptions.
+section: "8.2"
+topics:
+    - json
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-11-01"
