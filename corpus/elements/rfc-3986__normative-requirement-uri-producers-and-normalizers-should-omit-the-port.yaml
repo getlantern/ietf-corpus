@@ -1,7 +1,7 @@
 document: rfc-3986
 kind: normative-requirement
-summary: URI producers and normalizers should omit the port component and its ":" delimiter when the port is empty or equal to the scheme's default port (e.g., omitting ":80" from http URIs).
+summary: URI producers and normalizers SHOULD omit the port component and its ":" delimiter when port is empty or equals the scheme's default. A scheme MAY define a default port (e.g., HTTP defines port 80); the port type (TCP, UDP, SCTP) is defined by the URI scheme.
 section: 3.2.3
 rfc2119_level: SHOULD
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-10-25"
+extracted_at: "2026-11-01"

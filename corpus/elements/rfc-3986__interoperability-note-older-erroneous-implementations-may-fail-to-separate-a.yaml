@@ -1,0 +1,6 @@
+document: rfc-3986
+kind: interoperability-note
+summary: Older, erroneous implementations may fail to separate a reference's query and/or fragment components from the path before merging with the base path, causing interoperability failures when query or fragment data contains the strings "/../" or "/./". All parsers must handle abnormal examples where more ".." segments exist than hierarchical levels in the base URI path.
+section: 5.2.4
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-11-01"

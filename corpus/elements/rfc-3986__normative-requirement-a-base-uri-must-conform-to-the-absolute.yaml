@@ -1,9 +1,7 @@
 document: rfc-3986
 kind: normative-requirement
-summary: A base URI MUST conform to the absolute-URI syntax rule (no fragment component). If the base URI is obtained from a URI reference, that reference must be converted to absolute form and stripped of any fragment prior to its use as a base URI.
+summary: A base URI MUST conform to the absolute-URI syntax rule and MUST be stripped of any fragment component before use. Relative references can only be used reliably when the base URI is well defined; a sender of relative references is responsible for ensuring base URI establishment.
 section: "5.1"
 rfc2119_level: MUST
-topics:
-    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-10-18"
+extracted_at: "2026-11-01"

@@ -1,6 +1,8 @@
 document: rfc-3986
 kind: wire-format
-summary: 'The authority component is: authority = [ userinfo "@" ] host [ ":" port ], preceded by "//" and terminated by the next "/", "?", "#", or end of URI. The host subcomponent may be an IP-literal, IPv4address, or reg-name and is case-insensitive.'
+summary: 'The authority component is: authority = [ userinfo "@" ] host [ ":" port ]. The host is one of: IP-literal (IPv6 or IPvFuture in square brackets), IPv4address in four-octet dotted-decimal notation, or reg-name. The first-match-wins rule disambiguates IPv4address from reg-name.'
 section: "3.2"
+topics:
+    - dns
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-09"
+extracted_at: "2026-11-01"

@@ -1,8 +1,6 @@
 document: rfc-3986
 kind: interoperability-note
-summary: Some parsers allow a scheme name in a relative reference if it is identical to the base URI's scheme (treated as a same-scheme relative reference rather than an absolute URI). This is a loophole from prior specifications; its use should be avoided but is allowed for backward compatibility.
+summary: Some parsers allow a scheme name in a relative reference when it is identical to the base URI's scheme (a loophole from RFC 1630). Use should be avoided, but it is permitted for backward compatibility; a non-strict parser may optionally ignore such a redundant scheme to ease transition.
 section: 5.4.2
-topics:
-    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-10-18"
+extracted_at: "2026-11-01"

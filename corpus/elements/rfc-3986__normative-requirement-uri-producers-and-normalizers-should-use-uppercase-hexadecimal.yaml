@@ -1,9 +1,7 @@
 document: rfc-3986
 kind: normative-requirement
-summary: URI producers and normalizers SHOULD use uppercase hexadecimal digits for all percent-encodings for consistency. Percent-encoded octets in the ranges of ALPHA, DIGIT, hyphen, period, underscore, or tilde SHOULD be decoded to their corresponding unreserved characters by URI normalizers.
+summary: URI producers and normalizers SHOULD use uppercase hexadecimal digits for all percent-encodings. Percent-encoded octets representing unreserved characters (ALPHA, DIGIT, hyphen, period, underscore, tilde) SHOULD be decoded to their corresponding characters by URI normalizers.
 section: "2.1"
 rfc2119_level: SHOULD
-topics:
-    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-10-18"
+extracted_at: "2026-11-01"

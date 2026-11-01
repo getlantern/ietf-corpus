@@ -1,6 +1,6 @@
 document: rfc-3986
 kind: wire-format
-summary: The path component has five ABNF variants (path-abempty, path-absolute, path-noscheme, path-rootless, path-empty) disambiguated by context. The dot-segments "." and ".." are defined for relative traversal and removed during resolution via the remove_dot_segments algorithm.
+summary: 'The path component has five ABNF variants (path-abempty, path-absolute, path-noscheme, path-rootless, path-empty) to enforce constraints: when authority is present the path must be empty or begin with "/"; when authority is absent the path cannot begin with "//"; a relative-path''s first segment cannot contain ":".'
 section: "3.3"
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-08-30"
+extracted_at: "2026-11-01"
