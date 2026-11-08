@@ -1,8 +1,6 @@
 document: rfc-3339
 kind: design-rationale
-summary: Fractional seconds are the only rarely used option included in the format. Rarely used options are likely to cause interoperability problems because bugs in parsing are less likely to be discovered during testing.
+summary: Fractional seconds are the only rarely-used option retained in the format. Rarely-used options cause interoperability problems because they receive less testing; retaining only fractional seconds limits this risk while satisfying strict ordering and high-precision use cases.
 section: "5.3"
-topics:
-    - json
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-06-28"
+extracted_at: "2026-11-08"

@@ -1,6 +1,8 @@
 document: rfc-3986
 kind: wire-format
-summary: 'The path component has five ABNF variants (path-abempty, path-absolute, path-noscheme, path-rootless, path-empty) to enforce constraints: when authority is present the path must be empty or begin with "/"; when authority is absent the path cannot begin with "//"; a relative-path''s first segment cannot contain ":".'
+summary: The path component has five ABNF variants (path-abempty, path-absolute, path-noscheme, path-rootless, path-empty) to handle the constraints that arise from the presence or absence of authority and the context of use as a relative reference.
 section: "3.3"
+topics:
+    - http
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-11-01"
+extracted_at: "2026-11-08"

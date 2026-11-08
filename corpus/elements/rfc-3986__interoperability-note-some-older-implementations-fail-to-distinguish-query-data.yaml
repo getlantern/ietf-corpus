@@ -1,0 +1,8 @@
+document: rfc-3986
+kind: interoperability-note
+summary: Some older implementations fail to distinguish query data from path data when looking for hierarchical separators, causing incorrect behavior when "/" or "?" appear in a query component used as a base URI for relative references. URI producers may avoid percent-encoding these characters in queries for usability, but should be aware of this bug.
+section: "3.4"
+topics:
+    - http
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-11-08"

@@ -1,8 +1,10 @@
 document: rfc-3986
 kind: security-consideration
-summary: Some platforms interpret non-standard dotted IP address notation (octal, hex, fewer than four parts) that differs from the four-octet dotted-decimal form defined in this grammar. Only the standard dotted-decimal form is valid; non-standard forms can be exploited to bypass access controls or fool users.
+summary: Some platforms interpret non-standard dotted IP address notations (octal, hexadecimal, fewer than four octets) that differ from the dotted-decimal form required by this grammar. This can be exploited to bypass access controls that compare the textual host string rather than the resolved address.
 section: "7.4"
 topics:
+    - http
     - security
+    - ip
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-11-01"
+extracted_at: "2026-11-08"

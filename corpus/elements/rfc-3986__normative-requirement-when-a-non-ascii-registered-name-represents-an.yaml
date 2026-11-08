@@ -1,9 +1,10 @@
 document: rfc-3986
 kind: normative-requirement
-summary: When a non-ASCII registered name represents an internationalized domain name intended for DNS resolution, the name MUST be transformed to IDNA encoding (RFC 3490) prior to name lookup. URI producers SHOULD provide these names in IDNA encoding rather than percent-encoding to maximize interoperability.
+summary: When a non-ASCII registered name represents an internationalized domain name intended for DNS resolution, the name MUST be transformed to the IDNA encoding prior to name lookup. URI producers SHOULD provide IDNA-encoded names rather than percent-encoding to maximize interoperability.
 section: 3.2.2
 rfc2119_level: MUST
 topics:
+    - http
     - dns
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-07-12"
+extracted_at: "2026-11-08"
