@@ -1,4 +1,4 @@
-{{template "header" (dict "Title" .D.ID "BasePath" "../" "Description" .D.Title)}}
+{{template "header" .Page}}
 
 <div class="doc-header">
   <span class="id-pill {{if eq .D.Type "draft"}}draft{{end}}">{{.D.ID}}</span>

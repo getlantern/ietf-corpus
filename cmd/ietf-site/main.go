@@ -14,8 +14,12 @@
 //	  taxonomy.html               controlled vocab
 //	  rfcs/<id>.html              one per RFC
 //	  drafts/<id>.html            one per active draft
+//	  ask.html                    natural-language Q&A (backed by /api/ask)
+//	  404.html                    not-found page
 //	  data/index.json             id/title/year/etc. for client-side filter
 //	  styles.css                  the stylesheet
+//	  og.png, favicon.svg         social card and icon
+//	  robots.txt, sitemap.xml     crawler hints, every page listed
 package main
 
 import (
@@ -34,7 +38,7 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-//go:embed templates/*.html templates/styles.css
+//go:embed templates/*.html templates/styles.css templates/og.png templates/favicon.svg
 var assets embed.FS
 
 type Document struct {
@@ -155,7 +159,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	st := &site{tpl: tpl, out: outAbs, corpus: corpusAbs, docs: docs, byID: indexByID(docs)}
+	st := &site{tpl: tpl, out: outAbs, corpus: corpusAbs, docs: docs, byID: indexByID(docs), lastmod: siteLastMod(corpusAbs)}
 	if err := st.renderAll(); err != nil {
 		log.Fatal(err)
 	}
@@ -250,15 +254,27 @@ func loadElements(corpus string, docs []*Document) {
 // ── Rendering ────────────────────────────────────────────────────────────
 
 type site struct {
-	tpl       *template.Template
-	out       string
-	corpus    string
-	docs      []*Document
-	byID      map[string]*Document
+	tpl     *template.Template
+	out     string
+	corpus  string
+	docs    []*Document
+	byID    map[string]*Document
+	lastmod string
+	stats   *stats
+	// pages collects the canonical path of every indexable page written,
+	// for the sitemap.
+	pages []string
 }
 
 func (s *site) renderAll() error {
+	s.stats = s.buildStats()
 	if err := s.writeStyles(); err != nil {
+		return err
+	}
+	if err := s.writeStatic(); err != nil {
+		return err
+	}
+	if err := s.render404(); err != nil {
 		return err
 	}
 	if err := s.renderIndex(); err != nil {
@@ -288,7 +304,7 @@ func (s *site) renderAll() error {
 		}
 	}
 	log.Printf("rendered %d RFC pages, %d draft pages", rfcCount, draftCount)
-	return nil
+	return s.writeSitemap()
 }
 
 func (s *site) writeStyles() error {
@@ -348,8 +364,22 @@ func (s *site) buildStats() *stats {
 }
 
 func (s *site) renderIndex() error {
-	st := s.buildStats()
+	st := s.stats
+	faq := faqItems(st)
+	p := Page{
+		Title:       "IETF corpus: every RFC and active Internet-Draft, over MCP",
+		Description: "A structured index of every IETF RFC and active Internet-Draft from Lantern: metadata, the obsoletes and updates graph, and extracted requirements, over MCP.",
+		BasePath:    "",
+		Path:        "",
+		OGType:      "website",
+	}
+	wp := webPageNode(p)
+	wp["about"] = map[string]any{"@id": datasetID}
+	wp["primaryImageOfPage"] = ogImageURL
+	p.JSONLD = jsonLD(organizationNode(), websiteNode(), wp, datasetNode(st, s.lastmod), faqPageNode(faq, p.URL()))
 	return s.write("index.html", "index.html", map[string]any{
+		"Page":      p,
+		"FAQ":       faq,
 		"Stats":     st,
 		"TopAreas":  topN(st.Areas, 8),
 		"TopWGs":    topN(st.WGs, 12),
@@ -370,17 +400,34 @@ func (s *site) renderTaxonomy() error {
 	if err := yaml.Unmarshal(raw, &t); err != nil {
 		return err
 	}
-	return s.write("taxonomy.html", "taxonomy.html", map[string]any{"Taxonomy": t})
+	p := basicPage("taxonomy.html", "", "IETF corpus taxonomy: streams, areas, topics, element kinds",
+		"The controlled vocabularies the IETF corpus uses: IETF streams and areas, plus the corpus's own topic tags and the kinds of element it extracts from RFCs.")
+	return s.write("taxonomy.html", "taxonomy.html", map[string]any{"Page": p, "Taxonomy": t})
 }
 
 func (s *site) renderBrowse() error {
+	p := basicPage("browse.html", "", fmt.Sprintf("Browse %s IETF RFCs and Internet-Drafts · IETF corpus", commas(len(s.docs))),
+		fmt.Sprintf("Filter all %s RFCs and active Internet-Drafts in the IETF corpus by title, id, working group, area, status and type, and open any document's page.", commas(len(s.docs))))
 	return s.write("browse.html", "browse.html", map[string]any{
+		"Page":  p,
 		"Total": len(s.docs),
 	})
 }
 
 func (s *site) renderAsk() error {
-	return s.write("ask.html", "ask.html", map[string]any{})
+	p := basicPage("ask.html", "", "Ask the IETF corpus: cited answers about RFCs and drafts",
+		"Ask a plain-English question about IETF RFCs and Internet-Drafts and get an answer from Claude that cites the documents and sections it relied on.")
+	return s.write("ask.html", "ask.html", map[string]any{"Page": p})
+}
+
+func (s *site) render404() error {
+	p := Page{
+		Title:       "Page not found · IETF corpus",
+		Description: "There's no page at this address in the IETF corpus.",
+		BasePath:    "/",
+		NoIndex:     true,
+	}
+	return s.write("404.html", "404.html", map[string]any{"Page": p})
 }
 
 func (s *site) renderDataset() error {
@@ -426,6 +473,7 @@ func (s *site) renderDoc(d *Document) error {
 	rel := docPath(d.ID)
 	related := s.expandRelated(d)
 	return s.write(rel, "document.html", map[string]any{
+		"Page":    docPage(d),
 		"D":       d,
 		"Related": related,
 	})
@@ -483,7 +531,13 @@ func (s *site) write(rel, tplName string, data any) error {
 		return err
 	}
 	defer f.Close()
-	return s.tpl.ExecuteTemplate(f, tplName, data)
+	if err := s.tpl.ExecuteTemplate(f, tplName, data); err != nil {
+		return err
+	}
+	if rel != "404.html" {
+		s.pages = append(s.pages, canonicalPath(rel))
+	}
+	return f.Close()
 }
 
 func docPath(id string) string {

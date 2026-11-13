@@ -3,14 +3,41 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{{.Title}} — ietf-corpus</title>
-<link rel="stylesheet" href="{{.BasePath}}styles.css">
+<title>{{.Title}}</title>
 <meta name="description" content="{{.Description}}">
+{{- if .NoIndex}}
+<meta name="robots" content="noindex">
+{{- else}}
+<link rel="canonical" href="{{.URL}}">
+<meta property="og:type" content="{{.OGType}}">
+<meta property="og:site_name" content="IETF corpus">
+<meta property="og:url" content="{{.URL}}">
+<meta property="og:title" content="{{.Title}}">
+<meta property="og:description" content="{{.Description}}">
+<meta property="og:image" content="https://ietf.lantern.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="IETF corpus: every RFC and active Internet-Draft as structured, LLM-callable records">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{.Title}}">
+<meta name="twitter:description" content="{{.Description}}">
+<meta name="twitter:image" content="https://ietf.lantern.io/og.png">
+{{- end}}
+<meta name="theme-color" content="#e7dfcc" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1116" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{{.BasePath}}favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="{{.BasePath}}styles.css">
+{{- with .JSONLD}}
+<script type="application/ld+json">{{.}}</script>
+{{- end}}
 </head>
 <body>
 <header class="site">
   <div class="inner">
-    <h1><a href="{{.BasePath}}index.html" style="color:inherit;border:none">ietf-corpus</a></h1>
+    <div class="brand">
+      <a class="wordmark" href="{{.BasePath}}index.html">ietf-corpus</a>
+      <a class="from" href="https://lantern.io">from Lantern</a>
+    </div>
     <nav>
       <a href="{{.BasePath}}index.html">overview</a>
       <a href="{{.BasePath}}ask.html">ask</a>
@@ -26,8 +53,26 @@
 {{define "footer"}}
 </main>
 <footer>
-  ietf-corpus &middot; CC0 metadata &middot; source: rfc-editor.org + datatracker.ietf.org &middot;
-  <a href="https://github.com/getlantern/ietf-corpus">github.com/getlantern/ietf-corpus</a>
+  <div class="more">
+    <p class="more-h">More from Lantern</p>
+    <ul class="sisters">
+      <li><a href="https://lantern.io">Lantern</a><span>free VPN and censorship-circumvention app</span></li>
+      <li><a href="https://samizdat.lantern.io">Samizdat</a><span>censorship-circumvention protocol shaped like real TLS</span></li>
+      <li><a href="https://soar.lantern.io">Soar</a><span>DNS tunnel for networks that censor everything but DNS</span></li>
+      <li><a href="https://kindling.lantern.io">Kindling</a><span>gets an app's first requests through censoring firewalls</span></li>
+      <li><a href="https://twiddle.lantern.io">twiddle</a><span>a TLS ClientHello, byte by byte</span></li>
+      <li><a href="https://lamplighter.lantern.io">Lamplighter</a><span>run a Lantern node</span></li>
+      <li><a href="https://corpus.lantern.io">Circumvention corpus</a><span>structured index of censorship-circumvention research</span></li>
+      <li><a href="https://geedge.lantern.io">Geedge leak index</a><span>what the Geedge/MESA leak reveals about censor capabilities</span></li>
+      <li><a href="https://unbounded-wp.lantern.io">Lantern Action Mode for WordPress</a><span>live demo</span></li>
+    </ul>
+  </div>
+  <p class="colophon">
+    ietf-corpus is open source, from <a href="https://lantern.io">Lantern</a> &middot;
+    <a href="https://lantern.io/download">Get Lantern</a>, the free censorship-circumvention app<br>
+    CC0 metadata &middot; source: rfc-editor.org + datatracker.ietf.org &middot;
+    <a href="https://github.com/getlantern/ietf-corpus">github.com/getlantern/ietf-corpus</a>
+  </p>
 </footer>
 </body>
 </html>

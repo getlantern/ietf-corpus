@@ -68,13 +68,31 @@ header.site .inner {
   gap: 2rem;
 }
 
-header.site h1 {
+header.site .brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  white-space: nowrap;
+}
+
+header.site .wordmark {
   font-size: 1.4rem;
   font-style: italic;
   font-weight: 400;
-  margin: 0;
   letter-spacing: 0.02em;
+  color: var(--ink);
+  border: none;
 }
+
+header.site .from {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  border: none;
+}
+
+header.site .from:hover { color: var(--accent); }
 
 header.site nav {
   font-family: var(--mono);
@@ -180,7 +198,40 @@ pre {
 @media (max-width: 700px) {
   .two-col { grid-template-columns: 1fr; }
   h1.hero { font-size: 2.4rem; }
+  main { padding: 2rem 1rem 4rem; }
+  header.site { padding: 0.9rem 1rem; }
+  header.site .inner { flex-wrap: wrap; gap: 0.4rem 1rem; }
+  header.site nav a { margin: 0 1rem 0 0; }
+  footer { padding: 2rem 1rem; }
+  .doc-header h1 { font-size: 1.7rem; overflow-wrap: anywhere; }
+  .doc-meta { grid-template-columns: max-content minmax(0, 1fr); overflow-wrap: anywhere; }
 }
+
+.from-line {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.03em;
+  margin: -1.5rem 0 2.5rem;
+}
+
+/* FAQ */
+
+.faq { border-top: 1px solid var(--rule); }
+.faq .qa { padding: 1.1rem 0 1.2rem; border-bottom: 1px dotted var(--rule); }
+.faq h3 { margin: 0 0 0.4rem; font-size: 1.15rem; }
+.faq h3::before {
+  content: "Q";
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  margin-right: 0.7rem;
+  vertical-align: 0.15em;
+}
+.faq p { margin: 0; color: var(--ink-soft); max-width: 42em; }
+.faq code { overflow-wrap: anywhere; }
 
 .bucket h3 { margin-top: 0; font-size: 1rem; color: var(--ink-soft); text-transform: lowercase; letter-spacing: 0.04em; font-weight: 500; }
 .bucket ul { list-style: none; padding: 0; margin: 0; font-family: var(--mono); font-size: 0.85rem; }
@@ -367,6 +418,11 @@ pre {
 
 #count { font-family: var(--mono); font-size: 0.85rem; color: var(--ink-soft); }
 
+@media (max-width: 700px) {
+  .result { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; overflow-wrap: anywhere; }
+  .result .id { min-width: 0; }
+}
+
 /* Taxonomy */
 
 .tax-section { margin: 2rem 0; }
@@ -503,3 +559,26 @@ footer {
   font-size: 0.78rem;
   color: var(--ink-soft);
 }
+
+footer .more-h {
+  font-size: 0.78rem;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.8rem;
+}
+
+.sisters {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.7rem 2rem;
+}
+
+.sisters li { line-height: 1.4; }
+.sisters a { display: block; font-family: var(--serif); font-size: 1rem; font-weight: 600; border: none; }
+.sisters a:hover { text-decoration: underline; }
+.sisters span { font-size: 0.74rem; }
+
+footer .colophon { margin: 0; line-height: 1.8; border-top: 1px dotted var(--rule); padding-top: 1.2rem; }

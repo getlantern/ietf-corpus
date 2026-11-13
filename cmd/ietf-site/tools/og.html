@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- Source for templates/og.png. Render at 1200×630 and screenshot. -->
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+html,body{margin:0;width:1200px;height:630px;overflow:hidden}
+body{background:#f3ede0;color:#16213a;font-family:'EB Garamond',Georgia,serif;position:relative}
+body::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 35px,rgba(22,33,58,.05) 35px 36px)}
+.bar{position:absolute;left:0;right:0;top:0;height:78px;background:#e7dfcc;border-bottom:1px solid #c9bea6}
+.wm{position:absolute;left:72px;top:18px;font:italic 400 36px 'EB Garamond',serif}
+.from{position:absolute;left:250px;top:33px;font:400 18px 'JetBrains Mono',monospace;color:#3a4564;letter-spacing:.05em}
+.url{position:absolute;right:72px;top:31px;font:500 20px 'JetBrains Mono',monospace;color:#b8500e;letter-spacing:.03em}
+h1{position:absolute;left:68px;top:112px;margin:0;font:italic 400 82px/1 'EB Garamond',serif;letter-spacing:-.01em}
+h1 .a{font:500 54px 'JetBrains Mono',monospace;font-style:normal;color:#b8500e;display:inline-block;transform:translateY(-12px)}
+.l{position:absolute;left:72px;top:298px;width:780px;font:400 29px/1.35 'EB Garamond',serif;color:#3a4564}
+.stats{position:absolute;left:72px;right:72px;bottom:40px;display:flex;border-top:1px solid #c9bea6;border-bottom:1px solid #c9bea6}
+.s{flex:1;padding:18px 22px;border-right:1px solid #c9bea6}
+.s:last-child{border-right:none}
+.s b{display:block;font:500 40px 'JetBrains Mono',monospace;color:#b8500e;line-height:1}
+.s span{font:400 20px 'EB Garamond',serif;color:#3a4564}
+.sect{position:absolute;right:70px;top:110px;font:italic 400 300px/1 'EB Garamond',serif;color:rgba(184,80,14,.13)}
+</style></head><body>
+<div class="bar"></div>
+<div class="wm">ietf-corpus</div>
+<div class="from">from Lantern</div>
+<div class="url">ietf.lantern.io</div>
+<div class="sect">§</div>
+<h1>An <span class="a">LLM-callable</span><br>IETF corpus.</h1>
+<div class="l">Every RFC and active Internet-Draft as structured records, with the obsoletes and updates graph and extracted requirements, over MCP.</div>
+<div class="stats">
+  <div class="s"><b>RFCs</b><span>every published RFC</span></div>
+  <div class="s"><b>I-Ds</b><span>active Internet-Drafts</span></div>
+  <div class="s"><b>MUST</b><span>extracted requirements</span></div>
+  <div class="s"><b>MCP</b><span>six composable tools</span></div>
+</div>
+</body></html>

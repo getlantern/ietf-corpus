@@ -1,4 +1,4 @@
-{{template "header" (dict "Title" "An LLM-callable IETF corpus" "BasePath" "" "Description" "Structured metadata for every IETF RFC and active Internet-Draft. Exposed over MCP for any AI agent to query.")}}
+{{template "header" .Page}}
 
 <h1 class="hero">An <span class="accent">LLM-callable</span><br>IETF corpus.</h1>
 
@@ -7,6 +7,9 @@ Internet-Draft, the updates / obsoletes / replaces graph, and a growing
 layer of LLM-extracted normative requirements and protocol elements.
 Exposed over MCP so any agent can compose a corpus query without
 re-reading the spec series.</p>
+
+<p class="from-line">An open dataset from <a href="https://lantern.io">Lantern</a>,
+built from the RFC Editor index and the IETF Datatracker.</p>
 
 <div class="stats">
   <div class="stat"><span class="v">{{.Stats.TotalRFCs}}</span><span class="l">published RFCs</span></div>
@@ -74,5 +77,15 @@ composition: <code>search_documents</code>, <code>get_document</code>,
   <code>search_elements</code> with <code>kind=registry</code>,
   <code>topic=http</code>.</li>
 </ul>
+
+<h2 id="faq">Questions</h2>
+<div class="faq">
+{{- range .FAQ}}
+  <div class="qa" id="{{.Slug}}">
+    <h3>{{.Q}}</h3>
+    <p>{{.A}}</p>
+  </div>
+{{- end}}
+</div>
 
 {{template "footer" .}}
