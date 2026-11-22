@@ -1,0 +1,9 @@
+document: rfc-3986
+kind: security-consideration
+summary: Some platforms interpret non-standard dotted notation for IPv4 addresses (e.g., octal or hexadecimal octets) which RFC 3986 does not allow. This discrepancy can be exploited to bypass access control checks that compare URI host strings without normalizing them to the canonical dotted-decimal form.
+section: "7.4"
+topics:
+    - security
+    - ip
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-11-22"

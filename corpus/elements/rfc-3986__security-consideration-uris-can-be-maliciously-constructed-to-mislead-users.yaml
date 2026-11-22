@@ -1,9 +1,8 @@
 document: rfc-3986
 kind: security-consideration
-summary: URIs can be maliciously constructed to mislead users, particularly via the userinfo subcomponent crafted to look like a trusted host name (e.g., "http://trusted.example.com@evil.example.net/"). Applications should render userinfo distinctly from the host to aid user recognition.
-section: "7.6"
+summary: URIs can be maliciously constructed to mislead users or bypass access controls, for example by embedding misleading userinfo before an "@" to impersonate a trusted host name. When a URI violates scheme-specific restrictions, the resolver should flag it as an error rather than silently ignoring unused parts.
+section: "7.2"
 topics:
-    - http
     - security
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-11-08"
+extracted_at: "2026-11-22"

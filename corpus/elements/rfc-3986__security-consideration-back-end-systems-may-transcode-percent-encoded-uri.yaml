@@ -1,0 +1,8 @@
+document: rfc-3986
+kind: security-consideration
+summary: Back-end systems may transcode percent-encoded URI octets into a different character encoding before processing, potentially producing a string different from what the URI author intended. Implementations must parse component boundaries before decoding percent-encoded octets, and must not decode before separating components.
+section: "7.3"
+topics:
+    - security
+extracted_by: claude-sonnet-4-6
+extracted_at: "2026-11-22"

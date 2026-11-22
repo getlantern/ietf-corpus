@@ -1,9 +1,6 @@
 document: rfc-3986
 kind: wire-format
-summary: The authority component has the form `authority = [ userinfo "@" ] host [ ":" port ]`. It is preceded by "//" and terminated by the next "/", "?", "#", or end of URI.
+summary: 'The authority component has the form: authority = [ userinfo "@" ] host [ ":" port ]. It is preceded by "//" and terminated by the next "/", "?", "#", or end of URI. Producers and normalizers should omit the ":" delimiter if the port component is empty.'
 section: "3.2"
-topics:
-    - http
-    - dns
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-11-08"
+extracted_at: "2026-11-22"

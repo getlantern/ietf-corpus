@@ -1,6 +1,6 @@
 document: rfc-3986
 kind: design-rationale
-summary: The fragment identifier is separated from the rest of the URI prior to scheme-specific dereference and processed solely by the user agent, making it independent of URI scheme. This prevents information providers from denying reference authors the right to refer selectively to parts of a resource.
+summary: The fragment identifier is separated from the rest of the URI before any scheme-specific dereference and is processed solely by the user agent, not the origin server. This design prevents resource providers from denying reference authors the right to point selectively into a resource, and ties fragment semantics to media type rather than to URI scheme.
 section: "3.5"
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-10-25"
+extracted_at: "2026-11-22"

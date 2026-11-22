@@ -1,6 +1,6 @@
 document: rfc-3986
 kind: state-machine
-summary: 'The reference resolution algorithm (Section 5.2.2) transforms a URI reference R into target URI T by: if R has a scheme, use R''s components verbatim; else if R has authority, use base scheme plus R''s components; else merge paths from base URI and apply remove_dot_segments.'
+summary: 'The reference resolution algorithm (Section 5.2.2) transforms reference R into target URI T: if R has a scheme, use R''s components with dot-segment removal; else if R has an authority, use it with R''s path and query; else if R''s path is empty, inherit base path and optionally query; else merge paths (absolute path replaces base path; relative path appended to all-but-last-segment of base path) and apply remove_dot_segments. T always inherits base scheme.'
 section: 5.2.2
 extracted_by: claude-sonnet-4-6
-extracted_at: "2026-10-11"
+extracted_at: "2026-11-22"
